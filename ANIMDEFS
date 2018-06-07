@@ -1,0 +1,41 @@
+//Alien vendetta 
+
+Texture	Optional	AVFTE1  	Range	AVFTE4  	Tics 8
+Texture	Optional	51AVLA1 	Range	51AVLA4 	Tics 8
+Texture	Optional	51AVPO1 	Range	51AVPO11 	Tics 16
+Texture	Optional	FBAVWAT1 	Range	FBAVWAT4	Tics 8
+
+//New Gothic movement 1
+
+Texture	Optional	FBNG1SF1  	Range	FBNG1SF4  	Tics 8
+Texture	Optional	FBNG1LA1  	Range	FBNG1LA4  	Tics 8
+Texture	Optional	SLMFALL1 	Range	SLMFALL1  	Tics 8
+Texture	Optional	ADEL_Z90  	Range	ADEL_Z93  	Tics 8
+Texture	Optional	FBNG1DG1  	Range	FBNG1DG2  	Tics 4
+
+flat Optional ULAVA1 Range ULAVA4 Tics 8
+flat Optional FBNG1SL1 Range FBNG1SL4 Tics 8
+
+warp flat lavastk
+warp flat waterstk
+
+Switch ADEL_Z51 on pic ADEL_Z50 Tics 0
+Switch ADEL_Z50 off pic ADEL_Z51 Tics 0
+
+Switch FBNG1SG2 on pic FBNG1SG1 Tics 0
+Switch FBNG1SG1 off pic FBNG1SG2 Tics 0
+
+Switch FBNG1SU2 on pic FBNG1SU1 Tics 0
+Switch FBNG1SU1 off pic FBNG1SU2 Tics 0
+
+// Sythe 2
+
+flat Optional FBSC2SL1 range FBSC2SL4 tics 8
+flat Optional FBSC2SL5 range FBSC2SL8 tics 8
+
+//Vanguard
+
+Texture Optional NWFALL1 Range NWFALL4 Tics 8
+
+Switch SW2MEGA on pic SW1MEGA Tics 0
+Switch SW1MEGA off pic SW2MEGA Tics  0

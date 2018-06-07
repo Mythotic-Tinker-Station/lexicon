@@ -1,0 +1,11 @@
+// Texture definitions 
+
+Texture DANG666, 512, 512
+{
+	XScale 16.0
+	YScale 16.0
+	WorldPanning
+	Patch DANG666, 0, 0
+}
+
+// End of texture definitions

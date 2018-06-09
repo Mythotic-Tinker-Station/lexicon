@@ -97,40 +97,44 @@ strict namespace
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
         HudSetup(0 ,0);
+        
+        // welcome
+        hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
+        
         while(1)
         {
             if(state == STATE_COUNTDOWN)
             {
                 // vote header
-                hudmessagebold(s:"\c[Cyan]Votes:"; 0, 9999, 0, 32.1, 80.0, 0.1);
+                hudmessagebold(s:"\c[Cyan]Votes:"; 0, 9999, 0, 192.1, 128.0, 0.1);
                 
                 // vote list
-                fixed y = 80.0;
+                fixed y = 128.0;
                 for(int i = 0; i < 64; i++)
                 {
                     if(votessorted[i][0] > 0)
                     {
                         y += 16.0;
-                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 64.1, y, 0.1);
+                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
                     }
                 }
                 
                 // timer
                 if(time_seconds > TIME_YELLOW)
                 {
-                    hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 32.1, 64.0, 0.1);
+                    hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                 }
                 else if(time_seconds <= TIME_YELLOW && time_seconds > TIME_ORANGE)
                 {
-                    hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 32.1, 64.0, 0.1);
+                    hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                 }
                 else if(time_seconds <= TIME_ORANGE && time_seconds > TIME_RED)
                 {
-                    hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 32.1, 64.0, 0.1);
+                    hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                 }
                 else if(time_seconds <= TIME_RED)
                 {
-                    hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 32.1, 64.0, 0.1);
+                    hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                 }
             }
             
@@ -249,7 +253,9 @@ strict namespace
     {
         time_ticks--;
         time_seconds = time_ticks/35;
-        if(time_ticks <= 0)// || votecount >= playercount())
+        
+        // if time up, or all players voted, or majority have voted
+        if(time_ticks <= 0 || votecount >= playercount() || votessorted[0][0] > (playercount()/3)*2)
         {
             state = STATE_TIE;
             ACS_ExecuteAlways(570, 0, state);

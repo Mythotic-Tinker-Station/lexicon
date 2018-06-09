@@ -2005,7 +2005,8 @@ map SL24 "Colorado Hills"
 	next = "SL25"
 	sky1 = "RSKY3"
 	music = "d_sl24"
-
+	}
+	
 map SL25 "Native Ruins"
 	{
 	next = "SL26"
@@ -2682,7 +2683,8 @@ map SC224 "Gaias Temple"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc224"
-
+	}
+	
 map SC225 "Forgotten City"
 	{
 	titlepatch = "SC2TP24"

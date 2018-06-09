@@ -1,5 +1,4 @@
 # The Sentinel's Lexicon
-
 Hi there, and welcome!
 
 This project is intended to be a megawad complation that will contain some of
@@ -10,7 +9,35 @@ This is to be used for Zandronum.
 It will also contain a hub map where players can vote on the mapset to play on.
 
 ## What mapsets are in there so far?
+So far, the mapsets included are:
 
-Will add list later
+- Alien Vendetta
+- Combat Shock 1 and 2
+- Hell Revealed 1 and 2
+- Kamasutra
+- New Gothic Movement 1
+- Shai'tans Luck
+- Speed of Doom
+- Dark Tartarus
+- VanGaurd
+- Scythe 2
 
-Will also add other information later.
+## How to build the pk3?
+Clone this repo to your machine and then run CompilePk3.bat
+
+Automatic builds comming soon.
+
+## Where can I play this?
+This can be played and hosted on [The Sentinel's Playground](https://allfearthesentinel.net "The Sentinel's Playground") with builds that i release.
+
+I would like to ask that you do not upload builds compiled by yourself to the service as I will be also uploading any builds that i deem to be released as alpha or beta etc there. I will actually tell sgt Nax on you if you do this.
+
+You are however free to upload your own compiled build as a private wad.
+
+## Want to suggest other mapsets or report bugs?
+Feel free to use the tracker on here.
+
+## Credits
+- MiFU for doing most of the compile work, its a pain in the ass.
+- Tribeam for the voting script and hub map
+- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts.

@@ -26,8 +26,8 @@ maps
 				notfortesting = 0;
 			}
 		}
-		viewpositiony = 487.7572f;
-		viewpositionx = 1213.765f;
+		viewpositiony = 310.1651f;
+		viewpositionx = 1169.845f;
 		customceilheight = 128;
 		customfloorheight = 0;
 		
@@ -41,7 +41,7 @@ maps
 			background = "";
 			backoffsety = 0;
 		}
-		viewscale = 1.035291f;
+		viewscale = 0.7963778f;
 		defaulttoptexture = "GSTONE1";
 		overridebottomtexture = false;
 		
@@ -50,14 +50,18 @@ maps
 			
 			sector
 			{
+				ypanningceiling = 1;
 				lightceiling = 0;
+				xpanningceiling = 1;
 			}
 			
 			sidedef
 			{
 				offsety_bottom = 1;
 				offsetx_top = 1;
+				scaley_mid = 1;
 				offsety_mid = 1;
+				scalex_mid = 1;
 				offsetx_bottom = 1;
 				offsetx_mid = 1;
 				offsety_top = 1;

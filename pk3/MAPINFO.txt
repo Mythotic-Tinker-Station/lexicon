@@ -642,7 +642,7 @@ map AV24 "Clandistine Complex"
 	}
 	
 map AV25 "Demonic Hordes"
-	(
+	{
 	titlepatch = "AVTPX24"
 	next = "AV26"
 	enterpic = "AVINT"
@@ -650,7 +650,7 @@ map AV25 "Demonic Hordes"
 	intermusic = "D_AVINT"
 	music = "d_av25"
 	sky1 = "AVRSKY3"
-	)
+	}
 
 map AV26 "Dark Dome"
 	{

@@ -61,6 +61,7 @@ strict namespace
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
         
@@ -93,13 +94,28 @@ strict namespace
 
     script "VoteHud" enter clientside
     {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
         HudSetup(0 ,0);
         while(1)
         {
-            //timer
             if(state == STATE_COUNTDOWN)
             {
+                // vote header
+                hudmessagebold(s:"\c[Cyan]Votes:"; 0, 9999, 0, 32.1, 80.0, 0.1);
+                
+                // vote list
+                fixed y = 80.0;
+                for(int i = 0; i < 64; i++)
+                {
+                    if(votessorted[i][0] > 0)
+                    {
+                        y += 16.0;
+                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 64.1, y, 0.1);
+                    }
+                }
+                
+                // timer
                 if(time_seconds > TIME_YELLOW)
                 {
                     hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 32.1, 64.0, 0.1);
@@ -124,23 +140,6 @@ strict namespace
                 hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-256.0, 0.1);
             }
             
-            
-            if(state != STATE_RESULTS)
-            {
-                // vote header
-                hudmessagebold(s:"\c[Cyan]Votes:"; 0, 9999, 0, 32.1, 80.0, 0.1);
-                
-                // vote list
-                fixed y = 80.0;
-                for(int i = 0; i < 64; i++)
-                {
-                    if(votessorted[i][0] > 0)
-                    {
-                        y += 16.0;
-                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 64.1, y, 0.1);
-                    }
-                }
-            }
             delay(1);
         }
     }

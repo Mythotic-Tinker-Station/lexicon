@@ -342,7 +342,7 @@ map HR29 "Temple of Fear"
 map HR30 "Hell Revealed"
 	{
 	titlepatch = "HRTPX29"
-	next = "AV01"
+	next = "HUB"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -700,7 +700,7 @@ map AV29 "Fire Walk with Me"
 map AV30 "Point Dreadful"
 	{
 	titlepatch = "AVTPX29"
-	next = "KS01"
+	next = "HUB"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -1057,7 +1057,7 @@ map KS29 "I'm Just a DOOM Addict"
 map KS30 "<|>"
 	{
 	titlepatch = "KSTPX29"
-	next = "TAT01"
+	next = "HUB"
 	enterpic = "KAMAINT"
 	exitpic = "KAMAINT"
 	intermusic = "D_KSINT"
@@ -1451,7 +1451,7 @@ map TAT40 "Horrible Things"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat40"
-	cluster 8
+	cluster = 8
 	titlepatch = "CWILV29"
 	}
 	
@@ -1475,8 +1475,8 @@ map TAT42 "Beat Doom V0.01"
 
 map TAT43 "LOCK N' LOAD"
 	{
-	next = "HR201"
-	secretnext = "HR01"
+	next = "HUB"
+	secretnext = "HUB"
 	sky1 = "SKYML2"
 	intermusic = "D_TATINT"
 	cluster = 1
@@ -1809,7 +1809,7 @@ map HR229 "Hell's Cauldron"
 map HR230 "Source Control"
 	{
 	titlepatch = "HR2TP29"
-	next = "HR01"
+	next = "HUB"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -1960,7 +1960,7 @@ map NG121 "New Gothic 1 MAP21"
 	{
 	sky1 = "RSKY3"
 	music = "d_ng121"
-	next = "SL20"
+	next = "HUB"
 	}
 	
 map NG131 "New Gothic 1 MAP31"
@@ -2043,7 +2043,7 @@ map SL29 "Fallen Atlantis"
 	
 map SL30 "Shai'tans Luck"
 	{
-	next = "SOD01"
+	next = "HUB"
 	sky1 = "RSKY3"
 	music = "d_sl30"
 	}
@@ -2408,7 +2408,7 @@ map SOD32 "The Pyramid of Death"
 map SOD33 "Descent to Nowhere"
 	{
 	titlepatch = "SODTP32"
-	next = "SC201"
+	next = "HUB"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -2741,7 +2741,7 @@ map SC229 "Dust to Dust"
 map SC230 "Haunting Dreams"
 	{
 	titlepatch = "SC2TP29"
-	next = "HR01"
+	next = "HUB"
 	enterpic = "SCINT"
 	exitpic = "SCINT"
 	intermusic = "D_SCINT"
@@ -2804,7 +2804,7 @@ map CS03 "Fudoh"
 map CS04 "Messatsu"
 	{
 	titlepatch = "CSTPX03"
-	next = "CS201"
+	next = "HUB"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs04"
@@ -2881,7 +2881,7 @@ map CS206 "Closure"
 map CS207 "Shocked for Life"
 	{
 	titlepatch = "CS2TP06"
-	next = "HR01"
+	next = "HUB"
 	enterpic = "CS2INT"
 	exitpic = "CS2INT"
 	intermusic = "D_CS2INT"
@@ -3040,7 +3040,7 @@ map VAN12 "Infernal Chasm"
 map VAN13 "Punch-Out"
 	{
 	titlepatch = "VANTP12"
-	next = "VAN14"
+	next = "HUB"
 	enterpic = "VANINT"
 	exitpic = "VANINT"
 	intermusic = "D_VANINT"

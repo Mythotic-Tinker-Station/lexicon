@@ -439,7 +439,8 @@ map AV06 "hillside Siege"
 	intermusic = "D_AVINT"
 	music = "d_av06"
 	sky1 = "AVRSKY1"
-
+	}
+	
 map AV07 "Showdown"
 	{
 	titlepatch = "AVTPX06"
@@ -1154,7 +1155,7 @@ map TAT07 "Open Season"
 	}
 	
 map TAT08 "Ground Zero"
-	}
+	{
 	next = "TAT09"
 	sky1 = "SKYML2"
 	cluster = 1

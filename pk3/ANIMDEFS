@@ -39,3 +39,16 @@ Texture Optional NWFALL1 Range NWFALL4 Tics 8
 
 Switch SW2MEGA on pic SW1MEGA Tics 0
 Switch SW1MEGA off pic SW2MEGA Tics  0
+
+// Whispers of Satan
+texture IMPSE1
+pic 01 tics 4
+pic 02 tics 4
+
+warp texture SKYHELL1
+warp texture SKINFAC2
+
+warp flat WARPED1
+warp flat WARPED2
+warp flat WARPED3
+warp flat WARPED4

@@ -24,17 +24,18 @@ strict namespace
     {
         // wad name                 // the map this vote will take players too
         { "Alien Vendetta",         "AV01"  }, // 0
-        { "Combat Shock",           "CS01"  }, // 1
-        { "Combat Shock 2",         "CS201" }, // 2
-        { "Hell Revealed",          "HR01"  }, // 3
+        { "Combat Shock",           "CS01"  }, // 1 Slaughter Map
+        { "Combat Shock 2",         "CS201" }, // 2 Slaughter Map
+        { "Hell Revealed",          "HR01"  }, // 3 
         { "Hell Revealed 2",        "HR201" }, // 4
         { "Kamasutra",              "KS01"  }, // 5
-        { "New Gothic",             "NG101" }, // 6
+        { "New Gothic Movement 1",             "NG101" }, // 6 Slaughter Map
         { "Shai'tans Luck",         "SL20"  }, // 7
         { "Speed Of Doom",          "SOD01" }, // 8
-        { "Dark Tartarus",          "TAT01" }, // 9
+        { "Dark Tartarus",          "TAT01" }, // 9 Slaughter Map
         { "VanGaurd",               "VAN01" }, // 10
         { "Scythe 2",               "SC201" }, // 11
+		{ "Whispers Of Satan",		"WOS01"	}, // 12
     };
     
     

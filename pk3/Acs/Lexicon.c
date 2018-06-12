@@ -7,6 +7,7 @@
 strict namespace
 {
     #if 1
+        // dont this all you want
         #define TIME_START 60    // in ticks, 35 = 1 second; 15*35 = 15 seconds, ect
         #define TIME_YELLOW 15   // the time at which the timer goes yellow
         #define TIME_ORANGE 10   // same as above, just orange
@@ -15,7 +16,7 @@ strict namespace
         // dont touch this
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1
-        #define STATE_TIE 2
+        #define STATE_CHECKTIE 2
         #define STATE_RESULTS 3
     #endif
     
@@ -29,7 +30,7 @@ strict namespace
         { "Hell Revealed",          "HR01"  }, // 3 
         { "Hell Revealed 2",        "HR201" }, // 4
         { "Kamasutra",              "KS01"  }, // 5
-        { "New Gothic Movement 1",             "NG101" }, // 6 Slaughter Map
+        { "New Gothic Movement 1",  "NG101" }, // 6 Slaughter Map
         { "Shai'tans Luck",         "SL20"  }, // 7
         { "Speed Of Doom",          "SOD01" }, // 8
         { "Dark Tartarus",          "TAT01" }, // 9 Slaughter Map
@@ -38,26 +39,23 @@ strict namespace
 		{ "Whispers Of Satan",		"WOS01"	}, // 12
     };
     
+    int votes[64];                      // holds the votes
+    int votessorted[64][2];             // all the votes, sorted
+    int votecount = 0;                  // amount of votes made
+    int votechosen = 0;                 // the winner
     
+    int time_ticks = TIME_START*35;     // the time left in ticks
+    int time_seconds = TIME_START;      // the time left in seconds
     
-    int votes[64];
-    int votessorted[64][2];
-    int votecount = 0;
-    int votechosen = 0;
+    int players[64];                    // all the player info
     
-    int time_ticks = TIME_START*35;
-    int time_seconds = TIME_START;
-    
-    int players[64];
-    int player_majority_count = 0;
-    
-    fixed hud_width;
-    fixed hud_height;
-    fixed hud_width_half;
-    fixed hud_height_half;
+    fixed hud_width;                    // the position of the right of the screen
+    fixed hud_height;                   // the position of the bottom of the screen
+    fixed hud_width_half;               // the position of the center of the screen on the x axis
+    fixed hud_height_half;              // the position of the center of the screen on the y axis
 
-    int state;
-    int state_clock;
+    int state;                          // state of the voting system
+    int state_clock;                    // custom timer
 
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
@@ -72,8 +70,6 @@ strict namespace
         ACS_Execute(569, 0, time_seconds);
         ACS_ExecuteAlways(570, 0, state);
     }
-    
-
 
     // keeps track of votes and what to do with them
     script "VoteManager" (void)
@@ -85,25 +81,32 @@ strict namespace
             {
                 case STATE_VOTEWAIT:    state_waitforvote();    break;
                 case STATE_COUNTDOWN:   state_countdown();      break;
-                case STATE_TIE:         state_tie();            break;
+                case STATE_CHECKTIE:    state_checktie();       break;
                 case STATE_RESULTS:     state_results();        break;
             }
             delay(1);
         }
     }
 
-
+    // the hud
     script "VoteHud" enter clientside
     {
+        
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
+        
+        // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
+        
+        // set up the hud's sizes based on the user's current screen res
         HudSetup(0 ,0);
         
         // welcome
         hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
         
+        // loop
         while(1)
         {
+            // system is in the countdown state
             if(state == STATE_COUNTDOWN)
             {
                 // vote header
@@ -139,7 +142,7 @@ strict namespace
                 }
             }
             
-            // end results
+            // system is in the end results state
             else if(state == STATE_RESULTS)
             {
                 hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-256.0, 0.1);
@@ -243,30 +246,46 @@ strict namespace
 
     function void state_waitforvote(void)
     {
+        // if a vote was made
         if(votecount > 0)
         {
+            // set the system to the countdown state
             state = STATE_COUNTDOWN;
+            
+            // sync clients
             ACS_ExecuteAlways(570, 0, state);
         }
     }
     
     function void state_countdown(void)
     {
+        // countdown timer
         time_ticks--;
         time_seconds = time_ticks/35;
         
         // if time up, or all players voted, or majority have voted
         if(time_ticks <= 0 || votecount >= playercount() || votessorted[0][0] > (playercount()/3)*2)
         {
-            state = STATE_TIE;
+            // set the system to the check tie state
+            state = STATE_CHECKTIE;
+            
+            // sync
             ACS_ExecuteAlways(570, 0, state);
         }
+        // if all votes were canceled
         if(votecount <= 0)
         {
+            // reset timer
             time_ticks = TIME_START*35;
+            
+            // go back to the wait state
             state = STATE_VOTEWAIT;
+            
+            // sync
             ACS_ExecuteAlways(570, 0, state);
         }
+        
+        // sync clients every second
         if(!(time_ticks%35))
         {
             // sync the timer with the clients
@@ -274,39 +293,57 @@ strict namespace
         }
     }
 
-    function void state_tie(void)
+    function void state_checktie(void)
     {
+        // sort votes
         modified_bubble_sort();
         int tiecount = 0;
+        
+        // for every wad
         for(int i = 1; i < 64; i++)
         {
+            // if a wad's vote count is the same as the winner
             if(votessorted[i][0] == votessorted[0][0])
             {
+                // count up the tie amount
                 tiecount++;
             }
         }
+        
+        // if there is a tie
         if(tiecount > 0)
         {
+            // randomly choose a wad
             votechosen = votessorted[random(0, tiecount)][1];
         }
         else
         {
+            // otherwise just choose the winner
             votechosen = votessorted[0][1];
         }
         
         // sync the clients
         ACS_Execute(568, 0, votechosen);
         
+        // set the system to the results state
         state = STATE_RESULTS;
+        
+        // sync
         ACS_ExecuteAlways(570, 0, state);
+        
+        // reset timer
         state_clock = 0;
     }
     
     function void state_results(void)
     {
+        // count up custom timer
         state_clock++;
+        
+        // if 5 seconds have past
         if(state_clock > 5*35)
         {
+            // go to chosen level
             ChangeLevel(votenames[votechosen][1], 0, 0, -1);
         }
     }

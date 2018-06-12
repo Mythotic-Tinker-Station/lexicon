@@ -21,6 +21,7 @@ So far, the mapsets included are:
 - Dark Tartarus
 - VanGaurd
 - Scythe 2
+- Whispers of Satan
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

@@ -26,7 +26,7 @@ So far, the mapsets included are:
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat
 
-Automatic builds comming soon.
+Automatic builds can be found at https://jenkins.csnxs.uk/job/Lexicon/
 
 ## Where can I play this?
 This can be played and hosted on [The Sentinel's Playground](https://allfearthesentinel.net "The Sentinel's Playground") with builds that i release.

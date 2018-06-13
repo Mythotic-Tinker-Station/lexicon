@@ -6,7 +6,6 @@ echo Step 2: ACS
 	cd Compiler
 	bcc -acc-err-file -x bcs ..\pk3\acs\%FileName%.c ..\pk3\acs\%FileName%.o
 	if not exist ..\pk3\acs\acs.err goto 20
-	pause
 :20
 
 echo Step 2: PACK

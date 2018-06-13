@@ -92,6 +92,7 @@ strict namespace
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
+        // only run this in the hub map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
@@ -123,7 +124,7 @@ strict namespace
     // the hud
     script "VoteHud" enter clientside
     {
-        
+        // only run this in the hub map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
         
         // prevent this script from running multiple times on each client, for each client

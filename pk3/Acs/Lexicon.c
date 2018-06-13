@@ -7,7 +7,7 @@
 strict namespace
 {
     #if 1
-        // dont this all you want
+        // mess with this all you want
         #define TIME_START 60    // in ticks, 35 = 1 second; 15*35 = 15 seconds, ect
         #define TIME_YELLOW 15   // the time at which the timer goes yellow
         #define TIME_ORANGE 10   // same as above, just orange

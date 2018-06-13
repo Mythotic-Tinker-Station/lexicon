@@ -20,6 +20,19 @@ strict namespace
         #define STATE_RESULTS 3
     #endif
     
+    struct obj_confetti
+    {
+        int x;
+        int y;
+        int velx;
+        int vely;
+        int animnum;
+        int confnum;
+        str image; 
+    };
+    struct obj_confetti objs_confetti[128];
+    
+    
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
     str votenames[64][2] =
     {
@@ -57,48 +70,15 @@ strict namespace
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
 
-    bool levelstarted = false;          // false at the start of a level, goes true when the first player joins
-
-    // when there are no players left, go back to the hub
-    script "PlayerWatch" open
-    {
-        levelstarted = false;
-        while(1)
-        {
-            // if a player has joined
-            if(levelstarted)
-            {
-                // if the playercount goes back to 0
-                if(playercount() == 0)
-                {
-                    // go back to the hub
-                    ChangeLevel("Hub", 0, 0, -1);
-                }
-            }
-            // if nobody has joined yet
-            else
-            {
-                // wait for someone to join
-                if(playercount() > 0)
-                {  
-                    //the level has been started
-                    levelstarted = true;
-                }
-            }
-            delay(1);
-        }
-    }
-
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
-        // only run this in the hub map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
         
         // sync the joining player's vars
-        modified_bubble_sort();
+        bubble_sort();
         ACS_Execute(568, 0, votechosen);
         ACS_Execute(569, 0, time_seconds);
         ACS_ExecuteAlways(570, 0, state);
@@ -124,7 +104,7 @@ strict namespace
     // the hud
     script "VoteHud" enter clientside
     {
-        // only run this in the hub map
+        
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
         
         // prevent this script from running multiple times on each client, for each client
@@ -134,7 +114,29 @@ strict namespace
         HudSetup(0 ,0);
         
         // welcome
+        setfont("hudfont");
         hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
+        
+        
+        // setup the confetti
+        for(int c = 0; c < 64; c++)
+        {
+            objs_confetti[c].x = 0;
+            objs_confetti[c].y = (int)hud_height/65535;
+            objs_confetti[c].velx = random(1, 32);
+            objs_confetti[c].vely = random(-64, -1);
+            objs_confetti[c].confnum = random(0, 17);
+            objs_confetti[c].animnum = random(0, 7);
+        }
+        for(int c = 64; c < 128; c++)
+        {
+            objs_confetti[c].x = (int)hud_width/65535;
+            objs_confetti[c].y = (int)hud_height/65535;
+            objs_confetti[c].velx = random(-32, -1);
+            objs_confetti[c].vely = random(-64, -1);
+            objs_confetti[c].confnum = random(0, 17);
+            objs_confetti[c].animnum = random(0, 7);
+        }
         
         // loop
         while(1)
@@ -142,19 +144,7 @@ strict namespace
             // system is in the countdown state
             if(state == STATE_COUNTDOWN)
             {
-                // vote header
-                hudmessagebold(s:"\c[Cyan]Votes:"; 0, 9999, 0, 192.1, 128.0, 0.1);
-                
-                // vote list
-                fixed y = 128.0;
-                for(int i = 0; i < 64; i++)
-                {
-                    if(votessorted[i][0] > 0)
-                    {
-                        y += 16.0;
-                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
-                    }
-                }
+                setfont("HUDFONT");
                 
                 // timer
                 if(time_seconds > TIME_YELLOW)
@@ -173,14 +163,52 @@ strict namespace
                 {
                     hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                 }
+                
+                // vote header
+                hudmessagebold(s:"\c[Cyan]Votes"; 0, 9999, 0, 192.1, 136.0, 0.1);
+                
+                // vote list
+                fixed y = 136.0;
+                for(int i = 0; i < 64; i++)
+                {
+                    if(votessorted[i][0] > 0)
+                    {
+                        y += 23.0;
+                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
+                    }
+                }
             }
             
             // system is in the end results state
             else if(state == STATE_RESULTS)
             {
-                hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-256.0, 0.1);
+                setfont("hudfont");
+                hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+                
+                // confetti :D
+                for(int c = 0; c < 128; c++)
+                {
+                    // slow down the confetti
+                    //if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
+                    //if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
+                    
+                    // add gravity
+                    objs_confetti[c].vely += 1;
+                
+                    // apply velocities
+                    objs_confetti[c].x += objs_confetti[c].velx;
+                    objs_confetti[c].y += objs_confetti[c].vely;
+                    
+                    // animate it
+                    objs_confetti[c].animnum++;
+                    if(objs_confetti[c].animnum > 7) { objs_confetti[c].animnum = 0; }
+                    objs_confetti[c].image = StrParam(s:"CN", i:objs_confetti[c].confnum, i:objs_confetti[c].animnum);
+
+                    // show it
+                    setfont(objs_confetti[c].image);
+                    hudmessagebold(s:"a"; 0, c+9800, 0, (fixed)(objs_confetti[c].x*65535), (fixed)(objs_confetti[c].y*65535), 0.1);
+                }
             }
-            
             delay(1);
         }
     }
@@ -236,7 +264,7 @@ strict namespace
                 }
             }
             // sort votes
-            modified_bubble_sort();
+            bubble_sort();
         }
     }
 
@@ -329,7 +357,7 @@ strict namespace
     function void state_checktie(void)
     {
         // sort votes
-        modified_bubble_sort();
+        bubble_sort();
         int tiecount = 0;
         
         // for every wad
@@ -366,6 +394,8 @@ strict namespace
         
         // reset timer
         state_clock = 0;
+        
+        AmbientSound("partyhorn", 127);
     }
     
     function void state_results(void)
@@ -396,7 +426,7 @@ strict namespace
 
 
     // sort voted list
-    function void modified_bubble_sort(void)
+    function void bubble_sort(void)
     {
         int t; 
         int j = 64;

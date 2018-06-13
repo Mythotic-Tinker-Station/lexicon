@@ -57,6 +57,38 @@ strict namespace
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
 
+    bool levelstarted = false;          // false at the start of a level, goes true when the first player joins
+
+    // when there are no players left, go back to the hub
+    script "PlayerWatch" open
+    {
+        levelstarted = false;
+        while(1)
+        {
+            // if a player has joined
+            if(levelstarted)
+            {
+                // if the playercount goes back to 0
+                if(playercount() == 0)
+                {
+                    // go back to the hub
+                    ChangeLevel("Hub", 0, 0, -1);
+                }
+            }
+            // if nobody has joined yet
+            else
+            {
+                // wait for someone to join
+                if(playercount() > 0)
+                {  
+                    //the level has been started
+                    levelstarted = true;
+                }
+            }
+            delay(1);
+        }
+    }
+
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {

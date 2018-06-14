@@ -69,13 +69,14 @@ strict namespace
 
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
-
-    bool levelstarted = false;          // false at the start of a level, goes true when the first player joins
-
+    
     // when there are no players left, go back to the hub
     script "PlayerWatch" open
     {
-        levelstarted = false;
+        HudSetup(0, 0);
+        bool levelstarted = false;
+        int clock = 10;
+        
         while(1)
         {
             // if a player has joined
@@ -84,10 +85,38 @@ strict namespace
                 // if the playercount goes back to 0
                 if(playercount() == 0)
                 {
-                    // go back to the hub
-					hudmessagebold(s:"Going back to the hub in T Minus 5"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
-					Delay(35 * 6);
-                    ChangeLevel("Hub", 0, 0, -1);
+
+                    // countdown
+                    clock--;
+                    
+                    // when time is up
+                    if(clock < 0)
+                    {
+                        // go back to hub
+                        ChangeLevel("Hub", 0, 0, -1);
+                    }  
+                    
+                    // this should be clientsided, but since this only is called once a second, it should be fine.
+                    setfont("hudfont");
+                    // timer
+                    if(clock > 7)
+                    {
+                        hudmessagebold(s:"\c[Green]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 7 && clock > 4)
+                    {
+                        hudmessagebold(s:"\c[Yellow]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 4 && clock > 1)
+                    {
+                        hudmessagebold(s:"\c[Orange]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 1)
+                    {
+                        hudmessagebold(s:"\c[Red]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+ 
+                    delay(34);
                 }
             }
             // if nobody has joined yet

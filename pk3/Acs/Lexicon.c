@@ -79,7 +79,7 @@ strict namespace
         
         while(1)
         {
-            // if a player has joined
+            // if the level has started
             if(levelstarted)
             {
                 // if the playercount goes back to 0
@@ -88,11 +88,10 @@ strict namespace
 
                     // countdown
                     clock--;
-                    
-                    // this should be clientsided, but since this only is called once a second, it should be fine.
                     setfont("hudfont");
                     
                     // timer
+                    // this should be clientsided, but since this only is called once a second, it should be fine
                     if(clock > 7)
                     {
                         hudmessagebold(s:"\c[Green]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
@@ -116,8 +115,7 @@ strict namespace
                         // go back to hub
                         ChangeLevel("Hub", 0, 0, -1);
                     }
- 
- 
+
                     delay(34);
                 }
             }

@@ -159,7 +159,7 @@ strict namespace
         {
             objs_confetti[c].x = 0;
             objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(1, 32);
+            objs_confetti[c].velx = random(1, 64);
             objs_confetti[c].vely = random(-64, -1);
             objs_confetti[c].confnum = random(0, 17);
             objs_confetti[c].animnum = random(0, 7);
@@ -168,7 +168,7 @@ strict namespace
         {
             objs_confetti[c].x = (int)hud_width/65535;
             objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(-32, -1);
+            objs_confetti[c].velx = random(-64, -1);
             objs_confetti[c].vely = random(-64, -1);
             objs_confetti[c].confnum = random(0, 17);
             objs_confetti[c].animnum = random(0, 7);
@@ -213,6 +213,9 @@ strict namespace
                         hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
                     }
                 }
+                
+                // player's vote
+                hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-128.0, 0.1);
             }
             
             // system is in the end results state
@@ -225,8 +228,8 @@ strict namespace
                 for(int c = 0; c < 128; c++)
                 {
                     // slow down the confetti
-                    //if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
-                    //if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
+                    if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
+                    if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
                     
                     // add gravity
                     objs_confetti[c].vely += 1;
@@ -301,6 +304,12 @@ strict namespace
             }
             // sort votes
             bubble_sort();
+            
+            // sync player votes
+            for(int i = 0; i < 63; i++)
+            {
+                ACS_ExecuteAlways(571, 0, i, players[pnum]);
+            }
         }
     }
 
@@ -315,7 +324,7 @@ strict namespace
         votessorted[index][0] = votes;
         votessorted[index][1] = id;
     }
-    
+
     // sync voted choice
     script 568 (int v) clientside
     {
@@ -334,6 +343,12 @@ strict namespace
         state = s;
     }
 
+
+    // sync player choices
+    script 571 (int pnum, int id) clientside
+    {
+        players[pnum] = id;
+    }
 
 
 

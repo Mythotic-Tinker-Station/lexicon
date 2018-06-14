@@ -89,15 +89,9 @@ strict namespace
                     // countdown
                     clock--;
                     
-                    // when time is up
-                    if(clock < 0)
-                    {
-                        // go back to hub
-                        ChangeLevel("Hub", 0, 0, -1);
-                    }  
-                    
                     // this should be clientsided, but since this only is called once a second, it should be fine.
                     setfont("hudfont");
+                    
                     // timer
                     if(clock > 7)
                     {
@@ -111,10 +105,18 @@ strict namespace
                     {
                         hudmessagebold(s:"\c[Orange]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
                     }
-                    else if(clock <= 1)
+                    else if(clock <= 1 && clock >= 0)
                     {
-                        hudmessagebold(s:"\c[Red]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                        hudmessagebold(s:"\c[Red]Going back to the hub in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 3.0);
                     }
+ 
+                     // when time is up
+                    if(clock < 0)
+                    {
+                        // go back to hub
+                        ChangeLevel("Hub", 0, 0, -1);
+                    }
+ 
  
                     delay(34);
                 }

@@ -85,6 +85,7 @@ strict namespace
                 if(playercount() == 0)
                 {
                     // go back to the hub
+					hudmessagebold(s:"Going back to the hub in T Minus 5"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
 					Delay(35 * 6);
                     ChangeLevel("Hub", 0, 0, -1);
                 }

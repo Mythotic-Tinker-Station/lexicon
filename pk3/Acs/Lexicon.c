@@ -85,6 +85,7 @@ strict namespace
                 if(playercount() == 0)
                 {
                     // go back to the hub
+					Delay(35 * 6);
                     ChangeLevel("Hub", 0, 0, -1);
                 }
             }

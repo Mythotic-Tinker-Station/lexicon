@@ -36,7 +36,7 @@ I would like to ask that you do not upload builds compiled by yourself to the se
 You are however free to upload your own compiled build as a private wad.
 
 ## Want to suggest other mapsets or report bugs?
-Feel free to use the tracker on here.
+Feel free to use the tracker on here. You can also join our discord at https://discord.gg/qj9GASW
 
 ## Credits
 - MiFU for doing most of the compile work, its a pain in the ass.

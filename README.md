@@ -40,5 +40,8 @@ Feel free to use the tracker on here.
 
 ## Credits
 - MiFU for doing most of the compile work, its a pain in the ass.
+- K0RPSE for also assisting with the compile work, its still a pain in the ass though
 - Tribeam for the voting script and hub map
-- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts.
+- Michaelis for adding more playerstarts to maps
+- Our testers (Kenopath)
+- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer

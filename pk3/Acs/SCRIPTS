@@ -1,0 +1,6 @@
+#include "zcommon.acs"
+script 219 (void) {
+	Floor_LowerToHighest(6, 16, 0, 0);
+	Delay(35 * 4);
+	Exit_Normal(0);
+}

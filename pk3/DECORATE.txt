@@ -377,3 +377,171 @@ actor EvilMarine : WolfensteinSS 20305
 	Goto See
   }
 }
+
+////////////////////
+//// UAC Ultra /////
+////////////////////
+
+//Monsters//
+
+ACTOR "Demon Smith" 20316
+{
+  Health 2500
+  Radius 24
+  Height 75
+  Speed 14
+  PainChance 35
+  Mass 1000
+  Monster
+  +SOLID
+  +FLOORCLIP
+  +SHOOTABLE
+  +JUSTHIT
+  +JUSTATTACKED
+  +COUNTKILL
+  SeeSound "DemonSmith/See"
+  PainSound "DemonSmith/See"
+  DeathSound "DemonSmith/Death"
+  ActiveSound "DemonSmith/See"
+  Obituary "$OB_WOLFSS"
+  States
+  {
+  Spawn:
+    SSNA AB 10 A_Look
+    Loop
+  See:
+    SSNA AABBCCDD 3 A_Chase
+    Loop
+  Missile:
+    SSNA EFG 5 A_FaceTarget
+    SSNA H 0 A_CustomMissile("FireShot",28,0,0,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-5.625,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-11.25,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-16.875,1)
+    SSNA H 15 Bright
+    Goto See
+  Pain:
+    SSNA H 3
+    SSNA H 3 A_Pain
+    Goto See
+  Death:
+    SSNA I 5
+    SSNA J 5 A_Scream
+    SSNA K 5 A_NoBlocking
+    SSNA L 5
+    SSNA M 5
+    SSNA N 5 
+    SSNA O 5 A_XScream
+    SSNA P 5 A_NoBlocking
+    SSNA QRSTU 5
+    SSNA V -1
+    Stop
+  Raise:
+    SSNA M 5
+    SSNA LKJI 5
+    Goto See 
+  }
+}
+
+ACTOR FireShot : FatShot
+{
+  Speed 22
+  Damage 12
+  States
+  {
+  Spawn:
+    MANF AB 4 Bright
+    Loop
+  Death:
+    MANF C 8 Bright
+    MANF D 6 Bright
+    MANF E 4 Bright
+    Stop
+  }
+}
+
+ACTOR "Vile Heart" 20317
+{
+  Health 1250
+  Mass 10000000
+  PainChance 255
+  +SOLID
+  +SHOOTABLE
+  +NOICEDEATH
+  +OLDRADIUSDMG
+  PainSound "brain/pain"
+  DeathSound "brain/death"
+  States
+  {
+  BrainExplode:
+    MISL BC 10 Bright
+    MISL D 10 A_BrainExplode
+    Stop
+  Spawn:
+    HEAR A -1
+    Stop
+  Pain:
+    HEAR B 36 A_BrainPain
+    Goto Spawn
+  Death:
+    HEAR A 100 A_BrainScream
+    HEAR AA 10
+    HEAR A -1 A_BrainDie
+    Stop
+  }
+}
+
+ACTOR "The Protector" 20318
+{
+  Health 8000
+  Painchance 255
+  Radius 20
+  Height 37
+  +NOBLOOD
+  +SOLID
+  +SHOOTABLE
+  States
+  {
+  Spawn:
+    SMBT A 1 A_Look
+  Loop     
+  See:
+	SMBT A 1 A_FaceTarget
+	Goto Missile
+  Missile:
+    SMBT AB 2 
+	SMBT C 2 A_FaceTarget
+    SMBT D 2 A_TroopAttack
+    Goto See
+  Pain:
+	SMBT A 2 
+    SMBT B 2 A_Pain                
+  goto Spawn
+  Death:
+    SMBT C 2 
+	SMBT D 2 A_NoBlocking
+  Stop
+  }
+}
+
+//Decorations//
+
+ACTOR "Swaying Body 2" 20319
+{
+  Radius 16
+  Height 68
+  -SOLID
+  +NOGRAVITY
+  +SPAWNCEILING
+  RenderStyle SoulTrans
+  States
+  {
+  Spawn:
+    GOS1 A 10
+    GOS1 B 15
+    GOS1 C 8
+    GOS1 B 6
+    Loop
+	}
+}
+

@@ -36,9 +36,12 @@ I would like to ask that you do not upload builds compiled by yourself to the se
 You are however free to upload your own compiled build as a private wad.
 
 ## Want to suggest other mapsets or report bugs?
-Feel free to use the tracker on here.
+Feel free to use the tracker on here. You can also join our discord at https://discord.gg/qj9GASW
 
 ## Credits
 - MiFU for doing most of the compile work, its a pain in the ass.
-- Tribeam for the voting script and hub map
-- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts.
+- K0RPSE for also assisting with the compile work, its still a pain in the ass though
+- Tribeam for scripting, hub map
+- Michaelis for adding more playerstarts to maps
+- Our testers (Kenopath)
+- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer

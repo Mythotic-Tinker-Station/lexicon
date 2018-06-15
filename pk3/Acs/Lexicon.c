@@ -69,23 +69,54 @@ strict namespace
 
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
-
-    bool levelstarted = false;          // false at the start of a level, goes true when the first player joins
-
+    
     // when there are no players left, go back to the hub
     script "PlayerWatch" open
     {
-        levelstarted = false;
+        HudSetup(0, 0);
+        bool levelstarted = false;
+        int clock = 10;
+        
         while(1)
         {
-            // if a player has joined
+            // if the level has started
             if(levelstarted)
             {
                 // if the playercount goes back to 0
                 if(playercount() == 0)
                 {
-                    // go back to the hub
-                    ChangeLevel("Hub", 0, 0, -1);
+
+                    // countdown
+                    clock--;
+                    setfont("hudfont");
+                    
+                    // timer
+                    // this should be clientsided, but since this only is called once a second, it should be fine
+                    if(clock > 7)
+                    {
+                        hudmessagebold(s:"\c[Green]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 7 && clock > 4)
+                    {
+                        hudmessagebold(s:"\c[Yellow]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 4 && clock > 1)
+                    {
+                        hudmessagebold(s:"\c[Orange]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                    }
+                    else if(clock <= 1 && clock >= 0)
+                    {
+                        hudmessagebold(s:"\c[Red]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 3.0);
+                    }
+ 
+                     // when time is up
+                    if(clock < 0)
+                    {
+                        // go back to hub
+                        ChangeLevel("Hub", 0, 0, -1);
+                    }
+
+                    delay(34);
                 }
             }
             // if nobody has joined yet
@@ -157,7 +188,7 @@ strict namespace
         {
             objs_confetti[c].x = 0;
             objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(1, 32);
+            objs_confetti[c].velx = random(1, 64);
             objs_confetti[c].vely = random(-64, -1);
             objs_confetti[c].confnum = random(0, 17);
             objs_confetti[c].animnum = random(0, 7);
@@ -166,7 +197,7 @@ strict namespace
         {
             objs_confetti[c].x = (int)hud_width/65535;
             objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(-32, -1);
+            objs_confetti[c].velx = random(-64, -1);
             objs_confetti[c].vely = random(-64, -1);
             objs_confetti[c].confnum = random(0, 17);
             objs_confetti[c].animnum = random(0, 7);
@@ -211,6 +242,9 @@ strict namespace
                         hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
                     }
                 }
+                
+                // player's vote
+                hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-128.0, 0.1);
             }
             
             // system is in the end results state
@@ -223,8 +257,8 @@ strict namespace
                 for(int c = 0; c < 128; c++)
                 {
                     // slow down the confetti
-                    //if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
-                    //if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
+                    if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
+                    if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
                     
                     // add gravity
                     objs_confetti[c].vely += 1;
@@ -299,6 +333,12 @@ strict namespace
             }
             // sort votes
             bubble_sort();
+            
+            // sync player votes
+            for(int i = 0; i < 63; i++)
+            {
+                ACS_ExecuteAlways(571, 0, i, players[pnum]);
+            }
         }
     }
 
@@ -313,7 +353,7 @@ strict namespace
         votessorted[index][0] = votes;
         votessorted[index][1] = id;
     }
-    
+
     // sync voted choice
     script 568 (int v) clientside
     {
@@ -332,6 +372,12 @@ strict namespace
         state = s;
     }
 
+
+    // sync player choices
+    script 571 (int pnum, int id) clientside
+    {
+        players[pnum] = id;
+    }
 
 
 

@@ -50,6 +50,7 @@ strict namespace
         { "VanGaurd",               "VAN01" }, // 10
         { "Scythe 2",               "SC201" }, // 11
 		{ "Whispers Of Satan",		"WOS01"	}, // 12
+		{ "UAC Ultra",				"UAC01"	}, // 13
     };
     
     int votes[64];                      // holds the votes

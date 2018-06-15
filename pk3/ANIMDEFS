@@ -52,3 +52,40 @@ warp flat WARPED1
 warp flat WARPED2
 warp flat WARPED3
 warp flat WARPED4
+
+
+//UAC Ultra
+
+flat UALA1
+    pic UALA1 tics 5
+    pic UALA2 tics 5
+    pic UALA3 tics 5
+    pic UALA4 tics 5
+	
+	warp flat UALA1
+	warp flat UALA2
+	warp flat UALA3
+	warp flat UALA4
+	
+Texture Optional UFALL1 Range UFALL4 Tics 3
+Texture Optional UWALL1 Range UWALL4 Tics 3
+	
+flat UASLI09
+    pic UASLI09 tics 5
+    pic UASLI10 tics 5
+    pic UASLI11 tics 5
+    pic UASLI12 tics 5
+	
+	warp flat UASLI1
+	warp flat UASLI2
+	warp flat UASLI3
+	warp flat UASLI4
+	
+	warp flat UASLI09
+	warp flat UASLI10
+	warp flat UASLI11
+	warp flat UASLI12
+
+
+Switch UA48_4 on pic UA48_2 Tics 0
+Switch UA48_2 off pic UA48_4 Tics 0

@@ -22,6 +22,7 @@ So far, the mapsets included are:
 - VanGaurd
 - Scythe 2
 - Whispers of Satan
+- UAC Ultra
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat
@@ -40,8 +41,9 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 
 ## Credits
 - MiFU for doing most of the compile work, its a pain in the ass.
-- K0RPSE for also assisting with the compile work, its still a pain in the ass though
-- Tribeam for scripting, hub map
-- Michaelis for adding more playerstarts to maps
-- Our testers (Kenopath)
+- K0RPSE for also assisting with the compile work, its still a pain in the ass though.
+- Shaewn for assisting with various issues. He should compile more shit though but thats just me.
+- Tribeam for scripting, hub map.
+- Michaelis for adding more playerstarts to maps.
+- Our testers (Kenopath, Blushberry)
 - Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer

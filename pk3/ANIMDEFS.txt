@@ -1,0 +1,100 @@
+// Lexicon
+flat STATIC1
+    pic STATIC1 tics 2
+    pic STATIC2 tics 2
+    pic STATIC3 tics 2
+    pic STATIC4 tics 2
+    pic STATIC5 tics 2
+    pic STATIC6 tics 2
+    
+//Alien vendetta 
+
+Texture	Optional	AVFTE1  	Range	AVFTE4  	Tics 8
+Texture	Optional	51AVLA1 	Range	51AVLA4 	Tics 8
+Texture	Optional	51AVPO1 	Range	51AVPO11 	Tics 16
+Texture	Optional	FBAVWAT1 	Range	FBAVWAT4	Tics 8
+
+//New Gothic movement 1
+
+Texture	Optional	FBNG1SF1  	Range	FBNG1SF4  	Tics 8
+Texture	Optional	FBNG1LA1  	Range	FBNG1LA4  	Tics 8
+Texture	Optional	SLMFALL1 	Range	SLMFALL1  	Tics 8
+Texture	Optional	ADEL_Z90  	Range	ADEL_Z93  	Tics 8
+Texture	Optional	FBNG1DG1  	Range	FBNG1DG2  	Tics 4
+
+flat Optional ULAVA1 Range ULAVA4 Tics 8
+flat Optional FBNG1SL1 Range FBNG1SL4 Tics 8
+
+warp flat lavastk
+warp flat waterstk
+
+Switch ADEL_Z51 on pic ADEL_Z50 Tics 0
+Switch ADEL_Z50 off pic ADEL_Z51 Tics 0
+
+Switch FBNG1SG2 on pic FBNG1SG1 Tics 0
+Switch FBNG1SG1 off pic FBNG1SG2 Tics 0
+
+Switch FBNG1SU2 on pic FBNG1SU1 Tics 0
+Switch FBNG1SU1 off pic FBNG1SU2 Tics 0
+
+// Sythe 2
+
+flat Optional FBSC2SL1 range FBSC2SL4 tics 8
+flat Optional FBSC2SL5 range FBSC2SL8 tics 8
+
+//Vanguard
+
+Texture Optional NWFALL1 Range NWFALL4 Tics 8
+
+Switch SW2MEGA on pic SW1MEGA Tics 0
+Switch SW1MEGA off pic SW2MEGA Tics  0
+
+// Whispers of Satan
+texture IMPSE1
+pic 01 tics 4
+pic 02 tics 4
+
+warp texture SKYHELL1
+warp texture SKINFAC2
+
+warp flat WARPED1
+warp flat WARPED2
+warp flat WARPED3
+warp flat WARPED4
+
+
+//UAC Ultra
+
+flat UALA1
+    pic UALA1 tics 5
+    pic UALA2 tics 5
+    pic UALA3 tics 5
+    pic UALA4 tics 5
+	
+	warp flat UALA1
+	warp flat UALA2
+	warp flat UALA3
+	warp flat UALA4
+	
+Texture Optional UFALL1 Range UFALL4 Tics 3
+Texture Optional UWALL1 Range UWALL4 Tics 3
+	
+flat UASLI09
+    pic UASLI09 tics 5
+    pic UASLI10 tics 5
+    pic UASLI11 tics 5
+    pic UASLI12 tics 5
+	
+	warp flat UASLI1
+	warp flat UASLI2
+	warp flat UASLI3
+	warp flat UASLI4
+	
+	warp flat UASLI09
+	warp flat UASLI10
+	warp flat UASLI11
+	warp flat UASLI12
+
+
+Switch UA48_4 on pic UA48_2 Tics 0
+Switch UA48_2 off pic UA48_4 Tics 0

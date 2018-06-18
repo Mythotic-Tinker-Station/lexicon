@@ -51,6 +51,7 @@ strict namespace
         { "Scythe 2",               "SC201" }, // 11
 		{ "Whispers Of Satan",		"WOS01"	}, // 12
 		{ "UAC Ultra",				"UAC01"	}, // 13
+		{ "Monuments Of Mars",		"MOM01"	}, // 14
     };
     
     int votes[64];                      // holds the votes

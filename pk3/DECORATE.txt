@@ -40,7 +40,7 @@ ACTOR Lexicon_InstaKiller : DoomWeapon
   Weapon.AmmoUse 0
   Weapon.AmmoGive 0
   Weapon.AmmoType ""
-  Weapon.SlotNumber 1
+  Weapon.SlotNumber 0
   Weapon.SlotPriority 0
   Obituary ""
   Inventory.Pickupmessage ""

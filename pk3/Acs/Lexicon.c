@@ -52,6 +52,7 @@ strict namespace
 		{ "Whispers Of Satan",		"WOS01"	}, // 12
 		{ "UAC Ultra",				"UAC01"	}, // 13
 		{ "Monuments Of Mars",		"MOM01"	}, // 14
+		{ "Khorus's Speedy Shit",	"KSS01"	}, // 15
     };
     
     int votes[64];                      // holds the votes

@@ -311,14 +311,14 @@ strict namespace
                     {
                         hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
                     }
-                    if(killmonsters) 
+                    /*if(killmonsters) 
                     { 
                         hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
                     }
                     else
                     {
                         hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
-                    }
+                    }*/
                 }
                 
                 delay(1);

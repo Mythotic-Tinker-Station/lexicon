@@ -286,6 +286,13 @@ strict namespace
     // called by players to manage their votes
     script "VotePlayer" (int id)
     {
+        if(id == -1) 
+        {
+            // there was something else here but i removed it, and all the blank switches were set for this case, but now its just a waste
+            // however, am leaving this here incase i do wanna use this for something
+            terminate;
+        }
+    
         if(playernumber() > -1)
         {
             // get player number

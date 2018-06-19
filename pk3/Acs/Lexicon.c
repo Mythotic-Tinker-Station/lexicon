@@ -73,8 +73,12 @@ strict namespace
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
     
-    // when there are no players left, go back to the hub
-    script "PlayerWatch" open
+    global bool 0:godmode;
+    global bool 1:killmonsters;
+    global bool 2:instakiller;
+    
+    // stuff that runs during any level
+    script "Level" open
     {
         HudSetup(0, 0);
         bool levelstarted = false;
@@ -122,6 +126,7 @@ strict namespace
                     delay(34);
                 }
             }
+            
             // if nobody has joined yet
             else
             {
@@ -141,6 +146,8 @@ strict namespace
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
+        Thing_ChangeTID(0, playernumber()+1337);
+        
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
@@ -286,7 +293,32 @@ strict namespace
                 if(GetCVar("lexicon_debug_mode") == 1)
                 {
                     setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Red]debug mode enabled"; 0, 9600, 0, hud_width - 140.0, hud_height - 151.0, 0.1);
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 200.0, hud_height - 151.0, 0.1);
+                    
+                    if(instakiller) 
+                    { 
+                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    if(godmode) 
+                    { 
+                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    if(killmonsters) 
+                    { 
+                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }
                 }
                 
                 delay(1);
@@ -297,10 +329,36 @@ strict namespace
         {
             while(1)
             {
+                // if debug mode is on
                 if(GetCVar("lexicon_debug_mode") == 1)
                 {
                     setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Red]debug mode enabled"; 0, 9600, 0, hud_width - 140.0, hud_height - 151.0, 0.1);
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 200.0, hud_height - 151.0, 0.1);
+                    
+                    if(instakiller) 
+                    { 
+                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    if(godmode) 
+                    { 
+                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    /*if(killmonsters) 
+                    { 
+                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }*/
                 }
                 delay(1);
             }
@@ -379,7 +437,44 @@ strict namespace
 
 
 
+    // debug mode
+    script "DebugMode" open
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            godmode = false;
+            killmonsters = false;
+            instakiller = false;
+        }
+        if(godmode)
+        {
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(1337+i, "Lexicon_GodMode", 1);
+            }
+        }
+        if(killmonsters)
+        {
+            consolecommand("kill monsters");
+        }
+        if(instakiller)
+        {
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(1337+i, "Lexicon_InstaKiller", 1);
+            }
+        }
+    }
 
+    script "DebugMode_Switch" (int id)
+    {
+        switch(id)
+        {
+            case 0: godmode = !godmode; break;
+            case 1: killmonsters = !killmonsters; break;
+            case 2: instakiller = !instakiller; break;
+        }
+    }
 
     // sync sorted votes to clients
     script 567 (int index, int votes, int id) clientside
@@ -412,6 +507,14 @@ strict namespace
     {
         players[pnum] = id;
     }
+
+
+
+
+
+
+
+
 
 
 

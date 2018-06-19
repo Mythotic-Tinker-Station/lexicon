@@ -12,6 +12,76 @@ Scythe 2
 ....
 */
 
+
+////////////////////
+// Lexicon        //
+////////////////////
+
+actor Lexicon_GodMode : PowerupGiver
+{ 
+	inventory.usesound ""
+	inventory.maxamount 1
+	-COUNTITEM
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.QUIET
+	+INVENTORY.UNDROPPABLE
+	-INVENTORY.KEEPDEPLETED
+    +INVENTORY.HUBPOWER
+    +INVENTORY.PERSISTENTPOWER
+    powerup.duration 0x7FFFFFFD
+    powerup.type PowerInvulnerable
+}
+
+
+ACTOR Lexicon_InstaKiller : DoomWeapon
+{
+  Weapon.SelectionOrder 1900
+  Weapon.AmmoUse 0
+  Weapon.AmmoGive 0
+  Weapon.AmmoType ""
+  Weapon.SlotNumber 1
+  Weapon.SlotPriority 0
+  Obituary ""
+  Inventory.Pickupmessage ""
+  Tag "InstaKiller"
+  States
+  {
+  Ready:
+    INKL A 1 A_WeaponReady
+    Loop
+  Deselect:
+    INKL A 1 A_Lower
+    Loop
+  Select:
+    INKL A 1 A_Raise
+    Loop
+  Fire:
+    INKL B 0 A_FireBullets(0, 0, 1, 1000000, "IKPuff")
+    INKL B 1 A_FireBullets(5, 5, 2, 1000000, "IKPuff")
+    INKL A 0 A_ReFire
+    Goto Ready
+  Spawn:
+    TNT1 A -1
+    Stop
+  }
+}
+
+ACTOR IKPuff :BulletPuff
+{
+  -ALLOWPARTICLES
+  RenderStyle Translucent
+  Alpha 1.0
+  VSpeed 1
+  Scale 0.2
+  States
+  {
+  Spawn:
+    VOID ABCDEF 2 bright A_FadeOut(0.1)
+    loop
+  }
+}
+
 ////////////////////
 // Shai'tans Luck //
 ////////////////////

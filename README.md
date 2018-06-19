@@ -23,6 +23,8 @@ So far, the mapsets included are:
 - Scythe 2
 - Whispers of Satan
 - UAC Ultra
+- Monuments of Mars
+- Khorus's Speedy shit
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

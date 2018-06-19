@@ -48,3 +48,4 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - Our testers (Kenopath, Blushberry)
 - Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer
 - Sega for the Sonic hud font, HD version and extra chars made by Tribeam.
+- Skulltag for the railgun sprites used for the InstaKiller

@@ -293,7 +293,7 @@ strict namespace
                 if(GetCVar("lexicon_debug_mode") == 1)
                 {
                     setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 200.0, hud_height - 151.0, 0.1);
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
                     
                     if(instakiller) 
                     { 
@@ -333,7 +333,7 @@ strict namespace
                 if(GetCVar("lexicon_debug_mode") == 1)
                 {
                     setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 200.0, hud_height - 151.0, 0.1);
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
                     
                     if(instakiller) 
                     { 

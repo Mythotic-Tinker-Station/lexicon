@@ -545,3 +545,92 @@ ACTOR "Swaying Body 2" 20319
 	}
 }
 
+
+//////////////////////////
+//// Circle of Caina /////
+//////////////////////////
+
+
+ACTOR COCStalagtite : Stalagtite 25001
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    COCT A -1
+    Stop
+  }
+}
+
+ACTOR COCShortGreenTorch : ShortGreenTorch 25002
+{
+  Radius 16
+  Height 37
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    CCGT ABCD 4 Bright
+    Loop
+  }
+}
+
+ACTOR COCSkullColumn : SkullColumn 25003 
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    CCL6 A -1
+    Stop
+  }
+}
+
+ACTOR COCTallGreenColumn : TallGreenColumn 25004
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    CCL1 A -1
+    Stop
+  }
+}
+
+ACTOR COCShortGreenColumn : ShortGreenColumn 25005
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    CCL2 A -1
+    Stop
+  }
+}
+
+ACTOR COCGreenTorch : GreenTorch 25006
+{
+  Radius 16
+  Height 68
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    CCRN ABCD 4 Bright
+    Loop
+  }
+}

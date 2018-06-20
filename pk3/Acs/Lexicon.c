@@ -73,8 +73,12 @@ strict namespace
     int state;                          // state of the voting system
     int state_clock;                    // custom timer
     
-    // when there are no players left, go back to the hub
-    script "PlayerWatch" open
+    global bool 0:godmode;
+    global bool 1:killmonsters;
+    global bool 2:instakiller;
+    
+    // stuff that runs during any level
+    script "Level" open
     {
         HudSetup(0, 0);
         bool levelstarted = false;
@@ -122,6 +126,7 @@ strict namespace
                     delay(34);
                 }
             }
+            
             // if nobody has joined yet
             else
             {
@@ -141,6 +146,8 @@ strict namespace
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
+        Thing_ChangeTID(0, playernumber()+1337);
+        
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
@@ -172,116 +179,191 @@ strict namespace
     // the hud
     script "VoteHud" enter clientside
     {
-        
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }
-        
+    
         // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
         
         // set up the hud's sizes based on the user's current screen res
         HudSetup(0 ,0);
-        
+            
         // welcome
         setfont("hudfont");
-        hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
         
-        
-        // setup the confetti
-        for(int c = 0; c < 64; c++)
-        {
-            objs_confetti[c].x = 0;
-            objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(1, 64);
-            objs_confetti[c].vely = random(-64, -1);
-            objs_confetti[c].confnum = random(0, 17);
-            objs_confetti[c].animnum = random(0, 7);
-        }
-        for(int c = 64; c < 128; c++)
-        {
-            objs_confetti[c].x = (int)hud_width/65535;
-            objs_confetti[c].y = (int)hud_height/65535;
-            objs_confetti[c].velx = random(-64, -1);
-            objs_confetti[c].vely = random(-64, -1);
-            objs_confetti[c].confnum = random(0, 17);
-            objs_confetti[c].animnum = random(0, 7);
-        }
-        
-        // loop
-        while(1)
-        {
-            // system is in the countdown state
-            if(state == STATE_COUNTDOWN)
+        // if we are on the hub map
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!"; 0, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
+            
+            // setup the confetti
+            for(int c = 0; c < 64; c++)
             {
-                setfont("HUDFONT");
-                
-                // timer
-                if(time_seconds > TIME_YELLOW)
+                objs_confetti[c].x = 0;
+                objs_confetti[c].y = (int)hud_height/65535;
+                objs_confetti[c].velx = random(1, 64);
+                objs_confetti[c].vely = random(-64, -1);
+                objs_confetti[c].confnum = random(0, 17);
+                objs_confetti[c].animnum = random(0, 7);
+            }
+            for(int c = 64; c < 128; c++)
+            {
+                objs_confetti[c].x = (int)hud_width/65535;
+                objs_confetti[c].y = (int)hud_height/65535;
+                objs_confetti[c].velx = random(-64, -1);
+                objs_confetti[c].vely = random(-64, -1);
+                objs_confetti[c].confnum = random(0, 17);
+                objs_confetti[c].animnum = random(0, 7);
+            }
+            
+            // loop
+            while(1)
+            {
+                // system is in the countdown state
+                if(state == STATE_COUNTDOWN)
                 {
-                    hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                }
-                else if(time_seconds <= TIME_YELLOW && time_seconds > TIME_ORANGE)
-                {
-                    hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                }
-                else if(time_seconds <= TIME_ORANGE && time_seconds > TIME_RED)
-                {
-                    hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                }
-                else if(time_seconds <= TIME_RED)
-                {
-                    hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                }
-                
-                // vote header
-                hudmessagebold(s:"\c[Cyan]Votes"; 0, 9999, 0, 192.1, 136.0, 0.1);
-                
-                // vote list
-                fixed y = 136.0;
-                for(int i = 0; i < 64; i++)
-                {
-                    if(votessorted[i][0] > 0)
+                    setfont("HUDFONT");
+                    
+                    // timer
+                    if(time_seconds > TIME_YELLOW)
                     {
-                        y += 23.0;
-                        hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
+                        hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
+                    }
+                    else if(time_seconds <= TIME_YELLOW && time_seconds > TIME_ORANGE)
+                    {
+                        hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
+                    }
+                    else if(time_seconds <= TIME_ORANGE && time_seconds > TIME_RED)
+                    {
+                        hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
+                    }
+                    else if(time_seconds <= TIME_RED)
+                    {
+                        hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
+                    }
+                    
+                    // vote header
+                    hudmessagebold(s:"\c[Cyan]Votes"; 0, 9999, 0, 192.1, 136.0, 0.1);
+                    
+                    // vote list
+                    fixed y = 136.0;
+                    for(int i = 0; i < 64; i++)
+                    {
+                        if(votessorted[i][0] > 0)
+                        {
+                            y += 23.0;
+                            hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
+                        }
+                    }
+                    
+                    // player's vote
+                    hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-128.0, 0.1);
+                }
+                
+                // system is in the end results state
+                else if(state == STATE_RESULTS)
+                {
+                    setfont("hudfont");
+                    hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+                    
+                    // confetti :D
+                    for(int c = 0; c < 128; c++)
+                    {
+                        // slow down the confetti
+                        if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
+                        if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
+                        
+                        // add gravity
+                        objs_confetti[c].vely += 1;
+                    
+                        // apply velocities
+                        objs_confetti[c].x += objs_confetti[c].velx;
+                        objs_confetti[c].y += objs_confetti[c].vely;
+                        
+                        // animate it
+                        objs_confetti[c].animnum++;
+                        if(objs_confetti[c].animnum > 7) { objs_confetti[c].animnum = 0; }
+                        objs_confetti[c].image = StrParam(s:"CN", i:objs_confetti[c].confnum, i:objs_confetti[c].animnum);
+
+                        // show it
+                        setfont(objs_confetti[c].image);
+                        hudmessagebold(s:"a"; 0, c+9800, 0, (fixed)(objs_confetti[c].x*65535), (fixed)(objs_confetti[c].y*65535), 0.1);
                     }
                 }
                 
-                // player's vote
-                hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-128.0, 0.1);
-            }
-            
-            // system is in the end results state
-            else if(state == STATE_RESULTS)
-            {
-                setfont("hudfont");
-                hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
-                
-                // confetti :D
-                for(int c = 0; c < 128; c++)
+                // if debug mode is on
+                if(GetCVar("lexicon_debug_mode") == 1)
                 {
-                    // slow down the confetti
-                    if(objs_confetti[c].velx > 0){ objs_confetti[c].velx -= 1; }
-                    if(objs_confetti[c].velx < 0){ objs_confetti[c].velx += 1; }
+                    setfont("HUDFONT");
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
                     
-                    // add gravity
-                    objs_confetti[c].vely += 1;
-                
-                    // apply velocities
-                    objs_confetti[c].x += objs_confetti[c].velx;
-                    objs_confetti[c].y += objs_confetti[c].vely;
-                    
-                    // animate it
-                    objs_confetti[c].animnum++;
-                    if(objs_confetti[c].animnum > 7) { objs_confetti[c].animnum = 0; }
-                    objs_confetti[c].image = StrParam(s:"CN", i:objs_confetti[c].confnum, i:objs_confetti[c].animnum);
-
-                    // show it
-                    setfont(objs_confetti[c].image);
-                    hudmessagebold(s:"a"; 0, c+9800, 0, (fixed)(objs_confetti[c].x*65535), (fixed)(objs_confetti[c].y*65535), 0.1);
+                    if(instakiller) 
+                    { 
+                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    if(godmode) 
+                    { 
+                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    /*if(killmonsters) 
+                    { 
+                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }*/
                 }
+                
+                delay(1);
             }
-            delay(1);
         }
+        // if we are on any other map
+        else
+        {
+            while(1)
+            {
+                // if debug mode is on
+                if(GetCVar("lexicon_debug_mode") == 1)
+                {
+                    setfont("HUDFONT");
+                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+                    
+                    if(instakiller) 
+                    { 
+                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1); 
+                    }
+                    if(godmode) 
+                    { 
+                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1); 
+                    }
+                    /*if(killmonsters) 
+                    { 
+                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }
+                    else
+                    {
+                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1); 
+                    }*/
+                }
+                delay(1);
+            }
+        }
+        
     }
 
     // called by players to manage their votes
@@ -355,7 +437,44 @@ strict namespace
 
 
 
+    // debug mode
+    script "DebugMode" open
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            godmode = false;
+            killmonsters = false;
+            instakiller = false;
+        }
+        if(godmode)
+        {
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(1337+i, "Lexicon_GodMode", 1);
+            }
+        }
+        if(killmonsters)
+        {
+            consolecommand("kill monsters");
+        }
+        if(instakiller)
+        {
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(1337+i, "Lexicon_InstaKiller", 1);
+            }
+        }
+    }
 
+    script "DebugMode_Switch" (int id)
+    {
+        switch(id)
+        {
+            case 0: godmode = !godmode; break;
+            case 1: killmonsters = !killmonsters; break;
+            case 2: instakiller = !instakiller; break;
+        }
+    }
 
     // sync sorted votes to clients
     script 567 (int index, int votes, int id) clientside
@@ -388,6 +507,14 @@ strict namespace
     {
         players[pnum] = id;
     }
+
+
+
+
+
+
+
+
 
 
 

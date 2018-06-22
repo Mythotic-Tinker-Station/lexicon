@@ -1,0 +1,19 @@
+// Circle of Caina
+:Door1
+        door            20
+        playuntildone   coc/dor1_op
+        stopsound       coc/dor1_clos
+end
+
+:Door2
+        door            21
+        playuntildone   coc/bdo1_op
+        stopsound       coc/bdo1_clos
+end
+
+:Plat1
+        platform        40
+		playuntildone	coc/plat_str
+        playrepeat      coc/plat_mid
+        stopsound       coc/plat_stp
+end

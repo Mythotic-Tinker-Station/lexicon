@@ -53,6 +53,7 @@ strict namespace
 		{ "UAC Ultra",				"UAC01"	}, // 13
 		{ "Monuments Of Mars",		"MOM01"	}, // 14
 		{ "Khorus's Speedy Shit",	"KSS01"	}, // 15
+		{ "Circle of Caina",		"COC01"	}, // 16
     };
     
     int votes[64];                      // holds the votes

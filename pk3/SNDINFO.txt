@@ -7,3 +7,21 @@ partyhorn               horn
 //Hell Smith
 DemonSmith/Death		DEMSDTH
 DemonSmith/See			DEMSSIT
+
+///////////////////
+//Circle of Caina//
+///////////////////
+
+//Switch
+coc/switch			CCSWTCHN
+
+//Platform
+coc/plat_str			CCPSTART
+coc/plat_stp			CCPSTOP
+coc/plat_mid			CCSTNMOV
+
+//Door
+coc/dor1_op			CCDOROPN
+coc/dor1_clos			CCDORCLS
+coc/bdo1_op			CCBDOPN
+coc/bdo1_clos			CCBDCLS

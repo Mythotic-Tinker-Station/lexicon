@@ -572,23 +572,23 @@ ACTOR "The Protector" 20318
   States
   {
   Spawn:
-    SMBT A 1 A_Look
+    UUBT A 1 A_Look
   Loop     
   See:
-	SMBT A 1 A_FaceTarget
+	UUBT A 1 A_FaceTarget
 	Goto Missile
   Missile:
-    SMBT AB 2 
-	SMBT C 2 A_FaceTarget
-    SMBT D 2 A_TroopAttack
+    UUBT AB 2 
+	UUBT C 2 A_FaceTarget
+    UUBT D 2 A_TroopAttack
     Goto See
   Pain:
-	SMBT A 2 
-    SMBT B 2 A_Pain                
+	UUBT A 2 
+    UUBT B 2 A_Pain                
   goto Spawn
   Death:
-    SMBT C 2 
-	SMBT D 2 A_NoBlocking
+    UUBT C 2 
+	UUBT D 2 A_NoBlocking
   Stop
   }
 }

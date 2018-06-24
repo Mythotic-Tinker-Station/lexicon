@@ -107,4 +107,14 @@ flat SLIME09
 	pic SLIME11 tics 5
 	pic SLIME12 tics 5
 	
-Texture FSRAIN1 Range FSRAIN4 Tics 8
+Texture FSRAIN1 Range FSRAIN4 Tics 12
+
+// Dark Tartarus
+
+Switch	Doom 3		EHELLSW1   	On Pic	EHELLSW2   	Tics 0
+Texture	Optional	SLMFALL1  	Range	SLMFALL4  	Tics 8
+Texture	Optional	WTRFALL1  	Range	WTRFALL4  	Tics 8
+Texture	Optional	LFALL_N1	Range	LFALL_N4	Tics 8
+Texture	Optional	ACANDL01	Range	ACANDL03	Tics 8
+Texture	Optional	COMPFUZ1	Range	COMPFUZ4	Tics 8
+Switch	Doom 3		EWAL001A   	On Pic	EWAL002B  	Tics 0

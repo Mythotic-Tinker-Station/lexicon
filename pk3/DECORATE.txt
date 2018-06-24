@@ -808,3 +808,2653 @@ ACTOR FSWDeadStick : DeadStick 25013 // 25
     Stop
   }
 }
+
+//////////////////////////
+///// Dark Tartarus //////
+//////////////////////////
+
+actor TAT__MegaMap : CustomInventory 32507
+{
+//$Category Powerups
+  +COUNTITEM
+  +INVENTORY.FANCYPICKUPSOUND
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.AUTOACTIVATE
+  Translation "112:127=168:191", "160:167=16:47", "192:207=168:175"
+  Inventory.MaxAmount 0
+  Inventory.PickupSound "misc/p_pkup"
+  Inventory.PickupMessage "Mega Map!"
+  states
+  {
+  Spawn:
+    PMAP ABCDCB 6 Bright
+    Loop
+  Pickup:
+    TNT1 A 1 A_GiveInventory ("Allmap")
+    TNT1 A 0 A_GiveInventory ("TAT__DoomScanner")
+    stop
+  }
+}
+
+actor TAT__DoomScanner : PowerupGiver
+{
+  powerup.type "Scanner"
+  +INVENTORY.AUTOACTIVATE
+  Inventory.MaxAmount 0
+  Powerup.Duration 0x7FFFFFFF
+  states
+  {
+  Spawn:
+    TNT1 A 1
+    stop
+  }
+}
+
+ACTOR TAT__SuperBoss 32508
+{
+//$Category Monsters
+  BloodColor Green
+  Health 4000
+  Radius 20
+  Height 56
+  Mass 1000
+  Speed 17
+  PainChance 20
+  Monster
+  +QUICKTORETALIATE
+  +FLOORCLIP
+  +NOTARGET
+  +BOSS
+  SeeSound "vile/active"
+  PainSound "brain/pain"
+  DeathSound "brain/death"
+  ActiveSound "vile/active"
+  MeleeSound "vile/stop"
+  Obituary " "
+  dropitem "RedSkull"
+  Translation "48:63=80:95", "64:79=96:111", "208:223=80:95", "128:143=92:111", 
+  "144:151=104:111", "13:15=0:2", "236:239=5:8", "160:167=112:127", "224:231=112:119", 
+  "249:249=112:112", "248:248=120:120", "168:191=112:127", "232:235=120:123", "16:47=112:127"
+states
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_ChangeFlag("Frightened", 0)
+  SpawnLoop:	
+    VILE AABBCCDDEEFF 2 A_wander
+    VILE A 0 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_ChangeFlag("Frightened", 0)
+  SeeLoop:		
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(32,"Teleport")
+    Loop
+  Missile:
+ 	VILE E 0 Bright A_Jump(100,"Missile4")
+ 	VILE E 0 Bright A_Jump(100,2)
+	VILE E 0 Bright A_FaceTarget
+ 	VILE E 0 Bright A_Jump(64,"Missile3")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE HIJKLMN 4 Bright
+    VILE OOOO 8 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE P 20 Bright
+    Goto See
+  Missile3:
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,0)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,30)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,60)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,90)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,120)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,150)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,180)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,210)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,240)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,270)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
+    VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
+    VILE ] 4 Bright
+    VILE Q 5   
+    VILE Q 5 A_PlaySound("vile/pain")	
+    Goto See
+  Missile4:
+ 	VILE M 0 Bright A_FaceTarget
+    VILE M 0 A_Jump(128,5)	
+    VILE M 0 A_Jump(128,3)	
+	VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
+    VILE M 0 A_Jump(256,2)	
+	VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)	
+    VILE M 10 Bright A_VileStart
+    VILE M 10 Bright A_FaceTarget
+	VILE KJ 4 Bright A_FaceTarget
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-16)
+    VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,16)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-12)
+    VILE [ 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,12)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-8)
+    VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,8)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-4)
+    VILE [ 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,4)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,0)
+    VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,0)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,4)
+    VILE [ 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-4)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,8)
+    VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-8)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,12)
+    VILE [ 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-12)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,16)
+    VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-16)
+    Goto See
+  Pain:
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    VILE Q 5   
+    VILE Q 5 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,45)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,90)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,135)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,180)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,225)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,270)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,315)
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    Goto See
+  Teleport:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+    TNT1 A 0 A_ChangeFlag("Frightened", 1)
+  TeleportPrepare:
+    TNT1 A 1 A_ExtChase(0,0,0)
+    TNT1 A 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+ 	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  TeleportDone:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+    TNT1 A 0 A_ChangeFlag("Frightened", 0)
+    TNT1 A 0 A_Jump(10,"Missile")
+	Goto See
+  Death:
+    VILE Q 5 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE Q 0 A_Jump(200,4)	
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,60,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,180,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,240,2)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+	TNT1 A 0 A_NoBlocking
+	TNT1 A 0 A_SpawnItemEx("TAT__SuperBoss2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+    Stop
+  }
+}
+
+
+ACTOR TAT__SuperBoss2 : TAT__SuperBoss
+{
+  DropItem "BlueSkull"
+  PainChance 15
+  Speed 18
+  Health 8000
+  +MISSILEMORE
+states
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_ChangeFlag("Frightened", 0)
+  SpawnLoop:	
+    VILE AABBCCDDEEFF 2 A_wander
+    VILE A 0 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_ChangeFlag("Frightened", 0)
+  SeeLoop:
+    VILE AA 1 A_Chase
+    VILE A 0 A_Jump(8,"Teleport")
+	VILE BB 1 A_Chase
+    VILE B 0 A_Jump(8,"Teleport")
+	VILE CC 1 A_Chase
+    VILE C 0 A_Jump(8,"Teleport")
+	VILE DD 1 A_Chase
+    VILE D 0 A_Jump(8,"Teleport")
+	VILE EE 1 A_Chase
+    VILE E 0 A_Jump(8,"Teleport")
+	VILE FF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport")
+  Loop
+  Missile:
+ 	VILE E 0 Bright A_Jump(64,"Missile4")
+ 	VILE E 0 Bright A_Jump(100,2)
+	VILE E 0 Bright A_FaceTarget
+ 	VILE E 0 Bright A_Jump(64,"Missile3")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE HIJKLMN 4 Bright
+    VILE OOO 8 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE P 10 Bright
+    Goto See
+  Missile3:
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,0)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,30)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,60)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,90)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,120)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,150)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,180)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,210)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,240)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,270)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
+    VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
+    VILE ] 4 Bright
+    VILE Q 5   
+    VILE Q 5 A_PlaySound("vile/pain")	
+    Goto See
+  Missile4:
+ 	VILE M 0 Bright A_FaceTarget
+    VILE M 0 A_Jump(128,5)	
+    VILE M 0 A_Jump(128,3)	
+	VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
+    VILE M 0 A_Jump(256,2)	
+	VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)	
+    VILE M 10 Bright A_VileStart
+    VILE M 10 Bright A_FaceTarget
+	VILE KJ 4 Bright A_FaceTarget
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-20)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,20)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-16)
+    VILE [ 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,16)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-12)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,12)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,-8)
+    VILE [ 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,8)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,4)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,4)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,0)
+    VILE [ 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,0)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,4)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-4)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,8)
+    VILE [ 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-8)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,12)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-12)
+ 	VILE [ 0 Bright A_FaceTarget
+    VILE [ 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,16)
+    VILE [ 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-16)
+ 	VILE ] 0 Bright A_FaceTarget
+    VILE ] 0 Bright A_CustomMissile ("ArachnotronPlasma",30,30,20)
+    VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-20)
+    Goto See
+  Pain:
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
+    VILE Q 5   
+    VILE Q 5 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,24)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,48)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,72)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,96)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,120)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,144)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,168)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,192)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,216)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,264)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,288)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,312)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,336)
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
+    VILE [ 0 
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    Goto See
+  Teleport:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+    TNT1 A 0 A_ChangeFlag("Frightened", 1)
+  TeleportPrepare:
+    TNT1 A 1 A_ExtChase(0,0,0)
+    TNT1 A 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+ 	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  Death:
+    VILE Q 5 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE Q 0 A_Jump(200,5)	
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,45,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,135,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,225,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,315,2)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+	TNT1 A 0 A_NoBlocking
+	TNT1 A 0 A_SpawnItemEx("TAT__SuperBoss3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+    Stop
+  }
+}
+
+
+ACTOR TAT__SuperBoss3 : TAT__SuperBoss
+{
+  DropItem "YellowSkull"
+  PainChance 10
+  Speed 19
+  Health 8000
+states
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SpawnLoop:	
+    VILE AABBCCDDEEFF 2 A_wander
+    VILE A 0 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SeeLoop:
+    VILE AA 1 A_Chase
+    VILE A 0 A_Jump(8,"Teleport")
+	VILE BB 1 A_Chase
+    VILE B 0 A_Jump(8,"Teleport")
+	VILE CC 1 A_Chase
+    VILE C 0 A_Jump(8,"Teleport")
+	VILE DD 1 A_Chase
+    VILE D 0 A_Jump(8,"Teleport")
+	VILE EE 1 A_Chase
+    VILE E 0 A_Jump(8,"Teleport")
+	VILE FF 1 A_Chase
+    VILE F 0 A_Jump(32,"Teleport")
+  Loop
+  Missile:
+ 	VILE E 0 Bright A_Jump(100,2)
+	VILE E 0 Bright A_FaceTarget
+ 	VILE E 0 Bright A_Jump(100,"Missile3")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 3 Bright
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 3 Bright
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 3 Bright
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 3 Bright
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    Goto See
+  Missile3:
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,0)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,30)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,60)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,90)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,120)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,150)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,180)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,210)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,240)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,270)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
+    VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
+    VILE ] 4 Bright
+    VILE Q 5   
+    VILE Q 5 A_PlaySound("vile/pain")	
+    Goto See
+  Pain:
+  	VILE Q 0 Bright A_Jump(10,"Teleport")
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
+    VILE Q 5   
+    VILE Q 5 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,30)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,60)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,90)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,120)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,150)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,180)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,210)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,270)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
+    VILE [ 0 
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    Goto See
+  Teleport:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+  TeleportPrepare:
+    TNT1 A 1 A_Wander
+    TNT1 A 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+ 	TNT1 A 0 A_ClearTarget
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  Death:
+    VILE Q 5 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE Q 0 A_Jump(200,6)	
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,36,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,108,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,180,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,252,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,324,2)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+	TNT1 A 0 A_NoBlocking
+	TNT1 A 0 A_SpawnItemEx("TAT__SuperBoss4", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+    Stop
+  }
+}
+	
+ACTOR TAT__SuperBoss4 : TAT__SuperBoss
+{
+  DropItem "MegaSphere"
+  PainChance 7
+  Speed 20
+  Health 9000
+states
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SpawnLoop:	
+    VILE AABBCCDDEEFF 1 A_wander
+    VILE A 0 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SeeLoop:
+    VILE AA 1 A_FastChase
+    VILE A 0 A_Jump(8,"Teleport")
+	VILE BB 1 A_FastChase
+    VILE B 0 A_Jump(8,"Teleport")
+	VILE CC 1 A_FastChase
+    VILE C 0 A_Jump(8,"Teleport")
+	VILE DD 1 A_FastChase
+    VILE D 0 A_Jump(8,"Teleport")
+	VILE EE 1 A_FastChase
+    VILE E 0 A_Jump(8,"Teleport")
+	VILE FF 1 A_FastChase
+    VILE F 0 A_Jump(8,"Teleport")
+  Loop
+  Missile:
+ 	VILE E 0 Bright A_Jump(100,2)
+	VILE E 0 Bright A_FaceTarget
+ 	VILE E 0 Bright A_Jump(100,"Missile3")
+    VILE M 0 A_Jump(128,5)	
+    VILE M 0 A_Jump(128,3)	
+	VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
+    VILE M 0 A_Jump(256,2)	
+	VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport2")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport2")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport2")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport2")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport2")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport2")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE F 0 A_Jump(32,"Teleport2")
+    VILE Q 5  
+    VILE Q 20 A_PlaySound("vile/pain")	
+    VILE Q 20 A_PlaySound("vile/pain")	
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 10 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
+    VILE [ 10 Bright
+    VILE F 0 A_Jump(32,"Teleport2")
+    VILE AABBCCDDEEFF 1 A_FastChase
+    VILE F 0 A_Jump(32,"Teleport2")
+    Goto See
+  Missile3:
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 2 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 2 Bright 
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,0)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,30)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,60)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,90)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,120)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,150)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,180)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,210)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,240)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,270)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
+    VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
+    VILE ] 4 Bright
+    VILE F 0 A_Jump(32,"Teleport2")
+    VILE Q 5  
+    VILE Q 20 A_PlaySound("vile/pain")	
+    VILE Q 20 A_PlaySound("vile/pain")	
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 10 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
+    VILE [ 10 Bright
+    VILE F 0 A_Jump(32,"Teleport2")
+    VILE AABBCCDDEEFF 1 A_FastChase
+    VILE F 0 A_Jump(32,"Teleport2")
+    Goto See
+  Pain:
+  	VILE Q 0 Bright A_Jump(10,"Teleport")
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
+    VILE Q 5   
+    VILE Q 5 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,40)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,60)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,80)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,100)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,120)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,140)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,160)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,180)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,200)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,220)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,260)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,280)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
+    VILE [ 0 
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    Goto See
+  Teleport:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+  TeleportPrepare:
+    TNT1 A 1 A_ExtChase(0,0,0)
+    TNT1 A 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  Teleport2:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+  TeleportPrepare2:
+    TNT1 A 1 A_Wander
+    TNT1 A 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  Death:
+    VILE Q 5 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE Q 0 A_Jump(200,7)	
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,30,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,90,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,150,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,210,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,270,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,330,2)
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+    VILE QQQQQ 5 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQ 0 A_SpawnItemEx("CellPack",0,0,16,Random(-8,8),Random(-8,8),8)
+	TNT1 A 0 A_NoBlocking
+	TNT1 A 0 A_SpawnItemEx("TAT__SuperBoss5", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+    Stop
+  }
+}
+	
+	
+ACTOR TAT__SuperBoss5 : TAT__SuperBoss
+{
+  DropItem "RedCard"
+  DropItem "BlueCard"
+  DropItem "YellowCard"
+  PainChance 20
+  Speed 20
+  Health 7000
+  +NORADIUSDMG 
+states
+  {
+  Spawn:
+    TNT1 A 0
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SpawnLoop:	
+    VILE AABBCCDDEEFF 1 A_wander
+    VILE A 0 A_Look
+    Loop
+  See:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+  SeeLoop:
+    VILE AA 1 A_FastChase
+    VILE A 0 A_Jump(8,"Teleport")
+	VILE BB 1 A_FastChase
+    VILE B 0 A_Jump(8,"Teleport")
+	VILE CC 1 A_FastChase
+    VILE C 0 A_Jump(8,"Teleport")
+	VILE DD 1 A_FastChase
+    VILE D 0 A_Jump(8,"Teleport")
+	VILE EE 1 A_FastChase
+    VILE E 0 A_Jump(8,"Teleport")
+	VILE FF 1 A_FastChase
+    VILE F 0 A_Jump(8,"Teleport")
+  Loop
+  Missile:
+ 	VILE E 0 Bright A_Jump(100,2)
+	VILE E 0 Bright A_FaceTarget
+ 	VILE E 0 Bright A_Jump(100,"Missile3")
+    VILE M 0 A_Jump(128,5)	
+    VILE M 0 A_Jump(128,3)	
+	VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
+    VILE M 0 A_Jump(256,2)	
+	VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE P 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE P 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE P 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE A 0 A_Jump(8,"Teleport")
+    VILE AABBCCDDEEFF 1 A_Chase
+    VILE F 0 A_Jump(8,"Teleport")
+    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE H 8 Bright
+    VILE IJKLMN 2 Bright
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
+    VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
+    VILE P 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
+    VILE F 0 A_Jump(16,"Teleport")
+    VILE AABBCCDDEEFF 1 A_FastChase
+    VILE F 0 A_Jump(16,"Teleport")
+    Goto See
+  Missile3:
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 1 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 1 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 1 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78) 
+    VILE HIH 1 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 1 Bright 
+    VILE G 0 Bright A_PlaySound ("weapons/bfgf")
+    VILE G 0 Bright A_SpawnItemEx ("TAT__GreenFire",-8,-32,78)
+    VILE G 1 Bright A_SpawnItemEx ("TAT__GreenFire",-8,32,78)
+    VILE HIH 1 Bright 
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,0)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,30)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,60)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,90)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,120)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,150)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,180)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,210)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,240)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,270)
+    VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
+    VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
+    VILE ] 4 Bright
+    VILE F 0 A_Jump(8,"Teleport")
+    VILE Q 5  
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
+    VILE [ 8 Bright
+    VILE F 0 A_Jump(16,"Teleport")
+    VILE AABBCCDDEEFF 1 A_FastChase
+    VILE F 0 A_Jump(16,"Teleport")
+    Goto See
+  Pain:
+  	VILE Q 0 Bright A_Jump(90,"Teleport")
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
+    VILE Q 2   
+    VILE Q 2 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,40)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,60)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,80)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,100)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,120)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,140)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,160)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,180)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,200)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,220)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,260)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,280)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
+    VILE [ 0 
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
+ 	VILE Q 0 Bright A_Jump(10,"Teleport")
+    Goto See
+  Missile5:
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
+    VILE Q 2   
+    VILE Q 2 A_Pain
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,40)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,60)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,80)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,100)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,120)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,140)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,160)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,180)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,200)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,220)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,260)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,280)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
+    VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
+    VILE Q 0 A_PlaySound("brain/spit")
+    VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
+    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
+    VILE [ 0 
+    VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
+ 	VILE Q 0 Bright A_Jump(20,"Teleport")
+    Goto See
+  Teleport:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+  TeleportPrepare:
+    TNT1 A 1 A_ExtChase(0,0,0)
+    TNT1 A 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_ExtChase(0,0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  TeleportDone:
+    TNT1 A 0 A_UnSetInvulnerable
+    TNT1 A 0 A_UnHideThing
+    TNT1 A 0 A_SetShootable
+    TNT1 A 0 A_SetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+    TNT1 A 0 A_Jump(32,"Missile5")
+    TNT1 A 0 A_Jump(8,"Missile")
+	Goto See
+  Teleport2:
+    TNT1 A 0 A_SetInvulnerable
+    TNT1 A 0 A_HideThing
+    TNT1 A 0 A_UnSetShootable
+    TNT1 A 0 A_UnSetSolid
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenFireBig", 0, 0, 16)
+  TeleportPrepare2:
+    TNT1 A 1 A_Wander
+    TNT1 A 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)	
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+    TNT1 AA 0 A_Wander
+    TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
+	TNT1 A 0 A_JumpIfCloser(128,2)
+	TNT1 A 0 A_Jump(32,"TeleportDone")
+	TNT1 A 0 
+    Loop
+  Death:
+    VILE Q 2 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 2 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 2 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 1 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 1 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE QQQQQ 1 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,10,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,30,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,50,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,70,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,90,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,110,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,130,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,150,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,170,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,190,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,210,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,230,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,250,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,270,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,290,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,310,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,330,2)
+    VILE Q 0 A_CustomMissile("TAT__BossSpawner2",32,0,350,2)
+    VILE QQQQQ 1 A_SpawnItemEx("TAT__GreenFireBig", Random(-64,64), Random(-64,64), 16)
+    VILE Q 0 A_Pain
+    VILE R 7 A_Scream
+    VILE S 7 A_NoBlocking
+    VILE TUVWXY 7
+    VILE Z -1
+    Stop
+  }
+}
+	
+
+	
+	
+	
+ACTOR TAT__Fire
+{
+ +NoGravity +NoBlockmap +NoTeleport +DontSplash
+ +NOINTERACTION
+ +CLIENTSIDEONLY
+  Radius 0
+  Height 0
+  Alpha 1
+  Scale 1.0
+  RenderStyle Add
+  States
+  {
+  Spawn:
+	FIRE ABCDEFGH 2 Bright 
+    Stop
+  }
+}
+
+ACTOR TAT__DarkFire : TAT__Fire
+{
+Translation "160:167=80:111"
+}
+
+
+ACTOR TAT__GreenFire : TAT__Fire
+{
+Translation "160:167=112:119"
+Scale 0.5
+}
+
+
+
+ACTOR TAT__GreenFireBig : TAT__GreenFire
+{
+  Scale 1.0
+  States
+  {
+  Spawn:
+	FIRE A 2 Bright 
+	FIRE B 2 Bright A_FireCrackle
+	FIRE CDEFGH 2 Bright	
+    Stop
+  }
+}
+
+ACTOR TAT__BossFade : TAT__GreenFire
+{
+  Translation "48:63=80:95", "64:79=96:111", "208:223=80:95", "128:143=92:111", 
+  "144:151=104:111", "13:15=0:2", "236:239=5:8", "160:167=112:127", "224:231=112:119", 
+  "249:249=112:112", "248:248=120:120", "168:191=112:127", "232:235=120:123", "16:47=112:127"
+  Alpha 0.5
+  Scale 1.0
+  RenderStyle Add
+  ExplosionDamage 3 
+  ExplosionRadius 64
+  States
+  {
+  Spawn:
+    VILE A 0
+    VILE A 0 A_Explode	
+    VILE ABCDEF 1 A_FadeOut(0.1)
+    Stop
+  }
+}
+
+Actor TAT__BossSpawner
+{
+  Radius 5
+  Height 5
+  Speed 12
+  Damage 10000
+  Scale 0.75
+  Projectile
+  +ThruGhost
+  -NoGravity
+  +LowGravity
+  SeeSound "brain/spit"
+  DeathSound "brain/cubeboom"
+  States
+  {
+  Spawn:
+    BOSF AABBCCDD 1 Bright
+    Loop
+  Death:
+	TNT1 A 0 A_SpawnItem("TAT__Fire",0,0) 
+    TNT1 A 0 A_SpawnItem("TAT__GreenSoul",0,0)
+    Stop
+  }
+}
+
+Actor TAT__BossSpawner2 : TAT__BossSpawner
+{
+  Speed 9
+  Scale 0.80
+  Translation "48:79=80:111"
+  States
+  {
+  Spawn:
+    BOSF AABBCCDD 1 Bright
+    Loop
+  Death:
+	TNT1 A 0 A_SpawnItem("TAT__DarkFire",0,0) 
+    TNT1 A 0 A_SpawnItem("TAT__BlackDeath",0,0)
+    Stop
+  }
+}
+
+Actor TAT__GreenSoul : LostSoul
+{
+BloodColor Green
+RenderStyle Normal
+Health 1000
+deathsound "weapons/rocklx"
+Alpha 1.0
++MISSILEMORE
++MISSILEEVENMORE
++QUICKTORETALIATE
++PUSHABLE
+Translation "169:191=112:127", "160:167=112:127", "209:223=112:120", "232:235=120:124", "16:47=112:127"
+Speed 6
+  states
+  {
+  See:
+    SKUL A 0 A_Recoil(0.50)
+    SKUL A 3 Bright A_Chase
+    SKUL B 0 A_Recoil(0.50)
+    SKUL B 3 Bright A_Chase
+    SKUL A 0 A_Jump(200,5)
+    SKUL A 0 A_Jump(100,3)
+    SKUL A 0 ThrustThingZ (0,random(0,2),0,1)	
+    SKUL A 0 A_Jump(256,2)
+    SKUL A 0 ThrustThingZ (0,random(0,2),1,1)	
+    SKUL A 0 
+    Loop
+  Missile:
+    SKUL C 0 A_PlaySound("caco/sight")
+    SKUL C 4 Bright A_FaceTarget
+    SKUL D 4 Bright A_FaceTarget
+	SKUL D 0 A_CustomMissile ("TAT__Kamikaze",0)
+	SKUL D 0 A_PlaySound("weapons/rocklf")
+    SKUL D 1 Bright A_Die("Kamikaze")
+    Goto Death
+  Death:
+    SKUL F 3 BRIGHT A_NoBlocking 
+    SKUL G 3 BRIGHT A_Scream
+	SKUL H 3 BRIGHT
+    SKUL I 3 BRIGHT
+    SKUL J 3
+    SKUL K 3
+    stop
+  Death.Kamikaze:
+    TNT1 A 1 A_NoBlocking
+    stop
+    }
+}
+
+Actor TAT__Kamikaze
+{
+  Translation "169:191=112:127", "160:167=112:127", "209:223=112:120", "232:235=120:124", "16:47=112:127"
+  obituary "%o was blown up by a suicidal lost soul"
+  radius 16
+  height 56
+  speed 25
+  damage 20
+  Scale 1.0
+  deathsound "weapons/rocklx"
+  PROJECTILE
+  health 10
+  BloodColor Green
+  -NoBlockmap
+  +Solid
+  +Shootable
+  states
+  {
+  Spawn:
+    SKUL C 0 A_PlaySound("skull/melee")
+    SKUL C 1 Bright A_SpawnItemEx ("TAT__KamikazeFade")
+	SKUL C 0 A_ScaleVelocity(1.01)
+    SKUL C 1 Bright A_SpawnItemEx ("TAT__KamikazeFade")
+	SKUL C 0 A_ScaleVelocity(1.01)
+    SKUL D 1 Bright A_SpawnItemEx ("TAT__KamikazeFade")
+	SKUL D 0 A_ScaleVelocity(1.01)
+    SKUL D 1 Bright A_SpawnItemEx ("TAT__KamikazeFade")
+	SKUL D 0 A_ScaleVelocity(1.01)
+    Loop
+  Death:
+    SKUL F 3 BRIGHT A_NoBlocking
+    SKUL G 3 BRIGHT A_Explode
+	SKUL H 3 BRIGHT 
+    SKUL I 3 BRIGHT
+    SKUL J 3
+    SKUL K 3
+    stop
+  }
+}
+
+ACTOR TAT__KamikazeFade : TAT__BossFade
+{
+Translation "169:191=112:127", "160:167=112:127", "209:223=112:120", "232:235=120:124", "16:47=112:127"
+Alpha 0.9
+  States
+  {
+  Spawn:
+    SKUL CDCD 1 A_FadeOut(0.1)
+    SKUL CD 1 A_FadeOut(0.2)
+    Stop
+  }
+}
+
+ACTOR TAT__BlackDeath : Revenant
+{
+  PainChance 25
+  Health 1500
+  Speed 18
+  Alpha 0.90
+  BloodColor Black
+  Radius 16
+  Height 45
+  Scale 0.8
+  Translation "16:39=96:111", "40:47=5:8", "176:191=0:2", "48:71=96:111",
+  "72:79=5:8", "128:135=96:111", "136:143=5:8", "144:147=96:111", "148:151=5:8",
+  "160:163=96:111", "164:167=5:8", "236:239=5:8", "232:235=5:8", "13:15=10:12"
+  Damage 8
+  States
+  {
+    Spawn:
+    SKEL AB 200 A_Look
+    Loop
+	See:
+    SKEL A 0 A_Recoil(-0.5)
+    SKEL A 1 A_Chase
+    SKEL B 0 A_Recoil(-0.5)
+    SKEL B 1 A_Chase
+    SKEL C 0 A_Recoil(-0.5)
+    SKEL C 1 A_Chase
+    SKEL D 0 A_Recoil(-0.5)
+    SKEL D 1 A_Chase
+    SKEL E 0 A_Recoil(-0.5)
+    SKEL E 1 A_Chase
+    SKEL F 0 A_Recoil(-0.5)
+    SKEL F 1 A_Chase
+    SKEL A 0 A_Jump(32,"Hold")
+    SKEL A 0
+    Loop
+    Wander:
+    SKEL A 0 A_Recoil(-0.5)
+    SKEL A 1 A_Wander
+    SKEL B 0 A_Recoil(-0.5)
+    SKEL B 1 A_Wander
+    SKEL C 0 A_Recoil(-0.5)
+    SKEL C 1 A_Wander
+    SKEL D 0 A_Recoil(-0.5)
+    SKEL D 1 A_Wander
+    SKEL E 0 A_Recoil(-0.5)
+    SKEL E 1 A_Wander
+    SKEL F 0 A_Recoil(-0.5)
+    SKEL F 1 A_Wander
+    SKEL F 0 A_Jump(240,2)
+    SKEL F 0 A_Look
+  	SKEL F 0 A_Jump(64,"Stand") 
+    Loop
+    Stand:
+    SKEL A 0 A_Jump(240,2)
+    SKEL A 10 A_Look  
+    SKEL A 10
+  	SKEL A 0 A_Jump(64,"Wander")    
+	Loop
+    Hold:
+    SKEL A 10 A_Jump(248,2)	
+    SKEL A 10 A_Look
+    SKEL A 10
+    SKEL A 10 A_Jump(2,"Wander")	
+    Loop
+    Missile: 
+      SKEL G 0 A_Jumpifcloser(256, 1)
+      Goto See
+	  SKEL G 0 A_PlaySound("skeleton/sight")
+      SKEL G 3 A_FaceTarget 
+      SKEL H 6 A_SkullAttack 
+      SKEL I 3 A_Gravity
+      Goto See 
+    Melee:
+      SKEL G 0 A_Jump(16,"Wander")	
+      SKEL G 1 A_FaceTarget
+      SKEL G 0 A_Recoil(-4.0)
+      SKEL G 4 A_SkelWhoosh
+      SKEL H 4 A_FaceTarget
+      SKEL I 4 A_CustomMeleeAttack(random(1,8)*8,"skeleton/melee","none")
+      SKEL I 0 A_Jump(64,"Wander")	
+    Goto See
+  Pain:
+    SKEL L 0 A_ChangeFlag ("NOPAIN", 1)
+    SKEL L 1
+    SKEL L 0 A_ChangeFlag ("NOPAIN", 0)
+    SKEL L 0 A_Jump(96,"Wander")
+    SKEL L 3 A_Pain
+    SKEL L 0 A_Jump(96,"Wander")
+    Goto See
+  Death:
+    SKEL L 7 A_Pain
+	SKEL M 2 A_Scream
+    SKEL N 2 A_NoBlocking
+    SKEL O 2 
+    SKEL P 2
+    SKEL Q -1
+    Stop
+  Raise:
+    TNT1 A 0 
+    TNT1 A 0 A_ChangeFlag ("NOPAIN", 1)
+    SKEL QPONML 5
+    TNT1 A 0 A_ChangeFlag ("NOPAIN", 0)
+    goto See
+	}
+}
+
+ACTOR TAT__DiscoImpSpawner : RandomSpawner 32509
+{ 
+//$Category Monsters
++ISMONSTER
+DropItem "TAT__DiscoImp", 256, 2
+DropItem "TAT__DiscoImpRed", 256, 2
+DropItem "TAT__DiscoImpGreen", 256, 2
+DropItem "TAT__DiscoImpBlue", 256, 2
+DropItem "TAT__DiscoImpBlood" 256 1
+DropItem "TAT__DiscoImpGold" 256 1
+DropItem "TAT__DiscoImpBrown" 256 1
+DropItem "TAT__DiscoImpOrange" 256 1
+}
+
+
+
+ACTOR TAT__DiscoImp : DoomImp
+{ 
+  Health 1000
+  GibHealth -100
+  PainChance 200
+  Mass 100
+  Translation "64:79=80:111"
+  PainSound "keen/pain"
+  +NORADIUSDMG 
+states
+  {
+  Spawn:
+    TROO A 1 A_GiveInventory("Clip",1)
+    TROO A 0 A_JumpIfInventory("Clip",64,2)
+    TROO A 0 A_Jump(256,3)
+	TROO A 0 A_TakeInventory("Clip",64)
+	TROO A 0 A_Look
+	TROO A 0
+    Loop
+  See:
+    TROO D 0 A_GiveInventory("Clip",1)
+    TROO D 0 A_JumpIfInventory("Clip",64,2)
+    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfTargetInLOS("Missile")
+    TROO D 0 A_TakeInventory("Clip",64)
+    TROO D 0 A_TakeInventory("Shell",100)
+    TROO D 1 A_ExtChase(0,0,0)
+	
+    TROO D 0 A_GiveInventory("Clip",1)
+    TROO D 0 A_JumpIfInventory("Clip",64,2)
+    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfTargetInLOS("Missile")
+    TROO D 0 A_TakeInventory("Clip",64)
+    TROO D 0 A_TakeInventory("Shell",100)
+    TROO D 1
+	
+    TROO D 0 A_GiveInventory("Clip",1)
+    TROO D 0 A_JumpIfInventory("Clip",64,2)
+    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfTargetInLOS("Missile")
+    TROO D 0 A_TakeInventory("Clip",64)
+    TROO D 0 A_TakeInventory("Shell",100)
+    TROO D 1
+	
+    TROO D 0 A_GiveInventory("Clip",1)
+    TROO D 0 A_JumpIfInventory("Clip",64,2)
+    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfTargetInLOS("Missile")
+    TROO D 0 A_TakeInventory("Clip",64)
+    TROO D 0 A_TakeInventory("Shell",100)
+    TROO D 1
+	
+    TROO C 0 A_GiveInventory("Clip",1)
+    TROO C 0 A_JumpIfInventory("Clip",64,2)
+    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfTargetInLOS("Missile")
+    TROO C 0 A_TakeInventory("Clip",64)
+    TROO C 0 A_TakeInventory("Shell",100)
+    TROO C 1 A_ExtChase(0,0,0)
+	
+    TROO C 0 A_GiveInventory("Clip",1)
+    TROO C 0 A_JumpIfInventory("Clip",64,2)
+    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfTargetInLOS("Missile")
+    TROO C 0 A_TakeInventory("Clip",64)
+    TROO C 0 A_TakeInventory("Shell",100)
+    TROO C 1
+	
+    TROO C 0 A_GiveInventory("Clip",1)
+    TROO C 0 A_JumpIfInventory("Clip",64,2)
+    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfTargetInLOS("Missile")
+    TROO C 0 A_TakeInventory("Clip",64)
+    TROO C 0 A_TakeInventory("Shell",100)
+    TROO C 1
+	
+    TROO C 0 A_GiveInventory("Clip",1)
+    TROO C 0 A_JumpIfInventory("Clip",64,2)
+    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfTargetInLOS("Missile")
+    TROO C 0 A_TakeInventory("Clip",64)
+    TROO C 0 A_TakeInventory("Shell",100)	
+    TROO C 1
+	
+    TROO B 0 A_GiveInventory("Clip",1)
+    TROO B 0 A_JumpIfInventory("Clip",64,2)
+    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfTargetInLOS("Missile")
+    TROO B 0 A_TakeInventory("Clip",64)
+    TROO B 0 A_TakeInventory("Shell",100)	
+    TROO B 1 A_ExtChase(0,0,0)
+	
+    TROO B 0 A_GiveInventory("Clip",1)
+    TROO B 0 A_JumpIfInventory("Clip",64,2)
+    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfTargetInLOS("Missile")
+    TROO B 0 A_TakeInventory("Clip",64)
+    TROO B 0 A_TakeInventory("Shell",100)	
+    TROO B 1
+	
+    TROO B 0 A_GiveInventory("Clip",1)
+    TROO B 0 A_JumpIfInventory("Clip",64,2)
+    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfTargetInLOS("Missile")
+    TROO B 0 A_TakeInventory("Clip",64)
+    TROO B 0 A_TakeInventory("Shell",100)	
+    TROO B 1
+	
+    TROO B 0 A_GiveInventory("Clip",1)
+    TROO B 0 A_JumpIfInventory("Clip",64,2)
+    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfTargetInLOS("Missile")
+    TROO B 0 A_TakeInventory("Clip",64)
+    TROO B 0 A_TakeInventory("Shell",100)	
+    TROO B 1
+	
+    TROO A 0 A_GiveInventory("Clip",1)
+    TROO A 0 A_JumpIfInventory("Clip",64,2)
+    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfTargetInLOS("Missile")
+    TROO A 0 A_TakeInventory("Clip",64)
+    TROO A 0 A_TakeInventory("Shell",100)	
+    TROO A 1 A_ExtChase(0,0,0)
+	
+    TROO A 0 A_GiveInventory("Clip",1)
+    TROO A 0 A_JumpIfInventory("Clip",64,2)
+    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfTargetInLOS("Missile")
+    TROO A 0 A_TakeInventory("Clip",64)
+    TROO A 0 A_TakeInventory("Shell",100)	
+    TROO A 1
+	
+    TROO A 0 A_GiveInventory("Clip",1)
+    TROO A 0 A_JumpIfInventory("Clip",64,2)
+    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfTargetInLOS("Missile")
+    TROO A 0 A_TakeInventory("Clip",64)
+    TROO A 0 A_TakeInventory("Shell",100)	
+    TROO A 1
+	
+    TROO A 0 A_GiveInventory("Clip",1)
+    TROO A 0 A_JumpIfInventory("Clip",64,2)
+    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfTargetInLOS("Missile")
+    TROO A 0 A_TakeInventory("Clip",64)
+    TROO A 0 A_TakeInventory("Shell",100)	
+    TROO A 1
+    Loop
+  Missile:
+    TROO E 0 A_TakeInventory("Clip",64)
+    TROO E 0 A_GiveInventory("Shell",1)
+    TROO E 0 A_JumpIfInventory("Shell",2,"MissileFire")
+    TROO E 0 A_PlaySound("imp/sight")
+  MissileCount:
+    TROO E 0 A_GiveInventory("Clip",1)
+    TROO E 0 A_JumpIfInventory("Clip",32,3)
+	TROO E 1 A_FaceTarget
+	TROO E 0 A_Jump(256,"MissileCount")
+	TROO E 0 A_Jump(256,"See")
+  MissileFire:
+    TROO E 0 A_TakeInventory("Shell",2)
+    TROO E 0 A_TakeInventory("Clip",64)
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+    TROO E 0 A_GiveInventory("Clip",1)	
+    TROO E 1 Bright
+	
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO F 0 A_GiveInventory("Clip",1)	
+    TROO F 1 Bright
+    TROO G 0 A_GiveInventory("Clip",1)	
+    TROO G 1 A_CustomMissile ("Rocket",32,0,0,2)
+    TROO GGGGGGG 1 Bright A_GiveInventory("Clip",1)	
+    Goto See
+  Pain:
+    TROO H 0 A_ChangeFlag("NOPAIN", TRUE)  
+    TROO H 0 A_GiveInventory("Clip",3)	
+    TROO H 1 Bright A_Pain
+    TROO H 2
+    TROO H 0 A_ChangeFlag("NOPAIN", FALSE)  
+    Goto See  
+  Death:
+    TROO I 4 A_Pain
+    TROO J 4 A_Scream
+    TROO K 4
+    TROO L 4 A_NoBlocking
+    TROO M -1
+    Stop
+  XDeath:
+    TROO N 4
+    TROO O 4 A_XScream
+    TROO P 4
+    TROO Q 4 A_NoBlocking
+    TROO RST 4
+    TROO U -1
+    Stop
+  }
+}
+
+ACTOR TAT__DiscoImpRed : TAT__DiscoImp
+{ 
+  Translation "64:79=176:191"
+}
+
+ACTOR TAT__DiscoImpGreen : TAT__DiscoImp
+{ 
+  Translation "64:79=112:127"
+}
+
+ACTOR TAT__DiscoImpBlue : TAT__DiscoImp
+{ 
+  Translation "64:79=192:207"
+}
+
+ACTOR TAT__DiscoImpBlood : TAT__DiscoImp
+{ 
+  Translation "64:79=16:47"
+}
+
+ACTOR TAT__DiscoImpGold : TAT__DiscoImp
+{ 
+  Translation "64:71=224:231", "72:79=160:167"
+}
+
+ACTOR TAT__DiscoImpBrown : TAT__DiscoImp
+{ 
+  Translation "64:79=128:143"
+}
+
+ACTOR TAT__DiscoImpOrange : TAT__DiscoImp
+{ 
+  Translation "64:79=208:223"
+}
+
+
+
+ACTOR TAT__PracticeTargets  : Zombieman 32510
+{ 
+//$Category Monsters
+  Speed 8
+  Health 150000
+  GibHealth -10000
+  PainChance 255
+  Mass 50
+  DropItem "RedCard"
+states
+  {
+  Spawn:
+    CPOS AB 10 A_Look
+    Loop
+  See:
+    CPOS A 0 A_Recoil(-1)
+    CPOS A 1 A_Wander
+    CPOS B 0 A_Recoil(-1)
+    CPOS B 1 A_Wander
+    CPOS C 0 A_Recoil(-1)
+    CPOS C 1 A_Wander
+    CPOS D 0 A_Recoil(-1)
+    CPOS D 1 A_Wander
+	Loop
+   Pain:
+	TNT1 A 0 A_SpawnItemEx("TAT__DeadZombie",0,0,0,Random(-8,8),Random(-8,8),Random(0,16))
+	TNT1 A 1
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    TNT1 AAAAAAAAAA 0 A_Wander
+    Goto See
+   Pain.TkExplosion:
+    TNT1 A 1 Thing_Damage(0,200000)  
+    Goto See
+   Death:
+    CPOS H 5
+    CPOS I 5 A_Scream
+    CPOS J 5 A_NoBlocking
+    CPOS KLM 5
+    CPOS N -1
+    Stop
+   XDeath:
+	TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TAT__GibZombie",0,0,0,Random(-16,16),Random(-16,16),Random(0,32))   
+    CPOS O 5
+    CPOS P 5 A_XScream
+    CPOS Q 5 A_NoBlocking
+    CPOS RS 5
+    CPOS T -1
+    Stop
+   Raise:
+    CPOS N 5
+    CPOS MLKJIH 5
+    Goto See
+  }
+}
+
+ACTOR TAT__DeadZombie
+{ 
+  Gravity 1.25
+  +NoTeleport
+  +CLIENTSIDEONLY
+  Radius 20
+  Height 16
+  States
+  {
+  Spawn:
+    CPOS G 0
+    CPOS G 1 A_PlaySound("grunt/death")   
+	CPOS HIJKLM 3 Bright
+	CPOS NNNNNNNNNN 2 A_FadeOut(0.05) 
+	CPOS NNNNNNNNNN 2 A_FadeOut(0.05) 
+    Stop
+  }
+}
+
+ACTOR TAT__GibZombie : TAT__DeadZombie
+{ 
+  States
+  {
+  Spawn:
+    CPOS G 0
+    CPOS G 1 A_PlaySound("misc/gibbed")
+    CPOS OPQRS 3
+	CPOS TTTTTTTTTT 2 A_FadeOut(0.05) 
+	CPOS TTTTTTTTTT 2 A_FadeOut(0.05) 
+    Stop
+  }
+}
+
+
+ACTOR TAT__TkBarrel : ExplosiveBarrel 32511
+{ 
+Translation "112:124=168:191"
+Health 500000
+PainChance 255
+Mass 25
+Radius 20
++PUSHABLE
+states
+  {
+  See:
+    BAR1 A 6
+    BAR1 B 6 Bright
+    Loop
+  Pain:
+    BEXP A 0 A_ChangeFlag("NOPAIN", TRUE)  
+    BEXP A 3 Bright
+    BEXP B 3 Bright A_Scream
+    BEXP C 3 Bright
+    BEXP D 3 Bright A_CustomMissile("TAT__TkExplosion",32)
+    BEXP E 6 Bright
+    BEXP DCBA 3 Bright
+    BEXP A 0 A_ChangeFlag("NOPAIN", FALSE) 
+    Goto See
+  Death:
+    BEXP ABCDE 4 Bright A_CustomMissile("TAT__TkExplosion",32)
+    Stop
+  }
+}
+
+ACTOR TAT__TkExplosion : Rocket
+{ 
+Speed 0
+ReactionTime 1
+DamageType "TkExplosion"
+states
+  {
+  Spawn:
+    MISL B 1 Bright A_CountDown
+	Loop
+  Death:
+	MISL B 3 Bright A_Explode(100,100,0)
+	MISL CD 4 Bright
+    Stop
+  }
+}
+
+
+ACTOR TAT__CyberSpider : SpiderMastermind 32512
+{
+//$Category Monsters
+Height 180
+Health 10000
+Speed 12
+PainChance 20
+Translation "168:191=112:127"
+	States
+	{
+	Spawn:
+		SPID AAAAAAAAA 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Look
+		SPID BBBBBBBBB 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 1 A_Look
+		Loop
+	See:
+		SPID AA 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Metal
+		
+		SPID AA 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Chase
+		SPID BB 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 1 A_Chase
+		SPID BB 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 1 A_Chase
+		
+		SPID CC 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Metal
+		
+		SPID CC 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Chase
+		SPID DD 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		SPID DD 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		
+		SPID EE 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID E 1 A_Metal
+		
+		SPID EE 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID E 1 A_Chase
+		SPID FF 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		SPID FF 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		Loop
+	Missile:
+		SPID A 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID A 1 BRIGHT A_FaceTarget  
+		SPID AAAAAAAAAA 1 A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+        SPID AAAAAAAAA 1 A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID G 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID G 1 BRIGHT A_SPosAttackUseAtkSound
+	    SPID G 0 BRIGHT A_CustomMissile("Rocket",132,0,Random(-10,10))
+		SPID GGG 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID H 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 1 BRIGHT A_SPosAttackUseAtkSound
+		SPID HHH 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 0 BRIGHT A_SpidRefire
+		Goto Missile+21
+	Pain:
+	    SPID I 0 A_SetReflectiveInvulnerable
+		SPID I 0 A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+		SPID I 1 A_Pain
+		TNT1 A 1 A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1
+	    TNT1 A 1 A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1
+		TNT1 A 1 A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1
+	    TNT1 A 1 A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1
+	    SPID I 0 A_UnsetReflectiveInvulnerable
+		Goto See
+	Death:
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		SPID I 0 A_SpawnItemEx("TAT__CyberSpider2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+    Crush:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEx("TAT__CyberSpider2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+        Stop
+	}
+}
+
+ACTOR TAT__CyberSpider2 : TAT__CyberSpider
+{
++QUICKTORETALIATE
+Health 12500
+Speed 18
+PainChance 15
+	States
+	{
+	See:
+		SPID A 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Metal
+		
+		SPID A 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Chase
+		SPID B 1 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 1 A_Chase
+		SPID B 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 1 A_Chase
+		
+		SPID C 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Metal
+		
+		SPID C 1 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Chase
+		SPID D 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		SPID D 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		
+		SPID E 1 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID E 1 A_Metal
+		
+		SPID E 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID E 1 A_Chase
+		SPID F 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		SPID F 1 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		Loop
+	Missile:
+		SPID A 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID A 1 BRIGHT A_FaceTarget  
+        SPID AAAAAAAAAA 1 A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+        SPID AAAA 1 A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID G 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID G 1 BRIGHT A_SPosAttackUseAtkSound
+	    SPID G 0 BRIGHT A_CustomMissile("Rocket",132,0,Random(-15,15))
+		SPID GG 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID H 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 1 BRIGHT A_SPosAttackUseAtkSound
+		SPID HH 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 0 BRIGHT A_SpidRefire
+		Goto Missile+16
+	Death:
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+	
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		
+        TNT1 A 0 A_SpawnItemEx("TAT__TkExplosion",Random(-50,50),Random(-50,50),Random(32,150))
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+		TNT1 A 1 Bright A_SpawnItemEx("TAT__CyberFrameG",-16,0,96)
+	    SPID I 1 Bright
+
+		SPID I 0 A_SpawnItemEx("TAT__CyberSpider3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+		Stop
+    Crush:
+		TNT1 A 0
+		TNT1 A 0 A_SpawnItemEx("TAT__CyberSpider3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+        Stop
+	}
+}
+
+ACTOR TAT__CyberSpider3 : TAT__CyberSpider2
+{
+Health 15000
+Speed 24
+PainChance 10
+	States
+	{
+	See:
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Metal
+		
+		SPID A 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID A 1 A_Chase
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameA",-16,0,96)
+		SPID B 1 A_Chase
+		SPID B 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID B 1 A_Chase
+		
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Metal
+		
+		SPID C 0 A_SpawnItemEx("TAT__CyberFrameB",-16,0,96)
+		SPID C 1 A_Chase
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		SPID D 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID D 1 A_Chase
+		
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameC",-16,0,96)
+		SPID E 1 A_Metal
+		
+		SPID E 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID E 1 A_Chase
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		SPID F 0 A_SpawnItemEx("TAT__CyberFrameD",-16,0,96)
+		SPID F 1 A_Chase
+		Loop
+	Missile:
+		SPID A 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID A 1 BRIGHT A_FaceTarget  
+        SPID AAAAAAAAA 1 A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID G 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID G 1 BRIGHT A_SPosAttackUseAtkSound
+	    SPID G 0 BRIGHT A_CustomMissile("Rocket",132,0,Random(-20,20))
+		SPID G 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameF",-16,0,96)
+		SPID H 0 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 1 BRIGHT A_SPosAttackUseAtkSound
+		SPID H 1 BRIGHT A_SpawnItemEx("TAT__CyberFrameE",-16,0,96)
+		SPID H 0 BRIGHT A_SpidRefire
+		Goto Missile+11
+	Death:		
+		SPID I 0 A_SpawnItemEx("TAT__CyberSpawner",-16,0,96,0,0,0,0,SXF_NOCHECKPOSITION)
+		SPID J 20 A_Scream
+		SPID K 10 A_NoBlocking
+		SPID LMNOPQR 10
+		SPID S 30
+		SPID S -1 A_BossDeath    
+    Stop
+    Crush:
+		TNT1 A 0
+		TNT1 A 0
+        Stop
+	}
+}
+
+
+Actor TAT__CyberSpawner : TAT__BossSpawner
+{
+  Speed 0
+  Scale 1.00
+  Translation "168:191=80:111", "232:235=5:8", "16:47=96:111"
+  States
+  {
+  Spawn:
+    CYBR ABCD 1 Bright
+    Loop
+  Death:
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",32,0,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",-32,0,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",0,32,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",0,-32,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",20,20,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",-20,-20,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",20,-20,0) 
+	TNT1 A 0 A_SpawnItemEx("TAT__DarkFire",-20,20,0) 
+    TNT1 A 0 A_SpawnItemEx("TAT__SpiderCyber", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+    Stop
+  }
+}
+
+
+
+
+ACTOR TAT__SpiderCyber : Cyberdemon
+{
++QUICKTORETALIATE
+Scale 0.75
+Radius 20
+Height 56
+Translation "168:191=80:111", "232:235=5:8", "16:47=96:111"
+DropItem "YellowCard"
+DropItem "TAT__AwesomeSphere"
+Health 20000
+PainChance 5
+	States
+	{
+	Spawn:
+		CYBR AB 4 A_Look
+		Loop
+	See:
+		CYBR A 1 A_Hoof
+		CYBR ABBCC 1 A_Chase
+		CYBR D 1 A_Metal
+		CYBR D 1 A_Chase
+		CYBR D 0 A_Jump(16,"Wander","Camping","Missile")
+		Loop
+	See2:
+		CYBR A 0 A_ExtChase(1,0)
+        CYBR A 0 A_PlaySound("cyber/hoof",4)
+	    CYBR A 0 A_SpawnItemEx("TAT__CyberFadeA", 0, 0, 0)
+		CYBR A 1 A_ExtChase(1,0)
+		
+	    CYBR B 0 A_ExtChase(1,0)	
+	    CYBR B 0 A_SpawnItemEx("TAT__CyberFadeB", 0, 0, 0)		
+		CYBR B 1 A_ExtChase(1,0)
+		
+	    CYBR C 0 A_ExtChase(1,0)	
+	    CYBR C 0 A_SpawnItemEx("TAT__CyberFadeC", 0, 0, 0)		
+		CYBR C 1 A_ExtChase(1,0)
+		
+		CYBR D 0 A_ExtChase(1,0)
+        CYBR D 0 A_PlaySound("spider/walk",4)
+	    CYBR D 0 A_SpawnItemEx("TAT__CyberFadeD", 0, 0, 0)
+		CYBR D 1 A_ExtChase(1,0)
+		CYBR D 0 A_Jump(8,"Wander","Camping","Missile")
+		Loop
+	Wander:
+	    CYBR A 0 A_PlaySound("cyber/hoof",4)
+		CYBR AABBCC 1 A_Wander
+		CYBR D 0 A_PlaySound("spider/walk",4)
+		CYBR DD 1 A_Wander
+		CYBR D 0 A_Jump(16,"See","Missile")
+		Loop
+    Camping:
+        CYBR A 2 A_FaceTarget
+        CYBR A 0 A_JumpIfTargetInLos(2)
+        CYBR A 0 A_Jump(256,2)
+        CYBR A 0 A_Jump(128,"Missile")
+        CYBR A 0 A_Jump(16,"See")
+	    Loop
+	Melee:
+	Missile:
+		CYBR E 0 A_JumpIfCloser(1024,2)
+		CYBR E 0 A_Jump(100,"See2")
+		CYBR E 0 A_Jump(64,"SuppressiveFire")
+		CYBR E 0 A_Jump(5,"Missile2")
+		CYBR E 1 A_SetAngle(Angle+Random(-45,45))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		CYBR E 2 A_SetAngle(Angle+Random(-45,45))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		CYBR E 2 A_SetAngle(Angle+Random(-45,45))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		Goto See
+	Missile2:
+		CYBR E 1 A_FaceTarget
+		CYBR F 2 A_CustomMissile ("Rocket")
+		CYBR E 2 A_FaceTarget
+		CYBR F 2 A_CustomMissile ("Rocket")
+		CYBR E 2 A_FaceTarget
+		CYBR F 2 A_CustomMissile ("Rocket")	
+    SuppressiveFire:	
+        CYBR E 0 A_JumpIfTargetInLos(2)
+	    CYBR E 0 A_Jump(256,2)
+	    CYBR E 0 A_FaceTarget
+
+		CYBR E 1 A_SetAngle(Angle+Random(-1,1))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		CYBR E 1
+
+        CYBR E 0 A_JumpIfTargetInLos(2)
+	    CYBR E 0 A_Jump(256,2)
+	    CYBR E 0 A_FaceTarget
+	
+		CYBR E 1 A_SetAngle(Angle+Random(-15,15))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		CYBR E 1
+
+        CYBR E 0 A_JumpIfTargetInLos(2)
+	    CYBR E 0 A_Jump(256,2)
+	    CYBR E 0 A_FaceTarget
+	
+		CYBR E 1 A_SetAngle(Angle+Random(-15,15))
+		CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
+		CYBR E 1
+	    CYBR E 0 A_Jump(128,"SuppressiveFire")		
+        Goto See
+	Pain:
+        CYBR G 0 A_ChangeFlag("NOPAIN", TRUE)  
+		CYBR G 10 A_Pain
+        CYBR G 0 A_ChangeFlag("NOPAIN", FALSE)  
+		Goto See
+	Death:
+		CYBR H 1
+		CYBR I 1 A_Scream
+		CYBR JKL 1
+		CYBR M 1 A_NoBlocking
+		CYBR NO 1
+		CYBR P 3
+		CYBR P -1 A_BossDeath
+		Stop
+	}
+}
+
+Actor TAT__CyberFrameA : TAT__Fire
+{
+    Translation "168:191=80:111", "232:235=5:8", "16:47=96:111"
+    RenderStyle Normal
+	States
+	{
+	Spawn:
+	  CYBR A 0
+	  CYBR A 1
+    Stop
+	}
+}
+
+Actor TAT__CyberFadeA : TAT__CyberFrameA
+{
+    RenderStyle Add
+	Scale 0.5
+	Alpha 0.5
+	States
+	{
+	Spawn:
+	  CYBR A 0
+	  CYBR ABCD 1 A_FadeOut(0.125)
+    Stop
+	}
+}
+
+Actor TAT__CyberFadeB : TAT__CyberFadeA
+{
+	States
+	{
+	Spawn:
+	  CYBR B 0
+	  CYBR BCDA 1 A_FadeOut(0.125)
+    Stop
+	}
+}
+
+Actor TAT__CyberFadeC : TAT__CyberFadeA
+{
+	States
+	{
+	Spawn:
+	  CYBR C 0
+	  CYBR CDAB 1 A_FadeOut(0.125)
+    Stop
+	}
+}
+
+Actor TAT__CyberFadeD : TAT__CyberFadeA
+{
+	States
+	{
+	Spawn:
+	  CYBR D 0
+	  CYBR DCBA 1 A_FadeOut(0.125)
+    Stop
+	}
+}
+
+
+
+
+Actor TAT__CyberFrameB : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR B 0
+	  CYBR B 1
+    Stop
+	}
+}
+
+Actor TAT__CyberFrameC : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR C 0
+	  CYBR C 1
+    Stop
+	}
+}
+
+Actor TAT__CyberFrameD : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR D 0
+	  CYBR D 1
+    Stop
+	}
+}
+
+Actor TAT__CyberFrameE : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR E 0
+	  CYBR E 1
+    Stop
+	}
+}
+
+Actor TAT__CyberFrameF : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR F 0
+	  CYBR F 1
+    Stop
+	}
+}
+
+
+Actor TAT__CyberFrameG : TAT__CyberFrameA
+{
+	States
+	{
+	Spawn:
+	  CYBR G 0
+	  CYBR G 1
+    Stop
+	}
+}
+
+
+ACTOR TAT__AwesomeSphere : Health
+{
+  Game Doom
+  +COUNTITEM
+  +INVENTORY.AUTOACTIVATE
+  +INVENTORY.BIGPOWERUP
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.FANCYPICKUPSOUND
+  Inventory.Amount 1000
+  Inventory.MaxAmount 99999
+  Inventory.PickupMessage "Awesome!"
+  Inventory.PickupSound "keen/pain"
+  Translation "128:135=224:231", "136:143=160:167", "144:151=96:103", "13:15=109:111"
+  States
+  {
+  Spawn:
+    MEGA ABCD 6 Bright
+    Loop
+  }
+}

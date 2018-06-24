@@ -98,3 +98,13 @@ flat UASLI09
 
 Switch UA48_4 on pic UA48_2 Tics 0
 Switch UA48_2 off pic UA48_4 Tics 0
+
+// Forest Swords
+
+flat SLIME09
+	pic SLIME09 tics 5
+	pic SLIME10 tics 5
+	pic SLIME11 tics 5
+	pic SLIME12 tics 5
+	
+Texture FSRAIN1 Range FSRAIN4 Tics 8

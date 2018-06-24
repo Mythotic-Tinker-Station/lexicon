@@ -703,3 +703,108 @@ ACTOR COCGreenTorch : GreenTorch 25006
     Loop
   }
 }
+
+//////////////////////////
+///// Forest Swords //////
+//////////////////////////
+
+ACTOR FSWTallRedColumn : TallRedColumn 25007 // 32
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    FSW3 A -1
+    Stop
+  }
+}
+
+ACTOR FSWSkullColumn : SkullColumn 25008 // 37
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    FSW6 A -1
+    Stop
+  }
+}
+
+ACTOR FSWShortRedColumn : ShortRedColumn 25009 // 33
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    FSW4 A -1
+    Stop
+  }
+}
+
+ACTOR FSWHangTLookingDown : HangTLookingDown 25010 // 75
+{
+  Radius 16
+  Height 64
+  +SOLID
+  +NOGRAVITY
+  +SPAWNCEILING
+  States
+  {
+  Spawn:
+    FSB3 A -1
+    Stop
+  }
+}
+
+ACTOR FSWHangTLookingUp : HangTLookingUp 25011 // 77
+{
+  Radius 16
+  Height 64
+  +SOLID
+  +NOGRAVITY
+  +SPAWNCEILING
+  States
+  {
+  Spawn:
+    FSB5 A -1
+    Stop
+  }
+}
+
+ACTOR FSWHangTSkull : HangTSkull 25012 // 76
+{
+  Radius 16
+  Height 64
+  +SOLID
+  +NOGRAVITY
+  +SPAWNCEILING
+  States
+  {
+  Spawn:
+    FSB4 A -1
+    Stop
+  }
+}
+
+ACTOR FSWDeadStick : DeadStick 25013 // 25
+{
+  Radius 16
+  Height 64
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    FSL1 A -1
+    Stop
+  }
+}

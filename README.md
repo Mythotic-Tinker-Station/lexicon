@@ -25,6 +25,7 @@ So far, the mapsets included are:
 - UAC Ultra
 - Monuments of Mars
 - Khorus's Speedy shit
+- Forest Swords
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

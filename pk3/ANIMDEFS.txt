@@ -107,7 +107,7 @@ flat SLIME09
 	pic SLIME11 tics 5
 	pic SLIME12 tics 5
 	
-Texture FSRAIN1 Range FSRAIN4 Tics 12
+Texture FSRAIN1 Range FSRAIN4 Tics 3
 
 // Dark Tartarus
 
@@ -118,3 +118,26 @@ Texture	Optional	LFALL_N1	Range	LFALL_N4	Tics 8
 Texture	Optional	ACANDL01	Range	ACANDL03	Tics 8
 Texture	Optional	COMPFUZ1	Range	COMPFUZ4	Tics 8
 Switch	Doom 3		EWAL001A   	On Pic	EWAL002B  	Tics 0
+
+// Doom Core Trilogy
+
+Switch SW1BLU2 off pic SW2BLU2 Tics 0
+Switch SW2BLU2 on pic SW1BLU2 Tics 0
+
+Switch SW1BNZ off pic SW2BNZ Tics 0
+Switch SW2BNZ on pic SW1BNZ Tics 0
+
+Switch SW1DIRT off pic SW2DIRT Tics 0
+Switch SW2DIRT on pic SW1DIRT Tics 0
+
+Switch SW1MSKL off pic SW2MSKL Tics 0
+Switch SW2MSKL on pic SW1MSKL Tics 0
+
+Switch SW1PLSK off pic SW2PLSK Tics 0
+Switch SW2PLSK on pic SW1PLSK Tics 0
+
+Switch SW1STON2 off pic SW2STON2 Tics 0
+Switch SW2STON2 on pic SW1STON2 Tics 0
+
+Texture 3LODRIP1 Range 3LODRIP4 Tics 3
+Texture SLADRIP1 Range SLADRIP4 Tics 3

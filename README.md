@@ -27,6 +27,8 @@ So far, the mapsets included are:
 - Khorus's Speedy shit
 - Forest Swords
 - Circle of Caina
+- Doom Core Trilogy
+- Maps of Chaos
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

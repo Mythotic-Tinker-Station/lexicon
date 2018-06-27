@@ -1453,7 +1453,7 @@ map TAT40 "Horrible Things"
 	intermusic = "D_TATINT"
 	music = "d_tat40"
 	cluster = 8
-	titlepatch = "CWILV29"
+	titlepatch = "WOSLV29"
 	}
 	
 map TAT41 " "
@@ -3056,7 +3056,7 @@ map VAN13 "Punch-Out"
 
 map WOS01 "Sintlabs"
 	{
-	titlepatch = "CWILV00"
+	titlepatch = "WOSLV00"
 	nocrouch
 	next = "WOS02"
 	secretnext = "WOS99"
@@ -3070,7 +3070,7 @@ map WOS01 "Sintlabs"
 	
 map WOS02 "The Sink"
 	{
-	titlepatch = "CWILV01"
+	titlepatch = "WOSLV01"
 	nocrouch
 	next = "WOS03"
 	sky1 = "WOSSKY1"
@@ -3083,7 +3083,7 @@ map WOS02 "The Sink"
 	
 map WOS03 "Poison Sewers"
 	{
-	titlepatch = "CWILV02"
+	titlepatch = "WOSLV02"
 	nocrouch
 	next = "WOS04"
 	enterpic = "WOSINT"
@@ -3096,7 +3096,7 @@ map WOS03 "Poison Sewers"
 	
 map WOS04 "Lost Beacon"
 	{
-	titlepatch = "CWILV03"
+	titlepatch = "WOSLV03"
 	nocrouch
 	next = "WOS05"
 	enterpic = "WOSINT"
@@ -3109,7 +3109,7 @@ map WOS04 "Lost Beacon"
 	
 map WOS05 "Pumping Station 083A"
 	{
-	titlepatch = "CWILV04"
+	titlepatch = "WOSLV04"
 	nocrouch
 	next = "WOS06"
 	enterpic = "WOSINT"
@@ -3122,7 +3122,7 @@ map WOS05 "Pumping Station 083A"
 	
 map WOS06 "Covert Operations Facility"
 	{
-	titlepatch = "CWILV05"
+	titlepatch = "WOSLV05"
 	nocrouch
 	next = "WOS07"
 	enterpic = "WOSINT"
@@ -3135,7 +3135,7 @@ map WOS06 "Covert Operations Facility"
 	
 map WOS07 "Death Alley"
 	{
-	titlepatch = "CWILV06"
+	titlepatch = "WOSLV06"
 	nocrouch
 	next = "WOS08"
 	enterpic = "WOSINT"
@@ -3149,7 +3149,7 @@ map WOS07 "Death Alley"
 	
 map WOS08 "Basement Jazz"
 	{
-	titlepatch = "CWILV07"
+	titlepatch = "WOSLV07"
 	nocrouch
 	next = "WOS09"
 	enterpic = "WOSINT"
@@ -3162,7 +3162,7 @@ map WOS08 "Basement Jazz"
 	
 map WOS09 "The School"
 	{
-	titlepatch = "CWILV08"
+	titlepatch = "WOSLV08"
 	nocrouch
 	next = "WOS10"
 	enterpic = "WOSINT"
@@ -3175,7 +3175,7 @@ map WOS09 "The School"
 	
 map WOS10 "Playgrounds of Caesar"
 	{
-	titlepatch = "CWILV09"
+	titlepatch = "WOSLV09"
 	nocrouch
 	next = "WOS11"
 	enterpic = "WOSINT"
@@ -3188,7 +3188,7 @@ map WOS10 "Playgrounds of Caesar"
 	
 map WOS11 "CyberFunk"
 	{
-	titlepatch = "CWILV10"
+	titlepatch = "WOSLV10"
 	nocrouch
 	next = "WOS12"
 	enterpic = "WOSINT"
@@ -3201,7 +3201,7 @@ map WOS11 "CyberFunk"
 	
 map WOS12 "Blood Station"
 	{
-	titlepatch = "CWILV11"
+	titlepatch = "WOSLV11"
 	nocrouch
 	next = "WOS13"
 	enterpic = "WOSINT"
@@ -3214,7 +3214,7 @@ map WOS12 "Blood Station"
 	
 map WOS13 "Traps of Torment"
 	{
-	titlepatch = "CWILV12"
+	titlepatch = "WOSLV12"
 	nocrouch
 	next = "WOS14"
 	enterpic = "WOSINT"
@@ -3227,7 +3227,7 @@ map WOS13 "Traps of Torment"
 	
 map WOS14 "The Wasted Dens"
 	{
-	titlepatch = "CWILV13"
+	titlepatch = "WOSLV13"
 	nocrouch
 	next = "WOS15"
 	enterpic = "WOSINT"
@@ -3240,7 +3240,7 @@ map WOS14 "The Wasted Dens"
 	
 map WOS15 "Temple of Water"
 	{
-	titlepatch = "CWILV14"
+	titlepatch = "WOSLV14"
 	nocrouch
 	next = "WOS16"
 	enterpic = "WOSINT"
@@ -3254,7 +3254,7 @@ map WOS15 "Temple of Water"
 	
 map WOS16 "Undervilla"
 	{
-	titlepatch = "CWILV15"
+	titlepatch = "WOSLV15"
 	nocrouch
 	next = "WOS17"
 	enterpic = "WOSINT"
@@ -3267,7 +3267,7 @@ map WOS16 "Undervilla"
 	
 map WOS17 "Mines of Despair"
 	{
-	titlepatch = "CWILV16"
+	titlepatch = "WOSLV16"
 	nocrouch
 	next = "WOS18"
 	enterpic = "WOSINT"
@@ -3280,7 +3280,7 @@ map WOS17 "Mines of Despair"
 	
 map WOS18 "Elements"
 	{
-	titlepatch = "CWILV17"
+	titlepatch = "WOSLV17"
 	nocrouch
 	next = "WOS19"
 	enterpic = "WOSINT"
@@ -3293,7 +3293,7 @@ map WOS18 "Elements"
 	
 map WOS19 "Cryosleep"
 	{
-	titlepatch = "CWILV18"
+	titlepatch = "WOSLV18"
 	nocrouch
 	next = "WOS20"
 	enterpic = "WOSINT"
@@ -3306,7 +3306,7 @@ map WOS19 "Cryosleep"
 	
 map WOS20 "Inexorable Opposition"
 	{
-	titlepatch = "CWILV19"
+	titlepatch = "WOSLV19"
 	nocrouch
 	next = "WOS21"
 	enterpic = "WOSINT"
@@ -3319,7 +3319,7 @@ map WOS20 "Inexorable Opposition"
 	
 map WOS21 "2048 B.C"
 	{
-	titlepatch = "CWILV20"
+	titlepatch = "WOSLV20"
 	nocrouch
 	next = "WOS22"
 	enterpic = "WOSINT"
@@ -3332,7 +3332,7 @@ map WOS21 "2048 B.C"
 	
 map WOS22 "Soul Disruption"
 	{
-	titlepatch = "CWILV21"
+	titlepatch = "WOSLV21"
 	nocrouch
 	next = "WOS23"
 	enterpic = "WOSINT"
@@ -3345,7 +3345,7 @@ map WOS22 "Soul Disruption"
 	
 map WOS23 "Pathway to Elysion"
 	{
-	titlepatch = "CWILV22"
+	titlepatch = "WOSLV22"
 	nocrouch
 	next = "WOS24"
 	enterpic = "WOSINT"
@@ -3358,7 +3358,7 @@ map WOS23 "Pathway to Elysion"
 	
 map WOS24 "Ultimate Hatred"
 	{
-	titlepatch = "CWILV23"
+	titlepatch = "WOSLV23"
 	nocrouch
 	next = "WOS25"
 	enterpic = "WOSINT"
@@ -3371,7 +3371,7 @@ map WOS24 "Ultimate Hatred"
 	
 map WOS25 "Vulcana"
 	{
-	titlepatch = "CWILV24"
+	titlepatch = "WOSLV24"
 	nocrouch
 	next = "WOS26"
 	enterpic = "WOSINT"
@@ -3384,7 +3384,7 @@ map WOS25 "Vulcana"
 	
 map WOS26 "Hellhole"
 	{
-	titlepatch = "CWILV25"
+	titlepatch = "WOSLV25"
 	nocrouch
 	next = "WOS27"
 	enterpic = "WOSINT"
@@ -3397,7 +3397,7 @@ map WOS26 "Hellhole"
 	
 map WOS27 "Halls of Cocytus"
 	{
-	titlepatch = "CWILV26"
+	titlepatch = "WOSLV26"
 	nocrouch
 	next = "WOS28"
 	enterpic = "WOSINT"
@@ -3410,7 +3410,7 @@ map WOS27 "Halls of Cocytus"
 	
 map WOS28 "Sacrificial Grounds"
 	{
-	titlepatch = "CWILV27"
+	titlepatch = "WOSLV27"
 	nocrouch
 	next = "WOS29"
 	enterpic = "WOSINT"
@@ -3423,7 +3423,7 @@ map WOS28 "Sacrificial Grounds"
 	
 map WOS29 "Heated Trauma"
 	{
-	titlepatch = "CWILV28"
+	titlepatch = "WOSLV28"
 	nocrouch
 	next = "WOS30"
 	enterpic = "WOSINT"
@@ -3436,7 +3436,7 @@ map WOS29 "Heated Trauma"
 	
 map WOS30 "The Verge of Revelation"
 	{
-	titlepatch = "CWILV29"
+	titlepatch = "WOSLV29"
 	nocrouch
 	next = "WOS33"
 	enterpic = "WOSINT"
@@ -3451,7 +3451,7 @@ map WOS30 "The Verge of Revelation"
 	
 map WOS31 "Space Station Skywalker"
 	{
-	titlepatch = "CWILV30"
+	titlepatch = "WOSLV30"
 	nocrouch
 	next = "WOS16"
 	enterpic = "WOSINT"
@@ -3465,7 +3465,7 @@ map WOS31 "Space Station Skywalker"
 	
 map WOS32 "Ultimative Geheimnis"
 	{
-	titlepatch = "CWILV31"
+	titlepatch = "WOSLV31"
 	nocrouch
 	next = "WOS16"
 	enterpic = "WOSINT"
@@ -3503,7 +3503,7 @@ map WOS34 "1994 Revisited"
 	
 map WOS35 "ein lustiger ort"
 	{
-	titlepatch = "CWILV34"
+	titlepatch = "WOSLV34"
 	nocrouch
 	next = "WOS16"
 	secretnext = "WOS34"
@@ -5299,4 +5299,329 @@ map DC77 "Terrace View"
 	sky1 = DCRSKY5
 	music = P_DEAD2
 	intermusic = P_E5M7
+	}
+	
+//DOOM 2 MOCs
+
+map MOC01 "Entryway"
+	{
+	next = "MOC02"
+	sky1 = RSKY1
+	titlepatch = CWILV00
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_runnin
+	}
+	
+map MOC02 "Underhalls"
+	{
+	next = "MOC03"
+	sky1 = RSKY1
+	titlepatch = CWILV01
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stalks
+	}
+	
+map MOC03 "The Gantlet"
+	{
+	next = "MOC04"
+	sky1 = RSKY1
+	titlepatch = CWILV02
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_countd
+	}
+	
+map MOC04 "The Focus"
+	{
+	next = "MOC05"
+	sky1 = RSKY1
+	titlepatch = CWILV03
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_betwee
+	}
+	
+map MOC05 "The Waste Tunnels"
+	{
+	next = "MOC06"
+	sky1 = RSKY1
+	titlepatch = CWILV04
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_doom
+	}
+	
+map MOC06 "The Crusher"
+	{
+	next = "MOC07"
+	sky1 = RSKY1
+	titlepatch = CWILV05
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_the_da
+	}
+	
+map MOC07 "Dead Simple"
+	{
+	next = "MOC08"
+	map07special
+	sky1 = RSKY1
+	titlepatch = CWILV06
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn	
+	}
+	
+map MOC08 "Tricks and Traps"
+	{
+	next = "MOC09"
+	sky1 = RSKY1
+	titlepatch = CWILV07
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtblu	
+	}
+	
+map MOC09 "The Pit"
+	{
+	next = "MOC10"
+	sky1 = RSKY1
+	titlepatch = CWILV08
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_in_cit	
+	}
+	
+map MOC10 "Refueling Base"
+	{
+	next = "MOC11"
+	sky1 = RSKY1
+	titlepatch = CWILV09
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_dead	
+	}
+	
+map MOC11 "Circle of Death"
+	{
+	next = "MOC12"
+	sky1 = RSKY1
+	titlepatch = CWILV10
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stlks2
+	}
+	
+map MOC12 "The Factory"
+	{
+	next = "MOC13"
+	sky1 = RSKY2
+	titlepatch = CWILV11
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_theda2
+	}
+	
+map MOC13 "The Factory"
+	{
+	next = "MOC14"
+	sky1 = RSKY2
+	titlepatch = CWILV12
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_doom2
+	}
+	
+map MOC14 "Downtown"
+	{
+	next = "MOC15"
+	sky1 = RSKY2
+	titlepatch = CWILV13
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtbl2
+	}
+	
+map MOC15 "Industrial Zone"
+	{
+	next = "MOC16"
+	secretnext = "MOC31"
+	sky1 = RSKY2
+	titlepatch = CWILV14
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_runni2
+	}
+	
+map MOC16 "Suburbs"
+	{
+	next = "MOC17"
+	sky1 = RSKY2
+	titlepatch = CWILV15
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_dead2
+	}
+	
+map MOC17 "Tenements"
+	{
+	next = "MOC18"
+	sky1 = RSKY2
+	titlepatch = CWILV16
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stlks3
+	}
+	
+map MOC18 "The Courtyard"
+	{
+	next = "MOC19"
+	sky1 = RSKY2
+	titlepatch = CWILV17
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_romero
+	}
+	
+map MOC19 "The Citadel"
+	{
+	next = "MOC20"
+	sky1 = RSKY2
+	titlepatch = CWILV18
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn2
+	}
+	
+map MOC20 "Gotcha!"
+	{
+	next = "MOC21"
+	sky1 = RSKY3
+	titlepatch = CWILV19
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_messag
+	}
+	
+map MOC21 "Nirvana"
+	{
+	next = "MOC22"
+	sky1 = RSKY3
+	titlepatch = CWILV20
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_count2
+	}
+	
+map MOC22 "The Catacombs"
+	{
+	next = "MOC23"
+	sky1 = RSKY3
+	titlepatch = CWILV21
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtbl3
+	}
+	
+map MOC23 "Barrels o' Fun"
+	{
+	next = "MOC24"
+	sky1 = RSKY3
+	titlepatch = CWILV22
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ampie
+	}
+	
+map MOC24 "The Chasm"
+	{
+	next = "MOC25"
+	sky1 = RSKY3
+	titlepatch = CWILV23
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_theda3
+	}
+	
+map MOC25 "Bloodfalls"
+	{
+	next = "MOC26"
+	sky1 = RSKY3
+	titlepatch = CWILV24
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_adrian
+	}
+	
+map MOC26 "The Abandoned Mines"
+	{
+	next = "MOC27"
+	sky1 = RSKY3
+	titlepatch = CWILV25
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_messg2
+	}
+	
+map MOC27 "Monster Condo"
+	{
+	next = "MOC28"
+	sky1 = RSKY3
+	titlepatch = CWILV26
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_romer2
+	}
+	
+map MOC28 "The Spirit World"
+	{
+	next = "MOC29"
+	sky1 = RSKY3
+	titlepatch = CWILV27
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_tense
+	}
+	
+map MOC29 "The Living End"
+	{
+	next = "MOC30"
+	sky1 = RSKY3
+	titlepatch = CWILV28
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn3
+	}
+	
+map MOC30 "Icon of Sin"
+	{
+	next = "HUB"
+	sky1 = RSKY3
+	titlepatch = CWILV29
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_openin
+	}
+	
+map MOC31 "Wolfenstein"
+	{
+	next = "MOC16"
+	secretnext = "MOC32"
+	sky1 = RSKY3
+	titlepatch = CWILV30
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_evil
+	}
+	
+map MOC32 "Grosse"
+	{
+	next = "MOC16"
+	sky1 = RSKY3
+	titlepatch = CWILV31
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ultima
 	}

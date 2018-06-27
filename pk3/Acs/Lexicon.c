@@ -53,6 +53,8 @@ strict namespace
 		{ "Khorus's Speedy Shit",	"KSS01"	}, // 15
 		{ "Circle of Caina",		"COC01"	}, // 16
 		{ "Forest Swords",			"FSW01"	}, // 17
+		{ "Doom Core Trilogy",		"DC01"	}, // 18
+		( "Doom II- Maps of Chaos",	"MOC01"	}, // 19
     };
 
     int votes[64];                      // holds the votes

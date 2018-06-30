@@ -11,7 +11,7 @@ echo Step 2: ACS
 echo Step 2: PACK
 	cd ..
 	cd pk3
-	..\Compiler\7za a -r -ssw -mx1 -tzip  ..\%FileName%n.pk3 *
+	..\Compiler\7za a -r -ssw -mx0 -tzip  ..\%FileName%n.pk3 *
 
 	
 echo Step 3: REPLACE

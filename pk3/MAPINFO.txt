@@ -5625,3 +5625,188 @@ map MOC32 "Grosse"
 	exitpic = INTERPIC
 	music = d_ultima
 	}
+	
+// Sunder
+
+map SND01 "Python"
+	{
+	next = "SND02"
+	secretnext = "SND02"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR01"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	intermusic = "D_SNDINT"
+	nocrouch
+	nojump
+	}
+
+map SND02 "The Burrow"
+	{
+	next = "SND03"
+	secretnext = "SND03"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR02"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND03 "The Dreaming Garden"
+	{
+	next = "SND04"
+	secretnext = "SND04"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR03"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND04 "Metal Descendants"
+	{
+	next = "SND05"
+	secretnext = "SND05"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR04"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND05 "Precarious"
+	{
+	next = "SND06"
+	secretnext = "SND06"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR05"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND06 "Grinder"
+	{
+	next = "SND07"
+	secretnext = "SND07"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR06"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND07 "Hollow Icon"
+	{
+	next = "SND08"
+	secretnext = "SND08"
+	sky1 = "SNDSKY1"
+	map07special
+	music = "D_SNDR07"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND08 "Pale Monument"
+	{
+	next = "SND09"
+	secretnext = "SND09"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR08"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND09 "The Cage"
+	{
+	next = "SND10"
+	secretnext = "SND10"
+	sky1 = "SNDSKY1"
+	music = "D_SNDR09"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND10 "The Hags Finger"
+	{
+	next = "SND11"
+	secretnext = "SND11"
+	sky1 = "SNDSKY1"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	music = "D_SNDR10"
+	intermusic = "D_SNDINT"
+	}
+
+map SND11 "The Furnace"
+	{
+	next = "SND12"
+	secretnext = "SND12"
+	sky1 = "SNDSKY2"
+	music = "D_SNDR11"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND12 "The Zealous Machine"
+	{
+	next = "SND13"
+	secretnext = "SND13"
+	sky1 = "SNDSKY2"
+	music = "D_SNDR12"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND13 "Obsidian Nightmare"
+	{
+	next = "SND14"
+	secretnext = "SND14"
+	sky1 = "SNDSKY2"
+	music = "D_SNDR13"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}
+
+map SND14 "Hive Mother"
+	{
+	next = "HUB"
+	secretnext = "SND15"
+	sky1 = "SNDSKY2"
+	music = "D_SND14"
+	intermusic = "D_SNDINT"
+	exitpic = "SNDRINT"
+	enterpic = "SNDRINT"
+	nocrouch
+	nojump
+	}

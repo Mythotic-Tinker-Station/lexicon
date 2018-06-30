@@ -2,14 +2,6 @@
 
 This file contains actors from various megawads requried for them.
 Some megawads add custom shit so... makes the merging process really annoying
-
-So far actors include
-
-Shai'tans Luck
-Combat Shock 2
-Kamasutra
-Scythe 2
-....
 */
 
 
@@ -3456,5 +3448,103 @@ ACTOR TAT__AwesomeSphere : Health
   Spawn:
     MEGA ABCD 6 Bright
     Loop
+  }
+}
+
+// D2TWID
+
+Actor Dopefish 32513
+{
+ Health 5000
+  Radius 31
+  Height 56
+  Mass 400
+  Damage 10
+  Speed 12
+  Monster
+  Obituary "%o was rekt by the Dopefish"
+  DeathSound "d2twid/dfdeth"
+  AttackSound "d2twid/dfattack"
+  States
+  {
+  Spawn:
+    DOPE A 5 A_Look
+    Loop
+  See:
+    DOPE AB 5 A_Chase
+    Loop
+  Missile:
+	DOPE A 10 Bright A_FaceTarget
+	DOPE B 4 Bright A_SkullAttack(20)
+	DOPE C 4 Bright 
+	goto Missile
+Death:
+    DOPE D 5
+    DOPE E 5 A_Scream
+    DOPE F 5 A_NoBlocking
+    DOPE G 5
+    DOPE H -1
+    Stop
+  }
+}
+
+Actor Yorp 32514
+{
+  Health 5
+  Radius 20
+  Height 56
+  Mass 100
+  Speed 8
+  Monster 
+  DeathSound "d2twid/yattack"
+  States
+  {
+  Spawn:
+    YORP AB 5 A_Look
+    Loop
+  See:
+    YORP ABCD 3 A_Chase
+    Loop
+  Death:
+    YORP F 5 A_Scream
+	YORP G 5 A_NoBlocking
+	goto Death2
+  Death2:
+    YORP F 5 A_NoBlocking
+	YORP G 5 A_NoBlocking
+	loop
+  }
+ }
+
+Actor Garg 32515
+{
+ Health 60
+  Radius 31
+  Height 56
+  Mass 100
+  Damage 3
+  Speed 8
+  Monster
+  Obituary "was killed by a Garg"
+  DeathSound "d2twid/yorpdth"
+  AttackSound "d2twid/gargdth"
+  States
+  {
+  Spawn:
+    GARG E 5 A_Look
+    Loop
+  See:
+    GARG EF 6 A_Chase
+	loop
+Missile:
+	GARG C 10 Bright A_FaceTarget
+    GARG D 4 Bright A_SkullAttack
+    GARG CD 4 Bright
+    Goto Missile+2
+Death:
+    GARG G 20 A_Scream
+	GARG H 5 A_NoBlocking
+	GARG H -1
+	stop
   }
 }

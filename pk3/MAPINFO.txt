@@ -6307,7 +6307,7 @@ map DIB13 "Unnecessary Playground"
 	
 map DIB14 "Slaughterhouse"
 	{
-	next = "DIB13"
+	next = "DIB15"
 	sky1 = "DIBSKY2"
 	music = "D_DIB14"
 	exitpic = "DIBINT"
@@ -6371,7 +6371,7 @@ map DIB19 "Entering Earth Energy Complex"
 	{
 	next = "DIB20"
 	sky1 = "DIBSKY2"
-	music = "D_DIB19"
+	music = "D_DIB18"
 	exitpic = "DIBINT"
 	enterpic = "DIBINT"
 	intermusic = "D_READ_M"
@@ -6393,7 +6393,7 @@ map DIB20 "Untitled"
 	
 map DIB21 "Untitled"
 	{
-	next = "DIB21"
+	next = "DIB22"
 	sky1 = "DIBSKY3"
 	music = "D_DIB21"
 	exitpic = "DIBINT"
@@ -6420,6 +6420,18 @@ map DIB23 "The Map"
 	next = "DIB25"
 	sky1 = "DIBSKY3"
 	music = "d_ampie"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB25 "The Map"
+	{
+	next = "DIB26"
+	sky1 = "DIBSKY3"
+	music = "D_DIB22"
 	exitpic = "DIBINT"
 	enterpic = "DIBINT"
 	intermusic = "D_READ_M"

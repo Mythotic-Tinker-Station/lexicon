@@ -187,3 +187,8 @@ texture ZZKEENL8
 texture ZZKEENLY
 	pic 1 tics 35
 	pic 1 tics 35
+	
+// Drown in blood
+
+Switch Doom ADEL_Z50 off pic ADEL_Z51 Tics 0
+Switch Doom ADEL_Z51 on pic ADEL_Z50 Tics 0

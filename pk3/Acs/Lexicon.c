@@ -198,7 +198,7 @@ strict namespace
         // if we are on the hub map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[White]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
+            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\c[White]Democracy in action!\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
 
             // setup the confetti
             for(int c = 0; c < 64; c++)

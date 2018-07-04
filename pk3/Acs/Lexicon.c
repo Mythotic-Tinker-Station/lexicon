@@ -548,8 +548,8 @@ strict namespace
         time_seconds = time_ticks/35;
 
         // if time up, or all players voted, or majority have voted
-        if(time_ticks <= 0 || votecount >= playercount() || votessorted[0][0] > (playercount()/3)*2)
-        {
+        if(time_ticks <= 0) // votecount >= playercount() || votessorted[0][0] > (playercount()/3)*2)
+        { 
             // set the system to the check tie state
             state = STATE_CHECKTIE;
 

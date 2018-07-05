@@ -29,6 +29,8 @@ So far, the mapsets included are:
 - Circle of Caina
 - Doom Core Trilogy
 - Maps of Chaos
+- Drown in Blood
+- Swift Death
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

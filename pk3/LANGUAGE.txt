@@ -1,0 +1,17 @@
+
+
+
+// How credits work:
+// C_MAPLUMPNAME = "authors here";
+// 
+// So for example:
+// 
+// C_MAP01 = "ID Software";
+// 
+// Would print "Credits: ID Software" on MAP01.
+// The ACS Code does the rest for you.
+// If there is not a define here for, say, MAP01, the ACS code will just print "C_MAP01" as the credits, showing that the define doesnt exist.
+
+
+[default]
+C_DIB01 = "AuthorName";

@@ -58,4 +58,4 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - Sega for the Sonic hud font, HD version and extra chars made by Tribeam.
 - Skulltag for the railgun sprites used for the InstaKiller
 - Guilty Gear for the hub music
-- CorgiAtom for the hub music
+- Corgiatom for the hub music

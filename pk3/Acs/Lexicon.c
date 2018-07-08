@@ -6,7 +6,7 @@ strict namespace
 {
     #if 1
         // mess with this all you want
-        #define TIME_START 5    // in ticks, 35 = 1 second; 15*35 = 15 seconds, ect
+        #define TIME_START 60    // in ticks, 35 = 1 second; 15*35 = 15 seconds, ect
         #define TIME_YELLOW 15   // the time at which the timer goes yellow
         #define TIME_ORANGE 10   // same as above, just orange
         #define TIME_RED 5       // red
@@ -64,6 +64,7 @@ strict namespace
     int votes[64];                      // holds the votes
     int votessorted[64][2];             // all the votes, sorted
     int votecount = 0;                  // amount of votes made
+    int votechosen = 0;                 // the winner
 
     int time_ticks = TIME_START*35;     // the time left in ticks
     int time_seconds = TIME_START;      // the time left in seconds
@@ -81,7 +82,6 @@ strict namespace
     global bool 0:godmode;
     global bool 1:killmonsters;
     global bool 2:instakiller;
-    global int  3:votechosen;            // the winner
 
     // stuff that runs during any level
     script "Level" open
@@ -89,11 +89,6 @@ strict namespace
         HudSetup(0, 0);
         bool levelstarted = false;
         int clock = 10;
-
-        setfont("hudfont");
-        // mapset/mapname/creds
-        Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.6, hud_height - 225.0, 5.0, 1.0, 1.0);
-
 
         while(1)
         {
@@ -106,8 +101,8 @@ strict namespace
 
                     // countdown
                     clock--;
-                    
                     setfont("hudfont");
+
                     // timer
                     // this should be clientsided, but since this only is called once a second, it should be fine
                     if(clock > 7)
@@ -266,7 +261,7 @@ strict namespace
                     }
 
                     // player's vote
-                    hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
+                    hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-128.0, 0.1);
                 }
 
                 // system is in the end results state

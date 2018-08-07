@@ -3947,7 +3947,7 @@ map KSS15 "Industrial Zone"
 map KSS16 "Suburbs"
 	{
 	nocrouch
-	next = "KSS16"
+	next = "KSS17"
 	enterpic = "KSSHT"
 	exitpic = "KSSHT"
 	Sky1 = sky1
@@ -3958,7 +3958,7 @@ map KSS16 "Suburbs"
 map KSS17 "Tenements"
 	{
 	nocrouch
-	next = "KSS17"
+	next = "KSS18"
 	enterpic = "KSSHT"
 	exitpic = "KSSHT"
 	Sky1 = sky1
@@ -3969,7 +3969,7 @@ map KSS17 "Tenements"
 map KSS18 "The Courtyard"
 	{
 	nocrouch
-	next = "KSS18"
+	next = "KSS19"
 	enterpic = "KSSHT"
 	exitpic = "KSSHT"
 	Sky1 = sky1

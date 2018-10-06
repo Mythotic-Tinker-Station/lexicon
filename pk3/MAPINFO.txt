@@ -451,7 +451,8 @@ map AV07 "Showdown"
 	intermusic = "D_AVINT"
 	music = "d_av07"
 	sky1 = "AVRSKY1"
-	Map07Special 
+	Map07Special
+	compat_shorttex = 1
 	}
 	
 map AV08 "Beast Island"

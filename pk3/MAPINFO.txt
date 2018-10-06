@@ -30,6 +30,8 @@ map HR01 "Into the Gate"
 	intermusic = "D_HRINT"
 	music = "d_hr01"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR02 "Gateway Lab"
@@ -41,6 +43,8 @@ map HR02 "Gateway Lab"
 	intermusic = "D_HRINT"
 	music = "d_hr02"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR03 "The Dumpster"
@@ -52,6 +56,8 @@ map HR03 "The Dumpster"
 	intermusic = "D_HRINT"
 	music = "d_hr03"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR04 "The Garden Terminal"
@@ -63,6 +69,8 @@ map HR04 "The Garden Terminal"
 	intermusic = "D_HRINT"
 	music = "d_hr04"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR05 "Core Infection"
@@ -74,6 +82,8 @@ map HR05 "Core Infection"
 	intermusic = "D_HRINT"
 	music = "d_hr05"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR06 "The Round Crossroads"
@@ -85,6 +95,8 @@ map HR06 "The Round Crossroads"
 	intermusic = "D_HRINT"
 	music = "d_hr06"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR07 "Arachnophobia"
@@ -97,6 +109,8 @@ map HR07 "Arachnophobia"
 	music = "d_hr07"
 	sky1 = "HRRSKY1"
 	map07special
+	nocrouch
+	nojump
 	}
 	
 map HR08 "The Jail"
@@ -108,6 +122,8 @@ map HR08 "The Jail"
 	intermusic = "D_HRINT"
 	music = "d_hr08"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR09 "Knockout"
@@ -119,6 +135,8 @@ map HR09 "Knockout"
 	intermusic = "D_HRINT"
 	music = "d_hr09"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR10 "Chambers of War"
@@ -130,6 +148,8 @@ map HR10 "Chambers of War"
 	intermusic = "D_HRINT"
 	music = "d_hr10"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR11 "Underground Base"
@@ -141,6 +161,8 @@ map HR11 "Underground Base"
 	intermusic = "D_HRINT"
 	music = "d_hr11"
 	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR12 "Great Halls of Fire"
@@ -152,6 +174,8 @@ map HR12 "Great Halls of Fire"
 	intermusic = "D_HRINT"
 	music = "d_hr12"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR13 "Last Look at Eden"
@@ -163,7 +187,10 @@ map HR13 "Last Look at Eden"
 	intermusic = "D_HRINT"
 	music = "d_hr13"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
+	
 map HR14 "City in the Clouds"
 	{
 	titlepatch = "HRTPX13"
@@ -173,6 +200,8 @@ map HR14 "City in the Clouds"
 	intermusic = "D_HRINT"
 	music = "d_hr14"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR15 "Gates to Hell"
@@ -185,6 +214,8 @@ map HR15 "Gates to Hell"
 	secretnext = "HR31"
 	music = "d_hr15"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR16 "The Path"
@@ -196,6 +227,8 @@ map HR16 "The Path"
 	intermusic = "D_HRINT"
 	music = "d_hr16"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR17 "The Black Towers"
@@ -207,6 +240,8 @@ map HR17 "The Black Towers"
 	intermusic = "D_HRINT"
 	music = "d_hr09"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR18 "Hard Attack"
@@ -218,6 +253,8 @@ map HR18 "Hard Attack"
 	intermusic = "D_HRINT"
 	music = "d_hr18"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR19 "Everything Dies"
@@ -229,6 +266,8 @@ map HR19 "Everything Dies"
 	intermusic = "D_HRINT"
 	music = "d_hr19"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR20 "Judgement Day"
@@ -240,6 +279,8 @@ map HR20 "Judgement Day"
 	intermusic = "D_HRINT"
 	music = "D_MESSAG"
 	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR21 "Siege"
@@ -251,6 +292,8 @@ map HR21 "Siege"
 	intermusic = "D_HRINT"
 	music = "D_COUNT2"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR22 "Resistance is Futile"
@@ -262,6 +305,8 @@ map HR22 "Resistance is Futile"
 	intermusic = "D_HRINT"
 	music = "D_DDTBL3"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR23 "Ascending to the Stars"
@@ -273,6 +318,8 @@ map HR23 "Ascending to the Stars"
 	intermusic = "D_HRINT"
 	music = "D_AMPIE"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR24 "Post Mortem"
@@ -284,6 +331,8 @@ map HR24 "Post Mortem"
 	intermusic = "D_HRINT"
 	music = "D_THEDA3"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR25 "Dead Progressive"
@@ -295,6 +344,8 @@ map HR25 "Dead Progressive"
 	intermusic = "D_HRINT"
 	music = "D_ADRIAN"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR26 "Afterlife"
@@ -306,6 +357,8 @@ map HR26 "Afterlife"
 	intermusic = "D_HRINT"
 	music = "D_MESSG2"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR27 "Cyberpunk"
@@ -317,6 +370,8 @@ map HR27 "Cyberpunk"
 	intermusic = "D_HRINT"
 	music = "d_hr27"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR28 "Top Hell"
@@ -328,6 +383,8 @@ map HR28 "Top Hell"
 	intermusic = "D_HRINT"
 	music = "D_TENSE"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR29 "Temple of Fear"
@@ -339,6 +396,8 @@ map HR29 "Temple of Fear"
 	intermusic = "D_HRINT"
 	music = "d_hr29"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR30 "Hell Revealed"
@@ -350,6 +409,8 @@ map HR30 "Hell Revealed"
 	intermusic = "D_HRINT"
 	music = "D_OPENIN"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR31 "The Descent"
@@ -362,6 +423,8 @@ map HR31 "The Descent"
 	secretnext = "HR32"
 	music = "d_hr31"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR32 "Mostly Harmful"
@@ -373,6 +436,8 @@ map HR32 "Mostly Harmful"
 	intermusic = "D_HRINT"
 	music = "d_hr32"
 	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
 	}
 	
 //Alien vendetta
@@ -386,6 +451,8 @@ map AV01 "Sunset"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 
 map AV02 "Rusty Rage"
@@ -397,6 +464,8 @@ map AV02 "Rusty Rage"
 	intermusic = "D_AVINT"
 	music = "d_av02"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 
 map AV03 "Cargo Depot"
@@ -408,6 +477,8 @@ map AV03 "Cargo Depot"
 	intermusic = "D_AVINT"
 	music = "d_av03"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV04 "Seclusion"
@@ -419,6 +490,8 @@ map AV04 "Seclusion"
 	intermusic = "D_AVINT"
 	music = "d_av04"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV05 "Crimson Tide"
@@ -430,6 +503,8 @@ map AV05 "Crimson Tide"
 	intermusic = "D_AVINT"
 	music = "d_av05"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV06 "hillside Siege"
@@ -441,6 +516,8 @@ map AV06 "hillside Siege"
 	intermusic = "D_AVINT"
 	music = "d_av06"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV07 "Showdown"
@@ -454,6 +531,8 @@ map AV07 "Showdown"
 	sky1 = "AVRSKY1"
 	Map07Special
 	compat_shorttex = 1
+	nocrouch
+	nojump
 	}
 	
 map AV08 "Beast Island"
@@ -465,6 +544,8 @@ map AV08 "Beast Island"
 	intermusic = "D_AVINT"
 	music = "d_av08"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV09 "Castle Gardens"
@@ -476,6 +557,8 @@ map AV09 "Castle Gardens"
 	intermusic = "D_AVINT"
 	music = "d_av09"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV10 "Toxic Touch"
@@ -487,6 +570,8 @@ map AV10 "Toxic Touch"
 	intermusic = "D_AVINT"
 	music = "d_av10"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 
 map AV11 "Nemesis"
@@ -498,6 +583,8 @@ map AV11 "Nemesis"
 	intermusic = "D_AVINT"
 	music = "d_av11"
 	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
 	}
 	
 map AV12 "Entropy"
@@ -509,6 +596,8 @@ map AV12 "Entropy"
 	intermusic = "D_AVINT"
 	music = "d_av12"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 
 map AV13 "Suicidal Tendencies"
@@ -520,6 +609,8 @@ map AV13 "Suicidal Tendencies"
 	intermusic = "D_AVINT"
 	music = "d_av13"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 
 map AV14 "Overwhelming odds"
@@ -531,6 +622,8 @@ map AV14 "Overwhelming odds"
 	intermusic = "D_AVINT"
 	music = "d_av14"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV15 "Bulls on Parade"
@@ -543,6 +636,8 @@ map AV15 "Bulls on Parade"
 	secretnext = "AV31"
 	music = "d_av15"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV16 "Mutual Destruction"
@@ -554,6 +649,8 @@ map AV16 "Mutual Destruction"
 	intermusic = "D_AVINT"
 	music = "d_av16"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV17 "Nukefall"
@@ -565,6 +662,8 @@ map AV17 "Nukefall"
 	intermusic = "D_AVINT"
 	music = "d_av17"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV18 "Lake Poison"
@@ -576,6 +675,8 @@ map AV18 "Lake Poison"
 	intermusic = "D_AVINT"
 	music = "d_av18"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV19 "Alien Ressurection"
@@ -587,6 +688,8 @@ map AV19 "Alien Ressurection"
 	intermusic = "D_AVINT"
 	music = "d_av19"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV20 "Misri Halek"
@@ -598,6 +701,8 @@ map AV20 "Misri Halek"
 	intermusic = "D_AVINT"
 	music = "d_av20"
 	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
 	}
 	
 map AV21 "One Flew Over the Cacos Nest"
@@ -609,6 +714,8 @@ map AV21 "One Flew Over the Cacos Nest"
 	intermusic = "D_AVINT"
 	music = "d_av21"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV22 "Rubicon"
@@ -620,6 +727,8 @@ map AV22 "Rubicon"
 	intermusic = "D_AVINT"
 	music = "d_av22"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 
 map AV23 "Blood Sacrifice"
@@ -631,6 +740,8 @@ map AV23 "Blood Sacrifice"
 	intermusic = "D_AVINT"
 	music = "d_av23"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 	
@@ -643,6 +754,8 @@ map AV24 "Clandistine Complex"
 	intermusic = "D_AVINT"
 	music = "d_av24"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV25 "Demonic Hordes"
@@ -654,6 +767,8 @@ map AV25 "Demonic Hordes"
 	intermusic = "D_AVINT"
 	music = "d_av25"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 
 map AV26 "Dark Dome"
@@ -665,6 +780,8 @@ map AV26 "Dark Dome"
 	intermusic = "D_AVINT"
 	music = "d_av26"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV27 "Stench of Evil"
@@ -676,6 +793,8 @@ map AV27 "Stench of Evil"
 	intermusic = "D_AVINT"
 	music = "d_av27"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 
 map AV28 "Whispering Shadows"
@@ -687,6 +806,8 @@ map AV28 "Whispering Shadows"
 	intermusic = "D_AVINT"
 	music = "d_av28"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 
 map AV29 "Fire Walk with Me"
@@ -698,6 +819,8 @@ map AV29 "Fire Walk with Me"
 	intermusic = "D_AVINT"
 	music = "d_av29"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV30 "Point Dreadful"
@@ -709,6 +832,8 @@ map AV30 "Point Dreadful"
 	intermusic = "D_AVINT"
 	music = "d_av30"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV31 "Killer Colours"
@@ -721,6 +846,8 @@ map AV31 "Killer Colours"
 	secretnext = "AV32"
 	music = "d_av31"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map AV32 "No Guts No Glory"
@@ -732,6 +859,8 @@ map AV32 "No Guts No Glory"
 	intermusic = "D_AVINT"
 	music = "d_av32"
 	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
 	}
 	
 //Kamasutra
@@ -745,6 +874,8 @@ map KS01 "Into the Underground"
 	intermusic = "D_KSINT"
 	music = "d_ks01"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS02 "The Hidden Engine"
@@ -756,6 +887,8 @@ map KS02 "The Hidden Engine"
 	intermusic = "D_KSINT"
 	music = "d_ks02"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS03 "Mr. Adolf Kill You"
@@ -767,6 +900,8 @@ map KS03 "Mr. Adolf Kill You"
 	intermusic = "D_KSINT"
 	music = "d_ks03"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS04 "Water Base"
@@ -778,6 +913,8 @@ map KS04 "Water Base"
 	intermusic = "D_KSINT"
 	music = "d_ks04"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS05 "Klondike"
@@ -789,6 +926,8 @@ map KS05 "Klondike"
 	intermusic = "D_KSINT"
 	music = "d_ks05"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS06 "Research Complex"
@@ -800,6 +939,8 @@ map KS06 "Research Complex"
 	intermusic = "D_KSINT"
 	music = "d_ks06"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS07 "Colosseum"
@@ -812,6 +953,8 @@ map KS07 "Colosseum"
 	music = "d_ks07"
 	sky1 = "RSKY1"
 	Map07Special 
+	nocrouch
+	nojump
 	}
 	
 map KS08 "Time is Tickin' Out"
@@ -823,6 +966,8 @@ map KS08 "Time is Tickin' Out"
 	intermusic = "D_KSINT"
 	music = "d_ks08"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS09 "The Holocaust"
@@ -834,6 +979,8 @@ map KS09 "The Holocaust"
 	intermusic = "D_KSINT"
 	music = "d_ks09"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS10 "To Be or Not to Be..."
@@ -845,6 +992,8 @@ map KS10 "To Be or Not to Be..."
 	intermusic = "D_KSINT"
 	music = "d_ks10"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS11 "Execution"
@@ -856,6 +1005,8 @@ map KS11 "Execution"
 	intermusic = "D_KSINT"
 	music = "d_ks11"
 	sky1 = "RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map KS12 "King Arena"
@@ -867,6 +1018,8 @@ map KS12 "King Arena"
 	intermusic = "D_KSINT"
 	music = "d_ks12"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS13 "The Holocaust II"
@@ -878,6 +1031,8 @@ map KS13 "The Holocaust II"
 	intermusic = "D_KSINT"
 	music = "d_ks13"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS14 "Dog Eat Dog"
@@ -889,6 +1044,8 @@ map KS14 "Dog Eat Dog"
 	intermusic = "D_KSINT"
 	music = "d_ks14"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS15 "Miss Sporty"
@@ -901,6 +1058,8 @@ map KS15 "Miss Sporty"
 	intermusic = "D_KSINT"
 	music = "d_ks15"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS16 "Leeds Castle"
@@ -912,6 +1071,8 @@ map KS16 "Leeds Castle"
 	intermusic = "D_KSINT"
 	music = "d_ks16"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS17 "Cyber Machine"
@@ -923,6 +1084,8 @@ map KS17 "Cyber Machine"
 	intermusic = "D_KSINT"
 	music = "d_ks17"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS18 "The Train is Approaching"
@@ -934,6 +1097,8 @@ map KS18 "The Train is Approaching"
 	intermusic = "D_KSINT"
 	music = "d_ks18"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS19 "Natural"
@@ -945,6 +1110,8 @@ map KS19 "Natural"
 	intermusic = "D_KSINT"
 	music = "d_ks19"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS20 "Traps"
@@ -956,6 +1123,8 @@ map KS20 "Traps"
 	intermusic = "D_KSINT"
 	music = "d_ks20"
 	sky1 = "RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map KS21 "Diablo's Heart"
@@ -967,6 +1136,8 @@ map KS21 "Diablo's Heart"
 	intermusic = "D_KSINT"
 	music = "d_ks21"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS22 "Fire Play"
@@ -978,6 +1149,8 @@ map KS22 "Fire Play"
 	intermusic = "D_KSINT"
 	music = "d_ks22"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS23 "A little Big Massacre"
@@ -989,6 +1162,8 @@ map KS23 "A little Big Massacre"
 	intermusic = "D_KSINT"
 	music = "d_ks23"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS24 "The Gift from Gott"
@@ -1000,6 +1175,8 @@ map KS24 "The Gift from Gott"
 	intermusic = "D_KSINT"
 	music = "d_ks24"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS25 "Cow Face"
@@ -1011,6 +1188,8 @@ map KS25 "Cow Face"
 	intermusic = "D_KSINT"
 	music = "d_ks25"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS26 "Kill Bill"
@@ -1022,6 +1201,8 @@ map KS26 "Kill Bill"
 	intermusic = "D_KSINT"
 	music = "d_ks26"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS27 "Stairway to Heaven"
@@ -1033,6 +1214,8 @@ map KS27 "Stairway to Heaven"
 	intermusic = "D_KSINT"
 	music = "d_ks27"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS28 "Hard Target"
@@ -1044,6 +1227,8 @@ map KS28 "Hard Target"
 	intermusic = "D_KSINT"
 	music = "d_ks28"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS29 "I'm Just a DOOM Addict"
@@ -1055,6 +1240,8 @@ map KS29 "I'm Just a DOOM Addict"
 	intermusic = "D_KSINT"
 	music = "d_ks29"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS30 "<|>"
@@ -1066,6 +1253,8 @@ map KS30 "<|>"
 	intermusic = "D_KSINT"
 	music = "d_ks30"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS31 "Devastation"
@@ -1078,6 +1267,8 @@ map KS31 "Devastation"
 	secretnext = "KS32"
 	music = "d_ks31"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 map KS32 "Anger Management"
@@ -1089,6 +1280,8 @@ map KS32 "Anger Management"
 	intermusic = "D_KSINT"
 	music = "d_ks32"
 	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
 	}
 	
 //Dark tartarus
@@ -1100,6 +1293,8 @@ map TAT01 "Arch Bridge"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat01"
+	nocrouch
+	nojump
 	}
 	
 map TAT02 "Final Destination"
@@ -1109,6 +1304,8 @@ map TAT02 "Final Destination"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat02"
+	nocrouch
+	nojump
 	}
 	
 map TAT03 "Lunatic's Game"
@@ -1118,6 +1315,8 @@ map TAT03 "Lunatic's Game"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat03"
+	nocrouch
+	nojump
 	}
 
 map TAT04 "Nothing Special"
@@ -1127,6 +1326,8 @@ map TAT04 "Nothing Special"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat04"
+	nocrouch
+	nojump
 	}
 	
 map TAT05 "The Gate"
@@ -1136,6 +1337,8 @@ map TAT05 "The Gate"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat05"
+	nocrouch
+	nojump
 	}
 	
 map TAT06 "WOW:Finished"
@@ -1145,6 +1348,8 @@ map TAT06 "WOW:Finished"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat06"
+	nocrouch
+	nojump
 	}
 	
 map TAT07 "Open Season"
@@ -1155,6 +1360,8 @@ map TAT07 "Open Season"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat07"
+	nocrouch
+	nojump
 	}
 	
 map TAT08 "Ground Zero"
@@ -1164,6 +1371,8 @@ map TAT08 "Ground Zero"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat08"
+	nocrouch
+	nojump
 	}
 	
 map TAT09 "Extreme Caution"
@@ -1173,6 +1382,8 @@ map TAT09 "Extreme Caution"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat09"
+	nocrouch
+	nojump
 	}
 	
 map TAT10 "Skyscraper"
@@ -1182,6 +1393,8 @@ map TAT10 "Skyscraper"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat10"
+	nocrouch
+	nojump
 	}
 
 map TAT11 "Hex"
@@ -1191,6 +1404,8 @@ map TAT11 "Hex"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat11"
+	nocrouch
+	nojump
 	}
 	
 map TAT12 "The Last Settlement"
@@ -1200,6 +1415,8 @@ map TAT12 "The Last Settlement"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat12"
+	nocrouch
+	nojump
 	}
 	
 map TAT13 "Pancake'd"
@@ -1209,6 +1426,8 @@ map TAT13 "Pancake'd"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat13"
+	nocrouch
+	nojump
 	}
 	
 map TAT14 "Doors of Troll"
@@ -1218,6 +1437,8 @@ map TAT14 "Doors of Troll"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat14"
+	nocrouch
+	nojump
 	}
 	
 map TAT15 "Path of Light"
@@ -1228,6 +1449,8 @@ map TAT15 "Path of Light"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat15"
+	nocrouch
+	nojump
 	}
 	
 map TAT16 "Lake Rumor"
@@ -1237,6 +1460,8 @@ map TAT16 "Lake Rumor"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat16"
+	nocrouch
+	nojump
 	}
 
 map TAT17 "Rituals and Ceremonies"
@@ -1246,6 +1471,8 @@ map TAT17 "Rituals and Ceremonies"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat17"
+	nocrouch
+	nojump
 	}
 	
 map TAT18 "Contra"
@@ -1255,6 +1482,8 @@ map TAT18 "Contra"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat18"
+	nocrouch
+	nojump
 	}
 	
 map TAT19 "Dimensions"
@@ -1264,6 +1493,8 @@ map TAT19 "Dimensions"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat19"
+	nocrouch
+	nojump
 	}
 	
 map TAT20 "Frozen Throne"
@@ -1273,6 +1504,8 @@ map TAT20 "Frozen Throne"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat20"
+	nocrouch
+	nojump
 	}
 	
 map TAT21 "The Killer's Breed"
@@ -1282,6 +1515,8 @@ map TAT21 "The Killer's Breed"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat21"
+	nocrouch
+	nojump
 	}
 	
 map TAT22 "Facing World"
@@ -1291,6 +1526,8 @@ map TAT22 "Facing World"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat22"
+	nocrouch
+	nojump
 	}
 	
 map TAT23 "Nowhere"
@@ -1300,6 +1537,8 @@ map TAT23 "Nowhere"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat23"
+	nocrouch
+	nojump
 	}
 	
 map TAT24 "Revive Station"
@@ -1309,6 +1548,8 @@ map TAT24 "Revive Station"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat24"
+	nocrouch
+	nojump
 	}
 	
 map TAT25 "BFG Charge"
@@ -1318,6 +1559,8 @@ map TAT25 "BFG Charge"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat25"
+	nocrouch
+	nojump
 	}
 	
 map TAT26 "Corridor of Doom"
@@ -1327,6 +1570,8 @@ map TAT26 "Corridor of Doom"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat26"
+	nocrouch
+	nojump
 	}
 	
 map TAT27 "Doomer's Room"
@@ -1336,6 +1581,8 @@ map TAT27 "Doomer's Room"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat27"
+	nocrouch
+	nojump
 	}
 	
 map TAT28 "The Vestibule of Hell"
@@ -1345,6 +1592,8 @@ map TAT28 "The Vestibule of Hell"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat28"
+	nocrouch
+	nojump
 	}
 	
 map TAT29 "Dark Tartarus"
@@ -1354,6 +1603,8 @@ map TAT29 "Dark Tartarus"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat29"
+	nocrouch
+	nojump
 	}
 	
 map TAT30 "Boom! Headshot"
@@ -1363,6 +1614,8 @@ map TAT30 "Boom! Headshot"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat30"
+	nocrouch
+	nojump
 	}
 
 map TAT31 "Return to Wolfenstein"
@@ -1373,6 +1626,8 @@ map TAT31 "Return to Wolfenstein"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat31"
+	nocrouch
+	nojump
 	}
 
 map TAT32 "The Cursed Marine"
@@ -1382,6 +1637,8 @@ map TAT32 "The Cursed Marine"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat32"
+	nocrouch
+	nojump
 	}
 	
 map TAT33 "Welcome"
@@ -1391,6 +1648,8 @@ map TAT33 "Welcome"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat33"
+	nocrouch
+	nojump
 	}
 	
 map TAT34 "Shallow Grave"
@@ -1400,6 +1659,8 @@ map TAT34 "Shallow Grave"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat34"
+	nocrouch
+	nojump
 	}
 
 map TAT35 "Devil's Tower"
@@ -1409,6 +1670,8 @@ map TAT35 "Devil's Tower"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat35"
+	nocrouch
+	nojump
 	}
 
 map TAT36 "Behind the Sky"
@@ -1418,6 +1681,8 @@ map TAT36 "Behind the Sky"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat36"
+	nocrouch
+	nojump
 	}
 	
 map TAT37 "Truly Evil"
@@ -1427,6 +1692,8 @@ map TAT37 "Truly Evil"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat37"
+	nocrouch
+	nojump
 	}
 
 map TAT38 "Skull Hunt"
@@ -1436,6 +1703,8 @@ map TAT38 "Skull Hunt"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat38"
+	nocrouch
+	nojump
 	}
 
 map TAT39 "Dead Tonight"
@@ -1445,6 +1714,8 @@ map TAT39 "Dead Tonight"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat39"
+	nocrouch
+	nojump
 	}
 
 map TAT40 "Horrible Things"
@@ -1456,6 +1727,8 @@ map TAT40 "Horrible Things"
 	music = "d_tat40"
 	cluster = 8
 	titlepatch = "WOSLV29"
+	nocrouch
+	nojump
 	}
 	
 map TAT41 " "
@@ -1465,6 +1738,8 @@ map TAT41 " "
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat41"
+	nocrouch
+	nojump
 	}
 	
 map TAT42 "Beat Doom V0.01"
@@ -1474,6 +1749,8 @@ map TAT42 "Beat Doom V0.01"
 	cluster = 1
 	intermusic = "D_TATINT"
 	music = "d_tat42"
+	nocrouch
+	nojump
 	}
 
 map TAT43 "LOCK N' LOAD"
@@ -1484,6 +1761,8 @@ map TAT43 "LOCK N' LOAD"
 	intermusic = "D_TATINT"
 	cluster = 1
 	music = "d_tat43"
+	nocrouch
+	nojump
 	}
 	
 //Hell Revealed 2
@@ -1497,6 +1776,8 @@ map HR201 "Ignition"
 	intermusic = "D_HR2INT"
 	music = "d_hr201"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR202 "High Voltage"
@@ -1508,6 +1789,8 @@ map HR202 "High Voltage"
 	intermusic = "D_HR2INT"
 	music = "d_hr202"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR203 "Shackled"
@@ -1519,6 +1802,8 @@ map HR203 "Shackled"
 	intermusic = "D_HR2INT"
 	music = "d_hr203"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR204 "Reluctant Pain"
@@ -1530,6 +1815,8 @@ map HR204 "Reluctant Pain"
 	intermusic = "D_HR2INT"
 	music = "d_hr204"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR205 "Insatanity"
@@ -1541,6 +1828,8 @@ map HR205 "Insatanity"
 	intermusic = "D_HR2INT"
 	music = "d_hr205"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR206 "Revival"
@@ -1552,6 +1841,8 @@ map HR206 "Revival"
 	intermusic = "D_HR2INT"
 	music = "d_hr206"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR207 "Not That Simple II"
@@ -1564,6 +1855,8 @@ map HR207 "Not That Simple II"
 	music = "d_hr207"
 	sky1 = "HR2RSKY1"
 	Map07Special 
+	nocrouch
+	nojump
 	}
 	
 map HR208 "Ballistics"
@@ -1575,6 +1868,8 @@ map HR208 "Ballistics"
 	intermusic = "D_HR2INT"
 	music = "d_hr208"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR209 "The Siege II"
@@ -1586,6 +1881,8 @@ map HR209 "The Siege II"
 	intermusic = "D_HR2INT"
 	music = "d_hr209"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR210 "Base Blaze"
@@ -1597,6 +1894,8 @@ map HR210 "Base Blaze"
 	intermusic = "D_HR2INT"
 	music = "d_hr210"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR211 "Raw Hatred"
@@ -1608,6 +1907,8 @@ map HR211 "Raw Hatred"
 	intermusic = "D_HR2INT"
 	music = "d_hr211"
 	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
 	}
 	
 map HR212 "Anti Static"
@@ -1619,6 +1920,8 @@ map HR212 "Anti Static"
 	intermusic = "D_HR2INT"
 	music = "d_hr212"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR213 "Hardcore"
@@ -1630,6 +1933,8 @@ map HR213 "Hardcore"
 	intermusic = "D_HR2INT"
 	music = "d_hr213"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR214 "Metal Meltdown"
@@ -1641,6 +1946,8 @@ map HR214 "Metal Meltdown"
 	intermusic = "D_HR2INT"
 	music = "d_hr214"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR215 "The Path II"
@@ -1653,6 +1960,8 @@ map HR215 "The Path II"
 	secretnext = "HR231"
 	music = "d_hr215"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR216 "The Chapel of Black Granite"
@@ -1664,6 +1973,8 @@ map HR216 "The Chapel of Black Granite"
 	intermusic = "D_HR2INT"
 	music = "d_hr216"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR217 "An Eye for an Eye"
@@ -1675,6 +1986,8 @@ map HR217 "An Eye for an Eye"
 	intermusic = "D_HR2INT"
 	music = "d_hr217"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR218 "Excess Meat"
@@ -1686,6 +1999,8 @@ map HR218 "Excess Meat"
 	intermusic = "D_HR2INT"
 	music = "d_hr218"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR219 "Mind Trap"
@@ -1697,6 +2012,8 @@ map HR219 "Mind Trap"
 	intermusic = "D_HR2INT"
 	music = "d_hr219"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR220 "Fear of the Dark"
@@ -1708,6 +2025,8 @@ map HR220 "Fear of the Dark"
 	intermusic = "D_HR2INT"
 	music = "d_hr220"
 	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
 	}
 	
 map HR221 "Conflux"
@@ -1719,6 +2038,8 @@ map HR221 "Conflux"
 	intermusic = "D_HR2INT"
 	music = "d_hr221"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR222 "Sewer Slaughter"
@@ -1730,6 +2051,8 @@ map HR222 "Sewer Slaughter"
 	intermusic = "D_HR2INT"
 	music = "d_hr222"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR223 "When the Heavens Fall"
@@ -1741,6 +2064,8 @@ map HR223 "When the Heavens Fall"
 	intermusic = "D_HR2INT"
 	music = "d_hr223"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR224 "The Inmost Dens III"
@@ -1752,6 +2077,8 @@ map HR224 "The Inmost Dens III"
 	intermusic = "D_HR2INT"
 	music = "d_hr224"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR225 "The End is Nigh"
@@ -1763,6 +2090,8 @@ map HR225 "The End is Nigh"
 	intermusic = "D_HR2INT"
 	music = "d_hr225"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR226 "Dis 2000"
@@ -1774,6 +2103,8 @@ map HR226 "Dis 2000"
 	intermusic = "D_HR2INT"
 	music = "d_hr226"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR227 "Resistance Remains"
@@ -1785,6 +2116,8 @@ map HR227 "Resistance Remains"
 	intermusic = "D_HR2INT"
 	music = "d_hr227"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR228 "Beyond the Sea"
@@ -1796,6 +2129,8 @@ map HR228 "Beyond the Sea"
 	intermusic = "D_HR2INT"
 	music = "d_hr228"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR229 "Hell's Cauldron"
@@ -1807,6 +2142,8 @@ map HR229 "Hell's Cauldron"
 	intermusic = "D_HR2INT"
 	music = "d_hr229"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR230 "Source Control"
@@ -1818,6 +2155,8 @@ map HR230 "Source Control"
 	intermusic = "D_HR2INT"
 	music = "d_hr230"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR231 "The Descent II"
@@ -1830,6 +2169,8 @@ map HR231 "The Descent II"
 	secretnext = "HR232"
 	music = "d_hr231"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 map HR232 "Playground"
@@ -1841,6 +2182,8 @@ map HR232 "Playground"
 	intermusic = "D_HR2INT"
 	music = "d_hr232"
 	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
 	}
 	
 //New gothic movement 1
@@ -1850,6 +2193,8 @@ map NG101 "New Gothic 1 MAP01"
 	next = "NG102"
 	sky1 = "RSKY1"
 	music = "d_ng101"
+	nocrouch
+	nojump
 	}
 	
 map NG102 "New Gothic 1 MAP02"
@@ -1857,6 +2202,8 @@ map NG102 "New Gothic 1 MAP02"
 	next = "NG103"
 	sky1 = "RSKY1"
 	music = "d_ng102"
+	nocrouch
+	nojump
 	}
 	
 map NG103 "New Gothic 1 MAP03"
@@ -1864,6 +2211,8 @@ map NG103 "New Gothic 1 MAP03"
 	next = "NG104"
 	sky1 = "RSKY1"
 	music = "d_ng103"
+	nocrouch
+	nojump
 	}
 	
 map NG104 "New Gothic 1 MAP04"
@@ -1871,6 +2220,8 @@ map NG104 "New Gothic 1 MAP04"
 	next = "NG105"
 	sky1 = "RSKY1"
 	music = "d_ng104"
+	nocrouch
+	nojump
 	}
 	
 map NG105 "New Gothic 1 MAP05"
@@ -1878,6 +2229,8 @@ map NG105 "New Gothic 1 MAP05"
 	next = "NG106"
 	sky1 = "RSKY1"
 	music = "d_ng105"
+	nocrouch
+	nojump
 	}
 	
 map NG106 "New Gothic 1 MAP06"
@@ -1885,6 +2238,8 @@ map NG106 "New Gothic 1 MAP06"
 	next = "NG107"
 	sky1 = "RSKY1"
 	music = "d_ng106"
+	nocrouch
+	nojump
 	}
 	
 map NG107 "New Gothic 1 MAP07"
@@ -1893,6 +2248,8 @@ map NG107 "New Gothic 1 MAP07"
 	sky1 = "RSKY1"
 	music = "d_ng107"
 	Map07Special 
+	nocrouch
+	nojump
 	}
 	
 map NG108 "New Gothic 1 MAP08"
@@ -1900,6 +2257,8 @@ map NG108 "New Gothic 1 MAP08"
 	next = "NG109"
 	sky1 = "RSKY1"
 	music = "d_ng108"
+	nocrouch
+	nojump
 	}
 	
 map NG109 "New Gothic 1 MAP09"
@@ -1907,6 +2266,8 @@ map NG109 "New Gothic 1 MAP09"
 	next = "NG110"
 	sky1 = "RSKY1"
 	music = "d_ng109"
+	nocrouch
+	nojump
 	}
 	
 map NG110 "New Gothic 1 MAP10"
@@ -1914,6 +2275,8 @@ map NG110 "New Gothic 1 MAP10"
 	next = "NG111"
 	sky1 = "RSKY1"
 	music = "d_ng110"
+	nocrouch
+	nojump
 	}
 	
 map NG111 "New Gothic 1 MAP11"
@@ -1921,6 +2284,8 @@ map NG111 "New Gothic 1 MAP11"
 	next = "NG112"
 	sky1 = "RSKY1"
 	music = "d_ng111"
+	nocrouch
+	nojump
 	}
 	
 map NG112 "New Gothic 1 MAP12"
@@ -1928,6 +2293,8 @@ map NG112 "New Gothic 1 MAP12"
 	next = "NG113"
 	sky1 = "NG1RSKY2"
 	music = "d_ng112"
+	nocrouch
+	nojump
 	}
 	
 map NG113 "New Gothic 1 MAP13"
@@ -1935,6 +2302,8 @@ map NG113 "New Gothic 1 MAP13"
 	next = "NG114"
 	sky1 = "NG1RSKY2"
 	music = "d_ng113"
+	nocrouch
+	nojump
 	}
 	
 map NG114 "New Gothic 1 MAP14"
@@ -1942,6 +2311,8 @@ map NG114 "New Gothic 1 MAP14"
 	next = "NG115"
 	sky1 = "NG1RSKY2"
 	music = "d_ng114"
+	nocrouch
+	nojump
 	}
 	
 map NG115 "New Gothic 1 MAP15"
@@ -1950,6 +2321,8 @@ map NG115 "New Gothic 1 MAP15"
 	secretnext = "NG131"
 	sky1 = "NG1RSKY2"
 	music = "d_ng115"
+	nocrouch
+	nojump
 	}
 	
 map NG116 "New Gothic 1 MAP16"
@@ -1957,6 +2330,8 @@ map NG116 "New Gothic 1 MAP16"
 	next = "NG121"
 	sky1 = "NG1RSKY2"
 	music = "d_ng116"
+	nocrouch
+	nojump
 	}
 	
 map NG121 "New Gothic 1 MAP21"
@@ -1964,6 +2339,8 @@ map NG121 "New Gothic 1 MAP21"
 	sky1 = "RSKY3"
 	music = "d_ng121"
 	next = "HUB"
+	nocrouch
+	nojump
 	}
 	
 map NG131 "New Gothic 1 MAP31"
@@ -1971,6 +2348,8 @@ map NG131 "New Gothic 1 MAP31"
 	next = "NG116"
 	sky1 = "RSKY3"
 	music = "d_ng131"
+	nocrouch
+	nojump
 	}
 	
 //Shai'tans Luck Maps
@@ -1980,6 +2359,8 @@ map SL20 "Icon of Sin"
 	next = "SL21"
 	sky1 = "RSKY2"
 	music = "d_sl20"
+	nocrouch
+	nojump
 	}
 	
 map SL21 "Sewers"
@@ -1987,6 +2368,8 @@ map SL21 "Sewers"
 	next = "SL22"
 	sky1 = "RSKY3"
 	music = "d_sl21"
+	nocrouch
+	nojump
 	}
 	
 map SL22 "Processing"
@@ -1994,6 +2377,8 @@ map SL22 "Processing"
 	next = "SL23"
 	sky1 = "RSKY3"
 	music = "d_sl22"
+	nocrouch
+	nojump
 	}
 	
 map SL23 "Area47"
@@ -2001,6 +2386,8 @@ map SL23 "Area47"
 	next = "SL24"
 	sky1 = "RSKY3"
 	music = "d_sl23"
+	nocrouch
+	nojump
 	}
 	
 map SL24 "Colorado Hills"
@@ -2008,6 +2395,8 @@ map SL24 "Colorado Hills"
 	next = "SL25"
 	sky1 = "RSKY3"
 	music = "d_sl24"
+	nocrouch
+	nojump
 	}
 	
 map SL25 "Native Ruins"
@@ -2015,6 +2404,8 @@ map SL25 "Native Ruins"
 	next = "SL26"
 	sky1 = "RSKY3"
 	music = "d_sl25"
+	nocrouch
+	nojump
 	}
 	
 map SL26 "Mining Site"
@@ -2022,6 +2413,8 @@ map SL26 "Mining Site"
 	next = "SL27"
 	sky1 = "RSKY3"
 	music = "d_sl26"
+	nocrouch
+	nojump
 	}
 	
 map SL27 "Area42"
@@ -2029,6 +2422,8 @@ map SL27 "Area42"
 	next = "SL28"
 	sky1 = "RSKY3"
 	music = "d_sl27"
+	nocrouch
+	nojump
 	}
 	
 map SL28 "The Ring Forts"
@@ -2036,6 +2431,8 @@ map SL28 "The Ring Forts"
 	next = "SL29"
 	sky1 = "RSKY3"
 	music = "d_sl28"
+	nocrouch
+	nojump
 	}
 	
 map SL29 "Fallen Atlantis"
@@ -2043,6 +2440,8 @@ map SL29 "Fallen Atlantis"
 	next = "SL30"
 	sky1 = "RSKY3"
 	music = "d_sl29"
+	nocrouch
+	nojump
 	}
 	
 map SL30 "Shai'tans Luck"
@@ -2050,6 +2449,8 @@ map SL30 "Shai'tans Luck"
 	next = "HUB"
 	sky1 = "RSKY3"
 	music = "d_sl30"
+	nocrouch
+	nojump
 	}
 	
 //Speed of Doom
@@ -2063,6 +2464,8 @@ map SOD01 "First Blood"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod01"
+	nocrouch
+	nojump
 	}
 	
 map SOD02 "Mysterious Cove"
@@ -2074,6 +2477,8 @@ map SOD02 "Mysterious Cove"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod02"
+	nocrouch
+	nojump
 	}
 	
 map SOD03 "Constrained Base"
@@ -2085,6 +2490,8 @@ map SOD03 "Constrained Base"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod03"
+	nocrouch
+	nojump
 	}
 	
 map SOD04 "Sedgemire"
@@ -2096,6 +2503,8 @@ map SOD04 "Sedgemire"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod04"
+	nocrouch
+	nojump
 	}
 	
 map SOD05 "Cliffside Siege"
@@ -2107,6 +2516,8 @@ map SOD05 "Cliffside Siege"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod05"
+	nocrouch
+	nojump
 	}
 	
 map SOD06 "Dreamscape"
@@ -2118,6 +2529,8 @@ map SOD06 "Dreamscape"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod06"
+	nocrouch
+	nojump
 	}
 	
 map SOD07 "Simple Prison-yard"
@@ -2130,6 +2543,8 @@ map SOD07 "Simple Prison-yard"
 	sky1 = "SODRSKY1"
 	music = "d_sod07"
 	map07special
+	nocrouch
+	nojump
 	}
 	
 map SOD08 "Frenetic"
@@ -2141,6 +2556,8 @@ map SOD08 "Frenetic"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod08"
+	nocrouch
+	nojump
 	}
 	
 map SOD09 "Depredation"
@@ -2152,6 +2569,8 @@ map SOD09 "Depredation"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod09"
+	nocrouch
+	nojump
 	}
 	
 map SOD10 "Vile Pain"
@@ -2163,6 +2582,8 @@ map SOD10 "Vile Pain"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod10"
+	nocrouch
+	nojump
 	}
 	
 map SOD11 "Transcension"
@@ -2174,6 +2595,8 @@ map SOD11 "Transcension"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY1"
 	music = "d_sod11"
+	nocrouch
+	nojump
 	}
 	
 map SOD12 "The Meat Grinder"
@@ -2185,6 +2608,8 @@ map SOD12 "The Meat Grinder"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod12"
+	nocrouch
+	nojump
 	}
 	
 map SOD13 "Lucifer's Tears"
@@ -2196,6 +2621,8 @@ map SOD13 "Lucifer's Tears"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod13"
+	nocrouch
+	nojump
 	}
 	
 map SOD14 "Sledge"
@@ -2207,6 +2634,8 @@ map SOD14 "Sledge"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod14"
+	nocrouch
+	nojump
 	}
 	
 map SOD15 "Descent to Core"
@@ -2219,6 +2648,8 @@ map SOD15 "Descent to Core"
 	secretnext = "SOD31"
 	sky1 = "SODRSKY2"
 	music = "d_sod15"
+	nocrouch
+	nojump
 	}
 	
 map SOD16 "The Core"
@@ -2230,6 +2661,8 @@ map SOD16 "The Core"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod16"
+	nocrouch
+	nojump
 	}
 	
 map SOD17 "The Shrine"
@@ -2241,6 +2674,8 @@ map SOD17 "The Shrine"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod17"
+	nocrouch
+	nojump
 	}
 	
 map SOD18 "Silent Hour"
@@ -2252,6 +2687,8 @@ map SOD18 "Silent Hour"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod18"
+	nocrouch
+	nojump
 	}
 	
 map SOD19 "Impure Serenity"
@@ -2263,6 +2700,8 @@ map SOD19 "Impure Serenity"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod19"
+	nocrouch
+	nojump
 	}
 	
 map SOD20 "The Path to Hell"
@@ -2274,6 +2713,8 @@ map SOD20 "The Path to Hell"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY2"
 	music = "d_sod20"
+	nocrouch
+	nojump
 	}
 	
 map SOD21 "Resurrection"
@@ -2285,6 +2726,8 @@ map SOD21 "Resurrection"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod21"
+	nocrouch
+	nojump
 	}
 	
 map SOD22 "Dead Echo"
@@ -2296,6 +2739,8 @@ map SOD22 "Dead Echo"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod22"
+	nocrouch
+	nojump
 	}
 	
 map SOD23 "Poison Ivy II"
@@ -2307,6 +2752,8 @@ map SOD23 "Poison Ivy II"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod23"
+	nocrouch
+	nojump
 	}
 	
 map SOD24 "Hell's Honeycomb"
@@ -2318,6 +2765,8 @@ map SOD24 "Hell's Honeycomb"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod24"
+	nocrouch
+	nojump
 	}
 	
 map SOD25 "Death's Nocturne"
@@ -2329,6 +2778,8 @@ map SOD25 "Death's Nocturne"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod25"
+	nocrouch
+	nojump
 	}
 	
 map SOD26 "Blessed Hellscape"
@@ -2340,6 +2791,8 @@ map SOD26 "Blessed Hellscape"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod26"
+	nocrouch
+	nojump
 	}
 	
 map SOD27 "Hais Temple"
@@ -2351,6 +2804,8 @@ map SOD27 "Hais Temple"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod27"
+	nocrouch
+	nojump
 	}
 	
 map SOD28 "Twilight Massacre"
@@ -2362,6 +2817,8 @@ map SOD28 "Twilight Massacre"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod28"
+	nocrouch
+	nojump
 	}
 	
 map SOD29 "The Ruins of Kalnik"
@@ -2373,6 +2830,8 @@ map SOD29 "The Ruins of Kalnik"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod29"
+	nocrouch
+	nojump
 	}
 	
 map SOD30 "Darkness Without End"
@@ -2384,6 +2843,8 @@ map SOD30 "Darkness Without End"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod30"
+	nocrouch
+	nojump
 	}
 	
 map SOD31 "1010011010"
@@ -2396,6 +2857,8 @@ map SOD31 "1010011010"
 	secretnext = "SOD32"
 	sky1 = "SODRSKY3"
 	music = "d_sod31"
+	nocrouch
+	nojump
 	}
 	
 map SOD32 "The Pyramid of Death"
@@ -2407,6 +2870,8 @@ map SOD32 "The Pyramid of Death"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod32"
+	nocrouch
+	nojump
 	}
 	
 map SOD33 "Descent to Nowhere"
@@ -2418,6 +2883,8 @@ map SOD33 "Descent to Nowhere"
 	intermusic = "D_SODINT"
 	sky1 = "SODRSKY3"
 	music = "d_sod33"
+	nocrouch
+	nojump
 	}
 	
 //Scythe 2
@@ -2431,6 +2898,8 @@ map SC201 "Castle Entryway"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc201"
+	nocrouch
+	nojump
 	}
 	
 map SC202 "Rooftop Warzone"
@@ -2442,6 +2911,8 @@ map SC202 "Rooftop Warzone"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc202"
+	nocrouch
+	nojump
 	}
 	
 map SC203 "Castle Gardens II"
@@ -2453,6 +2924,8 @@ map SC203 "Castle Gardens II"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc203"
+	nocrouch
+	nojump
 	}
 	
 map SC204 "Cursed Cellars"
@@ -2464,6 +2937,8 @@ map SC204 "Cursed Cellars"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc204"
+	nocrouch
+	nojump
 	}
 	
 map SC205 "Halls of Anguish"
@@ -2475,6 +2950,8 @@ map SC205 "Halls of Anguish"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc205"
+	nocrouch
+	nojump
 	}
 	
 map SC206 "Temple Entryway"
@@ -2486,6 +2963,8 @@ map SC206 "Temple Entryway"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc206"
+	nocrouch
+	nojump
 	}
 	
 map SC207 "Temple of Isis"
@@ -2498,6 +2977,8 @@ map SC207 "Temple of Isis"
 	sky1 = "SC2RSKY1"
 	music = "d_sc207"
 	map07special
+	nocrouch
+	nojump
 	}
 	
 map SC208 "Graverobbers"
@@ -2509,6 +2990,8 @@ map SC208 "Graverobbers"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc208"
+	nocrouch
+	nojump
 	}
 	
 map SC209 "Valley of the Queen"
@@ -2520,6 +3003,8 @@ map SC209 "Valley of the Queen"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc209"
+	nocrouch
+	nojump
 	}
 	
 map SC210 "Pharaos Tomb"
@@ -2531,6 +3016,8 @@ map SC210 "Pharaos Tomb"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc210"
+	nocrouch
+	nojump
 	}
 	
 map SC211 "UAC Base X"
@@ -2542,6 +3029,8 @@ map SC211 "UAC Base X"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY1"
 	music = "d_sc211"
+	nocrouch
+	nojump
 	}
 	
 map SC212 "Battlegrounds"
@@ -2553,6 +3042,8 @@ map SC212 "Battlegrounds"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc212"
+	nocrouch
+	nojump
 	}
 	
 map SC213 "Mining Project"
@@ -2564,6 +3055,8 @@ map SC213 "Mining Project"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc213"
+	nocrouch
+	nojump
 	}
 	
 map SC214 "The Haunted Mines"
@@ -2575,6 +3068,8 @@ map SC214 "The Haunted Mines"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc214"
+	nocrouch
+	nojump
 	}
 	
 map SC215 "End of the Line"
@@ -2587,6 +3082,8 @@ map SC215 "End of the Line"
 	secretnext = "SC231"
 	sky1 = "SC2RSKY2"
 	music = "d_sc215"
+	nocrouch
+	nojump
 	}
 	
 map SC216 "Mr X"
@@ -2598,6 +3095,8 @@ map SC216 "Mr X"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc216"
+	nocrouch
+	nojump
 	}
 	
 map SC217 "Canyon of Blood"
@@ -2609,6 +3108,8 @@ map SC217 "Canyon of Blood"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc217"
+	nocrouch
+	nojump
 	}
 	
 map SC218 "Living Lands"
@@ -2620,6 +3121,8 @@ map SC218 "Living Lands"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc218"
+	nocrouch
+	nojump
 	}
 	
 map SC219 "Withering Away"
@@ -2631,6 +3134,8 @@ map SC219 "Withering Away"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc219"
+	nocrouch
+	nojump
 	}
 	
 map SC220 "The Gates"
@@ -2642,6 +3147,8 @@ map SC220 "The Gates"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY2"
 	music = "d_sc220"
+	nocrouch
+	nojump
 	}
 	
 map SC221 "Doom Gardens"
@@ -2653,6 +3160,8 @@ map SC221 "Doom Gardens"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc221"
+	nocrouch
+	nojump
 	}
 	
 map SC222 "The Garden Base II"
@@ -2664,6 +3173,8 @@ map SC222 "The Garden Base II"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc222"
+	nocrouch
+	nojump
 	}
 	
 map SC223 "Whispering Winds"
@@ -2675,6 +3186,8 @@ map SC223 "Whispering Winds"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc223"
+	nocrouch
+	nojump
 	}
 	
 map SC224 "Gaias Temple"
@@ -2686,6 +3199,8 @@ map SC224 "Gaias Temple"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc224"
+	nocrouch
+	nojump
 	}
 	
 map SC225 "Forgotten City"
@@ -2697,6 +3212,8 @@ map SC225 "Forgotten City"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc225"
+	nocrouch
+	nojump
 	}
 	
 map SC226 "Death"
@@ -2708,6 +3225,8 @@ map SC226 "Death"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc226"
+	nocrouch
+	nojump
 	}
 	
 map SC227 "Afterlife II"
@@ -2719,6 +3238,8 @@ map SC227 "Afterlife II"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc227"
+	nocrouch
+	nojump
 	}
 	
 map SC228 "Nightmare"
@@ -2730,6 +3251,8 @@ map SC228 "Nightmare"
 	exitpic = "SCINT"
 	intermusic = "D_SCINT"
 	music = "d_sc228"
+	nocrouch
+	nojump
 	}
 	
 map SC229 "Dust to Dust"
@@ -2741,6 +3264,8 @@ map SC229 "Dust to Dust"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc229"
+	nocrouch
+	nojump
 	}
 	
 map SC230 "Haunting Dreams"
@@ -2752,6 +3277,8 @@ map SC230 "Haunting Dreams"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc230"
+	nocrouch
+	nojump
 	}
 	
 map SC231 "Secret"
@@ -2764,6 +3291,8 @@ map SC231 "Secret"
 	secretnext = "SC232"
 	sky1 = "SC2RSKY3"
 	music = "d_sc231"
+	nocrouch
+	nojump
 	}
 	
 map SC232 "Super Secret"
@@ -2775,6 +3304,8 @@ map SC232 "Super Secret"
 	intermusic = "D_SCINT"
 	sky1 = "SC2RSKY3"
 	music = "d_sc232"
+	nocrouch
+	nojump
 	}
 	
 //Combat shock
@@ -2786,6 +3317,8 @@ map CS01 "Agitator"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs01"
+	nocrouch
+	nojump
 	}
 	
 map CS02 "Gozu"
@@ -2795,6 +3328,8 @@ map CS02 "Gozu"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs02"
+	nocrouch
+	nojump
 	}
 	
 map CS03 "Fudoh"
@@ -2804,6 +3339,8 @@ map CS03 "Fudoh"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs03"
+	nocrouch
+	nojump
 	}
 	
 map CS04 "Messatsu"
@@ -2813,6 +3350,8 @@ map CS04 "Messatsu"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs04"
+	nocrouch
+	nojump
 	}
 	
 //Combat Shock 2
@@ -2826,6 +3365,8 @@ map CS201 "Aftermath"
 	intermusic = "D_CS2INT"
 	sky1 = "CS2SKY1"
 	music = "d_cs201"
+	nocrouch
+	nojump
 	}
 	
 map CS202 "Rope or Bullet"
@@ -2837,6 +3378,8 @@ map CS202 "Rope or Bullet"
 	intermusic = "D_CS2INT"
 	sky1 = "CS2SKY1"
 	music = "d_cs202"
+	nocrouch
+	nojump
 	}
 	
 map CS203 "Hone Gumi"
@@ -2848,6 +3391,8 @@ map CS203 "Hone Gumi"
 	intermusic = "D_CS2INT"
 	sky1 = "CS2SKY2"
 	music = "d_cs203"
+	nocrouch
+	nojump
 	}
 	
 map CS204 "Rapid Fire"
@@ -2859,6 +3404,8 @@ map CS204 "Rapid Fire"
 	intermusic = "D_CS2INT"
 	sky1 = "CS2SKY5"
 	music = "d_cs204"
+	nocrouch
+	nojump
 	}
 	
 map CS205 "Boiling Point"
@@ -2870,6 +3417,8 @@ map CS205 "Boiling Point"
 	intermusic = "D_CS2INT"
 	sky1 = "CS2SKY5"
 	music = "d_cs205"
+	nocrouch
+	nojump
 	}
 	
 map CS206 "Closure"
@@ -2881,6 +3430,8 @@ map CS206 "Closure"
 	intermusic = "D_CS2INT"
 	sky1 = "RSKY1 "
 	music = "d_cs206"
+	nocrouch
+	nojump
 	}
 	
 map CS207 "Shocked for Life"
@@ -2893,6 +3444,8 @@ map CS207 "Shocked for Life"
 	sky1 = "CS2SKY2 "
 	music = "d_cs207"
 	map07special
+	nocrouch
+	nojump
 	}
 	
 //Vanguard
@@ -2907,6 +3460,8 @@ map VAN01 "Overgrown Sepulcher"
 	secretnext = "VAN02"
 	sky1 = "VANSKY1"
 	music = "D_VAN01"
+	nocrouch
+	nojump
 	}
 
 map VAN02 "Drowned Shrine"
@@ -2919,6 +3474,8 @@ map VAN02 "Drowned Shrine"
 	secretnext = "VAN03"
 	sky1 = "VANSKY1"
 	music = "D_VAN02"
+	nocrouch
+	nojump
 	}
 
 map VAN03 "13 Angry Archviles"
@@ -2931,6 +3488,8 @@ map VAN03 "13 Angry Archviles"
 	secretnext = "VAN04"
 	sky1 = "VANSKY1"
 	music = "D_VAN03"
+	nocrouch
+	nojump
 	}
 
 map VAN04 "Hangman's Paradise"
@@ -2943,6 +3502,8 @@ map VAN04 "Hangman's Paradise"
 	secretnext = "VAN05"
 	sky1 = "VANSKY1"
 	music = "D_VAN04"
+	nocrouch
+	nojump
 	}
 
 map VAN05 "Forgotten Village"
@@ -2955,6 +3516,8 @@ map VAN05 "Forgotten Village"
 	secretnext = "VAN06"
 	sky1 = "VANSKY1"
 	music = "D_VAN05"
+	nocrouch
+	nojump
 	}
 	
 map VAN06 "Punchline"
@@ -2967,6 +3530,8 @@ map VAN06 "Punchline"
 	secretnext = "VAN07"
 	sky1 = "VANSKY3"
 	music = "D_VAN06"
+	nocrouch
+	nojump
 	}
 	
 map VAN07 "Dead Symmetrical"
@@ -2980,6 +3545,8 @@ map VAN07 "Dead Symmetrical"
 	secretnext = "VAN08"
 	sky1 = "VANSKY3"
 	music = "D_VAN07"
+	nocrouch
+	nojump
 	}
 
 map VAN08 "Cratastrophe"
@@ -2992,6 +3559,8 @@ map VAN08 "Cratastrophe"
 	secretnext = "VAN09"
 	sky1 = "VANSKY3"
 	music = "D_VAN08"
+	nocrouch
+	nojump
 	}
 	
 map VAN09 "Free Parking"
@@ -3004,6 +3573,8 @@ map VAN09 "Free Parking"
 	secretnext = "VAN10"
 	sky1 = "VANSKY3"
 	music = "D_VAN09"
+	nocrouch
+	nojump
 	}
 	
 map VAN10 "Superstructure"
@@ -3016,6 +3587,8 @@ map VAN10 "Superstructure"
 	secretnext = "VAN11"
 	sky1 = "VANSKY3"
 	music = "D_VAN10"
+	nocrouch
+	nojump
 	}
 	
 map VAN11 "Temple of Asmodeus"
@@ -3028,6 +3601,8 @@ map VAN11 "Temple of Asmodeus"
 	secretnext = "VAN12"
 	sky1 = "VANSKY4"
 	music = "D_VAN11"
+	nocrouch
+	nojump
 	}
 	
 map VAN12 "Infernal Chasm"
@@ -3040,6 +3615,8 @@ map VAN12 "Infernal Chasm"
 	secretnext = "VAN13"
 	sky1 = "VANSKY4"
 	music = "D_VAN12"
+	nocrouch
+	nojump
 	}
 	
 map VAN13 "Punch-Out"
@@ -3052,6 +3629,8 @@ map VAN13 "Punch-Out"
 	secretnext = "VAN14"
 	sky1 = "VANSKY4"
 	music = "D_VAN13"
+	nocrouch
+	nojump
 	}
 	
 // Whispers of Satan
@@ -3923,6 +4502,7 @@ map KSS13 "Downtown"
 	Sky1 = sky1
 	nojump
 	music = "D_KSS13"
+	nocrouch
 	}
 	
 map KSS14 "The Inmost Dens"
@@ -3933,6 +4513,7 @@ map KSS14 "The Inmost Dens"
 	Sky1 = sky1
 	nojump
 	music = "D_KSS14"
+	nocrouch
 	}
 	
 map KSS15 "Industrial Zone"
@@ -5314,6 +5895,8 @@ map MOC01 "Entryway"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_runnin
+	nocrouch
+	nojump
 	}
 	
 map MOC02 "Underhalls"
@@ -5324,6 +5907,8 @@ map MOC02 "Underhalls"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stalks
+	nocrouch
+	nojump
 	}
 	
 map MOC03 "The Gantlet"
@@ -5334,6 +5919,8 @@ map MOC03 "The Gantlet"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_countd
+	nocrouch
+	nojump
 	}
 	
 map MOC04 "The Focus"
@@ -5344,6 +5931,8 @@ map MOC04 "The Focus"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_betwee
+	nocrouch
+	nojump
 	}
 	
 map MOC05 "The Waste Tunnels"
@@ -5354,6 +5943,8 @@ map MOC05 "The Waste Tunnels"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_doom
+	nocrouch
+	nojump
 	}
 	
 map MOC06 "The Crusher"
@@ -5364,6 +5955,8 @@ map MOC06 "The Crusher"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_the_da
+	nocrouch
+	nojump
 	}
 	
 map MOC07 "Dead Simple"
@@ -5375,6 +5968,8 @@ map MOC07 "Dead Simple"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn	
+	nocrouch
+	nojump
 	}
 	
 map MOC08 "Tricks and Traps"
@@ -5384,7 +5979,9 @@ map MOC08 "Tricks and Traps"
 	titlepatch = CWILV07
 	enterpic = INTERPIC
 	exitpic = INTERPIC
-	music = d_ddtblu	
+	music = d_ddtblu
+	nocrouch
+	nojump
 	}
 	
 map MOC09 "The Pit"
@@ -5394,7 +5991,9 @@ map MOC09 "The Pit"
 	titlepatch = CWILV08
 	enterpic = INTERPIC
 	exitpic = INTERPIC
-	music = d_in_cit	
+	music = d_in_cit
+	nocrouch
+	nojump
 	}
 	
 map MOC10 "Refueling Base"
@@ -5405,6 +6004,8 @@ map MOC10 "Refueling Base"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_dead	
+	nocrouch
+	nojump
 	}
 	
 map MOC11 "Circle of Death"
@@ -5415,6 +6016,8 @@ map MOC11 "Circle of Death"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stlks2
+	nocrouch
+	nojump
 	}
 	
 map MOC12 "The Factory"
@@ -5425,6 +6028,8 @@ map MOC12 "The Factory"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_theda2
+	nocrouch
+	nojump
 	}
 	
 map MOC13 "The Factory"
@@ -5435,6 +6040,8 @@ map MOC13 "The Factory"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_doom2
+	nocrouch
+	nojump
 	}
 	
 map MOC14 "Downtown"
@@ -5445,6 +6052,8 @@ map MOC14 "Downtown"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ddtbl2
+	nocrouch
+	nojump
 	}
 	
 map MOC15 "Industrial Zone"
@@ -5456,6 +6065,8 @@ map MOC15 "Industrial Zone"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_runni2
+	nocrouch
+	nojump
 	}
 	
 map MOC16 "Suburbs"
@@ -5466,6 +6077,8 @@ map MOC16 "Suburbs"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_dead2
+	nocrouch
+	nojump
 	}
 	
 map MOC17 "Tenements"
@@ -5476,6 +6089,8 @@ map MOC17 "Tenements"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stlks3
+	nocrouch
+	nojump
 	}
 	
 map MOC18 "The Courtyard"
@@ -5486,6 +6101,8 @@ map MOC18 "The Courtyard"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_romero
+	nocrouch
+	nojump
 	}
 	
 map MOC19 "The Citadel"
@@ -5496,6 +6113,8 @@ map MOC19 "The Citadel"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn2
+	nocrouch
+	nojump
 	}
 	
 map MOC20 "Gotcha!"
@@ -5506,6 +6125,8 @@ map MOC20 "Gotcha!"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_messag
+	nocrouch
+	nojump
 	}
 	
 map MOC21 "Nirvana"
@@ -5516,6 +6137,8 @@ map MOC21 "Nirvana"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_count2
+	nocrouch
+	nojump
 	}
 	
 map MOC22 "The Catacombs"
@@ -5526,6 +6149,8 @@ map MOC22 "The Catacombs"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ddtbl3
+	nocrouch
+	nojump
 	}
 	
 map MOC23 "Barrels o' Fun"
@@ -5536,6 +6161,8 @@ map MOC23 "Barrels o' Fun"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ampie
+	nocrouch
+	nojump
 	}
 	
 map MOC24 "The Chasm"
@@ -5546,6 +6173,8 @@ map MOC24 "The Chasm"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_theda3
+	nocrouch
+	nojump
 	}
 	
 map MOC25 "Bloodfalls"
@@ -5556,6 +6185,8 @@ map MOC25 "Bloodfalls"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_adrian
+	nocrouch
+	nojump
 	}
 	
 map MOC26 "The Abandoned Mines"
@@ -5566,6 +6197,8 @@ map MOC26 "The Abandoned Mines"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_messg2
+	nocrouch
+	nojump
 	}
 	
 map MOC27 "Monster Condo"
@@ -5576,6 +6209,8 @@ map MOC27 "Monster Condo"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_romer2
+	nocrouch
+	nojump
 	}
 	
 map MOC28 "The Spirit World"
@@ -5586,6 +6221,8 @@ map MOC28 "The Spirit World"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_tense
+	nocrouch
+	nojump
 	}
 	
 map MOC29 "The Living End"
@@ -5596,6 +6233,8 @@ map MOC29 "The Living End"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn3
+	nocrouch
+	nojump
 	}
 	
 map MOC30 "Icon of Sin"
@@ -5606,6 +6245,8 @@ map MOC30 "Icon of Sin"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_openin
+	nocrouch
+	nojump
 	}
 	
 map MOC31 "Wolfenstein"
@@ -5617,6 +6258,8 @@ map MOC31 "Wolfenstein"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_evil
+	nocrouch
+	nojump
 	}
 	
 map MOC32 "Grosse"
@@ -5627,6 +6270,8 @@ map MOC32 "Grosse"
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ultima
+	nocrouch
+	nojump
 	}
 	
 // Sunder
@@ -5824,6 +6469,8 @@ map WID01 "Loading Bay"
 	sky1 = "SKY1"
 	par = 30
 	music = "D_RUNNIN"
+	nocrouch
+	nojump
 }
 
 map WID02 "The Compound"
@@ -5834,6 +6481,8 @@ map WID02 "The Compound"
 	sky1 = "SKY1"
 	par = 90
 	music = "D_STALKS"
+	nocrouch
+	nojump
 }
 
 map WID03 "Water Main"
@@ -5844,6 +6493,8 @@ map WID03 "Water Main"
 	sky1 = "SKY1"
 	par = 120
 	music = "D_COUNTD"
+	nocrouch
+	nojump
 }
 
 map WID04 "The Siltyards"
@@ -5854,6 +6505,8 @@ map WID04 "The Siltyards"
 	sky1 = "SKY1"
 	par = 120
 	music = "D_BETWEE"
+	nocrouch
+	nojump
 }
 
 map WID05 "The Boiler"
@@ -5864,6 +6517,8 @@ map WID05 "The Boiler"
 	sky1 = "SKY1"
 	par = 90
 	music = "D_DOOM"
+	nocrouch
+	nojump
 }
 
 map WID06 "The Gorge"
@@ -5874,6 +6529,8 @@ map WID06 "The Gorge"
 	sky1 = "SKY1"
 	par = 150
 	music = "D_THE_DA"
+	nocrouch
+	nojump
 }
 
 map WID07 "Counterpoint"
@@ -5885,6 +6542,8 @@ map WID07 "Counterpoint"
 	par = 120
 	map07special
 	music = "D_SHAWN"
+	nocrouch
+	nojump
 }
 
 map WID08 "Starstruct, Inc."
@@ -5895,6 +6554,8 @@ map WID08 "Starstruct, Inc."
 	sky1 = "SKY1"
 	par = 120
 	music = "D_DDTBLU"
+	nocrouch
+	nojump
 }
 
 map WID09 "The Gambit"
@@ -5905,6 +6566,8 @@ map WID09 "The Gambit"
 	sky1 = "SKY1"
 	par = 270
 	music = "D_IN_CIT"
+	nocrouch
+	nojump
 }
 
 map WID10 "Reservoirs"
@@ -5915,6 +6578,8 @@ map WID10 "Reservoirs"
 	sky1 = "SKY1"
 	par = 90
 	music = "D_DEAD"
+	nocrouch
+	nojump
 }
 
 map WID11 "The Garrison"
@@ -5925,6 +6590,8 @@ map WID11 "The Garrison"
 	sky1 = "SKY1"
 	par = 210
 	music = "D_STLKS2"
+	nocrouch
+	nojump
 }
 
 map WID12 "The Shipyard"
@@ -5935,6 +6602,8 @@ map WID12 "The Shipyard"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_THEDA2"
+	nocrouch
+	nojump
 }
 
 map WID13 "The Wharf"
@@ -5945,6 +6614,8 @@ map WID13 "The Wharf"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_DOOM2"
+	nocrouch
+	nojump
 }
 
 map WID14 "Flooded Library"
@@ -5955,6 +6626,8 @@ map WID14 "Flooded Library"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_DDTBL2"
+	nocrouch
+	nojump
 }
 
 map WID15 "The Causeway"
@@ -5965,6 +6638,8 @@ map WID15 "The Causeway"
 	sky1 = "SKY2"
 	par = 210
 	music = "D_2TWID3"
+	nocrouch
+	nojump
 }
 
 map WID16 "Cul-de-sac"
@@ -5975,6 +6650,8 @@ map WID16 "Cul-de-sac"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_DEAD2"
+	nocrouch
+	nojump
 }
 
 map WID17 "The Precinct"
@@ -5985,6 +6662,8 @@ map WID17 "The Precinct"
 	sky1 = "SKY2"
 	par = 420
 	music = "D_STLKS3"
+	nocrouch
+	nojump
 }
 
 map WID18 "The Sanctum"
@@ -5995,6 +6674,8 @@ map WID18 "The Sanctum"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_ROMERO"
+	nocrouch
+	nojump
 }
 
 map WID19 "Bedlam"
@@ -6005,6 +6686,8 @@ map WID19 "Bedlam"
 	sky1 = "SKY2"
 	par = 210
 	music = "D_SHAWN2"
+	nocrouch
+	nojump
 }
 
 map WID20 "Leap of Faith"
@@ -6015,6 +6698,8 @@ map WID20 "Leap of Faith"
 	sky1 = "SKY2"
 	par = 150
 	music = "D_MESSAG"
+	nocrouch
+	nojump
 }
 
 map WID21 "Passage to Exile"
@@ -6025,6 +6710,8 @@ map WID21 "Passage to Exile"
 	sky1 = "SKY3"
 	par = 240
 	music = "D_COUNT2"
+	nocrouch
+	nojump
 }
 
 map WID22 "Borderlands"
@@ -6035,6 +6722,8 @@ map WID22 "Borderlands"
 	sky1 = "SKY3"
 	par = 150
 	music = "D_DDTBL3"
+	nocrouch
+	nojump
 }
 
 map WID23 "The Crucible"
@@ -6045,6 +6734,8 @@ map WID23 "The Crucible"
 	sky1 = "SKY3"
 	par = 180
 	music = "D_AMPIE"
+	nocrouch
+	nojump
 }
 
 map WID24 "Crushed Spirits"
@@ -6055,6 +6746,8 @@ map WID24 "Crushed Spirits"
 	sky1 = "SKY3"
 	par = 150
 	music = "D_THEDA3"
+	nocrouch
+	nojump
 }
 
 map WID25 "Dead Sea"
@@ -6065,6 +6758,8 @@ map WID25 "Dead Sea"
 	sky1 = "SKY3"
 	par = 150
 	music = "D_ADRIAN"
+	nocrouch
+	nojump
 }
 
 map WID26 "Damned Strait!"
@@ -6075,6 +6770,8 @@ map WID26 "Damned Strait!"
 	sky1 = "SKY3"
 	par = 300
 	music = "D_MESSG2"
+	nocrouch
+	nojump
 }
 
 map WID27 "The Bloodwash"
@@ -6085,6 +6782,8 @@ map WID27 "The Bloodwash"
 	sky1 = "SKY3"
 	par = 330
 	music = "D_ROMER2"
+	nocrouch
+	nojump
 }
 
 map WID28 "Abyss"
@@ -6095,6 +6794,8 @@ map WID28 "Abyss"
 	sky1 = "SKY3"
 	par = 420
 	music = "D_TENSE"
+	nocrouch
+	nojump
 }
 
 map WID29 "The Mortal Coil"
@@ -6105,6 +6806,8 @@ map WID29 "The Mortal Coil"
 	sky1 = "SKY3"
 	par = 300
 	music = "D_SHAWN3"
+	nocrouch
+	nojump
 }
 
 map WID30 "Hell on Earth"
@@ -6116,6 +6819,8 @@ map WID30 "Hell on Earth"
 	par = 180
 	allowmonstertelefrags
 	music = "D_OPENIN"
+	nocrouch
+	nojump
 }
 
 map WID31 "Vorticon"
@@ -6126,6 +6831,8 @@ map WID31 "Vorticon"
 	sky1 = "SKY3"
 	par = 120
 	music = "D_2TWID1"
+	nocrouch
+	nojump
 }
 
 map WID32 "Well of Wishes"
@@ -6136,6 +6843,8 @@ map WID32 "Well of Wishes"
 	sky1 = "SKY3"
 	par = 30
 	music = "D_2TWID2"
+	nocrouch
+	nojump
 }
 
 map WID33 "Hexsoil"
@@ -6146,6 +6855,8 @@ map WID33 "Hexsoil"
 	sky1 = "SKY3"
 	par = 420
 	music = "D_READ_M"
+	nocrouch
+	nojump
 }
 
 // Drown in blood

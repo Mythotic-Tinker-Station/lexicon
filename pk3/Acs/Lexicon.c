@@ -5,13 +5,8 @@
 strict namespace
 {
     #if 1
-        // mess with this all you want
-        #define TIME_START 5    // in ticks, 35 = 1 second; 15*35 = 15 seconds, ect
-        #define TIME_YELLOW 15   // the time at which the timer goes yellow
-        #define TIME_ORANGE 10   // same as above, just orange
-        #define TIME_RED 5       // red
-
         // dont touch this
+        #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1
         #define STATE_CHECKTIE 2
@@ -68,8 +63,8 @@ strict namespace
     int votessorted[64][2];             // all the votes, sorted
     int votecount = 0;                  // amount of votes made
 
-    int time_ticks = TIME_START*35;     // the time left in ticks
-    int time_seconds = TIME_START;      // the time left in seconds
+    int time_ticks = 0;     // the time left in ticks
+    int time_seconds = 0;      // the time left in seconds
 
     int players[64];                    // all the player info
 
@@ -78,7 +73,7 @@ strict namespace
     fixed hud_width_half;               // the position of the center of the screen on the x axis
     fixed hud_height_half;              // the position of the center of the screen on the y axis
 
-    int state;                          // state of the voting system
+    int state = STATE_INIT;             // state of the voting system
     int state_clock;                    // custom timer
 
     global bool 0:godmode;
@@ -181,6 +176,7 @@ strict namespace
         {
             switch(state)
             {
+                case STATE_INIT:        state_init();           break;
                 case STATE_VOTEWAIT:    state_waitforvote();    break;
                 case STATE_COUNTDOWN:   state_countdown();      break;
                 case STATE_CHECKTIE:    state_checktie();       break;
@@ -237,19 +233,19 @@ strict namespace
                     setfont("HUDFONT");
 
                     // timer
-                    if(time_seconds > TIME_YELLOW)
+                    if(time_seconds > GetCvar("lexicon_timer_yellow"))
                     {
                         hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                     }
-                    else if(time_seconds <= TIME_YELLOW && time_seconds > TIME_ORANGE)
+                    else if(time_seconds <= GetCvar("lexicon_timer_yellow") && time_seconds > GetCvar("lexicon_timer_orange"))
                     {
                         hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                     }
-                    else if(time_seconds <= TIME_ORANGE && time_seconds > TIME_RED)
+                    else if(time_seconds <= GetCvar("lexicon_timer_orange") && time_seconds > GetCvar("lexicon_timer_red"))
                     {
                         hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                     }
-                    else if(time_seconds <= TIME_RED)
+                    else if(time_seconds <= GetCvar("lexicon_timer_red"))
                     {
                         hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
                     }
@@ -534,7 +530,18 @@ strict namespace
 
 
 
+    function void state_init(void)
+    {
 
+        time_ticks = GetCvar("lexicon_timer_start")*35;
+        time_seconds = time_ticks/35;
+        
+        // set the system to the countdown state
+        state = STATE_VOTEWAIT;
+
+        // sync clients
+        ACS_ExecuteAlways(570, 0, state);
+    }
 
     function void state_waitforvote(void)
     {
@@ -568,7 +575,7 @@ strict namespace
         if(votecount <= 0)
         {
             // reset timer
-            time_ticks = TIME_START*35;
+            time_ticks = GetCvar("lexicon_timer_start")*35;
 
             // go back to the wait state
             state = STATE_VOTEWAIT;

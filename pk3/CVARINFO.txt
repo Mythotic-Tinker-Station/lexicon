@@ -1,1 +1,5 @@
 server int lexicon_debug_mode = 0;
+server int lexicon_timer_start = 30;
+server int lexicon_timer_yellow = 15;
+server int lexicon_timer_orange = 10;
+server int lexicon_timer_red = 5;

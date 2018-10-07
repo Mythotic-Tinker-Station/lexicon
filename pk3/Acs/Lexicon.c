@@ -95,7 +95,7 @@ strict namespace
 
         setfont("hudfont");
         // mapset/mapname/creds
-        Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.6, hud_height - 225.0, 5.0, 1.0, 1.0);
+        Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
 
 
         while(1)

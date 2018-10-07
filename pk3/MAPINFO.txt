@@ -16,7 +16,6 @@ map HUB "Inside the Lexicon"
 	{
 	music = "HUBMUS"
 	levelnum = 99
-    NoIntermission
 	}
 
 //Hell Revealed 1
@@ -5891,7 +5890,7 @@ map MOC01 "Entryway"
 	{
 	next = "MOC02"
 	sky1 = RSKY1
-	titlepatch = CWILV00
+	titlepatch = CLILV00
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_runnin
@@ -5903,7 +5902,7 @@ map MOC02 "Underhalls"
 	{
 	next = "MOC03"
 	sky1 = RSKY1
-	titlepatch = CWILV01
+	titlepatch = CLILV01
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stalks
@@ -5915,7 +5914,7 @@ map MOC03 "The Gantlet"
 	{
 	next = "MOC04"
 	sky1 = RSKY1
-	titlepatch = CWILV02
+	titlepatch = CLILV02
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_countd
@@ -5927,7 +5926,7 @@ map MOC04 "The Focus"
 	{
 	next = "MOC05"
 	sky1 = RSKY1
-	titlepatch = CWILV03
+	titlepatch = CLILV03
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_betwee
@@ -5939,7 +5938,7 @@ map MOC05 "The Waste Tunnels"
 	{
 	next = "MOC06"
 	sky1 = RSKY1
-	titlepatch = CWILV04
+	titlepatch = CLILV04
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_doom
@@ -5951,7 +5950,7 @@ map MOC06 "The Crusher"
 	{
 	next = "MOC07"
 	sky1 = RSKY1
-	titlepatch = CWILV05
+	titlepatch = CLILV05
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_the_da
@@ -5964,7 +5963,7 @@ map MOC07 "Dead Simple"
 	next = "MOC08"
 	map07special
 	sky1 = RSKY1
-	titlepatch = CWILV06
+	titlepatch = CLILV06
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn	
@@ -5976,7 +5975,7 @@ map MOC08 "Tricks and Traps"
 	{
 	next = "MOC09"
 	sky1 = RSKY1
-	titlepatch = CWILV07
+	titlepatch = CLILV07
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ddtblu
@@ -5988,7 +5987,7 @@ map MOC09 "The Pit"
 	{
 	next = "MOC10"
 	sky1 = RSKY1
-	titlepatch = CWILV08
+	titlepatch = CLILV08
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_in_cit
@@ -6000,7 +5999,7 @@ map MOC10 "Refueling Base"
 	{
 	next = "MOC11"
 	sky1 = RSKY1
-	titlepatch = CWILV09
+	titlepatch = CLILV09
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_dead	
@@ -6012,7 +6011,7 @@ map MOC11 "Circle of Death"
 	{
 	next = "MOC12"
 	sky1 = RSKY1
-	titlepatch = CWILV10
+	titlepatch = CLILV10
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stlks2
@@ -6024,7 +6023,7 @@ map MOC12 "The Factory"
 	{
 	next = "MOC13"
 	sky1 = RSKY2
-	titlepatch = CWILV11
+	titlepatch = CLILV11
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_theda2
@@ -6036,7 +6035,7 @@ map MOC13 "The Factory"
 	{
 	next = "MOC14"
 	sky1 = RSKY2
-	titlepatch = CWILV12
+	titlepatch = CLILV12
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_doom2
@@ -6048,7 +6047,7 @@ map MOC14 "Downtown"
 	{
 	next = "MOC15"
 	sky1 = RSKY2
-	titlepatch = CWILV13
+	titlepatch = CLILV13
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ddtbl2
@@ -6061,7 +6060,7 @@ map MOC15 "Industrial Zone"
 	next = "MOC16"
 	secretnext = "MOC31"
 	sky1 = RSKY2
-	titlepatch = CWILV14
+	titlepatch = CLILV14
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_runni2
@@ -6073,7 +6072,7 @@ map MOC16 "Suburbs"
 	{
 	next = "MOC17"
 	sky1 = RSKY2
-	titlepatch = CWILV15
+	titlepatch = CLILV15
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_dead2
@@ -6085,7 +6084,7 @@ map MOC17 "Tenements"
 	{
 	next = "MOC18"
 	sky1 = RSKY2
-	titlepatch = CWILV16
+	titlepatch = CLILV16
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_stlks3
@@ -6097,7 +6096,7 @@ map MOC18 "The Courtyard"
 	{
 	next = "MOC19"
 	sky1 = RSKY2
-	titlepatch = CWILV17
+	titlepatch = CLILV17
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_romero
@@ -6109,7 +6108,7 @@ map MOC19 "The Citadel"
 	{
 	next = "MOC20"
 	sky1 = RSKY2
-	titlepatch = CWILV18
+	titlepatch = CLILV18
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn2
@@ -6121,7 +6120,7 @@ map MOC20 "Gotcha!"
 	{
 	next = "MOC21"
 	sky1 = RSKY3
-	titlepatch = CWILV19
+	titlepatch = CLILV19
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_messag
@@ -6133,7 +6132,7 @@ map MOC21 "Nirvana"
 	{
 	next = "MOC22"
 	sky1 = RSKY3
-	titlepatch = CWILV20
+	titlepatch = CLILV20
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_count2
@@ -6145,7 +6144,7 @@ map MOC22 "The Catacombs"
 	{
 	next = "MOC23"
 	sky1 = RSKY3
-	titlepatch = CWILV21
+	titlepatch = CLILV21
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ddtbl3
@@ -6157,7 +6156,7 @@ map MOC23 "Barrels o' Fun"
 	{
 	next = "MOC24"
 	sky1 = RSKY3
-	titlepatch = CWILV22
+	titlepatch = CLILV22
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ampie
@@ -6169,7 +6168,7 @@ map MOC24 "The Chasm"
 	{
 	next = "MOC25"
 	sky1 = RSKY3
-	titlepatch = CWILV23
+	titlepatch = CLILV23
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_theda3
@@ -6181,7 +6180,7 @@ map MOC25 "Bloodfalls"
 	{
 	next = "MOC26"
 	sky1 = RSKY3
-	titlepatch = CWILV24
+	titlepatch = CLILV24
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_adrian
@@ -6193,7 +6192,7 @@ map MOC26 "The Abandoned Mines"
 	{
 	next = "MOC27"
 	sky1 = RSKY3
-	titlepatch = CWILV25
+	titlepatch = CLILV25
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_messg2
@@ -6205,7 +6204,7 @@ map MOC27 "Monster Condo"
 	{
 	next = "MOC28"
 	sky1 = RSKY3
-	titlepatch = CWILV26
+	titlepatch = CLILV26
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_romer2
@@ -6217,7 +6216,7 @@ map MOC28 "The Spirit World"
 	{
 	next = "MOC29"
 	sky1 = RSKY3
-	titlepatch = CWILV27
+	titlepatch = CLILV27
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_tense
@@ -6229,7 +6228,7 @@ map MOC29 "The Living End"
 	{
 	next = "MOC30"
 	sky1 = RSKY3
-	titlepatch = CWILV28
+	titlepatch = CLILV28
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_shawn3
@@ -6241,7 +6240,7 @@ map MOC30 "Icon of Sin"
 	{
 	next = "HUB"
 	sky1 = RSKY3
-	titlepatch = CWILV29
+	titlepatch = CLILV29
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_openin
@@ -6254,7 +6253,7 @@ map MOC31 "Wolfenstein"
 	next = "MOC16"
 	secretnext = "MOC32"
 	sky1 = RSKY3
-	titlepatch = CWILV30
+	titlepatch = CLILV30
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_evil
@@ -6266,7 +6265,7 @@ map MOC32 "Grosse"
 	{
 	next = "MOC16"
 	sky1 = RSKY3
-	titlepatch = CWILV31
+	titlepatch = CLILV31
 	enterpic = INTERPIC
 	exitpic = INTERPIC
 	music = d_ultima
@@ -8315,4 +8314,485 @@ nojump
 enterpic = "GDINT"
 exitpic = "GDINT"
 intermusic = "D_GDINT"
+}
+
+//Dark Encounters
+
+map DKE01 "level 1: the unafraid"
+{
+	titlepatch = "DKELV00"
+	next = "DKE02"
+	secretnext = "DKE02"
+	sky1 = "SKY6 - 5"
+	cluster = 5
+	music = "D_DKE01"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE02 "level 2: poison the wells"
+{
+	titlepatch = "DKELV01"
+	next = "DKE03"
+	secretnext = "DKE03"
+	sky1 = "SKY6 - 5"
+	cluster = 5
+	music = "D_DKE02"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE03 "level 3: metal meets flesh"
+{
+	titlepatch = "DKELV02"
+	next = "DKE04"
+	secretnext = "DKE04"
+	sky1 = "SKYBOX10"
+	cluster = 5
+	music = "D_DKE03"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE04 "level 4: cast off skin"
+{
+	titlepatch = "DKELV03"
+	next = "DKE05"
+	secretnext = "DKE05"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE04"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE05 "level 5: the uninvited"
+{
+	titlepatch = "DKELV04"
+	next = "DKE06"
+	secretnext = "DKE06"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE05"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE06 "level 6: procession of flames"
+{
+	titlepatch = "DKELV05"
+	next = "DKE07"
+	secretnext = "DKE07"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE06"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE07 "level 7: black powder corpse"
+{
+	titlepatch = "DKELV06"
+	next = "DKE08"
+	secretnext = "DKE08"
+	sky1 = "SKYBOX7"
+	cluster = 6
+	map07special
+	music = "D_DKE07"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE08 "level 8: to kill the blind"
+{
+	titlepatch = "DKELV07"
+	next = "DKE09"
+	secretnext = "DKE09"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE08"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE09 "level 9: shejeema's claw"
+{
+	titlepatch = "DKELV08"
+	next = "DKE10"
+	secretnext = "DKE10"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE09"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE10 "level 10: the unloved"
+{
+	titlepatch = "DKELV09"
+	next = "DKE11"
+	secretnext = "DKE11"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE10"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE11 "level 11: dead bolt"
+{
+	titlepatch = "DKELV10"
+	next = "DKE12"
+	secretnext = "DKE12"
+	sky1 = "SKY1 - 5"
+	cluster = 6
+	music = "D_DKE11"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE12 "level 12: gema's deception"
+{
+	titlepatch = "DKELV11"
+	next = "DKE13"
+	secretnext = "DKE13"
+	sky1 = "SKY5 - 5"
+	cluster = 7
+	music = "D_DKE12"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE13 "level 13: in the arms of mama pus"
+{
+	titlepatch = "DKELV12"
+	next = "DKE14"
+	secretnext = "DKE14"
+	sky1 = "SKY5 - 5"
+	cluster = 7
+	music = "D_DKE13"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE14 "level 14: the path unseen"
+{
+	titlepatch = "DKELV13"
+	next = "DKE15"
+	secretnext = "DKE15"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE14"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE15 "level 15: seed of doubt"
+{
+	titlepatch = "DKELV14"
+	next = "DKE16"
+	secretnext = "DKE31"
+	sky1 = "SKYBOX9"
+	cluster = 7
+	music = "D_DKE15"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE16 "level 16: failed evolution"
+{
+	titlepatch = "DKELV15"
+	next = "DKE17"
+	secretnext = "DKE17"
+	sky1 = "SKY33"
+	cluster = 7
+	music = "D_DKE16"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE17 "level 17: blank stare"
+{
+	titlepatch = "DKELV16"
+	next = "DKE18"
+	secretnext = "DKE18"
+	sky1 = "SKY33"
+	cluster = 7
+	music = "D_DKE17"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE18 "level 18: grand grotesque"
+{
+	titlepatch = "DKELV17"
+	next = "DKE19"
+	secretnext = "DKE19"
+	sky1 = "SKY3"
+	cluster = 7
+	music = "D_DKE108"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE19 "level 19: almost human"
+{
+	titlepatch = "DKELV18"
+	next = "DKE20"
+	secretnext = "DKE20"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE19"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE20 "level 20: the hum of death"
+{
+	titlepatch = "DKELV19"
+	next = "DKE21"
+	secretnext = "DKE21"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE20"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE21 "level 21: creatures of the worst kind"
+{
+	titlepatch = "DKELV20"
+	next = "DKE22"
+	secretnext = "DKE22"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE21"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE22 "level 22: darkest eve"
+{
+	titlepatch = "DKELV21"
+	next = "DKE23"
+	secretnext = "DKE23"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE22"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE23 "level 23: satan's promise"
+{
+	titlepatch = "DKELV22"
+	next = "DKE24"
+	secretnext = "DKE24"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE23"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE24 "level 24: particles of pan"
+{
+	titlepatch = "DKELV23"
+	next = "DKE25"
+	secretnext = "DKE25"
+	sky1 = "SKY5"
+	cluster = 8
+	music = "D_DKE24"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE25 "level 25: dead theory"
+{
+	titlepatch = "DKELV24"
+	next = "DKE26"
+	secretnext = "DKE26"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE25"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE26 "level 26: a madman's mathematics"
+{
+	titlepatch = "DKELV25"
+	next = "DKE27"
+	secretnext = "DKE27"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE26"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE27 "level 27: still dead"
+{
+	titlepatch = "DKELV26"
+	next = "DKE28"
+	secretnext = "DKE28"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE27"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE28 "level 28: grand universe"
+{
+	titlepatch = "DKELV27"
+	next = "DKE29"
+	secretnext = "DKE29"
+	sky1 = "SKY7 - 5"
+	cluster = 8
+	music = "D_DKE28"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE29 "level 29: infected dimensions"
+{
+	titlepatch = "DKELV28"
+	next = "DKE30"
+	secretnext = "DKE30"
+	sky1 = "SKY38"
+	cluster = 8
+	music = "D_DKE29"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE30 "level 30: victory conditions"
+{
+	titlepatch = "DKELV29"
+	sky1 = "SKY7 - 5"
+	cluster = 8
+	music = "D_OPENIN"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE31 "level 31: hidden citadel"
+{
+	titlepatch = "DKELV30"
+	next = "DKE16"
+	secretnext = "DKE32"
+	sky1 = "SKYBOX10"
+	cluster = 9
+	music = "D_EVIL"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+}
+
+map DKE32 "level 32: the black tower"
+{
+	titlepatch = "DKELV31"
+	next = "DKE16"
+	secretnext = "DKE16"
+	sky1 = "SKYBOX10"
+	cluster = 10
+	music = "D_ULTIMA"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
 }

@@ -7927,3 +7927,296 @@ sky1 = "ESTSKY1"
 nocrouch
 nojump
 }
+
+//Going Down???
+
+map GD01 "Going Up"
+{
+next = "GD02"
+music = "D_GD01"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD02 "Evil Admin"
+{
+next = "GD03"
+music = "D_GD02"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD03 "Crawl Space"
+{
+next = "GD04"
+music = "D_GD03"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD04 "Blood And Rockets"
+{
+next = "GD05"
+music = "D_GD04"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD05 "Time Warp"
+{
+next = "GD06"
+music = "D_GD05"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD06 "Pain Frame"
+{
+next = "GD07"
+music = "D_GD06"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD07 "Bad Reception"
+{
+next = "GD08"
+music = "D_GD007"
+sky1 = "GDSKY1"
+map07special
+nocrouch
+nojump
+}
+
+map GD08 "Hide and Seek"
+{
+next = "GD09"
+music = "D_GD08"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD09 "Broken Records"
+{
+next = "GD10"
+music = "D_GD09"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD10 "Trip Switch"
+{
+next = "GD11"
+music = "D_GD10"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD11 "ViVi Section"
+{
+next = "GD12"
+music = "D_GD11"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD12 "Dead End"
+{
+next = "GD13"
+music = "D_GD12"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD13 "Deep Trouble"
+{
+next = "GD14"
+music = "D_GD13"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD14 "Secrets And Lies"
+{
+next = "GD15"
+music = "D_GD14"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD15 "Gladiator"
+{
+next = "GD16"
+music = "D_GD15"
+sky1 = "GDSKY1"
+secretnext = "GD31"
+nocrouch
+nojump
+}
+
+map GD16 "Black Mass"
+{
+next = "GD17"
+music = "D_GD16"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD17 "Rest In Pieces"
+{
+next = "GD18"
+music = "D_GD17"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD18 "Burried Alive"
+{
+next = "GD19"
+music = "D_GD18"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD19 "200 Mega Hurts"
+{
+next = "GD20"
+music = "D_GD19"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD20 "The Mouth Of Madness"
+{
+next = "GD21"
+music = "D_GD20"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD21 "Indigestion"
+{
+next = "GD22"
+music = "D_GD21"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD22 "Constipation Station"
+{
+next = "GD23"
+music = "D_GD22"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD23 "Demonology"
+{
+next = "GD24"
+music = "D_GD23"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD24 "Bridge Of Blood"
+{
+next = "GD25"
+music = "D_GD24"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD25 "Forbidden Fruit"
+{
+next = "GD26"
+music = "D_GD25"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD26 "Insanity"
+{
+next = "GD27"
+music = "D_GD26"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD27 "Hard Cover"
+{
+next = "GD28"
+music = "D_GD27"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD28 "Necropolis"
+{
+next = "GD29"
+music = "D_GD28"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD29 "Demolition"
+{
+next = "GD30"
+music = "D_GD29"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD30 "Game Over"
+{
+music = "D_GD30"
+next = "HUB"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}
+
+map GD31 "Stair Crazy"
+{
+next = "GD16"
+music = "D_GD31"
+sky1 = "GDSKY1"
+secretnext = "GD32"
+nocrouch
+nojump
+}
+
+map GD32 "Roof Rage"
+{
+next = "GD16"
+music = "D_GD32"
+sky1 = "GDSKY1"
+nocrouch
+nojump
+}

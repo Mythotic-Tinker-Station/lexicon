@@ -263,8 +263,12 @@ strict namespace
                         }
                     }
 
-                    // player's vote
-                    hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
+                    // if the player has a vote
+                    if(players[playernumber()] != 0)
+                    {
+                        // show player's vote
+                        hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
+                    }
                 }
 
                 // system is in the end results state

@@ -59,6 +59,7 @@ strict namespace
 		{ "Doom 2 The Way ID Did",	"WID01" }, // 21
 		{ "Drown in Blood",			"DIB01"	}, // 22 Slaughter Map
 		{ "Swift Death",			"SDE01" }, // 23 Slaughter Map
+		{ "Estranged",				"EST01" }, // 24
     };
 
     int votes[64];                      // holds the votes

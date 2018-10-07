@@ -61,6 +61,7 @@ strict namespace
 		{ "Swift Death",			"SDE01" }, // 23 Slaughter Map
 		{ "Estranged",				"EST01" }, // 24
 		{ "Going Down",				"GD01"	}, // 25
+		{ "Dark Encounters",		"DKE01"	}, // 26
     };
 
     int votes[64];                      // holds the votes

@@ -60,6 +60,7 @@ strict namespace
 		{ "Drown in Blood",			"DIB01"	}, // 22 Slaughter Map
 		{ "Swift Death",			"SDE01" }, // 23 Slaughter Map
 		{ "Estranged",				"EST01" }, // 24
+		{ "Going Down",				"GD01"	}, // 25
     };
 
     int votes[64];                      // holds the votes

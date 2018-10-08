@@ -155,23 +155,25 @@ strict namespace
     
         Thing_ChangeTID(0, playernumber()+1337);
 
-
-        // mapset/mapname/creds
-        HudSetup(0, 0);
-        setfont("hudfont");
-        Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
-
-
         // this entire file should of been in the map script, oh well
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }       // this entire file should of been in the map script, oh well
-        int pnum = playernumber();
-        players[pnum] = -1;
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            int pnum = playernumber();
+            players[pnum] = -1;
 
-        // sync the joining player's vars
-        bubble_sort();
-        ACS_Execute(568, 0, votechosen);
-        ACS_Execute(569, 0, time_seconds);
-        ACS_ExecuteAlways(570, 0, state);
+            // sync the joining player's vars
+            bubble_sort();
+            ACS_Execute(568, 0, votechosen);
+            ACS_Execute(569, 0, time_seconds);
+            ACS_ExecuteAlways(570, 0, state);
+        }
+        else
+        {
+            // mapset/mapname/creds
+            HudSetup(0, 0);
+            setfont("hudfont");
+            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+        }
     }
 
     // keeps track of votes and what to do with them

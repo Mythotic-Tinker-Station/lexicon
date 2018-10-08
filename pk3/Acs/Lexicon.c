@@ -81,17 +81,15 @@ strict namespace
     global bool 2:instakiller;
     global int  3:votechosen;            // the winner
 
+
+    
+
     // stuff that runs during any level
     script "Level" open
     {
         HudSetup(0, 0);
         bool levelstarted = false;
         int clock = 10;
-
-        setfont("hudfont");
-        // mapset/mapname/creds
-        Hudmessagebold(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
-
 
         while(1)
         {
@@ -154,9 +152,18 @@ strict namespace
     // when a player enters the game, set them to have no vote
     script "PlayerEnter" enter
     {
+    
         Thing_ChangeTID(0, playernumber()+1337);
 
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; } // this entire file should of been in the map script, oh well
+
+        // mapset/mapname/creds
+        HudSetup(0, 0);
+        setfont("hudfont");
+        Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+
+
+        // this entire file should of been in the map script, oh well
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { Terminate; }       // this entire file should of been in the map script, oh well
         int pnum = playernumber();
         players[pnum] = -1;
 

@@ -12,20 +12,7 @@ strict namespace
         #define STATE_CHECKTIE 2
         #define STATE_RESULTS 3
     #endif
-
-    struct obj_confetti
-    {
-        int x;
-        int y;
-        int velx;
-        int vely;
-        int animnum;
-        int confnum;
-        str image;
-    };
-    struct obj_confetti objs_confetti[128];
-
-
+    
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
     str votenames[64][2] =
     {
@@ -59,6 +46,18 @@ strict namespace
 		{ "Dark Encounters",		"DKE01"	}, // 26
     };
 
+    struct obj_confetti
+    {
+        int x;
+        int y;
+        int velx;
+        int vely;
+        int animnum;
+        int confnum;
+        str image;
+    };
+    struct obj_confetti objs_confetti[128];
+
     int votes[64];                      // holds the votes
     int votessorted[64][2];             // all the votes, sorted
     int votecount = 0;                  // amount of votes made
@@ -76,9 +75,8 @@ strict namespace
     int state = STATE_INIT;             // state of the voting system
     int state_clock;                    // custom timer
 
-    global bool 0:godmode;
-    global bool 1:killmonsters;
-    global bool 2:instakiller;
+    global int  0:godmode;
+    global int  1:instakiller;
     global int  3:votechosen;            // the winner
 
     // stuff that runs during any level
@@ -172,6 +170,9 @@ strict namespace
         // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
         
+        //////////////////////////
+        // Map Credits
+        //////////////////////////
         // do not show the credits stuff in the hub or the titlemap
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP) 
         {
@@ -189,6 +190,21 @@ strict namespace
             HudSetup(0, 0);
             setfont("hudfont");
             Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+        }
+        
+        // client side player script loop
+        while(1)
+        {
+            //////////////////////////
+            // Debug Mode
+            //////////////////////////
+            if(GetCVar("lexicon_debug_mode") == 1)
+            {
+                HudSetup(0, 0);
+                setfont("HUDFONT");
+                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:instakiller, s:" G:", i:godmode; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+            }
+            delay(1);
         }
     }
 
@@ -227,7 +243,7 @@ strict namespace
         // if we are on the hub map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 112.0, 10.0);
+            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 64.0, 10.0);
 
             // setup the confetti
             for(int c = 0; c < 64; c++)
@@ -328,81 +344,10 @@ strict namespace
                     }
                 }
 
-                // if debug mode is on
-                if(GetCVar("lexicon_debug_mode") == 1)
-                {
-                    setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
-
-                    if(instakiller)
-                    {
-                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1);
-                    }
-                    if(godmode)
-                    {
-                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1);
-                    }
-                    /*if(killmonsters)
-                    {
-                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1);
-                    }*/
-                }
 
                 delay(1);
             }
         }
-        // if we are on any other map
-        else
-        {
-            while(1)
-            {
-                // if debug mode is on
-                if(GetCVar("lexicon_debug_mode") == 1)
-                {
-                    setfont("HUDFONT");
-                    hudmessagebold(s:"\c[Gold]debug mode:"; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
-
-                    if(instakiller)
-                    {
-                        hudmessagebold(s:"\c[Red]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]I"; 0, 9601, 0, hud_width - 66.0, hud_height - 151.0, 0.1);
-                    }
-                    if(godmode)
-                    {
-                        hudmessagebold(s:"\c[Red]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]G"; 0, 9602, 0, hud_width - 50.0, hud_height - 151.0, 0.1);
-                    }
-                    /*if(killmonsters)
-                    {
-                        hudmessagebold(s:"\c[Red]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1);
-                    }
-                    else
-                    {
-                        hudmessagebold(s:"\c[Black]M"; 0, 9603, 0, hud_width - 34.0, hud_height - 151.0, 0.1);
-                    }*/
-                }
-                delay(1);
-            }
-        }
-
     }
 
     // called by players to manage their votes
@@ -473,17 +418,13 @@ strict namespace
         }
     }
 
-
-
-
     // debug mode
     script "DebugMode" open
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-            godmode = false;
-            killmonsters = false;
-            instakiller = false;
+            godmode = 0;
+            instakiller = 0;
         }
         if(godmode)
         {
@@ -491,10 +432,6 @@ strict namespace
             {
                 GiveActorInventory(1337+i, "Lexicon_GodMode", 1);
             }
-        }
-        if(killmonsters)
-        {
-            consolecommand("kill monsters");
         }
         if(instakiller)
         {
@@ -505,15 +442,34 @@ strict namespace
         }
     }
 
+
     script "DebugMode_Switch" (int id)
     {
         switch(id)
         {
-            case 0: godmode = !godmode; break;
-            case 1: killmonsters = !killmonsters; break;
-            case 2: instakiller = !instakiller; break;
+            case 0: 
+                if(godmode == 0) { godmode = 1; break; }
+                if(godmode == 1) { godmode = 0; break; }
+                break;
+            case 2: 
+                if(instakiller == 0) { instakiller = 1; break; }
+                if(instakiller == 1) { instakiller = 0; break; }
+                break;
         }
+        ACS_ExecuteAlways(572, 0, godmode);
+        ACS_ExecuteAlways(573, 0, instakiller);
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     // sync sorted votes to clients
     script 567 (int index, int votes, int id) clientside
@@ -540,17 +496,23 @@ strict namespace
         state = s;
     }
 
-
     // sync player choices
     script 571 (int pnum, int id) clientside
     {
         players[pnum] = id;
     }
 
-
-
-
-
+    // sync debug godmode
+    script 572 (int v) clientside
+    {
+        godmode = v;
+    }
+    
+    // sync debug instakiller
+    script 573 (int v) clientside
+    {
+        instakiller = v;
+    }
 
 
 

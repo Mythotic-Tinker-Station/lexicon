@@ -1,5 +1,6 @@
-server int lexicon_debug_mode = 0;
-server int lexicon_timer_start = 30;
-server int lexicon_timer_yellow = 15;
-server int lexicon_timer_orange = 10;
-server int lexicon_timer_red = 5;
+server int lexicon_debug_mode = 0;          // turns on debug mode
+server int lexicon_timer_start = 30;        // vote timer start
+server int lexicon_timer_yellow = 15;       // vote timer when it goes yellow
+server int lexicon_timer_orange = 10;       // vote timer when it goes orange
+server int lexicon_timer_red = 5;           // vote timer when it goes red
+server int lexicon_timer_reset = 10;        // lexicon reset timer(when no players are left in a level)

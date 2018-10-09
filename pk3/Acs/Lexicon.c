@@ -45,7 +45,31 @@ strict namespace
 		{ "Going Down",				"GD01"	}, // 25
 		{ "Dark Encounters",		"DKE01"	}, // 26
     };
+    /////////////////////
+    // vote manager
+    /////////////////////
+    int votes[64];                      // holds the votes
+    int votessorted[64][2];             // all the votes, sorted
+    int votecount = 0;                  // amount of votes made
 
+    int time_ticks = 0;                 // the time left in ticks
+    int time_seconds = 0;               // the time left in seconds
+
+    int players[64];                    // all the player info
+    
+    int state = STATE_INIT;             // state of the voting system
+    int state_clock;                    // custom timer
+
+    global int 2:votechosen;            // the winner
+    
+    /////////////////////
+    // hud
+    /////////////////////
+    fixed hud_width;                    // the position of the right of the screen
+    fixed hud_height;                   // the position of the bottom of the screen
+    fixed hud_width_half;               // the position of the center of the screen on the x axis
+    fixed hud_height_half;              // the position of the center of the screen on the y axis
+    
     struct obj_confetti
     {
         int x;
@@ -57,77 +81,39 @@ strict namespace
         str image;
     };
     struct obj_confetti objs_confetti[128];
-
-    int votes[64];                      // holds the votes
-    int votessorted[64][2];             // all the votes, sorted
-    int votecount = 0;                  // amount of votes made
-
-    int time_ticks = 0;     // the time left in ticks
-    int time_seconds = 0;      // the time left in seconds
-
-    int players[64];                    // all the player info
-
-    fixed hud_width;                    // the position of the right of the screen
-    fixed hud_height;                   // the position of the bottom of the screen
-    fixed hud_width_half;               // the position of the center of the screen on the x axis
-    fixed hud_height_half;              // the position of the center of the screen on the y axis
-
-    int state = STATE_INIT;             // state of the voting system
-    int state_clock;                    // custom timer
-
+    
+    /////////////////////
+    // level
+    /////////////////////
+    int levelstarted = 0;
+    int clock = 0;
+    int countstart = 0;
+    
+    /////////////////////
+    // debug
+    /////////////////////
     global int  0:godmode;
     global int  1:instakiller;
-    global int  3:votechosen;            // the winner
 
+    
     // stuff that runs during any level
     script "Level" open
     {
         HudSetup(0, 0);
-        bool levelstarted = false;
-        int clock = 10;
+        levelstarted = 0;
+        clock = GetCvar("lexicon_timer_reset");
 
         while(1)
         {
-            // if the level has started
-            if(levelstarted)
+            // if the level has started and the countdown is not started
+            if(levelstarted == 1 && countstart == 0)
             {
                 // if the playercount goes back to 0
                 if(playercount() == 0)
                 {
-
-                    // countdown
-                    clock--;
-                    
-                    setfont("hudfont");
-                    // timer
-                    // this should be clientsided, but since this only is called once a second, it should be fine
-                    if(clock > 7)
-                    {
-                        hudmessagebold(s:"\c[Green]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                    }
-                    else if(clock <= 7 && clock > 4)
-                    {
-                        hudmessagebold(s:"\c[Yellow]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                    }
-                    else if(clock <= 4 && clock > 1)
-                    {
-                        hudmessagebold(s:"\c[Orange]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                    }
-                    else if(clock <= 1 && clock >= 0)
-                    {
-                        hudmessagebold(s:"\c[Red]Going back to the lexicon in T Minus: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 3.0);
-                    }
-
-                     // when time is up
-                    if(clock < 0)
-                    {
-                        // go back to hub
-                        ChangeLevel("Hub", 0, 0, -1);
-                    }
-                    delay(34);
+                    countstart = 1;
                 }
             }
-
             // if nobody has joined yet
             else
             {
@@ -135,9 +121,27 @@ strict namespace
                 if(playercount() > 0)
                 {
                     //the level has been started
-                    levelstarted = true;
+                    levelstarted = 1;
+                    ACS_ExecuteAlways(573, 0, levelstarted);
                 }
             }
+            
+            // countdown has started
+            if(countstart == 1)
+            {
+                // countdown
+                clock--;
+                ACS_ExecuteAlways(574, 0, clock);
+                delay(34);
+                
+                 // when time is up
+                if(clock < 0)
+                {
+                    // go back to hub
+                    ChangeLevel("Hub", 0, 0, -1);
+                }
+            }
+            
             delay(1);
         }
     }
@@ -165,7 +169,7 @@ strict namespace
     }
 
     // when a player enters the game(client side)
-    script "CL_PlayerEnter" enter clientside
+    script "CL_Lexicon_Hud" enter clientside
     {
         // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
@@ -192,56 +196,10 @@ strict namespace
             Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
         }
         
-        // client side player script loop
-        while(1)
-        {
-            //////////////////////////
-            // Debug Mode
-            //////////////////////////
-            if(GetCVar("lexicon_debug_mode") == 1)
-            {
-                HudSetup(0, 0);
-                setfont("HUDFONT");
-                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:instakiller, s:" G:", i:godmode; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
-            }
-            delay(1);
-        }
-    }
-
-
-    // keeps track of votes and what to do with them
-    script "VoteManager" (void)
-    {
-        // loop
-        while(1)
-        {
-            switch(state)
-            {
-                case STATE_INIT:        state_init();           break;
-                case STATE_VOTEWAIT:    state_waitforvote();    break;
-                case STATE_COUNTDOWN:   state_countdown();      break;
-                case STATE_CHECKTIE:    state_checktie();       break;
-                case STATE_RESULTS:     state_results();        break;
-            }
-            delay(1);
-        }
-    }
-
-    // the hud
-    script "VoteHud" enter clientside
-    {
-
-        // prevent this script from running multiple times on each client, for each client
-        if(playernumber() != ConsolePlayerNumber()) { Terminate; }
-
-        // set up the hud's sizes based on the user's current screen res
-        HudSetup(0 ,0);
-
-        // welcome
-        setfont("hudfont");
-
-        // if we are on the hub map
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
+        //////////////////////////
+        // HUB HUD init
+        //////////////////////////
+        else
         {
             hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 64.0, 10.0);
 
@@ -264,14 +222,56 @@ strict namespace
                 objs_confetti[c].confnum = random(0, 17);
                 objs_confetti[c].animnum = random(0, 7);
             }
-
-            // loop
-            while(1)
+        }
+        
+        ///////////////
+        // The Loop
+        ///////////////
+        while(1)
+        {
+            HudSetup(0, 0);
+            setfont("HUDFONT");
+            
+            //////////////////////////
+            // Debug Mode
+            //////////////////////////
+            if(GetCVar("lexicon_debug_mode") == 1)
             {
-                // system is in the countdown state
+                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:instakiller, s:" G:", i:godmode; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+            }
+
+            //////////////////////////
+            // Level Reset
+            //////////////////////////
+            if(countstart == 1)
+            {
+                if(clock > 7)
+                {
+                    hudmessage(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                }
+                else if(clock <= 7 && clock > 4)
+                {
+                    hudmessage(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                }
+                else if(clock <= 4 && clock > 1)
+                {
+                    hudmessage(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
+                }
+                else if(clock <= 1 && clock >= 0)
+                {
+                    hudmessage(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 3.0);
+                }
+            }
+            
+            //////////////////////////
+            // HUB HUD
+            //////////////////////////
+            // if we are on the hub map
+            if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
+            {            
+                // COUNTDOWN
                 if(state == STATE_COUNTDOWN)
                 {
-                    setfont("HUDFONT");
 
                     // timer
                     if(time_seconds > GetCvar("lexicon_timer_yellow"))
@@ -312,8 +312,8 @@ strict namespace
                         hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
                     }
                 }
-
-                // system is in the end results state
+                
+                // RESULTS
                 else if(state == STATE_RESULTS)
                 {
                     setfont("hudfont");
@@ -343,10 +343,26 @@ strict namespace
                         hudmessagebold(s:"a"; 0, c+9800, 0, (fixed)(objs_confetti[c].x*65535), (fixed)(objs_confetti[c].y*65535), 0.1);
                     }
                 }
-
-
-                delay(1);
             }
+            delay(1);
+        }
+    }
+
+    // keeps track of votes and what to do with them
+    script "VoteManager" (void)
+    {
+        // loop
+        while(1)
+        {
+            switch(state)
+            {
+                case STATE_INIT:        state_init();           break;
+                case STATE_VOTEWAIT:    state_waitforvote();    break;
+                case STATE_COUNTDOWN:   state_countdown();      break;
+                case STATE_CHECKTIE:    state_checktie();       break;
+                case STATE_RESULTS:     state_results();        break;
+            }
+            delay(1);
         }
     }
 
@@ -514,9 +530,17 @@ strict namespace
         instakiller = v;
     }
 
+    // sync level reset clock
+    script 574 (int v) clientside
+    {
+        clock = v;
+    }
 
-
-
+    // sync level started var
+    script 575 (int v) clientside
+    {
+        countstart = v;
+    }
 
 
 

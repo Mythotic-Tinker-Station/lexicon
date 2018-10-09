@@ -81,9 +81,6 @@ strict namespace
     global bool 2:instakiller;
     global int  3:votechosen;            // the winner
 
-
-    
-
     // stuff that runs during any level
     script "Level" open
     {
@@ -149,8 +146,8 @@ strict namespace
 
 
 
-    // when a player enters the game, set them to have no vote
-    script "PlayerEnter" enter
+    // when a player enters the game(server side)
+    script "SV_PlayerEnter" enter
     {
     
         Thing_ChangeTID(0, playernumber()+1337);
@@ -167,14 +164,34 @@ strict namespace
             ACS_Execute(569, 0, time_seconds);
             ACS_ExecuteAlways(570, 0, state);
         }
-        else
+    }
+
+    // when a player enters the game(client side)
+    script "CL_PlayerEnter" enter clientside
+    {
+        // prevent this script from running multiple times on each client, for each client
+        if(playernumber() != ConsolePlayerNumber()) { Terminate; }
+        
+        // do not show the credits stuff in the hub or the titlemap
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP) 
         {
+            // get level credits
+            str credits = strparam(s:"C_", n:PRINTNAME_LEVEL);
+            credits = strparam(l:credits);
+            
+            // check if credits listing exists
+            if(strLeft(credits, 2) == "C_")
+            {
+                credits = "Unknown";
+            }
+
             // mapset/mapname/creds
             HudSetup(0, 0);
             setfont("hudfont");
-            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", l:strparam(s:"C_", n:PRINTNAME_LEVEL); HUDMSG_FADEINOUT, 9997, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
         }
     }
+
 
     // keeps track of votes and what to do with them
     script "VoteManager" (void)

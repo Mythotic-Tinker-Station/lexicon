@@ -17,7 +17,7 @@ strict namespace
     str votenames[64][2] =
     {
         // wad name                 // the map this vote will take players too
-        { "Alien Vendetta",         "AV01"  }, // 0
+        { "Doom 2",                 "MAP01"  }, // 0
         { "Combat Shock",           "CS01"  }, // 1 Slaughter Map
         { "Combat Shock 2",         "CS201" }, // 2 Slaughter Map
         { "Hell Revealed",          "HR01"  }, // 3
@@ -44,6 +44,7 @@ strict namespace
 		{ "Estranged",				"EST01" }, // 24
 		{ "Going Down",				"GD01"	}, // 25
 		{ "Dark Encounters",		"DKE01"	}, // 26
+        { "Alien Vendetta",         "AV01"  }, // 27
     };
     /////////////////////
     // vote manager
@@ -155,16 +156,14 @@ strict namespace
                         hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
                     }
                 }
-                delay(34);
-                
                  // when time is up
                 if(clock < 0)
                 {
                     // go back to hub
                     ChangeLevel("Hub", 0, 0, -1);
                 }
+                delay(34);
             }
-            
             delay(1);
         }
     }

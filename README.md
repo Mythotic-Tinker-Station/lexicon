@@ -31,6 +31,9 @@ So far, the mapsets included are:
 - Maps of Chaos
 - Drown in Blood
 - Swift Death
+- Going Down
+- Estranged
+- Dark Encounters
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

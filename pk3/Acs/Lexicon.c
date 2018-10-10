@@ -99,7 +99,8 @@ strict namespace
     // stuff that runs during any level
     script "Level" open
     {
-        HudSetup(0, 0);
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) { terminate; }
+        
         levelstarted = 0;
         clock = GetCvar("lexicon_timer_reset");
 
@@ -122,7 +123,6 @@ strict namespace
                 {
                     //the level has been started
                     levelstarted = 1;
-                    ACS_ExecuteAlways(573, 0, levelstarted);
                 }
             }
             
@@ -131,7 +131,30 @@ strict namespace
             {
                 // countdown
                 clock--;
-                ACS_ExecuteAlways(574, 0, clock);
+                if(countstart == 1)
+                {
+                    // these hudmessages were in the cl_lexicon_hud script
+                    // it had to be moved here as zandronum terminates player scripts when they spectate
+                    // resulting in these hudmessages not showing
+                    HudSetup(0, 0);
+                    SetFont("HUDFONT");
+                    if(clock > 7)
+                    {
+                        hudmessagebold(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
+                    else if(clock <= 7 && clock > 4)
+                    {
+                        hudmessagebold(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
+                    else if(clock <= 4 && clock > 1)
+                    {
+                        hudmessagebold(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
+                    else if(clock <= 1 && clock >= 0)
+                    {
+                        hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
+                }
                 delay(34);
                 
                  // when time is up
@@ -241,29 +264,6 @@ strict namespace
             }
 
             //////////////////////////
-            // Level Reset
-            //////////////////////////
-            if(countstart == 1)
-            {
-                if(clock > 7)
-                {
-                    hudmessage(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                }
-                else if(clock <= 7 && clock > 4)
-                {
-                    hudmessage(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                }
-                else if(clock <= 4 && clock > 1)
-                {
-                    hudmessage(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 2.0);
-                }
-                else if(clock <= 1 && clock >= 0)
-                {
-                    hudmessage(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 3.0);
-                }
-            }
-            
-            //////////////////////////
             // HUB HUD
             //////////////////////////
             // if we are on the hub map
@@ -272,7 +272,6 @@ strict namespace
                 // COUNTDOWN
                 if(state == STATE_COUNTDOWN)
                 {
-
                     // timer
                     if(time_seconds > GetCvar("lexicon_timer_yellow"))
                     {
@@ -530,17 +529,17 @@ strict namespace
         instakiller = v;
     }
 
-    // sync level reset clock
-    script 574 (int v) clientside
-    {
-        clock = v;
-    }
 
-    // sync level started var
-    script 575 (int v) clientside
-    {
-        countstart = v;
-    }
+
+
+
+
+
+
+
+
+
+
 
 
 

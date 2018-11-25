@@ -2346,7 +2346,7 @@ ACTOR TAT__DiscoImp : DoomImp
   PainChance 200
   Mass 100
   Translation "64:79=80:111"
-  PainSound "keen/pain"
+  PainSound "HHEN/pain"
   +NORADIUSDMG 
 states
   {
@@ -3441,7 +3441,7 @@ ACTOR TAT__AwesomeSphere : Health
   Inventory.Amount 1000
   Inventory.MaxAmount 99999
   Inventory.PickupMessage "Awesome!"
-  Inventory.PickupSound "keen/pain"
+  Inventory.PickupSound "HHEN/pain"
   Translation "128:135=224:231", "136:143=160:167", "144:151=96:103", "13:15=109:111"
   States
   {
@@ -3546,5 +3546,48 @@ Death:
 	GARG H 5 A_NoBlocking
 	GARG H -1
 	stop
+  }
+}
+
+///////////////////////
+////			   ////
+////   Hadephobia  ////
+////			   ////
+///////////////////////
+
+ACTOR HPCommanderKeen : CommanderKeen 25013 //72
+{
+  Health 100
+  Radius 16
+  Height 72
+  Mass 10000000
+  PainChance 256
+  +SOLID
+  +SPAWNCEILING
+  +NOGRAVITY
+  +SHOOTABLE
+  +COUNTKILL
+  +NOICEDEATH
+  +ISMONSTER
+  PainSound "keen/pain"
+  DeathSound "keen/death"
+  States
+  {
+  Spawn:
+    HHEN A -1
+    Loop
+  Death:
+    HHEN AB 6
+    HHEN C 6 A_Scream
+    HHEN DEFGH	6
+    HHEN I 6
+    HHEN J 6
+    HHEN K 6 A_KeenDie
+    HHEN L -1
+    Stop
+  Pain:
+    HHEN M 4
+    HHEN M 8 A_Pain
+    Goto Spawn
   }
 }

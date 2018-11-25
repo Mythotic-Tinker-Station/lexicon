@@ -8828,3 +8828,460 @@ map DKE32 "level 32: the black tower"
 	nojump
 	levelnum = 32
 }
+
+// Hadephobia
+
+map HP01 "Escape from the Asylum"
+	{
+	next = "HP02"
+	sky1 = HSKY1
+	titlepatch = HPILV00
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp01
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP02 "Storage Basement"
+	{
+	next = "HP03"
+	sky1 = HSKY1
+	titlepatch = HPILV01
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp02
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP03 "The Stench of Freedom"
+	{
+	next = "HP04"
+	sky1 = HSKY1
+	titlepatch = HPILV02
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp03
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP04 "Washed Up"
+	{
+	next = "HP05"
+	sky1 = HSKY1
+	titlepatch = HPILV03
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp04
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP05 "Rumex Crispus"
+	{
+	next = "HP06"
+	sky1 = HSKY1
+	titlepatch = HPILV04
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp05
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP06 "Hull Revealed"
+	{
+	next = "HP07"
+	sky1 = HSKY1
+	titlepatch = HPILV05
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp06
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP07 "Deadly Exploitation"
+	{
+	next = "HP08"
+	map07special
+	sky1 = HSKY1
+	titlepatch = HPILV06
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp07	
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP08 "Sub-Station"
+	{
+	next = "HP09"
+	sky1 = HSKY1
+	titlepatch = HPILV07
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp08
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP09 "Terminus"
+	{
+	next = "HP10"
+	sky1 = HSKY1
+	titlepatch = HPILV08
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_in_cit
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP10 "Excavation Site"
+	{
+	next = "HP11"
+	sky1 = HSKY1
+	titlepatch = HPILV09
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp10	
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP11 "Descent into Underworld"
+	{
+	next = "HP12"
+	sky1 = HSKY1
+	titlepatch = HPILV10
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp11
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP12 "Passover"
+	{
+	next = "HP13"
+	sky1 = HSKY2
+	titlepatch = HPILV11
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp12
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP13 "Metal Territory"
+	{
+	next = "HP14"
+	sky1 = HSKY2
+	titlepatch = HPILV12
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_doom2
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP14 "Power Up"
+	{
+	next = "HP15"
+	sky1 = HSKY2
+	titlepatch = HPILV13
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp14
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP15 "Septic Underbelly"
+	{
+	next = "HP16"
+	secretnext = "HP31"
+	sky1 = HSKY2
+	titlepatch = HPILV14
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp15
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP16 "Eisenhower Heliport"
+	{
+	next = "HP17"
+	sky1 = HSKY2
+	titlepatch = HPILV15
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp16
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP17 "Communication Tower"
+	{
+	next = "HP18"
+	sky1 = HSKY2
+	titlepatch = HPILV16
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp17
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP18 "Altar of Chaos"
+	{
+	next = "HP19"
+	sky1 = HSKY2
+	titlepatch = HPILV17
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp18
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP19 "Satan's Fortress"
+	{
+	next = "HP20"
+	sky1 = HSKY2
+	titlepatch = HPILV18
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_shawn2
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP20 "Ostoyae Anomaly"
+	{
+	next = "HP21"
+	sky1 = HSKY3
+	titlepatch = HPILV19
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp20
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP21 "Constriction"
+	{
+	next = "HP22"
+	sky1 = HSKY3
+	titlepatch = HPILV20
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp21
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP22 "Prime Mover"
+	{
+	next = "HP23"
+	sky1 = HSKY3
+	titlepatch = HPILV21
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp22
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP23 "Gloom Keep"
+	{
+	next = "HP24"
+	sky1 = HSKY3
+	titlepatch = HPILV22
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp23
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP24 "Lifeblood"
+	{
+	next = "HP25"
+	sky1 = HSKY3
+	titlepatch = HPILV23
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp24
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP25 "Sacrifice"
+	{
+	next = "HP26"
+	sky1 = HSKY3
+	titlepatch = HPILV24
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp25
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP26 "Pride of the Descent"
+	{
+	next = "HP27"
+	sky1 = HSKY3
+	titlepatch = HPILV25
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp26
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP27 "Drilling Station"
+	{
+	next = "HP28"
+	sky1 = HSKY3
+	titlepatch = HPILV26
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp27
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP28 "Teleportation Center"
+	{
+	next = "HP29"
+	sky1 = HSKY3
+	titlepatch = HPILV27
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp28
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP29 "Dead Planet"
+	{
+	next = "HP30"
+	sky1 = HSKY3
+	titlepatch = HPILV28
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp29
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP30 "Hadephobia"
+	{
+	next = "HP33"
+	sky1 = HSKY3
+	titlepatch = HPILV29
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_openin
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP31 "Hell's Armoury"
+	{
+	next = "HP16"
+	secretnext = "HP32"
+	sky1 = HSKY3
+	titlepatch = HPILV30
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp31
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP32 "Sirenum Scopuli"
+	{
+	next = "HP16"
+	sky1 = HSKY3
+	titlepatch = HPILV31
+	enterpic = HPINT
+	exitpic = HPINT
+	music = d_hp32
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP33 "Pre Destined Mortality"
+	{
+	next = "HP34"
+	sky1 = HSKY3
+	titlepatch = HPILV32
+	enterpic = HPINT
+	exitpic = HPINT
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP34 "Hadephrenia"
+	{
+	next = "HP35"
+	sky1 = HSKY3
+	titlepatch = HPILV33
+	enterpic = HPINT
+	exitpic = HPINT
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}
+	
+map HP35 "Scotch Bonnet"
+	{
+	next = "HUB"
+	sky1 = HSKY3
+	titlepatch = HPILV34
+	enterpic = HPINT
+	exitpic = HPINT
+	nocrouch
+	nojump
+	intermusic = D_HPINT
+	}

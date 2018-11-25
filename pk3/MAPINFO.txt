@@ -8831,9 +8831,9 @@ map DKE32 "level 32: the black tower"
 
 // Hadephobia
 
-map HP01 "Escape from the Asylum"
+map HPH01 "Escape from the Asylum"
 	{
-	next = "HP02"
+	next = "HPH02"
 	sky1 = HSKY1
 	titlepatch = HPILV00
 	enterpic = HPINT
@@ -8844,9 +8844,9 @@ map HP01 "Escape from the Asylum"
 	intermusic = D_HPINT
 	}
 	
-map HP02 "Storage Basement"
+map HPH02 "Storage Basement"
 	{
-	next = "HP03"
+	next = "HPH03"
 	sky1 = HSKY1
 	titlepatch = HPILV01
 	enterpic = HPINT
@@ -8857,9 +8857,9 @@ map HP02 "Storage Basement"
 	intermusic = D_HPINT
 	}
 	
-map HP03 "The Stench of Freedom"
+map HPH03 "The Stench of Freedom"
 	{
-	next = "HP04"
+	next = "HPH04"
 	sky1 = HSKY1
 	titlepatch = HPILV02
 	enterpic = HPINT
@@ -8870,9 +8870,9 @@ map HP03 "The Stench of Freedom"
 	intermusic = D_HPINT
 	}
 	
-map HP04 "Washed Up"
+map HPH04 "Washed Up"
 	{
-	next = "HP05"
+	next = "HPH05"
 	sky1 = HSKY1
 	titlepatch = HPILV03
 	enterpic = HPINT
@@ -8883,9 +8883,9 @@ map HP04 "Washed Up"
 	intermusic = D_HPINT
 	}
 	
-map HP05 "Rumex Crispus"
+map HPH05 "Rumex Crispus"
 	{
-	next = "HP06"
+	next = "HPH06"
 	sky1 = HSKY1
 	titlepatch = HPILV04
 	enterpic = HPINT
@@ -8896,9 +8896,9 @@ map HP05 "Rumex Crispus"
 	intermusic = D_HPINT
 	}
 	
-map HP06 "Hull Revealed"
+map HPH06 "Hull Revealed"
 	{
-	next = "HP07"
+	next = "HPH07"
 	sky1 = HSKY1
 	titlepatch = HPILV05
 	enterpic = HPINT
@@ -8909,9 +8909,9 @@ map HP06 "Hull Revealed"
 	intermusic = D_HPINT
 	}
 	
-map HP07 "Deadly Exploitation"
+map HPH07 "Deadly Exploitation"
 	{
-	next = "HP08"
+	next = "HPH08"
 	map07special
 	sky1 = HSKY1
 	titlepatch = HPILV06
@@ -8923,9 +8923,9 @@ map HP07 "Deadly Exploitation"
 	intermusic = D_HPINT
 	}
 	
-map HP08 "Sub-Station"
+map HPH08 "Sub-Station"
 	{
-	next = "HP09"
+	next = "HPH09"
 	sky1 = HSKY1
 	titlepatch = HPILV07
 	enterpic = HPINT
@@ -8936,9 +8936,9 @@ map HP08 "Sub-Station"
 	intermusic = D_HPINT
 	}
 	
-map HP09 "Terminus"
+map HPH09 "Terminus"
 	{
-	next = "HP10"
+	next = "HPH10"
 	sky1 = HSKY1
 	titlepatch = HPILV08
 	enterpic = HPINT
@@ -8949,9 +8949,9 @@ map HP09 "Terminus"
 	intermusic = D_HPINT
 	}
 	
-map HP10 "Excavation Site"
+map HPH10 "Excavation Site"
 	{
-	next = "HP11"
+	next = "HPH11"
 	sky1 = HSKY1
 	titlepatch = HPILV09
 	enterpic = HPINT
@@ -8962,9 +8962,9 @@ map HP10 "Excavation Site"
 	intermusic = D_HPINT
 	}
 	
-map HP11 "Descent into Underworld"
+map HPH11 "Descent into Underworld"
 	{
-	next = "HP12"
+	next = "HPH12"
 	sky1 = HSKY1
 	titlepatch = HPILV10
 	enterpic = HPINT
@@ -8975,9 +8975,9 @@ map HP11 "Descent into Underworld"
 	intermusic = D_HPINT
 	}
 	
-map HP12 "Passover"
+map HPH12 "Passover"
 	{
-	next = "HP13"
+	next = "HPH13"
 	sky1 = HSKY2
 	titlepatch = HPILV11
 	enterpic = HPINT
@@ -8988,9 +8988,9 @@ map HP12 "Passover"
 	intermusic = D_HPINT
 	}
 	
-map HP13 "Metal Territory"
+map HPH13 "Metal Territory"
 	{
-	next = "HP14"
+	next = "HPH14"
 	sky1 = HSKY2
 	titlepatch = HPILV12
 	enterpic = HPINT
@@ -9001,9 +9001,9 @@ map HP13 "Metal Territory"
 	intermusic = D_HPINT
 	}
 	
-map HP14 "Power Up"
+map HPH14 "Power Up"
 	{
-	next = "HP15"
+	next = "HPH15"
 	sky1 = HSKY2
 	titlepatch = HPILV13
 	enterpic = HPINT
@@ -9014,10 +9014,10 @@ map HP14 "Power Up"
 	intermusic = D_HPINT
 	}
 	
-map HP15 "Septic Underbelly"
+map HPH15 "Septic Underbelly"
 	{
-	next = "HP16"
-	secretnext = "HP31"
+	next = "HPH16"
+	secretnext = "HPH31"
 	sky1 = HSKY2
 	titlepatch = HPILV14
 	enterpic = HPINT
@@ -9028,9 +9028,9 @@ map HP15 "Septic Underbelly"
 	intermusic = D_HPINT
 	}
 	
-map HP16 "Eisenhower Heliport"
+map HPH16 "Eisenhower Heliport"
 	{
-	next = "HP17"
+	next = "HPH17"
 	sky1 = HSKY2
 	titlepatch = HPILV15
 	enterpic = HPINT
@@ -9041,9 +9041,9 @@ map HP16 "Eisenhower Heliport"
 	intermusic = D_HPINT
 	}
 	
-map HP17 "Communication Tower"
+map HPH17 "Communication Tower"
 	{
-	next = "HP18"
+	next = "HPH18"
 	sky1 = HSKY2
 	titlepatch = HPILV16
 	enterpic = HPINT
@@ -9054,9 +9054,9 @@ map HP17 "Communication Tower"
 	intermusic = D_HPINT
 	}
 	
-map HP18 "Altar of Chaos"
+map HPH18 "Altar of Chaos"
 	{
-	next = "HP19"
+	next = "HPH19"
 	sky1 = HSKY2
 	titlepatch = HPILV17
 	enterpic = HPINT
@@ -9067,9 +9067,9 @@ map HP18 "Altar of Chaos"
 	intermusic = D_HPINT
 	}
 	
-map HP19 "Satan's Fortress"
+map HPH19 "Satan's Fortress"
 	{
-	next = "HP20"
+	next = "HPH20"
 	sky1 = HSKY2
 	titlepatch = HPILV18
 	enterpic = HPINT
@@ -9080,9 +9080,9 @@ map HP19 "Satan's Fortress"
 	intermusic = D_HPINT
 	}
 	
-map HP20 "Ostoyae Anomaly"
+map HPH20 "Ostoyae Anomaly"
 	{
-	next = "HP21"
+	next = "HPH21"
 	sky1 = HSKY3
 	titlepatch = HPILV19
 	enterpic = HPINT
@@ -9093,9 +9093,9 @@ map HP20 "Ostoyae Anomaly"
 	intermusic = D_HPINT
 	}
 	
-map HP21 "Constriction"
+map HPH21 "Constriction"
 	{
-	next = "HP22"
+	next = "HPH22"
 	sky1 = HSKY3
 	titlepatch = HPILV20
 	enterpic = HPINT
@@ -9106,9 +9106,9 @@ map HP21 "Constriction"
 	intermusic = D_HPINT
 	}
 	
-map HP22 "Prime Mover"
+map HPH22 "Prime Mover"
 	{
-	next = "HP23"
+	next = "HPH23"
 	sky1 = HSKY3
 	titlepatch = HPILV21
 	enterpic = HPINT
@@ -9119,9 +9119,9 @@ map HP22 "Prime Mover"
 	intermusic = D_HPINT
 	}
 	
-map HP23 "Gloom Keep"
+map HPH23 "Gloom Keep"
 	{
-	next = "HP24"
+	next = "HPH24"
 	sky1 = HSKY3
 	titlepatch = HPILV22
 	enterpic = HPINT
@@ -9132,9 +9132,9 @@ map HP23 "Gloom Keep"
 	intermusic = D_HPINT
 	}
 	
-map HP24 "Lifeblood"
+map HPH24 "Lifeblood"
 	{
-	next = "HP25"
+	next = "HPH25"
 	sky1 = HSKY3
 	titlepatch = HPILV23
 	enterpic = HPINT
@@ -9145,9 +9145,9 @@ map HP24 "Lifeblood"
 	intermusic = D_HPINT
 	}
 	
-map HP25 "Sacrifice"
+map HPH25 "Sacrifice"
 	{
-	next = "HP26"
+	next = "HPH26"
 	sky1 = HSKY3
 	titlepatch = HPILV24
 	enterpic = HPINT
@@ -9158,9 +9158,9 @@ map HP25 "Sacrifice"
 	intermusic = D_HPINT
 	}
 	
-map HP26 "Pride of the Descent"
+map HPH26 "Pride of the Descent"
 	{
-	next = "HP27"
+	next = "HPH27"
 	sky1 = HSKY3
 	titlepatch = HPILV25
 	enterpic = HPINT
@@ -9171,9 +9171,9 @@ map HP26 "Pride of the Descent"
 	intermusic = D_HPINT
 	}
 	
-map HP27 "Drilling Station"
+map HPH27 "Drilling Station"
 	{
-	next = "HP28"
+	next = "HPH28"
 	sky1 = HSKY3
 	titlepatch = HPILV26
 	enterpic = HPINT
@@ -9184,9 +9184,9 @@ map HP27 "Drilling Station"
 	intermusic = D_HPINT
 	}
 	
-map HP28 "Teleportation Center"
+map HPH28 "Teleportation Center"
 	{
-	next = "HP29"
+	next = "HPH29"
 	sky1 = HSKY3
 	titlepatch = HPILV27
 	enterpic = HPINT
@@ -9197,9 +9197,9 @@ map HP28 "Teleportation Center"
 	intermusic = D_HPINT
 	}
 	
-map HP29 "Dead Planet"
+map HPH29 "Dead Planet"
 	{
-	next = "HP30"
+	next = "HPH30"
 	sky1 = HSKY3
 	titlepatch = HPILV28
 	enterpic = HPINT
@@ -9210,9 +9210,9 @@ map HP29 "Dead Planet"
 	intermusic = D_HPINT
 	}
 	
-map HP30 "Hadephobia"
+map HPH30 "Hadephobia"
 	{
-	next = "HP33"
+	next = "HPH33"
 	sky1 = HSKY3
 	titlepatch = HPILV29
 	enterpic = HPINT
@@ -9223,10 +9223,10 @@ map HP30 "Hadephobia"
 	intermusic = D_HPINT
 	}
 	
-map HP31 "Hell's Armoury"
+map HPH31 "Hell's Armoury"
 	{
-	next = "HP16"
-	secretnext = "HP32"
+	next = "HPH16"
+	secretnext = "HPH32"
 	sky1 = HSKY3
 	titlepatch = HPILV30
 	enterpic = HPINT
@@ -9237,9 +9237,9 @@ map HP31 "Hell's Armoury"
 	intermusic = D_HPINT
 	}
 	
-map HP32 "Sirenum Scopuli"
+map HPH32 "Sirenum Scopuli"
 	{
-	next = "HP16"
+	next = "HPH16"
 	sky1 = HSKY3
 	titlepatch = HPILV31
 	enterpic = HPINT
@@ -9250,9 +9250,9 @@ map HP32 "Sirenum Scopuli"
 	intermusic = D_HPINT
 	}
 	
-map HP33 "Pre Destined Mortality"
+map HPH33 "Pre Destined Mortality"
 	{
-	next = "HP34"
+	next = "HPH34"
 	sky1 = HSKY3
 	titlepatch = HPILV32
 	enterpic = HPINT
@@ -9262,9 +9262,9 @@ map HP33 "Pre Destined Mortality"
 	intermusic = D_HPINT
 	}
 	
-map HP34 "Hadephrenia"
+map HPH34 "Hadephrenia"
 	{
-	next = "HP35"
+	next = "HPH35"
 	sky1 = HSKY3
 	titlepatch = HPILV33
 	enterpic = HPINT
@@ -9274,7 +9274,7 @@ map HP34 "Hadephrenia"
 	intermusic = D_HPINT
 	}
 	
-map HP35 "Scotch Bonnet"
+map HPH35 "Scotch Bonnet"
 	{
 	next = "HUB"
 	sky1 = HSKY3

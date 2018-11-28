@@ -3609,7 +3609,7 @@ Actor DVBossEye : BossEye 25014 //89
     SSWV A 10 A_Look
     Loop
   See:
-    SSWV A 181 A_PlaySound("dv01/mordor", CHAN_AUTO, 1, false, ATTN_NONE, false)
+    SSWV A 181 A_PlaySound("dv01/mordor", 0, 1, 0, ATTN_NONE)
     SSWV A 150 A_BrainSpit  // See SpawnShot
     Wait
   }

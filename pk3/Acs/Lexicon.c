@@ -45,6 +45,8 @@ strict namespace
 		{ "Going Down",				"GD01"	}, // 25
 		{ "Dark Encounters",		"DKE01"	}, // 26
         { "Alien Vendetta",         "AV01"  }, // 27
+		{ "Hadephobia",				"HPH01" }, // 28
+		{ "Deus Vult",				"DV01"	}, // 29 Slaughter Map
     };
     /////////////////////
     // vote manager

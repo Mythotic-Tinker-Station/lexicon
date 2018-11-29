@@ -195,3 +195,28 @@ texture ZZKEENLY
 
 Switch Doom ADEL_Z50 off pic ADEL_Z51 Tics 0
 Switch Doom ADEL_Z51 on pic ADEL_Z50 Tics 0
+
+// Hadephobia
+Texture	Optional HFALL1 Range HFALL4 Tics 8
+
+// Deus Vult
+Texture Optional DVALL1 Range DVALL4 Tics 8
+Texture Optional DVODGR1 Range DVODGR4 Tics 8
+Texture Optional DVODRIP1 Range DVODRIP4 Tics 8
+Texture Optional DVRAIN1 Range DVRAIN4 Tics 8
+Texture Optional DVREBLU1 Range DVREBLU2 Tics 8
+Texture Optional DVTFONT1 Range DVTFONT3 Tics 8
+
+Switch DV1BLUE off pic DV2BLUE Tics 0
+Switch DV2BLUE on pic DV1BLUE Tics 0
+Switch DV1BRCOM on pic DV2BRCOM Tics 0
+Switch DV2BRCOM off pic DV1BRCOM Tics 0
+Switch DV1BRN1 on pic DV2BRN1 Tics 0
+Switch DV2BRN1 off pic DV1BRN1 Tics 0
+Switch DV1LION on pic DV2LION Tics 0
+Switch DV2LION off pic DV1LION Tics 0
+
+Flat Optional DVIME05 range DVIME08 tics 8
+Flat Optional DVIME01 range DVIME04 tics 8
+
+Texture Optional DVADRIP1 Range DVADRIP3 Tics 8

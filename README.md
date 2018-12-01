@@ -34,6 +34,10 @@ So far, the mapsets included are:
 - Going Down
 - Estranged
 - Dark Encounters
+- Hadephobia
+- Deus Vult
+
+You can also access doom 2 from the hub now!
 
 ## How to build the pk3?
 Clone this repo to your machine and then run CompilePk3.bat

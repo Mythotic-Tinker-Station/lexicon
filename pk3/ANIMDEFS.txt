@@ -64,6 +64,8 @@ warp flat WARPED4
 
 Switch SW1MOD2 off pic SW2MOD2 Tics 0
 Switch SW2MOD2 on pic SW1MOD2 Tics 0
+Switch WS1STON2 off pic WS2STON2 Tics 0
+Switch WS2STON2 on pic WS1STON2 Tics 0
 
 
 //UAC Ultra
@@ -191,6 +193,10 @@ texture ZZKEENLY
 	pic 1 tics 35
 	pic 1 tics 35
 	
+Texture ZZKEENX1 Range ZZKEENX4 Tics 4
+Texture ZZKEENF1 Range ZZKEENF4 Tics 3
+Texture D2TLL1 Range D2TLL4 Tics 3
+	
 // Drown in blood
 
 Switch Doom ADEL_Z50 off pic ADEL_Z51 Tics 0
@@ -220,3 +226,6 @@ Flat Optional DVIME05 range DVIME08 tics 8
 Flat Optional DVIME01 range DVIME04 tics 8
 
 Texture Optional DVADRIP1 Range DVADRIP3 Tics 8
+
+// Swift Death
+Texture SWDAIN1 Range SWDAIN4 Tics 8

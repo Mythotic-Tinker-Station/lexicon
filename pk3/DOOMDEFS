@@ -1,0 +1,117 @@
+// ----------------
+// -- Doom Items --
+// ----------------
+
+// Soul Sphere
+pulselight SOULSPHERE
+{
+    color 0.8 0.5 0.5
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object Mayhem17Soulsphere
+{
+    frame 17UL { light SOULSPHERE }
+}
+
+// Invulnerability Sphere
+pulselight INVULN
+{
+    color 1.0 1.0 0.5
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object MayhemInvulnSphere
+{
+    frame 17NV { light INVULN }
+}
+
+// Blur Sphere
+pointlight BLURSPHERE1
+{
+    color 0.5 0.5 0.5
+    size 40
+    offset 0 16 0
+}
+
+pointlight BLURSPHERE2
+{
+    color 0.5 0.5 0.5
+    size 32
+    offset 0 16 0
+}
+
+pointlight BLURSPHERE3
+{
+    color 0.5 0.5 0.5
+    size 24
+    offset 0 16 0
+}
+
+pointlight BLURSPHERE4
+{
+    color 0.5 0.5 0.5
+    size 16
+    offset 0 16 0
+}
+
+pointlight BLURSPHERE5
+{
+    color 0.5 0.5 0.5
+    size 8
+    offset 0 16 0
+}
+
+object Mayhem17BlurSphere
+{
+    frame 17NS { light BLURSPHERE1 }
+
+    frame 17NSA { light BLURSPHERE2 }
+    frame 17NSB { light BLURSPHERE3 }
+    frame 17NSC { light BLURSPHERE4 }
+    frame 17NSD { light BLURSPHERE5 }
+}
+
+// Mega Sphere
+pointlight MEGASPHERE1
+{
+    color 0.7 0.7 0.2
+    size 40
+    offset 0 16 0
+}
+
+pointlight MEGASPHERE2
+{
+    color 0.7 0.7 0.2
+    size 32
+    offset 0 16 0
+}
+
+pointlight MEGASPHERE3
+{
+    color 0.7 0.7 0.2
+    size 24
+    offset 0 16 0
+}
+
+pointlight MEGASPHERE4
+{
+    color 0.7 0.7 0.2
+    size 16
+    offset 0 16 0
+}
+
+object Mayhem17Megasphere
+{
+    frame 17GAA0 { light MEGASPHERE1 }
+
+    frame 17GAB0 { light MEGASPHERE2 }
+    frame 17GAC0 { light MEGASPHERE3 }
+    frame 17GAD0 { light MEGASPHERE4 }
+}

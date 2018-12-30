@@ -3886,7 +3886,7 @@ ACTOR Mayhem17BrainStem : BrainStem 25027 //81
   }
 }
 
-ACTOR Mayhem17BlueSkull : BlueCard 25028 //40
+ACTOR Mayhem17BlueSkull : Key 25028 //40
 {
   Inventory.PickupMessage "Picked up a blue key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -4102,7 +4102,7 @@ ACTOR Mayhem17ChomperThings : LiveStick 25042 //26
   }
 }
 
-ACTOR Mayhem17RedSkull : RedCard 25043 //38
+ACTOR Mayhem17RedSkull : Key 25043 //38
 {
   Inventory.PickupMessage "$icked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -4187,7 +4187,7 @@ ACTOR Mayhem17RedTorch : RedTorch 25048 //46
   }
 }
 
-ACTOR Mayhem17YellowSkull : YellowCard 25049 //39
+ACTOR Mayhem17YellowSkull : Key 25049 //39
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"

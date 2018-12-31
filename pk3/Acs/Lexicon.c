@@ -739,7 +739,6 @@ strict namespace
 }
 
 // custom key giver for custom keys
-#define NUMBER_OF_KEYS 6
 
 str keys[NUMBER_OF_KEYS][3] = {
 	{"RedCard",     "Red Card",     false},

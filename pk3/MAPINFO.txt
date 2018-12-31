@@ -9361,7 +9361,11 @@ map MAY01 "shroom stronghold"
 	next = "MAY02"
 	secretnext = "MAY02"
 	sky1 = "MAYSKY1"
-	
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump	
 	cluster = 5
 	music = "D_MAY01"
 }

@@ -4204,7 +4204,7 @@ ACTOR LexYellowKey : LexBlueKey 25049 //39
     7YKU B 10 Bright
     Loop
   Pickup:
-	TNT1 A 0 ACS_NamedExecuteWithResult("KeyGiver",5)
+	TNT1 A 0 ACS_NamedExecuteWithResult("KeyGiver",4)
 	Stop
   }
 }

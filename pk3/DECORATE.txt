@@ -4264,3 +4264,153 @@ Actor Bowser : CommanderKeen 25050 //72
 		stop
 	}
 }
+
+////////////////////////////////
+////				   		////
+////	    Sunlust     	////
+//// Fuck this was painfull	////
+////						////
+////////////////////////////////
+
+ACTOR SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
+{
+  Health 20
+  Radius 10
+  Height 42
+  +SOLID
+  +SHOOTABLE
+  +NOBLOOD
+  +ACTIVATEMCROSS
+  +DONTGIB
+  +NOICEDEATH
+  +OLDRADIUSDMG
+  Obituary "$OB_BARREL" // "%o went boom."
+  States
+  {
+  Spawn:
+    SLR1 AB 6
+    Loop
+  Death:
+    SLXP A 5 Bright
+    SLXP B 5 Bright A_Scream
+    SLXP C 5 Bright
+    SLXP D 5 Bright A_Explode
+    SLXP E 10 Bright
+    TNT1 A 1050 Bright A_BarrelDestroy
+    TNT1 A 5 A_Respawn
+    Wait
+  }
+}
+
+ACTOR SunlustTallGreenColumn : TallGreenColumn 25052 //30
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLL1 A -1
+    Stop
+  }
+}
+
+ACTOR SunlustTallRedColumn : TallRedColumn 25053 //32
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLL3 A -1
+    Stop
+  }
+}
+
+ACTOR SunlustSkullColumn : SkullColumn 25054 //37
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLL6 A -1
+    Stop
+  }
+}
+
+ACTOR SunlustBurningBarrel : BurningBarrel 25055 //70
+{
+  Radius 16
+  Height 32
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLAN ABC 4 Bright
+    Loop
+  }
+}
+
+ACTOR SunlustFloatingSkull : FloatingSkull 25056 //42
+{
+  Radius 16
+  Height 26
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLKU ABC 6 Bright
+    Loop
+  }
+}
+
+ACTOR SunlustGreenTorch : GreenTorch 25057 //45
+{
+  Radius 16
+  Height 68
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    SLRN ABCD 4 Bright
+    Loop
+  }
+}
+
+Actor SunlustCommanderKeen : CommanderKeen 25058 //72
+{
+	Health 10000
+	Speed 12
+	Mass 1000
+	-SOLID
+	-SHOOTABLE
+	-SPAWNCEILING
+	-NOGRAVITY
+	-COUNTKILL
+	States
+	{
+	Spawn:
+		KEEN A 2 
+		KEEN ABCDEFGHIJ 2 A_VileChase
+		goto Death
+	Pain:
+		KEEN M 4 
+		KEEN M 8 A_Pain
+		KEEN A 2 
+		KEEN ABCDEFGHIJ 2 A_VileChase
+		goto Death
+	Death:
+		KEEN ABCDEFGHIJ 2 A_VileChase
+		goto Death
+	}
+}
+

@@ -348,3 +348,44 @@ Switch 7M1DIRT off pic 7M2DIRT Tics 0
 Switch 7M2BRCOM on pic 7M1BRCOM Tics 0
 Switch 7M2BRN1 on pic 7M1BRN1 Tics 0
 Switch 7M2DIRT on pic 7M1DIRT Tics 0
+
+// Sunlust
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	SUNA1   	Range	SUNA4   	Tics 8
+Flat	Optional	SUNOD1  	Range	SUNOD3  	Tics 8
+Flat	Optional	SUNCK05 	Range	SUNCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SUNME09 	Range	SUNME12 	Tics 8
+Flat	Optional	SLUDGE01	Range	SLUDGE04	Tics 8
+Flat	Optional	OSLIME01	Range	OSLIME04	Tics 8
+Flat	Optional	GRAYSLM1	Range	GRAYSLM4	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	SUNDRIP1	Range	SUNDRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	SUNFONT1	Range	SUNFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	SUNAIN1 	Range	SUNAIN4 	Tics 8
+Texture	Optional	LASRRE01	Range	LASRRE16	Tics 2
+Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
+Texture	Optional	SUNFALL1	Range	SUNFALL4	Tics 8
+Texture	Optional	GN_ROCK1	Range	GN_ROCK3	Tics 8
+Texture	Optional	FFIELDG1	Range	FFIELDGA	Tics 2
+Texture	Optional	ZBG1    	Range	ZBG9    	Tics 3
+Texture	Optional	LASRGN01	Range	LASRGN16	Tics 2
+Texture	Optional	FGTILE0 	Range	FGTILE9 	Tics 2
+Texture	Optional	OFALL1  	Range	OFALL4  	Tics 8
+Texture	Optional	LASRYL01	Range	LASRYL16	Tics 2
+Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+Texture	Optional	FFIELDB1	Range	FFIELDBA	Tics 2
+Texture	Optional	LASROR01	Range	LASROR16	Tics 2
+Switch	Doom 2		SU1SKIN 	On Pic	SU2SKIN 	Tics 0

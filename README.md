@@ -36,6 +36,8 @@ So far, the mapsets included are:
 - Dark Encounters
 - Hadephobia
 - Deus Vult
+- Mayhem 17
+- Sunlust
 
 You can also access doom 2 from the hub now!
 

@@ -9859,7 +9859,7 @@ next = SLU07
 secretnext = SLU07
 sky1 = SKY1 0
 cluster = 1
-music = D_SLU05
+music = D_SLU06
 nocrouch
 nojump
 enterpic = "SUNINT"
@@ -10234,7 +10234,7 @@ map SLU31 "Birds of A Feather"
 titlepatch = SUNLV30
 next = SLU32
 secretnext = SLU32
-sky1 = RSKY3 0
+sky1 = SUNSKY3 0
 cluster = 4
 music = D_SLU31
 nocrouch

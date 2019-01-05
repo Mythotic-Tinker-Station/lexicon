@@ -64,6 +64,8 @@ warp flat WARPED4
 
 Switch SW1MOD2 off pic SW2MOD2 Tics 0
 Switch SW2MOD2 on pic SW1MOD2 Tics 0
+Switch WS1STON2 off pic WS2STON2 Tics 0
+Switch WS2STON2 on pic WS1STON2 Tics 0
 
 
 //UAC Ultra
@@ -191,6 +193,10 @@ texture ZZKEENLY
 	pic 1 tics 35
 	pic 1 tics 35
 	
+Texture ZZKEENX1 Range ZZKEENX4 Tics 4
+Texture ZZKEENF1 Range ZZKEENF4 Tics 3
+Texture D2TLL1 Range D2TLL4 Tics 3
+	
 // Drown in blood
 
 Switch Doom ADEL_Z50 off pic ADEL_Z51 Tics 0
@@ -220,3 +226,166 @@ Flat Optional DVIME05 range DVIME08 tics 8
 Flat Optional DVIME01 range DVIME04 tics 8
 
 Texture Optional DVADRIP1 Range DVADRIP3 Tics 8
+
+// Swift Death
+Texture SWDAIN1 Range SWDAIN4 Tics 8
+
+// Speed of Doom
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	LAVA1   	Range	LAVA4   	Tics 8
+Flat	Optional	BLOOD1  	Range	BLOOD3  	Tics 8
+Flat	Optional	GNUKAGE1	Range	GNUKAGE3	Tics 8
+Flat	Optional	RROCK05 	Range	RROCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SLIME09 	Range	SLIME12 	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
+Texture	Optional	LFALL1  	Range	LFALL4  	Tics 8
+Texture	Optional	EFALL1  	Range	EFALL4  	Tics 8
+Texture	Optional	SFLAL1  	Range	SFLAL4  	Tics 8
+Texture	Optional	LFLAL1  	Range	LFLAL4  	Tics 8
+Texture	Optional	GFALL1  	Range	GFALL4  	Tics 8
+
+Switch	Doom 1		SW1BRCOM	On Pic	SW2BRCOM	Tics 0
+Switch	Doom 1		SW1BRN1 	On Pic	SW2BRN1 	Tics 0
+Switch	Doom 1		SW1BRN2 	On Pic	SW2BRN2 	Tics 0
+Switch	Doom 1		SW1BRNGN	On Pic	SW2BRNGN	Tics 0
+Switch	Doom 1		SW1BROWN	On Pic	SW2BROWN	Tics 0
+Switch	Doom 1		SW1COMM 	On Pic	SW2COMM 	Tics 0
+Switch	Doom 1		SW1COMP 	On Pic	SW2COMP 	Tics 0
+Switch	Doom 1		SW1DIRT 	On Pic	SW2DIRT 	Tics 0
+Switch	Doom 1		SW1EXIT 	On Pic	SW2EXIT 	Tics 0
+Switch	Doom 1		SW1GRAY 	On Pic	SW2GRAY 	Tics 0
+Switch	Doom 1		SW1GRAY1	On Pic	SW2GRAY1	Tics 0
+Switch	Doom 1		SW1METAL	On Pic	SW2METAL	Tics 0
+Switch	Doom 1		SW1PIPE 	On Pic	SW2PIPE 	Tics 0
+Switch	Doom 1		SW1SLAD 	On Pic	SW2SLAD 	Tics 0
+Switch	Doom 1		SW1STARG	On Pic	SW2STARG	Tics 0
+Switch	Doom 1		SW1STON1	On Pic	SW2STON1	Tics 0
+Switch	Doom 1		SW1STON2	On Pic	SW2STON2	Tics 0
+Switch	Doom 1		SW1STONE	On Pic	SW2STONE	Tics 0
+Switch	Doom 1		SW1STRTN	On Pic	SW2STRTN	Tics 0
+Switch	Doom 2		SW1BLUE 	On Pic	SW2BLUE 	Tics 0
+Switch	Doom 2		SW1CMT  	On Pic	SW2CMT  	Tics 0
+Switch	Doom 2		SW1GARG 	On Pic	SW2GARG 	Tics 0
+Switch	Doom 2		SW1GSTON	On Pic	SW2GSTON	Tics 0
+Switch	Doom 2		SW1HOT  	On Pic	SW2HOT  	Tics 0
+Switch	Doom 2		SW1LION 	On Pic	SW2LION 	Tics 0
+Switch	Doom 2		SW1SATYR	On Pic	SW2SATYR	Tics 0
+Switch	Doom 2		SW1SKIN 	On Pic	SW2SKIN 	Tics 0
+Switch	Doom 2		SW1VINE 	On Pic	SW2VINE 	Tics 0
+Switch	Doom 2		SW1WOOD 	On Pic	SW2WOOD 	Tics 0
+Switch	Doom 3		SW1PANEL	On Pic	SW2PANEL	Tics 0
+Switch	Doom 3		SW1ROCK 	On Pic	SW2ROCK 	Tics 0
+Switch	Doom 3		SW1MET2 	On Pic	SW2MET2 	Tics 0
+Switch	Doom 3		SW1WDMET	On Pic	SW2WDMET	Tics 0
+Switch	Doom 3		SW1BRIK 	On Pic	SW2BRIK 	Tics 0
+Switch	Doom 3		SW1MOD1 	On Pic	SW2MOD1 	Tics 0
+Switch	Doom 3		SW1ZIM  	On Pic	SW2ZIM  	Tics 0
+Switch	Doom 3		SW1STON6	On Pic	SW2STON6	Tics 0
+Switch	Doom 3		SW1TEK  	On Pic	SW2TEK  	Tics 0
+Switch	Doom 3		SW1MARB 	On Pic	SW2MARB 	Tics 0
+Switch	Doom 3		SW1SKULL	On Pic	SW2SKULL	Tics 0
+Switch	Doom 3		SWITA1  	On Pic	SWITA2  	Tics 0
+Switch	Doom 3		SWITB1  	On Pic	SWITB2  	Tics 0
+
+// Msyhem 17
+Texture	Optional	skyzap1 	Range	skyzapf 	Tics 3
+Texture	Optional	wtail1  	Range	wtail4  	Tics 4
+Texture	Optional	wtaic1  	Range	wtaic4  	Tics 4
+Texture	Optional	wtbic1  	Range	wtbic4  	Tics 4
+Texture	Optional	wtbib1  	Range	wtbib4  	Tics 4
+Texture	Optional	wtbil1  	Range	wtbil4  	Tics 4
+Texture	Optional	wtaib1  	Range	wtaib4  	Tics 4
+Texture	Optional	mbox1   	Range	mbox4   	Tics 4
+Texture	Optional	1box1   	Range	1box3   	Tics 4
+Texture	Optional	2water1 	Range	2water3 	Tics 4
+Texture	Optional	1scene1 	Range	1scene3 	Tics 4
+Texture	Optional	3dsinks1	Range	3dsinks4	Tics 4
+Texture	Optional	3blubox1	Range	3blubox4	Tics 4
+Texture	Optional	3water1 	Range	3water4 	Tics 4
+Texture	Optional	swbox3  	Range	swbox6  	Tics 4
+Texture	Optional	1boxa   	Range	1boxc   	Tics 4
+Texture	Optional	mbox1mid	Range	mbox4mid	Tics 4
+Texture	Optional	mbounce1	Range	mbounce4	Tics 4
+Flat	Optional	fbricb1 	Range	fbricb4 	Tics 4
+Texture	Optional	mbouncea	Range	mbounced	Tics 4
+Flat	Optional	fblubox1	Range	fblubox4	Tics 4
+Flat	Optional	f7mwatr1	Range	f7mwatr4	Tics 4
+Flat	Optional	fclava1 	Range	fclava4 	Tics 4
+Flat	Optional	fwatr_d1	Range	fwatr_d3	Tics 4
+Flat	Optional	fwatr_u1	Range	fwatr_u3	Tics 4
+Flat	Optional	fwatr_l1	Range	fwatr_l3	Tics 4
+Flat	Optional	fwatr_r1	Range	fwatr_r3	Tics 4
+Flat	Optional	fwat2_u1	Range	fwat2_u4	Tics 4
+Flat	Optional	fwat2_d1	Range	fwat2_d4	Tics 4
+Flat	Optional	fwat2_l1	Range	fwat2_l4	Tics 4
+Flat	Optional	fwat2_r1	Range	fwat2_r4	Tics 4
+Flat	Optional	fdsinks1	Range	fdsinks4	Tics 4
+Texture	Optional	w_lfall1	Range	w_lfall4	Tics 4
+Texture	Optional	sm2brdb1	Range	sm2brdb4	Tics 4
+Texture	Optional	mbrick1 	Range	mbrick4 	Tics 4
+Texture	Optional	sm2brdg1	Range	sm2brdg4	Tics 4
+Flat	Optional	fboxa   	Range	fboxc   	Tics 4
+Texture	Optional	mrcmsky1	Range	mrcmsky3	Tics 5
+Switch 7M1BRCOM off pic 7M2BRCOM Tics 0
+Switch 7M1BRN1 off pic 7M2BRN1 Tics 0
+Switch 7M1DIRT off pic 7M2DIRT Tics 0
+Switch 7M2BRCOM on pic 7M1BRCOM Tics 0
+Switch 7M2BRN1 on pic 7M1BRN1 Tics 0
+Switch 7M2DIRT on pic 7M1DIRT Tics 0
+
+// Sunlust
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	SUNA1   	Range	SUNA4   	Tics 8
+Flat	Optional	SUNOD1  	Range	SUNOD3  	Tics 8
+Flat	Optional	SUNCK05 	Range	SUNCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SUNME09 	Range	SUNME12 	Tics 8
+Flat	Optional	SLUDGE01	Range	SLUDGE04	Tics 8
+Flat	Optional	OSLIME01	Range	OSLIME04	Tics 8
+Flat	Optional	GRAYSLM1	Range	GRAYSLM4	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	SUNDRIP1	Range	SUNDRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	SUNFONT1	Range	SUNFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	SUNAIN1 	Range	SUNAIN4 	Tics 8
+Texture	Optional	LASRRE01	Range	LASRRE16	Tics 2
+Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
+Texture	Optional	SUNFALL1	Range	SUNFALL4	Tics 8
+Texture	Optional	GN_ROCK1	Range	GN_ROCK3	Tics 8
+Texture	Optional	FFIELDG1	Range	FFIELDGA	Tics 2
+Texture	Optional	ZBG1    	Range	ZBG9    	Tics 3
+Texture	Optional	LASRGN01	Range	LASRGN16	Tics 2
+Texture	Optional	FGTILE0 	Range	FGTILE9 	Tics 2
+Texture	Optional	OFALL1  	Range	OFALL4  	Tics 8
+Texture	Optional	LASRYL01	Range	LASRYL16	Tics 2
+Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+Texture	Optional	FFIELDB1	Range	FFIELDBA	Tics 2
+Texture	Optional	LASROR01	Range	LASROR16	Tics 2
+Switch	Doom 2		SU1SKIN 	On Pic	SU2SKIN 	Tics 0

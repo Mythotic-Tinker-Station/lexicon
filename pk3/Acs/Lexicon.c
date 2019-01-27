@@ -50,6 +50,7 @@ strict namespace
 		{ "Deus Vult",				"DV01"	}, // 29 Slaughter Map
 		{ "Mayhem 17",				"MAY01"	}, // 30
 		{ "Sunlust",				"SLU01"	}, // 31
+		{ "Pizza Steve",			"PIZ01" }, // 32
     };
     /////////////////////
     // vote manager

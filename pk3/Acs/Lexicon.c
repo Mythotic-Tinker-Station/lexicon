@@ -107,7 +107,7 @@ strict namespace
 
     
     // stuff that runs during any level
-    script "Level" open
+    script "SV_Level" open
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) { terminate; }
         
@@ -484,17 +484,6 @@ strict namespace
         ACS_ExecuteAlways(572, 0, godmode);
         ACS_ExecuteAlways(573, 0, instakiller);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     // sync sorted votes to clients
     script 567 (int index, int votes, int id) clientside
@@ -538,21 +527,6 @@ strict namespace
     {
         instakiller = v;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     function void state_init(void)
     {
@@ -673,20 +647,6 @@ strict namespace
             ChangeLevel(votenames[votechosen][1], 0, 0, -1);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // sort voted list
     function void bubble_sort(void)

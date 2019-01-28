@@ -18,30 +18,30 @@ actor Lexicon_VR_Avatar : DoomPlayer
             TNT1 A 0 A_PlayerSkinCheck("AltSkinDeath")
             
         Death1:
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
             TNT1 A 0 A_PlayerScream
             TNT1 A 0 A_NoBlocking
             TNT1 A -1
             Stop
             
         AltSkinDeath:
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
-            TNT1 A 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
+            PLAY G 1 A_FadeOut(0.1)
             TNT1 A 0 A_PlayerScream
             TNT1 A 0 A_NoBlocking
             TNT1 A -1

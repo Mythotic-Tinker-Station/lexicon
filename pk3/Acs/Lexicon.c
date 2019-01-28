@@ -1,11 +1,13 @@
 // written in BCS
 #include "../../compiler/lib/zcommon.h"
 #library "vote"
-#define NUMBER_OF_KEYS 6
+
 
 strict namespace
 {
     #if 1
+        #define NUMBER_OF_KEYS 6
+    
         // dont touch this
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
@@ -51,7 +53,7 @@ strict namespace
 		{ "Mayhem 17",				"MAY01"	}, // 30
 		{ "Sunlust",				"SLU01"	}, // 31
 		{ "Pizza Steve",			"PIZ01" }, // 32 Slaughter Map
-		[ "Hellbound",				"HLB01" ], // 32
+		{ "Hellbound",				"HLB01" }, // 32
     };
     /////////////////////
     // vote manager
@@ -742,6 +744,8 @@ strict namespace
     }
 }
 
+
+/*
 // custom key giver for custom keys
 
 str keys[NUMBER_OF_KEYS][3] = {
@@ -771,5 +775,7 @@ Script "KeyGiver_RegiveKeys" ENTER
 {
 	for(int i = 0; i < NUMBER_OF_KEYS; i++)
 		if(keys[i][2] == true)
-			GiveInventory(keys[i][0], 1);
+		GiveInventory(keys[i][0], 1);
 }
+*/
+

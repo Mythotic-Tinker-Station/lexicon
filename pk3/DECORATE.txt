@@ -3732,22 +3732,6 @@ Actor BowserCoop : BossBrain 25016 //88
 	}
 }
 
-ACTOR RedCoin : RedCard 25017 //13
-
-{
-  +INVENTORY.NEVERRESPAWN
-  Inventory.PickupMessage "A mysterious red coin..."
-  Inventory.Icon "STKEYS2"
-  Inventory.PickupSound "mayhem17/i_pkup"
-  States
-  {
-  Spawn:
-    MAYY A 10
-    MAYY B 10 Bright
-    Loop
-  }
-}
-
 ACTOR Mayhem17Soulsphere : Soulsphere 25018 //2013
 {
   +COUNTITEM
@@ -3925,23 +3909,6 @@ ACTOR Mayhem17BrainStem : BrainStem 25027 //81
     Stop
   }
 }
-
-ACTOR LexBlueKey : CustomInventory 25028 //40
-{
-  Inventory.PickupMessage "Picked up a blue key."
-  Inventory.PickupSound "mayhem17/i_pkup"
-  States
-  {
-  Spawn:
-    7SKU A 10
-    7SKU B 10 Bright
-    Loop
-  Pickup:
-	TNT1 A 0 ACS_NamedExecuteWithResult("KeyGiver",5)
-	Stop
-  }
-}
-
 ACTOR Mayhem17EvilEye : EvilEye 25029 //41
 {
   Radius 16
@@ -4143,23 +4110,6 @@ ACTOR Mayhem17ChomperThings : LiveStick 25042 //26
   }
 }
 
-ACTOR LexRedKey : LexBlueKey 25043 //38
-{
-  Inventory.PickupMessage "$icked up a red key."
-  Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS2"
-  Species RedCard
-  States
-  {
-  Spawn:
-    7RKU A 10
-    7RKU B 10 Bright
-    Loop
-  Pickup:
-	TNT1 A 0 ACS_NamedExecuteWithResult("KeyGiver",3)
-	Stop
-  }
-}
 
 ACTOR Mayhem17Stalagtite : Stalagtite 25044 //47 
 {
@@ -4231,23 +4181,63 @@ ACTOR Mayhem17RedTorch : RedTorch 25048 //46
   }
 }
 
-ACTOR LexYellowKey : LexBlueKey 25049 //39
+ACTOR Mayhem17BlueKey : Key 25028 //40
+{
+  Inventory.PickupMessage "Picked up a blue key."
+  Inventory.PickupSound "mayhem17/i_pkup"
+  States
+  {
+  Spawn:
+    7SKU A 10
+    7SKU B 10 Bright
+    Loop
+  }
+}
+
+ACTOR Mayhem17RedKey : Key 25043 //38
+{
+  Inventory.PickupMessage "Picked up a red key."
+  Inventory.PickupSound "mayhem17/i_pkup"
+  //Inventory.Icon "STKEYS2"
+  States
+  {
+  Spawn:
+    7RKU A 10
+    7RKU B 10 Bright
+    Loop
+  }
+}
+
+ACTOR Mayhem17YellowKey : Key 25049 //39
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS1"
-  Species YellowCard
+  //Inventory.Icon "STKEYS1"
   States
   {
   Spawn:
     7YKU A 10
     7YKU B 10 Bright
     Loop
-  Pickup:
-	TNT1 A 0 ACS_NamedExecuteWithResult("KeyGiver",4)
-	Stop
   }
 }
+
+ACTOR RedCoin : RedCard 25017 //13
+
+{
+  +INVENTORY.NEVERRESPAWN
+  Inventory.PickupMessage "A mysterious red coin..."
+  Inventory.Icon "STKEYS2"
+  Inventory.PickupSound "mayhem17/i_pkup"
+  States
+  {
+  Spawn:
+    MAYY A 10
+    MAYY B 10 Bright
+    Loop
+  }
+}
+
 
 Actor Bowser : CommanderKeen 25050 //72
 {

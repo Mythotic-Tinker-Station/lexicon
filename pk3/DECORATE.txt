@@ -4223,7 +4223,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
   }
 }
 
-ACTOR RedCoin : RedCard 25017 //13
+ACTOR Mayhem17RedCoin : RedCard 25017 //13
 
 {
   +INVENTORY.NEVERRESPAWN

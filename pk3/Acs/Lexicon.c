@@ -547,6 +547,12 @@ strict namespace
         // if a vote was made
         if(votecount > 0)
         {
+            // if the server has the ignore timer flag set and there is only 1 player in
+            if(PlayerCount() == 1 && GetCvar("lexicon_timer_1p_ignore") == 1)
+            {
+                time_ticks = 0;
+            }
+            
             // set the system to the countdown state
             state = STATE_COUNTDOWN;
 

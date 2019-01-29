@@ -4,3 +4,4 @@ server int lexicon_timer_yellow = 15;       // vote timer when it goes yellow
 server int lexicon_timer_orange = 10;       // vote timer when it goes orange
 server int lexicon_timer_red = 5;           // vote timer when it goes red
 server int lexicon_timer_reset = 10;        // lexicon reset timer(when no players are left in a level)
+server int lexicon_timer_1p_ignore = 1;     // if true, the voting system will ignore timer if only 1 player is playing

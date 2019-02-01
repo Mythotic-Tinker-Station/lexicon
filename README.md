@@ -38,6 +38,9 @@ So far, the mapsets included are:
 - Deus Vult
 - Mayhem 17
 - Sunlust
+- Pizza Steve
+- Hellbound
+- 1994 Tune up Community Project
 
 You can also access doom 2 from the hub now!
 

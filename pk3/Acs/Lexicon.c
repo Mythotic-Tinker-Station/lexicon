@@ -53,7 +53,8 @@ strict namespace
 		{ "Mayhem 17",				"MAY01"	}, // 30
 		{ "Sunlust",				"SLU01"	}, // 31
 		{ "Pizza Steve",			"PIZ01" }, // 32 Slaughter Map
-		{ "Hellbound",				"HLB01" }, // 32
+		{ "Hellbound",				"HLB01" }, // 33
+		{ "1994 Tune Up Community Project",		"TU01" }, // 34
     };
     /////////////////////
     // vote manager

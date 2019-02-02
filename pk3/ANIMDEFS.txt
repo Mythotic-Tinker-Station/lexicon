@@ -398,7 +398,24 @@ Texture optional HLBAIN1 Range HLBAIN4 Tics 8
 Texture optional HLBDGR1 Range HLBDGR4 Tics 8
 Texture optional HLBDRIP1 Range HLBDRIP3 Tics 8
 
-//1994 TU
+// 1994 TU
 Texture optional TUODGR1 Range TUODGR4 Tics 8
 Texture optional TUALL1 Range TUALL4 Tics 8
 Switch TU1STON2 off pic TU2STON2 Tics 0
+
+// Hellcore
+flat HCATER1
+	pic HCATER1 tics 5
+	pic HCATER2 tics 5
+	pic HCATER3 tics 5
+	pic HCATER4 tics 5
+	pic HCATERA tics 5
+	pic HCATERB tics 5
+	
+Texture optional HCODRIP1 Range HCODRIP4 Tics 8
+Texture optional HCRAIN1 Range HCRAIN4 Tics 8
+Texture optional HCODGR1 Range HCODGR4 Tics 8
+Texture optional HCADRIP1 Range HCADRIP3 Tics 8
+Texture optional HCALL1 Range HCALL4 Tics 8
+Switch	Doom 2		HC1VINE 	Off Pic	HC2VINE 	Tics 0
+Switch	Doom 2		HC2VINE 	On Pic	HC1VINE 	Tics 0

@@ -63,7 +63,8 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - MiFU for doing most of the compile work, its a pain in the ass.
 - K0RPSE for also assisting with the compile work, its still a pain in the ass though.
 - Shaewn for assisting with various issues. He should compile more shit though but thats just me.
-- Tribeam for scripting, hub map.
+- Tribeam for scripting, effects.
+- Fiendzy for hub map layout.
 - Michaelis for adding more playerstarts to maps.
 - Our testers (Kenopath, Blushberry)
 - Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer

@@ -10,8 +10,16 @@ map TSP01 "The Spire"
 map TSP201 "The Spire 2"
 	{
 	next = "HUB"
-	//sky1 = "TSPSKY1"
+	sky1 = "SKY1"
 	music = "D_SPIRE2"
 	nocrouch
 	nojump
 	}
+	
+map EYE01 "The Eye"
+{
+	music = D_EYE
+	next = HUB
+	sky1 = "SKY1"
+	nojump
+}

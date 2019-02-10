@@ -55,6 +55,7 @@ strict namespace
 		{ "Pizza Steve",			"PIZ01" }, // 32 Slaughter Map
 		{ "Hellbound",				"HLB01" }, // 33
 		{ "1994 Tune Up Community Project",		"TU01" }, // 34
+		{ "Unholy Realms",			"UHR01"	}, // 35
     };
     /////////////////////
     // vote manager

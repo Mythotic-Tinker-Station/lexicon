@@ -56,6 +56,7 @@ strict namespace
 		{ "Hellbound",				"HLB01" }, // 33
 		{ "1994 Tune Up Community Project",		"TU01" }, // 34
 		{ "Unholy Realms",			"UHR01"	}, // 35
+		{ "The Spire",				"TSP01"	}, // 36 Single Map
     };
     /////////////////////
     // vote manager

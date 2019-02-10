@@ -2,12 +2,12 @@
 #include "../../compiler/lib/zcommon.h"
 #library "vote"
 
-
 strict namespace
 {
     #if 1
-        #define NUMBER_OF_KEYS 6
     
+        #include "skybox.c"
+
         // dont touch this
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
@@ -711,39 +711,3 @@ strict namespace
         SetFont("BIGFONT");
     }
 }
-
-
-/*
-// custom key giver for custom keys
-
-str keys[NUMBER_OF_KEYS][3] = {
-	{"RedCard",     "Red Card",     false},
-	{"YellowCard",  "Yellow Card",  false},
-	{"BlueCard",    "Blue Card",    false},
-	{"RedSkull",    "Red Skull",    false},
-	{"YellowSkull", "Yellow Skull", false},
-	{"BlueSkull",   "Blue Skull",   false},
-};
-Script "KeyGiver" (int which)
-{	
-	GiveInventory(keys[which][0], 1);
-	keys[which][2] = true; // mark key as given, so players connecting later get it
-	
-	// Give to all players -- shared keys are the norm, not a quirky option
-	GiveActorInventory(0, keys[which][0], 1);
-	ACS_NamedExecuteWithResult("KeyGiver_PickupMessage", keys[which][1]);
-}
-Script "KeyGiver_PickupMessage" (int what) CLIENTSIDE
-{
-	str pickupmessage = strparam(n:0, s:" picked up a ", s:what, s:".");
-	Log(s:pickupmessage);
-}
-
-Script "KeyGiver_RegiveKeys" ENTER
-{
-	for(int i = 0; i < NUMBER_OF_KEYS; i++)
-		if(keys[i][2] == true)
-		GiveInventory(keys[i][0], 1);
-}
-*/
-

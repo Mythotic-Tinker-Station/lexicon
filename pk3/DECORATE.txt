@@ -9,6 +9,34 @@ Some megawads add custom shit so... makes the merging process really annoying
 // Lexicon        //
 ////////////////////
 
+ACTOR Lexicon_VR_GravityWell 30000
+{
+  +NOINTERACTION
+  +CLIENTSIDEONLY
+  States
+  {
+  Spawn:
+    VR01 A 0 A_SpawnItemEx("Lexicon_VR_Line", frandom(-128.0, 128.0), frandom(-128.0, 128.0), 0, 0, 0, frandom(10.0, 20.0))
+	VR01 A 1 A_SpawnItemEx("Lexicon_VR_Line", frandom(-128.0, 128.0), frandom(-128.0, 128.0), 0, 0, 0, frandom(10.0, 20.0))
+    Loop
+  }
+}
+
+ACTOR Lexicon_VR_Line
+{
+  +NOINTERACTION
+  +CLIENTSIDEONLY
+  Alpha 1
+  Scale 1.0
+  RenderStyle Add
+  States
+  {
+  Spawn:
+	VR01 A 1 Bright A_Fadeout(0.012)
+    Loop
+  }
+}
+
 actor Lexicon_VR_Avatar : DoomPlayer
 { 
     States

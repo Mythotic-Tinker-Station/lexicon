@@ -1,1 +1,2 @@
-..\pk3\acs\Lexicon.c:742: error: duplicate object name, `number_of_keys`
+In file #included from ..\pk3\acs\Lexicon.c:9:
+..\pk3\acs\skybox.c:10: error: argument type (`int`) different from parameter type (`fixed`) (in argument 1)

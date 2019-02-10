@@ -19,10 +19,18 @@ episode MAP01
 
 map HUB "Inside the Lexicon"
 	{
-	music = "HUBMUS"
-	levelnum = 99
+        music = "HUBMUS"
+        levelnum = 99
+        AirControl = 0.5
 	}
 
+map VR "Inside the Lexicon"
+	{
+        music = "HUBMUS"
+        levelnum = 99
+        AirControl = 0.5
+	}
+    
 //Hell Revealed 1
 
 map HR01 "Into the Gate"

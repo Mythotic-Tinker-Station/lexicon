@@ -6,7 +6,7 @@ function split(s, delimiter)
     return result
 end
 
-local canvas = love.graphics.newCanvas(640, 480)
+local canvas = love.graphics.newCanvas(640, 720)
 
 function love.load(arg)
     
@@ -16,6 +16,9 @@ function love.load(arg)
     
     -- load vignette
     local vignette = love.graphics.newImage("/effects/vignette.png")
+    
+    -- load border
+    local border = love.graphics.newImage("/effects/border.png")
     
     
     -- read title file
@@ -44,20 +47,38 @@ function love.load(arg)
             love.graphics.setColor(255, 255, 255, 255)
             love.graphics.setCanvas(canvas)
             
+                love.graphics.clear(0, 0, 0, 0)
+                
+                -- draw the screen
                 if v[3] == "r" then love.graphics.setColor(255, 160, 160, 255) end
                 if v[3] == "g" then love.graphics.setColor(160, 255, 160, 255) end
                 if v[3] == "b" then love.graphics.setColor(160, 160, 255, 255) end
+                if v[3] == "w" then love.graphics.setColor(255, 255, 255, 255) end
                 love.graphics.draw(exists)
+                
 
-                love.graphics.setColor(255, 255, 255, 255)
+                -- draw the vignette
+                love.graphics.setColor(0, 0, 0, 128)
                 love.graphics.draw(vignette)
                 
-                local screen_cx = 320
-                local text_l = font:getWidth(v[2])/2
-                local text_cx = screen_cx-text_l
+
+                -- draw the border
+                if v[3] == "r" then love.graphics.setColor(128, 64, 64, 255) end
+                if v[3] == "g" then love.graphics.setColor(64, 128, 64, 255) end
+                if v[3] == "b" then love.graphics.setColor(64, 64, 128, 255) end
+                if v[3] == "w" then love.graphics.setColor(255, 255, 255, 255) end
+                love.graphics.draw(border)             
                 
-                love.graphics.print(v[2], text_cx, 16)
-                
+                -- draw the text
+                if(v[2] ~= "STATIC") then
+
+                    local screen_cx = 320
+                    local text_l = font:getWidth(v[2])/2
+                    local text_cx = screen_cx-text_l
+                    
+                    love.graphics.setColor(255, 255, 255, 255)
+                    love.graphics.print(v[2], text_cx, 16)
+                end
             love.graphics.setCanvas()
             love.graphics.setColor(255, 255, 255, 255)
             

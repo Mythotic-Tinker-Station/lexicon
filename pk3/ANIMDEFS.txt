@@ -419,3 +419,8 @@ Texture optional HCADRIP1 Range HCADRIP3 Tics 8
 Texture optional HCALL1 Range HCALL4 Tics 8
 Switch	Doom 2		HC1VINE 	Off Pic	HC2VINE 	Tics 0
 Switch	Doom 2		HC2VINE 	On Pic	HC1VINE 	Tics 0
+
+// Unholy Realms
+Switch	Doom 1		UR1STON2	On Pic	UR2STON2	Tics 0
+Texture	Optional	URODGR1 	Range	URODGR4 	Tics 8
+Texture	Optional	URVFALL1	Range	URVFALL4	Tics 8

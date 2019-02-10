@@ -63,7 +63,7 @@ function love.load(arg)
             
             local imgdata = canvas:newImageData()
             local pngdata = imgdata:encode("png"):getString()
-            local pngfile = io.open(love.filesystem.getSourceBaseDirectory() .. "/src/results/" .. v[2] .. ".png", "w+b")
+            local pngfile = io.open(love.filesystem.getSourceBaseDirectory() .. "/src/results/" .. v[1] .. ".png", "w+b")
             pngfile:write(pngdata)
             pngfile:close()
         end

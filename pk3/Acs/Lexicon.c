@@ -394,8 +394,9 @@ strict namespace
             // get player number
             int pnum = playernumber();
 
-            //pnum = random(1,7);
-
+            // special vr map logic so players cant vote from shooting the invisible parts of the linedef
+            if(GetActorZ(pnum+1337) < 1144.0) { terminate; }
+            
             // if the player has not voted...
             if (players[pnum] < 0)
             {

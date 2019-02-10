@@ -1,0 +1,18 @@
+This tool will auto generate all the titlescreens for the lexicon vr hub map
+
+What Do:
+    - Put 640x480 screenshots into the screens folder, name them something friendly to zandronum
+
+    - Add titles to the titles.txt file
+        ex:
+        imagename = title
+        DOOMSCRN = Doom
+        AVSCRN = Alien Vandetta
+        ect...
+        
+    - Run the run.bat file
+    - All the titlescreens will be generated into the results folder
+    - The app will tell you if anything goes wrong
+    
+    
+    

@@ -6,3 +6,12 @@ map TSP01 "The Spire"
 	nocrouch
 	nojump
 	}
+	
+map TSP201 "The Spire 2"
+	{
+	next = "HUB"
+	//sky1 = "TSPSKY1"
+	music = "D_SPIRE2"
+	nocrouch
+	nojump
+	}

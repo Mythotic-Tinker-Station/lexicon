@@ -50,7 +50,7 @@ strict namespace
 		{ "Hellbound",				        "HLB01"             }, // 25
 		{ "1994 Tune Up Community Project", "TU01"              }, // 26
 		{ "Unholy Realms",			        "UHR01"	            }, // 27
-        { "Hell Core",			            "????"	            }, // 28
+        { "Hell Core",			            "HC01"	            }, // 28
         { "Unused",			                "MAP01"	            }, // 29
         { "Unused",			                "MAP01"	            }, // 30
         { "Unused",			                "MAP01"	            }, // 31

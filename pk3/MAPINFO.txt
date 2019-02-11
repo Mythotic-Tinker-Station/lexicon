@@ -7,7 +7,7 @@ GameInfo
    PlayerClasses = "Lexicon_VR_Avatar"
 }
 
-episode HUB
+episode VR
 	{
 	name = "The Sentinel's Lexicon"
 	key = "1"
@@ -17,13 +17,6 @@ episode MAP01
 	{
 	name = "Doom 2"
 	key = "3"
-	}
-
-map HUB "Inside the Lexicon"
-	{
-        music = "HUBMUS"
-        levelnum = 99
-        AirControl = 0.5
 	}
 
 map VR "Inside the Lexicon"

@@ -17,53 +17,214 @@ strict namespace
     #endif
     
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
-    str votenames[64][2] =
+    str votenames[193][2] =
     {
-        // wad name                 // the map this vote will take players too
-        { "Doom 2",                 "MAP01"  }, // 0
-        { "Combat Shock",           "CS01"  }, // 1 Slaughter Map
-        { "Combat Shock 2",         "CS201" }, // 2 Slaughter Map
-        { "Hell Revealed",          "HR01"  }, // 3
-        { "Hell Revealed 2",        "HR201" }, // 4
-        { "Kamasutra",              "KS01"  }, // 5
-        { "New Gothic Movement 1",  "NG101" }, // 6 Slaughter Map
-        { "Shai'tans Luck",         "SL20"  }, // 7
-        { "Speed Of Doom",          "SOD01" }, // 8
-        { "Dark Tartarus",          "TAT01" }, // 9 Slaughter Map
-        { "VanGaurd",               "VAN01" }, // 10
-        { "Scythe 2",               "SC201" }, // 11
-		{ "Whispers Of Satan",		"WOS01"	}, // 12
-		{ "UAC Ultra",				"UAC01"	}, // 13
-		{ "Monuments Of Mars",		"MOM01"	}, // 14
-		{ "Khorus's Speedy Shit",	"KSS01"	}, // 15
-		{ "Circle of Caina",		"COC01"	}, // 16
-		{ "Forest Swords",			"FSW01"	}, // 17
-		{ "Doom Core Trilogy",		"DC01"	}, // 18
-		{ "Maps of Chaos",	        "MOC01"	}, // 19
-		{ "Sunder",					"SND01" }, // 20 Slaughter Map
-		{ "Doom 2 The Way ID Did",	"WID01" }, // 21
-		{ "Drown in Blood",			"DIB01"	}, // 22 Slaughter Map
-		{ "Swift Death",			"SDE01" }, // 23 Slaughter Map
-		{ "Estranged",				"EST01" }, // 24
-		{ "Going Down",				"GD01"	}, // 25
-		{ "Dark Encounters",		"DKE01"	}, // 26
-        { "Alien Vendetta",         "AV01"  }, // 27
-		{ "Hadephobia",				"HPH01" }, // 28
-		{ "Deus Vult",				"DV01"	}, // 29 Slaughter Map
-		{ "Mayhem 17",				"MAY01"	}, // 30
-		{ "Sunlust",				"SLU01"	}, // 31
-		{ "Pizza Steve",			"PIZ01" }, // 32 Slaughter Map
-		{ "Hellbound",				"HLB01" }, // 33
-		{ "1994 Tune Up Community Project",		"TU01" }, // 34
-		{ "Unholy Realms",			"UHR01"	}, // 35
-		{ "The Spire",				"TSP01"	}, // 36 Single Map
-		{ "The Eye",				"EYE01"	}, // 37 Single Map
+        // mapset name                       // the map this vote will take players too
+                                                                // the number a linedef uses to cast the vote
+        // Normal mapsets
+        { "Nothing",                        "----"              }, // 0
+        { "Doom 2",                         "MAP01"             }, // 1
+        { "Hell Revealed",                  "HR01"              }, // 2
+        { "Hell Revealed 2",                "HR201"             }, // 3
+        { "Kamasutra",                      "KS01"              }, // 4
+        { "Shai'tans Luck",                 "SL20"              }, // 5
+        { "Speed Of Doom",                  "SOD01"             }, // 6
+        { "VanGaurd",                       "VAN01"             }, // 7
+        { "Scythe 2",                       "SC201"             }, // 8
+		{ "Whispers Of Satan",		        "WOS01"	            }, // 9
+		{ "UAC Ultra",				        "UAC01"	            }, // 10
+		{ "Monuments Of Mars",		        "MOM01"	            }, // 11
+		{ "Khorus's Speedy Shit",	        "KSS01"	            }, // 12
+		{ "Circle of Caina",		        "COC01"	            }, // 13
+		{ "Forest Swords",			        "FSW01"	            }, // 14
+		{ "Doom Core Trilogy",		        "DC01"	            }, // 15
+		{ "Maps of Chaos",	                "MOC01"	            }, // 16
+		{ "Doom 2 The Way ID Did",	        "WID01"             }, // 17
+		{ "Estranged",				        "EST01"             }, // 18
+		{ "Going Down",				        "GD01"	            }, // 19
+		{ "Dark Encounters",		        "DKE01"	            }, // 20
+        { "Alien Vendetta",                 "AV01"              }, // 21
+		{ "Hadephobia",				        "HPH01"             }, // 22
+		{ "Mayhem 17",				        "MAY01"	            }, // 23
+		{ "Sunlust",				        "SLU01"	            }, // 24
+		{ "Hellbound",				        "HLB01"             }, // 25
+		{ "1994 Tune Up Community Project", "TU01"              }, // 26
+		{ "Unholy Realms",			        "UHR01"	            }, // 27
+        { "Hell Core",			            "????"	            }, // 28
+        { "Unused",			                "MAP01"	            }, // 29
+        { "Unused",			                "MAP01"	            }, // 30
+        { "Unused",			                "MAP01"	            }, // 31
+        { "Unused",			                "MAP01"	            }, // 32
+        { "Unused",			                "MAP01"	            }, // 33
+        { "Unused",			                "MAP01"	            }, // 34
+        { "Unused",			                "MAP01"	            }, // 35
+        { "Unused",			                "MAP01"	            }, // 36
+        { "Unused",			                "MAP01"	            }, // 37
+        { "Unused",			                "MAP01"	            }, // 38
+        { "Unused",			                "MAP01"	            }, // 39
+        { "Unused",			                "MAP01"	            }, // 40
+        { "Unused",			                "MAP01"	            }, // 41
+        { "Unused",			                "MAP01"	            }, // 42
+        { "Unused",			                "MAP01"	            }, // 43
+        { "Unused",			                "MAP01"	            }, // 44
+        { "Unused",			                "MAP01"	            }, // 45
+        { "Unused",			                "MAP01"	            }, // 46
+        { "Unused",			                "MAP01"	            }, // 47
+        { "Unused",			                "MAP01"	            }, // 48
+        { "Unused",			                "MAP01"	            }, // 49
+        { "Unused",			                "MAP01"	            }, // 50
+        { "Unused",			                "MAP01"	            }, // 51
+        { "Unused",			                "MAP01"	            }, // 52
+        { "Unused",			                "MAP01"	            }, // 53
+        { "Unused",			                "MAP01"	            }, // 54
+        { "Unused",			                "MAP01"	            }, // 55
+        { "Unused",			                "MAP01"	            }, // 56
+        { "Unused",			                "MAP01"	            }, // 57
+        { "Unused",			                "MAP01"	            }, // 58
+        { "Unused",			                "MAP01"	            }, // 59
+        { "Unused",			                "MAP01"	            }, // 60
+        { "Unused",			                "MAP01"	            }, // 61
+        { "Unused",			                "MAP01"	            }, // 62
+        { "Unused",			                "MAP01"	            }, // 63
+        { "Unused",			                "MAP01"	            }, // 64
+        
+        // Slaughter Mapsets
+        { "Combat Shock",                   "CS01"              }, // 65
+        { "Combat Shock 2",                 "CS201"             }, // 66
+        { "New Gothic Movement 1",          "NG101"             }, // 67
+        { "Dark Tartarus",                  "TAT01"             }, // 68
+		{ "Sunder",					        "SND01"             }, // 69
+		{ "Drown in Blood",			        "DIB01"	            }, // 70
+		{ "Swift Death",			        "SDE01"             }, // 71
+        { "Deus Vult",				        "DV01"	            }, // 72
+        { "Pizza Steve",			        "PIZ01"             }, // 73
+        { "Unused",			                "MAP01"	            }, // 74
+        { "Unused",			                "MAP01"	            }, // 75
+        { "Unused",			                "MAP01"	            }, // 76
+        { "Unused",			                "MAP01"	            }, // 77
+        { "Unused",			                "MAP01"	            }, // 78
+        { "Unused",			                "MAP01"	            }, // 79
+        { "Unused",			                "MAP01"	            }, // 80
+        { "Unused",			                "MAP01"	            }, // 81
+        { "Unused",			                "MAP01"	            }, // 82
+        { "Unused",			                "MAP01"	            }, // 83
+        { "Unused",			                "MAP01"	            }, // 84
+        { "Unused",			                "MAP01"	            }, // 85
+        { "Unused",			                "MAP01"	            }, // 86
+        { "Unused",			                "MAP01"	            }, // 87
+        { "Unused",			                "MAP01"	            }, // 88
+        { "Unused",			                "MAP01"	            }, // 89
+        { "Unused",			                "MAP01"	            }, // 90
+        { "Unused",			                "MAP01"	            }, // 91
+        { "Unused",			                "MAP01"	            }, // 92
+        { "Unused",			                "MAP01"	            }, // 92
+        { "Unused",			                "MAP01"	            }, // 94
+        { "Unused",			                "MAP01"	            }, // 95
+        { "Unused",			                "MAP01"	            }, // 96
+        { "Unused",			                "MAP01"	            }, // 97
+        { "Unused",			                "MAP01"	            }, // 98
+        { "Unused",			                "MAP01"	            }, // 99
+        { "Unused",			                "MAP01"	            }, // 100
+        { "Unused",			                "MAP01"	            }, // 101
+        { "Unused",			                "MAP01"	            }, // 102
+        { "Unused",			                "MAP01"	            }, // 103
+        { "Unused",			                "MAP01"	            }, // 104
+        { "Unused",			                "MAP01"	            }, // 105
+        { "Unused",			                "MAP01"	            }, // 106
+        { "Unused",			                "MAP01"	            }, // 107
+        { "Unused",			                "MAP01"	            }, // 108
+        { "Unused",			                "MAP01"	            }, // 109
+        { "Unused",			                "MAP01"	            }, // 110
+        { "Unused",			                "MAP01"	            }, // 111
+        { "Unused",			                "MAP01"	            }, // 112
+        { "Unused",			                "MAP01"	            }, // 113
+        { "Unused",			                "MAP01"	            }, // 114
+        { "Unused",			                "MAP01"	            }, // 115
+        { "Unused",			                "MAP01"	            }, // 116
+        { "Unused",			                "MAP01"	            }, // 117
+        { "Unused",			                "MAP01"	            }, // 118
+        { "Unused",			                "MAP01"	            }, // 119
+        { "Unused",			                "MAP01"	            }, // 120
+        { "Unused",			                "MAP01"	            }, // 121
+        { "Unused",			                "MAP01"	            }, // 122
+        { "Unused",			                "MAP01"	            }, // 123
+        { "Unused",			                "MAP01"	            }, // 124
+        { "Unused",			                "MAP01"	            }, // 125
+        { "Unused",			                "MAP01"	            }, // 126
+        { "Unused",			                "MAP01"	            }, // 127
+        { "Unused",			                "MAP01"	            }, // 128
+        
+        // Single Levels
+		{ "The Spire",				        "TSP01"	            }, // 129
+		{ "The Eye",				        "EYE01"	            }, // 130
+        { "Unused",			                "MAP01"	            }, // 131
+        { "Unused",			                "MAP01"	            }, // 132
+        { "Unused",			                "MAP01"	            }, // 133
+        { "Unused",			                "MAP01"	            }, // 134
+        { "Unused",			                "MAP01"	            }, // 135
+        { "Unused",			                "MAP01"	            }, // 136
+        { "Unused",			                "MAP01"	            }, // 137
+        { "Unused",			                "MAP01"	            }, // 138
+        { "Unused",			                "MAP01"	            }, // 139
+        { "Unused",			                "MAP01"	            }, // 140
+        { "Unused",			                "MAP01"	            }, // 141
+        { "Unused",			                "MAP01"	            }, // 142
+        { "Unused",			                "MAP01"	            }, // 143
+        { "Unused",			                "MAP01"	            }, // 144
+        { "Unused",			                "MAP01"	            }, // 145
+        { "Unused",			                "MAP01"	            }, // 146
+        { "Unused",			                "MAP01"	            }, // 147
+        { "Unused",			                "MAP01"	            }, // 148
+        { "Unused",			                "MAP01"	            }, // 149
+        { "Unused",			                "MAP01"	            }, // 150
+        { "Unused",			                "MAP01"	            }, // 151
+        { "Unused",			                "MAP01"	            }, // 152
+        { "Unused",			                "MAP01"	            }, // 153
+        { "Unused",			                "MAP01"	            }, // 154
+        { "Unused",			                "MAP01"	            }, // 155
+        { "Unused",			                "MAP01"	            }, // 156
+        { "Unused",			                "MAP01"	            }, // 157
+        { "Unused",			                "MAP01"	            }, // 158
+        { "Unused",			                "MAP01"	            }, // 159
+        { "Unused",			                "MAP01"	            }, // 160
+        { "Unused",			                "MAP01"	            }, // 161
+        { "Unused",			                "MAP01"	            }, // 162
+        { "Unused",			                "MAP01"	            }, // 163
+        { "Unused",			                "MAP01"	            }, // 164
+        { "Unused",			                "MAP01"	            }, // 165
+        { "Unused",			                "MAP01"	            }, // 166
+        { "Unused",			                "MAP01"	            }, // 167
+        { "Unused",			                "MAP01"	            }, // 168
+        { "Unused",			                "MAP01"	            }, // 169
+        { "Unused",			                "MAP01"	            }, // 170
+        { "Unused",			                "MAP01"	            }, // 171
+        { "Unused",			                "MAP01"	            }, // 172
+        { "Unused",			                "MAP01"	            }, // 173
+        { "Unused",			                "MAP01"	            }, // 174
+        { "Unused",			                "MAP01"	            }, // 175
+        { "Unused",			                "MAP01"	            }, // 176
+        { "Unused",			                "MAP01"	            }, // 177
+        { "Unused",			                "MAP01"	            }, // 178
+        { "Unused",			                "MAP01"	            }, // 179
+        { "Unused",			                "MAP01"	            }, // 180
+        { "Unused",			                "MAP01"	            }, // 181
+        { "Unused",			                "MAP01"	            }, // 182
+        { "Unused",			                "MAP01"	            }, // 183
+        { "Unused",			                "MAP01"	            }, // 184
+        { "Unused",			                "MAP01"	            }, // 185
+        { "Unused",			                "MAP01"	            }, // 186
+        { "Unused",			                "MAP01"	            }, // 187
+        { "Unused",			                "MAP01"	            }, // 188
+        { "Unused",			                "MAP01"	            }, // 189
+        { "Unused",			                "MAP01"	            }, // 190
+        { "Unused",			                "MAP01"	            }, // 191
+        { "Unused",			                "MAP01"	            }, // 192
     };
     /////////////////////
     // vote manager
     /////////////////////
-    int votes[64];                      // holds the votes
-    int votessorted[64][2];             // all the votes, sorted
+    int votes[193];                      // holds the votes
+    int votessorted[193][2];             // all the votes, sorted
     int votecount = 0;                  // amount of votes made
 
     int time_ticks = 0;                 // the time left in ticks
@@ -186,7 +347,6 @@ strict namespace
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
-    
         Thing_ChangeTID(0, playernumber()+1337);
 
         // this entire file should of been in the map script, oh well
@@ -202,9 +362,8 @@ strict namespace
             ACS_ExecuteAlways(570, 0, state);
             
             // give player the votegun
+            ClearInventory();
             GiveInventory("Lexicon_VoteGun", 1);
-            TakeInventory("Pistol", 1);
-            TakeInventory("Fist", 1);
         }
     }
 
@@ -614,7 +773,7 @@ strict namespace
         int tiecount = 0;
 
         // for every wad
-        for(int i = 1; i < 64; i++)
+        for(int i = 1; i < 193; i++)
         {
             // if a wad's vote count is the same as the winner
             if(votessorted[i][0] == votessorted[0][0])
@@ -668,10 +827,10 @@ strict namespace
     function void bubble_sort(void)
     {
         int t;
-        int j = 64;
+        int j = 193;
         int s = 1;
         int v;
-        for (int i = 0; i < 64; i++)
+        for (int i = 0; i < 193; i++)
         {
             votessorted[i][0] = votes[i];
             votessorted[i][1] = i;
@@ -695,7 +854,7 @@ strict namespace
             j--;
         }
 
-        for(int i = 0; i < 63; i++)
+        for(int i = 0; i < 193; i++)
         {
             ACS_ExecuteAlways(567, 0, i, votessorted[i][0], votessorted[i][1]);
         }

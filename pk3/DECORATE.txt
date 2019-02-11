@@ -32,7 +32,7 @@ ACTOR Lexicon_VoteGun : DoomWeapon
     VOTE A 1 A_Raise
     Loop
   Fire:
-    VOTE A 10 A_RailAttack(0, 10, false, "none", "White", 0, 0, "BulletPuff", 0, 0, 1024.0, 70, 0.5, 0.5)
+    VOTE A 10 A_RailAttack(0, 8, false, "none", "White", 0, 0, "BulletPuff", 0, 0, 1024.0, 70, 0.5, 0.5)
     VOTE A 0 A_ReFire
     Goto Ready
   Spawn:

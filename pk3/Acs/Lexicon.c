@@ -659,12 +659,6 @@ strict namespace
         // if 5 seconds have past
         if(state_clock > 5*35)
         {
-            for(int p = 0; p < 65; p++)
-            {
-                TakeActorInventory(p+1337, "Lexicon_VoteGun", 1);
-                GiveActorInventory(p+1337, "Pistol", 1);
-                GiveActorInventory(p+1337, "Fist", 1);
-            }
             // go to chosen level
             ChangeLevel(votenames[votechosen][1], 0, CHANGELEVEL_RESETHEALTH|CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_NOINTERMISSION, -1);
         }

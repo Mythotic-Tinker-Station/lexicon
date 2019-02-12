@@ -11,7 +11,7 @@ local canvas = love.graphics.newCanvas(640, 720)
 function love.load(arg)
     
     -- load font
-    local font = love.graphics.newFont("/fonts/AmazDooMLeft.ttf", 60)
+    local font = love.graphics.newFont("/fonts/Doom.ttf", 30)
     love.graphics.setFont(font)
     
     -- load vignette
@@ -25,12 +25,12 @@ function love.load(arg)
     local file_titles = io.open(love.filesystem.getSourceBaseDirectory() .. "/src/titles.txt")
     local title_list = {}
     
-    local title = file_titles:read("*line")
+    file_titles:read("*line")
     local title = file_titles:read("*line") 
     title = file_titles:read("*line")
     while title ~= nil do
         title = split(title, "=")
-        title_list[#title_list+1] = { title[1], title[2], title[3] }
+        title_list[#title_list+1] = { title[1], title[2], title[3], title[4] }
         title = file_titles:read("*line")
     end
     file_titles:close()
@@ -78,6 +78,12 @@ function love.load(arg)
                     
                     love.graphics.setColor(255, 255, 255, 255)
                     love.graphics.print(v[2], text_cx, 16)
+                    
+                    if(v[4] == "wip")  then
+                        local text_l = font:getWidth("- Work In Progress -")/2
+                        local text_cx = screen_cx-text_l
+                        love.graphics.print("- Work In Progress -", text_cx, 480-64)                            
+                    end
                 end
             love.graphics.setCanvas()
             love.graphics.setColor(255, 255, 255, 255)

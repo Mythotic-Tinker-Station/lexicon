@@ -26,8 +26,8 @@ function love.load(arg)
     local title_list = {}
     
     file_titles:read("*line")
-    local title = file_titles:read("*line") 
-    title = file_titles:read("*line")
+    file_titles:read("*line")
+    local title = file_titles:read("*line")
     while title ~= nil do
         title = split(title, "=")
         title_list[#title_list+1] = { title[1], title[2], title[3], title[4] }

@@ -4283,7 +4283,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
   }
 }
 
-ACTOR Mayhem17RedCoin : RedCard 25017 //13
+ACTOR Mayhem17RedCoin : Key 25017 //13
 {
   +INVENTORY.NEVERRESPAWN
   Inventory.PickupMessage "A mysterious red coin..."

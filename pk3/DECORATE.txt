@@ -4245,7 +4245,7 @@ ACTOR Mayhem17BlueKey : Key 25028 //40
 {
   Inventory.PickupMessage "Picked up a blue key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS0"
+  Inventory.Icon "M17KB"
   States
   {
   Spawn:
@@ -4259,7 +4259,7 @@ ACTOR Mayhem17RedKey : Key 25043 //38
 {
   Inventory.PickupMessage "Picked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS2"
+  Inventory.Icon "M17KR"
   States
   {
   Spawn:
@@ -4273,7 +4273,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS1"
+  Inventory.Icon "M17KY"
   States
   {
   Spawn:
@@ -4284,7 +4284,6 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
 }
 
 ACTOR Mayhem17RedCoin : RedCard 25017 //13
-
 {
   +INVENTORY.NEVERRESPAWN
   Inventory.PickupMessage "A mysterious red coin..."

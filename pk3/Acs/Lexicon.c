@@ -641,19 +641,22 @@ strict namespace
 
     script "DebugMode_Switch" (int id)
     {
-        switch(id)
+        if(GetCvar("lexicon_debug_mode") == 1)
         {
-            case 0: 
-                if(godmode == 0) { godmode = 1; break; }
-                if(godmode == 1) { godmode = 0; break; }
-                break;
-            case 2: 
-                if(instakiller == 0) { instakiller = 1; break; }
-                if(instakiller == 1) { instakiller = 0; break; }
-                break;
+            switch(id)
+            {
+                case 0: 
+                    if(godmode == 0) { godmode = 1; break; }
+                    if(godmode == 1) { godmode = 0; break; }
+                    break;
+                case 2: 
+                    if(instakiller == 0) { instakiller = 1; break; }
+                    if(instakiller == 1) { instakiller = 0; break; }
+                    break;
+            }
+            ACS_ExecuteAlways(572, 0, godmode);
+            ACS_ExecuteAlways(573, 0, instakiller);
         }
-        ACS_ExecuteAlways(572, 0, godmode);
-        ACS_ExecuteAlways(573, 0, instakiller);
     }
 
     // sync sorted votes to clients

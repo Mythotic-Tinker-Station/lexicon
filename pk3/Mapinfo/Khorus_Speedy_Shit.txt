@@ -1,0 +1,354 @@
+map KSS01 "Entryway"
+	{
+	nocrouch
+	next = "KSS02"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS01"
+	}
+	
+map KSS02 "Underhalls"
+	{
+	nocrouch
+	next = "KSS03"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS02"
+	}
+	
+map KSS03 "The Gantlet"
+	{
+	nocrouch
+	next = "KSS04"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS03"
+	}
+	
+map KSS04 "The Focus"
+	{
+	nocrouch
+	next = "KSS05"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS04"
+	}
+	
+map KSS05 "The Waste Tunnel"
+	{
+	nocrouch
+	next = "KSS06"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS05"
+	}
+	
+map KSS06 "The Crusher"
+	{
+	nocrouch
+	next = "KSS07"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS06"
+	}
+
+map KSS07 "Dead Simple"
+	{
+	nocrouch
+	next = "KSS08"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS07"
+	map07special
+	}
+	
+map KSS08 "Tricks and Traps"
+	{
+	nocrouch
+	next = "KSS09"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS08"
+	}
+	
+map KSS09 "The Pit"
+	{
+	nocrouch
+	next = "KSS10"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS09"
+	}
+	
+map KSS10 "Refueling Base"
+	{
+	nocrouch
+	next = "KSS11"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS10"
+	}
+	
+map KSS11 "Circle of Death"
+	{
+	nocrouch
+	next = "KSS12"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS11"
+	}
+	
+map KSS12 "The Factory"
+	{
+	nocrouch
+	next = "KSS13"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS12"
+	}
+	
+map KSS13 "Downtown"
+	{
+	next = "KSS14"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS13"
+	nocrouch
+	}
+	
+map KSS14 "The Inmost Dens"
+	{
+	next = "KSS15"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS14"
+	nocrouch
+	}
+	
+map KSS15 "Industrial Zone"
+	{
+	nocrouch
+	next = "KSS16"
+	secretnext = "KSS31"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS15"
+	}
+	
+map KSS16 "Suburbs"
+	{
+	nocrouch
+	next = "KSS17"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS16"
+	}
+	
+map KSS17 "Tenements"
+	{
+	nocrouch
+	next = "KSS18"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS17"
+	}
+	
+map KSS18 "The Courtyard"
+	{
+	nocrouch
+	next = "KSS19"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS18"
+	}
+	
+map KSS19 "The Citadel"
+	{
+	nocrouch
+	next = "KSS20"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS19"
+	}
+	
+map KSS20 "Gotcha!"
+	{
+	nocrouch
+	next = "KSS21"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS20"
+	}
+
+map KSS21 "Nirvana"
+	{
+	nocrouch
+	next = "KSS22"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS21"
+	}
+	
+map KSS22 "The Catacombs"
+	{
+	nocrouch
+	next = "KSS23"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS22"
+	}
+	
+map KSS23 "Barrels o' Fun"
+	{
+	nocrouch
+	next = "KSS24"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS23"
+	}
+	
+map KSS24 "The Chasm"
+	{
+	nocrouch
+	next = "KSS25"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS24"
+	}
+	
+map KSS25 "Bloodfalls"
+	{
+	nocrouch
+	next = "KSS26"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS25"
+	}
+	
+map KSS26 "The Abandoned Mines"
+	{
+	nocrouch
+	next = "KSS27"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS26"
+	}
+	
+map KSS27 "Monster Condo"
+	{
+	nocrouch
+	next = "KSS28"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS27"
+	}
+	
+map KSS28 "The Spirit World"
+	{
+	nocrouch
+	next = "KSS29"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS28"
+	}
+	
+map KSS29 "The Living End"
+	{
+	nocrouch
+	next = "KSS30"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS29"
+	}
+	
+map KSS30 "Icon of Sin"
+	{
+	nocrouch
+	next = "VR"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS30"
+	}
+	
+map KSS31 "Wolfenstein"
+	{
+	nocrouch
+	next = "KSS16"
+	secretnext = "KSS32"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	sky1 = sky1
+	nojump
+	music = "D_KSS31"
+	}
+	
+map KSS32 "Grosse"
+	{
+	nocrouch
+	next = "KSS16"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	sky1 = sky1
+	nojump
+	music = "D_KSS32"
+	}

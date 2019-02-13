@@ -1,25 +1,26 @@
 map TSP01 "The Spire"
-	{
-	next = "HUB"
+{
+	next = "VR"
 	sky1 = "TSPSKY1"
 	music = "D_SPIRE"
 	nocrouch
 	nojump
-	}
+}
 	
 map TSP201 "The Spire 2"
-	{
-	next = "HUB"
+{
+	next = "VR"
 	sky1 = "SKY1"
 	music = "D_SPIRE2"
 	nocrouch
 	nojump
-	}
+}
 	
 map EYE01 "The Eye"
 {
 	music = D_EYE
-	next = HUB
+	next = "VR"
 	sky1 = "SKY1"
 	nojump
+    nocrouch
 }

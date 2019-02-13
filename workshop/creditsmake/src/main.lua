@@ -38,9 +38,7 @@ function love.load(arg)
         linepos = linepos + font:getHeight()
         
         canvas_line = love.graphics.newCanvas(font:getWidth(line), 32)
-        
-
-        
+    
         love.graphics.setCanvas(canvas_line)
 
             -- clear out previous line
@@ -49,9 +47,9 @@ function love.load(arg)
             -- reset color to white
             love.graphics.setColor(255, 255, 255, 255)
 
-            local r = line:sub(1, 1)*25
-            local g = line:sub(2, 2)*25
-            local b = line:sub(3, 3)*25
+            local r = line:sub(1, 1)*28
+            local g = line:sub(2, 2)*28
+            local b = line:sub(3, 3)*28
 
             love.graphics.setColor(r, g, b, 255)
             love.graphics.print(line:sub(4))

@@ -888,7 +888,7 @@ ACTOR FSWHangTSkull : HangTSkull 25012 // 76
   }
 }
 
-ACTOR FSWDeadStick : DeadStick 25013 // 25
+ACTOR FSWDeadStick : DeadStick 25064 // 25
 {
   Radius 16
   Height 64
@@ -4618,4 +4618,6 @@ Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
 		goto See
 	}
 }
+
+// 25064 is used by FSWDeadStick
 

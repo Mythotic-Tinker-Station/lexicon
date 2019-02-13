@@ -66,11 +66,11 @@ map CS205 "Boiling Point"
 map CS206 "Closure"
 	{
 	titlepatch = "CS2TP05"
-	next = "CS2SKY3"
+	next = "CS207"
 	enterpic = "CS2INT"
 	exitpic = "CS2INT"
 	intermusic = "D_CS2INT"
-	sky1 = "RSKY1 "
+	sky1 = "CS2SKY3"
 	music = "d_cs206"
 	nocrouch
 	nojump
@@ -83,7 +83,7 @@ map CS207 "Shocked for Life"
 	enterpic = "CS2INT"
 	exitpic = "CS2INT"
 	intermusic = "D_CS2INT"
-	sky1 = "CS2SKY2 "
+	sky1 = "CS2SKY2"
 	music = "d_cs207"
 	map07special
 	nocrouch

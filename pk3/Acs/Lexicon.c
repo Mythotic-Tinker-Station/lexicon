@@ -883,3 +883,11 @@ strict namespace
         SetFont("BIGFONT");
     }
 }
+
+
+////// Easter egg shit because i need the hud vars
+
+script "thrope" (void)
+{
+	hudmessagebold(s:"\c[White]TherianThrope Segment\n\n\c[White]=======================\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\nCalled TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\nAnd who is hunted by some scary looking monsters known as 'Therianthrope'\nThe archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, check it out at https://www.webtoons.com/en/challenge/therianthrope/list?title_no=5389"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 64.0, 10.0);
+}

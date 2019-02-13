@@ -945,9 +945,9 @@ map DC77 "Terrace View"
 	titlepatch = "DWILV76"
 	nojump
 	nocrouch
-	next = HUB
+	next = "VR"
+    secretnext = "VR"
 	music = P_E5M6
-	secretnext = HUB
 	sky1 = DCRSKY5
 	music = P_DEAD2
 	intermusic = P_E5M7

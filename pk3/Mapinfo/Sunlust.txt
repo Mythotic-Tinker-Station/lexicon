@@ -63,7 +63,7 @@ map SLU05 "Gear Up"
 titlepatch = SUNLV04
 next = SLU06
 secretnext = SLU06
-sky1 = RSKY1 0
+sky1 = RSKY1, 0
 cluster = 1
 music = D_SLU05
 nocrouch
@@ -455,7 +455,7 @@ map SLU31 "Birds of A Feather"
 titlepatch = SUNLV30
 next = SLU32
 secretnext = SLU32
-sky1 = SUNSKY3 0
+sky1 = SUNSKY3, 0
 cluster = 4
 music = D_SLU31
 nocrouch

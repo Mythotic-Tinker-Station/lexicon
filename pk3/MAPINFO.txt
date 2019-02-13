@@ -410,7 +410,7 @@ map HR29 "Temple of Fear"
 map HR30 "Hell Revealed"
 	{
 	titlepatch = "HRTPX29"
-	next = "HUB"
+	next = "VR"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -833,7 +833,7 @@ map AV29 "Fire Walk with Me"
 map AV30 "Point Dreadful"
 	{
 	titlepatch = "AVTPX29"
-	next = "HUB"
+	next = "VR"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -1254,7 +1254,7 @@ map KS29 "I'm Just a DOOM Addict"
 map KS30 "<|>"
 	{
 	titlepatch = "KSTPX29"
-	next = "HUB"
+	next = "VR"
 	enterpic = "KAMAINT"
 	exitpic = "KAMAINT"
 	intermusic = "D_KSINT"
@@ -1762,8 +1762,8 @@ map TAT42 "Beat Doom V0.01"
 
 map TAT43 "LOCK N' LOAD"
 	{
-	next = "HUB"
-	secretnext = "HUB"
+	next = "VR"
+	secretnext = "VR"
 	sky1 = "SKYML2"
 	intermusic = "D_TATINT"
 	cluster = 1
@@ -2156,7 +2156,7 @@ map HR229 "Hell's Cauldron"
 map HR230 "Source Control"
 	{
 	titlepatch = "HR2TP29"
-	next = "HUB"
+	next = "VR"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -2345,7 +2345,7 @@ map NG121 "New Gothic 1 MAP21"
 	{
 	sky1 = "RSKY3"
 	music = "d_ng121"
-	next = "HUB"
+	next = "VR"
 	nocrouch
 	nojump
 	}
@@ -2453,7 +2453,7 @@ map SL29 "Fallen Atlantis"
 	
 map SL30 "Shai'tans Luck"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = "RSKY3"
 	music = "d_sl30"
 	nocrouch
@@ -2884,7 +2884,7 @@ map SOD32 "The Pyramid of Death"
 map SOD33 "Descent to Nowhere"
 	{
 	titlepatch = "SODTP32"
-	next = "HUB"
+	next = "VR"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -3278,7 +3278,7 @@ map SC229 "Dust to Dust"
 map SC230 "Haunting Dreams"
 	{
 	titlepatch = "SC2TP29"
-	next = "HUB"
+	next = "VR"
 	enterpic = "SCINT"
 	exitpic = "SCINT"
 	intermusic = "D_SCINT"
@@ -3353,7 +3353,7 @@ map CS03 "Fudoh"
 map CS04 "Messatsu"
 	{
 	titlepatch = "CSTPX03"
-	next = "HUB"
+	next = "VR"
 	intermusic = "D_CSINT"
 	sky1 = "CS2SKY5"
 	music = "d_cs04"
@@ -3444,7 +3444,7 @@ map CS206 "Closure"
 map CS207 "Shocked for Life"
 	{
 	titlepatch = "CS2TP06"
-	next = "HUB"
+	next = "VR"
 	enterpic = "CS2INT"
 	exitpic = "CS2INT"
 	intermusic = "D_CS2INT"
@@ -3629,7 +3629,7 @@ map VAN12 "Infernal Chasm"
 map VAN13 "Punch-Out"
 	{
 	titlepatch = "VANTP12"
-	next = "HUB"
+	next = "VR"
 	enterpic = "VANINT"
 	exitpic = "VANINT"
 	intermusic = "D_VANINT"
@@ -4068,7 +4068,7 @@ map WOS32 "Ultimative Geheimnis"
 map WOS33 "Credits"
 	{
 	nocrouch
-	next = "HUB"
+	next = "VR"
 	sky1 = "WOSSKY3"
 	enterpic = "WOSINT"
 	exitpic = "WOSINT"
@@ -4264,7 +4264,7 @@ map UAC11 "Sick"
 	
 map UAC12 "The End"
 	{
-	next = "HUB"
+	next = "VR"
 	enterpic = "UACINT"
 	exitpic = "UACINT"
 	music = "UACM12"
@@ -4355,7 +4355,7 @@ map MOM06 "Steel Militia"
 	
 map MOM07 "Geothermal Gymnastics"
 	{
-	next = "HUB"
+	next = "VR"
 	enterpic = "MOMINT"
 	exitpic = "MOMINT"
 	intermusic = "D_MOMINT"
@@ -4692,7 +4692,7 @@ map KSS29 "The Living End"
 map KSS30 "Icon of Sin"
 	{
 	nocrouch
-	next = "HUB"
+	next = "VR"
 	enterpic = "KSSHT"
 	exitpic = "KSSHT"
 	Sky1 = sky1
@@ -4818,7 +4818,7 @@ map COC07 "Below Zero"
 	
 map COC08 "Hot Action In Cold Igloos"
 	{
-	next = "HUB"
+	next = "VR"
 	enterpic = "COCINT"
 	exitpic = "COCINT"
 	intermusic = "D_MOMINT"
@@ -4924,7 +4924,7 @@ map FSW07 "It Doesn't Have A Name"
 	
 map FSW08 "The Chapel"
 	{
-	next = "HUB"
+	next = "VR"
 	enterpic = "FSWINT"
 	exitpic = "FSWINT"
 	intermusic = "D_MOMINT"
@@ -6246,7 +6246,7 @@ map MOC29 "The Living End"
 	
 map MOC30 "Icon of Sin"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = RSKY3
 	titlepatch = CLILV29
 	enterpic = INTERPIC
@@ -6455,7 +6455,7 @@ map SND13 "Obsidian Nightmare"
 
 map SND14 "Hive Mother"
 	{
-	next = "HUB"
+	next = "VR"
 	secretnext = "SND15"
 	sky1 = "SNDSKY2"
 	music = "D_SNDR14"
@@ -7186,7 +7186,7 @@ map DIB27 "Untitled"
 	
 map DIB30 "Operation: Drown in Blood"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = "DIBSKY3"
 	music = "D_1PART"
 	exitpic = "DIBINT"
@@ -7909,7 +7909,7 @@ nojump
 
 map EST30 "Chimes At Midnight"
 {
-next = "HUB"
+next = "VR"
 music = "D_EST30"
 sky1 = "ESTSKY1"
 nocrouch
@@ -8290,7 +8290,7 @@ intermusic = "D_GDINT"
 map GD30 "Game Over"
 {
 music = "D_GD30"
-next = "HUB"
+next = "VR"
 sky1 = "GDSKY1"
 nocrouch
 nojump
@@ -9284,7 +9284,7 @@ map HPH34 "Hadephrenia"
 	
 map HPH35 "Scotch Bonnet"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = HSKY3
 	titlepatch = HPILV34
 	enterpic = HPINT
@@ -9349,7 +9349,7 @@ map DV04 "End of Days"
 	
 map DV05 "Deus Vult"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = DVSKY1
 	titlepatch = DVILV04
 	enterpic = DVINT
@@ -9748,7 +9748,7 @@ map MAY26 "bowser in the black abyss"
 	nocrouch
 	nojump
 	titlepatch = "MAYLV25"
-	next = "HUB"
+	next = "VR"
 	sky1 = "sky3"
 	cluster = 8
 	music = "D_MAY26"
@@ -10621,7 +10621,7 @@ map PIZ29 "The Living End"
 	
 map PIZ30 "Icon of Sin"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = RSKY3
 	titlepatch = CLILV29
 	enterpic = INTERPIC
@@ -11516,7 +11516,7 @@ map TU30 "pure evil"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "HUB"
+	next = "VR"
 	sky1 = "1994SKY3"
 	cluster = 8
 	allowmonstertelefrags
@@ -11706,7 +11706,7 @@ map HC11 "hellcore"
 map HC12 "credits"
 	{
 	titlepatch = "HLCLV11"
-	next = "HUB"
+	next = "VR"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -12098,7 +12098,7 @@ map UHR29 "Snakeskin Treachery"
 	
 map UHR30 "Dis"
 	{
-	next = "HUB"
+	next = "VR"
 	sky1 = URSKY3
 	titlepatch = URILV29
 	enterpic = URINT

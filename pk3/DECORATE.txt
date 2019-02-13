@@ -1,5 +1,4 @@
 /*
-
 This file contains actors from various megawads requried for them.
 Some megawads add custom shit so... makes the merging process really annoying
 */
@@ -32,7 +31,9 @@ ACTOR Lexicon_VoteGun : DoomWeapon
     VOTE A 1 A_Raise
     Loop
   Fire:
-    VOTE A 10 A_RailAttack(0, 8, false, "none", "White", 0, 0, "BulletPuff", 0, 0, 1024.0, 70, 0.5, 0.5)
+    VOTE A 0 A_Playsound("voteshot")
+    VOTE A 0 A_SetBlend("FF FF FF", 0.5, 1)
+    VOTE A 10 A_RailAttack(0, 7, false, "none", "none", RGF_SILENT, 0, "BulletPuff", 0, 0, 1024.0, 70, 0.5, 0.5)
     VOTE A 0 A_ReFire
     Goto Ready
   Spawn:
@@ -4245,7 +4246,7 @@ ACTOR Mayhem17BlueKey : Key 25028 //40
 {
   Inventory.PickupMessage "Picked up a blue key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS0"
+  Inventory.Icon "M17KB"
   States
   {
   Spawn:
@@ -4259,7 +4260,7 @@ ACTOR Mayhem17RedKey : Key 25043 //38
 {
   Inventory.PickupMessage "Picked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS2"
+  Inventory.Icon "M17KR"
   States
   {
   Spawn:
@@ -4273,7 +4274,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS1"
+  Inventory.Icon "M17KY"
   States
   {
   Spawn:
@@ -4283,8 +4284,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
   }
 }
 
-ACTOR Mayhem17RedCoin : RedCard 25017 //13
-
+ACTOR Mayhem17RedCoin : Key 25017 //13
 {
   +INVENTORY.NEVERRESPAWN
   Inventory.PickupMessage "A mysterious red coin..."

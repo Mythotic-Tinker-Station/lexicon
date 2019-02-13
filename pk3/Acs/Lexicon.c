@@ -14,10 +14,12 @@ strict namespace
         #define STATE_COUNTDOWN 1
         #define STATE_CHECKTIE 2
         #define STATE_RESULTS 3
+        
+        #define MAPSET_MAX 193
     #endif
     
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
-    str votenames[193][2] =
+    str votenames[MAPSET_MAX][2] =
     {
         // mapset name                       // the map this vote will take players too
                                                                 // the number a linedef uses to cast the vote
@@ -223,8 +225,8 @@ strict namespace
     /////////////////////
     // vote manager
     /////////////////////
-    int votes[193];                      // holds the votes
-    int votessorted[193][2];             // all the votes, sorted
+    int votes[MAPSET_MAX];              // holds the votes
+    int votessorted[MAPSET_MAX][2];     // all the votes, sorted
     int votecount = 0;                  // amount of votes made
 
     int time_ticks = 0;                 // the time left in ticks
@@ -639,19 +641,22 @@ strict namespace
 
     script "DebugMode_Switch" (int id)
     {
-        switch(id)
+        if(GetCvar("lexicon_debug_mode") == 1)
         {
-            case 0: 
-                if(godmode == 0) { godmode = 1; break; }
-                if(godmode == 1) { godmode = 0; break; }
-                break;
-            case 2: 
-                if(instakiller == 0) { instakiller = 1; break; }
-                if(instakiller == 1) { instakiller = 0; break; }
-                break;
+            switch(id)
+            {
+                case 0: 
+                    if(godmode == 0) { godmode = 1; break; }
+                    if(godmode == 1) { godmode = 0; break; }
+                    break;
+                case 2: 
+                    if(instakiller == 0) { instakiller = 1; break; }
+                    if(instakiller == 1) { instakiller = 0; break; }
+                    break;
+            }
+            ACS_ExecuteAlways(572, 0, godmode);
+            ACS_ExecuteAlways(573, 0, instakiller);
         }
-        ACS_ExecuteAlways(572, 0, godmode);
-        ACS_ExecuteAlways(573, 0, instakiller);
     }
 
     // sync sorted votes to clients
@@ -773,7 +778,7 @@ strict namespace
         int tiecount = 0;
 
         // for every wad
-        for(int i = 1; i < 193; i++)
+        for(int i = 1; i < MAPSET_MAX; i++)
         {
             // if a wad's vote count is the same as the winner
             if(votessorted[i][0] == votessorted[0][0])
@@ -827,10 +832,10 @@ strict namespace
     function void bubble_sort(void)
     {
         int t;
-        int j = 193;
+        int j = MAPSET_MAX;
         int s = 1;
         int v;
-        for (int i = 0; i < 193; i++)
+        for (int i = 0; i < MAPSET_MAX; i++)
         {
             votessorted[i][0] = votes[i];
             votessorted[i][1] = i;
@@ -854,7 +859,7 @@ strict namespace
             j--;
         }
 
-        for(int i = 0; i < 193; i++)
+        for(int i = 0; i < MAPSET_MAX; i++)
         {
             ACS_ExecuteAlways(567, 0, i, votessorted[i][0], votessorted[i][1]);
         }

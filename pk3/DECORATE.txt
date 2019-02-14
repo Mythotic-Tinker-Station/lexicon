@@ -68,7 +68,7 @@ ACTOR Lexicon_Firework_Red
     {
         Spawn:
             FWRK A 0
-            FWRK A 0 ThrustThingZ(0, random(50, 70), 0, 0)
+            FWRK A 0 ThrustThingZ(0, random(150, 200), 0, 0)
         
         Run:
             FWRK A 1 Bright A_SetUserVar("user_time", user_time+1)
@@ -110,7 +110,7 @@ ACTOR Lexicon_Firework_Multi : Lexicon_Firework_Red
     {
         Spawn:
             FWRK A 0
-            FWRK A 0 ThrustThingZ(0, random(50, 70), 0, 0)
+            FWRK A 0 ThrustThingZ(0, random(150, 200), 0, 0)
         
         Run:
             FWRK A 1 Bright A_SetUserVar("user_time", user_time+1)

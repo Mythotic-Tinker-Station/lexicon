@@ -24,6 +24,11 @@ map VR "Inside the Lexicon"
         AirControl = 0.5
 	}
 
+map TITLEMAP "Lexicon Opening"
+	{
+		music = "D_DM2TTL"
+	}
+
 // these must be loaded after the above stuff
 include "Mapinfo/Singles.txt" // Single map wads.
 include "Mapinfo/1997_Tuneup_Project.txt"

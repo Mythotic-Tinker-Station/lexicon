@@ -238,6 +238,7 @@ strict namespace
     int state_clock;                    // custom timer
 
     global int 2:votechosen;            // the winner
+    global int 3:sucktime;              // the sucktime of the previous level
     
     /////////////////////
     // hud
@@ -336,7 +337,8 @@ strict namespace
                 if(clock < 0)
                 {
                     // go back to hub
-                    ChangeLevel("Hub", 0, 0, -1);
+                    sucktime = 0;
+                    ChangeLevel("VR", 0, 0, -1);
                 }
                 delay(34);
             }
@@ -366,7 +368,16 @@ strict namespace
             // give player the votegun
             ClearInventory();
             GiveInventory("Lexicon_VoteGun", 1);
+            
+            // we have come back from a completed mapset
+            if(sucktime == 1337)
+            {
+                ACS_NamedExecute("Fireworks", 0);
+            }
         }
+        
+        // get sucktime of level
+        sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
     }
 
     // when a player enters the game(client side)

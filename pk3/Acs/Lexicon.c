@@ -277,8 +277,17 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) { terminate; }
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            // we have come back from a completed mapset
+            if(sucktime == 1337)
+            {
+                ACS_NamedExecute("Fireworks", 0);
+            }
+            terminate; 
+        }
         
+        sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
         levelstarted = 0;
         clock = GetCvar("lexicon_timer_reset");
 
@@ -353,7 +362,7 @@ strict namespace
     {
         Thing_ChangeTID(0, playernumber()+1337);
 
-        // this entire file should of been in the map script, oh well
+        // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             int pnum = playernumber();
@@ -368,16 +377,7 @@ strict namespace
             // give player the votegun
             ClearInventory();
             GiveInventory("Lexicon_VoteGun", 1);
-            
-            // we have come back from a completed mapset
-            if(sucktime == 1337)
-            {
-                ACS_NamedExecute("Fireworks", 0);
-            }
         }
-        
-        // get sucktime of level
-        sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
     }
 
     // when a player enters the game(client side)

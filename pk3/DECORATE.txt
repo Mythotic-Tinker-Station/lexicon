@@ -16,7 +16,7 @@ ACTOR Lexicon_Firework_Spawner
     {
         Spawn:
         TNT1 A 0
-        TNT1 A 0 A_Jump(256, , "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta", "Multi", "Multi", "Multi") 
+        TNT1 A 0 A_Jump(256, "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta", "Multi", "Multi", "Multi") 
         Stop
         
         Red:

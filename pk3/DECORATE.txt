@@ -8,6 +8,127 @@ Some megawads add custom shit so... makes the merging process really annoying
 // Lexicon        //
 ////////////////////
 
+ACTOR Lexicon_Firework_Spawner
+{
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    States
+    {
+        Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_Jump(256, "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta") 
+        Stop
+        
+        Red:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Red")
+            stop
+            
+        Green:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Green")
+            stop
+            
+        Blue:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Blue")
+            stop
+            
+        Cyan:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Cyan")
+            stop
+            
+        Yellow:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Yellow")
+            stop
+            
+        Magenta:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Magenta")
+            stop
+    }
+}
+
+ACTOR Lexicon_Firework_Red
+{
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    var int user_time;
+    var int user_shota;
+    var int user_shotp;
+    var int user_shotx;
+    var int user_shoty;
+    var int user_shotz;
+    var int user_shots;
+    var int user_shotcount;
+    var int user_shotmax;
+    States
+    {
+        Spawn:
+            PLSS A 0
+            PLSS A 0 ThrustThingZ(0, random(50, 70), 0, 0)
+        
+        Run:
+            PLSS A 1 Bright A_SetUserVar("user_time", user_time+1)
+            PLSS A 0 A_JumpIf(user_time > 30, "Explode_Prep")
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2")
+            Loop
+        
+        Explode_Prep:
+            PLSS A 0 A_SetUserVar("user_shots", random(5, 10))
+            PLSS A 0 A_SetUserVar("user_shotmax", random(10, 30))
+        
+        Explode:
+            PLSS A 0 A_SetUserVar("user_shotcount", user_shotcount+1)
+            PLSS A 0 A_SetUserVar("user_shota", random(0, 359))
+            PLSS A 0 A_SetUserVar("user_shotp", random(0, 359))
+            PLSS A 0 A_SetUserVar("user_shotx", (cos(user_shota)*user_shots)*cos(user_shotp))
+            PLSS A 0 A_SetUserVar("user_shoty", (sin(user_shota)*user_shots)*cos(user_shotp))
+            PLSS A 0 A_SetUserVar("user_shotz", sin(user_shotp)*user_shots)
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle", 0, 0, 0, user_shotx, user_shoty, user_shotz)
+            PLSS A 0 A_JumpIf(user_shotcount > user_shotmax, "Death")
+            loop
+        
+        Death:
+            TNT1 A 0
+            stop
+    }
+}
+
+ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red {}
+ACTOR Lexicon_Firework_Blue : Lexicon_Firework_Red {}
+ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red {}
+ACTOR Lexicon_Firework_Yellow : Lexicon_Firework_Red {}
+ACTOR Lexicon_Firework_Magenta : Lexicon_Firework_Red {}
+
+ACTOR Lexicon_Firework_Particle
+{
+    -NOGRAVITY
+    +LOWGRAVITY
+    +CLIENTSIDEONLY
+    States
+    {
+        Spawn:
+        PLSS A 0
+        
+        Run:
+        PLSS A 1 Bright A_FadeOut(0.02)
+        PLSS A 0 A_SetPitch(alpha)
+        PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPITCH)
+        Loop
+    }
+}
+
+ACTOR Lexicon_Firework_Particle2
+{
+    +NOGRAVITY
+    +CLIENTSIDEONLY
+    States
+    {
+        Spawn:
+        PLSS A 0
+        
+        Run:
+        PLSS A 1 Bright A_FadeOut(0.02)
+        Loop
+    }
+}
 ACTOR Lexicon_VoteGun : DoomWeapon
 {
   Weapon.SelectionOrder 1

@@ -475,6 +475,7 @@ map DKE30 "level 30: victory conditions"
 	nocrouch
 	nojump
 	levelnum = 30
+    SuckTime = 1337
 }
 
 map DKE31 "level 31: hidden citadel"

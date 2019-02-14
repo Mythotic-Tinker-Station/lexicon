@@ -47,6 +47,7 @@ ACTOR Lexicon_Firework_Spawner
 
 ACTOR Lexicon_Firework_Red
 {
+    Translation "192:207=168:191"
     +NOINTERACTION
     +CLIENTSIDEONLY
     var int user_time;
@@ -67,7 +68,7 @@ ACTOR Lexicon_Firework_Red
         Run:
             PLSS A 1 Bright A_SetUserVar("user_time", user_time+1)
             PLSS A 0 A_JumpIf(user_time > 30, "Explode_Prep")
-            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2")
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
             Loop
         
         Explode_Prep:
@@ -81,7 +82,7 @@ ACTOR Lexicon_Firework_Red
             PLSS A 0 A_SetUserVar("user_shotx", (cos(user_shota)*user_shots)*cos(user_shotp))
             PLSS A 0 A_SetUserVar("user_shoty", (sin(user_shota)*user_shots)*cos(user_shotp))
             PLSS A 0 A_SetUserVar("user_shotz", sin(user_shotp)*user_shots)
-            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle", 0, 0, 0, user_shotx, user_shoty, user_shotz)
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0, SXF_TRANSFERTRANSLATION)
             PLSS A 0 A_JumpIf(user_shotcount > user_shotmax, "Death")
             loop
         
@@ -91,11 +92,11 @@ ACTOR Lexicon_Firework_Red
     }
 }
 
-ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red {}
-ACTOR Lexicon_Firework_Blue : Lexicon_Firework_Red {}
-ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red {}
-ACTOR Lexicon_Firework_Yellow : Lexicon_Firework_Red {}
-ACTOR Lexicon_Firework_Magenta : Lexicon_Firework_Red {}
+ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red     { Translation "192:207=168:191" }
+ACTOR Lexicon_Firework_Blue : Lexicon_Firework_Red      { Translation "192:207=192:207" }
+ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red      { Translation "192:207=208:223" } // i didnt think this one through(this is actually orange
+ACTOR Lexicon_Firework_Yellow : Lexicon_Firework_Red    { Translation "192:207=160:167" }
+ACTOR Lexicon_Firework_Magenta : Lexicon_Firework_Red   { Translation "192:207=250:254" }
 
 ACTOR Lexicon_Firework_Particle
 {
@@ -109,8 +110,8 @@ ACTOR Lexicon_Firework_Particle
         
         Run:
         PLSS A 1 Bright A_FadeOut(0.02)
-        PLSS A 0 A_SetPitch(alpha)
-        PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERPITCH)
+        PLSS A 0 A_SetScale(scalex-0.02, scaley-0.02)
+        PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
         Loop
     }
 }
@@ -126,9 +127,13 @@ ACTOR Lexicon_Firework_Particle2
         
         Run:
         PLSS A 1 Bright A_FadeOut(0.02)
+        PLSS A 0 A_SetScale(scalex-0.01, scaley-0.01)
         Loop
     }
 }
+
+
+
 ACTOR Lexicon_VoteGun : DoomWeapon
 {
   Weapon.SelectionOrder 1

@@ -16,7 +16,7 @@ ACTOR Lexicon_Firework_Spawner
     {
         Spawn:
         TNT1 A 0
-        TNT1 A 0 A_Jump(256, "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta") 
+        TNT1 A 0 A_Jump(256, , "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta", "Multi", "Multi", "Multi") 
         Stop
         
         Red:
@@ -42,6 +42,10 @@ ACTOR Lexicon_Firework_Spawner
         Magenta:
             TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Magenta")
             stop
+            
+        Multi:
+            TNT1 A 0 A_SpawnItemEx("Lexicon_Firework_Multi")
+            stop        
     }
 }
 
@@ -68,7 +72,7 @@ ACTOR Lexicon_Firework_Red
         Run:
             PLSS A 1 Bright A_SetUserVar("user_time", user_time+1)
             PLSS A 0 A_JumpIf(user_time > 30, "Explode_Prep")
-            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Trail", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
             Loop
         
         Explode_Prep:
@@ -92,11 +96,67 @@ ACTOR Lexicon_Firework_Red
     }
 }
 
-ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red     { Translation "192:207=168:191" }
+ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red     { Translation "192:207=112:127" }
 ACTOR Lexicon_Firework_Blue : Lexicon_Firework_Red      { Translation "192:207=192:207" }
-ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red      { Translation "192:207=208:223" } // i didnt think this one through(this is actually orange
+ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red      { Translation "192:207=208:223" } // i didnt think this one through(this is actually orange)
 ACTOR Lexicon_Firework_Yellow : Lexicon_Firework_Red    { Translation "192:207=160:167" }
 ACTOR Lexicon_Firework_Magenta : Lexicon_Firework_Red   { Translation "192:207=250:254" }
+ACTOR Lexicon_Firework_Multi : Lexicon_Firework_Red     
+{ 
+    Translation "192:207=80:111"
+    States
+    {
+        Spawn:
+            PLSS A 0
+            PLSS A 0 ThrustThingZ(0, random(50, 70), 0, 0)
+        
+        Run:
+            PLSS A 1 Bright A_SetUserVar("user_time", user_time+1)
+            PLSS A 0 A_JumpIf(user_time > 30, "Explode_Prep")
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Trail", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION)
+            Loop
+        
+        Explode_Prep:
+            PLSS A 0 A_SetUserVar("user_shots", random(5, 10))
+            PLSS A 0 A_SetUserVar("user_shotmax", random(10, 30))
+            
+        Explode:
+            PLSS A 0 A_SetUserVar("user_shotcount", user_shotcount+1)
+            PLSS A 0 A_SetUserVar("user_shota", random(0, 359))
+            PLSS A 0 A_SetUserVar("user_shotp", random(0, 359))
+            PLSS A 0 A_SetUserVar("user_shotx", (cos(user_shota)*user_shots)*cos(user_shotp))
+            PLSS A 0 A_SetUserVar("user_shoty", (sin(user_shota)*user_shots)*cos(user_shotp))
+            PLSS A 0 A_SetUserVar("user_shotz", sin(user_shotp)*user_shots)
+            PLSS A 0 A_Jump(256, "Red", "Green", "Blue", "Cyan", "Yellow", "Magenta")
+            
+        Red:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Red", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+            goto Explode_Cont
+            
+        Green:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Green", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+            goto Explode_Cont
+            
+        Blue:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Blue", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+            goto Explode_Cont
+            
+        Cyan:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Cyan", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+            goto Explode_Cont
+            
+        Yellow:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Yellow", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+            goto Explode_Cont
+            
+        Magenta:
+            PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle_Magenta", 0, 0, 0, user_shotx, user_shoty, user_shotz, 0)
+
+        Explode_Cont:
+            PLSS A 0 A_JumpIf(user_shotcount > user_shotmax, "Death")
+            goto Explode
+    }
+}
 
 ACTOR Lexicon_Firework_Particle
 {
@@ -111,12 +171,19 @@ ACTOR Lexicon_Firework_Particle
         Run:
         PLSS A 1 Bright A_FadeOut(0.02)
         PLSS A 0 A_SetScale(scalex-0.02, scaley-0.02)
-        PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Particle2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
+        PLSS A 0 A_SpawnItemEx("Lexicon_Firework_Trail", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERTRANSLATION|SXF_TRANSFERSCALE)
         Loop
     }
 }
 
-ACTOR Lexicon_Firework_Particle2
+ACTOR Lexicon_Firework_Particle_Red : Lexicon_Firework_Particle       { Translation "192:207=112:127" }
+ACTOR Lexicon_Firework_Particle_Green : Lexicon_Firework_Particle     { Translation "192:207=192:107" }
+ACTOR Lexicon_Firework_Particle_Blue : Lexicon_Firework_Particle      { Translation "192:207=192:207" }
+ACTOR Lexicon_Firework_Particle_Cyan : Lexicon_Firework_Particle      { Translation "192:207=208:223" }
+ACTOR Lexicon_Firework_Particle_Yellow : Lexicon_Firework_Particle    { Translation "192:207=160:167" }
+ACTOR Lexicon_Firework_Particle_Magenta : Lexicon_Firework_Particle   { Translation "192:207=250:254" }
+
+ACTOR Lexicon_Firework_Trail
 {
     +NOGRAVITY
     +CLIENTSIDEONLY

@@ -377,6 +377,7 @@ strict namespace
             // give player the votegun
             ClearInventory();
             GiveInventory("Lexicon_VoteGun", 1);
+
         }
     }
 
@@ -415,7 +416,14 @@ strict namespace
         {
             HudSetup(0, 0);
             setfont("hudfont");
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 64.0, 10.0);
+            hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
+                        
+            // we have come back from a completed mapset
+            if(sucktime == 1337)
+            {
+                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[votechosen][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+            }
+
 
             // setup the confetti
             for(int c = 0; c < 64; c++)
@@ -881,8 +889,8 @@ strict namespace
         int x = xres;
         int y = yres;
 
-        if(x < 1) { x = GetCVar("vid_defwidth"); }
-        if(y < 1) { y = GetCVar("vid_defheight"); }
+        if(x < 1) { x = GetScreenWidth(); }
+        if(y < 1) { y = GetScreenHeight(); }
 
         hud_width = (fixed)(x*65536);
         hud_height = (fixed)(y*65536);
@@ -903,5 +911,25 @@ strict namespace
         hudmessagebold(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\nAnd who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, check it out at https://www.webtoons.com/en/challenge/therianthrope/list?title_no=5389"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

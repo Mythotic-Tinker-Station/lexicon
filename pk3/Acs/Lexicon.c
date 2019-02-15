@@ -904,18 +904,18 @@ strict namespace
     
     ////// Easter egg shit because i need the hud vars
 
-    script "thrope" (void)
+    script "thrope" (void) clientside
     {
         HudSetup(0,0);
         setfont("HUDFONT");
-        hudmessagebold(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, check it out at https://www.webtoons.com/en/challenge/therianthrope/list?title_no=5389"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, check it out at https://www.webtoons.com/en/challenge/therianthrope/list?title_no=5389"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 	
-    script "lex_lore1" (void)
+    script "lex_lore1" (void) clientside
     {
         HudSetup(0,0);
         setfont("HUDFONT");
-        hudmessagebold(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knolwdge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
 

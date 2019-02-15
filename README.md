@@ -41,6 +41,13 @@ So far, the mapsets included are:
 - Pizza Steve
 - Hellbound
 - 1994 Tune up Community Project
+- Unholy Realms
+- Hellcore 2.0
+
+We also started to add single map wads. So far, these are included:
+
+- The Spire
+- The Eye
 
 You can also access doom 2 from the hub now!
 
@@ -72,3 +79,5 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - Skulltag for the railgun sprites used for the InstaKiller
 - Guilty Gear for the hub music
 - Corgiatom for the hub music
+- Willo for some of the artwork included in the HUB map
+- and YOU, for playing the damn thing. Cant do it without YOU

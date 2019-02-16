@@ -19,208 +19,208 @@ strict namespace
     #endif
     
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
-    str votenames[MAPSET_MAX][2] =
+    str votenames[MAPSET_MAX][3] =
     {
         // mapset name                       // the map this vote will take players too
                                                                 // the number a linedef uses to cast the vote
         // Normal mapsets
-        { "Nothing",                        "----"              }, // 0
-        { "Doom 2",                         "MAP01"             }, // 1
-        { "Hell Revealed",                  "HR01"              }, // 2
-        { "Hell Revealed 2",                "HR201"             }, // 3
-        { "Kamasutra",                      "KS01"              }, // 4
-        { "Shai'tans Luck",                 "SL20"              }, // 5
-        { "Speed Of Doom",                  "SOD01"             }, // 6
-        { "VanGaurd",                       "VAN01"             }, // 7
-        { "Scythe 2",                       "SC201"             }, // 8
-		{ "Whispers Of Satan",		        "WOS01"	            }, // 9
-		{ "UAC Ultra",				        "UAC01"	            }, // 10
-		{ "Monuments Of Mars",		        "MOM01"	            }, // 11
-		{ "Khorus's Speedy Shit",	        "KSS01"	            }, // 12
-		{ "Circle of Caina",		        "COC01"	            }, // 13
-		{ "Forest Swords",			        "FSW01"	            }, // 14
-		{ "Doom Core Trilogy",		        "DC01"	            }, // 15
-		{ "Maps of Chaos",	                "MOC01"	            }, // 16
-		{ "Doom 2 The Way ID Did",	        "WID01"             }, // 17
-		{ "Estranged",				        "EST01"             }, // 18
-		{ "Going Down",				        "GD01"	            }, // 19
-		{ "Dark Encounters",		        "DKE01"	            }, // 20
-        { "Alien Vendetta",                 "AV01"              }, // 21
-		{ "Hadephobia",				        "HPH01"             }, // 22
-		{ "Mayhem 17",				        "MAY01"	            }, // 23
-		{ "Sunlust",				        "SLU01"	            }, // 24
-		{ "Hellbound",				        "HLB01"             }, // 25
-		{ "1994 Tune Up Community Project", "TU01"              }, // 26
-		{ "Unholy Realms",			        "UHR01"	            }, // 27
-        { "Hell Core",			            "HC01"	            }, // 28
-        { "Unused",			                "MAP01"	            }, // 29
-        { "Unused",			                "MAP01"	            }, // 30
-        { "Unused",			                "MAP01"	            }, // 31
-        { "Unused",			                "MAP01"	            }, // 32
-        { "Unused",			                "MAP01"	            }, // 33
-        { "Unused",			                "MAP01"	            }, // 34
-        { "Unused",			                "MAP01"	            }, // 35
-        { "Unused",			                "MAP01"	            }, // 36
-        { "Unused",			                "MAP01"	            }, // 37
-        { "Unused",			                "MAP01"	            }, // 38
-        { "Unused",			                "MAP01"	            }, // 39
-        { "Unused",			                "MAP01"	            }, // 40
-        { "Unused",			                "MAP01"	            }, // 41
-        { "Unused",			                "MAP01"	            }, // 42
-        { "Unused",			                "MAP01"	            }, // 43
-        { "Unused",			                "MAP01"	            }, // 44
-        { "Unused",			                "MAP01"	            }, // 45
-        { "Unused",			                "MAP01"	            }, // 46
-        { "Unused",			                "MAP01"	            }, // 47
-        { "Unused",			                "MAP01"	            }, // 48
-        { "Unused",			                "MAP01"	            }, // 49
-        { "Unused",			                "MAP01"	            }, // 50
-        { "Unused",			                "MAP01"	            }, // 51
-        { "Unused",			                "MAP01"	            }, // 52
-        { "Unused",			                "MAP01"	            }, // 53
-        { "Unused",			                "MAP01"	            }, // 54
-        { "Unused",			                "MAP01"	            }, // 55
-        { "Unused",			                "MAP01"	            }, // 56
-        { "Unused",			                "MAP01"	            }, // 57
-        { "Unused",			                "MAP01"	            }, // 58
-        { "Unused",			                "MAP01"	            }, // 59
-        { "Unused",			                "MAP01"	            }, // 60
-        { "Unused",			                "MAP01"	            }, // 61
-        { "Unused",			                "MAP01"	            }, // 62
-        { "Unused",			                "MAP01"	            }, // 63
-        { "Unused",			                "MAP01"	            }, // 64
+        { "Nothing",                        "----",             "\c[Green](Normal)"}, // 0
+        { "Doom 2",                         "MAP01",            "\c[Green](Normal)"}, // 1
+        { "Hell Revealed",                  "HR01",             "\c[Green](Normal)"}, // 2
+        { "Hell Revealed 2",                "HR201",            "\c[Green](Normal)"}, // 3
+        { "Kamasutra",                      "KS01",             "\c[Green](Normal)"}, // 4
+        { "Shai'tans Luck",                 "SL20",             "\c[Green](Normal)"}, // 5
+        { "Speed Of Doom",                  "SOD01",            "\c[Green](Normal)"}, // 6
+        { "VanGaurd",                       "VAN01",            "\c[Green](Normal)"}, // 7
+        { "Scythe 2",                       "SC201",            "\c[Green](Normal)"}, // 8
+		{ "Whispers Of Satan",		        "WOS01",	        "\c[Green](Normal)"}, // 9
+		{ "UAC Ultra",				        "UAC01",	        "\c[Green](Normal)"}, // 10
+		{ "Monuments Of Mars",		        "MOM01",	        "\c[Green](Normal)"}, // 11
+		{ "Khorus's Speedy Shit",	        "KSS01",	        "\c[Green](Normal)"}, // 12
+		{ "Circle of Caina",		        "COC01",	        "\c[Green](Normal)"}, // 13
+		{ "Forest Swords",			        "FSW01",	        "\c[Green](Normal)"}, // 14
+		{ "Doom Core Trilogy",		        "DC01",	            "\c[Green](Normal)"}, // 15
+		{ "Maps of Chaos",	                "MOC01",	        "\c[Green](Normal)"}, // 16
+		{ "Doom 2 The Way ID Did",	        "WID01",            "\c[Green](Normal)"}, // 17
+		{ "Estranged",				        "EST01",            "\c[Green](Normal)"}, // 18
+		{ "Going Down",				        "GD01",	            "\c[Green](Normal)"}, // 19
+		{ "Dark Encounters",		        "DKE01",	        "\c[Green](Normal)"}, // 20
+        { "Alien Vendetta",                 "AV01",             "\c[Green](Normal)"}, // 21
+		{ "Hadephobia",				        "HPH01",            "\c[Green](Normal)"}, // 22
+		{ "Mayhem 17",				        "MAY01",	        "\c[Green](Normal)"}, // 23
+		{ "Sunlust",				        "SLU01",	        "\c[Green](Normal)"}, // 24
+		{ "Hellbound",				        "HLB01",            "\c[Green](Normal)"}, // 25
+		{ "1994 Tune Up Community Project", "TU01",             "\c[Green](Normal)"}, // 26
+		{ "Unholy Realms",			        "UHR01",	        "\c[Green](Normal)"}, // 27
+        { "Hell Core",			            "HC01",	            "\c[Green](Normal)"}, // 28
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 29
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 30
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 31
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 32
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 33
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 34
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 35
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 36
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 37
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 38
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 39
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 40
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 41
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 42
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 43
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 44
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 45
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 46
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 47
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 48
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 49
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 50
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 51
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 52
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 53
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 54
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 55
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 56
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 57
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 58
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 59
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 60
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 61
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 62
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 63
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 64
         
         // Slaughter Mapsets
-        { "Combat Shock",                   "CS01"              }, // 65
-        { "Combat Shock 2",                 "CS201"             }, // 66
-        { "New Gothic Movement 1",          "NG101"             }, // 67
-        { "Dark Tartarus",                  "TAT01"             }, // 68
-		{ "Sunder",					        "SND01"             }, // 69
-		{ "Drown in Blood",			        "DIB01"	            }, // 70
-		{ "Swift Death",			        "SDE01"             }, // 71
-        { "Deus Vult",				        "DV01"	            }, // 72
-        { "Pizza Steve",			        "PIZ01"             }, // 73
-        { "Unused",			                "MAP01"	            }, // 74
-        { "Unused",			                "MAP01"	            }, // 75
-        { "Unused",			                "MAP01"	            }, // 76
-        { "Unused",			                "MAP01"	            }, // 77
-        { "Unused",			                "MAP01"	            }, // 78
-        { "Unused",			                "MAP01"	            }, // 79
-        { "Unused",			                "MAP01"	            }, // 80
-        { "Unused",			                "MAP01"	            }, // 81
-        { "Unused",			                "MAP01"	            }, // 82
-        { "Unused",			                "MAP01"	            }, // 83
-        { "Unused",			                "MAP01"	            }, // 84
-        { "Unused",			                "MAP01"	            }, // 85
-        { "Unused",			                "MAP01"	            }, // 86
-        { "Unused",			                "MAP01"	            }, // 87
-        { "Unused",			                "MAP01"	            }, // 88
-        { "Unused",			                "MAP01"	            }, // 89
-        { "Unused",			                "MAP01"	            }, // 90
-        { "Unused",			                "MAP01"	            }, // 91
-        { "Unused",			                "MAP01"	            }, // 92
-        { "Unused",			                "MAP01"	            }, // 92
-        { "Unused",			                "MAP01"	            }, // 94
-        { "Unused",			                "MAP01"	            }, // 95
-        { "Unused",			                "MAP01"	            }, // 96
-        { "Unused",			                "MAP01"	            }, // 97
-        { "Unused",			                "MAP01"	            }, // 98
-        { "Unused",			                "MAP01"	            }, // 99
-        { "Unused",			                "MAP01"	            }, // 100
-        { "Unused",			                "MAP01"	            }, // 101
-        { "Unused",			                "MAP01"	            }, // 102
-        { "Unused",			                "MAP01"	            }, // 103
-        { "Unused",			                "MAP01"	            }, // 104
-        { "Unused",			                "MAP01"	            }, // 105
-        { "Unused",			                "MAP01"	            }, // 106
-        { "Unused",			                "MAP01"	            }, // 107
-        { "Unused",			                "MAP01"	            }, // 108
-        { "Unused",			                "MAP01"	            }, // 109
-        { "Unused",			                "MAP01"	            }, // 110
-        { "Unused",			                "MAP01"	            }, // 111
-        { "Unused",			                "MAP01"	            }, // 112
-        { "Unused",			                "MAP01"	            }, // 113
-        { "Unused",			                "MAP01"	            }, // 114
-        { "Unused",			                "MAP01"	            }, // 115
-        { "Unused",			                "MAP01"	            }, // 116
-        { "Unused",			                "MAP01"	            }, // 117
-        { "Unused",			                "MAP01"	            }, // 118
-        { "Unused",			                "MAP01"	            }, // 119
-        { "Unused",			                "MAP01"	            }, // 120
-        { "Unused",			                "MAP01"	            }, // 121
-        { "Unused",			                "MAP01"	            }, // 122
-        { "Unused",			                "MAP01"	            }, // 123
-        { "Unused",			                "MAP01"	            }, // 124
-        { "Unused",			                "MAP01"	            }, // 125
-        { "Unused",			                "MAP01"	            }, // 126
-        { "Unused",			                "MAP01"	            }, // 127
-        { "Unused",			                "MAP01"	            }, // 128
+        { "Combat Shock",                   "CS01",             "\c[Red](Slaughter)"}, // 65
+        { "Combat Shock 2",                 "CS201",            "\c[Red](Slaughter)"}, // 66
+        { "New Gothic Movement 1",          "NG101",            "\c[Red](Slaughter)"}, // 67
+        { "Dark Tartarus",                  "TAT01",            "\c[Red](Slaughter)"}, // 68
+		{ "Sunder",					        "SND01",            "\c[Red](Slaughter)"}, // 69
+		{ "Drown in Blood",			        "DIB01",	        "\c[Red](Slaughter)"}, // 70
+		{ "Swift Death",			        "SDE01",            "\c[Red](Slaughter)"}, // 71
+        { "Deus Vult",				        "DV01",	            "\c[Red](Slaughter)"}, // 72
+        { "Pizza Steve",			        "PIZ01",            "\c[Red](Slaughter)"}, // 73
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 74
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 75
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 76
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 77
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 78
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 79
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 80
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 81
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 82
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 83
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 84
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 85
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 86
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 87
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 88
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 89
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 90
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 91
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 92
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 92
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 94
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 95
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 96
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 97
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 98
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 99
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 100
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 101
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 102
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 103
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 104
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 105
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 106
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 107
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 108
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 109
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 110
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 111
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 112
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 113
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 114
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 115
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 116
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 117
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 118
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 119
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 120
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 121
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 122
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 123
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 124
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 125
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 126
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 127
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 128
         
         // Single Levels
-		{ "The Spire",				        "TSP01"	            }, // 129
-		{ "The Eye",				        "EYE01"	            }, // 130
-        { "Unused",			                "MAP01"	            }, // 131
-        { "Unused",			                "MAP01"	            }, // 132
-        { "Unused",			                "MAP01"	            }, // 133
-        { "Unused",			                "MAP01"	            }, // 134
-        { "Unused",			                "MAP01"	            }, // 135
-        { "Unused",			                "MAP01"	            }, // 136
-        { "Unused",			                "MAP01"	            }, // 137
-        { "Unused",			                "MAP01"	            }, // 138
-        { "Unused",			                "MAP01"	            }, // 139
-        { "Unused",			                "MAP01"	            }, // 140
-        { "Unused",			                "MAP01"	            }, // 141
-        { "Unused",			                "MAP01"	            }, // 142
-        { "Unused",			                "MAP01"	            }, // 143
-        { "Unused",			                "MAP01"	            }, // 144
-        { "Unused",			                "MAP01"	            }, // 145
-        { "Unused",			                "MAP01"	            }, // 146
-        { "Unused",			                "MAP01"	            }, // 147
-        { "Unused",			                "MAP01"	            }, // 148
-        { "Unused",			                "MAP01"	            }, // 149
-        { "Unused",			                "MAP01"	            }, // 150
-        { "Unused",			                "MAP01"	            }, // 151
-        { "Unused",			                "MAP01"	            }, // 152
-        { "Unused",			                "MAP01"	            }, // 153
-        { "Unused",			                "MAP01"	            }, // 154
-        { "Unused",			                "MAP01"	            }, // 155
-        { "Unused",			                "MAP01"	            }, // 156
-        { "Unused",			                "MAP01"	            }, // 157
-        { "Unused",			                "MAP01"	            }, // 158
-        { "Unused",			                "MAP01"	            }, // 159
-        { "Unused",			                "MAP01"	            }, // 160
-        { "Unused",			                "MAP01"	            }, // 161
-        { "Unused",			                "MAP01"	            }, // 162
-        { "Unused",			                "MAP01"	            }, // 163
-        { "Unused",			                "MAP01"	            }, // 164
-        { "Unused",			                "MAP01"	            }, // 165
-        { "Unused",			                "MAP01"	            }, // 166
-        { "Unused",			                "MAP01"	            }, // 167
-        { "Unused",			                "MAP01"	            }, // 168
-        { "Unused",			                "MAP01"	            }, // 169
-        { "Unused",			                "MAP01"	            }, // 170
-        { "Unused",			                "MAP01"	            }, // 171
-        { "Unused",			                "MAP01"	            }, // 172
-        { "Unused",			                "MAP01"	            }, // 173
-        { "Unused",			                "MAP01"	            }, // 174
-        { "Unused",			                "MAP01"	            }, // 175
-        { "Unused",			                "MAP01"	            }, // 176
-        { "Unused",			                "MAP01"	            }, // 177
-        { "Unused",			                "MAP01"	            }, // 178
-        { "Unused",			                "MAP01"	            }, // 179
-        { "Unused",			                "MAP01"	            }, // 180
-        { "Unused",			                "MAP01"	            }, // 181
-        { "Unused",			                "MAP01"	            }, // 182
-        { "Unused",			                "MAP01"	            }, // 183
-        { "Unused",			                "MAP01"	            }, // 184
-        { "Unused",			                "MAP01"	            }, // 185
-        { "Unused",			                "MAP01"	            }, // 186
-        { "Unused",			                "MAP01"	            }, // 187
-        { "Unused",			                "MAP01"	            }, // 188
-        { "Unused",			                "MAP01"	            }, // 189
-        { "Unused",			                "MAP01"	            }, // 190
-        { "Unused",			                "MAP01"	            }, // 191
-        { "Unused",			                "MAP01"	            }, // 192
+		{ "The Spire",				        "TSP01",            "\c[LightBlue](Single)"}, // 129
+		{ "The Eye",				        "EYE01",            "\c[LightBlue](Single)"}, // 130
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 131
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 132
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 133
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 134
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 135
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 136
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 137
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 138
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 139
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 140
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 141
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 142
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 143
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 144
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 145
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 146
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 147
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 148
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 149
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 150
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 151
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 152
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 153
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 154
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 155
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 156
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 157
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 158
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 159
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 160
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 161
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 162
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 163
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 164
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 165
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 166
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 167
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 168
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 169
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 170
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 171
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 172
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 173
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 174
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 175
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 176
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 177
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 178
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 179
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 180
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 181
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 182
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 183
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 184
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 185
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 186
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 187
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 188
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 189
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 190
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 191
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 192
     };
     /////////////////////
     // vote manager
@@ -500,6 +500,7 @@ strict namespace
                         {
                             y += 23.0;
                             hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
+                            hudmessagebold(s:votenames[votessorted[i][1]][2], s:" "; 0, i+11000, 0, 225.2, y, 0.1);
                         }
                     }
 

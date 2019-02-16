@@ -37,6 +37,8 @@ HUDFONT
 	X FONT5_X
 	Y FONT5_Y
 	Z FONT5_Z
+    ( FONT5__2
+    ) FONT5__3
 	, FONT5__5
 	: FONT5__9
     ! FONT5__A
@@ -48,5 +50,6 @@ HUDFONT
 	- FONT5__L
     . FONT5_PR
     & FONT5__1
+    
 	NOTRANSLATION 4
 }

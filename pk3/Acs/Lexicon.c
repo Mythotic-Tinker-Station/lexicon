@@ -22,8 +22,8 @@ strict namespace
     str votenames[MAPSET_MAX][3] =
     {
         // mapset name                       // the map this vote will take players too
-                                                                // the number a linedef uses to cast the vote
-        // Normal mapsets
+                                                                                    // the number a linedef uses to cast the vote
+        // Normal mapsets                                       // the prefix shown in the vote list
         { "Nothing",                        "----",             "\c[Green](Normal)"}, // 0
         { "Doom 2",                         "MAP01",            "\c[Green](Normal)"}, // 1
         { "Hell Revealed",                  "HR01",             "\c[Green](Normal)"}, // 2

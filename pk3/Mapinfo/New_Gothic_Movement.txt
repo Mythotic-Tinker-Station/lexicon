@@ -1,0 +1,164 @@
+map NG101 "New Gothic 1 MAP01"
+	{
+	next = "NG102"
+	sky1 = "RSKY1"
+	music = "d_ng101"
+	nocrouch
+	nojump
+	}
+	
+map NG102 "New Gothic 1 MAP02"
+	{
+	next = "NG103"
+	sky1 = "RSKY1"
+	music = "d_ng102"
+	nocrouch
+	nojump
+	}
+	
+map NG103 "New Gothic 1 MAP03"
+	{
+	next = "NG104"
+	sky1 = "RSKY1"
+	music = "d_ng103"
+	nocrouch
+	nojump
+	}
+	
+map NG104 "New Gothic 1 MAP04"
+	{
+	next = "NG105"
+	sky1 = "RSKY1"
+	music = "d_ng104"
+	nocrouch
+	nojump
+	}
+	
+map NG105 "New Gothic 1 MAP05"
+	{
+	next = "NG106"
+	sky1 = "RSKY1"
+	music = "d_ng105"
+	nocrouch
+	nojump
+	}
+	
+map NG106 "New Gothic 1 MAP06"
+	{
+	next = "NG107"
+	sky1 = "RSKY1"
+	music = "d_ng106"
+	nocrouch
+	nojump
+	}
+	
+map NG107 "New Gothic 1 MAP07"
+	{
+	next = "NG108"
+	sky1 = "RSKY1"
+	music = "d_ng107"
+	Map07Special 
+	nocrouch
+	nojump
+	}
+	
+map NG108 "New Gothic 1 MAP08"
+	{
+	next = "NG109"
+	sky1 = "RSKY1"
+	music = "d_ng108"
+	nocrouch
+	nojump
+	}
+	
+map NG109 "New Gothic 1 MAP09"
+	{
+	next = "NG110"
+	sky1 = "RSKY1"
+	music = "d_ng109"
+	nocrouch
+	nojump
+	}
+	
+map NG110 "New Gothic 1 MAP10"
+	{
+	next = "NG111"
+	sky1 = "RSKY1"
+	music = "d_ng110"
+	nocrouch
+	nojump
+	}
+	
+map NG111 "New Gothic 1 MAP11"
+	{
+	next = "NG112"
+	sky1 = "RSKY1"
+	music = "d_ng111"
+	nocrouch
+	nojump
+	}
+	
+map NG112 "New Gothic 1 MAP12"
+	{
+	next = "NG113"
+	sky1 = "NG1RSKY2"
+	music = "d_ng112"
+	nocrouch
+	nojump
+	}
+	
+map NG113 "New Gothic 1 MAP13"
+	{
+	next = "NG114"
+	sky1 = "NG1RSKY2"
+	music = "d_ng113"
+	nocrouch
+	nojump
+	}
+	
+map NG114 "New Gothic 1 MAP14"
+	{
+	next = "NG115"
+	sky1 = "NG1RSKY2"
+	music = "d_ng114"
+	nocrouch
+	nojump
+	}
+	
+map NG115 "New Gothic 1 MAP15"
+	{
+	next = "NG116"
+	secretnext = "NG131"
+	sky1 = "NG1RSKY2"
+	music = "d_ng115"
+	nocrouch
+	nojump
+	}
+	
+map NG116 "New Gothic 1 MAP16"
+	{
+	next = "NG121"
+	sky1 = "NG1RSKY2"
+	music = "d_ng116"
+	nocrouch
+	nojump
+	}
+	
+map NG121 "New Gothic 1 MAP21"
+	{
+	sky1 = "RSKY3"
+	music = "d_ng121"
+	next = "VR"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map NG131 "New Gothic 1 MAP31"
+	{
+	next = "NG116"
+	sky1 = "RSKY3"
+	music = "d_ng131"
+	nocrouch
+	nojump
+	}

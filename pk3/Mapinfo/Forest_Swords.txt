@@ -1,0 +1,104 @@
+map FSW01 "Rocky Start"
+	{
+	next = "FSW02"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW01"
+	titlepatch = "FSWLV00"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW02 "Canyon Crawl"
+	{
+	next = "FSW03"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW02"
+	titlepatch = "FSWLV01"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW03 "Guerilla Skeletons"
+	{
+	next = "FSW04"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW03"
+	titlepatch = "FSWLV02"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW04 "Forest Fort"
+	{
+	next = "FSW05"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW04"
+	titlepatch = "FSWLV03"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW05 "The Valley"
+	{
+	next = "FSW06"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW05"
+	titlepatch = "FSWLV04"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW06 "Crisis Center"
+	{
+	next = "FSW07"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW06"
+	titlepatch = "FSWLV05"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW07 "It Doesn't Have A Name"
+	{
+	next = "FSW08"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW07"
+	titlepatch = "FSWLV06"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+	}
+	
+map FSW08 "The Chapel"
+	{
+	next = "VR"
+	enterpic = "FSWINT"
+	exitpic = "FSWINT"
+	intermusic = "D_MOMINT"
+	music = "D_FSW08"
+	titlepatch = "FSWLV07"
+	sky1 = "FSWSKY"
+	nojump
+	nocrouch
+    SuckTime = 1337
+	}

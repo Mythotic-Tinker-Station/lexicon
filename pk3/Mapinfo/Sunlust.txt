@@ -1,0 +1,482 @@
+map SLU01 "Chasing Suns"
+{
+titlepatch = SUNLV00
+next = SLU02
+secretnext = SLU02
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU01
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU02 "Down Through"
+{
+titlepatch = SUNLV01
+next = SLU03
+secretnext = SLU03
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU02
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU03 "Forgotten Shrine"
+{
+titlepatch = SUNLV02
+next = SLU04
+secretnext = SLU04
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU03
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU04 "Sol"
+{
+titlepatch = SUNLV03
+next = SLU05
+secretnext = SLU05
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU04
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU05 "Gear Up"
+{
+titlepatch = SUNLV04
+next = SLU06
+secretnext = SLU06
+sky1 = RSKY1, 0
+cluster = 1
+music = D_SLU05
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU06 "Neo Gerouru"
+{
+titlepatch = SUNLV05
+next = SLU07
+secretnext = SLU07
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU06
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU07 "Total Enclosure"
+{
+titlepatch = SUNLV06
+next = SLU08
+secretnext = SLU08
+sky1 = SKY1, 0
+cluster = 1
+map07special
+music = D_SLU07
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU08 "Oneira"
+{
+titlepatch = SUNLV07
+next = SLU09
+secretnext = SLU09
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU08
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU09 "Saquasohuh"
+{
+titlepatch = SUNLV08
+next = SLU10
+secretnext = SLU10
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU09
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU10 "Maru"
+{
+titlepatch = SUNLV09
+next = SLU11
+secretnext = SLU11
+sky1 = SKY1, 0
+cluster = 1
+music = D_SLU10
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU11 "Cave Culture"
+{
+titlepatch = SUNLV10
+next = SLU12
+secretnext = SLU12
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU11
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU12 "Dangeresque"
+{
+titlepatch = SUNLV11
+next = SLU13
+secretnext = SLU13
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU12
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU13 "Ruins of Skania"
+{
+titlepatch = SUNLV12
+next = SLU14
+secretnext = SLU14
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU13
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU14 "Troglobite"
+{
+titlepatch = SUNLV13
+next = SLU15
+secretnext = SLU15
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU14
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU15 "Strength And Anger"
+{
+titlepatch = SUNLV14
+next = SLU16
+secretnext = SLU31
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU15
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU16 "Lost Antiques"
+{
+titlepatch = SUNLV15
+next = SLU17
+secretnext = SLU17
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU16
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU17 "The Womb"
+{
+titlepatch = SUNLV16
+next = SLU18
+secretnext = SLU18
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU17
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU18 "Mu Cephei"
+{
+titlepatch = SUNLV17
+next = SLU19
+secretnext = SLU19
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU18
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU19 "Blood Geometry"
+{
+titlepatch = SUNLV18
+next = SLU20
+secretnext = SLU20
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU19
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU20 "Inverti in Darkness"
+{
+titlepatch = SUNLV19
+next = SLU21
+secretnext = SLU21
+sky1 = SKY1, 0
+cluster = 2
+music = D_SLU20
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU21 "Entering Aquatic Desert"
+{
+titlepatch = SUNLV20
+next = SLU22
+secretnext = SLU22
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU21
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU22 "Black Rabbit"
+{
+titlepatch = SUNLV21
+next = SLU23
+secretnext = SLU23
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU22
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU23 "In Flight"
+{
+titlepatch = SUNLV22
+next = SLU24
+secretnext = SLU24
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU23
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU24 "Dying On Cue"
+{
+titlepatch = SUNLV23
+next = SLU25
+secretnext = SLU25
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU24
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU25 "Proxyon"
+{
+titlepatch = SUNLV24
+next = SLU26
+secretnext = SLU26
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU25
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU26 "Kinetics"
+{
+titlepatch = SUNLV25
+next = SLU27
+secretnext = SLU27
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU26
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU27 "Emerald Spire"
+{
+titlepatch = SUNLV26
+next = SLU28
+secretnext = SLU28
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU27
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU28 "Maelstrom"
+{
+titlepatch = SUNLV27
+next = SLU29
+secretnext = SLU29
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU28
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU29 "Go Fuck Yourself"
+{
+titlepatch = SUNLV28
+next = SLU30
+secretnext = SLU30
+sky1 = SKY1, 0
+cluster = 3
+music = D_SLU29
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU30 "God Machine"
+{
+titlepatch = SUNLV29
+next = "VR"
+secretnext = "VR"
+sky1 = SKY1, 0
+cluster = 3
+allowmonstertelefrags
+music = D_SLU30
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+SuckTime = 1337
+}
+
+map SLU31 "Birds of A Feather"
+{
+titlepatch = SUNLV30
+next = SLU32
+secretnext = SLU32
+sky1 = SUNSKY3, 0
+cluster = 4
+music = D_SLU31
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}
+
+map SLU32 "Postcoitus Doom"
+{
+titlepatch = SUNLV31
+next = SLU16
+secretnext = SLU16
+sky1 = SKY1, 0
+cluster = 4
+music = D_SLU32
+nocrouch
+nojump
+enterpic = "SUNINT"
+exitpic = "SUNINT"
+intermusic = "D_SLUINT"
+}

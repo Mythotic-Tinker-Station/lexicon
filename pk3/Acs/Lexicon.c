@@ -1,61 +1,232 @@
 // written in BCS
 #include "../../compiler/lib/zcommon.h"
 #library "vote"
-#define NUMBER_OF_KEYS 6
 
 strict namespace
 {
     #if 1
+    
+        #include "skybox.c"
+
         // dont touch this
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1
         #define STATE_CHECKTIE 2
         #define STATE_RESULTS 3
+        
+        #define MAPSET_MAX 193
     #endif
     
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
-    str votenames[64][2] =
+    str votenames[MAPSET_MAX][3] =
     {
-        // wad name                 // the map this vote will take players too
-        { "Doom 2",                 "MAP01"  }, // 0
-        { "Combat Shock",           "CS01"  }, // 1 Slaughter Map
-        { "Combat Shock 2",         "CS201" }, // 2 Slaughter Map
-        { "Hell Revealed",          "HR01"  }, // 3
-        { "Hell Revealed 2",        "HR201" }, // 4
-        { "Kamasutra",              "KS01"  }, // 5
-        { "New Gothic Movement 1",  "NG101" }, // 6 Slaughter Map
-        { "Shai'tans Luck",         "SL20"  }, // 7
-        { "Speed Of Doom",          "SOD01" }, // 8
-        { "Dark Tartarus",          "TAT01" }, // 9 Slaughter Map
-        { "VanGaurd",               "VAN01" }, // 10
-        { "Scythe 2",               "SC201" }, // 11
-		{ "Whispers Of Satan",		"WOS01"	}, // 12
-		{ "UAC Ultra",				"UAC01"	}, // 13
-		{ "Monuments Of Mars",		"MOM01"	}, // 14
-		{ "Khorus's Speedy Shit",	"KSS01"	}, // 15
-		{ "Circle of Caina",		"COC01"	}, // 16
-		{ "Forest Swords",			"FSW01"	}, // 17
-		{ "Doom Core Trilogy",		"DC01"	}, // 18
-		{ "Maps of Chaos",	        "MOC01"	}, // 19
-		{ "Sunder",					"SND01" }, // 20 Slaughter Map
-		{ "Doom 2 The Way ID Did",	"WID01" }, // 21
-		{ "Drown in Blood",			"DIB01"	}, // 22 Slaughter Map
-		{ "Swift Death",			"SDE01" }, // 23 Slaughter Map
-		{ "Estranged",				"EST01" }, // 24
-		{ "Going Down",				"GD01"	}, // 25
-		{ "Dark Encounters",		"DKE01"	}, // 26
-        { "Alien Vendetta",         "AV01"  }, // 27
-		{ "Hadephobia",				"HPH01" }, // 28
-		{ "Deus Vult",				"DV01"	}, // 29 Slaughter Map
-		{ "Mayhem 17",				"MAY01"	}, // 30
-		{ "Sunlust",				"SLU01"	}, // 31
+        // mapset name                       // the map this vote will take players too
+                                                                                    // the number a linedef uses to cast the vote
+        // Normal mapsets                                       // the prefix shown in the vote list
+        { "Nothing",                        "----",             "\c[Green](Normal)"}, // 0
+        { "Doom 2",                         "MAP01",            "\c[Green](Normal)"}, // 1
+        { "Hell Revealed",                  "HR01",             "\c[Green](Normal)"}, // 2
+        { "Hell Revealed 2",                "HR201",            "\c[Green](Normal)"}, // 3
+        { "Kamasutra",                      "KS01",             "\c[Green](Normal)"}, // 4
+        { "Shai'tans Luck",                 "SL20",             "\c[Green](Normal)"}, // 5
+        { "Speed Of Doom",                  "SOD01",            "\c[Green](Normal)"}, // 6
+        { "VanGaurd",                       "VAN01",            "\c[Green](Normal)"}, // 7
+        { "Scythe 2",                       "SC201",            "\c[Green](Normal)"}, // 8
+		{ "Whispers Of Satan",		        "WOS01",	        "\c[Green](Normal)"}, // 9
+		{ "UAC Ultra",				        "UAC01",	        "\c[Green](Normal)"}, // 10
+		{ "Monuments Of Mars",		        "MOM01",	        "\c[Green](Normal)"}, // 11
+		{ "Khorus's Speedy Shit",	        "KSS01",	        "\c[Green](Normal)"}, // 12
+		{ "Circle of Caina",		        "COC01",	        "\c[Green](Normal)"}, // 13
+		{ "Forest Swords",			        "FSW01",	        "\c[Green](Normal)"}, // 14
+		{ "Doom Core Trilogy",		        "DC01",	            "\c[Green](Normal)"}, // 15
+		{ "Maps of Chaos",	                "MOC01",	        "\c[Green](Normal)"}, // 16
+		{ "Doom 2 The Way ID Did",	        "WID01",            "\c[Green](Normal)"}, // 17
+		{ "Estranged",				        "EST01",            "\c[Green](Normal)"}, // 18
+		{ "Going Down",				        "GD01",	            "\c[Green](Normal)"}, // 19
+		{ "Dark Encounters",		        "DKE01",	        "\c[Green](Normal)"}, // 20
+        { "Alien Vendetta",                 "AV01",             "\c[Green](Normal)"}, // 21
+		{ "Hadephobia",				        "HPH01",            "\c[Green](Normal)"}, // 22
+		{ "Mayhem 17",				        "MAY01",	        "\c[Green](Normal)"}, // 23
+		{ "Sunlust",				        "SLU01",	        "\c[Green](Normal)"}, // 24
+		{ "Hellbound",				        "HLB01",            "\c[Green](Normal)"}, // 25
+		{ "1994 Tune Up Community Project", "TU01",             "\c[Green](Normal)"}, // 26
+		{ "Unholy Realms",			        "UHR01",	        "\c[Green](Normal)"}, // 27
+        { "Hell Core",			            "HC01",	            "\c[Green](Normal)"}, // 28
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 29
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 30
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 31
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 32
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 33
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 34
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 35
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 36
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 37
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 38
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 39
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 40
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 41
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 42
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 43
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 44
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 45
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 46
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 47
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 48
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 49
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 50
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 51
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 52
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 53
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 54
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 55
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 56
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 57
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 58
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 59
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 60
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 61
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 62
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 63
+        { "Unused",			                "MAP01",	        "\c[Green](Normal)"}, // 64
+        
+        // Slaughter Mapsets
+        { "Combat Shock",                   "CS01",             "\c[Red](Slaughter)"}, // 65
+        { "Combat Shock 2",                 "CS201",            "\c[Red](Slaughter)"}, // 66
+        { "New Gothic Movement 1",          "NG101",            "\c[Red](Slaughter)"}, // 67
+        { "Dark Tartarus",                  "TAT01",            "\c[Red](Slaughter)"}, // 68
+		{ "Sunder",					        "SND01",            "\c[Red](Slaughter)"}, // 69
+		{ "Drown in Blood",			        "DIB01",	        "\c[Red](Slaughter)"}, // 70
+		{ "Swift Death",			        "SDE01",            "\c[Red](Slaughter)"}, // 71
+        { "Deus Vult",				        "DV01",	            "\c[Red](Slaughter)"}, // 72
+        { "Pizza Steve",			        "PIZ01",            "\c[Red](Slaughter)"}, // 73
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 74
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 75
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 76
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 77
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 78
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 79
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 80
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 81
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 82
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 83
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 84
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 85
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 86
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 87
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 88
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 89
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 90
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 91
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 92
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 92
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 94
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 95
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 96
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 97
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 98
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 99
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 100
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 101
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 102
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 103
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 104
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 105
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 106
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 107
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 108
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 109
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 110
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 111
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 112
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 113
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 114
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 115
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 116
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 117
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 118
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 119
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 120
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 121
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 122
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 123
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 124
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 125
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 126
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 127
+        { "Unused",			                "MAP01",            "\c[Red](Slaughter)"}, // 128
+        
+        // Single Levels
+		{ "The Spire",				        "TSP01",            "\c[LightBlue](Single)"}, // 129
+		{ "The Eye",				        "EYE01",            "\c[LightBlue](Single)"}, // 130
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 131
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 132
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 133
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 134
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 135
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 136
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 137
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 138
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 139
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 140
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 141
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 142
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 143
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 144
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 145
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 146
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 147
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 148
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 149
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 150
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 151
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 152
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 153
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 154
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 155
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 156
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 157
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 158
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 159
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 160
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 161
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 162
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 163
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 164
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 165
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 166
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 167
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 168
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 169
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 170
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 171
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 172
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 173
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 174
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 175
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 176
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 177
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 178
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 179
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 180
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 181
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 182
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 183
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 184
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 185
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 186
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 187
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 188
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 189
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 190
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 191
+        { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 192
     };
     /////////////////////
     // vote manager
     /////////////////////
-    int votes[64];                      // holds the votes
-    int votessorted[64][2];             // all the votes, sorted
+    int votes[MAPSET_MAX];              // holds the votes
+    int votessorted[MAPSET_MAX][2];     // all the votes, sorted
     int votecount = 0;                  // amount of votes made
 
     int time_ticks = 0;                 // the time left in ticks
@@ -67,6 +238,7 @@ strict namespace
     int state_clock;                    // custom timer
 
     global int 2:votechosen;            // the winner
+    global int 3:sucktime;              // the sucktime of the previous level
     
     /////////////////////
     // hud
@@ -103,10 +275,19 @@ strict namespace
 
     
     // stuff that runs during any level
-    script "Level" open
+    script "SV_Level" open
     {
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) { terminate; }
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        { 
+            // we have come back from a completed mapset
+            if(sucktime == 1337)
+            {
+                ACS_NamedExecute("Fireworks", 0);
+            }
+            terminate; 
+        }
         
+        sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
         levelstarted = 0;
         clock = GetCvar("lexicon_timer_reset");
 
@@ -165,7 +346,8 @@ strict namespace
                 if(clock < 0)
                 {
                     // go back to hub
-                    ChangeLevel("Hub", 0, 0, -1);
+                    sucktime = 0;
+                    ChangeLevel("VR", 0, 0, -1);
                 }
                 delay(34);
             }
@@ -178,10 +360,9 @@ strict namespace
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
-    
         Thing_ChangeTID(0, playernumber()+1337);
 
-        // this entire file should of been in the map script, oh well
+        // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             int pnum = playernumber();
@@ -192,6 +373,11 @@ strict namespace
             ACS_Execute(568, 0, votechosen);
             ACS_Execute(569, 0, time_seconds);
             ACS_ExecuteAlways(570, 0, state);
+            
+            // give player the votegun
+            ClearInventory();
+            GiveInventory("Lexicon_VoteGun", 1);
+
         }
     }
 
@@ -230,7 +416,14 @@ strict namespace
         {
             HudSetup(0, 0);
             setfont("hudfont");
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon Voting Room\n\n\c[White]This is still Work in Progress. You can follow progress on discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 64.0, 10.0);
+            hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
+                        
+            // we have come back from a completed mapset
+            if(sucktime == 1337)
+            {
+                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[votechosen][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+            }
+
 
             // setup the confetti
             for(int c = 0; c < 64; c++)
@@ -307,11 +500,12 @@ strict namespace
                         {
                             y += 23.0;
                             hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 225.1, y, 0.1);
+                            hudmessagebold(s:votenames[votessorted[i][1]][2], s:" "; 0, i+11000, 0, 225.2, y, 0.1);
                         }
                     }
 
                     // if the player has a vote
-                    if(players[playernumber()] != 0)
+                    if(players[playernumber()] != -1)
                     {
                         // show player's vote
                         hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
@@ -386,8 +580,9 @@ strict namespace
             // get player number
             int pnum = playernumber();
 
-            //pnum = random(1,7);
-
+            // special vr map logic so players cant vote from shooting the invisible parts of the linedef
+            if(GetActorZ(pnum+1337) < 1144.0) { terminate; }
+            
             // if the player has not voted...
             if (players[pnum] < 0)
             {
@@ -466,31 +661,23 @@ strict namespace
 
     script "DebugMode_Switch" (int id)
     {
-        switch(id)
+        if(GetCvar("lexicon_debug_mode") == 1)
         {
-            case 0: 
-                if(godmode == 0) { godmode = 1; break; }
-                if(godmode == 1) { godmode = 0; break; }
-                break;
-            case 2: 
-                if(instakiller == 0) { instakiller = 1; break; }
-                if(instakiller == 1) { instakiller = 0; break; }
-                break;
+            switch(id)
+            {
+                case 0: 
+                    if(godmode == 0) { godmode = 1; break; }
+                    if(godmode == 1) { godmode = 0; break; }
+                    break;
+                case 2: 
+                    if(instakiller == 0) { instakiller = 1; break; }
+                    if(instakiller == 1) { instakiller = 0; break; }
+                    break;
+            }
+            ACS_ExecuteAlways(572, 0, godmode);
+            ACS_ExecuteAlways(573, 0, instakiller);
         }
-        ACS_ExecuteAlways(572, 0, godmode);
-        ACS_ExecuteAlways(573, 0, instakiller);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     // sync sorted votes to clients
     script 567 (int index, int votes, int id) clientside
@@ -535,21 +722,6 @@ strict namespace
         instakiller = v;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     function void state_init(void)
     {
 
@@ -569,6 +741,12 @@ strict namespace
         // if a vote was made
         if(votecount > 0)
         {
+            // if the server has the ignore timer flag set and there is only 1 player in
+            if(PlayerCount() == 1 && GetCvar("lexicon_timer_1p_ignore") == 1)
+            {
+                time_ticks = 0;
+            }
+            
             // set the system to the countdown state
             state = STATE_COUNTDOWN;
 
@@ -620,7 +798,7 @@ strict namespace
         int tiecount = 0;
 
         // for every wad
-        for(int i = 1; i < 64; i++)
+        for(int i = 1; i < MAPSET_MAX; i++)
         {
             // if a wad's vote count is the same as the winner
             if(votessorted[i][0] == votessorted[0][0])
@@ -666,32 +844,18 @@ strict namespace
         if(state_clock > 5*35)
         {
             // go to chosen level
-            ChangeLevel(votenames[votechosen][1], 0, 0, -1);
+            ChangeLevel(votenames[votechosen][1], 0, CHANGELEVEL_RESETHEALTH|CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_NOINTERMISSION, -1);
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // sort voted list
     function void bubble_sort(void)
     {
         int t;
-        int j = 64;
+        int j = MAPSET_MAX;
         int s = 1;
         int v;
-        for (int i = 0; i < 64; i++)
+        for (int i = 0; i < MAPSET_MAX; i++)
         {
             votessorted[i][0] = votes[i];
             votessorted[i][1] = i;
@@ -715,7 +879,7 @@ strict namespace
             j--;
         }
 
-        for(int i = 0; i < 63; i++)
+        for(int i = 0; i < MAPSET_MAX; i++)
         {
             ACS_ExecuteAlways(567, 0, i, votessorted[i][0], votessorted[i][1]);
         }
@@ -726,8 +890,8 @@ strict namespace
         int x = xres;
         int y = yres;
 
-        if(x < 1) { x = GetCVar("vid_defwidth"); }
-        if(y < 1) { y = GetCVar("vid_defheight"); }
+        if(x < 1) { x = GetScreenWidth(); }
+        if(y < 1) { y = GetScreenHeight(); }
 
         hud_width = (fixed)(x*65536);
         hud_height = (fixed)(y*65536);
@@ -738,36 +902,42 @@ strict namespace
         SetHudSize(x, y, true);
         SetFont("BIGFONT");
     }
-}
+    
+    ////// Easter egg shit because i need the hud vars
 
-// custom key giver for custom keys
-
-str keys[NUMBER_OF_KEYS][3] = {
-	{"RedCard",     "Red Card",     false},
-	{"YellowCard",  "Yellow Card",  false},
-	{"BlueCard",    "Blue Card",    false},
-	{"RedSkull",    "Red Skull",    false},
-	{"YellowSkull", "Yellow Skull", false},
-	{"BlueSkull",   "Blue Skull",   false},
-};
-Script "KeyGiver" (int which)
-{	
-	GiveInventory(keys[which][0], 1);
-	keys[which][2] = true; // mark key as given, so players connecting later get it
+    script "thrope" (void) clientside
+    {
+        HudSetup(0,0);
+        setfont("HUDFONT");
+        hudmessage(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, check it out at https://www.webtoons.com/en/challenge/therianthrope/list?title_no=5389"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+    }
 	
-	// Give to all players -- shared keys are the norm, not a quirky option
-	GiveActorInventory(0, keys[which][0], 1);
-	ACS_NamedExecuteWithResult("KeyGiver_PickupMessage", keys[which][1]);
-}
-Script "KeyGiver_PickupMessage" (int what) CLIENTSIDE
-{
-	str pickupmessage = strparam(n:0, s:" picked up a ", s:what, s:".");
-	Log(s:pickupmessage);
+    script "lex_lore1" (void) clientside
+    {
+        HudSetup(0,0);
+        setfont("HUDFONT");
+        hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+    }
 }
 
-Script "KeyGiver_RegiveKeys" ENTER
-{
-	for(int i = 0; i < NUMBER_OF_KEYS; i++)
-		if(keys[i][2] == true)
-			GiveInventory(keys[i][0], 1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

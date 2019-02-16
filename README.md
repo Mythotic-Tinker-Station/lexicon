@@ -38,6 +38,16 @@ So far, the mapsets included are:
 - Deus Vult
 - Mayhem 17
 - Sunlust
+- Pizza Steve
+- Hellbound
+- 1994 Tune up Community Project
+- Unholy Realms
+- Hellcore 2.0
+
+We also started to add single map wads. So far, these are included:
+
+- The Spire
+- The Eye
 
 You can also access doom 2 from the hub now!
 
@@ -60,7 +70,8 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - MiFU for doing most of the compile work, its a pain in the ass.
 - K0RPSE for also assisting with the compile work, its still a pain in the ass though.
 - Shaewn for assisting with various issues. He should compile more shit though but thats just me.
-- Tribeam for scripting, hub map.
+- Tribeam for scripting, effects, VR texturing.
+- Fiendzy vr map design.
 - Michaelis for adding more playerstarts to maps.
 - Our testers (Kenopath, Blushberry)
 - Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer
@@ -68,3 +79,5 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - Skulltag for the railgun sprites used for the InstaKiller
 - Guilty Gear for the hub music
 - Corgiatom for the hub music
+- Willo for some of the artwork included in the HUB map
+- and YOU, for playing the damn thing. Cant do it without YOU

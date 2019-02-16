@@ -1,0 +1,419 @@
+map HLB01 "Apartments"
+	{
+	next = "HLB02"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV00
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb01
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB02 "Canal road"
+	{
+	next = "HLB03"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV01
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb02
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB03 "Testing Chambers"
+	{
+	next = "HLB04"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV02
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb03
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB04 "Processing Plant"
+	{
+	next = "HLB05"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV03
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb04
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB05 "Underground"
+	{
+	next = "HLB06"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV04
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb05
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB06 "Gateway Lab"
+	{
+	next = "HLB07"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV05
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb06
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB07 "The Woods"
+	{
+	next = "HLB08"
+	map07special
+	sky1 = HLBSKY1
+	titlepatch = HLBLV06
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb07	
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB08 "Military Depo"
+	{
+	next = "HLB09"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV07
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb08
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB09 "Disposal Facility"
+	{
+	next = "HLB10"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV08
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb09
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB10 "Cistern"
+	{
+	next = "HLB11"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV09
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb10	
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB11 "Venom Canyon"
+	{
+	next = "HLB12"
+	sky1 = HLBSKY1
+	titlepatch = HLBLV10
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb11
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB12 "Power Station"
+	{
+	next = "HLB13"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV11
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb12
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB13 "Encrus Station"
+	{
+	next = "HLB14"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV12
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb13
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB14 "Doom District"
+	{
+	next = "HLB15"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV13
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb14
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB15 "The Vault"
+	{
+	next = "HLB16"
+	secretnext = "HLB31"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV14
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb15
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB16 "City Bounds"
+	{
+	next = "HLB17"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV15
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb16
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB17 "Starport"
+	{
+	next = "HLB18"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV16
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb17
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB18 "Computer Complex"
+	{
+	next = "HLB19"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV17
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb18
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB19 "Frontier Lab"
+	{
+	next = "HLB20"
+	sky1 = HLBSKY2
+	titlepatch = HLBLV18
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb19
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB20 "Borderworld"
+	{
+	next = "HLB21"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV19
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb20
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB21 "The Gates of Hell"
+	{
+	next = "HLB22"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV20
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb21
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB22 "Stygian Depths"
+	{
+	next = "HLB23"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV21
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb22
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB23 "Fortress of Ages"
+	{
+	next = "HLB24"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV22
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb23
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB24 "City of Pandemonium"
+	{
+	next = "HLB25"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV23
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb24
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB25 "Bastion of Void"
+	{
+	next = "HLB26"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV24
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb25
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB26 "Forbidden Archives"
+	{
+	next = "HLB27"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV25
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb26
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB27 "Crimson Abyss"
+	{
+	next = "HLB28"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV26
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb27
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB28 "The Black Citadel"
+	{
+	next = "HLB29"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV27
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb28
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB29 "Ascension"
+	{
+	next = "HLB30"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV28
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb29
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB30 "Worlds Collide"
+	{
+	next = "VR"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV29
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb30
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+    SuckTime = 1337
+	}
+	
+map HLB31 "Diabolus ex Machina"
+	{
+	next = "HLB16"
+	secretnext = "HLB32"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV30
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb31
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}
+	
+map HLB32 "Spear of Destiny"
+	{
+	next = "HLB16"
+	sky1 = HLBSKY3
+	titlepatch = HLBLV31
+	enterpic = HLBINT
+	exitpic = HLBINT
+	music = d_hlb32
+	nocrouch
+	nojump
+	intermusic = D_HLBINT
+	}

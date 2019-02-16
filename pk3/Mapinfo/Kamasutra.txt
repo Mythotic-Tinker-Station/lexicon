@@ -1,0 +1,419 @@
+map KS01 "Into the Underground"
+	{
+	titlepatch = "KSTPX00"
+	next = "KS02"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks01"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS02 "The Hidden Engine"
+	{
+	titlepatch = "KSTPX01"
+	next = "KS03"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks02"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS03 "Mr. Adolf Kill You"
+	{
+	titlepatch = "KSTPX02"
+	next = "KS04"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks03"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS04 "Water Base"
+	{
+	titlepatch = "KSTPX03"
+	next = "KS05"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks04"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS05 "Klondike"
+	{
+	titlepatch = "KSTPX04"
+	next = "KS06"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks05"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS06 "Research Complex"
+	{
+	titlepatch = "KSTPX05"
+	next = "KS07"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks06"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS07 "Colosseum"
+	{
+	titlepatch = "KSTPX06"
+	next = "KS08"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks07"
+	sky1 = "RSKY1"
+	Map07Special 
+	nocrouch
+	nojump
+	}
+	
+map KS08 "Time is Tickin' Out"
+	{
+	titlepatch = "KSTPX07"
+	next = "KS09"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks08"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS09 "The Holocaust"
+	{
+	titlepatch = "KSTPX08"
+	next = "KS10"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks09"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS10 "To Be or Not to Be..."
+	{
+	titlepatch = "KSTPX09"
+	next = "KS11"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks10"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS11 "Execution"
+	{
+	titlepatch = "KSTPX10"
+	next = "KS12"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks11"
+	sky1 = "RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map KS12 "King Arena"
+	{
+	titlepatch = "KSTPX11"
+	next = "KS13"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks12"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS13 "The Holocaust II"
+	{
+	titlepatch = "KSTPX12"
+	next = "KS14"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks13"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS14 "Dog Eat Dog"
+	{
+	titlepatch = "KSTPX13"
+	next = "KS15"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks14"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS15 "Miss Sporty"
+	{
+	titlepatch = "KSTPX14"
+	secretnext = "KS31"
+	next = "KS16"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks15"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS16 "Leeds Castle"
+	{
+	titlepatch = "KSTPX15"
+	next = "KS17"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks16"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS17 "Cyber Machine"
+	{
+	titlepatch = "KSTPX16"
+	next = "KS18"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks17"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS18 "The Train is Approaching"
+	{
+	titlepatch = "KSTPX17"
+	next = "KS19"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks18"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS19 "Natural"
+	{
+	titlepatch = "KSTPX18"
+	next = "KS20"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks19"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS20 "Traps"
+	{
+	titlepatch = "KSTPX19"
+	next = "KS21"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks20"
+	sky1 = "RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map KS21 "Diablo's Heart"
+	{
+	titlepatch = "KSTPX20"
+	next = "KS22"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks21"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS22 "Fire Play"
+	{
+	titlepatch = "KSTPX21"
+	next = "KS23"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks22"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS23 "A little Big Massacre"
+	{
+	titlepatch = "KSTPX22"
+	next = "KS24"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks23"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS24 "The Gift from Gott"
+	{
+	titlepatch = "KSTPX23"
+	next = "KS25"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks24"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS25 "Cow Face"
+	{
+	titlepatch = "KSTPX24"
+	next = "KS26"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks25"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS26 "Kill Bill"
+	{
+	titlepatch = "KSTPX25"
+	next = "KS27"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks26"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS27 "Stairway to Heaven"
+	{
+	titlepatch = "KSTPX26"
+	next = "KS28"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks27"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS28 "Hard Target"
+	{
+	titlepatch = "KSTPX27"
+	next = "KS29"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks28"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS29 "I'm Just a DOOM Addict"
+	{
+	titlepatch = "KSTPX28"
+	next = "KS30"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks29"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS30 "<|>"
+	{
+	titlepatch = "KSTPX29"
+	next = "VR"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks30"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map KS31 "Devastation"
+	{
+	titlepatch = "KSTPX30"
+	next = "KS16"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	secretnext = "KS32"
+	music = "d_ks31"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map KS32 "Anger Management"
+	{
+	titlepatch = "KSTPX31"
+	next = "KS16"
+	enterpic = "KAMAINT"
+	exitpic = "KAMAINT"
+	intermusic = "D_KSINT"
+	music = "d_ks32"
+	sky1 = "KSRSKY3"
+	nocrouch
+	nojump
+	}

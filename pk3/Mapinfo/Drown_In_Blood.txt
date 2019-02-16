@@ -1,0 +1,328 @@
+map DIB01 "Penetration"
+	{
+	next = "DIB02"
+	sky1 = "DIBSKY1"
+	music = "D_DIB01"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB02 "Hell Forge"
+	{
+	next = "DIB03"
+	sky1 = "DIBSKY1"
+	music = "D_DIB02"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB03 "Abrasion"
+	{
+	next = "DIB04"
+	sky1 = "DIBSKY1"
+	music = "D_DIB03"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB04 "Einfach"
+	{
+	next = "DIB05"
+	sky1 = "DIBSKY1"
+	music = "D_DIB04"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB05 "Doom 4 Tough"
+	{
+	next = "DIB06"
+	sky1 = "DIBSKY1"
+	music = "D_DIB05"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB06 "Installation"
+	{
+	next = "DIB07"
+	sky1 = "DIBSKY1"
+	music = "D_DIB06"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	outsidefog = "C6 09 09"
+	nocrouch
+	nojump
+	}
+	
+map DIB07 "Mortal Coil"
+	{
+	next = "DIB08"
+	sky1 = "DIBSKY1"
+	music = "D_DIB07"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB08 "Winged Fortress"
+	{
+	next = "DIB09"
+	sky1 = "DIBSKY1"
+	music = "D_DIB08"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB09 "Mars Sand"
+	{
+	next = "DIB10"
+	sky1 = "DIBSKY1"
+	music = "D_DIB09"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB10 "Time of Death"
+	{
+	next = "DIB11"
+	sky1 = "DIBSKY2"
+	music = "D_DIB10"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+
+map DIB11 "Rusted Judas"
+	{
+	next = "DIB12"
+	sky1 = "DIBSKY2"
+	music = "D_DIB11"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB12 "Open Circuit"
+	{
+	next = "DIB13"
+	sky1 = "DIBSKY2"
+	music = "D_DIB12"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	outsidefog = "ff ff ff"
+	nocrouch
+	nojump
+	}
+	
+map DIB13 "Unnecessary Playground"
+	{
+	next = "DIB14"
+	sky1 = "DIBSKY2"
+	music = "D_DIB13"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB14 "Slaughterhouse"
+	{
+	next = "DIB15"
+	sky1 = "DIBSKY2"
+	music = "D_DIB14"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB15 "Carcass Depository"
+	{
+	next = "DIB16"
+	sky1 = "DIBSKY2"
+	music = "D_DIB15"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	outsidefog = "ff ff ff"
+	nocrouch
+	nojump
+	}
+	
+map DIB16 "A Dream"
+	{
+	next = "DIB17"
+	sky1 = "DIBSKY2"
+	music = "D_DIB16"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB17 "Death Ring"
+	{
+	next = "DIB18"
+	sky1 = "DIBSKY2"
+	music = "D_DIB17"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB18 "Abondoned instalation"
+	{
+	next = "DIB19"
+	sky1 = "DIBSKY2"
+	music = "D_DIB18"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	outsidefog = "ff ff ff"
+	nocrouch
+	nojump
+	}
+	
+map DIB19 "Entering Earth Energy Complex"
+	{
+	next = "DIB20"
+	sky1 = "DIBSKY2"
+	music = "D_DIB17"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB20 "Untitled"
+	{
+	next = "DIB21"
+	sky1 = "DIBSKY1"
+	music = "D_DIB20"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB21 "Untitled"
+	{
+	next = "DIB22"
+	sky1 = "DIBSKY3"
+	music = "D_DIB21"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB22 "Untitled"
+	{
+	next = "DIB23"
+	sky1 = "DIBSKY3"
+	music = "d_ddtblu"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB23 "The Map"
+	{
+	next = "DIB25"
+	sky1 = "DIBSKY3"
+	music = "d_ampie"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB25 "The Map"
+	{
+	next = "DIB26"
+	sky1 = "DIBSKY3"
+	music = "D_DIB22"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB26 "Fortress"
+	{
+	next = "DIB27"
+	sky1 = "DIBSKY3"
+	music = "D_the_da"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB27 "Untitled"
+	{
+	next = "DIB30"
+	sky1 = "DIBSKY3"
+	music = "D_romero"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+	}
+	
+map DIB30 "Operation: Drown in Blood"
+	{
+	next = "VR"
+	sky1 = "DIBSKY3"
+	music = "D_1PART"
+	exitpic = "DIBINT"
+	enterpic = "DIBINT"
+	intermusic = "D_READ_M"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

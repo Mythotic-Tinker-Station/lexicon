@@ -1,0 +1,92 @@
+map CS201 "Aftermath"
+	{
+	titlepatch = "CS2TP00"
+	next = "CS202"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY1"
+	music = "d_cs201"
+	nocrouch
+	nojump
+	}
+	
+map CS202 "Rope or Bullet"
+	{
+	titlepatch = "CS2TP01"
+	next = "CS203"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY1"
+	music = "d_cs202"
+	nocrouch
+	nojump
+	}
+	
+map CS203 "Hone Gumi"
+	{
+	titlepatch = "CS2TP02"
+	next = "CS204"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY2"
+	music = "d_cs203"
+	nocrouch
+	nojump
+	}
+	
+map CS204 "Rapid Fire"
+	{
+	titlepatch = "CS2TP03"
+	next = "CS205"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY5"
+	music = "d_cs204"
+	nocrouch
+	nojump
+	}
+	
+map CS205 "Boiling Point"
+	{
+	titlepatch = "CS2TP04"
+	next = "CS206"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY5"
+	music = "d_cs205"
+	nocrouch
+	nojump
+	}
+	
+map CS206 "Closure"
+	{
+	titlepatch = "CS2TP05"
+	next = "CS207"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY3"
+	music = "d_cs206"
+	nocrouch
+	nojump
+	}
+	
+map CS207 "Shocked for Life"
+	{
+	titlepatch = "CS2TP06"
+	next = "VR"
+	enterpic = "CS2INT"
+	exitpic = "CS2INT"
+	intermusic = "D_CS2INT"
+	sky1 = "CS2SKY2"
+	music = "d_cs207"
+	map07special
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

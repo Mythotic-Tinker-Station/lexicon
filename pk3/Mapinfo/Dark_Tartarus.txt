@@ -1,0 +1,479 @@
+map TAT01 "Arch Bridge"
+	{
+	next = "TAT02"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat01"
+	nocrouch
+	nojump
+	}
+	
+map TAT02 "Final Destination"
+	{
+	next = "TAT03"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat02"
+	nocrouch
+	nojump
+	}
+	
+map TAT03 "Lunatic's Game"
+	{
+	next = "TAT04"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat03"
+	nocrouch
+	nojump
+	}
+
+map TAT04 "Nothing Special"
+	{
+	next = "TAT05"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat04"
+	nocrouch
+	nojump
+	}
+	
+map TAT05 "The Gate"
+	{
+	next = "TAT06"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat05"
+	nocrouch
+	nojump
+	}
+	
+map TAT06 "WOW:Finished"
+	{
+	next = "TAT07"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat06"
+	nocrouch
+	nojump
+	}
+	
+map TAT07 "Open Season"
+	{
+	map07special 
+	next = "TAT08"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat07"
+	nocrouch
+	nojump
+	}
+	
+map TAT08 "Ground Zero"
+	{
+	next = "TAT09"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat08"
+	nocrouch
+	nojump
+	}
+	
+map TAT09 "Extreme Caution"
+	{
+	next = "TAT10"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat09"
+	nocrouch
+	nojump
+	}
+	
+map TAT10 "Skyscraper"
+	{
+	next = "TAT11"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat10"
+	nocrouch
+	nojump
+	}
+
+map TAT11 "Hex"
+	{
+	next = "TAT12"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat11"
+	nocrouch
+	nojump
+	}
+	
+map TAT12 "The Last Settlement"
+	{
+	next = "TAT13"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat12"
+	nocrouch
+	nojump
+	}
+	
+map TAT13 "Pancake'd"
+	{
+	next = "TAT14"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat13"
+	nocrouch
+	nojump
+	}
+	
+map TAT14 "Doors of Troll"
+	{
+	next = "TAT15"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat14"
+	nocrouch
+	nojump
+	}
+	
+map TAT15 "Path of Light"
+	{
+	next = "TAT16"
+	secretnext = "TAT31"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat15"
+	nocrouch
+	nojump
+	}
+	
+map TAT16 "Lake Rumor"
+	{
+	next = "TAT17"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat16"
+	nocrouch
+	nojump
+	}
+
+map TAT17 "Rituals and Ceremonies"
+	{
+	next = "TAT18"
+	sky1 = "SKYML5"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat17"
+	nocrouch
+	nojump
+	}
+	
+map TAT18 "Contra"
+	{
+	next = "TAT19"
+	sky1 = "SKYML9"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat18"
+	nocrouch
+	nojump
+	}
+	
+map TAT19 "Dimensions"
+	{
+	next = "TAT20"
+	sky1 = "SKY2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat19"
+	nocrouch
+	nojump
+	}
+	
+map TAT20 "Frozen Throne"
+	{
+	next = "TAT21"
+	sky1 = "SKYML3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat20"
+	nocrouch
+	nojump
+	}
+	
+map TAT21 "The Killer's Breed"
+	{
+	next = "TAT22"
+	sky1 = "SKYML5"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat21"
+	nocrouch
+	nojump
+	}
+	
+map TAT22 "Facing World"
+	{
+	next = "TAT23"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat22"
+	nocrouch
+	nojump
+	}
+	
+map TAT23 "Nowhere"
+	{
+	next = "TAT24"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat23"
+	nocrouch
+	nojump
+	}
+	
+map TAT24 "Revive Station"
+	{
+	next = "TAT25"
+	sky1 = "SKY2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat24"
+	nocrouch
+	nojump
+	}
+	
+map TAT25 "BFG Charge"
+	{
+	next = "TAT26"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat25"
+	nocrouch
+	nojump
+	}
+	
+map TAT26 "Corridor of Doom"
+	{
+	next = "TAT27"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat26"
+	nocrouch
+	nojump
+	}
+	
+map TAT27 "Doomer's Room"
+	{
+	next = "TAT28"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat27"
+	nocrouch
+	nojump
+	}
+	
+map TAT28 "The Vestibule of Hell"
+	{
+	next = "TAT29"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat28"
+	nocrouch
+	nojump
+	}
+	
+map TAT29 "Dark Tartarus"
+	{
+	next = "TAT30"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat29"
+	nocrouch
+	nojump
+	}
+	
+map TAT30 "Boom! Headshot"
+	{
+	next = "TAT33"
+	sky1 = "SKY3"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat30"
+	nocrouch
+	nojump
+	}
+
+map TAT31 "Return to Wolfenstein"
+	{
+	next = "TAT16"
+	secretnext = "TAT32"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat31"
+	nocrouch
+	nojump
+	}
+
+map TAT32 "The Cursed Marine"
+	{
+	next = "TAT16"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat32"
+	nocrouch
+	nojump
+	}
+	
+map TAT33 "Welcome"
+	{
+	next = "TAT34"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat33"
+	nocrouch
+	nojump
+	}
+	
+map TAT34 "Shallow Grave"
+	{
+	next = "TAT35"
+	sky1 = "SKYML1"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat34"
+	nocrouch
+	nojump
+	}
+
+map TAT35 "Devil's Tower"
+	{
+	next = "TAT36"
+	sky1 = "SKYML8"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat35"
+	nocrouch
+	nojump
+	}
+
+map TAT36 "Behind the Sky"
+	{
+	next = "TAT37"
+	sky1 = "SKYML6"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat36"
+	nocrouch
+	nojump
+	}
+	
+map TAT37 "Truly Evil"
+	{
+	next = "TAT38"
+	sky1 = "SKYML5"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat37"
+	nocrouch
+	nojump
+	}
+
+map TAT38 "Skull Hunt"
+	{
+	next = "TAT39"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat38"
+	nocrouch
+	nojump
+	}
+
+map TAT39 "Dead Tonight"
+	{
+	next = "TAT40"
+	sky1 = "SKYML5"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat39"
+	nocrouch
+	nojump
+	}
+
+map TAT40 "Horrible Things"
+	{
+	next = "TAT41"
+	sky1 = "SKYML5"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat40"
+	cluster = 8
+	titlepatch = "WOSLV29"
+	nocrouch
+	nojump
+	}
+	
+map TAT41 " "
+	{
+	next = "TAT42"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat41"
+	nocrouch
+	nojump
+	}
+	
+map TAT42 "Beat Doom V0.01"
+	{
+	next = "TAT43"
+	sky1 = "SKYML2"
+	cluster = 1
+	intermusic = "D_TATINT"
+	music = "d_tat42"
+	nocrouch
+	nojump
+	}
+
+map TAT43 "LOCK N' LOAD"
+	{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKYML2"
+	intermusic = "D_TATINT"
+	cluster = 1
+	music = "d_tat43"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

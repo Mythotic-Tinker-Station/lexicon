@@ -1,0 +1,474 @@
+map WOS01 "Sintlabs"
+	{
+	titlepatch = "WOSLV00"
+	nocrouch
+	next = "WOS02"
+	secretnext = "WOS99"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS01"
+	}
+	
+map WOS02 "The Sink"
+	{
+	titlepatch = "WOSLV01"
+	nocrouch
+	next = "WOS03"
+	sky1 = "WOSSKY1"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	nojump
+	music = "D_WOS02"
+	}
+	
+map WOS03 "Poison Sewers"
+	{
+	titlepatch = "WOSLV02"
+	nocrouch
+	next = "WOS04"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS03"
+	}
+	
+map WOS04 "Lost Beacon"
+	{
+	titlepatch = "WOSLV03"
+	nocrouch
+	next = "WOS05"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS04"
+	}
+	
+map WOS05 "Pumping Station 083A"
+	{
+	titlepatch = "WOSLV04"
+	nocrouch
+	next = "WOS06"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS05"
+	}
+	
+map WOS06 "Covert Operations Facility"
+	{
+	titlepatch = "WOSLV05"
+	nocrouch
+	next = "WOS07"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS06"
+	}
+	
+map WOS07 "Death Alley"
+	{
+	titlepatch = "WOSLV06"
+	nocrouch
+	next = "WOS08"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	map07special
+	music = "D_WOS07"
+	}
+	
+map WOS08 "Basement Jazz"
+	{
+	titlepatch = "WOSLV07"
+	nocrouch
+	next = "WOS09"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS08"
+	}
+	
+map WOS09 "The School"
+	{
+	titlepatch = "WOSLV08"
+	nocrouch
+	next = "WOS10"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS09"
+	}
+	
+map WOS10 "Playgrounds of Caesar"
+	{
+	titlepatch = "WOSLV09"
+	nocrouch
+	next = "WOS11"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS10"
+	}
+	
+map WOS11 "CyberFunk"
+	{
+	titlepatch = "WOSLV10"
+	nocrouch
+	next = "WOS12"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS11"
+	}
+	
+map WOS12 "Blood Station"
+	{
+	titlepatch = "WOSLV11"
+	nocrouch
+	next = "WOS13"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS12"
+	}
+	
+map WOS13 "Traps of Torment"
+	{
+	titlepatch = "WOSLV12"
+	nocrouch
+	next = "WOS14"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS13"
+	}
+	
+map WOS14 "The Wasted Dens"
+	{
+	titlepatch = "WOSLV13"
+	nocrouch
+	next = "WOS15"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS14"
+	}
+	
+map WOS15 "Temple of Water"
+	{
+	titlepatch = "WOSLV14"
+	nocrouch
+	next = "WOS16"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	secretnext = "WOS31"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS15"
+	}
+	
+map WOS16 "Undervilla"
+	{
+	titlepatch = "WOSLV15"
+	nocrouch
+	next = "WOS17"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS16"
+	}
+	
+map WOS17 "Mines of Despair"
+	{
+	titlepatch = "WOSLV16"
+	nocrouch
+	next = "WOS18"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS17"
+	}
+	
+map WOS18 "Elements"
+	{
+	titlepatch = "WOSLV17"
+	nocrouch
+	next = "WOS19"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS18"
+	}
+	
+map WOS19 "Cryosleep"
+	{
+	titlepatch = "WOSLV18"
+	nocrouch
+	next = "WOS20"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS19"
+	}
+	
+map WOS20 "Inexorable Opposition"
+	{
+	titlepatch = "WOSLV19"
+	nocrouch
+	next = "WOS21"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY2"
+	nojump
+	music = "D_WOS20"
+	}
+	
+map WOS21 "2048 B.C"
+	{
+	titlepatch = "WOSLV20"
+	nocrouch
+	next = "WOS22"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS21"
+	}
+	
+map WOS22 "Soul Disruption"
+	{
+	titlepatch = "WOSLV21"
+	nocrouch
+	next = "WOS23"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS22"
+	}
+	
+map WOS23 "Pathway to Elysion"
+	{
+	titlepatch = "WOSLV22"
+	nocrouch
+	next = "WOS24"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS23"
+	}
+	
+map WOS24 "Ultimate Hatred"
+	{
+	titlepatch = "WOSLV23"
+	nocrouch
+	next = "WOS25"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS24"
+	}
+	
+map WOS25 "Vulcana"
+	{
+	titlepatch = "WOSLV24"
+	nocrouch
+	next = "WOS26"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS25"
+	}
+	
+map WOS26 "Hellhole"
+	{
+	titlepatch = "WOSLV25"
+	nocrouch
+	next = "WOS27"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS26"
+	}
+	
+map WOS27 "Halls of Cocytus"
+	{
+	titlepatch = "WOSLV26"
+	nocrouch
+	next = "WOS28"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS27"
+	}
+	
+map WOS28 "Sacrificial Grounds"
+	{
+	titlepatch = "WOSLV27"
+	nocrouch
+	next = "WOS29"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS28"
+	}
+	
+map WOS29 "Heated Trauma"
+	{
+	titlepatch = "WOSLV28"
+	nocrouch
+	next = "WOS30"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS29"
+	}
+	
+map WOS30 "The Verge of Revelation"
+	{
+	titlepatch = "WOSLV29"
+	nocrouch
+	next = "WOS33"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	secretnext = "WOS33"
+	sky1 = "WOSSKY3"
+	nojump
+	allowmonstertelefrags
+	music = "D_WOS30"
+	}
+	
+map WOS31 "Space Station Skywalker"
+	{
+	titlepatch = "WOSLV30"
+	nocrouch
+	next = "WOS16"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	secretnext = "WOS32"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS31"
+	}
+	
+map WOS32 "Ultimative Geheimnis"
+	{
+	titlepatch = "WOSLV31"
+	nocrouch
+	next = "WOS16"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	secretnext = "WOS35"
+	sky1 = "WOSSKY3"
+	nojump
+	music = "D_WOS32"
+	}
+	
+map WOS33 "Credits"
+	{
+	nocrouch
+	next = "VR"
+	sky1 = "WOSSKY3"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	nojump
+	music = "D_WOS33"
+    SuckTime = 1337
+	}
+	
+map WOS34 "1994 Revisited"
+	{
+	nocrouch
+	next = "WOS16"
+	sky1 = "SKYE1"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	nojump
+	music = "D_WOS34"
+	}
+	
+map WOS35 "ein lustiger ort"
+	{
+	titlepatch = "WOSLV34"
+	nocrouch
+	next = "WOS16"
+	secretnext = "WOS34"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	sky1 = "SKYSTARS 0"
+	nojump
+	music = "D_WOS35"
+	}
+	
+map WOS99 "Hidden Warp Zone"
+	{
+	nocrouch
+	next = "WOS10"
+	enterpic = "WOSINT"
+	exitpic = "WOSINT"
+	intermusic = "D_WOSINT"
+	secretnext = "WOS27"
+	sky1 = "WOSSKY1"
+	nojump
+	music = "D_WOS99"
+	}

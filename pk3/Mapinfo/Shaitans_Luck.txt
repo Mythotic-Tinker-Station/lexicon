@@ -1,0 +1,99 @@
+map SL20 "Icon of Sin"
+	{
+	next = "SL21"
+	sky1 = "RSKY2"
+	music = "d_sl20"
+	nocrouch
+	nojump
+	}
+	
+map SL21 "Sewers"
+	{
+	next = "SL22"
+	sky1 = "RSKY3"
+	music = "d_sl21"
+	nocrouch
+	nojump
+	}
+	
+map SL22 "Processing"
+	{
+	next = "SL23"
+	sky1 = "RSKY3"
+	music = "d_sl22"
+	nocrouch
+	nojump
+	}
+	
+map SL23 "Area47"
+	{
+	next = "SL24"
+	sky1 = "RSKY3"
+	music = "d_sl23"
+	nocrouch
+	nojump
+	}
+	
+map SL24 "Colorado Hills"
+	{
+	next = "SL25"
+	sky1 = "RSKY3"
+	music = "d_sl24"
+	nocrouch
+	nojump
+	}
+	
+map SL25 "Native Ruins"
+	{
+	next = "SL26"
+	sky1 = "RSKY3"
+	music = "d_sl25"
+	nocrouch
+	nojump
+	}
+	
+map SL26 "Mining Site"
+	{
+	next = "SL27"
+	sky1 = "RSKY3"
+	music = "d_sl26"
+	nocrouch
+	nojump
+	}
+	
+map SL27 "Area42"
+	{
+	next = "SL28"
+	sky1 = "RSKY3"
+	music = "d_sl27"
+	nocrouch
+	nojump
+	}
+	
+map SL28 "The Ring Forts"
+	{
+	next = "SL29"
+	sky1 = "RSKY3"
+	music = "d_sl28"
+	nocrouch
+	nojump
+	}
+	
+map SL29 "Fallen Atlantis"
+	{
+	next = "SL30"
+	sky1 = "RSKY3"
+	music = "d_sl29"
+	nocrouch
+	nojump
+	}
+	
+map SL30 "Shai'tans Luck"
+	{
+	next = "VR"
+	sky1 = "RSKY3"
+	music = "d_sl30"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

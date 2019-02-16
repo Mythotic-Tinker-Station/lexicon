@@ -1,0 +1,387 @@
+map PIZ01 "Entryway"
+	{
+	next = "PIZ02"
+	sky1 = RSKY1
+	titlepatch = CLILV00
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_runnin
+	nocrouch
+	nojump
+	}
+	
+map PIZ02 "Underhalls"
+	{
+	next = "PIZ03"
+	sky1 = RSKY1
+	titlepatch = CLILV01
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stalks
+	nocrouch
+	nojump
+	}
+	
+map PIZ03 "The Gantlet"
+	{
+	next = "PIZ04"
+	sky1 = RSKY1
+	titlepatch = CLILV02
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_countd
+	nocrouch
+	nojump
+	}
+	
+map PIZ04 "The Focus"
+	{
+	next = "PIZ05"
+	sky1 = RSKY1
+	titlepatch = CLILV03
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_betwee
+	nocrouch
+	nojump
+	}
+	
+map PIZ05 "The Waste Tunnels"
+	{
+	next = "PIZ06"
+	sky1 = RSKY1
+	titlepatch = CLILV04
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_doom
+	nocrouch
+	nojump
+	}
+	
+map PIZ06 "The Crusher"
+	{
+	next = "PIZ07"
+	sky1 = RSKY1
+	titlepatch = CLILV05
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_the_da
+	nocrouch
+	nojump
+	}
+	
+map PIZ07 "Dead Simple"
+	{
+	next = "PIZ08"
+	map07special
+	sky1 = RSKY1
+	titlepatch = CLILV06
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn	
+	nocrouch
+	nojump
+	}
+	
+map PIZ08 "Tricks and Traps"
+	{
+	next = "PIZ09"
+	sky1 = RSKY1
+	titlepatch = CLILV07
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtblu
+	nocrouch
+	nojump
+	}
+	
+map PIZ09 "The Pit"
+	{
+	next = "PIZ10"
+	sky1 = RSKY1
+	titlepatch = CLILV08
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_in_cit
+	nocrouch
+	nojump
+	}
+	
+map PIZ10 "Refueling Base"
+	{
+	next = "PIZ11"
+	sky1 = RSKY1
+	titlepatch = CLILV09
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_dead	
+	nocrouch
+	nojump
+	}
+	
+map PIZ11 "Circle of Death"
+	{
+	next = "PIZ12"
+	sky1 = RSKY1
+	titlepatch = CLILV10
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stlks2
+	nocrouch
+	nojump
+	}
+	
+map PIZ12 "The Factory"
+	{
+	next = "PIZ13"
+	sky1 = RSKY2
+	titlepatch = CLILV11
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_theda2
+	nocrouch
+	nojump
+	}
+	
+map PIZ13 "The Factory"
+	{
+	next = "PIZ14"
+	sky1 = RSKY2
+	titlepatch = CLILV12
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_doom2
+	nocrouch
+	nojump
+	}
+	
+map PIZ14 "Downtown"
+	{
+	next = "PIZ15"
+	sky1 = RSKY2
+	titlepatch = CLILV13
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtbl2
+	nocrouch
+	nojump
+	}
+	
+map PIZ15 "Industrial Zone"
+	{
+	next = "PIZ16"
+	secretnext = "PIZ31"
+	sky1 = RSKY2
+	titlepatch = CLILV14
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_runni2
+	nocrouch
+	nojump
+	}
+	
+map PIZ16 "Suburbs"
+	{
+	next = "PIZ17"
+	sky1 = RSKY2
+	titlepatch = CLILV15
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_dead2
+	nocrouch
+	nojump
+	}
+	
+map PIZ17 "Tenements"
+	{
+	next = "PIZ18"
+	sky1 = RSKY2
+	titlepatch = CLILV16
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_stlks3
+	nocrouch
+	nojump
+	}
+	
+map PIZ18 "The Courtyard"
+	{
+	next = "PIZ19"
+	sky1 = RSKY2
+	titlepatch = CLILV17
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_romero
+	nocrouch
+	nojump
+	}
+	
+map PIZ19 "The Citadel"
+	{
+	next = "PIZ20"
+	sky1 = RSKY2
+	titlepatch = CLILV18
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn2
+	nocrouch
+	nojump
+	}
+	
+map PIZ20 "Gotcha!"
+	{
+	next = "PIZ21"
+	sky1 = RSKY3
+	titlepatch = CLILV19
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_messag
+	nocrouch
+	nojump
+	}
+	
+map PIZ21 "Nirvana"
+	{
+	next = "PIZ22"
+	sky1 = RSKY3
+	titlepatch = CLILV20
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_count2
+	nocrouch
+	nojump
+	}
+	
+map PIZ22 "The Catacombs"
+	{
+	next = "PIZ23"
+	sky1 = RSKY3
+	titlepatch = CLILV21
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ddtbl3
+	nocrouch
+	nojump
+	}
+	
+map PIZ23 "Barrels o' Fun"
+	{
+	next = "PIZ24"
+	sky1 = RSKY3
+	titlepatch = CLILV22
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ampie
+	nocrouch
+	nojump
+	}
+	
+map PIZ24 "The Chasm"
+	{
+	next = "PIZ25"
+	sky1 = RSKY3
+	titlepatch = CLILV23
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_theda3
+	nocrouch
+	nojump
+	}
+	
+map PIZ25 "Bloodfalls"
+	{
+	next = "PIZ26"
+	sky1 = RSKY3
+	titlepatch = CLILV24
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_adrian
+	nocrouch
+	nojump
+	}
+	
+map PIZ26 "The Abandoned Mines"
+	{
+	next = "PIZ27"
+	sky1 = RSKY3
+	titlepatch = CLILV25
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_messg2
+	nocrouch
+	nojump
+	}
+	
+map PIZ27 "Monster Condo"
+	{
+	next = "PIZ28"
+	sky1 = RSKY3
+	titlepatch = CLILV26
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_romer2
+	nocrouch
+	nojump
+	}
+	
+map PIZ28 "The Spirit World"
+	{
+	next = "PIZ29"
+	sky1 = RSKY3
+	titlepatch = CLILV27
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_tense
+	nocrouch
+	nojump
+	}
+	
+map PIZ29 "The Living End"
+	{
+	next = "PIZ30"
+	sky1 = RSKY3
+	titlepatch = CLILV28
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_shawn3
+	nocrouch
+	nojump
+	}
+	
+map PIZ30 "Icon of Sin"
+	{
+	next = "VR"
+	sky1 = RSKY3
+	titlepatch = CLILV29
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_openin
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map PIZ31 "Wolfenstein"
+	{
+	next = "PIZ16"
+	secretnext = "PIZ32"
+	sky1 = RSKY3
+	titlepatch = CLILV30
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_evil
+	nocrouch
+	nojump
+	}
+	
+map PIZ32 "Grosse"
+	{
+	next = "PIZ16"
+	sky1 = RSKY3
+	titlepatch = CLILV31
+	enterpic = INTERPIC
+	exitpic = INTERPIC
+	music = d_ultima
+	nocrouch
+	nojump
+	}

@@ -1,0 +1,156 @@
+
+map UAC01 "Dig"
+	{
+	next = "UAC02"
+	titlepatch = "UAC01"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM1"
+	sky1 = "UACSKY1"
+	nojump
+	nocrouch
+	}
+	
+map UAC02 "UAC in Exile"
+	{
+	next = "UAC03"
+	titlepatch = "UAC02"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM2"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC03 "Sifting Adjunct"
+	{
+	next = "UAC04"
+	titlepatch = "UAC03"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM3"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC04 "Pyrolysis"
+	{
+	next = "UAC05"
+	titlepatch = "UAC04"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM4"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC05 "Hardware"
+	{
+	next = "UAC06"
+	titlepatch = "UAC05"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM5"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC06 "Collapsys"
+	{
+	next = "UAC07"
+	titlepatch = "UAC06"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM6"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC07 "Haymaker"
+	{
+	next = "UAC08"
+	titlepatch = "UAC07"
+	map07special
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "d_shawn"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC08 "Worst Case Scenario"
+	{
+	next = "UAC09"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM8"
+	titlepatch = "UAC08"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC09 "Counteraction Terminal"
+	{
+	next = "UAC10"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM9"
+	titlepatch = "UAC09"
+	sky1 = "UACSKY2"
+	nojump
+	nocrouch
+	}
+	
+map UAC10 "Skagway"
+	{
+	next = "UAC11"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM10"
+	titlepatch = "UAC10"
+	sky1 = "UACSKY3"
+	nojump
+	nocrouch
+	}
+	
+map UAC11 "Sick"
+	{
+	next = "UAC12"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	intermusic = "UACINT"
+	music = "UACM11"
+	titlepatch = "UAC11"
+	sky1 = "UACSKY3"
+	nojump
+	nocrouch
+	}
+	
+map UAC12 "The End"
+	{
+	next = "VR"
+	enterpic = "UACINT"
+	exitpic = "UACINT"
+	music = "UACM12"
+	titlepatch = "UAC11"
+	nojump
+	nocrouch
+    SuckTime = 1337
+	}

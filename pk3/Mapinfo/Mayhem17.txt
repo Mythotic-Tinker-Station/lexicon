@@ -1,0 +1,420 @@
+map MAY01 "shroom stronghold"
+{
+	titlepatch = "MAYLV00"
+	next = "MAY02"
+	secretnext = "MAY02"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump	
+	cluster = 5
+	music = "D_MAY01"
+}
+
+map MAY02 "all along the bowser tower"
+{
+	titlepatch = "MAYLV01"
+	next = "MAY03"
+	secretnext = "MAY03"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 5
+	music = "D_MAY02"
+}
+
+map MAY03 "sillydust sanctuary"
+{
+	titlepatch = "MAYLV02"
+	next = "MAY04"
+	secretnext = "MAY04"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 5
+	music = "D_MAY03"
+	compat_stairs = 0
+}
+
+map MAY04 "marina moonlight"
+{
+	titlepatch = "MAYLV03"
+	next = "MAY05"
+	secretnext = "MAY05"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 5
+	music = "D_MAY04"
+}
+
+map MAY05 "painfully and elitely rusted"
+{
+	titlepatch = "MAYLV04"
+	next = "MAY06"
+	secretnext = "MAY06"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 5
+	music = "D_MAY05"
+}
+
+map MAY06 "airship of doom"
+{
+	titlepatch = "MAYLV05"
+	next = "MAY07"
+	secretnext = "MAY07"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 5
+	music = "D_MAY06"
+}
+
+map MAY07 "groovy hills"
+{
+	titlepatch = "MAYLV06"
+	next = "MAY08"
+	secretnext = "MAY08"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 6
+	map07special
+	music = "D_MAY07"
+}
+
+map MAY08 "the oasis"
+{
+	titlepatch = "MAYLV07"
+	next = "MAY09"
+	secretnext = "MAY09"
+	sky1 = "MAYSKY1"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	cluster = 6
+	music = "D_MAY08"
+}
+
+map MAY09 "curse of the mummy's sister's etc."
+{
+	titlepatch = "MAYLV08"
+	next = "MAY10"
+	secretnext = "MAY10"
+	sky1 = "MAYSKY1"
+	cluster = 6
+	music = "D_MAY09"
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	}
+
+map MAY10 "shifting sands"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV09"
+	next = "MAY11"
+	secretnext = "MAY11"
+	sky1 = "MAYSKY1"
+	cluster = 6
+	music = "D_MAY10"
+}
+
+map MAY11 "aztec ruins"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV10"
+	next = "MAY12"
+	secretnext = "MAY12"
+	sky1 = "MAYSKY1"
+	cluster = 6
+	music = "D_MAY11"
+}
+
+map MAY12 "cool cool shotgun"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV11"
+	next = "MAY13"
+	secretnext = "MAY13"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY12"
+}
+
+map MAY13 "koopa anomaly"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV12"
+	next = "MAY14"
+	secretnext = "MAY14"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY13"
+}
+
+map MAY14 "absolute zero"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV13"
+	next = "MAY15"
+	secretnext = "MAY15"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY14"
+}
+
+map MAY15 "ziegenhaus"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV14"
+	next = "MAY16"
+	secretnext = "MAY31"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY15"
+}
+
+map MAY16 "skyward vivarium"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV15"
+	next = "MAY17"
+	secretnext = "MAY17"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY16"
+}
+
+map MAY17 "all the monster's teeth are perfect"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV16"
+	next = "MAY18"
+	secretnext = "MAY18"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY17"
+}
+
+map MAY18 "this plumber wants cake"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV17"
+	next = "MAY19"
+	secretnext = "MAY19"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY18"
+}
+
+map MAY19 "your princess is in another fort..."
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV18"
+	next = "MAY20"
+	secretnext = "MAY20"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY19"
+}
+
+map MAY20 "transformation palace"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV19"
+	next = "MAY21"
+	secretnext = "MAY21"
+	sky1 = "sky2"
+	cluster = 7
+	music = "D_MAY20"
+}
+
+map MAY21 "rainbow road"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV20"
+	next = "MAY22"
+	secretnext = "MAY22"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY21"
+}
+
+map MAY22 "chocolate starfish islands"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV21"
+	next = "MAY23"
+	secretnext = "MAY23"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY22"
+}
+
+map MAY23 "down the wrong pipe"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV22"
+	next = "MAY24"
+	secretnext = "MAY24"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY23"
+}
+
+map MAY24 "bowser's daddy dungeon"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV23"
+	next = "MAY25"
+	secretnext = "MAY25"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY24"
+}
+
+map MAY25 "bastille bowser"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV24"
+	next = "MAY26"
+	secretnext = "MAY26"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY25"
+}
+
+map MAY26 "bowser in the black abyss"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV25"
+	next = "VR"
+	sky1 = "sky3"
+	cluster = 8
+	music = "D_MAY26"
+    SuckTime = 1337
+}
+
+map MAY31 "sinkysand switchland"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV30"
+	next = "MAY16"
+	secretnext = "MAY32"
+	sky1 = "sky3"
+	cluster = 9
+	music = "D_MAY31"
+}
+
+map MAY32 "return to birabuto kingdom"
+{
+	enterpic = "MAYINT"
+	exitpic = "MAYINT"
+	intermusic = "D_MAYINT"
+	nocrouch
+	nojump
+	titlepatch = "MAYLV31"
+	next = "MAY16"
+	sky1 = "sky3"
+	cluster = 9
+	music = "D_MAY32"
+}

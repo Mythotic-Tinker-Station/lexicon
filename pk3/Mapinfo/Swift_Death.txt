@@ -1,0 +1,446 @@
+map SDE01 "First Sequence"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV00
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = "SDE02"
+secretnext = "SDE02"
+music = "D_SDE01"
+}
+
+map SDE02 "Hyperia Alert"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = "SDELV01"
+sky1 = "SKY1H"
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = "SDE03"
+secretnext = "SDE03"
+music = "D_SDE02"
+}
+
+map SDE03 "Punished Zone"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = "SDELV02"
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = "SDE04"
+secretnext = "SDE04"
+music = "D_SDE03"
+}
+
+map SDE04 "Devil Whisperer"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = "SDELV03"
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = "SWSKY1"
+next = "SDE05"
+secretnext = "SDE05"
+music = "D_SDE04"
+}
+
+map SDE05 "Hyperia Meteor"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV04
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SKY1B
+next = SDE06
+secretnext = SDE06
+music = D_SDE05
+}
+
+map SDE06 "Evil Mesa"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV05
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SKY0M
+next = SDE07
+secretnext = SDE07
+music = D_SDE06
+}
+
+map SDE07 "Nevrose"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV06
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SWSKY3
+next = SDE08
+secretnext = SDE08
+map07special
+music = D_SDE07
+}
+
+map SDE08 "Deeper Eagle - Memfis"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV07
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE09
+sky1 = SWSKY1
+secretnext = SDE09
+music = D_SDE08
+}
+
+map SDE09 "Arioch Domain"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV08
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE10
+sky1 = SWSKY1
+secretnext = SDE10
+music = D_SDE09
+}
+
+map SDE10 "Ruse"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV09
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE11
+sky1 = SWSKY1
+secretnext = SDE11
+music = D_SDE10
+}
+
+map SDE11 "Octave"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV10
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE12
+secretnext = SDE12
+music = D_SDE11
+}
+
+map SDE12 "Central Chain"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV11
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE13
+sky1 = SWSKY2
+secretnext = SDE13
+music = D_SDE12
+}
+
+map SDE13 "Calipso"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SWSKY2
+music = D_SDE13
+titlepatch = SDELV12
+next = SDE14
+}
+
+map SDE14 "Vile Gear"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+secretnext = SDE15
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SWSKY2
+titlepatch = SDELV13
+next = SDE15
+secretnext = SDE15
+music = D_SDE14
+}
+
+map SDE15 "Multiplex"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV14
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE16
+secretnext = SDE31
+sky1 = SWSKY2
+music = D_SDE15
+}
+
+map SDE16 "Observatory"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV15
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE17
+sky1 = SKY1H
+secretnext = SDE17
+music = D_SDE16
+}
+
+map SDE17 "Turbulence"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV16
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE18
+sky1 = SWSKY2 
+secretnext = SDE18
+music = D_SDE17
+}
+
+map SDE18 "Incarnavile"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV17
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE19
+sky1 = SWSKY2
+secretnext = SDE19
+music = D_SDE18
+}
+
+map SDE19 "Rose Inferno"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV18
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SWSKY2
+next = SDE20
+secretnext = SDE20
+music = D_SDE19
+}
+
+map SDE20 "Xaenos Rock"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV19
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE21
+sky1 = SWSKY3
+secretnext = SDE21
+music = D_SDE20
+}
+
+map SDE21 "Technophage"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV20
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SKY1G
+next = SDE22
+secretnext = SDE22
+music = D_SDE21
+}
+
+map SDE22 "Psychedevil"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV21
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE23
+secretnext = SDE23
+sky1 = SWSKY3
+music = D_SDE22
+}
+
+map SDE23 "Evil System"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV22
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE24
+secretnext = SDE24
+sky1 = SWSKY3
+music = D_SDE23
+}
+
+map SDE24 "Apolyon Mons - JC"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV23
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE25
+secretnext = SDE25
+sky1 = SWSKY3
+music = D_SDE24
+}
+
+map SDE25 "Nevada Trash"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV24
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+sky1 = SKY0M
+next = SDE26
+secretnext = SDE26
+music = D_SDE25
+}
+
+map SDE26 "Doppler Effect"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV25
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE27
+secretnext = SDE27
+sky1 = SWSKY3
+music = D_SDE26
+}
+
+map SDE27 "Ruins and Chains"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV26
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE28
+secretnext = SDE28
+sky1 = SWSKY3
+music = D_SDE27
+}
+
+map SDE28 "Roundabout"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV27
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE29
+secretnext = SDE29
+sky1 = SWSKY3
+music = D_SDE28
+}
+
+map SDE29 "Imperium"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV28
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE30
+secretnext = SDE30
+sky1 = SWSKY3
+music = D_SDE29
+}
+
+map SDE30 "Itanimulli"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV29
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = "VR"
+secretnext = "VR"
+sky1 = XSKY1
+music = D_SDE30
+SuckTime = 1337
+}
+
+map SDE31 "Fleshopolis"
+{
+nocrouch
+nojump
+intermusic = "SDEIN"
+titlepatch = SDELV30
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+next = SDE16
+secretnext = SDE32
+sky1 = SWSKY3
+music = D_SDE31
+}
+
+map SDE32 "Violence Mechanix - JC"
+{
+nocrouch
+nojump
+enterpic = "SWDTITL"
+exitpic = "SWDTITL"
+intermusic = "SDEIN"
+titlepatch = SDELV31
+next = SDE16
+secretnext = SDE16
+sky1 = SKY1K
+music = D_SDE32
+}

@@ -1,0 +1,29 @@
+map TSP01 "The Spire"
+{
+	next = "VR"
+	sky1 = "TSPSKY1"
+	music = "D_SPIRE"
+	nocrouch
+	nojump
+    SuckTime = 1337
+}
+	
+map TSP201 "The Spire 2"
+{
+	next = "VR"
+	sky1 = "SKY1"
+	music = "D_SPIRE2"
+	nocrouch
+	nojump
+    SuckTime = 1337
+}
+	
+map EYE01 "The Eye"
+{
+	music = D_EYE
+	next = "VR"
+	sky1 = "SKY1"
+	nojump
+    nocrouch
+    SuckTime = 1337
+}

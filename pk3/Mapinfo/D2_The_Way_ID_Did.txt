@@ -1,0 +1,398 @@
+map WID01 "Loading Bay"
+{
+	titlepatch = "TWIDV00"
+	next = "WID02"
+	secretnext = "WID02"
+	sky1 = "SKY1"
+	par = 30
+	music = "D_RUNNIN"
+	nocrouch
+	nojump
+}
+
+map WID02 "The Compound"
+{
+	titlepatch = "TWIDV01"
+	next = "WID03"
+	secretnext = "WID33"
+	sky1 = "SKY1"
+	par = 90
+	music = "D_STALKS"
+	nocrouch
+	nojump
+}
+
+map WID03 "Water Main"
+{
+	titlepatch = "TWIDV02"
+	next = "WID04"
+	secretnext = "WID04"
+	sky1 = "SKY1"
+	par = 120
+	music = "D_COUNTD"
+	nocrouch
+	nojump
+}
+
+map WID04 "The Siltyards"
+{
+	titlepatch = "TWIDV03"
+	next = "WID05"
+	secretnext = "WID05"
+	sky1 = "SKY1"
+	par = 120
+	music = "D_BETWEE"
+	nocrouch
+	nojump
+}
+
+map WID05 "The Boiler"
+{
+	titlepatch = "TWIDV04"
+	next = "WID06"
+	secretnext = "WID06"
+	sky1 = "SKY1"
+	par = 90
+	music = "D_DOOM"
+	nocrouch
+	nojump
+}
+
+map WID06 "The Gorge"
+{
+	titlepatch = "TWIDV05"
+	next = "WID07"
+	secretnext = "WID07"
+	sky1 = "SKY1"
+	par = 150
+	music = "D_THE_DA"
+	nocrouch
+	nojump
+}
+
+map WID07 "Counterpoint"
+{
+	titlepatch = "TWIDV06"
+	next = "WID08"
+	secretnext = "WID08"
+	sky1 = "SKY1"
+	par = 120
+	map07special
+	music = "D_SHAWN"
+	nocrouch
+	nojump
+}
+
+map WID08 "Starstruct, Inc."
+{
+	titlepatch = "TWIDV07"
+	next = "WID09"
+	secretnext = "WID09"
+	sky1 = "SKY1"
+	par = 120
+	music = "D_DDTBLU"
+	nocrouch
+	nojump
+}
+
+map WID09 "The Gambit"
+{
+	titlepatch = "TWIDV08"
+	next = "WID10"
+	secretnext = "WID10"
+	sky1 = "SKY1"
+	par = 270
+	music = "D_IN_CIT"
+	nocrouch
+	nojump
+}
+
+map WID10 "Reservoirs"
+{
+	titlepatch = "TWIDV09"
+	next = "WID11"
+	secretnext = "WID11"
+	sky1 = "SKY1"
+	par = 90
+	music = "D_DEAD"
+	nocrouch
+	nojump
+}
+
+map WID11 "The Garrison"
+{
+	titlepatch = "TWIDV10"
+	next = "WID12"
+	secretnext = "WID12"
+	sky1 = "SKY1"
+	par = 210
+	music = "D_STLKS2"
+	nocrouch
+	nojump
+}
+
+map WID12 "The Shipyard"
+{
+	titlepatch = "TWIDV11"
+	next = "WID13"
+	secretnext = "WID13"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_THEDA2"
+	nocrouch
+	nojump
+}
+
+map WID13 "The Wharf"
+{
+	titlepatch = "TWIDV12"
+	next = "WID14"
+	secretnext = "WID14"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_DOOM2"
+	nocrouch
+	nojump
+}
+
+map WID14 "Flooded Library"
+{
+	titlepatch = "TWIDV13"
+	next = "WID15"
+	secretnext = "WID15"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_DDTBL2"
+	nocrouch
+	nojump
+}
+
+map WID15 "The Causeway"
+{
+	titlepatch = "TWIDV14"
+	next = "WID16"
+	secretnext = "WID31"
+	sky1 = "SKY2"
+	par = 210
+	music = "D_2TWID3"
+	nocrouch
+	nojump
+}
+
+map WID16 "Cul-de-sac"
+{
+	titlepatch = "TWIDV15"
+	next = "WID17"
+	secretnext = "WID17"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_DEAD2"
+	nocrouch
+	nojump
+}
+
+map WID17 "The Precinct"
+{
+	titlepatch = "TWIDV16"
+	next = "WID18"
+	secretnext = "WID18"
+	sky1 = "SKY2"
+	par = 420
+	music = "D_STLKS3"
+	nocrouch
+	nojump
+}
+
+map WID18 "The Sanctum"
+{
+	titlepatch = "TWIDV17"
+	next = "WID19"
+	secretnext = "WID19"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_ROMERO"
+	nocrouch
+	nojump
+}
+
+map WID19 "Bedlam"
+{
+	titlepatch = "TWIDV18"
+	next = "WID20"
+	secretnext = "WID20"
+	sky1 = "SKY2"
+	par = 210
+	music = "D_SHAWN2"
+	nocrouch
+	nojump
+}
+
+map WID20 "Leap of Faith"
+{
+	titlepatch = "TWIDV19"
+	next = "WID21"
+	secretnext = "WID21"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_MESSAG"
+	nocrouch
+	nojump
+}
+
+map WID21 "Passage to Exile"
+{
+	titlepatch = "TWIDV20"
+	next = "WID22"
+	secretnext = "WID22"
+	sky1 = "SKY3"
+	par = 240
+	music = "D_COUNT2"
+	nocrouch
+	nojump
+}
+
+map WID22 "Borderlands"
+{
+	titlepatch = "TWIDV21"
+	next = "WID23"
+	secretnext = "WID23"
+	sky1 = "SKY3"
+	par = 150
+	music = "D_DDTBL3"
+	nocrouch
+	nojump
+}
+
+map WID23 "The Crucible"
+{
+	titlepatch = "TWIDV22"
+	next = "WID24"
+	secretnext = "WID24"
+	sky1 = "SKY3"
+	par = 180
+	music = "D_AMPIE"
+	nocrouch
+	nojump
+}
+
+map WID24 "Crushed Spirits"
+{
+	titlepatch = "TWIDV23"
+	next = "WID25"
+	secretnext = "WID25"
+	sky1 = "SKY3"
+	par = 150
+	music = "D_THEDA3"
+	nocrouch
+	nojump
+}
+
+map WID25 "Dead Sea"
+{
+	titlepatch = "TWIDV24"
+	next = "WID26"
+	secretnext = "WID26"
+	sky1 = "SKY3"
+	par = 150
+	music = "D_ADRIAN"
+	nocrouch
+	nojump
+}
+
+map WID26 "Damned Strait!"
+{
+	titlepatch = "TWIDV25"
+	next = "WID27"
+	secretnext = "WID27"
+	sky1 = "SKY3"
+	par = 300
+	music = "D_MESSG2"
+	nocrouch
+	nojump
+}
+
+map WID27 "The Bloodwash"
+{
+	titlepatch = "TWIDV26"
+	next = "WID28"
+	secretnext = "WID28"
+	sky1 = "SKY3"
+	par = 330
+	music = "D_ROMER2"
+	nocrouch
+	nojump
+}
+
+map WID28 "Abyss"
+{
+	titlepatch = "TWIDV27"
+	next = "WID29"
+	secretnext = "WID29"
+	sky1 = "SKY3"
+	par = 420
+	music = "D_TENSE"
+	nocrouch
+	nojump
+}
+
+map WID29 "The Mortal Coil"
+{
+	titlepatch = "TWIDV28"
+	next = "WID30"
+	secretnext = "WID30"
+	sky1 = "SKY3"
+	par = 300
+	music = "D_SHAWN3"
+	nocrouch
+	nojump
+}
+
+map WID30 "Hell on Earth"
+{
+	titlepatch = "TWIDV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	par = 180
+	allowmonstertelefrags
+	music = "D_OPENIN"
+	nocrouch
+	nojump
+    SuckTime = 1337
+}
+
+map WID31 "Vorticon"
+{
+	titlepatch = "TWIDV30"
+	next = "WID16"
+	secretnext = "WID32"
+	sky1 = "SKY3"
+	par = 120
+	music = "D_2TWID1"
+	nocrouch
+	nojump
+}
+
+map WID32 "Well of Wishes"
+{
+	titlepatch = "TWIDV31"
+	next = "WID16"
+	secretnext = "WID16"
+	sky1 = "SKY3"
+	par = 30
+	music = "D_2TWID2"
+	nocrouch
+	nojump
+}
+
+map WID33 "Hexsoil"
+{
+	titlepatch = "TWIDV32"
+	next = "WID03"
+	secretnext = "WID03"
+	sky1 = "SKY3"
+	par = 420
+	music = "D_READ_M"
+	nocrouch
+	nojump
+}

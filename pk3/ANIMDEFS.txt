@@ -6,7 +6,80 @@ flat STATIC1
     pic STATIC4 tics 1
     pic STATIC5 tics 1
     pic STATIC6 tics 1
+    pic STATIC7 tics 1
+    pic STATIC8 tics 1
     
+texture VR031A
+	pic VR031A tics 3
+	pic VR031B tics 3
+	pic VR031C tics 3
+	pic VR031D tics 3
+	pic VR031E tics 3
+	pic VR031F tics 3
+	pic VR031G tics 3
+	pic VR031H tics 3
+
+texture VRANIM2
+	pic VR023 tics 1
+    pic VR023R tics 1
+    
+texture VRANIM3
+	pic VR016 tics 1
+    pic VR016R tics 1
+
+texture VRANIM4
+	pic VR020 tics 1
+    pic VR020R tics 1
+
+texture VRANIM
+	pic VR001 tics 3
+	pic VR002 tics 3
+	pic VR003 tics 3
+	pic VR004 tics 3
+	pic VR005 tics 3
+	pic VR006 tics 3
+	pic VR007 tics 3
+	pic VR008 tics 3
+	pic VR009 tics 3
+	pic VR010 tics 3
+	pic VR011 tics 3
+	pic VR012 tics 3
+    
+texture CPOINT01
+	pic CPOINT01 tics 1
+	pic CPOINT02 tics 1
+	pic CPOINT03 tics 1
+	pic CPOINT04 tics 1
+	pic CPOINT05 tics 1
+	pic CPOINT06 tics 1
+	pic CPOINT07 tics 1
+	pic CPOINT08 tics 1
+	pic CPOINT09 tics 1
+	pic CPOINT10 tics 1
+	pic CPOINT11 tics 1
+	pic CPOINT12 tics 1
+	pic CPOINT13 tics 1
+	pic CPOINT14 tics 1
+	pic CPOINT15 tics 1
+	pic CPOINT16 tics 1
+	pic CPOINT17 tics 1
+	pic CPOINT18 tics 1
+	pic CPOINT19 tics 1
+	pic CPOINT20 tics 1
+	pic CPOINT21 tics 1
+	pic CPOINT22 tics 1
+	pic CPOINT23 tics 1
+	pic CPOINT24 tics 1
+	pic CPOINT25 tics 1
+	pic CPOINT26 tics 1
+	pic CPOINT27 tics 1
+	pic CPOINT28 tics 1
+	pic CPOINT29 tics 1
+	pic CPOINT30 tics 1
+	pic CPOINT31 tics 1
+	pic CPOINT32 tics 1
+
+
 //Alien vendetta 
 
 Texture	Optional	AVFTE1  	Range	AVFTE4  	Tics 8
@@ -53,6 +126,9 @@ Switch SW1MEGA off pic SW2MEGA Tics  0
 texture IMPSE1
 pic 01 tics 4
 pic 02 tics 4
+
+texture optional SLADRIP1 Range SLADRIP3 Tics 8
+texture optional WOSDGR1 Range WOSDGR4 Tics 8
 
 warp texture SKYHELL1
 warp texture SKINFAC2
@@ -389,3 +465,38 @@ Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
 Texture	Optional	FFIELDB1	Range	FFIELDBA	Tics 2
 Texture	Optional	LASROR01	Range	LASROR16	Tics 2
 Switch	Doom 2		SU1SKIN 	On Pic	SU2SKIN 	Tics 0
+
+// Hellbound
+Texture optional HLBAIN1 Range HLBAIN4 Tics 8
+Texture optional HLBDGR1 Range HLBDGR4 Tics 8
+Texture optional HLBDRIP1 Range HLBDRIP3 Tics 8
+
+// 1994 TU
+Texture optional TUODGR1 Range TUODGR4 Tics 8
+Texture optional TUALL1 Range TUALL4 Tics 8
+Switch TU1STON2 off pic TU2STON2 Tics 0
+
+// Hellcore
+flat HCATER1
+	pic HCATER1 tics 5
+	pic HCATER2 tics 5
+	pic HCATER3 tics 5
+	pic HCATER4 tics 5
+	pic HCATERA tics 5
+	pic HCATERB tics 5
+	
+Texture optional HCODRIP1 Range HCODRIP4 Tics 8
+Texture optional HCRAIN1 Range HCRAIN4 Tics 8
+Texture optional HCODGR1 Range HCODGR4 Tics 8
+Texture optional HCADRIP1 Range HCADRIP3 Tics 8
+Texture optional HCALL1 Range HCALL4 Tics 8
+Switch	Doom 2		HC1VINE 	Off Pic	HC2VINE 	Tics 0
+Switch	Doom 2		HC2VINE 	On Pic	HC1VINE 	Tics 0
+
+// Unholy Realms
+Switch	Doom 1		UR1STON2	On Pic	UR2STON2	Tics 0
+Texture	Optional	URODGR1 	Range	URODGR4 	Tics 8
+Texture	Optional	URVFALL1	Range	URVFALL4	Tics 8
+
+// The Spire
+Texture optional WATER1 Range WATER4 Tics 8

@@ -1,0 +1,511 @@
+map DKE01 "level 1: the unafraid"
+{
+	titlepatch = "DKELV00"
+	next = "DKE02"
+	secretnext = "DKE02"
+	sky1 = "SKY6 - 5"
+	cluster = 5
+	music = "D_DKE01"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 1
+}
+
+map DKE02 "level 2: poison the wells"
+{
+	titlepatch = "DKELV01"
+	next = "DKE03"
+	secretnext = "DKE03"
+	sky1 = "SKY6 - 5"
+	cluster = 5
+	music = "D_DKE02"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 2
+}
+
+map DKE03 "level 3: metal meets flesh"
+{
+	titlepatch = "DKELV02"
+	next = "DKE04"
+	secretnext = "DKE04"
+	sky1 = "SKYBOX10"
+	cluster = 5
+	music = "D_DKE03"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 3
+}
+
+map DKE04 "level 4: cast off skin"
+{
+	titlepatch = "DKELV03"
+	next = "DKE05"
+	secretnext = "DKE05"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE04"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 4
+}
+
+map DKE05 "level 5: the uninvited"
+{
+	titlepatch = "DKELV04"
+	next = "DKE06"
+	secretnext = "DKE06"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE05"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 5
+}
+
+map DKE06 "level 6: procession of flames"
+{
+	titlepatch = "DKELV05"
+	next = "DKE07"
+	secretnext = "DKE07"
+	sky1 = "SKY4 - 5"
+	cluster = 5
+	music = "D_DKE06"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 6
+}
+
+map DKE07 "level 7: black powder corpse"
+{
+	titlepatch = "DKELV06"
+	next = "DKE08"
+	secretnext = "DKE08"
+	sky1 = "SKYBOX7"
+	cluster = 6
+	map07special
+	music = "D_DKE07"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 7
+}
+
+map DKE08 "level 8: to kill the blind"
+{
+	titlepatch = "DKELV07"
+	next = "DKE09"
+	secretnext = "DKE09"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE08"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 8
+}
+
+map DKE09 "level 9: shejeema's claw"
+{
+	titlepatch = "DKELV08"
+	next = "DKE10"
+	secretnext = "DKE10"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE09"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 9
+}
+
+map DKE10 "level 10: the unloved"
+{
+	titlepatch = "DKELV09"
+	next = "DKE11"
+	secretnext = "DKE11"
+	sky1 = "SKY3 - 5"
+	cluster = 6
+	music = "D_DKE10"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 10
+}
+
+map DKE11 "level 11: dead bolt"
+{
+	titlepatch = "DKELV10"
+	next = "DKE12"
+	secretnext = "DKE12"
+	sky1 = "SKY1 - 5"
+	cluster = 6
+	music = "D_DKE11"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 11
+}
+
+map DKE12 "level 12: gema's deception"
+{
+	titlepatch = "DKELV11"
+	next = "DKE13"
+	secretnext = "DKE13"
+	sky1 = "SKY5 - 5"
+	cluster = 7
+	music = "D_DKE12"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 12
+}
+
+map DKE13 "level 13: in the arms of mama pus"
+{
+	titlepatch = "DKELV12"
+	next = "DKE14"
+	secretnext = "DKE14"
+	sky1 = "SKY5 - 5"
+	cluster = 7
+	music = "D_DKE13"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 13
+}
+
+map DKE14 "level 14: the path unseen"
+{
+	titlepatch = "DKELV13"
+	next = "DKE15"
+	secretnext = "DKE15"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE14"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 14
+}
+
+map DKE15 "level 15: seed of doubt"
+{
+	titlepatch = "DKELV14"
+	next = "DKE16"
+	secretnext = "DKE31"
+	sky1 = "SKYBOX9"
+	cluster = 7
+	music = "D_DKE15"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 15
+}
+
+map DKE16 "level 16: failed evolution"
+{
+	titlepatch = "DKELV15"
+	next = "DKE17"
+	secretnext = "DKE17"
+	sky1 = "SKY33"
+	cluster = 7
+	music = "D_DKE16"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 16
+}
+
+map DKE17 "level 17: blank stare"
+{
+	titlepatch = "DKELV16"
+	next = "DKE18"
+	secretnext = "DKE18"
+	sky1 = "SKY33"
+	cluster = 7
+	music = "D_DKE17"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 17
+}
+
+map DKE18 "level 18: grand grotesque"
+{
+	titlepatch = "DKELV17"
+	next = "DKE19"
+	secretnext = "DKE19"
+	sky1 = "SKY3"
+	cluster = 7
+	music = "D_DKE108"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 18
+}
+
+map DKE19 "level 19: almost human"
+{
+	titlepatch = "DKELV18"
+	next = "DKE20"
+	secretnext = "DKE20"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE19"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 19
+}
+
+map DKE20 "level 20: the hum of death"
+{
+	titlepatch = "DKELV19"
+	next = "DKE21"
+	secretnext = "DKE21"
+	sky1 = "SKYBOX10"
+	cluster = 7
+	music = "D_DKE20"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 20
+}
+
+map DKE21 "level 21: creatures of the worst kind"
+{
+	titlepatch = "DKELV20"
+	next = "DKE22"
+	secretnext = "DKE22"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE21"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 21
+}
+
+map DKE22 "level 22: darkest eve"
+{
+	titlepatch = "DKELV21"
+	next = "DKE23"
+	secretnext = "DKE23"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE22"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 22
+}
+
+map DKE23 "level 23: satan's promise"
+{
+	titlepatch = "DKELV22"
+	next = "DKE24"
+	secretnext = "DKE24"
+	sky1 = "SKYBOX5"
+	cluster = 8
+	music = "D_DKE23"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 23
+}
+
+map DKE24 "level 24: particles of pan"
+{
+	titlepatch = "DKELV23"
+	next = "DKE25"
+	secretnext = "DKE25"
+	sky1 = "SKY5"
+	cluster = 8
+	music = "D_DKE24"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 24
+}
+
+map DKE25 "level 25: dead theory"
+{
+	titlepatch = "DKELV24"
+	next = "DKE26"
+	secretnext = "DKE26"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE25"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 25
+}
+
+map DKE26 "level 26: a madman's mathematics"
+{
+	titlepatch = "DKELV25"
+	next = "DKE27"
+	secretnext = "DKE27"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE26"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 26
+}
+
+map DKE27 "level 27: still dead"
+{
+	titlepatch = "DKELV26"
+	next = "DKE28"
+	secretnext = "DKE28"
+	sky1 = "SKY10"
+	cluster = 8
+	music = "D_DKE27"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 27
+}
+
+map DKE28 "level 28: grand universe"
+{
+	titlepatch = "DKELV27"
+	next = "DKE29"
+	secretnext = "DKE29"
+	sky1 = "SKY7 - 5"
+	cluster = 8
+	music = "D_DKE28"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 28
+}
+
+map DKE29 "level 29: infected dimensions"
+{
+	titlepatch = "DKELV28"
+	next = "DKE30"
+	secretnext = "DKE30"
+	sky1 = "SKY38"
+	cluster = 8
+	music = "D_DKE29"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 29
+}
+
+map DKE30 "level 30: victory conditions"
+{
+	titlepatch = "DKELV29"
+	sky1 = "SKY7 - 5"
+	cluster = 8
+	music = "D_OPENIN"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 30
+    SuckTime = 1337
+}
+
+map DKE31 "level 31: hidden citadel"
+{
+	titlepatch = "DKELV30"
+	next = "DKE16"
+	secretnext = "DKE32"
+	sky1 = "SKYBOX10"
+	cluster = 9
+	music = "D_EVIL"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 31
+}
+
+map DKE32 "level 32: the black tower"
+{
+	titlepatch = "DKELV31"
+	next = "DKE16"
+	secretnext = "DKE16"
+	sky1 = "SKYBOX10"
+	cluster = 10
+	music = "D_ULTIMA"
+	enterpic = "DKEINT"
+	exitpic = "DKEINT"
+	intermusic = "D_DKEINT"
+	nocrouch
+	nojump
+	levelnum = 32
+}

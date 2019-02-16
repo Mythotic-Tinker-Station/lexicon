@@ -1,0 +1,183 @@
+map VAN01 "Overgrown Sepulcher"
+	{
+	titlepatch = "VANTP00"
+	next = "VAN02"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN02"
+	sky1 = "VANSKY1"
+	music = "D_VAN01"
+	nocrouch
+	nojump
+	}
+
+map VAN02 "Drowned Shrine"
+	{
+	titlepatch = "VANTP01"
+	next = "VAN03"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN03"
+	sky1 = "VANSKY1"
+	music = "D_VAN02"
+	nocrouch
+	nojump
+	}
+
+map VAN03 "13 Angry Archviles"
+	{
+	titlepatch = "VANTP02"
+	next = "VAN04"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN04"
+	sky1 = "VANSKY1"
+	music = "D_VAN03"
+	nocrouch
+	nojump
+	}
+
+map VAN04 "Hangman's Paradise"
+	{
+	titlepatch = "VANTP03"
+	next = "VAN05"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN05"
+	sky1 = "VANSKY1"
+	music = "D_VAN04"
+	nocrouch
+	nojump
+	}
+
+map VAN05 "Forgotten Village"
+	{
+	titlepatch = "VANTP04"
+	next = "VAN06"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN06"
+	sky1 = "VANSKY1"
+	music = "D_VAN05"
+	nocrouch
+	nojump
+	}
+	
+map VAN06 "Punchline"
+	{
+	titlepatch = "VANTP05"
+	next = "VAN07"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN07"
+	sky1 = "VANSKY3"
+	music = "D_VAN06"
+	nocrouch
+	nojump
+	}
+	
+map VAN07 "Dead Symmetrical"
+	{
+	map07special
+	titlepatch = "VANTP06"
+	next = "VAN08"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN08"
+	sky1 = "VANSKY3"
+	music = "D_VAN07"
+	nocrouch
+	nojump
+	}
+
+map VAN08 "Cratastrophe"
+	{
+	titlepatch = "VANTP07"
+	next = "VAN09"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN09"
+	sky1 = "VANSKY3"
+	music = "D_VAN08"
+	nocrouch
+	nojump
+	}
+	
+map VAN09 "Free Parking"
+	{
+	titlepatch = "VANTP08"
+	next = "VAN10"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN10"
+	sky1 = "VANSKY3"
+	music = "D_VAN09"
+	nocrouch
+	nojump
+	}
+	
+map VAN10 "Superstructure"
+	{
+	titlepatch = "VANTP09"
+	next = "VAN11"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN11"
+	sky1 = "VANSKY3"
+	music = "D_VAN10"
+	nocrouch
+	nojump
+	}
+	
+map VAN11 "Temple of Asmodeus"
+	{
+	titlepatch = "VANTP10"
+	next = "VAN12"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN12"
+	sky1 = "VANSKY4"
+	music = "D_VAN11"
+	nocrouch
+	nojump
+	}
+	
+map VAN12 "Infernal Chasm"
+	{
+	titlepatch = "VANTP11"
+	next = "VAN13"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN13"
+	sky1 = "VANSKY4"
+	music = "D_VAN12"
+	nocrouch
+	nojump
+	}
+	
+map VAN13 "Punch-Out"
+	{
+	titlepatch = "VANTP12"
+	next = "VR"
+	enterpic = "VANINT"
+	exitpic = "VANINT"
+	intermusic = "D_VANINT"
+	secretnext = "VAN14"
+	sky1 = "VANSKY4"
+	music = "D_VAN13"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

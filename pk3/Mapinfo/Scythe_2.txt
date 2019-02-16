@@ -1,0 +1,419 @@
+map SC201 "Castle Entryway"
+	{
+	titlepatch = "SC2TP00"
+	next = "SC202"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc201"
+	nocrouch
+	nojump
+	}
+	
+map SC202 "Rooftop Warzone"
+	{
+	titlepatch = "SC2TP01"
+	next = "SC203"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc202"
+	nocrouch
+	nojump
+	}
+	
+map SC203 "Castle Gardens II"
+	{
+	titlepatch = "SC2TP02"
+	next = "SC204"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc203"
+	nocrouch
+	nojump
+	}
+	
+map SC204 "Cursed Cellars"
+	{
+	titlepatch = "SC2TP03"
+	next = "SC205"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc204"
+	nocrouch
+	nojump
+	}
+	
+map SC205 "Halls of Anguish"
+	{
+	titlepatch = "SC2TP04"
+	next = "SC206"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc205"
+	nocrouch
+	nojump
+	}
+	
+map SC206 "Temple Entryway"
+	{
+	titlepatch = "SC2TP05"
+	next = "SC207"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc206"
+	nocrouch
+	nojump
+	}
+	
+map SC207 "Temple of Isis"
+	{
+	titlepatch = "SC2TP06"
+	next = "SC208"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc207"
+	map07special
+	nocrouch
+	nojump
+	}
+	
+map SC208 "Graverobbers"
+	{
+	titlepatch = "SC2TP07"
+	next = "SC209"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc208"
+	nocrouch
+	nojump
+	}
+	
+map SC209 "Valley of the Queen"
+	{
+	titlepatch = "SC2TP08"
+	next = "SC210"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc209"
+	nocrouch
+	nojump
+	}
+	
+map SC210 "Pharaos Tomb"
+	{
+	titlepatch = "SC2TP09"
+	next = "SC211"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc210"
+	nocrouch
+	nojump
+	}
+	
+map SC211 "UAC Base X"
+	{
+	titlepatch = "SC2TP10"
+	next = "SC212"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY1"
+	music = "d_sc211"
+	nocrouch
+	nojump
+	}
+	
+map SC212 "Battlegrounds"
+	{
+	titlepatch = "SC2TP11"
+	next = "SC213"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc212"
+	nocrouch
+	nojump
+	}
+	
+map SC213 "Mining Project"
+	{
+	titlepatch = "SC2TP12"
+	next = "SC214"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc213"
+	nocrouch
+	nojump
+	}
+	
+map SC214 "The Haunted Mines"
+	{
+	titlepatch = "SC2TP13"
+	next = "SC215"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc214"
+	nocrouch
+	nojump
+	}
+	
+map SC215 "End of the Line"
+	{
+	titlepatch = "SC2TP14"
+	next = "SC216"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	secretnext = "SC231"
+	sky1 = "SC2RSKY2"
+	music = "d_sc215"
+	nocrouch
+	nojump
+	}
+	
+map SC216 "Mr X"
+	{
+	titlepatch = "SC2TP15"
+	next = "SC217"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc216"
+	nocrouch
+	nojump
+	}
+	
+map SC217 "Canyon of Blood"
+	{
+	titlepatch = "SC2TP16"
+	next = "SC218"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc217"
+	nocrouch
+	nojump
+	}
+	
+map SC218 "Living Lands"
+	{
+	titlepatch = "SC2TP17"
+	next = "SC219"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc218"
+	nocrouch
+	nojump
+	}
+	
+map SC219 "Withering Away"
+	{
+	titlepatch = "SC2TP18"
+	next = "SC220"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc219"
+	nocrouch
+	nojump
+	}
+	
+map SC220 "The Gates"
+	{
+	titlepatch = "SC2TP19"
+	next = "SC221"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY2"
+	music = "d_sc220"
+	nocrouch
+	nojump
+	}
+	
+map SC221 "Doom Gardens"
+	{
+	titlepatch = "SC2TP20"
+	next = "SC222"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc221"
+	nocrouch
+	nojump
+	}
+	
+map SC222 "The Garden Base II"
+	{
+	titlepatch = "SC2TP21"
+	next = "SC223"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc222"
+	nocrouch
+	nojump
+	}
+	
+map SC223 "Whispering Winds"
+	{
+	titlepatch = "SC2TP22"
+	next = "SC224"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc223"
+	nocrouch
+	nojump
+	}
+	
+map SC224 "Gaias Temple"
+	{
+	titlepatch = "SC2TP23"
+	next = "SC225"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc224"
+	nocrouch
+	nojump
+	}
+	
+map SC225 "Forgotten City"
+	{
+	titlepatch = "SC2TP24"
+	next = "SC226"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc225"
+	nocrouch
+	nojump
+	}
+	
+map SC226 "Death"
+	{
+	titlepatch = "SC2TP25"
+	next = "SC227"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc226"
+	nocrouch
+	nojump
+	}
+	
+map SC227 "Afterlife II"
+	{
+	titlepatch = "SC2TP26"
+	next = "SC228"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc227"
+	nocrouch
+	nojump
+	}
+	
+map SC228 "Nightmare"
+	{
+	titlepatch = "SC2TP27"
+	next = "SC229"
+	sky1 = "SC2RSKY3"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	music = "d_sc228"
+	nocrouch
+	nojump
+	}
+	
+map SC229 "Dust to Dust"
+	{
+	titlepatch = "SC2TP28"
+	next = "SC230"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc229"
+	nocrouch
+	nojump
+	}
+	
+map SC230 "Haunting Dreams"
+	{
+	titlepatch = "SC2TP29"
+	next = "VR"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc230"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map SC231 "Secret"
+	{
+	titlepatch = "SC2TP30"
+	next = "SC216"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	secretnext = "SC232"
+	sky1 = "SC2RSKY3"
+	music = "d_sc231"
+	nocrouch
+	nojump
+	}
+	
+map SC232 "Super Secret"
+	{
+	titlepatch = "SC2TP31"
+	next = "SC216"
+	enterpic = "SCINT"
+	exitpic = "SCINT"
+	intermusic = "D_SCINT"
+	sky1 = "SC2RSKY3"
+	music = "d_sc232"
+	nocrouch
+	nojump
+	}

@@ -1,0 +1,419 @@
+map HR201 "Ignition"
+	{
+	titlepatch = "HR2TP00"
+	next = "HR202"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr201"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR202 "High Voltage"
+	{
+	titlepatch = "HR2TP01"
+	next = "HR203"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr202"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR203 "Shackled"
+	{
+	titlepatch = "HR2TP02"
+	next = "HR204"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr203"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR204 "Reluctant Pain"
+	{
+	titlepatch = "HR2TP03"
+	next = "HR205"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr204"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR205 "Insatanity"
+	{
+	titlepatch = "HR2TP04"
+	next = "HR206"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr205"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR206 "Revival"
+	{
+	titlepatch = "HR2TP05"
+	next = "HR207"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr206"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR207 "Not That Simple II"
+	{
+	titlepatch = "HR2TP06"
+	next = "HR208"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr207"
+	sky1 = "HR2RSKY1"
+	Map07Special 
+	nocrouch
+	nojump
+	}
+	
+map HR208 "Ballistics"
+	{
+	titlepatch = "HR2TP07"
+	next = "HR209"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr208"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR209 "The Siege II"
+	{
+	titlepatch = "HR2TP08"
+	next = "HR210"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr209"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR210 "Base Blaze"
+	{
+	titlepatch = "HR2TP09"
+	next = "HR211"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr210"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR211 "Raw Hatred"
+	{
+	titlepatch = "HR2TP10"
+	next = "HR212"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr211"
+	sky1 = "HR2RSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR212 "Anti Static"
+	{
+	titlepatch = "HR2TP11"
+	next = "HR213"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr212"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR213 "Hardcore"
+	{
+	titlepatch = "HR2TP12"
+	next = "HR214"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr213"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR214 "Metal Meltdown"
+	{
+	titlepatch = "HR2TP13"
+	next = "HR215"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr214"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR215 "The Path II"
+	{
+	titlepatch = "HR2TP14"
+	next = "HR216"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	secretnext = "HR231"
+	music = "d_hr215"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR216 "The Chapel of Black Granite"
+	{
+	titlepatch = "HR2TP15"
+	next = "HR217"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr216"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR217 "An Eye for an Eye"
+	{
+	titlepatch = "HR2TP16"
+	next = "HR218"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr217"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR218 "Excess Meat"
+	{
+	titlepatch = "HR2TP17"
+	next = "HR219"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr218"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR219 "Mind Trap"
+	{
+	titlepatch = "HR2TP18"
+	next = "HR220"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr219"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR220 "Fear of the Dark"
+	{
+	titlepatch = "HR2TP19"
+	next = "HR221"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr220"
+	sky1 = "HR2RSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR221 "Conflux"
+	{
+	titlepatch = "HR2TP20"
+	next = "HR222"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr221"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR222 "Sewer Slaughter"
+	{
+	titlepatch = "HR2TP21"
+	next = "HR223"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr222"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR223 "When the Heavens Fall"
+	{
+	titlepatch = "HR2TP22"
+	next = "HR224"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr223"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR224 "The Inmost Dens III"
+	{
+	titlepatch = "HR2TP23"
+	next = "HR225"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr224"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR225 "The End is Nigh"
+	{
+	titlepatch = "HR2TP24"
+	next = "HR226"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr225"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR226 "Dis 2000"
+	{
+	titlepatch = "HR2TP25"
+	next = "HR227"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr226"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR227 "Resistance Remains"
+	{
+	titlepatch = "HR2TP26"
+	next = "HR228"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr227"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR228 "Beyond the Sea"
+	{
+	titlepatch = "HR2TP27"
+	next = "HR229"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr228"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR229 "Hell's Cauldron"
+	{
+	titlepatch = "HR2TP28"
+	next = "HR230"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr229"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR230 "Source Control"
+	{
+	titlepatch = "HR2TP29"
+	next = "VR"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr230"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map HR231 "The Descent II"
+	{
+	titlepatch = "HR2TP30"
+	next = "HR216"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	secretnext = "HR232"
+	music = "d_hr231"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR232 "Playground"
+	{
+	titlepatch = "HR2TP31"
+	next = "HR216"
+	enterpic = "HR2INT"
+	exitpic = "HR2INT"
+	intermusic = "D_HR2INT"
+	music = "d_hr232"
+	sky1 = "HR2RSKY3"
+	nocrouch
+	nojump
+	}

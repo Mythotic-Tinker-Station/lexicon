@@ -1,0 +1,66 @@
+// Deus vult
+map DV01 "Insurgents"
+	{
+	next = "DV02"
+	sky1 = DVSKY1
+	titlepatch = DVILV00
+	enterpic = DVINT
+	exitpic = DVINT
+	music = D_DV01
+	nocrouch
+	nojump
+	intermusic = D_DVINT
+	}
+	
+map DV02 "Torture Chamber"
+	{
+	next = "DV03"
+	sky1 = DVSKY1
+	titlepatch = DVILV01
+	enterpic = DVINT
+	exitpic = DVINT
+	music = D_DV02
+	nocrouch
+	nojump
+	intermusic = D_DVINT
+	}
+	
+map DV03 "Cathedral"
+	{
+	next = "DV04"
+	sky1 = DVSKY1
+	titlepatch = DVILV02
+	enterpic = DVINT
+	exitpic = DVINT
+	music = D_DV03
+	nocrouch
+	nojump
+	intermusic = D_DVINT
+	}
+	
+map DV04 "End of Days"
+	{
+	next = "DV05"
+	sky1 = DVSKY1
+	titlepatch = DVILV03
+	enterpic = DVINT
+	exitpic = DVINT
+	music = D_DV04
+	nocrouch
+	nojump
+	intermusic = D_DVINT
+	}
+	
+map DV05 "Deus Vult"
+	{
+	next = "VR"
+	sky1 = DVSKY1
+	titlepatch = DVILV04
+	enterpic = DVINT
+	exitpic = DVINT
+	music = D_DV05
+	nocrouch
+	nojump
+	intermusic = D_DVINT
+    SuckTime = 1337
+	}

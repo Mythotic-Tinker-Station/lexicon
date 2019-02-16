@@ -1,0 +1,92 @@
+
+map MOM01 "Breakout"
+	{
+	next = "MOM02"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM01"
+	titlepatch = "MOMLV00"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM02 "Mt. Orion"
+	{
+	next = "MOM03"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM02"
+	titlepatch = "MOMLV01"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM03 "Ares Compound"
+	{
+	next = "MOM04"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM03"
+	titlepatch = "MOMLV02"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM04 "Drill Station"
+	{
+	next = "MOM05"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM04"
+	titlepatch = "MOMLV03"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM05 "Mortar for Martyrs"
+	{
+	next = "MOM06"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM05"
+	titlepatch = "MOMLV04"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM06 "Steel Militia"
+	{
+	next = "MOM07"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM06"
+	titlepatch = "MOMLV05"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+	}
+	
+map MOM07 "Geothermal Gymnastics"
+	{
+	next = "VR"
+	enterpic = "MOMINT"
+	exitpic = "MOMINT"
+	intermusic = "D_MOMINT"
+	music = "D_MOM07"
+	titlepatch = "MOMLV06"
+	sky1 = "MOMSKY"
+	nojump
+	nocrouch
+    SuckTime = 1337
+	}

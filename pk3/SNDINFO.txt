@@ -1,5 +1,18 @@
 partyhorn               horn
 k0rpse					easter
+voteshot                voteshot
+drop					drop
+firework1               FWBOOM1
+firework2               FWBOOM2
+
+$Random firework
+{
+    firework1
+    firework2
+}
+$pitchshift firework1 7
+$pitchshift firework2 7
+$pitchshift firework 7
 
 // Fuck i am one evil son of a bitch (I love you too clint)
 
@@ -156,3 +169,11 @@ mayhem17/bowsdeath MAYSDTH
 mayhem17/bowsattack MAYEENDT
 mayhem17/i_pkup MAYTEMUP
 mayhem17/p_pkup MAYETPOW
+
+//////////////////
+//	 hellcore   //
+//////////////////
+
+hellcore/firestrt HCFLAMST
+hellcore/keendeath HCKEENDT
+hellcore/keenpain HCKEENPN

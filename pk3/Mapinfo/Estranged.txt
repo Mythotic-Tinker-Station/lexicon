@@ -1,0 +1,292 @@
+
+// Estranged
+map EST01 "Outpost"
+{
+next = "EST02"
+music = "D_EST01"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST02 "Waste Treatment"
+{
+next = "EST03"
+music = "D_EST02"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST03 "Survey Centre"
+{
+next = "EST04"
+music = "D_EST03"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST04 "Venom"
+{
+next = "EST05"
+music = "D_EST04"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST05 "Dust N' Bones"
+{
+next = "EST06"
+music = "D_EST05"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST06 "Razor"
+{
+next = "EST07"
+music = "D_EST06"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST07 "Scream"
+{
+next = "EST08"
+music = "D_EST07"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST08 "Reptile"
+{
+next = "EST09"
+music = "D_EST08"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST09 "Torture Chamber"
+{
+next = "EST10"
+music = "D_EST09"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST10 "Dead Lands"
+{
+next = "EST11"
+music = "D_EST10"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST11 "Barren Keep"
+{
+next = "EST12"
+music = "D_EST11"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST12 "Dig Site"
+{
+next = "EST13"
+music = "D_EST12"
+sky1 = "ESTSKY5"
+nocrouch
+nojump
+}
+
+map EST13 "Dark Heart"
+{
+next = "EST14"
+music = "D_EST13"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST14 "Fissure"
+{
+next = "EST15"
+music = "D_EST14"
+sky1 = "ESTSKY2"
+nocrouch
+nojump
+}
+
+map EST15 "The Floating Fortress"
+{
+next = "EST16"
+music = "D_EST15"
+sky1 = "ESTSKY3"
+Secretnext = "EST31"
+nocrouch
+nojump
+}
+
+map EST16 "BattleRoom"
+{
+next = "EST17"
+music = "D_EST16"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST17 "Twisted Realms"
+{
+next = "EST18"
+music = "D_EST17"
+sky1 = "ESTSKY6"
+nocrouch
+nojump
+}
+
+map EST18 "Crater"
+{
+next = "EST19"
+music = "D_EST18"
+sky1 = "ESTSKY3"
+nocrouch
+nojump
+}
+
+map EST19 "Haunted Mines"
+{
+next = "EST20"
+music = "D_EST19"
+sky1 = "ESTSKY5"
+nocrouch
+nojump
+}
+
+map EST20 "The Rift"
+{
+next = "EST21"
+music = "D_EST20"
+sky1 = "ESTSKY3"
+nocrouch
+nojump
+}
+
+map EST21 "Hell Hole"
+{
+next = "EST22"
+music = "D_EST21"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST22 "The BloodWorks"
+{
+next = "EST23"
+music = "D_EST22"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST23 "Eye Of Misery"
+{
+next = "EST24"
+music = "D_EST23"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST24 "Scorching Back"
+{
+next = "EST25"
+music = "D_EST24"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST25 "The Depths"
+{
+next = "EST26"
+music = "D_EST25"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST26 "Valley Of Defilement"
+{
+next = "EST27"
+music = "D_EST26"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST27 "Flame Peak"
+{
+next = "EST28"
+music = "D_EST27"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST28 "Astral Plane"
+{
+next = "EST29"
+music = "D_EST28"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST29 "Sheol"
+{
+next = "EST30"
+music = "D_EST29"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST30 "Chimes At Midnight"
+{
+next = "VR"
+music = "D_EST30"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+SuckTime = 1337
+}
+
+map EST31 "The Tomb :P"
+{
+secretnext = "EST32"
+next = "EST16"
+music = "D_EST31"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}
+
+map EST32 "Void Walker"
+{
+next = "EST16"
+music = "D_EST32"
+sky1 = "ESTSKY1"
+nocrouch
+nojump
+}

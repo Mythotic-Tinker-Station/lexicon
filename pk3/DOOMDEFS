@@ -115,3 +115,29 @@ object Mayhem17Megasphere
     frame 17GAC0 { light MEGASPHERE3 }
     frame 17GAD0 { light MEGASPHERE4 }
 }
+
+
+pulselight TitleMapLexiconLight1
+{
+	color 1.0 0.0 0.0
+	size 384
+	secondarySize 256
+	interval 1.5
+	offset 0 0 0
+}
+pulselight TitleMapLexiconLight2
+{
+	color 0.0 1.0 0.0
+	size 384
+	secondarySize 256
+	interval 2.5
+	offset 0 0 0
+}
+pulselight TitleMapLexiconLight3
+{
+	color 0.0 0.0 1.0
+	size 384
+	secondarySize 256
+	interval 3.5
+	offset 0 0 0
+}

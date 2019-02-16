@@ -1,0 +1,419 @@
+map HR01 "Into the Gate"
+	{
+	titlepatch = "HRTPX00"
+	next = "HR02"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr01"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR02 "Gateway Lab"
+	{
+	titlepatch = "HRTPX01"
+	next = "HR03"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr02"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR03 "The Dumpster"
+	{
+	titlepatch = "HRTPX02"
+	next = "HR04"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr03"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR04 "The Garden Terminal"
+	{
+	titlepatch = "HRTPX03"
+	next = "HR05"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr04"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR05 "Core Infection"
+	{
+	titlepatch = "HRTPX04"
+	next = "HR06"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr05"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR06 "The Round Crossroads"
+	{
+	titlepatch = "HRTPX05"
+	next = "HR07"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr06"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR07 "Arachnophobia"
+	{
+	titlepatch = "HRTPX06"
+	next = "HR08"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr07"
+	sky1 = "HRRSKY1"
+	map07special
+	nocrouch
+	nojump
+	}
+	
+map HR08 "The Jail"
+	{
+	titlepatch = "HRTPX07"
+	next = "HR09"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr08"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR09 "Knockout"
+	{
+	titlepatch = "HRTPX08"
+	next = "HR10"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr09"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR10 "Chambers of War"
+	{
+	titlepatch = "HRTPX09"
+	next = "HR11"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr10"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR11 "Underground Base"
+	{
+	titlepatch = "HRTPX10"
+	next = "HR12"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr11"
+	sky1 = "HRRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HR12 "Great Halls of Fire"
+	{
+	titlepatch = "HRTPX11"
+	next = "HR13"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr12"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR13 "Last Look at Eden"
+	{
+	titlepatch = "HRTPX12"
+	next = "HR14"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr13"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR14 "City in the Clouds"
+	{
+	titlepatch = "HRTPX13"
+	next = "HR15"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr14"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR15 "Gates to Hell"
+	{
+	titlepatch = "HRTPX14"
+	next = "HR16"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	secretnext = "HR31"
+	music = "d_hr15"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR16 "The Path"
+	{
+	titlepatch = "HRTPX15"
+	next = "HR17"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr16"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR17 "The Black Towers"
+	{
+	titlepatch = "HRTPX16"
+	next = "HR18"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr09"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR18 "Hard Attack"
+	{
+	titlepatch = "HRTPX17"
+	next = "HR19"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr18"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR19 "Everything Dies"
+	{
+	titlepatch = "HRTPX18"
+	next = "HR20"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr19"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR20 "Judgement Day"
+	{
+	titlepatch = "HRTPX19"
+	next = "HR21"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_MESSAG"
+	sky1 = "HRRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map HR21 "Siege"
+	{
+	titlepatch = "HRTPX20"
+	next = "HR22"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_COUNT2"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR22 "Resistance is Futile"
+	{
+	titlepatch = "HRTPX21"
+	next = "HR23"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_DDTBL3"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR23 "Ascending to the Stars"
+	{
+	titlepatch = "HRTPX22"
+	next = "HR24"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_AMPIE"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR24 "Post Mortem"
+	{
+	titlepatch = "HRTPX23"
+	next = "HR25"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_THEDA3"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR25 "Dead Progressive"
+	{
+	titlepatch = "HRTPX24"
+	next = "HR26"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_ADRIAN"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR26 "Afterlife"
+	{
+	titlepatch = "HRTPX25"
+	next = "HR27"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_MESSG2"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR27 "Cyberpunk"
+	{
+	titlepatch = "HRTPX26"
+	next = "HR28"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr27"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR28 "Top Hell"
+	{
+	titlepatch = "HRTPX27"
+	next = "HR29"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_TENSE"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR29 "Temple of Fear"
+	{
+	titlepatch = "HRTPX28"
+	next = "HR30"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr29"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR30 "Hell Revealed"
+	{
+	titlepatch = "HRTPX29"
+	next = "VR"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "D_OPENIN"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map HR31 "The Descent"
+	{
+	titlepatch = "HRTPX30"
+	next = "HR16"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	secretnext = "HR32"
+	music = "d_hr31"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map HR32 "Mostly Harmful"
+	{
+	titlepatch = "HRTPX31"
+	next = "HR16"
+	enterpic = "HRINTER"
+	exitpic = "HRINTER"
+	intermusic = "D_HRINT"
+	music = "d_hr32"
+	sky1 = "HRRSKY3"
+	nocrouch
+	nojump
+	}

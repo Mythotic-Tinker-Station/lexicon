@@ -914,6 +914,8 @@ strict namespace
 	
     script "lex_lore1" (void) clientside
     {
+        // special vr map logic so players cant activate this script if they are higher than 300.0 units
+        if(GetActorZ(playernumber()+1337) > 300.0) { terminate; }
         HudSetup(0,0);
         setfont("HUDFONT");
         hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);

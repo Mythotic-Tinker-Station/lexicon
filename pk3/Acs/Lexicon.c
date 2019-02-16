@@ -16,6 +16,7 @@ strict namespace
         #define STATE_RESULTS 3
         
         #define MAPSET_MAX 193
+        #define PLAYER_TID 1000
     #endif
     
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
@@ -360,7 +361,7 @@ strict namespace
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
-        Thing_ChangeTID(0, playernumber()+1337);
+        Thing_ChangeTID(0, playernumber()+PLAYER_TID);
 
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
@@ -581,7 +582,7 @@ strict namespace
             int pnum = playernumber();
 
             // special vr map logic so players cant vote from shooting the invisible parts of the linedef
-            if(GetActorZ(pnum+1337) < 1144.0) { terminate; }
+            if(GetActorZ(0) < 1144.0) { terminate; }
             
             // if the player has not voted...
             if (players[pnum] < 0)
@@ -646,14 +647,14 @@ strict namespace
         {
             for(int i = 0; i < 63; i++)
             {
-                GiveActorInventory(1337+i, "Lexicon_GodMode", 1);
+                GiveActorInventory(PLAYER_TID+i, "Lexicon_GodMode", 1);
             }
         }
         if(instakiller)
         {
             for(int i = 0; i < 63; i++)
             {
-                GiveActorInventory(1337+i, "Lexicon_InstaKiller", 1);
+                GiveActorInventory(PLAYER_TID+i, "Lexicon_InstaKiller", 1);
             }
         }
     }

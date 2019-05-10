@@ -154,10 +154,17 @@ takdmg takdmg
 thankgod thankgod
 
 //////////////////////////
-//		Deus Vult		//
+//		Deus Vult	1&2	//
 //////////////////////////
 
 dv01/mordor  dvbossit
+ClericSee		HCLERIC1
+ClericRoam		HCLERIC2
+ClericPain		HCLERIC3
+ClericSwing		HCLERIC4
+ClericHit		HCLERIC5
+ClericDeath		HCLERIC6
+ClericGib		HCLERIC7
 
 //////////////////
 //	 Mayhem 17  //
@@ -177,3 +184,26 @@ mayhem17/p_pkup MAYETPOW
 hellcore/firestrt HCFLAMST
 hellcore/keendeath HCKEENDT
 hellcore/keenpain HCKEENPN
+
+//////////////////
+//	 Valiant   //
+//////////////////
+
+valdg/active			VALINT01
+valdg/death				VALINT02
+valdg/pain				VALINT03
+valdg/sight				VALINT04
+
+valbrn/death			VALINT05
+
+valbn/sight				VALINT06
+valbn/death				VALINT07
+
+valkt/sight				VALINT08
+valkt/death				VALINT09
+
+valkn/pain				VALINT10
+valkn/death				VALINT11
+
+valws/sight				VALINT12
+valws/death				VALINT13

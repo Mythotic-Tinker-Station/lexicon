@@ -1,0 +1,363 @@
+
+//Ep 1	
+map VAL01 "Bad Reception"{
+	titlepatch = "VALNT00"
+	next = "VAL02"
+	music = "D_VAL01"
+	par = 230
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL02 "No Rush"{
+	titlepatch = "VALNT01"
+	next = "VAL03"
+	music = "D_VAL02"
+	par = 105
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL03 "Tiers of Pain"{
+	titlepatch = "VALNT02"
+	next = "VAL04"
+	music = "D_VAL03"
+	par = 60
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL04 "Moonlit Stroll"{
+	titlepatch = "VALNT03"
+	next = "VAL05"
+	music = "D_VAL04"
+	par = 270
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL05 "Aggrovator"{
+	titlepatch = "VALNT04"
+	next = "VAL06"
+	music = "D_VAL05"
+	par = 240
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL06 "Engineering Disaster"{
+	titlepatch = "VALNT05"
+	next = "VAL07"
+	music = "D_VAL06"
+	par = 330
+	ExitPic = "EP1VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL07 "The Mancubian Candidate"{
+	titlepatch = "VALNT06"
+	next = "VAL08"
+	map07special
+	music = "D_VAL07"
+	par = 240
+	ExitPic = "EP1VAL"
+	EnterPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+// Ep2
+map VAL08 "Bushwhacked"{
+	titlepatch = "VALNT07"
+	next = "VAL09"
+	music = "D_VAL08"
+	par = 300
+	ExitPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL09 "14 Angrier Archviles"{
+	titlepatch = "VALNT08"
+	next = "VAL10"
+	music = "D_VAL09"
+	par = 450
+	ExitPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL10 "Candlecove"{
+	titlepatch = "VALNT09"
+	next = "VAL11"
+	music = "D_VAL10"
+	par = 540
+	ExitPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL11 "Yesterday's Insanity"{
+	titlepatch = "VALNT10"
+	next = "VAL12"
+	music = "D_VAL11"
+	par = 270
+	ExitPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL12 "Bane Capitol"{
+	titlepatch = "VALNT11"
+	next = "VAL13"
+	music = "D_VAL12"
+	par = 330
+	ExitPic = "EP2VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL13 "The Netweaver"{
+	titlepatch = "VALNT12"
+	music = "D_VAL13"
+	par = 540
+	ExitPic = "EP2VAL"
+	EnterPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+//Ep3
+map VAL14 "Implosion"{
+	titlepatch = "VALNT13"
+	next = "VAL15"
+	music = "D_VAL14"
+	par = 330
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL15 "Screams aren't a crime... yet"{
+	titlepatch = "VALNT14"
+	next = "VAL16"
+	secretnext = "VAL31"
+	music = "D_VAL15"
+	par = 600
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL16 "Toxic Traverse"{
+	titlepatch = "VALNT15"
+	next = "VAL17"
+	music = "D_VAL16"
+	par = 390
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL17 "Precipice"{
+	titlepatch = "VALNT16"
+	next = "VAL18"
+	music = "D_VAL17"
+	par = 540
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL18 "Crush Depth"{
+	titlepatch = "VALNT17"
+	music = "D_VAL18"
+	par = 510
+	ExitPic = "EP3VAL"
+	EnterPic = "EP4VAL"
+	nocrouch 
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+//Ep4
+map VAL19 "The Popes of Roam"{
+	titlepatch = "VALNT18"
+	next = "VAL20"
+	music = "D_VAL19"
+	par = 120
+	ExitPic = "EP4VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL20 "Swept Into Immolation"{
+	titlepatch = "VALNT19"
+	next = "VAL21"
+	music = "D_VAL20"
+	par = 480
+	ExitPic = "EP4VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL21 "Skindustrial Zone"{
+	titlepatch = "VALNT20"
+	next = "VAL22"
+	music = "D_VAL21"
+	par = 420
+	ExitPic = "EP4VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL22 "Spiraling Into Nether"{
+	titlepatch = "VALNT21"
+	next = "VAL23"
+	music = "D_VAL22"
+	par = 330
+	ExitPic = "EP4VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL23 "Genocide Motor"{
+	titlepatch = "VALNT22"
+	next = "VAL24"
+	music = "D_VAL23"
+	par = 540
+	ExitPic = "EP4VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+
+map VAL24 "None More Merciless"{
+	titlepatch = "VALNT23"
+	music = "D_VAL24"
+	par = 660
+	ExitPic = "EP4VAL"
+	EnterPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+//Ep5
+map VAL25 "The Eagle Has Landed"{
+	titlepatch = "VALNT24"
+	next = "VAL26"
+	music = "D_VAL25"
+	par = 270
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL26 "Blast Wave"{
+	titlepatch = "VALNT25"
+	next = "VAL27"
+	music = "D_VAL26"
+	par = 360
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL27 "Rocket Zone II"{
+	titlepatch = "VALNT26"
+	next = "VAL28"
+	music = "D_VAL27"
+	par = 900
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL28 "A Lightbridge Too Far"{
+	titlepatch = "VALNT27"
+	next = "VAL29"
+	music = "D_VAL28"
+	par = 900
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+map VAL29 "Red Shift"{
+	titlepatch = "VALNT28"
+	next = "VAL30"
+	music = "D_VAL29"
+	par = 480
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL30 "Electric Nightmare"{
+	titlepatch = "VALNT29"
+	next = "VR"
+	music = "D_VAL30"
+	par = 360
+	ExitPic = "EP5VALT"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+
+//Secret Maps
+map VAL31 "Cyberwar 7734"{
+	titlepatch = "VALNT30"
+	next = "VAL16"
+	secretnext = "VAL32"
+	music = "D_VAL31"
+	par = 1200
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}
+	
+map VAL32 "The Ghosts of the Old Kingdom"{
+	titlepatch = "VALNT31"
+	next = "VAL16"
+	music = "D_VAL32"
+	par = 360
+	ExitPic = "EP3VAL"
+	nocrouch
+	nojump
+	sky1 = "SAWSKYMN"
+	}

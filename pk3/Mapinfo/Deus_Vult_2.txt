@@ -1,0 +1,513 @@
+map DV201 "Entryway Pass"
+{
+	titlepatch = "DVIIV00"
+	next = "DV202"
+	secretnext = "DV202"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 30
+	music = "O_DV201"
+}
+
+map DV202 "Mutagen"
+{
+	titlepatch = "DVIIV01"
+	next = "DV203"
+	secretnext = "DV203"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 90
+	music = "O_DV202"
+}
+
+map DV203 "Crouching Demon, Hidden Archvile"
+{
+	titlepatch = "DVIIV02"
+	next = "DV204"
+	secretnext = "DV204"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 120
+	music = "O_DV203"
+}
+
+
+map DV204 "Skip Map"
+{
+	titlepatch = "DVIIV03"
+	next = "DV205"
+	secretnext = "DV205"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 120
+	music = "D_BETWEE"
+}
+
+map DV205 "Skip Map"
+{
+	titlepatch = "DVIIV04"
+	next = "DV206"
+	secretnext = "DV206"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 90
+	music = "D_DOOM"
+}
+
+map DV206 "Skip Map"
+{
+	titlepatch = "DVIIV05"
+	next = "DV207"
+	secretnext = "DV207"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_THE_DA"
+}
+
+map DV207 "Skip Map"
+{
+	titlepatch = "DVIIV06"
+	next = "DV208"
+	secretnext = "DV208"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 120
+	music = "D_SHAWN"
+}
+
+map DV208 "Skip Map"
+{
+	titlepatch = "DVIIV07"
+	next = "DV209"
+	secretnext = "DV209"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 120
+	music = "D_DDTBLU"
+}
+
+map DV209 "Skip Map"
+{
+	titlepatch = "DVIIV08"
+	next = "DV210"
+	secretnext = "DV210"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 270
+	music = "D_IN_CIT"
+}
+
+map DV210 "Skip Map"
+{
+	titlepatch = "DVIIV09"
+	next = "DV211"
+	secretnext = "DV211"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 270
+	music = "D_DEAD"
+}
+
+map DV211 "Skip Map"
+{
+	titlepatch = "DVIIV10"
+	next = "DV212"
+	secretnext = "DV212"
+	intermusic = "O_DVIIIN"
+	sky1 = "DVII8"
+	
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
+	nojump
+	nocrouch
+	par = 210
+	music = "D_STLKS2"
+}
+
+map DV212 "Minas Morgul"
+{
+	titlepatch = "DVIIV11"
+	next = "DV213"
+	secretnext = "DV213"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 150
+	music = "O_DV212"
+}
+
+map DV213 "Eagle's Nest"
+{
+	titlepatch = "DVIIV12"
+	next = "DV215"
+	secretnext = "DV215"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 150
+	music = "O_DV213"
+}
+
+map DV214 "Skip Map"
+{
+	titlepatch = "DVIIV13"
+	next = "DV215"
+	secretnext = "DV215"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_DDTBL2"
+}
+
+map DV215 "Skip Map"
+{
+	titlepatch = "DVIIV14"
+	next = "DV216"
+	secretnext = "DV216"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 210
+	music = "D_RUNNI2"
+}
+
+map DV216 "Skip Map"
+{
+	titlepatch = "DVIIV15"
+	next = "DV217"
+	secretnext = "DV217"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_DEAD2"
+}
+
+map DV217 "Skip Map"
+{
+	titlepatch = "DVIIV16"
+	next = "DV218"
+	secretnext = "DV218"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 420
+	music = "D_STLKS3"
+}
+
+map DV218 "Skip Map"
+{
+	titlepatch = "DVIIV17"
+	next = "DV219"
+	secretnext = "DV219"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_ROMERO"
+}
+
+map DV219 "Stargate"
+{
+	titlepatch = "DVIIV18"
+	next = "DV220"
+	secretnext = "DV220"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER02"
+	nojump
+	nocrouch
+	par = 210
+	music = "D_DV219"
+}
+
+map DV220 "Desert Temple"
+{
+	titlepatch = "DVIIV19"
+	next = "DV221"
+	secretnext = "DV221"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ2"
+	
+	enterpic = "ZINTER02"
+	exitpic = "ZINTER03"
+	nojump
+	nocrouch
+	par = 150
+	music = "O_DV220"
+}
+
+map DV221 "The Unholy Cathedral"
+{
+	titlepatch = "DVIIV20"
+	next = "DV222"
+	secretnext = "DV222"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER03"
+	exitpic = "ZINTER03"
+	nojump
+	nocrouch
+	par = 240
+	music = "O_DV221"
+}
+
+map DV222 "You Shall Not Pass!"
+{
+	titlepatch = "DVIIV21"
+	next = "DV223"
+	secretnext = "DV223"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER03"
+	exitpic = "ZINTER03"
+	nojump
+	nocrouch
+	par = 150
+	music = "O_DV222"
+}
+
+map DV223 "Hell's Vendetta"
+{
+	titlepatch = "DVIIV22"
+	next = "DV229"
+	secretnext = "DV229"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER03"
+	exitpic = "ZINTER03"
+	nojump
+	nocrouch
+	par = 180
+	music = "O_DV223"
+}
+
+map DV224 "Skip Map"
+{
+	titlepatch = "DVIIV23"
+	next = "DV225"
+	secretnext = "DV225"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER03"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_THEDA3"
+}
+
+map DV225 "Skip Map"
+{
+	titlepatch = "DVIIV24"
+	next = "DV226"
+	secretnext = "DV226"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 150
+	music = "D_ADRIAN"
+}
+
+map DV226 "Skip Map"
+{
+	titlepatch = "DVIIV25"
+	next = "DV227"
+	secretnext = "DV227"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 300
+	music = "D_MESSG2"
+}
+
+map DV227 "Skip Map"
+{
+	titlepatch = "DVIIV26"
+	next = "DV228"
+	secretnext = "DV228"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 330
+	music = "D_ROMER2"
+}
+
+map DV228 "Skip Map"
+{
+	titlepatch = "DVIIV27"
+	next = "DV229"
+	secretnext = "DV229"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 420
+	music = "D_TENSE"
+}
+
+map DV229 "Saint Peter's Gate"
+{
+	titlepatch = "DVIIV28"
+	next = "DV230"
+	secretnext = "DV231"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER04"
+	nojump
+	nocrouch
+	par = 300
+	music = "D_DV229"
+}
+
+map DV230 "Saint Peter's Gate"
+{
+	titlepatch = "DVIIV29"
+	next = "VR"
+	secretnext = "DV231"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER04"
+	exitpic = "ZINTER05"
+	nojump
+	nocrouch
+	par = 180
+	music = "D_DV229"
+}
+
+map DV231 "The Manliest Level Yet"
+{
+	titlepatch = "DVIIV30"
+	next = "DV219"
+	secretnext = "DV232"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER05"
+	exitpic = "ZINTER05"
+	nojump
+	nocrouch
+	par = 120
+	music = "D_DV231"
+}
+
+map DV232 "Sauron's Gauntlets!"
+{
+	titlepatch = "DVIIV31"
+	next = "DV219"
+	secretnext = "DV219"
+	intermusic = "O_DVIIIN"
+	sky1 = "SKYZ3"
+	
+	enterpic = "ZINTER05"
+	exitpic = "ZINTER05"
+	nojump
+	nocrouch
+	par = 30
+	music = "D_DV232"
+}
+

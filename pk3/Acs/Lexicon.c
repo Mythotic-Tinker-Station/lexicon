@@ -32,7 +32,7 @@ strict namespace
         { "Kamasutra",                      "KS01",             "\c[Green](Normal)"}, // 4
         { "Shai'tans Luck",                 "SL20",             "\c[Green](Normal)"}, // 5
         { "Speed Of Doom",                  "SOD01",            "\c[Green](Normal)"}, // 6
-        { "VanGaurd",                       "VAN01",            "\c[Green](Normal)"}, // 7
+        { "Vanguard",                       "VAN01",            "\c[Green](Normal)"}, // 7
         { "Scythe 2",                       "SC201",            "\c[Green](Normal)"}, // 8
 		{ "Whispers Of Satan",		        "WOS01",	        "\c[Green](Normal)"}, // 9
 		{ "UAC Ultra",				        "UAC01",	        "\c[Green](Normal)"}, // 10
@@ -363,6 +363,8 @@ strict namespace
     {
         Thing_ChangeTID(0, playernumber()+PLAYER_TID);
 
+        ACS_Execute(568, 0, votechosen);
+
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
@@ -371,7 +373,6 @@ strict namespace
 
             // sync the joining player's vars
             bubble_sort();
-            ACS_Execute(568, 0, votechosen);
             ACS_Execute(569, 0, time_seconds);
             ACS_ExecuteAlways(570, 0, state);
             

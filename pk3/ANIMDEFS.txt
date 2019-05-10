@@ -355,7 +355,7 @@ Switch	Doom 1		SW1STON1	On Pic	SW2STON1	Tics 0
 Switch	Doom 1		SW1STON2	On Pic	SW2STON2	Tics 0
 Switch	Doom 1		SW1STONE	On Pic	SW2STONE	Tics 0
 Switch	Doom 1		SW1STRTN	On Pic	SW2STRTN	Tics 0
-Switch	Doom 2		SW1BLUE 	On Pic	SW2BLUE 	Tics 0
+Switch	Doom 2		DVII12	 	On Pic	SW2BLUE 	Tics 0
 Switch	Doom 2		SW1CMT  	On Pic	SW2CMT  	Tics 0
 Switch	Doom 2		SW1GARG 	On Pic	SW2GARG 	Tics 0
 Switch	Doom 2		SW1GSTON	On Pic	SW2GSTON	Tics 0
@@ -500,3 +500,3261 @@ Texture	Optional	URVFALL1	Range	URVFALL4	Tics 8
 
 // The Spire
 Texture optional WATER1 Range WATER4 Tics 8
+
+
+// Deus Vult II
+
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	LAVA1   	Range	LAVA4   	Tics 8
+Flat	Optional	BLOOD1  	Range	BLOOD3  	Tics 8
+Flat	Optional	RROCK05 	Range	RROCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SLIME09 	Range	SLIME12 	Tics 8
+Flat	Optional	ZA1_01  	Range	ZA1_99  	Tics 8
+Flat	Optional	ZA2_01  	Range	ZA2_99  	Tics 8
+Flat	Optional	ZA3_01  	Range	ZA3_99  	Tics 8
+Flat	Optional	ZA4_01  	Range	ZA4_99  	Tics 8
+Flat	Optional	ZA5_01  	Range	ZA5_99  	Tics 8
+Flat	Optional	ZA6_01  	Range	ZA6_99  	Tics 8
+Flat	Optional	ZA7_01  	Range	ZA7_99  	Tics 8
+Flat	Optional	ZA8_01  	Range	ZA8_99  	Tics 8
+Flat	Optional	ZA9_01  	Range	ZA9_99  	Tics 8
+Flat	Optional	ZB1_01  	Range	ZB1_99  	Tics 8
+Flat	Optional	ZB2_01  	Range	ZB2_99  	Tics 8
+Flat	Optional	ZB3_01  	Range	ZB3_99  	Tics 8
+Flat	Optional	ZB4_01  	Range	ZB4_99  	Tics 8
+Flat	Optional	ZB5_01  	Range	ZB5_99  	Tics 8
+Flat	Optional	ZB6_01  	Range	ZB6_99  	Tics 8
+Flat	Optional	ZB7_01  	Range	ZB7_99  	Tics 8
+Flat	Optional	ZB8_01  	Range	ZB8_99  	Tics 8
+Flat	Optional	ZB9_01  	Range	ZB9_99  	Tics 8
+Flat	Optional	ZC1_01  	Range	ZC1_99  	Tics 8
+Flat	Optional	ZC2_01  	Range	ZC2_99  	Tics 8
+Flat	Optional	ZC3_01  	Range	ZC3_99  	Tics 8
+Flat	Optional	ZC4_01  	Range	ZC4_99  	Tics 8
+Flat	Optional	ZC5_01  	Range	ZC5_99  	Tics 8
+Flat	Optional	ZC6_01  	Range	ZC6_99  	Tics 8
+Flat	Optional	ZC7_01  	Range	ZC7_99  	Tics 8
+Flat	Optional	ZC8_01  	Range	ZC8_99  	Tics 8
+Flat	Optional	ZC9_01  	Range	ZC9_99  	Tics 8
+Flat	Optional	ZD1_01  	Range	ZD1_99  	Tics 8
+Flat	Optional	ZD2_01  	Range	ZD2_99  	Tics 8
+Flat	Optional	ZD3_01  	Range	ZD3_99  	Tics 8
+Flat	Optional	ZD4_01  	Range	ZD4_99  	Tics 8
+Flat	Optional	ZD5_01  	Range	ZD5_99  	Tics 8
+Flat	Optional	ZD6_01  	Range	ZD6_99  	Tics 8
+Flat	Optional	ZD7_01  	Range	ZD7_99  	Tics 8
+Flat	Optional	ZD8_01  	Range	ZD8_99  	Tics 8
+Flat	Optional	ZD9_01  	Range	ZD9_99  	Tics 8
+Flat	Optional	ZE1_01  	Range	ZE1_99  	Tics 8
+Flat	Optional	ZE2_01  	Range	ZE2_99  	Tics 8
+Flat	Optional	ZE3_01  	Range	ZE3_99  	Tics 8
+Flat	Optional	ZE4_01  	Range	ZE4_99  	Tics 8
+Flat	Optional	ZE5_01  	Range	ZE5_99  	Tics 8
+Flat	Optional	ZE6_01  	Range	ZE6_99  	Tics 8
+Flat	Optional	ZE7_01  	Range	ZE7_99  	Tics 8
+Flat	Optional	ZE8_01  	Range	ZE8_99  	Tics 8
+Flat	Optional	ZE9_01  	Range	ZE9_99  	Tics 8
+Flat	Optional	ZF1_01  	Range	ZF1_99  	Tics 8
+Flat	Optional	ZF2_01  	Range	ZF2_99  	Tics 8
+Flat	Optional	ZF3_01  	Range	ZF3_99  	Tics 8
+Flat	Optional	ZF4_01  	Range	ZF4_99  	Tics 8
+Flat	Optional	ZF5_01  	Range	ZF5_99  	Tics 8
+Flat	Optional	ZF6_01  	Range	ZF6_99  	Tics 8
+Flat	Optional	ZF7_01  	Range	ZF7_99  	Tics 8
+Flat	Optional	ZF8_01  	Range	ZF8_99  	Tics 8
+Flat	Optional	ZF9_01  	Range	ZF9_99  	Tics 8
+Flat	Optional	ZG1_01  	Range	ZG1_99  	Tics 8
+Flat	Optional	ZG2_01  	Range	ZG2_99  	Tics 8
+Flat	Optional	ZG3_01  	Range	ZG3_99  	Tics 8
+Flat	Optional	ZG4_01  	Range	ZG4_99  	Tics 8
+Flat	Optional	ZG5_01  	Range	ZG5_99  	Tics 8
+Flat	Optional	ZG6_01  	Range	ZG6_99  	Tics 8
+Flat	Optional	ZG7_01  	Range	ZG7_99  	Tics 8
+Flat	Optional	ZG8_01  	Range	ZG8_99  	Tics 8
+Flat	Optional	ZG9_01  	Range	ZG9_99  	Tics 8
+Flat	Optional	ZH1_01  	Range	ZH1_99  	Tics 8
+Flat	Optional	ZH2_01  	Range	ZH2_99  	Tics 8
+Flat	Optional	ZH3_01  	Range	ZH3_99  	Tics 8
+Flat	Optional	ZH4_01  	Range	ZH4_99  	Tics 8
+Flat	Optional	ZH5_01  	Range	ZH5_99  	Tics 8
+Flat	Optional	ZH6_01  	Range	ZH6_99  	Tics 8
+Flat	Optional	ZH7_01  	Range	ZH7_99  	Tics 8
+Flat	Optional	ZH8_01  	Range	ZH8_99  	Tics 8
+Flat	Optional	ZH9_01  	Range	ZH9_99  	Tics 8
+Flat	Optional	ZI1_01  	Range	ZI1_99  	Tics 8
+Flat	Optional	ZI2_01  	Range	ZI2_99  	Tics 8
+Flat	Optional	ZI3_01  	Range	ZI3_99  	Tics 8
+Flat	Optional	ZI4_01  	Range	ZI4_99  	Tics 8
+Flat	Optional	ZI5_01  	Range	ZI5_99  	Tics 8
+Flat	Optional	ZI6_01  	Range	ZI6_99  	Tics 8
+Flat	Optional	ZI7_01  	Range	ZI7_99  	Tics 8
+Flat	Optional	ZI8_01  	Range	ZI8_99  	Tics 8
+Flat	Optional	ZI9_01  	Range	ZI9_99  	Tics 8
+Flat	Optional	ZJ1_01  	Range	ZJ1_99  	Tics 8
+Flat	Optional	ZJ2_01  	Range	ZJ2_99  	Tics 8
+Flat	Optional	ZJ3_01  	Range	ZJ3_99  	Tics 8
+Flat	Optional	ZJ4_01  	Range	ZJ4_99  	Tics 8
+Flat	Optional	ZJ5_01  	Range	ZJ5_99  	Tics 8
+Flat	Optional	ZJ6_01  	Range	ZJ6_99  	Tics 8
+Flat	Optional	ZJ7_01  	Range	ZJ7_99  	Tics 8
+Flat	Optional	ZJ8_01  	Range	ZJ8_99  	Tics 8
+Flat	Optional	ZJ9_01  	Range	ZJ9_99  	Tics 8
+Flat	Optional	ZK1_01  	Range	ZK1_99  	Tics 8
+Flat	Optional	ZK2_01  	Range	ZK2_99  	Tics 8
+Flat	Optional	ZK3_01  	Range	ZK3_99  	Tics 8
+Flat	Optional	ZK4_01  	Range	ZK4_99  	Tics 8
+Flat	Optional	ZK5_01  	Range	ZK5_99  	Tics 8
+Flat	Optional	ZK6_01  	Range	ZK6_99  	Tics 8
+Flat	Optional	ZK7_01  	Range	ZK7_99  	Tics 8
+Flat	Optional	ZK8_01  	Range	ZK8_99  	Tics 8
+Flat	Optional	ZK9_01  	Range	ZK9_99  	Tics 8
+Flat	Optional	ZL1_01  	Range	ZL1_99  	Tics 8
+Flat	Optional	ZL2_01  	Range	ZL2_99  	Tics 8
+Flat	Optional	ZL3_01  	Range	ZL3_99  	Tics 8
+Flat	Optional	ZL4_01  	Range	ZL4_99  	Tics 8
+Flat	Optional	ZL5_01  	Range	ZL5_99  	Tics 8
+Flat	Optional	ZL6_01  	Range	ZL6_99  	Tics 8
+Flat	Optional	ZL7_01  	Range	ZL7_99  	Tics 8
+Flat	Optional	ZL8_01  	Range	ZL8_99  	Tics 8
+Flat	Optional	ZL9_01  	Range	ZL9_99  	Tics 8
+Flat	Optional	ZM1_01  	Range	ZM1_99  	Tics 8
+Flat	Optional	ZM2_01  	Range	ZM2_99  	Tics 8
+Flat	Optional	ZM3_01  	Range	ZM3_99  	Tics 8
+Flat	Optional	ZM4_01  	Range	ZM4_99  	Tics 8
+Flat	Optional	ZM5_01  	Range	ZM5_99  	Tics 8
+Flat	Optional	ZM6_01  	Range	ZM6_99  	Tics 8
+Flat	Optional	ZM7_01  	Range	ZM7_99  	Tics 8
+Flat	Optional	ZM8_01  	Range	ZM8_99  	Tics 8
+Flat	Optional	ZM9_01  	Range	ZM9_99  	Tics 8
+Flat	Optional	ZN1_01  	Range	ZN1_99  	Tics 8
+Flat	Optional	ZN2_01  	Range	ZN2_99  	Tics 8
+Flat	Optional	ZN3_01  	Range	ZN3_99  	Tics 8
+Flat	Optional	ZN4_01  	Range	ZN4_99  	Tics 8
+Flat	Optional	ZN5_01  	Range	ZN5_99  	Tics 8
+Flat	Optional	ZN6_01  	Range	ZN6_99  	Tics 8
+Flat	Optional	ZN7_01  	Range	ZN7_99  	Tics 8
+Flat	Optional	ZN8_01  	Range	ZN8_99  	Tics 8
+Flat	Optional	ZN9_01  	Range	ZN9_99  	Tics 8
+Flat	Optional	ZO1_01  	Range	ZO1_99  	Tics 8
+Flat	Optional	ZO2_01  	Range	ZO2_99  	Tics 8
+Flat	Optional	ZO3_01  	Range	ZO3_99  	Tics 8
+Flat	Optional	ZO4_01  	Range	ZO4_99  	Tics 8
+Flat	Optional	ZO5_01  	Range	ZO5_99  	Tics 8
+Flat	Optional	ZO6_01  	Range	ZO6_99  	Tics 8
+Flat	Optional	ZO7_01  	Range	ZO7_99  	Tics 8
+Flat	Optional	ZO8_01  	Range	ZO8_99  	Tics 8
+Flat	Optional	ZO9_01  	Range	ZO9_99  	Tics 8
+Flat	Optional	ZP1_01  	Range	ZP1_99  	Tics 8
+Flat	Optional	ZP2_01  	Range	ZP2_99  	Tics 8
+Flat	Optional	ZP3_01  	Range	ZP3_99  	Tics 8
+Flat	Optional	ZP4_01  	Range	ZP4_99  	Tics 8
+Flat	Optional	ZP5_01  	Range	ZP5_99  	Tics 8
+Flat	Optional	ZP6_01  	Range	ZP6_99  	Tics 8
+Flat	Optional	ZP7_01  	Range	ZP7_99  	Tics 8
+Flat	Optional	ZP8_01  	Range	ZP8_99  	Tics 8
+Flat	Optional	ZP9_01  	Range	ZP9_99  	Tics 8
+Flat	Optional	ZQ1_01  	Range	ZQ1_99  	Tics 8
+Flat	Optional	ZQ2_01  	Range	ZQ2_99  	Tics 8
+Flat	Optional	ZQ3_01  	Range	ZQ3_99  	Tics 8
+Flat	Optional	ZQ4_01  	Range	ZQ4_99  	Tics 8
+Flat	Optional	ZQ5_01  	Range	ZQ5_99  	Tics 8
+Flat	Optional	ZQ6_01  	Range	ZQ6_99  	Tics 8
+Flat	Optional	ZQ7_01  	Range	ZQ7_99  	Tics 8
+Flat	Optional	ZQ8_01  	Range	ZQ8_99  	Tics 8
+Flat	Optional	ZQ9_01  	Range	ZQ9_99  	Tics 8
+Flat	Optional	ZR1_01  	Range	ZR1_99  	Tics 8
+Flat	Optional	ZR2_01  	Range	ZR2_99  	Tics 8
+Flat	Optional	ZR3_01  	Range	ZR3_99  	Tics 8
+Flat	Optional	ZR4_01  	Range	ZR4_99  	Tics 8
+Flat	Optional	ZR5_01  	Range	ZR5_99  	Tics 8
+Flat	Optional	ZR6_01  	Range	ZR6_99  	Tics 8
+Flat	Optional	ZR7_01  	Range	ZR7_99  	Tics 8
+Flat	Optional	ZR8_01  	Range	ZR8_99  	Tics 8
+Flat	Optional	ZR9_01  	Range	ZR9_99  	Tics 8
+Flat	Optional	ZS1_01  	Range	ZS1_99  	Tics 8
+Flat	Optional	ZS2_01  	Range	ZS2_99  	Tics 8
+Flat	Optional	ZS3_01  	Range	ZS3_99  	Tics 8
+Flat	Optional	ZS4_01  	Range	ZS4_99  	Tics 8
+Flat	Optional	ZS5_01  	Range	ZS5_99  	Tics 8
+Flat	Optional	ZS6_01  	Range	ZS6_99  	Tics 8
+Flat	Optional	ZS7_01  	Range	ZS7_99  	Tics 8
+Flat	Optional	ZS8_01  	Range	ZS8_99  	Tics 8
+Flat	Optional	ZS9_01  	Range	ZS9_99  	Tics 8
+Flat	Optional	ZT1_01  	Range	ZT1_99  	Tics 8
+Flat	Optional	ZT2_01  	Range	ZT2_99  	Tics 8
+Flat	Optional	ZT3_01  	Range	ZT3_99  	Tics 8
+Flat	Optional	ZT4_01  	Range	ZT4_99  	Tics 8
+Flat	Optional	ZT5_01  	Range	ZT5_99  	Tics 8
+Flat	Optional	ZT6_01  	Range	ZT6_99  	Tics 8
+Flat	Optional	ZT7_01  	Range	ZT7_99  	Tics 8
+Flat	Optional	ZT8_01  	Range	ZT8_99  	Tics 8
+Flat	Optional	ZT9_01  	Range	ZT9_99  	Tics 8
+Flat	Optional	ZU1_01  	Range	ZU1_99  	Tics 8
+Flat	Optional	ZU2_01  	Range	ZU2_99  	Tics 8
+Flat	Optional	ZU3_01  	Range	ZU3_99  	Tics 8
+Flat	Optional	ZU4_01  	Range	ZU4_99  	Tics 8
+Flat	Optional	ZU5_01  	Range	ZU5_99  	Tics 8
+Flat	Optional	ZU6_01  	Range	ZU6_99  	Tics 8
+Flat	Optional	ZU7_01  	Range	ZU7_99  	Tics 8
+Flat	Optional	ZU8_01  	Range	ZU8_99  	Tics 8
+Flat	Optional	ZU9_01  	Range	ZU9_99  	Tics 8
+Flat	Optional	ZV1_01  	Range	ZV1_99  	Tics 8
+Flat	Optional	ZV2_01  	Range	ZV2_99  	Tics 8
+Flat	Optional	ZV3_01  	Range	ZV3_99  	Tics 8
+Flat	Optional	ZV4_01  	Range	ZV4_99  	Tics 8
+Flat	Optional	ZV5_01  	Range	ZV5_99  	Tics 8
+Flat	Optional	ZV6_01  	Range	ZV6_99  	Tics 8
+Flat	Optional	ZV7_01  	Range	ZV7_99  	Tics 8
+Flat	Optional	ZV8_01  	Range	ZV8_99  	Tics 8
+Flat	Optional	ZV9_01  	Range	ZV9_99  	Tics 8
+Flat	Optional	ZW1_01  	Range	ZW1_99  	Tics 8
+Flat	Optional	ZW2_01  	Range	ZW2_99  	Tics 8
+Flat	Optional	ZW3_01  	Range	ZW3_99  	Tics 8
+Flat	Optional	ZW4_01  	Range	ZW4_99  	Tics 8
+Flat	Optional	ZW5_01  	Range	ZW5_99  	Tics 8
+Flat	Optional	ZW6_01  	Range	ZW6_99  	Tics 8
+Flat	Optional	ZW7_01  	Range	ZW7_99  	Tics 8
+Flat	Optional	ZW8_01  	Range	ZW8_99  	Tics 8
+Flat	Optional	ZW9_01  	Range	ZW9_99  	Tics 8
+Flat	Optional	ZX1_01  	Range	ZX1_99  	Tics 8
+Flat	Optional	ZX2_01  	Range	ZX2_99  	Tics 8
+Flat	Optional	ZX3_01  	Range	ZX3_99  	Tics 8
+Flat	Optional	ZX4_01  	Range	ZX4_99  	Tics 8
+Flat	Optional	ZX5_01  	Range	ZX5_99  	Tics 8
+Flat	Optional	ZX6_01  	Range	ZX6_99  	Tics 8
+Flat	Optional	ZX7_01  	Range	ZX7_99  	Tics 8
+Flat	Optional	ZX8_01  	Range	ZX8_99  	Tics 8
+Flat	Optional	ZX9_01  	Range	ZX9_99  	Tics 8
+Flat	Optional	ZY1_01  	Range	ZY1_99  	Tics 8
+Flat	Optional	ZY2_01  	Range	ZY2_99  	Tics 8
+Flat	Optional	ZY3_01  	Range	ZY3_99  	Tics 8
+Flat	Optional	ZY4_01  	Range	ZY4_99  	Tics 8
+Flat	Optional	ZY5_01  	Range	ZY5_99  	Tics 8
+Flat	Optional	ZY6_01  	Range	ZY6_99  	Tics 8
+Flat	Optional	ZY7_01  	Range	ZY7_99  	Tics 8
+Flat	Optional	ZY8_01  	Range	ZY8_99  	Tics 8
+Flat	Optional	ZY9_01  	Range	ZY9_99  	Tics 8
+Flat	Optional	ZZ1_01  	Range	ZZ1_99  	Tics 8
+Flat	Optional	ZZ2_01  	Range	ZZ2_99  	Tics 8
+Flat	Optional	ZZ3_01  	Range	ZZ3_99  	Tics 8
+Flat	Optional	ZZ4_01  	Range	ZZ4_99  	Tics 8
+Flat	Optional	ZZ5_01  	Range	ZZ5_99  	Tics 8
+Flat	Optional	ZZ6_01  	Range	ZZ6_99  	Tics 8
+Flat	Optional	ZZ7_01  	Range	ZZ7_99  	Tics 8
+Flat	Optional	ZZ8_01  	Range	ZZ8_99  	Tics 8
+Flat	Optional	ZZ9_01  	Range	ZZ9_99  	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	0015J  		Range	0015M  		Tics 8
+Texture	Optional	0016P	  	Range	0016S	  	Tics 8
+Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
+Texture	Optional	XA01_01 	Range	XA01_99 	Tics 8
+Texture	Optional	XA02_01 	Range	XA02_99 	Tics 8
+Texture	Optional	XA03_01 	Range	XA03_99 	Tics 8
+Texture	Optional	XA04_01 	Range	XA04_99 	Tics 8
+Texture	Optional	XA05_01 	Range	XA05_99 	Tics 8
+Texture	Optional	XA06_01 	Range	XA06_99 	Tics 8
+Texture	Optional	XA07_01 	Range	XA07_99 	Tics 8
+Texture	Optional	XA08_01 	Range	XA08_99 	Tics 8
+Texture	Optional	XA09_01 	Range	XA09_99 	Tics 8
+Texture	Optional	XA10_01 	Range	XA10_99 	Tics 8
+Texture	Optional	XA11_01 	Range	XA11_99 	Tics 8
+Texture	Optional	XA12_01 	Range	XA12_99 	Tics 8
+Texture	Optional	XA13_01 	Range	XA13_99 	Tics 8
+Texture	Optional	XA14_01 	Range	XA14_99 	Tics 8
+Texture	Optional	XA15_01 	Range	XA15_99 	Tics 8
+Texture	Optional	XA16_01 	Range	XA16_99 	Tics 8
+Texture	Optional	XA17_01 	Range	XA17_99 	Tics 8
+Texture	Optional	XA18_01 	Range	XA18_99 	Tics 8
+Texture	Optional	XA19_01 	Range	XA19_99 	Tics 8
+Texture	Optional	XA20_01 	Range	XA20_99 	Tics 8
+Texture	Optional	XA21_01 	Range	XA21_99 	Tics 8
+Texture	Optional	XA22_01 	Range	XA22_99 	Tics 8
+Texture	Optional	XA23_01 	Range	XA23_99 	Tics 8
+Texture	Optional	XA24_01 	Range	XA24_99 	Tics 8
+Texture	Optional	XA25_01 	Range	XA25_99 	Tics 8
+Texture	Optional	XA26_01 	Range	XA26_99 	Tics 8
+Texture	Optional	XA27_01 	Range	XA27_99 	Tics 8
+Texture	Optional	XA28_01 	Range	XA28_99 	Tics 8
+Texture	Optional	XA29_01 	Range	XA29_99 	Tics 8
+Texture	Optional	XA30_01 	Range	XA30_99 	Tics 8
+Texture	Optional	XA31_01 	Range	XA31_99 	Tics 8
+Texture	Optional	XA32_01 	Range	XA32_99 	Tics 8
+Texture	Optional	XA33_01 	Range	XA33_99 	Tics 8
+Texture	Optional	XA34_01 	Range	XA34_99 	Tics 8
+Texture	Optional	XA35_01 	Range	XA35_99 	Tics 8
+Texture	Optional	XA36_01 	Range	XA36_99 	Tics 8
+Texture	Optional	XA37_01 	Range	XA37_99 	Tics 8
+Texture	Optional	XA38_01 	Range	XA38_99 	Tics 8
+Texture	Optional	XA39_01 	Range	XA39_99 	Tics 8
+Texture	Optional	XA40_01 	Range	XA40_99 	Tics 8
+Texture	Optional	XA41_01 	Range	XA41_99 	Tics 8
+Texture	Optional	XA42_01 	Range	XA42_99 	Tics 8
+Texture	Optional	XA43_01 	Range	XA43_99 	Tics 8
+Texture	Optional	XA44_01 	Range	XA44_99 	Tics 8
+Texture	Optional	XA45_01 	Range	XA45_99 	Tics 8
+Texture	Optional	XA46_01 	Range	XA46_99 	Tics 8
+Texture	Optional	XA47_01 	Range	XA47_99 	Tics 8
+Texture	Optional	XA48_01 	Range	XA48_99 	Tics 8
+Texture	Optional	XA49_01 	Range	XA49_99 	Tics 8
+Texture	Optional	XA50_01 	Range	XA50_99 	Tics 8
+Texture	Optional	XA51_01 	Range	XA51_99 	Tics 8
+Texture	Optional	XA52_01 	Range	XA52_99 	Tics 8
+Texture	Optional	XA53_01 	Range	XA53_99 	Tics 8
+Texture	Optional	XA54_01 	Range	XA54_99 	Tics 8
+Texture	Optional	XA55_01 	Range	XA55_99 	Tics 8
+Texture	Optional	XA56_01 	Range	XA56_99 	Tics 8
+Texture	Optional	XA57_01 	Range	XA57_99 	Tics 8
+Texture	Optional	XA58_01 	Range	XA58_99 	Tics 8
+Texture	Optional	XA59_01 	Range	XA59_99 	Tics 8
+Texture	Optional	XA60_01 	Range	XA60_99 	Tics 8
+Texture	Optional	XA61_01 	Range	XA61_99 	Tics 8
+Texture	Optional	XA62_01 	Range	XA62_99 	Tics 8
+Texture	Optional	XA63_01 	Range	XA63_99 	Tics 8
+Texture	Optional	XA64_01 	Range	XA64_99 	Tics 8
+Texture	Optional	XA65_01 	Range	XA65_99 	Tics 8
+Texture	Optional	XA66_01 	Range	XA66_99 	Tics 8
+Texture	Optional	XA67_01 	Range	XA67_99 	Tics 8
+Texture	Optional	XA68_01 	Range	XA68_99 	Tics 8
+Texture	Optional	XA69_01 	Range	XA69_99 	Tics 8
+Texture	Optional	XA70_01 	Range	XA70_99 	Tics 8
+Texture	Optional	XA71_01 	Range	XA71_99 	Tics 8
+Texture	Optional	XA72_01 	Range	XA72_99 	Tics 8
+Texture	Optional	XA73_01 	Range	XA73_99 	Tics 8
+Texture	Optional	XA74_01 	Range	XA74_99 	Tics 8
+Texture	Optional	XA75_01 	Range	XA75_99 	Tics 8
+Texture	Optional	XA76_01 	Range	XA76_99 	Tics 8
+Texture	Optional	XA77_01 	Range	XA77_99 	Tics 8
+Texture	Optional	XA78_01 	Range	XA78_99 	Tics 8
+Texture	Optional	XA79_01 	Range	XA79_99 	Tics 8
+Texture	Optional	XA80_01 	Range	XA80_99 	Tics 8
+Texture	Optional	XA81_01 	Range	XA81_99 	Tics 8
+Texture	Optional	XA82_01 	Range	XA82_99 	Tics 8
+Texture	Optional	XA83_01 	Range	XA83_99 	Tics 8
+Texture	Optional	XA84_01 	Range	XA84_99 	Tics 8
+Texture	Optional	XA85_01 	Range	XA85_99 	Tics 8
+Texture	Optional	XA86_01 	Range	XA86_99 	Tics 8
+Texture	Optional	XA87_01 	Range	XA87_99 	Tics 8
+Texture	Optional	XA88_01 	Range	XA88_99 	Tics 8
+Texture	Optional	XA89_01 	Range	XA89_99 	Tics 8
+Texture	Optional	XA90_01 	Range	XA90_99 	Tics 8
+Texture	Optional	XA91_01 	Range	XA91_99 	Tics 8
+Texture	Optional	XA92_01 	Range	XA92_99 	Tics 8
+Texture	Optional	XA93_01 	Range	XA93_99 	Tics 8
+Texture	Optional	XA94_01 	Range	XA94_99 	Tics 8
+Texture	Optional	XA95_01 	Range	XA95_99 	Tics 8
+Texture	Optional	XA96_01 	Range	XA96_99 	Tics 8
+Texture	Optional	XA97_01 	Range	XA97_99 	Tics 8
+Texture	Optional	XA98_01 	Range	XA98_99 	Tics 8
+Texture	Optional	XA99_01 	Range	XA99_99 	Tics 8
+Texture	Optional	XB01_01 	Range	XB01_99 	Tics 8
+Texture	Optional	XB02_01 	Range	XB02_99 	Tics 8
+Texture	Optional	XB03_01 	Range	XB03_99 	Tics 8
+Texture	Optional	XB04_01 	Range	XB04_99 	Tics 8
+Texture	Optional	XB05_01 	Range	XB05_99 	Tics 8
+Texture	Optional	XB06_01 	Range	XB06_99 	Tics 8
+Texture	Optional	XB07_01 	Range	XB07_99 	Tics 8
+Texture	Optional	XB08_01 	Range	XB08_99 	Tics 8
+Texture	Optional	XB09_01 	Range	XB09_99 	Tics 8
+Texture	Optional	XB10_01 	Range	XB10_99 	Tics 8
+Texture	Optional	XB11_01 	Range	XB11_99 	Tics 8
+Texture	Optional	XB12_01 	Range	XB12_99 	Tics 8
+Texture	Optional	XB13_01 	Range	XB13_99 	Tics 8
+Texture	Optional	XB14_01 	Range	XB14_99 	Tics 8
+Texture	Optional	XB15_01 	Range	XB15_99 	Tics 8
+Texture	Optional	XB16_01 	Range	XB16_99 	Tics 8
+Texture	Optional	XB17_01 	Range	XB17_99 	Tics 8
+Texture	Optional	XB18_01 	Range	XB18_99 	Tics 8
+Texture	Optional	XB19_01 	Range	XB19_99 	Tics 8
+Texture	Optional	XB20_01 	Range	XB20_99 	Tics 8
+Texture	Optional	XB21_01 	Range	XB21_99 	Tics 8
+Texture	Optional	XB22_01 	Range	XB22_99 	Tics 8
+Texture	Optional	XB23_01 	Range	XB23_99 	Tics 8
+Texture	Optional	XB24_01 	Range	XB24_99 	Tics 8
+Texture	Optional	XB25_01 	Range	XB25_99 	Tics 8
+Texture	Optional	XB26_01 	Range	XB26_99 	Tics 8
+Texture	Optional	XB27_01 	Range	XB27_99 	Tics 8
+Texture	Optional	XB28_01 	Range	XB28_99 	Tics 8
+Texture	Optional	XB29_01 	Range	XB29_99 	Tics 8
+Texture	Optional	XB30_01 	Range	XB30_99 	Tics 8
+Texture	Optional	XB31_01 	Range	XB31_99 	Tics 8
+Texture	Optional	XB32_01 	Range	XB32_99 	Tics 8
+Texture	Optional	XB33_01 	Range	XB33_99 	Tics 8
+Texture	Optional	XB34_01 	Range	XB34_99 	Tics 8
+Texture	Optional	XB35_01 	Range	XB35_99 	Tics 8
+Texture	Optional	XB36_01 	Range	XB36_99 	Tics 8
+Texture	Optional	XB37_01 	Range	XB37_99 	Tics 8
+Texture	Optional	XB38_01 	Range	XB38_99 	Tics 8
+Texture	Optional	XB39_01 	Range	XB39_99 	Tics 8
+Texture	Optional	XB40_01 	Range	XB40_99 	Tics 8
+Texture	Optional	XB41_01 	Range	XB41_99 	Tics 8
+Texture	Optional	XB42_01 	Range	XB42_99 	Tics 8
+Texture	Optional	XB43_01 	Range	XB43_99 	Tics 8
+Texture	Optional	XB44_01 	Range	XB44_99 	Tics 8
+Texture	Optional	XB45_01 	Range	XB45_99 	Tics 8
+Texture	Optional	XB46_01 	Range	XB46_99 	Tics 8
+Texture	Optional	XB47_01 	Range	XB47_99 	Tics 8
+Texture	Optional	XB48_01 	Range	XB48_99 	Tics 8
+Texture	Optional	XB49_01 	Range	XB49_99 	Tics 8
+Texture	Optional	XB50_01 	Range	XB50_99 	Tics 8
+Texture	Optional	XB51_01 	Range	XB51_99 	Tics 8
+Texture	Optional	XB52_01 	Range	XB52_99 	Tics 8
+Texture	Optional	XB53_01 	Range	XB53_99 	Tics 8
+Texture	Optional	XB54_01 	Range	XB54_99 	Tics 8
+Texture	Optional	XB55_01 	Range	XB55_99 	Tics 8
+Texture	Optional	XB56_01 	Range	XB56_99 	Tics 8
+Texture	Optional	XB57_01 	Range	XB57_99 	Tics 8
+Texture	Optional	XB58_01 	Range	XB58_99 	Tics 8
+Texture	Optional	XB59_01 	Range	XB59_99 	Tics 8
+Texture	Optional	XB60_01 	Range	XB60_99 	Tics 8
+Texture	Optional	XB61_01 	Range	XB61_99 	Tics 8
+Texture	Optional	XB62_01 	Range	XB62_99 	Tics 8
+Texture	Optional	XB63_01 	Range	XB63_99 	Tics 8
+Texture	Optional	XB64_01 	Range	XB64_99 	Tics 8
+Texture	Optional	XB65_01 	Range	XB65_99 	Tics 8
+Texture	Optional	XB66_01 	Range	XB66_99 	Tics 8
+Texture	Optional	XB67_01 	Range	XB67_99 	Tics 8
+Texture	Optional	XB68_01 	Range	XB68_99 	Tics 8
+Texture	Optional	XB69_01 	Range	XB69_99 	Tics 8
+Texture	Optional	XB70_01 	Range	XB70_99 	Tics 8
+Texture	Optional	XB71_01 	Range	XB71_99 	Tics 8
+Texture	Optional	XB72_01 	Range	XB72_99 	Tics 8
+Texture	Optional	XB73_01 	Range	XB73_99 	Tics 8
+Texture	Optional	XB74_01 	Range	XB74_99 	Tics 8
+Texture	Optional	XB75_01 	Range	XB75_99 	Tics 8
+Texture	Optional	XB76_01 	Range	XB76_99 	Tics 8
+Texture	Optional	XB77_01 	Range	XB77_99 	Tics 8
+Texture	Optional	XB78_01 	Range	XB78_99 	Tics 8
+Texture	Optional	XB79_01 	Range	XB79_99 	Tics 8
+Texture	Optional	XB80_01 	Range	XB80_99 	Tics 8
+Texture	Optional	XB81_01 	Range	XB81_99 	Tics 8
+Texture	Optional	XB82_01 	Range	XB82_99 	Tics 8
+Texture	Optional	XB83_01 	Range	XB83_99 	Tics 8
+Texture	Optional	XB84_01 	Range	XB84_99 	Tics 8
+Texture	Optional	XB85_01 	Range	XB85_99 	Tics 8
+Texture	Optional	XB86_01 	Range	XB86_99 	Tics 8
+Texture	Optional	XB87_01 	Range	XB87_99 	Tics 8
+Texture	Optional	XB88_01 	Range	XB88_99 	Tics 8
+Texture	Optional	XB89_01 	Range	XB89_99 	Tics 8
+Texture	Optional	XB90_01 	Range	XB90_99 	Tics 8
+Texture	Optional	XB91_01 	Range	XB91_99 	Tics 8
+Texture	Optional	XB92_01 	Range	XB92_99 	Tics 8
+Texture	Optional	XB93_01 	Range	XB93_99 	Tics 8
+Texture	Optional	XB94_01 	Range	XB94_99 	Tics 8
+Texture	Optional	XB95_01 	Range	XB95_99 	Tics 8
+Texture	Optional	XB96_01 	Range	XB96_99 	Tics 8
+Texture	Optional	XB97_01 	Range	XB97_99 	Tics 8
+Texture	Optional	XB98_01 	Range	XB98_99 	Tics 8
+Texture	Optional	XB99_01 	Range	XB99_99 	Tics 8
+Texture	Optional	XC01_01 	Range	XC01_99 	Tics 8
+Texture	Optional	XC02_01 	Range	XC02_99 	Tics 8
+Texture	Optional	XC03_01 	Range	XC03_99 	Tics 8
+Texture	Optional	XC04_01 	Range	XC04_99 	Tics 8
+Texture	Optional	XC05_01 	Range	XC05_99 	Tics 8
+Texture	Optional	XC06_01 	Range	XC06_99 	Tics 8
+Texture	Optional	XC07_01 	Range	XC07_99 	Tics 8
+Texture	Optional	XC08_01 	Range	XC08_99 	Tics 8
+Texture	Optional	XC09_01 	Range	XC09_99 	Tics 8
+Texture	Optional	XC10_01 	Range	XC10_99 	Tics 8
+Texture	Optional	XC11_01 	Range	XC11_99 	Tics 8
+Texture	Optional	XC12_01 	Range	XC12_99 	Tics 8
+Texture	Optional	XC13_01 	Range	XC13_99 	Tics 8
+Texture	Optional	XC14_01 	Range	XC14_99 	Tics 8
+Texture	Optional	XC15_01 	Range	XC15_99 	Tics 8
+Texture	Optional	XC16_01 	Range	XC16_99 	Tics 8
+Texture	Optional	XC17_01 	Range	XC17_99 	Tics 8
+Texture	Optional	XC18_01 	Range	XC18_99 	Tics 8
+Texture	Optional	XC19_01 	Range	XC19_99 	Tics 8
+Texture	Optional	XC20_01 	Range	XC20_99 	Tics 8
+Texture	Optional	XC21_01 	Range	XC21_99 	Tics 8
+Texture	Optional	XC22_01 	Range	XC22_99 	Tics 8
+Texture	Optional	XC23_01 	Range	XC23_99 	Tics 8
+Texture	Optional	XC24_01 	Range	XC24_99 	Tics 8
+Texture	Optional	XC25_01 	Range	XC25_99 	Tics 8
+Texture	Optional	XC26_01 	Range	XC26_99 	Tics 8
+Texture	Optional	XC27_01 	Range	XC27_99 	Tics 8
+Texture	Optional	XC28_01 	Range	XC28_99 	Tics 8
+Texture	Optional	XC29_01 	Range	XC29_99 	Tics 8
+Texture	Optional	XC30_01 	Range	XC30_99 	Tics 8
+Texture	Optional	XC31_01 	Range	XC31_99 	Tics 8
+Texture	Optional	XC32_01 	Range	XC32_99 	Tics 8
+Texture	Optional	XC33_01 	Range	XC33_99 	Tics 8
+Texture	Optional	XC34_01 	Range	XC34_99 	Tics 8
+Texture	Optional	XC35_01 	Range	XC35_99 	Tics 8
+Texture	Optional	XC36_01 	Range	XC36_99 	Tics 8
+Texture	Optional	XC37_01 	Range	XC37_99 	Tics 8
+Texture	Optional	XC38_01 	Range	XC38_99 	Tics 8
+Texture	Optional	XC39_01 	Range	XC39_99 	Tics 8
+Texture	Optional	XC40_01 	Range	XC40_99 	Tics 8
+Texture	Optional	XC41_01 	Range	XC41_99 	Tics 8
+Texture	Optional	XC42_01 	Range	XC42_99 	Tics 8
+Texture	Optional	XC43_01 	Range	XC43_99 	Tics 8
+Texture	Optional	XC44_01 	Range	XC44_99 	Tics 8
+Texture	Optional	XC45_01 	Range	XC45_99 	Tics 8
+Texture	Optional	XC46_01 	Range	XC46_99 	Tics 8
+Texture	Optional	XC47_01 	Range	XC47_99 	Tics 8
+Texture	Optional	XC48_01 	Range	XC48_99 	Tics 8
+Texture	Optional	XC49_01 	Range	XC49_99 	Tics 8
+Texture	Optional	XC50_01 	Range	XC50_99 	Tics 8
+Texture	Optional	XC51_01 	Range	XC51_99 	Tics 8
+Texture	Optional	XC52_01 	Range	XC52_99 	Tics 8
+Texture	Optional	XC53_01 	Range	XC53_99 	Tics 8
+Texture	Optional	XC54_01 	Range	XC54_99 	Tics 8
+Texture	Optional	XC55_01 	Range	XC55_99 	Tics 8
+Texture	Optional	XC56_01 	Range	XC56_99 	Tics 8
+Texture	Optional	XC57_01 	Range	XC57_99 	Tics 8
+Texture	Optional	XC58_01 	Range	XC58_99 	Tics 8
+Texture	Optional	XC59_01 	Range	XC59_99 	Tics 8
+Texture	Optional	XC60_01 	Range	XC60_99 	Tics 8
+Texture	Optional	XC61_01 	Range	XC61_99 	Tics 8
+Texture	Optional	XC62_01 	Range	XC62_99 	Tics 8
+Texture	Optional	XC63_01 	Range	XC63_99 	Tics 8
+Texture	Optional	XC64_01 	Range	XC64_99 	Tics 8
+Texture	Optional	XC65_01 	Range	XC65_99 	Tics 8
+Texture	Optional	XC66_01 	Range	XC66_99 	Tics 8
+Texture	Optional	XC67_01 	Range	XC67_99 	Tics 8
+Texture	Optional	XC68_01 	Range	XC68_99 	Tics 8
+Texture	Optional	XC69_01 	Range	XC69_99 	Tics 8
+Texture	Optional	XC70_01 	Range	XC70_99 	Tics 8
+Texture	Optional	XC71_01 	Range	XC71_99 	Tics 8
+Texture	Optional	XC72_01 	Range	XC72_99 	Tics 8
+Texture	Optional	XC73_01 	Range	XC73_99 	Tics 8
+Texture	Optional	XC74_01 	Range	XC74_99 	Tics 8
+Texture	Optional	XC75_01 	Range	XC75_99 	Tics 8
+Texture	Optional	XC76_01 	Range	XC76_99 	Tics 8
+Texture	Optional	XC77_01 	Range	XC77_99 	Tics 8
+Texture	Optional	XC78_01 	Range	XC78_99 	Tics 8
+Texture	Optional	XC79_01 	Range	XC79_99 	Tics 8
+Texture	Optional	XC80_01 	Range	XC80_99 	Tics 8
+Texture	Optional	XC81_01 	Range	XC81_99 	Tics 8
+Texture	Optional	XC82_01 	Range	XC82_99 	Tics 8
+Texture	Optional	XC83_01 	Range	XC83_99 	Tics 8
+Texture	Optional	XC84_01 	Range	XC84_99 	Tics 8
+Texture	Optional	XC85_01 	Range	XC85_99 	Tics 8
+Texture	Optional	XC86_01 	Range	XC86_99 	Tics 8
+Texture	Optional	XC87_01 	Range	XC87_99 	Tics 8
+Texture	Optional	XC88_01 	Range	XC88_99 	Tics 8
+Texture	Optional	XC89_01 	Range	XC89_99 	Tics 8
+Texture	Optional	XC90_01 	Range	XC90_99 	Tics 8
+Texture	Optional	XC91_01 	Range	XC91_99 	Tics 8
+Texture	Optional	XC92_01 	Range	XC92_99 	Tics 8
+Texture	Optional	XC93_01 	Range	XC93_99 	Tics 8
+Texture	Optional	XC94_01 	Range	XC94_99 	Tics 8
+Texture	Optional	XC95_01 	Range	XC95_99 	Tics 8
+Texture	Optional	XC96_01 	Range	XC96_99 	Tics 8
+Texture	Optional	XC97_01 	Range	XC97_99 	Tics 8
+Texture	Optional	XC98_01 	Range	XC98_99 	Tics 8
+Texture	Optional	XC99_01 	Range	XC99_99 	Tics 8
+Texture	Optional	XD01_01 	Range	XD01_99 	Tics 8
+Texture	Optional	XD02_01 	Range	XD02_99 	Tics 8
+Texture	Optional	XD03_01 	Range	XD03_99 	Tics 8
+Texture	Optional	XD04_01 	Range	XD04_99 	Tics 8
+Texture	Optional	XD05_01 	Range	XD05_99 	Tics 8
+Texture	Optional	XD06_01 	Range	XD06_99 	Tics 8
+Texture	Optional	XD07_01 	Range	XD07_99 	Tics 8
+Texture	Optional	XD08_01 	Range	XD08_99 	Tics 8
+Texture	Optional	XD09_01 	Range	XD09_99 	Tics 8
+Texture	Optional	XD10_01 	Range	XD10_99 	Tics 8
+Texture	Optional	XD11_01 	Range	XD11_99 	Tics 8
+Texture	Optional	XD12_01 	Range	XD12_99 	Tics 8
+Texture	Optional	XD13_01 	Range	XD13_99 	Tics 8
+Texture	Optional	XD14_01 	Range	XD14_99 	Tics 8
+Texture	Optional	XD15_01 	Range	XD15_99 	Tics 8
+Texture	Optional	XD16_01 	Range	XD16_99 	Tics 8
+Texture	Optional	XD17_01 	Range	XD17_99 	Tics 8
+Texture	Optional	XD18_01 	Range	XD18_99 	Tics 8
+Texture	Optional	XD19_01 	Range	XD19_99 	Tics 8
+Texture	Optional	XD20_01 	Range	XD20_99 	Tics 8
+Texture	Optional	XD21_01 	Range	XD21_99 	Tics 8
+Texture	Optional	XD22_01 	Range	XD22_99 	Tics 8
+Texture	Optional	XD23_01 	Range	XD23_99 	Tics 8
+Texture	Optional	XD24_01 	Range	XD24_99 	Tics 8
+Texture	Optional	XD25_01 	Range	XD25_99 	Tics 8
+Texture	Optional	XD26_01 	Range	XD26_99 	Tics 8
+Texture	Optional	XD27_01 	Range	XD27_99 	Tics 8
+Texture	Optional	XD28_01 	Range	XD28_99 	Tics 8
+Texture	Optional	XD29_01 	Range	XD29_99 	Tics 8
+Texture	Optional	XD30_01 	Range	XD30_99 	Tics 8
+Texture	Optional	XD31_01 	Range	XD31_99 	Tics 8
+Texture	Optional	XD32_01 	Range	XD32_99 	Tics 8
+Texture	Optional	XD33_01 	Range	XD33_99 	Tics 8
+Texture	Optional	XD34_01 	Range	XD34_99 	Tics 8
+Texture	Optional	XD35_01 	Range	XD35_99 	Tics 8
+Texture	Optional	XD36_01 	Range	XD36_99 	Tics 8
+Texture	Optional	XD37_01 	Range	XD37_99 	Tics 8
+Texture	Optional	XD38_01 	Range	XD38_99 	Tics 8
+Texture	Optional	XD39_01 	Range	XD39_99 	Tics 8
+Texture	Optional	XD40_01 	Range	XD40_99 	Tics 8
+Texture	Optional	XD41_01 	Range	XD41_99 	Tics 8
+Texture	Optional	XD42_01 	Range	XD42_99 	Tics 8
+Texture	Optional	XD43_01 	Range	XD43_99 	Tics 8
+Texture	Optional	XD44_01 	Range	XD44_99 	Tics 8
+Texture	Optional	XD45_01 	Range	XD45_99 	Tics 8
+Texture	Optional	XD46_01 	Range	XD46_99 	Tics 8
+Texture	Optional	XD47_01 	Range	XD47_99 	Tics 8
+Texture	Optional	XD48_01 	Range	XD48_99 	Tics 8
+Texture	Optional	XD49_01 	Range	XD49_99 	Tics 8
+Texture	Optional	XD50_01 	Range	XD50_99 	Tics 8
+Texture	Optional	XD51_01 	Range	XD51_99 	Tics 8
+Texture	Optional	XD52_01 	Range	XD52_99 	Tics 8
+Texture	Optional	XD53_01 	Range	XD53_99 	Tics 8
+Texture	Optional	XD54_01 	Range	XD54_99 	Tics 8
+Texture	Optional	XD55_01 	Range	XD55_99 	Tics 8
+Texture	Optional	XD56_01 	Range	XD56_99 	Tics 8
+Texture	Optional	XD57_01 	Range	XD57_99 	Tics 8
+Texture	Optional	XD58_01 	Range	XD58_99 	Tics 8
+Texture	Optional	XD59_01 	Range	XD59_99 	Tics 8
+Texture	Optional	XD60_01 	Range	XD60_99 	Tics 8
+Texture	Optional	XD61_01 	Range	XD61_99 	Tics 8
+Texture	Optional	XD62_01 	Range	XD62_99 	Tics 8
+Texture	Optional	XD63_01 	Range	XD63_99 	Tics 8
+Texture	Optional	XD64_01 	Range	XD64_99 	Tics 8
+Texture	Optional	XD65_01 	Range	XD65_99 	Tics 8
+Texture	Optional	XD66_01 	Range	XD66_99 	Tics 8
+Texture	Optional	XD67_01 	Range	XD67_99 	Tics 8
+Texture	Optional	XD68_01 	Range	XD68_99 	Tics 8
+Texture	Optional	XD69_01 	Range	XD69_99 	Tics 8
+Texture	Optional	XD70_01 	Range	XD70_99 	Tics 8
+Texture	Optional	XD71_01 	Range	XD71_99 	Tics 8
+Texture	Optional	XD72_01 	Range	XD72_99 	Tics 8
+Texture	Optional	XD73_01 	Range	XD73_99 	Tics 8
+Texture	Optional	XD74_01 	Range	XD74_99 	Tics 8
+Texture	Optional	XD75_01 	Range	XD75_99 	Tics 8
+Texture	Optional	XD76_01 	Range	XD76_99 	Tics 8
+Texture	Optional	XD77_01 	Range	XD77_99 	Tics 8
+Texture	Optional	XD78_01 	Range	XD78_99 	Tics 8
+Texture	Optional	XD79_01 	Range	XD79_99 	Tics 8
+Texture	Optional	XD80_01 	Range	XD80_99 	Tics 8
+Texture	Optional	XD81_01 	Range	XD81_99 	Tics 8
+Texture	Optional	XD82_01 	Range	XD82_99 	Tics 8
+Texture	Optional	XD83_01 	Range	XD83_99 	Tics 8
+Texture	Optional	XD84_01 	Range	XD84_99 	Tics 8
+Texture	Optional	XD85_01 	Range	XD85_99 	Tics 8
+Texture	Optional	XD86_01 	Range	XD86_99 	Tics 8
+Texture	Optional	XD87_01 	Range	XD87_99 	Tics 8
+Texture	Optional	XD88_01 	Range	XD88_99 	Tics 8
+Texture	Optional	XD89_01 	Range	XD89_99 	Tics 8
+Texture	Optional	XD90_01 	Range	XD90_99 	Tics 8
+Texture	Optional	XD91_01 	Range	XD91_99 	Tics 8
+Texture	Optional	XD92_01 	Range	XD92_99 	Tics 8
+Texture	Optional	XD93_01 	Range	XD93_99 	Tics 8
+Texture	Optional	XD94_01 	Range	XD94_99 	Tics 8
+Texture	Optional	XD95_01 	Range	XD95_99 	Tics 8
+Texture	Optional	XD96_01 	Range	XD96_99 	Tics 8
+Texture	Optional	XD97_01 	Range	XD97_99 	Tics 8
+Texture	Optional	XD98_01 	Range	XD98_99 	Tics 8
+Texture	Optional	XD99_01 	Range	XD99_99 	Tics 8
+Texture	Optional	XE01_01 	Range	XE01_99 	Tics 8
+Texture	Optional	XE02_01 	Range	XE02_99 	Tics 8
+Texture	Optional	XE03_01 	Range	XE03_99 	Tics 8
+Texture	Optional	XE04_01 	Range	XE04_99 	Tics 8
+Texture	Optional	XE05_01 	Range	XE05_99 	Tics 8
+Texture	Optional	XE06_01 	Range	XE06_99 	Tics 8
+Texture	Optional	XE07_01 	Range	XE07_99 	Tics 8
+Texture	Optional	XE08_01 	Range	XE08_99 	Tics 8
+Texture	Optional	XE09_01 	Range	XE09_99 	Tics 8
+Texture	Optional	XE10_01 	Range	XE10_99 	Tics 8
+Texture	Optional	XE11_01 	Range	XE11_99 	Tics 8
+Texture	Optional	XE12_01 	Range	XE12_99 	Tics 8
+Texture	Optional	XE13_01 	Range	XE13_99 	Tics 8
+Texture	Optional	XE14_01 	Range	XE14_99 	Tics 8
+Texture	Optional	XE15_01 	Range	XE15_99 	Tics 8
+Texture	Optional	XE16_01 	Range	XE16_99 	Tics 8
+Texture	Optional	XE17_01 	Range	XE17_99 	Tics 8
+Texture	Optional	XE18_01 	Range	XE18_99 	Tics 8
+Texture	Optional	XE19_01 	Range	XE19_99 	Tics 8
+Texture	Optional	XE20_01 	Range	XE20_99 	Tics 8
+Texture	Optional	XE21_01 	Range	XE21_99 	Tics 8
+Texture	Optional	XE22_01 	Range	XE22_99 	Tics 8
+Texture	Optional	XE23_01 	Range	XE23_99 	Tics 8
+Texture	Optional	XE24_01 	Range	XE24_99 	Tics 8
+Texture	Optional	XE25_01 	Range	XE25_99 	Tics 8
+Texture	Optional	XE26_01 	Range	XE26_99 	Tics 8
+Texture	Optional	XE27_01 	Range	XE27_99 	Tics 8
+Texture	Optional	XE28_01 	Range	XE28_99 	Tics 8
+Texture	Optional	XE29_01 	Range	XE29_99 	Tics 8
+Texture	Optional	XE30_01 	Range	XE30_99 	Tics 8
+Texture	Optional	XE31_01 	Range	XE31_99 	Tics 8
+Texture	Optional	XE32_01 	Range	XE32_99 	Tics 8
+Texture	Optional	XE33_01 	Range	XE33_99 	Tics 8
+Texture	Optional	XE34_01 	Range	XE34_99 	Tics 8
+Texture	Optional	XE35_01 	Range	XE35_99 	Tics 8
+Texture	Optional	XE36_01 	Range	XE36_99 	Tics 8
+Texture	Optional	XE37_01 	Range	XE37_99 	Tics 8
+Texture	Optional	XE38_01 	Range	XE38_99 	Tics 8
+Texture	Optional	XE39_01 	Range	XE39_99 	Tics 8
+Texture	Optional	XE40_01 	Range	XE40_99 	Tics 8
+Texture	Optional	XE41_01 	Range	XE41_99 	Tics 8
+Texture	Optional	XE42_01 	Range	XE42_99 	Tics 8
+Texture	Optional	XE43_01 	Range	XE43_99 	Tics 8
+Texture	Optional	XE44_01 	Range	XE44_99 	Tics 8
+Texture	Optional	XE45_01 	Range	XE45_99 	Tics 8
+Texture	Optional	XE46_01 	Range	XE46_99 	Tics 8
+Texture	Optional	XE47_01 	Range	XE47_99 	Tics 8
+Texture	Optional	XE48_01 	Range	XE48_99 	Tics 8
+Texture	Optional	XE49_01 	Range	XE49_99 	Tics 8
+Texture	Optional	XE50_01 	Range	XE50_99 	Tics 8
+Texture	Optional	XE51_01 	Range	XE51_99 	Tics 8
+Texture	Optional	XE52_01 	Range	XE52_99 	Tics 8
+Texture	Optional	XE53_01 	Range	XE53_99 	Tics 8
+Texture	Optional	XE54_01 	Range	XE54_99 	Tics 8
+Texture	Optional	XE55_01 	Range	XE55_99 	Tics 8
+Texture	Optional	XE56_01 	Range	XE56_99 	Tics 8
+Texture	Optional	XE57_01 	Range	XE57_99 	Tics 8
+Texture	Optional	XE58_01 	Range	XE58_99 	Tics 8
+Texture	Optional	XE59_01 	Range	XE59_99 	Tics 8
+Texture	Optional	XE60_01 	Range	XE60_99 	Tics 8
+Texture	Optional	XE61_01 	Range	XE61_99 	Tics 8
+Texture	Optional	XE62_01 	Range	XE62_99 	Tics 8
+Texture	Optional	XE63_01 	Range	XE63_99 	Tics 8
+Texture	Optional	XE64_01 	Range	XE64_99 	Tics 8
+Texture	Optional	XE65_01 	Range	XE65_99 	Tics 8
+Texture	Optional	XE66_01 	Range	XE66_99 	Tics 8
+Texture	Optional	XE67_01 	Range	XE67_99 	Tics 8
+Texture	Optional	XE68_01 	Range	XE68_99 	Tics 8
+Texture	Optional	XE69_01 	Range	XE69_99 	Tics 8
+Texture	Optional	XE70_01 	Range	XE70_99 	Tics 8
+Texture	Optional	XE71_01 	Range	XE71_99 	Tics 8
+Texture	Optional	XE72_01 	Range	XE72_99 	Tics 8
+Texture	Optional	XE73_01 	Range	XE73_99 	Tics 8
+Texture	Optional	XE74_01 	Range	XE74_99 	Tics 8
+Texture	Optional	XE75_01 	Range	XE75_99 	Tics 8
+Texture	Optional	XE76_01 	Range	XE76_99 	Tics 8
+Texture	Optional	XE77_01 	Range	XE77_99 	Tics 8
+Texture	Optional	XE78_01 	Range	XE78_99 	Tics 8
+Texture	Optional	XE79_01 	Range	XE79_99 	Tics 8
+Texture	Optional	XE80_01 	Range	XE80_99 	Tics 8
+Texture	Optional	XE81_01 	Range	XE81_99 	Tics 8
+Texture	Optional	XE82_01 	Range	XE82_99 	Tics 8
+Texture	Optional	XE83_01 	Range	XE83_99 	Tics 8
+Texture	Optional	XE84_01 	Range	XE84_99 	Tics 8
+Texture	Optional	XE85_01 	Range	XE85_99 	Tics 8
+Texture	Optional	XE86_01 	Range	XE86_99 	Tics 8
+Texture	Optional	XE87_01 	Range	XE87_99 	Tics 8
+Texture	Optional	XE88_01 	Range	XE88_99 	Tics 8
+Texture	Optional	XE89_01 	Range	XE89_99 	Tics 8
+Texture	Optional	XE90_01 	Range	XE90_99 	Tics 8
+Texture	Optional	XE91_01 	Range	XE91_99 	Tics 8
+Texture	Optional	XE92_01 	Range	XE92_99 	Tics 8
+Texture	Optional	XE93_01 	Range	XE93_99 	Tics 8
+Texture	Optional	XE94_01 	Range	XE94_99 	Tics 8
+Texture	Optional	XE95_01 	Range	XE95_99 	Tics 8
+Texture	Optional	XE96_01 	Range	XE96_99 	Tics 8
+Texture	Optional	XE97_01 	Range	XE97_99 	Tics 8
+Texture	Optional	XE98_01 	Range	XE98_99 	Tics 8
+Texture	Optional	XE99_01 	Range	XE99_99 	Tics 8
+Texture	Optional	XF01_01 	Range	XF01_99 	Tics 8
+Texture	Optional	XF02_01 	Range	XF02_99 	Tics 8
+Texture	Optional	XF03_01 	Range	XF03_99 	Tics 8
+Texture	Optional	XF04_01 	Range	XF04_99 	Tics 8
+Texture	Optional	XF05_01 	Range	XF05_99 	Tics 8
+Texture	Optional	XF06_01 	Range	XF06_99 	Tics 8
+Texture	Optional	XF07_01 	Range	XF07_99 	Tics 8
+Texture	Optional	XF08_01 	Range	XF08_99 	Tics 8
+Texture	Optional	XF09_01 	Range	XF09_99 	Tics 8
+Texture	Optional	XF10_01 	Range	XF10_99 	Tics 8
+Texture	Optional	XF11_01 	Range	XF11_99 	Tics 8
+Texture	Optional	XF12_01 	Range	XF12_99 	Tics 8
+Texture	Optional	XF13_01 	Range	XF13_99 	Tics 8
+Texture	Optional	XF14_01 	Range	XF14_99 	Tics 8
+Texture	Optional	XF15_01 	Range	XF15_99 	Tics 8
+Texture	Optional	XF16_01 	Range	XF16_99 	Tics 8
+Texture	Optional	XF17_01 	Range	XF17_99 	Tics 8
+Texture	Optional	XF18_01 	Range	XF18_99 	Tics 8
+Texture	Optional	XF19_01 	Range	XF19_99 	Tics 8
+Texture	Optional	XF20_01 	Range	XF20_99 	Tics 8
+Texture	Optional	XF21_01 	Range	XF21_99 	Tics 8
+Texture	Optional	XF22_01 	Range	XF22_99 	Tics 8
+Texture	Optional	XF23_01 	Range	XF23_99 	Tics 8
+Texture	Optional	XF24_01 	Range	XF24_99 	Tics 8
+Texture	Optional	XF25_01 	Range	XF25_99 	Tics 8
+Texture	Optional	XF26_01 	Range	XF26_99 	Tics 8
+Texture	Optional	XF27_01 	Range	XF27_99 	Tics 8
+Texture	Optional	XF28_01 	Range	XF28_99 	Tics 8
+Texture	Optional	XF29_01 	Range	XF29_99 	Tics 8
+Texture	Optional	XF30_01 	Range	XF30_99 	Tics 8
+Texture	Optional	XF31_01 	Range	XF31_99 	Tics 8
+Texture	Optional	XF32_01 	Range	XF32_99 	Tics 8
+Texture	Optional	XF33_01 	Range	XF33_99 	Tics 8
+Texture	Optional	XF34_01 	Range	XF34_99 	Tics 8
+Texture	Optional	XF35_01 	Range	XF35_99 	Tics 8
+Texture	Optional	XF36_01 	Range	XF36_99 	Tics 8
+Texture	Optional	XF37_01 	Range	XF37_99 	Tics 8
+Texture	Optional	XF38_01 	Range	XF38_99 	Tics 8
+Texture	Optional	XF39_01 	Range	XF39_99 	Tics 8
+Texture	Optional	XF40_01 	Range	XF40_99 	Tics 8
+Texture	Optional	XF41_01 	Range	XF41_99 	Tics 8
+Texture	Optional	XF42_01 	Range	XF42_99 	Tics 8
+Texture	Optional	XF43_01 	Range	XF43_99 	Tics 8
+Texture	Optional	XF44_01 	Range	XF44_99 	Tics 8
+Texture	Optional	XF45_01 	Range	XF45_99 	Tics 8
+Texture	Optional	XF46_01 	Range	XF46_99 	Tics 8
+Texture	Optional	XF47_01 	Range	XF47_99 	Tics 8
+Texture	Optional	XF48_01 	Range	XF48_99 	Tics 8
+Texture	Optional	XF49_01 	Range	XF49_99 	Tics 8
+Texture	Optional	XF50_01 	Range	XF50_99 	Tics 8
+Texture	Optional	XF51_01 	Range	XF51_99 	Tics 8
+Texture	Optional	XF52_01 	Range	XF52_99 	Tics 8
+Texture	Optional	XF53_01 	Range	XF53_99 	Tics 8
+Texture	Optional	XF54_01 	Range	XF54_99 	Tics 8
+Texture	Optional	XF55_01 	Range	XF55_99 	Tics 8
+Texture	Optional	XF56_01 	Range	XF56_99 	Tics 8
+Texture	Optional	XF57_01 	Range	XF57_99 	Tics 8
+Texture	Optional	XF58_01 	Range	XF58_99 	Tics 8
+Texture	Optional	XF59_01 	Range	XF59_99 	Tics 8
+Texture	Optional	XF60_01 	Range	XF60_99 	Tics 8
+Texture	Optional	XF61_01 	Range	XF61_99 	Tics 8
+Texture	Optional	XF62_01 	Range	XF62_99 	Tics 8
+Texture	Optional	XF63_01 	Range	XF63_99 	Tics 8
+Texture	Optional	XF64_01 	Range	XF64_99 	Tics 8
+Texture	Optional	XF65_01 	Range	XF65_99 	Tics 8
+Texture	Optional	XF66_01 	Range	XF66_99 	Tics 8
+Texture	Optional	XF67_01 	Range	XF67_99 	Tics 8
+Texture	Optional	XF68_01 	Range	XF68_99 	Tics 8
+Texture	Optional	XF69_01 	Range	XF69_99 	Tics 8
+Texture	Optional	XF70_01 	Range	XF70_99 	Tics 8
+Texture	Optional	XF71_01 	Range	XF71_99 	Tics 8
+Texture	Optional	XF72_01 	Range	XF72_99 	Tics 8
+Texture	Optional	XF73_01 	Range	XF73_99 	Tics 8
+Texture	Optional	XF74_01 	Range	XF74_99 	Tics 8
+Texture	Optional	XF75_01 	Range	XF75_99 	Tics 8
+Texture	Optional	XF76_01 	Range	XF76_99 	Tics 8
+Texture	Optional	XF77_01 	Range	XF77_99 	Tics 8
+Texture	Optional	XF78_01 	Range	XF78_99 	Tics 8
+Texture	Optional	XF79_01 	Range	XF79_99 	Tics 8
+Texture	Optional	XF80_01 	Range	XF80_99 	Tics 8
+Texture	Optional	XF81_01 	Range	XF81_99 	Tics 8
+Texture	Optional	XF82_01 	Range	XF82_99 	Tics 8
+Texture	Optional	XF83_01 	Range	XF83_99 	Tics 8
+Texture	Optional	XF84_01 	Range	XF84_99 	Tics 8
+Texture	Optional	XF85_01 	Range	XF85_99 	Tics 8
+Texture	Optional	XF86_01 	Range	XF86_99 	Tics 8
+Texture	Optional	XF87_01 	Range	XF87_99 	Tics 8
+Texture	Optional	XF88_01 	Range	XF88_99 	Tics 8
+Texture	Optional	XF89_01 	Range	XF89_99 	Tics 8
+Texture	Optional	XF90_01 	Range	XF90_99 	Tics 8
+Texture	Optional	XF91_01 	Range	XF91_99 	Tics 8
+Texture	Optional	XF92_01 	Range	XF92_99 	Tics 8
+Texture	Optional	XF93_01 	Range	XF93_99 	Tics 8
+Texture	Optional	XF94_01 	Range	XF94_99 	Tics 8
+Texture	Optional	XF95_01 	Range	XF95_99 	Tics 8
+Texture	Optional	XF96_01 	Range	XF96_99 	Tics 8
+Texture	Optional	XF97_01 	Range	XF97_99 	Tics 8
+Texture	Optional	XF98_01 	Range	XF98_99 	Tics 8
+Texture	Optional	XF99_01 	Range	XF99_99 	Tics 8
+Texture	Optional	XG01_01 	Range	XG01_99 	Tics 8
+Texture	Optional	XG02_01 	Range	XG02_99 	Tics 8
+Texture	Optional	XG03_01 	Range	XG03_99 	Tics 8
+Texture	Optional	XG04_01 	Range	XG04_99 	Tics 8
+Texture	Optional	XG05_01 	Range	XG05_99 	Tics 8
+Texture	Optional	XG06_01 	Range	XG06_99 	Tics 8
+Texture	Optional	XG07_01 	Range	XG07_99 	Tics 8
+Texture	Optional	XG08_01 	Range	XG08_99 	Tics 8
+Texture	Optional	XG09_01 	Range	XG09_99 	Tics 8
+Texture	Optional	XG10_01 	Range	XG10_99 	Tics 8
+Texture	Optional	XG11_01 	Range	XG11_99 	Tics 8
+Texture	Optional	XG12_01 	Range	XG12_99 	Tics 8
+Texture	Optional	XG13_01 	Range	XG13_99 	Tics 8
+Texture	Optional	XG14_01 	Range	XG14_99 	Tics 8
+Texture	Optional	XG15_01 	Range	XG15_99 	Tics 8
+Texture	Optional	XG16_01 	Range	XG16_99 	Tics 8
+Texture	Optional	XG17_01 	Range	XG17_99 	Tics 8
+Texture	Optional	XG18_01 	Range	XG18_99 	Tics 8
+Texture	Optional	XG19_01 	Range	XG19_99 	Tics 8
+Texture	Optional	XG20_01 	Range	XG20_99 	Tics 8
+Texture	Optional	XG21_01 	Range	XG21_99 	Tics 8
+Texture	Optional	XG22_01 	Range	XG22_99 	Tics 8
+Texture	Optional	XG23_01 	Range	XG23_99 	Tics 8
+Texture	Optional	XG24_01 	Range	XG24_99 	Tics 8
+Texture	Optional	XG25_01 	Range	XG25_99 	Tics 8
+Texture	Optional	XG26_01 	Range	XG26_99 	Tics 8
+Texture	Optional	XG27_01 	Range	XG27_99 	Tics 8
+Texture	Optional	XG28_01 	Range	XG28_99 	Tics 8
+Texture	Optional	XG29_01 	Range	XG29_99 	Tics 8
+Texture	Optional	XG30_01 	Range	XG30_99 	Tics 8
+Texture	Optional	XG31_01 	Range	XG31_99 	Tics 8
+Texture	Optional	XG32_01 	Range	XG32_99 	Tics 8
+Texture	Optional	XG33_01 	Range	XG33_99 	Tics 8
+Texture	Optional	XG34_01 	Range	XG34_99 	Tics 8
+Texture	Optional	XG35_01 	Range	XG35_99 	Tics 8
+Texture	Optional	XG36_01 	Range	XG36_99 	Tics 8
+Texture	Optional	XG37_01 	Range	XG37_99 	Tics 8
+Texture	Optional	XG38_01 	Range	XG38_99 	Tics 8
+Texture	Optional	XG39_01 	Range	XG39_99 	Tics 8
+Texture	Optional	XG40_01 	Range	XG40_99 	Tics 8
+Texture	Optional	XG41_01 	Range	XG41_99 	Tics 8
+Texture	Optional	XG42_01 	Range	XG42_99 	Tics 8
+Texture	Optional	XG43_01 	Range	XG43_99 	Tics 8
+Texture	Optional	XG44_01 	Range	XG44_99 	Tics 8
+Texture	Optional	XG45_01 	Range	XG45_99 	Tics 8
+Texture	Optional	XG46_01 	Range	XG46_99 	Tics 8
+Texture	Optional	XG47_01 	Range	XG47_99 	Tics 8
+Texture	Optional	XG48_01 	Range	XG48_99 	Tics 8
+Texture	Optional	XG49_01 	Range	XG49_99 	Tics 8
+Texture	Optional	XG50_01 	Range	XG50_99 	Tics 8
+Texture	Optional	XG51_01 	Range	XG51_99 	Tics 8
+Texture	Optional	XG52_01 	Range	XG52_99 	Tics 8
+Texture	Optional	XG53_01 	Range	XG53_99 	Tics 8
+Texture	Optional	XG54_01 	Range	XG54_99 	Tics 8
+Texture	Optional	XG55_01 	Range	XG55_99 	Tics 8
+Texture	Optional	XG56_01 	Range	XG56_99 	Tics 8
+Texture	Optional	XG57_01 	Range	XG57_99 	Tics 8
+Texture	Optional	XG58_01 	Range	XG58_99 	Tics 8
+Texture	Optional	XG59_01 	Range	XG59_99 	Tics 8
+Texture	Optional	XG60_01 	Range	XG60_99 	Tics 8
+Texture	Optional	XG61_01 	Range	XG61_99 	Tics 8
+Texture	Optional	XG62_01 	Range	XG62_99 	Tics 8
+Texture	Optional	XG63_01 	Range	XG63_99 	Tics 8
+Texture	Optional	XG64_01 	Range	XG64_99 	Tics 8
+Texture	Optional	XG65_01 	Range	XG65_99 	Tics 8
+Texture	Optional	XG66_01 	Range	XG66_99 	Tics 8
+Texture	Optional	XG67_01 	Range	XG67_99 	Tics 8
+Texture	Optional	XG68_01 	Range	XG68_99 	Tics 8
+Texture	Optional	XG69_01 	Range	XG69_99 	Tics 8
+Texture	Optional	XG70_01 	Range	XG70_99 	Tics 8
+Texture	Optional	XG71_01 	Range	XG71_99 	Tics 8
+Texture	Optional	XG72_01 	Range	XG72_99 	Tics 8
+Texture	Optional	XG73_01 	Range	XG73_99 	Tics 8
+Texture	Optional	XG74_01 	Range	XG74_99 	Tics 8
+Texture	Optional	XG75_01 	Range	XG75_99 	Tics 8
+Texture	Optional	XG76_01 	Range	XG76_99 	Tics 8
+Texture	Optional	XG77_01 	Range	XG77_99 	Tics 8
+Texture	Optional	XG78_01 	Range	XG78_99 	Tics 8
+Texture	Optional	XG79_01 	Range	XG79_99 	Tics 8
+Texture	Optional	XG80_01 	Range	XG80_99 	Tics 8
+Texture	Optional	XG81_01 	Range	XG81_99 	Tics 8
+Texture	Optional	XG82_01 	Range	XG82_99 	Tics 8
+Texture	Optional	XG83_01 	Range	XG83_99 	Tics 8
+Texture	Optional	XG84_01 	Range	XG84_99 	Tics 8
+Texture	Optional	XG85_01 	Range	XG85_99 	Tics 8
+Texture	Optional	XG86_01 	Range	XG86_99 	Tics 8
+Texture	Optional	XG87_01 	Range	XG87_99 	Tics 8
+Texture	Optional	XG88_01 	Range	XG88_99 	Tics 8
+Texture	Optional	XG89_01 	Range	XG89_99 	Tics 8
+Texture	Optional	XG90_01 	Range	XG90_99 	Tics 8
+Texture	Optional	XG91_01 	Range	XG91_99 	Tics 8
+Texture	Optional	XG92_01 	Range	XG92_99 	Tics 8
+Texture	Optional	XG93_01 	Range	XG93_99 	Tics 8
+Texture	Optional	XG94_01 	Range	XG94_99 	Tics 8
+Texture	Optional	XG95_01 	Range	XG95_99 	Tics 8
+Texture	Optional	XG96_01 	Range	XG96_99 	Tics 8
+Texture	Optional	XG97_01 	Range	XG97_99 	Tics 8
+Texture	Optional	XG98_01 	Range	XG98_99 	Tics 8
+Texture	Optional	XG99_01 	Range	XG99_99 	Tics 8
+Texture	Optional	XH01_01 	Range	XH01_99 	Tics 8
+Texture	Optional	XH02_01 	Range	XH02_99 	Tics 8
+Texture	Optional	XH03_01 	Range	XH03_99 	Tics 8
+Texture	Optional	XH04_01 	Range	XH04_99 	Tics 8
+Texture	Optional	XH05_01 	Range	XH05_99 	Tics 8
+Texture	Optional	XH06_01 	Range	XH06_99 	Tics 8
+Texture	Optional	XH07_01 	Range	XH07_99 	Tics 8
+Texture	Optional	XH08_01 	Range	XH08_99 	Tics 8
+Texture	Optional	XH09_01 	Range	XH09_99 	Tics 8
+Texture	Optional	XH10_01 	Range	XH10_99 	Tics 8
+Texture	Optional	XH11_01 	Range	XH11_99 	Tics 8
+Texture	Optional	XH12_01 	Range	XH12_99 	Tics 8
+Texture	Optional	XH13_01 	Range	XH13_99 	Tics 8
+Texture	Optional	XH14_01 	Range	XH14_99 	Tics 8
+Texture	Optional	XH15_01 	Range	XH15_99 	Tics 8
+Texture	Optional	XH16_01 	Range	XH16_99 	Tics 8
+Texture	Optional	XH17_01 	Range	XH17_99 	Tics 8
+Texture	Optional	XH18_01 	Range	XH18_99 	Tics 8
+Texture	Optional	XH19_01 	Range	XH19_99 	Tics 8
+Texture	Optional	XH20_01 	Range	XH20_99 	Tics 8
+Texture	Optional	XH21_01 	Range	XH21_99 	Tics 8
+Texture	Optional	XH22_01 	Range	XH22_99 	Tics 8
+Texture	Optional	XH23_01 	Range	XH23_99 	Tics 8
+Texture	Optional	XH24_01 	Range	XH24_99 	Tics 8
+Texture	Optional	XH25_01 	Range	XH25_99 	Tics 8
+Texture	Optional	XH26_01 	Range	XH26_99 	Tics 8
+Texture	Optional	XH27_01 	Range	XH27_99 	Tics 8
+Texture	Optional	XH28_01 	Range	XH28_99 	Tics 8
+Texture	Optional	XH29_01 	Range	XH29_99 	Tics 8
+Texture	Optional	XH30_01 	Range	XH30_99 	Tics 8
+Texture	Optional	XH31_01 	Range	XH31_99 	Tics 8
+Texture	Optional	XH32_01 	Range	XH32_99 	Tics 8
+Texture	Optional	XH33_01 	Range	XH33_99 	Tics 8
+Texture	Optional	XH34_01 	Range	XH34_99 	Tics 8
+Texture	Optional	XH35_01 	Range	XH35_99 	Tics 8
+Texture	Optional	XH36_01 	Range	XH36_99 	Tics 8
+Texture	Optional	XH37_01 	Range	XH37_99 	Tics 8
+Texture	Optional	XH38_01 	Range	XH38_99 	Tics 8
+Texture	Optional	XH39_01 	Range	XH39_99 	Tics 8
+Texture	Optional	XH40_01 	Range	XH40_99 	Tics 8
+Texture	Optional	XH41_01 	Range	XH41_99 	Tics 8
+Texture	Optional	XH42_01 	Range	XH42_99 	Tics 8
+Texture	Optional	XH43_01 	Range	XH43_99 	Tics 8
+Texture	Optional	XH44_01 	Range	XH44_99 	Tics 8
+Texture	Optional	XH45_01 	Range	XH45_99 	Tics 8
+Texture	Optional	XH46_01 	Range	XH46_99 	Tics 8
+Texture	Optional	XH47_01 	Range	XH47_99 	Tics 8
+Texture	Optional	XH48_01 	Range	XH48_99 	Tics 8
+Texture	Optional	XH49_01 	Range	XH49_99 	Tics 8
+Texture	Optional	XH50_01 	Range	XH50_99 	Tics 8
+Texture	Optional	XH51_01 	Range	XH51_99 	Tics 8
+Texture	Optional	XH52_01 	Range	XH52_99 	Tics 8
+Texture	Optional	XH53_01 	Range	XH53_99 	Tics 8
+Texture	Optional	XH54_01 	Range	XH54_99 	Tics 8
+Texture	Optional	XH55_01 	Range	XH55_99 	Tics 8
+Texture	Optional	XH56_01 	Range	XH56_99 	Tics 8
+Texture	Optional	XH57_01 	Range	XH57_99 	Tics 8
+Texture	Optional	XH58_01 	Range	XH58_99 	Tics 8
+Texture	Optional	XH59_01 	Range	XH59_99 	Tics 8
+Texture	Optional	XH60_01 	Range	XH60_99 	Tics 8
+Texture	Optional	XH61_01 	Range	XH61_99 	Tics 8
+Texture	Optional	XH62_01 	Range	XH62_99 	Tics 8
+Texture	Optional	XH63_01 	Range	XH63_99 	Tics 8
+Texture	Optional	XH64_01 	Range	XH64_99 	Tics 8
+Texture	Optional	XH65_01 	Range	XH65_99 	Tics 8
+Texture	Optional	XH66_01 	Range	XH66_99 	Tics 8
+Texture	Optional	XH67_01 	Range	XH67_99 	Tics 8
+Texture	Optional	XH68_01 	Range	XH68_99 	Tics 8
+Texture	Optional	XH69_01 	Range	XH69_99 	Tics 8
+Texture	Optional	XH70_01 	Range	XH70_99 	Tics 8
+Texture	Optional	XH71_01 	Range	XH71_99 	Tics 8
+Texture	Optional	XH72_01 	Range	XH72_99 	Tics 8
+Texture	Optional	XH73_01 	Range	XH73_99 	Tics 8
+Texture	Optional	XH74_01 	Range	XH74_99 	Tics 8
+Texture	Optional	XH75_01 	Range	XH75_99 	Tics 8
+Texture	Optional	XH76_01 	Range	XH76_99 	Tics 8
+Texture	Optional	XH77_01 	Range	XH77_99 	Tics 8
+Texture	Optional	XH78_01 	Range	XH78_99 	Tics 8
+Texture	Optional	XH79_01 	Range	XH79_99 	Tics 8
+Texture	Optional	XH80_01 	Range	XH80_99 	Tics 8
+Texture	Optional	XH81_01 	Range	XH81_99 	Tics 8
+Texture	Optional	XH82_01 	Range	XH82_99 	Tics 8
+Texture	Optional	XH83_01 	Range	XH83_99 	Tics 8
+Texture	Optional	XH84_01 	Range	XH84_99 	Tics 8
+Texture	Optional	XH85_01 	Range	XH85_99 	Tics 8
+Texture	Optional	XH86_01 	Range	XH86_99 	Tics 8
+Texture	Optional	XH87_01 	Range	XH87_99 	Tics 8
+Texture	Optional	XH88_01 	Range	XH88_99 	Tics 8
+Texture	Optional	XH89_01 	Range	XH89_99 	Tics 8
+Texture	Optional	XG90_01 	Range	XH90_99 	Tics 8
+Texture	Optional	XH91_01 	Range	XH91_99 	Tics 8
+Texture	Optional	XH92_01 	Range	XH92_99 	Tics 8
+Texture	Optional	XH93_01 	Range	XH93_99 	Tics 8
+Texture	Optional	XH94_01 	Range	XH94_99 	Tics 8
+Texture	Optional	XH95_01 	Range	XH95_99 	Tics 8
+Texture	Optional	XH96_01 	Range	XH96_99 	Tics 8
+Texture	Optional	XH97_01 	Range	XH97_99 	Tics 8
+Texture	Optional	XH98_01 	Range	XH98_99 	Tics 8
+Texture	Optional	XH99_01 	Range	XH99_99 	Tics 8
+Texture	Optional	XI01_01 	Range	XI01_99 	Tics 8
+Texture	Optional	XI02_01 	Range	XI02_99 	Tics 8
+Texture	Optional	XI03_01 	Range	XI03_99 	Tics 8
+Texture	Optional	XI04_01 	Range	XI04_99 	Tics 8
+Texture	Optional	XI05_01 	Range	XI05_99 	Tics 8
+Texture	Optional	XI06_01 	Range	XI06_99 	Tics 8
+Texture	Optional	XI07_01 	Range	XI07_99 	Tics 8
+Texture	Optional	XI08_01 	Range	XI08_99 	Tics 8
+Texture	Optional	XI09_01 	Range	XI09_99 	Tics 8
+Texture	Optional	XI10_01 	Range	XI10_99 	Tics 8
+Texture	Optional	XI11_01 	Range	XI11_99 	Tics 8
+Texture	Optional	XI12_01 	Range	XI12_99 	Tics 8
+Texture	Optional	XI13_01 	Range	XI13_99 	Tics 8
+Texture	Optional	XI14_01 	Range	XI14_99 	Tics 8
+Texture	Optional	XI15_01 	Range	XI15_99 	Tics 8
+Texture	Optional	XI16_01 	Range	XI16_99 	Tics 8
+Texture	Optional	XI17_01 	Range	XI17_99 	Tics 8
+Texture	Optional	XI18_01 	Range	XI18_99 	Tics 8
+Texture	Optional	XI19_01 	Range	XI19_99 	Tics 8
+Texture	Optional	XI20_01 	Range	XI20_99 	Tics 8
+Texture	Optional	XI21_01 	Range	XI21_99 	Tics 8
+Texture	Optional	XI22_01 	Range	XI22_99 	Tics 8
+Texture	Optional	XI23_01 	Range	XI23_99 	Tics 8
+Texture	Optional	XI24_01 	Range	XI24_99 	Tics 8
+Texture	Optional	XI25_01 	Range	XI25_99 	Tics 8
+Texture	Optional	XI26_01 	Range	XI26_99 	Tics 8
+Texture	Optional	XI27_01 	Range	XI27_99 	Tics 8
+Texture	Optional	XI28_01 	Range	XI28_99 	Tics 8
+Texture	Optional	XI29_01 	Range	XI29_99 	Tics 8
+Texture	Optional	XI30_01 	Range	XI30_99 	Tics 8
+Texture	Optional	XI31_01 	Range	XI31_99 	Tics 8
+Texture	Optional	XI32_01 	Range	XI32_99 	Tics 8
+Texture	Optional	XI33_01 	Range	XI33_99 	Tics 8
+Texture	Optional	XI34_01 	Range	XI34_99 	Tics 8
+Texture	Optional	XI35_01 	Range	XI35_99 	Tics 8
+Texture	Optional	XI36_01 	Range	XI36_99 	Tics 8
+Texture	Optional	XI37_01 	Range	XI37_99 	Tics 8
+Texture	Optional	XI38_01 	Range	XI38_99 	Tics 8
+Texture	Optional	XI39_01 	Range	XI39_99 	Tics 8
+Texture	Optional	XI40_01 	Range	XI40_99 	Tics 8
+Texture	Optional	XI41_01 	Range	XI41_99 	Tics 8
+Texture	Optional	XI42_01 	Range	XI42_99 	Tics 8
+Texture	Optional	XI43_01 	Range	XI43_99 	Tics 8
+Texture	Optional	XI44_01 	Range	XI44_99 	Tics 8
+Texture	Optional	XI45_01 	Range	XI45_99 	Tics 8
+Texture	Optional	XI46_01 	Range	XI46_99 	Tics 8
+Texture	Optional	XI47_01 	Range	XI47_99 	Tics 8
+Texture	Optional	XI48_01 	Range	XI48_99 	Tics 8
+Texture	Optional	XI49_01 	Range	XI49_99 	Tics 8
+Texture	Optional	XI50_01 	Range	XI50_99 	Tics 8
+Texture	Optional	XI51_01 	Range	XI51_99 	Tics 8
+Texture	Optional	XI52_01 	Range	XI52_99 	Tics 8
+Texture	Optional	XI53_01 	Range	XI53_99 	Tics 8
+Texture	Optional	XI54_01 	Range	XI54_99 	Tics 8
+Texture	Optional	XI55_01 	Range	XI55_99 	Tics 8
+Texture	Optional	XI56_01 	Range	XI56_99 	Tics 8
+Texture	Optional	XI57_01 	Range	XI57_99 	Tics 8
+Texture	Optional	XI58_01 	Range	XI58_99 	Tics 8
+Texture	Optional	XI59_01 	Range	XI59_99 	Tics 8
+Texture	Optional	XI60_01 	Range	XI60_99 	Tics 8
+Texture	Optional	XI61_01 	Range	XI61_99 	Tics 8
+Texture	Optional	XI62_01 	Range	XI62_99 	Tics 8
+Texture	Optional	XI63_01 	Range	XI63_99 	Tics 8
+Texture	Optional	XI64_01 	Range	XI64_99 	Tics 8
+Texture	Optional	XI65_01 	Range	XI65_99 	Tics 8
+Texture	Optional	XI66_01 	Range	XI66_99 	Tics 8
+Texture	Optional	XI67_01 	Range	XI67_99 	Tics 8
+Texture	Optional	XI68_01 	Range	XI68_99 	Tics 8
+Texture	Optional	XI69_01 	Range	XI69_99 	Tics 8
+Texture	Optional	XI70_01 	Range	XI70_99 	Tics 8
+Texture	Optional	XI71_01 	Range	XI71_99 	Tics 8
+Texture	Optional	XI72_01 	Range	XI72_99 	Tics 8
+Texture	Optional	XI73_01 	Range	XI73_99 	Tics 8
+Texture	Optional	XI74_01 	Range	XI74_99 	Tics 8
+Texture	Optional	XI75_01 	Range	XI75_99 	Tics 8
+Texture	Optional	XI76_01 	Range	XI76_99 	Tics 8
+Texture	Optional	XI77_01 	Range	XI77_99 	Tics 8
+Texture	Optional	XI78_01 	Range	XI78_99 	Tics 8
+Texture	Optional	XI79_01 	Range	XI79_99 	Tics 8
+Texture	Optional	XI80_01 	Range	XI80_99 	Tics 8
+Texture	Optional	XI81_01 	Range	XI81_99 	Tics 8
+Texture	Optional	XI82_01 	Range	XI82_99 	Tics 8
+Texture	Optional	XI83_01 	Range	XI83_99 	Tics 8
+Texture	Optional	XI84_01 	Range	XI84_99 	Tics 8
+Texture	Optional	XI85_01 	Range	XI85_99 	Tics 8
+Texture	Optional	XI86_01 	Range	XI86_99 	Tics 8
+Texture	Optional	XI87_01 	Range	XI87_99 	Tics 8
+Texture	Optional	XI88_01 	Range	XI88_99 	Tics 8
+Texture	Optional	XI89_01 	Range	XI89_99 	Tics 8
+Texture	Optional	XI90_01 	Range	XI90_99 	Tics 8
+Texture	Optional	XI91_01 	Range	XI91_99 	Tics 8
+Texture	Optional	XI92_01 	Range	XI92_99 	Tics 8
+Texture	Optional	XI93_01 	Range	XI93_99 	Tics 8
+Texture	Optional	XI94_01 	Range	XI94_99 	Tics 8
+Texture	Optional	XI95_01 	Range	XI95_99 	Tics 8
+Texture	Optional	XI96_01 	Range	XI96_99 	Tics 8
+Texture	Optional	XI97_01 	Range	XI97_99 	Tics 8
+Texture	Optional	XI98_01 	Range	XI98_99 	Tics 8
+Texture	Optional	XI99_01 	Range	XI99_99 	Tics 8
+Texture	Optional	XJ01_01 	Range	XJ01_99 	Tics 3
+Texture	Optional	XJ02_01 	Range	XJ02_99 	Tics 3
+Texture	Optional	XJ03_01 	Range	XJ03_99 	Tics 3
+Texture	Optional	XJ04_01 	Range	XJ04_99 	Tics 3
+Texture	Optional	XJ05_01 	Range	XJ05_99 	Tics 3
+Texture	Optional	XJ06_01 	Range	XJ06_99 	Tics 3
+Texture	Optional	XJ07_01 	Range	XJ07_99 	Tics 3
+Texture	Optional	XJ08_01 	Range	XJ08_99 	Tics 3
+Texture	Optional	XJ09_01 	Range	XJ09_99 	Tics 3
+Texture	Optional	XJ10_01 	Range	XJ10_99 	Tics 3
+Texture	Optional	XJ11_01 	Range	XJ11_99 	Tics 3
+Texture	Optional	XJ12_01 	Range	XJ12_99 	Tics 3
+Texture	Optional	XJ13_01 	Range	XJ13_99 	Tics 3
+Texture	Optional	XJ14_01 	Range	XJ14_99 	Tics 3
+Texture	Optional	XJ15_01 	Range	XJ15_99 	Tics 3
+Texture	Optional	XJ16_01 	Range	XJ16_99 	Tics 3
+Texture	Optional	XJ17_01 	Range	XJ17_99 	Tics 3
+Texture	Optional	XJ18_01 	Range	XJ18_99 	Tics 3
+Texture	Optional	XJ19_01 	Range	XJ19_99 	Tics 3
+Texture	Optional	XJ20_01 	Range	XJ20_99 	Tics 3
+Texture	Optional	XJ21_01 	Range	XJ21_99 	Tics 3
+Texture	Optional	XJ22_01 	Range	XJ22_99 	Tics 3
+Texture	Optional	XJ23_01 	Range	XJ23_99 	Tics 3
+Texture	Optional	XJ24_01 	Range	XJ24_99 	Tics 3
+Texture	Optional	XJ25_01 	Range	XJ25_99 	Tics 3
+Texture	Optional	XJ26_01 	Range	XJ26_99 	Tics 3
+Texture	Optional	XJ27_01 	Range	XJ27_99 	Tics 3
+Texture	Optional	XJ28_01 	Range	XJ28_99 	Tics 3
+Texture	Optional	XJ29_01 	Range	XJ29_99 	Tics 3
+Texture	Optional	XJ30_01 	Range	XJ30_99 	Tics 3
+Texture	Optional	XJ31_01 	Range	XJ31_99 	Tics 3
+Texture	Optional	XJ32_01 	Range	XJ32_99 	Tics 3
+Texture	Optional	XJ33_01 	Range	XJ33_99 	Tics 3
+Texture	Optional	XJ34_01 	Range	XJ34_99 	Tics 3
+Texture	Optional	XJ35_01 	Range	XJ35_99 	Tics 3
+Texture	Optional	XJ36_01 	Range	XJ36_99 	Tics 3
+Texture	Optional	XJ37_01 	Range	XJ37_99 	Tics 3
+Texture	Optional	XJ38_01 	Range	XJ38_99 	Tics 3
+Texture	Optional	XJ39_01 	Range	XJ39_99 	Tics 3
+Texture	Optional	XJ40_01 	Range	XJ40_99 	Tics 3
+Texture	Optional	XJ41_01 	Range	XJ41_99 	Tics 3
+Texture	Optional	XJ42_01 	Range	XJ42_99 	Tics 3
+Texture	Optional	XJ43_01 	Range	XJ43_99 	Tics 3
+Texture	Optional	XJ44_01 	Range	XJ44_99 	Tics 3
+Texture	Optional	XJ45_01 	Range	XJ45_99 	Tics 3
+Texture	Optional	XJ46_01 	Range	XJ46_99 	Tics 3
+Texture	Optional	XJ47_01 	Range	XJ47_99 	Tics 3
+Texture	Optional	XJ48_01 	Range	XJ48_99 	Tics 3
+Texture	Optional	XJ49_01 	Range	XJ49_99 	Tics 3
+Texture	Optional	XJ50_01 	Range	XJ50_99 	Tics 3
+Texture	Optional	XJ51_01 	Range	XJ51_99 	Tics 3
+Texture	Optional	XJ52_01 	Range	XJ52_99 	Tics 3
+Texture	Optional	XJ53_01 	Range	XJ53_99 	Tics 3
+Texture	Optional	XJ54_01 	Range	XJ54_99 	Tics 3
+Texture	Optional	XJ55_01 	Range	XJ55_99 	Tics 3
+Texture	Optional	XJ56_01 	Range	XJ56_99 	Tics 3
+Texture	Optional	XJ57_01 	Range	XJ57_99 	Tics 3
+Texture	Optional	XJ58_01 	Range	XJ58_99 	Tics 3
+Texture	Optional	XJ59_01 	Range	XJ59_99 	Tics 3
+Texture	Optional	XJ60_01 	Range	XJ60_99 	Tics 3
+Texture	Optional	XJ61_01 	Range	XJ61_99 	Tics 3
+Texture	Optional	XJ62_01 	Range	XJ62_99 	Tics 3
+Texture	Optional	XJ63_01 	Range	XJ63_99 	Tics 3
+Texture	Optional	XJ64_01 	Range	XJ64_99 	Tics 3
+Texture	Optional	XJ65_01 	Range	XJ65_99 	Tics 3
+Texture	Optional	XJ66_01 	Range	XJ66_99 	Tics 3
+Texture	Optional	XJ67_01 	Range	XJ67_99 	Tics 3
+Texture	Optional	XJ68_01 	Range	XJ68_99 	Tics 3
+Texture	Optional	XJ69_01 	Range	XJ69_99 	Tics 3
+Texture	Optional	XJ70_01 	Range	XJ70_99 	Tics 3
+Texture	Optional	XJ71_01 	Range	XJ71_99 	Tics 3
+Texture	Optional	XJ72_01 	Range	XJ72_99 	Tics 3
+Texture	Optional	XJ73_01 	Range	XJ73_99 	Tics 3
+Texture	Optional	XJ74_01 	Range	XJ74_99 	Tics 3
+Texture	Optional	XJ75_01 	Range	XJ75_99 	Tics 3
+Texture	Optional	XJ76_01 	Range	XJ76_99 	Tics 3
+Texture	Optional	XJ77_01 	Range	XJ77_99 	Tics 3
+Texture	Optional	XJ78_01 	Range	XJ78_99 	Tics 3
+Texture	Optional	XJ79_01 	Range	XJ79_99 	Tics 3
+Texture	Optional	XJ80_01 	Range	XJ80_99 	Tics 3
+Texture	Optional	XJ81_01 	Range	XJ81_99 	Tics 3
+Texture	Optional	XJ82_01 	Range	XJ82_99 	Tics 3
+Texture	Optional	XJ83_01 	Range	XJ83_99 	Tics 3
+Texture	Optional	XJ84_01 	Range	XJ84_99 	Tics 3
+Texture	Optional	XJ85_01 	Range	XJ85_99 	Tics 3
+Texture	Optional	XJ86_01 	Range	XJ86_99 	Tics 3
+Texture	Optional	XJ87_01 	Range	XJ87_99 	Tics 3
+Texture	Optional	XJ88_01 	Range	XJ88_99 	Tics 3
+Texture	Optional	XJ89_01 	Range	XJ89_99 	Tics 3
+Texture	Optional	XJ90_01 	Range	XJ90_99 	Tics 3
+Texture	Optional	XJ91_01 	Range	XJ91_99 	Tics 3
+Texture	Optional	XJ92_01 	Range	XJ92_99 	Tics 3
+Texture	Optional	XJ93_01 	Range	XJ93_99 	Tics 3
+Texture	Optional	XJ94_01 	Range	XJ94_99 	Tics 3
+Texture	Optional	XJ95_01 	Range	XJ95_99 	Tics 3
+Texture	Optional	XJ96_01 	Range	XJ96_99 	Tics 3
+Texture	Optional	XJ97_01 	Range	XJ97_99 	Tics 3
+Texture	Optional	XJ98_01 	Range	XJ98_99 	Tics 3
+Texture	Optional	XJ99_01 	Range	XJ99_99 	Tics 3
+Texture	Optional	XK01_01 	Range	XK01_99 	Tics 8
+Texture	Optional	XK02_01 	Range	XK02_99 	Tics 8
+Texture	Optional	XK03_01 	Range	XK03_99 	Tics 8
+Texture	Optional	XK04_01 	Range	XK04_99 	Tics 8
+Texture	Optional	XK05_01 	Range	XK05_99 	Tics 8
+Texture	Optional	XK06_01 	Range	XK06_99 	Tics 8
+Texture	Optional	XK07_01 	Range	XK07_99 	Tics 8
+Texture	Optional	XK08_01 	Range	XK08_99 	Tics 8
+Texture	Optional	XK09_01 	Range	XK09_99 	Tics 8
+Texture	Optional	XK10_01 	Range	XK10_99 	Tics 8
+Texture	Optional	XK11_01 	Range	XK11_99 	Tics 8
+Texture	Optional	XK12_01 	Range	XK12_99 	Tics 8
+Texture	Optional	XK13_01 	Range	XK13_99 	Tics 8
+Texture	Optional	XK14_01 	Range	XK14_99 	Tics 8
+Texture	Optional	XK15_01 	Range	XK15_99 	Tics 8
+Texture	Optional	XK16_01 	Range	XK16_99 	Tics 8
+Texture	Optional	XK17_01 	Range	XK17_99 	Tics 8
+Texture	Optional	XK18_01 	Range	XK18_99 	Tics 8
+Texture	Optional	XK19_01 	Range	XK19_99 	Tics 8
+Texture	Optional	XK20_01 	Range	XK20_99 	Tics 8
+Texture	Optional	XK21_01 	Range	XK21_99 	Tics 8
+Texture	Optional	XK22_01 	Range	XK22_99 	Tics 8
+Texture	Optional	XK23_01 	Range	XK23_99 	Tics 8
+Texture	Optional	XK24_01 	Range	XK24_99 	Tics 8
+Texture	Optional	XK25_01 	Range	XK25_99 	Tics 8
+Texture	Optional	XK26_01 	Range	XK26_99 	Tics 8
+Texture	Optional	XK27_01 	Range	XK27_99 	Tics 8
+Texture	Optional	XK28_01 	Range	XK28_99 	Tics 8
+Texture	Optional	XK29_01 	Range	XK29_99 	Tics 8
+Texture	Optional	XK30_01 	Range	XK30_99 	Tics 8
+Texture	Optional	XK31_01 	Range	XK31_99 	Tics 8
+Texture	Optional	XK32_01 	Range	XK32_99 	Tics 8
+Texture	Optional	XK33_01 	Range	XK33_99 	Tics 8
+Texture	Optional	XK34_01 	Range	XK34_99 	Tics 8
+Texture	Optional	XK35_01 	Range	XK35_99 	Tics 8
+Texture	Optional	XK36_01 	Range	XK36_99 	Tics 8
+Texture	Optional	XK37_01 	Range	XK37_99 	Tics 8
+Texture	Optional	XK38_01 	Range	XK38_99 	Tics 8
+Texture	Optional	XK39_01 	Range	XK39_99 	Tics 8
+Texture	Optional	XK40_01 	Range	XK40_99 	Tics 8
+Texture	Optional	XK41_01 	Range	XK41_99 	Tics 8
+Texture	Optional	XK42_01 	Range	XK42_99 	Tics 8
+Texture	Optional	XK43_01 	Range	XK43_99 	Tics 8
+Texture	Optional	XK44_01 	Range	XK44_99 	Tics 8
+Texture	Optional	XK45_01 	Range	XK45_99 	Tics 8
+Texture	Optional	XK46_01 	Range	XK46_99 	Tics 8
+Texture	Optional	XK47_01 	Range	XK47_99 	Tics 8
+Texture	Optional	XK48_01 	Range	XK48_99 	Tics 8
+Texture	Optional	XK49_01 	Range	XK49_99 	Tics 8
+Texture	Optional	XK50_01 	Range	XK50_99 	Tics 8
+Texture	Optional	XK51_01 	Range	XK51_99 	Tics 8
+Texture	Optional	XK52_01 	Range	XK52_99 	Tics 8
+Texture	Optional	XK53_01 	Range	XK53_99 	Tics 8
+Texture	Optional	XK54_01 	Range	XK54_99 	Tics 8
+Texture	Optional	XK55_01 	Range	XK55_99 	Tics 8
+Texture	Optional	XK56_01 	Range	XK56_99 	Tics 8
+Texture	Optional	XK57_01 	Range	XK57_99 	Tics 8
+Texture	Optional	XK58_01 	Range	XK58_99 	Tics 8
+Texture	Optional	XK59_01 	Range	XK59_99 	Tics 8
+Texture	Optional	XK60_01 	Range	XK60_99 	Tics 8
+Texture	Optional	XK61_01 	Range	XK61_99 	Tics 8
+Texture	Optional	XK62_01 	Range	XK62_99 	Tics 8
+Texture	Optional	XK63_01 	Range	XK63_99 	Tics 8
+Texture	Optional	XK64_01 	Range	XK64_99 	Tics 8
+Texture	Optional	XK65_01 	Range	XK65_99 	Tics 8
+Texture	Optional	XK66_01 	Range	XK66_99 	Tics 8
+Texture	Optional	XK67_01 	Range	XK67_99 	Tics 8
+Texture	Optional	XK68_01 	Range	XK68_99 	Tics 8
+Texture	Optional	XK69_01 	Range	XK69_99 	Tics 8
+Texture	Optional	XK70_01 	Range	XK70_99 	Tics 8
+Texture	Optional	XK71_01 	Range	XK71_99 	Tics 8
+Texture	Optional	XK72_01 	Range	XK72_99 	Tics 8
+Texture	Optional	XK73_01 	Range	XK73_99 	Tics 8
+Texture	Optional	XK74_01 	Range	XK74_99 	Tics 8
+Texture	Optional	XK75_01 	Range	XK75_99 	Tics 8
+Texture	Optional	XK76_01 	Range	XK76_99 	Tics 8
+Texture	Optional	XK77_01 	Range	XK77_99 	Tics 8
+Texture	Optional	XK78_01 	Range	XK78_99 	Tics 8
+Texture	Optional	XK79_01 	Range	XK79_99 	Tics 8
+Texture	Optional	XK80_01 	Range	XK80_99 	Tics 8
+Texture	Optional	XK81_01 	Range	XK81_99 	Tics 8
+Texture	Optional	XK82_01 	Range	XK82_99 	Tics 8
+Texture	Optional	XK83_01 	Range	XK83_99 	Tics 8
+Texture	Optional	XK84_01 	Range	XK84_99 	Tics 8
+Texture	Optional	XK85_01 	Range	XK85_99 	Tics 8
+Texture	Optional	XK86_01 	Range	XK86_99 	Tics 8
+Texture	Optional	XK87_01 	Range	XK87_99 	Tics 8
+Texture	Optional	XK88_01 	Range	XK88_99 	Tics 8
+Texture	Optional	XK89_01 	Range	XK89_99 	Tics 8
+Texture	Optional	XK90_01 	Range	XK90_99 	Tics 8
+Texture	Optional	XK91_01 	Range	XK91_99 	Tics 8
+Texture	Optional	XK92_01 	Range	XK92_99 	Tics 8
+Texture	Optional	XK93_01 	Range	XK93_99 	Tics 8
+Texture	Optional	XK94_01 	Range	XK94_99 	Tics 8
+Texture	Optional	XK95_01 	Range	XK95_99 	Tics 8
+Texture	Optional	XK96_01 	Range	XK96_99 	Tics 8
+Texture	Optional	XK97_01 	Range	XK97_99 	Tics 8
+Texture	Optional	XK98_01 	Range	XK98_99 	Tics 8
+Texture	Optional	XK99_01 	Range	XK99_99 	Tics 8
+Texture	Optional	XL01_01 	Range	XL01_99 	Tics 8
+Texture	Optional	XL02_01 	Range	XL02_99 	Tics 8
+Texture	Optional	XL03_01 	Range	XL03_99 	Tics 8
+Texture	Optional	XL04_01 	Range	XL04_99 	Tics 8
+Texture	Optional	XL05_01 	Range	XL05_99 	Tics 8
+Texture	Optional	XL06_01 	Range	XL06_99 	Tics 8
+Texture	Optional	XL07_01 	Range	XL07_99 	Tics 8
+Texture	Optional	XL08_01 	Range	XL08_99 	Tics 8
+Texture	Optional	XL09_01 	Range	XL09_99 	Tics 8
+Texture	Optional	XL10_01 	Range	XL10_99 	Tics 8
+Texture	Optional	XL11_01 	Range	XL11_99 	Tics 8
+Texture	Optional	XL12_01 	Range	XL12_99 	Tics 8
+Texture	Optional	XL13_01 	Range	XL13_99 	Tics 8
+Texture	Optional	XL14_01 	Range	XL14_99 	Tics 8
+Texture	Optional	XL15_01 	Range	XL15_99 	Tics 8
+Texture	Optional	XL16_01 	Range	XL16_99 	Tics 8
+Texture	Optional	XL17_01 	Range	XL17_99 	Tics 8
+Texture	Optional	XL18_01 	Range	XL18_99 	Tics 8
+Texture	Optional	XL19_01 	Range	XL19_99 	Tics 8
+Texture	Optional	XL20_01 	Range	XL20_99 	Tics 8
+Texture	Optional	XL21_01 	Range	XL21_99 	Tics 8
+Texture	Optional	XL22_01 	Range	XL22_99 	Tics 8
+Texture	Optional	XL23_01 	Range	XL23_99 	Tics 8
+Texture	Optional	XL24_01 	Range	XL24_99 	Tics 8
+Texture	Optional	XL25_01 	Range	XL25_99 	Tics 8
+Texture	Optional	XL26_01 	Range	XL26_99 	Tics 8
+Texture	Optional	XL27_01 	Range	XL27_99 	Tics 8
+Texture	Optional	XL28_01 	Range	XL28_99 	Tics 8
+Texture	Optional	XL29_01 	Range	XL29_99 	Tics 8
+Texture	Optional	XL30_01 	Range	XL30_99 	Tics 8
+Texture	Optional	XL31_01 	Range	XL31_99 	Tics 8
+Texture	Optional	XL32_01 	Range	XL32_99 	Tics 8
+Texture	Optional	XL33_01 	Range	XL33_99 	Tics 8
+Texture	Optional	XL34_01 	Range	XL34_99 	Tics 8
+Texture	Optional	XL35_01 	Range	XL35_99 	Tics 8
+Texture	Optional	XL36_01 	Range	XL36_99 	Tics 8
+Texture	Optional	XL37_01 	Range	XL37_99 	Tics 8
+Texture	Optional	XL38_01 	Range	XL38_99 	Tics 8
+Texture	Optional	XL39_01 	Range	XL39_99 	Tics 8
+Texture	Optional	XL40_01 	Range	XL40_99 	Tics 8
+Texture	Optional	XL41_01 	Range	XL41_99 	Tics 8
+Texture	Optional	XL42_01 	Range	XL42_99 	Tics 8
+Texture	Optional	XL43_01 	Range	XL43_99 	Tics 8
+Texture	Optional	XL44_01 	Range	XL44_99 	Tics 8
+Texture	Optional	XL45_01 	Range	XL45_99 	Tics 8
+Texture	Optional	XL46_01 	Range	XL46_99 	Tics 8
+Texture	Optional	XL47_01 	Range	XL47_99 	Tics 8
+Texture	Optional	XL48_01 	Range	XL48_99 	Tics 8
+Texture	Optional	XL49_01 	Range	XL49_99 	Tics 8
+Texture	Optional	XL50_01 	Range	XL50_99 	Tics 8
+Texture	Optional	XL51_01 	Range	XL51_99 	Tics 8
+Texture	Optional	XL52_01 	Range	XL52_99 	Tics 8
+Texture	Optional	XL53_01 	Range	XL53_99 	Tics 8
+Texture	Optional	XL54_01 	Range	XL54_99 	Tics 8
+Texture	Optional	XL55_01 	Range	XL55_99 	Tics 8
+Texture	Optional	XL56_01 	Range	XL56_99 	Tics 8
+Texture	Optional	XL57_01 	Range	XL57_99 	Tics 8
+Texture	Optional	XL58_01 	Range	XL58_99 	Tics 8
+Texture	Optional	XL59_01 	Range	XL59_99 	Tics 8
+Texture	Optional	XL60_01 	Range	XL60_99 	Tics 8
+Texture	Optional	XL61_01 	Range	XL61_99 	Tics 8
+Texture	Optional	XL62_01 	Range	XL62_99 	Tics 8
+Texture	Optional	XL63_01 	Range	XL63_99 	Tics 8
+Texture	Optional	XL64_01 	Range	XL64_99 	Tics 8
+Texture	Optional	XL65_01 	Range	XL65_99 	Tics 8
+Texture	Optional	XL66_01 	Range	XL66_99 	Tics 8
+Texture	Optional	XL67_01 	Range	XL67_99 	Tics 8
+Texture	Optional	XL68_01 	Range	XL68_99 	Tics 8
+Texture	Optional	XL69_01 	Range	XL69_99 	Tics 8
+Texture	Optional	XL70_01 	Range	XL70_99 	Tics 8
+Texture	Optional	XL71_01 	Range	XL71_99 	Tics 8
+Texture	Optional	XL72_01 	Range	XL72_99 	Tics 8
+Texture	Optional	XL73_01 	Range	XL73_99 	Tics 8
+Texture	Optional	XL74_01 	Range	XL74_99 	Tics 8
+Texture	Optional	XL75_01 	Range	XL75_99 	Tics 8
+Texture	Optional	XL76_01 	Range	XL76_99 	Tics 8
+Texture	Optional	XL77_01 	Range	XL77_99 	Tics 8
+Texture	Optional	XL78_01 	Range	XL78_99 	Tics 8
+Texture	Optional	XL79_01 	Range	XL79_99 	Tics 8
+Texture	Optional	XL80_01 	Range	XL80_99 	Tics 8
+Texture	Optional	XL81_01 	Range	XL81_99 	Tics 8
+Texture	Optional	XL82_01 	Range	XL82_99 	Tics 8
+Texture	Optional	XL83_01 	Range	XL83_99 	Tics 8
+Texture	Optional	XL84_01 	Range	XL84_99 	Tics 8
+Texture	Optional	XL85_01 	Range	XL85_99 	Tics 8
+Texture	Optional	XL86_01 	Range	XL86_99 	Tics 8
+Texture	Optional	XL87_01 	Range	XL87_99 	Tics 8
+Texture	Optional	XL88_01 	Range	XL88_99 	Tics 8
+Texture	Optional	XL89_01 	Range	XL89_99 	Tics 8
+Texture	Optional	XL90_01 	Range	XL90_99 	Tics 8
+Texture	Optional	XL91_01 	Range	XL91_99 	Tics 8
+Texture	Optional	XL92_01 	Range	XL92_99 	Tics 8
+Texture	Optional	XL93_01 	Range	XL93_99 	Tics 8
+Texture	Optional	XL94_01 	Range	XL94_99 	Tics 8
+Texture	Optional	XL95_01 	Range	XL95_99 	Tics 8
+Texture	Optional	XL96_01 	Range	XL96_99 	Tics 8
+Texture	Optional	XL97_01 	Range	XL97_99 	Tics 8
+Texture	Optional	XL98_01 	Range	XL98_99 	Tics 8
+Texture	Optional	XL99_01 	Range	XL99_99 	Tics 8
+Texture	Optional	XM01_01 	Range	XM01_99 	Tics 8
+Texture	Optional	XM02_01 	Range	XM02_99 	Tics 8
+Texture	Optional	XM03_01 	Range	XM03_99 	Tics 8
+Texture	Optional	XM04_01 	Range	XM04_99 	Tics 8
+Texture	Optional	XM05_01 	Range	XM05_99 	Tics 8
+Texture	Optional	XM06_01 	Range	XM06_99 	Tics 8
+Texture	Optional	XM07_01 	Range	XM07_99 	Tics 8
+Texture	Optional	XM08_01 	Range	XM08_99 	Tics 8
+Texture	Optional	XM09_01 	Range	XM09_99 	Tics 8
+Texture	Optional	XM10_01 	Range	XM10_99 	Tics 8
+Texture	Optional	XM11_01 	Range	XM11_99 	Tics 8
+Texture	Optional	XM12_01 	Range	XM12_99 	Tics 8
+Texture	Optional	XM13_01 	Range	XM13_99 	Tics 8
+Texture	Optional	XM14_01 	Range	XM14_99 	Tics 8
+Texture	Optional	XM15_01 	Range	XM15_99 	Tics 8
+Texture	Optional	XM16_01 	Range	XM16_99 	Tics 8
+Texture	Optional	XM17_01 	Range	XM17_99 	Tics 8
+Texture	Optional	XM18_01 	Range	XM18_99 	Tics 8
+Texture	Optional	XM19_01 	Range	XM19_99 	Tics 8
+Texture	Optional	XM20_01 	Range	XM20_99 	Tics 8
+Texture	Optional	XM21_01 	Range	XM21_99 	Tics 8
+Texture	Optional	XM22_01 	Range	XM22_99 	Tics 8
+Texture	Optional	XM23_01 	Range	XM23_99 	Tics 8
+Texture	Optional	XM24_01 	Range	XM24_99 	Tics 8
+Texture	Optional	XM25_01 	Range	XM25_99 	Tics 8
+Texture	Optional	XM26_01 	Range	XM26_99 	Tics 8
+Texture	Optional	XM27_01 	Range	XM27_99 	Tics 8
+Texture	Optional	XM28_01 	Range	XM28_99 	Tics 8
+Texture	Optional	XM29_01 	Range	XM29_99 	Tics 8
+Texture	Optional	XM30_01 	Range	XM30_99 	Tics 8
+Texture	Optional	XM31_01 	Range	XM31_99 	Tics 8
+Texture	Optional	XM32_01 	Range	XM32_99 	Tics 8
+Texture	Optional	XM33_01 	Range	XM33_99 	Tics 8
+Texture	Optional	XM34_01 	Range	XM34_99 	Tics 8
+Texture	Optional	XM35_01 	Range	XM35_99 	Tics 8
+Texture	Optional	XM36_01 	Range	XM36_99 	Tics 8
+Texture	Optional	XM37_01 	Range	XM37_99 	Tics 8
+Texture	Optional	XM38_01 	Range	XM38_99 	Tics 8
+Texture	Optional	XM39_01 	Range	XM39_99 	Tics 8
+Texture	Optional	XM40_01 	Range	XM40_99 	Tics 8
+Texture	Optional	XM41_01 	Range	XM41_99 	Tics 8
+Texture	Optional	XM42_01 	Range	XM42_99 	Tics 8
+Texture	Optional	XM43_01 	Range	XM43_99 	Tics 8
+Texture	Optional	XM44_01 	Range	XM44_99 	Tics 8
+Texture	Optional	XM45_01 	Range	XM45_99 	Tics 8
+Texture	Optional	XM46_01 	Range	XM46_99 	Tics 8
+Texture	Optional	XM47_01 	Range	XM47_99 	Tics 8
+Texture	Optional	XM48_01 	Range	XM48_99 	Tics 8
+Texture	Optional	XM49_01 	Range	XM49_99 	Tics 8
+Texture	Optional	XM50_01 	Range	XM50_99 	Tics 8
+Texture	Optional	XM51_01 	Range	XM51_99 	Tics 8
+Texture	Optional	XM52_01 	Range	XM52_99 	Tics 8
+Texture	Optional	XM53_01 	Range	XM53_99 	Tics 8
+Texture	Optional	XM54_01 	Range	XM54_99 	Tics 8
+Texture	Optional	XM55_01 	Range	XM55_99 	Tics 8
+Texture	Optional	XM56_01 	Range	XM56_99 	Tics 8
+Texture	Optional	XM57_01 	Range	XM57_99 	Tics 8
+Texture	Optional	XM58_01 	Range	XM58_99 	Tics 8
+Texture	Optional	XM59_01 	Range	XM59_99 	Tics 8
+Texture	Optional	XM60_01 	Range	XM60_99 	Tics 8
+Texture	Optional	XM61_01 	Range	XM61_99 	Tics 8
+Texture	Optional	XM62_01 	Range	XM62_99 	Tics 8
+Texture	Optional	XM63_01 	Range	XM63_99 	Tics 8
+Texture	Optional	XM64_01 	Range	XM64_99 	Tics 8
+Texture	Optional	XM65_01 	Range	XM65_99 	Tics 8
+Texture	Optional	XM66_01 	Range	XM66_99 	Tics 8
+Texture	Optional	XM67_01 	Range	XM67_99 	Tics 8
+Texture	Optional	XM68_01 	Range	XM68_99 	Tics 8
+Texture	Optional	XM69_01 	Range	XM69_99 	Tics 8
+Texture	Optional	XM70_01 	Range	XM70_99 	Tics 8
+Texture	Optional	XM71_01 	Range	XM71_99 	Tics 8
+Texture	Optional	XM72_01 	Range	XM72_99 	Tics 8
+Texture	Optional	XM73_01 	Range	XM73_99 	Tics 8
+Texture	Optional	XM74_01 	Range	XM74_99 	Tics 8
+Texture	Optional	XM75_01 	Range	XM75_99 	Tics 8
+Texture	Optional	XM76_01 	Range	XM76_99 	Tics 8
+Texture	Optional	XM77_01 	Range	XM77_99 	Tics 8
+Texture	Optional	XM78_01 	Range	XM78_99 	Tics 8
+Texture	Optional	XM79_01 	Range	XM79_99 	Tics 8
+Texture	Optional	XM80_01 	Range	XM80_99 	Tics 8
+Texture	Optional	XM81_01 	Range	XM81_99 	Tics 8
+Texture	Optional	XM82_01 	Range	XM82_99 	Tics 8
+Texture	Optional	XM83_01 	Range	XM83_99 	Tics 8
+Texture	Optional	XM84_01 	Range	XM84_99 	Tics 8
+Texture	Optional	XM85_01 	Range	XM85_99 	Tics 8
+Texture	Optional	XM86_01 	Range	XM86_99 	Tics 8
+Texture	Optional	XM87_01 	Range	XM87_99 	Tics 8
+Texture	Optional	XM88_01 	Range	XM88_99 	Tics 8
+Texture	Optional	XM89_01 	Range	XM89_99 	Tics 8
+Texture	Optional	XM90_01 	Range	XM90_99 	Tics 8
+Texture	Optional	XM91_01 	Range	XM91_99 	Tics 8
+Texture	Optional	XM92_01 	Range	XM92_99 	Tics 8
+Texture	Optional	XM93_01 	Range	XM93_99 	Tics 8
+Texture	Optional	XM94_01 	Range	XM94_99 	Tics 8
+Texture	Optional	XM95_01 	Range	XM95_99 	Tics 8
+Texture	Optional	XM96_01 	Range	XM96_99 	Tics 8
+Texture	Optional	XM97_01 	Range	XM97_99 	Tics 8
+Texture	Optional	XM98_01 	Range	XM98_99 	Tics 8
+Texture	Optional	XM99_01 	Range	XM99_99 	Tics 8
+Texture	Optional	XN01_01 	Range	XN01_99 	Tics 8
+Texture	Optional	XN02_01 	Range	XN02_99 	Tics 8
+Texture	Optional	XN03_01 	Range	XN03_99 	Tics 8
+Texture	Optional	XN04_01 	Range	XN04_99 	Tics 8
+Texture	Optional	XN05_01 	Range	XN05_99 	Tics 8
+Texture	Optional	XN06_01 	Range	XN06_99 	Tics 8
+Texture	Optional	XN07_01 	Range	XN07_99 	Tics 8
+Texture	Optional	XN08_01 	Range	XN08_99 	Tics 8
+Texture	Optional	XN09_01 	Range	XN09_99 	Tics 8
+Texture	Optional	XN10_01 	Range	XN10_99 	Tics 8
+Texture	Optional	XN11_01 	Range	XN11_99 	Tics 8
+Texture	Optional	XN12_01 	Range	XN12_99 	Tics 8
+Texture	Optional	XN13_01 	Range	XN13_99 	Tics 8
+Texture	Optional	XN14_01 	Range	XN14_99 	Tics 8
+Texture	Optional	XN15_01 	Range	XN15_99 	Tics 8
+Texture	Optional	XN16_01 	Range	XN16_99 	Tics 8
+Texture	Optional	XN17_01 	Range	XN17_99 	Tics 8
+Texture	Optional	XN18_01 	Range	XN18_99 	Tics 8
+Texture	Optional	XN19_01 	Range	XN19_99 	Tics 8
+Texture	Optional	XN20_01 	Range	XN20_99 	Tics 8
+Texture	Optional	XN21_01 	Range	XN21_99 	Tics 8
+Texture	Optional	XN22_01 	Range	XN22_99 	Tics 8
+Texture	Optional	XN23_01 	Range	XN23_99 	Tics 8
+Texture	Optional	XN24_01 	Range	XN24_99 	Tics 8
+Texture	Optional	XN25_01 	Range	XN25_99 	Tics 8
+Texture	Optional	XN26_01 	Range	XN26_99 	Tics 8
+Texture	Optional	XN27_01 	Range	XN27_99 	Tics 8
+Texture	Optional	XN28_01 	Range	XN28_99 	Tics 8
+Texture	Optional	XN29_01 	Range	XN29_99 	Tics 8
+Texture	Optional	XN30_01 	Range	XN30_99 	Tics 8
+Texture	Optional	XN31_01 	Range	XN31_99 	Tics 8
+Texture	Optional	XN32_01 	Range	XN32_99 	Tics 8
+Texture	Optional	XN33_01 	Range	XN33_99 	Tics 8
+Texture	Optional	XN34_01 	Range	XN34_99 	Tics 8
+Texture	Optional	XN35_01 	Range	XN35_99 	Tics 8
+Texture	Optional	XN36_01 	Range	XN36_99 	Tics 8
+Texture	Optional	XN37_01 	Range	XN37_99 	Tics 8
+Texture	Optional	XN38_01 	Range	XN38_99 	Tics 8
+Texture	Optional	XN39_01 	Range	XN39_99 	Tics 8
+Texture	Optional	XN40_01 	Range	XN40_99 	Tics 8
+Texture	Optional	XN41_01 	Range	XN41_99 	Tics 8
+Texture	Optional	XN42_01 	Range	XN42_99 	Tics 8
+Texture	Optional	XN43_01 	Range	XN43_99 	Tics 8
+Texture	Optional	XN44_01 	Range	XN44_99 	Tics 8
+Texture	Optional	XN45_01 	Range	XN45_99 	Tics 8
+Texture	Optional	XN46_01 	Range	XN46_99 	Tics 8
+Texture	Optional	XN47_01 	Range	XN47_99 	Tics 8
+Texture	Optional	XN48_01 	Range	XN48_99 	Tics 8
+Texture	Optional	XN49_01 	Range	XN49_99 	Tics 8
+Texture	Optional	XN50_01 	Range	XN50_99 	Tics 8
+Texture	Optional	XN51_01 	Range	XN51_99 	Tics 8
+Texture	Optional	XN52_01 	Range	XN52_99 	Tics 8
+Texture	Optional	XN53_01 	Range	XN53_99 	Tics 8
+Texture	Optional	XN54_01 	Range	XN54_99 	Tics 8
+Texture	Optional	XN55_01 	Range	XN55_99 	Tics 8
+Texture	Optional	XN56_01 	Range	XN56_99 	Tics 8
+Texture	Optional	XN57_01 	Range	XN57_99 	Tics 8
+Texture	Optional	XN58_01 	Range	XN58_99 	Tics 8
+Texture	Optional	XN59_01 	Range	XN59_99 	Tics 8
+Texture	Optional	XN60_01 	Range	XN60_99 	Tics 8
+Texture	Optional	XN61_01 	Range	XN61_99 	Tics 8
+Texture	Optional	XN62_01 	Range	XN62_99 	Tics 8
+Texture	Optional	XN63_01 	Range	XN63_99 	Tics 8
+Texture	Optional	XN64_01 	Range	XN64_99 	Tics 8
+Texture	Optional	XN65_01 	Range	XN65_99 	Tics 8
+Texture	Optional	XN66_01 	Range	XN66_99 	Tics 8
+Texture	Optional	XN67_01 	Range	XN67_99 	Tics 8
+Texture	Optional	XN68_01 	Range	XN68_99 	Tics 8
+Texture	Optional	XN69_01 	Range	XN69_99 	Tics 8
+Texture	Optional	XN70_01 	Range	XN70_99 	Tics 8
+Texture	Optional	XN71_01 	Range	XN71_99 	Tics 8
+Texture	Optional	XN72_01 	Range	XN72_99 	Tics 8
+Texture	Optional	XN73_01 	Range	XN73_99 	Tics 8
+Texture	Optional	XN74_01 	Range	XN74_99 	Tics 8
+Texture	Optional	XN75_01 	Range	XN75_99 	Tics 8
+Texture	Optional	XN76_01 	Range	XN76_99 	Tics 8
+Texture	Optional	XN77_01 	Range	XN77_99 	Tics 8
+Texture	Optional	XN78_01 	Range	XN78_99 	Tics 8
+Texture	Optional	XN79_01 	Range	XN79_99 	Tics 8
+Texture	Optional	XN80_01 	Range	XN80_99 	Tics 8
+Texture	Optional	XN81_01 	Range	XN81_99 	Tics 8
+Texture	Optional	XN82_01 	Range	XN82_99 	Tics 8
+Texture	Optional	XN83_01 	Range	XN83_99 	Tics 8
+Texture	Optional	XN84_01 	Range	XN84_99 	Tics 8
+Texture	Optional	XN85_01 	Range	XN85_99 	Tics 8
+Texture	Optional	XN86_01 	Range	XN86_99 	Tics 8
+Texture	Optional	XN87_01 	Range	XN87_99 	Tics 8
+Texture	Optional	XN88_01 	Range	XN88_99 	Tics 8
+Texture	Optional	XN89_01 	Range	XN89_99 	Tics 8
+Texture	Optional	XN90_01 	Range	XN90_99 	Tics 8
+Texture	Optional	XN91_01 	Range	XN91_99 	Tics 8
+Texture	Optional	XN92_01 	Range	XN92_99 	Tics 8
+Texture	Optional	XN93_01 	Range	XN93_99 	Tics 8
+Texture	Optional	XN94_01 	Range	XN94_99 	Tics 8
+Texture	Optional	XN95_01 	Range	XN95_99 	Tics 8
+Texture	Optional	XN96_01 	Range	XN96_99 	Tics 8
+Texture	Optional	XN97_01 	Range	XN97_99 	Tics 8
+Texture	Optional	XN98_01 	Range	XN98_99 	Tics 8
+Texture	Optional	XN99_01 	Range	XN99_99 	Tics 8
+Texture	Optional	XO01_01 	Range	XO01_99 	Tics 8
+Texture	Optional	XO02_01 	Range	XO02_99 	Tics 8
+Texture	Optional	XO03_01 	Range	XO03_99 	Tics 8
+Texture	Optional	XO04_01 	Range	XO04_99 	Tics 8
+Texture	Optional	XO05_01 	Range	XO05_99 	Tics 8
+Texture	Optional	XO06_01 	Range	XO06_99 	Tics 8
+Texture	Optional	XO07_01 	Range	XO07_99 	Tics 8
+Texture	Optional	XO08_01 	Range	XO08_99 	Tics 8
+Texture	Optional	XO09_01 	Range	XO09_99 	Tics 8
+Texture	Optional	XO10_01 	Range	XO10_99 	Tics 8
+Texture	Optional	XO11_01 	Range	XO11_99 	Tics 8
+Texture	Optional	XO12_01 	Range	XO12_99 	Tics 8
+Texture	Optional	XO13_01 	Range	XO13_99 	Tics 8
+Texture	Optional	XO14_01 	Range	XO14_99 	Tics 8
+Texture	Optional	XO15_01 	Range	XO15_99 	Tics 8
+Texture	Optional	XO16_01 	Range	XO16_99 	Tics 8
+Texture	Optional	XO17_01 	Range	XO17_99 	Tics 8
+Texture	Optional	XO18_01 	Range	XO18_99 	Tics 8
+Texture	Optional	XO19_01 	Range	XO19_99 	Tics 8
+Texture	Optional	XO20_01 	Range	XO20_99 	Tics 8
+Texture	Optional	XO21_01 	Range	XO21_99 	Tics 8
+Texture	Optional	XO22_01 	Range	XO22_99 	Tics 8
+Texture	Optional	XO23_01 	Range	XO23_99 	Tics 8
+Texture	Optional	XO24_01 	Range	XO24_99 	Tics 8
+Texture	Optional	XO25_01 	Range	XO25_99 	Tics 8
+Texture	Optional	XO26_01 	Range	XO26_99 	Tics 8
+Texture	Optional	XO27_01 	Range	XO27_99 	Tics 8
+Texture	Optional	XO28_01 	Range	XO28_99 	Tics 8
+Texture	Optional	XO29_01 	Range	XO29_99 	Tics 8
+Texture	Optional	XO30_01 	Range	XO30_99 	Tics 8
+Texture	Optional	XO31_01 	Range	XO31_99 	Tics 8
+Texture	Optional	XO32_01 	Range	XO32_99 	Tics 8
+Texture	Optional	XO33_01 	Range	XO33_99 	Tics 8
+Texture	Optional	XO34_01 	Range	XO34_99 	Tics 8
+Texture	Optional	XO35_01 	Range	XO35_99 	Tics 8
+Texture	Optional	XO36_01 	Range	XO36_99 	Tics 8
+Texture	Optional	XO37_01 	Range	XO37_99 	Tics 8
+Texture	Optional	XO38_01 	Range	XO38_99 	Tics 8
+Texture	Optional	XO39_01 	Range	XO39_99 	Tics 8
+Texture	Optional	XO40_01 	Range	XO40_99 	Tics 8
+Texture	Optional	XO41_01 	Range	XO41_99 	Tics 8
+Texture	Optional	XO42_01 	Range	XO42_99 	Tics 8
+Texture	Optional	XO43_01 	Range	XO43_99 	Tics 8
+Texture	Optional	XO44_01 	Range	XO44_99 	Tics 8
+Texture	Optional	XO45_01 	Range	XO45_99 	Tics 8
+Texture	Optional	XO46_01 	Range	XO46_99 	Tics 8
+Texture	Optional	XO47_01 	Range	XO47_99 	Tics 8
+Texture	Optional	XO48_01 	Range	XO48_99 	Tics 8
+Texture	Optional	XO49_01 	Range	XO49_99 	Tics 8
+Texture	Optional	XO50_01 	Range	XO50_99 	Tics 8
+Texture	Optional	XO51_01 	Range	XO51_99 	Tics 8
+Texture	Optional	XO52_01 	Range	XO52_99 	Tics 8
+Texture	Optional	XO53_01 	Range	XO53_99 	Tics 8
+Texture	Optional	XO54_01 	Range	XO54_99 	Tics 8
+Texture	Optional	XO55_01 	Range	XO55_99 	Tics 8
+Texture	Optional	XO56_01 	Range	XO56_99 	Tics 8
+Texture	Optional	XO57_01 	Range	XO57_99 	Tics 8
+Texture	Optional	XO58_01 	Range	XO58_99 	Tics 8
+Texture	Optional	XO59_01 	Range	XO59_99 	Tics 8
+Texture	Optional	XO60_01 	Range	XO60_99 	Tics 8
+Texture	Optional	XO61_01 	Range	XO61_99 	Tics 8
+Texture	Optional	XO62_01 	Range	XO62_99 	Tics 8
+Texture	Optional	XO63_01 	Range	XO63_99 	Tics 8
+Texture	Optional	XO64_01 	Range	XO64_99 	Tics 8
+Texture	Optional	XO65_01 	Range	XO65_99 	Tics 8
+Texture	Optional	XO66_01 	Range	XO66_99 	Tics 8
+Texture	Optional	XO67_01 	Range	XO67_99 	Tics 8
+Texture	Optional	XO68_01 	Range	XO68_99 	Tics 8
+Texture	Optional	XO69_01 	Range	XO69_99 	Tics 8
+Texture	Optional	XO70_01 	Range	XO70_99 	Tics 8
+Texture	Optional	XO71_01 	Range	XO71_99 	Tics 8
+Texture	Optional	XO72_01 	Range	XO72_99 	Tics 8
+Texture	Optional	XO73_01 	Range	XO73_99 	Tics 8
+Texture	Optional	XO74_01 	Range	XO74_99 	Tics 8
+Texture	Optional	XO75_01 	Range	XO75_99 	Tics 8
+Texture	Optional	XO76_01 	Range	XO76_99 	Tics 8
+Texture	Optional	XO77_01 	Range	XO77_99 	Tics 8
+Texture	Optional	XO78_01 	Range	XO78_99 	Tics 8
+Texture	Optional	XO79_01 	Range	XO79_99 	Tics 8
+Texture	Optional	XO80_01 	Range	XO80_99 	Tics 8
+Texture	Optional	XO81_01 	Range	XO81_99 	Tics 8
+Texture	Optional	XO82_01 	Range	XO82_99 	Tics 8
+Texture	Optional	XO83_01 	Range	XO83_99 	Tics 8
+Texture	Optional	XO84_01 	Range	XO84_99 	Tics 8
+Texture	Optional	XO85_01 	Range	XO85_99 	Tics 8
+Texture	Optional	XO86_01 	Range	XO86_99 	Tics 8
+Texture	Optional	XO87_01 	Range	XO87_99 	Tics 8
+Texture	Optional	XO88_01 	Range	XO88_99 	Tics 8
+Texture	Optional	XO89_01 	Range	XO89_99 	Tics 8
+Texture	Optional	XO90_01 	Range	XO90_99 	Tics 8
+Texture	Optional	XO91_01 	Range	XO91_99 	Tics 8
+Texture	Optional	XO92_01 	Range	XO92_99 	Tics 8
+Texture	Optional	XO93_01 	Range	XO93_99 	Tics 8
+Texture	Optional	XO94_01 	Range	XO94_99 	Tics 8
+Texture	Optional	XO95_01 	Range	XO95_99 	Tics 8
+Texture	Optional	XO96_01 	Range	XO96_99 	Tics 8
+Texture	Optional	XO97_01 	Range	XO97_99 	Tics 8
+Texture	Optional	XO98_01 	Range	XO98_99 	Tics 8
+Texture	Optional	XO99_01 	Range	XO99_99 	Tics 8
+Texture	Optional	XP01_01 	Range	XP01_99 	Tics 8
+Texture	Optional	XP02_01 	Range	XP02_99 	Tics 8
+Texture	Optional	XP03_01 	Range	XP03_99 	Tics 8
+Texture	Optional	XP04_01 	Range	XP04_99 	Tics 8
+Texture	Optional	XP05_01 	Range	XP05_99 	Tics 8
+Texture	Optional	XP06_01 	Range	XP06_99 	Tics 8
+Texture	Optional	XP07_01 	Range	XP07_99 	Tics 8
+Texture	Optional	XP08_01 	Range	XP08_99 	Tics 8
+Texture	Optional	XP09_01 	Range	XP09_99 	Tics 8
+Texture	Optional	XP10_01 	Range	XP10_99 	Tics 8
+Texture	Optional	XP11_01 	Range	XP11_99 	Tics 8
+Texture	Optional	XP12_01 	Range	XP12_99 	Tics 8
+Texture	Optional	XP13_01 	Range	XP13_99 	Tics 8
+Texture	Optional	XP14_01 	Range	XP14_99 	Tics 8
+Texture	Optional	XP15_01 	Range	XP15_99 	Tics 8
+Texture	Optional	XP16_01 	Range	XP16_99 	Tics 8
+Texture	Optional	XP17_01 	Range	XP17_99 	Tics 8
+Texture	Optional	XP18_01 	Range	XP18_99 	Tics 8
+Texture	Optional	XP19_01 	Range	XP19_99 	Tics 8
+Texture	Optional	XP20_01 	Range	XP20_99 	Tics 8
+Texture	Optional	XP21_01 	Range	XP21_99 	Tics 8
+Texture	Optional	XP22_01 	Range	XP22_99 	Tics 8
+Texture	Optional	XP23_01 	Range	XP23_99 	Tics 8
+Texture	Optional	XP24_01 	Range	XP24_99 	Tics 8
+Texture	Optional	XP25_01 	Range	XP25_99 	Tics 8
+Texture	Optional	XP26_01 	Range	XP26_99 	Tics 8
+Texture	Optional	XP27_01 	Range	XP27_99 	Tics 8
+Texture	Optional	XP28_01 	Range	XP28_99 	Tics 8
+Texture	Optional	XP29_01 	Range	XP29_99 	Tics 8
+Texture	Optional	XP30_01 	Range	XP30_99 	Tics 8
+Texture	Optional	XP31_01 	Range	XP31_99 	Tics 8
+Texture	Optional	XP32_01 	Range	XP32_99 	Tics 8
+Texture	Optional	XP33_01 	Range	XP33_99 	Tics 8
+Texture	Optional	XP34_01 	Range	XP34_99 	Tics 8
+Texture	Optional	XP35_01 	Range	XP35_99 	Tics 8
+Texture	Optional	XP36_01 	Range	XP36_99 	Tics 8
+Texture	Optional	XP37_01 	Range	XP37_99 	Tics 8
+Texture	Optional	XP38_01 	Range	XP38_99 	Tics 8
+Texture	Optional	XP39_01 	Range	XP39_99 	Tics 8
+Texture	Optional	XP40_01 	Range	XP40_99 	Tics 8
+Texture	Optional	XP41_01 	Range	XP41_99 	Tics 8
+Texture	Optional	XP42_01 	Range	XP42_99 	Tics 8
+Texture	Optional	XP43_01 	Range	XP43_99 	Tics 8
+Texture	Optional	XP44_01 	Range	XP44_99 	Tics 8
+Texture	Optional	XP45_01 	Range	XP45_99 	Tics 8
+Texture	Optional	XP46_01 	Range	XP46_99 	Tics 8
+Texture	Optional	XP47_01 	Range	XP47_99 	Tics 8
+Texture	Optional	XP48_01 	Range	XP48_99 	Tics 8
+Texture	Optional	XP49_01 	Range	XP49_99 	Tics 8
+Texture	Optional	XP50_01 	Range	XP50_99 	Tics 8
+Texture	Optional	XP51_01 	Range	XP51_99 	Tics 8
+Texture	Optional	XP52_01 	Range	XP52_99 	Tics 8
+Texture	Optional	XP53_01 	Range	XP53_99 	Tics 8
+Texture	Optional	XP54_01 	Range	XP54_99 	Tics 8
+Texture	Optional	XP55_01 	Range	XP55_99 	Tics 8
+Texture	Optional	XP56_01 	Range	XP56_99 	Tics 8
+Texture	Optional	XP57_01 	Range	XP57_99 	Tics 8
+Texture	Optional	XP58_01 	Range	XP58_99 	Tics 8
+Texture	Optional	XP59_01 	Range	XP59_99 	Tics 8
+Texture	Optional	XP60_01 	Range	XP60_99 	Tics 8
+Texture	Optional	XP61_01 	Range	XP61_99 	Tics 8
+Texture	Optional	XP62_01 	Range	XP62_99 	Tics 8
+Texture	Optional	XP63_01 	Range	XP63_99 	Tics 8
+Texture	Optional	XP64_01 	Range	XP64_99 	Tics 8
+Texture	Optional	XP65_01 	Range	XP65_99 	Tics 8
+Texture	Optional	XP66_01 	Range	XP66_99 	Tics 8
+Texture	Optional	XP67_01 	Range	XP67_99 	Tics 8
+Texture	Optional	XP68_01 	Range	XP68_99 	Tics 8
+Texture	Optional	XP69_01 	Range	XP69_99 	Tics 8
+Texture	Optional	XP70_01 	Range	XP70_99 	Tics 8
+Texture	Optional	XP71_01 	Range	XP71_99 	Tics 8
+Texture	Optional	XP72_01 	Range	XP72_99 	Tics 8
+Texture	Optional	XP73_01 	Range	XP73_99 	Tics 8
+Texture	Optional	XP74_01 	Range	XP74_99 	Tics 8
+Texture	Optional	XP75_01 	Range	XP75_99 	Tics 8
+Texture	Optional	XP76_01 	Range	XP76_99 	Tics 8
+Texture	Optional	XP77_01 	Range	XP77_99 	Tics 8
+Texture	Optional	XP78_01 	Range	XP78_99 	Tics 8
+Texture	Optional	XP79_01 	Range	XP79_99 	Tics 8
+Texture	Optional	XP80_01 	Range	XP80_99 	Tics 8
+Texture	Optional	XP81_01 	Range	XP81_99 	Tics 8
+Texture	Optional	XP82_01 	Range	XP82_99 	Tics 8
+Texture	Optional	XP83_01 	Range	XP83_99 	Tics 8
+Texture	Optional	XP84_01 	Range	XP84_99 	Tics 8
+Texture	Optional	XP85_01 	Range	XP85_99 	Tics 8
+Texture	Optional	XP86_01 	Range	XP86_99 	Tics 8
+Texture	Optional	XP87_01 	Range	XP87_99 	Tics 8
+Texture	Optional	XP88_01 	Range	XP88_99 	Tics 8
+Texture	Optional	XP89_01 	Range	XP89_99 	Tics 8
+Texture	Optional	XP90_01 	Range	XP90_99 	Tics 8
+Texture	Optional	XP91_01 	Range	XP91_99 	Tics 8
+Texture	Optional	XP92_01 	Range	XP92_99 	Tics 8
+Texture	Optional	XP93_01 	Range	XP93_99 	Tics 8
+Texture	Optional	XP94_01 	Range	XP94_99 	Tics 8
+Texture	Optional	XP95_01 	Range	XP95_99 	Tics 8
+Texture	Optional	XP96_01 	Range	XP96_99 	Tics 8
+Texture	Optional	XP97_01 	Range	XP97_99 	Tics 8
+Texture	Optional	XP98_01 	Range	XP98_99 	Tics 8
+Texture	Optional	XP99_01 	Range	XP99_99 	Tics 8
+Texture	Optional	XQ01_01 	Range	XQ01_99 	Tics 8
+Texture	Optional	XQ02_01 	Range	XQ02_99 	Tics 8
+Texture	Optional	XQ03_01 	Range	XQ03_99 	Tics 8
+Texture	Optional	XQ04_01 	Range	XQ04_99 	Tics 8
+Texture	Optional	XQ05_01 	Range	XQ05_99 	Tics 8
+Texture	Optional	XQ06_01 	Range	XQ06_99 	Tics 8
+Texture	Optional	XQ07_01 	Range	XQ07_99 	Tics 8
+Texture	Optional	XQ08_01 	Range	XQ08_99 	Tics 8
+Texture	Optional	XQ09_01 	Range	XQ09_99 	Tics 8
+Texture	Optional	XQ10_01 	Range	XQ10_99 	Tics 8
+Texture	Optional	XQ11_01 	Range	XQ11_99 	Tics 8
+Texture	Optional	XQ12_01 	Range	XQ12_99 	Tics 8
+Texture	Optional	XQ13_01 	Range	XQ13_99 	Tics 8
+Texture	Optional	XQ14_01 	Range	XQ14_99 	Tics 8
+Texture	Optional	XQ15_01 	Range	XQ15_99 	Tics 8
+Texture	Optional	XQ16_01 	Range	XQ16_99 	Tics 8
+Texture	Optional	XQ17_01 	Range	XQ17_99 	Tics 8
+Texture	Optional	XQ18_01 	Range	XQ18_99 	Tics 8
+Texture	Optional	XQ19_01 	Range	XQ19_99 	Tics 8
+Texture	Optional	XQ20_01 	Range	XQ20_99 	Tics 8
+Texture	Optional	XQ21_01 	Range	XQ21_99 	Tics 8
+Texture	Optional	XQ22_01 	Range	XQ22_99 	Tics 8
+Texture	Optional	XQ23_01 	Range	XQ23_99 	Tics 8
+Texture	Optional	XQ24_01 	Range	XQ24_99 	Tics 8
+Texture	Optional	XQ25_01 	Range	XQ25_99 	Tics 8
+Texture	Optional	XQ26_01 	Range	XQ26_99 	Tics 8
+Texture	Optional	XQ27_01 	Range	XQ27_99 	Tics 8
+Texture	Optional	XQ28_01 	Range	XQ28_99 	Tics 8
+Texture	Optional	XQ29_01 	Range	XQ29_99 	Tics 8
+Texture	Optional	XQ30_01 	Range	XQ30_99 	Tics 8
+Texture	Optional	XQ31_01 	Range	XQ31_99 	Tics 8
+Texture	Optional	XQ32_01 	Range	XQ32_99 	Tics 8
+Texture	Optional	XQ33_01 	Range	XQ33_99 	Tics 8
+Texture	Optional	XQ34_01 	Range	XQ34_99 	Tics 8
+Texture	Optional	XQ35_01 	Range	XQ35_99 	Tics 8
+Texture	Optional	XQ36_01 	Range	XQ36_99 	Tics 8
+Texture	Optional	XQ37_01 	Range	XQ37_99 	Tics 8
+Texture	Optional	XQ38_01 	Range	XQ38_99 	Tics 8
+Texture	Optional	XQ39_01 	Range	XQ39_99 	Tics 8
+Texture	Optional	XQ40_01 	Range	XQ40_99 	Tics 8
+Texture	Optional	XQ41_01 	Range	XQ41_99 	Tics 8
+Texture	Optional	XQ42_01 	Range	XQ42_99 	Tics 8
+Texture	Optional	XQ43_01 	Range	XQ43_99 	Tics 8
+Texture	Optional	XQ44_01 	Range	XQ44_99 	Tics 8
+Texture	Optional	XQ45_01 	Range	XQ45_99 	Tics 8
+Texture	Optional	XQ46_01 	Range	XQ46_99 	Tics 8
+Texture	Optional	XQ47_01 	Range	XQ47_99 	Tics 8
+Texture	Optional	XQ48_01 	Range	XQ48_99 	Tics 8
+Texture	Optional	XQ49_01 	Range	XQ49_99 	Tics 8
+Texture	Optional	XQ50_01 	Range	XQ50_99 	Tics 8
+Texture	Optional	XQ51_01 	Range	XQ51_99 	Tics 8
+Texture	Optional	XQ52_01 	Range	XQ52_99 	Tics 8
+Texture	Optional	XQ53_01 	Range	XQ53_99 	Tics 8
+Texture	Optional	XQ54_01 	Range	XQ54_99 	Tics 8
+Texture	Optional	XQ55_01 	Range	XQ55_99 	Tics 8
+Texture	Optional	XQ56_01 	Range	XQ56_99 	Tics 8
+Texture	Optional	XQ57_01 	Range	XQ57_99 	Tics 8
+Texture	Optional	XQ58_01 	Range	XQ58_99 	Tics 8
+Texture	Optional	XQ59_01 	Range	XQ59_99 	Tics 8
+Texture	Optional	XQ60_01 	Range	XQ60_99 	Tics 8
+Texture	Optional	XQ61_01 	Range	XQ61_99 	Tics 8
+Texture	Optional	XQ62_01 	Range	XQ62_99 	Tics 8
+Texture	Optional	XQ63_01 	Range	XQ63_99 	Tics 8
+Texture	Optional	XQ64_01 	Range	XQ64_99 	Tics 8
+Texture	Optional	XQ65_01 	Range	XQ65_99 	Tics 8
+Texture	Optional	XQ66_01 	Range	XQ66_99 	Tics 8
+Texture	Optional	XQ67_01 	Range	XQ67_99 	Tics 8
+Texture	Optional	XQ68_01 	Range	XQ68_99 	Tics 8
+Texture	Optional	XQ69_01 	Range	XQ69_99 	Tics 8
+Texture	Optional	XQ70_01 	Range	XQ70_99 	Tics 8
+Texture	Optional	XQ71_01 	Range	XQ71_99 	Tics 8
+Texture	Optional	XQ72_01 	Range	XQ72_99 	Tics 8
+Texture	Optional	XQ73_01 	Range	XQ73_99 	Tics 8
+Texture	Optional	XQ74_01 	Range	XQ74_99 	Tics 8
+Texture	Optional	XQ75_01 	Range	XQ75_99 	Tics 8
+Texture	Optional	XQ76_01 	Range	XQ76_99 	Tics 8
+Texture	Optional	XQ77_01 	Range	XQ77_99 	Tics 8
+Texture	Optional	XQ78_01 	Range	XQ78_99 	Tics 8
+Texture	Optional	XQ79_01 	Range	XQ79_99 	Tics 8
+Texture	Optional	XQ80_01 	Range	XQ80_99 	Tics 8
+Texture	Optional	XQ81_01 	Range	XQ81_99 	Tics 8
+Texture	Optional	XQ82_01 	Range	XQ82_99 	Tics 8
+Texture	Optional	XQ83_01 	Range	XQ83_99 	Tics 8
+Texture	Optional	XQ84_01 	Range	XQ84_99 	Tics 8
+Texture	Optional	XQ85_01 	Range	XQ85_99 	Tics 8
+Texture	Optional	XQ86_01 	Range	XQ86_99 	Tics 8
+Texture	Optional	XQ87_01 	Range	XQ87_99 	Tics 8
+Texture	Optional	XQ88_01 	Range	XQ88_99 	Tics 8
+Texture	Optional	XQ89_01 	Range	XQ89_99 	Tics 8
+Texture	Optional	XQ90_01 	Range	XQ90_99 	Tics 8
+Texture	Optional	XQ91_01 	Range	XQ91_99 	Tics 8
+Texture	Optional	XQ92_01 	Range	XQ92_99 	Tics 8
+Texture	Optional	XQ93_01 	Range	XQ93_99 	Tics 8
+Texture	Optional	XQ94_01 	Range	XQ94_99 	Tics 8
+Texture	Optional	XQ95_01 	Range	XQ95_99 	Tics 8
+Texture	Optional	XQ96_01 	Range	XQ96_99 	Tics 8
+Texture	Optional	XQ97_01 	Range	XQ97_99 	Tics 8
+Texture	Optional	XQ98_01 	Range	XQ98_99 	Tics 8
+Texture	Optional	XQ99_01 	Range	XQ99_99 	Tics 8
+Texture	Optional	XR01_01 	Range	XR01_99 	Tics 8
+Texture	Optional	XR02_01 	Range	XR02_99 	Tics 8
+Texture	Optional	XR03_01 	Range	XR03_99 	Tics 8
+Texture	Optional	XR04_01 	Range	XR04_99 	Tics 8
+Texture	Optional	XR05_01 	Range	XR05_99 	Tics 8
+Texture	Optional	XR06_01 	Range	XR06_99 	Tics 8
+Texture	Optional	XR07_01 	Range	XR07_99 	Tics 8
+Texture	Optional	XR08_01 	Range	XR08_99 	Tics 8
+Texture	Optional	XR09_01 	Range	XR09_99 	Tics 8
+Texture	Optional	XR10_01 	Range	XR10_99 	Tics 8
+Texture	Optional	XR11_01 	Range	XR11_99 	Tics 8
+Texture	Optional	XR12_01 	Range	XR12_99 	Tics 8
+Texture	Optional	XR13_01 	Range	XR13_99 	Tics 8
+Texture	Optional	XR14_01 	Range	XR14_99 	Tics 8
+Texture	Optional	XR15_01 	Range	XR15_99 	Tics 8
+Texture	Optional	XR16_01 	Range	XR16_99 	Tics 8
+Texture	Optional	XR17_01 	Range	XR17_99 	Tics 8
+Texture	Optional	XR18_01 	Range	XR18_99 	Tics 8
+Texture	Optional	XR19_01 	Range	XR19_99 	Tics 8
+Texture	Optional	XR20_01 	Range	XR20_99 	Tics 8
+Texture	Optional	XR21_01 	Range	XR21_99 	Tics 8
+Texture	Optional	XR22_01 	Range	XR22_99 	Tics 8
+Texture	Optional	XR23_01 	Range	XR23_99 	Tics 8
+Texture	Optional	XR24_01 	Range	XR24_99 	Tics 8
+Texture	Optional	XR25_01 	Range	XR25_99 	Tics 8
+Texture	Optional	XR26_01 	Range	XR26_99 	Tics 8
+Texture	Optional	XR27_01 	Range	XR27_99 	Tics 8
+Texture	Optional	XR28_01 	Range	XR28_99 	Tics 8
+Texture	Optional	XR29_01 	Range	XR29_99 	Tics 8
+Texture	Optional	XR30_01 	Range	XR30_99 	Tics 8
+Texture	Optional	XR31_01 	Range	XR31_99 	Tics 8
+Texture	Optional	XR32_01 	Range	XR32_99 	Tics 8
+Texture	Optional	XR33_01 	Range	XR33_99 	Tics 8
+Texture	Optional	XR34_01 	Range	XR34_99 	Tics 8
+Texture	Optional	XR35_01 	Range	XR35_99 	Tics 8
+Texture	Optional	XR36_01 	Range	XR36_99 	Tics 8
+Texture	Optional	XR37_01 	Range	XR37_99 	Tics 8
+Texture	Optional	XR38_01 	Range	XR38_99 	Tics 8
+Texture	Optional	XR39_01 	Range	XR39_99 	Tics 8
+Texture	Optional	XR40_01 	Range	XR40_99 	Tics 8
+Texture	Optional	XR41_01 	Range	XR41_99 	Tics 8
+Texture	Optional	XR42_01 	Range	XR42_99 	Tics 8
+Texture	Optional	XR43_01 	Range	XR43_99 	Tics 8
+Texture	Optional	XR44_01 	Range	XR44_99 	Tics 8
+Texture	Optional	XR45_01 	Range	XR45_99 	Tics 8
+Texture	Optional	XR46_01 	Range	XR46_99 	Tics 8
+Texture	Optional	XR47_01 	Range	XR47_99 	Tics 8
+Texture	Optional	XR48_01 	Range	XR48_99 	Tics 8
+Texture	Optional	XR49_01 	Range	XR49_99 	Tics 8
+Texture	Optional	XR50_01 	Range	XR50_99 	Tics 8
+Texture	Optional	XR51_01 	Range	XR51_99 	Tics 8
+Texture	Optional	XR52_01 	Range	XR52_99 	Tics 8
+Texture	Optional	XR53_01 	Range	XR53_99 	Tics 8
+Texture	Optional	XR54_01 	Range	XR54_99 	Tics 8
+Texture	Optional	XR55_01 	Range	XR55_99 	Tics 8
+Texture	Optional	XR56_01 	Range	XR56_99 	Tics 8
+Texture	Optional	XR57_01 	Range	XR57_99 	Tics 8
+Texture	Optional	XR58_01 	Range	XR58_99 	Tics 8
+Texture	Optional	XR59_01 	Range	XR59_99 	Tics 8
+Texture	Optional	XR60_01 	Range	XR60_99 	Tics 8
+Texture	Optional	XR61_01 	Range	XR61_99 	Tics 8
+Texture	Optional	XR62_01 	Range	XR62_99 	Tics 8
+Texture	Optional	XR63_01 	Range	XR63_99 	Tics 8
+Texture	Optional	XR64_01 	Range	XR64_99 	Tics 8
+Texture	Optional	XR65_01 	Range	XR65_99 	Tics 8
+Texture	Optional	XR66_01 	Range	XR66_99 	Tics 8
+Texture	Optional	XR67_01 	Range	XR67_99 	Tics 8
+Texture	Optional	XR68_01 	Range	XR68_99 	Tics 8
+Texture	Optional	XR69_01 	Range	XR69_99 	Tics 8
+Texture	Optional	XR70_01 	Range	XR70_99 	Tics 8
+Texture	Optional	XR71_01 	Range	XR71_99 	Tics 8
+Texture	Optional	XR72_01 	Range	XR72_99 	Tics 8
+Texture	Optional	XR73_01 	Range	XR73_99 	Tics 8
+Texture	Optional	XR74_01 	Range	XR74_99 	Tics 8
+Texture	Optional	XR75_01 	Range	XR75_99 	Tics 8
+Texture	Optional	XR76_01 	Range	XR76_99 	Tics 8
+Texture	Optional	XR77_01 	Range	XR77_99 	Tics 8
+Texture	Optional	XR78_01 	Range	XR78_99 	Tics 8
+Texture	Optional	XR79_01 	Range	XR79_99 	Tics 8
+Texture	Optional	XR80_01 	Range	XR80_99 	Tics 8
+Texture	Optional	XR81_01 	Range	XR81_99 	Tics 8
+Texture	Optional	XR82_01 	Range	XR82_99 	Tics 8
+Texture	Optional	XR83_01 	Range	XR83_99 	Tics 8
+Texture	Optional	XR84_01 	Range	XR84_99 	Tics 8
+Texture	Optional	XR85_01 	Range	XR85_99 	Tics 8
+Texture	Optional	XR86_01 	Range	XR86_99 	Tics 8
+Texture	Optional	XR87_01 	Range	XR87_99 	Tics 8
+Texture	Optional	XR88_01 	Range	XR88_99 	Tics 8
+Texture	Optional	XR89_01 	Range	XR89_99 	Tics 8
+Texture	Optional	XR90_01 	Range	XR90_99 	Tics 8
+Texture	Optional	XR91_01 	Range	XR91_99 	Tics 8
+Texture	Optional	XR92_01 	Range	XR92_99 	Tics 8
+Texture	Optional	XR93_01 	Range	XR93_99 	Tics 8
+Texture	Optional	XR94_01 	Range	XR94_99 	Tics 8
+Texture	Optional	XR95_01 	Range	XR95_99 	Tics 8
+Texture	Optional	XR96_01 	Range	XR96_99 	Tics 8
+Texture	Optional	XR97_01 	Range	XR97_99 	Tics 8
+Texture	Optional	XR98_01 	Range	XR98_99 	Tics 8
+Texture	Optional	XR99_01 	Range	XR99_99 	Tics 8
+Texture	Optional	XS01_01 	Range	XS01_99 	Tics 8
+Texture	Optional	XS02_01 	Range	XS02_99 	Tics 8
+Texture	Optional	XS03_01 	Range	XS03_99 	Tics 8
+Texture	Optional	XS04_01 	Range	XS04_99 	Tics 8
+Texture	Optional	XS05_01 	Range	XS05_99 	Tics 8
+Texture	Optional	XS06_01 	Range	XS06_99 	Tics 8
+Texture	Optional	XS07_01 	Range	XS07_99 	Tics 8
+Texture	Optional	XS08_01 	Range	XS08_99 	Tics 8
+Texture	Optional	XS09_01 	Range	XS09_99 	Tics 8
+Texture	Optional	XS10_01 	Range	XS10_99 	Tics 8
+Texture	Optional	XS11_01 	Range	XS11_99 	Tics 8
+Texture	Optional	XS12_01 	Range	XS12_99 	Tics 8
+Texture	Optional	XS13_01 	Range	XS13_99 	Tics 8
+Texture	Optional	XS14_01 	Range	XS14_99 	Tics 8
+Texture	Optional	XS15_01 	Range	XS15_99 	Tics 8
+Texture	Optional	XS16_01 	Range	XS16_99 	Tics 8
+Texture	Optional	XS17_01 	Range	XS17_99 	Tics 8
+Texture	Optional	XS18_01 	Range	XS18_99 	Tics 8
+Texture	Optional	XS19_01 	Range	XS19_99 	Tics 8
+Texture	Optional	XS20_01 	Range	XS20_99 	Tics 8
+Texture	Optional	XS21_01 	Range	XS21_99 	Tics 8
+Texture	Optional	XS22_01 	Range	XS22_99 	Tics 8
+Texture	Optional	XS23_01 	Range	XS23_99 	Tics 8
+Texture	Optional	XS24_01 	Range	XS24_99 	Tics 8
+Texture	Optional	XS25_01 	Range	XS25_99 	Tics 8
+Texture	Optional	XS26_01 	Range	XS26_99 	Tics 8
+Texture	Optional	XS27_01 	Range	XS27_99 	Tics 8
+Texture	Optional	XS28_01 	Range	XS28_99 	Tics 8
+Texture	Optional	XS29_01 	Range	XS29_99 	Tics 8
+Texture	Optional	XS30_01 	Range	XS30_99 	Tics 8
+Texture	Optional	XS31_01 	Range	XS31_99 	Tics 8
+Texture	Optional	XS32_01 	Range	XS32_99 	Tics 8
+Texture	Optional	XS33_01 	Range	XS33_99 	Tics 8
+Texture	Optional	XS34_01 	Range	XS34_99 	Tics 8
+Texture	Optional	XS35_01 	Range	XS35_99 	Tics 8
+Texture	Optional	XS36_01 	Range	XS36_99 	Tics 8
+Texture	Optional	XS37_01 	Range	XS37_99 	Tics 8
+Texture	Optional	XS38_01 	Range	XS38_99 	Tics 8
+Texture	Optional	XS39_01 	Range	XS39_99 	Tics 8
+Texture	Optional	XS40_01 	Range	XS40_99 	Tics 8
+Texture	Optional	XS41_01 	Range	XS41_99 	Tics 8
+Texture	Optional	XS42_01 	Range	XS42_99 	Tics 8
+Texture	Optional	XS43_01 	Range	XS43_99 	Tics 8
+Texture	Optional	XS44_01 	Range	XS44_99 	Tics 8
+Texture	Optional	XS45_01 	Range	XS45_99 	Tics 8
+Texture	Optional	XS46_01 	Range	XS46_99 	Tics 8
+Texture	Optional	XS47_01 	Range	XS47_99 	Tics 8
+Texture	Optional	XS48_01 	Range	XS48_99 	Tics 8
+Texture	Optional	XS49_01 	Range	XS49_99 	Tics 8
+Texture	Optional	XS50_01 	Range	XS50_99 	Tics 8
+Texture	Optional	XS51_01 	Range	XS51_99 	Tics 8
+Texture	Optional	XS52_01 	Range	XS52_99 	Tics 8
+Texture	Optional	XS53_01 	Range	XS53_99 	Tics 8
+Texture	Optional	XS54_01 	Range	XS54_99 	Tics 8
+Texture	Optional	XS55_01 	Range	XS55_99 	Tics 8
+Texture	Optional	XS56_01 	Range	XS56_99 	Tics 8
+Texture	Optional	XS57_01 	Range	XS57_99 	Tics 8
+Texture	Optional	XS58_01 	Range	XS58_99 	Tics 8
+Texture	Optional	XS59_01 	Range	XS59_99 	Tics 8
+Texture	Optional	XS60_01 	Range	XS60_99 	Tics 8
+Texture	Optional	XS61_01 	Range	XS61_99 	Tics 8
+Texture	Optional	XS62_01 	Range	XS62_99 	Tics 8
+Texture	Optional	XS63_01 	Range	XS63_99 	Tics 8
+Texture	Optional	XS64_01 	Range	XS64_99 	Tics 8
+Texture	Optional	XS65_01 	Range	XS65_99 	Tics 8
+Texture	Optional	XS66_01 	Range	XS66_99 	Tics 8
+Texture	Optional	XS67_01 	Range	XS67_99 	Tics 8
+Texture	Optional	XS68_01 	Range	XS68_99 	Tics 8
+Texture	Optional	XS69_01 	Range	XS69_99 	Tics 8
+Texture	Optional	XS70_01 	Range	XS70_99 	Tics 8
+Texture	Optional	XS71_01 	Range	XS71_99 	Tics 8
+Texture	Optional	XS72_01 	Range	XS72_99 	Tics 8
+Texture	Optional	XS73_01 	Range	XS73_99 	Tics 8
+Texture	Optional	XS74_01 	Range	XS74_99 	Tics 8
+Texture	Optional	XS75_01 	Range	XS75_99 	Tics 8
+Texture	Optional	XS76_01 	Range	XS76_99 	Tics 8
+Texture	Optional	XS77_01 	Range	XS77_99 	Tics 8
+Texture	Optional	XS78_01 	Range	XS78_99 	Tics 8
+Texture	Optional	XS79_01 	Range	XS79_99 	Tics 8
+Texture	Optional	XS80_01 	Range	XS80_99 	Tics 8
+Texture	Optional	XS81_01 	Range	XS81_99 	Tics 8
+Texture	Optional	XS82_01 	Range	XS82_99 	Tics 8
+Texture	Optional	XS83_01 	Range	XS83_99 	Tics 8
+Texture	Optional	XS84_01 	Range	XS84_99 	Tics 8
+Texture	Optional	XS85_01 	Range	XS85_99 	Tics 8
+Texture	Optional	XS86_01 	Range	XS86_99 	Tics 8
+Texture	Optional	XS87_01 	Range	XS87_99 	Tics 8
+Texture	Optional	XS88_01 	Range	XS88_99 	Tics 8
+Texture	Optional	XS89_01 	Range	XS89_99 	Tics 8
+Texture	Optional	XS90_01 	Range	XS90_99 	Tics 8
+Texture	Optional	XS91_01 	Range	XS91_99 	Tics 8
+Texture	Optional	XS92_01 	Range	XS92_99 	Tics 8
+Texture	Optional	XS93_01 	Range	XS93_99 	Tics 8
+Texture	Optional	XS94_01 	Range	XS94_99 	Tics 8
+Texture	Optional	XS95_01 	Range	XS95_99 	Tics 8
+Texture	Optional	XS96_01 	Range	XS96_99 	Tics 8
+Texture	Optional	XS97_01 	Range	XS97_99 	Tics 8
+Texture	Optional	XS98_01 	Range	XS98_99 	Tics 8
+Texture	Optional	XS99_01 	Range	XS99_99 	Tics 8
+Texture	Optional	XT01_01 	Range	XT01_99 	Tics 8
+Texture	Optional	XT02_01 	Range	XT02_99 	Tics 8
+Texture	Optional	XT03_01 	Range	XT03_99 	Tics 8
+Texture	Optional	XT04_01 	Range	XT04_99 	Tics 8
+Texture	Optional	XT05_01 	Range	XT05_99 	Tics 8
+Texture	Optional	XT06_01 	Range	XT06_99 	Tics 8
+Texture	Optional	XT07_01 	Range	XT07_99 	Tics 8
+Texture	Optional	XT08_01 	Range	XT08_99 	Tics 8
+Texture	Optional	XT09_01 	Range	XT09_99 	Tics 8
+Texture	Optional	XT10_01 	Range	XT10_99 	Tics 8
+Texture	Optional	XT11_01 	Range	XT11_99 	Tics 8
+Texture	Optional	XT12_01 	Range	XT12_99 	Tics 8
+Texture	Optional	XT13_01 	Range	XT13_99 	Tics 8
+Texture	Optional	XT14_01 	Range	XT14_99 	Tics 8
+Texture	Optional	XT15_01 	Range	XT15_99 	Tics 8
+Texture	Optional	XT16_01 	Range	XT16_99 	Tics 8
+Texture	Optional	XT17_01 	Range	XT17_99 	Tics 8
+Texture	Optional	XT18_01 	Range	XT18_99 	Tics 8
+Texture	Optional	XT19_01 	Range	XT19_99 	Tics 8
+Texture	Optional	XT20_01 	Range	XT20_99 	Tics 8
+Texture	Optional	XT21_01 	Range	XT21_99 	Tics 8
+Texture	Optional	XT22_01 	Range	XT22_99 	Tics 8
+Texture	Optional	XT23_01 	Range	XT23_99 	Tics 8
+Texture	Optional	XT24_01 	Range	XT24_99 	Tics 8
+Texture	Optional	XT25_01 	Range	XT25_99 	Tics 8
+Texture	Optional	XT26_01 	Range	XT26_99 	Tics 8
+Texture	Optional	XT27_01 	Range	XT27_99 	Tics 8
+Texture	Optional	XT28_01 	Range	XT28_99 	Tics 8
+Texture	Optional	XT29_01 	Range	XT29_99 	Tics 8
+Texture	Optional	XT30_01 	Range	XT30_99 	Tics 8
+Texture	Optional	XT31_01 	Range	XT31_99 	Tics 8
+Texture	Optional	XT32_01 	Range	XT32_99 	Tics 8
+Texture	Optional	XT33_01 	Range	XT33_99 	Tics 8
+Texture	Optional	XT34_01 	Range	XT34_99 	Tics 8
+Texture	Optional	XT35_01 	Range	XT35_99 	Tics 8
+Texture	Optional	XT36_01 	Range	XT36_99 	Tics 8
+Texture	Optional	XT37_01 	Range	XT37_99 	Tics 8
+Texture	Optional	XT38_01 	Range	XT38_99 	Tics 8
+Texture	Optional	XT39_01 	Range	XT39_99 	Tics 8
+Texture	Optional	XT40_01 	Range	XT40_99 	Tics 8
+Texture	Optional	XT41_01 	Range	XT41_99 	Tics 8
+Texture	Optional	XT42_01 	Range	XT42_99 	Tics 8
+Texture	Optional	XT43_01 	Range	XT43_99 	Tics 8
+Texture	Optional	XT44_01 	Range	XT44_99 	Tics 8
+Texture	Optional	XT45_01 	Range	XT45_99 	Tics 8
+Texture	Optional	XT46_01 	Range	XT46_99 	Tics 8
+Texture	Optional	XT47_01 	Range	XT47_99 	Tics 8
+Texture	Optional	XT48_01 	Range	XT48_99 	Tics 8
+Texture	Optional	XT49_01 	Range	XT49_99 	Tics 8
+Texture	Optional	XT50_01 	Range	XT50_99 	Tics 8
+Texture	Optional	XT51_01 	Range	XT51_99 	Tics 8
+Texture	Optional	XT52_01 	Range	XT52_99 	Tics 8
+Texture	Optional	XT53_01 	Range	XT53_99 	Tics 8
+Texture	Optional	XT54_01 	Range	XT54_99 	Tics 8
+Texture	Optional	XT55_01 	Range	XT55_99 	Tics 8
+Texture	Optional	XT56_01 	Range	XT56_99 	Tics 8
+Texture	Optional	XT57_01 	Range	XT57_99 	Tics 8
+Texture	Optional	XT58_01 	Range	XT58_99 	Tics 8
+Texture	Optional	XT59_01 	Range	XT59_99 	Tics 8
+Texture	Optional	XT60_01 	Range	XT60_99 	Tics 8
+Texture	Optional	XT61_01 	Range	XT61_99 	Tics 8
+Texture	Optional	XT62_01 	Range	XT62_99 	Tics 8
+Texture	Optional	XT63_01 	Range	XT63_99 	Tics 8
+Texture	Optional	XT64_01 	Range	XT64_99 	Tics 8
+Texture	Optional	XT65_01 	Range	XT65_99 	Tics 8
+Texture	Optional	XT66_01 	Range	XT66_99 	Tics 8
+Texture	Optional	XT67_01 	Range	XT67_99 	Tics 8
+Texture	Optional	XT68_01 	Range	XT68_99 	Tics 8
+Texture	Optional	XT69_01 	Range	XT69_99 	Tics 8
+Texture	Optional	XT70_01 	Range	XT70_99 	Tics 8
+Texture	Optional	XT71_01 	Range	XT71_99 	Tics 8
+Texture	Optional	XT72_01 	Range	XT72_99 	Tics 8
+Texture	Optional	XT73_01 	Range	XT73_99 	Tics 8
+Texture	Optional	XT74_01 	Range	XT74_99 	Tics 8
+Texture	Optional	XT75_01 	Range	XT75_99 	Tics 8
+Texture	Optional	XT76_01 	Range	XT76_99 	Tics 8
+Texture	Optional	XT77_01 	Range	XT77_99 	Tics 8
+Texture	Optional	XT78_01 	Range	XT78_99 	Tics 8
+Texture	Optional	XT79_01 	Range	XT79_99 	Tics 8
+Texture	Optional	XT80_01 	Range	XT80_99 	Tics 8
+Texture	Optional	XT81_01 	Range	XT81_99 	Tics 8
+Texture	Optional	XT82_01 	Range	XT82_99 	Tics 8
+Texture	Optional	XT83_01 	Range	XT83_99 	Tics 8
+Texture	Optional	XT84_01 	Range	XT84_99 	Tics 8
+Texture	Optional	XT85_01 	Range	XT85_99 	Tics 8
+Texture	Optional	XT86_01 	Range	XT86_99 	Tics 8
+Texture	Optional	XT87_01 	Range	XT87_99 	Tics 8
+Texture	Optional	XT88_01 	Range	XT88_99 	Tics 8
+Texture	Optional	XT89_01 	Range	XT89_99 	Tics 8
+Texture	Optional	XT90_01 	Range	XT90_99 	Tics 8
+Texture	Optional	XT91_01 	Range	XT91_99 	Tics 8
+Texture	Optional	XT92_01 	Range	XT92_99 	Tics 8
+Texture	Optional	XT93_01 	Range	XT93_99 	Tics 8
+Texture	Optional	XT94_01 	Range	XT94_99 	Tics 8
+Texture	Optional	XT95_01 	Range	XT95_99 	Tics 8
+Texture	Optional	XT96_01 	Range	XT96_99 	Tics 8
+Texture	Optional	XT97_01 	Range	XT97_99 	Tics 8
+Texture	Optional	XT98_01 	Range	XT98_99 	Tics 8
+Texture	Optional	XT99_01 	Range	XT99_99 	Tics 8
+Texture	Optional	XU01_01 	Range	XU01_99 	Tics 8
+Texture	Optional	XU02_01 	Range	XU02_99 	Tics 8
+Texture	Optional	XU03_01 	Range	XU03_99 	Tics 8
+Texture	Optional	XU04_01 	Range	XU04_99 	Tics 8
+Texture	Optional	XU05_01 	Range	XU05_99 	Tics 8
+Texture	Optional	XU06_01 	Range	XU06_99 	Tics 8
+Texture	Optional	XU07_01 	Range	XU07_99 	Tics 8
+Texture	Optional	XU08_01 	Range	XU08_99 	Tics 8
+Texture	Optional	XU09_01 	Range	XU09_99 	Tics 8
+Texture	Optional	XU10_01 	Range	XU10_99 	Tics 8
+Texture	Optional	XU11_01 	Range	XU11_99 	Tics 8
+Texture	Optional	XU12_01 	Range	XU12_99 	Tics 8
+Texture	Optional	XU13_01 	Range	XU13_99 	Tics 8
+Texture	Optional	XU14_01 	Range	XU14_99 	Tics 8
+Texture	Optional	XU15_01 	Range	XU15_99 	Tics 8
+Texture	Optional	XU16_01 	Range	XU16_99 	Tics 8
+Texture	Optional	XU17_01 	Range	XU17_99 	Tics 8
+Texture	Optional	XU18_01 	Range	XU18_99 	Tics 8
+Texture	Optional	XU19_01 	Range	XU19_99 	Tics 8
+Texture	Optional	XU20_01 	Range	XU20_99 	Tics 8
+Texture	Optional	XU21_01 	Range	XU21_99 	Tics 8
+Texture	Optional	XU22_01 	Range	XU22_99 	Tics 8
+Texture	Optional	XU23_01 	Range	XU23_99 	Tics 8
+Texture	Optional	XU24_01 	Range	XU24_99 	Tics 8
+Texture	Optional	XU25_01 	Range	XU25_99 	Tics 8
+Texture	Optional	XU26_01 	Range	XU26_99 	Tics 8
+Texture	Optional	XU27_01 	Range	XU27_99 	Tics 8
+Texture	Optional	XU28_01 	Range	XU28_99 	Tics 8
+Texture	Optional	XU29_01 	Range	XU29_99 	Tics 8
+Texture	Optional	XU30_01 	Range	XU30_99 	Tics 8
+Texture	Optional	XU31_01 	Range	XU31_99 	Tics 8
+Texture	Optional	XU32_01 	Range	XU32_99 	Tics 8
+Texture	Optional	XU33_01 	Range	XU33_99 	Tics 8
+Texture	Optional	XU34_01 	Range	XU34_99 	Tics 8
+Texture	Optional	XU35_01 	Range	XU35_99 	Tics 8
+Texture	Optional	XU36_01 	Range	XU36_99 	Tics 8
+Texture	Optional	XU37_01 	Range	XU37_99 	Tics 8
+Texture	Optional	XU38_01 	Range	XU38_99 	Tics 8
+Texture	Optional	XU39_01 	Range	XU39_99 	Tics 8
+Texture	Optional	XU40_01 	Range	XU40_99 	Tics 8
+Texture	Optional	XU41_01 	Range	XU41_99 	Tics 8
+Texture	Optional	XU42_01 	Range	XU42_99 	Tics 8
+Texture	Optional	XU43_01 	Range	XU43_99 	Tics 8
+Texture	Optional	XU44_01 	Range	XU44_99 	Tics 8
+Texture	Optional	XU45_01 	Range	XU45_99 	Tics 8
+Texture	Optional	XU46_01 	Range	XU46_99 	Tics 8
+Texture	Optional	XU47_01 	Range	XU47_99 	Tics 8
+Texture	Optional	XU48_01 	Range	XU48_99 	Tics 8
+Texture	Optional	XU49_01 	Range	XU49_99 	Tics 8
+Texture	Optional	XU50_01 	Range	XU50_99 	Tics 8
+Texture	Optional	XU51_01 	Range	XU51_99 	Tics 8
+Texture	Optional	XU52_01 	Range	XU52_99 	Tics 8
+Texture	Optional	XU53_01 	Range	XU53_99 	Tics 8
+Texture	Optional	XU54_01 	Range	XU54_99 	Tics 8
+Texture	Optional	XU55_01 	Range	XU55_99 	Tics 8
+Texture	Optional	XU56_01 	Range	XU56_99 	Tics 8
+Texture	Optional	XU57_01 	Range	XU57_99 	Tics 8
+Texture	Optional	XU58_01 	Range	XU58_99 	Tics 8
+Texture	Optional	XU59_01 	Range	XU59_99 	Tics 8
+Texture	Optional	XU60_01 	Range	XU60_99 	Tics 8
+Texture	Optional	XU61_01 	Range	XU61_99 	Tics 8
+Texture	Optional	XU62_01 	Range	XU62_99 	Tics 8
+Texture	Optional	XU63_01 	Range	XU63_99 	Tics 8
+Texture	Optional	XU64_01 	Range	XU64_99 	Tics 8
+Texture	Optional	XU65_01 	Range	XU65_99 	Tics 8
+Texture	Optional	XU66_01 	Range	XU66_99 	Tics 8
+Texture	Optional	XU67_01 	Range	XU67_99 	Tics 8
+Texture	Optional	XU68_01 	Range	XU68_99 	Tics 8
+Texture	Optional	XU69_01 	Range	XU69_99 	Tics 8
+Texture	Optional	XU70_01 	Range	XU70_99 	Tics 8
+Texture	Optional	XU71_01 	Range	XU71_99 	Tics 8
+Texture	Optional	XU72_01 	Range	XU72_99 	Tics 8
+Texture	Optional	XU73_01 	Range	XU73_99 	Tics 8
+Texture	Optional	XU74_01 	Range	XU74_99 	Tics 8
+Texture	Optional	XU75_01 	Range	XU75_99 	Tics 8
+Texture	Optional	XU76_01 	Range	XU76_99 	Tics 8
+Texture	Optional	XU77_01 	Range	XU77_99 	Tics 8
+Texture	Optional	XU78_01 	Range	XU78_99 	Tics 8
+Texture	Optional	XU79_01 	Range	XU79_99 	Tics 8
+Texture	Optional	XU80_01 	Range	XU80_99 	Tics 8
+Texture	Optional	XU81_01 	Range	XU81_99 	Tics 8
+Texture	Optional	XU82_01 	Range	XU82_99 	Tics 8
+Texture	Optional	XU83_01 	Range	XU83_99 	Tics 8
+Texture	Optional	XU84_01 	Range	XU84_99 	Tics 8
+Texture	Optional	XU85_01 	Range	XU85_99 	Tics 8
+Texture	Optional	XU86_01 	Range	XU86_99 	Tics 8
+Texture	Optional	XU87_01 	Range	XU87_99 	Tics 8
+Texture	Optional	XU88_01 	Range	XU88_99 	Tics 8
+Texture	Optional	XU89_01 	Range	XU89_99 	Tics 8
+Texture	Optional	XU90_01 	Range	XU90_99 	Tics 8
+Texture	Optional	XU91_01 	Range	XU91_99 	Tics 8
+Texture	Optional	XU92_01 	Range	XU92_99 	Tics 8
+Texture	Optional	XU93_01 	Range	XU93_99 	Tics 8
+Texture	Optional	XU94_01 	Range	XU94_99 	Tics 8
+Texture	Optional	XU95_01 	Range	XU95_99 	Tics 8
+Texture	Optional	XU96_01 	Range	XU96_99 	Tics 8
+Texture	Optional	XU97_01 	Range	XU97_99 	Tics 8
+Texture	Optional	XU98_01 	Range	XU98_99 	Tics 8
+Texture	Optional	XU99_01 	Range	XU99_99 	Tics 8
+Texture	Optional	XV01_01 	Range	XV01_99 	Tics 8
+Texture	Optional	XV02_01 	Range	XV02_99 	Tics 8
+Texture	Optional	XV03_01 	Range	XV03_99 	Tics 8
+Texture	Optional	XV04_01 	Range	XV04_99 	Tics 8
+Texture	Optional	XV05_01 	Range	XV05_99 	Tics 8
+Texture	Optional	XV06_01 	Range	XV06_99 	Tics 8
+Texture	Optional	XV07_01 	Range	XV07_99 	Tics 8
+Texture	Optional	XV08_01 	Range	XV08_99 	Tics 8
+Texture	Optional	XV09_01 	Range	XV09_99 	Tics 8
+Texture	Optional	XV10_01 	Range	XV10_99 	Tics 8
+Texture	Optional	XV11_01 	Range	XV11_99 	Tics 8
+Texture	Optional	XV12_01 	Range	XV12_99 	Tics 8
+Texture	Optional	XV13_01 	Range	XV13_99 	Tics 8
+Texture	Optional	XV14_01 	Range	XV14_99 	Tics 8
+Texture	Optional	XV15_01 	Range	XV15_99 	Tics 8
+Texture	Optional	XV16_01 	Range	XV16_99 	Tics 8
+Texture	Optional	XV17_01 	Range	XV17_99 	Tics 8
+Texture	Optional	XV18_01 	Range	XV18_99 	Tics 8
+Texture	Optional	XV19_01 	Range	XV19_99 	Tics 8
+Texture	Optional	XV20_01 	Range	XV20_99 	Tics 8
+Texture	Optional	XV21_01 	Range	XV21_99 	Tics 8
+Texture	Optional	XV22_01 	Range	XV22_99 	Tics 8
+Texture	Optional	XV23_01 	Range	XV23_99 	Tics 8
+Texture	Optional	XV24_01 	Range	XV24_99 	Tics 8
+Texture	Optional	XV25_01 	Range	XV25_99 	Tics 8
+Texture	Optional	XV26_01 	Range	XV26_99 	Tics 8
+Texture	Optional	XV27_01 	Range	XV27_99 	Tics 8
+Texture	Optional	XV28_01 	Range	XV28_99 	Tics 8
+Texture	Optional	XV29_01 	Range	XV29_99 	Tics 8
+Texture	Optional	XV30_01 	Range	XV30_99 	Tics 8
+Texture	Optional	XV31_01 	Range	XV31_99 	Tics 8
+Texture	Optional	XV32_01 	Range	XV32_99 	Tics 8
+Texture	Optional	XV33_01 	Range	XV33_99 	Tics 8
+Texture	Optional	XV34_01 	Range	XV34_99 	Tics 8
+Texture	Optional	XV35_01 	Range	XV35_99 	Tics 8
+Texture	Optional	XV36_01 	Range	XV36_99 	Tics 8
+Texture	Optional	XV37_01 	Range	XV37_99 	Tics 8
+Texture	Optional	XV38_01 	Range	XV38_99 	Tics 8
+Texture	Optional	XV39_01 	Range	XV39_99 	Tics 8
+Texture	Optional	XV40_01 	Range	XV40_99 	Tics 8
+Texture	Optional	XV41_01 	Range	XV41_99 	Tics 8
+Texture	Optional	XV42_01 	Range	XV42_99 	Tics 8
+Texture	Optional	XV43_01 	Range	XV43_99 	Tics 8
+Texture	Optional	XV44_01 	Range	XV44_99 	Tics 8
+Texture	Optional	XV45_01 	Range	XV45_99 	Tics 8
+Texture	Optional	XV46_01 	Range	XV46_99 	Tics 8
+Texture	Optional	XV47_01 	Range	XV47_99 	Tics 8
+Texture	Optional	XV48_01 	Range	XV48_99 	Tics 8
+Texture	Optional	XV49_01 	Range	XV49_99 	Tics 8
+Texture	Optional	XV50_01 	Range	XV50_99 	Tics 8
+Texture	Optional	XV51_01 	Range	XV51_99 	Tics 8
+Texture	Optional	XV52_01 	Range	XV52_99 	Tics 8
+Texture	Optional	XV53_01 	Range	XV53_99 	Tics 8
+Texture	Optional	XV54_01 	Range	XV54_99 	Tics 8
+Texture	Optional	XV55_01 	Range	XV55_99 	Tics 8
+Texture	Optional	XV56_01 	Range	XV56_99 	Tics 8
+Texture	Optional	XV57_01 	Range	XV57_99 	Tics 8
+Texture	Optional	XV58_01 	Range	XV58_99 	Tics 8
+Texture	Optional	XV59_01 	Range	XV59_99 	Tics 8
+Texture	Optional	XV60_01 	Range	XV60_99 	Tics 8
+Texture	Optional	XV61_01 	Range	XV61_99 	Tics 8
+Texture	Optional	XV62_01 	Range	XV62_99 	Tics 8
+Texture	Optional	XV63_01 	Range	XV63_99 	Tics 8
+Texture	Optional	XV64_01 	Range	XV64_99 	Tics 8
+Texture	Optional	XV65_01 	Range	XV65_99 	Tics 8
+Texture	Optional	XV66_01 	Range	XV66_99 	Tics 8
+Texture	Optional	XV67_01 	Range	XV67_99 	Tics 8
+Texture	Optional	XV68_01 	Range	XV68_99 	Tics 8
+Texture	Optional	XV69_01 	Range	XV69_99 	Tics 8
+Texture	Optional	XV70_01 	Range	XV70_99 	Tics 8
+Texture	Optional	XV71_01 	Range	XV71_99 	Tics 8
+Texture	Optional	XV72_01 	Range	XV72_99 	Tics 8
+Texture	Optional	XV73_01 	Range	XV73_99 	Tics 8
+Texture	Optional	XV74_01 	Range	XV74_99 	Tics 8
+Texture	Optional	XV75_01 	Range	XV75_99 	Tics 8
+Texture	Optional	XV76_01 	Range	XV76_99 	Tics 8
+Texture	Optional	XV77_01 	Range	XV77_99 	Tics 8
+Texture	Optional	XV78_01 	Range	XV78_99 	Tics 8
+Texture	Optional	XV79_01 	Range	XV79_99 	Tics 8
+Texture	Optional	XV80_01 	Range	XV80_99 	Tics 8
+Texture	Optional	XV81_01 	Range	XV81_99 	Tics 8
+Texture	Optional	XV82_01 	Range	XV82_99 	Tics 8
+Texture	Optional	XV83_01 	Range	XV83_99 	Tics 8
+Texture	Optional	XV84_01 	Range	XV84_99 	Tics 8
+Texture	Optional	XV85_01 	Range	XV85_99 	Tics 8
+Texture	Optional	XV86_01 	Range	XV86_99 	Tics 8
+Texture	Optional	XV87_01 	Range	XV87_99 	Tics 8
+Texture	Optional	XV88_01 	Range	XV88_99 	Tics 8
+Texture	Optional	XV89_01 	Range	XV89_99 	Tics 8
+Texture	Optional	XV90_01 	Range	XV90_99 	Tics 8
+Texture	Optional	XV91_01 	Range	XV91_99 	Tics 8
+Texture	Optional	XV92_01 	Range	XV92_99 	Tics 8
+Texture	Optional	XV93_01 	Range	XV93_99 	Tics 8
+Texture	Optional	XV94_01 	Range	XV94_99 	Tics 8
+Texture	Optional	XV95_01 	Range	XV95_99 	Tics 8
+Texture	Optional	XV96_01 	Range	XV96_99 	Tics 8
+Texture	Optional	XV97_01 	Range	XV97_99 	Tics 8
+Texture	Optional	XV98_01 	Range	XV98_99 	Tics 8
+Texture	Optional	XV99_01 	Range	XV99_99 	Tics 8
+Texture	Optional	XW01_01 	Range	XW01_99 	Tics 8
+Texture	Optional	XW02_01 	Range	XW02_99 	Tics 8
+Texture	Optional	XW03_01 	Range	XW03_99 	Tics 8
+Texture	Optional	XW04_01 	Range	XW04_99 	Tics 8
+Texture	Optional	XW05_01 	Range	XW05_99 	Tics 8
+Texture	Optional	XW06_01 	Range	XW06_99 	Tics 8
+Texture	Optional	XW07_01 	Range	XW07_99 	Tics 8
+Texture	Optional	XW08_01 	Range	XW08_99 	Tics 8
+Texture	Optional	XW09_01 	Range	XW09_99 	Tics 8
+Texture	Optional	XW10_01 	Range	XW10_99 	Tics 8
+Texture	Optional	XW11_01 	Range	XW11_99 	Tics 8
+Texture	Optional	XW12_01 	Range	XW12_99 	Tics 8
+Texture	Optional	XW13_01 	Range	XW13_99 	Tics 8
+Texture	Optional	XW14_01 	Range	XW14_99 	Tics 8
+Texture	Optional	XW15_01 	Range	XW15_99 	Tics 8
+Texture	Optional	XW16_01 	Range	XW16_99 	Tics 8
+Texture	Optional	XW17_01 	Range	XW17_99 	Tics 8
+Texture	Optional	XW18_01 	Range	XW18_99 	Tics 8
+Texture	Optional	XW19_01 	Range	XW19_99 	Tics 8
+Texture	Optional	XW20_01 	Range	XW20_99 	Tics 8
+Texture	Optional	XW21_01 	Range	XW21_99 	Tics 8
+Texture	Optional	XW22_01 	Range	XW22_99 	Tics 8
+Texture	Optional	XW23_01 	Range	XW23_99 	Tics 8
+Texture	Optional	XW24_01 	Range	XW24_99 	Tics 8
+Texture	Optional	XW25_01 	Range	XW25_99 	Tics 8
+Texture	Optional	XW26_01 	Range	XW26_99 	Tics 8
+Texture	Optional	XW27_01 	Range	XW27_99 	Tics 8
+Texture	Optional	XW28_01 	Range	XW28_99 	Tics 8
+Texture	Optional	XW29_01 	Range	XW29_99 	Tics 8
+Texture	Optional	XW30_01 	Range	XW30_99 	Tics 8
+Texture	Optional	XW31_01 	Range	XW31_99 	Tics 8
+Texture	Optional	XW32_01 	Range	XW32_99 	Tics 8
+Texture	Optional	XW33_01 	Range	XW33_99 	Tics 8
+Texture	Optional	XW34_01 	Range	XW34_99 	Tics 8
+Texture	Optional	XW35_01 	Range	XW35_99 	Tics 8
+Texture	Optional	XW36_01 	Range	XW36_99 	Tics 8
+Texture	Optional	XW37_01 	Range	XW37_99 	Tics 8
+Texture	Optional	XW38_01 	Range	XW38_99 	Tics 8
+Texture	Optional	XW39_01 	Range	XW39_99 	Tics 8
+Texture	Optional	XW40_01 	Range	XW40_99 	Tics 8
+Texture	Optional	XW41_01 	Range	XW41_99 	Tics 8
+Texture	Optional	XW42_01 	Range	XW42_99 	Tics 8
+Texture	Optional	XW43_01 	Range	XW43_99 	Tics 8
+Texture	Optional	XW44_01 	Range	XW44_99 	Tics 8
+Texture	Optional	XW45_01 	Range	XW45_99 	Tics 8
+Texture	Optional	XW46_01 	Range	XW46_99 	Tics 8
+Texture	Optional	XW47_01 	Range	XW47_99 	Tics 8
+Texture	Optional	XW48_01 	Range	XW48_99 	Tics 8
+Texture	Optional	XW49_01 	Range	XW49_99 	Tics 8
+Texture	Optional	XW50_01 	Range	XW50_99 	Tics 8
+Texture	Optional	XW51_01 	Range	XW51_99 	Tics 8
+Texture	Optional	XW52_01 	Range	XW52_99 	Tics 8
+Texture	Optional	XW53_01 	Range	XW53_99 	Tics 8
+Texture	Optional	XW54_01 	Range	XW54_99 	Tics 8
+Texture	Optional	XW55_01 	Range	XW55_99 	Tics 8
+Texture	Optional	XW56_01 	Range	XW56_99 	Tics 8
+Texture	Optional	XW57_01 	Range	XW57_99 	Tics 8
+Texture	Optional	XW58_01 	Range	XW58_99 	Tics 8
+Texture	Optional	XW59_01 	Range	XW59_99 	Tics 8
+Texture	Optional	XW60_01 	Range	XW60_99 	Tics 8
+Texture	Optional	XW61_01 	Range	XW61_99 	Tics 8
+Texture	Optional	XW62_01 	Range	XW62_99 	Tics 8
+Texture	Optional	XW63_01 	Range	XW63_99 	Tics 8
+Texture	Optional	XW64_01 	Range	XW64_99 	Tics 8
+Texture	Optional	XW65_01 	Range	XW65_99 	Tics 8
+Texture	Optional	XW66_01 	Range	XW66_99 	Tics 8
+Texture	Optional	XW67_01 	Range	XW67_99 	Tics 8
+Texture	Optional	XW68_01 	Range	XW68_99 	Tics 8
+Texture	Optional	XW69_01 	Range	XW69_99 	Tics 8
+Texture	Optional	XW70_01 	Range	XW70_99 	Tics 8
+Texture	Optional	XW71_01 	Range	XW71_99 	Tics 8
+Texture	Optional	XW72_01 	Range	XW72_99 	Tics 8
+Texture	Optional	XW73_01 	Range	XW73_99 	Tics 8
+Texture	Optional	XW74_01 	Range	XW74_99 	Tics 8
+Texture	Optional	XW75_01 	Range	XW75_99 	Tics 8
+Texture	Optional	XW76_01 	Range	XW76_99 	Tics 8
+Texture	Optional	XW77_01 	Range	XW77_99 	Tics 8
+Texture	Optional	XW78_01 	Range	XW78_99 	Tics 8
+Texture	Optional	XW79_01 	Range	XW79_99 	Tics 8
+Texture	Optional	XW80_01 	Range	XW80_99 	Tics 8
+Texture	Optional	XW81_01 	Range	XW81_99 	Tics 8
+Texture	Optional	XW82_01 	Range	XW82_99 	Tics 8
+Texture	Optional	XW83_01 	Range	XW83_99 	Tics 8
+Texture	Optional	XW84_01 	Range	XW84_99 	Tics 8
+Texture	Optional	XW85_01 	Range	XW85_99 	Tics 8
+Texture	Optional	XW86_01 	Range	XW86_99 	Tics 8
+Texture	Optional	XW87_01 	Range	XW87_99 	Tics 8
+Texture	Optional	XW88_01 	Range	XW88_99 	Tics 8
+Texture	Optional	XW89_01 	Range	XW89_99 	Tics 8
+Texture	Optional	XW90_01 	Range	XW90_99 	Tics 8
+Texture	Optional	XW91_01 	Range	XW91_99 	Tics 8
+Texture	Optional	XW92_01 	Range	XW92_99 	Tics 8
+Texture	Optional	XW93_01 	Range	XW93_99 	Tics 8
+Texture	Optional	XW94_01 	Range	XW94_99 	Tics 8
+Texture	Optional	XW95_01 	Range	XW95_99 	Tics 8
+Texture	Optional	XW96_01 	Range	XW96_99 	Tics 8
+Texture	Optional	XW97_01 	Range	XW97_99 	Tics 8
+Texture	Optional	XW98_01 	Range	XW98_99 	Tics 8
+Texture	Optional	XW99_01 	Range	XW99_99 	Tics 8
+Texture	Optional	XX01_01 	Range	XX01_99 	Tics 8
+Texture	Optional	XX02_01 	Range	XX02_99 	Tics 8
+Texture	Optional	XX03_01 	Range	XX03_99 	Tics 8
+Texture	Optional	XX04_01 	Range	XX04_99 	Tics 8
+Texture	Optional	XX05_01 	Range	XX05_99 	Tics 8
+Texture	Optional	XX06_01 	Range	XX06_99 	Tics 8
+Texture	Optional	XX07_01 	Range	XX07_99 	Tics 8
+Texture	Optional	XX08_01 	Range	XX08_99 	Tics 8
+Texture	Optional	XX09_01 	Range	XX09_99 	Tics 8
+Texture	Optional	XX10_01 	Range	XX10_99 	Tics 8
+Texture	Optional	XX11_01 	Range	XX11_99 	Tics 8
+Texture	Optional	XX12_01 	Range	XX12_99 	Tics 8
+Texture	Optional	XX13_01 	Range	XX13_99 	Tics 8
+Texture	Optional	XX14_01 	Range	XX14_99 	Tics 8
+Texture	Optional	XX15_01 	Range	XX15_99 	Tics 8
+Texture	Optional	XX16_01 	Range	XX16_99 	Tics 8
+Texture	Optional	XX17_01 	Range	XX17_99 	Tics 8
+Texture	Optional	XX18_01 	Range	XX18_99 	Tics 8
+Texture	Optional	XX19_01 	Range	XX19_99 	Tics 8
+Texture	Optional	XX20_01 	Range	XX20_99 	Tics 8
+Texture	Optional	XX21_01 	Range	XX21_99 	Tics 8
+Texture	Optional	XX22_01 	Range	XX22_99 	Tics 8
+Texture	Optional	XX23_01 	Range	XX23_99 	Tics 8
+Texture	Optional	XX24_01 	Range	XX24_99 	Tics 8
+Texture	Optional	XX25_01 	Range	XX25_99 	Tics 8
+Texture	Optional	XX26_01 	Range	XX26_99 	Tics 8
+Texture	Optional	XX27_01 	Range	XX27_99 	Tics 8
+Texture	Optional	XX28_01 	Range	XX28_99 	Tics 8
+Texture	Optional	XX29_01 	Range	XX29_99 	Tics 8
+Texture	Optional	XX30_01 	Range	XX30_99 	Tics 8
+Texture	Optional	XX31_01 	Range	XX31_99 	Tics 8
+Texture	Optional	XX32_01 	Range	XX32_99 	Tics 8
+Texture	Optional	XX33_01 	Range	XX33_99 	Tics 8
+Texture	Optional	XX34_01 	Range	XX34_99 	Tics 8
+Texture	Optional	XX35_01 	Range	XX35_99 	Tics 8
+Texture	Optional	XX36_01 	Range	XX36_99 	Tics 8
+Texture	Optional	XX37_01 	Range	XX37_99 	Tics 8
+Texture	Optional	XX38_01 	Range	XX38_99 	Tics 8
+Texture	Optional	XX39_01 	Range	XX39_99 	Tics 8
+Texture	Optional	XX40_01 	Range	XX40_99 	Tics 8
+Texture	Optional	XX41_01 	Range	XX41_99 	Tics 8
+Texture	Optional	XX42_01 	Range	XX42_99 	Tics 8
+Texture	Optional	XX43_01 	Range	XX43_99 	Tics 8
+Texture	Optional	XX44_01 	Range	XX44_99 	Tics 8
+Texture	Optional	XX45_01 	Range	XX45_99 	Tics 8
+Texture	Optional	XX46_01 	Range	XX46_99 	Tics 8
+Texture	Optional	XX47_01 	Range	XX47_99 	Tics 8
+Texture	Optional	XX48_01 	Range	XX48_99 	Tics 8
+Texture	Optional	XX49_01 	Range	XX49_99 	Tics 8
+Texture	Optional	XX50_01 	Range	XX50_99 	Tics 8
+Texture	Optional	XX51_01 	Range	XX51_99 	Tics 8
+Texture	Optional	XX52_01 	Range	XX52_99 	Tics 8
+Texture	Optional	XX53_01 	Range	XX53_99 	Tics 8
+Texture	Optional	XX54_01 	Range	XX54_99 	Tics 8
+Texture	Optional	XX55_01 	Range	XX55_99 	Tics 8
+Texture	Optional	XX56_01 	Range	XX56_99 	Tics 8
+Texture	Optional	XX57_01 	Range	XX57_99 	Tics 8
+Texture	Optional	XX58_01 	Range	XX58_99 	Tics 8
+Texture	Optional	XX59_01 	Range	XX59_99 	Tics 8
+Texture	Optional	XX60_01 	Range	XX60_99 	Tics 8
+Texture	Optional	XX61_01 	Range	XX61_99 	Tics 8
+Texture	Optional	XX62_01 	Range	XX62_99 	Tics 8
+Texture	Optional	XX63_01 	Range	XX63_99 	Tics 8
+Texture	Optional	XX64_01 	Range	XX64_99 	Tics 8
+Texture	Optional	XX65_01 	Range	XX65_99 	Tics 8
+Texture	Optional	XX66_01 	Range	XX66_99 	Tics 8
+Texture	Optional	XX67_01 	Range	XX67_99 	Tics 8
+Texture	Optional	XX68_01 	Range	XX68_99 	Tics 8
+Texture	Optional	XX69_01 	Range	XX69_99 	Tics 8
+Texture	Optional	XX70_01 	Range	XX70_99 	Tics 8
+Texture	Optional	XX71_01 	Range	XX71_99 	Tics 8
+Texture	Optional	XX72_01 	Range	XX72_99 	Tics 8
+Texture	Optional	XX73_01 	Range	XX73_99 	Tics 8
+Texture	Optional	XX74_01 	Range	XX74_99 	Tics 8
+Texture	Optional	XX75_01 	Range	XX75_99 	Tics 8
+Texture	Optional	XX76_01 	Range	XX76_99 	Tics 8
+Texture	Optional	XX77_01 	Range	XX77_99 	Tics 8
+Texture	Optional	XX78_01 	Range	XX78_99 	Tics 8
+Texture	Optional	XX79_01 	Range	XX79_99 	Tics 8
+Texture	Optional	XX80_01 	Range	XX80_99 	Tics 8
+Texture	Optional	XX81_01 	Range	XX81_99 	Tics 8
+Texture	Optional	XX82_01 	Range	XX82_99 	Tics 8
+Texture	Optional	XX83_01 	Range	XX83_99 	Tics 8
+Texture	Optional	XX84_01 	Range	XX84_99 	Tics 8
+Texture	Optional	XX85_01 	Range	XX85_99 	Tics 8
+Texture	Optional	XX86_01 	Range	XX86_99 	Tics 8
+Texture	Optional	XX87_01 	Range	XX87_99 	Tics 8
+Texture	Optional	XX88_01 	Range	XX88_99 	Tics 8
+Texture	Optional	XX89_01 	Range	XX89_99 	Tics 8
+Texture	Optional	XX90_01 	Range	XX90_99 	Tics 8
+Texture	Optional	XX91_01 	Range	XX91_99 	Tics 8
+Texture	Optional	XX92_01 	Range	XX92_99 	Tics 8
+Texture	Optional	XX93_01 	Range	XX93_99 	Tics 8
+Texture	Optional	XX94_01 	Range	XX94_99 	Tics 8
+Texture	Optional	XX95_01 	Range	XX95_99 	Tics 8
+Texture	Optional	XX96_01 	Range	XX96_99 	Tics 8
+Texture	Optional	XX97_01 	Range	XX97_99 	Tics 8
+Texture	Optional	XX98_01 	Range	XX98_99 	Tics 8
+Texture	Optional	XX99_01 	Range	XX99_99 	Tics 8
+Texture	Optional	XY01_01 	Range	XY01_99 	Tics 8
+Texture	Optional	XY02_01 	Range	XY02_99 	Tics 8
+Texture	Optional	XY03_01 	Range	XY03_99 	Tics 8
+Texture	Optional	XY04_01 	Range	XY04_99 	Tics 8
+Texture	Optional	XY05_01 	Range	XY05_99 	Tics 8
+Texture	Optional	XY06_01 	Range	XY06_99 	Tics 8
+Texture	Optional	XY07_01 	Range	XY07_99 	Tics 8
+Texture	Optional	XY08_01 	Range	XY08_99 	Tics 8
+Texture	Optional	XY09_01 	Range	XY09_99 	Tics 8
+Texture	Optional	XY10_01 	Range	XY10_99 	Tics 8
+Texture	Optional	XY11_01 	Range	XY11_99 	Tics 8
+Texture	Optional	XY12_01 	Range	XY12_99 	Tics 8
+Texture	Optional	XY13_01 	Range	XY13_99 	Tics 8
+Texture	Optional	XY14_01 	Range	XY14_99 	Tics 8
+Texture	Optional	XY15_01 	Range	XY15_99 	Tics 8
+Texture	Optional	XY16_01 	Range	XY16_99 	Tics 8
+Texture	Optional	XY17_01 	Range	XY17_99 	Tics 8
+Texture	Optional	XY18_01 	Range	XY18_99 	Tics 8
+Texture	Optional	XY19_01 	Range	XY19_99 	Tics 8
+Texture	Optional	XY20_01 	Range	XY20_99 	Tics 8
+Texture	Optional	XY21_01 	Range	XY21_99 	Tics 8
+Texture	Optional	XY22_01 	Range	XY22_99 	Tics 8
+Texture	Optional	XY23_01 	Range	XY23_99 	Tics 8
+Texture	Optional	XY24_01 	Range	XY24_99 	Tics 8
+Texture	Optional	XY25_01 	Range	XY25_99 	Tics 8
+Texture	Optional	XY26_01 	Range	XY26_99 	Tics 8
+Texture	Optional	XY27_01 	Range	XY27_99 	Tics 8
+Texture	Optional	XY28_01 	Range	XY28_99 	Tics 8
+Texture	Optional	XY29_01 	Range	XY29_99 	Tics 8
+Texture	Optional	XY30_01 	Range	XY30_99 	Tics 8
+Texture	Optional	XY31_01 	Range	XY31_99 	Tics 8
+Texture	Optional	XY32_01 	Range	XY32_99 	Tics 8
+Texture	Optional	XY33_01 	Range	XY33_99 	Tics 8
+Texture	Optional	XY34_01 	Range	XY34_99 	Tics 8
+Texture	Optional	XY35_01 	Range	XY35_99 	Tics 8
+Texture	Optional	XY36_01 	Range	XY36_99 	Tics 8
+Texture	Optional	XY37_01 	Range	XY37_99 	Tics 8
+Texture	Optional	XY38_01 	Range	XY38_99 	Tics 8
+Texture	Optional	XY39_01 	Range	XY39_99 	Tics 8
+Texture	Optional	XY40_01 	Range	XY40_99 	Tics 8
+Texture	Optional	XY41_01 	Range	XY41_99 	Tics 8
+Texture	Optional	XY42_01 	Range	XY42_99 	Tics 8
+Texture	Optional	XY43_01 	Range	XY43_99 	Tics 8
+Texture	Optional	XY44_01 	Range	XY44_99 	Tics 8
+Texture	Optional	XY45_01 	Range	XY45_99 	Tics 8
+Texture	Optional	XY46_01 	Range	XY46_99 	Tics 8
+Texture	Optional	XY47_01 	Range	XY47_99 	Tics 8
+Texture	Optional	XY48_01 	Range	XY48_99 	Tics 8
+Texture	Optional	XY49_01 	Range	XY49_99 	Tics 8
+Texture	Optional	XY50_01 	Range	XY50_99 	Tics 8
+Texture	Optional	XY51_01 	Range	XY51_99 	Tics 8
+Texture	Optional	XY52_01 	Range	XY52_99 	Tics 8
+Texture	Optional	XY53_01 	Range	XY53_99 	Tics 8
+Texture	Optional	XY54_01 	Range	XY54_99 	Tics 8
+Texture	Optional	XY55_01 	Range	XY55_99 	Tics 8
+Texture	Optional	XY56_01 	Range	XY56_99 	Tics 8
+Texture	Optional	XY57_01 	Range	XY57_99 	Tics 8
+Texture	Optional	XY58_01 	Range	XY58_99 	Tics 8
+Texture	Optional	XY59_01 	Range	XY59_99 	Tics 8
+Texture	Optional	XY60_01 	Range	XY60_99 	Tics 8
+Texture	Optional	XY61_01 	Range	XY61_99 	Tics 8
+Texture	Optional	XY62_01 	Range	XY62_99 	Tics 8
+Texture	Optional	XY63_01 	Range	XY63_99 	Tics 8
+Texture	Optional	XY64_01 	Range	XY64_99 	Tics 8
+Texture	Optional	XY65_01 	Range	XY65_99 	Tics 8
+Texture	Optional	XY66_01 	Range	XY66_99 	Tics 8
+Texture	Optional	XY67_01 	Range	XY67_99 	Tics 8
+Texture	Optional	XY68_01 	Range	XY68_99 	Tics 8
+Texture	Optional	XY69_01 	Range	XY69_99 	Tics 8
+Texture	Optional	XY70_01 	Range	XY70_99 	Tics 8
+Texture	Optional	XY71_01 	Range	XY71_99 	Tics 8
+Texture	Optional	XY72_01 	Range	XY72_99 	Tics 8
+Texture	Optional	XY73_01 	Range	XY73_99 	Tics 8
+Texture	Optional	XY74_01 	Range	XY74_99 	Tics 8
+Texture	Optional	XY75_01 	Range	XY75_99 	Tics 8
+Texture	Optional	XY76_01 	Range	XY76_99 	Tics 8
+Texture	Optional	XY77_01 	Range	XY77_99 	Tics 8
+Texture	Optional	XY78_01 	Range	XY78_99 	Tics 8
+Texture	Optional	XY79_01 	Range	XY79_99 	Tics 8
+Texture	Optional	XY80_01 	Range	XY80_99 	Tics 8
+Texture	Optional	XY81_01 	Range	XY81_99 	Tics 8
+Texture	Optional	XY82_01 	Range	XY82_99 	Tics 8
+Texture	Optional	XY83_01 	Range	XY83_99 	Tics 8
+Texture	Optional	XY84_01 	Range	XY84_99 	Tics 8
+Texture	Optional	XY85_01 	Range	XY85_99 	Tics 8
+Texture	Optional	XY86_01 	Range	XY86_99 	Tics 8
+Texture	Optional	XY87_01 	Range	XY87_99 	Tics 8
+Texture	Optional	XY88_01 	Range	XY88_99 	Tics 8
+Texture	Optional	XY89_01 	Range	XY89_99 	Tics 8
+Texture	Optional	XY90_01 	Range	XY90_99 	Tics 8
+Texture	Optional	XY91_01 	Range	XY91_99 	Tics 8
+Texture	Optional	XY92_01 	Range	XY92_99 	Tics 8
+Texture	Optional	XY93_01 	Range	XY93_99 	Tics 8
+Texture	Optional	XY94_01 	Range	XY94_99 	Tics 8
+Texture	Optional	XY95_01 	Range	XY95_99 	Tics 8
+Texture	Optional	XY96_01 	Range	XY96_99 	Tics 8
+Texture	Optional	XY97_01 	Range	XY97_99 	Tics 8
+Texture	Optional	XY98_01 	Range	XY98_99 	Tics 8
+Texture	Optional	XY99_01 	Range	XY99_99 	Tics 8
+Texture	Optional	XZ01_01 	Range	XZ01_99 	Tics 8
+Texture	Optional	XZ02_01 	Range	XZ02_99 	Tics 8
+Texture	Optional	XZ03_01 	Range	XZ03_99 	Tics 8
+Texture	Optional	XZ04_01 	Range	XZ04_99 	Tics 8
+Texture	Optional	XZ05_01 	Range	XZ05_99 	Tics 8
+Texture	Optional	XZ06_01 	Range	XZ06_99 	Tics 8
+Texture	Optional	XZ07_01 	Range	XZ07_99 	Tics 8
+Texture	Optional	XZ08_01 	Range	XZ08_99 	Tics 8
+Texture	Optional	XZ09_01 	Range	XZ09_99 	Tics 8
+Texture	Optional	XZ10_01 	Range	XZ10_99 	Tics 8
+Texture	Optional	XZ11_01 	Range	XZ11_99 	Tics 8
+Texture	Optional	XZ12_01 	Range	XZ12_99 	Tics 8
+Texture	Optional	XZ13_01 	Range	XZ13_99 	Tics 8
+Texture	Optional	XZ14_01 	Range	XZ14_99 	Tics 8
+Texture	Optional	XZ15_01 	Range	XZ15_99 	Tics 8
+Texture	Optional	XZ16_01 	Range	XZ16_99 	Tics 8
+Texture	Optional	XZ17_01 	Range	XZ17_99 	Tics 8
+Texture	Optional	XZ18_01 	Range	XZ18_99 	Tics 8
+Texture	Optional	XZ19_01 	Range	XZ19_99 	Tics 8
+Texture	Optional	XZ20_01 	Range	XZ20_99 	Tics 8
+Texture	Optional	XZ21_01 	Range	XZ21_99 	Tics 8
+Texture	Optional	XZ22_01 	Range	XZ22_99 	Tics 8
+Texture	Optional	XZ23_01 	Range	XZ23_99 	Tics 8
+Texture	Optional	XZ24_01 	Range	XZ24_99 	Tics 8
+Texture	Optional	XZ25_01 	Range	XZ25_99 	Tics 8
+Texture	Optional	XZ26_01 	Range	XZ26_99 	Tics 8
+Texture	Optional	XZ27_01 	Range	XZ27_99 	Tics 8
+Texture	Optional	XZ28_01 	Range	XZ28_99 	Tics 8
+Texture	Optional	XZ29_01 	Range	XZ29_99 	Tics 8
+Texture	Optional	XZ30_01 	Range	XZ30_99 	Tics 8
+Texture	Optional	XZ31_01 	Range	XZ31_99 	Tics 8
+Texture	Optional	XZ32_01 	Range	XZ32_99 	Tics 8
+Texture	Optional	XZ33_01 	Range	XZ33_99 	Tics 8
+Texture	Optional	XZ34_01 	Range	XZ34_99 	Tics 8
+Texture	Optional	XZ35_01 	Range	XZ35_99 	Tics 8
+Texture	Optional	XZ36_01 	Range	XZ36_99 	Tics 8
+Texture	Optional	XZ37_01 	Range	XZ37_99 	Tics 8
+Texture	Optional	XZ38_01 	Range	XZ38_99 	Tics 8
+Texture	Optional	XZ39_01 	Range	XZ39_99 	Tics 8
+Texture	Optional	XZ40_01 	Range	XZ40_99 	Tics 8
+Texture	Optional	XZ41_01 	Range	XZ41_99 	Tics 8
+Texture	Optional	XZ42_01 	Range	XZ42_99 	Tics 8
+Texture	Optional	XZ43_01 	Range	XZ43_99 	Tics 8
+Texture	Optional	XZ44_01 	Range	XZ44_99 	Tics 8
+Texture	Optional	XZ45_01 	Range	XZ45_99 	Tics 8
+Texture	Optional	XZ46_01 	Range	XZ46_99 	Tics 8
+Texture	Optional	XZ47_01 	Range	XZ47_99 	Tics 8
+Texture	Optional	XZ48_01 	Range	XZ48_99 	Tics 8
+Texture	Optional	XZ49_01 	Range	XZ49_99 	Tics 8
+Texture	Optional	XZ50_01 	Range	XZ50_99 	Tics 8
+Texture	Optional	XZ51_01 	Range	XZ51_99 	Tics 8
+Texture	Optional	XZ52_01 	Range	XZ52_99 	Tics 8
+Texture	Optional	XZ53_01 	Range	XZ53_99 	Tics 8
+Texture	Optional	XZ54_01 	Range	XZ54_99 	Tics 8
+Texture	Optional	XZ55_01 	Range	XZ55_99 	Tics 8
+Texture	Optional	XZ56_01 	Range	XZ56_99 	Tics 8
+Texture	Optional	XZ57_01 	Range	XZ57_99 	Tics 8
+Texture	Optional	XZ58_01 	Range	XZ58_99 	Tics 8
+Texture	Optional	XZ59_01 	Range	XZ59_99 	Tics 8
+Texture	Optional	XZ60_01 	Range	XZ60_99 	Tics 8
+Texture	Optional	XZ61_01 	Range	XZ61_99 	Tics 8
+Texture	Optional	XZ62_01 	Range	XZ62_99 	Tics 8
+Texture	Optional	XZ63_01 	Range	XZ63_99 	Tics 8
+Texture	Optional	XZ64_01 	Range	XZ64_99 	Tics 8
+Texture	Optional	XZ65_01 	Range	XZ65_99 	Tics 8
+Texture	Optional	XZ66_01 	Range	XZ66_99 	Tics 8
+Texture	Optional	XZ67_01 	Range	XZ67_99 	Tics 8
+Texture	Optional	XZ68_01 	Range	XZ68_99 	Tics 8
+Texture	Optional	XZ69_01 	Range	XZ69_99 	Tics 8
+Texture	Optional	XZ70_01 	Range	XZ70_99 	Tics 8
+Texture	Optional	XZ71_01 	Range	XZ71_99 	Tics 8
+Texture	Optional	XZ72_01 	Range	XZ72_99 	Tics 8
+Texture	Optional	XZ73_01 	Range	XZ73_99 	Tics 8
+Texture	Optional	XZ74_01 	Range	XZ74_99 	Tics 8
+Texture	Optional	XZ75_01 	Range	XZ75_99 	Tics 8
+Texture	Optional	XZ76_01 	Range	XZ76_99 	Tics 8
+Texture	Optional	XZ77_01 	Range	XZ77_99 	Tics 8
+Texture	Optional	XZ78_01 	Range	XZ78_99 	Tics 8
+Texture	Optional	XZ79_01 	Range	XZ79_99 	Tics 8
+Texture	Optional	XZ80_01 	Range	XZ80_99 	Tics 8
+Texture	Optional	XZ81_01 	Range	XZ81_99 	Tics 8
+Texture	Optional	XZ82_01 	Range	XZ82_99 	Tics 8
+Texture	Optional	XZ83_01 	Range	XZ83_99 	Tics 8
+Texture	Optional	XZ84_01 	Range	XZ84_99 	Tics 8
+Texture	Optional	XZ85_01 	Range	XZ85_99 	Tics 8
+Texture	Optional	XZ86_01 	Range	XZ86_99 	Tics 8
+Texture	Optional	XZ87_01 	Range	XZ87_99 	Tics 8
+Texture	Optional	XZ88_01 	Range	XZ88_99 	Tics 8
+Texture	Optional	XZ89_01 	Range	XZ89_99 	Tics 8
+Texture	Optional	XZ90_01 	Range	XZ90_99 	Tics 8
+Texture	Optional	XZ91_01 	Range	XZ91_99 	Tics 8
+Texture	Optional	XZ92_01 	Range	XZ92_99 	Tics 8
+Texture	Optional	XZ93_01 	Range	XZ93_99 	Tics 8
+Texture	Optional	XZ94_01 	Range	XZ94_99 	Tics 8
+Texture	Optional	XZ95_01 	Range	XZ95_99 	Tics 8
+Texture	Optional	XZ96_01 	Range	XZ96_99 	Tics 8
+Texture	Optional	XZ97_01 	Range	XZ97_99 	Tics 8
+Texture	Optional	XZ98_01 	Range	XZ98_99 	Tics 8
+Texture	Optional	XZ99_01 	Range	XZ99_99 	Tics 8
+
+Switch	Doom 1		DVII13		On Pic	DVII33		Tics 0
+Switch	Doom 1		0015V 		On Pic	0016D 		Tics 0
+Switch	Doom 1		DVII16 		On Pic	DVII36 		Tics 0
+Switch	Doom 1		0015W		On Pic	0016E		Tics 0
+Switch	Doom 1		DVII18		On Pic	DVII38		Tics 0
+Switch	Doom 1		SW1COMM 	On Pic	SW2COMM 	Tics 0
+Switch	Doom 1		DVII20	 	On Pic	DVII40 		Tics 0
+Switch	Doom 1		0015X 		On Pic	0016F 		Tics 0
+Switch	Doom 1		DVII22 		On Pic	DVII42 		Tics 0
+Switch	Doom 1		DVII24 		On Pic	DVII44 		Tics 0
+Switch	Doom 1		DVII25		On Pic	DVII45		Tics 0
+Switch	Doom 1		DVII31		On Pic	DVII51		Tics 0
+Switch	Doom 1		SW1PIPE 	On Pic	DVII52 		Tics 0
+Switch	Doom 1		SW1SLAD 	On Pic	SW2SLAD 	Tics 0
+Switch	Doom 1		0015Y		On Pic	0016G		Tics 0
+Switch	Doom 1		SW1STON1	On Pic	SW2STON1	Tics 0
+Switch	Doom 1		0015Z		On Pic	0016H		Tics 0
+Switch	Doom 1		0016A		On Pic	0016I		Tics 0
+Switch	Doom 1		SW1STRTN	On Pic	SW2STRTN	Tics 0
+Switch	Doom 2		0015T 		On Pic	0016B 		Tics 0
+Switch	Doom 2		DVII19  	On Pic	DVII39  	Tics 0
+Switch	Doom 2		DVII23 		On Pic	DVII43 		Tics 0
+Switch	Doom 2		DVII26		On Pic	DVII46		Tics 0
+Switch	Doom 2		DVII27  	On Pic	DVII47  	Tics 0
+Switch	Doom 2		DVII28 		On Pic	DVII48 		Tics 0
+Switch	Doom 2		SW1SATYR	On Pic	SW2SATYR	Tics 0
+Switch	Doom 2		SW1SKIN 	On Pic	SW2SKIN 	Tics 0
+Switch	Doom 2		SW1VINE 	On Pic	SW2VINE 	Tics 0
+Switch	Doom 2		SW1WOOD 	On Pic	SW2WOOD 	Tics 0
+Switch	Doom 3		SW1PANEL	On Pic	SW2PANEL	Tics 0
+Switch	Doom 3		SW1ROCK 	On Pic	SW2ROCK 	Tics 0
+Switch	Doom 3		DVII30 		On Pic	DVII50 		Tics 0
+Switch	Doom 3		SW1WDMET	On Pic	SW2WDMET	Tics 0
+Switch	Doom 3		0015U 		On Pic	0016C 		Tics 0
+Switch	Doom 3		SW1MOD1 	On Pic	SW2MOD1 	Tics 0
+Switch	Doom 3		SW1ZIM  	On Pic	SW2ZIM  	Tics 0
+Switch	Doom 3		SW1STON6	On Pic	SW2STON6	Tics 0
+Switch	Doom 3		SW1TEK  	On Pic	SW2TEK  	Tics 0
+Switch	Doom 3		DVII29 		On Pic	DVII49 		Tics 0
+Switch	Doom 3		SW1SKULL	On Pic	SW2SKULL	Tics 0
+Switch	Doom 3		SW1A0   	On Pic	SW2A0   	Tics 0
+Switch	Doom 3		SW1A1   	On Pic	SW2A1   	Tics 0
+Switch	Doom 3		SW1A2   	On Pic	SW2A2   	Tics 0
+Switch	Doom 3		SW1A3   	On Pic	SW2A3   	Tics 0
+Switch	Doom 3		SW1A4   	On Pic	SW2A4   	Tics 0
+Switch	Doom 3		SW1A5   	On Pic	SW2A5   	Tics 0
+Switch	Doom 3		SW1A6   	On Pic	SW2A6   	Tics 0
+Switch	Doom 3		SW1A7   	On Pic	SW2A7   	Tics 0
+Switch	Doom 3		SW1A8   	On Pic	SW2A8   	Tics 0
+Switch	Doom 3		SW1A9   	On Pic	SW2A9   	Tics 0
+Switch	Doom 3		SW1B0   	On Pic	SW2B0   	Tics 0
+Switch	Doom 3		SW1B1   	On Pic	SW2B1   	Tics 0
+Switch	Doom 3		SW1B2   	On Pic	SW2B2   	Tics 0
+Switch	Doom 3		SW1B3   	On Pic	SW2B3   	Tics 0
+Switch	Doom 3		SW1B4   	On Pic	SW2B4   	Tics 0
+Switch	Doom 3		SW1B5   	On Pic	SW2B5   	Tics 0
+Switch	Doom 3		SW1B6   	On Pic	SW2B6   	Tics 0
+Switch	Doom 3		SW1B7   	On Pic	SW2B7   	Tics 0
+Switch	Doom 3		SW1B8   	On Pic	SW2B8   	Tics 0
+Switch	Doom 3		SW1B9   	On Pic	SW2B9   	Tics 0
+Switch	Doom 3		SW1C0   	On Pic	SW2C0   	Tics 0
+Switch	Doom 3		SW1C1   	On Pic	SW2C1   	Tics 0
+Switch	Doom 3		SW1C2   	On Pic	SW2C2   	Tics 0
+Switch	Doom 3		SW1C3   	On Pic	SW2C3   	Tics 0
+Switch	Doom 3		SW1C4   	On Pic	SW2C4   	Tics 0
+Switch	Doom 3		SW1C5   	On Pic	SW2C5   	Tics 0
+Switch	Doom 3		SW1C6   	On Pic	SW2C6   	Tics 0
+Switch	Doom 3		SW1C7   	On Pic	SW2C7   	Tics 0
+Switch	Doom 3		SW1C8   	On Pic	SW2C8   	Tics 0
+Switch	Doom 3		SW1C9   	On Pic	SW2C9   	Tics 0
+Switch	Doom 3		SW1D0   	On Pic	SW2D0   	Tics 0
+Switch	Doom 3		SW1D1   	On Pic	SW2D1   	Tics 0
+Switch	Doom 3		SW1D2   	On Pic	SW2D2   	Tics 0
+Switch	Doom 3		SW1D3   	On Pic	SW2D3   	Tics 0
+Switch	Doom 3		SW1D4   	On Pic	SW2D4   	Tics 0
+Switch	Doom 3		SW1D5   	On Pic	SW2D5   	Tics 0
+Switch	Doom 3		SW1D6   	On Pic	SW2D6   	Tics 0
+Switch	Doom 3		SW1D7   	On Pic	SW2D7   	Tics 0
+Switch	Doom 3		SW1D8   	On Pic	SW2D8   	Tics 0
+Switch	Doom 3		SW1D9   	On Pic	SW2D9   	Tics 0
+Switch	Doom 3		SW1E0   	On Pic	SW2E0   	Tics 0
+Switch	Doom 3		SW1E1   	On Pic	SW2E1   	Tics 0
+Switch	Doom 3		SW1E2   	On Pic	SW2E2   	Tics 0
+Switch	Doom 3		SW1E3   	On Pic	SW2E3   	Tics 0
+Switch	Doom 3		SW1E4   	On Pic	SW2E4   	Tics 0
+Switch	Doom 3		SW1E5   	On Pic	SW2E5   	Tics 0
+Switch	Doom 3		SW1E6   	On Pic	SW2E6   	Tics 0
+Switch	Doom 3		SW1E7   	On Pic	SW2E7   	Tics 0
+Switch	Doom 3		SW1E8   	On Pic	SW2E8   	Tics 0
+Switch	Doom 3		SW1E9   	On Pic	SW2E9   	Tics 0
+Switch	Doom 3		SW1F0   	On Pic	SW2F0   	Tics 0
+Switch	Doom 3		SW1F1   	On Pic	SW2F1   	Tics 0
+Switch	Doom 3		SW1F2   	On Pic	SW2F2   	Tics 0
+Switch	Doom 3		SW1F3   	On Pic	SW2F3   	Tics 0
+Switch	Doom 3		SW1F4   	On Pic	SW2F4   	Tics 0
+Switch	Doom 3		SW1F5   	On Pic	SW2F5   	Tics 0
+Switch	Doom 3		SW1F6   	On Pic	SW2F6   	Tics 0
+Switch	Doom 3		SW1F7   	On Pic	SW2F7   	Tics 0
+Switch	Doom 3		SW1F8   	On Pic	SW2F8   	Tics 0
+Switch	Doom 3		SW1F9   	On Pic	SW2F9   	Tics 0
+Switch	Doom 3		SW1G0   	On Pic	SW2G0   	Tics 0
+Switch	Doom 3		SW1G1   	On Pic	SW2G1   	Tics 0
+Switch	Doom 3		SW1G2   	On Pic	SW2G2   	Tics 0
+Switch	Doom 3		SW1G3   	On Pic	SW2G3   	Tics 0
+Switch	Doom 3		SW1G4   	On Pic	SW2G4   	Tics 0
+Switch	Doom 3		SW1G5   	On Pic	SW2G5   	Tics 0
+Switch	Doom 3		SW1G6   	On Pic	SW2G6   	Tics 0
+Switch	Doom 3		SW1G7   	On Pic	SW2G7   	Tics 0
+Switch	Doom 3		SW1G8   	On Pic	SW2G8   	Tics 0
+Switch	Doom 3		SW1G9   	On Pic	SW2G9   	Tics 0
+Switch	Doom 3		SW1H0   	On Pic	SW2H0   	Tics 0
+Switch	Doom 3		SW1H1   	On Pic	SW2H1   	Tics 0
+Switch	Doom 3		SW1H2   	On Pic	SW2H2   	Tics 0
+Switch	Doom 3		SW1H3   	On Pic	SW2H3   	Tics 0
+Switch	Doom 3		SW1H4   	On Pic	SW2H4   	Tics 0
+Switch	Doom 3		SW1H5   	On Pic	SW2H5   	Tics 0
+Switch	Doom 3		SW1H6   	On Pic	SW2H6   	Tics 0
+Switch	Doom 3		SW1H7   	On Pic	SW2H7   	Tics 0
+Switch	Doom 3		SW1H8   	On Pic	SW2H8   	Tics 0
+Switch	Doom 3		SW1H9   	On Pic	SW2H9   	Tics 0
+Switch	Doom 3		SW1I0   	On Pic	SW2I0   	Tics 0
+Switch	Doom 3		SW1I1   	On Pic	SW2I1   	Tics 0
+Switch	Doom 3		SW1I2   	On Pic	SW2I2   	Tics 0
+Switch	Doom 3		SW1I3   	On Pic	SW2I3   	Tics 0
+Switch	Doom 3		SW1I4   	On Pic	SW2I4   	Tics 0
+Switch	Doom 3		SW1I5   	On Pic	SW2I5   	Tics 0
+Switch	Doom 3		SW1I6   	On Pic	SW2I6   	Tics 0
+Switch	Doom 3		SW1I7   	On Pic	SW2I7   	Tics 0
+Switch	Doom 3		SW1I8   	On Pic	SW2I8   	Tics 0
+Switch	Doom 3		SW1I9   	On Pic	SW2I9   	Tics 0
+Switch	Doom 3		SW1J0   	On Pic	SW2J0   	Tics 0
+Switch	Doom 3		SW1J1   	On Pic	SW2J1   	Tics 0
+Switch	Doom 3		SW1J2   	On Pic	SW2J2   	Tics 0
+Switch	Doom 3		SW1J3   	On Pic	SW2J3   	Tics 0
+Switch	Doom 3		SW1J4   	On Pic	SW2J4   	Tics 0
+Switch	Doom 3		SW1J5   	On Pic	SW2J5   	Tics 0
+Switch	Doom 3		SW1J6   	On Pic	SW2J6   	Tics 0
+Switch	Doom 3		SW1J7   	On Pic	SW2J7   	Tics 0
+Switch	Doom 3		SW1J8   	On Pic	SW2J8   	Tics 0
+Switch	Doom 3		SW1J9   	On Pic	SW2J9   	Tics 0
+Switch	Doom 3		SW1K0   	On Pic	SW2K0   	Tics 0
+Switch	Doom 3		SW1K1   	On Pic	SW2K1   	Tics 0
+Switch	Doom 3		SW1K2   	On Pic	SW2K2   	Tics 0
+Switch	Doom 3		SW1K3   	On Pic	SW2K3   	Tics 0
+Switch	Doom 3		SW1K4   	On Pic	SW2K4   	Tics 0
+Switch	Doom 3		SW1K5   	On Pic	SW2K5   	Tics 0
+Switch	Doom 3		SW1K6   	On Pic	SW2K6   	Tics 0
+Switch	Doom 3		SW1K7   	On Pic	SW2K7   	Tics 0
+Switch	Doom 3		SW1K8   	On Pic	SW2K8   	Tics 0
+Switch	Doom 3		SW1K9   	On Pic	SW2K9   	Tics 0
+Switch	Doom 3		SW1L0   	On Pic	SW2L0   	Tics 0
+Switch	Doom 3		SW1L1   	On Pic	SW2L1   	Tics 0
+Switch	Doom 3		SW1L2   	On Pic	SW2L2   	Tics 0
+Switch	Doom 3		SW1L3   	On Pic	SW2L3   	Tics 0
+Switch	Doom 3		SW1L4   	On Pic	SW2L4   	Tics 0
+Switch	Doom 3		SW1L5   	On Pic	SW2L5   	Tics 0
+Switch	Doom 3		SW1L6   	On Pic	SW2L6   	Tics 0
+Switch	Doom 3		SW1L7   	On Pic	SW2L7   	Tics 0
+Switch	Doom 3		SW1L8   	On Pic	SW2L8   	Tics 0
+Switch	Doom 3		SW1L9   	On Pic	SW2L9   	Tics 0
+Switch	Doom 3		SW1M0   	On Pic	SW2M0   	Tics 0
+Switch	Doom 3		SW1M1   	On Pic	SW2M1   	Tics 0
+Switch	Doom 3		SW1M2   	On Pic	SW2M2   	Tics 0
+Switch	Doom 3		SW1M3   	On Pic	SW2M3   	Tics 0
+Switch	Doom 3		SW1M4   	On Pic	SW2M4   	Tics 0
+Switch	Doom 3		SW1M5   	On Pic	SW2M5   	Tics 0
+Switch	Doom 3		SW1M6   	On Pic	SW2M6   	Tics 0
+Switch	Doom 3		SW1M7   	On Pic	SW2M7   	Tics 0
+Switch	Doom 3		SW1M8   	On Pic	SW2M8   	Tics 0
+Switch	Doom 3		SW1M9   	On Pic	SW2M9   	Tics 0
+Switch	Doom 3		SW1N0   	On Pic	SW2N0   	Tics 0
+Switch	Doom 3		SW1N1   	On Pic	SW2N1   	Tics 0
+Switch	Doom 3		SW1N2   	On Pic	SW2N2   	Tics 0
+Switch	Doom 3		SW1N3   	On Pic	SW2N3   	Tics 0
+Switch	Doom 3		SW1N4   	On Pic	SW2N4   	Tics 0
+Switch	Doom 3		SW1N5   	On Pic	SW2N5   	Tics 0
+Switch	Doom 3		SW1N6   	On Pic	SW2N6   	Tics 0
+Switch	Doom 3		SW1N7   	On Pic	SW2N7   	Tics 0
+Switch	Doom 3		SW1N8   	On Pic	SW2N8   	Tics 0
+Switch	Doom 3		SW1N9   	On Pic	SW2N9   	Tics 0
+Switch	Doom 3		SW1O0   	On Pic	SW2O0   	Tics 0
+Switch	Doom 3		SW1O1   	On Pic	SW2O1   	Tics 0
+Switch	Doom 3		SW1O2   	On Pic	SW2O2   	Tics 0
+Switch	Doom 3		SW1O3   	On Pic	SW2O3   	Tics 0
+Switch	Doom 3		SW1O4   	On Pic	SW2O4   	Tics 0
+Switch	Doom 3		SW1O5   	On Pic	SW2O5   	Tics 0
+Switch	Doom 3		SW1O6   	On Pic	SW2O6   	Tics 0
+Switch	Doom 3		SW1O7   	On Pic	SW2O7   	Tics 0
+Switch	Doom 3		SW1O8   	On Pic	SW2O8   	Tics 0
+Switch	Doom 3		SW1O9   	On Pic	SW2O9   	Tics 0
+Switch	Doom 3		SW1P0   	On Pic	SW2P0   	Tics 0
+Switch	Doom 3		SW1P1   	On Pic	SW2P1   	Tics 0
+Switch	Doom 3		SW1P2   	On Pic	SW2P2   	Tics 0
+Switch	Doom 3		SW1P3   	On Pic	SW2P3   	Tics 0
+Switch	Doom 3		SW1P4   	On Pic	SW2P4   	Tics 0
+Switch	Doom 3		SW1P5   	On Pic	SW2P5   	Tics 0
+Switch	Doom 3		SW1P6   	On Pic	SW2P6   	Tics 0
+Switch	Doom 3		SW1P7   	On Pic	SW2P7   	Tics 0
+Switch	Doom 3		SW1P8   	On Pic	SW2P8   	Tics 0
+Switch	Doom 3		SW1P9   	On Pic	SW2P9   	Tics 0
+Switch	Doom 3		SW1Q0   	On Pic	SW2Q0   	Tics 0
+Switch	Doom 3		SW1Q1   	On Pic	SW2Q1   	Tics 0
+Switch	Doom 3		SW1Q2   	On Pic	SW2Q2   	Tics 0
+Switch	Doom 3		SW1Q3   	On Pic	SW2Q3   	Tics 0
+Switch	Doom 3		SW1Q4   	On Pic	SW2Q4   	Tics 0
+Switch	Doom 3		SW1Q5   	On Pic	SW2Q5   	Tics 0
+Switch	Doom 3		SW1Q6   	On Pic	SW2Q6   	Tics 0
+Switch	Doom 3		SW1Q7   	On Pic	SW2Q7   	Tics 0
+Switch	Doom 3		SW1Q8   	On Pic	SW2Q8   	Tics 0
+Switch	Doom 3		SW1Q9   	On Pic	SW2Q9   	Tics 0
+Switch	Doom 3		SW1R0   	On Pic	SW2R0   	Tics 0
+Switch	Doom 3		SW1R1   	On Pic	SW2R1   	Tics 0
+Switch	Doom 3		SW1R2   	On Pic	SW2R2   	Tics 0
+Switch	Doom 3		SW1R3   	On Pic	SW2R3   	Tics 0
+Switch	Doom 3		SW1R4   	On Pic	SW2R4   	Tics 0
+Switch	Doom 3		SW1R5   	On Pic	SW2R5   	Tics 0
+Switch	Doom 3		SW1R6   	On Pic	SW2R6   	Tics 0
+Switch	Doom 3		SW1R7   	On Pic	SW2R7   	Tics 0
+Switch	Doom 3		SW1R8   	On Pic	SW2R8   	Tics 0
+Switch	Doom 3		SW1R9   	On Pic	SW2R9   	Tics 0
+Switch	Doom 3		SW1S0   	On Pic	SW2S0   	Tics 0
+Switch	Doom 3		SW1S1   	On Pic	SW2S1   	Tics 0
+Switch	Doom 3		SW1S2   	On Pic	SW2S2   	Tics 0
+Switch	Doom 3		SW1S3   	On Pic	SW2S3   	Tics 0
+Switch	Doom 3		SW1S4   	On Pic	SW2S4   	Tics 0
+Switch	Doom 3		SW1S5   	On Pic	SW2S5   	Tics 0
+Switch	Doom 3		SW1S6   	On Pic	SW2S6   	Tics 0
+Switch	Doom 3		SW1S7   	On Pic	SW2S7   	Tics 0
+Switch	Doom 3		SW1S8   	On Pic	SW2S8   	Tics 0
+Switch	Doom 3		SW1S9   	On Pic	SW2S9   	Tics 0
+Switch	Doom 3		SW1T0   	On Pic	SW2T0   	Tics 0
+Switch	Doom 3		SW1T1   	On Pic	SW2T1   	Tics 0
+Switch	Doom 3		SW1T2   	On Pic	SW2T2   	Tics 0
+Switch	Doom 3		SW1T3   	On Pic	SW2T3   	Tics 0
+Switch	Doom 3		SW1T4   	On Pic	SW2T4   	Tics 0
+Switch	Doom 3		SW1T5   	On Pic	SW2T5   	Tics 0
+Switch	Doom 3		SW1T6   	On Pic	SW2T6   	Tics 0
+Switch	Doom 3		SW1T7   	On Pic	SW2T7   	Tics 0
+Switch	Doom 3		SW1T8   	On Pic	SW2T8   	Tics 0
+Switch	Doom 3		SW1T9   	On Pic	SW2T9   	Tics 0
+Switch	Doom 3		SW1U0   	On Pic	SW2U0   	Tics 0
+Switch	Doom 3		SW1U1   	On Pic	SW2U1   	Tics 0
+Switch	Doom 3		SW1U2   	On Pic	SW2U2   	Tics 0
+Switch	Doom 3		SW1U3   	On Pic	SW2U3   	Tics 0
+Switch	Doom 3		SW1U4   	On Pic	SW2U4   	Tics 0
+Switch	Doom 3		SW1U5   	On Pic	SW2U5   	Tics 0
+Switch	Doom 3		SW1U6   	On Pic	SW2U6   	Tics 0
+Switch	Doom 3		SW1U7   	On Pic	SW2U7   	Tics 0
+Switch	Doom 3		SW1U8   	On Pic	SW2U8   	Tics 0
+Switch	Doom 3		SW1U9   	On Pic	SW2U9   	Tics 0
+Switch	Doom 3		SW1V0   	On Pic	SW2V0   	Tics 0
+Switch	Doom 3		SW1V1   	On Pic	SW2V1   	Tics 0
+Switch	Doom 3		SW1V2   	On Pic	SW2V2   	Tics 0
+Switch	Doom 3		SW1V3   	On Pic	SW2V3   	Tics 0
+Switch	Doom 3		SW1V4   	On Pic	SW2V4   	Tics 0
+Switch	Doom 3		SW1V5   	On Pic	SW2V5   	Tics 0
+Switch	Doom 3		SW1V6   	On Pic	SW2V6   	Tics 0
+Switch	Doom 3		SW1V7   	On Pic	SW2V7   	Tics 0
+Switch	Doom 3		SW1V8   	On Pic	SW2V8   	Tics 0
+Switch	Doom 3		SW1V9   	On Pic	SW2V9   	Tics 0
+Switch	Doom 3		SW1W0   	On Pic	SW2W0   	Tics 0
+Switch	Doom 3		SW1W1   	On Pic	SW2W1   	Tics 0
+Switch	Doom 3		SW1W2   	On Pic	SW2W2   	Tics 0
+Switch	Doom 3		SW1W3   	On Pic	SW2W3   	Tics 0
+Switch	Doom 3		SW1W4   	On Pic	SW2W4   	Tics 0
+Switch	Doom 3		SW1W5   	On Pic	SW2W5   	Tics 0
+Switch	Doom 3		SW1W6   	On Pic	SW2W6   	Tics 0
+Switch	Doom 3		SW1W7   	On Pic	SW2W7   	Tics 0
+Switch	Doom 3		SW1W8   	On Pic	SW2W8   	Tics 0
+Switch	Doom 3		SW1W9   	On Pic	SW2W9   	Tics 0
+Switch	Doom 3		SW1X0   	On Pic	SW2X0   	Tics 0
+Switch	Doom 3		SW1X1   	On Pic	SW2X1   	Tics 0
+Switch	Doom 3		SW1X2   	On Pic	SW2X2   	Tics 0
+Switch	Doom 3		SW1X3   	On Pic	SW2X3   	Tics 0
+Switch	Doom 3		SW1X4   	On Pic	SW2X4   	Tics 0
+Switch	Doom 3		SW1X5   	On Pic	SW2X5   	Tics 0
+Switch	Doom 3		SW1X6   	On Pic	SW2X6   	Tics 0
+Switch	Doom 3		SW1X7   	On Pic	SW2X7   	Tics 0
+Switch	Doom 3		SW1X8   	On Pic	SW2X8   	Tics 0
+Switch	Doom 3		SW1X9   	On Pic	SW2X9   	Tics 0
+Switch	Doom 3		SW1Y0   	On Pic	SW2Y0   	Tics 0
+Switch	Doom 3		SW1Y1   	On Pic	SW2Y1   	Tics 0
+Switch	Doom 3		SW1Y2   	On Pic	SW2Y2   	Tics 0
+Switch	Doom 3		SW1Y3   	On Pic	SW2Y3   	Tics 0
+Switch	Doom 3		SW1Y4   	On Pic	SW2Y4   	Tics 0
+Switch	Doom 3		SW1Y5   	On Pic	SW2Y5   	Tics 0
+Switch	Doom 3		SW1Y6   	On Pic	SW2Y6   	Tics 0
+Switch	Doom 3		SW1Y7   	On Pic	SW2Y7   	Tics 0
+Switch	Doom 3		SW1Y8   	On Pic	SW2Y8   	Tics 0
+Switch	Doom 3		SW1Y9   	On Pic	SW2Y9   	Tics 0
+Switch	Doom 3		SW1Z0   	On Pic	SW2Z0   	Tics 0
+Switch	Doom 3		SW1Z1   	On Pic	SW2Z1   	Tics 0
+Switch	Doom 3		SW1Z2   	On Pic	SW2Z2   	Tics 0
+Switch	Doom 3		SW1Z3   	On Pic	SW2Z3   	Tics 0
+Switch	Doom 3		SW1Z4   	On Pic	SW2Z4   	Tics 0
+Switch	Doom 3		SW1Z5   	On Pic	SW2Z5   	Tics 0
+Switch	Doom 3		SW1Z6   	On Pic	SW2Z6   	Tics 0
+Switch	Doom 3		SW1Z7   	On Pic	SW2Z7   	Tics 0
+Switch	Doom 3		SW1Z8   	On Pic	SW2Z8   	Tics 0
+Switch	Doom 3		SW1Z9   	On Pic	SW2Z9   	Tics 0
+
+//VALIANT
+
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	LAVA1   	Range	LAVA4   	Tics 8
+Flat	Optional	BLOOD1  	Range	BLOOD3  	Tics 8
+Flat	Optional	RROCK05 	Range	RROCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SLIME09 	Range	SLIME12 	Tics 8
+Flat	Optional	GRAYSLM1	Range	GRAYSLM4	Tics 8
+Flat	Optional	LAV2_01 	Range	LAV2_04 	Tics 8
+Flat	Optional	E3SAW_A1	Range	E3SAW_A4	Tics 8
+Texture	Optional	GOBB0   	Range	GOBB33  	Tics 2
+Texture	Optional	VLNT2 	Range	VLNT5 	Tics 8
+Texture	Optional	ORANGEG1	Range	ORANGEG4	Tics 1
+Texture	Optional	LIT1    	Range	LIT7    	Tics 4
+Texture	Optional	LITV1   	Range	LITV7   	Tics 4
+Texture	Optional	HOL64_01	Range	HOL64_16	Tics 2
+Texture	Optional	HOL19_01	Range	HOL19_16	Tics 2
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
+Texture	Optional	VALT1	Range	VALT4	Tics 8
+Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
+Texture	Optional	FIREMID1	Range	FIREMID3	Tics 8
+Texture	Optional	COMPFUZ1	Range	COMPFUZ4	Tics 5
+Texture	Optional	VLNT9	Range	VLNT18	Tics 2
+Texture	Optional	FFIELDG1	Range	FFIELDGA	Tics 2
+Texture	Optional	LFALL2_1	Range	LFALL2_4	Tics 8
+Texture	Optional	SAWRGAT1	Range	SAWRGAT9	Tics 4
+Texture	Optional	SAWGGAT1	Range	SAWGGAT9	Tics 4
+
+Switch	Doom 1		DVII13	On Pic	SW2BRCOM	Tics 0
+Switch	Doom 1		SW1BRN1 	On Pic	SW2BRN1 	Tics 0
+Switch	Doom 1		SW1BRN2 	On Pic	SW2BRN2 	Tics 0
+Switch	Doom 1		SW1BRNGN	On Pic	SW2BRNGN	Tics 0
+Switch	Doom 1		SW1BROWN	On Pic	SW2BROWN	Tics 0
+Switch	Doom 1		SW1COMM 	On Pic	SW2COMM 	Tics 0
+Switch	Doom 1		SW1COMP 	On Pic	SW2COMP 	Tics 0
+Switch	Doom 1		SW1DIRT 	On Pic	SW2DIRT 	Tics 0
+Switch	Doom 1		SW1EXIT 	On Pic	SW2EXIT 	Tics 0
+Switch	Doom 1		SW1GRAY 	On Pic	SW2GRAY 	Tics 0
+Switch	Doom 1		SW1GRAY1	On Pic	SW2GRAY1	Tics 0
+Switch	Doom 1		SW1METAL	On Pic	SW2METAL	Tics 0
+Switch	Doom 1		SW1PIPE 	On Pic	SW2PIPE 	Tics 0
+Switch	Doom 1		SW1SLAD 	On Pic	SW2SLAD 	Tics 0
+Switch	Doom 1		VLNT51	On Pic	VLNT54	Tics 0
+Switch	Doom 1		SW1STON1	On Pic	SW2STON1	Tics 0
+Switch	Doom 1		VLNT52	On Pic	VLNT55	Tics 0
+Switch	Doom 1		VLNT53	On Pic	VLNT56	Tics 0
+Switch	Doom 1		SW1STRTN	On Pic	SW2STRTN	Tics 0
+Switch	Doom 2		DVII12 	On Pic	SW2BLUE 	Tics 0
+Switch	Doom 2		SW1CMT  	On Pic	SW2CMT  	Tics 0
+Switch	Doom 2		SW1GARG 	On Pic	SW2GARG 	Tics 0
+Switch	Doom 2		SW1GSTON	On Pic	SW2GSTON	Tics 0
+Switch	Doom 2		SW1HOT  	On Pic	SW2HOT  	Tics 0
+Switch	Doom 2		SW1LION 	On Pic	SW2LION 	Tics 0
+Switch	Doom 2		SW1SATYR	On Pic	SW2SATYR	Tics 0
+Switch	Doom 2		SW1SKIN 	On Pic	SW2SKIN 	Tics 0
+Switch	Doom 2		SW1VINE 	On Pic	SW2VINE 	Tics 0
+Switch	Doom 2		SW1WOOD 	On Pic	SW2WOOD 	Tics 0
+Switch	Doom 3		SW1PANEL	On Pic	SW2PANEL	Tics 0
+Switch	Doom 3		SW1ROCK 	On Pic	SW2ROCK 	Tics 0
+Switch	Doom 3		SW1MET2 	On Pic	SW2MET2 	Tics 0
+Switch	Doom 3		SW1WDMET	On Pic	SW2WDMET	Tics 0
+Switch	Doom 3		SW1BRIK 	On Pic	SW2BRIK 	Tics 0
+Switch	Doom 3		SW1MOD1 	On Pic	SW2MOD1 	Tics 0
+Switch	Doom 3		SW1ZIM  	On Pic	SW2ZIM  	Tics 0
+Switch	Doom 3		SW1STON6	On Pic	SW2STON6	Tics 0
+Switch	Doom 3		SW1TEK  	On Pic	SW2TEK  	Tics 0
+Switch	Doom 3		SW1MARB 	On Pic	SW2MARB 	Tics 0
+Switch	Doom 3		SW1SKULL	On Pic	SW2SKULL	Tics 0
+Switch	Doom 3		SW1MEGA 	On Pic	SW2MEGA 	Tics 0
+Switch	Doom 3		SW1GOTH 	On Pic	SW2GOTH 	Tics 0
+
+
+switch doom 1 VLNT51 on pic VLNT54 tics 0
+switch doom 1 VLNT52 on pic VLNT55 tics 0
+switch doom 1 VLNT53 on pic VLNT56 tics 0
+
+
+////////////////Epic1&2///////////////////
+texture DBRAIN1
+
+pic 1 tics 4
+pic 2 tics 4
+pic 3 tics 4
+pic 4 tics 4
+
+flat SLIME01
+
+pic 1 tics 4
+pic 2 tics 4
+pic 3 tics 4
+pic 4 tics 4
+
+texture BLODRIP1
+
+pic 1 tics 4
+pic 2 tics 4
+pic 3 tics 4
+pic 4 tics 4
+
+
+Flat	Optional	EP2F9 	Range	EP2F12 	Tics 8
+Flat	Optional	EP2F26 	Range	EP2F31 	Tics 8
+Flat	Optional	EP2F32 	Range	EP2F41 	Tics 8
+Flat	Optional	EP2F42 	Range	EP2F76 	Tics 4
+Flat	Optional	EP2F77 	Range	EP2F80 	Tics 8
+Flat	Optional	EP2F81 	Range	EP2F88 	Tics 8

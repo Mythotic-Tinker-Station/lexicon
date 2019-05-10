@@ -4926,3 +4926,1783 @@ Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
 
 // 25064 is used by FSWDeadStick
 
+/////////////////////////
+ ////				////
+ //// Dues Vult II  ////
+ ////				////
+/////////////////////////
+
+ACTOR DVActor1 : Candlestick 25064//34
+{
+	Radius 6
+	Height 32
+	States
+	{
+	Spawn:
+		AAAD A -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR DVActor2 : Candelabra 25065//35
+{
+	Radius 11
+	Height 58
+	States
+	{
+	Spawn:
+		AAAD B -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR DVActor3 : ShortGreenColumn 25066//31
+{
+	States
+	{
+	Spawn:
+		AAAD C -1
+		Stop
+	}
+}
+
+
+
+ACTOR DVActor4 : TallRedColumn 25067//32
+{
+	States
+	{
+	Spawn:
+		AAAD D -1
+		Stop
+	}
+}
+
+ACTOR DVActor5 : ShortRedColumn 25068//33
+{
+	States
+	{
+	Spawn:
+		AAAD E -1
+		Stop
+	}
+}
+
+ACTOR DVActor6 : HeartColumn 25069//36
+{
+	States
+	{
+	Spawn:
+		AAAD FG 14
+		Loop
+	}
+}
+
+ACTOR DVActor7 : SkullColumn 25070//37
+{
+	Height 128
+	States
+	{
+	Spawn:
+		AAAD H -1
+		Stop
+	}
+}
+
+
+ACTOR DVActor8 : Column 25071//2028
+{
+	States
+	{
+	Spawn:
+		AAAD I -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR DVActor9 : TechPillar 25072//48
+{
+	States
+	{
+	Spawn:
+		AAAD J -1
+		Stop
+	}
+}
+
+ACTOR DVActor10 : NonsolidMeat5 25149//62
+{
+	States
+	{
+	Spawn:
+		AAAD K -1
+		Stop
+	}
+}
+
+ACTOR DVActor11 : HeadOnAStick 25148//27
+{
+	Radius 48
+	Height 256
+	States
+	{
+	Spawn:
+		AAAD L -1
+		Stop
+	}
+}
+
+ACTOR DVActor12 : Stalagtite 25147//47
+{
+	Height 128
+	States
+	{
+	Spawn:
+		AAAD M -1
+		Stop
+	}
+}
+
+ACTOR DVActor13 : TechLamp 25146//85
+{
+	Radius 4
+	Height 192
+	States
+	{
+	Spawn:
+		AAAD NOPQ 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR DVActor14 : TechLamp2 25145//86
+{
+	Radius 4
+	Height 72
+	States
+	{
+	Spawn:
+		AAAD RSTU 4 BRIGHT
+		Loop
+	}
+}
+
+Actor DVActor15 25144//23
+{
+	MONSTER
+	Health 250
+	Radius 24
+	Height 56
+	Mass 500
+	Speed 16
+	+FLOORCLIP
+	+QUICKTORETALIATE
+	+MISSILEMORE
+	SeeSound "ClericSee"
+	PainSound "ClericPain"
+	DeathSound "ClericDeath"
+	ActiveSound "ClericRoam"
+	Tag "Hell Cleric"
+	Obituary "%o was burned by a Hell Cleric."
+	HitObituary "%o was mauled by a Hell Cleric."
+	DamageFactor "Fire", 0.5
+	States
+	{
+	Spawn:
+		CLER AB 10 A_Look
+		Loop
+	See:
+		CLER AABBCCDD 4 A_Chase
+		Loop
+	Missile:
+		CLER E 4 A_FaceTarget
+		CLER E 0 A_PlaySound("ClericSwing",CHAN_WEAPON)
+		CLER E 2 A_CustomMissile("DoomImpBall",32,0,0,0,0)
+		CLER G 4 A_FaceTarget
+		CLER E 4 A_FaceTarget
+		CLER E 0 A_PlaySound("ClericSwing",CHAN_WEAPON)
+		CLER E 2 A_CustomMissile("DoomImpBall",32,0,0,0,0)
+		CLER G 4 A_FaceTarget
+		CLER E 4 A_FaceTarget
+		CLER E 0 A_PlaySound("ClericSwing",CHAN_WEAPON)
+		CLER E 2 A_CustomMissile("DoomImpBall",32,0,0,0,0)
+		CLER G 4 A_FaceTarget
+		Goto See
+	Melee:
+		CLER E 0 A_PlaySound("ClericSwing",CHAN_WEAPON)
+		CLER E 0 A_Recoil(-4)
+		CLER EF 2 A_FaceTarget
+		CLER G 6 A_CustomMeleeAttack(15,"ClericHit","","Melee",1)
+		Goto See
+	Pain:
+		CLER H 2
+		CLER H 6 A_Pain
+		Goto See
+	Death:
+		CLER H 3
+		CLER I 3 A_Scream
+		CLER JKLM 3
+		CLER N 3 A_Fall
+		CLER OP 3
+		CLER Q -1
+		Stop
+	XDeath:
+		CLER H 3
+		CLER R 3 A_PlaySound("ClericGib",CHAN_VOICE)
+		CLER ST 3
+		CLER U 3 A_Fall
+		CLER VWXYZ 3
+		CLER "[" -1
+		Stop
+	}
+}
+
+//Actor Afrit 20306 replaces commander keen in dvii (72)
+
+
+////////////////////
+////			////
+////  Valiant   ////
+////			////
+////////////////////
+
+
+ACTOR ValiantImpBall //replaces DoomImpBall
+{
+  Game Doom
+  SpawnID 10
+  Radius 6
+  Height 8
+  Speed 16
+  Speed 20
+  Damage 3
+  Projectile
+  +RANDOMIZE
+  RenderStyle Add
+  Alpha 1
+  SeeSound "imp/attack"
+  DeathSound "imp/shotx"
+  States
+  {
+  Spawn:
+    AAAG AB 4 Bright
+    Loop
+  Death:
+    AAAG CDE 6 Bright
+    Stop
+  }
+}
+
+ACTOR ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
+{
+  Radius 13
+  Height 8
+  Speed 25
+  Damage 5
+  Projectile
+  +RANDOMIZE
+  RenderStyle Add 
+  Alpha 0.75
+  SeeSound "baby/attack"
+  DeathSound "baby/shotx"
+  States
+  {
+  Spawn:
+    AAAS KL 5 Bright
+    Loop
+  Death:
+    AAAS MNOPQ 5 Bright
+    Stop
+  }
+}
+
+ACTOR ValiantBaronBall //replaces BaronBall
+{
+  Game Doom
+  SpawnID 154
+  Radius 6
+  Height 16
+  Speed 30
+  Speed 40
+  Damage 5
+  Projectile
+  +RANDOMIZE
+  RenderStyle Add
+  Alpha 1
+  SeeSound "knight/sight"
+  DeathSound "baron/shotx"
+  Decal "BaronScorch"
+  States
+  {
+  Spawn:
+    AAAP IJ 4 Bright
+    Loop
+  Death:
+    AAAP KLM 6 Bright
+    Stop
+  }
+}
+
+
+ACTOR ValiantImp 25074//Replaces DoomImp 3001
+{
+	Health 60
+	Speed 8
+	Radius 20
+	Height 56
+	Damage 0
+	ReactionTime 8
+	PainChance 200
+	Mass 100
+	Monster	
+	SeeSound "imp/sight"
+	PainSound "imp/pain"
+	DeathSound "imp/death"
+	ActiveSound "imp/active"
+	MeleeSound "imp/stop"
+	Obituary "%o was scorched by a super imp."
+	HitObituary "%o got scratched by a super imp."
+	States
+	{
+	Spawn:
+		AAAE AB 10 A_Look
+		Loop
+	  See:
+		AAAE AABBCCDD 3 A_Chase
+		Loop
+	  Melee:
+	  Missile:
+		AAAE EF 8 A_FaceTarget
+		AAAE G 6 A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAF AB 8 A_FaceTarget
+		AAAF C 6 A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		Goto See
+	  Pain:
+		AAAE H 2
+		AAAE H 2 A_Pain
+		Goto See
+	  Death:
+		AAAE I 8
+		AAAE J 8 A_Scream
+		AAAE K 6
+		AAAE L 6 A_NoBlocking
+		AAAE M -1
+		Stop
+	  XDeath:
+		AAAE N 5
+		AAAE O 5 A_XScream
+		AAAE P 5
+		AAAE Q 5 A_NoBlocking
+		AAAE RST 5
+		AAAE U -1
+		Stop
+	  Raise:
+		AAAE MLKJI 8
+		Goto See
+	}
+}
+
+
+
+ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
+{
+  States
+  {
+  Spawn:
+    AAAH AB 10 A_Look
+    Loop
+  See:
+    AAAH AABBCCDD 2  A_Chase
+    Loop
+  Melee:
+    AAAH EF 3  A_FaceTarget
+    AAAH G 18  A_SargAttack
+    Goto See
+  Pain:
+    AAAH H 2 
+    AAAH H 2  A_Pain
+    Goto See
+  Death:
+    AAAH I 8
+    AAAH J 8 A_Scream
+    AAAH K 4
+    AAAH L 4 A_NoBlocking
+    AAAH M 4
+    AAAH N -1
+    Stop
+  Raise:
+    AAAH N 5
+    AAAH MLKJI 5
+    Goto See
+  }
+}
+
+ACTOR ValiantSpectre : ValiantDemon 25076//replaces Spectre 58	
+{
+  Game Doom
+  SpawnID 9
+  +SHADOW
+  RenderStyle OptFuzzy
+  Alpha 0.5
+  SeeSound "spectre/sight"
+  AttackSound "spectre/melee"
+  PainSound "spectre/pain"
+  DeathSound "spectre/death"
+  ActiveSound "spectre/active"
+  HitObituary "%o was eaten by a super spectre."
+}
+
+ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
+{
+  Game Doom
+  Health 900
+  Speed 8
+  Radius 48
+  Height 64
+  Damage 0
+  ReactionTime 8
+  PainChance 80
+  Mass 1000
+  Monster
+  SeeSound "valws/sight"
+  PainSound "fatso/pain"
+  DeathSound "valws/death"
+  ActiveSound "fatso/active"
+  Obituary "%o couldn't avoid the Super Mancubus's volley."
+  States
+  {
+	  Spawn:
+		AAAI AB 15 A_Look
+		Loop
+	  See:
+		AAAI AABBCCDDEEFF 4  A_Chase
+		Loop
+	  Missile:
+		AAAI G 20  A_FaceTarget
+		AAAI H 3  Bright A_FatAttack1 
+		AAAI H 3  Bright A_FatAttack2 
+		AAAI H 10  Bright A_FatAttack3 
+		AAAI G 20  A_FaceTarget
+		AAAI H 3  Bright A_FatAttack1 
+		AAAI H 3  Bright A_FatAttack2 
+		AAAI H 10  Bright A_FatAttack3 
+		AAAI I 10  A_FaceTarget
+		Goto See
+	  Pain:
+		AAAI J 3
+		AAAI J 3 A_Pain
+		Goto See
+	  Death:
+		AAAI K 6
+		AAAI L 6 A_Scream
+		AAAI M 6 A_Fall
+		AAAI NOPQRS 6
+		AAAI T -1
+		Stop
+  }
+
+}
+
+
+
+ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
+{
+  Game Doom
+  Health 500
+  Speed 8
+  Radius 24
+  Height 64
+  Damage 0
+  ReactionTime 8
+  PainChance 50
+  Mass 1000
+  Monster
+  SeeSound "valkt/pain"
+  PainSound "knight/pain"
+  DeathSound "valws/death"
+  ActiveSound "knight/active"
+  Obituary "%o was burned to cinders by a Pyro Knight."
+  HitObituary "%o got ripped to shreds by a Pyro Knight."
+  States
+  {
+    Spawn:
+		AAAJ AB 10 Bright A_Look
+		Loop
+	See:
+		AAAJ AABBCCDD 3  Bright A_Chase
+		Loop
+	Missile:
+		AAAJ A 0 A_Jump(127,"AltMissile")
+		AAAJ E 4  Bright A_FaceTarget
+		AAAJ F 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ G 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ G 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+		AAAJ I 4  Bright A_FaceTarget
+		AAAJ J 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ K 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ K 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+		Goto See
+	AltMissile:
+		AAAJ M 8  Bright A_FaceTarget
+		AAAJ N 8  Bright A_FaceTarget
+		AAAJ OOOO 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+		Goto See
+	Melee:
+		AAAJ E 4  Bright A_FaceTarget
+		AAAJ F 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ G 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ G 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+		AAAJ I 4  Bright A_FaceTarget
+		AAAJ J 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ K 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+		AAAJ K 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+		Goto See
+	Pain:
+		AAAK O 2 Bright
+		AAAK O 2 Bright A_Pain
+		Goto See
+	Death:
+		AAAK P 10 Bright A_Scream
+		AAAK QR 10 Bright
+		AAAK S 10 A_Fall
+		AAAK TUV 6
+		AAAK W 3
+		AAAK X -1
+		Stop
+	Raise:
+		AAAK W 8
+		AAAK VUTS 8
+		AAAK QO 8 Bright
+		Goto See
+  }
+}
+
+//ValiantBaronBall replaces BaronBall
+ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
+{
+	Health 500
+	Speed 10
+	Radius 24
+	Height 64
+	Damage 0
+	ReactionTime 8
+	PainChance 20
+	Mass 1000
+	Monster
+	+NORADIUSDMG
+	SeeSound "baron/sight"
+	PainSound "baron/pain"
+	DeathSound "baron/death"
+	ActiveSound "baron/active"
+	Obituary "%o rode a Cybruiser's rocket."
+	HitObituary "%o got clawed by a Cybruiser."
+	States
+	{
+		Spawn:
+			AAAL AB 10 A_Look
+			Loop
+		See:
+			AAAL AA 3  A_Chase
+			TNT1 A 0 A_PlaySoundEx("brain/death",Auto,false,0)
+			AAAL BB 3  A_Chase
+			TNT1 A 0 //A_PlaySoundEx("brain/death",Auto,false,0)
+			AAAL CC 3  A_Chase
+			TNT1 A 0 A_PlaySoundEx("brain/death",Auto,false,0)
+			AAAL DD 3  A_Chase
+			TNT1 A 0 //A_PlaySoundEx("brain/death",Auto,false,0)
+			Loop
+		Missile:
+			AAAL E 12  A_FaceTarget
+			AAAL F 12  Bright A_CyberAttack
+			Goto See
+		Melee:
+			AAAL G 0  A_FaceTarget
+			AAAL G 5 
+			AAAL H 5  A_FaceTarget
+			AAAL I 5  A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+			Goto See
+			
+		Pain:
+			AAAL J 2
+			AAAL J 2 A_Pain
+			Goto See
+		Death:
+			AAAL K 6 Bright A_Scream
+			AAAL LM 6 Bright
+			AAAL N 6 Bright A_Fall
+			AAAL O 6 Bright
+			AAAL PQR 6 Bright
+			AAAL S -1
+			Stop
+	}
+}
+
+ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
+{
+	Health 500
+	Speed 12
+	Radius 64
+	Height 64
+	Damage 0
+	ReactionTime 8
+	PainChance 128
+	Mass 600
+	Monster
+	SeeSound "baby/sight"
+	PainSound "baby/pain"
+	DeathSound "baby/death"
+	ActiveSound "baby/active"
+	States
+	{
+		Spawn:
+			AAAM AB 10 A_Look
+			Loop
+		See:
+			AAAM A 20
+			AAAM A 3 A_BabyMetal
+			AAAM ABBCC 3 A_Chase
+			AAAM D 3 A_BabyMetal
+			AAAM DEEFF 3 A_Chase
+			Goto See+1
+		Missile:
+		    AAAM A 20 Bright A_FaceTarget
+			AAAM G 4 Bright A_CustomMissile("ValiantPlamsa", 32)
+			AAAM H 4 Bright
+			AAAM H 1 Bright A_SpidRefire
+			Goto Missile+1
+		Pain:
+			AAAM I 3
+			AAAM I 3 A_Pain
+			Goto See+1
+			//Goto See
+		Death:
+			AAAM I 11 A_Scream
+			AAAN B 0 A_Jump(127,"Death2")
+			AAAM J 7 A_FALL
+			AAAM KLM 7
+			AAAM N 7 A_BossDeath
+			AAAM P -1 A_BossDeath
+			Stop
+		Death2:
+			AAAN I 0 A_Fall
+			AAAN I 26 A_SpawnItem("ValiantArachnorb", 8)
+			AAAN J 11
+			AAAN K 7
+			AAAN L 7 A_BossDeath
+			AAAN M -1 A_BossDeath
+			Stop
+		Raise:
+			AAAM P 5
+			AAAM ONMLKJ 5
+			Goto See+1
+	}
+}
+
+ACTOR ValiantArachnorb 25081//replaces MBFHelperDog 888
+{
+	Health 120
+	Speed 12
+	Radius 24
+	Height 56
+	Damage 0
+	ReactionTime 8
+	PainChance 150
+	Mass 400
+	Monster
+	+FLOAT
+	+NOGRAVITY
+	SeeSound "valdg/sight"
+	PainSound "baby/pain"
+	DeathSound "valdg/death"
+	ActiveSound "baby/active"
+	Obituary "%o got blasted by an Arachnorb."
+	States
+	{
+	Spawn:
+		AAAN A 10 A_Look
+		Goto Spawn
+	See:
+		AAAN A 3  A_Chase
+		AAAN A 3  A_Chase
+		Goto See
+	Pain:
+		AAAN H 3
+		AAAN H 3 A_Pain
+		Goto See
+	Missile:
+		AAAN A 20  A_FaceTarget
+		AAAN BCB 9  Bright A_CustomMissile("ValiantPlamsa", 36)
+		AAAN A 9 A_SpidRefire
+		Goto Missile
+	Raise:
+		AAAN FED 5
+		Goto See
+	Death:
+		AAAN D 5
+		AAAN E 5 A_Scream
+		AAAN F 5 A_Fall
+		AAAN G -1
+		Stop
+	}
+}
+
+ACTOR ValiantSpiderMastermind : SpiderMastermind 25082//replaces Infrared 2045
+{
+	-NORADIUSDMG
+}
+
+ACTOR LightningOrb 25083//replaces HeartColumn 36	
+{
+	+NOCLIP
+	Health 1000
+	Speed 0
+	Radius 16
+	Height 16
+	Damage 0
+	ReactionTime 1
+	PainChance 0
+	Mass 100
+	Obituary "%o got electrocuted by a lightning tower."
+	States
+	{
+	Spawn:
+		AAAN N 10  Bright A_Look
+		AAAN O 10  Bright A_Look
+		AAAN P 10  Bright A_Look
+		AAAN Q 10  Bright A_Look
+		Loop
+	See:
+		AAAN N 4  Bright A_Chase
+		AAAN O 4  Bright A_Chase
+		AAAN P 4  Bright A_Chase
+		AAAN Q 4  Bright A_Chase
+		Loop
+	Missile:
+		AAAN N 0 Bright A_FaceTarget
+		AAAN N 1 Bright
+		AAAN O 1 Bright A_CustomMissile("ValiantPlamsa", 32)
+		AAAN P 1 Bright
+		AAAN Q 1 Bright A_SpidRefire
+		Goto Missile
+		}
+}
+
+ACTOR SuicideBomber 25084//replaces DeadLostSoul 23
+{
+	Health 60
+	Speed 10
+	Radius 20
+	Height 56
+	Damage 96
+	ReactionTime 8
+	PainChance 5
+	Mass 100
+	Monster
+	SeeSound "shotguy/sight"
+	PainSound "shotguy/pain"
+	Obituary "%o hugged a suicide bomber."
+	HitObituary "%o hugged a suicide bomber."
+	States
+	{
+		Spawn:
+			AAAO DE 10 A_Look
+			Loop
+		See:
+			AAAO G 0 A_PlaySoundEx("valkt/death",Auto,false,0)
+			AAAO DDDEEEFFFGGG 2  A_Chase
+			Loop
+		Pain:
+			AAAO D 3
+			AAAO D 3 A_Pain
+			Goto See
+		Melee:
+			Goto Death
+		Death:
+			AAAO D 0 Bright A_Detonate
+			AAAP A 5 Bright A_PlaySoundEx("weapons/rocklx",Auto,false,0)
+			AAAP B 5 Bright
+			AAAP C 5 A_Fall
+			AAAP D 5 A_XScream
+			AAAP EFG 5
+			AAAP H -1
+			Stop
+	}
+}
+
+ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
+{
+	Health 7500
+	Radius 20
+	Height 56
+	Mass 500
+	Speed 26
+	PainChance 10
+	ReactionTime 4
+	Monster
+	MaxTargetRange 896
+	+QUICKTORETALIATE
+	+FLOORCLIP
+	+NOTARGET
+	SeeSound "vile/sight"
+	PainSound "vile/pain"
+	DeathSound "vile/death"
+	ActiveSound "vile/active"
+	MeleeSound "vile/stop"
+	Obituary "%o couldn't avoid the Super Vile's fire."
+	States
+	{
+	Spawn:
+		AAAP NO 10 Bright A_LOOK
+		Loop
+	See:
+		AAAP PPQQRRSS 2 A_VILECHASE
+		AAAP TTUU 2 A_VILECHASE
+		Loop
+	Missile:
+		AAAQ A 0 Bright A_VILESTART
+		AAAQ A 10 Bright A_FACETARGET
+		AAAQ B 8 Bright A_VILETARGET
+		AAAQ C 6 Bright A_FACETARGET
+		AAAQ D 6 Bright A_FACETARGET
+		AAAQ E 6 Bright A_FACETARGET
+		AAAQ C 6 Bright A_FACETARGET
+		AAAQ D 6 Bright A_FACETARGET
+		AAAQ E 6 Bright A_FACETARGET
+		AAAQ C 6 Bright A_FACETARGET
+		AAAQ D 6 Bright A_FACETARGET
+		AAAQ E 6 Bright A_FACETARGET
+		AAAQ C 6 Bright A_FACETARGET
+		AAAQ D 6 Bright A_FACETARGET
+		AAAQ E 6 Bright A_FACETARGET
+		AAAQ C 6 Bright A_FACETARGET
+		AAAQ D 6 Bright A_FACETARGET
+		AAAQ E 6 Bright A_FACETARGET
+		AAAQ CCDEE 8 Bright
+		Goto See
+	Heal:
+		AAAQ FF 17 Bright
+		AAAQ F 16 Bright
+		Goto See
+	Pain:
+		AAAQ G 5
+		AAAQ G 5 A_PAIN
+		Goto See
+	Death:
+		AAAQ G 7
+		AAAQ H 7 A_SCREAM
+		AAAQ I 7
+		AAAQ J 7 A_FALL
+		AAAQ KLM 7
+		AAAQ N 7 A_DIE
+		AAAQ O -1
+		Stop
+	}
+}
+
+ACTOR ValiantTree1 25086//ShortRedColumn 33
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AAAQ P -1
+    Stop
+  }
+}
+
+ACTOR ValiantTree2 25087//Stalagtite 47
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AAAQ Q -1
+    Stop
+  }
+}
+
+ACTOR ValiantTree3 25088//SkullColumn 37
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AAAQ R -1
+    Stop
+  }
+}
+
+ACTOR ValiantTree4 25089//TallGreenColumn 30
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AAAQ S -1
+    Stop
+  }
+}
+
+ACTOR ValiantTree5 25090//TallRedColumn 32
+{
+  Radius 16
+  Height 52
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AAAQ T -1
+    Stop
+  }
+}
+
+ACTOR CowHead 25091//UNKNOWN
+{
+  Radius 16
+  Height 40
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    COW2 A -1
+    Stop
+  }
+}
+
+ACTOR ValiantDarkDemon 25092//replaces UNKOWN
+{
+//THE ACTOR PROPS HAVE TO BE DIFFERENT FROM THE REGU;LAR DEMON JUST NOT SURE ABOUT IT
+  Game Doom
+  SpawnID 8
+  Health 150
+  PainChance 180
+  Speed 12
+  Radius 30
+  Height 56
+  Mass 400
+  ReactionTime 8
+  Monster
+  +FLOORCLIP
+  SeeSound "demon/sight"
+  AttackSound "demon/melee"
+  PainSound "demon/pain"
+  DeathSound "demon/death"
+  ActiveSound "demon/active"
+  Obituary "%o was bit by a super demon."
+  States
+  {
+  Spawn:
+    AAAQ UV 10 A_Look
+    Loop
+  See:
+    AAAQ UUVVWWXX 2  A_Chase
+    Loop
+  Melee:
+    AAAR AB 3  A_FaceTarget
+    AAAR C 18  A_SargAttack
+    Goto See
+  Pain:
+    AAAR D 2 
+    AAAR D 2  A_Pain
+    Goto See
+  Death:
+    AAAR E 8
+    AAAR F 8 A_Scream
+    AAAR G 4
+    AAAR H 4 A_NoBlocking
+    AAAR I 4
+    AAAR J -1
+    Stop
+  Raise:
+    AAAR D 5
+    AAAR IHGFE 5
+    Goto See
+  }
+}
+
+ACTOR ValiantLostSoul : LostSoul 25093//LostSoul 3006
+{
+  States
+  {
+  Spawn:
+    AAAS AB 10 Bright A_Look
+    Loop
+  See:
+    AAAS AB 6 Bright A_Chase
+    Loop
+  Missile:
+    AAAS C 10 Bright A_FaceTarget
+    AAAS D 4 Bright A_SkullAttack
+    AAAS CD 4 Bright
+    Goto Missile+2
+  Pain:
+    AAAS E 3 Bright
+    AAAS E 3 Bright A_Pain
+    Goto See
+  Death:
+    AAAS F 6 Bright
+    AAAS G 6 Bright A_Scream
+    AAAS H 6 Bright
+    AAAS I 6 Bright A_NoBlocking
+    AAAS J 6
+    AAAS K 6
+    Stop
+  }
+}
+
+////////////////////
+////			////
+////  Epic1     ////
+////			////
+////////////////////
+
+
+ACTOR Epic1A1 : GreenTorch 25094//GreenTorch 45
+{ States{ Spawn: AAAS RSTU 4 Bright 
+Loop}}
+
+ACTOR Epic1A2 : TallGreenColumn 25095//TallGreenColumn 30
+{ States{ Spawn: AAAS V -1 
+Loop}}
+
+ACTOR Epic1A3 : ShortGreenColumn 25096//ShortGreenColumn 31
+{ States{ Spawn: AAAS W -1 
+Loop}}
+
+ACTOR Epic1A4 : TallRedColumn 25097//TallRedColumn 32
+{ States{ Spawn: AAAS X -1 
+Loop}}
+
+ACTOR Epic1A5 : ShortRedColumn 25098//ShortRedColumn 33
+{ States{ Spawn: AAAS Y -1 
+Loop}}
+
+ACTOR Epic1A6 : SkullColumn 25099//SkullColumn 37
+{ States{ Spawn: AAAS Z -1 
+Loop}}
+
+//IMP 3001
+ACTOR Epic1A7 : DoomImp 25100//DoomImp 3001
+{
+  SeeSound "imp/sight"
+  PainSound "imp/pain"
+  DeathSound "imp/death"
+  ActiveSound "imp/active"
+  States
+  {
+  Spawn:
+    AAAT AB 10 A_Look
+    Loop
+  See:
+    AAAT AABBCCDD 3 A_Chase
+    Loop
+  Melee:
+  Missile:
+    AAAT EF 8 A_FaceTarget
+    AAAT G 6 A_TroopAttack
+    Goto See
+  Pain:
+    AAAT H 2
+    AAAT H 2 A_Pain
+    Goto See
+  Death:
+    AAAT I 8
+    AAAT J 8 A_Scream
+    AAAT K 6
+    AAAT L 6 A_NoBlocking
+    AAAT M -1
+    Stop
+  XDeath:
+    AAAT N 5
+    AAAT O 5 A_XScream
+    AAAT P 5
+    AAAT Q 5 A_NoBlocking
+    AAAT RST 5
+    AAAT U -1
+    Stop
+  Raise:
+    AAAT ML 8
+    AAAT KJI 6
+    Goto See
+  }
+}
+
+
+ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
+{
+  SeeSound "grunt/sight"
+  AttackSound "grunt/attack"
+  PainSound "grunt/pain"
+  DeathSound "grunt/death"
+  ActiveSound "grunt/active"
+  States
+  {
+  Spawn:
+    AAAU AB 10 A_Look
+    Loop
+  See:
+    AAAU AABBCCDD 4 A_Chase
+    Loop
+  Missile:
+    AAAU E 10 A_FaceTarget
+    AAAU F 8 A_PosAttack
+    AAAU E 8
+    Goto See
+  Pain:
+    AAAU G 3
+    AAAU G 3 A_Pain
+    Goto See
+  Death:
+    AAAU H 5
+    AAAU I 5 A_Scream
+    AAAU J 5 A_NoBlocking
+    AAAU K 5
+    AAAU L -1
+    Stop
+  XDeath:
+    AAAU M 5
+    AAAU N 5 A_XScream
+    AAAU O 5 A_NoBlocking
+    AAAU PQRST 5
+    AAAU U -1
+    Stop
+  Raise:
+    AAAU K 5
+    AAAU JIH 5
+    Goto See
+  }
+}
+
+
+ACTOR Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
+{
+  SeeSound "chainguy/sight"
+  PainSound "chainguy/pain"
+  DeathSound "chainguy/death"
+  ActiveSound "chainguy/active"
+  AttackSound "chainguy/attack"
+  States
+  {
+  Spawn:
+    AAAV AB 10 A_Look
+    Loop
+  See:
+    AAAV AABBCCDD 3 A_Chase
+    Loop
+  Missile:
+    AAAV E 10 A_FaceTarget
+    AAAV FE 4 Bright A_CPosAttack
+    AAAV F 1 A_CPosRefire
+    Goto Missile+1
+  Pain:
+    AAAV G 3
+    AAAV G 3 A_Pain
+    Goto See
+  Death:
+    AAAV H 5
+    AAAV I 5 A_Scream
+    AAAV J 5 A_NoBlocking
+    AAAV KLM 5
+    AAAV N -1
+    Stop
+  XDeath:
+    AAAV O 5 
+    AAAV P 5 A_XScream
+    AAAV Q 5 A_NoBlocking
+    AAAV RS 5
+    AAAV T -1
+    Stop
+  Raise:
+    AAAV N 5
+    AAAV MLKJIH 5
+    Goto See
+  }
+}
+
+
+
+ACTOR Epic1A10 : Revenant 25103//REVENANT 66
+{
+  SeeSound "skeleton/sight"
+  PainSound "skeleton/pain"
+  DeathSound "skeleton/death"
+  ActiveSound "skeleton/active"
+  MeleeSound "skeleton/melee"
+  States
+  {
+  Spawn:
+    AAAW AB 10 A_Look
+    Loop
+  See:
+    AAAW AABBCCDDEEFF 2 A_Chase
+    Loop
+  Melee:
+    AAAW G 0 A_FaceTarget
+    AAAW G 6 A_SkelWhoosh
+    AAAW H 6 A_FaceTarget
+    AAAW I 6 A_SkelFist
+    Goto See
+  Missile:
+    AAAW J 0 Bright A_FaceTarget
+    AAAW J 10 Bright A_FaceTarget
+    AAAW K 10 A_SkelMissile
+    AAAW K 10 A_FaceTarget
+    Goto See
+  Pain:
+    AAAW L 5
+    AAAW L 5 A_Pain
+    Goto See
+  Death:
+    AAAW LM 7
+    AAAW N 7 A_Scream
+    AAAW O 7 A_NoBlocking
+    AAAW P 7
+    AAAW Q -1
+    Stop
+  Raise:
+    AAAW Q 5
+    AAAW PONML 5
+    Goto See
+  }
+}
+
+
+
+ACTOR Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
+{
+  SeeSound "shotguy/sight"
+  AttackSound "shotguy/attack"
+  PainSound "shotguy/pain"
+  DeathSound "shotguy/death"
+  ActiveSound "shotguy/active"
+  States
+  {
+  Spawn:
+    AAAX AB 10 A_Look
+    Loop
+  See:
+    AAAX AABBCCDD 3 A_Chase
+    Loop
+  Missile:
+    AAAX E 10 A_FaceTarget
+    AAAX F 10 Bright A_SPosAttackUseAtkSound
+    AAAX E 10
+    Goto See
+  Pain:
+    AAAX G 3
+    AAAX G 3 A_Pain
+    Goto See
+  Death:
+    AAAX H 5
+    AAAX I 5 A_Scream
+    AAAX J 5 A_NoBlocking
+    AAAX K 5
+    AAAX L -1
+    Stop
+  XDeath:
+    AAAX M 5
+    AAAX N 5 A_XScream
+    AAAX O 5 A_NoBlocking
+    AAAX PQRST 5
+    AAAX U -1
+    Stop
+  Raise:
+    AAAX L 5
+    AAAX KJIH 5
+    Goto See
+  }
+}
+
+////////////////////
+////			////
+////  Epic2     ////
+////			////
+////////////////////
+
+ACTOR Epic2A1 : Column 25105//Column 2028
+{ States{ Spawn: AAAX V -1 
+Loop}}
+ACTOR Epic2A2 : DeadStick 25106//DeadStick 25
+{ States{ Spawn: AAAX W -1 
+Loop}}
+ACTOR Epic2A3 : HeadsOnAStick 25107//HeadsOnAStick 28
+{ States{ Spawn: AAAX X -1 
+Loop}}
+ACTOR Epic2A4 : HeadOnAStick 25108//HeadOnAStick 27
+{ States{ Spawn: AAAX Y -1 
+Loop}}
+ACTOR Epic2A5 : ShortRedColumn 25109//ShortRedColumn 33
+{ States{ Spawn: AAAX Z -1 
+Loop}}
+
+ACTOR Epic2A6 : Medikit 25110// : Health 24
+{
+  States
+  {
+  Spawn:
+    AAAY A -1
+    Stop
+  }
+}
+
+ACTOR Epic2A7 : CustomInventory 25111//Plasmagun 30
+{
+  States
+  {
+  Spawn:
+    AAAY B -1
+    Stop
+  Pickup:
+  TNT1 A 0 A_GiveInventory("PlasmaRifle")
+  Stop
+  }
+}
+
+ACTOR Epic2A8 : CustomInventory 25112//Plasmagun 29
+{
+  States
+  {
+  Spawn:
+    AAAY C -1
+    Stop
+  Pickup:
+  TNT1 A 0 A_GiveInventory("RocketLauncher")
+  Stop
+  }
+}
+
+ACTOR Epic2A9 : Stimpack 25113//23
+{
+  States
+  {
+  Spawn:
+    AAAY D -1
+    Stop
+  }
+}
+
+ACTOR Epic2A10 : TorchTree 25114//43
+{
+  States
+  {
+  Spawn:
+    AAAY E -1
+    Stop
+  }
+}
+
+ACTOR Epic2A11 : BigTree 25115//54	
+{
+  States
+  {
+  Spawn:
+    AAAY F -1
+    Stop
+  }
+}
+
+ACTOR Epic2A12 : Stalagtite 25116//47	
+{
+  States
+  {
+  Spawn:
+    AAAY G -1
+    Stop
+  }
+}
+
+ACTOR Epic2A13 : NonsolidMeat3 25117//51
+{
+  States
+  {
+  Spawn:
+    AAAY H -1
+    Stop
+  }
+}
+
+ACTOR Epic2A14 : NonsolidMeat4  25118//52
+{
+  States
+  {
+  Spawn:
+    AAAY I -1
+    Stop
+  }
+}
+
+ACTOR Epic2A15 : NonsolidMeat5 25119//53
+{
+  States
+  {
+  Spawn:
+    AAAY J -1
+    Stop
+  }
+}
+
+ACTOR Epic2A16 : CustomInventory 25120//Cell  75
+{
+  States
+  {
+  Spawn:
+    AAAY K -1
+    Stop
+  Pickup:
+  TNT1 A 0 A_GiveInventory("Cell")
+  Stop
+  }
+}
+
+ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
+{
+  States
+  {
+  Spawn:
+    AAAY L -1
+    Stop
+  Pickup:
+  TNT1 A 0 A_GiveInventory("CellPack")
+  Stop
+  }
+}
+
+ACTOR Epic2A18 : CustomInventory 25122//Clip  2007
+{
+  States
+  {
+  Spawn:
+    AAAY M -1
+    Stop
+  Pickup:
+  TNT1 A 0 A_GiveInventory("Clip")
+  Stop
+  }
+}
+
+////////////////////////////////////////////////////////////////
+
+ACTOR Epic2A19 : TallGreenColumn 25123//TallGreenColumn 30 //////////////////////problem here found no actors in epic2.wad probably a bad parent class. Find parent class and check its sprite with any other classes in doom2
+{ States{ Spawn: AAAY N -1 
+Loop}}
+
+ACTOR Epic2A20 : ShortGreenColumn 25124//ShortGreenColumn 31
+{ States{ Spawn: AAAY O -1 
+Loop}}
+
+ACTOR Epic2A21 : TallRedColumn 25125//TallRedColumn 32////same issue?
+{ States{ Spawn: AAAY P -1 
+Loop}}
+
+ACTOR Epic2A22 : SkullColumn 25126//SkullColumn 37////same issue?
+{ States{ Spawn: AAAY Q -1 
+Loop}}
+
+ACTOR Epic2A23 : BurningBarrel 25127//70
+{
+  States
+  {
+  Spawn:
+    AAAY RST 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A24 : ExplosiveBarrel 25128//2035
+{
+  States
+  {
+  Spawn:
+    AAAZ AB 6
+    Loop
+  Death:
+    AAAZ C 5 Bright
+    AAAZ D 5 Bright A_Scream
+    AAAZ E 5 Bright
+    AAAZ F 5 Bright A_Explode
+    AAAZ G 10 Bright
+    TNT1 A 1050 Bright A_BarrelDestroy
+    TNT1 A 5 A_Respawn
+    Wait
+  }
+}
+
+ACTOR Epic2A25 : RedTorch 25129//46
+{
+  States
+  {
+  Spawn:
+    AAAZ HIJK 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A26 : BlueTorch 25130//44
+{
+  States
+  {
+  Spawn:
+    AAAZ LMNO 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A27 : ShortGreenTorch 25131//56
+{
+  States
+  {
+  Spawn:
+    AAAZ PQRS 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A28 : GreenTorch 25132//45
+{
+  States
+  {
+  Spawn:
+    AAAZ TUVW 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A29 : Allmap 25133//2026
+{
+  States
+  {
+  Spawn:
+    AABA ABCDCB 6 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A30 : ShortRedTorch 25134//57
+{
+  Radius 16
+  Height 37
+  ProjectilePassHeight -16
+  +SOLID
+  States
+  {
+  Spawn:
+    AABA EFGH 4 Bright
+    Loop
+  }
+}
+//Missing an actor here throwing off the sprites
+ACTOR Epic2A31 : HealthBonus 25135//2014 : Health
+{
+  States
+  {
+  Spawn:
+    AABA IJKLKJ 6
+    Loop
+  }
+}
+
+ACTOR Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
+{
+  States
+  {
+  Spawn:
+    AABA MNOPON 6
+    Loop
+  }
+}
+
+ACTOR Epic2A33 : ShortBlueTorch 25137//55
+{
+  States
+  {
+  Spawn:
+    AABA QRST 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A34 : TechLamp2 25138//86
+{
+  States
+  {
+  Spawn:
+    AABA UVWX 4 Bright
+    Loop
+  }
+}
+
+ACTOR Epic2A35 : TechPillar 25139//48
+{
+  States
+  {
+  Spawn:
+    AABA Y -1
+    Loop
+  }
+}
+
+ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
+{
+  SeeSound "imp/sight"
+  PainSound "imp/pain"
+  DeathSound "imp/death"
+  ActiveSound "imp/active"
+  States
+  {
+  Spawn:
+    AABB AB 10 A_Look
+    Loop
+  See:
+    AABB AABBCCDD 3 A_Chase
+    Loop
+  Melee:
+  Missile:
+    AABB EF 8 A_FaceTarget
+    AABB G 6 A_TroopAttack
+    Goto See
+  Pain:
+    AABB H 2
+    AABB H 2 A_Pain
+    Goto See
+  Death:
+    AABB I 8
+    AABB J 8 A_Scream
+    AABB K 6
+    AABB L 6 A_NoBlocking
+    AABB M -1
+    Stop
+  XDeath:
+    AABB N 5
+    AABB O 5 A_XScream
+    AABB P 5
+    AABB Q 5 A_NoBlocking
+    AABB RST 5
+    AABB U -1
+    Stop
+  Raise:
+    AABB ML 8
+    AABB KJI 6
+    Goto See
+  }
+}
+
+
+///////////////////////////////////////////////
+//REVENANT
+///////////////////////////////////////////////
+
+//Revenant 25103//REVENANT 66
+
+ACTOR Epic2A37 : PainElemental 25141//71
+{
+  SeeSound "pain/sight"
+  PainSound "pain/pain"
+  DeathSound "pain/death"
+  ActiveSound "pain/active"
+  States
+  {
+  Spawn:
+    AABC A 10 A_Look
+    Loop
+  See:
+    AABC AABBCC 3 A_Chase
+    Loop
+  Missile:
+    AABC D 5 A_FaceTarget
+    AABC E 5 A_FaceTarget
+    AABC F 5 Bright A_FaceTarget
+    AABC F 0 Bright A_PainAttack
+    Goto See
+  Pain:
+    AABC G 6
+    AABC G 6 A_Pain
+    Goto See
+  Death:
+    AABC H 8 Bright
+    AABC I 8 Bright A_Scream
+    AABC JK 8 Bright
+    AABC L 8 Bright A_PainDie
+    AABC M 8 Bright
+    Stop
+  Raise:
+    AABC MLKJIH 8
+    Goto See
+  }
+}
+
+/////////////////////////////////////////////
+///////////////ChaingunGuy 25102//CHAINGUN GUY 65
+
+ACTOR Epic2A38 : WolfensteinSS 25142//84
+{
+  SeeSound "wolfss/sight"
+  PainSound "wolfss/pain"
+  DeathSound "wolfss/death"
+  ActiveSound "wolfss/active"
+  AttackSound "wolfss/attack"
+  States
+  {
+  Spawn:
+    AABD AB 10 A_Look
+    Loop
+  See:
+    AABD AABBCCDD 3 A_Chase
+    Loop
+  Missile:
+    AABD E 10 A_FaceTarget
+    AABD F 10 A_FaceTarget
+    AABD G 4 Bright A_CPosAttack
+    AABD F 6 A_FaceTarget
+    AABD G 4 Bright A_CPosAttack
+    AABD F 1 A_CPosRefire
+    Goto Missile+1
+  Pain:
+    AABD H 3
+    AABD H 3 A_Pain
+    Goto See
+  Death:
+    AABD I 5
+    AABD J 5 A_Scream
+    AABD K 5 A_NoBlocking
+    AABD L 5
+    AABD M -1
+    Stop
+  XDeath:
+    AABD N 5 
+    AABD O 5 A_XScream
+    AABD P 5 A_NoBlocking
+    AABD QRSTU 5
+    AABD V -1
+    Stop
+  Raise:
+    AABD M 5
+    AABD LKJI 5
+    Goto See 
+  }
+}
+
+ACTOR Epic2A39 : TechLamp 25143//85
+{
+  States
+  {
+  Spawn:
+    AABE ABCD 4 Bright
+    Loop
+  }
+}
+
+//UP TO 25149 IS TAKEN, START WITH 25150 FROM HERE

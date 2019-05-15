@@ -1,0 +1,724 @@
+
+
+map CC401 lookup "Renewed Faith"
+{
+	titlepatch = "CC4LV00"
+	next = "CC402"
+	secretnext = "CC402"
+	ExitPic = "CC4LV32"
+	EnterPic = "CC4LV32"
+	sky1 = "CC4SKY1"
+	music = "D_CC401"
+	InterMusic = "D_CC434"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC402 lookup "Slugfest"
+{
+	titlepatch = "CC4LV01"
+	next = "CC403"
+	secretnext = "CC403"
+	sky1 = "CC4SKY1"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	music = "D_CC402"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC403 lookup "Three is a Charm"
+{
+	titlepatch = "CC4LV02"
+	next = "CC404"
+	secretnext = "CC404"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC403"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC404 lookup "Polluted Paths"
+{
+	titlepatch = "CC4LV03"
+	next = "CC405"
+	secretnext = "CC405"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC404"
+	InterMusic = "D_CC434"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC405 lookup "Installation Decrepit"
+{
+	titlepatch = "CC4LV04"
+	next = "CC406"
+	secretnext = "CC406"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC405"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC406 lookup "Survival Instincts"
+{
+	titlepatch = "CC4LV05"
+	next = "CC407"
+	secretnext = "CC407"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	sucktime = 1
+	music = "D_CC406"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC407 lookup "Hoedown"
+{
+	titlepatch = "CC4LV06"
+	next = "CC408"
+	secretnext = "CC408"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	map07special
+	music = "D_CC407"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC408 lookup "Cold Reception"
+{
+	titlepatch = "CC4LV07"
+	next = "CC409"
+	secretnext = "CC409"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC408"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC409 lookup "Ochregerde"
+{
+	titlepatch = "CC4LV08"
+	next = "CC410"
+	secretnext = "CC410"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "$MUSIC_IN_CIT"
+	InterMusic = "D_CC409"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC410 lookup "Inner Fear"
+{
+	titlepatch = "CC4LV09"
+	next = "CC411"
+	secretnext = "CC411"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC410"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC411 lookup "The Grotto"
+{
+	titlepatch = "CC4LV10"
+	next = "CC412"
+	secretnext = "CC412"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY1"
+	music = "D_CC411"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC412 lookup "Nectar of the Gods"
+{
+	titlepatch = "CC4LV11"
+	next = "CC413"
+	secretnext = "CC413"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC412"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC413 lookup "Viral Implant"
+{
+	titlepatch = "CC4LV12"
+	next = "CC414"
+	secretnext = "CC414"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC413"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC414 lookup "Downriver"
+{
+	titlepatch = "CC4LV13"
+	next = "CC415"
+	secretnext = "CC415"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC414"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC415 lookup "Decomposition"
+{
+	titlepatch = "CC4LV14"
+	next = "CC416"
+	secretnext = "CC431"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC415"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC416 lookup "The Forgotten Base"
+{
+	titlepatch = "CC4LV15"
+	next = "CC417"
+	secretnext = "CC417"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC416"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC417 lookup "Metastasize"
+{
+	titlepatch = "CC4LV16"
+	next = "CC418"
+	secretnext = "CC418"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC417"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC418 lookup "Suburbia"
+{
+	titlepatch = "CC4LV17"
+	next = "CC419"
+	secretnext = "CC419"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC418"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC419 lookup "Technoprison"
+{
+	titlepatch = "CC4LV18"
+	next = "CC420"
+	secretnext = "CC420"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC419"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC420 lookup "Interstellar Sickness"
+{
+	titlepatch = "CC4LV19"
+	next = "CC421"
+	secretnext = "CC421"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY2"
+	music = "D_CC420"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC421 lookup "Shaman's Device"
+{
+	titlepatch = "CC4LV20"
+	next = "CC422"
+	secretnext = "CC422"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC421"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC422 lookup "Hell's Limits"
+{
+	titlepatch = "CC4LV21"
+	next = "CC423"
+	secretnext = "CC423"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC422"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC423 lookup "Melting Universe II"
+{
+	titlepatch = "CC4LV22"
+	next = "CC424"
+	secretnext = "CC424"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC423"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC424 lookup "Detachment"
+{
+	titlepatch = "CC4LV23"
+	next = "CC425"
+	secretnext = "CC425"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC424"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC425 lookup "Nightmare Complex"
+{
+	titlepatch = "CC4LV24"
+	next = "CC426"
+	secretnext = "CC426"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC425"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC426 lookup "Reaper's Digest"
+{
+	titlepatch = "CC4LV25"
+	next = "CC427"
+	secretnext = "CC427"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC426"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC427 lookup "Vulcana II"
+{
+	titlepatch = "CC4LV26"
+	next = "CC428"
+	secretnext = "CC428"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC427"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC428 lookup "Crucifix Held Close"
+{
+	titlepatch = "CC4LV27"
+	next = "CC429"
+	secretnext = "CC429"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC428"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC429 lookup "Spiritual Holocaust"
+{
+	titlepatch = "CC4LV28"
+	next = "CC430"
+	secretnext = "CC430"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC429"
+	InterMusic = "D_CC433"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC430 lookup "Ragnarok"
+{
+	titlepatch = "CC4LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CC4SKY3"
+	ExitPic = "CC4LV34"
+	EnterPic = "CC4LV35"
+	music = "D_CC430"
+	InterMusic = "D_CC435"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC431 lookup "Mortar Combat"
+{
+	titlepatch = "CC4LV30"
+	next = "CC416"
+	secretnext = "CC432"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC431"
+	InterMusic = "D_CC434"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC432 lookup "Mutare"
+{
+	titlepatch = "CC4LV31"
+	next = "CC416"
+	secretnext = "CC416"
+	ExitPic = "CC4LV33"
+	EnterPic = "CC4LV33"
+	sky1 = "CC4SKY3"
+	music = "D_CC432"
+	InterMusic = "D_CC434"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+	
+	
+	
+}
+
+map CC435 "Midnight Tek Frenzy"
+{
+	titlepatch = "CC4LV34"
+	next = "CC401"
+	secretnext = "CC401"
+	sky1 = "CC4SKY2"
+	music = "D_MUS35"
+	sucktime = 1
+	compat_boomscroll = 1
+	compat_missileclip = 1
+	compat_soundtarget = 1
+	compat_trace = 1
+	nojump
+	nocrouch
+}
+

@@ -1,0 +1,548 @@
+
+
+map EP201 lookup "Entrance"
+{
+	titlepatch = "EP2LV00"
+	next = "EP202"
+	secretnext = "EP202"
+	ExitPic = "EP2LV32"
+	EnterPic = "EP2LV32"
+	sky1 = "EPIISKY1"
+	par = 30
+	music = "D_EP201"
+	InterMusic = "D_EP233"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP202 lookup "Voodoo"
+{
+	titlepatch = "EP2LV01"
+	next = "EP203"
+	secretnext = "EP203"
+	sky1 = "EPIISKY1"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	par = 90
+	music = "D_EP202"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP203 lookup "Black magic"
+{
+	titlepatch = "EP2LV02"
+	next = "EP204"
+	secretnext = "EP204"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 120
+	music = "D_EP203"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP204 lookup "Sarcophagus"
+{
+	titlepatch = "EP2LV03"
+	next = "EP205"
+	secretnext = "EP205"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 120
+	music = "D_EP204"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP205 lookup "Abu Gurab"
+{
+	titlepatch = "EP2LV04"
+	next = "EP206"
+	secretnext = "EP206"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 90
+	music = "D_EP205"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP206 lookup "Revived bones"
+{
+	titlepatch = "EP2LV05"
+	next = "EP207"
+	secretnext = "EP207"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 150
+	sucktime = 1
+	music = "D_EP206"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP207 lookup "Hell guard"
+{
+	titlepatch = "EP2LV06"
+	next = "EP208"
+	secretnext = "EP208"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 120
+	map07special
+	music = "D_EP207"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP208 lookup "Karnak temple"
+{
+	titlepatch = "EP2LV07"
+	next = "EP209"
+	secretnext = "EP209"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 120
+	music = "D_EP208"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP209 lookup "Mystery"
+{
+	titlepatch = "EP2LV08"
+	next = "EP210"
+	secretnext = "EP210"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 270
+	music = "D_EP209"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP210 lookup "Goldmine"
+{
+	titlepatch = "EP2LV09"
+	next = "EP211"
+	secretnext = "EP211"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 90
+	music = "D_EP210"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP211 lookup "The Tower"
+{
+	titlepatch = "EP2LV10"
+	next = "EP212"
+	secretnext = "EP212"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY1"
+	par = 210
+	music = "D_EP211"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP212 lookup "Alien ship"
+{
+	titlepatch = "EP2LV11"
+	next = "EP213"
+	secretnext = "EP213"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP212"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP213 lookup "Mebius"
+{
+	titlepatch = "EP2LV12"
+	next = "EP214"
+	secretnext = "EP214"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP213"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP214 lookup "Orion's Belt"
+{
+	titlepatch = "EP2LV13"
+	next = "EP215"
+	secretnext = "EP215"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP214"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP215 lookup "Astral base"
+{
+	titlepatch = "EP2LV14"
+	next = "EP216"
+	secretnext = "EP231"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 210
+	music = "D_EP215"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP216 lookup "DNA replicate"
+{
+	titlepatch = "EP2LV15"
+	next = "EP217"
+	secretnext = "EP217"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP216"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP217 lookup "Hologram"
+{
+	titlepatch = "EP2LV16"
+	next = "EP218"
+	secretnext = "EP218"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 420
+	music = "D_EP217"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP218 lookup "Gunman"
+{
+	titlepatch = "EP2LV17"
+	next = "EP219"
+	secretnext = "EP219"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP218"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP219 lookup "Escape"
+{
+	titlepatch = "EP2LV18"
+	next = "EP220"
+	secretnext = "EP220"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 210
+	music = "D_EP219"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP220 lookup "Anomaly zone"
+{
+	titlepatch = "EP2LV19"
+	next = "EP221"
+	secretnext = "EP221"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EP2SKY2"
+	par = 150
+	music = "D_EP220"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP221 lookup "Shore dream"
+{
+	titlepatch = "EP2LV20"
+	next = "EP222"
+	secretnext = "EP222"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 240
+	music = "D_EP221"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP222 lookup "Mummy tomb"
+{
+	titlepatch = "EP2LV21"
+	next = "EP223"
+	secretnext = "EP223"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 150
+	music = "D_EP222"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP223 lookup "Oasis"
+{
+	titlepatch = "EP2LV22"
+	next = "EP224"
+	secretnext = "EP224"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 180
+	music = "D_EP223"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP224 lookup "Hentiamenti"
+{
+	titlepatch = "EP2LV23"
+	next = "EP225"
+	secretnext = "EP225"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 150
+	music = "D_EP224"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP225 lookup "Per Nefer"
+{
+	titlepatch = "EP2LV24"
+	next = "EP226"
+	secretnext = "EP226"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 150
+	music = "D_EP225"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP226 lookup "Luxor"
+{
+	titlepatch = "EP2LV25"
+	next = "EP227"
+	secretnext = "EP227"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 300
+	music = "D_EP226"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP227 lookup "Ammut"
+{
+	titlepatch = "EP2LV26"
+	next = "EP228"
+	secretnext = "EP228"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 330
+	music = "D_EP227"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP228 lookup "Ogdoad"
+{
+	titlepatch = "EP2LV27"
+	next = "EP229"
+	secretnext = "EP229"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 420
+	music = "D_EP228"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP229 lookup "Mortuary"
+{
+	titlepatch = "EP2LV28"
+	next = "EP230"
+	secretnext = "EP230"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 300
+	music = "D_EP229"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP230 lookup "Amenthes"
+{
+	titlepatch = "EP2LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "EPIISKY3"
+	ExitPic = "EP2LV32"
+	EnterPic = "EP2LV32"
+	par = 180
+	allowmonstertelefrags
+	music = "D_EP230"
+	InterMusic = "D_EP235"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP231 lookup "Osirion"
+{
+	titlepatch = "EP2LV30"
+	next = "EP216"
+	secretnext = "EP232"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 120
+	music = "D_EP231"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}
+
+map EP232 lookup "The Harbour"
+{
+	titlepatch = "EP2LV31"
+	next = "EP216"
+	secretnext = "EP216"
+	ExitPic = "EP2LV33"
+	EnterPic = "EP2LV33"
+	sky1 = "EPIISKY3"
+	par = 30
+	music = "D_EP232"
+	InterMusic = "D_EP234"
+	sucktime = 1
+	compat_trace
+	nojump
+	nocrouch
+}

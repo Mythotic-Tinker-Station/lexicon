@@ -1,0 +1,515 @@
+
+
+map CC301 lookup "VENTILATOR"
+{
+	titlepatch = "CC3LV00"
+	next = "CC302"
+	secretnext = "CC302"
+	ExitPic = "CC3LV32"
+	EnterPic = "CC3LV32"
+	sky1 = "CC3SKY1"
+	music = "D_CC301"
+	InterMusic = "D_CC334"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC302 lookup "ION STORM"
+{
+	titlepatch = "CC3LV01"
+	next = "CC303"
+	secretnext = "CC303"
+	sky1 = "CC3SKY1"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	music = "D_CC302"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC303 lookup "MINEOPOLY"
+{
+	titlepatch = "CC3LV02"
+	next = "CC304"
+	secretnext = "CC304"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC303"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC304 lookup "UAC CHECKPOINT"
+{
+	titlepatch = "CC3LV03"
+	next = "CC305"
+	secretnext = "CC305"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC304"
+	InterMusic = "D_CC334"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC305 lookup "LIVING HELL"
+{
+	titlepatch = "CC3LV04"
+	next = "CC306"
+	secretnext = "CC306"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC305"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC306 lookup "FOREGONE DESTRUCTION"
+{
+	titlepatch = "CC3LV05"
+	next = "CC307"
+	secretnext = "CC307"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	sucktime = 1
+	music = "D_CC306"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC307 lookup "SIMPLE COMPLEX"
+{
+	titlepatch = "CC3LV06"
+	next = "CC308"
+	secretnext = "CC308"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	map07special
+	music = "D_CC307"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC308 lookup "IMPURE LIQUIDS"
+{
+	titlepatch = "CC3LV07"
+	next = "CC309"
+	secretnext = "CC309"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC308"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC309 lookup "AS THE DOCTOR SLEEPS"
+{
+	titlepatch = "CC3LV08"
+	next = "CC310"
+	secretnext = "CC310"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "$MUSIC_IN_CIT"
+	InterMusic = "D_CC309"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC310 lookup "ATLANTIS RISING"
+{
+	titlepatch = "CC3LV09"
+	next = "CC311"
+	secretnext = "CC311"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC310"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC311 lookup "THE GRIEVING OUTPOST"
+{
+	titlepatch = "CC3LV10"
+	next = "CC312"
+	secretnext = "CC312"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY1"
+	music = "D_CC311"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC312 lookup "BLACK RAIN"
+{
+	titlepatch = "CC3LV11"
+	next = "CC313"
+	secretnext = "CC313"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC312"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC313 lookup "WELCOME TO THE MACHINE"
+{
+	titlepatch = "CC3LV12"
+	next = "CC314"
+	secretnext = "CC314"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC313"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC314 lookup "MOUNTAINS AND MORTAR"
+{
+	titlepatch = "CC3LV13"
+	next = "CC315"
+	secretnext = "CC315"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC314"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC315 lookup "CLASH OF GALAXIES"
+{
+	titlepatch = "CC3LV14"
+	next = "CC316"
+	secretnext = "CC331"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC315"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC316 lookup "HANGMAN'S NOOSE"
+{
+	titlepatch = "CC3LV15"
+	next = "CC317"
+	secretnext = "CC317"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC316"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC317 lookup "MIND'S PRISON"
+{
+	titlepatch = "CC3LV16"
+	next = "CC318"
+	secretnext = "CC318"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC317"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC318 lookup "GODFORSAKEN HOLE"
+{
+	titlepatch = "CC3LV17"
+	next = "CC319"
+	secretnext = "CC319"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC318"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC319 lookup "SUBDUCTION"
+{
+	titlepatch = "CC3LV18"
+	next = "CC320"
+	secretnext = "CC320"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC319"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC320 lookup "HUITZILOPOCHTLI"
+{
+	titlepatch = "CC3LV19"
+	next = "CC321"
+	secretnext = "CC321"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY2"
+	music = "D_CC320"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC321 lookup "THE HERO'S RETURN"
+{
+	titlepatch = "CC3LV20"
+	next = "CC322"
+	secretnext = "CC322"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC321"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC322 lookup "SECOND ENTRY"
+{
+	titlepatch = "CC3LV21"
+	next = "CC323"
+	secretnext = "CC323"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC322"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC323 lookup "HARD ATTACK"
+{
+	titlepatch = "CC3LV22"
+	next = "CC324"
+	secretnext = "CC324"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC323"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC324 lookup "AMALGAMATION"
+{
+	titlepatch = "CC3LV23"
+	next = "CC325"
+	secretnext = "CC325"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC324"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC325 lookup "FATE IN BLOOD"
+{
+	titlepatch = "CC3LV24"
+	next = "CC326"
+	secretnext = "CC326"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC325"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC326 lookup "HYBRID ENVY"
+{
+	titlepatch = "CC3LV25"
+	next = "CC327"
+	secretnext = "CC327"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC326"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC327 lookup "RUBY ABYSS"
+{
+	titlepatch = "CC3LV26"
+	next = "CC328"
+	secretnext = "CC328"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC327"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC328 lookup "TOKEN ARCH-VILE"
+{
+	titlepatch = "CC3LV27"
+	next = "CC329"
+	secretnext = "CC329"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC328"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC329 lookup "FOR WE ARE MANY"
+{
+	titlepatch = "CC3LV28"
+	next = "CC330"
+	secretnext = "CC330"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC329"
+	InterMusic = "D_CC333"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC330 lookup "LEVIATHAN"
+{
+	titlepatch = "CC3LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CC3SKY3"
+	ExitPic = "CC3LV34"
+	EnterPic = "CC3LV35"
+	music = "D_CC330"
+	InterMusic = "D_CC335"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC331 lookup "DISARMING THE MECHANISM"
+{
+	titlepatch = "CC3LV30"
+	next = "CC316"
+	secretnext = "CC332"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC331"
+	InterMusic = "D_CC334"
+	sucktime = 1
+	
+	
+	
+}
+
+map CC332 lookup "INSTALLATION 07 WARSZAWA"
+{
+	titlepatch = "CC3LV31"
+	next = "CC316"
+	secretnext = "CC316"
+	ExitPic = "CC3LV33"
+	EnterPic = "CC3LV33"
+	sky1 = "CC3SKY3"
+	music = "D_CC332"
+	InterMusic = "D_CC334"
+	sucktime = 1
+	
+	
+	
+}

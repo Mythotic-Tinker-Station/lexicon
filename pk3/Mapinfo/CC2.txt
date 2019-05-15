@@ -1,0 +1,548 @@
+
+
+map CC201 lookup "THE FURNACE"
+{
+	titlepatch = "CC2LV00"
+	next = "CC202"
+	secretnext = "CC202"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 30
+	music = "D_CC201"
+	InterMusic = "D_CC233"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC202 lookup "COOLANT PLATFORM"
+{
+	titlepatch = "CC2LV01"
+	next = "CC203"
+	secretnext = "CC203"
+	sky1 = "SKY1"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	par = 90
+	music = "MUSIC_STALKS"
+	InterMusic = "D_CC233"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC203 lookup "SOURCE CONTROL"
+{
+	titlepatch = "CC2LV02"
+	next = "CC204"
+	secretnext = "CC204"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 120
+	music = "MUSIC_COUNTD"
+	InterMusic = "D_CC233"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC204 lookup "DEJA VU"
+{
+	titlepatch = "CC2LV03"
+	next = "CC205"
+	secretnext = "CC205"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 120
+	music = "$MUSIC_BETWEE"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC205 lookup "ELIXIR"
+{
+	titlepatch = "CC2LV04"
+	next = "CC206"
+	secretnext = "CC206"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 90
+	music = "$MUSIC_DOOM"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC206 lookup "THE VIEW"
+{
+	titlepatch = "CC2LV05"
+	next = "CC207"
+	secretnext = "CC207"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 150
+	sucktime = 1
+	music = "D_CC206"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC207 lookup "TO HELL AND BACK"
+{
+	titlepatch = "CC2LV06"
+	next = "CC208"
+	secretnext = "CC208"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 120
+	map07special
+	music = "$MUSIC_SHAWN"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC208 lookup "THE PIT"
+{
+	titlepatch = "CC2LV07"
+	next = "CC209"
+	secretnext = "CC209"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 120
+	music = "$MUSIC_DDTBLU"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC209 lookup "THE TRANSFORMER"
+{
+	titlepatch = "CC2LV08"
+	next = "CC210"
+	secretnext = "CC210"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 270
+	music = "$MUSIC_IN_CIT"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC210 lookup "INTERMISSION"
+{
+	titlepatch = "CC2LV09"
+	next = "CC211"
+	secretnext = "CC211"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 90
+	music = "$MUSIC_DEAD"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC211 lookup "BEYOND PAIN"
+{
+	titlepatch = "CC2LV10"
+	next = "CC212"
+	secretnext = "CC212"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY1"
+	par = 210
+	music = "$MUSIC_STLKS2"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC212 lookup "REDEMPTION"
+{
+	titlepatch = "CC2LV11"
+	next = "CC213"
+	secretnext = "CC213"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "$MUSIC_THEDA2"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC213 lookup "ANNIHILATION INVENTION"
+{
+	titlepatch = "CC2LV12"
+	next = "CC214"
+	secretnext = "CC214"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "$MUSIC_DOOM2"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC214 lookup "SHADOW OF EVIL"
+{
+	titlepatch = "CC2LV13"
+	next = "CC215"
+	secretnext = "CC215"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_CC214"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC215 lookup "CITY HEAT"
+{
+	titlepatch = "CC2LV14"
+	next = "CC216"
+	secretnext = "CC231"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 210
+	music = "D_CC215"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC216 lookup "SPIRIT WORLD HQ"
+{
+	titlepatch = "CC2LV15"
+	next = "CC217"
+	secretnext = "CC217"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "$MUSIC_DEAD2"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC217 lookup "THROUGH THE BLACK"
+{
+	titlepatch = "CC2LV16"
+	next = "CC218"
+	secretnext = "CC218"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 420
+	music = "D_CC217"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC218 lookup "INTERNAL REACHES 3"
+{
+	titlepatch = "CC2LV17"
+	next = "CC219"
+	secretnext = "CC219"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_CC218"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC219 lookup "THE MARBELOUS THREE"
+{
+	titlepatch = "CC2LV18"
+	next = "CC220"
+	secretnext = "CC220"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 210
+	music = "$MUSIC_SHAWN2"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC220 lookup "ENIGMA"
+{
+	titlepatch = "CC2LV19"
+	next = "CC221"
+	secretnext = "CC221"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY2"
+	par = 150
+	music = "D_CC220"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC221 lookup "UNDEAD NATION"
+{
+	titlepatch = "CC2LV20"
+	next = "CC222"
+	secretnext = "CC222"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 240
+	music = "D_CC221"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC222 lookup "THEMATIC ELEMENTS"
+{
+	titlepatch = "CC2LV21"
+	next = "CC223"
+	secretnext = "CC223"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 150
+	music = "D_CC222"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC223 lookup "DEATH MOUNTAIN"
+{
+	titlepatch = "CC2LV22"
+	next = "CC224"
+	secretnext = "CC224"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 180
+	music = "D_CC223"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC224 lookup "THE MUCUS FLOW"
+{
+	titlepatch = "CC2LV23"
+	next = "CC225"
+	secretnext = "CC225"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 150
+	music = "D_CC224"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC225 lookup "DESECRATION"
+{
+	titlepatch = "CC2LV24"
+	next = "CC226"
+	secretnext = "CC226"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 150
+	music = "$MUSIC_ADRIAN"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC226 lookup "GEIST HALLS"
+{
+	titlepatch = "CC2LV25"
+	next = "CC227"
+	secretnext = "CC227"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 300
+	music = "D_CC226"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC227 lookup "GETHSEMANE"
+{
+	titlepatch = "CC2LV26"
+	next = "CC228"
+	secretnext = "CC228"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 330
+	music = "D_CC227"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC228 lookup "NO ROOM"
+{
+	titlepatch = "CC2LV27"
+	next = "CC229"
+	secretnext = "CC229"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 420
+	music = "D_CC228"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC229 lookup "EVENT HORIZON"
+{
+	titlepatch = "CC2LV28"
+	next = "CC230"
+	secretnext = "CC230"
+	ExitPic = "CC2LV32"
+	EnterPic = "CC2LV32"
+	sky1 = "SKY3"
+	par = 300
+	music = "$MUSIC_SHAWN3"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC230 lookup "IN THREES"
+{
+	titlepatch = "CC2LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	ExitPic = "CC2LV33"
+	EnterPic = "CC2LV33"
+	par = 180
+	allowmonstertelefrags
+	music = "D_CC230"
+	InterMusic = "D_CC235"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC231 lookup "IDEE FIXE"
+{
+	titlepatch = "CC2LV30"
+	next = "CC216"
+	secretnext = "CC232"
+	ExitPic = "CC2LV3"
+	EnterPic = "CC2LV3"
+	sky1 = "SKY3"
+	par = 120
+	music = "D_CC231"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map CC232 lookup "SODDING DEATH"
+{
+	titlepatch = "CC2LV31"
+	next = "CC216"
+	secretnext = "CC216"
+	ExitPic = "CC2LV3"
+	EnterPic = "CC2LV3"
+	sky1 = "SKY3"
+	par = 30
+	music = "D_CC232"
+	InterMusic = "D_CC234"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}

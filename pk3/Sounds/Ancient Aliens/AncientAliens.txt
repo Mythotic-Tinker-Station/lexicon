@@ -1,0 +1,149 @@
+SoundInfo I'm leaving here as a reference for when we implement the acs scripts.
+
+
+/*dswlfhwl			dswlfhwl
+dseagle				dseagle
+dsberhwl			dsberhwl
+dsbsnhwl			dsbsnhwl
+dsgiorg				dsgiorg
+dsscream			dsscream
+
+dswlfhwl			AAwlfhwl
+dseagle				AAeagle
+dsberhwl			AAberhwl
+dsbsnhwl			AAbsnhwl
+dsgiorg				AAgiorg
+dsscream			AAscream
+*/
+
+AAkeenpn		AAkeenpn
+AAkeendt		AAkeendt
+AAsssit			AAsssit
+AAssdth			AAssdth
+
+
+
+/*
+
+Acs code used to play the sounds in the special teleports.
+
+
+//
+// rhinoduckdoom@gmail.com (2016-05-09)
+
+#library "mod_d"
+
+#include "zcommon.acs"
+
+script 1 ENTER {
+	int levnum = GetLevelInfo(LEVELINFO_LEVELNUM);
+	
+	switch (levnum)
+	{
+	case 1: // Wolf Howl (MAP01)
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				SetMusic("D_FLEE", 0);
+				LocalAmbientSound("dswlfhwl", 127);
+				Delay(130);
+			}
+			
+			Delay(1);
+		}
+		break;
+	case 3: // Bear Howl (MAP03)
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				LocalAmbientSound("dsberhwl", 127);
+				Delay(70);
+			}
+			
+			Delay(1);
+		}
+		break;
+	case 4: // Bison Howl (MAP04)
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				LocalAmbientSound("dsbsnhwl", 127);
+				Delay(70);
+			}
+			
+			Delay(1);
+		}
+	case 7: // Eagle Screech (MAP07)
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				LocalAmbientSound("dseagle", 127);
+				Delay(70);
+			}
+			
+			Delay(1);
+		}
+		break;
+	case 16: // All Four Howls (MAP16)
+		while (TRUE)
+		{
+			int z = GetActorZ(0);
+			
+			if (z > 100000000)
+			{
+				if (z < 600000000)
+				{
+					LocalAmbientSound("dswlfhwl", 127);
+					Delay(70);
+				}
+				else if (z < 1000000000)
+				{
+					LocalAmbientSound("dseagle", 127);
+					Delay(70);			
+				}
+				else if (z < 1300000000)
+				{
+					LocalAmbientSound("dsberhwl", 127);
+					Delay(70);
+				}
+				else if (z >= 1300000000)
+				{
+					LocalAmbientSound("dsbsnhwl", 127);
+					Delay(70);
+				}
+			}
+			
+			Delay(1);
+		}
+	case 30: // (MAP30)
+		while (TRUE)
+		{ 
+			if (GetActorZ(0) > 100000000)
+			{
+				SetMusic("");
+				Delay(15);
+				LocalAmbientSound("dsgiorg", 127);
+				while (GetActorX(0) / 65536 > 7848)
+				{
+					Delay(1);
+				}
+				Delay(12);
+				LocalAmbientSound("dsscream", 127);
+				Delay(175);
+			}
+			
+			Delay(1);
+		}
+		break;
+	default:
+		// nop
+		break;
+	}
+}
+
+}
+*/

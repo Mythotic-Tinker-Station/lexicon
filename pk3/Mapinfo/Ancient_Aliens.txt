@@ -1,0 +1,547 @@
+
+
+map AA101 lookup "The Ancient Navajo Wolf Warp"
+{
+	titlepatch = "AA1LV00"
+	next = "AA102"
+	secretnext = "AA102"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV32"
+	sky1 = "AAISKY1"
+	par = 70
+	music = "D_AA101"
+	InterMusic = "D_AA133"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA102 lookup "Sanctum of the Wastes"
+{
+	titlepatch = "AA1LV01"
+	next = "AA103"
+	secretnext = "AA103"
+	sky1 = "AAISKY1"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV36"
+	par = 180
+	music = "D_AA102"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA103 lookup " Arachnotron Arrival"
+{
+	titlepatch = "AA1LV02"
+	next = "AA104"
+	secretnext = "AA104"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 195
+	music = "D_AA103"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA104 lookup "Bad Medicine Men"
+{
+	titlepatch = "AA1LV03"
+	next = "AA105"
+	secretnext = "AA105"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 165
+	music = "D_AA104"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA105 lookup "Last Refuge of the Anasazi"
+{
+	titlepatch = "AA1LV04"
+	next = "AA106"
+	secretnext = "AA106"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 255
+	music = "D_AA105"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA106 lookup "Sinkhole Showdown"
+{
+	titlepatch = "AA1LV05"
+	next = "AA107"
+	secretnext = "AA107"
+	ExitPic = "AA1LV36"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 210
+	sucktime = 1
+	music = "D_AA106"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA107 lookup "Dare to Fly Where Eagles Soar"
+{
+	titlepatch = "AA1LV06"
+	next = "AA108"
+	secretnext = "AA108"
+	ExitPic = "AA1LV33"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 315
+	map07special
+	music = "D_AA107"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA108 lookup "Ancient Aliens"
+{
+	titlepatch = "AA1LV07"
+	next = "AA109"
+	secretnext = "AA109"
+	ExitPic = "AA1LV33"
+	EnterPic = "AA1LV36"
+	sky1 = "AAISKY1"
+	par = 600
+	music = "D_AA108"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA109 lookup "The Nectar Flow"
+{
+	titlepatch = "AA1LV08"
+	next = "AA110"
+	secretnext = "AA110"
+	ExitPic = "AA1LV37"
+	EnterPic = "AA1LV37"
+	sky1 = "AAISKY1"
+	par = 960
+	music = "D_AA109"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA110 lookup "Gift of Denial"
+{
+	titlepatch = "AA1LV09"
+	next = "AA111"
+	secretnext = "AA111"
+	ExitPic = "AA1LV37"
+	EnterPic = "AA1LV33"
+	sky1 = "AAISKY1"
+	par = 480
+	music = "D_AA110"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA111 lookup "On the Origin of Spacies"
+{
+	titlepatch = "AA1LV10"
+	next = "AA112"
+	secretnext = "AA112"
+	ExitPic = "AA1LV38"
+	EnterPic = "AA1LV38"
+	sky1 = "AAISKY1"
+	par = 240
+	music = "D_AA111"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA112 lookup "Magenta Heat"
+{
+	titlepatch = "AA1LV11"
+	next = "AA113"
+	secretnext = "AA113"
+	ExitPic = "AA1LV38"
+	EnterPic = "AA1LV38"
+	sky1 = "AAISKY1"
+	par = 180
+	music = "D_AA112"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA113 lookup "Polychromatic Terrace"
+{
+	titlepatch = "AA1LV12"
+	next = "AA114"
+	secretnext = "AA114"
+	ExitPic = "AA1LV38"
+	EnterPic = "AA1LV38"
+	sky1 = "AAISKY1"
+	par = 540
+	music = "D_AA113"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA114 lookup "Blazing Boulevard"
+{
+	titlepatch = "AA1LV13"
+	next = "AA115"
+	secretnext = "AA115"
+	ExitPic = "AA1LV38"
+	EnterPic = "AA1LV38"
+	sky1 = "AAISKY1"
+	par = 360
+	music = "D_AA114"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA115 lookup "Wormhole Junction"
+{
+	titlepatch = "AA1LV14"
+	next = "AA116"
+	secretnext = "AA131"
+	ExitPic = "AA1LV38"
+	EnterPic = "AA1LV38"
+	sky1 = "AAISKY1"
+	par = 450
+	music = "D_AA115"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA116 lookup "Leave Your Sol Behind"
+{
+	titlepatch = "AA1LV15"
+	next = "AA117"
+	secretnext = "AA117"
+	ExitPic = "AA1LV33"
+	EnterPic = "AA1LV39"
+	sky1 = "AAISKY1"
+	par = 780
+	music = "D_AA116"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA117 lookup "Daylight Under a Dark Sol"
+{
+	titlepatch = "AA1LV16"
+	next = "AA118"
+	secretnext = "AA118"
+	ExitPic = "AA1LV39"
+	EnterPic = "AA1LV39"
+	sky1 = "AAISKY1"
+	par = 480
+	music = "D_AA117"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA118 lookup "Illuminati Revealed"
+{
+	titlepatch = "AA1LV17"
+	next = "AA119"
+	secretnext = "AA119"
+	ExitPic = "AA1LV33"
+	EnterPic = "AA1LV39"
+	sky1 = "AAISKY1"
+	par = 210
+	music = "D_AA118"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA119 lookup "Crash Landing"
+{
+	titlepatch = "AA1LV18"
+	next = "AA120"
+	secretnext = "AA120"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 270
+	music = "D_AA119"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA120 lookup "Code"
+{
+	titlepatch = "AA1LV19"
+	next = "AA121"
+	secretnext = "AA121"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 330
+	music = "D_AA120"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA121 lookup "Cyberbullying : Beyond Earth"
+{
+	titlepatch = "AA1LV20"
+	next = "AA122"
+	secretnext = "AA122"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 480
+	music = "D_AA121"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA122 lookup "Acerola-Orion"
+{
+	titlepatch = "AA1LV21"
+	next = "AA123"
+	secretnext = "AA123"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 540
+	music = "D_AA122"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA123 lookup "Trinary Temple"
+{
+	titlepatch = "AA1LV22"
+	next = "AA124"
+	secretnext = "AA124"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 1200
+	music = "D_AA123"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA124 lookup "Culture Shock"
+{
+	titlepatch = "AA1LV23"
+	next = "AA125"
+	secretnext = "AA125"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY3"
+	par = 420
+	music = "D_AA124"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA125 lookup "Xenoarboreum"
+{
+	titlepatch = "AA1LV24"
+	next = "AA126"
+	secretnext = "AA126"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 510
+	music = "D_AA125"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA126 lookup "Egyptian Metaphysics"
+{
+	titlepatch = "AA1LV25"
+	next = "AA127"
+	secretnext = "AA127"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 300
+	music = "D_AA126"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA127 lookup "Kingdom of the Crystal Skulls"
+{
+	titlepatch = "AA1LV26"
+	next = "AA128"
+	secretnext = "AA128"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 540
+	music = "D_AA127"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA128 lookup "Floating Arena"
+{
+	titlepatch = "AA1LV27"
+	next = "AA129"
+	secretnext = "AA129"
+	ExitPic = "AA1LV40"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 390
+	music = "D_AA128"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA129 lookup "The Ones Behind It All"
+{
+	titlepatch = "AA1LV28"
+	next = "AA130"
+	secretnext = "AA130"
+	ExitPic = "AA1LV33"
+	EnterPic = "AA1LV40"
+	sky1 = "AAISKY1"
+	par = 660
+	music = "D_AA129"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA130 lookup "The End"
+{
+	titlepatch = "AA1LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "AA1SKY2"
+	ExitPic = "AA1LV35"
+	EnterPic = "AA1LV34"
+	par = 60
+	music = "D_AA130"
+	InterMusic = "D_AA135"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA131 lookup "Grey Dwarf"
+{
+	titlepatch = "AA1LV30"
+	next = "AA116"
+	secretnext = "AA132"
+	ExitPic = "AA1LV41"
+	EnterPic = "AA1LV41"
+	sky1 = "AAISKY3"
+	par = 960
+	music = "D_AA131"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}
+
+map AA132 lookup "Ossuarium Exoterre"
+{
+	titlepatch = "AA1LV31"
+	next = "AA116"
+	secretnext = "AA116"
+	ExitPic = "AA1LV41"
+	EnterPic = "AA1LV41"
+	sky1 = "AAISKY3"
+	par = 450
+	music = "D_AA132"
+	InterMusic = "D_AA134"
+	sucktime = 1
+	
+	nojump
+	nocrouch
+}

@@ -1,0 +1,37 @@
+/*
+
+doors/dr1_open			EPdoropn
+doors/dr1_clos			EPdorcls
+doors/dr2_open			EPbdopn
+doors/dr2_clos			EPbdcls
+
+misc/p_pkup			EPgetpow	// Pickup powerup
+misc/i_pkup			EPitemup	// Pickup item
+
+keen/death			EPkeendt
+
+
+menu/invalid			EPoof		// Menu not available
+
+menu/choose			EPpistol	// Choose a menu item
+
+sentinel/plasma		EPplasma
+
+grunt/death1			EPpodth1
+grunt/active			EPposact
+grunt/sight1			EPposit1
+grunt/sight2			EPposit2
+//zombieman sergeant fatso and wolfenstien ss
+
+plats/pt1_strt			EPpstart
+plats/pt1_stop			EPpstop
+misc/secret			EPsecret
+skull/melee			EPsklatk
+wolfss/death			EPssdth
+wolfss/sight			EPsssit
+plats/pt1_mid			EPstnmov
+switches/normbutn		EPswtchn
+misc/teleport			EPtelept
+*/
+
+//I AM NOT SURE HOW TO IMPLEMENT THE BULK OF THESE SO I WILL LEAVE THIS AS A REFERENCE FOR ANYONE WILLING TO TAKE ON THE TASK

@@ -6049,6 +6049,7 @@ ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
   PainSound "grunt/pain"
   DeathSound "grunt/death"
   ActiveSound "grunt/active"
+  DropItem "Epic2A18"
   States
   {
   Spawn:
@@ -6251,6 +6252,8 @@ Loop}}
 
 ACTOR Epic2A6 : Medikit 25110// : Health 24
 {
+  Inventory.PickupMessage "$GOTMEDIKIT"
+  Health.LowMessage 25, "$GOTMEDINEED"
   States
   {
   Spawn:
@@ -6260,7 +6263,9 @@ ACTOR Epic2A6 : Medikit 25110// : Health 24
 }
 
 ACTOR Epic2A7 : CustomInventory 25111//Plasmagun 30
-{
+{  
+Inventory.PickupMessage "$GOTPLASMA"
+Tag "$TAG_PLASMARIFLE"
   States
   {
   Spawn:
@@ -6268,12 +6273,15 @@ ACTOR Epic2A7 : CustomInventory 25111//Plasmagun 30
     Stop
   Pickup:
   TNT1 A 0 A_GiveInventory("PlasmaRifle")
+  TNT1 A 0 A_GiveInventory("Cell",40)
   Stop
   }
 }
 
-ACTOR Epic2A8 : CustomInventory 25112//Plasmagun 29
+ACTOR Epic2A8 : CustomInventory 25112//RL 29
 {
+  Inventory.PickupMessage "$GOTLAUNCHER"
+  Tag "$TAG_ROCKETLAUNCHER"
   States
   {
   Spawn:
@@ -6281,12 +6289,14 @@ ACTOR Epic2A8 : CustomInventory 25112//Plasmagun 29
     Stop
   Pickup:
   TNT1 A 0 A_GiveInventory("RocketLauncher")
+  TNT1 A 0 A_GiveInventory("RocketAmmo",2)
   Stop
   }
 }
 
 ACTOR Epic2A9 : Stimpack 25113//23
 {
+Inventory.PickupMessage "$GOTSTIM"
   States
   {
   Spawn:
@@ -6357,32 +6367,35 @@ ACTOR Epic2A15 : NonsolidMeat5 25119//53
 
 ACTOR Epic2A16 : CustomInventory 25120//Cell  75
 {
+Inventory.PickupMessage "$GOTCELL"
   States
   {
   Spawn:
     AAAY K -1
     Stop
   Pickup:
-  TNT1 A 0 A_GiveInventory("Cell")
+  TNT1 A 0 A_GiveInventory("Cell",20)
   Stop
   }
 }
 
 ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
-{
+{  
+  Inventory.PickupMessage "$GOTCELLBOX"
   States
   {
   Spawn:
     AAAY L -1
     Stop
   Pickup:
-  TNT1 A 0 A_GiveInventory("CellPack")
+  TNT1 A 0 A_GiveInventory("Cell",100)
   Stop
   }
 }
 
 ACTOR Epic2A18 : CustomInventory 25122//Clip  2007
 {
+Inventory.PickupMessage "$GOTCLIP" 
   States
   {
   Spawn:
@@ -6600,11 +6613,6 @@ ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
   }
 }
 
-
-///////////////////////////////////////////////
-//REVENANT
-///////////////////////////////////////////////
-
 //Revenant 25103//REVENANT 66
 
 ACTOR Epic2A37 : PainElemental 25141//71
@@ -6645,7 +6653,6 @@ ACTOR Epic2A37 : PainElemental 25141//71
 }
 
 /////////////////////////////////////////////
-///////////////ChaingunGuy 25102//CHAINGUN GUY 65
 
 ACTOR Epic2A38 : WolfensteinSS 25142//84
 {
@@ -6706,3 +6713,532 @@ ACTOR Epic2A39 : TechLamp 25143//85
 }
 
 //UP TO 25149 IS TAKEN, START WITH 25150 FROM HERE
+
+
+
+
+/////////////////////////////
+////					////
+////  Ancient Aliens     ////
+////					////
+/////////////////////////////
+
+
+
+
+ACTOR AAA1 : HeadsOnAStick 25151//28
+{ States { Spawn: AABE E -1
+    Stop } }
+
+ACTOR AAA2 : HeadOnAStick 25152//27
+{ States { Spawn: AABE F -1
+    Stop } }
+
+ACTOR AAA3 : Stalagtite 25153//47
+{ States { Spawn: AABE G -1
+    Stop } }
+
+ACTOR AAA4 : Candelabra 25154//35
+{ States { Spawn: AABE H -1 Bright
+    Stop } }
+
+ACTOR AAA5 : Column 25155//2028
+{ States { Spawn: AABE I -1 Bright
+    Stop } }
+
+ACTOR AAA6 : BigTree 25156//54
+{ States { Spawn: AABE J -1
+    Stop } }
+
+ACTOR AAA7 : TorchTree 25157//43
+{ States { Spawn:  AABE K -1
+    Stop } }
+
+ACTOR AAA8 : ShortRedColumn 25158//33
+{ States { Spawn: AABE L -1
+    Stop } }
+
+ACTOR AAA9 : SkullColumn 25159//37
+{ States { Spawn: AABE M -1
+    Stop } }
+
+ACTOR AAA10 : TallGreenColumn 25160//30
+{ States { Spawn: AABE N -1
+    Stop } }
+
+ACTOR AAA11 : TallRedColumn 25161//32
+{ States { Spawn: AABE O -1
+    Stop } }
+
+ACTOR AAA12 : ShortGreenColumn 25162//31
+{  States { Spawn: AABE P -1
+    Stop } }
+
+
+ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
+{
+	Tag "Alien Guardian"
+	Radius 24//
+	Height 56//
+    Speed 8//
+	Mass 400//
+	PainChance 64//
+	PainSound "AAkeenpn"
+	DeathSound "AAkeendt"
+	States
+	{
+	Spawn:
+		AABF A   -1
+		Loop
+	Death:
+		AABF AB	6
+		AABF C	6 A_Scream
+		AABF DEFGH	6
+		AABF I	6 A_NoBlocking
+		AABF J	6
+		AABF K	6 A_KeenDie
+		AABF L   -1
+		Stop
+	Pain:
+		AABF M	4
+		AABF M	8 A_Pain
+		Goto Spawn
+	}
+}
+
+//AABFR-V MISSING AN ACTOR FOR THIS Sprite range was OEEN A-D before being serialised
+
+
+//////////////////////////////////////////////////////
+
+ACTOR AAA14 : Cyberdemon 25164//16
+{
+	Tag "Xenu, Alien Emperor"
+	Obituary "%o was splattered by an alien."
+}
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA15 : SpiderMastermind 25165//7
+{
+	Tag "Alien Queen"
+	Obituary "%o stood in awe of an alien."
+}
+
+//////////////////////////////////////////////////////
+ACTOR AAA16 : Archvile 25166//64
+{
+	Tag "Reptilian Alien"
+	Obituary "%o was incinerated by an alien."
+}
+
+
+//////////////////////////////////////////////
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA17 : Revenant 25167//66
+{
+	Tag "Gray Alien"
+	HitObituary "%o was punched by an alien."
+	Obituary "%o couldn't evade an alien's fireball."
+}
+
+
+//////////////////////////////////////////////////////
+ACTOR AAA19 : Fatso 25168//67
+{
+	Tag "Alien Pastry Chef"
+	Obituary "%o was squashed by an alien."
+	States
+	{
+	Spawn:
+		AABG AB 15 A_Look
+		Loop
+	See:
+		AABG AABBCCDDEEFF 4 A_Chase
+		Loop
+	Missile:
+		AABG G 20 A_FatRaise
+		AABG H 10 BRIGHT A_FatAttack1
+		AABG IG 5
+		AABG H 10 BRIGHT A_FatAttack2
+		AABG IG 5
+		AABG H 10 BRIGHT A_FatAttack3
+		AABG IG 5
+		Goto See
+	Pain:
+		AABG J 3
+		AABG J 3 A_Pain
+		Goto See
+    Death:
+		AABG K 6
+		AABG L 6 A_Scream
+		AABG M 6 A_NoBlocking
+		AABG NOPQRS 6
+		AABG T -1 A_BossDeath    
+	     Stop
+	 Raise:
+		AABG R 5
+		AABG QPONMLK 5
+		Goto See
+	}
+}
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA120 : Arachnotron 25169//68
+{
+	Tag "Robo-Alien"
+	Obituary "%o let an alien get %h."
+	States
+	{
+	Spawn:
+		AABH AB 10 A_Look
+		Loop
+	See:
+		AABH A 20
+		AABH A 3 A_BabyMetal
+		AABH ABBCC 3 A_Chase
+		AABH D 3 A_BabyMetal
+		AABH DEEFF 3 A_Chase
+		Goto See+1
+	Missile:
+		AABH A 20 BRIGHT A_FaceTarget
+		AABH G 4 BRIGHT A_CustomMissile("AAA21", 32) //aaa21 cm
+		AABH H 4 BRIGHT
+		AABH H 1 BRIGHT A_SpidRefire
+		Goto Missile+1
+	Pain:
+		AABH I 3
+		AABH I 3 A_Pain
+		Goto See+1
+	Death:
+		AABH J 20 A_Scream
+		AABH K 7 A_NoBlocking
+		AABH LMNO 7
+		AABH P -1 A_BossDeath
+		Stop
+    Raise:
+		AABH P 5
+		AABH ONMLKJ 5
+		Goto See+1
+	}
+}
+
+
+ACTOR AAA21 : ArachnotronPlasma
+{
+	Tag "Alien Plasma"
+	States
+	{
+	Spawn:
+		AABH QR 5 BRIGHT
+		Loop
+	Death:
+		AABH STUVW 5 BRIGHT
+		Stop
+	}
+}
+//gldefs for aaa21 below
+/*
+pointlight ARACHPLAS
+{
+    color 0.89 0.10 0.48
+    size 56
+}
+
+flickerlight ARACHPLAS_X1
+{
+    color 0.8 0.07 0.26
+    size 72
+    secondarySize 80
+    chance 0.3
+}
+
+flickerlight ARACHPLAS_X2
+{
+    color 0.9 0.05 0.22
+    size 88
+    secondarySize 96
+    chance 0.3
+}
+
+flickerlight ARACHPLAS_X3
+{
+    color 0.6 0.04 0.18
+    size 48
+    secondarySize 32
+    chance 0.3
+}
+
+flickerlight ARACHPLAS_X4
+{
+    color 0.3 0.03 0.12
+    size 24
+    secondarySize 16
+    chance 0.3
+}
+*/
+
+
+//////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////
+
+ACTOR AAA22 : BaronOfHell 25170//3003
+{
+	Tag "Big Green Alien"
+	Obituary "%o was bruised by an alien."
+	HitObituary "%o was ripped open by an alien."
+}
+
+//////////////////////////////////////////////////////
+
+ACTOR AAA23 : HellKnight 25171//69
+{
+	Tag "Little Green Alien"
+	HitObituary "%o was gutted by an alien."
+	Obituary "%o was splayed by an alien."
+}
+
+
+
+//////////////////////////////////////////////////////
+ACTOR AAA24 : PainElemental 25172//71
+{
+	Tag "Alien"
+	States
+	{
+	Spawn:
+		PAIN A 10 A_Look
+		Loop
+	See:
+		PAIN AABBCC 3 A_Chase
+		Loop
+	Missile:
+		PAIN D 5 A_FaceTarget
+		PAIN E 5 A_FaceTarget
+		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 1 BRIGHT A_CustomMissile("AAA25", 32)
+		Goto See
+	Pain:
+		PAIN G 6
+		PAIN G 6 A_Pain
+		Goto See
+	Death:
+		PAIN H 8 BRIGHT
+		PAIN I 8 BRIGHT A_Scream
+		PAIN JK 8 BRIGHT
+		PAIN L 8 BRIGHT A_PainDie
+		PAIN M 8 BRIGHT
+		Stop
+	Raise:
+		PAIN MLKJIH 8
+		Goto See
+	}
+}
+
+ACTOR AAA25 : LostSoul 25173//3006
+{
+	Tag "Alien Invader"
+	Obituary "%o was spooked by an alien."
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+ACTOR AAA27 : Cacodemon 25174//3005
+{
+	Tag "Alien UFO"
+	Obituary "%o got too close to an alien."
+	HitObituary "%o was smitten by an alien."
+}
+
+
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA28 : Demon 25175//3002
+{
+	Tag "Amphibian Alien"
+	Obituary "%o was bit by an alien."
+}
+
+
+
+
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA29 : DoomImp 25176//3001
+{
+	Tag "An Alien"
+	HitObituary "%o was slashed by an alien."
+	Obituary "%o was burned by an alien."
+}
+
+//////////////////////////////////////////////////////
+ACTOR AAA30 : ChaingunGuy 25177//65
+{
+	Tag "Illegal Alien"
+	Obituary "%o was perforated by an alien."
+	Dropitem "Chaingun"
+	States
+	{
+	Spawn:
+		AABI AB 10 A_Look
+		Loop
+	See:
+		AABI AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		AABI E 10 A_FaceTarget
+		AABI FE 4 BRIGHT A_CPosAttack
+		AABI F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		AABI G 3
+		AABI G 3 A_Pain
+		Goto See
+	Death:
+		AABI H 5
+		AABI I 5 A_Scream
+		AABI J 5 A_NoBlocking
+		AABI KLM 5
+		AABI N -1
+		Stop
+	XDeath:
+		AABI O 5 
+		AABI P 5 A_XScream
+		AABI Q 5 A_NoBlocking
+		AABI RS 5
+		AABI T -1
+		Stop
+	Raise:
+		AABI N 5
+		AABI MLKJIH 5
+		Goto See
+	}
+}
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA31 : ShotgunGuy 25178//9
+{
+	Tag "Alien Sympathizer"
+	Obituary "%o was shot by an alien."
+}
+
+
+//////////////////////////////////////////////////////
+
+
+ACTOR AAA32 : ZombieMan 25179//3004
+{
+	Tag "A Alien"
+	Obituary "%o was killed by an alien."
+	DropItem "Clip"
+}
+
+///////////////////////////////////////////////////////
+
+ACTOR AAA33 : WolfensteinSS 25180//84
+{
+	Tag "Stealth Plasma Alien"
+	Health 30//
+	Speed 14//
+	SeeSound "AAsssit"
+	DeathSound "AAssdth"
+	Obituary "%o met an alien."//
+	Dropitem "NULL"
+	States
+	{
+	Spawn:
+		AABJ AB 10 A_Look
+		Loop
+	See:
+		AABJ AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		AABJ E 10 A_FaceTarget
+		AABJ F 10 A_FaceTarget
+		AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32) //AAA21
+		AABJ F 6 A_FaceTarget
+		AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
+		AABJ F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		AABJ H 3
+		AABJ H 3 A_Pain
+		Goto See
+	Death:
+		AABJ I 5
+		AABJ J 5 A_Scream
+		AABJ K 5 A_NoBlocking
+		AABJ L 5
+		AABJ M -1
+		Stop
+	XDeath:
+		AABJ N 5 
+		AABJ O 5 A_XScream
+		AABJ P 5 A_NoBlocking
+		AABJ QRSTU 5
+		AABJ V -1
+		Stop
+	Raise:
+		AABJ M 5
+		AABJ LKJI 5
+		Goto See 
+	}
+}
+
+ACTOR AAA34 : AAA33 25181//23
+{
+	Tag "Stealth Plasma Alien"
+	States
+	{
+	Spawn:
+		AABK AB 10 A_Look
+		Loop
+	See:
+		AABK AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		AABK E 10 A_FaceTarget
+		AABK F 10 A_FaceTarget
+		AABK G 4 BRIGHT A_CustomMissile("AAA21", 32) //AAA21
+		AABK F 6 A_FaceTarget
+		AABK G 4 BRIGHT A_CustomMissile("AAA21", 32)
+		AABK F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		AABK H 3
+		AABK H 3 A_Pain
+		Goto See
+	Death:
+		AABK I 5
+		AABK J 5 A_Scream
+		AABK K 5 A_NoBlocking
+		AABK L 5
+		AABK M -1
+		Stop
+	XDeath:
+		AABK N 5 
+		AABK O 5 A_XScream
+		AABK P 5 A_NoBlocking
+		AABK QRSTU 5
+		AABK V -1
+		Stop
+	Raise:
+		AABK M 5
+		AABK LKJI 5
+		Goto See 
+	}
+}

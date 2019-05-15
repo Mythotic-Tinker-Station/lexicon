@@ -1,0 +1,452 @@
+
+map NV101 lookup "Outpost"
+{
+	titlepatch = "NV1LV00"
+	next = "NV102"
+	secretnext = "NV102"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 30
+	music = "D_NV101"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV102 lookup " Administration Center "
+{
+	titlepatch = "NV1LV01"
+	next = "NV103"
+	secretnext = "NV103"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 90
+	music = "D_NV102"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV103 lookup " Water Treatment Plant "
+{
+	titlepatch = "NV1LV02"
+	next = "NV104"
+	secretnext = "NV104"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 120
+	music = "D_NV103"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV104 lookup " Factory Factor "
+{
+	titlepatch = "NV1LV03"
+	next = "NV105"
+	secretnext = "NV105"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 120
+	music = "D_NV104"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV105 lookup " Hazard Facility "
+{
+	titlepatch = "NV1LV04"
+	next = "NV106"
+	secretnext = "NV106"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 90
+	music = "D_NV105"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV106 lookup " Sewage Processing "
+{
+	titlepatch = "NV1LV05"
+	next = "NV107"
+	secretnext = "NV107"
+	SKY1 = "NVISKY1"
+	cluster = 5
+	par = 150
+	sucktime = 1
+	music = "D_NV106"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV107 lookup " Service Station Sick "
+{
+	titlepatch = "NV1LV06"
+	next = "NV108"
+	secretnext = "NV108"
+	SKY1 = "NVISKY1"
+	cluster = 6
+	par = 120
+	map07special
+	music = "D_NV107"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV108 lookup " Compound "
+{
+	titlepatch = "NV1LV07"
+	next = "NV109"
+	secretnext = "NV109"
+	SKY1 = "NVISKY1"
+	cluster = 6
+	par = 120
+	music = "D_NV108"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV109 lookup " Suspend "
+{
+	titlepatch = "NV1LV08"
+	next = "NV110"
+	secretnext = "NV110"
+	SKY1 = "NVISKY1"
+	cluster = 6
+	par = 270
+	music = "D_NV109"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV110 lookup " Hell's Furnace "
+{
+	titlepatch = "NV1LV09"
+	next = "NV111"
+	secretnext = "NV111"
+	SKY1 = "NVISKY1"
+	cluster = 6
+	par = 90
+	music = "D_NV110"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV111 lookup " Phobus Anomaly "
+{
+	titlepatch = "NV1LV10"
+	next = "NV112"
+	secretnext = "NV112"
+	SKY1 = "NVISKY1"
+	cluster = 6
+	par = 210
+	music = "D_NV111"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV112 lookup " Incubator "
+{
+	titlepatch = "NV1LV11"
+	next = "NV113"
+	secretnext = "NV113"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV112"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV113 lookup " Warehouse District "
+{
+	titlepatch = "NV1LV12"
+	next = "NV114"
+	secretnext = "NV114"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV113"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV114 lookup " Man Cub Up "
+{
+	titlepatch = "NV1LV13"
+	next = "NV115"
+	secretnext = "NV115"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV114"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV115 lookup " The Prisoner "
+{
+	titlepatch = "NV1LV14"
+	next = "NV116"
+	secretnext = "NV131"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 210
+	music = "D_NV115"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV116 lookup " Teleportarium "
+{
+	titlepatch = "NV1LV15"
+	next = "NV117"
+	secretnext = "NV117"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV116"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV117 lookup " Sewer City "
+{
+	titlepatch = "NV1LV16"
+	next = "NV118"
+	secretnext = "NV118"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 420
+	music = "D_NV117"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV118 lookup " Power Core "
+{
+	titlepatch = "NV1LV17"
+	next = "NV119"
+	secretnext = "NV119"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV118"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV119 lookup " Bad Blood "
+{
+	titlepatch = "NV1LV18"
+	next = "NV120"
+	secretnext = "NV120"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 210
+	music = "D_NV119"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV120 lookup " Castle Bloodletting "
+{
+	titlepatch = "NV1LV19"
+	next = "NV121"
+	secretnext = "NV121"
+	SKY1 = "NVISKY2"
+	cluster = 7
+	par = 150
+	music = "D_NV120"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV121 lookup " Beta Base "
+{
+	titlepatch = "NV1LV20"
+	next = "NV122"
+	secretnext = "NV122"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 240
+	music = "D_NV121"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV122 lookup " Broken Confluence Point "
+{
+	titlepatch = "NV1LV21"
+	next = "NV123"
+	secretnext = "NV123"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 150
+	music = "D_NV122"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV123 lookup " Immaterium "
+{
+	titlepatch = "NV1LV22"
+	next = "NV124"
+	secretnext = "NV124"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 180
+	music = "D_NV123"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV124 lookup " Ring of Gyges "
+{
+	titlepatch = "NV1LV23"
+	next = "NV125"
+	secretnext = "NV125"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 150
+	music = "D_NV124"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV125 lookup " Vile Arterium "
+{
+	titlepatch = "NV1LV24"
+	next = "NV126"
+	secretnext = "NV126"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 150
+	music = "D_NV125"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV126 lookup " Hell's Playground "
+{
+	titlepatch = "NV1LV25"
+	next = "NV127"
+	secretnext = "NV127"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 300
+	music = "D_NV126"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV127 lookup " Sensorium "
+{
+	titlepatch = "NV1LV26"
+	next = "NV128"
+	secretnext = "NV128"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 330
+	music = "D_NV127"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV128 lookup " The Seventh Circle "
+{
+	titlepatch = "NV1LV27"
+	next = "NV129"
+	secretnext = "NV129"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 420
+	music = "D_NV128"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV129 lookup " Extorta Nova "
+{
+	titlepatch = "NV1LV28"
+	next = "NV130"
+	secretnext = "NV130"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 300
+	music = "D_NV129"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1INTR"
+	EnterPic = "NV1INTR"
+}
+
+map NV130 lookup " Megiddo "
+{
+	titlepatch = "NV1LV29"
+	next = "VR"
+	secretnext = "VR"
+	SKY1 = "NVISKY3"
+	cluster = 8
+	par = 180
+	allowmonstertelefrags
+	music = "D_NV130"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1EXTT"
+	EnterPic = "NV1CDT"
+}
+
+map NV131 lookup " Iron Exuviae "
+{
+	titlepatch = "NV1LV30"
+	next = "NV116"
+	secretnext = "NV132"
+	SKY1 = "NVISKY3"
+	cluster = 9
+	par = 120
+	music = "D_NV131"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1JOKE"
+	EnterPic = "NV1JOKE"
+}
+
+map NV132 lookup " Riptide "
+{
+	titlepatch = "NV1LV31"
+	next = "NV116"
+	secretnext = "NV116"
+	SKY1 = "NVISKY3"
+	cluster = 10
+	par = 30
+	music = "D_NV132"
+	InterMusic = "D_NV134"
+	ExitPic = "NV1JOKE"
+	EnterPic = "NV1JOKE"
+}
+

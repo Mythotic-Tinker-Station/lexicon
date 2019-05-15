@@ -1,0 +1,452 @@
+
+map SF201 lookup "Exodus"
+{
+	titlepatch = "SF2LV00"
+	next = "SF202"
+	secretnext = "SF202"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 30
+	music = "D_SF201"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF202 lookup "Cashews"
+{
+	titlepatch = "SF2LV01"
+	next = "SF203"
+	secretnext = "SF203"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 90
+	music = "D_SF202"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF203 lookup "Island of Mystery"
+{
+	titlepatch = "SF2LV02"
+	next = "SF204"
+	secretnext = "SF204"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 120
+	music = "D_SF203"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF204 lookup "Pure Hate"
+{
+	titlepatch = "SF2LV03"
+	next = "SF205"
+	secretnext = "SF205"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 120
+	music = "D_SF204"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF205 lookup "Fortress of Damnation"
+{
+	titlepatch = "SF2LV04"
+	next = "SF206"
+	secretnext = "SF206"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 90
+	music = "D_SF205"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF206 lookup "Trifling"
+{
+	titlepatch = "SF2LV05"
+	next = "SF207"
+	secretnext = "SF207"
+	SKY1 = "SFIISKY1"
+	cluster = 5
+	par = 150
+	sucktime = 1
+	music = "D_SF206"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF207 lookup "Simply Dead"
+{
+	titlepatch = "SF2LV06"
+	next = "SF208"
+	secretnext = "SF208"
+	SKY1 = "SFIISKY1"
+	cluster = 6
+	par = 120
+	map07special
+	music = "D_SF207"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF208 lookup "Tingsryd"
+{
+	titlepatch = "SF2LV07"
+	next = "SF209"
+	secretnext = "SF209"
+	SKY1 = "SFIISKY1"
+	cluster = 6
+	par = 120
+	music = "D_SF208"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF209 lookup "Core Annihilation"
+{
+	titlepatch = "SF2LV08"
+	next = "SF210"
+	secretnext = "SF210"
+	SKY1 = "SFIISKY1"
+	cluster = 6
+	par = 270
+	music = "D_SF209"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF210 lookup "Total Recall"
+{
+	titlepatch = "SF2LV09"
+	next = "SF211"
+	secretnext = "SF211"
+	SKY1 = "SFIISKY1"
+	cluster = 6
+	par = 90
+	music = "D_SF210"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF211 lookup "Warborn"
+{
+	titlepatch = "SF2LV10"
+	next = "SF212"
+	secretnext = "SF212"
+	SKY1 = "SFIISKY1"
+	cluster = 6
+	par = 210
+	music = "D_SF211"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF212 lookup "Damnation"
+{
+	titlepatch = "SF2LV11"
+	next = "SF213"
+	secretnext = "SF213"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF212"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF213 lookup "Unleash the Fire"
+{
+	titlepatch = "SF2LV12"
+	next = "SF214"
+	secretnext = "SF214"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF213"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF214 lookup "Damned Legion"
+{
+	titlepatch = "SF2LV13"
+	next = "SF215"
+	secretnext = "SF215"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF214"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF215 lookup "Doomherolandia"
+{
+	titlepatch = "SF2LV14"
+	next = "SF216"
+	secretnext = "SF231"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 210
+	music = "D_SF215"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF216 lookup "Twobox"
+{
+	titlepatch = "SF2LV15"
+	next = "SF217"
+	secretnext = "SF217"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF216"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF217 lookup "Electric Wizard"
+{
+	titlepatch = "SF2LV16"
+	next = "SF218"
+	secretnext = "SF218"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 420
+	music = "D_SF217"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF218 lookup "Last Cup of Sorrow"
+{
+	titlepatch = "SF2LV17"
+	next = "SF219"
+	secretnext = "SF219"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF218"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF219 lookup "Split Wide Open"
+{
+	titlepatch = "SF2LV18"
+	next = "SF220"
+	secretnext = "SF220"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 210
+	music = "D_SF219"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF220 lookup "True Grit"
+{
+	titlepatch = "SF2LV19"
+	next = "SF221"
+	secretnext = "SF221"
+	SKY1 = "SFIISKY2"
+	cluster = 7
+	par = 150
+	music = "D_SF220"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF221 lookup "Walk With Me in Hell"
+{
+	titlepatch = "SF2LV20"
+	next = "SF222"
+	secretnext = "SF222"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 240
+	music = "D_SF221"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF222 lookup "Royale Arena"
+{
+	titlepatch = "SF2LV21"
+	next = "SF223"
+	secretnext = "SF223"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 150
+	music = "D_SF222"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF223 lookup "Castle Lava"
+{
+	titlepatch = "SF2LV22"
+	next = "SF224"
+	secretnext = "SF224"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 180
+	music = "D_SF223"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF224 lookup "Bane's Atrium"
+{
+	titlepatch = "SF2LV23"
+	next = "SF225"
+	secretnext = "SF225"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 150
+	music = "D_SF224"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF225 lookup "Fourtress"
+{
+	titlepatch = "SF2LV24"
+	next = "SF226"
+	secretnext = "SF226"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 150
+	music = "D_SF225"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF226 lookup "Crimson"
+{
+	titlepatch = "SF2LV25"
+	next = "SF227"
+	secretnext = "SF227"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 300
+	music = "D_SF226"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF227 lookup "Decimal Error"
+{
+	titlepatch = "SF2LV26"
+	next = "SF228"
+	secretnext = "SF228"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 330
+	music = "D_SF227"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF228 lookup "Slaughtenstein"
+{
+	titlepatch = "SF2LV27"
+	next = "SF229"
+	secretnext = "SF229"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 420
+	music = "D_SF228"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF229 lookup "Degrassi"
+{
+	titlepatch = "SF2LV28"
+	next = "SF230"
+	secretnext = "SF230"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 300
+	music = "D_SF229"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2INTR"
+}
+
+map SF230 lookup "Anathema"
+{
+	titlepatch = "SF2LV29"
+	next = "VR"
+	secretnext = "VR"
+	SKY1 = "SFIISKY3"
+	cluster = 8
+	par = 180
+	allowmonstertelefrags
+	music = "D_SF230"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2INTR"
+	EnterPic = "SF2EXTT"
+}
+
+map SF231 lookup "sworf"
+{
+	titlepatch = "SF2LV30"
+	next = "SF216"
+	secretnext = "SF232"
+	SKY1 = "SFIISKY3"
+	cluster = 9
+	par = 120
+	music = "D_SF231"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2JOKE"
+	EnterPic = "SF2JOKE"
+}
+
+map SF232 lookup "Brookhaven Hospital"
+{
+	titlepatch = "SF2LV31"
+	next = "SF216"
+	secretnext = "SF216"
+	SKY1 = "SFIISKY3"
+	cluster = 10
+	par = 30
+	music = "D_SF232"
+	InterMusic = "D_SF234"
+	ExitPic = "SF2JOKE"
+	EnterPic = "SF2JOKE"
+}
+

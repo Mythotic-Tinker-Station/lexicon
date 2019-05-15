@@ -6,7 +6,8 @@ strict namespace
 {
     #if 1
     
-        #include "skybox.c"
+        //unused
+		//#include "skybox.c"
 
         // dont touch this
         #define STATE_INIT -1
@@ -238,9 +239,12 @@ strict namespace
     int state = STATE_INIT;             // state of the voting system
     int state_clock;                    // custom timer
 
+<<<<<<< HEAD
     global int 2:votechosen;            // the winner
     global int 3:sucktime;              // the sucktime of the previous level
     
+=======
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
     /////////////////////
     // hud
     /////////////////////
@@ -267,28 +271,38 @@ strict namespace
     int levelstarted = 0;
     int clock = 0;
     int countstart = 0;
+<<<<<<< HEAD
     
     /////////////////////
     // debug
     /////////////////////
     global int  0:godmode;
     global int  1:instakiller;
+=======
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
 
-    
     // stuff that runs during any level
     script "SV_Level" open
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             // we have come back from a completed mapset
+<<<<<<< HEAD
             if(sucktime == 1337)
+=======
+            if(GetCVar("lexicon_global_sucktime") == 1337)
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
             {
                 ACS_NamedExecute("Fireworks", 0);
             }
             terminate; 
         }
         
+<<<<<<< HEAD
         sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
+=======
+        SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         levelstarted = 0;
         clock = GetCvar("lexicon_timer_reset");
 
@@ -340,7 +354,13 @@ strict namespace
                     }
                     else if(clock <= 1 && clock >= 0)
                     {
+<<<<<<< HEAD
                         hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+=======
+                        // go back to hub
+                        SetCVar("lexicon_global_sucktime", 0);
+                        ChangeLevel("VR", 0, 0, -1);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
                     }
                 }
                  // when time is up
@@ -363,8 +383,11 @@ strict namespace
     {
         Thing_ChangeTID(0, playernumber()+PLAYER_TID);
 
+<<<<<<< HEAD
         ACS_Execute(568, 0, votechosen);
 
+=======
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
@@ -408,7 +431,11 @@ strict namespace
             // mapset/mapname/creds
             HudSetup(0, 0);
             setfont("hudfont");
+<<<<<<< HEAD
             Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+=======
+            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         }
         
         //////////////////////////
@@ -421,9 +448,15 @@ strict namespace
             hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
                         
             // we have come back from a completed mapset
+<<<<<<< HEAD
             if(sucktime == 1337)
             {
                 hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[votechosen][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+=======
+            if(GetCVar("lexicon_global_sucktime") == 1337)
+            {
+                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
             }
 
 
@@ -461,7 +494,11 @@ strict namespace
             //////////////////////////
             if(GetCVar("lexicon_debug_mode") == 1)
             {
+<<<<<<< HEAD
                 hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:instakiller, s:" G:", i:godmode; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+=======
+                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:GetCVar("lexicon_global_instakiller"), s:" G:", i:GetCVar("lexicon_global_godmode"); 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
             }
 
             //////////////////////////
@@ -518,7 +555,11 @@ strict namespace
                 else if(state == STATE_RESULTS)
                 {
                     setfont("hudfont");
+<<<<<<< HEAD
                     hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+=======
+                    hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
 
                     // confetti :D
                     for(int c = 0; c < 128; c++)
@@ -641,17 +682,28 @@ strict namespace
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
+<<<<<<< HEAD
             godmode = 0;
             instakiller = 0;
         }
         if(godmode)
+=======
+            SetCVar("lexicon_global_godmode", 0);
+            SetCVar("lexicon_global_instakiller", 0);
+        }
+        if(GetCVar("lexicon_global_godmode") == 1)
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         {
             for(int i = 0; i < 63; i++)
             {
                 GiveActorInventory(PLAYER_TID+i, "Lexicon_GodMode", 1);
             }
         }
+<<<<<<< HEAD
         if(instakiller)
+=======
+        if(GetCVar("lexicon_global_instakiller") == 1)
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         {
             for(int i = 0; i < 63; i++)
             {
@@ -668,6 +720,7 @@ strict namespace
             switch(id)
             {
                 case 0: 
+<<<<<<< HEAD
                     if(godmode == 0) { godmode = 1; break; }
                     if(godmode == 1) { godmode = 0; break; }
                     break;
@@ -678,6 +731,16 @@ strict namespace
             }
             ACS_ExecuteAlways(572, 0, godmode);
             ACS_ExecuteAlways(573, 0, instakiller);
+=======
+                    if(GetCVar("lexicon_global_godmode") == 0) { SetCVar("lexicon_global_godmode", 1); break; }
+                    if(GetCVar("lexicon_global_godmode") == 1) { SetCVar("lexicon_global_godmode", 0); break; }
+                    break;
+                case 2: 
+                    if(GetCVar("lexicon_global_instakiller") == 0) { SetCVar("lexicon_global_instakiller", 1); break; }
+                    if(GetCVar("lexicon_global_instakiller") == 1) { SetCVar("lexicon_global_instakiller", 0); break; }
+                    break;
+            }
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         }
     }
 
@@ -711,6 +774,7 @@ strict namespace
     {
         players[pnum] = id;
     }
+<<<<<<< HEAD
 
     // sync debug godmode
     script 572 (int v) clientside
@@ -723,6 +787,8 @@ strict namespace
     {
         instakiller = v;
     }
+=======
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
 
     function void state_init(void)
     {
@@ -814,17 +880,27 @@ strict namespace
         if(tiecount > 0)
         {
             // randomly choose a wad
+<<<<<<< HEAD
             votechosen = votessorted[random(0, tiecount)][1];
+=======
+            SetCVar("lexicon_global_votechosen", votessorted[random(0, tiecount)][1]);
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         }
         else
         {
             // otherwise just choose the winner
+<<<<<<< HEAD
             votechosen = votessorted[0][1];
         }
 
         // sync the clients
         ACS_Execute(568, 0, votechosen);
 
+=======
+            SetCVar("lexicon_global_votechosen", votessorted[0][1]);
+        }
+
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         // set the system to the results state
         state = STATE_RESULTS;
 
@@ -846,7 +922,19 @@ strict namespace
         if(state_clock > 5*35)
         {
             // go to chosen level
+<<<<<<< HEAD
             ChangeLevel(votenames[votechosen][1], 0, CHANGELEVEL_RESETHEALTH|CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_NOINTERMISSION, -1);
+=======
+            if(GetCVar("lexicon_clear_inventory") == 1)
+            {
+                ChangeLevel(votenames[GetCVar("lexicon_global_votechosen")][1], 0, CHANGELEVEL_RESETHEALTH | CHANGELEVEL_RESETINVENTORY | CHANGELEVEL_NOINTERMISSION, -1);
+            }
+            else
+            {
+                TakeInventory("Lexicon_VoteGun", 0x7FFFFFFF);
+                ChangeLevel(votenames[GetCVar("lexicon_global_votechosen")][1], 0, CHANGELEVEL_NOINTERMISSION, -1);
+            }
+>>>>>>> 9bf8684d... Rewritten from user function to built-in function.
         }
     }
 

@@ -12,7 +12,7 @@ echo Step 2: ACS
 echo Step 2: PACK GAME FILES
 	cd ..
 	cd pk3
-	..\Compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%n.pk3 *
+	..\Compiler\7za a -r -ssw -mx8 -tzip  ..\%FileName%n.pk3 *
 
 echo Step 3: PACK MUSIC AND MISC. FILES
 	cd ..

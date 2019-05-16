@@ -644,17 +644,11 @@ strict namespace
         }
         if(GetCVar("lexicon_global_godmode") == 1)
         {
-            for(int i = 0; i < 63; i++)
-            {
-                GiveActorInventory(PLAYER_TID+i, "Lexicon_GodMode", 1);
-            }
+            GiveActorInventory(0, "Lexicon_GodMode", 1);
         }
         if(GetCVar("lexicon_global_instakiller") == 1)
         {
-            for(int i = 0; i < 63; i++)
-            {
-                GiveActorInventory(PLAYER_TID+i, "Lexicon_InstaKiller", 1);
-            }
+            GiveActorInventory(0, "Lexicon_InstaKiller", 1);
         }
     }
 

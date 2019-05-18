@@ -6,8 +6,7 @@ strict namespace
 {
     #if 1
     
-        //unused
-		//#include "skybox.c"
+        #include "skybox.c"
 
         // dont touch this
         #define STATE_INIT -1
@@ -224,7 +223,6 @@ strict namespace
         { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 191
         { "Unused",			                "MAP01",            "\c[LightBlue](Single)"}, // 192
     };
-
     /////////////////////
     // vote manager
     /////////////////////
@@ -240,6 +238,9 @@ strict namespace
     int state = STATE_INIT;             // state of the voting system
     int state_clock;                    // custom timer
 
+    global int 2:votechosen;            // the winner
+    global int 3:sucktime;              // the sucktime of the previous level
+    
     /////////////////////
     // hud
     /////////////////////
@@ -266,89 +267,92 @@ strict namespace
     int levelstarted = 0;
     int clock = 0;
     int countstart = 0;
+    
+    /////////////////////
+    // debug
+    /////////////////////
+    global int  0:godmode;
+    global int  1:instakiller;
 
+    
     // stuff that runs during any level
     script "SV_Level" open
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             // we have come back from a completed mapset
-            if(GetCVar("lexicon_global_sucktime") == 1337)
+            if(sucktime == 1337)
             {
                 ACS_NamedExecute("Fireworks", 0);
             }
             terminate; 
         }
         
-        SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
+        sucktime = GetLevelInfo(LEVELINFO_SUCK_TIME);
         levelstarted = 0;
         clock = GetCvar("lexicon_timer_reset");
 
-        if(GetCvar("lexicon_timer_reset_enabled") == 1)
+        while(1)
         {
-            
-            while(1)
+            // if the level has started and the countdown is not started
+            if(levelstarted == 1 && countstart == 0)
             {
-                // if the level has started and the countdown is not started
-                if(levelstarted == 1 && countstart == 0)
+                // if the playercount goes back to 0
+                if(playercount() == 0)
                 {
-                    // if the playercount goes back to 0
-                    if(playercount() == 0)
-                    {
-                        countstart = 1;
-                    }
+                    countstart = 1;
                 }
-                // if nobody has joined yet
-                else
+            }
+            // if nobody has joined yet
+            else
+            {
+                // wait for someone to join
+                if(playercount() > 0)
                 {
-                    // wait for someone to join
-                    if(playercount() > 0)
-                    {
-                        //the level has been started
-                        levelstarted = 1;
-                    }
+                    //the level has been started
+                    levelstarted = 1;
                 }
-                
-                // countdown has started
+            }
+            
+            // countdown has started
+            if(countstart == 1)
+            {
+                // countdown
+                clock--;
                 if(countstart == 1)
                 {
-                    // countdown
-                    clock--;
-                    if(countstart == 1)
+                    // these hudmessages were in the cl_lexicon_hud script
+                    // it had to be moved here as zandronum terminates player scripts when they spectate
+                    // resulting in these hudmessages not showing
+                    HudSetup(0, 0);
+                    SetFont("HUDFONT");
+                    if(clock > 7)
                     {
-                        // these hudmessages were in the cl_lexicon_hud script
-                        // it had to be moved here as zandronum terminates player scripts when they spectate
-                        // resulting in these hudmessages not showing
-                        HudSetup(0, 0);
-                        SetFont("HUDFONT");
-                        if(clock > 7)
-                        {
-                            hudmessagebold(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 7 && clock > 4)
-                        {
-                            hudmessagebold(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 4 && clock > 1)
-                        {
-                            hudmessagebold(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 1 && clock >= 0)
-                        {
-                            hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
+                        hudmessagebold(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
                     }
-                     // when time is up
-                    if(clock < 0)
+                    else if(clock <= 7 && clock > 4)
                     {
-                        // go back to hub
-                        SetCVar("lexicon_global_sucktime", 0);
-                        ChangeLevel("VR", 0, 0, -1);
+                        hudmessagebold(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
                     }
-                    delay(34);
+                    else if(clock <= 4 && clock > 1)
+                    {
+                        hudmessagebold(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
+                    else if(clock <= 1 && clock >= 0)
+                    {
+                        hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    }
                 }
-                delay(1);
+                 // when time is up
+                if(clock < 0)
+                {
+                    // go back to hub
+                    sucktime = 0;
+                    ChangeLevel("VR", 0, 0, -1);
+                }
+                delay(34);
             }
+            delay(1);
         }
     }
 
@@ -358,6 +362,8 @@ strict namespace
     script "SV_PlayerEnter" enter
     {
         Thing_ChangeTID(0, playernumber()+PLAYER_TID);
+
+        ACS_Execute(568, 0, votechosen);
 
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
@@ -371,12 +377,8 @@ strict namespace
             ACS_ExecuteAlways(570, 0, state);
             
             // give player the votegun
-            if(GetCVar("lexicon_clear_inventory") == 1)
-            {
-                ClearInventory();
-            }
+            ClearInventory();
             GiveInventory("Lexicon_VoteGun", 1);
-            SetWeapon("Lexicon_VoteGun");
 
         }
     }
@@ -406,7 +408,7 @@ strict namespace
             // mapset/mapname/creds
             HudSetup(0, 0);
             setfont("hudfont");
-            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[votechosen][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
         }
         
         //////////////////////////
@@ -419,9 +421,9 @@ strict namespace
             hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
                         
             // we have come back from a completed mapset
-            if(GetCVar("lexicon_global_sucktime") == 1337)
+            if(sucktime == 1337)
             {
-                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[votechosen][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
             }
 
 
@@ -459,7 +461,7 @@ strict namespace
             //////////////////////////
             if(GetCVar("lexicon_debug_mode") == 1)
             {
-                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:GetCVar("lexicon_global_instakiller"), s:" G:", i:GetCVar("lexicon_global_godmode"); 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:instakiller, s:" G:", i:godmode; 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
             }
 
             //////////////////////////
@@ -516,7 +518,7 @@ strict namespace
                 else if(state == STATE_RESULTS)
                 {
                     setfont("hudfont");
-                    hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+                    hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[votechosen][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
 
                     // confetti :D
                     for(int c = 0; c < 128; c++)
@@ -639,16 +641,22 @@ strict namespace
     {
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-            SetCVar("lexicon_global_godmode", 0);
-            SetCVar("lexicon_global_instakiller", 0);
+            godmode = 0;
+            instakiller = 0;
         }
-        if(GetCVar("lexicon_global_godmode") == 1)
+        if(godmode)
         {
-            GiveActorInventory(0, "Lexicon_GodMode", 1);
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(PLAYER_TID+i, "Lexicon_GodMode", 1);
+            }
         }
-        if(GetCVar("lexicon_global_instakiller") == 1)
+        if(instakiller)
         {
-            GiveActorInventory(0, "Lexicon_InstaKiller", 1);
+            for(int i = 0; i < 63; i++)
+            {
+                GiveActorInventory(PLAYER_TID+i, "Lexicon_InstaKiller", 1);
+            }
         }
     }
 
@@ -660,14 +668,16 @@ strict namespace
             switch(id)
             {
                 case 0: 
-                    if(GetCVar("lexicon_global_godmode") == 0) { SetCVar("lexicon_global_godmode", 1); break; }
-                    if(GetCVar("lexicon_global_godmode") == 1) { SetCVar("lexicon_global_godmode", 0); break; }
+                    if(godmode == 0) { godmode = 1; break; }
+                    if(godmode == 1) { godmode = 0; break; }
                     break;
                 case 2: 
-                    if(GetCVar("lexicon_global_instakiller") == 0) { SetCVar("lexicon_global_instakiller", 1); break; }
-                    if(GetCVar("lexicon_global_instakiller") == 1) { SetCVar("lexicon_global_instakiller", 0); break; }
+                    if(instakiller == 0) { instakiller = 1; break; }
+                    if(instakiller == 1) { instakiller = 0; break; }
                     break;
             }
+            ACS_ExecuteAlways(572, 0, godmode);
+            ACS_ExecuteAlways(573, 0, instakiller);
         }
     }
 
@@ -679,10 +689,10 @@ strict namespace
     }
 
     // sync voted choice
-    /*script 568 (int v) clientside
+    script 568 (int v) clientside
     {
         votechosen = v;
-    }*/
+    }
 
     // sync timer
     script 569 (int time) clientside
@@ -700,6 +710,18 @@ strict namespace
     script 571 (int pnum, int id) clientside
     {
         players[pnum] = id;
+    }
+
+    // sync debug godmode
+    script 572 (int v) clientside
+    {
+        godmode = v;
+    }
+    
+    // sync debug instakiller
+    script 573 (int v) clientside
+    {
+        instakiller = v;
     }
 
     function void state_init(void)
@@ -792,13 +814,16 @@ strict namespace
         if(tiecount > 0)
         {
             // randomly choose a wad
-            SetCVar("lexicon_global_votechosen", votessorted[random(0, tiecount)][1]);
+            votechosen = votessorted[random(0, tiecount)][1];
         }
         else
         {
             // otherwise just choose the winner
-            SetCVar("lexicon_global_votechosen", votessorted[0][1]);
+            votechosen = votessorted[0][1];
         }
+
+        // sync the clients
+        ACS_Execute(568, 0, votechosen);
 
         // set the system to the results state
         state = STATE_RESULTS;
@@ -821,15 +846,7 @@ strict namespace
         if(state_clock > 5*35)
         {
             // go to chosen level
-            if(GetCVar("lexicon_clear_inventory") == 1)
-            {
-                ChangeLevel(votenames[GetCVar("lexicon_global_votechosen")][1], 0, CHANGELEVEL_RESETHEALTH | CHANGELEVEL_RESETINVENTORY | CHANGELEVEL_NOINTERMISSION, -1);
-            }
-            else
-            {
-                TakeInventory("Lexicon_VoteGun", 0x7FFFFFFF);
-                ChangeLevel(votenames[GetCVar("lexicon_global_votechosen")][1], 0, CHANGELEVEL_NOINTERMISSION, -1);
-            }
+            ChangeLevel(votenames[votechosen][1], 0, CHANGELEVEL_RESETHEALTH|CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_NOINTERMISSION, -1);
         }
     }
 
@@ -906,6 +923,7 @@ strict namespace
         hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
+
 
 
 

@@ -4932,7 +4932,7 @@ Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
  ////				////
 /////////////////////////
 
-ACTOR DVActor1 : Candlestick 25064//34
+ACTOR DVActor1 : Candlestick 25186//25064//34
 {
 	Radius 6
 	Height 32
@@ -6269,9 +6269,17 @@ Tag "$TAG_PLASMARIFLE"
   States
   {
   Spawn:
-    AAAY B -1
+    AAAY B 1
     Stop
   Pickup:
+  TNT1 A 0 A_JumpIfInventory("PlasmaRifle", 1, "HasAmmo")
+  TNT1 A 0 A_GiveInventory("PlasmaRifle")
+  HasAmmo:
+  TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("Cell", 300, 2)
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
   TNT1 A 0 A_GiveInventory("PlasmaRifle")
   TNT1 A 0 A_GiveInventory("Cell",40)
   Stop
@@ -6288,6 +6296,14 @@ ACTOR Epic2A8 : CustomInventory 25112//RL 29
     AAAY C -1
     Stop
   Pickup:
+  TNT1 A 0 A_JumpIfInventory("RocketLauncher", 1, "HasAmmo")
+  TNT1 A 0 A_GiveInventory("RocketLauncher")
+  HasAmmo:
+  TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("RocketAmmo", 50, 2)
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("RocketAmmo", 100, "Spawn")
   TNT1 A 0 A_GiveInventory("RocketLauncher")
   TNT1 A 0 A_GiveInventory("RocketAmmo",2)
   Stop
@@ -6374,6 +6390,10 @@ Inventory.PickupMessage "$GOTCELL"
     AAAY K -1
     Stop
   Pickup:
+  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
+  TNT1 A 0 A_JumpIfInventory("Cell", 300, "Spawn")
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
   TNT1 A 0 A_GiveInventory("Cell",20)
   Stop
   }
@@ -6385,9 +6405,13 @@ ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
   States
   {
   Spawn:
-    AAAY L -1
+    AAAY L 1
     Stop
   Pickup:
+  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
+  TNT1 A 0 A_JumpIfInventory("Cell", 300, "Spawn")
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
   TNT1 A 0 A_GiveInventory("Cell",100)
   Stop
   }
@@ -6399,9 +6423,14 @@ Inventory.PickupMessage "$GOTCLIP"
   States
   {
   Spawn:
-    AAAY M -1
+    AAAY M 1
     Stop
   Pickup:
+  
+  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
+  TNT1 A 0 A_JumpIfInventory("Clip", 200, "Spawn")
+  TNT1 A 0
+  TNT1 A 0 A_JumpIfInventory("Clip", 400, "Spawn")
   TNT1 A 0 A_GiveInventory("Clip")
   Stop
   }
@@ -6942,46 +6971,7 @@ ACTOR AAA21 : ArachnotronPlasma
 		Stop
 	}
 }
-//gldefs for aaa21 below
-/*
-pointlight ARACHPLAS
-{
-    color 0.89 0.10 0.48
-    size 56
-}
 
-flickerlight ARACHPLAS_X1
-{
-    color 0.8 0.07 0.26
-    size 72
-    secondarySize 80
-    chance 0.3
-}
-
-flickerlight ARACHPLAS_X2
-{
-    color 0.9 0.05 0.22
-    size 88
-    secondarySize 96
-    chance 0.3
-}
-
-flickerlight ARACHPLAS_X3
-{
-    color 0.6 0.04 0.18
-    size 48
-    secondarySize 32
-    chance 0.3
-}
-
-flickerlight ARACHPLAS_X4
-{
-    color 0.3 0.03 0.12
-    size 24
-    secondarySize 16
-    chance 0.3
-}
-*/
 
 
 //////////////////////////////////////////////////////
@@ -7241,4 +7231,239 @@ ACTOR AAA34 : AAA33 25181//23
 		AABK LKJI 5
 		Goto See 
 	}
+}
+
+//////////////////////////////
+/////SWIM WITH THE WHALES////
+//////////////////////////////
+
+ACTOR SWTW1 : ShortBlueTorch 25182//55
+{States{Spawn:AABL ABCD 4 Bright
+    Loop}}
+
+ACTOR SWTW2 : ShortRedTorch 25183//57
+{States{Spawn:AABL EFGH 4 Bright
+    Loop}}
+
+ACTOR SWTW3 : ShortGreenTorch 25184//56
+{States{Spawn:AABL IJKL 4 Bright
+    Loop}}
+
+
+////Stardate 20x6
+
+ACTOR SD20x6A1 : GreenArmor 25185//GreenArmor  2018
+{  
+Translation "112:127=250:254"
+}
+//25064//25186
+ACTOR SD20x6A2 : ExplosiveBarrel 25187//2035
+{
+Translation "112:127=250:254"
+}
+//HellKnight 
+ACTOR SD20x6A3 : HellKnight 25188//69
+{
+Translation "112:127=250:254"
+//may need missile state to change the fireball
+}
+//BaronOfHell 
+ACTOR SD20x6A4 : BaronOfHell 25189//3003
+{
+Translation "112:127=250:254"
+//may need missile state to change the fireball
+}
+//EvilEye
+ACTOR SD20x6A5 : EvilEye 25190//41
+{
+Translation "112:127=250:254"
+}
+//GreenTorch
+ACTOR SD20x6A6 : GreenTorch 25191//45
+{
+Translation "112:127=250:254"
+}
+//ShortGreenTorch
+ACTOR SD20x6A7 : ShortGreenTorch 25192//56
+{
+Translation "112:127=250:254"
+}
+//InvulnerabilitySphere 
+ACTOR SD20x6A8 : InvulnerabilitySphere  25193//2022
+{
+Translation "112:127=250:254"
+}//Allmap 
+ACTOR SD20x6A9 : Allmap  25194//2026
+{
+Translation "112:127=250:254"
+}
+
+//STARDATE 20X7
+//AABL IJKL
+ACTOR SD20x7A1 : ArmorBonus 25195//2015
+{
+  States
+  {
+  Spawn:
+    AABL MNOPON 6
+    Loop
+  }
+}
+
+ACTOR SD20x7A2 :  ExplosiveBarrel 25196//2035
+{
+  States
+  {
+  Spawn:
+    AABL Q 6
+    Loop
+  Death:
+    AABL Q 5 Bright
+    AABL Q 5 Bright A_Scream
+    AABL R 5 Bright
+    AABL S 5 Bright A_Explode
+    AABL T 10 Bright
+    TNT1 A 1050 Bright A_BarrelDestroy
+    TNT1 A 5 A_Respawn
+    Wait
+  }
+}
+
+ACTOR SD20x7A3 : HeadCandles 25197//29	
+{
+  States
+  {
+  Spawn:
+    AABL UV 6 Bright
+    Loop
+  }
+}
+
+ACTOR SD20x7A4 : LiveStick 25198//26	
+{
+  States
+  {
+  Spawn:
+    AABL W 6
+    AABL X 8
+    Loop
+  }
+}
+
+ACTOR SD20x7A5 : ShortGreenTorch 25199//56	
+{
+  States
+  {
+  Spawn:
+    AABM ABCD 4 Bright
+    Loop
+  }
+}
+
+ACTOR SD20x7A6 : GreenTorch 25200//45
+{
+  States
+  {
+  Spawn:
+    AABM EFGH 4 Bright
+    Loop
+  }
+}
+
+ACTOR SD20x7A7 : TechLamp 25201//85
+{
+  States
+  {
+  Spawn:
+    AABM IJKL 4 Bright
+    Loop
+  }
+}
+
+ACTOR SD20x7A8 : BossBrain 25202//88
+{
+  Health 250
+  Mass 10000000
+  PainChance 255
+  +SOLID
+  +SHOOTABLE
+  +NOICEDEATH
+  +OLDRADIUSDMG
+  PainSound "brain/pain"
+  DeathSound "brain/death"
+  States
+  {
+  BrainExplode:
+    MISL BC 10 Bright
+    MISL D 10 A_BrainExplode
+    Stop
+  Spawn:
+    AABM M -1
+    Stop
+  Pain:
+    AABM N 36 A_BrainPain
+    Goto Spawn
+  Death:
+    AABM M 100 A_BrainScream
+    AABM MM 10
+    AABM M -1 A_BrainDie
+    Stop
+  }
+}
+
+Actor SD20x7A9 : Afrit 25203//72
+{
+  Health 1000
+  Obituary "%o was scorched by Ribbiks"
+  States
+  {
+  Spawn:
+    AABN A 0
+    AABN A 0 
+    AABN A 0 
+    AABN AABB 10 Bright A_Look
+    Loop
+  See:
+    AABN AABBCCDD 3 Bright A_Chase
+    Loop
+  Missile:
+	AABN S 6 A_FaceTarget
+	AABN T 6 A_FaceTarget
+    AABN U 1 Bright A_FatAttack1
+	AABN U 1 Bright A_FatAttack2
+	AABN U 1 Bright A_FatAttack3
+	AABN T 1 A_FaceTarget
+	AABN U 1 Bright A_SkelMissile
+	AABN U 1 Bright A_SkelMissile 
+	AABN U 8 Bright A_SkelMissile 
+    Goto See
+  Pain:
+    AABN H 4 Bright
+    AABN H 4 Bright A_Pain
+    Goto See
+  Death:
+    TNT1 A 0 A_NoGravity
+    AABN I 6 Bright A_Scream
+    AABN J 5 Bright A_NoBlocking
+    AABN KLMNOPQR 4 Bright
+    Stop
+  }
+}
+
+ACTOR SD20x7A10 : Soulsphere 25204//2013
+{
+Translation "196:207=250:254"
+}
+
+ACTOR SD20x7A11 : ShortBlueTorch 25205//55
+{
+Translation "196:207=250:254"
+}
+ACTOR SD20x7A12 : ShortBlueTorch 25206//44
+{
+Translation "196:207=250:254"
+}
+ACTOR SD20x7A13 : HealthBonus 25207//2014
+{
+Translation "196:207=250:254"
 }

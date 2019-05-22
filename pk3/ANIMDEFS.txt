@@ -4529,3 +4529,36 @@ Switch	Doom 3		LITGTHW1	On Pic	LITGTHB1	Tics 0
 Switch	Doom 3		SW1MEGA 	On Pic	SW2MEGA 	Tics 0
 Switch	Doom 3		ADEL_N09	On Pic	ADEL_N10	Tics 0
 Switch	Doom 3		SW1GOTH 	On Pic	SW2GOTH 	Tics 0
+
+//swtw
+Switch	Doom 3		SWT28 	On Pic	SWT29 	Tics 0
+
+Flat	Optional	SWF05 	Range	SWF07 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	LAVA1   	Range	LAVA4   	Tics 8
+Flat	Optional	BLOOD1  	Range	BLOOD3  	Tics 8
+Flat	Optional	RROCK05 	Range	RROCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SLIME09 	Range	SLIME12 	Tics 8
+Flat	Optional	OSLIME01	Range	OSLIME04	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
+Texture	Optional	SWT19	Range	SWT21	Tics 8
+Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
+Texture	Optional	SWT16	Range	SWT18	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	SWT22	Range	SWT24	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
+Texture	Optional	LAVFALL1	Range	LAVFALL4	Tics 8
+Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+Texture	Optional	SWTX04 	Range	SWTX07 	Tics 8
+Texture	Optional	GRFL_01 	Range	GRFL_04 	Tics 8
+Texture	Optional	OFALL1  	Range	OFALL4  	Tics 8
+

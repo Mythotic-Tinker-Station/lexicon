@@ -7467,3 +7467,9 @@ ACTOR SD20x7A13 : HealthBonus 25207//2014
 {
 Translation "196:207=250:254"
 }
+
+//1024
+
+ACTOR 1024A1 : ShortGreenColumn 25208//31
+{States{Spawn:AABN S -1
+    Stop}}

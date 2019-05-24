@@ -4656,3 +4656,90 @@ Texture	Optional	STRGATE1	Range	STRGATE4	Tics 8
 Texture	Optional	FFIELDG1	Range	FFIELDGA	Tics 2
 Texture	Optional	FFIELDP1	Range	FFIELDPA	Tics 2
 Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+
+//1024-2
+
+Switch	Doom 1		SW1BRCOM	On Pic	SW2BRCOM	Tics 0
+Switch	Doom 1		SW1BRN1 	On Pic	SW2BRN1 	Tics 0
+Switch	Doom 1		SW1BRN2 	On Pic	SW2BRN2 	Tics 0
+Switch	Doom 1		SW1BRNGN	On Pic	SW2BRNGN	Tics 0
+Switch	Doom 1		SW1BROWN	On Pic	SW2BROWN	Tics 0
+Switch	Doom 1		SW1COMM 	On Pic	SW2COMM 	Tics 0
+Switch	Doom 1		SW1COMP 	On Pic	SW2COMP 	Tics 0
+Switch	Doom 1		SW1DIRT 	On Pic	SW2DIRT 	Tics 0
+Switch	Doom 1		SW1EXIT 	On Pic	SW2EXIT 	Tics 0
+Switch	Doom 1		SW1GRAY 	On Pic	SW2GRAY 	Tics 0
+Switch	Doom 1		SW1GRAY1	On Pic	SW2GRAY1	Tics 0
+Switch	Doom 1		SW1METAL	On Pic	SW2METAL	Tics 0
+Switch	Doom 1		SW1PIPE 	On Pic	SW2PIPE 	Tics 0
+Switch	Doom 1		SW1SLAD 	On Pic	SW2SLAD 	Tics 0
+Switch	Doom 1		SW1STARG	On Pic	SW2STARG	Tics 0
+Switch	Doom 1		SW1STON1	On Pic	SW2STON1	Tics 0
+Switch	Doom 1		SW1STON2	On Pic	SW2STON2	Tics 0
+Switch	Doom 1		SW1STONE	On Pic	SW2STONE	Tics 0
+Switch	Doom 1		SW1STRTN	On Pic	SW2STRTN	Tics 0
+Switch	Doom 2		SW1BLUE 	On Pic	SW2BLUE 	Tics 0
+Switch	Doom 2		SW1CMT  	On Pic	SW2CMT  	Tics 0
+Switch	Doom 2		SW1GARG 	On Pic	SW2GARG 	Tics 0
+Switch	Doom 2		SW1GSTON	On Pic	SW2GSTON	Tics 0
+Switch	Doom 2		SW1HOT  	On Pic	SW2HOT  	Tics 0
+Switch	Doom 2		SW1LION 	On Pic	SW2LION 	Tics 0
+Switch	Doom 2		SW1SATYR	On Pic	SW2SATYR	Tics 0
+Switch	Doom 2		SW1SKIN 	On Pic	SW2SKIN 	Tics 0
+Switch	Doom 2		SW1VINE 	On Pic	SW2VINE 	Tics 0
+Switch	Doom 2		SW1WOOD 	On Pic	SW2WOOD 	Tics 0
+Switch	Doom 3		SW1PANEL	On Pic	SW2PANEL	Tics 0
+Switch	Doom 3		SW1ROCK 	On Pic	SW2ROCK 	Tics 0
+Switch	Doom 3		SW1MET2 	On Pic	SW2MET2 	Tics 0
+Switch	Doom 3		SW1WDMET	On Pic	SW2WDMET	Tics 0
+Switch	Doom 3		SW1BRIK 	On Pic	SW2BRIK 	Tics 0
+Switch	Doom 3		SW1MOD1 	On Pic	SW2MOD1 	Tics 0
+Switch	Doom 3		SW1ZIM  	On Pic	SW2ZIM  	Tics 0
+Switch	Doom 3		SW1STON6	On Pic	SW2STON6	Tics 0
+Switch	Doom 3		SW1TEK  	On Pic	SW2TEK  	Tics 0
+Switch	Doom 3		SW1MARB 	On Pic	SW2MARB 	Tics 0
+Switch	Doom 3		SW1SKULL	On Pic	SW2SKULL	Tics 0
+Switch	Doom 3		SW1S0V  	On Pic	SW1S1V  	Tics 0
+Switch	Doom 3		SLSWY0  	On Pic	SLSWY1  	Tics 0
+Switch	Doom 3		SLSWR0  	On Pic	SLSWR1  	Tics 0
+Switch	Doom 3		SLSWB0  	On Pic	SLSWB1  	Tics 0
+Switch	Doom 3		QSWITCH1	On Pic	QSWITCH2	Tics 0
+Switch	Doom 3		OSAT1   	On Pic	OSAT2   	Tics 0
+Switch	Doom 3		EWAL001A	On Pic	EWAL002B	Tics 0
+Switch	Doom 3		EHELLSW1	On Pic	EHELLSW2	Tics 0
+Switch	Doom 3		SW1GOTH1	On Pic	SW2GOTH1	Tics 0
+Switch	Doom 3		SW1GOTH2	On Pic	SW2GOTH2	Tics 0
+Switch	Doom 3		SKULL1  	On Pic	SKULL2  	Tics 0
+Switch	Doom 3		OMETSW1 	On Pic	OMETSW2 	Tics 0
+Switch	Doom 3		SW0KEYBL	On Pic	SW1KEYBL	Tics 0
+Switch	Doom 3		SW0KEYYL	On Pic	SW1KEYYL	Tics 0
+Switch	Doom 3		SW0KEYRD	On Pic	SW1KEYRD	Tics 0
+Flat	Optional	NUKAGE1 	Range	NUKAGE3 	Tics 8
+Flat	Optional	FWATER1 	Range	FWATER4 	Tics 8
+Flat	Optional	SWATER1 	Range	SWATER4 	Tics 8
+Flat	Optional	LAVA1   	Range	LAVA4   	Tics 8
+Flat	Optional	BLOOD1  	Range	BLOOD3  	Tics 8
+Flat	Optional	RROCK05 	Range	RROCK08 	Tics 8
+Flat	Optional	SLIME01 	Range	SLIME04 	Tics 8
+Flat	Optional	SLIME05 	Range	SLIME08 	Tics 8
+Flat	Optional	SLIME09 	Range	SLIME12 	Tics 8
+Flat	Optional	GRYWATR1	Range	GRYWATR4	Tics 8
+Flat	Optional	FLAVAN05	Range	FLAVAN08	Tics 8
+Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
+Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
+Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
+Texture	Optional	FIREWALA	Range	FIREWALL	Tics 8
+Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
+Texture	Optional	FIRELAV3	Range	FIRELAVA	Tics 8
+Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
+Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
+Texture	Optional	ROCKRED1	Range	ROCKRED3	Tics 8
+Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
+Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
+Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
+Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
+Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
+Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
+Texture	Optional	LFALL_N1	Range	LFALL_N4	Tics 8
+Texture	Optional	WTRFALL1	Range	WTRFALL4	Tics 8
+//We can scrub duplicates when we have all the wads in.

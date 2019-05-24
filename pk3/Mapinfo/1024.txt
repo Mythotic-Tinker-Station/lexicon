@@ -1,6 +1,6 @@
 
 
-map TT101 lookup "Resurrect Dead"
+map TT101 lookup "Water Facility"
 {
 	titlepatch = "TT1LV00"
 	next = "TT102"
@@ -17,7 +17,7 @@ map TT101 lookup "Resurrect Dead"
 	
 }
 
-map TT102 lookup "Firestarter"
+map TT102 lookup "Garden Of The Descent"
 {
 	titlepatch = "TT1LV01"
 	next = "TT103"
@@ -34,7 +34,7 @@ map TT102 lookup "Firestarter"
 	
 }
 
-map TT103 lookup "Pathogen"
+map TT103 lookup "Dilapidation"
 {
 	titlepatch = "TT1LV02"
 	next = "TT104"
@@ -51,7 +51,7 @@ map TT103 lookup "Pathogen"
 	
 }
 
-map TT104 lookup "Desecration"
+map TT104 lookup "Outpost 1024"
 {
 	titlepatch = "TT1LV03"
 	next = "TT105"
@@ -68,7 +68,7 @@ map TT104 lookup "Desecration"
 	
 }
 
-map TT105 lookup "Evil Battlefield of Demons"
+map TT105 lookup "Autumn In Hell"
 {
 	titlepatch = "TT1LV04"
 	next = "TT106"
@@ -85,7 +85,7 @@ map TT105 lookup "Evil Battlefield of Demons"
 	
 }
 
-map TT106 lookup "Wavebreaker"
+map TT106 lookup "Departure Point"
 {
 	titlepatch = "TT1LV05"
 	next = "TT107"
@@ -103,7 +103,7 @@ map TT106 lookup "Wavebreaker"
 	
 }
 
-map TT107 lookup "Morkfang"
+map TT107 lookup "Dead Small"
 {
 	titlepatch = "TT1LV06"
 	next = "TT108"
@@ -121,7 +121,7 @@ map TT107 lookup "Morkfang"
 	
 }
 
-map TT108 lookup "Resurgam"
+map TT108 lookup "A Jagged Stroll"
 {
 	titlepatch = "TT1LV07"
 	next = "TT109"
@@ -138,7 +138,7 @@ map TT108 lookup "Resurgam"
 	
 }
 
-map TT109 lookup "Yonahe"
+map TT109 lookup "Monday Morning"
 {
 	titlepatch = "TT1LV08"
 	next = "TT110"
@@ -155,7 +155,7 @@ map TT109 lookup "Yonahe"
 	
 }
 
-map TT110 lookup "Dunleitt"
+map TT110 lookup "Gothika 1024"
 {
 	titlepatch = "TT1LV09"
 	next = "TT111"
@@ -172,7 +172,7 @@ map TT110 lookup "Dunleitt"
 	
 }
 
-map TT111 lookup "Broken Mind"
+map TT111 lookup "Caco District"
 {
 	titlepatch = "TT1LV10"
 	next = "TT112"
@@ -189,7 +189,7 @@ map TT111 lookup "Broken Mind"
 	
 }
 
-map TT112 lookup "Gevurah"
+map TT112 lookup "Warehouse #667"
 {
 	titlepatch = "TT1LV11"
 	next = "TT113"
@@ -206,7 +206,7 @@ map TT112 lookup "Gevurah"
 	
 }
 
-map TT113 lookup "The Farthest Reach"
+map TT113 lookup "The Focus II"
 {
 	titlepatch = "TT1LV12"
 	next = "TT114"
@@ -223,7 +223,7 @@ map TT113 lookup "The Farthest Reach"
 	
 }
 
-map TT114 lookup "Blue Shift"
+map TT114 lookup "House Of Shadows"
 {
 	titlepatch = "TT1LV13"
 	next = "TT115"
@@ -240,7 +240,7 @@ map TT114 lookup "Blue Shift"
 	
 }
 
-map TT115 lookup "Skittle Biscuit"
+map TT115 lookup "Bantam"
 {
 	titlepatch = "TT1LV14"
 	next = "TT116"
@@ -257,7 +257,7 @@ map TT115 lookup "Skittle Biscuit"
 	
 }
 
-map TT116 lookup "Nibblet"
+map TT116 lookup "Deja View"
 {
 	titlepatch = "TT1LV15"
 	next = "TT117"
@@ -274,7 +274,7 @@ map TT116 lookup "Nibblet"
 	
 }
 
-map TT117 lookup "Fierce Attack"
+map TT117 lookup "Omega Outpost"
 {
 	titlepatch = "TT1LV16"
 	next = "TT118"
@@ -291,7 +291,7 @@ map TT117 lookup "Fierce Attack"
 	
 }
 
-map TT118 lookup "Via Tortuosa"
+map TT118 lookup "Tutorial #99"
 {
 	titlepatch = "TT1LV17"
 	next = "TT119"
@@ -308,7 +308,7 @@ map TT118 lookup "Via Tortuosa"
 	
 }
 
-map TT119 lookup "Meet-A-Bear"
+map TT119 lookup "Lip Service"
 {
 	titlepatch = "TT1LV18"
 	next = "TT120"
@@ -325,7 +325,7 @@ map TT119 lookup "Meet-A-Bear"
 	
 }
 
-map TT120 lookup "Red Recluse"
+map TT120 lookup "Claustrophobic Sting"
 {
 	titlepatch = "TT1LV19"
 	next = "TT121"
@@ -342,7 +342,7 @@ map TT120 lookup "Red Recluse"
 	
 }
 
-map TT121 lookup "Heck Revealed"
+map TT121 lookup "Corpse Yard"
 {
 	titlepatch = "TT1LV20"
 	next = "TT122"
@@ -359,7 +359,7 @@ map TT121 lookup "Heck Revealed"
 	
 }
 
-map TT122 lookup "Uprising"
+map TT122 lookup "Prison Escape"
 {
 	titlepatch = "TT1LV21"
 	next = "TT123"
@@ -376,7 +376,7 @@ map TT122 lookup "Uprising"
 	
 }
 
-map TT123 lookup "Chaos Slaughter"
+map TT123 lookup "Close Quarters"
 {
 	titlepatch = "TT1LV22"
 	next = "TT124"
@@ -393,7 +393,7 @@ map TT123 lookup "Chaos Slaughter"
 	
 }
 
-map TT124 lookup "Joyless"
+map TT124 lookup "Zyklon B"
 {
 	titlepatch = "TT1LV23"
 	next = "TT125"
@@ -410,7 +410,7 @@ map TT124 lookup "Joyless"
 	
 }
 
-map TT125 lookup "Temple of Judgement"
+map TT125 lookup "Stein Und Stahl"
 {
 	titlepatch = "TT1LV24"
 	next = "TT126"
@@ -427,7 +427,7 @@ map TT125 lookup "Temple of Judgement"
 	
 }
 
-map TT126 lookup "Dysphoria"
+map TT126 lookup "Marbelous!"
 {
 	titlepatch = "TT1LV25"
 	next = "TT127"
@@ -444,7 +444,7 @@ map TT126 lookup "Dysphoria"
 	
 }
 
-map TT127 lookup "To Mega Therion"
+map TT127 lookup "Tower Of Hades"
 {
 	titlepatch = "TT1LV26"
 	next = "TT128"
@@ -461,7 +461,7 @@ map TT127 lookup "To Mega Therion"
 	
 }
 
-map TT128 lookup "dHoles"
+map TT128 lookup "A Bridge To Far"
 {
 	titlepatch = "TT1LV27"
 	next = "TT129"
@@ -478,7 +478,7 @@ map TT128 lookup "dHoles"
 	
 }
 
-map TT129 lookup "Escaping the Spiral Labyrinth"
+map TT129 lookup "Magus"
 {
 	titlepatch = "TT1LV28"
 	next = "TT130"
@@ -495,7 +495,7 @@ map TT129 lookup "Escaping the Spiral Labyrinth"
 	
 }
 
-map TT130 lookup "Chronoblast"
+map TT130 lookup "Nullified Departure"
 {
 	titlepatch = "TT1LV29"
 	next = "VR"
@@ -512,7 +512,7 @@ map TT130 lookup "Chronoblast"
 	
 }
 
-map TT131 lookup "With Fist In Hand"
+map TT131 lookup "Archville Madness"
 {
 	titlepatch = "TT1LV30"
 	next = "TT116"
@@ -529,7 +529,7 @@ map TT131 lookup "With Fist In Hand"
 	
 }
 
-map TT132 lookup "Pacman"
+map TT132 lookup "Nullspace Junior"
 {
 	titlepatch = "TT1LV31"
 	next = "TT116"

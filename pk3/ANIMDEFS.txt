@@ -4743,3 +4743,27 @@ Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
 Texture	Optional	LFALL_N1	Range	LFALL_N4	Tics 8
 Texture	Optional	WTRFALL1	Range	WTRFALL4	Tics 8
 //We can scrub duplicates when we have all the wads in.
+
+
+//CHAINWORM
+
+texture	CWFALL1 range CWFALL4 tics 8
+texture CWCHAND1 range CWCHAND3 tics 4
+texture CWTORC1 range CWTORC8 tics 4
+texture CWFIR01 range CWFIR04 tics 4
+texture CWBUB1 range CWBUB4 tics 4
+texture CWSTEAM1 range CWSTEAM4 tics 16
+texture CWBUB5 range CWBUB8 tics 4
+texture	CWSLIM1 range CWSLIM4 tics 8
+texture	CWLAVA01 range CWLAVA08 tics 4
+texture	CWMC33 range CWMC36 tics 8
+texture	CWCRED01 range CWCRED02 tics 2
+texture	CWCRED05 range CWCRED07 tics 2
+texture	CWCRED23 range CWCRED24 tics 4
+
+switch CWPLAS1 on sound Switch1 pic CWPLAS2 tics 0
+switch CWVEND3 on sound Switch1 pic CWVEND5 tics 0
+switch CWGUIL01 on sound Switch1 pic CWGUIL02 tics 0
+switch CWHELL04 on sound Switch1 pic CWHELL05 tics 0
+switch CWHELL06 on sound Switch1 pic CWHELL07 tics 0
+switch CWHELL37 on sound Switch1 pic CWHELL38 tics 0

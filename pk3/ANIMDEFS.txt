@@ -4807,3 +4807,15 @@ pic 4 tics 8
 
 //ZONE 300
 texture	ZTH01 range ZTH04 tics 4
+
+
+//CHILLAX
+
+switch ALIEN019 on sound Switch1 pic ALIEN022 tics 0
+switch ALIEN020 on sound Switch1 pic ALIEN023 tics 0
+switch ALIEN021 on sound Switch1 pic ALIEN024 tics 0
+
+Texture	Optional	ALIEN010	Range	ALIEN013	Tics 2
+Texture	Optional	ALIEN014	Range	ALIEN015	Tics 2
+Texture	Optional	ALIEN016	Range	ALIEN018	Tics 2
+Texture	Optional	ALIEN025	Range	ALIEN028	Tics 8

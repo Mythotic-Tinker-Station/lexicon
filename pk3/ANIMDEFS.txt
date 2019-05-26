@@ -4294,6 +4294,7 @@ Texture	Optional	BT50	Range	BT57	Tics	8
 Texture	Optional	BT60	Range	BT75	Tics	8
 Texture	Optional	BT80	Range	BT87	Tics	8
 Texture	Optional	BT90	Range	BT97	Tics	8
+Texture	Optional	FAN128A	Range	FAN128H	Tics	8
 
 
 Switch	Doom	3	BTS11	On	Pic	BTS21	Tics	0
@@ -4768,3 +4769,9 @@ switch CWGUIL01 on sound Switch1 pic CWGUIL02 tics 0
 switch CWHELL04 on sound Switch1 pic CWHELL05 tics 0
 switch CWHELL06 on sound Switch1 pic CWHELL07 tics 0
 switch CWHELL37 on sound Switch1 pic CWHELL38 tics 0
+
+//THERIANTHROPE
+
+
+texture	THRO0001 range THRO0233 tics 99
+

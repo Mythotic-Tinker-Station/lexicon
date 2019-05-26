@@ -79,7 +79,21 @@ texture CPOINT01
 	pic CPOINT31 tics 1
 	pic CPOINT32 tics 1
 
+//THERIANTHROPE
 
+
+texture	THRO0001 range THRO0233 tics 99
+
+//If we want we can specify longer times for dialogue heavy frames like this?
+//Not quite sure of the syntax but its an idea I want to leave here
+
+//texture THRO0001
+//pic 1 tics 5
+//pic 2 tics 5
+//pic 3 tics 5
+//pic 4 tics 5
+
+////////////////////////////////////////////////////////////////////////////////
 //Alien vendetta 
 
 Texture	Optional	AVFTE1  	Range	AVFTE4  	Tics 8
@@ -4770,8 +4784,25 @@ switch CWHELL04 on sound Switch1 pic CWHELL05 tics 0
 switch CWHELL06 on sound Switch1 pic CWHELL07 tics 0
 switch CWHELL37 on sound Switch1 pic CWHELL38 tics 0
 
-//THERIANTHROPE
 
+//Destination Unknown
 
-texture	THRO0001 range THRO0233 tics 99
+warp flat RROCK98
+warp flat RROCK99
+warp flat DAVASTKW
+
+texture lfall1
+
+pic 1 tics 5
+pic 2 tics 5
+pic 3 tics 5
+pic 4 tics 5
+
+flat 2lava1
+
+pic 1 tics 8
+pic 2 tics 8
+pic 3 tics 8
+pic 4 tics 8
+
 

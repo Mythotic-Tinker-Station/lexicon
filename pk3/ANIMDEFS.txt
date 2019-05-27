@@ -4456,6 +4456,9 @@ Switch	Doom 3		STDT10 	On Pic	STDT12 	Tics 0
 Switch	Doom 3		STDT11 	On Pic	STDT13 	Tics 0
 
 
+Texture	Optional	XBA3_01 	Range	XBA3_04 	Tics 8
+
+
 Flat	Optional	SD6F02	Range	SD6F04	Tics 8
 Flat	Optional	SS_01	Range	SS_07	Tics 8
 
@@ -4493,7 +4496,7 @@ Texture	Optional	LASRPL01	Range	LASRPL16	Tics 2
 Texture	Optional	LASRRE01	Range	LASRRE16	Tics 2
 Texture	Optional	ZXY001  	Range	ZXY329  	Tics 2
 Texture	Optional	OFALL1  	Range	OFALL4  	Tics 8
-Texture	Optional	XB03_01 	Range	XB03_04 	Tics 8
+Texture	Optional	XB03_01 	Range	XB03_99 	Tics 8
 Texture	Optional	FFIELDB1	Range	FFIELDBA	Tics 2
 Texture	Optional	ADEL_Z90	Range	ADEL_Z93	Tics 8
 Texture	Optional	ADEL_Z80	Range	ADEL_Z83	Tics 8
@@ -4562,12 +4565,9 @@ Flat	Optional	OSLIME01	Range	OSLIME04	Tics 8
 Texture	Optional	BLODGR1 	Range	BLODGR4 	Tics 8
 Texture	Optional	SLADRIP1	Range	SLADRIP3	Tics 8
 Texture	Optional	BLODRIP1	Range	BLODRIP4	Tics 8
-Texture	Optional	SWT19	Range	SWT21	Tics 8
 Texture	Optional	GSTFONT1	Range	GSTFONT3	Tics 8
-Texture	Optional	SWT16	Range	SWT18	Tics 8
 Texture	Optional	FIREMAG1	Range	FIREMAG3	Tics 8
 Texture	Optional	FIREBLU1	Range	FIREBLU2	Tics 8
-Texture	Optional	SWT22	Range	SWT24	Tics 8
 Texture	Optional	BFALL1  	Range	BFALL4  	Tics 8
 Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
 Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
@@ -4577,6 +4577,9 @@ Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
 Texture	Optional	SWTX04 	Range	SWTX07 	Tics 8
 Texture	Optional	GRFL_01 	Range	GRFL_04 	Tics 8
 Texture	Optional	OFALL1  	Range	OFALL4  	Tics 8
+Texture	Optional	SWT16	Range	SWT18	Tics 8
+Texture	Optional	SWT19	Range	SWT21	Tics 8
+Texture	Optional	SWT22	Range	SWT24	Tics 8
 
 //SF3
 
@@ -4820,3 +4823,4 @@ Texture	Optional	AAAA0014	Range	AAAA0015	Tics 8
 Texture	Optional	AAAA0016	Range	AAAA0018	Tics 8
 Texture	Optional	AAAA0025	Range	AAAA0028	Tics 8
 Texture	Optional	AAAA0031	Range	AAAA0034	Tics 8
+

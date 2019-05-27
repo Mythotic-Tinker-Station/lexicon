@@ -9,7 +9,6 @@ strict namespace
         //unused
         //#include "skybox.c"
 
-        // dont touch this
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1
@@ -24,7 +23,6 @@ strict namespace
         #define PLAYER_MAX 64
         
     #endif
-    
     
     str sectionnames[MAPSET_SECTIONS] =
     {
@@ -280,6 +278,17 @@ strict namespace
     int clock = 0;
     int countstart = 0;
 
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////
+    // Scripts
+    ///////////////////////////////////////////////////////////////
+
     // stuff that runs during any level
     script "SV_Level" open
     {
@@ -370,8 +379,6 @@ strict namespace
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
-        Thing_ChangeTID(0, playernumber()+PLAYER_TID);
-
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
@@ -718,6 +725,24 @@ strict namespace
     {
         players[pnum] = id;
     }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////
+    // Functions
+    ///////////////////////////////////////////////////////////////
 
     function void state_init(void)
     {

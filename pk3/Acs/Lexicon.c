@@ -521,7 +521,7 @@ strict namespace
                             {
                                 if(votessorted[i][1] >= (MAPSET_SECTIONS_MAX*p)+1 && votessorted[i][1] <= (MAPSET_SECTIONS_MAX*(p+1)+1))
                                 {
-                                    hudmessagebold(s:sectionnames[p], s:" "; 0, i+11000, 0, 300.2, y, 0.1);
+                                    hudmessagebold(s:sectionnames[p], s:" "; 0, i+11001, 0, 300.2, y, 0.1);
                                 }
                             }
                         }

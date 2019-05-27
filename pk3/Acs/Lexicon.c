@@ -277,7 +277,7 @@ strict namespace
     int levelstarted = 0;
     int clock = 0;
     int countstart = 0;
-
+    str clockcolor = "\c[Green]";
 
 
 
@@ -292,74 +292,79 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
+        // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
+                // woo! fireworks! yay!
                 ACS_NamedExecute("Fireworks", 0);
             }
             terminate; 
         }
         
-        SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
-        levelstarted = 0;
-        clock = GetCvar("lexicon_timer_reset");
-
-        if(GetCvar("lexicon_timer_reset_enabled") == 1)
+        // if the level is anything but the HUB map
+        else
         {
-            
-            while(1)
+            // get suck time
+            SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
+
+            // is the mapset reset timer enabled?
+            if(GetCvar("lexicon_timer_reset_enabled") == 1)
             {
-                // if the level has started and the countdown is not started
-                if(levelstarted == 1 && countstart == 0)
-                {
-                    // if the playercount goes back to 0
-                    if(playercount() == 0)
-                    {
-                        countstart = 1;
-                    }
-                }
-                // if nobody has joined yet
-                else
-                {
-                    // wait for someone to join
-                    if(playercount() > 0)
-                    {
-                        //the level has been started
-                        levelstarted = 1;
-                    }
-                }
+                // set levelstart to 0
+                levelstarted = 0;
                 
-                // countdown has started
-                if(countstart == 1)
+                // loop until levelstart and countstart are 1
+                while(levelstarted == 0 && countstart == 0)
                 {
-                    // countdown
-                    clock--;
-                    if(countstart == 1)
+                    // if level has not started
+                    if(levelstarted == 0)
                     {
-                        // these hudmessages were in the cl_lexicon_hud script
-                        // it had to be moved here as zandronum terminates player scripts when they spectate
-                        // resulting in these hudmessages not showing
-                        HudSetup(0, 0);
-                        SetFont("HUDFONT");
-                        if(clock > 7)
+                        // wait for someone to join
+                        if(playercount() > 0)
                         {
-                            hudmessagebold(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 7 && clock > 4)
-                        {
-                            hudmessagebold(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 4 && clock > 1)
-                        {
-                            hudmessagebold(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 1 && clock >= 0)
-                        {
-                            hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                            //the level has been started
+                            levelstarted = 1;
                         }
                     }
+                    
+                    // if the level has started and the countdown is not started
+                    if(levelstarted == 1 && countstart == 0)
+                    {
+                        // if the playercount goes back to 0
+                        if(playercount() == 0)
+                        {
+                            // start clock
+                            countstart = 1;
+                        }
+                    }
+                    delay(1);
+                }
+
+                // clock
+                clock = GetCvar("lexicon_timer_reset");
+
+                // setup hud
+                HudSetup(0, 0);
+                SetFont("HUDFONT");
+                
+                // countdown
+                while(1)
+                {
+                    // count down the clock
+                    clock--;
+                    
+                    // change the color of the clock
+                            if(clock > 7)                  { clockcolor = "\c[Green]";     }
+                    else    if(clock <= 7 && clock > 4)    { clockcolor = "\c[Yellow]";    }
+                    else    if(clock <= 4 && clock > 1)    { clockcolor = "\c[Orange]";    }
+                    else    if(clock <= 1 && clock >= 0)   { clockcolor = "\c[Red]";       }
+                        
+                    // draw clock
+                    hudmessagebold(s:clockcolor, s:"Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    
                      // when time is up
                     if(clock < 0)
                     {
@@ -367,9 +372,10 @@ strict namespace
                         SetCVar("lexicon_global_sucktime", 0);
                         ChangeLevel("VR", 0, 0, -1);
                     }
-                    delay(34);
+                    
+                    // seconds
+                    delay(35);
                 }
-                delay(1);
             }
         }
     }

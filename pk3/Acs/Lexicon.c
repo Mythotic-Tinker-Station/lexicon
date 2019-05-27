@@ -22,8 +22,19 @@ strict namespace
         #define PLAYER_TID 1000
         #define PLAYER_MAX 64
         
+        #define MESSAGE_WELCOME "\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"
+        
+        #define MESSAGE_RETURN "Going back to the lexicon in: "
+        
+        #define MESSAGE_COMPLETE "\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]"
+        
+        #define MESSAGE_THROPE "\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub @RigRug on Patreon!"
+        
+        #define MESSAGE_LORE1 "\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"
     #endif
     
+    
+    // section names
     str sectionnames[MAPSET_SECTIONS] =
     {
         "\c[Gold](\c[Green]Normal\c[Gold])",
@@ -363,7 +374,7 @@ strict namespace
                     else    if(clock <= 1 && clock >= 0)   { clockcolor = "\c[Red]";       }
                         
                     // draw clock
-                    hudmessagebold(s:clockcolor, s:"Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    hudmessagebold(s:clockcolor, s:MESSAGE_RETURN, i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
                     
                      // when time is up
                     if(clock < 0)
@@ -388,6 +399,7 @@ strict namespace
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
+            // setup player's array slot
             int pnum = playernumber();
             players[pnum] = -1;
 
@@ -396,14 +408,15 @@ strict namespace
             ACS_Execute(569, 0, time_seconds);
             ACS_ExecuteAlways(570, 0, state);
             
-            // give player the votegun
+            // clear out player's inventory
             if(GetCVar("lexicon_clear_inventory") == 1)
             {
                 ClearInventory();
             }
+            
+            // give player the votegun
             GiveInventory("Lexicon_VoteGun", 1);
             SetWeapon("Lexicon_VoteGun");
-
         }
     }
 
@@ -442,12 +455,12 @@ strict namespace
         {
             HudSetup(0, 0);
             setfont("hudfont");
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
+            hudmessagebold(s:MESSAGE_WELCOME; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
                         
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
-                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+                hudmessagebold(s:MESSAGE_COMPLETE, s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
             }
 
 
@@ -942,7 +955,7 @@ strict namespace
     {
         HudSetup(0,0);
         setfont("HUDFONT");
-        hudmessage(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub @RigRug on Patreon!"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:MESSAGE_THROPE; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 	
     script "lex_lore1" (void) clientside
@@ -951,7 +964,7 @@ strict namespace
         if(GetActorZ(0) > 300.0) { terminate; }
         HudSetup(0,0);
         setfont("HUDFONT");
-        hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:MESSAGE_LORE1; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
 

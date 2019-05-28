@@ -319,7 +319,7 @@ strict namespace
     script "SV_Level" open
     {
         // if level is the HUB map
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         { 
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
@@ -327,7 +327,7 @@ strict namespace
                 // woo! fireworks! yay!
                 ACS_NamedExecute("Fireworks", 0);
             }
-            terminate; 
+            terminate;
         }
         
         // if the level is anything but the HUB map
@@ -938,7 +938,7 @@ strict namespace
         }
     }
 
-    function void hudsetup(str font)
+    function void HudSetup(str font)
     {
         int x = GetScreenWidth();
         int y = GetScreenHeight();

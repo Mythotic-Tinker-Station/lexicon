@@ -25,7 +25,6 @@ strict namespace
         #define MESSAGE_RETURN "Going back to the lexicon in: "
         #define MESSAGE_COMPLETE "\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]"
     
-    
     #endif
     
     // this is where all the lore messages go
@@ -348,7 +347,6 @@ strict namespace
                 // loop until levelstart and countstart are 1
                 while(levelstarted == 0 || countstart == 0)
                 {
-                
                     // if the level has started and the countdown is not started
                     if(levelstarted == 1 && countstart == 0)
                     {
@@ -409,9 +407,7 @@ strict namespace
             }
         }
     }
-
-
-
+    
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {

@@ -374,9 +374,8 @@ strict namespace
                 clock = GetCvar("lexicon_timer_reset");
 
                 // setup hud
-                HudSetup(0, 0);
-                SetFont("HUDFONT");
-                
+                HudSetup("HUDFONT");
+
                 // countdown
                 while(1)
                 {
@@ -457,8 +456,8 @@ strict namespace
             }
 
             // mapset/mapname/creds
-            HudSetup(0, 0);
-            setfont("hudfont");
+            HudSetup("HUDFONT");
+
             Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
         }
         
@@ -467,8 +466,8 @@ strict namespace
         //////////////////////////
         else
         {
-            HudSetup(0, 0);
-            setfont("hudfont");
+            HudSetup("HUDFONT");
+            
             hudmessagebold(s:MESSAGE_WELCOME; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
                         
             // we have come back from a completed mapset
@@ -504,8 +503,7 @@ strict namespace
         ///////////////
         while(1)
         {
-            HudSetup(0, 0);
-            setfont("HUDFONT");
+            HudSetup("HUDFONT");
             
             //////////////////////////
             // Debug Mode
@@ -940,13 +938,10 @@ strict namespace
         }
     }
 
-    function void hudsetup(int xres, int yres)
+    function void hudsetup(str font)
     {
-        int x = xres;
-        int y = yres;
-
-        if(x < 1) { x = GetScreenWidth(); }
-        if(y < 1) { y = GetScreenHeight(); }
+        int x = GetScreenWidth();
+        int y = GetScreenHeight();
 
         hud_width = (fixed)(x*65536);
         hud_height = (fixed)(y*65536);
@@ -955,15 +950,14 @@ strict namespace
         hud_height_half = hud_height/2.0;
 
         SetHudSize(x, y, true);
-        SetFont("BIGFONT");
+        SetFont(font);
     }
     
     ////// Easter egg shit because i need the hud vars
 
     script "Eggs" (int id) clientside
     {
-        HudSetup(0,0);
-        setfont("HUDFONT");
+        HudSetup("HUDFONT");
         hudmessage(s:lore[id]; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }

@@ -49,7 +49,6 @@ strict namespace
         /* 15 */            "Unused",
     };    
     
-    
     // section names
     str sectionnames[MAPSET_SECTIONS] =
     {

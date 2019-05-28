@@ -27,7 +27,7 @@ strict namespace
     
     
     #endif
-    /
+    
     // this is where all the lore messages go
     str lore[16] =
     {
@@ -634,12 +634,7 @@ strict namespace
     // called by players to manage their votes
     script "VotePlayer" (int id)
     {
-        if(id == -1)
-        {
-            // there was something else here but i removed it, and all the blank switches were set for this case, but now its just a waste
-            // however, am leaving this here incase i do wanna use this for something
-            terminate;
-        }
+        if(id == -1) { terminate; }
 
         if(playernumber() > -1)
         {

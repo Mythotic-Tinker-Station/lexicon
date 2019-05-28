@@ -343,21 +343,12 @@ strict namespace
             {
                 // set levelstart to 0
                 levelstarted = 0;
+                countstart = 0;
                 
                 // loop until levelstart and countstart are 1
-                while(levelstarted == 0 && countstart == 0)
+                while(levelstarted == 0 || countstart == 0)
                 {
-                    // if level has not started
-                    if(levelstarted == 0)
-                    {
-                        // wait for someone to join
-                        if(playercount() > 0)
-                        {
-                            //the level has been started
-                            levelstarted = 1;
-                        }
-                    }
-                    
+                
                     // if the level has started and the countdown is not started
                     if(levelstarted == 1 && countstart == 0)
                     {
@@ -366,6 +357,17 @@ strict namespace
                         {
                             // start clock
                             countstart = 1;
+                        }
+                    }
+                    
+                    // if level has not started
+                    if(levelstarted == 0)
+                    {
+                        // wait for someone to join
+                        if(playercount() > 0)
+                        {
+                            //the level has been started
+                            levelstarted = 1;
                         }
                     }
                     delay(1);
@@ -438,7 +440,7 @@ strict namespace
     }
 
     // when a player enters the game(client side)
-    script "CL_Lexicon_Hud" enter clientside
+    script "CL_PlayerEnter" enter clientside
     {
         // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }

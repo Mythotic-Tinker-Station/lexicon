@@ -92,27 +92,27 @@ strict namespace
 		{ "1994 Tune Up Community Project", "TU01"          }, // 26
 		{ "Unholy Realms",			        "UHR01"	        }, // 27
         { "Hell Core",			            "HC01"	        }, // 28
-        { "Unused",			                "MAP01"	        }, // 29
-        { "Unused",			                "MAP01"	        }, // 30
-        { "Unused",			                "MAP01"	        }, // 31
-        { "Unused",			                "MAP01"	        }, // 32
-        { "Unused",			                "MAP01"	        }, // 33
-        { "Unused",			                "MAP01"	        }, // 34
-        { "Unused",			                "MAP01"	        }, // 35
-        { "Unused",			                "MAP01"	        }, // 36
-        { "Unused",			                "MAP01"	        }, // 37
-        { "Unused",			                "MAP01"	        }, // 38
-        { "Unused",			                "MAP01"	        }, // 39
-        { "Unused",			                "MAP01"	        }, // 40
-        { "Unused",			                "MAP01"	        }, // 41
-        { "Unused",			                "MAP01"	        }, // 42
-        { "Unused",			                "MAP01"	        }, // 43
-        { "Unused",			                "MAP01"	        }, // 44
-        { "Unused",			                "MAP01"	        }, // 45
-        { "Unused",			                "MAP01"	        }, // 46
-        { "Unused",			                "MAP01"	        }, // 47
-        { "Unused",			                "MAP01"	        }, // 48
-        { "Unused",			                "MAP01"	        }, // 49
+        { "Ancient Aliens",			        "AA101"	        }, // 29
+        { "Valiant",			            "VAL01"	        }, // 30
+        { "Epic 1",			                "EP101"	        }, // 31
+        { "Epic 2",			                "EP201"	        }, // 32
+        { "Nova",			                "NV101"	        }, // 33
+        { "Community Chest 1",			    "CC101"	        }, // 34
+        { "Community Chest 2",			    "CC201"	        }, // 35
+        { "Community Chest 3",			    "CC301"	        }, // 36
+        { "Community Chest 4",			    "CC401"	        }, // 37
+        { "Stardate 20x6",			        "SD601"	        }, // 38
+        { "Stardate 20x7",			        "SD701"	        }, // 39
+        { "Swim With The Whales",			"SW101"	        }, // 40
+        { "Congestion 1024",			    "TT101"	        }, // 41
+        { "Clausterphobia 2",			    "TT201"	        }, // 42
+        { "Clausterphobia",			        "TT301"	        }, // 43
+        { "Chainworm",			            "CW101"	        }, // 44
+        { "Back to Saturn X - EP1",			"BX101"	        }, // 45
+        { "Zones Of Fear",			        "ZOF01"	        }, // 46
+        { "Zone 300",			            "ZTH01"	        }, // 47
+        { "Interception",			        "INT01"	        }, // 48
+        { "Doom 2 Redux",			        "RDX01"	        }, // 49
         { "Unused",			                "MAP01"	        }, // 50
         { "Unused",			                "MAP01"	        }, // 51
         { "Unused",			                "MAP01"	        }, // 52
@@ -139,11 +139,11 @@ strict namespace
 		{ "Swift Death",			        "SDE01"            }, // 71
         { "Deus Vult",				        "DV01"	           }, // 72
         { "Pizza Steve",			        "PIZ01"            }, // 73
-        { "Unused",			                "MAP01"            }, // 74
-        { "Unused",			                "MAP01"            }, // 75
-        { "Unused",			                "MAP01"            }, // 76
-        { "Unused",			                "MAP01"            }, // 77
-        { "Unused",			                "MAP01"            }, // 78
+        { "Deus Vult II",			        "DV201"            }, // 74
+        { "SlaughterFest 2012",			    "SF201"            }, // 75
+        { "New Gothic Movement 2",			"NG201"            }, // 76
+        { "SlaughterFest 2013",			    "SF301"            }, // 77
+        { "Chillax",			            "CHX01"            }, // 78
         { "Unused",			                "MAP01"            }, // 79
         { "Unused",			                "MAP01"            }, // 80
         { "Unused",			                "MAP01"            }, // 81

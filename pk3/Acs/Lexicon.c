@@ -9,7 +9,6 @@ strict namespace
         //unused
         //#include "skybox.c"
 
-        // dont touch this
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1
@@ -20,12 +19,39 @@ strict namespace
         #define MAPSET_SECTIONS 3
         #define MAPSET_SECTIONS_MAX 64
         
-        #define PLAYER_TID 1000
         #define PLAYER_MAX 64
         
+        #define MESSAGE_WELCOME "\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"
+        #define MESSAGE_RETURN "Going back to the lexicon in: "
+        #define MESSAGE_COMPLETE "\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]"
+    
+    
     #endif
     
+    // this is where all the lore messages go
+    str lore[16] =
+    {
+        //switch id         // msg
+        /* 0  */            "Nothing to see here.",
+        /* 1  */            "\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub @RigRug on Patreon!",
+        /* 2  */            "\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious",
+        /* 3  */            "Unused",
+        /* 4  */            "Unused",
+        /* 5  */            "Unused",
+        /* 6  */            "Unused",
+        /* 7  */            "Unused",
+        /* 8  */            "Unused",
+        /* 9  */            "Unused",
+        /* 10 */            "Unused",
+        /* 11 */            "Unused",
+        /* 12 */            "Unused",
+        /* 13 */            "Unused",
+        /* 14 */            "Unused",
+        /* 15 */            "Unused",
+    };    
     
+    
+    // section names
     str sectionnames[MAPSET_SECTIONS] =
     {
         "\c[Gold](\c[Green]Normal\c[Gold])",
@@ -279,78 +305,94 @@ strict namespace
     int levelstarted = 0;
     int clock = 0;
     int countstart = 0;
+    str clockcolor = "\c[Green]";
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////
+    // Scripts
+    ///////////////////////////////////////////////////////////////
 
     // stuff that runs during any level
     script "SV_Level" open
     {
+        // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
+                // woo! fireworks! yay!
                 ACS_NamedExecute("Fireworks", 0);
             }
             terminate; 
         }
         
-        SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
-        levelstarted = 0;
-        clock = GetCvar("lexicon_timer_reset");
-
-        if(GetCvar("lexicon_timer_reset_enabled") == 1)
+        // if the level is anything but the HUB map
+        else
         {
-            
-            while(1)
+            // get suck time
+            SetCVar("lexicon_global_sucktime", GetLevelInfo(LEVELINFO_SUCK_TIME));
+
+            // is the mapset reset timer enabled?
+            if(GetCvar("lexicon_timer_reset_enabled") == 1)
             {
-                // if the level has started and the countdown is not started
-                if(levelstarted == 1 && countstart == 0)
-                {
-                    // if the playercount goes back to 0
-                    if(playercount() == 0)
-                    {
-                        countstart = 1;
-                    }
-                }
-                // if nobody has joined yet
-                else
-                {
-                    // wait for someone to join
-                    if(playercount() > 0)
-                    {
-                        //the level has been started
-                        levelstarted = 1;
-                    }
-                }
+                // set levelstart to 0
+                levelstarted = 0;
                 
-                // countdown has started
-                if(countstart == 1)
+                // loop until levelstart and countstart are 1
+                while(levelstarted == 0 && countstart == 0)
                 {
-                    // countdown
-                    clock--;
-                    if(countstart == 1)
+                    // if level has not started
+                    if(levelstarted == 0)
                     {
-                        // these hudmessages were in the cl_lexicon_hud script
-                        // it had to be moved here as zandronum terminates player scripts when they spectate
-                        // resulting in these hudmessages not showing
-                        HudSetup(0, 0);
-                        SetFont("HUDFONT");
-                        if(clock > 7)
+                        // wait for someone to join
+                        if(playercount() > 0)
                         {
-                            hudmessagebold(s:"\c[Green]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 7 && clock > 4)
-                        {
-                            hudmessagebold(s:"\c[Yellow]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 4 && clock > 1)
-                        {
-                            hudmessagebold(s:"\c[Orange]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                        }
-                        else if(clock <= 1 && clock >= 0)
-                        {
-                            hudmessagebold(s:"\c[Red]Going back to the lexicon in: ", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                            //the level has been started
+                            levelstarted = 1;
                         }
                     }
+                    
+                    // if the level has started and the countdown is not started
+                    if(levelstarted == 1 && countstart == 0)
+                    {
+                        // if the playercount goes back to 0
+                        if(playercount() == 0)
+                        {
+                            // start clock
+                            countstart = 1;
+                        }
+                    }
+                    delay(1);
+                }
+
+                // clock
+                clock = GetCvar("lexicon_timer_reset");
+
+                // setup hud
+                HudSetup(0, 0);
+                SetFont("HUDFONT");
+                
+                // countdown
+                while(1)
+                {
+                    // count down the clock
+                    clock--;
+                    
+                    // change the color of the clock
+                            if(clock > 7)                  { clockcolor = "\c[Green]";     }
+                    else    if(clock <= 7 && clock > 4)    { clockcolor = "\c[Yellow]";    }
+                    else    if(clock <= 4 && clock > 1)    { clockcolor = "\c[Orange]";    }
+                    else    if(clock <= 1 && clock >= 0)   { clockcolor = "\c[Red]";       }
+                        
+                    // draw clock
+                    hudmessagebold(s:clockcolor, s:MESSAGE_RETURN, i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    
                      // when time is up
                     if(clock < 0)
                     {
@@ -358,9 +400,10 @@ strict namespace
                         SetCVar("lexicon_global_sucktime", 0);
                         ChangeLevel("VR", 0, 0, -1);
                     }
-                    delay(34);
+                    
+                    // seconds
+                    delay(35);
                 }
-                delay(1);
             }
         }
     }
@@ -370,11 +413,10 @@ strict namespace
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
-        Thing_ChangeTID(0, playernumber()+PLAYER_TID);
-
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
+            // setup player's array slot
             int pnum = playernumber();
             players[pnum] = -1;
 
@@ -383,14 +425,15 @@ strict namespace
             ACS_Execute(569, 0, time_seconds);
             ACS_ExecuteAlways(570, 0, state);
             
-            // give player the votegun
+            // clear out player's inventory
             if(GetCVar("lexicon_clear_inventory") == 1)
             {
                 ClearInventory();
             }
+            
+            // give player the votegun
             GiveInventory("Lexicon_VoteGun", 1);
             SetWeapon("Lexicon_VoteGun");
-
         }
     }
 
@@ -429,12 +472,12 @@ strict namespace
         {
             HudSetup(0, 0);
             setfont("hudfont");
-            hudmessagebold(s:"\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
+            hudmessagebold(s:MESSAGE_WELCOME; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
                         
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
-                hudmessagebold(s:"\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+                hudmessagebold(s:MESSAGE_COMPLETE, s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
             }
 
 
@@ -591,12 +634,7 @@ strict namespace
     // called by players to manage their votes
     script "VotePlayer" (int id)
     {
-        if(id == -1)
-        {
-            // there was something else here but i removed it, and all the blank switches were set for this case, but now its just a waste
-            // however, am leaving this here incase i do wanna use this for something
-            terminate;
-        }
+        if(id == -1) { terminate; }
 
         if(playernumber() > -1)
         {
@@ -718,6 +756,24 @@ strict namespace
     {
         players[pnum] = id;
     }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////
+    // Functions
+    ///////////////////////////////////////////////////////////////
 
     function void state_init(void)
     {
@@ -907,20 +963,11 @@ strict namespace
     
     ////// Easter egg shit because i need the hud vars
 
-    script "thrope" (void) clientside
+    script "Eggs" (int id) clientside
     {
         HudSetup(0,0);
         setfont("HUDFONT");
-        hudmessage(s:"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub @RigRug on Patreon!"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
-    }
-	
-    script "lex_lore1" (void) clientside
-    {
-        // special vr map logic so players cant activate this script if they are higher than 300.0 units
-        if(GetActorZ(0) > 300.0) { terminate; }
-        HudSetup(0,0);
-        setfont("HUDFONT");
-        hudmessage(s:"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious"; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:lore[id]; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
 

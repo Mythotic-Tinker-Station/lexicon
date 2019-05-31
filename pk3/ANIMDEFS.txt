@@ -1,13 +1,16 @@
+
+
 // Lexicon
-flat STATIC1
-    pic STATIC1 tics 1
-    pic STATIC2 tics 1
-    pic STATIC3 tics 1
-    pic STATIC4 tics 1
-    pic STATIC5 tics 1
-    pic STATIC6 tics 1
-    pic STATIC7 tics 1
-    pic STATIC8 tics 1
+texture LEXSTAT1
+    pic LEXSTAT1 tics 1
+    pic LEXSTAT2 tics 1
+    pic LEXSTAT3 tics 1
+    pic LEXSTAT4 tics 1
+    pic LEXSTAT5 tics 1
+    pic LEXSTAT6 tics 1
+    pic LEXSTAT7 tics 1
+    pic LEXSTAT8 tics 1
+
     
 texture VR031A
 	pic VR031A tics 3

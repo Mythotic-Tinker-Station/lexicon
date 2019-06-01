@@ -8,10 +8,19 @@ echo Step 1: ACS
 	if not exist ..\pk3\acs\acs.err goto 20
 :20
 
+if "%PROCESSOR_ARCHITECTURE%" EQU "x86" (
 echo Step 2: PACK GAME FILES
 	cd ..
 	cd pk3
 	..\Compiler\7za a -r -ssw -mx0 -tzip  ..\%FileName%n.pk3 *
+)
+
+if "%PROCESSOR_ARCHITECTURE%" NEQ "ARM64" (
+echo Step 2: PACK GAME FILES
+	cd ..
+	cd pk3
+	..\Compiler\x64\7za a -r -ssw -mx0 -tzip  ..\%FileName%n.pk3 *
+)
 
 echo Step 4: REPLACE
 	cd ..

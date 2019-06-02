@@ -26,12 +26,12 @@ echo.
 echo Please choose a compile option.
 echo Note: All options will compile BCS scripts.
 echo.
-echo      Full Compression:
+echo      Full Compression (slow):
 echo           1: Compile Everything
 echo           2: Compile Main PK3
 echo           3: Compile Music PK3
 echo.
-echo      No Compression:
+echo      No Compression (fast):
 echo           4: Compile Everything
 echo           5: Compile Main PK3
 echo           6: Compile Music PK3

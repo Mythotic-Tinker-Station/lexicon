@@ -7424,15 +7424,15 @@ Actor SD20x7A9 : Afrit 25203//72
     AABN AABBCCDD 3 Bright A_Chase
     Loop
   Missile:
-	AABN S 6 A_FaceTarget
-	AABN T 6 A_FaceTarget
-    AABN U 1 Bright A_FatAttack1
-	AABN U 1 Bright A_FatAttack2
-	AABN U 1 Bright A_FatAttack3
-	AABN T 1 A_FaceTarget
-	AABN U 1 Bright A_SkelMissile
-	AABN U 1 Bright A_SkelMissile 
-	AABN U 8 Bright A_SkelMissile 
+	AABN E 6 A_FaceTarget
+	AABN F 6 A_FaceTarget
+    AABN G 1 Bright A_FatAttack1
+	AABN G 1 Bright A_FatAttack2
+	AABN G 1 Bright A_FatAttack3
+	AABN F 1 A_FaceTarget
+	AABN G 1 Bright A_SkelMissile
+	AABN G 1 Bright A_SkelMissile 
+	AABN G 8 Bright A_SkelMissile 
     Goto See
   Pain:
     AABN H 4 Bright
@@ -7477,7 +7477,99 @@ ACTOR 1024A1 : ShortGreenColumn 25208//31
     }
 }
 
-ACTOR HELLPIKESound 25209
+//HellPike EasterEgg Map
+
+Actor SD20x7A9x2 : Afrit
+{
+  Health 1000
+  Obituary "%o was scorched by Ribbiks"
+  States
+  {
+  Spawn:
+    AABN A 0
+    AABN A 0 
+    AABN A 0 
+    AABN AABB 10 Bright A_Look
+    Loop
+  See:
+    AABN AABBCCDD 3 Bright A_Chase
+    Loop
+  Missile:
+	AABN E 6 A_FaceTarget
+	AABN F 6 A_FaceTarget
+    AABN G 1 Bright 
+	AABN G 1 Bright A_FatAttack2
+	AABN G 1 Bright 
+	AABN F 1 A_FaceTarget
+	AABN G 1 Bright A_FatAttack1
+	AABN G 1 Bright 
+	AABN G 8 Bright A_FatAttack3
+    Goto See
+  Pain:
+    AABN H 4 Bright
+    AABN H 4 Bright A_Pain
+    Goto See
+  Death:
+    TNT1 A 0 A_NoGravity
+    AABN I 6 Bright A_Scream
+    AABN J 5 Bright A_NoBlocking
+    AABN KLMNOPQR 4 Bright
+    Stop
+  }
+}
+
+ACTOR hp101Fire
+{
+	Game Doom
+	Radius 1
+	Height 1
+	Speed 3
+	Damage 0 
+    +NOBLOCKMAP
+    +NOTELEPORT
+    +DONTSPLASH
+	+MISSILE
+	+FORCEXYBILLBOARD
+    +CLIENTSIDEONLY
+    +NOINTERACTION
+	+NOCLIP
+	RenderStyle Add
+    Scale 3.5
+	Alpha 0.7
+	Gravity 0.1
+	States
+	{
+    Spawn:
+        FIR3 CDEFGHIJKLMNOP 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR hp101Fire2 : hp101Fire
+{
+    Scale 2.5
+	Alpha 0.8
+	States
+	{
+    Spawn:
+        FIR3 CDEFGHIJKLMNOP 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR hp101Fire3 : hp101Fire
+{
+    Scale 2.0
+	Alpha 0.95
+	States
+	{
+    Spawn:
+        FIR5 CDEFGHIJKLMNOP 3 BRIGHT
+		Stop
+	}
+}
+
+ACTOR HP101Sound 25209
 {
 +LOOKALLAROUND
 +NOINTERACTION
@@ -7486,16 +7578,56 @@ ACTOR HELLPIKESound 25209
         Spawn:
 TNT1 A 0
 TNT1 A 0
-//TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 1, 0.0)
 TNT1 A 1 A_Look
 loop
 See:
 TNT1 A 0 //A_StopSound(4)
-TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 1, 0.0)
-//TNT1 AAAAAA 666
-//TNT1 A 0 A_StopSound(4)
-//TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 1, 0.0)
-TNT1 A 125070
+TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 0, 0.0)
+TNT1 A 10989
         Stop
+    }
+}
+
+ACTOR HP101Spawners 25210
+{
++NOINTERACTION
++NOCLIP
+    States
+    {
+        Spawn:
+TNT1 A 0
+TNT1 A 10852
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-10), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 3 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-2,-15), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx("hp101Fire2", 0, 0, 1400, random(-4,4), random(-4,4), random(-3,-20), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx("hp101Fire2", 0, 0, 1400, random(-4,4), random(-4,4), random(-3,-20), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx("hp101Fire2", 0, 0, 1400, random(-4,4), random(-4,4), random(-3,-20), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 A 0 A_SpawnItemEx("SD20x7A9x2", 0, 0, 1100, random(-3,3), random(-3,3), random(-1,-10), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 A 0 A_Jump(127,3)
+TNT1 A 0 A_SpawnItemEx("SD20x7A9x2", 0, 0, 1100, random(-3,3), random(-3,3), random(1,3), random(0,360))
+TNT1 A 0 A_Jump(256,2)
+TNT1 A 0 A_SpawnItemEx("AAA34", 0, 0, 1100, random(-3,3), random(-3,3), random(1,3), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-10,-35), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx("hp101Fire2", 0, 0, 1400, random(-4,4), random(-4,4), random(-10,-30), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_SpawnItemEx("hp101Fire2", 0, 0, 1400, random(-3,3), random(-3,3), random(-10,-25), random(0,360))
+TNT1 A 0
+BrickTheirComputer:
+
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 3 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-20), random(0,360))
+TNT1 A 0 A_SpawnItemEx("ValiantArachnorb", 0, 0, 1100, random(-5,5), random(-5,5), random(-1,-8), random(0,360))
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-15), random(0,360))
+TNT1 A 0 A_Jump(120,2)
+        Loop
+        TNT1 A 0
+TNT1 A 0 A_SpawnItemEx("SD20x7A9x2", 0, 0, 1100, random(-3,3), random(-3,3), random(1,3), random(0,360))
+Justfire:
+TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-18), random(0,360))
+Loop
     }
 }

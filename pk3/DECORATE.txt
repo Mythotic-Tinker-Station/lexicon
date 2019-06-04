@@ -7486,6 +7486,8 @@ ACTOR hp101SDA : ArachnotronPlasma
 	Speed 75
 	Damage 1
 	scale 1.3
+	+FLOATBOB
+	SeeSound "plats/pt1_mid"
 	States
 	{
 	Spawn:
@@ -7519,29 +7521,29 @@ ACTOR HPArachnorb
 	States
 	{
 	Spawn:
-		AAAN A 10 A_Look
+		AABO A 10 A_Look
 		Goto Spawn
 	See:
-		AAAN AAAAAAAA 3  A_WANDER
-		AAAN A 3  A_Chase
+		AABO AAAAAAAA 3  A_WANDER
+		AABO A 3  A_Chase
 		Goto See
 	Pain:
-		AAAN H 3
-		AAAN H 3 A_Pain
+		AABO H 3
+		AABO H 3 A_Pain
 		Goto See
 	Missile:
-		AAAN A 1  A_FaceTarget
-		AAAN BCB 1  Bright A_CustomMissile("hp101SDA", 36)
-		AAAN A 9 A_SpidRefire
+		AABO A 1  A_FaceTarget
+		AABO BCB 1  Bright A_CustomMissile("hp101SDA", 36)
+		AABO A 9 A_SpidRefire
 		Goto Missile
 	Raise:
-		AAAN FED 5
+		AABO FED 5
 		Goto See
 	Death:
-		AAAN D 5
-		AAAN E 5 A_Scream
-		AAAN F 5 A_Fall
-		AAAN G -1
+		AABO D 5
+		AABO E 5 A_Scream
+		AABO F 5 A_Fall
+		AABO G -1
 		Stop
 	}
 }
@@ -7570,14 +7572,14 @@ Actor hpAfrit : Afrit
 	AABN E 6 A_FaceTarget
 	AABN F 6 A_FaceTarget
     AABN G 4 Bright 
-	AABN GGGGGG 1 BRIGHT A_CustomMissile("AAA21", 32, 0, random(-1, 1), 1, random(-1, 1))
-	AABN GGGGGG 1 Bright A_CustomMissile("AAA21", 32, 0, random(-5, 5), 1, random(-5, 5))
-	AABN FFFFFFFFFFFFFFFFFF 1 BRIGHT A_CustomMissile("AAA21", 32, 0, random(-10, 10), 1, random(-10, 10))
+	AABN GGGGGG 1 BRIGHT A_CustomMissile("hp101SDA", 32, 0, random(-1, 1), 1, random(-1, 1))
+	AABN GGGGGG 1 Bright A_CustomMissile("hp101SDA", 32, 0, random(-5, 5), 1, random(-5, 5))
+	AABN FFFFFFFFFFFFFFFFFF 1 BRIGHT A_CustomMissile("hp101SDA", 32, 0, random(-10, 10), 1, random(-10, 10))
 	AABN F 1 A_FaceTarget
-	AABN FFFFFFFFFFFFFFFFFF 1 BRIGHT A_CustomMissile("AAA21", 32, 0, random(-10, 10), 1, random(-10, 10))
-	AABN GGGGGG 1 Bright A_CustomMissile("AAA21", 32, 0, random(-5, 5), 1, random(-5, 5))
-	AABN G 8 BRIGHT A_CustomMissile("AAA21", 32, 0, random(-1, 1), 1, random(-1, 1))
-	TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_CustomMissile("AAA21", 32, 0, random(-20, 20), 1, random(-2, 2))
+	AABN FFFFFFFFFFFFFFFFFF 1 BRIGHT A_CustomMissile("hp101SDA", 32, 0, random(-10, 10), 1, random(-10, 10))
+	AABN GGGGGG 1 Bright A_CustomMissile("hp101SDA", 32, 0, random(-5, 5), 1, random(-5, 5))
+	AABN G 8 BRIGHT A_CustomMissile("hp101SDA", 32, 0, random(-1, 1), 1, random(-1, 1))
+	TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_CustomMissile("hp101SDA", 32, 0, random(-20, 20), 1, random(-2, 2))
     Goto See
   Pain:
     AABN H 4 Bright
@@ -7669,8 +7671,10 @@ ACTOR HP101Spawners 25210
     States
     {
         Spawn:
-TNT1 A 0
-TNT1 A 10855
+        TNT1 A 0
+TNT1 A 848
+TNT1 A 0 A_SpawnItemEx("HPArachnorb", 0, 0, 1100, random(-3,3), random(-3,3), random(-1,-8), random(0,360))
+TNT1 A 10000
 TNT1 A 0 A_PlaySound("plats/pt1_mid", 4, 1.0, 1, 1.0)
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-10), random(0,360))
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 3 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-2,-15), random(0,360))
@@ -7680,6 +7684,7 @@ TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 2 A_Spa
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
+TNT1 A 0 A_Jump(137,2)
 TNT1 A 0 A_SpawnItemEx("hpAfrit", 0, 0, 1100, random(-3,3), random(-3,3), random(-1,-10), random(0,360))
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 1 A_SpawnItemEx("hp101Fire", 0, 0, 1400, random(-7,7), random(-7,7), random(-6,-35), random(0,360))

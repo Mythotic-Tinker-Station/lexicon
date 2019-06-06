@@ -81,6 +81,354 @@ texture CPOINT01
 	pic CPOINT30 tics 1
 	pic CPOINT31 tics 1
 	pic CPOINT32 tics 1
+	
+// Excerpts from ZHexen's ANIMDEFS
+// Made by Raccoon
+
+// ==== GLASS ====
+// -- Normal --
+SWITCH GLASS01
+	ON
+		SOUND GlassShatter
+		PIC GLASS07 tics -1
+	OFF
+		PIC GLASS01 tics -1
+	
+SWITCH GLASS02
+	ON
+		SOUND GlassShatter
+		PIC GLASS08 tics -1
+	OFF
+		PIC GLASS02 tics -1
+	
+SWITCH GLASS03
+	ON
+		SOUND GlassShatter
+		PIC GLASS07 tics -1
+	OFF
+		PIC GLASS03 tics -1
+	
+SWITCH GLASS04
+	ON
+		SOUND GlassShatter
+		PIC GLASS08 tics -1
+	OFF
+		PIC GLASS04 tics -1
+	
+SWITCH GLASS05
+	ON
+		SOUND GlassShatter
+		PIC GLASS07 tics -1
+	OFF
+		PIC GLASS05 tics -1
+	
+SWITCH GLASS06
+	ON
+		SOUND GlassShatter
+		PIC GLASS08 tics -1
+	OFF
+		PIC GLASS06 tics -1
+	
+SWITCH GLASS09
+	ON
+		SOUND GlassShatter
+		PIC GLASS08 tics -1
+	OFF
+		PIC GLASS09 tics -1
+
+// -- Large --
+SWITCH GLASL01
+	ON
+		SOUND GlassShatter
+		PIC GLASL00 tics -1
+	OFF
+		PIC GLASL01 tics -1
+	
+SWITCH GLASL02
+	ON
+		SOUND GlassShatter
+		PIC GLASL00 tics -1
+	OFF
+		PIC GLASL02 tics -1
+	
+SWITCH GLASL03
+	ON
+		SOUND GlassShatter
+		PIC GLASL00 tics -1
+	OFF
+		PIC GLASL03 tics -1
+	
+SWITCH GLASL04
+	ON
+		SOUND GlassShatter
+		PIC GLASL00 tics -1
+	OFF
+		PIC GLASL04 tics -1
+	
+// -- Tall --
+SWITCH GLAST01
+	ON
+		SOUND GlassShatter
+		PIC GLAST00 tics -1
+	OFF
+		PIC GLAST01 tics -1
+	
+SWITCH GLAST02
+	ON
+		SOUND GlassShatter
+		PIC GLAST00 tics -1
+	OFF
+		PIC GLAST02 tics -1
+	
+SWITCH GLAST03
+	ON
+		SOUND GlassShatter
+		PIC GLAST00 tics -1
+	OFF
+		PIC GLAST03 tics -1
+	
+// -- Wide --
+SWITCH GLASW01
+	ON
+		SOUND GlassShatter
+		PIC GLASW00 tics -1
+	OFF
+		PIC GLASW01 tics -1
+	
+SWITCH GLASW02
+	ON
+		SOUND GlassShatter
+		PIC GLASW09 tics -1
+	OFF
+		PIC GLASW02 tics -1
+	
+SWITCH GLASW03
+	ON
+		SOUND GlassShatter
+		PIC GLASW00 tics -1
+	OFF
+		PIC GLASW03 tics -1
+	
+SWITCH GLASW04
+	ON
+		SOUND GlassShatter
+		PIC GLASW09 tics -1
+	OFF
+		PIC GLASW04 tics -1
+	
+SWITCH GLASW05
+	ON
+		SOUND GlassShatter
+		PIC GLASW00 tics -1
+	OFF
+		PIC GLASW05 tics -1
+	
+SWITCH GLASW06
+	ON
+		SOUND GlassShatter
+		PIC GLASW09 tics -1
+	OFF
+		PIC GLASW06 tics -1
+	
+SWITCH GLASW07
+	ON
+		SOUND GlassShatter
+		PIC GLASW00 tics -1
+	OFF
+		PIC GLASW07 tics -1
+	
+SWITCH GLASW08
+	ON
+		SOUND GlassShatter
+		PIC GLASW09 tics -1
+	OFF
+		PIC GLASW08 tics -1
+	
+SWITCH GLASW10
+	ON
+		SOUND GlassShatter
+		PIC GLASW09 tics -1
+	OFF
+		PIC GLASW10 tics -1
+	
+// -- Heretic --
+SWITCH STNGLS1
+	ON
+		SOUND GlassShatter
+		PIC STNGLS1B tics -1
+	OFF
+		PIC STNGLS1 tics -1
+	
+SWITCH STNGLS2
+	ON
+		SOUND GlassShatter
+		PIC STNGLS2B tics -1
+	OFF
+		PIC STNGLS2 tics -1
+	
+SWITCH STNGLS3
+	ON
+		SOUND GlassShatter
+		PIC STNGLS3B tics -1
+	OFF
+		PIC STNGLS3 tics -1
+	
+SWITCH STNGLT2
+	ON
+		SOUND GlassShatter
+		PIC STNGLT2B tics -1
+	OFF
+		PIC STNGLT2 tics -1
+		
+WARP texture wredliq
+WARP texture wskulli2
+WARP texture wskullic
+WARP texture wskullie
+WARP texture wskullig
+WARP texture wskullim
+WARP texture wskullin
+WARP texture wskulliq
+WARP2 texture wslime01
+WARP texture wslime02
+WARP2 texture wwater01
+WARP texture wlava01
+WARP texture WSLIME03
+WARP texture WSLIMH
+WARP2 texture WDWATR01
+
+texture WLLATFL1
+ pic WLLATFL1 tics 8
+ pic WLLATFL2 tics 8
+ pic WLLATFL3 tics 8
+
+texture WLLBLOD1
+ pic WLLBLOD1 tics 8
+ pic WLLBLOD2 tics 8
+ pic WLLBLOD3 tics 8
+
+texture WLLSLIM1
+ pic WLLSLIM1 tics 8
+ pic WLLSLIM2 tics 8
+ pic WLLSLIM3 tics 8
+
+texture CANDLES1
+ pic CANDLES1 tics 8
+ pic CANDLES2 tics 8
+ pic CANDLES3 tics 8
+
+texture DOORXNF1
+ pic DOORXNF1 tics 8
+ pic DOORXNF2 tics 8
+ pic DOORXNF3 tics 8
+
+texture DOORXNV1
+ pic DOORXNV1 tics 8
+ pic DOORXNV2 tics 8
+ pic DOORXNV3 tics 8
+
+texture ELECDOR1
+ pic ELECDOR1 tics 8
+ pic ELECDOR2 tics 8
+ pic ELECDOR3 tics 8
+
+texture ELECDOR4
+ pic ELECDOR4 tics 8
+ pic ELECDOR5 tics 8
+ pic ELECDOR6 tics 8
+
+texture GLAVA1
+ pic GLAVA1 tics 8
+ pic GLAVA2 tics 8 
+ pic GLAVA3 tics 8
+
+texture FLTAAWA1
+ pic FLTAAWA1 tics 8
+ pic FLTAAWA2 tics 8
+ pic FLTAAWA3 tics 8
+
+texture FLTMUD1
+ pic FLTMUD1 tics 8
+ pic FLTMUD2 tics 8
+ pic FLTMUD3 tics 8
+
+texture FLTTEL21
+ pic FLTTEL21 tics 8
+ pic FLTTEL22 tics 8
+ pic FLTTEL23 tics 8
+ pic FLTTEL24 tics 8
+
+texture FLTTEL31
+ pic FLTTEL31 tics 8
+ pic FLTTEL32 tics 8
+ pic FLTTEL33 tics 8
+ pic FLTTEL34 tics 8
+
+texture FLTTEL41
+ pic FLTTEL41 tics 8
+ pic FLTTEL42 tics 8
+ pic FLTTEL43 tics 8
+ pic FLTTEL44 tics 8
+
+texture lvwalla1
+ pic lvwalla1 tics 8
+ pic lvwalla2 tics 8
+ pic lvwalla3 tics 8
+
+texture lvwallb1
+ pic lvwallb1 tics 8
+ pic lvwallb2 tics 8
+ pic lvwallb3 tics 8
+
+texture lvwallc1
+ pic lvwallc1 tics 8
+ pic lvwallc2 tics 8
+ pic lvwallc3 tics 8
+
+switch SW3ON on sound Switch1 pic SW3OFF tics 0
+switch SW3OFF off sound Switch2 pic SW3ON tics 0
+
+switch SW8ON on sound Switch1 pic SW8OFF tics 0
+switch SW8OFF off sound Switch2 pic SW8ON tics 0
+
+switch SW9ON on sound Switch1 pic SW9OFF tics 0
+switch SW9OFF off sound Switch2 pic SW9ON tics 0
+
+switch SW10ON on sound Switch1 pic SW10OFF tics 0
+switch SW10OFF off sound Switch2 pic SW10ON tics 0
+
+switch SWATB00 on sound Switch1 pic SWATB01 tics 0
+switch SWATB01 off sound Switch2 pic SWATB00 tics 0
+
+switch SWTION on sound Switch1 pic SWTIOFF tics 0
+switch SWTIOFF off sound Switch2 pic SWTION tics 0
+
+switch SWTRION on sound Switch1 pic SWTRIOFF tics 0
+switch SWTRIOFF off sound Switch2 pic SWTRION tics 0
+
+switch SW50ON on sound Switch1 pic SW50OFF tics 0
+switch SW50OFF off sound Switch2 pic SW50ON tics 0
+
+switch SW51ON on sound Switch1 pic SW51OFF tics 0
+switch SW51OFF off sound Switch2 pic SW51ON tics 0
+
+texture WFALL_1 range WFALL_8 tics 2 //waterfall
+
+texture CANDLE_1 range CANDLE_3 rand 3 5 //candle-lit decoration
+
+texture GARG_1 range GARG_4 tics 7 oscillate //glowing gargoyle
+
+texture GLOW_1 range GLOW_5 tics 8 oscillate //glowing runes
+
+texture QSYMB1_1 range QSYMB1_3 tics 6 oscillate //glowing quake symbol
+
+texture QSYMB2_1 range QSYMB2_3 tics 6 oscillate //another glowing quake symbol
+
+texture SLATGL_1 range SLATGL_7 tics 8 oscillate //glowing grate
+
+//I seem to have misplaced most of the liquid flats >_> not really a big deal, here's the cool ones
+warp2 texture QLAVA
+warp2 texture PWATER
+warp2 texture SLIPGATE
 
 //THERIANTHROPE
 

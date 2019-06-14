@@ -588,6 +588,8 @@ actor SLPalm 20304
 // Combat Shock 2 //
 ////////////////////
 
+
+//reverted to original
 ACTOR CS2ShotgunGuy : ShotgunGuy 20307//9	
 {
   States
@@ -628,6 +630,8 @@ ACTOR CS2ShotgunGuy : ShotgunGuy 20307//9
   }
 }
 
+
+//reverted to original
 ACTOR CS2ZombieMan : ZombieMan 20308 //3004
 {
   States
@@ -668,6 +672,9 @@ ACTOR CS2ZombieMan : ZombieMan 20308 //3004
   }
 }
 
+
+
+//reverted to original
 ACTOR CS2ChaingunGuy : ChaingunGuy 20309//65
 {
   States
@@ -831,6 +838,10 @@ Actor Afrit 20306
   }
 }
 
+
+
+
+//reverted to original
 actor EvilMarine : WolfensteinSS 20305 //84
 {
   obituary "%o was killed by an evil marine."
@@ -4142,6 +4153,9 @@ Actor BowserCoop : BossBrain 25016 //88
 	}
 }
 
+
+
+//reverted to original
 ACTOR Mayhem17Soulsphere : Soulsphere 25018 //2013
 {
   +COUNTITEM
@@ -4160,6 +4174,9 @@ ACTOR Mayhem17Soulsphere : Soulsphere 25018 //2013
   }
 }
 
+
+
+//reverted to original
 ACTOR Mayhem17Megasphere : Megasphere 25019 //83
 {
   +COUNTITEM
@@ -4178,6 +4195,9 @@ ACTOR Mayhem17Megasphere : Megasphere 25019 //83
   }
 }
 
+
+
+//reverted to original
 ACTOR Mayhem17Berserk : Berserk 25020 //2023
 {
   +COUNTITEM
@@ -4197,6 +4217,9 @@ ACTOR Mayhem17Berserk : Berserk 25020 //2023
   }
 }
 
+
+
+//reverted to original
 ACTOR MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
 {
   +COUNTITEM
@@ -4216,6 +4239,9 @@ ACTOR MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
   }
 }
 
+
+
+//reverted to original
 ACTOR Mayhem17BlurSphere : BlurSphere 25022 //2024
 {
   +COUNTITEM
@@ -4236,6 +4262,8 @@ ACTOR Mayhem17BlurSphere : BlurSphere 25022 //2024
   }
 }
 
+
+//reverted to original
 ACTOR Mayhem17HealthBonus : HealthBonus 25023 //2014
 {
   +COUNTITEM
@@ -4252,6 +4280,8 @@ ACTOR Mayhem17HealthBonus : HealthBonus 25023 //2014
   }
 }
 
+
+//reverted to original
 ACTOR Mayhem17ArmorBonus : ArmorBonus 25024 //2015
 {
   Radius 20
@@ -4272,6 +4302,8 @@ ACTOR Mayhem17ArmorBonus : ArmorBonus 25024 //2015
   }
 }
 
+
+//reverted to original
 ACTOR Mayhem17GreenArmor : GreenArmor 25025 //2018
 {
   Radius 20
@@ -4289,6 +4321,8 @@ ACTOR Mayhem17GreenArmor : GreenArmor 25025 //2018
   }
 }
 
+
+//reverted to original
 ACTOR Mayhem17BlueArmor : BlueArmor 25026 //2019
 {
   Radius 20
@@ -4649,6 +4683,9 @@ ACTOR Mayhem17RedCoin : Key 25017 //13
 }
 
 
+
+
+//reverted to original
 Actor Bowser : CommanderKeen 25050 //72
 {
 	Health 8000
@@ -4826,6 +4863,9 @@ ACTOR SunlustGreenTorch : GreenTorch 25057 //45
   }
 }
 
+
+
+//reverted to original
 Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 {
 	Health 10000
@@ -4860,6 +4900,9 @@ Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 ////			////
 ////////////////////
 
+
+
+//reverted to original
 Actor HLC_WolfensteinSS : WolfensteinSS 25059 //84
 {
 	Health 700
@@ -5131,6 +5174,8 @@ ACTOR DVActor14 : TechLamp2 25145//86
 	}
 }
 
+
+//reverted to original
 Actor DVActor15 25144//23
 {
 	MONSTER
@@ -5201,6 +5246,9 @@ Actor DVActor15 25144//23
 	}
 }
 
+
+
+//reverted to original
 //Actor Afrit 20306 replaces commander keen in dvii (72)
 
 
@@ -5288,6 +5336,9 @@ ACTOR ValiantBaronBall //replaces BaronBall
 }
 
 
+
+
+//reverted to original
 ACTOR ValiantImp 25074//Replaces DoomImp 3001
 {
 	Health 60
@@ -5348,6 +5399,9 @@ ACTOR ValiantImp 25074//Replaces DoomImp 3001
 
 
 
+
+
+//reverted to original
 ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
 {
   States
@@ -5381,6 +5435,9 @@ ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
   }
 }
 
+
+
+//reverted to original
 ACTOR ValiantSpectre : ValiantDemon 25076//replaces Spectre 58	
 {
   Game Doom
@@ -5396,6 +5453,9 @@ ACTOR ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
   HitObituary "%o was eaten by a super spectre."
 }
 
+
+
+//reverted to original
 ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
 {
   Game Doom
@@ -5449,6 +5509,8 @@ ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
 
 
 
+
+//reverted to original
 ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
 {
   Game Doom
@@ -5522,6 +5584,10 @@ ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
 }
 
 //ValiantBaronBall replaces BaronBall
+
+
+
+//reverted to original
 ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
 {
 	Health 500
@@ -5581,6 +5647,9 @@ ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
 	}
 }
 
+
+
+//reverted to original
 ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
 {
 	Health 500
@@ -5642,6 +5711,8 @@ ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
 	}
 }
 
+
+//reverted to original
 ACTOR ValiantArachnorb 25081//replaces MBFHelperDog 888
 {
 	Health 120
@@ -5690,6 +5761,9 @@ ACTOR ValiantArachnorb 25081//replaces MBFHelperDog 888
 	}
 }
 
+
+
+//reverted to original
 ACTOR ValiantSpiderMastermind : SpiderMastermind 25082//replaces Infrared 2045
 {
 	-NORADIUSDMG
@@ -5731,6 +5805,8 @@ ACTOR LightningOrb 25083//replaces HeartColumn 36
 		}
 }
 
+
+//reverted to original
 ACTOR SuicideBomber 25084//replaces DeadLostSoul 23
 {
 	Health 60
@@ -5978,6 +6054,9 @@ ACTOR ValiantDarkDemon 25092//replaces UNKOWN
   }
 }
 
+
+
+//reverted to original
 ACTOR ValiantLostSoul : LostSoul 25093//LostSoul 3006
 {
   States
@@ -6039,7 +6118,10 @@ ACTOR Epic1A6 : SkullColumn 25099//SkullColumn 37
 { States{ Spawn: AAAS Z -1 
 Loop}}
 
-//IMP 3001
+
+
+
+//reverted to original
 ACTOR Epic1A7 : DoomImp 25100//DoomImp 3001
 {
   SeeSound "imp/sight"
@@ -6086,6 +6168,8 @@ ACTOR Epic1A7 : DoomImp 25100//DoomImp 3001
 }
 
 
+
+//reverted to original
 ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
 {
   SeeSound "grunt/sight"
@@ -6133,6 +6217,9 @@ ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
 }
 
 
+
+
+//reverted to original
 ACTOR Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
 {
   SeeSound "chainguy/sight"
@@ -6180,6 +6267,8 @@ ACTOR Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
 
 
 
+
+//reverted to original
 ACTOR Epic1A10 : Revenant 25103//REVENANT 66
 {
   SeeSound "skeleton/sight"
@@ -6227,6 +6316,8 @@ ACTOR Epic1A10 : Revenant 25103//REVENANT 66
 
 
 
+
+//reverted to original
 ACTOR Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
 {
   SeeSound "shotguy/sight"
@@ -6294,6 +6385,8 @@ ACTOR Epic2A5 : ShortRedColumn 25109//ShortRedColumn 33
 { States{ Spawn: AAAX Z -1 
 Loop}}
 
+
+//reverted to original
 ACTOR Epic2A6 : Medikit 25110// : Health 24
 {
   Inventory.PickupMessage "$GOTMEDIKIT"
@@ -6306,6 +6399,8 @@ ACTOR Epic2A6 : Medikit 25110// : Health 24
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A7 : CustomInventory 25111//Plasmagun 30
 {  
 Inventory.PickupMessage "$GOTPLASMA"
@@ -6330,6 +6425,8 @@ Tag "$TAG_PLASMARIFLE"
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A8 : CustomInventory 25112//RL 29
 {
   Inventory.PickupMessage "$GOTLAUNCHER"
@@ -6354,6 +6451,8 @@ ACTOR Epic2A8 : CustomInventory 25112//RL 29
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A9 : Stimpack 25113//23
 {
 Inventory.PickupMessage "$GOTSTIM"
@@ -6425,6 +6524,8 @@ ACTOR Epic2A15 : NonsolidMeat5 25119//53
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A16 : CustomInventory 25120//Cell  75
 {
 Inventory.PickupMessage "$GOTCELL"
@@ -6443,6 +6544,8 @@ Inventory.PickupMessage "$GOTCELL"
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
 {  
   Inventory.PickupMessage "$GOTCELLBOX"
@@ -6461,6 +6564,8 @@ ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A18 : CustomInventory 25122//Clip  2007
 {
 Inventory.PickupMessage "$GOTCLIP" 
@@ -6591,6 +6696,9 @@ ACTOR Epic2A30 : ShortRedTorch 25134//57
   }
 }
 //Missing an actor here throwing off the sprites
+
+
+//reverted to original
 ACTOR Epic2A31 : HealthBonus 25135//2014 : Health
 {
   States
@@ -6601,6 +6709,9 @@ ACTOR Epic2A31 : HealthBonus 25135//2014 : Health
   }
 }
 
+
+
+//reverted to original
 ACTOR Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
 {
   States
@@ -6641,6 +6752,8 @@ ACTOR Epic2A35 : TechPillar 25139//48
   }
 }
 
+
+//reverted to original
 ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
 {
   SeeSound "imp/sight"
@@ -6688,6 +6801,8 @@ ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
 
 //Revenant 25103//REVENANT 66
 
+
+//reverted to original
 ACTOR Epic2A37 : PainElemental 25141//71
 {
   SeeSound "pain/sight"
@@ -6727,6 +6842,8 @@ ACTOR Epic2A37 : PainElemental 25141//71
 
 /////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR Epic2A38 : WolfensteinSS 25142//84
 {
   SeeSound "wolfss/sight"
@@ -6848,6 +6965,8 @@ ACTOR AAA12 : ShortGreenColumn 25162//31
     Stop } }
 
 
+
+//reverted to original
 ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
 {
 	Tag "Alien Guardian"
@@ -6884,6 +7003,8 @@ ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
 
 //////////////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR AAA14 : Cyberdemon 25164//16
 {
 	Tag "Xenu, Alien Emperor"
@@ -6892,6 +7013,8 @@ ACTOR AAA14 : Cyberdemon 25164//16
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA15 : SpiderMastermind 25165//7
 {
 	Tag "Alien Queen"
@@ -6899,6 +7022,9 @@ ACTOR AAA15 : SpiderMastermind 25165//7
 }
 
 //////////////////////////////////////////////////////
+
+
+//reverted to original
 ACTOR AAA16 : Archvile 25166//64
 {
 	Tag "Reptilian Alien"
@@ -6911,6 +7037,8 @@ ACTOR AAA16 : Archvile 25166//64
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA17 : Revenant 25167//66
 {
 	Tag "Gray Alien"
@@ -6920,6 +7048,8 @@ ACTOR AAA17 : Revenant 25167//66
 
 
 //////////////////////////////////////////////////////
+
+//reverted to original
 ACTOR AAA19 : Fatso 25168//67
 {
 	Tag "Alien Pastry Chef"
@@ -6962,6 +7092,8 @@ ACTOR AAA19 : Fatso 25168//67
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA120 : Arachnotron 25169//68
 {
 	Tag "Robo-Alien"
@@ -7022,6 +7154,8 @@ ACTOR AAA21 : ArachnotronPlasma
 
 //////////////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR AAA22 : BaronOfHell 25170//3003
 {
 	Tag "Big Green Alien"
@@ -7031,6 +7165,8 @@ ACTOR AAA22 : BaronOfHell 25170//3003
 
 //////////////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR AAA23 : HellKnight 25171//69
 {
 	Tag "Little Green Alien"
@@ -7041,6 +7177,8 @@ ACTOR AAA23 : HellKnight 25171//69
 
 
 //////////////////////////////////////////////////////
+
+//reverted to original
 ACTOR AAA24 : PainElemental 25172//71
 {
 	Tag "Alien"
@@ -7075,6 +7213,8 @@ ACTOR AAA24 : PainElemental 25172//71
 	}
 }
 
+
+//reverted to original
 ACTOR AAA25 : LostSoul 25173//3006
 {
 	Tag "Alien Invader"
@@ -7085,6 +7225,8 @@ ACTOR AAA25 : LostSoul 25173//3006
 
 ////////////////////////////////////////////////////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR AAA27 : Cacodemon 25174//3005
 {
 	Tag "Alien UFO"
@@ -7097,6 +7239,8 @@ ACTOR AAA27 : Cacodemon 25174//3005
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA28 : Demon 25175//3002
 {
 	Tag "Amphibian Alien"
@@ -7110,6 +7254,7 @@ ACTOR AAA28 : Demon 25175//3002
 //////////////////////////////////////////////////////
 
 
+//reverted to original
 ACTOR AAA29 : DoomImp 25176//3001
 {
 	Tag "An Alien"
@@ -7118,6 +7263,8 @@ ACTOR AAA29 : DoomImp 25176//3001
 }
 
 //////////////////////////////////////////////////////
+
+//reverted to original
 ACTOR AAA30 : ChaingunGuy 25177//65
 {
 	Tag "Illegal Alien"
@@ -7164,6 +7311,8 @@ ACTOR AAA30 : ChaingunGuy 25177//65
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA31 : ShotgunGuy 25178//9
 {
 	Tag "Alien Sympathizer"
@@ -7174,6 +7323,8 @@ ACTOR AAA31 : ShotgunGuy 25178//9
 //////////////////////////////////////////////////////
 
 
+
+//reverted to original
 ACTOR AAA32 : ZombieMan 25179//3004
 {
 	Tag "A Alien"
@@ -7183,6 +7334,8 @@ ACTOR AAA32 : ZombieMan 25179//3004
 
 ///////////////////////////////////////////////////////
 
+
+//reverted to original
 ACTOR AAA33 : WolfensteinSS 25180//84
 {
 	Tag "Stealth Plasma Alien"
@@ -7233,6 +7386,8 @@ ACTOR AAA33 : WolfensteinSS 25180//84
 	}
 }
 
+
+//reverted to original
 ACTOR AAA34 : AAA33 25181//23
 {
 	Tag "Stealth Plasma Alien"
@@ -7296,21 +7451,29 @@ ACTOR SWTW3 : ShortGreenTorch 25184//56
 
 ////Stardate 20x6
 
+
+//reverted to original
 ACTOR SD20x6A1 : GreenArmor 25185//GreenArmor  2018
 {  
 Translation "112:127=250:254"
 }
 //25064//25186
+
+//reverted to original
 ACTOR SD20x6A2 : ExplosiveBarrel 25187//2035
 {
 Translation "112:127=250:254"
 }
+
+//reverted to original
 //HellKnight 
 ACTOR SD20x6A3 : HellKnight 25188//69
 {
 Translation "112:127=250:254"
 //may need missile state to change the fireball
 }
+
+//reverted to original
 //BaronOfHell 
 ACTOR SD20x6A4 : BaronOfHell 25189//3003
 {
@@ -7332,6 +7495,9 @@ ACTOR SD20x6A7 : ShortGreenTorch 25192//56
 {
 Translation "112:127=250:254"
 }
+
+
+//reverted to original
 //InvulnerabilitySphere 
 ACTOR SD20x6A8 : InvulnerabilitySphere  25193//2022
 {
@@ -7344,6 +7510,8 @@ Translation "112:127=250:254"
 
 //STARDATE 20X7
 //AABL IJKL
+
+//reverted to original
 ACTOR SD20x7A1 : ArmorBonus 25195//2015
 {
   States
@@ -7424,6 +7592,7 @@ ACTOR SD20x7A7 : TechLamp 25201//85
   }
 }
 
+//reverted to original
 ACTOR SD20x7A8 : BossBrain 25202//88
 {
   Health 250
@@ -7452,6 +7621,7 @@ ACTOR SD20x7A8 : BossBrain 25202//88
   }
 }
 
+//reverted to original
 Actor SD20x7A9 : Afrit 25203//72
 {
   Health 1000

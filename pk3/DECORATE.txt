@@ -588,7 +588,7 @@ actor SLPalm 20304
 // Combat Shock 2 //
 ////////////////////
 
-ACTOR CS2ShotgunGuy : ShotgunGuy 20307
+ACTOR CS2ShotgunGuy : ShotgunGuy 20307//9	
 {
   States
   {
@@ -628,7 +628,7 @@ ACTOR CS2ShotgunGuy : ShotgunGuy 20307
   }
 }
 
-ACTOR CS2ZombieMan : ZombieMan 20308
+ACTOR CS2ZombieMan : ZombieMan 20308 //3004
 {
   States
   {
@@ -668,7 +668,7 @@ ACTOR CS2ZombieMan : ZombieMan 20308
   }
 }
 
-ACTOR CS2ChaingunGuy : ChaingunGuy 20309
+ACTOR CS2ChaingunGuy : ChaingunGuy 20309//65
 {
   States
   {
@@ -831,7 +831,7 @@ Actor Afrit 20306
   }
 }
 
-actor EvilMarine : WolfensteinSS 20305
+actor EvilMarine : WolfensteinSS 20305 //84
 {
   obituary "%o was killed by an evil marine."
   health 250
@@ -1062,7 +1062,7 @@ ACTOR "Swaying Body 2" 20319
 //////////////////////////
 
 
-ACTOR COCStalagtite : Stalagtite 25001
+ACTOR COCStalagtite : Stalagtite 25001 //47
 {
   Radius 16
   Height 40

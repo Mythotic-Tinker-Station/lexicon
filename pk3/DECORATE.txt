@@ -4240,8 +4240,6 @@ ACTOR MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
 }
 
 
-
-//reverted to original
 ACTOR Mayhem17BlurSphere : BlurSphere 25022 //2024
 {
   +COUNTITEM
@@ -4684,8 +4682,6 @@ ACTOR Mayhem17RedCoin : Key 25017 //13
 
 
 
-
-//reverted to original
 Actor Bowser : CommanderKeen 25050 //72
 {
 	Health 8000
@@ -4865,7 +4861,6 @@ ACTOR SunlustGreenTorch : GreenTorch 25057 //45
 
 
 
-//reverted to original
 Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 {
 	Health 10000
@@ -5015,7 +5010,7 @@ Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
 
 /////////////////////////
  ////				////
- //// Dues Vult II  ////
+ //// Deus Vult II  ////
  ////				////
 /////////////////////////
 
@@ -5175,7 +5170,6 @@ ACTOR DVActor14 : TechLamp2 25145//86
 }
 
 
-//reverted to original
 Actor DVActor15 25144//23
 {
 	MONSTER
@@ -5247,8 +5241,6 @@ Actor DVActor15 25144//23
 }
 
 
-
-//reverted to original
 //Actor Afrit 20306 replaces commander keen in dvii (72)
 
 
@@ -5806,7 +5798,6 @@ ACTOR LightningOrb 25083//replaces HeartColumn 36
 }
 
 
-//reverted to original
 ACTOR SuicideBomber 25084//replaces DeadLostSoul 23
 {
 	Health 60
@@ -6965,8 +6956,6 @@ ACTOR AAA12 : ShortGreenColumn 25162//31
     Stop } }
 
 
-
-//reverted to original
 ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
 {
 	Tag "Alien Guardian"
@@ -7001,8 +6990,6 @@ ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
 //AABFR-V MISSING AN ACTOR FOR THIS Sprite range was OEEN A-D before being serialised
 
 
-//////////////////////////////////////////////////////
-
 
 //reverted to original
 ACTOR AAA14 : Cyberdemon 25164//16
@@ -7010,7 +6997,6 @@ ACTOR AAA14 : Cyberdemon 25164//16
 	Tag "Xenu, Alien Emperor"
 	Obituary "%o was splattered by an alien."
 }
-//////////////////////////////////////////////////////
 
 
 
@@ -7021,8 +7007,6 @@ ACTOR AAA15 : SpiderMastermind 25165//7
 	Obituary "%o stood in awe of an alien."
 }
 
-//////////////////////////////////////////////////////
-
 
 //reverted to original
 ACTOR AAA16 : Archvile 25166//64
@@ -7030,11 +7014,6 @@ ACTOR AAA16 : Archvile 25166//64
 	Tag "Reptilian Alien"
 	Obituary "%o was incinerated by an alien."
 }
-
-
-//////////////////////////////////////////////
-
-//////////////////////////////////////////////////////
 
 
 
@@ -7046,8 +7025,6 @@ ACTOR AAA17 : Revenant 25167//66
 	Obituary "%o couldn't evade an alien's fireball."
 }
 
-
-//////////////////////////////////////////////////////
 
 //reverted to original
 ACTOR AAA19 : Fatso 25168//67
@@ -7088,8 +7065,6 @@ ACTOR AAA19 : Fatso 25168//67
 		Goto See
 	}
 }
-
-//////////////////////////////////////////////////////
 
 
 
@@ -7150,9 +7125,6 @@ ACTOR AAA21 : ArachnotronPlasma
 
 
 
-//////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////
 
 
 //reverted to original
@@ -7162,8 +7134,6 @@ ACTOR AAA22 : BaronOfHell 25170//3003
 	Obituary "%o was bruised by an alien."
 	HitObituary "%o was ripped open by an alien."
 }
-
-//////////////////////////////////////////////////////
 
 
 //reverted to original
@@ -7175,8 +7145,6 @@ ACTOR AAA23 : HellKnight 25171//69
 }
 
 
-
-//////////////////////////////////////////////////////
 
 //reverted to original
 ACTOR AAA24 : PainElemental 25172//71
@@ -7223,8 +7191,6 @@ ACTOR AAA25 : LostSoul 25173//3006
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////////
-
 
 //reverted to original
 ACTOR AAA27 : Cacodemon 25174//3005
@@ -7234,9 +7200,6 @@ ACTOR AAA27 : Cacodemon 25174//3005
 	HitObituary "%o was smitten by an alien."
 }
 
-
-
-//////////////////////////////////////////////////////
 
 
 
@@ -7251,9 +7214,6 @@ ACTOR AAA28 : Demon 25175//3002
 
 
 
-//////////////////////////////////////////////////////
-
-
 //reverted to original
 ACTOR AAA29 : DoomImp 25176//3001
 {
@@ -7261,8 +7221,6 @@ ACTOR AAA29 : DoomImp 25176//3001
 	HitObituary "%o was slashed by an alien."
 	Obituary "%o was burned by an alien."
 }
-
-//////////////////////////////////////////////////////
 
 //reverted to original
 ACTOR AAA30 : ChaingunGuy 25177//65
@@ -7308,8 +7266,6 @@ ACTOR AAA30 : ChaingunGuy 25177//65
 	}
 }
 
-//////////////////////////////////////////////////////
-
 
 
 //reverted to original
@@ -7318,9 +7274,6 @@ ACTOR AAA31 : ShotgunGuy 25178//9
 	Tag "Alien Sympathizer"
 	Obituary "%o was shot by an alien."
 }
-
-
-//////////////////////////////////////////////////////
 
 
 
@@ -7332,7 +7285,6 @@ ACTOR AAA32 : ZombieMan 25179//3004
 	DropItem "Clip"
 }
 
-///////////////////////////////////////////////////////
 
 
 //reverted to original
@@ -7387,7 +7339,6 @@ ACTOR AAA33 : WolfensteinSS 25180//84
 }
 
 
-//reverted to original
 ACTOR AAA34 : AAA33 25181//23
 {
 	Tag "Stealth Plasma Alien"

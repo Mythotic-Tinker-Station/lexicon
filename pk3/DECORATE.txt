@@ -7947,3 +7947,738 @@ TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_Spawn
 Loop
     }
 }
+
+
+
+
+
+ACTOR	Spawn1	 : 	ClipBox 	2048	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2048	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn2	 : 	ShotgunGuy	9	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn3	 : 	ChaingunGuy 	65	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	65	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn4	 : 	BaronOfHell 	3003	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3003	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn5	 : 	ZombieMan 	3004	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3004	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn6	 : 	DoomImp 	3001	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3001	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn7	 : 	Arachnotron	68	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	68	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn8	 : 	SpiderMastermind	7	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	7	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn9	 : 	Demon	3002	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3002	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn10	 : 	Spectre	58	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	58	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn11	 : 	Clip	2007	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2007	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn12	 : 	Shell	2008	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2008	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn13	 : 	Cacodemon	3005	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3005	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn14	 : 	Revenant	66	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	66	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn15	 : 	ArmorBonus	2015	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2015	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn16	 : 	Stimpack	2011	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2011	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn17	 : 	Medikit	2012	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2012	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn18	 : 	Soulsphere	2013	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2013	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn19	 : 	Shotgun	2001	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2001	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn20	 : 	Chaingun	2002	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2002	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn21	 : 	RocketLauncher 	2003	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2003	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn22	 : 	PlasmaRifle	2004	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2004	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn23	 : 	BFG9000 	2006	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2006	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn24	 : 	Chainsaw	2005	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2005	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn25	 : 	SuperShotgun	82	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	82	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn26	 : 	GreenArmor	2018	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2018	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn27	 : 	BlueArmor	2019	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2019	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn28	 : 	Cell 	2047	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2047	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn29	 : 	BlueCard	5	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	5	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn30	 : 	RedCard	13	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	13	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn31	 : 	YellowCard	6	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	6	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn32	 : 	YellowSkull	39	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	39	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn33	 : 	RedSkull	38	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	38	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn34	 : 	BlueSkull	40	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	40	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn35	 : 	StealthBaron	9052	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9052	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn36	 : 	StealthHellKnight	9056	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9056	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn37	 : 	StealthZombieMan	9061	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9061	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn38	 : 	StealthShotgunGuy	9060	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn39	 : 	LostSoul	3006	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3006	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn40	 : 	Archvile 	64	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	64	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn41	 : 	Fatso 	67	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	67	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn42	 : 	HellKnight	69	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	69	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn43	 : 	Cyberdemon 	16	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	16	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn44	 : 	PainElemental 	71	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	71	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn45	 : 	WolfensteinSS 	84	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	84	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn46	 : 	StealthArachnotron	9050	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9050	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn47	 : 	StealthArchvile 	9051	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9051	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn48	 : 	StealthCacodemon	9053	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9053	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn49	 : 	StealthChaingunGuy	9054	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9054	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn50	 : 	StealthShotgunGuy	9060	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn51	 : 	StealthDoomImp 	9057	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9057	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn52	 : 	StealthFatso 	9058	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9058	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn53	 : 	StealthRevenant	9059	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9059	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn54	 : 	ExplosiveBarrel 	2035	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2035	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn55	 : 	Megasphere	83	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	83	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn56	 : 	InvulnerabilitySphere	2022	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2022	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn57	 : 	Berserk	2023	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2023	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn58	 : 	RadSuit	2025	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2025	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn59	 : 	Allmap	2026	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2026	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn60	 : 	Infrared	2045	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2045	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn61	 : 	RocketAmmo	2010	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2010	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn62	 : 	RocketBox	2046	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2046	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn63	 : 	CellPack 	17	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	17	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn64	 : 	ShellBox 	2049	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2049	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn65	 : 	Backpack 	8	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	8	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn66	 : 	GibbedMarine	10	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	10	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn68	 : 	Gibs	24	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	24	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn69	 : 	ColonGibs	79	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	79	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn70	 : 	SmallBloodPool	80	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	80	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn71	 : 	BurningBarrel	70	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	70	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn72	 : 	BrainStem	81	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	81	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn73	 : 	ScriptedMarine	9100	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9100	)
+	TNT1 A 33
+	STOP
+	}
+}
+ACTOR	Spawn74	 : 	HealthBonus	2014	{	+NOINTERACTION	+NOGRAVITY
+	States
+	{
+	Spawn:
+	TNT1 A 0
+	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2014	)
+	TNT1 A 33
+	STOP
+	}
+}

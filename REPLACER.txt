@@ -3,7 +3,7 @@
 int Rand = 0;
 int TIDS = 1000; //sets a tid range for the monster TIDs. Change the range to deconflict mods
 
-//Basically whatever mapset it is, you just need to find the doomed number of the thing you want to replace, and change the value in the second param of spawnthing to your new actors spawnid
+//Basically whatever mapset it is, you just need to find the doomed number of the thing you want to replace, and change actor param of spawnthing for that mapset
 script 1 enter
 {
 //"MAP" |"AV0" |"AV1" |"AV3" |"HR0" |"HR1" |"HR2" |"HR3" |"SC2" |"WOS" |"WID" |"KS0" |"KS1" |"KS2" |"KS3" |"MOC" |"SOD" |"COC" |"CS0" |"CS2" |"FSW" |"KSS" |"MOM" |"NG1" |"SL2" |"SL3" |"SND" |"SDE" |"TAT" |"UAC" |"VAN" |"DC0" |"DC1" |"DC2" |"DC3" |"DC4" |"DC5" |"DC6" |"DC7" |"EST" |"GD0" |"GD1" |"GD2" |"GD3" |"DKE" |"HPH" |"DV0" |"MAY" |"SLU" |"PIZ" |"HLB" |"TU0" |"TU1" |"TU2" |"TU3" |"HC0" |"HC1" |"UHR" |"TSP" |"TSO" |"EYE" |"DV2" |"VAL" |"EP1" |"EP2" |"SF2" |"NV1" |"AA1" |"CC1" |"CC2" |"CC3" |"CC4" |"NG2" |"SD6" |"SD7" |"SW1" |"SF3" |"TT1" |"TT2" |"TT3" |"CW1" |"BX1" |"DU1" |"ZOF" |"ZTH" |"INT" |"CHX" |"RDX")
@@ -13,817 +13,818 @@ int Map = strMid(strIndex, 0,3);
  HudMessageBold(s: Map ; HUDMSG_PLAIN, 2, CR_GREEN, 0.0, 0.5, 1.0); 
 
 
-if	(Map=="MAP"||(Map=="DV2"||(Map=="AV0"||(Map=="AV1"||(Map=="AV3"||(Map=="HR0"||(Map=="HR1"||(Map=="HR2"||(Map=="HR3"||(Map=="WOS"||(Map=="WID"||(Map=="KS0"||(Map=="KS1"||(Map=="KS2"||(Map=="KS3"||(Map=="MOC"||(Map=="SOD"||(Map=="COC"||(Map=="FSW"||(Map=="KSS"||(Map=="MOM"||(Map=="NG1"||(Map=="SL2"||(Map=="SL3"||(Map=="SND"||(Map=="SDE"||(Map=="TAT"||(Map=="UAC"||(Map=="VAN"||(Map=="DC0"||(Map=="DC1"||(Map=="DC2"||(Map=="DC3"||(Map=="DC4"||(Map=="DC5"||(Map=="DC6"||(Map=="DC7"||(Map=="EST"||(Map=="GD0"||(Map=="GD1"||(Map=="GD2"||(Map=="GD3"||(Map=="DKE"||(Map=="HPH"||(Map=="DV0"||(Map=="PIZ"||(Map=="HLB"||(Map=="TU0"||(Map=="TU1"||(Map=="TU2"||(Map=="TU3"||(Map=="UHR"||(Map=="TSP"||(Map=="TSO"||(Map=="EYE"||(Map=="SF2"||(Map=="NV1"||(Map=="CC1"||(Map=="CC2"||(Map=="CC3"||(Map=="CC4"||(Map=="NG2"||(Map=="SW1"||(Map=="SF3"||(Map=="TT1"||(Map=="TT2"||(Map=="TT3"||(Map=="CW1"||(Map=="BX1"||(Map=="DU1"||(Map=="ZOF"||(Map=="ZTH"||(Map=="INT"||(Map=="CHX"||(Map=="RDX"||(Map=="SLU")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+if	(Map == "MAP" || Map == "DV2" || Map == "AV0" || Map == "AV1" || Map == "AV3" || Map == "HR0" || Map == "HR1" || Map == "HR2" || Map == "HR3" || Map == "WOS" || Map == "WID" || Map == "KS0" || Map == "KS1" || Map == "KS2" || Map == "KS3" || Map == "MOC" || Map == "SOD" || Map == "COC" || Map == "FSW" || Map == "KSS" || Map == "MOM" || Map == "NG1" || Map == "SL2" || Map == "SL3" || Map == "SND" || Map == "SDE" || Map == "TAT" || Map == "UAC" || Map == "VAN" || Map == "DC0" || Map == "DC1" || Map == "DC2" || Map == "DC3" || Map == "DC4" || Map == "DC5" || Map == "DC6" || Map == "DC7" || Map == "EST" || Map == "GD0" || Map == "GD1" || Map == "GD2" || Map == "GD3" || Map == "DKE" || Map == "HPH" || Map == "DV0" || Map == "PIZ" || Map == "HLB" || Map == "TU0" || Map == "TU1" || Map == "TU2" || Map == "TU3" || Map == "UHR" || Map == "TSP" || Map == "TSO" || Map == "EYE" || Map == "SF2" || Map == "NV1" || Map == "CC1" || Map == "CC2" || Map == "CC3" || Map == "CC4" || Map == "NG2" || Map == "SW1" || Map == "SF3" || Map == "TT1" || Map == "TT2" || Map == "TT3" || Map == "CW1" || Map == "BX1" || Map == "DU1" || Map == "ZOF" || Map == "ZTH" || Map == "INT" || Map == "CHX" || Map == "RDX" || Map == "SLU")
+{
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
 
-																				
+					}															
 																				
 																				
 //Combat Shock2																				
 																				
+else																				
 																				
-																				
-if	(Map	==	"CS0"	||(Map=="CS2")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("CS2ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("CS2ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("CS2ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+if	(Map	 == 	"CS0"	 || Map == "CS2"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("CS2ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("CS2ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("CS2ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+}
 
-																				
-																				
-																				
-//Scythe 2																				
-																				
-																				
-if	(Map	==	"SC2")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("EvilMarine",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
 
+else
+															
+if	(Map	 == 	"SC2"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("EvilMarine",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+}
 																				
 																				
-																				
+else																				
 //Mayhem																				
 																				
 																				
-if	(Map	==	"MAY")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("Mayhem17ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Mayhem17Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("Mayhem17GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("Mayhem17BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Mayhem17Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("MayhemInvulnSphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Mayhem17Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("Mayhem17HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
-	
+if	(Map	 == 	"MAY"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("Mayhem17ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Mayhem17Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("Mayhem17GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("Mayhem17BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Mayhem17Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("MayhemInvulnSphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Mayhem17Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("Mayhem17HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+	}
 																				
 																				
 																				
-																				
+else																				
 																				
 																				
 //HELLCORE																				
 																				
 																				
-if	(Map	==	"HC0"	||(Map=="HC1")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("HLC_WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
-
+if	(Map	 == 	"HC0"	 || Map == "HC1"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("HLC_WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+}
 																				
 																				
-																				
+else																				
 																				
 																				
 //VALIANT																				
 																				
 																				
 																				
-if	(Map	==	"VAL")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("ValiantSuperMancubus",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("ValiantImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("ValiantArachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("ValiantCybruiser",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("ValiantDemon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("ValiantSpectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("ValiantLostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("ValiantPyroDemon",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("ValiantSpiderMastermind",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+if	(Map	 == 	"VAL"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("ValiantSuperMancubus",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("ValiantImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("ValiantArachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("ValiantCybruiser",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("ValiantDemon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("ValiantSpectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("ValiantLostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("ValiantPyroDemon",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("ValiantSpiderMastermind",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
 
+						}														
 																				
-																				
-																				
+else																				
 //EPIC2																				
 																				
 																				
 																				
-if	(Map	==	"EP1"	||(Map=="EP2")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("Epic1A11",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("Epic1A9",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("Epic1A8",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("Epic2A36",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Epic2A18",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Epic1A10",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("Epic2A32",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Epic2A9",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Epic2A6",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("Epic2A8",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("Epic2A7",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Epic2A16",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("Epic2A37",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("Epic2A38",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("Epic2A17",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("Epic2A31",(TIDS + 2014),(TIDS + 2014	))	;
-
+if	(Map == "EP1" || Map == "EP2"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("Epic1A11",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("Epic1A9",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("Epic1A8",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("Epic2A36",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Epic2A18",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Epic1A10",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("Epic2A32",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Epic2A9",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Epic2A6",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("Epic2A8",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("Epic2A7",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Epic2A16",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("Epic2A37",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("Epic2A38",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("Epic2A17",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("Epic2A31",(TIDS + 2014),(TIDS + 2014	))	;
+}
 																				
-																				
+else																				
 //ANCIENT ALIENS																				
 																				
 																				
-if	(Map	==	"AA1")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("AAA31",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("AAA30",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("AAA22",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("AAA32",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("AAA29",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("AAA120",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("AAA15",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("AAA28",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("AAA27",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("AAA17",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("AAA25",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("AAA16",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("AAA19",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("AAA23",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("AAA14",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("AAA24",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("AAA33",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014));
-}
-																				
+if	(Map	 == 	"AA1"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("AAA31",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("AAA30",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("AAA22",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("AAA32",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("AAA29",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("AAA120",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("AAA15",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("AAA28",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("AAA27",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("AAA17",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("AAA25",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("AAA16",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("AAA19",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("AAA23",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("AAA14",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("AAA24",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("AAA33",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014));
+
+						}														
 																				
 																				
 //STARDATE 20X6																				
+else																				
 																				
-																				
-if	(Map	==	"SD6")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("SD20x6A4",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("SD20x6A1",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("SD20x6A3",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("SD20x6A2",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("SD20x6A8",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014));
+if	(Map	 == 	"SD6"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("SD20x6A4",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("ArmorBonus",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("SD20x6A1",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("SD20x6A3",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("SD20x6A2",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("SD20x6A8",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014));
 					
-																				
+						}														
 																				
 																				
 //STARDATE 20X7																				
+else																				
 																				
-																				
-if	(Map	==	"SD7")
-SpawnSpotFacing("ClipBox",(TIDS + 2048),(TIDS + 2048));
-					SpawnSpotFacing("ShotgunGuy",(TIDS + 9),(TIDS + 9));
-					SpawnSpotFacing("ChaingunGuy",(TIDS + 65),(TIDS + 65));
-					SpawnSpotFacing("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
-					SpawnSpotFacing("ZombieMan",(TIDS + 3004),(TIDS + 3004));
-					SpawnSpotFacing("DoomImp",(TIDS + 3001),(TIDS + 3001));
-					SpawnSpotFacing("Arachnotron",(TIDS + 68),(TIDS + 68));
-					SpawnSpotFacing("SpiderMastermind",(TIDS + 7),(TIDS + 7));
-					SpawnSpotFacing("Demon",(TIDS + 3002),(TIDS + 3002));
-					SpawnSpotFacing("Spectre",(TIDS + 58),(TIDS + 58));
-					SpawnSpotFacing("Clip",(TIDS + 2007),(TIDS + 2007));
-					SpawnSpotFacing("Shell",(TIDS + 2008),(TIDS + 2008));
-					SpawnSpotFacing("Cacodemon",(TIDS + 3005),(TIDS + 3005));
-					SpawnSpotFacing("Revenant",(TIDS + 66),(TIDS + 66));
-					SpawnSpotFacing("SD20x7A1",(TIDS + 2015),(TIDS + 2015));
-					SpawnSpotFacing("Stimpack",(TIDS + 2011),(TIDS + 2011));
-					SpawnSpotFacing("Medikit",(TIDS + 2012),(TIDS + 2012));
-					SpawnSpotFacing("Soulsphere",(TIDS + 2013),(TIDS + 2013));
-					SpawnSpotFacing("Shotgun",(TIDS + 2001),(TIDS + 2001));
-					SpawnSpotFacing("Chaingun",(TIDS + 2002),(TIDS + 2002));
-					SpawnSpotFacing("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
-					SpawnSpotFacing("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
-					SpawnSpotFacing("BFG9000",(TIDS + 2006),(TIDS + 2006));
-					SpawnSpotFacing("Chainsaw",(TIDS + 2005),(TIDS + 2005));
-					SpawnSpotFacing("SuperShotgun",(TIDS + 82),(TIDS + 82));
-					SpawnSpotFacing("GreenArmor",(TIDS + 2018),(TIDS + 2018));
-					SpawnSpotFacing("BlueArmor",(TIDS + 2019),(TIDS + 2019));
-					SpawnSpotFacing("Cell",(TIDS + 2047),(TIDS + 2047));
-					SpawnSpotFacing("BlueCard",(TIDS + 5),(TIDS + 5));
-					SpawnSpotFacing("RedCard",(TIDS + 13),(TIDS + 13));
-					SpawnSpotFacing("YellowCard",(TIDS + 6),(TIDS + 6));
-					SpawnSpotFacing("YellowSkull",(TIDS + 39),(TIDS + 39));
-					SpawnSpotFacing("RedSkull",(TIDS + 38),(TIDS + 38));
-					SpawnSpotFacing("BlueSkull",(TIDS + 40),(TIDS + 40));
-					SpawnSpotFacing("StealthBaron",(TIDS + 9052),(TIDS + 9052));
-					SpawnSpotFacing("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
-					SpawnSpotFacing("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("LostSoul",(TIDS + 3006),(TIDS + 3006));
-					SpawnSpotFacing("Archvile",(TIDS + 64),(TIDS + 64));
-					SpawnSpotFacing("Fatso",(TIDS + 67),(TIDS + 67));
-					SpawnSpotFacing("HellKnight",(TIDS + 69),(TIDS + 69));
-					SpawnSpotFacing("Cyberdemon",(TIDS + 16),(TIDS + 16));
-					SpawnSpotFacing("PainElemental",(TIDS + 71),(TIDS + 71));
-					SpawnSpotFacing("WolfensteinSS",(TIDS + 84),(TIDS + 84));
-					SpawnSpotFacing("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
-					SpawnSpotFacing("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
-					SpawnSpotFacing("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
-					SpawnSpotFacing("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
-					SpawnSpotFacing("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
-					SpawnSpotFacing("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
-					SpawnSpotFacing("StealthFatso",(TIDS + 9058),(TIDS + 9058));
-					SpawnSpotFacing("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
-					SpawnSpotFacing("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
-					SpawnSpotFacing("Megasphere",(TIDS + 83),(TIDS + 83));
-					SpawnSpotFacing("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
-					SpawnSpotFacing("Berserk",(TIDS + 2023),(TIDS + 2023));
-					SpawnSpotFacing("RadSuit",(TIDS + 2025),(TIDS + 2025));
-					SpawnSpotFacing("Allmap",(TIDS + 2026),(TIDS + 2026));
-					SpawnSpotFacing("Infrared",(TIDS + 2045),(TIDS + 2045));
-					SpawnSpotFacing("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
-					SpawnSpotFacing("RocketBox",(TIDS + 2046),(TIDS + 2046));
-					SpawnSpotFacing("CellPack",(TIDS + 17),(TIDS + 17));
-					SpawnSpotFacing("ShellBox",(TIDS + 2049),(TIDS + 2049));
-					SpawnSpotFacing("Backpack",(TIDS + 8),(TIDS + 8));
-					SpawnSpotFacing("GibbedMarine",(TIDS + 10),(TIDS + 10));
-					SpawnSpotFacing("Gibs",(TIDS + 24),(TIDS + 24));
-					SpawnSpotFacing("ColonGibs",(TIDS + 79),(TIDS + 79));
-					SpawnSpotFacing("SmallBloodPool",(TIDS + 80),(TIDS + 80));
-					SpawnSpotFacing("BurningBarrel",(TIDS + 70),(TIDS + 70));
-					SpawnSpotFacing("BrainStem",(TIDS + 81),(TIDS + 81));
-					SpawnSpotFacing("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
-					SpawnSpotFacing("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+if	(Map	 == 	"SD7"){
+SpawnSpotFacingForced("ClipBox",(TIDS + 2048),(TIDS + 2048));
+					SpawnSpotFacingForced("ShotgunGuy",(TIDS + 9),(TIDS + 9));
+					SpawnSpotFacingForced("ChaingunGuy",(TIDS + 65),(TIDS + 65));
+					SpawnSpotFacingForced("BaronOfHell",(TIDS + 3003),(TIDS + 3003));
+					SpawnSpotFacingForced("ZombieMan",(TIDS + 3004),(TIDS + 3004));
+					SpawnSpotFacingForced("DoomImp",(TIDS + 3001),(TIDS + 3001));
+					SpawnSpotFacingForced("Arachnotron",(TIDS + 68),(TIDS + 68));
+					SpawnSpotFacingForced("SpiderMastermind",(TIDS + 7),(TIDS + 7));
+					SpawnSpotFacingForced("Demon",(TIDS + 3002),(TIDS + 3002));
+					SpawnSpotFacingForced("Spectre",(TIDS + 58),(TIDS + 58));
+					SpawnSpotFacingForced("Clip",(TIDS + 2007),(TIDS + 2007));
+					SpawnSpotFacingForced("Shell",(TIDS + 2008),(TIDS + 2008));
+					SpawnSpotFacingForced("Cacodemon",(TIDS + 3005),(TIDS + 3005));
+					SpawnSpotFacingForced("Revenant",(TIDS + 66),(TIDS + 66));
+					SpawnSpotFacingForced("SD20x7A1",(TIDS + 2015),(TIDS + 2015));
+					SpawnSpotFacingForced("Stimpack",(TIDS + 2011),(TIDS + 2011));
+					SpawnSpotFacingForced("Medikit",(TIDS + 2012),(TIDS + 2012));
+					SpawnSpotFacingForced("Soulsphere",(TIDS + 2013),(TIDS + 2013));
+					SpawnSpotFacingForced("Shotgun",(TIDS + 2001),(TIDS + 2001));
+					SpawnSpotFacingForced("Chaingun",(TIDS + 2002),(TIDS + 2002));
+					SpawnSpotFacingForced("RocketLauncher",(TIDS + 2003),(TIDS + 2003));
+					SpawnSpotFacingForced("PlasmaRifle",(TIDS + 2004),(TIDS + 2004));
+					SpawnSpotFacingForced("BFG9000",(TIDS + 2006),(TIDS + 2006));
+					SpawnSpotFacingForced("Chainsaw",(TIDS + 2005),(TIDS + 2005));
+					SpawnSpotFacingForced("SuperShotgun",(TIDS + 82),(TIDS + 82));
+					SpawnSpotFacingForced("GreenArmor",(TIDS + 2018),(TIDS + 2018));
+					SpawnSpotFacingForced("BlueArmor",(TIDS + 2019),(TIDS + 2019));
+					SpawnSpotFacingForced("Cell",(TIDS + 2047),(TIDS + 2047));
+					SpawnSpotFacingForced("BlueCard",(TIDS + 5),(TIDS + 5));
+					SpawnSpotFacingForced("RedCard",(TIDS + 13),(TIDS + 13));
+					SpawnSpotFacingForced("YellowCard",(TIDS + 6),(TIDS + 6));
+					SpawnSpotFacingForced("YellowSkull",(TIDS + 39),(TIDS + 39));
+					SpawnSpotFacingForced("RedSkull",(TIDS + 38),(TIDS + 38));
+					SpawnSpotFacingForced("BlueSkull",(TIDS + 40),(TIDS + 40));
+					SpawnSpotFacingForced("StealthBaron",(TIDS + 9052),(TIDS + 9052));
+					SpawnSpotFacingForced("StealthHellKnight",(TIDS + 9056),(TIDS + 9056));
+					SpawnSpotFacingForced("StealthZombieMan",(TIDS + 9061),(TIDS + 9061));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("LostSoul",(TIDS + 3006),(TIDS + 3006));
+					SpawnSpotFacingForced("Archvile",(TIDS + 64),(TIDS + 64));
+					SpawnSpotFacingForced("Fatso",(TIDS + 67),(TIDS + 67));
+					SpawnSpotFacingForced("HellKnight",(TIDS + 69),(TIDS + 69));
+					SpawnSpotFacingForced("Cyberdemon",(TIDS + 16),(TIDS + 16));
+					SpawnSpotFacingForced("PainElemental",(TIDS + 71),(TIDS + 71));
+					SpawnSpotFacingForced("WolfensteinSS",(TIDS + 84),(TIDS + 84));
+					SpawnSpotFacingForced("StealthArachnotron",(TIDS + 9050),(TIDS + 9050));
+					SpawnSpotFacingForced("StealthArchvile",(TIDS + 9051),(TIDS + 9051));
+					SpawnSpotFacingForced("StealthCacodemon",(TIDS + 9053),(TIDS + 9053));
+					SpawnSpotFacingForced("StealthChaingunGuy",(TIDS + 9054),(TIDS + 9054));
+					SpawnSpotFacingForced("StealthShotgunGuy",(TIDS + 9060),(TIDS + 9060));
+					SpawnSpotFacingForced("StealthDoomImp",(TIDS + 9057),(TIDS + 9057));
+					SpawnSpotFacingForced("StealthFatso",(TIDS + 9058),(TIDS + 9058));
+					SpawnSpotFacingForced("StealthRevenant",(TIDS + 9059),(TIDS + 9059));
+					SpawnSpotFacingForced("ExplosiveBarrel",(TIDS + 2035),(TIDS + 2035));
+					SpawnSpotFacingForced("Megasphere",(TIDS + 83),(TIDS + 83));
+					SpawnSpotFacingForced("InvulnerabilitySphere",(TIDS + 2022),(TIDS + 2022));
+					SpawnSpotFacingForced("Berserk",(TIDS + 2023),(TIDS + 2023));
+					SpawnSpotFacingForced("RadSuit",(TIDS + 2025),(TIDS + 2025));
+					SpawnSpotFacingForced("Allmap",(TIDS + 2026),(TIDS + 2026));
+					SpawnSpotFacingForced("Infrared",(TIDS + 2045),(TIDS + 2045));
+					SpawnSpotFacingForced("RocketAmmo",(TIDS + 2010),(TIDS + 2010));
+					SpawnSpotFacingForced("RocketBox",(TIDS + 2046),(TIDS + 2046));
+					SpawnSpotFacingForced("CellPack",(TIDS + 17),(TIDS + 17));
+					SpawnSpotFacingForced("ShellBox",(TIDS + 2049),(TIDS + 2049));
+					SpawnSpotFacingForced("Backpack",(TIDS + 8),(TIDS + 8));
+					SpawnSpotFacingForced("GibbedMarine",(TIDS + 10),(TIDS + 10));
+					SpawnSpotFacingForced("Gibs",(TIDS + 24),(TIDS + 24));
+					SpawnSpotFacingForced("ColonGibs",(TIDS + 79),(TIDS + 79));
+					SpawnSpotFacingForced("SmallBloodPool",(TIDS + 80),(TIDS + 80));
+					SpawnSpotFacingForced("BurningBarrel",(TIDS + 70),(TIDS + 70));
+					SpawnSpotFacingForced("BrainStem",(TIDS + 81),(TIDS + 81));
+					SpawnSpotFacingForced("ScriptedMarine",(TIDS + 9100),(TIDS + 9100));
+					SpawnSpotFacingForced("HealthBonus",(TIDS + 2014),(TIDS + 2014	))	;
+					
 
+}
 
 
 
@@ -837,75 +838,5 @@ Delay(1);
 Rand = Random(0,30000);
 }
 
-script	"ClipBox"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ShotgunGuy"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ChaingunGuy"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BaronOfHell"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ZombieMan"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"DoomImp"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Arachnotron"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"SpiderMastermind"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Demon"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Spectre"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Clip"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Shell"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Cacodemon"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Revenant"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ArmorBonus"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Stimpack"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Medikit"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Soulsphere"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Shotgun"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Chaingun"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RocketLauncher"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"PlasmaRifle"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BFG9000"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Chainsaw"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"SuperShotgun"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"GreenArmor"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BlueArmor"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Cell"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BlueCard"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RedCard"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"YellowCard"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"YellowSkull"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RedSkull"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BlueSkull"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthBaron"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthHellKnight"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthZombieMan"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthShotgunGuy"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"LostSoul"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Archvile"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Fatso"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"HellKnight"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Cyberdemon"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"PainElemental"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"WolfensteinSS"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthArachnotron"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthArchvile"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthCacodemon"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthChaingunGuy"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthDoomImp"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthFatso"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"StealthRevenant"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ExplosiveBarrel"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Megasphere"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"InvulnerabilitySphere"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Berserk"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RadSuit"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Allmap"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Infrared"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RocketAmmo"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"RocketBox"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"CellPack"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ShellBox"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Backpack"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"GibbedMarine"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"Gibs"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ColonGibs"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"SmallBloodPool"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BurningBarrel"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"BrainStem"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"ScriptedMarine"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
-script	"HealthBonus"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
+script	"TIDAssignment"(int	Tid)	{Thing_ChangeTID	(0,	(TIDS+Tid));}
+

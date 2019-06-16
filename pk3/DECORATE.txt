@@ -1782,7 +1782,7 @@ Goto See
 }
 
 // Blue key card ------------------------------------------------------------
-ACTOR LBlueCard : DoomKey 
+ACTOR LBlueCard : CustomInventory 
 {
 Game Doom
 // 85
@@ -1794,10 +1794,15 @@ Spawn:
 BKEY A 10
 BKEY B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("BlueCard", 1)
+TNT1 A 0
+stop
 }
 }
 // Yellow key card ----------------------------------------------------------
-ACTOR LYellowCard : DoomKey 
+ACTOR LYellowCard : CustomInventory 
 {
 Game Doom
 // 87
@@ -1809,10 +1814,15 @@ Spawn:
 YKEY A 10
 YKEY B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("YellowCard", 1)
+TNT1 A 0
+stop
 }
 }
 // Red key card -------------------------------------------------------------
-ACTOR LRedCard : DoomKey 
+ACTOR LRedCard : CustomInventory 
 {
 Game Doom
 // 86
@@ -1824,10 +1834,15 @@ Spawn:
 RKEY A 10
 RKEY B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("RedCard", 1)
+TNT1 A 0
+stop
 }
 }
 // Blue skull key -----------------------------------------------------------
-ACTOR LBlueSkull : DoomKey 
+ACTOR LBlueSkull : CustomInventory 
 {
 Game Doom
 // 90
@@ -1839,10 +1854,15 @@ Spawn:
 BSKU A 10
 BSKU B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("BlueSkull", 1)
+TNT1 A 0
+stop
 }
 }
 // Yellow skull key ---------------------------------------------------------
-ACTOR LYellowSkull : DoomKey 
+ACTOR LYellowSkull : CustomInventory 
 {
 Game Doom
 // 88
@@ -1854,10 +1874,15 @@ Spawn:
 YSKU A 10
 YSKU B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("YellowSkull", 1)
+TNT1 A 0
+stop
 }
 }
 // Red skull key ------------------------------------------------------------
-ACTOR LRedSkull : DoomKey 
+ACTOR LRedSkull : CustomInventory 
 {
 Game Doom
 // 89
@@ -1869,6 +1894,11 @@ Spawn:
 RSKU A 10
 RSKU B 10 bright
 loop
+Pickup:
+TNT1 A 0
+TNT1 A 0 A_GiveInventory("RedSkull", 1)
+TNT1 A 0
+stop
 }
 }
 // The barrel of green goop ------------------------------------------------

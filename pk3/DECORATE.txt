@@ -3,7 +3,7 @@ This file contains actors from various megawads requried for them.
 Some megawads add custom shit so... makes the merging process really annoying
 */
 
-ACTOR	Spawn1	Replaces	ClipBox {	
+ACTOR	LexiconClipbox	Replaces	ClipBox {	
 	States
 	{
 	Spawn:
@@ -14,7 +14,7 @@ ACTOR	Spawn1	Replaces	ClipBox {
     LOOP
 	}
 }
-ACTOR	Spawn2	Replaces	ShotgunGuy {	
+ACTOR	LexiconShotgunGuy	Replaces	ShotgunGuy {	
 	States
 	{
 	Spawn:
@@ -25,7 +25,7 @@ ACTOR	Spawn2	Replaces	ShotgunGuy {
     Loop
 	}
 }
-ACTOR	Spawn3 	Replaces	ChaingunGuy {	
+ACTOR	LexiconChaingunGuy 	Replaces	ChaingunGuy {	
 	States 
 	{
 	Spawn:
@@ -36,7 +36,7 @@ ACTOR	Spawn3 	Replaces	ChaingunGuy {
     Loop
 	}
 }
-ACTOR	Spawn4	Replaces	BaronOfHell {	
+ACTOR	LexiconBaronOfHell	Replaces	BaronOfHell {	
 	States
 	{
 	Spawn:
@@ -47,7 +47,7 @@ ACTOR	Spawn4	Replaces	BaronOfHell {
     Loop
 	}
 }
-ACTOR	Spawn5 	Replaces	ZombieMan {	
+ACTOR	LexiconZombieMan 	Replaces	ZombieMan {	
 	States
 	{
 	Spawn:
@@ -58,7 +58,7 @@ ACTOR	Spawn5 	Replaces	ZombieMan {
     Loop
 	}
 }
-ACTOR	Spawn6	Replaces	DoomImp {	
+ACTOR	LexiconDoomImp	Replaces	DoomImp {	
 	States
 	{
 	Spawn:
@@ -69,7 +69,7 @@ ACTOR	Spawn6	Replaces	DoomImp {
     Loop
 	}
 }
-ACTOR	Spawn7	Replaces	Arachnotron {	
+ACTOR	LexiconArachnotron	Replaces	Arachnotron {	
 	States
 	{
 	Spawn:
@@ -80,7 +80,7 @@ ACTOR	Spawn7	Replaces	Arachnotron {
     Loop
 	}
 }
-ACTOR	Spawn8	Replaces	SpiderMastermind {	
+ACTOR	LexiconSpiderMastermind	Replaces	SpiderMastermind {	
 	States
 	{
 	Spawn:
@@ -91,7 +91,7 @@ ACTOR	Spawn8	Replaces	SpiderMastermind {
     Loop
 	}
 }
-ACTOR	Spawn9  Replaces	Demon {	
+ACTOR	LexiconDemon  Replaces	Demon {	
 	States
 	{
 	Spawn:
@@ -102,7 +102,7 @@ ACTOR	Spawn9  Replaces	Demon {
     Loop
 	}
 }
-ACTOR	Spawn10	Replaces	Spectre {	
+ACTOR	LexiconSpectre	Replaces	Spectre {	
 	States
 	{
 	Spawn:
@@ -113,7 +113,7 @@ ACTOR	Spawn10	Replaces	Spectre {
     Loop
 	}
 }
-ACTOR	Spawn11	 Replaces	Clip {	
+ACTOR	LexiconClip	 Replaces	Clip {	
 	States
 	{
 	Spawn:
@@ -124,7 +124,7 @@ ACTOR	Spawn11	 Replaces	Clip {
     LOOP
 	}
 }
-ACTOR	Spawn12	 Replaces	Shell {	
+ACTOR	LexiconShell	 Replaces	Shell {	
 	States
 	{
 	Spawn:
@@ -135,7 +135,7 @@ ACTOR	Spawn12	 Replaces	Shell {
     LOOP
 	}
 }
-ACTOR	Spawn13	 Replaces	Cacodemon {	
+ACTOR	LexiconCacodemon	 Replaces	Cacodemon {	
 	States
 	{
 	Spawn:
@@ -146,7 +146,7 @@ ACTOR	Spawn13	 Replaces	Cacodemon {
     Loop
 	}
 }
-ACTOR	Spawn14	 Replaces	Revenant {	
+ACTOR	LexiconRevenant	 Replaces	Revenant {	
 	States
 	{
 	Spawn:
@@ -157,7 +157,7 @@ ACTOR	Spawn14	 Replaces	Revenant {
     Loop
 	}
 }
-ACTOR	Spawn15	 Replaces	ArmorBonus {	
+ACTOR	LexiconArmorBonus	 Replaces	ArmorBonus {	
 	States
 	{
 	Spawn:
@@ -168,7 +168,7 @@ ACTOR	Spawn15	 Replaces	ArmorBonus {
     Loop
 	}
 }
-ACTOR	Spawn16	 Replaces	Stimpack {	
+ACTOR	LexiconStimpack	 Replaces	Stimpack {	
 	States
 	{
 	Spawn:
@@ -179,7 +179,7 @@ ACTOR	Spawn16	 Replaces	Stimpack {
     LOOP
 	}
 }
-ACTOR	Spawn17	 Replaces	Medikit {	
+ACTOR	LexiconMedikit	 Replaces	Medikit {	
 	States
 	{
 	Spawn:
@@ -190,7 +190,7 @@ ACTOR	Spawn17	 Replaces	Medikit {
     LOOP
 	}
 }
-ACTOR	Spawn18	 Replaces	Soulsphere {	
+ACTOR	LexiconSoulsphere	 Replaces	Soulsphere {	
 	States
 	{
 	Spawn:
@@ -201,7 +201,7 @@ ACTOR	Spawn18	 Replaces	Soulsphere {
     Loop
 	}
 }
-ACTOR	Spawn19	 Replaces	Shotgun {	
+ACTOR	LexiconShotgun	 Replaces	Shotgun {	
 	States
 	{
 	Spawn:
@@ -212,7 +212,7 @@ ACTOR	Spawn19	 Replaces	Shotgun {
     LOOP
 	}
 }
-ACTOR	Spawn20	 Replaces	Chaingun {	
+ACTOR	LexiconChaingun	 Replaces	Chaingun {	
 	States
 	{
 	Spawn:
@@ -223,7 +223,7 @@ ACTOR	Spawn20	 Replaces	Chaingun {
      LOOP
 	}
 }
-ACTOR	Spawn21	 Replaces	RocketLauncher {	
+ACTOR	LexiconRocketLauncher	 Replaces	RocketLauncher {	
 	States
 	{
 	Spawn:
@@ -234,7 +234,7 @@ ACTOR	Spawn21	 Replaces	RocketLauncher {
     LOOP
 	}
 }
-ACTOR	Spawn22	 Replaces	PlasmaRifle {	
+ACTOR	LexiconPlasmaRifle	 Replaces	PlasmaRifle {	
 	States
 	{
 	Spawn:
@@ -245,7 +245,7 @@ ACTOR	Spawn22	 Replaces	PlasmaRifle {
     LOOP
 	}
 }
-ACTOR	Spawn23	 Replaces	BFG9000 {	
+ACTOR	LexiconBFG9000	 Replaces	BFG9000 {	
 	States
 	{
 	Spawn:
@@ -256,7 +256,7 @@ ACTOR	Spawn23	 Replaces	BFG9000 {
     LOOP
 	}
 }
-ACTOR	Spawn24	 Replaces	Chainsaw {	
+ACTOR	LexiconChainsaw	 Replaces	Chainsaw {	
 	States
 	{
 	Spawn:
@@ -267,7 +267,7 @@ ACTOR	Spawn24	 Replaces	Chainsaw {
     LOOP
 	}
 }
-ACTOR	Spawn25	 Replaces	SuperShotgun {	
+ACTOR	LexiconSuperShotgun	 Replaces	SuperShotgun {	
 	States
 	{
 	Spawn:
@@ -278,7 +278,7 @@ ACTOR	Spawn25	 Replaces	SuperShotgun {
     LOOP
 	}
 }
-ACTOR	Spawn26	 Replaces	GreenArmor {	
+ACTOR	LexiconGreenArmor	 Replaces	GreenArmor {	
 	States
 	{
 	Spawn:
@@ -290,7 +290,7 @@ ACTOR	Spawn26	 Replaces	GreenArmor {
     Loop
 	}
 }
-ACTOR	Spawn27	 Replaces	BlueArmor {	
+ACTOR	LexiconBlueArmor	 Replaces	BlueArmor {	
 	States
 	{
 	Spawn:
@@ -302,7 +302,7 @@ ACTOR	Spawn27	 Replaces	BlueArmor {
     Loop
 	}
 }
-ACTOR	Spawn28	 Replaces	Cell {	
+ACTOR	LexiconCell	 Replaces	Cell {	
 	States
 	{
 	Spawn:
@@ -313,7 +313,7 @@ ACTOR	Spawn28	 Replaces	Cell {
     LOOP
 	}
 }
-ACTOR	Spawn29	 Replaces	BlueCard {	
+ACTOR	LexiconBlueCard	 Replaces	BlueCard {	
 	States
 	{
 	Spawn:
@@ -325,7 +325,7 @@ ACTOR	Spawn29	 Replaces	BlueCard {
     Loop
 	}
 }
-ACTOR	Spawn30	 Replaces	RedCard {	
+ACTOR	LexiconRedCard	 Replaces	RedCard {	
 	States
 	{
 	Spawn:
@@ -337,7 +337,7 @@ ACTOR	Spawn30	 Replaces	RedCard {
     Loop
 	}
 }
-ACTOR	Spawn31	 Replaces	YellowCard {	
+ACTOR	LexiconYellowCard	 Replaces	YellowCard {	
 	States
 	{
 	Spawn:
@@ -349,7 +349,7 @@ ACTOR	Spawn31	 Replaces	YellowCard {
     Loop
 	}
 }
-ACTOR	Spawn32	 Replaces	YellowSkull {	
+ACTOR	LexiconYellowSkull	 Replaces	YellowSkull {	
 	States
 	{
 	Spawn:
@@ -361,7 +361,7 @@ ACTOR	Spawn32	 Replaces	YellowSkull {
     Loop
 	}
 }
-ACTOR	Spawn33	 Replaces	RedSkull {	
+ACTOR	LexiconRedSkull	 Replaces	RedSkull {	
 	States
 	{
 	Spawn:
@@ -373,7 +373,7 @@ ACTOR	Spawn33	 Replaces	RedSkull {
     Loop
 	}
 }
-ACTOR	Spawn34	 Replaces	BlueSkull {	
+ACTOR	LexiconBlueSkull	 Replaces	BlueSkull {	
 	States
 	{
 	Spawn:
@@ -385,7 +385,7 @@ ACTOR	Spawn34	 Replaces	BlueSkull {
     Loop
 	}
 }
-ACTOR	Spawn35	 Replaces	StealthBaron {	
+ACTOR	LexiconStealthBaron	 Replaces	StealthBaron {	
 	States
 	{
 	Spawn:
@@ -396,7 +396,7 @@ ACTOR	Spawn35	 Replaces	StealthBaron {
     Loop
 	}
 }
-ACTOR	Spawn36	 Replaces	StealthHellKnight {	
+ACTOR	LexiconStealthHellKnight	 Replaces	StealthHellKnight {	
 	States
 	{
 	Spawn:
@@ -407,7 +407,7 @@ ACTOR	Spawn36	 Replaces	StealthHellKnight {
     Loop
 	}
 }
-ACTOR	Spawn37	 Replaces	StealthZombieMan {	
+ACTOR	LexiconStealthZombieMan	 Replaces	StealthZombieMan {	
 	States
 	{
 	Spawn:
@@ -418,7 +418,7 @@ ACTOR	Spawn37	 Replaces	StealthZombieMan {
     Loop
 	}
 }
-ACTOR	Spawn38	 Replaces	StealthShotgunGuy {	
+ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {	
 	States
 	{
 	Spawn:
@@ -429,7 +429,7 @@ ACTOR	Spawn38	 Replaces	StealthShotgunGuy {
     Loop
 	}
 }
-ACTOR	Spawn39	Replaces	LostSoul {	
+ACTOR	LexiconLostSoul	Replaces	LostSoul {	
 	States
 	{
 	Spawn:
@@ -440,7 +440,7 @@ ACTOR	Spawn39	Replaces	LostSoul {
     Loop
 	}
 }
-ACTOR	Spawn40	Replaces	Archvile {	
+ACTOR	LexiconArchvile	Replaces	Archvile {	
 	States
 	{
 	Spawn:
@@ -451,7 +451,7 @@ ACTOR	Spawn40	Replaces	Archvile {
     Loop
 	}
 }
-ACTOR	Spawn41	 Replaces	Fatso {	
+ACTOR	LexiconFatso	 Replaces	Fatso {	
 	States
 	{
 	Spawn:
@@ -462,7 +462,7 @@ ACTOR	Spawn41	 Replaces	Fatso {
     Loop
 	}
 }
-ACTOR	Spawn42	 Replaces	HellKnight {	
+ACTOR	LexiconHellKnight	 Replaces	HellKnight {	
 	States
 	{
 	Spawn:
@@ -473,7 +473,7 @@ ACTOR	Spawn42	 Replaces	HellKnight {
     Loop
 	}
 }
-ACTOR	Spawn43	 Replaces	Cyberdemon {	
+ACTOR	LexiconCyberdemon	 Replaces	Cyberdemon {	
 	States
 	{
 	Spawn:
@@ -484,7 +484,7 @@ ACTOR	Spawn43	 Replaces	Cyberdemon {
     Loop
 	}
 }
-ACTOR	Spawn44	 Replaces	PainElemental {	
+ACTOR	LexiconPainElemental	 Replaces	PainElemental {	
 	States
 	{
 	Spawn:
@@ -495,7 +495,7 @@ ACTOR	Spawn44	 Replaces	PainElemental {
     Loop
 	}
 }
-ACTOR	Spawn45	 Replaces	WolfensteinSS {	
+ACTOR	LexiconWolfensteinSS	 Replaces	WolfensteinSS {	
 	States
 	{
 	Spawn:
@@ -506,7 +506,7 @@ ACTOR	Spawn45	 Replaces	WolfensteinSS {
     Loop
 	}
 }
-ACTOR	Spawn46	 Replaces	StealthArachnotron {	
+ACTOR	LexiconStealthArachnotron	 Replaces	StealthArachnotron {	
 	States
 	{
 	Spawn:
@@ -517,7 +517,7 @@ ACTOR	Spawn46	 Replaces	StealthArachnotron {
     Loop
 	}
 }
-ACTOR	Spawn47	 Replaces	StealthArchvile {	
+ACTOR	LexiconStealthArchvile	 Replaces	StealthArchvile {	
 	States
 	{
 	Spawn:
@@ -528,7 +528,7 @@ ACTOR	Spawn47	 Replaces	StealthArchvile {
     Loop
 	}
 }
-ACTOR	Spawn48	 Replaces	StealthCacodemon {	
+ACTOR	LexiconStealthCacodemon	 Replaces	StealthCacodemon {	
 	States
 	{
 	Spawn:
@@ -539,7 +539,7 @@ ACTOR	Spawn48	 Replaces	StealthCacodemon {
     Loop
 	}
 }
-ACTOR	Spawn49	 Replaces	StealthChaingunGuy {	
+ACTOR	LexiconStealthChaingunGuy	 Replaces	StealthChaingunGuy {	
 	States
 	{
 	Spawn:
@@ -550,7 +550,7 @@ ACTOR	Spawn49	 Replaces	StealthChaingunGuy {
     Loop
 	}
 }
-ACTOR	Spawn50	 Replaces	StealthShotgunGuy {	
+ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {	
 	States
 	{
 	Spawn:
@@ -561,7 +561,7 @@ ACTOR	Spawn50	 Replaces	StealthShotgunGuy {
     Loop
 	}
 }
-ACTOR	Spawn51	 Replaces	StealthDoomImp {	
+ACTOR	LexiconStealthDoomImp	 Replaces	StealthDoomImp {	
 	States
 	{
 	Spawn:
@@ -572,7 +572,7 @@ ACTOR	Spawn51	 Replaces	StealthDoomImp {
     Loop
 	}
 }
-ACTOR	Spawn52	 Replaces	StealthFatso {	
+ACTOR	LexiconStealthFatso	 Replaces	StealthFatso {	
 	States
 	{
 	Spawn:
@@ -583,7 +583,7 @@ ACTOR	Spawn52	 Replaces	StealthFatso {
     Loop
 	}
 }
-ACTOR	Spawn53	 Replaces	StealthRevenant {	
+ACTOR	LexiconStealthRevenant	 Replaces	StealthRevenant {	
 	States
 	{
 	Spawn:
@@ -594,7 +594,7 @@ ACTOR	Spawn53	 Replaces	StealthRevenant {
     Loop
 	}
 }
-ACTOR	Spawn54	 Replaces	ExplosiveBarrel {	
+ACTOR	LexiconExplosiveBarrel	 Replaces	ExplosiveBarrel {	
 	States
 	{
 	Spawn:
@@ -605,7 +605,7 @@ ACTOR	Spawn54	 Replaces	ExplosiveBarrel {
     Loop
 	}
 }
-ACTOR	Spawn55	 Replaces	Megasphere {	
+ACTOR	LexiconMegasphere	 Replaces	Megasphere {	
 	States
 	{
 	Spawn:
@@ -616,7 +616,7 @@ ACTOR	Spawn55	 Replaces	Megasphere {
     Loop
 	}
 }
-ACTOR	Spawn56	 Replaces	InvulnerabilitySphere {	
+ACTOR	LexiconInvulnerabilitySphere	 Replaces	InvulnerabilitySphere {	
 	States
 	{
 	Spawn:
@@ -627,7 +627,7 @@ ACTOR	Spawn56	 Replaces	InvulnerabilitySphere {
     Loop
 	}
 }
-ACTOR	Spawn57	 Replaces	Berserk {	
+ACTOR	LexiconBerserk	 Replaces	Berserk {	
 	States
 	{
 	Spawn:
@@ -638,7 +638,7 @@ ACTOR	Spawn57	 Replaces	Berserk {
     LOOP
 	}
 }
-ACTOR	Spawn58	 Replaces	RadSuit {	
+ACTOR	LexiconRadSuit	 Replaces	RadSuit {	
 	States
 	{
 	Spawn:
@@ -649,7 +649,7 @@ ACTOR	Spawn58	 Replaces	RadSuit {
     LOOP
 	}
 }
-ACTOR	Spawn59	 Replaces	Allmap {	
+ACTOR	LexiconAllmap	 Replaces	Allmap {	
 	States
 	{
 	Spawn:
@@ -660,7 +660,7 @@ ACTOR	Spawn59	 Replaces	Allmap {
     Loop
 	}
 }
-ACTOR	Spawn60	 Replaces	Infrared {	
+ACTOR	LexiconInfrared	 Replaces	Infrared {	
 	States
 	{
 	Spawn:
@@ -672,7 +672,7 @@ ACTOR	Spawn60	 Replaces	Infrared {
     Loop
 	}
 }
-ACTOR	Spawn61	 Replaces	RocketAmmo {	
+ACTOR	LexiconRocketAmmo	 Replaces	RocketAmmo {	
 	States
 	{
 	Spawn:
@@ -683,7 +683,7 @@ ACTOR	Spawn61	 Replaces	RocketAmmo {
     LOOP
 	}
 }
-ACTOR	Spawn62	 Replaces	RocketBox {	
+ACTOR	LexiconRocketBox	 Replaces	RocketBox {	
 	States
 	{
 	Spawn:
@@ -694,7 +694,7 @@ ACTOR	Spawn62	 Replaces	RocketBox {
     LOOP
 	}
 }
-ACTOR	Spawn63	 Replaces	CellPack {	
+ACTOR	LexiconCellPack	 Replaces	CellPack {	
 	States
 	{
 	Spawn:
@@ -705,7 +705,7 @@ ACTOR	Spawn63	 Replaces	CellPack {
     LOOP
 	}
 }
-ACTOR	Spawn64	 Replaces	ShellBox {	
+ACTOR	LexiconShellBox	 Replaces	ShellBox {	
 	States
 	{
 	Spawn:
@@ -716,7 +716,7 @@ ACTOR	Spawn64	 Replaces	ShellBox {
     LOOP
 	}
 }
-ACTOR	Spawn65	 Replaces	Backpack {	
+ACTOR	LexiconBackpack	 Replaces	Backpack {	
 	States
 	{
 	Spawn:
@@ -727,7 +727,7 @@ ACTOR	Spawn65	 Replaces	Backpack {
     LOOP
 	}
 }
-ACTOR	Spawn66	 Replaces	GibbedMarine {	
+ACTOR	LexiconGibbedMarine	 Replaces	GibbedMarine {	
 	States
 	{
 	Spawn:
@@ -738,7 +738,7 @@ ACTOR	Spawn66	 Replaces	GibbedMarine {
     LOOP
 	}
 }
-ACTOR	Spawn68	 Replaces	Gibs {	
+ACTOR	LexiconGibs	 Replaces	Gibs {	
 	States
 	{
 	Spawn:
@@ -748,7 +748,7 @@ ACTOR	Spawn68	 Replaces	Gibs {
     Goto GenericCrush
 	}
 }
-ACTOR	Spawn69	 Replaces	ColonGibs {	
+ACTOR	LexiconColonGibs	 Replaces	ColonGibs {	
 	States
 	{
 	Spawn:
@@ -759,7 +759,7 @@ ACTOR	Spawn69	 Replaces	ColonGibs {
     LOOP
 	}
 }
-ACTOR	Spawn70	 Replaces	SmallBloodPool {	
+ACTOR	LexiconSmallBloodPool	 Replaces	SmallBloodPool {	
 	States
 	{
 	Spawn:
@@ -770,7 +770,7 @@ ACTOR	Spawn70	 Replaces	SmallBloodPool {
     LOOP
 	}
 }
-ACTOR	Spawn71	 Replaces	BurningBarrel {	
+ACTOR	LexiconBurningBarrel	 Replaces	BurningBarrel {	
 	States
 	{
 	Spawn:
@@ -781,7 +781,7 @@ ACTOR	Spawn71	 Replaces	BurningBarrel {
     Loop
 	}
 }
-ACTOR	Spawn72	 Replaces	BrainStem {	
+ACTOR	LexiconBrainStem	 Replaces	BrainStem {	
 	States
 	{
 	Spawn:
@@ -792,7 +792,7 @@ ACTOR	Spawn72	 Replaces	BrainStem {
     LOOP
 	}
 }
-ACTOR	Spawn73	 Replaces	ScriptedMarine {	
+ACTOR	LexiconScriptedMarine	 Replaces	ScriptedMarine {	
 	States
 	{
 	Spawn:
@@ -804,7 +804,7 @@ ACTOR	Spawn73	 Replaces	ScriptedMarine {
     Loop
 	}
 }
-ACTOR	Spawn74	 Replaces HealthBonus	{
+ACTOR	LexiconHealthBonus	 Replaces HealthBonus	{
 
 	States
 	{

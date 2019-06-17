@@ -7,7 +7,7 @@ ACTOR	LexiconClipbox	Replaces	ClipBox {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	AMMO A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2048	)
 	DDS:
     AMMO A 1
@@ -18,7 +18,7 @@ ACTOR	LexiconShotgunGuy	Replaces	ShotgunGuy {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SPOS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9	)
 	DDS:
     SPOS AB 10 A_Look
@@ -29,7 +29,7 @@ ACTOR	LexiconChaingunGuy 	Replaces	ChaingunGuy {
 	States 
 	{
 	Spawn:
-	TNT1 A 0
+	CPOS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	65	)
 	DDS:
     CPOS AB 10 A_Look
@@ -40,7 +40,7 @@ ACTOR	LexiconBaronOfHell	Replaces	BaronOfHell {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BOSS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3003	)
 	DDS:
     BOSS AB 10 A_Look
@@ -51,7 +51,7 @@ ACTOR	LexiconZombieMan 	Replaces	ZombieMan {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	POSS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3004	)
 	DDS:
     POSS AB 10 A_Look
@@ -62,7 +62,7 @@ ACTOR	LexiconDoomImp	Replaces	DoomImp {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	TROO A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3001	)
 	DDS:
     TROO AB 10 A_Look
@@ -73,7 +73,7 @@ ACTOR	LexiconArachnotron	Replaces	Arachnotron {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BSPI A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	68	)
 	DDS:
     BSPI AB 10 A_Look
@@ -84,7 +84,7 @@ ACTOR	LexiconSpiderMastermind	Replaces	SpiderMastermind {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SPID A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	7	)
 	DDS:
     SPID AB 10 A_Look
@@ -95,7 +95,7 @@ ACTOR	LexiconDemon  Replaces	Demon {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SARG A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3002	)
 	DDS:
     SARG AB 10 A_Look
@@ -106,7 +106,7 @@ ACTOR	LexiconSpectre	Replaces	Spectre {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SARG A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	58	)
 	DDS:
     SARG AB 10 A_Look
@@ -117,7 +117,7 @@ ACTOR	LexiconClip	 Replaces	Clip {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CLIP A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2007	)
 	DDS:
     CLIP A 1
@@ -128,7 +128,7 @@ ACTOR	LexiconShell	 Replaces	Shell {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SHEL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2008	)
 	DDS:
     SHEL A 1
@@ -139,7 +139,7 @@ ACTOR	LexiconCacodemon	 Replaces	Cacodemon {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	HEAD A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3005	)
 	DDS:
     HEAD A 10 A_Look
@@ -150,7 +150,7 @@ ACTOR	LexiconRevenant	 Replaces	Revenant {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SKEL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	66	)
 	DDS:
     SKEL AB 10 A_Look
@@ -161,7 +161,7 @@ ACTOR	LexiconArmorBonus	 Replaces	ArmorBonus {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BON2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2015	)
 	DDS:
     BON2 ABCDCB 6
@@ -172,7 +172,7 @@ ACTOR	LexiconStimpack	 Replaces	Stimpack {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	STIM A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2011	)
 	DDS:
     STIM A 1
@@ -183,7 +183,7 @@ ACTOR	LexiconMedikit	 Replaces	Medikit {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	MEDI A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2012	)
 	DDS:
     MEDI A 1
@@ -194,7 +194,7 @@ ACTOR	LexiconSoulsphere	 Replaces	Soulsphere {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SOUL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2013	)
 	DDS:
     SOUL ABCDCB 6 Bright
@@ -205,7 +205,7 @@ ACTOR	LexiconShotgun	 Replaces	Shotgun {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SHOT A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2001	)
 	DDS:
     SHOT A 1
@@ -216,7 +216,7 @@ ACTOR	LexiconChaingun	 Replaces	Chaingun {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	MGUN A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2002	)
 	DDS:
      MGUN A 1
@@ -227,7 +227,7 @@ ACTOR	LexiconRocketLauncher	 Replaces	RocketLauncher {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	LAUN A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2003	)
 	DDS:
     LAUN A 1
@@ -238,7 +238,7 @@ ACTOR	LexiconPlasmaRifle	 Replaces	PlasmaRifle {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PLAS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2004	)
 	DDS:
     PLAS A 1
@@ -249,7 +249,7 @@ ACTOR	LexiconBFG9000	 Replaces	BFG9000 {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BFUG A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2006	)
 	DDS:
     BFUG A 1
@@ -260,7 +260,7 @@ ACTOR	LexiconChainsaw	 Replaces	Chainsaw {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CSAW A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2005	)
 	DDS:
     CSAW A 1
@@ -271,7 +271,7 @@ ACTOR	LexiconSuperShotgun	 Replaces	SuperShotgun {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SGN2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	82	)
 	DDS:
     SGN2 A 1
@@ -282,7 +282,7 @@ ACTOR	LexiconGreenArmor	 Replaces	GreenArmor {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	ARM1 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2018	)
 	DDS:
     ARM1 A 6
@@ -294,7 +294,7 @@ ACTOR	LexiconBlueArmor	 Replaces	BlueArmor {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	ARM2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2019	)
 	DDS:
     ARM2 A 6
@@ -306,7 +306,7 @@ ACTOR	LexiconCell	 Replaces	Cell {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CELL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2047	)
 	DDS:
     CELL A 1
@@ -317,7 +317,7 @@ ACTOR	LexiconBlueCard	 Replaces	BlueCard {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BKEY A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	5	)
 	DDS:
     BKEY A 10
@@ -329,7 +329,7 @@ ACTOR	LexiconRedCard	 Replaces	RedCard {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	RKEY A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	13	)
 	DDS:
     RKEY A 10
@@ -341,7 +341,7 @@ ACTOR	LexiconYellowCard	 Replaces	YellowCard {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	YKEY A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	6	)
 	DDS:
     YKEY A 10
@@ -353,7 +353,7 @@ ACTOR	LexiconYellowSkull	 Replaces	YellowSkull {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	YSKU A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	39	)
 	DDS:
     YSKU A 10
@@ -365,7 +365,7 @@ ACTOR	LexiconRedSkull	 Replaces	RedSkull {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	RSKU A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	38	)
 	DDS:
     RSKU A 10
@@ -377,7 +377,7 @@ ACTOR	LexiconBlueSkull	 Replaces	BlueSkull {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BSKU A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	40	)
 	DDS:
     BSKU A 10
@@ -389,7 +389,7 @@ ACTOR	LexiconStealthBaron	 Replaces	StealthBaron {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BOSS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9052	)
 	DDS:
     BOSS AB 10 A_Look
@@ -400,7 +400,7 @@ ACTOR	LexiconStealthHellKnight	 Replaces	StealthHellKnight {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BOS2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9056	)
 	DDS:
     BOS2 AB 10 A_Look
@@ -411,7 +411,7 @@ ACTOR	LexiconStealthZombieMan	 Replaces	StealthZombieMan {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	POSS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9061	)
 	DDS:
     POSS AB 10 A_Look
@@ -422,7 +422,7 @@ ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SPOS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
 	DDS:
     SPOS AB 10 A_Look
@@ -433,7 +433,7 @@ ACTOR	LexiconLostSoul	Replaces	LostSoul {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SKUL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3006	)
 	DDS:
     SKUL AB 10 Bright A_Look
@@ -444,7 +444,7 @@ ACTOR	LexiconArchvile	Replaces	Archvile {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	VILE A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	64	)
 	DDS:
     VILE AB 10 A_Look
@@ -455,7 +455,7 @@ ACTOR	LexiconFatso	 Replaces	Fatso {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	FATT A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	67	)
 	DDS:
     FATT AB 15 A_Look
@@ -466,7 +466,7 @@ ACTOR	LexiconHellKnight	 Replaces	HellKnight {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BOS2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	69	)
 	DDS:
     BOS2 AB 10 A_Look
@@ -477,7 +477,7 @@ ACTOR	LexiconCyberdemon	 Replaces	Cyberdemon {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CYBR A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	16	)
 	DDS:
     CYBR AB 10 A_Look
@@ -488,7 +488,7 @@ ACTOR	LexiconPainElemental	 Replaces	PainElemental {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PAIN A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	71	)
 	DDS:
     PAIN A 10 A_Look
@@ -499,7 +499,7 @@ ACTOR	LexiconWolfensteinSS	 Replaces	WolfensteinSS {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SSWV A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	84	)
 	DDS:
     SSWV AB 10 A_Look
@@ -510,7 +510,7 @@ ACTOR	LexiconStealthArachnotron	 Replaces	StealthArachnotron {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BSPI A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9050	)
 	DDS:
     BSPI AB 10 A_Look
@@ -521,7 +521,7 @@ ACTOR	LexiconStealthArchvile	 Replaces	StealthArchvile {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	VILE A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9051	)
 	DDS:
     VILE AB 10 A_Look
@@ -532,7 +532,7 @@ ACTOR	LexiconStealthCacodemon	 Replaces	StealthCacodemon {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	HEAD A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9053	)
 	DDS:
     HEAD A 10 A_Look
@@ -543,7 +543,7 @@ ACTOR	LexiconStealthChaingunGuy	 Replaces	StealthChaingunGuy {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CPOS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9054	)
 	DDS:
     CPOS AB 10 A_Look
@@ -554,7 +554,7 @@ ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SPOS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
 	DDS:
     SPOS AB 10 A_Look
@@ -565,7 +565,7 @@ ACTOR	LexiconStealthDoomImp	 Replaces	StealthDoomImp {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	TROO A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9057	)
 	DDS:
     TROO AB 10 A_Look
@@ -576,7 +576,7 @@ ACTOR	LexiconStealthFatso	 Replaces	StealthFatso {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	FATT A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9058	)
 	DDS:
     FATT AB 15 A_Look
@@ -587,7 +587,7 @@ ACTOR	LexiconStealthRevenant	 Replaces	StealthRevenant {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SKEL A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9059	)
 	DDS:
     SKEL AB 10 A_Look
@@ -598,7 +598,7 @@ ACTOR	LexiconExplosiveBarrel	 Replaces	ExplosiveBarrel {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BAR1 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2035	)
 	DDS:
     BAR1 AB 6
@@ -609,7 +609,7 @@ ACTOR	LexiconMegasphere	 Replaces	Megasphere {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	MEGA A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	83	)
 	DDS:
     MEGA ABCD 6 Bright
@@ -620,7 +620,7 @@ ACTOR	LexiconInvulnerabilitySphere	 Replaces	InvulnerabilitySphere {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PINV A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2022	)
 	DDS:
     PINV ABCD 6 Bright
@@ -631,7 +631,7 @@ ACTOR	LexiconBerserk	 Replaces	Berserk {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PSTR A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2023	)
 	DDS:
     PSTR A 1
@@ -642,7 +642,7 @@ ACTOR	LexiconRadSuit	 Replaces	RadSuit {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SUIT A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2025	)
 	DDS:
     SUIT A 1 Bright
@@ -653,7 +653,7 @@ ACTOR	LexiconAllmap	 Replaces	Allmap {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PMAP A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2026	)
 	DDS:
     PMAP ABCDCB 6 Bright
@@ -664,7 +664,7 @@ ACTOR	LexiconInfrared	 Replaces	Infrared {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PVIS A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2045	)
 	DDS:
     PVIS A 6 Bright
@@ -676,7 +676,7 @@ ACTOR	LexiconRocketAmmo	 Replaces	RocketAmmo {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	ROCK A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2010	)
 	DDS:
     ROCK A 1
@@ -687,7 +687,7 @@ ACTOR	LexiconRocketBox	 Replaces	RocketBox {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BROK A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2046	)
 	DDS:
     BROK A 1
@@ -698,7 +698,7 @@ ACTOR	LexiconCellPack	 Replaces	CellPack {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	CELP A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	17	)
 	DDS:
     CELP A 1
@@ -709,7 +709,7 @@ ACTOR	LexiconShellBox	 Replaces	ShellBox {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	SBOX A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2049	)
 	DDS:
     SBOX A 1
@@ -720,7 +720,7 @@ ACTOR	LexiconBackpack	 Replaces	Backpack {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BPAK A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	8	)
 	DDS:
     BPAK A 1
@@ -731,7 +731,7 @@ ACTOR	LexiconGibbedMarine	 Replaces	GibbedMarine {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PLAY A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	10	)
 	DDS:
     PLAY W 1
@@ -752,7 +752,7 @@ ACTOR	LexiconColonGibs	 Replaces	ColonGibs {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	POB1 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	79	)
 	DDS:
     POB1 A 1
@@ -763,7 +763,7 @@ ACTOR	LexiconSmallBloodPool	 Replaces	SmallBloodPool {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	POB2 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	80	)
 	 DDS:
     POB2 A 1
@@ -774,7 +774,7 @@ ACTOR	LexiconBurningBarrel	 Replaces	BurningBarrel {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	FCAN A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	70	)
 	 DDS:
     FCAN ABC 4 Bright
@@ -785,7 +785,7 @@ ACTOR	LexiconBrainStem	 Replaces	BrainStem {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BBRN A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	81	)
 	DDS:
     BBRN A 1
@@ -796,7 +796,7 @@ ACTOR	LexiconScriptedMarine	 Replaces	ScriptedMarine {
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	PLAY A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9100	)
 	 DDS:
     PLAY A 4
@@ -809,7 +809,7 @@ ACTOR	LexiconHealthBonus	 Replaces HealthBonus	{
 	States
 	{
 	Spawn:
-	TNT1 A 0
+	BON1 A 0
 	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2014	)
 	DDS:
 	BON1 ABCDCB 6

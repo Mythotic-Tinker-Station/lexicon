@@ -550,17 +550,7 @@ ACTOR	LexiconStealthChaingunGuy	 Replaces	StealthChaingunGuy {
     Loop
 	}
 }
-ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {	
-	States
-	{
-	Spawn:
-	SPOS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
-	DDS:
-    SPOS AB 10 A_Look
-    Loop
-	}
-}
+
 ACTOR	LexiconStealthDoomImp	 Replaces	StealthDoomImp {	
 	States
 	{
@@ -10819,6 +10809,8 @@ TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_Spawn
 Loop
     }
 }
+
+//SKIP 25211
 
 
 

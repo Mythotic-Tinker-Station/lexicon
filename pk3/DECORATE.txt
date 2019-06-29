@@ -2,808 +2,1138 @@
 This file contains actors from various megawads requried for them.
 Some megawads add custom shit so... makes the merging process really annoying
 */
-
-ACTOR	LexiconClipbox	Replaces	ClipBox {	
+/*
+					SpawnSpotFacingForced("LClipBox",					(TIDS + 2048	),0); Thing_Remove(TIDS + 2048);
+					SpawnSpotFacingForced("LShotgunGuy",				(TIDS + 9		),0); Thing_Remove(TIDS + 9);
+					SpawnSpotFacingForced("LChaingunGuy",				(TIDS + 65		),0); Thing_Remove(TIDS + 65);
+					SpawnSpotFacingForced("LBaronOfHell",				(TIDS + 3003	),0); Thing_Remove(TIDS + 3003);
+					SpawnSpotFacingForced("LZombieMan",					(TIDS + 3004	),0); Thing_Remove(TIDS + 3004);
+					SpawnSpotFacingForced("LDoomImp",					(TIDS + 3001	),0); Thing_Remove(TIDS + 3001);
+					SpawnSpotFacingForced("LArachnotron",				(TIDS + 68		),0); Thing_Remove(TIDS + 68);
+					SpawnSpotFacingForced("LSpiderMastermind",			(TIDS + 7		),0); Thing_Remove(TIDS + 7);
+					SpawnSpotFacingForced("LDemon",						(TIDS + 3002	),0); Thing_Remove(TIDS + 3002);
+					SpawnSpotFacingForced("LSpectre",					(TIDS + 58		),0); Thing_Remove(TIDS + 58);
+					SpawnSpotFacingForced("LClip",						(TIDS + 2007	),0); Thing_Remove(TIDS + 2007);
+					SpawnSpotFacingForced("LShell",						(TIDS + 2008	),0); Thing_Remove(TIDS + 2008);
+					SpawnSpotFacingForced("LCacodemon",					(TIDS + 3005	),0); Thing_Remove(TIDS + 3005);
+					SpawnSpotFacingForced("LRevenant",					(TIDS + 66		),0); Thing_Remove(TIDS + 66);
+					SpawnSpotFacingForced("LArmorBonus",				(TIDS + 2015	),0); Thing_Remove(TIDS + 2015);
+					SpawnSpotFacingForced("LStimpack",					(TIDS + 2011	),0); Thing_Remove(TIDS + 2011);
+					SpawnSpotFacingForced("LMedikit",					(TIDS + 2012	),0); Thing_Remove(TIDS + 2012);
+					SpawnSpotFacingForced("LSoulsphere",				(TIDS + 2013	),0); Thing_Remove(TIDS + 2013);
+					SpawnSpotFacingForced("LShotgun",					(TIDS + 2001	),0); Thing_Remove(TIDS + 2001);
+					SpawnSpotFacingForced("LChaingun",					(TIDS + 2002	),0); Thing_Remove(TIDS + 2002);
+					SpawnSpotFacingForced("LRocketLauncher",			(TIDS + 2003	),0); Thing_Remove(TIDS + 2003);
+					SpawnSpotFacingForced("LPlasmaRifle",				(TIDS + 2004	),0); Thing_Remove(TIDS + 2004);
+					SpawnSpotFacingForced("LBFG9000",					(TIDS + 2006	),0); Thing_Remove(TIDS + 2006);
+					SpawnSpotFacingForced("LChainsaw",					(TIDS + 2005	),0); Thing_Remove(TIDS + 2005);
+					SpawnSpotFacingForced("LSuperShotgun",				(TIDS + 82		),0); Thing_Remove(TIDS + 82);
+					SpawnSpotFacingForced("LGreenArmor",				(TIDS + 2018	),0); Thing_Remove(TIDS + 2018);
+					SpawnSpotFacingForced("LBlueArmor",					(TIDS + 2019	),0); Thing_Remove(TIDS + 2019);
+					SpawnSpotFacingForced("LCell",						(TIDS + 2047	),0); Thing_Remove(TIDS + 2047);
+					SpawnSpotFacingForced("LBlueCard",					(TIDS + 5		),0); Thing_Remove(TIDS + 5);
+					SpawnSpotFacingForced("LRedCard",					(TIDS + 13		),0); Thing_Remove(TIDS + 13);
+					SpawnSpotFacingForced("LYellowCard",				(TIDS + 6		),0); Thing_Remove(TIDS + 6);
+					SpawnSpotFacingForced("LYellowSkull",				(TIDS + 39		),0); Thing_Remove(TIDS + 39);
+					SpawnSpotFacingForced("LRedSkull",					(TIDS + 38		),0); Thing_Remove(TIDS + 38);
+					SpawnSpotFacingForced("LBlueSkull",					(TIDS + 40		),0); Thing_Remove(TIDS + 40);
+					SpawnSpotFacingForced("LStealthBaron",				(TIDS + 9052	),0); Thing_Remove(TIDS + 9052);
+					SpawnSpotFacingForced("LStealthHellKnight",			(TIDS + 9056	),0); Thing_Remove(TIDS + 9056);
+					SpawnSpotFacingForced("LStealthZombieMan",			(TIDS + 9061	),0); Thing_Remove(TIDS + 9061);
+					SpawnSpotFacingForced("LStealthLShotgunGuy",		(TIDS + 9060	),0); Thing_Remove(TIDS + 9060);
+					SpawnSpotFacingForced("LLostSoul",					(TIDS + 3006	),0); Thing_Remove(TIDS + 3006);
+					SpawnSpotFacingForced("LArchvile",					(TIDS + 64		),0); Thing_Remove(TIDS + 64);
+					SpawnSpotFacingForced("LFatso",						(TIDS + 67		),0); Thing_Remove(TIDS + 67);
+					SpawnSpotFacingForced("LHellKnight",				(TIDS + 69		),0); Thing_Remove(TIDS + 69);
+					SpawnSpotFacingForced("LCyberdemon",				(TIDS + 16		),0); Thing_Remove(TIDS + 16);
+					SpawnSpotFacingForced("LPainElemental",				(TIDS + 71		),0); Thing_Remove(TIDS + 71);
+					SpawnSpotFacingForced("LWolfensteinSS",				(TIDS + 84		),0); Thing_Remove(TIDS + 84);
+					SpawnSpotFacingForced("LStealthArachnotron",		(TIDS + 9050	),0); Thing_Remove(TIDS + 9050);
+					SpawnSpotFacingForced("LStealthArchvile",			(TIDS + 9051	),0); Thing_Remove(TIDS + 9051);
+					SpawnSpotFacingForced("LStealthCacodemon",			(TIDS + 9053	),0); Thing_Remove(TIDS + 9053);
+					SpawnSpotFacingForced("LStealthChaingunGuy",		(TIDS + 9054	),0); Thing_Remove(TIDS + 9054);
+					SpawnSpotFacingForced("LStealthLShotgunGuy",		(TIDS + 9060	),0); Thing_Remove(TIDS + 9060);
+					SpawnSpotFacingForced("LStealthDoomImp",			(TIDS + 9057	),0); Thing_Remove(TIDS + 9057);
+					SpawnSpotFacingForced("LStealthFatso",				(TIDS + 9058	),0); Thing_Remove(TIDS + 9058);
+					SpawnSpotFacingForced("LStealthRevenant",			(TIDS + 9059	),0); Thing_Remove(TIDS + 9059);
+					SpawnSpotFacingForced("LExplosiveBarrel",			(TIDS + 2035	),0); Thing_Remove(TIDS + 2035);
+					SpawnSpotFacingForced("LMegasphere",				(TIDS + 83		),0); Thing_Remove(TIDS + 83);
+					SpawnSpotFacingForced("LInvulnerabilitySphere",		(TIDS + 2022	),0); Thing_Remove(TIDS + 2022);
+					SpawnSpotFacingForced("LBerserk",					(TIDS + 2023	),0); Thing_Remove(TIDS + 2023);
+					SpawnSpotFacingForced("LRadSuit",					(TIDS + 2025	),0); Thing_Remove(TIDS + 2025);
+					SpawnSpotFacingForced("LAllmap",					(TIDS + 2026	),0); Thing_Remove(TIDS + 2026);
+					SpawnSpotFacingForced("LInfrared",					(TIDS + 2045	),0); Thing_Remove(TIDS + 2045);
+					SpawnSpotFacingForced("LRocketAmmo",				(TIDS + 2010	),0); Thing_Remove(TIDS + 2010);
+					SpawnSpotFacingForced("LRocketBox",					(TIDS + 2046	),0); Thing_Remove(TIDS + 2046);
+					SpawnSpotFacingForced("LCellPack",					(TIDS + 17		),0); Thing_Remove(TIDS + 17);
+					SpawnSpotFacingForced("LShellBox",					(TIDS + 2049	),0); Thing_Remove(TIDS + 2049);
+					SpawnSpotFacingForced("LBackpack",					(TIDS + 8		),0); Thing_Remove(TIDS + 8);
+					SpawnSpotFacingForced("LGibbedMarine",				(TIDS + 10		),0); Thing_Remove(TIDS + 10);
+					SpawnSpotFacingForced("LGibs",						(TIDS + 24		),0); Thing_Remove(TIDS + 24);
+					SpawnSpotFacingForced("LColonGibs",					(TIDS + 79		),0); Thing_Remove(TIDS + 79);
+					SpawnSpotFacingForced("LSmallBloodPool",			(TIDS + 80		),0); Thing_Remove(TIDS + 80);
+					SpawnSpotFacingForced("LBurningBarrel",				(TIDS + 70		),0); Thing_Remove(TIDS + 70);
+					SpawnSpotFacingForced("LBrainStem",					(TIDS + 81		),0); Thing_Remove(TIDS + 81);
+					SpawnSpotFacingForced("LScriptedMarine",			(TIDS + 9100	),0); Thing_Remove(TIDS + 9100);
+					SpawnSpotFacingForced("LHealthBonus",				(TIDS + 2014	),0); Thing_Remove(TIDS + 2014); 
+*/
+//These need some sort of ACS_ExectuteWithResult to check for map names, and spawnitem ex and transferspecial flag to spawn in the replacements. This will fix the mapspecial problem.
+ACTOR	LexiconClipbox	Replaces	ClipBox {
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	AMMO A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2048	)
-	DDS:
-    AMMO A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LClipBox", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconShotgunGuy	Replaces	ShotgunGuy {	
+ACTOR	LexiconShotgunGuy	Replaces	ShotgunGuy {
++RANDOMIZE		
 	States
 	{
-	Spawn:
-	SPOS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9	)
-	DDS:
-    SPOS AB 10 A_Look
-    Loop
+	TNT1 A 4
+	
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 1, "CS1CS2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	CS1CS2:
+    TNT1 A 0 A_SpawnItemEx("CS2ShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic1A11", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA31", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconChaingunGuy 	Replaces	ChaingunGuy {	
+ACTOR	LexiconChaingunGuy 	Replaces	ChaingunGuy {
++RANDOMIZE		
 	States 
 	{
 	Spawn:
-	CPOS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	65	)
-	DDS:
-    CPOS AB 10 A_Look
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 1, "CS1CS2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	CS1CS2:
+    TNT1 A 0 A_SpawnItemEx("CS2ChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic1A9", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA30", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconBaronOfHell	Replaces	BaronOfHell {
++RANDOMIZE	
+  +NoBlockMap
+  +NoSector
+  +NoGravity
+  +NoRadiusDMG
+  +NoInteraction
+  +IsMonster
+  +Shootable
+  +BossDeath
+  Health 0x7FFFFFFF
+  Radius 0
+  Height 0
+  Mass 0x7FFFFFFF		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LBaronOfHell", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantSuperMancubus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA22", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x6A4", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+    Arbitrary:
+    TNT1 A 1
     Loop
+	Death:
+    TNT1 A 1 A_BossDeath
+    Stop
 	}
 }
-ACTOR	LexiconBaronOfHell	Replaces	BaronOfHell {	
+ACTOR	LexiconZombieMan 	Replaces	ZombieMan {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	BOSS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3003	)
-	DDS:
-    BOSS AB 10 A_Look
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 1, "CS1CS2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	CS1CS2:
+    TNT1 A 0 A_SpawnItemEx("CS2ZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic1A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconDoomImp	Replaces	DoomImp {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LDoomImp", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantImp", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A36", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA29", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconArachnotron	Replaces	Arachnotron {
++RANDOMIZE		
+  +NoBlockMap
+  +NoSector
+  +NoGravity
+  +NoRadiusDMG
+  +NoInteraction
+  +IsMonster
+  +Shootable
+  +BossDeath
+  Health 0x7FFFFFFF
+  Radius 0
+  Height 0
+  Mass 0x7FFFFFFF	
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA120", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+    Arbitrary:
+    TNT1 A 1
     Loop
+	Death:
+    TNT1 A 1 A_BossDeath
+    Stop
 	}
 }
-ACTOR	LexiconZombieMan 	Replaces	ZombieMan {	
+ACTOR	LexiconSpiderMastermind	Replaces	SpiderMastermind {
++RANDOMIZE	
+  +NoBlockMap
+  +NoSector
+  +NoGravity
+  +NoRadiusDMG
+  +NoInteraction
+  +IsMonster
+  +Shootable
+  +BossDeath
+  Health 0x7FFFFFFF
+  Radius 0
+  Height 0
+  Mass 0x7FFFFFFF		
 	States
 	{
 	Spawn:
-	POSS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3004	)
-	DDS:
-    POSS AB 10 A_Look
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LSpiderMastermind", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantCybruiser", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA15", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+    Arbitrary:
+    TNT1 A 1
     Loop
+	Death:
+    TNT1 A 1 A_BossDeath
+    Stop
 	}
 }
-ACTOR	LexiconDoomImp	Replaces	DoomImp {	
+ACTOR	LexiconDemon  Replaces	Demon {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	TROO A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3001	)
-	DDS:
-    TROO AB 10 A_Look
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA28", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconSpectre	Replaces	Spectre {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+    TNT1 A 0 A_SpawnItemEx("LSpectre", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantSpectre", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconClip	 Replaces	Clip {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LClip", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A18", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconShell	 Replaces	Shell {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LShell", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconCacodemon	 Replaces	Cacodemon {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LCacodemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA27", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconRevenant	 Replaces	Revenant {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LRevenant", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic1A10", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA17", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconArmorBonus	 Replaces	ArmorBonus {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LArmorBonus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17ArmorBonus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x7A1", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconStimpack	 Replaces	Stimpack {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LStimpack", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A9", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconMedikit	 Replaces	Medikit {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LMedikit", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A6", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconSoulsphere	 Replaces	Soulsphere {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+    TNT1 A 0 A_SpawnItemEx("LSoulsphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17Soulsphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconShotgun	 Replaces	Shotgun {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LShotgun", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconChaingun	 Replaces	Chaingun {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LChaingun", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconRocketLauncher	 Replaces	RocketLauncher {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LRocketLauncher", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconPlasmaRifle	 Replaces	PlasmaRifle {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LPlasmaRifle", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A7", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconBFG9000	 Replaces	BFG9000 {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBFG9000", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconChainsaw	 Replaces	Chainsaw {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LChainsaw", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconSuperShotgun	 Replaces	SuperShotgun {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LSuperShotgun", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconGreenArmor	 Replaces	GreenArmor {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LGreenArmor", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17GreenArmor", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x6A1", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconBlueArmor	 Replaces	BlueArmor {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+    TNT1 A 0 A_SpawnItemEx("LBlueArmor", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17BlueArmor", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconCell	 Replaces	Cell {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LCell", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconBlueCard	 Replaces	BlueCard {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBlueCard", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconRedCard	 Replaces	RedCard {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LRedCard", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconYellowCard	 Replaces	YellowCard {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LYellowCard", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconYellowSkull	 Replaces	YellowSkull {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LYellowSkull", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconRedSkull	 Replaces	RedSkull {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LRedSkull", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconBlueSkull	 Replaces	BlueSkull {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBlueSkull", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconStealthBaron	 Replaces	StealthBaron {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthBaron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconStealthHellKnight	 Replaces	StealthHellKnight {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LStealthHellKnight", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantPyroDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconStealthZombieMan	 Replaces	StealthZombieMan {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconLostSoul	Replaces	LostSoul {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA25", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconArchvile	Replaces	Archvile {
++RANDOMIZE		
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LArchvile", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	}
+}
+ACTOR	LexiconFatso	 Replaces	Fatso {
++RANDOMIZE	
+  +NoBlockMap
+  +NoSector
+  +NoGravity
+  +NoRadiusDMG
+  +NoInteraction
+  +IsMonster
+  +Shootable
+  +BossDeath
+  Health 0x7FFFFFFF
+  Radius 0
+  Height 0
+  Mass 0x7FFFFFFF	
+	States
+	{
+	Spawn:
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LFatso", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA19", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+    Arbitrary:
+    TNT1 A 1
     Loop
-	}
-}
-ACTOR	LexiconArachnotron	Replaces	Arachnotron {	
-	States
-	{
-	Spawn:
-	BSPI A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	68	)
-	DDS:
-    BSPI AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconSpiderMastermind	Replaces	SpiderMastermind {	
-	States
-	{
-	Spawn:
-	SPID A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	7	)
-	DDS:
-    SPID AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconDemon  Replaces	Demon {	
-	States
-	{
-	Spawn:
-	SARG A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3002	)
-	DDS:
-    SARG AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconSpectre	Replaces	Spectre {	
-	States
-	{
-	Spawn:
-	SARG A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	58	)
-	DDS:
-    SARG AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconClip	 Replaces	Clip {	
-	States
-	{
-	Spawn:
-	CLIP A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2007	)
-	DDS:
-    CLIP A 1
-    LOOP
-	}
-}
-ACTOR	LexiconShell	 Replaces	Shell {	
-	States
-	{
-	Spawn:
-	SHEL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2008	)
-	DDS:
-    SHEL A 1
-    LOOP
-	}
-}
-ACTOR	LexiconCacodemon	 Replaces	Cacodemon {	
-	States
-	{
-	Spawn:
-	HEAD A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3005	)
-	DDS:
-    HEAD A 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconRevenant	 Replaces	Revenant {	
-	States
-	{
-	Spawn:
-	SKEL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	66	)
-	DDS:
-    SKEL AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconArmorBonus	 Replaces	ArmorBonus {	
-	States
-	{
-	Spawn:
-	BON2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2015	)
-	DDS:
-    BON2 ABCDCB 6
-    Loop
-	}
-}
-ACTOR	LexiconStimpack	 Replaces	Stimpack {	
-	States
-	{
-	Spawn:
-	STIM A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2011	)
-	DDS:
-    STIM A 1
-    LOOP
-	}
-}
-ACTOR	LexiconMedikit	 Replaces	Medikit {	
-	States
-	{
-	Spawn:
-	MEDI A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2012	)
-	DDS:
-    MEDI A 1
-    LOOP
-	}
-}
-ACTOR	LexiconSoulsphere	 Replaces	Soulsphere {	
-	States
-	{
-	Spawn:
-	SOUL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2013	)
-	DDS:
-    SOUL ABCDCB 6 Bright
-    Loop
-	}
-}
-ACTOR	LexiconShotgun	 Replaces	Shotgun {	
-	States
-	{
-	Spawn:
-	SHOT A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2001	)
-	DDS:
-    SHOT A 1
-    LOOP
-	}
-}
-ACTOR	LexiconChaingun	 Replaces	Chaingun {	
-	States
-	{
-	Spawn:
-	MGUN A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2002	)
-	DDS:
-     MGUN A 1
-     LOOP
-	}
-}
-ACTOR	LexiconRocketLauncher	 Replaces	RocketLauncher {	
-	States
-	{
-	Spawn:
-	LAUN A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2003	)
-	DDS:
-    LAUN A 1
-    LOOP
-	}
-}
-ACTOR	LexiconPlasmaRifle	 Replaces	PlasmaRifle {	
-	States
-	{
-	Spawn:
-	PLAS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2004	)
-	DDS:
-    PLAS A 1
-    LOOP
-	}
-}
-ACTOR	LexiconBFG9000	 Replaces	BFG9000 {	
-	States
-	{
-	Spawn:
-	BFUG A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2006	)
-	DDS:
-    BFUG A 1
-    LOOP
-	}
-}
-ACTOR	LexiconChainsaw	 Replaces	Chainsaw {	
-	States
-	{
-	Spawn:
-	CSAW A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2005	)
-	DDS:
-    CSAW A 1
-    LOOP
-	}
-}
-ACTOR	LexiconSuperShotgun	 Replaces	SuperShotgun {	
-	States
-	{
-	Spawn:
-	SGN2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	82	)
-	DDS:
-    SGN2 A 1
-    LOOP
-	}
-}
-ACTOR	LexiconGreenArmor	 Replaces	GreenArmor {	
-	States
-	{
-	Spawn:
-	ARM1 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2018	)
-	DDS:
-    ARM1 A 6
-    ARM1 B 7 Bright
-    Loop
-	}
-}
-ACTOR	LexiconBlueArmor	 Replaces	BlueArmor {	
-	States
-	{
-	Spawn:
-	ARM2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2019	)
-	DDS:
-    ARM2 A 6
-    ARM2 B 6 Bright
-    Loop
-	}
-}
-ACTOR	LexiconCell	 Replaces	Cell {	
-	States
-	{
-	Spawn:
-	CELL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2047	)
-	DDS:
-    CELL A 1
-    LOOP
-	}
-}
-ACTOR	LexiconBlueCard	 Replaces	BlueCard {	
-	States
-	{
-	Spawn:
-	BKEY A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	5	)
-	DDS:
-    BKEY A 10
-    BKEY B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconRedCard	 Replaces	RedCard {	
-	States
-	{
-	Spawn:
-	RKEY A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	13	)
-	DDS:
-    RKEY A 10
-    RKEY B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconYellowCard	 Replaces	YellowCard {	
-	States
-	{
-	Spawn:
-	YKEY A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	6	)
-	DDS:
-    YKEY A 10
-    YKEY B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconYellowSkull	 Replaces	YellowSkull {	
-	States
-	{
-	Spawn:
-	YSKU A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	39	)
-	DDS:
-    YSKU A 10
-    YSKU B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconRedSkull	 Replaces	RedSkull {	
-	States
-	{
-	Spawn:
-	RSKU A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	38	)
-	DDS:
-    RSKU A 10
-    RSKU B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconBlueSkull	 Replaces	BlueSkull {	
-	States
-	{
-	Spawn:
-	BSKU A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	40	)
-	DDS:
-    BSKU A 10
-    BSKU B 10 Bright
-    Loop
-	}
-}
-ACTOR	LexiconStealthBaron	 Replaces	StealthBaron {	
-	States
-	{
-	Spawn:
-	BOSS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9052	)
-	DDS:
-    BOSS AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconStealthHellKnight	 Replaces	StealthHellKnight {	
-	States
-	{
-	Spawn:
-	BOS2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9056	)
-	DDS:
-    BOS2 AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconStealthZombieMan	 Replaces	StealthZombieMan {	
-	States
-	{
-	Spawn:
-	POSS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9061	)
-	DDS:
-    POSS AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconStealthShotgunGuy	 Replaces	StealthShotgunGuy {	
-	States
-	{
-	Spawn:
-	SPOS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9060	)
-	DDS:
-    SPOS AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconLostSoul	Replaces	LostSoul {	
-	States
-	{
-	Spawn:
-	SKUL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	3006	)
-	DDS:
-    SKUL AB 10 Bright A_Look
-    Loop
-	}
-}
-ACTOR	LexiconArchvile	Replaces	Archvile {	
-	States
-	{
-	Spawn:
-	VILE A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	64	)
-	DDS:
-    VILE AB 10 A_Look
-    Loop
-	}
-}
-ACTOR	LexiconFatso	 Replaces	Fatso {	
-	States
-	{
-	Spawn:
-	FATT A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	67	)
-	DDS:
-    FATT AB 15 A_Look
-    Loop
+	Death:
+    TNT1 A 1 A_BossDeath
+    Stop
 	}
 }
 ACTOR	LexiconHellKnight	 Replaces	HellKnight {
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	BOS2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	69	)
-	DDS:
-    BOS2 AB 10 A_Look
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LHellKnight", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA23", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconCyberdemon	 Replaces	Cyberdemon {	
+ACTOR	LexiconCyberdemon	 Replaces	Cyberdemon {
++RANDOMIZE		
+  +NoBlockMap
+  +NoSector
+  +NoGravity
+  +NoRadiusDMG
+  +NoInteraction
+  +IsMonster
+  +Shootable
+  +BossDeath
+  Health 0x7FFFFFFF
+  Radius 0
+  Height 0
+  Mass 0x7FFFFFFF	
 	States
 	{
 	Spawn:
-	CYBR A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	16	)
-	DDS:
-    CYBR AB 10 A_Look
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LCyberdemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA14", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    Goto Arbitrary
+    Arbitrary:
+    TNT1 A 1
     Loop
+	Death:
+    TNT1 A 1 A_BossDeath
+    Stop
 	}
 }
-ACTOR	LexiconPainElemental	 Replaces	PainElemental {	
+ACTOR	LexiconPainElemental	 Replaces	PainElemental {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	PAIN A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	71	)
-	DDS:
-    PAIN A 10 A_Look
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LPainElemental", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA24", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconWolfensteinSS	 Replaces	WolfensteinSS {	
+ACTOR	LexiconWolfensteinSS	 Replaces	WolfensteinSS {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	SSWV A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	84	)
-	DDS:
-    SSWV AB 10 A_Look
-    Loop
+	TNT1 A 4
+	
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 2, "SC2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 4, "HC0HC1")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
+    TNT1 A 0 A_SpawnItemEx("LWolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SC2:
+    TNT1 A 0 A_SpawnItemEx("LEvilMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	HC0HC1:
+    TNT1 A 0 A_SpawnItemEx("HLC_WolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A38", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	AA1:
+    TNT1 A 0 A_SpawnItemEx("AAA33", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthArachnotron	 Replaces	StealthArachnotron {	
+ACTOR	LexiconStealthArachnotron	 Replaces	StealthArachnotron {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	BSPI A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9050	)
-	DDS:
-    BSPI AB 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthArchvile	 Replaces	StealthArchvile {	
+ACTOR	LexiconStealthArchvile	 Replaces	StealthArchvile {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	VILE A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9051	)
-	DDS:
-    VILE AB 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthArchvile", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthCacodemon	 Replaces	StealthCacodemon {	
+ACTOR	LexiconStealthCacodemon	 Replaces	StealthCacodemon {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	HEAD A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9053	)
-	DDS:
-    HEAD A 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthCacodemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthChaingunGuy	 Replaces	StealthChaingunGuy {	
+ACTOR	LexiconStealthChaingunGuy	 Replaces	StealthChaingunGuy {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	CPOS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9054	)
-	DDS:
-    CPOS AB 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 
-ACTOR	LexiconStealthDoomImp	 Replaces	StealthDoomImp {	
+ACTOR	LexiconStealthDoomImp	 Replaces	StealthDoomImp {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	TROO A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9057	)
-	DDS:
-    TROO AB 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthDoomImp", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthFatso	 Replaces	StealthFatso {	
+ACTOR	LexiconStealthFatso	 Replaces	StealthFatso {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	FATT A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9058	)
-	DDS:
-    FATT AB 15 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthFatso", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconStealthRevenant	 Replaces	StealthRevenant {	
+ACTOR	LexiconStealthRevenant	 Replaces	StealthRevenant {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	SKEL A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9059	)
-	DDS:
-    SKEL AB 10 A_Look
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LStealthRevenant", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconExplosiveBarrel	 Replaces	ExplosiveBarrel {	
+ACTOR	LexiconExplosiveBarrel	 Replaces	ExplosiveBarrel {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	BAR1 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2035	)
-	DDS:
-    BAR1 AB 6
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LExplosiveBarrel", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconMegasphere	 Replaces	Megasphere {	
+ACTOR	LexiconMegasphere	 Replaces	Megasphere {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	MEGA A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	83	)
-	DDS:
-    MEGA ABCD 6 Bright
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+    TNT1 A 0 A_SpawnItemEx("LMegasphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17Megasphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconInvulnerabilitySphere	 Replaces	InvulnerabilitySphere {	
+ACTOR	LexiconInvulnerabilitySphere	 Replaces	InvulnerabilitySphere {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	PINV A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2022	)
-	DDS:
-    PINV ABCD 6 Bright
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 8, "SD6SD7")
+    TNT1 A 0 A_SpawnItemEx("LInvulnerabilitySphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("MayhemInvulnSphere", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	SD6SD7:
+    TNT1 A 0 A_SpawnItemEx("SD20x6A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconBerserk	 Replaces	Berserk {	
+ACTOR	LexiconBerserk	 Replaces	Berserk {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	PSTR A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2023	)
-	DDS:
-    PSTR A 1
-    LOOP
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+    TNT1 A 0 A_SpawnItemEx("LBerserk", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17Berserk", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconRadSuit	 Replaces	RadSuit {	
+ACTOR	LexiconRadSuit	 Replaces	RadSuit {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	SUIT A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2025	)
-	DDS:
-    SUIT A 1 Bright
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LRadSuit", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconAllmap	 Replaces	Allmap {	
+ACTOR	LexiconAllmap	 Replaces	Allmap {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	PMAP A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2026	)
-	DDS:
-    PMAP ABCDCB 6 Bright
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LAllmap", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconInfrared	 Replaces	Infrared {	
+ACTOR	LexiconInfrared	 Replaces	Infrared {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	PVIS A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2045	)
-	DDS:
-    PVIS A 6 Bright
-    PVIS B 6
-    Loop
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 5, "VAL")
+    TNT1 A 0 A_SpawnItemEx("LInfrared", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	VAL:
+    TNT1 A 0 A_SpawnItemEx("ValiantSpiderMastermind", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconRocketAmmo	 Replaces	RocketAmmo {	
+ACTOR	LexiconRocketAmmo	 Replaces	RocketAmmo {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	ROCK A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2010	)
-	DDS:
-    ROCK A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LRocketAmmo", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconRocketBox	 Replaces	RocketBox {	
+ACTOR	LexiconRocketBox	 Replaces	RocketBox {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	BROK A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2046	)
-	DDS:
-    BROK A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LRocketBox", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconCellPack	 Replaces	CellPack {	
+ACTOR	LexiconCellPack	 Replaces	CellPack {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	CELP A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	17	)
-	DDS:
-    CELP A 1
-    LOOP
+	TNT1 A 4
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LCellPack", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A17", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconShellBox	 Replaces	ShellBox {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	SBOX A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2049	)
-	DDS:
-    SBOX A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LShellBox", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconBackpack	 Replaces	Backpack {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	BPAK A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	8	)
-	DDS:
-    BPAK A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBackpack", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconGibbedMarine	 Replaces	GibbedMarine {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	PLAY A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	10	)
-	DDS:
-    PLAY W 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LGibbedMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconGibs	 Replaces	Gibs {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	TNT1 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	24	)
-	DDS:
-    Goto GenericCrush
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LGibs", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconColonGibs	 Replaces	ColonGibs {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	POB1 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	79	)
-	DDS:
-    POB1 A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LColonGibs", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
-ACTOR	LexiconSmallBloodPool	 Replaces	SmallBloodPool {	
+ACTOR	LexiconSmallBloodPool	 Replaces	SmallBloodPool {
++RANDOMIZE		
 	States
 	{
 	Spawn:
-	POB2 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	80	)
-	 DDS:
-    POB2 A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LSmallBloodPool", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconBurningBarrel	 Replaces	BurningBarrel {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	FCAN A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	70	)
-	 DDS:
-    FCAN ABC 4 Bright
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBurningBarrel", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconBrainStem	 Replaces	BrainStem {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	BBRN A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	81	)
-	DDS:
-    BBRN A 1
-    LOOP
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LBrainStem", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconScriptedMarine	 Replaces	ScriptedMarine {	
++RANDOMIZE	
 	States
 	{
 	Spawn:
-	PLAY A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	9100	)
-	 DDS:
-    PLAY A 4
-    PLAY A 4
-    Loop
+	TNT1 A 4
+    TNT1 A 0 A_SpawnItemEx("LScriptedMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 ACTOR	LexiconHealthBonus	 Replaces HealthBonus	{
++RANDOMIZE	
 
 	States
 	{
 	Spawn:
-	BON1 A 0
-	TNT1 A 0 ACS_NamedExecuteAlways	("TIDAssignment",0	,	2014	)
-	DDS:
-	BON1 ABCDCB 6
-	Loop
+	TNT1 A 4
+	
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 3, "MAY")
+	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
+    TNT1 A 0 A_SpawnItemEx("LHealthBonus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	MAY:
+    TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
+	EP1EP2:
+    TNT1 A 0 A_SpawnItemEx("Epic2A31", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL)
+    stop
 	}
 }
 
@@ -858,7 +1188,7 @@ Death:
 BSPI J 20 A_Scream
 BSPI K 7 A_NoBlocking
 BSPI LMNO 7
-BSPI P -1 A_BossDeath
+BSPI P -1 A_KillMaster
 Stop
 Raise:
 BSPI P 5
@@ -971,7 +1301,7 @@ BOSS J 8 A_Scream
 BOSS K 8
 BOSS L 8 A_NoBlocking
 BOSS MN 8
-BOSS O -1 A_BossDeath
+BOSS O -1 A_KillMaster
 Stop
 Raise:
 BOSS O 8
@@ -1142,7 +1472,7 @@ CYBR JKL 10
 CYBR M 10 A_NoBlocking
 CYBR NO 10
 CYBR P 30
-CYBR P -1 A_BossDeath
+CYBR P -1 A_KillMaster
 Stop
 }
 }
@@ -2295,7 +2625,7 @@ Speed 8
 PainChance 80
 Monster
 +FLOORCLIP
-+BOSSDEATH
+//+BOSSDEATH
 SeeSound "fatso/sight"
 PainSound "fatso/pain"
 DeathSound "fatso/death"
@@ -2327,7 +2657,7 @@ FATT K 6
 FATT L 6 A_Scream
 FATT M 6 A_NoBlocking
 FATT NOPQRS 6
-FATT T -1 A_BossDeath
+FATT T -1 A_KillMaster
 Stop
 Raise:
 FATT R 5
@@ -3847,10 +4177,10 @@ ACTOR "Demon Smith" 20316
     Loop
   Missile:
     SSNA EFG 5 A_FaceTarget
-    SSNA H 0 A_CustomMissile("CustomFireShot",28,0,0,1)
-    SSNA H 0 A_CustomMissile("CustomFireShot",28,0,-5.625,1)
-    SSNA H 0 A_CustomMissile("CustomFireShot",28,0,-11.25,1)
-    SSNA H 0 A_CustomMissile("CustomFireShot",28,0,-16.875,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,0,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-5.625,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-11.25,1)
+    SSNA H 0 A_CustomMissile("FireShot",28,0,-16.875,1)
     SSNA H 15 Bright
     Goto See
   Pain:
@@ -3876,7 +4206,7 @@ ACTOR "Demon Smith" 20316
   }
 }
 
-ACTOR CustomFireShot : FatShot
+ACTOR FireShot : FatShot
 {
   Speed 22
   Damage 12

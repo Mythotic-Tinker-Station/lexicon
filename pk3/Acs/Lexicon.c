@@ -20,10 +20,6 @@ strict namespace
         #define MAPSET_SECTIONS_MAX 64
         
         #define PLAYER_MAX 64
-        
-        #define MESSAGE_WELCOME "\c[White]Welcome to the Lexicon\n\n\c[White]-=Alpha version=-\n\n\c[White]Please report any problems you have to our discord via\n\c[Cyan]https://discord.gg/qj9GASW"
-        #define MESSAGE_RETURN "Going back to the lexicon in: "
-        #define MESSAGE_COMPLETE "\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]"
     
     #endif
 

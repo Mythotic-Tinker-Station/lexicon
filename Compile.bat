@@ -1,5 +1,8 @@
 @echo off
 
+
+:Init
+
 set FileName=Lexicon
 set MusFileName=Lexicon-miscdata
 
@@ -129,7 +132,7 @@ goto Finish
 
 :Error2
 echo BCS Error: 
-goto Finish
+goto Init
 
 :Finish
 pause

@@ -26,37 +26,7 @@ strict namespace
         #define MESSAGE_COMPLETE "\c[White]Congratulations!\n\n\c[White]You and your team have completed\n\c[Gold]"
     
     #endif
-    
-    // this is where all the lore messages go
-    str lore[16] =
-    {
-        //switch id         // msg
-        /* 0  */            "Nothing to see here.",
-        /* 1  */            "\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub RigRug on Patreon!",
-        /* 2  */            "\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull wizard named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in the school of runic magic\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious",
-        /* 3  */            "Unused",
-        /* 4  */            "Unused",
-        /* 5  */            "Unused",
-        /* 6  */            "Unused",
-        /* 7  */            "Unused",
-        /* 8  */            "Unused",
-        /* 9  */            "Unused",
-        /* 10 */            "Unused",
-        /* 11 */            "Unused",
-        /* 12 */            "Unused",
-        /* 13 */            "Unused",
-        /* 14 */            "Unused",
-        /* 15 */            "Unused",
-    };    
-    
-    // section names
-    str sectionnames[MAPSET_SECTIONS] =
-    {
-        "\c[Gold](\c[Green]Normal\c[Gold])",
-        "\c[Gold](\c[Red]Slaughter\c[Gold])",
-        "\c[Gold](\c[LightBlue]Single\c[Gold])",
-    };
-    
+
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
     str votenames[MAPSET_MAX+1][2] =
     {
@@ -297,6 +267,10 @@ strict namespace
     };
     struct obj_confetti objs_confetti[128];
     
+        
+    // section names
+    str sectionnames[MAPSET_SECTIONS];
+    
     /////////////////////
     // level
     /////////////////////
@@ -320,7 +294,7 @@ strict namespace
     {
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
-        { 
+        {
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
@@ -389,7 +363,7 @@ strict namespace
                     else    if(clock <= 1 && clock >= 0)   { clockcolor = "\c[Red]";       }
                         
                     // draw clock
-                    hudmessagebold(s:clockcolor, s:MESSAGE_RETURN, i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
+                    hudmessagebold(s:clockcolor, l:"UI_RETURN", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
                     
                      // when time is up
                     if(clock < 0)
@@ -445,16 +419,8 @@ strict namespace
         // do not show the credits stuff in the hub or the titlemap
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP) 
         {
-            // get level credits
-            str credits = strparam(s:"C_", n:PRINTNAME_LEVEL);
-            credits = strparam(l:credits);
+            str credits = GetDynLangEntry("C", strparam(n:PRINTNAME_LEVEL));
             
-            // check if credits listing exists
-            if(strLeft(credits, 2) == "C_")
-            {
-                credits = "Unknown";
-            }
-
             // mapset/mapname/creds
             HudSetup("HUDFONT");
 
@@ -468,14 +434,18 @@ strict namespace
         {
             HudSetup("HUDFONT");
             
-            hudmessagebold(s:MESSAGE_WELCOME; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
-                        
+            hudmessagebold(l:"UI_WELCOME"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
+            
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
-                hudmessagebold(s:MESSAGE_COMPLETE, s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+                hudmessagebold(l:"UI_COMPLETE", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
             }
 
+            // section names
+            sectionnames[0] = strparam(l:"UI_CAT1");
+            sectionnames[1] = strparam(l:"UI_CAT2");
+            sectionnames[2] = strparam(l:"UI_CAT3");
 
             // setup the confetti
             for(int c = 0; c < 64; c++)
@@ -953,12 +923,29 @@ strict namespace
         SetFont(font);
     }
     
-    ////// Easter egg shit because i need the hud vars
-
-    script "Eggs" (int id) clientside
+    // get language.txt entries with a specific format
+    function str getDynLangEntry(str p1, str p2)
     {
+        // get entry
+        str name = strparam(s:p1, s:"_", s:p2);
+        str text = strparam(l:name);
+
+        // check if listing exists
+        if(text == name)
+        {
+            return strparam(s:p1, s:"_", s:"ERR");
+        }
+        return text;
+    }
+    
+    script "RottenEggs" (int id) clientside
+    {
+        // get lore
+        str lore = getDynLangEntry("LORE", strparam(i:id));
+        
+        // display lore
         HudSetup("HUDFONT");
-        hudmessage(s:lore[id]; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
+        hudmessage(s:lore; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
 }
 

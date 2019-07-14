@@ -1,17 +1,50 @@
+
+[default]
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////			  UI Entries			////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+UI_ERR          =   "\c[Red]Error: UI message not found, this is bad, please tell devs.";
+
+UI_WELCOME      =   "\c[White]Welcome to the Lexicon\n\n"
+                    "\c[White]-=Alpha version=-\n\n"
+                    "\c[White]Please report any problems you have to our discord via\n"
+                    "\c[Cyan]https://discord.gg/qj9GASW";
+                    
+UI_RETURN       =   "Going back to the lexicon in: ";
+
+UI_COMPLETE     =   "\c[White]Congratulations!\n\n"
+                    "\c[White]You and your team have completed\n\c[Gold]";
+                    
+UI_CAT1         =   "\c[Gold](\c[Green]Normal\c[Gold])";
+UI_CAT2         =   "\c[Gold](\c[Red]Slaughter\c[Gold])";
+UI_CAT3         =   "\c[Gold](\c[LightBlue]Single\c[Gold])";
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////			Credits Entries			////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
 // How credits work:
 // C_MAPLUMPNAME = "authors here";
 // 
 // So for example:
 // 
-// C_MAP01 = "ID Software";
+// C_MAP01 = "Id Software";
 // 
 // Would print "Credits: ID Software" on MAP01.
 // The ACS Code does the rest for you.
-// If there is not a define here for, say, MAP01, the ACS code will just print "C_MAP01" as the credits, showing that the define doesnt exist.
+// If there is not a define here for, say, MAP01, the ACS code will print the C_ERR entry.
 
 
-[default]
 // Doom 2
+C_ERR = "\c[Red]Error: Credits not found, this is bad, please tell devs.";
 C_MAP01 = "Id Software";
 C_MAP02 = "Id Software";
 C_MAP03 = "Id Software";
@@ -1768,9 +1801,41 @@ C_RDX32	=		"	Supercupcaketactics	"	;
 ////////////////////////////////////////////////////////////////////////////////
 
 //Thrope
+LORE_ERR =      "\c[Red]Error: Lore not found, this is bad, please tell devs.";
 
-LORE_THROPE =	"\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n\c[White]This comic strip he left open is from a comic, though may as well be a manga\n\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n\c[Cyan] It's a good read, be sure to sub RigRug on Patreon!";
+LORE_1 =        "\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n"
+                "\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n"
+                "\c[White]This comic strip he left open is from a comic, though may as well be a manga\n"
+                "\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n"
+                "\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n"
+                "\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n"
+                "\c[Cyan] It's a good read, be sure to sub RigRug on Patreon!";
 
 //Afina and the Archmage lines
-LORE_MAGE1 = 	"\c[Gold]The Painting of Afina\n\n\c[White]--------------------\n\n\c[White]You found a rather mysterious painting. By zapping it with your votegun\n\c[White]you received some knowledge. This is a painting of a very powerfull mage named Afina.\n\c[White]It's rumored she is very beautiful but also a powerfull adept in weilding magic.\n\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious";
-LORE_MAGE2 =	"\c[Gold]Painting of Afina #2\n\n\c[White]--------------------\n\n\c[White]You found another painting of Afina, this time sitting down and reading a book.\n\c[White] You sense the same power that was being emitted from the other painting with this painting. You heard a voice in your head telling you something.\n\c[Gold] Runic magic is the base of all things.\n\c[Gold]Elemental Magic shapes our world that we hold dear to us.\n\c[Gold]Chaos Magic distrupts order\n\c[Gold]Illusion Magic shrouded by shadow\n\c[Gold]Restoration magic is my blood. blood to give life\n\c[Gold]Entropy is my blood. blood to destory all things.";
+LORE_2 =        "\c[Gold]The Painting of Afina\n\n"
+                "\c[White]--------------------\n\n"
+                "\c[White]You found a rather mysterious painting. By zapping it with your votegun\n"
+                "\c[White]you received some knowledge. This is a painting of a very powerfull mage named Afina.\n"
+                "\c[White]It's rumored she is very beautiful but also a powerfull adept in weilding magic.\n"
+                "\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n"
+                "\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious";
+                
+LORE_3 =        "\c[Gold]Painting of Afina #2\n\n"
+                "\c[White]--------------------\n\n"
+                "\c[White]You found another painting of Afina, this time sitting down and reading a book.\n"
+                "\c[White] You sense the same power that was being emitted from the other painting with this painting. You heard a voice in your head telling you something.\n"
+                "\c[Gold] Runic magic is the base of all things.\n"
+                "\c[Gold]Elemental Magic shapes our world that we hold dear to us.\n"
+                "\c[Gold]Chaos Magic distrupts order\n\c[Gold]Illusion Magic shrouded by shadow\n"
+                "\c[Gold]Restoration magic is my blood. blood to give life\n"
+                "\c[Gold]Entropy is my blood. blood to destory all things.";
+
+
+
+
+
+
+
+
+
+

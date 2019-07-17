@@ -110,7 +110,7 @@ strict namespace
         { "New Gothic Movement 2",			"NG201"            }, // 76
         { "SlaughterFest 2013",			    "SF301"            }, // 77
         { "Chillax",			            "CHX01"            }, // 78
-        { "Unused",			                "MAP01"            }, // 79
+        { "Destination Unknown",			"DU101"            }, // 79
         { "Unused",			                "MAP01"            }, // 80
         { "Unused",			                "MAP01"            }, // 81
         { "Unused",			                "MAP01"            }, // 82

@@ -11142,7 +11142,56 @@ Loop
 
 //SKIP 25211
 
+///////////////////
+///// Chillax /////
+///////////////////
 
+Actor CHXBossEye : BossEye 25212 //89
+{
+  Height 32
+  +NOBLOCKMAP
+  +NOSECTOR
+  States
+  {
+  Spawn:
+    MH7V A 10 A_Look
+    Loop
+  See:
+    MH7V A 181 A_PlaySound("chillax/brain/sight", 0, 1, 0, ATTN_NONE)
+    MH7V A 150 A_BrainSpit  // See SpawnShot
+    Wait
+  }
+}
 
-
+Actor CHXBossBrain : BossBrain 25213 //88
+{
+  Health 250
+  Mass 10000000
+  PainChance 255
+  +SOLID
+  +BOSS
+  +SHOOTABLE
+  +NOICEDEATH
+  +OLDRADIUSDMG
+  PainSound "chillax/brain/pain"
+  DeathSound "chillax/brain/death"
+    States
+  {
+  BrainExplode:
+    MISL BC 10 Bright
+    MISL D 10 A_BrainExplode
+    Stop
+  Spawn:
+    BBRN A -1
+    Stop
+  Pain:
+    BBRN B 36 A_PlaySound("chillax/brain/pain", 0, 1, 0, ATTN_NONE)
+    Goto Spawn
+  Death:
+    BBRN A 100 A_PlaySound("chillax/brain/death", 0, 1, 0, ATTN_NONE)
+    BBRN AA 10
+    BBRN A -1 A_BrainDie
+    Stop
+  }
+}
 

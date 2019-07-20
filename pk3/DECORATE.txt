@@ -11189,6 +11189,7 @@ Actor CHXBossBrain : BossBrain 25213 //88
     Goto Spawn
   Death:
     BBRN A 100 A_PlaySound("chillax/brain/death", 0, 1, 0, ATTN_NONE)
+	BBRN A 100 A_BrainExplode
     BBRN AA 10
     BBRN A -1 A_BrainDie
     Stop

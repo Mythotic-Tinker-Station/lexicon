@@ -263,7 +263,6 @@ strict namespace
     };
     struct obj_confetti objs_confetti[128];
     
-        
     // section names
     str sectionnames[MAPSET_SECTIONS];
     
@@ -420,7 +419,7 @@ strict namespace
             // mapset/mapname/creds
             HudSetup("HUDFONT");
 
-            Hudmessage(s:"\c[White]Mapset:\c[Cyan]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"\n\c[White]Level:\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]Credits:\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+            Hudmessage(s:"\c[White]", l:"UI_MAPSET", s:"\c[Cyan]", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"\n\c[White]", l:"UI_MAP", s:"\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]", l:"UI_CREDITS", s:"\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
         }
         
         //////////////////////////
@@ -439,9 +438,9 @@ strict namespace
             }
 
             // section names
-            sectionnames[0] = strparam(l:"UI_CAT1");
-            sectionnames[1] = strparam(l:"UI_CAT2");
-            sectionnames[2] = strparam(l:"UI_CAT3");
+            sectionnames[0] = strparam(s:"\c[Gold](\c[Green]", l:"UI_CAT1", s:"\c[Gold])");
+            sectionnames[1] = strparam(s:"\c[Gold](\c[Red]", l:"UI_CAT2", s:"\c[Gold])");
+            sectionnames[2] = strparam(s:"\c[Gold](\c[LightBlue]", l:"UI_CAT3", s:"\c[Gold])");
 
             // setup the confetti
             for(int c = 0; c < 64; c++)
@@ -464,6 +463,8 @@ strict namespace
             }
         }
         
+        
+        
         ///////////////
         // The Loop
         ///////////////
@@ -476,7 +477,7 @@ strict namespace
             //////////////////////////
             if(GetCVar("lexicon_debug_mode") == 1)
             {
-                hudmessage(s:"\c[Gold]debug mode:", s:" I:", i:GetCVar("lexicon_global_instakiller"), s:" G:", i:GetCVar("lexicon_global_godmode"); 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
+                hudmessage(s:"\c[Gold]", l:"UI_DEBUG", s:" I:", i:GetCVar("lexicon_global_instakiller"), s:" G:", i:GetCVar("lexicon_global_godmode"); 0, 9600, 0, hud_width - 160.0, hud_height - 151.0, 0.1);
             }
 
             //////////////////////////
@@ -488,26 +489,17 @@ strict namespace
                 // COUNTDOWN
                 if(state == STATE_COUNTDOWN)
                 {
-                    // timer
-                    if(time_seconds > GetCvar("lexicon_timer_yellow"))
-                    {
-                        hudmessagebold(s:"\c[Green]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                    }
-                    else if(time_seconds <= GetCvar("lexicon_timer_yellow") && time_seconds > GetCvar("lexicon_timer_orange"))
-                    {
-                        hudmessagebold(s:"\c[Yellow]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                    }
-                    else if(time_seconds <= GetCvar("lexicon_timer_orange") && time_seconds > GetCvar("lexicon_timer_red"))
-                    {
-                        hudmessagebold(s:"\c[Orange]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                    }
-                    else if(time_seconds <= GetCvar("lexicon_timer_red"))
-                    {
-                        hudmessagebold(s:"\c[Red]", s:"Time Left: ", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                    }
-
+                    // time colors
+                            if(time_seconds > GetCvar("lexicon_timer_yellow")) { clockcolor = "\c[Green]"; }
+                    else    if(time_seconds <= GetCvar("lexicon_timer_yellow") && time_seconds > GetCvar("lexicon_timer_orange")) { clockcolor = "\c[Yellow]"; }
+                    else    if(time_seconds <= GetCvar("lexicon_timer_orange") && time_seconds > GetCvar("lexicon_timer_red")) { clockcolor = "\c[Orange]"; }
+                    else    if(time_seconds <= GetCvar("lexicon_timer_red")) { clockcolor = "\c[Red]"; }
+                    
+                    // time left
+                    hudmessagebold(s:clockcolor, l:"UI_TIMELEFT", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
+                    
                     // vote header
-                    hudmessagebold(s:"\c[Cyan]Votes"; 0, 9999, 0, 192.1, 136.0, 0.1);
+                    hudmessagebold(s:"\c[Cyan]", l:"UI_VOTES"; 0, 9999, 0, 192.1, 136.0, 0.1);
 
                     // vote list
                     fixed y = 136.0;
@@ -535,7 +527,7 @@ strict namespace
                     if(players[playernumber()] != -1)
                     {
                         // show player's vote
-                        hudmessagebold(s:"\c[Green]Your Vote: \c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
+                        hudmessagebold(s:"\c[Green]", l:"UI_YOURVOTE", s:"\c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
                     }
                 }
                 
@@ -543,7 +535,7 @@ strict namespace
                 else if(state == STATE_RESULTS)
                 {
                     setfont("hudfont");
-                    hudmessagebold(s:"\c[Green]", s:"Winner: \c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
+                    hudmessagebold(s:"\c[Green]", l:"UI_WINNER", s:"\c[Gold]", s:votenames[GetCVar("lexicon_global_votechosen")][0]; 0, 9998, 0, hud_width_half, hud_height_half-128.0, 0.1);
 
                     // confetti :D
                     for(int c = 0; c < 128; c++)

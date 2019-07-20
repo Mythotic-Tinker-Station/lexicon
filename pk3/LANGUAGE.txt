@@ -1,7 +1,5 @@
 
 [default]
-
-
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////			  UI Entries			////////////////////////////
@@ -20,10 +18,17 @@ UI_RETURN       =   "Going back to the lexicon in: ";
 UI_COMPLETE     =   "\c[White]Congratulations!\n\n"
                     "\c[White]You and your team have completed\n\c[Gold]";
                     
-UI_CAT1         =   "\c[Gold](\c[Green]Normal\c[Gold])";
-UI_CAT2         =   "\c[Gold](\c[Red]Slaughter\c[Gold])";
-UI_CAT3         =   "\c[Gold](\c[LightBlue]Single\c[Gold])";
-
+UI_CAT1         =   "Normal";
+UI_CAT2         =   "Slaughter";
+UI_CAT3         =   "Single";
+UI_MAPSET       =   "Mapset: ";
+UI_MAP          =   "Map: ";
+UI_CREDITS      =   "Credits: ";
+UI_DEBUG        =   "Debug Mode: ";
+UI_TIMELEFT     =   "Time Left: ";
+UI_VOTES        =   "Votes: ";
+UI_YOURVOTE     =   "Your Vote: ";
+UI_WINNER       =   "Winner: ";
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

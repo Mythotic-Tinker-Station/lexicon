@@ -9104,6 +9104,7 @@ ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
 	States
 	{
 	Spawn:
+	//TNT1 A 0 ACS_NamedExecute("ValBoss",0)
 		AAAP NO 10 Bright A_LOOK
 		Loop
 	See:
@@ -9114,21 +9115,21 @@ ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
 		AAAQ A 0 Bright A_VILESTART
 		AAAQ A 10 Bright A_FACETARGET
 		AAAQ B 8 Bright A_VILETARGET
-		AAAQ C 6 Bright A_FACETARGET
-		AAAQ D 6 Bright A_FACETARGET
-		AAAQ E 6 Bright A_FACETARGET
-		AAAQ C 6 Bright A_FACETARGET
-		AAAQ D 6 Bright A_FACETARGET
-		AAAQ E 6 Bright A_FACETARGET
-		AAAQ C 6 Bright A_FACETARGET
-		AAAQ D 6 Bright A_FACETARGET
-		AAAQ E 6 Bright A_FACETARGET
-		AAAQ C 6 Bright A_FACETARGET
-		AAAQ D 6 Bright A_FACETARGET
-		AAAQ E 6 Bright A_FACETARGET
-		AAAQ C 6 Bright A_FACETARGET
-		AAAQ D 6 Bright A_FACETARGET
-		AAAQ E 6 Bright A_FACETARGET
+		AAAQ C 6 Bright A_VILETARGET
+		AAAQ D 6 Bright A_VILETARGET
+		AAAQ E 6 Bright A_VileAttack
+		AAAQ C 6 Bright A_VILETARGET
+		AAAQ D 6 Bright A_VILETARGET
+		AAAQ E 6 Bright A_VileAttack
+		AAAQ C 6 Bright A_VILETARGET
+		AAAQ D 6 Bright A_VILETARGET
+		AAAQ E 6 Bright A_VileAttack
+		AAAQ C 6 Bright A_VILETARGET
+		AAAQ D 6 Bright A_VILETARGET
+		AAAQ E 6 Bright A_VileAttack
+		AAAQ C 6 Bright A_VILETARGET
+		AAAQ D 6 Bright A_VILETARGET
+		AAAQ E 6 Bright A_VileAttack
 		AAAQ CCDEE 8 Bright
 		Goto See
 	Heal:

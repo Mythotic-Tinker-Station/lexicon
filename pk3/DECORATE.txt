@@ -9146,7 +9146,7 @@ ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
 		AAAQ I 7
 		AAAQ J 7 A_FALL
 		AAAQ KLM 7
-		AAAQ N 7 A_DIE
+		AAAQ N 7 A_BRAINDIE
 		AAAQ O -1
 		Stop
 	}

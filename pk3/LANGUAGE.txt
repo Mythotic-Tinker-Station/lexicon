@@ -13,7 +13,6 @@ UI_WELCOME      =   "\c[White]Welcome to the Lexicon\n\n"
                     "\c[White]Please report any problems you have to our discord via\n"
                     "\c[Cyan]https://discord.gg/qj9GASW";
                     
-UI_RETURN       =   "Going back to the lexicon in: ";
 
 UI_COMPLETE     =   "\c[White]Congratulations!\n\n"
                     "\c[White]You and your team have completed\n\c[Gold]";
@@ -29,6 +28,7 @@ UI_TIMELEFT     =   "Time Left: ";
 UI_VOTES        =   "Votes: ";
 UI_YOURVOTE     =   "Your Vote: ";
 UI_WINNER       =   "Winner: ";
+UI_RETURN       =   "Going back to the lexicon in: ";
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

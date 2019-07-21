@@ -381,6 +381,7 @@ strict namespace
         // we have entered the VR map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
         { 
+            
             // setup player's array slot
             int pnum = playernumber();
             players[pnum] = -1;
@@ -652,6 +653,8 @@ strict namespace
         {
             SetCVar("lexicon_global_godmode", 0);
             SetCVar("lexicon_global_instakiller", 0);
+            TakeActorInventory(0, "Lexicon_GodMode", 999);
+            TakeActorInventory(0, "Lexicon_InstaKiller", 999);
         }
         if(GetCVar("lexicon_global_godmode") == 1)
         {

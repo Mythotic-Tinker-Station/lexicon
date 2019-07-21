@@ -6398,15 +6398,15 @@ Tag "$TAG_PLASMARIFLE"
     AAAY B 1
     Stop
   Pickup:
-  TNT1 A 0 A_JumpIfInventory("LPlasmaRifle", 1, "HasAmmo")
-  TNT1 A 0 A_GiveInventory("LPlasmaRifle")
+  TNT1 A 0 A_JumpIfInventory("PlasmaRifle", 1, "HasAmmo")
+  TNT1 A 0 A_GiveInventory("PlasmaRifle")
   HasAmmo:
   TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
   TNT1 A 0
   TNT1 A 0 A_JumpIfInventory("Cell", 300, 2)
   TNT1 A 0
   TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
-  TNT1 A 0 A_GiveInventory("LPlasmaRifle")
+  TNT1 A 0 A_GiveInventory("PlasmaRifle")
   TNT1 A 0 A_GiveInventory("Cell",40)
   Stop
   }
@@ -6424,15 +6424,15 @@ ACTOR Epic2A8 : CustomInventory 25112//RL 29
     AAAY C -1
     Stop
   Pickup:
-  TNT1 A 0 A_JumpIfInventory("LRocketLauncher", 1, "HasAmmo")
-  TNT1 A 0 A_GiveInventory("LRocketLauncher")
+  TNT1 A 0 A_JumpIfInventory("RocketLauncher", 1, "HasAmmo")
+  TNT1 A 0 A_GiveInventory("RocketLauncher")
   HasAmmo:
   TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
   TNT1 A 0
   TNT1 A 0 A_JumpIfInventory("RocketAmmo", 50, 2)
   TNT1 A 0
   TNT1 A 0 A_JumpIfInventory("RocketAmmo", 100, "Spawn")
-  TNT1 A 0 A_GiveInventory("LRocketLauncher")
+  TNT1 A 0 A_GiveInventory("RocketLauncher")
   TNT1 A 0 A_GiveInventory("RocketAmmo",2)
   Stop
   }

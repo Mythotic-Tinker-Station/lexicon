@@ -767,8 +767,8 @@ strict namespace
         time_ticks--;
         time_seconds = time_ticks/35;
 
-        // if time up, or all players voted, or majority have voted
-        if(time_ticks <= 0) // votecount >= playercount() || votessorted[0][0] > (playercount()/3)*2)
+        // if times up, or all players voted
+        if(time_ticks <= 0 || (GetCvar("lexicon_timer_all_players") == 1 && votecount >= playercount()))
         { 
             // set the system to the check tie state
             state = STATE_CHECKTIE;

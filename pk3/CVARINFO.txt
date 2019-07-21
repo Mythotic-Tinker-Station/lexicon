@@ -7,8 +7,8 @@ server int lexicon_timer_reset = 10;        // lexicon reset timer(when no playe
 server int lexicon_timer_reset_enabled = 1; // lexicon reset timer toggle
 server int lexicon_timer_1p_ignore = 1;     // if true, the voting system will ignore timer if only 1 player is playing
 server int lexicon_clear_inventory = 0;     // if true, clear inventory when entering VR and when change map from VR
-server int lexicon_timer_all_players = 1;   // if true, the vote timer will stop and a winner will be chosen if all players have cast their vote
-
+server int lexicon_timer_all_players = 1;   // if 1, the vote timer will stop and a winner will be chosen if all players have cast their vote
+                                            
 // used as global vars
 server noarchive int lexicon_global_godmode = 0;
 server noarchive int lexicon_global_instakiller = 0;

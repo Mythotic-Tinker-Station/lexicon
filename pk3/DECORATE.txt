@@ -5057,6 +5057,8 @@ ACTOR DVActor4 : TallRedColumn 25067//32
 
 ACTOR DVActor5 : ShortRedColumn 25068//33
 {
+	-SOLID
+	Radius 2
 	States
 	{
 	Spawn:
@@ -5119,7 +5121,7 @@ ACTOR DVActor10 : NonsolidMeat5 25149//62
 
 ACTOR DVActor11 : HeadOnAStick 25148//27
 {
-	Radius 48
+	Radius 32
 	Height 256
 	States
 	{

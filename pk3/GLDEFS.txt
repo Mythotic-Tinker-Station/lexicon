@@ -1,9 +1,75 @@
-// ----------------
-// -- Doom Items --
-// ----------------
+// --------------------
+// -- Combat Shock 2 --
+// --------------------
+
+// Zombieman
+object CS2ZombieMan
+{
+    frame CS2ZF { light ZOMBIEATK }
+}
+
+// Shotgun Guy
+object CS2ShotgunGuy
+{
+    frame CS2SF { light ZOMBIEATK }
+}
+
+// Chaingun Guy
+object CS2ChaingunGuy
+{
+    frame CS2CE { light ZOMBIEATK }
+    frame CS2CF { light ZOMBIEATK }
+}
+
+// ------------
+// -- Epic 2 --
+// ------------
+
+// Zombieman
+object Epic1A8
+{
+    frame AAAUF { light ZOMBIEATK }
+}
+
+// Shotgun Guy
+object Epic1A11
+{
+    frame AAAXF { light ZOMBIEATK }
+}
+
+// Chaingun Guy
+object Epic1A9
+{
+    frame AAAVE { light ZOMBIEATK }
+    frame AAAVF { light ZOMBIEATK }
+}
+
+// Explosive Barrel
+object Epic2A24
+{
+    frame AAAZC { light ROCKET_X1 }
+    frame AAAZD { light ROCKET_X2 }
+    frame AAAZE { light ROCKET_X3 }
+}
+
+// Health Potion
+object Epic2A31
+{
+    frame AABA { light HEALTHPOTION }
+}
+
+// Armour Helmet
+object Epic2A32
+{
+    frame AABA { light ARMORBONUS }
+}
+
+// ---------------
+// -- Mayhem 17 --
+// ---------------
 
 // Soul Sphere
-pulselight SOULSPHERE
+pulselight MAYHEMSOULSPHERE
 {
     color 0.8 0.5 0.5
     size 40
@@ -14,93 +80,32 @@ pulselight SOULSPHERE
 
 object Mayhem17Soulsphere
 {
-    frame 17UL { light SOULSPHERE }
-}
-
-// Invulnerability Sphere
-pulselight INVULN
-{
-    color 1.0 1.0 0.5
-    size 40
-    secondarySize 42
-    interval 2.0
-    offset 0 16 0
-}
-
-object MayhemInvulnSphere
-{
-    frame 17NV { light INVULN }
-}
-
-// Blur Sphere
-pointlight BLURSPHERE1
-{
-    color 0.5 0.5 0.5
-    size 40
-    offset 0 16 0
-}
-
-pointlight BLURSPHERE2
-{
-    color 0.5 0.5 0.5
-    size 32
-    offset 0 16 0
-}
-
-pointlight BLURSPHERE3
-{
-    color 0.5 0.5 0.5
-    size 24
-    offset 0 16 0
-}
-
-pointlight BLURSPHERE4
-{
-    color 0.5 0.5 0.5
-    size 16
-    offset 0 16 0
-}
-
-pointlight BLURSPHERE5
-{
-    color 0.5 0.5 0.5
-    size 8
-    offset 0 16 0
-}
-
-object Mayhem17BlurSphere
-{
-    frame 17NS { light BLURSPHERE1 }
-
-    frame 17NSA { light BLURSPHERE2 }
-    frame 17NSB { light BLURSPHERE3 }
-    frame 17NSC { light BLURSPHERE4 }
-    frame 17NSD { light BLURSPHERE5 }
+    frame 17UL { light MAYHEMSOULSPHERE }
 }
 
 // Mega Sphere
-pointlight MEGASPHERE1
+pointlight MAYHEMMEGASPHERE1
 {
     color 0.7 0.7 0.2
     size 40
     offset 0 16 0
 }
 
-pointlight MEGASPHERE2
+pointlight MAYHEMMEGASPHERE2
 {
     color 0.7 0.7 0.2
     size 32
     offset 0 16 0
 }
 
-pointlight MEGASPHERE3
+pointlight MAYHEMMEGASPHERE3
 {
     color 0.7 0.7 0.2
     size 24
     offset 0 16 0
 }
 
-pointlight MEGASPHERE4
+pointlight MAYHEMMEGASPHERE4
 {
     color 0.7 0.7 0.2
     size 16
@@ -109,13 +114,262 @@ pointlight MEGASPHERE4
 
 object Mayhem17Megasphere
 {
-    frame 17GAA0 { light MEGASPHERE1 }
+    frame 17GAA0 { light MAYHEMMEGASPHERE1 }
 
-    frame 17GAB0 { light MEGASPHERE2 }
-    frame 17GAC0 { light MEGASPHERE3 }
-    frame 17GAD0 { light MEGASPHERE4 }
+    frame 17GAB0 { light MAYHEMMEGASPHERE2 }
+    frame 17GAC0 { light MAYHEMMEGASPHERE3 }
+    frame 17GAD0 { light MAYHEMMEGASPHERE4 }
 }
 
+// Health Bonus
+object Mayhem17HealthBonus
+{
+    frame 17N1 { light HEALTHPOTION }
+}
+
+// Armor Bonus
+object Mayhem17ArmorBonus
+{
+    frame 17N2 { light ARMORBONUS }
+}
+
+// Green Armor
+object Mayhem17GreenArmor
+{
+    frame 7RM1A { light GREENARMOR1 }
+    frame 7RM1B { light GREENARMOR2 }
+}
+
+// Red Armor
+object Mayhem17BlueArmor
+{
+    frame 7RM2A { light BLUEARMOR1 }
+    frame 7RM2B { light BLUEARMOR2 }
+}
+
+// Blue Key
+object Mayhem17BlueKey
+{
+    frame 7SKU { light HEALTHPOTION }
+}
+
+// Red Key
+object Mayhem17RedKey
+{
+    frame 7RKU { light REDKEY }
+}
+
+// Yellow Key
+object Mayhem17YellowKey
+{
+    frame 7YKU { light YELLOWKEY }
+}
+
+// Red Coin
+object Mayhem17RedCoin
+{
+    frame MAYY { light REDKEY }
+}
+
+// -------------
+// -- Sunlust --
+// -------------
+
+// Explosive Barrel
+object SunlustExplosiveBarrel
+{
+    frame SLXPC { light ROCKET_X1 }
+    frame SLXPD { light ROCKET_X2 }
+    frame SLXPE { light ROCKET_X3 }
+}
+
+// -------------
+// -- Valiant --
+// -------------
+
+// Super Imp Ball
+flickerlight VALIANTIMPBALL
+{
+    color 1.0 0.7 0.0
+    size 40
+    secondarySize 48
+    chance 0.5
+}
+
+flickerlight VALIANTIMPBALL_X1
+{
+    color 0.8 0.6 0.0
+    size 56
+    secondarySize 64
+    chance 0.3
+}
+
+flickerlight VALIANTIMPBALL_X2
+{
+    color 0.6 0.2 0.0
+    size 40
+    secondarySize 48
+    chance 0.3
+}
+
+flickerlight VALIANTIMPBALL_X3
+{
+    color 0.4 0.1 0.0
+    size 32
+    secondarySize 40
+    chance 0.3
+}
+
+object ValiantImpBall
+{
+    frame AAAGA { light VALIANTIMPBALL }
+    frame AAAGB { light VALIANTIMPBALL }
+
+    frame AAAGC { light VALIANTIMPBALL_X1 }
+    frame AAAGD { light VALIANTIMPBALL_X2 }
+    frame AAAGE { light VALIANTIMPBALL_X3 }
+}
+
+// Valiant Plasma
+pointlight VALIANTPLASMABALL
+{
+    color 1.0 0.1 0.1
+    size 56
+}
+
+flickerlight VALIANTPLASMA_X1
+{
+    color 1.0 0.2 0.2
+    size 64
+    secondarySize 72
+    chance 0.4
+}
+
+flickerlight VALIANTPLASMA_X2
+{
+    color 0.8 0.2 0.2
+    size 80
+    secondarySize 88
+    chance 0.4
+}
+
+flickerlight VALIANTPLASMA_X3
+{
+    color 0.5 0.1 0.1
+    size 64
+    secondarySize 72
+    chance 0.4
+}
+
+flickerlight VALIANTPLASMA_X4
+{
+    color 0.2 0.0 0.0
+    size 8
+    secondarySize 16
+    chance 0.4
+}
+
+object ValiantPlamsa
+{
+    frame AAASK { light VALIANTPLASMABALL }
+    frame AAASL { light VALIANTPLASMABALL }
+
+    frame AAASM { light VALIANTPLASMA_X1 }
+    frame AAASN { light VALIANTPLASMA_X2 }
+    frame AAASO { light VALIANTPLASMA_X2 }
+    frame AAASP { light VALIANTPLASMA_X3 }
+    frame AAASQ { light VALIANTPLASMA_X4 }
+}
+
+// Valiant Baron Ball
+flickerlight VALIANTBARONBALL
+{
+    color 1.0 0.7 0.0
+    size 48
+    secondarySize 56
+    chance 0.5
+}
+
+flickerlight VALIANTBARONBALL_X1
+{
+    color 0.9 0.4 0.0
+    size 56
+    secondarySize 64
+    chance 0.5
+}
+
+flickerlight VALIANTBARONBALL_X2
+{
+    color 0.7 0.1 0.0
+    size 48
+    secondarySize 56
+    chance 0.5
+}
+
+flickerlight VALIANTBARONBALL_X3
+{
+    color 0.2 0.0 0.0
+    size 32
+    secondarySize 40
+    chance 0.5
+}
+
+object ValiantBaronBall
+{
+    frame AAAPI { light VALIANTBARONBALL }
+    frame AAAPJ { light VALIANTBARONBALL }
+
+    frame AAAPK { light VALIANTBARONBALL_X1 }
+    frame AAAPL { light VALIANTBARONBALL_X2 }
+    frame AAAPM { light VALIANTBARONBALL_X3 }
+}
+
+// Suicide Bomber
+pointlight SuicideBomberDeath1
+{
+    color 1.0 0.4 0.0
+    size 35
+}
+
+pointlight SuicideBomberDeath2
+{
+    color 0.6 0.3 0.0
+    size 40
+}
+
+pointlight SuicideBomberDeath3
+{
+    color 0.3 0.1 0.0
+    size 35
+}
+
+object SuicideBomber
+{
+    frame AAAPA { light SuicideBomberDeath1 }
+    frame AAAPB { light SuicideBomberDeath2 }
+    frame AAAPC { light SuicideBomberDeath3 }
+}
+
+// Valiant Lost Soul
+object ValiantLostSoul
+{
+    frame AAASA { light LOSTSOUL    }
+    frame AAASB { light LOSTSOUL    }
+    frame AAASC { light LOSTSOUL    }
+    frame AAASD { light LOSTSOUL    }
+    frame AAASE { light LOSTSOUL    }
+    frame AAASF { light LOSTSOUL    }
+    frame AAASG { light LOSTSOUL    }
+
+    frame AAASH { light LOSTSOUL_X1 }
+    frame AAASI { light LOSTSOUL_X2 }
+    frame AAASJ { light LOSTSOUL_X3 }
+    frame AAASK { light LOSTSOUL_X4 }
+}
+
+// -------------
+// -- Lexicon --
+// -------------
 
 pulselight TitleMapLexiconLight1
 {

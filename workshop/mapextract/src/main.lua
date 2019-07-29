@@ -28,7 +28,7 @@ function love.load(arg)
         local lumps = wadreader:load(wads[w].path_full)
 
         for l = 1, #lumps do
-            if lumps[l].format == "MapDoom" then
+            if lumps[l].format == "MapDoom" or lumps[l].format == "MapHexen" or lumps[l].format == "MapUDMF" then
                 
                 local data = streamwriter(wads[w].path .. "Maps/" .. lumps[l].name .. ".wad")
                 

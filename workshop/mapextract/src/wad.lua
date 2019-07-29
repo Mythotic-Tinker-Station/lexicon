@@ -135,13 +135,18 @@ function __wad:load(path)
             if label + i >= lumpamount then goto mapdone end
             
             ::mapdone::
-            if data[label + i].name == "BEHAVIOR"  then 
+            if data[label + i].name == "BEHAVIOR"  then
+                i = i + 1
                 data[label].format = "MapHexen"
                 hexencount = hexencount + 1
+                if label + i >= lumpamount then goto mapdone2 end
+                if data[label + i].name ~= "SCRIPTS"  then             else i = i + 1 end
             else
                 data[label].format = "MapDoom"
                 doomcount = doomcount + 1
             end
+            
+            ::mapdone2::
             mapcount = mapcount + 1
             data[label].size = i
         end
@@ -154,7 +159,7 @@ function __wad:load(path)
                     udmfcount = udmfcount + 1
                     mapcount = mapcount + 1
                     data[l-1].format = "MapUDMF"
-                    data[l-1].size = ml-l
+                    data[l-1].size = ml-l+2
                     goto next
                 end
             end

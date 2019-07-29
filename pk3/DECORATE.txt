@@ -8217,3 +8217,46 @@ Actor CHXBossBrain : BossBrain 25213 //88
   }
 }
 
+///////////New Deus Vult Barrel
+//Would rather take explosive barrel default damage and multiply it by 160, but I don't know it and can't find it anywhere so instead A_Explode is called 160 times.
+//Yes 160 barrels are stacked onto eachother in the map :/
+ACTOR ExplosiveBarrel 25214
+{
+	Game Doom
+	SpawnID 125
+	Health 20
+	Radius 10
+	Height 42
+	+SOLID
+	+SHOOTABLE
+	+NOBLOOD
+	+ACTIVATEMCROSS
+	+DONTGIB
+	+NOICEDEATH
+	+OLDRADIUSDMG
+	DeathSound "world/barrelx"
+	Obituary "$OB_BARREL"
+	States
+	{
+	Spawn:
+		BAR1 AB 6
+		Loop
+	Death:
+		BEXP A 5 BRIGHT
+		BEXP B 5 BRIGHT A_Scream
+		BEXP C 5 BRIGHT
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		TNT1 AAAAAAAAAAAAAAAAAAAA 0 A_Explode
+		BEXP D 5 BRIGHT
+		BEXP E 10 BRIGHT
+		TNT1 A 1050 BRIGHT A_BarrelDestroy
+		TNT1 A 5 A_Respawn
+		Wait
+	}
+}

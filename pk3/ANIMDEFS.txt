@@ -4161,7 +4161,6 @@ Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
 Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
 Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
 Texture	Optional	LAVFALL1	Range	LAVFALL4	Tics 8
-Texture	Optional	LFALL1  	Range	LFALL4  	Tics 8
 Texture	Optional	GRYFALL1	Range	GRYFALL4	Tics 8
 Texture	Optional	QSLIPP1 	Range	QSLIPP7 	Tics 8
 
@@ -5017,7 +5016,6 @@ Texture	Optional	SFALL1  	Range	SFALL4  	Tics 8
 Texture	Optional	WFALL1  	Range	WFALL4  	Tics 8
 Texture	Optional	DBRAIN1 	Range	DBRAIN4 	Tics 8
 Texture	Optional	LAVFALL1	Range	LAVFALL4	Tics 8
-Texture	Optional	LFALL1  	Range	LFALL4  	Tics 8
 Texture	Optional	QMTLSW1 	Range	QMTLSW4 	Tics 8
 Texture	Optional	QBUTA1  	Range	QBUTA3  	Tics 8
 Texture	Optional	COMPFUZ1	Range	COMPFUZ4	Tics 5
@@ -5149,7 +5147,7 @@ warp flat RROCK98
 warp flat RROCK99
 warp flat DAVASTKW
 
-texture lfall1
+texture LFALL_N1
 
 pic 1 tics 5
 pic 2 tics 5

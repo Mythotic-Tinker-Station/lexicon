@@ -8220,22 +8220,8 @@ Actor CHXBossBrain : BossBrain 25213 //88
 ///////////New Deus Vult Barrel
 
 //Yes 160 barrels are stacked onto eachother in the map :/. The explode parameter is set to reflect 160 barrels detonating at once.
-ACTOR DeusVultExplosiveBarrel 25214
+ACTOR DeusVultExplosiveBarrel : ExplosiveBarrel 25214
 {
-	Game Doom
-	SpawnID 125
-	Health 20
-	Radius 10
-	Height 42
-	+SOLID
-	+SHOOTABLE
-	+NOBLOOD
-	+ACTIVATEMCROSS
-	+DONTGIB
-	+NOICEDEATH
-	+OLDRADIUSDMG
-	DeathSound "world/barrelx"
-	Obituary "$OB_BARREL"
 	States
 	{
 	Spawn:

@@ -11,6 +11,7 @@ It will also contain a hub map where players can vote on the mapset to play on.
 ## What mapsets are in there so far?
 So far, the mapsets included are:
 
+- Ancient Aliens
 - Alien Vendetta
 - Combat Shock 1 and 2
 - Hell Revealed 1 and 2
@@ -43,6 +44,32 @@ So far, the mapsets included are:
 - 1994 Tune up Community Project
 - Unholy Realms
 - Hellcore 2.0
+- Valiant
+- Epic 1
+- Epic 2
+- Nova
+- Community Chest 1
+- Community Chest 2
+- Community Chest 3
+- Community Chest 4
+- Stardate 20x6
+- Stardate 20x7
+- Swim With The Whales
+- Congestion 1024
+- Clausterphobia
+- Clausterphobia 2
+- Chainworm
+- Back to Saturn X - EP1
+- Zones Of Fear
+- Zone 300
+- Interception
+- Doom 2 Redux
+- Deus Vult II
+- SlaughterFest 2012
+- New Gothic Movement 2
+- SlaughterFest 2013
+- Chillax
+- Destination Unknown
 
 We also started to add single map wads. So far, these are included:
 
@@ -67,17 +94,64 @@ You are however free to upload your own compiled build as a private wad.
 Feel free to use the tracker on here. You can also join our discord at https://discord.gg/qj9GASW
 
 ## Credits
-- MiFU for doing most of the compile work, its a pain in the ass.
-- K0RPSE for also assisting with the compile work, its still a pain in the ass though.
-- Shaewn for assisting with various issues. He should compile more shit though but thats just me.
-- Tribeam for scripting, effects, VR texturing.
-- Fiendzy vr map design.
-- Michaelis for adding more playerstarts to maps.
-- Our testers (Kenopath, Blushberry)
-- Various map authors for the fun maps that are included in this pack. I'll get a detailed list later. FYI, none of the maps have changed, just map names and texture renames to ensure nothing conflicts and more playerstarts to better support for multiplayer
-- Sega for the Sonic hud font, HD version and extra chars made by Tribeam.
-- Skulltag for the railgun sprites used for the InstaKiller
-- Guilty Gear for the hub music
-- Corgiatom for the hub music
-- Willo for some of the artwork included in the HUB map
-- and YOU, for playing the damn thing. Cant do it without YOU
+
+### Project Lead
+- MiFU
+
+### Wad Compiling (the pain in the ass job)
+- K0RPSE
+- Hell Pike
+- MiFU
+
+### Scripting
+- Tribeam
+- Hell Pike
+
+### Artwork
+- Rigrug (Willo)
+
+### Other GFX
+- Hell Pike
+- TheMisterCat
+- BugsBunny205
+- Killerkouhai
+- Sega
+- Skulltag (lol)
+- Tribeam
+- Nintendo
+
+### VR Map Design
+- Fiendzy
+
+### Map Fixes
+- Michaelis
+- Penguin
+
+### Testers
+- Fiendzy
+- Kunai Kitsune
+- Fookerton
+- Gosimer
+- Kenopath
+- Blushberry
+- SyKoTiC
+- BugsBunny205
+- The people who are mad enough to play this :D
+
+### Various issues
+- Shaewn
+- Clint
+
+### Emotional Support :D
+- ayashi
+
+### Music
+- CorgiAtom
+- Capcom (Guilty Gear ost)
+- Maktone
+- MrDeath
+- Quzar of Sanxion
+- Deathman27
+
+
+**Note** - These credits are cut down. More detailed version appears ingame and in the LCREDITS texture in the textures/lexicon folder

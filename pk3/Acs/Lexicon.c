@@ -287,18 +287,6 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
-        // if level is the HUB map
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
-        {
-            // we have come back from a completed mapset
-            if(GetCVar("lexicon_global_sucktime") == 1337)
-            {
-                // woo! fireworks! yay!
-                ACS_NamedExecute("Fireworks", 0);
-            }
-            terminate;
-        }
-        
         // if the level is anything but the HUB map
         else
         {
@@ -436,6 +424,7 @@ strict namespace
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
                 hudmessagebold(l:"UI_COMPLETE", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
+                ACS_NamedExecute("Fireworks", 0);
             }
 
             // section names

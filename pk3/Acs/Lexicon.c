@@ -287,6 +287,11 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
+        // if level is the HUB map
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
+        {
+            terminate;
+        }
         // if the level is anything but the HUB map
         else
         {

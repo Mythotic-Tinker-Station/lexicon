@@ -436,6 +436,8 @@ actor HeckCubeGlow
 {
     +NOGRAVITY
     +NOBLOCKMAP
+    +NOINTERACTION
+    +CLIENTSIDEONLY
     RenderStyle Add
     Alpha 0.6
     +BRIGHT
@@ -444,7 +446,7 @@ actor HeckCubeGlow
     {
         Spawn:
             TNT1 A 0
-            HECK C 5 A_Warp (AAPTR_Master, 0, 0, 0, 0, WARPF_NOCHECKPOSITION | WARPF_COPYINTERPOLATION )
+            HECK C 5 A_Warp (AAPTR_Master, 0, 0, 0, 0, WARPF_NOCHECKPOSITION | WARPF_COPYINTERPOLATION)
         Death:
             TNT1 A 0
             Stop
@@ -457,7 +459,6 @@ actor HeckCube : SwitchableDecoration 16666
     +SOLID
     +USESPECIAL
     +ISMONSTER
-    +FLOATBOB
     Radius 16
     Height 32
     Activation ThingSpec_Switch
@@ -471,7 +472,7 @@ actor HeckCube : SwitchableDecoration 16666
         HECK A 1 A_RemoveChildren(true)
         Goto Spawn
         Active:
-        HECK A 1 A_SpawnItemEx("HeckCubeGlow",0,0,0,0,0,0,0,SXF_TRANSFERPITCH|SXF_SETMASTER|SXF_NOCHECKPOSITION )
+        HECK A 1 A_SpawnItemEx("HeckCubeGlow",0,0,0,0,0,0,0,SXF_TRANSFERPITCH|SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_CLIENTSIDE)
         Loop
     }
 }

@@ -131,6 +131,7 @@ map SD709 lookup "Do You Believe?"
 	EnterPic = "SD7LV34"
 	music = "D_SD709"
 	InterMusic = "D_SD735"
+    sucktime = 1337
 nocrouch
 nojump
 }
@@ -148,6 +149,7 @@ map SD731 lookup "Hopscotch"
 	EnterPic = "SD7LV34"
 	music = "D_SD731"
 	InterMusic = "D_SD735"
+    sucktime = 1337
 nocrouch
 nojump
 }
@@ -164,6 +166,7 @@ map SD732 lookup "Issai Perfect"
 	EnterPic = "SD7LV34"
 	music = "D_SD731"
 	InterMusic = "D_SD735"
+    sucktime = 1337
 nocrouch
 nojump
 }

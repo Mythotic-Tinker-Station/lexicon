@@ -68,7 +68,6 @@ map VAL06 "Engineering Disaster"{
 
 map VAL07 "The Mancubian Candidate"{
 	titlepatch = "VALNT06"
-	next = "VR"
 	next = "VAL08"
 	map07special
 	music = "D_VAL07"
@@ -138,7 +137,7 @@ map VAL12 "Bane Capitol"{
 
 map VAL13 "The Netweaver"{
 	titlepatch = "VALNT12"
-	next = "VR"
+	next = "VAL14"
 	music = "D_VAL13"
 	par = 540
 	ExitPic = "EP2VAL"
@@ -196,7 +195,7 @@ map VAL17 "Precipice"{
 	
 map VAL18 "Crush Depth"{
 	titlepatch = "VALNT17"
-	next = "VR"
+	next = "VAL19"
 	music = "D_VAL18"
 	par = 510
 	ExitPic = "EP3VAL"
@@ -265,7 +264,7 @@ map VAL23 "Genocide Motor"{
 
 map VAL24 "None More Merciless"{
 	titlepatch = "VALNT23"
-	next = "VR"
+	next = "VAL25"
 	music = "D_VAL24"
 	par = 660
 	ExitPic = "EP4VAL"
@@ -340,6 +339,7 @@ map VAL30 "Electric Nightmare"{
 	nocrouch
 	nojump
 	sky1 = "SAWSKYMN"
+    sucktime = 1337
 	}
 
 //Secret Maps

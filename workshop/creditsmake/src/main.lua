@@ -28,7 +28,7 @@ function love.load(arg)
     local linepos = 0
     
     
-    canvas = love.graphics.newCanvas(640, 1500)
+    canvas = love.graphics.newCanvas(640, 1900)
     love.graphics.setCanvas(canvas)
         love.graphics.clear(0, 0, 0, 255)
     love.graphics.setCanvas()    

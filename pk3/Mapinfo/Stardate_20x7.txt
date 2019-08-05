@@ -10,8 +10,8 @@ map SD701 lookup "Sun/Moon/Stars"
 	EnterPic = "SD7LV32"
 	music = "D_SD701"
 	InterMusic = "D_SD733"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD702 lookup "Eastern Sun"
@@ -25,8 +25,8 @@ map SD702 lookup "Eastern Sun"
 	EnterPic = "SD7LV33"
 	music = "D_SD702"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD703 lookup "Amethyst III"
@@ -40,8 +40,8 @@ map SD703 lookup "Amethyst III"
 	EnterPic = "SD7LV33"
 	music = "D_SD703"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD704 lookup "Velvet Blood Mission"
@@ -55,8 +55,8 @@ map SD704 lookup "Velvet Blood Mission"
 	EnterPic = "SD7LV33"
 	music = "D_SD704"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD705 lookup "Sphinx Rising"
@@ -70,8 +70,8 @@ map SD705 lookup "Sphinx Rising"
 	EnterPic = "SD7LV33"
 	music = "D_SD705"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD706 lookup "The Other Side"
@@ -86,8 +86,8 @@ map SD706 lookup "The Other Side"
 	EnterPic = "SD7LV33"
 	music = "D_SD706"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD707 lookup "Lotus Keep"
@@ -101,8 +101,9 @@ map SD707 lookup "Lotus Keep"
 	EnterPic = "SD7LV33"
 	music = "D_SD707"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
+	map07special
 }
 
 map SD708 lookup "Lotus Keep"
@@ -116,8 +117,8 @@ map SD708 lookup "Lotus Keep"
 	EnterPic = "SD7LV33"
 	music = "D_SD708"
 	InterMusic = "D_SD734"
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD709 lookup "Do You Believe?"
@@ -132,8 +133,8 @@ map SD709 lookup "Do You Believe?"
 	music = "D_SD709"
 	InterMusic = "D_SD735"
     sucktime = 1337
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 
@@ -150,8 +151,8 @@ map SD731 lookup "Hopscotch"
 	music = "D_SD731"
 	InterMusic = "D_SD735"
     sucktime = 1337
-nocrouch
-nojump
+	nocrouch
+	nojump
 }
 
 map SD732 lookup "Issai Perfect"
@@ -167,6 +168,6 @@ map SD732 lookup "Issai Perfect"
 	music = "D_SD731"
 	InterMusic = "D_SD735"
     sucktime = 1337
-nocrouch
-nojump
+	nocrouch
+	nojump
 }

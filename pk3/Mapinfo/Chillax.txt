@@ -466,5 +466,5 @@ map	CHX43	lookup	"	Searing Malice		"	{titlepatch	=	CHXLV43	next	=	CHX44	secretne
 map	CHX44	lookup	"	Diabolical Torment	"	{titlepatch	=	CHXLV44	next	=	CHX45	secretnext	=	CHX45	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX44	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
 map	CHX45	lookup	"	Feeding Frenzy		"	{titlepatch	=	CHXLV45	next	=	CHX46	secretnext	=	CHX46	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX45	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
 map	CHX46	lookup	"	Deadly Deja Vu		"	{titlepatch	=	CHXLV46	next	=	CHX47	secretnext	=	CHX47	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX46	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
-map	CHX47	lookup	"	Grimlock Dungeon	"	{titlepatch	=	CHXLV47	next	=	CHX48	secretnext	=	CHX48	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX47	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX47	lookup	"	Grimlock Dungeon	"	{titlepatch	=	CHXLV47	next	=	VR	secretnext	=	VR	        ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX47	InterMusic	=	D_CHXIN	sucktime	=	1337	par	=	0}
 

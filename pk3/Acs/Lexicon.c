@@ -415,7 +415,7 @@ strict namespace
         if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP) 
         {
             str credits = GetDynLangEntry("C", strparam(n:PRINTNAME_LEVEL));
-            str mapset = GetDynLangEntry("C", StrLeft(strparam(n:PRINTNAME_LEVEL), StrLen(strparam(n:PRINTNAME_LEVEL))-2););
+            str mapset = GetDynLangEntry("C", StrLeft(strparam(n:PRINTNAME_LEVEL), StrLen(strparam(n:PRINTNAME_LEVEL))-2));
             
             // mapset/mapname/creds
             HudSetup("HUDFONT");

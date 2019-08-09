@@ -38,12 +38,12 @@ map HP103 "Sens"
 MAP AAA01 "A Clear Line Drawn"
 {
 music = "DEFTONES"
-sky1 = "RSKY15" 0.0
+sky1 = "RSKY15"
 next = VR
 }
 Map AAA02 "Hot Water Music"
 { 
 music = "WARBRAIN"
-sky1 = "RSKY15", 0
+sky1 = "RSKY15"
 next = "VR"
 }

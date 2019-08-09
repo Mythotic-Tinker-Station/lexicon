@@ -165,7 +165,7 @@ strict namespace
 		{ "The Spire",				        "TSP01"            }, // 129
 		{ "The Eye",				        "EYE01"            }, // 130
         { "Sens",			                "HP103"            }, // 131
-        { "Unused",			                "MAP01"            }, // 132
+        { "A Clear Line Drawn",	            "AAA01"            }, // 132
         { "Unused",			                "MAP01"            }, // 133
         { "Unused",			                "MAP01"            }, // 134
         { "Unused",			                "MAP01"            }, // 135

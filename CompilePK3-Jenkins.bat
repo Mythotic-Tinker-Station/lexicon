@@ -22,7 +22,7 @@ echo Step 1: ACS
 echo Step 2: PACK GAME FILES
 	cd ..
 	cd pk3
-	..\Compiler\7za a -r -ssw -mx8 -tzip  ..\%FileName%n.pk3 *
+	..\Compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%n.pk3 *
 
 echo Step 3: PACK MUSIC AND MISC. FILES
 	cd ..
@@ -40,7 +40,7 @@ echo Step 1: ACS
 echo Step 2: PACK GAME FILES
 	cd ..\..\
 	cd pk3
-	..\Compiler\x64\7za a -r -ssw -mx8 -tzip  ..\%FileName%n.pk3 *
+	..\Compiler\x64\7za a -r -ssw -mx9 -tzip  ..\%FileName%n.pk3 *
 
 echo Step 3: PACK MUSIC AND MISC. FILES
 	cd ..
@@ -53,8 +53,8 @@ goto 20
 echo Step 4: REPLACE
 	cd ..
 	del %FileName%.pk3
-	ren %FileName%n.pk3 %FileName%-alpha-build-%BUILD_NUMBER%.pk3
+	ren %FileName%n.pk3 %FileName%-beta-build-%BUILD_NUMBER%.pk3
 	del %MusFileName%.pk3
-	ren %MusFileName%n.pk3 %MusFileName%-alpha-build-%BUILD_NUMBER%.pk3
+	ren %MusFileName%n.pk3 %MusFileName%-beta-build-%BUILD_NUMBER%.pk3
 
 

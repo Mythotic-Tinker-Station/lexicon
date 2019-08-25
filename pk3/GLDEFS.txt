@@ -380,7 +380,7 @@ pulselight STARDATE20X6BARREL
     secondarySize 21
     interval 0.5
     offset 0 36 0
-	dontlightself 1
+    dontlightself 1
 }
 
 object SD20x6A2
@@ -695,7 +695,7 @@ pointlight SUICIDEBOMBER_X2
     size 40
 }
 
-pointlight SSUICIDEBOMBER_X3
+pointlight SUICIDEBOMBER_X3
 {
     color 0.3 0.1 0.0
     size 35

@@ -311,11 +311,37 @@ pointlight MAYHEMMEGASPHERE4
 
 object Mayhem17Megasphere
 {
-    frame 17GAA0 { light MAYHEMMEGASPHERE1 }
+    frame 17GAA { light MAYHEMMEGASPHERE1 }
+    frame 17GAB { light MAYHEMMEGASPHERE2 }
+    frame 17GAC { light MAYHEMMEGASPHERE3 }
+    frame 17GAD { light MAYHEMMEGASPHERE4 }
+}
 
-    frame 17GAB0 { light MAYHEMMEGASPHERE2 }
-    frame 17GAC0 { light MAYHEMMEGASPHERE3 }
-    frame 17GAD0 { light MAYHEMMEGASPHERE4 }
+// Invulnerability
+pulselight MAYHEMINVULN1
+{
+    color 1.0 1.0 0.3
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+pulselight MAYHEMINVULN2
+{
+    color 0.3 0.3 1.0
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object MayhemInvulnSphere
+{
+    frame 17NVA { light MAYHEMINVULN1 }
+    frame 17NVB { light MAYHEMINVULN2 }
+    frame 17NVC { light MAYHEMINVULN2 }
+    frame 17NVD { light MAYHEMINVULN1 }
 }
 
 // Health Bonus
@@ -483,6 +509,56 @@ object SD20x7A11
 object SD20x7A12
 {
     frame SMBT { light STARDATE20X6SMALLTORCH }
+}
+
+// Small purple torch (upside down)
+flickerlight2 STARDATE20X7SMALLTORCHUPSIDEDOWN
+{
+    color 1.0 0.0 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 -35 0
+}
+
+object SD20x7A6
+{
+    frame AABM { light STARDATE20X7SMALLTORCHUPSIDEDOWN }
+}
+
+// Short tech lamp
+pulselight STARDATE20X7SMALLLAMP
+{
+    color 1.0 0.8 1.0
+    size 56
+    secondarySize 58
+    interval 0.4
+    offset 0 44 0
+}
+
+object SD20x7A3
+{
+    frame AABL { light STARDATE20X7SMALLLAMP }
+}
+
+object SD20x7A4
+{
+    frame AABL { light STARDATE20X7SMALLLAMP }
+}
+
+// Chain lamp
+pulselight STARDATE20X7BIGLAMP
+{
+    color 1.0 0.8 0.8
+    size 64
+    secondarySize 66
+    interval 0.4
+    offset 0 -64 0
+}
+
+object SD20x7A7
+{
+    frame AABM { light STARDATE20X7BIGLAMP }
 }
 
 // Soul Sphere
@@ -723,6 +799,33 @@ object ValiantLostSoul
     frame AAASI { light LOSTSOUL_X2 }
     frame AAASJ { light LOSTSOUL_X3 }
     frame AAASK { light LOSTSOUL_X4 }
+}
+
+// Super Archvile
+pulselight VALIANTARCHRES
+{
+    color 0.6 0.6 0.0
+    size 64
+    secondarySize 70
+    interval 0.5
+    offset 0 36 0
+}
+
+object ValiantFinalBoss
+{
+    frame AAAPW { light ARCHATK1 }
+    frame AAAPX { light ARCHATK2 }
+    frame AAAPY { light ARCHATK3 }
+    frame AAAPZ { light ARCHATK4 }
+    frame AAAQA { light ARCHATK4 }
+    frame AAAQB { light ARCHATK4 }
+    frame AAAQC { light ARCHATK5 }
+    frame AAAQD { light ARCHATK6 }
+    frame AAAQE { light ARCHATK7 }
+
+    frame AAAPN { light VALIANTARCHRES }
+    frame AAAPO { light VALIANTARCHRES }
+    frame AAAQF { light VALIANTARCHRES }
 }
 
 // -------------

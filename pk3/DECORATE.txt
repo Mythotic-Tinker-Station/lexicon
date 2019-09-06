@@ -870,15 +870,13 @@ ACTOR "Demon Smith" 20316
     SSNA AB 10 A_Look
     Loop
   See:
-    SSNA AABBCCDD 3 A_Chase
+    SSNA AABBCCDD 2 A_Chase
     Loop
   Missile:
-    SSNA EFG 5 A_FaceTarget
-    SSNA H 0 A_CustomMissile("FireShot",28,0,0,1)
-    SSNA H 0 A_CustomMissile("FireShot",28,0,-5.625,1)
-    SSNA H 0 A_CustomMissile("FireShot",28,0,-11.25,1)
-    SSNA H 0 A_CustomMissile("FireShot",28,0,-16.875,1)
-    SSNA H 15 Bright
+    SSNA EE 4 A_FaceTarget
+    SSNA F 1 A_FatAttack1
+    SSNA F 3 A_FatAttack2
+    SSNA G 8
     Goto See
   Pain:
     SSNA H 3
@@ -900,23 +898,6 @@ ACTOR "Demon Smith" 20316
     SSNA M 5
     SSNA LKJI 5
     Goto See 
-  }
-}
-
-ACTOR FireShot : FatShot
-{
-  Speed 22
-  Damage 12
-  States
-  {
-  Spawn:
-    MANF AB 4 Bright
-    Loop
-  Death:
-    MANF C 8 Bright
-    MANF D 6 Bright
-    MANF E 4 Bright
-    Stop
   }
 }
 

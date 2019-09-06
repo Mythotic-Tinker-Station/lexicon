@@ -1,4 +1,147 @@
 // --------------------
+// -- Ancient Aliens --
+// --------------------
+
+// Zombieman
+object AAA32
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+// Shotgun Guy
+object AAA31
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+// Chaingun Guy
+object AAA30
+{
+    frame AABIE { light ZOMBIEATK }
+    frame AABIF { light ZOMBIEATK }
+}
+
+// Lost Soul
+object AAA25
+{
+    frame SKULA { light LOSTSOUL    }
+    frame SKULB { light LOSTSOUL    }
+    frame SKULC { light LOSTSOUL    }
+    frame SKULD { light LOSTSOUL    }
+    frame SKULE { light LOSTSOUL    }
+    frame SKULF { light LOSTSOUL    }
+    frame SKULG { light LOSTSOUL    }
+
+    frame SKULH { light LOSTSOUL_X1 }
+    frame SKULI { light LOSTSOUL_X2 }
+    frame SKULJ { light LOSTSOUL_X3 }
+    frame SKULK { light LOSTSOUL_X4 }
+}
+
+// Arachnotron Plasma
+pointlight ANCIENTALIENSPLASMA
+{
+    color 0.89 0.1 0.48
+    size 56
+}
+
+flickerlight ANCIENTALIENSPLASMA_X1
+{
+    color 0.8 0.07 0.26
+    size 64
+    secondarySize 72
+    chance 0.3
+}
+
+flickerlight ANCIENTALIENSPLASMA_X2
+{
+    color 0.8 0.05 0.22
+    size 80
+    secondarySize 88
+    chance 0.3
+}
+
+flickerlight ANCIENTALIENSPLASMA_X3
+{
+    color 0.6 0.04 0.18
+    size 96
+    secondarySize 104
+    chance 0.3
+}
+
+flickerlight ANCIENTALIENSPLASMA_X4
+{
+    color 0.3 0.03 0.12
+    size 112
+    secondarySize 120
+    chance 0.3
+}
+
+object AAA21
+{
+    frame AABHQ { light ANCIENTALIENSPLASMA }
+    frame AABHR { light ANCIENTALIENSPLASMA }
+
+    frame AABHS { light ANCIENTALIENSPLASMA_X1 }
+    frame AABHT { light ANCIENTALIENSPLASMA_X2 }
+    frame AABHU { light ANCIENTALIENSPLASMA_X2 }
+    frame AABHV { light ANCIENTALIENSPLASMA_X3 }
+    frame AABHW { light ANCIENTALIENSPLASMA_X4 }
+}
+
+// Archvile
+object AAA16
+{
+    frame VILEH { light ARCHATK1 }
+    frame VILEI { light ARCHATK2 }
+    frame VILEJ { light ARCHATK3 }
+    frame VILEK { light ARCHATK4 }
+    frame VILEL { light ARCHATK4 }
+    frame VILEM { light ARCHATK4 }
+    frame VILEN { light ARCHATK5 }
+    frame VILEO { light ARCHATK6 }
+    frame VILEP { light ARCHATK7 }
+
+    frame VILE[ { light ARCHRES }
+    frame VILE\ { light ARCHRES }
+    frame VILE] { light ARCHRES }
+}
+
+// ---------------------
+// -- Circle of Caina --
+// ---------------------
+
+// Tall white torch
+flickerlight2 CIRCLEOFCAINABIGTORCH
+{
+    color 1.0 1.0 1.0
+    size 64
+    secondarySize 72
+    interval 0.1
+    offset 0 60 0
+}
+
+object COCGreenTorch
+{
+    frame CCRN { light CIRCLEOFCAINABIGTORCH }
+}
+
+// Small white torch
+flickerlight2 CIRCLEOFCAINASMALLTORCH
+{
+    color 1.0 1.0 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 35 0
+}
+
+object COCShortGreenTorch
+{
+    frame CCGT { light CIRCLEOFCAINASMALLTORCH }
+}
+
+// --------------------
 // -- Combat Shock 2 --
 // --------------------
 
@@ -22,8 +165,14 @@ object CS2ChaingunGuy
 }
 
 // ------------
-// -- Epic 2 --
+// -- Epic 1 --
 // ------------
+
+// Burning barrel
+object Epic1A1
+{
+    frame AAAS { light FIREBARREL }
+}
 
 // Zombieman
 object Epic1A8
@@ -44,12 +193,60 @@ object Epic1A9
     frame AAAVF { light ZOMBIEATK }
 }
 
+// ------------
+// -- Epic 2 --
+// ------------
+
+// Burning barrel
+object Epic2A23
+{
+    frame AAAY { light BIGREDTORCH }
+}
+
+object Epic2A30
+{
+    frame AABA { light BIGREDTORCH }
+}
+
+// Small red torch
+object Epic2A25
+{
+    frame AAAZ { light SMALLREDTORCH }
+}
+
+object Epic2A28
+{
+    frame AAAZ { light SMALLREDTORCH }
+}
+
+// Small green torch
+object Epic2A27
+{
+    frame AAAZ { light SMALLGREENTORCH }
+}
+
+// Small blue torch
+object Epic2A33
+{
+    frame AABA { light SMALLBLUETORCH }
+}
+
+// Short tech lamp
+object Epic2A34
+{
+    frame AABA { light SMALLLAMP }
+}
+
 // Explosive Barrel
 object Epic2A24
 {
-    frame AAAZC { light ROCKET_X1 }
-    frame AAAZD { light ROCKET_X2 }
-    frame AAAZE { light ROCKET_X3 }
+    frame AAAZA { light BARREL    }
+    frame AAAZB { light BARREL    }
+    frame AAAZC { light BARREL    }
+
+    frame AAAZE { light ROCKET_X1 }
+    frame AAAZF { light ROCKET_X2 }
+    frame AAAZG { light ROCKET_X3 }
 }
 
 // Health Potion
@@ -114,11 +311,37 @@ pointlight MAYHEMMEGASPHERE4
 
 object Mayhem17Megasphere
 {
-    frame 17GAA0 { light MAYHEMMEGASPHERE1 }
+    frame 17GAA { light MAYHEMMEGASPHERE1 }
+    frame 17GAB { light MAYHEMMEGASPHERE2 }
+    frame 17GAC { light MAYHEMMEGASPHERE3 }
+    frame 17GAD { light MAYHEMMEGASPHERE4 }
+}
 
-    frame 17GAB0 { light MAYHEMMEGASPHERE2 }
-    frame 17GAC0 { light MAYHEMMEGASPHERE3 }
-    frame 17GAD0 { light MAYHEMMEGASPHERE4 }
+// Invulnerability
+pulselight MAYHEMINVULN1
+{
+    color 1.0 1.0 0.3
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+pulselight MAYHEMINVULN2
+{
+    color 0.3 0.3 1.0
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object MayhemInvulnSphere
+{
+    frame 17NVA { light MAYHEMINVULN1 }
+    frame 17NVB { light MAYHEMINVULN2 }
+    frame 17NVC { light MAYHEMINVULN2 }
+    frame 17NVD { light MAYHEMINVULN1 }
 }
 
 // Health Bonus
@@ -140,7 +363,7 @@ object Mayhem17GreenArmor
     frame 7RM1B { light GREENARMOR2 }
 }
 
-// Red Armor
+// Blue Armor
 object Mayhem17BlueArmor
 {
     frame 7RM2A { light BLUEARMOR1 }
@@ -169,6 +392,217 @@ object Mayhem17YellowKey
 object Mayhem17RedCoin
 {
     frame MAYY { light REDKEY }
+}
+
+// -------------------
+// -- Stardate 20x6 --
+// -------------------
+
+// Explosive Barrel
+pulselight STARDATE20X6BARREL
+{
+    color 0.5 0.0 0.5
+    size 20
+    secondarySize 21
+    interval 0.5
+    offset 0 36 0
+    dontlightself 1
+}
+
+object SD20x6A2
+{
+    frame BAR1  { light STARDATE20X6BARREL }
+
+    frame BEXPC { light ROCKET_X1 }
+    frame BEXPD { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
+}
+
+// Tall purple torch
+flickerlight2 STARDATE20X6BIGTORCH
+{
+    color 1.0 0.0 1.0
+    size 64
+    secondarySize 72
+    interval 0.1
+    offset 0 60 0
+}
+
+object SD20x6A6
+{
+    frame TGRN { light STARDATE20X6BIGTORCH }
+}
+
+// Small purple torch
+flickerlight2 STARDATE20X6SMALLTORCH
+{
+    color 1.0 0.0 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 35 0
+}
+
+object SD20x6A7
+{
+    frame SMGT { light STARDATE20X6SMALLTORCH }
+}
+
+// Purple armour
+pointlight STARDATE20X6ARMOR1
+{
+    color 0.6 0.0 0.6
+    size 48
+}
+
+pointlight STARDATE20X6ARMOR2
+{
+    color 0.6 0.0 0.6
+    size 32
+}
+
+object SD20x6A1
+{
+    frame ARM1A { light STARDATE20X6ARMOR1 }
+    frame ARM1B { light STARDATE20X6ARMOR2 }
+}
+
+// Invulnerability Sphere
+pulselight STARDATE20X6INVULN
+{
+    color 1.0 0.0 1.0
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object SD20x6A8
+{
+    frame PINV { light STARDATE20X6INVULN }
+}
+
+// -------------------
+// -- Stardate 20x7 --
+// -------------------
+
+// Explosive Barrel
+object SD20x7A2
+{
+    frame AABLR { light ROCKET_X1 }
+    frame AABLS { light ROCKET_X2 }
+    frame AABLT { light ROCKET_X3 }
+}
+
+// Small white torch
+object SD20x7A5
+{
+    frame AABM { light CIRCLEOFCAINASMALLTORCH }
+}
+
+// Small purple torch
+object SD20x7A11
+{
+    frame SMBT { light STARDATE20X6SMALLTORCH }
+}
+
+object SD20x7A12
+{
+    frame SMBT { light STARDATE20X6SMALLTORCH }
+}
+
+// Small purple torch (upside down)
+flickerlight2 STARDATE20X7SMALLTORCHUPSIDEDOWN
+{
+    color 1.0 0.0 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 -35 0
+}
+
+object SD20x7A6
+{
+    frame AABM { light STARDATE20X7SMALLTORCHUPSIDEDOWN }
+}
+
+// Short tech lamp
+pulselight STARDATE20X7SMALLLAMP
+{
+    color 1.0 0.8 1.0
+    size 56
+    secondarySize 58
+    interval 0.4
+    offset 0 44 0
+}
+
+object SD20x7A3
+{
+    frame AABL { light STARDATE20X7SMALLLAMP }
+}
+
+object SD20x7A4
+{
+    frame AABL { light STARDATE20X7SMALLLAMP }
+}
+
+// Chain lamp
+pulselight STARDATE20X7BIGLAMP
+{
+    color 1.0 0.8 0.8
+    size 64
+    secondarySize 66
+    interval 0.4
+    offset 0 -64 0
+}
+
+object SD20x7A7
+{
+    frame AABM { light STARDATE20X7BIGLAMP }
+}
+
+// Soul Sphere
+pulselight STARDATE20X7SOULSPHERE
+{
+    color 1.0 0.0 1.0
+    size 40
+    secondarySize 42
+    interval 2.0
+    offset 0 16 0
+}
+
+object SD20x7A10
+{
+    frame SOUL { light STARDATE20X7SOULSPHERE }
+}
+
+// Armour Helmet
+pulselight STARDATE20X7ARMORBONUS
+{
+    color 0.6 0.6 0.0
+    size 16
+    secondarySize 14
+    interval 1.0
+	dontlightself 1
+}
+
+object SD20x7A1
+{
+    frame AABL { light STARDATE20X7ARMORBONUS }
+}
+
+// Health Potion
+pulselight STARDATE20X7HEALTHPOTION
+{
+    color 0.6 0.0 0.6
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object SD20x7A13
+{
+    frame BON1 { light STARDATE20X7HEALTHPOTION }
 }
 
 // -------------
@@ -325,19 +759,19 @@ object ValiantBaronBall
 }
 
 // Suicide Bomber
-pointlight SuicideBomberDeath1
+pointlight SUICIDEBOMBER_X1
 {
     color 1.0 0.4 0.0
     size 35
 }
 
-pointlight SuicideBomberDeath2
+pointlight SUICIDEBOMBER_X2
 {
     color 0.6 0.3 0.0
     size 40
 }
 
-pointlight SuicideBomberDeath3
+pointlight SUICIDEBOMBER_X3
 {
     color 0.3 0.1 0.0
     size 35
@@ -345,9 +779,9 @@ pointlight SuicideBomberDeath3
 
 object SuicideBomber
 {
-    frame AAAPA { light SuicideBomberDeath1 }
-    frame AAAPB { light SuicideBomberDeath2 }
-    frame AAAPC { light SuicideBomberDeath3 }
+    frame AAAPA { light SUICIDEBOMBER_X1 }
+    frame AAAPB { light SUICIDEBOMBER_X2 }
+    frame AAAPC { light SUICIDEBOMBER_X3 }
 }
 
 // Valiant Lost Soul
@@ -365,6 +799,33 @@ object ValiantLostSoul
     frame AAASI { light LOSTSOUL_X2 }
     frame AAASJ { light LOSTSOUL_X3 }
     frame AAASK { light LOSTSOUL_X4 }
+}
+
+// Super Archvile
+pulselight VALIANTARCHRES
+{
+    color 0.6 0.6 0.0
+    size 64
+    secondarySize 70
+    interval 0.5
+    offset 0 36 0
+}
+
+object ValiantFinalBoss
+{
+    frame AAAPW { light ARCHATK1 }
+    frame AAAPX { light ARCHATK2 }
+    frame AAAPY { light ARCHATK3 }
+    frame AAAPZ { light ARCHATK4 }
+    frame AAAQA { light ARCHATK4 }
+    frame AAAQB { light ARCHATK4 }
+    frame AAAQC { light ARCHATK5 }
+    frame AAAQD { light ARCHATK6 }
+    frame AAAQE { light ARCHATK7 }
+
+    frame AAAPN { light VALIANTARCHRES }
+    frame AAAPO { light VALIANTARCHRES }
+    frame AAAQF { light VALIANTARCHRES }
 }
 
 // -------------

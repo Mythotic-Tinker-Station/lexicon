@@ -1,0 +1,5303 @@
+
+c:\program files (x86)\zandronum\zandronum\doom\arachnotron.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Arachnotron
+//
+//===========================================================================
+ACTOR Arachnotron 68
+{
+	Game Doom
+	SpawnID 6
+	Health 500
+	Radius 64
+	Height 64
+	Mass 600
+	Speed 12
+	PainChance 128
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	SeeSound "baby/sight"
+	PainSound "baby/pain"
+	DeathSound "baby/death"
+	ActiveSound "baby/active"
+	Obituary "$OB_BABY"
+	States
+	{
+	Spawn:
+		BSPI AB 10 A_Look
+		Loop
+	See:
+		BSPI A 20
+		BSPI A 3 A_BabyMetal
+		BSPI ABBCC 3 A_Chase
+		BSPI D 3 A_BabyMetal
+		BSPI DEEFF 3 A_Chase
+		Goto See+1
+	Missile:
+		BSPI A 20 BRIGHT A_FaceTarget
+		BSPI G 4 BRIGHT A_BspiAttack
+		BSPI H 4 BRIGHT
+		BSPI H 1 BRIGHT A_SpidRefire
+		Goto Missile+1
+	Pain:
+		BSPI I 3
+		BSPI I 3 A_Pain
+		Goto See+1
+	Death:
+		BSPI J 20 A_Scream
+		BSPI K 7 A_NoBlocking
+		BSPI LMNO 7
+		BSPI P -1 A_BossDeath
+		Stop
+    Raise:
+		BSPI P 5
+		BSPI ONMLKJ 5
+		Goto See+1
+	}
+}
+
+//===========================================================================
+//
+// Arachnotron plasma
+//
+//===========================================================================
+ACTOR ArachnotronPlasma
+{
+	Game Doom
+	SpawnID 129
+	Radius 13
+	Height 8
+	Speed 25
+	Damage 5
+	Projectile 
+	+RANDOMIZE
+	RenderStyle Add 
+	Alpha 0.75
+	SeeSound "baby/attack"
+	DeathSound "baby/shotx"
+	States
+	{
+	Spawn:
+		APLS AB 5 BRIGHT
+		Loop
+	Death:
+		APBX ABCDE 5 BRIGHT
+		Stop
+	}
+}
+
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\archvile.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Arch Vile
+//
+//===========================================================================
+
+ACTOR Archvile 64
+{
+	Game Doom
+	SpawnID 111
+	Health 700
+	Radius 20
+	Height 56
+	Mass 500
+	Speed 15
+	PainChance 10
+	Monster
+	MaxTargetRange 896
+	+QUICKTORETALIATE 
+	+FLOORCLIP 
+	+NOTARGET
+	SeeSound "vile/sight"
+	PainSound "vile/pain"
+	DeathSound "vile/death"
+	ActiveSound "vile/active"
+	MeleeSound "vile/stop"
+	Obituary "$OB_VILE"
+	States
+	{
+	Spawn:
+		VILE AB 10 A_Look
+		Loop
+	See:
+		VILE AABBCCDDEEFF 2 A_VileChase
+		Loop
+	Missile:
+		VILE G 0 BRIGHT A_VileStart
+		VILE G 10 BRIGHT A_FaceTarget 
+		VILE H 8 BRIGHT A_VileTarget
+		VILE IJKLMN 8 BRIGHT A_FaceTarget 
+		VILE O 8 BRIGHT A_VileAttack
+		VILE P 20 BRIGHT
+		Goto See
+	Heal:
+		VILE "[\]" 10 BRIGHT
+		Goto See
+	Pain:
+		VILE Q 5   
+		VILE Q 5 A_Pain
+		Goto See
+	Death:
+		VILE Q 7
+		VILE R 7 A_Scream
+		VILE S 7 A_NoBlocking
+		VILE TUVWXY 7
+		VILE Z -1
+		Stop
+	}
+}
+
+
+//===========================================================================
+//
+// Arch Vile Fire
+//
+//===========================================================================
+
+ACTOR ArchvileFire
+{
+	Game Doom
+	SpawnID 98
+	+NOBLOCKMAP +NOGRAVITY
+	RenderStyle Add
+	Alpha 1
+	States
+	{
+	Spawn:
+		FIRE A 2 BRIGHT  A_StartFire
+		FIRE BAB 2 BRIGHT  A_Fire
+		FIRE C 2 BRIGHT  A_FireCrackle
+		FIRE BCBCDCDCDEDED 2 BRIGHT  A_Fire
+		FIRE E 2 BRIGHT  A_FireCrackle
+		FIRE FEFEFGHGHGH 2 BRIGHT  A_Fire
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\bossbrain.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+//===========================================================================
+//
+// Boss Brain
+//
+//===========================================================================
+
+ACTOR BossBrain 88
+{
+	Game Doom
+	Health 250
+	Mass 10000000
+	PainChance 255
+	+SOLID +SHOOTABLE
+	+NOICEDEATH
+	+OLDRADIUSDMG
+	PainSound "brain/pain"
+	DeathSound "brain/death"
+	States
+	{
+	BrainExplode:
+		MISL BC 10 Bright
+		MISL D 10 A_BrainExplode
+		Stop
+	Spawn:
+		BBRN A -1
+		Stop
+	Pain:
+		BBRN B 36 A_BrainPain
+		Goto Spawn
+	Death:
+		BBRN A 100 A_BrainScream
+		BBRN AA 10
+		BBRN A -1 A_BrainDie
+		Stop
+	}
+}
+
+
+//===========================================================================
+//
+// Boss Eye
+//
+//===========================================================================
+
+ACTOR BossEye 89
+{
+	Game Doom
+	Height 32
+	+NOBLOCKMAP
+	+NOSECTOR
+	States
+	{
+	Spawn:
+		SSWV A 10 A_Look
+		Loop
+	See:
+		SSWV A 181 A_BrainAwake
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}
+
+//===========================================================================
+//
+// Boss Target
+//
+//===========================================================================
+
+ACTOR BossTarget : SpecialSpot 87
+{
+	Game Doom
+	Height 32
+	+NOBLOCKMAP
+	+NOSECTOR
+}
+
+//===========================================================================
+//
+// Spawn shot
+//
+//===========================================================================
+
+ACTOR SpawnShot
+{
+	Radius 6
+	Height 32
+	Speed 10
+	Damage 3
+	Projectile
+	+NOCLIP
+	-ACTIVATEPCROSS
+	+RANDOMIZE
+	SeeSound "brain/spit"
+	DeathSound "brain/cubeboom"
+	States
+	{
+	Spawn:
+		BOSF A 3 BRIGHT A_SpawnSound
+		BOSF BCD 3 BRIGHT A_SpawnFly
+		Loop
+	}
+}
+		
+//===========================================================================
+//
+// Spawn fire
+//
+//===========================================================================
+
+ACTOR SpawnFire
+{
+	Height 78
+	+NOBLOCKMAP
+	+NOGRAVITY
+	RenderStyle Add
+	States
+	{
+	Spawn:
+		FIRE ABCDEFGH 4 Bright A_Fire
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\bruiser.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Baron of Hell
+//
+//===========================================================================
+ACTOR BaronOfHell 3003
+{
+	Game Doom
+	SpawnID 3
+	Health 1000
+	Radius 24
+	Height 64
+	Mass 1000
+	Speed 8
+	PainChance 50
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	SeeSound "baron/sight"
+	PainSound "baron/pain"
+	DeathSound "baron/death"
+	ActiveSound "baron/active"
+	Obituary "$OB_BARON"
+	HitObituary "$OB_BARONHIT"
+	States
+	{
+	Spawn:
+		BOSS AB 10 A_Look 
+		Loop
+	See:
+		BOSS AABBCCDD 3 A_Chase
+		Loop
+	Melee:
+	Missile:
+		BOSS EF 8 A_FaceTarget
+		BOSS G 8 A_BruisAttack
+		Goto See
+	Pain:
+		BOSS H  2
+		BOSS H  2 A_Pain
+		Goto See
+	Death:
+		BOSS I  8
+		BOSS J  8 A_Scream
+		BOSS K  8
+		BOSS L  8 A_NoBlocking
+		BOSS MN 8
+		BOSS O -1 A_BossDeath   
+		Stop
+	Raise:
+		BOSS O 8
+		BOSS NMLKJI  8
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Hell Knight
+//
+//===========================================================================
+ACTOR HellKnight : BaronOfHell 69
+{
+	Game Doom
+	SpawnID 113
+	Health 500
+	-BOSSDEATH
+	SeeSound "knight/sight"
+	ActiveSound "knight/active"
+	PainSound "knight/pain"
+	DeathSound "knight/death"
+	HitObituary "$OB_KNIGHTHIT"
+	Obituary "$OB_KNIGHT"
+	States
+	{
+	Spawn:
+		BOS2 AB 10 A_Look 
+		Loop
+	See:
+		BOS2 AABBCCDD 3 A_Chase
+		Loop
+	Melee:
+	Missile:
+		BOS2 EF 8 A_FaceTarget
+		BOS2 G 8 A_BruisAttack
+		Goto See
+	Pain:
+		BOS2 H  2
+		BOS2 H  2 A_Pain
+		Goto See
+	Death:
+		BOS2 I  8
+		BOS2 J  8 A_Scream
+		BOS2 K  8
+		BOS2 L  8 A_NoBlocking
+		BOS2 MN 8
+		BOS2 O -1
+		Stop
+	Raise:
+		BOS2 O 8
+		BOS2 NMLKJI  8
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Baron slime ball
+//
+//===========================================================================
+ACTOR BaronBall
+{
+	Game Doom
+	SpawnID 154
+	Radius 6
+	Height 16
+	Speed 15
+	FastSpeed 20
+	Damage 8
+	Projectile 
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 1
+	SeeSound "baron/attack"
+	DeathSound "baron/shotx"
+	Decal "BaronScorch"
+	States
+	{
+	Spawn:
+		BAL7 AB 4 BRIGHT
+		Loop
+	Death:
+		BAL7 CDE 6 BRIGHT
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\cacodemon.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Cacodemon
+//
+//===========================================================================
+ACTOR Cacodemon 3005
+{
+	Game Doom
+	SpawnID 19
+	Health 400
+	Radius 31
+	Height 56
+	Mass 400
+	Speed 8
+	PainChance 128
+	Monster
+	+FLOAT +NOGRAVITY
+	SeeSound "caco/sight"
+	PainSound "caco/pain"
+	DeathSound "caco/death"
+	ActiveSound "caco/active"
+	Obituary "$OB_CACO"
+	HitObituary "$OB_CACOHIT"
+	States
+	{
+	Spawn:
+		HEAD A 10 A_Look
+		Loop
+	See:
+		HEAD A 3 A_Chase
+		Loop
+	Missile:
+		HEAD B 5 A_FaceTarget
+		HEAD C 5 A_FaceTarget
+		HEAD D 5 BRIGHT A_HeadAttack
+		Goto See
+	Pain:
+		HEAD E 3
+		HEAD E 3 A_Pain
+		HEAD F 6
+		Goto See
+	Death:
+		// [BB] In ST A_NoBlocking is called in the beginning of the death state.
+		HEAD G 8 A_NoBlocking
+		HEAD H 8 A_Scream
+		HEAD I 8
+		HEAD J 8
+		HEAD K 8
+		HEAD L -1 A_SetFloorClip
+		Stop
+	Raise:
+		HEAD L 8 A_UnSetFloorClip
+		HEAD KJIHG 8
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Cacodemon plasma ball
+//
+//===========================================================================
+ACTOR CacodemonBall
+{
+	Game Doom
+	SpawnID 126
+	Radius 6
+	Height 8
+	Speed 10
+	FastSpeed 20
+	Damage 5
+	Projectile 
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 1
+	SeeSound "caco/attack"
+	DeathSound "caco/shotx"
+	States
+	{
+	Spawn:
+		BAL2 AB 4 BRIGHT
+		Loop
+	Death:
+		BAL2 CDE 6 BRIGHT
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\cyberdemon.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+//===========================================================================
+//
+// Cyberdemon
+//
+//===========================================================================
+ACTOR Cyberdemon 16
+{
+	Game Doom
+	SpawnID 114
+	Health 4000
+	Radius 40
+	Height 110
+	Mass 1000
+	Speed 16
+	PainChance 20
+	Monster
+	MinMissileChance 160
+	+BOSS 
+	+MISSILEMORE
+	+FLOORCLIP
+	+NORADIUSDMG
+	+DONTMORPH
+	+BOSSDEATH
+	SeeSound "cyber/sight"
+	PainSound "cyber/pain"
+	DeathSound "cyber/death"
+	ActiveSound "cyber/active"
+	Obituary "$OB_CYBORG"
+	States
+	{
+	Spawn:
+		CYBR AB 10 A_Look
+		Loop
+	See:
+		CYBR A 3 A_Hoof
+		CYBR ABBCC 3 A_Chase
+		CYBR D 3 A_Metal
+		CYBR D 3 A_Chase
+		Loop
+	Missile:
+		CYBR E 6 A_FaceTarget
+		CYBR F 12 A_CyberAttack
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_CyberAttack
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_CyberAttack
+		Goto See
+	Pain:
+		CYBR G 10 A_Pain
+		Goto See
+	Death:
+		CYBR H 10
+		CYBR I 10 A_Scream
+		CYBR JKL 10
+		CYBR M 10 A_NoBlocking
+		CYBR NO 10
+		CYBR P 30
+		CYBR P -1 A_BossDeath
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\deadthings.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// Gibbed marine -----------------------------------------------------------
+
+actor GibbedMarine 10
+{
+	Game Doom
+	SpawnID 145
+	States
+	{
+	Spawn:
+		PLAY W -1
+		Stop
+	}
+}
+
+// Gibbed marine (extra copy) ----------------------------------------------
+
+actor GibbedMarineExtra : GibbedMarine 12
+{
+	Game Doom
+}
+
+// Dead marine -------------------------------------------------------------
+
+actor DeadMarine 15
+{
+	Game Doom
+	States
+	{
+	Spawn:
+		PLAY N -1
+		Stop
+	}
+}
+
+/* If it wasn't for Dehacked compatibility, the rest of these would be
+ * better defined as single frame states. But since Doom reused the
+ * dead state from the original monsters, we need to do the same.
+ */
+
+// Dead zombie man ---------------------------------------------------------
+
+actor DeadZombieMan : ZombieMan 18
+{
+	Skip_Super
+	Game Doom
+	DropItem None
+	States
+	{
+	Spawn:
+		Goto Super::Death+4
+	}
+}
+
+// Dead shotgun guy --------------------------------------------------------
+
+actor DeadShotgunGuy : ShotgunGuy 19
+{
+	Skip_Super
+	Game Doom
+	DropItem None
+	States
+	{
+	Spawn:
+		Goto Super::Death+4
+	}
+}
+
+// Dead imp ----------------------------------------------------------------
+
+actor DeadDoomImp : DoomImp 20
+{
+	Skip_Super
+	Game Doom
+	States
+	{
+	Spawn:
+		Goto Super::Death+4
+	}
+}
+
+// Dead demon --------------------------------------------------------------
+
+actor DeadDemon : Demon 21
+{
+	Skip_Super
+	Game Doom
+	States
+	{
+	Spawn:
+		Goto Super::Death+5
+	}
+}
+
+// Dead cacodemon ----------------------------------------------------------
+
+actor DeadCacodemon : Cacodemon 22
+{
+	Skip_Super
+	Game Doom
+	States
+	{
+	Spawn:
+		Goto Super::Death+5
+	}
+}
+
+// Dead lost soul ----------------------------------------------------------
+
+/* [RH] Considering that the lost soul removes itself when it dies, there
+ * really wasn't much point in id including this thing, but they did anyway.
+ * (There was probably a time when it stayed around after death, and this is
+ * a holdover from that.)
+ */
+
+actor DeadLostSoul : LostSoul 23
+{
+	Skip_Super
+	Game Doom
+	States
+	{
+	Spawn:
+		Goto Super::Death+5
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\demon.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Pink Demon
+//
+//===========================================================================
+ACTOR Demon 3002
+{
+	Game Doom
+	SpawnID 8
+	Health 150
+	PainChance 180
+	Speed 10
+	Radius 30
+	Height 56
+	Mass 400
+	Monster
+	+FLOORCLIP
+	SeeSound "demon/sight"
+	AttackSound "demon/melee"
+	PainSound "demon/pain"
+	DeathSound "demon/death"
+	ActiveSound "demon/active"
+	Obituary "$OB_DEMONHIT"
+	States
+	{
+	Spawn:
+		SARG AB 10 A_Look
+		Loop
+	See:
+		SARG AABBCCDD 2 Fast A_Chase
+		Loop
+	Melee:
+		SARG EF 8 Fast A_FaceTarget
+		SARG G 8 Fast A_SargAttack
+		Goto See
+	Pain:
+		SARG H 2 Fast
+		SARG H 2 Fast A_Pain
+		Goto See
+	Death:
+		SARG I 8
+		SARG J 8 A_Scream
+		SARG K 4
+		SARG L 4 A_NoBlocking
+		SARG M 4
+		SARG N -1
+		Stop
+	Raise:
+		SARG N 5
+		SARG MLKJI 5
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Spectre
+//
+//===========================================================================
+ACTOR Spectre : Demon 58
+{
+	Game Doom
+	SpawnID 9
+	+SHADOW
+	RenderStyle OptFuzzy
+	Alpha 0.5
+	SeeSound "spectre/sight"
+	AttackSound "spectre/melee"
+	PainSound "spectre/pain"
+	DeathSound "spectre/death"
+	ActiveSound "spectre/active"
+	HitObituary "$OB_SPECTREHIT"
+}
+
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomammo.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// Clip --------------------------------------------------------------------
+
+ACTOR Clip : Ammo 2007
+{
+	Game Doom
+	SpawnID 11
+	Inventory.PickupMessage "$GOTCLIP"
+	Inventory.Amount 10
+	Inventory.MaxAmount 200
+	Ammo.BackpackAmount 10
+	Ammo.BackpackMaxAmount 400
+	Inventory.Icon "CLIPA0"
+	States
+	{
+	Spawn:
+		CLIP A -1
+		Stop
+	}
+}
+
+// Clip box ----------------------------------------------------------------
+
+ACTOR ClipBox : Clip 2048
+{
+	Game Doom
+	SpawnID 139
+	Inventory.PickupMessage "$GOTCLIPBOX"
+	Inventory.Amount 50
+	States
+	{
+	Spawn:
+		AMMO A -1
+		Stop
+	}
+}
+
+// Rocket ------------------------------------------------------------------
+
+ACTOR RocketAmmo : Ammo 2010
+{
+	Game Doom
+	SpawnID 140
+	Inventory.PickupMessage "$GOTROCKET"
+	Inventory.Amount 1
+	Inventory.MaxAmount 50
+	Ammo.BackpackAmount 1
+	Ammo.BackpackMaxAmount 100
+	Inventory.Icon "ROCKA0"
+	States
+	{
+	Spawn:
+		ROCK A -1
+		Stop
+	}
+}
+
+// Rocket box --------------------------------------------------------------
+
+ACTOR RocketBox : RocketAmmo 2046
+{
+	Game Doom
+	SpawnID 141
+	Inventory.PickupMessage "$GOTROCKBOX"
+	Inventory.Amount 5
+	States
+	{
+	Spawn:
+		BROK A -1
+		Stop
+	}
+}
+
+// Cell --------------------------------------------------------------------
+
+ACTOR Cell : Ammo 2047
+{
+	Game Doom
+	SpawnID 75
+	Inventory.PickupMessage "$GOTCELL"
+	Inventory.Amount 20
+	Inventory.MaxAmount 300
+	Ammo.BackpackAmount 20
+	Ammo.BackpackMaxAmount 600
+	Inventory.Icon "CELLA0"
+	States
+	{
+	Spawn:
+		CELL A -1
+		Stop
+	}
+}
+
+// Cell pack ---------------------------------------------------------------
+
+ACTOR CellPack : Cell 17
+{
+	Game Doom
+	SpawnID 142
+	Inventory.PickupMessage "$GOTCELLBOX"
+	Inventory.Amount 100
+	States
+	{
+	Spawn:
+		CELP A -1
+		Stop
+	}
+}
+
+// Shells ------------------------------------------------------------------
+
+ACTOR Shell : Ammo 2008
+{
+	Game Doom
+	SpawnID 12
+	Inventory.PickupMessage "$GOTSHELLS"
+	Inventory.Amount 4
+	Inventory.MaxAmount 50
+	Ammo.BackpackAmount 4
+	Ammo.BackpackMaxAmount 100
+	Inventory.Icon "SHELA0"
+	States
+	{
+	Spawn:
+		SHEL A -1
+		Stop
+	}
+}
+
+// Shell box ---------------------------------------------------------------
+
+ACTOR ShellBox : Shell 2049
+{
+	Game Doom
+	SpawnID 143
+	Inventory.PickupMessage "$GOTSHELLBOX"
+	Inventory.Amount 20
+	States
+	{
+	Spawn:
+		SBOX A -1
+		Stop
+	}
+}
+
+// Backpack ---------------------------------------------------------------
+
+ACTOR Backpack : BackpackItem 8
+{
+	Game Doom
+	SpawnID 144
+	Height 26
+	Inventory.PickupMessage "$GOTBACKPACK"
+	States
+	{
+	Spawn:
+		BPAK A -1
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomarmor.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+// Armor bonus --------------------------------------------------------------
+
+Actor ArmorBonus : BasicArmorBonus 2015
+{
+	Game Doom
+	SpawnID 22
+	Radius 20
+	Height 16
+	Inventory.Pickupmessage "$GOTARMBONUS"
+	Inventory.Icon "BON2A0"
+	Armor.Savepercent 33.335
+	Armor.Saveamount 1
+	Armor.Maxsaveamount 200
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	States
+	{
+	Spawn:
+		BON2 ABCDCB 6
+		loop
+	}
+}
+
+// Green armor --------------------------------------------------------------
+
+Actor GreenArmor : BasicArmorPickup 2018
+{
+	Game Doom
+	SpawnID 68
+	Radius 20
+	Height 16
+	Inventory.Pickupmessage "$GOTARMOR"
+	Inventory.Icon "ARM1A0"
+	Armor.SavePercent 33.335
+	Armor.SaveAmount 100
+	States
+	{
+	Spawn:
+		ARM1 A 6
+		ARM1 B 7 bright
+		loop
+	}
+}
+
+// Blue armor ---------------------------------------------------------------
+
+Actor BlueArmor : BasicArmorPickup 2019
+{
+	Game Doom
+	SpawnID 69
+	Radius 20
+	Height 16
+	Inventory.Pickupmessage "$GOTMEGA"
+	Inventory.Icon "ARM2A0"
+	Armor.Savepercent 50
+	Armor.Saveamount 200
+	States
+	{
+	Spawn:
+		ARM2 A 6
+		ARM2 B 6 bright
+		loop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomartifacts.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// [BC] Applied announcer entries to some objects.
+
+// Invulnerability Sphere ---------------------------------------------------
+
+ACTOR InvulnerabilitySphere : PowerupGiver 2022
+{
+	Game Doom
+	SpawnID 133
+	+COUNTITEM
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.BIGPOWERUP
+	Inventory.MaxAmount 0
+	Powerup.Type Invulnerable
+	Powerup.Color InverseMap
+	Inventory.PickupMessage "$GOTINVUL"
+	Inventory.PickupAnnouncerEntry "invulnerability"
+	States
+	{
+	Spawn:
+		PINV ABCD 6 Bright
+		Loop
+	}
+}
+
+// Soulsphere --------------------------------------------------------------
+
+ACTOR Soulsphere : Health 2013
+{
+	Game Doom
+	SpawnID 25
+	+COUNTITEM
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.FANCYPICKUPSOUND
+	Inventory.Amount 100
+	Inventory.MaxAmount 200
+	Inventory.PickupMessage "$GOTSUPER"
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.PickupAnnouncerEntry "soulsphere"
+	States
+	{
+	Spawn:
+		SOUL ABCDCB 6 Bright
+		Loop
+	}
+}
+
+// Mega sphere --------------------------------------------------------------
+
+ACTOR MegasphereHealth : Health	// for manipulation by Dehacked
+{
+	Inventory.Amount 200
+	Inventory.MaxAmount 200
+	+INVENTORY.ALWAYSPICKUP
+}
+
+// DeHackEd can only modify the blue armor's type, not the megasphere's.
+actor BlueArmorForMegasphere : BlueArmor
+{
+	Armor.SavePercent 50
+	Armor.SaveAmount 200
+}
+
+ACTOR Megasphere : CustomInventory 83
+{
+	Game Doom
+	SpawnID 132
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTMSPHERE"
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.PickupAnnouncerEntry "megasphere"
+	States
+	{
+	Spawn:
+		MEGA ABCD 6 BRIGHT
+		Loop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
+		TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
+		Stop
+	}
+}	
+
+// Invisibility -------------------------------------------------------------
+
+ACTOR BlurSphere : PowerupGiver 2024
+{
+	Game Doom
+	SpawnID 135
+	+COUNTITEM
+	+VISIBILITYPULSE
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.BIGPOWERUP
+	Inventory.MaxAmount 0
+	Powerup.Type Invisibility
+	RenderStyle Translucent
+	Inventory.PickupMessage "$GOTINVIS"
+	Inventory.PickupAnnouncerEntry "partialinvisibility"
+	States
+	{
+	Spawn:
+		PINS ABCD 6 Bright
+		Loop
+	}
+}	
+
+// Radiation suit (aka iron feet) -------------------------------------------
+
+ACTOR RadSuit : PowerupGiver 2025
+{
+	Game Doom
+	SpawnID 136
+	Height 46
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	+INVENTORY.FORCERESPAWNINSURVIVAL
+	Inventory.MaxAmount 0
+	Inventory.PickupMessage "$GOTSUIT"
+	Powerup.Type IronFeet
+	States
+	{
+	Spawn:
+		SUIT A -1 Bright
+		Stop
+	}
+}	
+
+// infrared -----------------------------------------------------------------
+
+ACTOR Infrared : PowerupGiver 2045
+{
+	Game Doom
+	SpawnID 138
+	+COUNTITEM
+	+INVENTORY.AUTOACTIVATE
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.MaxAmount 0
+	Powerup.Type LightAmp
+	Inventory.PickupMessage "$GOTVISOR"
+	States
+	{
+	Spawn:
+		PVIS A 6 Bright
+		PVIS B 6
+		Loop
+	}
+}
+	
+// Allmap -------------------------------------------------------------------
+
+ACTOR Allmap : MapRevealer 2026
+{
+	Game Doom
+	SpawnID 137
+	+COUNTITEM
+	+INVENTORY.FANCYPICKUPSOUND
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.MaxAmount 0
+	Inventory.PickupSound "misc/p_pkup"
+	Inventory.PickupMessage "$GOTMAP"
+	States
+	{
+	Spawn:
+		PMAP ABCDCB 6 Bright
+		Loop
+	}
+}
+
+// Berserk ------------------------------------------------------------------
+
+ACTOR Berserk : CustomInventory 2023
+{
+	Game Doom
+	SpawnID 134
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTBERSERK"
+	Inventory.PickupSound "misc/p_pkup"
+	States
+	{
+	Spawn:
+		PSTR A -1
+		Stop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength")
+		TNT1 A 0 HealThing(100, 0)
+		TNT1 A 0 A_SelectWeapon("Fist")
+		Stop
+	}
+}
+	
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomdecorations.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// [BC] I've applied +USESPECIAL to all solid decorations.
+
+// Tech lamp ---------------------------------------------------------------
+
+ACTOR TechLamp 85
+{
+	Game Doom
+	Radius 16
+	Height 80
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TLMP ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Tech lamp 2 -------------------------------------------------------------
+
+ACTOR TechLamp2 86
+{
+	Game Doom
+	Radius 16
+	Height 60
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TLP2 ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Column ------------------------------------------------------------------
+
+ACTOR Column 2028
+{
+	Game Doom
+	Radius 16
+	Height 48
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COLU A -1 BRIGHT
+		Stop
+	}
+}
+
+// Tall green column -------------------------------------------------------
+
+ACTOR TallGreenColumn 30
+{
+	Game Doom
+	Radius 16
+	Height 52
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL1 A -1
+		Stop
+	}
+}
+
+// Short green column ------------------------------------------------------
+
+ACTOR ShortGreenColumn 31
+{
+	Game Doom
+	Radius 16
+	Height 40
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL2 A -1
+		Stop
+	}
+}
+
+// Tall red column ---------------------------------------------------------
+
+ACTOR TallRedColumn 32
+{
+	Game Doom
+	Radius 16
+	Height 52
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL3 A -1
+		Stop
+	}
+}
+
+// Short red column --------------------------------------------------------
+
+ACTOR ShortRedColumn 33
+{
+	Game Doom
+	Radius 16
+	Height 40
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL4 A -1
+		Stop
+	}
+}
+
+// Skull column ------------------------------------------------------------
+
+ACTOR SkullColumn 37
+{
+	Game Doom
+	Radius 16
+	Height 40
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL6 A -1
+		Stop
+	}
+}
+
+// Heart column ------------------------------------------------------------
+
+ACTOR HeartColumn 36
+{
+	Game Doom
+	Radius 16
+	Height 40
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		COL5 AB 14
+		Loop
+	}
+}
+
+// Evil eye ----------------------------------------------------------------
+
+ACTOR EvilEye 41
+{
+	Game Doom
+	Radius 16
+	Height 54
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		CEYE ABCB 6 BRIGHT
+		Loop
+	}
+}
+
+// Floating skull ----------------------------------------------------------
+
+ACTOR FloatingSkull 42
+{
+	Game Doom
+	Radius 16
+	Height 26
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		FSKU ABC 6 BRIGHT
+		Loop
+	}
+}
+
+// Torch tree --------------------------------------------------------------
+
+ACTOR TorchTree 43
+{
+	Game Doom
+	Radius 16
+	Height 56
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TRE1 A -1
+		Stop
+	}
+}
+
+// Blue torch --------------------------------------------------------------
+
+ACTOR BlueTorch 44
+{
+	Game Doom
+	Radius 16
+	Height 68
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TBLU ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Green torch -------------------------------------------------------------
+
+ACTOR GreenTorch 45
+{
+	Game Doom
+	Radius 16
+	Height 68
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TGRN ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Red torch ---------------------------------------------------------------
+
+ACTOR RedTorch 46
+{
+	Game Doom
+	Radius 16
+	Height 68
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TRED ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Short blue torch --------------------------------------------------------
+
+ACTOR ShortBlueTorch 55
+{
+	Game Doom
+	Radius 16
+	Height 37
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		SMBT ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Short green torch -------------------------------------------------------
+
+ACTOR ShortGreenTorch 56
+{
+	Game Doom
+	Radius 16
+	Height 37
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		SMGT ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Short red torch ---------------------------------------------------------
+
+ACTOR ShortRedTorch 57
+{
+	Game Doom
+	Radius 16
+	Height 37
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		SMRT ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+// Stalagtite --------------------------------------------------------------
+
+ACTOR Stalagtite 47
+{
+	Game Doom
+	Radius 16
+	Height 40
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		SMIT A -1
+		Stop
+	}
+}
+
+// Tech pillar -------------------------------------------------------------
+
+ACTOR TechPillar 48
+{
+	Game Doom
+	Radius 16
+	Height 128
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		ELEC A -1
+		Stop
+	}
+}
+
+// Candle stick ------------------------------------------------------------
+
+ACTOR Candlestick 34
+{
+	Game Doom
+	Radius 20
+	Height 14
+	ProjectilePassHeight -16
+	States
+	{
+	Spawn:
+		CAND A -1 BRIGHT
+		Stop
+	}
+}
+
+// Candelabra --------------------------------------------------------------
+
+ACTOR Candelabra 35
+{
+	Game Doom
+	Radius 16
+	Height 60
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		CBRA A -1 BRIGHT
+		Stop
+	}
+}
+
+// Bloody twitch -----------------------------------------------------------
+
+ACTOR BloodyTwitch 49
+{
+	Game Doom
+	Radius 16
+	Height 68
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		GOR1 A 10
+		GOR1 B 15
+		GOR1 C 8
+		GOR1 B 6
+		Loop
+	}
+}
+
+// Meat 2 ------------------------------------------------------------------
+
+ACTOR Meat2 50
+{
+	Game Doom
+	Radius 16
+	Height 84
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		GOR2 A -1
+		Stop
+	}
+}
+
+// Meat 3 ------------------------------------------------------------------
+
+ACTOR Meat3 51
+{
+	Game Doom
+	Radius 16
+	Height 84
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		GOR3 A -1
+		Stop
+	}
+}
+
+// Meat 4 ------------------------------------------------------------------
+
+ACTOR Meat4 52
+{
+	Game Doom
+	Radius 16
+	Height 68
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		GOR4 A -1
+		Stop
+	}
+}
+
+// Meat 5 ------------------------------------------------------------------
+
+ACTOR Meat5 53
+{
+	Game Doom
+	Radius 16
+	Height 52
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		GOR5 A -1
+		Stop
+	}
+}
+
+// Nonsolid meat -----------------------------------------------------------
+
+ACTOR NonsolidMeat2 : Meat2 59
+{
+	Game Doom
+	-SOLID
+	Radius 20
+}
+
+ACTOR NonsolidMeat3 : Meat3 61
+{
+	Game Doom
+	-SOLID
+	Radius 20
+}
+
+ACTOR NonsolidMeat4 : Meat4 60
+{
+	Game Doom
+	-SOLID
+	Radius 20
+}
+
+ACTOR NonsolidMeat5 : Meat5 62
+{
+	Game Doom
+	-SOLID
+	Radius 20
+}
+
+// Nonsolid bloody twitch --------------------------------------------------
+
+ACTOR NonsolidTwitch : BloodyTwitch 63
+{
+	Game Doom
+	-SOLID
+	Radius 20
+}
+
+// Head on a stick ---------------------------------------------------------
+
+ACTOR HeadOnAStick 27
+{
+	Game Doom
+	Radius 16
+	Height 56
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		POL4 A -1
+		Stop
+	}
+}
+
+// Heads (plural!) on a stick ----------------------------------------------
+
+ACTOR HeadsOnAStick 28
+{
+	Game Doom
+	Radius 16
+	Height 64
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		POL2 A -1
+		Stop
+	}
+}
+
+// Head candles ------------------------------------------------------------
+
+ACTOR HeadCandles 29
+{
+	Game Doom
+	Radius 16
+	Height 42
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		POL3 AB 6 BRIGHT
+		Loop
+	}
+}
+
+// Dead on a stick ---------------------------------------------------------
+
+ACTOR DeadStick 25
+{
+	Game Doom
+	Radius 16
+	Height 64
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		POL1 A -1
+		Stop
+	}
+}
+
+// Still alive on a stick --------------------------------------------------
+
+ACTOR LiveStick 26
+{
+	Game Doom
+	Radius 16
+	Height 64
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		POL6 A 6
+		POL6 B 8
+		Loop
+	}
+}
+
+// Big tree ----------------------------------------------------------------
+
+ACTOR BigTree 54
+{
+	Game Doom
+	Radius 32
+	Height 108
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		TRE2 A -1
+		Stop
+	}
+}
+
+// Burning barrel ----------------------------------------------------------
+
+ACTOR BurningBarrel 70
+{
+	Game Doom
+	SpawnID 149
+	Radius 16
+	Height 32
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		FCAN ABC 4 BRIGHT
+		Loop
+	}
+}
+
+// Hanging with no guts ----------------------------------------------------
+
+ACTOR HangNoGuts 73
+{
+	Game Doom
+	Radius 16
+	Height 88
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB1 A -1
+		Stop
+	}
+}
+
+// Hanging from bottom with no brain ---------------------------------------
+
+ACTOR HangBNoBrain 74
+{
+	Game Doom
+	Radius 16
+	Height 88
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB2 A -1
+		Stop
+	}
+}
+
+// Hanging from top, looking down ------------------------------------------
+
+ACTOR HangTLookingDown 75
+{
+	Game Doom
+	Radius 16
+	Height 64
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB3 A -1
+		Stop
+	}
+}
+
+// Hanging from top, looking up --------------------------------------------
+
+ACTOR HangTLookingUp 77
+{
+	Game Doom
+	Radius 16
+	Height 64
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB5 A -1
+		Stop
+	}
+}
+
+// Hanging from top, skully ------------------------------------------------
+
+ACTOR HangTSkull 76
+{
+	Game Doom
+	Radius 16
+	Height 64
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB4 A -1
+		Stop
+	}
+}
+
+// Hanging from top without a brain ----------------------------------------
+
+ACTOR HangTNoBrain 78
+{
+	Game Doom
+	Radius 16
+	Height 64
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB6 A -1
+		Stop
+	}
+}
+
+// Colon gibs --------------------------------------------------------------
+
+ACTOR ColonGibs 79
+{
+	Game Doom
+	SpawnID 147
+	Radius 20
+	Height 4
+	+NOBLOCKMAP
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		POB1 A -1
+		Stop
+	}
+}
+
+// Small pool o' blood -----------------------------------------------------
+
+ACTOR SmallBloodPool 80
+{
+	Game Doom
+	SpawnID 148
+	Radius 20
+	Height 1
+	+NOBLOCKMAP
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		POB2 A -1
+		Stop
+	}
+}
+
+// brain stem lying on the ground ------------------------------------------
+
+ACTOR BrainStem 81
+{
+	Game Doom
+	SpawnID 150
+	Radius 20
+	Height 4
+	+NOBLOCKMAP
+	+MOVEWITHSECTOR
+	States
+	{
+	Spawn:
+		BRS1 A -1
+		Stop
+	}
+}
+
+
+// Grey stalagmite (unused Doom sprite, definition taken from Skulltag -----
+
+ACTOR Stalagmite 5050
+{
+	Game Doom
+	// [BB] Skulltag's Stalagmite also was defined for Heretic and Hexen
+	Game Heretic
+	Game Hexen
+	Radius 16
+	Height 48
+	+SOLID
+	+USESPECIAL
+	States
+	{
+	Spawn:
+		SMT2 A -1
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomhealth.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// Health bonus -------------------------------------------------------------
+
+ACTOR HealthBonus : Health 2014
+{
+	Game Doom
+	SpawnID 152
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.Amount 1
+	Inventory.MaxAmount 200
+	Inventory.PickupMessage "$GOTHTHBONUS"
+	States
+	{
+	Spawn:
+		BON1 ABCDCB 6
+		Loop
+	}
+}
+	
+// Stimpack -----------------------------------------------------------------
+
+ACTOR Stimpack : Health 2011
+{
+	Game Doom
+	SpawnID 23
+	Inventory.Amount 10
+	Inventory.PickupMessage "$GOTSTIM"
+	States
+	{
+	Spawn:
+		STIM A -1
+		Stop
+	}
+}
+
+// Medikit -----------------------------------------------------------------
+
+ACTOR Medikit : Health 2012
+{
+	Game Doom
+	SpawnID 24
+	Inventory.Amount 25
+	Inventory.PickupMessage "$GOTMEDIKIT"
+	Health.LowMessage 25, "$GOTMEDINEED"
+	States
+	{
+	Spawn:
+		MEDI A -1
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomimp.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Imp
+//
+//===========================================================================
+ACTOR DoomImp 3001
+{
+	Game Doom
+	SpawnID 5
+	Health 60
+	Radius 20
+	Height 56
+	Mass 100
+	Speed 8
+	PainChance 200
+	Monster
+	+FLOORCLIP
+	SeeSound "imp/sight"
+	PainSound "imp/pain"
+	DeathSound "imp/death"
+	ActiveSound "imp/active"
+	HitObituary "$OB_IMPHIT"
+	Obituary "$OB_IMP"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		Loop
+	See:
+		TROO AABBCCDD 3 A_Chase
+		Loop
+	Melee:
+	Missile:
+		TROO EF 8 A_FaceTarget
+		TROO G 6 A_TroopAttack 
+		Goto See
+	Pain:
+		TROO H 2
+		TROO H 2 A_Pain
+		Goto See
+	Death:
+		TROO I 8
+		TROO J 8 A_Scream
+		TROO K 6
+		TROO L 6 A_NoBlocking
+		TROO M -1
+		Stop
+	XDeath:
+		TROO N 5
+		TROO O 5 A_XScream
+		TROO P 5
+		TROO Q 5 A_NoBlocking
+		TROO RST 5
+		TROO U -1
+		Stop
+	Raise:
+		TROO MLKJI 8
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Imp fireball
+//
+//===========================================================================
+ACTOR DoomImpBall
+{
+	Game Doom
+	SpawnID 10
+	Radius 6
+	Height 8
+	Speed 10
+	FastSpeed 20
+	Damage 3
+	Projectile
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 1
+	SeeSound "imp/attack"
+	DeathSound "imp/shotx"
+	States
+	{
+	Spawn:
+		BAL1 AB 4 BRIGHT
+		Loop
+	Death:
+		BAL1 CDE 6 BRIGHT
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomkeys.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+Actor DoomKey : Key
+{
+	Radius 20
+	Height 16
+	+NOTDMATCH
+}
+
+// Blue key card ------------------------------------------------------------
+
+Actor BlueCard : DoomKey 5
+{
+	Game Doom
+	SpawnID 85
+	Inventory.Pickupmessage "$GOTBLUECARD"
+	Inventory.Icon "STKEYS0"
+	States
+	{
+	Spawn:
+		BKEY A 10
+		BKEY B 10 bright
+		loop
+	}
+}
+
+// Yellow key card ----------------------------------------------------------
+
+Actor YellowCard : DoomKey 6
+{
+	Game Doom
+	SpawnID 87
+	Inventory.Pickupmessage "$GOTYELWCARD"
+	Inventory.Icon "STKEYS1"
+	States
+	{
+	Spawn:
+		YKEY A 10
+		YKEY B 10 bright
+		loop
+	}
+}
+
+// Red key card -------------------------------------------------------------
+
+Actor RedCard : DoomKey 13
+{
+	Game Doom
+	SpawnID 86
+	Inventory.Pickupmessage "$GOTREDCARD"
+	Inventory.Icon "STKEYS2"
+	States
+	{
+	Spawn:
+		RKEY A 10
+		RKEY B 10 bright
+		loop
+	}
+}
+
+// Blue skull key -----------------------------------------------------------
+
+Actor BlueSkull : DoomKey 40
+{
+	Game Doom
+	SpawnID 90
+	Inventory.Pickupmessage "$GOTBLUESKUL"
+	Inventory.Icon "STKEYS3"
+	States
+	{
+	Spawn:
+		BSKU A 10
+		BSKU B 10 bright
+		loop
+	}
+}
+
+// Yellow skull key ---------------------------------------------------------
+
+Actor YellowSkull : DoomKey 39
+{
+	Game Doom
+	SpawnID 88
+	Inventory.Pickupmessage "$GOTYELWSKUL"
+	Inventory.Icon "STKEYS4"
+	States
+	{
+	Spawn:
+		YSKU A 10
+		YSKU B 10 bright
+		loop
+	}
+}
+
+// Red skull key ------------------------------------------------------------
+
+Actor RedSkull : DoomKey 38
+{
+	Game Doom
+	SpawnID 89
+	Inventory.Pickupmessage "$GOTREDSKUL"
+	Inventory.Icon "STKEYS5"
+	States
+	{
+	Spawn:
+		RSKU A 10
+		RSKU B 10 bright
+		loop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doommisc.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// The barrel of green goop ------------------------------------------------
+
+ACTOR ExplosiveBarrel 2035
+{
+	Game Doom
+	SpawnID 125
+	Health 20
+	Radius 10
+	Height 42
+	+SOLID
+	+SHOOTABLE
+	+NOBLOOD
+	+ACTIVATEMCROSS
+	+DONTGIB
+	+NOICEDEATH
+	+OLDRADIUSDMG
+	DeathSound "world/barrelx"
+	Obituary "$OB_BARREL"
+	States
+	{
+	Spawn:
+		BAR1 AB 6
+		Loop
+	Death:
+		BEXP A 5 BRIGHT
+		BEXP B 5 BRIGHT A_Scream
+		BEXP C 5 BRIGHT
+		BEXP D 5 BRIGHT A_Explode
+		BEXP E 10 BRIGHT
+		TNT1 A 1050 BRIGHT A_BarrelDestroy
+		TNT1 A 5 A_Respawn
+		Wait
+	}
+}
+
+// Bullet puff -------------------------------------------------------------
+
+ACTOR BulletPuff
+{
+	Game Doom
+	SpawnID 131
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+ALLOWPARTICLES
+	+RANDOMIZE
+	// [BC] No need to tag it with a network ID.
+	+NONETID
+	RenderStyle Translucent
+	Alpha 0.5
+	VSpeed 1
+	Mass 5
+	States
+	{
+	Spawn:
+		PUFF A 4 Bright
+		PUFF B 4
+	Melee:
+		PUFF CD 4
+		Stop
+	}
+}
+	
+// Container for an unused state -------------------------------------------
+
+/* Doom defined the states S_STALAG, S_DEADTORSO, and S_DEADBOTTOM but never
+ * actually used them. For compatibility with DeHackEd patches, they still
+ * need to be kept around. This actor serves that purpose.
+ */
+
+ACTOR DoomUnusedStates
+{
+	States
+	{
+	Label1:
+		SMT2 A -1
+		stop
+	Label2:
+		PLAY N -1
+		stop
+		PLAY S -1
+		stop
+	TNT: // MBF compatibility
+		TNT1 A -1
+		Loop
+	}
+}
+
+// MBF Beta emulation items
+
+Actor EvilSceptre : ScoreItem 2016
+{
+	Game Doom
+	Inventory.PickupMessage "$BETA_BONUS3"
+	States
+	{
+	Spawn:
+		BON3 A 6
+		Loop
+	}
+}
+
+Actor UnholyBible : ScoreItem 2017
+{
+	Game Doom
+	Inventory.PickupMessage "$BETA_BONUS4"
+	States
+	{
+	Spawn:
+		BON4 A 6
+		Loop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomplayer.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Player
+//
+//===========================================================================
+ACTOR DoomPlayer : PlayerPawn
+{
+	Speed 1
+	Health 100
+	Radius 16
+	Height 56
+	Mass 100
+	PainChance 255
+	Player.DisplayName "Marine"
+	Player.CrouchSprite "PLYC"
+	Player.StartItem "Pistol"
+	Player.StartItem "Fist"
+	Player.StartItem "Clip", 50
+	Player.WeaponSlot 1, Fist, Chainsaw
+	Player.WeaponSlot 2, Pistol
+	Player.WeaponSlot 3, Shotgun, SuperShotgun
+	Player.WeaponSlot 4, Chaingun, Minigun			// [BC] Create default binding for the minigun.
+	Player.WeaponSlot 5, RocketLauncher, GrenadeLauncher	// [BC] Create default binding for the grenade launcher.
+	Player.WeaponSlot 6, PlasmaRifle, Railgun		// [BC] Create default binding for the railgun.
+	Player.WeaponSlot 7, BFG9000, BFG10K			// [BC] Create default binding for the BFG10K.
+	
+	Player.ColorRange 112, 127
+	Player.Colorset 0, "Green",			0x70, 0x7F,  0x72
+	Player.Colorset 1, "Gray",			0x60, 0x6F,  0x62
+	Player.Colorset 2, "Brown",			0x40, 0x4F,  0x42
+	Player.Colorset 3, "Red",			0x20, 0x2F,  0x22
+	// Doom Legacy additions
+	Player.Colorset 4, "Light Gray",	0x58, 0x67,  0x5A
+	Player.Colorset 5, "Light Brown",	0x38, 0x47,  0x3A
+	Player.Colorset 6, "Light Red",		0xB0, 0xBF,  0xB2
+	Player.Colorset 7, "Light Blue",	0xC0, 0xCF,  0xC2
+	States
+	{
+	Spawn:
+		PLAY A -1
+		Loop
+	See:
+		PLAY ABCD 4
+		Loop
+	Missile:
+		PLAY E 12
+		Goto Spawn
+	Melee:
+		PLAY F 6 BRIGHT
+		Goto Missile
+	Pain:
+		PLAY G 4
+		PLAY G 4 A_Pain
+		Goto Spawn
+	Death:
+		PLAY H 0 A_PlayerSkinCheck("AltSkinDeath")
+	Death1:
+		PLAY H 10
+		PLAY I 10 A_PlayerScream
+		PLAY J 10 A_NoBlocking
+		PLAY KLM 10
+		PLAY N -1
+		Stop
+	XDeath:
+		PLAY O 0 A_PlayerSkinCheck("AltSkinXDeath")
+	XDeath1:
+		PLAY O 5
+		PLAY P 5 A_XScream
+		PLAY Q 5 A_NoBlocking
+		PLAY RSTUV 5
+		PLAY W -1
+		Stop
+	AltSkinDeath:
+		PLAY H 6
+		PLAY I 6 A_PlayerScream
+		PLAY JK 6
+		PLAY L 6 A_NoBlocking
+		PLAY MNO 6
+		PLAY P -1
+		Stop
+	AltSkinXDeath:
+		PLAY Q 5 A_PlayerScream
+		PLAY R 0 A_NoBlocking
+		PLAY R 5 A_SkullPop
+		PLAY STUVWX 5
+		PLAY Y -1
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomspawners.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//=================================================================================================
+//
+// Monsters
+//
+//=================================================================================================
+
+//=================================================================================================
+//
+// Weak monster spawner
+//
+//=================================================================================================
+
+ACTOR WeakDoomMonsterSpot : CustomMonsterInvasionSpot 5201
+{
+	Game Doom
+	DropItem "ZombieMan"
+	DropItem "ShotgunGuy"
+	DropItem "DoomImp"
+	DropItem "Demon"
+	DropItem "LostSoul"
+}
+
+//=================================================================================================
+//
+// Powerful monster spawner
+//
+//=================================================================================================
+
+ACTOR PowerfulDoomMonsterSpot : CustomMonsterInvasionSpot 5202
+{
+	Game Doom
+	DropItem "ChaingunGuy"
+	DropItem "Cacodemon"
+	DropItem "Revenant"
+	DropItem "HellKnight"
+	DropItem "BaronOfHell"
+	DropItem "Arachnotron"
+	DropItem "Fatso"
+	DropItem "PainElemental"
+}
+
+//=================================================================================================
+//
+// Very powerful monster spawner
+//
+//=================================================================================================
+
+ACTOR VeryPowerfulDoomMonsterSpot : CustomMonsterInvasionSpot 5203
+{
+	Game Doom
+	DropItem "Archvile"
+}
+
+//=================================================================================================
+//
+// Any monster spawner
+//
+//=================================================================================================
+
+ACTOR AnyDoomMonsterSpot : CustomMonsterInvasionSpot 5204
+{
+	Game Doom
+	DropItem "DoomImp"
+	DropItem "Demon"
+	DropItem "Spectre"
+	DropItem "ZombieMan"
+	DropItem "ShotgunGuy"
+	DropItem "ChaingunGuy"
+	DropItem "Cacodemon"
+	DropItem "Revenant"
+	DropItem "Fatso"
+	DropItem "Arachnotron"
+	DropItem "HellKnight"
+	DropItem "BaronOfHell"
+	DropItem "LostSoul"
+	DropItem "PainElemental"
+	DropItem "Cyberdemon"
+	DropItem "SpiderMastermind"
+	DropItem "Archvile"
+}
+
+//=================================================================================================
+//
+// Imp spawner
+//
+//=================================================================================================
+
+ACTOR ImpSpot : CustomMonsterInvasionSpot 5205
+{
+	Game Doom
+	DropItem "DoomImp"
+}
+
+//=================================================================================================
+//
+// Demon spawner
+//
+//=================================================================================================
+
+ACTOR DemonSpot : CustomMonsterInvasionSpot 5207
+{
+	Game Doom
+	DropItem "Demon"
+}
+
+//=================================================================================================
+//
+// Spectre spawner
+//
+//=================================================================================================
+
+ACTOR SpectreSpot : CustomMonsterInvasionSpot 5208
+{
+	Game Doom
+	DropItem "Spectre"
+}
+
+//=================================================================================================
+//
+// Zombieman spawner
+//
+//=================================================================================================
+
+ACTOR ZombieManSpot : CustomMonsterInvasionSpot 5210
+{
+	Game Doom
+	DropItem "ZombieMan"
+}
+
+//=================================================================================================
+//
+// Shotgun guy spawner
+//
+//=================================================================================================
+
+ACTOR ShotgunGuySpot : CustomMonsterInvasionSpot 5211
+{
+	Game Doom
+	DropItem "ShotgunGuy"
+}
+
+//=================================================================================================
+//
+// Chaingun guy spawner
+//
+//=================================================================================================
+
+ACTOR ChaingunGuySpot : CustomMonsterInvasionSpot 5212
+{
+	Game Doom
+	DropItem "ChaingunGuy"
+}
+
+//=================================================================================================
+//
+// Cacodemon spawner
+//
+//=================================================================================================
+
+ACTOR CacodemonSpot : CustomMonsterInvasionSpot 5214
+{
+	Game Doom
+	DropItem "Cacodemon"
+}
+
+//=================================================================================================
+//
+// Revenant spawner
+//
+//=================================================================================================
+
+ACTOR RevenantSpot : CustomMonsterInvasionSpot 5217
+{
+	Game Doom
+	DropItem "Revenant"
+}
+
+//=================================================================================================
+//
+// Fatso spawner
+//
+//=================================================================================================
+
+ACTOR FatsoSpot : CustomMonsterInvasionSpot 5218
+{
+	Game Doom
+	DropItem "Fatso"
+}
+
+//=================================================================================================
+//
+// Arachnotron spawner
+//
+//=================================================================================================
+
+ACTOR ArachnotronSpot : CustomMonsterInvasionSpot 5220
+{
+	Game Doom
+	DropItem "Arachnotron"
+}
+
+//=================================================================================================
+//
+// Hell knight spawner
+//
+//=================================================================================================
+
+ACTOR HellKnightSpot : CustomMonsterInvasionSpot 5221
+{
+	Game Doom
+	DropItem "HellKnight"
+}
+
+//=================================================================================================
+//
+// Baron of Hell spawner
+//
+//=================================================================================================
+
+ACTOR BaronOfHellSpot : CustomMonsterInvasionSpot 5222
+{
+	Game Doom
+	DropItem "BaronOfHell"
+}
+
+//=================================================================================================
+//
+// Lost soul spawner
+//
+//=================================================================================================
+
+ACTOR LostSoulSpot : CustomMonsterInvasionSpot 5224
+{
+	Game Doom
+	DropItem "LostSoul"
+}
+
+//=================================================================================================
+//
+// Pain elemental spawner
+//
+//=================================================================================================
+
+ACTOR PainElementalSpot : CustomMonsterInvasionSpot 5225
+{
+	Game Doom
+	DropItem "PainElemental"
+}
+
+//=================================================================================================
+//
+// Cyberdemon spawner
+//
+//=================================================================================================
+
+ACTOR CyberdemonSpot : CustomMonsterInvasionSpot 5226
+{
+	Game Doom
+	DropItem "Cyberdemon"
+}
+
+//=================================================================================================
+//
+// Spider mastermind spawner
+//
+//=================================================================================================
+
+ACTOR SpiderMastermindSpot : CustomMonsterInvasionSpot 5227
+{
+	Game Doom
+	DropItem "SpiderMastermind"
+}
+
+//=================================================================================================
+//
+// Arch-vile spawner
+//
+//=================================================================================================
+
+ACTOR ArchvileSpot : CustomMonsterInvasionSpot 5228
+{
+	Game Doom
+	DropItem "Archvile"
+}
+
+//=================================================================================================
+//
+// Wolfenstein SS spawner
+//
+//=================================================================================================
+
+ACTOR WolfensteinSSSpot : CustomMonsterInvasionSpot 5280
+{
+	Game Doom
+	DropItem "WolfensteinSS"
+}
+
+
+//=================================================================================================
+//
+// Items
+//
+//=================================================================================================
+
+//=================================================================================================
+//
+// Stimpack spawner
+//
+//=================================================================================================
+
+ACTOR StimpackSpot : CustomPickupInvasionSpot 5229
+{
+	Game Doom
+	DropItem "Stimpack"
+}
+
+//=================================================================================================
+//
+// Medikit spawner
+//
+//=================================================================================================
+
+ACTOR MedikitSpot : CustomPickupInvasionSpot 5230
+{
+	Game Doom
+	DropItem "Medikit"
+}
+
+//=================================================================================================
+//
+// Health bonus spawner
+//
+//=================================================================================================
+
+ACTOR HealthBonusSpot : CustomPickupInvasionSpot 5231
+{
+	Game Doom
+	DropItem "HealthBonus"
+}
+
+//=================================================================================================
+//
+// Armor bonus spawner
+//
+//=================================================================================================
+
+ACTOR ArmorBonusSpot : CustomPickupInvasionSpot 5232
+{
+	Game Doom
+	DropItem "ArmorBonus"
+}
+
+//=================================================================================================
+//
+// Max. health bonus spawner
+//
+//=================================================================================================
+
+ACTOR MaxHealthBonusSpot : CustomPickupInvasionSpot 5233
+{
+	Game Doom
+	DropItem "MaxHealthBonus"
+}
+
+//=================================================================================================
+//
+// Max. armor bonus spawner
+//
+//=================================================================================================
+
+ACTOR MaxArmorBonusSpot : CustomPickupInvasionSpot 5234
+{
+	Game Doom
+	DropItem "MaxArmorBonus"
+}
+
+//=================================================================================================
+//
+// Green armor spawner
+//
+//=================================================================================================
+
+ACTOR GreenArmorSpot : CustomPickupInvasionSpot 5235
+{
+	Game Doom
+	DropItem "GreenArmor"
+}
+
+//=================================================================================================
+//
+// Blue armor spawner
+//
+//=================================================================================================
+
+ACTOR BlueArmorSpot : CustomPickupInvasionSpot 5236
+{
+	Game Doom
+	DropItem "BlueArmor"
+}
+
+//=================================================================================================
+//
+// Doomsphere spawner
+//
+//=================================================================================================
+
+ACTOR DoomsphereSpot : CustomPickupInvasionSpot 5238
+{
+	Game Doom
+	DropItem "Doomsphere"
+}
+
+//=================================================================================================
+//
+// Guardsphere spawner
+//
+//=================================================================================================
+
+ACTOR GuardsphereSpot : CustomPickupInvasionSpot 5239
+{
+	Game Doom
+	DropItem "Guardsphere"
+}
+
+//=================================================================================================
+//
+// Invisibility sphere spawner
+//
+//=================================================================================================
+
+ACTOR InvisibilitySphereSpot : CustomPickupInvasionSpot 5240
+{
+	Game Doom
+	DropItem "InvisibilitySphere"
+}
+
+//=================================================================================================
+//
+// Blur sphere spawner
+//
+//=================================================================================================
+
+ACTOR BlurSphereSpot : CustomPickupInvasionSpot 5241
+{
+	Game Doom
+	DropItem "BlurSphere"
+}
+
+//=================================================================================================
+//
+// Invulnerability sphere spawner
+//
+//=================================================================================================
+
+ACTOR InvulnerabilitySphereSpot : CustomPickupInvasionSpot 5242
+{
+	Game Doom
+	DropItem "InvulnerabilitySphere"
+}
+
+//=================================================================================================
+//
+// Megasphere spawner
+//
+//=================================================================================================
+
+ACTOR MegasphereSpot : CustomPickupInvasionSpot 5243
+{
+	Game Doom
+	DropItem "Megasphere"
+}
+
+//=================================================================================================
+//
+// Random powerup spawner
+//
+//=================================================================================================
+
+ACTOR RandomPowerupSpot : CustomPickupInvasionSpot 5244
+{
+	Game Doom
+	DropItem "RandomPowerup"
+}
+
+//=================================================================================================
+//
+// Soulsphere spawner
+//
+//=================================================================================================
+
+ACTOR SoulsphereSpot : CustomPickupInvasionSpot 5245
+{
+	Game Doom
+	DropItem "Soulsphere"
+}
+
+//=================================================================================================
+//
+// Time freeze sphere spawner
+//
+//=================================================================================================
+
+ACTOR TimeFreezeSphereSpot : CustomPickupInvasionSpot 5246
+{
+	Game Doom
+	DropItem "TimeFreezeSphere"
+}
+
+//=================================================================================================
+//
+// Turbosphere spawner
+//
+//=================================================================================================
+
+ACTOR TurbosphereSpot : CustomPickupInvasionSpot 5247
+{
+	Game Doom
+	DropItem "Turbosphere"
+}
+
+
+//=================================================================================================
+//
+// Runes
+//
+//=================================================================================================
+
+//=================================================================================================
+//
+// Strength rune spawner
+//
+//=================================================================================================
+
+ACTOR StrengthRuneSpot : CustomPickupInvasionSpot 5248
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "StrengthRune"
+}
+
+//=================================================================================================
+//
+// Rage rune spawner
+//
+//=================================================================================================
+
+ACTOR RageRuneSpot : CustomPickupInvasionSpot 5249
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "RageRune"
+}
+
+//=================================================================================================
+//
+// Drain rune spawner
+//
+//=================================================================================================
+
+ACTOR DrainRuneSpot : CustomPickupInvasionSpot 5250
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "DrainRune"
+}
+
+//=================================================================================================
+//
+// Spread rune spawner
+//
+//=================================================================================================
+
+ACTOR SpreadRuneSpot : CustomPickupInvasionSpot 5251
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "SpreadRune"
+}
+
+//=================================================================================================
+//
+// Resistance rune spawner
+//
+//=================================================================================================
+
+ACTOR ResistanceRuneSpot : CustomPickupInvasionSpot 5252
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "ResistanceRune"
+}
+
+//=================================================================================================
+//
+// Regeneration rune spawner
+//
+//=================================================================================================
+
+ACTOR RegenerationRuneSpot : CustomPickupInvasionSpot 5253
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "RegenerationRune"
+}
+
+//=================================================================================================
+//
+// Prosperity rune spawner
+//
+//=================================================================================================
+
+ACTOR ProsperityRuneSpot : CustomPickupInvasionSpot 5254
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "ProsperityRune"
+}
+
+//=================================================================================================
+//
+// Reflection rune spawner
+//
+//=================================================================================================
+
+ACTOR ReflectionRuneSpot : CustomPickupInvasionSpot 5255
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "ReflectionRune"
+}
+
+//=================================================================================================
+//
+// Haste rune spawner
+//
+//=================================================================================================
+
+ACTOR HasteRuneSpot : CustomPickupInvasionSpot 5256
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "HasteRune"
+}
+
+//=================================================================================================
+//
+// High jump rune spawner
+//
+//=================================================================================================
+
+ACTOR HighJumpRuneSpot : CustomPickupInvasionSpot 5257
+{
+	Game Doom
+	Game Heretic
+	Game Hexen
+	DropItem "HighJumpRune"
+}
+
+
+//=================================================================================================
+//
+// Ammo
+//
+//=================================================================================================
+
+//=================================================================================================
+//
+// Clip spawner
+//
+//=================================================================================================
+
+ACTOR ClipSpot : CustomPickupInvasionSpot 5258
+{
+	Game Doom
+	DropItem "Clip"
+}
+
+//=================================================================================================
+//
+// Shell spawner
+//
+//=================================================================================================
+
+ACTOR ShellSpot : CustomPickupInvasionSpot 5259
+{
+	Game Doom
+	DropItem "Shell"
+}
+
+//=================================================================================================
+//
+// Rocket ammo spawner
+//
+//=================================================================================================
+
+ACTOR RocketAmmoSpot : CustomPickupInvasionSpot 5260
+{
+	Game Doom
+	DropItem "RocketAmmo"
+}
+
+//=================================================================================================
+//
+// Cell spawner
+//
+//=================================================================================================
+
+ACTOR CellSpot : CustomPickupInvasionSpot 5261
+{
+	Game Doom
+	DropItem "Cell"
+}
+
+//=================================================================================================
+//
+// Clip box spawner
+//
+//=================================================================================================
+
+ACTOR ClipBoxSpot : CustomPickupInvasionSpot 5262
+{
+	Game Doom
+	DropItem "ClipBox"
+}
+
+//=================================================================================================
+//
+// Shell box spawner
+//
+//=================================================================================================
+
+ACTOR ShellBoxSpot : CustomPickupInvasionSpot 5263
+{
+	Game Doom
+	DropItem "ShellBox"
+}
+
+//=================================================================================================
+//
+// Rocket box spawner
+//
+//=================================================================================================
+
+ACTOR RocketBoxSpot : CustomPickupInvasionSpot 5264
+{
+	Game Doom
+	DropItem "RocketBox"
+}
+
+//=================================================================================================
+//
+// Cell pack spawner
+//
+//=================================================================================================
+
+ACTOR CellPackSpot : CustomPickupInvasionSpot 5265
+{
+	Game Doom
+	DropItem "CellPack"
+}
+
+//=================================================================================================
+//
+// Random clip ammo spawner
+//
+//=================================================================================================
+
+ACTOR RandomClipAmmoSpot : CustomPickupInvasionSpot 5278
+{
+	Game Doom
+	DropItem "Clip"
+	DropItem "Shell"
+	DropItem "RocketAmmo"
+	DropItem "Cell"
+}
+
+//=================================================================================================
+//
+// Random box ammo spawner
+//
+//=================================================================================================
+
+ACTOR RandomBoxAmmoSpot : CustomPickupInvasionSpot 5279
+{
+	Game Doom
+	DropItem "ClipBox"
+	DropItem "ShellBox"
+	DropItem "RocketBox"
+	DropItem "CellPack"
+}
+
+//=================================================================================================
+//
+// Backpack spawner
+//
+//=================================================================================================
+
+ACTOR BackpackSpot : CustomPickupInvasionSpot 5281
+{
+	Game Doom
+	DropItem "Backpack"
+}
+
+//=================================================================================================
+//
+// Berserk spawner
+//
+//=================================================================================================
+
+ACTOR BerserkSpot : CustomPickupInvasionSpot 5266
+{
+	Game Doom
+	DropItem "Berserk"
+}
+
+
+//=================================================================================================
+//
+// Weapons
+//
+//=================================================================================================
+
+//=================================================================================================
+//
+// Chainsaw spawner
+//
+//=================================================================================================
+
+ACTOR ChainsawSpot : CustomWeaponInvasionSpot 5267
+{
+	Game Doom
+	DropItem "Chainsaw"
+}
+
+//=================================================================================================
+//
+// Shotgun spawner
+//
+//=================================================================================================
+
+ACTOR ShotgunSpot : CustomWeaponInvasionSpot 5268
+{
+	Game Doom
+	DropItem "Shotgun"
+}
+
+//=================================================================================================
+//
+// Super shotgun spawner
+//
+//=================================================================================================
+
+ACTOR SuperShotgunSpot : CustomWeaponInvasionSpot 5269
+{
+	Game Doom
+	DropItem "SuperShotgun"
+}
+
+//=================================================================================================
+//
+// Chaingun spawner
+//
+//=================================================================================================
+
+ACTOR ChaingunSpot : CustomWeaponInvasionSpot 5270
+{
+	Game Doom
+	DropItem "Chaingun"
+}
+
+//=================================================================================================
+//
+// Rocket launcher spawner
+//
+//=================================================================================================
+
+ACTOR RocketLauncherSpot : CustomWeaponInvasionSpot 5272
+{
+	Game Doom
+	DropItem "RocketLauncher"
+}
+
+//=================================================================================================
+//
+// Plasma rifle spawner
+//
+//=================================================================================================
+
+ACTOR PlasmaRifleSpot : CustomWeaponInvasionSpot 5274
+{
+	Game Doom
+	DropItem "PlasmaRifle"
+}
+
+//=================================================================================================
+//
+// BFG9000 spawner
+//
+//=================================================================================================
+
+ACTOR BFG9000Spot : CustomWeaponInvasionSpot 5276
+{
+	Game Doom
+	DropItem "BFG9000"
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\doomweapons.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+// --------------------------------------------------------------------------
+//
+// Doom weapon base class
+//
+// --------------------------------------------------------------------------
+
+ACTOR DoomWeapon : Weapon
+{
+	Weapon.Kickback 100
+}
+
+// --------------------------------------------------------------------------
+//
+// Fist
+//
+// --------------------------------------------------------------------------
+
+ACTOR Fist : Weapon
+{
+	Game Doom
+	Weapon.SelectionOrder 3700
+	Weapon.Kickback 100
+	Obituary "$OB_MPFIST"
+	Tag "$TAG_FIST"
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.MELEEWEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	States
+	{
+	Ready:
+		PUNG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PUNG A 1 A_Lower
+		Loop
+	Select:
+		PUNG A 1 A_Raise
+		Loop
+	Fire:
+		PUNG B 4
+		PUNG C 4 A_Punch
+		PUNG D 5
+		PUNG C 4
+		PUNG B 5 A_ReFire
+		Goto Ready
+	}
+}
+	
+
+// --------------------------------------------------------------------------
+//
+// Pistol 
+//
+// --------------------------------------------------------------------------
+
+ACTOR Pistol : DoomWeapon 5010
+{
+	Game Doom
+	Weapon.SelectionOrder 1900
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 20
+	Weapon.AmmoType "Clip"
+	Obituary "$OB_MPPISTOL"
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED"
+	Tag "$TAG_PISTOL"
+	Radius 20
+	Height 16
+	States
+	{
+	Ready:
+		PISG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PISG A 1 A_Lower
+		Loop
+	Select:
+		PISG A 1 A_Raise
+		Loop
+	Fire:
+		PISG A 4
+		PISG B 6 A_FirePistol
+		PISG C 4
+		PISG B 5 A_ReFire
+		Goto Ready
+	Flash:
+		PISF A 7 Bright A_Light1
+		Goto LightDone
+		PISF A 7 Bright A_Light1
+		Goto LightDone
+ 	Spawn:
+		PIST A -1
+		Stop
+	}
+}
+		
+// --------------------------------------------------------------------------
+//
+// Chainsaw
+//
+// --------------------------------------------------------------------------
+
+ACTOR Chainsaw : Weapon 2005
+{
+	Game Doom
+	SpawnID 32
+	Weapon.Kickback 0
+	Weapon.SelectionOrder 2200
+	Weapon.UpSound "weapons/sawup"
+	Weapon.ReadySound "weapons/sawidle"
+	Inventory.PickupMessage "$GOTCHAINSAW"
+	Obituary "$OB_MPCHAINSAW"
+	Tag "$TAG_CHAINSAW"
+	+WEAPON.MELEEWEAPON		
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	States
+	{
+	Ready:
+		SAWG CD 4 A_WeaponReady
+		Loop
+	Deselect:
+		SAWG C 1 A_Lower
+		Loop
+	Select:
+		SAWG C 1 A_Raise
+		Loop
+	Fire:
+		SAWG AB 4 A_Saw
+		SAWG B 0 A_ReFire
+		Goto Ready
+	Spawn:
+		CSAW A -1
+		Stop
+	}
+}
+	
+
+// --------------------------------------------------------------------------
+//
+// Shotgun
+//
+// --------------------------------------------------------------------------
+
+ACTOR Shotgun : DoomWeapon 2001
+{
+	Game Doom
+	SpawnID 27
+	Weapon.SelectionOrder 1300
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 8
+	Weapon.AmmoType "Shell"
+	Inventory.PickupMessage "$GOTSHOTGUN"
+	Obituary "$OB_MPSHOTGUN"
+	Tag "$TAG_SHOTGUN"
+	States
+	{
+	Ready:
+		SHTG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		SHTG A 1 A_Lower
+		Loop
+	Select:
+		SHTG A 1 A_Raise
+		Loop
+	Fire:
+		SHTG A 3
+		SHTG A 7 A_FireShotgun
+		SHTG BC 5
+		SHTG D 4
+		SHTG CB 5
+		SHTG A 3
+		SHTG A 7 A_ReFire
+		Goto Ready
+	Flash:
+		SHTF A 4 Bright A_Light1
+		SHTF B 3 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		SHOT A -1
+		Stop
+	}
+}	
+
+// --------------------------------------------------------------------------
+//
+// SuperShotgun
+//
+// --------------------------------------------------------------------------
+
+ACTOR SuperShotgun : DoomWeapon 82
+{
+	Game Doom
+	SpawnID 33
+	Weapon.SelectionOrder 400
+	Weapon.AmmoUse 2
+	Weapon.AmmoGive 8
+	Weapon.AmmoType "Shell"
+	Inventory.PickupMessage "$GOTSHOTGUN2"
+	Obituary "$OB_MPSSHOTGUN"
+	Tag "$TAG_SUPERSHOTGUN"
+	States
+	{
+	Ready:
+		SHT2 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		SHT2 A 1 A_Lower
+		Loop
+	Select:
+		SHT2 A 1 A_Raise
+		Loop
+	Fire:
+		SHT2 A 3
+		SHT2 A 7 A_FireShotgun2
+		SHT2 B 7
+		SHT2 C 7 A_CheckReload
+		SHT2 D 7 A_OpenShotgun2
+		SHT2 E 7
+		SHT2 F 7 A_LoadShotgun2
+		SHT2 G 6
+		SHT2 H 6 A_CloseShotgun2
+		SHT2 A 5 A_ReFire
+		Goto Ready
+	// unused states
+		SHT2 B 7
+		SHT2 A 3
+		Goto Deselect
+	Flash:
+		SHT2 I 4 Bright A_Light1
+		SHT2 J 3 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		SGN2 A -1
+		Stop
+	}
+}
+
+// --------------------------------------------------------------------------
+//
+// Chaingun
+//
+// --------------------------------------------------------------------------
+
+ACTOR Chaingun : DoomWeapon 2002
+{
+	Game Doom
+	SpawnID 28
+	Weapon.SelectionOrder 700
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 20
+	Weapon.AmmoType "Clip"
+	Inventory.PickupMessage "$GOTCHAINGUN"
+	Obituary "$OB_MPCHAINGUN"
+	Tag "$TAG_CHAINGUN"
+	States
+	{
+	Ready:
+		CHGG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		CHGG A 1 A_Lower
+		Loop
+	Select:
+		CHGG A 1 A_Raise
+		Loop
+	Fire:
+		CHGG AB 4 A_FireCGun
+		CHGG B 0 A_ReFire
+		Goto Ready
+	Flash:
+		CHGF A 5 Bright A_Light1
+		Goto LightDone
+		CHGF B 5 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		MGUN A -1
+		Stop
+	}
+}
+
+// --------------------------------------------------------------------------
+//
+// Rocket launcher
+//
+// --------------------------------------------------------------------------
+
+ACTOR RocketLauncher : DoomWeapon 2003
+{
+	Game Doom
+	SpawnID 29
+	Weapon.SelectionOrder 2500
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 2
+	Weapon.AmmoType "RocketAmmo"
+	+WEAPON.NOAUTOFIRE
+	Inventory.PickupMessage "$GOTLAUNCHER"
+	Tag "$TAG_ROCKETLAUNCHER"
+	States
+	{
+	Ready:
+		MISG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		MISG A 1 A_Lower
+		Loop
+	Select:
+		MISG A 1 A_Raise
+		Loop
+	Fire:
+		MISG B 8 A_GunFlash
+		MISG B 12 A_FireMissile
+		MISG B 0 A_ReFire
+		Goto Ready
+	Flash:
+		MISF A 3 Bright A_Light1
+		MISF B 4 Bright
+		MISF CD 4 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		LAUN A -1
+		Stop
+	}
+}
+
+ACTOR Rocket
+{
+	Game Doom
+	SpawnID 127
+	Radius 11
+	Height 8
+	Speed 20
+	Damage 20
+	DamageType Fire
+	Projectile
+	+RANDOMIZE
+	+DEHEXPLOSION
+	+ROCKETTRAIL
+	+EXPLODEONDEATH
+	SeeSound "weapons/rocklf"
+	DeathSound "weapons/rocklx"
+	Obituary "$OB_MPROCKET"
+	States
+	{
+	Spawn:
+		MISL A 1 Bright
+		Loop
+	Death:
+		MISL B 8 Bright A_Explode
+		MISL C 6 Bright
+		MISL D 4 Bright
+		Stop
+	}
+}
+
+// --------------------------------------------------------------------------
+//
+// Grenade -- [BB] Skulltag version, with MBF stuff added to it
+//
+// --------------------------------------------------------------------------
+
+ACTOR Grenade native
+{
+	Game Doom
+	SpawnID 216
+	Radius 8
+	Height 8
+	Speed 25
+	Damage 20
+	ReactionTime 87
+	Projectile
+	-NOGRAVITY
+	+DOOMBOUNCE
+	+RANDOMIZE
+	+DEHEXPLOSION
+	+GRENADETRAIL
+	+QUARTERGRAVITY
+	+EXPLODEONDEATH
+	+USESTBOUNCESOUND
+	SeeSound "weapons/grenlf"
+	DeathSound "weapons/grenlx"
+	Obituary "$OB_GRENADE"
+	DamageType Grenade
+
+	States
+	{
+	Spawn:
+		SGRN A 1 bright A_CountDown
+		Loop
+	Death:
+		MISL B 0 Bright A_ChangeFlag ( "NoGravity", 1 )
+		MISL B 8 bright A_Explode
+		MISL C 6 bright
+		MISL D 4 bright
+		stop
+	Grenade:
+		MISL A 1000 A_Die
+		Wait
+	Detonate:
+		MISL B 4 A_Scream
+		MISL C 6 A_Detonate
+		MISL D 10
+		Stop
+	Mushroom:
+		MISL B 8 A_Mushroom
+		Goto Death+1
+	}
+
+}
+
+// --------------------------------------------------------------------------
+//
+// Plasma rifle
+//
+// --------------------------------------------------------------------------
+
+ACTOR PlasmaRifle : DoomWeapon 2004
+{
+	Game Doom
+	SpawnID 30
+	Weapon.SelectionOrder 100
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 40
+	Weapon.AmmoType "Cell"
+	Inventory.PickupMessage "$GOTPLASMA"
+	Tag "$TAG_PLASMARIFLE"
+	States
+	{
+	Ready:
+		PLSG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PLSG A 1 A_Lower
+		Loop
+	Select:
+		PLSG A 1 A_Raise
+		Loop
+	Fire:
+		PLSG A 3 A_FirePlasma
+		PLSG B 20 A_ReFire
+		Goto Ready
+	Flash:
+		PLSF A 4 Bright A_Light1
+		Goto LightDone
+		PLSF B 4 Bright A_Light1
+		Goto LightDone
+	Spawn:
+		PLAS A -1
+		Stop
+	}
+}
+
+ACTOR PlasmaBall
+{
+	Game Doom
+	SpawnID 51
+	Radius 13
+	Height 8
+	Speed 25
+	Damage 5
+	Projectile
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 0.75
+	SeeSound "weapons/plasmaf"
+	DeathSound "weapons/plasmax"
+	Obituary "$OB_MPPLASMARIFLE"
+	States
+	{
+	Spawn:
+		PLSS AB 6 Bright
+		Loop
+	Death:
+		PLSE ABCDE 4 Bright
+		Stop
+	}
+}
+
+// --------------------------------------------------------------------------
+//
+// BFG 2704
+//
+// --------------------------------------------------------------------------
+
+ACTOR PlasmaBall1 : PlasmaBall
+{
+	Damage 4
+	BounceType "Classic"
+	BounceFactor 1.0
+	Obituary "$OB_MPBFG_MBF"
+	States
+	{
+	Spawn:
+		PLS1 AB 6 Bright
+		Loop
+	Death:
+		PLS1 CDEFG 4 Bright
+		Stop
+	}
+}
+	
+ACTOR PlasmaBall2 : PlasmaBall1
+{
+	States
+	{
+	Spawn:
+		PLS2 AB 6 Bright
+		Loop
+	Death:
+		PLS2 CDE 4 Bright
+		Stop
+	}
+}
+
+// --------------------------------------------------------------------------
+//
+// BFG 9000
+//
+// --------------------------------------------------------------------------
+
+ACTOR BFG9000 : DoomWeapon 2006
+{
+	Game Doom
+	Height 20
+	SpawnID 31
+	Weapon.SelectionOrder 2800
+	Weapon.AmmoUse 40
+	Weapon.AmmoGive 40
+	Weapon.AmmoType "Cell"
+	+WEAPON.NOAUTOFIRE
+	+WEAPON.NOLMS
+	Inventory.PickupMessage "$GOTBFG9000"
+	Tag "$TAG_BFG9000"
+	States
+	{
+	Ready:
+		BFGG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		BFGG A 1 A_Lower
+		Loop
+	Select:
+		BFGG A 1 A_Raise
+		Loop
+	Fire:
+		BFGG A 20 A_BFGsound
+		BFGG B 10 A_GunFlash
+		BFGG B 10 A_FireBFG
+		BFGG B 20 A_ReFire
+		Goto Ready
+	Flash:
+		BFGF A 11 Bright A_Light1
+		BFGF B 6 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		BFUG A -1
+		Stop
+	OldFire:
+		BFGG A 10 A_BFGsound
+		BFGG BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB 1 A_FireOldBFG
+		BFGG B 0 A_Light0
+		BFGG B 20 A_ReFire
+		Goto Ready
+	}
+}
+
+
+ACTOR BFGBall
+{
+	Game Doom
+	SpawnID 128
+	Radius 13
+	Height 8
+	Speed 25
+	Damage 100
+	Projectile
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 0.75
+	DeathSound "weapons/bfgx"
+	Obituary "$OB_MPBFG_BOOM"
+	States
+	{
+	Spawn:
+		BFS1 AB 4 Bright
+		Loop
+	Death:
+		BFE1 AB 8 Bright
+		BFE1 C 8 Bright A_BFGSpray
+		BFE1 DEF 8 Bright
+		Stop
+	}
+}
+		
+ACTOR BFGExtra
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	RenderStyle Add
+	Alpha 0.75
+	DamageType "BFGSplash"
+	States
+	{
+	Spawn:
+		BFE2 ABCD 8 Bright
+		Stop
+	}
+}
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\fatso.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Mancubus
+//
+//===========================================================================
+ACTOR Fatso 67
+{
+	Game Doom
+	SpawnID 112
+	Health 600
+	Radius 48
+	Height 64
+	Mass 1000
+	Speed 8
+	PainChance 80
+	Monster
+	+FLOORCLIP
+	+BOSSDEATH
+	SeeSound "fatso/sight"
+	PainSound "fatso/pain"
+	DeathSound "fatso/death"
+	ActiveSound "fatso/active"
+	Obituary "$OB_FATSO"
+	States
+	{
+	Spawn:
+		FATT AB 15 A_Look
+		Loop
+	See:
+		FATT AABBCCDDEEFF 4 A_Chase
+		Loop
+	Missile:
+		FATT G 20 A_FatRaise
+		FATT H 10 BRIGHT A_FatAttack1
+		FATT IG 5
+		FATT H 10 BRIGHT A_FatAttack2
+		FATT IG 5
+		FATT H 10 BRIGHT A_FatAttack3
+		FATT IG 5
+		Goto See
+	Pain:
+		FATT J 3
+		FATT J 3 A_Pain
+		Goto See
+    Death:
+		FATT K 6
+		FATT L 6 A_Scream
+		FATT M 6 A_NoBlocking
+		FATT NOPQRS 6
+		FATT T -1 A_BossDeath    
+	     Stop
+	 Raise:
+		FATT R 5
+		FATT QPONMLK 5
+		Goto See
+	}
+}
+
+
+
+//===========================================================================
+//
+// Mancubus fireball
+//
+//===========================================================================
+ACTOR FatShot
+{
+	Game Doom
+	SpawnID 153
+	Radius 6
+	Height 8
+	Speed 20
+	Damage 8
+	Projectile 
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 1
+	SeeSound "fatso/attack"
+	DeathSound "fatso/shotx"
+	States
+	{
+	Spawn:
+		MANF AB 4 BRIGHT
+		Loop
+	Death:
+		MISL B 8 BRIGHT
+		MISL C 6 BRIGHT
+		MISL D 4 BRIGHT
+		Stop
+	}
+}
+
+
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\keen.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Commander Keen
+//
+//===========================================================================
+ACTOR CommanderKeen 72
+{
+	Game Doom
+	Health 100
+	Radius 16
+	Height 72
+	Mass 10000000
+	PainChance 256
+	+SOLID 
+	+SPAWNCEILING 
+	+NOGRAVITY 
+	+SHOOTABLE 
+	+COUNTKILL 
+	+NOICEDEATH
+	+ISMONSTER
+	PainSound "keen/pain"
+	DeathSound "keen/death"
+	States
+	{
+	Spawn:
+		KEEN A   -1
+		Loop
+	Death:
+		KEEN AB	6
+		KEEN C	6 A_Scream
+		KEEN DEFGH	6
+		KEEN I	6 A_NoBlocking
+		KEEN J	6
+		KEEN K	6 A_KeenDie
+		KEEN L   -1
+		Stop
+	Pain:
+		KEEN M	4
+		KEEN M	8 A_Pain
+		Goto Spawn
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\lostsoul.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Lost Soul
+//
+//===========================================================================
+ACTOR LostSoul 3006
+{
+	Game Doom
+	SpawnID 110
+	Health 100
+	Radius 16
+	Height 56
+	Mass 50
+	Speed 8
+	Damage 3
+	PainChance 256
+	Monster
+	+FLOAT +NOGRAVITY +MISSILEMORE +DONTFALL +NOICEDEATH
+	AttackSound "skull/melee"
+	PainSound "skull/pain"
+	DeathSound "skull/death"
+	ActiveSound "skull/active"
+	RenderStyle SoulTrans
+	Obituary "$OB_SKULL"
+	States
+	{
+	Spawn:
+		SKUL AB 10 BRIGHT A_Look
+		Loop
+	See:
+		SKUL AB 6 BRIGHT A_Chase
+		Loop
+	Missile:
+		SKUL C 10 BRIGHT A_FaceTarget
+		SKUL D 4 BRIGHT A_SkullAttack
+		SKUL CD 4 BRIGHT
+		Goto Missile+2
+	Pain:
+		SKUL E 3 BRIGHT
+		SKUL E 3 BRIGHT A_Pain
+		Goto See
+	Death:
+		SKUL F 6 BRIGHT
+		SKUL G 6 BRIGHT A_Scream
+		SKUL H 6 BRIGHT
+		SKUL I 6 BRIGHT A_NoBlocking
+		SKUL J 6
+		SKUL K 6
+		Stop
+	}
+}
+
+Actor BetaSkull : LostSoul 9037
+{
+	States
+	{
+	Spawn:
+		SKUL A 10 A_Look
+		Loop
+	See:
+		SKUL BCDA 5 A_Chase
+		Loop
+	Missile:
+		SKUL E 4 A_FaceTarget
+		SKUL F 5 A_BetaSkullAttack
+		SKUL F 4
+		Goto See
+	Pain:
+		SKUL G 4
+		SKUL H 2 A_Pain
+		SKUL I 4
+		Goto See
+	Death:
+		SKUL JKLM 5
+		SKUL N 5 A_Scream
+		SKUL O 5
+		SKUL P 5 A_Fall
+		SKUL Q 5 A_Stop
+		Wait
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\painelemental.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Pain Elemental
+//
+//===========================================================================
+ACTOR PainElemental 71
+{
+	Game Doom
+	SpawnID 115
+	Health 400
+	Radius 31
+	Height 56
+	Mass 400
+	Speed 8
+	PainChance 128
+	Monster
+	+FLOAT 
+	+NOGRAVITY
+	SeeSound "pain/sight"
+	PainSound "pain/pain"
+	DeathSound "pain/death"
+	ActiveSound "pain/active"
+	States
+	{
+	Spawn:
+		PAIN A 10 A_Look
+		Loop
+	See:
+		PAIN AABBCC 3 A_Chase
+		Loop
+	Missile:
+		PAIN D 5 A_FaceTarget
+		PAIN E 5 A_FaceTarget
+		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 1 BRIGHT A_PainAttack
+		Goto See
+	Pain:
+		PAIN G 6
+		PAIN G 6 A_Pain
+		Goto See
+	Death:
+		PAIN H 8 BRIGHT
+		PAIN I 8 BRIGHT A_Scream
+		PAIN JK 8 BRIGHT
+		PAIN L 8 BRIGHT A_PainDie
+		PAIN M 8 BRIGHT
+		Stop
+	Raise:
+		PAIN MLKJIH 8
+		Goto See
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\possessed.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+//===========================================================================
+//
+// Zombie man
+//
+//===========================================================================
+ACTOR ZombieMan 3004
+{
+	Game Doom
+	SpawnID 4
+	Health 20
+	Radius 20
+	Height 56
+	Speed 8
+	PainChance 200
+	Monster
+	+FLOORCLIP
+	SeeSound "grunt/sight"
+	AttackSound "grunt/attack"
+	PainSound "grunt/pain"
+	DeathSound "grunt/death"
+	ActiveSound "grunt/active"
+	Obituary "$OB_ZOMBIE"
+	DropItem "Clip"
+	States
+	{
+	Spawn:
+		POSS AB 10 A_Look
+		Loop
+	See:
+		POSS AABBCCDD 4 A_Chase
+		Loop
+	Missile:
+		POSS E 10 A_FaceTarget
+		POSS F 8 A_PosAttack
+		POSS E 8
+		Goto See
+	Pain:
+		POSS G 3
+		POSS G 3 A_Pain
+		Goto See
+	Death:
+		POSS H 5
+		POSS I 5 A_Scream
+		POSS J 5 A_NoBlocking
+		POSS K 5
+		POSS L -1
+		Stop
+	XDeath:
+		POSS M 5
+		POSS N 5 A_XScream
+		POSS O 5 A_NoBlocking
+		POSS PQRST 5
+		POSS U -1
+		Stop
+	Raise:
+		POSS K 5
+		POSS JIH 5
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Sergeant / Shotgun guy
+//
+//===========================================================================
+ACTOR ShotgunGuy 9
+{
+	Game Doom
+	SpawnID 1
+	Health 30
+	Radius 20
+	Height 56
+	Mass 100
+	Speed 8
+	PainChance 170
+	Monster
+	+FLOORCLIP
+	SeeSound "shotguy/sight"
+	AttackSound "shotguy/attack"
+	PainSound "shotguy/pain"
+	DeathSound "shotguy/death"
+	ActiveSound "shotguy/active"
+	Obituary "$OB_SHOTGUY"
+	DropItem "Shotgun"
+	States
+	{
+	Spawn:
+		SPOS AB 10 A_Look
+		Loop
+	See:
+		SPOS AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		SPOS E 10 A_FaceTarget
+		SPOS F 10 BRIGHT A_SposAttackUseAtkSound
+		SPOS E 10
+		Goto See
+	Pain:
+		SPOS G 3
+		SPOS G 3 A_Pain
+		Goto See
+	Death:
+		SPOS H 5
+		SPOS I 5 A_Scream
+		SPOS J 5 A_NoBlocking
+		SPOS K 5
+		SPOS L -1
+		Stop
+	XDeath:
+		SPOS M 5
+		SPOS N 5 A_XScream
+		SPOS O 5 A_NoBlocking
+		SPOS PQRST 5
+		SPOS U -1
+		Stop
+	Raise:
+		SPOS L 5
+		SPOS KJIH 5
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// Chaingunner
+//
+//===========================================================================
+ACTOR ChaingunGuy 65
+{
+	Game Doom
+	SpawnID 2
+	Health 70
+	Radius 20
+	Height 56
+	Mass 100
+	Speed 8
+	PainChance 170
+	Monster
+	+FLOORCLIP
+	SeeSound "chainguy/sight"
+	PainSound "chainguy/pain"
+	DeathSound "chainguy/death"
+	ActiveSound "chainguy/active"
+	AttackSound "chainguy/attack"
+	Obituary "$OB_CHAINGUY"
+	Dropitem "Chaingun"
+	States
+	{
+	Spawn:
+		CPOS AB 10 A_Look
+		Loop
+	See:
+		CPOS AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		CPOS E 10 A_FaceTarget
+		CPOS FE 4 BRIGHT A_CPosAttack
+		CPOS F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		CPOS G 3
+		CPOS G 3 A_Pain
+		Goto See
+	Death:
+		CPOS H 5
+		CPOS I 5 A_Scream
+		CPOS J 5 A_NoBlocking
+		CPOS KLM 5
+		CPOS N -1
+		Stop
+	XDeath:
+		CPOS O 5 
+		CPOS P 5 A_XScream
+		CPOS Q 5 A_NoBlocking
+		CPOS RS 5
+		CPOS T -1
+		Stop
+	Raise:
+		CPOS N 5
+		CPOS MLKJIH 5
+		Goto See
+	}
+}
+
+//===========================================================================
+//
+// SS Nazi
+//
+//===========================================================================
+ACTOR WolfensteinSS 84
+{
+	Game Doom
+	SpawnID 116
+	Health 50
+	Radius 20
+	Height 56
+	Speed 8
+	PainChance 170
+	Monster
+	+FLOORCLIP
+	SeeSound "wolfss/sight"
+	PainSound "wolfss/pain"
+	DeathSound "wolfss/death"
+	ActiveSound "wolfss/active"
+	AttackSound "wolfss/attack"
+	Obituary "$OB_WOLFSS"
+	Dropitem "Clip"
+	States
+	{
+	Spawn:
+		SSWV AB 10 A_Look
+		Loop
+	See:
+		SSWV AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		SSWV E 10 A_FaceTarget
+		SSWV F 10 A_FaceTarget
+		SSWV G 4 BRIGHT A_CPosAttack
+		SSWV F 6 A_FaceTarget
+		SSWV G 4 BRIGHT A_CPosAttack
+		SSWV F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		SSWV H 3
+		SSWV H 3 A_Pain
+		Goto See
+	Death:
+		SSWV I 5
+		SSWV J 5 A_Scream
+		SSWV K 5 A_NoBlocking
+		SSWV L 5
+		SSWV M -1
+		Stop
+	XDeath:
+		SSWV N 5 
+		SSWV O 5 A_XScream
+		SSWV P 5 A_NoBlocking
+		SSWV QRSTU 5
+		SSWV V -1
+		Stop
+	Raise:
+		SSWV M 5
+		SSWV LKJI 5
+		Goto See 
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\revenant.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Revenant
+//
+//===========================================================================
+ACTOR Revenant 66
+{
+	Game Doom
+	SpawnID 20
+	Health 300
+	Radius 20
+	Height 56
+	Mass 500
+	Speed 10
+	PainChance 100
+	Monster
+	MeleeThreshold 196
+	+MISSILEMORE 
+	+FLOORCLIP
+	SeeSound "skeleton/sight"
+	PainSound "skeleton/pain"
+	DeathSound "skeleton/death"
+	ActiveSound "skeleton/active"
+	MeleeSound "skeleton/melee"
+	HitObituary "$OB_UNDEADHIT"
+	Obituary "$OB_UNDEAD"
+	States
+	{
+	Spawn:
+		SKEL AB 10 A_Look
+		Loop
+	See:
+		SKEL AABBCCDDEEFF 2 A_Chase
+		Loop
+	Melee:
+		SKEL G 1 A_FaceTarget
+		SKEL G 6 A_SkelWhoosh
+		SKEL H 6 A_FaceTarget
+		SKEL I 6 A_SkelFist
+		Goto See
+	Missile:
+		SKEL J 1 BRIGHT A_FaceTarget 
+		SKEL J 9 BRIGHT A_FaceTarget
+		SKEL K 10 A_SkelMissile
+		SKEL K 10 A_FaceTarget
+		Goto See
+	Pain:
+		SKEL L 5
+		SKEL L 5 A_Pain
+		Goto See
+	Death:
+		SKEL LM 7
+		SKEL N 7 A_Scream
+		SKEL O 7 A_NoBlocking
+		SKEL P 7
+		SKEL Q -1
+		Stop
+	Raise:
+		SKEL Q 5
+		SKEL PONML 5
+		Goto See
+	}
+}
+
+
+//===========================================================================
+//
+// Revenant Tracer
+//
+//===========================================================================
+ACTOR RevenantTracer
+{
+	Game Doom
+	SpawnID 53
+	Radius 11
+	Height 8
+	Speed 10
+	Damage 10
+	Projectile 
+	+SEEKERMISSILE 
+	+RANDOMIZE
+	SeeSound "skeleton/attack"
+	DeathSound "skeleton/tracex"
+	RenderStyle Add
+	States
+	{
+	Spawn:
+		FATB AB 2 BRIGHT A_Tracer
+		Loop
+	Death:
+		FBXP A 8 BRIGHT
+		FBXP B 6 BRIGHT
+		FBXP C 4 BRIGHT
+		Stop
+	}
+}
+
+
+//===========================================================================
+//
+// Revenant Tracer Smoke
+//
+//===========================================================================
+ACTOR RevenantTracerSmoke
+{
+	+NOBLOCKMAP
+	+NOGRAVITY
+	+NOTELEPORT
+	RenderStyle Translucent 
+	Alpha 0.5
+	States
+	{	
+	Spawn:
+		PUFF ABABC 4
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\scriptedmarine.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+// Scriptable marine -------------------------------------------------------
+
+ACTOR ScriptedMarine 9100 native
+{
+	Game Doom
+	SpawnID 151
+	Health 100
+	Radius 16
+	Height 56
+	Mass 100
+	Speed 8
+	Painchance 160
+	MONSTER
+	-COUNTKILL
+	Translation 0
+	Damage 100
+	DeathSound "*death"
+	PainSound "*pain50"
+	
+	action native A_M_Refire (bool ignoremissile=false);
+	action native A_M_CheckAttack ();
+	action native A_MarineChase ();
+	action native A_MarineLook ();
+	action native A_MarineNoise ();
+	action native A_M_Punch (int force);
+	action native A_M_SawRefire ();
+	action native A_M_FirePistol (bool accurate);
+	action native A_M_FireShotgun ();
+	action native A_M_FireShotgun2 ();
+	action native A_M_FireCGun(bool accurate);
+	action native A_M_FireMissile ();
+	action native A_M_FirePlasma ();
+	action native A_M_FireRailgun ();
+	action native A_M_BFGsound ();
+	action native A_M_FireBFG ();
+	
+	States
+	{
+	Spawn:
+		PLAY A 4 A_MarineLook
+		PLAY A 4 A_MarineNoise
+		Loop
+	Idle:
+		PLAY A 4 A_MarineLook
+		PLAY A 4 A_MarineNoise
+		PLAY A 4 A_MarineLook
+		PLAY B 4 A_MarineNoise
+		PLAY B 4 A_MarineLook
+		PLAY B 4 A_MarineNoise
+		Loop
+	See:
+		PLAY ABCD 4 A_MarineChase
+		Loop
+
+	Melee.Fist:		
+		PLAY E 4 A_FaceTarget
+		PLAY E 4 A_M_Punch(1)
+		PLAY A 9
+		PLAY A 0 A_M_Refire(1)
+		Loop
+		PLAY A 5 A_FaceTarget
+		Goto See
+	Melee.Berserk:
+		PLAY E 4 A_FaceTarget
+		PLAY E 4 A_M_Punch(10)
+		PLAY A 9
+		PLAY A 0 A_M_Refire(1)
+		Loop
+		PLAY A 5 A_FaceTarget
+		Goto See
+	Melee.Chainsaw:
+		PLAY E 4 A_MarineNoise
+		PLAY E 4 A_M_Saw
+		PLAY E 0 A_M_SawRefire
+		goto Melee.Chainsaw+1
+		PLAY A 0
+		Goto See
+
+	Missile:
+	Missile.None:
+		PLAY E 12 A_FaceTarget
+		Goto Idle
+		PLAY F 6 BRIGHT
+		Loop
+	Missile.Pistol:
+		PLAY E 4 A_FaceTarget
+		PLAY F 6 BRIGHT A_M_FirePistol(1)
+		PLAY A 4 A_FaceTarget
+		PLAY A 0 A_M_Refire
+		PLAY A 5
+		Goto See
+	Fireloop.Pistol:
+		PLAY F 6 BRIGHT A_M_FirePistol(0)
+		PLAY A 4 A_FaceTarget
+		PLAY A 0 A_M_Refire
+		Goto Fireloop.Pistol
+		PLAY A 5
+		Goto See
+	Missile.Shotgun:
+		PLAY E 3 A_M_CheckAttack
+		PLAY F 7 BRIGHT A_M_FireShotgun
+		Goto See
+	Missile.SSG:
+		PLAY E 3 A_M_CheckAttack
+		PLAY F 7 BRIGHT A_M_FireShotgun2
+		Goto See
+	Missile.Chaingun:
+		PLAY E 4 A_FaceTarget
+		PLAY FF 4 BRIGHT A_M_FireCGun(1)
+		PLAY FF 4 BRIGHT A_M_FireCGun(0)
+		PLAY A 0 A_M_Refire
+		Goto Missile.Chaingun+3
+		PLAY A 0
+		Goto See
+	Missile.Rocket:
+		PLAY E 8
+		PLAY F 6 BRIGHT A_M_FireMissile
+		PLAY E 6
+		PLAY A 0 A_M_Refire
+		Loop
+		PLAY A 0
+		Goto See
+	Missile.Plasma:
+		PLAY E 2 A_FaceTarget
+		PLAY E 0 A_FaceTarget
+		PLAY F 3 BRIGHT A_M_FirePlasma
+		PLAY A 0 A_M_Refire
+		Goto Missile.Plasma+1
+		PLAY A 0
+		Goto See
+	Missile.Railgun:
+		PLAY E 4 A_M_CheckAttack
+		PLAY F 6 BRIGHT A_M_FireRailgun
+		Goto See
+	Missile.BFG:
+		PLAY E 5 A_M_BFGSound
+		PLAY EEEEE 5 A_FaceTarget
+		PLAY F 6 BRIGHT A_M_FireBFG
+		PLAY A 4 A_FaceTarget
+		PLAY A 0 A_M_Refire
+		Loop
+		PLAY A 0
+		Goto See
+
+	SkipAttack:
+		PLAY A 1
+		Goto See
+	Pain:
+		PLAY G 4
+		PLAY G 4 A_Pain
+		Goto Idle
+	Death:
+		PLAY H 10
+		PLAY I 10 A_Scream
+		PLAY J 10 A_NoBlocking
+		PLAY KLM 10
+		PLAY N -1
+		Stop
+	XDeath:
+		PLAY O 5
+		PLAY P 5 A_XScream
+		PLAY Q 5 A_NoBlocking
+		PLAY RSTUV 5
+		PLAY W -1
+		Stop
+	Raise:
+		PLAY MLKJIH 5
+		Goto See
+	}
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineFist : ScriptedMarine 9101
+{
+	Game Doom
+	States
+	{
+	Melee:		
+		Goto Super::Melee.Fist
+	Missile:
+		Stop
+	}
+}
+
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineBerserk : MarineFist 9102
+{
+	Game Doom
+	States
+	{
+	Melee:		
+		Goto Super::Melee.Berserk
+	Missile:
+		Stop
+	}
+}
+//---------------------------------------------------------------------------
+
+ACTOR MarineChainsaw : ScriptedMarine 9103
+{
+	Game Doom
+	States
+	{
+	Melee:
+		Goto Super::Melee.Chainsaw
+	Missile:
+		Stop
+	}
+}
+
+
+
+//---------------------------------------------------------------------------
+
+ACTOR MarinePistol : ScriptedMarine 9104
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Pistol
+	}
+
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineShotgun : ScriptedMarine 9105
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Shotgun
+	}
+
+}
+
+
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineSSG : ScriptedMarine 9106
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.SSG
+	}
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineChaingun : ScriptedMarine 9107
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Chaingun
+	}
+}
+
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineRocket : MarineFist 9108
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Rocket
+	}
+
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarinePlasma : ScriptedMarine 9109
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Plasma
+	}
+
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineRailgun : ScriptedMarine 9110
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.Railgun
+	}
+
+}
+
+//---------------------------------------------------------------------------
+
+ACTOR MarineBFG : ScriptedMarine 9111
+{
+	Game Doom
+	States
+	{
+	Missile:
+		Goto Super::Missile.BFG
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\spidermaster.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+//===========================================================================
+//
+// Spider boss
+//
+//===========================================================================
+ACTOR SpiderMastermind 7
+{
+	Game Doom
+	SpawnID 7
+	Health 3000
+	Radius 128
+	Height 100
+	Mass 1000
+	Speed 12
+	PainChance 40
+	Monster
+	MinMissileChance 160
+	+BOSS
+	+MISSILEMORE
+	+FLOORCLIP
+	+NORADIUSDMG
+	+DONTMORPH
+	+BOSSDEATH
+	SeeSound "spider/sight"
+	AttackSound "spider/attack"
+	PainSound "spider/pain"
+	DeathSound "spider/death"
+	ActiveSound "spider/active"
+	Obituary "$OB_SPIDER"
+	States
+	{
+	Spawn:
+		SPID AB 10 A_Look
+		Loop
+	See:
+		SPID A 3 A_Metal
+		SPID ABB 3 A_Chase
+		SPID C 3 A_Metal
+		SPID CDD 3 A_Chase
+		SPID E 3 A_Metal
+		SPID EFF 3 A_Chase
+		Loop
+	Missile:
+		SPID A 20 BRIGHT A_FaceTarget  
+		SPID G 4 BRIGHT A_SPosAttackUseAtkSound
+		SPID H 4 BRIGHT A_SposAttackUseAtkSound
+		SPID H 1 BRIGHT A_SpidRefire
+		Goto Missile+1
+	Pain:
+		SPID I 3
+		SPID I 3 A_Pain
+		Goto See
+	Death:
+		SPID J 20 A_Scream
+		SPID K 10 A_NoBlocking
+		SPID LMNOPQR 10
+		SPID S 30
+		SPID S -1 A_BossDeath    
+		Stop
+	}
+}
+
+
+
+c:\program files (x86)\zandronum\zandronum\doom\stealthmonsters.txt
+//. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+
+ACTOR StealthArachnotron : Arachnotron 9050
+{
+	Game Doom
+	SpawnID 117
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHBABY"
+}
+
+ACTOR StealthArchvile : Archvile 9051
+{
+	Game Doom
+	SpawnID 118
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHVILE"
+}
+
+ACTOR StealthBaron : BaronOfHell 9052
+{
+	Game Doom
+	SpawnID 100
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHBARON"
+	HitObituary "$OB_STEALTHBARON"
+}
+
+ACTOR StealthCacodemon : Cacodemon 9053
+{
+	Game Doom
+	SpawnID 119
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHCACO"
+	HitObituary "$OB_STEALTHCACO"
+}
+
+ACTOR StealthChaingunGuy : ChaingunGuy 9054
+{
+	Game Doom
+	SpawnID 120
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHCHAINGUY"
+}
+
+ACTOR StealthDemon : Demon 9055
+{
+	Game Doom
+	SpawnID 121
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHDEMON"
+	HitObituary "$OB_STEALTHDEMON"
+}
+
+ACTOR StealthHellKnight : HellKnight 9056
+{
+	Game Doom
+	SpawnID 101
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHKNIGHT"
+	HitObituary "$OB_STEALTHKNIGHT"
+}
+
+ACTOR StealthDoomImp : DoomImp 9057
+{
+	Game Doom
+	SpawnID 122
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHIMP"
+	HitObituary "$OB_STEALTHIMP"
+}
+
+ACTOR StealthFatso : Fatso 9058
+{
+	Game Doom
+	SpawnID 123
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHFATSO"
+}
+
+ACTOR StealthRevenant : Revenant 9059
+{
+	Game Doom
+	SpawnID 124
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHUNDEAD"
+	HitObituary "$OB_STEALTHUNDEAD"
+}
+
+ACTOR StealthShotgunGuy : ShotgunGuy 9060
+{
+	Game Doom
+	SpawnID 103
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHSHOTGUNGUY"
+}
+
+ACTOR StealthZombieMan : ZombieMan 9061
+{
+	Game Doom
+	SpawnID 102
+	+STEALTH
+	RenderStyle Translucent
+	Alpha 0
+	Obituary "$OB_STEALTHZOMBIE"
+}
+
+
+

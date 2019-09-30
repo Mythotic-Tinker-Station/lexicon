@@ -2,7 +2,7 @@
 /////////
 /////The replacement code
 ////////
-/*
+
 ACTOR LCellPack : Cell replaces cellpack 17
 {
 	Game Doom
@@ -70,7 +70,7 @@ ACTOR LClip : Ammo replaces Clip 2007
     stop
 	}
 }
-*/
+
 
 ACTOR LShotgunGuy replaces Shotgunguy 9
 {
@@ -825,7 +825,7 @@ ACTOR LRevenant replaces Revenant 66
 }
 
 
-/*
+
 Actor LArmorBonus : BasicArmorBonus replaces ArmorBonus 2015
 {
 	Game Doom
@@ -860,7 +860,7 @@ Actor LArmorBonus : BasicArmorBonus replaces ArmorBonus 2015
     stop
 	}
 }
-*/
+
 
 ACTOR LStimpack : Health replaces Stimpack 2011
 {
@@ -932,7 +932,7 @@ ACTOR LSoulsphere : Health replaces Soulsphere 2013
 	}
 }
 
-/*
+
 ACTOR LRocketLauncher : DoomWeapon Replaces RocketLauncher 2003
 {
 	Game Doom
@@ -1077,7 +1077,7 @@ Actor LBlueArmor : BasicArmorPickup replaces BlueArmor 2019
     stop
 	}
 }
-*/
+
 
 ACTOR LStealthHellKnight : HellKnight replaces StealthHellKnight 9056
 {
@@ -1661,7 +1661,7 @@ ACTOR LInvulnerabilitySphere : PowerupGiver replaces InvulnerabilitySphere 2022
 
 
 
-/*
+
 ACTOR LBerserk : CustomInventory replaces Berserk 2023
 {
 	Game Doom
@@ -1688,7 +1688,7 @@ ACTOR LBerserk : CustomInventory replaces Berserk 2023
 		Stop
 	}
 }
-*/
+
 
 
 

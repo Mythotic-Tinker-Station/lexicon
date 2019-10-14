@@ -1,4 +1,4 @@
-map KSS01 "Entryway"
+map KSS01 "One"
 	{
 	nocrouch
 	next = "KSS02"
@@ -9,7 +9,7 @@ map KSS01 "Entryway"
 	music = "D_KSS01"
 	}
 	
-map KSS02 "Underhalls"
+map KSS02 "Two"
 	{
 	nocrouch
 	next = "KSS03"
@@ -20,7 +20,7 @@ map KSS02 "Underhalls"
 	music = "D_KSS02"
 	}
 	
-map KSS03 "The Gantlet"
+map KSS03 "Three"
 	{
 	nocrouch
 	next = "KSS04"
@@ -31,7 +31,7 @@ map KSS03 "The Gantlet"
 	music = "D_KSS03"
 	}
 	
-map KSS04 "The Focus"
+map KSS04 "Four"
 	{
 	nocrouch
 	next = "KSS05"
@@ -42,7 +42,7 @@ map KSS04 "The Focus"
 	music = "D_KSS04"
 	}
 	
-map KSS05 "The Waste Tunnel"
+map KSS05 "Five"
 	{
 	nocrouch
 	next = "KSS06"
@@ -53,7 +53,7 @@ map KSS05 "The Waste Tunnel"
 	music = "D_KSS05"
 	}
 	
-map KSS06 "The Crusher"
+map KSS06 "Six"
 	{
 	nocrouch
 	next = "KSS07"
@@ -64,7 +64,7 @@ map KSS06 "The Crusher"
 	music = "D_KSS06"
 	}
 
-map KSS07 "Dead Simple"
+map KSS07 "Seven"
 	{
 	nocrouch
 	next = "KSS08"
@@ -76,7 +76,7 @@ map KSS07 "Dead Simple"
 	map07special
 	}
 	
-map KSS08 "Tricks and Traps"
+map KSS08 "Eight"
 	{
 	nocrouch
 	next = "KSS09"
@@ -87,7 +87,7 @@ map KSS08 "Tricks and Traps"
 	music = "D_KSS08"
 	}
 	
-map KSS09 "The Pit"
+map KSS09 "Nine"
 	{
 	nocrouch
 	next = "KSS10"
@@ -98,7 +98,7 @@ map KSS09 "The Pit"
 	music = "D_KSS09"
 	}
 	
-map KSS10 "Refueling Base"
+map KSS10 "Ten"
 	{
 	nocrouch
 	next = "KSS11"
@@ -109,7 +109,7 @@ map KSS10 "Refueling Base"
 	music = "D_KSS10"
 	}
 	
-map KSS11 "Circle of Death"
+map KSS11 "Eleven"
 	{
 	nocrouch
 	next = "KSS12"
@@ -120,7 +120,7 @@ map KSS11 "Circle of Death"
 	music = "D_KSS11"
 	}
 	
-map KSS12 "The Factory"
+map KSS12 "Twelve"
 	{
 	nocrouch
 	next = "KSS13"
@@ -131,7 +131,7 @@ map KSS12 "The Factory"
 	music = "D_KSS12"
 	}
 	
-map KSS13 "Downtown"
+map KSS13 "Thirteen"
 	{
 	next = "KSS14"
 	enterpic = "KSSHT"
@@ -142,7 +142,7 @@ map KSS13 "Downtown"
 	nocrouch
 	}
 	
-map KSS14 "The Inmost Dens"
+map KSS14 "Fourteen"
 	{
 	next = "KSS15"
 	enterpic = "KSSHT"
@@ -153,7 +153,7 @@ map KSS14 "The Inmost Dens"
 	nocrouch
 	}
 	
-map KSS15 "Industrial Zone"
+map KSS15 "Fifthteen"
 	{
 	nocrouch
 	next = "KSS16"
@@ -165,7 +165,7 @@ map KSS15 "Industrial Zone"
 	music = "D_KSS15"
 	}
 	
-map KSS16 "Suburbs"
+map KSS16 "Sixteen"
 	{
 	nocrouch
 	next = "KSS17"
@@ -176,7 +176,7 @@ map KSS16 "Suburbs"
 	music = "D_KSS16"
 	}
 	
-map KSS17 "Tenements"
+map KSS17 "Seventeen"
 	{
 	nocrouch
 	next = "KSS18"
@@ -187,7 +187,7 @@ map KSS17 "Tenements"
 	music = "D_KSS17"
 	}
 	
-map KSS18 "The Courtyard"
+map KSS18 "Eighteen"
 	{
 	nocrouch
 	next = "KSS19"
@@ -198,7 +198,7 @@ map KSS18 "The Courtyard"
 	music = "D_KSS18"
 	}
 	
-map KSS19 "The Citadel"
+map KSS19 "Nineteen"
 	{
 	nocrouch
 	next = "KSS20"
@@ -209,7 +209,7 @@ map KSS19 "The Citadel"
 	music = "D_KSS19"
 	}
 	
-map KSS20 "Gotcha!"
+map KSS20 "Twenty"
 	{
 	nocrouch
 	next = "KSS21"
@@ -220,7 +220,7 @@ map KSS20 "Gotcha!"
 	music = "D_KSS20"
 	}
 
-map KSS21 "Nirvana"
+map KSS21 "Twenty-One"
 	{
 	nocrouch
 	next = "KSS22"
@@ -231,7 +231,7 @@ map KSS21 "Nirvana"
 	music = "D_KSS21"
 	}
 	
-map KSS22 "The Catacombs"
+map KSS22 "Twenty-Two"
 	{
 	nocrouch
 	next = "KSS23"
@@ -242,7 +242,7 @@ map KSS22 "The Catacombs"
 	music = "D_KSS22"
 	}
 	
-map KSS23 "Barrels o' Fun"
+map KSS23 "Twenty-Three"
 	{
 	nocrouch
 	next = "KSS24"
@@ -253,7 +253,7 @@ map KSS23 "Barrels o' Fun"
 	music = "D_KSS23"
 	}
 	
-map KSS24 "The Chasm"
+map KSS24 "Twenty-Four"
 	{
 	nocrouch
 	next = "KSS25"
@@ -264,7 +264,7 @@ map KSS24 "The Chasm"
 	music = "D_KSS24"
 	}
 	
-map KSS25 "Bloodfalls"
+map KSS25 "Twenty-Five"
 	{
 	nocrouch
 	next = "KSS26"
@@ -275,7 +275,7 @@ map KSS25 "Bloodfalls"
 	music = "D_KSS25"
 	}
 	
-map KSS26 "The Abandoned Mines"
+map KSS26 "Twenty-Six"
 	{
 	nocrouch
 	next = "KSS27"
@@ -286,7 +286,7 @@ map KSS26 "The Abandoned Mines"
 	music = "D_KSS26"
 	}
 	
-map KSS27 "Monster Condo"
+map KSS27 "Twenty-Seven"
 	{
 	nocrouch
 	next = "KSS28"
@@ -297,7 +297,7 @@ map KSS27 "Monster Condo"
 	music = "D_KSS27"
 	}
 	
-map KSS28 "The Spirit World"
+map KSS28 "Twenty-Eight"
 	{
 	nocrouch
 	next = "KSS29"
@@ -308,7 +308,7 @@ map KSS28 "The Spirit World"
 	music = "D_KSS28"
 	}
 	
-map KSS29 "The Living End"
+map KSS29 "Twenty-Nine"
 	{
 	nocrouch
 	next = "KSS30"
@@ -319,7 +319,7 @@ map KSS29 "The Living End"
 	music = "D_KSS29"
 	}
 	
-map KSS30 "Icon of Sin"
+map KSS30 "Thirty"
 	{
 	nocrouch
 	next = "VR"
@@ -331,7 +331,7 @@ map KSS30 "Icon of Sin"
     SuckTime = 1337
 	}
 	
-map KSS31 "Wolfenstein"
+map KSS31 "Secret One"
 	{
 	nocrouch
 	next = "KSS16"
@@ -343,7 +343,7 @@ map KSS31 "Wolfenstein"
 	music = "D_KSS31"
 	}
 	
-map KSS32 "Grosse"
+map KSS32 "Secret Two"
 	{
 	nocrouch
 	next = "KSS16"

@@ -1,0 +1,514 @@
+
+
+map ZTH01 lookup "The Spaceport"
+{
+	titlepatch = "ZTHLV00"
+	next = "ZTH02"
+	secretnext = "ZTH02"
+	ExitPic = "ZTHLV32"
+	EnterPic = "ZTHLV32"
+	sky1 = "SKY1"
+	music = "D_ZTH01"
+	InterMusic = "D_ZTH33"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH02 lookup "Control Facility"
+{
+	titlepatch = "ZTHLV01"
+	next = "ZTH03"
+	secretnext = "ZTH03"
+	sky1 = "SKY1"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	music = "D_ZTH02"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH03 lookup "The Alleyway"
+{
+	titlepatch = "ZTHLV02"
+	next = "ZTH04"
+	secretnext = "ZTH04"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH03"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH04 lookup "Canyon Hub"
+{
+	titlepatch = "ZTHLV03"
+	next = "ZTH05"
+	secretnext = "ZTH05"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH04"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH05 lookup "Skybase 300"
+{
+	titlepatch = "ZTHLV04"
+	next = "ZTH06"
+	secretnext = "ZTH06"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH05"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH06 lookup "Whispering Corridor"
+{
+	titlepatch = "ZTHLV05"
+	next = "ZTH07"
+	secretnext = "ZTH07"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH06"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH07 lookup "Heavyweight"
+{
+	titlepatch = "ZTHLV06"
+	next = "ZTH08"
+	secretnext = "ZTH08"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH07"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	map07special
+	
+	
+	
+}
+
+map ZTH08 lookup "Waste Disposal Plant"
+{
+	titlepatch = "ZTHLV07"
+	next = "ZTH09"
+	secretnext = "ZTH09"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH08"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH09 lookup "Nuclear Power Station"
+{
+	titlepatch = "ZTHLV08"
+	next = "ZTH10"
+	secretnext = "ZTH10"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH09"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH10 lookup "Cargo Bay"
+{
+	titlepatch = "ZTHLV09"
+	next = "ZTH11"
+	secretnext = "ZTH11"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH10"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH11 lookup "Simbattle"
+{
+	titlepatch = "ZTHLV10"
+	next = "ZTH12"
+	secretnext = "ZTH12"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH11"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH12 lookup "Villa of Pain"
+{
+	titlepatch = "ZTHLV11"
+	next = "ZTH13"
+	secretnext = "ZTH13"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY1"
+	music = "D_ZTH12"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH13 lookup "Dark Crypt"
+{
+	titlepatch = "ZTHLV12"
+	next = "ZTH14"
+	secretnext = "ZTH14"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH13"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH14 lookup "The Circle"
+{
+	titlepatch = "ZTHLV13"
+	next = "ZTH15"
+	secretnext = "ZTH15"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH14"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH15 lookup "Trouble Town"
+{
+	titlepatch = "ZTHLV14"
+	next = "ZTH16"
+	secretnext = "ZTH31"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH15"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH16 lookup "Bruiser Fortress"
+{
+	titlepatch = "ZTHLV15"
+	next = "ZTH17"
+	secretnext = "ZTH17"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH16"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH17 lookup "Constriction"
+{
+	titlepatch = "ZTHLV16"
+	next = "ZTH18"
+	secretnext = "ZTH18"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH17"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH18 lookup "Zombie Hideout"
+{
+	titlepatch = "ZTHLV17"
+	next = "ZTH19"
+	secretnext = "ZTH19"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH18"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH19 lookup "The Invasion"
+{
+	titlepatch = "ZTHLV18"
+	next = "ZTH20"
+	secretnext = "ZTH20"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH19"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH20 lookup "Death Row"
+{
+	titlepatch = "ZTHLV19"
+	next = "ZTH21"
+	secretnext = "ZTH21"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY2"
+	music = "D_ZTH20"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH21 lookup "Blood Lust"
+{
+	titlepatch = "ZTHLV20"
+	next = "ZTH22"
+	secretnext = "ZTH22"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH21"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH22 lookup "Firestorm Tomb"
+{
+	titlepatch = "ZTHLV21"
+	next = "ZTH23"
+	secretnext = "ZTH23"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH22"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH23 lookup "Dungeon of Inferno"
+{
+	titlepatch = "ZTHLV22"
+	next = "ZTH24"
+	secretnext = "ZTH24"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH23"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH24 lookup "Cavern of The Evil Spirit"
+{
+	titlepatch = "ZTHLV23"
+	next = "ZTH25"
+	secretnext = "ZTH25"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH24"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH25 lookup "Hellucination"
+{
+	titlepatch = "ZTHLV24"
+	next = "ZTH26"
+	secretnext = "ZTH26"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH25"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH26 lookup "Valley of Brimstone"
+{
+	titlepatch = "ZTHLV25"
+	next = "ZTH27"
+	secretnext = "ZTH27"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH26"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH27 lookup "Dissect"
+{
+	titlepatch = "ZTHLV26"
+	next = "ZTH28"
+	secretnext = "ZTH28"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH27"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH28 lookup "Unholy Demise"
+{
+	titlepatch = "ZTHLV27"
+	next = "ZTH29"
+	secretnext = "ZTH29"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH28"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH29 lookup "Den of Torture"
+{
+	titlepatch = "ZTHLV28"
+	next = "ZTH30"
+	secretnext = "ZTH30"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH29"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH30 lookup "Eternal Core"
+{
+	titlepatch = "ZTHLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	music = "D_ZTH30"
+	InterMusic = "D_ZTH35"
+	sucktime = 1337
+	
+	
+	
+}
+
+map ZTH31 lookup "Creepy"
+{
+	titlepatch = "ZTHLV30"
+	next = "ZTH16"
+	secretnext = "ZTH32"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH31"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZTH32 lookup "Condemnation"
+{
+	titlepatch = "ZTHLV31"
+	next = "ZTH16"
+	secretnext = "ZTH16"
+	ExitPic = "ZTHLV33"
+	EnterPic = "ZTHLV33"
+	sky1 = "SKY3"
+	music = "D_ZTH32"
+	InterMusic = "D_ZTH34"
+	sucktime = 1
+	
+	
+	
+}

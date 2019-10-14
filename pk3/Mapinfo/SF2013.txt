@@ -1,0 +1,547 @@
+
+
+map SF301 lookup "Resurrect Dead"
+{
+	titlepatch = "SF3LV00"
+	next = "SF302"
+	secretnext = "SF302"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV35"
+	sky1 = "SF3SKY1"
+	par = 70
+	music = "D_SF301"
+	InterMusic = "D_SF333"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF302 lookup "Firestarter"
+{
+	titlepatch = "SF3LV01"
+	next = "SF303"
+	secretnext = "SF303"
+	sky1 = "SF3SKY1"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV36"
+	par = 180
+	music = "D_SF302"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF303 lookup "Pathogen"
+{
+	titlepatch = "SF3LV02"
+	next = "SF304"
+	secretnext = "SF304"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 195
+	music = "D_SF303"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF304 lookup "Desecration"
+{
+	titlepatch = "SF3LV03"
+	next = "SF305"
+	secretnext = "SF305"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 165
+	music = "D_SF304"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF305 lookup "Evil Battlefield of Demons"
+{
+	titlepatch = "SF3LV04"
+	next = "SF306"
+	secretnext = "SF306"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 255
+	music = "D_SF305"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF306 lookup "Wavebreaker"
+{
+	titlepatch = "SF3LV05"
+	next = "SF307"
+	secretnext = "SF307"
+	ExitPic = "SF3LV36"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 210
+	sucktime = 1
+	music = "D_SF306"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF307 lookup "Morkfang"
+{
+	titlepatch = "SF3LV06"
+	next = "SF308"
+	secretnext = "SF308"
+	ExitPic = "SF3LV33"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 315
+	map07special
+	music = "D_SF307"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF308 lookup "Resurgam"
+{
+	titlepatch = "SF3LV07"
+	next = "SF309"
+	secretnext = "SF309"
+	ExitPic = "SF3LV33"
+	EnterPic = "SF3LV36"
+	sky1 = "SF3SKY1"
+	par = 600
+	music = "D_SF308"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF309 lookup "Yonahe"
+{
+	titlepatch = "SF3LV08"
+	next = "SF310"
+	secretnext = "SF310"
+	ExitPic = "SF3LV37"
+	EnterPic = "SF3LV37"
+	sky1 = "SF3SKY1"
+	par = 960
+	music = "D_SF309"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF310 lookup "Dunleitt"
+{
+	titlepatch = "SF3LV09"
+	next = "SF311"
+	secretnext = "SF311"
+	ExitPic = "SF3LV37"
+	EnterPic = "SF3LV33"
+	sky1 = "SF3SKY1"
+	par = 480
+	music = "D_SF310"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF311 lookup "Broken Mind"
+{
+	titlepatch = "SF3LV10"
+	next = "SF312"
+	secretnext = "SF312"
+	ExitPic = "SF3LV38"
+	EnterPic = "SF3LV38"
+	sky1 = "SF3SKY1"
+	par = 240
+	music = "D_SF311"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF312 lookup "Gevurah"
+{
+	titlepatch = "SF3LV11"
+	next = "SF313"
+	secretnext = "SF313"
+	ExitPic = "SF3LV38"
+	EnterPic = "SF3LV38"
+	sky1 = "SF3SKY1"
+	par = 180
+	music = "D_SF312"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF313 lookup "The Farthest Reach"
+{
+	titlepatch = "SF3LV12"
+	next = "SF314"
+	secretnext = "SF314"
+	ExitPic = "SF3LV38"
+	EnterPic = "SF3LV38"
+	sky1 = "SF3SKY2"
+	par = 540
+	music = "D_SF313"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF314 lookup "Blue Shift"
+{
+	titlepatch = "SF3LV13"
+	next = "SF315"
+	secretnext = "SF315"
+	ExitPic = "SF3LV38"
+	EnterPic = "SF3LV38"
+	sky1 = "SF3SKY2"
+	par = 360
+	music = "D_SF314"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF315 lookup "Skittle Biscuit"
+{
+	titlepatch = "SF3LV14"
+	next = "SF316"
+	secretnext = "SF331"
+	ExitPic = "SF3LV38"
+	EnterPic = "SF3LV38"
+	sky1 = "SF3SKY2"
+	par = 450
+	music = "D_SF315"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF316 lookup "Nibblet"
+{
+	titlepatch = "SF3LV15"
+	next = "SF317"
+	secretnext = "SF317"
+	ExitPic = "SF3LV33"
+	EnterPic = "SF3LV39"
+	sky1 = "SF3SKY2"
+	par = 780
+	music = "D_SF316"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF317 lookup "Fierce Attack"
+{
+	titlepatch = "SF3LV16"
+	next = "SF318"
+	secretnext = "SF318"
+	ExitPic = "SF3LV39"
+	EnterPic = "SF3LV39"
+	sky1 = "SF3SKY2"
+	par = 480
+	music = "D_SF317"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF318 lookup "Via Tortuosa"
+{
+	titlepatch = "SF3LV17"
+	next = "SF319"
+	secretnext = "SF319"
+	ExitPic = "SF3LV33"
+	EnterPic = "SF3LV39"
+	sky1 = "SF3SKY2"
+	par = 210
+	music = "D_SF318"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF319 lookup "Meet-A-Bear"
+{
+	titlepatch = "SF3LV18"
+	next = "SF320"
+	secretnext = "SF320"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY2"
+	par = 270
+	music = "D_SF319"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF320 lookup "Red Recluse"
+{
+	titlepatch = "SF3LV19"
+	next = "SF321"
+	secretnext = "SF321"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY2"
+	par = 330
+	music = "D_SF320"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF321 lookup "Heck Revealed"
+{
+	titlepatch = "SF3LV20"
+	next = "SF322"
+	secretnext = "SF322"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 480
+	music = "D_SF321"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF322 lookup "Uprising"
+{
+	titlepatch = "SF3LV21"
+	next = "SF323"
+	secretnext = "SF323"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 540
+	music = "D_SF322"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF323 lookup "Chaos Slaughter"
+{
+	titlepatch = "SF3LV22"
+	next = "SF324"
+	secretnext = "SF324"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 1200
+	music = "D_SF323"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF324 lookup "Joyless"
+{
+	titlepatch = "SF3LV23"
+	next = "SF325"
+	secretnext = "SF325"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 420
+	music = "D_SF324"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF325 lookup "Temple of Judgement"
+{
+	titlepatch = "SF3LV24"
+	next = "SF326"
+	secretnext = "SF326"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 510
+	music = "D_SF325"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF326 lookup "Dysphoria"
+{
+	titlepatch = "SF3LV25"
+	next = "SF327"
+	secretnext = "SF327"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 300
+	music = "D_SF326"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF327 lookup "To Mega Therion"
+{
+	titlepatch = "SF3LV26"
+	next = "SF328"
+	secretnext = "SF328"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 540
+	music = "D_SF327"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF328 lookup "dHoles"
+{
+	titlepatch = "SF3LV27"
+	next = "SF329"
+	secretnext = "SF329"
+	ExitPic = "SF3LV40"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 390
+	music = "D_SF328"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF329 lookup "Escaping the Spiral Labyrinth"
+{
+	titlepatch = "SF3LV28"
+	next = "SF330"
+	secretnext = "SF330"
+	ExitPic = "SF3LV33"
+	EnterPic = "SF3LV40"
+	sky1 = "SF3SKY3"
+	par = 660
+	music = "D_SF329"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF330 lookup "Chronoblast"
+{
+	titlepatch = "SF3LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SF3SKY3"
+	ExitPic = "SF3LV35"
+	EnterPic = "SF3LV35"
+	par = 60
+	music = "D_SF330"
+	InterMusic = "D_SF335"
+	sucktime = 1337
+	
+	
+	
+}
+
+map SF331 lookup "With Fist In Hand"
+{
+	titlepatch = "SF3LV30"
+	next = "SF316"
+	secretnext = "SF332"
+	ExitPic = "SF3LV41"
+	EnterPic = "SF3LV41"
+	sky1 = "SF3SKY3"
+	par = 960
+	music = "D_SF331"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}
+
+map SF332 lookup "Pacman"
+{
+	titlepatch = "SF3LV31"
+	next = "SF316"
+	secretnext = "SF316"
+	ExitPic = "SF3LV41"
+	EnterPic = "SF3LV41"
+	sky1 = "SF3SKY3"
+	par = 450
+	music = "D_SF332"
+	InterMusic = "D_SF334"
+	sucktime = 1
+	
+	
+	
+}

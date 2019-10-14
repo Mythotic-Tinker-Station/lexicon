@@ -1,0 +1,45 @@
+model HeckCube
+{
+	path "models/heckcube"
+	model 0 "heckcube.md3"
+	model 1 "heckcube2.md3"
+	model 2 "heckcube_runes.md3"
+	path "textures/models/heckcube"
+	skin 0 "heckcube.png"
+	skin 1 "heckcube2.png"
+	skin 2 "heckcube_runes.png"
+    
+	FrameIndex HECK A 0 0
+	FrameIndex HECK A 1 0
+	FrameIndex HECK A 2 0
+
+}
+
+model HeckCube
+{
+	path "models/heckcube"
+	model 0 "heckcube.md3"
+	model 1 "heckcube2.md3"
+	model 2 "heckcube_runes.md3"
+    model 3 "heckcube_glowrunes.md3"
+	path "textures/models/heckcube"
+	skin 0 "heckcube.png"
+	skin 1 "heckcube2.png"
+	skin 2 "heckcube_runes.png"
+	skin 3 "heckcube_runes2.png"
+	FrameIndex HECK B 0 0
+	FrameIndex HECK B 1 0
+	FrameIndex HECK B 2 0
+	
+}
+/*
+model HeckCubeGlow
+{
+	path "models/heckcube"
+	model 0 "heckcube_glowrunes.md3"
+	path "textures/models/heckcube"
+	skin 0 "heckcube_runes2.png"
+	
+	FrameIndex HECK C 0 0
+}
+*/

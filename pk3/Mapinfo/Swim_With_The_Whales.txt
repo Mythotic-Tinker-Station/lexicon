@@ -1,0 +1,65 @@
+
+map SW101 lookup "The Deep End"
+{
+	titlepatch = "SW1LV00"
+	next =  "SW102"
+	secretnext =  "SW102"
+	sky1 = "SWT25"
+	par = 30
+	music = "D_SW101"
+	InterMusic = "D_SW105"
+	ExitPic = "SW1LV32"
+	EnterPic = "SW1LV32"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map SW102 lookup "Ride The Dolphins"
+{
+	titlepatch = "SW1LV01"
+	next =  "SW103"
+	secretnext =  "SW103"
+	sky1 = "SWT25"
+	par = 90
+	music = "D_SW102"
+	InterMusic = "D_SW106"
+	ExitPic = "SW1LV33"
+	EnterPic = "SW1LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map SW103 lookup "Swim With The Whales"
+{
+	titlepatch = "SW1LV02"
+	next =  "VR"
+	secretnext =  "VR"
+	sky1 = "SWT25"
+	par = 120
+	music = "D_SW103"
+	InterMusic = "D_SW107"
+	ExitPic = "SW1LV34"
+	EnterPic = "SW1LV34"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+
+map SW131 lookup "???"
+{
+	titlepatch = "SW1LV30"
+	next =  "SW116"
+	secretnext =  "SW132"
+	sky1 = "SWT25"
+	par = 120
+	music = "D_SW104"
+	InterMusic = "D_SW106"
+	ExitPic = "SW1LV33"
+	EnterPic = "SW1LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}

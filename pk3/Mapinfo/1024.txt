@@ -1,0 +1,545 @@
+
+
+map TT101 lookup "Water Facility"
+{
+	titlepatch = "TT1LV00"
+	next = "TT102"
+	secretnext = "TT102"
+	ExitPic = "TT1LV32"
+	EnterPic = "TT1LV32"
+	sky1 = "TT1SKY1"
+	par = 70
+	music = "D_TT101"
+	InterMusic = "D_TT133"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT102 lookup "Garden Of The Descent"
+{
+	titlepatch = "TT1LV01"
+	next = "TT103"
+	secretnext = "TT103"
+	sky1 = "TT1SKY1"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	par = 180
+	music = "D_TT102"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT103 lookup "Dilapidation"
+{
+	titlepatch = "TT1LV02"
+	next = "TT104"
+	secretnext = "TT104"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 195
+	music = "D_TT103"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT104 lookup "Outpost 1024"
+{
+	titlepatch = "TT1LV03"
+	next = "TT105"
+	secretnext = "TT105"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 165
+	music = "D_TT104"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT105 lookup "Autumn In Hell"
+{
+	titlepatch = "TT1LV04"
+	next = "TT106"
+	secretnext = "TT106"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 255
+	music = "D_TT105"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT106 lookup "Departure Point"
+{
+	titlepatch = "TT1LV05"
+	next = "TT107"
+	secretnext = "TT107"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 210
+	sucktime = 1
+	music = "D_TT106"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT107 lookup "Dead Small"
+{
+	titlepatch = "TT1LV06"
+	next = "TT108"
+	secretnext = "TT108"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 315
+	map07special
+	music = "D_TT107"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT108 lookup "A Jagged Stroll"
+{
+	titlepatch = "TT1LV07"
+	next = "TT109"
+	secretnext = "TT109"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 600
+	music = "D_TT108"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT109 lookup "Monday Morning"
+{
+	titlepatch = "TT1LV08"
+	next = "TT110"
+	secretnext = "TT110"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 960
+	music = "D_TT109"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT110 lookup "Gothika 1024"
+{
+	titlepatch = "TT1LV09"
+	next = "TT111"
+	secretnext = "TT111"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 480
+	music = "D_TT110"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT111 lookup "Caco District"
+{
+	titlepatch = "TT1LV10"
+	next = "TT112"
+	secretnext = "TT112"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 240
+	music = "D_TT111"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT112 lookup "Warehouse #667"
+{
+	titlepatch = "TT1LV11"
+	next = "TT113"
+	secretnext = "TT113"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY1"
+	par = 180
+	music = "D_TT112"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT113 lookup "The Focus II"
+{
+	titlepatch = "TT1LV12"
+	next = "TT114"
+	secretnext = "TT114"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 540
+	music = "D_TT113"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT114 lookup "House Of Shadows"
+{
+	titlepatch = "TT1LV13"
+	next = "TT115"
+	secretnext = "TT115"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 360
+	music = "D_TT114"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT115 lookup "Bantam"
+{
+	titlepatch = "TT1LV14"
+	next = "TT116"
+	secretnext = "TT131"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 450
+	music = "D_TT115"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT116 lookup "Deja View"
+{
+	titlepatch = "TT1LV15"
+	next = "TT117"
+	secretnext = "TT117"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 780
+	music = "D_TT116"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT117 lookup "Omega Outpost"
+{
+	titlepatch = "TT1LV16"
+	next = "TT118"
+	secretnext = "TT118"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 480
+	music = "D_TT117"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT118 lookup "Tutorial #99"
+{
+	titlepatch = "TT1LV17"
+	next = "TT119"
+	secretnext = "TT119"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 210
+	music = "D_TT118"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT119 lookup "Lip Service"
+{
+	titlepatch = "TT1LV18"
+	next = "TT120"
+	secretnext = "TT120"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 270
+	music = "D_TT119"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT120 lookup "Claustrophobic Sting"
+{
+	titlepatch = "TT1LV19"
+	next = "TT121"
+	secretnext = "TT121"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY2"
+	par = 330
+	music = "D_TT120"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT121 lookup "Corpse Yard"
+{
+	titlepatch = "TT1LV20"
+	next = "TT122"
+	secretnext = "TT122"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 480
+	music = "D_TT121"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT122 lookup "Prison Escape"
+{
+	titlepatch = "TT1LV21"
+	next = "TT123"
+	secretnext = "TT123"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 540
+	music = "D_TT122"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT123 lookup "Close Quarters"
+{
+	titlepatch = "TT1LV22"
+	next = "TT124"
+	secretnext = "TT124"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 1200
+	music = "D_TT123"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT124 lookup "Zyklon B"
+{
+	titlepatch = "TT1LV23"
+	next = "TT125"
+	secretnext = "TT125"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 420
+	music = "D_TT124"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT125 lookup "Stein Und Stahl"
+{
+	titlepatch = "TT1LV24"
+	next = "TT126"
+	secretnext = "TT126"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 510
+	music = "D_TT125"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT126 lookup "Marbelous!"
+{
+	titlepatch = "TT1LV25"
+	next = "TT127"
+	secretnext = "TT127"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 300
+	music = "D_TT126"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT127 lookup "Tower Of Hades"
+{
+	titlepatch = "TT1LV26"
+	next = "TT128"
+	secretnext = "TT128"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 540
+	music = "D_TT127"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT128 lookup "A Bridge To Far"
+{
+	titlepatch = "TT1LV27"
+	next = "TT129"
+	secretnext = "TT129"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 390
+	music = "D_TT128"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT129 lookup "Magus"
+{
+	titlepatch = "TT1LV28"
+	next = "TT130"
+	secretnext = "TT130"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 660
+	music = "D_TT129"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT130 lookup "Nullified Departure"
+{
+	titlepatch = "TT1LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "TT1SKY3"
+	ExitPic = "TT1LV34"
+	EnterPic = "TT1LV34"
+	par = 60
+	music = "D_TT130"
+	InterMusic = "D_TT135"
+	sucktime = 1337
+
+}
+
+map TT131 lookup "Archville Madness"
+{
+	titlepatch = "TT1LV30"
+	next = "TT116"
+	secretnext = "TT132"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 960
+	music = "D_TT131"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}
+
+map TT132 lookup "Nullspace Junior"
+{
+	titlepatch = "TT1LV31"
+	next = "TT116"
+	secretnext = "TT116"
+	ExitPic = "TT1LV33"
+	EnterPic = "TT1LV33"
+	sky1 = "TT1SKY3"
+	par = 450
+	music = "D_TT132"
+	InterMusic = "D_TT134"
+	sucktime = 1
+	
+	
+	
+}

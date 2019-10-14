@@ -1,17 +1,56 @@
+
+[default]
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////			  UI Entries			////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+UI_ERR          =   "\c[Red]Error: UI message not found, this is bad, please tell devs.";
+
+UI_WELCOME      =   "\c[White]Welcome to the Lexicon\n\n"
+                    "\c[White]-=Beta version=-\n\n"
+                    "\c[White]Please report any problems you have to our discord via\n"
+                    "\c[Cyan]https://discord.gg/qj9GASW";
+                    
+
+UI_COMPLETE     =   "\c[White]Congratulations!\n\n"
+                    "\c[White]You and your team have completed\n\c[Gold]";
+                    
+UI_CAT1         =   "Normal";
+UI_CAT2         =   "Slaughter";
+UI_CAT3         =   "Single";
+UI_MAPSET       =   "Mapset: ";
+UI_MAP          =   "Map: ";
+UI_CREDITS      =   "Credits: ";
+UI_DEBUG        =   "Debug Mode: ";
+UI_TIMELEFT     =   "Time Left: ";
+UI_VOTES        =   "Votes: ";
+UI_YOURVOTE     =   "Your Vote: ";
+UI_WINNER       =   "Winner: ";
+UI_RETURN       =   "Going back to the lexicon in: ";
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////			Credits Entries			////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
 // How credits work:
 // C_MAPLUMPNAME = "authors here";
 // 
 // So for example:
 // 
-// C_MAP01 = "ID Software";
+// C_MAP01 = "Id Software";
 // 
 // Would print "Credits: ID Software" on MAP01.
 // The ACS Code does the rest for you.
-// If there is not a define here for, say, MAP01, the ACS code will just print "C_MAP01" as the credits, showing that the define doesnt exist.
+// If there is not a define here for, say, MAP01, the ACS code will print the C_ERR entry.
 
 
-[default]
 // Doom 2
+C_ERR = "\c[Red]Error: Credits not found, this is bad, please tell devs.";
+C_MAP = "Doom2"
 C_MAP01 = "Id Software";
 C_MAP02 = "Id Software";
 C_MAP03 = "Id Software";
@@ -44,7 +83,8 @@ C_MAP29 = "Id Software";
 C_MAP30 = "Id Software";
 C_MAP31 = "Id Software";
 C_MAP32 = "Id Software";
-// Alien Vendetta
+
+C_AV = "Alien Vendetta";
 C_AV01 = "Martin Aalen Hunsager";
 C_AV02 = "Anders Johnsen";
 C_AV03 = "Mattias Berggren";
@@ -77,7 +117,8 @@ C_AV29 = "Anders Johnsen";
 C_AV30 = "Anders Johnsen";
 C_AV31 = "Yashar 'GeminI' Garibzadeh, Kristian 'Ebola' Käll";
 C_AV32 = "Anders Johnsen";
-//Hell Revealed
+
+C_HR = "Hell Revealed";
 C_HR01 = "Yonatan Donner, Haggay Niv";
 C_HR02 = "Yonatan Donner, Haggay Niv";
 C_HR03 = "Yonatan Donner, Haggay Niv";
@@ -110,7 +151,8 @@ C_HR29 = "Yonatan Donner, Haggay Niv";
 C_HR30 = "Yonatan Donner, Haggay Niv";
 C_HR31 = "Yonatan Donner, Haggay Niv";
 C_HR32 = "Yonatan Donner, Haggay Niv";
-//Hell Revealed 2
+
+C_HR2 = "Hell Revealed 2";
 C_HR201 = "Jonas Feragen";
 C_HR202 = "Jonas Feragen";
 C_HR203 = "Jonas Feragen";
@@ -143,7 +185,8 @@ C_HR229 = "Jonas Feragen";
 C_HR230 = "Jonas Feragen";
 C_HR231 = "Mattias Berggren";
 C_HR232 = "Jonas Feragen";
-//Scythe 2
+
+C_SC2 = "Scythe 2";
 C_SC201 = "Erik Alm";
 C_SC202 = "Erik Alm";
 C_SC203 = "Erik Alm";
@@ -176,7 +219,8 @@ C_SC229 = "Erik Alm";
 C_SC230 = "Erik Alm";
 C_SC231 = "Erik Alm";
 C_SC232 = "Erik Alm";
-//Whispers of Satan
+
+C_WOS = "Whispers of Satan";
 C_WOS01 = "Paul Corfiatis";
 C_WOS02 = "Kristian Aro";
 C_WOS03 = "Paul Corfiatis";
@@ -213,7 +257,8 @@ C_WOS33 = "Kristian Aro, Paul Corfiatis";
 C_WOS34 = "Kristian Aro, Paul Corfiatis";
 C_WOS35 = "Paul Corfiatis";
 C_WOS99 = "Kristian Aro";
-//D2TWID
+
+C_WID = "Doom 2, The Way Id Did";
 C_WID01 = "RottKing";
 C_WID02 = "Tarnsman";
 C_WID03 = "esselfortium";
@@ -247,7 +292,8 @@ C_WID30 = "Alfonzo";
 C_WID31 = "Megalyth, Xaser";
 C_WID32 = "Xaser";
 C_WID33 = "Blackgaze";
-//Kamasutra
+
+C_KS = "Kamasutra";
 C_KS01 = "KSTeam";
 C_KS02 = "KSTeam";
 C_KS03 = "KSTeam";
@@ -280,7 +326,9 @@ C_KS29 = "KSTeam";
 C_KS30 = "KSTeam";
 C_KS31 = "KSTeam";
 C_KS32 = "KSTeam";
-//Maps of Chaos (Unsure if this is correct, feel free to advise if this is wrong)
+
+//(Unsure if this is correct, feel free to advise if this is wrong)
+C_MOC = "Maps of Chaos";
 C_MOC01 = "DoomVideoVault";
 C_MOC02 = "DoomVideoVault";
 C_MOC03 = "DoomVideoVault";
@@ -313,7 +361,8 @@ C_MOC29 = "DoomVideoVault";
 C_MOC30 = "DoomVideoVault";
 C_MOC31 = "DoomVideoVault";
 C_MOC32 = "DoomVideoVault";
-//Speed of Doom
+
+C_SOD = "Speed Of Doom";
 C_SOD01 = "Joshy, Darkwave0000";
 C_SOD02 = "Joshy, Darkwave0000";
 C_SOD03 = "Joshy, Darkwave0000";
@@ -347,7 +396,8 @@ C_SOD30 = "Joshy, Darkwave0000";
 C_SOD31 = "Joshy, Darkwave0000";
 C_SOD32 = "Joshy, Darkwave0000";
 C_SOD33 = "Joshy, Darkwave0000";
-//Circle of Caina
+
+C_COC = "Circle of Caina";
 C_COC01 = "noisyvelvet";
 C_COC02 = "40oz";
 C_COC03 = "40oz";
@@ -356,7 +406,8 @@ C_COC05 = "supercupcaketactics";
 C_COC06 = "40oz";
 C_COC07 = "40oz";
 C_COC08 = "joe-ilya";
-//Combat shock
+
+C_CS = "Combat Shock";
 C_CS01 = "Daniel 'dannebubinga' Jakobsson";
 C_CS02 = "Daniel 'dannebubinga' Jakobsson";
 C_CS03 = "Daniel 'dannebubinga' Jakobsson";
@@ -368,7 +419,8 @@ C_CS204 = "Daniel 'dannebubinga' Jakobsson";
 C_CS205 = "Daniel 'dannebubinga' Jakobsson";
 C_CS206 = "Daniel 'dannebubinga' Jakobsson";
 C_CS207 = "Daniel 'dannebubinga' Jakobsson";
-//Forest Swords
+
+C_FSW = "Forest Swords";
 C_FSW01 = "glenzinho";
 C_FSW02 = "40oz";
 C_FSW03 = "40oz";
@@ -377,7 +429,8 @@ C_FSW05 = "TheMisterCat";
 C_FSW06 = "40oz";
 C_FSW07 = "anonimvio";
 C_FSW08 = "valkiriforce";
-//Khoruss Speedy shit (OHHH YEEAAAAHH)
+
+C_KSS = "Khoruss Speedy shit";
 C_KSS01 = "Adam 'Khorus' Woodmansey";
 C_KSS02 = "Adam 'Khorus' Woodmansey";
 C_KSS03 = "Adam 'Khorus' Woodmansey";
@@ -410,7 +463,8 @@ C_KSS29 = "Adam 'Khorus' Woodmansey";
 C_KSS30 = "Adam 'Khorus' Woodmansey";
 C_KSS31 = "Adam 'Khorus' Woodmansey";
 C_KSS32 = "Adam 'Khorus' Woodmansey";
-//Monuments of Mars
+
+C_MOM = "Monuments of Mars";
 C_MOM01 = "40oz";
 C_MOM02 = "40oz";
 C_MOM03 = "Phobus";
@@ -418,7 +472,8 @@ C_MOM04 = "40oz";
 C_MOM05 = "anonimvio";
 C_MOM06 = "Scotty";
 C_MOM07 = "noisyvelvet";
-//New Gothic Movement 1
+
+C_NG1 = "New Gothic Movement 1";
 C_NG101 = "Armouredblood";
 C_NG102 = "Armouredblood";
 C_NG103 = "Armouredblood";
@@ -437,7 +492,8 @@ C_NG115 = "Armouredblood";
 C_NG116 = "Armouredblood";
 C_NG121 = "Armouredblood";
 C_NG131 = "Armouredblood";
-//SL
+
+C_SL = "Shai'tans Luck";
 C_SL20 = "Armouredblood";
 C_SL21 = "Armouredblood";
 C_SL22 = "Armouredblood";
@@ -449,7 +505,8 @@ C_SL27 = "Armouredblood";
 C_SL28 = "Armouredblood";
 C_SL29 = "Armouredblood";
 C_SL30 = "Armouredblood";
-//Sunder
+
+C_SND = "Sunder";
 C_SND01 = "Insane_Gazebo";
 C_SND02 = "Insane_Gazebo";
 C_SND03 = "Insane_Gazebo";
@@ -464,7 +521,12 @@ C_SND11 = "Insane_Gazebo";
 C_SND12 = "Insane_Gazebo";
 C_SND13 = "Insane_Gazebo";
 C_SND14 = "Insane_Gazebo";
-//Swift Death
+C_SND15 = "Insane_Gazebo";
+C_SND16 = "Insane_Gazebo";
+C_SND31 = "Insane_Gazebo";
+C_SND32 = "Insane_Gazebo";
+
+C_SDE = "Swift Death";
 C_SDE01 = "Franck Livolant";
 C_SDE02 = "Franck Livolant";
 C_SDE03 = "Franck Livolant";
@@ -497,7 +559,8 @@ C_SDE29 = "Franck Livolant";
 C_SDE30 = "Franck Livolant";
 C_SDE31 = "Franck Livolant";
 C_SDE32 = "Franck Livolant";
-//Dark Tartarus
+
+C_TAT = "Dark Tartarus";
 C_TAT01 = "lihanchi";
 C_TAT02 = "lihanchi";
 C_TAT03 = "lihanchi";
@@ -541,7 +604,8 @@ C_TAT40 = "lihanchi";
 C_TAT41 = "lihanchi";
 C_TAT42 = "lihanchi";
 C_TAT43 = "lihanchi";
-//UAC Ultra
+
+C_UAC = "UAC Ultra";
 C_UAC01 = "40oz, Super Jamie";
 C_UAC02 = "40oz, Super Jamie";
 C_UAC03 = "40oz, Super Jamie";
@@ -553,7 +617,8 @@ C_UAC08 = "40oz, Super Jamie";
 C_UAC09 = "40oz, Super Jamie";
 C_UAC10 = "40oz, Super Jamie";
 C_UAC11 = "40oz, Super Jamie";
-//Vanguard
+
+C_VAN = "Vanguard";
 C_VAN01 = "skillsaw";
 C_VAN02 = "skillsaw";
 C_VAN03 = "skillsaw";
@@ -567,7 +632,8 @@ C_VAN10 = "skillsaw";
 C_VAN11 = "skillsaw";
 C_VAN12 = "skillsaw";
 C_VAN13 = "skillsaw";
-//Doom Core Trilogy
+
+C_DC = "Doom Core Trilogy";
 C_DC01 = "valkiriforce";
 C_DC02 = "valkiriforce";
 C_DC03 = "valkiriforce";
@@ -645,7 +711,8 @@ C_DC74 = "valkiriforce";
 C_DC75 = "valkiriforce";
 C_DC76 = "valkiriforce";
 C_DC77 = "valkiriforce";
-//Estranged
+
+C_EST = "Estranged";
 C_EST01 = "Foodles";
 C_EST02 = "Foodles";
 C_EST03 = "Foodles";
@@ -678,7 +745,8 @@ C_EST29 = "Foodles";
 C_EST30 = "Foodles";
 C_EST31 = "Foodles";
 C_EST32 = "Foodles";
-//Going Down
+
+C_GD = "Going Down";
 C_GD01 = "mouldy";
 C_GD02 = "mouldy";
 C_GD03 = "mouldy";
@@ -711,7 +779,8 @@ C_GD29 = "mouldy";
 C_GD30 = "mouldy";
 C_GD31 = "mouldy";
 C_GD32 = "mouldy";
-//Dark Encounters
+
+C_DKE = "Dark Encounters";
 C_DKE01 = "Paul Dechene";
 C_DKE02 = "Paul Dechene";
 C_DKE03 = "Paul Dechene";
@@ -744,7 +813,8 @@ C_DKE29 = "Paul Dechene";
 C_DKE30 = "Paul Dechene";
 C_DKE31 = "Paul Dechene";
 C_DKE32 = "Paul Dechene";
-//Hadephobia
+
+C_HPH = "Hadephobia";
 C_HPH01 = "Katamori";
 C_HPH02 = "Cell";
 C_HPH03 = "Melon";
@@ -780,13 +850,15 @@ C_HPH32 = "magicsofa";
 C_HPH33 = "Cell";
 C_HPH34 = "purist";
 C_HPH35 = "Grain of Salt";
-//Deus Vult
+
+C_DV = "Deus Vult";
 C_DV01 = "Huy 'Doom Marine' Pham";
 C_DV02 = "Huy 'Doom Marine' Pham";
 C_DV03 = "Huy 'Doom Marine' Pham";
 C_DV04 = "Huy 'Doom Marine' Pham";
 C_DV05 = "Huy 'Doom Marine' Pham";
-//Mayhem 17
+
+C_MAY = "Mayhem 17";
 C_MAY01 = "Dragonfly";
 C_MAY02 = "rf`";
 C_MAY03 = "Jaxxoon R";
@@ -815,7 +887,8 @@ C_MAY25 = "Breezeep";
 C_MAY26 = "Marcaek & rdwpa";
 C_MAY31 = "Dobu_GM";
 C_MAY32 = "Death Egg";
-//Sunlust
+
+C_SLU = "Sunlust";
 C_SLU01 = "Ribbiks & Stephens";
 C_SLU02 = "Ribbiks & Stephens";
 C_SLU03 = "Ribbiks & Stephens";
@@ -844,7 +917,8 @@ C_SLU25 = "Ribbiks & Stephens";
 C_SLU26 = "Ribbiks & Stephens";
 C_SLU31 = "Ribbiks & Stephens";
 C_SLU32 = "Ribbiks & Stephens";
-//Pizza Steve
+
+C_PIZ = "Pizza Steve";
 C_PIZ01 = "Fernando Sanchez M.";
 C_PIZ02 = "Fernando Sanchez M.";
 C_PIZ03 = "Fernando Sanchez M.";
@@ -877,7 +951,8 @@ C_PIZ29 = "Fernando Sanchez M.";
 C_PIZ30 = "Fernando Sanchez M.";
 C_PIZ31 = "Fernando Sanchez M.";
 C_PIZ32 = "Fernando Sanchez M.";
-//Hellbound
+
+C_HLB = "Hellbound";
 C_HLB01 = "Zoltan Sofalvi";
 C_HLB02 = "Zoltan Sofalvi";
 C_HLB03 = "Zoltan Sofalvi";
@@ -910,7 +985,8 @@ C_HLB29 = "Zoltan Sofalvi";
 C_HLB30 = "Zoltan Sofalvi";
 C_HLB31 = "Zoltan Sofalvi";
 C_HLB32 = "Zoltan Sofalvi";
-//1994 Tune up project
+
+C_TU = "1994 Tune up project";
 C_TU01 = "Mr. Freeze & Pavera";
 C_TU02 = "CodenniumRed";
 C_TU03 = "Hobbes";
@@ -943,7 +1019,8 @@ C_TU29 = "Tatsurd-cacocaco";
 C_TU30 = "Daimon & Hobbes";
 C_TU31 = "Hobbes";
 C_TU32 = "Daimon";
-//Hellcore
+
+C_HC = "Hellcore";
 C_HC01 = "Darkfyre & Fusion";
 C_HC02 = "Darkfyre & Fusion";
 C_HC03 = "Darkfyre & Fusion";
@@ -956,7 +1033,8 @@ C_HC09 = "Darkfyre & Fusion";
 C_HC10 = "Darkfyre & Fusion";
 C_HC11 = "Darkfyre & Fusion";
 C_HC12 = "Darkfyre & Fusion";
-//Unholy Realms
+
+C_UHR = "Unholy Realms";
 C_UHR01 = "Brian Knox";
 C_UHR02 = "Brian Knox";
 C_UHR03 = "Brian Knox";
@@ -989,12 +1067,8 @@ C_UHR29 = "Joshy";
 C_UHR30 = "Brian Knox";
 C_UHR31 = "Adrian Hanekom & Valkiriforce";
 C_UHR32 = "Khours";
-//The spire 1 and 2
-C_TSP01 = "Michael 'prower' Reid";
-C_TSO201 = "Michael 'prower' Reid";
-//The Eye
-C_EYE01 = "mouldy";
-//Deus Vult II
+
+C_DV2 = "Deus Vult II";
 C_DV201 = "Huy 'Doom Marine' Pham";
 C_DV202 = "Huy 'Doom Marine' Pham";
 C_DV203 = "Huy 'Doom Marine' Pham";
@@ -1027,181 +1101,822 @@ C_DV229 = "Huy 'Doom Marine' Pham";
 C_DV230 = "Huy 'Doom Marine' Pham";
 C_DV231 = "Huy 'Doom Marine' Pham";
 C_DV232 = "Huy 'Doom Marine' Pham";
-//Valiant
-C_VAL01	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL02	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL03	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL04	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL05	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL06	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL07	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL08	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL09	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL10	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL11	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL12	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL13	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL14	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL15	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL16	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL17	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL18	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL19	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL20	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL21	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL22	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL23	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL24	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL25	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL26	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL27	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL28	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL29	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL30	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL31	=	 "Paul 'skillsaw' DeBruyne"	;
-C_VAL32	=	 "Paul 'skillsaw' DeBruyne"	;
 
-//Epic2
-C_EP201	=	 "Alexander 'Eternal' S"	;
-C_EP202	=	 "Alexander 'Eternal' S"	;
-C_EP203	=	 "Alexander 'Eternal' S"	;
-C_EP204	=	 "Alexander 'Eternal' S"	;
-C_EP205	=	 "Alexander 'Eternal' S"	;
-C_EP206	=	 "Alexander 'Eternal' S"	;
-C_EP207	=	 "Alexander 'Eternal' S"	;
-C_EP208	=	 "Alexander 'Eternal' S"	;
-C_EP209	=	 "Alexander 'Eternal' S"	;
-C_EP210	=	 "Alexander 'Eternal' S"	;
-C_EP211	=	 "Alexander 'Eternal' S"	;
-C_EP212	=	 "Alexander 'Eternal' S"	;
-C_EP213	=	 "Alexander 'Eternal' S"	;
-C_EP214	=	 "Alexander 'Eternal' S"	;
-C_EP215	=	 "Alexander 'Eternal' S"	;
-C_EP216	=	 "Alexander 'Eternal' S"	;
-C_EP217	=	 "Alexander 'Eternal' S"	;
-C_EP218	=	 "Alexander 'Eternal' S"	;
-C_EP219	=	 "Alexander 'Eternal' S"	;
-C_EP220	=	 "Alexander 'Eternal' S"	;
-C_EP221	=	 "Alexander 'Eternal' S"	;
-C_EP222	=	 "Alexander 'Eternal' S"	;
-C_EP223	=	 "Alexander 'Eternal' S"	;
-C_EP224	=	 "Alexander 'Eternal' S"	;
-C_EP225	=	 "Alexander 'Eternal' S"	;
-C_EP226	=	 "Alexander 'Eternal' S"	;
-C_EP227	=	 "Alexander 'Eternal' S"	;
-C_EP228	=	 "Alexander 'Eternal' S"	;
-C_EP229	=	 "Alexander 'Eternal' S"	;
-C_EP230	=	 "Alexander 'Eternal' S"	;
-C_EP231	=	 "Alexander 'Eternal' S"	;
-C_EP232	=	 "Alexander 'Eternal' S"	;
+C_VAL = "Valiant";
+C_VAL01	= "Paul 'skillsaw' DeBruyne";
+C_VAL02	= "Paul 'skillsaw' DeBruyne";
+C_VAL03	= "Paul 'skillsaw' DeBruyne";
+C_VAL04	= "Paul 'skillsaw' DeBruyne";
+C_VAL05	= "Paul 'skillsaw' DeBruyne";
+C_VAL06	= "Paul 'skillsaw' DeBruyne";
+C_VAL07	= "Paul 'skillsaw' DeBruyne";
+C_VAL08	= "Paul 'skillsaw' DeBruyne";
+C_VAL09	= "Paul 'skillsaw' DeBruyne";
+C_VAL10	= "Paul 'skillsaw' DeBruyne";
+C_VAL11	= "Paul 'skillsaw' DeBruyne";
+C_VAL12	= "Paul 'skillsaw' DeBruyne";
+C_VAL13	= "Paul 'skillsaw' DeBruyne";
+C_VAL14	= "Paul 'skillsaw' DeBruyne";
+C_VAL15	= "Paul 'skillsaw' DeBruyne";
+C_VAL16	= "Paul 'skillsaw' DeBruyne";
+C_VAL17	= "Paul 'skillsaw' DeBruyne";
+C_VAL18	= "Paul 'skillsaw' DeBruyne";
+C_VAL19	= "Paul 'skillsaw' DeBruyne";
+C_VAL20	= "Paul 'skillsaw' DeBruyne";
+C_VAL21	= "Paul 'skillsaw' DeBruyne";
+C_VAL22	= "Paul 'skillsaw' DeBruyne";
+C_VAL23	= "Paul 'skillsaw' DeBruyne";
+C_VAL24	= "Paul 'skillsaw' DeBruyne";
+C_VAL25	= "Paul 'skillsaw' DeBruyne";
+C_VAL26	= "Paul 'skillsaw' DeBruyne";
+C_VAL27	= "Paul 'skillsaw' DeBruyne";
+C_VAL28	= "Paul 'skillsaw' DeBruyne";
+C_VAL29	= "Paul 'skillsaw' DeBruyne";
+C_VAL30	= "Paul 'skillsaw' DeBruyne";
+C_VAL31	= "Paul 'skillsaw' DeBruyne";
+C_VAL32	= "Paul 'skillsaw' DeBruyne";
 
-//Epc1
-C_EP101	=	 "Alexander 'Eternal' S"	;
-C_EP102	=	 "Alexander 'Eternal' S"	;
-C_EP103	=	 "Alexander 'Eternal' S"	;
-C_EP104	=	 "Alexander 'Eternal' S"	;
-C_EP105	=	 "Alexander 'Eternal' S"	;
-//SF2012
-C_SF201	=	"	 cannonball	"	;
-C_SF202	=	"	 Death Egg	"	;
-C_SF203	=	"	 Ribbiks	"	;
-C_SF204	=	"	 darkreaver	"	;
-C_SF205	=	"	 cannonball	"	;
-C_SF206	=	"	 Phml	"	;
-C_SF207	=	"	 Kyka	"	;
-C_SF208	=	"	 dannebubinga	"	;
-C_SF209	=	"	 cannonball	"	;
-C_SF210	=	"	 cannonball	"	;
-C_SF211	=	"	 Rayzik	"	;
-C_SF212	=	"	 darkreaver	"	;
-C_SF213	=	"	 Rayzik	"	;
-C_SF214	=	"	 Archi	"	;
-C_SF215	=	"	 General Rainbow Bacon	"	;
-C_SF216	=	"	 Phml	"	;
-C_SF217	=	"	 Ribbiks	"	;
-C_SF218	=	"	 Bloodite Krypto	"	;
-C_SF219	=	"	 TimeOfDeath	"	;
-C_SF220	=	"	 cannonball	"	;
-C_SF221	=	"	 Rayzik	"	;
-C_SF222	=	"	 cannonball	"	;
-C_SF223	=	"	 TimeOfDeath	"	;
-C_SF224	=	"	 General Rainbow Bacon	"	;
-C_SF225	=	"	 elmle	"	;
-C_SF226	=	"	 Phml	"	;
-C_SF227	=	"	 ArmouredBlood	"	;
-C_SF228	=	"	 Phml	"	;
-C_SF229	=	"	 TimeOfDeath	"	;
-C_SF230	=	"	 Ribbiks	"	;
-C_SF231	=	"	 gggmork	"	;
-C_SF232	=	"	 TimeOfDeath	"	;
-//NOVA1
-C_NV101	=	"	 Primeval	"	;
-C_NV102	=	"	 Jaws in Space	"	;
-C_NV103	=	"	 mrthejoshmon	"	;
-C_NV104	=	"	 EvilNed	"	;
-C_NV105	=	"	 kildeth	"	;
-C_NV106	=	"	 Arjak	"	;
-C_NV107	=	"	 EvilNed	"	;
-C_NV108	=	"	 mrthejoshmon	"	;
-C_NV109	=	"	 Fuzzyfireball	"	;
-C_NV110	=	"	 EvilNed	"	;
-C_NV111	=	"	 Phobus	"	;
-C_NV112	=	"	 mrthejoshmon	"	;
-C_NV113	=	"	 sgt Dopey	"	;
-C_NV114	=	"	 EvilNed	"	;
-C_NV115	=	"	 cannonball	"	;
-C_NV116	=	"	 Paul D	"	;
-C_NV117	=	"	 EvilNed	"	;
-C_NV118	=	"	 cannonball	"	;
-C_NV119	=	"	 mouldy	"	;
-C_NV120	=	"	 Arjak	"	;
-C_NV121	=	"	 joe-ilya	"	;
-C_NV122	=	"	 Hurricyclone	"	;
-C_NV123	=	"	 Paul D	"	;
-C_NV124	=	"	 Stygian	"	;
-C_NV125	=	"	 mouldy	"	;
-C_NV126	=	"	 joe-ilya	"	;
-C_NV127	=	"	 kildeth	"	;
-C_NV128	=	"	 mouldy	"	;
-C_NV129	=	"	 fiend-o-hell	"	;
-C_NV130	=	"	 Various	"	;
-C_NV131	=	"	 dobu gabu maru	"	;
-C_NV132	=	"	 Hurricyclone	"	;
-//Ancient Aliens
-C_AA101	=	"	Skillsaw	"	;
-C_AA102	=	"	Skillsaw	"	;
-C_AA103	=	"	Skillsaw	"	;
-C_AA104	=	"	Skillsaw	"	;
-C_AA105	=	"	Skillsaw	"	;
-C_AA106	=	"	Skillsaw	"	;
-C_AA107	=	"	Skillsaw	"	;
-C_AA108	=	"	Skillsaw	"	;
-C_AA109	=	"	Joshy	"	;
-C_AA110	=	"	Skillsaw	"	;
-C_AA111	=	"	Skillsaw	"	;
-C_AA112	=	"	Skillsaw	"	;
-C_AA113	=	"	Skillsaw	"	;
-C_AA114	=	"	Skillsaw	"	;
-C_AA115	=	"	Skillsaw	"	;
-C_AA116	=	"	Skillsaw	"	;
-C_AA117	=	"	Skillsaw	"	;
-C_AA118	=	"	Skillsaw	"	;
-C_AA119	=	"	Skillsaw	"	;
-C_AA120	=	"	AD_79	"	;
-C_AA121	=	"	Skillsaw	"	;
-C_AA122	=	"	Skillsaw	"	;
-C_AA123	=	"	Esselfortium	"	;
-C_AA124	=	"	Pinchy	"	;
-C_AA125	=	"	Lupinx-Kassman	"	;
-C_AA126	=	"	Skillsaw	"	;
-C_AA127	=	"	Tarnsman	"	;
-C_AA128	=	"	Skillsaw	"	;
-C_AA129	=	"	Joshy	"	;
-C_AA130	=	"	Skillsaw	"	;
-C_AA131	=	"	Stewboy	"	;
-C_AA132	=	"	Skillsaw	"	;
+C_EP2 = "Epic2";
+C_EP201	= "Alexander 'Eternal' S";
+C_EP202	= "Alexander 'Eternal' S";
+C_EP203	= "Alexander 'Eternal' S";
+C_EP204	= "Alexander 'Eternal' S";
+C_EP205	= "Alexander 'Eternal' S";
+C_EP206	= "Alexander 'Eternal' S";
+C_EP207	= "Alexander 'Eternal' S";
+C_EP208	= "Alexander 'Eternal' S";
+C_EP209	= "Alexander 'Eternal' S";
+C_EP210	= "Alexander 'Eternal' S";
+C_EP211	= "Alexander 'Eternal' S";
+C_EP212	= "Alexander 'Eternal' S";
+C_EP213	= "Alexander 'Eternal' S";
+C_EP214	= "Alexander 'Eternal' S";
+C_EP215	= "Alexander 'Eternal' S";
+C_EP216	= "Alexander 'Eternal' S";
+C_EP217	= "Alexander 'Eternal' S";
+C_EP218	= "Alexander 'Eternal' S";
+C_EP219	= "Alexander 'Eternal' S";
+C_EP220	= "Alexander 'Eternal' S";
+C_EP221	= "Alexander 'Eternal' S";
+C_EP222	= "Alexander 'Eternal' S";
+C_EP223	= "Alexander 'Eternal' S";
+C_EP224	= "Alexander 'Eternal' S";
+C_EP225	= "Alexander 'Eternal' S";
+C_EP226	= "Alexander 'Eternal' S";
+C_EP227	= "Alexander 'Eternal' S";
+C_EP228	= "Alexander 'Eternal' S";
+C_EP229	= "Alexander 'Eternal' S";
+C_EP230	= "Alexander 'Eternal' S";
+C_EP231	= "Alexander 'Eternal' S";
+C_EP232	= "Alexander 'Eternal' S";
+
+C_EP1 = "Epic 1";
+C_EP101	= "Alexander 'Eternal' S";
+C_EP102	= "Alexander 'Eternal' S";
+C_EP103	= "Alexander 'Eternal' S";
+C_EP104	= "Alexander 'Eternal' S";
+C_EP105	= "Alexander 'Eternal' S";
+
+C_SF2 = "SlaughterFest 2012";
+C_SF201	= "cannonball";
+C_SF202	= "Death Egg";
+C_SF203	= "Ribbiks";
+C_SF204	= "darkreaver";
+C_SF205	= "cannonball";
+C_SF206	= "Phml";
+C_SF207	= "Kyka";
+C_SF208	= "dannebubinga";
+C_SF209	= "cannonball";
+C_SF210	= "cannonball";
+C_SF211	= "Rayzik";
+C_SF212	= "darkreaver";
+C_SF213	= "Rayzik";
+C_SF214	= "Archi";
+C_SF215	= "General Rainbow Bacon";
+C_SF216	= "Phml";
+C_SF217	= "Ribbiks";
+C_SF218	= "Bloodite Krypto";
+C_SF219	= "TimeOfDeath";
+C_SF220	= "cannonball";
+C_SF221	= "Rayzik";
+C_SF222	= "cannonball";
+C_SF223	= "TimeOfDeath";
+C_SF224	= "General Rainbow Bacon";
+C_SF225	= "elmle";
+C_SF226	= "Phml";
+C_SF227	= "ArmouredBlood";
+C_SF228	= "Phml";
+C_SF229	= "TimeOfDeath";
+C_SF230	= "Ribbiks";
+C_SF231	= "gggmork";
+C_SF232	= "TimeOfDeath";
+
+C_NV1 = "Nova";
+C_NV101	= "Primeval";
+C_NV102	= "Jaws in Space";
+C_NV103	= "mrthejoshmon";
+C_NV104	= "EvilNed";
+C_NV105	= "kildeth";
+C_NV106	= "Arjak";
+C_NV107	= "EvilNed";
+C_NV108	= "mrthejoshmon";
+C_NV109	= "Fuzzyfireball";
+C_NV110	= "EvilNed";
+C_NV111	= "Phobus";
+C_NV112	= "mrthejoshmon";
+C_NV113	= "sgt Dopey";
+C_NV114	= "EvilNed";
+C_NV115	= "cannonball";
+C_NV116	= "Paul D";
+C_NV117	= "EvilNed";
+C_NV118	= "cannonball";
+C_NV119	= "mouldy";
+C_NV120	= "Arjak";
+C_NV121	= "joe-ilya";
+C_NV122	= "Hurricyclone";
+C_NV123	= "Paul D";
+C_NV124	= "Stygian";
+C_NV125	= "mouldy";
+C_NV126	= "joe-ilya";
+C_NV127	= "kildeth";
+C_NV128	= "mouldy";
+C_NV129	= "fiend-o-hell";
+C_NV130	= "Various";
+C_NV131	= "dobu gabu maru";
+C_NV132	= "Hurricyclone";
+
+C_AA1 = "Ancient Aliens";
+C_AA101	= "Skillsaw";
+C_AA102	= "Skillsaw";
+C_AA103	= "Skillsaw";
+C_AA104	= "Skillsaw";
+C_AA105	= "Skillsaw";
+C_AA106	= "Skillsaw";
+C_AA107	= "Skillsaw";
+C_AA108	= "Skillsaw";
+C_AA109	= "Joshy";
+C_AA110	= "Skillsaw";
+C_AA111	= "Skillsaw";
+C_AA112	= "Skillsaw";
+C_AA113	= "Skillsaw";
+C_AA114	= "Skillsaw";
+C_AA115	= "Skillsaw";
+C_AA116	= "Skillsaw";
+C_AA117	= "Skillsaw";
+C_AA118	= "Skillsaw";
+C_AA119	= "Skillsaw";
+C_AA120	= "AD_79";
+C_AA121	= "Skillsaw";
+C_AA122	= "Skillsaw";
+C_AA123	= "Esselfortium";
+C_AA124	= "Pinchy";
+C_AA125	= "Lupinx-Kassman";
+C_AA126	= "Skillsaw";
+C_AA127	= "Tarnsman";
+C_AA128	= "Skillsaw";
+C_AA129	= "Joshy";
+C_AA130	= "Skillsaw";
+C_AA131	= "Stewboy";
+C_AA132	= "Skillsaw";
+
+C_CC1 = "Community Chest 1";
+C_CC101	= "Stephen Clark (The Ultimate DooMer)";
+C_CC102	= "Thomas van der Velden";
+C_CC103	= "Alex Parsons";
+C_CC104	= "Daniel Trim (Bad Bob)";
+C_CC105	= "Black Void";
+C_CC106	= "Kevin Reay (Magikal)";
+C_CC107	= "Gene Bird";
+C_CC108	= "Daniel Trim (Bad Bob)";
+C_CC109	= "Daniel Trim (Bad Bob)";
+C_CC110	= "Samuel Villarreal (Kaiser)";
+C_CC111	= "Alex Parsons";
+C_CC112	= "Mike Alfredson (Use3D)";
+C_CC113	= "Mike Alfredson (Use3D)";
+C_CC114	= "Sam Woodman (Metabolist)";
+C_CC115	= "Samuel Villarreal (Kaiser)";
+C_CC116	= "Andy Leaver";
+C_CC117	= "Andy Leaver";
+C_CC118	= "Rex Claussen";
+C_CC119	= "Gene Bird";
+C_CC120	= "Stephen Clark (The Ultimate DooMer)";
+C_CC121	= "Sphagne";
+C_CC122	= "Jason Allison (ravage)";
+C_CC123	= "Sphagne";
+C_CC124	= "Kim Bach (Torn)";
+C_CC125	= "Will Hackney (Archvile46)";
+C_CC126	= "Samuel Villarreal (Kaiser)";
+C_CC127	= "Sphagne";
+C_CC128	= "Gene Bird";
+C_CC129	= "Kevin Reay (Magikal)";
+C_CC130	= "Thomas van der Velden";
+C_CC131	= "Simon Broadhead (VolteFace)";
+C_CC132	= "Gene Bird";
+
+C_CC2 = "Community Chest 2";
+C_CC201	= "Erik Alm	";
+C_CC202	= "Trevor Primmett (iori)";
+C_CC203	= "Ian Cunnings (The Flange Peddler)";
+C_CC204	= "Gene Bird";
+C_CC205	= "Rob Young (RjY)";
+C_CC206	= "Thomas Lutrov (Lutrov71)";
+C_CC207	= "Ian Cunnings (The Flange Peddler)";
+C_CC208	= "Gene Bird";
+C_CC209	= "Christoph Oelckers (Graf Zahl)";
+C_CC210	= "Simon Broadhead (VolteFace)";
+C_CC211	= "Dennis Meuwissen (Exl) (as 'Exile')";
+C_CC212	= "Gene Bird";
+C_CC213	= "Jeffrey Graham (psyren)";
+C_CC214	= "Mephisto	";
+C_CC215	= "Stephen Clark (The Ultimate DooMer)";
+C_CC216	= "Gene Bird";
+C_CC217	= "Andy Leaver";
+C_CC218	= "Samuel Villarreal (Kaiser)";
+C_CC219	= "Jan Engelhardt (Hirogen2)";
+C_CC220	= "Ian Cunnings (The Flange Peddler)";
+C_CC221	= "Draconio";
+C_CC222	= "Thomas Lutrov (Lutrov71) and Kimmo Kumpulainen (Jimi)";
+C_CC223	= "Cyber-Menace";
+C_CC224	= "B.P.R.D";
+C_CC225	= "Gene Bird";
+C_CC226	= "Dr. Zin";
+C_CC227	= "Mike Alfredson (Use3D)";
+C_CC228	= "Andrew Stine (Linguica)";
+C_CC229	= "Boris Iwanski";
+C_CC230	= "Mike Watson (Cyb)";
+C_CC231	= "Owen Lloyd (Sarge Baldy)";
+C_CC232	= "Chris Hopkins (Chopkinsca)";
+
+C_CC3 = "Community Chest 3";
+C_CC301	= "Mike Alfredson (Use3D)";
+C_CC302	= "Ronald Lubbelinkhof (Dutch Devil)";
+C_CC303	= "Maximillian Daley (BlackFish) and Matt Grieshober (Soap on a Rope)";
+C_CC304	= "Matthew Gilzinger (doom2day)";
+C_CC305	= "Matthew Gilzinger (doom2day)";
+C_CC306	= "Daniel Gimmer (Tormentor667)";
+C_CC307	= "Matt Tropiano";
+C_CC308	= "Andy Leaver and Eric Baker (The Green Herring)";
+C_CC309	= "Paul Corfiatis";
+C_CC310	= "Will Hackney";
+C_CC311	= "Burke Hill (Kirby)";
+C_CC312	= "Matt Cibulas (RottKing)"	;
+C_CC313	= "Thomas van der Velden";
+C_CC314	= "Matt Grieshober (Soap on a Rope)";
+C_CC315	= "Eric Baker (The Green Herring)";
+C_CC316	= "Matt Devlin (Shadow Dweller) and Eric Baker (The Green Herring)";
+C_CC317	= "Andy Leaver";
+C_CC318	= "James Cresswell (Phobus)";
+C_CC319	= "Mike Alfredson (Use3d)";
+C_CC320	= "Dr. Zin";
+C_CC321	= "Thomas van der Velden";
+C_CC322	= "Ronald Lubbelinkhof (Dutch Devil)";
+C_CC323	= "Ronald Lubbelinkhof (Dutch Devil)";
+C_CC324	= "Ian Cunnings (The Flange Peddler)";
+C_CC325	= "Andy Leaver";
+C_CC326	= "Dr. Zin";
+C_CC327	= "Eric Baker (The Green Herring)";
+C_CC328	= "Rob Young (RjY)";
+C_CC329	= "Matt Tropiano";
+C_CC330	= "Matt Tropiano";
+C_CC331	= "Chris Kassap (lupinx-Kassman)";
+C_CC332	= "Matt Devlin (Shadow Dweller) and Eric Baker (The Green Herring)";
+
+C_CC4 = "Community Chest 4";
+C_CC401	= "William Huber";
+C_CC402	= "Paul DeBruyne (skillsaw)";
+C_CC403	= "James Cresswell (Phobus)";
+C_CC404	= "Stuart Rynn (Forty-Two)";
+C_CC405	= "Alice Jameson";
+C_CC406	= "Adam Windsor";
+C_CC407	= "James Cresswell (Phobus)";
+C_CC408	= "Mithran Denizen";
+C_CC409	= "William Huber";
+C_CC410	= "Ronald Lubbelinkhof (Dutch Devil)";
+C_CC411	= "Chrisbo Sonnekins (Christoph) and Josh Sealy (Joshy)";
+C_CC412	= "Eric Baker (The Green Herring)";
+C_CC413	= "James Cresswell (Phobus)";
+C_CC414	= "Eli Cohen (ProcessingControl)";
+C_CC415	= "Lord Z";
+C_CC416	= "Keeper of Jericho";
+C_CC417	= "Andy Leaver";
+C_CC418	= "James Paddock (Jimmy) and Brett Harrell (Mechadon)";
+C_CC419	= "Josh Sealy (Joshy)";
+C_CC420	= "Chris Kassap (lupinx-Kassman)";
+C_CC421	= "Chris Kassap (lupinx-Kassman)";
+C_CC422	= "C30N9";
+C_CC423	= "Walter Confalonieri";
+C_CC424	= "Matt Devlin (Shadow Dweller)";
+C_CC425	= "Kim Bach (Torn)";
+C_CC426	= "Kristian Aro";
+C_CC427	= "Paul Corfiatis";
+C_CC428	= "William Huber";
+C_CC429	= "Christian Lian (darkreaver)";
+C_CC430	= "Josh Sealy (Joshy)";
+C_CC431	= "Stuart Rynn (Forty-Two)";
+C_CC432	= "Jeffrey Nordin";
+C_CC435	= "Brian Knox (Snakes)";
+
+C_NG2 = "New Gothic Movement 2";
+C_NG201	= "Armouredblood and Archi";
+C_NG202	= "Armouredblood and Archi";
+C_NG203	= "Armouredblood and Archi";
+C_NG204	= "Armouredblood and Archi";
+C_NG205	= "Armouredblood and Archi";
+C_NG206	= "Armouredblood and Archi";
+C_NG207	= "Armouredblood and Archi";
+C_NG208	= "Armouredblood and Archi";
+C_NG209	= "Armouredblood and Archi";
+C_NG210	= "Armouredblood and Archi";
+C_NG211	= "Armouredblood and Archi";
+C_NG212	= "Armouredblood and Archi";
+C_NG213	= "Armouredblood and Archi";
+C_NG214	= "Armouredblood and Archi";
+C_NG215	= "Armouredblood and Archi";
+C_NG216	= "Armouredblood and Archi";
+C_NG231	= "Armouredblood and Archi";
+
+C_SD6 = "Stardate 20X6";
+C_SD601	= "Ribbiks";
+C_SD602	= "Ribbiks";
+C_SD603	= "Ribbiks";
+C_SD604	= "Ribbiks";
+C_SD605	= "Ribbiks";
+C_SD606	= "Ribbiks";
+C_SD607	= "Ribbiks";
+C_SD631	= "Ribbiks";
+
+C_SD7 = "Stardate 20X7";
+C_SD701	= "Ribbiks";
+C_SD702	= "Ribbiks";
+C_SD703	= "Ribbiks";
+C_SD704	= "Ribbiks";
+C_SD705	= "Ribbiks";
+C_SD706	= "Ribbiks";
+C_SD707	= "Ribbiks";
+C_SD708	= "Ribbiks";
+C_SD709	= "Ribbiks";
+C_SD731	= "Ribbiks";
+C_SD732	= "Ribbiks";
+
+C_SW1 = "Swim With The Whales";
+C_SW101	= "Ribbiks";
+C_SW102	= "Ribbiks";
+C_SW103	= "Ribbiks";
+C_SW131	= "Ribbiks";
+
+C_SF3 = "SlaughterFest 2013";
+C_SF301	= "Grain of Salt";
+C_SF302	= "Matt 'cannonball' Powell";
+C_SF303	= "darkreaver";
+C_SF304	= "Rayzik";
+C_SF305	= "tatsurd-cacocaco";
+C_SF306	= "Matt 'cannonball' Powell";
+C_SF307	= "Phml";
+C_SF308	= "Grain of Salt";
+C_SF309	= "Phml";
+C_SF310	= "Phml";
+C_SF311	= "Archi";
+C_SF312	= "Demonologist";
+C_SF313	= "Rayzik";
+C_SF314	= "Matt 'cannonball' Powell";
+C_SF315	= "Ribbiks";
+C_SF316	= "Ribbiks & Archi";
+C_SF317	= "tatsurd-cacocaco";
+C_SF318	= "Demonologist";
+C_SF319	= "dannebubinga";
+C_SF320	= "ArmouredBlood";
+C_SF321	= "Grain of Salt, Demonologist, Ribbiks, Archi";
+C_SF322	= "Matt 'cannonball' Powell";
+C_SF323	= "Solarn";
+C_SF324	= "dannebubinga";
+C_SF325	= "Archi";
+C_SF326	= "Archi";
+C_SF327	= "Demonologist";
+C_SF328	= "TimeOfDeath";
+C_SF329	= "TimeOfDeath";
+C_SF330	= "Archi";
+C_SF331	= "kraflab";
+C_SF332	= "__Lagger__";
+C_SF333	= "Phml";
+C_SF334	= "gggmork";
+C_SF335	= "gggmork";
+
+C_TT1 = "1024 Congestion";
+C_TT101	= "Hobomaster22";
+C_TT102	= "Iori";
+C_TT103	= "shitbag";
+C_TT104	= "The Flange Peddler";
+C_TT105	= "shitbag";
+C_TT106	= "Hobomaster22";
+C_TT107	= "Szymanski";
+C_TT108	= "shitbag";
+C_TT109	= "Psyren";
+C_TT110	= "shitbag";
+C_TT111	= "Lutrov71";
+C_TT112	= "shitbag";
+C_TT113	= "DoomedAce";
+C_TT114	= "Psyren";
+C_TT115	= "Cyb";
+C_TT116	= "Szymanski";
+C_TT117	= "Szymanski";
+C_TT118	= "Hobomaster22";
+C_TT119	= "Potgiesser";
+C_TT120	= "The Flange Peddler";
+C_TT121	= "DoomedAce";
+C_TT122	= "Jimi";
+C_TT123	= "Job";
+C_TT124	= "Stealthy Ivan";
+C_TT125	= "Catsy";
+C_TT126	= "Cycloid";
+C_TT127	= "The Flange Peddler";
+C_TT128	= "The Flange Peddler";
+C_TT129	= "Potgiesser";
+C_TT130	= "The Flange Peddler and Lutrov71";
+C_TT131	= "Jimi";
+C_TT132	= "Russel Pearson";
+
+C_TT2 = "1024 Clausterphobia 2";
+C_TT201	= "Stewboy";
+C_TT202	= "shotgunmasacre2 & Jodwin";
+C_TT203	= "Jodwin";
+C_TT204	= "Impboy & Daimon";
+C_TT205	= "Lord_Z & KingKill33 & Jodwin & Dreadopp & Mechadon";
+C_TT206	= "Fisk & Daimon & Jodwin";
+C_TT207	= "KingKill33";
+C_TT208	= "Daimon & Jodwin";
+C_TT209	= "Dreadopp";
+C_TT210	= "Stewboy";
+C_TT211	= "Daimon & Jodwin";
+C_TT212	= "KingKill33 & Jodwin";
+C_TT213	= "StupidBunny & Kyka";
+C_TT214	= "alterworldruler";
+C_TT215	= "Jodwin";
+C_TT216	= "KingKill33 & Jodwin";
+C_TT217	= "alterworldruler & TheMionicDonut & Jodwin";
+C_TT218	= "Impboy & Jodwin";
+C_TT219	= "KingKill33 & Kyka";
+C_TT220	= "Mik57 & Daimon";
+C_TT221	= "Jodwin";
+C_TT222	= "KingKill33 & Dreadopp";
+C_TT223	= "alterworldruler & Jodwin";
+C_TT224	= "Mik57 & Jodwin";
+C_TT225	= "KingKill33 & Kyka";
+C_TT226	= "Jodwin";
+C_TT227	= "Solarn & Jodwin";
+C_TT228	= "Butts & Jodwin";
+C_TT229	= "Jodwin";
+C_TT230	= "gggmork";
+C_TT231	= "TheMionicDonut & Jodwin & Daimon";
+C_TT232	= "Kyka";
+C_TT233	= "Jodwin & Kyka";
+C_TT234	= "gggmork & Kyka";
+
+C_TT3 = "1024 Clausterphobia 3";
+C_TT301	= "The Green Herring";
+C_TT302	= "Impboy";
+C_TT303	= "Jodwin";
+C_TT304	= "Stewboy & Kyka";
+C_TT305	= "Mechadon";
+C_TT306	= "The Green Herring";
+C_TT307	= "Mechadon	";
+C_TT308	= "pcorf";
+C_TT309	= "Kyka";
+C_TT310	= "Stewboy & Jodwin";
+C_TT311	= "pcorf";
+C_TT312	= "Fiend";
+C_TT313	= "Joshy";
+C_TT314	= "Dreadopp";
+C_TT315	= "Jimmy91";
+C_TT316	= "brinks";
+C_TT317	= "Solarn & Kyka & Jodwin";
+C_TT318	= "InsanityBringer & Kyka & Jodwin";
+C_TT319	= "esselfortium	";
+C_TT320	= "dutch devil";
+C_TT321	= "KingKill33 & Dreadopp";
+C_TT322	= "Mechadon";
+C_TT323	= "dutch devil";
+C_TT324	= "Spertz";
+C_TT325	= "Mechadon";
+C_TT326	= "Butts & Joshy & Jodwin & Mechadon";
+C_TT327	= "Jodwin";
+C_TT328	= "Joshy";
+C_TT329	= "POTGIESSER & Mechadon";
+C_TT330	= "Jodwin";
+C_TT331	= "Jodwin";
+C_TT332	= "Mik57 & Mechadon";
+
+C_CW1 = "Chainworm";
+C_CW101	= "Chainworm666";
+C_CW102	= "Chainworm666";
+C_CW103	= "Chainworm666";
+C_CW104	= "Chainworm666";
+C_CW105	= "Chainworm666";
+C_CW106	= "Chainworm666";
+C_CW107	= "Chainworm666";
+C_CW108	= "Chainworm666";
+C_CW109	= "Chainworm666";
+C_CW110	= "Chainworm666";
+C_CW111	= "Chainworm666";
+
+C_BX1 = "Back To Saturn 1";
+C_BX101	= "Sarah Mancuso and Richard Frei";
+C_BX102	= "Sarah Mancuso";
+C_BX103	= "Paul DeBruyne";
+C_BX104	= "Sarah Mancuso";
+C_BX105	= "Walker Wright";
+C_BX106	= "Trevor Primmett";
+C_BX107	= "Björn Ostmann";
+C_BX108	= "Sarah Mancuso";
+C_BX109	= "Sarah Mancuso and Travers Dunne";
+C_BX110	= "Paul DeBruyne";
+C_BX111	= "Ed Cripps";
+C_BX112	= "Travers Dunne and Paul DeBruyne";
+C_BX113	= "Sarah Mancuso and Paul DeBruyne";
+C_BX114	= "Matthew Edwards and Sarah Mancuso";
+C_BX115	= "Brett Harrell";
+C_BX116	= "Sarah Mancuso";
+C_BX117	= "Sarah Mancuso";
+C_BX118	= "Simon Judd";
+C_BX119	= "Richard Frei and Sarah Mancuso";
+C_BX120	= "Matt Cibulas";
+C_BX121	= "Nick Laurent and Richard Frei";
+C_BX122	= "Matt Cibulas and Paul DeBruyne";
+C_BX123	= "Sarah Mancuso";
+C_BX124	= "John Oksasoglu";
+C_BX125	= "Sarah Mancuso";
+C_BX131	= "Paul DeBruyne";
+C_BX132	= "Paul DeBruyne";
+
+C_DU1 = "Destination Unknown";
+C_DU101	= "Stewboy";
+C_DU102	= "Stewboy";
+C_DU103	= "Stewboy";
+C_DU104	= "Stewboy";
+C_DU105	= "Stewboy";
+C_DU106	= "Stewboy";
+C_DU107	= "Stewboy";
+C_DU108	= "Stewboy";
+C_DU109	= "Stewboy";
+C_DU110	= "Stewboy";
+C_DU111	= "Stewboy";
+C_DU112	= "Stewboy";
+C_DU113	= "Stewboy";
+C_DU114	= "Stewboy";
+C_DU115	= "Stewboy";
+C_DU116	= "Stewboy";
+C_DU117	= "Stewboy";
+C_DU118	= "Stewboy";
+C_DU119	= "Stewboy";
+
+C_ZOF = "Zones Of Fear";
+C_ZOF01	= "enkeli33";
+C_ZOF02	= "enkeli33";
+C_ZOF03	= "Damned";
+C_ZOF04	= "enkeli33";
+C_ZOF05	= "Damned";
+C_ZOF06	= "jaeden";
+C_ZOF07	= "enkeli33";
+C_ZOF08	= "des_arthes";
+C_ZOF09	= "jaeden";
+C_ZOF10	= "enkeli33";
+C_ZOF11	= "jaeden";
+C_ZOF12	= "klofkac & enkeli33";
+C_ZOF13	= "damned";
+C_ZOF14	= "enkeli33";
+C_ZOF15	= "jaeden";
+C_ZOF16	= "enkeli33";
+C_ZOF17	= "enkeli33";
+C_ZOF18	= "enkeli33";
+C_ZOF19	= "enkeli33";
+C_ZOF20	= "jaeden";
+C_ZOF21	= "enkeli33";
+C_ZOF22	= "jaeden";
+C_ZOF23	= "enkeli33";
+C_ZOF24	= "jaeden";
+C_ZOF25	= "enkeli33";
+C_ZOF26	= "jaeden";
+C_ZOF27	= "enkeli33";
+C_ZOF28	= "pipicz";
+C_ZOF29	= "enkeli33";
+C_ZOF30	= "jaeden";
+C_ZOF31	= "jaeden";
+C_ZOF32	= "damned";
+
+C_ZTH = "Zone 300";
+C_ZTH01	= "Paul Corfiatis";
+C_ZTH02	= "Paul Corfiatis";
+C_ZTH03	= "Paul Corfiatis";
+C_ZTH04	= "Paul Corfiatis";
+C_ZTH05	= "Paul Corfiatis";
+C_ZTH06	= "Paul Corfiatis";
+C_ZTH07	= "Paul Corfiatis";
+C_ZTH08	= "Paul Corfiatis";
+C_ZTH09	= "Paul Corfiatis";
+C_ZTH10	= "Paul Corfiatis";
+C_ZTH11	= "Paul Corfiatis";
+C_ZTH12	= "Paul Corfiatis";
+C_ZTH13	= "Paul Corfiatis";
+C_ZTH14	= "Paul Corfiatis";
+C_ZTH15	= "Paul Corfiatis";
+C_ZTH16	= "Paul Corfiatis";
+C_ZTH17	= "Paul Corfiatis";
+C_ZTH18	= "Paul Corfiatis";
+C_ZTH19	= "Paul Corfiatis";
+C_ZTH20	= "Paul Corfiatis";
+C_ZTH21	= "Paul Corfiatis";
+C_ZTH22	= "Paul Corfiatis";
+C_ZTH23	= "Paul Corfiatis";
+C_ZTH24	= "Paul Corfiatis";
+C_ZTH25	= "Paul Corfiatis";
+C_ZTH26	= "Paul Corfiatis";
+C_ZTH27	= "Paul Corfiatis";
+C_ZTH28	= "Paul Corfiatis";
+C_ZTH29	= "Paul Corfiatis";
+C_ZTH30	= "Paul Corfiatis";
+C_ZTH31	= "Paul Corfiatis";
+C_ZTH32	= "Paul Corfiatis";
+
+C_INT = "Interception";
+C_INT01	= "Matt534Dog";
+C_INT02	= "Matt534Dog";
+C_INT03	= "Matt534Dog";
+C_INT04	= "Matt534Dog";
+C_INT05	= "Michael Jan Krizik (valkiriforce)";
+C_INT06	= "phobosdeimos1";
+C_INT07	= "Matt534Dog";
+C_INT08	= "purist";
+C_INT09	= "Razen";
+C_INT10	= "C30N9";
+C_INT11	= "Michael Jan Krizik (valkiriforce)";
+C_INT12	= "Sgt Dopey & Matt534Dog";
+C_INT13	= "Memfis";
+C_INT14	= "Eli "ProcessingControl" Cohen";
+C_INT15	= "phobosdeimos1";
+C_INT16	= "franckFRAG";
+C_INT17	= "Razen (Ashton Bahnmiller)";
+C_INT18	= "Michael Jan Krizik (valkiriforce)";
+C_INT19	= "Matt534Dog + Marnetmar + Pottus";
+C_INT20	= "Matt534Dog";
+C_INT21	= "phobosdeimos1";
+C_INT22	= "phobosdeimos1";
+C_INT23	= "Pottus";
+C_INT24	= "C30N9 / Michael Jan Krizik (valkiriforce)";
+C_INT25	= "C30N9";
+C_INT26	= "Memfis and purist";
+C_INT27	= "Pottus";
+C_INT28	= "Eli "ProcessingControl" Cohen";
+C_INT29	= "General Rainbow Bacon";
+C_INT30	= "Matt534Dog";
+C_INT31	= "Eli "ProcessingControl" Cohen";
+C_INT32	= "Michael Jan Krizik (valkiriforce)";
+
+C_CHX = "Chillax";
+C_CHX01	= "anonymous/unknown";
+C_CHX02	= "anonymous/unknown";
+C_CHX03	= "anonymous/unknown";
+C_CHX04	= "anonymous/unknown";
+C_CHX05	= "anonymous/unknown";
+C_CHX06	= "anonymous/unknown";
+C_CHX07	= "anonymous/unknown";
+C_CHX08	= "anonymous/unknown";
+C_CHX09	= "anonymous/unknown";
+C_CHX10	= "anonymous/unknown";
+C_CHX11	= "anonymous/unknown";
+C_CHX12	= "anonymous/unknown";
+C_CHX13	= "anonymous/unknown";
+C_CHX14	= "anonymous/unknown";
+C_CHX15	= "anonymous/unknown";
+C_CHX16	= "anonymous/unknown";
+C_CHX17	= "anonymous/unknown";
+C_CHX18	= "anonymous/unknown";
+C_CHX19	= "anonymous/unknown";
+C_CHX20	= "anonymous/unknown";
+C_CHX21	= "anonymous/unknown";
+C_CHX22	= "anonymous/unknown";
+C_CHX23	= "anonymous/unknown";
+C_CHX24	= "anonymous/unknown";
+C_CHX25	= "anonymous/unknown";
+C_CHX26	= "anonymous/unknown";
+C_CHX27	= "anonymous/unknown";
+C_CHX28	= "anonymous/unknown";
+C_CHX29	= "anonymous/unknown";
+C_CHX30	= "anonymous/unknown";
+C_CHX31	= "anonymous/unknown";
+C_CHX32	= "anonymous/unknown";
+C_CHX33	= "anonymous/unknown";
+C_CHX34	= "anonymous/unknown";
+C_CHX35	= "anonymous/unknown";
+C_CHX36	= "anonymous/unknown";
+C_CHX37	= "anonymous/unknown";
+C_CHX38	= "anonymous/unknown";
+C_CHX39	= "anonymous/unknown";
+C_CHX40	= "anonymous/unknown";
+C_CHX41	= "anonymous/unknown";
+C_CHX42	= "anonymous/unknown";
+C_CHX43	= "anonymous/unknown";
+C_CHX44	= "anonymous/unknown";
+C_CHX45	= "anonymous/unknown";
+C_CHX46	= "anonymous/unknown";
+C_CHX47	= "anonymous/unknown";
+
+C_RDX = "Doom 2 Redux";
+C_RDX01	= "Trace of Spades";
+C_RDX02	= "Trace of Spades";
+C_RDX03	= "nxGangrel, Trace of Spades";
+C_RDX04	= "Tactical Stiffy";
+C_RDX05	= "Tactical Stiffy";
+C_RDX06	= "ArchvileHunter";
+C_RDX07	= "WildMajora, nxGangrel";
+C_RDX08	= "Tactical Stiffy";
+C_RDX09	= "Ninehills42";
+C_RDX10	= "Muumi";
+C_RDX11	= "Joe-ilya";
+C_RDX12	= "SotaPoika";
+C_RDX13	= "nxGangrel";
+C_RDX14	= "nxGangrel";
+C_RDX15	= "nxGangrel, 40oz";
+C_RDX16	= "Tactical Stiffy";
+C_RDX17	= "Scotty";
+C_RDX18	= "Joe-ilya";
+C_RDX19	= "SotaPoika";
+C_RDX20	= "Tactical Stiffy";
+C_RDX21	= "Joe-ilya";
+C_RDX22	= "nxGangrel";
+C_RDX23	= "Trace of Spades";
+C_RDX24	= "Scotty";
+C_RDX25	= "ArchvileHunter";
+C_RDX26	= "ArchvileHunter, nxGangrel";
+C_RDX27	= "Tactical Stiffy";
+C_RDX28	= "Tactical Stiffy";
+C_RDX29	= "nxGangrel";
+C_RDX30	= "Trace of Spades, nxGangrel, Scotty";
+C_RDX31	= "Tomato Ketchup";
+C_RDX32	= "Supercupcaketactics";
+
+C_TSP = "The Spire 1";
+C_TSP01 = "Michael 'prower' Reid";
+
+C_TSO2 = "The Spire 2";
+C_TSO201 = "Michael 'prower' Reid";
+
+C_EYE = "The Eye";
+C_EYE01 = "mouldy";
+
+C_HP1 = "Sens"
+C_HP103 = "Hell_Pike";
+C_AAA01 = "Protester";
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/////////////////			Lore Entries			////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//Thrope
+LORE_ERR =      "\c[Red]Error: Lore not found, this is bad, please tell devs.";
+
+LORE_1 =        "\c[White]TherianThrope Segment\n\n\c[White]--------------------\n\n"
+                "\c[White]The Archmage normaly comes to this particular space at his own leisure to read.\n"
+                "\c[White]This comic strip he left open is from a comic, though may as well be a manga\n"
+                "\c[White]Called TherianThrope. To Summarise it its about a girl named Aria who happens to have amnesia\n"
+                "\c[White]And who is hunted by some scary looking monsters known as 'Therianthrope'\n"
+                "\c[White]The archmage is reminded of demons from hell when looking at this same strip.\n\n\n"
+                "\c[Cyan]It's a good read, be sure to sub RigRug on Patreon!";
+
+//Afina and the Archmage lines
+LORE_2 =        "\c[Gold]The Painting of Afina\n\n"
+                "\c[White]--------------------\n\n"
+                "\c[White]You found a rather mysterious painting. By zapping it with your votegun\n"
+                "\c[White]you received some knowledge. This is a painting of a very powerfull mage named Afina.\n"
+                "\c[White]It's rumored she is very beautiful but also a powerfull adept in weilding magic.\n"
+                "\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n"
+                "\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious";
+                
+LORE_3 =        "\c[Gold]Painting of Afina #2\n\n"
+                "\c[White]--------------------\n\n"
+                "\c[White]You found another painting of Afina, this time sitting down and reading a book.\n"
+                "\c[White]You sense the same power that was being emitted from the other painting with this painting. You heard a voice in your head telling you something.\n"
+                "\c[Gold]Runic magic is the base of all things.\n"
+                "\c[Gold]Elemental Magic shapes our world that we hold dear to us.\n"
+                "\c[Gold]Chaos Magic distrupts order\n\c[Gold]Illusion Magic shrouded by shadow\n"
+                "\c[Gold]Restoration magic is my blood. blood to give life\n"
+                "\c[Gold]Entropy is my blood. blood to destory all things.";
+				
+LORE_4 =		"\c[Gold]Painting of Serril\n\n"
+                "\c[White]--------------------\n\n"
+                "\c[White]You found another painting but of a male character. By Shooting the painting with your Votegun\n"
+                "\c[White]you received some more knowledge. This is a painting of the fomrer Archmage named Serril.\n"
+                "\c[White]A very powerfull mage in his own right. Mastermind of the lexicon artifact.\n"
+				"\c[White]You also reveived a vision of a tower, made out of the same material\n"
+                "\c[White]As the building you are currently in. You sense immense power emitting from this painting after shooting it\n"
+                "\c[White]Is it possible to escape the lexicon?.";
 
 
-//Community Chest 1 needs some tlc for credits
+
+
+
+
+
+
 
 

@@ -1,0 +1,470 @@
+
+
+map CHX01 lookup "HUSTR_1"
+{
+	titlepatch = "CWILV00"
+	next = "CHX02"
+	secretnext = "CHX02"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 30
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX01"
+}
+
+map CHX02 lookup "HUSTR_2"
+{
+	titlepatch = "CWILV01"
+	next = "CHX03"
+	secretnext = "CHX03"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 90
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX02"
+}
+
+map CHX03 lookup "HUSTR_3"
+{
+	titlepatch = "CWILV02"
+	next = "CHX04"
+	secretnext = "CHX04"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 120
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX03"
+}
+
+map CHX04 lookup "HUSTR_4"
+{
+	titlepatch = "CWILV03"
+	next = "CHX05"
+	secretnext = "CHX05"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 120
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX04"
+}
+
+map CHX05 lookup "HUSTR_5"
+{
+	titlepatch = "CWILV04"
+	next = "CHX06"
+	secretnext = "CHX06"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 90
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX05"
+}
+
+map CHX06 lookup "HUSTR_6"
+{
+	titlepatch = "CWILV05"
+	next = "CHX07"
+	secretnext = "CHX07"
+	sky1 = "CHXSKY1"
+	cluster = 5
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	sucktime = 1
+	music = "D_CHX06"
+}
+
+map CHX07 lookup "HUSTR_7"
+{
+	titlepatch = "CWILV06"
+	next = "CHX08"
+	secretnext = "CHX08"
+	sky1 = "CHXSKY1"
+	cluster = 6
+	par = 120
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	map07special
+	music = "D_CHX07"
+}
+
+map CHX08 lookup "HUSTR_8"
+{
+	titlepatch = "CWILV07"
+	next = "CHX09"
+	secretnext = "CHX09"
+	sky1 = "CHXSKY1"
+	cluster = 6
+	par = 120
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX08"
+}
+
+map CHX09 lookup "HUSTR_9"
+{
+	titlepatch = "CWILV08"
+	next = "CHX10"
+	secretnext = "CHX10"
+	sky1 = "CHXSKY1"
+	cluster = 6
+	par = 270
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX09"
+}
+
+map CHX10 lookup "HUSTR_10"
+{
+	titlepatch = "CWILV09"
+	next = "CHX11"
+	secretnext = "CHX11"
+	sky1 = "CHXSKY1"
+	cluster = 6
+	par = 90
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX10"
+}
+
+map CHX11 lookup "HUSTR_11"
+{
+	titlepatch = "CWILV10"
+	next = "CHX12"
+	secretnext = "CHX12"
+	sky1 = "CHXSKY1"
+	cluster = 6
+	par = 210
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX11"
+}
+
+map CHX12 lookup "HUSTR_12"
+{
+	titlepatch = "CWILV11"
+	next = "CHX13"
+	secretnext = "CHX13"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX12"
+}
+
+map CHX13 lookup "HUSTR_13"
+{
+	titlepatch = "CWILV12"
+	next = "CHX14"
+	secretnext = "CHX14"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX13"
+}
+
+map CHX14 lookup "HUSTR_14"
+{
+	titlepatch = "CWILV13"
+	next = "CHX15"
+	secretnext = "CHX15"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX14"
+}
+
+map CHX15 lookup "HUSTR_15"
+{
+	titlepatch = "CWILV14"
+	next = "CHX16"
+	secretnext = "CHX31"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 210
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX15"
+}
+
+map CHX16 lookup "HUSTR_16"
+{
+	titlepatch = "CWILV15"
+	next = "CHX17"
+	secretnext = "CHX17"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX16"
+}
+
+map CHX17 lookup "HUSTR_17"
+{
+	titlepatch = "CWILV16"
+	next = "CHX18"
+	secretnext = "CHX18"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 420
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX17"
+}
+
+map CHX18 lookup "HUSTR_18"
+{
+	titlepatch = "CWILV17"
+	next = "CHX19"
+	secretnext = "CHX19"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX18"
+}
+
+map CHX19 lookup "HUSTR_19"
+{
+	titlepatch = "CWILV18"
+	next = "CHX20"
+	secretnext = "CHX20"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 210
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX19"
+}
+
+map CHX20 lookup "Kuthundral's Fortress"
+{
+	titlepatch = "CWILV19"
+	next = "CHX21"
+	secretnext = "CHX21"
+	sky1 = "CHXSKY1"
+	cluster = 7
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX20"
+}
+
+map CHX21 lookup "Descent into the Maelstrom"
+{
+	titlepatch = "CWILV20"
+	next = "CHX22"
+	secretnext = "CHX22"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 240
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX21"
+}
+
+map CHX22 lookup "HUSTR_22"
+{
+	titlepatch = "CWILV21"
+	next = "CHX23"
+	secretnext = "CHX23"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX22"
+}
+
+map CHX23 lookup "HUSTR_23"
+{
+	titlepatch = "CWILV22"
+	next = "CHX24"
+	secretnext = "CHX24"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 180
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX23"
+}
+
+map CHX24 lookup "HUSTR_24"
+{
+	titlepatch = "CWILV23"
+	next = "CHX25"
+	secretnext = "CHX25"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX24"
+}
+
+map CHX25 lookup "HUSTR_25"
+{
+	titlepatch = "CWILV24"
+	next = "CHX26"
+	secretnext = "CHX26"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 150
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX25"
+}
+
+map CHX26 lookup "HUSTR_26"
+{
+	titlepatch = "CWILV25"
+	next = "CHX27"
+	secretnext = "CHX27"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 300
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX26"
+}
+
+map CHX27 lookup "HUSTR_27"
+{
+	titlepatch = "CWILV26"
+	next = "CHX28"
+	secretnext = "CHX28"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 330
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX27"
+}
+
+map CHX28 lookup "HUSTR_28"
+{
+	titlepatch = "CWILV27"
+	next = "CHX29"
+	secretnext = "CHX29"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 420
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX28"
+}
+
+map CHX29 lookup "HUSTR_29"
+{
+	titlepatch = "CWILV28"
+	next = "CHX30"
+	secretnext = "CHX30"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 300
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX29"
+}
+
+map CHX30 lookup "HUSTR_30"
+{
+	titlepatch = "CWILV29"
+	next = "CHX33"
+	secretnext = "CHX33"
+	sky1 = "CHXSKY1"
+	cluster = 8
+	par = 180
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	allowmonstertelefrags
+	music = "D_CHX30"
+}
+
+map CHX31 lookup "HUSTR_31"
+{
+	titlepatch = "CWILV30"
+	next = "CHX16"
+	secretnext = "CHX32"
+	sky1 = "CHXSKY1"
+	cluster = 9
+	par = 120
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX31"
+}
+
+map CHX32 lookup "HUSTR_32"
+{
+	titlepatch = "CWILV31"
+	next = "CHX16"
+	secretnext = "CHX16"
+	sky1 = "CHXSKY1"
+	cluster = 10
+	par = 30
+	ExitPic = "CHXLV48"
+	EnterPic = "CHXLV48"
+	InterMusic = "D_CHXIN"
+	music = "D_CHX32"
+}
+
+
+map	CHX33	lookup	"	Impregnable Fort	"	{titlepatch	=	CHXLV33	next	=	CHX34	secretnext	=	CHX34	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX33	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX34	lookup	"	Paroxysm Ecstasy	"	{titlepatch	=	CHXLV34	next	=	CHX35	secretnext	=	CHX35	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX34	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX35	lookup	"	Lethal Artifice		"	{titlepatch	=	CHXLV35	next	=	CHX36	secretnext	=	CHX36	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX35	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX36	lookup	"	Sinistral Keep		"	{titlepatch	=	CHXLV36	next	=	CHX37	secretnext	=	CHX37	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX36	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX37	lookup	"	Knuckle Splitter	"	{titlepatch	=	CHXLV37	next	=	CHX38	secretnext	=	CHX38	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX37	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX38	lookup	"	Mutilator			"	{titlepatch	=	CHXLV38	next	=	CHX39	secretnext	=	CHX39	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX38	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX39	lookup	"	Morgus Rictus		"	{titlepatch	=	CHXLV39	next	=	CHX40	secretnext	=	CHX40	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX39	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX40	lookup	"	Suicide Assured		"	{titlepatch	=	CHXLV40	next	=	CHX41	secretnext	=	CHX41	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX40	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX41	lookup	"	Hallowed Grounds	"	{titlepatch	=	CHXLV41	next	=	CHX42	secretnext	=	CHX42	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX41	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX42	lookup	"	Spartan Gauntlet	"	{titlepatch	=	CHXLV42	next	=	CHX43	secretnext	=	CHX43	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX42	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX43	lookup	"	Searing Malice		"	{titlepatch	=	CHXLV43	next	=	CHX44	secretnext	=	CHX44	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX43	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX44	lookup	"	Diabolical Torment	"	{titlepatch	=	CHXLV44	next	=	CHX45	secretnext	=	CHX45	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX44	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX45	lookup	"	Feeding Frenzy		"	{titlepatch	=	CHXLV45	next	=	CHX46	secretnext	=	CHX46	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX45	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX46	lookup	"	Deadly Deja Vu		"	{titlepatch	=	CHXLV46	next	=	CHX47	secretnext	=	CHX47	ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX46	InterMusic	=	D_CHXIN	sucktime	=	1	par	=	0}
+map	CHX47	lookup	"	Grimlock Dungeon	"	{titlepatch	=	CHXLV47	next	=	VR	secretnext	=	VR	        ExitPic	=	CHXLV48	EnterPic	=	CHXLV48	sky1	=	CHXSKY1	music	=	D_CHX47	InterMusic	=	D_CHXIN	sucktime	=	1337	par	=	0}
+

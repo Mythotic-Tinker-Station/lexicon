@@ -1,0 +1,275 @@
+
+map NG201 lookup "HUSTR_1"
+{
+	titlepatch = "CWILV00"
+	next =  "NG202"
+	secretnext =  "NG202"
+	sky1 = "SKYSTRIF1"
+	par = 30
+	music = "D_NG201"
+	InterMusic = "D_NG232"
+	ExitPic = "NG2LV32"
+	EnterPic = "NG2LV32"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG202 lookup "HUSTR_2"
+{
+	titlepatch = "CWILV01"
+	next =  "NG203"
+	secretnext =  "NG203"
+	sky1 = "SKYSTRIF1"
+	par = 90
+	music = "D_NG202"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG203 lookup "HUSTR_3"
+{
+	titlepatch = "CWILV02"
+	next =  "NG204"
+	secretnext =  "NG204"
+	sky1 = "SKYSTRIF1"
+	par = 120
+	music = "D_NG203"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG204 lookup "HUSTR_4"
+{
+	titlepatch = "CWILV03"
+	next =  "NG205"
+	secretnext =  "NG205"
+	sky1 = "SKYSTRIF1"
+	par = 120
+	music = "D_NG204"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG205 lookup "HUSTR_5"
+{
+	titlepatch = "CWILV04"
+	next =  "NG206"
+	secretnext =  "NG206"
+	sky1 = "SKYSTRIF1"
+	par = 90
+	music = "D_NG205"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG206 lookup "HUSTR_6"
+{
+	titlepatch = "CWILV05"
+	next =  "NG207"
+	secretnext =  "NG207"
+	sky1 = "SKYSTRIF1"
+	par = 150
+	sucktime = 1
+	music = "D_NG206"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG207 lookup "HUSTR_7"
+{
+	titlepatch = "CWILV06"
+	next =  "NG208"
+	secretnext =  "NG208"
+	sky1 = "SKYSTRIF1"
+	par = 120
+	map07special
+	music = "D_NG207"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG208 lookup "HUSTR_8"
+{
+	titlepatch = "CWILV07"
+	next =  "NG209"
+	secretnext =  "NG209"
+	sky1 = "SKYSTRIF1"
+	par = 120
+	music = "D_NG208"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG209 lookup "HUSTR_9"
+{
+	titlepatch = "CWILV08"
+	next =  "NG210"
+	secretnext =  "NG210"
+	sky1 = "SKYSTRIF1"
+	par = 270
+	music = "D_NG209"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG210 lookup "HUSTR_10"
+{
+	titlepatch = "CWILV09"
+	next =  "NG211"
+	secretnext =  "NG211"
+	sky1 = "SKYSTRIF1"
+	par = 90
+	music = "D_NG210"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG211 lookup "HUSTR_11"
+{
+	titlepatch = "CWILV10"
+	next =  "NG212"
+	secretnext =  "NG212"
+	sky1 = "SKYSTRIF1"
+	par = 210
+	music = "D_NG211"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG212 lookup "HUSTR_12"
+{
+	titlepatch = "CWILV11"
+	next =  "NG213"
+	secretnext =  "NG213"
+	sky1 = "CC4SKY2"
+	par = 150
+	music = "D_NG212"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG213 lookup "HUSTR_13"
+{
+	titlepatch = "CWILV12"
+	next =  "NG214"
+	secretnext =  "NG214"
+	sky1 = "CC4SKY2"
+	par = 150
+	music = "D_NG213"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG214 lookup "HUSTR_14"
+{
+	titlepatch = "CWILV13"
+	next =  "NG215"
+	secretnext =  "NG215"
+	sky1 = "CC4SKY2"
+	par = 150
+	music = "D_NG214"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG215 lookup "HUSTR_15"
+{
+	titlepatch = "CWILV14"
+	next =  "NG216"
+	secretnext =  "NG231"
+	sky1 = "CC4SKY2"
+	par = 210
+	music = "D_NG215"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+map NG216 lookup "HUSTR_16"
+{
+	titlepatch = "CWILV15"
+	next =  "NG217"
+	secretnext =  "NG217"
+	sky1 = "CC4SKY2"
+	par = 150
+	music = "D_NG216"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}
+
+
+map NG231 lookup "HUSTR_31"
+{
+	titlepatch = "CWILV30"
+	next =  "NG216"
+	secretnext =  "NG232"
+	sky1 = "SKYRED"
+	par = 120
+	music = "D_NG231"
+	InterMusic = "D_NG233"
+	ExitPic = "NG2LV33"
+	EnterPic = "NG2LV33"
+	sucktime = 1
+	nojump
+	nocrouch
+}

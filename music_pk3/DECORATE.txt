@@ -1,0 +1,13 @@
+// special actor used by lexicon to identify if the misc pk3 is loaded
+actor MiscPK3Loaded
+{
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    States
+    {
+        Spawn:
+        TNT1 A 0
+        TNT1 A 1
+        Stop
+    }
+}

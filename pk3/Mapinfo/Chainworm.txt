@@ -1,0 +1,151 @@
+map CW101 "HILLSIDE BASE"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW102"
+	secretnext = "CW102"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "01KINGSA"
+	ExitPic = "LOAD01"
+	EnterPic = "LOAD01"
+	InterMusic = "00WINTER"
+	
+}
+map CW102 "UNDERGROUND LABS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW103"
+	secretnext = "CW103"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "02DIMENS"
+	ExitPic = "LOAD02"
+	EnterPic = "LOAD02"
+}
+map CW103 "FREIGHT YARD"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW104"
+	secretnext = "CW104"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "03FISTTO"
+	ExitPic = "LOAD03"
+	EnterPic = "LOAD03"
+}
+map CW104 "TOTENWALD"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW105"
+	secretnext = "CW105"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "04BRINGE"
+	ExitPic = "LOAD04"
+	EnterPic = "LOAD04"
+}
+map CW105 "WOLFSKUHLEN"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW106"
+	secretnext = "CW106"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "06PARALL"
+	ExitPic = "LOAD05"
+	EnterPic = "LOAD05"
+}
+map CW106 "BUDBERG CRYPTS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW107"
+	secretnext = "CW107"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "05FLIGHT"
+	ExitPic = "LOAD06"
+	EnterPic = "LOAD06"
+}
+map CW107 "THE PORTAL"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW108"
+	secretnext = "CW108"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "07THROUG"
+	ExitPic = "LOAD07"
+	EnterPic = "LOAD07"
+	Map07Special
+}
+map CW108 "DH'AGO-BA"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW109"
+	secretnext = "CW109"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "08NIGHTS"
+	ExitPic = "LOAD08"
+	EnterPic = "LOAD08"
+	OutsideFog = "8D773D"
+}
+map CW109 "WINTERLINGEN"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW110"
+	secretnext = "CW110"
+	sky1 = "CWSKY1"
+	cluster = 1
+	par = 30
+	music = "09ONHIGH"
+	ExitPic = "LOAD09"
+	EnterPic = "LOAD09"
+}
+map CW110 "HELLGRINDER"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "CW111"
+	secretnext = "CW111"
+	sky1 = "CWSKY2"
+	cluster = 1
+	par = 30
+	music = "10SCORCH"
+	ExitPic = "LOAD10"
+	EnterPic = "LOAD10"
+	OutsideFog = "FF0000"
+	CyberdemonSpecial
+	SpecialAction_OpenDoor
+}
+map CW111 "CREDITS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "11DRINKF"
+	ExitPic = "LOAD11"
+	EnterPic = "LOAD11"
+    sucktime = 1337
+}

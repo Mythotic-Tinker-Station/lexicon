@@ -1,0 +1,52 @@
+#library"command"
+#include"zcommon.acs"
+
+
+script "Maniac" (void)
+{
+int strIndex = strparam(n:-2);
+int Map = strMid(strIndex, 0,3);									
+if	(!stricmp(Map,"CS0") || !stricmp(Map,"CS2"))
+{
+SetResultValue (1);
+}
+else														
+if	(!stricmp(Map,"SC2"))
+{
+SetResultValue (2);
+}																			
+else																				
+if	(!stricmp(Map,"MAY"))
+{
+SetResultValue (3);
+}																			
+else																			
+if	(!stricmp(Map,"HC0") || !stricmp(Map,"HC1"))
+{
+SetResultValue (4);
+}																				
+else												
+if	(!stricmp(Map,"VAL"))
+{
+SetResultValue (5);
+}																			
+else																			
+if	(!stricmp(Map,"EP1") || !stricmp(Map,"EP2"))
+{
+SetResultValue (6);
+}																			
+else																	
+if	(!stricmp(Map,"AA1"))
+{
+SetResultValue (7);
+}																													
+else																																						
+if	(!stricmp(Map,"SD6") || !stricmp(Map,"SD7"))
+{
+SetResultValue (8);
+}
+Else
+{
+SetResultValue (9);
+}					
+}

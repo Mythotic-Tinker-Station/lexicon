@@ -1,0 +1,173 @@
+
+map SD701 lookup "Sun/Moon/Stars"
+{
+	titlepatch = "SD7LV00"
+	next = "SD702"
+	secretnext = "SD702"
+	sky1 = "SD7SKY1"
+	par = 30
+	ExitPic = "SD7LV32"
+	EnterPic = "SD7LV32"
+	music = "D_SD701"
+	InterMusic = "D_SD733"
+	nocrouch
+	nojump
+}
+
+map SD702 lookup "Eastern Sun"
+{
+	titlepatch = "SD7LV01"
+	next = "SD703"
+	secretnext = "SD703"
+	sky1 = "SD7SKY1"
+	par = 90
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD702"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD703 lookup "Amethyst III"
+{
+	titlepatch = "SD7LV02"
+	next = "SD704"
+	secretnext = "SD704"
+	sky1 = "SD7SKY1"
+	par = 120
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD703"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD704 lookup "Velvet Blood Mission"
+{
+	titlepatch = "SD7LV03"
+	next = "SD705"
+	secretnext = "SD705"
+	sky1 = "SD7SKY1"
+	par = 120
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD704"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD705 lookup "Sphinx Rising"
+{
+	titlepatch = "SD7LV04"
+	next = "SD706"
+	secretnext = "SD706"
+	sky1 = "SD7RSKY1"
+	par = 90
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD705"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD706 lookup "The Other Side"
+{
+	titlepatch = "SD7LV05"
+	next = "SD707"
+	secretnext = "SD707"
+	sky1 = "SD7SKY1"
+	par = 150
+	sucktime = 1
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD706"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD707 lookup "Lotus Keep"
+{
+	titlepatch = "SD7LV06"
+	next = "SD708"
+	secretnext = "SD708"
+	sky1 = "SD7SKY1"
+	par = 120
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD707"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+	map07special
+}
+
+map SD708 lookup "Lotus Keep"
+{
+	titlepatch = "SD7LV07"
+	next = "SD709"
+	secretnext = "SD709"
+	sky1 = "SD7SKY1"
+	par = 120
+	ExitPic = "SD7LV33"
+	EnterPic = "SD7LV33"
+	music = "D_SD708"
+	InterMusic = "D_SD734"
+	nocrouch
+	nojump
+}
+
+map SD709 lookup "Do You Believe?"
+{
+	titlepatch = "SD7LV07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SD7SKY1"
+	par = 120
+	ExitPic = "SD7LV34"
+	EnterPic = "SD7LV34"
+	music = "D_SD709"
+	InterMusic = "D_SD735"
+    sucktime = 1337
+	nocrouch
+	nojump
+}
+
+
+map SD731 lookup "Hopscotch"
+{
+	titlepatch = "SD7LV30"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SD7SKY1"
+	cluster = 9
+	par = 120
+	ExitPic = "SD7LV34"
+	EnterPic = "SD7LV34"
+	music = "D_SD731"
+	InterMusic = "D_SD735"
+    sucktime = 1337
+	nocrouch
+	nojump
+}
+
+map SD732 lookup "Issai Perfect"
+{
+	titlepatch = "SD7LV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SD7SKY1"
+	cluster = 9
+	par = 120
+	ExitPic = "SD7LV34"
+	EnterPic = "SD7LV34"
+	music = "D_SD731"
+	InterMusic = "D_SD735"
+    sucktime = 1337
+	nocrouch
+	nojump
+}

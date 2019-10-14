@@ -1,0 +1,517 @@
+
+
+map ZOF01 lookup "BLOOD"
+{
+	titlepatch = "ZOFLV00"
+	next = "ZOF02"
+	secretnext = "ZOF02"
+	ExitPic = "ZOFLV32"
+	EnterPic = "ZOFLV32"
+	sky1 = "SKY1"
+	music = "D_ZOF01"
+	InterMusic = "D_ZOF33"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF02 lookup "GRIM"
+{
+	titlepatch = "ZOFLV01"
+	next = "ZOF03"
+	secretnext = "ZOF03"
+	sky1 = "SKY1"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	music = "D_ZOF02"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF03 lookup "CITY CENTRE"
+{
+	titlepatch = "ZOFLV02"
+	next = "ZOF04"
+	secretnext = "ZOF04"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF03"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF04 lookup "NAZILAND"
+{
+	titlepatch = "ZOFLV03"
+	next = "ZOF05"
+	secretnext = "ZOF05"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF04"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF05 lookup "ONLY GENUINE CAN PASS"
+{
+	titlepatch = "ZOFLV04"
+	next = "ZOF06"
+	secretnext = "ZOF06"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF05"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF06 lookup "UAC WAREHOUSE"
+{
+	titlepatch = "ZOFLV05"
+	next = "ZOF07"
+	secretnext = "ZOF07"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	sucktime = 1
+	music = "$MUSIC_THE_DA"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF07 lookup "GREEN TEMPLE"
+{
+	titlepatch = "ZOFLV06"
+	next = "ZOF08"
+	secretnext = "ZOF08"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	map07special
+	music = "D_ZOF07"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF08 lookup "SEARCHING ON HOLY GROUND"
+{
+	titlepatch = "ZOFLV07"
+	next = "ZOF09"
+	secretnext = "ZOF09"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF08"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF09 lookup "CATHEDRAL OF UNENDING DARK"
+{
+	titlepatch = "ZOFLV08"
+	next = "ZOF10"
+	secretnext = "ZOF10"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF09"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF10 lookup "TEST OF PATIENCE"
+{
+	titlepatch = "ZOFLV09"
+	next = "ZOF11"
+	secretnext = "ZOF11"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "D_ZOF10"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF11 lookup "CAVES OF AGONY"
+{
+	titlepatch = "ZOFLV10"
+	next = "ZOF12"
+	secretnext = "ZOF12"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF12 lookup "HEXAGON CASTLE"
+{
+	titlepatch = "ZOFLV11"
+	next = "ZOF13"
+	secretnext = "ZOF13"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF12"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF13 lookup "AN UNKNOWN HOUR"
+{
+	titlepatch = "ZOFLV12"
+	next = "ZOF14"
+	secretnext = "ZOF14"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF13"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF14 lookup "RUSTED TOWER"
+{
+	titlepatch = "ZOFLV13"
+	next = "ZOF15"
+	secretnext = "ZOF15"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF14"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF15 lookup "THE CITY RUN"
+{
+	titlepatch = "ZOFLV14"
+	next = "ZOF16"
+	secretnext = "ZOF31"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF15"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF16 lookup "THE MAYHEM"
+{
+	titlepatch = "ZOFLV15"
+	next = "ZOF17"
+	secretnext = "ZOF17"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF16"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF17 lookup "CIRCLE"
+{
+	titlepatch = "ZOFLV16"
+	next = "ZOF18"
+	secretnext = "ZOF18"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF17"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF18 lookup "GODLESS"
+{
+	titlepatch = "ZOFLV17"
+	next = "ZOF19"
+	secretnext = "ZOF19"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF18"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF19 lookup "GATE THAT LEADS TO HELL"
+{
+	titlepatch = "ZOFLV18"
+	next = "ZOF20"
+	secretnext = "ZOF20"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF19"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF20 lookup "THE RIFT"
+{
+	titlepatch = "ZOFLV19"
+	next = "ZOF21"
+	secretnext = "ZOF21"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY2"
+	music = "D_ZOF20"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF21 lookup "PEACE"
+{
+	titlepatch = "ZOFLV20"
+	next = "ZOF22"
+	secretnext = "ZOF22"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF21"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF22 lookup "UNDERSIDE"
+{
+	titlepatch = "ZOFLV21"
+	next = "ZOF23"
+	secretnext = "ZOF23"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF22"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF23 lookup "THE CONQUEST"
+{
+	titlepatch = "ZOFLV22"
+	next = "ZOF24"
+	secretnext = "ZOF24"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF23"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF24 lookup "THE RIDDLE"
+{
+	titlepatch = "ZOFLV23"
+	next = "ZOF25"
+	secretnext = "ZOF25"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF24"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF25 lookup "THE OBLIVION"
+{
+	titlepatch = "ZOFLV24"
+	next = "ZOF26"
+	secretnext = "ZOF26"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF25"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF26 lookup "TOWER OF BLOOD"
+{
+	titlepatch = "ZOFLV25"
+	next = "ZOF27"
+	secretnext = "ZOF27"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF26"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF27 lookup "DEEPER AND DEEPER"
+{
+	titlepatch = "ZOFLV26"
+	next = "ZOF28"
+	secretnext = "ZOF28"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF27"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF28 lookup "THE FALLEN"
+{
+	titlepatch = "ZOFLV27"
+	next = "ZOF29"
+	secretnext = "ZOF29"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF28"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF29 lookup "ROTTEN"
+{
+	titlepatch = "ZOFLV28"
+	next = "ZOF30"
+	secretnext = "ZOF30"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	music = "D_ZOF29"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF30 lookup "THE DOOMCORE"
+{
+	titlepatch = "ZOFLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	ExitPic = "ZOFLV34"
+	EnterPic = "ZOFLV34"
+	music = "D_ZOF30"
+	InterMusic = "D_ZOF35"
+	sucktime = 1337
+	
+	
+	
+}
+
+map ZOF31 lookup "RIVALSITE"
+{
+	titlepatch = "ZOFLV30"
+	next = "ZOF16"
+	secretnext = "ZOF32"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	par = 960
+	music = "D_ZOF31"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}
+
+map ZOF32 lookup "AN INGLOURIOUS BASTERD"
+{
+	titlepatch = "ZOFLV31"
+	next = "ZOF16"
+	secretnext = "ZOF16"
+	ExitPic = "ZOFLV33"
+	EnterPic = "ZOFLV33"
+	sky1 = "SKY3"
+	par = 450
+	music = "$MUSIC_ULTIMA"
+	InterMusic = "D_ZOF34"
+	sucktime = 1
+	
+	
+	
+}

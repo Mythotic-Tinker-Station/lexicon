@@ -1,0 +1,110 @@
+
+map SD601 lookup "Amethyst II"
+{
+	titlepatch = "SD6LV00"
+	next = "SD602"
+	secretnext = "SD602"
+	sky1 = "SKY1"
+	par = 30
+	ExitPic = "SD6LV32"
+	EnterPic = "SD6LV32"
+	music = "D_SD601"
+	InterMusic = "D_SD633"
+}
+
+map SD602 lookup "Mud Bunny"
+{
+	titlepatch = "SD6LV01"
+	next = "SD603"
+	secretnext = "SD603"
+	sky1 = "SKY1"
+	par = 90
+	ExitPic = "SD6LV33"
+	EnterPic = "SD6LV33"
+	music = "D_SD602"
+	InterMusic = "D_SD634"
+}
+
+map SD603 lookup "Foxhole"
+{
+	titlepatch = "SD6LV02"
+	next = "SD604"
+	secretnext = "SD604"
+	sky1 = "SKY1"
+	par = 120
+	ExitPic = "SD6LV33"
+	EnterPic = "SD6LV33"
+	music = "D_SD603"
+	InterMusic = "D_SD634"
+}
+
+map SD604 lookup "Tanagra"
+{
+	titlepatch = "SD6LV03"
+	next = "SD605"
+	secretnext = "SD605"
+	sky1 = "SKY1"
+	par = 120
+	ExitPic = "SD6LV33"
+	EnterPic = "SD6LV33"
+	music = "D_SD604"
+	InterMusic = "D_SD634"
+}
+
+map SD605 lookup "Sector 8"
+{
+	titlepatch = "SD6LV04"
+	next = "SD606"
+	secretnext = "SD606"
+	sky1 = "SD6RSKY1"
+	par = 90
+	ExitPic = "SD6LV33"
+	EnterPic = "SD6LV33"
+	music = "D_SD605"
+	InterMusic = "D_SD634"
+}
+
+map SD606 lookup "Vehelits"
+{
+	titlepatch = "SD6LV05"
+	next = "SD607"
+	secretnext = "SD607"
+	sky1 = "SKY1"
+	par = 150
+	sucktime = 1
+	ExitPic = "SD6LV33"
+	EnterPic = "SD6LV33"
+	music = "D_SD606"
+	InterMusic = "D_SD634"
+}
+
+map SD607 lookup "Magnus"
+{
+	titlepatch = "SD6LV06"
+	next = "VR"
+	secretnext = "SD631"
+	sky1 = "SKY1"
+	par = 120
+	ExitPic = "SD6LV34"
+	EnterPic = "SD6LV34"
+	music = "D_SD607"
+	InterMusic = "D_SD635"
+    sucktime = 1337
+	map07special
+}
+
+
+map SD631 lookup "Hyperspace"
+{
+	titlepatch = "SD6LV30"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	cluster = 9
+	par = 120
+	ExitPic = "SD6LV34"
+	EnterPic = "SD6LV34"
+	music = "D_SD631"
+	InterMusic = "D_SD635"
+    sucktime = 1337
+}

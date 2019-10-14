@@ -1,0 +1,546 @@
+
+
+map INT01 lookup "Excavation Site"
+{
+	titlepatch = "INTLV00"
+	next = "INT02"
+	secretnext = "INT02"
+	ExitPic = "INTLV32"
+	EnterPic = "INTLV32"
+	sky1 = "INTSKY1"
+	music = "D_INT01"
+	InterMusic = "D_INT33"
+	sucktime = 1
+	par = 30
+	
+	
+	
+}
+
+map INT02 lookup "Research Facility"
+{
+	titlepatch = "INTLV01"
+	next = "INT03"
+	secretnext = "INT03"
+	sky1 = "INTSKY1"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	music = "D_INT02"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 90
+	
+	
+	
+}
+
+map INT03 lookup "Flooded Caverns"
+{
+	titlepatch = "INTLV02"
+	next = "INT04"
+	secretnext = "INT04"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT03"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 120
+	
+	
+	
+}
+
+map INT04 lookup "Medical Center"
+{
+	titlepatch = "INTLV03"
+	next = "INT05"
+	secretnext = "INT05"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT04"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 120
+	
+	
+	
+}
+
+map INT05 lookup "Dangerous Curves"
+{
+	titlepatch = "INTLV04"
+	next = "INT06"
+	secretnext = "INT06"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT05"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 90
+	
+	
+	
+}
+
+map INT06 lookup "Rail Terminal 38"
+{
+	titlepatch = "INTLV05"
+	next = "INT07"
+	secretnext = "INT07"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT06"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT07 lookup "Floodgates"
+{
+	titlepatch = "INTLV06"
+	next = "INT08"
+	secretnext = "INT08"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT07"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 120
+	map07special
+	
+	
+	
+}
+
+map INT08 lookup "Panopticon"
+{
+	titlepatch = "INTLV07"
+	next = "INT09"
+	secretnext = "INT09"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT08"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 120
+	
+	
+	
+}
+
+map INT09 lookup "Iron Jungle"
+{
+	titlepatch = "INTLV08"
+	next = "INT10"
+	secretnext = "INT10"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT09"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 270
+	
+	
+	
+}
+
+map INT10 lookup "Chemical Laboratory"
+{
+	titlepatch = "INTLV09"
+	next = "INT11"
+	secretnext = "INT11"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT10"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 90
+	
+	
+	
+}
+
+map INT11 lookup "The Ocean Outpost"
+{
+	titlepatch = "INTLV10"
+	next = "INT12"
+	secretnext = "INT12"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT11"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 210
+	
+	
+	
+}
+
+map INT12 lookup "Underearth"
+{
+	titlepatch = "INTLV11"
+	next = "INT13"
+	secretnext = "INT13"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY1"
+	music = "D_INT12"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT13 lookup "Castle Grounds"
+{
+	titlepatch = "INTLV12"
+	next = "INT14"
+	secretnext = "INT14"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT13"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT14 lookup "Antidote"
+{
+	titlepatch = "INTLV13"
+	next = "INT15"
+	secretnext = "INT15"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT14"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT15 lookup "Elm Street"
+{
+	titlepatch = "INTLV14"
+	next = "INT16"
+	secretnext = "INT31"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT15"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 210
+	
+	
+	
+}
+
+map INT16 lookup "Vertigo Plant"
+{
+	titlepatch = "INTLV15"
+	next = "INT17"
+	secretnext = "INT17"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT16"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT17 lookup "Hell House"
+{
+	titlepatch = "INTLV16"
+	next = "INT18"
+	secretnext = "INT18"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT17"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 420
+	
+	
+	
+}
+
+map INT18 lookup "City of Burning Sulfur"
+{
+	titlepatch = "INTLV17"
+	next = "INT19"
+	secretnext = "INT19"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT18"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT19 lookup "Alpha Tower"
+{
+	titlepatch = "INTLV18"
+	next = "INT20"
+	secretnext = "INT20"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT19"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 210
+	
+	
+	
+}
+
+map INT20 lookup "Beta Tower"
+{
+	titlepatch = "INTLV19"
+	next = "INT21"
+	secretnext = "INT21"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY2"
+	music = "D_INT20"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT21 lookup "Wrong Dimension"
+{
+	titlepatch = "INTLV20"
+	next = "INT22"
+	secretnext = "INT22"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT21"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 240
+	
+	
+	
+}
+
+map INT22 lookup "Bone Dread"
+{
+	titlepatch = "INTLV21"
+	next = "INT23"
+	secretnext = "INT23"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT22"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT23 lookup "Abysmal Affliction"
+{
+	titlepatch = "INTLV22"
+	next = "INT24"
+	secretnext = "INT24"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT23"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 180
+	
+	
+	
+}
+
+map INT24 lookup "Bloody Castle"
+{
+	titlepatch = "INTLV23"
+	next = "INT25"
+	secretnext = "INT25"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT24"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT25 lookup "Demon's Spite"
+{
+	titlepatch = "INTLV24"
+	next = "INT26"
+	secretnext = "INT26"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT25"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 150
+	
+	
+	
+}
+
+map INT26 lookup "Wrecking Fist"
+{
+	titlepatch = "INTLV25"
+	next = "INT27"
+	secretnext = "INT27"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT26"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 300
+	
+	
+	
+}
+
+map INT27 lookup "Blood Siege"
+{
+	titlepatch = "INTLV26"
+	next = "INT28"
+	secretnext = "INT28"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT27"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 330
+	
+	
+	
+}
+
+map INT28 lookup "Amongst the Ash"
+{
+	titlepatch = "INTLV27"
+	next = "INT29"
+	secretnext = "INT29"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT28"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 420
+	
+	
+	
+}
+
+map INT29 lookup "Barbatos' Fortress"
+{
+	titlepatch = "INTLV28"
+	next = "INT30"
+	secretnext = "INT30"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT29"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 300
+	
+	
+	
+}
+
+map INT30 lookup "Interception"
+{
+	titlepatch = "INTLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "INTSKY3"
+	ExitPic = "INTLV35"
+	EnterPic = "INTLV34"
+	music = "D_INT30"
+	InterMusic = "D_INT35"
+	sucktime = 1337
+	par = 180
+	allowmonstertelefrags
+	
+	
+}
+
+map INT31 lookup "Degravitation"
+{
+	titlepatch = "INTLV30"
+	next = "INT16"
+	secretnext = "INT32"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT31"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 120
+	
+	
+	
+}
+
+map INT32 lookup "The Cataclysm"
+{
+	titlepatch = "INTLV31"
+	next = "INT16"
+	secretnext = "INT16"
+	ExitPic = "INTLV33"
+	EnterPic = "INTLV33"
+	sky1 = "INTSKY3"
+	music = "D_INT32"
+	InterMusic = "D_INT34"
+	sucktime = 1
+	par = 30
+	
+	
+	
+}

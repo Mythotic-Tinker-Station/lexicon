@@ -27,3 +27,23 @@ map EYE01 "The Eye"
     nocrouch
     SuckTime = 1337
 }
+
+map HP103 "Sens"
+{
+	sky1 = "AFGSKY1"
+	music = "TOTSIREN"
+	next = "VR"
+}
+
+MAP AAA01 "A Clear Line Drawn"
+{
+music = "DEFTONES"
+sky1 = "RSKY15"
+next = VR
+}
+Map AAA02 "Hot Water Music"
+{ 
+music = "WARBRAIN"
+sky1 = "RSKY15"
+next = "VR"
+}

@@ -1,0 +1,614 @@
+
+
+map TT301 lookup "The Warp Facility"
+{
+	titlepatch = "TT3LV00"
+	next = "TT302"
+	secretnext = "TT302"
+	ExitPic = "TT3LV34"
+	EnterPic = "TT3LV34"
+	sky1 = "1024SK02"
+	par = 70
+	music = "D_TT301"
+	InterMusic = "D_TT333"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT302 lookup "Return to the Darkening"
+{
+	titlepatch = "TT3LV01"
+	next = "TT303"
+	secretnext = "TT303"
+	sky1 = "1024SK08"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	par = 180
+	music = "D_TT302"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT303 lookup "Break the Chain"
+{
+	titlepatch = "TT3LV02"
+	next = "TT304"
+	secretnext = "TT304"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK03"
+	par = 195
+	music = "D_TT303"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT304 lookup "Pit of Sludge"
+{
+	titlepatch = "TT3LV03"
+	next = "TT305"
+	secretnext = "TT305"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "SKY1"
+	par = 165
+	music = "D_TT304"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT305 lookup "Subterfuge 1024"
+{
+	titlepatch = "TT3LV04"
+	next = "TT306"
+	secretnext = "TT306"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK27"
+	par = 255
+	music = "D_TT305"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT306 lookup "Four Square"
+{
+	titlepatch = "TT3LV05"
+	next = "TT307"
+	secretnext = "TT307"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK12"
+	par = 210
+	sucktime = 1
+	music = "D_TT306"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT307 lookup "Dead In, Dead Out"
+{
+	titlepatch = "TT3LV06"
+	next = "TT308"
+	secretnext = "TT308"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK08"
+	par = 315
+	map07special
+	music = "D_TT307"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT308 lookup "Hex of Depression"
+{
+	titlepatch = "TT3LV07"
+	next = "TT309"
+	secretnext = "TT309"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK09"
+	par = 600
+	music = "D_TT308"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT309 lookup "Bitter Sanctuary"
+{
+	titlepatch = "TT3LV08"
+	next = "TT310"
+	secretnext = "TT310"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK03"
+	par = 960
+	music = "D_TT309"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT310 lookup "Mudbath"
+{
+	titlepatch = "TT3LV09"
+	next = "TT311"
+	secretnext = "TT311"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "SKY1"
+	par = 480
+	music = "D_TT310"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT311 lookup "Technicfear"
+{
+	titlepatch = "TT3LV10"
+	next = "TT312"
+	secretnext = "TT312"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK03"
+	par = 240
+	music = "D_TT311"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT312 lookup "Spitshine"
+{
+	titlepatch = "TT3LV11"
+	next = "TT313"
+	secretnext = "TT313"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK11"
+	par = 180
+	music = "D_TT312"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT313 lookup "Assault"
+{
+	titlepatch = "TT3LV12"
+	next = "TT314"
+	secretnext = "TT314"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK09"
+	par = 540
+	music = "D_TT313"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT314 lookup "Deception"
+{
+	titlepatch = "TT3LV13"
+	next = "TT315"
+	secretnext = "TT315"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK15"
+	par = 360
+	music = "D_TT314"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT315 lookup "The Inmost Con'dens'ed"
+{
+	titlepatch = "TT3LV14"
+	next = "TT316"
+	secretnext = "TT331"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK01"
+	par = 450
+	music = "D_TT315"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT316 lookup "Nocturnal Abyss"
+{
+	titlepatch = "TT3LV15"
+	next = "TT317"
+	secretnext = "TT317"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "111BLACK"
+	par = 780
+	music = "D_TT316"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT317 lookup "Transfer Base"
+{
+	titlepatch = "TT3LV16"
+	next = "TT318"
+	secretnext = "TT318"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK15"
+	par = 480
+	music = "D_TT317"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT318 lookup "Weather Station"
+{
+	titlepatch = "TT3LV17"
+	next = "TT319"
+	secretnext = "TT319"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK05"
+	par = 210
+	music = "D_TT318"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT319 lookup "Nova Scotia Robots"
+{
+	titlepatch = "TT3LV18"
+	next = "TT320"
+	secretnext = "TT320"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK30"
+	par = 270
+	music = "D_TT319"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+
+}
+map TT320 lookup "Refinery"
+{
+	titlepatch = "TT3LV19"
+	next = "TT321"
+	secretnext = "TT321"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "SKY2"
+	par = 330
+	music = "D_TT320"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT321 lookup "Padma"
+{
+	titlepatch = "TT3LV20"
+	next = "TT322"
+	secretnext = "TT322"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK08"
+	par = 480
+	music = "D_TT321"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT322 lookup "Diminished Apparatus"
+{
+	titlepatch = "TT3LV21"
+	next = "TT323"
+	secretnext = "TT323"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK12"
+	par = 540
+	music = "D_TT322"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT323 lookup "Fear No Evil"
+{
+	titlepatch = "TT3LV22"
+	next = "TT324"
+	secretnext = "TT324"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "SKY3"
+	par = 1200
+	music = "D_TT323"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT324 lookup "Second Assault"
+{
+	titlepatch = "TT3LV23"
+	next = "TT325"
+	secretnext = "TT325"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "SKY3"
+	par = 420
+	music = "D_TT324"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT325 lookup "Cabracan 1024"
+{
+	titlepatch = "TT3LV24"
+	next = "TT326"
+	secretnext = "TT326"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK29"
+	par = 510
+	music = "D_TT325"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT326 lookup "Aura of Evil"
+{
+	titlepatch = "TT3LV25"
+	next = "TT327"
+	secretnext = "TT327"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK32"
+	par = 300
+	music = "D_TT326"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT327 lookup "Hell Sewage"
+{
+	titlepatch = "TT3LV26"
+	next = "TT328"
+	secretnext = "TT328"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK03"
+	par = 540
+	music = "D_TT327"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT328 lookup "Poison Ivy"
+{
+	titlepatch = "TT3LV27"
+	next = "TT329"
+	secretnext = "TT329"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK11"
+	par = 390
+	music = "D_TT328"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT329 lookup "Magnum Opus"
+{
+	titlepatch = "TT3LV28"
+	next = "TT330"
+	secretnext = "TT330"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "MAGNMSK"
+	par = 660
+	music = "D_TT329"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT330 lookup "Thanatophobia"
+{
+	titlepatch = "TT3LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	ExitPic = "TT3LV36"
+	EnterPic = "TT3LV36"
+	par = 60
+	music = "D_TT330"
+	InterMusic = "D_TT335"
+	sucktime = 1337
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT331 lookup "Skyscrape IV"
+{
+	titlepatch = "TT3LV30"
+	next = "TT316"
+	secretnext = "TT332"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK07"
+	par = 960
+	music = "D_TT331"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT332 lookup "Oil Rig"
+{
+	titlepatch = "TT3LV31"
+	next = "TT316"
+	secretnext = "TT316"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "1024SK14"
+	par = 450
+	music = "D_TT332"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT333 lookup "Nil"
+{
+	titlepatch = "TT3LV32"
+	next = "TT301"
+	secretnext = "TT301"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "111BLACK"
+	par = 450
+	music = "D_TT334"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT334 lookup "**NULL**"
+{
+	titlepatch = "TT3LV33"
+	next = "TT316"
+	secretnext = "TT316"
+	ExitPic = "TT3LV35"
+	EnterPic = "TT3LV35"
+	sky1 = "111BLACK"
+	par = 450
+	music = "D_TT334"
+	InterMusic = "D_TT334"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}

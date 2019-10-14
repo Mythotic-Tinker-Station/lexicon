@@ -1,0 +1,307 @@
+
+
+map DU101 lookup "The Race to Doom"
+{
+	titlepatch = "WILV00"
+	next = "DU102"
+	secretnext = "DU102"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY5"
+	music = "D_DU101"
+	InterMusic = "D_DU133"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU102 lookup "Space Station H9"
+{
+	titlepatch = "WILV00"
+	next = "DU103"
+	secretnext = "DU103"
+	sky1 = "DUSKY5"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	music = "D_DU102"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU103 lookup "The Long Bridge"
+{
+	titlepatch = "WILV00"
+	next = "DU104"
+	secretnext = "DU104"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DXSKY1"
+	music = "D_DU103"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU104 lookup "Cliffhanger"
+{
+	titlepatch = "WILV00"
+	next = "DU105"
+	secretnext = "DU105"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY2"
+	music = "D_DU104"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU105 lookup "The Icy Hand of Death"
+{
+	titlepatch = "WILV00"
+	next = "DU106"
+	secretnext = "DU106"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU105"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU106 lookup "Red and Blue"
+{
+	titlepatch = "WILV00"
+	next = "DU107"
+	secretnext = "DU107"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY4"
+	sky2 = "DUSKY4B"
+	sucktime = 1
+	music = "D_DU106"
+	InterMusic = "D_DU134"
+	
+	
+	
+}
+
+map DU107 lookup "Ski Jump"
+{
+	titlepatch = "WILV00"
+	next = "DU108"
+	secretnext = "DU108"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU107"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	map07special
+	
+	
+	
+}
+
+map DU108 lookup "B/W/R/B"
+{
+	titlepatch = "WILV00"
+	next = "DU109"
+	secretnext = "DU109"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY5"
+	music = "D_DU108"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU109 lookup "Primary Colours"
+{
+	titlepatch = "WILV00"
+	next = "DU110"
+	secretnext = "DU110"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU109"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU110 lookup "Artificial Gravity"
+{
+	titlepatch = "WILV00"
+	next = "DU111"
+	secretnext = "DU111"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU110"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU111 lookup "Speed"
+{
+	titlepatch = "WILV00"
+	next = "DU112"
+	secretnext = "DU112"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU111"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU112 lookup "Crate Island"
+{
+	titlepatch = "WILV00"
+	next = "DU113"
+	secretnext = "DU113"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY2"
+	music = "D_DU112"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU113 lookup "Tower of Doom"
+{
+	titlepatch = "WILV00"
+	next = "DU114"
+	secretnext = "DU114"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DXSKY1"
+	music = "D_DU113"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU114 lookup "A Foggy Day"
+{
+	titlepatch = "WILV00"
+	next = "DU115"
+	secretnext = "DU115"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU114"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU115 lookup "Mario's Revenge"
+{
+	titlepatch = "WILV00"
+	next = "DU116"
+	secretnext = "DU131"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "MARI"
+	music = "D_DU115"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU116 lookup "Cliffs by Candlelight"
+{
+	titlepatch = "WILV00"
+	next = "DU117"
+	secretnext = "DU117"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY6"
+	music = "D_DU116"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU117 lookup "Skyscrapers"
+{
+	titlepatch = "WILV00"
+	next = "DU118"
+	secretnext = "DU118"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY5"
+	music = "D_DU117"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU118 lookup "Waterworld"
+{
+	titlepatch = "WILV00"
+	next = "DU119"
+	secretnext = "DU119"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU118"
+	InterMusic = "D_DU134"
+	sucktime = 1
+	
+	
+	
+}
+
+map DU119 lookup "The Final Race"
+{
+	titlepatch = "WILV00"
+	next = "VR"
+	secretnext = "VR"
+	ExitPic = "DU1LV33"
+	EnterPic = "DU1LV33"
+	sky1 = "DUSKY1"
+	music = "D_DU119"
+	InterMusic = "D_DU134"
+	sucktime = 1337
+	
+	
+	
+}

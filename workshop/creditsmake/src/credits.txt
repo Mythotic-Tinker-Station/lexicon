@@ -1,59 +1,99 @@
-// again, finicky stuff, all lines must have a color tag at the beginning of the line followed by a space then the text eg: ### <text>
+// again, finicky stuff, all lines must have a color tag at the beginning of the line followed by a space then the text eg: #### <text>
 // colors work as follow: ### RGB 0-9 eg: 990 = yellow; 999 = white; 555 = gray; 099 = cyan; 950 = orange; ect...
+// last number, if 1, right justifies the line and tells the system not to make a newline, next line will be left justified
 // the size of the image is fixed, it wont resize if you add more stuff, you'll have to ask me to set the image size unfortunatlly
-999 The Sentinel's Lexicon Credits
-000 
-990 Project Lead/Management
-999 Mifu
-000 
-990 Scripting, Effects, Texturing,
-990 Additional Mapping
-999 Tribeam
-000
-990 Artwork
-999 Willo
-000 
-990 VR Map Design
-999 Fiendzy
-000 
-990 VR Music
-999 CorgiAtom
-999 Guilty Gear
-000
-990 Mapset Authors
-999 Too many to list, so instead
-999 their credits will be displayed
-999 when you play their maps
-000
-990 Mapset Compiling
-999 Mifu
-999 K0RPSE
-000
-990 Testers
-999 Fiendzy
-999 Kunai Kitsune
-999 Gosimer
-999 Kenopath
-999 Blushberry
-999 SyKoTiC
-999 You!
-000
-990 Multiplayer Starts
-999 Michaelis
-000
-990 Various Issues
-999 Shaewn
-000
-990 Fonts
-999 Sega
-999 ID Software
-000
-990 Font Edits
-999 Tribeam
-000
-990 Insta Killer Sprites
-999 Skulltag
-000
-990 Votegun
-999 Nintendo
-000
+9990 The Sentinel's Lexicon Credits
+9990 (In alphabetical order)
+0000
+9900 Project Lead/Management
+9990 Mifu
+0000
+9900 Scripting Lead/Tool Programming
+9990 Tribeam
+0000
+9900 Mixed Contributions
+9900 (These people have done a lot of everything)
+9900 (Scripting, mapping, bug fixing, texturing, etc)
+9990 Bugsbunny205
+9990 Clint
+9990 Hell_pike
+9990 Michaelis
+9990 Penguin
+9990 Popsoap
+9990 Shaewn
+0000
+9900 Artwork
+9990 Rigrug
+0000 
+9900 Other Graphics
+9991 Bugsbunny205
+9990 (Menu Logo)
+9991 Hell_Pike
+9990 (Brightmaps, GLDefs)
+9991 Killerkouhai
+9990 (Loading Screen)
+9991 Nintendo
+9990 (Votegun)
+9991 Skulltag
+9990 (InstaKiller Sprites)
+9991 Sega
+9990 (Hud Font)
+9991 Tiddles
+9990 (Title Screen)
+9991 TheMisterCat
+9990 (Lexicon Artifact)
+9991 Tribeam
+9990 (Font Edits, VR Gfx)
+0000
+9900 VR Map Design
+9990 Fiendzy
+9990 Tribeam
+0000 
+9900 VR Music
+9990 CorgiAtom
+9990 Deathman27
+9990 Maktone
+9990 MrDeath
+9990 Quazar of Sanxion
+0000
+9900 Mapset Authors
+9990 Too many to list, so instead
+9990 their credits will be displayed
+9990 when you play their maps
+0000
+9900 Mapset Compiling
+9990 Hell_Pike
+9990 K0RPSE
+9990 Mifu
+0000
+9900 Testers
+9990 Blushberry
+9990 Bugsie
+9990 Challenger
+9990 DEUS VULT
+9990 Dinosaur Nerd
+9990 Eagle
+9990 Fiendzy
+9990 Fluffy
+9990 Fookerton
+9990 Gosimer
+9990 Hell_Pike
+9990 ImSoTiredOfBeingHere
+9990 Isaac12
+9990 Jaycobe
+9990 Kenopath
+9990 Kunai Kitsune
+9990 Meleemario
+9990 Michaelis
+9990 Mister36
+9990 NationwideMoose
+9990 Penguin
+9990 Professor Renderer
+9990 Saad356
+9990 SyKoTiC
+9990 Zlingling
+9990 You!
+0000
+9900 Emotional Support :D
+9990 Ayashi
+0000

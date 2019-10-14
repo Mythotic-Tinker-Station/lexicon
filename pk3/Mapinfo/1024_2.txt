@@ -1,0 +1,614 @@
+
+
+map TT201 lookup "Poliganoy"
+{
+	titlepatch = "TT2LV00"
+	next = "TT202"
+	secretnext = "TT202"
+	ExitPic = "TT2LV34"
+	EnterPic = "TT2LV34"
+	sky1 = "1024SK20"
+	par = 70
+	music = "D_TT201"
+	InterMusic = "D_TT233"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT202 lookup "Corrosion"
+{
+	titlepatch = "TT2LV01"
+	next = "TT203"
+	secretnext = "TT203"
+	sky1 = "SKY1"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	par = 180
+	music = "D_TT202"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT203 lookup "Tekno1000"
+{
+	titlepatch = "TT2LV02"
+	next = "TT204"
+	secretnext = "TT204"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK03"
+	par = 195
+	music = "D_TT203"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT204 lookup "666 Feet Under"
+{
+	titlepatch = "TT2LV03"
+	next = "TT205"
+	secretnext = "TT205"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "SKY3"
+	par = 165
+	music = "D_TT204"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT205 lookup "Enough Space?"
+{
+	titlepatch = "TT2LV04"
+	next = "TT206"
+	secretnext = "TT206"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK24"
+	par = 255
+	music = "D_TT205"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT206 lookup "Severed Survival"
+{
+	titlepatch = "TT2LV05"
+	next = "TT207"
+	secretnext = "TT207"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK06"
+	par = 210
+	sucktime = 1
+	music = "D_TT206"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT207 lookup "Into Hell"
+{
+	titlepatch = "TT2LV06"
+	next = "TT208"
+	secretnext = "TT208"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK22"
+	par = 315
+	map07special
+	music = "D_TT207"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT208 lookup "Minimal House"
+{
+	titlepatch = "TT2LV07"
+	next = "TT209"
+	secretnext = "TT209"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "111BLACK"
+	par = 600
+	music = "D_TT208"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT209 lookup "Handful of Dread"
+{
+	titlepatch = "TT2LV08"
+	next = "TT210"
+	secretnext = "TT210"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK07"
+	par = 960
+	music = "D_TT209"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT210 lookup "Metallic Echo"
+{
+	titlepatch = "TT2LV09"
+	next = "TT211"
+	secretnext = "TT211"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "SKY1"
+	par = 480
+	music = "D_TT210"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT211 lookup "A Minor Doomsday"
+{
+	titlepatch = "TT2LV10"
+	next = "TT212"
+	secretnext = "TT212"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK00"
+	par = 240
+	music = "D_TT211"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT212 lookup "Stagnant Depot"
+{
+	titlepatch = "TT2LV11"
+	next = "TT213"
+	secretnext = "TT213"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK08"
+	par = 180
+	music = "D_TT212"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT213 lookup "The Blood Factory"
+{
+	titlepatch = "TT2LV12"
+	next = "TT214"
+	secretnext = "TT214"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK00"
+	par = 540
+	music = "D_TT213"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT214 lookup "Twilight of the Demons"
+{
+	titlepatch = "TT2LV13"
+	next = "TT215"
+	secretnext = "TT215"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK09"
+	par = 360
+	music = "D_TT214"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT215 lookup "Spirited Away"
+{
+	titlepatch = "TT2LV14"
+	next = "TT216"
+	secretnext = "TT231"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK13"
+	par = 450
+	music = "D_TT215"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT216 lookup "End of the Line"
+{
+	titlepatch = "TT2LV15"
+	next = "TT217"
+	secretnext = "TT217"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK13"
+	par = 780
+	music = "D_TT216"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT217 lookup "Dismalady"
+{
+	titlepatch = "TT2LV16"
+	next = "TT218"
+	secretnext = "TT218"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK04"
+	par = 480
+	music = "D_TT217"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT218 lookup "Graytech Industries"
+{
+	titlepatch = "TT2LV17"
+	next = "TT219"
+	secretnext = "TT219"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK01"
+	par = 210
+	music = "D_TT218"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT219 lookup "Complex4k"
+{
+	titlepatch = "TT2LV18"
+	next = "TT220"
+	secretnext = "TT220"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK18"
+	par = 270
+	music = "D_TT219"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+
+}
+map TT220 lookup "Calypso Station"
+{
+	titlepatch = "TT2LV19"
+	next = "TT221"
+	secretnext = "TT221"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK05"
+	par = 330
+	music = "D_TT220"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT221 lookup "Darkness abides"
+{
+	titlepatch = "TT2LV20"
+	next = "TT222"
+	secretnext = "TT222"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK08"
+	par = 480
+	music = "D_TT221"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT222 lookup "Power Station"
+{
+	titlepatch = "TT2LV21"
+	next = "TT223"
+	secretnext = "TT223"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK11"
+	par = 540
+	music = "D_TT222"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT223 lookup "The Dark Dawn"
+{
+	titlepatch = "TT2LV22"
+	next = "TT224"
+	secretnext = "TT224"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "SKY3"
+	par = 1200
+	music = "D_TT223"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT224 lookup "Oil Rig Zero"
+{
+	titlepatch = "TT2LV23"
+	next = "TT225"
+	secretnext = "TT225"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK16"
+	par = 420
+	music = "D_TT224"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT225 lookup "The Process"
+{
+	titlepatch = "TT2LV24"
+	next = "TT226"
+	secretnext = "TT226"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK07"
+	par = 510
+	music = "D_TT225"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT226 lookup "Into the Skies"
+{
+	titlepatch = "TT2LV25"
+	next = "TT227"
+	secretnext = "TT227"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK02"
+	par = 300
+	music = "D_TT226"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT227 lookup "Tower of Desolation"
+{
+	titlepatch = "TT2LV26"
+	next = "TT228"
+	secretnext = "TT228"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK09"
+	par = 540
+	music = "D_TT227"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT228 lookup "Obliteration"
+{
+	titlepatch = "TT2LV27"
+	next = "TT229"
+	secretnext = "TT229"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "SKY3"
+	par = 390
+	music = "D_TT228"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT229 lookup "Taggart Sails to Orion"
+{
+	titlepatch = "TT2LV28"
+	next = "TT230"
+	secretnext = "TT230"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK11"
+	par = 660
+	music = "D_TT229"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT230 lookup "???"
+{
+	titlepatch = "TT2LV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "1024SK23"
+	ExitPic = "TT2LV34"
+	EnterPic = "TT2LV34"
+	par = 60
+	music = "D_TT230"
+	InterMusic = "D_TT235"
+	sucktime = 1337
+    nocrouch
+    nojump
+	
+	
+	
+}
+map TT231 lookup "Somewhere That's Green"
+{
+	titlepatch = "TT2LV30"
+	next = "TT216"
+	secretnext = "TT232"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK16"
+	par = 960
+	music = "D_TT231"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT232 lookup "Proceed With Caution"
+{
+	titlepatch = "TT2LV31"
+	next = "TT216"
+	secretnext = "TT216"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "SKY3"
+	par = 450
+	music = "D_TT232"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT233 lookup "The Unknown Machine"
+{
+	titlepatch = "TT2LV32"
+	next = "TT216"
+	secretnext = "TT216"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "1024SK16"
+	par = 450
+	music = "D_TT234"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}
+map TT234 lookup "Abstraction"
+{
+	titlepatch = "TT2LV33"
+	next = "TT216"
+	secretnext = "TT216"
+	ExitPic = "TT2LV35"
+	EnterPic = "TT2LV35"
+	sky1 = "111BLACK"
+	par = 450
+	music = "D_TT234"
+	InterMusic = "D_TT234"
+	sucktime = 1
+	nocrouch
+	nojump
+	
+	
+	
+}

@@ -295,8 +295,8 @@ map DV219 "Stargate"
 	intermusic = "O_DVIIIN"
 	sky1 = "SKYZ2"
 	
-	enterpic = "ZINTER02"
-	exitpic = "ZINTER02"
+	enterpic = "ZINTER01"
+	exitpic = "ZINTER01"
 	nojump
 	nocrouch
 	par = 210
@@ -470,7 +470,7 @@ map DV230 "Saint Peter's Gate"
 	secretnext = "DV231"
 	intermusic = "O_DVIIIN"
 	sky1 = "SKYZ3"
-	
+	sucktime = 1337
 	enterpic = "ZINTER04"
 	exitpic = "ZINTER05"
 	nojump

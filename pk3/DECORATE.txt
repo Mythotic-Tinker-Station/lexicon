@@ -99,7 +99,7 @@ ACTOR LShotgunGuy replaces Shotgunguy 9
 	TNT1 A 0 a_jumpif(CallACS("Maniac") == 6, "EP1EP2")
 	TNT1 A 0 a_jumpif(CallACS("Maniac") == 7, "AA1")
 	SpawDDS: //(DDS = Drop Down State)
-		SPOS AB 10 A_Look
+		SPOS AB 10 A_Look //start some antilag
 		Loop
 	CS1CS2:
     TNT1 A 0 A_SpawnItemEx("CS2ShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)

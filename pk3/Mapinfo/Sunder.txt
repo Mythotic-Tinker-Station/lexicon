@@ -170,63 +170,10 @@ map SND13 "Obsidian Nightmare"
 
 map SND14 "Hive Mother"
 	{
-	next = "SND15"
+	next = "VR"
 	secretnext = "SND15"
 	sky1 = "SNDSKY2"
 	music = "D_SNDR14"
-	intermusic = "D_SNDINT"
-	exitpic = "SNDRINT"
-	enterpic = "SNDRINT"
-	nocrouch
-	nojump
-    SuckTime = 1337
-	}
-	
-map SND15 "Babylon's Chimera"
-	{
-	next = "SND16"
-	secretnext = "SND31"
-	sky1 = "SNDSKY2"
-	music = "D_SNDR15"
-	intermusic = "D_SNDINT"
-	exitpic = "SNDRINT"
-	enterpic = "SNDRINT"
-	nocrouch
-	nojump
-    SuckTime = 1337
-	}	
-map SND16 "Whispers of the Gnarled King"
-	{
-	next = "VR"
-	secretnext = "VR"
-	sky1 = "SKY2"
-	music = "D_SNDR16"
-	intermusic = "D_SNDINT"
-	exitpic = "SNDRINT"
-	enterpic = "SNDRINT"
-	nocrouch
-	nojump
-    SuckTime = 1337
-	}	
-map SND31 "House of Corrosion"
-	{
-	next = "SND16"
-	secretnext = "SND32"
-	sky1 = "GRSKY1"
-	music = "D_SNDR31"
-	intermusic = "D_SNDINT"
-	exitpic = "SNDRINT"
-	enterpic = "SNDRINT"
-	nocrouch
-	nojump
-    SuckTime = 1337
-	}	
-map SND32 "The Harlots Garden"
-	{
-	next = "SND16"
-	secretnext = "SND15"
-	sky1 = "SNDSKY3"
-	music = "D_SNDR32"
 	intermusic = "D_SNDINT"
 	exitpic = "SNDRINT"
 	enterpic = "SNDRINT"

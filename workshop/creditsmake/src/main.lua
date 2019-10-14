@@ -22,25 +22,20 @@ function love.load(arg)
     file_credits:read("*line")
     file_credits:read("*line")
     file_credits:read("*line")
-    file_credits:read("*line")
     local line = file_credits:read("*line")
     
     local linepos = 0
     
     
-    canvas = love.graphics.newCanvas(640, 1900)
+    canvas = love.graphics.newCanvas(640, 1200)
     love.graphics.setCanvas(canvas)
         love.graphics.clear(0, 0, 0, 255)
     love.graphics.setCanvas()    
     
-    local j = 0
-    local j2 = 0
     -- for each line
     while line ~= nil do
         
-        if j == 0 then
-            linepos = linepos + font:getHeight()
-        end
+        linepos = linepos + font:getHeight()
         
         canvas_line = love.graphics.newCanvas(font:getWidth(line), 32)
     
@@ -55,30 +50,16 @@ function love.load(arg)
             local r = line:sub(1, 1)*28
             local g = line:sub(2, 2)*28
             local b = line:sub(3, 3)*28
-            j = line:sub(4, 4)*1
+
             love.graphics.setColor(r, g, b, 255)
-            love.graphics.print(line:sub(6))
+            love.graphics.print(line:sub(4))
  
         love.graphics.setCanvas()
    
-        -- apply formatted line to canvas
+        -- apply formated line to canvas
         love.graphics.setCanvas(canvas)
-        
-            local x = 320-font:getWidth(line)/2
-            local y = linepos
-            
-            if j2 == 1 then
-                x = 280
-                j2 = 0
-            end
-            if j == 1 then
-                x = 280-font:getWidth(line)
-                j2 = 1
-            end
-
             love.graphics.setColor(255, 255, 255, 255)
-            love.graphics.draw(canvas_line, x, y)
-            
+            love.graphics.draw(canvas_line, 320-font:getWidth(line)/2, linepos)
         love.graphics.setCanvas()   
    
         line = file_credits:read("*line")

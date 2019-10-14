@@ -50,11 +50,10 @@ function love.load(arg)
                 love.graphics.clear(0, 0, 0, 0)
                 
                 -- draw the screen
-                --if v[3] == "r" then love.graphics.setColor(255, 160, 160, 255) end
-                --if v[3] == "g" then love.graphics.setColor(160, 255, 160, 255) end
-                --if v[3] == "b" then love.graphics.setColor(160, 160, 255, 255) end
-                --if v[3] == "w" then love.graphics.setColor(255, 255, 255, 255) end
-                love.graphics.setColor(255, 255, 255, 255)
+                if v[3] == "r" then love.graphics.setColor(255, 160, 160, 255) end
+                if v[3] == "g" then love.graphics.setColor(160, 255, 160, 255) end
+                if v[3] == "b" then love.graphics.setColor(160, 160, 255, 255) end
+                if v[3] == "w" then love.graphics.setColor(255, 255, 255, 255) end
                 love.graphics.draw(exists)
                 
 

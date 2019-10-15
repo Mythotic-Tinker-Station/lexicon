@@ -991,7 +991,7 @@ strict namespace
         // check if listing exists
         if(text == name)
         {
-            return strparam(s:p1, s:"_", s:"ERR");
+            text = strparam(s:p1, s:"_", s:"ERR");
         }
         return text;
     }

@@ -5,7 +5,6 @@ map MAP01 lookup "HUSTR_1"
 	next = "MAP02"
 	secretnext = "MAP02"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 30
 	music = "$MUSIC_RUNNIN"
     nocrouch
@@ -18,7 +17,6 @@ map MAP02 lookup "HUSTR_2"
 	next = "MAP03"
 	secretnext = "MAP03"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 90
 	music = "$MUSIC_STALKS"
     nocrouch
@@ -31,7 +29,6 @@ map MAP03 lookup "HUSTR_3"
 	next = "MAP04"
 	secretnext = "MAP04"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 120
 	music = "$MUSIC_COUNTD"
     nocrouch
@@ -44,7 +41,6 @@ map MAP04 lookup "HUSTR_4"
 	next = "MAP05"
 	secretnext = "MAP05"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 120
 	music = "$MUSIC_BETWEE"
     nocrouch
@@ -57,7 +53,6 @@ map MAP05 lookup "HUSTR_5"
 	next = "MAP06"
 	secretnext = "MAP06"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 90
 	music = "$MUSIC_DOOM"
     nocrouch
@@ -70,7 +65,6 @@ map MAP06 lookup "HUSTR_6"
 	next = "MAP07"
 	secretnext = "MAP07"
 	sky1 = "SKY1"
-	cluster = 5
 	par = 150
 	sucktime = 1
 	music = "$MUSIC_THE_DA"
@@ -84,7 +78,6 @@ map MAP07 lookup "HUSTR_7"
 	next = "MAP08"
 	secretnext = "MAP08"
 	sky1 = "SKY1"
-	cluster = 6
 	par = 120
 	map07special
 	music = "$MUSIC_SHAWN"
@@ -98,7 +91,6 @@ map MAP08 lookup "HUSTR_8"
 	next = "MAP09"
 	secretnext = "MAP09"
 	sky1 = "SKY1"
-	cluster = 6
 	par = 120
 	music = "$MUSIC_DDTBLU"
     nocrouch
@@ -111,7 +103,6 @@ map MAP09 lookup "HUSTR_9"
 	next = "MAP10"
 	secretnext = "MAP10"
 	sky1 = "SKY1"
-	cluster = 6
 	par = 270
 	music = "$MUSIC_IN_CIT"
     nocrouch
@@ -124,7 +115,6 @@ map MAP10 lookup "HUSTR_10"
 	next = "MAP11"
 	secretnext = "MAP11"
 	sky1 = "SKY1"
-	cluster = 6
 	par = 90
 	music = "$MUSIC_DEAD"
     nocrouch
@@ -137,7 +127,6 @@ map MAP11 lookup "HUSTR_11"
 	next = "MAP12"
 	secretnext = "MAP12"
 	sky1 = "SKY1"
-	cluster = 6
 	par = 210
 	music = "$MUSIC_STLKS2"
     nocrouch
@@ -150,7 +139,6 @@ map MAP12 lookup "HUSTR_12"
 	next = "MAP13"
 	secretnext = "MAP13"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_THEDA2"
     nocrouch
@@ -163,7 +151,6 @@ map MAP13 lookup "HUSTR_13"
 	next = "MAP14"
 	secretnext = "MAP14"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_DOOM2"
     nocrouch
@@ -176,7 +163,6 @@ map MAP14 lookup "HUSTR_14"
 	next = "MAP15"
 	secretnext = "MAP15"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_DDTBL2"
     nocrouch
@@ -189,7 +175,6 @@ map MAP15 lookup "HUSTR_15"
 	next = "MAP16"
 	secretnext = "MAP31"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 210
 	music = "$MUSIC_RUNNI2"
     nocrouch
@@ -202,7 +187,6 @@ map MAP16 lookup "HUSTR_16"
 	next = "MAP17"
 	secretnext = "MAP17"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_DEAD2"
     nocrouch
@@ -215,7 +199,6 @@ map MAP17 lookup "HUSTR_17"
 	next = "MAP18"
 	secretnext = "MAP18"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 420
 	music = "$MUSIC_STLKS3"
     nocrouch
@@ -228,7 +211,6 @@ map MAP18 lookup "HUSTR_18"
 	next = "MAP19"
 	secretnext = "MAP19"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_ROMERO"
     nocrouch
@@ -241,7 +223,6 @@ map MAP19 lookup "HUSTR_19"
 	next = "MAP20"
 	secretnext = "MAP20"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 210
 	music = "$MUSIC_SHAWN2"
     nocrouch
@@ -254,7 +235,6 @@ map MAP20 lookup "HUSTR_20"
 	next = "MAP21"
 	secretnext = "MAP21"
 	sky1 = "SKY2"
-	cluster = 7
 	par = 150
 	music = "$MUSIC_MESSAG"
     nocrouch
@@ -267,7 +247,6 @@ map MAP21 lookup "HUSTR_21"
 	next = "MAP22"
 	secretnext = "MAP22"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 240
 	music = "$MUSIC_COUNT2"
     nocrouch
@@ -280,7 +259,6 @@ map MAP22 lookup "HUSTR_22"
 	next = "MAP23"
 	secretnext = "MAP23"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 150
 	music = "$MUSIC_DDTBL3"
     nocrouch
@@ -293,7 +271,6 @@ map MAP23 lookup "HUSTR_23"
 	next = "MAP24"
 	secretnext = "MAP24"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 180
 	music = "$MUSIC_AMPIE"
     nocrouch
@@ -306,7 +283,6 @@ map MAP24 lookup "HUSTR_24"
 	next = "MAP25"
 	secretnext = "MAP25"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 150
 	music = "$MUSIC_THEDA3"
     nocrouch
@@ -319,7 +295,6 @@ map MAP25 lookup "HUSTR_25"
 	next = "MAP26"
 	secretnext = "MAP26"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 150
 	music = "$MUSIC_ADRIAN"
     nocrouch
@@ -332,7 +307,6 @@ map MAP26 lookup "HUSTR_26"
 	next = "MAP27"
 	secretnext = "MAP27"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 300
 	music = "$MUSIC_MESSG2"
     nocrouch
@@ -345,7 +319,6 @@ map MAP27 lookup "HUSTR_27"
 	next = "MAP28"
 	secretnext = "MAP28"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 330
 	music = "$MUSIC_ROMER2"
     nocrouch
@@ -358,7 +331,6 @@ map MAP28 lookup "HUSTR_28"
 	next = "MAP29"
 	secretnext = "MAP29"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 420
 	music = "$MUSIC_TENSE"
     nocrouch
@@ -371,7 +343,6 @@ map MAP29 lookup "HUSTR_29"
 	next = "MAP30"
 	secretnext = "MAP30"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 300
 	music = "$MUSIC_SHAWN3"
     nocrouch
@@ -384,7 +355,6 @@ map MAP30 lookup "HUSTR_30"
 	next = "EndGameC"
 	secretnext = "EndGameC"
 	sky1 = "SKY3"
-	cluster = 8
 	par = 180
 	allowmonstertelefrags
 	music = "$MUSIC_OPENIN"
@@ -399,7 +369,6 @@ map MAP31 lookup "HUSTR_31"
 	next = "MAP16"
 	secretnext = "MAP32"
 	sky1 = "SKY3"
-	cluster = 9
 	par = 120
 	music = "$MUSIC_EVIL"
     nocrouch
@@ -412,7 +381,6 @@ map MAP32 lookup "HUSTR_32"
 	next = "MAP16"
 	secretnext = "MAP16"
 	sky1 = "SKY3"
-	cluster = 10
 	par = 30
 	music = "$MUSIC_ULTIMA"
     nocrouch

@@ -268,6 +268,20 @@ object CS2ChaingunGuy
     frame CS2CF { light ZOMBIEATK }
 }
 
+// ---------------
+// -- Deus Vult --
+// ---------------
+
+// Explosive Barrel
+object DeusVultExplosiveBarrel
+{
+    frame BAR1  { light BARREL    }
+
+    frame BEXPC { light ROCKET_X1 }
+    frame BEXPD { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
+}
+
 // ------------
 // -- Epic 1 --
 // ------------
@@ -363,6 +377,23 @@ object Epic2A31
 object Epic2A32
 {
     frame AABA { light ARMORBONUS }
+}
+
+// --------------------------
+// -- Hell Pike Secret Map --
+// --------------------------
+
+// Arachnotron Plasma
+object hp101SDA
+{
+    frame AABHQ { light ANCIENTALIENSPLASMA }
+    frame AABHR { light ANCIENTALIENSPLASMA }
+
+    frame AABHS { light ANCIENTALIENSPLASMA_X1 }
+    frame AABHT { light ANCIENTALIENSPLASMA_X2 }
+    frame AABHU { light ANCIENTALIENSPLASMA_X3 }
+    frame AABHV { light ANCIENTALIENSPLASMA_X4 }
+    frame AABHW { light ANCIENTALIENSPLASMA_X5 }
 }
 
 // ---------------
@@ -619,6 +650,47 @@ pulselight STARDATE20X6INVULN
 object SD20x6A8
 {
     frame PINV { light STARDATE20X6INVULN }
+}
+
+// Baron / Hell Knight fireball
+pointlight STARDATE20X6BARONBALL
+{
+    color 1.0 0.0 1.0
+    size 64
+}
+
+flickerlight STARDATE20X6BARONBALL_X1
+{
+    color 0.7 0.0 0.7
+    size 80
+    secondarySize 88
+    chance 0.25
+}
+
+flickerlight STARDATE20X6BARONBALL_X2
+{
+    color 0.4 0.0 0.4
+    size 96
+    secondarySize 104
+    chance 0.25
+}
+
+flickerlight STARDATE20X6BARONBALL_X3
+{
+    color 0.2 0.0 0.2
+    size 112
+    secondarySize 120
+    chance 0.25
+}
+
+object SD20x6A10
+{
+    frame BAL7A { light STARDATE20X6BARONBALL    }
+    frame BAL7B { light STARDATE20X6BARONBALL    }
+
+    frame BAL7C { light STARDATE20X6BARONBALL_X1 }
+    frame BAL7D { light STARDATE20X6BARONBALL_X2 }
+    frame BAL7E { light STARDATE20X6BARONBALL_X3 }
 }
 
 // -------------------

@@ -343,8 +343,15 @@ SlowLook:
 	TNT1 A 0 A_Noblocking
     TNT1 A 0 A_SpawnItemEx("SD20x6A4", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
     Goto Arbitrary
-    Arbitrary:
-    TNT1 A 1
+	Arbitrary:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+	TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+	ADDS:
+    TNT1 A 6
     Loop
 	
 	Melee:
@@ -624,9 +631,16 @@ SlowLook:
 	TNT1 A 0 A_GiveInventory("Mapspecial",2)
 	TNT1 A 0 A_Noblocking
     TNT1 A 0 A_SpawnItemEx("AAA120", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-    Goto Arbitrary
-    Arbitrary:
-    TNT1 A 1
+    Goto Arbitrary    
+	Arbitrary:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+	TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+	ADDS:
+    TNT1 A 6
     Loop
 	See:
 		BSPI A 20
@@ -708,8 +722,15 @@ ACTOR LSpiderMastermind replaces Spidermastermind
 	TNT1 A 0 A_Noblocking
     TNT1 A 0 A_SpawnItemEx("AAA15", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
     Goto Arbitrary
-    Arbitrary:
-    TNT1 A 1
+	Arbitrary:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+	TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+	ADDS:
+    TNT1 A 6
     Loop
 	See:
 		SPID A 3 A_Metal
@@ -1534,8 +1555,15 @@ SlowLook:
 	TNT1 A 0 A_Noblocking
     TNT1 A 0 A_SpawnItemEx("AAA19", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
     Goto Arbitrary
-    Arbitrary:
-    TNT1 A 1
+	Arbitrary:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+	TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+	ADDS:
+    TNT1 A 6
     Loop
 	Missile:
 		FATT G 20 A_FatRaise
@@ -1703,8 +1731,15 @@ ACTOR LCyberdemon replaces Cyberdemon
 	TNT1 A 0 A_Noblocking
     TNT1 A 0 A_SpawnItemEx("AAA14", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
     Goto Arbitrary
-    Arbitrary:
-    TNT1 A 1
+	Arbitrary:
+	TNT1 A 0
+	TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+	TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+	TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+	TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+	ADDS:
+    TNT1 A 6
     Loop
 	SpecialDeath:
     TNT1 A 1 A_BossDeath

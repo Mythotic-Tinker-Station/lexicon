@@ -143,7 +143,7 @@ pointlight ANCIENTALIENSPLASMA
 
 flickerlight ANCIENTALIENSPLASMA_X1
 {
-    color 0.8 0.09 0.42
+    color 0.7 0.08 0.38
     size 64
     secondarySize 72
     chance 0.3
@@ -151,7 +151,7 @@ flickerlight ANCIENTALIENSPLASMA_X1
 
 flickerlight ANCIENTALIENSPLASMA_X2
 {
-    color 0.7 0.08 0.38
+    color 0.6 0.07 0.34
     size 80
     secondarySize 88
     chance 0.3
@@ -159,7 +159,7 @@ flickerlight ANCIENTALIENSPLASMA_X2
 
 flickerlight ANCIENTALIENSPLASMA_X3
 {
-    color 0.6 0.07 0.34
+    color 0.5 0.06 0.29
     size 96
     secondarySize 104
     chance 0.3
@@ -173,6 +173,14 @@ flickerlight ANCIENTALIENSPLASMA_X4
     chance 0.3
 }
 
+flickerlight ANCIENTALIENSPLASMA_X5
+{
+    color 0.2 0.03 0.16
+    size 128
+    secondarySize 136
+    chance 0.3
+}
+
 object AAA21
 {
     frame AABHQ { light ANCIENTALIENSPLASMA }
@@ -180,9 +188,9 @@ object AAA21
 
     frame AABHS { light ANCIENTALIENSPLASMA_X1 }
     frame AABHT { light ANCIENTALIENSPLASMA_X2 }
-    frame AABHU { light ANCIENTALIENSPLASMA_X2 }
-    frame AABHV { light ANCIENTALIENSPLASMA_X3 }
-    frame AABHW { light ANCIENTALIENSPLASMA_X4 }
+    frame AABHU { light ANCIENTALIENSPLASMA_X3 }
+    frame AABHV { light ANCIENTALIENSPLASMA_X4 }
+    frame AABHW { light ANCIENTALIENSPLASMA_X5 }
 }
 
 // Archvile
@@ -258,6 +266,20 @@ object CS2ChaingunGuy
 {
     frame CS2CE { light ZOMBIEATK }
     frame CS2CF { light ZOMBIEATK }
+}
+
+// ---------------
+// -- Deus Vult --
+// ---------------
+
+// Explosive Barrel
+object DeusVultExplosiveBarrel
+{
+    frame BAR1  { light BARREL    }
+
+    frame BEXPC { light ROCKET_X1 }
+    frame BEXPD { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
 }
 
 // ------------
@@ -357,9 +379,61 @@ object Epic2A32
     frame AABA { light ARMORBONUS }
 }
 
+// --------------------------
+// -- Hell Pike Secret Map --
+// --------------------------
+
+// Arachnotron Plasma
+object hp101SDA
+{
+    frame AABHQ { light ANCIENTALIENSPLASMA }
+    frame AABHR { light ANCIENTALIENSPLASMA }
+
+    frame AABHS { light ANCIENTALIENSPLASMA_X1 }
+    frame AABHT { light ANCIENTALIENSPLASMA_X2 }
+    frame AABHU { light ANCIENTALIENSPLASMA_X3 }
+    frame AABHV { light ANCIENTALIENSPLASMA_X4 }
+    frame AABHW { light ANCIENTALIENSPLASMA_X5 }
+}
+
 // ---------------
 // -- Mayhem 17 --
 // ---------------
+
+// Small red torch
+object Mayhem17ShortRedTorch
+{
+    frame 7MRT { light FIREBARREL }
+}
+
+// Big red torch
+flickerlight2 MAYHEMBIGREDTORCH
+{
+    color 1.0 0.9 0.0
+    size 64
+    secondarySize 72
+    interval 0.1
+    offset 0 60 0
+}
+
+object Mayhem17RedTorch
+{
+    frame 7RED { light MAYHEMBIGREDTORCH }
+}
+
+// Hanging torch
+flickerlight2 MAYHEMHANGINGTORCH
+{
+    color 1.0 0.9 0.0
+    size 48
+    secondarySize 54
+    interval 0.1
+}
+
+object Mayhem17Torch
+{
+    frame 7OR1 { light MAYHEMHANGINGTORCH }
+}
 
 // Soul Sphere
 pulselight MAYHEMSOULSPHERE
@@ -578,6 +652,47 @@ object SD20x6A8
     frame PINV { light STARDATE20X6INVULN }
 }
 
+// Baron / Hell Knight fireball
+pointlight STARDATE20X6BARONBALL
+{
+    color 1.0 0.0 1.0
+    size 64
+}
+
+flickerlight STARDATE20X6BARONBALL_X1
+{
+    color 0.7 0.0 0.7
+    size 80
+    secondarySize 88
+    chance 0.25
+}
+
+flickerlight STARDATE20X6BARONBALL_X2
+{
+    color 0.4 0.0 0.4
+    size 96
+    secondarySize 104
+    chance 0.25
+}
+
+flickerlight STARDATE20X6BARONBALL_X3
+{
+    color 0.2 0.0 0.2
+    size 112
+    secondarySize 120
+    chance 0.25
+}
+
+object SD20x6A10
+{
+    frame BAL7A { light STARDATE20X6BARONBALL    }
+    frame BAL7B { light STARDATE20X6BARONBALL    }
+
+    frame BAL7C { light STARDATE20X6BARONBALL_X1 }
+    frame BAL7D { light STARDATE20X6BARONBALL_X2 }
+    frame BAL7E { light STARDATE20X6BARONBALL_X3 }
+}
+
 // -------------------
 // -- Stardate 20x7 --
 // -------------------
@@ -623,23 +738,32 @@ object SD20x7A6
 }
 
 // Short tech lamp
-pulselight STARDATE20X7SMALLLAMP
+pulselight STARDATE20X7SMALLLAMP1
 {
     color 1.0 0.8 1.0
     size 56
     secondarySize 58
     interval 0.4
-    offset 0 44 0
+    offset 0 172 0
+}
+
+pulselight STARDATE20X7SMALLLAMP2
+{
+    color 1.0 0.8 1.0
+    size 56
+    secondarySize 58
+    interval 0.4
+    offset 0 236 0
 }
 
 object SD20x7A3
 {
-    frame AABL { light STARDATE20X7SMALLLAMP }
+    frame AABL { light STARDATE20X7SMALLLAMP1 }
 }
 
 object SD20x7A4
 {
-    frame AABL { light STARDATE20X7SMALLLAMP }
+    frame AABL { light STARDATE20X7SMALLLAMP2 }
 }
 
 // Chain lamp
@@ -711,6 +835,46 @@ object SunlustExplosiveBarrel
     frame SLXPC { light ROCKET_X1 }
     frame SLXPD { light ROCKET_X2 }
     frame SLXPE { light ROCKET_X3 }
+}
+
+// --------------------------
+// -- Swim with the Whales --
+// --------------------------
+
+// Small blue torch
+flickerlight2 SWIMWITHTHEWHALESSMALLBLUETORCH
+{
+    color 0.2 0.2 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 35 0
+}
+
+object SWTW1
+{
+    frame AABL { light SMALLBLUETORCH }
+}
+
+object SWTW2
+{
+    frame AABL { light SWIMWITHTHEWHALESSMALLBLUETORCH }
+}
+
+// Small black torch
+flickerlight2 SWIMWITHTHEWHALESSMALLBLACKTORCH
+{
+    color 1.0 1.0 1.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 35 0
+    subtractive 1
+}
+
+object SWTW3
+{
+    frame AABL { light SWIMWITHTHEWHALESSMALLBLACKTORCH }
 }
 
 // -------------
@@ -889,12 +1053,11 @@ object ValiantLostSoul
     frame AAASD { light LOSTSOUL    }
     frame AAASE { light LOSTSOUL    }
     frame AAASF { light LOSTSOUL    }
-    frame AAASG { light LOSTSOUL    }
 
-    frame AAASH { light LOSTSOUL_X1 }
-    frame AAASI { light LOSTSOUL_X2 }
-    frame AAASJ { light LOSTSOUL_X3 }
-    frame AAASK { light LOSTSOUL_X4 }
+    frame AAASG { light LOSTSOUL_X1 }
+    frame AAASH { light LOSTSOUL_X2 }
+    frame AAASI { light LOSTSOUL_X3 }
+    frame AAASJ { light LOSTSOUL_X4 }
 }
 
 // Super Archvile

@@ -9442,7 +9442,7 @@ ACTOR SWTW3 : ShortGreenTorch 25184//56
 //reverted to original
 ACTOR SD20x6A1 : GreenArmor 25185//GreenArmor  2018
 {  
-Translation "112:127=250:254"
+Translation "112:127=250:254", "126:127=254:254"
 }
 //25064//25186
 
@@ -9457,7 +9457,14 @@ Translation "112:127=250:254"
 ACTOR SD20x6A3 : HellKnight 25188//69
 {
 Translation "112:127=250:254"
-//may need missile state to change the fireball
+States
+{
+Melee:
+Missile:
+  BOS2 EF 8 A_FaceTarget
+  BOS2 G 8 A_BasicAttack(10, "baron/melee", "SD20x6A10", 32)
+  Goto See
+}
 }
 
 //reverted to original
@@ -9465,34 +9472,45 @@ Translation "112:127=250:254"
 ACTOR SD20x6A4 : BaronOfHell 25189//3003
 {
 Translation "112:127=250:254"
-//may need missile state to change the fireball
+States
+{
+Melee:
+Missile:
+  BOSS EF 8 A_FaceTarget
+  BOSS G 8 A_BasicAttack(10, "baron/melee", "SD20x6A10", 32)
+  Goto See
+}
 }
 //EvilEye
 ACTOR SD20x6A5 : EvilEye 25190//41
 {
-Translation "112:127=250:254"
+Translation "113:126=250:255"
 }
 //GreenTorch
 ACTOR SD20x6A6 : GreenTorch 25191//45
 {
-Translation "112:127=250:254"
+Translation "112:122=251:254", "112:113=250:250", "123:127=254:254"
 }
 //ShortGreenTorch
 ACTOR SD20x6A7 : ShortGreenTorch 25192//56
 {
-Translation "112:127=250:254"
+Translation "112:122=251:254", "112:113=250:250", "123:127=254:254"
 }
-
 
 //reverted to original
 //InvulnerabilitySphere 
 ACTOR SD20x6A8 : InvulnerabilitySphere  25193//2022
 {
-Translation "112:127=250:254"
+Translation "11:12=254:8", "114:127=250:254", "160:163=170:172", "225:231=169:169"
 }//Allmap 
 ACTOR SD20x6A9 : Allmap  25194//2026
 {
-Translation "112:127=250:254"
+Translation "9:12=254:254", "112:125=250:254", "126:127=254:254", "160:163=170:172"
+}
+//BaronBall
+ACTOR SD20x6A10 : BaronBall
+{
+Translation "111:122=250:254", "123:127=254:254"
 }
 
 //STARDATE 20X7
@@ -9650,20 +9668,20 @@ Actor SD20x7A9 : Afrit 25203//72
 
 ACTOR SD20x7A10 : Soulsphere 25204//2013
 {
-Translation "196:207=250:254"
+Translation "192:196=170:172", "196:207=250:254", "240:242=254:254", "243:246=5:8"
 }
 
 ACTOR SD20x7A11 : ShortBlueTorch 25205//55
 {
-Translation "196:207=250:254"
+Translation "196:207=250:254", "240:246=254:254"
 }
 ACTOR SD20x7A12 : ShortBlueTorch 25206//44
 {
-Translation "196:207=250:254"
+Translation "196:207=250:254", "240:246=254:254"
 }
 ACTOR SD20x7A13 : HealthBonus 25207//2014
 {
-Translation "196:207=250:254"
+Translation "196:207=250:254", "240:242=254:254", "243:246=5:8"
 }
 
 //1024

@@ -4114,7 +4114,14 @@ Texture	Optional	EPCA1 	Range	EPCA9 	Tics 8
 Texture	Optional	EPCB1 	Range	EPCB5 	Tics 8
 Texture	Optional	EPIC2144 	Range	EPIC2147 	Tics 8
 
+texture EPIC11
+    pic EPIC11 tics 8
+	pic EPIC12 tics 8
+	pic EPIC13 tics 8
+	pic EPIC14 tics 8
 
+    
+    
 switch doom 1 EPIC276 on pic EPIC277 tics 0
 switch doom 1 EPIC252 on pic EPIC262 tics 0
 switch doom 1 EPIC253 on pic EPIC263 tics 0

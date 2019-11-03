@@ -5038,6 +5038,10 @@ Texture	Optional	FFIELDG1	Range	FFIELDGA	Tics 2
 Texture	Optional	FFIELDP1	Range	FFIELDPA	Tics 2
 Texture	Optional	SLMFALL1	Range	SLMFALL4	Tics 8
 
+//1024-1
+Switch	Doom 1		1024SW1A	On Pic	1024SW1B	Tics 0
+Switch	Doom 1		1024SW2A	On Pic	1024SW2B	Tics 0
+
 //1024-2
 
 Switch	Doom 1		SW1BRCOM	On Pic	SW2BRCOM	Tics 0

@@ -1,0 +1,80 @@
+// -------------
+// -- Doom II --
+// -------------
+
+generator LZombieMan              BulletChip
+generator LShotgunGuy             BulletChip
+generator LChaingunGuy            BulletChip
+generator LWolfensteinSS          BulletChip
+generator LSpiderMastermind       BulletChip
+
+// --------------------
+// -- Ancient Aliens --
+// --------------------
+
+generator AAA32                   BulletChip
+generator AAA31                   BulletChip
+generator AAA30                   BulletChip
+generator AAA15                   BulletChip
+
+generator AAA21                   PlasmaScorchLower
+
+// --------------------
+// -- Combat Shock 2 --
+// --------------------
+
+generator CS2ZombieMan            BulletChip
+generator CS2ShotgunGuy           BulletChip
+generator CS2ChaingunGuy          BulletChip
+
+// ------------
+// -- Epic 1 --
+// ------------
+
+generator Epic1A8                 BulletChip
+generator Epic1A11                BulletChip
+generator Epic1A9                 BulletChip
+
+// ------------
+// -- Epic 2 --
+// ------------
+
+generator Epic2A38                BulletChip
+
+// --------------------------
+// -- Hell Pike Secret Map --
+// --------------------------
+
+generator hp101SDA                PlasmaScorchLower
+
+// -------------
+// -- Valiant --
+// -------------
+
+generator ValiantSpiderMastermind BulletChip
+
+decal ValiantArachScorch1
+{
+    pic AAASK0
+    add 1.0
+    animator GoAway
+    lowerdecal PlasmaScorchLower1
+}
+
+decal ValiantArachScorch2
+{
+    pic AAASL0
+    add 1.0
+    animator GoAway
+    lowerdecal PlasmaScorchLower2
+}
+
+decalgroup ValiantArachnotronScorch
+{
+    ValiantArachScorch1 1
+    ValiantArachScorch2 1
+}
+
+generator ValiantImpBall          DoomImpScorch
+generator ValiantPlamsa           ValiantArachnotronScorch
+generator ValiantBaronBall        CacoScorch

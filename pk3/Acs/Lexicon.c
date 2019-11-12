@@ -287,12 +287,6 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
-        // check if the misc pk3 is loaded
-        if(SpawnForced("MiscPK3Loaded", 0.0, 0.0, 0.0, 0, 0) > 0) 
-        {
-            SetCVar("lexicon_global_miscpk3", 1);
-        }
-        
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {

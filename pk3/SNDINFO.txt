@@ -190,9 +190,10 @@ hellcore/keenpain HCKEENPN
 //	 Valiant   //
 //////////////////
 
-valdg/active			VALINT01
+valkn/pain				VALINT01
+valkn/death				VALINT03
+
 valdg/death				VALINT02
-valdg/pain				VALINT03
 valdg/sight				VALINT04
 
 valbrn/death			VALINT05
@@ -203,11 +204,8 @@ valbn/death				VALINT07
 valkt/sight				VALINT08
 valkt/death				VALINT09
 
-valkn/pain				VALINT10
-valkn/death				VALINT11
-
-valws/sight				VALINT12
-valws/death				VALINT13
+valws/sight				VALINT10
+valws/death				VALINT11
 
 ////////////////////////
 //	 Ancient Aliens   //

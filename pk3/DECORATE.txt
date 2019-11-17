@@ -6266,9 +6266,8 @@ ACTOR ValiantBaronBall //replaces BaronBall
   +RANDOMIZE
   RenderStyle Add
   Alpha 1
-  SeeSound "knight/sight"
+  SeeSound "valkt/sight"
   DeathSound "baron/shotx"
-  Decal "BaronScorch"
   States
   {
   Spawn:
@@ -6413,9 +6412,9 @@ ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
   PainChance 80
   Mass 1000
   Monster
-  SeeSound "valws/sight"
+  SeeSound "valws/death"
   PainSound "fatso/pain"
-  DeathSound "valws/death"
+  DeathSound "valws/sight"
   ActiveSound "fatso/active"
   Obituary "%o couldn't avoid the Super Mancubus's volley."
   States
@@ -6468,9 +6467,9 @@ ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
   PainChance 50
   Mass 1000
   Monster
-  SeeSound "valkt/pain"
+  SeeSound "valkn/pain"
   PainSound "knight/pain"
-  DeathSound "valws/death"
+  DeathSound "valkn/death"
   ActiveSound "knight/active"
   Obituary "%o was burned to cinders by a Pyro Knight."
   HitObituary "%o got ripped to shreds by a Pyro Knight."
@@ -6545,9 +6544,9 @@ ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
     Mass 1000
     Monster
     +NORADIUSDMG
-    SeeSound "baron/sight"
+    SeeSound "valbn/sight"
     PainSound "baron/pain"
-    DeathSound "baron/death"
+    DeathSound "valbn/death"
     ActiveSound "baron/active"
     Obituary "%o rode a Cybruiser's rocket."
     HitObituary "%o got clawed by a Cybruiser."
@@ -6558,13 +6557,11 @@ ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
             Loop
         See:
             AAAL AA 3  A_Chase
-            TNT1 A 0 A_PlaySoundEx("brain/death",Auto,false,0)
+            AAAL B 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
             AAAL BB 3  A_Chase
-            TNT1 A 0 //A_PlaySoundEx("brain/death",Auto,false,0)
             AAAL CC 3  A_Chase
-            TNT1 A 0 A_PlaySoundEx("brain/death",Auto,false,0)
+            AAAL D 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
             AAAL DD 3  A_Chase
-            TNT1 A 0 //A_PlaySoundEx("brain/death",Auto,false,0)
             Loop
         Missile:
             AAAL E 12  A_FaceTarget

@@ -40,6 +40,26 @@ object LHealthBonus
     frame BON1 { light HEALTHPOTION }
 }
 
+// Armour Helmet
+object LArmorBonus
+{
+    frame BON2 { light ARMORBONUS }
+}
+
+// Green armour
+object LGreenArmor
+{
+    frame ARM1A { light GREENARMOR1 }
+    frame ARM1B { light GREENARMOR2 }
+}
+
+// Blue armour
+object LBlueArmor
+{
+    frame ARM2A { light BLUEARMOR1 }
+    frame ARM2B { light BLUEARMOR2 }
+}
+
 // Zombieman
 object LZombieMan
 {

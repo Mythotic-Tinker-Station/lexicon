@@ -2,8 +2,7 @@
 /////The replacement code
 ////////
 
-/*
-ACTOR LCellPack : CellPack replaces CellPack
+Actor LCellPack : CellPack replaces CellPack
 {
     States
     {
@@ -12,13 +11,17 @@ ACTOR LCellPack : CellPack replaces CellPack
        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "EP1EP2")
        Goto Super::Spawn
     EP1EP2:
-       TNT1 A 0 A_SpawnItemEx("LEpic2A17", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+       TNT1 A 0 A_SpawnItemEx("Epic2A17Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
        Stop
     }
 }
 
+Actor Epic2A17Spawner : RandomSpawner
+{
+    DropItem "Epic2A17"
+}
 
-ACTOR LCell : Cell replaces Cell
+Actor LCell : Cell replaces Cell
 {
     States
     {
@@ -27,13 +30,17 @@ ACTOR LCell : Cell replaces Cell
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
+Actor Epic2A16Spawner : RandomSpawner
+{
+    DropItem "Epic2A16"
+}
 
-ACTOR LClip : Clip replaces Clip
+Actor LClip : Clip replaces Clip
 {
     States
     {
@@ -42,13 +49,17 @@ ACTOR LClip : Clip replaces Clip
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A18", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("Epic2A18Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
-*/
 
-ACTOR LShotgunGuy : ShotgunGuy replaces ShotgunGuy
+Actor Epic2A18Spawner : RandomSpawner
+{
+    DropItem "Epic2A18"
+}
+
+Actor LShotgunGuy : ShotgunGuy replaces ShotgunGuy
 {
     States
     {
@@ -88,8 +99,7 @@ ACTOR LShotgunGuy : ShotgunGuy replaces ShotgunGuy
     }
 }
 
-
-ACTOR LChaingunGuy : ChaingunGuy replaces ChaingunGuy
+Actor LChaingunGuy : ChaingunGuy replaces ChaingunGuy
 {
     States
     {
@@ -129,15 +139,13 @@ ACTOR LChaingunGuy : ChaingunGuy replaces ChaingunGuy
     }
 }
 
-
-//Arbitrary state keeps this actor alive, when the new monster is spawned this actor is set as master, when the child is destroyed it will destroy this master, which will trigger mapspecials. This must be done for all mapspecial monsters.
-ACTOR MapSpecial : Inventory
+//Arbitrary state keeps this Actor alive, when the new monster is spawned this Actor is set as master, when the child is destroyed it will destroy this master, which will trigger mapspecials. This must be done for all mapspecial monsters.
+Actor MapSpecial : Inventory
 {
     Inventory.MaxAmount 1
 }
 
-
-ACTOR LBaronOfHell : BaronOfHell replaces BaronOfHell
+Actor LBaronOfHell : BaronOfHell replaces BaronOfHell
 {
     States
     {
@@ -199,8 +207,7 @@ ACTOR LBaronOfHell : BaronOfHell replaces BaronOfHell
     }
 }
 
-
-ACTOR LZombieMan : ZombieMan replaces ZombieMan
+Actor LZombieMan : ZombieMan replaces ZombieMan
 {
     States
     {
@@ -240,8 +247,7 @@ ACTOR LZombieMan : ZombieMan replaces ZombieMan
     }
 }
 
-
-ACTOR LDoomImp : DoomImp replaces Doomimp
+Actor LDoomImp : DoomImp replaces Doomimp
 {
     States
     {
@@ -282,8 +288,7 @@ ACTOR LDoomImp : DoomImp replaces Doomimp
     }
 }
 
-
-ACTOR LArachnotron : Arachnotron replaces Arachnotron
+Actor LArachnotron : Arachnotron replaces Arachnotron
 {
     States
     {
@@ -343,8 +348,7 @@ ACTOR LArachnotron : Arachnotron replaces Arachnotron
     }
 }
 
-
-ACTOR LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
+Actor LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
 {
     States
     {
@@ -381,8 +385,7 @@ ACTOR LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
     }
 }
 
-
-ACTOR LDemon : Demon replaces Demon
+Actor LDemon : Demon replaces Demon
 {
     States
     {
@@ -418,8 +421,7 @@ ACTOR LDemon : Demon replaces Demon
     }
 }
 
-
-ACTOR LSpectre : Spectre replaces Spectre
+Actor LSpectre : Spectre replaces Spectre
 {
     States
     {
@@ -451,8 +453,7 @@ ACTOR LSpectre : Spectre replaces Spectre
     }
 }
 
-
-ACTOR LCacodemon : Cacodemon replaces Cacodemon
+Actor LCacodemon : Cacodemon replaces Cacodemon
 {
     States
     {
@@ -485,8 +486,7 @@ ACTOR LCacodemon : Cacodemon replaces Cacodemon
     }
 }
 
-
-ACTOR LRevenant : Revenant replaces Revenant
+Actor LRevenant : Revenant replaces Revenant
 {
     States
     {
@@ -522,8 +522,7 @@ ACTOR LRevenant : Revenant replaces Revenant
     }
 }
 
-/*
-ACTOR LArmorBonus : ArmorBonus replaces ArmorBonus
+Actor LArmorBonus : ArmorBonus replaces ArmorBonus
 {
     States
     {
@@ -545,23 +544,22 @@ ACTOR LArmorBonus : ArmorBonus replaces ArmorBonus
     }
 }
 
-ACTOR Mayhem17ArmorBonusSpawner : RandomSpawner
+Actor Mayhem17ArmorBonusSpawner : RandomSpawner
 {
     DropItem "Mayhem17ArmorBonus"
 }
 
-ACTOR Epic2A32Spawner : RandomSpawner
+Actor Epic2A32Spawner : RandomSpawner
 {
     DropItem "Epic2A32"
 }
 
-ACTOR SD20x7A1Spawner : RandomSpawner
+Actor SD20x7A1Spawner : RandomSpawner
 {
     DropItem "SD20x7A1"
 }
-*/
 
-ACTOR LStimpack : Stimpack replaces Stimpack
+Actor LStimpack : Stimpack replaces Stimpack
 {
     States
     {
@@ -575,13 +573,12 @@ ACTOR LStimpack : Stimpack replaces Stimpack
     }
 }
 
-ACTOR Epic2A9Spawner : RandomSpawner
+Actor Epic2A9Spawner : RandomSpawner
 {
     DropItem "Epic2A9"
 }
 
-
-ACTOR LMedikit : Medikit replaces Medikit
+Actor LMedikit : Medikit replaces Medikit
 {
     States
     {
@@ -595,13 +592,12 @@ ACTOR LMedikit : Medikit replaces Medikit
     }
 }
 
-ACTOR Epic2A6Spawner : RandomSpawner
+Actor Epic2A6Spawner : RandomSpawner
 {
     DropItem "Epic2A6"
 }
 
-
-ACTOR LSoulsphere : Soulsphere replaces Soulsphere
+Actor LSoulsphere : Soulsphere replaces Soulsphere
 {
     States
     {
@@ -615,53 +611,58 @@ ACTOR LSoulsphere : Soulsphere replaces Soulsphere
     }
 }
 
-ACTOR Mayhem17SoulsphereSpawner : RandomSpawner
+Actor Mayhem17SoulsphereSpawner : RandomSpawner
 {
     DropItem "Mayhem17Soulsphere"
 }
 
-/*
-ACTOR LRocketLauncher : RocketLauncher Replaces RocketLauncher
+Actor LRocketLauncher : WeaponGiver replaces RocketLauncher
 {
+    DropItem "RocketLauncher"
+    Inventory.PickupMessage "$GOTLAUNCHER"
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "EP1EP2")
-        Goto Super::Spawn
+    DDS:
+        LAUN A -1
+        Stop
     EP1EP2:
         TNT1 A 0 A_SpawnItemEx("Epic2A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
-ACTOR Epic2A8Spawner : RandomSpawner
+Actor Epic2A8Spawner : RandomSpawner
 {
     DropItem "Epic2A8"
 }
 
-
-ACTOR LPlasmaRifle : PlasmaRifle Replaces PlasmaRifle
+Actor LPlasmaRifle : WeaponGiver replaces PlasmaRifle
 {
+    DropItem "PlasmaRifle"
+    Inventory.PickupMessage "$GOTPLASMA"
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "EP1EP2")
-        Goto Super::Spawn
+    DDS:
+        PLAS A -1
+        Stop
     EP1EP2:
         TNT1 A 0 A_SpawnItemEx("Epic2A7Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
-ACTOR Epic2A7Spawner : RandomSpawner
+Actor Epic2A7Spawner : RandomSpawner
 {
     DropItem "Epic2A7"
 }
 
-
-ACTOR LGreenArmor : GreenArmor replaces GreenArmor
+Actor LGreenArmor : GreenArmor replaces GreenArmor
 {
     States
     {
@@ -679,18 +680,17 @@ ACTOR LGreenArmor : GreenArmor replaces GreenArmor
     }
 }
 
-ACTOR Mayhem17GreenArmorSpawner : RandomSpawner
+Actor Mayhem17GreenArmorSpawner : RandomSpawner
 {
     DropItem "Mayhem17GreenArmor"
 }
 
-ACTOR SD20x6A1Spawner : RandomSpawner
+Actor SD20x6A1Spawner : RandomSpawner
 {
     DropItem "SD20x6A1"
 }
 
-
-ACTOR LBlueArmor : BlueArmor replaces BlueArmor
+Actor LBlueArmor : BlueArmor replaces BlueArmor
 {
     States
     {
@@ -704,13 +704,12 @@ ACTOR LBlueArmor : BlueArmor replaces BlueArmor
     }
 }
 
-ACTOR Mayhem17BlueArmorSpawner : RandomSpawner
+Actor Mayhem17BlueArmorSpawner : RandomSpawner
 {
     DropItem "Mayhem17BlueArmor"
 }
-*/
 
-ACTOR LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
+Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
 {
     States
     {
@@ -747,8 +746,7 @@ ACTOR LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
     }
 }
 
-
-ACTOR LLostSoul : LostSoul replaces LostSoul
+Actor LLostSoul : LostSoul replaces LostSoul
 {
     States
     {
@@ -785,8 +783,7 @@ ACTOR LLostSoul : LostSoul replaces LostSoul
     }
 }
 
-
-ACTOR LArchvile : Archvile replaces Archvile
+Actor LArchvile : Archvile replaces Archvile
 {
     States
     {
@@ -818,8 +815,7 @@ ACTOR LArchvile : Archvile replaces Archvile
     }
 }
 
-
-ACTOR LFatso : Fatso replaces Fatso
+Actor LFatso : Fatso replaces Fatso
 {
     States
     {
@@ -868,14 +864,14 @@ ACTOR LFatso : Fatso replaces Fatso
     }
 }
 
-
-ACTOR LHellKnight : HellKnight replaces HellKnight
+Actor LHellKnight : HellKnight replaces HellKnight
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "AA1")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "SD6SD7")
     DDS:
         TNT1 A 0
         TNT1 A 0 ACS_NamedExecuteAlways("CountMonsters")
@@ -899,11 +895,13 @@ ACTOR LHellKnight : HellKnight replaces HellKnight
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA23", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
+    SD6SD7:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     }
 }
 
-
-ACTOR LCyberdemon : Cyberdemon replaces Cyberdemon
+Actor LCyberdemon : Cyberdemon replaces Cyberdemon
 {
     States
     {
@@ -930,8 +928,7 @@ ACTOR LCyberdemon : Cyberdemon replaces Cyberdemon
     }
 }
 
-
-ACTOR LPainElemental : PainElemental replaces PainElemental
+Actor LPainElemental : PainElemental replaces PainElemental
 {
     States
     {
@@ -967,8 +964,7 @@ ACTOR LPainElemental : PainElemental replaces PainElemental
     }
 }
 
-
-ACTOR LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
+Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
 {
     States
     {
@@ -994,8 +990,7 @@ ACTOR LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
     }
 }
 
-
-ACTOR LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
+Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
     States
     {
@@ -1009,8 +1004,7 @@ ACTOR LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     }
 }
 
-
-ACTOR LMegasphere : Megasphere replaces Megasphere
+Actor LMegasphere : Megasphere replaces Megasphere
 {
     States
     {
@@ -1024,13 +1018,12 @@ ACTOR LMegasphere : Megasphere replaces Megasphere
     }
 }
 
-ACTOR Mayhem17MegasphereSpawner : RandomSpawner
+Actor Mayhem17MegasphereSpawner : RandomSpawner
 {
     DropItem "Mayhem17Megasphere"
 }
 
-
-ACTOR LInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere
+Actor LInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySphere
 {
     States
     {
@@ -1048,18 +1041,17 @@ ACTOR LInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySph
     }
 }
 
-ACTOR MayhemInvulnSphereSpawner : RandomSpawner
+Actor MayhemInvulnSphereSpawner : RandomSpawner
 {
     DropItem "MayhemInvulnSphere"
 }
 
-ACTOR SD20x6A8Spawner : RandomSpawner
+Actor SD20x6A8Spawner : RandomSpawner
 {
     DropItem "SD20x6A8"
 }
 
-/*
-ACTOR LBerserk : Berserk replaces Berserk
+Actor LBerserk : Berserk replaces Berserk
 {
     States
     {
@@ -1073,13 +1065,12 @@ ACTOR LBerserk : Berserk replaces Berserk
     }
 }
 
-ACTOR Mayhem17BerserkSpawner : RandomSpawner
+Actor Mayhem17BerserkSpawner : RandomSpawner
 {
     DropItem "Mayhem17Berserk"
 }
-*/
 
-ACTOR LInfrared : Infrared replaces Infrared
+Actor LInfrared : Infrared replaces Infrared
 {
     States
     {
@@ -1093,8 +1084,7 @@ ACTOR LInfrared : Infrared replaces Infrared
     }
 }
 
-
-ACTOR LHealthBonus : HealthBonus replaces HealthBonus
+Actor LHealthBonus : HealthBonus replaces HealthBonus
 {
     States
     {
@@ -1112,22 +1102,21 @@ ACTOR LHealthBonus : HealthBonus replaces HealthBonus
     }
 }
 
-ACTOR Mayhem17HealthBonusSpawner : RandomSpawner
+Actor Mayhem17HealthBonusSpawner : RandomSpawner
 {
     DropItem "Mayhem17HealthBonus"
 }
 
-ACTOR Epic2A31Spawner : RandomSpawner
+Actor Epic2A31Spawner : RandomSpawner
 {
     DropItem "Epic2A31"
 }
-
 
 ////////////////////
 // Lexicon        //
 ////////////////////
 
-ACTOR Lexicon_Firework_Spawner
+Actor Lexicon_Firework_Spawner
 {
     +NOINTERACTION
     +CLIENTSIDEONLY
@@ -1168,7 +1157,7 @@ ACTOR Lexicon_Firework_Spawner
     }
 }
 
-ACTOR Lexicon_Firework_Red
+Actor Lexicon_Firework_Red
 {
     Translation "192:207=168:191"
     +NOINTERACTION
@@ -1217,12 +1206,12 @@ ACTOR Lexicon_Firework_Red
     }
 }
 
-ACTOR Lexicon_Firework_Green : Lexicon_Firework_Red     { Translation "192:207=112:127" }
-ACTOR Lexicon_Firework_Blue : Lexicon_Firework_Red      { Translation "192:207=192:207" }
-ACTOR Lexicon_Firework_Cyan : Lexicon_Firework_Red      { Translation "192:207=208:223" } // i didnt think this one through(this is actually orange)
-ACTOR Lexicon_Firework_Yellow : Lexicon_Firework_Red    { Translation "192:207=160:167" }
-ACTOR Lexicon_Firework_Magenta : Lexicon_Firework_Red   { Translation "192:207=250:254" }
-ACTOR Lexicon_Firework_Multi : Lexicon_Firework_Red
+Actor Lexicon_Firework_Green : Lexicon_Firework_Red     { Translation "192:207=112:127" }
+Actor Lexicon_Firework_Blue : Lexicon_Firework_Red      { Translation "192:207=192:207" }
+Actor Lexicon_Firework_Cyan : Lexicon_Firework_Red      { Translation "192:207=208:223" } // i didnt think this one through(this is actually orange)
+Actor Lexicon_Firework_Yellow : Lexicon_Firework_Red    { Translation "192:207=160:167" }
+Actor Lexicon_Firework_Magenta : Lexicon_Firework_Red   { Translation "192:207=250:254" }
+Actor Lexicon_Firework_Multi : Lexicon_Firework_Red
 {
     Translation "192:207=80:111"
     States
@@ -1280,7 +1269,7 @@ ACTOR Lexicon_Firework_Multi : Lexicon_Firework_Red
     }
 }
 
-ACTOR Lexicon_Firework_Particle
+Actor Lexicon_Firework_Particle
 {
     -NOGRAVITY
     +LOWGRAVITY
@@ -1299,14 +1288,14 @@ ACTOR Lexicon_Firework_Particle
     }
 }
 
-ACTOR Lexicon_Firework_Particle_Red : Lexicon_Firework_Particle       { Translation "192:207=112:127" }
-ACTOR Lexicon_Firework_Particle_Green : Lexicon_Firework_Particle     { Translation "192:207=192:107" }
-ACTOR Lexicon_Firework_Particle_Blue : Lexicon_Firework_Particle      { Translation "192:207=192:207" }
-ACTOR Lexicon_Firework_Particle_Cyan : Lexicon_Firework_Particle      { Translation "192:207=208:223" }
-ACTOR Lexicon_Firework_Particle_Yellow : Lexicon_Firework_Particle    { Translation "192:207=160:167" }
-ACTOR Lexicon_Firework_Particle_Magenta : Lexicon_Firework_Particle   { Translation "192:207=250:254" }
+Actor Lexicon_Firework_Particle_Red : Lexicon_Firework_Particle       { Translation "192:207=112:127" }
+Actor Lexicon_Firework_Particle_Green : Lexicon_Firework_Particle     { Translation "192:207=192:107" }
+Actor Lexicon_Firework_Particle_Blue : Lexicon_Firework_Particle      { Translation "192:207=192:207" }
+Actor Lexicon_Firework_Particle_Cyan : Lexicon_Firework_Particle      { Translation "192:207=208:223" }
+Actor Lexicon_Firework_Particle_Yellow : Lexicon_Firework_Particle    { Translation "192:207=160:167" }
+Actor Lexicon_Firework_Particle_Magenta : Lexicon_Firework_Particle   { Translation "192:207=250:254" }
 
-ACTOR Lexicon_Firework_Trail
+Actor Lexicon_Firework_Trail
 {
     scale 0.4
     +NOGRAVITY
@@ -1328,9 +1317,7 @@ ACTOR Lexicon_Firework_Trail
     }
 }
 
-
-
-ACTOR Lexicon_VoteGun : DoomWeapon
+Actor Lexicon_VoteGun : DoomWeapon
 {
   Weapon.SelectionOrder 1
   Weapon.AmmoUse 0
@@ -1364,7 +1351,7 @@ ACTOR Lexicon_VoteGun : DoomWeapon
   }
 }
 
-ACTOR Lexicon_VR_GravityWell_Blue 30000
+Actor Lexicon_VR_GravityWell_Blue 30000
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1377,7 +1364,7 @@ ACTOR Lexicon_VR_GravityWell_Blue 30000
   }
 }
 
-ACTOR Lexicon_VR_Line_Blue
+Actor Lexicon_VR_Line_Blue
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1392,7 +1379,7 @@ ACTOR Lexicon_VR_Line_Blue
   }
 }
 
-ACTOR Lexicon_VR_GravityWell_Red 30001
+Actor Lexicon_VR_GravityWell_Red 30001
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1405,7 +1392,7 @@ ACTOR Lexicon_VR_GravityWell_Red 30001
   }
 }
 
-ACTOR Lexicon_VR_Line_Red
+Actor Lexicon_VR_Line_Red
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1420,7 +1407,7 @@ ACTOR Lexicon_VR_Line_Red
   }
 }
 
-ACTOR Lexicon_VR_GravityWell_Green 30002
+Actor Lexicon_VR_GravityWell_Green 30002
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1433,7 +1420,7 @@ ACTOR Lexicon_VR_GravityWell_Green 30002
   }
 }
 
-ACTOR Lexicon_VR_Line_Green
+Actor Lexicon_VR_Line_Green
 {
   +NOINTERACTION
   +CLIENTSIDEONLY
@@ -1448,7 +1435,7 @@ ACTOR Lexicon_VR_Line_Green
   }
 }
 
-actor Lexicon_GodMode : PowerupGiver
+Actor Lexicon_GodMode : PowerupGiver
 {
     inventory.usesound ""
     inventory.maxamount 1
@@ -1464,8 +1451,7 @@ actor Lexicon_GodMode : PowerupGiver
     powerup.type PowerInvulnerable
 }
 
-
-ACTOR Lexicon_InstaKiller : DoomWeapon
+Actor Lexicon_InstaKiller : DoomWeapon
 {
   Weapon.SelectionOrder 1
   Weapon.AmmoUse 0
@@ -1497,7 +1483,7 @@ ACTOR Lexicon_InstaKiller : DoomWeapon
   }
 }
 
-ACTOR IKPuff :BulletPuff
+Actor IKPuff :BulletPuff
 {
   -ALLOWPARTICLES
   RenderStyle Translucent
@@ -1556,7 +1542,7 @@ Actor TitleMapLexiconLight3 // no doomednum
     }
 }
 
-actor HeckCube : SwitchableDecoration 16666
+Actor HeckCube : SwitchableDecoration 16666
 {
     +NOGRAVITY
     +SOLID
@@ -1583,13 +1569,11 @@ actor HeckCube : SwitchableDecoration 16666
     }
 }
 
-
-
 ////////////////////
 // Shai'tans Luck //
 ////////////////////
 
-actor SLCactus     20301
+Actor SLCactus     20301
 {
   Tag "SLCactus"
   Height 60
@@ -1604,7 +1588,7 @@ actor SLCactus     20301
   }
 }
 
-actor SLStone 20302
+Actor SLStone 20302
 {
   Tag "SLStone"
   +NOGRAVITY
@@ -1616,7 +1600,7 @@ actor SLStone 20302
   }
 }
 
-actor SLTree 20303
+Actor SLTree 20303
 {
   Tag "SLTree"
   Height 60
@@ -1631,7 +1615,7 @@ actor SLTree 20303
   }
 }
 
-actor SLPalm 20304
+Actor SLPalm 20304
 {
   Tag "SLPalm"
   Height 60
@@ -1650,9 +1634,7 @@ actor SLPalm 20304
 // Combat Shock 2 //
 ////////////////////
 
-
-//reverted to original
-ACTOR CS2ShotgunGuy : ShotgunGuy 20307//9
+Actor CS2ShotgunGuy : ShotgunGuy 20307//9
 {
   States
   {
@@ -1692,9 +1674,7 @@ ACTOR CS2ShotgunGuy : ShotgunGuy 20307//9
   }
 }
 
-
-//reverted to original
-ACTOR CS2ZombieMan : ZombieMan 20308 //3004
+Actor CS2ZombieMan : ZombieMan 20308 //3004
 {
   States
   {
@@ -1734,10 +1714,7 @@ ACTOR CS2ZombieMan : ZombieMan 20308 //3004
   }
 }
 
-
-
-//reverted to original
-ACTOR CS2ChaingunGuy : ChaingunGuy 20309//65
+Actor CS2ChaingunGuy : ChaingunGuy 20309//65
 {
   States
   {
@@ -1781,7 +1758,7 @@ ACTOR CS2ChaingunGuy : ChaingunGuy 20309//65
 // Kamasutra //
 ///////////////
 
-actor MotherFucker 2033
+Actor MotherFucker 2033
 {
       MONSTER
       obituary "%o was fucked by a MotherFucker."
@@ -1896,8 +1873,7 @@ Actor Afrit 20306
   }
 }
 
-//reverted to original
-actor EvilMarine : WolfensteinSS 20305 //84
+Actor EvilMarine : WolfensteinSS 20305 //84
 {
   Obituary "%o was killed by an evil marine."
   Health 250
@@ -1960,7 +1936,7 @@ actor EvilMarine : WolfensteinSS 20305 //84
 
 //Monsters//
 
-ACTOR "Demon Smith" 20316
+Actor "Demon Smith" 20316
 {
   Health 2500
   Radius 24
@@ -2017,7 +1993,7 @@ ACTOR "Demon Smith" 20316
   }
 }
 
-ACTOR "Vile Heart" 20317
+Actor "Vile Heart" 20317
 {
   Health 1250
   Mass 10000000
@@ -2048,7 +2024,7 @@ ACTOR "Vile Heart" 20317
   }
 }
 
-ACTOR "The Protector" 20318
+Actor "The Protector" 20318
 {
   Health 8000
   Painchance 255
@@ -2083,7 +2059,7 @@ ACTOR "The Protector" 20318
 
 //Decorations//
 
-ACTOR "Swaying Body 2" 20319
+Actor "Swaying Body 2" 20319
 {
   Radius 16
   Height 68
@@ -2102,18 +2078,12 @@ ACTOR "Swaying Body 2" 20319
     }
 }
 
-
 //////////////////////////
 //// Circle of Caina /////
 //////////////////////////
 
-
-ACTOR COCStalagtite : Stalagtite 25001 //47
+Actor COCStalagtite : Stalagtite 25001 //47
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2122,12 +2092,8 @@ ACTOR COCStalagtite : Stalagtite 25001 //47
   }
 }
 
-ACTOR COCShortGreenTorch : ShortGreenTorch 25002
+Actor COCShortGreenTorch : ShortGreenTorch 25002
 {
-  Radius 16
-  Height 37
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2136,12 +2102,8 @@ ACTOR COCShortGreenTorch : ShortGreenTorch 25002
   }
 }
 
-ACTOR COCSkullColumn : SkullColumn 25003
+Actor COCSkullColumn : SkullColumn 25003
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2150,12 +2112,8 @@ ACTOR COCSkullColumn : SkullColumn 25003
   }
 }
 
-ACTOR COCTallGreenColumn : TallGreenColumn 25004
+Actor COCTallGreenColumn : TallGreenColumn 25004
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2164,12 +2122,8 @@ ACTOR COCTallGreenColumn : TallGreenColumn 25004
   }
 }
 
-ACTOR COCShortGreenColumn : ShortGreenColumn 25005
+Actor COCShortGreenColumn : ShortGreenColumn 25005
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2178,12 +2132,8 @@ ACTOR COCShortGreenColumn : ShortGreenColumn 25005
   }
 }
 
-ACTOR COCGreenTorch : GreenTorch 25006
+Actor COCGreenTorch : GreenTorch 25006
 {
-  Radius 16
-  Height 68
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2196,12 +2146,8 @@ ACTOR COCGreenTorch : GreenTorch 25006
 ///// Forest Swords //////
 //////////////////////////
 
-ACTOR FSWTallRedColumn : TallRedColumn 25007 // 32
+Actor FSWTallRedColumn : TallRedColumn 25007 // 32
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2210,12 +2156,8 @@ ACTOR FSWTallRedColumn : TallRedColumn 25007 // 32
   }
 }
 
-ACTOR FSWSkullColumn : SkullColumn 25008 // 37
+Actor FSWSkullColumn : SkullColumn 25008 // 37
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2224,12 +2166,8 @@ ACTOR FSWSkullColumn : SkullColumn 25008 // 37
   }
 }
 
-ACTOR FSWShortRedColumn : ShortRedColumn 25009 // 33
+Actor FSWShortRedColumn : ShortRedColumn 25009 // 33
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2238,13 +2176,8 @@ ACTOR FSWShortRedColumn : ShortRedColumn 25009 // 33
   }
 }
 
-ACTOR FSWHangTLookingDown : HangTLookingDown 25010 // 75
+Actor FSWHangTLookingDown : HangTLookingDown 25010 // 75
 {
-  Radius 16
-  Height 64
-  +SOLID
-  +NOGRAVITY
-  +SPAWNCEILING
   States
   {
   Spawn:
@@ -2253,13 +2186,8 @@ ACTOR FSWHangTLookingDown : HangTLookingDown 25010 // 75
   }
 }
 
-ACTOR FSWHangTLookingUp : HangTLookingUp 25011 // 77
+Actor FSWHangTLookingUp : HangTLookingUp 25011 // 77
 {
-  Radius 16
-  Height 64
-  +SOLID
-  +NOGRAVITY
-  +SPAWNCEILING
   States
   {
   Spawn:
@@ -2268,13 +2196,8 @@ ACTOR FSWHangTLookingUp : HangTLookingUp 25011 // 77
   }
 }
 
-ACTOR FSWHangTSkull : HangTSkull 25012 // 76
+Actor FSWHangTSkull : HangTSkull 25012 // 76
 {
-  Radius 16
-  Height 64
-  +SOLID
-  +NOGRAVITY
-  +SPAWNCEILING
   States
   {
   Spawn:
@@ -2283,12 +2206,8 @@ ACTOR FSWHangTSkull : HangTSkull 25012 // 76
   }
 }
 
-ACTOR FSWDeadStick : DeadStick 25064 // 25
+Actor FSWDeadStick : DeadStick 25064 // 25
 {
-  Radius 16
-  Height 64
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -2301,7 +2220,7 @@ ACTOR FSWDeadStick : DeadStick 25064 // 25
 ///// Dark Tartarus //////
 //////////////////////////
 
-actor TAT__MegaMap : CustomInventory 32507
+Actor TAT__MegaMap : CustomInventory 32507
 {
 //$Category Powerups
   +COUNTITEM
@@ -2324,7 +2243,7 @@ actor TAT__MegaMap : CustomInventory 32507
   }
 }
 
-actor TAT__DoomScanner : PowerupGiver
+Actor TAT__DoomScanner : PowerupGiver
 {
   powerup.type "Scanner"
   +INVENTORY.AUTOACTIVATE
@@ -2338,7 +2257,7 @@ actor TAT__DoomScanner : PowerupGiver
   }
 }
 
-ACTOR TAT__SuperBoss 32508
+Actor TAT__SuperBoss 32508
 {
 //$Category Monsters
   BloodColor Green
@@ -2546,8 +2465,7 @@ states
   }
 }
 
-
-ACTOR TAT__SuperBoss2 : TAT__SuperBoss
+Actor TAT__SuperBoss2 : TAT__SuperBoss
 {
   DropItem "BlueSkull"
   PainChance 15
@@ -2756,8 +2674,7 @@ states
   }
 }
 
-
-ACTOR TAT__SuperBoss3 : TAT__SuperBoss
+Actor TAT__SuperBoss3 : TAT__SuperBoss
 {
   DropItem "YellowSkull"
   PainChance 10
@@ -2927,7 +2844,7 @@ states
   }
 }
 
-ACTOR TAT__SuperBoss4 : TAT__SuperBoss
+Actor TAT__SuperBoss4 : TAT__SuperBoss
 {
   DropItem "MegaSphere"
   PainChance 7
@@ -3175,8 +3092,7 @@ states
   }
 }
 
-
-ACTOR TAT__SuperBoss5 : TAT__SuperBoss
+Actor TAT__SuperBoss5 : TAT__SuperBoss
 {
   DropItem "RedCard"
   DropItem "BlueCard"
@@ -3500,11 +3416,7 @@ states
   }
 }
 
-
-
-
-
-ACTOR TAT__Fire
+Actor TAT__Fire
 {
  +NoGravity +NoBlockmap +NoTeleport +DontSplash
  +NOINTERACTION
@@ -3522,21 +3434,19 @@ ACTOR TAT__Fire
   }
 }
 
-ACTOR TAT__DarkFire : TAT__Fire
+Actor TAT__DarkFire : TAT__Fire
 {
 Translation "160:167=80:111"
 }
 
 
-ACTOR TAT__GreenFire : TAT__Fire
+Actor TAT__GreenFire : TAT__Fire
 {
 Translation "160:167=112:119"
 Scale 0.5
 }
 
-
-
-ACTOR TAT__GreenFireBig : TAT__GreenFire
+Actor TAT__GreenFireBig : TAT__GreenFire
 {
   Scale 1.0
   States
@@ -3549,7 +3459,7 @@ ACTOR TAT__GreenFireBig : TAT__GreenFire
   }
 }
 
-ACTOR TAT__BossFade : TAT__GreenFire
+Actor TAT__BossFade : TAT__GreenFire
 {
   Translation "48:63=80:95", "64:79=96:111", "208:223=80:95", "128:143=92:111",
   "144:151=104:111", "13:15=0:2", "236:239=5:8", "160:167=112:127", "224:231=112:119",
@@ -3700,7 +3610,7 @@ Actor TAT__Kamikaze
   }
 }
 
-ACTOR TAT__KamikazeFade : TAT__BossFade
+Actor TAT__KamikazeFade : TAT__BossFade
 {
 Translation "169:191=112:127", "160:167=112:127", "209:223=112:120", "232:235=120:124", "16:47=112:127"
 Alpha 0.9
@@ -3713,7 +3623,7 @@ Alpha 0.9
   }
 }
 
-ACTOR TAT__BlackDeath : Revenant
+Actor TAT__BlackDeath : Revenant
 {
   PainChance 25
   Health 1500
@@ -3819,7 +3729,7 @@ ACTOR TAT__BlackDeath : Revenant
     }
 }
 
-ACTOR TAT__DiscoImpSpawner : RandomSpawner 32509
+Actor TAT__DiscoImpSpawner : RandomSpawner 32509
 {
 //$Category Monsters
 +ISMONSTER
@@ -3834,8 +3744,7 @@ DropItem "TAT__DiscoImpOrange" 256 1
 }
 
 
-
-ACTOR TAT__DiscoImp : DoomImp
+Actor TAT__DiscoImp : DoomImp
 {
   Health 1000
   GibHealth -100
@@ -4059,44 +3968,42 @@ states
   }
 }
 
-ACTOR TAT__DiscoImpRed : TAT__DiscoImp
+Actor TAT__DiscoImpRed : TAT__DiscoImp
 {
   Translation "64:79=176:191"
 }
 
-ACTOR TAT__DiscoImpGreen : TAT__DiscoImp
+Actor TAT__DiscoImpGreen : TAT__DiscoImp
 {
   Translation "64:79=112:127"
 }
 
-ACTOR TAT__DiscoImpBlue : TAT__DiscoImp
+Actor TAT__DiscoImpBlue : TAT__DiscoImp
 {
   Translation "64:79=192:207"
 }
 
-ACTOR TAT__DiscoImpBlood : TAT__DiscoImp
+Actor TAT__DiscoImpBlood : TAT__DiscoImp
 {
   Translation "64:79=16:47"
 }
 
-ACTOR TAT__DiscoImpGold : TAT__DiscoImp
+Actor TAT__DiscoImpGold : TAT__DiscoImp
 {
   Translation "64:71=224:231", "72:79=160:167"
 }
 
-ACTOR TAT__DiscoImpBrown : TAT__DiscoImp
+Actor TAT__DiscoImpBrown : TAT__DiscoImp
 {
   Translation "64:79=128:143"
 }
 
-ACTOR TAT__DiscoImpOrange : TAT__DiscoImp
+Actor TAT__DiscoImpOrange : TAT__DiscoImp
 {
   Translation "64:79=208:223"
 }
 
-
-
-ACTOR TAT__PracticeTargets  : ZombieMan 32510
+Actor TAT__PracticeTargets  : ZombieMan 32510
 {
 //$Category Monsters
   Speed 8
@@ -4157,7 +4064,7 @@ states
   }
 }
 
-ACTOR TAT__DeadZombie
+Actor TAT__DeadZombie
 {
   Gravity 1.25
   +NoTeleport
@@ -4176,7 +4083,7 @@ ACTOR TAT__DeadZombie
   }
 }
 
-ACTOR TAT__GibZombie : TAT__DeadZombie
+Actor TAT__GibZombie : TAT__DeadZombie
 {
   States
   {
@@ -4190,8 +4097,7 @@ ACTOR TAT__GibZombie : TAT__DeadZombie
   }
 }
 
-
-ACTOR TAT__TkBarrel : ExplosiveBarrel 32511
+Actor TAT__TkBarrel : ExplosiveBarrel 32511
 {
 Translation "112:124=168:191"
 Health 500000
@@ -4221,7 +4127,7 @@ states
   }
 }
 
-ACTOR TAT__TkExplosion : Rocket
+Actor TAT__TkExplosion : Rocket
 {
 Speed 0
 ReactionTime 1
@@ -4238,8 +4144,7 @@ states
   }
 }
 
-
-ACTOR TAT__CyberSpider : SpiderMastermind 32512
+Actor TAT__CyberSpider : SpiderMastermind 32512
 {
 //$Category Monsters
 Height 180
@@ -4410,7 +4315,7 @@ Translation "168:191=112:127"
     }
 }
 
-ACTOR TAT__CyberSpider2 : TAT__CyberSpider
+Actor TAT__CyberSpider2 : TAT__CyberSpider
 {
 +QUICKTORETALIATE
 Health 12500
@@ -4581,7 +4486,7 @@ PainChance 15
     }
 }
 
-ACTOR TAT__CyberSpider3 : TAT__CyberSpider2
+Actor TAT__CyberSpider3 : TAT__CyberSpider2
 {
 Health 15000
 Speed 24
@@ -4647,7 +4552,6 @@ PainChance 10
     }
 }
 
-
 Actor TAT__CyberSpawner : TAT__BossSpawner
 {
   Speed 0
@@ -4672,10 +4576,7 @@ Actor TAT__CyberSpawner : TAT__BossSpawner
   }
 }
 
-
-
-
-ACTOR TAT__SpiderCyber : Cyberdemon
+Actor TAT__SpiderCyber : Cyberdemon
 {
 +QUICKTORETALIATE
 Scale 0.75
@@ -4855,9 +4756,6 @@ Actor TAT__CyberFadeD : TAT__CyberFadeA
     }
 }
 
-
-
-
 Actor TAT__CyberFrameB : TAT__CyberFrameA
 {
     States
@@ -4926,7 +4824,7 @@ Actor TAT__CyberFrameG : TAT__CyberFrameA
 }
 
 
-ACTOR TAT__AwesomeSphere : Health
+Actor TAT__AwesomeSphere : Health
 {
   Game Doom
   +COUNTITEM
@@ -5051,7 +4949,7 @@ Death:
 ////               ////
 ///////////////////////
 
-ACTOR HPCommanderKeen : CommanderKeen 25013 //72
+Actor HPCommanderKeen : CommanderKeen 25013 //72
 {
   Health 100
   Radius 16
@@ -5188,17 +5086,8 @@ Actor BowserCoop : BossBrain 25016 //88
     }
 }
 
-
-
-//reverted to original
-ACTOR Mayhem17Soulsphere : Soulsphere 25018 //2013
+Actor Mayhem17Soulsphere : Soulsphere 25018 //2013
 {
-  +COUNTITEM
-  +INVENTORY.AUTOACTIVATE
-  +INVENTORY.ALWAYSPICKUP
-  +INVENTORY.FANCYPICKUPSOUND
-  Inventory.Amount 100
-  Inventory.MaxAmount 200
   Inventory.PickupMessage "Super shroom!" // "Supercharge!"
   Inventory.PickupSound "mayhem17/p_pkup"
   States
@@ -5209,13 +5098,8 @@ ACTOR Mayhem17Soulsphere : Soulsphere 25018 //2013
   }
 }
 
-
-
-//reverted to original
-ACTOR Mayhem17Megasphere : Megasphere 25019 //83
+Actor Mayhem17Megasphere : Megasphere 25019 //83
 {
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
   Inventory.PickupMessage "Mega shroom!" // "MegaSphere!"
   Inventory.PickupSound "mayhem17/p_pkup"
   States
@@ -5223,49 +5107,17 @@ ACTOR Mayhem17Megasphere : Megasphere 25019 //83
   Spawn:
     17GA ABCD 6 Bright
     Loop
-  Pickup:
-    TNT1 A 0 A_GiveInventory("BlueArmorForMegasphere", 1)
-    TNT1 A 0 A_GiveInventory("MegasphereHealth", 1)
-    Stop
   }
 }
 
-
-
-//reverted to original
-ACTOR Mayhem17Berserk : Berserk 25020 //2023
+Actor Mayhem17Berserk : Berserk 25020 //2023
 {
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
-  Inventory.PickupMessage "$GOTBERSERK" // "Berserk!"
   Inventory.PickupSound "mayhem17/p_pkup"
-  States
-  {
-  Spawn:
-    PSTR A -1
-    Stop
-  Pickup:
-    TNT1 A 0 A_GiveInventory("PowerStrength")
-    TNT1 A 0 HealThing(100, 0)
-    TNT1 A 0 A_SelectWeapon("Fist")
-    Stop
-  }
 }
 
-
-
-//reverted to original
-ACTOR MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
+Actor MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
 {
-  +COUNTITEM
-  +INVENTORY.AUTOACTIVATE
-  +INVENTORY.ALWAYSPICKUP
-  +INVENTORY.BIGPOWERUP
-  Inventory.MaxAmount 0
-  Powerup.Type "Invulnerable"
   Inventory.PickupSound "mayhem17/p_pkup"
-  Powerup.Color InverseMap
-  Inventory.PickupMessage "$GOTINVUL" // "Invulnerability!"
   States
   {
   Spawn:
@@ -5274,19 +5126,9 @@ ACTOR MayhemInvulnSphere : InvulnerabilitySphere 25021 //2022
   }
 }
 
-
-ACTOR Mayhem17BlurSphere : BlurSphere 25022 //2024
+Actor Mayhem17BlurSphere : BlurSphere 25022 //2024
 {
-  +COUNTITEM
-  +VISIBILITYPULSE
-  +INVENTORY.AUTOACTIVATE
-  +INVENTORY.ALWAYSPICKUP
-  +INVENTORY.BIGPOWERUP
-  Inventory.MaxAmount 0
   Inventory.PickupSound "mayhem17/p_pkup"
-  Powerup.Type "Invisibility"
-  RenderStyle Translucent
-  Inventory.PickupMessage "$GOTINVIS" // "Partial Invisibility"
   States
   {
   Spawn:
@@ -5295,14 +5137,8 @@ ACTOR Mayhem17BlurSphere : BlurSphere 25022 //2024
   }
 }
 
-
-//reverted to original
-ACTOR Mayhem17HealthBonus : HealthBonus 25023 //2014
+Actor Mayhem17HealthBonus : HealthBonus 25023 //2014
 {
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
-  Inventory.Amount 1
-  Inventory.MaxAmount 200
   Inventory.PickupMessage "Picked up a health coin."
   Inventory.PickupSound "mayhem17/i_pkup"
   States
@@ -5313,20 +5149,10 @@ ACTOR Mayhem17HealthBonus : HealthBonus 25023 //2014
   }
 }
 
-
-//reverted to original
-ACTOR Mayhem17ArmorBonus : ArmorBonus 25024 //2015
+Actor Mayhem17ArmorBonus : ArmorBonus 25024 //2015
 {
-  Radius 20
-  Height 16
   Inventory.PickupMessage "Picked up an armor coin." // "Picked up an armor bonus."
-  Inventory.Icon "ARM1A0"
   Inventory.PickupSound "mayhem17/i_pkup"
-  Armor.SavePercent 33.335
-  Armor.SaveAmount 1
-  Armor.MaxSaveAmount 200
-  +COUNTITEM
-  +INVENTORY.ALWAYSPICKUP
   States
   {
   Spawn:
@@ -5335,35 +5161,19 @@ ACTOR Mayhem17ArmorBonus : ArmorBonus 25024 //2015
   }
 }
 
-
-//reverted to original
-ACTOR Mayhem17GreenArmor : GreenArmor 25025 //2018
+Actor Mayhem17GreenArmor : GreenArmor 25025 //2018
 {
-  Radius 20
-  Height 16
-  Inventory.PickupMessage "$GOTARMOR" // "Picked up the armor."
-  Inventory.Icon "ARM1A0"
-  Armor.SavePercent 33.335
-  Armor.SaveAmount 100
   States
   {
   Spawn:
     7RM1 A 6
-    7RM1 B 7 Bright
+    7RM1 B 6 Bright
     Loop
   }
 }
 
-
-//reverted to original
-ACTOR Mayhem17BlueArmor : BlueArmor 25026 //2019
+Actor Mayhem17BlueArmor : BlueArmor 25026 //2019
 {
-  Radius 20
-  Height 16
-  Inventory.PickupMessage "$GOTMEGA" // "Picked up the MegaArmor!"
-  Inventory.Icon "ARM2A0"
-  Armor.SavePercent 50
-  Armor.SaveAmount 200
   States
   {
   Spawn:
@@ -5373,12 +5183,8 @@ ACTOR Mayhem17BlueArmor : BlueArmor 25026 //2019
   }
 }
 
-ACTOR Mayhem17BrainStem : BrainStem 25027 //81
+Actor Mayhem17BrainStem : BrainStem 25027 //81
 {
-  Radius 20
-  Height 4
-  +NOBLOCKMAP
-  +MOVEWITHSECTOR
   States
   {
   Spawn:
@@ -5386,12 +5192,9 @@ ACTOR Mayhem17BrainStem : BrainStem 25027 //81
     Stop
   }
 }
-ACTOR Mayhem17EvilEye : EvilEye 25029 //41
+
+Actor Mayhem17EvilEye : EvilEye 25029 //41
 {
-  Radius 16
-  Height 54
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5400,12 +5203,8 @@ ACTOR Mayhem17EvilEye : EvilEye 25029 //41
   }
 }
 
-ACTOR Mayhem17ShortGreenColumn : ShortGreenColumn 25030 //31
+Actor Mayhem17ShortGreenColumn : ShortGreenColumn 25030 //31
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5414,12 +5213,8 @@ ACTOR Mayhem17ShortGreenColumn : ShortGreenColumn 25030 //31
   }
 }
 
-ACTOR Mayhem17HeartColumn : HeartColumn 25031 //36
+Actor Mayhem17HeartColumn : HeartColumn 25031 //36
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5428,12 +5223,8 @@ ACTOR Mayhem17HeartColumn : HeartColumn 25031 //36
   }
 }
 
-ACTOR Mayhem17SkullColumn : SkullColumn 25032 //37
+Actor Mayhem17SkullColumn : SkullColumn 25032 //37
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5442,12 +5233,8 @@ ACTOR Mayhem17SkullColumn : SkullColumn 25032 //37
   }
 }
 
-ACTOR Mayhem17ShortRedColumn : ShortRedColumn 25033 //33
+Actor Mayhem17ShortRedColumn : ShortRedColumn 25033 //33
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5456,12 +5243,8 @@ ACTOR Mayhem17ShortRedColumn : ShortRedColumn 25033 //33
   }
 }
 
-ACTOR Mayhem17TallRedColumn : TallRedColumn 25034 //32
+Actor Mayhem17TallRedColumn : TallRedColumn 25034 //32
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5470,12 +5253,8 @@ ACTOR Mayhem17TallRedColumn : TallRedColumn 25034 //32
   }
 }
 
-ACTOR Mayhem17TallGreenColumn : TallGreenColumn 25035 //30
+Actor Mayhem17TallGreenColumn : TallGreenColumn 25035 //30
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5484,12 +5263,8 @@ ACTOR Mayhem17TallGreenColumn : TallGreenColumn 25035 //30
   }
 }
 
-ACTOR Mayhem17TechPillar : TechPillar 25036 //48
+Actor Mayhem17TechPillar : TechPillar 25036 //48
 {
-  Radius 16
-  Height 128
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5498,13 +5273,8 @@ ACTOR Mayhem17TechPillar : TechPillar 25036 //48
   }
 }
 
-ACTOR Mayhem17Torch : BloodyTwitch 25037 //49
+Actor Mayhem17Torch : BloodyTwitch 25037 //49
 {
-  Radius 16
-  Height 68
-  +SOLID
-  +NOGRAVITY
-  +SPAWNCEILING
   States
   {
   Spawn:
@@ -5516,12 +5286,8 @@ ACTOR Mayhem17Torch : BloodyTwitch 25037 //49
   }
 }
 
-ACTOR Mayhem17TallPlant : ColonGibs 25038 //79
+Actor Mayhem17TallPlant : ColonGibs 25038 //79
 {
-  Radius 20
-  Height 4
-  +NOBLOCKMAP
-  +MOVEWITHSECTOR
   States
   {
   Spawn:
@@ -5530,12 +5296,8 @@ ACTOR Mayhem17TallPlant : ColonGibs 25038 //79
   }
 }
 
-ACTOR Mayhem17Pillar : HeadOnAStick 25039 //27
+Actor Mayhem17Pillar : HeadOnAStick 25039 //27
 {
-  Radius 16
-  Height 56
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5544,12 +5306,8 @@ ACTOR Mayhem17Pillar : HeadOnAStick 25039 //27
   }
 }
 
-ACTOR Mayhem17QBall : HeadsOnAStick 25040 //28
+Actor Mayhem17QBall : HeadsOnAStick 25040 //28
 {
-  Radius 16
-  Height 64
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5558,12 +5316,8 @@ ACTOR Mayhem17QBall : HeadsOnAStick 25040 //28
   }
 }
 
-ACTOR Mayhem17PlantTaller : DeadStick 25041 //25
+Actor Mayhem17PlantTaller : DeadStick 25041 //25
 {
-  Radius 16
-  Height 64
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5572,12 +5326,8 @@ ACTOR Mayhem17PlantTaller : DeadStick 25041 //25
   }
 }
 
-ACTOR Mayhem17ChomperThings : LiveStick 25042 //26
+Actor Mayhem17ChomperThings : LiveStick 25042 //26
 {
-  Radius 16
-  Height 64
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5588,12 +5338,8 @@ ACTOR Mayhem17ChomperThings : LiveStick 25042 //26
 }
 
 
-ACTOR Mayhem17Stalagtite : Stalagtite 25044 //47
+Actor Mayhem17Stalagtite : Stalagtite 25044 //47
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5602,12 +5348,8 @@ ACTOR Mayhem17Stalagtite : Stalagtite 25044 //47
   }
 }
 
-ACTOR Mayhem17ShortRedTorch : ShortRedTorch 25045 //57
+Actor Mayhem17ShortRedTorch : ShortRedTorch 25045 //57
 {
-  Radius 16
-  Height 37
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5616,12 +5358,8 @@ ACTOR Mayhem17ShortRedTorch : ShortRedTorch 25045 //57
   }
 }
 
-ACTOR Mayhem17BigTree : BigTree 25046 //54
+Actor Mayhem17BigTree : BigTree 25046 //54
 {
-  Radius 32
-  Height 108
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5630,12 +5368,8 @@ ACTOR Mayhem17BigTree : BigTree 25046 //54
   }
 }
 
-ACTOR Mayhem17SmallTree : TorchTree 25047 //43
+Actor Mayhem17SmallTree : TorchTree 25047 //43
 {
-  Radius 16
-  Height 56
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5644,12 +5378,8 @@ ACTOR Mayhem17SmallTree : TorchTree 25047 //43
   }
 }
 
-ACTOR Mayhem17RedTorch : RedTorch 25048 //46
+Actor Mayhem17RedTorch : RedTorch 25048 //46
 {
-  Radius 16
-  Height 68
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5658,7 +5388,7 @@ ACTOR Mayhem17RedTorch : RedTorch 25048 //46
   }
 }
 
-ACTOR Mayhem17BlueKey : Key 25028 //40
+Actor Mayhem17BlueKey : Key 25028 //40
 {
   Inventory.PickupMessage "Picked up a blue key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5672,7 +5402,7 @@ ACTOR Mayhem17BlueKey : Key 25028 //40
   }
 }
 
-ACTOR Mayhem17RedKey : Key 25043 //38
+Actor Mayhem17RedKey : Key 25043 //38
 {
   Inventory.PickupMessage "Picked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5686,7 +5416,7 @@ ACTOR Mayhem17RedKey : Key 25043 //38
   }
 }
 
-ACTOR Mayhem17YellowKey : Key 25049 //39
+Actor Mayhem17YellowKey : Key 25049 //39
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5700,7 +5430,7 @@ ACTOR Mayhem17YellowKey : Key 25049 //39
   }
 }
 
-ACTOR Mayhem17RedCoin : Key 25017 //13
+Actor Mayhem17RedCoin : Key 25017 //13
 {
   +INVENTORY.NEVERRESPAWN
   Inventory.PickupMessage "A mysterious red coin..."
@@ -5714,8 +5444,6 @@ ACTOR Mayhem17RedCoin : Key 25017 //13
     Loop
   }
 }
-
-
 
 Actor Bowser : CommanderKeen 25050 //72
 {
@@ -5774,25 +5502,14 @@ Actor Bowser : CommanderKeen 25050 //72
 }
 
 ////////////////////////////////
-////                           ////
+////                        ////
 ////        Sunlust         ////
-//// Fuck this was painfull    ////
+//// Fuck this was painfull ////
 ////                        ////
 ////////////////////////////////
 
-ACTOR SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
+Actor SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
 {
-  Health 20
-  Radius 10
-  Height 42
-  +SOLID
-  +SHOOTABLE
-  +NOBLOOD
-  +ACTIVATEMCROSS
-  +DONTGIB
-  +NOICEDEATH
-  +OLDRADIUSDMG
-  Obituary "$OB_BARREL" // "%o went boom."
   States
   {
   Spawn:
@@ -5810,12 +5527,8 @@ ACTOR SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
   }
 }
 
-ACTOR SunlustTallGreenColumn : TallGreenColumn 25052 //30
+Actor SunlustTallGreenColumn : TallGreenColumn 25052 //30
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5824,12 +5537,8 @@ ACTOR SunlustTallGreenColumn : TallGreenColumn 25052 //30
   }
 }
 
-ACTOR SunlustTallRedColumn : TallRedColumn 25053 //32
+Actor SunlustTallRedColumn : TallRedColumn 25053 //32
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5838,12 +5547,8 @@ ACTOR SunlustTallRedColumn : TallRedColumn 25053 //32
   }
 }
 
-ACTOR SunlustSkullColumn : SkullColumn 25054 //37
+Actor SunlustSkullColumn : SkullColumn 25054 //37
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5852,12 +5557,8 @@ ACTOR SunlustSkullColumn : SkullColumn 25054 //37
   }
 }
 
-ACTOR SunlustBurningBarrel : BurningBarrel 25055 //70
+Actor SunlustBurningBarrel : BurningBarrel 25055 //70
 {
-  Radius 16
-  Height 32
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5866,12 +5567,8 @@ ACTOR SunlustBurningBarrel : BurningBarrel 25055 //70
   }
 }
 
-ACTOR SunlustFloatingSkull : FloatingSkull 25056 //42
+Actor SunlustFloatingSkull : FloatingSkull 25056 //42
 {
-  Radius 16
-  Height 26
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5880,12 +5577,8 @@ ACTOR SunlustFloatingSkull : FloatingSkull 25056 //42
   }
 }
 
-ACTOR SunlustGreenTorch : GreenTorch 25057 //45
+Actor SunlustGreenTorch : GreenTorch 25057 //45
 {
-  Radius 16
-  Height 68
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -5893,8 +5586,6 @@ ACTOR SunlustGreenTorch : GreenTorch 25057 //45
     Loop
   }
 }
-
-
 
 Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 {
@@ -5930,9 +5621,6 @@ Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 ////            ////
 ////////////////////
 
-
-
-//reverted to original
 Actor HLC_WolfensteinSS : WolfensteinSS 25059 //84
 {
     Health 700
@@ -6049,7 +5737,7 @@ Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
  ////                ////
 /////////////////////////
 
-ACTOR DVActor1 : Candlestick 25186//25064//34
+Actor DVActor1 : Candlestick 25186//25064//34
 {
     Radius 6
     Height 32
@@ -6061,7 +5749,7 @@ ACTOR DVActor1 : Candlestick 25186//25064//34
     }
 }
 
-ACTOR DVActor2 : Candelabra 25065//35
+Actor DVActor2 : Candelabra 25065//35
 {
     Radius 11
     Height 58
@@ -6073,7 +5761,7 @@ ACTOR DVActor2 : Candelabra 25065//35
     }
 }
 
-ACTOR DVActor3 : ShortGreenColumn 25066//31
+Actor DVActor3 : ShortGreenColumn 25066//31
 {
     States
     {
@@ -6083,9 +5771,7 @@ ACTOR DVActor3 : ShortGreenColumn 25066//31
     }
 }
 
-
-
-ACTOR DVActor4 : TallRedColumn 25067//32
+Actor DVActor4 : TallRedColumn 25067//32
 {
     States
     {
@@ -6095,7 +5781,7 @@ ACTOR DVActor4 : TallRedColumn 25067//32
     }
 }
 
-ACTOR DVActor5 : ShortRedColumn 25068//33
+Actor DVActor5 : ShortRedColumn 25068//33
 {
     -SOLID
     Radius 2
@@ -6107,7 +5793,7 @@ ACTOR DVActor5 : ShortRedColumn 25068//33
     }
 }
 
-ACTOR DVActor6 : HeartColumn 25069//36
+Actor DVActor6 : HeartColumn 25069//36
 {
     States
     {
@@ -6117,7 +5803,7 @@ ACTOR DVActor6 : HeartColumn 25069//36
     }
 }
 
-ACTOR DVActor7 : SkullColumn 25070//37
+Actor DVActor7 : SkullColumn 25070//37
 {
     Height 128
     States
@@ -6128,8 +5814,7 @@ ACTOR DVActor7 : SkullColumn 25070//37
     }
 }
 
-
-ACTOR DVActor8 : Column 25071//2028
+Actor DVActor8 : Column 25071//2028
 {
     States
     {
@@ -6139,7 +5824,7 @@ ACTOR DVActor8 : Column 25071//2028
     }
 }
 
-ACTOR DVActor9 : TechPillar 25072//48
+Actor DVActor9 : TechPillar 25072//48
 {
     States
     {
@@ -6149,7 +5834,7 @@ ACTOR DVActor9 : TechPillar 25072//48
     }
 }
 
-ACTOR DVActor10 : NonsolidMeat5 25149//62
+Actor DVActor10 : NonsolidMeat5 25149//62
 {
     States
     {
@@ -6159,7 +5844,7 @@ ACTOR DVActor10 : NonsolidMeat5 25149//62
     }
 }
 
-ACTOR DVActor11 : HeadOnAStick 25148//27
+Actor DVActor11 : HeadOnAStick 25148//27
 {
     Radius 32
     Height 256
@@ -6171,7 +5856,7 @@ ACTOR DVActor11 : HeadOnAStick 25148//27
     }
 }
 
-ACTOR DVActor12 : Stalagtite 25147//47
+Actor DVActor12 : Stalagtite 25147//47
 {
     Height 128
     States
@@ -6182,7 +5867,7 @@ ACTOR DVActor12 : Stalagtite 25147//47
     }
 }
 
-ACTOR DVActor13 : TechLamp 25146//85
+Actor DVActor13 : TechLamp 25146//85
 {
     Radius 4
     Height 192
@@ -6194,7 +5879,7 @@ ACTOR DVActor13 : TechLamp 25146//85
     }
 }
 
-ACTOR DVActor14 : TechLamp2 25145//86
+Actor DVActor14 : TechLamp2 25145//86
 {
     Radius 4
     Height 72
@@ -6205,7 +5890,6 @@ ACTOR DVActor14 : TechLamp2 25145//86
         Loop
     }
 }
-
 
 Actor DVActor15 25144//23
 {
@@ -6250,7 +5934,6 @@ Actor DVActor15 25144//23
         Goto See
     Melee:
         CLER E 0 A_PlaySound("ClericSwing",CHAN_WEAPON)
-        CLER E 0 A_Recoil(-4)
         CLER EF 2 A_FaceTarget
         CLER G 6 A_CustomMeleeAttack(15,"ClericHit","","Melee",1)
         Goto See
@@ -6277,7 +5960,6 @@ Actor DVActor15 25144//23
     }
 }
 
-
 //Actor Afrit 20306 replaces commander keen in dvii (72)
 
 
@@ -6287,8 +5969,7 @@ Actor DVActor15 25144//23
 ////            ////
 ////////////////////
 
-
-ACTOR ValiantImpBall //replaces DoomImpBall
+Actor ValiantImpBall //replaces DoomImpBall
 {
   Game Doom
   SpawnID 10
@@ -6314,7 +5995,7 @@ ACTOR ValiantImpBall //replaces DoomImpBall
   }
 }
 
-ACTOR ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
+Actor ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
 {
   Radius 13
   Height 8
@@ -6337,7 +6018,7 @@ ACTOR ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
   }
 }
 
-ACTOR ValiantBaronBall //replaces BaronBall
+Actor ValiantBaronBall //replaces BaronBall
 {
   Game Doom
   SpawnID 154
@@ -6363,11 +6044,7 @@ ACTOR ValiantBaronBall //replaces BaronBall
   }
 }
 
-
-
-
-//reverted to original
-ACTOR ValiantImp 25074//Replaces DoomImp 3001
+Actor ValiantImp 25074//Replaces DoomImp 3001
 {
     Health 60
     Speed 8
@@ -6425,12 +6102,7 @@ ACTOR ValiantImp 25074//Replaces DoomImp 3001
     }
 }
 
-
-
-
-
-//reverted to original
-ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
+Actor ValiantDemon : Demon 25075 //replaces Demon 3002
 {
   States
   {
@@ -6441,12 +6113,12 @@ ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
     AAAH AABBCCDD 2 A_Chase
     Loop
   Melee:
-    AAAH EF 3  A_FaceTarget
-    AAAH G 18  A_SargAttack
+    AAAH EF 3 A_FaceTarget
+    AAAH G 18 A_SargAttack
     Goto See
   Pain:
     AAAH H 2
-    AAAH H 2  A_Pain
+    AAAH H 2 A_Pain
     Goto See
   Death:
     AAAH I 8
@@ -6457,16 +6129,12 @@ ACTOR ValiantDemon : Demon 25075 //replaces Demon 3002
     AAAH N -1
     Stop
   Raise:
-    AAAH N 5
-    AAAH MLKJI 5
+    AAAH NMLKJI 5
     Goto See
   }
 }
 
-
-
-//reverted to original
-ACTOR ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
+Actor ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
 {
   Game Doom
   SpawnID 9
@@ -6481,10 +6149,7 @@ ACTOR ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
   HitObituary "%o was eaten by a super spectre."
 }
 
-
-
-//reverted to original
-ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
+Actor ValiantSuperMancubus 25077//replaces BaronOfHell 3003
 {
   Game Doom
   Health 900
@@ -6510,15 +6175,15 @@ ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
         AAAI AABBCCDDEEFF 4  A_Chase
         Loop
       Missile:
-        AAAI G 20  A_FaceTarget
-        AAAI H 3  Bright A_FatAttack1
-        AAAI H 3  Bright A_FatAttack2
-        AAAI H 10  Bright A_FatAttack3
-        AAAI G 20  A_FaceTarget
-        AAAI H 3  Bright A_FatAttack1
-        AAAI H 3  Bright A_FatAttack2
-        AAAI H 10  Bright A_FatAttack3
-        AAAI I 10  A_FaceTarget
+        AAAI G 20 A_FaceTarget
+        AAAI H 3 Bright A_FatAttack1
+        AAAI H 3 Bright A_FatAttack2
+        AAAI H 10 Bright A_FatAttack3
+        AAAI G 20 A_FaceTarget
+        AAAI H 3 Bright A_FatAttack1
+        AAAI H 3 Bright A_FatAttack2
+        AAAI H 10 Bright A_FatAttack3
+        AAAI I 10 A_FaceTarget
         Goto See
       Pain:
         AAAI J 3
@@ -6532,14 +6197,9 @@ ACTOR ValiantSuperMancubus 25077//replaces BaronOfHell 3003
         AAAI T -1
         Stop
   }
-
 }
 
-
-
-
-//reverted to original
-ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
+Actor ValiantPyroDemon 25078//replaces HellKnight 69
 {
   Game Doom
   Health 500
@@ -6563,33 +6223,28 @@ ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
         AAAJ AB 10 Bright A_Look
         Loop
     See:
-        AAAJ AABBCCDD 3  Bright A_Chase
+        AAAJ AABBCCDD 3 Bright A_Chase
         Loop
     Missile:
         AAAJ A 0 A_Jump(127,"AltMissile")
-        AAAJ E 4  Bright A_FaceTarget
-        AAAJ F 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ G 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ G 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
-        AAAJ I 4  Bright A_FaceTarget
-        AAAJ J 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ K 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ K 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+        AAAJ E 4 Bright A_FaceTarget
+        AAAJ FG 4 Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+        AAAJ G 4 Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+        AAAJ I 4 Bright A_FaceTarget
+        AAAJ JK 4 Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+        AAAJ K 4 Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
         Goto See
     AltMissile:
-        AAAJ M 8  Bright A_FaceTarget
-        AAAJ N 8  Bright A_FaceTarget
-        AAAJ OOOO 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+        AAAJ MN 8 Bright A_FaceTarget
+        AAAJ OOOO 4 Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
         Goto See
     Melee:
-        AAAJ E 4  Bright A_FaceTarget
-        AAAJ F 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ G 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ G 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
-        AAAJ I 4  Bright A_FaceTarget
-        AAAJ J 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ K 4  Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
-        AAAJ K 4  Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+        AAAJ E 4 Bright A_FaceTarget
+        AAAJ FG 4 Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+        AAAJ G 4 Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+        AAAJ I 4 Bright A_FaceTarget
+        AAAJ JK 4 Bright A_CustomComboAttack("ValiantImpBall", 32, 3 * random(1, 8), "imp/melee")
+        AAAJ K 4 Bright A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
         Goto See
     Pain:
         AAAK O 2 Bright
@@ -6611,12 +6266,7 @@ ACTOR ValiantPyroDemon 25078//replaces HellKnight 69
   }
 }
 
-//ValiantBaronBall replaces BaronBall
-
-
-
-//reverted to original
-ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
+Actor ValiantCybruiser 25079//replaces SpiderMastermind 7
 {
     Health 500
     Speed 10
@@ -6640,24 +6290,20 @@ ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
             AAAL AB 10 A_Look
             Loop
         See:
-            AAAL AA 3  A_Chase
+            AAAL AA 3 A_Chase
             AAAL B 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
-            AAAL BB 3  A_Chase
-            AAAL CC 3  A_Chase
+            AAAL BBCC 3 A_Chase
             AAAL D 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
-            AAAL DD 3  A_Chase
+            AAAL DD 3 A_Chase
             Loop
         Missile:
-            AAAL E 12  A_FaceTarget
-            AAAL F 12  Bright A_CyberAttack
+            AAAL E 12 A_FaceTarget
+            AAAL F 12 Bright A_CyberAttack
             Goto See
         Melee:
-            AAAL G 0  A_FaceTarget
-            AAAL G 5
-            AAAL H 5  A_FaceTarget
-            AAAL I 5  A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
+            AAAL GH 5 A_FaceTarget
+            AAAL I 5 A_CustomComboAttack("ValiantBaronBall", 32, 10 * random(1, 8), "baron/melee")
             Goto See
-
         Pain:
             AAAL J 2
             AAAL J 2 A_Pain
@@ -6666,17 +6312,13 @@ ACTOR ValiantCybruiser 25079//replaces SpiderMastermind 7
             AAAL K 6 Bright A_Scream
             AAAL LM 6 Bright
             AAAL N 6 Bright A_Fall
-            AAAL O 6 Bright
-            AAAL PQR 6 Bright
+            AAAL OPQR 6 Bright
             AAAL S -1
             Stop
     }
 }
 
-
-
-//reverted to original
-ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
+Actor ValiantArachnotron 25080//replaces Arachnotron 68
 {
     Health 500
     Speed 12
@@ -6717,7 +6359,7 @@ ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
         Death:
             AAAM I 11 A_Scream
             AAAN B 0 A_Jump(127,"Death2")
-            AAAM J 7 A_FALL
+            AAAM J 7 A_Fall
             AAAM KLM 7
             AAAM N 7 A_BossDeath
             AAAM P -1 A_BossDeath
@@ -6737,9 +6379,7 @@ ACTOR ValiantArachnotron 25080//replaces Arachnotron 68
     }
 }
 
-
-//reverted to original
-ACTOR ValiantArachnorb 25081//replaces MBFHelperDog 888
+Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
 {
     Health 120
     Speed 12
@@ -6786,15 +6426,12 @@ ACTOR ValiantArachnorb 25081//replaces MBFHelperDog 888
     }
 }
 
-
-
-//reverted to original
-ACTOR ValiantSpiderMastermind : SpiderMastermind 25082//replaces Infrared 2045
+Actor ValiantSpiderMastermind : SpiderMastermind 25082//replaces Infrared 2045
 {
     -NORADIUSDMG
 }
 
-ACTOR LightningOrb 25083//replaces HeartColumn 36
+Actor LightningOrb 25083//replaces HeartColumn 36
 {
     +NOCLIP
     Health 1000
@@ -6823,8 +6460,7 @@ ACTOR LightningOrb 25083//replaces HeartColumn 36
         }
 }
 
-
-ACTOR SuicideBomber 25084//replaces DeadLostSoul 23
+Actor SuicideBomber 25084//replaces DeadLostSoul 23
 {
     Health 60
     Speed 10
@@ -6866,7 +6502,7 @@ ACTOR SuicideBomber 25084//replaces DeadLostSoul 23
     }
 }
 
-ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
+Actor ValiantFinalBoss 25085//replaces BlueTorch 44
 {
     Health 7500
     Radius 20
@@ -6890,30 +6526,24 @@ ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
     {
     Spawn:
     //TNT1 A 0 ACS_NamedExecute("ValBoss",0)
-        AAAP NO 10 Bright A_LOOK
+        AAAP NO 10 Bright A_Look
         Loop
     See:
-        AAAP PPQQRRSS 2 A_VILECHASE
-        AAAP TTUU 2 A_VILECHASE
+        AAAP PPQQRRSSTTUU 2 A_VileChase
         Loop
     Missile:
-        AAAQ A 0 Bright A_VILESTART
-        AAAQ A 10 Bright A_FACETARGET
-        AAAQ B 8 Bright A_VILETARGET
-        AAAQ C 6 Bright A_VILETARGET
-        AAAQ D 6 Bright A_VILETARGET
+        AAAQ A 0 Bright A_VileStart
+        AAAQ A 10 Bright A_FaceTarget
+        AAAQ B 8 Bright A_VileTarget
+        AAAQ CD 6 Bright A_VileTarget
         AAAQ E 6 Bright A_VileAttack
-        AAAQ C 6 Bright A_VILETARGET
-        AAAQ D 6 Bright A_VILETARGET
+        AAAQ CD 6 Bright A_VileTarget
         AAAQ E 6 Bright A_VileAttack
-        AAAQ C 6 Bright A_VILETARGET
-        AAAQ D 6 Bright A_VILETARGET
+        AAAQ CD 6 Bright A_VileTarget
         AAAQ E 6 Bright A_VileAttack
-        AAAQ C 6 Bright A_VILETARGET
-        AAAQ D 6 Bright A_VILETARGET
+        AAAQ CD 6 Bright A_VileTarget
         AAAQ E 6 Bright A_VileAttack
-        AAAQ C 6 Bright A_VILETARGET
-        AAAQ D 6 Bright A_VILETARGET
+        AAAQ CD 6 Bright A_VileTarget
         AAAQ E 6 Bright A_VileAttack
         AAAQ CCDEE 8 Bright
         Goto See
@@ -6923,21 +6553,21 @@ ACTOR ValiantFinalBoss 25085//replaces BlueTorch 44
         Goto See
     Pain:
         AAAQ G 5
-        AAAQ G 5 A_PAIN
+        AAAQ G 5 A_Pain
         Goto See
     Death:
         AAAQ G 7
-        AAAQ H 7 A_SCREAM
+        AAAQ H 7 A_Scream
         AAAQ I 7
-        AAAQ J 7 A_FALL
+        AAAQ J 7 A_Fall
         AAAQ KLM 7
-        AAAQ N 7 A_BRAINDIE
+        AAAQ N 7 A_BrainDie
         AAAQ O -1
         Stop
     }
 }
 
-ACTOR ValiantTree1 25086//ShortRedColumn 33
+Actor ValiantTree1 25086//ShortRedColumn 33
 {
   Radius 16
   Height 40
@@ -6951,7 +6581,7 @@ ACTOR ValiantTree1 25086//ShortRedColumn 33
   }
 }
 
-ACTOR ValiantTree2 25087//Stalagtite 47
+Actor ValiantTree2 25087//Stalagtite 47
 {
   Radius 16
   Height 40
@@ -6965,7 +6595,7 @@ ACTOR ValiantTree2 25087//Stalagtite 47
   }
 }
 
-ACTOR ValiantTree3 25088//SkullColumn 37
+Actor ValiantTree3 25088//SkullColumn 37
 {
   Radius 16
   Height 40
@@ -6979,7 +6609,7 @@ ACTOR ValiantTree3 25088//SkullColumn 37
   }
 }
 
-ACTOR ValiantTree4 25089//TallGreenColumn 30
+Actor ValiantTree4 25089//TallGreenColumn 30
 {
   Radius 16
   Height 52
@@ -6993,7 +6623,7 @@ ACTOR ValiantTree4 25089//TallGreenColumn 30
   }
 }
 
-ACTOR ValiantTree5 25090//TallRedColumn 32
+Actor ValiantTree5 25090//TallRedColumn 32
 {
   Radius 16
   Height 52
@@ -7007,7 +6637,7 @@ ACTOR ValiantTree5 25090//TallRedColumn 32
   }
 }
 
-ACTOR CowHead 25091//UNKNOWN
+Actor CowHead 25091//UNKNOWN
 {
   Radius 16
   Height 40
@@ -7021,9 +6651,9 @@ ACTOR CowHead 25091//UNKNOWN
   }
 }
 
-ACTOR ValiantDarkDemon 25092//replaces UNKOWN
+Actor ValiantDarkDemon 25092//replaces UNKOWN
 {
-//THE ACTOR PROPS HAVE TO BE DIFFERENT FROM THE REGU;LAR DEMON JUST NOT SURE ABOUT IT
+//THE Actor PROPS HAVE TO BE DIFFERENT FROM THE REGU;LAR DEMON JUST NOT SURE ABOUT IT
   Game Doom
   SpawnID 8
   Health 150
@@ -7072,10 +6702,7 @@ ACTOR ValiantDarkDemon 25092//replaces UNKOWN
   }
 }
 
-
-
-//reverted to original
-ACTOR ValiantLostSoul : LostSoul 25093//LostSoul 3006
+Actor ValiantLostSoul : LostSoul 25093//LostSoul 3006
 {
   States
   {
@@ -7111,41 +6738,32 @@ ACTOR ValiantLostSoul : LostSoul 25093//LostSoul 3006
 ////            ////
 ////////////////////
 
-
-ACTOR Epic1A1 : GreenTorch 25094//GreenTorch 45
+Actor Epic1A1 : GreenTorch 25094//GreenTorch 45
 { States{ Spawn: AAAS RSTU 4 Bright
 Loop}}
 
-ACTOR Epic1A2 : TallGreenColumn 25095//TallGreenColumn 30
+Actor Epic1A2 : TallGreenColumn 25095//TallGreenColumn 30
 { States{ Spawn: AAAS V -1
-Loop}}
+Stop}}
 
-ACTOR Epic1A3 : ShortGreenColumn 25096//ShortGreenColumn 31
+Actor Epic1A3 : ShortGreenColumn 25096//ShortGreenColumn 31
 { States{ Spawn: AAAS W -1
-Loop}}
+Stop}}
 
-ACTOR Epic1A4 : TallRedColumn 25097//TallRedColumn 32
+Actor Epic1A4 : TallRedColumn 25097//TallRedColumn 32
 { States{ Spawn: AAAS X -1
-Loop}}
+Stop}}
 
-ACTOR Epic1A5 : ShortRedColumn 25098//ShortRedColumn 33
+Actor Epic1A5 : ShortRedColumn 25098//ShortRedColumn 33
 { States{ Spawn: AAAS Y -1
-Loop}}
+Stop}}
 
-ACTOR Epic1A6 : SkullColumn 25099//SkullColumn 37
+Actor Epic1A6 : SkullColumn 25099//SkullColumn 37
 { States{ Spawn: AAAS Z -1
-Loop}}
+Stop}}
 
-
-
-
-//reverted to original
-ACTOR Epic1A7 : DoomImp 25100//DoomImp 3001
+Actor Epic1A7 : DoomImp 25100//DoomImp 3001
 {
-  SeeSound "imp/sight"
-  PainSound "imp/pain"
-  DeathSound "imp/death"
-  ActiveSound "imp/active"
   States
   {
   Spawn:
@@ -7185,16 +6803,8 @@ ACTOR Epic1A7 : DoomImp 25100//DoomImp 3001
   }
 }
 
-
-
-//reverted to original
-ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
+Actor Epic1A8 : ZombieMan 25101//ZombieMan 3004
 {
-  SeeSound "grunt/sight"
-  AttackSound "grunt/attack"
-  PainSound "grunt/pain"
-  DeathSound "grunt/death"
-  ActiveSound "grunt/active"
   DropItem "Epic2A18"
   States
   {
@@ -7228,23 +6838,13 @@ ACTOR Epic1A8 : ZombieMan 25101//ZombieMan 3004
     AAAU U -1
     Stop
   Raise:
-    AAAU K 5
-    AAAU JIH 5
+    AAAU KJIH 5
     Goto See
   }
 }
 
-
-
-
-//reverted to original
-ACTOR Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
+Actor Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
 {
-  SeeSound "chainguy/sight"
-  PainSound "chainguy/pain"
-  DeathSound "chainguy/death"
-  ActiveSound "chainguy/active"
-  AttackSound "chainguy/attack"
   States
   {
   Spawn:
@@ -7277,23 +6877,13 @@ ACTOR Epic1A9 : ChaingunGuy 25102//CHAINGUN GUY 65
     AAAV T -1
     Stop
   Raise:
-    AAAV N 5
-    AAAV MLKJIH 5
+    AAAV NMLKJIH 5
     Goto See
   }
 }
 
-
-
-
-//reverted to original
-ACTOR Epic1A10 : Revenant 25103//REVENANT 66
+Actor Epic1A10 : Revenant 25103//REVENANT 66
 {
-  SeeSound "skeleton/sight"
-  PainSound "skeleton/pain"
-  DeathSound "skeleton/death"
-  ActiveSound "skeleton/active"
-  MeleeSound "skeleton/melee"
   States
   {
   Spawn:
@@ -7326,23 +6916,13 @@ ACTOR Epic1A10 : Revenant 25103//REVENANT 66
     AAAW Q -1
     Stop
   Raise:
-    AAAW Q 5
-    AAAW PONML 5
+    AAAW QPONML 5
     Goto See
   }
 }
 
-
-
-
-//reverted to original
-ACTOR Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
+Actor Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
 {
-  SeeSound "shotguy/sight"
-  AttackSound "shotguy/attack"
-  PainSound "shotguy/pain"
-  DeathSound "shotguy/death"
-  ActiveSound "shotguy/active"
   States
   {
   Spawn:
@@ -7375,8 +6955,7 @@ ACTOR Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
     AAAX U -1
     Stop
   Raise:
-    AAAX L 5
-    AAAX KJIH 5
+    AAAX LKJIH 5
     Goto See
   }
 }
@@ -7387,28 +6966,28 @@ ACTOR Epic1A11 : ShotgunGuy 25104//ShotgunGuy 9
 ////            ////
 ////////////////////
 
-ACTOR Epic2A1 : Column 25105//Column 2028
+Actor Epic2A1 : Column 25105//Column 2028
 { States{ Spawn: AAAX V -1
-Loop}}
-ACTOR Epic2A2 : DeadStick 25106//DeadStick 25
+Stop}}
+
+Actor Epic2A2 : DeadStick 25106//DeadStick 25
 { States{ Spawn: AAAX W -1
-Loop}}
-ACTOR Epic2A3 : HeadsOnAStick 25107//HeadsOnAStick 28
+Stop}}
+
+Actor Epic2A3 : HeadsOnAStick 25107//HeadsOnAStick 28
 { States{ Spawn: AAAX X -1
-Loop}}
-ACTOR Epic2A4 : HeadOnAStick 25108//HeadOnAStick 27
+Stop}}
+
+Actor Epic2A4 : HeadOnAStick 25108//HeadOnAStick 27
 { States{ Spawn: AAAX Y -1
-Loop}}
-ACTOR Epic2A5 : ShortRedColumn 25109//ShortRedColumn 33
+Stop}}
+
+Actor Epic2A5 : ShortRedColumn 25109//ShortRedColumn 33
 { States{ Spawn: AAAX Z -1
-Loop}}
+Stop}}
 
-
-//reverted to original
-ACTOR Epic2A6 : Medikit 25110// : Health 24
+Actor Epic2A6 : Medikit 25110// : Health 24
 {
-  Inventory.PickupMessage "$GOTMEDIKIT"
-  Health.LowMessage 25, "$GOTMEDINEED"
   States
   {
   Spawn:
@@ -7417,63 +6996,32 @@ ACTOR Epic2A6 : Medikit 25110// : Health 24
   }
 }
 
-
-//reverted to original
-ACTOR Epic2A7 : CustomInventory 25111//Plasmagun 30
+Actor Epic2A7 : WeaponGiver 25111//Plasmagun 30
 {
-Inventory.PickupMessage "$GOTPLASMA"
-Tag "$TAG_PLASMARIFLE"
-  States
-  {
-  Spawn:
-    AAAY B 1
-    Stop
-  Pickup:
-  TNT1 A 0 A_JumpIfInventory("PlasmaRifle", 1, "HasAmmo")
-  TNT1 A 0 A_GiveInventory("PlasmaRifle")
-  HasAmmo:
-  TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("Cell", 300, 2)
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
-  TNT1 A 0 A_GiveInventory("PlasmaRifle")
-  TNT1 A 0 A_GiveInventory("Cell",40)
-  Stop
-  }
+    DropItem "PlasmaRifle"
+    Inventory.PickupMessage "$GOTPLASMA"
+    States
+    {
+    Spawn:
+        AAAY B -1
+        Stop
+    }
 }
 
-
-//reverted to original
-ACTOR Epic2A8 : CustomInventory 25112//RL 29
+Actor Epic2A8 : WeaponGiver 25112//RL 29
 {
-  Inventory.PickupMessage "$GOTLAUNCHER"
-  Tag "$TAG_ROCKETLAUNCHER"
-  States
-  {
-  Spawn:
-    AAAY C -1
-    Stop
-  Pickup:
-  TNT1 A 0 A_JumpIfInventory("RocketLauncher", 1, "HasAmmo")
-  TNT1 A 0 A_GiveInventory("RocketLauncher")
-  HasAmmo:
-  TNT1 A 0 A_JumpIfInventory("Backpack", 1, 2)
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("RocketAmmo", 50, 2)
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("RocketAmmo", 100, "Spawn")
-  TNT1 A 0 A_GiveInventory("RocketLauncher")
-  TNT1 A 0 A_GiveInventory("RocketAmmo",2)
-  Stop
-  }
+    DropItem "RocketLauncher"
+    Inventory.PickupMessage "$GOTLAUNCHER"
+    States
+    {
+    Spawn:
+        AAAY C -1
+        Stop
+    }
 }
 
-
-//reverted to original
-ACTOR Epic2A9 : Stimpack 25113//23
+Actor Epic2A9 : Stimpack 25113//23
 {
-Inventory.PickupMessage "$GOTSTIM"
   States
   {
   Spawn:
@@ -7482,7 +7030,7 @@ Inventory.PickupMessage "$GOTSTIM"
   }
 }
 
-ACTOR Epic2A10 : TorchTree 25114//43
+Actor Epic2A10 : TorchTree 25114//43
 {
   States
   {
@@ -7492,7 +7040,7 @@ ACTOR Epic2A10 : TorchTree 25114//43
   }
 }
 
-ACTOR Epic2A11 : BigTree 25115//54
+Actor Epic2A11 : BigTree 25115//54
 {
   States
   {
@@ -7502,7 +7050,7 @@ ACTOR Epic2A11 : BigTree 25115//54
   }
 }
 
-ACTOR Epic2A12 : Stalagtite 25116//47
+Actor Epic2A12 : Stalagtite 25116//47
 {
   States
   {
@@ -7512,7 +7060,7 @@ ACTOR Epic2A12 : Stalagtite 25116//47
   }
 }
 
-ACTOR Epic2A13 : NonsolidMeat3 25117//51
+Actor Epic2A13 : NonsolidMeat3 25117//51
 {
   States
   {
@@ -7522,7 +7070,7 @@ ACTOR Epic2A13 : NonsolidMeat3 25117//51
   }
 }
 
-ACTOR Epic2A14 : NonsolidMeat4  25118//52
+Actor Epic2A14 : NonsolidMeat4  25118//52
 {
   States
   {
@@ -7532,7 +7080,7 @@ ACTOR Epic2A14 : NonsolidMeat4  25118//52
   }
 }
 
-ACTOR Epic2A15 : NonsolidMeat5 25119//53
+Actor Epic2A15 : NonsolidMeat5 25119//53
 {
   States
   {
@@ -7542,86 +7090,55 @@ ACTOR Epic2A15 : NonsolidMeat5 25119//53
   }
 }
 
-
-//reverted to original
-ACTOR Epic2A16 : CustomInventory 25120//Cell  75
+Actor Epic2A16 : Cell 25120//Cell  75
 {
-Inventory.PickupMessage "$GOTCELL"
   States
   {
   Spawn:
     AAAY K -1
     Stop
-  Pickup:
-  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
-  TNT1 A 0 A_JumpIfInventory("Cell", 300, "Spawn")
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
-  TNT1 A 0 A_GiveInventory("Cell",20)
-  Stop
   }
 }
 
-
-//reverted to original
-ACTOR Epic2A17 : CustomInventory 25121//CellPK  17
+Actor Epic2A17 : CellPack 25121//CellPK  17
 {
-  Inventory.PickupMessage "$GOTCELLBOX"
   States
   {
   Spawn:
-    AAAY L 1
+    AAAY L -1
     Stop
-  Pickup:
-  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
-  TNT1 A 0 A_JumpIfInventory("Cell", 300, "Spawn")
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("Cell", 600, "Spawn")
-  TNT1 A 0 A_GiveInventory("Cell",100)
-  Stop
   }
 }
 
-
-//reverted to original
-ACTOR Epic2A18 : CustomInventory 25122//Clip  2007
+Actor Epic2A18 : Clip 25122//Clip  2007
 {
-Inventory.PickupMessage "$GOTCLIP"
   States
   {
   Spawn:
-    AAAY M 1
+    AAAY M -1
     Stop
-  Pickup:
-
-  TNT1 A 0 A_JumpIfInventory("Backpack", 1, "Spawn")
-  TNT1 A 0 A_JumpIfInventory("Clip", 200, "Spawn")
-  TNT1 A 0
-  TNT1 A 0 A_JumpIfInventory("Clip", 400, "Spawn")
-  TNT1 A 0 A_GiveInventory("Clip")
-  Stop
   }
 }
 
 ////////////////////////////////////////////////////////////////
 
-ACTOR Epic2A19 : TallGreenColumn 25123//TallGreenColumn 30 //////////////////////problem here found no actors in epic2.wad probably a bad parent class. Find parent class and check its sprite with any other classes in doom2
+Actor Epic2A19 : TallGreenColumn 25123//TallGreenColumn 30 //////////////////////problem here found no actors in epic2.wad probably a bad parent class. Find parent class and check its sprite with any other classes in doom2
 { States{ Spawn: AAAY N -1
-Loop}}
+Stop}}
 
-ACTOR Epic2A20 : ShortGreenColumn 25124//ShortGreenColumn 31
+Actor Epic2A20 : ShortGreenColumn 25124//ShortGreenColumn 31
 { States{ Spawn: AAAY O -1
-Loop}}
+Stop}}
 
-ACTOR Epic2A21 : TallRedColumn 25125//TallRedColumn 32////same issue?
+Actor Epic2A21 : TallRedColumn 25125//TallRedColumn 32////same issue?
 { States{ Spawn: AAAY P -1
-Loop}}
+Stop}}
 
-ACTOR Epic2A22 : SkullColumn 25126//SkullColumn 37////same issue?
+Actor Epic2A22 : SkullColumn 25126//SkullColumn 37////same issue?
 { States{ Spawn: AAAY Q -1
-Loop}}
+Stop}}
 
-ACTOR Epic2A23 : BurningBarrel 25127//70
+Actor Epic2A23 : BurningBarrel 25127//70
 {
   States
   {
@@ -7631,7 +7148,7 @@ ACTOR Epic2A23 : BurningBarrel 25127//70
   }
 }
 
-ACTOR Epic2A24 : ExplosiveBarrel 25128//2035
+Actor Epic2A24 : ExplosiveBarrel 25128//2035
 {
   States
   {
@@ -7650,7 +7167,7 @@ ACTOR Epic2A24 : ExplosiveBarrel 25128//2035
   }
 }
 
-ACTOR Epic2A25 : RedTorch 25129//46
+Actor Epic2A25 : RedTorch 25129//46
 {
   States
   {
@@ -7660,7 +7177,7 @@ ACTOR Epic2A25 : RedTorch 25129//46
   }
 }
 
-ACTOR Epic2A26 : BlueTorch 25130//44
+Actor Epic2A26 : BlueTorch 25130//44
 {
   States
   {
@@ -7670,7 +7187,7 @@ ACTOR Epic2A26 : BlueTorch 25130//44
   }
 }
 
-ACTOR Epic2A27 : ShortGreenTorch 25131//56
+Actor Epic2A27 : ShortGreenTorch 25131//56
 {
   States
   {
@@ -7680,7 +7197,7 @@ ACTOR Epic2A27 : ShortGreenTorch 25131//56
   }
 }
 
-ACTOR Epic2A28 : GreenTorch 25132//45
+Actor Epic2A28 : GreenTorch 25132//45
 {
   States
   {
@@ -7690,7 +7207,7 @@ ACTOR Epic2A28 : GreenTorch 25132//45
   }
 }
 
-ACTOR Epic2A29 : Allmap 25133//2026
+Actor Epic2A29 : Allmap 25133//2026
 {
   States
   {
@@ -7700,12 +7217,8 @@ ACTOR Epic2A29 : Allmap 25133//2026
   }
 }
 
-ACTOR Epic2A30 : ShortRedTorch 25134//57
+Actor Epic2A30 : ShortRedTorch 25134//57
 {
-  Radius 16
-  Height 37
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -7713,11 +7226,8 @@ ACTOR Epic2A30 : ShortRedTorch 25134//57
     Loop
   }
 }
-//Missing an actor here throwing off the sprites
 
-
-//reverted to original
-ACTOR Epic2A31 : HealthBonus 25135//2014 : Health
+Actor Epic2A31 : HealthBonus 25135//2014 : Health
 {
   States
   {
@@ -7727,10 +7237,7 @@ ACTOR Epic2A31 : HealthBonus 25135//2014 : Health
   }
 }
 
-
-
-//reverted to original
-ACTOR Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
+Actor Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
 {
   States
   {
@@ -7740,7 +7247,7 @@ ACTOR Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
   }
 }
 
-ACTOR Epic2A33 : ShortBlueTorch 25137//55
+Actor Epic2A33 : ShortBlueTorch 25137//55
 {
   States
   {
@@ -7750,7 +7257,7 @@ ACTOR Epic2A33 : ShortBlueTorch 25137//55
   }
 }
 
-ACTOR Epic2A34 : TechLamp2 25138//86
+Actor Epic2A34 : TechLamp2 25138//86
 {
   States
   {
@@ -7760,7 +7267,7 @@ ACTOR Epic2A34 : TechLamp2 25138//86
   }
 }
 
-ACTOR Epic2A35 : TechPillar 25139//48
+Actor Epic2A35 : TechPillar 25139//48
 {
   States
   {
@@ -7770,14 +7277,8 @@ ACTOR Epic2A35 : TechPillar 25139//48
   }
 }
 
-
-//reverted to original
-ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
+Actor Epic2A36 : DoomImp 25140//DoomImp 3001
 {
-  SeeSound "imp/sight"
-  PainSound "imp/pain"
-  DeathSound "imp/death"
-  ActiveSound "imp/active"
   States
   {
   Spawn:
@@ -7819,14 +7320,8 @@ ACTOR Epic2A36 : DoomImp 25140//DoomImp 3001
 
 //Revenant 25103//REVENANT 66
 
-
-//reverted to original
-ACTOR Epic2A37 : PainElemental 25141//71
+Actor Epic2A37 : PainElemental 25141//71
 {
-  SeeSound "pain/sight"
-  PainSound "pain/pain"
-  DeathSound "pain/death"
-  ActiveSound "pain/active"
   States
   {
   Spawn:
@@ -7858,11 +7353,7 @@ ACTOR Epic2A37 : PainElemental 25141//71
   }
 }
 
-/////////////////////////////////////////////
-
-
-//reverted to original
-ACTOR Epic2A38 : WolfensteinSS 25142//84
+Actor Epic2A38 : WolfensteinSS 25142//84
 {
   SeeSound "wolfss/sight"
   PainSound "wolfss/pain"
@@ -7904,13 +7395,12 @@ ACTOR Epic2A38 : WolfensteinSS 25142//84
     AABD V -1
     Stop
   Raise:
-    AABD M 5
-    AABD LKJI 5
+    AABD MLKJI 5
     Goto See
   }
 }
 
-ACTOR Epic2A39 : TechLamp 25143//85
+Actor Epic2A39 : TechLamp 25143//85
 {
   States
   {
@@ -7931,130 +7421,114 @@ ACTOR Epic2A39 : TechLamp 25143//85
 ////                    ////
 /////////////////////////////
 
-
-
-
-ACTOR AAA1 : HeadsOnAStick 25151//28
+Actor AAA1 : HeadsOnAStick 25151//28
 { States { Spawn: AABE E -1
     Stop } }
 
-ACTOR AAA2 : HeadOnAStick 25152//27
+Actor AAA2 : HeadOnAStick 25152//27
 { States { Spawn: AABE F -1
     Stop } }
 
-ACTOR AAA3 : Stalagtite 25153//47
+Actor AAA3 : Stalagtite 25153//47
 { States { Spawn: AABE G -1
     Stop } }
 
-ACTOR AAA4 : Candelabra 25154//35
+Actor AAA4 : Candelabra 25154//35
 { States { Spawn: AABE H -1 Bright
     Stop } }
 
-ACTOR AAA5 : Column 25155//2028
+Actor AAA5 : Column 25155//2028
 { States { Spawn: AABE I -1 Bright
     Stop } }
 
-ACTOR AAA6 : BigTree 25156//54
+Actor AAA6 : BigTree 25156//54
 { States { Spawn: AABE J -1
     Stop } }
 
-ACTOR AAA7 : TorchTree 25157//43
+Actor AAA7 : TorchTree 25157//43
 { States { Spawn:  AABE K -1
     Stop } }
 
-ACTOR AAA8 : ShortRedColumn 25158//33
+Actor AAA8 : ShortRedColumn 25158//33
 { States { Spawn: AABE L -1
     Stop } }
 
-ACTOR AAA9 : SkullColumn 25159//37
+Actor AAA9 : SkullColumn 25159//37
 { States { Spawn: AABE M -1
     Stop } }
 
-ACTOR AAA10 : TallGreenColumn 25160//30
+Actor AAA10 : TallGreenColumn 25160//30
 { States { Spawn: AABE N -1
     Stop } }
 
-ACTOR AAA11 : TallRedColumn 25161//32
+Actor AAA11 : TallRedColumn 25161//32
 { States { Spawn: AABE O -1
     Stop } }
 
-ACTOR AAA12 : ShortGreenColumn 25162//31
+Actor AAA12 : ShortGreenColumn 25162//31
 {  States { Spawn: AABE P -1
     Stop } }
 
 
-ACTOR AAA13 : CommanderKeen 25163// KEEN (72)
+Actor AAA13 : CommanderKeen 25163// KEEN (72)
 {
     Tag "Alien Guardian"
-    Radius 24//
-    Height 56//
-    Speed 8//
-    Mass 400//
-    PainChance 64//
+    Radius 24
+    Height 56
+    Speed 8
+    Mass 400
+    PainChance 64
     PainSound "AAkeenpn"
     DeathSound "AAkeendt"
     States
     {
     Spawn:
-        AABF A   -1
+        AABF A -1
         Loop
     Death:
-        AABF AB    6
-        AABF C    6 A_Scream
-        AABF DEFGH    6
-        AABF I    6 A_NoBlocking
-        AABF J    6
-        AABF K    6 A_KeenDie
-        AABF L   -1
+        AABF AB 6
+        AABF C 6 A_Scream
+        AABF DEFGH 6
+        AABF I 6 A_NoBlocking
+        AABF J 6
+        AABF K 6 A_KeenDie
+        AABF L -1
         Stop
     Pain:
-        AABF M    4
-        AABF M    8 A_Pain
+        AABF M 4
+        AABF M  8 A_Pain
         Goto Spawn
     }
 }
 
-//AABFR-V MISSING AN ACTOR FOR THIS Sprite range was OEEN A-D before being serialised
+//AABFR-V MISSING AN Actor FOR THIS Sprite range was OEEN A-D before being serialised
 
-
-
-//reverted to original
-ACTOR AAA14 : Cyberdemon 25164//16
+Actor AAA14 : Cyberdemon 25164//16
 {
     Tag "Xenu, Alien Emperor"
     Obituary "%o was splattered by an alien."
 }
 
-
-
-//reverted to original
-ACTOR AAA15 : SpiderMastermind 25165//7
+Actor AAA15 : SpiderMastermind 25165//7
 {
     Tag "Alien Queen"
     Obituary "%o stood in awe of an alien."
 }
 
-
-//reverted to original
-ACTOR AAA16 : Archvile 25166//64
+Actor AAA16 : Archvile 25166//64
 {
     Tag "Reptilian Alien"
     Obituary "%o was incinerated by an alien."
 }
 
-
-
-//reverted to original
-ACTOR AAA17 : Revenant 25167//66
+Actor AAA17 : Revenant 25167//66
 {
     Tag "Gray Alien"
     HitObituary "%o was punched by an alien."
     Obituary "%o couldn't evade an alien's fireball."
 }
 
-
-//reverted to original
-ACTOR AAA19 : Fatso 25168//67
+Actor AAA19 : Fatso 25168//67
 {
     Tag "Alien Pastry Chef"
     Obituary "%o was squashed by an alien."
@@ -8093,10 +7567,7 @@ ACTOR AAA19 : Fatso 25168//67
     }
 }
 
-
-
-//reverted to original
-ACTOR AAA120 : Arachnotron 25169//68
+Actor AAA120 : Arachnotron 25169//68
 {
     Tag "Robo-Alien"
     Obituary "%o let an alien get %h."
@@ -8135,8 +7606,7 @@ ACTOR AAA120 : Arachnotron 25169//68
     }
 }
 
-
-ACTOR AAA21 : ArachnotronPlasma
+Actor AAA21 : ArachnotronPlasma
 {
     Tag "Alien Plasma"
     States
@@ -8150,31 +7620,21 @@ ACTOR AAA21 : ArachnotronPlasma
     }
 }
 
-
-
-
-
-//reverted to original
-ACTOR AAA22 : BaronOfHell 25170//3003
+Actor AAA22 : BaronOfHell 25170//3003
 {
     Tag "Big Green Alien"
     Obituary "%o was bruised by an alien."
     HitObituary "%o was ripped open by an alien."
 }
 
-
-//reverted to original
-ACTOR AAA23 : HellKnight 25171//69
+Actor AAA23 : HellKnight 25171//69
 {
     Tag "Little Green Alien"
     HitObituary "%o was gutted by an alien."
     Obituary "%o was splayed by an alien."
 }
 
-
-
-//reverted to original
-ACTOR AAA24 : PainElemental 25172//71
+Actor AAA24 : PainElemental 25172//71
 {
     Tag "Alien"
     States
@@ -8195,49 +7655,33 @@ ACTOR AAA24 : PainElemental 25172//71
     }
 }
 
-
-//reverted to original
-ACTOR AAA25 : LostSoul 25173//3006
+Actor AAA25 : LostSoul 25173//3006
 {
     Tag "Alien Invader"
     Obituary "%o was spooked by an alien."
 }
 
-
-
-
-//reverted to original
-ACTOR AAA27 : Cacodemon 25174//3005
+Actor AAA27 : Cacodemon 25174//3005
 {
     Tag "Alien UFO"
     Obituary "%o got too close to an alien."
     HitObituary "%o was smitten by an alien."
 }
 
-
-
-
-//reverted to original
-ACTOR AAA28 : Demon 25175//3002
+Actor AAA28 : Demon 25175//3002
 {
     Tag "Amphibian Alien"
     Obituary "%o was bit by an alien."
 }
 
-
-
-
-
-//reverted to original
-ACTOR AAA29 : DoomImp 25176//3001
+Actor AAA29 : DoomImp 25176//3001
 {
     Tag "An Alien"
     HitObituary "%o was slashed by an alien."
     Obituary "%o was burned by an alien."
 }
 
-//reverted to original
-ACTOR AAA30 : ChaingunGuy 25177//65
+Actor AAA30 : ChaingunGuy 25177//65
 {
     Tag "Illegal Alien"
     Obituary "%o was perforated by an alien."
@@ -8280,29 +7724,20 @@ ACTOR AAA30 : ChaingunGuy 25177//65
     }
 }
 
-
-
-//reverted to original
-ACTOR AAA31 : ShotgunGuy 25178//9
+Actor AAA31 : ShotgunGuy 25178//9
 {
     Tag "Alien Sympathizer"
     Obituary "%o was shot by an alien."
 }
 
-
-
-//reverted to original
-ACTOR AAA32 : ZombieMan 25179//3004
+Actor AAA32 : ZombieMan 25179//3004
 {
     Tag "A Alien"
     Obituary "%o was killed by an alien."
     DropItem "Clip"
 }
 
-
-
-//reverted to original
-ACTOR AAA33 : WolfensteinSS 25180//84
+Actor AAA33 : WolfensteinSS 25180//84
 {
     Tag "Stealth Plasma Alien"
     Health 30//
@@ -8350,8 +7785,7 @@ ACTOR AAA33 : WolfensteinSS 25180//84
     }
 }
 
-
-ACTOR AAA34 : AAA33 25181//23
+Actor AAA34 : AAA33 25181//23
 {
     Tag "Stealth Plasma Alien"
 }
@@ -8360,38 +7794,34 @@ ACTOR AAA34 : AAA33 25181//23
 /////SWIM WITH THE WHALES////
 //////////////////////////////
 
-ACTOR SWTW1 : ShortBlueTorch 25182//55
+Actor SWTW1 : ShortBlueTorch 25182//55
 {States{Spawn:AABL ABCD 4 Bright
     Loop}}
 
-ACTOR SWTW2 : ShortRedTorch 25183//57
+Actor SWTW2 : ShortRedTorch 25183//57
 {States{Spawn:AABL EFGH 4 Bright
     Loop}}
 
-ACTOR SWTW3 : ShortGreenTorch 25184//56
+Actor SWTW3 : ShortGreenTorch 25184//56
 {States{Spawn:AABL IJKL 4 Bright
     Loop}}
 
 
 ////Stardate 20x6
 
-
-//reverted to original
-ACTOR SD20x6A1 : GreenArmor 25185//GreenArmor  2018
+Actor SD20x6A1 : GreenArmor 25185//GreenArmor  2018
 {
 Translation "112:127=250:254", "126:127=254:254"
 }
 //25064//25186
 
-//reverted to original
-ACTOR SD20x6A2 : ExplosiveBarrel 25187//2035
+Actor SD20x6A2 : ExplosiveBarrel 25187//2035
 {
 Translation "112:127=250:254"
 }
 
-//reverted to original
 //HellKnight
-ACTOR SD20x6A3 : HellKnight 25188//69
+Actor SD20x6A3 : HellKnight 25188//69
 {
 Translation "112:127=250:254"
 States
@@ -8404,9 +7834,8 @@ Missile:
 }
 }
 
-//reverted to original
 //BaronOfHell
-ACTOR SD20x6A4 : BaronOfHell 25189//3003
+Actor SD20x6A4 : BaronOfHell 25189//3003
 {
 Translation "112:127=250:254"
 States
@@ -8419,33 +7848,32 @@ Missile:
 }
 }
 //EvilEye
-ACTOR SD20x6A5 : EvilEye 25190//41
+Actor SD20x6A5 : EvilEye 25190//41
 {
 Translation "113:126=250:255"
 }
 //GreenTorch
-ACTOR SD20x6A6 : GreenTorch 25191//45
+Actor SD20x6A6 : GreenTorch 25191//45
 {
 Translation "112:122=251:254", "112:113=250:250", "123:127=254:254"
 }
 //ShortGreenTorch
-ACTOR SD20x6A7 : ShortGreenTorch 25192//56
+Actor SD20x6A7 : ShortGreenTorch 25192//56
 {
 Translation "112:122=251:254", "112:113=250:250", "123:127=254:254"
 }
 
-//reverted to original
 //InvulnerabilitySphere
-ACTOR SD20x6A8 : InvulnerabilitySphere  25193//2022
+Actor SD20x6A8 : InvulnerabilitySphere  25193//2022
 {
 Translation "11:12=254:8", "114:127=250:254", "160:163=170:172", "225:231=169:169"
 }//Allmap
-ACTOR SD20x6A9 : Allmap  25194//2026
+Actor SD20x6A9 : Allmap  25194//2026
 {
 Translation "9:12=254:254", "112:125=250:254", "126:127=254:254", "160:163=170:172"
 }
 //BaronBall
-ACTOR SD20x6A10 : BaronBall
+Actor SD20x6A10 : BaronBall
 {
 Translation "111:122=250:254", "123:127=254:254"
 }
@@ -8453,8 +7881,7 @@ Translation "111:122=250:254", "123:127=254:254"
 //STARDATE 20X7
 //AABL IJKL
 
-//reverted to original
-ACTOR SD20x7A1 : ArmorBonus 25195//2015
+Actor SD20x7A1 : ArmorBonus 25195//2015
 {
   States
   {
@@ -8464,7 +7891,7 @@ ACTOR SD20x7A1 : ArmorBonus 25195//2015
   }
 }
 
-ACTOR SD20x7A2 :  ExplosiveBarrel 25196//2035
+Actor SD20x7A2 :  ExplosiveBarrel 25196//2035
 {
   States
   {
@@ -8483,7 +7910,7 @@ ACTOR SD20x7A2 :  ExplosiveBarrel 25196//2035
   }
 }
 
-ACTOR SD20x7A3 : HeadCandles 25197//29
+Actor SD20x7A3 : HeadCandles 25197//29
 {
   States
   {
@@ -8493,7 +7920,7 @@ ACTOR SD20x7A3 : HeadCandles 25197//29
   }
 }
 
-ACTOR SD20x7A4 : LiveStick 25198//26
+Actor SD20x7A4 : LiveStick 25198//26
 {
   States
   {
@@ -8504,7 +7931,7 @@ ACTOR SD20x7A4 : LiveStick 25198//26
   }
 }
 
-ACTOR SD20x7A5 : ShortGreenTorch 25199//56
+Actor SD20x7A5 : ShortGreenTorch 25199//56
 {
   States
   {
@@ -8514,7 +7941,7 @@ ACTOR SD20x7A5 : ShortGreenTorch 25199//56
   }
 }
 
-ACTOR SD20x7A6 : GreenTorch 25200//45
+Actor SD20x7A6 : GreenTorch 25200//45
 {
   +SPAWNCEILING
   +NOGRAVITY
@@ -8526,7 +7953,7 @@ ACTOR SD20x7A6 : GreenTorch 25200//45
   }
 }
 
-ACTOR SD20x7A7 : TechLamp 25201//85
+Actor SD20x7A7 : TechLamp 25201//85
 {
   +SPAWNCEILING
   +NOGRAVITY
@@ -8538,8 +7965,7 @@ ACTOR SD20x7A7 : TechLamp 25201//85
   }
 }
 
-//reverted to original
-ACTOR SD20x7A8 : BossBrain 25202//88
+Actor SD20x7A8 : BossBrain 25202//88
 {
   Health 250
   Mass 10000000
@@ -8567,7 +7993,6 @@ ACTOR SD20x7A8 : BossBrain 25202//88
   }
 }
 
-//reverted to original
 Actor SD20x7A9 : Afrit 25203//72
 {
   Health 1000
@@ -8604,28 +8029,28 @@ Actor SD20x7A9 : Afrit 25203//72
   }
 }
 
-ACTOR SD20x7A10 : Soulsphere 25204//2013
+Actor SD20x7A10 : Soulsphere 25204//2013
 {
 Translation "192:196=170:172", "196:207=250:254", "240:242=254:254", "243:246=5:8"
 }
 
-ACTOR SD20x7A11 : ShortBlueTorch 25205//55
+Actor SD20x7A11 : ShortBlueTorch 25205//55
 {
-Translation "196:207=250:254", "240:246=254:254"
+Translation "192:195=250:250", "196:207=250:254", "240:246=254:254"
 }
-ACTOR SD20x7A12 : ShortBlueTorch 25206//44
+
+Actor SD20x7A12 : ShortBlueTorch 25206//44
 {
-Translation "196:207=250:254", "240:246=254:254"
+Translation "192:195=250:250", "196:207=250:254", "240:246=254:254"
 }
-ACTOR SD20x7A13 : HealthBonus 25207//2014
+
+Actor SD20x7A13 : HealthBonus 25207//2014
 {
 Translation "196:207=250:254", "240:242=254:254", "243:246=5:8"
 }
 
 //1024
-
-
-ACTOR 1024A1 : ShortGreenColumn 25208//31
+Actor 1024A1 : ShortGreenColumn 25208//31
 {
     States
     {
@@ -8635,7 +8060,7 @@ ACTOR 1024A1 : ShortGreenColumn 25208//31
 }
 
 //HellPike EasterEgg Map
-ACTOR hp101SDA : ArachnotronPlasma
+Actor hp101SDA : ArachnotronPlasma
 {
     Tag "Alien Plasma"
     Radius 4
@@ -8656,8 +8081,7 @@ ACTOR hp101SDA : ArachnotronPlasma
     }
 }
 
-
-ACTOR HPArachnorb
+Actor HPArachnorb
 {
     Health 120
     Speed 18
@@ -8747,7 +8171,7 @@ Actor hpAfrit : Afrit
   }
 }
 
-ACTOR hp101Fire
+Actor hp101Fire
 {
     Game Doom
     Radius 1
@@ -8779,7 +8203,7 @@ ACTOR hp101Fire
     }
 }
 
-ACTOR hp101Fire2 : hp101Fire
+Actor hp101Fire2 : hp101Fire
 {
     Radius 1
     Height 1
@@ -8796,7 +8220,7 @@ ACTOR hp101Fire2 : hp101Fire
     }
 }
 
-ACTOR hp101Fire3 : hp101Fire
+Actor hp101Fire3 : hp101Fire
 {
     Radius 1
     Height 1
@@ -8814,26 +8238,24 @@ ACTOR hp101Fire3 : hp101Fire
 }
 
 
-ACTOR HP101Sound 25209
+Actor HP101Sound 25209
 {
-+LOOKALLAROUND
-+NOINTERACTION
+    +LOOKALLAROUND
+    +NOINTERACTION
     States
     {
         Spawn:
-TNT1 A 0
-TNT1 A 0
-TNT1 A 1 A_Look
-loop
-See:
-TNT1 A 33 //A_StopSound(4)
-TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 0, 0.0)
-TNT1 A 10989
-        Stop
+            TNT1 A 1 A_Look
+            loop
+        See:
+            TNT1 A 33 //A_StopSound(4)
+            TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 0, 0.0)
+            TNT1 A 10989
+            Stop
     }
 }
 
-ACTOR HP101Spawners : SwitchableDecoration 25210
+Actor HP101Spawners : SwitchableDecoration 25210
 {
 +NOINTERACTION
 +NOCLIP
@@ -8885,7 +8307,7 @@ Loop
     }
 }
 
-ACTOR HellPike
+Actor HellPike
 {
     Game Doom
     Health 7000
@@ -8981,7 +8403,8 @@ ACTOR HellPike
         Stop
     }
 }
-ACTOR StoicHellPike : HellPike 666
+
+Actor StoicHellPike : HellPike 666
 {
 Health 10
 States
@@ -9007,7 +8430,7 @@ Spawn:
 //
 //========================================
 
-ACTOR EpicSagaOfViolenceAndMadness
+Actor EpicSagaOfViolenceAndMadness
 {
     Game Doom
     SpawnID 98
@@ -9027,7 +8450,7 @@ ACTOR EpicSagaOfViolenceAndMadness
     }
 }
 
-ACTOR ArchGuts
+Actor ArchGuts
 {
     Radius 8
     Height 12
@@ -9086,7 +8509,7 @@ Stop
     }
 }
 
-ACTOR HPHealer
+Actor HPHealer
 {
     Game Doom
     Health 50
@@ -9208,7 +8631,7 @@ Actor CHXBossBrain : BossBrain 25213 //88
 ///////////New Deus Vult Barrel
 
 //Yes 160 barrels are stacked onto eachother in the map :/. The explode parameter is set to reflect 160 barrels detonating at once.
-ACTOR DeusVultExplosiveBarrel : ExplosiveBarrel 25214
+Actor DeusVultExplosiveBarrel : ExplosiveBarrel 25214
 {
     States
     {

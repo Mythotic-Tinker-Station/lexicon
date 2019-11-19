@@ -30,7 +30,7 @@ strict namespace
                                                                 // the number a linedef uses to cast the vote
         // Normal mapsets
         { "Nothing",                        "----"          }, // 0
-        { "Doom 2",                         "MAP01"         }, // 1
+        { "Hell on Earth",                  "MAP01"         }, // 1
         { "Hell Revealed",                  "HR01"          }, // 2
         { "Hell Revealed 2",                "HR201"         }, // 3
         { "Kamasutra",                      "KS01"          }, // 4
@@ -46,7 +46,7 @@ strict namespace
 		{ "Forest Swords",			        "FSW01"	        }, // 14
 		{ "Doom Core Trilogy",		        "DC01"	        }, // 15
 		{ "Maps of Chaos",	                "MOC01"	        }, // 16
-		{ "Doom 2 The Way ID Did",	        "WID01"         }, // 17
+		{ "Doom2 The Way ID Did",	        "WID01"         }, // 17
 		{ "Estranged",				        "EST01"         }, // 18
 		{ "Going Down",				        "GD01"	        }, // 19
 		{ "Dark Encounters",		        "DKE01"	        }, // 20
@@ -60,7 +60,7 @@ strict namespace
         { "Hell Core",			            "HC01"	        }, // 28
         { "Ancient Aliens",			        "AA101"	        }, // 29
         { "Valiant",			            "VAL01"	        }, // 30
-        { "Epic 1",			                "EP101"	        }, // 31
+        { "Epic",			                "EP101"	        }, // 31
         { "Epic 2",			                "EP201"	        }, // 32
         { "Nova",			                "NV101"	        }, // 33
         { "Community Chest 1",			    "CC101"	        }, // 34
@@ -78,16 +78,16 @@ strict namespace
         { "Zones Of Fear",			        "ZOF01"	        }, // 46
         { "Zone 300",			            "ZTH01"	        }, // 47
         { "Interception",			        "INT01"	        }, // 48
-        { "Doom 2 Redux",			        "RDX01"	        }, // 49
-        { "Unused",			                "MAP01"	        }, // 50
-        { "Unused",			                "MAP01"	        }, // 51
-        { "Unused",			                "MAP01"	        }, // 52
-        { "Unused",			                "MAP01"	        }, // 53
-        { "Unused",			                "MAP01"	        }, // 54
-        { "Unused",			                "MAP01"	        }, // 55
-        { "Unused",			                "MAP01"	        }, // 56
-        { "Unused",			                "MAP01"	        }, // 57
-        { "Unused",			                "MAP01"	        }, // 58
+        { "Doom2 Redux",			        "RDX01"	        }, // 49
+        { "Knee-Deep in the Dead",		    "E1M1"	        }, // 50
+        { "The Shores of Hell",			    "E2M1"	        }, // 51
+        { "Inferno",			            "E3M1"	        }, // 52
+        { "Thy Flesh Consumed",			    "E4M1"	        }, // 53
+        { "Sigil",			                "E5M1"	        }, // 54
+        { "No Rest For The Living",			"NV_MAP01"	    }, // 55
+        { "The Master Levels",			    "ML_MAP01"	    }, // 56
+        { "TNT: Evilution",			        "TN_MAP01"	    }, // 57
+        { "The Plutonia Experiment",		"PL_MAP01"	    }, // 58
         { "Unused",			                "MAP01"	        }, // 59
         { "Unused",			                "MAP01"	        }, // 60
         { "Unused",			                "MAP01"	        }, // 61
@@ -105,7 +105,7 @@ strict namespace
 		{ "Swift Death",			        "SDE01"            }, // 71
         { "Deus Vult",				        "DV01"	           }, // 72
         { "Pizza Steve",			        "PIZ01"            }, // 73
-        { "Deus Vult II",			        "DV201"            }, // 74
+        { "Deus Vult 2",			        "DV201"            }, // 74
         { "SlaughterFest 2012",			    "SF201"            }, // 75
         { "New Gothic Movement 2",			"NG201"            }, // 76
         { "SlaughterFest 2013",			    "SF301"            }, // 77
@@ -287,17 +287,18 @@ strict namespace
     // stuff that runs during any level
     script "SV_Level" open
     {
+        if(CheckFont("WILV00"))     { SetCvar("lexicon_global_iwad_doom1", 1); }
+        if(CheckFont("CWILV00"))    { SetCvar("lexicon_global_iwad_doom2", 1); }
+        if(CheckFont("PWILV00"))    { SetCvar("lexicon_global_iwad_plut", 1); }
+        if(CheckFont("TWILV00"))    { SetCvar("lexicon_global_iwad_tnt", 1); }
+        if(CheckFont("WILV40"))     { SetCvar("lexicon_global_iwad_sigil", 1); }
+        if(CheckFont("M_MASTER"))   { SetCvar("lexicon_global_iwad_master", 1); }
+        if(CheckFont("M_NOREST"))   { SetCvar("lexicon_global_iwad_norest", 1); }
+        
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-            if(CheckFont("WILV00"))     { SetCvar("lexicon_global_iwad_doom1", 1); }
-            if(CheckFont("CWILV00"))    { SetCvar("lexicon_global_iwad_doom2", 1); }
-            if(CheckFont("PWILV00"))    { SetCvar("lexicon_global_iwad_plut", 1); }
-            if(CheckFont("TWILV00"))    { SetCvar("lexicon_global_iwad_tnt", 1); }
-            if(CheckFont("WILV40"))     { SetCvar("lexicon_global_iwad_sigil", 1); }
-            if(CheckFont("M_MASTER"))   { SetCvar("lexicon_global_iwad_master", 1); }
-            if(CheckFont("M_NOREST"))   { SetCvar("lexicon_global_iwad_norest", 1); }
-            
+
             terminate;
         }
         // if the level is anything but the HUB map

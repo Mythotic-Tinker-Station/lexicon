@@ -290,6 +290,14 @@ strict namespace
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
+            if(CheckFont("WILV00"))     { SetCvar("lexicon_global_iwad_doom1", 1); }
+            if(CheckFont("CWILV00"))    { SetCvar("lexicon_global_iwad_doom2", 1); }
+            if(CheckFont("PWILV00"))    { SetCvar("lexicon_global_iwad_plut", 1); }
+            if(CheckFont("TWILV00"))    { SetCvar("lexicon_global_iwad_tnt", 1); }
+            if(CheckFont("WILV40"))     { SetCvar("lexicon_global_iwad_sigil", 1); }
+            if(CheckFont("M_MASTER"))   { SetCvar("lexicon_global_iwad_master", 1); }
+            if(CheckFont("M_NOREST"))   { SetCvar("lexicon_global_iwad_norest", 1); }
+            
             terminate;
         }
         // if the level is anything but the HUB map

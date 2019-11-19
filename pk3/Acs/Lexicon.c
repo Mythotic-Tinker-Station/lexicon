@@ -294,7 +294,7 @@ strict namespace
         if(CheckFont("WILV40"))     { SetCvar("lexicon_global_iwad_sigil", 1); }
         if(CheckFont("M_MASTER"))   { SetCvar("lexicon_global_iwad_master", 1); }
         if(CheckFont("M_NOREST"))   { SetCvar("lexicon_global_iwad_norest", 1); }
-        
+    
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
@@ -699,8 +699,24 @@ strict namespace
     
     script "MusicBox" (int id)
     {
+        switch(GetCVar("lexicon_global_votechosen"))
+        {
+            case 50:
+            case 51:
+            case 52:
+            case 53:
+            case 54:
+            case 55:
+            case 56:
+            case 57:
+            case 58:
+            terminate;
+            break;
+        }
+    
         if(GetCVar("lexicon_global_miscpk3") == 0)
         {
+        
             str track = "";
             int lastid = GetCVar("lexicon_global_musicid");
             

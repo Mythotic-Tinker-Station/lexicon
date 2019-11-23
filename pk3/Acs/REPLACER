@@ -6,7 +6,7 @@ int NumMonsters;
 function int GetCurrentMapset(void)
 {
     int strIndex = StrParam(n:PRINTNAME_LEVEL);
-    str mapset = StrMid(strIndex, 0, 3);
+    str mapset = StrLeft(strIndex, 3);
 
     if (!StrIcmp(mapset, "CS0") || !StrIcmp(mapset, "CS2"))
     {

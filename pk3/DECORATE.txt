@@ -1601,11 +1601,11 @@ Actor LexiconEvilMarine : WolfensteinSS 20305 //84
   Mass 100
   Speed 16
   PainChance 30
-  SeeSound "DSPOSIT2"
+  SeeSound "grunt/sight"
   AttackSound ""
-  PainSound "DSPOPAIN"
-  DeathSound "DSPODTH2"
-  ActiveSound "DSPOSACT"
+  PainSound "grunt/pain"
+  DeathSound "grunt/death"
+  ActiveSound "grunt/active"
   DropItem "Cell"
   Translation 2
   States

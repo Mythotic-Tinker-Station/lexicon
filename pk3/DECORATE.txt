@@ -2,61 +2,27 @@
 // The replacement code //
 //////////////////////////
 
-Actor LCellPack : CellPack replaces CellPack
-{
-    States
-    {
-    Spawn:
-       TNT1 A 0
-       TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-       Goto Super::Spawn
-    EP1EP2:
-       TNT1 A 0 A_SpawnItemEx("Epic2A17Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-       Stop
-    }
-}
-
-Actor Epic2A17Spawner : RandomSpawner
-{
-    DropItem "Epic2A17"
-}
-
-Actor LCell : Cell replaces Cell
+Actor LZombieMan : ZombieMan replaces ZombieMan
 {
     States
     {
     Spawn:
         TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 2, "CS1CS2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
         Goto Super::Spawn
+    CS1CS2:
+        TNT1 A 0 A_SpawnItemEx("CS2ZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("Epic1A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    AA1:
+        TNT1 A 0 A_SpawnItemEx("AAA32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
-}
-
-Actor Epic2A16Spawner : RandomSpawner
-{
-    DropItem "Epic2A16"
-}
-
-Actor LClip : Clip replaces Clip
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-        Goto Super::Spawn
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A18Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor Epic2A18Spawner : RandomSpawner
-{
-    DropItem "Epic2A18"
 }
 
 Actor LShotgunGuy : ShotgunGuy replaces ShotgunGuy
@@ -105,79 +71,6 @@ Actor LChaingunGuy : ChaingunGuy replaces ChaingunGuy
     }
 }
 
-//Arbitrary state keeps this Actor alive, when the new monster is spawned this Actor is set as master, when the child is destroyed it will destroy this master, which will trigger mapspecials. This must be done for all mapspecial monsters.
-Actor MapSpecial : Inventory
-{
-    Inventory.MaxAmount 1
-}
-
-Actor LBaronOfHell : BaronOfHell replaces BaronOfHell
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
-        Goto Super::Spawn
-    VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("ValiantSuperMancubus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("AAA22", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    SD6SD7:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("SD20x6A4", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial",1,"SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
-    }
-}
-
-Actor LZombieMan : ZombieMan replaces ZombieMan
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 2, "CS1CS2")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    CS1CS2:
-        TNT1 A 0 A_SpawnItemEx("CS2ZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic1A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
 Actor LDoomImp : DoomImp replaces Doomimp
 {
     States
@@ -201,78 +94,29 @@ Actor LDoomImp : DoomImp replaces Doomimp
     }
 }
 
-Actor LArachnotron : Arachnotron replaces Arachnotron
+Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
 {
     States
     {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 3, "SC2")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 5, "HC0HC1")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
     Idle:
         Goto Super::Spawn
-    VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("ValiantArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("AAA120", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial",1,"SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
+    SC2:
+        TNT1 A 0 A_SpawnItemEx("LexiconEvilMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
-    }
-}
-
-Actor LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("ValiantCybruiser", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
+    HC0HC1:
+        TNT1 A 0 A_SpawnItemEx("HLC_WolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A38", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("AAA15", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial",1,"SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
+        TNT1 A 0 A_SpawnItemEx("AAA33", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -343,6 +187,372 @@ Actor LRevenant : Revenant replaces Revenant
         TNT1 A 0 A_SpawnItemEx("AAA17", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
+}
+
+Actor LLostSoul : LostSoul replaces LostSoul
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    VAL:
+        TNT1 A 0 A_SpawnItemEx("ValiantLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    AA1:
+        TNT1 A 0 A_SpawnItemEx("AAA25", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor LPainElemental : PainElemental replaces PainElemental
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    AA1:
+        TNT1 A 0 A_SpawnItemEx("AAA24", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor LHellKnight : HellKnight replaces HellKnight
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
+    Idle:
+        Goto Super::Spawn
+    AA1:
+        TNT1 A 0 A_SpawnItemEx("AAA23", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
+    Idle:
+        Goto Super::Spawn
+    VAL:
+        TNT1 A 0 A_SpawnItemEx("ValiantPyroDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor LArchvile : Archvile replaces Archvile
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    AA1:
+        TNT1 A 0 A_SpawnItemEx("AAA16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+//Arbitrary state keeps this Actor alive, when the new monster is spawned this Actor is set as master, when the child is destroyed it will destroy this master, which will trigger mapspecials. This must be done for all mapspecial monsters.
+Actor MapSpecial : Inventory
+{
+    Inventory.MaxAmount 1
+}
+
+Actor LArachnotron : Arachnotron replaces Arachnotron
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    VAL:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("ValiantArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    AA1:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("AAA120", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    Arbitrary:
+        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+    ADDS:
+        TNT1 A 6
+        Loop
+    Death:
+        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
+        Goto Super::Death
+    SpecialDeath:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+Actor LFatso : Fatso replaces Fatso
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    AA1:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("AAA19", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    Arbitrary:
+        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+    ADDS:
+        TNT1 A 6
+        Loop
+    Death:
+        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
+        Goto Super::Death
+    SpecialDeath:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+Actor LBaronOfHell : BaronOfHell replaces BaronOfHell
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
+    Idle:
+        Goto Super::Spawn
+    VAL:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("ValiantSuperMancubus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    AA1:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("AAA22", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    SD6SD7:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("SD20x6A4", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    Arbitrary:
+        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+    ADDS:
+        TNT1 A 6
+        Loop
+    Death:
+        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
+        Goto Super::Death
+    SpecialDeath:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+Actor LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    VAL:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("ValiantCybruiser", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    AA1:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("AAA15", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    Arbitrary:
+        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+    ADDS:
+        TNT1 A 6
+        Loop
+    Death:
+        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
+        Goto Super::Death
+    SpecialDeath:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+Actor LCyberdemon : Cyberdemon replaces Cyberdemon
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+    Idle:
+        Goto Super::Spawn
+    AA1:
+        TNT1 A 0 A_GiveInventory("MapSpecial")
+        TNT1 A 0 A_NoBlocking
+        TNT1 A 0 A_SpawnItemEx("AAA14", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Goto Arbitrary
+    Arbitrary:
+        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
+        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
+        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
+        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
+    ADDS:
+        TNT1 A 6
+        Loop
+    Death:
+        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
+        Goto Super::Death
+    SpecialDeath:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+Actor LCellPack : CellPack replaces CellPack
+{
+    States
+    {
+    Spawn:
+       TNT1 A 0
+       TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+       Goto Super::Spawn
+    EP1EP2:
+       TNT1 A 0 A_SpawnItemEx("Epic2A17Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+       Stop
+    }
+}
+
+Actor Epic2A17Spawner : RandomSpawner
+{
+    DropItem "Epic2A17"
+}
+
+Actor LCell : Cell replaces Cell
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Epic2A16Spawner : RandomSpawner
+{
+    DropItem "Epic2A16"
+}
+
+Actor LClip : Clip replaces Clip
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A18Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Epic2A18Spawner : RandomSpawner
+{
+    DropItem "Epic2A18"
+}
+
+Actor LHealthBonus : HealthBonus replaces HealthBonus
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        Goto Super::Spawn
+    MAY:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A31Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Mayhem17HealthBonusSpawner : RandomSpawner
+{
+    DropItem "Mayhem17HealthBonus"
+}
+
+Actor Epic2A31Spawner : RandomSpawner
+{
+    DropItem "Epic2A31"
 }
 
 Actor LArmorBonus : ArmorBonus replaces ArmorBonus
@@ -439,52 +649,6 @@ Actor Mayhem17SoulsphereSpawner : RandomSpawner
     DropItem "Mayhem17Soulsphere"
 }
 
-Actor LRocketLauncher : WeaponGiver replaces RocketLauncher
-{
-    DropItem "RocketLauncher"
-    Inventory.PickupMessage "$GOTLAUNCHER"
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-    DDS:
-        LAUN A -1
-        Stop
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor Epic2A8Spawner : RandomSpawner
-{
-    DropItem "Epic2A8"
-}
-
-Actor LPlasmaRifle : WeaponGiver replaces PlasmaRifle
-{
-    DropItem "PlasmaRifle"
-    Inventory.PickupMessage "$GOTPLASMA"
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-    DDS:
-        PLAS A -1
-        Stop
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A7Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor Epic2A7Spawner : RandomSpawner
-{
-    DropItem "Epic2A7"
-}
-
 Actor LGreenArmor : GreenArmor replaces GreenArmor
 {
     States
@@ -530,197 +694,6 @@ Actor LBlueArmor : BlueArmor replaces BlueArmor
 Actor Mayhem17BlueArmorSpawner : RandomSpawner
 {
     DropItem "Mayhem17BlueArmor"
-}
-
-Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
-        Goto Super::Spawn
-    VAL:
-        TNT1 A 0 A_SpawnItemEx("ValiantPyroDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LLostSoul : LostSoul replaces LostSoul
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    VAL:
-        TNT1 A 0 A_SpawnItemEx("ValiantLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA25", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LArchvile : Archvile replaces Archvile
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LFatso : Fatso replaces Fatso
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("AAA19", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial",1,"SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
-    }
-}
-
-Actor LHellKnight : HellKnight replaces HellKnight
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
-        Goto Super::Spawn
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA23", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A3", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LCyberdemon : Cyberdemon replaces Cyberdemon
-{
-    States
-    {
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial",1,"SpecialDeath")
-        Goto Super::Death
-    AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
-        TNT1 A 0 A_SpawnItemEx("AAA14", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
-    }
-}
-
-Actor LPainElemental : PainElemental replaces PainElemental
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA24", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 3, "SC2")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 5, "HC0HC1")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
-    SC2:
-        TNT1 A 0 A_SpawnItemEx("LexiconEvilMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    HC0HC1:
-        TNT1 A 0 A_SpawnItemEx("HLC_WolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A38", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA33", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-        Goto Super::Spawn
-    SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
 }
 
 Actor LMegasphere : Megasphere replaces Megasphere
@@ -803,32 +776,64 @@ Actor LInfrared : Infrared replaces Infrared
     }
 }
 
-Actor LHealthBonus : HealthBonus replaces HealthBonus
+Actor LRocketLauncher : WeaponGiver replaces RocketLauncher
+{
+    DropItem "RocketLauncher"
+    Inventory.PickupMessage "$GOTLAUNCHER"
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+    DDS:
+        LAUN A -1
+        Stop
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Epic2A8Spawner : RandomSpawner
+{
+    DropItem "Epic2A8"
+}
+
+Actor LPlasmaRifle : WeaponGiver replaces PlasmaRifle
+{
+    DropItem "PlasmaRifle"
+    Inventory.PickupMessage "$GOTPLASMA"
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+    DDS:
+        PLAS A -1
+        Stop
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A7Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Epic2A7Spawner : RandomSpawner
+{
+    DropItem "Epic2A7"
+}
+
+Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
     States
     {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
-    MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A31Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+    SD6SD7:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
-}
-
-Actor Mayhem17HealthBonusSpawner : RandomSpawner
-{
-    DropItem "Mayhem17HealthBonus"
-}
-
-Actor Epic2A31Spawner : RandomSpawner
-{
-    DropItem "Epic2A31"
 }
 
 /////////////
@@ -7178,26 +7183,39 @@ Actor AAA13 : CommanderKeen 25163// KEEN (72)
     Speed 8
     Mass 400
     PainChance 64
-    PainSound "AAkeenpn"
+    SeeSound "AAbospit"
+    ActiveSound "AAkeenpn"
+    PainSound "demon/pain"
     DeathSound "AAkeendt"
     States
     {
     Spawn:
-        AABF A -1
+        AABF ABCDEF 3 A_Look
         Loop
-    Death:
-        AABF AB 6
-        AABF C 6 A_Scream
-        AABF DEFGH 6
-        AABF I 6 A_NoBlocking
-        AABF J 6
-        AABF K 6 A_KeenDie
-        AABF L -1
-        Stop
+    See:
+        AABF ABCDEF 3 A_Chase
+        Loop
+    Missile:
+        AABF G 8 BRIGHT A_FaceTarget
+        AABF H 6 BRIGHT A_FaceTarget
+        AABF I 6 BRIGHT A_SkelMissile
+        AABF H 6 BRIGHT A_FaceTarget
+        AABF I 6 BRIGHT A_SkelMissile
+        AABF H 6 BRIGHT A_FaceTarget
+        AABF I 6 BRIGHT A_SkelMissile
+        AABF H 6 BRIGHT A_FaceTarget
+        AABF G 14 BRIGHT A_FaceTarget
+        Goto See
     Pain:
-        AABF M 4
-        AABF M  8 A_Pain
-        Goto Spawn
+        AABF J 3
+        AABF J 3 A_Pain
+        Goto See
+    Death:
+        AABF K 4 BRIGHT A_Fall
+        AABF L 4 BRIGHT A_Explode
+        AABF M 4 BRIGHT A_Scream
+        AABF NOPQ 4 BRIGHT
+        Stop
     }
 }
 
@@ -7443,24 +7461,24 @@ Actor AAA33 : WolfensteinSS 25180//84
     Health 30//
     Speed 14//
     SeeSound "AAsssit"
+    ActiveSound "AAboscub"
     DeathSound "AAssdth"
     Obituary "%o met an alien."//
-    Dropitem "NULL"
+    Dropitem ""
     States
     {
     Spawn:
         AABJ AB 10 A_Look
         Loop
     See:
-        AABJ AABBCCDD 3 A_Chase
+        AABJ AABBCCDD 2 A_Chase
         Loop
     Missile:
         AABJ EF 10 A_FaceTarget
         AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32) //AAA21
-        AABJ F 6 A_FaceTarget
+        AABJ F 4 A_FaceTarget
         AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
-        AABJ F 1 A_CPosRefire
-        Goto Missile+1
+        Goto See
     Pain:
         AABJ H 3
         AABJ H 3 A_Pain
@@ -7473,11 +7491,6 @@ Actor AAA33 : WolfensteinSS 25180//84
         AABJ M -1
         Stop
     XDeath:
-        AABJ N 5
-        AABJ O 5 A_XScream
-        AABJ P 5 A_NoBlocking
-        AABJ QRSTU 5
-        AABJ V -1
         Stop
     Raise:
         AABJ MLKJI 5

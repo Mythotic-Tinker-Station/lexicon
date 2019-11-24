@@ -947,40 +947,40 @@ object ValiantImpBall
 // Valiant Plasma
 pointlight VALIANTPLASMABALL
 {
-    color 1.0 0.1 0.1
+    color 1.0 0.3 0.3
     size 56
 }
 
 flickerlight VALIANTPLASMA_X1
 {
-    color 1.0 0.2 0.2
-    size 64
-    secondarySize 72
-    chance 0.4
+    color 0.8 0.2 0.2
+    size 72
+    secondarySize 80
+    chance 0.3
 }
 
 flickerlight VALIANTPLASMA_X2
 {
-    color 0.8 0.2 0.2
-    size 80
-    secondarySize 88
-    chance 0.4
+    color 0.9 0.1 0.1
+    size 88
+    secondarySize 96
+    chance 0.3
 }
 
 flickerlight VALIANTPLASMA_X3
 {
-    color 0.5 0.1 0.1
-    size 64
-    secondarySize 72
-    chance 0.4
+    color 0.6 0.1 0.1
+    size 48
+    secondarySize 32
+    chance 0.3
 }
 
 flickerlight VALIANTPLASMA_X4
 {
-    color 0.2 0.0 0.0
-    size 8
+    color 0.3 0.0 0.0
+    size 24
     secondarySize 16
-    chance 0.4
+    chance 0.3
 }
 
 object ValiantPlamsa

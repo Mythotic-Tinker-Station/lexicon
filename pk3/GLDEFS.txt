@@ -288,6 +288,304 @@ object CS2ChaingunGuy
     frame CS2CF { light ZOMBIEATK }
 }
 
+// -------------------
+// -- Dark Tartarus --
+// -------------------
+
+// Explosive Barrel
+pulselight DARKTARTARUSBARREL
+{
+    color 0.5 0.0 0.0
+    size 20
+    secondarySize 21
+    interval 0.5
+    offset 0 36 0
+    dontlightself 1
+}
+
+object TAT__TkBarrel
+{
+    frame BAR1  { light DARKTARTARUSBARREL }
+
+    frame BEXPC { light ROCKET_X1 }
+    frame BEXPD { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
+}
+
+object TAT__TkExplosion
+{
+    frame MISLB { light ROCKET_X1 }
+    frame MISLC { light ROCKET_X2 }
+    frame MISLD { light ROCKET_X3 }
+}
+
+// Awesome Sphere
+pointlight DARKTARTARUSAWESOMESPHERE1
+{
+    color 0.7 0.7 0.1
+    size 40
+    offset 0 16 0
+}
+
+pointlight DARKTARTARUSAWESOMESPHERE2
+{
+    color 0.7 0.7 0.1
+    size 32
+    offset 0 16 0
+}
+
+pointlight DARKTARTARUSAWESOMESPHERE3
+{
+    color 0.7 0.7 0.1
+    size 24
+    offset 0 16 0
+}
+
+pointlight DARKTARTARUSAWESOMESPHERE4
+{
+    color 0.7 0.7 0.1
+    size 16
+    offset 0 16 0
+}
+
+object TAT__AwesomeSphere
+{
+    frame MEGAA { light DARKTARTARUSAWESOMESPHERE1 }
+
+    frame MEGAB { light DARKTARTARUSAWESOMESPHERE2 }
+    frame MEGAC { light DARKTARTARUSAWESOMESPHERE3 }
+    frame MEGAD { light DARKTARTARUSAWESOMESPHERE4 }
+}
+
+// Green Lost Soul
+flickerlight DARKTARTARUSLOSTSOUL
+{
+    color 0.15 1.0 0.15
+    size 56
+    secondarysize 64
+    chance 0.1
+}
+
+flickerlight DARKTARTARUSLOSTSOUL_X1
+{
+    color 0.15 0.8 0.15
+    size 72
+    secondarySize 80
+    chance 0.25
+}
+
+flickerlight DARKTARTARUSLOSTSOUL_X2
+{
+    color 0.1 0.6 0.1
+    size 88
+    secondarySize 96
+    chance 0.25
+}
+
+flickerlight DARKTARTARUSLOSTSOUL_X3
+{
+    color 0.05 0.4 0.05
+    size 104
+    secondarySize 112
+    chance 0.25
+}
+
+flickerlight DARKTARTARUSLOSTSOUL_X4
+{
+    color 0.0 0.2 0.0
+    size 112
+    secondarySize 120
+    chance 0.25
+}
+
+object TAT__GreenSoul
+{
+    frame SKULA { light DARKTARTARUSLOSTSOUL }
+    frame SKULB { light DARKTARTARUSLOSTSOUL }
+    frame SKULC { light DARKTARTARUSLOSTSOUL }
+    frame SKULD { light DARKTARTARUSLOSTSOUL }
+    frame SKULE { light DARKTARTARUSLOSTSOUL }
+    frame SKULF { light DARKTARTARUSLOSTSOUL }
+    frame SKULG { light DARKTARTARUSLOSTSOUL }
+
+    frame SKULH { light DARKTARTARUSLOSTSOUL_X1 }
+    frame SKULI { light DARKTARTARUSLOSTSOUL_X2 }
+    frame SKULJ { light DARKTARTARUSLOSTSOUL_X3 }
+    frame SKULK { light DARKTARTARUSLOSTSOUL_X4 }
+}
+
+object TAT__Kamikaze
+{
+    frame SKULC { light DARKTARTARUSLOSTSOUL }
+    frame SKULD { light DARKTARTARUSLOSTSOUL }
+    frame SKULE { light DARKTARTARUSLOSTSOUL }
+    frame SKULF { light DARKTARTARUSLOSTSOUL }
+    frame SKULG { light DARKTARTARUSLOSTSOUL }
+
+    frame SKULH { light DARKTARTARUSLOSTSOUL_X1 }
+    frame SKULI { light DARKTARTARUSLOSTSOUL_X2 }
+    frame SKULJ { light DARKTARTARUSLOSTSOUL_X3 }
+    frame SKULK { light DARKTARTARUSLOSTSOUL_X4 }
+}
+
+// Super Boss
+flickerlight DARKTARTARUSARCHATK1
+{
+    color 0.0 1.0 0.0
+    size 32
+    secondarySize 48
+    chance 0.3
+    offset 0 80 0
+}
+
+flickerlight DARKTARTARUSARCHATK2
+{
+    color 0.0 1.0 0.0
+    size 56
+    secondarySize 64
+    chance 0.3
+    offset 0 80 0
+}
+
+flickerlight DARKTARTARUSARCHATK3
+{
+    color 0.0 1.0 0.0
+    size 56
+    secondarySize 64
+    chance 0.3
+    offset 0 64 0
+}
+
+flickerlight DARKTARTARUSARCHATK4
+{
+    color 0.0 1.0 0.0
+    size 64
+    secondarySize 72
+    chance 0.3
+    offset 0 48 0
+}
+
+flickerlight DARKTARTARUSARCHATK5
+{
+    color 0.0 1.0 0.0
+    size 80
+    secondarySize 88
+    chance 0.3
+    offset 0 40 0
+}
+
+flickerlight DARKTARTARUSARCHATK6
+{
+    color 0.0 0.7 0.0
+    size 96
+    secondarySize 104
+    chance 0.3
+    offset 0 40 0
+}
+
+flickerlight DARKTARTARUSARCHATK7
+{
+    color 0.0 0.3 0.0
+    size 104
+    secondarySize 112
+    chance 0.3
+    offset 0 40 0
+}
+
+pulselight DARKTARTARUSARCHRES
+{
+    color 0.0 0.6 0.0
+    size 64
+    secondarySize 70
+    interval 0.5
+    offset 0 36 0
+}
+
+object TAT__SuperBoss
+{
+    frame VILEH { light DARKTARTARUSARCHATK1 }
+    frame VILEI { light DARKTARTARUSARCHATK2 }
+    frame VILEJ { light DARKTARTARUSARCHATK3 }
+    frame VILEK { light DARKTARTARUSARCHATK4 }
+    frame VILEL { light DARKTARTARUSARCHATK4 }
+    frame VILEM { light DARKTARTARUSARCHATK4 }
+    frame VILEN { light DARKTARTARUSARCHATK5 }
+    frame VILEO { light DARKTARTARUSARCHATK6 }
+    frame VILEP { light DARKTARTARUSARCHATK7 }
+
+    frame VILE[ { light DARKTARTARUSARCHRES }
+    frame VILE\ { light DARKTARTARUSARCHRES }
+    frame VILE] { light DARKTARTARUSARCHRES }
+}
+
+object TAT__SuperBoss2
+{
+    frame VILEH { light DARKTARTARUSARCHATK1 }
+    frame VILEI { light DARKTARTARUSARCHATK2 }
+    frame VILEJ { light DARKTARTARUSARCHATK3 }
+    frame VILEK { light DARKTARTARUSARCHATK4 }
+    frame VILEL { light DARKTARTARUSARCHATK4 }
+    frame VILEM { light DARKTARTARUSARCHATK4 }
+    frame VILEN { light DARKTARTARUSARCHATK5 }
+    frame VILEO { light DARKTARTARUSARCHATK6 }
+    frame VILEP { light DARKTARTARUSARCHATK7 }
+
+    frame VILE[ { light DARKTARTARUSARCHRES }
+    frame VILE\ { light DARKTARTARUSARCHRES }
+    frame VILE] { light DARKTARTARUSARCHRES }
+}
+
+object TAT__SuperBoss3
+{
+    frame VILEH { light DARKTARTARUSARCHATK1 }
+    frame VILEI { light DARKTARTARUSARCHATK2 }
+    frame VILEJ { light DARKTARTARUSARCHATK3 }
+    frame VILEK { light DARKTARTARUSARCHATK4 }
+    frame VILEL { light DARKTARTARUSARCHATK4 }
+    frame VILEM { light DARKTARTARUSARCHATK4 }
+    frame VILEN { light DARKTARTARUSARCHATK5 }
+    frame VILEO { light DARKTARTARUSARCHATK6 }
+    frame VILEP { light DARKTARTARUSARCHATK7 }
+
+    frame VILE[ { light DARKTARTARUSARCHRES }
+    frame VILE\ { light DARKTARTARUSARCHRES }
+    frame VILE] { light DARKTARTARUSARCHRES }
+}
+
+object TAT__SuperBoss4
+{
+    frame VILEH { light DARKTARTARUSARCHATK1 }
+    frame VILEI { light DARKTARTARUSARCHATK2 }
+    frame VILEJ { light DARKTARTARUSARCHATK3 }
+    frame VILEK { light DARKTARTARUSARCHATK4 }
+    frame VILEL { light DARKTARTARUSARCHATK4 }
+    frame VILEM { light DARKTARTARUSARCHATK4 }
+    frame VILEN { light DARKTARTARUSARCHATK5 }
+    frame VILEO { light DARKTARTARUSARCHATK6 }
+    frame VILEP { light DARKTARTARUSARCHATK7 }
+
+    frame VILE[ { light DARKTARTARUSARCHRES }
+    frame VILE\ { light DARKTARTARUSARCHRES }
+    frame VILE] { light DARKTARTARUSARCHRES }
+}
+
+object TAT__SuperBoss5
+{
+    frame VILEH { light DARKTARTARUSARCHATK1 }
+    frame VILEI { light DARKTARTARUSARCHATK2 }
+    frame VILEJ { light DARKTARTARUSARCHATK3 }
+    frame VILEK { light DARKTARTARUSARCHATK4 }
+    frame VILEL { light DARKTARTARUSARCHATK4 }
+    frame VILEM { light DARKTARTARUSARCHATK4 }
+    frame VILEN { light DARKTARTARUSARCHATK5 }
+    frame VILEO { light DARKTARTARUSARCHATK6 }
+    frame VILEP { light DARKTARTARUSARCHATK7 }
+
+    frame VILE[ { light DARKTARTARUSARCHRES }
+    frame VILE\ { light DARKTARTARUSARCHRES }
+    frame VILE] { light DARKTARTARUSARCHRES }
+}
+
 // ---------------
 // -- Deus Vult --
 // ---------------

@@ -2016,7 +2016,7 @@ states
     TNT1 A 0 A_SetSolid
     TNT1 A 0 A_ChangeFlag("Frightened", 0)
   SpawnLoop:
-    VILE AABBCCDDEEFF 2 A_wander
+    VILE AABBCCDDEEFF 2 A_Wander
     VILE A 0 A_Look
     Loop
   See:
@@ -2034,8 +2034,8 @@ states
      VILE E 0 Bright A_Jump(100,2)
     VILE E 0 Bright A_FaceTarget
      VILE E 0 Bright A_Jump(64,"Missile3")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE HIJKLMN 4 Bright
+    VILE H 4 Bright A_PlaySound ("weapons/bfgf")
+    VILE IJKLMN 4 Bright
     VILE OOOO 8 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE P 20 Bright
     Goto See
@@ -2094,10 +2094,10 @@ states
     Goto See
   Missile4:
      VILE M 0 Bright A_FaceTarget
-    VILE M 0 A_Jump(128,5)
-    VILE M 0 A_Jump(128,3)
+    VILE M 0 A_Jump(128,4)
+    VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
-    VILE M 0 A_Jump(256,2)
+    Goto Missile+5
     VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
     VILE M 10 Bright A_VileStart
     VILE M 10 Bright A_FaceTarget
@@ -2131,8 +2131,7 @@ states
     VILE ] 4 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-16)
     Goto See
   Pain:
-     VILE Q 0 Bright A_Jump(10,"Teleport")
-    VILE Q 5
+    VILE Q 5 A_Jump(10,"Teleport")
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,45)
@@ -2158,9 +2157,8 @@ states
     TNT1 AA 0 A_ExtChase(0,0,0)
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
      TNT1 A 0 A_ClearTarget
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   TeleportDone:
     TNT1 A 0 A_UnSetInvulnerable
@@ -2206,7 +2204,7 @@ states
     TNT1 A 0 A_SetSolid
     TNT1 A 0 A_ChangeFlag("Frightened", 0)
   SpawnLoop:
-    VILE AABBCCDDEEFF 2 A_wander
+    VILE AABBCCDDEEFF 2 A_Wander
     VILE A 0 A_Look
     Loop
   See:
@@ -2234,8 +2232,8 @@ states
      VILE E 0 Bright A_Jump(100,2)
     VILE E 0 Bright A_FaceTarget
      VILE E 0 Bright A_Jump(64,"Missile3")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE HIJKLMN 4 Bright
+    VILE H 4 Bright A_PlaySound ("weapons/bfgf")
+    VILE IJKLMN 4 Bright
     VILE OOO 8 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE P 10 Bright
     Goto See
@@ -2290,10 +2288,10 @@ states
     Goto See
   Missile4:
      VILE M 0 Bright A_FaceTarget
-    VILE M 0 A_Jump(128,5)
-    VILE M 0 A_Jump(128,3)
+    VILE M 0 A_Jump(128,4)
+    VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
-    VILE M 0 A_Jump(256,2)
+    Goto Missile4+5
     VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
     VILE M 10 Bright A_VileStart
     VILE M 10 Bright A_FaceTarget
@@ -2334,8 +2332,7 @@ states
     Goto See
   Pain:
      VILE Q 0 Bright A_Jump(10,"Teleport")
-    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
-    VILE Q 5
+    VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,24)
@@ -2375,9 +2372,8 @@ states
     TNT1 AA 0 A_ExtChase(0,0,0)
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
      TNT1 A 0 A_ClearTarget
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   Death:
     VILE Q 5 A_Pain
@@ -2412,10 +2408,6 @@ states
     TNT1 A 0 A_UnHideThing
     TNT1 A 0 A_SetShootable
     TNT1 A 0 A_SetSolid
-  SpawnLoop:
-    VILE AABBCCDDEEFF 2 A_wander
-    VILE A 0 A_Look
-    Loop
   See:
     TNT1 A 0 A_UnSetInvulnerable
     TNT1 A 0 A_UnHideThing
@@ -2439,23 +2431,19 @@ states
      VILE E 0 Bright A_Jump(100,2)
     VILE E 0 Bright A_FaceTarget
      VILE E 0 Bright A_Jump(100,"Missile3")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 3 Bright
     VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE AABBCCDDEEFF 1 A_Chase
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 3 Bright
     VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE AABBCCDDEEFF 1 A_Chase
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 3 Bright
     VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE AABBCCDDEEFF 1 A_Chase
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 3 Bright
     VILE O 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     Goto See
@@ -2506,8 +2494,7 @@ states
     Goto See
   Pain:
       VILE Q 0 Bright A_Jump(10,"Teleport")
-    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
-    VILE Q 5
+    VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,30)
@@ -2544,9 +2531,8 @@ states
     TNT1 AA 0 A_Wander
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
      TNT1 A 0 A_ClearTarget
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   Death:
     VILE Q 5 A_Pain
@@ -2583,7 +2569,7 @@ states
     TNT1 A 0 A_SetShootable
     TNT1 A 0 A_SetSolid
   SpawnLoop:
-    VILE AABBCCDDEEFF 1 A_wander
+    VILE AABBCCDDEEFF 1 A_Wander
     VILE A 0 A_Look
     Loop
   See:
@@ -2609,34 +2595,30 @@ states
      VILE E 0 Bright A_Jump(100,2)
     VILE E 0 Bright A_FaceTarget
      VILE E 0 Bright A_Jump(100,"Missile3")
-    VILE M 0 A_Jump(128,5)
-    VILE M 0 A_Jump(128,3)
+    VILE M 0 A_Jump(128,4)
+    VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
-    VILE M 0 A_Jump(256,2)
+    Goto Missile+7
     VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE A 0 A_Jump(8,"Teleport2")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport2")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE A 0 A_Jump(8,"Teleport2")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport2")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE A 0 A_Jump(8,"Teleport2")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport2")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
     VILE F 0 A_Jump(32,"Teleport2")
@@ -2647,8 +2629,7 @@ states
     VILE ] 10 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
-    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
-    VILE [ 10 Bright
+    VILE [ 10 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
     VILE F 0 A_Jump(32,"Teleport2")
     VILE AABBCCDDEEFF 1 A_FastChase
     VILE F 0 A_Jump(32,"Teleport2")
@@ -2691,24 +2672,21 @@ states
     VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
     VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
     VILE ] 4 Bright
-    VILE F 0 A_Jump(32,"Teleport2")
-    VILE Q 5
+    VILE Q 5 A_Jump(32,"Teleport2")
     VILE Q 20 A_PlaySound("vile/pain")
     VILE Q 20 A_PlaySound("vile/pain")
     VILE Q 0 A_PlaySound("brain/spit")
     VILE ] 10 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
-    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
-    VILE [ 10 Bright
+    VILE [ 10 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
     VILE F 0 A_Jump(32,"Teleport2")
     VILE AABBCCDDEEFF 1 A_FastChase
     VILE F 0 A_Jump(32,"Teleport2")
     Goto See
   Pain:
       VILE Q 0 Bright A_Jump(10,"Teleport")
-    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
-    VILE Q 5
+    VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
@@ -2753,7 +2731,7 @@ states
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
     TNT1 AA 0 A_ExtChase(0,0,0)
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
     TNT1 A 0
     Loop
@@ -2775,9 +2753,8 @@ states
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
     TNT1 AA 0 A_Wander
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare2")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   Death:
     VILE Q 5 A_Pain
@@ -2834,7 +2811,7 @@ states
     TNT1 A 0 A_SetShootable
     TNT1 A 0 A_SetSolid
   SpawnLoop:
-    VILE AABBCCDDEEFF 1 A_wander
+    VILE AABBCCDDEEFF 1 A_Wander
     VILE A 0 A_Look
     Loop
   See:
@@ -2860,13 +2837,12 @@ states
      VILE E 0 Bright A_Jump(100,2)
     VILE E 0 Bright A_FaceTarget
      VILE E 0 Bright A_Jump(100,"Missile3")
-    VILE M 0 A_Jump(128,5)
-    VILE M 0 A_Jump(128,3)
+    VILE M 0 A_Jump(128,4)
+    VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
-    VILE M 0 A_Jump(256,2)
+    Goto Missile+7
     VILE M 0 ThrustThing(angle*256/360+64, 10, 0, 0)
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
@@ -2877,8 +2853,7 @@ states
     VILE A 0 A_Jump(8,"Teleport")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
@@ -2889,8 +2864,7 @@ states
     VILE A 0 A_Jump(8,"Teleport")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
@@ -2901,8 +2875,7 @@ states
     VILE A 0 A_Jump(8,"Teleport")
     VILE AABBCCDDEEFF 1 A_Chase
     VILE F 0 A_Jump(8,"Teleport")
-    VILE E 0 Bright A_PlaySound ("weapons/bfgf")
-    VILE H 8 Bright
+    VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,-20,2)
     VILE O 0 Bright A_CustomMissile ("BFGBall",32,0,20,2)
@@ -2958,16 +2931,14 @@ states
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,-30,18,2)
-    VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
-    VILE [ 8 Bright
+    VILE [ 8 Bright A_CustomMissile("TAT__BossSpawner",30,30,-18,2)
     VILE F 0 A_Jump(16,"Teleport")
     VILE AABBCCDDEEFF 1 A_FastChase
     VILE F 0 A_Jump(16,"Teleport")
     Goto See
   Pain:
       VILE Q 0 Bright A_Jump(90,"Teleport")
-    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
-    VILE Q 2
+    VILE Q 2 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 2 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
@@ -2995,8 +2966,7 @@ states
      VILE Q 0 Bright A_Jump(10,"Teleport")
     Goto See
   Missile5:
-    VILE Q 0 Bright A_ChangeFlag("NOPAIN", TRUE)
-    VILE Q 2
+    VILE Q 2 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 2 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,20)
@@ -3041,9 +3011,8 @@ states
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
     TNT1 AA 0 A_ExtChase(0,0,0)
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   TeleportDone:
     TNT1 A 0 A_UnSetInvulnerable
@@ -3072,9 +3041,8 @@ states
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
     TNT1 AA 0 A_Wander
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
-    TNT1 A 0 A_JumpIfCloser(128,2)
+    TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare2")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   Death:
     VILE Q 2 A_Pain
@@ -3222,8 +3190,8 @@ Actor TAT__BossSpawner
     BOSF AABBCCDD 1 Bright
     Loop
   Death:
-    TNT1 A 0 A_SpawnItem("TAT__Fire",0,0)
-    TNT1 A 0 A_SpawnItem("TAT__GreenSoul",0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__Fire", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    TNT1 A 0 A_SpawnItemEx("TAT__GreenSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER)
     Stop
   }
 }
@@ -3239,8 +3207,8 @@ Actor TAT__BossSpawner2 : TAT__BossSpawner
     BOSF AABBCCDD 1 Bright
     Loop
   Death:
-    TNT1 A 0 A_SpawnItem("TAT__DarkFire",0,0)
-    TNT1 A 0 A_SpawnItem("TAT__BlackDeath",0,0)
+    TNT1 A 0 A_SpawnItemEx("TAT__DarkFire", 0, 0, 0, 0, 0, 0, 0, SXF_CLIENTSIDE)
+    TNT1 A 0 A_SpawnItemEx("TAT__BlackDeath", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER)
     Stop
   }
 }
@@ -3283,10 +3251,8 @@ Speed 6
   Death:
     SKUL F 3 BRIGHT A_NoBlocking
     SKUL G 3 BRIGHT A_Scream
-    SKUL H 3 BRIGHT
-    SKUL I 3 BRIGHT
-    SKUL J 3
-    SKUL K 3
+    SKUL HI 3 BRIGHT
+    SKUL JK 3
     stop
   Death.Kamikaze:
     TNT1 A 1 A_NoBlocking
@@ -3326,10 +3292,8 @@ Actor TAT__Kamikaze
   Death:
     SKUL F 3 BRIGHT A_NoBlocking
     SKUL G 3 BRIGHT A_Explode
-    SKUL H 3 BRIGHT
-    SKUL I 3 BRIGHT
-    SKUL J 3
-    SKUL K 3
+    SKUL HI 3 BRIGHT
+    SKUL JK 3
     stop
   }
 }
@@ -3412,7 +3376,7 @@ Actor TAT__BlackDeath : Revenant
     SKEL A 10 A_Jump(2,"Wander")
     Loop
     Missile:
-      SKEL G 0 A_Jumpifcloser(256, 1)
+      SKEL G 0 A_JumpIfCloser(256, 1)
       Goto See
       SKEL G 0 A_PlaySound("skeleton/sight")
       SKEL G 3 A_FaceTarget
@@ -3429,8 +3393,7 @@ Actor TAT__BlackDeath : Revenant
       SKEL I 0 A_Jump(64,"Wander")
     Goto See
   Pain:
-    SKEL L 0 A_ChangeFlag ("NOPAIN", 1)
-    SKEL L 1
+    SKEL L 1 A_ChangeFlag ("NOPAIN", 1)
     SKEL L 0 A_ChangeFlag ("NOPAIN", 0)
     SKEL L 0 A_Jump(96,"Wander")
     SKEL L 3 A_Pain
@@ -3440,14 +3403,12 @@ Actor TAT__BlackDeath : Revenant
     SKEL L 7 A_Pain
     SKEL M 2 A_Scream
     SKEL N 2 A_NoBlocking
-    SKEL O 2
-    SKEL P 2
+    SKEL OP 2
     SKEL Q -1
     Stop
   Raise:
-    TNT1 A 0
-    TNT1 A 0 A_ChangeFlag ("NOPAIN", 1)
-    SKEL QPONML 5
+    SKEL Q 5 A_ChangeFlag ("NOPAIN", 1)
+    SKEL PONML 5
     TNT1 A 0 A_ChangeFlag ("NOPAIN", 0)
     goto See
     }
@@ -3481,136 +3442,135 @@ states
   {
   Spawn:
     TROO A 1 A_GiveInventory("Clip",1)
-    TROO A 0 A_JumpIfInventory("Clip",64,2)
-    TROO A 0 A_Jump(256,3)
+    TROO A 0 A_JumpIfInventory("Clip",64,1)
+    Loop
     TROO A 0 A_TakeInventory("Clip",64)
     TROO A 0 A_Look
-    TROO A 0
     Loop
   See:
     TROO D 0 A_GiveInventory("Clip",1)
-    TROO D 0 A_JumpIfInventory("Clip",64,2)
-    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+5
     TROO D 0 A_JumpIfTargetInLOS("Missile")
     TROO D 0 A_TakeInventory("Clip",64)
     TROO D 0 A_TakeInventory("Shell",100)
     TROO D 1 A_ExtChase(0,0,0)
 
     TROO D 0 A_GiveInventory("Clip",1)
-    TROO D 0 A_JumpIfInventory("Clip",64,2)
-    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+11
     TROO D 0 A_JumpIfTargetInLOS("Missile")
     TROO D 0 A_TakeInventory("Clip",64)
     TROO D 0 A_TakeInventory("Shell",100)
     TROO D 1
 
     TROO D 0 A_GiveInventory("Clip",1)
-    TROO D 0 A_JumpIfInventory("Clip",64,2)
-    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+17
     TROO D 0 A_JumpIfTargetInLOS("Missile")
     TROO D 0 A_TakeInventory("Clip",64)
     TROO D 0 A_TakeInventory("Shell",100)
     TROO D 1
 
     TROO D 0 A_GiveInventory("Clip",1)
-    TROO D 0 A_JumpIfInventory("Clip",64,2)
-    TROO D 0 A_Jump(256,4)
+    TROO D 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+23
     TROO D 0 A_JumpIfTargetInLOS("Missile")
     TROO D 0 A_TakeInventory("Clip",64)
     TROO D 0 A_TakeInventory("Shell",100)
     TROO D 1
 
     TROO C 0 A_GiveInventory("Clip",1)
-    TROO C 0 A_JumpIfInventory("Clip",64,2)
-    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+29
     TROO C 0 A_JumpIfTargetInLOS("Missile")
     TROO C 0 A_TakeInventory("Clip",64)
     TROO C 0 A_TakeInventory("Shell",100)
     TROO C 1 A_ExtChase(0,0,0)
 
     TROO C 0 A_GiveInventory("Clip",1)
-    TROO C 0 A_JumpIfInventory("Clip",64,2)
-    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+35
     TROO C 0 A_JumpIfTargetInLOS("Missile")
     TROO C 0 A_TakeInventory("Clip",64)
     TROO C 0 A_TakeInventory("Shell",100)
     TROO C 1
 
     TROO C 0 A_GiveInventory("Clip",1)
-    TROO C 0 A_JumpIfInventory("Clip",64,2)
-    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+41
     TROO C 0 A_JumpIfTargetInLOS("Missile")
     TROO C 0 A_TakeInventory("Clip",64)
     TROO C 0 A_TakeInventory("Shell",100)
     TROO C 1
 
     TROO C 0 A_GiveInventory("Clip",1)
-    TROO C 0 A_JumpIfInventory("Clip",64,2)
-    TROO C 0 A_Jump(256,4)
+    TROO C 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+47
     TROO C 0 A_JumpIfTargetInLOS("Missile")
     TROO C 0 A_TakeInventory("Clip",64)
     TROO C 0 A_TakeInventory("Shell",100)
     TROO C 1
 
     TROO B 0 A_GiveInventory("Clip",1)
-    TROO B 0 A_JumpIfInventory("Clip",64,2)
-    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+53
     TROO B 0 A_JumpIfTargetInLOS("Missile")
     TROO B 0 A_TakeInventory("Clip",64)
     TROO B 0 A_TakeInventory("Shell",100)
     TROO B 1 A_ExtChase(0,0,0)
 
     TROO B 0 A_GiveInventory("Clip",1)
-    TROO B 0 A_JumpIfInventory("Clip",64,2)
-    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+59
     TROO B 0 A_JumpIfTargetInLOS("Missile")
     TROO B 0 A_TakeInventory("Clip",64)
     TROO B 0 A_TakeInventory("Shell",100)
     TROO B 1
 
     TROO B 0 A_GiveInventory("Clip",1)
-    TROO B 0 A_JumpIfInventory("Clip",64,2)
-    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+65
     TROO B 0 A_JumpIfTargetInLOS("Missile")
     TROO B 0 A_TakeInventory("Clip",64)
     TROO B 0 A_TakeInventory("Shell",100)
     TROO B 1
 
     TROO B 0 A_GiveInventory("Clip",1)
-    TROO B 0 A_JumpIfInventory("Clip",64,2)
-    TROO B 0 A_Jump(256,4)
+    TROO B 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+71
     TROO B 0 A_JumpIfTargetInLOS("Missile")
     TROO B 0 A_TakeInventory("Clip",64)
     TROO B 0 A_TakeInventory("Shell",100)
     TROO B 1
 
     TROO A 0 A_GiveInventory("Clip",1)
-    TROO A 0 A_JumpIfInventory("Clip",64,2)
-    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+77
     TROO A 0 A_JumpIfTargetInLOS("Missile")
     TROO A 0 A_TakeInventory("Clip",64)
     TROO A 0 A_TakeInventory("Shell",100)
     TROO A 1 A_ExtChase(0,0,0)
 
     TROO A 0 A_GiveInventory("Clip",1)
-    TROO A 0 A_JumpIfInventory("Clip",64,2)
-    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+83
     TROO A 0 A_JumpIfTargetInLOS("Missile")
     TROO A 0 A_TakeInventory("Clip",64)
     TROO A 0 A_TakeInventory("Shell",100)
     TROO A 1
 
     TROO A 0 A_GiveInventory("Clip",1)
-    TROO A 0 A_JumpIfInventory("Clip",64,2)
-    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+89
     TROO A 0 A_JumpIfTargetInLOS("Missile")
     TROO A 0 A_TakeInventory("Clip",64)
     TROO A 0 A_TakeInventory("Shell",100)
     TROO A 1
 
     TROO A 0 A_GiveInventory("Clip",1)
-    TROO A 0 A_JumpIfInventory("Clip",64,2)
-    TROO A 0 A_Jump(256,4)
+    TROO A 0 A_JumpIfInventory("Clip",64,1)
+    Goto See+95
     TROO A 0 A_JumpIfTargetInLOS("Missile")
     TROO A 0 A_TakeInventory("Clip",64)
     TROO A 0 A_TakeInventory("Shell",100)
@@ -3630,41 +3590,9 @@ states
   MissileFire:
     TROO E 0 A_TakeInventory("Shell",2)
     TROO E 0 A_TakeInventory("Clip",64)
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-    TROO E 0 A_GiveInventory("Clip",1)
-    TROO E 1 Bright
-
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
-    TROO F 0 A_GiveInventory("Clip",1)
-    TROO F 1 Bright
+    TROO EEEEEEEEFFFFFFFF 1 Bright A_GiveInventory("Clip",1)
     TROO G 0 A_GiveInventory("Clip",1)
-    TROO G 1 A_CustomMissile ("Rocket",32,0,0,2)
+    TROO G 1 Bright A_CustomMissile ("Rocket",32,0,0,2)
     TROO GGGGGGG 1 Bright A_GiveInventory("Clip",1)
     Goto See
   Pain:
@@ -3782,8 +3710,7 @@ states
     CPOS T -1
     Stop
    Raise:
-    CPOS N 5
-    CPOS MLKJIH 5
+    CPOS NMLKJIH 5
     Goto See
   }
 }
@@ -3836,8 +3763,7 @@ states
     BAR1 B 6 Bright
     Loop
   Pain:
-    BEXP A 0 A_ChangeFlag("NOPAIN", TRUE)
-    BEXP A 3 Bright
+    BEXP A 3 Bright A_ChangeFlag("NOPAIN", TRUE)
     BEXP B 3 Bright A_Scream
     BEXP C 3 Bright
     BEXP D 3 Bright A_CustomMissile("TAT__TkExplosion",32)
@@ -4352,8 +4278,8 @@ PainChance 5
         Loop
     Camping:
         CYBR A 2 A_FaceTarget
-        CYBR A 0 A_JumpIfTargetInLos(2)
-        CYBR A 0 A_Jump(256,2)
+        CYBR A 0 A_JumpIfTargetInLOS(1)
+        Goto Camping+3
         CYBR A 0 A_Jump(128,"Missile")
         CYBR A 0 A_Jump(16,"See")
         Loop
@@ -4378,24 +4304,24 @@ PainChance 5
         CYBR E 2 A_FaceTarget
         CYBR F 2 A_CustomMissile ("Rocket")
     SuppressiveFire:
-        CYBR E 0 A_JumpIfTargetInLos(2)
-        CYBR E 0 A_Jump(256,2)
+        CYBR E 0 A_JumpIfTargetInLOS(1)
+        Goto SuppressiveFire+2
         CYBR E 0 A_FaceTarget
 
         CYBR E 1 A_SetAngle(Angle+Random(-1,1))
         CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
         CYBR E 1
 
-        CYBR E 0 A_JumpIfTargetInLos(2)
-        CYBR E 0 A_Jump(256,2)
+        CYBR E 0 A_JumpIfTargetInLOS(1)
+        Goto SuppressiveFire+7
         CYBR E 0 A_FaceTarget
 
         CYBR E 1 A_SetAngle(Angle+Random(-15,15))
         CYBR F 2 A_CustomMissile ("Rocket",32,0,0,2)
         CYBR E 1
 
-        CYBR E 0 A_JumpIfTargetInLos(2)
-        CYBR E 0 A_Jump(256,2)
+        CYBR E 0 A_JumpIfTargetInLOS(1)
+        Goto SuppressiveFire+12
         CYBR E 0 A_FaceTarget
 
         CYBR E 1 A_SetAngle(Angle+Random(-15,15))
@@ -4559,7 +4485,7 @@ Actor TAT__AwesomeSphere : Health
   Inventory.Amount 1000
   Inventory.MaxAmount 99999
   Inventory.PickupMessage "Awesome!"
-  Inventory.PickupSound "HHEN/pain"
+  Inventory.PickupSound "misc/p_pkup"
   Translation "128:135=224:231", "136:143=160:167", "144:151=96:103", "13:15=109:111"
   States
   {
@@ -4716,9 +4642,6 @@ Actor HPCommanderKeen : CommanderKeen 25013 //72
 
 Actor DVBossEye : BossEye 25014 //89
 {
-  Height 32
-  +NOBLOCKMAP
-  +NOSECTOR
   States
   {
   Spawn:
@@ -4733,10 +4656,6 @@ Actor DVBossEye : BossEye 25014 //89
 
 Actor DVBurningBarrel : BurningBarrel 25015 //70
 {
-    Radius 16
-    Height 32
-    ProjectilePassHeight -16
-    +SOLID
     +USESPECIAL
     States
     {

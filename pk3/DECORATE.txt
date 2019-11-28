@@ -2,7 +2,40 @@
 // The replacement code //
 //////////////////////////
 
-Actor LZombieMan : ZombieMan replaces ZombieMan
+Actor LexiconMonsterSpawner
+{
+    DamageFactor 0.0
+    DamageFactor "ActivateLexiconSpecial", 1.0
+    Health 1
+    +NOPAIN
+    +DONTGIB
+    +NOBLOOD
+    +DONTBLAST
+    +DONTMORPH
+    +ISMONSTER
+    +SHOOTABLE
+    +NOICEDEATH
+    +NORADIUSDMG
+    +NOTELEOTHER
+    +NEVERRESPAWN
+    +NONSHOOTABLE
+    +NOTAUTOAIMED
+    +NOTIMEFREEZE
+    +NOTONAUTOMAP
+    +NOINTERACTION
+    States
+    {
+    Spawn:
+        TNT1 A 1
+        Loop
+    Death:
+        TNT1 A 1 A_BossDeath
+        Stop
+    }
+}
+
+// Monster Spawners
+Actor LexiconZombieManSpawner : LexiconMonsterSpawner replaces ZombieMan
 {
     States
     {
@@ -11,8 +44,8 @@ Actor LZombieMan : ZombieMan replaces ZombieMan
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 2, "CS1CS2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     CS1CS2:
         TNT1 A 0 A_SpawnItemEx("CS2ZombieMan", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -25,7 +58,7 @@ Actor LZombieMan : ZombieMan replaces ZombieMan
     }
 }
 
-Actor LShotgunGuy : ShotgunGuy replaces ShotgunGuy
+Actor LexiconShotgunGuySpawner : LexiconMonsterSpawner replaces ShotgunGuy
 {
     States
     {
@@ -34,8 +67,8 @@ Actor LShotgunGuy : ShotgunGuy replaces ShotgunGuy
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 2, "CS1CS2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     CS1CS2:
         TNT1 A 0 A_SpawnItemEx("CS2ShotgunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -48,7 +81,7 @@ Actor LShotgunGuy : ShotgunGuy replaces ShotgunGuy
     }
 }
 
-Actor LChaingunGuy : ChaingunGuy replaces ChaingunGuy
+Actor LexiconChaingunGuySpawner : LexiconMonsterSpawner replaces ChaingunGuy
 {
     States
     {
@@ -57,8 +90,8 @@ Actor LChaingunGuy : ChaingunGuy replaces ChaingunGuy
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 2, "CS1CS2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     CS1CS2:
         TNT1 A 0 A_SpawnItemEx("CS2ChaingunGuy", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -71,7 +104,7 @@ Actor LChaingunGuy : ChaingunGuy replaces ChaingunGuy
     }
 }
 
-Actor LDoomImp : DoomImp replaces Doomimp
+Actor LexiconDoomImpSpawner : LexiconMonsterSpawner replaces DoomImp
 {
     States
     {
@@ -80,8 +113,8 @@ Actor LDoomImp : DoomImp replaces Doomimp
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LDoomImp", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantImp", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -94,7 +127,7 @@ Actor LDoomImp : DoomImp replaces Doomimp
     }
 }
 
-Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
+Actor LexiconWolfensteinSSSpawner : LexiconMonsterSpawner replaces WolfensteinSS
 {
     States
     {
@@ -104,8 +137,8 @@ Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 5, "HC0HC1")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LWolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     SC2:
         TNT1 A 0 A_SpawnItemEx("LexiconEvilMarine", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -121,7 +154,7 @@ Actor LWolfensteinSS : WolfensteinSS replaces WolfensteinSS
     }
 }
 
-Actor LDemon : Demon replaces Demon
+Actor LexiconDemonSpawner : LexiconMonsterSpawner replaces Demon
 {
     States
     {
@@ -129,8 +162,8 @@ Actor LDemon : Demon replaces Demon
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -140,37 +173,37 @@ Actor LDemon : Demon replaces Demon
     }
 }
 
-Actor LSpectre : Spectre replaces Spectre
+Actor LexiconSpectreSpawner : LexiconMonsterSpawner replaces Spectre
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LSpectre", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantSpectre", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
-Actor LCacodemon : Cacodemon replaces Cacodemon
+Actor LexiconCacodemonSpawner : LexiconMonsterSpawner replaces Cacodemon
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LCacodemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA27", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
-Actor LRevenant : Revenant replaces Revenant
+Actor LexiconRevenantSpawner : LexiconMonsterSpawner replaces Revenant
 {
     States
     {
@@ -178,8 +211,8 @@ Actor LRevenant : Revenant replaces Revenant
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LRevenant", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     EP1EP2:
         TNT1 A 0 A_SpawnItemEx("Epic1A10", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -189,7 +222,7 @@ Actor LRevenant : Revenant replaces Revenant
     }
 }
 
-Actor LLostSoul : LostSoul replaces LostSoul
+Actor LexiconLostSoulSpawner : LexiconMonsterSpawner replaces LostSoul
 {
     States
     {
@@ -197,8 +230,8 @@ Actor LLostSoul : LostSoul replaces LostSoul
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -208,7 +241,7 @@ Actor LLostSoul : LostSoul replaces LostSoul
     }
 }
 
-Actor LPainElemental : PainElemental replaces PainElemental
+Actor LexiconPainElementalSpawner : LexiconMonsterSpawner replaces PainElemental
 {
     States
     {
@@ -216,8 +249,8 @@ Actor LPainElemental : PainElemental replaces PainElemental
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LPainElemental", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     EP1EP2:
         TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -227,16 +260,20 @@ Actor LPainElemental : PainElemental replaces PainElemental
     }
 }
 
-Actor LHellKnight : HellKnight replaces HellKnight
+Actor LexiconHellKnightSpawner : LexiconMonsterSpawner replaces HellKnight
 {
     States
     {
     Spawn:
         TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LHellKnight", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    VAL:
+        TNT1 A 0 A_SpawnItemEx("ValiantPyroDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA23", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -246,7 +283,7 @@ Actor LHellKnight : HellKnight replaces HellKnight
     }
 }
 
-Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
+Actor LexiconStealthHellKnightSpawner : LexiconMonsterSpawner replaces StealthHellKnight
 {
     States
     {
@@ -254,8 +291,8 @@ Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LStealthHellKnight", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantPyroDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
@@ -265,28 +302,22 @@ Actor LStealthHellKnight : StealthHellKnight replaces StealthHellKnight
     }
 }
 
-Actor LArchvile : Archvile replaces Archvile
+Actor LexiconArchvileSpawner : LexiconMonsterSpawner replaces Archvile
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
-        Goto Super::Spawn
+        TNT1 A 0 A_SpawnItemEx("LArchvile", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA16", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
-//Arbitrary state keeps this Actor alive, when the new monster is spawned this Actor is set as master, when the child is destroyed it will destroy this master, which will trigger mapspecials. This must be done for all mapspecial monsters.
-Actor MapSpecial : Inventory
-{
-    Inventory.MaxAmount 1
-}
-
-Actor LArachnotron : Arachnotron replaces Arachnotron
+Actor LexiconArachnotronSpawner : LexiconMonsterSpawner replaces Arachnotron
 {
     States
     {
@@ -294,113 +325,56 @@ Actor LArachnotron : Arachnotron replaces Arachnotron
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
+        TNT1 A 0 A_SpawnItemEx("LArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Goto Super::Spawn
     VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("ValiantArachnotron", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
+        Goto Super::Spawn
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("AAA120", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
+        Goto Super::Spawn
     }
 }
 
-Actor LFatso : Fatso replaces Fatso
+Actor LexiconFatsoSpawner : LexiconMonsterSpawner replaces Fatso
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
+        TNT1 A 0 A_SpawnItemEx("LFatso", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Goto Super::Spawn
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("AAA19", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
+        Goto Super::Spawn
     }
 }
 
-Actor LBaronOfHell : BaronOfHell replaces BaronOfHell
+Actor LexiconBaronOfHellSpawner : LexiconMonsterSpawner replaces BaronOfHell
 {
     States
     {
     Spawn:
         TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
-    Idle:
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
+        TNT1 A 0 A_SpawnItemEx("LFatso", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Goto Super::Spawn
     VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("ValiantSuperMancubus", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
+        Goto Super::Spawn
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("AAA22", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
+        Goto Super::Spawn
     SD6SD7:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("SD20x6A4", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
+        Goto Super::Spawn
     }
 }
 
-Actor LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
+Actor LexiconSpiderMastermindSpawner : LexiconMonsterSpawner replaces SpiderMastermind
 {
     States
     {
@@ -408,66 +382,183 @@ Actor LSpiderMastermind : SpiderMastermind replaces SpiderMastermind
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
+        TNT1 A 0 A_SpawnItemEx("LSpiderMastermind", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Goto Super::Spawn
     VAL:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("ValiantCybruiser", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
+        Goto Super::Spawn
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("AAA15", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
-    Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
-        Stop
+        Goto Super::Spawn
     }
 }
 
-Actor LCyberdemon : Cyberdemon replaces Cyberdemon
+Actor LexiconCyberdemonSpawner : LexiconMonsterSpawner replaces Cyberdemon
 {
     States
     {
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
-    Idle:
+        TNT1 A 0 A_SpawnItemEx("LCyberdemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Goto Super::Spawn
     AA1:
-        TNT1 A 0 A_GiveInventory("MapSpecial")
-        TNT1 A 0 A_NoBlocking
         TNT1 A 0 A_SpawnItemEx("AAA14", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Goto Arbitrary
-    Arbitrary:
-        TNT1 A 0 A_ChangeFlag("NOINTERACTION", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOBLOCKMAP", TRUE)
-        TNT1 A 0 A_ChangeFlag("NOPAIN", TRUE)
-        TNT1 A 0 A_ChangeFlag("SHOOTABLE", FALSE)
-        TNT1 A 0 A_ChangeFlag("SOLID", FALSE)
-    ADDS:
-        TNT1 A 6
-        Loop
+        Goto Super::Spawn
+    }
+}
+
+// Doom II Monsters
+Actor LZombieMan : ZombieMan {}
+
+Actor LShotgunGuy : ShotgunGuy {}
+
+Actor LChaingunGuy : ChaingunGuy {}
+
+Actor LDoomImp : DoomImp {}
+
+Actor LWolfensteinSS : WolfensteinSS {}
+
+Actor LDemon : Demon {}
+
+Actor LSpectre : Spectre {}
+
+Actor LCacodemon : Cacodemon {}
+
+Actor LRevenant : Revenant {}
+
+Actor LLostSoul : LostSoul {}
+
+Actor LPainElemental : PainElemental
+{
+    States
+    {
+    Missile:
+        PAIN DE 5 A_FaceTarget
+        PAIN F 5 Bright A_FaceTarget
+        PAIN F 0 Bright A_PainAttack("LLostSoul")
+        Goto See
     Death:
-        TNT1 A 0 A_JumpIfInventory("MapSpecial", 1, "SpecialDeath")
-        Goto Super::Death
-    SpecialDeath:
-        TNT1 A 1 A_BossDeath
+        PAIN H 8 Bright
+        PAIN I 8 Bright A_Scream
+        PAIN JK 8 Bright
+        PAIN L 8 Bright A_PainDie("LLostSoul")
+        PAIN M 8 Bright
         Stop
     }
+}
+
+Actor LHellKnight : HellKnight {}
+
+Actor LStealthHellKnight : StealthHellKnight {}
+
+Actor LArchvile : Archvile {}
+
+Actor LArachnotron : Arachnotron
+{
+    States
+    {
+    Death:
+        BSPI J 20 A_Scream
+        BSPI K 7 A_NoBlocking
+        BSPI LMNO 7
+        BSPI P -1 A_KillMaster("ActivateLexiconSpecial")
+        Stop
+    GenericFreezeDeath:
+        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
+        Goto Super::GenericFreezeDeath
+    }
+}
+
+Actor LFatso : Fatso
+{
+    States
+    {
+    Death:
+        FATT K 6
+        FATT L 6 A_Scream
+        FATT M 6 A_NoBlocking
+        FATT NOPQRS 6
+        FATT T -1 A_KillMaster("ActivateLexiconSpecial")
+        Stop
+    GenericFreezeDeath:
+        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
+        Goto Super::GenericFreezeDeath
+    }
+}
+
+Actor LBaronOfHell : BaronOfHell
+{
+    States
+    {
+    Death:
+        BOSS I 8
+        BOSS J 8 A_Scream
+        BOSS K 8
+        BOSS L 8 A_NoBlocking
+        BOSS MN 8
+        BOSS O -1 A_KillMaster("ActivateLexiconSpecial")
+        Stop
+    GenericFreezeDeath:
+        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
+        Goto Super::GenericFreezeDeath
+    }
+}
+
+Actor LSpiderMastermind : SpiderMastermind
+{
+    States
+    {
+    Death:
+        SPID J 20 A_Scream
+        SPID K 10 A_NoBlocking
+        SPID LMNOPQR 10
+        SPID S 30
+        SPID S -1 A_KillMaster("ActivateLexiconSpecial")
+        Stop
+    GenericFreezeDeath:
+        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
+        Goto Super::GenericFreezeDeath
+    }
+}
+
+Actor LCyberdemon : Cyberdemon
+{
+    States
+    {
+    Death:
+        CYBR H 10
+        CYBR I 10 A_Scream
+        CYBR JKL 10
+        CYBR M 10 A_NoBlocking
+        CYBR NO 10
+        CYBR P 30
+        CYBR P -1 A_KillMaster("ActivateLexiconSpecial")
+        Stop
+    GenericFreezeDeath:
+        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
+        Goto Super::GenericFreezeDeath
+    }
+}
+
+// Doom II Ammo
+Actor LCell : Cell replaces Cell
+{
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    }
+}
+
+Actor Epic2A16Spawner : RandomSpawner
+{
+    DropItem "Epic2A16"
 }
 
 Actor LCellPack : CellPack replaces CellPack
@@ -489,25 +580,6 @@ Actor Epic2A17Spawner : RandomSpawner
     DropItem "Epic2A17"
 }
 
-Actor LCell : Cell replaces Cell
-{
-    States
-    {
-    Spawn:
-        TNT1 A 0
-        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
-        Goto Super::Spawn
-    EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-        Stop
-    }
-}
-
-Actor Epic2A16Spawner : RandomSpawner
-{
-    DropItem "Epic2A16"
-}
-
 Actor LClip : Clip replaces Clip
 {
     States
@@ -527,6 +599,7 @@ Actor Epic2A18Spawner : RandomSpawner
     DropItem "Epic2A18"
 }
 
+// Doom II Items
 Actor LHealthBonus : HealthBonus replaces HealthBonus
 {
     States
@@ -637,9 +710,13 @@ Actor LSoulsphere : Soulsphere replaces Soulsphere
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
         TNT1 A 0 A_SpawnItemEx("Mayhem17SoulsphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7:
+        TNT1 A 0 A_SpawnItemEx("SD20x7A10Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -647,6 +724,11 @@ Actor LSoulsphere : Soulsphere replaces Soulsphere
 Actor Mayhem17SoulsphereSpawner : RandomSpawner
 {
     DropItem "Mayhem17Soulsphere"
+}
+
+Actor SD20x7A10Spawner : RandomSpawner
+{
+    DropItem "SD20x7A10"
 }
 
 Actor LGreenArmor : GreenArmor replaces GreenArmor
@@ -776,6 +858,7 @@ Actor LInfrared : Infrared replaces Infrared
     }
 }
 
+// Doom II Weapons
 Actor LRocketLauncher : WeaponGiver replaces RocketLauncher
 {
     DropItem "RocketLauncher"
@@ -822,6 +905,7 @@ Actor Epic2A7Spawner : RandomSpawner
     DropItem "Epic2A7"
 }
 
+// Doom II Props
 Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
 {
     States
@@ -1392,8 +1476,7 @@ Actor CS2ShotgunGuy : ShotgunGuy 20307//9
     CS2S U -1
     Stop
   Raise:
-    CS2S L 5
-    CS2S KJIH 5
+    CS2S LKJIH 5
     Goto See
   }
 }
@@ -1432,8 +1515,7 @@ Actor CS2ZombieMan : ZombieMan 20308 //3004
     CS2Z U -1
     Stop
   Raise:
-    CS2Z K 5
-    CS2Z JIH 5
+    CS2Z KJIH 5
     Goto See
   }
 }
@@ -1472,8 +1554,7 @@ Actor CS2ChaingunGuy : ChaingunGuy 20309//65
     CS2C T -1
     Stop
   Raise:
-    CS2C N 5
-    CS2C MLKJIH 5
+    CS2C NMLKJIH 5
     Goto See
   }
 }
@@ -1532,8 +1613,7 @@ Actor MotherFucker 2033
   Death:
     SCYT H 8
     SCYT I 8 A_Scream
-    SCYT J 8
-    SCYT K 8
+    SCYT JK 8
     SCYT L 8 A_NoBlocking
     SCYT M -1 A_SetFloorClip
     Stop
@@ -1542,7 +1622,6 @@ Actor MotherFucker 2033
     SCYT KJIH 8
     goto See
   }
-
 }
 
 //////////////
@@ -1648,8 +1727,7 @@ Actor LexiconEvilMarine : WolfensteinSS 20305 //84
     PLAY W -1
     Stop
   Raise:
-    PLAY L 5
-    PLAY KJIH 5
+    PLAY LKJIH 5
     Goto See
   }
 }
@@ -1702,17 +1780,14 @@ Actor "Demon Smith" 20316
     SSNA I 5
     SSNA J 5 A_Scream
     SSNA K 5 A_NoBlocking
-    SSNA L 5
-    SSNA M 5
-    SSNA N 5
+    SSNA LMN 5
     SSNA O 5 A_XScream
     SSNA P 5 A_NoBlocking
     SSNA QRSTU 5
     SSNA V -1
     Stop
   Raise:
-    SSNA M 5
-    SSNA LKJI 5
+    SSNA MLKJI 5
     Goto See
   }
 }
@@ -4553,8 +4628,7 @@ Actor Yorp 32514
     YORP G 5 A_NoBlocking
     goto Death2
   Death2:
-    YORP F 5 A_NoBlocking
-    YORP G 5 A_NoBlocking
+    YORP FG 5 A_NoBlocking
     loop
   }
  }
@@ -4620,9 +4694,7 @@ Actor HPCommanderKeen : CommanderKeen 25013 //72
   Death:
     HHEN AB 6
     HHEN C 6 A_Scream
-    HHEN DEFGH    6
-    HHEN I 6
-    HHEN J 6
+    HHEN DEFGHIJ 6
     HHEN K 6 A_KeenDie
     HHEN L -1
     Stop
@@ -5886,8 +5958,7 @@ Actor ValiantPyroDemon 25078//replaces HellKnight 69
         AAAK X -1
         Stop
     Raise:
-        AAAK W 8
-        AAAK VUTS 8
+        AAAK WVUTS 8
         AAAK QO 8 Bright
         Goto See
   }
@@ -5918,9 +5989,9 @@ Actor ValiantCybruiser 25079//replaces SpiderMastermind 7
             Loop
         See:
             AAAL AA 3 A_Chase
-            AAAL B 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
+            AAAL B 0 A_PlaySoundEx("valbrn/death", Auto, false, 0)
             AAAL BBCC 3 A_Chase
-            AAAL D 0 A_PlaySoundEx("valbrn/death",Auto,false,0)
+            AAAL D 0 A_PlaySoundEx("valbrn/death", Auto, false, 0)
             AAAL DD 3 A_Chase
             Loop
         Missile:
@@ -6000,8 +6071,7 @@ Actor ValiantArachnotron 25080//replaces Arachnotron 68
             AAAN M -1 A_BossDeath
             Stop
         Raise:
-            AAAM P 5
-            AAAM ONMLKJ 5
+            AAAM PONMLKJ 5
             Goto See+1
     }
 }
@@ -6038,7 +6108,7 @@ Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
         Goto See
     Missile:
         AAAN A 20 A_FaceTarget
-        AAAN BCB 9 Bright A_CustomMissile("ValiantPlamsa", 36)
+        AAAN BCB 9 Bright A_CustomMissile("ValiantPlamsa", 32)
         AAAN A 9 A_SpidRefire
         Goto Missile
     Raise:
@@ -6087,13 +6157,12 @@ Actor LightningOrb 25083//replaces HeartColumn 36
         }
 }
 
-Actor SuicideBomber 25084//replaces DeadLostSoul 23
+Actor ValiantSuicideBomber 25084//replaces DeadLostSoul 23
 {
     Health 60
     Speed 10
     Radius 20
     Height 56
-    Damage 96
     ReactionTime 8
     PainChance 5
     Mass 100
@@ -6108,23 +6177,36 @@ Actor SuicideBomber 25084//replaces DeadLostSoul 23
             AAAO DE 10 A_Look
             Loop
         See:
-            AAAO G 0 A_PlaySoundEx("valkt/death",Auto,false,0)
-            AAAO DDDEEEFFFGGG 2  A_Chase
+            AAAO G 0 A_PlaySoundEx("valkt/death", Auto, false, 0)
+            AAAO DDDEEEFFFGGG 2 A_Chase
             Loop
         Pain:
             AAAO D 3
             AAAO D 3 A_Pain
             Goto See
         Melee:
+            AAAO D 0 A_Die
             Goto Death
         Death:
-            AAAO D 0 Bright A_Detonate
-            AAAP A 5 Bright A_PlaySoundEx("weapons/rocklx",Auto,false,0)
+            AAAO D 0 Bright A_SpawnItemEx("ValiantSuicideBomberExplosion", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
+            AAAP A 5 Bright A_PlaySoundEx("weapons/rocklx", Auto, false, 0)
             AAAP B 5 Bright
             AAAP C 5 A_Fall
             AAAP D 5 A_XScream
             AAAP EFG 5
             AAAP H -1
+            Stop
+    }
+}
+
+Actor ValiantSuicideBomberExplosion
+{
+    +NOINTERACTION
+    States
+    {
+        Spawn:
+            TNT1 A 0
+            TNT1 A 0 A_Explode(96, 96, 0)
             Stop
     }
 }
@@ -6323,8 +6405,7 @@ Actor ValiantDarkDemon 25092//replaces UNKOWN
     AAAR J -1
     Stop
   Raise:
-    AAAR D 5
-    AAAR IHGFE 5
+    AAAR DIHGFE 5
     Goto See
   }
 }
@@ -6353,8 +6434,7 @@ Actor ValiantLostSoul : LostSoul 25093//LostSoul 3006
     AAAS G 6 Bright A_Scream
     AAAS H 6 Bright
     AAAS I 6 Bright A_NoBlocking
-    AAAS J 6
-    AAAS K 6
+    AAAS JK 6
     Stop
   }
 }
@@ -7128,10 +7208,22 @@ Actor AAA13 : CommanderKeen 25163// KEEN (72)
         Goto See
     Death:
         AABF K 4 BRIGHT A_Fall
-        AABF L 4 BRIGHT A_Explode
+        AABF L 4 BRIGHT A_SpawnItemEx("AAA13Explosion", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
         AABF M 4 BRIGHT A_Scream
         AABF NOPQ 4 BRIGHT
         Stop
+    }
+}
+
+Actor AAA13Explosion
+{
+    +NOINTERACTION
+    States
+    {
+        Spawn:
+            TNT1 A 0
+            TNT1 A 0 A_Explode(128, 128, 0)
+            Stop
     }
 }
 
@@ -7193,10 +7285,9 @@ Actor AAA19 : Fatso 25168//67
         AABG M 6 A_NoBlocking
         AABG NOPQRS 6
         AABG T -1 A_BossDeath
-         Stop
+        Stop
      Raise:
-        AABG R 5
-        AABG QPONMLK 5
+        AABG RQPONMLK 5
         Goto See
     }
 }
@@ -7234,8 +7325,7 @@ Actor AAA120 : Arachnotron 25169//68
         AABH P -1 A_BossDeath
         Stop
     Raise:
-        AABH P 5
-        AABH ONMLKJ 5
+        AABH PONMLKJ 5
         Goto See+1
     }
 }
@@ -7352,8 +7442,7 @@ Actor AAA30 : ChaingunGuy 25177//65
         AABI T -1
         Stop
     Raise:
-        AABI N 5
-        AABI MLKJIH 5
+        AABI NMLKJIH 5
         Goto See
     }
 }
@@ -7869,8 +7958,7 @@ Actor HP101Sound 25209
             loop
         See:
             TNT1 A 33 //A_StopSound(4)
-            TNT1 A 0 A_PlaySound("HP/laugh16", 4, 1.0, 0, 0.0)
-            TNT1 A 10989
+            TNT1 A 10989 A_PlaySound("HP/laugh16", 4, 1.0, 0, 0.0)
             Stop
     }
 }
@@ -7892,8 +7980,7 @@ Actor HP101Spawners : SwitchableDecoration 25210
 
 TNT1 A 617
 TNT1 A 5000
-TNT1 A 0 A_SpawnItemEx("HPArachnorb", 0, 0, 1100, random(-3,3), random(-3,3), random(-1,-8), random(0,360))
-TNT1 A 5000
+TNT1 A 5000 A_SpawnItemEx("HPArachnorb", 0, 0, 1100, random(-3,3), random(-3,3), random(-1,-8), random(0,360))
 TNT1 AAAAAAAA 33
 TNT1 A 0 A_PlaySound("plats/pt1_mid", 4, 1.0, 1, 1.0)
 TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 4 A_SpawnItemEx("hp101Fire3", 0, 0, 1400, random(-3,3), random(-3,3), random(-1,-10), random(0,360))
@@ -8014,8 +8101,7 @@ Actor HellPike
     Death:
         BAAC H 2 A_ChangeFlag("FLOAT", FALSE)
         BAAC H 2 A_ChangeFlag("NOGRAVITY", FALSE)
-        TNT1 A 0 A_ChangeFlag("FLOORCLIP", TRUE)
-        BAAC Q 7
+        BAAC Q 7 A_ChangeFlag("FLOORCLIP", TRUE)
         BAAC R 7 A_Scream
         BAAC S 7 A_NoBlocking
         BAAC TUVWXY 7
@@ -8060,12 +8146,12 @@ Actor EpicSagaOfViolenceAndMadness
     States
     {
     Spawn:
-        FIRE A 2 BRIGHT  A_StartFire
-        FIRE BAB 2 BRIGHT  A_Fire
-        FIRE C 2 BRIGHT  A_FireCrackle
-        FIRE BCBCDCDCDEDED 2 BRIGHT  A_Fire
-        FIRE E 2 BRIGHT  A_FireCrackle
-        FIRE FEFEFGHGHGH 2 BRIGHT  A_Fire
+        FIRE A 2 BRIGHT A_StartFire
+        FIRE BAB 2 BRIGHT A_Fire
+        FIRE C 2 BRIGHT A_FireCrackle
+        FIRE BCBCDCDCDEDED 2 BRIGHT A_Fire
+        FIRE E 2 BRIGHT A_FireCrackle
+        FIRE FEFEFGHGHGH 2 BRIGHT A_Fire
         Stop
     }
 }

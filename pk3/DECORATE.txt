@@ -247,9 +247,13 @@ Actor LexiconPainElementalSpawner : LexiconMonsterSpawner replaces PainElemental
     {
     Spawn:
         TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
         TNT1 A 0 A_SpawnItemEx("LPainElemental", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    VAL:
+        TNT1 A 0 A_SpawnItemEx("ValiantPainElemental", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     EP1EP2:
         TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
@@ -5846,6 +5850,25 @@ Actor ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
   DeathSound "spectre/death"
   ActiveSound "spectre/active"
   HitObituary "%o was eaten by a super spectre."
+}
+
+Actor ValiantPainElemental : PainElemental
+{
+    States
+    {
+    Missile:
+        PAIN DE 5 A_FaceTarget
+        PAIN F 5 Bright A_FaceTarget
+        PAIN F 0 Bright A_PainAttack("ValiantLostSoul")
+        Goto See
+    Death:
+        PAIN H 8 Bright
+        PAIN I 8 Bright A_Scream
+        PAIN JK 8 Bright
+        PAIN L 8 Bright A_PainDie("ValiantLostSoul")
+        PAIN M 8 Bright
+        Stop
+    }
 }
 
 Actor ValiantSuperMancubus 25077//replaces BaronOfHell 3003

@@ -390,8 +390,8 @@ strict namespace
 
             // sync the joining player's vars
             bubble_sort();
-            ACS_Execute(569, 0, time_seconds);
-            ACS_ExecuteAlways(570, 0, state);
+            ACS_NamedExecute("Sync_Timer", 0, time_seconds);
+            ACS_NamedExecuteAlways("Sync_State", 0, state);
             
             // clear out player's inventory
             if(GetCVar("lexicon_clear_inventory") == 1)
@@ -653,7 +653,7 @@ strict namespace
             // sync player votes
             for(int i = 0; i < 63; i++)
             {
-                ACS_ExecuteAlways(571, 0, i, players[pnum]);
+                ACS_NamedExecuteAlways("Sync_Choice", 0, i, players[pnum]);
             }
         }
     }
@@ -774,26 +774,26 @@ strict namespace
 
 
     // sync sorted votes to clients
-    script 567 (int index, int votes, int id) clientside
+    script "Sync_Votes" (int index, int votes, int id) clientside
     {
         votessorted[index][0] = votes;
         votessorted[index][1] = id;
     }
 
     // sync timer
-    script 569 (int time) clientside
+    script "Sync_Timer" (int time) clientside
     {
         time_seconds = time;
     }
 
     // sync state
-    script 570 (int s) clientside
+    script "Sync_State" (int s) clientside
     {
         state = s;
     }
 
     // sync player choices
-    script 571 (int pnum, int id) clientside
+    script "Sync_Choice" (int pnum, int id) clientside
     {
         players[pnum] = id;
     }
@@ -826,8 +826,8 @@ strict namespace
         state = STATE_VOTEWAIT;
 
         // sync clients
-        ACS_ExecuteAlways(570, 0, state);
-        ACS_ExecuteAlways(569, 0, state);
+        ACS_NamedExecuteAlways("Sync_State", 0, state);
+        ACS_NamedExecuteAlways("Sync_Timer", 0, state);
     }
 
     function void state_waitforvote(void)
@@ -845,7 +845,7 @@ strict namespace
             state = STATE_COUNTDOWN;
 
             // sync clients
-            ACS_ExecuteAlways(570, 0, state);
+            ACS_NamedExecuteAlways("Sync_State", 0, state);
         }
     }
 
@@ -862,7 +862,7 @@ strict namespace
             state = STATE_CHECKTIE;
 
             // sync
-            ACS_ExecuteAlways(570, 0, state);
+            ACS_NamedExecuteAlways("Sync_State", 0, state);
         }
         // if all votes were canceled
         if(votecount <= 0)
@@ -874,14 +874,14 @@ strict namespace
             state = STATE_VOTEWAIT;
 
             // sync
-            ACS_ExecuteAlways(570, 0, state);
+            ACS_NamedExecuteAlways("Sync_State", 0, state);
         }
 
         // sync clients every second
         if(!(time_ticks%35))
         {
             // sync the timer with the clients
-            ACS_Execute(569, 0, time_seconds);
+            ACS_NamedExecute("Sync_Timer", 0, time_seconds);
         }
     }
 
@@ -918,7 +918,7 @@ strict namespace
         state = STATE_RESULTS;
 
         // sync
-        ACS_ExecuteAlways(570, 0, state);
+        ACS_NamedExecuteAlways("Sync_State", 0, state);
 
         // reset timer
         state_clock = 0;
@@ -982,7 +982,7 @@ strict namespace
 
         for(int i = 0; i < MAPSET_MAX; i++)
         {
-            ACS_ExecuteAlways(567, 0, i, votessorted[i][0], votessorted[i][1]);
+            ACS_NamedExecuteAlways("Sync_Votes", 0, i, votessorted[i][0], votessorted[i][1]);
         }
     }
 

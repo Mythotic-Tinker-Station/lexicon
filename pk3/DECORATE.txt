@@ -6064,6 +6064,7 @@ Actor ValiantCybruiser : LSpiderMastermind 25079//replaces SpiderMastermind 7
     PainChance 20
     -BOSS
     -MISSILEMORE
+    Species "ValiantCybruiser"
     SeeSound "valbn/sight"
     PainSound "baron/pain"
     DeathSound "valbn/death"

@@ -545,6 +545,22 @@ Actor LCyberdemon : Cyberdemon
     }
 }
 
+// Dropped Item Spawner
+Actor LexiconDropSpawner
+{
+    +NEVERRESPAWN
+    +NOTIMEFREEZE
+    +NOTONAUTOMAP
+    +NOINTERACTION
+    States
+    {
+    Spawn:
+        TNT1 A 0
+        TNT1 A 0 A_NoBlocking
+        Stop
+    }
+}
+
 // Doom II Ammo
 Actor LCell : Cell replaces Cell
 {
@@ -555,12 +571,21 @@ Actor LCell : Cell replaces Cell
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A16Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A16DropSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
 Actor Epic2A16Spawner : RandomSpawner
+{
+    DropItem "Epic2A16"
+}
+
+Actor Epic2A16DropSpawner : LexiconDropSpawner
 {
     DropItem "Epic2A16"
 }
@@ -574,12 +599,21 @@ Actor LCellPack : CellPack replaces CellPack
        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
        Goto Super::Spawn
     EP1EP2:
-       TNT1 A 0 A_SpawnItemEx("Epic2A17Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
-       Stop
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A17Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A17DropSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     }
 }
 
 Actor Epic2A17Spawner : RandomSpawner
+{
+    DropItem "Epic2A17"
+}
+
+Actor Epic2A17DropSpawner : LexiconDropSpawner
 {
     DropItem "Epic2A17"
 }
@@ -593,12 +627,21 @@ Actor LClip : Clip replaces Clip
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A18Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A18Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A18DropSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
 Actor Epic2A18Spawner : RandomSpawner
+{
+    DropItem "Epic2A18"
+}
+
+Actor Epic2A18DropSpawner : LexiconDropSpawner
 {
     DropItem "Epic2A18"
 }
@@ -612,12 +655,28 @@ Actor LHealthBonus : HealthBonus replaces HealthBonus
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17HealthBonus", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A31Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A31Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A31", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7:
+        TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
+        TNT1 A 0 A_SpawnItemEx("SD20x7A13Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7Drop:
+        TNT1 A 0 A_SpawnItemEx("SD20x7A13", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -632,6 +691,11 @@ Actor Epic2A31Spawner : RandomSpawner
     DropItem "Epic2A31"
 }
 
+Actor SD20x7A13Spawner : RandomSpawner
+{
+    DropItem "SD20x7A13"
+}
+
 Actor LArmorBonus : ArmorBonus replaces ArmorBonus
 {
     States
@@ -643,13 +707,25 @@ Actor LArmorBonus : ArmorBonus replaces ArmorBonus
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17ArmorBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17ArmorBonusSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17ArmorBonus", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A32Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A32Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A32", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x7A1Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
+        TNT1 A 0 A_SpawnItemEx("SD20x7A1Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7Drop:
+        TNT1 A 0 A_SpawnItemEx("SD20x7A1", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -678,7 +754,11 @@ Actor LStimpack : Stimpack replaces Stimpack
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A9Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A9Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A9", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -697,7 +777,11 @@ Actor LMedikit : Medikit replaces Medikit
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         Goto Super::Spawn
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A6Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A6Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A6", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -717,10 +801,18 @@ Actor LSoulsphere : Soulsphere replaces Soulsphere
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17SoulsphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17SoulsphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17Soulsphere", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x7A10Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
+        TNT1 A 0 A_SpawnItemEx("SD20x7A10Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7Drop:
+        TNT1 A 0 A_SpawnItemEx("SD20x7A10", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -745,10 +837,18 @@ Actor LGreenArmor : GreenArmor replaces GreenArmor
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17GreenArmorSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17GreenArmorSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17GreenArmor", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A1Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
+        TNT1 A 0 A_SpawnItemEx("SD20x6A1Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7Drop:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A1", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -772,7 +872,11 @@ Actor LBlueArmor : BlueArmor replaces BlueArmor
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17BlueArmorSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17BlueArmorSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17BlueArmor", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -791,7 +895,11 @@ Actor LMegasphere : Megasphere replaces Megasphere
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17MegasphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17MegasphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17Megasphere", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -811,10 +919,18 @@ Actor LInvulnerabilitySphere : InvulnerabilitySphere replaces InvulnerabilitySph
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("MayhemInvulnSphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("MayhemInvulnSphereSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("MayhemInvulnSphere", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
+        TNT1 A 0 A_SpawnItemEx("SD20x6A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SD6SD7Drop:
+        TNT1 A 0 A_SpawnItemEx("SD20x6A8", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -838,7 +954,11 @@ Actor LBerserk : Berserk replaces Berserk
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 4, "MAY")
         Goto Super::Spawn
     MAY:
-        TNT1 A 0 A_SpawnItemEx("Mayhem17BerserkSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "MAYDrop")
+        TNT1 A 0 A_SpawnItemEx("Mayhem17BerserkSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    MAYDrop:
+        TNT1 A 0 A_SpawnItemEx("Mayhem17Berserk", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -876,12 +996,21 @@ Actor LRocketLauncher : WeaponGiver replaces RocketLauncher
         LAUN A -1
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A8Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A8DropSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
 Actor Epic2A8Spawner : RandomSpawner
+{
+    DropItem "Epic2A8"
+}
+
+Actor Epic2A8DropSpawner : LexiconDropSpawner
 {
     DropItem "Epic2A8"
 }
@@ -899,12 +1028,21 @@ Actor LPlasmaRifle : WeaponGiver replaces PlasmaRifle
         PLAS A -1
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A7Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A7Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A7DropSpawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
 
 Actor Epic2A7Spawner : RandomSpawner
+{
+    DropItem "Epic2A7"
+}
+
+Actor Epic2A7DropSpawner : LexiconDropSpawner
 {
     DropItem "Epic2A7"
 }
@@ -919,7 +1057,7 @@ Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
     SD6SD7:
-        TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -1137,6 +1275,7 @@ Actor Lexicon_VoteGun : DoomWeapon
   Weapon.AmmoType ""
   Weapon.SlotNumber 0
   Weapon.SlotPriority 0
+  +WEAPON.CHEATNOTWEAPON
   Obituary ""
   Inventory.Pickupmessage ""
   Tag "VoteGun"
@@ -2366,7 +2505,7 @@ states
     VILE Q 5 A_PlaySound("vile/pain")
     Goto See
   Missile4:
-     VILE M 0 Bright A_FaceTarget
+     VILE M 0 A_FaceTarget
     VILE M 0 A_Jump(128,4)
     VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
@@ -2410,7 +2549,7 @@ states
     VILE ] 2 Bright A_CustomMissile ("ArachnotronPlasma",30,-30,-20)
     Goto See
   Pain:
-     VILE Q 0 Bright A_Jump(10,"Teleport")
+     VILE Q 0 A_Jump(10,"Teleport")
     VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
@@ -2428,10 +2567,9 @@ states
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,288)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,312)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,336)
-    VILE Q 0 A_PlaySound("brain/spit")
+    VILE Q 0 Bright A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
-    VILE [ 0
     VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
      VILE Q 0 Bright A_Jump(10,"Teleport")
     Goto See
@@ -2572,7 +2710,7 @@ states
     VILE Q 5 A_PlaySound("vile/pain")
     Goto See
   Pain:
-      VILE Q 0 Bright A_Jump(10,"Teleport")
+      VILE Q 0 A_Jump(10,"Teleport")
     VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
@@ -2586,10 +2724,9 @@ states
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,240)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,270)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
-    VILE Q 0 A_PlaySound("brain/spit")
+    VILE Q 0 Bright A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
-    VILE [ 0
     VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
      VILE Q 0 Bright A_Jump(10,"Teleport")
     Goto See
@@ -2671,9 +2808,9 @@ states
     VILE F 0 A_Jump(8,"Teleport")
   Loop
   Missile:
-     VILE E 0 Bright A_Jump(100,2)
-    VILE E 0 Bright A_FaceTarget
-     VILE E 0 Bright A_Jump(100,"Missile3")
+     VILE E 0 A_Jump(100,2)
+    VILE E 0 A_FaceTarget
+     VILE E 0 A_Jump(100,"Missile3")
     VILE M 0 A_Jump(128,4)
     VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
@@ -2700,8 +2837,7 @@ states
     VILE H 8 Bright A_PlaySound ("weapons/bfgf")
     VILE IJKLMN 2 Bright
     VILE OP 4 Bright A_CustomMissile ("BFGBall",32,0,0,2)
-    VILE F 0 A_Jump(32,"Teleport2")
-    VILE Q 5
+    VILE Q 5 A_Jump(32,"Teleport2")
     VILE Q 20 A_PlaySound("vile/pain")
     VILE Q 20 A_PlaySound("vile/pain")
     VILE Q 0 A_PlaySound("brain/spit")
@@ -2764,7 +2900,7 @@ states
     VILE F 0 A_Jump(32,"Teleport2")
     Goto See
   Pain:
-      VILE Q 0 Bright A_Jump(10,"Teleport")
+      VILE Q 0 A_Jump(10,"Teleport")
     VILE Q 5 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 5 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
@@ -2785,10 +2921,9 @@ states
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
-    VILE Q 0 A_PlaySound("brain/spit")
+    VILE Q 0 Bright A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
-    VILE [ 0
     VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
      VILE Q 0 Bright A_Jump(10,"Teleport")
     Goto See
@@ -2812,7 +2947,6 @@ states
     TNT1 A 0 A_SpawnItemEx("TAT__BossFade", 0, 0, 0)
     TNT1 A 0 A_JumpIfCloser(128,"TeleportPrepare")
     TNT1 A 0 A_Jump(32,"TeleportDone")
-    TNT1 A 0
     Loop
   Teleport2:
     TNT1 A 0 A_SetInvulnerable
@@ -2913,9 +3047,9 @@ states
     VILE F 0 A_Jump(8,"Teleport")
   Loop
   Missile:
-     VILE E 0 Bright A_Jump(100,2)
-    VILE E 0 Bright A_FaceTarget
-     VILE E 0 Bright A_Jump(100,"Missile3")
+     VILE E 0 A_Jump(100,2)
+    VILE E 0 A_FaceTarget
+     VILE E 0 A_Jump(100,"Missile3")
     VILE M 0 A_Jump(128,4)
     VILE M 0 A_Jump(128,2)
     VILE M 0 ThrustThing(angle*256/360+192, 10, 0, 0)
@@ -3004,8 +3138,7 @@ states
     VILE [ 0 Bright A_CustomMissile ("BFGBall",32,0,300)
     VILE [ 4 Bright A_CustomMissile ("BFGBall",32,0,330)
     VILE ] 4 Bright
-    VILE F 0 A_Jump(8,"Teleport")
-    VILE Q 5
+    VILE Q 5 A_Jump(8,"Teleport")
     VILE Q 0 A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,36,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-36,2)
@@ -3016,7 +3149,7 @@ states
     VILE F 0 A_Jump(16,"Teleport")
     Goto See
   Pain:
-      VILE Q 0 Bright A_Jump(90,"Teleport")
+      VILE Q 0 A_Jump(90,"Teleport")
     VILE Q 2 A_ChangeFlag("NOPAIN", TRUE)
     VILE Q 2 A_Pain
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,0)
@@ -3037,10 +3170,9 @@ states
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
-    VILE Q 0 A_PlaySound("brain/spit")
+    VILE Q 0 Bright A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
-    VILE [ 0
     VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
      VILE Q 0 Bright A_Jump(10,"Teleport")
     Goto See
@@ -3065,10 +3197,9 @@ states
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,300)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,320)
     VILE Q 0 Bright A_CustomMissile ("ArachnotronPlasma",32,0,340)
-    VILE Q 0 A_PlaySound("brain/spit")
+    VILE Q 0 Bright A_PlaySound("brain/spit")
     VILE ] 8 Bright A_CustomMissile("TAT__BossSpawner",30,-30,30,2)
     VILE ] 0 Bright A_CustomMissile("TAT__BossSpawner",30,30,-30,2)
-    VILE [ 0
     VILE Q 0 Bright A_ChangeFlag("NOPAIN", FALSE)
      VILE Q 0 Bright A_Jump(20,"Teleport")
     Goto See
@@ -3421,7 +3552,6 @@ Actor TAT__BlackDeath : LRevenant
     SKEL F 0 A_Recoil(-0.5)
     SKEL F 1 A_Chase
     SKEL A 0 A_Jump(32,"Hold")
-    SKEL A 0
     Loop
     Wander:
     SKEL A 0 A_Recoil(-0.5)
@@ -3757,8 +3887,7 @@ states
     CPOS D 1 A_Wander
     Loop
    Pain:
-    TNT1 A 0 A_SpawnItemEx("TAT__DeadZombie",0,0,0,Random(-8,8),Random(-8,8),Random(0,16))
-    TNT1 A 1
+    TNT1 A 1 A_SpawnItemEx("TAT__DeadZombie",0,0,0,Random(-8,8),Random(-8,8),Random(0,16))
     TNT1 AAAAAAAAAA 0 A_Wander
     TNT1 AAAAAAAAAA 0 A_Wander
     TNT1 AAAAAAAAAA 0 A_Wander
@@ -3779,8 +3908,8 @@ states
     CPOS N -1
     Stop
    XDeath:
-    TNT1 AAAAAAAAAA 0 A_SpawnItemEx("TAT__GibZombie",0,0,0,Random(-16,16),Random(-16,16),Random(0,32))
-    CPOS O 5
+    TNT1 AAAAAAAAA 0 A_SpawnItemEx("TAT__GibZombie",0,0,0,Random(-16,16),Random(-16,16),Random(0,32))
+    CPOS O 5 A_SpawnItemEx("TAT__GibZombie",0,0,0,Random(-16,16),Random(-16,16),Random(0,32))
     CPOS P 5 A_XScream
     CPOS Q 5 A_NoBlocking
     CPOS RS 5
@@ -4035,7 +4164,6 @@ Translation "168:191=112:127"
         SPID I 0 A_SpawnItemEx("TAT__CyberSpider2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
         Stop
     Crush:
-        TNT1 A 0
         TNT1 A 0 A_SpawnItemEx("TAT__CyberSpider2", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
         Stop
     }
@@ -4206,7 +4334,6 @@ PainChance 15
         SPID I 0 A_SpawnItemEx("TAT__CyberSpider3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
         Stop
     Crush:
-        TNT1 A 0
         TNT1 A 0 A_SpawnItemEx("TAT__CyberSpider3", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION)
         Stop
     }
@@ -4272,7 +4399,6 @@ PainChance 10
         SPID S -1 A_BossDeath
     Stop
     Crush:
-        TNT1 A 0
         TNT1 A 0
         Stop
     }
@@ -5672,21 +5798,9 @@ Actor DVActor15 25144//23
 // Valiant //
 /////////////
 
-Actor ValiantImpBall //replaces DoomImpBall
+Actor ValiantImpBall : DoomImpBall //replaces DoomImpBall
 {
-  Game Doom
-  SpawnID 10
-  Radius 6
-  Height 8
   Speed 16
-  Speed 20
-  Damage 3
-  Projectile
-  +RANDOMIZE
-  RenderStyle Add
-  Alpha 1
-  SeeSound "imp/attack"
-  DeathSound "imp/shotx"
   States
   {
   Spawn:
@@ -5700,16 +5814,6 @@ Actor ValiantImpBall //replaces DoomImpBall
 
 Actor ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
 {
-  Radius 13
-  Height 8
-  Speed 25
-  Damage 5
-  Projectile
-  +RANDOMIZE
-  RenderStyle Add
-  Alpha 0.75
-  SeeSound "baby/attack"
-  DeathSound "baby/shotx"
   States
   {
   Spawn:
@@ -5721,21 +5825,12 @@ Actor ValiantPlamsa : ArachnotronPlasma//ArachnotronPlasma
   }
 }
 
-Actor ValiantBaronBall //replaces BaronBall
+Actor ValiantBaronBall : BaronBall //replaces BaronBall
 {
-  Game Doom
-  SpawnID 154
-  Radius 6
   Height 16
   Speed 30
-  Speed 40
-  Damage 5
-  Projectile
-  +RANDOMIZE
-  RenderStyle Add
-  Alpha 1
+  FastSpeed 40
   SeeSound "valkt/sight"
-  DeathSound "baron/shotx"
   States
   {
   Spawn:
@@ -5747,21 +5842,9 @@ Actor ValiantBaronBall //replaces BaronBall
   }
 }
 
-Actor ValiantImp 25074//Replaces DoomImp 3001
+Actor ValiantImp : LDoomImp 25074//Replaces DoomImp 3001
 {
-    Health 60
-    Speed 8
-    Radius 20
-    Height 56
-    Damage 0
     ReactionTime 8
-    PainChance 200
-    Mass 100
-    Monster
-    SeeSound "imp/sight"
-    PainSound "imp/pain"
-    DeathSound "imp/death"
-    ActiveSound "imp/active"
     MeleeSound "imp/stop"
     Obituary "%o was scorched by a super imp."
     HitObituary "%o got scratched by a super imp."
@@ -5805,7 +5888,7 @@ Actor ValiantImp 25074//Replaces DoomImp 3001
     }
 }
 
-Actor ValiantDemon : Demon 25075 //replaces Demon 3002
+Actor ValiantDemon : LDemon 25075 //replaces Demon 3002
 {
   States
   {
@@ -5852,7 +5935,7 @@ Actor ValiantSpectre : ValiantDemon 25076//replaces Spectre 58
   HitObituary "%o was eaten by a super spectre."
 }
 
-Actor ValiantPainElemental : PainElemental
+Actor ValiantPainElemental : LPainElemental
 {
     States
     {
@@ -5871,18 +5954,13 @@ Actor ValiantPainElemental : PainElemental
     }
 }
 
-Actor ValiantSuperMancubus 25077//replaces BaronOfHell 3003
+Actor ValiantSuperMancubus : LBaronOfHell 25077//replaces BaronOfHell 3003
 {
-  Game Doom
   Health 900
-  Speed 8
   Radius 48
   Height 64
-  Damage 0
   ReactionTime 8
   PainChance 80
-  Mass 1000
-  Monster
   SeeSound "valws/death"
   PainSound "fatso/pain"
   DeathSound "valws/sight"
@@ -5918,28 +5996,14 @@ Actor ValiantSuperMancubus 25077//replaces BaronOfHell 3003
         AAAI NOPQRS 6
         AAAI T -1 A_KillMaster("ActivateLexiconSpecial")
         Stop
-      GenericFreezeDeath:
-        "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
-        Goto Super::GenericFreezeDeath
   }
 }
 
-Actor ValiantPyroDemon 25078//replaces HellKnight 69
+Actor ValiantPyroDemon : LHellKnight 25078//replaces HellKnight 69
 {
-  Game Doom
-  Health 500
-  Speed 8
-  Radius 24
-  Height 64
-  Damage 0
   ReactionTime 8
-  PainChance 50
-  Mass 1000
-  Monster
   SeeSound "valkn/pain"
-  PainSound "knight/pain"
   DeathSound "valkn/death"
-  ActiveSound "knight/active"
   Obituary "%o was burned to cinders by a Pyro Knight."
   HitObituary "%o got ripped to shreds by a Pyro Knight."
   States
@@ -5990,18 +6054,16 @@ Actor ValiantPyroDemon 25078//replaces HellKnight 69
   }
 }
 
-Actor ValiantCybruiser 25079//replaces SpiderMastermind 7
+Actor ValiantCybruiser : LSpiderMastermind 25079//replaces SpiderMastermind 7
 {
     Health 500
     Speed 10
     Radius 24
     Height 64
-    Damage 0
     ReactionTime 8
     PainChance 20
-    Mass 1000
-    Monster
-    +NORADIUSDMG
+    -BOSS
+    -MISSILEMORE
     SeeSound "valbn/sight"
     PainSound "baron/pain"
     DeathSound "valbn/death"
@@ -6039,27 +6101,12 @@ Actor ValiantCybruiser 25079//replaces SpiderMastermind 7
             AAAL OPQR 6 Bright
             AAAL S -1 A_KillMaster("ActivateLexiconSpecial")
             Stop
-        GenericFreezeDeath:
-            "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
-            Goto Super::GenericFreezeDeath
     }
 }
 
-Actor ValiantArachnotron 25080//replaces Arachnotron 68
+Actor ValiantArachnotron : LArachnotron 25080//replaces Arachnotron 68
 {
-    Health 500
-    Speed 12
-    Radius 64
-    Height 64
-    Damage 0
     ReactionTime 8
-    PainChance 128
-    Mass 600
-    Monster
-    SeeSound "baby/sight"
-    PainSound "baby/pain"
-    DeathSound "baby/death"
-    ActiveSound "baby/active"
     States
     {
         Spawn:
@@ -6082,7 +6129,6 @@ Actor ValiantArachnotron 25080//replaces Arachnotron 68
             AAAM I 3
             AAAM I 3 A_Pain
             Goto See+1
-            //Goto See
         Death:
             AAAM I 11 A_Scream
             AAAN B 0 A_Jump(127,"Death2")
@@ -6098,9 +6144,6 @@ Actor ValiantArachnotron 25080//replaces Arachnotron 68
             AAAN KL 7
             AAAN M -1 A_KillMaster("ActivateLexiconSpecial")
             Stop
-        GenericFreezeDeath:
-            "####" "#" 0 A_KillMaster("ActivateLexiconSpecial")
-            Goto Super::GenericFreezeDeath
         Raise:
             AAAM PONMLKJ 5
             Goto See+1
@@ -6113,7 +6156,6 @@ Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
     Speed 12
     Radius 24
     Height 56
-    Damage 0
     ReactionTime 8
     PainChance 150
     Mass 400
@@ -6166,7 +6208,6 @@ Actor LightningOrb 25083//replaces HeartColumn 36
     Speed 0
     Radius 16
     Height 16
-    Damage 0
     ReactionTime 1
     PainChance 0
     Mass 100
@@ -6242,25 +6283,11 @@ Actor ValiantSuicideBomberExplosion
     }
 }
 
-Actor ValiantFinalBoss 25085//replaces BlueTorch 44
+Actor ValiantFinalBoss : LArchvile 25085//replaces BlueTorch 44
 {
     Health 7500
-    Radius 20
-    Height 56
-    Mass 500
     Speed 26
-    PainChance 10
     ReactionTime 4
-    Monster
-    MaxTargetRange 896
-    +QUICKTORETALIATE
-    +FLOORCLIP
-    +NOTARGET
-    SeeSound "vile/sight"
-    PainSound "vile/pain"
-    DeathSound "vile/death"
-    ActiveSound "vile/active"
-    MeleeSound "vile/stop"
     Obituary "%o couldn't avoid the Super Vile's fire."
     States
     {
@@ -6307,12 +6334,8 @@ Actor ValiantFinalBoss 25085//replaces BlueTorch 44
     }
 }
 
-Actor ValiantTree1 25086//ShortRedColumn 33
+Actor ValiantTree1 : ShortRedColumn 25086//ShortRedColumn 33
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -6321,12 +6344,8 @@ Actor ValiantTree1 25086//ShortRedColumn 33
   }
 }
 
-Actor ValiantTree2 25087//Stalagtite 47
+Actor ValiantTree2 : Stalagtite 25087//Stalagtite 47
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -6335,12 +6354,8 @@ Actor ValiantTree2 25087//Stalagtite 47
   }
 }
 
-Actor ValiantTree3 25088//SkullColumn 37
+Actor ValiantTree3 : SkullColumn 25088//SkullColumn 37
 {
-  Radius 16
-  Height 40
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -6349,12 +6364,8 @@ Actor ValiantTree3 25088//SkullColumn 37
   }
 }
 
-Actor ValiantTree4 25089//TallGreenColumn 30
+Actor ValiantTree4 : TallGreenColumn 25089//TallGreenColumn 30
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -6363,12 +6374,8 @@ Actor ValiantTree4 25089//TallGreenColumn 30
   }
 }
 
-Actor ValiantTree5 25090//TallRedColumn 32
+Actor ValiantTree5 : TallRedColumn 25090//TallRedColumn 32
 {
-  Radius 16
-  Height 52
-  ProjectilePassHeight -16
-  +SOLID
   States
   {
   Spawn:
@@ -6391,25 +6398,10 @@ Actor CowHead 25091//UNKNOWN
   }
 }
 
-Actor ValiantDarkDemon 25092//replaces UNKOWN
+Actor ValiantDarkDemon : LDemon 25092//replaces UNKOWN
 {
-//THE Actor PROPS HAVE TO BE DIFFERENT FROM THE REGU;LAR DEMON JUST NOT SURE ABOUT IT
-  Game Doom
-  SpawnID 8
-  Health 150
-  PainChance 180
   Speed 12
-  Radius 30
-  Height 56
-  Mass 400
   ReactionTime 8
-  Monster
-  +FLOORCLIP
-  SeeSound "demon/sight"
-  AttackSound "demon/melee"
-  PainSound "demon/pain"
-  DeathSound "demon/death"
-  ActiveSound "demon/active"
   Obituary "%o was bit by a super demon."
   States
   {
@@ -6441,7 +6433,7 @@ Actor ValiantDarkDemon 25092//replaces UNKOWN
   }
 }
 
-Actor ValiantLostSoul : LostSoul 25093//LostSoul 3006
+Actor ValiantLostSoul : LLostSoul 25093//LostSoul 3006
 {
   States
   {
@@ -6541,7 +6533,6 @@ Actor Epic1A7 : LDoomImp 25100//DoomImp 3001
 
 Actor Epic1A8 : LZombieMan 25101//ZombieMan 3004
 {
-  DropItem "Epic2A18"
   States
   {
   Spawn:
@@ -7054,7 +7045,7 @@ Actor Epic2A36 : LDoomImp 25140//DoomImp 3001
 
 //Revenant 25103//REVENANT 66
 
-Actor Epic2A37 : PainElemental 25141//71
+Actor Epic2A37 : LPainElemental 25141//71
 {
   States
   {
@@ -7086,7 +7077,7 @@ Actor Epic2A37 : PainElemental 25141//71
   }
 }
 
-Actor Epic2A38 : WolfensteinSS 25142//84
+Actor Epic2A38 : LWolfensteinSS 25142//84
 {
   SeeSound "wolfss/sight"
   PainSound "wolfss/pain"

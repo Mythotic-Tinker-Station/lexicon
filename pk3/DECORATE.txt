@@ -1823,8 +1823,6 @@ Actor LexiconEvilMarine : LWolfensteinSS 20305 //84
 {
   Obituary "%o was killed by an evil marine."
   Health 250
-  Radius 20
-  Height 56
   Mass 100
   Speed 16
   PainChance 30
@@ -5954,17 +5952,16 @@ Actor ValiantPainElemental : LPainElemental
     }
 }
 
-Actor ValiantSuperMancubus : LBaronOfHell 25077//replaces BaronOfHell 3003
+Actor ValiantSuperMancubus : LFatso 25077//replaces BaronOfHell 3003
 {
   Health 900
   Radius 48
   Height 64
   ReactionTime 8
   PainChance 80
+  Species "BaronOfHell"
   SeeSound "valws/death"
-  PainSound "fatso/pain"
   DeathSound "valws/sight"
-  ActiveSound "fatso/active"
   Obituary "%o couldn't avoid the Super Mancubus's volley."
   States
   {
@@ -6054,21 +6051,16 @@ Actor ValiantPyroDemon : LHellKnight 25078//replaces HellKnight 69
   }
 }
 
-Actor ValiantCybruiser : LSpiderMastermind 25079//replaces SpiderMastermind 7
+Actor ValiantCybruiser : LBaronOfHell 25079//replaces SpiderMastermind 7
 {
     Health 500
     Speed 10
-    Radius 24
-    Height 64
     ReactionTime 8
     PainChance 20
-    -BOSS
-    -MISSILEMORE
+    +NORADIUSDMG
     Species "ValiantCybruiser"
     SeeSound "valbn/sight"
-    PainSound "baron/pain"
     DeathSound "valbn/death"
-    ActiveSound "baron/active"
     Obituary "%o rode a Cybruiser's rocket."
     HitObituary "%o got clawed by a Cybruiser."
     States

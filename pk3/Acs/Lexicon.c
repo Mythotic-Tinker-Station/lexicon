@@ -79,15 +79,15 @@ strict namespace
         { "Zone 300",			            "ZTH01"	        }, // 47
         { "Interception",			        "INT01"	        }, // 48
         { "Doom2 Redux",			        "RDX01"	        }, // 49
-        { "Knee-Deep in the Dead",		    "E1M1"	        }, // 50
-        { "The Shores of Hell",			    "E2M1"	        }, // 51
-        { "Inferno",			            "E3M1"	        }, // 52
-        { "Thy Flesh Consumed",			    "E4M1"	        }, // 53
-        { "Sigil",			                "E5M1"	        }, // 54
-        { "No Rest For The Living",			"NV_MAP01"	    }, // 55
-        { "The Master Levels",			    "ML_MAP01"	    }, // 56
-        { "TNT: Evilution",			        "TN_MAP01"	    }, // 57
-        { "The Plutonia Experiment",		"PL_MAP01"	    }, // 58
+        { "*Knee-Deep in the Dead",		    "E1M1"	        }, // 50
+        { "*The Shores of Hell",		    "E2M1"	        }, // 51
+        { "*Inferno",			            "E3M1"	        }, // 52
+        { "*Thy Flesh Consumed",			"E4M1"	        }, // 53
+        { "*Sigil",			                "E5M1"	        }, // 54
+        { "*No Rest For The Living",	    "NV_MAP01"	    }, // 55
+        { "*The Master Levels",			    "ML_MAP01"	    }, // 56
+        { "*TNT: Evilution",			    "TN_MAP01"	    }, // 57
+        { "*The Plutonia Experiment",		"PL_MAP01"	    }, // 58
         { "Unused",			                "MAP01"	        }, // 59
         { "Unused",			                "MAP01"	        }, // 60
         { "Unused",			                "MAP01"	        }, // 61
@@ -298,7 +298,6 @@ strict namespace
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
-
             terminate;
         }
         // if the level is anything but the HUB map
@@ -601,6 +600,21 @@ strict namespace
     script "VotePlayer" (int id)
     {
         if(id == -1) { terminate; }
+
+        // doom complete support is not done yet, ignore these ids for now
+        switch(id)
+        {
+            case 50:
+            case 51:
+            case 52:
+            case 53:
+            case 54:
+            case 55:
+            case 56:
+            case 57:
+            case 58:
+            terminate;
+        }
 
         if(playernumber() > -1)
         {

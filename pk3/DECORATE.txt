@@ -1709,7 +1709,7 @@ Actor CS2ChaingunGuy : LChaingunGuy 20309//65
 Actor MotherFucker 2033
 {
       MONSTER
-      obituary "%o was fucked by a MotherFucker."
+      obituary "%o was fucked by a motherfucker."
       health 10000
       mass 1600
       radius 70
@@ -1786,7 +1786,7 @@ Actor LexiconAfrit 20306
   Monster
   +NOGRAVITY
   +FLOAT
-  Obituary "%o was scorched by an Afrit"
+  Obituary "%o was scorched by an afrit."
   States
   {
   Spawn:
@@ -1898,7 +1898,7 @@ Actor "Demon Smith" 20316
   PainSound "DemonSmith/See"
   DeathSound "DemonSmith/Death"
   ActiveSound "DemonSmith/See"
-  Obituary "$OB_WOLFSS"
+  Obituary "%o was overwhelmed by a haymaker."
   States
   {
   Spawn:
@@ -2217,7 +2217,7 @@ Actor TAT__SuperBoss 32508
   DeathSound "brain/death"
   ActiveSound "vile/active"
   MeleeSound "vile/stop"
-  Obituary "%o was destroyed by a super archvile"
+  Obituary "%o was destroyed by a super vile."
   dropitem "RedSkull"
   Translation "13:15=0:2", "16:47=112:127", "48:79=80:111", "128:143=92:111",
   "144:151=104:111", "160:167=112:127", "168:191=112:127", "208:223=80:95", "224:231=112:112",
@@ -3433,6 +3433,7 @@ Alpha 1.0
 +QUICKTORETALIATE
 +PUSHABLE
 Translation "16:47=112:127", "160:167=112:125", "169:191=112:127", "209:223=112:120", "232:235=121:124"
+Obituary "%o was blown up by a suicidal lost soul."
 Speed 6
   states
   {
@@ -3468,7 +3469,6 @@ Speed 6
 Actor TAT__Kamikaze
 {
   Translation "16:47=112:127", "160:167=112:125", "169:191=112:127", "209:223=112:120", "232:235=121:124"
-  obituary "%o was blown up by a suicidal lost soul"
   radius 16
   height 56
   speed 25
@@ -4770,7 +4770,7 @@ Actor Garg 32515
   Damage 3
   Speed 8
   Monster
-  Obituary "was killed by a Garg"
+  Obituary "%o was killed by a garg"
   DeathSound "d2twid/yorpdth"
   AttackSound "d2twid/gargdth"
   States
@@ -5736,8 +5736,8 @@ Actor DVActor15 25144//23
     DeathSound "ClericDeath"
     ActiveSound "ClericRoam"
     Tag "Hell Cleric"
-    Obituary "%o was burned by a Hell Cleric."
-    HitObituary "%o was mauled by a Hell Cleric."
+    Obituary "%o was burned by a hell cleric."
+    HitObituary "%o was mauled by a hell cleric."
     DamageFactor "Fire", 0.5
     States
     {
@@ -5888,6 +5888,7 @@ Actor ValiantImp : LDoomImp 25074//Replaces DoomImp 3001
 
 Actor ValiantDemon : LDemon 25075 //replaces Demon 3002
 {
+  HitObituary "%o was bit by a super demon."
   States
   {
   Spawn:
@@ -5962,7 +5963,7 @@ Actor ValiantSuperMancubus : LFatso 25077//replaces BaronOfHell 3003
   Species "BaronOfHell"
   SeeSound "valws/death"
   DeathSound "valws/sight"
-  Obituary "%o couldn't avoid the Super Mancubus's volley."
+  Obituary "%o couldn't avoid the super mancubus' volley."
   States
   {
       Spawn:
@@ -6001,8 +6002,8 @@ Actor ValiantPyroDemon : LHellKnight 25078//replaces HellKnight 69
   ReactionTime 8
   SeeSound "valkn/pain"
   DeathSound "valkn/death"
-  Obituary "%o was burned to cinders by a Pyro Knight."
-  HitObituary "%o got ripped to shreds by a Pyro Knight."
+  Obituary "%o was burned to cinders by a pyrodemon."
+  HitObituary "%o got ripped to shreds by a pyrodemon."
   States
   {
     Spawn:
@@ -6061,8 +6062,8 @@ Actor ValiantCybruiser : LBaronOfHell 25079//replaces SpiderMastermind 7
     Species "ValiantCybruiser"
     SeeSound "valbn/sight"
     DeathSound "valbn/death"
-    Obituary "%o rode a Cybruiser's rocket."
-    HitObituary "%o got clawed by a Cybruiser."
+    Obituary "%o rode a cybruiser's rocket."
+    HitObituary "%o got clawed by a cybruiser."
     States
     {
         Spawn:
@@ -6159,7 +6160,7 @@ Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
     PainSound "baby/pain"
     DeathSound "valdg/death"
     ActiveSound "baby/active"
-    Obituary "%o got blasted by an Arachnorb."
+    Obituary "%o got blasted by an arachnorb."
     States
     {
     Spawn:
@@ -6235,7 +6236,6 @@ Actor ValiantSuicideBomber 25084//replaces DeadLostSoul 23
     SeeSound "shotguy/sight"
     PainSound "shotguy/pain"
     Obituary "%o hugged a suicide bomber."
-    HitObituary "%o hugged a suicide bomber."
     States
     {
         Spawn:
@@ -6281,7 +6281,7 @@ Actor ValiantFinalBoss : LArchvile 25085//replaces BlueTorch 44
     Health 7500
     Speed 26
     ReactionTime 4
-    Obituary "%o couldn't avoid the Super Vile's fire."
+    Obituary "%o couldn't avoid the super vile's fire."
     States
     {
     Spawn:
@@ -6395,7 +6395,6 @@ Actor ValiantDarkDemon : LDemon 25092//replaces UNKOWN
 {
   Speed 12
   ReactionTime 8
-  Obituary "%o was bit by a super demon."
   States
   {
   Spawn:
@@ -7077,6 +7076,7 @@ Actor Epic2A38 : LWolfensteinSS 25142//84
   DeathSound "wolfss/death"
   ActiveSound "wolfss/active"
   AttackSound "wolfss/attack"
+  Obituary "%o was terminated by a stealth trooper."
   States
   {
   Spawn:
@@ -7196,6 +7196,7 @@ Actor AAA13 : CommanderKeen 25163// KEEN (72)
     ActiveSound "AAkeenpn"
     PainSound "demon/pain"
     DeathSound "AAkeendt"
+    Obituary "An alien caught %o in its sight."
     States
     {
     Spawn:
@@ -7836,7 +7837,7 @@ Actor HPArachnorb
     PainSound "baby/pain"
     DeathSound "valdg/death"
     ActiveSound "baby/active"
-    Obituary "%o got blasted by an Arachnorb."
+    Obituary "%o got blasted by an arachnorb."
     States
     {
     Spawn:

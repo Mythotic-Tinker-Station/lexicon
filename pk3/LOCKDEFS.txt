@@ -5,8 +5,9 @@ ClearLocks
 
 Lock 1 Doom
 {
-	//$Title "Red key card"
-	Any { RedCard Mayhem17RedKey }
+    //$Title "Red Card"
+	RedCard
+    Any { RedCard Mayhem17RedKey }
 	Message "$PD_REDC"
 	RemoteMessage "$PD_REDCO"
 	Mapcolor 255 0 0
@@ -15,8 +16,8 @@ Lock 1 Doom
 
 Lock 2 Doom
 {
-	//$Title "Blue key card"
-	Any { BlueCard Mayhem17BlueKey }
+    //$Title "Blue Card"
+    Any { BlueCard Mayhem17BlueKey }
 	Message "$PD_BLUEC"
 	RemoteMessage "$PD_BLUECO"
 	Mapcolor 0 0 255
@@ -25,10 +26,39 @@ Lock 2 Doom
 
 Lock 3 Doom
 {
-	//$Title "Yellow key card"
+    //$Title "Yellow card"
 	Any { YellowCard Mayhem17YellowKey }
 	Message "$PD_YELLOWC"
 	RemoteMessage "$PD_YELLOWCO"
+	Mapcolor 255 255 0
+}
+
+Lock 4 Doom
+{
+	//$Title "Red skull"
+    Any { RedSkull Mayhem17RedKey }
+	Message "$PD_REDS"
+	RemoteMessage "$PD_REDSO"
+	Mapcolor 255 0 0
+}
+
+
+Lock 5 Doom
+{
+	//$Title "Blue skull"
+	Any { BlueSkull Mayhem17BlueKey }
+	Message "$PD_BLUES"
+	RemoteMessage "$PD_BLUESO"
+	Mapcolor 0 0 255
+}
+
+
+Lock 6 Doom
+{
+	//$Title "Yellow skull"
+	Any { YellowSkull Mayhem17YellowKey }
+	Message "$PD_YELLOWS"
+	RemoteMessage "$PD_YELLOWSO"
 	Mapcolor 255 255 0
 }
 

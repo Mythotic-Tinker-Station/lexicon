@@ -8,7 +8,8 @@ strict namespace
 
         //unused
         //#include "skybox.c"
-
+        #include "sharekey.c"
+        
         #define STATE_INIT -1
         #define STATE_VOTEWAIT 0
         #define STATE_COUNTDOWN 1

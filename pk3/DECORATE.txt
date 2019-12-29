@@ -5202,7 +5202,7 @@ Actor Mayhem17RedTorch : RedTorch 25048 //46
   }
 }
 
-Actor Mayhem17BlueKey : Key 25028 //40
+Actor Mayhem17BlueKey : Key
 {
   Inventory.PickupMessage "Picked up a blue key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5216,7 +5216,7 @@ Actor Mayhem17BlueKey : Key 25028 //40
   }
 }
 
-Actor Mayhem17RedKey : Key 25043 //38
+Actor Mayhem17RedKey : Key
 {
   Inventory.PickupMessage "Picked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5230,7 +5230,7 @@ Actor Mayhem17RedKey : Key 25043 //38
   }
 }
 
-Actor Mayhem17YellowKey : Key 25049 //39
+Actor Mayhem17YellowKey : Key
 {
   Inventory.PickupMessage "Picked up a gold key."
   Inventory.PickupSound "mayhem17/i_pkup"
@@ -5244,12 +5244,15 @@ Actor Mayhem17YellowKey : Key 25049 //39
   }
 }
 
-Actor Mayhem17RedCoin : Key 25017 //13
+Actor Mayhem17RedCoin : Inventory 25017
 {
+  +INVENTORY.ALWAYSPICKUP
+  +INVENTORY.AUTOACTIVATE
   +INVENTORY.NEVERRESPAWN
+  Inventory.MaxAmount 0
   Inventory.PickupMessage "A mysterious red coin..."
-  Inventory.Icon "STKEYS2"
   Inventory.PickupSound "mayhem17/i_pkup"
+  Inventory.UseSound ""
   States
   {
   Spawn:

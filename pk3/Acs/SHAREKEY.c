@@ -31,7 +31,8 @@ str keynames[26] =
     "KeySwamp"
 };
 
-script "GetFoundKeys_Enter" ENTER
+
+function void GetFoundKeys(void)
 {
     if (GetCVar("SV_SharedKeys") == 1)
     {
@@ -45,18 +46,14 @@ script "GetFoundKeys_Enter" ENTER
     }
 }
 
+script "GetFoundKeys_Enter" ENTER
+{
+    GetFoundKeys();
+}
+
 script "GetFoundKeys_Respawn" RESPAWN
 {
-    if (GetCVar("SV_SharedKeys") == 1)
-    {
-        for (int i = 0; i < 26; i++)
-        {
-            if (keysfound[i] == true)
-            {
-                GiveInventory(keynames[i], 1);
-            }
-        }
-    }
+    GetFoundKeys();
 }
 
 script "FoundKey" (int index)

@@ -1,12 +1,9 @@
 #library "command"
 #include "../../compiler/lib/zcommon.h"
 
-int NumMonsters;
-
 function int GetCurrentMapset(void)
 {
-    int strIndex = StrParam(n:PRINTNAME_LEVEL);
-    str mapset = StrLeft(strIndex, 3);
+    str mapset = StrLeft(StrParam(n:PRINTNAME_LEVEL), 3);
 
     if (!StrIcmp(mapset, "CS0") || !StrIcmp(mapset, "CS2"))
     {
@@ -47,19 +44,4 @@ function int GetCurrentMapset(void)
 script "Maniac" (void)
 {
     SetResultValue(GetCurrentMapset());
-}
-
-script "CountMonsters" (void)
-{
-    NumMonsters++;
-}
-
-script "MaxTicLength" (void)
-{
-    SetResultValue(NumMonsters);
-}
-
-script "MonDiv1k" (void)
-{
-    SetResultValue(NumMonsters/1000);
 }

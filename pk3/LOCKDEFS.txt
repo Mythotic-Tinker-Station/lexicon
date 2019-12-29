@@ -1,12 +1,10 @@
 //
 // Doom Locks - they include Heretic's keys because somebody mentioned that he already used them
 //
-ClearLocks
 
 Lock 1 Doom
 {
     //$Title "Red Card"
-	RedCard
     Any { RedCard Mayhem17RedKey }
 	Message "$PD_REDC"
 	RemoteMessage "$PD_REDCO"
@@ -26,7 +24,7 @@ Lock 2 Doom
 
 Lock 3 Doom
 {
-    //$Title "Yellow card"
+    //$Title "Yellow Card"
 	Any { YellowCard Mayhem17YellowKey }
 	Message "$PD_YELLOWC"
 	RemoteMessage "$PD_YELLOWCO"
@@ -61,37 +59,6 @@ Lock 6 Doom
 	RemoteMessage "$PD_YELLOWSO"
 	Mapcolor 255 255 0
 }
-
-
-Lock 4 Doom
-{
-	//$Title "Red skull"
-    Any { RedSkull Mayhem17RedKey }
-	Message "$PD_REDS"
-	RemoteMessage "$PD_REDSO"
-	Mapcolor 255 0 0
-}
-
-
-Lock 5 Doom
-{
-	//$Title "Blue skull"
-	Any { BlueSkull Mayhem17BlueKey }
-	Message "$PD_BLUES"
-	RemoteMessage "$PD_BLUESO"
-	Mapcolor 0 0 255
-}
-
-
-Lock 6 Doom
-{
-	//$Title "Yellow skull"
-	Any { YellowSkull Mayhem17YellowKey }
-	Message "$PD_YELLOWS"
-	RemoteMessage "$PD_YELLOWSO"
-	Mapcolor 255 255 0
-}
-
 
 Lock 129 Doom
 {

@@ -5,7 +5,7 @@
 strict namespace
 {
     #if 1
-    
+
         //unused
         //#include "skybox.c"
 
@@ -14,13 +14,13 @@ strict namespace
         #define STATE_COUNTDOWN 1
         #define STATE_CHECKTIE 2
         #define STATE_RESULTS 3
-        
+
         #define MAPSET_MAX 192
         #define MAPSET_SECTIONS 3
         #define MAPSET_SECTIONS_MAX 64
-        
+
         #define PLAYER_MAX 64
-    
+
     #endif
 
     // this is where the names that show up in the votes are, and the map names to go to when that wad wins
@@ -94,7 +94,7 @@ strict namespace
         { "Unused",			                "MAP01"	        }, // 62
         { "Unused",			                "MAP01"	        }, // 63
         { "Unused",			                "MAP01"	        }, // 64
-        
+
         // Slaughter Mapsets
         { "Combat Shock",                   "CS01"             }, // 65
         { "Combat Shock 2",                 "CS201"            }, // 66
@@ -160,7 +160,7 @@ strict namespace
         { "Unused",			                "MAP01"            }, // 126
         { "Unused",			                "MAP01"            }, // 127
         { "Unused",			                "MAP01"            }, // 128
-        
+
         // Single Levels
 		{ "The Spire",				        "TSP01"            }, // 129
 		{ "The Eye",				        "EYE01"            }, // 130
@@ -239,7 +239,7 @@ strict namespace
     int time_seconds = 0;               // the time left in seconds
 
     int players[PLAYER_MAX];            // all the player info
-    
+
     int state = STATE_INIT;             // state of the voting system
     int state_clock;                    // custom timer
 
@@ -250,7 +250,7 @@ strict namespace
     fixed hud_height;                   // the position of the bottom of the screen
     fixed hud_width_half;               // the position of the center of the screen on the x axis
     fixed hud_height_half;              // the position of the center of the screen on the y axis
-    
+
     struct obj_confetti
     {
         int x;
@@ -262,10 +262,10 @@ strict namespace
         str image;
     };
     struct obj_confetti objs_confetti[128];
-    
+
     // section names
     str sectionnames[MAPSET_SECTIONS];
-    
+
     /////////////////////
     // level
     /////////////////////
@@ -273,11 +273,6 @@ strict namespace
     int clock = 0;
     int countstart = 0;
     str clockcolor = "\c[Green]";
-
-
-
-
-
 
 
     ///////////////////////////////////////////////////////////////
@@ -294,7 +289,7 @@ strict namespace
         if(CheckFont("WILV40"))     { SetCvar("lexicon_global_iwad_sigil", 1); }
         if(CheckFont("M_MASTER"))   { SetCvar("lexicon_global_iwad_master", 1); }
         if(CheckFont("M_NOREST"))   { SetCvar("lexicon_global_iwad_norest", 1); }
-    
+
         // if level is the HUB map
         if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
@@ -312,7 +307,7 @@ strict namespace
                 // set levelstart to 0
                 levelstarted = 0;
                 countstart = 0;
-                
+
                 // loop until levelstart and countstart are 1
                 while(levelstarted == 0 || countstart == 0)
                 {
@@ -326,7 +321,7 @@ strict namespace
                             countstart = 1;
                         }
                     }
-                    
+
                     // if level has not started
                     if(levelstarted == 0)
                     {
@@ -351,16 +346,16 @@ strict namespace
                 {
                     // count down the clock
                     clock--;
-                    
+
                     // change the color of the clock
                             if(clock > 7)                  { clockcolor = "\c[Green]";     }
                     else    if(clock <= 7 && clock > 4)    { clockcolor = "\c[Yellow]";    }
                     else    if(clock <= 4 && clock > 1)    { clockcolor = "\c[Orange]";    }
                     else    if(clock <= 1 && clock >= 0)   { clockcolor = "\c[Red]";       }
-                        
+
                     // draw clock
                     hudmessagebold(s:clockcolor, l:"UI_RETURN", i:clock; 0, 9998, 0, hud_width_half, 112.0, 1.1);
-                    
+
                      // when time is up
                     if(clock < 0)
                     {
@@ -368,21 +363,21 @@ strict namespace
                         SetCVar("lexicon_global_sucktime", 0);
                         ChangeLevel("VR", 0, 0, -1);
                     }
-                    
+
                     // seconds
                     delay(35);
                 }
             }
         }
     }
-    
+
     // when a player enters the game(server side)
     script "SV_PlayerEnter" enter
     {
         // we have entered the VR map
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99) 
-        { 
-            
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
+        {
+
             // setup player's array slot
             int pnum = playernumber();
             players[pnum] = -1;
@@ -391,18 +386,17 @@ strict namespace
             bubble_sort();
             ACS_NamedExecute("Sync_Timer", 0, time_seconds);
             ACS_NamedExecuteAlways("Sync_State", 0, state);
-            
+
             // clear out player's inventory
             if(GetCVar("lexicon_clear_inventory") == 1)
             {
                 ClearInventory();
             }
-            
+
             // give player the votegun
             GiveInventory("Lexicon_VoteGun", 1);
             SetWeapon("Lexicon_VoteGun");
         }
-
     }
 
     // when a player enters the game(client side)
@@ -410,42 +404,41 @@ strict namespace
     {
         // prevent this script from running multiple times on each client, for each client
         if(playernumber() != ConsolePlayerNumber()) { Terminate; }
-        
+
         //////////////////////////
         // Map Credits
         //////////////////////////
         // do not show the credits stuff in the hub or the titlemap
-        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP) 
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99 && GameType() != GAME_TITLE_MAP)
         {
             str credits = GetDynLangEntry("C", strparam(n:PRINTNAME_LEVEL));
             str mapset = GetDynLangEntry("C", StrLeft(strparam(n:PRINTNAME_LEVEL), StrLen(strparam(n:PRINTNAME_LEVEL))-2));
-            
+
             // mapset/mapname/creds
             HudSetup("HUDFONT");
 
             Hudmessage(s:"\c[White]", l:"UI_MAPSET", s:"\c[Cyan]", s:mapset, s:"\n\c[White]", l:"UI_MAP", s:"\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]", l:"UI_CREDITS", s:"\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
-       
+
             // run through the doom2 music in order per level
             ACS_NamedExecute("MusicBox", 0, 0);
-        
         }
-        
+
         //////////////////////////
         // HUB HUD init
         //////////////////////////
         else if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
         {
             HudSetup("HUDFONT");
-            
+
             hudmessagebold(l:"UI_WELCOME"; HUDMSG_LOG, 9997, 0, hud_width_half + 0.4, 80.0, 10.0);
-            
+
             // we have come back from a completed mapset
             if(GetCVar("lexicon_global_sucktime") == 1337)
             {
                 hudmessagebold(l:"UI_COMPLETE", s:votenames[GetCVar("lexicon_global_votechosen")][0], s:"!"; 0, 9997, 0, hud_width_half + 0.4, 64.0, 30.0);
                 ACS_NamedExecute("Fireworks", 0);
             }
-            
+
             // force musicbox to play doom2 intermission song
             ACS_NamedExecute("MusicBox", 0, 33);
 
@@ -474,16 +467,15 @@ strict namespace
                 objs_confetti[c].animnum = random(0, 7);
             }
         }
-        
-        
-        
+
+
         ///////////////
         // The Loop
         ///////////////
         while(1)
         {
             HudSetup("HUDFONT");
-            
+
             //////////////////////////
             // Debug Mode
             //////////////////////////
@@ -497,7 +489,7 @@ strict namespace
             //////////////////////////
             // if we are on the hub map
             if(GetLevelInfo(LEVELINFO_LEVELNUM) == 99)
-            {            
+            {
                 // COUNTDOWN
                 if(state == STATE_COUNTDOWN)
                 {
@@ -506,10 +498,10 @@ strict namespace
                     else    if(time_seconds <= GetCvar("lexicon_timer_yellow") && time_seconds > GetCvar("lexicon_timer_orange")) { clockcolor = "\c[Yellow]"; }
                     else    if(time_seconds <= GetCvar("lexicon_timer_orange") && time_seconds > GetCvar("lexicon_timer_red")) { clockcolor = "\c[Orange]"; }
                     else    if(time_seconds <= GetCvar("lexicon_timer_red")) { clockcolor = "\c[Red]"; }
-                    
+
                     // time left
                     hudmessagebold(s:clockcolor, l:"UI_TIMELEFT", d:time_seconds; 0, 9998, 0, 192.1, 112.0, 0.1);
-                    
+
                     // vote header
                     hudmessagebold(s:"\c[Cyan]", l:"UI_VOTES"; 0, 9999, 0, 192.1, 136.0, 0.1);
 
@@ -520,10 +512,10 @@ strict namespace
                         if(votessorted[i][0] > 0)
                         {
                             y += 23.0;
-                            
+
                             // mapset name
                             hudmessagebold(s:"\c[Gold]", d:votessorted[i][0], s:" : ", s:votenames[votessorted[i][1]][0]; 0, i+10000, 0, 300.1, y, 0.1);
-                            
+
                             // perfix handling
                             for(int p = 0; p < MAPSET_SECTIONS; p++)
                             {
@@ -542,7 +534,7 @@ strict namespace
                         hudmessagebold(s:"\c[Green]", l:"UI_YOURVOTE", s:"\c[Gold]", s:votenames[players[playernumber()]][0]; 0, 9700, 0, hud_width_half, hud_height-192.0, 0.1);
                     }
                 }
-                
+
                 // RESULTS
                 else if(state == STATE_RESULTS)
                 {
@@ -620,7 +612,7 @@ strict namespace
         {
             // get player number
             int pnum = playernumber();
-            
+
             // if the player has not voted...
             if (players[pnum] < 0)
             {
@@ -699,18 +691,18 @@ strict namespace
         {
             switch(id)
             {
-                case 0: 
+                case 0:
                     if(GetCVar("lexicon_global_godmode") == 0) { SetCVar("lexicon_global_godmode", 1); break; }
                     if(GetCVar("lexicon_global_godmode") == 1) { SetCVar("lexicon_global_godmode", 0); break; }
                     break;
-                case 2: 
+                case 2:
                     if(GetCVar("lexicon_global_instakiller") == 0) { SetCVar("lexicon_global_instakiller", 1); break; }
                     if(GetCVar("lexicon_global_instakiller") == 1) { SetCVar("lexicon_global_instakiller", 0); break; }
                     break;
             }
         }
     }
-    
+
     script "MusicBox" (int id)
     {
         switch(GetCVar("lexicon_global_votechosen"))
@@ -727,13 +719,12 @@ strict namespace
             terminate;
             break;
         }
-    
+
         if(GetCVar("lexicon_global_miscpk3") == 0)
         {
-        
             str track = "";
             int lastid = GetCVar("lexicon_global_musicid");
-            
+
             if(id == 0)
             {
                 SetCVar("lexicon_global_musicid", GetCVar("lexicon_global_musicid")+1);
@@ -744,7 +735,7 @@ strict namespace
             {
                 SetCVar("lexicon_global_musicid", id);
             }
-            
+
             switch(GetCVar("lexicon_global_musicid"))
             {
                 case 1: track   = "d_runnin";   break;
@@ -813,19 +804,6 @@ strict namespace
     }
 
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
     ///////////////////////////////////////////////////////////////
     // Functions
     ///////////////////////////////////////////////////////////////
@@ -835,7 +813,7 @@ strict namespace
 
         time_ticks = GetCvar("lexicon_timer_start")*35;
         time_seconds = time_ticks/35;
-        
+
         // set the system to the countdown state
         state = STATE_VOTEWAIT;
 
@@ -854,7 +832,7 @@ strict namespace
             {
                 time_ticks = 0;
             }
-            
+
             // set the system to the countdown state
             state = STATE_COUNTDOWN;
 
@@ -871,7 +849,7 @@ strict namespace
 
         // if times up, or all players voted
         if(time_ticks <= 0 || (GetCvar("lexicon_timer_all_players") == 1 && votecount >= playercount()))
-        { 
+        {
             // set the system to the check tie state
             state = STATE_CHECKTIE;
 
@@ -1014,7 +992,7 @@ strict namespace
         SetHudSize(x, y, true);
         SetFont(font);
     }
-    
+
     // get language.txt entries with a specific format
     function str getDynLangEntry(str p1, str p2)
     {
@@ -1029,52 +1007,20 @@ strict namespace
         }
         return text;
     }
-    
+
     script "RottenEggs" (int id) clientside
     {
         // get lore
         str lore = getDynLangEntry("LORE", strparam(i:id));
-        
+
         // display lore
         HudSetup("HUDFONT");
         hudmessage(s:lore; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
-    
-    
-    script "SharedKeys" (int id) 
-    {
-        str key = "RedCard";
-        switch(id)
-        {
-            case 1: key = "YellowCard"; break;
-            case 2: key = "BlueCard"; break;
-        }       
-       
-        if(GetCvar("SV_SharedKeys") == 1)
-        {
-            for(int p = 0; p < 64; p++) 
-            {
-                SetActivatorToPlayer(p);
-                GiveInventory(key, 1);
-            }
-        }
-        else
-        {
-            GiveInventory(key, 1);
-        }
-    }
 }
 
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 // Database stuff
 

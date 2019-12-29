@@ -1039,6 +1039,30 @@ strict namespace
         HudSetup("HUDFONT");
         hudmessage(s:lore; HUDMSG_LOG, 9701, 0, hud_width_half, hud_height_half, 10.0);
     }
+    
+    
+    script "SharedKeys" (int id) 
+    {
+        str key = "RedCard";
+        switch(id)
+        {
+            case 1: key = "YellowCard"; break;
+            case 2: key = "BlueCard"; break;
+        }       
+       
+        if(GetCvar("SV_SharedKeys") == 1)
+        {
+            for(int p = 0; p < 64; p++) 
+            {
+                SetActivatorToPlayer(p);
+                GiveInventory(key, 1);
+            }
+        }
+        else
+        {
+            GiveInventory(key, 1);
+        }
+    }
 }
 
 

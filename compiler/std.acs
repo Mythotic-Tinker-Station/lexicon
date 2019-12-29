@@ -1403,6 +1403,7 @@ int NamedRequestScriptPuke( str, int = 0, int = 0, int = 0, int = 0 ) -= 126;
 int SystemTime() -= 127;
 int GetTimeProperty( int, int, bool = false ) -= 128;
 str Strftime( int, str, bool = false ) -= 129;
+int SetActivatorToPlayer( int ) -= 131;
 int GetTeamScore( int ) -= 19620;
 void SetTeamScore( int, int ) -= 19621;
 

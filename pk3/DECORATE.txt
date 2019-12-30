@@ -5217,7 +5217,7 @@ Actor Mayhem17RedKey : CustomInventory
     Loop
     
   Pickup:
-    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 0)
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 0, 1)
     stop
   }
 }
@@ -5235,7 +5235,7 @@ Actor Mayhem17YellowKey : CustomInventory
     Loop
     
   Pickup:
-    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 1)
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 1, 1)
     stop
   }
 }
@@ -5253,7 +5253,7 @@ Actor Mayhem17BlueKey : CustomInventory
     Loop
     
   Pickup:
-    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 2)
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 2, 1)
     stop
   }
 }

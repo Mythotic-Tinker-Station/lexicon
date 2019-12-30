@@ -1,34 +1,14 @@
 
 
-bool keysfound[26];
-str keynames[26] = 
+
+#define KEY_COUNT 3
+
+bool keysfound[KEY_COUNT];
+str keynames[KEY_COUNT] = 
 {
     "RedCard", 
     "YellowCard", 
-    "BlueCard", 
-    "RedSkull", 
-    "YellowSkull", 
-    "BlueSkull", 
-    "KeyBlue", 
-    "KeyGreen", 
-    "KeyYellow", 
-    "ChexRedCard", 
-    "ChexYellowCard",
-    "ChexBlueCard", 
-    "RedFlemKey", 
-    "YellowFlemKey", 
-    "BlueFlemKey", 
-    "KeyAxe", 
-    "KeyCastle", 
-    "KeyCave", 
-    "KeyDungeon", 
-    "KeyEmerald", 
-    "KeyFire", 
-    "KeyHorn", 
-    "KeyRusted", 
-    "KeySilver", 
-    "KeySteel",
-    "KeySwamp"
+    "BlueCard"
 };
 
 
@@ -36,7 +16,7 @@ function void GetFoundKeys(void)
 {
     if (GetCVar("SV_SharedKeys") == 1)
     {
-        for (int i = 0; i < 26; i++)
+        for (int i = 0; i < KEY_COUNT; i++)
         {
             if (keysfound[i] == true)
             {
@@ -46,30 +26,27 @@ function void GetFoundKeys(void)
     }
 }
 
-script "GetFoundKeys_Enter" ENTER
+script "SharedKey_Enter" ENTER
 {
     GetFoundKeys();
 }
 
-script "GetFoundKeys_Respawn" RESPAWN
+script "SharedKey_Respawn" RESPAWN
 {
     GetFoundKeys();
 }
 
-script "FoundKey" (int index)
+script "SharedKey_Pickup" (int i)
 {
-    if (keysfound[index] == false)
+    if (keysfound[i] == false)
     {
-        str key = keynames[index];
+        str key = keynames[i];
 
         if (GetCVar("SV_SharedKeys") == 1)
         {
-            PlaySound(0, "misc/k_pkup", CHAN_AUTO, 1.0, FALSE, ATTN_NONE);
-            Log(s:"\cd", n:0, s:"\c- ", l:"UI_KEYGET", s:" \cf", s:key, s:"!");
-
-            for (int i = 0; i < PlayerCount(); i++)
+            for (int p = 0; p < PlayerCount(); p++)
             {
-                SetActivatorToPlayer(i);
+                SetActivatorToPlayer(p);
                 GiveInventory(key, 1);
             }
         }
@@ -79,5 +56,5 @@ script "FoundKey" (int index)
         }
     }
 
-    keysfound[index] = true;
+    keysfound[i] = true;
 }

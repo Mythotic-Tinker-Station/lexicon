@@ -5202,45 +5202,62 @@ Actor Mayhem17RedTorch : RedTorch 25048 //46
   }
 }
 
-Actor Mayhem17BlueKey : Key
-{
-  Inventory.PickupMessage "Picked up a blue key."
-  Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS0"
-  States
-  {
-  Spawn:
-    7SKU A 10
-    7SKU B 10 Bright
-    Loop
-  }
-}
 
-Actor Mayhem17RedKey : Key
+
+Actor Mayhem17RedKey : CustomInventory
 {
   Inventory.PickupMessage "Picked up a red key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS2"
-  States
+  +COUNTITEM
+  states
   {
   Spawn:
     7RKU A 10
     7RKU B 10 Bright
     Loop
+    
+  Pickup:
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 0, 0);
+    TNT1 A 0 A_GiveInventory ("RedCard", 1)
+    stop
   }
 }
 
 Actor Mayhem17YellowKey : Key
 {
-  Inventory.PickupMessage "Picked up a gold key."
+  Inventory.PickupMessage "Picked up a yellow key."
   Inventory.PickupSound "mayhem17/i_pkup"
-  Inventory.Icon "STKEYS1"
-  States
+  +COUNTITEM
+  states
   {
   Spawn:
     7YKU A 10
     7YKU B 10 Bright
     Loop
+    
+  Pickup:
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 1, 0);
+    TNT1 A 0 A_GiveInventory ("YellowCard", 1)
+    stop
+  }
+}
+
+Actor Mayhem17BlueKey : Key
+{
+  Inventory.PickupMessage "Picked up a blue key."
+  Inventory.PickupSound "mayhem17/i_pkup"
+  +COUNTITEM
+  states
+  {
+  Spawn:
+    7BKU A 10
+    7BKU B 10 Bright
+    Loop
+    
+  Pickup:
+    TNT1 A 0 ACS_NamedExecute("SharedKey_Pickup", 2, 0);
+    TNT1 A 0 A_GiveInventory ("BlueCard", 1)
+    stop
   }
 }
 

@@ -40,19 +40,17 @@ script "SharedKey_Pickup" (int i)
 {
     if (keysfound[i] == false)
     {
-        str key = keynames[i];
-
         if (GetCVar("SV_SharedKeys") == 1)
         {
             for (int p = 0; p < PlayerCount(); p++)
             {
                 SetActivatorToPlayer(p);
-                GiveInventory(key, 1);
+                GiveInventory(keynames[i], 1);
             }
         }
         else
         {
-            GiveInventory(key, 1);
+            GiveInventory(keynames[i], 1);
         }
     }
 

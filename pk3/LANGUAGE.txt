@@ -12,11 +12,11 @@ UI_WELCOME      =   "\c[White]Welcome to the Lexicon\n\n"
                     "\c[White]-=Beta version=-\n\n"
                     "\c[White]Please report any problems you have to our discord via\n"
                     "\c[Cyan]https://discord.gg/qj9GASW";
-                    
+
 
 UI_COMPLETE     =   "\c[White]Congratulations!\n\n"
                     "\c[White]You and your team have completed\n\c[Gold]";
-                    
+
 UI_CAT1         =   "Normal";
 UI_CAT2         =   "Slaughter";
 UI_CAT3         =   "Single";
@@ -30,7 +30,7 @@ UI_YOURVOTE     =   "Your Vote: ";
 UI_WINNER       =   "Winner: ";
 UI_RETURN       =   "Going back to the lexicon in: ";
 UI_LOGIN        =   "You must login to the auth server to play";
-UI_KEYGET       =   "has found the"
+UI_KEYGET       =   "has found the";
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 /////////////////			Credits Entries			////////////////////////////
@@ -39,11 +39,11 @@ UI_KEYGET       =   "has found the"
 
 // How credits work:
 // C_MAPLUMPNAME = "authors here";
-// 
+//
 // So for example:
-// 
+//
 // C_MAP01 = "Id Software";
-// 
+//
 // Would print "Credits: ID Software" on MAP01.
 // The ACS Code does the rest for you.
 // If there is not a define here for, say, MAP01, the ACS code will print the C_ERR entry.
@@ -1892,7 +1892,7 @@ LORE_2 =        "\c[Gold]The Painting of Afina\n\n"
                 "\c[White]It's rumored she is very beautiful but also a powerfull adept in weilding magic.\n"
                 "\c[White]You feel as if theres massive power oozing off the picture. You wonder why out of all places, this picture is here\n"
                 "\c[White]As you would think, it belongs in a frame. There is more to this painting and you have became curious";
-                
+
 LORE_3 =        "\c[Gold]Painting of Afina #2\n\n"
                 "\c[White]--------------------\n\n"
                 "\c[White]You found another painting of Afina, this time sitting down and reading a book.\n"
@@ -1902,7 +1902,7 @@ LORE_3 =        "\c[Gold]Painting of Afina #2\n\n"
                 "\c[Gold]Chaos Magic distrupts order\n\c[Gold]Illusion Magic shrouded by shadow\n"
                 "\c[Gold]Restoration magic is my blood. blood to give life\n"
                 "\c[Gold]Entropy is my blood. blood to destory all things.";
-				
+
 LORE_4 =		"\c[Gold]Painting of Serril\n\n"
                 "\c[White]--------------------\n\n"
                 "\c[White]You found another painting but of a male character. By Shooting the painting with your Votegun\n"

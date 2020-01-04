@@ -1,4 +1,4 @@
-#define KEY_COUNT 3
+#define KEY_COUNT 6
 #define KEY_SYNC_DELAY 10
 #define PICKUP_SOUND_COUNT 2
 
@@ -7,7 +7,10 @@ str keyNames[KEY_COUNT] =
 {
     "RedCard",
     "YellowCard",
-    "BlueCard"
+    "BlueCard",
+    "RedSkull",
+    "YellowSkull",
+    "BlueSkull"
 };
 str pickupSounds[PICKUP_SOUND_COUNT] =
 {
@@ -17,6 +20,11 @@ str pickupSounds[PICKUP_SOUND_COUNT] =
 
 script "SharedKey_Enter" ENTER
 {
+    if (GameType() != GAME_NET_COOPERATIVE)
+    {
+        terminate;
+    }
+
     while (TRUE)
     {
         if (GetCVar("SV_ShareKeys") == 1)
@@ -34,29 +42,28 @@ script "SharedKey_Enter" ENTER
     }
 }
 
-script "SharedKey_Pickup" (int i, int snd)
+script "SharedKey_Pickup" (int key, int snd)
 {
-    int alreadyFound = 1;
-
-    if (keysFound[i] == FALSE)
+    if (keysFound[key] == FALSE)
     {
-        if (GetCVar("SV_ShareKeys") == 1)
+        if (GetCVar("SV_ShareKeys") == 1 && GameType() == GAME_NET_COOPERATIVE)
         {
             AmbientSound(pickupSounds[snd], 127);
-            Log(s:"\cd", n:0, s:"\c- ", l:"UI_KEYGET", s:" \cf", s:keyNames[i], s:"!");
+            Log(s:"\cd", n:0, s:"\c- ", l:"UI_KEYGET", s:" \cf", s:keyNames[key], s:"!");
 
-            GiveActorInventory(0, keyNames[i], 1);
+            GiveActorInventory(0, keyNames[key], 1);
         }
         else
         {
-            ActivatorSound(pickupSounds[snd], 127);
-
-            GiveInventory(keyNames[i], 1);
+            GiveInventory(keyNames[key], 1);
         }
 
-        keysFound[i] = TRUE;
-        alreadyFound = 0;
+        keysFound[key] = TRUE;
+        SetResultValue(0);
     }
-
-    SetResultValue(alreadyFound);
+    else
+    {
+        GiveInventory(keyNames[key], 1);
+        SetResultValue(1);
+    }
 }

@@ -119,19 +119,19 @@ object LArchvile
 // --------------------
 
 // Zombieman
-object AAA32
+object AAA33
 {
     frame POSSF { light ZOMBIEATK }
 }
 
 // Shotgun Guy
-object AAA31
+object AAA32
 {
     frame SPOSF { light ZOMBIEATK }
 }
 
 // Chaingun Guy
-object AAA30
+object AAA31
 {
     frame AABIE { light ZOMBIEATK }
     frame AABIF { light ZOMBIEATK }

@@ -7557,7 +7557,7 @@ Translation "112:127=250:254"
 }
 
 //HellKnight
-Actor SD20x6A3 : LHellKnight 25188//69
+Actor SD20x6A3 : LHellKnight
 {
 Translation "112:127=250:254"
 States
@@ -7571,7 +7571,7 @@ Missile:
 }
 
 //BaronOfHell
-Actor SD20x6A4 : LBaronOfHell 25189//3003
+Actor SD20x6A4 : LBaronOfHell
 {
 Translation "112:127=250:254"
 States

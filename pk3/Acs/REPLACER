@@ -1,6 +1,8 @@
 #library "command"
 #include "../../compiler/lib/zcommon.h"
 
+int currentMapset;
+
 function int GetCurrentMapset(void)
 {
     str mapset = StrLeft(StrParam(n:PRINTNAME_LEVEL), 3);
@@ -43,5 +45,10 @@ function int GetCurrentMapset(void)
 
 script "Maniac" (void)
 {
-    SetResultValue(GetCurrentMapset());
+    if (!currentMapset)
+    {
+        currentMapset = GetCurrentMapset();
+    }
+
+    SetResultValue(currentMapset);
 }

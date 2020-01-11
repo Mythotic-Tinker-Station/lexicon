@@ -7359,6 +7359,7 @@ Actor AAA120 : LArachnotron
 Actor AAA21 : ArachnotronPlasma
 {
     Tag "Alien Plasma"
+    SeeSound "AAdsplas"
     States
     {
     Spawn:

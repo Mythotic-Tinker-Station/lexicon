@@ -53,7 +53,7 @@ Actor LexiconZombieManSpawner : LexiconMonsterSpawner replaces ZombieMan
         TNT1 A 0 A_SpawnItemEx("Epic1A8", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA33", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -76,7 +76,7 @@ Actor LexiconShotgunGuySpawner : LexiconMonsterSpawner replaces ShotgunGuy
         TNT1 A 0 A_SpawnItemEx("Epic1A11", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA32", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA31", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -99,7 +99,7 @@ Actor LexiconChaingunGuySpawner : LexiconMonsterSpawner replaces ChaingunGuy
         TNT1 A 0 A_SpawnItemEx("Epic1A9", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA31", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA30", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -122,7 +122,7 @@ Actor LexiconDoomImpSpawner : LexiconMonsterSpawner replaces DoomImp
         TNT1 A 0 A_SpawnItemEx("Epic2A36", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA30", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA29", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -146,10 +146,10 @@ Actor LexiconWolfensteinSSSpawner : LexiconMonsterSpawner replaces WolfensteinSS
         TNT1 A 0 A_SpawnItemEx("HLC_WolfensteinSS", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A38", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("Epic2A39", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA34", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA33", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -168,7 +168,7 @@ Actor LexiconDemonSpawner : LexiconMonsterSpawner replaces Demon
         TNT1 A 0 A_SpawnItemEx("ValiantDemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA28", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA27", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -187,7 +187,7 @@ Actor LexiconSpectreSpawner : LexiconMonsterSpawner replaces Spectre
         TNT1 A 0 A_SpawnItemEx("ValiantSpectre", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA29", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA28", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -202,7 +202,7 @@ Actor LexiconCacodemonSpawner : LexiconMonsterSpawner replaces Cacodemon
         TNT1 A 0 A_SpawnItemEx("LCacodemon", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
-        TNT1 A 0 A_SpawnItemEx("AAA27", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("AAA26", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -233,11 +233,15 @@ Actor LexiconLostSoulSpawner : LexiconMonsterSpawner replaces LostSoul
     Spawn:
         TNT1 A 0
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 6, "VAL")
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 8, "AA1")
         TNT1 A 0 A_SpawnItemEx("LLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     VAL:
         TNT1 A 0 A_SpawnItemEx("ValiantLostSoul", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA25", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
@@ -260,7 +264,7 @@ Actor LexiconPainElementalSpawner : LexiconMonsterSpawner replaces PainElemental
         TNT1 A 0 A_SpawnItemEx("ValiantPainElemental", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     EP1EP2:
-        TNT1 A 0 A_SpawnItemEx("Epic2A37", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        TNT1 A 0 A_SpawnItemEx("Epic2A38", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     AA1:
         TNT1 A 0 A_SpawnItemEx("AAA24", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_TRANSFERAMBUSHFLAG|SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
@@ -6522,6 +6526,9 @@ Actor Epic1A7 : LDoomImp
 
 Actor Epic1A8 : LZombieMan
 {
+  SeeSound "epic2/grunt/sight"
+  DeathSound "epic2/grunt/death"
+  ActiveSound "epic2/grunt/active"
   States
   {
   Spawn:
@@ -6561,6 +6568,9 @@ Actor Epic1A8 : LZombieMan
 
 Actor Epic1A9 : LChaingunGuy
 {
+  SeeSound "epic2/grunt/sight"
+  DeathSound "epic2/grunt/death"
+  ActiveSound "epic2/grunt/active"
   States
   {
   Spawn:
@@ -6639,6 +6649,9 @@ Actor Epic1A10 : LRevenant
 
 Actor Epic1A11 : LShotgunGuy
 {
+  SeeSound "epic2/grunt/sight"
+  DeathSound "epic2/grunt/death"
+  ActiveSound "epic2/grunt/active"
   States
   {
   Spawn:
@@ -6941,7 +6954,7 @@ Actor Epic2A30 : ShortRedTorch 25134//57
   }
 }
 
-Actor Epic2A31 : HealthBonus 25135//2014 : Health
+Actor Epic2A31 : HealthBonus
 {
   States
   {
@@ -6951,7 +6964,7 @@ Actor Epic2A31 : HealthBonus 25135//2014 : Health
   }
 }
 
-Actor Epic2A32 : ArmorBonus 25136//2015 : BasicArmorBonus
+Actor Epic2A32 : ArmorBonus
 {
   States
   {
@@ -7034,7 +7047,12 @@ Actor Epic2A36 : LDoomImp
 
 //Revenant 25103//REVENANT 66
 
-Actor Epic2A37 : LPainElemental
+Actor Epic2A37 : LLostSoul
+{
+  AttackSound "epic2/skull/melee"
+}
+
+Actor Epic2A38 : LPainElemental
 {
   States
   {
@@ -7047,7 +7065,7 @@ Actor Epic2A37 : LPainElemental
   Missile:
     AABC DE 5 A_FaceTarget
     AABC F 5 Bright A_FaceTarget
-    AABC F 0 Bright A_PainAttack("LLostSoul")
+    AABC F 0 Bright A_PainAttack("Epic2A37")
     Goto See
   Pain:
     AABC G 6
@@ -7057,7 +7075,7 @@ Actor Epic2A37 : LPainElemental
     AABC H 8 Bright
     AABC I 8 Bright A_Scream
     AABC JK 8 Bright
-    AABC L 8 Bright A_PainDie("LLostSoul")
+    AABC L 8 Bright A_PainDie("Epic2A37")
     AABC M 8 Bright
     Stop
   Raise:
@@ -7066,13 +7084,10 @@ Actor Epic2A37 : LPainElemental
   }
 }
 
-Actor Epic2A38 : LWolfensteinSS
+Actor Epic2A39 : LWolfensteinSS
 {
-  SeeSound "wolfss/sight"
-  PainSound "wolfss/pain"
-  DeathSound "wolfss/death"
-  ActiveSound "wolfss/active"
-  AttackSound "wolfss/attack"
+  SeeSound "epic2/wolfss/sight"
+  DeathSound "epic2/wolfss/death"
   Obituary "%o was terminated by a stealth trooper."
   States
   {
@@ -7113,7 +7128,7 @@ Actor Epic2A38 : LWolfensteinSS
   }
 }
 
-Actor Epic2A39 : TechLamp 25143//85
+Actor Epic2A40 : TechLamp 25143//85
 {
   States
   {
@@ -7396,32 +7411,32 @@ Actor AAA25 : LLostSoul
     Obituary "%o was spooked by an alien."
 }
 
-Actor AAA27 : LCacodemon
+Actor AAA26 : LCacodemon
 {
     Tag "Alien UFO"
     Obituary "%o got too close to an alien."
     HitObituary "%o was smitten by an alien."
 }
 
-Actor AAA28 : LDemon
+Actor AAA27 : LDemon
 {
     Tag "Amphibian Alien"
     Obituary "%o was bit by an alien."
 }
 
-Actor AAA29 : LSpectre
+Actor AAA28 : LSpectre
 {
     HitObituary "%o was eaten by an alien."
 }
 
-Actor AAA30 : LDoomImp
+Actor AAA29 : LDoomImp
 {
     Tag "An Alien"
     HitObituary "%o was slashed by an alien."
     Obituary "%o was burned by an alien."
 }
 
-Actor AAA31 : LChaingunGuy
+Actor AAA30 : LChaingunGuy
 {
     Tag "Illegal Alien"
     Obituary "%o was perforated by an alien."
@@ -7463,28 +7478,28 @@ Actor AAA31 : LChaingunGuy
     }
 }
 
-Actor AAA32 : LShotgunGuy
+Actor AAA31 : LShotgunGuy
 {
     Tag "Alien Sympathizer"
     Obituary "%o was shot by an alien."
 }
 
-Actor AAA33 : LZombieMan
+Actor AAA32 : LZombieMan
 {
     Tag "A Alien"
     Obituary "%o was killed by an alien."
     DropItem "Clip"
 }
 
-Actor AAA34 : LWolfensteinSS
+Actor AAA33 : LWolfensteinSS 25181
 {
     Tag "Stealth Plasma Alien"
-    Health 30//
-    Speed 14//
+    Health 30
+    Speed 14
     SeeSound "AAsssit"
     ActiveSound "AAboscub"
     DeathSound "AAssdth"
-    Obituary "%o met an alien."//
+    Obituary "%o met an alien."
     Dropitem ""
     States
     {
@@ -7496,7 +7511,7 @@ Actor AAA34 : LWolfensteinSS
         Loop
     Missile:
         AABJ EF 10 A_FaceTarget
-        AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32) //AAA21
+        AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
         AABJ F 4 A_FaceTarget
         AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
         Goto See
@@ -7517,11 +7532,6 @@ Actor AAA34 : LWolfensteinSS
         AABJ MLKJI 5
         Goto See
     }
-}
-
-Actor AAA35 : AAA34 25181//23
-{
-    Tag "Stealth Plasma Alien"
 }
 
 //////////////////////////

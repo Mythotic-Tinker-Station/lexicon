@@ -26,7 +26,7 @@ map CC202 lookup "COOLANT PLATFORM"
 	ExitPic = "CC2LV32"
 	EnterPic = "CC2LV32"
 	par = 90
-	music = "MUSIC_STALKS"
+	music = "$MUSIC_STALKS"
 	InterMusic = "D_CC233"
 	sucktime = 1
 	
@@ -43,7 +43,7 @@ map CC203 lookup "SOURCE CONTROL"
 	EnterPic = "CC2LV32"
 	sky1 = "SKY1"
 	par = 120
-	music = "MUSIC_COUNTD"
+	music = "$MUSIC_COUNTD"
 	InterMusic = "D_CC233"
 	sucktime = 1
 	

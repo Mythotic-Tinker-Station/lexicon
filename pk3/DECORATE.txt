@@ -8320,3 +8320,8 @@ Actor DeusVultExplosiveBarrel : ExplosiveBarrel 25214
         Wait
     }
 }
+
+Actor DV2Afrit : LexiconAfrit 25215
+{
+    Health 1500
+}

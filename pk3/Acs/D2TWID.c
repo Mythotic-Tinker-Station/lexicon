@@ -1,0 +1,6 @@
+#include "zcommon.acs"
+
+script 218 (void) {
+    Delay(85);
+    Exit_Normal(0);
+}

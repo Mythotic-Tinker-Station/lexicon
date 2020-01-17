@@ -418,7 +418,7 @@ strict namespace
             // mapset/mapname/creds
             HudSetup("HUDFONT");
 
-            Hudmessage(s:"\c[White]", l:"UI_MAPSET", s:"\c[Cyan]", s:mapset, s:"\n\c[White]", l:"UI_MAP", s:"\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]", l:"UI_CREDITS", s:"\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 160.0, 5.0, 1.0, 1.0);
+            Hudmessage(s:"\c[White]", l:"UI_MAPSET", s:"\c[Cyan]", s:mapset, s:"\n\c[White]", l:"UI_MAP", s:"\c[Cyan]", n:PRINTNAME_LEVELNAME, s:"\n\c[White]", l:"UI_CREDITS", s:"\c[Cyan]", s:credits; HUDMSG_FADEINOUT, 8562, 0, hud_width + 0.2, hud_height - 180.0, 5.0, 1.0, 1.0);
 
             // run through the doom2 music in order per level
             ACS_NamedExecute("MusicBox", 0, 0);

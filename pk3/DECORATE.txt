@@ -8325,3 +8325,64 @@ Actor DV2Afrit : LexiconAfrit 25215
 {
     Health 1500
 }
+
+///////////Going Down
+Actor GDSpiderMastermind : WolfensteinSS 25215
+{
+	Health 12000
+	Speed 16
+	Radius 64
+	Height 100
+	PainChance 40
+	Mass 1000
+	SeeSound "spider/sight"
+	AttackSound "weapons/shotgf"
+	PainSound "brain/pain"
+	DeathSound "brain/death"
+	ActiveSound "demon/active"
+	States
+	{
+	See:
+		GDSM A 3 A_Metal
+		GDSM ABB 3 A_Chase
+		GDSM C 3 A_Metal
+		GDSM CDD 3 A_Chase
+		goto See
+	Pain:
+		GDSM E 3 
+		GDSM H 3 A_BrainPain
+		GDSM E 10 A_FaceTarget
+		GDSM G 4 A_FatAttack1
+		GDSM F 4 A_FaceTarget
+		GDSM G 4 A_FatAttack2
+		GDSM F 4 A_FaceTarget
+		GDSM G 4 A_SkelMissile
+		GDSM F 4 A_FaceTarget
+		GDSM G 4 A_SkelMissile
+		GDSM A 3 A_Metal
+		GDSM ABB 3 A_Chase
+		GDSM C 3 A_Metal
+		GDSM CDD 3 A_Chase
+		goto See
+	Missile:
+		GDSM EE 10 A_FaceTarget
+	State_738:
+		GDSM GE 4 Bright A_CPosAttack
+		GDSM G 1 A_SpidRefire
+		goto State_738
+	Death:
+		GDSM I 5 
+		GDSM N 10 A_BrainScream
+		GDSM O 10 A_Fall
+		GDSM PQRSTU 10 
+		GDSM V -1 A_BrainDie
+		stop
+	XDeath:
+		TROO A -1 
+		stop
+	Raise:
+		TROO A -1 
+		stop
+	}
+}
+

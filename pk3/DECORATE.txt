@@ -8346,76 +8346,76 @@ Actor CHXBossBrain : BossBrain 25213 //88
 
 Actor GDSpiderMastermind : LSpiderMastermind 25215
 {
-	Health 12000
-	Speed 16
-	Radius 64
-	Height 100
+    Health 12000
+    Speed 16
+    Radius 64
+    Height 100
     Species "GDSpiderMastermind"
-	PainSound "brain/pain"
-	DeathSound "brain/death"
-	States
-	{
+    PainSound "brain/pain"
+    DeathSound "brain/death"
+    States
+    {
     Spawn:
         GDSM AB 10 A_Look
         Loop
-	See:
-		GDSM A 3 A_Metal
-		GDSM ABB 3 A_Chase
-		GDSM C 3 A_Metal
-		GDSM CDD 3 A_Chase
-		Loop
+    See:
+        GDSM A 3 A_Metal
+        GDSM ABB 3 A_Chase
+        GDSM C 3 A_Metal
+        GDSM CDD 3 A_Chase
+        Loop
     Missile:
-		GDSM EE 10 A_FaceTarget
-		GDSM GE 4 Bright A_CPosAttack
-		GDSM G 1 A_SpidRefire
-		Goto Missile+2
-	Pain:
-		GDSM E 3
-		GDSM H 3 A_BrainPain
-		GDSM E 10 A_FaceTarget
-		GDSM G 4 A_FatAttack1
-		GDSM F 4 A_FaceTarget
-		GDSM G 4 A_FatAttack2
-		GDSM F 4 A_FaceTarget
-		GDSM G 4 A_SkelMissile
-		GDSM F 4 A_FaceTarget
-		GDSM G 4 A_SkelMissile
-		Goto See
-	Death:
-		GDSM I 5
-		GDSM N 10 A_BrainScream
-		GDSM O 10 A_Fall
-		GDSM PQRSTU 10
-		GDSM V -1 A_BrainDie
-		Stop
-	}
+        GDSM EE 10 A_FaceTarget
+        GDSM GE 4 Bright A_CPosAttack
+        GDSM G 1 A_SpidRefire
+        Goto Missile+2
+    Pain:
+        GDSM E 3
+        GDSM H 3 A_BrainPain
+        GDSM E 10 A_FaceTarget
+        GDSM G 4 A_FatAttack1
+        GDSM F 4 A_FaceTarget
+        GDSM G 4 A_FatAttack2
+        GDSM F 4 A_FaceTarget
+        GDSM G 4 A_SkelMissile
+        GDSM F 4 A_FaceTarget
+        GDSM G 4 A_SkelMissile
+        Goto See
+    Death:
+        GDSM I 5
+        GDSM N 10 A_BrainScream
+        GDSM O 10 A_Fall
+        GDSM PQRSTU 10
+        GDSM V -1 A_BrainDie
+        Stop
+    }
 }
 
 Actor GDShortBlueTorch : ShortBlueTorch 25216
 {
-	Health 10
-	-SOLID
-	+SHOOTABLE
-	DeathSound "GD/Torch"
-	States
-	{
-	Spawn:
-		BAR1 AB 4
+    Health 10
+    -SOLID
+    +SHOOTABLE
+    DeathSound "GD/Torch"
+    States
+    {
+    Spawn:
+        BAR1 AB 4
         Loop
-	Death:
-		BEXP D 4 A_Scream
-		TNT1 A 200
-		Stop
-	}
+    Death:
+        BEXP D 4 A_Scream
+        TNT1 A 200
+        Stop
+    }
 }
 
 Actor GDCommanderKeen : CommanderKeen 25217
 {
-	-SOLID
+    -SOLID
     PainSound "GD/KeenPain"
-	DeathSound "GD/KeenDeath"
-	States
-	{
+    DeathSound "GD/KeenDeath"
+    States
+    {
     Spawn:
         GDCK A -1
         Loop
@@ -8430,5 +8430,5 @@ Actor GDCommanderKeen : CommanderKeen 25217
         GDCK M 4
         GDCK M 8 A_Pain
         Goto Spawn
-	}
+    }
 }

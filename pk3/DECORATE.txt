@@ -8370,6 +8370,7 @@ Actor GDSpiderMastermind : WolfensteinSS 25215
 		GDSM GE 4 Bright A_CPosAttack
 		GDSM G 1 A_SpidRefire
 		goto State_738
+    XDeath:
 	Death:
 		GDSM I 5 
 		GDSM N 10 A_BrainScream
@@ -8377,12 +8378,52 @@ Actor GDSpiderMastermind : WolfensteinSS 25215
 		GDSM PQRSTU 10 
 		GDSM V -1 A_BrainDie
 		stop
-	XDeath:
-		TROO A -1 
-		stop
 	Raise:
 		TROO A -1 
 		stop
 	}
 }
 
+Actor GDShortBlueTorch : ShortBlueTorch 25216
+{
+	Health 10
+	-SOLID
+	+SHOOTABLE
+	DeathSound "GD/Torch"
+	States
+	{
+	Spawn:
+		BAR1 AB 4 
+		goto Spawn
+	Death:
+		BEXP D 4 A_Scream
+		SMBT A 200 
+		stop
+	}
+}
+
+Actor GDCommanderKeen : CommanderKeen 25217
+{
+	-SOLID
+    PainSound "GD/KeenPain"
+	DeathSound "GD/KeenDeath"
+	States
+	{
+      Spawn:
+        GDCK A -1
+        Loop
+      Death:
+        GDCK AB 6
+        GDCK C 6 A_Scream
+        GDCK DEFGH	6
+        GDCK I 6
+        GDCK J 6
+        GDCK K 6 A_KeenDie
+        GDCK L -1
+        Stop
+      Pain:
+        GDCK M 4
+        GDCK M 8 A_Pain
+        Goto Spawn
+	}
+}

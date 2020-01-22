@@ -1441,6 +1441,7 @@ Actor Lexicon_InstaKiller : DoomWeapon
   Weapon.AmmoType ""
   Weapon.SlotNumber 0
   Weapon.SlotPriority 0
+  +WEAPON.CHEATNOTWEAPON
   Obituary ""
   Inventory.Pickupmessage ""
   Tag "InstaKiller"
@@ -4891,9 +4892,9 @@ Actor DeusVultExplosiveBarrel : ExplosiveBarrel 25214
 // Mayhem17 //
 //////////////
 
-Actor BowserCoop : BossBrain 25016 //88
+Actor Bowser 25050
 {
-    Health 12000
+    Health 8000
     Speed 16
     Radius 48
     Height 96
@@ -4905,46 +4906,42 @@ Actor BowserCoop : BossBrain 25016 //88
     SeeSound "mayhem17/bowssight"
     AttackSound "mayhem17/bowsattack"
     PainSound "mayhem17/bowspain"
-    Obituary "%o fell before King Koopa's might."
     DeathSound "mayhem17/bowsdeath"
+    Obituary "%o fell before King Koopa's might."
     States
     {
     Spawn:
         MH7V A 10 A_Look
-        goto Spawn
+        Loop
     See:
         MH7V ABCDEFGH 3 A_Chase
-        goto See
+        Loop
     Pain:
         MH7V Q 8 A_Pain
-        MH7V ABCDEFGH 3 A_Chase
-        goto See
+        Goto See
     Melee:
         MH7V L 6 A_SkelWhoosh
         MH7V MN 6 A_FaceTarget
         MH7V O 0 A_SkelFist
         MH7V P 6 A_SkelFist
-        MH7V IJ 6 A_FaceTarget
-    State_738:
-        MH7V K 6 Bright A_FatAttack1
-        MH7V K 6 Bright A_FatAttack2
-        MH7V K 6 Bright A_FatAttack3
-        MH7V K 1 A_SpidRefire
-        goto State_738
     Missile:
         MH7V IJ 6 A_FaceTarget
-    State_738:
         MH7V K 6 Bright A_FatAttack1
         MH7V K 6 Bright A_FatAttack2
         MH7V K 6 Bright A_FatAttack3
         MH7V K 1 A_SpidRefire
-        goto State_738
+        Goto Missile+2
     Death:
         MH7V RSTUV 8
         MH7V W 8 A_KeenDie
         MH7V X -1
         stop
     }
+}
+
+Actor BowserCoop : Bowser 25016
+{
+    Health 12000
 }
 
 Actor Mayhem17Soulsphere : Soulsphere
@@ -5198,7 +5195,6 @@ Actor Mayhem17ChomperThings : LiveStick 25042 //26
   }
 }
 
-
 Actor Mayhem17Stalagtite : Stalagtite 25044 //47
 {
   States
@@ -5319,62 +5315,6 @@ Actor Mayhem17RedCoin : Inventory 25017
     MAYY B 10 Bright
     Loop
   }
-}
-
-Actor Bowser : CommanderKeen 25050 //72
-{
-    Health 8000
-    Speed 16
-    Radius 48
-    Height 96
-    PainChance 5
-    Mass 1000
-    +COUNTKILL
-    +SOLID
-    +SHOOTABLE
-    SeeSound "mayhem17/bowssight"
-    AttackSound "mayhem17/bowsattack"
-    PainSound "mayhem17/bowspain"
-    Obituary "%o fell before King Koopa's might."
-    DeathSound "mayhem17/bowsdeath"
-    States
-    {
-    Spawn:
-        MH7V A 10 A_Look
-        goto Spawn
-    See:
-        MH7V ABCDEFGH 3 A_Chase
-        goto See
-    Pain:
-        MH7V Q 8 A_Pain
-        MH7V ABCDEFGH 3 A_Chase
-        goto See
-    Melee:
-        MH7V L 6 A_SkelWhoosh
-        MH7V MN 6 A_FaceTarget
-        MH7V O 0 A_SkelFist
-        MH7V P 6 A_SkelFist
-        MH7V IJ 6 A_FaceTarget
-    State_738:
-        MH7V K 6 Bright A_FatAttack1
-        MH7V K 6 Bright A_FatAttack2
-        MH7V K 6 Bright A_FatAttack3
-        MH7V K 1 A_SpidRefire
-        goto State_738
-    Missile:
-        MH7V IJ 6 A_FaceTarget
-    State_738:
-        MH7V K 6 Bright A_FatAttack1
-        MH7V K 6 Bright A_FatAttack2
-        MH7V K 6 Bright A_FatAttack3
-        MH7V K 1 A_SpidRefire
-        goto State_738
-    Death:
-        MH7V RSTUV 8
-        MH7V W 8 A_KeenDie
-        MH7V X -1
-        stop
-    }
 }
 
 /////////////

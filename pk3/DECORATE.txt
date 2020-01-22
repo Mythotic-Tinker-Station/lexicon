@@ -5769,11 +5769,6 @@ Actor DVActor15 25144//23
     }
 }
 
-Actor DV2Afrit : LexiconAfrit 25215
-{
-    Health 1500
-}
-
 /////////////
 // Valiant //
 /////////////
@@ -8283,6 +8278,11 @@ Actor CHXBossBrain : BossBrain 25213 //88
 ////////////////
 // Going Down //
 ////////////////
+
+Actor DV2Afrit : LexiconAfrit 25214
+{
+    Health 1500
+}
 
 Actor GDSpiderMastermind : LSpiderMastermind 25215
 {

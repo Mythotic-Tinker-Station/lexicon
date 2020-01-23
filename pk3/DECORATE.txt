@@ -986,8 +986,16 @@ Actor LAllmap : Allmap replaces Allmap
     {
     Spawn:
         TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Maniac") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Maniac") == 9, "SD6SD7")
         Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_CheckFlag("DROPPED", "EP1EP2Drop")
+        TNT1 A 0 A_SpawnItemEx("Epic2A29Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    EP1EP2Drop:
+        TNT1 A 0 A_SpawnItemEx("Epic2A29", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     SD6SD7:
         TNT1 A 0 A_CheckFlag("DROPPED", "SD6SD7Drop")
         TNT1 A 0 A_SpawnItemEx("SD20x6A9Spawner", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
@@ -996,6 +1004,11 @@ Actor LAllmap : Allmap replaces Allmap
         TNT1 A 0 A_SpawnItemEx("SD20x6A9", 0, 0, 0, velx, vely, velz, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
+}
+
+Actor Epic2A29Spawner : RandomSpawner
+{
+    DropItem "Epic2A29"
 }
 
 Actor SD20x6A9Spawner : RandomSpawner

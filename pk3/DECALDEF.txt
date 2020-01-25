@@ -2,62 +2,65 @@
 // -- Doom II --
 // -------------
 
-generator LZombieMan              BulletChip
-generator LShotgunGuy             BulletChip
-generator LChaingunGuy            BulletChip
-generator LWolfensteinSS          BulletChip
-generator LSpiderMastermind       BulletChip
+generator LZombieMan                    BulletChip
+generator LShotgunGuy                   BulletChip
+generator LChaingunGuy                  BulletChip
+generator LWolfensteinSS                BulletChip
+generator LSpiderMastermind             BulletChip
+
+generator LexiconDumbFireRevenantTracer RevenantScorch
+generator LexiconHomingRevenantTracer   RevenantScorch
 
 // --------------------
 // -- Ancient Aliens --
 // --------------------
 
-generator AAA32                   BulletChip
-generator AAA31                   BulletChip
-generator AAA30                   BulletChip
-generator AAA15                   BulletChip
+generator AAA32                         BulletChip
+generator AAA31                         BulletChip
+generator AAA30                         BulletChip
+generator AAA15                         BulletChip
 
-generator AAA21                   PlasmaScorchLower
+generator AAA21                         PlasmaScorchLower
 
 // --------------------
 // -- Combat Shock 2 --
 // --------------------
 
-generator CS2ZombieMan            BulletChip
-generator CS2ShotgunGuy           BulletChip
-generator CS2ChaingunGuy          BulletChip
+generator CS2ZombieMan                  BulletChip
+generator CS2ShotgunGuy                 BulletChip
+generator CS2ChaingunGuy                BulletChip
 
 // ------------
 // -- Epic 1 --
 // ------------
 
-generator Epic1A8                 BulletChip
-generator Epic1A11                BulletChip
-generator Epic1A9                 BulletChip
+generator Epic1A8                       BulletChip
+generator Epic1A11                      BulletChip
+generator Epic1A9                       BulletChip
 
 // ------------
 // -- Epic 2 --
 // ------------
 
-generator Epic2A39                BulletChip
+generator Epic2A39                      BulletChip
 
 // ----------------
 // -- Going Down --
 // ----------------
 
-generator GDSpiderMastermind      BulletChip
+generator GDSpiderMastermind            BulletChip
 
 // --------------------------
 // -- Hell Pike Secret Map --
 // --------------------------
 
-generator hp101SDA                PlasmaScorchLower
+generator hp101SDA                      PlasmaScorchLower
 
 // -------------
 // -- Valiant --
 // -------------
 
-generator ValiantSpiderMastermind BulletChip
+generator ValiantSpiderMastermind       BulletChip
 
 decal ValiantArachScorch1
 {
@@ -81,6 +84,6 @@ decalgroup ValiantArachnotronScorch
     ValiantArachScorch2 1
 }
 
-generator ValiantImpBall          DoomImpScorch
-generator ValiantPlamsa           ValiantArachnotronScorch
-generator ValiantBaronBall        CacoScorch
+generator ValiantImpBall                DoomImpScorch
+generator ValiantPlamsa                 ValiantArachnotronScorch
+generator ValiantBaronBall              CacoScorch

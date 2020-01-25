@@ -107,6 +107,27 @@ object LLostSoul
     frame SKULK { light LOSTSOUL_X4 }
 }
 
+// Revenant tracer
+object LexiconDumbFireRevenantTracer
+{
+    frame FATBA { light TRACER    }
+    frame FATBB { light TRACER    }
+
+    frame FBXPA { light TRACER_X1 }
+    frame FBXPB { light TRACER_X2 }
+    frame FBXPC { light TRACER_X3 }
+}
+
+object LexiconHomingRevenantTracer
+{
+    frame FATBA { light TRACER    }
+    frame FATBB { light TRACER    }
+
+    frame FBXPA { light TRACER_X1 }
+    frame FBXPB { light TRACER_X2 }
+    frame FBXPC { light TRACER_X3 }
+}
+
 // Archvile
 object LArchvile
 {

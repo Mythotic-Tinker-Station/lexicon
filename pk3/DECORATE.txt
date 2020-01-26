@@ -5828,7 +5828,7 @@ Actor ValiantImpBall : DoomImpBall
   }
 }
 
-Actor ValiantPlamsa : ArachnotronPlasma
+Actor ValiantPlasma : ArachnotronPlasma
 {
   States
   {
@@ -6031,7 +6031,8 @@ Actor ValiantPyroDemon : LHellKnight
         AAAJ AABBCCDD 3 Bright A_Chase
         Loop
     Missile:
-        AAAJ A 0 A_Jump(127,"AltMissile")
+        AAAJ A 0 Bright A_Jump(127,"AltMissile")
+    Melee:
         AAAJ E 4 Bright A_FaceTarget
         AAAJ FG 4 Bright A_BasicAttack(3, "imp/melee", "ValiantImpBall", 32)
         AAAJ G 4 Bright A_BasicAttack(10, "baron/melee", "ValiantBaronBall", 32)
@@ -6042,14 +6043,6 @@ Actor ValiantPyroDemon : LHellKnight
     AltMissile:
         AAAJ MN 8 Bright A_FaceTarget
         AAAJ OOOO 4 Bright A_BasicAttack(10, "baron/melee", "ValiantBaronBall", 32)
-        Goto See
-    Melee:
-        AAAJ E 4 Bright A_FaceTarget
-        AAAJ FG 4 Bright A_BasicAttack(3, "imp/melee", "ValiantImpBall", 32)
-        AAAJ G 4 Bright A_BasicAttack(10, "baron/melee", "ValiantBaronBall", 32)
-        AAAJ I 4 Bright A_FaceTarget
-        AAAJ JK 4 Bright A_BasicAttack(3, "imp/melee", "ValiantImpBall", 32)
-        AAAJ K 4 Bright A_BasicAttack(10, "baron/melee", "ValiantBaronBall", 32)
         Goto See
     Pain:
         AAAK O 2 Bright
@@ -6133,7 +6126,8 @@ Actor ValiantArachnotron : LArachnotron
             Goto See+1
         Missile:
             AAAM A 20 Bright A_FaceTarget
-            AAAM G 4 Bright A_CustomMissile("ValiantPlamsa", 32)
+            AAAM G 0 Bright A_FaceTarget
+            AAAM G 4 Bright A_CustomMissile("ValiantPlasma", 32)
             AAAM H 4 Bright
             AAAM H 1 Bright A_SpidRefire
             Goto Missile+1
@@ -6193,7 +6187,12 @@ Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
         Goto See
     Missile:
         AAAN A 20 A_FaceTarget
-        AAAN BCB 9 Bright A_CustomMissile("ValiantPlamsa", 32)
+        AAAN B 0 Bright A_FaceTarget
+        AAAN B 9 Bright A_CustomMissile("ValiantPlasma", 32)
+        AAAN C 0 Bright A_FaceTarget
+        AAAN C 9 Bright A_CustomMissile("ValiantPlasma", 32)
+        AAAN B 0 Bright A_FaceTarget
+        AAAN B 9 Bright A_CustomMissile("ValiantPlasma", 32)
         AAAN A 9 A_SpidRefire
         Loop
     Raise:
@@ -6234,7 +6233,8 @@ Actor LightningOrb 25083//replaces HeartColumn 36
         Loop
     Missile:
         AAAN N 1 Bright A_FaceTarget
-        AAAN O 1 Bright A_CustomMissile("ValiantPlamsa", 32)
+        AAAN O 0 Bright A_FaceTarget
+        AAAN O 1 Bright A_CustomMissile("ValiantPlasma", 32)
         AAAN P 1 Bright
         AAAN Q 1 Bright A_SpidRefire
         Loop
@@ -7161,9 +7161,6 @@ Actor Epic2A40 : TechLamp 25143//85
 
 //UP TO 25149 IS TAKEN, START WITH 25150 FROM HERE
 
-
-
-
 ////////////////////
 // Ancient Aliens //
 ////////////////////
@@ -7369,7 +7366,8 @@ Actor AAA120 : LArachnotron
         Goto See+1
     Missile:
         AABH A 20 BRIGHT A_FaceTarget
-        AABH G 4 BRIGHT A_CustomMissile("AAA21", 32) //aaa21 cm
+        AABH G 0 BRIGHT A_FaceTarget
+        AABH G 4 BRIGHT A_CustomMissile("AAA21", 32)
         AABH H 4 BRIGHT
         AABH H 1 BRIGHT A_SpidRefire
         Goto Missile+1
@@ -7543,8 +7541,10 @@ Actor AAA33 : LWolfensteinSS 25181
         Loop
     Missile:
         AABJ EF 10 A_FaceTarget
+        AABJ G 0 BRIGHT A_FaceTarget
         AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
         AABJ F 4 A_FaceTarget
+        AABJ G 0 BRIGHT A_FaceTarget
         AABJ G 4 BRIGHT A_CustomMissile("AAA21", 32)
         Goto See
     Pain:

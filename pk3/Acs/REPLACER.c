@@ -1,41 +1,53 @@
 #library "command"
 #include "../../compiler/lib/zcommon.h"
 
-int currentMapset;
+private int currentMapset;
 
-function int GetCurrentMapset(void)
+private function bool StrStartsWith(str str1, str str2)
 {
-    str mapset = StrLeft(StrParam(n:PRINTNAME_LEVEL), 3);
+    int len = StrLen(str2);
 
-    if (!StrIcmp(mapset, "CS0") || !StrIcmp(mapset, "CS2"))
+    if (len > StrLen(str1))
+    {
+        return false;
+    }
+
+    return !StrIcmp(str1, str2, len);
+}
+
+private function int GetCurrentMapset(void)
+{
+    str mapset = StrParam(n:PRINTNAME_LEVEL);
+
+    if (StrStartsWith(mapset, "CS0") || StrStartsWith(mapset, "CS2"))
     {
         return 2;
     }
-    else if (!StrIcmp(mapset, "SC2"))
+    else if (StrStartsWith(mapset, "SC2"))
     {
         return 3;
     }
-    else if (!StrIcmp(mapset, "MAY"))
+    else if (StrStartsWith(mapset, "MAY"))
     {
         return 4;
     }
-    else if (!StrIcmp(mapset, "HC0") || !StrIcmp(mapset, "HC1"))
+    else if (StrStartsWith(mapset, "HC0") || StrStartsWith(mapset, "HC1"))
     {
         return 5;
     }
-    else if (!StrIcmp(mapset, "VAL"))
+    else if (StrStartsWith(mapset, "VAL"))
     {
         return 6;
     }
-    else if (!StrIcmp(mapset, "EP1") || !StrIcmp(mapset, "EP2"))
+    else if (StrStartsWith(mapset, "EP1") || StrStartsWith(mapset, "EP2"))
     {
         return 7;
     }
-    else if (!StrIcmp(mapset, "AA1"))
+    else if (StrStartsWith(mapset, "AA1"))
     {
         return 8;
     }
-    else if (!StrIcmp(mapset, "SD6") || !StrIcmp(mapset, "SD7"))
+    else if (StrStartsWith(mapset, "SD6") || StrStartsWith(mapset, "SD7"))
     {
         return 9;
     }

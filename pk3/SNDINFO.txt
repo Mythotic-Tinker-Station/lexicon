@@ -1,53 +1,53 @@
-partyhorn           horn
-k0rpse              easter
-voteshot            voteshot
-drop                drop
-firework1           FWBOOM1
-firework2           FWBOOM2
-GlassShatter        glass5
+partyhorn                horn
+k0rpse                   easter
+voteshot                 voteshot
+drop                     drop
+firework1                FWBOOM1
+firework2                FWBOOM2
+GlassShatter             glass5
 
 $random firework
 {
     firework1
     firework2
 }
-$pitchshift         firework1 7
-$pitchshift         firework2 7
-$pitchshift         firework 7
+$pitchshift              firework1 7
+$pitchshift              firework2 7
+$pitchshift              firework 7
 
 // Fuck i am one evil son of a bitch (I love you too clint)
 
-CLINT00             CLINT00
-CLINT01             CLINT01
-CLINT02             CLINT02
-CLINT03             CLINT03
-CLINT04             CLINT04
-CLINT05             CLINT05
-CLINT06             CLINT06
-CLINT07             CLINT07
-CLINT08             CLINT08
-CLINT09             CLINT09
-CLINT010            CLINT010
-CLINT011            CLINT011
-CLINT012            CLINT012
-CLINT013            CLINT013
-CLINT014            CLINT014
-CLINT015            CLINT015
-CLINT016            CLINT016
-CLINT017            CLINT017
-CLINT018            CLINT018
-CLINT019            CLINT019
-CLINT020            CLINT020
-CLINT021            CLINT021
-CLINT022            CLINT022
-CLINT023            CLINT023
-CLINT024            CLINT024
-CLINT025            CLINT025
-CLINT026            CLINT026
-CLINT027            CLINT027
-CLINT028            CLINT028
-CLINT029            CLINT029
-clintkek            clintkek
+CLINT00                  CLINT00
+CLINT01                  CLINT01
+CLINT02                  CLINT02
+CLINT03                  CLINT03
+CLINT04                  CLINT04
+CLINT05                  CLINT05
+CLINT06                  CLINT06
+CLINT07                  CLINT07
+CLINT08                  CLINT08
+CLINT09                  CLINT09
+CLINT010                 CLINT010
+CLINT011                 CLINT011
+CLINT012                 CLINT012
+CLINT013                 CLINT013
+CLINT014                 CLINT014
+CLINT015                 CLINT015
+CLINT016                 CLINT016
+CLINT017                 CLINT017
+CLINT018                 CLINT018
+CLINT019                 CLINT019
+CLINT020                 CLINT020
+CLINT021                 CLINT021
+CLINT022                 CLINT022
+CLINT023                 CLINT023
+CLINT024                 CLINT024
+CLINT025                 CLINT025
+CLINT026                 CLINT026
+CLINT027                 CLINT027
+CLINT028                 CLINT028
+CLINT029                 CLINT029
+clintkek                 clintkek
 
 $random ClintQuote
 {
@@ -88,94 +88,94 @@ $random ClintQuote
 ///////////////
 
 //Hell Smith
-DemonSmith/Death    DEMSDTH
-DemonSmith/See      DEMSSIT
+DemonSmith/Death         DEMSDTH
+DemonSmith/See           DEMSSIT
 
 /////////////////////
 // Circle of Caina //
 /////////////////////
 
 //Switch
-coc/switch          CCSWTCHN
+coc/switch               CCSWTCHN
 
 //Platform
-coc/plat_str        CCPSTART
-coc/plat_stp        CCPSTOP
-coc/plat_mid        CCSTNMOV
+coc/plat_str             CCPSTART
+coc/plat_stp             CCPSTOP
+coc/plat_mid             CCSTNMOV
 
 //Door
-coc/dor1_op         CCDOROPN
-coc/dor1_clos       CCDORCLS
-coc/bdo1_op         CCBDOPN
-coc/bdo1_clos       CCBDCLS
+coc/dor1_op              CCDOROPN
+coc/dor1_clos            CCDORCLS
+coc/bdo1_op              CCBDOPN
+coc/bdo1_clos            CCBDCLS
 
 ////////////
 // D2TWID //
 ////////////
 
-d2twid/dfattack     DFATTK
-d2twid/dfdeth       DFDETH
-d2twid/yattack      D2YATTAK
-d2twid/gargdth      GARGDTH
-d2twid/yorpdth      YORPDTH
+d2twid/dfattack          DFATTK
+d2twid/dfdeth            DFDETH
+d2twid/yattack           D2YATTAK
+d2twid/gargdth           GARGDTH
+d2twid/yorpdth           YORPDTH
 
 ////////////////////
 // Drown in Blood //
 ////////////////////
 
-avoice              avoice
-dosome              dosome
-gotitdon            gotitdon
-myhive              myhive
-nearby              nearby
-scream              scream
-seedead             seedead
-spawn1              spawn1
-spawn2              spawn2
-warning             warning
-attack              attack
-comandua            comandua
-hostiles            hostiles
-mess                mess
-m-squad4            m-squad4
-oman                oman
-online              online
-roar                roar
-sentry              sentry
-slost1              slost1
-slost2              slost2
-sogood              sogood
-sq1lost             sq1lost
-sq2lost             sq2lost
-sq3lost             sq3lost
-sq5lost             sq5lost
-strength            strength
-takdmg              takdmg
-thankgod            thankgod
+avoice                   avoice
+dosome                   dosome
+gotitdon                 gotitdon
+myhive                   myhive
+nearby                   nearby
+scream                   scream
+seedead                  seedead
+spawn1                   spawn1
+spawn2                   spawn2
+warning                  warning
+attack                   attack
+comandua                 comandua
+hostiles                 hostiles
+mess                     mess
+m-squad4                 m-squad4
+oman                     oman
+online                   online
+roar                     roar
+sentry                   sentry
+slost1                   slost1
+slost2                   slost2
+sogood                   sogood
+sq1lost                  sq1lost
+sq2lost                  sq2lost
+sq3lost                  sq3lost
+sq5lost                  sq5lost
+strength                 strength
+takdmg                   takdmg
+thankgod                 thankgod
 
 ///////////////////
 // Deus Vult 1&2 //
 ///////////////////
 
-dv01/mordor         dvbossit
-ClericSee           HCLERSIT
-ClericSwing         HCLERATK
-ClericHit           HCLERHIT
-ClericDeath         HCLERDTH
+dv01/mordor              dvbossit
+ClericSee                HCLERSIT
+ClericSwing              HCLERATK
+ClericHit                HCLERHIT
+ClericDeath              HCLERDTH
 
 ////////////
 // Epic 2 //
 ////////////
 
 //Stealth Trooper
-epic2/wolfss/death  EPssdth
-epic2/wolfss/sight  EPsssit
+epic2/wolfss/death       EPssdth
+epic2/wolfss/sight       EPsssit
 
 //Zombies
-epic2/grunt/death1  EPpodth1
-epic2/grunt/active  EPposact
-epic2/grunt/sight1  EPposit1
-epic2/grunt/sight2  EPposit2
+epic2/grunt/death1       EPpodth1
+epic2/grunt/active       EPposact
+epic2/grunt/sight1       EPposit1
+epic2/grunt/sight2       EPposit2
 
 $random epic2/grunt/sight
 {
@@ -191,100 +191,99 @@ $random epic2/grunt/death
 }
 
 //Lost Soul
-epic2/skull/melee   EPsklatk
+epic2/skull/melee        EPsklatk
 
 //Commander Keen
-epic2/keen/death    EPkeendt
+epic2/keen/death         EPkeendt
 
 /*
-doors/dr1_open      EPdoropn
-doors/dr1_clos      EPdorcls
-doors/dr2_open      EPbdopn
-doors/dr2_clos      EPbdcls
+doors/dr1_open           EPdoropn
+doors/dr1_clos           EPdorcls
+doors/dr2_open           EPbdopn
+doors/dr2_clos           EPbdcls
 
-misc/p_pkup         EPgetpow // Pickup powerup
-misc/i_pkup         EPitemup // Pickup item
+misc/p_pkup              EPgetpow // Pickup powerup
+misc/i_pkup              EPitemup // Pickup item
 
-menu/invalid        EPoof    // Menu not available
+menu/invalid             EPoof    // Menu not available
 
-menu/choose         EPpistol // Choose a menu item
+menu/choose              EPpistol // Choose a menu item
 
-sentinel/plasma     EPplasma
+sentinel/plasma          EPplasma
 
-plats/pt1_strt      EPpstart
-plats/pt1_stop      EPpstop
-misc/secret         EPsecret
-plats/pt1_mid       EPstnmov
-switches/normbutn   EPswtchn
-misc/teleport       EPtelept
+plats/pt1_strt           EPpstart
+plats/pt1_stop           EPpstop
+misc/secret              EPsecret
+plats/pt1_mid            EPstnmov
+switches/normbutn        EPswtchn
+misc/teleport            EPtelept
 */
 
 ///////////////
 // Mayhem 17 //
 ///////////////
 
-mayhem17/bowssight  MAYSSIT
-mayhem17/bowspain   MAYEENPN
-mayhem17/bowsdeath  MAYSDTH
-mayhem17/bowsattack MAYEENDT
-mayhem17/i_pkup     MAYTEMUP
-mayhem17/p_pkup     MAYETPOW
+mayhem17/bowssight       MAYSSIT
+mayhem17/bowspain        MAYEENPN
+mayhem17/bowsdeath       MAYSDTH
+mayhem17/bowsattack      MAYEENDT
+mayhem17/i_pkup          MAYTEMUP
+mayhem17/p_pkup          MAYETPOW
 
 //////////////
 // Hellcore //
 //////////////
 
-hellcore/firestrt   HCFLAMST
-hellcore/keendeath  HCKEENDT
-hellcore/keenpain   HCKEENPN
+hellcore/firestrt        HCFLAMST
+hellcore/keendeath       HCKEENDT
+hellcore/keenpain        HCKEENPN
 
 /////////////
 // Valiant //
 /////////////
 
-valkn/pain          VALINT01
-valkn/death         VALINT03
+valiant/pyrodemon/sight  VALINT01
+valiant/pyrodemon/death  VALINT03
+valiant/pyrodemon/shotx	 VALINT08
 
-valdg/death         VALINT02
-valdg/sight         VALINT04
+valiant/arachnorb/sight  VALINT04
+valiant/arachnorb/death  VALINT02
 
-valbrn/death        VALINT05
+valiant/cybruiser/walk   VALINT05
+valiant/cybruiser/sight  VALINT06
+valiant/cybruiser/death  VALINT07
 
-valbn/sight         VALINT06
-valbn/death         VALINT07
+valiant/suicide/active   VALINT09
 
-valkt/sight         VALINT08
-valkt/death         VALINT09
-
-valws/sight         VALINT10
-valws/death         VALINT11
+valiant/superfatso/sight VALINT11
+valiant/superfatso/death VALINT10
 
 ////////////////////
 // Ancient Aliens //
 ////////////////////
 
-AAdsplas            AAdsplas
-AAkeenpn            AAkeenpn
-AAkeendt            AAkeendt
-AAbospit            AAbospit
-AAsssit             AAsssit
-AAssdth             AAssdth
-AAboscub            AAboscub
+AAdsplas                 AAdsplas
+AAkeenpn                 AAkeenpn
+AAkeendt                 AAkeendt
+AAbospit                 AAbospit
+AAsssit                  AAsssit
+AAssdth                  AAssdth
+AAboscub                 AAboscub
 
 ///////////////////////
 // Whispers of Satan //
 ///////////////////////
 
-wos/keen/pain       WSKEENPAIN
-wos/keen/death      WSKEENDTH
+wos/keen/pain            WSKEENPAIN
+wos/keen/death           WSKEENDTH
 
 /////////////
 // Chillax //
 /////////////
 
-chillax/brain/sight CHBOSSIT
-chillax/brain/pain  CHBOSPN
-chillax/brain/death CHBOSDTH
+chillax/brain/sight      CHBOSSIT
+chillax/brain/pain       CHBOSPN
+chillax/brain/death      CHBOSDTH
 
 //Hellpike
 $random HP/sight
@@ -310,29 +309,29 @@ $random HP/steps
     HP/step1
     HP/step2
 }
-HP/step1            HPFS1
-HP/step2            HPFS2
-HP/laugh1           HPL1
-HP/laugh2           HPL2
-HP/laugh3           HPL3
-HP/laugh4           HPL4
-HP/laugh5           HPL5
-HP/laugh6           HPL6
-HP/laugh7           HPL7
-HP/laugh8           HPL8
-HP/laugh9           HPL9
-HP/laugh10          HPL10
-HP/laugh11          HPL11
-HP/laugh12          HPL12
-HP/laugh13          HPL13
-HP/laugh14          HPL14
-HP/laugh15          HPL15
-HP/laugh16          HPL16
+HP/step1                 HPFS1
+HP/step2                 HPFS2
+HP/laugh1                HPL1
+HP/laugh2                HPL2
+HP/laugh3                HPL3
+HP/laugh4                HPL4
+HP/laugh5                HPL5
+HP/laugh6                HPL6
+HP/laugh7                HPL7
+HP/laugh8                HPL8
+HP/laugh9                HPL9
+HP/laugh10               HPL10
+HP/laugh11               HPL11
+HP/laugh12               HPL12
+HP/laugh13               HPL13
+HP/laugh14               HPL14
+HP/laugh15               HPL15
+HP/laugh16               HPL16
 
 ////////////////
 // Going Down //
 ////////////////
 
-GD/Torch            GDTORCHD
-GD/KeenDeath        GDKEENDT
-GD/KeenPain         GDKEENPN
+GD/Torch                 GDTORCHD
+GD/KeenDeath             GDKEENDT
+GD/KeenPain              GDKEENPN

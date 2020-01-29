@@ -5846,7 +5846,7 @@ Actor ValiantBaronBall : BaronBall
   Height 16
   Speed 30
   FastSpeed 40
-  SeeSound "valkt/sight"
+  SeeSound "valiant/pyrodemon/shotx"
   States
   {
   Spawn:
@@ -5860,8 +5860,6 @@ Actor ValiantBaronBall : BaronBall
 
 Actor ValiantImp : LDoomImp
 {
-    ReactionTime 8
-    MeleeSound "imp/stop"
     Obituary "%o was scorched by a super imp."
     HitObituary "%o got scratched by a super imp."
     States
@@ -5976,11 +5974,10 @@ Actor ValiantSuperMancubus : LFatso
   Health 900
   Radius 48
   Height 64
-  ReactionTime 8
   PainChance 80
   Species "BaronOfHell"
-  SeeSound "valws/death"
-  DeathSound "valws/sight"
+  SeeSound "valiant/superfatso/sight"
+  DeathSound "valiant/superfatso/death"
   Obituary "%o couldn't avoid the super mancubus' volley."
   States
   {
@@ -6017,9 +6014,8 @@ Actor ValiantSuperMancubus : LFatso
 
 Actor ValiantPyroDemon : LHellKnight
 {
-  ReactionTime 8
-  SeeSound "valkn/pain"
-  DeathSound "valkn/death"
+  SeeSound "valiant/pyrodemon/sight"
+  DeathSound "valiant/pyrodemon/death"
   Obituary "%o was burned to cinders by a pyrodemon."
   HitObituary "%o got ripped to shreds by a pyrodemon."
   States
@@ -6067,12 +6063,11 @@ Actor ValiantCybruiser : LBaronOfHell
 {
     Health 500
     Speed 10
-    ReactionTime 8
     PainChance 20
     +NORADIUSDMG
     Species "ValiantCybruiser"
-    SeeSound "valbn/sight"
-    DeathSound "valbn/death"
+    SeeSound "valiant/cybruiser/sight"
+    DeathSound "valiant/cybruiser/death"
     Obituary "%o rode a cybruiser's rocket."
     HitObituary "%o got clawed by a cybruiser."
     States
@@ -6082,9 +6077,9 @@ Actor ValiantCybruiser : LBaronOfHell
             Loop
         See:
             AAAL AA 3 A_Chase
-            AAAL B 0 A_PlaySoundEx("valbrn/death", "Auto")
+            AAAL B 0 A_PlaySoundEx("valiant/cybruiser/walk", "Auto")
             AAAL BBCC 3 A_Chase
-            AAAL D 0 A_PlaySoundEx("valbrn/death", "Auto")
+            AAAL D 0 A_PlaySoundEx("valiant/cybruiser/walk", "Auto")
             AAAL DD 3 A_Chase
             Loop
         Missile:
@@ -6111,7 +6106,6 @@ Actor ValiantCybruiser : LBaronOfHell
 
 Actor ValiantArachnotron : LArachnotron
 {
-    ReactionTime 8
     States
     {
         Spawn:
@@ -6145,7 +6139,7 @@ Actor ValiantArachnotron : LArachnotron
             Stop
         Death2:
             AAAN I 0 A_Fall
-            AAAN I 26 A_SpawnItem("ValiantArachnorb", 8)
+            AAAN I 26 A_SpawnItem("ValiantArachnorb")
             AAAN J 11
             AAAN KL 7
             AAAN M -1 A_KillMaster
@@ -6162,15 +6156,14 @@ Actor ValiantArachnorb 25081//replaces MBFHelperDog 888
     Speed 12
     Radius 24
     Height 56
-    ReactionTime 8
     PainChance 150
     Mass 400
     Monster
     +FLOAT
     +NOGRAVITY
-    SeeSound "valdg/sight"
+    SeeSound "valiant/arachnorb/sight"
     PainSound "baby/pain"
-    DeathSound "valdg/death"
+    DeathSound "valiant/arachnorb/death"
     ActiveSound "baby/active"
     Obituary "%o got blasted by an arachnorb."
     States
@@ -6247,7 +6240,6 @@ Actor ValiantSuicideBomber 25084//replaces DeadLostSoul 23
     Speed 10
     Radius 20
     Height 56
-    ReactionTime 8
     PainChance 5
     Mass 100
     Monster
@@ -6260,7 +6252,7 @@ Actor ValiantSuicideBomber 25084//replaces DeadLostSoul 23
             AAAO DE 10 A_Look
             Loop
         See:
-            AAAO G 0 A_PlaySoundEx("valkt/death", "Auto")
+            AAAO G 0 A_PlaySoundEx("valiant/suicide/active", "Auto")
             AAAO DDDEEEFFFGGG 2 A_Chase
             Loop
         Pain:
@@ -6412,7 +6404,6 @@ Actor CowHead 25091//UNKNOWN
 Actor ValiantDarkDemon : LDemon 25092//replaces UNKOWN
 {
   Speed 12
-  ReactionTime 8
   States
   {
   Spawn:

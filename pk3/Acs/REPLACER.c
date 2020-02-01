@@ -3,16 +3,16 @@
 
 private int currentMapset;
 
-private function bool StrStartsWith(str str1, str str2)
+private function bool StrStartsWith(str string, str prefix)
 {
-    int len = StrLen(str2);
+    int len = StrLen(prefix);
 
-    if (len > StrLen(str1))
+    if (len > StrLen(string))
     {
         return false;
     }
 
-    return !StrIcmp(str1, str2, len);
+    return !StrIcmp(string, prefix, len);
 }
 
 private function int GetCurrentMapset(void)
@@ -55,7 +55,7 @@ private function int GetCurrentMapset(void)
     return 1;
 }
 
-script "Maniac" (void)
+script "Lexicon_Replacer" (void)
 {
     if (!currentMapset)
     {

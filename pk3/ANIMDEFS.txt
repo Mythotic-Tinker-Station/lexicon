@@ -11,7 +11,7 @@ texture LEXSTAT1
     pic LEXSTAT7 tics 1
     pic LEXSTAT8 tics 1
 
-    
+
 texture VR031A
 	pic VR031A tics 3
 	pic VR031B tics 3
@@ -25,7 +25,7 @@ texture VR031A
 texture VRANIM2
 	pic VR023 tics 1
     pic VR023R tics 1
-    
+
 texture VRANIM3
 	pic VR016 tics 1
     pic VR016R tics 1
@@ -47,7 +47,7 @@ texture VRANIM
 	pic VR010 tics 3
 	pic VR011 tics 3
 	pic VR012 tics 3
-    
+
 texture CPOINT01
 	pic CPOINT01 tics 1
 	pic CPOINT02 tics 1
@@ -81,7 +81,7 @@ texture CPOINT01
 	pic CPOINT30 tics 1
 	pic CPOINT31 tics 1
 	pic CPOINT32 tics 1
-	
+
 // Excerpts from ZHexen's ANIMDEFS
 // Made by Raccoon
 
@@ -93,42 +93,42 @@ SWITCH GLASS01
 		PIC GLASS07 tics -1
 	OFF
 		PIC GLASS01 tics -1
-	
+
 SWITCH GLASS02
 	ON
 		SOUND GlassShatter
 		PIC GLASS08 tics -1
 	OFF
 		PIC GLASS02 tics -1
-	
+
 SWITCH GLASS03
 	ON
 		SOUND GlassShatter
 		PIC GLASS07 tics -1
 	OFF
 		PIC GLASS03 tics -1
-	
+
 SWITCH GLASS04
 	ON
 		SOUND GlassShatter
 		PIC GLASS08 tics -1
 	OFF
 		PIC GLASS04 tics -1
-	
+
 SWITCH GLASS05
 	ON
 		SOUND GlassShatter
 		PIC GLASS07 tics -1
 	OFF
 		PIC GLASS05 tics -1
-	
+
 SWITCH GLASS06
 	ON
 		SOUND GlassShatter
 		PIC GLASS08 tics -1
 	OFF
 		PIC GLASS06 tics -1
-	
+
 SWITCH GLASS09
 	ON
 		SOUND GlassShatter
@@ -143,28 +143,28 @@ SWITCH GLASL01
 		PIC GLASL00 tics -1
 	OFF
 		PIC GLASL01 tics -1
-	
+
 SWITCH GLASL02
 	ON
 		SOUND GlassShatter
 		PIC GLASL00 tics -1
 	OFF
 		PIC GLASL02 tics -1
-	
+
 SWITCH GLASL03
 	ON
 		SOUND GlassShatter
 		PIC GLASL00 tics -1
 	OFF
 		PIC GLASL03 tics -1
-	
+
 SWITCH GLASL04
 	ON
 		SOUND GlassShatter
 		PIC GLASL00 tics -1
 	OFF
 		PIC GLASL04 tics -1
-	
+
 // -- Tall --
 SWITCH GLAST01
 	ON
@@ -172,21 +172,21 @@ SWITCH GLAST01
 		PIC GLAST00 tics -1
 	OFF
 		PIC GLAST01 tics -1
-	
+
 SWITCH GLAST02
 	ON
 		SOUND GlassShatter
 		PIC GLAST00 tics -1
 	OFF
 		PIC GLAST02 tics -1
-	
+
 SWITCH GLAST03
 	ON
 		SOUND GlassShatter
 		PIC GLAST00 tics -1
 	OFF
 		PIC GLAST03 tics -1
-	
+
 // -- Wide --
 SWITCH GLASW01
 	ON
@@ -194,63 +194,63 @@ SWITCH GLASW01
 		PIC GLASW00 tics -1
 	OFF
 		PIC GLASW01 tics -1
-	
+
 SWITCH GLASW02
 	ON
 		SOUND GlassShatter
 		PIC GLASW09 tics -1
 	OFF
 		PIC GLASW02 tics -1
-	
+
 SWITCH GLASW03
 	ON
 		SOUND GlassShatter
 		PIC GLASW00 tics -1
 	OFF
 		PIC GLASW03 tics -1
-	
+
 SWITCH GLASW04
 	ON
 		SOUND GlassShatter
 		PIC GLASW09 tics -1
 	OFF
 		PIC GLASW04 tics -1
-	
+
 SWITCH GLASW05
 	ON
 		SOUND GlassShatter
 		PIC GLASW00 tics -1
 	OFF
 		PIC GLASW05 tics -1
-	
+
 SWITCH GLASW06
 	ON
 		SOUND GlassShatter
 		PIC GLASW09 tics -1
 	OFF
 		PIC GLASW06 tics -1
-	
+
 SWITCH GLASW07
 	ON
 		SOUND GlassShatter
 		PIC GLASW00 tics -1
 	OFF
 		PIC GLASW07 tics -1
-	
+
 SWITCH GLASW08
 	ON
 		SOUND GlassShatter
 		PIC GLASW09 tics -1
 	OFF
 		PIC GLASW08 tics -1
-	
+
 SWITCH GLASW10
 	ON
 		SOUND GlassShatter
 		PIC GLASW09 tics -1
 	OFF
 		PIC GLASW10 tics -1
-	
+
 // -- Heretic --
 SWITCH STNGLS1
 	ON
@@ -258,28 +258,28 @@ SWITCH STNGLS1
 		PIC STNGLS1B tics -1
 	OFF
 		PIC STNGLS1 tics -1
-	
+
 SWITCH STNGLS2
 	ON
 		SOUND GlassShatter
 		PIC STNGLS2B tics -1
 	OFF
 		PIC STNGLS2 tics -1
-	
+
 SWITCH STNGLS3
 	ON
 		SOUND GlassShatter
 		PIC STNGLS3B tics -1
 	OFF
 		PIC STNGLS3 tics -1
-	
+
 SWITCH STNGLT2
 	ON
 		SOUND GlassShatter
 		PIC STNGLT2B tics -1
 	OFF
 		PIC STNGLT2 tics -1
-		
+
 WARP texture wredliq
 WARP texture wskulli2
 WARP texture wskullic
@@ -338,7 +338,7 @@ texture ELECDOR4
 
 texture GLAVA1
  pic GLAVA1 tics 8
- pic GLAVA2 tics 8 
+ pic GLAVA2 tics 8
  pic GLAVA3 tics 8
 
 texture FLTAAWA1
@@ -445,7 +445,7 @@ texture	THRO0001 range THRO0291 tics 137
 //pic 4 tics 5
 
 ////////////////////////////////////////////////////////////////////////////////
-//Alien vendetta 
+//Alien vendetta
 
 Texture	Optional	AVFTE1  	Range	AVFTE4  	Tics 8
 Texture	Optional	51AVLA1 	Range	51AVLA4 	Tics 8
@@ -516,26 +516,26 @@ flat UALA1
     pic UALA2 tics 5
     pic UALA3 tics 5
     pic UALA4 tics 5
-	
+
 	warp flat UALA1
 	warp flat UALA2
 	warp flat UALA3
 	warp flat UALA4
-	
+
 Texture Optional UFALL1 Range UFALL4 Tics 3
 Texture Optional UWALL1 Range UWALL4 Tics 3
-	
+
 flat UASLI09
     pic UASLI09 tics 5
     pic UASLI10 tics 5
     pic UASLI11 tics 5
     pic UASLI12 tics 5
-	
+
 	warp flat UASLI1
 	warp flat UASLI2
 	warp flat UASLI3
 	warp flat UASLI4
-	
+
 	warp flat UASLI09
 	warp flat UASLI10
 	warp flat UASLI11
@@ -552,7 +552,7 @@ flat ZSLIME09
 	pic ZSLIME10 tics 5
 	pic ZSLIME11 tics 5
 	pic ZSLIME12 tics 5
-	
+
 Texture FSRAIN1 Range FSRAIN4 Tics 3
 
 // Dark Tartarus
@@ -599,50 +599,50 @@ Texture Optional BFALLU1 Range BFALLU4 Tics 8
 // D2TWID
 
 
-texture ZZKEENL0 
+texture ZZKEENL0
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL1
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL2
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL3
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL4
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL5
 	pic 1 tics 35
 	pic 1 tics 35
-		
+
 texture ZZKEENL6
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL7
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENL8
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 texture ZZKEENLY
 	pic 1 tics 35
 	pic 1 tics 35
-	
+
 Texture ZZKEENX1 Range ZZKEENX4 Tics 4
 Texture ZZKEENF1 Range ZZKEENF4 Tics 3
 Texture D2TLL1 Range D2TLL4 Tics 3
-	
+
 // Drown in blood
 
 Switch Doom ADEL_Z50 off pic ADEL_Z51 Tics 0
@@ -853,7 +853,7 @@ flat HCATER1
 	pic HCATER4 tics 5
 	pic HCATERA tics 5
 	pic HCATERB tics 5
-	
+
 Texture optional HCODRIP1 Range HCODRIP4 Tics 8
 Texture optional HCRAIN1 Range HCRAIN4 Tics 8
 Texture optional HCODGR1 Range HCODGR4 Tics 8
@@ -4100,16 +4100,8 @@ switch doom 1 VLNT53 on pic VLNT56 tics 0
 
 ////////////////Epic1&2///////////////////
 
-
-Flat	Optional	EP2F10 	Range	EP2F13 	Tics 8
-Flat	Optional	EP2F26 	Range	EP2F31 	Tics 8
-Flat	Optional	EP2F32 	Range	EP2F41 	Tics 8
-Flat	Optional	EP2F42 	Range	EP2F76 	Tics 4
-Flat	Optional	EP2F77 	Range	EP2F80 	Tics 8
-Flat	Optional	EP2F81 	Range	EP2F88 	Tics 8
-
-Flat	Optional	EP2G1 	Range	EP2G3 	Tics 8
-
+Flat	Optional	EP2F01 	Range	EP2F04 	Tics 8
+Flat	Optional	EP2F05 	Range	EP2F10 	Tics 8
 
 Texture	Optional	EPCA1 	Range	EPCA9 	Tics 8
 Texture	Optional	EPCB1 	Range	EPCB5 	Tics 8
@@ -4155,11 +4147,11 @@ texture EPIC21
 texture EPIC235
     pic EPIC235 tics 8
     pic EPIC236 tics 8
-    
+
 texture EPIC237
     pic EPIC237 tics 8
     pic EPIC238 tics 8
-    
+
 texture EPIC239
     pic EPIC239 tics 8
     pic EPIC240 tics 8
@@ -4169,7 +4161,7 @@ texture EPIC242
     pic EPIC242 tics 8
     pic EPIC243 tics 8
     pic EPIC244 tics 8
-    
+
 /////////////
 ////SF2012///
 /////////////

@@ -1,7 +1,7 @@
-map AV01 "Sunset"
+map av__01 "Sunset"
 	{
 	titlepatch = "AVTPX00"
-	next = "AV02"
+	next = "av__02"
 	music = "d_av01"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
@@ -11,10 +11,10 @@ map AV01 "Sunset"
 	nojump
 	}
 
-map AV02 "Rusty Rage"
+map av__02 "Rusty Rage"
 	{
 	titlepatch = "AVTPX01"
-	next = "AV03"
+	next = "av__03"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -24,10 +24,10 @@ map AV02 "Rusty Rage"
 	nojump
 	}
 
-map AV03 "Cargo Depot"
+map av__03 "Cargo Depot"
 	{
 	titlepatch = "AVTPX02"
-	next = "AV04"
+	next = "av__04"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -37,10 +37,10 @@ map AV03 "Cargo Depot"
 	nojump
 	}
 	
-map AV04 "Seclusion"
+map av__04 "Seclusion"
 	{
 	titlepatch = "AVTPX03"
-	next = "AV05"
+	next = "av__05"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -50,10 +50,10 @@ map AV04 "Seclusion"
 	nojump
 	}
 	
-map AV05 "Crimson Tide"
+map av__05 "Crimson Tide"
 	{
 	titlepatch = "AVTPX04"
-	next = "AV06"
+	next = "av__06"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -63,10 +63,10 @@ map AV05 "Crimson Tide"
 	nojump
 	}
 	
-map AV06 "hillside Siege"
+map av__06 "hillside Siege"
 	{
 	titlepatch = "AVTPX05"
-	next = "AV07"
+	next = "av__07"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -76,10 +76,10 @@ map AV06 "hillside Siege"
 	nojump
 	}
 	
-map AV07 "Showdown"
+map av__07 "Showdown"
 	{
 	titlepatch = "AVTPX06"
-	next = "AV08"
+	next = "av__08"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -91,10 +91,10 @@ map AV07 "Showdown"
 	nojump
 	}
 	
-map AV08 "Beast Island"
+map av__08 "Beast Island"
 	{
 	titlepatch = "AVTPX07"
-	next = "AV09"
+	next = "av__09"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -104,10 +104,10 @@ map AV08 "Beast Island"
 	nojump
 	}
 	
-map AV09 "Castle Gardens"
+map av__09 "Castle Gardens"
 	{
 	titlepatch = "AVTPX08"
-	next = "AV10"
+	next = "av__10"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -117,10 +117,10 @@ map AV09 "Castle Gardens"
 	nojump
 	}
 	
-map AV10 "Toxic Touch"
+map av__10 "Toxic Touch"
 	{
 	titlepatch = "AVTPX09"
-	next = "AV11"
+	next = "av__11"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -130,10 +130,10 @@ map AV10 "Toxic Touch"
 	nojump
 	}
 
-map AV11 "Nemesis"
+map av__11 "Nemesis"
 	{
 	titlepatch = "AVTPX10"
-	next = "AV12"
+	next = "av__12"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -143,10 +143,10 @@ map AV11 "Nemesis"
 	nojump
 	}
 	
-map AV12 "Entropy"
+map av__12 "Entropy"
 	{
 	titlepatch = "AVTPX11"
-	next = "AV13"
+	next = "av__13"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -156,10 +156,10 @@ map AV12 "Entropy"
 	nojump
 	}
 
-map AV13 "Suicidal Tendencies"
+map av__13 "Suicidal Tendencies"
 	{
 	titlepatch = "AVTPX12"
-	next = "AV14"
+	next = "av__14"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -169,10 +169,10 @@ map AV13 "Suicidal Tendencies"
 	nojump
 	}
 
-map AV14 "Overwhelming odds"
+map av__14 "Overwhelming odds"
 	{
 	titlepatch = "AVTPX13"
-	next = "AV15"
+	next = "av__15"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -182,24 +182,24 @@ map AV14 "Overwhelming odds"
 	nojump
 	}
 	
-map AV15 "Bulls on Parade"
+map av__15 "Bulls on Parade"
 	{
 	titlepatch = "AVTPX14"
-	next = "AV16"
+	next = "av__16"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
-	secretnext = "AV31"
+	secretnext = "av__31"
 	music = "d_av15"
 	sky1 = "AVRSKY2"
 	nocrouch
 	nojump
 	}
 	
-map AV16 "Mutual Destruction"
+map av__16 "Mutual Destruction"
 	{
 	titlepatch = "AVTPX15"
-	next = "AV17"
+	next = "av__17"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -209,10 +209,10 @@ map AV16 "Mutual Destruction"
 	nojump
 	}
 	
-map AV17 "Nukefall"
+map av__17 "Nukefall"
 	{
 	titlepatch = "AVTPX16"
-	next = "AV18"
+	next = "av__18"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -222,10 +222,10 @@ map AV17 "Nukefall"
 	nojump
 	}
 	
-map AV18 "Lake Poison"
+map av__18 "Lake Poison"
 	{
 	titlepatch = "AVTPX17"
-	next = "AV19"
+	next = "av__19"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -235,10 +235,10 @@ map AV18 "Lake Poison"
 	nojump
 	}
 	
-map AV19 "Alien Ressurection"
+map av__19 "Alien Ressurection"
 	{
 	titlepatch = "AVTPX18"
-	next = "AV20"
+	next = "av__20"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -248,10 +248,10 @@ map AV19 "Alien Ressurection"
 	nojump
 	}
 	
-map AV20 "Misri Halek"
+map av__20 "Misri Halek"
 	{
 	titlepatch = "AVTPX19"
-	next = "AV21"
+	next = "av__21"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -261,10 +261,10 @@ map AV20 "Misri Halek"
 	nojump
 	}
 	
-map AV21 "One Flew Over the Cacos Nest"
+map av__21 "One Flew Over the Cacos Nest"
 	{
 	titlepatch = "AVTPX20"
-	next = "AV22"
+	next = "av__22"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -274,10 +274,10 @@ map AV21 "One Flew Over the Cacos Nest"
 	nojump
 	}
 	
-map AV22 "Rubicon"
+map av__22 "Rubicon"
 	{
 	titlepatch = "AVTPX21"
-	next = "AV23"
+	next = "av__23"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -287,10 +287,10 @@ map AV22 "Rubicon"
 	nojump
 	}
 
-map AV23 "Blood Sacrifice"
+map av__23 "Blood Sacrifice"
 	{
 	titlepatch = "AVTPX22"
-	next = "AV24"
+	next = "av__24"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -301,10 +301,10 @@ map AV23 "Blood Sacrifice"
 	}
 	
 	
-map AV24 "Clandistine Complex"
+map av__24 "Clandistine Complex"
 	{
 	titlepatch = "AVTPX23"
-	next = "AV25"
+	next = "av__25"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -314,10 +314,10 @@ map AV24 "Clandistine Complex"
 	nojump
 	}
 	
-map AV25 "Demonic Hordes"
+map av__25 "Demonic Hordes"
 	{
 	titlepatch = "AVTPX24"
-	next = "AV26"
+	next = "av__26"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -327,10 +327,10 @@ map AV25 "Demonic Hordes"
 	nojump
 	}
 
-map AV26 "Dark Dome"
+map av__26 "Dark Dome"
 	{
 	titlepatch = "AVTPX25"
-	next = "AV27"
+	next = "av__27"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -340,10 +340,10 @@ map AV26 "Dark Dome"
 	nojump
 	}
 	
-map AV27 "Stench of Evil"
+map av__27 "Stench of Evil"
 	{
 	titlepatch = "AVTPX26"
-	next = "AV28"
+	next = "av__28"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -353,10 +353,10 @@ map AV27 "Stench of Evil"
 	nojump
 	}
 
-map AV28 "Whispering Shadows"
+map av__28 "Whispering Shadows"
 	{
 	titlepatch = "AVTPX27"
-	next = "AV29"
+	next = "av__29"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -366,10 +366,10 @@ map AV28 "Whispering Shadows"
 	nojump
 	}
 
-map AV29 "Fire Walk with Me"
+map av__29 "Fire Walk with Me"
 	{
 	titlepatch = "AVTPX28"
-	next = "AV30"
+	next = "av__30"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
@@ -379,7 +379,7 @@ map AV29 "Fire Walk with Me"
 	nojump
 	}
 	
-map AV30 "Point Dreadful"
+map av__30 "Point Dreadful"
 	{
 	titlepatch = "AVTPX29"
 	next = "VR"
@@ -393,24 +393,24 @@ map AV30 "Point Dreadful"
     SuckTime = 1337
 	}
 	
-map AV31 "Killer Colours"
+map av__31 "Killer Colours"
 	{
 	titlepatch = "AVTPX30"
-	next = "AV16"
+	next = "av__16"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"
-	secretnext = "AV32"
+	secretnext = "av__32"
 	music = "d_av31"
 	sky1 = "AVRSKY3"
 	nocrouch
 	nojump
 	}
 	
-map AV32 "No Guts No Glory"
+map av__32 "No Guts No Glory"
 	{
 	titlepatch = "AVTPX31"
-	next = "AV16"
+	next = "av__16"
 	enterpic = "AVINT"
 	exitpic = "AVINT"
 	intermusic = "D_AVINT"

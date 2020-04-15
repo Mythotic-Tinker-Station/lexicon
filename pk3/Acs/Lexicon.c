@@ -51,7 +51,7 @@ strict namespace
 		{ "Estranged",				        "EST01"         }, // 18
 		{ "Going Down",				        "GD01"	        }, // 19
 		{ "Dark Encounters",		        "DKE01"	        }, // 20
-        { "Alien Vendetta",                 "AV01"          }, // 21
+        { "Alien Vendetta",                 "AV__01"        }, // 21
 		{ "Hadephobia",				        "HPH01"         }, // 22
 		{ "Mayhem 17",				        "MAY01"	        }, // 23
 		{ "Sunlust",				        "SLU01"	        }, // 24

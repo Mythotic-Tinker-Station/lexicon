@@ -56,7 +56,7 @@ strict namespace
 		{ "Mayhem 17",				        "MAY01"	        }, // 23
 		{ "Sunlust",				        "SLU01"	        }, // 24
 		{ "Hellbound",				        "HLB01"         }, // 25
-		{ "1994 Tune Up Community Project", "TU01"          }, // 26
+		{ "1994 Tune Up Community Project", "94TU01"        }, // 26
 		{ "Unholy Realms",			        "UHR01"	        }, // 27
         { "Hell Core",			            "HC01"	        }, // 28
         { "Ancient Aliens",			        "AA101"	        }, // 29

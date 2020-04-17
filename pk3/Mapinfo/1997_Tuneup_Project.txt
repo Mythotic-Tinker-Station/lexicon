@@ -1,8 +1,8 @@
-map TU01 "bitter-sweet"
+map 94TU01 "bitter-sweet"
 {
 	titlepatch = "1994V32"
-	next = "TU02"
-	secretnext = "TU02"
+	next = "94TU02"
+	secretnext = "94TU02"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU01"
@@ -12,12 +12,12 @@ map TU01 "bitter-sweet"
 	intermusic = "D_TUINT"
 }
 
-map TU02 "taredone"
+map 94TU02 "taredone"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU03"
-	secretnext = "TU03"
+	next = "94TU03"
+	secretnext = "94TU03"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU02"
@@ -27,12 +27,12 @@ map TU02 "taredone"
 	intermusic = "D_TUINT"
 }
 
-map TU03 "hyper-vyper"
+map 94TU03 "hyper-vyper"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU04"
-	secretnext = "TU04"
+	next = "94TU04"
+	secretnext = "94TU04"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU03"
@@ -42,12 +42,12 @@ map TU03 "hyper-vyper"
 	intermusic = "D_TUINT"
 }
 
-map TU04 "hades part 1"
+map 94TU04 "hades part 1"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU05"
-	secretnext = "TU05"
+	next = "94TU05"
+	secretnext = "94TU05"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU04"
@@ -57,12 +57,12 @@ map TU04 "hades part 1"
 	intermusic = "D_TUINT"
 }
 
-map TU05 "bcs01"
+map 94TU05 "bcs01"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU06"
-	secretnext = "TU06"
+	next = "94TU06"
+	secretnext = "94TU06"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU05"
@@ -72,12 +72,12 @@ map TU05 "bcs01"
 	intermusic = "D_TUINT"
 }
 
-map TU06 "hades part 2"
+map 94TU06 "hades part 2"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU07"
-	secretnext = "TU07"
+	next = "94TU07"
+	secretnext = "94TU07"
 	sky1 = "1994SKY1"
 	cluster = 5
 	music = "D_TU06"
@@ -87,12 +87,12 @@ map TU06 "hades part 2"
 	intermusic = "D_TUINT"
 }
 
-map TU07 "dead temple"
+map 94TU07 "dead temple"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU08"
-	secretnext = "TU08"
+	next = "94TU08"
+	secretnext = "94TU08"
 	sky1 = "1994SKY1"
 	cluster = 6
 	map07special
@@ -103,12 +103,12 @@ map TU07 "dead temple"
 	intermusic = "D_TUINT"
 }
 
-map TU08 "helipad"
+map 94TU08 "helipad"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU09"
-	secretnext = "TU09"
+	next = "94TU09"
+	secretnext = "94TU09"
 	sky1 = "1994SKY1"
 	cluster = 6
 	music = "D_TU08"
@@ -118,12 +118,12 @@ map TU08 "helipad"
 	intermusic = "D_TUINT"
 }
 
-map TU09 "bug hunt"
+map 94TU09 "bug hunt"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU10"
-	secretnext = "TU10"
+	next = "94TU10"
+	secretnext = "94TU10"
 	sky1 = "1994SKY1"
 	cluster = 6
 	music = "D_TU09"
@@ -133,12 +133,12 @@ map TU09 "bug hunt"
 	intermusic = "D_TUINT"
 }
 
-map TU10 "melange v2"
+map 94TU10 "melange v2"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU11"
-	secretnext = "TU11"
+	next = "94TU11"
+	secretnext = "94TU11"
 	sky1 = "1994SKY1"
 	cluster = 6
 	music = "D_TU10"
@@ -148,12 +148,12 @@ map TU10 "melange v2"
 	intermusic = "D_TUINT"
 }
 
-map TU11 "elements"
+map 94TU11 "elements"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU12"
-	secretnext = "TU12"
+	next = "94TU12"
+	secretnext = "94TU12"
 	sky1 = "1994SKY1"
 	cluster = 6
 	music = "D_TU11"
@@ -163,12 +163,12 @@ map TU11 "elements"
 	intermusic = "D_TUINT"
 }
 
-map TU12 "rawnwood"
+map 94TU12 "rawnwood"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU13"
-	secretnext = "TU13"
+	next = "94TU13"
+	secretnext = "94TU13"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU12"
@@ -178,12 +178,12 @@ map TU12 "rawnwood"
 	intermusic = "D_TUINT"
 }
 
-map TU13 "the unwilling"
+map 94TU13 "the unwilling"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU14"
-	secretnext = "TU14"
+	next = "94TU14"
+	secretnext = "94TU14"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU13"
@@ -193,12 +193,12 @@ map TU13 "the unwilling"
 	intermusic = "D_TUINT"
 }
 
-map TU14 "comcon2"
+map 94TU14 "comcon2"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU15"
-	secretnext = "TU15"
+	next = "94TU15"
+	secretnext = "94TU15"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU14"
@@ -208,12 +208,12 @@ map TU14 "comcon2"
 	intermusic = "D_TUINT"
 }
 
-map TU15 "cratebase"
+map 94TU15 "cratebase"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU16"
-	secretnext = "TU31"
+	next = "94TU16"
+	secretnext = "94TU31"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU15"
@@ -223,12 +223,12 @@ map TU15 "cratebase"
 	intermusic = "D_TUINT"
 }
 
-map TU16 "infinity plus"
+map 94TU16 "infinity plus"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU17"
-	secretnext = "TU17"
+	next = "94TU17"
+	secretnext = "94TU17"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU16"
@@ -238,12 +238,12 @@ map TU16 "infinity plus"
 	intermusic = "D_TUINT"
 }
 
-map TU17 "tunnels"
+map 94TU17 "tunnels"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU18"
-	secretnext = "TU18"
+	next = "94TU18"
+	secretnext = "94TU18"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU17"
@@ -253,12 +253,12 @@ map TU17 "tunnels"
 	intermusic = "D_TUINT"
 }
 
-map TU18 "subway redux"
+map 94TU18 "subway redux"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU19"
-	secretnext = "TU19"
+	next = "94TU19"
+	secretnext = "94TU19"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU18"
@@ -268,12 +268,12 @@ map TU18 "subway redux"
 	intermusic = "D_TUINT"
 }
 
-map TU19 "undersea"
+map 94TU19 "undersea"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU20"
-	secretnext = "TU20"
+	next = "94TU20"
+	secretnext = "94TU20"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU19"
@@ -283,12 +283,12 @@ map TU19 "undersea"
 	intermusic = "D_TUINT"
 }
 
-map TU20 "outland"
+map 94TU20 "outland"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU21"
-	secretnext = "TU21"
+	next = "94TU21"
+	secretnext = "94TU21"
 	sky1 = "1994SKY2"
 	cluster = 7
 	music = "D_TU20"
@@ -298,12 +298,12 @@ map TU20 "outland"
 	intermusic = "D_TUINT"
 }
 
-map TU21 "return to ultima"
+map 94TU21 "return to ultima"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU22"
-	secretnext = "TU22"
+	next = "94TU22"
+	secretnext = "94TU22"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU21"
@@ -313,12 +313,12 @@ map TU21 "return to ultima"
 	intermusic = "D_TUINT"
 }
 
-map TU22 "nefarious"
+map 94TU22 "nefarious"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU23"
-	secretnext = "TU23"
+	next = "94TU23"
+	secretnext = "94TU23"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU22"
@@ -328,12 +328,12 @@ map TU22 "nefarious"
 	intermusic = "D_TUINT"
 }
 
-map TU23 "bcs03"
+map 94TU23 "bcs03"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU24"
-	secretnext = "TU24"
+	next = "94TU24"
+	secretnext = "94TU24"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU23"
@@ -343,12 +343,12 @@ map TU23 "bcs03"
 	intermusic = "D_TUINT"
 }
 
-map TU24 "fortified castle"
+map 94TU24 "fortified castle"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU25"
-	secretnext = "TU25"
+	next = "94TU25"
+	secretnext = "94TU25"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU24"
@@ -358,12 +358,12 @@ map TU24 "fortified castle"
 	intermusic = "D_TUINT"
 }
 
-map TU25 "fort borg"
+map 94TU25 "fort borg"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU26"
-	secretnext = "TU26"
+	next = "94TU26"
+	secretnext = "94TU26"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU25"
@@ -373,12 +373,12 @@ map TU25 "fort borg"
 	intermusic = "D_TUINT"
 }
 
-map TU26 "1 beautiful day"
+map 94TU26 "1 beautiful day"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU27"
-	secretnext = "TU27"
+	next = "94TU27"
+	secretnext = "94TU27"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU26"
@@ -388,12 +388,12 @@ map TU26 "1 beautiful day"
 	intermusic = "D_TUINT"
 }
 
-map TU27 "wetworked2"
+map 94TU27 "wetworked2"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU28"
-	secretnext = "TU28"
+	next = "94TU28"
+	secretnext = "94TU28"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU27"
@@ -401,12 +401,12 @@ map TU27 "wetworked2"
 	intermusic = "D_TUINT"
 }
 
-map TU28 "the nightmare"
+map 94TU28 "the nightmare"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU29"
-	secretnext = "TU29"
+	next = "94TU29"
+	secretnext = "94TU29"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU28"
@@ -416,12 +416,12 @@ map TU28 "the nightmare"
 	intermusic = "D_TUINT"
 }
 
-map TU29 "the castle invaded by hell"
+map 94TU29 "the castle invaded by hell"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU30"
-	secretnext = "TU30"
+	next = "94TU30"
+	secretnext = "94TU30"
 	sky1 = "1994SKY3"
 	cluster = 8
 	music = "D_TU29"
@@ -431,7 +431,7 @@ map TU29 "the castle invaded by hell"
 	intermusic = "D_TUINT"
 }
 
-map TU30 "pure evil"
+map 94TU30 "pure evil"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
@@ -448,12 +448,12 @@ map TU30 "pure evil"
     SuckTime = 1337
 }
 
-map TU31 "original sin"
+map 94TU31 "original sin"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU16"
-	secretnext = "TU32"
+	next = "94TU16"
+	secretnext = "94TU32"
 	sky1 = "1994SKY3"
 	cluster = 9
 	music = "D_TU31"
@@ -463,12 +463,12 @@ map TU31 "original sin"
 	intermusic = "D_TUINT"
 }
 
-map TU32 "cyberpie"
+map 94TU32 "cyberpie"
 {
 	enterpic = "$ENTER"
 	titlepatch = "1994V32"
-	next = "TU16"
-	secretnext = "TU16"
+	next = "94TU16"
+	secretnext = "94TU16"
 	sky1 = "1994SKY3"
 	cluster = 10
 	music = "D_TU32"

@@ -79,7 +79,7 @@ strict namespace
         { "Zones Of Fear",			        "ZOF01"	        }, // 46
         { "Zone 300",			            "ZTH01"	        }, // 47
         { "Interception",			        "INT01"	        }, // 48
-        { "Doom2 Redux",			        "RDX01"	        }, // 49
+        { "Doom2 Redux",			        "REDX01"	    }, // 49
         { "*Knee-Deep in the Dead",		    "E1M1"	        }, // 50
         { "*The Shores of Hell",		    "E2M1"	        }, // 51
         { "*Inferno",			            "E3M1"	        }, // 52

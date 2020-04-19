@@ -1156,10 +1156,18 @@ Actor LExplosiveBarrel : ExplosiveBarrel replaces ExplosiveBarrel
     {
     Spawn:
         TNT1 A 0
+        TNT1 A 0 A_JumpIf(CallACS("Lexicon_Replacer") == 7, "EP1EP2")
         TNT1 A 0 A_JumpIf(CallACS("Lexicon_Replacer") == 9, "SD6SD7")
+        TNT1 A 0 A_JumpIf(CallACS("Lexicon_Replacer") == 10, "SLU")
         Goto Super::Spawn
+    EP1EP2:
+        TNT1 A 0 A_SpawnItemEx("Epic2A24", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
     SD6SD7:
         TNT1 A 0 A_SpawnItemEx("SD20x6A2", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
+        Stop
+    SLU:
+        TNT1 A 0 A_SpawnItemEx("SunlustExplosiveBarrel", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERSPECIAL|SXF_NOCHECKPOSITION)
         Stop
     }
 }
@@ -4899,9 +4907,7 @@ Actor DeusVultExplosiveBarrel : ExplosiveBarrel 25214
         BEXP C 5 BRIGHT
         BEXP D 5 BRIGHT A_Explode (128*160)
         BEXP E 10 BRIGHT
-        TNT1 A 1050 BRIGHT A_BarrelDestroy
-        TNT1 A 5 A_Respawn
-        Wait
+        Goto Super::Death+5
     }
 }
 
@@ -5341,17 +5347,15 @@ Actor SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
   States
   {
   Spawn:
-    SLR1 AB 6
+    SLR1 A 6
     Loop
   Death:
-    SLXP A 5 Bright
-    SLXP B 5 Bright A_Scream
-    SLXP C 5 Bright
-    SLXP D 5 Bright A_Explode
-    SLXP E 10 Bright
-    TNT1 A 1050 Bright A_BarrelDestroy
-    TNT1 A 5 A_Respawn
-    Wait
+    SLR1 A 5 Bright
+    SLXP A 5 Bright A_Scream
+    SLXP B 5 Bright
+    SLXP C 5 Bright A_Explode
+    BEXP E 10 Bright
+    Goto Super::Death+5
   }
 }
 
@@ -6882,9 +6886,7 @@ Actor Epic2A24 : ExplosiveBarrel 25128//2035
     AAAZ E 5 Bright
     AAAZ F 5 Bright A_Explode
     AAAZ G 10 Bright
-    TNT1 A 1050 Bright A_BarrelDestroy
-    TNT1 A 5 A_Respawn
-    Wait
+    Goto Super::Death+5
   }
 }
 
@@ -7640,24 +7642,7 @@ Actor SD20x7A1 : ArmorBonus
   }
 }
 
-Actor SD20x7A2 : ExplosiveBarrel 25196//2035
-{
-  States
-  {
-  Spawn:
-    AABL Q 6
-    Loop
-  Death:
-    AABL Q 5 Bright
-    AABL Q 5 Bright A_Scream
-    AABL R 5 Bright
-    AABL S 5 Bright A_Explode
-    AABL T 10 Bright
-    TNT1 A 1050 Bright A_BarrelDestroy
-    TNT1 A 5 A_Respawn
-    Wait
-  }
-}
+Actor SD20x7A2 : SunlustExplosiveBarrel 25196 {}//2035
 
 Actor SD20x7A3 : HeadCandles 25197//29
 {

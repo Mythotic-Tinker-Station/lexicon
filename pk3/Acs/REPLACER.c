@@ -51,6 +51,10 @@ private function int GetCurrentMapset(void)
     {
         return 9;
     }
+    else if (StrStartsWith(mapset, "SLU"))
+    {
+        return 10;
+    }
 
     return 1;
 }

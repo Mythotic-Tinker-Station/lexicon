@@ -196,40 +196,40 @@ pointlight ANCIENTALIENSPLASMA
 flickerlight ANCIENTALIENSPLASMA_X1
 {
     color 0.7 0.08 0.38
-    size 64
-    secondarySize 72
+    size 60
+    secondarySize 64
     chance 0.3
 }
 
 flickerlight ANCIENTALIENSPLASMA_X2
 {
     color 0.6 0.07 0.34
-    size 80
-    secondarySize 88
+    size 68
+    secondarySize 72
     chance 0.3
 }
 
 flickerlight ANCIENTALIENSPLASMA_X3
 {
     color 0.5 0.06 0.29
-    size 96
-    secondarySize 104
+    size 76
+    secondarySize 80
     chance 0.3
 }
 
 flickerlight ANCIENTALIENSPLASMA_X4
 {
     color 0.3 0.04 0.18
-    size 112
-    secondarySize 120
+    size 84
+    secondarySize 88
     chance 0.3
 }
 
 flickerlight ANCIENTALIENSPLASMA_X5
 {
     color 0.2 0.03 0.16
-    size 128
-    secondarySize 136
+    size 92
+    secondarySize 96
     chance 0.3
 }
 
@@ -1085,9 +1085,9 @@ object SD20x6A10
 // Explosive Barrel
 object SD20x7A2
 {
-    frame AABLR { light ROCKET_X1 }
-    frame AABLS { light ROCKET_X2 }
-    frame AABLT { light ROCKET_X3 }
+    frame SLXPB { light ROCKET_X1 }
+    frame SLXPC { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
 }
 
 // Small white torch
@@ -1217,9 +1217,9 @@ object SD20x7A13
 // Explosive Barrel
 object SunlustExplosiveBarrel
 {
-    frame SLXPC { light ROCKET_X1 }
-    frame SLXPD { light ROCKET_X2 }
-    frame SLXPE { light ROCKET_X3 }
+    frame SLXPB { light ROCKET_X1 }
+    frame SLXPC { light ROCKET_X2 }
+    frame BEXPE { light ROCKET_X3 }
 }
 
 // --------------------------

@@ -538,7 +538,7 @@ Actor LArachnotron : Arachnotron
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
     Raise:
-        TNT1 A 0 A_KillChildren
+        BSPI P 0 A_KillChildren
         Goto Super::Raise
     Crush:
         TNT1 A 0 A_KillMaster
@@ -566,7 +566,7 @@ Actor LFatso : Fatso
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
     Raise:
-        TNT1 A 0 A_KillChildren
+        FATT R 0 A_KillChildren
         Goto Super::Raise
     Crush:
         TNT1 A 0 A_KillMaster
@@ -595,7 +595,7 @@ Actor LBaronOfHell : BaronOfHell
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
     Raise:
-        TNT1 A 0 A_KillChildren
+        BOSS O 0 A_KillChildren
         Goto Super::Raise
     Crush:
         TNT1 A 0 A_KillMaster
@@ -6060,6 +6060,8 @@ Actor ValiantSuperMancubus : LFatso
         AAAI NOPQRS 6
         AAAI T -1 A_KillMaster
         Stop
+      Raise:
+        Stop
   }
 }
 
@@ -6152,6 +6154,8 @@ Actor ValiantCybruiser : LBaronOfHell 25079
             AAAL OPQR 6 Bright
             AAAL S -1 A_KillMaster
             Stop
+        Raise:
+            Stop
     }
 }
 
@@ -6196,7 +6200,8 @@ Actor ValiantArachnotron : LArachnotron
             AAAN M -1 A_KillMaster
             Stop
         Raise:
-            AAAM PONMLKJ 5
+            AAAM P 5 A_KillChildren
+            AAAM ONMLKJ 5
             Goto See+1
     }
 }
@@ -7383,7 +7388,8 @@ Actor AAA19 : LFatso
         AABG T -1 A_KillMaster
         Stop
      Raise:
-        AABG RQPONMLK 5
+        AABG R 5 A_KillChildren
+        AABG QPONMLK 5
         Goto See
     }
 }
@@ -7422,7 +7428,8 @@ Actor AAA120 : LArachnotron
         AABH P -1 A_KillMaster
         Stop
     Raise:
-        AABH PONMLKJ 5
+        AABH P 5 A_KillChildren
+        AABH ONMLKJ 5
         Goto See+1
     }
 }

@@ -51,6 +51,13 @@ Actor LexiconRealGibs : RealGibs
     +NOTAUTOAIMED
     +NOTIMEFREEZE
     +NOTONAUTOMAP
+    States
+    {
+    Spawn:
+        POL5 A 0
+        POL5 A 0 A_ChangeFlag("FRIENDLY", TRUE)
+        Goto Super::Spawn
+    }
 }
 
 // Monster Spawners

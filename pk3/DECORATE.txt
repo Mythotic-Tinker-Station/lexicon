@@ -33,6 +33,26 @@ Actor LexiconMonsterSpawner
     }
 }
 
+Actor LexiconRealGibs : RealGibs
+{
+    DamageFactor 0.0
+    Health 1
+    +NOPAIN
+    +NOBLOOD
+    +DONTBLAST
+    +DONTMORPH
+    +ISMONSTER
+    +SHOOTABLE
+    +NOICEDEATH
+    +NORADIUSDMG
+    +NOTELEOTHER
+    +NEVERRESPAWN
+    +NONSHOOTABLE
+    +NOTAUTOAIMED
+    +NOTIMEFREEZE
+    +NOTONAUTOMAP
+}
+
 // Monster Spawners
 Actor LexiconZombieManSpawner : LexiconMonsterSpawner replaces ZombieMan
 {
@@ -510,6 +530,16 @@ Actor LArachnotron : Arachnotron
         "####" "#" 5 A_GenericFreezeDeath
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
+    Raise:
+        TNT1 A 0 A_KillChildren
+        Goto Super::Raise
+    Crush:
+        TNT1 A 0 A_KillMaster
+        TNT1 A 0 A_JumpIf(CallACS("Lexicon_Crush_Flags") == 1, 2)
+        TNT1 A 0 A_SpawnItemEx("RealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
+        TNT1 A -1 A_SpawnItemEx("LexiconRealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
     }
 }
 
@@ -528,6 +558,16 @@ Actor LFatso : Fatso
         "####" "#" 5 A_GenericFreezeDeath
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
+    Raise:
+        TNT1 A 0 A_KillChildren
+        Goto Super::Raise
+    Crush:
+        TNT1 A 0 A_KillMaster
+        TNT1 A 0 A_JumpIf(CallACS("Lexicon_Crush_Flags") == 1, 2)
+        TNT1 A 0 A_SpawnItemEx("RealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
+        TNT1 A -1 A_SpawnItemEx("LexiconRealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
     }
 }
 
@@ -547,6 +587,16 @@ Actor LBaronOfHell : BaronOfHell
         "####" "#" 5 A_GenericFreezeDeath
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
+    Raise:
+        TNT1 A 0 A_KillChildren
+        Goto Super::Raise
+    Crush:
+        TNT1 A 0 A_KillMaster
+        TNT1 A 0 A_JumpIf(CallACS("Lexicon_Crush_Flags") == 1, 2)
+        TNT1 A 0 A_SpawnItemEx("RealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
+        TNT1 A -1 A_SpawnItemEx("LexiconRealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_SETMASTER|SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
     }
 }
 
@@ -565,6 +615,10 @@ Actor LSpiderMastermind : SpiderMastermind
         "####" "#" 5 A_GenericFreezeDeath
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
+    Crush:
+        TNT1 A 0 A_KillMaster
+        TNT1 A 0 A_SpawnItemEx("RealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
     }
 }
 
@@ -585,6 +639,10 @@ Actor LCyberdemon : Cyberdemon
         "####" "#" 5 A_GenericFreezeDeath
         "####" "#" 0 A_KillMaster
         Goto Super::GenericFreezeDeath+1
+    Crush:
+        TNT1 A 0 A_KillMaster
+        TNT1 A 0 A_SpawnItemEx("RealGibs", 0, 0, 0, 0, 0, 0, 0, SXF_NOCHECKPOSITION|SXF_USEBLOODCOLOR)
+        Stop
     }
 }
 

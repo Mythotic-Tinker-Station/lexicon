@@ -68,3 +68,15 @@ script "Lexicon_Replacer" (void)
 
     SetResultValue(currentMapset);
 }
+
+script "Lexicon_Crush_Flags" (void)
+{
+    if (GetCVar("compat_corpsegibs"))
+    {
+        SetResultValue(1);
+    }
+    else
+    {
+        SetResultValue(0);
+    }
+}

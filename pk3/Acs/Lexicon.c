@@ -45,7 +45,7 @@ strict namespace
 		{ "Khorus's Speedy Shit",	        "KSS01"	        }, // 12
 		{ "Circle of Caina",		        "COC01"	        }, // 13
 		{ "Forest Swords",			        "FSW01"	        }, // 14
-		{ "Doom Core Trilogy",		        "DC01"	        }, // 15
+		{ "Doom Core Trilogy",		        "DCOR01"	    }, // 15
 		{ "Maps of Chaos",	                "MOC01"	        }, // 16
 		{ "Doom2 The Way ID Did",	        "WID01"         }, // 17
 		{ "Estranged",				        "EST01"         }, // 18

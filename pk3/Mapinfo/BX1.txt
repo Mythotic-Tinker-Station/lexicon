@@ -1,17 +1,16 @@
 
 
-map BX101 lookup "Back to Saturn X Radio Report"
+map BTSX01 lookup "Back to Saturn X Radio Report"
 {
 	titlepatch = "BX1LV00"
-	next = "BX102"
-	secretnext = "BX102"
+	next = "BTSX02"
+	secretnext = "BTSX02"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX101"
-	InterMusic = "D_BX133"
+	music = "D_BTSX01"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
-	
 	par = 0
 	nojump
 	nocrouch
@@ -19,16 +18,16 @@ map BX101 lookup "Back to Saturn X Radio Report"
 	
 }
 
-map BX102 lookup "Postal Blowfish"
+map BTSX02 lookup "Postal Blowfish"
 {
 	titlepatch = "BX1LV01"
-	next = "BX103"
-	secretnext = "BX103"
+	next = "BTSX03"
+	secretnext = "BTSX03"
 	sky1 = "BX1SKY1"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
-	music = "D_BX102"
-	InterMusic = "D_BX134"
+	music = "D_BTSX02"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	
 	par = 0
@@ -38,16 +37,16 @@ map BX102 lookup "Postal Blowfish"
 	
 }
 
-map BX103 lookup "The Room Taking Shape"
+map BTSX03 lookup "The Room Taking Shape"
 {
 	titlepatch = "BX1LV02"
-	next = "BX104"
-	secretnext = "BX104"
+	next = "BTSX04"
+	secretnext = "BTSX04"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX103"
-	InterMusic = "D_BX134"
+	music = "D_BTSX03"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -57,16 +56,16 @@ map BX103 lookup "The Room Taking Shape"
 	
 }
 
-map BX104 lookup "A Good Flying Bird"
+map BTSX04 lookup "A Good Flying Bird"
 {
 	titlepatch = "BX1LV03"
-	next = "BX105"
-	secretnext = "BX105"
+	next = "BTSX05"
+	secretnext = "BTSX05"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX104"
-	InterMusic = "D_BX134"
+	music = "D_BTSX04"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -76,16 +75,16 @@ map BX104 lookup "A Good Flying Bird"
 	
 }
 
-map BX105 lookup "Total Exposure"
+map BTSX05 lookup "Total Exposure"
 {
 	titlepatch = "BX1LV04"
-	next = "BX106"
-	secretnext = "BX106"
+	next = "BTSX06"
+	secretnext = "BTSX06"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX105"
-	InterMusic = "D_BX134"
+	music = "D_BTSX05"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -95,17 +94,17 @@ map BX105 lookup "Total Exposure"
 	
 }
 
-map BX106 lookup "Mix Up The Satellite"
+map BTSX06 lookup "Mix Up The Satellite"
 {
 	titlepatch = "BX1LV05"
-	next = "BX107"
-	secretnext = "BX107"
+	next = "BTSX07"
+	secretnext = "BTSX07"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
 	sucktime = 1
-	music = "D_BX106"
-	InterMusic = "D_BX134"
+	music = "D_BTSX06"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -115,17 +114,17 @@ map BX106 lookup "Mix Up The Satellite"
 	
 }
 
-map BX107 lookup "Metal Mothers"
+map BTSX07 lookup "Metal Mothers"
 {
 	titlepatch = "BX1LV06"
-	next = "BX108"
-	secretnext = "BX108"
+	next = "BTSX08"
+	secretnext = "BTSX08"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
 	map07special
-	music = "D_BX107"
-	InterMusic = "D_BX134"
+	music = "D_BTSX07"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -135,16 +134,16 @@ map BX107 lookup "Metal Mothers"
 	
 }
 
-map BX108 lookup "Get Out Of My Stations I"
+map BTSX08 lookup "Get Out Of My Stations I"
 {
 	titlepatch = "BX1LV07"
-	next = "BX109"
-	secretnext = "BX109"
+	next = "BTSX09"
+	secretnext = "BTSX09"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX108"
-	InterMusic = "D_BX134"
+	music = "D_BTSX08"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -154,16 +153,16 @@ map BX108 lookup "Get Out Of My Stations I"
 	
 }
 
-map BX109 lookup "Some Drilling Implied"
+map BTSX09 lookup "Some Drilling Implied"
 {
 	titlepatch = "BX1LV08"
-	next = "BX110"
-	secretnext = "BX110"
+	next = "BTSX10"
+	secretnext = "BTSX10"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
 	music = "$MUSIC_IN_CIT"
-	InterMusic = "D_BX134"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -173,16 +172,16 @@ map BX109 lookup "Some Drilling Implied"
 	
 }
 
-map BX110 lookup "A Proud And Booming Industry"
+map BTSX10 lookup "A Proud And Booming Industry"
 {
 	titlepatch = "BX1LV09"
-	next = "BX111"
-	secretnext = "BX111"
+	next = "BTSX11"
+	secretnext = "BTSX11"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX110"
-	InterMusic = "D_BX134"
+	music = "D_BTSX10"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -192,16 +191,16 @@ map BX110 lookup "A Proud And Booming Industry"
 	
 }
 
-map BX111 lookup "The Colossus Crawls West"
+map BTSX11 lookup "The Colossus Crawls West"
 {
 	titlepatch = "BX1LV10"
-	next = "BX112"
-	secretnext = "BX112"
+	next = "BTSX12"
+	secretnext = "BTSX12"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX111"
-	InterMusic = "D_BX134"
+	music = "D_BTSX11"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -211,16 +210,16 @@ map BX111 lookup "The Colossus Crawls West"
 	
 }
 
-map BX112 lookup "Underground Initiations"
+map BTSX12 lookup "Underground Initiations"
 {
 	titlepatch = "BX1LV11"
-	next = "BX113"
-	secretnext = "BX113"
+	next = "BTSX13"
+	secretnext = "BTSX13"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX112"
-	InterMusic = "D_BX134"
+	music = "D_BTSX12"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -230,16 +229,16 @@ map BX112 lookup "Underground Initiations"
 	
 }
 
-map BX113 lookup "I'll Replace You With Machines"
+map BTSX13 lookup "I'll Replace You With Machines"
 {
 	titlepatch = "BX1LV12"
-	next = "BX114"
-	secretnext = "BX114"
+	next = "BTSX14"
+	secretnext = "BTSX14"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX113"
-	InterMusic = "D_BX134"
+	music = "D_BTSX13"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -249,16 +248,16 @@ map BX113 lookup "I'll Replace You With Machines"
 	
 }
 
-map BX114 lookup "Big Chief Chinese Restaurant"
+map BTSX14 lookup "Big Chief Chinese Restaurant"
 {
 	titlepatch = "BX1LV13"
-	next = "BX115"
-	secretnext = "BX115"
+	next = "BTSX15"
+	secretnext = "BTSX15"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX114"
-	InterMusic = "D_BX134"
+	music = "D_BTSX14"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -268,16 +267,16 @@ map BX114 lookup "Big Chief Chinese Restaurant"
 	
 }
 
-map BX115 lookup "Tricyclic Looper"
+map BTSX15 lookup "Tricyclic Looper"
 {
 	titlepatch = "BX1LV14"
-	next = "BX116"
-	secretnext = "BX131"
+	next = "BTSX16"
+	secretnext = "BTSX31"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX115"
-	InterMusic = "D_BX134"
+	music = "D_BTSX15"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -287,16 +286,16 @@ map BX115 lookup "Tricyclic Looper"
 	
 }
 
-map BX116 lookup "Get Out Of My Stations II"
+map BTSX16 lookup "Get Out Of My Stations II"
 {
 	titlepatch = "BX1LV15"
-	next = "BX117"
-	secretnext = "BX117"
+	next = "BTSX17"
+	secretnext = "BTSX17"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX116"
-	InterMusic = "D_BX134"
+	music = "D_BTSX16"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -306,16 +305,16 @@ map BX116 lookup "Get Out Of My Stations II"
 	
 }
 
-map BX117 lookup "Navigating Flood Regions"
+map BTSX17 lookup "Navigating Flood Regions"
 {
 	titlepatch = "BX1LV16"
-	next = "BX118"
-	secretnext = "BX118"
+	next = "BTSX18"
+	secretnext = "BTSX18"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX117"
-	InterMusic = "D_BX134"
+	music = "D_BTSX17"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -325,16 +324,16 @@ map BX117 lookup "Navigating Flood Regions"
 	
 }
 
-map BX118 lookup "Cyclone Utilities (Remember Your Birthday)"
+map BTSX18 lookup "Cyclone Utilities (Remember Your Birthday)"
 {
 	titlepatch = "BX1LV17"
-	next = "BX119"
-	secretnext = "BX119"
+	next = "BTSX19"
+	secretnext = "BTSX19"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX118"
-	InterMusic = "D_BX134"
+	music = "D_BTSX18"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -344,16 +343,16 @@ map BX118 lookup "Cyclone Utilities (Remember Your Birthday)"
 	
 }
 
-map BX119 lookup "U.S. Mustard Company"
+map BTSX19 lookup "Bingo Pool Hall Of Blood"
 {
 	titlepatch = "BX1LV18"
-	next = "BX120"
-	secretnext = "BX120"
+	next = "BTSX20"
+	secretnext = "BTSX20"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX119"
-	InterMusic = "D_BX134"
+	music = "D_BTSX19"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -363,16 +362,16 @@ map BX119 lookup "U.S. Mustard Company"
 	
 }
 
-map BX120 lookup "Failed Experiments and Trashed Aircraft"
+map BTSX20 lookup "U.S. Mustard Company"
 {
 	titlepatch = "BX1LV19"
-	next = "BX121"
-	secretnext = "BX121"
+	next = "BTSX21"
+	secretnext = "BTSX21"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX120"
-	InterMusic = "D_BX134"
+	music = "D_BTSX20"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -382,16 +381,16 @@ map BX120 lookup "Failed Experiments and Trashed Aircraft"
 	
 }
 
-map BX121 lookup "Gonna Never Have To Die"
+map BTSX21 lookup "Failed Experiments and Trashed Aircraft"
 {
 	titlepatch = "BX1LV20"
-	next = "BX122"
-	secretnext = "BX122"
+	next = "BTSX22"
+	secretnext = "BTSX22"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX121"
-	InterMusic = "D_BX134"
+	music = "D_BTSX21"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -401,16 +400,16 @@ map BX121 lookup "Gonna Never Have To Die"
 	
 }
 
-map BX122 lookup "Get Out Of My Stations III"
+map BTSX22 lookup "Gonna Never Have To Die"
 {
 	titlepatch = "BX1LV21"
-	next = "BX123"
-	secretnext = "BX123"
+	next = "BTSX23"
+	secretnext = "BTSX23"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX122"
-	InterMusic = "D_BX134"
+	music = "D_BTSX22"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -420,16 +419,16 @@ map BX122 lookup "Get Out Of My Stations III"
 	
 }
 
-map BX123 lookup "Tough Skin River"
+map BTSX23 lookup "Get Out Of My Stations III"
 {
 	titlepatch = "BX1LV22"
-	next = "BX124"
-	secretnext = "BX124"
+	next = "BTSX24"
+	secretnext = "BTSX24"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX123"
-	InterMusic = "D_BX134"
+	music = "D_BTSX23"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
@@ -439,36 +438,64 @@ map BX123 lookup "Tough Skin River"
 	
 }
 
-map BX124 lookup "That's it."
+map BTSX24 lookup "Tough Skin River"
 {
-//NO TITLEPATCH
+	titlepatch = "BX1LV23"
+	next = "BTSX25"
+	secretnext = "BTSX25"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX24"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1337
+	par = 0
+	nojump
+	nocrouch	
+}
+
+map BTSX25 lookup "The Unsinkable Fats Domino"
+{
+	titlepatch = "BX1LV24"
 	next = "VR"
 	secretnext = "VR"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX124"
-	InterMusic = "D_BX135"
+	music = "D_BTSX25"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1337
 	par = 0
 	nojump
-	nocrouch
-	
-	
-	
+	nocrouch	
 }
 
-
-map BX131 lookup "The Hard Way"
+map BTSX31 lookup "Optical Hopscotch"
 {
 	titlepatch = "BX1LV30"
-	next = "BX116"
-	secretnext = "BX132"
+	next = "BTSX16"
+	secretnext = "BTSX32"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "D_BX131"
-	InterMusic = "D_BX134"
+	music = "D_BTSX31"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+}
+
+map BTSX32 lookup "The Hard Way"
+{
+	titlepatch = "BX1LV31"
+	next = "BTSX16"
+	secretnext = "BTSX16"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX32"
+	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump

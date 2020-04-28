@@ -73,7 +73,7 @@ strict namespace
         { "Nothing",                        "----"          }, 		// 0
         { "Hell on Earth",                  "MAP01"         }, 		// 1
         { "Hell Revealed",                  "HR01"          }, 		// 2
-        { "Hell Revealed 2",                "HR201"         }, 		// 3
+        { "Hell Revealed 2",                "HR2_01"        }, 		// 3
         { "Kamasutra",                      "KS01"          }, 		// 4
         { "Shai'tans Luck",                 "SL20"          }, 		// 5
         { "Speed Of Doom",                  "SOD01"         }, 		// 6

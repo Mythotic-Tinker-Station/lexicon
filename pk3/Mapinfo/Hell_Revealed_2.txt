@@ -1,7 +1,7 @@
-map HR201 "Ignition"
+map HR2_01 "Ignition"
 	{
 	titlepatch = "HR2TP00"
-	next = "HR202"
+	next = "HR2_02"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -11,10 +11,10 @@ map HR201 "Ignition"
 	nojump
 	}
 	
-map HR202 "High Voltage"
+map HR2_02 "High Voltage"
 	{
 	titlepatch = "HR2TP01"
-	next = "HR203"
+	next = "HR2_03"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -24,10 +24,10 @@ map HR202 "High Voltage"
 	nojump
 	}
 	
-map HR203 "Shackled"
+map HR2_03 "Shackled"
 	{
 	titlepatch = "HR2TP02"
-	next = "HR204"
+	next = "HR2_04"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -37,10 +37,10 @@ map HR203 "Shackled"
 	nojump
 	}
 	
-map HR204 "Reluctant Pain"
+map HR2_04 "Reluctant Pain"
 	{
 	titlepatch = "HR2TP03"
-	next = "HR205"
+	next = "HR2_05"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -50,10 +50,10 @@ map HR204 "Reluctant Pain"
 	nojump
 	}
 	
-map HR205 "Insatanity"
+map HR2_05 "Insatanity"
 	{
 	titlepatch = "HR2TP04"
-	next = "HR206"
+	next = "HR2_06"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -63,10 +63,10 @@ map HR205 "Insatanity"
 	nojump
 	}
 	
-map HR206 "Revival"
+map HR2_06 "Revival"
 	{
 	titlepatch = "HR2TP05"
-	next = "HR207"
+	next = "HR2_07"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -76,10 +76,10 @@ map HR206 "Revival"
 	nojump
 	}
 	
-map HR207 "Not That Simple II"
+map HR2_07 "Not That Simple II"
 	{
 	titlepatch = "HR2TP06"
-	next = "HR208"
+	next = "HR2_08"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -90,10 +90,10 @@ map HR207 "Not That Simple II"
 	nojump
 	}
 	
-map HR208 "Ballistics"
+map HR2_08 "Ballistics"
 	{
 	titlepatch = "HR2TP07"
-	next = "HR209"
+	next = "HR2_09"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -103,10 +103,10 @@ map HR208 "Ballistics"
 	nojump
 	}
 	
-map HR209 "The Siege II"
+map HR2_09 "The Siege II"
 	{
 	titlepatch = "HR2TP08"
-	next = "HR210"
+	next = "HR2_10"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -116,10 +116,10 @@ map HR209 "The Siege II"
 	nojump
 	}
 	
-map HR210 "Base Blaze"
+map HR2_10 "Base Blaze"
 	{
 	titlepatch = "HR2TP09"
-	next = "HR211"
+	next = "HR2_11"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -129,10 +129,10 @@ map HR210 "Base Blaze"
 	nojump
 	}
 	
-map HR211 "Raw Hatred"
+map HR2_11 "Raw Hatred"
 	{
 	titlepatch = "HR2TP10"
-	next = "HR212"
+	next = "HR2_12"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -142,10 +142,10 @@ map HR211 "Raw Hatred"
 	nojump
 	}
 	
-map HR212 "Anti Static"
+map HR2_12 "Anti Static"
 	{
 	titlepatch = "HR2TP11"
-	next = "HR213"
+	next = "HR2_13"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -155,10 +155,10 @@ map HR212 "Anti Static"
 	nojump
 	}
 	
-map HR213 "Hardcore"
+map HR2_13 "Hardcore"
 	{
 	titlepatch = "HR2TP12"
-	next = "HR214"
+	next = "HR2_14"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -168,10 +168,10 @@ map HR213 "Hardcore"
 	nojump
 	}
 	
-map HR214 "Metal Meltdown"
+map HR2_14 "Metal Meltdown"
 	{
 	titlepatch = "HR2TP13"
-	next = "HR215"
+	next = "HR2_15"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -181,24 +181,24 @@ map HR214 "Metal Meltdown"
 	nojump
 	}
 	
-map HR215 "The Path II"
+map HR2_15 "The Path II"
 	{
 	titlepatch = "HR2TP14"
-	next = "HR216"
+	next = "HR2_16"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
-	secretnext = "HR231"
+	secretnext = "HR2_31"
 	music = "d_hr215"
 	sky1 = "HR2RSKY2"
 	nocrouch
 	nojump
 	}
 	
-map HR216 "The Chapel of Black Granite"
+map HR2_16 "The Chapel of Black Granite"
 	{
 	titlepatch = "HR2TP15"
-	next = "HR217"
+	next = "HR2_17"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -208,10 +208,10 @@ map HR216 "The Chapel of Black Granite"
 	nojump
 	}
 	
-map HR217 "An Eye for an Eye"
+map HR2_17 "An Eye for an Eye"
 	{
 	titlepatch = "HR2TP16"
-	next = "HR218"
+	next = "HR2_18"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -221,10 +221,10 @@ map HR217 "An Eye for an Eye"
 	nojump
 	}
 	
-map HR218 "Excess Meat"
+map HR2_18 "Excess Meat"
 	{
 	titlepatch = "HR2TP17"
-	next = "HR219"
+	next = "HR2_19"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -234,10 +234,10 @@ map HR218 "Excess Meat"
 	nojump
 	}
 	
-map HR219 "Mind Trap"
+map HR2_19 "Mind Trap"
 	{
 	titlepatch = "HR2TP18"
-	next = "HR220"
+	next = "HR2_20"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -247,10 +247,10 @@ map HR219 "Mind Trap"
 	nojump
 	}
 	
-map HR220 "Fear of the Dark"
+map HR2_20 "Fear of the Dark"
 	{
 	titlepatch = "HR2TP19"
-	next = "HR221"
+	next = "HR2_21"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -260,10 +260,10 @@ map HR220 "Fear of the Dark"
 	nojump
 	}
 	
-map HR221 "Conflux"
+map HR2_21 "Conflux"
 	{
 	titlepatch = "HR2TP20"
-	next = "HR222"
+	next = "HR2_22"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -273,10 +273,10 @@ map HR221 "Conflux"
 	nojump
 	}
 	
-map HR222 "Sewer Slaughter"
+map HR2_22 "Sewer Slaughter"
 	{
 	titlepatch = "HR2TP21"
-	next = "HR223"
+	next = "HR2_23"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -286,10 +286,10 @@ map HR222 "Sewer Slaughter"
 	nojump
 	}
 	
-map HR223 "When the Heavens Fall"
+map HR2_23 "When the Heavens Fall"
 	{
 	titlepatch = "HR2TP22"
-	next = "HR224"
+	next = "HR2_24"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -299,10 +299,10 @@ map HR223 "When the Heavens Fall"
 	nojump
 	}
 	
-map HR224 "The Inmost Dens III"
+map HR2_24 "The Inmost Dens III"
 	{
 	titlepatch = "HR2TP23"
-	next = "HR225"
+	next = "HR2_25"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -312,10 +312,10 @@ map HR224 "The Inmost Dens III"
 	nojump
 	}
 	
-map HR225 "The End is Nigh"
+map HR2_25 "The End is Nigh"
 	{
 	titlepatch = "HR2TP24"
-	next = "HR226"
+	next = "HR2_26"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -325,10 +325,10 @@ map HR225 "The End is Nigh"
 	nojump
 	}
 	
-map HR226 "Dis 2000"
+map HR2_26 "Dis 2000"
 	{
 	titlepatch = "HR2TP25"
-	next = "HR227"
+	next = "HR2_27"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -338,10 +338,10 @@ map HR226 "Dis 2000"
 	nojump
 	}
 	
-map HR227 "Resistance Remains"
+map HR2_27 "Resistance Remains"
 	{
 	titlepatch = "HR2TP26"
-	next = "HR228"
+	next = "HR2_28"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -351,10 +351,10 @@ map HR227 "Resistance Remains"
 	nojump
 	}
 	
-map HR228 "Beyond the Sea"
+map HR2_28 "Beyond the Sea"
 	{
 	titlepatch = "HR2TP27"
-	next = "HR229"
+	next = "HR2_29"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -364,10 +364,10 @@ map HR228 "Beyond the Sea"
 	nojump
 	}
 	
-map HR229 "Hell's Cauldron"
+map HR2_29 "Hell's Cauldron"
 	{
 	titlepatch = "HR2TP28"
-	next = "HR230"
+	next = "HR2_30"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
@@ -377,7 +377,7 @@ map HR229 "Hell's Cauldron"
 	nojump
 	}
 	
-map HR230 "Source Control"
+map HR2_30 "Source Control"
 	{
 	titlepatch = "HR2TP29"
 	next = "VR"
@@ -391,24 +391,24 @@ map HR230 "Source Control"
     SuckTime = 1337
 	}
 	
-map HR231 "The Descent II"
+map HR2_31 "The Descent II"
 	{
 	titlepatch = "HR2TP30"
-	next = "HR216"
+	next = "HR2_16"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"
-	secretnext = "HR232"
+	secretnext = "HR2_32"
 	music = "d_hr231"
 	sky1 = "HR2RSKY3"
 	nocrouch
 	nojump
 	}
 	
-map HR232 "Playground"
+map HR2_32 "Playground"
 	{
 	titlepatch = "HR2TP31"
-	next = "HR216"
+	next = "HR2_16"
 	enterpic = "HR2INT"
 	exitpic = "HR2INT"
 	intermusic = "D_HR2INT"

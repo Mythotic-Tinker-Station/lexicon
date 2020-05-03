@@ -6,9 +6,8 @@
 strict namespace
 {
 	#if 1
-		#include "gui.c"
+		#include "lex_gui.c"
 	#endif
-
 }
 
 

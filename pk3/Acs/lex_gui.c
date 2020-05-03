@@ -218,11 +218,7 @@ function void guiInit(int w, int h)
 	gui.h_half = (gui.h/2.0);
 	gui.blocks = GetCVar("screenblocks");
 
-	SetHudSize(w, h, false);
-
-    guiObjectsClear();
-
-    guiCursorInit();
+	SetHudSize(w, h, true);
 }
 
 
@@ -239,15 +235,13 @@ function void guiCursorInit()
 
 function void guiCursorRun()
 {
-
-
 	// player input
 	cursor.posadd.x = fixed(getPlayerInput(-1, INPUT_YAW));
 	cursor.posadd.y = fixed(getPlayerInput(-1, INPUT_PITCH));
 	cursor.bflags = getPlayerInput(-1, INPUT_BUTTONS);
 
-	cursor.poscalc.x = -fixed(int(cursor.posadd.x / (fixed(getCVar("doomopoly_cursor_xsens")*65535))));
-	cursor.poscalc.y = -fixed(int(cursor.posadd.y / (fixed(getCVar("doomopoly_cursor_ysens")*65535))));
+	cursor.poscalc.x = -fixed(int(cursor.posadd.x / (fixed(getCVar("lexicon_cursor_xsens")*65535))));
+	cursor.poscalc.y = -fixed(int(cursor.posadd.y / (fixed(getCVar("lexicon_cursor_ysens")*65535))));
 
 	// set position
 	if(cursor.posadd.x != 0.0) { cursor.pos.x -= cursor.poscalc.x; }
@@ -258,7 +252,6 @@ function void guiCursorRun()
     if(cursor.pos.y < 0.0) 		{ cursor.pos.y = 0.0; }
     if(cursor.pos.x > gui.w) 	{ cursor.pos.x = gui.w; }
     if(cursor.pos.y > gui.h) 	{ cursor.pos.y = gui.h; }
-
 
 	// if mouse1 is pressed
 	if(cursor.bflags & BT_ATTACK)
@@ -273,10 +266,10 @@ function void guiCursorRun()
 
 	//render
 	setFont("CURSORFONT");
-	guiPrintString(cursor.pos.x + GUI_XALIGN_LEFT, cursor.pos.y + GUI_YALIGN_TOP, GetCVarString("doomopoly_cursor_color"), "a");
+	guiPrintString(cursor.pos.x + GUI_XALIGN_LEFT, cursor.pos.y + GUI_YALIGN_TOP, GetCVarString("lexicon_cursor_color"), "a");
 
 	// render shadow
-	if((bool)getCVar("doomopoly_cursor_shadow") == true)
+	if((bool)getCVar("lexicon_cursor_shadow") == true)
 	{
 		setFont("CURSOR_S");
 		guiPrintString(cursor.pos.x + GUI_XALIGN_LEFT, cursor.pos.y + GUI_YALIGN_TOP, "White", "a");
@@ -948,6 +941,8 @@ script "CL_GUI" enter clientside
 
 	// setup gui
 	guiInit(0, 0);
+    guiObjectsClear();
+    guiCursorInit();
 
 	while(1)
 	{
@@ -957,13 +952,6 @@ script "CL_GUI" enter clientside
         // run all gui objects
         guiObjectsRun();
 
-		// gui state(what menu we are currently in, what should the gui be doing, ect)
-		switch(gui.screen)
-		{
-            case 0:
-            break;
-		}
-
 		// reset hud ID counter
 		gui.nextid = 0;
 		gui.objcount = 0;
@@ -972,20 +960,4 @@ script "CL_GUI" enter clientside
 	}
 }
 
-script "SV_GUI" open
-{
-    int waiting = 0;
-    bool run = true;
 
-    while(run)
-    {
-        delay(1);
-    }
-    gui.screen = 0;
-    ACS_NamedExecuteAlways("CL_SYNC_STATE", 0, 0);
-}
-
-script "CL_SYNC_STATE" (int state) clientside
-{
-	//gamestate = state;
-}

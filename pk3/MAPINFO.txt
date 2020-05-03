@@ -4,7 +4,7 @@ GameInfo
 {
 }
 
-episode VR
+episode HUB
 	{
 	name = "The Sentinel's Lexicon"
 	key = "1"
@@ -16,7 +16,7 @@ episode MAP01
 	key = "3"
 	}
 
-map VR "Inside the Lexicon"
+map HUB "Inside the Lexicon"
 	{
         music = "HUBMUS"
         levelnum = 99

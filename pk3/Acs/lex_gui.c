@@ -936,6 +936,8 @@ function int guiPrintKey(fixed x, fixed y, str color, int msg)
 ////////////////////////////////////////////////////////
 script "CL_GUI" enter clientside
 {
+	if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+
 	// client check
 	if(!clientCheck()) { terminate; }
 

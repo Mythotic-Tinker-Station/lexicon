@@ -313,8 +313,8 @@ function int guiObjectCreate()
 	gui.objects[index].text 						= "a";
     gui.objects[index].text_checked 				= "a";
 	gui.objects[index].text_type 					= GUI_TEXTTYPE_STRING;
-	gui.objects[index].text_font 					= "BIGFONT";
-    gui.objects[index].text_font_checked 			= "BIGFONT";
+	gui.objects[index].text_font 					= "CLEANDOOMBIG";
+    gui.objects[index].text_font_checked 			= "CLEANDOOMBIG";
     gui.objects[index].textpos2.x					= 0.0;
 	gui.objects[index].textpos2.y					= 0.0;
 	gui.objects[index].textoffset2.x				= 0.0;
@@ -324,8 +324,8 @@ function int guiObjectCreate()
 	gui.objects[index].text2 						= "a";
     gui.objects[index].text_checked2 				= "a";
 	gui.objects[index].text_type2 					= GUI_TEXTTYPE_STRING;
-	gui.objects[index].text_font2 					= "BIGFONT";
-    gui.objects[index].text_font_checked2 			= "BIGFONT";
+	gui.objects[index].text_font2 					= "CLEANDOOMBIG";
+    gui.objects[index].text_font_checked2 			= "CLEANDOOMBIG";
 	gui.objects[index].hoverable					= false;
 	gui.objects[index].clickable					= false;
 	gui.objects[index].checkable					= false;
@@ -946,6 +946,8 @@ script "CL_GUI" enter clientside
     guiObjectsClear();
     guiCursorInit();
 
+	int state = 0;
+
 	while(1)
 	{
 		// run cursor
@@ -953,6 +955,15 @@ script "CL_GUI" enter clientside
 
         // run all gui objects
         guiObjectsRun();
+
+		switch(state)
+		{
+			case 0:
+				guiBuildSettingsScreen();
+				state = 1;
+				break;
+		}
+
 
 		// reset hud ID counter
 		gui.nextid = 0;

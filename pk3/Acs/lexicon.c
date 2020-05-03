@@ -7,6 +7,7 @@ strict namespace
 {
 	#if 1
 		#include "lex_gui.c"
+		#include "scn_firsttime.c"
 	#endif
 }
 

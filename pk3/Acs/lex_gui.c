@@ -191,7 +191,7 @@ struct _gui gui;                                // gui
 
 
 ////////////////////////////////////////////////////////
-// GUI
+// Helper Functions
 ////////////////////////////////////////////////////////
 
 function void nullFunc(int i)
@@ -205,6 +205,7 @@ function bool clientCheck()
     if(IsNetworkGame()) { if(playerNumber() != consolePlayerNumber()) { return false; } }
 	return true;
 }
+
 
 // setup screen size and some variables
 function void guiInit(int w, int h)
@@ -404,7 +405,40 @@ function void guiObjectsDisable()
 	}
 }
 
+/////////////////////////////////
+// move entire object pool
+/////////////////////////////////
+function int guiMove(fixed x, fixed y)
+{
+	fixed x1h;
+	fixed x2h;
+	fixed y1h;
+	fixed y2h;
+	for(int i = 0; i < GUI_MAX_OBJECTS; i++)
+	{
+		if(!gui.objects[i].free)
+		{
+			gui.objects[i].pos.x1 += x;
+			gui.objects[i].pos.x2 += x;
+			gui.objects[i].pos.y1 += y;
+			gui.objects[i].pos.y2 += y;
 
+			if(gui.objects[i].pos.x1 > x1h) { x1h = gui.objects[i].pos.x1; }
+			if(gui.objects[i].pos.x2 > x2h) { x2h = gui.objects[i].pos.x2; }
+			if(gui.objects[i].pos.y1 > y1h) { y1h = gui.objects[i].pos.y1; }
+			if(gui.objects[i].pos.y2 > y2h) { y2h = gui.objects[i].pos.y2; }
+		}
+	}
+	if(x1h >= gui.w) { return 1; }
+	if(x2h <= 0.0) { return 2; }
+	if(y1h >= gui.w) { return 3; }
+	if(y2h <= 0.0) { return 4; }
+	return 0;
+}
+
+/////////////////////////////////
+// run the system
+/////////////////////////////////
 function void guiObjectsRun(void)
 {
     // go through the object pool
@@ -955,15 +989,6 @@ script "CL_GUI" enter clientside
 
         // run all gui objects
         guiObjectsRun();
-
-		switch(state)
-		{
-			case 0:
-				guiBuildSettingsScreen();
-				state = 1;
-				break;
-		}
-
 
 		// reset hud ID counter
 		gui.nextid = 0;

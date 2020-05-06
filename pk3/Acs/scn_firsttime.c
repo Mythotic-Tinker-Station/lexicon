@@ -1,7 +1,7 @@
 
 struct _scn_firsttime
 {
-    int lbl_settings;
+    int lbl_title;
     int lbl_cursorcolor;
     int btn_cursorcolor1;
     int btn_cursorcolor2;
@@ -30,23 +30,25 @@ struct _scn_firsttime
     int btn_dontshow;
     int lbl_notes;
     int btn_confirmfirst;
+	bool movein;
+	bool confirmed;
 };
 
 struct _scn_firsttime scn_firsttime;
 
 
 // build the list of rules that the server has enabled
-function void guiBuildSettingsScreen(void)
+function void guiBuildSettingsScene(void)
 {
     // settings label
-	scn_firsttime.lbl_settings = guiObjectCreate();
-	gui.objects[scn_firsttime.lbl_settings].pos.x1 = gui.w_half;
-	gui.objects[scn_firsttime.lbl_settings].pos.y1 = gui.h_half - 256.0 - 32.0;
-	gui.objects[scn_firsttime.lbl_settings].pos.x2 = gui.objects[scn_firsttime.lbl_settings].pos.x1;
-	gui.objects[scn_firsttime.lbl_settings].pos.y2 = gui.objects[scn_firsttime.lbl_settings].pos.y1;
-    gui.objects[scn_firsttime.lbl_settings].text_font = "CLEANDOOMBIG";
-	gui.objects[scn_firsttime.lbl_settings].text = "First Time Setup";
-	gui.objects[scn_firsttime.lbl_settings].render_text = true;
+	scn_firsttime.lbl_title = guiObjectCreate();
+	gui.objects[scn_firsttime.lbl_title].pos.x1 = gui.w_half;
+	gui.objects[scn_firsttime.lbl_title].pos.y1 = gui.h_half - 256.0 - 32.0;
+	gui.objects[scn_firsttime.lbl_title].pos.x2 = gui.objects[scn_firsttime.lbl_title].pos.x1;
+	gui.objects[scn_firsttime.lbl_title].pos.y2 = gui.objects[scn_firsttime.lbl_title].pos.y1;
+    gui.objects[scn_firsttime.lbl_title].text_font = "SONICFONTHD";
+	gui.objects[scn_firsttime.lbl_title].text = "First Time Setup";
+	gui.objects[scn_firsttime.lbl_title].render_text = true;
 
     // cursor color label
 	scn_firsttime.lbl_cursorcolor = guiObjectCreate();
@@ -54,7 +56,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_cursorcolor].pos.y1 = gui.h_half - 160.0;
 	gui.objects[scn_firsttime.lbl_cursorcolor].pos.x2 = gui.objects[scn_firsttime.lbl_cursorcolor].pos.x1;
 	gui.objects[scn_firsttime.lbl_cursorcolor].pos.y2 = gui.objects[scn_firsttime.lbl_cursorcolor].pos.y1;
-    gui.objects[scn_firsttime.lbl_cursorcolor].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.lbl_cursorcolor].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_cursorcolor].text = "Cursor Color:";
     gui.objects[scn_firsttime.lbl_cursorcolor].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorcolor].render_text = true;
@@ -327,7 +329,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_cursorshadow].pos.y1 = gui.h_half - 112.0;
 	gui.objects[scn_firsttime.lbl_cursorshadow].pos.x2 = gui.objects[scn_firsttime.lbl_cursorshadow].pos.x1;
 	gui.objects[scn_firsttime.lbl_cursorshadow].pos.y2 = gui.objects[scn_firsttime.lbl_cursorshadow].pos.y1;
-    gui.objects[scn_firsttime.lbl_cursorshadow].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.lbl_cursorshadow].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_cursorshadow].text = "Cursor Shadow:";
     gui.objects[scn_firsttime.lbl_cursorshadow].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorshadow].render_text = true;
@@ -338,10 +340,10 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.btn_cursorshadow].pos.y1 = gui.h_half - 112.0 - 16.0;
 	gui.objects[scn_firsttime.btn_cursorshadow].pos.x2 = gui.objects[scn_firsttime.btn_cursorshadow].pos.x1 + 32.0;
 	gui.objects[scn_firsttime.btn_cursorshadow].pos.y2 = gui.objects[scn_firsttime.btn_cursorshadow].pos.y1 + 32.0;
-    gui.objects[scn_firsttime.btn_cursorshadow].text_font = "PAN_32";
-	gui.objects[scn_firsttime.btn_cursorshadow].text = "a";
-    gui.objects[scn_firsttime.btn_cursorshadow].text_font_checked = "PAN_32C";
-	gui.objects[scn_firsttime.btn_cursorshadow].text_checked = "a";
+    gui.objects[scn_firsttime.btn_cursorshadow].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.btn_cursorshadow].text = "\c[White]H";
+    gui.objects[scn_firsttime.btn_cursorshadow].text_font_checked = "PANELFONT";
+	gui.objects[scn_firsttime.btn_cursorshadow].text_checked = "\c[Cyan]K";
     gui.objects[scn_firsttime.btn_cursorshadow].textalign.x = GUI_XALIGN_LEFT;
     gui.objects[scn_firsttime.btn_cursorshadow].textalign.y = GUI_YALIGN_TOP;
     gui.objects[scn_firsttime.btn_cursorshadow].clickable = true;
@@ -356,7 +358,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_cursorxsens].pos.y1 = gui.h_half - 64.0;
 	gui.objects[scn_firsttime.lbl_cursorxsens].pos.x2 = gui.objects[scn_firsttime.lbl_cursorxsens].pos.x1;
 	gui.objects[scn_firsttime.lbl_cursorxsens].pos.y2 = gui.objects[scn_firsttime.lbl_cursorxsens].pos.y1;
-    gui.objects[scn_firsttime.lbl_cursorxsens].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.lbl_cursorxsens].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_cursorxsens].text = "Cursor X Sens:";
     gui.objects[scn_firsttime.lbl_cursorxsens].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorxsens].render_text = true;
@@ -368,8 +370,8 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 = gui.h_half - 64.0 - 16.0;
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.x2 = gui.objects[scn_firsttime.sld_cursorxsens].pos.x1 + 16.0;
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.y2 = gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 + 24.0;
-    gui.objects[scn_firsttime.sld_cursorxsens].text_font = "SLIDER";
-	gui.objects[scn_firsttime.sld_cursorxsens].text = "a";
+    gui.objects[scn_firsttime.sld_cursorxsens].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.sld_cursorxsens].text = "\c[White]M";
     gui.objects[scn_firsttime.sld_cursorxsens].textalign.y = GUI_YALIGN_TOP;
 	gui.objects[scn_firsttime.sld_cursorxsens].render_text = true;
     gui.objects[scn_firsttime.sld_cursorxsens].draggable = true;
@@ -387,8 +389,8 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.img_cursorxsens].pos.y1 = gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 + 4.0;
 	gui.objects[scn_firsttime.img_cursorxsens].pos.x2 = gui.objects[scn_firsttime.img_cursorxsens].pos.x1 + 255.0;
 	gui.objects[scn_firsttime.img_cursorxsens].pos.y2 = gui.objects[scn_firsttime.img_cursorxsens].pos.y1 + 16.0;
-    gui.objects[scn_firsttime.img_cursorxsens].text_font = "bar";
-	gui.objects[scn_firsttime.img_cursorxsens].text = "a";
+    gui.objects[scn_firsttime.img_cursorxsens].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.img_cursorxsens].text = "\c[White]N";
     gui.objects[scn_firsttime.img_cursorxsens].textalign.x = GUI_XALIGN_LEFT;
     gui.objects[scn_firsttime.img_cursorxsens].textalign.y = GUI_YALIGN_TOP;
 	gui.objects[scn_firsttime.img_cursorxsens].render_text = true;
@@ -411,7 +413,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_cursorysens].pos.y1 = gui.h_half - 16.0;
 	gui.objects[scn_firsttime.lbl_cursorysens].pos.x2 = gui.objects[scn_firsttime.lbl_cursorysens].pos.x1;
 	gui.objects[scn_firsttime.lbl_cursorysens].pos.y2 = gui.objects[scn_firsttime.lbl_cursorysens].pos.y1;
-    gui.objects[scn_firsttime.lbl_cursorysens].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.lbl_cursorysens].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_cursorysens].text = "Cursor Y Sens:";
     gui.objects[scn_firsttime.lbl_cursorysens].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorysens].render_text = true;
@@ -423,8 +425,8 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.sld_cursorysens].pos.y1 = gui.h_half - 16.0 - 16.0;
 	gui.objects[scn_firsttime.sld_cursorysens].pos.x2 = gui.objects[scn_firsttime.sld_cursorysens].pos.x1 + 16.0;
 	gui.objects[scn_firsttime.sld_cursorysens].pos.y2 = gui.objects[scn_firsttime.sld_cursorysens].pos.y1 + 24.0;
-    gui.objects[scn_firsttime.sld_cursorysens].text_font = "SLIDER";
-	gui.objects[scn_firsttime.sld_cursorysens].text = "a";
+    gui.objects[scn_firsttime.sld_cursorysens].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.sld_cursorysens].text = "\c[White]M";
     gui.objects[scn_firsttime.sld_cursorysens].textalign.y = GUI_YALIGN_TOP;
 	gui.objects[scn_firsttime.sld_cursorysens].render_text = true;
     gui.objects[scn_firsttime.sld_cursorysens].draggable = true;
@@ -441,8 +443,8 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.img_cursorysens].pos.y1 = gui.objects[scn_firsttime.sld_cursorysens].pos.y1 + 4.0;
 	gui.objects[scn_firsttime.img_cursorysens].pos.x2 = gui.objects[scn_firsttime.img_cursorysens].pos.x1 + 255.0;
 	gui.objects[scn_firsttime.img_cursorysens].pos.y2 = gui.objects[scn_firsttime.img_cursorysens].pos.y1 + 16.0;
-    gui.objects[scn_firsttime.img_cursorysens].text_font = "bar";
-	gui.objects[scn_firsttime.img_cursorysens].text = "a";
+    gui.objects[scn_firsttime.img_cursorysens].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.img_cursorysens].text = "\c[White]N";
     gui.objects[scn_firsttime.img_cursorysens].textalign.x = GUI_XALIGN_LEFT;
     gui.objects[scn_firsttime.img_cursorysens].textalign.y = GUI_YALIGN_TOP;
 	gui.objects[scn_firsttime.img_cursorysens].render_text = true;
@@ -463,7 +465,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_dontshow].pos.y1 = gui.h_half + 32.0;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.x2 = gui.objects[scn_firsttime.lbl_dontshow].pos.x1;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.y2 = gui.objects[scn_firsttime.lbl_dontshow].pos.y1;
-    gui.objects[scn_firsttime.lbl_dontshow].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.lbl_dontshow].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_dontshow].text = "Show at startup:";
     gui.objects[scn_firsttime.lbl_dontshow].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_dontshow].render_text = true;
@@ -474,10 +476,10 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.btn_dontshow].pos.y1 = gui.h_half + 32.0 - 16.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.x2 = gui.objects[scn_firsttime.btn_dontshow].pos.x1 + 32.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.y2 = gui.objects[scn_firsttime.btn_dontshow].pos.y1 + 32.0;
-    gui.objects[scn_firsttime.btn_dontshow].text_font = "PAN_32";
-	gui.objects[scn_firsttime.btn_dontshow].text = "a";
-    gui.objects[scn_firsttime.btn_dontshow].text_font_checked = "PAN_32C";
-	gui.objects[scn_firsttime.btn_dontshow].text_checked = "a";
+    gui.objects[scn_firsttime.btn_dontshow].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.btn_dontshow].text = "\c[White]H";
+    gui.objects[scn_firsttime.btn_dontshow].text_font_checked = "PANELFONT";
+	gui.objects[scn_firsttime.btn_dontshow].text_checked = "\c[Cyan]K";
     gui.objects[scn_firsttime.btn_dontshow].textalign.x = GUI_XALIGN_LEFT;
     gui.objects[scn_firsttime.btn_dontshow].textalign.y = GUI_YALIGN_TOP;
     gui.objects[scn_firsttime.btn_dontshow].clickable = true;
@@ -491,7 +493,7 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.lbl_notes].pos.y1 = gui.h_half + 128.0;
 	gui.objects[scn_firsttime.lbl_notes].pos.x2 = gui.objects[scn_firsttime.lbl_notes].pos.x1;
 	gui.objects[scn_firsttime.lbl_notes].pos.y2 = gui.objects[scn_firsttime.lbl_notes].pos.y1;
-    gui.objects[scn_firsttime.lbl_notes].text_font = "CLEANDOOMSMALL";
+    gui.objects[scn_firsttime.lbl_notes].text_font = "SONICFONT";
 	gui.objects[scn_firsttime.lbl_notes].text =   "\c[Green]Note\c[White]: These settings will be used every time you launch lexicon.\n\n\c[Green]Note\c[White]: Cursor sensitivity will not effect your zandronum mouse sensitivity.\n          \c[White]Cursor sens is divided by your current mouse sens, so lower is faster.\n\n\c[Green]Note\c[White]: You can change these settings later in the lexicon menu.";
     gui.objects[scn_firsttime.lbl_notes].textalign.x = GUI_XALIGN_LEFT;
 	gui.objects[scn_firsttime.lbl_notes].render_text = true;
@@ -502,16 +504,14 @@ function void guiBuildSettingsScreen(void)
 	gui.objects[scn_firsttime.btn_confirmfirst].pos.y1 = gui.h_half + 192.0;
 	gui.objects[scn_firsttime.btn_confirmfirst].pos.x2 = gui.objects[scn_firsttime.btn_confirmfirst].pos.x1 + 128.0;
 	gui.objects[scn_firsttime.btn_confirmfirst].pos.y2 = gui.objects[scn_firsttime.btn_confirmfirst].pos.y1 + 64.0;
-    gui.objects[scn_firsttime.btn_confirmfirst].text_font = "CLEANDOOMBIG";
+    gui.objects[scn_firsttime.btn_confirmfirst].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.btn_confirmfirst].text = "Confirm";
 	gui.objects[scn_firsttime.btn_confirmfirst].textalign.x = GUI_XALIGN_CENTER;
-    gui.objects[scn_firsttime.btn_confirmfirst].text_font2 = "BTN";
-	gui.objects[scn_firsttime.btn_confirmfirst].text2 = "a";
+    gui.objects[scn_firsttime.btn_confirmfirst].text_font2 = "PANELFONT";
+	gui.objects[scn_firsttime.btn_confirmfirst].text2 = "\c[White]a";
     gui.objects[scn_firsttime.btn_confirmfirst].render_text2 = true;
     gui.objects[scn_firsttime.btn_confirmfirst].clickable = true;
-    //gui.objects[scn_firsttime.btn_confirmfirst].func = guiChangeState;
-
-    // timer
+    gui.objects[scn_firsttime.btn_confirmfirst].func = guiConfirm;
 }
 
 // change cursor sens
@@ -571,3 +571,51 @@ function void guiChangeCursorColor(int id)
     if(scn_firsttime.btn_cursorcolor14 == id) { SetCVarString("lexicon_cursor_color", "Black"); }
     if(scn_firsttime.btn_cursorcolor15 == id) { SetCVarString("lexicon_cursor_color", "Brown"); }
 }
+
+// change cursor shadow
+function void guiConfirm(int id)
+{
+	scn_firsttime.confirmed = true;
+}
+
+script "Scene_FirstTime_Run" enter clientside
+{
+
+	if(!clientCheck()) { terminate; }
+
+	// this must wait a tic to let the gui scripts run first
+	delay(1);
+
+	guiBuildSettingsscene();
+	guiMove(gui.w, 0.0);
+	scn_firsttime.movein = true;
+
+	while(1)
+	{
+		// move into position
+		if(scn_firsttime.movein)
+		{
+			guiMove(-200.0, 0.0);
+			if(gui.objects[scn_firsttime.lbl_title].pos.x1 <= gui.w_half)
+			{
+				fixed d = gui.w_half - gui.objects[scn_firsttime.lbl_title].pos.x1;
+				guiMove(d, 0.0);
+				scn_firsttime.movein = false;
+			}
+		}
+
+		// move out of scene and go to the next scene
+		if(scn_firsttime.confirmed)
+		{
+			if(guiMove(-200.0, 0.0) == 2)
+			{
+				guiObjectsClear();
+				ACS_NamedExecute("Scene_Selection_Run", 0);
+				terminate;
+			}
+		}
+		delay(1);
+	}
+}
+
+

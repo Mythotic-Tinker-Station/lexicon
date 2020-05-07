@@ -259,7 +259,7 @@ map DCOR20 "Core Babylon"
 	music = P_MESSAG
 	intermusic = P_EVIL
 	}
- 
+
 map DCOR21 "Remembered Fear"
 	{
 	titlepatch = "DWILV20"
@@ -800,7 +800,7 @@ map DCOR64 "Deadlock"
 	titlepatch = "DWILV63"
 	nojump
 	nocrouch
-	next = DCOR65
+	next = DCOR48
 	sky1 = 	DCRSKY1
 	exitpic = revinter
 	enterpic = revinter

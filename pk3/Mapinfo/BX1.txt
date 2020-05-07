@@ -14,8 +14,8 @@ map BTSX01 lookup "Back to Saturn X Radio Report"
 	par = 0
 	nojump
 	nocrouch
-	
-	
+
+
 }
 
 map BTSX02 lookup "Postal Blowfish"
@@ -29,12 +29,12 @@ map BTSX02 lookup "Postal Blowfish"
 	music = "D_BTSX02"
 	InterMusic = "D_BTSXIN"
 	sucktime = 1
-	
+
 	par = 0
 	nojump
 	nocrouch
-	
-	
+
+
 }
 
 map BTSX03 lookup "The Room Taking Shape"
@@ -51,9 +51,9 @@ map BTSX03 lookup "The Room Taking Shape"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX04 lookup "A Good Flying Bird"
@@ -70,9 +70,9 @@ map BTSX04 lookup "A Good Flying Bird"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX05 lookup "Total Exposure"
@@ -89,9 +89,9 @@ map BTSX05 lookup "Total Exposure"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX06 lookup "Mix Up The Satellite"
@@ -109,9 +109,9 @@ map BTSX06 lookup "Mix Up The Satellite"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX07 lookup "Metal Mothers"
@@ -129,9 +129,9 @@ map BTSX07 lookup "Metal Mothers"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX08 lookup "Get Out Of My Stations I"
@@ -148,9 +148,9 @@ map BTSX08 lookup "Get Out Of My Stations I"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX09 lookup "Some Drilling Implied"
@@ -161,15 +161,15 @@ map BTSX09 lookup "Some Drilling Implied"
 	ExitPic = "BX1LV33"
 	EnterPic = "BX1LV33"
 	sky1 = "BX1SKY1"
-	music = "$MUSIC_IN_CIT"
+	music = "D_BTSX09"
 	InterMusic = "D_BTSXIN"
 	sucktime = 1
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX10 lookup "A Proud And Booming Industry"
@@ -186,9 +186,9 @@ map BTSX10 lookup "A Proud And Booming Industry"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX11 lookup "The Colossus Crawls West"
@@ -205,9 +205,9 @@ map BTSX11 lookup "The Colossus Crawls West"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX12 lookup "Underground Initiations"
@@ -224,9 +224,9 @@ map BTSX12 lookup "Underground Initiations"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX13 lookup "I'll Replace You With Machines"
@@ -243,9 +243,9 @@ map BTSX13 lookup "I'll Replace You With Machines"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX14 lookup "Big Chief Chinese Restaurant"
@@ -262,9 +262,9 @@ map BTSX14 lookup "Big Chief Chinese Restaurant"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX15 lookup "Tricyclic Looper"
@@ -281,9 +281,9 @@ map BTSX15 lookup "Tricyclic Looper"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX16 lookup "Get Out Of My Stations II"
@@ -300,9 +300,9 @@ map BTSX16 lookup "Get Out Of My Stations II"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX17 lookup "Navigating Flood Regions"
@@ -319,9 +319,9 @@ map BTSX17 lookup "Navigating Flood Regions"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX18 lookup "Cyclone Utilities (Remember Your Birthday)"
@@ -338,9 +338,9 @@ map BTSX18 lookup "Cyclone Utilities (Remember Your Birthday)"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX19 lookup "Bingo Pool Hall Of Blood"
@@ -357,9 +357,9 @@ map BTSX19 lookup "Bingo Pool Hall Of Blood"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX20 lookup "U.S. Mustard Company"
@@ -376,9 +376,9 @@ map BTSX20 lookup "U.S. Mustard Company"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX21 lookup "Failed Experiments and Trashed Aircraft"
@@ -395,9 +395,9 @@ map BTSX21 lookup "Failed Experiments and Trashed Aircraft"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX22 lookup "Gonna Never Have To Die"
@@ -414,9 +414,9 @@ map BTSX22 lookup "Gonna Never Have To Die"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX23 lookup "Get Out Of My Stations III"
@@ -433,9 +433,9 @@ map BTSX23 lookup "Get Out Of My Stations III"
 	par = 0
 	nojump
 	nocrouch
-	
-	
-	
+
+
+
 }
 
 map BTSX24 lookup "Tough Skin River"
@@ -451,7 +451,7 @@ map BTSX24 lookup "Tough Skin River"
 	sucktime = 1337
 	par = 0
 	nojump
-	nocrouch	
+	nocrouch
 }
 
 map BTSX25 lookup "The Unsinkable Fats Domino"
@@ -467,7 +467,7 @@ map BTSX25 lookup "The Unsinkable Fats Domino"
 	sucktime = 1337
 	par = 0
 	nojump
-	nocrouch	
+	nocrouch
 }
 
 map BTSX31 lookup "Optical Hopscotch"

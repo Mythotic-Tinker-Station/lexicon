@@ -582,6 +582,7 @@ script "Scene_FirstTime_Run" enter clientside
 {
 
 	if(!clientCheck()) { terminate; }
+	if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
 
 	// this must wait a tic to let the gui scripts run first
 	delay(1);

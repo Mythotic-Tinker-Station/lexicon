@@ -53,8 +53,8 @@ goto 20
 echo Step 4: REPLACE
 	cd ..
 	del %FileName%.pk3
-	ren %FileName%n.pk3 %FileName%-beta-build-%TAG_NAME%.pk3
+	ren %FileName%n.pk3 %FileName%-beta-build-%GIT_TAG_NAME%.pk3
 	del %MusFileName%.pk3
-	ren %MusFileName%n.pk3 %MusFileName%-beta-build-%TAG_NAME%.pk3
+	ren %MusFileName%n.pk3 %MusFileName%-beta-build-%GIT_TAG_NAME%.pk3
 
 

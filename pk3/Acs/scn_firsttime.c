@@ -587,16 +587,22 @@ script "Scene_FirstTime_Run" enter clientside
 	// this must wait a tic to let the gui scripts run first
 	delay(1);
 
-	guiBuildSettingsscene();
-	guiMove(gui.w, 0.0);
-	scn_firsttime.movein = true;
-
+	if(GetCVar("lexicon_first_run") == 1)
+	{
+		guiBuildSettingsscene();
+		guiMove(gui.w, 0.0);
+		scn_firsttime.movein = true;
+	}
+	else
+	{
+		scn_firsttime.confirmed = true;
+	}
 	while(1)
 	{
 		// move into position
 		if(scn_firsttime.movein)
 		{
-			guiMove(-200.0, 0.0);
+			guiMove(-250.0, 0.0);
 			if(gui.objects[scn_firsttime.lbl_title].pos.x1 <= gui.w_half)
 			{
 				fixed d = gui.w_half - gui.objects[scn_firsttime.lbl_title].pos.x1;
@@ -608,7 +614,7 @@ script "Scene_FirstTime_Run" enter clientside
 		// move out of scene and go to the next scene
 		if(scn_firsttime.confirmed)
 		{
-			if(guiMove(-200.0, 0.0) == 2)
+			if(guiMove(-250.0, 0.0) == 2)
 			{
 				guiObjectsClear();
 				ACS_NamedExecute("Scene_Selection_Run", 0);

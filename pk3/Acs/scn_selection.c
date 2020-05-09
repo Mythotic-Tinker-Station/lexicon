@@ -82,7 +82,7 @@ script "Scene_Selection_Run" (void) clientside
 		// move into position
 		if(scn_selection.movein)
 		{
-			guiMove(-200.0, 0.0);
+			guiMove(-250.0, 0.0);
 			if(gui.objects[scn_selection.lbl_title].pos.x1 <= gui.w_half)
 			{
 				fixed d = gui.w_half - gui.objects[scn_selection.lbl_title].pos.x1;

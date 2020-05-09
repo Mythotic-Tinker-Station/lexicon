@@ -2,6 +2,8 @@
 // Sunlust //
 /////////////
 
+// Explosive Things
+
 Actor SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
 {
   States
@@ -18,6 +20,8 @@ Actor SunlustExplosiveBarrel : ExplosiveBarrel 25051 //2035
     Goto Super::Death+5
   }
 }
+
+// Decor
 
 Actor SunlustTallGreenColumn : TallGreenColumn 25052 //30
 {
@@ -78,6 +82,8 @@ Actor SunlustGreenTorch : GreenTorch 25057 //45
     Loop
   }
 }
+
+// Monsters
 
 Actor SunlustCommanderKeen : CommanderKeen 25058 //72
 {

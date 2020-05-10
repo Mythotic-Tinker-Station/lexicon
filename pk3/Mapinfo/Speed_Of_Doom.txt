@@ -1,7 +1,7 @@
-map SOD01 "First Blood"
+map SOD_01 "First Blood"
 	{
 	titlepatch = "SODTP00"
-	next = "SOD02"
+	next = "SOD_02"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -11,10 +11,10 @@ map SOD01 "First Blood"
 	nojump
 	}
 	
-map SOD02 "Mysterious Cove"
+map SOD_02 "Mysterious Cove"
 	{
 	titlepatch = "SODTP01"
-	next = "SOD03"
+	next = "SOD_03"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -24,10 +24,10 @@ map SOD02 "Mysterious Cove"
 	nojump
 	}
 	
-map SOD03 "Constrained Base"
+map SOD_03 "Constrained Base"
 	{
 	titlepatch = "SODTP02"
-	next = "SOD04"
+	next = "SOD_04"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -37,10 +37,10 @@ map SOD03 "Constrained Base"
 	nojump
 	}
 	
-map SOD04 "Sedgemire"
+map SOD_04 "Sedgemire"
 	{
 	titlepatch = "SODTP03"
-	next = "SOD05"
+	next = "SOD_05"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -50,10 +50,10 @@ map SOD04 "Sedgemire"
 	nojump
 	}
 	
-map SOD05 "Cliffside Siege"
+map SOD_05 "Cliffside Siege"
 	{
 	titlepatch = "SODTP04"
-	next = "SOD06"
+	next = "SOD_06"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -63,10 +63,10 @@ map SOD05 "Cliffside Siege"
 	nojump
 	}
 	
-map SOD06 "Dreamscape"
+map SOD_06 "Dreamscape"
 	{
 	titlepatch = "SODTP05"
-	next = "SOD07"
+	next = "SOD_07"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -76,10 +76,10 @@ map SOD06 "Dreamscape"
 	nojump
 	}
 	
-map SOD07 "Simple Prison-yard"
+map SOD_07 "Simple Prison-yard"
 	{
 	titlepatch = "SODTP06"
-	next = "SOD08"
+	next = "SOD_08"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -90,10 +90,10 @@ map SOD07 "Simple Prison-yard"
 	nojump
 	}
 	
-map SOD08 "Frenetic"
+map SOD_08 "Frenetic"
 	{
 	titlepatch = "SODTP07"
-	next = "SOD09"
+	next = "SOD_09"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -103,10 +103,10 @@ map SOD08 "Frenetic"
 	nojump
 	}
 	
-map SOD09 "Depredation"
+map SOD_09 "Depredation"
 	{
 	titlepatch = "SODTP08"
-	next = "SOD10"
+	next = "SOD_10"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -116,10 +116,10 @@ map SOD09 "Depredation"
 	nojump
 	}
 	
-map SOD10 "Vile Pain"
+map SOD_10 "Vile Pain"
 	{
 	titlepatch = "SODTP09"
-	next = "SOD11"
+	next = "SOD_11"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -129,10 +129,10 @@ map SOD10 "Vile Pain"
 	nojump
 	}
 	
-map SOD11 "Transcension"
+map SOD_11 "Transcension"
 	{
 	titlepatch = "SODTP10"
-	next = "SOD12"
+	next = "SOD_12"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -142,10 +142,10 @@ map SOD11 "Transcension"
 	nojump
 	}
 	
-map SOD12 "The Meat Grinder"
+map SOD_12 "The Meat Grinder"
 	{
 	titlepatch = "SODTP11"
-	next = "SOD13"
+	next = "SOD_13"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -155,10 +155,10 @@ map SOD12 "The Meat Grinder"
 	nojump
 	}
 	
-map SOD13 "Lucifer's Tears"
+map SOD_13 "Lucifer's Tears"
 	{
 	titlepatch = "SODTP12"
-	next = "SOD14"
+	next = "SOD_14"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -168,10 +168,10 @@ map SOD13 "Lucifer's Tears"
 	nojump
 	}
 	
-map SOD14 "Sledge"
+map SOD_14 "Sledge"
 	{
 	titlepatch = "SODTP13"
-	next = "SOD15"
+	next = "SOD_15"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -181,24 +181,24 @@ map SOD14 "Sledge"
 	nojump
 	}
 	
-map SOD15 "Descent to Core"
+map SOD_15 "Descent to Core"
 	{
 	titlepatch = "SODTP14"
-	next = "SOD16"
+	next = "SOD_16"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
-	secretnext = "SOD31"
+	secretnext = "SOD_31"
 	sky1 = "SODRSKY2"
 	music = "d_sod15"
 	nocrouch
 	nojump
 	}
 	
-map SOD16 "The Core"
+map SOD_16 "The Core"
 	{
 	titlepatch = "SODTP15"
-	next = "SOD17"
+	next = "SOD_17"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -208,10 +208,10 @@ map SOD16 "The Core"
 	nojump
 	}
 	
-map SOD17 "The Shrine"
+map SOD_17 "The Shrine"
 	{
 	titlepatch = "SODTP16"
-	next = "SOD18"
+	next = "SOD_18"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -221,10 +221,10 @@ map SOD17 "The Shrine"
 	nojump
 	}
 	
-map SOD18 "Silent Hour"
+map SOD_18 "Silent Hour"
 	{
 	titlepatch = "SODTP17"
-	next = "SOD19"
+	next = "SOD_19"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -234,10 +234,10 @@ map SOD18 "Silent Hour"
 	nojump
 	}
 	
-map SOD19 "Impure Serenity"
+map SOD_19 "Impure Serenity"
 	{
 	titlepatch = "SODTP18"
-	next = "SOD20"
+	next = "SOD_20"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -247,10 +247,10 @@ map SOD19 "Impure Serenity"
 	nojump
 	}
 	
-map SOD20 "The Path to Hell"
+map SOD_20 "The Path to Hell"
 	{
 	titlepatch = "SODTP19"
-	next = "SOD21"
+	next = "SOD_21"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -260,10 +260,10 @@ map SOD20 "The Path to Hell"
 	nojump
 	}
 	
-map SOD21 "Resurrection"
+map SOD_21 "Resurrection"
 	{
 	titlepatch = "SODTP20"
-	next = "SOD22"
+	next = "SOD_22"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -273,10 +273,10 @@ map SOD21 "Resurrection"
 	nojump
 	}
 	
-map SOD22 "Dead Echo"
+map SOD_22 "Dead Echo"
 	{
 	titlepatch = "SODTP21"
-	next = "SOD23"
+	next = "SOD_23"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -286,10 +286,10 @@ map SOD22 "Dead Echo"
 	nojump
 	}
 	
-map SOD23 "Poison Ivy II"
+map SOD_23 "Poison Ivy II"
 	{
 	titlepatch = "SODTP22"
-	next = "SOD24"
+	next = "SOD_24"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -299,10 +299,10 @@ map SOD23 "Poison Ivy II"
 	nojump
 	}
 	
-map SOD24 "Hell's Honeycomb"
+map SOD_24 "Hell's Honeycomb"
 	{
 	titlepatch = "SODTP23"
-	next = "SOD25"
+	next = "SOD_25"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -312,10 +312,10 @@ map SOD24 "Hell's Honeycomb"
 	nojump
 	}
 	
-map SOD25 "Death's Nocturne"
+map SOD_25 "Death's Nocturne"
 	{
 	titlepatch = "SODTP24"
-	next = "SOD26"
+	next = "SOD_26"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -325,10 +325,10 @@ map SOD25 "Death's Nocturne"
 	nojump
 	}
 	
-map SOD26 "Blessed Hellscape"
+map SOD_26 "Blessed Hellscape"
 	{
 	titlepatch = "SODTP25"
-	next = "SOD27"
+	next = "SOD_27"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -338,10 +338,10 @@ map SOD26 "Blessed Hellscape"
 	nojump
 	}
 	
-map SOD27 "Hais Temple"
+map SOD_27 "Hais Temple"
 	{
 	titlepatch = "SODTP26"
-	next = "SOD28"
+	next = "SOD_28"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -351,10 +351,10 @@ map SOD27 "Hais Temple"
 	nojump
 	}
 	
-map SOD28 "Twilight Massacre"
+map SOD_28 "Twilight Massacre"
 	{
 	titlepatch = "SODTP27"
-	next = "SOD29"
+	next = "SOD_29"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -364,10 +364,10 @@ map SOD28 "Twilight Massacre"
 	nojump
 	}
 	
-map SOD29 "The Ruins of Kalnik"
+map SOD_29 "The Ruins of Kalnik"
 	{
 	titlepatch = "SODTP28"
-	next = "SOD30"
+	next = "SOD_30"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -377,10 +377,10 @@ map SOD29 "The Ruins of Kalnik"
 	nojump
 	}
 	
-map SOD30 "Darkness Without End"
+map SOD_30 "Darkness Without End"
 	{
 	titlepatch = "SODTP29"
-	next = "SOD33"
+	next = "SOD_33"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -390,24 +390,24 @@ map SOD30 "Darkness Without End"
 	nojump
 	}
 	
-map SOD31 "1010011010"
+map SOD_31 "1010011010"
 	{
 	titlepatch = "SODTP30"
-	next = "SOD16"
+	next = "SOD_16"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
-	secretnext = "SOD32"
+	secretnext = "SOD_32"
 	sky1 = "SODRSKY3"
 	music = "d_sod31"
 	nocrouch
 	nojump
 	}
 	
-map SOD32 "The Pyramid of Death"
+map SOD_32 "The Pyramid of Death"
 	{
 	titlepatch = "SODTP31"
-	next = "SOD16"
+	next = "SOD_16"
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"
@@ -417,7 +417,7 @@ map SOD32 "The Pyramid of Death"
 	nojump
 	}
 	
-map SOD33 "Descent to Nowhere"
+map SOD_33 "Descent to Nowhere"
 	{
 	titlepatch = "SODTP32"
 	next = "VR"

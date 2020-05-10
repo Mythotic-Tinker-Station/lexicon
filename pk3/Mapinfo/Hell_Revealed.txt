@@ -1,7 +1,7 @@
-map HR01 "Into the Gate"
+map HR1_01 "Into the Gate"
 	{
 	titlepatch = "HRTPX00"
-	next = "HR02"
+	next = "HR1_02"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -11,10 +11,10 @@ map HR01 "Into the Gate"
 	nojump
 	}
 	
-map HR02 "Gateway Lab"
+map HR1_02 "Gateway Lab"
 	{
 	titlepatch = "HRTPX01"
-	next = "HR03"
+	next = "HR1_03"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -24,10 +24,10 @@ map HR02 "Gateway Lab"
 	nojump
 	}
 	
-map HR03 "The Dumpster"
+map HR1_03 "The Dumpster"
 	{
 	titlepatch = "HRTPX02"
-	next = "HR04"
+	next = "HR1_04"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -37,10 +37,10 @@ map HR03 "The Dumpster"
 	nojump
 	}
 	
-map HR04 "The Garden Terminal"
+map HR1_04 "The Garden Terminal"
 	{
 	titlepatch = "HRTPX03"
-	next = "HR05"
+	next = "HR1_05"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -50,10 +50,10 @@ map HR04 "The Garden Terminal"
 	nojump
 	}
 	
-map HR05 "Core Infection"
+map HR1_05 "Core Infection"
 	{
 	titlepatch = "HRTPX04"
-	next = "HR06"
+	next = "HR1_06"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -63,10 +63,10 @@ map HR05 "Core Infection"
 	nojump
 	}
 	
-map HR06 "The Round Crossroads"
+map HR1_06 "The Round Crossroads"
 	{
 	titlepatch = "HRTPX05"
-	next = "HR07"
+	next = "HR1_07"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -76,10 +76,10 @@ map HR06 "The Round Crossroads"
 	nojump
 	}
 	
-map HR07 "Arachnophobia"
+map HR1_07 "Arachnophobia"
 	{
 	titlepatch = "HRTPX06"
-	next = "HR08"
+	next = "HR1_08"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -90,10 +90,10 @@ map HR07 "Arachnophobia"
 	nojump
 	}
 	
-map HR08 "The Jail"
+map HR1_08 "The Jail"
 	{
 	titlepatch = "HRTPX07"
-	next = "HR09"
+	next = "HR1_09"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -103,10 +103,10 @@ map HR08 "The Jail"
 	nojump
 	}
 	
-map HR09 "Knockout"
+map HR1_09 "Knockout"
 	{
 	titlepatch = "HRTPX08"
-	next = "HR10"
+	next = "HR1_10"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -116,10 +116,10 @@ map HR09 "Knockout"
 	nojump
 	}
 	
-map HR10 "Chambers of War"
+map HR1_10 "Chambers of War"
 	{
 	titlepatch = "HRTPX09"
-	next = "HR11"
+	next = "HR1_11"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -129,10 +129,10 @@ map HR10 "Chambers of War"
 	nojump
 	}
 	
-map HR11 "Underground Base"
+map HR1_11 "Underground Base"
 	{
 	titlepatch = "HRTPX10"
-	next = "HR12"
+	next = "HR1_12"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -142,10 +142,10 @@ map HR11 "Underground Base"
 	nojump
 	}
 	
-map HR12 "Great Halls of Fire"
+map HR1_12 "Great Halls of Fire"
 	{
 	titlepatch = "HRTPX11"
-	next = "HR13"
+	next = "HR1_13"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -155,10 +155,10 @@ map HR12 "Great Halls of Fire"
 	nojump
 	}
 	
-map HR13 "Last Look at Eden"
+map HR1_13 "Last Look at Eden"
 	{
 	titlepatch = "HRTPX12"
-	next = "HR14"
+	next = "HR1_14"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -168,10 +168,10 @@ map HR13 "Last Look at Eden"
 	nojump
 	}
 	
-map HR14 "City in the Clouds"
+map HR1_14 "City in the Clouds"
 	{
 	titlepatch = "HRTPX13"
-	next = "HR15"
+	next = "HR1_15"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -181,24 +181,24 @@ map HR14 "City in the Clouds"
 	nojump
 	}
 	
-map HR15 "Gates to Hell"
+map HR1_15 "Gates to Hell"
 	{
 	titlepatch = "HRTPX14"
-	next = "HR16"
+	next = "HR1_16"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
-	secretnext = "HR31"
+	secretnext = "HR1_31"
 	music = "d_hr15"
 	sky1 = "HRRSKY2"
 	nocrouch
 	nojump
 	}
 	
-map HR16 "The Path"
+map HR1_16 "The Path"
 	{
 	titlepatch = "HRTPX15"
-	next = "HR17"
+	next = "HR1_17"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -208,10 +208,10 @@ map HR16 "The Path"
 	nojump
 	}
 	
-map HR17 "The Black Towers"
+map HR1_17 "The Black Towers"
 	{
 	titlepatch = "HRTPX16"
-	next = "HR18"
+	next = "HR1_18"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -221,10 +221,10 @@ map HR17 "The Black Towers"
 	nojump
 	}
 	
-map HR18 "Hard Attack"
+map HR1_18 "Hard Attack"
 	{
 	titlepatch = "HRTPX17"
-	next = "HR19"
+	next = "HR1_19"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -234,10 +234,10 @@ map HR18 "Hard Attack"
 	nojump
 	}
 	
-map HR19 "Everything Dies"
+map HR1_19 "Everything Dies"
 	{
 	titlepatch = "HRTPX18"
-	next = "HR20"
+	next = "HR1_20"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -247,10 +247,10 @@ map HR19 "Everything Dies"
 	nojump
 	}
 	
-map HR20 "Judgement Day"
+map HR1_20 "Judgement Day"
 	{
 	titlepatch = "HRTPX19"
-	next = "HR21"
+	next = "HR1_21"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -260,10 +260,10 @@ map HR20 "Judgement Day"
 	nojump
 	}
 	
-map HR21 "Siege"
+map HR1_21 "Siege"
 	{
 	titlepatch = "HRTPX20"
-	next = "HR22"
+	next = "HR1_22"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -273,10 +273,10 @@ map HR21 "Siege"
 	nojump
 	}
 	
-map HR22 "Resistance is Futile"
+map HR1_22 "Resistance is Futile"
 	{
 	titlepatch = "HRTPX21"
-	next = "HR23"
+	next = "HR1_23"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -286,10 +286,10 @@ map HR22 "Resistance is Futile"
 	nojump
 	}
 	
-map HR23 "Ascending to the Stars"
+map HR1_23 "Ascending to the Stars"
 	{
 	titlepatch = "HRTPX22"
-	next = "HR24"
+	next = "HR1_24"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -299,10 +299,10 @@ map HR23 "Ascending to the Stars"
 	nojump
 	}
 	
-map HR24 "Post Mortem"
+map HR1_24 "Post Mortem"
 	{
 	titlepatch = "HRTPX23"
-	next = "HR25"
+	next = "HR1_25"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -312,10 +312,10 @@ map HR24 "Post Mortem"
 	nojump
 	}
 	
-map HR25 "Dead Progressive"
+map HR1_25 "Dead Progressive"
 	{
 	titlepatch = "HRTPX24"
-	next = "HR26"
+	next = "HR1_26"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -325,10 +325,10 @@ map HR25 "Dead Progressive"
 	nojump
 	}
 	
-map HR26 "Afterlife"
+map HR1_26 "Afterlife"
 	{
 	titlepatch = "HRTPX25"
-	next = "HR27"
+	next = "HR1_27"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -338,10 +338,10 @@ map HR26 "Afterlife"
 	nojump
 	}
 	
-map HR27 "Cyberpunk"
+map HR1_27 "Cyberpunk"
 	{
 	titlepatch = "HRTPX26"
-	next = "HR28"
+	next = "HR1_28"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -351,10 +351,10 @@ map HR27 "Cyberpunk"
 	nojump
 	}
 	
-map HR28 "Top Hell"
+map HR1_28 "Top Hell"
 	{
 	titlepatch = "HRTPX27"
-	next = "HR29"
+	next = "HR1_29"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -364,10 +364,10 @@ map HR28 "Top Hell"
 	nojump
 	}
 	
-map HR29 "Temple of Fear"
+map HR1_29 "Temple of Fear"
 	{
 	titlepatch = "HRTPX28"
-	next = "HR30"
+	next = "HR1_30"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
@@ -377,7 +377,7 @@ map HR29 "Temple of Fear"
 	nojump
 	}
 	
-map HR30 "Hell Revealed"
+map HR1_30 "Hell Revealed"
 	{
 	titlepatch = "HRTPX29"
 	next = "VR"
@@ -391,24 +391,24 @@ map HR30 "Hell Revealed"
     SuckTime = 1337
 	}
 	
-map HR31 "The Descent"
+map HR1_31 "The Descent"
 	{
 	titlepatch = "HRTPX30"
-	next = "HR16"
+	next = "HR1_16"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"
-	secretnext = "HR32"
+	secretnext = "HR1_32"
 	music = "d_hr31"
 	sky1 = "HRRSKY3"
 	nocrouch
 	nojump
 	}
 	
-map HR32 "Mostly Harmful"
+map HR1_32 "Mostly Harmful"
 	{
 	titlepatch = "HRTPX31"
-	next = "HR16"
+	next = "HR1_16"
 	enterpic = "HRINTER"
 	exitpic = "HRINTER"
 	intermusic = "D_HRINT"

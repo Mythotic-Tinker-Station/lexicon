@@ -1,8 +1,8 @@
-map SLU01 "Chasing Suns"
+map LUST01 "Chasing Suns"
 {
 titlepatch = SUNLV00
-next = SLU02
-secretnext = SLU02
+next = LUST02
+secretnext = LUST02
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU01
@@ -13,11 +13,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU02 "Down Through"
+map LUST02 "Down Through"
 {
 titlepatch = SUNLV01
-next = SLU03
-secretnext = SLU03
+next = LUST03
+secretnext = LUST03
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU02
@@ -28,11 +28,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU03 "Forgotten Shrine"
+map LUST03 "Forgotten Shrine"
 {
 titlepatch = SUNLV02
-next = SLU04
-secretnext = SLU04
+next = LUST04
+secretnext = LUST04
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU03
@@ -43,11 +43,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU04 "Sol"
+map LUST04 "Sol"
 {
 titlepatch = SUNLV03
-next = SLU05
-secretnext = SLU05
+next = LUST05
+secretnext = LUST05
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU04
@@ -58,11 +58,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU05 "Gear Up"
+map LUST05 "Gear Up"
 {
 titlepatch = SUNLV04
-next = SLU06
-secretnext = SLU06
+next = LUST06
+secretnext = LUST06
 sky1 = RSKY1, 0
 cluster = 1
 music = D_SLU05
@@ -73,11 +73,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU06 "Neo Gerouru"
+map LUST06 "Neo Gerouru"
 {
 titlepatch = SUNLV05
-next = SLU07
-secretnext = SLU07
+next = LUST07
+secretnext = LUST07
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU06
@@ -88,11 +88,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU07 "Total Enclosure"
+map LUST07 "Total Enclosure"
 {
 titlepatch = SUNLV06
-next = SLU08
-secretnext = SLU08
+next = LUST08
+secretnext = LUST08
 sky1 = SKY1, 0
 cluster = 1
 map07special
@@ -104,11 +104,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU08 "Oneira"
+map LUST08 "Oneira"
 {
 titlepatch = SUNLV07
-next = SLU09
-secretnext = SLU09
+next = LUST09
+secretnext = LUST09
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU08
@@ -119,11 +119,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU09 "Saquasohuh"
+map LUST09 "Saquasohuh"
 {
 titlepatch = SUNLV08
-next = SLU10
-secretnext = SLU10
+next = LUST10
+secretnext = LUST10
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU09
@@ -134,11 +134,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU10 "Maru"
+map LUST10 "Maru"
 {
 titlepatch = SUNLV09
-next = SLU11
-secretnext = SLU11
+next = LUST11
+secretnext = LUST11
 sky1 = SKY1, 0
 cluster = 1
 music = D_SLU10
@@ -149,11 +149,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU11 "Cave Culture"
+map LUST11 "Cave Culture"
 {
 titlepatch = SUNLV10
-next = SLU12
-secretnext = SLU12
+next = LUST12
+secretnext = LUST12
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU11
@@ -164,11 +164,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU12 "Dangeresque"
+map LUST12 "Dangeresque"
 {
 titlepatch = SUNLV11
-next = SLU13
-secretnext = SLU13
+next = LUST13
+secretnext = LUST13
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU12
@@ -179,11 +179,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU13 "Ruins of Skania"
+map LUST13 "Ruins of Skania"
 {
 titlepatch = SUNLV12
-next = SLU14
-secretnext = SLU14
+next = LUST14
+secretnext = LUST14
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU13
@@ -194,11 +194,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU14 "Troglobite"
+map LUST14 "Troglobite"
 {
 titlepatch = SUNLV13
-next = SLU15
-secretnext = SLU15
+next = LUST15
+secretnext = LUST15
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU14
@@ -209,11 +209,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU15 "Strength And Anger"
+map LUST15 "Strength And Anger"
 {
 titlepatch = SUNLV14
-next = SLU16
-secretnext = SLU31
+next = LUST16
+secretnext = LUST31
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU15
@@ -224,11 +224,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU16 "Lost Antiques"
+map LUST16 "Lost Antiques"
 {
 titlepatch = SUNLV15
-next = SLU17
-secretnext = SLU17
+next = LUST17
+secretnext = LUST17
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU16
@@ -239,11 +239,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU17 "The Womb"
+map LUST17 "The Womb"
 {
 titlepatch = SUNLV16
-next = SLU18
-secretnext = SLU18
+next = LUST18
+secretnext = LUST18
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU17
@@ -254,11 +254,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU18 "Mu Cephei"
+map LUST18 "Mu Cephei"
 {
 titlepatch = SUNLV17
-next = SLU19
-secretnext = SLU19
+next = LUST19
+secretnext = LUST19
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU18
@@ -269,11 +269,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU19 "Blood Geometry"
+map LUST19 "Blood Geometry"
 {
 titlepatch = SUNLV18
-next = SLU20
-secretnext = SLU20
+next = LUST20
+secretnext = LUST20
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU19
@@ -284,11 +284,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU20 "Inverti in Darkness"
+map LUST20 "Inverti in Darkness"
 {
 titlepatch = SUNLV19
-next = SLU21
-secretnext = SLU21
+next = LUST21
+secretnext = LUST21
 sky1 = SKY1, 0
 cluster = 2
 music = D_SLU20
@@ -299,11 +299,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU21 "Entering Aquatic Desert"
+map LUST21 "Entering Aquatic Desert"
 {
 titlepatch = SUNLV20
-next = SLU22
-secretnext = SLU22
+next = LUST22
+secretnext = LUST22
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU21
@@ -314,11 +314,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU22 "Black Rabbit"
+map LUST22 "Black Rabbit"
 {
 titlepatch = SUNLV21
-next = SLU23
-secretnext = SLU23
+next = LUST23
+secretnext = LUST23
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU22
@@ -329,11 +329,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU23 "In Flight"
+map LUST23 "In Flight"
 {
 titlepatch = SUNLV22
-next = SLU24
-secretnext = SLU24
+next = LUST24
+secretnext = LUST24
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU23
@@ -344,11 +344,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU24 "Dying On Cue"
+map LUST24 "Dying On Cue"
 {
 titlepatch = SUNLV23
-next = SLU25
-secretnext = SLU25
+next = LUST25
+secretnext = LUST25
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU24
@@ -359,11 +359,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU25 "Proxyon"
+map LUST25 "Proxyon"
 {
 titlepatch = SUNLV24
-next = SLU26
-secretnext = SLU26
+next = LUST26
+secretnext = LUST26
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU25
@@ -374,11 +374,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU26 "Kinetics"
+map LUST26 "Kinetics"
 {
 titlepatch = SUNLV25
-next = SLU27
-secretnext = SLU27
+next = LUST27
+secretnext = LUST27
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU26
@@ -389,11 +389,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU27 "Emerald Spire"
+map LUST27 "Emerald Spire"
 {
 titlepatch = SUNLV26
-next = SLU28
-secretnext = SLU28
+next = LUST28
+secretnext = LUST28
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU27
@@ -404,11 +404,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU28 "Maelstrom"
+map LUST28 "Maelstrom"
 {
 titlepatch = SUNLV27
-next = SLU29
-secretnext = SLU29
+next = LUST29
+secretnext = LUST29
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU28
@@ -419,11 +419,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU29 "Go Fuck Yourself"
+map LUST29 "Go Fuck Yourself"
 {
 titlepatch = SUNLV28
-next = SLU30
-secretnext = SLU30
+next = LUST30
+secretnext = LUST30
 sky1 = SKY1, 0
 cluster = 3
 music = D_SLU29
@@ -434,7 +434,7 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU30 "God Machine"
+map LUST30 "God Machine"
 {
 titlepatch = SUNLV29
 next = "VR"
@@ -451,11 +451,11 @@ intermusic = "D_SLUINT"
 SuckTime = 1337
 }
 
-map SLU31 "Birds of A Feather"
+map LUST31 "Birds of A Feather"
 {
 titlepatch = SUNLV30
-next = SLU32
-secretnext = SLU32
+next = LUST32
+secretnext = LUST32
 sky1 = SUNSKY3, 0
 cluster = 4
 music = D_SLU31
@@ -466,11 +466,11 @@ exitpic = "SUNINT"
 intermusic = "D_SLUINT"
 }
 
-map SLU32 "Postcoitus Doom"
+map LUST32 "Postcoitus Doom"
 {
 titlepatch = SUNLV31
-next = SLU16
-secretnext = SLU16
+next = LUST16
+secretnext = LUST16
 sky1 = SKY1, 0
 cluster = 4
 music = D_SLU32

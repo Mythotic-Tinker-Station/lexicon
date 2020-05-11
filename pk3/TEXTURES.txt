@@ -1,3 +1,4 @@
+/*
 // Texture definitions
 
 // Lexicon
@@ -200,20 +201,6 @@ graphic CN175, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:1
 graphic CN176, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=105:111" FlipY } }
 graphic CN177, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=105:111" FlipY } }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
 Texture DANG666, 512, 512
 {
 	XScale 16.0

@@ -1,15 +1,15 @@
 PANELFONT
 {
-	A PAN_T
-	B PAN_L
-	C PAN_M
-	D PAN_R
-	E PAN_B
+	//A PAN_T
+	//B PAN_L
+	//C PAN_M
+	//D PAN_R
+	//E PAN_B
 	F PAN_16
-	G PAN_24
+	//G PAN_24
 	H PAN_32
 	I PAN_16C
-	J PAN_24C
+	//J PAN_24C
 	K PAN_32C
 	M SLIDER
 	N BAR
@@ -61,22 +61,6 @@ SONICFONT
 	X FONT3_X
 	Y FONT3_Y
 	Z FONT3_Z
-    ( FONT3__2
-    ) FONT3__3
-	, FONT3__5
-	: FONT3__9
-    ! FONT3__A
-    ' FONT3__B
-    < FONT3__C
-    > FONT3__D
-	/ FONT3__E
-    | FONT3__F
-	- FONT3__L
-    . FONT3_PR
-    & FONT3__1
-    ? FONT3__Q
-    # FONT3__P
-    _ FONT3__R
 	NOTRANSLATION 4
 }
 
@@ -118,22 +102,6 @@ SONICFONTHD
 	X FONT5_X
 	Y FONT5_Y
 	Z FONT5_Z
-    ( FONT5__2
-    ) FONT5__3
-	, FONT5__5
-	: FONT5__9
-    ! FONT5__A
-    ' FONT5__B
-    < FONT5__C
-    > FONT5__D
-	/ FONT5__E
-    | FONT5__F
-	- FONT5__L
-    . FONT5_PR
-    & FONT5__1
-    ? FONT5__Q
-    # FONT5__P
-    _ FONT5__R
 	NOTRANSLATION 4
 }
 
@@ -175,21 +143,5 @@ SONICFONTVR
 	X FONT6_X
 	Y FONT6_Y
 	Z FONT6_Z
-    ( FONT6__2
-    ) FONT6__3
-	, FONT6__5
-	: FONT6__9
-    ! FONT6__A
-    ' FONT6__B
-    < FONT6__C
-    > FONT6__D
-	/ FONT6__E
-    | FONT6__F
-	- FONT6__L
-    . FONT6_PR
-    & FONT6__1
-    ? FONT6__Q
-    # FONT6__P
-    _ FONT6__R
 	NOTRANSLATION 4
 }

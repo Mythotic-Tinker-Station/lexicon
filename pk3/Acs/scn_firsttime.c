@@ -520,7 +520,7 @@ function void guiCursorSliderCalc(int id)
     fixed min = gui.objects[scn_firsttime.img_cursorxsens].pos.x1;
     fixed max = gui.objects[scn_firsttime.img_cursorxsens].pos.x2 - 16.0;
     fixed value = gui.objects[id].pos.x1;
-    fixed percent = ((value-min) / (max-min)) * 50.0;
+    fixed percent = ((value-min) / (max-min)) * 20.0;
     gui.objects[id].custom1 = int(percent);
 
     if(id == scn_firsttime.sld_cursorxsens) { SetCVar("lexicon_cursor_xsens", gui.objects[id].custom1 + 5); }

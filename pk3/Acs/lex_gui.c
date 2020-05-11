@@ -241,12 +241,12 @@ function void guiCursorRun()
 	cursor.posadd.y = fixed(getPlayerInput(-1, INPUT_PITCH));
 	cursor.bflags = getPlayerInput(-1, INPUT_BUTTONS);
 
-	cursor.poscalc.x = -fixed(int(cursor.posadd.x / (fixed(getCVar("lexicon_cursor_xsens")*65535))));
-	cursor.poscalc.y = -fixed(int(cursor.posadd.y / (fixed(getCVar("lexicon_cursor_ysens")*65535))));
+	cursor.poscalc.x = -fixed(int(cursor.posadd.x)) + fixed(getCVar("lexicon_cursor_xsens"));
+	cursor.poscalc.y = -fixed(int(cursor.posadd.y)) + fixed(getCVar("lexicon_cursor_ysens"));
 
 	// set position
-	if(cursor.posadd.x != 0.0) { cursor.pos.x -= cursor.poscalc.x; }
-	if(cursor.posadd.y != 0.0) { cursor.pos.y -= cursor.poscalc.y; }
+	if(cursor.posadd.x != 0.0) { cursor.pos.x += cursor.poscalc.x; }
+	if(cursor.posadd.y != 0.0) { cursor.pos.y += cursor.poscalc.y; }
 
 	// bounds
 	if(cursor.pos.x < 0.0) 		{ cursor.pos.x = 0.0; }

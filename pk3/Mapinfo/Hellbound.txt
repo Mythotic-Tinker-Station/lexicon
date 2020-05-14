@@ -1,6 +1,6 @@
-map HLB01 "Apartments"
+map HBND01 "Apartments"
 	{
-	next = "HLB02"
+	next = "HBND02"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV00
 	enterpic = HLBINT
@@ -11,9 +11,9 @@ map HLB01 "Apartments"
 	intermusic = D_HLBINT
 	}
 	
-map HLB02 "Canal road"
+map HBND02 "Canal road"
 	{
-	next = "HLB03"
+	next = "HBND03"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV01
 	enterpic = HLBINT
@@ -24,9 +24,9 @@ map HLB02 "Canal road"
 	intermusic = D_HLBINT
 	}
 	
-map HLB03 "Testing Chambers"
+map HBND03 "Testing Chambers"
 	{
-	next = "HLB04"
+	next = "HBND04"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV02
 	enterpic = HLBINT
@@ -37,9 +37,9 @@ map HLB03 "Testing Chambers"
 	intermusic = D_HLBINT
 	}
 	
-map HLB04 "Processing Plant"
+map HBND04 "Processing Plant"
 	{
-	next = "HLB05"
+	next = "HBND05"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV03
 	enterpic = HLBINT
@@ -50,9 +50,9 @@ map HLB04 "Processing Plant"
 	intermusic = D_HLBINT
 	}
 	
-map HLB05 "Underground"
+map HBND05 "Underground"
 	{
-	next = "HLB06"
+	next = "HBND06"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV04
 	enterpic = HLBINT
@@ -63,9 +63,9 @@ map HLB05 "Underground"
 	intermusic = D_HLBINT
 	}
 	
-map HLB06 "Gateway Lab"
+map HBND06 "Gateway Lab"
 	{
-	next = "HLB07"
+	next = "HBND07"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV05
 	enterpic = HLBINT
@@ -76,9 +76,9 @@ map HLB06 "Gateway Lab"
 	intermusic = D_HLBINT
 	}
 	
-map HLB07 "The Woods"
+map HBND07 "The Woods"
 	{
-	next = "HLB08"
+	next = "HBND08"
 	map07special
 	sky1 = HLBSKY1
 	titlepatch = HLBLV06
@@ -90,9 +90,9 @@ map HLB07 "The Woods"
 	intermusic = D_HLBINT
 	}
 	
-map HLB08 "Military Depo"
+map HBND08 "Military Depo"
 	{
-	next = "HLB09"
+	next = "HBND09"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV07
 	enterpic = HLBINT
@@ -103,9 +103,9 @@ map HLB08 "Military Depo"
 	intermusic = D_HLBINT
 	}
 	
-map HLB09 "Disposal Facility"
+map HBND09 "Disposal Facility"
 	{
-	next = "HLB10"
+	next = "HBND10"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV08
 	enterpic = HLBINT
@@ -116,9 +116,9 @@ map HLB09 "Disposal Facility"
 	intermusic = D_HLBINT
 	}
 	
-map HLB10 "Cistern"
+map HBND10 "Cistern"
 	{
-	next = "HLB11"
+	next = "HBND11"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV09
 	enterpic = HLBINT
@@ -129,9 +129,9 @@ map HLB10 "Cistern"
 	intermusic = D_HLBINT
 	}
 	
-map HLB11 "Venom Canyon"
+map HBND11 "Venom Canyon"
 	{
-	next = "HLB12"
+	next = "HBND12"
 	sky1 = HLBSKY1
 	titlepatch = HLBLV10
 	enterpic = HLBINT
@@ -142,9 +142,9 @@ map HLB11 "Venom Canyon"
 	intermusic = D_HLBINT
 	}
 	
-map HLB12 "Power Station"
+map HBND12 "Power Station"
 	{
-	next = "HLB13"
+	next = "HBND13"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV11
 	enterpic = HLBINT
@@ -155,9 +155,9 @@ map HLB12 "Power Station"
 	intermusic = D_HLBINT
 	}
 	
-map HLB13 "Encrus Station"
+map HBND13 "Encrus Station"
 	{
-	next = "HLB14"
+	next = "HBND14"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV12
 	enterpic = HLBINT
@@ -168,9 +168,9 @@ map HLB13 "Encrus Station"
 	intermusic = D_HLBINT
 	}
 	
-map HLB14 "Doom District"
+map HBND14 "Doom District"
 	{
-	next = "HLB15"
+	next = "HBND15"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV13
 	enterpic = HLBINT
@@ -181,10 +181,10 @@ map HLB14 "Doom District"
 	intermusic = D_HLBINT
 	}
 	
-map HLB15 "The Vault"
+map HBND15 "The Vault"
 	{
-	next = "HLB16"
-	secretnext = "HLB31"
+	next = "HBND16"
+	secretnext = "HBND31"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV14
 	enterpic = HLBINT
@@ -195,9 +195,9 @@ map HLB15 "The Vault"
 	intermusic = D_HLBINT
 	}
 	
-map HLB16 "City Bounds"
+map HBND16 "City Bounds"
 	{
-	next = "HLB17"
+	next = "HBND17"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV15
 	enterpic = HLBINT
@@ -208,9 +208,9 @@ map HLB16 "City Bounds"
 	intermusic = D_HLBINT
 	}
 	
-map HLB17 "Starport"
+map HBND17 "Starport"
 	{
-	next = "HLB18"
+	next = "HBND18"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV16
 	enterpic = HLBINT
@@ -221,9 +221,9 @@ map HLB17 "Starport"
 	intermusic = D_HLBINT
 	}
 	
-map HLB18 "Computer Complex"
+map HBND18 "Computer Complex"
 	{
-	next = "HLB19"
+	next = "HBND19"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV17
 	enterpic = HLBINT
@@ -234,9 +234,9 @@ map HLB18 "Computer Complex"
 	intermusic = D_HLBINT
 	}
 	
-map HLB19 "Frontier Lab"
+map HBND19 "Frontier Lab"
 	{
-	next = "HLB20"
+	next = "HBND20"
 	sky1 = HLBSKY2
 	titlepatch = HLBLV18
 	enterpic = HLBINT
@@ -247,9 +247,9 @@ map HLB19 "Frontier Lab"
 	intermusic = D_HLBINT
 	}
 	
-map HLB20 "Borderworld"
+map HBND20 "Borderworld"
 	{
-	next = "HLB21"
+	next = "HBND21"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV19
 	enterpic = HLBINT
@@ -260,9 +260,9 @@ map HLB20 "Borderworld"
 	intermusic = D_HLBINT
 	}
 	
-map HLB21 "The Gates of Hell"
+map HBND21 "The Gates of Hell"
 	{
-	next = "HLB22"
+	next = "HBND22"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV20
 	enterpic = HLBINT
@@ -273,9 +273,9 @@ map HLB21 "The Gates of Hell"
 	intermusic = D_HLBINT
 	}
 	
-map HLB22 "Stygian Depths"
+map HBND22 "Stygian Depths"
 	{
-	next = "HLB23"
+	next = "HBND23"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV21
 	enterpic = HLBINT
@@ -286,9 +286,9 @@ map HLB22 "Stygian Depths"
 	intermusic = D_HLBINT
 	}
 	
-map HLB23 "Fortress of Ages"
+map HBND23 "Fortress of Ages"
 	{
-	next = "HLB24"
+	next = "HBND24"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV22
 	enterpic = HLBINT
@@ -299,9 +299,9 @@ map HLB23 "Fortress of Ages"
 	intermusic = D_HLBINT
 	}
 	
-map HLB24 "City of Pandemonium"
+map HBND24 "City of Pandemonium"
 	{
-	next = "HLB25"
+	next = "HBND25"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV23
 	enterpic = HLBINT
@@ -312,9 +312,9 @@ map HLB24 "City of Pandemonium"
 	intermusic = D_HLBINT
 	}
 	
-map HLB25 "Bastion of Void"
+map HBND25 "Bastion of Void"
 	{
-	next = "HLB26"
+	next = "HBND26"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV24
 	enterpic = HLBINT
@@ -325,9 +325,9 @@ map HLB25 "Bastion of Void"
 	intermusic = D_HLBINT
 	}
 	
-map HLB26 "Forbidden Archives"
+map HBND26 "Forbidden Archives"
 	{
-	next = "HLB27"
+	next = "HBND27"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV25
 	enterpic = HLBINT
@@ -338,9 +338,9 @@ map HLB26 "Forbidden Archives"
 	intermusic = D_HLBINT
 	}
 	
-map HLB27 "Crimson Abyss"
+map HBND27 "Crimson Abyss"
 	{
-	next = "HLB28"
+	next = "HBND28"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV26
 	enterpic = HLBINT
@@ -351,9 +351,9 @@ map HLB27 "Crimson Abyss"
 	intermusic = D_HLBINT
 	}
 	
-map HLB28 "The Black Citadel"
+map HBND28 "The Black Citadel"
 	{
-	next = "HLB29"
+	next = "HBND29"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV27
 	enterpic = HLBINT
@@ -364,9 +364,9 @@ map HLB28 "The Black Citadel"
 	intermusic = D_HLBINT
 	}
 	
-map HLB29 "Ascension"
+map HBND29 "Ascension"
 	{
-	next = "HLB30"
+	next = "HBND30"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV28
 	enterpic = HLBINT
@@ -377,7 +377,7 @@ map HLB29 "Ascension"
 	intermusic = D_HLBINT
 	}
 	
-map HLB30 "Worlds Collide"
+map HBND30 "Worlds Collide"
 	{
 	next = "VR"
 	sky1 = HLBSKY3
@@ -391,10 +391,10 @@ map HLB30 "Worlds Collide"
     SuckTime = 1337
 	}
 	
-map HLB31 "Diabolus ex Machina"
+map HBND31 "Diabolus ex Machina"
 	{
-	next = "HLB16"
-	secretnext = "HLB32"
+	next = "HBND16"
+	secretnext = "HBND32"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV30
 	enterpic = HLBINT
@@ -405,9 +405,9 @@ map HLB31 "Diabolus ex Machina"
 	intermusic = D_HLBINT
 	}
 	
-map HLB32 "Spear of Destiny"
+map HBND32 "Spear of Destiny"
 	{
-	next = "HLB16"
+	next = "HBND16"
 	sky1 = HLBSKY3
 	titlepatch = HLBLV31
 	enterpic = HLBINT

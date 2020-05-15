@@ -45,15 +45,17 @@ struct _scn_firsttime scn_firsttime;
 // build the list of rules that the server has enabled
 function void guiBuildSettingsScene(void)
 {
-    // settings label
+    // title label
 	scn_firsttime.lbl_title = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_title].pos.x1 = gui.w_half;
 	gui.objects[scn_firsttime.lbl_title].pos.y1 = gui.h_half - 256.0 - 32.0;
 	gui.objects[scn_firsttime.lbl_title].pos.x2 = gui.objects[scn_firsttime.lbl_title].pos.x1;
 	gui.objects[scn_firsttime.lbl_title].pos.y2 = gui.objects[scn_firsttime.lbl_title].pos.y1;
-    gui.objects[scn_firsttime.lbl_title].text_font = "SONICFONTHD";
+    gui.objects[scn_firsttime.lbl_title].text_font = "SONICFONTUD";
 	gui.objects[scn_firsttime.lbl_title].text = "First Time Setup";
 	gui.objects[scn_firsttime.lbl_title].render_text = true;
+
+
 
     // cursor color label
 	scn_firsttime.lbl_cursorcolor = guiObjectCreate();
@@ -65,7 +67,6 @@ function void guiBuildSettingsScene(void)
 	gui.objects[scn_firsttime.lbl_cursorcolor].text = "Cursor Color:";
     gui.objects[scn_firsttime.lbl_cursorcolor].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorcolor].render_text = true;
-
 
     // cursor color 1 (Red)
     scn_firsttime.btn_cursorcolor1 = guiObjectCreate();

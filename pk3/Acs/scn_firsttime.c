@@ -28,6 +28,9 @@ struct _scn_firsttime
     int sld_cursorysens;
     int img_cursorysens;
 	int num_cursorysens;
+	int lbl_vote;
+	int btn_voteauto;
+	int btn_votemanual;
     int lbl_dontshow;
     int btn_dontshow;
     int lbl_notes;
@@ -413,7 +416,7 @@ function void guiBuildSettingsScene(void)
     fixed max = gui.objects[scn_firsttime.img_cursorxsens].pos.x2 - 16.0;
     fixed value = fixed(GetCVar("lexicon_cursor_xsens"));
     fixed length = max-min;
-    fixed vnorm = ((value-5.0) / (50.0));
+    fixed vnorm = ((value-5.0) / (50.0 + 5.0));
     fixed pos = (vnorm*length) + min;
 
     gui.objects[scn_firsttime.sld_cursorxsens].pos.x1 = fixed(int(pos));
@@ -476,16 +479,80 @@ function void guiBuildSettingsScene(void)
     fixed max2 = gui.objects[scn_firsttime.img_cursorysens].pos.x2 - 16.0;
     fixed value2 = fixed(GetCVar("lexicon_cursor_ysens"));
     fixed length2 = max2-min2;
-    fixed vnorm2 = ((value2-5.0) / (50.0));
+    fixed vnorm2 = ((value2-5.0) / (50.0 + 5.0));
     fixed pos2 = (vnorm2*length2) + min2;
 
     gui.objects[scn_firsttime.sld_cursorysens].pos.x1 = fixed(int(pos2));
     gui.objects[scn_firsttime.sld_cursorysens].pos.x2 = gui.objects[scn_firsttime.sld_cursorysens].pos.x1 + 16.0;
 
+
+    // vote screen activation label
+	scn_firsttime.lbl_vote = guiObjectCreate();
+	gui.objects[scn_firsttime.lbl_vote].pos.x1 = gui.w_half - 96.0;
+	gui.objects[scn_firsttime.lbl_vote].pos.y1 = gui.h_half + 32.0;
+	gui.objects[scn_firsttime.lbl_vote].pos.x2 = gui.objects[scn_firsttime.lbl_vote].pos.x1;
+	gui.objects[scn_firsttime.lbl_vote].pos.y2 = gui.objects[scn_firsttime.lbl_vote].pos.y1;
+    gui.objects[scn_firsttime.lbl_vote].text_font = "SONICFONTHD";
+	gui.objects[scn_firsttime.lbl_vote].text = "Vote screen activation:";
+    gui.objects[scn_firsttime.lbl_vote].textalign.x = GUI_XALIGN_RIGHT;
+	gui.objects[scn_firsttime.lbl_vote].render_text = true;
+
+	// vote screen activation auto button
+    scn_firsttime.btn_voteauto = guiObjectCreate();
+	gui.objects[scn_firsttime.btn_voteauto].pos.x1 = gui.w_half - 32.0;
+	gui.objects[scn_firsttime.btn_voteauto].pos.y1 = gui.h_half + 16.0;
+	gui.objects[scn_firsttime.btn_voteauto].pos.x2 = gui.objects[scn_firsttime.btn_voteauto].pos.x1 + 107.0;
+	gui.objects[scn_firsttime.btn_voteauto].pos.y2 = gui.objects[scn_firsttime.btn_voteauto].pos.y1 + 32.0;
+    gui.objects[scn_firsttime.btn_voteauto].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.btn_voteauto].text = "\c[White]H";
+    gui.objects[scn_firsttime.btn_voteauto].text_font_checked = "PANELFONT";
+	gui.objects[scn_firsttime.btn_voteauto].text_checked = "\c[Cyan]K";
+    gui.objects[scn_firsttime.btn_voteauto].textalign.x = GUI_XALIGN_LEFT;
+    gui.objects[scn_firsttime.btn_voteauto].textalign.y = GUI_YALIGN_TOP;
+    gui.objects[scn_firsttime.btn_voteauto].text_font2 = "SONICFONTHD";
+	gui.objects[scn_firsttime.btn_voteauto].text2 = "\c[White]Auto";
+    gui.objects[scn_firsttime.btn_voteauto].text_font_checked2 = "SONICFONTHD";
+	gui.objects[scn_firsttime.btn_voteauto].text_checked2 = "\c[Cyan]Auto";
+    gui.objects[scn_firsttime.btn_voteauto].textalign2.x = GUI_XALIGN_LEFT;
+    gui.objects[scn_firsttime.btn_voteauto].textalign2.y = GUI_YALIGN_TOP;
+	gui.objects[scn_firsttime.btn_voteauto].textoffset2.x = 44.0;
+	gui.objects[scn_firsttime.btn_voteauto].textoffset2.y = 6.0;
+    gui.objects[scn_firsttime.btn_voteauto].clickable = true;
+    gui.objects[scn_firsttime.btn_voteauto].checkable = true;
+	gui.objects[scn_firsttime.btn_voteauto].render_text2 = true;
+	gui.objects[scn_firsttime.btn_voteauto].func = guiVoteActivation;
+	if(GetCVar("lexicon_vote_activation") == 1) { gui.objects[scn_firsttime.btn_voteauto].checked = true; }
+
+	// vote screen activation manual button
+    scn_firsttime.btn_votemanual = guiObjectCreate();
+	gui.objects[scn_firsttime.btn_votemanual].pos.x1 = gui.w_half + 96.0;
+	gui.objects[scn_firsttime.btn_votemanual].pos.y1 = gui.h_half + 16.0;
+	gui.objects[scn_firsttime.btn_votemanual].pos.x2 = gui.objects[scn_firsttime.btn_votemanual].pos.x1 + 138.0;
+	gui.objects[scn_firsttime.btn_votemanual].pos.y2 = gui.objects[scn_firsttime.btn_votemanual].pos.y1 + 32.0;
+    gui.objects[scn_firsttime.btn_votemanual].text_font = "PANELFONT";
+	gui.objects[scn_firsttime.btn_votemanual].text = "\c[White]H";
+    gui.objects[scn_firsttime.btn_votemanual].text_font_checked = "PANELFONT";
+	gui.objects[scn_firsttime.btn_votemanual].text_checked = "\c[Cyan]K";
+    gui.objects[scn_firsttime.btn_votemanual].textalign.x = GUI_XALIGN_LEFT;
+    gui.objects[scn_firsttime.btn_votemanual].textalign.y = GUI_YALIGN_TOP;
+    gui.objects[scn_firsttime.btn_votemanual].text_font2 = "SONICFONTHD";
+	gui.objects[scn_firsttime.btn_votemanual].text2 = "\c[White]Manual";
+    gui.objects[scn_firsttime.btn_votemanual].text_font_checked2 = "SONICFONTHD";
+	gui.objects[scn_firsttime.btn_votemanual].text_checked2 = "\c[Cyan]Manual";
+    gui.objects[scn_firsttime.btn_votemanual].textalign2.x = GUI_XALIGN_LEFT;
+    gui.objects[scn_firsttime.btn_votemanual].textalign2.y = GUI_YALIGN_TOP;
+	gui.objects[scn_firsttime.btn_votemanual].textoffset2.x = 44.0;
+	gui.objects[scn_firsttime.btn_votemanual].textoffset2.y = 6.0;
+    gui.objects[scn_firsttime.btn_votemanual].clickable = true;
+    gui.objects[scn_firsttime.btn_votemanual].checkable = true;
+	gui.objects[scn_firsttime.btn_votemanual].render_text2 = true;
+	gui.objects[scn_firsttime.btn_votemanual].func = guiVoteActivation;
+	if(GetCVar("lexicon_vote_activation") == 0) { gui.objects[scn_firsttime.btn_votemanual].checked = true; }
+
     // dont show at startup label
 	scn_firsttime.lbl_dontshow = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_dontshow].pos.x1 = gui.w_half - 96.0;
-	gui.objects[scn_firsttime.lbl_dontshow].pos.y1 = gui.h_half + 32.0;
+	gui.objects[scn_firsttime.lbl_dontshow].pos.y1 = gui.h_half + 80.0;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.x2 = gui.objects[scn_firsttime.lbl_dontshow].pos.x1;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.y2 = gui.objects[scn_firsttime.lbl_dontshow].pos.y1;
     gui.objects[scn_firsttime.lbl_dontshow].text_font = "SONICFONTHD";
@@ -496,7 +563,7 @@ function void guiBuildSettingsScene(void)
     // dont show at startup button
     scn_firsttime.btn_dontshow = guiObjectCreate();
 	gui.objects[scn_firsttime.btn_dontshow].pos.x1 = gui.w_half - 32.0;
-	gui.objects[scn_firsttime.btn_dontshow].pos.y1 = gui.h_half + 32.0 - 16.0;
+	gui.objects[scn_firsttime.btn_dontshow].pos.y1 = gui.h_half + 80.0 - 16.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.x2 = gui.objects[scn_firsttime.btn_dontshow].pos.x1 + 32.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.y2 = gui.objects[scn_firsttime.btn_dontshow].pos.y1 + 32.0;
     gui.objects[scn_firsttime.btn_dontshow].text_font = "PANELFONT";
@@ -513,7 +580,7 @@ function void guiBuildSettingsScene(void)
     // notes
 	scn_firsttime.lbl_notes = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_notes].pos.x1 = gui.w_half - 300.0;
-	gui.objects[scn_firsttime.lbl_notes].pos.y1 = gui.h_half + 128.0;
+	gui.objects[scn_firsttime.lbl_notes].pos.y1 = gui.h_half + 192.0;
 	gui.objects[scn_firsttime.lbl_notes].pos.x2 = gui.objects[scn_firsttime.lbl_notes].pos.x1;
 	gui.objects[scn_firsttime.lbl_notes].pos.y2 = gui.objects[scn_firsttime.lbl_notes].pos.y1;
     gui.objects[scn_firsttime.lbl_notes].text_font = "SONICFONT";
@@ -566,6 +633,17 @@ function void guiChangeCursorShadow(int id)
 {
     if(gui.objects[id].checked) { SetCVar("lexicon_cursor_shadow", 1); }
     if(!gui.objects[id].checked) { SetCVar("lexicon_cursor_shadow", 0); }
+}
+
+// vote activation
+function void guiVoteActivation(int id)
+{
+	gui.objects[scn_firsttime.btn_voteauto].checked = false;
+	gui.objects[scn_firsttime.btn_votemanual].checked = false;
+    gui.objects[id].checked = true;
+
+	if(scn_firsttime.btn_voteauto == id) { SetCVar("lexicon_vote_activation", 1); }
+	if(scn_firsttime.btn_votemanual == id) { SetCVar("lexicon_vote_activation", 0); }
 }
 
 // change cursor color

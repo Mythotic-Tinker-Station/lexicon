@@ -2,23 +2,23 @@
 // Hadephobia //
 ////////////////
 
-Actor HPCommanderKeen : CommanderKeen 25013 //72
+Actor HPCommanderKeen : CommanderKeen 25013
 {
   States
   {
   Spawn:
-    HHEN A -1
+    HPEN A -1
     Loop
   Death:
-    HHEN AB 6
-    HHEN C 6 A_Scream
-    HHEN DEFGHIJ 6
-    HHEN K 6 A_KeenDie
-    HHEN L -1
+    HPEN AB 6
+    HPEN C 6 A_Scream
+    HPEN DEFGHIJ 6
+    HPEN K 6 A_KeenDie
+    HPEN L -1
     Stop
   Pain:
-    HHEN M 4
-    HHEN M 8 A_Pain
+    HPEN M 4
+    HPEN M 8 A_Pain
     Goto Spawn
   }
 }

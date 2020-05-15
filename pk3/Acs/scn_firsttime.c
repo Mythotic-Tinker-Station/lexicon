@@ -23,9 +23,11 @@ struct _scn_firsttime
     int lbl_cursorxsens;
     int sld_cursorxsens;
     int img_cursorxsens;
+	int num_cursorxsens;
     int lbl_cursorysens;
     int sld_cursorysens;
     int img_cursorysens;
+	int num_cursorysens;
     int lbl_dontshow;
     int btn_dontshow;
     int lbl_notes;
@@ -363,11 +365,22 @@ function void guiBuildSettingsScene(void)
     gui.objects[scn_firsttime.lbl_cursorxsens].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorxsens].render_text = true;
 
+    // cursor xsens number
+	scn_firsttime.num_cursorxsens = guiObjectCreate();
+	gui.objects[scn_firsttime.num_cursorxsens].pos.x1 = gui.w_half + 235.0;
+	gui.objects[scn_firsttime.num_cursorxsens].pos.y1 = gui.h_half - 64.0;
+	gui.objects[scn_firsttime.num_cursorxsens].pos.x2 = gui.objects[scn_firsttime.num_cursorxsens].pos.x1;
+	gui.objects[scn_firsttime.num_cursorxsens].pos.y2 = gui.objects[scn_firsttime.num_cursorxsens].pos.y1;
+    gui.objects[scn_firsttime.num_cursorxsens].text_font = "SONICFONTHD";
+	gui.objects[scn_firsttime.num_cursorxsens].text = strparam(i:GetCVar("lexicon_cursor_xsens"));
+    gui.objects[scn_firsttime.num_cursorxsens].textalign.x = GUI_XALIGN_LEFT;
+	gui.objects[scn_firsttime.num_cursorxsens].render_text = true;
+
 
     // cursor xsens slider
 	scn_firsttime.sld_cursorxsens = guiObjectCreate();
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.x1 = gui.w_half - 32.0;
-	gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 = gui.h_half - 64.0 - 16.0;
+	gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 = gui.h_half - 64.0 - 12.0;
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.x2 = gui.objects[scn_firsttime.sld_cursorxsens].pos.x1 + 16.0;
 	gui.objects[scn_firsttime.sld_cursorxsens].pos.y2 = gui.objects[scn_firsttime.sld_cursorxsens].pos.y1 + 24.0;
     gui.objects[scn_firsttime.sld_cursorxsens].text_font = "PANELFONT";
@@ -400,7 +413,7 @@ function void guiBuildSettingsScene(void)
     fixed max = gui.objects[scn_firsttime.img_cursorxsens].pos.x2 - 16.0;
     fixed value = fixed(GetCVar("lexicon_cursor_xsens"));
     fixed length = max-min;
-    fixed vnorm = ((value-5.0) / (55.0 - 5.0));
+    fixed vnorm = ((value-5.0) / (50.0));
     fixed pos = (vnorm*length) + min;
 
     gui.objects[scn_firsttime.sld_cursorxsens].pos.x1 = fixed(int(pos));
@@ -418,11 +431,21 @@ function void guiBuildSettingsScene(void)
     gui.objects[scn_firsttime.lbl_cursorysens].textalign.x = GUI_XALIGN_RIGHT;
 	gui.objects[scn_firsttime.lbl_cursorysens].render_text = true;
 
+    // cursor ysens number
+	scn_firsttime.num_cursorysens = guiObjectCreate();
+	gui.objects[scn_firsttime.num_cursorysens].pos.x1 = gui.w_half + 235.0;
+	gui.objects[scn_firsttime.num_cursorysens].pos.y1 = gui.h_half - 16.0;
+	gui.objects[scn_firsttime.num_cursorysens].pos.x2 = gui.objects[scn_firsttime.num_cursorysens].pos.x1;
+	gui.objects[scn_firsttime.num_cursorysens].pos.y2 = gui.objects[scn_firsttime.num_cursorysens].pos.y1;
+    gui.objects[scn_firsttime.num_cursorysens].text_font = "SONICFONTHD";
+	gui.objects[scn_firsttime.num_cursorysens].text = strparam(i:GetCVar("lexicon_cursor_ysens"));
+    gui.objects[scn_firsttime.num_cursorysens].textalign.x = GUI_XALIGN_LEFT;
+	gui.objects[scn_firsttime.num_cursorysens].render_text = true;
 
     // cursor ysens slider
 	scn_firsttime.sld_cursorysens = guiObjectCreate();
 	gui.objects[scn_firsttime.sld_cursorysens].pos.x1 = gui.w_half - 32.0;
-	gui.objects[scn_firsttime.sld_cursorysens].pos.y1 = gui.h_half - 16.0 - 16.0;
+	gui.objects[scn_firsttime.sld_cursorysens].pos.y1 = gui.h_half - 16.0 - 12.0;
 	gui.objects[scn_firsttime.sld_cursorysens].pos.x2 = gui.objects[scn_firsttime.sld_cursorysens].pos.x1 + 16.0;
 	gui.objects[scn_firsttime.sld_cursorysens].pos.y2 = gui.objects[scn_firsttime.sld_cursorysens].pos.y1 + 24.0;
     gui.objects[scn_firsttime.sld_cursorysens].text_font = "PANELFONT";
@@ -453,7 +476,7 @@ function void guiBuildSettingsScene(void)
     fixed max2 = gui.objects[scn_firsttime.img_cursorysens].pos.x2 - 16.0;
     fixed value2 = fixed(GetCVar("lexicon_cursor_ysens"));
     fixed length2 = max2-min2;
-    fixed vnorm2 = ((value2-5.0) / (55.0 - 5.0));
+    fixed vnorm2 = ((value2-5.0) / (50.0));
     fixed pos2 = (vnorm2*length2) + min2;
 
     gui.objects[scn_firsttime.sld_cursorysens].pos.x1 = fixed(int(pos2));
@@ -489,12 +512,12 @@ function void guiBuildSettingsScene(void)
 
     // notes
 	scn_firsttime.lbl_notes = guiObjectCreate();
-	gui.objects[scn_firsttime.lbl_notes].pos.x1 = gui.w_half - 400.0;
+	gui.objects[scn_firsttime.lbl_notes].pos.x1 = gui.w_half - 300.0;
 	gui.objects[scn_firsttime.lbl_notes].pos.y1 = gui.h_half + 128.0;
 	gui.objects[scn_firsttime.lbl_notes].pos.x2 = gui.objects[scn_firsttime.lbl_notes].pos.x1;
 	gui.objects[scn_firsttime.lbl_notes].pos.y2 = gui.objects[scn_firsttime.lbl_notes].pos.y1;
     gui.objects[scn_firsttime.lbl_notes].text_font = "SONICFONT";
-	gui.objects[scn_firsttime.lbl_notes].text =   "\c[Green]Note\c[White]: These settings will be used every time you launch lexicon.\n\n\c[Green]Note\c[White]: Cursor sensitivity will not effect your zandronum mouse sensitivity.\n          \c[White]Cursor sens is divided by your current mouse sens, so lower is faster.\n\n\c[Green]Note\c[White]: You can change these settings later in the lexicon menu.";
+	gui.objects[scn_firsttime.lbl_notes].text =   "\c[Green]Note\c[White]: These settings will be used every time you launch lexicon.\n\n\c[Green]Note\c[White]: Cursor sensitivity will not effect your zandronum mouse sensitivity.\n\n\c[Green]Note\c[White]: You can change these settings later in the lexicon menu.\n\n\c[Green]Note\c[White]: Press R to reset to defaults.";
     gui.objects[scn_firsttime.lbl_notes].textalign.x = GUI_XALIGN_LEFT;
 	gui.objects[scn_firsttime.lbl_notes].render_text = true;
 
@@ -520,11 +543,14 @@ function void guiCursorSliderCalc(int id)
     fixed min = gui.objects[scn_firsttime.img_cursorxsens].pos.x1;
     fixed max = gui.objects[scn_firsttime.img_cursorxsens].pos.x2 - 16.0;
     fixed value = gui.objects[id].pos.x1;
-    fixed percent = ((value-min) / (max-min)) * 20.0;
+    fixed percent = ((value-min) / (max-min)) * 50.0;
     gui.objects[id].custom1 = int(percent);
 
-    if(id == scn_firsttime.sld_cursorxsens) { SetCVar("lexicon_cursor_xsens", gui.objects[id].custom1 + 5); }
-    if(id == scn_firsttime.sld_cursorysens) { SetCVar("lexicon_cursor_ysens", gui.objects[id].custom1 + 5); }
+    if(id == scn_firsttime.sld_cursorxsens) { SetCVar("lexicon_cursor_xsens", gui.objects[id].custom1); }
+    if(id == scn_firsttime.sld_cursorysens) { SetCVar("lexicon_cursor_ysens", gui.objects[id].custom1); }
+
+	gui.objects[scn_firsttime.num_cursorxsens].text = strparam(i:GetCVar("lexicon_cursor_xsens"));
+	gui.objects[scn_firsttime.num_cursorysens].text = strparam(i:GetCVar("lexicon_cursor_ysens"));
 }
 
 
@@ -621,6 +647,7 @@ script "Scene_FirstTime_Run" enter clientside
 				terminate;
 			}
 		}
+
 		delay(1);
 	}
 }

@@ -1,6 +1,6 @@
-map UHR01 "Water Treatment"
+map UHLY01 "Water Treatment"
 	{
-	next = "UHR02"
+	next = "UHLY02"
 	sky1 = URSKY1
 	titlepatch = URILV00
 	enterpic = URINT
@@ -11,9 +11,9 @@ map UHR01 "Water Treatment"
 	nojump
 	}
 	
-map UHR02 "Storage"
+map UHLY02 "Storage"
 	{
-	next = "UHR03"
+	next = "UHLY03"
 	sky1 = URSKY1
 	titlepatch = URILV01
 	enterpic = URINT
@@ -24,9 +24,9 @@ map UHR02 "Storage"
 	nojump
 	}
 	
-map UHR03 "Nukage Factory Zone"
+map UHLY03 "Nukage Factory Zone"
 	{
-	next = "UHR04"
+	next = "UHLY04"
 	sky1 = URSKY1
 	titlepatch = URILV02
 	enterpic = URINT
@@ -37,9 +37,9 @@ map UHR03 "Nukage Factory Zone"
 	nojump
 	}
 	
-map UHR04 "Industrial Courtyard"
+map UHLY04 "Industrial Courtyard"
 	{
-	next = "UHR05"
+	next = "UHLY05"
 	sky1 = URSKY1
 	titlepatch = URILV03
 	enterpic = URINT
@@ -50,9 +50,9 @@ map UHR04 "Industrial Courtyard"
 	nojump
 	}
 	
-map UHR05 "Slime Depository"
+map UHLY05 "Slime Depository"
 	{
-	next = "UHR06"
+	next = "UHLY06"
 	sky1 = URSKY1
 	titlepatch = URILV04
 	enterpic = URINT
@@ -63,9 +63,9 @@ map UHR05 "Slime Depository"
 	nojump
 	}
 	
-map UHR06 "Sewage Entrypoint"
+map UHLY06 "Sewage Entrypoint"
 	{
-	next = "UHR07"
+	next = "UHLY07"
 	sky1 = URSKY1
 	titlepatch = URILV05
 	enterpic = URINT
@@ -76,9 +76,9 @@ map UHR06 "Sewage Entrypoint"
 	nojump
 	}
 	
-map UHR07 "Passage Underground"
+map UHLY07 "Passage Underground"
 	{
-	next = "UHR08"
+	next = "UHLY08"
 	map07special
 	sky1 = URSKY1
 	titlepatch = URILV06
@@ -90,9 +90,9 @@ map UHR07 "Passage Underground"
 	nojump
 	}
 	
-map UHR08 "Research Complex Beta"
+map UHLY08 "Research Complex Beta"
 	{
-	next = "UHR09"
+	next = "UHLY09"
 	sky1 = URSKY1
 	titlepatch = URILV07
 	enterpic = URINT
@@ -103,9 +103,9 @@ map UHR08 "Research Complex Beta"
 	nojump
 	}
 	
-map UHR09 "Metallic Bloodline"
+map UHLY09 "Metallic Bloodline"
 	{
-	next = "UHR10"
+	next = "UHLY10"
 	sky1 = URSKY1
 	titlepatch = URILV08
 	enterpic = URINT
@@ -116,9 +116,9 @@ map UHR09 "Metallic Bloodline"
 	nojump
 	}
 	
-map UHR10 "Premortem"
+map UHLY10 "Premortem"
 	{
-	next = "UHR11"
+	next = "UHLY11"
 	sky1 = URSKY1
 	titlepatch = URILV09
 	enterpic = URINT
@@ -129,9 +129,9 @@ map UHR10 "Premortem"
 	nojump
 	}
 	
-map UHR11 "Death"
+map UHLY11 "Death"
 	{
-	next = "UHR12"
+	next = "UHLY12"
 	sky1 = URSKY1
 	titlepatch = URILV10
 	enterpic = URINT
@@ -142,9 +142,9 @@ map UHR11 "Death"
 	nojump
 	}
 	
-map UHR12 "The Other Side"
+map UHLY12 "The Other Side"
 	{
-	next = "UHR13"
+	next = "UHLY13"
 	sky1 = URSKY2
 	titlepatch = URILV11
 	enterpic = URINT
@@ -155,9 +155,9 @@ map UHR12 "The Other Side"
 	nojump
 	}
 	
-map UHR13 "Temple of Leviathan"
+map UHLY13 "Temple of Leviathan"
 	{
-	next = "UHR14"
+	next = "UHLY14"
 	sky1 = URSKY2
 	titlepatch = URILV12
 	enterpic = URINT
@@ -168,9 +168,9 @@ map UHR13 "Temple of Leviathan"
 	nojump
 	}
 	
-map UHR14 "Drifting Complex"
+map UHLY14 "Drifting Complex"
 	{
-	next = "UHR15"
+	next = "UHLY15"
 	sky1 = URSKY2
 	titlepatch = URILV13
 	enterpic = URINT
@@ -181,10 +181,10 @@ map UHR14 "Drifting Complex"
 	nojump
 	}
 	
-map UHR15 "Ravine of the Hated"
+map UHLY15 "Ravine of the Hated"
 	{
-	next = "UHR16"
-	secretnext = "UHR31"
+	next = "UHLY16"
+	secretnext = "UHLY31"
 	sky1 = URSKY2
 	titlepatch = URILV14
 	enterpic = URINT
@@ -195,9 +195,9 @@ map UHR15 "Ravine of the Hated"
 	nojump
 	}
 	
-map UHR16 "Dockside"
+map UHLY16 "Dockside"
 	{
-	next = "UHR17"
+	next = "UHLY17"
 	sky1 = URSKY2
 	titlepatch = URILV15
 	enterpic = URINT
@@ -208,9 +208,9 @@ map UHR16 "Dockside"
 	nojump
 	}
 	
-map UHR17 "Missing Gamma Sector"
+map UHLY17 "Missing Gamma Sector"
 	{
-	next = "UHR18"
+	next = "UHLY18"
 	sky1 = URSKY2
 	titlepatch = URILV16
 	enterpic = URINT
@@ -221,9 +221,9 @@ map UHR17 "Missing Gamma Sector"
 	nojump
 	}
 	
-map UHR18 "Of Brick and Crimson"
+map UHLY18 "Of Brick and Crimson"
 	{
-	next = "UHR19"
+	next = "UHLY19"
 	sky1 = URSKY2
 	titlepatch = URILV17
 	enterpic = URINT
@@ -234,9 +234,9 @@ map UHR18 "Of Brick and Crimson"
 	nojump
 	}
 	
-map UHR19 "Borough of Blood"
+map UHLY19 "Borough of Blood"
 	{
-	next = "UHR20"
+	next = "UHLY20"
 	sky1 = URSKY2
 	titlepatch = URILV18
 	enterpic = URINT
@@ -247,9 +247,9 @@ map UHR19 "Borough of Blood"
 	nojump
 	}
 	
-map UHR20 "Rite of Passage"
+map UHLY20 "Rite of Passage"
 	{
-	next = "UHR21"
+	next = "UHLY21"
 	sky1 = URSKY3
 	titlepatch = URILV19
 	enterpic = URINT
@@ -260,9 +260,9 @@ map UHR20 "Rite of Passage"
 	nojump
 	}
 	
-map UHR21 "Limbo"
+map UHLY21 "Limbo"
 	{
-	next = "UHR22"
+	next = "UHLY22"
 	sky1 = URSKY3
 	titlepatch = URILV20
 	enterpic = URINT
@@ -273,9 +273,9 @@ map UHR21 "Limbo"
 	nojump
 	}
 	
-map UHR22 "Lust"
+map UHLY22 "Lust"
 	{
-	next = "UHR23"
+	next = "UHLY23"
 	sky1 = URSKY3
 	titlepatch = URILV21
 	enterpic = URINT
@@ -286,9 +286,9 @@ map UHR22 "Lust"
 	nojump
 	}
 	
-map UHR23 "Greed"
+map UHLY23 "Greed"
 	{
-	next = "UHR24"
+	next = "UHLY24"
 	sky1 = URSKY3
 	titlepatch = URILV22
 	enterpic = URINT
@@ -299,9 +299,9 @@ map UHR23 "Greed"
 	nojump
 	}
 	
-map UHR24 "Gluttony"
+map UHLY24 "Gluttony"
 	{
-	next = "UHR25"
+	next = "UHLY25"
 	sky1 = URSKY3
 	titlepatch = URILV23
 	enterpic = URINT
@@ -312,9 +312,9 @@ map UHR24 "Gluttony"
 	nojump
 	}
 	
-map UHR25 "Anger"
+map UHLY25 "Anger"
 	{
-	next = "UHR26"
+	next = "UHLY26"
 	sky1 = URSKY3
 	titlepatch = URILV24
 	enterpic = URINT
@@ -325,9 +325,9 @@ map UHR25 "Anger"
 	nojump
 	}
 	
-map UHR26 "Heresy"
+map UHLY26 "Heresy"
 	{
-	next = "UHR27"
+	next = "UHLY27"
 	sky1 = URSKY3
 	titlepatch = URILV25
 	enterpic = URINT
@@ -338,9 +338,9 @@ map UHR26 "Heresy"
 	nojump
 	}
 	
-map UHR27 "Serpentine"
+map UHLY27 "Serpentine"
 	{
-	next = "UHR28"
+	next = "UHLY28"
 	sky1 = URSKY3
 	titlepatch = URILV26
 	enterpic = URINT
@@ -351,9 +351,9 @@ map UHR27 "Serpentine"
 	nojump
 	}
 	
-map UHR28 "Fraud"
+map UHLY28 "Fraud"
 	{
-	next = "UHR29"
+	next = "UHLY29"
 	sky1 = URSKY3
 	titlepatch = URILV27
 	enterpic = URINT
@@ -364,9 +364,9 @@ map UHR28 "Fraud"
 	nojump
 	}
 	
-map UHR29 "Snakeskin Treachery"
+map UHLY29 "Snakeskin Treachery"
 	{
-	next = "UHR30"
+	next = "UHLY30"
 	sky1 = URSKY3
 	titlepatch = URILV28
 	enterpic = URINT
@@ -377,7 +377,7 @@ map UHR29 "Snakeskin Treachery"
 	nojump
 	}
 	
-map UHR30 "Dis"
+map UHLY30 "Dis"
 	{
 	next = "VR"
 	sky1 = URSKY3
@@ -391,10 +391,10 @@ map UHR30 "Dis"
     SuckTime = 1337
 	}
 	
-map UHR31 "Destructive Infinity"
+map UHLY31 "Destructive Infinity"
 	{
-	next = "UHR16"
-	secretnext = "UHR32"
+	next = "UHLY16"
+	secretnext = "UHLY32"
 	sky1 = URSKY3
 	titlepatch = URILV30
 	enterpic = URINT
@@ -405,9 +405,9 @@ map UHR31 "Destructive Infinity"
 	nojump
 	}
 	
-map UHR32 "A Charming Khorus"
+map UHLY32 "A Charming Khorus"
 	{
-	next = "UHR16"
+	next = "UHLY16"
 	sky1 = URSKY3
 	titlepatch = URILV31
 	enterpic = URINT

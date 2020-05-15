@@ -29,6 +29,7 @@ struct _scn_firsttime
     int sld_cursorysens;
     int img_cursorysens;
 	int num_cursorysens;
+	int lbl_other;
 	int lbl_vote;
 	int btn_voteauto;
 	int btn_votemanual;
@@ -59,9 +60,9 @@ function void guiBuildSettingsScene(void)
     // cursor settings label
 	scn_firsttime.lbl_cursor = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_cursor].pos.x1 = gui.w_half;
-	gui.objects[scn_firsttime.lbl_cursor].pos.y1 = gui.h_half - 225.0;
-	gui.objects[scn_firsttime.lbl_cursor].pos.x2 = gui.objects[scn_firsttime.lbl_title].pos.x1;
-	gui.objects[scn_firsttime.lbl_cursor].pos.y2 = gui.objects[scn_firsttime.lbl_title].pos.y1;
+	gui.objects[scn_firsttime.lbl_cursor].pos.y1 = gui.h_half - 272.0;
+	gui.objects[scn_firsttime.lbl_cursor].pos.x2 = gui.objects[scn_firsttime.lbl_cursor].pos.x1;
+	gui.objects[scn_firsttime.lbl_cursor].pos.y2 = gui.objects[scn_firsttime.lbl_cursor].pos.y1;
     gui.objects[scn_firsttime.lbl_cursor].text_font = "SONICFONTHD";
 	gui.objects[scn_firsttime.lbl_cursor].text = "Cursor settings";
 	gui.objects[scn_firsttime.lbl_cursor].render_text = true;
@@ -495,11 +496,20 @@ function void guiBuildSettingsScene(void)
     gui.objects[scn_firsttime.sld_cursorysens].pos.x1 = fixed(int(pos2));
     gui.objects[scn_firsttime.sld_cursorysens].pos.x2 = gui.objects[scn_firsttime.sld_cursorysens].pos.x1 + 16.0;
 
+    // other settings label
+	scn_firsttime.lbl_other = guiObjectCreate();
+	gui.objects[scn_firsttime.lbl_other].pos.x1 = gui.w_half;
+	gui.objects[scn_firsttime.lbl_other].pos.y1 = gui.h_half - 80.0;
+	gui.objects[scn_firsttime.lbl_other].pos.x2 = gui.objects[scn_firsttime.lbl_other].pos.x1;
+	gui.objects[scn_firsttime.lbl_other].pos.y2 = gui.objects[scn_firsttime.lbl_other].pos.y1;
+    gui.objects[scn_firsttime.lbl_other].text_font = "SONICFONTHD";
+	gui.objects[scn_firsttime.lbl_other].text = "Other settings";
+	gui.objects[scn_firsttime.lbl_other].render_text = true;
 
     // vote screen activation label
 	scn_firsttime.lbl_vote = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_vote].pos.x1 = gui.w_half - 96.0;
-	gui.objects[scn_firsttime.lbl_vote].pos.y1 = gui.h_half - 48.0;
+	gui.objects[scn_firsttime.lbl_vote].pos.y1 = gui.h_half - 32.0;
 	gui.objects[scn_firsttime.lbl_vote].pos.x2 = gui.objects[scn_firsttime.lbl_vote].pos.x1;
 	gui.objects[scn_firsttime.lbl_vote].pos.y2 = gui.objects[scn_firsttime.lbl_vote].pos.y1;
     gui.objects[scn_firsttime.lbl_vote].text_font = "SONICFONTHD";
@@ -510,7 +520,7 @@ function void guiBuildSettingsScene(void)
 	// vote screen activation auto button
     scn_firsttime.btn_voteauto = guiObjectCreate();
 	gui.objects[scn_firsttime.btn_voteauto].pos.x1 = gui.w_half - 32.0;
-	gui.objects[scn_firsttime.btn_voteauto].pos.y1 = gui.h_half - 64.0;
+	gui.objects[scn_firsttime.btn_voteauto].pos.y1 = gui.h_half - 48.0;
 	gui.objects[scn_firsttime.btn_voteauto].pos.x2 = gui.objects[scn_firsttime.btn_voteauto].pos.x1 + 107.0;
 	gui.objects[scn_firsttime.btn_voteauto].pos.y2 = gui.objects[scn_firsttime.btn_voteauto].pos.y1 + 32.0;
     gui.objects[scn_firsttime.btn_voteauto].text_font = "PANELFONT";
@@ -536,7 +546,7 @@ function void guiBuildSettingsScene(void)
 	// vote screen activation manual button
     scn_firsttime.btn_votemanual = guiObjectCreate();
 	gui.objects[scn_firsttime.btn_votemanual].pos.x1 = gui.w_half + 96.0;
-	gui.objects[scn_firsttime.btn_votemanual].pos.y1 = gui.h_half - 64.0;
+	gui.objects[scn_firsttime.btn_votemanual].pos.y1 = gui.h_half - 48.0;
 	gui.objects[scn_firsttime.btn_votemanual].pos.x2 = gui.objects[scn_firsttime.btn_votemanual].pos.x1 + 138.0;
 	gui.objects[scn_firsttime.btn_votemanual].pos.y2 = gui.objects[scn_firsttime.btn_votemanual].pos.y1 + 32.0;
     gui.objects[scn_firsttime.btn_votemanual].text_font = "PANELFONT";
@@ -562,7 +572,7 @@ function void guiBuildSettingsScene(void)
     // dont show at startup label
 	scn_firsttime.lbl_dontshow = guiObjectCreate();
 	gui.objects[scn_firsttime.lbl_dontshow].pos.x1 = gui.w_half - 96.0;
-	gui.objects[scn_firsttime.lbl_dontshow].pos.y1 = gui.h_half - 16.0;
+	gui.objects[scn_firsttime.lbl_dontshow].pos.y1 = gui.h_half;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.x2 = gui.objects[scn_firsttime.lbl_dontshow].pos.x1;
 	gui.objects[scn_firsttime.lbl_dontshow].pos.y2 = gui.objects[scn_firsttime.lbl_dontshow].pos.y1;
     gui.objects[scn_firsttime.lbl_dontshow].text_font = "SONICFONTHD";
@@ -573,7 +583,7 @@ function void guiBuildSettingsScene(void)
     // dont show at startup button
     scn_firsttime.btn_dontshow = guiObjectCreate();
 	gui.objects[scn_firsttime.btn_dontshow].pos.x1 = gui.w_half - 32.0;
-	gui.objects[scn_firsttime.btn_dontshow].pos.y1 = gui.h_half - 16.0 - 16.0;
+	gui.objects[scn_firsttime.btn_dontshow].pos.y1 = gui.h_half - 16.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.x2 = gui.objects[scn_firsttime.btn_dontshow].pos.x1 + 32.0;
 	gui.objects[scn_firsttime.btn_dontshow].pos.y2 = gui.objects[scn_firsttime.btn_dontshow].pos.y1 + 32.0;
     gui.objects[scn_firsttime.btn_dontshow].text_font = "PANELFONT";

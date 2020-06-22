@@ -2,6 +2,13 @@
 // Texture definitions
 
 // Lexicon
+Texture TITLEPIC, 2560, 1440
+{
+   XScale 8.0
+   YScale 8.0
+	WorldPanning
+	patch TITLEPIC, 0, 0
+}
 
 // white
 graphic CN00, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { } }

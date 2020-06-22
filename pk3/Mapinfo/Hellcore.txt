@@ -1,7 +1,7 @@
-map HC01 "on hell's horizon"
+map HC2_01 "on hell's horizon"
 	{
 	titlepatch = "HLCLV00"
-	next = "HC02"
+	next = "HC2_02"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -11,10 +11,10 @@ map HC01 "on hell's horizon"
 	nojump
 	}
 	
-map HC02 "baron streets"
+map HC2_02 "baron streets"
 	{
 	titlepatch = "HLCLV01"
-	next = "HC03"
+	next = "HC2_03"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -24,10 +24,10 @@ map HC02 "baron streets"
 	nojump
 	}
 	
-map HC03 "parasite dawn"
+map HC2_03 "parasite dawn"
 	{
 	titlepatch = "HLCLV02"
-	next = "HC04"
+	next = "HC2_04"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -37,10 +37,10 @@ map HC03 "parasite dawn"
 	nojump
 	}
 	
-map HC04 "defying the odds"
+map HC2_04 "defying the odds"
 	{
 	titlepatch = "HLCLV03"
-	next = "HC05"
+	next = "HC2_05"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -50,10 +50,10 @@ map HC04 "defying the odds"
 	nojump
 	}
 	
-map HC05 "vestibule of plague"
+map HC2_05 "vestibule of plague"
 	{
 	titlepatch = "HLCLV04"
-	next = "HC06"
+	next = "HC2_06"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -63,10 +63,10 @@ map HC05 "vestibule of plague"
 	nojump
 	}
 	
-map HC06 "limbo"
+map HC2_06 "limbo"
 	{
 	titlepatch = "HLCLV05"
-	next = "HC07"
+	next = "HC2_07"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -76,10 +76,10 @@ map HC06 "limbo"
 	nojump
 	}
 	
-map HC07 "tribulation"
+map HC2_07 "tribulation"
 	{
 	titlepatch = "HLCLV06"
-	next = "HC08"
+	next = "HC2_08"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -90,10 +90,10 @@ map HC07 "tribulation"
 	nojump
 	}
 	
-map HC08 "tryx 'n traps"
+map HC2_08 "tryx 'n traps"
 	{
 	titlepatch = "HLCLV07"
-	next = "HC09"
+	next = "HC2_09"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -103,10 +103,10 @@ map HC08 "tryx 'n traps"
 	nojump
 	}
 	
-map HC09 "hobb's end horror"
+map HC2_09 "hobb's end horror"
 	{
 	titlepatch = "HLCLV08"
-	next = "HC10"
+	next = "HC2_10"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -116,10 +116,10 @@ map HC09 "hobb's end horror"
 	nojump
 	}
 	
-map HC10 "nightmare's requiem"
+map HC2_10 "nightmare's requiem"
 	{
 	titlepatch = "HLCLV09"
-	next = "HC11"
+	next = "HC2_11"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -129,10 +129,10 @@ map HC10 "nightmare's requiem"
 	nojump
 	}
 	
-map HC11 "hellcore"
+map HC2_11 "hellcore"
 	{
 	titlepatch = "HLCLV10"
-	next = "HC12"
+	next = "HC2_12"
 	enterpic = "HLCINT"
 	exitpic = "HLCINT"
 	intermusic = "D_HCINT"
@@ -142,7 +142,7 @@ map HC11 "hellcore"
 	nojump
 	}
 	
-map HC12 "credits"
+map HC2_12 "credits"
 	{
 	titlepatch = "HLCLV11"
 	next = "VR"

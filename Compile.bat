@@ -89,11 +89,10 @@ If ERRORLEVEL 1 goto Compile_BCS
 :Compile_BCS
 echo BCS
 	cd %Path_BCS%
+	echo Now Compiling Lexicon ACS Code
 	bcc -acc-err-file -x bcs %Path_Script%.c %Path_Script%.o
 	
 	goto %GotoBCS%
-
-
 
 
 :Compile_Main

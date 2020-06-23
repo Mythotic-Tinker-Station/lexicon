@@ -1,9 +1,9 @@
-map CW101 "HILLSIDE BASE"
+map WORM01 "HILLSIDE BASE"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW102"
-	secretnext = "CW102"
+	next =  "WORM02"
+	secretnext =  "WORM02"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -13,12 +13,12 @@ map CW101 "HILLSIDE BASE"
 	InterMusic = "00WINTER"
 	
 }
-map CW102 "UNDERGROUND LABS"
+map WORM02 "UNDERGROUND LABS"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW103"
-	secretnext = "CW103"
+	next =  "WORM03"
+	secretnext =  "WORM03"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -26,12 +26,12 @@ map CW102 "UNDERGROUND LABS"
 	ExitPic = "LOAD02"
 	EnterPic = "LOAD02"
 }
-map CW103 "FREIGHT YARD"
+map WORM03 "FREIGHT YARD"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW104"
-	secretnext = "CW104"
+	next =  "WORM04"
+	secretnext =  "WORM04"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -39,12 +39,12 @@ map CW103 "FREIGHT YARD"
 	ExitPic = "LOAD03"
 	EnterPic = "LOAD03"
 }
-map CW104 "TOTENWALD"
+map WORM04 "TOTENWALD"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW105"
-	secretnext = "CW105"
+	next =  "WORM05"
+	secretnext =  "WORM05"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -52,12 +52,12 @@ map CW104 "TOTENWALD"
 	ExitPic = "LOAD04"
 	EnterPic = "LOAD04"
 }
-map CW105 "WOLFSKUHLEN"
+map WORM05 "WOLFSKUHLEN"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW106"
-	secretnext = "CW106"
+	next =  "WORM06"
+	secretnext =  "WORM06"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -65,12 +65,12 @@ map CW105 "WOLFSKUHLEN"
 	ExitPic = "LOAD05"
 	EnterPic = "LOAD05"
 }
-map CW106 "BUDBERG CRYPTS"
+map WORM06 "BUDBERG CRYPTS"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW107"
-	secretnext = "CW107"
+	next =  "WORM07"
+	secretnext =  "WORM07"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -78,12 +78,12 @@ map CW106 "BUDBERG CRYPTS"
 	ExitPic = "LOAD06"
 	EnterPic = "LOAD06"
 }
-map CW107 "THE PORTAL"
+map WORM07 "THE PORTAL"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW108"
-	secretnext = "CW108"
+	next =  "WORM08"
+	secretnext =  "WORM08"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -92,12 +92,12 @@ map CW107 "THE PORTAL"
 	EnterPic = "LOAD07"
 	Map07Special
 }
-map CW108 "DH'AGO-BA"
+map WORM08 "DH'AGO-BA"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW109"
-	secretnext = "CW109"
+	next =  "WORM09"
+	secretnext =  "WORM09"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -106,12 +106,12 @@ map CW108 "DH'AGO-BA"
 	EnterPic = "LOAD08"
 	OutsideFog = "8D773D"
 }
-map CW109 "WINTERLINGEN"
+map WORM09 "WINTERLINGEN"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW110"
-	secretnext = "CW110"
+	next =  "WORM10"
+	secretnext =  "WORM10"
 	sky1 = "CWSKY1"
 	cluster = 1
 	par = 30
@@ -119,12 +119,12 @@ map CW109 "WINTERLINGEN"
 	ExitPic = "LOAD09"
 	EnterPic = "LOAD09"
 }
-map CW110 "HELLGRINDER"
+map WORM10 "HELLGRINDER"
 {
 	levelnum = 1
 	titlepatch = "WILV00"
-	next = "CW111"
-	secretnext = "CW111"
+	next =  "WORM11"
+	secretnext =  "WORM11"
 	sky1 = "CWSKY2"
 	cluster = 1
 	par = 30
@@ -135,7 +135,7 @@ map CW110 "HELLGRINDER"
 	CyberdemonSpecial
 	SpecialAction_OpenDoor
 }
-map CW111 "CREDITS"
+map WORM11 "CREDITS"
 {
 	levelnum = 1
 	titlepatch = "WILV00"

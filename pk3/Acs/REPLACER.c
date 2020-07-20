@@ -1,6 +1,3 @@
-#library "command"
-#include "../../compiler/lib/zcommon.h"
-
 private int currentMapset;
 
 private function bool StrStartsWith(str string, str prefix)
@@ -31,7 +28,7 @@ private function int GetCurrentMapset(void)
     {
         return 4;
     }
-    else if (StrStartsWith(mapset, "HC0") || StrStartsWith(mapset, "HC1"))
+    else if (StrStartsWith(mapset, "HC2_"))
     {
         return 5;
     }

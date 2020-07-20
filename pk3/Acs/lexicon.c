@@ -11,6 +11,7 @@ strict namespace
 		#include "lex_gui.c"
 		#include "scn_firsttime.c"
 		#include "scn_selection.c"
+		#include "REPLACER.c"
 
 		#include "patches.c"
 	#endif

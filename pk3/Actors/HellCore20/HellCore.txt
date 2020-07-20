@@ -1,0 +1,123 @@
+Actor HLC_WolfensteinSS : LWolfensteinSS 25059 //84
+{
+    Health 700
+    Speed 16
+    ReactionTime 4
+    PainChance 25
+    Translation 2
+    +JUSTHIT
+    SeeSound "misc/w_pkup"
+    PainSound "*pain100"
+    DeathSound "grunt/death"
+    States
+    {
+    Spawn:
+        HLCV AB 5 A_Look
+        Loop
+    See:
+        HLCV AABBCCDD 3 A_Chase
+        Loop
+    Pain:
+        HLCV H 3
+        HLCV H 3 A_CyberAttack
+        Goto Spawn
+    Missile:
+        HLCV EF 2 A_FaceTarget
+        HLCV G 2 Bright A_BspiAttack
+        HLCV F 2 A_FaceTarget
+        HLCV G 2 Bright A_BspiAttack
+        HLCV F 2 A_SpidRefire
+        Loop
+    Death:
+        HLCV I 5
+        HLCV J 5 A_Scream
+        HLCV K 5 A_NoBlocking
+        HLCV L 5
+        HLCV M -1
+        Stop
+    XDeath:
+        HLCV N 5
+        HLCV O 5 A_XScream
+        HLCV P 5 A_NoBlocking
+        HLCV QRSTU 5
+        HLCV V -1
+        Stop
+    Raise:
+        HLCV MLKJI 5
+        Goto See
+    }
+}
+
+Actor HLC_CommanderKeen : CommanderKeen 25060 //72
+{
+    States
+    {
+    Pain:
+        KEEN M 4
+        KEEN M 158 A_Pain
+        Wait
+    Death:
+        KEEN AB 6
+        KEEN C 124 A_Scream
+        Wait
+    }
+}
+
+Actor HLC_Meat4 : Meat4 25061 //52
+{
+    -SOLID
+    +NOSECTOR
+    +AMBUSH
+    -SPAWNCEILING
+    -NOGRAVITY
+    +NOBLOCKMAP
+    +NOCLIP
+    PainSound "hellcore/firestrt"
+    States
+    {
+    Spawn:
+    Death:
+        KEEN M 158 A_Pain
+        Loop
+    }
+}
+
+Actor HLC_Meat5 : Meat5 25062 //53
+{
+    -SOLID
+    +NOSECTOR
+    +AMBUSH
+    +NOBLOCKMAP
+    -SPAWNCEILING
+    -NOGRAVITY
+    +NOCLIP
+    DeathSound "hellcore/keendeath"
+    States
+    {
+    Spawn:
+    Death:
+        KEEN C 124 A_Scream
+        Loop
+    }
+}
+
+Actor HLC_NonsolidMeat5 : NonsolidMeat5 25063 //62
+{
+    -SOLID
+    +NOSECTOR
+    -SPAWNCEILING
+    -NOGRAVITY
+    +NOBLOCKMAP
+    +NOCLIP
+    SeeSound "hellcore/keenpain"
+    ActiveSound "hellcore/keenpain"
+    States
+    {
+    Spawn:
+        TROO AB 10 A_Look
+        Loop
+    See:
+        TROO AABBCCDD 3 A_Chase
+        Loop
+    }
+}

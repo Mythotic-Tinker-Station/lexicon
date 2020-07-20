@@ -12,8 +12,7 @@ strict namespace
 		#include "scn_firsttime.c"
 		#include "scn_selection.c"
 
-		#include "94TU07_fix.c"
-		#include "UR__11_fix.c"
+		#include "patches.c"
 	#endif
 }
 

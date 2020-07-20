@@ -15,7 +15,7 @@ function void guiBuildSelectionScene(void)
 {
 	scn_selection.lbl_title = guiObjectCreate();
 	gui.objects[scn_selection.lbl_title].pos.x1 = gui.w_half;
-	gui.objects[scn_selection.lbl_title].pos.y1 = gui.h_half - 360.0;
+	gui.objects[scn_selection.lbl_title].pos.y1 = 50.0;
 	gui.objects[scn_selection.lbl_title].pos.x2 = gui.objects[scn_selection.lbl_title].pos.x1;
 	gui.objects[scn_selection.lbl_title].pos.y2 = gui.objects[scn_selection.lbl_title].pos.y1;
     gui.objects[scn_selection.lbl_title].text_font = "SONICFONTHD";
@@ -38,29 +38,34 @@ function void guiBuildSelectionScene(void)
 
 function void guiBuildTiles(void)
 {
-	fixed tile_w = 128.0;
-	fixed tile_h = 96.0;
+	fixed image_w = 128.0;	// image width
+	fixed image_h = 96.0;	// image height
 
-	fixed gapsize = 6.0;
+	fixed gapsize = 6.0;	// gap size between each tile
 
-	fixed totalsize_w = tile_w+gapsize;
-	fixed totalsize_h = tile_h+gapsize;
+	fixed tilecount_x = gui.w/image_w;
+	fixed tilecount_y = gui.h/image_h;
 
-	int tilecount_x = int(gui.w/totalsize_w);
-	int tilecount_y = int(gui.h/totalsize_h)-4;
+	fixed tilecount_x_pixels = tilecount_x*image_w;
 
-	fixed grid_x = gui.w_half - 500.0;
-	fixed grid_y = gui.h_half - ((totalsize_h*fixed(tilecount_y))/2.0);
-
-	for(int y = 0; y < tilecount_y; y++)
+	while(tilecount_x_pixels > gui.w-(image_w*3.0))
 	{
-		for(int x = 0; x < 2; x++)
+		tilecount_x--;
+		tilecount_x_pixels = tilecount_x*image_w;
+	}
+
+	fixed grid_x = gui.w_half - (tilecount_x_pixels/2.0);
+	fixed grid_y = 100.0;
+
+	for(fixed x = 0.0; x < tilecount_x; x++)
+	{
+		for(fixed y = 0.0; y < 2.0; y++)
 		{
 			int tile = guiObjectCreate();
-			gui.objects[tile].pos.x1 = (grid_x) + (fixed(x)*totalsize_w);
-			gui.objects[tile].pos.y1 = (grid_y) + (fixed(y)*totalsize_h);
-			gui.objects[tile].pos.x2 = gui.objects[tile].pos.x1 + tile_w;
-			gui.objects[tile].pos.y2 = gui.objects[tile].pos.y1 + tile_h;
+			gui.objects[tile].pos.x1 = (grid_x) + (x*image_w);
+			gui.objects[tile].pos.y1 = (grid_y) + (y*image_h);
+			gui.objects[tile].pos.x2 = gui.objects[tile].pos.x1 + image_w;
+			gui.objects[tile].pos.y2 = gui.objects[tile].pos.y1 + image_h;
 			gui.objects[tile].text_font = "SCRN0000";
 			gui.objects[tile].text = "a";
 			gui.objects[tile].text_font_hovered = "SCRN0000";

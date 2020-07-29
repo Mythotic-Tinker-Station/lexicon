@@ -133,7 +133,7 @@ Actor CS2ZombieMan : LZombieMan
     CS2Z N 5 A_XScream
     CS2Z O 5 A_NoBlocking
     CS2Z PQRST 5
-    CS2Z U -1
+    CS2Z T -1
     Stop
   Raise:
     CS2Z KJIH 5

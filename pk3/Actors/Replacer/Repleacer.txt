@@ -1,0 +1,16 @@
+
+
+Actor Replacer 31999
+{
+
+	//$Arg4 "Actor ID"
+
+	States
+	{
+		Spawn:
+			TNT1 A 0
+			TNT1 A 0 A_JumpIf(
+			Loop
+
+	}
+}

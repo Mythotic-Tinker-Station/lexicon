@@ -422,7 +422,6 @@ function void guiBuildSettingsScene(void)
     gui.objects[scn_firsttime.img_cursorxsens].textalign.y = GUI_YALIGN_TOP;
 	gui.objects[scn_firsttime.img_cursorxsens].render_text = true;
 
-
     fixed min = gui.objects[scn_firsttime.img_cursorxsens].pos.x1;
     fixed max = gui.objects[scn_firsttime.img_cursorxsens].pos.x2 - 16.0;
     fixed value = fixed(GetCVar("lexicon_cursor_xsens"));
@@ -741,7 +740,7 @@ script "Scene_FirstTime_Run" enter clientside
 			if(guiMove(-250.0, 0.0) == 2)
 			{
 				guiObjectsClear();
-				ACS_NamedExecute("Scene_Selection_Run", 0);
+				gui.scene++;
 				terminate;
 			}
 		}

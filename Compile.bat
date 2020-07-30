@@ -17,7 +17,7 @@ set GotoBCS=Compile_Main
 set GotoCompileMain=Compile_Music
 
 
-if "%PROCESSOR_ARCHITECTURE%" == "AMD64" ( 
+if "%PROCESSOR_ARCHITECTURE%" == "AMD64" (
 	set Path_BCS=Compiler\x64
 	set Path_7z=..\Compiler\x64\7za
 	set Path_Backwards=..\..\
@@ -89,9 +89,9 @@ If ERRORLEVEL 1 goto Compile_BCS
 :Compile_BCS
 echo BCS
 	cd %Path_BCS%
-	echo Now Compiling Lexicon ACS Code
+	echo Now Compiling Lexicon BCS Code
 	bcc -acc-err-file -x bcs %Path_Script%.c %Path_Script%.o
-	
+
 	goto %GotoBCS%
 
 
@@ -131,7 +131,7 @@ echo Error: Could not determain CPU type, please check that your system's enviro
 goto Finish
 
 :Error2
-echo BCS Error: 
+echo BCS Error:
 goto Init
 
 :Finish

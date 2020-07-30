@@ -4,34 +4,42 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-#if 1
-	// Hud alignment
-	#define GUI_XALIGN_CENTER 						0.0					// Align center of text to the x position
-	#define GUI_XALIGN_LEFT 						0.1					// Align left of text to the x position
-	#define GUI_XALIGN_RIGHT 						0.2					// Align right of text to the x position
-	#define GUI_XALIGN_BOXCENTER 					0.4					// What
-	#define GUI_XALIGN_BOXLEFT 						0.5					// What
-	#define GUI_XALIGN_BOXRIGHT 					0.6					// What
 
-	#define GUI_YALIGN_CENTER 						0.0					// Align center of text to the y position
-	#define GUI_YALIGN_TOP 							0.1					// Align the top of text to the y position
-	#define GUI_YALIGN_BOTTOM 						0.2					// Align the bottom of text to the y position
+// Hud alignment
+#define GUI_XALIGN_CENTER 						0.0					// Align center of text to the x position
+#define GUI_XALIGN_LEFT 						0.1					// Align left of text to the x position
+#define GUI_XALIGN_RIGHT 						0.2					// Align right of text to the x position
+#define GUI_XALIGN_BOXCENTER 					0.4					// What
+#define GUI_XALIGN_BOXLEFT 						0.5					// What
+#define GUI_XALIGN_BOXRIGHT 					0.6					// What
 
-	// Gui text types
-	#define GUI_TEXTTYPE_STRING 					0					// Tell an object to print a string
-	#define GUI_TEXTTYPE_INT						1					// Tell an object to print an int
-	#define GUI_TEXTTYPE_FIXED						2					// Tell an object to print a fixed number
-	#define GUI_TEXTTYPE_NAME	 					3                   // Tell an object to print a name
-	#define GUI_TEXTTYPE_HEX	 					4                   // Tell an object to print a hex number
-	#define GUI_TEXTTYPE_BINARY	 					5                   // Tell an object to print a binary number
-	#define GUI_TEXTTYPE_CHAR	 					6                   // Tell an object to print a char
-	#define GUI_TEXTTYPE_ARRAY	 					7                   // Tell an object to print an array
-	#define GUI_TEXTTYPE_KEY	 					8                   // Tell an object to print a input key
+#define GUI_YALIGN_CENTER 						0.0					// Align center of text to the y position
+#define GUI_YALIGN_TOP 							0.1					// Align the top of text to the y position
+#define GUI_YALIGN_BOTTOM 						0.2					// Align the bottom of text to the y position
 
-	// gui misc
-	#define GUI_MAX_OBJECTS 						64					// Max number of objects to loop for
-#endif
+// Gui text types
+#define GUI_TEXTTYPE_STRING 					0					// Tell an object to print a string
+#define GUI_TEXTTYPE_INT						1					// Tell an object to print an int
+#define GUI_TEXTTYPE_FIXED						2					// Tell an object to print a fixed number
+#define GUI_TEXTTYPE_NAME	 					3                   // Tell an object to print a name
+#define GUI_TEXTTYPE_HEX	 					4                   // Tell an object to print a hex number
+#define GUI_TEXTTYPE_BINARY	 					5                   // Tell an object to print a binary number
+#define GUI_TEXTTYPE_CHAR	 					6                   // Tell an object to print a char
+#define GUI_TEXTTYPE_ARRAY	 					7                   // Tell an object to print an array
+#define GUI_TEXTTYPE_KEY	 					8                   // Tell an object to print a input key
 
+// Scenes
+#define SCENE_FIRST_TIME						0                   // First time scene
+#define SCENE_SELECTION							1                   // mapset selection scene
+
+// Gui misc
+#define GUI_MAX_OBJECTS 						2048				// Max number of objects to loop for
+
+fixed ASPECT_4_3 = 0.0;
+fixed ASPECT_5_4 = 0.0;
+fixed ASPECT_16_9 = 0.0;
+fixed ASPECT_16_10 = 0.0;
+fixed ASPECT_17_10 = 0.0;
 
 // size
 struct size
@@ -150,9 +158,11 @@ struct guiobj
 	bool enabled;					            // can this object be interacted with?
 	bool free;						            // is this object alive?
 	bool clickhold;					            // when clicked, does the object register a click every frame?
-	bool background;				            // render the background?
+	bool hoveralpha;				            // alpha fading var
 	bool render_text;				            // render text?
     bool render_text2;				            // render text?
+	bool custom_drag_logic;						// does the object provide it's own dragging logic?
+
 	void function(int)? func;		            // function to call when object is clicked
 	int custom1;					            // extra property for object specific info
 	raw custom2;					            // extra property for object specific info
@@ -179,10 +189,14 @@ struct _gui
 	fixed h;									// height
 	fixed w_half;								// screen center x
 	fixed h_half;								// screen center y
+	int vid_w;									// display width
+	int vid_h;									// display height
 	int blocks;									// screen blocks(what hud the user has selected)
 	int nextid;									// next id for the next hudmessage to draw
     int objcount;                               // amount of objects that exist
     int screen;                                 // what screen the client is in
+	int scene;									// currently running scene
+	int scene_prev;								// previous scene
 };
 
 
@@ -208,20 +222,19 @@ function bool clientCheck()
 
 
 // setup screen size and some variables
-function void guiInit(int w, int h)
+function void guiInit()
 {
-	if(w < 1) { w = GetCVar("vid_defwidth"); }
-	if(h < 1) { h = GetCVar("vid_defheight"); }
-
-	gui.w = fixed(w);
-	gui.h = fixed(h);
-	gui.w_half = (gui.w/2.0);
-	gui.h_half = (gui.h/2.0);
+	gui.vid_w = GetCVar("vid_defwidth");
+	gui.vid_h = GetCVar("vid_defheight");
+	gui.w = fixed(gui.vid_w);
+	gui.h = fixed(gui.vid_h);
+	gui.w_half = gui.w/2.0;
+	gui.h_half = gui.h/2.0;
 	gui.blocks = GetCVar("screenblocks");
-
-	SetHudSize(w, h, true);
+	SetHudSize(gui.vid_w, gui.vid_h, true);
+	guiObjectsClear();
+	guiCursorInit();
 }
-
 
 ////////////////////////////////////////////////////////
 // Cursor
@@ -245,7 +258,7 @@ function void guiCursorRun()
 	cursor.poscalc.y = -fixed(int(cursor.posadd.y / (51.0 - fixed(getCVar("lexicon_cursor_ysens")))));
 
 	// set position
-	if(cursor.posadd.x != 0.0) { cursor.pos.x += cursor.poscalc.x; printbold(f:cursor.poscalc.x); }
+	if(cursor.posadd.x != 0.0) { cursor.pos.x += cursor.poscalc.x; }
 	if(cursor.posadd.y != 0.0) { cursor.pos.y += cursor.poscalc.y; }
 
 	// bounds
@@ -331,6 +344,7 @@ function int guiObjectCreate()
 	gui.objects[index].clickable					= false;
 	gui.objects[index].checkable					= false;
 	gui.objects[index].draggable					= false;
+	gui.objects[index].custom_drag_logic			= false;
 	gui.objects[index].drag_x						= true;
 	gui.objects[index].drag_y						= true;
     gui.objects[index].draglimit.x1					= 0.0;
@@ -346,7 +360,7 @@ function int guiObjectCreate()
 	gui.objects[index].enabled 						= true;
 	gui.objects[index].free 						= false;
 	gui.objects[index].clickhold 					= false;
-	gui.objects[index].background 					= false;
+	gui.objects[index].hoveralpha 					= false;
 	gui.objects[index].render_text 					= true;
     gui.objects[index].render_text2 				= false;
 	gui.objects[index].func							= nullFunc;
@@ -454,6 +468,7 @@ function void guiObjectsRun(void)
 /////////////////////////////////
 function void guiObjectUpdate(int i)
 {
+
 	// if the object is alive
 	if(!gui.objects[i].free)
 	{
@@ -494,7 +509,7 @@ function void guiObjectUpdate(int i)
 					// is the object clickable?
 					if(gui.objects[i].clickable)
 					{
-						// is the cursor dragging something?
+						// is the cursor not dragging something?
 						if(cursor.dragging == -1)
 						{
 							// is the objcet clicked?
@@ -509,6 +524,8 @@ function void guiObjectUpdate(int i)
 								{
 									// set clicked event for each frame
 									gui.objects[i].clicked = true;
+
+									// if dragging
 									if(gui.objects[i].draggable)
 									{
 										cursor.dragging = i;
@@ -573,30 +590,29 @@ function void guiObjectUpdate(int i)
 									gui.objects[i].textcolor.current = gui.objects[i].textcolor.normal;
 								}
 							}
-
-
-							// is the object hoverable?
-							if(gui.objects[i].hoverable)
-							{
-								// if object is checked
-								if(gui.objects[i].checked)
-								{
-									// hovered and checked color
-									gui.objects[i].color.current = gui.objects[i].color.checked_hover;
-									gui.objects[i].textcolor.current = gui.objects[i].textcolor.checked_hover;
-								}
-								// if object is not checked
-								else
-								{
-									// hovered not checked color
-									gui.objects[i].color.current = gui.objects[i].color.hover;
-									gui.objects[i].textcolor.current = gui.objects[i].textcolor.hover;
-								}
-
-								// set hovered flag
-								gui.objects[i].hovered = true;
-							}
 						}
+					}
+
+					// is the object hoverable?
+					if(gui.objects[i].hoverable)
+					{
+						// if object is checked
+						if(gui.objects[i].checked)
+						{
+							// hovered and checked color
+							gui.objects[i].color.current = gui.objects[i].color.checked_hover;
+							gui.objects[i].textcolor.current = gui.objects[i].textcolor.checked_hover;
+						}
+						// if object is not checked
+						else
+						{
+							// hovered not checked color
+							gui.objects[i].color.current = gui.objects[i].color.hover;
+							gui.objects[i].textcolor.current = gui.objects[i].textcolor.hover;
+						}
+
+						// set hovered flag
+						gui.objects[i].hovered = true;
 					}
 				}
 
@@ -646,36 +662,39 @@ function void guiObjectUpdate(int i)
 			//////////////////////////
 			if(cursor.dragging == i)
 			{
-				if(gui.objects[i].drag_x)
+				if(!gui.objects[i].custom_drag_logic)
 				{
-					gui.objects[i].pos.x1 = cursor.pos.x - cursor.posdrag.x1;
-					gui.objects[i].pos.x2 = gui.objects[i].pos.x1 + gui.objects[i].size.w;
-
-					if(gui.objects[i].pos.x1 < gui.objects[i].draglimit.x1)
+					if(gui.objects[i].drag_x)
 					{
-						gui.objects[i].pos.x1 = gui.objects[i].draglimit.x1;
+						gui.objects[i].pos.x1 = cursor.pos.x - cursor.posdrag.x1;
 						gui.objects[i].pos.x2 = gui.objects[i].pos.x1 + gui.objects[i].size.w;
-					}
-					if(gui.objects[i].pos.x2 > gui.objects[i].draglimit.x2)
-					{
-						gui.objects[i].pos.x2 = gui.objects[i].draglimit.x2;
-						gui.objects[i].pos.x1 = gui.objects[i].pos.x2 - gui.objects[i].size.w;
-					}
-				}
-				if(gui.objects[i].drag_y)
-				{
-					gui.objects[i].pos.y1 = cursor.pos.y - cursor.posdrag.y1;
-					gui.objects[i].pos.y2 = gui.objects[i].pos.y1 + cursor.posdrag.y2;
 
-					if(gui.objects[i].pos.y1 < gui.objects[i].draglimit.y1)
-					{
-						gui.objects[i].pos.y1 = gui.objects[i].draglimit.y1;
-						gui.objects[i].pos.y2 = gui.objects[i].pos.y1 + cursor.posdrag.y2;
+						if(gui.objects[i].pos.x1 < gui.objects[i].draglimit.x1)
+						{
+							gui.objects[i].pos.x1 = gui.objects[i].draglimit.x1;
+							gui.objects[i].pos.x2 = gui.objects[i].pos.x1 + gui.objects[i].size.w;
+						}
+						if(gui.objects[i].pos.x2 > gui.objects[i].draglimit.x2)
+						{
+							gui.objects[i].pos.x2 = gui.objects[i].draglimit.x2;
+							gui.objects[i].pos.x1 = gui.objects[i].pos.x2 - gui.objects[i].size.w;
+						}
 					}
-					if(gui.objects[i].pos.y2 > gui.objects[i].draglimit.y2)
+					if(gui.objects[i].drag_y)
 					{
-						gui.objects[i].pos.y2 = gui.objects[i].draglimit.y2;
-						gui.objects[i].pos.y1 = gui.objects[i].pos.y2 - cursor.posdrag.y2;
+						gui.objects[i].pos.y1 = cursor.pos.y - cursor.posdrag.y1;
+						gui.objects[i].pos.y2 = gui.objects[i].pos.y1 + cursor.posdrag.y2;
+
+						if(gui.objects[i].pos.y1 < gui.objects[i].draglimit.y1)
+						{
+							gui.objects[i].pos.y1 = gui.objects[i].draglimit.y1;
+							gui.objects[i].pos.y2 = gui.objects[i].pos.y1 + cursor.posdrag.y2;
+						}
+						if(gui.objects[i].pos.y2 > gui.objects[i].draglimit.y2)
+						{
+							gui.objects[i].pos.y2 = gui.objects[i].draglimit.y2;
+							gui.objects[i].pos.y1 = gui.objects[i].pos.y2 - cursor.posdrag.y2;
+						}
 					}
 				}
                 gui.objects[i].func(i);
@@ -798,22 +817,17 @@ function void guiObjectRender(int i)
                 }
                 else
                 {
-
                     if(gui.objects[i].hovered)
                     {
+						gui.objects[i].text_font_current = gui.objects[i].text_font_hovered;
                         gui.objects[i].text_current = gui.objects[i].text_hovered;
-                        gui.objects[i].text_font_current = gui.objects[i].text_font_hovered;
                     }
                     else
                     {
-                        gui.objects[i].text_current = gui.objects[i].text;
-                        gui.objects[i].text_font_current = gui.objects[i].text_font;
+						gui.objects[i].text_font_current = gui.objects[i].text_font;
+						gui.objects[i].text_current = gui.objects[i].text;
                     }
                 }
-
-
-
-
                 setFont(gui.objects[i].text_font_current);
 
 				// check what type of text we need to print
@@ -855,7 +869,6 @@ function void guiObjectRender(int i)
                     }
 
                 }
-
 
                 setFont(gui.objects[i].text_font_current2);
 
@@ -976,9 +989,7 @@ script "CL_GUI" enter clientside
 	if(!clientCheck()) { terminate; }
 
 	// setup gui
-	guiInit(0, 0);
-    guiObjectsClear();
-    guiCursorInit();
+	guiInit();
 
 	int state = 0;
 
@@ -990,11 +1001,35 @@ script "CL_GUI" enter clientside
         // run all gui objects
         guiObjectsRun();
 
+
+		// scene switch
+		if(gui.scene != gui.scene_prev)
+		{
+			switch(gui.scene)
+			{
+				case SCENE_FIRST_TIME:
+					ACS_NamedExecute("Scene_FirstTime_Run", 0);
+					break;
+
+				case SCENE_SELECTION:
+					ACS_NamedExecute("Scene_Selection_Run", 0);
+					break;
+			}
+		}
+
 		// reset hud ID counter
 		gui.nextid = 0;
 		gui.objcount = 0;
 		delay(1);
 		cursor.clicked_prev = cursor.clicked;
+
+		// if the resolution changes, terminate scenes and restart
+		if(GetCVar("vid_defwidth") != gui.vid_w || GetCVar("vid_defheight") != gui.vid_h)
+		{
+			ACS_NamedTerminate("Scene_FirstTime_Run", 0);
+			ACS_NamedTerminate("Scene_Selection_Run", 0);
+			restart;
+		}
 	}
 }
 

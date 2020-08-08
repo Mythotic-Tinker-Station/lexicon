@@ -487,7 +487,6 @@ function void guiObjectUpdate(int i)
 			// if the object is enabled
 			if(gui.objects[i].enabled)
 			{
-
 				gui.objects[i].clicked_prev = gui.objects[i].clicked;
 				gui.objects[i].checked_prev = gui.objects[i].checked;
 
@@ -914,7 +913,7 @@ function int guiPrintString(fixed x, fixed y, str color, str msg)
 	return gui.nextid;
 }
 
-function int guiPrintInt(fixed x, fixed y, str color, int msg)
+function int guiPrintInt(fixed x, fixed y, str color, str msg)
 {
 	gui.nextid++;
 	hudmessage(s:"\c[", s:color, s:"]", i:msg; 0, gui.nextid, 0, x, y, 0.1);

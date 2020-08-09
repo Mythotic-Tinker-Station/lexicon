@@ -11,6 +11,7 @@ strict namespace
 		#include "util.c"
 		#include "gui/screen.c"
 		#include "gui/cursor.c"
+		#include "gui/widgets.c"
 		#include "gui/gui.c"
 		#include "gui/widgets/button.c"
 		#include "replacer.c"

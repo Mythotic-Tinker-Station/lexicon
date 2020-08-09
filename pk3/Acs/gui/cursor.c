@@ -25,8 +25,8 @@ strict namespace Cursor
 		pos.y = Screen.size.hh;
 
 		// create image objects for cursor
-		image = Screen.ImageCreate(pos.x, pos.y, "White", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		image2 = Screen.ImageCreate(pos.x, pos.y, "White", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		image = Screen.ImageCreate(pos.x, pos.y, "Red", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		image2 = Screen.ImageCreate(pos.x, pos.y, "Red", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 	}
 
 	function void Run()
@@ -60,13 +60,13 @@ strict namespace Cursor
 			clicked = false;
 		}
 		Screen.ImageSetPos(image, pos.x, pos.y);
-		Screen.ImageDraw(image, "CURSORFONT");
+		Screen.ImageDraw(image, "CURSORFONT", "a");
 
 		// render shadow
 		if((bool)getCVar("lexicon_cursor_shadow") == true)
 		{
 			Screen.ImageSetPos(image2, pos.x, pos.y);
-			Screen.ImageDraw(image2, "CURSOR_S");
+			Screen.ImageDraw(image2, "CURSORFONT", "b");
 		}
 
 		clicked_prev = clicked;

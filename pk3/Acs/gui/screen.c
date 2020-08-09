@@ -78,11 +78,11 @@ strict namespace Screen
 
 	// draw an image object
 	// sending the font string here has to happen because of volatile strings(they last only 1 tic)
-	function int ImageDraw(int id, str font)
+	function int ImageDraw(int id, str font, str letter)
 	{
 		nextid++;
 		setFont(font);
-		hudMessage(s:"\c[", s:images[id].color, s:"]", s:"a"; 0, nextid, 0, images[id].pos.x+images[id].align.x, images[id].pos.y+images[id].align.y, 0.1);
+		hudMessage(s:"\c[", s:images[id].color, s:"]", s:letter; 0, nextid, 0, images[id].pos.x+images[id].align.x, images[id].pos.y+images[id].align.y, 0.1);
 		return nextid;
 	}
 

@@ -2,8 +2,6 @@
 
 strict namespace Gui
 {
-
-
 	////////////////////////////////////////////////////////
 	// gui functions
 	////////////////////////////////////////////////////////
@@ -99,7 +97,7 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		button.Create(100.0, 100.0, 600.0, 150.0);
+		button.Create(100.0, 100.0, 300.0, "test");
 
 		while(1)
 		{

@@ -26,7 +26,8 @@ strict namespace Widgets
 		bool hoverable;							// is this widget hoverable?
 
 		// internal vars
-		bool hovered;
+		bool hovered;							// true when the mouse is hovering over this widget
+		bool clicked;							// true when the mouse is clicking this widget
 
 		// callback events
 		void function(int)? func_update;		// callback function for every update
@@ -34,23 +35,38 @@ strict namespace Widgets
 		void function(int)? func_hovered;		// callback function when this widget is hovered
 		void function(int)? func_moved;			// callback function when this widget position or size changes
 
-		int images[32];							// images to display
+		// custom variables used by widget definitions
+		fixed customFixed[32];					// custom fixed vars for widgets to use
+		int customInt[32];						// custom int vars for widgets to use
+		bool customBool[32];					// custom bool vars for widgets to use
+		str customString[32];					// custom string vars for widgets to use
+
 	};
-	struct objT obj[MAX_WIDGETS];	// list of all the widgets
+	struct objT obj[MAX_WIDGETS];				// list of all the widgets
 
 	// create a basic widget
 	function int Create()
 	{
 		int id = FindFreeSlot();
 		if(id == -1) { Log(s:"GUI Error: Could not create widget, max number of widgets reached."); return -1; }
+
+		// set widget's default values
+		// the system never actually deletes a widget in the pool
+		// it simply marks it's slot to be overwriten when the alive property is false
 		obj[id].pos.x1 			= 0.0;
 		obj[id].pos.y1 			= 0.0;
 		obj[id].pos.x2 			= 10.0;
 		obj[id].pos.y2 			= 10.0;
-		obj[id].size.w 			= 10.0;
-		obj[id].size.h 			= 10.0;
-		obj[id].size.wh 		= 5.0;
-		obj[id].size.hh 		= 5.0;
+		obj[id].pos_prev.x1 	= 0.0;
+		obj[id].pos_prev.y1 	= 0.0;
+		obj[id].pos_prev.x2 	= 10.0;
+		obj[id].pos_prev.y2 	= 10.0;
+		obj[id].size.w 			= obj[id].pos.x2-obj[id].pos.x1;
+		obj[id].size.h 			= obj[id].pos.y2-obj[id].pos.y1;
+		obj[id].size.wh 		= obj[id].size.w/2.0;
+		obj[id].size.hh 		= obj[id].size.h/2.0;
+		obj[id].center.x 		= obj[id].pos.x1+obj[id].size.wh;
+		obj[id].center.y 		= obj[id].pos.y1+obj[id].size.hh;
 		obj[id].alive 			= true;
 		obj[id].visible 		= true;
 		obj[id].enabled 		= true;
@@ -63,6 +79,15 @@ strict namespace Widgets
 		obj[id].func_hovered	= nullFunc;
 		obj[id].func_moved		= nullFunc;
 		obj[id].hovered			= false;
+		obj[id].clicked			= false;
+		for(int i = 0; i < 32; i++)
+		{
+			obj[id].customFixed[i] = 0.0;
+			obj[id].customInt[i] = 0;
+			obj[id].customBool[i] = false;
+			obj[id].customString[i] = "";
+		}
+
 		return id;
 	}
 
@@ -118,31 +143,9 @@ strict namespace Widgets
 				// is the user able to interact with this widget?
 				if(obj[id].enabled)
 				{
-					// is cursor is within bounds?
+					// is cursor within bounds?
 					if(cursor.pos.x > obj[id].pos.x1 && cursor.pos.x < obj[id].pos.x2 && cursor.pos.y > obj[id].pos.y1 && cursor.pos.y < obj[id].pos.y2)
 					{
-						// is this object clickable?
-						if(obj[id].clickable)
-						{
-							// is the user clicking the mouse?
-							if(cursor.clicked)
-							{
-								// is the widget set to call it's clicked function every frame as the user holds the mouse?
-								if(obj[id].click_repeat)
-								{
-									obj[id].func_clicked(id);
-								}
-								// only call the clicked function once
-								else
-								{
-									if(!cursor.clicked_prev)
-									{
-										obj[id].func_clicked(id);
-									}
-								}
-							}
-						}
-
 						// is this object hoverable?
 						if(obj[id].hoverable)
 						{
@@ -161,20 +164,56 @@ strict namespace Widgets
 								}
 							}
 						}
+
+						// is this object clickable?
+						if(obj[id].clickable)
+						{
+							// is the user clicking the mouse?
+							if(cursor.clicked)
+							{
+								// set object's clicked bool
+								obj[id].clicked = true;
+
+								// is the widget set to call it's clicked function every frame as the user holds the mouse?
+								if(obj[id].click_repeat)
+								{
+									// call object's clicked callback
+									obj[id].func_clicked(id);
+								}
+								// only call the clicked function once
+								else
+								{
+									// was the cursor clicked on the previous frame?
+									if(!cursor.clicked_prev)
+									{
+										// call object's clicked callback
+										obj[id].func_clicked(id);
+									}
+								}
+							}
+							// user is no longer clicking
+							else
+							{
+								// unset object's clicked bool
+								obj[id].clicked = false;
+							}
+						}
 					}
 					// cursor is not within bounds
 					else
 					{
 						obj[id].hovered = false;
+						obj[id].clicked = false;
 					}
 
 					// has the widget moved or changed size?
 					if(obj[id].pos_prev.x1 != obj[id].pos.x1 || obj[id].pos_prev.y1 != obj[id].pos.y1 || obj[id].pos_prev.x2 != obj[id].pos.x2 || obj[id].pos_prev.y2 != obj[id].pos.y2)
 					{
+						// call object's moved callback
 						obj[id].func_moved(id);
 					}
-
 				}
+				// call object's update callback
 				obj[id].func_update(id);
 
 				obj[id].pos_prev.x1 = obj[id].pos.x1;

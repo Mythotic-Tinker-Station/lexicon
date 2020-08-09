@@ -4,6 +4,7 @@
 
 strict namespace Cursor
 {
+
 	// the T at the end of this name is a special BCS thing
 	// see: https://github.com/wormt/bcc/wiki/Declarations#type-names
 
@@ -23,10 +24,6 @@ strict namespace Cursor
 		// set the cursor to the center of the screen on start
 		pos.x = Screen.size.wh;
 		pos.y = Screen.size.hh;
-
-		// create image objects for cursor
-		image = Screen.ImageCreate(pos.x, pos.y, "Red", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		image2 = Screen.ImageCreate(pos.x, pos.y, "Red", Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 	}
 
 	function void Run()
@@ -59,14 +56,13 @@ strict namespace Cursor
 		{
 			clicked = false;
 		}
-		Screen.ImageSetPos(image, pos.x, pos.y);
-		Screen.ImageDraw(image, "CURSORFONT", "a");
+
+		Screen.Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 
 		// render shadow
 		if((bool)getCVar("lexicon_cursor_shadow") == true)
 		{
-			Screen.ImageSetPos(image2, pos.x, pos.y);
-			Screen.ImageDraw(image2, "CURSORFONT", "b");
+			Screen.Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 		}
 
 		clicked_prev = clicked;

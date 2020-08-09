@@ -62,41 +62,17 @@ strict namespace Screen
 		nextid = 0;
 	}
 
-	// create an image object
-	function int ImageCreate(fixed x, fixed y, str color = "White", fixed xalign = 0.0, fixed yalign = 0.0)
-	{
-		image_amount++;
-		images[image_amount].pos.x = x;
-		images[image_amount].pos.y = y;
-		images[image_amount].align.x = xalign;
-		images[image_amount].align.y = yalign;
-		images[image_amount].color = color;
-		return image_amount;
-	}
-
-
-
-	// draw an image object
-	// sending the font string here has to happen because of volatile strings(they last only 1 tic)
-	function int ImageDraw(int id, str font, str letter)
+	// draw text or an image(alias for hudmessage with font arg and auto id)
+	function int Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0)
 	{
 		nextid++;
 		setFont(font);
-		hudMessage(s:"\c[", s:images[id].color, s:"]", s:letter; 0, nextid, 0, images[id].pos.x+images[id].align.x, images[id].pos.y+images[id].align.y, 0.1);
+		hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, nextid, 0, x+xalign, y+yalign, 0.01);
 		return nextid;
 	}
-
-	// set the position of an image object
-	function void ImageSetPos(int id, fixed x, fixed y)
-	{
-		images[id].pos.x = x;
-		images[id].pos.y = y;
-	}
-
-	// set the origin alignment of an image object
-	function void ImageSetAlignments(int id, fixed x, fixed y)
-	{
-		images[id].align.x = x;
-		images[id].align.y = y;
-	}
 }
+
+
+
+
+

@@ -96,9 +96,8 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		int test1 = button.Create(100.0, 100.0, 128.0, "test1");
-		int test2 = button.Create(300.0, 100.0, 128.0, "test2");
-		Widgets.obj[test2].customBool[Button.CUSTOM_ROUND] = true;
+		int test1 = Panel.Create(100.0, 100.0, 128.0, 128.0, "test1");
+		Widgets.obj[test1].customBool[Button.CUSTOM_ROUND] = true;
 
 		while(1)
 		{

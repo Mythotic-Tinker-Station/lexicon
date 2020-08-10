@@ -13,6 +13,7 @@ strict namespace
 		#include "gui/cursor.c"
 		#include "gui/widgets.c"
 		#include "gui/gui.c"
+		#include "gui/widgets/panel.c"
 		#include "gui/widgets/button.c"
 		#include "replacer.c"
 		#include "patches.c"

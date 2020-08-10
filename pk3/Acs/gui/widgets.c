@@ -34,6 +34,10 @@ strict namespace Widgets
 		int event_clicked_count;						// number of clicked hooks
 		int event_hovered_count;						// number of hovered hooks
 		int event_moved_count;							// number of moved hooks
+		int custom_fixed_count;							// number of custom fixed vars
+		int custom_int_count;							// number of custom int vars
+		int custom_bool_count;							// number of custom bool vars
+		int custom_string_count;						// number of custom string vars
 
 		// callback events
 		void function(int)? event_update[MAX_HOOKS];	// callback function for every update
@@ -42,13 +46,13 @@ strict namespace Widgets
 		void function(int)? event_moved[MAX_HOOKS];		// callback function when this widget position or size changes
 
 		// custom variables used by widget definitions
-		fixed customFixed[MAX_CUSTOMS];					// custom fixed vars for widgets to use
-		int customInt[MAX_CUSTOMS];						// custom int vars for widgets to use
-		bool customBool[MAX_CUSTOMS];					// custom bool vars for widgets to use
-		str customString[MAX_CUSTOMS];					// custom string vars for widgets to use
+		fixed custom_fixed[MAX_CUSTOMS];				// custom fixed vars for widgets to use
+		int custom_int[MAX_CUSTOMS];					// custom int vars for widgets to use
+		bool custom_bool[MAX_CUSTOMS];					// custom bool vars for widgets to use
+		str custom_string[MAX_CUSTOMS];					// custom string vars for widgets to use
 
 	};
-	struct objT obj[MAX_WIDGETS];				// list of all the widgets
+	struct objT obj[MAX_WIDGETS];						// list of all the widgets
 
 	// create a basic widget
 	function int Create()
@@ -89,10 +93,10 @@ strict namespace Widgets
 		// default all custom vars
 		for(int i = 0; i < MAX_CUSTOMS; i++)
 		{
-			obj[id].customFixed[i] = 0.0;
-			obj[id].customInt[i] = 0;
-			obj[id].customBool[i] = false;
-			obj[id].customString[i] = "";
+			obj[id].custom_fixed[i] = 0.0;
+			obj[id].custom_int[i] = 0;
+			obj[id].custom_bool[i] = false;
+			obj[id].custom_string[i] = "";
 		}
 
 		// null the hooks
@@ -219,6 +223,87 @@ strict namespace Widgets
 			}
 		}
 	}
+
+	// create a fixed variable
+	function int AddFixed(int id, fixed value)
+	{
+		obj[id].custom_fixed[obj[id].custom_fixed_count] = value;
+		obj[id].custom_fixed_count++;
+		return obj[id].custom_fixed_count-1;
+	}
+
+	// create a int variable
+	function int AddInt(int id, int value)
+	{
+		obj[id].custom_int[obj[id].custom_int_count] = value;
+		obj[id].custom_int_count++;
+		return obj[id].custom_int_count-1;
+	}
+
+	// create a bool variable
+	function int AddBool(int id, bool value)
+	{
+		obj[id].custom_bool[obj[id].custom_bool_count] = value;
+		obj[id].custom_bool_count++;
+		return obj[id].custom_bool_count-1;
+	}
+
+	// create a string variable
+	function int AddString(int id, str value)
+	{
+		obj[id].custom_string[obj[id].custom_string_count] = value;
+		obj[id].custom_string_count++;
+		return obj[id].custom_string_count-1;
+	}
+
+	// set a fixed variable
+	function void SetFixed(int id, int vid, fixed value)
+	{
+		obj[id].custom_fixed[vid] = value;
+	}
+
+	// set a int variable
+	function void SetInt(int id, int vid, int value)
+	{
+		obj[id].custom_int[vid] = value;
+	}
+
+	// set a bool variable
+	function void SetBool(int id, int vid, bool value)
+	{
+		obj[id].custom_bool[vid] = value;
+	}
+
+	// set a string variable
+	function void SetString(int id, int vid, str value)
+	{
+		obj[id].custom_string[vid] = value;
+	}
+
+	// get a fixed variable
+	function fixed GetFixed(int id, int vid)
+	{
+		return obj[id].custom_fixed[vid];
+	}
+
+	// get a int variable
+	function int GetInt(int id, int vid)
+	{
+		return obj[id].custom_int[vid];
+	}
+
+	// get a bool variable
+	function bool GetBool(int id, int vid)
+	{
+		return obj[id].custom_bool[vid];
+	}
+
+	// get a string variable
+	function str GetString(int id, int vid)
+	{
+		return obj[id].custom_string[vid];
+	}
+
 
 	// widget functionalities
 	function void Update(int id)

@@ -59,15 +59,22 @@ strict namespace Screen
 	// clear all hudmessage ids
 	function void ResetHudIDs()
 	{
-		nextid = 0;
+		nextid = 65535;
 	}
 
 	// draw text or an image(alias for hudmessage with font arg and auto id)
-	function int Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0)
+	function int Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
 	{
-		nextid++;
+		nextid--;
 		setFont(font);
-		hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, nextid, 0, x+xalign, y+yalign, 0.01);
+		if(id > -1)
+		{
+			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, id, 0, x+xalign, y+yalign, 0.01);
+		}
+		else
+		{
+			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, nextid, 0, x+xalign, y+yalign, 0.01);
+		}
 		return nextid;
 	}
 }

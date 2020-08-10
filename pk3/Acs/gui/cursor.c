@@ -42,8 +42,8 @@ strict namespace Cursor
 		if(delta.y != 0.0) { pos.y += calc.y; }
 
 		// bounds
-		if(pos.x < 0.0) 		{ pos.x = 0.0; }
-		if(pos.y < 0.0) 		{ pos.y = 0.0; }
+		if(pos.x < 0.0) 			{ pos.x = 0.0; }
+		if(pos.y < 0.0) 			{ pos.y = 0.0; }
 		if(pos.x > Screen.size.w) 	{ pos.x = Screen.size.w; }
 		if(pos.y > Screen.size.h) 	{ pos.y = Screen.size.h; }
 
@@ -57,13 +57,14 @@ strict namespace Cursor
 			clicked = false;
 		}
 
-		Screen.Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		Screen.Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP, 1);
 
 		// render shadow
 		if((bool)getCVar("lexicon_cursor_shadow") == true)
 		{
-			Screen.Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+			Screen.Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP, 2);
 		}
+
 
 		clicked_prev = clicked;
 	}

@@ -1,7 +1,7 @@
 
 
 
-strict namespace button
+strict namespace Button
 {
 	enum
 	{
@@ -10,10 +10,12 @@ strict namespace button
 		CUSTOM_ROUND = 2,
 	};
 
-	function int Create(fixed x, fixed y, fixed w, str text)
+	int text;
+
+	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
 		// create a new eidget object
-		int id = Widgets.Create();
+		int id = Panel.Create(x, y, w, h);
 
 		// make it clickable and hoverable
 		Widgets.obj[id].clickable = true;
@@ -23,23 +25,12 @@ strict namespace button
 		Widgets.obj[id].hover_repeat = true;
 		Widgets.obj[id].click_repeat = true;
 
-		// position
-		Widgets.obj[id].pos.x1 = x;
-		Widgets.obj[id].pos.y1 = y;
-		Widgets.obj[id].pos.x2 = x+w;
-		Widgets.obj[id].pos.y2 = y+28.0;
-
 		// add hooks to events
 		Widgets.AddUpdateHook(id, Event_Update);
 		Widgets.AddClickedHook(id, Event_Clicked);
 		Widgets.AddHoveredHook(id, Event_Hovered);
 
-		// we changed the positional vars, recalc the sizes
-		Widgets.CalcSizes(id);
-
-		Widgets.obj[id].customString[CUSTOM_COLOR] = "Lime";
-		Widgets.obj[id].customString[CUSTOM_TEXT] = text;
-		Widgets.obj[id].customBool[CUSTOM_ROUND] = false;
+		text = Widgets.AddString(id, t);
 
 		return id;
 	}
@@ -47,48 +38,21 @@ strict namespace button
 	function void Event_Update(int id)
 	{
 		// text
-		Screen.Draw("SMALLFONT", Widgets.obj[id].customString[CUSTOM_TEXT], "White", Widgets.obj[id].center.x, Widgets.obj[id].center.y);
+		Screen.Draw("SMALLFONT", Widgets.GetString(id, text), "White", Widgets.obj[id].center.x, Widgets.obj[id].center.y);
 
-		// left corner image
-		if(Widgets.obj[id].customBool[CUSTOM_ROUND])
-		{
-			Screen.Draw("UIFONT", "a", Widgets.obj[id].customString[CUSTOM_COLOR], Widgets.obj[id].pos.x1, Widgets.obj[id].pos.y1, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		}
-		else
-		{
-			Screen.Draw("UIFONT", "b", Widgets.obj[id].customString[CUSTOM_COLOR], Widgets.obj[id].pos.x1, Widgets.obj[id].pos.y1, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		}
-
-		// filler images
-		for(int i = 0; i < (int(Widgets.obj[id].size.w)/28)-1; i++)
-		{
-			Screen.Draw("UIFONT", "b", Widgets.obj[id].customString[CUSTOM_COLOR], Widgets.obj[id].pos.x1+(fixed(i)*28.0)+28.0, Widgets.obj[id].pos.y1, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		}
-
-		// right corner image
-		if(Widgets.obj[id].customBool[CUSTOM_ROUND])
-		{
-			Screen.Draw("UIFONT", "c", Widgets.obj[id].customString[CUSTOM_COLOR], Widgets.obj[id].pos.x2, Widgets.obj[id].pos.y1, Screen.XALIGN_RIGHT, Screen.YALIGN_TOP);
-		}
-		else
-		{
-			Screen.Draw("UIFONT", "b", Widgets.obj[id].customString[CUSTOM_COLOR], Widgets.obj[id].pos.x2, Widgets.obj[id].pos.y1, Screen.XALIGN_RIGHT, Screen.YALIGN_TOP);
-		}
-
-		// set default color
-		Widgets.obj[id].customString[CUSTOM_COLOR] = "UI_Lime";
+		Widgets.SetString(id, Panel.color, "White");
 	}
 
 	function void Event_Hovered(int id)
 	{
 		// set hovered color
-		Widgets.obj[id].customString[CUSTOM_COLOR] = "UI_Red";
+		Widgets.SetString(id, Panel.color, "Red");
 	}
 
 	function void Event_Clicked(int id)
 	{
 		// set clicked color
-		Widgets.obj[id].customString[CUSTOM_COLOR] = "UI_Blue";
+		Widgets.SetString(id, Panel.color, "Blue");
 	}
 
 }

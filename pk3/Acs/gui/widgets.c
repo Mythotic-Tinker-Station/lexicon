@@ -4,42 +4,48 @@ strict namespace Widgets
 	enum : int
 	{
 		// Hud alignment
-		MAX_WIDGETS 		= 256,				// Max number of widgets
+		MAX_WIDGETS 		= 256,						// Max number of widgets
+		MAX_HOOKS			= 6,						// Max number of hooks
+		MAX_CUSTOMS			= 32,						// Max number of custom variables
 	};
 
 	// base widget
 	struct objT
 	{
 		// properties
-		struct vec2x2T pos;						// x1, y1, x2, y2 positions of widget
-		struct vec2x2T pos_prev;				// x1, y1, x2, y2 positions of widget on the previous frame
-		struct sizeT size;						// w, h, wh, hh sizes of widget
-		struct vec2T center;					// x, y of the center of the widget
+		struct vec2x2T pos;								// x1, y1, x2, y2 positions of widget
+		struct vec2x2T pos_prev;						// x1, y1, x2, y2 positions of widget on the previous frame
+		struct sizeT size;								// w, h, wh, hh sizes of widget
+		struct vec2T center;							// x, y of the center of the widget
 
 		// flags
-		bool alive;								// is this widget alive?(false marks this to be overwritten by a new widget)
-		bool visible;							// render this widget?
-		bool enabled;							// can the user intereact with this widget?
-		bool click_repeat;						// does this widget call it's clicked function every frame?
-		bool hover_repeat;						// does this widget call it's hovered function every frame?
-		bool clickable;							// is this widget clickable?
-		bool hoverable;							// is this widget hoverable?
+		bool alive;										// is this widget alive?(false marks this to be overwritten by a new widget)
+		bool visible;									// render this widget?
+		bool enabled;									// can the user intereact with this widget?
+		bool click_repeat;								// does this widget call it's clicked function every frame?
+		bool hover_repeat;								// does this widget call it's hovered function every frame?
+		bool clickable;									// is this widget clickable?
+		bool hoverable;									// is this widget hoverable?
 
 		// internal vars
-		bool hovered;							// true when the mouse is hovering over this widget
-		bool clicked;							// true when the mouse is clicking this widget
+		bool hovered;									// true when the mouse is hovering over this widget
+		bool clicked;									// true when the mouse is clicking this widget
+		int event_update_count;							// number of update hooks
+		int event_clicked_count;						// number of clicked hooks
+		int event_hovered_count;						// number of hovered hooks
+		int event_moved_count;							// number of moved hooks
 
 		// callback events
-		void function(int)? func_update;		// callback function for every update
-		void function(int)? func_clicked;		// callback function when this widget is clicked
-		void function(int)? func_hovered;		// callback function when this widget is hovered
-		void function(int)? func_moved;			// callback function when this widget position or size changes
+		void function(int)? event_update[MAX_HOOKS];	// callback function for every update
+		void function(int)? event_clicked[MAX_HOOKS];	// callback function when this widget is clicked
+		void function(int)? event_hovered[MAX_HOOKS];	// callback function when this widget is hovered
+		void function(int)? event_moved[MAX_HOOKS];		// callback function when this widget position or size changes
 
 		// custom variables used by widget definitions
-		fixed customFixed[32];					// custom fixed vars for widgets to use
-		int customInt[32];						// custom int vars for widgets to use
-		bool customBool[32];					// custom bool vars for widgets to use
-		str customString[32];					// custom string vars for widgets to use
+		fixed customFixed[MAX_CUSTOMS];					// custom fixed vars for widgets to use
+		int customInt[MAX_CUSTOMS];						// custom int vars for widgets to use
+		bool customBool[MAX_CUSTOMS];					// custom bool vars for widgets to use
+		str customString[MAX_CUSTOMS];					// custom string vars for widgets to use
 
 	};
 	struct objT obj[MAX_WIDGETS];				// list of all the widgets
@@ -47,7 +53,10 @@ strict namespace Widgets
 	// create a basic widget
 	function int Create()
 	{
+		// find a slot to put widget in
 		int id = FindFreeSlot();
+
+		// max number of widgets reached
 		if(id == -1) { Log(s:"GUI Error: Could not create widget, max number of widgets reached."); return -1; }
 
 		// set widget's default values
@@ -74,18 +83,25 @@ strict namespace Widgets
 		obj[id].hover_repeat 	= false;
 		obj[id].clickable		= false;
 		obj[id].hoverable 		= false;
-		obj[id].func_update		= nullFunc;
-		obj[id].func_clicked	= nullFunc;
-		obj[id].func_hovered	= nullFunc;
-		obj[id].func_moved		= nullFunc;
 		obj[id].hovered			= false;
 		obj[id].clicked			= false;
-		for(int i = 0; i < 32; i++)
+
+		// default all custom vars
+		for(int i = 0; i < MAX_CUSTOMS; i++)
 		{
 			obj[id].customFixed[i] = 0.0;
 			obj[id].customInt[i] = 0;
 			obj[id].customBool[i] = false;
 			obj[id].customString[i] = "";
+		}
+
+		// null the hooks
+		for(int i = 0; i < MAX_HOOKS; i++)
+		{
+			obj[id].event_update[i]	= nullFunc;
+			obj[id].event_clicked[i] = nullFunc;
+			obj[id].event_hovered[i] = nullFunc;
+			obj[id].event_moved[i] = nullFunc;
 		}
 
 		return id;
@@ -128,6 +144,82 @@ strict namespace Widgets
 		obj[id].center.y = obj[id].pos.y1+obj[id].size.hh;
 	}
 
+	// hook a function to the update event
+	function void AddUpdateHook(int id, void function(int)? func)
+	{
+		obj[id].event_update[obj[id].event_update_count] = func;
+		obj[id].event_update_count++;
+	}
+
+	// hook a function to the clicked event
+	function void AddClickedHook(int id, void function(int)? func)
+	{
+		obj[id].event_clicked[obj[id].event_clicked_count] = func;
+		obj[id].event_clicked_count++;
+	}
+
+	// hook a function to the hovered event
+	function void AddHoveredHook(int id, void function(int)? func)
+	{
+		obj[id].event_hovered[obj[id].event_hovered_count] = func;
+		obj[id].event_hovered_count++;
+	}
+
+	// hook a function to the hovered event
+	function void AddMovedHook(int id, void function(int)? func)
+	{
+		obj[id].event_moved[obj[id].event_moved_count] = func;
+		obj[id].event_moved_count++;
+	}
+
+	// call all update hooks
+	function void CallUpdateHooks(int id)
+	{
+		for(int i = 0; i < MAX_HOOKS; i++)
+		{
+			if(obj[id].event_update[i] != nullFunc)
+			{
+				obj[id].event_update[i](id);
+			}
+		}
+	}
+
+	// call all hovered hooks
+	function void CallHoveredHooks(int id)
+	{
+		for(int i = 0; i < MAX_HOOKS; i++)
+		{
+			if(obj[id].event_hovered[i] != nullFunc)
+			{
+				obj[id].event_hovered[i](id);
+			}
+		}
+	}
+
+	// call all clicked hooks
+	function void CallClickedHooks(int id)
+	{
+		for(int i = 0; i < MAX_HOOKS; i++)
+		{
+			if(obj[id].event_clicked[i] != nullFunc)
+			{
+				obj[id].event_clicked[i](id);
+			}
+		}
+	}
+
+	// call all clicked hooks
+	function void CallMovedHooks(int id)
+	{
+		for(int i = 0; i < MAX_HOOKS; i++)
+		{
+			if(obj[id].event_moved[i] != nullFunc)
+			{
+				obj[id].event_moved[i](id);
+			}
+		}
+	}
+
 	// widget functionalities
 	function void Update(int id)
 	{
@@ -152,14 +244,14 @@ strict namespace Widgets
 							// is the widget set to call it's hovered function every frame?
 							if(obj[id].hover_repeat)
 							{
-								obj[id].func_hovered(id);
+								CallHoveredHooks(id);
 							}
 							// only call the clicked function once
 							else
 							{
 								if(!obj[id].hovered)
 								{
-									obj[id].func_hovered(id);
+									CallHoveredHooks(id);
 									obj[id].hovered = true;
 								}
 							}
@@ -178,7 +270,7 @@ strict namespace Widgets
 								if(obj[id].click_repeat)
 								{
 									// call object's clicked callback
-									obj[id].func_clicked(id);
+									CallClickedHooks(id);
 								}
 								// only call the clicked function once
 								else
@@ -187,7 +279,7 @@ strict namespace Widgets
 									if(!cursor.clicked_prev)
 									{
 										// call object's clicked callback
-										obj[id].func_clicked(id);
+										CallClickedHooks(id);
 									}
 								}
 							}
@@ -210,11 +302,11 @@ strict namespace Widgets
 					if(obj[id].pos_prev.x1 != obj[id].pos.x1 || obj[id].pos_prev.y1 != obj[id].pos.y1 || obj[id].pos_prev.x2 != obj[id].pos.x2 || obj[id].pos_prev.y2 != obj[id].pos.y2)
 					{
 						// call object's moved callback
-						obj[id].func_moved(id);
+						CallMovedHooks(id);
 					}
 				}
 				// call object's update callback
-				obj[id].func_update(id);
+				CallUpdateHooks(id);
 
 				obj[id].pos_prev.x1 = obj[id].pos.x1;
 				obj[id].pos_prev.y1 = obj[id].pos.y1;

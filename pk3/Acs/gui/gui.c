@@ -87,7 +87,6 @@ strict namespace Gui
 	////////////////////////////////////////////////////////
 	script "CL_GUI" enter clientside
 	{
-
 		// check if we are on the hub map
 		if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
 
@@ -97,7 +96,9 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		button.Create(100.0, 100.0, 300.0, "test");
+		int test1 = button.Create(100.0, 100.0, 128.0, "test1");
+		int test2 = button.Create(300.0, 100.0, 128.0, "test2");
+		Widgets.obj[test2].customBool[Button.CUSTOM_ROUND] = true;
 
 		while(1)
 		{

@@ -1,4 +1,7 @@
-
+/*
+	Lexicon Scripts by Tribeam
+	With help from Popsoap, Michaelis
+*/
 
 #import "../../compiler/lib/zcommon.bcs"
 #library "lexicon"

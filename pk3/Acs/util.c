@@ -1,6 +1,8 @@
 
-
-
+/*
+	Lexicon Scripting by Tribeam
+	With help from Popsoap
+*/
 
 
 // size
@@ -59,7 +61,7 @@ function str getDynLangEntry(str p1, str p2)
 // a null function for blank ui actions
 function void nullFunc(int i)
 {
-    print(s:"No action for ui_obj number: " , i:i);
+    print(s:"No action for obj number: " , i:i);
 }
 
 // checks if the currently running clientside script is the local client

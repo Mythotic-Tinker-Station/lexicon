@@ -1,4 +1,7 @@
-
+/*
+	Lexicon UI by Tribeam
+	With help from Popsoap, Michaelis
+*/
 
 
 

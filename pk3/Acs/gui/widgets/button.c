@@ -1,4 +1,7 @@
-
+/*
+	Lexicon UI by Tribeam
+	With help from Popsoap, Michaelis
+*/
 
 
 strict namespace Button
@@ -14,7 +17,7 @@ strict namespace Button
 
 	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
-		// create a new eidget object
+		// create a new panel object
 		int id = Panel.Create(x, y, w, h);
 
 		// make it clickable and hoverable

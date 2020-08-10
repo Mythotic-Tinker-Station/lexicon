@@ -1,6 +1,10 @@
+/*
+	Lexicon UI by Tribeam
+	With help from Popsoap, Michaelis
+*/
+
 strict namespace Panel
 {
-
 	int color;
 	int round;
 

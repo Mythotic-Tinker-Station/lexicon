@@ -1,3 +1,49 @@
+/*
+	Lexicon UI by Tribeam
+	With help from Popsoap, Michaelis
+
+	Widgets Namespace:
+		int 	Widgets.Create()														// Create a new default widget; returns an id number of said widget;
+		void 	Widgets.Delete(int id)													// Deletes a widget;
+		int 	Widgets.FindFreeSlot()													// Finds the next available slot in the widget pool;
+		void 	Widgets.Run()															// Run the widgets!;
+		void	Widgets.CalcSizes(int id)												// Recalculates the width, height, half width and half height vars;
+		void	Widgets.AddUpdateHook(int id, function f)								// Adds a function to the update event;
+		void	Widgets.AddHoveredHook(int id, function f)								// Adds a function to the hovered event;
+		void	Widgets.AddClickedHook(int id, function f)								// Adds a function to the clicked event;
+		void	Widgets.AddMovedHook(int id, function f)								// Adds a function to the moved event;
+		void	Widgets.CallUpdateHooks(int id)											// Calls all the functions hooked to the update event;
+		void	Widgets.CallHoveredHooks(int id)										// Calls all the functions hooked to the hovered event;
+		void	Widgets.CallClickedHooks(int id)										// Calls all the functions hooked to the clicked event;
+		void	Widgets.CallMovedHooks(int id)											// Calls all the functions hooked to the moved event;
+		int		Widgets.AddFixed(int id, fixed value)									// Adds a custom fixed variable to the widget; returns an id number of said variable;
+		int		Widgets.AddInt(int id, int value)										// Adds a custom integer variable to the widget; returns an id number of said variable;
+		int		Widgets.AddBool(int id, bool value)										// Adds a custom boolean variable to the widget; returns an id number of said variable;
+		int		Widgets.AddString(int id, str value)									// Adds a custom string variable to the widget; returns an id number of said variable;
+		void	Widgets.SetFixed(int id, int varid, fixed value)						// Sets a custom fixed variable of the widget;
+		void	Widgets.SetInt(int id, int varid, int value)							// Sets a custom integer variable of the widget;
+		void	Widgets.SetBool(int id, int varid, bool value)							// Sets a custom boolean variable of the widget;
+		void	Widgets.SetString(int id, int varid)									// Sets a custom string variable of the widget;
+		fixed	Widgets.GetFixed(int id, int varid)										// Returns a custom fixed variable value of the widget;
+		int		Widgets.GetInt(int id, int varid)										// Returns a custom integer variable value of the widget;
+		bool	Widgets.GetBool(int id, int varid)										// Returns a custom boolean variable value of the widget;
+		str		Widgets.GetString(int id, int varid)									// Returns a custom string variable value of the widget;
+		void	Widgets.SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
+		void	Widgets.SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
+		void	Widgets.SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
+		void	Widgets.SetY2(int id, fixed y2)											// Sets the y2 point of the widget;
+		fixed	Widgets.GetX1(int id)													// Returns the x1 point of the widget;
+		fixed	Widgets.GetY1(int id)													// Returns the x2 point of the widget;
+		fixed	Widgets.GetX2(int id)													// Returns the y1 point of the widget;
+		fixed	Widgets.GetY2(int id)													// Returns the y2 point of the widget;
+		void 	Widgets.SetTopLeftPosition(int id, fixed x, fixed y)					// Sets the x, y of the top left position of the widget;
+		void 	Widgets.SetBottomRightPosition(int id, fixed x, fixed y)				// Sets the x, y of the bottom right position of the widget;
+		void 	Widgets.SetPosition(int id, fixed x1, fixed y1, fixed x2, fixed y2)		// Sets the x1, y1, x2, y2 positions of the widget;
+		void 	Widgets.SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)	// Sets the x1, y1, x2, y2 positions of the widget with a width/height;
+		void	Widgets.Update(int id)													// Updates the widget;
+*/
+
+
 
 strict namespace Widgets
 {
@@ -304,6 +350,93 @@ strict namespace Widgets
 		return obj[id].custom_string[vid];
 	}
 
+	// get x1 point
+	function void SetX1(int id, fixed value)
+	{
+		obj[id].pos.x1 = value;
+		CalcSizes(id);
+	}
+
+	// get y1 point
+	function void SetY1(int id)
+	{
+		obj[id].pos.y1 = value;
+		CalcSizes(id);
+	}
+
+	// get x2 point
+	function void SetX2(int id)
+	{
+		obj[id].pos.x2 = value;
+		CalcSizes(id);
+	}
+
+	// get y2 point
+	function void SetY2(int id)
+	{
+		obj[id].pos.y2 = value;
+		CalcSizes(id);
+	}
+
+	// set the x,y of the top left position
+	function void SetTopLeftPosition(int id, fixed x, fixed y)
+	{
+		obj[id].pos.x1 = x;
+		obj[id].pos.y1 = y;
+		CalcSizes(id);
+	}
+
+	// set the x,y of the bottom right position
+	function void SetBottomRightPosition(int id, fixed x, fixed y)
+	{
+		obj[id].pos.x2 = x;
+		obj[id].pos.y2 = y;
+		CalcSizes(id);
+	}
+
+	// set the x1,y1,x2,y2 of the widget
+	function void SetPosition(int id, fixed x1, fixed y1, fixed x2, fixed y2)
+	{
+		obj[id].pos.x1 = x1;
+		obj[id].pos.y1 = y1;
+		obj[id].pos.x2 = x2;
+		obj[id].pos.y2 = y2;
+		CalcSizes(id);
+	}
+
+	// set the x1,y1,x2,y2 of the widget
+	function void SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)
+	{
+		obj[id].pos.x1 = x1;
+		obj[id].pos.y1 = y1;
+		obj[id].pos.x2 = x1+w;
+		obj[id].pos.y2 = y1+h;
+		CalcSizes(id);
+	}
+
+	// get x1 point
+	function fixed GetX1(int id)
+	{
+		return obj[id].pos.x1;
+	}
+
+	// get y1 point
+	function fixed GetY1(int id)
+	{
+		return obj[id].pos.y1;
+	}
+
+	// get x2 point
+	function fixed GetX2(int id)
+	{
+		return obj[id].pos.x2;
+	}
+
+	// get y2 point
+	function fixed GetY2(int id)
+	{
+		return obj[id].pos.y2;
+	}
 
 	// widget functionalities
 	function void Update(int id)

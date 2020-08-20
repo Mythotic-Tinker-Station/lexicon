@@ -6,13 +6,6 @@
 
 strict namespace Button
 {
-	enum
-	{
-		CUSTOM_COLOR = 0,
-		CUSTOM_TEXT = 1,
-		CUSTOM_ROUND = 2,
-	};
-
 	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
 		// create a new panel object
@@ -39,8 +32,6 @@ strict namespace Button
 	function void Event_Update(int id)
 	{
 		Widgets.SetX2(id, Widgets.GetX2(id)+1.0);
-
-
 
 		// text
 		Screen.Draw("SMALLFONT", Widgets.GetText(id), "White", Widgets.GetCenterX(id), Widgets.GetCenterY(id));

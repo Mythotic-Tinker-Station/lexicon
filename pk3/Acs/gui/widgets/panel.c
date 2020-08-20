@@ -24,26 +24,49 @@ strict namespace Panel
 
 	function void Event_Update(int id)
 	{
-		// bottom right corner
-		Screen.Draw("UIFONT", "e", Widgets.GetColorCurrent(id), Widgets.GetX2(id), Widgets.GetY2(id), Screen.XALIGN_RIGHT, Screen.YALIGN_BOTTOM);
+		fixed tilesX = fixed(int(Widgets.GetWidth(id)/16.0)-1);
+		fixed tilesY = fixed(int(Widgets.GetHeight(id)/16.0)-1);
 
-		// filler images
-		for(int y = 0; y <= (int(Widgets.GetHeight(id))/28)-1; y++)
+		for(fixed x = 0.0; x <= tilesX; x += 1.0)
 		{
-			// right edge
-			Screen.Draw("UIFONT", "e", Widgets.GetColorCurrent(id), Widgets.GetX2(id), Widgets.GetY1(id)+(fixed(y)*28.0), Screen.XALIGN_RIGHT, Screen.YALIGN_TOP);
-
-			for(int x = 0; x <= (int(Widgets.GetWidth(id))/28)-1; x++)
+			for(fixed y = 0.0; y <= tilesY; y += 1.0)
 			{
-				// bottom edge
-				if(y == (int(Widgets.GetHeight(id))/28)-1)
+				// middle
+				if(x > 0.0 && x <= tilesX && y > 0.0 && y <= tilesY)
 				{
-					Screen.Draw("UIFONT", "e", Widgets.GetColorCurrent(id), Widgets.GetX1(id)+(fixed(x)*28.0), Widgets.GetY2(id), Screen.XALIGN_LEFT, Screen.YALIGN_BOTTOM);
+					Screen.Draw("UIFONT", "I", Widgets.GetColorCurrent(id), Widgets.GetX1(id)+(x*16.0), Widgets.GetY1(id)+(y*16.0), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 				}
 
-				// left edge, top edge, and fill
-				Screen.Draw("UIFONT", "e", Widgets.GetColorCurrent(id), Widgets.GetX1(id)+(fixed(x)*28.0), Widgets.GetY1(id)+(fixed(y)*28.0), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+				// top
+				if(x > 0.0 && x <= tilesX && y == 0.0)
+				{
+					Screen.Draw("UIFONT", "B", "Cyan", Widgets.GetX1(id)+(x*16.0), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+				}
+
+				// left
+				if(x == 0.0 && y > 0.0)
+				{
+					Screen.Draw("UIFONT", "H", "White", Widgets.GetX1(id), Widgets.GetY1(id)+(y*16.0), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+				}
+
+				// bottom
+				if(x > 0.0 && x <= tilesX && y == tilesY)
+				{
+					Screen.Draw("UIFONT", "F", "Purple", Widgets.GetX1(id)+(x*16.0), Widgets.GetY2(id), Screen.XALIGN_LEFT, Screen.YALIGN_BOTTOM);
+				}
+
+				// right
+				if(x == tilesX && y > 0.0)
+				{
+					Screen.Draw("UIFONT", "D", "Orange", Widgets.GetX2(id), Widgets.GetY1(id)+(y*16.0), Screen.XALIGN_RIGHT, Screen.YALIGN_TOP);
+				}
 			}
 		}
+
+		Screen.Draw("UIFONT", "A", "Red", Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		Screen.Draw("UIFONT", "C", "Blue", Widgets.GetX2(id), Widgets.GetY1(id), Screen.XALIGN_RIGHT, Screen.YALIGN_TOP);
+		Screen.Draw("UIFONT", "G", "Green", Widgets.GetX1(id), Widgets.GetY2(id), Screen.XALIGN_LEFT, Screen.YALIGN_BOTTOM);
+		Screen.Draw("UIFONT", "E", "Yellow", Widgets.GetX2(id), Widgets.GetY2(id), Screen.XALIGN_RIGHT, Screen.YALIGN_BOTTOM);
+
 	}
 }

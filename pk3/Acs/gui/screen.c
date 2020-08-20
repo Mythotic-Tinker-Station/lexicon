@@ -81,11 +81,11 @@ strict namespace Screen
 
 		if(id > -1)
 		{
-			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, id, 0, x+xalign, y+yalign, 0.01);
+			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, id, 0, x+xalign, y+yalign, 0.1);
 		}
 		else
 		{
-			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, nextid, 0, x+xalign, y+yalign, 0.01);
+			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, nextid, 0, x+xalign, y+yalign, 0.1);
 		}
 		return nextid;
 	}

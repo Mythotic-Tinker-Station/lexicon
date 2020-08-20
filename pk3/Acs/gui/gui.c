@@ -109,8 +109,6 @@ strict namespace Gui
 		Screen.Init();
 
 		int test1 = Button.Create(200.0, 200.0, 10.0, 32.0, "test1");
-		int test2 = Button.Create(250.0, 250.0, 10.0, 32.0, "test2");
-		int test3 = Button.Create(300.0, 300.0, 10.0, 32.0, "test3");
 
 		while(1)
 		{

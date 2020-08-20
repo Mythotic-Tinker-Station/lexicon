@@ -610,6 +610,7 @@ strict namespace Widgets
 						CallMovedHooks(id);
 					}
 				}
+
 				// call object's update callback
 				CallUpdateHooks(id);
 

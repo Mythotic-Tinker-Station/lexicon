@@ -32,7 +32,7 @@ strict namespace Button
 	function void Event_Update(int id)
 	{
 		Widgets.SetX2(id, Widgets.GetX2(id)+1.0);
-
+		Widgets.SetY2(id, Widgets.GetY2(id)+1.0);
 		// text
 		Screen.Draw("SMALLFONT", Widgets.GetText(id), "White", Widgets.GetCenterX(id), Widgets.GetCenterY(id));
 

@@ -16,30 +16,93 @@
 		void	Widgets.CallHoveredHooks(int id)										// Calls all the functions hooked to the hovered event;
 		void	Widgets.CallClickedHooks(int id)										// Calls all the functions hooked to the clicked event;
 		void	Widgets.CallMovedHooks(int id)											// Calls all the functions hooked to the moved event;
-		int		Widgets.AddFixed(int id, fixed value)									// Adds a custom fixed variable to the widget; returns an id number of said variable;
-		int		Widgets.AddInt(int id, int value)										// Adds a custom integer variable to the widget; returns an id number of said variable;
-		int		Widgets.AddBool(int id, bool value)										// Adds a custom boolean variable to the widget; returns an id number of said variable;
-		int		Widgets.AddString(int id, str value)									// Adds a custom string variable to the widget; returns an id number of said variable;
-		void	Widgets.SetFixed(int id, int varid, fixed value)						// Sets a custom fixed variable of the widget;
-		void	Widgets.SetInt(int id, int varid, int value)							// Sets a custom integer variable of the widget;
-		void	Widgets.SetBool(int id, int varid, bool value)							// Sets a custom boolean variable of the widget;
-		void	Widgets.SetString(int id, int varid)									// Sets a custom string variable of the widget;
-		fixed	Widgets.GetFixed(int id, int varid)										// Returns a custom fixed variable value of the widget;
-		int		Widgets.GetInt(int id, int varid)										// Returns a custom integer variable value of the widget;
-		bool	Widgets.GetBool(int id, int varid)										// Returns a custom boolean variable value of the widget;
-		str		Widgets.GetString(int id, int varid)									// Returns a custom string variable value of the widget;
-		void	Widgets.SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
-		void	Widgets.SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
-		void	Widgets.SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
-		void	Widgets.SetY2(int id, fixed y2)											// Sets the y2 point of the widget;
+
 		fixed	Widgets.GetX1(int id)													// Returns the x1 point of the widget;
 		fixed	Widgets.GetY1(int id)													// Returns the x2 point of the widget;
 		fixed	Widgets.GetX2(int id)													// Returns the y1 point of the widget;
 		fixed	Widgets.GetY2(int id)													// Returns the y2 point of the widget;
+		fixed	Widgets.GetCenterX(int id)												// Returns the center x point of the widget;
+		fixed	Widgets.GetCenterY(int id)												// Returns the center y point of the widget;
+
+		str		Widgets.GetColorNormal(int id)											// returns the base color of the widget;
+		str		Widgets.GetColorHovered(int id)											// returns the hovered color of the widget;
+		str		Widgets.GetColorClicked(int id)											// returns the clicked color of the widget;
+
+		str		Widgets.GetText(int id)													// returns the text of the widget;
+
+		fixed	Widgets.GetWidth(int id)												// Returns the width of the widget;
+		fixed	Widgets.GetHeight(int id)												// Returns the height of the widget;
+		fixed	Widgets.GetWidth_Half(int id)											// Returns the half width of the widget;
+		fixed	Widgets.GetHeight_Half(int id)											// Returns the half height of the widget;
+
+		// yeah, i know
+		int 	Widgets.GetCustomInt1(int id)											// Returns custom int 1;
+		int 	Widgets.GetCustomInt2(int id)											// Returns custom int 2;
+		int 	Widgets.GetCustomInt3(int id)											// Returns custom int 3;
+		int 	Widgets.GetCustomInt4(int id)											// Returns custom int 4;
+		int 	Widgets.GetCustomInt5(int id)											// Returns custom int 5;
+		int 	Widgets.GetCustomInt6(int id)											// Returns custom int 6;
+		fixed 	Widgets.GetCustomfixed1(int id)											// Returns custom fixed 1;
+		fixed 	Widgets.GetCustomfixed2(int id)											// Returns custom fixed 2;
+		fixed 	Widgets.GetCustomfixed3(int id)											// Returns custom fixed 3;
+		fixed 	Widgets.GetCustomfixed4(int id)											// Returns custom fixed 4;
+		fixed 	Widgets.GetCustomfixed5(int id)											// Returns custom fixed 5;
+		fixed 	Widgets.GetCustomfixed6(int id)											// Returns custom fixed 6;
+		str 	Widgets.GetCustomString1(int id)										// Returns custom string 1;
+		str 	Widgets.GetCustomString2(int id)										// Returns custom string 2;
+		str 	Widgets.GetCustomString3(int id)										// Returns custom string 3;
+		str 	Widgets.GetCustomString4(int id)										// Returns custom string 4;
+		str 	Widgets.GetCustomString5(int id)										// Returns custom string 5;
+		str 	Widgets.GetCustomString6(int id)										// Returns custom string 6;
+		bool 	Widgets.GetCustomBool1(int id)											// Returns custom bool 1;
+		bool 	Widgets.GetCustomBool2(int id)											// Returns custom bool 2;
+		bool 	Widgets.GetCustomBool3(int id)											// Returns custom bool 3;
+		bool 	Widgets.GetCustomBool4(int id)											// Returns custom bool 4;
+		bool 	Widgets.GetCustomBool5(int id)											// Returns custom bool 5;
+		bool 	Widgets.GetCustomBool6(int id)											// Returns custom bool 6;
+
+		void	Widgets.SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
+		void	Widgets.SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
+		void	Widgets.SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
+		void	Widgets.SetY2(int id, fixed y2)											// Sets the y2 point of the widget;
+
 		void 	Widgets.SetTopLeftPosition(int id, fixed x, fixed y)					// Sets the x, y of the top left position of the widget;
 		void 	Widgets.SetBottomRightPosition(int id, fixed x, fixed y)				// Sets the x, y of the bottom right position of the widget;
 		void 	Widgets.SetPosition(int id, fixed x1, fixed y1, fixed x2, fixed y2)		// Sets the x1, y1, x2, y2 positions of the widget;
 		void 	Widgets.SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)	// Sets the x1, y1, x2, y2 positions of the widget with a width/height;
+
+		void	Widgets.SetColorNormal(int id)											// Sets the base color of the widget;
+		void	Widgets.SetColorHovered(int id)											// Sets the hovered color of the widget;
+		void	Widgets.SetColorClicked(int id)											// Sets the clicked color of the widget;
+
+		void	Widgets.SetText(int id, str value)										// Sets the text of the widget;
+
+		void	Widgets.SetCustomInt1(int id, int value)								// Set custom int 1;
+		void	Widgets.SetCustomInt2(int id, int value)								// Set custom int 2;
+		void	Widgets.SetCustomInt3(int id, int value)								// Set custom int 3;
+		void	Widgets.SetCustomInt4(int id, int value)								// Set custom int 4;
+		void	Widgets.SetCustomInt5(int id, int value)								// Set custom int 5;
+		void	Widgets.SetCustomInt6(int id, int value)								// Set custom int 6;
+		void	Widgets.SetCustomfixed1(int id, fixed value)							// Set custom fixed 1;
+		void	Widgets.SetCustomfixed2(int id, fixed value)							// Set custom fixed 2;
+		void	Widgets.SetCustomfixed3(int id, fixed value)							// Set custom fixed 3;
+		void	Widgets.SetCustomfixed4(int id, fixed value)							// Set custom fixed 4;
+		void	Widgets.SetCustomfixed5(int id, fixed value)							// Set custom fixed 5;
+		void	Widgets.SetCustomfixed6(int id, fixed value)							// Set custom fixed 6;
+		void	Widgets.SetCustomString1(int id, str value)								// Set custom string 1;
+		void	Widgets.SetCustomString2(int id, str value)								// Set custom string 2;
+		void	Widgets.SetCustomString3(int id, str value)								// Set custom string 3;
+		void	Widgets.SetCustomString4(int id, str value)								// Set custom string 4;
+		void	Widgets.SetCustomString5(int id, str value)								// Set custom string 5;
+		void	Widgets.SetCustomString6(int id, str value)								// Set custom string 6;
+		void	Widgets.SetCustomBool1(int id, bool value)								// Set custom bool 1;
+		void	Widgets.SetCustomBool2(int id, bool value)								// Set custom bool 2;
+		void	Widgets.SetCustomBool3(int id, bool value)								// Set custom bool 3;
+		void	Widgets.SetCustomBool4(int id, bool value)								// Set custom bool 4;
+		void	Widgets.SetCustomBool5(int id, bool value)								// Set custom bool 5;
+		void	Widgets.SetCustomBool6(int id, bool value)								// Set custom bool 6;
+
+
 		void	Widgets.Update(int id)													// Updates the widget;
 */
 
@@ -63,6 +126,35 @@ strict namespace Widgets
 		struct vec2x2T pos_prev;						// x1, y1, x2, y2 positions of widget on the previous frame
 		struct sizeT size;								// w, h, wh, hh sizes of widget
 		struct vec2T center;							// x, y of the center of the widget
+		struct colors backcolor;						// background colors
+		struct colors textcolor;						// text colors
+
+		str text;										// text to display
+
+		int custom_int1;								// custom int for specific widget stuff
+		int custom_int2;								// custom int for specific widget stuff
+		int custom_int3;								// custom int for specific widget stuff
+		int custom_int4;								// custom int for specific widget stuff
+		int custom_int5;								// custom int for specific widget stuff
+		int custom_int6;								// custom int for specific widget stuff
+		fixed custom_fixed1;							// custom fixed number for specific widget stuff
+		fixed custom_fixed2;							// custom fixed number for specific widget stuff
+		fixed custom_fixed3;							// custom fixed number for specific widget stuff
+		fixed custom_fixed4;							// custom fixed number for specific widget stuff
+		fixed custom_fixed5;							// custom fixed number for specific widget stuff
+		fixed custom_fixed6;							// custom fixed number for specific widget stuff
+		str custom_string1;								// custom string for specific widget stuff
+		str custom_string2;								// custom string for specific widget stuff
+		str custom_string3;								// custom string for specific widget stuff
+		str custom_string4;								// custom string for specific widget stuff
+		str custom_string5;								// custom string for specific widget stuff
+		str custom_string6;								// custom string for specific widget stuff
+		bool custom_bool1;								// custom bool for specific widget stuff
+		bool custom_bool2;								// custom bool for specific widget stuff
+		bool custom_bool3;								// custom bool for specific widget stuff
+		bool custom_bool4;								// custom bool for specific widget stuff
+		bool custom_bool5;								// custom bool for specific widget stuff
+		bool custom_bool6;								// custom bool for specific widget stuff
 
 		// flags
 		bool alive;										// is this widget alive?(false marks this to be overwritten by a new widget)
@@ -80,22 +172,12 @@ strict namespace Widgets
 		int event_clicked_count;						// number of clicked hooks
 		int event_hovered_count;						// number of hovered hooks
 		int event_moved_count;							// number of moved hooks
-		int custom_fixed_count;							// number of custom fixed vars
-		int custom_int_count;							// number of custom int vars
-		int custom_bool_count;							// number of custom bool vars
-		int custom_string_count;						// number of custom string vars
 
 		// callback events
 		void function(int)? event_update[MAX_HOOKS];	// callback function for every update
 		void function(int)? event_clicked[MAX_HOOKS];	// callback function when this widget is clicked
 		void function(int)? event_hovered[MAX_HOOKS];	// callback function when this widget is hovered
 		void function(int)? event_moved[MAX_HOOKS];		// callback function when this widget position or size changes
-
-		// custom variables used by widget definitions
-		fixed custom_fixed[MAX_CUSTOMS];				// custom fixed vars for widgets to use
-		int custom_int[MAX_CUSTOMS];					// custom int vars for widgets to use
-		bool custom_bool[MAX_CUSTOMS];					// custom bool vars for widgets to use
-		str custom_string[MAX_CUSTOMS];					// custom string vars for widgets to use
 
 	};
 	struct objT obj[MAX_WIDGETS];						// list of all the widgets
@@ -112,20 +194,57 @@ strict namespace Widgets
 		// set widget's default values
 		// the system never actually deletes a widget in the pool
 		// it simply marks it's slot to be overwriten when the alive property is false
-		obj[id].pos.x1 			= 0.0;
-		obj[id].pos.y1 			= 0.0;
-		obj[id].pos.x2 			= 10.0;
-		obj[id].pos.y2 			= 10.0;
-		obj[id].pos_prev.x1 	= 0.0;
-		obj[id].pos_prev.y1 	= 0.0;
-		obj[id].pos_prev.x2 	= 10.0;
-		obj[id].pos_prev.y2 	= 10.0;
-		obj[id].size.w 			= obj[id].pos.x2-obj[id].pos.x1;
-		obj[id].size.h 			= obj[id].pos.y2-obj[id].pos.y1;
-		obj[id].size.wh 		= obj[id].size.w/2.0;
-		obj[id].size.hh 		= obj[id].size.h/2.0;
-		obj[id].center.x 		= obj[id].pos.x1+obj[id].size.wh;
-		obj[id].center.y 		= obj[id].pos.y1+obj[id].size.hh;
+
+		// properties
+		obj[id].pos.x1 				= 0.0;
+		obj[id].pos.y1 				= 0.0;
+		obj[id].pos.x2 				= 10.0;
+		obj[id].pos.y2 				= 10.0;
+		obj[id].pos_prev.x1 		= 0.0;
+		obj[id].pos_prev.y1 		= 0.0;
+		obj[id].pos_prev.x2 		= 10.0;
+		obj[id].pos_prev.y2 		= 10.0;
+		obj[id].size.w 				= obj[id].pos.x2-obj[id].pos.x1;
+		obj[id].size.h 				= obj[id].pos.y2-obj[id].pos.y1;
+		obj[id].size.wh 			= fixed(int(obj[id].size.w/2.0));
+		obj[id].size.hh 			= fixed(int(obj[id].size.h/2.0));
+		obj[id].center.x 			= obj[id].pos.x1+obj[id].size.wh;
+		obj[id].center.y 			= obj[id].pos.y1+obj[id].size.hh;
+		obj[id].backcolor.normal 	= "Green";
+		obj[id].backcolor.clicked	= "Cyan";
+		obj[id].backcolor.hovered	= "Blue";
+		obj[id].backcolor.current	= "Green";
+		obj[id].textcolor.normal 	= "White";
+		obj[id].textcolor.clicked	= "White";
+		obj[id].textcolor.hovered	= "White";
+		obj[id].textcolor.current	= "White";
+		obj[id].text				= "";
+		obj[id].custom_int1			= 0;
+		obj[id].custom_int2			= 0;
+		obj[id].custom_int3			= 0;
+		obj[id].custom_int4			= 0;
+		obj[id].custom_int5			= 0;
+		obj[id].custom_int6			= 0;
+		obj[id].custom_fixed1		= 0.0;
+		obj[id].custom_fixed2		= 0.0;
+		obj[id].custom_fixed3		= 0.0;
+		obj[id].custom_fixed4		= 0.0;
+		obj[id].custom_fixed5		= 0.0;
+		obj[id].custom_fixed6		= 0.0;
+		obj[id].custom_string1		= "";
+		obj[id].custom_string2		= "";
+		obj[id].custom_string3		= "";
+		obj[id].custom_string4		= "";
+		obj[id].custom_string5		= "";
+		obj[id].custom_string6		= "";
+		obj[id].custom_bool1		= false;
+		obj[id].custom_bool2		= false;
+		obj[id].custom_bool3		= false;
+		obj[id].custom_bool4		= false;
+		obj[id].custom_bool5		= false;
+		obj[id].custom_bool6		= false;
+
+		// flags
 		obj[id].alive 			= true;
 		obj[id].visible 		= true;
 		obj[id].enabled 		= true;
@@ -135,15 +254,6 @@ strict namespace Widgets
 		obj[id].hoverable 		= false;
 		obj[id].hovered			= false;
 		obj[id].clicked			= false;
-
-		// default all custom vars
-		for(int i = 0; i < MAX_CUSTOMS; i++)
-		{
-			obj[id].custom_fixed[i] = 0.0;
-			obj[id].custom_int[i] = 0;
-			obj[id].custom_bool[i] = false;
-			obj[id].custom_string[i] = "";
-		}
 
 		// null the hooks
 		for(int i = 0; i < MAX_HOOKS; i++)
@@ -188,8 +298,8 @@ strict namespace Widgets
 		// keep track of width/heights (read only)
 		obj[id].size.w = obj[id].pos.x2-obj[id].pos.x1;
 		obj[id].size.h = obj[id].pos.y2-obj[id].pos.y1;
-		obj[id].size.wh = obj[id].size.w/2.0;
-		obj[id].size.hh = obj[id].size.h/2.0;
+		obj[id].size.wh = fixed(int(obj[id].size.w/2.0));
+		obj[id].size.hh = fixed(int(obj[id].size.h/2.0));
 		obj[id].center.x = obj[id].pos.x1+obj[id].size.wh;
 		obj[id].center.y = obj[id].pos.y1+obj[id].size.hh;
 	}
@@ -270,111 +380,79 @@ strict namespace Widgets
 		}
 	}
 
-	// create a fixed variable
-	function int AddFixed(int id, fixed value)
-	{
-		obj[id].custom_fixed[obj[id].custom_fixed_count] = value;
-		obj[id].custom_fixed_count++;
-		return obj[id].custom_fixed_count-1;
-	}
+	// get specific positions
+	function fixed GetX1(int id) { return obj[id].pos.x1; }
+	function fixed GetY1(int id) { return obj[id].pos.y1; }
+	function fixed GetX2(int id) { return obj[id].pos.x2; }
+	function fixed GetY2(int id) { return obj[id].pos.y2; }
 
-	// create a int variable
-	function int AddInt(int id, int value)
-	{
-		obj[id].custom_int[obj[id].custom_int_count] = value;
-		obj[id].custom_int_count++;
-		return obj[id].custom_int_count-1;
-	}
+	function fixed GetCenterX(int id) { return obj[id].center.x; }
+	function fixed GetCenterY(int id) { return obj[id].center.y; }
 
-	// create a bool variable
-	function int AddBool(int id, bool value)
-	{
-		obj[id].custom_bool[obj[id].custom_bool_count] = value;
-		obj[id].custom_bool_count++;
-		return obj[id].custom_bool_count-1;
-	}
+	function fixed GetWidth(int id) { return obj[id].size.w; }
+	function fixed GetHeight(int id) { return obj[id].size.h; }
+	function fixed GetWidth_Half(int id) { return obj[id].size.wh; }
+	function fixed GetHeight_Half(int id) { return obj[id].size.hh; }
 
-	// create a string variable
-	function int AddString(int id, str value)
-	{
-		obj[id].custom_string[obj[id].custom_string_count] = value;
-		obj[id].custom_string_count++;
-		return obj[id].custom_string_count-1;
-	}
+	function str GetColorNormal(int id) { return obj[id].backcolor.normal; }
+	function str GetColorHovered(int id) { return obj[id].backcolor.hovered; }
+	function str GetColorClicked(int id) { return obj[id].backcolor.clicked; }
+	function str GetColorCurrent(int id) { return obj[id].backcolor.current; }
 
-	// set a fixed variable
-	function void SetFixed(int id, int vid, fixed value)
-	{
-		obj[id].custom_fixed[vid] = value;
-	}
+	function str GetText(int id) { return obj[id].text; }
 
-	// set a int variable
-	function void SetInt(int id, int vid, int value)
-	{
-		obj[id].custom_int[vid] = value;
-	}
+	// get specific customs
+	function int GetCustomInt1(int id) { return obj[id].custom_int1; }
+	function int GetCustomInt2(int id) { return obj[id].custom_int2; }
+	function int GetCustomInt3(int id) { return obj[id].custom_int3; }
+	function int GetCustomInt4(int id) { return obj[id].custom_int4; }
+	function int GetCustomInt5(int id) { return obj[id].custom_int5; }
+	function int GetCustomInt6(int id) { return obj[id].custom_int6; }
+	function fixed GetCustomfixed1(int id) { return obj[id].custom_fixed1; }
+	function fixed GetCustomfixed2(int id) { return obj[id].custom_fixed2; }
+	function fixed GetCustomfixed3(int id) { return obj[id].custom_fixed3; }
+	function fixed GetCustomfixed4(int id) { return obj[id].custom_fixed4; }
+	function fixed GetCustomfixed5(int id) { return obj[id].custom_fixed5; }
+	function fixed GetCustomfixed6(int id) { return obj[id].custom_fixed6; }
+	function str GetCustomString1(int id) { return obj[id].custom_string1; }
+	function str GetCustomString2(int id) { return obj[id].custom_string2; }
+	function str GetCustomString3(int id) { return obj[id].custom_string3; }
+	function str GetCustomString4(int id) { return obj[id].custom_string4; }
+	function str GetCustomString5(int id) { return obj[id].custom_string5; }
+	function str GetCustomString6(int id) { return obj[id].custom_string6; }
+	function bool GetCustomBool1(int id) { return obj[id].custom_bool1; }
+	function bool GetCustomBool2(int id) { return obj[id].custom_bool2; }
+	function bool GetCustomBool3(int id) { return obj[id].custom_bool3; }
+	function bool GetCustomBool4(int id) { return obj[id].custom_bool4; }
+	function bool GetCustomBool5(int id) { return obj[id].custom_bool5; }
+	function bool GetCustomBool6(int id) { return obj[id].custom_bool6; }
 
-	// set a bool variable
-	function void SetBool(int id, int vid, bool value)
-	{
-		obj[id].custom_bool[vid] = value;
-	}
-
-	// set a string variable
-	function void SetString(int id, int vid, str value)
-	{
-		obj[id].custom_string[vid] = value;
-	}
-
-	// get a fixed variable
-	function fixed GetFixed(int id, int vid)
-	{
-		return obj[id].custom_fixed[vid];
-	}
-
-	// get a int variable
-	function int GetInt(int id, int vid)
-	{
-		return obj[id].custom_int[vid];
-	}
-
-	// get a bool variable
-	function bool GetBool(int id, int vid)
-	{
-		return obj[id].custom_bool[vid];
-	}
-
-	// get a string variable
-	function str GetString(int id, int vid)
-	{
-		return obj[id].custom_string[vid];
-	}
 
 	// get x1 point
-	function void SetX1(int id, fixed value)
+	function void SetX1(int id, fixed x1)
 	{
-		obj[id].pos.x1 = value;
+		obj[id].pos.x1 = x1;
 		CalcSizes(id);
 	}
 
 	// get y1 point
-	function void SetY1(int id)
+	function void SetY1(int id, fixed y1)
 	{
-		obj[id].pos.y1 = value;
+		obj[id].pos.y1 = y1;
 		CalcSizes(id);
 	}
 
 	// get x2 point
-	function void SetX2(int id)
+	function void SetX2(int id, fixed x2)
 	{
-		obj[id].pos.x2 = value;
+		obj[id].pos.x2 = x2;
 		CalcSizes(id);
 	}
 
 	// get y2 point
-	function void SetY2(int id)
+	function void SetY2(int id, fixed y2)
 	{
-		obj[id].pos.y2 = value;
+		obj[id].pos.y2 = y2;
 		CalcSizes(id);
 	}
 
@@ -414,29 +492,38 @@ strict namespace Widgets
 		CalcSizes(id);
 	}
 
-	// get x1 point
-	function fixed GetX1(int id)
-	{
-		return obj[id].pos.x1;
-	}
+	function void SetColorNormal(int id, str value) { obj[id].backcolor.normal = value; }
+	function void SetColorHovered(int id, str value) { obj[id].backcolor.hovered = value; }
+	function void SetColorClicked(int id, str value) { obj[id].backcolor.clicked = value; }
+	function void SetColorCurrent(int id, str value) { obj[id].backcolor.current = value; }
 
-	// get y1 point
-	function fixed GetY1(int id)
-	{
-		return obj[id].pos.y1;
-	}
+	function void SetText(int id, str value) { obj[id].text = value; }
 
-	// get x2 point
-	function fixed GetX2(int id)
-	{
-		return obj[id].pos.x2;
-	}
-
-	// get y2 point
-	function fixed GetY2(int id)
-	{
-		return obj[id].pos.y2;
-	}
+	// set specific customs
+	function void SetCustomInt1(int id, int value) { obj[id].custom_int1 = value; }
+	function void SetCustomInt2(int id, int value) { obj[id].custom_int2 = value; }
+	function void SetCustomInt3(int id, int value) { obj[id].custom_int3 = value; }
+	function void SetCustomInt4(int id, int value) { obj[id].custom_int4 = value; }
+	function void SetCustomInt5(int id, int value) { obj[id].custom_int5 = value; }
+	function void SetCustomInt6(int id, int value) { obj[id].custom_int6 = value; }
+	function void SetCustomfixed1(int id, fixed value) { obj[id].custom_fixed1 = value; }
+	function void SetCustomfixed2(int id, fixed value) { obj[id].custom_fixed2 = value; }
+	function void SetCustomfixed3(int id, fixed value) { obj[id].custom_fixed3 = value; }
+	function void SetCustomfixed4(int id, fixed value) { obj[id].custom_fixed4 = value; }
+	function void SetCustomfixed5(int id, fixed value) { obj[id].custom_fixed5 = value; }
+	function void SetCustomfixed6(int id, fixed value) { obj[id].custom_fixed6 = value; }
+	function void SetCustomString1(int id, str value) { obj[id].custom_string1 = value; }
+	function void SetCustomString2(int id, str value) { obj[id].custom_string2 = value; }
+	function void SetCustomString3(int id, str value) { obj[id].custom_string3 = value; }
+	function void SetCustomString4(int id, str value) { obj[id].custom_string4 = value; }
+	function void SetCustomString5(int id, str value) { obj[id].custom_string5 = value; }
+	function void SetCustomString6(int id, str value) { obj[id].custom_string6 = value; }
+	function void SetCustomBool1(int id, bool value) { obj[id].custom_bool1 = value; }
+	function void SetCustomBool2(int id, bool value) { obj[id].custom_bool2 = value; }
+	function void SetCustomBool3(int id, bool value) { obj[id].custom_bool3 = value; }
+	function void SetCustomBool4(int id, bool value) { obj[id].custom_bool4 = value; }
+	function void SetCustomBool5(int id, bool value) { obj[id].custom_bool5 = value; }
+	function void SetCustomBool6(int id, bool value) { obj[id].custom_bool6 = value; }
 
 	// widget functionalities
 	function void Update(int id)

@@ -1,6 +1,15 @@
 /*
 	Lexicon Scripts by Tribeam
 	With help from Popsoap, Michaelis
+
+	Gui namespace:
+		void Gui.Enable()							// Enables ALL  widgets in the widget pool;
+		void Gui.Disable()							// Disable ALL widgets in the widget pool;
+		void Gui.Hide()								// Hide ALL widgets in the widget pool;
+		void Gui.Show()								// Show ALL widgets in the widget pool;
+		void Gui.Clear()							// Clear ALL widgets in the widget pool;
+		void Gui.Move(fixed x, fixed y)				// Move ALL widget in the widget pool by an added amount;
+
 */
 
 strict namespace Gui
@@ -99,7 +108,9 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		int test1 = Button.Create(200.0, 200.0, 128.0, 128.0, "test1");
+		int test1 = Button.Create(200.0, 200.0, 10.0, 32.0, "test1");
+		int test2 = Button.Create(250.0, 250.0, 10.0, 32.0, "test2");
+		int test3 = Button.Create(300.0, 300.0, 10.0, 32.0, "test3");
 
 		while(1)
 		{

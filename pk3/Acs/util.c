@@ -5,41 +5,6 @@
 */
 
 
-// size
-struct sizeT
-{
-	fixed w;
-	fixed h;
-	fixed wh;
-	fixed hh;
-};
-
-// 2d point
-struct vec2T
-{
-	fixed x;
-	fixed y;
-};
-
-// 3d point
-struct vec3T
-{
-	fixed x;
-	fixed y;
-	fixed z;
-};
-
-// 2 2d points
-struct vec2x2T
-{
-	fixed x1;
-	fixed y1;
-	fixed x2;
-	fixed y2;
-};
-
-
-
 // returns the text of a language.txt definition
 function str getDynLangEntry(str p1, str p2)
 {

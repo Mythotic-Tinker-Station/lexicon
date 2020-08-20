@@ -1,6 +1,14 @@
 /*
 	Lexicon UI by Tribeam
 	With help from Popsoap, Michaelis
+
+	Screen namespace:
+		Void Screen.Init()				// Setup sizes of the screen into variables;
+		Void Screen.Clear()				// Clear out all hudmessages;
+		Void Screen.ResetHudIDs()		// resets the hudmessage id counter;
+		int Screen.Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1) // alias to hudmessage with auto id
+
+
 */
 
 strict namespace Screen
@@ -70,6 +78,7 @@ strict namespace Screen
 	{
 		nextid--;
 		setFont(font);
+
 		if(id > -1)
 		{
 			hudMessage(s:"\c[", s:color, s:"]", s:msg; 0, id, 0, x+xalign, y+yalign, 0.01);

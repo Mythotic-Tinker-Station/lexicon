@@ -13,8 +13,6 @@ strict namespace Button
 		CUSTOM_ROUND = 2,
 	};
 
-	int text;
-
 	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
 		// create a new panel object
@@ -33,29 +31,34 @@ strict namespace Button
 		Widgets.AddClickedHook(id, Event_Clicked);
 		Widgets.AddHoveredHook(id, Event_Hovered);
 
-		text = Widgets.AddString(id, t);
+		Widgets.SetText(id, t);
 
 		return id;
 	}
 
 	function void Event_Update(int id)
 	{
-		// text
-		Screen.Draw("SMALLFONT", Widgets.GetString(id, text), "White", Widgets.obj[id].center.x, Widgets.obj[id].center.y);
+		Widgets.SetX2(id, Widgets.GetX2(id)+1.0);
 
-		Widgets.SetString(id, Panel.color, "White");
+
+
+		// text
+		Screen.Draw("SMALLFONT", Widgets.GetText(id), "White", Widgets.GetCenterX(id), Widgets.GetCenterY(id));
+
+		if(!Widgets.obj[id].clicked && !Widgets.obj[id].hovered) { Widgets.SetColorCurrent(id, Widgets.GetColorNormal(id)); }
 	}
 
 	function void Event_Hovered(int id)
 	{
 		// set hovered color
-		Widgets.SetString(id, Panel.color, "Red");
+		Widgets.SetColorCurrent(id, Widgets.GetColorHovered(id));
 	}
 
 	function void Event_Clicked(int id)
 	{
 		// set clicked color
-		Widgets.SetString(id, Panel.color, "Blue");
+		Widgets.SetColorCurrent(id, Widgets.GetColorClicked(id));
+
 	}
 
 }

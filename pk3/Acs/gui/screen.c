@@ -3,12 +3,18 @@
 	With help from Popsoap, Michaelis
 
 	Screen namespace:
-		Void Screen.Init()				// Setup sizes of the screen into variables;
-		Void Screen.Clear()				// Clear out all hudmessages;
-		Void Screen.ResetHudIDs()		// resets the hudmessage id counter;
-		int Screen.Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1) // alias to hudmessage with auto id
+		fixed 	Screen.GetWidth() 			// returns the width of the screen
+		fixed 	Screen.GetHeight() 			// returns the height of the screen
+		fixed 	Screen.GetWidthHalf() 		// returns the center x of the screen
+		fixed 	Screen.GetHeightHalf() 		// returns the center y of the screen
+		bool 	Screen.GetScreenBlocks() 	// returns the screenblocks cvar
+		int 	Screen.GetNextID() 			// returns the nextid to be used
+		void 	Screen.Init()				// Setup the screen;
+		void 	Screen.Clear()				// Clear out all hudmessages;
+		void 	Screen.ResetHudIDs()		// resets the hudmessage id counter;
 
-
+		// alias to hudmessage with auto id and alignment, returns the id used
+		int Screen.Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
 */
 
 strict namespace Screen
@@ -28,20 +34,16 @@ strict namespace Screen
 		YALIGN_BOTTOM 			= 0.2,				// Align the bottom of text to the y position
 	};
 
-	struct imageT images[1024];
 	struct sizeT size;
 	int blocks;
-	int image_amount;
 	int nextid;
 
-	// image object
-	struct imageT
-	{
-		struct vec2T pos;
-		struct vec2T align;
-		str color;
-	};
-
+	function fixed GetWidth() 				{ return size.w; }
+	function fixed GetHeight() 				{ return size.h; }
+	function fixed GetCenterX() 			{ return size.wh; }
+	function fixed GetCenterY() 			{ return size.hh; }
+	function bool GetScreenBlocks() 		{ return Bool(blocks); }
+	function int GetNextID() 				{ return nextid; }
 
 	// setup Screen size and some variables
 	function void Init()
@@ -63,7 +65,6 @@ strict namespace Screen
 		for(int i = 0; i < 65535; i++)
 		{
 			hudmessage(s:""; 0, i, 0, 0.0, 0.0, 0.0);
-			if(i >= image_amount) { return; }
 		}
 	}
 

@@ -9,7 +9,9 @@ strict namespace Button
 	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
 		// create a new panel object
-		int id = Panel.Create(x, y, w, h);
+		int id = Widgets.Create();
+
+		Widgets.SetRectPosition(id, x, y, w, h);
 
 		// make it clickable and hoverable
 		Widgets.obj[id].clickable = true;
@@ -31,24 +33,22 @@ strict namespace Button
 
 	function void Event_Update(int id)
 	{
-		Widgets.SetX2(id, Widgets.GetX2(id)+1.0);
-		Widgets.SetY2(id, Widgets.GetY2(id)+1.0);
 		// text
 		Screen.Draw("SMALLFONT", Widgets.GetText(id), "White", Widgets.GetCenterX(id), Widgets.GetCenterY(id));
 
-		if(!Widgets.obj[id].clicked && !Widgets.obj[id].hovered) { Widgets.SetColorCurrent(id, Widgets.GetColorNormal(id)); }
+		if(!Widgets.obj[id].clicked && !Widgets.obj[id].hovered) { Widgets.SetBackColorCurrent(id, Widgets.GetBackColorNormal(id)); }
 	}
 
 	function void Event_Hovered(int id)
 	{
 		// set hovered color
-		Widgets.SetColorCurrent(id, Widgets.GetColorHovered(id));
+		Widgets.SetBackColorCurrent(id, Widgets.GetBackColorHovered(id));
 	}
 
 	function void Event_Clicked(int id)
 	{
 		// set clicked color
-		Widgets.SetColorCurrent(id, Widgets.GetColorClicked(id));
+		Widgets.SetBackColorCurrent(id, Widgets.GetBackColorClicked(id));
 
 	}
 

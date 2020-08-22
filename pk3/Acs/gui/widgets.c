@@ -35,32 +35,6 @@
 		fixed	Widgets.GetWidth_Half(int id)											// Returns the half width of the widget;
 		fixed	Widgets.GetHeight_Half(int id)											// Returns the half height of the widget;
 
-		// yeah, i know
-		int 	Widgets.GetCustomInt1(int id)											// Returns custom int 1;
-		int 	Widgets.GetCustomInt2(int id)											// Returns custom int 2;
-		int 	Widgets.GetCustomInt3(int id)											// Returns custom int 3;
-		int 	Widgets.GetCustomInt4(int id)											// Returns custom int 4;
-		int 	Widgets.GetCustomInt5(int id)											// Returns custom int 5;
-		int 	Widgets.GetCustomInt6(int id)											// Returns custom int 6;
-		fixed 	Widgets.GetCustomfixed1(int id)											// Returns custom fixed 1;
-		fixed 	Widgets.GetCustomfixed2(int id)											// Returns custom fixed 2;
-		fixed 	Widgets.GetCustomfixed3(int id)											// Returns custom fixed 3;
-		fixed 	Widgets.GetCustomfixed4(int id)											// Returns custom fixed 4;
-		fixed 	Widgets.GetCustomfixed5(int id)											// Returns custom fixed 5;
-		fixed 	Widgets.GetCustomfixed6(int id)											// Returns custom fixed 6;
-		str 	Widgets.GetCustomString1(int id)										// Returns custom string 1;
-		str 	Widgets.GetCustomString2(int id)										// Returns custom string 2;
-		str 	Widgets.GetCustomString3(int id)										// Returns custom string 3;
-		str 	Widgets.GetCustomString4(int id)										// Returns custom string 4;
-		str 	Widgets.GetCustomString5(int id)										// Returns custom string 5;
-		str 	Widgets.GetCustomString6(int id)										// Returns custom string 6;
-		bool 	Widgets.GetCustomBool1(int id)											// Returns custom bool 1;
-		bool 	Widgets.GetCustomBool2(int id)											// Returns custom bool 2;
-		bool 	Widgets.GetCustomBool3(int id)											// Returns custom bool 3;
-		bool 	Widgets.GetCustomBool4(int id)											// Returns custom bool 4;
-		bool 	Widgets.GetCustomBool5(int id)											// Returns custom bool 5;
-		bool 	Widgets.GetCustomBool6(int id)											// Returns custom bool 6;
-
 		void	Widgets.SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
 		void	Widgets.SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
 		void	Widgets.SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
@@ -77,30 +51,6 @@
 
 		void	Widgets.SetText(int id, str value)										// Sets the text of the widget;
 
-		void	Widgets.SetCustomInt1(int id, int value)								// Set custom int 1;
-		void	Widgets.SetCustomInt2(int id, int value)								// Set custom int 2;
-		void	Widgets.SetCustomInt3(int id, int value)								// Set custom int 3;
-		void	Widgets.SetCustomInt4(int id, int value)								// Set custom int 4;
-		void	Widgets.SetCustomInt5(int id, int value)								// Set custom int 5;
-		void	Widgets.SetCustomInt6(int id, int value)								// Set custom int 6;
-		void	Widgets.SetCustomfixed1(int id, fixed value)							// Set custom fixed 1;
-		void	Widgets.SetCustomfixed2(int id, fixed value)							// Set custom fixed 2;
-		void	Widgets.SetCustomfixed3(int id, fixed value)							// Set custom fixed 3;
-		void	Widgets.SetCustomfixed4(int id, fixed value)							// Set custom fixed 4;
-		void	Widgets.SetCustomfixed5(int id, fixed value)							// Set custom fixed 5;
-		void	Widgets.SetCustomfixed6(int id, fixed value)							// Set custom fixed 6;
-		void	Widgets.SetCustomString1(int id, str value)								// Set custom string 1;
-		void	Widgets.SetCustomString2(int id, str value)								// Set custom string 2;
-		void	Widgets.SetCustomString3(int id, str value)								// Set custom string 3;
-		void	Widgets.SetCustomString4(int id, str value)								// Set custom string 4;
-		void	Widgets.SetCustomString5(int id, str value)								// Set custom string 5;
-		void	Widgets.SetCustomString6(int id, str value)								// Set custom string 6;
-		void	Widgets.SetCustomBool1(int id, bool value)								// Set custom bool 1;
-		void	Widgets.SetCustomBool2(int id, bool value)								// Set custom bool 2;
-		void	Widgets.SetCustomBool3(int id, bool value)								// Set custom bool 3;
-		void	Widgets.SetCustomBool4(int id, bool value)								// Set custom bool 4;
-		void	Widgets.SetCustomBool5(int id, bool value)								// Set custom bool 5;
-		void	Widgets.SetCustomBool6(int id, bool value)								// Set custom bool 6;
 
 
 		void	Widgets.Update(int id)													// Updates the widget;
@@ -130,31 +80,7 @@ strict namespace Widgets
 		struct colors textcolor;						// text colors
 
 		str text;										// text to display
-
-		int custom_int1;								// custom int for specific widget stuff
-		int custom_int2;								// custom int for specific widget stuff
-		int custom_int3;								// custom int for specific widget stuff
-		int custom_int4;								// custom int for specific widget stuff
-		int custom_int5;								// custom int for specific widget stuff
-		int custom_int6;								// custom int for specific widget stuff
-		fixed custom_fixed1;							// custom fixed number for specific widget stuff
-		fixed custom_fixed2;							// custom fixed number for specific widget stuff
-		fixed custom_fixed3;							// custom fixed number for specific widget stuff
-		fixed custom_fixed4;							// custom fixed number for specific widget stuff
-		fixed custom_fixed5;							// custom fixed number for specific widget stuff
-		fixed custom_fixed6;							// custom fixed number for specific widget stuff
-		str custom_string1;								// custom string for specific widget stuff
-		str custom_string2;								// custom string for specific widget stuff
-		str custom_string3;								// custom string for specific widget stuff
-		str custom_string4;								// custom string for specific widget stuff
-		str custom_string5;								// custom string for specific widget stuff
-		str custom_string6;								// custom string for specific widget stuff
-		bool custom_bool1;								// custom bool for specific widget stuff
-		bool custom_bool2;								// custom bool for specific widget stuff
-		bool custom_bool3;								// custom bool for specific widget stuff
-		bool custom_bool4;								// custom bool for specific widget stuff
-		bool custom_bool5;								// custom bool for specific widget stuff
-		bool custom_bool6;								// custom bool for specific widget stuff
+		str image;										// image to display
 
 		// flags
 		bool alive;										// is this widget alive?(false marks this to be overwritten by a new widget)
@@ -164,6 +90,8 @@ strict namespace Widgets
 		bool hover_repeat;								// does this widget call it's hovered function every frame?
 		bool clickable;									// is this widget clickable?
 		bool hoverable;									// is this widget hoverable?
+		bool render_text;								// should this widget render text?
+		bool render_image;								// should this widget render an image?
 
 		// internal vars
 		bool hovered;									// true when the mouse is hovering over this widget
@@ -219,30 +147,7 @@ strict namespace Widgets
 		obj[id].textcolor.hovered	= "White";
 		obj[id].textcolor.current	= "White";
 		obj[id].text				= "";
-		obj[id].custom_int1			= 0;
-		obj[id].custom_int2			= 0;
-		obj[id].custom_int3			= 0;
-		obj[id].custom_int4			= 0;
-		obj[id].custom_int5			= 0;
-		obj[id].custom_int6			= 0;
-		obj[id].custom_fixed1		= 0.0;
-		obj[id].custom_fixed2		= 0.0;
-		obj[id].custom_fixed3		= 0.0;
-		obj[id].custom_fixed4		= 0.0;
-		obj[id].custom_fixed5		= 0.0;
-		obj[id].custom_fixed6		= 0.0;
-		obj[id].custom_string1		= "";
-		obj[id].custom_string2		= "";
-		obj[id].custom_string3		= "";
-		obj[id].custom_string4		= "";
-		obj[id].custom_string5		= "";
-		obj[id].custom_string6		= "";
-		obj[id].custom_bool1		= false;
-		obj[id].custom_bool2		= false;
-		obj[id].custom_bool3		= false;
-		obj[id].custom_bool4		= false;
-		obj[id].custom_bool5		= false;
-		obj[id].custom_bool6		= false;
+		obj[id].image				= "";
 
 		// flags
 		obj[id].alive 			= true;
@@ -254,6 +159,8 @@ strict namespace Widgets
 		obj[id].hoverable 		= false;
 		obj[id].hovered			= false;
 		obj[id].clicked			= false;
+		obj[id].render_text		= false;
+		obj[id].render_image	= false;
 
 		// null the hooks
 		for(int i = 0; i < MAX_HOOKS; i++)
@@ -381,51 +288,49 @@ strict namespace Widgets
 	}
 
 	// get specific positions
-	function fixed GetX1(int id) { return obj[id].pos.x1; }
-	function fixed GetY1(int id) { return obj[id].pos.y1; }
-	function fixed GetX2(int id) { return obj[id].pos.x2; }
-	function fixed GetY2(int id) { return obj[id].pos.y2; }
+	function fixed GetX1(int id) 				{ return obj[id].pos.x1; }
+	function fixed GetY1(int id) 				{ return obj[id].pos.y1; }
+	function fixed GetX2(int id) 				{ return obj[id].pos.x2; }
+	function fixed GetY2(int id) 				{ return obj[id].pos.y2; }
+	function fixed GetPrevX1(int id) 			{ return obj[id].pos_prev.x1; }
+	function fixed GetPrevY1(int id) 			{ return obj[id].pos_prev.y1; }
+	function fixed GetPrevX2(int id) 			{ return obj[id].pos_prev.x2; }
+	function fixed GetPrevY2(int id) 			{ return obj[id].pos_prev.y2; }
+	function fixed GetCenterX(int id) 			{ return obj[id].center.x; }
+	function fixed GetCenterY(int id) 			{ return obj[id].center.y; }
+	function fixed GetWidth(int id) 			{ return obj[id].size.w; }
+	function fixed GetHeight(int id) 			{ return obj[id].size.h; }
+	function fixed GetWidth_Half(int id) 		{ return obj[id].size.wh; }
+	function fixed GetHeight_Half(int id) 		{ return obj[id].size.hh; }
 
-	function fixed GetCenterX(int id) { return obj[id].center.x; }
-	function fixed GetCenterY(int id) { return obj[id].center.y; }
+	// colors
+	function str GetBackColorNormal(int id) 	{ return obj[id].backcolor.normal; }
+	function str GetBackColorHovered(int id) 	{ return obj[id].backcolor.hovered; }
+	function str GetBackColorClicked(int id) 	{ return obj[id].backcolor.clicked; }
+	function str GetBackColorCurrent(int id) 	{ return obj[id].backcolor.current; }
 
-	function fixed GetWidth(int id) { return obj[id].size.w; }
-	function fixed GetHeight(int id) { return obj[id].size.h; }
-	function fixed GetWidth_Half(int id) { return obj[id].size.wh; }
-	function fixed GetHeight_Half(int id) { return obj[id].size.hh; }
+	function str GetTextColorNormal(int id) 	{ return obj[id].backcolor.normal; }
+	function str GetTextColorHovered(int id) 	{ return obj[id].backcolor.hovered; }
+	function str GetTextColorClicked(int id) 	{ return obj[id].backcolor.clicked; }
+	function str GetTextColorCurrent(int id) 	{ return obj[id].backcolor.current; }
+	// text and image
+	function str GetText(int id) 				{ return obj[id].text; }
+	function str GetImage(int id) 				{ return obj[id].image; }
 
-	function str GetColorNormal(int id) { return obj[id].backcolor.normal; }
-	function str GetColorHovered(int id) { return obj[id].backcolor.hovered; }
-	function str GetColorClicked(int id) { return obj[id].backcolor.clicked; }
-	function str GetColorCurrent(int id) { return obj[id].backcolor.current; }
+	// flags
+	function bool GetAlive(int id) 				{ return obj[id].alive; }
+	function bool GetVisible(int id) 			{ return obj[id].visible; }
+	function bool GetEnabled(int id) 			{ return obj[id].enabled; }
+	function bool GetRepeatHover(int id) 		{ return obj[id].hover_repeat; }
+	function bool GetRepeatClick(int id) 		{ return obj[id].click_repeat; }
+	function bool GetHoverable(int id) 			{ return obj[id].hoverable; }
+	function bool GetClickable(int id) 			{ return obj[id].clickable; }
+	function bool GetRenderText(int id) 		{ return obj[id].render_text; }
+	function bool GetRenderImage(int id) 		{ return obj[id].render_image; }
 
-	function str GetText(int id) { return obj[id].text; }
-
-	// get specific customs
-	function int GetCustomInt1(int id) { return obj[id].custom_int1; }
-	function int GetCustomInt2(int id) { return obj[id].custom_int2; }
-	function int GetCustomInt3(int id) { return obj[id].custom_int3; }
-	function int GetCustomInt4(int id) { return obj[id].custom_int4; }
-	function int GetCustomInt5(int id) { return obj[id].custom_int5; }
-	function int GetCustomInt6(int id) { return obj[id].custom_int6; }
-	function fixed GetCustomfixed1(int id) { return obj[id].custom_fixed1; }
-	function fixed GetCustomfixed2(int id) { return obj[id].custom_fixed2; }
-	function fixed GetCustomfixed3(int id) { return obj[id].custom_fixed3; }
-	function fixed GetCustomfixed4(int id) { return obj[id].custom_fixed4; }
-	function fixed GetCustomfixed5(int id) { return obj[id].custom_fixed5; }
-	function fixed GetCustomfixed6(int id) { return obj[id].custom_fixed6; }
-	function str GetCustomString1(int id) { return obj[id].custom_string1; }
-	function str GetCustomString2(int id) { return obj[id].custom_string2; }
-	function str GetCustomString3(int id) { return obj[id].custom_string3; }
-	function str GetCustomString4(int id) { return obj[id].custom_string4; }
-	function str GetCustomString5(int id) { return obj[id].custom_string5; }
-	function str GetCustomString6(int id) { return obj[id].custom_string6; }
-	function bool GetCustomBool1(int id) { return obj[id].custom_bool1; }
-	function bool GetCustomBool2(int id) { return obj[id].custom_bool2; }
-	function bool GetCustomBool3(int id) { return obj[id].custom_bool3; }
-	function bool GetCustomBool4(int id) { return obj[id].custom_bool4; }
-	function bool GetCustomBool5(int id) { return obj[id].custom_bool5; }
-	function bool GetCustomBool6(int id) { return obj[id].custom_bool6; }
+	// event properties
+	function bool GetHovered(int id) 			{ return obj[id].hovered; }
+	function bool GetClicked(int id) 			{ return obj[id].clicked; }
 
 
 	// get x1 point
@@ -454,6 +359,30 @@ strict namespace Widgets
 	{
 		obj[id].pos.y2 = y2;
 		CalcSizes(id);
+	}
+
+	// get previous x1 point
+	function void SetPrevX1(int id, fixed x1)
+	{
+		obj[id].pos_prev.x1 = x1;
+	}
+
+	// get previous y1 point
+	function void SetPrevY1(int id, fixed y1)
+	{
+		obj[id].pos_prev.y1 = y1;
+	}
+
+	// get previous x2 point
+	function void SetPrevX2(int id, fixed x2)
+	{
+		obj[id].pos_prev.x2 = x2;
+	}
+
+	// get previous y2 point
+	function void SetPrevY2(int id, fixed y2)
+	{
+		obj[id].pos_prev.y2 = y2;
 	}
 
 	// set the x,y of the top left position
@@ -492,87 +421,80 @@ strict namespace Widgets
 		CalcSizes(id);
 	}
 
-	function void SetColorNormal(int id, str value) { obj[id].backcolor.normal = value; }
-	function void SetColorHovered(int id, str value) { obj[id].backcolor.hovered = value; }
-	function void SetColorClicked(int id, str value) { obj[id].backcolor.clicked = value; }
-	function void SetColorCurrent(int id, str value) { obj[id].backcolor.current = value; }
+	// colors
+	function void SetBackColorNormal(int id, str value) 	{ obj[id].backcolor.normal = value; }
+	function void SetBackColorHovered(int id, str value) 	{ obj[id].backcolor.hovered = value; }
+	function void SetBackColorClicked(int id, str value) 	{ obj[id].backcolor.clicked = value; }
+	function void SetBackColorCurrent(int id, str value) 	{ obj[id].backcolor.current = value; }
+	function void SetTextColorNormal(int id, str value) 	{ obj[id].backcolor.normal = value; }
+	function void SetTextColorHovered(int id, str value) 	{ obj[id].backcolor.hovered = value; }
+	function void SetTextColorClicked(int id, str value) 	{ obj[id].backcolor.clicked = value; }
+	function void SetTextColorCurrent(int id, str value) 	{ obj[id].backcolor.current = value; }
 
-	function void SetText(int id, str value) { obj[id].text = value; }
+	// text and image
+	function void SetText(int id, str value) 				{  obj[id].text = value; }
+	function void SetImage(int id, str value) 				{  obj[id].image = value; }
 
-	// set specific customs
-	function void SetCustomInt1(int id, int value) { obj[id].custom_int1 = value; }
-	function void SetCustomInt2(int id, int value) { obj[id].custom_int2 = value; }
-	function void SetCustomInt3(int id, int value) { obj[id].custom_int3 = value; }
-	function void SetCustomInt4(int id, int value) { obj[id].custom_int4 = value; }
-	function void SetCustomInt5(int id, int value) { obj[id].custom_int5 = value; }
-	function void SetCustomInt6(int id, int value) { obj[id].custom_int6 = value; }
-	function void SetCustomfixed1(int id, fixed value) { obj[id].custom_fixed1 = value; }
-	function void SetCustomfixed2(int id, fixed value) { obj[id].custom_fixed2 = value; }
-	function void SetCustomfixed3(int id, fixed value) { obj[id].custom_fixed3 = value; }
-	function void SetCustomfixed4(int id, fixed value) { obj[id].custom_fixed4 = value; }
-	function void SetCustomfixed5(int id, fixed value) { obj[id].custom_fixed5 = value; }
-	function void SetCustomfixed6(int id, fixed value) { obj[id].custom_fixed6 = value; }
-	function void SetCustomString1(int id, str value) { obj[id].custom_string1 = value; }
-	function void SetCustomString2(int id, str value) { obj[id].custom_string2 = value; }
-	function void SetCustomString3(int id, str value) { obj[id].custom_string3 = value; }
-	function void SetCustomString4(int id, str value) { obj[id].custom_string4 = value; }
-	function void SetCustomString5(int id, str value) { obj[id].custom_string5 = value; }
-	function void SetCustomString6(int id, str value) { obj[id].custom_string6 = value; }
-	function void SetCustomBool1(int id, bool value) { obj[id].custom_bool1 = value; }
-	function void SetCustomBool2(int id, bool value) { obj[id].custom_bool2 = value; }
-	function void SetCustomBool3(int id, bool value) { obj[id].custom_bool3 = value; }
-	function void SetCustomBool4(int id, bool value) { obj[id].custom_bool4 = value; }
-	function void SetCustomBool5(int id, bool value) { obj[id].custom_bool5 = value; }
-	function void SetCustomBool6(int id, bool value) { obj[id].custom_bool6 = value; }
+	// flags
+	function void SetAlive(int id, bool value) 				{ obj[id].alive = value; }
+	function void SetVisible(int id, bool value) 			{ obj[id].visible = value; }
+	function void SetEnabled(int id, bool value) 			{ obj[id].enabled = value; }
+	function void SetRepeatHover(int id, bool value) 		{ obj[id].hover_repeat = value; }
+	function void SetRepeatClick(int id, bool value) 		{ obj[id].click_repeat = value; }
+	function void SetHoverable(int id, bool value) 			{ obj[id].hoverable = value; }
+	function void SetClickable(int id, bool value) 			{ obj[id].clickable = value; }
+	function void SetRenderText(int id, bool value) 		{ obj[id].render_text = value; }
+	function void SetRenderImage(int id, bool value) 		{ obj[id].render_image = value; }
+
+	// event properties
+	function void SetHovered(int id, bool value) 			{ obj[id].hovered = value; }
+	function void SetClicked(int id, bool value) 			{ obj[id].clicked = value; }
 
 	// widget functionalities
 	function void Update(int id)
 	{
 		// is the widget not marked for being overwritten?
-		if(obj[id].alive)
+		if(GetAlive(id))
 		{
 			// is the widget visible?
-			if(obj[id].visible)
+			if(getVisible(id))
 			{
-				// calculate the sizes of a widget
-				CalcSizes(id);
-
 				// is the user able to interact with this widget?
-				if(obj[id].enabled)
+				if(GetEnabled(id))
 				{
 					// is cursor within bounds?
-					if(cursor.pos.x > obj[id].pos.x1 && cursor.pos.x < obj[id].pos.x2 && cursor.pos.y > obj[id].pos.y1 && cursor.pos.y < obj[id].pos.y2)
+					if(Cursor.GetX() > GetX1(id) && Cursor.GetX() < GetX2(id) && Cursor.GetY() > GetY1(id) && Cursor.GetY() < GetY2(id))
 					{
 						// is this object hoverable?
-						if(obj[id].hoverable)
+						if(GetHoverable(id))
 						{
 							// is the widget set to call it's hovered function every frame?
-							if(obj[id].hover_repeat)
+							if(GetRepeatHover(id))
 							{
 								CallHoveredHooks(id);
 							}
 							// only call the clicked function once
 							else
 							{
-								if(!obj[id].hovered)
+								if(!GetHovered(id))
 								{
 									CallHoveredHooks(id);
-									obj[id].hovered = true;
+									SetHovered(id, true);;
 								}
 							}
 						}
 
 						// is this object clickable?
-						if(obj[id].clickable)
+						if(GetClickable(id))
 						{
 							// is the user clicking the mouse?
 							if(cursor.clicked)
 							{
 								// set object's clicked bool
-								obj[id].clicked = true;
+								SetClicked(id, true);
 
 								// is the widget set to call it's clicked function every frame as the user holds the mouse?
-								if(obj[id].click_repeat)
+								if(GetRepeatClick(id))
 								{
 									// call object's clicked callback
 									CallClickedHooks(id);
@@ -592,20 +514,23 @@ strict namespace Widgets
 							else
 							{
 								// unset object's clicked bool
-								obj[id].clicked = false;
+								SetClicked(id, false);
 							}
 						}
 					}
 					// cursor is not within bounds
 					else
 					{
-						obj[id].hovered = false;
-						obj[id].clicked = false;
+						SetHovered(id, false);
+						SetClicked(id, false);
 					}
 
 					// has the widget moved or changed size?
-					if(obj[id].pos_prev.x1 != obj[id].pos.x1 || obj[id].pos_prev.y1 != obj[id].pos.y1 || obj[id].pos_prev.x2 != obj[id].pos.x2 || obj[id].pos_prev.y2 != obj[id].pos.y2)
+					if(GetPrevX1(id) != GetX1(id) || GetPrevY1(id) != GetY1(id) || GetPrevX2(id) != GetX2(id) || GetPrevY2(id) != GetY2(id))
 					{
+						// set all the size variables
+						CalcSizes(id);
+
 						// call object's moved callback
 						CallMovedHooks(id);
 					}
@@ -614,10 +539,10 @@ strict namespace Widgets
 				// call object's update callback
 				CallUpdateHooks(id);
 
-				obj[id].pos_prev.x1 = obj[id].pos.x1;
-				obj[id].pos_prev.y1 = obj[id].pos.y1;
-				obj[id].pos_prev.x2 = obj[id].pos.x2;
-				obj[id].pos_prev.y2 = obj[id].pos.y2;
+				SetPrevX1(id, GetX1(id));
+				SetPrevY1(id, GetY1(id));
+				SetPrevX2(id, GetX2(id));
+				SetPrevY1(id, GetY2(id));
 			}
 		}
 	}

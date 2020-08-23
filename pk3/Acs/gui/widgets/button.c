@@ -4,52 +4,91 @@
 */
 
 
-strict namespace Button
+strict namespace Button24
 {
-	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
+	function int Create(fixed x, fixed y, str t)
 	{
-		// create a new panel object
 		int id = Widgets.Create();
 
-		Widgets.SetRectPosition(id, x, y, w, h);
+		Widgets.SetRectPosition(id, x, y, 24.0, 24.0);
 
 		// make it clickable and hoverable
-		Widgets.obj[id].clickable = true;
-		Widgets.obj[id].hoverable = true;
+		Widgets.SetClickable(id, true);
+		Widgets.SetHoverable(id, true);
 
 		// call the clicked and hovered events per frame
-		Widgets.obj[id].hover_repeat = true;
-		Widgets.obj[id].click_repeat = true;
+		Widgets.SetHoverRepeat(id, true);
+		Widgets.SetClickRepeat(id, true);
 
-		// add hooks to events
-		Widgets.AddUpdateHook(id, Event_Update);
-		Widgets.AddClickedHook(id, Event_Clicked);
-		Widgets.AddHoveredHook(id, Event_Hovered);
+		Widgets.SetRenderText(id, true);
+		Widgets.SetRenderImage(id, true);
 
 		Widgets.SetText(id, t);
+		Widgets.SetImage(id, "a");
+		return id;
+	}
+}
+
+strict namespace Button64
+{
+	function int Create(fixed x, fixed y, str t)
+	{
+		int id = Button24.Create(x, y, t);
+		Widgets.SetRectPosition(id, x, y, 64.0, 24.0);
+		Widgets.SetImage(id, "b");
+		return id;
+	}
+}
+
+strict namespace Button96
+{
+	function int Create(fixed x, fixed y, str t)
+	{
+		int id = Button24.Create(x, y, t);
+		Widgets.SetRectPosition(id, x, y, 96.0, 24.0);
+		Widgets.SetText(id, t);
+		Widgets.SetImage(id, "c");
+		return id;
+	}
+}
+
+strict namespace Button128
+{
+	function int Create(fixed x, fixed y, str t)
+	{
+		int id = Button24.Create(x, y, t);
+		Widgets.SetRectPosition(id, x, y, 128.0, 24.0);
+		Widgets.SetText(id, t);
+		Widgets.SetImage(id, "d");
+		return id;
+	}
+}
+
+strict namespace ButtonMap
+{
+	function int Create(fixed x, fixed y, str t)
+	{
+		int id = Button24.Create(x, y, t);
+		Widgets.SetRectPosition(id, x, y, 192.0, 144.0);
+		Widgets.SetText(id, t);
+		Widgets.SetImage(id, "e");
+		Widgets.SetTextOffsetX(id, 6.0);
+		Widgets.SetTextOffsetY(id, Widgets.GetHeight(id)-14.0);
+		Widgets.AddUpdateHook(id, Event_Update);
 
 		return id;
 	}
 
 	function void Event_Update(int id)
 	{
-		// text
-		Screen.Draw("SMALLFONT", Widgets.GetText(id), "White", Widgets.GetCenterX(id), Widgets.GetCenterY(id));
-
-		if(!Widgets.obj[id].clicked && !Widgets.obj[id].hovered) { Widgets.SetBackColorCurrent(id, Widgets.GetBackColorNormal(id)); }
+		Screen.Draw("NGM2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id)+6.0, Widgets.GetY1(id)+6.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 	}
-
-	function void Event_Hovered(int id)
-	{
-		// set hovered color
-		Widgets.SetBackColorCurrent(id, Widgets.GetBackColorHovered(id));
-	}
-
-	function void Event_Clicked(int id)
-	{
-		// set clicked color
-		Widgets.SetBackColorCurrent(id, Widgets.GetBackColorClicked(id));
-
-	}
-
 }
+
+
+
+
+
+
+
+

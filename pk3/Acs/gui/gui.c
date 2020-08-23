@@ -108,14 +108,15 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		int test1 = Button.Create(200.0, 200.0, 10.0, 32.0, "test1");
+		int test1 = ButtonMap.Create(200.0, 200.0, "New Gothic Movement 2");
+
 
 		while(1)
 		{
 			Cursor.Run();
 			Widgets.Run();
 
-			Screen.Draw("SONICFONTHD", "First Time Setup", "White", 50.0, 50.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+			Screen.Draw("SONICFONTUD", "First Time Setup", "White", 50.0, 50.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 
 			Screen.ResetHudIDs();
 			delay(1);

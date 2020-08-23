@@ -78,9 +78,11 @@ strict namespace Widgets
 		struct vec2T center;							// x, y of the center of the widget
 		struct colors backcolor;						// background colors
 		struct colors textcolor;						// text colors
+		struct vec2T text_offset;						// offset the position of the text
 
 		str text;										// text to display
 		str image;										// image to display
+		str font;										// font of the text to display
 
 		// flags
 		bool alive;										// is this widget alive?(false marks this to be overwritten by a new widget)
@@ -138,16 +140,21 @@ strict namespace Widgets
 		obj[id].size.hh 			= fixed(int(obj[id].size.h/2.0));
 		obj[id].center.x 			= obj[id].pos.x1+obj[id].size.wh;
 		obj[id].center.y 			= obj[id].pos.y1+obj[id].size.hh;
-		obj[id].backcolor.normal 	= "Green";
-		obj[id].backcolor.clicked	= "Cyan";
-		obj[id].backcolor.hovered	= "Blue";
-		obj[id].backcolor.current	= "Green";
-		obj[id].textcolor.normal 	= "White";
-		obj[id].textcolor.clicked	= "White";
+		obj[id].text_offset.x		= 0.0;
+		obj[id].text_offset.y		= 0.0;
+		obj[id].backcolor.normal 	= "UI_Main_Normal";
+		obj[id].backcolor.disabled 	= "UI_Main_Clicked";
+		obj[id].backcolor.clicked	= "UI_Main_Clicked";
+		obj[id].backcolor.hovered	= "UI_Main_Hovered";
+		obj[id].backcolor.current	= "UI_Main_Normal";
+		obj[id].textcolor.normal 	= "Gray";
+		obj[id].textcolor.disabled 	= "DarkGray";
+		obj[id].textcolor.clicked	= "DarkGray";
 		obj[id].textcolor.hovered	= "White";
-		obj[id].textcolor.current	= "White";
+		obj[id].textcolor.current	= "Gray";
 		obj[id].text				= "";
-		obj[id].image				= "";
+		obj[id].image				= "a";
+		obj[id].font				= "SONICFONT";
 
 		// flags
 		obj[id].alive 			= true;
@@ -303,26 +310,31 @@ strict namespace Widgets
 	function fixed GetWidth_Half(int id) 		{ return obj[id].size.wh; }
 	function fixed GetHeight_Half(int id) 		{ return obj[id].size.hh; }
 
+	function fixed GetTextOffsetX(int id) 		{ return obj[id].text_offset.x; }
+	function fixed GetTextOffsetY(int id) 		{ return obj[id].text_offset.y; }
+
 	// colors
 	function str GetBackColorNormal(int id) 	{ return obj[id].backcolor.normal; }
 	function str GetBackColorHovered(int id) 	{ return obj[id].backcolor.hovered; }
 	function str GetBackColorClicked(int id) 	{ return obj[id].backcolor.clicked; }
 	function str GetBackColorCurrent(int id) 	{ return obj[id].backcolor.current; }
 
-	function str GetTextColorNormal(int id) 	{ return obj[id].backcolor.normal; }
-	function str GetTextColorHovered(int id) 	{ return obj[id].backcolor.hovered; }
-	function str GetTextColorClicked(int id) 	{ return obj[id].backcolor.clicked; }
-	function str GetTextColorCurrent(int id) 	{ return obj[id].backcolor.current; }
+	function str GetTextColorNormal(int id) 	{ return obj[id].textcolor.normal; }
+	function str GetTextColorHovered(int id) 	{ return obj[id].textcolor.hovered; }
+	function str GetTextColorClicked(int id) 	{ return obj[id].textcolor.clicked; }
+	function str GetTextColorCurrent(int id) 	{ return obj[id].textcolor.current; }
+
 	// text and image
 	function str GetText(int id) 				{ return obj[id].text; }
 	function str GetImage(int id) 				{ return obj[id].image; }
+	function str GetFont(int id) 				{ return obj[id].font; }
 
 	// flags
 	function bool GetAlive(int id) 				{ return obj[id].alive; }
 	function bool GetVisible(int id) 			{ return obj[id].visible; }
 	function bool GetEnabled(int id) 			{ return obj[id].enabled; }
-	function bool GetRepeatHover(int id) 		{ return obj[id].hover_repeat; }
-	function bool GetRepeatClick(int id) 		{ return obj[id].click_repeat; }
+	function bool GetHoverRepeat(int id) 		{ return obj[id].hover_repeat; }
+	function bool GetClickRepeat(int id) 		{ return obj[id].click_repeat; }
 	function bool GetHoverable(int id) 			{ return obj[id].hoverable; }
 	function bool GetClickable(int id) 			{ return obj[id].clickable; }
 	function bool GetRenderText(int id) 		{ return obj[id].render_text; }
@@ -421,6 +433,9 @@ strict namespace Widgets
 		CalcSizes(id);
 	}
 
+	function void SetTextOffsetX(int id, fixed value) 		{ obj[id].text_offset.x = value; }
+	function void SetTextOffsetY(int id, fixed value) 		{ obj[id].text_offset.y = value; }
+
 	// colors
 	function void SetBackColorNormal(int id, str value) 	{ obj[id].backcolor.normal = value; }
 	function void SetBackColorHovered(int id, str value) 	{ obj[id].backcolor.hovered = value; }
@@ -434,13 +449,14 @@ strict namespace Widgets
 	// text and image
 	function void SetText(int id, str value) 				{  obj[id].text = value; }
 	function void SetImage(int id, str value) 				{  obj[id].image = value; }
+	function void SetFont(int id, str value) 				{  obj[id].font = value; }
 
 	// flags
 	function void SetAlive(int id, bool value) 				{ obj[id].alive = value; }
 	function void SetVisible(int id, bool value) 			{ obj[id].visible = value; }
 	function void SetEnabled(int id, bool value) 			{ obj[id].enabled = value; }
-	function void SetRepeatHover(int id, bool value) 		{ obj[id].hover_repeat = value; }
-	function void SetRepeatClick(int id, bool value) 		{ obj[id].click_repeat = value; }
+	function void SetHoverRepeat(int id, bool value) 		{ obj[id].hover_repeat = value; }
+	function void SetClickRepeat(int id, bool value) 		{ obj[id].click_repeat = value; }
 	function void SetHoverable(int id, bool value) 			{ obj[id].hoverable = value; }
 	function void SetClickable(int id, bool value) 			{ obj[id].clickable = value; }
 	function void SetRenderText(int id, bool value) 		{ obj[id].render_text = value; }
@@ -457,19 +473,27 @@ strict namespace Widgets
 		if(GetAlive(id))
 		{
 			// is the widget visible?
-			if(getVisible(id))
+			if(GetVisible(id))
 			{
 				// is the user able to interact with this widget?
 				if(GetEnabled(id))
 				{
+					// normal colored
+					obj[id].backcolor.current = obj[id].backcolor.normal;
+					obj[id].textcolor.current = obj[id].textcolor.normal;
+
 					// is cursor within bounds?
 					if(Cursor.GetX() > GetX1(id) && Cursor.GetX() < GetX2(id) && Cursor.GetY() > GetY1(id) && Cursor.GetY() < GetY2(id))
 					{
 						// is this object hoverable?
 						if(GetHoverable(id))
 						{
+							// hover colored
+							obj[id].backcolor.current = obj[id].backcolor.hovered;
+							obj[id].textcolor.current = obj[id].textcolor.hovered;
+
 							// is the widget set to call it's hovered function every frame?
-							if(GetRepeatHover(id))
+							if(GetHoverRepeat(id))
 							{
 								CallHoveredHooks(id);
 							}
@@ -490,11 +514,15 @@ strict namespace Widgets
 							// is the user clicking the mouse?
 							if(cursor.clicked)
 							{
+								// click colored
+								obj[id].backcolor.current = obj[id].backcolor.clicked;
+								obj[id].textcolor.current = obj[id].textcolor.clicked;
+
 								// set object's clicked bool
 								SetClicked(id, true);
 
 								// is the widget set to call it's clicked function every frame as the user holds the mouse?
-								if(GetRepeatClick(id))
+								if(GetClickRepeat(id))
 								{
 									// call object's clicked callback
 									CallClickedHooks(id);
@@ -534,6 +562,24 @@ strict namespace Widgets
 						// call object's moved callback
 						CallMovedHooks(id);
 					}
+				}
+				else
+				{
+					// disable colored
+					obj[id].backcolor.current = obj[id].backcolor.disabled;
+					obj[id].textcolor.current = obj[id].textcolor.disabled;
+				}
+
+				// should we render the back image?
+				if(GetRenderImage(id))
+				{
+					Screen.Draw("UIFONT", GetImage(id), GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+				}
+
+				// should we render the text?
+				if(GetRenderText(id))
+				{
+					Screen.Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetX1(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 				}
 
 				// call object's update callback

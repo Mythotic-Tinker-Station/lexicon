@@ -44,6 +44,7 @@ strict namespace
 	struct colors
 	{
 		str normal;
+		str disabled;
 		str clicked;
 		str hovered;
 		str current;

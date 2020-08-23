@@ -1,19 +1,24 @@
 
 
 
-UI_Silhouette		{ #000000 #000000 }
-UI_Red				{ #FF0000 #FF0000 }
-UI_Orange			{ #FF8000 #FF8000 }
-UI_Yellow           { #FFFF00 #FFFF00 }
-UI_SpringGreen      { #80FF00 #80FF00 }
-UI_Lime				{ #00FF00 #00FF00 }
-UI_Chartreuse		{ #00FF80 #00FF80 }
-UI_Cyan             { #00FFFF #00FFFF }
-UI_Azure            { #0080FF #0080FF }
-UI_Blue				{ #0000FF #0000FF }
-UI_Purple           { #8000FF #8000FF }
-UI_Magenta          { #FF00FF #FF00FF }
-UI_Rose             { #FF0080 #FF0080 }
-UI_White			{ #FFFFFF #FFFFFF }
-UI_Black			{ #808080 #808080 }
-UI_Brown			{ #806040 #806040 }
+Silhouette			{ #000000 #000000 }
+
+UI_Main_Normal		{ #000000 #7f407f }
+UI_Main_Hovered		{ #000000 #bf60bf }
+UI_Main_Clicked		{ #000000 #402040 }
+
+UI_Green_Normal		{ #000000 #60bf30 }
+UI_Green_Hovered	{ #000000 #7fff40 }
+UI_Green_Clicked	{ #000000 #407f20 }
+
+UI_Blue_Normal		{ #000000 #308fbf }
+UI_Blue_Hovered		{ #000000 #40bfff }
+UI_Blue_Clicked		{ #000000 #20607f }
+
+UI_Red_Normal		{ #000000 #bf3030 }
+UI_Red_Hovered		{ #000000 #ff4040 }
+UI_Red_Clicked		{ #000000 #7f2020 }
+
+UI_Orange_Normal	{ #000000 #bf7830 }
+UI_Orange_Hovered	{ #000000 #ff9f40 }
+UI_Orange_Clicked	{ #000000 #7f5020 }

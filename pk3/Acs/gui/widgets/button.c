@@ -69,19 +69,22 @@ strict namespace ButtonMap
 	function int Create(fixed x, fixed y, str t)
 	{
 		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 192.0, 144.0);
+		Widgets.SetRectPosition(id, x, y, 152.0, 108.0);
 		Widgets.SetText(id, t);
 		Widgets.SetImage(id, "e");
-		Widgets.SetTextOffsetX(id, 6.0);
-		Widgets.SetTextOffsetY(id, Widgets.GetHeight(id)-14.0);
+		Widgets.SetFont(id, "SMALLFONT");
+		Widgets.SetTextOffsetY(id, 6.0);
 		Widgets.AddUpdateHook(id, Event_Update);
+		Widgets.SetBackColorNormal(id, "");
+		Widgets.SetBackColorHovered(id, "");
+		Widgets.SetBackColorClicked(id, "");
 
 		return id;
 	}
 
 	function void Event_Update(int id)
 	{
-		Screen.Draw("NGM2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id)+6.0, Widgets.GetY1(id)+6.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		//Screen.Draw("NGM2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id)+6.0, Widgets.GetY1(id)+6.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 	}
 }
 

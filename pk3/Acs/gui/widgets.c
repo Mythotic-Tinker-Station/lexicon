@@ -579,7 +579,9 @@ strict namespace Widgets
 				// should we render the text?
 				if(GetRenderText(id))
 				{
-					Screen.Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetX1(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+					Screen.Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen.XALIGN_CENTER, Screen.YALIGN_TOP);
+
+					SetHUDClipRect(0, 0, 0, 0, int(GetWidth(id)));
 				}
 
 				// call object's update callback

@@ -1,16 +1,38 @@
 
 
-Actor Replacer 31999
+// September 2020
+// by Michaelis
+// for Lexicon
+
+Actor "Re🅱lacer" 31999
 {
-
-	//$Arg4 "Actor ID"
-
+	+NOINTERACTION
+	+NOSECTOR
 	States
 	{
-		Spawn:
-			TNT1 A 0
-			TNT1 A 0 A_JumpIf(
-			Loop
-
+	Spawn:
+		TROO A 0 NoDelay ACS_NamedExecuteWithResult("Re:b:lacer")
+		TNT1 A 100
+		Stop
 	}
 }
+
+//*****************************************************************************
+//	This processor transfers special and args to map-scope variables, from
+//	which script then picks them up.
+//*****************************************************************************
+
+Actor TransferSpecialProc : CustomInventory
+{
+	States
+	{
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteWithResult("XCDE_StoreSpecial1", special, args[0], args[1])
+		TNT1 A 0 ACS_NamedExecuteWithResult("XCDE_StoreSpecial2", args[2], args[3], args[4])
+		Stop
+	}
+}
+
+Actor "FriendlyProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("FRIENDLY", true) Stop } }
+Actor   "AmbushProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("AMBUSH"  , true) Stop } }
+Actor  "DormantProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("DORMANT" , true) Stop } }

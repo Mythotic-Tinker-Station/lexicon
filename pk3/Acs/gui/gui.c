@@ -105,18 +105,28 @@ strict namespace Gui
 		// check if we are the local client
 		if(!clientCheck()) { terminate; }
 
+		for(fixed i = 0.0; i < 9.0; i++)
+		{
+			ButtonMap.Create(50.0+(156.0*i), 32.0, "New Gothic Movement 2");
+
+		}
+
+
 		// setup the Screen
 		Screen.Init();
-
-		int test1 = ButtonMap.Create(200.0, 200.0, "New Gothic Movement 2");
-
-
 		while(1)
 		{
+
+			Screen.Draw("UIHFADE", "a", "", 0.0, -32.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+			Screen.Draw("SONICFONTHD", "Votes", "White", Screen.GetCenterX(), 16.0);
+
 			Cursor.Run();
 			Widgets.Run();
 
-			Screen.Draw("SONICFONTUD", "First Time Setup", "White", 50.0, 50.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+			for(fixed i = 0.0; i < 9.0; i++)
+			{
+				Screen.Draw("BIGFONT", str(20.0-(fixed(random(1, 3))+i)), "Gold", 50.0+(156.0*i)+76.0, 32.0+110.0, Screen.XALIGN_CENTER, Screen.YALIGN_CENTER);
+			}
 
 			Screen.ResetHudIDs();
 			delay(1);

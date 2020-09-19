@@ -2,12 +2,6 @@
 
 
 
-
-
-
-
-
-
 script "Leixcon_AddMapSet" (int acronym)
 {
 	mapset_count++;
@@ -18,10 +12,14 @@ script "Leixcon_AddMapSet" (int acronym)
 	mapsets[mapset_count].mapcount			= getDynLangEntry(mapsets[mapset_count].acronym, "MAPCOUNT");
 	mapsets[mapset_count].startmap			= getDynLangEntry(mapsets[mapset_count].acronym, "STARTMAP");
 	mapsets[mapset_count].thumbnail			= getDynLangEntry(mapsets[mapset_count].acronym, "THUMBNAIL");
-
 	for(int i = 0; i < 32; i++)
 	{
 		mapsets[mapset_count].previews[i]	= getDynLangEntry(mapsets[mapset_count].acronym, strparam(s:"PREVIEW", d:i));
+	}
+
+	for(int i = 0; i < 256; i++)
+	{
+		mapsets[mapset_count].readme[i]	= getDynLangEntry(mapsets[mapset_count].acronym, strparam(s:"README", d:i));
 	}
 }
 

@@ -60,6 +60,7 @@ strict namespace
 		str startmap;
 		str thumbnail;
 		str previews[32];
+		str readme[256];
 	};
 
 	struct mapset mapsets[256];

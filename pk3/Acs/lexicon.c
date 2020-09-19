@@ -50,8 +50,21 @@ strict namespace
 		str current;
 	};
 
-	str mapsets[256];
-	fixed mapset_count = 256.0;
+	struct mapset
+	{
+		str acronym;
+		str name;
+		str description;
+		str credits;
+		str mapcount;
+		str startmap;
+		str thumbnail;
+		str previews[32];
+	};
+
+	struct mapset mapsets[256];
+	int mapset_count = 0;
+
 	#if 1
 		#include "util.c"
 		#include "gui/screen.c"
@@ -62,5 +75,6 @@ strict namespace
 		#include "gui/widgets/button.c"
 		#include "replacer.c"
 		#include "patches.c"
+		#include "expansion.c"
 	#endif
 }

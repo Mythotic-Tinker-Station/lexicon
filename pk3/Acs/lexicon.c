@@ -61,6 +61,7 @@ strict namespace
 		str thumbnail;
 		str previews[32];
 		str readme[256];
+		str credits[64][3];
 	};
 
 	struct mapset mapsets[256];

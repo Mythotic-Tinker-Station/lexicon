@@ -58,8 +58,6 @@ script "Lexicon_AddMapSet" (int acronym)
 					// split the replacer string into its 2 parts, the replacee and the replacer
 					mapsets[mapset_count].replacers[r][0] = StrLeft(info, c);
 					mapsets[mapset_count].replacers[r][1] = StrMid(info, c+1, StrLen(info));
-					printbold(s:mapsets[mapset_count].replacers[r][0]);
-					printbold(s:mapsets[mapset_count].replacers[r][1]);
 					break;
 				}
 			}

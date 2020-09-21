@@ -9,7 +9,7 @@
 function str getDynLangEntry(str p1, str p2)
 {
     // get entry
-    str name = strparam(s:p1, s:":", s:p2);
+    str name = strparam(s:p1, s:"_", s:p2);
     str text = strparam(l:name);
 
     // check if listing exists

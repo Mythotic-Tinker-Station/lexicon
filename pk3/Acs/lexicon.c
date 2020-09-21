@@ -61,7 +61,6 @@ strict namespace
 		str thumbnail;
 		str previews[32];
 		str readme[256];
-		str credits[64][3];
 	};
 
 	struct mapset mapsets[256];
@@ -77,6 +76,12 @@ strict namespace
 		#include "gui/widgets/button.c"
 		#include "replacer.c"
 		#include "patches.c"
-		#include "expansion.c"
+
 	#endif
 }
+
+// due to the nature of ints and strings and scripts and stuff,
+// to pass strings through scripts, the expansion script needs to not be strictly typed
+// idk if bcs has a way to actually do this right, but this works just as well
+#include "expansion.c"
+

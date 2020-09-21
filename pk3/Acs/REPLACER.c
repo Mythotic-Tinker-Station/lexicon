@@ -21,7 +21,6 @@ Script "Re:b:lacer" (void)
 		case   10: class = "GibbedMarine"          ; break ;
 		case   12: class = "GibbedMarineExtra"     ; break ;
 		case   13: class = "RedCard"               ; break ;
-		case   14: class = "TeleportDest"          ; break ;
 		case   15: class = "DeadMarine"            ; break ;
 		case   16: class = "Cyberdemon"            ; break ;
 		case   17: class = "CellPack"              ; break ;

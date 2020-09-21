@@ -6,8 +6,10 @@
 #import "../../compiler/lib/zcommon.bcs"
 #library "lexicon"
 
-strict namespace
-{
+
+//strict namespace
+//{
+
 	// size
 	struct sizeT
 	{
@@ -52,19 +54,21 @@ strict namespace
 
 	struct mapset
 	{
-		str acronym;
-		str name;
-		str description;
-		str credits;
-		str mapcount;
-		str startmap;
-		str thumbnail;
-		str previews[32];
-		str readme[256];
+		str acronym;					// mapset acronym
+		str name;						// mapset name
+		str description;				// mapset description
+		str credits;					// mapset credits
+		str mapcount;					// mapset map count
+		str startmap;					// mapset starting map name
+		str thumbnail;					// mapset ui thumbnail
+		str previews[32];				// mapset screenshots
+		str readme[256];				// mapset readme pages
+		str replacers[256][2];			// mapset actor replacers
 	};
 
-	struct mapset mapsets[256];
-	int mapset_count = 0;
+	struct mapset mapsets[256];			// holds all the mapset info
+	int mapset_count = 0;				// how many mapsets exist
+	int mapset_current = 0;				// the currently loaded mapset
 
 	#if 1
 		#include "util.c"
@@ -76,12 +80,7 @@ strict namespace
 		#include "gui/widgets/button.c"
 		#include "replacer.c"
 		#include "patches.c"
-
+		#include "expansion.c"
 	#endif
-}
-
-// due to the nature of ints and strings and scripts and stuff,
-// to pass strings through scripts, the expansion script needs to not be strictly typed
-// idk if bcs has a way to actually do this right, but this works just as well
-#include "expansion.c"
+//}
 

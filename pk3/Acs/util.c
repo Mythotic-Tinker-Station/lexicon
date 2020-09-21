@@ -1,7 +1,7 @@
 
 /*
 	Lexicon Scripting by Tribeam
-	With help from Popsoap
+	With help from Popsoap and Michaelis
 */
 
 

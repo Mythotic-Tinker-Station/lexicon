@@ -50,7 +50,7 @@ script "Lexicon_AddMapSet" (int acronym)
 		if(info != "_LANG_UNDEFINED_")
 		{
 			// for each char in the replacer string
-			for(int c = 0; c < StrLen(info); c++)
+			for(int c = 0; c <= StrLen(info); c++)
 			{
 				// find the seperator
 				if(StrParam(c:GetChar(info, c)) == ":")

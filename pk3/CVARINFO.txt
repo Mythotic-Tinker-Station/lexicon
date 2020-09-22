@@ -10,4 +10,4 @@ user int 	lexicon_vote_activation		= 1;
 
 
 // used as global vars
-server int	lexicon_replacer_mode		= 0;
+server string	lexicon_replacer_mode	= "normal";

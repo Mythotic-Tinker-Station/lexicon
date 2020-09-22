@@ -5,171 +5,365 @@
 #define DOOMEDNUMS 145
 
 
+str classlist[DOOMEDNUMS][4] =
+{
+		{   5, "BlueCard"             , "2"},
+		{   6, "YellowCard"           , "2"},
+		{   7, "SpiderMastermind"     , "1"},
+		{   8, "Backpack"             , "4"},
+		{   9, "ShotgunGuy"           , "1"},
+		{  10, "GibbedMarine"         , "3"},
+		{  12, "GibbedMarineExtra"    , "3"},
+		{  13, "RedCard"              , "2"},
+		{  15, "DeadMarine"           , "3"},
+		{  16, "Cyberdemon"           , "1"},
+		{  17, "CellPack"             , "4"},
+		{  18, "DeadZombieMan"        , "3"},
+		{  19, "DeadShotgunGuy"       , "3"},
+		{  20, "DeadDoomImp"          , "3"},
+		{  21, "DeadDemon"            , "3"},
+		{  22, "DeadCacodemon"        , "3"},
+		{  23, "DeadLostSoul"         , "3"},
+		{  24, "Gibs"                 , "3"},
+		{  25, "DeadStick"            , "3"},
+		{  26, "LiveStick"            , "3"},
+		{  27, "HeadOnAStick"         , "3"},
+		{  28, "HeadsOnAStick"        , "3"},
+		{  29, "HeadCandles"          , "3"},
+		{  30, "TallGreenColumn"      , "3"},
+		{  31, "ShortGreenColumn"     , "3"},
+		{  32, "TallRedColumn"        , "3"},
+		{  33, "ShortRedColumn"       , "3"},
+		{  34, "Candlestick"          , "3"},
+		{  35, "Candelabra"           , "3"},
+		{  36, "HeartColumn"          , "3"},
+		{  37, "SkullColumn"          , "3"},
+		{  38, "RedSkull"             , "2"},
+		{  39, "YellowSkull"          , "2"},
+		{  40, "BlueSkull"            , "2"},
+		{  41, "EvilEye"              , "3"},
+		{  42, "FloatingSkull"        , "3"},
+		{  43, "TorchTree"            , "3"},
+		{  44, "BlueTorch"            , "3"},
+		{  45, "GreenTorch"           , "3"},
+		{  46, "RedTorch"             , "3"},
+		{  47, "Stalagtite"           , "3"},
+		{  48, "TechPillar"           , "3"},
+		{  49, "BloodyTwitch"         , "3"},
+		{  50, "Meat2"                , "3"},
+		{  51, "Meat3"                , "3"},
+		{  52, "Meat4"                , "3"},
+		{  53, "Meat5"                , "3"},
+		{  54, "BigTree"              , "3"},
+		{  55, "ShortBlueTorch"       , "3"},
+		{  56, "ShortGreenTorch"      , "3"},
+		{  57, "ShortRedTorch"        , "3"},
+		{  58, "Spectre"              , "1"},
+		{  59, "NonsolidMeat2"        , "3"},
+		{  60, "NonsolidMeat4"        , "3"},
+		{  61, "NonsolidMeat3"        , "3"},
+		{  62, "NonsolidMeat5"        , "3"},
+		{  63, "NonsolidTwitch"       , "3"},
+		{  64, "Archvile"             , "1"},
+		{  65, "ChaingunGuy"          , "1"},
+		{  66, "Revenant"             , "1"},
+		{  67, "Fatso"                , "1"},
+		{  68, "Arachnotron"          , "1"},
+		{  69, "HellKnight"           , "1"},
+		{  70, "BurningBarrel"        , "3"},
+		{  71, "PainElemental"        , "1"},
+		{  72, "CommanderKeen"        , "0"},
+		{  73, "HangNoGuts"           , "3"},
+		{  74, "HangBNoBrain"         , "3"},
+		{  75, "HangTLookingDown"     , "3"},
+		{  76, "HangTSkull"           , "3"},
+		{  77, "HangTLookingUp"       , "3"},
+		{  78, "HangTNoBrain"         , "3"},
+		{  79, "ColonGibs"            , "3"},
+		{  80, "SmallBloodPool"       , "3"},
+		{  81, "BrainStem"            , "3"},
+		{  82, "SuperShotgun"         , "5"},
+		{  83, "Megasphere"           , "6"},
+		{  84, "WolfensteinSS"        , "1"},
+		{  85, "TechLamp"             , "3"},
+		{  86, "TechLamp2"            , "3"},
+		{  87, "BossTarget"           , "0"},
+		{  88, "BossBrain"            , "0"},
+		{  89, "BossEye"              , "0"},
+		{ 888, "MBFHelperDog"         , "0"},
+		{2001, "Shotgun"              , "5"},
+		{2002, "Chaingun"             , "5"},
+		{2003, "RocketLauncher"       , "5"},
+		{2004, "PlasmaRifle"          , "5"},
+		{2005, "Chainsaw"             , "5"},
+		{2006, "BFG9000"              , "5"},
+		{2007, "Clip"                 , "4"},
+		{2008, "Shell"                , "4"},
+		{2010, "RocketAmmo"           , "4"},
+		{2011, "Stimpack"             , "6"},
+		{2012, "Medikit"              , "6"},
+		{2013, "Soulsphere"           , "6"},
+		{2014, "HealthBonus"          , "6"},
+		{2015, "ArmorBonus"           , "6"},
+		{2018, "GreenArmor"           , "6"},
+		{2019, "BlueArmor"            , "6"},
+		{2022, "InvulnerabilitySphere", "6"},
+		{2023, "Berserk"              , "6"},
+		{2024, "BlurSphere"           , "6"},
+		{2025, "RadSuit"              , "6"},
+		{2026, "Allmap"               , "6"},
+		{2028, "Column"               , "3"},
+		{2035, "ExplosiveBarrel"      , "3"},
+		{2045, "Infrared"             , "6"},
+		{2046, "RocketBox"            , "4"},
+		{2047, "Cell"                 , "4"},
+		{2048, "ClipBox"              , "4"},
+		{2049, "ShellBox"             , "4"},
+		{3001, "DoomImp"              , "1"},
+		{3002, "Demon"                , "1"},
+		{3003, "BaronOfHell"          , "1"},
+		{3004, "ZombieMan"            , "1"},
+		{3005, "Cacodemon"            , "1"},
+		{3006, "LostSoul"             , "1"},
+		{5003, "DarkImp"              , "1"},
+		{5004, "BloodDemon"           , "1"},
+		{5005, "SuperShotgunGuy"      , "1"},
+		{5006, "Cacolantern"          , "1"},
+		{5007, "Hectebus"             , "1"},
+		{5008, "Belphegor"            , "1"},
+		{5010, "Pistol"               , "5"},
+		{5011, "GrenadeLauncher"      , "5"},
+		{5012, "Railgun"              , "5"},
+		{5013, "BFG10K"               , "5"},
+		{5014, "Minigun"              , "5"},
+		{5015, "Abaddon"              , "1"},
+		{9037, "BetaSkull"            , "1"},
+		{9050, "StealthArachnotron"   , "1"},
+		{9051, "StealthArchvile"      , "1"},
+		{9052, "StealthBaron"         , "1"},
+		{9053, "StealthCacodemon"     , "1"},
+		{9054, "StealthChaingunGuy"   , "1"},
+		{9055, "StealthDemon"         , "1"},
+		{9056, "StealthHellKnight"    , "1"},
+		{9057, "StealthDoomImp"       , "1"},
+		{9058, "StealthFatso"         , "1"},
+		{9059, "StealthRevenant"      , "1"},
+		{9060, "StealthShotgunGuy"    , "1"},
+		{9061, "StealthZombieMan"     , "1"},
+};
+
+str modes[128][2];
+int mode_count = 0;
+
+
 Script "Re:b:lacer" (void)
 {
 	int newobj = GetActorProperty(0, APROP_Score);
 
 	str class = "Unknown";
+	str orgclass = "Unknown";
+	str type = "0";
 
-	switch(newobj)
+	// get the actor we are suppose to place
+	for(int i = 0; i < DOOMEDNUMS; i++)
 	{
-		case    5: class = "BlueCard"              ; break ;
-		case    6: class = "YellowCard"            ; break ;
-		case    7: class = "SpiderMastermind"      ; break ;
-		case    8: class = "Backpack"              ; break ;
-		case    9: class = "ShotgunGuy"            ; break ;
-		case   10: class = "GibbedMarine"          ; break ;
-		case   12: class = "GibbedMarineExtra"     ; break ;
-		case   13: class = "RedCard"               ; break ;
-		case   15: class = "DeadMarine"            ; break ;
-		case   16: class = "Cyberdemon"            ; break ;
-		case   17: class = "CellPack"              ; break ;
-		case   18: class = "DeadZombieMan"         ; break ;
-		case   19: class = "DeadShotgunGuy"        ; break ;
-		case   20: class = "DeadDoomImp"           ; break ;
-		case   21: class = "DeadDemon"             ; break ;
-		case   22: class = "DeadCacodemon"         ; break ;
-		case   23: class = "DeadLostSoul"          ; break ;
-		case   24: class = "Gibs"                  ; break ;
-		case   25: class = "DeadStick"             ; break ;
-		case   26: class = "LiveStick"             ; break ;
-		case   27: class = "HeadOnAStick"          ; break ;
-		case   28: class = "HeadsOnAStick"         ; break ;
-		case   29: class = "HeadCandles"           ; break ;
-		case   30: class = "TallGreenColumn"       ; break ;
-		case   31: class = "ShortGreenColumn"      ; break ;
-		case   32: class = "TallRedColumn"         ; break ;
-		case   33: class = "ShortRedColumn"        ; break ;
-		case   34: class = "Candlestick"           ; break ;
-		case   35: class = "Candelabra"            ; break ;
-		case   36: class = "HeartColumn"           ; break ;
-		case   37: class = "SkullColumn"           ; break ;
-		case   38: class = "RedSkull"              ; break ;
-		case   39: class = "YellowSkull"           ; break ;
-		case   40: class = "BlueSkull"             ; break ;
-		case   41: class = "EvilEye"               ; break ;
-		case   42: class = "FloatingSkull"         ; break ;
-		case   43: class = "TorchTree"             ; break ;
-		case   44: class = "BlueTorch"             ; break ;
-		case   45: class = "GreenTorch"            ; break ;
-		case   46: class = "RedTorch"              ; break ;
-		case   47: class = "Stalagtite"            ; break ;
-		case   48: class = "TechPillar"            ; break ;
-		case   49: class = "BloodyTwitch"          ; break ;
-		case   50: class = "Meat2"                 ; break ;
-		case   51: class = "Meat3"                 ; break ;
-		case   52: class = "Meat4"                 ; break ;
-		case   53: class = "Meat5"                 ; break ;
-		case   54: class = "BigTree"               ; break ;
-		case   55: class = "ShortBlueTorch"        ; break ;
-		case   56: class = "ShortGreenTorch"       ; break ;
-		case   57: class = "ShortRedTorch"         ; break ;
-		case   58: class = "Spectre"               ; break ;
-		case   59: class = "NonsolidMeat2"         ; break ;
-		case   60: class = "NonsolidMeat4"         ; break ;
-		case   61: class = "NonsolidMeat3"         ; break ;
-		case   62: class = "NonsolidMeat5"         ; break ;
-		case   63: class = "NonsolidTwitch"        ; break ;
-		case   64: class = "Archvile"              ; break ;
-		case   65: class = "ChaingunGuy"           ; break ;
-		case   66: class = "Revenant"              ; break ;
-		case   67: class = "Fatso"                 ; break ;
-		case   68: class = "Arachnotron"           ; break ;
-		case   69: class = "HellKnight"            ; break ;
-		case   70: class = "BurningBarrel"         ; break ;
-		case   71: class = "PainElemental"         ; break ;
-		case   72: class = "CommanderKeen"         ; break ;
-		case   73: class = "HangNoGuts"            ; break ;
-		case   74: class = "HangBNoBrain"          ; break ;
-		case   75: class = "HangTLookingDown"      ; break ;
-		case   76: class = "HangTSkull"            ; break ;
-		case   77: class = "HangTLookingUp"        ; break ;
-		case   78: class = "HangTNoBrain"          ; break ;
-		case   79: class = "ColonGibs"             ; break ;
-		case   80: class = "SmallBloodPool"        ; break ;
-		case   81: class = "BrainStem"             ; break ;
-		case   82: class = "SuperShotgun"          ; break ;
-		case   83: class = "Megasphere"            ; break ;
-		case   84: class = "WolfensteinSS"         ; break ;
-		case   85: class = "TechLamp"              ; break ;
-		case   86: class = "TechLamp2"             ; break ;
-		case   87: class = "BossTarget"            ; break ;
-		case   88: class = "BossBrain"             ; break ;
-		case   89: class = "BossEye"               ; break ;
-		case  888: class = "MBFHelperDog"          ; break ;
-		case 2001: class = "Shotgun"               ; break ;
-		case 2002: class = "Chaingun"              ; break ;
-		case 2003: class = "RocketLauncher"        ; break ;
-		case 2004: class = "PlasmaRifle"           ; break ;
-		case 2005: class = "Chainsaw"              ; break ;
-		case 2006: class = "BFG9000"               ; break ;
-		case 2007: class = "Clip"                  ; break ;
-		case 2008: class = "Shell"                 ; break ;
-		case 2010: class = "RocketAmmo"            ; break ;
-		case 2011: class = "Stimpack"              ; break ;
-		case 2012: class = "Medikit"               ; break ;
-		case 2013: class = "Soulsphere"            ; break ;
-		case 2014: class = "HealthBonus"           ; break ;
-		case 2015: class = "ArmorBonus"            ; break ;
-		case 2018: class = "GreenArmor"            ; break ;
-		case 2019: class = "BlueArmor"             ; break ;
-		case 2022: class = "InvulnerabilitySphere" ; break ;
-		case 2023: class = "Berserk"               ; break ;
-		case 2024: class = "BlurSphere"            ; break ;
-		case 2025: class = "RadSuit"               ; break ;
-		case 2026: class = "Allmap"                ; break ;
-		case 2028: class = "Column"                ; break ;
-		case 2035: class = "ExplosiveBarrel"       ; break ;
-		case 2045: class = "Infrared"              ; break ;
-		case 2046: class = "RocketBox"             ; break ;
-		case 2047: class = "Cell"                  ; break ;
-		case 2048: class = "ClipBox"               ; break ;
-		case 2049: class = "ShellBox"              ; break ;
-		case 3001: class = "DoomImp"               ; break ;
-		case 3002: class = "Demon"                 ; break ;
-		case 3003: class = "BaronOfHell"           ; break ;
-		case 3004: class = "ZombieMan"             ; break ;
-		case 3005: class = "Cacodemon"             ; break ;
-		case 3006: class = "LostSoul"              ; break ;
-		case 5003: class = "DarkImp"               ; break ;
-		case 5004: class = "BloodDemon"            ; break ;
-		case 5005: class = "SuperShotgunGuy"       ; break ;
-		case 5006: class = "Cacolantern"           ; break ;
-		case 5007: class = "Hectebus"              ; break ;
-		case 5008: class = "Belphegor"             ; break ;
-		case 5010: class = "Pistol"                ; break ;
-		case 5011: class = "GrenadeLauncher"       ; break ;
-		case 5012: class = "Railgun"               ; break ;
-		case 5013: class = "BFG10K"                ; break ;
-		case 5014: class = "Minigun"               ; break ;
-		case 5015: class = "Abaddon"               ; break ;
-		case 9037: class = "BetaSkull"             ; break ;
-		case 9050: class = "StealthArachnotron"    ; break ;
-		case 9051: class = "StealthArchvile"       ; break ;
-		case 9052: class = "StealthBaron"          ; break ;
-		case 9053: class = "StealthCacodemon"      ; break ;
-		case 9054: class = "StealthChaingunGuy"    ; break ;
-		case 9055: class = "StealthDemon"          ; break ;
-		case 9056: class = "StealthHellKnight"     ; break ;
-		case 9057: class = "StealthDoomImp"        ; break ;
-		case 9058: class = "StealthFatso"          ; break ;
-		case 9059: class = "StealthRevenant"       ; break ;
-		case 9060: class = "StealthShotgunGuy"     ; break ;
-		case 9061: class = "StealthZombieMan"      ; break ;
-		default: PrintBold(s:"Unexpected class replaced: ", d:newobj);
+		if(newobj == classlist[i][0])
+		{
+			class = classlist[i][1];
+			orgclass = class;
+			type = classlist[i][2];
+		}
 	}
 
-	// for each replacer object
-	if(GetCVar("lexicon_replacer_mode") == 0)
+	// unknown actor
+	if(class == "Unknown")
 	{
-		for(int i = 0; i < 128; i++)
+		PrintBold(s:"Unexpected class replaced: ", d:newobj);
+	}
+
+
+	str mode = GetCVarString("lexicon_replacer_mode");
+
+	int pos1 = 0;
+	int pos2 = 0;
+
+	if(mode_count == 0)
+	{
+		for(int c = 0; c <= StrLen(mode); c++)
 		{
-			if(class == mapsets[mapset_current].replacers[i][0])
+			// find the seperator
+			if(StrParam(c:GetChar(mode, c)) == "|")
 			{
-				class = mapsets[mapset_current].replacers[i][1];
+				pos2 = c;
+				modes[mode_count][0] = StrMid(mode, pos1, pos2-pos1);
+				pos1 = pos2+1;
+				mode_count++;
+			}
+		}
+
+		// get last mode
+		pos2 = c;
+		modes[mode_count][0] = StrMid(mode, pos1, pos2-pos1);
+
+		// if mode count is still 0
+		if(mode_count == 0)
+		{
+			mode_count = 1;
+			modes[0][0] = mode;
+		}
+
+		// check for args
+		for(int j = 0; j <= mode_count; j++)
+		{
+			for(int c2 = 0; c2 <= StrLen(modes[j][0]); c2++)
+			{
+				// find the seperator
+				if(StrParam(c:GetChar(modes[j][0], c2)) == ":")
+				{
+					modes[j][1] = StrMid(modes[j][0], c2+1, StrLen(modes[j][0]));
+					modes[j][0] = StrLeft(modes[j][0], c2);
+					printbold(s:modes[j][0], s:", ", s:modes[j][1]);
+					break;
+				}
 			}
 		}
 	}
+
+	for(int ii = 0; ii <= mode_count; ii++)
+	{
+		if(StrCmp(modes[ii][0], "normal") == 0)
+		{
+			for(int i2 = 0; i2 < 256; i2++)
+			{
+				if(StrCmp(class, mapsets[mapset_current].replacers[i2][0]) == 0)
+				{
+					class = mapsets[mapset_current].replacers[i2][1];
+					break;
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "monsters") == 0)
+		{
+			if(StrCmp(type, "1") == 0)
+			{
+				for(int i3 = 0; i3 < 256; i3++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i3][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i3][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "keys") == 0)
+		{
+			if(StrCmp(type, "2") == 0)
+			{
+				for(int i4 = 0; i4 < 256; i4++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i4][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i4][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "decoratives") == 0)
+		{
+			if(StrCmp(type, "3") == 0)
+			{
+				for(int i5 = 0; i5 < 256; i5++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i5][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i5][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "ammo") == 0)
+		{
+			if(StrCmp(type, "4") == 0)
+			{
+				for(int i6 = 0; i6 < 256; i6++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i6][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i6][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "weapons") == 0)
+		{
+			if(StrCmp(type, "5") == 0)
+			{
+				for(int i7 = 0; i7 < 256; i7++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i7][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i7][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+
+		if(StrCmp(modes[ii][0], "items") == 0)
+		{
+			if(StrCmp(type, "6") == 0)
+			{
+				for(int i8 = 0; i8 < 256; i8++)
+				{
+					if(StrCmp(class, mapsets[mapset_current].replacers[i8][0]) == 0)
+					{
+						class = mapsets[mapset_current].replacers[i8][1];
+						break;
+					}
+				}
+				if(StrCmp(modes[ii][1], "") != 0)
+				{
+					class = modes[ii][1];
+				}
+			}
+		}
+
+		if(StrCmp(modes[ii][0], "ignore") == 0)
+		{
+			if(StrCmp(modes[ii][1], "") != 0)
+			{
+				if(StrCmp(orgclass, modes[ii][1]) == 0)
+				{
+					class = orgclass;
+				}
+			}
+		}
+	}
+
 	Reblace(class);
 }
 

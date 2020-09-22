@@ -168,6 +168,18 @@ strict namespace Widgets
 		obj[id].image				= "a";
 		obj[id].font				= "SONICFONT";
 
+		obj[id].arg1int 			= 0;
+		obj[id].arg2int 			= 0;
+		obj[id].arg3int 			= 0;
+		obj[id].arg4int 			= 0;
+		obj[id].arg5int 			= 0;
+
+		obj[id].arg1str 			= "";
+		obj[id].arg2str 			= "";
+		obj[id].arg3str 			= "";
+		obj[id].arg4str 			= "";
+		obj[id].arg5str 			= "";
+
 		// flags
 		obj[id].alive 			= true;
 		obj[id].visible 		= true;

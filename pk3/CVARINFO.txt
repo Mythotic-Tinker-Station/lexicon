@@ -10,4 +10,35 @@ user int 	lexicon_vote_activation		= 1;
 
 
 // used as global vars
+
+
+
+
+
+
+// this is a very special cvar with all kinds of versatility to control the replacer system
+//
+// this cvar can have multiple flags seperated by a space(or multiple spaces)
+// that change the way the replacer replaces things
+//
+// for example: "normal    replace:ZombieMan:ArchVile replace:Archvile:ZombieMan"
+//
+// the exmaple above would set all actors to their mapset version,
+// however all zombiemen will be replaced with archviles, and all archviles will be replaced with zombiemen.
+// this cvar only effects objects that are place in maps, it does not effect spawns
+//
+// note: that there is no error checking for this system, if you typo something, the replacer will not do what you want it to without telling you why.
+//
+// list of flags:
+//		normal						Normal replacer operation, this replaces actors with mapset specific ones(this flag overrules all the other flags, except replace and ignore)
+//		ignore:<class>				Tells the replacer to ignore a specific class, this spawns the vanilla version of an actor no matter what(unless the replace flag is used)
+//		replace:<class1>:<class2>	Tell the replacer to forcefully replace <class1> with <class2>
+//		monsters:[<class>]			Replace all monsters with their mapset versions(if they exist), 		<class> is optional, if exists, all monsters are replaced with <class>
+//		keys:[<class>]				Replace all keys with their mapset versions(if they exist), 			<class> is optional, if exists, all keys are replaced with <class>
+//		decoratives:[<class>]		Replace all decoratives with their mapset versions(if they exist), 		<class> is optional, if exists, all decoratives are replaced with <class>
+//		ammo:[<class>]				Replace all ammo with their mapset versions(if they exist),				<class> is optional, if exists, all ammo is replaced with <class>
+//		weapons:[<class>]			Replace all weapons with their mapset version(if they exist), 			<class> is optional, if exists, all weapons are replaced with <class>
+//		items:[<class>]				Replace all items with thier mapset version(if they exist), 			<class> is optional, if exists, all items are replaced with <class>
+
+
 server string	lexicon_replacer_mode	= "normal";

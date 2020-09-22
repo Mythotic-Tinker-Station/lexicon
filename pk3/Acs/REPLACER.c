@@ -192,7 +192,7 @@ Script "Re:b:lacer" (void)
 		for(int c = 0; c <= StrLen(mode); c++)
 		{
 			// find the seperator
-			if(StrParam(c:GetChar(mode, c)) == "|")
+			if(StrParam(c:GetChar(mode, c)) == " ")
 			{
 				pos2 = c;
 				modes[mode_count][0] = StrMid(mode, pos1, pos2-pos1);

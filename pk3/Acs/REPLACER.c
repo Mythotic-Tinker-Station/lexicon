@@ -160,14 +160,16 @@ Script "Re:b:lacer" (void)
 	}
 
 	// for each replacer object
-	for(int i = 0; i < 128; i++)
+	if(GetCVar("lexicon_replacer_disable") == 0)
 	{
-		if(class == mapsets[mapset_current].replacers[i][0])
+		for(int i = 0; i < 128; i++)
 		{
-			class = mapsets[mapset_current].replacers[i][1];
+			if(class == mapsets[mapset_current].replacers[i][0])
+			{
+				class = mapsets[mapset_current].replacers[i][1];
+			}
 		}
 	}
-
 	Reblace(class);
 }
 

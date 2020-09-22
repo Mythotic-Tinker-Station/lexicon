@@ -10,3 +10,4 @@ user int 	lexicon_vote_activation		= 1;
 
 
 // used as global vars
+server int	lexicon_replacer_disable	= 0;

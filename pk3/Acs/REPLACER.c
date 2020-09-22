@@ -160,7 +160,7 @@ Script "Re:b:lacer" (void)
 	}
 
 	// for each replacer object
-	if(GetCVar("lexicon_replacer_disable") == 0)
+	if(GetCVar("lexicon_replacer_mode") == 0)
 	{
 		for(int i = 0; i < 128; i++)
 		{

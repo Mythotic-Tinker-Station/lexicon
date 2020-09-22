@@ -162,6 +162,8 @@ Script "Re:b:lacer" (void)
 	// for each replacer object
 	for(int i = 0; i < 128; i++)
 	{
+		printbold(s:mapsets[mapset_current].replacers[i][0]);
+		printbold(s:mapsets[mapset_current].replacers[i][1]);
 		if(class == mapsets[mapset_current].replacers[i][0])
 		{
 			class = mapsets[mapset_current].replacers[i][1];
@@ -193,6 +195,12 @@ Function int Reblace(int class)
 	if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "FriendlyProc", 1);
 	if(CheckFlag(0,"AMBUSH"  )) GiveActorInventory(tid,   "AmbushProc", 1);
 	if(CheckFlag(0,"DORMANT" )) GiveActorInventory(tid,  "DormantProc", 1);
+
+	if(CheckFlag(tid,"SPAWNCEILING"))
+	{
+		SetActorPosition(tid, GetActorX(0), GetActorY(0), GetActorCeilingZ(tid) - GetActorProperty(tid, APROP_Height), 0);
+	}
+
 	SetPointer(AAPTR_TRACER, tid);
 	GiveInventory("TransferSpecialProc", 1); // <-- given to spawner, not spawnee!
 	SetThingSpecial(tid, _spec, _args0, _args1, _args2, _args3, _args4);

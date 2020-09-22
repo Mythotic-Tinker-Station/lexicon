@@ -152,7 +152,7 @@ str classlist[DOOMEDNUMS][4] =
 		{9061, "StealthZombieMan"     , "1"},
 };
 
-str modes[128][2];
+str modes[128][3];
 int mode_count = 0;
 
 
@@ -222,10 +222,22 @@ Script "Re:b:lacer" (void)
 				{
 					modes[j][1] = StrMid(modes[j][0], c2+1, StrLen(modes[j][0]));
 					modes[j][0] = StrLeft(modes[j][0], c2);
-					printbold(s:modes[j][0], s:", ", s:modes[j][1]);
 					break;
 				}
 			}
+
+			// this is a terrible and lazy way to get the 3rd arg...
+			for(int c3 = 0; c3 <= StrLen(modes[j][1]); c3++)
+			{
+				// find the seperator
+				if(StrParam(c:GetChar(modes[j][1], c3)) == ":")
+				{
+					modes[j][2] = StrMid(modes[j][1], c3+1, StrLen(modes[j][1]));
+					modes[j][1] = StrLeft(modes[j][1], c3);
+					break;
+				}
+			}
+
 		}
 	}
 
@@ -359,6 +371,20 @@ Script "Re:b:lacer" (void)
 				if(StrCmp(orgclass, modes[ii][1]) == 0)
 				{
 					class = orgclass;
+				}
+			}
+		}
+
+		if(StrCmp(modes[ii][0], "replace") == 0)
+		{
+			if(StrCmp(modes[ii][1], "") != 0)
+			{
+				if(StrCmp(modes[ii][2], "") != 0)
+				{
+					if(StrCmp(orgclass, modes[ii][1]) == 0)
+					{
+						class = modes[ii][2];
+					}
 				}
 			}
 		}

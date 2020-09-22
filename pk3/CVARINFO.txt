@@ -39,6 +39,6 @@ user int 	lexicon_vote_activation		= 1;
 //		ammo:[<class>]				Replace all ammo with their mapset versions(if they exist),				<class> is optional, if exists, all ammo is replaced with <class>
 //		weapons:[<class>]			Replace all weapons with their mapset version(if they exist), 			<class> is optional, if exists, all weapons are replaced with <class>
 //		items:[<class>]				Replace all items with thier mapset version(if they exist), 			<class> is optional, if exists, all items are replaced with <class>
-
+//		blank						If the cvar is blank, everything will be the vanilla actors, regardless of mapset
 
 server string	lexicon_replacer_mode	= "normal";

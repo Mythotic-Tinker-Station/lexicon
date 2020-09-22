@@ -109,6 +109,18 @@ strict namespace Widgets
 		void function(int)? event_hovered[MAX_HOOKS];	// callback function when this widget is hovered
 		void function(int)? event_moved[MAX_HOOKS];		// callback function when this widget position or size changes
 
+		int arg1int;
+		int arg2int;
+		int arg3int;
+		int arg4int;
+		int arg5int;
+
+		str arg1str;
+		str arg2str;
+		str arg3str;
+		str arg4str;
+		str arg5str;
+
 	};
 	struct objT obj[MAX_WIDGETS];						// list of all the widgets
 
@@ -344,6 +356,18 @@ strict namespace Widgets
 	function bool GetHovered(int id) 			{ return obj[id].hovered; }
 	function bool GetClicked(int id) 			{ return obj[id].clicked; }
 
+	// other bits of information
+	function int GetArg1Int(int id) 			{ return obj[id].arg1int; }
+	function int GetArg2Int(int id) 			{ return obj[id].arg2int; }
+	function int GetArg3Int(int id) 			{ return obj[id].arg3int; }
+	function int GetArg4Int(int id) 			{ return obj[id].arg4int; }
+	function int GetArg5Int(int id) 			{ return obj[id].arg5int; }
+
+	function str GetArg1Str(int id) 			{ return obj[id].arg1str; }
+	function str GetArg2Str(int id) 			{ return obj[id].arg2str; }
+	function str GetArg3Str(int id) 			{ return obj[id].arg3str; }
+	function str GetArg4Str(int id) 			{ return obj[id].arg4str; }
+	function str GetArg5Str(int id) 			{ return obj[id].arg5str; }
 
 	// get x1 point
 	function void SetX1(int id, fixed x1)
@@ -465,6 +489,19 @@ strict namespace Widgets
 	// event properties
 	function void SetHovered(int id, bool value) 			{ obj[id].hovered = value; }
 	function void SetClicked(int id, bool value) 			{ obj[id].clicked = value; }
+
+	// other bits of information
+	function void SetArg1Int(int id, int value) 			{ obj[id].arg1int = value; }
+	function void SetArg2Int(int id, int value) 			{ obj[id].arg2int = value; }
+	function void SetArg3Int(int id, int value) 			{ obj[id].arg3int = value; }
+	function void SetArg4Int(int id, int value) 			{ obj[id].arg4int = value; }
+	function void SetArg5Int(int id, int value) 			{ obj[id].arg5int = value; }
+
+	function void SetArg1Str(int id, str value) 			{ obj[id].arg1Str = value; }
+	function void SetArg2Str(int id, str value) 			{ obj[id].arg2Str = value; }
+	function void SetArg3Str(int id, str value) 			{ obj[id].arg3Str = value; }
+	function void SetArg4Str(int id, str value) 			{ obj[id].arg4Str = value; }
+	function void SetArg5Str(int id, str value) 			{ obj[id].arg5Str = value; }
 
 	// widget functionalities
 	function void Update(int id)

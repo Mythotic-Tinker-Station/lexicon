@@ -162,8 +162,6 @@ Script "Re:b:lacer" (void)
 	// for each replacer object
 	for(int i = 0; i < 128; i++)
 	{
-		printbold(s:mapsets[mapset_current].replacers[i][0]);
-		printbold(s:mapsets[mapset_current].replacers[i][1]);
 		if(class == mapsets[mapset_current].replacers[i][0])
 		{
 			class = mapsets[mapset_current].replacers[i][1];

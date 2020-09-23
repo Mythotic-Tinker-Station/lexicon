@@ -2,155 +2,164 @@
 // by Michaelis
 // for Lexicon
 
-#define DOOMEDNUMS 145
+#define DOOMEDNUMS 143
 
 
 str classlist[DOOMEDNUMS][4] =
 {
-		{   5, "BlueCard"             , "2"},
-		{   6, "YellowCard"           , "2"},
-		{   7, "SpiderMastermind"     , "1"},
-		{   8, "Backpack"             , "4"},
-		{   9, "ShotgunGuy"           , "1"},
-		{  10, "GibbedMarine"         , "3"},
-		{  12, "GibbedMarineExtra"    , "3"},
-		{  13, "RedCard"              , "2"},
-		{  15, "DeadMarine"           , "3"},
-		{  16, "Cyberdemon"           , "1"},
-		{  17, "CellPack"             , "4"},
-		{  18, "DeadZombieMan"        , "3"},
-		{  19, "DeadShotgunGuy"       , "3"},
-		{  20, "DeadDoomImp"          , "3"},
-		{  21, "DeadDemon"            , "3"},
-		{  22, "DeadCacodemon"        , "3"},
-		{  23, "DeadLostSoul"         , "3"},
-		{  24, "Gibs"                 , "3"},
-		{  25, "DeadStick"            , "3"},
-		{  26, "LiveStick"            , "3"},
-		{  27, "HeadOnAStick"         , "3"},
-		{  28, "HeadsOnAStick"        , "3"},
-		{  29, "HeadCandles"          , "3"},
-		{  30, "TallGreenColumn"      , "3"},
-		{  31, "ShortGreenColumn"     , "3"},
-		{  32, "TallRedColumn"        , "3"},
-		{  33, "ShortRedColumn"       , "3"},
-		{  34, "Candlestick"          , "3"},
-		{  35, "Candelabra"           , "3"},
-		{  36, "HeartColumn"          , "3"},
-		{  37, "SkullColumn"          , "3"},
-		{  38, "RedSkull"             , "2"},
-		{  39, "YellowSkull"          , "2"},
-		{  40, "BlueSkull"            , "2"},
-		{  41, "EvilEye"              , "3"},
-		{  42, "FloatingSkull"        , "3"},
-		{  43, "TorchTree"            , "3"},
-		{  44, "BlueTorch"            , "3"},
-		{  45, "GreenTorch"           , "3"},
-		{  46, "RedTorch"             , "3"},
-		{  47, "Stalagtite"           , "3"},
-		{  48, "TechPillar"           , "3"},
-		{  49, "BloodyTwitch"         , "3"},
-		{  50, "Meat2"                , "3"},
-		{  51, "Meat3"                , "3"},
-		{  52, "Meat4"                , "3"},
-		{  53, "Meat5"                , "3"},
-		{  54, "BigTree"              , "3"},
-		{  55, "ShortBlueTorch"       , "3"},
-		{  56, "ShortGreenTorch"      , "3"},
-		{  57, "ShortRedTorch"        , "3"},
-		{  58, "Spectre"              , "1"},
-		{  59, "NonsolidMeat2"        , "3"},
-		{  60, "NonsolidMeat4"        , "3"},
-		{  61, "NonsolidMeat3"        , "3"},
-		{  62, "NonsolidMeat5"        , "3"},
-		{  63, "NonsolidTwitch"       , "3"},
-		{  64, "Archvile"             , "1"},
-		{  65, "ChaingunGuy"          , "1"},
-		{  66, "Revenant"             , "1"},
-		{  67, "Fatso"                , "1"},
-		{  68, "Arachnotron"          , "1"},
-		{  69, "HellKnight"           , "1"},
-		{  70, "BurningBarrel"        , "3"},
-		{  71, "PainElemental"        , "1"},
-		{  72, "CommanderKeen"        , "0"},
-		{  73, "HangNoGuts"           , "3"},
-		{  74, "HangBNoBrain"         , "3"},
-		{  75, "HangTLookingDown"     , "3"},
-		{  76, "HangTSkull"           , "3"},
-		{  77, "HangTLookingUp"       , "3"},
-		{  78, "HangTNoBrain"         , "3"},
-		{  79, "ColonGibs"            , "3"},
-		{  80, "SmallBloodPool"       , "3"},
-		{  81, "BrainStem"            , "3"},
-		{  82, "SuperShotgun"         , "5"},
-		{  83, "Megasphere"           , "6"},
-		{  84, "WolfensteinSS"        , "1"},
-		{  85, "TechLamp"             , "3"},
-		{  86, "TechLamp2"            , "3"},
-		{  87, "BossTarget"           , "0"},
-		{  88, "BossBrain"            , "0"},
-		{  89, "BossEye"              , "0"},
-		{ 888, "MBFHelperDog"         , "0"},
-		{2001, "Shotgun"              , "5"},
-		{2002, "Chaingun"             , "5"},
-		{2003, "RocketLauncher"       , "5"},
-		{2004, "PlasmaRifle"          , "5"},
-		{2005, "Chainsaw"             , "5"},
-		{2006, "BFG9000"              , "5"},
-		{2007, "Clip"                 , "4"},
-		{2008, "Shell"                , "4"},
-		{2010, "RocketAmmo"           , "4"},
-		{2011, "Stimpack"             , "6"},
-		{2012, "Medikit"              , "6"},
-		{2013, "Soulsphere"           , "6"},
-		{2014, "HealthBonus"          , "6"},
-		{2015, "ArmorBonus"           , "6"},
-		{2018, "GreenArmor"           , "6"},
-		{2019, "BlueArmor"            , "6"},
-		{2022, "InvulnerabilitySphere", "6"},
-		{2023, "Berserk"              , "6"},
-		{2024, "BlurSphere"           , "6"},
-		{2025, "RadSuit"              , "6"},
-		{2026, "Allmap"               , "6"},
-		{2028, "Column"               , "3"},
-		{2035, "ExplosiveBarrel"      , "3"},
-		{2045, "Infrared"             , "6"},
-		{2046, "RocketBox"            , "4"},
-		{2047, "Cell"                 , "4"},
-		{2048, "ClipBox"              , "4"},
-		{2049, "ShellBox"             , "4"},
-		{3001, "DoomImp"              , "1"},
-		{3002, "Demon"                , "1"},
-		{3003, "BaronOfHell"          , "1"},
-		{3004, "ZombieMan"            , "1"},
-		{3005, "Cacodemon"            , "1"},
-		{3006, "LostSoul"             , "1"},
-		{5003, "DarkImp"              , "1"},
-		{5004, "BloodDemon"           , "1"},
-		{5005, "SuperShotgunGuy"      , "1"},
-		{5006, "Cacolantern"          , "1"},
-		{5007, "Hectebus"             , "1"},
-		{5008, "Belphegor"            , "1"},
-		{5010, "Pistol"               , "5"},
-		{5011, "GrenadeLauncher"      , "5"},
-		{5012, "Railgun"              , "5"},
-		{5013, "BFG10K"               , "5"},
-		{5014, "Minigun"              , "5"},
-		{5015, "Abaddon"              , "1"},
-		{9037, "BetaSkull"            , "1"},
-		{9050, "StealthArachnotron"   , "1"},
-		{9051, "StealthArchvile"      , "1"},
-		{9052, "StealthBaron"         , "1"},
-		{9053, "StealthCacodemon"     , "1"},
-		{9054, "StealthChaingunGuy"   , "1"},
-		{9055, "StealthDemon"         , "1"},
-		{9056, "StealthHellKnight"    , "1"},
-		{9057, "StealthDoomImp"       , "1"},
-		{9058, "StealthFatso"         , "1"},
-		{9059, "StealthRevenant"      , "1"},
-		{9060, "StealthShotgunGuy"    , "1"},
-		{9061, "StealthZombieMan"     , "1"},
+		{   5, "BlueCard"             , "2"},	// 0
+		{   6, "YellowCard"           , "2"},	// 1
+		{   7, "SpiderMastermind"     , "1"},	// 2
+		{   8, "Backpack"             , "4"},	// 3
+		{   9, "ShotgunGuy"           , "1"},	// 4
+		{  10, "GibbedMarine"         , "3"},	// 5
+		{  12, "GibbedMarineExtra"    , "3"},	// 6
+		{  13, "RedCard"              , "2"},	// 7
+		{  15, "DeadMarine"           , "3"},	// 8
+		{  16, "Cyberdemon"           , "1"},	// 9
+		{  17, "CellPack"             , "4"},	// 10
+		{  18, "DeadZombieMan"        , "3"},	// 11
+		{  19, "DeadShotgunGuy"       , "3"},	// 12
+		{  20, "DeadDoomImp"          , "3"},	// 13
+		{  21, "DeadDemon"            , "3"},	// 14
+		{  22, "DeadCacodemon"        , "3"},	// 15
+		{  23, "DeadLostSoul"         , "3"},	// 16
+		{  24, "Gibs"                 , "3"},	// 17
+		{  25, "DeadStick"            , "3"},	// 18
+		{  26, "LiveStick"            , "3"},	// 19
+		{  27, "HeadOnAStick"         , "3"},	// 20
+		{  28, "HeadsOnAStick"        , "3"},	// 21
+		{  29, "HeadCandles"          , "3"},	// 22
+		{  30, "TallGreenColumn"      , "3"},	// 23
+		{  31, "ShortGreenColumn"     , "3"},	// 24
+		{  32, "TallRedColumn"        , "3"},	// 25
+		{  33, "ShortRedColumn"       , "3"},	// 26
+		{  34, "Candlestick"          , "3"},	// 27
+		{  35, "Candelabra"           , "3"},	// 28
+		{  36, "HeartColumn"          , "3"},	// 29
+		{  37, "SkullColumn"          , "3"},	// 30
+		{  38, "RedSkull"             , "2"},	// 31
+		{  39, "YellowSkull"          , "2"},	// 32
+		{  40, "BlueSkull"            , "2"},	// 33
+		{  41, "EvilEye"              , "3"},	// 34
+		{  42, "FloatingSkull"        , "3"},	// 35
+		{  43, "TorchTree"            , "3"},	// 36
+		{  44, "BlueTorch"            , "3"},	// 37
+		{  45, "GreenTorch"           , "3"},	// 38
+		{  46, "RedTorch"             , "3"},	// 39
+		{  47, "Stalagtite"           , "3"},	// 40
+		{  48, "TechPillar"           , "3"},	// 41
+		{  49, "BloodyTwitch"         , "3"},	// 42
+		{  50, "Meat2"                , "3"},	// 43
+		{  51, "Meat3"                , "3"},	// 44
+		{  52, "Meat4"                , "3"},	// 45
+		{  53, "Meat5"                , "3"},	// 46
+		{  54, "BigTree"              , "3"},	// 47
+		{  55, "ShortBlueTorch"       , "3"},	// 48
+		{  56, "ShortGreenTorch"      , "3"},	// 49
+		{  57, "ShortRedTorch"        , "3"},	// 50
+		{  58, "Spectre"              , "1"},	// 51
+		{  59, "NonsolidMeat2"        , "3"},	// 52
+		{  60, "NonsolidMeat4"        , "3"},	// 53
+		{  61, "NonsolidMeat3"        , "3"},	// 54
+		{  62, "NonsolidMeat5"        , "3"},	// 55
+		{  63, "NonsolidTwitch"       , "3"},	// 56
+		{  64, "Archvile"             , "1"},	// 57
+		{  65, "ChaingunGuy"          , "1"},	// 58
+		{  66, "Revenant"             , "1"},	// 59
+		{  67, "Fatso"                , "1"},	// 60
+		{  68, "Arachnotron"          , "1"},	// 61
+		{  69, "HellKnight"           , "1"},	// 62
+		{  70, "BurningBarrel"        , "3"},	// 63
+		{  71, "PainElemental"        , "1"},	// 64
+		{  72, "CommanderKeen"        , "0"},	// 65
+		{  73, "HangNoGuts"           , "3"},	// 66
+		{  74, "HangBNoBrain"         , "3"},	// 67
+		{  75, "HangTLookingDown"     , "3"},	// 68
+		{  76, "HangTSkull"           , "3"},	// 69
+		{  77, "HangTLookingUp"       , "3"},	// 70
+		{  78, "HangTNoBrain"         , "3"},	// 71
+		{  79, "ColonGibs"            , "3"},	// 72
+		{  80, "SmallBloodPool"       , "3"},	// 73
+		{  81, "BrainStem"            , "3"},	// 74
+		{  82, "SuperShotgun"         , "5"},	// 75
+		{  83, "Megasphere"           , "6"},	// 76
+		{  84, "WolfensteinSS"        , "1"},	// 77
+		{  85, "TechLamp"             , "3"},	// 78
+		{  86, "TechLamp2"            , "3"},	// 79
+		{  87, "BossTarget"           , "0"},	// 80
+		{  88, "BossBrain"            , "0"},	// 81
+		{  89, "BossEye"              , "0"},	// 82
+		{ 888, "MBFHelperDog"         , "0"},	// 83
+		{2001, "Shotgun"              , "5"},	// 84
+		{2002, "Chaingun"             , "5"},	// 85
+		{2003, "RocketLauncher"       , "5"},	// 86
+		{2004, "PlasmaRifle"          , "5"},	// 87
+		{2005, "Chainsaw"             , "5"},	// 88
+		{2006, "BFG9000"              , "5"},	// 89
+		{2007, "Clip"                 , "4"},	// 90
+		{2008, "Shell"                , "4"},	// 91
+		{2010, "RocketAmmo"           , "4"},	// 92
+		{2011, "Stimpack"             , "6"},	// 93
+		{2012, "Medikit"              , "6"},	// 94
+		{2013, "Soulsphere"           , "6"},	// 95
+		{2014, "HealthBonus"          , "6"},	// 96
+		{2015, "ArmorBonus"           , "6"},	// 97
+		{2018, "GreenArmor"           , "6"},	// 98
+		{2019, "BlueArmor"            , "6"},	// 99
+		{2022, "InvulnerabilitySphere", "6"},	// 100
+		{2023, "Berserk"              , "6"},	// 101
+		{2024, "BlurSphere"           , "6"},	// 102
+		{2025, "RadSuit"              , "6"},	// 103
+		{2026, "Allmap"               , "6"},	// 104
+		{2028, "Column"               , "3"},	// 105
+		{2035, "ExplosiveBarrel"      , "3"},	// 106
+		{2045, "Infrared"             , "6"},	// 107
+		{2046, "RocketBox"            , "4"},	// 108
+		{2047, "Cell"                 , "4"},	// 109
+		{2048, "ClipBox"              , "4"},	// 110
+		{2049, "ShellBox"             , "4"},	// 111
+		{3001, "DoomImp"              , "1"},	// 112
+		{3002, "Demon"                , "1"},	// 113
+		{3003, "BaronOfHell"          , "1"},	// 114
+		{3004, "ZombieMan"            , "1"},	// 115
+		{3005, "Cacodemon"            , "1"},	// 116
+		{3006, "LostSoul"             , "1"},	// 117
+		{5003, "DarkImp"              , "1"},	// 118
+		{5004, "BloodDemon"           , "1"},	// 119
+		{5005, "SuperShotgunGuy"      , "1"},	// 120
+		{5006, "Cacolantern"          , "1"},	// 121
+		{5007, "Hectebus"             , "1"},	// 122
+		{5008, "Belphegor"            , "1"},	// 123
+		{5010, "Pistol"               , "5"},	// 124
+		{5011, "GrenadeLauncher"      , "5"},	// 125
+		{5012, "Railgun"              , "5"},	// 126
+		{5013, "BFG10K"               , "5"},	// 127
+		{5014, "Minigun"              , "5"},	// 128
+		{5015, "Abaddon"              , "1"},	// 129
+		{9037, "BetaSkull"            , "1"},	// 130
+		{9050, "StealthArachnotron"   , "1"},	// 131
+		{9051, "StealthArchvile"      , "1"},	// 132
+		{9052, "StealthBaron"         , "1"},	// 133
+		{9053, "StealthCacodemon"     , "1"},	// 134
+		{9054, "StealthChaingunGuy"   , "1"},	// 135
+		{9055, "StealthDemon"         , "1"},	// 136
+		{9056, "StealthHellKnight"    , "1"},	// 137
+		{9057, "StealthDoomImp"       , "1"},	// 138
+		{9058, "StealthFatso"         , "1"},	// 139
+		{9059, "StealthRevenant"      , "1"},	// 140
+		{9060, "StealthShotgunGuy"    , "1"},	// 141
+		{9061, "StealthZombieMan"     , "1"}	// 142
 };
+
+int randomizer_monsters[17] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
+int randomizer_monsters_stealth[29] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117, 131, 132, 133, 134, 135, 136, 137, 138, 149, 140, 141, 142 };
+int randomizer_monsters_boss[19] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
+int randomizer_monsters_all[31] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117, 131, 132, 133, 134, 135, 136, 137, 138, 149, 140, 141, 142 };
+
+int randomizer_ammo[8] = { 10, 91, 92, 93, 109, 110, 111, 112 };
+int randomizer_items[14] = { 77, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 108 };
+int randomizer_weapons[17] = { 76, 85, 86, 87, 88, 89, 90 };
 
 str modes[128][3];
 int mode_count = 0;
@@ -269,6 +278,7 @@ Script "Re:b:lacer" (void)
 				if(StrCmp(modes[ii][1], "") != 0)
 				{
 					class = modes[ii][1];
+					break;
 				}
 			}
 		}
@@ -385,6 +395,39 @@ Script "Re:b:lacer" (void)
 					{
 						class = modes[ii][2];
 					}
+				}
+			}
+		}
+		if(StrCmp(modes[ii][0], "randomize_monsters") == 0)
+		{
+			if(StrCmp(type, "1") == 0)
+			{
+				bool stealth = false;
+				bool boss = false;
+
+				if(StrCmp(modes[ii][1], "stealth") == 0 || StrCmp(modes[ii][2], "stealth") == 0)
+				{
+					stealth = true;
+				}
+				if(StrCmp(modes[ii][1], "boss") == 0 || StrCmp(modes[ii][2], "boss") == 0)
+				{
+					boss = true;
+				}
+				if(boss == false && stealth == false)
+				{
+					class = classlist[randomizer_monsters[random(0, 16)]][1];
+				}
+				else if(boss == true && stealth == false)
+				{
+					class = classlist[randomizer_monsters_boss[random(0, 18)]][1];
+				}
+				else if(boss == false && stealth == true)
+				{
+					class = classlist[randomizer_monsters_stealth[random(0, 28)]][1];
+				}
+				else if(boss == true && stealth == true)
+				{
+					class = classlist[randomizer_monsters_all[random(0, 30)]][1];
 				}
 			}
 		}

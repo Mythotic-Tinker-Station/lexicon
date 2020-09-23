@@ -98,6 +98,7 @@ strict namespace Cursor
 		if(pos.y > Screen.GetHeight()) 	{ pos.y = Screen.GetHeight(); }
 
 		// if mouse1 is pressed
+		clicked_prev = clicked;
 		if(buttons & BT_ATTACK)
 		{
 			clicked = true;
@@ -114,8 +115,6 @@ strict namespace Cursor
 		{
 			Screen.Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP, 2);
 		}
-
-		clicked_prev = clicked;
 	}
 }
 

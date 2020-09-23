@@ -16,10 +16,6 @@ strict namespace Button24
 		Widgets.SetClickable(id, true);
 		Widgets.SetHoverable(id, true);
 
-		// call the clicked and hovered events per frame
-		Widgets.SetHoverRepeat(id, true);
-		Widgets.SetClickRepeat(id, true);
-
 		Widgets.SetRenderText(id, true);
 		Widgets.SetRenderImage(id, true);
 
@@ -63,6 +59,20 @@ strict namespace Button128
 		return id;
 	}
 }
+
+strict namespace ButtonCheck
+{
+	function int Create(fixed x, fixed y, str t)
+	{
+		int id = Button24.Create(x, y, t);
+		Widgets.SetRectPosition(id, x, y, 128.0, 24.0);
+		Widgets.SetText(id, t);
+		Widgets.SetImage(id, "d");
+		Widgets.SetCheckable(id, true);
+		return id;
+	}
+}
+
 
 strict namespace ButtonMap
 {

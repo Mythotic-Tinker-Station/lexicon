@@ -107,6 +107,10 @@ strict namespace Gui
 
 		// setup the Screen
 		Screen.Init();
+
+		// build the debug menu
+		DebugMenu.Build();
+
 		while(1)
 		{
 			Cursor.Run();

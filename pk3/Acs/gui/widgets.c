@@ -92,12 +92,14 @@ strict namespace Widgets
 		bool hover_repeat;								// does this widget call it's hovered function every frame?
 		bool clickable;									// is this widget clickable?
 		bool hoverable;									// is this widget hoverable?
+		bool checkable;									// is this widget checkable?
 		bool render_text;								// should this widget render text?
 		bool render_image;								// should this widget render an image?
 
 		// internal vars
 		bool hovered;									// true when the mouse is hovering over this widget
 		bool clicked;									// true when the mouse is clicking this widget
+		bool checked;									// true when the widget is checked(this only works if click_repeat is false)
 		int event_update_count;							// number of update hooks
 		int event_clicked_count;						// number of clicked hooks
 		int event_hovered_count;						// number of hovered hooks
@@ -109,6 +111,7 @@ strict namespace Widgets
 		void function(int)? event_hovered[MAX_HOOKS];	// callback function when this widget is hovered
 		void function(int)? event_moved[MAX_HOOKS];		// callback function when this widget position or size changes
 
+		// custom vars
 		int arg1int;
 		int arg2int;
 		int arg3int;
@@ -158,11 +161,13 @@ strict namespace Widgets
 		obj[id].backcolor.disabled 	= "UI_Main_Clicked";
 		obj[id].backcolor.clicked	= "UI_Main_Clicked";
 		obj[id].backcolor.hovered	= "UI_Main_Hovered";
+		obj[id].backcolor.checked	= "UI_Main_Checked";
 		obj[id].backcolor.current	= "UI_Main_Normal";
 		obj[id].textcolor.normal 	= "Gray";
 		obj[id].textcolor.disabled 	= "DarkGray";
 		obj[id].textcolor.clicked	= "DarkGray";
 		obj[id].textcolor.hovered	= "White";
+		obj[id].textcolor.checked	= "Blue";
 		obj[id].textcolor.current	= "Gray";
 		obj[id].text				= "";
 		obj[id].image				= "a";
@@ -188,8 +193,10 @@ strict namespace Widgets
 		obj[id].hover_repeat 	= false;
 		obj[id].clickable		= false;
 		obj[id].hoverable 		= false;
+		obj[id].checkable 		= false;
 		obj[id].hovered			= false;
 		obj[id].clicked			= false;
+		obj[id].checked			= false;
 		obj[id].render_text		= false;
 		obj[id].render_image	= false;
 
@@ -361,12 +368,14 @@ strict namespace Widgets
 	function bool GetClickRepeat(int id) 		{ return obj[id].click_repeat; }
 	function bool GetHoverable(int id) 			{ return obj[id].hoverable; }
 	function bool GetClickable(int id) 			{ return obj[id].clickable; }
+	function bool GetCheckable(int id) 			{ return obj[id].checkable; }
 	function bool GetRenderText(int id) 		{ return obj[id].render_text; }
 	function bool GetRenderImage(int id) 		{ return obj[id].render_image; }
 
 	// event properties
 	function bool GetHovered(int id) 			{ return obj[id].hovered; }
 	function bool GetClicked(int id) 			{ return obj[id].clicked; }
+	function bool GetChecked(int id) 			{ return obj[id].checked; }
 
 	// other bits of information
 	function int GetArg1Int(int id) 			{ return obj[id].arg1int; }
@@ -495,12 +504,14 @@ strict namespace Widgets
 	function void SetClickRepeat(int id, bool value) 		{ obj[id].click_repeat = value; }
 	function void SetHoverable(int id, bool value) 			{ obj[id].hoverable = value; }
 	function void SetClickable(int id, bool value) 			{ obj[id].clickable = value; }
+	function void SetCheckable(int id, bool value) 			{ obj[id].checkable = value; }
 	function void SetRenderText(int id, bool value) 		{ obj[id].render_text = value; }
 	function void SetRenderImage(int id, bool value) 		{ obj[id].render_image = value; }
 
 	// event properties
 	function void SetHovered(int id, bool value) 			{ obj[id].hovered = value; }
 	function void SetClicked(int id, bool value) 			{ obj[id].clicked = value; }
+	function void SetChecked(int id, bool value) 			{ obj[id].checked = value; }
 
 	// other bits of information
 	function void SetArg1Int(int id, int value) 			{ obj[id].arg1int = value; }
@@ -527,9 +538,19 @@ strict namespace Widgets
 				// is the user able to interact with this widget?
 				if(GetEnabled(id))
 				{
-					// normal colored
-					obj[id].backcolor.current = obj[id].backcolor.normal;
-					obj[id].textcolor.current = obj[id].textcolor.normal;
+					// is the widget checked?
+					if(GetChecked(id))
+					{
+						// checked colored
+						obj[id].backcolor.current = obj[id].backcolor.checked;
+						obj[id].textcolor.current = obj[id].textcolor.checked;
+					}
+					else
+					{
+						// normal colored
+						obj[id].backcolor.current = obj[id].backcolor.normal;
+						obj[id].textcolor.current = obj[id].textcolor.normal;
+					}
 
 					// is cursor within bounds?
 					if(Cursor.GetX() > GetX1(id) && Cursor.GetX() < GetX2(id) && Cursor.GetY() > GetY1(id) && Cursor.GetY() < GetY2(id))
@@ -561,7 +582,7 @@ strict namespace Widgets
 						if(GetClickable(id))
 						{
 							// is the user clicking the mouse?
-							if(cursor.clicked)
+							if(Cursor.GetClicked())
 							{
 								// click colored
 								obj[id].backcolor.current = obj[id].backcolor.clicked;
@@ -579,10 +600,15 @@ strict namespace Widgets
 								// only call the clicked function once
 								else
 								{
-									// was the cursor clicked on the previous frame?
-									if(!cursor.clicked_prev)
+									// was the cursor not clicked on the previous frame?
+									if(!Cursor.GetClickedPrev())
 									{
-										// call object's clicked callback
+										// check the widget
+										if(GetCheckable(id))
+										{
+											SetChecked(id, !GetChecked(id));
+										}
+										//call object's clicked callback
 										CallClickedHooks(id);
 									}
 								}
@@ -640,6 +666,7 @@ strict namespace Widgets
 				SetPrevY1(id, GetY1(id));
 				SetPrevX2(id, GetX2(id));
 				SetPrevY1(id, GetY2(id));
+
 			}
 		}
 	}

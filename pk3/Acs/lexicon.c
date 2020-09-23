@@ -7,8 +7,8 @@
 #library "lexicon"
 
 
-//strict namespace
-//{
+strict namespace
+{
 
 	// size
 	struct sizeT
@@ -49,6 +49,7 @@
 		str disabled;
 		str clicked;
 		str hovered;
+		str checked;
 		str current;
 	};
 
@@ -76,11 +77,11 @@
 		#include "gui/cursor.c"
 		#include "gui/widgets.c"
 		#include "gui/gui.c"
-		#include "gui/widgets/button.c"
-		#include "gui/scenes/firsttimer.c"
+		#include "gui/widgets/buttons.c"
+		#include "gui/scenes/debugmenu.c"
 		#include "replacer.c"
 		#include "patches.c"
 		#include "expansion.c"
 	#endif
-//}
+}
 

@@ -40,5 +40,9 @@ user int 	lexicon_vote_activation		= 1;
 //		randomize_monsters:stealth			replaces all monsters with randomly selected ones, including stealth monsters
 //		randomize_monsters:boss				replaces all monsters with randomly selected ones, including boss monsters
 //		randomize_monsters:boss:stealth		replaces all monsters with randomly selected ones, including stealth and boss monsters
+//		randomize_weapons					replaces all weapons with randomly selected ones
+//		randomize_ammo						replaces all ammo with randomly selected ones
+//		randomize_items						replaces all items with randomly selected ones
+
 
 server string	lexicon_replacer_mode	= "normal";

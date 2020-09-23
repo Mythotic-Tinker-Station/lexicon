@@ -157,9 +157,9 @@ int randomizer_monsters_stealth[29] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 1
 int randomizer_monsters_boss[19] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
 int randomizer_monsters_all[31] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117, 131, 132, 133, 134, 135, 136, 137, 138, 149, 140, 141, 142 };
 
-int randomizer_ammo[8] = { 10, 91, 92, 93, 109, 110, 111, 112 };
-int randomizer_items[14] = { 77, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 108 };
-int randomizer_weapons[17] = { 76, 85, 86, 87, 88, 89, 90 };
+int randomizer_ammo[8] = { 10, 90, 91, 92, 108, 109, 110, 111 };
+int randomizer_items[14] = { 76, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 107 };
+int randomizer_weapons[7] = { 75, 84, 85, 86, 87, 88, 89 };
 
 str modes[128][3];
 int mode_count = 0;
@@ -252,6 +252,31 @@ Script "Re:b:lacer" (void)
 
 	for(int ii = 0; ii <= mode_count; ii++)
 	{
+
+		if(StrCmp(modes[ii][0], "randomize_ammo") == 0)
+		{
+			if(StrCmp(type, "4") == 0)
+			{
+				class = classlist[randomizer_ammo[random(0, 7)]][1];
+			}
+		}
+
+		if(StrCmp(modes[ii][0], "randomize_weapons") == 0)
+		{
+			if(StrCmp(type, "5") == 0)
+			{
+				class = classlist[randomizer_weapons[random(0, 6)]][1];
+			}
+		}
+
+		if(StrCmp(modes[ii][0], "randomize_items") == 0)
+		{
+			if(StrCmp(type, "6") == 0)
+			{
+				class = classlist[randomizer_items[random(0, 13)]][1];
+			}
+		}
+
 		if(StrCmp(modes[ii][0], "normal") == 0)
 		{
 			for(int i2 = 0; i2 < 256; i2++)

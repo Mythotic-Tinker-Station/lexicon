@@ -339,6 +339,22 @@ Actor Lexicon_GodMode : PowerupGiver
     Powerup.Type PowerInvulnerable
 }
 
+Actor Lexicon_InfAmmo : PowerupGiver
+{
+    Inventory.UseSound ""
+    Inventory.MaxAmount 1
+    -COUNTITEM
+    +INVENTORY.AUTOACTIVATE
+    +INVENTORY.ALWAYSPICKUP
+    +INVENTORY.QUIET
+    +INVENTORY.UNDROPPABLE
+    -INVENTORY.KEEPDEPLETED
+    +INVENTORY.HUBPOWER
+    +INVENTORY.PERSISTENTPOWER
+    Powerup.Duration 0x7FFFFFFD
+    Powerup.Type PowerInfiniteAmmo
+}
+
 Actor Lexicon_InstaKiller : DoomWeapon
 {
   Weapon.SelectionOrder 1
@@ -370,22 +386,6 @@ Actor Lexicon_InstaKiller : DoomWeapon
     TNT1 A -1
     Stop
   }
-}
-
-Actor Lexicon_InfAmmo : PowerupGiver
-{
-    Inventory.UseSound ""
-    Inventory.MaxAmount 1
-    -COUNTITEM
-    +INVENTORY.AUTOACTIVATE
-    +INVENTORY.ALWAYSPICKUP
-    +INVENTORY.QUIET
-    +INVENTORY.UNDROPPABLE
-    -INVENTORY.KEEPDEPLETED
-    +INVENTORY.HUBPOWER
-    +INVENTORY.PERSISTENTPOWER
-    Powerup.Duration 0x7FFFFFFD
-    Powerup.Type PowerInfiniteAmmo
 }
 
 Actor IKPuff :BulletPuff

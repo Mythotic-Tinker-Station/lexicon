@@ -65,11 +65,11 @@ strict namespace
 		str previews[32];				// mapset screenshots
 		str readme[256];				// mapset readme pages
 		str replacers[256][2];			// mapset actor replacers
+		int id;
 	};
 
 	struct mapset mapsets[256];			// holds all the mapset info
 	int mapset_count = 0;				// how many mapsets exist
-	int mapset_current = 0;				// the currently loaded mapset
 
 	#if 1
 		#include "util.c"

@@ -129,10 +129,12 @@ echo PACK MUSIC AND MISC. FILES
 :Error1
 echo Error: Could not determain CPU type, please check that your system's environment variables are accurate.
 goto Finish
+pause
 
 :Error2
 echo BCS Error:
 goto Init
+pause
 
 :Finish
 pause

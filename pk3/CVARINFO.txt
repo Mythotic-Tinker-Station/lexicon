@@ -11,6 +11,8 @@ server int	lexicon_debug_mode						= 0;
 
 // used as global vars
 
+server noarchive int	lexicon_current_mapset		= 0;
+
 server noarchive int	lexicon_debug_instakiller	= 0;
 server noarchive int	lexicon_debug_godmode		= 0;
 server noarchive int	lexicon_debug_weapons		= 0;

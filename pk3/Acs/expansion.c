@@ -29,6 +29,7 @@ namespace Expansion
 		mapsets[mapset_count].mapcount			= getDynLangEntryEx(mapsets[mapset_count].acronym, "MAPCOUNT");
 		mapsets[mapset_count].startmap			= getDynLangEntryEx(mapsets[mapset_count].acronym, "STARTMAP");
 		mapsets[mapset_count].thumbnail			= getDynLangEntryEx(mapsets[mapset_count].acronym, "THUMBNAIL");
+		mapsets[mapset_count].id				= mapset_count;
 
 		// previews
 		for(int p = 0; p < 32; p++)

@@ -153,6 +153,8 @@ namespace Replacer
 			{9061, "StealthZombieMan"     , "1"}	// 142
 	};
 
+
+
 	int randomizer_monsters[16] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
 	int randomizer_monsters_stealth[28] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117, 131, 132, 133, 134, 135, 136, 137, 138, 149, 140, 141, 142 };
 	int randomizer_monsters_boss[18] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
@@ -166,8 +168,11 @@ namespace Replacer
 	int mode_count = 0;
 	bool isnormal;
 
+	int mapset_current = 0;
+
 	Script "Re:b:lacer" (void)
 	{
+		mapset_current = GetCVar("lexicon_current_mapset");
 		int newobj = GetActorProperty(0, APROP_Score);
 
 		str class = "Unknown";

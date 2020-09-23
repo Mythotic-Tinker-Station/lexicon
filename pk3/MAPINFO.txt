@@ -2,100 +2,31 @@ clearepisodes
 
 GameInfo
 {
+
 }
 
 episode HUB
-	{
+{
 	name = "The Sentinel's Lexicon"
 	key = "1"
-	}
+}
 
 episode MAP01
-	{
+{
 	name = "Doom 2"
-	key = "3"
-	}
+	key = "2"
+}
 
 map HUB "Inside the Lexicon"
-	{
-        music = "HUBMUS"
-        levelnum = 99
-        sky1 = "0TODSKY1"
-		sky2 = "MAGESKY1"
-	}
+{
+	music = "HUBMUS"
+	levelnum = 99
+	sky1 = "0TODSKY1"
+	sky2 = "MAGESKY1"
+}
 
 map TITLEMAP "Lexicon Opening"
-	{
-		music = "D_DM2TTL"
-	}
-
-// these must be loaded after the above stuff
-include "Mapinfo/Singles.txt" // Single map wads.
-include "Mapinfo/1024.txt" //Congestion
-include "Mapinfo/1024_2.txt" //CLAUSTERPHOBIA 2
-include "Mapinfo/1024_3.txt"//CLAUSTERPHOBIA 1
-include "Mapinfo/1997_Tuneup_Project.txt"
-include "Mapinfo/Alien_Vendetta.txt"
-include "Mapinfo/Ancient_Aliens.txt"
-include "Mapinfo/BX1.txt"
-include "Mapinfo/CC1.txt"
-include "Mapinfo/CC2.txt"
-include "Mapinfo/CC3.txt"
-include "Mapinfo/CC4.txt"
-include "Mapinfo/Chainworm.txt"
-include "Mapinfo/Chillax.txt"
-include "Mapinfo/Circle_Of_Caina.txt"
-include "Mapinfo/Combat_Shock.txt"
-include "Mapinfo/Combat_Shock_2.txt"
-include "Mapinfo/D2_The_Way_ID_Did.txt"
-include "Mapinfo/D2Redux.txt"
-include "Mapinfo/Dark_Encounters.txt"
-include "Mapinfo/Dark_Tartarus.txt"
-include "Mapinfo/Destination_Unknown.txt"
-include "Mapinfo/Deus_Vult.txt"
-include "Mapinfo/Deus_Vult_2.txt"
-include "Mapinfo/Doom_Core_Trilogy.txt"
-include "Mapinfo/Doom2_Lexicon.txt"
-include "Mapinfo/Drown_In_Blood.txt"
-include "Mapinfo/Epic1.txt"
-include "Mapinfo/Epic2.txt"
-include "Mapinfo/Estranged.txt"
-include "Mapinfo/Forest_Swords.txt"
-include "Mapinfo/Going_Down.txt"
-include "Mapinfo/Hadephobia.txt"
-include "Mapinfo/Hell_Revealed.txt"
-include "Mapinfo/Hell_Revealed_2.txt"
-include "Mapinfo/Hell_Pike.txt"
-include "Mapinfo/Hellbound.txt"
-include "Mapinfo/Hellcore.txt"
-include "Mapinfo/Interception.txt"
-include "Mapinfo/Kamasutra.txt"
-include "Mapinfo/Khorus_Speedy_Shit.txt"
-include "Mapinfo/Maps_Of_Chaos.txt"
-include "Mapinfo/Mayhem17.txt"
-include "Mapinfo/Monuments_Of_Mars.txt"
-include "Mapinfo/New_Gothic_Movement.txt"
-include "Mapinfo/New_Gothic_Movement2.txt"
-include "Mapinfo/NOVA.txt"
-include "Mapinfo/Pizza_Steve.txt"
-include "Mapinfo/Scythe_2.txt"
-include "Mapinfo/SF2012.txt"
-include "Mapinfo/SF2013.txt"
-include "Mapinfo/Shaitans_Luck.txt"
-include "Mapinfo/Speed_Of_Doom.txt"
-include "Mapinfo/Stardate_20x6.txt"
-include "Mapinfo/Stardate_20x7.txt"
-include "Mapinfo/Sunder.txt"
-include "Mapinfo/Sunlust.txt"
-include "Mapinfo/Swift_Death.txt"
-include "Mapinfo/Swim_With_The_Whales.txt"
-include "Mapinfo/UAC_Ultra.txt"
-include "Mapinfo/Unholy_Realms.txt"
-include "Mapinfo/Valiant.txt"
-include "Mapinfo/Vanguard.txt"
-include "Mapinfo/Whispers_Of_Satan.txt"
-include "Mapinfo/Zone300.txt"
-include "Mapinfo/ZonesOfFear.txt"
-
-
+{
+	music = "D_DM2TTL"
+}
 

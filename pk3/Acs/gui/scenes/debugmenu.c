@@ -33,38 +33,38 @@ strict namespace DebugMenu
 			buttons[i] = Button128.Create(20.0, 20.0+fixed(i*24), mapsets[i].name);
 			Widgets.SetArg1Str(buttons[i], mapsets[i].startmap);
 			Widgets.SetArg2Int(buttons[i], mapsets[i].id);
-			Widgets.SetFont(buttons[i], "SMALLFONT");
+			Widgets.SetFont(buttons[i], "FiraCode3");
 			Widgets.SetTextOffsetY(buttons[i], 9.0);
 			Widgets.AddClickedHook(buttons[i], Event_MapsetClick);
 		}
 
 		// instakiller button
-		int instakiller = ButtonCheck.Create(Screen.GetWidth()-144.0, 20.0, "Instakiller");
-		Widgets.SetFont(instakiller, "SMALLFONT");
+		int instakiller = ButtonCheck.Create(Screen.GetWidth()-144.0, 20.0, "\c[SolidWhite]Instakiller");
+		Widgets.SetFont(instakiller, "FiraCode3");
 		Widgets.SetTextOffsetY(instakiller, 9.0);
 		Widgets.AddClickedHook(instakiller, Event_InstaKillerCheck);
 
 		// god mode button
-		int god = ButtonCheck.Create(Screen.GetWidth()-144.0, 50.0, "God Mode");
-		Widgets.SetFont(god, "SMALLFONT");
+		int god = ButtonCheck.Create(Screen.GetWidth()-144.0, 50.0, "\c[SolidWhite]God Mode");
+		Widgets.SetFont(god, "FiraCode3");
 		Widgets.SetTextOffsetY(god, 9.0);
 		Widgets.AddClickedHook(god, Event_GodModeCheck);
 
 		// all weapons button
-		int weapons = ButtonCheck.Create(Screen.GetWidth()-144.0, 80.0, "All Weapons");
-		Widgets.SetFont(weapons, "SMALLFONT");
+		int weapons = ButtonCheck.Create(Screen.GetWidth()-144.0, 80.0, "\c[SolidWhite]All Weapons");
+		Widgets.SetFont(weapons, "FiraCode3");
 		Widgets.SetTextOffsetY(weapons, 9.0);
 		Widgets.AddClickedHook(weapons, Event_WeaponsCheck);
 
 		// all keys button
-		int keys = ButtonCheck.Create(Screen.GetWidth()-144.0, 110.0, "All Keys");
-		Widgets.SetFont(keys, "SMALLFONT");
+		int keys = ButtonCheck.Create(Screen.GetWidth()-144.0, 110.0, "\c[SolidWhite]All Keys");
+		Widgets.SetFont(keys, "FiraCode3");
 		Widgets.SetTextOffsetY(keys, 9.0);
 		Widgets.AddClickedHook(keys, Event_KeysCheck);
 
 		// inf ammo button
-		int ammo = ButtonCheck.Create(Screen.GetWidth()-144.0, 140.0, "Infinite Ammo");
-		Widgets.SetFont(ammo, "SMALLFONT");
+		int ammo = ButtonCheck.Create(Screen.GetWidth()-144.0, 140.0, "\c[SolidWhite]Infinite Ammo");
+		Widgets.SetFont(ammo, "FiraCode3");
 		Widgets.SetTextOffsetY(ammo, 9.0);
 		Widgets.AddClickedHook(ammo, Event_AmmoCheck);
 	}

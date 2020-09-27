@@ -163,9 +163,9 @@ strict namespace Widgets
 		obj[id].backcolor.hovered	= "UI_Main_Hovered";
 		obj[id].backcolor.checked	= "UI_Main_Checked";
 		obj[id].backcolor.current	= "UI_Main_Normal";
-		obj[id].textcolor.normal 	= "Gray";
-		obj[id].textcolor.disabled 	= "DarkGray";
-		obj[id].textcolor.clicked	= "DarkGray";
+		obj[id].textcolor.normal 	= "White";
+		obj[id].textcolor.disabled 	= "White";
+		obj[id].textcolor.clicked	= "White";
 		obj[id].textcolor.hovered	= "White";
 		obj[id].textcolor.checked	= "Blue";
 		obj[id].textcolor.current	= "Gray";

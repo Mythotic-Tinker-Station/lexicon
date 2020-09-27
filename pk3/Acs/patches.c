@@ -1,4 +1,6 @@
-
+/*
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
+*/
 
 // this file contains fixes to mapsets
 // we have a policy not to edit the original mapsets

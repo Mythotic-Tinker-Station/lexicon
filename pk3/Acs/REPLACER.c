@@ -1,6 +1,6 @@
-// September 2020
-// by Michaelis
-// for Lexicon
+/*
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
+*/
 
 #define DOOMEDNUMS 143
 

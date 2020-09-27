@@ -1,4 +1,8 @@
 
+/*
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
+*/
+
 namespace Expansion
 {
 	// returns the text of a language.txt definition

@@ -1,9 +1,7 @@
 
 /*
-	Lexicon Scripting by Tribeam
-	With help from Popsoap and Michaelis
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
 */
-
 
 // returns the text of a language.txt definition
 function str getDynLangEntry(str p1, str p2)

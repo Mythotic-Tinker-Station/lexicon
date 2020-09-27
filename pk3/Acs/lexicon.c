@@ -1,6 +1,5 @@
 /*
-	Lexicon Scripts by Tribeam
-	With help from Popsoap, Michaelis
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
 */
 
 #import "../../compiler/lib/zcommon.bcs"
@@ -82,6 +81,7 @@ strict namespace
 		#include "replacer.c"
 		#include "patches.c"
 		#include "expansion.c"
+		#include "keys.c"
 	#endif
 }
 

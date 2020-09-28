@@ -2,7 +2,7 @@
 	Lexicon Scripts by Tribeam, Popsoap, Michaelis
 */
 
-#define DOOMEDNUMS 143
+#define DOOMEDNUMS 146
 
 namespace Replacer
 {
@@ -150,7 +150,12 @@ namespace Replacer
 			{9058, "StealthFatso"         , "1"},	// 139
 			{9059, "StealthRevenant"      , "1"},	// 140
 			{9060, "StealthShotgunGuy"    , "1"},	// 141
-			{9061, "StealthZombieMan"     , "1"}	// 142
+			{9061, "StealthZombieMan"     , "1"},	// 142
+
+			{9, "SillyBot_ShotgunGuy"     , "100"},	// 143
+			{65, "SillyBot_ChaingunDude"  , "100"},	// 144
+			{3004, "SillyBot_ZombieMan"   , "100"},	// 145
+
 	};
 
 
@@ -270,6 +275,22 @@ namespace Replacer
 				}
 				isnormal = true;
 			}
+
+			if(StrCmp(modes[ii][0], "test") == 0)
+			{
+				if(StrCmp(type, "100") == 0)
+				{
+					for(int i10 = 0; i10 < 256; i10++)
+					{
+						if(StrCmp(class, mapsets[mapset_current].replacers[i10][0]) == 0)
+						{
+							class = mapsets[mapset_current].replacers[i10][1];
+							break;
+						}
+					}
+				}
+			}
+
 
 			if(StrCmp(modes[ii][0], "randomize_monsters") == 0)
 			{

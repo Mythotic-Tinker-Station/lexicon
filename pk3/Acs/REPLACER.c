@@ -152,9 +152,9 @@ namespace Replacer
 			{9060, "StealthShotgunGuy"    , "1"},	// 141
 			{9061, "StealthZombieMan"     , "1"},	// 142
 
-			{9, "SillyBot_ShotgunGuy"     , "100"},	// 143
-			{65, "SillyBot_ChaingunDude"  , "100"},	// 144
-			{3004, "SillyBot_ZombieMan"   , "100"},	// 145
+			//{9, "SillyBot_ShotgunGuy"     , "100"},	// 143
+			//{65, "SillyBot_ChaingunDude"  , "100"},	// 144
+			//{3004, "SillyBot_ZombieMan"   , "100"},	// 145
 
 	};
 

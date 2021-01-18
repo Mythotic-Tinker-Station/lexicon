@@ -1,5 +1,4 @@
 
-
 // cursor
 user string lexicon_cursor_color 					= "Azure";
 user int	lexicon_cursor_shadow 					= 1;
@@ -25,13 +24,13 @@ server noarchive int	lexicon_debug_infammo		= 0;
 // this cvar can have multiple flags seperated by a space(or multiple spaces)
 // that change the way the replacer replaces things
 //
-// for example: "normal    replace:ZombieMan:ArchVile replace:Archvile:ZombieMan"
+// for example: "normal replace:ZombieMan:ArchVile replace:Archvile:ZombieMan"
 //
 // the exmaple above would set all actors to their mapset version,
 // however all zombiemen will be replaced with archviles, and all archviles will be replaced with zombiemen.
 // this cvar only effects objects that are place in maps, it does not effect spawns
 //
-// note: that there is no error checking for this system, if you typo something, the replacer will not do what you want it to without telling you why.
+// note: that there is no error checking for this system, if you typo something, it will not give you any errors.
 //
 // list of flags:
 //		normal								Normal replacer operation, this replaces actors with mapset specific ones(this flag overrules all the other flags, except replace and ignore)

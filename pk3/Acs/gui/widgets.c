@@ -648,8 +648,11 @@ strict namespace Widgets
 				// should we render the back image?
 				if(GetRenderImage(id))
 				{
-					Screen.Draw("UIFONT", GetImage(id), GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+					Screen.Draw(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 				}
+
+				// call object's update callback
+				CallUpdateHooks(id);
 
 				// should we render the text?
 				if(GetRenderText(id))
@@ -658,9 +661,6 @@ strict namespace Widgets
 
 					SetHUDClipRect(0, 0, 0, 0, int(GetWidth(id)));
 				}
-
-				// call object's update callback
-				CallUpdateHooks(id);
 
 				SetPrevX1(id, GetX1(id));
 				SetPrevY1(id, GetY1(id));

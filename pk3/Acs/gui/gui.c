@@ -109,7 +109,8 @@ strict namespace Gui
 		Screen.Init();
 
 		// build the debug menu
-		DebugMenu.Build();
+		//DebugMenu.Build();
+		VoteMenu.Build();
 
 		while(1)
 		{

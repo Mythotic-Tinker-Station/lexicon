@@ -4,13 +4,13 @@
 */
 
 
-strict namespace Button24
+strict namespace Button
 {
-	function int Create(fixed x, fixed y, str t)
+	function int Create(fixed x, fixed y, fixed width, fixed height, str t)
 	{
 		int id = Widgets.Create();
 
-		Widgets.SetRectPosition(id, x, y, 24.0, 24.0);
+		Widgets.SetRectPosition(id, x, y, width, height);
 
 		// make it clickable and hoverable
 		Widgets.SetClickable(id, true);
@@ -29,8 +29,7 @@ strict namespace Button64
 {
 	function int Create(fixed x, fixed y, str t)
 	{
-		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 64.0, 24.0);
+		int id = Button.Create(x, y, 64.0, 24.0, t);
 		Widgets.SetImage(id, "b");
 		return id;
 	}
@@ -40,8 +39,7 @@ strict namespace Button96
 {
 	function int Create(fixed x, fixed y, str t)
 	{
-		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 96.0, 24.0);
+		int id = Button.Create(x, y, 96.0, 24.0, t);
 		Widgets.SetText(id, t);
 		Widgets.SetImage(id, "c");
 		return id;
@@ -52,8 +50,7 @@ strict namespace Button128
 {
 	function int Create(fixed x, fixed y, str t)
 	{
-		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 128.0, 24.0);
+		int id = Button.Create(x, y, 128.0, 24.0, t);
 		Widgets.SetText(id, t);
 		Widgets.SetImage(id, "d");
 		return id;
@@ -64,8 +61,7 @@ strict namespace ButtonCheck
 {
 	function int Create(fixed x, fixed y, str t)
 	{
-		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 128.0, 24.0);
+		int id = Button.Create(x, y, 128.0, 24.0, t);
 		Widgets.SetText(id, t);
 		Widgets.SetImage(id, "d");
 		Widgets.SetCheckable(id, true);
@@ -74,27 +70,30 @@ strict namespace ButtonCheck
 }
 
 
-strict namespace ButtonMap
+strict namespace ButtonImage
 {
-	function int Create(fixed x, fixed y, str t)
+	function int Create(fixed x, fixed y, str img, str t)
 	{
-		int id = Button24.Create(x, y, t);
-		Widgets.SetRectPosition(id, x, y, 152.0, 108.0);
-		Widgets.SetText(id, t);
-		Widgets.SetImage(id, "e");
+		int id = Button.Create(x, y, 192.0, 108.0, t);
+		//Widgets.SetText(id, t);
+		Widgets.SetImage(id, img);
 		Widgets.SetFont(id, "SMALLFONT");
 		Widgets.SetTextOffsetY(id, 6.0);
-		Widgets.AddUpdateHook(id, Event_Update);
 		Widgets.SetBackColorNormal(id, "");
 		Widgets.SetBackColorHovered(id, "");
 		Widgets.SetBackColorClicked(id, "");
-
+		Widgets.AddUpdateHook(id, Event_Update);
+		//Widgets.AddHoveredHook(id, Event_Hover);
 		return id;
 	}
 
 	function void Event_Update(int id)
 	{
-		//Screen.Draw("NGM2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id)+6.0, Widgets.GetY1(id)+6.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		Screen.Draw("UI_BARS", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		if(!Widgets.GetHovered(id))
+		{
+			Screen.Draw("UI_FADE", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		}
 	}
 }
 

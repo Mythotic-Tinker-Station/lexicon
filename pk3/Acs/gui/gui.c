@@ -121,6 +121,7 @@ strict namespace Gui
 		while(1)
 		{
 			Cursor.Run();
+			VoteMenu.Run();
 			Widgets.Run();
 
 			Screen.ResetHudIDs();

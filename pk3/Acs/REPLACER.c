@@ -171,7 +171,8 @@ namespace Replacer
 
 	str modes[128][3];
 	int mode_count = 0;
-	bool isnormal;
+	bool isnormal = false;
+	bool nostartitems = false;
 
 	int mapset_current = 0;
 
@@ -590,5 +591,23 @@ namespace Replacer
 		_args2 = args2;
 		_args3 = args3;
 		_args4 = args4;
+	}
+
+	function void StartItems()
+	{
+		if(GetCVar("lexicon_nostartitems") == 0)
+		{
+			int mapset_current = GetCVar("lexicon_current_mapset");
+
+			for(int t = 0; t < mapsets[mapset_current].takeitem_count; t++)
+			{
+				TakeInventory(mapsets[mapset_current].takeitems[t], 1);
+			}
+
+			for(int s = 0; s < mapsets[mapset_current].startitem_count; s++)
+			{
+				GiveInventory(mapsets[mapset_current].startitems[s], 1);
+			}
+		}
 	}
 }

@@ -67,9 +67,7 @@ strict namespace
 		str readme[256];				// mapset readme pages
 		str replacers[256][2];			// mapset actor replacers
 		str startitems[32];				// mapset start items
-		int startamounts[32];			// mapset start amounts
 		str takeitems[32];				// mapset take items
-		int takeamounts[32];			// mapset take amounts
 		int startitem_count;			// amount of start items
 		int takeitem_count;				// amount of take items
 		int replacer_count;				// amount of replacer defines
@@ -95,29 +93,17 @@ strict namespace
 		#include "keys.c"
 	#endif
 
-	function void ManageItems()
-	{
-		int mapset_current = GetCVar("lexicon_current_mapset");
-		for(int i = 0; i < mapsets[mapset_current].startitem_count; i++)
-		{
-			GiveInventory(mapsets[mapset_current].startitems[i], mapsets[mapset_current].startamounts[i]);
-		}
-		for(int i = 0; i < mapsets[mapset_current].takeitem_count; i++)
-		{
-			TakeInventory(mapsets[mapset_current].takeitems[i], mapsets[mapset_current].takeamounts[i]);
-		}
-	}
 
 	Script "Enter" enter
 	{
 		DebugMenu.ApplyCheats();
-		ManageItems();
+		Replacer.StartItems();
 	}
 
 	Script "Respawn" respawn
 	{
 		DebugMenu.ApplyCheats();
-		ManageItems();
+		Replacer.StartItems();
 	}
 
 }

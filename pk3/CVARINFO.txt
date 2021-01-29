@@ -6,12 +6,14 @@ user int 	lexicon_cursor_xsens 					= 20;
 user int 	lexicon_cursor_ysens 					= 10;
 user int 	lexicon_first_run	 					= 1;
 user int 	lexicon_vote_activation					= 1;
+
+// general settings
 server int	lexicon_debug_mode						= 0;
+server int	lexicon_nostartitems					= 0;
+
 
 // used as global vars
-
 server noarchive int	lexicon_current_mapset		= 0;
-
 server noarchive int	lexicon_debug_instakiller	= 0;
 server noarchive int	lexicon_debug_godmode		= 0;
 server noarchive int	lexicon_debug_weapons		= 0;
@@ -19,6 +21,7 @@ server noarchive int	lexicon_debug_keys			= 0;
 server noarchive int	lexicon_debug_infammo		= 0;
 
 
+server string	lexicon_replacer_mode	= "normal";
 // this is a very special cvar with all kinds of versatility to control the replacer system
 //
 // this cvar can have multiple flags seperated by a space(or multiple spaces)
@@ -50,6 +53,7 @@ server noarchive int	lexicon_debug_infammo		= 0;
 //		randomize_weapons					replaces all weapons with randomly selected ones
 //		randomize_ammo						replaces all ammo with randomly selected ones
 //		randomize_items						replaces all items with randomly selected ones
+//		nostartitems						ignore giving the players mapset specific start items
 
 
-server string	lexicon_replacer_mode	= "normal";
+

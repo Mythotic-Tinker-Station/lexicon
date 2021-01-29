@@ -83,19 +83,9 @@ namespace Expansion
 			// check if this language define exists
 			if(startitem != "_LANG_UNDEFINED_")
 			{
-				// for each char in the replacer string
-				for(int c2 = 0; c2 <= StrLen(startitem); c2++)
-				{
-					// find the seperator
-					if(StrParam(c:GetChar(startitem, c2)) == ":")
-					{
-						// save item into startitem array
-						mapsets[mapset_count].startitems[s] = StrLeft(startitem, c2);
-						mapsets[mapset_count].startamounts[s] = StrMid(startitem, c2+1, StrLen(startitem));
-						mapsets[mapset_count].startitem_count++;
-						break;
-					}
-				}
+				// save item into startitem array
+				mapsets[mapset_count].startitems[s] = startitem;
+				mapsets[mapset_count].startitem_count++;
 			}
 		}
 
@@ -108,19 +98,9 @@ namespace Expansion
 			// check if this language define exists
 			if(takeitem != "_LANG_UNDEFINED_")
 			{
-				// for each char in the replacer string
-				for(int c3 = 0; c3 <= StrLen(takeitem); c3++)
-				{
-					// find the seperator
-					if(StrParam(c:GetChar(takeitem, c3)) == ":")
-					{
-						// save item into startitem array
-						mapsets[mapset_count].takeitems[t] = StrLeft(takeitem, c3);
-						mapsets[mapset_count].takeamounts[t] = StrMid(takeitem, c3+1, StrLen(takeitem));
-						mapsets[mapset_count].takeitem_count++;
-						break;
-					}
-				}
+				// save item into startitem array
+				mapsets[mapset_count].takeitems[t] = takeitem;
+				mapsets[mapset_count].takeitem_count++;
 			}
 		}
 		mapset_count++;

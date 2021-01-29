@@ -76,8 +76,8 @@ strict namespace Widgets
 		struct vec2x2T pos_prev;						// x1, y1, x2, y2 positions of widget on the previous frame
 		struct sizeT size;								// w, h, wh, hh sizes of widget
 		struct vec2T center;							// x, y of the center of the widget
-		struct colors backcolor;						// background colors
-		struct colors textcolor;						// text colors
+		struct colorsT backcolor;						// background colors
+		struct colorsT textcolor;						// text colors
 		struct vec2T text_offset;						// offset the position of the text
 
 		str text;										// text to display

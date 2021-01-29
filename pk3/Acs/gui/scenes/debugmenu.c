@@ -3,17 +3,6 @@
 
 strict namespace DebugMenu
 {
-
-	Script "Debug_Mode_Enter" enter
-	{
-		ApplyCheats();
-	}
-
-	Script "Debug_Mode_Respawn" respawn
-	{
-		ApplyCheats();
-	}
-
 	function void ApplyCheats(void)
 	{
 		if(GetCVar("lexicon_debug_instakiller")) { GiveInventory("Lexicon_InstaKiller", 1); }

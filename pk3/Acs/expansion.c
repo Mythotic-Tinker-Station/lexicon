@@ -5,8 +5,11 @@
 
 namespace Expansion
 {
+	str weapons[8] = {"Pistol", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000", "Chainsaw"};
+
+
 	// returns the text of a language.txt definition
-	function str getDynLangEntryEx(int p1, int p2)
+	function str getDynLangEntryEx(str p1, str p2)
 	{
 		// get entry
 		str name = strparam(s:p1, s:"_", s:p2);
@@ -25,7 +28,6 @@ namespace Expansion
 
 	script "Lexicon_AddMapSet" (int acronym)
 	{
-		printbold(s:acronym);
 		mapsets[mapset_count].acronym 			= acronym;
 		mapsets[mapset_count].name 				= getDynLangEntryEx(mapsets[mapset_count].acronym, "NAME");
 		mapsets[mapset_count].description 		= getDynLangEntryEx(mapsets[mapset_count].acronym, "DESCRIPTION");
@@ -47,24 +49,75 @@ namespace Expansion
 			mapsets[mapset_count].readme[rm]	= getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"README", d:rm));
 		}
 
-		// replacers
+		// actor replacers
 		for(int r = 0; r < 256; r++)
 		{
 			// get the replacer string from langauge
-			str info = getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"REPLACER", d:r));
+			str replacer = getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"REPLACER", i:r));
 
 			// check if this language define exists
-			if(info != "_LANG_UNDEFINED_")
+			if(replacer != "_LANG_UNDEFINED_")
 			{
 				// for each char in the replacer string
-				for(int c = 0; c <= StrLen(info); c++)
+				for(int c = 0; c <= StrLen(replacer); c++)
 				{
 					// find the seperator
-					if(StrParam(c:GetChar(info, c)) == ":")
+					if(StrParam(c:GetChar(replacer, c)) == ":")
 					{
 						// split the replacer string into its 2 parts, the replacee and the replacer
-						mapsets[mapset_count].replacers[r][0] = StrLeft(info, c);
-						mapsets[mapset_count].replacers[r][1] = StrMid(info, c+1, StrLen(info));
+						mapsets[mapset_count].replacers[r][0] = StrLeft(replacer, c);
+						mapsets[mapset_count].replacers[r][1] = StrMid(replacer, c+1, StrLen(replacer));
+						mapsets[mapset_count].replacer_count++;
+						break;
+					}
+				}
+			}
+		}
+
+		// startitems
+		for(int s = 0; s < 32; s++)
+		{
+			// get the replacer string from langauge
+			str startitem = getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"STARTITEM", i:s));
+
+			// check if this language define exists
+			if(startitem != "_LANG_UNDEFINED_")
+			{
+				// for each char in the replacer string
+				for(int c2 = 0; c2 <= StrLen(startitem); c2++)
+				{
+					// find the seperator
+					if(StrParam(c:GetChar(startitem, c2)) == ":")
+					{
+						// save item into startitem array
+						mapsets[mapset_count].startitems[s] = StrLeft(startitem, c2);
+						mapsets[mapset_count].startamounts[s] = StrMid(startitem, c2+1, StrLen(startitem));
+						mapsets[mapset_count].startitem_count++;
+						break;
+					}
+				}
+			}
+		}
+
+		// takeitems
+		for(int t = 0; t < 32; t++)
+		{
+			// get the replacer string from langauge
+			str takeitem = getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"TAKEITEM", i:t));
+
+			// check if this language define exists
+			if(takeitem != "_LANG_UNDEFINED_")
+			{
+				// for each char in the replacer string
+				for(int c3 = 0; c3 <= StrLen(takeitem); c3++)
+				{
+					// find the seperator
+					if(StrParam(c:GetChar(takeitem, c3)) == ":")
+					{
+						// save item into startitem array
+						mapsets[mapset_count].takeitems[t] = StrLeft(takeitem, c3);
+						mapsets[mapset_count].takeamounts[t] = StrMid(takeitem, c3+1, StrLen(takeitem));
+						mapsets[mapset_count].takeitem_count++;
 						break;
 					}
 				}

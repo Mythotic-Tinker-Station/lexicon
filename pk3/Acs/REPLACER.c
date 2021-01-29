@@ -291,7 +291,6 @@ namespace Replacer
 				}
 			}
 
-
 			if(StrCmp(modes[ii][0], "randomize_monsters") == 0)
 			{
 				if(StrCmp(type, "1") == 0)

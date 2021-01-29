@@ -26,7 +26,7 @@ server noarchive int	lexicon_debug_infammo		= 0;
 //
 // for example: "normal replace:ZombieMan:ArchVile replace:Archvile:ZombieMan"
 //
-// the exmaple above would set all actors to their mapset version,
+// the example above would set all actors to their mapset version,
 // however all zombiemen will be replaced with archviles, and all archviles will be replaced with zombiemen.
 // this cvar only effects objects that are place in maps, it does not effect spawns
 //

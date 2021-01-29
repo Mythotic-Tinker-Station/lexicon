@@ -94,14 +94,17 @@ strict namespace
 		#include "keys.c"
 	#endif
 
+	Script "Lexicon_Open" Open
+	{
+	}
 
-	Script "Enter" enter
+	Script "Lexicon_Enter" enter
 	{
 		DebugMenu.ApplyCheats();
 		Replacer.StartItems();
 	}
 
-	Script "Respawn" respawn
+	Script "Lexicon_Respawn" respawn
 	{
 		DebugMenu.ApplyCheats();
 		Replacer.StartItems();

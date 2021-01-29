@@ -9,8 +9,8 @@ user int 	lexicon_vote_activation					= 1;
 
 // general settings
 server int	lexicon_debug_mode						= 0;
-server int	lexicon_nostartitems					= 0;
-
+server int	lexicon_no_start_items					= 0;
+server int	lexicon_no_mod_check					= 0; // normally, the replacer checks for modded actors and ignores them, this will prevent that process
 
 // used as global vars
 server noarchive int	lexicon_current_mapset		= 0;
@@ -53,7 +53,6 @@ server string	lexicon_replacer_mode	= "normal";
 //		randomize_weapons					replaces all weapons with randomly selected ones
 //		randomize_ammo						replaces all ammo with randomly selected ones
 //		randomize_items						replaces all items with randomly selected ones
-//		nostartitems						ignore giving the players mapset specific start items
 
 
 

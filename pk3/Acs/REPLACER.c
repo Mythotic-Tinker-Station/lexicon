@@ -193,6 +193,13 @@ namespace Replacer
 				class = classlist[i][1];
 				orgclass = class;
 				type = classlist[i][2];
+
+				SpawnForced(class, 0.0, 0.0, 0.0, 22390);
+				if(StrCmp(GetActorClass(22390), class) != 0)
+				{
+					classlist[i][3] = "1";
+				}
+				Thing_Remove(22390);
 			}
 		}
 
@@ -536,7 +543,14 @@ namespace Replacer
 			}
 		}
 
-		Reblace(class);
+		if(IsModdedClass(orgclass))
+		{
+			Reblace(orgclass);
+		}
+		else
+		{
+			Reblace(class);
+		}
 	}
 
 
@@ -593,9 +607,27 @@ namespace Replacer
 		_args4 = args4;
 	}
 
+	function bool IsModdedClass(str class)
+	{
+		if(GetCVar("lexicon_no_mod_check") == 0)
+		{
+			for(int c = 0; c < DOOMEDNUMS; c++)
+			{
+				if(StrCmp(class, classlist[c][1]) == 0)
+				{
+					if(StrCmp(classlist[c][3], "1") == 0)
+					{
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	}
+
 	function void StartItems()
 	{
-		if(GetCVar("lexicon_nostartitems") == 0)
+		if(GetCVar("lexicon_no_start_items") == 0)
 		{
 			int mapset_current = GetCVar("lexicon_current_mapset");
 

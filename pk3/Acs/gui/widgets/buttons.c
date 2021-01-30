@@ -78,7 +78,7 @@ strict namespace ButtonImage
 		//Widgets.SetText(id, t);
 		Widgets.SetImage(id, img);
 		Widgets.SetFont(id, "SMALLFONT");
-		Widgets.SetTextOffsetY(id, 6.0);
+		Widgets.SetTextOffsetY(id, 7.0);
 		Widgets.SetBackColorNormal(id, "");
 		Widgets.SetBackColorHovered(id, "");
 		Widgets.SetBackColorClicked(id, "");

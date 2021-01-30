@@ -15,10 +15,9 @@ strict namespace VoteMenu
 			fixed y = fixed(i / 2)*108.0;
 
 			buttons[i] = ButtonImage.Create(128.0+x, 96.0+y, mapsets[i].thumbnail, mapsets[i].name);
-			Widgets.SetFont(buttons[i], "Smallfont");
+			Widgets.SetFont(buttons[i], "CP437");
 			Widgets.SetArg1Str(buttons[i], mapsets[i].startmap);
 			Widgets.SetArg2Int(buttons[i], mapsets[i].id);
-			Widgets.SetTextOffsetY(buttons[i], 9.0);
 			Widgets.AddClickedHook(buttons[i], Event_MapsetClick);
 		}
 	}

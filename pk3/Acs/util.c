@@ -48,3 +48,12 @@ function fixed normalize(fixed v, fixed min, fixed max)
 {
 	return v * (max - min) + min;
 }
+
+function void applyCheats(void)
+{
+	if(GetCVar("lexicon_debug_instakiller")) { GiveInventory("Lexicon_InstaKiller", 1); }
+	if(GetCVar("lexicon_debug_godmode")) { GiveInventory("Lexicon_GodMode", 1); }
+	if(GetCVar("lexicon_debug_weapons")) { ConsoleCommand("give weapons"); ConsoleCommand("give ammo"); }
+	if(GetCVar("lexicon_debug_keys")) { ConsoleCommand("give keys"); }
+	if(GetCVar("lexicon_debug_infammo")) { GiveInventory("Lexicon_InfAmmo", 1); }
+}

@@ -87,7 +87,6 @@ strict namespace
 		#include "gui/gui.c"
 		#include "gui/widgets/buttons.c"
 		#include "gui/widgets/labels.c"
-		#include "gui/scenes/debugmenu.c"
 		#include "gui/scenes/votemenu.c"
 		#include "replacer.c"
 		#include "patches.c"
@@ -101,13 +100,13 @@ strict namespace
 
 	Script "Lexicon_Enter" enter
 	{
-		DebugMenu.ApplyCheats();
+		applyCheats();
 		Replacer.StartItems();
 	}
 
 	Script "Lexicon_Respawn" respawn
 	{
-		DebugMenu.ApplyCheats();
+		applyCheats();
 		Replacer.StartItems();
 	}
 

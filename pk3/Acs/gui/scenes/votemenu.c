@@ -31,33 +31,39 @@ strict namespace VoteMenu
 			int instakiller = ButtonCheck.Create(Screen.GetWidth()-144.0, 50.0, "\c[White]Instakiller");
 			Widgets.SetFont(instakiller, "CP437");
 			Widgets.SetTextOffsetY(instakiller, 4.0);
-			//Widgets.AddClickedHook(instakiller, Event_InstaKillerCheck);
+			Widgets.AddClickedHook(instakiller, Event_InstaKillerCheck);
 
 			// god mode button
 			int god = ButtonCheck.Create(Screen.GetWidth()-144.0, 80.0, "\c[White]God Mode");
 			Widgets.SetFont(god, "CP437");
 			Widgets.SetTextOffsetY(god, 4.0);
-			//Widgets.AddClickedHook(god, Event_GodModeCheck);
+			Widgets.AddClickedHook(god, Event_GodModeCheck);
 
 			// all weapons button
 			int weapons = ButtonCheck.Create(Screen.GetWidth()-144.0, 110.0, "\c[White]All Weapons");
 			Widgets.SetFont(weapons, "CP437");
 			Widgets.SetTextOffsetY(weapons, 4.0);
-			//Widgets.AddClickedHook(weapons, Event_WeaponsCheck);
+			Widgets.AddClickedHook(weapons, Event_WeaponsCheck);
 
 			// all keys button
 			int keys = ButtonCheck.Create(Screen.GetWidth()-144.0, 140.0, "\c[White]All Keys");
 			Widgets.SetFont(keys, "CP437");
 			Widgets.SetTextOffsetY(keys, 4.0);
-			//Widgets.AddClickedHook(keys, Event_KeysCheck);
+			Widgets.AddClickedHook(keys, Event_KeysCheck);
 
 			// inf ammo button
 			int ammo = ButtonCheck.Create(Screen.GetWidth()-144.0, 170.0, "\c[White]Infinite Ammo");
 			Widgets.SetFont(ammo, "CP437");
 			Widgets.SetTextOffsetY(ammo, 4.0);
-			//Widgets.AddClickedHook(ammo, Event_AmmoCheck);
+			Widgets.AddClickedHook(ammo, Event_AmmoCheck);
 		}
 	}
+
+	function void Event_InstaKillerCheck(int id) { SetCVar("lexicon_debug_instakiller", int(Widgets.GetChecked(id))); }
+	function void Event_GodModeCheck(int id) { SetCVar("lexicon_debug_godmode", int(Widgets.GetChecked(id))); }
+	function void Event_WeaponsCheck(int id) { SetCVar("lexicon_debug_weapons", int(Widgets.GetChecked(id))); }
+	function void Event_KeysCheck(int id) { SetCVar("lexicon_debug_keys", int(Widgets.GetChecked(id))); }
+	function void Event_AmmoCheck(int id) { SetCVar("lexicon_debug_infammo", int(Widgets.GetChecked(id))); }
 
 	function void Event_MapsetClick(int id)
 	{

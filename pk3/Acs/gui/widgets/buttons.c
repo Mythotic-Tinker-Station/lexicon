@@ -63,9 +63,25 @@ strict namespace ButtonCheck
 	{
 		int id = Button.Create(x, y, 128.0, 24.0, t);
 		Widgets.SetText(id, t);
-		Widgets.SetImage(id, "d");
 		Widgets.SetCheckable(id, true);
+		Widgets.AddUpdateHook(id, Event_Update);
 		return id;
+	}
+
+	function void Event_Update(int id)
+	{
+		if(!Widgets.GetHovered(id) && !Widgets.GetChecked(id))
+		{
+			Screen.Draw("UI_BTN1", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		}
+		else if(Widgets.GetHovered(id) && !Widgets.GetChecked(id))
+		{
+			Screen.Draw("UI_BTN2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		}
+		else if(Widgets.GetChecked(id))
+		{
+			Screen.Draw("UI_BTN3", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		}
 	}
 }
 
@@ -83,16 +99,20 @@ strict namespace ButtonImage
 		Widgets.SetBackColorHovered(id, "");
 		Widgets.SetBackColorClicked(id, "");
 		Widgets.AddUpdateHook(id, Event_Update);
-		//Widgets.AddHoveredHook(id, Event_Hover);
 		return id;
 	}
 
 	function void Event_Update(int id)
 	{
-		Screen.Draw("UI_BARS", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+
 		if(!Widgets.GetHovered(id))
 		{
 			Screen.Draw("UI_FADE", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+			Screen.Draw("UI_MAP", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+		}
+		else
+		{
+			Screen.Draw("UI_MAP2", "a", Widgets.GetBackColorCurrent(id), Widgets.GetX1(id), Widgets.GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
 		}
 	}
 }

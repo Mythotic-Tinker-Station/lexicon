@@ -108,15 +108,7 @@ strict namespace Gui
 		// setup the Screen
 		Screen.Init();
 
-		// build the debug menu
-		if(GetCVar("lexicon_debug_mode") == 1)
-		{
-			DebugMenu.Build();
-		}
-		else
-		{
-			VoteMenu.Build();
-		}
+		VoteMenu.Build();
 
 		while(1)
 		{

@@ -659,7 +659,6 @@ strict namespace Widgets
 				{
 					Screen.Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen.XALIGN_CENTER, Screen.YALIGN_TOP);
 
-					SetHUDClipRect(0, 0, 0, 0, int(GetWidth(id)));
 				}
 
 				SetPrevX1(id, GetX1(id));

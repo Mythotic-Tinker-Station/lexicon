@@ -21,3 +21,11 @@ CP437
 	COUNT 256
 	Template FONTA%03d
 }
+
+CP437_BIG
+{
+	BASE 0
+	FIRST 0
+	COUNT 256
+	Template FONTB%03d
+}

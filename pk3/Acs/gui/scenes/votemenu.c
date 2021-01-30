@@ -6,8 +6,7 @@ strict namespace VoteMenu
 	function void Build(void)
 	{
 		// Title
-		title = Label.Create(64.0, 32.0, "BIGFONT", "Vote");
-
+		title = Label.Create(112.0, 32.0, "CP437_BIG", "Please cast your vote:");
 		// mapset buttons
 		for(int i = 0; i < mapset_count; i++)
 		{

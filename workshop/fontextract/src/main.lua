@@ -8,18 +8,18 @@ local page =
 
 function page:init()
 
-	self.fontname 		= "FontA"
+	self.fontname 		= "FontB"
 
     self.sheet = {}
-	self.sheet.name 	= "page.png"												-- sheet filename
+	self.sheet.name 	= "page2.png"												-- sheet filename
 	self.sheet.data 	= self:loadImageData()										-- sheet image data
 	self.sheet.image 	= love.graphics.newImage(self.sheet.data)					-- sheet image object
 	self.sheet.width 	= self.sheet.data:getWidth()								-- sheet image x res
 	self.sheet.height 	= self.sheet.data:getHeight()								-- sheet image y res
 
 	self.chars 			= {}
-	self.chars.width 	= 9
-	self.chars.height 	= 16
+	self.chars.width 	= 18
+	self.chars.height 	= 32
 	self.chars.chars  	= {} -- my naming schemes are unmatched
 
 	if self.sheet.width % self.chars.width ~= 0 then error("Sheet width is not a multiple of slice width") end

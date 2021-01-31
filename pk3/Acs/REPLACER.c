@@ -4,8 +4,9 @@
 
 namespace Replacer
 {
-	// CORE39 decided it wanted to fuck everything up
-	// so i had to split these numbers from the string list to fix it.
+	// CORE39 decided it wanted to mess everything up
+	// so I had to split these numbers from the string list to fix it.
+	// (I still don't know why CORE39 did this) - Tri
 	int classlist_num[] =
 	{
 		5,	// 0

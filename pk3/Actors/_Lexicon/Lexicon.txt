@@ -382,6 +382,11 @@ Actor Lexicon_InstaKiller : DoomWeapon
     LX01 B 1 A_FireBullets(0, 0, 1, 1000000, "IKPuff")
     LX01 A 0 A_ReFire
     Goto Ready
+  AltFire:
+	LX01 B 0 A_FireBullets(0, 0, 1, 1000000, "IKPuff")
+    LX01 B 1 A_FireBullets(100, 100, 200, 1000000, "IKPuff")
+    LX01 A 0 A_ReFire
+    Goto Ready
   Spawn:
     TNT1 A -1
     Stop

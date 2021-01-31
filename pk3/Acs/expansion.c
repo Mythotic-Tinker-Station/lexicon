@@ -31,11 +31,15 @@ namespace Expansion
 		mapsets[mapset_count].acronym 			= acronym;
 		mapsets[mapset_count].name 				= getDynLangEntryEx(mapsets[mapset_count].acronym, "NAME");
 		mapsets[mapset_count].description 		= getDynLangEntryEx(mapsets[mapset_count].acronym, "DESCRIPTION");
-		mapsets[mapset_count].credits			= getDynLangEntryEx(mapsets[mapset_count].acronym, "CREDITS");
 		mapsets[mapset_count].mapcount			= getDynLangEntryEx(mapsets[mapset_count].acronym, "MAPCOUNT");
 		mapsets[mapset_count].startmap			= getDynLangEntryEx(mapsets[mapset_count].acronym, "STARTMAP");
 		mapsets[mapset_count].thumbnail			= getDynLangEntryEx(mapsets[mapset_count].acronym, "THUMBNAIL");
 		mapsets[mapset_count].id				= mapset_count;
+
+		if(mapsets[mapset_count].thumbnail == "_LANG_UNDEFINED_")
+		{
+			mapsets[mapset_count].thumbnail = "BLNKTN";
+		}
 
 		// previews
 		for(int p = 0; p < 32; p++)
@@ -47,6 +51,12 @@ namespace Expansion
 		for(int rm = 0; rm < 256; rm++)
 		{
 			mapsets[mapset_count].readme[rm]	= getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"README", d:rm));
+		}
+
+		// credits
+		for(int cr = 0; cr < 256; cr++)
+		{
+			mapsets[mapset_count].credits[cr]	= getDynLangEntryEx(mapsets[mapset_count].acronym, strparam(s:"CREDITS", d:cr));
 		}
 
 		// actor replacers

@@ -57,7 +57,6 @@ strict namespace
 		str acronym;					// mapset acronym
 		str name;						// mapset name
 		str description;				// mapset description
-		str credits;					// mapset credits
 		str mapcount;					// mapset map count
 		str startmap;					// mapset starting map name
 		str thumbnail;					// mapset ui thumbnail
@@ -65,6 +64,7 @@ strict namespace
 		str fist;						// mapset fist
 		str previews[32];				// mapset screenshots
 		str readme[256];				// mapset readme pages
+		str credits[256];				// mapset credits
 		str replacers[256][2];			// mapset actor replacers
 		str startitems[32];				// mapset start items
 		str takeitems[32];				// mapset take items

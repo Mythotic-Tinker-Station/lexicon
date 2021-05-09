@@ -88,7 +88,7 @@ strict namespace
 		#include "gui/widgets/buttons.c"
 		#include "gui/widgets/labels.c"
 		#include "gui/scenes/votemenu.c"
-		#include "replacer.c"
+		#include "REPLACER.c"
 		#include "patches.c"
 		#include "expansion.c"
 		#include "keys.c"

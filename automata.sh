@@ -29,7 +29,7 @@ GAME_PATH='./pk3'
 
 # Compile BCS Code
 chmod +x $COMPILE_PATH/bcc
-$COMPILE_PATH/bcc -acc-err-file -x bcs $GAME_PATH/acs/Lexicon.c $GAME_PATH/acs/Lexicon.o
+$COMPILE_PATH/bcc -acc-err-file -x bcs $GAME_PATH/Acs/lexicon.c $GAME_PATH/Acs/Lexicon.o
 
 # Pack game files
 cd $GAME_PATH

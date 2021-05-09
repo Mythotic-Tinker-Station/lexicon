@@ -24,7 +24,7 @@ Build URL: ${BUILD_URL}
 
 # Setting Varibles
 FILE_NAME="Lexicon"
-COMPILE_PATH='./Compiler'
+COMPILE_PATH='./compiler'
 GAME_PATH='./pk3'
 
 # Compile BCS Code

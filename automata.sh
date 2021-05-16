@@ -42,7 +42,7 @@ mv ./${FILE_NAME}.pk3 ./${FILE_NAME}_beta_build_${BUILD_NUMBER}.pk3
 
 # Copy file to the lexicon zandronum folder for server use
 
-cp ./${FILE_NAME}_beta_build_${BUILD_NUMBER}.pk3 /home/lexicon/.config/zandronum
+cp ./${FILE_NAME}_beta_build_${BUILD_NUMBER}.pk3 ~/.config/zandronum
 
 # Export varible to use in other scripts
 echo LEX_MAINFILE="${FILE_NAME}_beta_build_${BUILD_NUMBER}.pk3" >> lexmainfile

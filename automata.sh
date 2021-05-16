@@ -21,6 +21,7 @@ Build URL: ${BUILD_URL}
 "
 
 # Processing
+whoami
 
 # Setting Varibles
 FILE_NAME="Lexicon"

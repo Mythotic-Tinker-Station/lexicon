@@ -1,4 +1,4 @@
-7-Zip Extra 21.03
+7-Zip Extra 21.06
 -----------------
 
 7-Zip Extra is package of extra modules of 7-Zip. 

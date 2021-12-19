@@ -5,6 +5,33 @@ This file contains only information about changes related to that package exclus
 The full history of changes is listed in history.txt in main 7-Zip program.
 
 
+21.06          2021-11-24
+-------------------------
+- New switch -mmemuse={N}g / -mmemuse=p{N} to set a limit on memory usage (RAM) 
+  for compressing and decompressing.
+- Bug in versions 21.00-21.05 was fixed:
+  7-Zip didn't set attributes of directories during archive extracting.
+- Some bugs were fixed.
+
+
+21.04 beta     2021-11-02
+-------------------------
+- 7-Zip now reduces the number of working CPU threads for compression,
+  if RAM size is not enough for compression with big LZMA2 dictionary.
+- 7-Zip now can create and check "file.sha256" text files that contain the list 
+  of file names and SHA-256 checksums in format compatible with sha256sum program.
+	7-Zip can work with such checksum files as with archives,
+	but these files don't contain	real file data.
+  The context menu commands for command line version::
+    7z a -thash file.sha256 *.txt
+    7z t -thash file.sha256
+    7z t -thash -shd. file.sha256 
+  New -shd{dir_path} switch to set the directory that is used to check files 
+  referenced by "file.sha256" file for "Test" operation. 
+  If -shd{dir_path} is not specified, 7-Zip uses the directory where "file.sha256" is stored.  
+- New -xtd switch to exclude directory items from processing.
+
+
 21.03 beta     2021-07-20
 -------------------------
 - The maximum dictionary size for LZMA/LZMA2 compressing was increased to 4 GB (3840 MiB).

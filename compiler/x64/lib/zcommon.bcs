@@ -1568,7 +1568,6 @@ special
 -128:GetTimeProperty(int,int;bool):int,
 -129:Strftime(int,str;bool):str,
 -130:SetDeadSpectator(int,bool):bool,
--131:SetActivatorToPlayer(int):int,
 
 // ZDoom/GZDoom.
 -200:CheckClass(str):bool,

@@ -1,0 +1,479 @@
+map 94TU01 "bitter-sweet"
+{
+	titlepatch = "1994V32"
+	next = "94TU02"
+	secretnext = "94TU02"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU01"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU02 "taredone"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU03"
+	secretnext = "94TU03"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU02"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU03 "hyper-vyper"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU04"
+	secretnext = "94TU04"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU03"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU04 "hades part 1"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU05"
+	secretnext = "94TU05"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU04"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU05 "bcs01"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU06"
+	secretnext = "94TU06"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU05"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU06 "hades part 2"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU07"
+	secretnext = "94TU07"
+	sky1 = "1994SKY1"
+	cluster = 5
+	music = "D_TU06"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU07 "dead temple"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU08"
+	secretnext = "94TU08"
+	sky1 = "1994SKY1"
+	cluster = 6
+	map07special
+	music = "D_TU07"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU08 "helipad"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU09"
+	secretnext = "94TU09"
+	sky1 = "1994SKY1"
+	cluster = 6
+	music = "D_TU08"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU09 "bug hunt"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU10"
+	secretnext = "94TU10"
+	sky1 = "1994SKY1"
+	cluster = 6
+	music = "D_TU09"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU10 "melange v2"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU11"
+	secretnext = "94TU11"
+	sky1 = "1994SKY1"
+	cluster = 6
+	music = "D_TU10"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU11 "elements"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU12"
+	secretnext = "94TU12"
+	sky1 = "1994SKY1"
+	cluster = 6
+	music = "D_TU11"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU12 "rawnwood"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU13"
+	secretnext = "94TU13"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU12"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU13 "the unwilling"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU14"
+	secretnext = "94TU14"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU13"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU14 "comcon2"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU15"
+	secretnext = "94TU15"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU14"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU15 "cratebase"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU16"
+	secretnext = "94TU31"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU15"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU16 "infinity plus"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU17"
+	secretnext = "94TU17"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU16"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU17 "tunnels"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU18"
+	secretnext = "94TU18"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU17"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU18 "subway redux"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU19"
+	secretnext = "94TU19"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU18"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU19 "undersea"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU20"
+	secretnext = "94TU20"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU19"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU20 "outland"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU21"
+	secretnext = "94TU21"
+	sky1 = "1994SKY2"
+	cluster = 7
+	music = "D_TU20"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU21 "return to ultima"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU22"
+	secretnext = "94TU22"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU21"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU22 "nefarious"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU23"
+	secretnext = "94TU23"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU22"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU23 "bcs03"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU24"
+	secretnext = "94TU24"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU23"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU24 "fortified castle"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU25"
+	secretnext = "94TU25"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU24"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU25 "fort borg"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU26"
+	secretnext = "94TU26"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU25"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU26 "1 beautiful day"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU27"
+	secretnext = "94TU27"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU26"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU27 "wetworked2"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU28"
+	secretnext = "94TU28"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU27"
+	exitpic = "$INTER"
+	intermusic = "D_TUINT"
+}
+
+map 94TU28 "the nightmare"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU29"
+	secretnext = "94TU29"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU28"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU29 "the castle invaded by hell"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU30"
+	secretnext = "94TU30"
+	sky1 = "1994SKY3"
+	cluster = 8
+	music = "D_TU29"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU30 "pure evil"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "VR"
+	sky1 = "1994SKY3"
+	cluster = 8
+	allowmonstertelefrags
+	compat_soundtarget = 1
+	music = "D_TU30"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+    SuckTime = 1337
+}
+
+map 94TU31 "original sin"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU16"
+	secretnext = "94TU32"
+	sky1 = "1994SKY3"
+	cluster = 9
+	music = "D_TU31"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}
+
+map 94TU32 "cyberpie"
+{
+	enterpic = "$ENTER"
+	titlepatch = "1994V32"
+	next = "94TU16"
+	secretnext = "94TU16"
+	sky1 = "1994SKY3"
+	cluster = 10
+	music = "D_TU32"
+	exitpic = "$INTER"
+	nojump
+	nocrouch
+	intermusic = "D_TUINT"
+}

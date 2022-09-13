@@ -1,0 +1,151 @@
+map WORM01 "HILLSIDE BASE"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM02"
+	secretnext =  "WORM02"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "01KINGSA"
+	ExitPic = "LOAD01"
+	EnterPic = "LOAD01"
+	InterMusic = "00WINTER"
+	
+}
+map WORM02 "UNDERGROUND LABS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM03"
+	secretnext =  "WORM03"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "02DIMENS"
+	ExitPic = "LOAD02"
+	EnterPic = "LOAD02"
+}
+map WORM03 "FREIGHT YARD"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM04"
+	secretnext =  "WORM04"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "03FISTTO"
+	ExitPic = "LOAD03"
+	EnterPic = "LOAD03"
+}
+map WORM04 "TOTENWALD"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM05"
+	secretnext =  "WORM05"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "04BRINGE"
+	ExitPic = "LOAD04"
+	EnterPic = "LOAD04"
+}
+map WORM05 "WOLFSKUHLEN"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM06"
+	secretnext =  "WORM06"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "06PARALL"
+	ExitPic = "LOAD05"
+	EnterPic = "LOAD05"
+}
+map WORM06 "BUDBERG CRYPTS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM07"
+	secretnext =  "WORM07"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "05FLIGHT"
+	ExitPic = "LOAD06"
+	EnterPic = "LOAD06"
+}
+map WORM07 "THE PORTAL"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM08"
+	secretnext =  "WORM08"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "07THROUG"
+	ExitPic = "LOAD07"
+	EnterPic = "LOAD07"
+	Map07Special
+}
+map WORM08 "DH'AGO-BA"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM09"
+	secretnext =  "WORM09"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "08NIGHTS"
+	ExitPic = "LOAD08"
+	EnterPic = "LOAD08"
+	OutsideFog = "8D773D"
+}
+map WORM09 "WINTERLINGEN"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM10"
+	secretnext =  "WORM10"
+	sky1 = "CWSKY1"
+	cluster = 1
+	par = 30
+	music = "09ONHIGH"
+	ExitPic = "LOAD09"
+	EnterPic = "LOAD09"
+}
+map WORM10 "HELLGRINDER"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next =  "WORM11"
+	secretnext =  "WORM11"
+	sky1 = "CWSKY2"
+	cluster = 1
+	par = 30
+	music = "10SCORCH"
+	ExitPic = "LOAD10"
+	EnterPic = "LOAD10"
+	OutsideFog = "FF0000"
+	CyberdemonSpecial
+	SpecialAction_OpenDoor
+}
+map WORM11 "CREDITS"
+{
+	levelnum = 1
+	titlepatch = "WILV00"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "11DRINKF"
+	ExitPic = "LOAD11"
+	EnterPic = "LOAD11"
+    sucktime = 1337
+}

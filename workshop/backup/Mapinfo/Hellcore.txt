@@ -1,0 +1,157 @@
+map HC2_01 "on hell's horizon"
+	{
+	titlepatch = "HLCLV00"
+	next = "HC2_02"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc01"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_02 "baron streets"
+	{
+	titlepatch = "HLCLV01"
+	next = "HC2_03"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc02"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_03 "parasite dawn"
+	{
+	titlepatch = "HLCLV02"
+	next = "HC2_04"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc03"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_04 "defying the odds"
+	{
+	titlepatch = "HLCLV03"
+	next = "HC2_05"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc04"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_05 "vestibule of plague"
+	{
+	titlepatch = "HLCLV04"
+	next = "HC2_06"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc05"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_06 "limbo"
+	{
+	titlepatch = "HLCLV05"
+	next = "HC2_07"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc06"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_07 "tribulation"
+	{
+	titlepatch = "HLCLV06"
+	next = "HC2_08"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc07"
+	sky1 = "HCSKY1"
+	map07special
+	nocrouch
+	nojump
+	}
+	
+map HC2_08 "tryx 'n traps"
+	{
+	titlepatch = "HLCLV07"
+	next = "HC2_09"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc08"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_09 "hobb's end horror"
+	{
+	titlepatch = "HLCLV08"
+	next = "HC2_10"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc09"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_10 "nightmare's requiem"
+	{
+	titlepatch = "HLCLV09"
+	next = "HC2_11"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc10"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_11 "hellcore"
+	{
+	titlepatch = "HLCLV10"
+	next = "HC2_12"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc11"
+	sky1 = "HCSKY1"
+	nocrouch
+	nojump
+	}
+	
+map HC2_12 "credits"
+	{
+	titlepatch = "HLCLV11"
+	next = "VR"
+	enterpic = "HLCINT"
+	exitpic = "HLCINT"
+	intermusic = "D_HCINT"
+	music = "d_hc12"
+	sky1 = "HCSKY2"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

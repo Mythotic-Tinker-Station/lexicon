@@ -1,0 +1,955 @@
+map DCOR01 "Stratos One"
+	{
+	titlepatch = "DWILV00"
+	nojump
+	nocrouch
+	next = DCOR02
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_RUNNIN
+	intermusic = P_EVIL
+	}
+
+map DCOR02 "Silence of the Lambs"
+	{
+	titlepatch = "DWILV01"
+	nojump
+	nocrouch
+	next = DCOR03
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_STALKS
+	intermusic = P_EVIL
+	}
+
+map DCOR03 "Fortress Command"
+	{
+	titlepatch = "DWILV02"
+	nojump
+	nocrouch
+	next = DCOR04
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_COUNTD
+	intermusic = P_EVIL
+	}
+
+map DCOR04 "Locked & Loaded"
+	{
+	titlepatch = "DWILV03"
+	nojump
+	nocrouch
+	next = DCOR05
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_BETWEE
+	intermusic = P_EVIL
+	}
+
+map DCOR05 "Echoes"
+	{
+	titlepatch = "DWILV04"
+	nojump
+	nocrouch
+	next = DCOR06
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DOOM
+	intermusic = P_EVIL
+	}
+
+map DCOR06 "Kingdom Come"
+	{
+	titlepatch = "DWILV05"
+	nojump
+	nocrouch
+	next = DCOR07
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_THE_DA
+	intermusic = P_EVIL
+	}
+
+map DCOR07 "Maximum Carnage"
+	{
+	titlepatch = "DWILV06"
+	nojump
+	nocrouch
+	next = DCOR08
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	map07special
+	music = P_SHAWN
+	intermusic = P_EVIL
+	}
+
+map DCOR08 "The Flood"
+	{
+	titlepatch = "DWILV07"
+	nojump
+	nocrouch
+	next = DCOR09
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DDTBLU
+	intermusic = P_EVIL
+	}
+
+map DCOR09 "The Foxtrot"
+	{
+	titlepatch = "DWILV08"
+	nojump
+	nocrouch
+	next = DCOR10
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_IN_CIT
+	intermusic = P_EVIL
+	}
+
+map DCOR10 "Artillery Base"
+	{
+	titlepatch = "DWILV09"
+	nojump
+	nocrouch
+	next = DCOR11
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DEAD
+	intermusic = P_EVIL
+	}
+
+map DCOR11 "The Cyberstation"
+	{
+	titlepatch = "DWILV10"
+	nojump
+	nocrouch
+	next = DCOR12
+	sky1 = 	DCRSKY1
+	exitpic = dcend
+	enterpic = dcend
+	music = P_STLKS2
+	intermusic = P_EVIL
+	}
+
+map DCOR12 "The Old Abandoned Mill"
+	{
+	titlepatch = "DWILV11"
+	nojump
+	nocrouch
+	next = DCOR13
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_THEDA2
+	intermusic = P_EVIL
+	}
+
+map DCOR13 "Subterranean Suburbs"
+	{
+	titlepatch = "DWILV12"
+	nojump
+	nocrouch
+	next = DCOR14
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DOOM2
+	intermusic = P_EVIL
+	}
+
+map DCOR14 "Magnum Opus"
+	{
+	titlepatch = "DWILV13"
+	nojump
+	nocrouch
+	next = DCOR15
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DDTBL2
+	intermusic = P_EVIL
+	}
+
+map DCOR15 "Toxic Wastelands"
+	{
+	titlepatch = "DWILV14"
+	nojump
+	nocrouch
+	next = DCOR16
+	secretnext = DCOR31
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_RUNNI2
+	intermusic = P_EVIL
+	}
+
+map DCOR16 "Fistful of Lead"
+	{
+	titlepatch = "DWILV15"
+	nojump
+	nocrouch
+	next = DCOR17
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DEAD2
+	intermusic = P_EVIL
+	}
+
+map DCOR17 "Spire of A Dove"
+	{
+	titlepatch = "DWILV16"
+	nojump
+	nocrouch
+	next = DCOR18
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_STLKS3
+	intermusic = P_EVIL
+	}
+
+map DCOR18 "Fueling Docks"
+	{
+	titlepatch = "DWILV17"
+	nojump
+	nocrouch
+	next = DCOR19
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_ROMERO
+	intermusic = P_EVIL
+	}
+
+map DCOR19 "Mountain Stronghold"
+	{
+	titlepatch = "DWILV18"
+	nojump
+	nocrouch
+	next = DCOR20
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_SHAWN2
+	intermusic = P_EVIL
+	}
+
+map DCOR20 "Core Babylon"
+	{
+	titlepatch = "DWILV19"
+	nojump
+	nocrouch
+	next = DCOR21
+	sky1 = DCRSKY2
+	exitpic = dcend
+	enterpic = dcend
+	music = P_MESSAG
+	intermusic = P_EVIL
+	}
+
+map DCOR21 "Remembered Fear"
+	{
+	titlepatch = "DWILV20"
+	nojump
+	nocrouch
+	next = DCOR22
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_COUNT2
+	intermusic = P_EVIL
+	}
+
+map DCOR22 "Gehenna"
+	{
+	titlepatch = "DWILV21"
+	nojump
+	nocrouch
+	next = DCOR23
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_DDTBL3
+	intermusic = P_EVIL
+	}
+
+map DCOR23 "Nexus"
+	{
+	titlepatch = "DWILV22"
+	nojump
+	nocrouch
+	next = DCOR24
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_AMPIE
+	intermusic = P_EVIL
+	}
+
+map DCOR24 "Beyond The Firestorm"
+	{
+	titlepatch = "DWILV23"
+	nojump
+	nocrouch
+	next = DCOR25
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_THEDA3
+	intermusic = P_EVIL
+	}
+
+map DCOR25 "Stormfall"
+	{
+	titlepatch = "DWILV24"
+	nojump
+	nocrouch
+	next = DCOR26
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_ADRIAN
+	intermusic = P_EVIL
+	}
+
+map DCOR26 "Anastas' Pledge"
+	{
+	titlepatch = "DWILV25"
+	nojump
+	nocrouch
+	next = DCOR27
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_MESSG2
+	intermusic = P_EVIL
+	}
+
+map DCOR27 "Walkway"
+	{
+	titlepatch = "DWILV26"
+	nojump
+	nocrouch
+	next = DCOR28
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_ROMER2
+	intermusic = P_EVIL
+	}
+
+map DCOR28 "Unknown"
+	{
+	titlepatch = "DWILV27"
+	nojump
+	nocrouch
+	next = DCOR29
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_TENSE
+	intermusic = P_EVIL
+	}
+
+map DCOR29 "The Gutterway"
+	{
+	titlepatch = "DWILV28"
+	nojump
+	nocrouch
+	next = DCOR30
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_SHAWN3
+	intermusic = P_EVIL
+	}
+
+map DCOR30 "Frontiers"
+	{
+	titlepatch = "DWILV29"
+	nojump
+	nocrouch
+	next = DCOR33
+	secretnext = DCOR33
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	allowmonstertelefrags
+	music = P_OPENIN
+	intermusic = P_EVIL
+	}
+
+map DCOR31 "Dreamscape"
+	{
+	titlepatch = "DWILV30"
+	nojump
+	nocrouch
+	next = DCOR16
+	secretnext = DCOR32
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_EVIL
+	intermusic = P_EVIL
+	}
+
+map DCOR32 "Like A Fist"
+	{
+	titlepatch = "DWILV31"
+	nojump
+	nocrouch
+	next = DCOR16
+	sky1 = DCRSKY3
+	exitpic = dcend
+	enterpic = dcend
+	music = P_ULTIMA
+	intermusic = P_EVIL
+	}
+
+map DCOR33 "Stratos Gate"
+	{
+	titlepatch = "DWILV32"
+	nojump
+	nocrouch
+	next = DCOR34
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M1
+	}
+
+map DCOR34 "Soldier's Stand"
+	{
+	titlepatch = "DWILV33"
+	nojump
+	nocrouch
+	next = DCOR35
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M2
+	}
+
+map DCOR35 "The Cup of Wrath"
+	{
+	titlepatch = "DWILV34"
+	nojump
+	nocrouch
+	next = DCOR36
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M3
+	}
+
+map DCOR36 "Divine Judgement"
+	{
+	titlepatch = "DWILV35"
+	nojump
+	nocrouch
+	next = DCOR37
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M4
+	}
+
+map DCOR37 "Substance"
+	{
+	titlepatch = "DWILV36"
+	nojump
+	nocrouch
+	next = DCOR38
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M5
+	}
+
+map DCOR38 "Sledgehammer"
+	{
+	titlepatch = "DWILV37"
+	nojump
+	nocrouch
+	next = DCOR39
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M6
+	}
+
+map DCOR39 "Lazarus"
+	{
+	titlepatch = "DWILV38"
+	nojump
+	nocrouch
+	next = DCOR40
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	map07special
+	music = P_E1M7
+	}
+
+map DCOR40 "Triplet II"
+	{
+	titlepatch = "DWILV39"
+	nojump
+	nocrouch
+	next = DCOR41
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M8
+	}
+
+map DCOR41 "Fracture"
+	{
+	titlepatch = "DWILV40"
+	nojump
+	nocrouch
+	next = DCOR42
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E1M9
+	}
+
+map DCOR42 "The Tech Towers"
+	{
+	titlepatch = "DWILV41"
+	nojump
+	nocrouch
+	next = DCOR43
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M1
+	}
+
+map DCOR43 "Hello, Cybie!"
+	{
+	titlepatch = "DWILV42"
+	nojump
+	nocrouch
+	next = DCOR44
+	sky1 = DCRSKY4
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M2
+	}
+
+map DCOR44 "Armageddon Valley"
+	{
+	titlepatch = "DWILV43"
+	nojump
+	nocrouch
+	next = DCOR45
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M3
+	}
+
+map DCOR45 "Stronghold Earth"
+	{
+	titlepatch = "DWILV44"
+	nojump
+	nocrouch
+	next = DCOR46
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M4
+	}
+
+map DCOR46 "Tyranny"
+	{
+	titlepatch = "DWILV45"
+	nojump
+	nocrouch
+	next = DCOR47
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M5
+	}
+
+map DCOR47 "Blade Runner"
+	{
+	titlepatch = "DWILV46"
+	nojump
+	nocrouch
+	next = DCOR48
+	secretnext = DCOR63
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M6
+	}
+
+map DCOR48 "Dark Zone"
+	{
+	titlepatch = "DWILV47"
+	nojump
+	nocrouch
+	next = DCOR49
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M7
+	}
+
+map DCOR49 "Fatality"
+	{
+	titlepatch = "DWILV48"
+	nojump
+	nocrouch
+	next = DCOR50
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M8
+	}
+
+map DCOR50 "Sleeping Spirits"
+	{
+	titlepatch = "DWILV49"
+	nojump
+	nocrouch
+	next = DCOR51
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E2M9
+	}
+
+map DCOR51 "Dusk Town"
+	{
+	titlepatch = "DWILV50"
+	nojump
+	nocrouch
+	next = DCOR52
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M1
+	}
+
+map DCOR52 "One Such Reverie"
+	{
+	titlepatch = "DWILV51"
+	nojump
+	nocrouch
+	next = DCOR53
+	sky1 = DCRSKY5
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M2
+	}
+
+map DCOR53 "Sunrise"
+	{
+	titlepatch = "DWILV52"
+	nojump
+	nocrouch
+	next = DCOR54
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M3
+	}
+
+map DCOR54 "Egyptian Plains"
+	{
+	titlepatch = "DWILV53"
+	nojump
+	nocrouch
+	next = DCOR55
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M4
+	}
+
+map DCOR55 "Cyclone Rider"
+	{
+	titlepatch = "DWILV54"
+	nojump
+	nocrouch
+	next = DCOR56
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M5
+	}
+
+map DCOR56 "Sewer System"
+	{
+	titlepatch = "DWILV55"
+	nojump
+	nocrouch
+	next = DCOR57
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M6
+	}
+
+map DCOR57 "Sever Tomorrow"
+	{
+	titlepatch = "DWILV56"
+	nojump
+	nocrouch
+	next = DCOR58
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M7
+	}
+
+map DCOR58 "Fallen Angel"
+	{
+	titlepatch = "DWILV57"
+	nojump
+	nocrouch
+	next = DCOR59
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M8
+	}
+
+map DCOR59 "Godspeed!"
+	{
+	titlepatch = "DWILV58"
+	nojump
+	nocrouch
+	next = DCOR60
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E3M9
+	}
+
+map DCOR60 "Turbine Accelerator"
+	{
+	titlepatch = "DWILV59"
+	nojump
+	nocrouch
+	next = DCOR61
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E4M1
+	}
+
+map DCOR61 "Salvation"
+	{
+	titlepatch = "DWILV60"
+	nojump
+	nocrouch
+	next = DCOR62
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E4M2
+	}
+
+map DCOR62 "Final Doom"
+	{
+	titlepatch = "DWILV61"
+	nojump
+	nocrouch
+	next = DCOR63
+	secretnext = DCOR63
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E4M3
+	}
+
+map DCOR63 "Metal Mansion"
+	{
+	titlepatch = "DWILV62"
+	nojump
+	nocrouch
+	next = DCOR64
+	secretnext = DCOR64
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E4M4
+	}
+
+map DCOR64 "Deadlock"
+	{
+	titlepatch = "DWILV63"
+	nojump
+	nocrouch
+	next = DCOR48
+	sky1 = 	DCRSKY1
+	exitpic = revinter
+	enterpic = revinter
+	music = P_E4M5
+	}
+
+map DCOR65 "East Mezzanine Way"
+	{
+	titlepatch = "DWILV64"
+	nojump
+	nocrouch
+	next = DCOR66
+	sky1 = DCRSKY5
+	music = P_E4M6
+	intermusic = P_E5M7
+	}
+
+map DCOR66 "Stratos Headquarters"
+	{
+	titlepatch = "DWILV65"
+	nojump
+	nocrouch
+	next = DCOR67
+	sky1 = DCRSKY5
+	music = P_E4M7
+	intermusic = P_E5M7
+	}
+
+map DCOR67 "Ancient Mining Technology"
+	{
+	titlepatch = "DWILV66"
+	nojump
+	nocrouch
+	next = DCOR68
+	sky1 = DCRSKY5
+	music = P_E4M8
+	intermusic = P_E5M7
+	}
+
+map DCOR68 "Outpost of The Silent Gravestone"
+	{
+	titlepatch = "DWILV67"
+	nojump
+	nocrouch
+	next = DCOR69
+	sky1 = DCRSKY5
+	music = P_E4M9
+	intermusic = P_E5M7
+	}
+
+map DCOR69 "Beelzebub's Fungus Attic"
+	{
+	titlepatch = "DWILV68"
+	nojump
+	nocrouch
+	next = DCOR70
+	sky1 = DCRSKY5
+	music = P_E5M1
+	intermusic = P_E5M7
+	}
+
+map DCOR70 "Amongst The Deadly Water Chasm"
+	{
+	titlepatch = "DWILV69"
+	nojump
+	nocrouch
+	next = DCOR71
+	sky1 = DCRSKY5
+	music = P_EVIL
+	intermusic = P_E5M7
+	}
+
+map DCOR71 "Trail of Twenty-Four Riddles"
+	{
+	titlepatch = "DWILV70"
+	nojump
+	nocrouch
+	next = DCOR72
+	sky1 = DCRSKY5
+	map07special
+	music = P_E5M2
+	intermusic = P_E5M7
+	}
+
+map DCOR72 "Ion Station"
+	{
+	titlepatch = "DWILV71"
+	nojump
+	nocrouch
+	next = DCOR73
+	sky1 = DCRSKY5
+	music = P_ROMERO
+	intermusic = P_E5M7
+	}
+
+map DCOR73 "To Whom They Forsook"
+	{
+	titlepatch = "DWILV72"
+	nojump
+	nocrouch
+	next = DCOR74
+	sky1 = DCRSKY5
+	music = P_E5M3
+	intermusic = P_E5M7
+	}
+
+map DCOR74 "Excursions"
+	{
+	nojump
+	nocrouch
+	titlepatch = "DWILV73"
+	next = DCOR75
+	sky1 = DCRSKY5
+	music = P_E5M4
+	intermusic = P_E5M7
+	}
+
+map DCOR75 "The Last Stand"
+	{
+	titlepatch = "DWILV74"
+	nojump
+	nocrouch
+	next = DCOR76
+	sky1 = DCRSKY5
+	music = P_E5M5
+	intermusic = P_E5M7
+	}
+
+map DCOR76 "Tribute"
+	{
+	titlepatch = "DWILV75"
+	nojump
+	nocrouch
+	next = DCOR77
+	sky1 = DCRSKY5
+	music = P_E5M6
+	intermusic = P_E5M7
+	}
+
+map DCOR77 "Terrace View"
+	{
+	titlepatch = "DWILV76"
+	nojump
+	nocrouch
+	next = "VR"
+    secretnext = "VR"
+	music = P_E5M6
+	sky1 = DCRSKY5
+	music = P_DEAD2
+	intermusic = P_E5M7
+    SuckTime = 1337
+	}

@@ -1,0 +1,432 @@
+map SOD_01 "First Blood"
+	{
+	titlepatch = "SODTP00"
+	next = "SOD_02"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod01"
+	nocrouch
+	nojump
+	}
+	
+map SOD_02 "Mysterious Cove"
+	{
+	titlepatch = "SODTP01"
+	next = "SOD_03"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod02"
+	nocrouch
+	nojump
+	}
+	
+map SOD_03 "Constrained Base"
+	{
+	titlepatch = "SODTP02"
+	next = "SOD_04"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod03"
+	nocrouch
+	nojump
+	}
+	
+map SOD_04 "Sedgemire"
+	{
+	titlepatch = "SODTP03"
+	next = "SOD_05"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod04"
+	nocrouch
+	nojump
+	}
+	
+map SOD_05 "Cliffside Siege"
+	{
+	titlepatch = "SODTP04"
+	next = "SOD_06"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod05"
+	nocrouch
+	nojump
+	}
+	
+map SOD_06 "Dreamscape"
+	{
+	titlepatch = "SODTP05"
+	next = "SOD_07"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod06"
+	nocrouch
+	nojump
+	}
+	
+map SOD_07 "Simple Prison-yard"
+	{
+	titlepatch = "SODTP06"
+	next = "SOD_08"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod07"
+	map07special
+	nocrouch
+	nojump
+	}
+	
+map SOD_08 "Frenetic"
+	{
+	titlepatch = "SODTP07"
+	next = "SOD_09"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod08"
+	nocrouch
+	nojump
+	}
+	
+map SOD_09 "Depredation"
+	{
+	titlepatch = "SODTP08"
+	next = "SOD_10"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod09"
+	nocrouch
+	nojump
+	}
+	
+map SOD_10 "Vile Pain"
+	{
+	titlepatch = "SODTP09"
+	next = "SOD_11"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod10"
+	nocrouch
+	nojump
+	}
+	
+map SOD_11 "Transcension"
+	{
+	titlepatch = "SODTP10"
+	next = "SOD_12"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY1"
+	music = "d_sod11"
+	nocrouch
+	nojump
+	}
+	
+map SOD_12 "The Meat Grinder"
+	{
+	titlepatch = "SODTP11"
+	next = "SOD_13"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod12"
+	nocrouch
+	nojump
+	}
+	
+map SOD_13 "Lucifer's Tears"
+	{
+	titlepatch = "SODTP12"
+	next = "SOD_14"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod13"
+	nocrouch
+	nojump
+	}
+	
+map SOD_14 "Sledge"
+	{
+	titlepatch = "SODTP13"
+	next = "SOD_15"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod14"
+	nocrouch
+	nojump
+	}
+	
+map SOD_15 "Descent to Core"
+	{
+	titlepatch = "SODTP14"
+	next = "SOD_16"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	secretnext = "SOD_31"
+	sky1 = "SODRSKY2"
+	music = "d_sod15"
+	nocrouch
+	nojump
+	}
+	
+map SOD_16 "The Core"
+	{
+	titlepatch = "SODTP15"
+	next = "SOD_17"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod16"
+	nocrouch
+	nojump
+	}
+	
+map SOD_17 "The Shrine"
+	{
+	titlepatch = "SODTP16"
+	next = "SOD_18"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod17"
+	nocrouch
+	nojump
+	}
+	
+map SOD_18 "Silent Hour"
+	{
+	titlepatch = "SODTP17"
+	next = "SOD_19"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod18"
+	nocrouch
+	nojump
+	}
+	
+map SOD_19 "Impure Serenity"
+	{
+	titlepatch = "SODTP18"
+	next = "SOD_20"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod19"
+	nocrouch
+	nojump
+	}
+	
+map SOD_20 "The Path to Hell"
+	{
+	titlepatch = "SODTP19"
+	next = "SOD_21"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY2"
+	music = "d_sod20"
+	nocrouch
+	nojump
+	}
+	
+map SOD_21 "Resurrection"
+	{
+	titlepatch = "SODTP20"
+	next = "SOD_22"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod21"
+	nocrouch
+	nojump
+	}
+	
+map SOD_22 "Dead Echo"
+	{
+	titlepatch = "SODTP21"
+	next = "SOD_23"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod22"
+	nocrouch
+	nojump
+	}
+	
+map SOD_23 "Poison Ivy II"
+	{
+	titlepatch = "SODTP22"
+	next = "SOD_24"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod23"
+	nocrouch
+	nojump
+	}
+	
+map SOD_24 "Hell's Honeycomb"
+	{
+	titlepatch = "SODTP23"
+	next = "SOD_25"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod24"
+	nocrouch
+	nojump
+	}
+	
+map SOD_25 "Death's Nocturne"
+	{
+	titlepatch = "SODTP24"
+	next = "SOD_26"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod25"
+	nocrouch
+	nojump
+	}
+	
+map SOD_26 "Blessed Hellscape"
+	{
+	titlepatch = "SODTP25"
+	next = "SOD_27"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod26"
+	nocrouch
+	nojump
+	}
+	
+map SOD_27 "Hais Temple"
+	{
+	titlepatch = "SODTP26"
+	next = "SOD_28"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod27"
+	nocrouch
+	nojump
+	}
+	
+map SOD_28 "Twilight Massacre"
+	{
+	titlepatch = "SODTP27"
+	next = "SOD_29"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod28"
+	nocrouch
+	nojump
+	}
+	
+map SOD_29 "The Ruins of Kalnik"
+	{
+	titlepatch = "SODTP28"
+	next = "SOD_30"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod29"
+	nocrouch
+	nojump
+	}
+	
+map SOD_30 "Darkness Without End"
+	{
+	titlepatch = "SODTP29"
+	next = "SOD_33"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod30"
+	nocrouch
+	nojump
+	}
+	
+map SOD_31 "1010011010"
+	{
+	titlepatch = "SODTP30"
+	next = "SOD_16"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	secretnext = "SOD_32"
+	sky1 = "SODRSKY3"
+	music = "d_sod31"
+	nocrouch
+	nojump
+	}
+	
+map SOD_32 "The Pyramid of Death"
+	{
+	titlepatch = "SODTP31"
+	next = "SOD_16"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod32"
+	nocrouch
+	nojump
+	}
+	
+map SOD_33 "Descent to Nowhere"
+	{
+	titlepatch = "SODTP32"
+	next = "VR"
+	enterpic = "SODINT"
+	exitpic = "SODINT"
+	intermusic = "D_SODINT"
+	sky1 = "SODRSKY3"
+	music = "d_sod33"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}

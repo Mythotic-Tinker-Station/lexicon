@@ -1,0 +1,503 @@
+
+
+map BTSX01 lookup "Back to Saturn X Radio Report"
+{
+	titlepatch = "BX1LV00"
+	next = "BTSX02"
+	secretnext = "BTSX02"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX01"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+}
+
+map BTSX02 lookup "Postal Blowfish"
+{
+	titlepatch = "BX1LV01"
+	next = "BTSX03"
+	secretnext = "BTSX03"
+	sky1 = "BX1SKY1"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	music = "D_BTSX02"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+
+	par = 0
+	nojump
+	nocrouch
+
+
+}
+
+map BTSX03 lookup "The Room Taking Shape"
+{
+	titlepatch = "BX1LV02"
+	next = "BTSX04"
+	secretnext = "BTSX04"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX03"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX04 lookup "A Good Flying Bird"
+{
+	titlepatch = "BX1LV03"
+	next = "BTSX05"
+	secretnext = "BTSX05"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX04"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX05 lookup "Total Exposure"
+{
+	titlepatch = "BX1LV04"
+	next = "BTSX06"
+	secretnext = "BTSX06"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX05"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX06 lookup "Mix Up The Satellite"
+{
+	titlepatch = "BX1LV05"
+	next = "BTSX07"
+	secretnext = "BTSX07"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	sucktime = 1
+	music = "D_BTSX06"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX07 lookup "Metal Mothers"
+{
+	titlepatch = "BX1LV06"
+	next = "BTSX08"
+	secretnext = "BTSX08"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	map07special
+	music = "D_BTSX07"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX08 lookup "Get Out Of My Stations I"
+{
+	titlepatch = "BX1LV07"
+	next = "BTSX09"
+	secretnext = "BTSX09"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX08"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX09 lookup "Some Drilling Implied"
+{
+	titlepatch = "BX1LV08"
+	next = "BTSX10"
+	secretnext = "BTSX10"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX09"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX10 lookup "A Proud And Booming Industry"
+{
+	titlepatch = "BX1LV09"
+	next = "BTSX11"
+	secretnext = "BTSX11"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX10"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX11 lookup "The Colossus Crawls West"
+{
+	titlepatch = "BX1LV10"
+	next = "BTSX12"
+	secretnext = "BTSX12"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX11"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX12 lookup "Underground Initiations"
+{
+	titlepatch = "BX1LV11"
+	next = "BTSX13"
+	secretnext = "BTSX13"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX12"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX13 lookup "I'll Replace You With Machines"
+{
+	titlepatch = "BX1LV12"
+	next = "BTSX14"
+	secretnext = "BTSX14"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX13"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX14 lookup "Big Chief Chinese Restaurant"
+{
+	titlepatch = "BX1LV13"
+	next = "BTSX15"
+	secretnext = "BTSX15"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX14"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX15 lookup "Tricyclic Looper"
+{
+	titlepatch = "BX1LV14"
+	next = "BTSX16"
+	secretnext = "BTSX31"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX15"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX16 lookup "Get Out Of My Stations II"
+{
+	titlepatch = "BX1LV15"
+	next = "BTSX17"
+	secretnext = "BTSX17"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX16"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX17 lookup "Navigating Flood Regions"
+{
+	titlepatch = "BX1LV16"
+	next = "BTSX18"
+	secretnext = "BTSX18"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX17"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX18 lookup "Cyclone Utilities (Remember Your Birthday)"
+{
+	titlepatch = "BX1LV17"
+	next = "BTSX19"
+	secretnext = "BTSX19"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX18"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX19 lookup "Bingo Pool Hall Of Blood"
+{
+	titlepatch = "BX1LV18"
+	next = "BTSX20"
+	secretnext = "BTSX20"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX19"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX20 lookup "U.S. Mustard Company"
+{
+	titlepatch = "BX1LV19"
+	next = "BTSX21"
+	secretnext = "BTSX21"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX20"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX21 lookup "Failed Experiments and Trashed Aircraft"
+{
+	titlepatch = "BX1LV20"
+	next = "BTSX22"
+	secretnext = "BTSX22"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX21"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX22 lookup "Gonna Never Have To Die"
+{
+	titlepatch = "BX1LV21"
+	next = "BTSX23"
+	secretnext = "BTSX23"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX22"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX23 lookup "Get Out Of My Stations III"
+{
+	titlepatch = "BX1LV22"
+	next = "BTSX24"
+	secretnext = "BTSX24"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX23"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+
+
+
+}
+
+map BTSX24 lookup "Tough Skin River"
+{
+	titlepatch = "BX1LV23"
+	next = "BTSX25"
+	secretnext = "BTSX25"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX24"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1337
+	par = 0
+	nojump
+	nocrouch
+}
+
+map BTSX25 lookup "The Unsinkable Fats Domino"
+{
+	titlepatch = "BX1LV24"
+	next = "VR"
+	secretnext = "VR"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX25"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1337
+	par = 0
+	nojump
+	nocrouch
+}
+
+map BTSX31 lookup "Optical Hopscotch"
+{
+	titlepatch = "BX1LV30"
+	next = "BTSX16"
+	secretnext = "BTSX32"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX31"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+}
+
+map BTSX32 lookup "The Hard Way"
+{
+	titlepatch = "BX1LV31"
+	next = "BTSX16"
+	secretnext = "BTSX16"
+	ExitPic = "BX1LV33"
+	EnterPic = "BX1LV33"
+	sky1 = "BX1SKY1"
+	music = "D_BTSX32"
+	InterMusic = "D_BTSXIN"
+	sucktime = 1
+	par = 0
+	nojump
+	nocrouch
+}

@@ -1,0 +1,1 @@
+start Love2D/love.exe "src"

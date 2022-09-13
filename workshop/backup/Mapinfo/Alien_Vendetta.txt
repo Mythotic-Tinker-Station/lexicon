@@ -1,0 +1,421 @@
+map av__01 "Sunset"
+	{
+	titlepatch = "AVTPX00"
+	next = "av__02"
+	music = "d_av01"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+
+map av__02 "Rusty Rage"
+	{
+	titlepatch = "AVTPX01"
+	next = "av__03"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av02"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+
+map av__03 "Cargo Depot"
+	{
+	titlepatch = "AVTPX02"
+	next = "av__04"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av03"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__04 "Seclusion"
+	{
+	titlepatch = "AVTPX03"
+	next = "av__05"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av04"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__05 "Crimson Tide"
+	{
+	titlepatch = "AVTPX04"
+	next = "av__06"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av05"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__06 "hillside Siege"
+	{
+	titlepatch = "AVTPX05"
+	next = "av__07"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av06"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__07 "Showdown"
+	{
+	titlepatch = "AVTPX06"
+	next = "av__08"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av07"
+	sky1 = "AVRSKY1"
+	Map07Special
+	compat_shorttex = 1
+	nocrouch
+	nojump
+	}
+	
+map av__08 "Beast Island"
+	{
+	titlepatch = "AVTPX07"
+	next = "av__09"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av08"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__09 "Castle Gardens"
+	{
+	titlepatch = "AVTPX08"
+	next = "av__10"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av09"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__10 "Toxic Touch"
+	{
+	titlepatch = "AVTPX09"
+	next = "av__11"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av10"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+
+map av__11 "Nemesis"
+	{
+	titlepatch = "AVTPX10"
+	next = "av__12"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av11"
+	sky1 = "AVRSKY1"
+	nocrouch
+	nojump
+	}
+	
+map av__12 "Entropy"
+	{
+	titlepatch = "AVTPX11"
+	next = "av__13"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av12"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+
+map av__13 "Suicidal Tendencies"
+	{
+	titlepatch = "AVTPX12"
+	next = "av__14"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av13"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+
+map av__14 "Overwhelming odds"
+	{
+	titlepatch = "AVTPX13"
+	next = "av__15"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av14"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__15 "Bulls on Parade"
+	{
+	titlepatch = "AVTPX14"
+	next = "av__16"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	secretnext = "av__31"
+	music = "d_av15"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__16 "Mutual Destruction"
+	{
+	titlepatch = "AVTPX15"
+	next = "av__17"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av16"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__17 "Nukefall"
+	{
+	titlepatch = "AVTPX16"
+	next = "av__18"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av17"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__18 "Lake Poison"
+	{
+	titlepatch = "AVTPX17"
+	next = "av__19"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av18"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__19 "Alien Ressurection"
+	{
+	titlepatch = "AVTPX18"
+	next = "av__20"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av19"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__20 "Misri Halek"
+	{
+	titlepatch = "AVTPX19"
+	next = "av__21"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av20"
+	sky1 = "AVRSKY2"
+	nocrouch
+	nojump
+	}
+	
+map av__21 "One Flew Over the Cacos Nest"
+	{
+	titlepatch = "AVTPX20"
+	next = "av__22"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av21"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map av__22 "Rubicon"
+	{
+	titlepatch = "AVTPX21"
+	next = "av__23"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av22"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+
+map av__23 "Blood Sacrifice"
+	{
+	titlepatch = "AVTPX22"
+	next = "av__24"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av23"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+	
+map av__24 "Clandistine Complex"
+	{
+	titlepatch = "AVTPX23"
+	next = "av__25"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av24"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map av__25 "Demonic Hordes"
+	{
+	titlepatch = "AVTPX24"
+	next = "av__26"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av25"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+
+map av__26 "Dark Dome"
+	{
+	titlepatch = "AVTPX25"
+	next = "av__27"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av26"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map av__27 "Stench of Evil"
+	{
+	titlepatch = "AVTPX26"
+	next = "av__28"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av27"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+
+map av__28 "Whispering Shadows"
+	{
+	titlepatch = "AVTPX27"
+	next = "av__29"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av28"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+
+map av__29 "Fire Walk with Me"
+	{
+	titlepatch = "AVTPX28"
+	next = "av__30"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av29"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map av__30 "Point Dreadful"
+	{
+	titlepatch = "AVTPX29"
+	next = "VR"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av30"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map av__31 "Killer Colours"
+	{
+	titlepatch = "AVTPX30"
+	next = "av__16"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	secretnext = "av__32"
+	music = "d_av31"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}
+	
+map av__32 "No Guts No Glory"
+	{
+	titlepatch = "AVTPX31"
+	next = "av__16"
+	enterpic = "AVINT"
+	exitpic = "AVINT"
+	intermusic = "D_AVINT"
+	music = "d_av32"
+	sky1 = "AVRSKY3"
+	nocrouch
+	nojump
+	}

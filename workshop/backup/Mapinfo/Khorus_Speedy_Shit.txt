@@ -1,0 +1,355 @@
+map KSS_01 "One"
+	{
+	nocrouch
+	next = "KSS_02"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS01"
+	}
+	
+map KSS_02 "Two"
+	{
+	nocrouch
+	next = "KSS_03"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS02"
+	}
+	
+map KSS_03 "Three"
+	{
+	nocrouch
+	next = "KSS_04"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS03"
+	}
+	
+map KSS_04 "Four"
+	{
+	nocrouch
+	next = "KSS_05"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS04"
+	}
+	
+map KSS_05 "Five"
+	{
+	nocrouch
+	next = "KSS_06"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS05"
+	}
+	
+map KSS_06 "Six"
+	{
+	nocrouch
+	next = "KSS_07"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS06"
+	}
+
+map KSS_07 "Seven"
+	{
+	nocrouch
+	next = "KSS_08"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS07"
+	map07special
+	}
+	
+map KSS_08 "Eight"
+	{
+	nocrouch
+	next = "KSS_09"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS08"
+	}
+	
+map KSS_09 "Nine"
+	{
+	nocrouch
+	next = "KSS_10"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS09"
+	}
+	
+map KSS_10 "Ten"
+	{
+	nocrouch
+	next = "KSS_11"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS10"
+	}
+	
+map KSS_11 "Eleven"
+	{
+	nocrouch
+	next = "KSS_12"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS11"
+	}
+	
+map KSS_12 "Twelve"
+	{
+	nocrouch
+	next = "KSS_13"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS12"
+	}
+	
+map KSS_13 "Thirteen"
+	{
+	next = "KSS_14"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS13"
+	nocrouch
+	}
+	
+map KSS_14 "Fourteen"
+	{
+	next = "KSS_15"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS14"
+	nocrouch
+	}
+	
+map KSS_15 "Fifthteen"
+	{
+	nocrouch
+	next = "KSS_16"
+	secretnext = "KSS_31"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS15"
+	}
+	
+map KSS_16 "Sixteen"
+	{
+	nocrouch
+	next = "KSS_17"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS16"
+	}
+	
+map KSS_17 "Seventeen"
+	{
+	nocrouch
+	next = "KSS_18"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS17"
+	}
+	
+map KSS_18 "Eighteen"
+	{
+	nocrouch
+	next = "KSS_19"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS18"
+	}
+	
+map KSS_19 "Nineteen"
+	{
+	nocrouch
+	next = "KSS_20"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS19"
+	}
+	
+map KSS_20 "Twenty"
+	{
+	nocrouch
+	next = "KSS_21"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS20"
+	}
+
+map KSS_21 "Twenty-One"
+	{
+	nocrouch
+	next = "KSS_22"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS21"
+	}
+	
+map KSS_22 "Twenty-Two"
+	{
+	nocrouch
+	next = "KSS_23"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS22"
+	}
+	
+map KSS_23 "Twenty-Three"
+	{
+	nocrouch
+	next = "KSS_24"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS23"
+	}
+	
+map KSS_24 "Twenty-Four"
+	{
+	nocrouch
+	next = "KSS_25"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS24"
+	}
+	
+map KSS_25 "Twenty-Five"
+	{
+	nocrouch
+	next = "KSS_26"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS25"
+	}
+	
+map KSS_26 "Twenty-Six"
+	{
+	nocrouch
+	next = "KSS_27"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS26"
+	}
+	
+map KSS_27 "Twenty-Seven"
+	{
+	nocrouch
+	next = "KSS_28"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS27"
+	}
+	
+map KSS_28 "Twenty-Eight"
+	{
+	nocrouch
+	next = "KSS_29"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS28"
+	}
+	
+map KSS_29 "Twenty-Nine"
+	{
+	nocrouch
+	next = "KSS_30"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS29"
+	}
+	
+map KSS_30 "Thirty"
+	{
+	nocrouch
+	next = "VR"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	Sky1 = sky1
+	nojump
+	music = "D_KSS30"
+    SuckTime = 1337
+	}
+	
+map KSS_31 "Secret One"
+	{
+	nocrouch
+	next = "KSS_16"
+	secretnext = "KSS_32"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	sky1 = sky1
+	nojump
+	music = "D_KSS31"
+	}
+	
+map KSS_32 "Secret Two"
+	{
+	nocrouch
+	next = "KSS_16"
+	enterpic = "KSSHT"
+	exitpic = "KSSHT"
+	sky1 = sky1
+	nojump
+	music = "D_KSS32"
+	}

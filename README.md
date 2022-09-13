@@ -153,5 +153,9 @@ Feel free to use the tracker on here. You can also join our discord at https://d
 - Quzar of Sanxion
 - Deathman27
 
+### BigFont Edit
+- ID Software
+- Undead and others: https://forum.zdoom.org/viewtopic.php?f=37&t=63714
+- Modified by Tribeam
 
 **Note** - These credits are cut down. More detailed version appears ingame and in the LCREDITS texture in the textures/lexicon folder

@@ -3,12 +3,14 @@
 *.dbs
 *.err
 *.bak
-desktop.ini
+*.lnk
 *.ico
+desktop.ini
 Test-Lexicon.bat
 TextureStore
 FlatsStore
 StagingArea
 doom.wad
 doom2.wad
-run.bat
+run.*
+runmod.*

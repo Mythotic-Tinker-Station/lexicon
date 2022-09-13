@@ -1,0 +1,7 @@
+# top-most EditorConfig file
+root = true
+
+# Browsers show tabs as 8 spaces, however we use 4 spaces for programming
+# So lets have github view our repository as 4 instead of 8
+[*]
+indent_size = 4

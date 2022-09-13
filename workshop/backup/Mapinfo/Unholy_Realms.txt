@@ -1,0 +1,419 @@
+map UR__01 "Water Treatment"
+	{
+	next = "UR__02"
+	sky1 = URSKY1
+	titlepatch = URILV00
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr01
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__02 "Storage"
+	{
+	next = "UR__03"
+	sky1 = URSKY1
+	titlepatch = URILV01
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr02
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__03 "Nukage Factory Zone"
+	{
+	next = "UR__04"
+	sky1 = URSKY1
+	titlepatch = URILV02
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr03
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__04 "Industrial Courtyard"
+	{
+	next = "UR__05"
+	sky1 = URSKY1
+	titlepatch = URILV03
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr04
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__05 "Slime Depository"
+	{
+	next = "UR__06"
+	sky1 = URSKY1
+	titlepatch = URILV04
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr05
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__06 "Sewage Entrypoint"
+	{
+	next = "UR__07"
+	sky1 = URSKY1
+	titlepatch = URILV05
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr06
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__07 "Passage Underground"
+	{
+	next = "UR__08"
+	map07special
+	sky1 = URSKY1
+	titlepatch = URILV06
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr07
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__08 "Research Complex Beta"
+	{
+	next = "UR__09"
+	sky1 = URSKY1
+	titlepatch = URILV07
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr08
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__09 "Metallic Bloodline"
+	{
+	next = "UR__10"
+	sky1 = URSKY1
+	titlepatch = URILV08
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr09
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__10 "Premortem"
+	{
+	next = "UR__11"
+	sky1 = URSKY1
+	titlepatch = URILV09
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr10
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__11 "Death"
+	{
+	next = "UR__12"
+	sky1 = URSKY1
+	titlepatch = URILV10
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr11
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__12 "The Other Side"
+	{
+	next = "UR__13"
+	sky1 = URSKY2
+	titlepatch = URILV11
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr12
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__13 "Temple of Leviathan"
+	{
+	next = "UR__14"
+	sky1 = URSKY2
+	titlepatch = URILV12
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr13
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__14 "Drifting Complex"
+	{
+	next = "UR__15"
+	sky1 = URSKY2
+	titlepatch = URILV13
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr14
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__15 "Ravine of the Hated"
+	{
+	next = "UR__16"
+	secretnext = "UR__31"
+	sky1 = URSKY2
+	titlepatch = URILV14
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr15
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__16 "Dockside"
+	{
+	next = "UR__17"
+	sky1 = URSKY2
+	titlepatch = URILV15
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr16
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__17 "Missing Gamma Sector"
+	{
+	next = "UR__18"
+	sky1 = URSKY2
+	titlepatch = URILV16
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr17
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__18 "Of Brick and Crimson"
+	{
+	next = "UR__19"
+	sky1 = URSKY2
+	titlepatch = URILV17
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr18
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__19 "Borough of Blood"
+	{
+	next = "UR__20"
+	sky1 = URSKY2
+	titlepatch = URILV18
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr19
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__20 "Rite of Passage"
+	{
+	next = "UR__21"
+	sky1 = URSKY3
+	titlepatch = URILV19
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr20
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__21 "Limbo"
+	{
+	next = "UR__22"
+	sky1 = URSKY3
+	titlepatch = URILV20
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr21
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__22 "Lust"
+	{
+	next = "UR__23"
+	sky1 = URSKY3
+	titlepatch = URILV21
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr22
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__23 "Greed"
+	{
+	next = "UR__24"
+	sky1 = URSKY3
+	titlepatch = URILV22
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr23
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__24 "Gluttony"
+	{
+	next = "UR__25"
+	sky1 = URSKY3
+	titlepatch = URILV23
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr24
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__25 "Anger"
+	{
+	next = "UR__26"
+	sky1 = URSKY3
+	titlepatch = URILV24
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr25
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__26 "Heresy"
+	{
+	next = "UR__27"
+	sky1 = URSKY3
+	titlepatch = URILV25
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr26
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__27 "Serpentine"
+	{
+	next = "UR__28"
+	sky1 = URSKY3
+	titlepatch = URILV26
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr27
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__28 "Fraud"
+	{
+	next = "UR__29"
+	sky1 = URSKY3
+	titlepatch = URILV27
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr28
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__29 "Snakeskin Treachery"
+	{
+	next = "UR__30"
+	sky1 = URSKY3
+	titlepatch = URILV28
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr29
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__30 "Dis"
+	{
+	next = "VR"
+	sky1 = URSKY3
+	titlepatch = URILV29
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr30
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+    SuckTime = 1337
+	}
+	
+map UR__31 "Destructive Infinity"
+	{
+	next = "UR__16"
+	secretnext = "UR__32"
+	sky1 = URSKY3
+	titlepatch = URILV30
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr31
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}
+	
+map UR__32 "A Charming Khorus"
+	{
+	next = "UR__16"
+	sky1 = URSKY3
+	titlepatch = URILV31
+	enterpic = URINT
+	exitpic = URINT
+	music = d_uhr32
+	intermusic = "D_UHRINT"
+	nocrouch
+	nojump
+	}

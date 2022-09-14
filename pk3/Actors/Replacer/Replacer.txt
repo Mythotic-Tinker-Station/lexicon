@@ -4,7 +4,7 @@
 // by Michaelis
 // for Lexicon
 
-Actor "Re🅱lacer" 31999
+Actor "Replacer" 31999
 {
 	+NOINTERACTION
 	+NOSECTOR
@@ -13,7 +13,7 @@ Actor "Re🅱lacer" 31999
 	Spawn:
 		TNT1 A 0
 		TNT1 A 2
-		TNT1 A 0 ACS_NamedExecuteWithResult("Re:b:lacer")
+		TNT1 A 0 ACS_NamedExecuteWithResult("Replacer")
 		TNT1 A 100
 		Stop
 	}

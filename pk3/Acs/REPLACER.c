@@ -323,7 +323,7 @@ namespace Replacer
 
 	int mapset_current = 0;
 
-	Script "Re:b:lacer" (void)
+	Script "Replacer" (void)
 	{
 		mapset_current = GetCVar("lexicon_current_mapset");
 		int newobj = GetActorProperty(0, APROP_Score);

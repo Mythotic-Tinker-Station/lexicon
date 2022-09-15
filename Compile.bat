@@ -4,7 +4,7 @@ set FileName=Lexicon
 
 echo Step 1: ACS
 	cd compiler
-	bcc -acc-err-file -x bcs ..\pk3\acs\main.c ..\pk3\acs\main.o
+	bcc -acc-err-file -x bcs ..\pk3\acs\lexicon.c ..\pk3\acs\lexicon.o
 	if not exist ..\pk3\acs\acs.err goto 20
 
 :20

@@ -72,8 +72,7 @@ strict namespace VoteMenu
 
 	function void Run()
 	{
-		Screen.Draw("UI_BACK1", "a", "None", 0.0, 0.0, Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
-		Screen.Draw("UI_BACK2", "a", "None", 0.0, Screen.GetHeight(), Screen.XALIGN_LEFT, Screen.YALIGN_BOTTOM);
+		
 	}
 
 }

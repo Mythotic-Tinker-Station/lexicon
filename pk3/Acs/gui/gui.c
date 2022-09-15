@@ -99,6 +99,9 @@ strict namespace Gui
 	////////////////////////////////////////////////////////
 	script "CL_GUI" enter clientside
 	{
+        // delay the ui so all the init scripts can finish, this fixes race conditions.
+        delay(1);
+        
 		// check if we are on the hub map
 		if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
 
@@ -107,7 +110,6 @@ strict namespace Gui
 
 		// setup the Screen
 		Screen.Init();
-
 		VoteMenu.Build();
 
 		while(1)

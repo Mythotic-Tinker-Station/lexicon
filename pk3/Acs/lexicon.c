@@ -96,6 +96,8 @@ strict namespace
 
 	Script "Lexicon_Open" Open
 	{
+        delay(2);
+        ACS_NamedExecuteAlways("Lexicon_Sync_Mapset_Count", 0, mapset_count);
 	}
 
 	Script "Lexicon_Enter" enter
@@ -109,5 +111,10 @@ strict namespace
 		applyCheats();
 		Replacer.StartItems();
 	}
+
+    script "Lexicon_Sync_Mapset_Count" (int mc) clientside
+    {
+        mapset_count = mc;
+    }
 }
 

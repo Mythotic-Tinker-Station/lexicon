@@ -30,11 +30,15 @@ function void nullFunc(int i)
 // checks if the currently running clientside script is the local client
 function bool clientCheck()
 {
-    if(playerNumber() != consolePlayerNumber()) 
-    { 
-        return false; 
-    }
-	return true;
+    //if(IsNetworkGame())
+    //{
+        if(playerNumber() != consolePlayerNumber()) 
+        { 
+            return false; 
+        }
+        return true;
+    //}
+	//return false;
 }
 
 // absolute value

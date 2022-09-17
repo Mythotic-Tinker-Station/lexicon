@@ -17,7 +17,7 @@ strict namespace VoteMenu
 			buttons[i] = ButtonImage.Create(128.0+x, 96.0+y, mapsets[i].thumbnail, mapsets[i].name);
 			Widgets.SetFont(buttons[i], "CP437");
 			Widgets.SetArg2Int(buttons[i], mapsets[i].id);
-            Widgets.SetArg1Str(buttons[i], mapsets[mapsets[i].id].startmap);
+            Widgets.SetArg1Str(buttons[i], mapsets[i].startmap);
 			Widgets.AddClickedHook(buttons[i], Event_MapsetClick);
 		}
 

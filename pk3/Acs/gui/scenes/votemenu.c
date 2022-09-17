@@ -43,12 +43,14 @@ strict namespace VoteMenu
 			Widgets.SetFont(weapons, "CP437");
 			Widgets.SetTextOffsetY(weapons, 4.0);
 			Widgets.AddClickedHook(weapons, Event_WeaponsCheck);
+            Widgets.SetEnabled(weapons, false);
 
 			// all keys button
 			int keys = ButtonCheck.Create(Screen.GetWidth()-144.0, 140.0, "\c[White]All Keys");
 			Widgets.SetFont(keys, "CP437");
 			Widgets.SetTextOffsetY(keys, 4.0);
 			Widgets.AddClickedHook(keys, Event_KeysCheck);
+            Widgets.SetEnabled(keys, false);
 
 			// inf ammo button
 			int ammo = ButtonCheck.Create(Screen.GetWidth()-144.0, 170.0, "\c[White]Infinite Ammo");
@@ -58,21 +60,49 @@ strict namespace VoteMenu
 		}
 	}
 
-	function void Event_InstaKillerCheck(int id) { SetCVar("lexicon_debug_instakiller", int(Widgets.GetChecked(id))); }
-	function void Event_GodModeCheck(int id) { SetCVar("lexicon_debug_godmode", int(Widgets.GetChecked(id))); }
-	function void Event_WeaponsCheck(int id) { SetCVar("lexicon_debug_weapons", int(Widgets.GetChecked(id))); }
-	function void Event_KeysCheck(int id) { SetCVar("lexicon_debug_keys", int(Widgets.GetChecked(id))); }
-	function void Event_AmmoCheck(int id) { SetCVar("lexicon_debug_infammo", int(Widgets.GetChecked(id))); }
+	function void Event_InstaKillerCheck(int id) { NamedRequestScriptPuke("Event_InstaKillerCheck_SV", int(Widgets.GetChecked(id)));  }
+	function void Event_GodModeCheck(int id) { NamedRequestScriptPuke("Event_GodModeCheck_SV", int(Widgets.GetChecked(id)));  }
+	function void Event_WeaponsCheck(int id) { NamedRequestScriptPuke("Event_WeaponsCheck_SV", int(Widgets.GetChecked(id)));  }
+	function void Event_KeysCheck(int id) { NamedRequestScriptPuke("Event_KeysCheck_SV", int(Widgets.GetChecked(id)));  }
+	function void Event_AmmoCheck(int id) { NamedRequestScriptPuke("Event_AmmoCheck_SV", int(Widgets.GetChecked(id)));  }
+	function void Event_MapsetClick(int id) { NamedRequestScriptPuke("Event_MapsetClick_SV", Widgets.GetArg2int(id)); }
 
-	function void Event_MapsetClick(int id)
-	{
-        NamedRequestScriptPuke("Event_MapsetClick_SV", Widgets.GetArg2int(id));
-        SetCVar("lexicon_current_mapset", Widgets.GetArg2int(id));
-	}
+
+    script "Event_InstaKillerCheck_SV" (int v) NET
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+        SetCVar("lexicon_debug_instakiller", v);
+    }
+
+    script "Event_GodModeCheck_SV" (int v) NET
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+        SetCVar("lexicon_debug_godmode", v);
+    }
+
+    script "Event_WeaponsCheck_SV" (int v) NET
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+        SetCVar("lexicon_debug_weapons", v);
+    }
+
+    script "Event_KeysCheck_SV" (int v) NET
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+        SetCVar("lexicon_debug_keys", v);
+    }
+
+    script "Event_AmmoCheck_SV" (int v) NET
+    {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
+        SetCVar("lexicon_debug_infammo", v);
+    }
 
     script "Event_MapsetClick_SV" (int id) NET
     {
+        if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }
 		ChangeLevel(mapsets[id].startmap, 0, CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETHEALTH, -1);
+        SetCVar("lexicon_current_mapset", mapsets[id].id);
     }
 
 	function void Run()

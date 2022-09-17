@@ -66,9 +66,15 @@ strict namespace VoteMenu
 
 	function void Event_MapsetClick(int id)
 	{
+        NamedRequestScriptPuke("Event_MapsetClick_SV", id);
+        SetCVar("lexicon_current_mapset", Widgets.GetArg2int(id));
+	}
+
+    script "Event_MapsetClick_SV" (int id) NET
+    {
 		ChangeLevel(Widgets.GetArg1Str(id), 0, CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETHEALTH, -1);
 		SetCVar("lexicon_current_mapset", Widgets.GetArg2int(id));
-	}
+    }
 
 	function void Run()
 	{

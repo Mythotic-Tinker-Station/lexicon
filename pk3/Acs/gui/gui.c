@@ -100,7 +100,7 @@ strict namespace Gui
 	script "CL_GUI" enter clientside
 	{
         // delay the ui so all the init scripts can finish, this fixes race conditions.
-        delay(35);
+        delay(2);
 
 		// check if we are on the hub map
 		if(GetLevelInfo(LEVELINFO_LEVELNUM) != 99) { terminate; }

@@ -98,7 +98,6 @@ strict namespace
 	{
         delay(2);
         //ACS_NamedExecuteAlways("Lexicon_Sync_Mapset_Count", 0, mapset_count);
-        ACS_NamedExecuteAlways("Lexicon_Sync_Mapsets", 0, mapsets);
 	}
 
 	Script "Lexicon_Enter" enter

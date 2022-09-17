@@ -118,6 +118,7 @@ namespace Expansion
 
 	script "Lexicon_AddMapSet_CL" (int acronym) clientside
 	{
+        if(!clientCheck()) { terminate; }
 		mapsets[mapset_count].acronym 			= acronym;
 		mapsets[mapset_count].name 				= getDynLangEntryEx(mapsets[mapset_count].acronym, "NAME");
 		mapsets[mapset_count].description 		= getDynLangEntryEx(mapsets[mapset_count].acronym, "DESCRIPTION");

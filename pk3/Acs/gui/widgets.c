@@ -158,13 +158,13 @@ strict namespace Widgets
 		obj[id].text_offset.x		= 0.0;
 		obj[id].text_offset.y		= 0.0;
 		obj[id].backcolor.normal 	= "UI_Main_Normal";
-		obj[id].backcolor.disabled 	= "UI_Main_Clicked";
+		obj[id].backcolor.disabled 	= "UI_Main_Disabled";
 		obj[id].backcolor.clicked	= "UI_Main_Clicked";
 		obj[id].backcolor.hovered	= "UI_Main_Hovered";
 		obj[id].backcolor.checked	= "UI_Main_Checked";
 		obj[id].backcolor.current	= "UI_Main_Normal";
 		obj[id].textcolor.normal 	= "White";
-		obj[id].textcolor.disabled 	= "White";
+		obj[id].textcolor.disabled 	= "Gray";
 		obj[id].textcolor.clicked	= "White";
 		obj[id].textcolor.hovered	= "White";
 		obj[id].textcolor.checked	= "Blue";

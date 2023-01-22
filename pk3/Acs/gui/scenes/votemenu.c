@@ -5,6 +5,7 @@ strict namespace VoteMenu
 	int lbl_debug;
 	function void Build(void)
 	{
+		SetPlayerProperty(0, ON, PROP_TOTALLYFROZEN);
 		// Title
 		lbl_title = Label::Create(112.0, 32.0, "CP437_BIG", "Please cast your vote:");
 
@@ -68,6 +69,7 @@ strict namespace VoteMenu
 	{
 		ChangeLevel(Widgets::GetArg1Str(id), 0, CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETHEALTH, -1);
 		SetCVar("lexicon_current_mapset", Widgets::GetArg2int(id));
+		SetPlayerProperty(0, OFF, PROP_TOTALLYFROZEN);
 	}
 
 	function void Run()

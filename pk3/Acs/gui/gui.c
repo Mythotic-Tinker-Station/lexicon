@@ -21,36 +21,36 @@ strict namespace Gui
 	// enable entire widget pool
 	function void Enable()
 	{
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			Widgets.obj[id].enabled = true;
+			Widgets::obj[id].enabled = true;
 		}
 	}
 
 	// disable entire widget pool
 	function void Disable()
 	{
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			Widgets.obj[id].enabled = false;
+			Widgets::obj[id].enabled = false;
 		}
 	}
 
 	// hide entire widget pool
 	function void Hide()
 	{
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			Widgets.obj[id].visible = true;
+			Widgets::obj[id].visible = true;
 		}
 	}
 
 	// show entire widget pool
 	function void Show()
 	{
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			Widgets.obj[id].visible = false;
+			Widgets::obj[id].visible = false;
 		}
 	}
 
@@ -58,11 +58,11 @@ strict namespace Gui
 	function void Clear()
 	{
 		// mark all slots as free
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			Widgets.obj[id].alive = false;
+			Widgets::obj[id].alive = false;
 		}
-		Screen.Clear();
+		Screen::Clear();
 	}
 
 	// move entire widget pool
@@ -72,24 +72,24 @@ strict namespace Gui
 		fixed x2h;
 		fixed y1h;
 		fixed y2h;
-		for(int id = 0; id < Widgets.MAX_WIDGETS; id++)
+		for(int id = 0; id < Widgets::MAX_WIDGETS; id++)
 		{
-			if(Widgets.obj[id].alive)
+			if(Widgets::obj[id].alive)
 			{
-				Widgets.obj[id].pos.x1 += x;
-				Widgets.obj[id].pos.x2 += x;
-				Widgets.obj[id].pos.y1 += y;
-				Widgets.obj[id].pos.y2 += y;
+				Widgets::obj[id].pos.x1 += x;
+				Widgets::obj[id].pos.x2 += x;
+				Widgets::obj[id].pos.y1 += y;
+				Widgets::obj[id].pos.y2 += y;
 
-				if(Widgets.obj[id].pos.x1 > x1h) { x1h = Widgets.obj[id].pos.x1; }
-				if(Widgets.obj[id].pos.x2 > x2h) { x2h = Widgets.obj[id].pos.x2; }
-				if(Widgets.obj[id].pos.y1 > y1h) { y1h = Widgets.obj[id].pos.y1; }
-				if(Widgets.obj[id].pos.y2 > y2h) { y2h = Widgets.obj[id].pos.y2; }
+				if(Widgets::obj[id].pos.x1 > x1h) { x1h = Widgets::obj[id].pos.x1; }
+				if(Widgets::obj[id].pos.x2 > x2h) { x2h = Widgets::obj[id].pos.x2; }
+				if(Widgets::obj[id].pos.y1 > y1h) { y1h = Widgets::obj[id].pos.y1; }
+				if(Widgets::obj[id].pos.y2 > y2h) { y2h = Widgets::obj[id].pos.y2; }
 			}
 		}
-		if(x1h >= Screen.size.w) { return 1; }
+		if(x1h >= Screen::size.w) { return 1; }
 		if(x2h <= 0.0) { return 2; }
-		if(y1h >= Screen.size.w) { return 3; }
+		if(y1h >= Screen::size.w) { return 3; }
 		if(y2h <= 0.0) { return 4; }
 		return 0;
 	}
@@ -106,17 +106,17 @@ strict namespace Gui
 		if(!clientCheck()) { terminate; }
 
 		// setup the Screen
-		Screen.Init();
+		Screen::Init();
 
-		VoteMenu.Build();
+		VoteMenu::Build();
 
 		while(1)
 		{
-			Cursor.Run();
-			VoteMenu.Run();
-			Widgets.Run();
+			Cursor::Run();
+			VoteMenu::Run();
+			Widgets::Run();
 
-			Screen.ResetHudIDs();
+			Screen::ResetHudIDs();
 			delay(1);
 		}
 	/*
@@ -153,7 +153,7 @@ strict namespace Gui
 			gui.nextid = 0;
 			gui.objcount = 0;
 			delay(1);
-			cursor.clicked_prev = cursor.clicked;
+			cursor::clicked_prev = cursor::clicked;
 
 			// if the resolution changes, terminate scenes and restart
 			if(GetCVar("vid_defwidth") != gui.vid_w || GetCVar("vid_defheight") != gui.vid_h)

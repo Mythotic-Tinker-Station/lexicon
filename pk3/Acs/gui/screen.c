@@ -3,18 +3,18 @@
 	With help from Popsoap, Michaelis
 
 	Screen namespace:
-		fixed 	Screen.GetWidth() 			// returns the width of the screen
-		fixed 	Screen.GetHeight() 			// returns the height of the screen
-		fixed 	Screen.GetWidthHalf() 		// returns the center x of the screen
-		fixed 	Screen.GetHeightHalf() 		// returns the center y of the screen
-		bool 	Screen.GetScreenBlocks() 	// returns the screenblocks cvar
-		int 	Screen.GetNextID() 			// returns the nextid to be used
-		void 	Screen.Init()				// Setup the screen;
-		void 	Screen.Clear()				// Clear out all hudmessages;
-		void 	Screen.ResetHudIDs()		// resets the hudmessage id counter;
+		fixed 	Screen::GetWidth() 			// returns the width of the screen
+		fixed 	Screen::GetHeight() 			// returns the height of the screen
+		fixed 	Screen::GetWidthHalf() 		// returns the center x of the screen
+		fixed 	Screen::GetHeightHalf() 		// returns the center y of the screen
+		bool 	Screen::GetScreenBlocks() 	// returns the screenblocks cvar
+		int 	Screen::GetNextID() 			// returns the nextid to be used
+		void 	Screen::Init()				// Setup the screen;
+		void 	Screen::Clear()				// Clear out all hudmessages;
+		void 	Screen::ResetHudIDs()		// resets the hudmessage id counter;
 
 		// alias to hudmessage with auto id and alignment, returns the id used
-		int Screen.Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
+		int Screen::Draw(str font, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
 */
 
 strict namespace Screen

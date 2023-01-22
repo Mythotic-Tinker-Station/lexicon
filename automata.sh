@@ -12,13 +12,11 @@ echo "
 "
 echo ""
 
-echo "Environment Settings:
-Branch: ${GIT_BRANCH}
-Build Number: ${BUILD_NUMBER}
-Workspace Location: ${WORKSPACE}
-
-Build URL: ${BUILD_URL}
-"
+echo "Environment Settings:"
+echo "Branch: $(git branch --show-current)"
+echo "Build Number: ${BUILD_NUMBER}"
+echo "Workspace Location: ${WORKSPACE}"
+echo "Build URL: ${BUILD_URL}"
 
 if ! command -v 7za &> /dev/null
 then
@@ -43,8 +41,12 @@ FILE_NAME="Lexicon"
 COMPILE_PATH='./compiler'
 GAME_PATH='./pk3'
 
+if [ -e "$FILE_NAME.pk3" ]; then
+	rm "$FILE_NAME.pk3"
+fi
+
 # Compile BCS Code
-chmod +x $COMPILE_PATH/bcc
+chmod +x $COMPILE_PATH/$BCC_COMPILER
 $COMPILE_PATH/$BCC_COMPILER -acc-err-file -x bcs $GAME_PATH/Acs/lexicon.c $GAME_PATH/Acs/lexicon.o
 [ $? -eq 0 ]  || exit 1
 

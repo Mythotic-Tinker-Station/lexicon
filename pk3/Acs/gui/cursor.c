@@ -2,27 +2,27 @@
 	Lexicon UI by Tribeam
 	With help from Popsoap, Michaelis
 
-	fixed Cursor.GetX() 						// returns the x position of the cursor
-	fixed Cursor.GetY() 						// returns the y position of the cursor
-	fixed Cursor.GetDeltaX() 					// returns the delta x of the cursor (the amount of movement to make on the x axis)
-	fixed Cursor.GetDeltaY() 					// returns the delta y of the cursor (the amount of movement to make on the y axis)
+	fixed Cursor::GetX() 						// returns the x position of the cursor
+	fixed Cursor::GetY() 						// returns the y position of the cursor
+	fixed Cursor::GetDeltaX() 					// returns the delta x of the cursor (the amount of movement to make on the x axis)
+	fixed Cursor::GetDeltaY() 					// returns the delta y of the cursor (the amount of movement to make on the y axis)
 
 	// get flags
-	bool Cursor.GetClicked() 					// returns if the cursor is clicked
-	bool Cursor.GetClickedPrev() 				// returns if the cursor was clicked on the previous frame
+	bool Cursor::GetClicked() 					// returns if the cursor is clicked
+	bool Cursor::GetClickedPrev() 				// returns if the cursor was clicked on the previous frame
 
 	// get buttons
-	int Cursor.GetButtons() 					// returns what buttons the player is pressing
+	int Cursor::GetButtons() 					// returns what buttons the player is pressing
 
 	// set positions
-	void Cursor.SetX(fixed value) 				// sets the x position of the cursor
-	void Cursor.SetY(fixed value) 				// sets the y position of the cursor
-	void Cursor.SetDeltaX(fixed value) 			// sets the delta x position of the cursor (the amount of movement to make on the x axis)
-	void Cursor.SetDeltaY(fixed value) 			// sets the delta y position of the cursor (the amount of movement to make on the y axis)
+	void Cursor::SetX(fixed value) 				// sets the x position of the cursor
+	void Cursor::SetY(fixed value) 				// sets the y position of the cursor
+	void Cursor::SetDeltaX(fixed value) 			// sets the delta x position of the cursor (the amount of movement to make on the x axis)
+	void Cursor::SetDeltaY(fixed value) 			// sets the delta y position of the cursor (the amount of movement to make on the y axis)
 
 	// set flags
-	void Cursor.SetClicked(bool value) 			// sets if the cursor is clicked
-	void Cursor.SetClickedPrev(bool value) 		// sets if the cursor was clicked on the previous frame
+	void Cursor::SetClicked(bool value) 			// sets if the cursor is clicked
+	void Cursor::SetClickedPrev(bool value) 		// sets if the cursor was clicked on the previous frame
 
 	void Init()
 */
@@ -71,9 +71,9 @@ strict namespace Cursor
 
 	function void Init()
 	{
-		// set the cursor to the center of the screen on start
-		pos.x = Screen.GetCenterX();
-		pos.y = Screen.GetCenterY();
+		// set the cursor to the center of the Screen::on start
+		pos.x = Screen::GetCenterX();
+		pos.y = Screen::GetCenterY();
 	}
 
 	function void Run()
@@ -94,8 +94,8 @@ strict namespace Cursor
 		// bounds
 		if(pos.x < 0.0) 				{ pos.x = 0.0; }
 		if(pos.y < 0.0) 				{ pos.y = 0.0; }
-		if(pos.x > Screen.GetWidth()) 	{ pos.x = Screen.GetWidth(); }
-		if(pos.y > Screen.GetHeight()) 	{ pos.y = Screen.GetHeight(); }
+		if(pos.x > Screen::GetWidth()) 	{ pos.x = Screen::GetWidth(); }
+		if(pos.y > Screen::GetHeight()) { pos.y = Screen::GetHeight(); }
 
 		// if mouse1 is pressed
 		clicked_prev = clicked;
@@ -108,12 +108,12 @@ strict namespace Cursor
 			clicked = false;
 		}
 
-		Screen.Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP, 1);
+		Screen::Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 1);
 
 		// render shadow
 		if((bool)getCVar("lexicon_cursor_shadow") == true)
 		{
-			Screen.Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen.XALIGN_LEFT, Screen.YALIGN_TOP, 2);
+			Screen::Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 2);
 		}
 	}
 }

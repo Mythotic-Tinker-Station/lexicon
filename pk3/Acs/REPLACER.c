@@ -333,7 +333,7 @@ namespace Replacer
 		str type = "0";
 
 		// get the actor we are suppose to place
-		for(int i = 0; i < classlist.length(); i++)
+		for(int i = 0; i < lengthof(classlist); i++)
 		{
 			if(newobj == classlist_num[i])
 			{
@@ -760,7 +760,7 @@ namespace Replacer
 	{
 		if(GetCVar("lexicon_no_mod_check") == 0)
 		{
-			for(int c = 0; c < classlist.length(); c++)
+			for(int c = 0; c < lengthof(classlist); c++)
 			{
 				if(StrCmp(class, classlist[c][0]) == 0)
 				{

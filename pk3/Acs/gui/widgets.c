@@ -3,57 +3,57 @@
 	With help from Popsoap, Michaelis
 
 	Widgets Namespace:
-		int 	Widgets.Create()														// Create a new default widget; returns an id number of said widget;
-		void 	Widgets.Delete(int id)													// Deletes a widget;
-		int 	Widgets.FindFreeSlot()													// Finds the next available slot in the widget pool;
-		void 	Widgets.Run()															// Run the widgets!;
-		void	Widgets.CalcSizes(int id)												// Recalculates the width, height, half width and half height vars;
-		void	Widgets.AddUpdateHook(int id, function f)								// Adds a function to the update event;
-		void	Widgets.AddHoveredHook(int id, function f)								// Adds a function to the hovered event;
-		void	Widgets.AddClickedHook(int id, function f)								// Adds a function to the clicked event;
-		void	Widgets.AddMovedHook(int id, function f)								// Adds a function to the moved event;
-		void	Widgets.CallUpdateHooks(int id)											// Calls all the functions hooked to the update event;
-		void	Widgets.CallHoveredHooks(int id)										// Calls all the functions hooked to the hovered event;
-		void	Widgets.CallClickedHooks(int id)										// Calls all the functions hooked to the clicked event;
-		void	Widgets.CallMovedHooks(int id)											// Calls all the functions hooked to the moved event;
+		int 	Widgets::Create()														// Create a new default widget; returns an id number of said widget;
+		void 	Widgets::Delete(int id)													// Deletes a widget;
+		int 	Widgets::FindFreeSlot()													// Finds the next available slot in the widget pool;
+		void 	Widgets::Run()															// Run the widgets!;
+		void	Widgets::CalcSizes(int id)												// Recalculates the width, height, half width and half height vars;
+		void	Widgets::AddUpdateHook(int id, function f)								// Adds a function to the update event;
+		void	Widgets::AddHoveredHook(int id, function f)								// Adds a function to the hovered event;
+		void	Widgets::AddClickedHook(int id, function f)								// Adds a function to the clicked event;
+		void	Widgets::AddMovedHook(int id, function f)								// Adds a function to the moved event;
+		void	Widgets::CallUpdateHooks(int id)											// Calls all the functions hooked to the update event;
+		void	Widgets::CallHoveredHooks(int id)										// Calls all the functions hooked to the hovered event;
+		void	Widgets::CallClickedHooks(int id)										// Calls all the functions hooked to the clicked event;
+		void	Widgets::CallMovedHooks(int id)											// Calls all the functions hooked to the moved event;
 
-		fixed	Widgets.GetX1(int id)													// Returns the x1 point of the widget;
-		fixed	Widgets.GetY1(int id)													// Returns the x2 point of the widget;
-		fixed	Widgets.GetX2(int id)													// Returns the y1 point of the widget;
-		fixed	Widgets.GetY2(int id)													// Returns the y2 point of the widget;
-		fixed	Widgets.GetCenterX(int id)												// Returns the center x point of the widget;
-		fixed	Widgets.GetCenterY(int id)												// Returns the center y point of the widget;
+		fixed	Widgets::GetX1(int id)													// Returns the x1 point of the widget;
+		fixed	Widgets::GetY1(int id)													// Returns the x2 point of the widget;
+		fixed	Widgets::GetX2(int id)													// Returns the y1 point of the widget;
+		fixed	Widgets::GetY2(int id)													// Returns the y2 point of the widget;
+		fixed	Widgets::GetCenterX(int id)												// Returns the center x point of the widget;
+		fixed	Widgets::GetCenterY(int id)												// Returns the center y point of the widget;
 
-		str		Widgets.GetColorNormal(int id)											// returns the base color of the widget;
-		str		Widgets.GetColorHovered(int id)											// returns the hovered color of the widget;
-		str		Widgets.GetColorClicked(int id)											// returns the clicked color of the widget;
+		str		Widgets::GetColorNormal(int id)											// returns the base color of the widget;
+		str		Widgets::GetColorHovered(int id)											// returns the hovered color of the widget;
+		str		Widgets::GetColorClicked(int id)											// returns the clicked color of the widget;
 
-		str		Widgets.GetText(int id)													// returns the text of the widget;
+		str		Widgets::GetText(int id)													// returns the text of the widget;
 
-		fixed	Widgets.GetWidth(int id)												// Returns the width of the widget;
-		fixed	Widgets.GetHeight(int id)												// Returns the height of the widget;
-		fixed	Widgets.GetWidth_Half(int id)											// Returns the half width of the widget;
-		fixed	Widgets.GetHeight_Half(int id)											// Returns the half height of the widget;
+		fixed	Widgets::GetWidth(int id)												// Returns the width of the widget;
+		fixed	Widgets::GetHeight(int id)												// Returns the height of the widget;
+		fixed	Widgets::GetWidth_Half(int id)											// Returns the half width of the widget;
+		fixed	Widgets::GetHeight_Half(int id)											// Returns the half height of the widget;
 
-		void	Widgets.SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
-		void	Widgets.SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
-		void	Widgets.SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
-		void	Widgets.SetY2(int id, fixed y2)											// Sets the y2 point of the widget;
+		void	Widgets::SetX1(int id, fixed x1)											// Sets the x1 point of the widget;
+		void	Widgets::SetY1(int id, fixed y1)											// Sets the x2 point of the widget;
+		void	Widgets::SetX2(int id, fixed x2)											// Sets the y1 point of the widget;
+		void	Widgets::SetY2(int id, fixed y2)											// Sets the y2 point of the widget;
 
-		void 	Widgets.SetTopLeftPosition(int id, fixed x, fixed y)					// Sets the x, y of the top left position of the widget;
-		void 	Widgets.SetBottomRightPosition(int id, fixed x, fixed y)				// Sets the x, y of the bottom right position of the widget;
-		void 	Widgets.SetPosition(int id, fixed x1, fixed y1, fixed x2, fixed y2)		// Sets the x1, y1, x2, y2 positions of the widget;
-		void 	Widgets.SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)	// Sets the x1, y1, x2, y2 positions of the widget with a width/height;
+		void 	Widgets::SetTopLeftPosition(int id, fixed x, fixed y)					// Sets the x, y of the top left position of the widget;
+		void 	Widgets::SetBottomRightPosition(int id, fixed x, fixed y)				// Sets the x, y of the bottom right position of the widget;
+		void 	Widgets::SetPosition(int id, fixed x1, fixed y1, fixed x2, fixed y2)		// Sets the x1, y1, x2, y2 positions of the widget;
+		void 	Widgets::SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)	// Sets the x1, y1, x2, y2 positions of the widget with a width/height;
 
-		void	Widgets.SetColorNormal(int id)											// Sets the base color of the widget;
-		void	Widgets.SetColorHovered(int id)											// Sets the hovered color of the widget;
-		void	Widgets.SetColorClicked(int id)											// Sets the clicked color of the widget;
+		void	Widgets::SetColorNormal(int id)											// Sets the base color of the widget;
+		void	Widgets::SetColorHovered(int id)											// Sets the hovered color of the widget;
+		void	Widgets::SetColorClicked(int id)											// Sets the clicked color of the widget;
 
-		void	Widgets.SetText(int id, str value)										// Sets the text of the widget;
+		void	Widgets::SetText(int id, str value)										// Sets the text of the widget;
 
 
 
-		void	Widgets.Update(int id)													// Updates the widget;
+		void	Widgets::Update(int id)													// Updates the widget;
 */
 
 
@@ -553,7 +553,7 @@ strict namespace Widgets
 					}
 
 					// is cursor within bounds?
-					if(Cursor.GetX() > GetX1(id) && Cursor.GetX() < GetX2(id) && Cursor.GetY() > GetY1(id) && Cursor.GetY() < GetY2(id))
+					if(Cursor::GetX() > GetX1(id) && Cursor::GetX() < GetX2(id) && Cursor::GetY() > GetY1(id) && Cursor::GetY() < GetY2(id))
 					{
 						// is this object hoverable?
 						if(GetHoverable(id))
@@ -582,7 +582,7 @@ strict namespace Widgets
 						if(GetClickable(id))
 						{
 							// is the user clicking the mouse?
-							if(Cursor.GetClicked())
+							if(Cursor::GetClicked())
 							{
 								// click colored
 								obj[id].backcolor.current = obj[id].backcolor.clicked;
@@ -601,7 +601,7 @@ strict namespace Widgets
 								else
 								{
 									// was the cursor not clicked on the previous frame?
-									if(!Cursor.GetClickedPrev())
+									if(!Cursor::GetClickedPrev())
 									{
 										// check the widget
 										if(GetCheckable(id))
@@ -648,7 +648,7 @@ strict namespace Widgets
 				// should we render the back image?
 				if(GetRenderImage(id))
 				{
-					Screen.Draw(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen.XALIGN_LEFT, Screen.YALIGN_TOP);
+					Screen::Draw(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 				}
 
 				// call object's update callback
@@ -657,7 +657,7 @@ strict namespace Widgets
 				// should we render the text?
 				if(GetRenderText(id))
 				{
-					Screen.Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen.XALIGN_CENTER, Screen.YALIGN_TOP);
+					Screen::Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
 
 				}
 

@@ -1,16 +1,33 @@
 #!/bin/bash
+# Lexicon Combined Automata
 
-# Lexicon Base file automata script
+# Lexicon
+if [ -e "pk3/Acs/lexicon.c" ]; then
+	CODEBASE="Lexicon"
+	DISPLAY_NAME="       Lexicon Automata      "
+	OUTPUT_FILE_NAME="Lexicon"
+	SOURCE_FILE_NAME="lexicon" # Without extension ;)
+	ACS_PATH="Acs"
+# Lexicon Base
+elif [ -e "pk3/ACS/main.c" ]; then
+	CODEBASE="Basepack"
+	DISPLAY_NAME=" Lexicon Base File Automata  "
+	OUTPUT_FILE_NAME="Lexicon_basepack"
+	SOURCE_FILE_NAME="main" # Without extension ;)
+	ACS_PATH="ACS"
+else
+	echo "Unrecognised codebase"
+	exit
+fi
 
 # Header
 echo "
-------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------
-----------------------------------       Lexicon Base File Automata      -----------------------------------------
-------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+----------------------------------$DISPLAY_NAME-----------------------------------------
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 "
-echo ""
 
 echo "Environment Settings:"
 echo "Branch: $(git branch --show-current)"
@@ -37,22 +54,20 @@ fi
 # Processing
 
 # Setting Varibles
-FILE_NAME="Lexicon"
+
 COMPILE_PATH='./compiler'
 GAME_PATH='./pk3'
 
-if [ -e "$FILE_NAME.pk3" ]; then
-	rm "$FILE_NAME.pk3"
+if [ -e "$OUTPUT_FILE_NAME.pk3" ]; then
+	rm "$OUTPUT_FILE_NAME.pk3"
 fi
 
 # Compile BCS Code
 chmod +x $COMPILE_PATH/$BCC_COMPILER
-$COMPILE_PATH/$BCC_COMPILER -acc-err-file -x bcs $GAME_PATH/Acs/lexicon.c $GAME_PATH/Acs/lexicon.o
-[ $? -eq 0 ]  || exit 1
+$COMPILE_PATH/$BCC_COMPILER -acc-err-file -x bcs $GAME_PATH/$ACS_PATH/$SOURCE_FILE_NAME.c $GAME_PATH/$ACS_PATH/$SOURCE_FILE_NAME.o  || exit 1
 
 # Pack game files
 cd $GAME_PATH
-7za a -r -ssw -mx9 -tzip  ../${FILE_NAME}.pk3 ./*
-[ $? -eq 0 ]  || exit 1
+7za a -r -ssw -mx9 -tzip  ../${OUTPUT_FILE_NAME}.pk3 ./* || exit 1
 
-echo "${FILE_NAME}.pk3"
+echo "${OUTPUT_FILE_NAME}.pk3"

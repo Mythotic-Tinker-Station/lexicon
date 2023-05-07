@@ -76,7 +76,7 @@ strict namespace
 	};
 
 
-	struct mapset mapsets[256];			// holds all the mapset info
+	struct mapset mapsets[2048];	    // holds all the mapset info
 	int mapset_count = 0;				// how many mapsets exist
 
 	#if 1

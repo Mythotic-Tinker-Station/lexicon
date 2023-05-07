@@ -56,6 +56,12 @@ strict namespace VoteMenu
 			Widgets::SetFont(ammo, "CP437");
 			Widgets::SetTextOffsetY(ammo, 4.0);
 			Widgets::AddClickedHook(ammo, Event_AmmoCheck);
+
+			// the nothing gun
+			int nothing = ButtonCheck::Create(Screen::GetWidth()-144.0, 200.0, "\c[White]Nothing Gun");
+			Widgets::SetFont(nothing, "CP437");
+			Widgets::SetTextOffsetY(nothing, 4.0);
+			Widgets::AddClickedHook(nothing, Event_NothingCheck);            
 		}
 	}
 
@@ -64,6 +70,7 @@ strict namespace VoteMenu
 	function void Event_WeaponsCheck(int id) { SetCVar("lexicon_debug_weapons", int(Widgets::GetChecked(id))); }
 	function void Event_KeysCheck(int id) { SetCVar("lexicon_debug_keys", int(Widgets::GetChecked(id))); }
 	function void Event_AmmoCheck(int id) { SetCVar("lexicon_debug_infammo", int(Widgets::GetChecked(id))); }
+    function void Event_NothingCheck(int id) { SetCVar("lexicon_debug_nothinggun", int(Widgets::GetChecked(id))); }
 
 	function void Event_MapsetClick(int id)
 	{

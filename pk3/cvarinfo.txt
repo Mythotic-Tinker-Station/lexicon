@@ -19,7 +19,7 @@ server noarchive int	lexicon_debug_godmode		= 0;
 server noarchive int	lexicon_debug_weapons		= 0;
 server noarchive int	lexicon_debug_keys			= 0;
 server noarchive int	lexicon_debug_infammo		= 0;
-
+server noarchive int	lexicon_debug_nothinggun	= 0;
 
 server string	lexicon_replacer_mode	= "normal";
 // this is a very special cvar with all kinds of versatility to control the replacer system

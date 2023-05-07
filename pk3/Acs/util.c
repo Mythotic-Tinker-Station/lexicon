@@ -56,4 +56,5 @@ function void applyCheats(void)
 	if(GetCVar("lexicon_debug_weapons")) { ConsoleCommand("give weapons"); ConsoleCommand("give ammo"); }
 	if(GetCVar("lexicon_debug_keys")) { ConsoleCommand("give keys"); }
 	if(GetCVar("lexicon_debug_infammo")) { GiveInventory("Lexicon_InfAmmo", 1); }
+    if(GetCVar("lexicon_debug_nothinggun")) { GiveInventory("Lexicon_TheNothingGun", 1); }
 }

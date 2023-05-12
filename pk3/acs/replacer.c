@@ -342,10 +342,7 @@ namespace Replacer
 				type = classlist[i][1];
 
 				SpawnForced(class, 0.0, 0.0, 0.0, 22390);
-                if(CheckFlag(22390, "DROPPED"))
-                {
-                    SetActorFlag(22390, "DROPPED", false);
-                }
+
 				if(StrCmp(GetActorClass(22390), class) != 0)
 				{
 					classlist[i][2] = "1";
@@ -722,6 +719,9 @@ namespace Replacer
 
 		bool success = SpawnForced(class, x,y,z, tid, angle >> 16);
 		if(!success) return false;
+
+        // remove DROPPED flag
+        SetActorProperty(tid, APROP_Dropped, 0);
 
 		// Transfer flags, store as spawner's tracer and finally transfer tid
 		if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "FriendlyProc", 1);

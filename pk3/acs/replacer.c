@@ -342,7 +342,10 @@ namespace Replacer
 				type = classlist[i][1];
 
 				SpawnForced(class, 0.0, 0.0, 0.0, 22390);
-
+                if(CheckFlag(22390, "DROPPED"))
+                {
+                    SetActorFlag(22390, "DROPPED", false);
+                }
 				if(StrCmp(GetActorClass(22390), class) != 0)
 				{
 					classlist[i][2] = "1";

@@ -1,0 +1,32 @@
+clearepisodes
+
+GameInfo
+{
+
+}
+
+episode HUB
+{
+	name = "The Sentinel's Lexicon"
+	key = "1"
+}
+
+episode MAP01
+{
+	name = "Doom 2"
+	key = "2"
+}
+
+map HUB "Inside the Lexicon"
+{
+	music = "HUBMUS"
+	levelnum = 99
+	sky1 = "0TODSKY1"
+	sky2 = "MAGESKY1"
+}
+
+map TITLEMAP "Lexicon Opening"
+{
+	music = "D_DM2TTL"
+}
+

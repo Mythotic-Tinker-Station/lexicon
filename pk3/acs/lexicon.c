@@ -96,6 +96,7 @@ strict namespace
 
 	Script "Lexicon_Open" Open
 	{
+        ACS_NamedExecuteWithResult("Lexicon_AddMapSet", "DOM2");
 	}
 
 	Script "Lexicon_Enter" enter

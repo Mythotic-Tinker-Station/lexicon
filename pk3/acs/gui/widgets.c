@@ -355,6 +355,7 @@ strict namespace Widgets
 	function str GetTextColorClicked(int id) 	{ return obj[id].textcolor.clicked; }
 	function str GetTextColorCurrent(int id) 	{ return obj[id].textcolor.current; }
 
+
 	// text and image
 	function str GetText(int id) 				{ return obj[id].text; }
 	function str GetImage(int id) 				{ return obj[id].image; }
@@ -486,6 +487,7 @@ strict namespace Widgets
 	function void SetBackColorHovered(int id, str value) 	{ obj[id].backcolor.hovered = value; }
 	function void SetBackColorClicked(int id, str value) 	{ obj[id].backcolor.clicked = value; }
 	function void SetBackColorCurrent(int id, str value) 	{ obj[id].backcolor.current = value; }
+
 	function void SetTextColorNormal(int id, str value) 	{ obj[id].backcolor.normal = value; }
 	function void SetTextColorHovered(int id, str value) 	{ obj[id].backcolor.hovered = value; }
 	function void SetTextColorClicked(int id, str value) 	{ obj[id].backcolor.clicked = value; }
@@ -658,14 +660,12 @@ strict namespace Widgets
 				if(GetRenderText(id))
 				{
 					Screen::Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
-
 				}
 
 				SetPrevX1(id, GetX1(id));
 				SetPrevY1(id, GetY1(id));
 				SetPrevX2(id, GetX2(id));
 				SetPrevY1(id, GetY2(id));
-
 			}
 		}
 	}

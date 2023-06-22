@@ -108,17 +108,35 @@ strict namespace Gui
 		// setup the Screen
 		Screen::Init();
 
-		VoteMenu::Build();
-
-		while(1)
+        // if we are in debug mode
+		if(GetCVar("lexicon_debug_mode") == 1)
 		{
-			Cursor::Run();
-			VoteMenu::Run();
-			Widgets::Run();
+            DebugMenu::Build();
 
-			Screen::ResetHudIDs();
-			delay(1);
-		}
+            while(1)
+            {
+                Cursor::Run();
+                DebugMenu::Run();
+                Widgets::Run();
+
+                Screen::ResetHudIDs();
+                delay(1);
+            }
+        }
+        else
+        {
+            VoteMenu::Build();
+
+            while(1)
+            {
+                Cursor::Run();
+                VoteMenu::Run();
+                Widgets::Run();
+
+                Screen::ResetHudIDs();
+                delay(1);
+            }            
+        }
 	/*
 		// setup gui
 		guiInit();

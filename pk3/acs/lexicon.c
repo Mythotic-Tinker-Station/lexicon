@@ -52,6 +52,8 @@ strict namespace
 		str current;
 	};
 
+
+
 	struct mapset
 	{
 		str acronym;					// mapset acronym
@@ -60,6 +62,7 @@ strict namespace
 		str mapcount;					// mapset map count
 		str startmap;					// mapset starting map name
 		str thumbnail;					// mapset ui thumbnail
+        str expansion;                  // mapset expansion name
 		str pistol;						// mapset pistol
 		str fist;						// mapset fist
 		str previews[32];				// mapset screenshots
@@ -71,16 +74,24 @@ strict namespace
 		int startitem_count;			// amount of start items
 		int takeitem_count;				// amount of take items
 		int replacer_count;				// amount of replacer defines
-
 		int id;
 	};
 
+	struct expansion
+	{
+        str name;
+    };
 
-	struct mapset mapsets[2048];	    // holds all the mapset info
-	int mapset_count = 0;				// how many mapsets exist
+	struct mapset mapsets[2048];	        // holds all the mapset info
+	int mapset_count = 0;				    // how many mapsets exist
+
+    struct expansion expansions[2048];	    // holds all the expansion info
+    int expansion_count = 0;
+
 
 	#if 1
 		#include "util.c"
+        #include "gui/font.c"
 		#include "gui/screen.c"
 		#include "gui/cursor.c"
 		#include "gui/widgets.c"
@@ -95,6 +106,7 @@ strict namespace
 		#include "expansion.c"
 		#include "keys.c"
 	#endif
+
 
 	Script "Lexicon_Open" Open
 	{

@@ -21,6 +21,7 @@ strict namespace Button
 
 		Widgets::SetText(id, t);
 		Widgets::SetImage(id, "a");
+        Widgets::SetTextOffsetY(id, 9.0-(y/2.0));
 		return id;
 	}
 }
@@ -72,15 +73,15 @@ strict namespace ButtonCheck
 	{
 		if(!Widgets::GetHovered(id) && !Widgets::GetChecked(id))
 		{
-			Screen::Draw("UI_BTN1", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_BTN1", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 		}
 		else if(Widgets::GetHovered(id) && !Widgets::GetChecked(id))
 		{
-			Screen::Draw("UI_BTN2", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_BTN2", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 		}
 		else if(Widgets::GetChecked(id))
 		{
-			Screen::Draw("UI_BTN3", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_BTN3", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 		}
 	}
 }
@@ -93,7 +94,6 @@ strict namespace ButtonImage
 		int id = Button::Create(x, y, 192.0, 108.0, t);
 		//Widgets::SetText(id, t);
 		Widgets::SetImage(id, img);
-		Widgets::SetFont(id, "SMALLFONT");
 		Widgets::SetTextOffsetY(id, 7.0);
 		Widgets::SetBackColorNormal(id, "");
 		Widgets::SetBackColorHovered(id, "");
@@ -107,12 +107,12 @@ strict namespace ButtonImage
 
 		if(!Widgets::GetHovered(id))
 		{
-			Screen::Draw("UI_FADE", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
-			Screen::Draw("UI_MAP", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_FADE", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_MAP", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 		}
 		else
 		{
-			Screen::Draw("UI_MAP2", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+			Screen::DrawImage("UI_MAP2", "a", Widgets::GetBackColorCurrent(id), Widgets::GetX1(id), Widgets::GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 		}
 	}
 }

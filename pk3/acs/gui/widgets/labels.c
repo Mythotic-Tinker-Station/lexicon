@@ -9,7 +9,6 @@ strict namespace Label
 	{
 		int id = Widgets::Create();
 		Widgets::SetRenderText(id, true);
-		Widgets::SetFont(id, font);
 		Widgets::SetText(id, t);
 
 		Widgets::SetRectPosition(id, x, y, fixed(StrLen(t))*10.0, 1.0);

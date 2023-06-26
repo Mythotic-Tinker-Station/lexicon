@@ -25,6 +25,11 @@ namespace Expansion
 		// return the string from language
 		return text;
 	}
+	script "Lexicon_AddExpansion" (int exname)
+	{
+        expansions[expansion_count].name = exname;
+        expansion_count++;
+    }
 
 	script "Lexicon_AddMapSet" (int acronym)
 	{
@@ -35,6 +40,7 @@ namespace Expansion
 		mapsets[mapset_count].startmap			= getDynLangEntryEx(mapsets[mapset_count].acronym, "STARTMAP");
 		mapsets[mapset_count].thumbnail			= getDynLangEntryEx(mapsets[mapset_count].acronym, "THUMBNAIL");
 		mapsets[mapset_count].id				= mapset_count;
+        mapsets[mapset_count].expansion         = expansions[expansion_count].name;
 
 		if(mapsets[mapset_count].thumbnail == "_LANG_UNDEFINED_")
 		{

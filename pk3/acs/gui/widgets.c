@@ -82,7 +82,7 @@ strict namespace Widgets
 
 		str text;										// text to display
 		str image;										// image to display
-		str font;										// font of the text to display
+		int font;										// font of the text to display
 
 		// flags
 		bool alive;										// is this widget alive?(false marks this to be overwritten by a new widget)
@@ -171,7 +171,7 @@ strict namespace Widgets
 		obj[id].textcolor.current	= "Gray";
 		obj[id].text				= "";
 		obj[id].image				= "a";
-		obj[id].font				= "SONICFONT";
+		obj[id].font				= Font::font_fancysmall;
 
 		obj[id].arg1int 			= 0;
 		obj[id].arg2int 			= 0;
@@ -359,7 +359,7 @@ strict namespace Widgets
 	// text and image
 	function str GetText(int id) 				{ return obj[id].text; }
 	function str GetImage(int id) 				{ return obj[id].image; }
-	function str GetFont(int id) 				{ return obj[id].font; }
+	function int GetFont(int id) 				{ return obj[id].font; }
 
 	// flags
 	function bool GetAlive(int id) 				{ return obj[id].alive; }
@@ -496,7 +496,7 @@ strict namespace Widgets
 	// text and image
 	function void SetText(int id, str value) 				{  obj[id].text = value; }
 	function void SetImage(int id, str value) 				{  obj[id].image = value; }
-	function void SetFont(int id, str value) 				{  obj[id].font = value; }
+	function void SetFont(int id, int value) 				{  obj[id].font = value; }
 
 	// flags
 	function void SetAlive(int id, bool value) 				{ obj[id].alive = value; }
@@ -650,7 +650,7 @@ strict namespace Widgets
 				// should we render the back image?
 				if(GetRenderImage(id))
 				{
-					Screen::Draw(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+					Screen::DrawImage(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 				}
 
 				// call object's update callback
@@ -659,7 +659,7 @@ strict namespace Widgets
 				// should we render the text?
 				if(GetRenderText(id))
 				{
-					Screen::Draw(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
+					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
 				}
 
 				SetPrevX1(id, GetX1(id));

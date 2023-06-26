@@ -108,12 +108,12 @@ strict namespace Cursor
 			clicked = false;
 		}
 
-		Screen::Draw("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 1);
+		Screen::DrawImage("CURSORFONT", "a", getCVarString("lexicon_cursor_color"), pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 1);
 
 		// render shadow
 		if((bool)getCVar("lexicon_cursor_shadow") == true)
 		{
-			Screen::Draw("CURSORFONT", "b", "", pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 2);
+			Screen::DrawImage("CURSORFONT", "b", "", pos.x, pos.y, Screen::XALIGN_LEFT, Screen::YALIGN_TOP, 2);
 		}
 	}
 }

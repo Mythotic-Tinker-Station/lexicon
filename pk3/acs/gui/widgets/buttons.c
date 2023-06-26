@@ -21,7 +21,8 @@ strict namespace Button
 
 		Widgets::SetText(id, t);
 		Widgets::SetImage(id, "a");
-        Widgets::SetTextOffsetY(id, 9.0-(y/2.0));
+
+        Widgets::SetTextOffsetY(id, Font::GetCharHeight(Widgets::GetFont(id))-(y/2.0));
 		return id;
 	}
 }

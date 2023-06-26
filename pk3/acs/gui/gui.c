@@ -105,6 +105,9 @@ strict namespace Gui
 		// check if we are the local client
 		if(!clientCheck()) { terminate; }
 
+        // setup fonts
+        Font::Init();
+
 		// setup the Screen
 		Screen::Init();
 

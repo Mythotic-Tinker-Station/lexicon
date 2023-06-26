@@ -7,7 +7,7 @@ strict namespace DebugMenu
 	{
 		SetPlayerProperty(0, ON, PROP_TOTALLYFROZEN);
 		// Title
-		lbl_title = Label::Create(112.0, 32.0, "CP437_BIG", "Please cast your vote:");
+		lbl_title = Label::Create(112.0, 32.0, Font::font_fancybig, "Please cast your vote:");
 
 		// mapset buttons
 		for(int i = 0; i < mapset_count; i++)
@@ -23,7 +23,7 @@ strict namespace DebugMenu
 
 		if(GetCVar("lexicon_debug_mode") == 1)
 		{
-			lbl_debug = Label::Create(Screen::GetWidth()-144.0, 32.0, "CP437", "Debug mode:");
+			lbl_debug = Label::Create(Screen::GetWidth()-144.0, 32.0, Font::font_fancybig, "Debug mode:");
 			Widgets::SetTextOffsetX(lbl_debug, -4.0);
 
 			// instakiller button

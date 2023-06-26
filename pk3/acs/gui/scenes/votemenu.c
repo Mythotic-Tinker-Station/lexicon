@@ -27,10 +27,10 @@ strict namespace VoteMenu
 		}
 
         // expansion label
-		lbl_expansions = Label::Create(200.0, 200.0, "FANCYFONTBIG", "Expansions");
+		lbl_expansions = Label::Create(200.0, 200.0, Font::font_fancybig, "Expansions");
 
         // mapset label
-        lbl_expansions = Label::Create(Screen::GetCenterX()-((16.0*7.0)/2.0), 200.0, "FANCYFONTBIG", "Mapsets");
+        lbl_expansions = Label::Create(Screen::GetCenterX()-((16.0*7.0)/2.0), 200.0, Font::font_fancybig, "Mapsets");
     }
 
 	function void Run()

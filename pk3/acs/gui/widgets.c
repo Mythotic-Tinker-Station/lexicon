@@ -270,7 +270,7 @@ strict namespace Widgets
 		obj[id].event_hovered_count++;
 	}
 
-	// hook a function to the hovered event
+	// hook a function to the moved event
 	function void AddMovedHook(int id, void function(int)? func)
 	{
 		obj[id].event_moved[obj[id].event_moved_count] = func;

@@ -1,21 +1,10 @@
 
 UIFONT
 {
-	A UI_BT24S
-	B UI_BT64S
-	C UI_BT96S
-	D UI_BT128S
-	E UI_BTMAP
-    F UI_BT24R
-    G UI_PN_TL
-    H UI_PN_T
-    I UI_PN_TR
-    J UI_PN_ML
-    K UI_PN_M
-    L UI_PN_MR    
-    M UI_PN_BL
-    N UI_PN_B
-    O UI_PN_BR
+    A SQUARE08
+    B SQUARE16
+    C SQUARE32
+    D SQUARE64
 }
 
 CURSORFONT

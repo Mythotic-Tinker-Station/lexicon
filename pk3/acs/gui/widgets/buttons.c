@@ -6,11 +6,13 @@
 
 strict namespace Button
 {
-	function int Create(fixed x, fixed y, fixed width, fixed height, str t)
+    int panels[1024];
+    int panelcount;
+	function int Create(fixed x, fixed y, fixed w, fixed h, str t)
 	{
 		int id = Widgets::Create();
 
-		Widgets::SetRectPosition(id, x, y, width, height);
+		Widgets::SetRectPosition(id, x, y, w, h);
 
 		// make it clickable and hoverable
 		Widgets::SetClickable(id, true);
@@ -23,41 +25,23 @@ strict namespace Button
 		Widgets::SetImage(id, "a");
 
         Widgets::SetTextOffsetY(id, Font::GetCharHeight(Widgets::GetFont(id))-(y/2.0));
+
+        Widgets::AddMovedHook(id, Event_Move);
+
+        panels[id] = Panel::Create(x, y, w, h);
+        panelcount++;
+
 		return id;
 	}
+
+    function void Event_Move(int id)
+	{
+        Widgets::SetRectPosition(panels[id], Widgets::GetX1(id), Widgets::GetY1(id), Widgets::GetWidth(id), Widgets::GetHeight(id));
+    }
 }
 
-strict namespace Button64
-{
-	function int Create(fixed x, fixed y, str t)
-	{
-		int id = Button::Create(x, y, 64.0, 24.0, t);
-		Widgets::SetImage(id, "b");
-		return id;
-	}
-}
 
-strict namespace Button96
-{
-	function int Create(fixed x, fixed y, str t)
-	{
-		int id = Button::Create(x, y, 96.0, 24.0, t);
-		Widgets::SetText(id, t);
-		Widgets::SetImage(id, "c");
-		return id;
-	}
-}
 
-strict namespace Button128
-{
-	function int Create(fixed x, fixed y, str t)
-	{
-		int id = Button::Create(x, y, 128.0, 24.0, t);
-		Widgets::SetText(id, t);
-		Widgets::SetImage(id, "d");
-		return id;
-	}
-}
 
 strict namespace ButtonCheck
 {

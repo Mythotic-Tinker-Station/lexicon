@@ -105,6 +105,8 @@ strict namespace Gui
 		// check if we are the local client
 		if(!clientCheck()) { terminate; }
 
+        SetPlayerProperty(1, 1, PROP_TOTALLYFROZEN);
+
         // setup fonts
         Font::Init();
 

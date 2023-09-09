@@ -116,12 +116,14 @@ strict namespace Gui
         // if we are in debug mode
 		if(GetCVar("lexicon_debug_mode") == 1)
 		{
-            DebugMenu::Build();
+            //DebugMenu::Build();
 
             while(1)
             {
+                
+
                 Cursor::Run();
-                DebugMenu::Run();
+                //DebugMenu::Run();
                 Widgets::Run();
 
                 Screen::ResetHudIDs();
@@ -134,9 +136,18 @@ strict namespace Gui
 
             while(1)
             {
+
                 Cursor::Run();
                 VoteMenu::Run();
                 Widgets::Run();
+
+                // cursor x
+                Screen::DrawText(Font::font_fancysmall, "CX:", "White", 20.0, 10.0);
+                Screen::DrawFixed(Font::font_fancysmall, Cursor::GetX(), "White", 50.0, 10.0);
+
+                // cursor y
+                Screen::DrawText(Font::font_fancysmall, "CY:", "White", 20.0, 20.0);
+                Screen::DrawFixed(Font::font_fancysmall, Cursor::GetY(), "White", 50.0, 20.0);
 
                 Screen::ResetHudIDs();
                 delay(1);

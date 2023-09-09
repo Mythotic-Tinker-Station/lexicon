@@ -20,7 +20,7 @@ strict namespace VoteMenu
 			Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetClick);
 		}
 */
-
+/*
         // expansion buttons
 		for(int i = 0; i < expansion_count; i++)
 		{
@@ -32,13 +32,15 @@ strict namespace VoteMenu
             Widgets::SetTextColorNormal(expansion_buttons[i], "White");
 
 		}
+*/
 
+        test = Button::Create(100.0, 100.0, 200.0, 24.0, "test");
 
         // expansion label
-		lbl_expansions = Label::Create(200.0, 200.0, Font::font_fancybig, "Expansions");
+		//lbl_expansions = Label::Create(200.0, 200.0, Font::font_fancybig, "Expansions");
 
         // mapset label
-        lbl_expansions = Label::Create(Screen::GetCenterX()-((16.0*7.0)/2.0), 200.0, Font::font_fancybig, "Mapsets");
+        //lbl_expansions = Label::Create(Screen::GetCenterX()-((16.0*7.0)/2.0), 200.0, Font::font_fancybig, "Mapsets");
     }
 
 	function void Run()
@@ -64,13 +66,14 @@ strict namespace VoteMenu
         Screen::DrawImage("VIGL", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
         Screen::DrawImage("VIGR", "a", "Black", Screen::GetWidth()-478.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 
+/*
         // expansion buttons
         for(int i = 0; i < expansion_count; i++)
 		{
             Widgets::SetVisible(expansion_buttons[i], true);
-            Widgets::SetRectPosition(expansion_buttons[i], 200.0, 230.0+(fixed(i)*24.0), 128.0, 24.0);
+            Widgets::SetRectPosition(expansion_buttons[i], 200.0, 230.0+(fixed(i)*32.0), 128.0, 24.0);
         }
-
+*/
 	}
 
 	function void Event_MapsetClick(int id)

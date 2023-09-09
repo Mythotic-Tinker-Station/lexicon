@@ -1,3 +1,5 @@
+
+/*
 strict namespace DebugMenu
 {
 	int buttons[256];
@@ -9,17 +11,19 @@ strict namespace DebugMenu
 		// Title
 		lbl_title = Label::Create(112.0, 32.0, Font::font_fancybig, "Please cast your vote:");
 
+
 		// mapset buttons
 		for(int i = 0; i < mapset_count; i++)
 		{
 			fixed x = fixed(i % int((Screen::GetWidth()/192.0)-2.0))*192.0;
 			fixed y = fixed(i / int((Screen::GetHeight()/108.0)-2.0))*108.0;
 
-			buttons[i] = ButtonImage::Create(128.0+x, 96.0+y, mapsets[i].thumbnail, mapsets[i].name);
+			buttons[i] = Button::Create(128.0+x, 96.0+y, mapsets[i].thumbnail, mapsets[i].name);
 			Widgets::SetArg1Str(buttons[i], mapsets[i].startmap);
 			Widgets::SetArg2Int(buttons[i], mapsets[i].id);
 			Widgets::AddClickedHook(buttons[i], Event_MapsetClick);
 		}
+
 
 		if(GetCVar("lexicon_debug_mode") == 1)
 		{
@@ -79,3 +83,4 @@ strict namespace DebugMenu
 	}
 
 }
+*/

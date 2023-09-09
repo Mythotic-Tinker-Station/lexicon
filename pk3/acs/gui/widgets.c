@@ -95,8 +95,10 @@ strict namespace Widgets
 		bool checkable;									// is this widget checkable?
 		bool render_text;								// should this widget render text?
 		bool render_image;								// should this widget render an image?
+        bool render_back;                               // should this widget render its background?
 
 		// internal vars
+        int panelsize;                                  // size of the images to use for the background
 		bool hovered;									// true when the mouse is hovering over this widget
 		bool clicked;									// true when the mouse is clicking this widget
 		bool checked;									// true when the widget is checked(this only works if click_repeat is false)
@@ -172,6 +174,7 @@ strict namespace Widgets
 		obj[id].text				= "";
 		obj[id].image				= "a";
 		obj[id].font				= Font::font_fancysmall;
+        obj[id].panelsize           = 16;
 
 		obj[id].arg1int 			= 0;
 		obj[id].arg2int 			= 0;
@@ -199,6 +202,7 @@ strict namespace Widgets
 		obj[id].checked			= false;
 		obj[id].render_text		= false;
 		obj[id].render_image	= false;
+        obj[id].render_back 	= false;
 
 		// null the hooks
 		for(int i = 0; i < MAX_HOOKS; i++)
@@ -372,6 +376,7 @@ strict namespace Widgets
 	function bool GetCheckable(int id) 			{ return obj[id].checkable; }
 	function bool GetRenderText(int id) 		{ return obj[id].render_text; }
 	function bool GetRenderImage(int id) 		{ return obj[id].render_image; }
+    function bool GetRenderBack(int id) 		{ return obj[id].render_back; }
 
 	// event properties
 	function bool GetHovered(int id) 			{ return obj[id].hovered; }
@@ -472,10 +477,10 @@ strict namespace Widgets
 	// set the x1,y1,x2,y2 of the widget
 	function void SetRectPosition(int id, fixed x1, fixed y1, fixed w, fixed h)
 	{
-		obj[id].pos.x1 = x1;
-		obj[id].pos.y1 = y1;
-		obj[id].pos.x2 = x1+w;
-		obj[id].pos.y2 = y1+h;
+		obj[id].pos.x1 = fixed(int(x1));
+		obj[id].pos.y1 = fixed(int(y1));
+		obj[id].pos.x2 = fixed(int(x1+w));
+		obj[id].pos.y2 = fixed(int(y1+h));
 		CalcSizes(id);
 	}
 
@@ -509,6 +514,7 @@ strict namespace Widgets
 	function void SetCheckable(int id, bool value) 			{ obj[id].checkable = value; }
 	function void SetRenderText(int id, bool value) 		{ obj[id].render_text = value; }
 	function void SetRenderImage(int id, bool value) 		{ obj[id].render_image = value; }
+    function void SetRenderBack(int id, bool value) 		{ obj[id].render_back = value; }
 
 	// event properties
 	function void SetHovered(int id, bool value) 			{ obj[id].hovered = value; }
@@ -555,7 +561,7 @@ strict namespace Widgets
 					}
 
 					// is cursor within bounds?
-					if(Cursor::GetX() > GetX1(id) && Cursor::GetX() < GetX2(id) && Cursor::GetY() > GetY1(id) && Cursor::GetY() < GetY2(id))
+					if(Cursor::GetX() >= GetX1(id) && Cursor::GetX() <= GetX2(id) && Cursor::GetY() >= GetY1(id) && Cursor::GetY() <= GetY2(id))
 					{
 						// is this object hoverable?
 						if(GetHoverable(id))
@@ -647,20 +653,66 @@ strict namespace Widgets
 					obj[id].textcolor.current = obj[id].textcolor.disabled;
 				}
 
+				// call object's update callback
+				CallUpdateHooks(id);
+
 				// should we render the back image?
 				if(GetRenderImage(id))
 				{
 					Screen::DrawImage(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 				}
 
-				// call object's update callback
-				CallUpdateHooks(id);
 
 				// should we render the text?
 				if(GetRenderText(id))
 				{
 					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
 				}
+
+                if(GetRenderBack(id))
+                {
+                    // this is broken in zandronum
+                    //SetHudClipRect(int(Widgets::GetX1(id)), int(Widgets::GetY1(id)), int(Widgets::GetWidth(id)), int(Widgets::GetHeight(id)), 0, true);
+
+                    fixed size = fixed(obj[id].panelsize);
+                    fixed cols = fixed(int(GetWidth(id) / size))-1.0;
+                    fixed rows = fixed(int(GetHeight(id) / size))-1.0;
+
+                    str c = "A";
+                    switch(size)
+                    {
+                        case 8.0: c = "A"; break;
+                        case 16.0: c = "B"; break;
+                        case 32.0: c = "C"; break;
+                        case 64.0: c = "D"; break;
+                        case 128.0: c = "E"; break;
+                    }
+
+                    // top right and middle
+                    for(fixed x = 0.0; x <= cols; x += 1.0)
+                    {
+                        for(fixed y = 0.0; y <= rows; y += 1.0)
+                        {
+                            Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY1(id)+(y*size), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+                        }
+                    }
+
+                    // right
+                    for(fixed y = 0.0; y <= rows; y += 1.0)
+                    {
+                        Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY1(id)+(y*size), Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
+                    }
+
+                    // bottom
+                    for(fixed x = 0.0; x <= cols; x += 1.0)
+                    {
+                       Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY2(id)-size, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+                    }
+
+                    // bottom right corner
+                    Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY2(id)-size, Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
+                }
+
 
 				SetPrevX1(id, GetX1(id));
 				SetPrevY1(id, GetY1(id));
@@ -670,3 +722,10 @@ strict namespace Widgets
 		}
 	}
 }
+
+/*
+
+
+
+
+*/

@@ -90,6 +90,42 @@ strict namespace Screen
 		}
 		return nextid;
 	}
+
+	// draw fixed number
+	function int DrawFixed(int font, fixed num, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
+	{
+		Font::Set(font);
+
+        nextid--;
+		if(id > -1)
+		{
+			hudMessage(s:"\c[", s:color, s:"]", f:num; 0, id, 0, x+xalign, y+yalign, 0.1);
+		}
+		else
+		{
+			hudMessage(s:"\c[", s:color, s:"]", f:num; 0, nextid, 0, x+xalign, y+yalign, 0.1);
+		}
+		return nextid;
+	}
+
+
+	// draw fixed number
+	function int DrawInt(int font, int num, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
+	{
+		Font::Set(font);
+
+        nextid--;
+		if(id > -1)
+		{
+			hudMessage(s:"\c[", s:color, s:"]", i:num; 0, id, 0, x+xalign, y+yalign, 0.1);
+		}
+		else
+		{
+			hudMessage(s:"\c[", s:color, s:"]", i:num; 0, nextid, 0, x+xalign, y+yalign, 0.1);
+		}
+		return nextid;
+	}
+
 	// draw text or an image(alias for hudmessage with font arg and auto id)
 	function int DrawImage(str image, str msg, str color, fixed x, fixed y, fixed xalign = 0.0, fixed yalign = 0.0, int id = -1)
 	{

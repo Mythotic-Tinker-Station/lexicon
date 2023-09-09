@@ -652,23 +652,7 @@ strict namespace Widgets
 					obj[id].backcolor.current = obj[id].backcolor.disabled;
 					obj[id].textcolor.current = obj[id].textcolor.disabled;
 				}
-
-				// call object's update callback
-				CallUpdateHooks(id);
-
-				// should we render the back image?
-				if(GetRenderImage(id))
-				{
-					Screen::DrawImage(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
-				}
-
-
-				// should we render the text?
-				if(GetRenderText(id))
-				{
-					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
-				}
-
+                
                 if(GetRenderBack(id))
                 {
                     // this is broken in zandronum
@@ -712,6 +696,24 @@ strict namespace Widgets
                     // bottom right corner
                     Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY2(id)-size, Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
                 }
+
+				// call object's update callback
+				CallUpdateHooks(id);
+
+				// should we render the back image?
+				if(GetRenderImage(id))
+				{
+					Screen::DrawImage(GetImage(id), "a", GetBackColorCurrent(id), GetX1(id), GetY1(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+				}
+
+
+				// should we render the text?
+				if(GetRenderText(id))
+				{
+					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
+				}
+
+
 
 
 				SetPrevX1(id, GetX1(id));

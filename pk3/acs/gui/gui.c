@@ -138,8 +138,9 @@ strict namespace Gui
             {
 
                 Cursor::Run();
-                VoteMenu::Run();
+                VoteMenu::RunBG();
                 Widgets::Run();
+                VoteMenu::RunBGVignette();
 
                 // cursor x
                 Screen::DrawText(Font::font_fancysmall, "CX:", "White", 20.0, 10.0);

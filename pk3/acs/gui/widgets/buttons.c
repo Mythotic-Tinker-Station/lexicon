@@ -16,14 +16,12 @@ strict namespace Button
 		Widgets::SetClickable(id, true);
 		Widgets::SetHoverable(id, true);
 
-		//Widgets::SetRenderText(id, true);
-		//Widgets::SetRenderImage(id, true);
+		Widgets::SetRenderText(id, true);
         Widgets::SetRenderBack(id, true);
 
 		Widgets::SetText(id, t);
-		Widgets::SetImage(id, "a");
 
-        Widgets::SetTextOffsetY(id, Font::GetCharHeight(Widgets::GetFont(id))-(y/2.0));
+        Widgets::SetTextOffsetY(id, Font::GetCharHeight(Widgets::GetFont(id)));
 
 		return id;
 	}

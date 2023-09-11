@@ -125,5 +125,18 @@ strict namespace
 		Replacer::StartItems();
 	}
 
+    Script "Lexicon_Test" (void)
+    {
+        ChangeLevel("EPIC01", 0, CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETHEALTH, -1);
+		SetCVar("lexicon_current_mapset", 0);
+		SetPlayerProperty(0, OFF, PROP_TOTALLYFROZEN);
+    }
+
+    Script "Lexicon_Test2" (void)
+    {
+        ResetMap();
+    }
+
+
 }
 

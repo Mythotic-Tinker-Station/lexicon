@@ -305,8 +305,6 @@ namespace Replacer
 		//{3004, "SillyBot_ZombieMan"   , "100"},	// 145
 	};
 
-
-
 	int randomizer_monsters[16] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
 	int randomizer_monsters_stealth[28] = { 4, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117, 131, 132, 133, 134, 135, 136, 137, 138, 149, 140, 141, 142 };
 	int randomizer_monsters_boss[18] = { 2, 4, 9, 51, 57, 58, 59, 60, 61, 62, 64, 77, 112, 113, 114, 115, 116, 117 };
@@ -323,10 +321,13 @@ namespace Replacer
 
 	int mapset_current = 0;
 
-	Script "Re:b:lacer" (void)
+	Script "Re:b:lacer" (int a4)
 	{
+
 		mapset_current = GetCVar("lexicon_current_mapset");
-		int newobj = GetActorProperty(0, APROP_Score);
+		int newobj = a4 % 10000;
+        printbold(i:a4, s:", ", i:(a4 / 10000) % 1000, s:", ", i:newobj);
+
 
 		str class = "Unknown";
 		str orgclass = "Unknown";
@@ -349,7 +350,6 @@ namespace Replacer
 				}
 				Thing_Remove(22390);
 			}
-
 		}
 
 		// unknown actor
@@ -735,7 +735,7 @@ namespace Replacer
 
 		SetPointer(AAPTR_TRACER, tid);
 		GiveInventory("TransferSpecialProc", 1); // <-- given to spawner, not spawnee!
-		SetThingSpecial(tid, _spec, _args0, _args1, _args2, _args3, _args4);
+		SetThingSpecial(tid, (_spec / 10000) % 1000, _args0, _args1, _args2, _args3, _args4);
 		Thing_ChangeTid(tid, ActivatorTid());
 		Thing_ChangeTid(0, 0); // release tid from spawner itself
 		//printbold(s:"\c-Spawned ", s:"\cv", s:class, s:"\c- at (", f:x, s:", ", f:y, s:", ", f:z, s:"; angle ", f:angle, s:").");

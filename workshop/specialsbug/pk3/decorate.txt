@@ -1,0 +1,17 @@
+
+
+
+Actor "Special_Test" 31999
+{
+	+NOINTERACTION
+	+NOSECTOR
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 2
+		TNT1 A 0 ACS_NamedExecuteWithResult("Specials_Test", special)
+		TNT1 A 100
+		Stop
+	}
+}

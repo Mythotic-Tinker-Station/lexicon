@@ -1,31 +1,22 @@
 clearepisodes
 
-GameInfo
-{
-
-}
-
-episode HUB
+episode VR
 {
 	name = "The Sentinel's Lexicon"
 	key = "1"
 }
 
-episode MAP01
+map VR "Inside the Lexicon"
 {
-	name = "Doom 2"
-	key = "2"
-}
-
-map HUB "Inside the Lexicon"
-{
+	music = "LXHBMS00"
 	levelnum = 99
-	sky1 = "0TODSKY1"
-	sky2 = "MAGESKY1"
+	sky1 = "_14"
 }
 
-map TITLEMAP "Lexicon Opening"
-{
-	music = "D_DM2TTL"
-}
+include "mapinfo/_SingleMaps.txt" // For wads that only have one map
+
+// Mapsets
+
+
+// Slaughtermaps
 

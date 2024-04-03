@@ -1,0 +1,217 @@
+/*
+// Texture definitions
+
+// Lexicon
+Texture TITLEPIC, 2560, 1440
+{
+   XScale 8.0
+   YScale 8.0
+	WorldPanning
+	patch TITLEPIC, 0, 0
+}
+
+// white
+graphic CN00, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { } }
+graphic CN01, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { } }
+graphic CN02, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { } }
+graphic CN03, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { } }
+graphic CN04, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { } }
+graphic CN05, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { } }
+graphic CN06, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { } }
+graphic CN07, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { } }
+
+// white( x flip )
+graphic CN10, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { FlipX } }
+graphic CN11, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { FlipX } }
+graphic CN12, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { FlipX } }
+graphic CN13, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { FlipX } }
+graphic CN14, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { FlipX } }
+graphic CN15, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { FlipX } }
+graphic CN16, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { FlipX } }
+graphic CN17, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { FlipX } }
+
+// white( y flip )
+graphic CN20, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { FlipY } }
+graphic CN21, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { FlipY } }
+graphic CN22, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { FlipY } }
+graphic CN23, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { FlipY } }
+graphic CN24, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { FlipY } }
+graphic CN25, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { FlipY } }
+graphic CN26, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { FlipY } }
+graphic CN27, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { FlipY } }
+
+
+
+
+// red
+graphic CN30, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN31, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN32, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN33, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN34, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN35, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN36, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=32:47" } }
+graphic CN37, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=32:47" } }
+
+// red( x flip )
+graphic CN40, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN41, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN42, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN43, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN44, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN45, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN46, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=32:47" FlipX } }
+graphic CN47, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=32:47" FlipX } }
+
+// red( y flip )
+graphic CN50, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN51, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN52, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN53, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN54, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN55, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN56, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=32:47" FlipY } }
+graphic CN57, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=32:47" FlipY } }
+
+
+
+
+
+// green
+graphic CN60, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN61, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN62, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN63, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN64, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN65, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN66, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=112:127" } }
+graphic CN67, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=112:127" } }
+
+// green( x flip )
+graphic CN70, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN71, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN72, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN73, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN74, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN75, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN76, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=112:127" FlipX } }
+graphic CN77, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=112:127" FlipX } }
+
+// green( y flip )
+graphic CN80, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN81, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN82, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN83, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN84, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN85, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN86, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=112:127" FlipY } }
+graphic CN87, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=112:127" FlipY } }
+
+
+
+// blue
+graphic CN90, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN91, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN92, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN93, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN94, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN95, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN96, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=198:207" } }
+graphic CN97, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=198:207" } }
+
+// blue( x flip )
+graphic CN100, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN101, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN102, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN103, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN104, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN105, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN106, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=198:207" FlipX } }
+graphic CN107, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=198:207" FlipX } }
+
+// blue( y flip )
+graphic CN110, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN111, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN112, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN113, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN114, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN115, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN116, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=198:207" FlipY } }
+graphic CN117, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=198:207" FlipY } }
+
+
+
+
+
+
+// yellow
+graphic CN120, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN121, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN122, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN123, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN124, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN125, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN126, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=227:231" } }
+graphic CN127, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=227:231" } }
+
+// yellow( x flip )
+graphic CN130, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN131, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN132, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN133, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN134, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN135, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN136, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=227:231" FlipX } }
+graphic CN137, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=227:231" FlipX } }
+
+// yellow( y flip )
+graphic CN140, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN141, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN142, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN143, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN144, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN145, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN146, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=227:231" FlipY } }
+graphic CN147, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=227:231" FlipY } }
+
+
+
+
+
+// black
+graphic CN150, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN151, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN152, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN153, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN154, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN155, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN156, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=105:111" } }
+graphic CN157, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=105:111" } }
+
+// black( x flip )
+graphic CN160, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN161, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN162, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN163, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN164, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN165, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN166, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=105:111" FlipX } }
+graphic CN167, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=105:111" FlipX } }
+
+// black( y flip )
+graphic CN170, 64, 64 { XScale 4 YScale 4 patch CONFA0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN171, 64, 64 { XScale 4 YScale 4 patch CONFB0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN172, 64, 64 { XScale 4 YScale 4 patch CONFC0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN173, 64, 64 { XScale 4 YScale 4 patch CONFD0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN174, 64, 64 { XScale 4 YScale 4 patch CONFE0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN175, 64, 64 { XScale 4 YScale 4 patch CONFF0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN176, 64, 64 { XScale 4 YScale 4 patch CONFG0, 0, 0 { Translation "80:111=105:111" FlipY } }
+graphic CN177, 64, 64 { XScale 4 YScale 4 patch CONFH0, 0, 0 { Translation "80:111=105:111" FlipY } }
+
+Texture DANG666, 512, 512
+{
+	XScale 16.0
+	YScale 16.0
+	WorldPanning
+	Patch DANG666, 0, 0
+}

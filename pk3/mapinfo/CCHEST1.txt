@@ -1,0 +1,361 @@
+// Community Chest 1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CCH101 "pistol panic"
+{
+	titlepatch = "CCH1V00"
+	next = "CCH102"
+	secretnext = "CCH102"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH102 "nullth precinct"
+{
+	titlepatch = "CCH1V01"
+	next = "CCH103"
+	secretnext = "CCH103"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH103 "ground floor"
+{
+	titlepatch = "CCH1V02"
+	next = "CCH104"
+	secretnext = "CCH104"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH104 "outer base"
+{
+	titlepatch = "CCH1V03"
+	next = "CCH105"
+	secretnext = "CCH105"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH105 "the forgotten prison"
+{
+	titlepatch = "CCH1V04"
+	next = "CCH106"
+	secretnext = "CCH106"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH106 "goin' down"
+{
+	titlepatch = "CCH1V05"
+	next = "CCH107"
+	secretnext = "CCH107"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH107 "the boardwalk"
+{
+	titlepatch = "CCH1V06"
+	next = "CCH108"
+	secretnext = "CCH108"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+	Map07Special
+}
+
+map CCH108 "battery"
+{
+	titlepatch = "CCH1V07"
+	next = "CCH109"
+	secretnext = "CCH109"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH109 "flow"
+{
+	titlepatch = "CCH1V08"
+	next = "CCH110"
+	secretnext = "CCH110"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH110 "termination center"
+{
+	titlepatch = "CCH1V09"
+	next = "CCH111"
+	secretnext = "CCH111"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH111 "mandrel"
+{
+	titlepatch = "CCH1V10"
+	next = "CCH112"
+	secretnext = "CCH112"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH112 "no tomorrow"
+{
+	titlepatch = "CCH1V11"
+	next = "CCH113"
+	secretnext = "CCH113"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH113 "another dead hero"
+{
+	titlepatch = "CCH1V12"
+	next = "CCH114"
+	secretnext = "CCH114"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH114 "substation"
+{
+	titlepatch = "CCH1V13"
+	next = "CCH115"
+	secretnext = "CCH115"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH115 "internal reaches"
+{
+	titlepatch = "CCH1V14"
+	next = "CCH116"
+	secretnext = "CCH131"
+	sky1 = "SKY2"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH116 "methods of fear"
+{
+	titlepatch = "CCH1V15"
+	next = "CCH117"
+	secretnext = "CCH117"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH117 "infliction of hate"
+{
+	titlepatch = "CCH1V16"
+	next = "CCH118"
+	secretnext = "CCH118"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH118 "sudden death"
+{
+	titlepatch = "CCH1V17"
+	next = "CCH119"
+	secretnext = "CCH119"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH119 "monster mansion"
+{
+	titlepatch = "CCH1V18"
+	next = "CCH120"
+	secretnext = "CCH120"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH120 "technodrome"
+{
+	titlepatch = "CCH1V19"
+	next = "CCH121"
+	secretnext = "CCH121"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH121 "avenger"
+{
+	titlepatch = "CCH1V20"
+	next = "CCH122"
+	secretnext = "CCH122"
+	sky1 = "CCH10232"
+	music = "D_CCH121"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH122 "future grave"
+{
+	titlepatch = "CCH1V21"
+	next = "CCH123"
+	secretnext = "CCH123"
+	sky1 = "CCH10232"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH123 "blood runners"
+{
+	titlepatch = "CCH1V22"
+	next = "CCH124"
+	secretnext = "CCH124"
+	sky1 = "CCH10232"
+	music = "D_CCH123"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH124 "bring evil upon thee"
+{
+	titlepatch = "CCH1V23"
+	next = "CCH125"
+	secretnext = "CCH125"
+	sky1 = "CCH10232"
+	music = "D_CCH124"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH125 "blood demesne"
+{
+	titlepatch = "CCH1V24"
+	next = "CCH126"
+	secretnext = "CCH126"
+	sky1 = "CCH10232"
+	music = "D_CCH125"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH126 "breakout"
+{
+	titlepatch = "CCH1V25"
+	next = "CCH127"
+	secretnext = "CCH127"
+	sky1 = "CCH10232"
+	music = "D_CCH126"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH127 "afterlife"
+{
+	titlepatch = "CCH1V26"
+	next = "CCH128"
+	secretnext = "CCH128"
+	sky1 = "CCH10232"
+	music = "D_CCH127"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH128 "necrophobia"
+{
+	titlepatch = "CCH1V27"
+	next = "CCH129"
+	secretnext = "CCH129"
+	sky1 = "CCH10232"
+	music = "$MUSIC_TENSE"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH129 "citadel at the edge of eternity"
+{
+	titlepatch = "CCH1V28"
+	next = "CCH130"
+	secretnext = "CCH130"
+	sky1 = "CCH10232"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH130 "evil itself"
+{
+	titlepatch = "CCH1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CCH10232"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+	allowmonstertelefrags
+}
+
+map CCH131 "mt. chaos"
+{
+	titlepatch = "CCH1V30"
+	next = "CCH116"
+	secretnext = "CCH132"
+	sky1 = "CCH10232"
+	music = "$MUSIC_EVIL"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}
+
+map CCH132 "the citadel"
+{
+	titlepatch = "CCH1V31"
+	next = "CCH116"
+	secretnext = "CCH116"
+	sky1 = "CCH10232"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "CCH1INT"
+	EnterPic = "CCH1INT"
+}

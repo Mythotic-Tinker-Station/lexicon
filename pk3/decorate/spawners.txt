@@ -37,7 +37,7 @@ Actor LexiconActorSpawnerBase
 	+SOLID
 	+NOINTERACTION
 	+NOSECTOR
-	var int spawner_id;
+	var int user_id;
 	States
 	{
 	Spawn:
@@ -55,7 +55,7 @@ Actor LexiconActorSpawner1 : LexiconActorSpawnerBase 128
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 A_SetUserVar("spawner_id", 1)
-		goto Super::Spawn+1
+		TNT1 A 0 A_SetUserVar("user_id", 1)
+		goto Super::Spawn
 	}
 }

@@ -23,7 +23,7 @@ function bool clientCheck(void)
 }
 
 int _spec, _args0, _args1, _args2, _args3, _args4;
-function int actorSpawn(int class)
+function int actorSpawn(str class)
 {
 	// Spawn actor
 	int x = GetActorX(0);

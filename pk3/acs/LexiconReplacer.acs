@@ -1,11 +1,12 @@
-Script "LexiconActorSpawner" (int id)
+Script "LexiconActorSpawner" (void)
 {
-	int mapsetPrefix = strparam(n:PRINTNAME_LEVEL-2);
-	int spawnerId = GetUserVariable(0, "spawner_id");
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str spawnerId = strparam(d:GetUserVariable(0, "user_id"));
 	str spawnerActor = getDynLangEntry(mapsetPrefix, "ACTOR", spawnerId);
+	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor);
 
 	// check if this language definition exists
-	if(spawnerId != "_LANG_UNDEFINED_")
+	if(mapsetPrefix != "_LANG_UNDEFINED_")
 	{
 		actorSpawn(spawnerActor);
 	}

@@ -1,0 +1,33 @@
+Actor LexiconActorSpawnerBase
+{
+	Mass 100
+	+DONTBLAST
+	+DONTGIB
+	+DONTMORPH
+	+DONTSPLASH
+	+DONTSQUASH
+	+INVULNERABLE
+	+NEVERRESPAWN
+	+NEVERTARGET
+	+NOBLOOD
+	+NOICEDEATH
+	+NONSHOOTABLE
+	+NOTAUTOAIMED
+	+NOTELEOTHER
+	+NOTIMEFREEZE
+	+SHOOTABLE
+	+SOLID
+	States
+	{
+	Spawn:
+		TNT1 A 1 Thing_Remove(0)
+		Stop
+	}
+}
+
+Actor LexiconActorSpawnerBaseMonster : LexiconActorSpawnerBase
+{
+	Health 0X7FFFFFFF
+	+COUNTKILL
+	+ISMONSTER
+}

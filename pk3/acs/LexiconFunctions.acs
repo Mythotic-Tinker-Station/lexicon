@@ -1,0 +1,82 @@
+function str getDynLangEntry(str p1, str p2, str p3)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
+// checks if the currently running clientside script is the local client
+function bool clientCheck(void)
+{
+    if(IsNetworkGame()) { if(playerNumber() != consolePlayerNumber()) { return false; } }
+	return true;
+}
+
+int _spec, _args0, _args1, _args2, _args3, _args4;
+function int actorSpawn(int class)
+{
+	// Spawn actor
+	int x = GetActorX(0);
+	int y = GetActorY(0);
+	int z = GetActorZ(0);
+	int angle = GetActorAngle(0) << 8; // just for logs
+	int tid = UniqueTid();
+
+	bool success = SpawnForced(class, x,y,z, tid, angle >> 16);
+	if(!success) return false;
+
+	// remove DROPPED flag
+	SetActorProperty(tid, APROP_Dropped, 0);
+
+	// Transfer flags, store as spawner's tracer and finally transfer tid
+	if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "LexiconFriendlyProc", 1);
+	if(CheckFlag(0,"AMBUSH"  )) GiveActorInventory(tid, "LexiconAmbushProc", 1);
+	if(CheckFlag(0,"DORMANT" )) GiveActorInventory(tid, "LexiconDormantProc", 1);
+
+	if(CheckFlag(tid,"SPAWNCEILING"))
+	{
+		SetActorPosition(tid, GetActorX(0), GetActorY(0), GetActorCeilingZ(tid) - GetActorProperty(tid, APROP_Height), 0);
+	}
+
+	SetPointer(AAPTR_TRACER, tid);
+	GiveInventory("LexiconTransferSpecialProc", 1); // <-- given to spawner, not spawnee!
+	SetThingSpecial(tid, _spec, _args0, _args1, _args2, _args3, _args4);
+	Thing_ChangeTid(tid, ActivatorTid());
+	Thing_ChangeTid(0, 0); // release tid from spawner itself
+	//printbold(s:"\c-Spawned ", s:"\cv", s:class, s:"\c- at (", f:x, s:", ", f:y, s:", ", f:z, s:"; angle ", f:angle, s:").");
+
+	Thing_Remove(0);
+
+	return true;
+}
+
+script "XCDE_StoreSpecial1" (int spec, int args0, int args1)
+{
+	_spec = spec;
+	_args0 = args0;
+	_args1 = args1;
+}
+
+script "XCDE_StoreSpecial2" (int args2, int args3, int args4)
+{
+	_args2 = args2;
+	_args3 = args3;
+	_args4 = args4;
+}
+
+// [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy
+// [tv50] in ZDoom, returning 0 there (as opposed to 1970 in Zandronum with the
+// [tv50] parameters chosen). Compared to previous methods, no side effects have
+// [tv50] come from this, so this should be used for checking the current source port.
+
+function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; } // TM_YEAR = 5

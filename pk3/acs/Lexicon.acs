@@ -1,18 +1,9 @@
-// Split these functions into different files when we get more stuff going for Lexicon's base code
+/*
+	Lexicon Scripts by Tribeam, Popsoap, Michaelis
+	Rewritten in 2024 by cubebert
+*/
 
 #library "LEXICON"
 #include "zcommon.acs"
-
-// [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy
-// [tv50] in ZDoom, returning 0 there (as opposed to 1970 in Zandronum with the
-// [tv50] parameters chosen). Compared to previous methods, no side effects have
-// [tv50] come from this, so this should be used for checking the current source port.
-
-function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; } // TM_YEAR = 5
-
-// ACS script for checking mapset prefixes
-Script "LexiconCheckForMapsetPrefix" (int prefix)
-{
-	bool result = StrICmp(strparam(n:PRINTNAME_LEVEL), prefix, 4) == 0;
-	SetResultValue(result);
-}
+#include "LexiconFunctions.acs"
+#include "LexiconReplacer.acs"

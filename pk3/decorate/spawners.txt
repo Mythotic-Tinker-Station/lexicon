@@ -1,3 +1,21 @@
+// Lexicon Actor Spawner code written by Michaelis in 2020;
+// rewritten in 2024 by cubebert
+
+Actor LexiconTransferSpecialProc : CustomInventory
+{
+	States
+	{
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteWithResult("XCDE_StoreSpecial1", special, args[0], args[1])
+		TNT1 A 0 ACS_NamedExecuteWithResult("XCDE_StoreSpecial2", args[2], args[3], args[4])
+		Stop
+	}
+}
+
+Actor "LexiconFriendlyProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("FRIENDLY", true) Stop } }
+Actor "LexiconAmbushProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("AMBUSH"  , true) Stop } }
+Actor "LexiconDormantProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("DORMANT" , true) Stop } }
+
 Actor LexiconActorSpawnerBase
 {
 	Mass 100
@@ -17,17 +35,27 @@ Actor LexiconActorSpawnerBase
 	+NOTIMEFREEZE
 	+SHOOTABLE
 	+SOLID
+	+NOINTERACTION
+	+NOSECTOR
+	var int spawner_id;
 	States
 	{
 	Spawn:
+		TNT1 A 0
+		TNT1 A 0 ACS_NamedExecuteWithResult("LexiconActorSpawner")
+		TNT1 A 105
 		TNT1 A 1 Thing_Remove(0)
 		Stop
 	}
 }
 
-Actor LexiconActorSpawnerBaseMonster : LexiconActorSpawnerBase
+Actor LexiconActorSpawner1 : LexiconActorSpawnerBase 128 
 {
-	Health 0X7FFFFFFF
-	+COUNTKILL
-	+ISMONSTER
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("spawner_id", 1)
+		goto Super::Spawn+1
+	}
 }

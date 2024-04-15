@@ -3,7 +3,7 @@
 set FileName=Lexicon
 
 echo Step 1: ACS
-	compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\lexicon.c pk3\acs\lexicon.o
+	compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\lexicon.acs pk3\acs\lexicon.o
 	if not exist pk3\acs\acs.err goto 20
 	del pk3\acs\acs.err
 

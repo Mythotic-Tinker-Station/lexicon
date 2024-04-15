@@ -2,8 +2,7 @@
 	Lexicon Scripts by Tribeam, Popsoap, Michaelis
 	Rewritten in 2024 by cubebert
 */
-
+#import "zcommon.bcs"
 #library "LEXICON"
-#include "zcommon.acs"
 #include "LexiconFunctions.acs"
 #include "LexiconReplacer.acs"

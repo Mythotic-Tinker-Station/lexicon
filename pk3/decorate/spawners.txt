@@ -114,3 +114,25 @@ Actor LexiconActorSpawner6 : LexiconActorSpawnerBase 133
 		goto Super::Spawn
 	}
 }
+
+Actor LexiconActorSpawner7 : LexiconActorSpawnerBase 134
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 7)
+		goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner8 : LexiconActorSpawnerBase 135
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 8)
+		goto Super::Spawn
+	}
+}

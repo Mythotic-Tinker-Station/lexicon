@@ -42,8 +42,7 @@ Actor LexiconActorSpawnerBase
 	{
 	Spawn:
 		TNT1 A 0
-		TNT1 A 0 ACS_NamedExecuteWithResult("LexiconActorSpawner")
-		TNT1 A 105
+		TNT1 A 105 ACS_NamedExecuteWithResult("LexiconActorSpawner")
 		TNT1 A 1 Thing_Remove(0)
 		Stop
 	}
@@ -56,7 +55,7 @@ Actor LexiconActorSpawner1 : LexiconActorSpawnerBase 128
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 1)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -67,7 +66,7 @@ Actor LexiconActorSpawner2 : LexiconActorSpawnerBase 129
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 2)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -78,7 +77,7 @@ Actor LexiconActorSpawner3 : LexiconActorSpawnerBase 130
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 3)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -89,7 +88,7 @@ Actor LexiconActorSpawner4 : LexiconActorSpawnerBase 131
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 4)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -100,7 +99,7 @@ Actor LexiconActorSpawner5 : LexiconActorSpawnerBase 132
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 5)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -111,7 +110,7 @@ Actor LexiconActorSpawner6 : LexiconActorSpawnerBase 133
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 6)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -122,7 +121,7 @@ Actor LexiconActorSpawner7 : LexiconActorSpawnerBase 134
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 7)
-		goto Super::Spawn
+		Goto Super::Spawn
 	}
 }
 
@@ -133,6 +132,39 @@ Actor LexiconActorSpawner8 : LexiconActorSpawnerBase 135
 	Spawn:
 		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_id", 8)
-		goto Super::Spawn
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner9 : LexiconActorSpawnerBase 136
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 9)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner10 : LexiconActorSpawnerBase 137
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 10)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner11 : LexiconActorSpawnerBase 138
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 11)
+		Goto Super::Spawn
 	}
 }

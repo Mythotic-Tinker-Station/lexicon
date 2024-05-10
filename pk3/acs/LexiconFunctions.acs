@@ -59,25 +59,23 @@ function int actorSpawn(str class, str classalt, str type)
 
     // If the actor is supposed to spawn on the ceiling, adjust the Z position
     // Note: this used to use SetActorPosition, however that function does not work if an actor is in the way.
-    if(CheckFlag(tid, "SPAWNCEILING")) 
-    { 
+    if(CheckFlag(tid, "SPAWNCEILING"))
+    {
         z = GetActorCeilingZ(tid) - GetActorProperty(tid, APROP_Height);
         Thing_Remove(tid);
 	    SpawnForced(class, x,y,z, tid, angle >> 16);
     }
 
 	// remove DROPPED flag
-	SetActorProperty(tid, APROP_Dropped, GetActorProperty(tid, APROP_Dropped));
-	//SetActorProperty(tid, APROP_Dropped, 0);
+	SetActorProperty(tid, APROP_Dropped, 0);
 
 	// Transfer flags, store as spawner's tracer and finally transfer tid
 	if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "LexiconFriendlyProc", 1);
 	if(CheckFlag(0,"AMBUSH"  )) GiveActorInventory(tid, "LexiconAmbushProc", 1);
-	if(CheckFlag(0,"DORMANT" )) GiveActorInventory(tid, "LexiconDormantProc", 1);
-	//if(GetUserVariable(0,"user_dormant"))
-	//{
-	//	Thing_Deactivate(tid);
-	//}
+	if(GetUserVariable(tid,"user_dormant"))
+	{
+		Thing_Deactivate(tid);
+	}
 
 	SetPointer(AAPTR_TRACER, tid);
 	GiveInventory("LexiconTransferSpecialProc", 1); // <-- given to spawner, not spawnee!

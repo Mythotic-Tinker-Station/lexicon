@@ -5,7 +5,7 @@ Script "LexiconActorSpawner" (void)
 	str spawnerActor = getDynLangEntry(mapsetPrefix, "ACTOR", spawnerId);
 	str spawnerActorAlt = getDynLangEntry(mapsetPrefix, "ACTORALT", spawnerId);
 	str spawnerType = getDynLangEntry(mapsetPrefix, "ACTORTYPE", spawnerId);
-	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor, s:": ", s:spawnerType);
+	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor, s:": ", s:spawnerActorAlt, s:": ", s:spawnerType);
 
 	// check if this language definition exists
 	if(spawnerActor != "_LANG_UNDEFINED_")

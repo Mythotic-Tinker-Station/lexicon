@@ -43,11 +43,11 @@ Actor LexiconActorSpawnerBase : SwitchableDecoration
 	{
 	Spawn:
 	Active:
-		TNT1 A 1
+		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_dormant",0)
 		Goto SpawnContinue
 	Inactive:
-		TNT1 A 1
+		TNT1 A 0
 		TNT1 A 0 A_SetUserVar("user_dormant",1)
 		Goto SpawnContinue
 	SpawnContinue:

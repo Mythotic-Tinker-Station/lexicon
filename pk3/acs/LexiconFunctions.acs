@@ -23,7 +23,7 @@ function bool clientCheck(void)
 }
 
 int _spec, _args0, _args1, _args2, _args3, _args4;
-function int actorSpawn(str class, str classalt, str type)
+function int actorSpawn(str class, str classalt)
 {
 	// Get actor coordinates
 	int x = GetActorX(0);
@@ -44,18 +44,6 @@ function int actorSpawn(str class, str classalt, str type)
     // Spawn actor
 	bool success = SpawnForced(class, x,y,z, tid, angle >> 16);
 	if(!success) return false;
-	
-	/*
-	Actor type 0 - Monster
-	Actor type 1 - Decoration
-	Actor type 2 - Weapons/Pickups
-	Actor type 3 - Other
-	*/
-	// Check actor type
-	if(type != "_LANG_UNDEFINED_")
-	{
-		// Apply the needed flags and properties for each type
-	}
 
     // If the actor is supposed to spawn on the ceiling, adjust the Z position
     // Note: this used to use SetActorPosition, however that function does not work if an actor is in the way.
@@ -67,7 +55,10 @@ function int actorSpawn(str class, str classalt, str type)
     }
 
 	// remove DROPPED flag
-	SetActorProperty(tid, APROP_Dropped, 0);
+	if (Timer() < 1)
+	{
+		SetActorProperty(tid, APROP_Dropped, 0);
+	}
 
 	// Transfer flags, store as spawner's tracer and finally transfer tid
 	if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "LexiconFriendlyProc", 1);

@@ -484,3 +484,14 @@ Actor LexiconActorSpawner39 : LexiconActorSpawnerBase 166
 		Goto Super::Spawn
 	}
 }
+
+Actor LexiconActorSpawner40 : LexiconActorSpawnerBase 167
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 40)
+		Goto Super::Spawn
+	}
+}

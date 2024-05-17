@@ -1,0 +1,44 @@
+// Check if various gameplay mods are being used
+#define COMPATNUMBER 23
+
+str compatArray[COMPATNUMBER] = {
+						"RHR2HEAR", // AEons of Death
+						"RBLD1", // Brutal Doom
+						"1RTIDL1", // Combined Arms
+						"SPHHUD1", // Combined Arms Gaiden
+						"D4DFRONT", // Death Foretold
+						"HUDSTMEL", // DemonSteele
+						"PLAYDOUM", // Doom Delta
+						"PPDADMO1", // DoomRL Arsenal
+						"BBS_M1", // DoomRPG
+						"STXBFG1", // Final Doomer
+						"BLZKEY1", // GMOTA
+						"DRABORG0", // Guncaster
+						"HCRDKEYB", // High Noon Drifter
+						"CMETRAFU", // Highway Acceleroid Booster
+						"HWMSLOT", // Lambda
+						"LDM_BACK", // LegenDoom
+						"BARBACR1", // Project Brutality 3.0
+						"QCDEHLP1", // Quake Champions: Doom Edition
+						"PERK1SOH", // Real Guns Advanced 2
+						"RO_MDOOM", // Russian Overkill
+						"DOMNOTCH", // Samsara
+						"M_PAUSX", // Spawn: Path of Damnation
+						"BarForce" // Xim's Star Wars Doom
+};
+
+function bool isGameModded (void)
+{
+	for(int i = 0; i <= COMPATNUMBER; i++)
+	{
+		if (CheckFont(compatArray[i])) { return true; }
+	}
+	return false;
+}
+
+// [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy
+// [tv50] in ZDoom, returning 0 there (as opposed to 1970 in Zandronum with the
+// [tv50] parameters chosen). Compared to previous methods, no side effects have
+// [tv50] come from this, so this should be used for checking the current source port.
+
+function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; } // TM_YEAR = 5

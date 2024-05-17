@@ -495,3 +495,36 @@ Actor LexiconActorSpawner40 : LexiconActorSpawnerBase 167
 		Goto Super::Spawn
 	}
 }
+
+Actor LexiconActorSpawner41 : LexiconActorSpawnerBase 168
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 41)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner42 : LexiconActorSpawnerBase 169
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 42)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner43 : LexiconActorSpawnerBase 170
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 43)
+		Goto Super::Spawn
+	}
+}

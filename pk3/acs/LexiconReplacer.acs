@@ -12,3 +12,27 @@ Script "LexiconActorSpawner" (void)
 		actorSpawn(spawnerActor, spawnerActorAlt);
 	}
 }
+
+Script "LexiconKeySpawner" (void)
+{
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str keyId = strparam(d:GetUserVariable(0, "user_id"));
+	str keyActor = getDynLangEntry(mapsetPrefix, "ACTOR", keyId);
+	str keyActorAlt = getDynLangEntry(mapsetPrefix, "ACTORALT", keyId);
+	int keyRealActor = strparam(s:keyActor, s:"Item");
+
+	// check if this language definition exists
+	if(keyActor != "_LANG_UNDEFINED_")
+	{
+		// because zandronum doesn't support the species property for keys,
+		// the alternate actors will need to be spawned on that source port
+		if(!isZDoom())
+		{
+			actorSpawn(keyActorAlt, keyActorAlt);
+		}
+		else
+		{
+			actorSpawn(keyRealActor, keyActorAlt);
+		}
+	}
+}

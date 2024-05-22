@@ -12,8 +12,8 @@ Actor LexiconTransferSpecialProc : CustomInventory
 	}
 }
 
-Actor "LexiconFriendlyProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("FRIENDLY", true) Stop } }
-Actor "LexiconAmbushProc" : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("AMBUSH", true) Stop } }
+Actor LexiconFriendlyProc : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("FRIENDLY", true) Stop } }
+Actor LexiconAmbushProc : CustomInventory { States { Pickup: TNT1 A 0 A_ChangeFlag("AMBUSH", true) Stop } }
 
 Actor LexiconActorSpawnerBase : SwitchableDecoration
 {

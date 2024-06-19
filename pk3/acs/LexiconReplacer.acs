@@ -12,7 +12,7 @@ Script "LexiconActorSpawner" (void)
 	{
 		if (isSkulltagLoaded() && spawnerActorSkulltag != "_LANG_UNDEFINED_")
 		{
-			actorSpawn(spawnerActorSkulltag, spawnerActorAlt);
+			actorSpawn(spawnerActorSkulltag, spawnerActor);
 		}
 		else
 		{

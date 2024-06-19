@@ -66,3 +66,21 @@ function bool isGameModded (void)
 // [tv50] come from this, so this should be used for checking the current source port.
 
 function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; } // TM_YEAR = 5
+
+// A handy method of detecting Skulltag content. Thanks to TheZombieKiller!
+function bool isSkulltagLoaded (void) 
+{
+	int doomsphereTid = UniqueTid();
+	bool result;
+
+	// Check if Zandronum is running, and if Skulltag content is loaded
+	if (GetPlayerAccountName(0) != 0)
+	{
+		if (SpawnForced("Doomsphere", 0, 0, 0, doomsphereTid, 0))
+		{
+			Thing_Remove(doomsphereTid);
+			result = true;
+		}
+	}
+	return result;
+}

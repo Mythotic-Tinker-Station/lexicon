@@ -4,11 +4,19 @@ Script "LexiconActorSpawner" (void)
 	str spawnerId = strparam(d:GetUserVariable(0, "user_id"));
 	str spawnerActor = getDynLangEntry(mapsetPrefix, "ACTOR", spawnerId);
 	str spawnerActorAlt = getDynLangEntry(mapsetPrefix, "ACTORALT", spawnerId);
-	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor, s:": ", s:spawnerActorAlt);
+	str spawnerActorSkulltag = getDynLangEntry(mapsetPrefix, "ACTORST", spawnerId);
+	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor, s:": ", s:spawnerActorAlt, s:": ", s:spawnerActorSkulltag);
 
 	// check if this language definition exists
 	if(spawnerActor != "_LANG_UNDEFINED_")
 	{
-		actorSpawn(spawnerActor, spawnerActorAlt);
+		if (isSkulltagLoaded() && spawnerActorSkulltag != "_LANG_UNDEFINED_")
+		{
+			actorSpawn(spawnerActorSkulltag, spawnerActorAlt);
+		}
+		else
+		{
+			actorSpawn(spawnerActor, spawnerActorAlt);
+		}
 	}
 }

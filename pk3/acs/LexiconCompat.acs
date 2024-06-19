@@ -1,10 +1,9 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 52
+#define COMPATNUMBER 51
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
 						"M4THNA", // Ashes Series
-						"DRCHBAR4", // Bring Your Own Class
 						"RBLD1", // Brutal Doom
 						"COKELEVL", // Cola 3: The Soda of Style
 						"EYETARG3", // Colourful Hell

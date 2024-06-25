@@ -69,9 +69,15 @@ function bool isGameModded (void)
 
 str vanillaWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
 
-function void clearLexiconInventory(void)
+function void replaceLexiconInventory(void)
 {
+	int i;
 	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+	
+	// Handle starting weapons
+	
+	// Replace custom weapons
 }
 
 // [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy

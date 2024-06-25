@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 51
+#define COMPATNUMBER 54
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -12,6 +12,7 @@ str compatArray[COMPATNUMBER] = {
 						"HARMBL", // Complex Doom
 						"D4DFRONT", // Death Foretold
 						"HUDSTMEL", // DemonSteele
+						"HB2SB0H", // Doom4Doom
 						"STHE40MM", // Doomzone
 						"PLAYDOUM", // Doom Delta
 						"PPDADMO1", // DoomRL Arsenal
@@ -40,6 +41,7 @@ str compatArray[COMPATNUMBER] = {
 						"P_mnublk", // Painslayer
 						"POSTLPIC", // POSTAL: Running With Chainsaws
 						"BARBACR1", // Project Brutality 3.0
+						"ST-PSY8B", // Psychic
 						"QCDEHLP1", // Quake Champions: Doom Edition
 						"TMSTATI1", // Rampancy
 						"PERK1SOH", // Real Guns Advanced 2
@@ -50,6 +52,7 @@ str compatArray[COMPATNUMBER] = {
 						"NOSATK", // Space Hunter
 						"SPPAUSE8", // Spawn: Path of Damnation
 						"SB-MCLP", // Supercharge
+						"RELPIST7", // Trailblazer
 						"THROWJK", // Treasure Tech
 						"Upbrmmax", // Weasel Presents: Terrorists!
 						"BarForce" // Xim's Star Wars Doom
@@ -62,6 +65,13 @@ function bool isGameModded (void)
 		if (CheckFont(compatArray[i])) { return true; }
 	}
 	return false;
+}
+
+str vanillaWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+
+function void clearLexiconInventory(void)
+{
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
 }
 
 // [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy

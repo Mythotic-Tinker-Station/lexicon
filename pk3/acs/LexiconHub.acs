@@ -1,0 +1,20 @@
+Script "LexiconHubStuff" (void)
+{
+	// Check if we are at the hub
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+	{
+		// Check for vanilla mode
+		if (GetCVar("lexicon_vanilla_mode") == 0 && !isGameModded())
+		{
+			ClearInventory();
+			GiveInventory("Fist", 1);
+			GiveInventory("Pistol", 1);
+			GiveInventory("Clip", 30);
+			SetWeapon("Pistol");
+		}
+	}
+}
+
+script "LexiconHubEnter" enter { ACS_NamedExecuteWithResult("LexiconHubStuff", 0,0,0); }
+script "LexiconHubRespawn" respawn { ACS_NamedExecuteWithResult("LexiconHubStuff", 1,0,0); }
+script "LexiconHubReturn" return { ACS_NamedExecuteWithResult("LexiconHubStuff", 0,0,0); }

@@ -1,0 +1,71 @@
+str vanillaWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+
+function void removeLexiconInventory(void)
+{
+	int i;
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+
+	for(i = 1; i < 9; i++)
+	{
+		if(weaponActor != "_LANG_UNDEFINED_")
+		{
+			TakeInventory(weaponActor, 1);
+		}
+	}
+}
+
+function void addLexiconInventory(void)
+{
+	int i;
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+
+	for(i = 1; i < 9; i++)
+	{
+		if(weaponActor != "_LANG_UNDEFINED_")
+		{
+			if (i == 2) { TakeInventory("Clip", 20); }
+			if (i == 4) { TakeInventory("Shell", 8); }
+			if (i == 5) { TakeInventory("Shell", 8); }
+			if (i == 6) { TakeInventory("Clip", 20); }
+			if (i == 7) { TakeInventory("RocketAmmo", 2); }
+			if (i == 8) { TakeInventory("Cell", 40); }
+			if (i == 9) { TakeInventory("Cell", 40); }
+			GiveInventory(weaponActor, 1);
+		}
+	}
+}
+
+function void addLexiconShotgun(void)
+{
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str shotgunActor = getDynLangEntry(mapsetPrefix, "WEAPON", 4);
+
+	if (shotgunActor != "_LANG_UNDEFINED_")
+	{
+		TakeInventory("Shotgun", 1);
+		GiveInventory(shotgunActor, 1);
+	}
+}
+
+Script "LexiconSpawn" (int arg1)
+{
+	// Check if we are at the hub
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+	{
+		// Check for vanilla mode
+		if (GetCVar("lexicon_vanilla_mode") == 0 && !isGameModded())
+		{
+			ClearInventory();
+			GiveInventory("Fist", 1);
+			GiveInventory("Pistol", 1);
+			GiveInventory("Clip", 30);
+			SetWeapon("Pistol");
+		}
+	}
+}
+
+script "LexiconEnter" enter { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }
+script "LexiconRespawn" respawn { ACS_NamedExecuteWithResult("LexiconSpawn", 1,0,0); }
+script "LexiconReturn" return { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }

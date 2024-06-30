@@ -58,6 +58,7 @@ Actor LexiconActorSpawnerBase : SwitchableDecoration
 
 Actor LexiconActorSpawner1 : LexiconActorSpawnerBase 128
 {
+	SpawnID 168
 	States
 	{
 	Spawn:
@@ -69,6 +70,7 @@ Actor LexiconActorSpawner1 : LexiconActorSpawnerBase 128
 
 Actor LexiconActorSpawner2 : LexiconActorSpawnerBase 129
 {
+	SpawnID 169
 	States
 	{
 	Spawn:
@@ -80,6 +82,7 @@ Actor LexiconActorSpawner2 : LexiconActorSpawnerBase 129
 
 Actor LexiconActorSpawner3 : LexiconActorSpawnerBase 130
 {
+	SpawnID 170
 	States
 	{
 	Spawn:
@@ -91,6 +94,7 @@ Actor LexiconActorSpawner3 : LexiconActorSpawnerBase 130
 
 Actor LexiconActorSpawner4 : LexiconActorSpawnerBase 131
 {
+	SpawnID 171
 	States
 	{
 	Spawn:
@@ -102,6 +106,7 @@ Actor LexiconActorSpawner4 : LexiconActorSpawnerBase 131
 
 Actor LexiconActorSpawner5 : LexiconActorSpawnerBase 132
 {
+	SpawnID 172
 	States
 	{
 	Spawn:
@@ -113,6 +118,7 @@ Actor LexiconActorSpawner5 : LexiconActorSpawnerBase 132
 
 Actor LexiconActorSpawner6 : LexiconActorSpawnerBase 133
 {
+	SpawnID 173
 	States
 	{
 	Spawn:
@@ -124,6 +130,7 @@ Actor LexiconActorSpawner6 : LexiconActorSpawnerBase 133
 
 Actor LexiconActorSpawner7 : LexiconActorSpawnerBase 134
 {
+	SpawnID 174
 	States
 	{
 	Spawn:
@@ -135,6 +142,7 @@ Actor LexiconActorSpawner7 : LexiconActorSpawnerBase 134
 
 Actor LexiconActorSpawner8 : LexiconActorSpawnerBase 135
 {
+	SpawnID 175
 	States
 	{
 	Spawn:
@@ -146,6 +154,7 @@ Actor LexiconActorSpawner8 : LexiconActorSpawnerBase 135
 
 Actor LexiconActorSpawner9 : LexiconActorSpawnerBase 136
 {
+	SpawnID 176
 	States
 	{
 	Spawn:
@@ -157,6 +166,7 @@ Actor LexiconActorSpawner9 : LexiconActorSpawnerBase 136
 
 Actor LexiconActorSpawner10 : LexiconActorSpawnerBase 137
 {
+	SpawnID 177
 	States
 	{
 	Spawn:
@@ -168,6 +178,7 @@ Actor LexiconActorSpawner10 : LexiconActorSpawnerBase 137
 
 Actor LexiconActorSpawner11 : LexiconActorSpawnerBase 138
 {
+	SpawnID 178
 	States
 	{
 	Spawn:
@@ -179,6 +190,7 @@ Actor LexiconActorSpawner11 : LexiconActorSpawnerBase 138
 
 Actor LexiconActorSpawner12 : LexiconActorSpawnerBase 139
 {
+	SpawnID 179
 	States
 	{
 	Spawn:
@@ -190,6 +202,7 @@ Actor LexiconActorSpawner12 : LexiconActorSpawnerBase 139
 
 Actor LexiconActorSpawner13 : LexiconActorSpawnerBase 140
 {
+	SpawnID 180
 	States
 	{
 	Spawn:
@@ -201,6 +214,7 @@ Actor LexiconActorSpawner13 : LexiconActorSpawnerBase 140
 
 Actor LexiconActorSpawner14 : LexiconActorSpawnerBase 141
 {
+	SpawnID 181
 	States
 	{
 	Spawn:
@@ -212,6 +226,7 @@ Actor LexiconActorSpawner14 : LexiconActorSpawnerBase 141
 
 Actor LexiconActorSpawner15 : LexiconActorSpawnerBase 142
 {
+	SpawnID 182
 	States
 	{
 	Spawn:
@@ -223,6 +238,7 @@ Actor LexiconActorSpawner15 : LexiconActorSpawnerBase 142
 
 Actor LexiconActorSpawner16 : LexiconActorSpawnerBase 143
 {
+	SpawnID 183
 	States
 	{
 	Spawn:
@@ -234,6 +250,7 @@ Actor LexiconActorSpawner16 : LexiconActorSpawnerBase 143
 
 Actor LexiconActorSpawner17 : LexiconActorSpawnerBase 144
 {
+	SpawnID 184
 	States
 	{
 	Spawn:
@@ -245,6 +262,7 @@ Actor LexiconActorSpawner17 : LexiconActorSpawnerBase 144
 
 Actor LexiconActorSpawner18 : LexiconActorSpawnerBase 145
 {
+	SpawnID 185
 	States
 	{
 	Spawn:
@@ -256,6 +274,7 @@ Actor LexiconActorSpawner18 : LexiconActorSpawnerBase 145
 
 Actor LexiconActorSpawner19 : LexiconActorSpawnerBase 146
 {
+	SpawnID 186
 	States
 	{
 	Spawn:
@@ -267,6 +286,7 @@ Actor LexiconActorSpawner19 : LexiconActorSpawnerBase 146
 
 Actor LexiconActorSpawner20 : LexiconActorSpawnerBase 147
 {
+	SpawnID 187
 	States
 	{
 	Spawn:
@@ -278,6 +298,7 @@ Actor LexiconActorSpawner20 : LexiconActorSpawnerBase 147
 
 Actor LexiconActorSpawner21 : LexiconActorSpawnerBase 148
 {
+	SpawnID 188
 	States
 	{
 	Spawn:
@@ -289,6 +310,7 @@ Actor LexiconActorSpawner21 : LexiconActorSpawnerBase 148
 
 Actor LexiconActorSpawner22 : LexiconActorSpawnerBase 149
 {
+	SpawnID 189
 	States
 	{
 	Spawn:
@@ -300,6 +322,7 @@ Actor LexiconActorSpawner22 : LexiconActorSpawnerBase 149
 
 Actor LexiconActorSpawner23 : LexiconActorSpawnerBase 150
 {
+	SpawnID 190
 	States
 	{
 	Spawn:
@@ -311,6 +334,7 @@ Actor LexiconActorSpawner23 : LexiconActorSpawnerBase 150
 
 Actor LexiconActorSpawner24 : LexiconActorSpawnerBase 151
 {
+	SpawnID 191
 	States
 	{
 	Spawn:
@@ -322,6 +346,7 @@ Actor LexiconActorSpawner24 : LexiconActorSpawnerBase 151
 
 Actor LexiconActorSpawner25 : LexiconActorSpawnerBase 152
 {
+	SpawnID 192
 	States
 	{
 	Spawn:
@@ -333,6 +358,7 @@ Actor LexiconActorSpawner25 : LexiconActorSpawnerBase 152
 
 Actor LexiconActorSpawner26 : LexiconActorSpawnerBase 153
 {
+	SpawnID 193
 	States
 	{
 	Spawn:
@@ -344,6 +370,7 @@ Actor LexiconActorSpawner26 : LexiconActorSpawnerBase 153
 
 Actor LexiconActorSpawner27 : LexiconActorSpawnerBase 154
 {
+	SpawnID 194
 	States
 	{
 	Spawn:
@@ -355,6 +382,7 @@ Actor LexiconActorSpawner27 : LexiconActorSpawnerBase 154
 
 Actor LexiconActorSpawner28 : LexiconActorSpawnerBase 155
 {
+	SpawnID 195
 	States
 	{
 	Spawn:
@@ -366,6 +394,7 @@ Actor LexiconActorSpawner28 : LexiconActorSpawnerBase 155
 
 Actor LexiconActorSpawner29 : LexiconActorSpawnerBase 156
 {
+	SpawnID 196
 	States
 	{
 	Spawn:
@@ -377,6 +406,7 @@ Actor LexiconActorSpawner29 : LexiconActorSpawnerBase 156
 
 Actor LexiconActorSpawner30 : LexiconActorSpawnerBase 157
 {
+	SpawnID 197
 	States
 	{
 	Spawn:
@@ -388,6 +418,7 @@ Actor LexiconActorSpawner30 : LexiconActorSpawnerBase 157
 
 Actor LexiconActorSpawner31 : LexiconActorSpawnerBase 158
 {
+	SpawnID 198
 	States
 	{
 	Spawn:
@@ -399,6 +430,7 @@ Actor LexiconActorSpawner31 : LexiconActorSpawnerBase 158
 
 Actor LexiconActorSpawner32 : LexiconActorSpawnerBase 159
 {
+	SpawnID 199
 	States
 	{
 	Spawn:
@@ -410,6 +442,7 @@ Actor LexiconActorSpawner32 : LexiconActorSpawnerBase 159
 
 Actor LexiconActorSpawner33 : LexiconActorSpawnerBase 160
 {
+	SpawnID 200
 	States
 	{
 	Spawn:
@@ -421,6 +454,7 @@ Actor LexiconActorSpawner33 : LexiconActorSpawnerBase 160
 
 Actor LexiconActorSpawner34 : LexiconActorSpawnerBase 161
 {
+	SpawnID 201
 	States
 	{
 	Spawn:
@@ -432,6 +466,7 @@ Actor LexiconActorSpawner34 : LexiconActorSpawnerBase 161
 
 Actor LexiconActorSpawner35 : LexiconActorSpawnerBase 162
 {
+	SpawnID 202
 	States
 	{
 	Spawn:
@@ -443,6 +478,7 @@ Actor LexiconActorSpawner35 : LexiconActorSpawnerBase 162
 
 Actor LexiconActorSpawner36 : LexiconActorSpawnerBase 163
 {
+	SpawnID 203
 	States
 	{
 	Spawn:
@@ -454,6 +490,7 @@ Actor LexiconActorSpawner36 : LexiconActorSpawnerBase 163
 
 Actor LexiconActorSpawner37 : LexiconActorSpawnerBase 164
 {
+	SpawnID 204
 	States
 	{
 	Spawn:
@@ -465,6 +502,7 @@ Actor LexiconActorSpawner37 : LexiconActorSpawnerBase 164
 
 Actor LexiconActorSpawner38 : LexiconActorSpawnerBase 165
 {
+	SpawnID 205
 	States
 	{
 	Spawn:
@@ -476,6 +514,7 @@ Actor LexiconActorSpawner38 : LexiconActorSpawnerBase 165
 
 Actor LexiconActorSpawner39 : LexiconActorSpawnerBase 166
 {
+	SpawnID 206
 	States
 	{
 	Spawn:
@@ -487,6 +526,7 @@ Actor LexiconActorSpawner39 : LexiconActorSpawnerBase 166
 
 Actor LexiconActorSpawner40 : LexiconActorSpawnerBase 167
 {
+	SpawnID 207
 	States
 	{
 	Spawn:
@@ -498,6 +538,7 @@ Actor LexiconActorSpawner40 : LexiconActorSpawnerBase 167
 
 Actor LexiconActorSpawner41 : LexiconActorSpawnerBase 168
 {
+	SpawnID 208
 	States
 	{
 	Spawn:
@@ -509,6 +550,7 @@ Actor LexiconActorSpawner41 : LexiconActorSpawnerBase 168
 
 Actor LexiconActorSpawner42 : LexiconActorSpawnerBase 169
 {
+	SpawnID 209
 	States
 	{
 	Spawn:
@@ -520,6 +562,7 @@ Actor LexiconActorSpawner42 : LexiconActorSpawnerBase 169
 
 Actor LexiconActorSpawner43 : LexiconActorSpawnerBase 170
 {
+	SpawnID 210
 	States
 	{
 	Spawn:
@@ -531,6 +574,7 @@ Actor LexiconActorSpawner43 : LexiconActorSpawnerBase 170
 
 Actor LexiconActorSpawner44 : LexiconActorSpawnerBase 171
 {
+	SpawnID 211
 	States
 	{
 	Spawn:
@@ -542,6 +586,7 @@ Actor LexiconActorSpawner44 : LexiconActorSpawnerBase 171
 
 Actor LexiconActorSpawner45 : LexiconActorSpawnerBase 172
 {
+	SpawnID 212
 	States
 	{
 	Spawn:
@@ -553,6 +598,7 @@ Actor LexiconActorSpawner45 : LexiconActorSpawnerBase 172
 
 Actor LexiconActorSpawner46 : LexiconActorSpawnerBase 173
 {
+	SpawnID 213
 	States
 	{
 	Spawn:
@@ -564,6 +610,7 @@ Actor LexiconActorSpawner46 : LexiconActorSpawnerBase 173
 
 Actor LexiconActorSpawner47 : LexiconActorSpawnerBase 174
 {
+	SpawnID 214
 	States
 	{
 	Spawn:
@@ -575,6 +622,7 @@ Actor LexiconActorSpawner47 : LexiconActorSpawnerBase 174
 
 Actor LexiconActorSpawner48 : LexiconActorSpawnerBase 175
 {
+	SpawnID 215
 	States
 	{
 	Spawn:
@@ -586,6 +634,7 @@ Actor LexiconActorSpawner48 : LexiconActorSpawnerBase 175
 
 Actor LexiconActorSpawner49 : LexiconActorSpawnerBase 176
 {
+	SpawnID 216
 	States
 	{
 	Spawn:
@@ -597,6 +646,7 @@ Actor LexiconActorSpawner49 : LexiconActorSpawnerBase 176
 
 Actor LexiconActorSpawner50 : LexiconActorSpawnerBase 177
 {
+	SpawnID 217
 	States
 	{
 	Spawn:

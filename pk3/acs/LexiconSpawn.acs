@@ -51,6 +51,9 @@ function void addLexiconShotgun(void)
 
 Script "LexiconSpawn" (int arg1)
 {
+	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
+	
+	/*
 	// Check if we are at the hub
 	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
 	{
@@ -64,6 +67,7 @@ Script "LexiconSpawn" (int arg1)
 			SetWeapon("Pistol");
 		}
 	}
+	*/
 }
 
 script "LexiconEnter" enter { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }

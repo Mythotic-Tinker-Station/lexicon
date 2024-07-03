@@ -42,7 +42,7 @@ str compatArray[COMPATNUMBER] = {
 						"POSTLPIC", // POSTAL: Running With Chainsaws
 						"BARBACR1", // Project Brutality 3.0
 						"ST-PSY8B", // Psychic
-						"QCDEHLP1", // Quake Champions: Doom Edition
+						"QCDECRD1", // Quake Champions: Doom Edition
 						"TMSTATI1", // Rampancy
 						"PERK1SOH", // Real Guns Advanced 2
 						"RRMEND10", // Rebel Rumble
@@ -89,5 +89,20 @@ function bool isSkulltagLoaded (void)
 			result = true;
 		}
 	}
+	return result;
+}
+
+function bool isMusicRandomizerLoaded (void) 
+{
+	int musicRandomizerTid = UniqueTid();
+	bool result;
+
+	if (SpawnForced("DemonSteeleIsSuperCoolAndYouShouldProbablyPlayIt", 0, 0, 0, musicRandomizerTid, 0))
+	{
+		Thing_Remove(musicRandomizerTid);
+		result = true;
+	}
+	
+	if (CheckFont("QCDE-OST")) { result = true; }
 	return result;
 }

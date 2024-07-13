@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 54
+#define COMPATNUMBER 58
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -33,16 +33,20 @@ str compatArray[COMPATNUMBER] = {
 						"HWMSLOT", // Lambda
 						"NARISELE", // La Tailor Girl
 						"LDM_BACK", // LegenDoom
+						"CIGAR13", // Lt. Typhon
+						"invsiph", // MetaDoom
 						"WPFSDMCN", // Metroid Dreadnought
 						"NTEINT27", // Netronian Chaos
 						"NTMLOGO2", // Nobody Told Me About id
 						"PARKLOG6", // Parkour
 						"BELIPA1H", // Painkiller Mutilator
 						"P_mnublk", // Painslayer
+						"BUTNBALL", // PokéDoom
 						"POSTLPIC", // POSTAL: Running With Chainsaws
 						"BARBACR1", // Project Brutality 3.0
+						"MSXSLCT1", // Project MSX
 						"ST-PSY8B", // Psychic
-						"QCDECRD1", // Quake Champions: Doom Edition
+						"QCDBACK", // Quake Champions: Doom Edition
 						"TMSTATI1", // Rampancy
 						"PERK1SOH", // Real Guns Advanced 2
 						"RRMEND10", // Rebel Rumble

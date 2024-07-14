@@ -677,24 +677,24 @@ strict namespace Widgets
                     {
                         for(fixed y = 0.0; y <= rows; y += 1.0)
                         {
-                            Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY1(id)+(y*size), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+                            Screen::DrawImage("LXUIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY1(id)+(y*size), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
                         }
                     }
 
                     // right
                     for(fixed y = 0.0; y <= rows; y += 1.0)
                     {
-                        Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY1(id)+(y*size), Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
+                        Screen::DrawImage("LXUIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY1(id)+(y*size), Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
                     }
 
                     // bottom
                     for(fixed x = 0.0; x <= cols; x += 1.0)
                     {
-                       Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY2(id)-size, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+                       Screen::DrawImage("LXUIFONT", c, GetBackColorCurrent(id), GetX1(id)+(x*size), GetY2(id)-size, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
                     }
 
                     // bottom right corner
-                    Screen::DrawImage("UIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY2(id)-size, Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
+                    Screen::DrawImage("LXUIFONT", c, GetBackColorCurrent(id), GetX2(id), GetY2(id)-size, Screen::XALIGN_RIGHT, Screen::YALIGN_TOP);
                 }
 
 				// call object's update callback

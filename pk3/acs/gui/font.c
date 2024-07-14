@@ -41,7 +41,7 @@ strict namespace Font
 
     function void Init()
 	{    
-        font_fancybig = Font::Create("FANCYBIG", 16.0, 16.0);
-        font_fancysmall = Font::Create("FANCYSMALL", 8.0, 9.0);
+        font_fancybig = Font::Create("BIGFONT", 16.0, 16.0);
+        font_fancysmall = Font::Create("SMALLFONT", 8.0, 9.0);
     }    
 }

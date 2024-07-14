@@ -22,6 +22,12 @@ function bool clientCheck(void)
 	return true;
 }
 
+// a null function for blank ui actions
+function void nullFunc(int i)
+{
+    print(s:"No action for obj number: " , i:i);
+}
+
 int _spec, _args0, _args1, _args2, _args3, _args4;
 function int actorSpawn(str class, str classalt)
 {

@@ -1,2 +1,9 @@
 server bool lexicon_vanilla_mode = false;
 server noarchive bool lexicon_no_music_changes = false;
+
+user string lexicon_cursor_color 					= "Azure";
+user int	lexicon_cursor_shadow 					= 1;
+user int 	lexicon_cursor_xsens 					= 20;
+user int 	lexicon_cursor_ysens 					= 10;
+user int 	lexicon_first_run	 					= 1;
+user int 	lexicon_vote_activation					= 1;

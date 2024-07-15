@@ -42,40 +42,6 @@ strict namespace
 		str checked;
 		str current;
 	};
-
-	struct mapset
-	{
-		str acronym;					// mapset acronym
-		str name;						// mapset name
-		str description;				// mapset description
-		str mapcount;					// mapset map count
-		str startmap;					// mapset starting map name
-		str thumbnail;					// mapset ui thumbnail
-        str expansion;                  // mapset expansion name
-		str pistol;						// mapset pistol
-		str fist;						// mapset fist
-		str previews[32];				// mapset screenshots
-		str readme[256];				// mapset readme pages
-		str credits[256];				// mapset credits
-		str replacers[256][2];			// mapset actor replacers
-		str startitems[32];				// mapset start items
-		str takeitems[32];				// mapset take items
-		int startitem_count;			// amount of start items
-		int takeitem_count;				// amount of take items
-		int replacer_count;				// amount of replacer defines
-		int id;
-	};
-
-	struct expansion
-	{
-        str name;
-    };
-
-	struct mapset mapsets[2048];	        // holds all the mapset info
-	int mapset_count = 0;				    // how many mapsets exist
-
-    struct expansion expansions[2048];	    // holds all the expansion info
-    int expansion_count = 0;
 };
 
 #include "gui/font.c"
@@ -87,3 +53,4 @@ strict namespace
 #include "gui/widgets/labels.c"
 #include "gui/widgets/panel.c"
 #include "gui/scenes/votemenu.c"
+#include "gui/scenes/devmenu.c"

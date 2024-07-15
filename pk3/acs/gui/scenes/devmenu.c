@@ -1,27 +1,24 @@
-strict namespace VoteMenu
+strict namespace DevMenu
 {
-
     int mapset_buttons[2048];
-    int expansion_buttons[2048];
-    int lbl_expansions;
+
     fixed bgx;
     fixed bgy;
-    int test;
 	function void Build(void)
 	{    
-
-        // expansion buttons
+        // mapset buttons
         /*
 		for(int i = 0; i < expansion_count; i++)
 		{
-			expansion_buttons[i] = Button::Create(200.0, 200.0+(32.0*fixed(i)), 256.0, 24.0, expansions[i].name);
-            Widgets::SetVisible(expansion_buttons[i], true);
-			Widgets::AddClickedHook(expansion_buttons[i], Event_ExpansionClick);
-            Widgets::SetFont(expansion_buttons[i], Font::font_fancybig);
-            Widgets::SetText(expansion_buttons[i], expansions[i].name);
-            Widgets::SetTextColorNormal(expansion_buttons[i], "White");
-            Widgets::SetRenderBack(expansion_buttons[i], false);
-        }*/
+			mapset_buttons[i] = Button::Create(200.0, 200.0+(32.0*fixed(i)), 256.0, 24.0, expansions[i].name);
+            Widgets::SetVisible(mapset_buttons[i], true);
+			Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
+            Widgets::SetFont(mapset_buttons[i], Font::font_fancybig);
+            Widgets::SetText(mapset_buttons[i], expansions[i].name);
+            Widgets::SetTextColorNormal(mapset_buttons[i], "White");
+            Widgets::SetRenderBack(mapset_buttons[i], false);
+        }
+        */
     }
 
 
@@ -54,7 +51,6 @@ strict namespace VoteMenu
 
     function void RunWidgets()
 	{
-        
 
     }
 

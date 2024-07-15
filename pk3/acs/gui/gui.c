@@ -105,6 +105,7 @@ strict namespace Gui
 		// check if we are the local client
 		if(!clientCheck()) { terminate; }
 
+        // freeze the player
         SetPlayerProperty(1, 1, PROP_TOTALLYFROZEN);
 
         // setup fonts
@@ -114,18 +115,16 @@ strict namespace Gui
 		Screen::Init();
 
         // if we are in debug mode
-		if(GetCVar("lexicon_debug_mode") == 1)
+		if(!IsNetworkGame())
 		{
-            //DebugMenu::Build();
+            DevMenu::Build();
 
             while(1)
             {
-                
-
                 Cursor::Run();
-                //DebugMenu::Run();
+                DevMenu::RunBG();
                 Widgets::Run();
-
+                DevMenu::RunBGVignette();
                 Screen::ResetHudIDs();
                 delay(1);
             }

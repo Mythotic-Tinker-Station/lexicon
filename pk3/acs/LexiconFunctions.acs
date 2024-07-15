@@ -18,7 +18,13 @@ function str getDynLangEntry(str p1, str p2, str p3)
 // checks if the currently running clientside script is the local client
 function bool clientCheck(void)
 {
-    if(IsNetworkGame()) { if(playerNumber() != consolePlayerNumber()) { return false; } }
+    if(IsNetworkGame()) 
+    { 
+        if(playerNumber() != consolePlayerNumber()) 
+        { 
+            return false; 
+        } 
+    }
 	return true;
 }
 

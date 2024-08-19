@@ -1,0 +1,35 @@
+
+// This script is used to load the mapset names from the language file and store them in an array for later use.
+
+#define MAX_MAPSETS 64
+struct mapSet
+{
+    str title;              // Mapset title (xxxx_MAPSET_title)
+    str acronym;            // Mapset acronym (xxxx_MAPSET_ACRONYM)
+    str authors;            // Mapset authors (xxxx_MAPSET_AUTHORS)
+    str description;        // Mapset description (xxxx_MAPSET_DESCCRIPTION)
+    str custom;             // Mapset has custom assets(xxxx_MAPSET_CUSTOM)
+    str maps;               // Mapset map count (xxxx_MAPSET_MAPS)
+};
+
+struct mapSet mapSets[MAX_MAPSETS];
+
+script "LexiconExpansionsLoad" open 
+{
+    int i;
+    while(i < MAX_MAPSETS)
+    {
+        str acronym = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
+        log(s:acronym);
+        if(acronym != "_LANG_UNDEFINED_")
+        {
+            mapSets[i].acronym = acronym;
+            mapSets[i].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
+            mapSets[i].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
+            mapSets[i].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
+            mapSets[i].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
+            log(s:mapSets[i].acronym, s:", ", s:mapSets[i].authors, s:", ", s:mapSets[i].description, s:", ", s:mapSets[i].custom, s:", ", s:mapSets[i].maps);
+        }
+        i++;
+    }
+}

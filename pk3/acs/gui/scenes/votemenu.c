@@ -10,18 +10,6 @@ strict namespace VoteMenu
 	function void Build(void)
 	{    
 
-        // expansion buttons
-        /*
-		for(int i = 0; i < expansion_count; i++)
-		{
-			expansion_buttons[i] = Button::Create(200.0, 200.0+(32.0*fixed(i)), 256.0, 24.0, expansions[i].name);
-            Widgets::SetVisible(expansion_buttons[i], true);
-			Widgets::AddClickedHook(expansion_buttons[i], Event_ExpansionClick);
-            Widgets::SetFont(expansion_buttons[i], Font::font_fancybig);
-            Widgets::SetText(expansion_buttons[i], expansions[i].name);
-            Widgets::SetTextColorNormal(expansion_buttons[i], "White");
-            Widgets::SetRenderBack(expansion_buttons[i], false);
-        }*/
     }
 
 
@@ -55,7 +43,6 @@ strict namespace VoteMenu
     function void RunWidgets()
 	{
         
-
     }
 
 	function void Event_MapsetClick(int id)

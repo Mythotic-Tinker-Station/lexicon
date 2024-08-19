@@ -20,7 +20,6 @@ script "LexiconExpansionsLoad" open
     while(i < MAX_MAPSETS)
     {
         str acronym = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
-        log(s:acronym);
         if(acronym != "_LANG_UNDEFINED_")
         {
             mapSets[i].acronym = acronym;
@@ -28,7 +27,6 @@ script "LexiconExpansionsLoad" open
             mapSets[i].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
             mapSets[i].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
             mapSets[i].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
-            log(s:mapSets[i].acronym, s:", ", s:mapSets[i].authors, s:", ", s:mapSets[i].description, s:", ", s:mapSets[i].custom, s:", ", s:mapSets[i].maps);
         }
         i++;
     }

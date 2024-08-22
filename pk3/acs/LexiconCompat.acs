@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 58
+#define COMPATNUMBER 59
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -36,6 +36,7 @@ str compatArray[COMPATNUMBER] = {
 						"CIGAR13", // Lt. Typhon
 						"invsiph", // MetaDoom
 						"WPFSDMCN", // Metroid Dreadnought
+						"Z_SKULL2", // NeoCore
 						"NTEINT27", // Netronian Chaos
 						"NTMLOGO2", // Nobody Told Me About id
 						"PARKLOG6", // Parkour

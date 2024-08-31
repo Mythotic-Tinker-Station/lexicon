@@ -105,3 +105,20 @@ script "XCDE_StoreSpecial2" (int args2, int args3, int args4)
 	_args3 = args3;
 	_args4 = args4;
 }
+
+// sort an array of integers
+function void bubble_sort(int[]& a)
+{
+	for (int i = 0; i < lengthof(a) - 1; i++)
+	{
+		for (int j = 0; j < lengthof(a) - 1 - i; j++)
+		{
+			if (a[j] > a[j + 1])
+			{
+				int temp = a[j];
+				a[j] = a[j + 1];
+				a[j + 1] = temp;
+			}
+		}
+	}
+}

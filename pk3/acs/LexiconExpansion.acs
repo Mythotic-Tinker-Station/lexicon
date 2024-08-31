@@ -2,31 +2,76 @@
 // This script is used to load the mapset names from the language file and store them in an array for later use.
 
 #define MAX_MAPSETS 64
+#define MAX_ACTORS 256
+#define MAX_WEAPONS 32
+#define MAX_OBITUARIES 32
+#define MAX_TAGS 32
+#define MAX_MESSAGES 32
+
 struct mapSet
 {
-    str title;              // Mapset title (xxxx_MAPSET_title)
-    str acronym;            // Mapset acronym (xxxx_MAPSET_ACRONYM)
-    str authors;            // Mapset authors (xxxx_MAPSET_AUTHORS)
-    str description;        // Mapset description (xxxx_MAPSET_DESCCRIPTION)
-    str custom;             // Mapset has custom assets(xxxx_MAPSET_CUSTOM)
-    str maps;               // Mapset map count (xxxx_MAPSET_MAPS)
+    str title;                      // Mapset title (xxxx_MAPSET_title)
+    str acronym;                    // Mapset acronym (xxxx_MAPSET_ACRONYM)
+    str authors;                    // Mapset authors (xxxx_MAPSET_AUTHORS)
+    str description;                // Mapset description (xxxx_MAPSET_DESCCRIPTION)
+    str custom;                     // Mapset has custom assets(xxxx_MAPSET_CUSTOM)
+    str maps;                       // Mapset map count (xxxx_MAPSET_MAPS)
+    str actors[MAX_ACTORS];         // Mapset actors (xxxx_MAPSET_ACTOR_xxx)
+    str alt_actors[MAX_ACTORS];     // Mapset alt actors (xxxx_MAPSET_ACTOR_xxx)
+    str weapons[MAX_WEAPONS];       // Mapset weapons (xxxx_MAPSET_WEAPON_xxx)
+    str obituaries[MAX_ACTORS];     // Mapset obituaries (xxxx_MAPSET_OBITUARY_xxx)
+    str tags[MAX_TAGS];             // Mapset tags (xxxx_MAPSET_TAG_xxx)
+    str messages[MAX_MESSAGES];     // Mapset messages (xxxx_MAPSET_MESSAGE_xxx)
 };
 
 struct mapSet mapSets[MAX_MAPSETS];
 
 script "LexiconExpansionsLoad" open 
 {
-    int i;
+    int i = 1;
     while(i < MAX_MAPSETS)
     {
         str acronym = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
         if(acronym != "_LANG_UNDEFINED_")
         {
+            mapSets[i].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
             mapSets[i].acronym = acronym;
             mapSets[i].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
             mapSets[i].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
             mapSets[i].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
             mapSets[i].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
+            int j= 1;
+            while(j < MAX_ACTORS)
+            {
+                mapSets[i].actors[j] = getDynLangEntry(acronym, "ACTOR", strparam(i:j));
+                mapSets[i].alt_actors[j] = getDynLangEntry(acronym, "ACTORALT", strparam(i:j));
+                log(s:mapSets[i].actors[j]);
+                j++;
+            }
+            j = 1;
+            while(j < MAX_WEAPONS)
+            {
+                mapSets[i].weapons[j] = getDynLangEntry(acronym, "WEAPON", strparam(i:j));
+                j++;
+            }
+            j = 1;
+            while(j < MAX_OBITUARIES)
+            {
+                mapSets[i].obituaries[j] = getDynLangEntry(acronym, "OB", strparam(i:j));
+                j++;
+            }
+            j = 1;
+            while(j < MAX_TAGS)
+            {
+                mapSets[i].tags[j] = getDynLangEntry(acronym, "TAG", strparam(i:j));
+                j++;
+            }
+            j = 1;
+            while(j < MAX_MESSAGES)
+            {
+                mapSets[i].messages[j] = getDynLangEntry(acronym, "MSG", strparam(i:j));
+                j++;
+            }
         }
         i++;
     }

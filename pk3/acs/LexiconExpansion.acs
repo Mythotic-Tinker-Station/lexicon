@@ -45,7 +45,7 @@ script "LexiconExpansionsLoad" open
             {
                 mapSets[i].actors[j] = getDynLangEntry(acronym, "ACTOR", strparam(i:j));
                 mapSets[i].alt_actors[j] = getDynLangEntry(acronym, "ACTORALT", strparam(i:j));
-                log(s:mapSets[i].actors[j]);
+                if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0) { log(s:mapSets[i].actors[j]); }
                 j++;
             }
             j = 1;

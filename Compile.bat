@@ -19,7 +19,7 @@ if %choice%==1 (
 if %choice%==2 (
     echo Step 2: PACK
     cd pk3
-    ..\compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%-New.pk3 *.kvx *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+    ..\compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
     
     echo Step 3: REPLACE
     cd ..
@@ -36,7 +36,7 @@ if %choice%==3 (
 
     echo Step 2: PACK
     cd pk3
-    ..\compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%-New.pk3 *.kvx *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+    ..\compiler\7za a -r -ssw -mx9 -tzip  ..\%FileName%-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
     echo Step 3: REPLACE
     cd ..

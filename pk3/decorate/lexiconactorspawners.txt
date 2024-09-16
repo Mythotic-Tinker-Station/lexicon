@@ -625,3 +625,556 @@ Actor LexiconActorSpawner50 : LexiconActorSpawnerBase 177
 		Goto Super::Spawn
 	}
 }
+
+Actor LexiconActorSpawner51 : LexiconActorSpawnerBase 178
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 51)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner52 : LexiconActorSpawnerBase 179
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 52)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner53 : LexiconActorSpawnerBase 180
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 53)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner54 : LexiconActorSpawnerBase 181
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 54)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner55 : LexiconActorSpawnerBase 182
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 55)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner56 : LexiconActorSpawnerBase 183
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 56)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner57 : LexiconActorSpawnerBase 184
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 57)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner58 : LexiconActorSpawnerBase 185
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 58)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner59 : LexiconActorSpawnerBase 186
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 59)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner60 : LexiconActorSpawnerBase 187
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 60)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner61 : LexiconActorSpawnerBase 188
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 61)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner62 : LexiconActorSpawnerBase 189
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 62)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner63 : LexiconActorSpawnerBase 190
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 63)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner64 : LexiconActorSpawnerBase 191
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 64)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner65 : LexiconActorSpawnerBase 192
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 65)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner66 : LexiconActorSpawnerBase 193
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 66)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner67 : LexiconActorSpawnerBase 194
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 67)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner68 : LexiconActorSpawnerBase 195
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 68)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner69 : LexiconActorSpawnerBase 196
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 69)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner70 : LexiconActorSpawnerBase 197
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 70)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner71 : LexiconActorSpawnerBase 198
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 71)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner72 : LexiconActorSpawnerBase 199
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 72)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner73 : LexiconActorSpawnerBase 200
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 73)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner74 : LexiconActorSpawnerBase 201
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 74)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner75 : LexiconActorSpawnerBase 202
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 75)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner76 : LexiconActorSpawnerBase 203
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 76)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner77 : LexiconActorSpawnerBase 204
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 77)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner78 : LexiconActorSpawnerBase 205
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 78)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner79 : LexiconActorSpawnerBase 206
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 79)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner80 : LexiconActorSpawnerBase 207
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 80)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner81 : LexiconActorSpawnerBase 208
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 81)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner82 : LexiconActorSpawnerBase 209
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 82)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner83 : LexiconActorSpawnerBase 210
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 83)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner84 : LexiconActorSpawnerBase 211
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 84)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner85 : LexiconActorSpawnerBase 212
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 85)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner86 : LexiconActorSpawnerBase 213
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 86)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner87 : LexiconActorSpawnerBase 214
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 87)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner88 : LexiconActorSpawnerBase 215
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 88)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner89 : LexiconActorSpawnerBase 216
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 89)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner90 : LexiconActorSpawnerBase 217
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 90)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner91 : LexiconActorSpawnerBase 218
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 91)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner92 : LexiconActorSpawnerBase 219
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 92)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner93 : LexiconActorSpawnerBase 220
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 93)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner94 : LexiconActorSpawnerBase 221
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 94)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner95 : LexiconActorSpawnerBase 222
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 95)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner96 : LexiconActorSpawnerBase 223
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 96)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner97 : LexiconActorSpawnerBase 224
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 97)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner98 : LexiconActorSpawnerBase 225
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 98)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner99 : LexiconActorSpawnerBase 226
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 99)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconActorSpawner100 : LexiconActorSpawnerBase 227
+{
+	States
+	{
+	Spawn:
+		TNT1 A 0
+		TNT1 A 0 A_SetUserVar("user_id", 100)
+		Goto Super::Spawn
+	}
+}
+
+Actor LexiconBlankActorSpawner : Actor 228 { }
+Actor LexiconTeleSmokeSpawner : TeleSmoke 229 { }

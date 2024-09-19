@@ -1,33 +1,35 @@
 
 // This script is used to load the mapset names from the language file and store them in an array for later use.
 
-#define MAX_MAPSETS 64
-#define MAX_ACTORS 256
-#define MAX_WEAPONS 32
+#define MAX_MAPSETS 1024
+#define MAX_ACTORS 100
+#define MAX_WEAPONS 16
 #define MAX_OBITUARIES 32
 #define MAX_TAGS 32
 #define MAX_MESSAGES 32
 
 struct mapSet
 {
-    str title;                      // Mapset title (xxxx_MAPSET_title)
+    str title;                      // Mapset title (xxxx_MAPSET_TITLE)
     str acronym;                    // Mapset acronym (xxxx_MAPSET_ACRONYM)
     str authors;                    // Mapset authors (xxxx_MAPSET_AUTHORS)
-    str description;                // Mapset description (xxxx_MAPSET_DESCCRIPTION)
+    str description;                // Mapset description (xxxx_MAPSET_DESCRIPTION)
     str custom;                     // Mapset has custom assets(xxxx_MAPSET_CUSTOM)
     str maps;                       // Mapset map count (xxxx_MAPSET_MAPS)
+    str date;                       // Mapset date (xxxx_MAPSET_DATE)
     str actors[MAX_ACTORS];         // Mapset actors (xxxx_MAPSET_ACTOR_xxx)
-    str alt_actors[MAX_ACTORS];     // Mapset alt actors (xxxx_MAPSET_ACTOR_xxx)
+    str alt_actors[MAX_ACTORS];     // Mapset alt actors (xxxx_MAPSET_ACTORALT_xxx)
     str weapons[MAX_WEAPONS];       // Mapset weapons (xxxx_MAPSET_WEAPON_xxx)
-    str obituaries[MAX_ACTORS];     // Mapset obituaries (xxxx_MAPSET_OBITUARY_xxx)
+    str obituaries[MAX_ACTORS];     // Mapset obituaries (xxxx_MAPSET_OB_xxx)
     str tags[MAX_TAGS];             // Mapset tags (xxxx_MAPSET_TAG_xxx)
-    str messages[MAX_MESSAGES];     // Mapset messages (xxxx_MAPSET_MESSAGE_xxx)
+    str messages[MAX_MESSAGES];     // Mapset messages (xxxx_MAPSET_MSG_xxx)
 };
 
 struct mapSet mapSets[MAX_MAPSETS];
 
 script "LexiconExpansionsLoad" open 
 {
+    if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") != 0) { terminate; }
     int i = 1;
     while(i < MAX_MAPSETS)
     {
@@ -40,12 +42,19 @@ script "LexiconExpansionsLoad" open
             mapSets[i].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
             mapSets[i].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
             mapSets[i].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
+            mapSets[i].date = getDynLangEntry(acronym, "MAPSET", "DATE");
             int j= 1;
             while(j < MAX_ACTORS)
             {
                 mapSets[i].actors[j] = getDynLangEntry(acronym, "ACTOR", strparam(i:j));
                 mapSets[i].alt_actors[j] = getDynLangEntry(acronym, "ACTORALT", strparam(i:j));
-                if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0) { log(s:mapSets[i].actors[j]); }
+                if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+                { 
+                    if (mapSets[i].actors[j] != "_LANG_UNDEFINED_")
+				    {
+                        log(s:mapSets[i].actors[j]); 
+				    }
+                }
                 j++;
             }
             j = 1;

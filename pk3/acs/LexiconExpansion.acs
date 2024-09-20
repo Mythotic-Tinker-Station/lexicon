@@ -47,7 +47,14 @@ script "LexiconExpansionsLoad" open
             mapSets[mapSetCount].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
             mapSets[mapSetCount].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
             mapSets[mapSetCount].date = getDynLangEntry(acronym, "MAPSET", "DATE");
-            mapSets[mapSetCount].thumbnail = StrParam(s:acronym, s:"TN");
+            if (CheckFont(strparam(s:acronym, s:"TN")))
+			{
+				mapSets[mapSetCount].thumbnail = StrParam(s:acronym, s:"TN");
+			}
+			else
+			{
+				mapSets[mapSetCount].thumbnail = "BLNKTN";
+			}
             int j= 1;
             while(j < MAX_ACTORS)
             {

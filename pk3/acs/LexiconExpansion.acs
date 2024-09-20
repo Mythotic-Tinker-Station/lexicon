@@ -26,6 +26,8 @@ struct mapSet
 };
 
 struct mapSet mapSets[MAX_MAPSETS];
+int mapSetCount = 0;
+
 
 script "LexiconExpansionsLoad" open 
 {
@@ -36,23 +38,24 @@ script "LexiconExpansionsLoad" open
         str acronym = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
         if(acronym != "_LANG_UNDEFINED_")
         {
-            mapSets[i].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
-            mapSets[i].acronym = acronym;
-            mapSets[i].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
-            mapSets[i].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
-            mapSets[i].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
-            mapSets[i].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
-            mapSets[i].date = getDynLangEntry(acronym, "MAPSET", "DATE");
+            mapSetCount++;
+            mapSets[mapSetCount].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
+            mapSets[mapSetCount].acronym = acronym;
+            mapSets[mapSetCount].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
+            mapSets[mapSetCount].description = getDynLangEntry(acronym, "MAPSET", "DESCRIPTION");
+            mapSets[mapSetCount].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
+            mapSets[mapSetCount].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
+            mapSets[mapSetCount].date = getDynLangEntry(acronym, "MAPSET", "DATE");
             int j= 1;
             while(j < MAX_ACTORS)
             {
-                mapSets[i].actors[j] = getDynLangEntry(acronym, "ACTOR", strparam(i:j));
-                mapSets[i].alt_actors[j] = getDynLangEntry(acronym, "ACTORALT", strparam(i:j));
+                mapSets[mapSetCount].actors[j] = getDynLangEntry(acronym, "ACTOR", strparam(i:j));
+                mapSets[mapSetCount].alt_actors[j] = getDynLangEntry(acronym, "ACTORALT", strparam(i:j));
                 if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
                 { 
-                    if (mapSets[i].actors[j] != "_LANG_UNDEFINED_")
+                    if (mapSets[mapSetCount].actors[j] != "_LANG_UNDEFINED_")
 				    {
-                        log(s:mapSets[i].actors[j]); 
+                        log(s:mapSets[mapSetCount].actors[j]); 
 				    }
                 }
                 j++;
@@ -60,25 +63,25 @@ script "LexiconExpansionsLoad" open
             j = 1;
             while(j < MAX_WEAPONS)
             {
-                mapSets[i].weapons[j] = getDynLangEntry(acronym, "WEAPON", strparam(i:j));
+                mapSets[mapSetCount].weapons[j] = getDynLangEntry(acronym, "WEAPON", strparam(i:j));
                 j++;
             }
             j = 1;
             while(j < MAX_OBITUARIES)
             {
-                mapSets[i].obituaries[j] = getDynLangEntry(acronym, "OB", strparam(i:j));
+                mapSets[mapSetCount].obituaries[j] = getDynLangEntry(acronym, "OB", strparam(i:j));
                 j++;
             }
             j = 1;
             while(j < MAX_TAGS)
             {
-                mapSets[i].tags[j] = getDynLangEntry(acronym, "TAG", strparam(i:j));
+                mapSets[mapSetCount].tags[j] = getDynLangEntry(acronym, "TAG", strparam(i:j));
                 j++;
             }
             j = 1;
             while(j < MAX_MESSAGES)
             {
-                mapSets[i].messages[j] = getDynLangEntry(acronym, "MSG", strparam(i:j));
+                mapSets[mapSetCount].messages[j] = getDynLangEntry(acronym, "MSG", strparam(i:j));
                 j++;
             }
         }

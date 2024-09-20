@@ -63,7 +63,7 @@ strict namespace Widgets
 	enum : int
 	{
 		// Hud alignment
-		MAX_WIDGETS 		= 256,						// Max number of widgets
+		MAX_WIDGETS 		= 2048,						// Max number of widgets
 		MAX_HOOKS			= 6,						// Max number of hooks
 		MAX_CUSTOMS			= 32,						// Max number of custom variables
 	};

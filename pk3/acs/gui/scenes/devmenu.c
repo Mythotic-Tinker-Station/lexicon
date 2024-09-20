@@ -7,22 +7,40 @@ strict namespace DevMenu
 	function void Build(void)
 	{    
         // mapset buttons
-        /*
-		for(int i = 0; i < expansion_count; i++)
-		{
-			mapset_buttons[i] = Button::Create(200.0, 200.0+(32.0*fixed(i)), 256.0, 24.0, expansions[i].name);
+        fixed screenWidth = Screen::GetWidth() - 64.0;
+        fixed screenHeight = Screen::GetHeight() - 64.0;
+        fixed buttonWidth = 192.0;
+        fixed buttonHeight = 108.0;
+        fixed columnCount = screenWidth / buttonWidth;
+        fixed rowCount = screenHeight / buttonHeight;
+
+        fixed gridWidth = columnCount * buttonWidth;
+        fixed gridHeight = rowCount * buttonHeight;
+
+        fixed offsetX = (screenWidth - gridWidth) / 2.0;
+        fixed offsetY = (screenHeight - gridHeight) / 2.0;
+
+        for (int i = 0; i < mapSetCount; i++)
+        {
+            fixed column = fixed(i % int(columnCount));
+            fixed row = fixed(i / int(rowCount));
+
+            fixed x = offsetX + (buttonWidth * column);
+            fixed y = offsetY + (buttonHeight * row);
+            
+            mapset_buttons[i] = Button::Create(x, y, buttonWidth, buttonHeight, mapSets[i].title);
             Widgets::SetVisible(mapset_buttons[i], true);
-			Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
-            Widgets::SetFont(mapset_buttons[i], Font::font_fancybig);
-            Widgets::SetText(mapset_buttons[i], expansions[i].name);
+            Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
+            Widgets::SetFont(mapset_buttons[i], Font::font_fancysmall);
+            Widgets::SetText(mapset_buttons[i], mapSets[i].title);
             Widgets::SetTextColorNormal(mapset_buttons[i], "White");
             Widgets::SetRenderBack(mapset_buttons[i], false);
+            Widgets::SetImage(mapset_buttons[i], "BLNKTN");
+            Widgets::SetRenderImage(mapset_buttons[i], true);
         }
-        */
     }
 
-
-	function void RunBGVignette()
+	function void RunBGPost()
 	{
         //vignette
         Screen::DrawImage("VIGT", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
@@ -48,11 +66,6 @@ strict namespace DevMenu
             }
         }
 	}
-
-    function void RunWidgets()
-	{
-
-    }
 
 	function void Event_MapsetClick(int id)
 	{

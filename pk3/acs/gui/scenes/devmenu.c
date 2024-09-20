@@ -31,6 +31,7 @@ strict namespace DevMenu
             Widgets::SetTextColorNormal(mapset_buttons[i], "White");
             Widgets::SetRenderBack(mapset_buttons[i], false);
             Widgets::SetImage(mapset_buttons[i], "BLNKTN");
+            //Widgets::SetImage(mapset_buttons[i], mapSets[i].thumbnail);
             Widgets::SetRenderImage(mapset_buttons[i], true);
         }
     }

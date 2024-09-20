@@ -17,6 +17,7 @@ struct mapSet
     str custom;                     // Mapset has custom assets(xxxx_MAPSET_CUSTOM)
     str maps;                       // Mapset map count (xxxx_MAPSET_MAPS)
     str date;                       // Mapset date (xxxx_MAPSET_DATE)
+    str thumbnail;                  // Mapset thumbnail (xxxxTN)
     str actors[MAX_ACTORS];         // Mapset actors (xxxx_MAPSET_ACTOR_xxx)
     str alt_actors[MAX_ACTORS];     // Mapset alt actors (xxxx_MAPSET_ACTORALT_xxx)
     str weapons[MAX_WEAPONS];       // Mapset weapons (xxxx_MAPSET_WEAPON_xxx)
@@ -46,6 +47,7 @@ script "LexiconExpansionsLoad" open
             mapSets[mapSetCount].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
             mapSets[mapSetCount].maps = getDynLangEntry(acronym, "MAPSET", "MAPS");
             mapSets[mapSetCount].date = getDynLangEntry(acronym, "MAPSET", "DATE");
+            mapSets[mapSetCount].thumbnail = StrParam(s:acronym, s:"TN");
             int j= 1;
             while(j < MAX_ACTORS)
             {

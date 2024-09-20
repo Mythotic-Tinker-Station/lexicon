@@ -9,7 +9,19 @@ strict namespace VoteMenu
     int test;
 	function void Build(void)
 	{    
-
+        // mapset buttons
+        /*
+		for(int i = 0; i < expansion_count; i++)
+		{
+			mapset_buttons[i] = Button::Create(200.0, 200.0+(32.0*fixed(i)), 256.0, 24.0, expansions[i].name);
+            Widgets::SetVisible(mapset_buttons[i], true);
+			Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
+            Widgets::SetFont(mapset_buttons[i], Font::font_fancybig);
+            Widgets::SetText(mapset_buttons[i], expansions[i].name);
+            Widgets::SetTextColorNormal(mapset_buttons[i], "White");
+            Widgets::SetRenderBack(mapset_buttons[i], false);
+        }
+        */
     }
 
 

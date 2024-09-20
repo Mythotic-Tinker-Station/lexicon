@@ -5,30 +5,25 @@ strict namespace DevMenu
     fixed bgx;
     fixed bgy;
 	function void Build(void)
-	{    
-        // mapset buttons
-        fixed screenWidth = Screen::GetWidth() - 64.0;
-        fixed screenHeight = Screen::GetHeight() - 64.0;
-        fixed buttonWidth = 192.0;
-        fixed buttonHeight = 108.0;
-        fixed columnCount = screenWidth / buttonWidth;
-        fixed rowCount = screenHeight / buttonHeight;
+	{   
+        fixed gridWidth = Screen::GetWidth() - 64.0;
+        fixed gridHeight = Screen::GetHeight() - 432.0;
+        fixed cellWidth = 192.0;
+        fixed cellHeight = 108.0;
+        fixed cellWidthPad = 4.0;
+        fixed cellHeightPad = 4.0;
+        fixed cellCountX = fixed(int(gridWidth / cellWidth));
+        fixed cellCountY = fixed(int(gridHeight / cellHeight));
+        int cellCount = int(cellCountX * cellCountY);
 
-        fixed gridWidth = columnCount * buttonWidth;
-        fixed gridHeight = rowCount * buttonHeight;
+        fixed gridX = (Screen::GetWidth() - (cellCountX * (cellWidth + cellWidthPad))) / 2.0;
+        fixed gridY = (Screen::GetHeight() - (cellCountY * (cellHeight + cellHeightPad))) / 2.0;
 
-        fixed offsetX = (screenWidth - gridWidth) / 2.0;
-        fixed offsetY = (screenHeight - gridHeight) / 2.0;
-
-        for (int i = 0; i < mapSetCount; i++)
+        for (int i = 0; i < cellCount; i++)
         {
-            fixed column = fixed(i % int(columnCount));
-            fixed row = fixed(i / int(rowCount));
-
-            fixed x = offsetX + (buttonWidth * column);
-            fixed y = offsetY + (buttonHeight * row);
-            
-            mapset_buttons[i] = Button::Create(x, y, buttonWidth, buttonHeight, mapSets[i].title);
+            fixed x = gridX + fixed(i % int(cellCountX)) * (cellWidth + cellWidthPad);
+            fixed y = gridY + fixed(i / int(cellCountX)) * (cellHeight + cellHeightPad);
+            mapset_buttons[i] = Button::Create(x, y, cellWidth, cellHeight, mapSets[i].title);
             Widgets::SetVisible(mapset_buttons[i], true);
             Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
             Widgets::SetFont(mapset_buttons[i], Font::font_fancysmall);
@@ -38,15 +33,6 @@ strict namespace DevMenu
             Widgets::SetImage(mapset_buttons[i], "BLNKTN");
             Widgets::SetRenderImage(mapset_buttons[i], true);
         }
-    }
-
-	function void RunBGPost()
-	{
-        //vignette
-        Screen::DrawImage("VIGT", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
-        Screen::DrawImage("VIGB", "a", "Black", 0.0, Screen::GetHeight()-478.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
-        Screen::DrawImage("VIGL", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
-        Screen::DrawImage("VIGR", "a", "Black", Screen::GetWidth()-478.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
     }
 
 	function void RunBG()
@@ -65,6 +51,11 @@ strict namespace DevMenu
                 Screen::DrawImage("VOTEBG", "a", "White", x+bgx, y+bgy, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
             }
         }
+        //vignette
+        Screen::DrawImage("VIGT", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+        Screen::DrawImage("VIGB", "a", "Black", 0.0, Screen::GetHeight()-478.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+        Screen::DrawImage("VIGL", "a", "Black", 0.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
+        Screen::DrawImage("VIGR", "a", "Black", Screen::GetWidth()-478.0, 0.0, Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 	}
 
 	function void Event_MapsetClick(int id)

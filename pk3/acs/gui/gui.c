@@ -124,7 +124,6 @@ strict namespace Gui
                 Cursor::Run();
                 DevMenu::RunBG();
                 Widgets::Run();
-                DevMenu::RunBGPost();
                 Screen::ResetHudIDs();
                 delay(1);
             }
@@ -139,7 +138,6 @@ strict namespace Gui
                 Cursor::Run();
                 VoteMenu::RunBG();
                 Widgets::Run();
-                VoteMenu::RunBGPost();
 
                 // cursor x
                 Screen::DrawText(Font::font_fancysmall, "CX:", "White", 20.0, 10.0);

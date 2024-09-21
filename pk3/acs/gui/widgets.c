@@ -710,7 +710,7 @@ strict namespace Widgets
 				// should we render the text?
 				if(GetRenderText(id))
 				{
-					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetCenterX(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_CENTER, Screen::YALIGN_TOP);
+					Screen::DrawText(GetFont(id), GetText(id), GetTextColorCurrent(id), GetX1(id) + GetTextOffsetX(id), GetY1(id) + GetTextOffsetY(id), Screen::XALIGN_LEFT, Screen::YALIGN_TOP);
 				}
 
 

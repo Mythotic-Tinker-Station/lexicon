@@ -7,6 +7,7 @@ strict namespace DevMenu
     int lblCustom;
     int lblMaps;
     int lblDate;
+    int btnVote;
 
     fixed bgx;
     fixed bgy;
@@ -36,7 +37,7 @@ strict namespace DevMenu
             mapset_buttons[i] = Button::Create(x, y, cellWidth, cellHeight, mapSets[i].title);
             Widgets::SetVisible(mapset_buttons[i], true);
             Widgets::SetRenderBack(mapset_buttons[i], false);
-            Widgets::SetFont(mapset_buttons[i], Font::font_fancysmall);
+            Widgets::SetFont(mapset_buttons[i], Font::font_lexiconsmall);
             Widgets::SetText(mapset_buttons[i], mapSets[i].title);
             Widgets::SetTextColorNormal(mapset_buttons[i], "White");
             Widgets::SetRenderImage(mapset_buttons[i], true);
@@ -55,6 +56,8 @@ strict namespace DevMenu
         lblMaps = Label::Create(infoX, infoY + 128.0, Font::font_lexiconbig, mapSets[0].maps);
         lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
 
+        btnVote = Button::Create(Screen::GetWidth()-64.0, Screen::GetHeight() - 64.0, 128.0, 32.0, "Vote");
+        Widgets::SetFont(btnVote, Font::font_lexiconsmall);
     }
 
 	function void RunBG()
@@ -86,12 +89,12 @@ strict namespace DevMenu
 	}
 	function void Event_ExpansionClick(int id)
 	{
-        Label::SetText(lblTitle,        strParam(s:"Title: ",   s:mapSets[id].title));
-        Label::SetText(lblAuthors,      strParam(s:"Authors: ", s:mapSets[id].authors));
-        Label::SetText(lblDescription,  strParam(s:"Description: ", s:mapSets[id].description));
-        Label::SetText(lblCustom,       strParam(s:"Custom: ", s:mapSets[id].custom));
-        Label::SetText(lblMaps,         strParam(s:"Maps: ", s:mapSets[id].maps));
-        Label::SetText(lblDate,         strParam(s:"Date: ", s:mapSets[id].date));
+        Widgets::SetText(lblTitle,        strParam(s:"Title:       ",   s:mapSets[id].title));
+        Widgets::SetText(lblAuthors,      strParam(s:"Authors:     ",   s:mapSets[id].authors));
+        Widgets::SetText(lblDescription,  strParam(s:"Description: ",   s:mapSets[id].description));
+        Widgets::SetText(lblCustom,       strParam(s:"Custom:      ",   s:mapSets[id].custom));
+        Widgets::SetText(lblMaps,         strParam(s:"Maps:        ",   s:mapSets[id].maps));
+        Widgets::SetText(lblDate,         strParam(s:"Date:        ",   s:mapSets[id].date));
 	}
 }
 

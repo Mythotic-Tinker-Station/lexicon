@@ -15,6 +15,7 @@ strict namespace Font
     int font_fancybig;
     int font_fancysmall;
     int font_lexiconbig;
+    int font_lexiconsmall;
 
     function int Create(str name, fixed cwidth, fixed cheight)
 	{   
@@ -45,5 +46,6 @@ strict namespace Font
         font_fancybig = Font::Create("BIGFONT", 16.0, 16.0);
         font_fancysmall = Font::Create("SMALLFONT", 8.0, 9.0);
         font_lexiconbig = Font::Create("LXBIGFONT", 18.0, 32.0);
+        font_lexiconsmall = Font::Create("LXSMALLFONT", 9.0, 16.0);
     }    
 }

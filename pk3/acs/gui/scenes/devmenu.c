@@ -89,12 +89,12 @@ strict namespace DevMenu
 	}
 	function void Event_ExpansionClick(int id)
 	{
-        Widgets::SetText(lblTitle,        strParam(s:"Title:       ",   s:mapSets[id].title));
-        Widgets::SetText(lblAuthors,      strParam(s:"Authors:     ",   s:mapSets[id].authors));
-        Widgets::SetText(lblDescription,  strParam(s:"Description: ",   s:mapSets[id].description));
-        Widgets::SetText(lblCustom,       strParam(s:"Custom:      ",   s:mapSets[id].custom));
-        Widgets::SetText(lblMaps,         strParam(s:"Maps:        ",   s:mapSets[id].maps));
-        Widgets::SetText(lblDate,         strParam(s:"Date:        ",   s:mapSets[id].date));
+        Widgets::SetText(lblTitle,        strParam(l:"LEXICON_UI_MAPSET_TITLE", s:mapSets[id].title));
+        Widgets::SetText(lblAuthors,      strParam(l:"LEXICON_UI_MAPSET_AUTHORS", s:mapSets[id].authors));
+        Widgets::SetText(lblDescription,  strParam(l:"LEXICON_UI_MAPSET_DESCRIPTION", s:mapSets[id].description));
+        Widgets::SetText(lblCustom,       strParam(l:"LEXICON_UI_MAPSET_CUSTOM", s:mapSets[id].custom));
+        Widgets::SetText(lblMaps,         strParam(l:"LEXICON_UI_MAPSET_MAPS", s:mapSets[id].maps));
+        Widgets::SetText(lblDate,         strParam(l:"LEXICON_UI_MAPSET_DATE", s:mapSets[id].date));
 	}
 }
 

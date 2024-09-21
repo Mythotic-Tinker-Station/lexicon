@@ -1,7 +1,13 @@
 [enu default]
+// Strings for voting screen
 LEXICON_UI_MAPSET_TITLE = "Title:       ";
 LEXICON_UI_MAPSET_AUTHORS = "Authors:     ";
 LEXICON_UI_MAPSET_DESCRIPTION = "Description: ";
 LEXICON_UI_MAPSET_CUSTOM = "Custom:      ";
 LEXICON_UI_MAPSET_MAPS = "Maps:        ";
 LEXICON_UI_MAPSET_DATE = "Date:        ";
+LEXICON_UI_EXPANSION = "Expansion:   ";
+LEXICON_UI_VOTE = "Vote";
+LEXICON_UI_VOTE_TIMER = "Voting time left:       ";
+LEXICON_UI_VOTE_PASSED = "Vote passed!";
+LEXICON_UI_VOTE_FAILED = "Vote failed!";

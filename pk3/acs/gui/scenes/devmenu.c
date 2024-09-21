@@ -1,11 +1,17 @@
 strict namespace DevMenu
 {
     int mapset_buttons[2048];
+    int lblTitle;
+    int lblAuthors;
+    int lblDescription;
+    int lblCustom;
+    int lblMaps;
+    int lblDate;
 
     fixed bgx;
     fixed bgy;
-	function void Build(void)
-	{   
+    function void Build(void)
+    {   
         fixed gridWidth = Screen::GetWidth() - 64.0;
         fixed gridHeight = Screen::GetHeight() / 2.0;
         fixed gridOffsetX = 0.0;
@@ -29,14 +35,26 @@ strict namespace DevMenu
 
             mapset_buttons[i] = Button::Create(x, y, cellWidth, cellHeight, mapSets[i].title);
             Widgets::SetVisible(mapset_buttons[i], true);
-            Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
+            Widgets::SetRenderBack(mapset_buttons[i], false);
             Widgets::SetFont(mapset_buttons[i], Font::font_fancysmall);
             Widgets::SetText(mapset_buttons[i], mapSets[i].title);
             Widgets::SetTextColorNormal(mapset_buttons[i], "White");
-            Widgets::SetRenderBack(mapset_buttons[i], false);
-            Widgets::SetImage(mapset_buttons[i], mapSets[i].thumbnail);
             Widgets::SetRenderImage(mapset_buttons[i], true);
+            Widgets::SetImage(mapset_buttons[i], mapSets[i].thumbnail);
+            Widgets::SetClickable(mapset_buttons[i], true);
+            Widgets::SetHoverable(mapset_buttons[i], true);
+            Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);
         }
+
+        fixed infoX = gridOffsetX + cX;
+        fixed infoY = gridOffsetY + cY + fixed(cellCount / int(cellCountX)) * (cellHeight + cellHeightPad) + 32.0;
+        lblTitle = Label::Create(infoX, infoY, Font::font_lexiconbig, mapSets[0].title);
+        lblAuthors = Label::Create(infoX, infoY + 32.0, Font::font_lexiconbig, mapSets[0].authors);
+        lblDescription = Label::Create(infoX, infoY + 64.0, Font::font_lexiconbig, mapSets[0].description);
+        lblCustom = Label::Create(infoX, infoY + 96.0, Font::font_lexiconbig, mapSets[0].custom);
+        lblMaps = Label::Create(infoX, infoY + 128.0, Font::font_lexiconbig, mapSets[0].maps);
+        lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
+
     }
 
 	function void RunBG()
@@ -68,7 +86,12 @@ strict namespace DevMenu
 	}
 	function void Event_ExpansionClick(int id)
 	{
-
+        Label::SetText(lblTitle,        strParam(s:"Title: ",   s:mapSets[id].title));
+        Label::SetText(lblAuthors,      strParam(s:"Authors: ", s:mapSets[id].authors));
+        Label::SetText(lblDescription,  strParam(s:"Description: ", s:mapSets[id].description));
+        Label::SetText(lblCustom,       strParam(s:"Custom: ", s:mapSets[id].custom));
+        Label::SetText(lblMaps,         strParam(s:"Maps: ", s:mapSets[id].maps));
+        Label::SetText(lblDate,         strParam(s:"Date: ", s:mapSets[id].date));
 	}
 }
 

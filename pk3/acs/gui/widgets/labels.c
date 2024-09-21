@@ -15,4 +15,10 @@ strict namespace Label
 
 		return id;
 	}
+
+    function void SetText(int id, str t)
+    {
+        Widgets::SetText(id, t);
+        Widgets::SetRectPosition(id, Widgets::GetX1(id), Widgets::GetY1(id), fixed(StrLen(t))*Font::GetCharWidth(Widgets::obj[id].font), 1.0);
+    }
 }

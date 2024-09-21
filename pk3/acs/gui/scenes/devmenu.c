@@ -7,22 +7,26 @@ strict namespace DevMenu
 	function void Build(void)
 	{   
         fixed gridWidth = Screen::GetWidth() - 64.0;
-        fixed gridHeight = Screen::GetHeight() - 432.0;
+        fixed gridHeight = Screen::GetHeight() / 2.0;
+        fixed gridOffsetX = 0.0;
+        fixed gridOffsetY = -128.0;
         fixed cellWidth = 192.0;
         fixed cellHeight = 108.0;
         fixed cellWidthPad = 4.0;
         fixed cellHeightPad = 4.0;
+        
         fixed cellCountX = fixed(int(gridWidth / cellWidth));
         fixed cellCountY = fixed(int(gridHeight / cellHeight));
         int cellCount = int(cellCountX * cellCountY);
 
-        fixed gridX = (Screen::GetWidth() - (cellCountX * (cellWidth + cellWidthPad))) / 2.0;
-        fixed gridY = (Screen::GetHeight() - (cellCountY * (cellHeight + cellHeightPad))) / 2.0;
+        fixed cX = (Screen::GetWidth() - (cellCountX * (cellWidth + cellWidthPad))) / 2.0;
+        fixed cY = (Screen::GetHeight() - (cellCountY * (cellHeight + cellHeightPad))) / 2.0;
 
         for (int i = 0; i < cellCount; i++)
         {
-            fixed x = gridX + fixed(i % int(cellCountX)) * (cellWidth + cellWidthPad);
-            fixed y = gridY + fixed(i / int(cellCountX)) * (cellHeight + cellHeightPad);
+            fixed x = gridOffsetX + cX + fixed(i % int(cellCountX)) * (cellWidth + cellWidthPad);
+            fixed y = gridOffsetY + cY + fixed(i / int(cellCountX)) * (cellHeight + cellHeightPad);
+
             mapset_buttons[i] = Button::Create(x, y, cellWidth, cellHeight, mapSets[i].title);
             Widgets::SetVisible(mapset_buttons[i], true);
             Widgets::AddClickedHook(mapset_buttons[i], Event_ExpansionClick);

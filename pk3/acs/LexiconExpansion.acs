@@ -39,7 +39,6 @@ script "LexiconExpansionsLoad" open
         str acronym = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
         if(acronym != "_LANG_UNDEFINED_")
         {
-            mapSetCount++;
             mapSets[mapSetCount].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
             mapSets[mapSetCount].acronym = acronym;
             mapSets[mapSetCount].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
@@ -93,6 +92,7 @@ script "LexiconExpansionsLoad" open
                 mapSets[mapSetCount].messages[j] = getDynLangEntry(acronym, "MSG", strparam(i:j));
                 j++;
             }
+            mapSetCount++;
         }
         i++;
     }

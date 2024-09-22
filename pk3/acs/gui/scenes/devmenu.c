@@ -56,7 +56,7 @@ strict namespace DevMenu
         lblMaps = Label::Create(infoX, infoY + 128.0, Font::font_lexiconbig, mapSets[0].maps);
         lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
 
-        btnVote = Button::Create(Screen::GetWidth()-64.0, Screen::GetHeight() - 64.0, 128.0, 32.0, l:"LEXICON_UI_VOTE");
+        btnVote = Button::Create(Screen::GetWidth()-64.0, Screen::GetHeight() - 64.0, 128.0, 32.0, "Vote");
         Widgets::SetFont(btnVote, Font::font_lexiconsmall);
     }
 

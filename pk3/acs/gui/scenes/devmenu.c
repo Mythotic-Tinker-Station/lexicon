@@ -15,6 +15,8 @@ strict namespace DevMenu
     int lblMaps;
     int lblDate;
     int btnVote;
+    int btnLeft;
+    int btnRight;
 
     fixed bgx;
     fixed bgy;
@@ -53,10 +55,10 @@ strict namespace DevMenu
             // all of these methods use the id number provided by the create function to set properties of the button
             // all of these methods and more are documented in the gui/widgets.c file
             Widgets::SetVisible(mapset_buttons[i], true);
-            Widgets::SetRenderBack(mapset_buttons[i], false);
             Widgets::SetFont(mapset_buttons[i], Font::font_lexiconsmall);
             Widgets::SetText(mapset_buttons[i], mapSets[i].title);
             Widgets::SetTextColorNormal(mapset_buttons[i], "White");
+            Widgets::SetRenderText(mapset_buttons[i], true);
             Widgets::SetRenderImage(mapset_buttons[i], true);
             Widgets::SetImage(mapset_buttons[i], mapSets[i].thumbnail);
             Widgets::SetClickable(mapset_buttons[i], true);
@@ -79,8 +81,19 @@ strict namespace DevMenu
         lblMaps = Label::Create(infoX, infoY + 128.0, Font::font_lexiconbig, mapSets[0].maps);
         lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
 
+        // left button
+        /*
+        btnLeft = Button::Create(gridOffsetX + cX - 32.0, gridOffsetY + cY, 16.0, gridHeight, "Left");
+        Widgets::SetRenderImage(btnLeft, true);
+        Widgets::SetImage(btnLeft, "ARROWL");
+
+        // right button
+        btnRight = Button::Create(gridOffsetX + cX + gridWidth + 16.0, gridOffsetY + cY, 16.0, gridHeight, "Right");
+        Widgets::SetRenderImage(btnRight, true);
+        Widgets::SetImage(btnRight, "ARROWR");
+*/
         // vote button
-        btnVote = Button::Create(Screen::GetWidth()-64.0, Screen::GetHeight() - 64.0, 128.0, 32.0, "Vote");
+        btnVote = Button::Create(Screen::GetWidth()-256.0, Screen::GetHeight() - 256.0, 128.0, 32.0, "Vote");
         Widgets::SetFont(btnVote, Font::font_lexiconsmall);
     }
 

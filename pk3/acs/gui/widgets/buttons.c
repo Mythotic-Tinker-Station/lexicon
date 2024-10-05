@@ -16,9 +16,6 @@ strict namespace Button
 		Widgets::SetClickable(id, true);
 		Widgets::SetHoverable(id, true);
 
-		Widgets::SetRenderText(id, true);
-        Widgets::SetRenderBack(id, true);
-
 		Widgets::SetText(id, t);
 
         Widgets::SetTextOffsetY(id, Font::GetCharHeight(Widgets::GetFont(id)));

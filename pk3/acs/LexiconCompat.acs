@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 62
+#define COMPATNUMBER 64
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -63,7 +63,9 @@ str compatArray[COMPATNUMBER] = {
 						"RELPIST7", // Trailblazer
 						"THROWJK", // Treasure Tech
 						"Upbrmmax", // Weasel Presents: Terrorists!
-						"BarForce" // Xim's Star Wars Doom
+						"WLFSTART", // Weasel Presents: NAZIS!
+						"BarForce", // Xim's Star Wars Doom
+						"H_ICENI6" // Zero Tolerance [2016 REDUX]
 };
 
 function bool isGameModded (void)

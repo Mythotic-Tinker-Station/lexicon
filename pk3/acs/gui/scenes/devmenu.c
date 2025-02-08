@@ -17,6 +17,7 @@ strict namespace DevMenu
     int btnVote;
     int btnLeft;
     int btnRight;
+    str mapAcronym;
 
     fixed bgx;
     fixed bgy;
@@ -66,8 +67,7 @@ strict namespace DevMenu
 
             // add a clicked hook to the button, which is a function that is called when the button is clicked
             // Event_MapsetClick is a function defined below
-            //Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetClick);
-			Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetVote);
+            Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetClick);
         }
 
         fixed infoX = gridOffsetX + cX;
@@ -81,6 +81,7 @@ strict namespace DevMenu
         lblCustom = Label::Create(infoX, infoY + 96.0, Font::font_lexiconbig, mapSets[0].custom);
         lblMaps = Label::Create(infoX, infoY + 128.0, Font::font_lexiconbig, mapSets[0].maps);
         lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
+        mapAcronym = mapSets[0].acronym;
 
         // left button
         btnLeft = Button::Create(gridOffsetX + cX - 32.0, gridOffsetY + cY, 16.0, gridHeight, "Left");
@@ -132,13 +133,14 @@ strict namespace DevMenu
         Widgets::SetText(lblCustom,       strParam(l:"LEXICON_UI_MAPSET_CUSTOM", s:mapSets[id].custom));
         Widgets::SetText(lblMaps,         strParam(l:"LEXICON_UI_MAPSET_MAPS", s:mapSets[id].maps));
         Widgets::SetText(lblDate,         strParam(l:"LEXICON_UI_MAPSET_DATE", s:mapSets[id].date));
+        mapAcronym = mapSets[id].acronym;
 	}
 	
 	// user voted a mapset
 	function void Event_MapsetVote(int id)
 	{
 		SetPlayerProperty(1, 0, PROP_TOTALLYFROZEN);
-		ChangeLevel(strParam(s:mapSets[id].acronym, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);
+		ChangeLevel(strParam(s:mapAcronym, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);
 	}
 }
 

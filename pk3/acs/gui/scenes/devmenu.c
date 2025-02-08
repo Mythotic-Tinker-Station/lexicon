@@ -82,19 +82,20 @@ strict namespace DevMenu
         lblDate = Label::Create(infoX, infoY + 160.0, Font::font_lexiconbig, mapSets[0].date);
 
         // left button
-        /*
         btnLeft = Button::Create(gridOffsetX + cX - 32.0, gridOffsetY + cY, 16.0, gridHeight, "Left");
         Widgets::SetRenderImage(btnLeft, true);
         Widgets::SetImage(btnLeft, "ARROWL");
 
         // right button
-        btnRight = Button::Create(gridOffsetX + cX + gridWidth + 16.0, gridOffsetY + cY, 16.0, gridHeight, "Right");
+        btnRight = Button::Create(gridOffsetX + cX + gridWidth - 80.0, gridOffsetY + cY, 16.0, gridHeight, "Right");
         Widgets::SetRenderImage(btnRight, true);
         Widgets::SetImage(btnRight, "ARROWR");
-*/
+
         // vote button
-        btnVote = Button::Create(Screen::GetWidth()-256.0, Screen::GetHeight() - 256.0, 128.0, 32.0, "Vote");
-        Widgets::SetFont(btnVote, Font::font_lexiconsmall);
+        btnVote = Button::Create(infoX, infoY + 196.0, 128.0, 32.0, "Vote");
+		Widgets::SetRenderText(btnVote, true);
+        Widgets::SetFont(btnVote, Font::font_lexiconbig);
+		Widgets::AddClickedHook(btnVote, Event_MapsetVote);
     }
 
     // the scrolling translucent purple intermission background
@@ -130,6 +131,13 @@ strict namespace DevMenu
         Widgets::SetText(lblCustom,       strParam(l:"LEXICON_UI_MAPSET_CUSTOM", s:mapSets[id].custom));
         Widgets::SetText(lblMaps,         strParam(l:"LEXICON_UI_MAPSET_MAPS", s:mapSets[id].maps));
         Widgets::SetText(lblDate,         strParam(l:"LEXICON_UI_MAPSET_DATE", s:mapSets[id].date));
+	}
+	
+	// user voted a mapset
+	function void Event_MapsetVote(int id)
+	{
+		SetPlayerProperty(1, 0, PROP_TOTALLYFROZEN);
+		ChangeLevel(strParam(s:mapSets[id].acronym, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);
 	}
 }
 

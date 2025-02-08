@@ -66,7 +66,8 @@ strict namespace DevMenu
 
             // add a clicked hook to the button, which is a function that is called when the button is clicked
             // Event_MapsetClick is a function defined below
-            Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetClick);
+            //Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetClick);
+			Widgets::AddClickedHook(mapset_buttons[i], Event_MapsetVote);
         }
 
         fixed infoX = gridOffsetX + cX;

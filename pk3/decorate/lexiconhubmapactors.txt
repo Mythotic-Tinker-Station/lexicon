@@ -1,0 +1,102 @@
+Actor LexiconHubMapTorch : RedTorch 230
+{
+	Radius 6
+	Height 60
+	States
+	{
+	Spawn:
+		LX9_ RST 4 Light("LEXICON_TORCH") Bright
+		Loop
+	}
+}
+
+Actor LexiconHubMapStalagtiteBig : Stalagtite 231
+{
+	Height 32
+	-SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX9_ U -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapStalagtiteSmall : Stalagtite 232
+{
+	Height 18
+	-SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX9_ V -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapStalagmiteBig : Stalagtite 233
+{
+	-SOLID
+	States
+	{
+	Spawn:
+		LX9_ W -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapStalagmiteSmall : Stalagtite 234
+{
+	-SOLID
+	States
+	{
+	Spawn:
+		LX9_ X -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapRock1 : DeadStick 235
+{
+	Radius 15
+	Height 10
+	-SOLID
+	States
+	{
+	Spawn:
+		LX9_ Y -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapRock2 : DeadStick 236
+{
+	Radius 15
+	Height 10
+	-SOLID
+	States
+	{
+	Spawn:
+		LX9_ Z -1
+		Stop
+	}
+}
+
+Actor LexiconHubMapCube 2037
+{
+	Radius 16
+	Height 32
+	Scale 0.5
+	+NOGRAVITY
+	+FLOATBOB
+	States
+	{
+	Spawn:
+		LX9_ "[" -1 Bright
+		Stop
+	}
+}

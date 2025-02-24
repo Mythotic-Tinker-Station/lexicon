@@ -1,14 +1,14 @@
 clearepisodes
 
-episode VR
+episode HUBMAP
 {
 	name = "The Sentinel's Lexicon"
 	key = "1"
 }
 
-map VR "Inside the Lexicon"
+map HUBMAP "Inside the Lexicon"
 {
 	music = "LXHBMS00"
 	levelnum = 99
-	sky1 = "_14"
+	sky1 = "OSKY31"
 }

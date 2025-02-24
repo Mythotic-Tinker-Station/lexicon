@@ -1,0 +1,65 @@
+// Stone Torch
+Information:
+Name: More Hexen Candles
+Connection: None
+Palette: Hexen
+Summon: Hexen[Stand/Wall]Candle[White/Red/Black/Tan/Green/Blue]
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+GLDefs: Captain Toenail
+Sprites: Hexen
+Sprite Edit: Captain Toenail
+
+Description:
+	The cluster of candles from hexen in a variety of colours. Includes wall
+	and stand mounted versions.
+
+// Cave Formations
+Information:
+Name: Cave Formations
+Connection: None
+Palette: Heretic
+Summon: (Limestone/Brown/Tan/Volcanic)(Floor/Ceiling)(1-10)
+Ambient Sound: No
+De-/Activatable: No
+Destroyable: No
+Special Effects: No
+Brightmaps: No
+Actor modification: No
+ACS: No
+
+Credits:
+Code: Captain Toenail
+Sprites: Daggerfall
+Sprite Edit: Captain Toenail
+
+Description:
+Stalactites and stalagmites from Daggerfall for ceilings and floors.
+Contains four sets with different rock textures.
+
+// Rocks
+Information:
+Name: Rocks
+Connection: None
+Palette: Doom
+Summon: RockGrey, RockBrown, RockTan, RockBlack
+Ambient Sound: no
+De-/Activatable: no
+Destroyable: no
+Special Effects: random orientation and sprite 
+Brightmaps: no
+Actor modification: No
+ACS: no
+
+Credits:
+Submitted: Captain Toenail
+Decorate: Captain Toenail
+Sprites: Captain Toenail

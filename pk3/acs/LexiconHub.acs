@@ -1,0 +1,291 @@
+#define MAX_MAPSETS 1024
+#define MAX_EXPANSIONS 16
+
+struct mapSet
+{
+	str expansion;					// Mapset expansion pack
+	str acronym;                    // Mapset acronym
+	str title;                      // Mapset title
+	str authors;                    // Mapset authors
+	str custom;                     // Mapset has custom assets
+	str date;                       // Mapset date
+	str port;                       // Mapset port
+	str thumbnail;                  // Mapset thumbnail
+};
+
+struct mapSet mapSets[MAX_EXPANSIONS][MAX_MAPSETS];
+int expansionCount = 0;
+int mapSetCount = 0;
+
+function void initiateLexiconMaps(void)
+{
+	for (int i = 1; i < MAX_EXPANSIONS; i++)
+	{
+		str expansion = getDynLangEntry("ADD", "EXPANSION", strparam(i:i));
+		int expansionSuffix = strleft(strparam(s:expansion), 6);
+		if (expansion != "_LANG_UNDEFINED_")
+		{
+			for (int j = 1; j < MAX_MAPSETS; j++)
+			{
+				str acronym = getDynLangEntry(expansionSuffix, "MAPSET", strparam(i:j));
+				if(acronym != "_LANG_UNDEFINED_")
+				{
+					mapSets[expansionCount][mapSetCount].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
+					mapSets[expansionCount][mapSetCount].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
+					mapSets[expansionCount][mapSetCount].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
+					mapSets[expansionCount][mapSetCount].date = getDynLangEntry(acronym, "MAPSET", "DATE");
+					mapSets[expansionCount][mapSetCount].port = getDynLangEntry(acronym, "MAPSET", "PORT");
+					if (CheckFont(strparam(s:acronym, s:"TN"))) { mapSets[expansionCount][mapSetCount].thumbnail = StrParam(s:acronym, s:"TN"); }
+					else { mapSets[expansionCount][mapSetCount].thumbnail = "BLNKTN"; }
+					mapSetCount++;
+				}
+				expansionCount++;
+			}
+		}
+	}
+}
+
+script "LexiconHubOpen" open 
+{
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
+	{
+		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
+		{
+			removeLexiconInventory();
+		}
+		initiateLexiconMaps();
+	}
+}
+
+script "LexiconHubMapSelector" (void)
+{
+	Thing_Stop(0);
+	SetPlayerProperty(0, 1, PROP_TOTALLYFROZEN);
+	FadeTo(0, 0, 0, 0.5, 0);
+	
+	str switchPackPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveleft", s:"/", k:"+moveright", l:"LEXICON_UI_PRESS_PROMPT_2");
+	str switchMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveforward", s:"/", k:"+back", l:"LEXICON_UI_PRESS_PROMPT_3");
+	str selectMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+fire", l:"LEXICON_UI_PRESS_PROMPT_4");
+	str exitPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+speed", l:"LEXICON_UI_PRESS_PROMPT_5");
+	
+	int i = 0;
+	int j = 0;
+	
+	while (true)
+	{
+		SetFont("CONFONT");
+		SetHudSize(640, 480, TRUE);
+		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
+		
+		if (expansionCount > 1)
+		{
+			if (mapSetCount > 1)
+			{
+				HudMessage(s:switchPackPrompt; HUDMSG_PLAIN, 551, CR_UNTRANSLATED, 320.0, 350.0, 0);
+				HudMessage(s:switchMapPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 360.0, 0);
+				HudMessage(s:selectMapPrompt; HUDMSG_PLAIN, 553, CR_UNTRANSLATED, 320.0, 370.0, 0);
+				HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+			}
+			else
+			{
+				HudMessage(l:"LEXICON_UI_NO_MAPSETS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
+				HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+			}
+		}
+		else
+		{
+			HudMessage(l:"LEXICON_UI_NO_EXPANSIONS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
+			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+		}
+		
+		if (buttons & BT_SPEED)
+		{
+			SetPlayerProperty(0, 0, PROP_TOTALLYFROZEN);
+			FadeTo(0, 0, 0, 0.0, 0);
+			
+			for (int clearHudMessages = 550; clearHudMessages < 575; clearHudMessages++)
+			{
+				HudMessage(s:""; HUDMSG_PLAIN, clearHudMessages, 1, 0.0, 0.0, 1);
+			}
+			terminate;
+		}
+		delay(1);
+	}
+}
+
+/*
+Script 245 (int buttons)
+{
+	int songmenu = 1;
+	GiveInventory("PowerFrozen",1);
+	setplayerproperty(0,1,PROP_TOTALLYFROZEN);
+	fadeto(0,0,0,0.4,1.0);
+
+	SETFONT("BIGFONT");
+
+	hudmessage(s: "Claude Debussy - Claire De La Lune";
+				HUDMSG_FADEOUT, 1, CR_GOLD, 0.4, 0.45, 60.0);
+	hudmessage(s: "Camille Saint-Saens - Danse Macabre";
+				HUDMSG_FADEOUT, 2, CR_GOLD, 0.4, 0.5, 60.0);
+	hudmessage(s: "Chopin - Nocturne op.9 No.2";
+				HUDMSG_FADEOUT, 3, CR_GOLD, 0.4, 0.55, 60.0);
+	hudmessage(s: "Cancel";
+				HUDMSG_FADEOUT, 4, CR_GOLD, 0.4, 0.6, 60.0);
+
+
+	hudmessage(s: "Use forward/backward to move and Fire to select";
+				HUDMSG_FADEOUT, 5, CR_BLUE, 0.5, 0.8, 60.0);
+
+
+	while (True)
+		{
+		buttons = GetPlayerInput(0, INPUT_BUTTONS);
+
+			if (buttons & BT_ATTACK)
+				{
+						if (songmenu == 1)
+							{
+								levelmusic = 6;
+								ACS_Terminate(249,0);
+								delay(35);
+								ACS_Execute(249,0,0,0,0);
+								hudmessage(s: "Playing Claude Debussy - Claire De La Lune";
+									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
+							}
+						else if (songmenu == 2)
+							{
+								levelmusic = 7;
+								ACS_Terminate(249,0);
+								delay(35);
+								ACS_Execute(249,0,0,0,0);
+								hudmessage(s: "Playing Camille Saint-Saens - Danse Macabre";
+									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
+							}
+						else if (songmenu == 3)
+							{
+								levelmusic = 8;
+								ACS_Terminate(249,0);
+								delay(35);
+								ACS_Execute(249,0,0,0,0);
+								hudmessage(s: "Chopin - Nocturne op.9 No.2";
+									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
+							}
+
+						else
+							{}
+
+						fadeto(0,0,0,0.0,1.0);
+						delay(25);
+						TakeInventory("PowerFrozen",1);
+						setplayerproperty(0,0,PROP_TOTALLYFROZEN);
+						hudmessage(s: ""; HUDMSG_Plain, 1, 1, 0.0, 0.0, 1);
+						hudmessage(s: ""; HUDMSG_Plain, 2, 1, 0.0, 0.0, 1);
+						hudmessage(s: ""; HUDMSG_Plain, 3, 1, 0.0, 0.0, 1);
+						hudmessage(s: ""; HUDMSG_Plain, 4, 1, 0.0, 0.0, 1);
+						hudmessage(s: ""; HUDMSG_Plain, 5, 1, 0.0, 0.0, 1);
+						terminate;
+				}
+
+			else if (buttons & BT_FORWARD)
+				{
+					songmenu = songmenu-1;
+					if (songmenu < 1)
+						{
+							songmenu = 4;
+						}
+				}
+
+			else if (buttons & BT_BACK)
+				{
+					songmenu = songmenu+1;
+					if (songmenu > 4)
+						{
+							songmenu = 1;
+						}
+				}
+
+						if (songmenu == 1)
+				{
+				hudmessage(s: ">>";
+					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.45, 1.0);
+				}
+			else if (songmenu == 2)
+				{
+				hudmessage(s: ">>";
+					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.5, 1.0);
+				}
+			else if (songmenu == 3)
+				{
+				hudmessage(s: ">>";
+					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.55, 1.0);
+				}
+			else if (songmenu == 4)
+				{
+				hudmessage(s: ">>";
+					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.6, 1.0);
+				}
+
+			delay(5);
+
+		}
+}
+*/
+
+/*
+strict namespace
+{
+	// size
+	struct sizeT
+	{
+		fixed w;
+		fixed h;
+		fixed wh;
+		fixed hh;
+	};
+
+	// 2d point
+	struct vec2T
+	{
+		fixed x;
+		fixed y;
+	};
+
+	// 3d point
+	struct vec3T
+	{
+		fixed x;
+		fixed y;
+		fixed z;
+	};
+
+	// 2 2d points
+	struct vec2x2T
+	{
+		fixed x1;
+		fixed y1;
+		fixed x2;
+		fixed y2;
+	};
+
+	struct colorsT
+	{
+		str normal;
+		str disabled;
+		str clicked;
+		str hovered;
+		str checked;
+		str current;
+	};
+};
+
+#include "gui/font.c"
+#include "gui/screen.c"
+#include "gui/cursor.c"
+#include "gui/widgets.c"
+#include "gui/gui.c"
+#include "gui/widgets/buttons.c"
+#include "gui/widgets/labels.c"
+#include "gui/widgets/panel.c"
+#include "gui/scenes/votemenu.c"
+#include "gui/scenes/devmenu.c"
+*/

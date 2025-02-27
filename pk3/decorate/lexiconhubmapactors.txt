@@ -60,7 +60,7 @@ Actor LexiconHubMapStalagmiteSmall : Stalagtite 234
 	}
 }
 
-Actor LexiconHubMapRock1 : DeadStick 235
+Actor LexiconHubMapRock : DeadStick 235
 {
 	Radius 15
 	Height 10
@@ -68,19 +68,12 @@ Actor LexiconHubMapRock1 : DeadStick 235
 	States
 	{
 	Spawn:
+		LX9_ Y 0 NoDelay A_Jump(128, "SpawnState2")
+		Goto SpawnState1
+	SpawnState1:
 		LX9_ Y -1
 		Stop
-	}
-}
-
-Actor LexiconHubMapRock2 : DeadStick 236
-{
-	Radius 15
-	Height 10
-	-SOLID
-	States
-	{
-	Spawn:
+	SpawnState2:
 		LX9_ Z -1
 		Stop
 	}
@@ -96,7 +89,7 @@ Actor LexiconHubMapCube 2037
 	States
 	{
 	Spawn:
-		LX9_ "[" -1 Bright
+		LX9_ "]" -1 Bright
 		Stop
 	}
 }

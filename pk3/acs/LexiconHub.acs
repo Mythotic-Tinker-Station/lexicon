@@ -45,6 +45,46 @@ function void initiateLexiconMaps(void)
 	}
 }
 
+function void displayLexiconUIControls(void)
+{
+	SetFont("CONFONT");
+	SetHudSize(640, 480, TRUE);
+
+	str switchPackPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveleft", s:"/", k:"+moveright", l:"LEXICON_UI_PRESS_PROMPT_2");
+	str switchMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+forward", s:"/", k:"+back", l:"LEXICON_UI_PRESS_PROMPT_3");
+	str selectMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+fire", l:"LEXICON_UI_PRESS_PROMPT_4");
+	str exitPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+speed", l:"LEXICON_UI_PRESS_PROMPT_5");
+
+	if (expansionCount > 1)
+	{
+		if (mapSetCount > 1)
+		{
+			HudMessage(s:switchPackPrompt; HUDMSG_PLAIN, 551, CR_UNTRANSLATED, 320.0, 350.0, 0);
+			HudMessage(s:switchMapPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 360.0, 0);
+			HudMessage(s:selectMapPrompt; HUDMSG_PLAIN, 553, CR_UNTRANSLATED, 320.0, 370.0, 0);
+			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+		}
+		else
+		{
+			HudMessage(l:"LEXICON_UI_NO_MAPSETS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
+			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+		}
+	}
+	else
+	{
+		HudMessage(l:"LEXICON_UI_NO_EXPANSIONS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
+		HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+	}
+}
+
+function void clearLexiconUI(void)
+{
+	for (int i = 550; i < 575; i++)
+	{
+		HudMessage(s:""; HUDMSG_PLAIN, i, 1, 0.0, 0.0, 1);
+	}
+}
+
 script "LexiconHubOpen" open 
 {
 	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
@@ -62,51 +102,24 @@ script "LexiconHubMapSelector" (void)
 	Thing_Stop(0);
 	SetPlayerProperty(0, 1, PROP_TOTALLYFROZEN);
 	FadeTo(0, 0, 0, 0.5, 0);
-	
-	str switchPackPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveleft", s:"/", k:"+moveright", l:"LEXICON_UI_PRESS_PROMPT_2");
-	str switchMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveforward", s:"/", k:"+back", l:"LEXICON_UI_PRESS_PROMPT_3");
-	str selectMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+fire", l:"LEXICON_UI_PRESS_PROMPT_4");
-	str exitPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+speed", l:"LEXICON_UI_PRESS_PROMPT_5");
-	
+
 	int i = 0;
 	int j = 0;
-	
+
 	while (true)
 	{
 		SetFont("CONFONT");
 		SetHudSize(640, 480, TRUE);
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
-		
-		if (expansionCount > 1)
-		{
-			if (mapSetCount > 1)
-			{
-				HudMessage(s:switchPackPrompt; HUDMSG_PLAIN, 551, CR_UNTRANSLATED, 320.0, 350.0, 0);
-				HudMessage(s:switchMapPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 360.0, 0);
-				HudMessage(s:selectMapPrompt; HUDMSG_PLAIN, 553, CR_UNTRANSLATED, 320.0, 370.0, 0);
-				HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
-			}
-			else
-			{
-				HudMessage(l:"LEXICON_UI_NO_MAPSETS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
-				HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
-			}
-		}
-		else
-		{
-			HudMessage(l:"LEXICON_UI_NO_EXPANSIONS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
-			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
-		}
-		
+
+		displayLexiconUIControls();
+
 		if (buttons & BT_SPEED)
 		{
 			SetPlayerProperty(0, 0, PROP_TOTALLYFROZEN);
 			FadeTo(0, 0, 0, 0.0, 0);
-			
-			for (int clearHudMessages = 550; clearHudMessages < 575; clearHudMessages++)
-			{
-				HudMessage(s:""; HUDMSG_PLAIN, clearHudMessages, 1, 0.0, 0.0, 1);
-			}
+
+			clearLexiconUI();
 			terminate;
 		}
 		delay(1);

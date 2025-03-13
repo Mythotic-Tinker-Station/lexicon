@@ -1,11 +1,15 @@
 [enu default]
-LEXICON_UI_NO_EXPANSIONS = "No expansion packs found!";
 LEXICON_UI_NO_MAPSETS = "No mapsets found!";
+LEXICON_UI_AUTHORS = "Authors: ";
+LEXICON_UI_MAPS = "Maps: ";
+LEXICON_UI_DATE = "Year: ";
+LEXICON_UI_CUSTOM = "Custom Actors: ";
+LEXICON_UI_CUSTOM_YES = "Yes";
+LEXICON_UI_CUSTOM_NO = "No";
 LEXICON_UI_PRESS_PROMPT_1 = "Press ";
-LEXICON_UI_PRESS_PROMPT_2 = " to switch expansion packs. ";
-LEXICON_UI_PRESS_PROMPT_3 = " to switch mapsets. ";
-LEXICON_UI_PRESS_PROMPT_4 = " to select mapsets. ";
-LEXICON_UI_PRESS_PROMPT_5 = " to exit the menu. ";
+LEXICON_UI_PRESS_PROMPT_2 = " to switch mapsets. ";
+LEXICON_UI_PRESS_PROMPT_3 = " to select mapsets. ";
+LEXICON_UI_PRESS_PROMPT_4 = " to exit the menu. ";
 
 /*
 // Strings for voting screen

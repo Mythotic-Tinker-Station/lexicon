@@ -1,46 +1,39 @@
 #define MAX_MAPSETS 1024
-#define MAX_EXPANSIONS 16
 
-struct mapSet
-{
-	str expansion;					// Mapset expansion pack
-	str acronym;                    // Mapset acronym
-	str title;                      // Mapset title
-	str authors;                    // Mapset authors
-	str custom;                     // Mapset has custom assets
-	str date;                       // Mapset date
-	str port;                       // Mapset port
-	str thumbnail;                  // Mapset thumbnail
-};
+str mapSetsAcronym[MAX_MAPSETS];
+str mapSetsTitle[MAX_MAPSETS];
+str mapSetsAuthors[MAX_MAPSETS];
+str mapSetsMaps[MAX_MAPSETS];
+str mapSetsDate[MAX_MAPSETS];
+str mapSetsCustom[MAX_MAPSETS];
+str mapSetsThumbnail[MAX_MAPSETS];
 
-struct mapSet mapSets[MAX_EXPANSIONS][MAX_MAPSETS];
-int expansionCount = 0;
 int mapSetCount = 0;
+str selectedMapSet = "";
 
 function void initiateLexiconMaps(void)
 {
-	for (int i = 1; i < MAX_EXPANSIONS; i++)
+	for (int i = 1; i < MAX_MAPSETS; i++)
 	{
-		str expansion = getDynLangEntry("ADD", "EXPANSION", strparam(i:i));
-		int expansionSuffix = strleft(strparam(s:expansion), 6);
-		if (expansion != "_LANG_UNDEFINED_")
+		mapSetsAcronym[mapSetCount] = getDynLangEntry("ADD", "MAPSET", strparam(i:i));
+
+		if (mapSetsAcronym[mapSetCount] != "_LANG_UNDEFINED_")
 		{
-			for (int j = 1; j < MAX_MAPSETS; j++)
+			mapSetsTitle[mapSetCount] = getDynLangEntry(mapSetsAcronym[mapSetCount], "MAPSET", "TITLE");
+			mapSetsAuthors[mapSetCount] = getDynLangEntry(mapSetsAcronym[mapSetCount], "MAPSET", "AUTHORS");
+			mapSetsMaps[mapSetCount] = getDynLangEntry(mapSetsAcronym[mapSetCount], "MAPSET", "MAPS");
+			mapSetsDate[mapSetCount] = getDynLangEntry(mapSetsAcronym[mapSetCount], "MAPSET", "DATE");
+			mapSetsCustom[mapSetCount] = getDynLangEntry(mapSetsAcronym[mapSetCount], "MAPSET", "CUSTOM");
+
+			if (CheckFont(strparam(s:mapSetsAcronym[mapSetCount], s:"TN"))) 
 			{
-				str acronym = getDynLangEntry(expansionSuffix, "MAPSET", strparam(i:j));
-				if(acronym != "_LANG_UNDEFINED_")
-				{
-					mapSets[expansionCount][mapSetCount].title = getDynLangEntry(acronym, "MAPSET", "TITLE");
-					mapSets[expansionCount][mapSetCount].authors = getDynLangEntry(acronym, "MAPSET", "AUTHORS");
-					mapSets[expansionCount][mapSetCount].custom = getDynLangEntry(acronym, "MAPSET", "CUSTOM");
-					mapSets[expansionCount][mapSetCount].date = getDynLangEntry(acronym, "MAPSET", "DATE");
-					mapSets[expansionCount][mapSetCount].port = getDynLangEntry(acronym, "MAPSET", "PORT");
-					if (CheckFont(strparam(s:acronym, s:"TN"))) { mapSets[expansionCount][mapSetCount].thumbnail = StrParam(s:acronym, s:"TN"); }
-					else { mapSets[expansionCount][mapSetCount].thumbnail = "BLNKTN"; }
-					mapSetCount++;
-				}
-				expansionCount++;
+				mapSetsThumbnail[mapSetCount] = StrParam(s:mapSetsAcronym[mapSetCount], s:"TN"); 
 			}
+			else { mapSetsThumbnail[mapSetCount] = "BLNKTN"; }
+
+			//PrintBold(s:mapSetsAcronym[mapSetCount], s:" ", s:mapSetsTitle[mapSetCount], s:" ", s:mapSetsAuthors[mapSetCount], s:" ", s:mapSetsMaps[mapSetCount], s:" ", s:mapSetsThumbnail[mapSetCount]);
+
+			mapSetCount++;
 		}
 	}
 }
@@ -50,31 +43,41 @@ function void displayLexiconUIControls(void)
 	SetFont("CONFONT");
 	SetHudSize(640, 480, TRUE);
 
-	str switchPackPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+moveleft", s:"/", k:"+moveright", l:"LEXICON_UI_PRESS_PROMPT_2");
-	str switchMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+forward", s:"/", k:"+back", l:"LEXICON_UI_PRESS_PROMPT_3");
-	str selectMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+fire", l:"LEXICON_UI_PRESS_PROMPT_4");
-	str exitPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+speed", l:"LEXICON_UI_PRESS_PROMPT_5");
+	str switchMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+forward", s:"/", k:"+back", l:"LEXICON_UI_PRESS_PROMPT_2");
+	str selectMapPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+fire", l:"LEXICON_UI_PRESS_PROMPT_3");
+	str exitPrompt = StrParam(l:"LEXICON_UI_PRESS_PROMPT_1", k:"+speed", l:"LEXICON_UI_PRESS_PROMPT_4");
 
-	if (expansionCount > 1)
+	if (mapSetCount > 1)
 	{
-		if (mapSetCount > 1)
-		{
-			HudMessage(s:switchPackPrompt; HUDMSG_PLAIN, 551, CR_UNTRANSLATED, 320.0, 350.0, 0);
-			HudMessage(s:switchMapPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 360.0, 0);
-			HudMessage(s:selectMapPrompt; HUDMSG_PLAIN, 553, CR_UNTRANSLATED, 320.0, 370.0, 0);
-			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
-		}
-		else
-		{
-			HudMessage(l:"LEXICON_UI_NO_MAPSETS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
-			HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
-		}
+		HudMessage(s:switchMapPrompt; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 360.0, 0);
+		HudMessage(s:selectMapPrompt; HUDMSG_PLAIN, 551, CR_UNTRANSLATED, 320.0, 370.0, 0);
+		HudMessage(s:exitPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 380.0, 0);
 	}
 	else
 	{
-		HudMessage(l:"LEXICON_UI_NO_EXPANSIONS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
-		HudMessage(s:exitPrompt; HUDMSG_PLAIN, 554, CR_UNTRANSLATED, 320.0, 380.0, 0);
+		HudMessage(l:"LEXICON_UI_NO_MAPSETS"; HUDMSG_PLAIN, 550, CR_UNTRANSLATED, 320.0, 240.0, 0);
+		HudMessage(s:exitPrompt; HUDMSG_PLAIN, 552, CR_UNTRANSLATED, 320.0, 380.0, 0);
 	}
+}
+
+function void displayLexiconUIMapSetMetadata(int mapset)
+{
+	if (CheckFont(strparam(s:mapSetsAcronym[mapset], s:"TN"))) 
+	{
+		SetFont(strparam(s:mapSetsAcronym[mapset], s:"TN"));
+	}
+	else { SetFont("BLNKTN"); }
+	SetHudSize(640, 480, TRUE);
+	HudMessage(s:"A"; HUDMSG_PLAIN, 555, CR_UNTRANSLATED, 320.0, 200.0, 0);
+
+	SetFont("CONFONT");
+	HudMessage(s:mapSetsTitle[mapset]; HUDMSG_PLAIN, 556, CR_UNTRANSLATED, 320.0, 260.0, 0);
+	HudMessage(l:"LEXICON_UI_AUTHORS", s:mapSetsAuthors[mapset]; HUDMSG_PLAIN, 557, CR_UNTRANSLATED, 320.0, 270.0, 0);
+	HudMessage(l:"LEXICON_UI_MAPS", s:mapSetsMaps[mapset]; HUDMSG_PLAIN, 558, CR_UNTRANSLATED, 320.0, 280.0, 0);
+	HudMessage(l:"LEXICON_UI_DATE", s:mapSetsDate[mapset]; HUDMSG_PLAIN, 559, CR_UNTRANSLATED, 320.0, 290.0, 0);
+
+	if (mapSetsCustom[mapset] == "Y") { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_YES"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 300.0, 0); }
+	else { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_NO"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 300.0, 0); }
 }
 
 function void clearLexiconUI(void)

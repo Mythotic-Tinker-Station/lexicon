@@ -36,6 +36,7 @@ function void initiateLexiconMaps(void)
 			mapSetCount++;
 		}
 	}
+	mapSetCount--; // band-aid fix
 }
 
 function void displayLexiconUIControls(void)
@@ -62,6 +63,8 @@ function void displayLexiconUIControls(void)
 
 function void displayLexiconUIMapSetMetadata(int mapset)
 {
+	if (mapSetCount == 0) { return; }
+
 	if (CheckFont(strparam(s:mapSetsAcronym[mapset], s:"TN"))) 
 	{
 		SetFont(strparam(s:mapSetsAcronym[mapset], s:"TN"));
@@ -72,12 +75,12 @@ function void displayLexiconUIMapSetMetadata(int mapset)
 
 	SetFont("CONFONT");
 	HudMessage(s:mapSetsTitle[mapset]; HUDMSG_PLAIN, 556, CR_UNTRANSLATED, 320.0, 260.0, 0);
-	HudMessage(l:"LEXICON_UI_AUTHORS", s:mapSetsAuthors[mapset]; HUDMSG_PLAIN, 557, CR_UNTRANSLATED, 320.0, 270.0, 0);
-	HudMessage(l:"LEXICON_UI_MAPS", s:mapSetsMaps[mapset]; HUDMSG_PLAIN, 558, CR_UNTRANSLATED, 320.0, 280.0, 0);
-	HudMessage(l:"LEXICON_UI_DATE", s:mapSetsDate[mapset]; HUDMSG_PLAIN, 559, CR_UNTRANSLATED, 320.0, 290.0, 0);
+	HudMessage(l:"LEXICON_UI_AUTHORS", s:mapSetsAuthors[mapset]; HUDMSG_PLAIN, 557, CR_UNTRANSLATED, 320.0, 275.0, 0);
+	HudMessage(l:"LEXICON_UI_MAPS", s:mapSetsMaps[mapset]; HUDMSG_PLAIN, 558, CR_UNTRANSLATED, 320.0, 290.0, 0);
+	HudMessage(l:"LEXICON_UI_DATE", s:mapSetsDate[mapset]; HUDMSG_PLAIN, 559, CR_UNTRANSLATED, 320.0, 305.0, 0);
 
-	if (mapSetsCustom[mapset] == "Y") { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_YES"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 300.0, 0); }
-	else { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_NO"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 300.0, 0); }
+	if (mapSetsCustom[mapset] == "Y") { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_YES"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 320.0, 0); }
+	else { HudMessage(l:"LEXICON_UI_CUSTOM", l:"LEXICON_UI_CUSTOM_NO"; HUDMSG_PLAIN, 560, CR_UNTRANSLATED, 320.0, 320.0, 0); }
 }
 
 function void clearLexiconUI(void)
@@ -88,18 +91,6 @@ function void clearLexiconUI(void)
 	}
 }
 
-script "LexiconHubOpen" open 
-{
-	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
-	{
-		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
-		{
-			removeLexiconInventory();
-		}
-		initiateLexiconMaps();
-	}
-}
-
 script "LexiconHubMapSelector" (void)
 {
 	Thing_Stop(0);
@@ -107,7 +98,6 @@ script "LexiconHubMapSelector" (void)
 	FadeTo(0, 0, 0, 0.5, 0);
 
 	int i = 0;
-	int j = 0;
 
 	while (true)
 	{
@@ -116,6 +106,28 @@ script "LexiconHubMapSelector" (void)
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
 
 		displayLexiconUIControls();
+		displayLexiconUIMapSetMetadata(i);
+
+		if (mapSetCount > 1)
+		{
+			if (buttons & BT_FORWARD)
+			{
+				if (i >= mapSetCount) { i == 0; }
+				else { i++; Delay(3); }
+			}
+
+			if (buttons & BT_BACK)
+			{
+				if (i <= 0) { i == mapSetCount-1; }
+				else { i--; Delay(3); }
+			}
+			
+			if (buttons & BT_ATTACK)
+			{
+				selectedMapSet = (strparam(s:mapSetsAcronym[i]));
+				HudMessage(s:mapSetsTitle[i], l:"LEXICON_UI_SELECTED"; HUDMSG_PLAIN, 561, CR_UNTRANSLATED, 320.0, 135.0, 0);
+			}
+		}
 
 		if (buttons & BT_SPEED)
 		{
@@ -129,179 +141,23 @@ script "LexiconHubMapSelector" (void)
 	}
 }
 
-/*
-Script 245 (int buttons)
+script "LexiconHubMapWarp" (void)
 {
-	int songmenu = 1;
-	GiveInventory("PowerFrozen",1);
-	setplayerproperty(0,1,PROP_TOTALLYFROZEN);
-	fadeto(0,0,0,0.4,1.0);
+	str fistActor = getDynLangEntry(selectedMapSet, "WEAPON", 1);
+	str pistolActor = getDynLangEntry(selectedMapSet, "WEAPON", 2);
 
-	SETFONT("BIGFONT");
-
-	hudmessage(s: "Claude Debussy - Claire De La Lune";
-				HUDMSG_FADEOUT, 1, CR_GOLD, 0.4, 0.45, 60.0);
-	hudmessage(s: "Camille Saint-Saens - Danse Macabre";
-				HUDMSG_FADEOUT, 2, CR_GOLD, 0.4, 0.5, 60.0);
-	hudmessage(s: "Chopin - Nocturne op.9 No.2";
-				HUDMSG_FADEOUT, 3, CR_GOLD, 0.4, 0.55, 60.0);
-	hudmessage(s: "Cancel";
-				HUDMSG_FADEOUT, 4, CR_GOLD, 0.4, 0.6, 60.0);
-
-
-	hudmessage(s: "Use forward/backward to move and Fire to select";
-				HUDMSG_FADEOUT, 5, CR_BLUE, 0.5, 0.8, 60.0);
-
-
-	while (True)
+	if (selectedMapSet != "")
+	{
+		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{
-		buttons = GetPlayerInput(0, INPUT_BUTTONS);
+			if (fistActor != "_LANG_UNDEFINED_") { GiveInventory(fistActor, 1); }
+			else { GiveInventory("Fist", 1); }
 
-			if (buttons & BT_ATTACK)
-				{
-						if (songmenu == 1)
-							{
-								levelmusic = 6;
-								ACS_Terminate(249,0);
-								delay(35);
-								ACS_Execute(249,0,0,0,0);
-								hudmessage(s: "Playing Claude Debussy - Claire De La Lune";
-									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
-							}
-						else if (songmenu == 2)
-							{
-								levelmusic = 7;
-								ACS_Terminate(249,0);
-								delay(35);
-								ACS_Execute(249,0,0,0,0);
-								hudmessage(s: "Playing Camille Saint-Saens - Danse Macabre";
-									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
-							}
-						else if (songmenu == 3)
-							{
-								levelmusic = 8;
-								ACS_Terminate(249,0);
-								delay(35);
-								ACS_Execute(249,0,0,0,0);
-								hudmessage(s: "Chopin - Nocturne op.9 No.2";
-									HUDMSG_FADEINOUT, 6, CR_BLUE, 0.5, 0.6, 3.0, 0.5, 0.5);
-							}
-
-						else
-							{}
-
-						fadeto(0,0,0,0.0,1.0);
-						delay(25);
-						TakeInventory("PowerFrozen",1);
-						setplayerproperty(0,0,PROP_TOTALLYFROZEN);
-						hudmessage(s: ""; HUDMSG_Plain, 1, 1, 0.0, 0.0, 1);
-						hudmessage(s: ""; HUDMSG_Plain, 2, 1, 0.0, 0.0, 1);
-						hudmessage(s: ""; HUDMSG_Plain, 3, 1, 0.0, 0.0, 1);
-						hudmessage(s: ""; HUDMSG_Plain, 4, 1, 0.0, 0.0, 1);
-						hudmessage(s: ""; HUDMSG_Plain, 5, 1, 0.0, 0.0, 1);
-						terminate;
-				}
-
-			else if (buttons & BT_FORWARD)
-				{
-					songmenu = songmenu-1;
-					if (songmenu < 1)
-						{
-							songmenu = 4;
-						}
-				}
-
-			else if (buttons & BT_BACK)
-				{
-					songmenu = songmenu+1;
-					if (songmenu > 4)
-						{
-							songmenu = 1;
-						}
-				}
-
-						if (songmenu == 1)
-				{
-				hudmessage(s: ">>";
-					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.45, 1.0);
-				}
-			else if (songmenu == 2)
-				{
-				hudmessage(s: ">>";
-					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.5, 1.0);
-				}
-			else if (songmenu == 3)
-				{
-				hudmessage(s: ">>";
-					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.55, 1.0);
-				}
-			else if (songmenu == 4)
-				{
-				hudmessage(s: ">>";
-					HUDMSG_FADEOUT, 6, CR_GREEN, 0.2, 0.6, 1.0);
-				}
-
-			delay(5);
-
+			GiveInventory("Clip", 30);
+			if (pistolActor != "_LANG_UNDEFINED_") { GiveInventory(pistolActor, 1); SetWeapon(pistolActor); }
+			else { GiveInventory("Pistol", 1); SetWeapon("Pistol"); }
 		}
+
+		ChangeLevel(strParam(s:selectedMapSet, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);
+	}
 }
-*/
-
-/*
-strict namespace
-{
-	// size
-	struct sizeT
-	{
-		fixed w;
-		fixed h;
-		fixed wh;
-		fixed hh;
-	};
-
-	// 2d point
-	struct vec2T
-	{
-		fixed x;
-		fixed y;
-	};
-
-	// 3d point
-	struct vec3T
-	{
-		fixed x;
-		fixed y;
-		fixed z;
-	};
-
-	// 2 2d points
-	struct vec2x2T
-	{
-		fixed x1;
-		fixed y1;
-		fixed x2;
-		fixed y2;
-	};
-
-	struct colorsT
-	{
-		str normal;
-		str disabled;
-		str clicked;
-		str hovered;
-		str checked;
-		str current;
-	};
-};
-
-#include "gui/font.c"
-#include "gui/screen.c"
-#include "gui/cursor.c"
-#include "gui/widgets.c"
-#include "gui/gui.c"
-#include "gui/widgets/buttons.c"
-#include "gui/widgets/labels.c"
-#include "gui/widgets/panel.c"
-#include "gui/scenes/votemenu.c"
-#include "gui/scenes/devmenu.c"
-*/

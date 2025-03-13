@@ -53,22 +53,15 @@ function void addLexiconShotgun(void)
 Script "LexiconSpawn" (int arg1)
 {
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
-	
-	/*
-	// Check if we are at the hub
-	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
 	{
-		// Check for vanilla mode
-		if (GetCVar("lexicon_vanilla_mode") == 0 && !isGameModded())
+		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{
-			ClearInventory();
-			GiveInventory("Fist", 1);
-			GiveInventory("Pistol", 1);
-			GiveInventory("Clip", 30);
-			SetWeapon("Pistol");
+			removeLexiconInventory();
 		}
+		initiateLexiconMaps();
 	}
-	*/
 }
 
 script "LexiconEnter" enter { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }

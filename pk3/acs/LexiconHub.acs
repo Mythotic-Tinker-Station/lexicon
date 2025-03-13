@@ -63,7 +63,7 @@ function void displayLexiconUIControls(void)
 
 function void displayLexiconUIMapSetMetadata(int mapset)
 {
-	if (mapSetCount == 0) { return; }
+	if (mapSetCount < 0) { return; }
 
 	if (CheckFont(strparam(s:mapSetsAcronym[mapset], s:"TN"))) 
 	{
@@ -143,8 +143,8 @@ script "LexiconHubMapSelector" (void)
 
 script "LexiconHubMapWarp" (void)
 {
-	str fistActor = getDynLangEntry(selectedMapSet, "WEAPON", 1);
-	str pistolActor = getDynLangEntry(selectedMapSet, "WEAPON", 2);
+	str fistActor = getDynLangEntry(selectedMapSet, "WEAPON", strparam(s:"1"));
+	str pistolActor = getDynLangEntry(selectedMapSet, "WEAPON", strparam(s:"2"));
 
 	if (selectedMapSet != "")
 	{
@@ -161,3 +161,10 @@ script "LexiconHubMapWarp" (void)
 		ChangeLevel(strParam(s:selectedMapSet, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);
 	}
 }
+
+/*
+Considering that I barely have any experience with advanced ACS, I'm
+kind of impressed with what I came up with for the hub. There's still
+tons of stuff that I haven't covered like better iwad compatibility,
+but it should now be ready for Doom 2 mapsets.
+*/

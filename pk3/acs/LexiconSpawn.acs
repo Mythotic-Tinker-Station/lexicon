@@ -1,52 +1,70 @@
-str vanillaWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+str vanillaDoomWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+str vanillaChexWeaponArray[9] = { "Bootspoon", "MiniZorcher", "SuperBootspork", "LargeZorcher", "SuperLargeZorcher", "RapidZorcher", "ZorchPropulsor", "PhasingZorcher", "LAZDevice" };
+str vanillaHereticWeaponArray[9] = { "Staff", "GoldWand", "Gauntlets", "Crossbow", "Blaster", "SkullRod", "PhoenixRod", "Mace" };
+str vanillaHexenCWeaponArray[4] = { "CWeapMace", "CWeapStaff", "CWeapFlame", "WeapWraithverge" };
+str vanillaHexenFWeaponArray[4] = { "FWeapFist", "FWeapAxe", "FWeapHammer", "FWeapQuietus" };
+str vanillaHexenMWeaponArray[4] = { "MWeapWand", "MWeapFrost", "MWeapLightning", "MWeapBloodscourge" };
 
-function void removeLexiconInventory(void)
+function void addLexiconInventory(str mapset, int i, int j)
 {
-	int i;
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+	str weaponActor = getDynLangEntry(mapset, "WEAPON", strparam(i:i));
+	if(weaponActor != "_LANG_UNDEFINED_") { GiveInventory(weaponActor, 1); }
+	if (j > 0) { SetWeapon(weaponActor); }
 
-	for(i = 1; i < 9; i++)
+	switch(i)
 	{
-		if(weaponActor != "_LANG_UNDEFINED_")
-		{
-			TakeInventory(weaponActor, 1);
-		}
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
 	}
-	ClearInventory();
 }
 
-function void addLexiconInventory(void)
+function void addLexiconVanillaInventory(int i, int j)
 {
-	int i;
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+	GiveInventory(vanillaDoomWeaponArray[i-1], 1);
+	if (j > 0) { SetWeapon(vanillaDoomWeaponArray[i-1]); }
 
-	for(i = 1; i < 9; i++)
+	switch(i)
 	{
-		if(weaponActor != "_LANG_UNDEFINED_")
-		{
-			if (i == 2) { TakeInventory("Clip", 20); }
-			if (i == 4) { TakeInventory("Shell", 8); }
-			if (i == 5) { TakeInventory("Shell", 8); }
-			if (i == 6) { TakeInventory("Clip", 20); }
-			if (i == 7) { TakeInventory("RocketAmmo", 2); }
-			if (i == 8) { TakeInventory("Cell", 40); }
-			if (i == 9) { TakeInventory("Cell", 40); }
-			GiveInventory(weaponActor, 1);
-		}
-	}
-}
-
-function void addLexiconShotgun(void)
-{
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str shotgunActor = getDynLangEntry(mapsetPrefix, "WEAPON", 4);
-
-	if (shotgunActor != "_LANG_UNDEFINED_")
-	{
-		TakeInventory("Shotgun", 1);
-		GiveInventory(shotgunActor, 1);
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
 	}
 }
 
@@ -58,7 +76,8 @@ Script "LexiconSpawn" (int arg1)
 	{
 		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{
-			removeLexiconInventory();
+			ClearInventory();
+			SetActorProperty(0, APROP_Health, 100);
 		}
 		initiateLexiconMaps();
 	}

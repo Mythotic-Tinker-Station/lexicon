@@ -13,7 +13,7 @@ str mapSetsThumbnail[MAX_EXPANSIONS][MAX_MAPSETS];
 int expansionCount = 0;
 int expansionTotalCount = 0;
 int mapSetCount = 0;
-int mapSetTotalCount[MAX_EXPANSIONS] = { -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 };
+int mapSetTotalCount[MAX_EXPANSIONS];
 str selectedMapSet = "";
 
 function void initiateLexiconMaps(void)
@@ -185,12 +185,12 @@ script "LexiconHubMapWarp" (void)
 	{
 		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{
-			if (fistActor != "_LANG_UNDEFINED_") { GiveInventory(fistActor, 1); }
-			else { GiveInventory("Fist", 1); }
+			if (fistActor != "_LANG_UNDEFINED_") { addLexiconInventory(selectedMapSet, 1, 0); }
+			else { addLexiconVanillaInventory(1, 0); }
 
-			GiveInventory("Clip", 30);
-			if (pistolActor != "_LANG_UNDEFINED_") { GiveInventory(pistolActor, 1); SetWeapon(pistolActor); }
-			else { GiveInventory("Pistol", 1); SetWeapon("Pistol"); }
+			GiveInventory("Clip", 50);
+			if (pistolActor != "_LANG_UNDEFINED_") { addLexiconInventory(selectedMapSet, 2, 1); }
+			else { addLexiconVanillaInventory(2, 1); }
 		}
 
 		ChangeLevel(strParam(s:selectedMapSet, d:0, d:1), 0, CHANGELEVEL_NOINTERMISSION, -1);

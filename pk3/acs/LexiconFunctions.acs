@@ -15,6 +15,23 @@ function str getDynLangEntry(str p1, str p2, str p3)
     return text;
 }
 
+function str getDynLangEntry2(str p1, str p2, str p3, str p4)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3, s:"_", s:p4);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
 // checks if the currently running clientside script is the local client
 function bool clientCheck(void)
 {

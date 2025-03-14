@@ -1,5 +1,5 @@
 [enu default]
-LEXICON_UI_NO_MAPSETS = "No mapsets found!";
+LEXICON_UI_NO_MAPSETS = "No mapsets or expansion packs found!";
 LEXICON_UI_AUTHORS = "Authors: ";
 LEXICON_UI_MAPS = "Maps: ";
 LEXICON_UI_DATE = "Year: ";
@@ -8,21 +8,7 @@ LEXICON_UI_CUSTOM_YES = "Yes";
 LEXICON_UI_CUSTOM_NO = "No";
 LEXICON_UI_SELECTED = " Selected";
 LEXICON_UI_PRESS_PROMPT_1 = "Press ";
-LEXICON_UI_PRESS_PROMPT_2 = " to switch mapsets. ";
-LEXICON_UI_PRESS_PROMPT_3 = " to select mapsets. ";
-LEXICON_UI_PRESS_PROMPT_4 = " to exit the menu. ";
-
-/*
-// Strings for voting screen
-LEXICON_UI_MAPSET_TITLE = "Title:       ";
-LEXICON_UI_MAPSET_AUTHORS = "Authors:     ";
-LEXICON_UI_MAPSET_DESCRIPTION = "Description: ";
-LEXICON_UI_MAPSET_CUSTOM = "Custom:      ";
-LEXICON_UI_MAPSET_MAPS = "Maps:        ";
-LEXICON_UI_MAPSET_DATE = "Date:        ";
-LEXICON_UI_EXPANSION = "Expansion:   ";
-LEXICON_UI_VOTE = "Vote";
-LEXICON_UI_VOTE_TIMER = "Voting time left:       ";
-LEXICON_UI_VOTE_PASSED = "Vote passed!";
-LEXICON_UI_VOTE_FAILED = "Vote failed!";
-*/
+LEXICON_UI_PRESS_PROMPT_2 = " to switch expansion packs. ";
+LEXICON_UI_PRESS_PROMPT_3 = " to switch mapsets. ";
+LEXICON_UI_PRESS_PROMPT_4 = " to select mapsets. ";
+LEXICON_UI_PRESS_PROMPT_5 = " to exit the menu. ";

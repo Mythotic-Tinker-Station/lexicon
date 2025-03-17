@@ -70,6 +70,9 @@ function void addLexiconVanillaInventory(int i, int j)
 
 Script "LexiconSpawn" (int arg1)
 {
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str mapFlagInfiniteAmmo = getDynLangEntry(mapsetPrefix, "MAPFLAG", "INFINITEAMMO");
+
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 
 	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
@@ -80,6 +83,13 @@ Script "LexiconSpawn" (int arg1)
 			SetActorProperty(0, APROP_Health, 100);
 		}
 		initiateLexiconMaps();
+	}
+	else
+	{
+		if(mapFlagInfiniteAmmo == "Y")
+		{
+			GiveInventory("PowerLexiconInfiniteAmmo", 1);
+		}
 	}
 }
 

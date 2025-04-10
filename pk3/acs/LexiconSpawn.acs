@@ -5,6 +5,10 @@ str vanillaHexenCWeaponArray[4] = { "CWeapMace", "CWeapStaff", "CWeapFlame", "We
 str vanillaHexenFWeaponArray[4] = { "FWeapFist", "FWeapAxe", "FWeapHammer", "FWeapQuietus" };
 str vanillaHexenMWeaponArray[4] = { "MWeapWand", "MWeapFrost", "MWeapLightning", "MWeapBloodscourge" };
 
+int vanillaDoomAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaChexAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaHereticAmmoCapacityArray[6] = { 100, 50, 150, 200, 200, 20 };
+
 function void addLexiconInventory(str mapset, int i, int j)
 {
 	str weaponActor = getDynLangEntry(mapset, "WEAPON", strparam(i:i));
@@ -68,10 +72,52 @@ function void addLexiconVanillaInventory(int i, int j)
 	}
 }
 
+function void addLexiconAmmo(void)
+{
+	switch(GetCVarString("lexicon_iwad"))
+	{
+	case "doom":
+		GiveInventory("Clip", 50);
+		break;
+	case "chex":
+		GiveInventory("MiniZorchRecharge", 50);
+		break;
+	case "heretic":
+		GiveInventory("GoldWandAmmo", 50);
+		break;
+	}
+}
+
+function void getLexiconIwad(void)
+{
+	int checkerTid = UniqueTid();
+	int iwadTid = UniqueTid();
+	SpawnForced("LexiconGameTokenChecker", 0.0 , 0.0, 0.0, iwadTid);
+	Thing_SpawnNoFog(iwadTid, 240, 0, checkerTid);
+
+	if(GetActorClass(iwadTid) == "LexiconGameTokenChex")
+		SetCVarString("lexicon_iwad", "chex");
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHeretic")
+		SetCVarString("lexicon_iwad", "heretic");
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHexen")
+		SetCVarString("lexicon_iwad", "hexen");
+	else
+		SetCVarString("lexicon_iwad", "doom");
+
+	Thing_Remove(iwadTid);
+	Thing_Remove(checkerTid);
+}
+
 Script "LexiconSpawn" (int arg1)
 {
 	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
 	str mapFlagInfiniteAmmo = getDynLangEntry(mapsetPrefix, "MAPFLAG", "INFINITEAMMO");
+	str mapFlagAmmo1Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO1CAPACITY");
+	str mapFlagAmmo2Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO2CAPACITY");
+	str mapFlagAmmo3Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO3CAPACITY");
+	str mapFlagAmmo4Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO4CAPACITY");
+	str mapFlagAmmo5Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO5CAPACITY");
+	str mapFlagAmmo6Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO6CAPACITY");
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 
@@ -82,7 +128,9 @@ Script "LexiconSpawn" (int arg1)
 			ClearInventory();
 			SetActorProperty(0, APROP_Health, 100);
 		}
+
 		initiateLexiconMaps();
+		getLexiconIwad();
 	}
 	else
 	{

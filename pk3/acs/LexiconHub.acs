@@ -14,6 +14,7 @@ int expansionCount = 0;
 int expansionTotalCount = 0;
 int mapSetCount = 0;
 int mapSetTotalCount[MAX_EXPANSIONS];
+bool mapSetIsSelected = false;
 str selectedMapSet = "";
 
 function void initiateLexiconMaps(void)
@@ -113,6 +114,20 @@ function void clearLexiconUI(void)
 	}
 }
 
+function void displayLexiconVotedMapSet(int expansion, int mapset, int player)
+{
+	if (PlayerCount() > 1)
+	{
+		for (int i = 0; i < PlayerCount(); i++)
+		{
+			if (i != player)
+			{
+				HudMessage(s:mapSetsTitle[expansion][mapset], l:"LEXICON_UI_SELECTED"; HUDMSG_FADEOUT, 561, CR_UNTRANSLATED, 320.0, 135.0, 135.0, 0);
+			}
+		}
+	}
+}
+
 script "LexiconHubMapSelector" (void)
 {
 	Thing_Stop(0);
@@ -160,6 +175,8 @@ script "LexiconHubMapSelector" (void)
 			if (buttons & BT_ATTACK)
 			{
 				selectedMapSet = (strparam(s:mapSetsAcronym[i][j]));
+				mapSetIsSelected = true;
+				displayLexiconVotedMapSet(i, j, PlayerNumber());
 				HudMessage(s:mapSetsTitle[i][j], l:"LEXICON_UI_SELECTED"; HUDMSG_PLAIN, 561, CR_UNTRANSLATED, 320.0, 135.0, 0);
 			}
 		}
@@ -181,7 +198,7 @@ script "LexiconHubMapWarp" (void)
 	str fistActor = getDynLangEntry(selectedMapSet, "WEAPON", strparam(s:"1"));
 	str pistolActor = getDynLangEntry(selectedMapSet, "WEAPON", strparam(s:"2"));
 
-	if (selectedMapSet != "")
+	if (mapSetIsSelected)
 	{
 		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{

@@ -205,7 +205,7 @@ script "LexiconHubMapWarp" (void)
 			if (fistActor != "_LANG_UNDEFINED_") { addLexiconInventory(selectedMapSet, 1, 0); }
 			else { addLexiconVanillaInventory(1, 0); }
 
-			GiveInventory("Clip", 50);
+			addLexiconAmmo();
 			if (pistolActor != "_LANG_UNDEFINED_") { addLexiconInventory(selectedMapSet, 2, 1); }
 			else { addLexiconVanillaInventory(2, 1); }
 		}
@@ -218,5 +218,8 @@ script "LexiconHubMapWarp" (void)
 Considering that I barely have any experience with advanced ACS, I'm
 kind of impressed with what I came up with for the hub. There's still
 tons of stuff that I haven't covered like better iwad compatibility,
-but it should now be ready for Doom 2 mapsets.
+a niceer presentation, etc., but it should now be ready for Doom 2 mapsets.
+
+That said, this code will likely be replaced in the next version of Lexicon,
+provided that the GUI code by Tribeam can be finished.
 */

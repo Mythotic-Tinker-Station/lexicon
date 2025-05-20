@@ -1,6 +1,6 @@
 server bool lexicon_vanilla_mode = false;
 server noarchive bool lexicon_no_music_changes = false;
-server noarchive string lexicon_iwad = "doom";
+server noarchive int lexicon_iwad = 0;
 
 /*
 // Unused for now

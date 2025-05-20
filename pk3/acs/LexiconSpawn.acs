@@ -43,8 +43,21 @@ function void addLexiconInventory(str mapset, int i, int j)
 
 function void addLexiconVanillaInventory(int i, int j)
 {
-	GiveInventory(vanillaDoomWeaponArray[i-1], 1);
-	if (j > 0) { SetWeapon(vanillaDoomWeaponArray[i-1]); }
+	switch(GetCVar("lexicon_iwad"))
+	{
+	case 0:
+		GiveInventory(vanillaDoomWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaDoomWeaponArray[i-1]); }
+		break;
+	case 1:
+		GiveInventory(vanillaChexWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaChexWeaponArray[i-1]); }
+		break;
+	case 2:
+		GiveInventory(vanillaHereticWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaHereticWeaponArray[i-1]); }
+		break;
+	}
 
 	switch(i)
 	{
@@ -74,15 +87,15 @@ function void addLexiconVanillaInventory(int i, int j)
 
 function void addLexiconAmmo(void)
 {
-	switch(GetCVarString("lexicon_iwad"))
+	switch(GetCVar("lexicon_iwad"))
 	{
-	case "doom":
+	case 0:
 		GiveInventory("Clip", 50);
 		break;
-	case "chex":
+	case 1:
 		GiveInventory("MiniZorchRecharge", 50);
 		break;
-	case "heretic":
+	case 2:
 		GiveInventory("GoldWandAmmo", 50);
 		break;
 	}
@@ -96,13 +109,13 @@ function void getLexiconIwad(void)
 	Thing_SpawnNoFog(iwadTid, 240, 0, checkerTid);
 
 	if(GetActorClass(iwadTid) == "LexiconGameTokenChex")
-		SetCVarString("lexicon_iwad", "chex");
+		SetCVar("lexicon_iwad", 1);
 	else if(GetActorClass(iwadTid) == "LexiconGameTokenHeretic")
-		SetCVarString("lexicon_iwad", "heretic");
+		SetCVar("lexicon_iwad", 2);
 	else if(GetActorClass(iwadTid) == "LexiconGameTokenHexen")
-		SetCVarString("lexicon_iwad", "hexen");
+		SetCVar("lexicon_iwad", 3);
 	else
-		SetCVarString("lexicon_iwad", "doom");
+		SetCVar("lexicon_iwad", 0);
 
 	Thing_Remove(iwadTid);
 	Thing_Remove(checkerTid);
@@ -121,7 +134,7 @@ Script "LexiconSpawn" (int arg1)
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 
-	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0) 
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
 	{
 		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{

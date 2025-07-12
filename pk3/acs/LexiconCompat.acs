@@ -71,6 +71,7 @@ str compatArray[COMPATNUMBER] = {
 
 function bool isGameModded (void)
 {
+	if (GetCVar("sv_randommaprotation") && GetCVar("sv_maprotation")) { return true; }
 	for(int i = 0; i <= COMPATNUMBER; i++)
 	{
 		if (CheckFont(compatArray[i])) { return true; }

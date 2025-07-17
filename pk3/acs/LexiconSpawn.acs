@@ -136,17 +136,6 @@ Script "LexiconSpawn" (int arg1)
 
 	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
 	{
-		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
-		{
-			ClearInventory();
-			SetActorProperty(0, APROP_Health, 100);
-		}
-
-		initiateLexiconMaps();
-		getLexiconIwad();
-	}
-	else
-	{
 		if(mapFlagInfiniteAmmo == "Y")
 		{
 			while(1)
@@ -155,6 +144,20 @@ Script "LexiconSpawn" (int arg1)
 				Delay(1);
 			}
 		}
+	}
+}
+
+Script "LexiconOpen" open
+{
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
+	{
+		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
+		{
+			ClearInventory();
+			SetActorProperty(0, APROP_Health, 100);
+		}
+
+		initiateLexiconMaps();
 	}
 }
 

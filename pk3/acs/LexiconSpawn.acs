@@ -149,12 +149,26 @@ Script "LexiconSpawn" (int arg1)
 
 Script "LexiconOpen" open
 {
+	int i;
+	int musicString;
+	int jukeboxTid = UniqueTid();
+
 	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
 	{
 		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 		{
 			ClearInventory();
 			SetActorProperty(0, APROP_Health, 100);
+		}
+
+		i = random(1, 32);
+		if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
+		else { musicString = strparam(s:"LXHBMS", d:i); }
+
+		if (!SpawnForced("DemonSteeleIsSuperCoolAndYouShouldProbablyPlayIt",0,0,0,jukeboxTid,0))
+		{
+			SetMusic(musicString,0);
+			Thing_Remove(jukeboxTid);
 		}
 
 		initiateLexiconMaps();

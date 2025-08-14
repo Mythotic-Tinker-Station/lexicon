@@ -175,6 +175,16 @@ Script "LexiconOpen" open
 	}
 }
 
+Script "LexiconUnload" unloading
+{
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
+	{
+		SetPlayerProperty(0, 0, PROP_TOTALLYFROZEN);
+		FadeTo(0, 0, 0, 0.0, 0);
+		clearLexiconUI();
+	}
+}
+
 script "LexiconEnter" enter { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }
 script "LexiconRespawn" respawn { ACS_NamedExecuteWithResult("LexiconSpawn", 1,0,0); }
 script "LexiconReturn" return { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }

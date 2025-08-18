@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 65
+#define COMPATNUMBER 67
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -13,11 +13,13 @@ str compatArray[COMPATNUMBER] = {
 						"SPHHUD1", // Combined Arms Gaiden
 						"HARMBL", // Complex Doom
 						"D4DFRONT", // Death Foretold
+						"NIVENPRT", // Deathstrider
 						"HUDSTMEL", // DemonSteele
 						"HB2SB0H", // Doom4Doom
 						"SKY-0151", // Doom 64: Unseen Evil
 						"STHE40MM", // Doomzone
 						"PLAYDOUM", // Doom Delta
+						"Slot8bal", // Doom Tournament
 						"PPDADMO1", // DoomRL Arsenal
 						"BBS_M1", // DoomRPG
 						"DN13D033", // Duke Nukem 3D Weapons & Aliens

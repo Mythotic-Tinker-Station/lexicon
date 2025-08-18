@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 64
+#define COMPATNUMBER 65
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -32,6 +32,7 @@ str compatArray[COMPATNUMBER] = {
 						"HCRDKEYB", // High Noon Drifter
 						"CMETRAFU", // Highway Acceleroid Booster
 						"HXHWSHLD", // HXRTC Project
+						"INHLP2", // Insanity Deathmatch
 						"sierrakn", // Juvenile Power Fantasy
 						"HWMSLOT", // Lambda
 						"NARISELE", // La Tailor Girl
@@ -70,6 +71,7 @@ str compatArray[COMPATNUMBER] = {
 
 function bool isGameModded (void)
 {
+	if (GetCVar("sv_randommaprotation") && GetCVar("sv_maprotation")) { return true; }
 	for(int i = 0; i <= COMPATNUMBER; i++)
 	{
 		if (CheckFont(compatArray[i])) { return true; }

@@ -1,73 +1,184 @@
-str vanillaWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+str vanillaDoomWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+str vanillaChexWeaponArray[9] = { "Bootspoon", "MiniZorcher", "SuperBootspork", "LargeZorcher", "SuperLargeZorcher", "RapidZorcher", "ZorchPropulsor", "PhasingZorcher", "LAZDevice" };
+str vanillaHereticWeaponArray[9] = { "Staff", "GoldWand", "Gauntlets", "Crossbow", "Blaster", "SkullRod", "PhoenixRod", "Mace" };
+str vanillaHexenCWeaponArray[4] = { "CWeapMace", "CWeapStaff", "CWeapFlame", "WeapWraithverge" };
+str vanillaHexenFWeaponArray[4] = { "FWeapFist", "FWeapAxe", "FWeapHammer", "FWeapQuietus" };
+str vanillaHexenMWeaponArray[4] = { "MWeapWand", "MWeapFrost", "MWeapLightning", "MWeapBloodscourge" };
 
-function void removeLexiconInventory(void)
+int vanillaDoomAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaChexAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaHereticAmmoCapacityArray[6] = { 100, 50, 150, 200, 200, 20 };
+
+function void addLexiconInventory(str mapset, int i, int j)
 {
-	int i;
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
+	str weaponActor = getDynLangEntry(mapset, "WEAPON", strparam(i:i));
+	if(weaponActor != "_LANG_UNDEFINED_") { GiveInventory(weaponActor, 1); }
+	if (j > 0) { SetWeapon(weaponActor); }
 
-	for(i = 1; i < 9; i++)
+	switch(i)
 	{
-		if(weaponActor != "_LANG_UNDEFINED_")
-		{
-			TakeInventory(weaponActor, 1);
-		}
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
 	}
 }
 
-function void addLexiconInventory(void)
+function void addLexiconVanillaInventory(int i, int j)
 {
-	int i;
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str weaponActor = getDynLangEntry(mapsetPrefix, "WEAPON", i);
-
-	for(i = 1; i < 9; i++)
+	switch(GetCVar("lexicon_iwad"))
 	{
-		if(weaponActor != "_LANG_UNDEFINED_")
-		{
-			if (i == 2) { TakeInventory("Clip", 20); }
-			if (i == 4) { TakeInventory("Shell", 8); }
-			if (i == 5) { TakeInventory("Shell", 8); }
-			if (i == 6) { TakeInventory("Clip", 20); }
-			if (i == 7) { TakeInventory("RocketAmmo", 2); }
-			if (i == 8) { TakeInventory("Cell", 40); }
-			if (i == 9) { TakeInventory("Cell", 40); }
-			GiveInventory(weaponActor, 1);
-		}
+	case 0:
+		GiveInventory(vanillaDoomWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaDoomWeaponArray[i-1]); }
+		break;
+	case 1:
+		GiveInventory(vanillaChexWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaChexWeaponArray[i-1]); }
+		break;
+	case 2:
+		GiveInventory(vanillaHereticWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaHereticWeaponArray[i-1]); }
+		break;
+	}
+
+	switch(i)
+	{
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
 	}
 }
 
-function void addLexiconShotgun(void)
+function void addLexiconAmmo(void)
 {
-	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
-	str shotgunActor = getDynLangEntry(mapsetPrefix, "WEAPON", 4);
-
-	if (shotgunActor != "_LANG_UNDEFINED_")
+	switch(GetCVar("lexicon_iwad"))
 	{
-		TakeInventory("Shotgun", 1);
-		GiveInventory(shotgunActor, 1);
+	case 0:
+		GiveInventory("Clip", 50);
+		break;
+	case 1:
+		GiveInventory("MiniZorchRecharge", 50);
+		break;
+	case 2:
+		GiveInventory("GoldWandAmmo", 50);
+		break;
 	}
+}
+
+function void getLexiconIwad(void)
+{
+	int checkerTid = UniqueTid();
+	int iwadTid = UniqueTid();
+	SpawnForced("LexiconGameTokenChecker", 0.0 , 0.0, 0.0, iwadTid);
+	Thing_SpawnNoFog(iwadTid, 240, 0, checkerTid);
+
+	if(GetActorClass(iwadTid) == "LexiconGameTokenChex")
+		SetCVar("lexicon_iwad", 1);
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHeretic")
+		SetCVar("lexicon_iwad", 2);
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHexen")
+		SetCVar("lexicon_iwad", 3);
+	else
+		SetCVar("lexicon_iwad", 0);
+
+	Thing_Remove(iwadTid);
+	Thing_Remove(checkerTid);
 }
 
 Script "LexiconSpawn" (int arg1)
 {
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str mapFlagInfiniteAmmo = getDynLangEntry(mapsetPrefix, "MAPFLAG", "INFINITEAMMO");
+	str mapFlagAmmo1Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO1CAPACITY");
+	str mapFlagAmmo2Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO2CAPACITY");
+	str mapFlagAmmo3Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO3CAPACITY");
+	str mapFlagAmmo4Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO4CAPACITY");
+	str mapFlagAmmo5Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO5CAPACITY");
+	str mapFlagAmmo6Capacity = getDynLangEntry(mapsetPrefix, "MAPFLAG", "AMMO6CAPACITY");
+
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
-	
-	/*
-	// Check if we are at the hub
-	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"HUBMAP") == 0)
 	{
-		// Check for vanilla mode
-		if (GetCVar("lexicon_vanilla_mode") == 0 && !isGameModded())
+		if(mapFlagInfiniteAmmo == "Y")
 		{
-			ClearInventory();
-			GiveInventory("Fist", 1);
-			GiveInventory("Pistol", 1);
-			GiveInventory("Clip", 30);
-			SetWeapon("Pistol");
+			while(1)
+			{
+				GiveInventory("PowerInfiniteAmmo", 1);
+				Delay(1);
+			}
 		}
 	}
-	*/
+}
+
+Script "LexiconOpen" open
+{
+	int i;
+	int musicString;
+	int jukeboxTid = UniqueTid();
+
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+	{
+		if (!GetCVar("lexicon_vanilla_mode") && !isGameModded())
+		{
+			ClearInventory();
+			SetActorProperty(0, APROP_Health, 100);
+		}
+
+		i = random(1, 38);
+		if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
+		else { musicString = strparam(s:"LXHBMS", d:i); }
+
+		if (!SpawnForced("DemonSteeleIsSuperCoolAndYouShouldProbablyPlayIt",0,0,0,jukeboxTid,0))
+		{
+			SetMusic(musicString,0);
+			Thing_Remove(jukeboxTid);
+		}
+	}
+}
+
+Script "LexiconUnload" unloading
+{
+	if (StrICmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0)
+	{
+		SetPlayerProperty(0, 0, PROP_TOTALLYFROZEN);
+	}
 }
 
 script "LexiconEnter" enter { ACS_NamedExecuteWithResult("LexiconSpawn", 0,0,0); }

@@ -10,16 +10,6 @@ str keyNames[6] =
 	"BlueSkull"
 };
 
-str GCKeyNames[6] =
-{
-	"GC_RedCard",
-	"GC_YellowCard",
-	"GC_BlueCard",
-	"GC_RedSkull",
-	"GC_YellowSkull",
-	"GC_BlueSkull"
-};
-
 script "SharedKey_Pickup" (int key)
 {
 	if (keysFound[key] == FALSE)
@@ -27,12 +17,10 @@ script "SharedKey_Pickup" (int key)
 		if (GetCVar("sv_sharekeys") == 1 && GameType() == GAME_NET_COOPERATIVE)
 		{
 			GiveActorInventory(0, keyNames[key], 1);
-			if (CheckFont("DRABORG0")) { GiveActorInventory(0, GCKeyNames[key], 1); }
 		}
 		else
 		{
 			GiveInventory(keyNames[key], 1);
-			if (CheckFont("DRABORG0")) { GiveInventory(GCKeyNames[key], 1); }
 		}
 
 		keysFound[key] = TRUE;
@@ -41,7 +29,6 @@ script "SharedKey_Pickup" (int key)
 	else
 	{
 		GiveInventory(keyNames[key], 1);
-		if (CheckFont("DRABORG0")) { GiveInventory(GCKeyNames[key], 1); }
 		SetResultValue(1);
 	}
 }

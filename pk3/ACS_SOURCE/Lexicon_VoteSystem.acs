@@ -501,9 +501,19 @@ Script "Lexicon_VoteTally" (void)
 						ChangeLevel(strParam(s:returnMapString(99,pickedMapSet,0),s:"E1M1"),0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
 				}*/
 				if(strParam(s:returnMapString(1,pickedMapSet,0)) == "Doom II")
-					ChangeLevel("MAP01",0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+				{
+					if(GetCVar("lexicon_vanilla_mode") || isGameModded())
+						ChangeLevel("MAP01",0,CHANGELEVEL_NOINTERMISSION,-1);
+					else
+						ChangeLevel("MAP01",0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+				}
 				else
-					ChangeLevel(strParam(s:returnMapString(0,pickedMapSet,0),s:"01"),0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+				{
+					if(GetCVar("lexicon_vanilla_mode") || isGameModded())
+						ChangeLevel(strParam(s:returnMapString(0,pickedMapSet,0),s:"01"),0,CHANGELEVEL_NOINTERMISSION,-1);
+					else
+						ChangeLevel(strParam(s:returnMapString(0,pickedMapSet,0),s:"01"),0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+				}
 			}
 		}
 		Delay(1);

@@ -1,0 +1,277 @@
+// Check if various gameplay mods are being used
+#define COMPATNUMBER 65
+
+str compatArray[COMPATNUMBER] = {
+						"RHR2HEAR", // AEons of Death
+						"ADECVKR4", // Alice: Toys of Madness
+						"ARBARX2", // Aracnocide
+						"M4THNA", // Ashes Series
+						"RBLD1", // Brutal Doom
+						"COKELEVL", // Cola 3: The Soda of Style
+						"EYETARG3", // Colourful Hell
+						"1RTIDL1", // Combined Arms
+						"SPHHUD1", // Combined Arms Gaiden
+						"HARMBL", // Complex Doom
+						"D4DFRONT", // Death Foretold
+						"HUDSTMEL", // DemonSteele
+						"HB2SB0H", // Doom4Doom
+						"SKY-0151", // Doom 64: Unseen Evil
+						"STHE40MM", // Doomzone
+						"PLAYDOUM", // Doom Delta
+						"PPDADMO1", // DoomRL Arsenal
+						"BBS_M1", // DoomRPG
+						"DN13D033", // Duke Nukem 3D Weapons & Aliens
+						"BTSTPOIS", // Dusted's Pandemonia
+						"STXBFG1", // Final Doomer
+						"BLZKEY1", // GMOTA
+						"GERAHTBR", // GoldenEye Rogue Agent DS Weapons
+						"DRABORG0", // Guncaster
+						"DBLSRet1", // Halo Doom Evolved
+						"GOLFPIC", // Hellshots Golf
+						"HXGATLIN", // HeXeReTiC Fantasy
+						"HCRDKEYB", // High Noon Drifter
+						"CMETRAFU", // Highway Acceleroid Booster
+						"HXHWSHLD", // HXRTC Project
+						"INHLP2", // Insanity Deathmatch
+						"sierrakn", // Juvenile Power Fantasy
+						"HWMSLOT", // Lambda
+						"NARISELE", // La Tailor Girl
+						"LDM_BACK", // LegenDoom
+						"CIGAR13", // Lt. Typhon
+						"invsiph", // MetaDoom
+						"WPFSDMCN", // Metroid Dreadnought
+						"Z_SKULL2", // NeoCore
+						"NTEINT27", // Netronian Chaos
+						"NTMLOGO2", // Nobody Told Me About id
+						"PARKLOG6", // Parkour
+						"BELIPA1H", // Painkiller Mutilator
+						"P_mnublk", // Painslayer
+						"BUTNBALL", // PokéDoom
+						"POSTLPIC", // POSTAL: Running With Chainsaws
+						"BARBACR1", // Project Brutality 3.0
+						"MSXSLCT1", // Project MSX
+						"ST-PSY8B", // Psychic
+						"QCDBACK", // Quake Champions: Doom Edition
+						"TMSTATI1", // Rampancy
+						"PERK1SOH", // Real Guns Advanced 2
+						"RRMEND10", // Rebel Rumble
+						"RO_MDOOM", // Russian Overkill
+						"DOMNOTCH", // Samsara
+						"sgdlogo2", // Satanic Gameshow Deluxe
+						"NOSATK", // Space Hunter
+						"SPPAUSE8", // Spawn: Path of Damnation
+						"SB-MCLP", // Supercharge
+						"RELPIST7", // Trailblazer
+						"THROWJK", // Treasure Tech
+						"Upbrmmax", // Weasel Presents: Terrorists!
+						"WLFSTART", // Weasel Presents: NAZIS!
+						"BarForce", // Xim's Star Wars Doom
+						"H_ICENI6" // Zero Tolerance [2016 REDUX]
+};
+
+function bool isGameModded (void)
+{
+	if (GetCVar("sv_randommaprotation") && GetCVar("sv_maprotation")) { return true; }
+	for(int i = 0; i <= COMPATNUMBER; i++)
+	{
+		if (CheckFont(compatArray[i])) { return true; }
+	}
+	return false;
+}
+
+// A handy method of detecting Skulltag content. Thanks to TheZombieKiller!
+function bool isSkulltagLoaded (void) 
+{
+	int doomsphereTid = UniqueTid();
+	bool result;
+
+	// Check if Zandronum is running, and if Skulltag content is loaded
+	if (GetPlayerAccountName(0) != 0)
+	{
+		if (SpawnForced("Doomsphere", 0, 0, 0, doomsphereTid, 0))
+		{
+			Thing_Remove(doomsphereTid);
+			result = true;
+		}
+	}
+	return result;
+}
+
+function bool isMusicRandomizerLoaded (void) 
+{
+	int musicRandomizerTid = UniqueTid();
+	bool result;
+
+	if (SpawnForced("DemonSteeleIsSuperCoolAndYouShouldProbablyPlayIt", 0, 0, 0, musicRandomizerTid, 0))
+	{
+		Thing_Remove(musicRandomizerTid);
+		result = true;
+	}
+	
+	if (CheckFont("QCDE-OST")) { result = true; }
+	return result;
+}
+
+function str getDynLangEntry(str p1, str p2, str p3)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
+function str getDynLangEntry2(str p1, str p2, str p3, str p4)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3, s:"_", s:p4);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
+int _spec, _args0, _args1, _args2, _args3, _args4;
+function int actorSpawn(str class, str classalt)
+{
+	// Get actor coordinates
+	int x = GetActorX(0);
+	int y = GetActorY(0);
+	int z = GetActorZ(0);
+	int angle = GetActorAngle(0) << 8; // just for logs
+	int tid = UniqueTid();
+
+	// Check if there is an alternate actor defined
+	if(classalt != "_LANG_UNDEFINED_")
+	{
+		if(GetCVar("lexicon_vanilla_mode") || isGameModded())
+		{
+			class = classalt; // Replace the normal actor with the alternate actor
+		}
+	}
+
+    // Spawn actor
+	bool success = SpawnForced(class, x,y,z, tid, angle >> 16);
+	if(!success) return false;
+
+    // If the actor is supposed to spawn on the ceiling, adjust the Z position
+    // Note: this used to use SetActorPosition, however that function does not work if an actor is in the way.
+    if(CheckFlag(tid, "SPAWNCEILING"))
+    {
+        z = GetActorCeilingZ(tid) - GetActorProperty(tid, APROP_Height);
+        Thing_Remove(tid);
+	    SpawnForced(class, x,y,z, tid, angle >> 16);
+    }
+
+	// remove DROPPED flag
+	if (Timer() < 1)
+	{
+		SetActorProperty(tid, APROP_Dropped, 0);
+	}
+
+	// Transfer flags, store as spawner's tracer and finally transfer tid
+	if(CheckFlag(0,"FRIENDLY")) GiveActorInventory(tid, "LexiconFriendlyProc", 1);
+	if(CheckFlag(0,"AMBUSH"  )) GiveActorInventory(tid, "LexiconAmbushProc", 1);
+	if(GetUserVariable(tid,"user_dormant"))
+	{
+		Thing_Deactivate(tid);
+	}
+
+	SetPointer(AAPTR_TRACER, tid);
+	GiveInventory("LexiconTransferSpecialProc", 1); // <-- given to spawner, not spawnee!
+	SetThingSpecial(tid, _spec, _args0, _args1, _args2, _args3, _args4);
+	Thing_ChangeTid(tid, ActivatorTid());
+	Thing_ChangeTid(0, 0); // release tid from spawner itself
+	//printbold(s:"\c-Spawned ", s:"\cv", s:class, s:"\c- at (", f:x, s:", ", f:y, s:", ", f:z, s:"; angle ", f:angle, s:").");
+
+	Thing_Remove(0);
+
+	return true;
+}
+
+script "XCDE_StoreSpecial1" (int spec, int args0, int args1)
+{
+	_spec = spec;
+	_args0 = args0;
+	_args1 = args1;
+}
+
+script "XCDE_StoreSpecial2" (int args2, int args3, int args4)
+{
+	_args2 = args2;
+	_args3 = args3;
+	_args4 = args4;
+}
+
+Script "LexiconActorSpawner" (void)
+{
+	int mapsetPrefix = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str spawnerId = strparam(d:GetUserVariable(0, "user_id"));
+	str spawnerActor = getDynLangEntry(mapsetPrefix, "ACTOR", spawnerId);
+	str spawnerActorAlt = getDynLangEntry(mapsetPrefix, "ACTORALT", spawnerId);
+	str spawnerActorSkulltag = getDynLangEntry(mapsetPrefix, "ACTORST", spawnerId);
+	//printbold(s:mapsetPrefix, s:"_ACTOR_", s:spawnerId, s:": ", s:spawnerActor, s:": ", s:spawnerActorAlt, s:": ", s:spawnerActorSkulltag);
+
+	// check if this language definition exists
+	if(spawnerActor != "_LANG_UNDEFINED_")
+	{
+		if (isSkulltagLoaded() && spawnerActorSkulltag != "_LANG_UNDEFINED_")
+		{
+			actorSpawn(spawnerActorSkulltag, spawnerActor);
+		}
+		else
+		{
+			actorSpawn(spawnerActor, spawnerActorAlt);
+		}
+	}
+}
+
+bool keysFound[6];
+
+str keyNames[6] =
+{
+	"RedCard",
+	"YellowCard",
+	"BlueCard",
+	"RedSkull",
+	"YellowSkull",
+	"BlueSkull"
+};
+
+script "SharedKey_Pickup" (int key)
+{
+	if (keysFound[key] == FALSE)
+	{
+		if (GetCVar("sv_sharekeys") == 1 && GameType() == GAME_NET_COOPERATIVE)
+		{
+			GiveActorInventory(0, keyNames[key], 1);
+		}
+		else
+		{
+			GiveInventory(keyNames[key], 1);
+		}
+
+		keysFound[key] = TRUE;
+		SetResultValue(0);
+	}
+	else
+	{
+		GiveInventory(keyNames[key], 1);
+		SetResultValue(1);
+	}
+}

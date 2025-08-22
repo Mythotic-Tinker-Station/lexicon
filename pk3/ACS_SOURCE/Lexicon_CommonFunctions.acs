@@ -1,0 +1,63 @@
+function int itof(int x) { return x << 16; }
+function int ftoi(int x) { return x >> 16; }
+
+function int intFloat(int toround)
+{
+	return itof(ftoi(toround));
+}
+
+function int RemoveMessages(int rangemin, int rangemax)
+{
+	for(int a = rangemin; a <= rangemax; a++)
+		HudMessage(s:""; HUDMSG_PLAIN, a, CR_UNTRANSLATED, 0.0, 0.0, 0.1);
+
+	return 0;
+}
+
+//Scales should always be floats
+function int checkConfines(int cursorx, int cursory, int xl, int xr, int yl, int yr, int scaleX, int scaleY)
+{
+	cursorx = ftoi(cursorx*scaleX);
+	cursory = ftoi(cursory*scaleY);
+	return cursorx > xl && cursorx < xr && cursory > yl && cursory < yr;	
+}
+
+function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; }
+
+function bool isVR (void) { return stricmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0; }
+
+//Check if a language entry exists for the provided text
+function str returnLanguageText (str text)
+{
+	return text == strParam(l:text) ? "UNDEFINED" : strParam(l:text);
+}
+
+//Check if Doom 1 map sets can be loaded
+function bool Doom1Enabled(void)
+{
+	//Alright, funny guy, I'll check for both since I'm getting inconsistent results between ports
+	return CheckFont("WIMAP0") && CheckFont("STARTAN1");
+}
+
+//Check if Doom 2 map sets can be loaded
+function bool Doom2Enabled(void)
+{
+	return CheckFont("BRICK11");
+}
+
+//Check if slaughter maps can be loaded
+function bool SlaughterMapsEnabled(void)
+{
+	return CheckFont("dsv10451");
+}
+
+//Check if the player number of the activator is the same player connecting to the server
+Script "checkClient" (int player) clientside
+{
+	SetResultValue(player == ConsolePlayerNumber());
+}
+
+Script "SetNetworkStringToClient" (int string) clientside
+{
+	SetCvarString("Lexicon_NetWorkStringTransfer",string);
+}

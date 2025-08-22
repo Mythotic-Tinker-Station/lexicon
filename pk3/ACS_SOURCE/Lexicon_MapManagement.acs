@@ -1,0 +1,131 @@
+int queryMapSetsData[MAXMAPSETSPERPACK] = {};
+int selectedMapType; //The value used here for checking what pack to be looking at
+int selectedGameMode; //The value the user has selected for the game mode
+int queriedMapSetCount;
+
+//Return information from a language lump about a map
+function str returnMapString(int type, int id, int useQuery)
+{
+	str result;
+	switch(type)
+	{
+		//Return acronym
+		case 0:
+			result = useQuery ? MapSetPool[queryMapSetsData[id]] : MapSetPool[id];
+			break;
+		//Return name
+		case 1:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_TITLE"));
+			break;
+		//Return authors
+		case 2:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_AUTHORS"));
+			break;
+		//Return year
+		case 3:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_YEAR"));
+			break;
+		//Return custom actors
+		case 4:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_ACTORS"));
+			break;
+	}
+	return result;
+}
+
+//Clear query, in case needed elsewhere
+function void clearQuery(void)
+{
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{
+		queryMapSetsData[i] = 0;
+	}
+}
+
+function void queryMapSets(void)
+{
+	queriedMapSetCount = 0;
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{	
+		if(stricmp(returnLanguageText(strParam(s:MapSetPool[i],s:"_MAPSET_PACK")),existingMapSetTypes[selectedMapType]) == 0)
+		{	
+			queryMapSetsData[queriedMapSetCount] = i;
+			queriedMapSetCount++;
+		}
+		else queryMapSetsData[i] = 0;
+	}
+}
+
+#DEFINE MAXGAMEMODES 16
+str gameModeTypes[MAXGAMEMODES][2] =
+{
+	{ "Cooperative", "Cooperative" },
+	{ "Survival", "Survival" },
+	{ "Invasion", "Invasion" },
+	{ "Deathmatch", "Deathmatch" },
+	{ "Teamplay", "Teamplay" },
+	{ "Duel", "Duel" },
+	{ "Terminator", "Terminator" },
+	{ "LastManStanding", "Last Man Standing" },
+	{ "TeamLMS", "Team LMS" },
+	{ "Possession", "Possession" },
+	{ "TeamPossession", "Team Possession" },
+	{ "TeamGame", "Team Game" },
+	{ "CTF", "Capture the Flag" },
+	{ "OneFlagCTF", "One Flag CTF" },
+	{ "Skulltag", "Skulltag" },
+	{ "Domination", "Domination" }
+};
+
+//0 means compatible in both ports, 1 means Zandronum only, 2 means do not show
+int gameModeValues[MAXGAMEMODES] = { 0, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 2 };
+
+//Find the next valid game type depending on source port
+function int findNextGameType(int current)
+{
+	int result = current;
+	int validGameMode = 0;
+	str gameMode = "";
+	for(int i = current+1; i < current+MAXGAMEMODES+1; i++)
+	{
+		int isCoop = i%MAXGAMEMODES == 0 || i%MAXGAMEMODES == 1;
+		int isDeathMatch = i%MAXGAMEMODES == 3 || i%MAXGAMEMODES == 4 || i%MAXGAMEMODES == 5 || i%MAXGAMEMODES == 6 || i%MAXGAMEMODES == 7 || i%MAXGAMEMODES == 8 || i%MAXGAMEMODES == 11;
+		for(int j = 0; j < MAXEXPANSIONS; j++)
+		{
+			gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
+			if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+			{
+				validGameMode = true;
+				break;
+			}
+		}
+		if(validGameMode && gameModeValues[i] != 2 && (gameModeValues[i] == 0 || (gameModeValues[i] == 1 && !isZDoom())))
+		{
+			result = i%MAXGAMEMODES;
+			break;
+		}
+	}
+	if(result == -1) Log(s:"FATAL ERROR - No game modes detected!");
+	return result;
+}
+
+//Find the next available map set type
+function int findNextMapType(int current)
+{
+	int result = current;
+	int isCoop = selectedGameMode == 0 || selectedGameMode == 1;
+	int isDeathMatch = selectedGameMode == 3 || selectedGameMode == 4|| selectedGameMode == 5 || selectedGameMode == 6 || selectedGameMode == 7 || selectedGameMode == 8 || selectedGameMode == 11;
+	str gameMode = "";
+	for(int i = current+1; i < current+MAXEXPANSIONS+1; i++)
+	{
+		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[i%MAXEXPANSIONS],s:"_GAMETYPE"));
+		//PrintBold(s:StrParam(s:"Index ",d:i,s:", Game mode: ",s:gameMode),s:", Selected Game Mode: ",d:selectedGameMode);
+		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+		{
+			result = i%MAXEXPANSIONS;
+			break;
+		}
+	}
+	if(result == -1) Log(s:"FATAL ERROR - No pack detected. Use at your own risk!");
+	return result;
+}

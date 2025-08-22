@@ -1,0 +1,70 @@
+#library "LEXICON"
+#include "zcommon.acs"
+
+#DEFINE MAXMAPSETSPERPACK 256
+#DEFINE MAXEXPANSIONS 8
+
+int disableTerminal;
+
+#include "Lexicon_CommonFunctions.acs"
+#include "Lexicon_SetParser.acs"
+#include "Lexicon_MapManagement.acs"
+#include "Lexicon_ClientSync.acs"
+#include "Lexicon_VoteSystem.acs"
+
+//Enter script mostly designed for printing the vote text
+Script "Lexicon_Core_Enter" ENTER
+{
+	if(!isVR())
+		terminate;	
+	
+	ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
+		
+	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
+	{
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
+
+		Delay(1);
+	}
+}
+
+Script "Lexicon_Core_Open" OPEN
+{
+	if(!isVR())
+		terminate;			
+		
+	//Determine if the current game type must change
+	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
+	
+	//Generate all the map data on the server
+	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
+	
+	//Then run the script to count votes
+	ACS_NamedExecuteWithResult("Lexicon_VoteTally");
+}
+
+
+//Run this only in Zandronum
+Script "Lexicon_TerminalExit" (int pln) NET
+{
+	SetActivator(pln);
+	if(!(Classifyactor(0) & ACTOR_ALIVE))
+		TakeInventory("LexiconTerminalExit",1);
+}
+
+//Switch the game type depending on the gametype of the chosen mapset
+Script "Lexicon_GameTypeChanger" (void)
+{
+	Switch(GetCvar("Lexicon_GameType"))
+	{
+		case 0:
+			if(GetCurrentGameMode() != "Cooperative")
+				SetCurrentGameMode("Cooperative");
+			break;
+		case 1:
+			if(GetCurrentGameMode() != "Survival")
+				SetCurrentGameMode("Survival");
+			break;
+	}
+}
+

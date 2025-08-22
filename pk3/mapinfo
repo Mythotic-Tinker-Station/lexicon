@@ -1,0 +1,15 @@
+clearepisodes
+
+episode VR
+{
+	name = "The Sentinel's Lexicon"
+	key = "1"
+}
+
+map VR "Inside the Lexicon"
+{
+	music = "D_RUNNIN"
+	levelnum = 99
+	sky1 = "SKY1"
+	ForgetState
+}

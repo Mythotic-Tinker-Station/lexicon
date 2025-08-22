@@ -1,3 +1,6 @@
+server bool lexicon_vanilla_mode = false;
+server noarchive bool lexicon_no_music_changes = false;
+
 server noarchive int Lexicon_GameType = 0;
 server noarchive int Lexicon_TotalMapSets = 0;
 

@@ -1,6 +1,6 @@
 int playerVotes[64][2] = {};
 int winningSets[64][2] = {};
-str VotesDisplay[MAXMAPSETSPERPACK * MAXEXPANSIONS] = {};
+str VotesDisplay[64] = {};
 
 int voteTimeLimit;
 
@@ -8,22 +8,20 @@ Script "Lexicon_SyncClientData" (void)
 {
 	int i = 0;
 	//We don't need to do this in singleplayer
-	if(SinglePlayer()) terminate;
+	//if(SinglePlayer()) terminate;
 		
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client");
 		
 	//Sync current player votes
 	for(i = 0; i < 64; i++)
-	{
-		for(int j = 0; i < 2; j++)
-			ACS_NamedExecuteWithResult("Lexicon_SendInfoToClient",i,j,playerVotes[i][j]);
-	}
+		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
 }
 
-Script "Lexicon_SendVoteToClient" (int value1, int value2, int value3) clientside
+Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside
 {
-	playerVotes[value1][value2] = value3;
+	playerVotes[player][0] = value1;
+	playerVotes[player][1] = value2;
 }
 
 script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
@@ -36,7 +34,7 @@ script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
 	{
 		ACS_NamedExecuteWithResult("Lexicon_SyncClientData");
 	}
-		
+			
 	while(PlayerIsSpectator(arg1))
 	{
 		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);

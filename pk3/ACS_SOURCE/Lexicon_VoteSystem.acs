@@ -21,10 +21,9 @@ script "Lexicon_AddVote" (int pln, int mapset, int gamemode) NET
 //Add vote to the player array. Then send the information to all clients.
 function void addVote(int pln, int mapset, int gamemode)
 {
-	playerVotes[0][pln] = 1+mapset;
-	playerVotes[1][pln] = gamemode;
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,0,playerVotes[pln][0]);
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,1,playerVotes[pln][1]);
+	playerVotes[pln][0] = 1+mapset;
+	playerVotes[pln][1] = gamemode;
+	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,playerVotes[pln][0],playerVotes[pln][1]);
 }
 
 //Remove the vote from the player array, and send it to clients
@@ -32,17 +31,17 @@ function void removeVote(int pln)
 {
 	playerVotes[pln][0] = 0;
 	playerVotes[pln][1] = 0;
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,0,0);
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,1,0);
+	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,playerVotes[pln][0],playerVotes[pln][1]);
 }
 
-//Count the amount of votes this mapset has
-function int countVote(int mapSet)
+//Count the amount of votes this mapset has. This function looks for unique votes
+function int countVote(int start, int mapSet, int gameMode)
 {
 	int result = 0;
-	for(int i = 0; i < 64; i++)
+	for(int i = 0; i < start; i++)
 	{
-		if(playerVotes[i][0] > 0 && playerVotes[i][0] == (mapSet + 1))
+		if(!PlayerInGame(i)) continue;
+		if(playerVotes[i][0] > 0 && playerVotes[i][0] == mapSet && playerVotes[i][1] == gameMode)
 			result++;
 	}
 	return result;
@@ -68,6 +67,7 @@ function int pickWinner (void)
 		Log(s:"FATAL ERROR - No winners. How is this possible?");
 	int pickSet = random(0,winnerCount);
 	result = winningSets[pickSet][0];
+	SetCvar("Lexicon_GameType",winningSets[pickSet][1]);
 	
 	return result;
 }
@@ -87,6 +87,8 @@ Script "Lexicon_VoteInterface" (void) clientside
 	int hudboundsy = CANVASBASEY*UISCALE;
 	int hudcenterx = hudboundsx/2;
 	int hudcentery = hudboundsy/2;
+	
+	int playerNum = PlayerNumber();
 	
 	//Magic numbers for offsetting the screen, these will need to be adjusted in the future
 	int mouseCursorBorderLeft = 114*UISCALE;
@@ -133,7 +135,8 @@ Script "Lexicon_VoteInterface" (void) clientside
 		int yaw = GetPlayerInput(-1, INPUT_YAW);
 		int pitch = GetPlayerInput(-1, INPUT_PITCH);
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
-		int Lclicking = buttons & BT_ATTACK;
+		int oldbuttons = GetPlayerInput(-1, INPUT_OLDBUTTONS);
+		int Lclicking = buttons & BT_ATTACK && !(oldbuttons & BT_ATTACK);
 		int Rclicking = buttons & BT_ALTATTACK;	
 		
 		//Clamp mouse inputs for the cursor to keep it in the bounds
@@ -288,7 +291,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 		HudMessage(s:"Current Vote"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconRed", posX + 0.4, posY, 0.0);	
 		posY = intFloat(mouseCursorBorderBottom * 0.95);
 		SetFont("LXSMALLFONT");
-		HudMessage(s:playerVotes[PlayerNumber()][0] > 0 ? returnMapString(1,playerVotes[PlayerNumber()][0],1) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
+		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0],1) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
 		
 		pagination = pageOffset * MAXCOLS * MAXROWS;
 		SetHudSize(imagesHudX,imagesHudY,false);
@@ -324,15 +327,15 @@ Script "Lexicon_VoteInterface" (void) clientside
 					if(Lclicking)
 					{
 						if(!isZDoom())
-							NamedRequestScriptPuke("Lexicon_AddVote",PlayerNumber(),i,0,0);
+							NamedRequestScriptPuke("Lexicon_AddVote",PlayerNum,returnQuery(i),selectedGameMode);
 						else
-							addVote(PlayerNumber(),i,selectedGameMode);
-							
+							addVote(PlayerNum,returnQuery(i),selectedGameMode);
+														
 						LocalAmbientSound("Lexicon/Select",127);
 					}
 					if(Rclicking)
 					{
-						removeVote(PlayerNumber());
+						removeVote(PlayerNum);
 						LocalAmbientSound("Lexicon/Back",127);
 					}
 				}
@@ -375,17 +378,22 @@ Script "Lexicon_VoteInterface" (void) clientside
 }
 
 //Clientside script to show current vote tallies
-Script "Lexicon_VoteTextDisplay" (int time) Clientside
+Script "Lexicon_VoteTextDisplay" (int time) clientside
 {
 	SetFont("LXBIGFONT");
 	str VoteText = "";
-	for(int i = 0; i < maxTotalMapSets; i++)
+	for(int i = 0; i < 64; i++)
 	{
-		int voteCount = countVote(i);
-		if(voteCount > 0)
+		if(playerVotes[i][0] == 0) continue;
+		int voteCount = countVote(i,PlayerVotes[i][0],PlayerVotes[i][1]);
+		if(voteCount == 0)
 		{
-			VotesDisplay[i] = strParam(s:"\n",s:returnMapString(1,i,0),s:" - Votes: ",d:voteCount);
-			VoteText = strparam(s:VoteText,s:VotesDisplay[i]);
+			int totalVoteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
+			if(totalVoteCount > 0)
+			{
+				VotesDisplay[i] = strParam(s:"\n",s:returnMapString(1,PlayerVotes[i][0]-1,0),s:" [",s:gameModeTypes[PlayerVotes[i][1]][1],s:"]",s:" - Votes: ",d:totalVoteCount);
+				VoteText = strparam(s:VoteText,s:VotesDisplay[i]);
+			}
 		}
 	}
 	
@@ -414,7 +422,7 @@ Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 	{
 		int second = (deployTimer/(35)) % 60;
 		SetFont("LXSMALLFONT");	
-		HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\n\nPrepare for deployment:"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0);
+		HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\cf",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0);
 		SetFont("LXBIGFONT");
 		HudMessage(d:second+1; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.05, 1.0);	
 		deployTimer--;
@@ -422,7 +430,7 @@ Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 	}
 	
 	SetFont("LXSMALLFONT");	
-	HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\n\nPrepare for deployment:"); HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0, 1.0);
+	HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\cf",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0, 1.0);
 	SetFont("LXBIGFONT");
 	HudMessage(d:0; HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.0, 1.0);	
 	
@@ -438,7 +446,7 @@ Script "Lexicon_VoteTally" (void)
 		Delay(1);
 		
 	voteTimeLimit = WAITTIMER;
-	int i, pickedMapSet, voteCount, tie;
+	int i, j, pickedMapSet, voteCount, tie;
 	int highestVote = -1;
 	while(true)
 	{
@@ -460,9 +468,9 @@ Script "Lexicon_VoteTally" (void)
 		{
 			//Check for the amount of winners, i.e, a tie
 			int winners = 0;
-			for(i = 0; i < maxTotalMapSets; i++)
+			for(i = 0; i < 64; i++)
 			{
-				voteCount = countVote(i);
+				voteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
 				if(voteCount >= highestVote && voteCount != 0)
 				{
 					if(voteCount > highestVote)
@@ -470,7 +478,8 @@ Script "Lexicon_VoteTally" (void)
 						ClearWinners();
 						winners = 0;
 					}
-					winningSets[winners][0] = i;
+					winningSets[winners][0] = PlayerVotes[i][0];
+					winningSets[winners][1] = PlayerVotes[i][1];
 					winners++;
 					highestVote = voteCount;
 				}
@@ -481,7 +490,7 @@ Script "Lexicon_VoteTally" (void)
 			//Prevent ties from changing the map immediately
 			if(!tie && voteTimeLimit > 0)
 			{
-				pickedMapSet = pickWinner();		
+				pickedMapSet = pickWinner()-1;		
 				disableTerminal = true;
 				for(i = 0; i < 64; i++)
 				{
@@ -492,14 +501,6 @@ Script "Lexicon_VoteTally" (void)
 				SetPlayerProperty(1,1,PROP_TOTALLYFROZEN);
 				Delay(DEPLOYCOUNTDOWN + 35);
 				SetPlayerProperty(1,0,PROP_TOTALLYFROZEN);
-				SetCvar("Lexicon_GameType",0);
-				/*if(pickedMapSet >= MAXD2COOPSETS && !(pickedMapSet >= (MAXD2COOPSETS + MAXD1COOPSETS)))
-				{
-					if(strParam(s:returnMapString(99,pickedMapSet,1)) == "Ultimate Doom")
-						ChangeLevel("E1M1",0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
-					else
-						ChangeLevel(strParam(s:returnMapString(99,pickedMapSet,0),s:"E1M1"),0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
-				}*/
 				if(strParam(s:returnMapString(1,pickedMapSet,0)) == "Doom II")
 				{
 					if(GetCVar("lexicon_vanilla_mode") || isGameModded())

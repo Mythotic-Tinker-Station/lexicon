@@ -56,15 +56,15 @@ Script "Lexicon_TerminalExit" (int pln) NET
 //Switch the game type depending on the gametype of the chosen mapset
 Script "Lexicon_GameTypeChanger" (void)
 {
-	Switch(GetCvar("Lexicon_GameType"))
+	int currentGameMode = GetCvar("Lexicon_GameType");
+	if(isVR())
 	{
-		case 0:
-			if(GetCurrentGameMode() != "Cooperative")
-				SetCurrentGameMode("Cooperative");
-			break;
-		case 1:
-			if(GetCurrentGameMode() != "Survival")
-				SetCurrentGameMode("Survival");
-			break;
+		if(!stricmp(GetCurrentGameMode(),gameModeTypes[0][0]))
+			SetCurrentGameMode(gameModeTypes[0][0]);
+	}
+	else
+	{
+		if(!stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0]))
+			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
 	}
 }

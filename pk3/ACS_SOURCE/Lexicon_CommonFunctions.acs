@@ -42,13 +42,25 @@ function bool Doom1Enabled(void)
 //Check if Doom 2 map sets can be loaded
 function bool Doom2Enabled(void)
 {
-	return CheckFont("BRICK11");
+	return isUsingWadSmoosh() || (CheckFont("BRICK11") && !(CheckFont("CRWDL6C") || CheckFont("MOSROK2")));
 }
 
-//Check if slaughter maps can be loaded
-function bool SlaughterMapsEnabled(void)
+//Check if TNT map sets can be loaded
+function bool TNTEnabled(void)
 {
-	return CheckFont("dsv10451");
+	return CheckFont("CRWDL6C");
+}
+
+//Check if Plutnoia map sets can be loaded
+function bool PlutoniaEnabled(void)
+{
+	return CheckFont("MOSROK2");
+}
+
+//Check for Doom complete. Usually just means checking multiple functions.
+function bool isUsingWadSmoosh(void)
+{
+	return Doom1Enabled() && TNTEnabled() && PlutoniaEnabled();
 }
 
 //Check if the player number of the activator is the same player connecting to the server
@@ -60,4 +72,24 @@ Script "checkClient" (int player) clientside
 Script "SetNetworkStringToClient" (int string) clientside
 {
 	SetCvarString("Lexicon_NetWorkStringTransfer",string);
+}
+
+function bool isDoom1wad(str text)
+{
+	return stricmp(text,"doom1")==0;
+}
+
+function bool isDoom2wad(str text)
+{
+	return stricmp(text,"doom2")==0;
+}
+
+function bool isTNTwad(str text)
+{
+	return stricmp(text,"tnt")==0;
+}
+
+function bool isPlutoniawad(str text)
+{
+	return stricmp(text,"plutonia")==0;
 }

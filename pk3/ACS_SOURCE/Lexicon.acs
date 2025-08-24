@@ -13,6 +13,11 @@ int disableTerminal;
 #include "Lexicon_VoteSystem.acs"
 #include "Lexicon_ActorSpawner.acs"
 
+Script "Lexicon_Official_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","OFFI",0);
+}
+
 //Enter script mostly designed for printing the vote text
 Script "Lexicon_Core_Enter" ENTER
 {
@@ -20,7 +25,7 @@ Script "Lexicon_Core_Enter" ENTER
 		terminate;	
 	
 	ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
-		
+			
 	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
 	{
 		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
@@ -31,12 +36,15 @@ Script "Lexicon_Core_Enter" ENTER
 
 Script "Lexicon_Core_Open" OPEN
 {
-	if(!isVR())
-		terminate;			
-		
 	//Determine if the current game type must change
 	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
+
+	if(!isVR())
+		terminate;	
 	
+	Delay(1);
+	if(isZdoom()) Delay(16);
+		
 	//Generate all the map data on the server
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
 	
@@ -59,12 +67,12 @@ Script "Lexicon_GameTypeChanger" (void)
 	int currentGameMode = GetCvar("Lexicon_GameType");
 	if(isVR())
 	{
-		if(!stricmp(GetCurrentGameMode(),gameModeTypes[0][0]))
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
 			SetCurrentGameMode(gameModeTypes[0][0]);
 	}
 	else
 	{
-		if(!stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0]))
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
 			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
 	}
 }

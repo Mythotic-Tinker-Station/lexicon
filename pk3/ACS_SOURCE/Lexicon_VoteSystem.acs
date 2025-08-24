@@ -124,6 +124,8 @@ Script "Lexicon_VoteInterface" (void) clientside
 	int uiElementHoverLast; //Same as before, but to prevent the sound/effects from spamming
 	
 	str typeName; //Internal strings that's used for getting interface text from some place
+	int messageid; //Internal message id for mapset pagination objects
+	int i; //For loops
 	
 	//Select the first selectable map type and query
 	selectedGameMode = findNextGameType(-1);
@@ -296,62 +298,82 @@ Script "Lexicon_VoteInterface" (void) clientside
 		pagination = pageOffset * MAXCOLS * MAXROWS;
 		SetHudSize(imagesHudX,imagesHudY,false);
 		//Draw map set boxes
-		for(int i = pagination; i < pagination + 12; i++)
+		if(queriedMapSetCount > 0)
 		{
-			int messageid = 122 + (i - pagination);
-			SetHudSize(imagesHudX,imagesHudY,false);
-			if(i < queriedMapSetCount)
+			for(i = pagination; i < pagination + 12; i++)
 			{
-				//Increment the row for every MAXCOLS boxes
-				if(i % MAXCOLS == 0)
-					rowincrementor++;
-				
-				startingX = i % MAXCOLS == 0 ? rowStart : 0;
-				
-				posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-				posY = columnStart + setDistanceY * rowincrementor;
-				SetFont(strparam(s:returnMapString(0,i,1),s:"TN"));
-				HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageid+12, CR_UNTRANSLATED, posX, posY, 0.0);
-				
-				int mapPackSelected = checkConfines(cursorX, cursorY, (posX>>16) - (IMAGEX/2), (posX>>16) + (IMAGEX/2), (posY>>16) - (IMAGEY/2), (posY>>16) + (IMAGEY/2), uiScaleToImageScaleX, uiScaleToImageScaleY);
-					
-				if(mapPackSelected)
+				RemoveMessages(109,109);
+				messageid = 122 + (i - pagination);
+				SetHudSize(imagesHudX,imagesHudY,false);
+				if(i < queriedMapSetCount)
 				{
-					SetFont("LEXBORDR");
-					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 121, CR_UNTRANSLATED, posX, posY, 0.0);
+					//Increment the row for every MAXCOLS boxes
+					if(i % MAXCOLS == 0)
+						rowincrementor++;
 					
-					uiElementHover = 4+(i - pagination);
-					if(uiElementHover != uiElementHoverLast) 
-						LocalAmbientSound("Lexicon/Hover",127);	
+					startingX = i % MAXCOLS == 0 ? rowStart : 0;
+					
+					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
+					posY = columnStart + setDistanceY * rowincrementor;
+					SetFont(strparam(s:returnMapString(0,i,1),s:"TN"));
+					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageid+12, CR_UNTRANSLATED, posX, posY, 0.0);
+					
+					int mapPackSelected = checkConfines(cursorX, cursorY, (posX>>16) - (IMAGEX/2), (posX>>16) + (IMAGEX/2), (posY>>16) - (IMAGEY/2), (posY>>16) + (IMAGEY/2), uiScaleToImageScaleX, uiScaleToImageScaleY);
 						
-					if(Lclicking)
+					if(mapPackSelected)
 					{
-						if(!isZDoom())
-							NamedRequestScriptPuke("Lexicon_AddVote",PlayerNum,returnQuery(i),selectedGameMode);
-						else
-							addVote(PlayerNum,returnQuery(i),selectedGameMode);
-														
-						LocalAmbientSound("Lexicon/Select",127);
+						SetFont("LEXBORDR");
+						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 121, CR_UNTRANSLATED, posX, posY, 0.0);
+						
+						uiElementHover = 4+(i - pagination);
+						if(uiElementHover != uiElementHoverLast) 
+							LocalAmbientSound("Lexicon/Hover",127);	
+							
+						if(Lclicking)
+						{
+							if(!isZDoom())
+								NamedRequestScriptPuke("Lexicon_AddVote",PlayerNum,returnQuery(i),selectedGameMode);
+							else
+								addVote(PlayerNum,returnQuery(i),selectedGameMode);
+															
+							LocalAmbientSound("Lexicon/Select",127);
+						}
+						if(Rclicking)
+						{
+							removeVote(PlayerNum);
+							LocalAmbientSound("Lexicon/Back",127);
+						}
 					}
-					if(Rclicking)
-					{
-						removeVote(PlayerNum);
-						LocalAmbientSound("Lexicon/Back",127);
-					}
+					
+					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
+					posY = columnStart + (setDistanceY * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
+					SetFont("LXSMALLFONT");
+					SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
+					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY, 0.0);
+					SetHudClipRect(0,0,0,0,0);	
+				}	
+				else
+				{
+					RemoveMessages(messageid,messageid);
+					RemoveMessages(messageid+12,messageid+12);
 				}
-				
-				posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-				posY = columnStart + (setDistanceY * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
-				SetFont("LXSMALLFONT");
-				SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
-				HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY, 0.0);
-				SetHudClipRect(0,0,0,0,0);	
-			}	
-			else
+			}
+		}
+		else
+		{
+			for(i = 0; i < 9; i++)
 			{
+				messageid = 122 + (i - pagination);
 				RemoveMessages(messageid,messageid);
 				RemoveMessages(messageid+12,messageid+12);
 			}
+		
+			SetFont("LXSMALLFONT");
+			SetHudSize(hudcenterx,hudcentery,0);
+			posX = (hudcenterX/2) << 16;
+			posY = intFloat(hudcenterY * 0.25);
+			
+			HudMessage(s:"No mapsets can be found under your search criteria with the IWAD you have loaded..."; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconLightGray", posX, posY, 0.0);
 		}
 		
 		//Clear frame from image if not hovered over one
@@ -382,9 +404,11 @@ Script "Lexicon_VoteTextDisplay" (int time) clientside
 {
 	SetFont("LXBIGFONT");
 	str VoteText = "";
+	int votesForAll = 0;
 	for(int i = 0; i < 64; i++)
 	{
 		if(playerVotes[i][0] == 0) continue;
+		votesForAll = 1;
 		int voteCount = countVote(i,PlayerVotes[i][0],PlayerVotes[i][1]);
 		if(voteCount == 0)
 		{
@@ -397,7 +421,7 @@ Script "Lexicon_VoteTextDisplay" (int time) clientside
 		}
 	}
 	
-	if(time < WAITTIMER)
+	if(time < WAITTIMER && votesForAll > 0)
 	{
 		int minute = time/(35*60);
 		int second = (time/(35)) % 60;
@@ -422,7 +446,7 @@ Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 	{
 		int second = (deployTimer/(35)) % 60;
 		SetFont("LXSMALLFONT");	
-		HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\cf",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0);
+		HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\c[LexiconGold]",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\c[LexiconGold]",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0);
 		SetFont("LXBIGFONT");
 		HudMessage(d:second+1; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.05, 1.0);	
 		deployTimer--;
@@ -430,7 +454,7 @@ Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 	}
 	
 	SetFont("LXSMALLFONT");	
-	HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\cf",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\cf",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0, 1.0);
+	HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\c[LexiconGold]",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\c[LexiconGold]",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0, 1.0);
 	SetFont("LXBIGFONT");
 	HudMessage(d:0; HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.0, 1.0);	
 	
@@ -470,22 +494,27 @@ Script "Lexicon_VoteTally" (void)
 			int winners = 0;
 			for(i = 0; i < 64; i++)
 			{
-				voteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
-				if(voteCount >= highestVote && voteCount != 0)
+				if(playerVotes[i][0] == 0) continue;
+				int uniqueVoteCount = countVote(i,PlayerVotes[i][0],PlayerVotes[i][1]);
+				if(uniqueVoteCount == 0)
 				{
-					if(voteCount > highestVote)
+					voteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
+					if(voteCount >= highestVote && voteCount != 0)
 					{
-						ClearWinners();
-						winners = 0;
+						if(voteCount > highestVote)
+						{
+							ClearWinners();
+							winners = 0;
+						}
+						winningSets[winners][0] = PlayerVotes[i][0];
+						winningSets[winners][1] = PlayerVotes[i][1];
+						winners++;
+						highestVote = voteCount;
 					}
-					winningSets[winners][0] = PlayerVotes[i][0];
-					winningSets[winners][1] = PlayerVotes[i][1];
-					winners++;
-					highestVote = voteCount;
 				}
 			}
 			//If there is a tie, set a value for it
-			tie = winners > 1;
+			tie = winners != 1;
 			
 			//Prevent ties from changing the map immediately
 			if(!tie && voteTimeLimit > 0)
@@ -501,20 +530,41 @@ Script "Lexicon_VoteTally" (void)
 				SetPlayerProperty(1,1,PROP_TOTALLYFROZEN);
 				Delay(DEPLOYCOUNTDOWN + 35);
 				SetPlayerProperty(1,0,PROP_TOTALLYFROZEN);
-				if(strParam(s:returnMapString(1,pickedMapSet,0)) == "Doom II")
+				
+				//Determine the level name needed
+				str iwad = strParam(s:"LEX_",s:returnMapString(0,pickedMapSet,0),s:"_IWAD");
+				str append = isDoom1wad(iwad) ? "E1M1" : "01";
+				str level = strParam(s:returnMapString(1,pickedMapSet,0)); //In this case, we're taking the mapset name
+				if(level == "Doom II")
+					level = "MAP01";	
+				else if(strParam(s:returnMapString(1,pickedMapSet,0)) == "Ultimate Doom")
+					level = "E1M1";
+				else if(level == "TNT: Evilution")
 				{
-					if(GetCVar("lexicon_vanilla_mode") || isGameModded())
-						ChangeLevel("MAP01",0,CHANGELEVEL_NOINTERMISSION,-1);
+					if(isUsingWadSmoosh())
+						level = "TN_MAP01";
 					else
-						ChangeLevel("MAP01",0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+						level = "MAP01";
+				}
+				else if(level == "The Plutonia Experiment")
+				{
+					if(isUsingWadSmoosh())
+						level = "PL_MAP01";
+					else
+						level = "MAP01";
 				}
 				else
-				{
-					if(GetCVar("lexicon_vanilla_mode") || isGameModded())
-						ChangeLevel(strParam(s:returnMapString(0,pickedMapSet,0),s:"01"),0,CHANGELEVEL_NOINTERMISSION,-1);
-					else
-						ChangeLevel(strParam(s:returnMapString(0,pickedMapSet,0),s:"01"),0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
-				}
+					level = strParam(s:returnMapString(0,pickedMapSet,0),s:append);
+				
+				//Now that none of this should be relying on the these anymore, we can clear them for the next map
+				for(i = 1; i < MAXEXPANSIONS+1; i++)
+					SetCvarString(strParam(s:"LEXICON_MAPSET_",d:i),"");
+				
+				//Now set the map
+				if(GetCVar("lexicon_vanilla_mode") || isGameModded())
+					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION,-1);
+				else
+					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
 			}
 		}
 		Delay(1);

@@ -5,6 +5,7 @@ int maxTotalMapSets;
 int processedMapSets;
 int mapTypesParsed;
 int MapSetsParsed;
+int mapSetAdder;
 
 //These contain a pool of types that can actually be selected. If you're not using Doom.Wad, for example, don't enable Doom 1 wads
 int enabledSetTypes[MAXEXPANSIONS] = {};
@@ -12,6 +13,10 @@ int enabledSetTypes[MAXEXPANSIONS] = {};
 //Call this script from any module/addon pack with the name of your pack. You can include more than 1, if you wish.
 Script "Lexicon_AddMapSet" (int concat, int priority)
 {
+	if(!isVR()) terminate;
+
+	mapSetAdder++;
+	if(isZdoom()) Delay(mapSetAdder);
 	str cvarString = StrParam(s:"LEXICON_MAPSET_",d:priority+1);
 	if(strLen(GetCvarString(cvarString))!=0)
 	{
@@ -26,8 +31,10 @@ Script "Lexicon_AddMapSet" (int concat, int priority)
 		}
 	}
 	else
+	{
 		SetCvarString(cvarString,concat);
-				
+	}
+					
 	mapTypesParsed++;
 }
 
@@ -35,12 +42,12 @@ Script "Lexicon_AddMapSet" (int concat, int priority)
 function void reorganizeSets (void)
 {
 	int currentLowest = 1;
-	for(int i = 0; i < MAXEXPANSIONS; i++)
+	for(int i = 1; i < MAXEXPANSIONS+1; i++)
 	{
-		str mapSetsText = GetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1));
+		str mapSetsText = GetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i));
 		if(strlen(mapSetsText) > 0)
 		{
-			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1),"");
+			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i),"");
 			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:currentLowest),mapSetsText);
 			currentLowest++;
 		}
@@ -58,7 +65,7 @@ function void generateLexiconMapSetTypes (void)
 		str mapSetsText = GetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1));
 		if(strlen(mapSetsText) == 0) break;
 		else
-		{
+		{	
 			existingMapSetTypes[i] = mapSetsText;
 			enabledSetTypes[i] = true;
 		}
@@ -82,6 +89,8 @@ function void buildMapSets (void)
 function void clearLexiconMapSetTypes (void)
 {
 	maxSetTypes = 0;
+	processedMapSets = 0;
+	maxTotalMapSets = 0;
 	for(int i = 0; i < MAXEXPANSIONS; i++)
 	{
 		existingMapSetTypes[i] = "";
@@ -103,8 +112,14 @@ function void addLexiconMapSets (void)
 			str mapset = strparam(s:"LEX_",s:existingMapSetTypes[i],s:"_",d:j);
 			if(returnLanguageText(mapset) != "UNDEFINED")
 			{
-				MapSetPool[processedMapSets] = strParam(l:mapset);
-				processedMapSets++;
+				str iwad = returnLanguageText(strParam(s:returnLanguageText(mapset),s:"_MAPSET_IWAD"));
+				if(stricmp(iwad,"UNDEFINED")==0) 
+					iwad = "doom2";
+				if((isDoom1wad(iwad) && Doom1Enabled()) || (isDoom2wad(iwad) && Doom2Enabled()) || (isTNTwad(iwad) && TNTEnabled())|| (isPlutoniawad(iwad) && PlutoniaEnabled()))
+				{
+					MapSetPool[processedMapSets] = strParam(l:mapset);
+					processedMapSets++;
+				}
 			}
 			else break;
 		}

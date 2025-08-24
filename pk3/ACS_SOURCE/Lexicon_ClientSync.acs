@@ -8,8 +8,10 @@ Script "Lexicon_SyncClientData" (void)
 {
 	int i = 0;
 	//We don't need to do this in singleplayer
-	//if(SinglePlayer()) terminate;
+	if(SinglePlayer()) terminate;
 		
+	Delay(1);	
+	
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client");
 		

@@ -60,8 +60,8 @@ function int returnQuery(int mapset)
 {
 	int result = 0;
 	for(int i = 0; i < maxTotalMapSets; i++)
-	{
-		if(stricmp(returnMapString(0,mapset,0),MapSetPool[i]) == 0)
+	{	
+		if(stricmp(returnMapString(0,mapset,1),MapSetPool[i]) == 0)
 			return i;
 	}
 	return result;

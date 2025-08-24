@@ -160,17 +160,21 @@ Script "Lexicon_VoteInterface" (void) clientside
 				
 		//Clamp UI elements into this space
 		SetHudClipRect(mouseCursorBorderLeft,mouseCursorBorderTop,mouseCursorBorderRight-mouseCursorBorderLeft,mouseCursorBorderBottom-mouseCursorBorderTop);
-				
-		//Draw fancy divider between the options at the top and the selectables
 		SetHudSize(hudboundsx,hudboundsy,false);
-		SetFont("LEXBTOP");
-		posX = intFloat(hudboundsx*0.1);
-		posY = intFloat(hudboundsy*0.15);
-		HudMessage(s:"aaaaa"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 150, CR_UNTRANSLATED, posX + 0.1, posY, 0.0);	
+		
+		//Draw the background
+		SetFont("LEXBACKG");
+		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 160, CR_UNTRANSLATED, 0.1, 0.1, 0.0, 0.25);	
 		
 		//Set the rectangle back
 		SetHudClipRect(0,0,0,0);
-		
+
+		//Draw fancy divider between the options at the top and the selectables
+		SetFont("LEXBORD2");
+		posX = intFloat(hudboundsx*0.125) + 0.1;
+		posY = intFloat(hudboundsy*0.18) + 0.1;
+		drawBorder(posX, posY, 1, 155, intFloat(hudboundsx*0.75)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+
 		//Draw cursor
 		SetHudSize(hudboundsx,hudboundsy,false);
 		SetFont("CURSOR");
@@ -322,8 +326,8 @@ Script "Lexicon_VoteInterface" (void) clientside
 						
 					if(mapPackSelected)
 					{
-						SetFont("LEXBORDR");
-						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 121, CR_UNTRANSLATED, posX, posY, 0.0);
+						SetFont("LEXIUI");
+						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 121, "LexiconGold", posX, posY, 0.0);
 						
 						uiElementHover = 4+(i - pagination);
 						if(uiElementHover != uiElementHoverLast) 
@@ -344,7 +348,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 							LocalAmbientSound("Lexicon/Back",127);
 						}
 					}
-					
+						
 					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
 					posY = columnStart + (setDistanceY * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
 					SetFont("LXSMALLFONT");
@@ -396,7 +400,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 	}
 	else NamedRequestScriptPuke("Lexicon_TerminalExit",PlayerNumber(),0,0,0);
 
-	RemoveMessages(100,150);
+	RemoveMessages(100,160);
 }
 
 //Clientside script to show current vote tallies
@@ -437,7 +441,7 @@ Script "Lexicon_VoteTextDisplay" (int time) clientside
 //Behavior for clients when the map set has been chosen
 Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 {
-	RemoveMessages(100,150);
+	RemoveMessages(100,160);
 	disableTerminal = true;
 	int deployTimer = DEPLOYCOUNTDOWN;
 	

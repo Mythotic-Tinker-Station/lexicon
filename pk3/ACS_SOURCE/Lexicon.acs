@@ -65,13 +65,21 @@ Script "Lexicon_TerminalExit" (int pln) NET
 Script "Lexicon_GameTypeChanger" (void)
 {
 	int currentGameMode = GetCvar("Lexicon_GameType");
+	int isCoop = currentGameMode == 0 || currentGameMode == 1;
 	if(isVR())
 	{
+		SetGameplaySetting("SV_NOEXIT",false);
+		SetGameplaySetting("Fraglimit",0);	
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
 			SetCurrentGameMode(gameModeTypes[0][0]);
 	}
 	else
 	{
+		SetGameplaySetting("SV_NOEXIT",!isCoop);
+		
+		if(!isCoop && GetCvar("FragLimit") == 0)
+			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));	
+					
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
 			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
 	}

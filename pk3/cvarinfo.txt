@@ -2,6 +2,30 @@ server bool lexicon_vanilla_mode = false;
 server noarchive bool lexicon_no_music_changes = false;
 server noarchive int lexicon_iwad = 0;
 
+server noarchive int Lexicon_GameType = 0;
+server noarchive int Lexicon_TotalMapSets = 0;
+
+//Default settings for some game modes - useful for people that didn't really plan ahead to make a coop session a deathmatch one and vice versa
+server int Lexicon_DefaultFragLimit = 30;
+
+//I don't want to have to send these over the network. I got no choice, from the way I see it
+server noarchive string LEXICON_MAPSET_1;
+server noarchive string LEXICON_MAPSET_2;
+server noarchive string LEXICON_MAPSET_3;
+server noarchive string LEXICON_MAPSET_4;
+server noarchive string LEXICON_MAPSET_5;
+server noarchive string LEXICON_MAPSET_6;
+server noarchive string LEXICON_MAPSET_7;
+server noarchive string LEXICON_MAPSET_8;
+server noarchive string LEXICON_MAPSET_9;
+server noarchive string LEXICON_MAPSET_10;
+server noarchive string LEXICON_MAPSET_11;
+server noarchive string LEXICON_MAPSET_12;
+server noarchive string LEXICON_MAPSET_13;
+server noarchive string LEXICON_MAPSET_14;
+server noarchive string LEXICON_MAPSET_15;
+server noarchive string LEXICON_MAPSET_16;
+
 /*
 // Unused for now
 user string lexicon_cursor_color 					= "Azure";

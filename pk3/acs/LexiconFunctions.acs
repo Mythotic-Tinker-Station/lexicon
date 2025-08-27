@@ -1,58 +1,13 @@
-#define MAX_EXPANSIONS 16
-#define MAX_MAPSETS 1024
+str vanillaDoomWeaponArray[9] = { "Fist", "Pistol", "Chainsaw", "Shotgun", "SuperShotgun", "Chaingun", "RocketLauncher", "PlasmaRifle", "BFG9000" };
+str vanillaChexWeaponArray[9] = { "Bootspoon", "MiniZorcher", "SuperBootspork", "LargeZorcher", "SuperLargeZorcher", "RapidZorcher", "ZorchPropulsor", "PhasingZorcher", "LAZDevice" };
+str vanillaHereticWeaponArray[9] = { "Staff", "GoldWand", "Gauntlets", "Crossbow", "Blaster", "SkullRod", "PhoenixRod", "Mace" };
+str vanillaHexenCWeaponArray[4] = { "CWeapMace", "CWeapStaff", "CWeapFlame", "WeapWraithverge" };
+str vanillaHexenFWeaponArray[4] = { "FWeapFist", "FWeapAxe", "FWeapHammer", "FWeapQuietus" };
+str vanillaHexenMWeaponArray[4] = { "MWeapWand", "MWeapFrost", "MWeapLightning", "MWeapBloodscourge" };
 
-str expansions[MAX_EXPANSIONS];
-str mapSetsAcronym[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsTitle[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsAuthors[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsMaps[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsDate[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsCustom[MAX_EXPANSIONS][MAX_MAPSETS];
-str mapSetsThumbnail[MAX_EXPANSIONS][MAX_MAPSETS];
-
-int expansionCount = 0;
-int expansionTotalCount = 0;
-int mapSetCount = 0;
-int mapSetTotalCount[MAX_EXPANSIONS];
-bool mapSetIsSelected = false;
-str selectedMapSet = "";
-
-function void initiateLexiconMaps(void)
-{
-	for (int i = 1; i < MAX_EXPANSIONS; i++)
-	{
-		expansions[expansionCount] = getDynLangEntry2("ADD", "MAPSET", strparam(i:i), strparam(i:1));
-
-		if (expansions[expansionCount] != "_LANG_UNDEFINED_")
-		{
-			for (int j = 1; j < MAX_MAPSETS; j++)
-			{
-				mapSetsAcronym[expansionCount][mapSetCount] = getDynLangEntry2("ADD", "MAPSET", strparam(i:i), strparam(i:j));
-
-				if (mapSetsAcronym[expansionCount][mapSetCount] != "_LANG_UNDEFINED_")
-				{
-					mapSetsTitle[expansionCount][mapSetCount] = getDynLangEntry(mapSetsAcronym[expansionCount][mapSetCount], "MAPSET", "TITLE");
-					mapSetsAuthors[expansionCount][mapSetCount] = getDynLangEntry(mapSetsAcronym[expansionCount][mapSetCount], "MAPSET", "AUTHORS");
-					mapSetsMaps[expansionCount][mapSetCount] = getDynLangEntry(mapSetsAcronym[expansionCount][mapSetCount], "MAPSET", "MAPS");
-					mapSetsDate[expansionCount][mapSetCount] = getDynLangEntry(mapSetsAcronym[expansionCount][mapSetCount], "MAPSET", "DATE");
-					mapSetsCustom[expansionCount][mapSetCount] = getDynLangEntry(mapSetsAcronym[expansionCount][mapSetCount], "MAPSET", "CUSTOM");
-
-					if (CheckFont(strparam(s:mapSetsAcronym[expansionCount][mapSetCount], s:"TN"))) 
-					{
-						mapSetsThumbnail[expansionCount][mapSetCount] = StrParam(s:mapSetsAcronym[expansionCount][mapSetCount], s:"TN"); 
-					}
-					else { mapSetsThumbnail[expansionCount][mapSetCount] = "BLNKTN"; }
-					mapSetCount++;
-				}
-			}
-			expansionCount++;
-			expansionTotalCount++;
-			mapSetTotalCount[expansionTotalCount-1] = mapSetCount;
-		}
-		mapSetCount = 0;
-	}
-	expansionCount = 0;
-}
+int vanillaDoomAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaChexAmmoCapacityArray[4] = { 200, 50, 50, 300 };
+int vanillaHereticAmmoCapacityArray[6] = { 100, 50, 150, 200, 200, 20 };
 
 function str getDynLangEntry(str p1, str p2, str p3)
 {
@@ -177,6 +132,118 @@ script "XCDE_StoreSpecial2" (int args2, int args3, int args4)
 	_args2 = args2;
 	_args3 = args3;
 	_args4 = args4;
+}
+
+function void addLexiconInventory(str mapset, int i, int j)
+{
+	str weaponActor = getDynLangEntry(mapset, "WEAPON", strparam(i:i));
+	if(weaponActor != "_LANG_UNDEFINED_") { GiveInventory(weaponActor, 1); }
+	if (j > 0) { SetWeapon(weaponActor); }
+
+	switch(i)
+	{
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
+	}
+}
+
+function void addLexiconVanillaInventory(int i, int j)
+{
+	switch(GetCVar("lexicon_iwad"))
+	{
+	case 0:
+		GiveInventory(vanillaDoomWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaDoomWeaponArray[i-1]); }
+		break;
+	case 1:
+		GiveInventory(vanillaChexWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaChexWeaponArray[i-1]); }
+		break;
+	case 2:
+		GiveInventory(vanillaHereticWeaponArray[i-1], 1);
+		if (j > 0) { SetWeapon(vanillaHereticWeaponArray[i-1]); }
+		break;
+	}
+
+	switch(i)
+	{
+		case 2:
+			TakeInventory("Clip", 20);
+			break;
+		case 4:
+			TakeInventory("Shell", 8);
+			break;
+		case 5:
+			TakeInventory("Shell", 8);
+			break;
+		case 6:
+			TakeInventory("Clip", 20);
+			break;
+		case 7:
+			TakeInventory("RocketAmmo", 2);
+			break;
+		case 8:
+			TakeInventory("Cell", 40);
+			break;
+		case 9:
+			TakeInventory("Cell", 40);
+			break;
+	}
+}
+
+function void addLexiconAmmo(void)
+{
+	switch(GetCVar("lexicon_iwad"))
+	{
+	case 0:
+		GiveInventory("Clip", 50);
+		break;
+	case 1:
+		GiveInventory("MiniZorchRecharge", 50);
+		break;
+	case 2:
+		GiveInventory("GoldWandAmmo", 50);
+		break;
+	}
+}
+
+function void getLexiconIwad(void)
+{
+	int checkerTid = UniqueTid();
+	int iwadTid = UniqueTid();
+	SpawnForced("LexiconGameTokenChecker", 0.0 , 0.0, 0.0, iwadTid);
+	Thing_SpawnNoFog(iwadTid, 240, 0, checkerTid);
+
+	if(GetActorClass(iwadTid) == "LexiconGameTokenChex")
+		SetCVar("lexicon_iwad", 1);
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHeretic")
+		SetCVar("lexicon_iwad", 2);
+	else if(GetActorClass(iwadTid) == "LexiconGameTokenHexen")
+		SetCVar("lexicon_iwad", 3);
+	else
+		SetCVar("lexicon_iwad", 0);
+
+	Thing_Remove(iwadTid);
+	Thing_Remove(checkerTid);
 }
 
 // sort an array of integers

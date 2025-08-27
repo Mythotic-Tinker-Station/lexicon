@@ -1,14 +1,21 @@
 [enu default]
-LEXICON_UI_NO_MAPSETS = "No mapsets or expansion packs found!";
-LEXICON_UI_AUTHORS = "Authors: ";
-LEXICON_UI_MAPS = "Maps: ";
-LEXICON_UI_DATE = "Year: ";
-LEXICON_UI_CUSTOM = "Custom Actors: ";
-LEXICON_UI_CUSTOM_YES = "Yes";
-LEXICON_UI_CUSTOM_NO = "No";
-LEXICON_UI_SELECTED = " Selected";
-LEXICON_UI_PRESS_PROMPT_1 = "Press ";
-LEXICON_UI_PRESS_PROMPT_2 = " to switch expansion packs. ";
-LEXICON_UI_PRESS_PROMPT_3 = " to switch mapsets. ";
-LEXICON_UI_PRESS_PROMPT_4 = " to select mapsets. ";
-LEXICON_UI_PRESS_PROMPT_5 = " to exit the menu. ";
+LEX_OFFI_PACKNAME = "Official Mapsets";
+LEX_OFFI_GAMETYPE = "COOP";
+
+LEX_OFFI_1 = "IDD1";
+LEX_OFFI_2 = "IDD2";
+LEX_OFFI_3 = "IDD3";
+LEX_OFFI_4 = "IDD4";
+
+IDD1_MAPSET_IWAD = "doom1";
+IDD1_MAPSET_PACK = "OFFI";
+IDD1_MAPSET_TITLE = "Ultimate Doom";
+IDD2_MAPSET_IWAD = "doom2";
+IDD2_MAPSET_PACK = "OFFI";
+IDD2_MAPSET_TITLE = "Doom II";
+IDD3_MAPSET_IWAD = "tnt";
+IDD3_MAPSET_PACK = "OFFI";
+IDD3_MAPSET_TITLE = "TNT: Evilution";
+IDD4_MAPSET_IWAD = "plutonia";
+IDD4_MAPSET_PACK = "OFFI";
+IDD4_MAPSET_TITLE = "The Plutonia Experiment";

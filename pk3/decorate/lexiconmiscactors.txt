@@ -80,3 +80,17 @@ Actor LexiconGameTokenHexen
 			Stop
 	}
 }
+
+Actor LexiconTerminalOpen : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}
+
+Actor LexiconTerminalExit : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}

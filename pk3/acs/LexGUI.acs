@@ -1,0 +1,111 @@
+#library "LEXGUI"
+#include "zcommon.acs"
+
+/*
+VERY IMPORTANT: Compile this with ACC, not BCC!
+*/
+
+#DEFINE MAXMAPSETSPERPACK 256
+#DEFINE MAXEXPANSIONS 8
+
+int disableTerminal;
+
+#include "LexiconCompat.acs"
+
+#include "LexiconGUI_CommonFunctions.acs"
+#include "LexiconGUI_SetParser.acs"
+#include "LexiconGUI_MapManagement.acs"
+#include "LexiconGUI_ClientSync.acs"
+#include "LexiconGUI_VoteSystem.acs"
+
+Script "Lexicon_Official_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","OFFI",0);
+}
+
+//Enter script mostly designed for printing the vote text
+Script "Lexicon_Core_Enter" ENTER
+{
+	if(!isVR())
+		terminate;	
+	
+	ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
+			
+	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
+	{
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
+
+		Delay(1);
+	}
+}
+
+Script "Lexicon_Core_Open" OPEN
+{
+	//Determine if the current game type must change
+	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
+
+	if(!isVR())
+		terminate;	
+	
+	Delay(1);
+	if(isZdoom()) Delay(16);
+		
+	//Generate all the map data on the server
+	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
+	
+	//Then run the script to count votes
+	ACS_NamedExecuteWithResult("Lexicon_VoteTally");
+}
+
+
+//Run this only in Zandronum
+Script "Lexicon_TerminalExit" (int pln) NET
+{
+	SetActivator(pln);
+	if(!(Classifyactor(0) & ACTOR_ALIVE))
+		TakeInventory("LexiconTerminalExit",1);
+}
+
+//Switch the game type depending on the gametype of the chosen mapset
+Script "Lexicon_GameTypeChanger" (void)
+{
+	int currentGameMode = GetCvar("Lexicon_GameType");
+	int isCoop = currentGameMode == 0 || currentGameMode == 1;
+	if(isVR())
+	{
+		SetGameplaySetting("SV_NOEXIT",false);
+		SetGameplaySetting("Fraglimit",0);	
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
+			SetCurrentGameMode(gameModeTypes[0][0]);
+	}
+	else
+	{
+		SetGameplaySetting("SV_NOEXIT",!isCoop);
+		
+		if(!isCoop && GetCvar("FragLimit") == 0)
+			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));	
+					
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
+			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
+	}
+}
+
+Script "Lexicon_InGame" (int arg1)
+{
+	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
+
+	/*
+	if(mapFlagInfiniteAmmo == "Y")
+	{
+		while(1)
+		{
+			GiveInventory("PowerInfiniteAmmo", 1);
+			Delay(1);
+		}
+	}
+	*/
+}
+
+Script "Lexicon_InGame_Enter" enter { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }
+Script "Lexicon_InGame_Respawn" respawn { ACS_NamedExecuteWithResult("Lexicon_InGame", 1,0,0); }
+Script "Lexicon_InGame_Return" return { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }

@@ -96,9 +96,32 @@ Script "Lexicon_InGame" (int arg1)
 		terminate;
 
 	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	int mapsetWeapon1 = getDynLangEntry(mapsetAcronym, "WEAPON", "1");
+	int mapsetWeapon2 = getDynLangEntry(mapsetAcronym, "WEAPON", "2");
 	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
+	
+	if (!CheckInventory("LexiconInventoryGiven"))
+	{
+		if(GetCVar("lexicon_iwad") == 0)
+		{
+			if(!GetCVar("lexicon_vanilla_mode") && !isGameModded())
+			{
+				ClearInventory();
+				if (mapsetWeapon1 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon1, 1); }
+				else { GiveInventory("Fist", 1); }
+				
+				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon2, 1); }
+				else { GiveInventory("Pistol", 1); }
+				
+				GiveInventory("LexiconClipGive", 30);
+				GiveInventory("LexiconInventoryGiven", 1);
+				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { SetWeapon(mapsetWeapon2); }
+				else { SetWeapon("Pistol"); }		
+			}
+		}
+	}
 
 	if (mapsetInfiniteAmmo == "Y")
 	{

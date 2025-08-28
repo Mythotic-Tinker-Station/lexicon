@@ -560,33 +560,13 @@ Script "Lexicon_VoteTally" (void)
 				else
 					level = strParam(s:returnMapString(0,pickedMapSet,0),s:append);
 				
-				//Give the players custom starting equipment if needed
-				str playerWeapon1 = strParam(s:returnMapString(20,pickedMapSet,0));
-				str playerWeapon2 = strParam(s:returnMapString(21,pickedMapSet,0));
-				
-				if(GetCVar("lexicon_iwad") == 0)
-				{
-					if(!GetCVar("lexicon_vanilla_mode") && !isGameModded())
-					{
-						ClearInventory();
-						if (playerWeapon1 != "UNDEFINED") { GiveInventory(playerWeapon1, 1); }
-						else { GiveInventory("Fist", 1); }
-
-						if (playerWeapon2 != "UNDEFINED") { GiveInventory(playerWeapon2, 1); }
-						else { GiveInventory("Pistol", 1); }
-
-						GiveInventory("LexiconClipGive", 30);
-						if (playerWeapon2 != "UNDEFINED") { SetWeapon(playerWeapon2); }
-						else { SetWeapon("Pistol"); }		
-					}
-				}
-				
 				//Now that none of this should be relying on the these anymore, we can clear them for the next map
 				for(i = 1; i < MAXEXPANSIONS+1; i++)
 					SetCvarString(strParam(s:"LEXICON_MAPSET_",d:i),"");
 				
 				TakeInventory("LexiconTerminalOpen", 1);
 				TakeInventory("LexiconTerminalExit", 1);
+				TakeInventory("LexiconInventoryGiven", 1);
 				
 				//Now set the map
 				ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION,-1);

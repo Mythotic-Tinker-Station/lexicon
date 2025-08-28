@@ -30,68 +30,8 @@ function str returnMapString(int type, int id, int useQuery)
 			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_ACTORS"));
 			break;
 		//Return alternate map start
-		case 10:
+		case 5:
 			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_STARTINGMAP"));
-			break;
-		//Return ammo 1 capacity map flag
-		case 11:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO1CAPACITY"));
-			break;
-		//Return ammo 2 capacity map flag
-		case 12:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO2CAPACITY"));
-			break;
-		//Return ammo 3 capacity map flag
-		case 13:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO3CAPACITY"));
-			break;
-		//Return ammo 4 capacity map flag
-		case 14:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO4CAPACITY"));
-			break;
-		//Return ammo 5 capacity map flag
-		case 15:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO5CAPACITY"));
-			break;
-		//Return ammo 6 capacity map flag
-		case 16:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPFLAG_AMMO6CAPACITY"));
-			break;
-		//Return weapon 1
-		case 20:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_1"));
-			break;
-		//Return weapon 2
-		case 21:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_2"));
-			break;
-		//Return weapon 3
-		case 22:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_3"));
-			break;
-		//Return weapon 4
-		case 23:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_4"));
-			break;
-		//Return weapon 5
-		case 24:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_5"));
-			break;
-		//Return weapon 6
-		case 25:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_6"));
-			break;
-		//Return weapon 7
-		case 26:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_7"));
-			break;
-		//Return weapon 8
-		case 27:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_8"));
-			break;
-		//Return weapon 9
-		case 28:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_WEAPON_9"));
 			break;
 	}
 	return result;

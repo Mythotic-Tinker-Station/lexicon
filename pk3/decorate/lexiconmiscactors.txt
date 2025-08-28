@@ -95,4 +95,11 @@ Actor LexiconTerminalExit : Inventory
 	-INVBAR
 }
 
+Actor LexiconInventoryGiven : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}
+
 actor LexiconClipGive : Clip { +IGNORESKILL }

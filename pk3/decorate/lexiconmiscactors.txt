@@ -94,3 +94,5 @@ Actor LexiconTerminalExit : Inventory
 	+UNDROPPABLE
 	-INVBAR
 }
+
+actor LexiconClipGive : Clip { +IGNORESKILL }

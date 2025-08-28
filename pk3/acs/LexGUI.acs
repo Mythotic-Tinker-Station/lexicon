@@ -92,10 +92,15 @@ Script "Lexicon_GameTypeChanger" (void)
 
 Script "Lexicon_InGame" (int arg1)
 {
+	if(isVR())
+		terminate;
+
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
+
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 
-	/*
-	if(mapFlagInfiniteAmmo == "Y")
+	if (mapsetInfiniteAmmo == "Y")
 	{
 		while(1)
 		{
@@ -103,7 +108,6 @@ Script "Lexicon_InGame" (int arg1)
 			Delay(1);
 		}
 	}
-	*/
 }
 
 Script "Lexicon_InGame_Enter" enter { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }

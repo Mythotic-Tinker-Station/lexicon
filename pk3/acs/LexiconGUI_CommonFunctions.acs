@@ -14,6 +14,23 @@ function int RemoveMessages(int rangemin, int rangemax)
 	return 0;
 }
 
+function str getDynLangEntry(str p1, str p2, str p3)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
 //Scales should always be floats
 function int checkConfines(int cursorx, int cursory, int xl, int xr, int yl, int yr, int scaleX, int scaleY)
 {

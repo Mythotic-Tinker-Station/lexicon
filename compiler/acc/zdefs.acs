@@ -166,7 +166,6 @@
 #define BT_MOVEUP				262144
 #define BT_MOVEDOWN				524288
 #define BT_SHOWSCORES			1048576
-#define BT_RUN					33554432
 
 // Do whatever you want with these.
 #define BT_USER1				2097152
@@ -305,9 +304,6 @@
 #define APROP_MaxStepHeight 44
 #define APROP_MaxDropOffHeight 45
 #define APROP_DamageType	46
-#define APROP_SoundClass	47
-#define APROP_FriendlySeeBlocks 48
-#define APROP_WaterDepth 49
 
 // New to Eternity
 #define APROP_Counter0      100
@@ -361,7 +357,6 @@
 #define PLAYERINFO_PLAYERCLASS	7
 #define PLAYERINFO_FOV			8
 #define PLAYERINFO_DESIREDFOV	9
-#define PLAYERINFO_FVIEWBOB		10
 
 
 // Flags for ReplaceTextures ------------------------------------------------
@@ -757,8 +752,6 @@
 
 #define SDF_ABSANGLE			1
 #define SDF_PERMANENT			2
-#define SDF_FIXED_ZOFF			4
-#define SDF_FIXED_DISTANCE		8
 
 // Actor pointer selectors
 
@@ -782,6 +775,12 @@
 
 #DEFINE AAPTR_FRIENDPLAYER 0x4000
 #DEFINE AAPTR_GET_LINETARGET 0x8000
+#DEFINE AAPTR_PLAYER_GETCAMERA 0x8000000
+
+// [AK] Actor pointers used exclusively for GAMEEVENT_ACTOR_DAMAGED
+#DEFINE AAPTR_DAMAGE_SOURCE 0x10000000
+#DEFINE AAPTR_DAMAGE_INFLICTOR 0x40000000
+#DEFINE AAPTR_DAMAGE_TARGET 0x80000000
 
 // Actor pointer operation flags
 
@@ -910,6 +909,35 @@
 #define DB_ORDER_ASC			0
 #define DB_ORDER_DESC			1
 
+// Zandronum gamemode states ------------------------------------------------
+#define GAMESTATE_UNSPECIFIED		-1
+#define GAMESTATE_WAITFORPLAYERS	0
+#define GAMESTATE_COUNTDOWN		1
+#define GAMESTATE_INPROGRESS		2
+#define GAMESTATE_INRESULTSEQUENCE	3
+
+// Zandronum EVENT script types ---------------------------------------------
+#define GAMEEVENT_PLAYERFRAGS		0
+#define GAMEEVENT_MEDALS		1
+#define GAMEEVENT_CAPTURES		2
+#define GAMEEVENT_TOUCHES		3
+#define GAMEEVENT_RETURNS		4
+#define GAMEEVENT_ROUND_STARTS		5
+#define GAMEEVENT_ROUND_ENDS		6
+#define GAMEEVENT_ROUND_ABORTED		7
+#define GAMEEVENT_CHAT			8
+#define GAMEEVENT_PLAYERCONNECT		9
+#define GAMEEVENT_ACTOR_SPAWNED		10
+#define GAMEEVENT_ACTOR_DAMAGED		11
+#define GAMEEVENT_ACTOR_DAMAGED_PREMOD		12
+#define GAMEEVENT_DOMINATION_CONTROL		13
+#define GAMEEVENT_DOMINATION_POINT		14
+#define GAMEEVENT_PLAYERLEAVESSERVER	15
+#define GAMEEVENT_LEVEL_INIT		16
+#define GAMEEVENT_JOINQUEUECHANGED	17
+#define GAMEEVENT_DOMINATION_PRECONTROL	18
+#define GAMEEVENT_DOMINATION_CONTEST	19
+
 // Events when you have input grabbed
 
 #define EV_KeyDown				1	// data1: unshifted ASCII, data2: shifted ASCII
@@ -984,7 +1012,6 @@
 #define CHANGELEVEL_NOINTERMISSION 16
 #define CHANGELEVEL_RESETHEALTH	32
 #define CHANGELEVEL_PRERAISEWEAPON 64
-#define CHANGELEVEL_NOAUTOSAVE 128 // VKDoom
 
 #define NO_CHANGE 32767.0
 
@@ -1011,7 +1038,6 @@
 #define BLOCKF_SIGHT 256
 #define BLOCKF_HITSCAN 512
 #define BLOCKF_SOUND 1024
-#define BLOCKF_LANDMONSTERS 2048
 
 #define FOGP_DENSITY 0
 #define FOGP_OUTSIDEDENSITY 1
@@ -1106,11 +1132,6 @@
 #define QF_MAX			1 << 3
 #define QF_FULLINTENSITY	1 << 4
 #define QF_WAVE			1 << 5
-#define QF_3D			1 << 6
-#define QF_GROUNDONLY		1 << 7
-#define QF_AFFECTACTORS 	1 << 8
-#define QF_SHAKEONLY		1 << 9
-#define QF_DAMAGEFALLOFF	1 << 10
 
 #define WARPF_ABSOLUTEOFFSET 0x1
 #define WARPF_ABSOLUTEANGLE 0x2
@@ -1181,3 +1202,75 @@
                 
 #define LUMP_INFO_SIZE 0
 #define LUMP_INFO_NAME 1
+
+// [TP] For GetTimeProperty
+#define TM_SECOND 0
+#define TM_MINUTE 1
+#define TM_HOUR 2
+#define TM_DAY 3
+#define TM_MONTH 4
+#define TM_YEAR 5
+#define TM_WEEKDAY 6
+
+// [AK] For SetGamemodeLimit
+#define GAMELIMIT_FRAGS 0
+#define GAMELIMIT_TIME 1
+#define GAMELIMIT_POINTS 2
+#define GAMELIMIT_DUELS 3
+#define GAMELIMIT_WINS 4
+#define GAMELIMIT_WAVES 5
+
+// [AK] For SetPlayerScore and GetPlayerScore
+#define SCORE_FRAGS 0
+#define SCORE_POINTS 1
+#define SCORE_WINS 2
+#define SCORE_DEATHS 3
+#define SCORE_KILLS 4
+#define SCORE_ITEMS 5
+#define SCORE_SECRETS 6
+#define SCORE_SPREAD 7
+#define SCORE_RANK 8
+
+// [AK] For GetMapRotationInfo
+#define MAPROTATION_Name 0
+#define MAPROTATION_LumpName 1
+#define MAPROTATION_Used 2
+#define MAPROTATION_MinPlayers 3
+#define MAPROTATION_MaxPlayers 4
+
+// [AK] For GetMapPosition
+#define MAPPOSITION_CURRENT 0
+#define MAPPOSITION_NEXT 1
+
+// [SB] Disconnect reasons for GAMEEVENT_PLAYERLEAVESSERVER.
+#define LEAVEREASON_LEFT 0
+#define LEAVEREASON_KICKED 1
+#define LEAVEREASON_ERROR 2
+#define LEAVEREASON_TIMEOUT 3
+#define LEAVEREASON_RECONNECT 4
+
+// GetPlayerSkin ------------------------------------------------------------
+#define PLAYERSKIN_USERINFO 0
+#define PLAYERSKIN_WEAPON 1
+#define PLAYERSKIN_ACS 2
+#define PLAYERSKIN_VISIBLE 3
+
+// [TRSR] GetControlPointInfo and SetControlPointInfo
+#define POINTINFO_NAME 0
+#define POINTINFO_OWNER 1
+#define POINTINFO_DISABLED 2
+
+// [TRSR] GetSkinProperty
+#define SPROP_TYPE_UNKNOWN 0
+#define SPROP_TYPE_INT 1
+#define SPROP_TYPE_BOOL 2
+#define SPROP_TYPE_FLOAT 3
+#define SPROP_TYPE_STRING 4
+
+// [AK] Player status flags, indicating what the player is doing. (GetPlayerStatus)
+#define PLAYERSTATUS_CHATTING (1 << 0) // Player is chatting.
+#define PLAYERSTATUS_TALKING (1 << 1) // Player is talking on the microphone.
+#define PLAYERSTATUS_INCONSOLE (1 << 2) // Player is in the console.
+#define PLAYERSTATUS_INMENU (1 << 3) // Player is in the menu.
+#define PLAYERSTATUS_LAGGING (1 << 4) // Player is lagging to the server?
+#define PLAYERSTATUS_READYTOGOON (1 << 5) // Player is ready for the next map? (intermission).

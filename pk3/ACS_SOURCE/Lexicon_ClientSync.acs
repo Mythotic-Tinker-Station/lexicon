@@ -8,7 +8,7 @@ Script "Lexicon_SyncClientData" (void)
 {
 	int i = 0;
 	//We don't need to do this in singleplayer
-	if(SinglePlayer()) terminate;
+	if(GameType() == 0) terminate;
 		
 	Delay(1);	
 	

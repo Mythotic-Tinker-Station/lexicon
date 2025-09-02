@@ -1,3 +1,17 @@
 #include "decorate/lexiconactorspawners.txt"
 #include "decorate/lexiconambientactors.txt"
 #include "decorate/lexiconmiscactors.txt"
+
+Actor LexiconTerminalOpen : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}
+
+Actor LexiconTerminalExit : Inventory
+{
+	Inventory.MaxAmount 1
+	+UNDROPPABLE
+	-INVBAR
+}

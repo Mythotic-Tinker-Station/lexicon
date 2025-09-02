@@ -1,0 +1,152 @@
+str existingMapSetTypes[MAXEXPANSIONS] = {};
+int maxSetTypes;
+str MapSetPool[MAXMAPSETSPERPACK * MAXEXPANSIONS] = {};
+int maxTotalMapSets;
+int processedMapSets;
+int mapTypesParsed;
+int MapSetsParsed;
+int mapSetAdder;
+
+//These contain a pool of types that can actually be selected. If you're not using Doom.Wad, for example, don't enable Doom 1 wads
+int enabledSetTypes[MAXEXPANSIONS] = {};
+
+//Call this script from any module/addon pack with the name of your pack. You can include more than 1, if you wish.
+Script "Lexicon_AddMapSet" (int concat, int priority)
+{
+	if(!isVR()) terminate;
+
+	mapSetAdder++;
+	Delay(mapSetAdder);
+	str cvarString = StrParam(s:"LEXICON_MAPSET_",d:priority+1);
+	if(strLen(GetCvarString(cvarString))!=0)
+	{
+		for(int i = 0; i < MAXEXPANSIONS; i++)
+		{
+			cvarString = strParam(s:"LEXICON_MAPSET_",d:i+1);
+			if(strLen(GetCvarString(cvarString)) == 0)
+			{
+				SetCvarString(cvarString,concat);
+				break;
+			}	
+		}
+	}
+	else
+	{
+		SetCvarString(cvarString,concat);
+	}
+	
+	Delay(1);
+	mapSetAdder--;
+	mapTypesParsed++;
+}
+
+//Shuffle the sets down and remove any empties!
+function void reorganizeSets (void)
+{
+	int currentLowest = 1;
+	for(int i = 1; i < MAXEXPANSIONS+1; i++)
+	{
+		str mapSetsText = GetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i));
+		if(strlen(mapSetsText) > 0)
+		{
+			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i),"");
+			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:currentLowest),mapSetsText);
+			currentLowest++;
+		}
+	}
+}
+
+//Clear pre-existing CVARs - otherwise they will just get added, causing the duplication bug
+function void clearParsedSets (void)
+{
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1),"");
+	}
+}
+
+//Generate all the known map set types by taking apart Lexicon_MapSets. Any addon/module will need to call a script to update this CVAR
+function void generateLexiconMapSetTypes (void)
+{
+	//Reorganize.
+	reorganizeSets();
+	//Read the cvar, and add 4 letter prefixes to each mapset type defined within language. An ACS script for these separate modules will add these
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		str mapSetsText = GetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1));
+		if(strlen(mapSetsText) == 0) break;
+		else
+		{	
+			existingMapSetTypes[i] = mapSetsText;
+			enabledSetTypes[i] = true;
+		}
+	}
+}
+
+//Build the map sets. Use in a wrapper for clients and the map
+function void buildMapSets (void)
+{
+	if(!MapSetsParsed)
+	{
+		clearLexiconMapSetTypes(); //Just in case
+		generateLexiconMapSetTypes();
+	}
+
+	addLexiconMapSets();
+	MapSetsParsed = true;
+}
+
+//This function will clear any old map set types, in case it is ever needed
+function void clearLexiconMapSetTypes (void)
+{
+	maxSetTypes = 0;
+	processedMapSets = 0;
+	maxTotalMapSets = 0;
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		existingMapSetTypes[i] = "";
+		enabledSetTypes[i] = false;
+	}
+}
+
+//Knowing all the mapset packs, figure out what mapsets actually exist and dump them all into an array
+function void addLexiconMapSets (void)
+{
+	processedMapSets = 0;
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		if(existingMapSetTypes[i] == "")
+			break;
+		
+		for(int j = 1; j < MAXMAPSETSPERPACK; j++)
+		{
+			str mapset = strparam(s:"LEX_",s:existingMapSetTypes[i],s:"_",d:j);
+			if(returnLanguageText(mapset) != "UNDEFINED")
+			{
+				str iwad = returnLanguageText(strParam(s:returnLanguageText(mapset),s:"_MAPSET_IWAD"));
+				if(stricmp(iwad,"UNDEFINED")==0) 
+					iwad = "doom2";
+				if((isDoom1wad(iwad) && Doom1Enabled()) || (isDoom2wad(iwad) && Doom2Enabled()) || (isTNTwad(iwad) && TNTEnabled())|| (isPlutoniawad(iwad) && PlutoniaEnabled()))
+				{
+					MapSetPool[processedMapSets] = strParam(l:mapset);
+					processedMapSets++;
+				}
+			}
+			else break;
+		}
+		//Add the last discovered index to the map variable
+	}
+	maxTotalMapSets = processedMapSets;
+}
+
+//Generate map info for the server
+Script "Lexicon_GenerateMaps_Server" (void)
+{
+	buildMapSets();
+}
+
+//Generate map info for a client
+Script "Lexicon_GenerateMaps_Client" (void) clientside
+{	
+	buildMapSets();
+}

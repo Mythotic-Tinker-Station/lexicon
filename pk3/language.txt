@@ -7,15 +7,43 @@ LEX_OFFI_2 = "IDD2";
 LEX_OFFI_3 = "IDD3";
 LEX_OFFI_4 = "IDD4";
 
+//Ultimate Doom
 IDD1_MAPSET_IWAD = "doom1";
 IDD1_MAPSET_PACK = "OFFI";
 IDD1_MAPSET_TITLE = "Ultimate Doom";
+IDD1_MAPSET_DATE = "1993";
+IDD1_MAPSET_MAPS = "36";
+IDD1_MAPSET_AUTHORS = "iD Software";
+IDD1_MAPSET_CUSTOM = "N";
+IDD1_MAPSET_DESC = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
+//Doom 2
 IDD2_MAPSET_IWAD = "doom2";
 IDD2_MAPSET_PACK = "OFFI";
 IDD2_MAPSET_TITLE = "Doom II";
+IDD2_MAPSET_DATE = "1994";
+IDD2_MAPSET_MAPS = "32";
+IDD2_MAPSET_AUTHORS = "iD Software";
+IDD2_MAPSET_CUSTOM = "N";
+
+//TNT
 IDD3_MAPSET_IWAD = "tnt";
 IDD3_MAPSET_PACK = "OFFI";
 IDD3_MAPSET_TITLE = "TNT: Evilution";
+IDD3_MAPSET_DATE = "1996";
+IDD3_MAPSET_MAPS = "32";
+IDD3_MAPSET_AUTHORS = "Dario and Milo Casali";
+IDD3_MAPSET_CUSTOM = "N";
+
+//Plutonia
 IDD4_MAPSET_IWAD = "plutonia";
 IDD4_MAPSET_PACK = "OFFI";
 IDD4_MAPSET_TITLE = "The Plutonia Experiment";
+IDD4_MAPSET_DATE = "1996";
+IDD4_MAPSET_MAPS = "32";
+IDD4_MAPSET_AUTHORS = "TeamTNT";
+IDD4_MAPSET_CUSTOM = "N";
+
+//Let's add localization for the vote interface. Far from complete, obviously
+LEX_GAMETYPE = "Game Type";
+

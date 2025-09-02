@@ -23,11 +23,19 @@ function str returnMapString(int type, int id, int useQuery)
 			break;
 		//Return year
 		case 3:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_YEAR"));
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_DATE"));
 			break;
 		//Return custom actors
 		case 4:
-			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_ACTORS"));
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_CUSTOM"));
+			if(stricmp(result,"N")==0)
+				result = "No";
+			else if(stricmp(result,"Y")==0)
+				result = "Yes";
+			break;
+		//Return description
+		case 5:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_DESC"));
 			break;
 	}
 	return result;

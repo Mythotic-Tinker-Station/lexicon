@@ -44,6 +44,7 @@ Script "Lexicon_Core_Open" OPEN
 
 	//Now, wait until all sets are parsed. Clear any pre-existing ones to prevent duplication
 	clearParsedSets();
+	Delay(1);
 	while(mapSetAdder > 0)
 		Delay(1);
 		

@@ -46,9 +46,12 @@ Script "Lexicon_Core_Open" OPEN
 
 	if(!isVR())
 		terminate;	
-	
+
+	//Now, wait until all sets are parsed. Clear any pre-existing ones to prevent duplication
+	clearParsedSets();
 	Delay(1);
-	if(isZdoom()) Delay(16);
+	while(mapSetAdder > 0)
+		Delay(1);
 		
 	//Generate all the map data on the server
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");

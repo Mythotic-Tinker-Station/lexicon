@@ -16,7 +16,7 @@ Script "Lexicon_AddMapSet" (int concat, int priority)
 	if(!isVR()) terminate;
 
 	mapSetAdder++;
-	if(isZdoom()) Delay(mapSetAdder);
+	Delay(mapSetAdder);
 	str cvarString = StrParam(s:"LEXICON_MAPSET_",d:priority+1);
 	if(strLen(GetCvarString(cvarString))!=0)
 	{
@@ -34,7 +34,9 @@ Script "Lexicon_AddMapSet" (int concat, int priority)
 	{
 		SetCvarString(cvarString,concat);
 	}
-					
+	
+	Delay(1);
+	mapSetAdder--;
 	mapTypesParsed++;
 }
 
@@ -51,6 +53,15 @@ function void reorganizeSets (void)
 			SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:currentLowest),mapSetsText);
 			currentLowest++;
 		}
+	}
+}
+
+//Clear pre-existing CVARs - otherwise they will just get added, causing the duplication bug
+function void clearParsedSets (void)
+{
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		SetCvarString(StrParam(s:"LEXICON_MAPSET_",d:i+1),"");
 	}
 }
 

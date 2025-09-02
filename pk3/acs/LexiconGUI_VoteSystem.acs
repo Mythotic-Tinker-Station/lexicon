@@ -2,7 +2,7 @@
 #DEFINE IMAGEY 200
 #DEFINE UISCALE 2
 #DEFINE WAITTIMER 6300
-#DEFINE MAXCOLS 4
+#DEFINE MAXCOLS 3
 #DEFINE MAXROWS 3
 #DEFINE W_ARROW 128
 #DEFINE H_ARROW 64
@@ -126,6 +126,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 	str typeName; //Internal strings that's used for getting interface text from some place
 	int messageid; //Internal message id for mapset pagination objects
 	int i; //For loops
+	int maxPageSize = MAXROWS * MAXCOLS; //Store max page size for the loop and what not
 	
 	//Select the first selectable map type and query
 	selectedGameMode = findNextGameType(-1);
@@ -169,11 +170,16 @@ Script "Lexicon_VoteInterface" (void) clientside
 		//Set the rectangle back
 		SetHudClipRect(0,0,0,0);
 
-		//Draw fancy divider between the options at the top and the selectables
+		//Draw a border for the mapsets
 		SetFont("LEXBORD2");
 		posX = intFloat(hudboundsx*0.125) + 0.1;
 		posY = intFloat(hudboundsy*0.18) + 0.1;
-		drawBorder(posX, posY, 1, 155, intFloat(hudboundsx*0.75)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+		drawBorder(posX, posY, 1, 155, intFloat(hudboundsx*0.1875*MAXCOLS)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+		
+		//Now draw border for the informational panel
+		posX = intFloat(hudboundsx*0.695) + 0.1;
+		posY = intFloat(hudboundsy*0.18) + 0.1;
+		drawBorder(posX, posY, 1, 151, intFloat(hudboundsx*0.1875)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
 
 		//Draw cursor
 		SetHudSize(hudboundsx,hudboundsy,false);
@@ -265,7 +271,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 		
 		//Draw right arrow and handle logic
 		
-		if(((pageOffset + 1) * MAXCOLS * MAXROWS) < queriedMapSetCount)
+		if(((pageOffset + 1) * maxPageSize) < queriedMapSetCount)
 		{
 			posX = intFloat(hudcenterx*1.3);
 			posY = intFloat(mouseCursorBorderBottom * 0.933);
@@ -276,7 +282,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 				if(uiElementHover != uiElementHoverLast) 
 					LocalAmbientSound("Lexicon/Hover",127);
 					
-				if(Lclicking && uiDelay <= 0 && (((pageOffset + 1) * MAXCOLS * MAXROWS) < queriedMapSetCount))
+				if(Lclicking && uiDelay <= 0 && (((pageOffset + 1) * maxPageSize) < queriedMapSetCount))
 				{
 					LocalAmbientSound("Lexicon/Select",127);
 					pageOffset++;
@@ -299,12 +305,12 @@ Script "Lexicon_VoteInterface" (void) clientside
 		SetFont("LXSMALLFONT");
 		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0],1) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
 		
-		pagination = pageOffset * MAXCOLS * MAXROWS;
+		pagination = pageOffset * maxPageSize;
 		SetHudSize(imagesHudX,imagesHudY,false);
 		//Draw map set boxes
 		if(queriedMapSetCount > 0)
 		{
-			for(i = pagination; i < pagination + 12; i++)
+			for(i = pagination; i < pagination + maxPageSize; i++)
 			{
 				RemoveMessages(109,109);
 				messageid = 122 + (i - pagination);
@@ -320,7 +326,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
 					posY = columnStart + setDistanceY * rowincrementor;
 					SetFont(strparam(s:returnMapString(0,i,1),s:"TN"));
-					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageid+12, CR_UNTRANSLATED, posX, posY, 0.0);
+					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageid+maxPageSize, CR_UNTRANSLATED, posX, posY, 0.0);
 					
 					int mapPackSelected = checkConfines(cursorX, cursorY, (posX>>16) - (IMAGEX/2), (posX>>16) + (IMAGEX/2), (posY>>16) - (IMAGEY/2), (posY>>16) + (IMAGEY/2), uiScaleToImageScaleX, uiScaleToImageScaleY);
 						
@@ -328,6 +334,28 @@ Script "Lexicon_VoteInterface" (void) clientside
 					{
 						SetFont("LEXIUI");
 						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 121, "LexiconGold", posX, posY, 0.0);
+						
+						//Draw informational panel on the right. Because of how I want to format the title, I need to separate it
+						SetHudSize(hudboundsx,hudboundsy,false);
+						//drawBorder(posX, posY, 1, 151, intFloat(hudboundsx*0.1875)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+						SetHudClipRect(intFloat(hudboundsx*0.695)>>16,intFloat(hudboundsy*0.18)>>16,intFloat(hudboundsx*0.1875)>>16,intFloat(hudboundsy*0.667)>>16,intFloat(hudboundsx*0.1875)>>16);
+						SetFont("LXSMALLFONT");
+						posX = intFloat(hudboundsx*0.79);
+						posY = intFloat(hudboundsy*0.2) + 0.1;
+						HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 150, "LexiconGold", posX, posY, 0.0);
+						
+						//Draw title
+						posX = intFloat(hudboundsx*0.7) + 0.1;
+						posY = intFloat(hudboundsy*0.24) + 0.1;
+						str authorInfo = strParam(s:"Author: \c[LexiconWhite]",l:returnMapString(2,i,1),s:"\c-");
+						str dateInfo = strParam(s:"\nDate: \c[LexiconWhite]",l:returnMapString(3,i,1),s:"\c-");
+						str actorInfo = strParam(s:"\nCustom Actors: \c[LexiconWhite]",l:returnMapString(4,i,1),s:"\c-");
+						str descriptionInfo = strParam(s:"\nDescription: \c[LexiconWhite]",l:returnMapString(5,i,1),s:"\c-");
+						HudMessage(s:strParam(s:authorInfo,s:dateInfo,s:actorInfo,s:descriptionInfo); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 149, "LexiconRed", posX, posY, 0.0);
+						
+						//Restore image space
+						SetHudClipRect(0,0,0,0,0);	
+						SetHudSize(imagesHudX,imagesHudY,false);
 						
 						uiElementHover = 4+(i - pagination);
 						if(uiElementHover != uiElementHoverLast) 
@@ -359,30 +387,34 @@ Script "Lexicon_VoteInterface" (void) clientside
 				else
 				{
 					RemoveMessages(messageid,messageid);
-					RemoveMessages(messageid+12,messageid+12);
+					RemoveMessages(messageid+maxPageSize,messageid+maxPageSize);
 				}
 			}
 		}
 		else
 		{
-			for(i = 0; i < 9; i++)
+			for(i = 0; i < maxPageSize; i++)
 			{
 				messageid = 122 + (i - pagination);
 				RemoveMessages(messageid,messageid);
-				RemoveMessages(messageid+12,messageid+12);
+				RemoveMessages(messageid+maxPageSize,messageid+maxPageSize);
 			}
 		
+			RemoveMessages(149,150);
 			SetFont("LXSMALLFONT");
 			SetHudSize(hudcenterx,hudcentery,0);
 			posX = (hudcenterX/2) << 16;
-			posY = intFloat(hudcenterY * 0.25);
+			posY = intFloat(hudcenterY * 0.15);
 			
 			HudMessage(s:"No mapsets can be found under your search criteria with the IWAD you have loaded..."; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconLightGray", posX, posY, 0.0);
 		}
 		
 		//Clear frame from image if not hovered over one
 		if(uiElementHoverLast < 4)
+		{
 			RemoveMessages(120,121);
+			RemoveMessages(149,150);
+		}
 		
 		//Set back to 0
 		rowincrementor = 0;
@@ -563,13 +595,16 @@ Script "Lexicon_VoteTally" (void)
 				//Now that none of this should be relying on the these anymore, we can clear them for the next map
 				for(i = 1; i < MAXEXPANSIONS+1; i++)
 					SetCvarString(strParam(s:"LEXICON_MAPSET_",d:i),"");
-				
+
 				TakeInventory("LexiconTerminalOpen", 1);
 				TakeInventory("LexiconTerminalExit", 1);
 				TakeInventory("LexiconInventoryGiven", 1);
 				
 				//Now set the map
-				ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION,-1);
+				if(GetCVar("lexicon_vanilla_mode") || isGameModded())
+					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION,-1);
+				else
+					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
 			}
 		}
 		Delay(1);

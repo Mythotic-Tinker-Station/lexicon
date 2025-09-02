@@ -1,0 +1,136 @@
+// OTEX v1.1 ANIMDEFS, compiled by Bauul
+
+//Switches
+Switch	Doom 3		OSWTCHF0	On Pic	OSWTCHF1	Tics 0
+Switch	Doom 3		OSWTCHG0	On Pic	OSWTCHG1	Tics 0
+Switch	Doom 3		OSWTCHEA	On Pic	OSWTCHE1	Tics 0
+Switch	Doom 3		OSWTCHEE	On Pic	OSWTCHE2	Tics 0
+Switch	Doom 3		OSWTCHEI	On Pic	OSWTCHE3	Tics 0
+Switch	Doom 3		OSWTCHEM	On Pic	OSWTCHE4	Tics 0
+Switch	Doom 3		OSWTCHEQ	On Pic	OSWTCHE5	Tics 0
+Switch	Doom 3		OSWTCHEU	On Pic	OSWTCHE6	Tics 0
+Switch	Doom 3		OSWTCHEY	On Pic	OSWTCHE7	Tics 0
+Switch	Doom 3		OSWTCHD7	On Pic	OSWTCHD6	Tics 0
+Switch	Doom 3		OSWTCHD5	On Pic	OSWTCHD4	Tics 0
+Switch	Doom 3		OSWTCHD3	On Pic	OSWTCHD2	Tics 0
+Switch	Doom 3		OSWTCHD1	On Pic	OSWTCHD0	Tics 0
+Switch	Doom 3		OSWTCHB1	On Pic	OSWTCHB0	Tics 0
+Switch	Doom 3		OSWTCHC0	On Pic	OSWTCHC1	Tics 0
+Switch	Doom 3		OSWTCHI0	On Pic	OSWTCHI1	Tics 0
+Switch	Doom 3		OSWTCHI2	On Pic	OSWTCHI3	Tics 0
+Switch	Doom 3		OSWTCHI4	On Pic	OSWTCHI5	Tics 0
+Switch	Doom 3		OSWTCHL0	On Pic	OSWTCHL1	Tics 0
+Switch	Doom 3		OSWTCHM0	On Pic	OSWTCHM1	Tics 0
+Switch	Doom 3		OSWTCHA6	On Pic	OSWTCHA7	Tics 0
+Switch	Doom 3		OSWTCHA4	On Pic	OSWTCHA5	Tics 0
+Switch	Doom 3		OSWTCHA2	On Pic	OSWTCHA3	Tics 0
+Switch	Doom 3		OSWTCHA1	On Pic	OSWTCHA0	Tics 0
+Switch	Doom 3		OSWTCHJ0	On Pic	OSWTCHJ1	Tics 0
+Switch	Doom 3		OSWTCHK0	On Pic	OSWTCHK1	Tics 0
+
+//Textures
+Texture	Optional	OROCKO2A	Range	OROCKO2D	Tics 4
+Texture	Optional	OROCKO3A	Range	OROCKO3D	Tics 4
+Texture	Optional	OSWTCHEA	Range	OSWTCHED	Tics 3
+Texture	Optional	OSWTCHEE	Range	OSWTCHEH	Tics 3
+Texture	Optional	OSWTCHEI	Range	OSWTCHEL	Tics 3
+Texture	Optional	OSWTCHEM	Range	OSWTCHEP	Tics 3
+Texture	Optional	OSWTCHEQ	Range	OSWTCHET	Tics 3
+Texture	Optional	OSWTCHEU	Range	OSWTCHEX	Tics 3
+Texture	Optional	OSWTCHEY	Range	OSWTCHEZ	Tics 3
+Texture	Optional	OSWTCHL1	Range	OSWTCHL6	Tics 3
+Texture	Optional	OWARPC01	Range	OWARPC12	Tics 2
+Texture	Optional	OWRNGC50	Range	OWRNGC5F	Tics 2
+Texture	Optional	OWRNGC40	Range	OWRNGC4F	Tics 2
+Texture	Optional	OWRNGC30	Range	OWRNGC3F	Tics 2
+Texture	Optional	OWRNGC20	Range	OWRNGC2F	Tics 2
+Texture	Optional	OWRNGC10	Range	OWRNGC1F	Tics 2
+Texture	Optional	OWARPE21	Range	OWARPE32	Tics 3
+Texture	Optional	OWARPE01	Range	OWARPE12	Tics 3
+Texture	Optional	OWARPD01	Range	OWARPD10	Tics 3
+Texture	Optional	OFALLG01	Range	OFALLG08	Tics 3
+Texture	Optional	OFALLN01	Range	OFALLN08	Tics 3
+Texture	Optional	OCOMPA21	Range	OCOMPA28	Tics 3
+Texture	Optional	OCOMPA11	Range	OCOMPA18	Tics 3
+Texture	Optional	OFIREA01	Range	OFIREA06	Tics 4
+Texture	Optional	OFIREA11	Range	OFIREA16	Tics 4
+Texture	Optional	OFIREA21	Range	OFIREA26	Tics 4
+Texture	Optional	OFIREA31	Range	OFIREA36	Tics 4
+Texture	Optional	OFIREA41	Range	OFIREA46	Tics 4
+Texture	Optional	OBRCKU3D	Range	OBRCKU3G	Tics 4
+
+// OBRCKU32 uses a different naming range than GZDoom picks up by default, so bespoke Texture definition is needed
+
+Texture OBRCKU32
+	pic OBRCKU32 tics 4
+	pic OBRCKU3A tics 4
+	pic OBRCKU3B tics 4
+	pic OBRCKU3C tics 4
+	
+Texture OBRCKU3A
+	pic OBRCKU3A tics 4
+	pic OBRCKU3B tics 4
+	pic OBRCKU3C tics 4
+	pic OBRCKU32 tics 4
+	
+Texture OBRCKU3B
+	pic OBRCKU3B tics 4
+	pic OBRCKU3C tics 4
+	pic OBRCKU32 tics 4
+	pic OBRCKU3A tics 4
+	
+Texture OBRCKU3C
+	pic OBRCKU3C tics 4
+	pic OBRCKU32 tics 4
+	pic OBRCKU3A tics 4
+	pic OBRCKU3B tics 4
+
+Texture	Optional	OCOMPA01	Range	OCOMPA08	Tics 3
+Texture	Optional	OCOMPA31	Range	OCOMPA38	Tics 3
+Texture	Optional	OWARPA01	Range	OWARPA17	Tics 2
+Texture	Optional	OFALLW01	Range	OFALLW08	Tics 2
+Texture	Optional	OCOMPA91	Range	OCOMPA9N	Tics 2
+Texture	Optional	OCOMPA90	Range	OCOMPA9G	Tics 2
+Texture	Optional	OFALLT01	Range	OFALLT08	Tics 4
+Texture	Optional	OFALLM01	Range	OFALLM08	Tics 2
+Texture	Optional	OFALLB01	Range	OFALLB08	Tics 3
+Texture	Optional	OFALLL01	Range	OFALLL08	Tics 4
+Texture	Optional	OFALLL11	Range	OFALLL18	Tics 5
+Texture	Optional	OFALLP01	Range	OFALLP08	Tics 4
+Texture	Optional	OMETLC92	Range	OMETLC95	Tics 3
+Texture	Optional	OMETLC96	Range	OMETLC99	Tics 3
+Texture	Optional	OFALLS01	Range	OFALLS08	Tics 4
+Texture	Optional	OWARPB01	Range	OWARPB17	Tics 2
+Texture	Optional	OIRONL81	Range	OIRONL96	Tics 3
+Texture	Optional	OFALLW11	Range	OFALLW18	Tics 3
+
+//Flats
+Flat	Optional	0TLPTC10	Range	0TLPTC19	Tics 3
+Flat	Optional	0TLPTC00	Range	0TLPTC09	Tics 3
+Flat	Optional	0TLPTBA0	Range	0TLPTBA9	Tics 3
+Flat	Optional	0TLPTBB0	Range	0TLPTBB9	Tics 3
+Flat	Optional	0TLPTBC0	Range	0TLPTBC9	Tics 3
+Flat	Optional	0TLPTBD0	Range	0TLPTBD9	Tics 3
+Flat	Optional	0TLPTB00	Range	0TLPTB09	Tics 3
+Flat	Optional	0TLPTDA0	Range	0TLPTDAA	Tics 3
+Flat	Optional	0TLPTDB0	Range	0TLPTDBA	Tics 3
+Flat	Optional	0TLPTDC0	Range	0TLPTDCA	Tics 3
+Flat	Optional	0TLPTDD0	Range	0TLPTDDA	Tics 3
+Flat	Optional	0ICYWA01	Range	0ICYWA08	Tics 5
+Flat	Optional	0GOOPY01	Range	0GOOPY08	Tics 5
+Flat	Optional	0POOPY01	Range	0POOPY08	Tics 5
+Flat	Optional	0NUKEA01	Range	0NUKEA08	Tics 5
+Flat	Optional	0LAVAE01	Range	0LAVAE08	Tics 5
+Flat	Optional	0TAR__01	Range	0TAR__08	Tics 5
+Flat	Optional	0LAVAF01	Range	0LAVAF10	Tics 5
+Flat	Optional	0LAVAD01	Range	0LAVAD08	Tics 5
+Flat	Optional	0BLODA01	Range	0BLODA08	Tics 5
+Flat	Optional	0LAVAC01	Range	0LAVAC08	Tics 5
+Flat	Optional	0SLUDG01	Range	0SLUDG08	Tics 5
+Flat	Optional	0TLPTA01	Range	0TLPTA09	Tics 3
+Flat	Optional	0TLPTA51	Range	0TLPTA59	Tics 3
+Flat	Optional	0TLPTA41	Range	0TLPTA49	Tics 3
+Flat	Optional	0TLPTA21	Range	0TLPTA29	Tics 3
+Flat	Optional	0TLPTA11	Range	0TLPTA19	Tics 3
+Flat	Optional	0TLPTA31	Range	0TLPTA39	Tics 3
+Flat	Optional	0WATER01	Range	0WATER08	Tics 5

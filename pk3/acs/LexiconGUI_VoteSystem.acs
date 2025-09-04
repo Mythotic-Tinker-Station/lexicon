@@ -553,7 +553,7 @@ Script "Lexicon_VoteTally" (void)
 			tie = winners != 1;
 			
 			//Prevent ties from changing the map immediately
-			if(!tie && voteTimeLimit > 0)
+			if((!tie && voteTimeLimit > 0) || voteTimeLimit == 0)
 			{
 				pickedMapSet = pickWinner()-1;		
 				disableTerminal = true;
@@ -592,10 +592,6 @@ Script "Lexicon_VoteTally" (void)
 				else
 					level = strParam(s:returnMapString(0,pickedMapSet,0),s:append);
 				
-				//Now that none of this should be relying on the these anymore, we can clear them for the next map
-				for(i = 1; i < MAXEXPANSIONS+1; i++)
-					SetCvarString(strParam(s:"LEXICON_MAPSET_",d:i),"");
-
 				TakeInventory("LexiconTerminalOpen", 1);
 				TakeInventory("LexiconTerminalExit", 1);
 				TakeInventory("LexiconInventoryGiven", 1);

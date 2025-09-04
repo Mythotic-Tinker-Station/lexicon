@@ -6,7 +6,7 @@ VERY IMPORTANT: Compile this with ACC, not BCC!
 */
 
 #DEFINE MAXMAPSETSPERPACK 256
-#DEFINE MAXEXPANSIONS 8
+#DEFINE MAXEXPANSIONS 16
 
 int disableTerminal;
 
@@ -44,14 +44,14 @@ Script "Lexicon_Core_Open" OPEN
 	//Determine if the current game type must change
 	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
 
+	//Init these values to an empty string. Makes the data predictable
+	clearLexiconMapSetTypes();
+
+	//This is needed to let the actors do their processing
+	Delay(1);
+
 	if(!isVR())
 		terminate;	
-
-	//Now, wait until all sets are parsed. Clear any pre-existing ones to prevent duplication
-	clearParsedSets();
-	Delay(1);
-	while(mapSetAdder > 0)
-		Delay(1);
 		
 	//Generate all the map data on the server
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");

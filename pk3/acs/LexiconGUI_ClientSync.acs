@@ -4,26 +4,52 @@ str VotesDisplay[64] = {};
 
 int voteTimeLimit;
 
-Script "Lexicon_SyncClientData" (void)
+Script "Lexicon_SyncClientData" (int player)
 {
 	int i = 0;
 	//We don't need to do this in singleplayer
 	if(GameType() == 0) terminate;
 		
-	Delay(1);	
+	//Let's init the cached mapsets first
+	ACS_NamedExecuteWithResult("Lexicon_ClearClientMapCache");
+	
+	//Sync current player votes and wait
+	for(i = 0; i < 64; i++)
+		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
+	
+	Delay(1);
+		
+	//I better send the strings to the player map prefixes array, then wait
+	for(i = 0; i < MAXEXPANSIONS; i++)
+		NamedSendNetworkString("Lexicon_SendMapInfoToClient",StrParam(s:existingMapSetTypes[i],c:i+1));	
+	
+	Delay(1);
 	
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client");
-		
-	//Sync current player votes
-	for(i = 0; i < 64; i++)
-		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
 }
 
 Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside
 {
 	playerVotes[player][0] = value1;
 	playerVotes[player][1] = value2;
+}
+
+Script "Lexicon_ClearClientMapCache" (void) clientside
+{
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+		existingMapSetTypes[i] = "";
+}
+
+Script "Lexicon_SendMapInfoToClient" (int value) clientside
+{
+	if(strlen(value) > 1)
+	{
+		str stringValue = StrLeft(value,4);
+		int id = GetChar(StrRight(value,1),0)-1;
+		if(stringValue != "")
+			existingMapSetTypes[id] = stringValue;
+	}
 }
 
 script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
@@ -34,7 +60,7 @@ script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
 	//GAMEEVENT_PLAYERCONNECT
 	if(type == 9)
 	{
-		ACS_NamedExecuteWithResult("Lexicon_SyncClientData");
+		ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
 	}
 			
 	while(PlayerIsSpectator(arg1))

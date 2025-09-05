@@ -13,3 +13,51 @@ map VR "Inside the Lexicon"
 	sky1 = "SKY1"
 	ForgetState
 }
+
+map E1M8 lookup "HUSTR_E1M8"
+{
+	levelnum = 8
+	titlepatch = "WILV07"
+	next = "E2M1"
+	secretnext = "E1M9"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	nointermission
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+	music = "$MUSIC_E1M8"
+}
+
+map E2M8 lookup "HUSTR_E2M8"
+{
+	levelnum = 18
+	titlepatch = "WILV17"
+	next = "E3M1"
+	secretnext = "E2M9"
+	sky1 = "SKY2"
+	cluster = 2
+	par = 30
+	nointermission
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E2M8"
+}
+
+map E3M8 lookup "HUSTR_E3M8"
+{
+	levelnum = 28
+	titlepatch = "WILV27"
+	next = "E4M1"
+	secretnext = "E3M9"
+	sky1 = "SKY3"
+	cluster = 3
+	par = 30
+	nointermission
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E3M8"
+}

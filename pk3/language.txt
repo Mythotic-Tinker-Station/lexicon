@@ -6,6 +6,11 @@ LEX_OFFI_1 = "IDD1";
 LEX_OFFI_2 = "IDD2";
 LEX_OFFI_3 = "IDD3";
 LEX_OFFI_4 = "IDD4";
+LEX_OFFI_5 = "IDD5";
+LEX_OFFI_6 = "IDD6";
+LEX_OFFI_7 = "IDD7";
+LEX_OFFI_8 = "IDD8";
+LEX_OFFI_9 = "IDD9";
 
 //Ultimate Doom
 IDD1_MAPSET_IWAD = "doom1";
@@ -43,6 +48,51 @@ IDD4_MAPSET_DATE = "1996";
 IDD4_MAPSET_MAPS = "32";
 IDD4_MAPSET_AUTHORS = "TeamTNT";
 IDD4_MAPSET_CUSTOM = "N";
+
+//Master Levels
+IDD5_MAPSET_IWAD = "masterlevels";
+IDD5_MAPSET_PACK = "OFFI";
+IDD5_MAPSET_TITLE = "The Master Levels";
+IDD5_MAPSET_DATE = "1995";
+IDD5_MAPSET_MAPS = "21";
+IDD5_MAPSET_AUTHORS = "John Anderson (Dr. Sleep), Jim Flynn, Christen Klie, Sverre André Kvernmo (Cranium), Tom Mustaine, Tim Willits";
+IDD5_MAPSET_CUSTOM = "N";
+
+//No Rest for the Living
+IDD6_MAPSET_IWAD = "nerve";
+IDD6_MAPSET_PACK = "OFFI";
+IDD6_MAPSET_TITLE = "No Rest for the Living";
+IDD6_MAPSET_DATE = "2010";
+IDD6_MAPSET_MAPS = "9";
+IDD6_MAPSET_AUTHORS = "Nerve Software";
+IDD6_MAPSET_CUSTOM = "N";
+
+//Sigil
+IDD7_MAPSET_IWAD = "sigil";
+IDD7_MAPSET_PACK = "OFFI";
+IDD7_MAPSET_TITLE = "Sigil";
+IDD7_MAPSET_DATE = "2019";
+IDD7_MAPSET_MAPS = "9";
+IDD7_MAPSET_AUTHORS = "John Romero";
+IDD7_MAPSET_CUSTOM = "N";
+
+//Sigil II
+IDD8_MAPSET_IWAD = "sigil";
+IDD8_MAPSET_PACK = "OFFI";
+IDD8_MAPSET_TITLE = "Sigil II";
+IDD8_MAPSET_DATE = "2023";
+IDD8_MAPSET_MAPS = "9";
+IDD8_MAPSET_AUTHORS = "John Romero and Romero Games";
+IDD8_MAPSET_CUSTOM = "N";
+
+//Legacy of Rust
+IDD9_MAPSET_IWAD = "id1";
+IDD9_MAPSET_PACK = "OFFI";
+IDD9_MAPSET_TITLE = "Legacy of Rust";
+IDD9_MAPSET_DATE = "2024";
+IDD9_MAPSET_MAPS = "9";
+IDD9_MAPSET_AUTHORS = "id Software, Nightdive Studios, MachineGames";
+IDD9_MAPSET_CUSTOM = "N";
 
 //Let's add localization for the vote interface. Far from complete, obviously
 LEX_GAMETYPE = "Game Type";

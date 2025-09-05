@@ -59,7 +59,16 @@ function void addLexiconMapSets (void)
 				str iwad = returnLanguageText(strParam(s:returnLanguageText(mapset),s:"_MAPSET_IWAD"));
 				if(stricmp(iwad,"UNDEFINED")==0) 
 					iwad = "doom2";
-				if((isDoom1wad(iwad) && Doom1Enabled()) || (isDoom2wad(iwad) && Doom2Enabled()) || (isTNTwad(iwad) && TNTEnabled())|| (isPlutoniawad(iwad) && PlutoniaEnabled()))
+				if((isDoom1wad(iwad) && Doom1Enabled()) 
+				|| (isDoom2wad(iwad) && Doom2Enabled()) 
+				|| (isTNTwad(iwad) && TNTEnabled()) 
+				|| (isPlutoniawad(iwad) && PlutoniaEnabled())
+				|| (isMasterLevelswad(iwad) && MasterLevelsEnabled())
+				|| (isNervewad(iwad) && NerveEnabled())
+				|| (isSigilwad(iwad) && SigilEnabled())
+				|| (isSigil2wad(iwad) && Sigil2Enabled())
+				|| (isLORwad(iwad) && LegacyofRustEnabled())
+				)
 				{
 					MapSetPool[processedMapSets] = strParam(l:mapset);
 					processedMapSets++;

@@ -7,8 +7,8 @@
 #DEFINE MAXROWS 3
 #DEFINE W_ARROW 128
 #DEFINE H_ARROW 64
-#DEFINE CANVASBASEX 640
-#DEFINE CANVASBASEY 480
+#DEFINE CANVASBASEX 800
+#DEFINE CANVASBASEY 600
 #DEFINE DEPLOYCOUNTDOWN 105
 #DEFINE STARTINGIMAGE 100
 
@@ -403,7 +403,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 					SetHudSize(messageScaleX,messageScaleY,false);
 					//There is so much separation here between the UI and the images that I'm better off just recreating the dimensions here
 					posX = intFloat(messageScaleX*0.23) + intFloat(messageScaleX*0.18) * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-					posY = intFloat(messageScaleY*0.045) + (intFloat(messageScaleY*0.215) * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
+					posY = intFloat(messageScaleY*0.0625) + (intFloat(messageScaleY*0.215) * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
 					SetFont("LXSMALLFONT");
 					SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
 					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY + 0.1, 0.0);
@@ -613,6 +613,35 @@ Script "Lexicon_VoteTally" (void)
 				{
 					if(isUsingWadSmoosh())
 						level = "PL_MAP01";
+					else
+						level = "MAP01";
+				}
+				else if(level == "The Master Levels")
+				{
+					if(isUsingWadSmoosh())
+						level = "ML_MAP01";
+					else
+						level = "MAP01";
+				}
+				else if(level == "No Rest for the Living")
+				{
+					if(isUsingWadSmoosh())
+						level = "NV_MAP01";
+					else
+						level = "MAP01";
+				}
+				else if(level == "Sigil")
+				{
+					level = "E5M1";
+				}
+				else if(level == "Sigil II")
+				{
+					level = "E6M1";
+				}
+				else if(level == "Legacy of Rust")
+				{
+					if(isUsingWadSmoosh())
+						level = "LR_MAP01";
 					else
 						level = "MAP01";
 				}

@@ -66,13 +66,46 @@ function bool TNTEnabled(void)
 	return CheckFont("CRWDL6C");
 }
 
-//Check if Plutnoia map sets can be loaded
+//Check if Plutonia map sets can be loaded
 function bool PlutoniaEnabled(void)
 {
 	return CheckFont("MOSROK2");
 }
 
-//Check for Doom complete. Usually just means checking multiple functions.
+//Check if Master Levels map sets can be loaded
+function bool MasterLevelsEnabled(void)
+{
+	return CheckFont("MSKY1") || CheckFont("ML_SKY1");
+}
+
+//Check if Nerve map sets can be loaded
+function bool NerveEnabled(void)
+{
+	/*Okay, so it's also totally possible Doom complete might not have NWILV00, in which case is a bug there (mapinfo looks for these) and
+	you're SOL. Sorry.
+	*/
+	return CheckFont("NWILV00") && Doom2Enabled();
+}
+
+//Check if Sigil map sets can be loaded
+function bool SigilEnabled(void)
+{
+	return CheckFont("M_EPI5");
+}
+
+//Check if Sigil 2 map sets can be loaded
+function bool Sigil2Enabled(void)
+{
+	return CheckFont("M_EPI6");
+}
+
+//Check if Legacy of Rust map sets can be loaded
+function bool LegacyOfRustEnabled(void)
+{
+	return CheckFont("XWILV00");
+}
+
+//Check for Doom complete/Wad fusion. Usually just means checking multiple functions.
 function bool isUsingWadSmoosh(void)
 {
 	return Doom1Enabled() && TNTEnabled() && PlutoniaEnabled();
@@ -107,6 +140,32 @@ function bool isTNTwad(str text)
 function bool isPlutoniawad(str text)
 {
 	return stricmp(text,"plutonia")==0;
+}
+
+//Because these may or may not be loaded, I kinda have to have these
+function bool isMasterLevelswad(str text)
+{
+	return stricmp(text,"masterlevels")==0;
+}
+
+function bool isNervewad(str text)
+{
+	return stricmp(text,"nerve")==0;
+}
+
+function bool isSigilwad(str text)
+{
+	return stricmp(text,"sigil")==0;
+}
+
+function bool isSigil2wad(str text)
+{
+	return stricmp(text,"sigil2")==0;
+}
+
+function bool isLORwad(str text)
+{
+	return stricmp(text,"id1")==0;
 }
 
 #DEFINE BORDERLENGTH 16

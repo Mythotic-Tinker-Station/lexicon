@@ -110,16 +110,12 @@ function bool isPlutoniawad(str text)
 }
 
 #DEFINE BORDERLENGTH 16
-function void drawBorder(int x, int y, int type, int startid, int width, int height, int thickness, int color)
+function void drawBorder(int x, int y, int type, int startid, int width, int height, int color)
 {
 	int i;
-	if(thickness == 0) thickness = 1;
 	if(type == 0) SetFont("LEXBORD1");
 	else 
-	{
 		SetFont("LEXBORD2");
-		thickness = thickness+3;
-	}
 	
 	str borderText = "";
 	for(i = 0; i < width/16; i++)

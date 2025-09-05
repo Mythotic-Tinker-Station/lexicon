@@ -1,14 +1,14 @@
 #DEFINE IMAGEX 320
 #DEFINE IMAGEY 200
-#DEFINE UISCALE 2
+#DEFINE UISCALE 2.0
+#DEFINE HEADERSCALE 0.5
 #DEFINE WAITTIMER 6300
 #DEFINE MAXCOLS 3
 #DEFINE MAXROWS 3
 #DEFINE W_ARROW 128
 #DEFINE H_ARROW 64
-#DEFINE FONTSCALE 2.0
-#DEFINE CANVASBASEX 1024
-#DEFINE CANVASBASEY 768
+#DEFINE CANVASBASEX 640
+#DEFINE CANVASBASEY 480
 #DEFINE DEPLOYCOUNTDOWN 105
 #DEFINE STARTINGIMAGE 100
 
@@ -83,18 +83,24 @@ function void clearWinners (void)
 Script "Lexicon_VoteInterface" (void) clientside
 {
 	int cursorx, cursory;
-	int hudboundsx = CANVASBASEX*UISCALE;
-	int hudboundsy = CANVASBASEY*UISCALE;
+	int hudboundsx = intFloat(CANVASBASEX*UISCALE)>>16;
+	int hudboundsy = intFloat(CANVASBASEY*UISCALE)>>16;
 	int hudcenterx = hudboundsx/2;
 	int hudcentery = hudboundsy/2;
 	
 	int playerNum = PlayerNumber();
 	
+	//Set the percentages of the offsets for the boundaries, necessary for the UI to appear symmetrical
+	int offsetLeft = 0.111 * hudboundsx / 2;
+	int offsetRight = 0.107 * hudboundsx / 2;
+	int offsetTop = 0.042 * hudboundsy / 2;
+	int offsetBottom = 0.047 * hudboundsy / 2;
+	
 	//Magic numbers for offsetting the screen, these will need to be adjusted in the future
-	int mouseCursorBorderLeft = 114*UISCALE;
-	int mouseCursorBorderRight = hudboundsx - 110*UISCALE;
-	int mouseCursorBorderTop = 32*UISCALE;
-	int mouseCursorBorderBottom = hudboundsy - 36*UISCALE;
+	int mouseCursorBorderLeft = ftoi(FixedMul(offsetLeft,UISCALE));
+	int mouseCursorBorderRight = hudboundsx - ftoi(FixedMul(offsetRight,UISCALE));
+	int mouseCursorBorderTop = ftoi(FixedMul(offsetTop,UISCALE));
+	int mouseCursorBorderBottom = hudboundsy - ftoi(FixedMul(offsetBottom,UISCALE));
 	
 	int dimensionalMultiplier = 7; //Multiplier used for the canvas size
 	int imagesHudX = IMAGEX * dimensionalMultiplier; //Width of the virtual canvas - the larger the values, the smaller things are
@@ -102,6 +108,8 @@ Script "Lexicon_VoteInterface" (void) clientside
 	
 	int uiScaleToImageScaleX = FixedDiv(imagesHudX<<16,hudboundsx<<16);
 	int uiScaleToImageScaleY = FixedDiv(imagesHudY<<16,hudboundsy<<16);
+	int imageScaleToUIScaleX = FixedDiv(hudboundsx<<16,imagesHudX<<16);
+	int imageScaleToUIScaleY = FixedDiv(hudboundsy<<16,imagesHudY<<16);
 	
 	int setDistanceX = intFloat(IMAGEX * 1.27); //Distance between map sets on X
 	int setDistanceY = intFloat(IMAGEY * 1.5); //Distance between map sets on Y
@@ -115,6 +123,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 	
 	int startingX, startingY; //Virtual values for row/column offsets
 	int posX, posY; //Values for map set image placements
+	
+	int messageScaleX; //Used internally for modifying text scales. Should make different scalings easier to handle
+	int messageScaleY; //Used internally for modifying text scales. Should make different scalings easier to handle
 	
 	int pageOffset; //A index value used for checking what page of map sets the user is on
 	int pagination; //Calculated value used for determining the starting offset of the main loop
@@ -161,7 +172,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 				
 		//Clamp UI elements into this space
 		SetHudClipRect(mouseCursorBorderLeft,mouseCursorBorderTop,mouseCursorBorderRight-mouseCursorBorderLeft,mouseCursorBorderBottom-mouseCursorBorderTop);
-		SetHudSize(hudboundsx,hudboundsy,false);
+		messageScaleX = hudboundsx;
+		messageScaleY = hudboundsy;
+		SetHudSize(messageScaleX,messageScaleY,false);
 		
 		//Draw the background
 		SetFont("LEXBACKG");
@@ -172,32 +185,29 @@ Script "Lexicon_VoteInterface" (void) clientside
 
 		//Draw a border for the mapsets
 		SetFont("LEXBORD2");
-		posX = intFloat(hudboundsx*0.125) + 0.1;
-		posY = intFloat(hudboundsy*0.18) + 0.1;
-		drawBorder(posX, posY, 1, 155, intFloat(hudboundsx*0.1875*MAXCOLS)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+		posX = intFloat(messageScaleX*0.125) + 0.1;
+		posY = intFloat(messageScaleY*0.18) + 0.1;
+		drawBorder(posX, posY, 1, 155, intFloat(messageScaleX*0.1875*MAXCOLS)>>16, intFloat(messageScaleY*0.667)>>16, "LexiconWhite");
 		
 		//Now draw border for the informational panel
-		posX = intFloat(hudboundsx*0.695) + 0.1;
-		posY = intFloat(hudboundsy*0.18) + 0.1;
-		drawBorder(posX, posY, 1, 151, intFloat(hudboundsx*0.1875)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
+		posX = intFloat(messageScaleX*0.695) + 0.1;
+		posY = intFloat(messageScaleY*0.18) + 0.1;
+		drawBorder(posX, posY, 1, 151, intFloat(messageScaleX*0.1875)>>16, intFloat(messageScaleY*0.667)>>16, "LexiconWhite");
 
 		//Draw cursor
-		SetHudSize(hudboundsx,hudboundsy,false);
 		SetFont("CURSOR");
 		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, (cursorx*1.0) + 0.1, (cursory*1.0) + 0.1, 0.0);	
 		
-		//Display the map set type currently enabled. This is going to function as button that just cycles
-		SetHudSize(FixedDiv(hudboundsx,FONTSCALE),FixedDiv(hudboundsy,FONTSCALE),false);
-		
-		//Let's draw map filters
-		SetFont("LXSMALLFONT");
-		posY = intFloat(hudboundsy*0.055);
-		
-		//Now draw the preferred game mode		
+		//Now draw the preferred game mode	
 		typeName = gameModeTypes[selectedGameMode][1];
-		posX = intFloat(hudboundsx*0.36);	
+		SetFont("LXBIGFONT");
+		messageScaleX = ftoi(intFloat(1.25*hudboundsx));
+		messageScaleY = ftoi(intFloat(1.25*hudboundsy));
+		SetHudSize(messageScaleX,messageScaleY,false);
+		posX = intFloat(messageScaleX*0.72);	
+		posY = intFloat(messageScaleY*0.11);
 		HudMessage(s:"Game Mode: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.92)>>16, ((posX>>16) * 1.48)>>16, ((posY>>16) * 0.9)>>16, ((posY>>16) * 1.1)>>16, 0.5, 0.5))
+		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.46)>>16, ((posX>>16) * 0.74)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
 		{
 			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", posX + 0.1, posY, 0.0);
 			uiElementHover = 1;
@@ -219,9 +229,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 		
 		//And draw the map pack
 		typeName = returnLanguageText(strParam(s:"LEX_",s:existingMapSetTypes[selectedMapType],s:"_PACKNAME"));
-		posX = intFloat(hudboundsx*0.12);
+		posX = intFloat(messageScaleX*0.25);
 		HudMessage(s:"Map Type: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.92)>>16, ((posX>>16) * 1.48)>>16, ((posY>>16) * 0.9)>>16, ((posY>>16) * 1.1)>>16, 0.5, 0.5))
+		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.46)>>16, ((posX>>16) * 0.74)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
 		{
 			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", posX + 0.1, posY, 0.0);
 			uiElementHover = 1;
@@ -240,15 +250,17 @@ Script "Lexicon_VoteInterface" (void) clientside
 		else
 			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconLightGray", posX + 0.1, posY, 0.0);
 		
-		SetHudSize(hudboundsx,hudboundsy,false);
 		//Draw left arrow and handle logic
+		messageScaleX = hudboundsx;
+		messageScaleY = hudboundsy;
+		SetHudSize(messageScaleX,messageScaleY,false);
 		SetFont("LARROWL");
 		posX = intFloat(hudcenterx*0.7);
 		posY = intFloat(mouseCursorBorderBottom * 0.933);
 		
 		if(pageOffset > 0)
 		{
-			if(checkConfines(cursorX, cursorY, (posX>>16) - (W_ARROW*UISCALE/2), (posX>>16) + (W_ARROW*UISCALE/2), (posY>>16) - (H_ARROW*UISCALE/2), (posY>>16) + (H_ARROW*UISCALE/2), 1.0, 1.0))
+			if(checkConfines(cursorX, cursorY, (posX>>16) - (intFloat(W_ARROW*UISCALE/2)>>16), (posX>>16) + (intFloat(W_ARROW*UISCALE/2)>>16), (posY>>16) - (intFloat(H_ARROW*UISCALE/2)>>16), (posY>>16) + (intFloat(H_ARROW*UISCALE/2)>>16), 1.0, 1.0))
 			{
 				SetFont("LARROWL2");
 				uiElementHover = 2;
@@ -275,7 +287,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 		{
 			posX = intFloat(hudcenterx*1.3);
 			posY = intFloat(mouseCursorBorderBottom * 0.933);
-			if(checkConfines(cursorX, cursorY, (posX>>16) - (W_ARROW*UISCALE/2), (posX>>16) + (W_ARROW*UISCALE/2), (posY>>16) - (H_ARROW*UISCALE/2), (posY>>16) + (H_ARROW*UISCALE/2), 1.0, 1.0))
+			if(checkConfines(cursorX, cursorY, (posX>>16) - (intFloat(W_ARROW*UISCALE/2)>>16), (posX>>16) + (intFloat(W_ARROW*UISCALE/2)>>16), (posY>>16) - (intFloat(H_ARROW*UISCALE/2)>>16), (posY>>16) + (intFloat(H_ARROW*UISCALE/2)>>16), 1.0, 1.0))
 			{
 				SetFont("LARROWR2");
 				uiElementHover = 3;
@@ -306,7 +318,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0],1) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
 		
 		pagination = pageOffset * maxPageSize;
-		SetHudSize(imagesHudX,imagesHudY,false);
+		messageScaleX = imagesHudX;
+		messageScaleY = imagesHudY;
+		SetHudSize(messageScaleX,messageScaleY,false);
 		//Draw map set boxes
 		if(queriedMapSetCount > 0)
 		{
@@ -314,7 +328,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 			{
 				RemoveMessages(109,109);
 				messageid = 122 + (i - pagination);
-				SetHudSize(imagesHudX,imagesHudY,false);
+				messageScaleX = imagesHudX;
+				messageScaleY = imagesHudY;
+				SetHudSize(messageScaleX,messageScaleY,false);
 				if(i < queriedMapSetCount)
 				{
 					//Increment the row for every MAXCOLS boxes
@@ -336,17 +352,21 @@ Script "Lexicon_VoteInterface" (void) clientside
 						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 121, "LexiconGold", posX, posY, 0.0);
 						
 						//Draw informational panel on the right. Because of how I want to format the title, I need to separate it
-						SetHudSize(hudboundsx,hudboundsy,false);
-						//drawBorder(posX, posY, 1, 151, intFloat(hudboundsx*0.1875)>>16, intFloat(hudboundsy*0.667)>>16, 1, "LexiconWhite");
-						SetHudClipRect(intFloat(hudboundsx*0.695)>>16,intFloat(hudboundsy*0.18)>>16,intFloat(hudboundsx*0.1875)>>16,intFloat(hudboundsy*0.667)>>16,intFloat(hudboundsx*0.1875)>>16);
+						messageScaleX = hudboundsx;
+						messageScaleY = hudboundsy;
+						SetHudSize(messageScaleX,messageScaleY,false);
+						SetHudClipRect(intFloat(messageScaleX*0.695)>>16,intFloat(messageScaleY*0.18)>>16,intFloat(messageScaleX*0.1875)>>16,intFloat(messageScaleY*0.667)>>16,intFloat(messageScaleX*0.1875)>>16);
 						SetFont("LXSMALLFONT");
-						posX = intFloat(hudboundsx*0.79);
-						posY = intFloat(hudboundsy*0.2) + 0.1;
+					
+						//Draw Title
+						posX = intFloat(messageScaleX*0.79);
+						posY = intFloat(messageScaleY*0.2) + 0.1;
 						HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 150, "LexiconGold", posX, posY, 0.0);
 						
-						//Draw title
-						posX = intFloat(hudboundsx*0.7) + 0.1;
-						posY = intFloat(hudboundsy*0.24) + 0.1;
+						//Now draw map information
+						
+						posX = intFloat(messageScaleX*0.7) + 0.1;
+						posY = intFloat(messageScaleY*0.24) + 0.1;
 						str authorInfo = strParam(s:"Author: \c[LexiconWhite]",l:returnMapString(2,i,1),s:"\c-");
 						str dateInfo = strParam(s:"\nDate: \c[LexiconWhite]",l:returnMapString(3,i,1),s:"\c-");
 						str actorInfo = strParam(s:"\nCustom Actors: \c[LexiconWhite]",l:returnMapString(4,i,1),s:"\c-");
@@ -355,7 +375,9 @@ Script "Lexicon_VoteInterface" (void) clientside
 						
 						//Restore image space
 						SetHudClipRect(0,0,0,0,0);	
-						SetHudSize(imagesHudX,imagesHudY,false);
+						messageScaleX = imagesHudX;
+						messageScaleY = imagesHudY;
+						SetHudSize(messageScaleX,messageScaleY,false);
 						
 						uiElementHover = 4+(i - pagination);
 						if(uiElementHover != uiElementHoverLast) 
@@ -376,12 +398,15 @@ Script "Lexicon_VoteInterface" (void) clientside
 							LocalAmbientSound("Lexicon/Back",127);
 						}
 					}
-						
-					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-					posY = columnStart + (setDistanceY * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
+					messageScaleX = hudboundsx;
+					messageScaleY = hudboundsy;
+					SetHudSize(messageScaleX,messageScaleY,false);
+					//There is so much separation here between the UI and the images that I'm better off just recreating the dimensions here
+					posX = intFloat(messageScaleX*0.23) + intFloat(messageScaleX*0.18) * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
+					posY = intFloat(messageScaleY*0.045) + (intFloat(messageScaleY*0.215) * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
 					SetFont("LXSMALLFONT");
 					SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
-					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY, 0.0);
+					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY + 0.1, 0.0);
 					SetHudClipRect(0,0,0,0,0);	
 				}	
 				else
@@ -402,9 +427,11 @@ Script "Lexicon_VoteInterface" (void) clientside
 		
 			RemoveMessages(149,150);
 			SetFont("LXSMALLFONT");
-			SetHudSize(hudcenterx,hudcentery,0);
-			posX = (hudcenterX/2) << 16;
-			posY = intFloat(hudcenterY * 0.15);
+			messageScaleX = hudboundsx;
+			messageScaleY = hudboundsy;
+			SetHudSize(messageScaleX,messageScaleY,false);
+			posX = (messageScaleX/2) << 16;
+			posY = intFloat(messageScaleY * 0.15);
 			
 			HudMessage(s:"No mapsets can be found under your search criteria with the IWAD you have loaded..."; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconLightGray", posX, posY, 0.0);
 		}
@@ -465,8 +492,8 @@ Script "Lexicon_VoteTextDisplay" (int time) clientside
 	}
 	
 	//Weird formula, but we basically need the text a little smaller
-	SetHudSize((CANVASBASEX*UISCALE*1.75)>>16,(CANVASBASEY*UISCALE*1.75)>>16,0);
-	int posX = intFloat(((CANVASBASEX*UISCALE*1.75)>>16)*-0.16);
+	SetHudSize(((CANVASBASEX*UISCALE*7)/4)>>16,((CANVASBASEY*UISCALE*7)/4)>>16,0);
+	int posX = intFloat((((CANVASBASEX*UISCALE*7)/4)>>16)*-0.16);
 	HudMessage(s:VoteText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 146, CR_UNTRANSLATED, posX + 0.1, 32.1, 0.0);
 }
 

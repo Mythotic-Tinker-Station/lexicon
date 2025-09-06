@@ -111,17 +111,6 @@ function bool isUsingWadSmoosh(void)
 	return Doom1Enabled() && TNTEnabled() && PlutoniaEnabled();
 }
 
-//Check if the player number of the activator is the same player connecting to the server
-Script "checkClient" (int player) clientside
-{
-	SetResultValue(player == ConsolePlayerNumber());
-}
-
-Script "SetNetworkStringToClient" (int string) clientside
-{
-	SetCvarString("Lexicon_NetWorkStringTransfer",string);
-}
-
 function bool isDoom1wad(str text)
 {
 	return stricmp(text,"doom1")==0;

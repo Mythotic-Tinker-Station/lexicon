@@ -9,6 +9,7 @@ VERY IMPORTANT: Compile this with ACC, not BCC!
 #DEFINE MAXEXPANSIONS 16
 
 int disableTerminal;
+int WAITTIMER;
 
 #include "LexiconCompat.acs"
 
@@ -33,7 +34,7 @@ Script "Lexicon_Core_Enter" ENTER
 			
 	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
 	{
-		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit,WAITTIMER);
 
 		Delay(1);
 	}
@@ -41,6 +42,7 @@ Script "Lexicon_Core_Enter" ENTER
 
 Script "Lexicon_Core_Open" OPEN
 {
+	WAITTIMER = GetCvar("Lexicon_WaitTimer")*35;
 	//Determine if the current game type must change
 	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
 
@@ -77,6 +79,7 @@ Script "Lexicon_GameTypeChanger" (void)
 	if(isVR())
 	{
 		SetGameplaySetting("SV_NOEXIT",false);
+		SetGameplaySetting("SV_NOMONSTERS",false);
 		SetGameplaySetting("Fraglimit",0);	
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
 			SetCurrentGameMode(gameModeTypes[0][0]);
@@ -84,6 +87,7 @@ Script "Lexicon_GameTypeChanger" (void)
 	else
 	{
 		SetGameplaySetting("SV_NOEXIT",!isCoop);
+		SetGameplaySetting("SV_NOMONSTERS",!isCoop);
 		
 		if(!isCoop && GetCvar("FragLimit") == 0)
 			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));	

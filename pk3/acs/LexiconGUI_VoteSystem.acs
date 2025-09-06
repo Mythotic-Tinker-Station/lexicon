@@ -2,7 +2,6 @@
 #DEFINE IMAGEY 200
 #DEFINE UISCALE 2.0
 #DEFINE HEADERSCALE 0.5
-#DEFINE WAITTIMER 6300
 #DEFINE MAXCOLS 3
 #DEFINE MAXROWS 3
 #DEFINE W_ARROW 128
@@ -463,7 +462,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 }
 
 //Clientside script to show current vote tallies
-Script "Lexicon_VoteTextDisplay" (int time) clientside
+Script "Lexicon_VoteTextDisplay" (int time, int waitTime) clientside
 {
 	SetFont("LXBIGFONT");
 	str VoteText = "";
@@ -484,7 +483,7 @@ Script "Lexicon_VoteTextDisplay" (int time) clientside
 		}
 	}
 	
-	if(time < WAITTIMER && votesForAll > 0)
+	if(time < waitTime && votesForAll > 0)
 	{
 		int minute = time/(35*60);
 		int second = (time/(35)) % 60;

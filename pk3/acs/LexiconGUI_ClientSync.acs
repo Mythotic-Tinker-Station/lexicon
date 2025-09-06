@@ -11,7 +11,7 @@ Script "Lexicon_SyncClientData" (int player)
 	if(GameType() == 0) terminate;
 		
 	//Let's init the cached mapsets first
-	ACS_NamedExecuteWithResult("Lexicon_ClearClientMapCache");
+	ACS_NamedExecuteWithResult("Lexicon_ClearClientMapCache", PlayerNumber());
 	
 	//Sync current player votes and wait
 	for(i = 0; i < 64; i++)
@@ -26,7 +26,9 @@ Script "Lexicon_SyncClientData" (int player)
 	Delay(1);
 	
 	//Generate all of the map info on the client. It's better off this way
-	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client");
+	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", PlayerNumber());
+	
+	PrintBold(d:waittimer);
 }
 
 Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside
@@ -35,10 +37,10 @@ Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientsid
 	playerVotes[player][1] = value2;
 }
 
-Script "Lexicon_ClearClientMapCache" (void) clientside
+Script "Lexicon_ClearClientMapCache" (int player) clientside
 {
-	for(int i = 0; i < MAXEXPANSIONS; i++)
-		existingMapSetTypes[i] = "";
+	if(player != ConsolePlayerNumber()) terminate;
+	clearLexiconMapSetTypes();
 }
 
 Script "Lexicon_SendMapInfoToClient" (int value) clientside
@@ -65,7 +67,7 @@ script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
 			
 	while(PlayerIsSpectator(arg1))
 	{
-		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit,WAITTIMER);
 
 		Delay(1);
 	}
@@ -78,11 +80,12 @@ Script "Lexicon_PlayerDisconnect" (int player) DISCONNECT
 		
 	removeVote(player);
 	SetActivator(0,player);
-	RemoveMessages(100,150);
+	RemoveMessages(100,160);
+	SetPlayerProperty(0,0,PROP_TOTALLYFROZEN);
 	
 	while(PlayerIsSpectator(player))
 	{
-		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit);
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit,WAITTIMER);
 		
 		Delay(1);
 	}

@@ -89,7 +89,8 @@ Script "Lexicon_GenerateMaps_Server" (void)
 }
 
 //Generate map info for a client
-Script "Lexicon_GenerateMaps_Client" (void) clientside
+Script "Lexicon_GenerateMaps_Client" (int player) clientside
 {	
+	if(player != ConsolePlayerNumber()) terminate;
 	addLexiconMapSets();
 }

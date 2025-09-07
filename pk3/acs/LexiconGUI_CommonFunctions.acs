@@ -182,3 +182,22 @@ function void drawBorder(int x, int y, int type, int startid, int width, int hei
 	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid+2, color, x, y, 0.0);
 	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid+3, color, x+(width<<16), y, 0.0);
 }
+
+function int GetInvertedMouse(int player)
+{
+	return GetUserCvar(player,"invertmouse") == 0 ? 1 : -1;
+}
+
+function int GetMouseSensitivityX(int player)
+{
+	int overallX = isZDoom() ? GetCvar("m_sensitivity_x") : GetCvar("mouse_sensitivity");
+	int yaw = GetCvar("m_yaw");
+	return FixedMul(overallX,yaw);
+}
+
+function int GetMouseSensitivityY(int player)
+{
+	int overallY = isZDoom() ? GetCvar("m_sensitivity_y") : GetCvar("mouse_sensitivity");
+	int pitch = GetCvar("m_pitch");
+	return FixedMul(overallY,pitch);
+}

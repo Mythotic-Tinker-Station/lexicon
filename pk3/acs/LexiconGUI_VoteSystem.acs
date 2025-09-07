@@ -85,6 +85,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	if(playerNum != ConsolePlayerNumber()) terminate;
 
 	int cursorx, cursory;
+		
 	int hudboundsx = intFloat(CANVASBASEX*UISCALE)>>16;
 	int hudboundsy = intFloat(CANVASBASEY*UISCALE)>>16;
 	int hudcenterx = hudboundsx/2;
@@ -110,6 +111,9 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	int uiScaleToImageScaleY = FixedDiv(imagesHudY<<16,hudboundsy<<16);
 	int imageScaleToUIScaleX = FixedDiv(hudboundsx<<16,imagesHudX<<16);
 	int imageScaleToUIScaleY = FixedDiv(hudboundsy<<16,imagesHudY<<16);
+
+	int rowStart = intFloat(imagesHudX * 0.229); //Each row starts at this value
+	int columnStart = intFloat(imagesHudY * 0.0875); //Each column starts at this value
 	
 	int setDistanceX = intFloat(IMAGEX * 1.27); //Distance between map sets on X
 	int setDistanceY = intFloat(IMAGEY * 1.5); //Distance between map sets on Y
@@ -117,9 +121,6 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	int maxrow = 4; //Maximum amount of boxes per row
 	int maxcol = 3; //Maximum amount of boxes per column
 	int rowincrementor; //This is a helper value to increment to the next row
-	
-	int rowStart = intFloat(imagesHudX * 0.229); //Each row starts at this value
-	int columnStart = intFloat(imagesHudY * 0.0875); //Each column starts at this value
 	
 	int startingX, startingY; //Virtual values for row/column offsets
 	int posX, posY; //Values for map set image placements
@@ -147,7 +148,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	{
 		//Get input for the player
 		int yaw = GetPlayerInput(-1, INPUT_YAW);
-		int pitch = GetPlayerInput(-1, INPUT_PITCH);
+		int pitch = GetPlayerInput(-1, INPUT_PITCH) * GetInvertedMouse(playerNum);
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
 		int oldbuttons = GetPlayerInput(-1, INPUT_OLDBUTTONS);
 		int Lclicking = buttons & BT_ATTACK && !(oldbuttons & BT_ATTACK);
@@ -155,10 +156,10 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		
 		//Clamp mouse inputs for the cursor to keep it in the bounds
 		if(yaw > 1 || yaw < -1)
-			cursorx -= yaw/16;
+			cursorx -= FixedMul(yaw/18,GetMouseSensitivityX(playerNum));
 
 		if(pitch > 1 || pitch < -1)
-			cursory -= pitch/8;
+			cursory -= FixedMul(pitch/9,GetMouseSensitivityY(playerNum));
 
 		if(cursorx < mouseCursorBorderLeft)
 			cursorx = mouseCursorBorderLeft;	
@@ -207,7 +208,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		posX = intFloat(messageScaleX*0.72);	
 		posY = intFloat(messageScaleY*0.11);
 		HudMessage(s:"Game Mode: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.46)>>16, ((posX>>16) * 0.74)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
+		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.5)>>16, ((posX>>16) * 0.8)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
 		{
 			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", posX + 0.1, posY, 0.0);
 			uiElementHover = 1;
@@ -231,7 +232,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		typeName = returnLanguageText(strParam(s:"LEX_",s:existingMapSetTypes[selectedMapType],s:"_PACKNAME"));
 		posX = intFloat(messageScaleX*0.25);
 		HudMessage(s:"Map Type: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.46)>>16, ((posX>>16) * 0.74)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
+		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.5)>>16, ((posX>>16) * 0.9)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
 		{
 			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", posX + 0.1, posY, 0.0);
 			uiElementHover = 1;
@@ -356,7 +357,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 						messageScaleX = hudboundsx;
 						messageScaleY = hudboundsy;
 						SetHudSize(messageScaleX,messageScaleY,false);
-						SetHudClipRect(intFloat(messageScaleX*0.695)>>16,intFloat(messageScaleY*0.18)>>16,intFloat(messageScaleX*0.1875)>>16,intFloat(messageScaleY*0.667)>>16,intFloat(messageScaleX*0.1875)>>16);
+						SetHudClipRect(intFloat(messageScaleX*0.695)>>16,intFloat(messageScaleY*0.18)>>16,intFloat(messageScaleX*0.18)>>16,intFloat(messageScaleY*0.667)>>16,intFloat(messageScaleX*0.18)>>16);
 						SetFont("LXSMALLFONT");
 					
 						//Draw Title
@@ -404,11 +405,11 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					SetHudSize(messageScaleX,messageScaleY,false);
 					//There is so much separation here between the UI and the images that I'm better off just recreating the dimensions here
 					posX = intFloat(messageScaleX*0.23) + intFloat(messageScaleX*0.18) * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-					posY = intFloat(messageScaleY*0.0625) + (intFloat(messageScaleY*0.215) * rowincrementor) + intFloat((IMAGEY/2) * 1.2);				
+					posY = intFloat(messageScaleY*0.167) + (intFloat(messageScaleY*0.215) * rowincrementor);				
 					SetFont("LXSMALLFONT");
-					SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
+					//SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
 					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY + 0.1, 0.0);
-					SetHudClipRect(0,0,0,0,0);	
+					//SetHudClipRect(0,0,0,0,0);	
 				}	
 				else
 				{

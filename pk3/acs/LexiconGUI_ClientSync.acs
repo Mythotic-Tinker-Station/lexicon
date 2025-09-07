@@ -23,7 +23,7 @@ Script "Lexicon_SyncClientData" (int player)
 	for(i = 0; i < MAXEXPANSIONS; i++)
 		NamedSendNetworkString("Lexicon_SendMapInfoToClient",StrParam(s:existingMapSetTypes[i],c:i+1));	
 	
-	Delay(5);
+	Delay(MAXEXPANSIONS+1);
 	
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", PlayerNumber());

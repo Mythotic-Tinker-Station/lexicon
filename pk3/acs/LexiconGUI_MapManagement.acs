@@ -52,6 +52,7 @@ function void clearQuery(void)
 
 function void queryMapSets(void)
 {
+	clearQuery();
 	queriedMapSetCount = 0;
 	for(int i = 0; i < maxTotalMapSets; i++)
 	{	

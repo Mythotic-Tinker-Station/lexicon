@@ -17,7 +17,7 @@ Script "Lexicon_SyncClientData" (int player)
 	for(i = 0; i < 64; i++)
 		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
 	
-	Delay(2);
+	Delay(10);
 		
 	//I better send the strings to the player map prefixes array, then wait
 	for(i = 0; i < MAXEXPANSIONS; i++)

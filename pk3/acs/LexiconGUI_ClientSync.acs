@@ -27,8 +27,6 @@ Script "Lexicon_SyncClientData" (int player)
 	
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", PlayerNumber());
-	
-	PrintBold(d:waittimer);
 }
 
 Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside

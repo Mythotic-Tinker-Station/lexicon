@@ -15,13 +15,13 @@ Script "Lexicon_SyncClientData" (int player)
 	
 	//Sync current player votes and wait
 	for(i = 0; i < 64; i++)
-		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1],PlayerNumber());
+		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
 	
 	Delay(2);
 		
 	//I better send the strings to the player map prefixes array, then wait
 	for(i = 0; i < MAXEXPANSIONS; i++)
-		NamedSendNetworkString("Lexicon_SendMapInfoToClient",StrParam(s:existingMapSetTypes[i],c:i+1),PlayerNumber());	
+		NamedSendNetworkString("Lexicon_SendMapInfoToClient",StrParam(s:existingMapSetTypes[i],c:i+1));	
 	
 	Delay(2);
 	
@@ -29,9 +29,8 @@ Script "Lexicon_SyncClientData" (int player)
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", PlayerNumber());
 }
 
-Script "Lexicon_SendVoteToClient" (int player, int value1, int value2, int client) clientside
+Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside
 {
-	if(client != ConsolePlayerNumber()) terminate;
 	playerVotes[player][0] = value1;
 	playerVotes[player][1] = value2;
 }

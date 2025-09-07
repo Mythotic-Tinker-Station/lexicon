@@ -315,7 +315,8 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		HudMessage(s:"Current Vote"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconRed", posX + 0.4, posY, 0.0);	
 		posY = intFloat(mouseCursorBorderBottom * 0.95);
 		SetFont("LXSMALLFONT");
-		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0],1) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
+		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0]-1,0) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
+		
 		
 		pagination = pageOffset * maxPageSize;
 		messageScaleX = imagesHudX;

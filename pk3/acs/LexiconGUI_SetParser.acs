@@ -1,5 +1,6 @@
 str existingMapSetTypes[MAXEXPANSIONS] = {};
 str MapSetPool[MAXMAPSETSPERPACK * MAXEXPANSIONS] = {};
+str serverAcronymsString;
 int mapsetsParsed;
 int maxTotalMapSets;
 int processedMapSets;
@@ -36,6 +37,7 @@ function void clearLexiconMapSetTypes (void)
 {
 	processedMapSets = 0;
 	maxTotalMapSets = 0;
+	serverAcronymsString = "";
 	for(int i = 0; i < MAXEXPANSIONS; i++)
 	{
 		existingMapSetTypes[i] = "";
@@ -45,6 +47,7 @@ function void clearLexiconMapSetTypes (void)
 //Knowing all the mapset packs, figure out what mapsets actually exist and dump them all into an array
 function void addLexiconMapSets (void)
 {
+	clearAllMaps();
 	processedMapSets = 0;
 	for(int i = 0; i < MAXEXPANSIONS; i++)
 	{
@@ -79,18 +82,37 @@ function void addLexiconMapSets (void)
 		//Add the last discovered index to the map variable
 	}
 	maxTotalMapSets = processedMapSets;
-	MapSetsParsed = true;
+	MapSetsParsed = processedMapSets > 0;
+}
+
+//Clear all of these to freshen up all maps
+function void clearAllMaps (void)
+{
+	for(int i = 0; i < MAXMAPSETSPERPACK * MAXEXPANSIONS; i++)
+		MapSetPool[i] = 0;
 }
 
 //Generate map info for the server
 Script "Lexicon_GenerateMaps_Server" (void)
 {
-	addLexiconMapSets();
+	//Generate a string used for determining all valid map types
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		if(existingMapSetTypes[i] == "") continue;
+			serverAcronymsString = StrParam(s:serverAcronymsString,s:existingMapSetTypes[i]);
+	}
+		
+	addLexiconMapSets();	
 }
 
 //Generate map info for a client
 Script "Lexicon_GenerateMaps_Client" (int player) clientside
 {	
 	if(player != ConsolePlayerNumber()) terminate;
-	addLexiconMapSets();
+	//Keep trying to add mapsets until they are parsed for the client
+	until(MapSetsParsed)
+	{
+		addLexiconMapSets();
+		Delay(1);
+	}
 }

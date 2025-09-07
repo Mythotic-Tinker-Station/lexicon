@@ -1,32 +1,36 @@
 int playerVotes[64][2] = {};
 int winningSets[64][2] = {};
 str VotesDisplay[64] = {};
+int pollTypes[64] = {};
 
 int voteTimeLimit;
 
 Script "Lexicon_SyncClientData" (int player)
 {
 	int i = 0;
-	//We don't need to do this in singleplayer
-	if(GameType() == 0) terminate;
-		
-	//Let's init the cached mapsets first
-	ACS_NamedExecuteWithResult("Lexicon_ClearClientMapCache", PlayerNumber());
+	//We don't need to do this in singleplayer. And no need to sync clients that are already synced!
+	if(GameType() == 0 || pollTypes[player] == 2) terminate;
+	
+	//Let's init the cached mapsets first. If it's already 1 or 2, best to just skip this
+	until(pollTypes[player] == 1)
+	{
+		ACS_NamedExecuteWithResult("Lexicon_ClearClientMapCache", player);
+		Delay(1);
+	}
 	
 	//Sync current player votes and wait
 	for(i = 0; i < 64; i++)
-		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);
-	
-	Delay(10);
+		ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",i,playerVotes[i][0],playerVotes[i][1]);	
 		
-	//I better send the strings to the player map prefixes array, then wait
-	for(i = 0; i < MAXEXPANSIONS; i++)
-		NamedSendNetworkString("Lexicon_SendMapInfoToClient",StrParam(s:existingMapSetTypes[i],c:i+1));	
-	
-	Delay(MAXEXPANSIONS+1);
-	
+	//Keep checking if this script has spat a value back to the array for polling
+	until(pollTypes[player] == 2)
+	{
+		NamedSendNetworkString("Lexicon_SendMapInfoToClient",serverAcronymsString,player);
+		Delay(1);
+	}
+	 
 	//Generate all of the map info on the client. It's better off this way
-	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", PlayerNumber());
+	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", player);
 }
 
 Script "Lexicon_SendVoteToClient" (int player, int value1, int value2) clientside
@@ -39,17 +43,27 @@ Script "Lexicon_ClearClientMapCache" (int player) clientside
 {
 	if(player != ConsolePlayerNumber()) terminate;
 	clearLexiconMapSetTypes();
+	NamedRequestScriptPuke("Lexicon_SendTypePollToServer",PlayerNumber(),1);
 }
 
 Script "Lexicon_SendMapInfoToClient" (int value) clientside
 {
-	if(strlen(value) > 1)
+	int counter = 0;
+	while(strlen(value) > 1)
 	{
 		str stringValue = StrLeft(value,4);
-		int id = GetChar(StrRight(value,1),0)-1;
+		value = StrRight(value,strlen(value)-4);
 		if(stringValue != "")
-			existingMapSetTypes[id] = stringValue;
+			existingMapSetTypes[counter] = stringValue;
+			
+		counter++;
 	}
+	NamedRequestScriptPuke("Lexicon_SendTypePollToServer",PlayerNumber(),2);
+}
+
+Script "Lexicon_SendTypePollToServer" (int player, int value) NET
+{
+	pollTypes[player] = value;
 }
 
 script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
@@ -61,7 +75,8 @@ script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
 	if(type == 9)
 	{
 		ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
-	}
+	} //Signal that this client id is no longer synced
+	else if(type == 15) pollTypes[arg1] = 0;
 			
 	while(PlayerIsSpectator(arg1))
 	{

@@ -161,6 +161,8 @@ function bool isLORwad(str text)
 function void drawBorder(int x, int y, int type, int startid, int width, int height, int color)
 {
 	int i;
+	width = (width/16)*16; //normalize
+	height = (height/16)*16; //normalize
 	if(type == 0) SetFont("LEXBORD1");
 	else 
 		SetFont("LEXBORD2");

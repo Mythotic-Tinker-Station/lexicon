@@ -79,7 +79,7 @@ function void clearWinners (void)
 }
 
 //Main thinker for the vote menu
-Script "Lexicon_VoteInterface" (void) clientside
+Script "Lexicon_VoteInterface" (int playerNum) clientside
 {
 	int cursorx, cursory;
 	int hudboundsx = intFloat(CANVASBASEX*UISCALE)>>16;
@@ -87,7 +87,7 @@ Script "Lexicon_VoteInterface" (void) clientside
 	int hudcenterx = hudboundsx/2;
 	int hudcentery = hudboundsy/2;
 	
-	int playerNum = PlayerNumber();
+	if(playerNum != ConsolePlayerNumber()) terminate;
 	
 	//Set the percentages of the offsets for the boundaries, necessary for the UI to appear symmetrical
 	int offsetLeft = 0.111 * hudboundsx / 2;

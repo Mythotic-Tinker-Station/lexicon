@@ -51,6 +51,7 @@ function void addLexiconMapSets (void)
 	processedMapSets = 0;
 	for(int i = 0; i < MAXEXPANSIONS; i++)
 	{
+		//PrintBold(s:strPAram(s:"Processing Acronym: ",s:existingMapSetTypes[i]));
 		if(existingMapSetTypes[i] == "")
 			continue;
 		
@@ -83,6 +84,7 @@ function void addLexiconMapSets (void)
 	}
 	maxTotalMapSets = processedMapSets;
 	MapSetsParsed = processedMapSets > 0;
+	//Printbold(s:StrParam(s:"Map sets parsed: ",d:processedMapSets));
 }
 
 //Clear all of these to freshen up all maps

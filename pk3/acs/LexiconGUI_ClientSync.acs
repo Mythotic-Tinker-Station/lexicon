@@ -28,7 +28,10 @@ Script "Lexicon_SyncClientData" (int player)
 		NamedSendNetworkString("Lexicon_SendMapInfoToClient",serverAcronymsString,player);
 		Delay(1);
 	}
-	 
+
+	//Everytime the missing maps issue occurs, this script was executed twice. Maybe that will help here?
+	NamedSendNetworkString("Lexicon_SendMapInfoToClient",serverAcronymsString,player);
+
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", player);
 }
@@ -56,6 +59,7 @@ Script "Lexicon_SendMapInfoToClient" (int value) clientside
 		if(stringValue != "")
 			existingMapSetTypes[counter] = stringValue;
 			
+		//PrintBold(s:"Acronym parsed: ",s:existingMapSetTypes[counter]);
 		counter++;
 	}
 	NamedRequestScriptPuke("Lexicon_SendTypePollToServer",PlayerNumber(),2);

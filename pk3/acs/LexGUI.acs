@@ -66,7 +66,7 @@ Script "Lexicon_Core_Open" OPEN
 //Run this only in Zandronum
 Script "Lexicon_TerminalExit" (int pln) NET
 {
-	SetActivator(pln);
+	SetActivatorToPlayer(pln);
 	if(!(Classifyactor(0) & ACTOR_ALIVE))
 		TakeInventory("LexiconTerminalExit",1);
 }

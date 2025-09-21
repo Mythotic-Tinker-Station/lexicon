@@ -29,9 +29,6 @@ Script "Lexicon_SyncClientData" (int player)
 		Delay(1);
 	}
 
-	//Everytime the missing maps issue occurs, this script was executed twice. Maybe that will help here?
-	NamedSendNetworkString("Lexicon_SendMapInfoToClient",serverAcronymsString,player);
-
 	//Generate all of the map info on the client. It's better off this way
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Client", player);
 }
@@ -59,7 +56,7 @@ Script "Lexicon_SendMapInfoToClient" (int value) clientside
 		if(stringValue != "")
 			existingMapSetTypes[counter] = stringValue;
 			
-		//PrintBold(s:"Acronym parsed: ",s:existingMapSetTypes[counter]);
+		//PrintBold(s:"Acronym parsed for client: ",s:existingMapSetTypes[counter]);
 		counter++;
 	}
 	NamedRequestScriptPuke("Lexicon_SendTypePollToServer",PlayerNumber(),2);
@@ -78,7 +75,8 @@ script "Lexicon_PlayerConnect" (int type, int arg1, int arg2) EVENT
 	//GAMEEVENT_PLAYERCONNECT
 	if(type == 9)
 	{
-		ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
+		SetActivatorToPlayer(arg1);
+		ACS_NamedExecuteWithResult("Lexicon_SyncClientData",arg1);
 	} //Signal that this client id is no longer synced
 	else if(type == 15) pollTypes[arg1] = 0;
 			
@@ -96,7 +94,7 @@ Script "Lexicon_PlayerDisconnect" (int player) DISCONNECT
 		terminate;	
 		
 	removeVote(player);
-	SetActivator(0,player);
+	SetActivatorToPlayer(player);
 	RemoveMessages(100,160);
 	SetPlayerProperty(0,0,PROP_TOTALLYFROZEN);
 	

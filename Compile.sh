@@ -32,14 +32,14 @@ if ! command -v 7za &> /dev/null; then
 fi
 
 echo "Step 1: ACS"
-compiler/bcc -acc-stats -acc-err-file -x bcs pk3/acs/Lexicon.acs pk3/acs/lexicon.o
+compiler/bcc -acc-stats -acc-err-file -x bcs pk3/acs/Lexicon.acs pk3/ACS/lexicon.o
 if [ -f pk3/acs/acs.err ]; then
     rm pk3/acs/acs.err
 fi
 
 echo "Step 2: PACK"
 cd pk3 || { echo "Failed to change directory to pk3" >&2; exit 1; }
-7za a -r -ssw -mx9 -tzip  ../${FileName}-New.pk3 *.kvx *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl || { echo "Failed to pack files" >&2; exit 1; }
+7za a -tzip -r -ssw -mx=9 "../${FileName}-New.pk3" .
 
 echo "Step 3: REPLACE"
 cd .. || { echo "Failed to change directory to parent" >&2; exit 1; }

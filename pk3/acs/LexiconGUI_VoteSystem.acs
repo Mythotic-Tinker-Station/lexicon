@@ -599,48 +599,49 @@ Script "Lexicon_VoteTally" (void)
 				//Determine the level name needed
 				str iwad = strParam(s:"LEX_",s:returnMapString(0,pickedMapSet,0),s:"_IWAD");
 				str append = isDoom1wad(iwad) ? "E1M1" : "01";
-				str level = strParam(s:returnMapString(1,pickedMapSet,0)); //In this case, we're taking the mapset name
-				if(level == "Doom II")
+				str mapset = strParam(s:returnMapString(1,pickedMapSet,0)); //In this case, we're taking the mapset name
+				str level = "";
+				if(mapset == "Doom II")
 					level = "MAP01";	
-				else if(strParam(s:returnMapString(1,pickedMapSet,0)) == "Ultimate Doom")
+				else if(mapset == "Ultimate Doom")
 					level = "E1M1";
-				else if(level == "TNT: Evilution")
+				else if(mapset == "TNT: Evilution")
 				{
 					if(isUsingWadSmoosh())
 						level = "TN_MAP01";
 					else
 						level = "MAP01";
 				}
-				else if(level == "The Plutonia Experiment")
+				else if(mapset == "The Plutonia Experiment")
 				{
 					if(isUsingWadSmoosh())
 						level = "PL_MAP01";
 					else
 						level = "MAP01";
 				}
-				else if(level == "The Master Levels")
+				else if(mapset == "The Master Levels")
 				{
 					if(isUsingWadSmoosh())
 						level = "ML_MAP01";
 					else
 						level = "MAP01";
 				}
-				else if(level == "No Rest for the Living")
+				else if(mapset == "No Rest for the Living")
 				{
 					if(isUsingWadSmoosh())
 						level = "NV_MAP01";
 					else
 						level = "MAP01";
 				}
-				else if(level == "Sigil")
+				else if(mapset == "Sigil")
 				{
 					level = "E5M1";
 				}
-				else if(level == "Sigil II")
+				else if(mapset == "Sigil II")
 				{
 					level = "E6M1";
 				}
-				else if(level == "Legacy of Rust")
+				else if(mapset == "Legacy of Rust")
 				{
 					if(isUsingWadSmoosh())
 						level = "LR_MAP01";

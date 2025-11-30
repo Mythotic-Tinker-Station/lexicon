@@ -597,7 +597,7 @@ Script "Lexicon_VoteTally" (void)
 				SetPlayerProperty(1,0,PROP_TOTALLYFROZEN);
 				
 				//Determine the level name needed
-				str iwad = strParam(s:"LEX_",s:returnMapString(0,pickedMapSet,0),s:"_IWAD");
+				str iwad = strParam(l:strparam(s:returnMapString(0,pickedMapSet,0),s:"_MAPSET_IWAD"));
 				str append = isDoom1wad(iwad) ? "E1M1" : "01";
 				str mapset = strParam(s:returnMapString(1,pickedMapSet,0)); //In this case, we're taking the mapset name
 				str level = "";

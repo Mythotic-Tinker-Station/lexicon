@@ -97,6 +97,22 @@ Script "Lexicon_GameTypeChanger" (void)
 	}
 }
 
+script "Lexicon_Doom1EpisodeHealthReset" ENTER
+{
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str mapSuffix = strright(strparam(n:PRINTNAME_LEVEL), 2);
+	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
+	
+	// Set player health at the start of each episode for Doom 1 mapsets
+	if (isDoom1wad(iwad) && (!StrIcmp(mapSuffix, "M1")))
+	{
+		if (GetActorProperty(0, APROP_Health) < 50)
+		{
+			SetActorProperty(0, APROP_Health, 50);
+		}
+	}
+}
+
 Script "Lexicon_InGame" (int arg1)
 {
 	if(isVR())

@@ -1,7 +1,11 @@
 int queryMapSetsData[MAXMAPSETSPERPACK] = {};
+int queryMapSetsDataTemp[MAXMAPSETSPERPACK] = {};
 int selectedMapType; //The value used here for checking what pack to be looking at
 int selectedGameMode; //The value the user has selected for the game mode
 int queriedMapSetCount;
+
+//Max function
+function int max(int a, int b) { return a > b ? a : b; }
 
 //Return information from a language lump about a map
 function str returnMapString(int type, int id, int useQuery)
@@ -46,10 +50,20 @@ function void clearQuery(void)
 {
 	for(int i = 0; i < maxTotalMapSets; i++)
 	{
-		queryMapSetsData[i] = 0;
+		queryMapSetsData[i] = -1;
 	}
 }
 
+//Clear query, in case needed elsewhere
+function void clearQueryTempData(void)
+{
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{
+		queryMapSetsDataTemp[i] = -1;
+	}
+}
+
+//Query all the mapsets that belong to a certain pack to show up in the selected pack
 function void queryMapSets(void)
 {
 	clearQuery();
@@ -61,10 +75,48 @@ function void queryMapSets(void)
 			queryMapSetsData[queriedMapSetCount] = i;
 			queriedMapSetCount++;
 		}
-		else queryMapSetsData[i] = 0;
+		//else queryMapSetsData[i] = -1;
 	}
+	sortQuery();
 }
 
+//This method is responsible for re-arranging the queried mapsets by swapping the ids
+function void sortQuery(void)
+{
+	clearQueryTempData();
+	int a = -1;
+	int processedCount = 0;
+	
+	for(int i = 0; i < MAXMAPSETSPERPACK; i++)
+	{
+		bool lesser = false;
+		if(queryMapSetsData[i] == -1) break;
+		str currentName = returnMapString(1,queryMapSetsData[i],0);
+		for(int j = 0; j < MAXMAPSETSPERPACK; j++)
+		{
+			str testName = returnMapString(1,queryMapSetsDataTemp[j],0);
+			if(testName == "") break;
+			if(stricmp(currentName,testName) < 0)
+			{
+				for(a = MAXMAPSETSPERPACK; a > j; a--)
+					queryMapSetsDataTemp[a] = queryMapSetsDataTemp[a-1];
+					
+				queryMapSetsDataTemp[j] = queryMapSetsData[i];
+				lesser = true;
+				break;
+			}	
+		}
+		if(!lesser) queryMapSetsDataTemp[processedCount] = i;
+		processedCount++;
+	}
+	
+	for(int k = 0; k < MAXMAPSETSPERPACK; k++)
+		queryMapSetsData[k] = queryMapSetsDataTemp[k];
+		
+	clearQueryTempData();
+}
+
+//Return mapset value from the queried results
 function int returnQuery(int mapset)
 {
 	int result = 0;

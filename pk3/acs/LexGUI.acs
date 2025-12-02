@@ -113,6 +113,20 @@ script "Lexicon_Doom1EpisodeHealthReset" ENTER
 	}
 }
 
+script "Lexicon_Doom1TextureReplacement" OPEN
+{
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
+
+	if (isDoom1wad(iwad))
+	{
+		ReplaceTextures("BRNPOIS","BRNPOIS1");
+		ReplaceTextures("NUKEPOIS","NUKPOIS1");
+		ReplaceTextures("SW1BRN1","SW1BRN1A");
+		ReplaceTextures("SW2BRN1","SW2BRN1A");
+	}
+}
+
 Script "Lexicon_InGame" (int arg1)
 {
 	if(isVR())

@@ -15,31 +15,4 @@ Graphic "LEXBACKG", 128, 128
 	Patch "LEXBACKG", 0, 0
 }
 
-Graphic "IDD5TN", 320, 200
-{
-	Patch "IDD5TN", 0, 0
-}
-
-Graphic "IDD6TN", 489, 366
-{
-	XScale 1.528
-	YScale 1.830
-	Patch "IDD6TN", 0, 0
-}
-
-Graphic "IDD7TN", 320, 200
-{
-	Patch "IDD7TN", -53, 0
-}
-
-Graphic "IDD8TN", 320, 200
-{
-	Patch "IDD8TN", -68, 0
-}
-
-Graphic "IDD9TN", 320, 200
-{
-	Patch "IDD9TN", -53, 0
-}
-
 // End of texture definitions

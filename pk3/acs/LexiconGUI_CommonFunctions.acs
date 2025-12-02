@@ -191,6 +191,7 @@ function int GetInvertedMouse(int player)
 function int GetMouseSensitivityX(int player)
 {
 	int overallX = isZDoom() ? GetCvar("m_sensitivity_x") : GetCvar("mouse_sensitivity");
+	overallX = GetCvar("m_sensitivity_x") + GetCvar("mouse_sensitivity");
 	int yaw = GetCvar("m_yaw");
 	return FixedMul(overallX,yaw);
 }
@@ -198,6 +199,7 @@ function int GetMouseSensitivityX(int player)
 function int GetMouseSensitivityY(int player)
 {
 	int overallY = isZDoom() ? GetCvar("m_sensitivity_y") : GetCvar("mouse_sensitivity");
+	overallY = GetCvar("m_sensitivity_y") + GetCvar("mouse_sensitivity");
 	int pitch = GetCvar("m_pitch");
 	return FixedMul(overallY,pitch);
 }

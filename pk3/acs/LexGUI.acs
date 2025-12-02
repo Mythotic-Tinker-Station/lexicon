@@ -118,7 +118,7 @@ script "Lexicon_Doom1TextureReplacement" OPEN
 	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
 	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
 
-	if (isDoom1wad(iwad))
+	if (isDoom1wad(iwad) && isUsingWadSmoosh())
 	{
 		ReplaceTextures("BRNPOIS","BRNPOIS1");
 		ReplaceTextures("NUKEPOIS","NUKPOIS1");

@@ -87,22 +87,22 @@ function void sortQuery(void)
 	int a = -1;
 	int processedCount = 0;
 	
-	for(int i = 0; i < MAXMAPSETSPERPACK; i++)
+	for(int i = 0; i < queriedMapSetCount; i++)
 	{
 		bool lesser = false;
 		//Break the loop when it no longer detects valid mapsets
 		if(queryMapSetsData[i] == -1) break;
 		str currentName = returnMapString(1,queryMapSetsData[i],0);
 		//Iterate through each stored mapset inside the temporary data
-		for(int j = 0; j < MAXMAPSETSPERPACK; j++)
+		for(int j = 0; j < queriedMapSetCount; j++)
 		{
 			str testName = returnMapString(1,queryMapSetsDataTemp[j],0);
-			if(testName == "") break; //break if test name is blank
+			if(testName == "UNDEFINED") break; //break if test name is blank
 			//Compare titles
 			if(stricmp(currentName,testName) < 0)
 			{
 				//Shift all mapset ids in the query array up an index. Put the current mapset from the i loop in the spot of the checked set
-				for(a = MAXMAPSETSPERPACK; a > j; a--)
+				for(a = queriedMapSetCount; a > j; a--)
 					queryMapSetsDataTemp[a] = queryMapSetsDataTemp[a-1];
 					
 				queryMapSetsDataTemp[j] = queryMapSetsData[i];
@@ -111,12 +111,12 @@ function void sortQuery(void)
 			}	
 		}
 		//If this is index 0 or the list has already been gone through, put it where the list has ended.
-		if(!lesser) queryMapSetsDataTemp[processedCount] = i;
+		if(!lesser) queryMapSetsDataTemp[processedCount] = queryMapSetsData[i];
 		processedCount++;
 	}
 	
 	//Now refill the query data
-	for(int k = 0; k < MAXMAPSETSPERPACK; k++)
+	for(int k = 0; k < queriedMapSetCount; k++)
 		queryMapSetsData[k] = queryMapSetsDataTemp[k];
 		
 	//And empty the temporary data

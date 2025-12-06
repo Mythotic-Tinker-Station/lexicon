@@ -13,11 +13,11 @@ working
 *.ico
 desktop.ini
 Test-Lexicon.bat
+Test-Lexicon.sh
 TextureStore
 FlatsStore
 StagingArea
 doom.wad
 doom2.wad
 run.*
-runmod.*
-*.o
+*.autosave*

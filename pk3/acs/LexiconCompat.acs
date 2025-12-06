@@ -1,0 +1,122 @@
+// Check if various gameplay mods are being used
+#define COMPATNUMBER 67
+
+str compatArray[COMPATNUMBER] = {
+						"RHR2HEAR", // AEons of Death
+						"ADECVKR4", // Alice: Toys of Madness
+						"ARBARX2", // Aracnocide
+						"M4THNA", // Ashes Series
+						"RBLD1", // Brutal Doom
+						"COKELEVL", // Cola 3: The Soda of Style
+						"EYETARG3", // Colourful Hell
+						"1RTIDL1", // Combined Arms
+						"SPHHUD1", // Combined Arms Gaiden
+						"HARMBL", // Complex Doom
+						"D4DFRONT", // Death Foretold
+						"NIVENPRT", // Deathstrider
+						"HUDSTMEL", // DemonSteele
+						"HB2SB0H", // Doom4Doom
+						"SKY-0151", // Doom 64: Unseen Evil
+						"STHE40MM", // Doomzone
+						"PLAYDOUM", // Doom Delta
+						"Slot8bal", // Doom Tournament
+						"PPDADMO1", // DoomRL Arsenal
+						"BBS_M1", // DoomRPG
+						"DN13D033", // Duke Nukem 3D Weapons & Aliens
+						"BTSTPOIS", // Dusted's Pandemonia
+						"STXBFG1", // Final Doomer
+						"BLZKEY1", // GMOTA
+						"GERAHTBR", // GoldenEye Rogue Agent DS Weapons
+						"DRABORG0", // Guncaster
+						"DBLSRet1", // Halo Doom Evolved
+						"GOLFPIC", // Hellshots Golf
+						"HXGATLIN", // HeXeReTiC Fantasy
+						"HCRDKEYB", // High Noon Drifter
+						"CMETRAFU", // Highway Acceleroid Booster
+						"HXHWSHLD", // HXRTC Project
+						"INHLP2", // Insanity Deathmatch
+						"sierrakn", // Juvenile Power Fantasy
+						"HWMSLOT", // Lambda
+						"NARISELE", // La Tailor Girl
+						"LDM_BACK", // LegenDoom
+						"CIGAR13", // Lt. Typhon
+						"invsiph", // MetaDoom
+						"WPFSDMCN", // Metroid Dreadnought
+						"Z_SKULL2", // NeoCore
+						"NTEINT27", // Netronian Chaos
+						"NTMLOGO2", // Nobody Told Me About id
+						"PARKLOG6", // Parkour
+						"BELIPA1H", // Painkiller Mutilator
+						"P_mnublk", // Painslayer
+						"BUTNBALL", // PokéDoom
+						"POSTLPIC", // POSTAL: Running With Chainsaws
+						"BARBACR1", // Project Brutality 3.0
+						"MSXSLCT1", // Project MSX
+						"ST-PSY8B", // Psychic
+						"QCDBACK", // Quake Champions: Doom Edition
+						"TMSTATI1", // Rampancy
+						"PERK1SOH", // Real Guns Advanced 2
+						"RRMEND10", // Rebel Rumble
+						"RO_MDOOM", // Russian Overkill
+						"DOMNOTCH", // Samsara
+						"sgdlogo2", // Satanic Gameshow Deluxe
+						"NOSATK", // Space Hunter
+						"SPPAUSE8", // Spawn: Path of Damnation
+						"SB-MCLP", // Supercharge
+						"RELPIST7", // Trailblazer
+						"THROWJK", // Treasure Tech
+						"Upbrmmax", // Weasel Presents: Terrorists!
+						"WLFSTART", // Weasel Presents: NAZIS!
+						"BarForce", // Xim's Star Wars Doom
+						"H_ICENI6" // Zero Tolerance [2016 REDUX]
+};
+
+function bool isGameModded (void)
+{
+	if (GetCVar("sv_randommaprotation") && GetCVar("sv_maprotation")) { return true; }
+	for(int i = 0; i <= COMPATNUMBER; i++)
+	{
+		if (CheckFont(compatArray[i])) { return true; }
+	}
+	return false;
+}
+
+// [tv50] GetTimeProperty is a new function in Zandronum that is treated as a dummy
+// [tv50] in ZDoom, returning 0 there (as opposed to 1970 in Zandronum with the
+// [tv50] parameters chosen). Compared to previous methods, no side effects have
+// [tv50] come from this, so this should be used for checking the current source port.
+
+function bool isZDoom (void) { return GetTimeProperty(0, 5, true) == 0; } // TM_YEAR = 5
+
+// A handy method of detecting Skulltag content. Thanks to TheZombieKiller!
+function bool isSkulltagLoaded (void) 
+{
+	int doomsphereTid = UniqueTid();
+	bool result;
+
+	// Check if Zandronum is running, and if Skulltag content is loaded
+	if (GetPlayerAccountName(0) != 0)
+	{
+		if (SpawnForced("Doomsphere", 0, 0, 0, doomsphereTid, 0))
+		{
+			Thing_Remove(doomsphereTid);
+			result = true;
+		}
+	}
+	return result;
+}
+
+function bool isMusicRandomizerLoaded (void) 
+{
+	int musicRandomizerTid = UniqueTid();
+	bool result;
+
+	if (SpawnForced("DemonSteeleIsSuperCoolAndYouShouldProbablyPlayIt", 0, 0, 0, musicRandomizerTid, 0))
+	{
+		Thing_Remove(musicRandomizerTid);
+		result = true;
+	}
+	
+	if (CheckFont("QCDE-OST")) { result = true; }
+	return result;
+}

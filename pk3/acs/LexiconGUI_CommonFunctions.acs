@@ -1,0 +1,205 @@
+function int itof(int x) { return x << 16; }
+function int ftoi(int x) { return x >> 16; }
+
+function int intFloat(int toround)
+{
+	return itof(ftoi(toround));
+}
+
+function int RemoveMessages(int rangemin, int rangemax)
+{
+	for(int a = rangemin; a <= rangemax; a++)
+		HudMessage(s:""; HUDMSG_PLAIN, a, CR_UNTRANSLATED, 0.0, 0.0, 0.1);
+
+	return 0;
+}
+
+function str getDynLangEntry(str p1, str p2, str p3)
+{
+    // get entry
+    str name = strparam(s:p1, s:"_", s:p2, s:"_", s:p3);
+    str text = strparam(l:name);
+
+    // check if listing exists
+    if(text == name)
+    {
+		// if it doesnt, return some string to tell us it doesnt exist
+        return "_LANG_UNDEFINED_";
+    }
+
+	// return the string from language
+    return text;
+}
+
+//Scales should always be floats
+function int checkConfines(int cursorx, int cursory, int xl, int xr, int yl, int yr, int scaleX, int scaleY)
+{
+	cursorx = ftoi(cursorx*scaleX);
+	cursory = ftoi(cursory*scaleY);
+	return cursorx > xl && cursorx < xr && cursory > yl && cursory < yr;	
+}
+
+function bool isVR (void) { return stricmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0; }
+
+//Check if a language entry exists for the provided text
+function str returnLanguageText (str text)
+{
+	return text == strParam(l:text) ? "UNDEFINED" : strParam(l:text);
+}
+
+//Check if Doom 1 map sets can be loaded
+function bool Doom1Enabled(void)
+{
+	//Alright, funny guy, I'll check for both since I'm getting inconsistent results between ports
+	return CheckFont("WIMAP0") && CheckFont("STARTAN1");
+}
+
+//Check if Doom 2 map sets can be loaded
+function bool Doom2Enabled(void)
+{
+	return isUsingWadSmoosh() || (CheckFont("BRICK11") && !(CheckFont("CRWDL6C") || CheckFont("MOSROK2")));
+}
+
+//Check if TNT map sets can be loaded
+function bool TNTEnabled(void)
+{
+	return CheckFont("CRWDL6C");
+}
+
+//Check if Plutonia map sets can be loaded
+function bool PlutoniaEnabled(void)
+{
+	return CheckFont("MOSROK2");
+}
+
+//Check if Master Levels map sets can be loaded
+function bool MasterLevelsEnabled(void)
+{
+	return CheckFont("MSKY1") || CheckFont("ML_SKY1");
+}
+
+//Check if Nerve map sets can be loaded
+function bool NerveEnabled(void)
+{
+	/*Okay, so it's also totally possible Doom complete might not have NWILV00, in which case is a bug there (mapinfo looks for these) and
+	you're SOL. Sorry.
+	*/
+	return CheckFont("NWILV00") && Doom2Enabled();
+}
+
+//Check if Sigil map sets can be loaded
+function bool SigilEnabled(void)
+{
+	return CheckFont("M_EPI5");
+}
+
+//Check if Sigil 2 map sets can be loaded
+function bool Sigil2Enabled(void)
+{
+	return CheckFont("M_EPI6");
+}
+
+//Check if Legacy of Rust map sets can be loaded
+function bool LegacyOfRustEnabled(void)
+{
+	return CheckFont("XWILV00");
+}
+
+//Check for Doom complete/Wad fusion. Usually just means checking multiple functions.
+function bool isUsingWadSmoosh(void)
+{
+	return Doom1Enabled() && TNTEnabled() && PlutoniaEnabled();
+}
+
+function bool isDoom1wad(str text)
+{
+	return stricmp(text,"doom1")==0;
+}
+
+function bool isDoom2wad(str text)
+{
+	return stricmp(text,"doom2")==0;
+}
+
+function bool isTNTwad(str text)
+{
+	return stricmp(text,"tnt")==0;
+}
+
+function bool isPlutoniawad(str text)
+{
+	return stricmp(text,"plutonia")==0;
+}
+
+//Because these may or may not be loaded, I kinda have to have these
+function bool isMasterLevelswad(str text)
+{
+	return stricmp(text,"masterlevels")==0;
+}
+
+function bool isNervewad(str text)
+{
+	return stricmp(text,"nerve")==0;
+}
+
+function bool isSigilwad(str text)
+{
+	return stricmp(text,"sigil")==0;
+}
+
+function bool isSigil2wad(str text)
+{
+	return stricmp(text,"sigil2")==0;
+}
+
+function bool isLORwad(str text)
+{
+	return stricmp(text,"id1")==0;
+}
+
+#DEFINE BORDERLENGTH 16
+function void drawBorder(int x, int y, int type, int startid, int width, int height, int color)
+{
+	int i;
+	width = (width/16)*16; //normalize
+	height = (height/16)*16; //normalize
+	if(type == 0) SetFont("LEXBORD1");
+	else 
+		SetFont("LEXBORD2");
+	
+	str borderText = "";
+	for(i = 0; i < width/16; i++)
+		borderText = strParam(s:borderText,s:"a");
+	
+	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid, color, x, y, 0.0);
+	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid+1, color, x, y+(height<<16), 0.0);
+	
+	if(type == 1) SetFont("LEXBORD3");
+	borderText = "";
+	for(i = 0; i < height/16; i++)
+		borderText = strParam(s:borderText,s:"a\n");
+		
+	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid+2, color, x, y, 0.0);
+	HudMessage(s:borderText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, startid+3, color, x+(width<<16), y, 0.0);
+}
+
+function int GetInvertedMouse(int player)
+{
+	return GetUserCvar(player,"invertmouse") == 0 ? 1 : -1;
+}
+
+function int GetMouseSensitivityX(int player)
+{
+	int overallX = isZDoom() ? GetCvar("m_sensitivity_x") : GetCvar("mouse_sensitivity");
+	overallX = GetCvar("m_sensitivity_x") + GetCvar("mouse_sensitivity");
+	int yaw = GetCvar("m_yaw");
+	return FixedMul(overallX,yaw);
+}
+
+function int GetMouseSensitivityY(int player)
+{
+	int overallY = isZDoom() ? GetCvar("m_sensitivity_y") : GetCvar("mouse_sensitivity");
+	overallY = GetCvar("m_sensitivity_y") + GetCvar("mouse_sensitivity");
+	int pitch = GetCvar("m_pitch");
+	return FixedMul(overallY,pitch);
+}

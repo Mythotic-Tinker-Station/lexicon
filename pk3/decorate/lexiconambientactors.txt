@@ -1,0 +1,31 @@
+/*
+	Base class for sound emitters which replace the ambient monster sounds on various mapsets
+
+	The majority of ambient sounds in vanilla mapsets are handled with inaccessible monsters which 
+	play their active sound through A_Chase. A facet of this is active sounds won't play over each 
+	other. Below is a setup to emulate this behavior.
+
+	States
+	{
+		Spawn:
+			TNT1 A 3
+			TNT1 A 0 A_Jump(3, "MakeSound")
+			Loop
+		MakeSound:
+			TNT1 A 30 A_PlaySound("AMBIENT/SOUND", CHAN_VOICE, 1.0, false, ATTN_IDLE)
+			Goto Spawn
+	}
+
+	Since every call to A_Chase has a 3/256 chance of playing the active sound, A_Jump has the chance
+	set to "3" he tic durations.
+
+	The tic duration next to A_PlaySound is caclulcated with the following formula:
+
+	Sound duration (sec) * 35 tics/sec - # tics in first frame ≈ tic duration
+*/
+
+Actor LexiconAmbientSoundEmitter
+{
+	+NOINTERACTION
+	+NOTONAUTOMAP
+}

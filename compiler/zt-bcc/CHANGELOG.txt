@@ -1,0 +1,13 @@
+zt-bcc 0.10.0 alpha 6:
+* Added the ability to use null for strings.
+* Added exit() function to libbcs, which terminates the running script.
+* Added LIBBCS_FATAL_ALLOC_ERROR macro to libbcs, which will terminate the running script if malloc runs out of memory.
+* Fixed importing references to non-module storage in libraries.
+* Fixed incorrect SendNetworkString function signature.
+* Fixed incorrect PlayerIsSpectator return value.
+* #pragma pointer_space now generates 3 different macros (__PTR_SPC_MODULE/WORLD/GLOBAL__) to tell the current type of pointer space.
+* libbcs memory allocation has been overhauled to be compatible with latest libGDCC.
+* Removed usages of #if in libbcs.
+
+Known bugs:
+* #if preprocessor directive causes issues with character literal parsing. It's recommended to not use it for now (#ifdef and the rest work fine, however).

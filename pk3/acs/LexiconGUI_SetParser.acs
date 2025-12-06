@@ -1,0 +1,120 @@
+str existingMapSetTypes[MAXEXPANSIONS] = {};
+str MapSetPool[MAXMAPSETSPERPACK * MAXEXPANSIONS] = {};
+str serverAcronymsString;
+int mapsetsParsed;
+int maxTotalMapSets;
+int processedMapSets;
+
+//These contain a pool of types that can actually be selected. If you're not using Doom.Wad, for example, don't enable Doom 1 wads
+int enabledSetTypes[MAXEXPANSIONS] = {};
+
+//Call this script from any module/addon pack with the name of your pack. You can include more than 1, if you wish.
+Script "Lexicon_AddMapSet" (int concat, int priority)
+{
+	if(!isVR()) terminate;
+	
+	//This delay exists to give the open script time to clean these up
+	Delay(1);
+	if(existingMapSetTypes[priority]!="")
+	{
+		for(int i = 0; i < MAXEXPANSIONS; i++)
+		{
+			if(existingMapSetTypes[i] == "")
+			{
+				existingMapSetTypes[i] = concat;
+				break;
+			}	
+		}
+	}
+	else
+	{
+		existingMapSetTypes[priority] = concat;
+	}
+}
+
+//This function will clear any old map set types, in case it is ever needed
+function void clearLexiconMapSetTypes (void)
+{
+	processedMapSets = 0;
+	maxTotalMapSets = 0;
+	serverAcronymsString = "";
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		existingMapSetTypes[i] = "";
+	}
+}
+
+//Knowing all the mapset packs, figure out what mapsets actually exist and dump them all into an array
+function void addLexiconMapSets (void)
+{
+	clearAllMaps();
+	processedMapSets = 0;
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		//PrintBold(s:strPAram(s:"Processing Acronym: ",s:existingMapSetTypes[i]));
+		if(existingMapSetTypes[i] == "")
+			continue;
+		
+		for(int j = 1; j < MAXMAPSETSPERPACK; j++)
+		{
+			str mapset = strparam(s:"LEX_",s:existingMapSetTypes[i],s:"_",d:j);
+			if(returnLanguageText(mapset) != "UNDEFINED")
+			{
+				str iwad = returnLanguageText(strParam(s:returnLanguageText(mapset),s:"_MAPSET_IWAD"));
+				if(stricmp(iwad,"UNDEFINED")==0) 
+					iwad = "doom2";
+				if((isDoom1wad(iwad) && Doom1Enabled()) 
+				|| (isDoom2wad(iwad) && Doom2Enabled()) 
+				|| (isTNTwad(iwad) && TNTEnabled()) 
+				|| (isPlutoniawad(iwad) && PlutoniaEnabled())
+				|| (isMasterLevelswad(iwad) && MasterLevelsEnabled())
+				|| (isNervewad(iwad) && NerveEnabled())
+				|| (isSigilwad(iwad) && SigilEnabled())
+				|| (isSigil2wad(iwad) && Sigil2Enabled())
+				|| (isLORwad(iwad) && LegacyofRustEnabled())
+				)
+				{
+					MapSetPool[processedMapSets] = strParam(l:mapset);
+					processedMapSets++;
+				}
+			}
+			else break;
+		}
+		//Add the last discovered index to the map variable
+	}
+	maxTotalMapSets = processedMapSets;
+	MapSetsParsed = processedMapSets > 0;
+	//Printbold(s:StrParam(s:"Map sets parsed: ",d:processedMapSets));
+}
+
+//Clear all of these to freshen up all maps
+function void clearAllMaps (void)
+{
+	for(int i = 0; i < MAXMAPSETSPERPACK * MAXEXPANSIONS; i++)
+		MapSetPool[i] = 0;
+}
+
+//Generate map info for the server
+Script "Lexicon_GenerateMaps_Server" (void)
+{
+	//Generate a string used for determining all valid map types
+	for(int i = 0; i < MAXEXPANSIONS; i++)
+	{
+		if(existingMapSetTypes[i] == "") continue;
+			serverAcronymsString = StrParam(s:serverAcronymsString,s:existingMapSetTypes[i]);
+	}
+		
+	addLexiconMapSets();	
+}
+
+//Generate map info for a client
+Script "Lexicon_GenerateMaps_Client" (int player) clientside
+{	
+	if(player != ConsolePlayerNumber()) terminate;
+	//Keep trying to add mapsets until they are parsed for the client
+	until(MapSetsParsed)
+	{
+		addLexiconMapSets();
+		Delay(1);
+	}
+}

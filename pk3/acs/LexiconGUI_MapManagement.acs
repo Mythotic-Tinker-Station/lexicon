@@ -1,0 +1,210 @@
+int queryMapSetsData[MAXMAPSETSPERPACK] = {};
+int queryMapSetsDataTemp[MAXMAPSETSPERPACK] = {};
+int selectedMapType; //The value used here for checking what pack to be looking at
+int selectedGameMode; //The value the user has selected for the game mode
+int queriedMapSetCount;
+
+//Max function
+function int max(int a, int b) { return a > b ? a : b; }
+
+//Return information from a language lump about a map
+function str returnMapString(int type, int id, int useQuery)
+{
+	str result;
+	switch(type)
+	{
+		//Return acronym
+		case 0:
+			result = useQuery ? MapSetPool[queryMapSetsData[id]] : MapSetPool[id];
+			break;
+		//Return name
+		case 1:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_TITLE"));
+			break;
+		//Return authors
+		case 2:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_AUTHORS"));
+			break;
+		//Return year
+		case 3:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_DATE"));
+			break;
+		//Return custom actors
+		case 4:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_CUSTOM"));
+			if(stricmp(result,"N")==0)
+				result = "No";
+			else if(stricmp(result,"Y")==0)
+				result = "Yes";
+			break;
+		//Return description
+		case 5:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_DESC"));
+			break;
+	}
+	return result;
+}
+
+//Clear query, in case needed elsewhere
+function void clearQuery(void)
+{
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{
+		queryMapSetsData[i] = -1;
+	}
+}
+
+//Clear query, in case needed elsewhere
+function void clearQueryTempData(void)
+{
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{
+		queryMapSetsDataTemp[i] = -1;
+	}
+}
+
+//Query all the mapsets that belong to a certain pack to show up in the selected pack
+function void queryMapSets(void)
+{
+	clearQuery();
+	queriedMapSetCount = 0;
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{	
+		if(stricmp(returnLanguageText(strParam(s:MapSetPool[i],s:"_MAPSET_PACK")),existingMapSetTypes[selectedMapType]) == 0)
+		{	
+			queryMapSetsData[queriedMapSetCount] = i;
+			queriedMapSetCount++;
+		}
+		//else queryMapSetsData[i] = -1;
+	}
+	sortQuery();
+}
+
+//This method is responsible for re-arranging the queried mapsets by swapping the ids
+function void sortQuery(void)
+{
+	clearQueryTempData();
+	int a = -1;
+	int processedCount = 0;
+	
+	for(int i = 0; i < queriedMapSetCount; i++)
+	{
+		bool lesser = false;
+		//Break the loop when it no longer detects valid mapsets
+		if(queryMapSetsData[i] == -1) break;
+		str currentName = returnMapString(1,queryMapSetsData[i],0);
+		//Iterate through each stored mapset inside the temporary data
+		for(int j = 0; j < queriedMapSetCount; j++)
+		{
+			str testName = returnMapString(1,queryMapSetsDataTemp[j],0);
+			if(testName == "UNDEFINED") break; //break if test name is blank
+			//Compare titles
+			if(stricmp(currentName,testName) < 0)
+			{
+				//Shift all mapset ids in the query array up an index. Put the current mapset from the i loop in the spot of the checked set
+				for(a = queriedMapSetCount; a > j; a--)
+					queryMapSetsDataTemp[a] = queryMapSetsDataTemp[a-1];
+					
+				queryMapSetsDataTemp[j] = queryMapSetsData[i];
+				lesser = true;
+				break;
+			}	
+		}
+		//If this is index 0 or the list has already been gone through, put it where the list has ended.
+		if(!lesser) queryMapSetsDataTemp[processedCount] = queryMapSetsData[i];
+		processedCount++;
+	}
+	
+	//Now refill the query data
+	for(int k = 0; k < queriedMapSetCount; k++)
+		queryMapSetsData[k] = queryMapSetsDataTemp[k];
+		
+	//And empty the temporary data
+	clearQueryTempData();
+}
+
+//Return mapset value from the queried results
+function int returnQuery(int mapset)
+{
+	int result = 0;
+	for(int i = 0; i < maxTotalMapSets; i++)
+	{	
+		if(stricmp(returnMapString(0,mapset,1),MapSetPool[i]) == 0)
+			return i;
+	}
+	return result;
+}
+
+#DEFINE MAXGAMEMODES 16
+str gameModeTypes[MAXGAMEMODES][2] =
+{
+	{ "Cooperative", "Cooperative" },
+	{ "Survival", "Survival" },
+	{ "Invasion", "Invasion" },
+	{ "Deathmatch", "Deathmatch" },
+	{ "Teamplay", "Teamplay" },
+	{ "Duel", "Duel" },
+	{ "Terminator", "Terminator" },
+	{ "LastManStanding", "Last Man Standing" },
+	{ "TeamLMS", "Team LMS" },
+	{ "Possession", "Possession" },
+	{ "TeamPossession", "Team Possession" },
+	{ "TeamGame", "Team Game" },
+	{ "CTF", "Capture the Flag" },
+	{ "OneFlagCTF", "One Flag CTF" },
+	{ "Skulltag", "Skulltag" },
+	{ "Domination", "Domination" }
+};
+
+//0 means compatible in both ports, 1 means Zandronum only, 2 means do not show
+int gameModeValues[MAXGAMEMODES] = { 0, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 2 };
+
+//Find the next valid game type depending on source port
+function int findNextGameType(int current)
+{
+	int result = current;
+	int validGameMode = 0;
+	str gameMode = "";
+	for(int i = current+1; i < current+MAXGAMEMODES+1; i++)
+	{
+		int isCoop = i%MAXGAMEMODES == 0 || i%MAXGAMEMODES == 1;
+		int isDeathMatch = i%MAXGAMEMODES == 3 || i%MAXGAMEMODES == 4 || i%MAXGAMEMODES == 5 || i%MAXGAMEMODES == 6 || i%MAXGAMEMODES == 7 || i%MAXGAMEMODES == 8 || i%MAXGAMEMODES == 11;
+		for(int j = 0; j < MAXEXPANSIONS; j++)
+		{
+			gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
+			if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+			{
+				validGameMode = true;
+				break;
+			}
+		}
+		if(validGameMode && gameModeValues[i] != 2 && (gameModeValues[i] == 0 || (gameModeValues[i] == 1 && !isZDoom())))
+		{
+			result = i%MAXGAMEMODES;
+			break;
+		}
+	}
+	if(result == -1) Log(s:"FATAL ERROR - No game modes detected!");
+	return result;
+}
+
+//Find the next available map set type
+function int findNextMapType(int current)
+{
+	int result = current;
+	int isCoop = selectedGameMode == 0 || selectedGameMode == 1;
+	int isDeathMatch = selectedGameMode == 3 || selectedGameMode == 4|| selectedGameMode == 5 || selectedGameMode == 6 || selectedGameMode == 7 || selectedGameMode == 8 || selectedGameMode == 11;
+	str gameMode = "";
+	for(int i = current+1; i < current+MAXEXPANSIONS+1; i++)
+	{
+		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[i%MAXEXPANSIONS],s:"_GAMETYPE"));
+		//PrintBold(s:StrParam(s:"Index ",d:i,s:", Game mode: ",s:gameMode),s:", Selected Game Mode: ",d:selectedGameMode);
+		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+		{
+			result = i%MAXEXPANSIONS;
+			break;
+		}
+	}
+	if(result == -1) Log(s:"FATAL ERROR - No pack detected. Use at your own risk!");
+	return result;
+}

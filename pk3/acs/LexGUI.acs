@@ -1,0 +1,175 @@
+#library "LEXGUI"
+#include "zcommon.acs"
+
+/*
+VERY IMPORTANT: Compile this with ACC, not BCC!
+*/
+
+#DEFINE MAXMAPSETSPERPACK 256
+#DEFINE MAXEXPANSIONS 16
+
+int disableTerminal;
+int WAITTIMER;
+
+#include "LexiconCompat.acs"
+
+#include "LexiconGUI_CommonFunctions.acs"
+#include "LexiconGUI_SetParser.acs"
+#include "LexiconGUI_MapManagement.acs"
+#include "LexiconGUI_ClientSync.acs"
+#include "LexiconGUI_VoteSystem.acs"
+
+Script "Lexicon_Official_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","OFFI",0);
+}
+
+//Enter script mostly designed for printing the vote text
+Script "Lexicon_Core_Enter" ENTER
+{
+	if(!isVR())
+		terminate;	
+	
+	ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
+			
+	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
+	{
+		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit,WAITTIMER);
+
+		Delay(1);
+	}
+}
+
+Script "Lexicon_Core_Open" OPEN
+{
+	WAITTIMER = GetCvar("Lexicon_WaitTimer")*35;
+	//Determine if the current game type must change
+	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");
+
+	//Init these values to an empty string. Makes the data predictable
+	clearLexiconMapSetTypes();
+
+	//This is needed to let the actors do their processing
+	Delay(1);
+
+	if(!isVR())
+		terminate;	
+		
+	//Generate all the map data on the server
+	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
+	
+	//Then run the script to count votes
+	ACS_NamedExecuteWithResult("Lexicon_VoteTally");
+}
+
+
+//Run this only in Zandronum
+Script "Lexicon_TerminalExit" (int pln) NET
+{
+	SetActivatorToPlayer(pln);
+	if(!(Classifyactor(0) & ACTOR_ALIVE))
+		TakeInventory("LexiconTerminalExit",1);
+}
+
+//Switch the game type depending on the gametype of the chosen mapset
+Script "Lexicon_GameTypeChanger" (void)
+{
+	int currentGameMode = GetCvar("Lexicon_GameType");
+	int isCoop = currentGameMode == 0 || currentGameMode == 1;
+	if(isVR())
+	{
+		SetGameplaySetting("SV_NOEXIT",false);
+		SetGameplaySetting("SV_NOMONSTERS",false);
+		SetGameplaySetting("Fraglimit",0);	
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
+			SetCurrentGameMode(gameModeTypes[0][0]);
+	}
+	else
+	{
+		SetGameplaySetting("SV_NOEXIT",!isCoop);
+		SetGameplaySetting("SV_NOMONSTERS",!isCoop);
+		
+		if(!isCoop && GetCvar("FragLimit") == 0)
+			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));	
+					
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
+			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
+	}
+}
+
+script "Lexicon_Doom1EpisodeHealthReset" ENTER
+{
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str mapSuffix = strright(strparam(n:PRINTNAME_LEVEL), 2);
+	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
+	
+	// Set player health at the start of each episode for Doom 1 mapsets
+	if (isDoom1wad(iwad) && (!StrIcmp(mapSuffix, "M1")))
+	{
+		if (GetActorProperty(0, APROP_Health) < 50)
+		{
+			SetActorProperty(0, APROP_Health, 50);
+		}
+	}
+}
+
+script "Lexicon_Doom1TextureReplacement" OPEN
+{
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
+
+	if (isDoom1wad(iwad) && isUsingWadSmoosh())
+	{
+		ReplaceTextures("BRNPOIS","BRNPOIS1");
+		ReplaceTextures("NUKEPOIS","NUKPOIS1");
+		ReplaceTextures("SW1BRN1","SW1BRN1A");
+		ReplaceTextures("SW2BRN1","SW2BRN1A");
+	}
+}
+
+Script "Lexicon_InGame" (int arg1)
+{
+	if(isVR())
+		terminate;
+
+	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
+	int mapsetWeapon1 = getDynLangEntry(mapsetAcronym, "WEAPON", "1");
+	int mapsetWeapon2 = getDynLangEntry(mapsetAcronym, "WEAPON", "2");
+	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
+
+	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
+	
+	if (!CheckInventory("LexiconInventoryGiven"))
+	{
+		if(GetCVar("lexicon_iwad") == 0)
+		{
+			if(!GetCVar("lexicon_vanilla_mode") && !isGameModded())
+			{
+				ClearInventory();
+				if (mapsetWeapon1 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon1, 1); }
+				else { GiveInventory("Fist", 1); }
+				
+				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon2, 1); }
+				else { GiveInventory("Pistol", 1); }
+				
+				GiveInventory("LexiconClipGive", 30);
+				GiveInventory("LexiconInventoryGiven", 1);
+				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { SetWeapon(mapsetWeapon2); }
+				else { SetWeapon("Pistol"); }		
+			}
+		}
+	}
+
+	if (mapsetInfiniteAmmo == "Y")
+	{
+		while(1)
+		{
+			GiveInventory("PowerInfiniteAmmo", 1);
+			Delay(1);
+		}
+	}
+}
+
+Script "Lexicon_InGame_Enter" enter { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }
+Script "Lexicon_InGame_Respawn" respawn { ACS_NamedExecuteWithResult("Lexicon_InGame", 1,0,0); }
+Script "Lexicon_InGame_Return" return { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }

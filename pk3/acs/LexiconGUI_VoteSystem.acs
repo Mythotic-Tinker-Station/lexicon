@@ -372,8 +372,8 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 						str authorInfo = strParam(s:"Author: \c[LexiconWhite]",l:returnMapString(2,i,1),s:"\c-");
 						str dateInfo = strParam(s:"\nDate: \c[LexiconWhite]",l:returnMapString(3,i,1),s:"\c-");
 						str actorInfo = strParam(s:"\nCustom Actors: \c[LexiconWhite]",l:returnMapString(4,i,1),s:"\c-");
-						str descriptionInfo = strParam(s:"\nDescription: \c[LexiconWhite]",l:returnMapString(5,i,1),s:"\c-");
-						HudMessage(s:strParam(s:authorInfo,s:dateInfo,s:actorInfo,s:descriptionInfo); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 149, "LexiconRed", posX, posY, 0.0);
+						str mapCountInfo = strParam(s:"\nMap Count: \c[LexiconWhite]",l:returnMapString(5,i,1),s:"\c-");
+						HudMessage(s:strParam(s:authorInfo,s:dateInfo,s:actorInfo,s:mapCountInfo); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 149, "LexiconRed", posX, posY, 0.0);
 						
 						//Restore image space
 						SetHudClipRect(0,0,0,0,0);	

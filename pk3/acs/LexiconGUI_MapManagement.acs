@@ -41,6 +41,10 @@ function str returnMapString(int type, int id, int useQuery)
 		case 5:
 			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_MAPS"));
 			break;
+		//Return description
+		case 6:
+			result = returnLanguageText(strParam(s:returnMapString(0,id,useQuery),s:"_MAPSET_DESC"));
+			break;
 	}
 	return result;
 }

@@ -141,8 +141,8 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	int maxPageSize = MAXROWS * MAXCOLS; //Store max page size for the loop and what not
 	
 	//Select the first selectable map type and query
-	selectedGameMode = findNextGameType(-1);
-	selectedMapType = findNextMapType(-1);
+	selectedGameMode = findNextGameType(-1,0);
+	selectedMapType = findNextMapType(-1,0);
 	queryMapSets();
 	while(Classifyactor(0) & ACTOR_ALIVE && !CheckInventory("LexiconTerminalExit") && !disableTerminal)
 	{
@@ -152,7 +152,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
 		int oldbuttons = GetPlayerInput(-1, INPUT_OLDBUTTONS);
 		int Lclicking = buttons & BT_ATTACK && !(oldbuttons & BT_ATTACK);
-		int Rclicking = buttons & BT_ALTATTACK;	
+		int Rclicking = buttons & BT_ALTATTACK && !(oldbuttons & BT_ALTATTACK);
 		
 		//Clamp mouse inputs for the cursor to keep it in the bounds
 		if(yaw > 1 || yaw < -1)
@@ -218,8 +218,18 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 			if(Lclicking && uiDelay <= 0)
 			{
 				LocalAmbientSound("Lexicon/Select",127);
-				selectedGameMode = findNextGameType(selectedGameMode);
-				selectedMapType = findNextMapType(-1);
+				selectedGameMode = findNextGameType(selectedGameMode,0);
+				selectedMapType = findNextMapType(-1,0);
+				queryMapSets();
+				pageOffset = 0;
+				uiDelay = 5;
+			}
+			
+			if(Rclicking && uiDelay <= 0)
+			{
+				LocalAmbientSound("Lexicon/Select",127);
+				selectedGameMode = findNextGameType(selectedGameMode,1);
+				selectedMapType = findNextMapType(-1,0);
 				queryMapSets();
 				pageOffset = 0;
 				uiDelay = 5;
@@ -242,7 +252,16 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 			if(Lclicking && uiDelay <= 0)
 			{
 				LocalAmbientSound("Lexicon/Select",127);
-				selectedMapType = findNextMapType(selectedMapType);
+				selectedMapType = findNextMapType(selectedMapType,0);
+				queryMapSets();
+				pageOffset = 0;
+				uiDelay = 5;
+			}
+			
+			if(Rclicking && uiDelay <= 0)
+			{
+				LocalAmbientSound("Lexicon/Select",127);
+				selectedMapType = findNextMapType(selectedMapType,1);
 				queryMapSets();
 				pageOffset = 0;
 				uiDelay = 5;

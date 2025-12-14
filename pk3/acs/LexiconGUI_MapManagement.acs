@@ -164,28 +164,28 @@ str gameModeTypes[MAXGAMEMODES][2] =
 int gameModeValues[MAXGAMEMODES] = { 0, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 2 };
 
 //Find the next valid game type depending on source port
-function int findNextGameType(int current)
+function int findNextGameType(int current, int prev)
 {
 	int result = current;
 	int validGameMode = 0;
 	str gameMode = "";
-	for(int i = current+1; i < current+MAXGAMEMODES+1; i++)
+	int i = 0;
+	if(!prev)
 	{
-		int isCoop = i%MAXGAMEMODES == 0 || i%MAXGAMEMODES == 1;
-		int isDeathMatch = i%MAXGAMEMODES == 3 || i%MAXGAMEMODES == 4 || i%MAXGAMEMODES == 5 || i%MAXGAMEMODES == 6 || i%MAXGAMEMODES == 7 || i%MAXGAMEMODES == 8 || i%MAXGAMEMODES == 11;
-		for(int j = 0; j < MAXEXPANSIONS; j++)
+		for(i = current+1; i < current+MAXGAMEMODES+1; i++)
 		{
-			gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
-			if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
-			{
-				validGameMode = true;
+			result = cycleNextGameMode(i%MAXGAMEMODES);
+			if(result > -1)
 				break;
-			}
 		}
-		if(validGameMode && gameModeValues[i] != 2 && (gameModeValues[i] == 0 || (gameModeValues[i] == 1 && !isZDoom())))
+	}
+	else
+	{
+		for(i = current+MAXGAMEMODES-1; i > current; i--)
 		{
-			result = i%MAXGAMEMODES;
-			break;
+			result = cycleNextGameMode(i%MAXGAMEMODES);
+			if(result > -1)
+				break;
 		}
 	}
 	if(result == -1) Log(s:"FATAL ERROR - No game modes detected!");
@@ -193,22 +193,66 @@ function int findNextGameType(int current)
 }
 
 //Find the next available map set type
-function int findNextMapType(int current)
+function int findNextMapType(int current, int prev)
 {
 	int result = current;
-	int isCoop = selectedGameMode == 0 || selectedGameMode == 1;
-	int isDeathMatch = selectedGameMode == 3 || selectedGameMode == 4|| selectedGameMode == 5 || selectedGameMode == 6 || selectedGameMode == 7 || selectedGameMode == 8 || selectedGameMode == 11;
 	str gameMode = "";
-	for(int i = current+1; i < current+MAXEXPANSIONS+1; i++)
+	int i = 0;
+	if(!prev)
 	{
-		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[i%MAXEXPANSIONS],s:"_GAMETYPE"));
-		//PrintBold(s:StrParam(s:"Index ",d:i,s:", Game mode: ",s:gameMode),s:", Selected Game Mode: ",d:selectedGameMode);
-		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+		for(i = current+1; i < current+MAXEXPANSIONS+1; i++)
 		{
-			result = i%MAXEXPANSIONS;
-			break;
+			result = cycleNextMapType(i%MAXEXPANSIONS);
+			if(result > -1)
+				break;
+		}
+	}
+	else
+	{
+		for(i = current+MAXEXPANSIONS-1; i > current; i--)
+		{
+			result = cycleNextMapType(i%MAXEXPANSIONS);
+			if(result > -1)
+				break;
 		}
 	}
 	if(result == -1) Log(s:"FATAL ERROR - No pack detected. Use at your own risk!");
+	return result;
+}
+
+//Method for cycling game mode
+function int cycleNextGameMode(int i)
+{
+	int result = -1;
+	int validGameMode = 0;
+	str gameMode = "";
+	int isCoop = i == 0 || i == 1;
+	int isDeathMatch = i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 11;
+	for(int j = 0; j < MAXEXPANSIONS; j++)
+	{
+		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
+		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+		{
+			validGameMode = true;
+			break;
+		}
+	}
+	if(validGameMode && gameModeValues[i] != 2 && (gameModeValues[i] == 0 || (gameModeValues[i] == 1 && !isZDoom())))
+	{
+		result = i;
+	}
+	return result;
+}
+
+//Method for cycling map type
+function int cycleNextMapType(int i)
+{
+	int result = -1;
+	int gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[i],s:"_GAMETYPE"));
+	int isCoop = selectedGameMode == 0 || selectedGameMode == 1;
+	int isDeathMatch = selectedGameMode == 3 || selectedGameMode == 4|| selectedGameMode == 5 || selectedGameMode == 6 || selectedGameMode == 7 || selectedGameMode == 8 || selectedGameMode == 11;
+	if((((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))) && strlen(gameMode) > 0)
+		result = i;
+		
 	return result;
 }

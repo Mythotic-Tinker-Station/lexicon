@@ -32,7 +32,7 @@ if ! command -v 7za &> /dev/null; then
 fi
 
 echo "Step 1: ACS"
-compiler/bcc -acc-stats -acc-err-file -x bcs pk3/acs/Lexicon.acs pk3/ACS/lexicon.o
+compiler/bcc -acc-stats -acc-err-file -x bcs pk3/acs/Lexicon.acs pk3/ACS/Lexicon.o
 if [ -f pk3/acs/acs.err ]; then
     rm pk3/acs/acs.err
 fi

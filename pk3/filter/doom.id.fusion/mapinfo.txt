@@ -1,0 +1,319 @@
+map E1M8 "$HUSTR_E1M8"
+{
+	LevelNum = 8
+	Next = "E2M1"
+	TitlePatch = "WILV07"
+	Par = 165
+	Music = "$MUSIC_E1M8"
+	NoIntermission
+	E1M8Special
+	BaronSpecial
+	SpecialAction_ExitLevel //SpecialAction_LowerFloor
+	NoSoundClipping
+	Author = "$WF_AU_PETERSEN_HALL"
+
+	SuckTime = 1
+	InterMusic = "$MUSIC_INTER"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Sky1 = "SKY1"
+	Cluster = 1
+	ExitPic = "$IN_EPI1"
+}
+
+map E2M8 "$HUSTR_E2M8"
+{
+	LevelNum = 18
+	Next = "E3M1"
+	TitlePatch = "WILV17"
+	Par = 135
+	Music = "$MUSIC_E2M8"
+	NoIntermission
+	E2M8Special
+	CyberdemonSpecial
+	SpecialAction_ExitLevel
+	NoSoundClipping
+	Author = "$WF_AU_PETERSEN"
+
+	SuckTime = 1
+	InterMusic = "$MUSIC_INTER"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Sky1 = "SKY2"
+	Cluster = 2
+	ExitPic = "$IN_EPI2"
+}
+
+map E3M8 "$HUSTR_E3M8"
+{
+	LevelNum = 28
+	Next = "E4M1"
+	TitlePatch = "WILV27"
+	Par = 105
+	Music = "$MUSIC_E3M8"
+	NoIntermission
+	E3M8Special
+	SpiderMastermindSpecial
+	SpecialAction_ExitLevel
+	NoSoundClipping
+	Author = "$WF_AU_PETERSEN"
+
+	SuckTime = 1
+	InterMusic = "$MUSIC_INTER"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Sky1 = "SKY3"
+	Cluster = 3
+	ExitPic = "$IN_EPI3"
+}
+
+map E4M8 "$HUSTR_E4M8"
+{
+	LevelNum = 38
+	Next = "VR"
+	TitlePatch = "WILV37"
+	Par = 360
+	Music = "$MUSIC_E2M5"
+	NoIntermission
+	E4M8Special
+	SpiderMastermindSpecial
+	SpecialAction_LowerFloor
+	NoSoundClipping
+	Author = "$WF_AU_GREEN"
+
+	SuckTime = 1
+	InterMusic = "$MUSIC_INTER"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Sky1 = "SKY4"
+	Cluster = 4
+	ExitPic = "INTERE4"
+}
+
+map E5M8 "$HUSTR_E5M8"
+{
+	LevelNum = 48
+	Next = "VR"
+	TitlePatch = "WILV47"
+	Par = 300
+	NoSoundClipping
+
+	Cluster = 26
+	Sky1 = "SKY5"
+	SuckTime = 1
+	// the music is intentionally set to something invalid,
+	// instead to be started and changed through zscript
+	InterMusic = NULL
+	EnterPic = "SIGILINT"
+	ExitPic = "SIGILINT"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Author = "$WF_AU_ROMERO"
+}
+
+map E6M8 "$HUSTR_E6M8"
+{
+	LevelNum = 58
+	Next = "VR"
+	TitlePatch = "WILV57"
+	Par = 390
+	NoSoundClipping
+
+	Cluster = 27
+	Sky1 = "SKY6"
+	SuckTime = 1
+	// the music is intentionally set to something invalid,
+	// instead to be started and changed through zscript
+	InterMusic = NULL
+	EnterPic = "SIGILIN2"
+	ExitPic = "SIGILIN2"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Author = "$WF_AU_ROMERO"
+}
+
+map MAP30 "$HUSTR_30"
+{
+	Next = "VR"
+	TitlePatch = "CWILV29"
+	Par = 180
+	Music = "$MUSIC_OPENIN"
+	AllowMonsterTelefrags
+	Author = "$WF_AU_PETERSEN"
+
+	SuckTime = 1
+	NoJump
+	NoCrouch
+	Cluster = 8
+	Sky1 = "SKY3"
+}
+
+map PL_MAP30 "$PHUSTR_30"
+{
+	Next = "VR"
+	TitlePatch = "PWILV29"
+	Music = "P_OPENIN"
+	AllowMonsterTelefrags
+	Author = "$WF_AU_MILO_CASALI"
+
+	SuckTime = 1
+	ExitPic = "INTERPL"
+	InterMusic = "P_DM2INT"
+	NoJump
+	NoCrouch
+	Cluster = 21
+	Sky1 = "SKY3"
+}
+
+map TN_MAP30 "$THUSTR_30"
+{
+	Next = "VR"
+	TitlePatch = "TWILV29"
+	Music = "T_OPENIN"
+	AllowMonsterTelefrags
+	// depends on broken vanilla stair builder behavior, which ZDoom
+	// hardcodes for TNT.wad but must be manually specified here
+	Compat_Stairs
+	Author = "$WF_AU_SIEBEN"
+
+	SuckTime = 1
+	ExitPic = "INTERTN"
+	InterMusic = "T_DM2INT"
+	NoJump
+	NoCrouch
+	Cluster = 15
+	Sky1 = "SKY3"
+}
+
+map ML_MAP20 "$ML_MEPHISTO"
+{
+	Next = "VR"
+	Sky1 = "SKY3"
+	TitlePatch = "MWILV19"
+	Music = "$MUSIC_SHAWN"
+	AllowMonsterTelefrags
+	Map07Special
+	Author = "$WF_AU_KVERNMO"
+
+	SuckTime = 1
+	NoJump
+	NoCrouch
+	Cluster = 24
+	ResetHealth
+	ResetInventory
+	ResetItems
+}
+
+map NV_MAP08 "$NHUSTR_8"
+{
+	Next = "VR"
+	Sky1 = "SKY3"
+	TitlePatch = "NWILV07"
+	Par = 105
+	Music = "$MUSIC_SHAWN"
+	Author = "$WF_AU_IWAKURA"
+
+	Cluster = 11
+	SuckTime = 1
+	ExitPic = "INTERNV"
+	NoJump
+	NoCrouch
+}
+
+map LR_MAP07 "$XHUSTR_7"
+{
+	Next = "LR_MAP08"
+	TitlePatch = "XWILV06"
+	Sky1 =  "SKYX4A"
+	Music = "D_TACTIC"
+	Author = "$WF_AU_VILLARREAL"
+
+	SuckTime = 1
+	ExitPic = "INTERLR"
+	InterMusic = "X_DM2INT"
+	NoJump
+	NoCrouch
+	// Compatibility options
+	compat_anybossdeath = 0
+	compat_checkswitchrange = 0
+	compat_floormove = 0
+	compat_light = 0
+	compat_mbfmonstermove = 0
+	compat_multiexit = 0
+	compat_nodoorlight = 0
+	compat_nombf21 = 0
+	compat_pointonline = 0
+	compat_pushwindow = 0
+	compat_railing = 0
+	compat_shortTex = 0
+	compat_stairs = 0
+	compat_teleport = 0
+	compat_useblocking = 0
+	Cluster = 28
+	ExitPic = "XWIMAP0"
+	EnterPic = "$XWINTER0"
+}
+
+map LR_MAP14 "$XHUSTR_15"
+{
+	Next = "VR"
+	TitlePatch = "XWILV16"
+	Sky1 =  "SKYX5A"
+	Music = "D_SKELET"
+	SpecialAction = "ID24TyrantBoss1", "Floor_LowerToNearest", 666, 8
+	SpecialAction = "ID24TyrantBoss2", "Floor_LowerToNearest", 667, 8
+	Author = "$WF_AU_XASER"
+
+	SuckTime = 1
+	ExitPic = "INTERLR"
+	InterMusic = "X_DM2INT"
+	NoJump
+	NoCrouch
+	// Compatibility options
+	compat_anybossdeath = 0
+	compat_checkswitchrange = 0
+	compat_floormove = 0
+	compat_light = 0
+	compat_mbfmonstermove = 0
+	compat_multiexit = 0
+	compat_nodoorlight = 0
+	compat_nombf21 = 0
+	compat_pointonline = 0
+	compat_pushwindow = 0
+	compat_railing = 0
+	compat_shortTex = 0
+	compat_stairs = 0
+	compat_teleport = 0
+	compat_useblocking = 0
+	Cluster = 29
+	ExitPic = "XWIMAP1"
+	EnterPic = "$XWINTER1"
+}
+
+map E1M8B "$HUSTR_E1M8B"
+{
+	Next = "E2M1"
+	Cluster = 31
+	TitlePatch = "WILV07B"
+	Music = "$MUSIC_E1M8"
+	NoIntermission
+	E1M8Special
+	BaronSpecial
+	SpecialAction_ExitLevel //SpecialAction_LowerFloor
+	NoSoundClipping
+
+	Sky1 = "SKY1"
+	SuckTime = 1
+	ExitPic = "$IN_EPI1"
+	InterMusic = "$MUSIC_INTER"
+	BorderTexture = "FLOOR7_2"
+	NoJump
+	NoCrouch
+	Author = "$WF_AU_ROMERO"
+}

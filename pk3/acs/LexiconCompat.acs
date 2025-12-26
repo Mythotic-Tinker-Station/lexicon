@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 67
+#define COMPATNUMBER 69
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -68,6 +68,8 @@ str compatArray[COMPATNUMBER] = {
 						"Upbrmmax", // Weasel Presents: Terrorists!
 						"WLFSTART", // Weasel Presents: NAZIS!
 						"BarForce", // Xim's Star Wars Doom
+						"M_ZGAL", // Zagemod
+						"LSNCool", // ZDoom Wars I
 						"H_ICENI6" // Zero Tolerance [2016 REDUX]
 };
 

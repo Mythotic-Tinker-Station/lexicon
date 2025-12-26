@@ -10,7 +10,7 @@ set /p choice=Enter your choice (1-3):
 
 if %choice%==1 (
     echo Step 1: ACS
-    compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\lexicon.acs pk3\acs\lexicon.o
+    compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\Lexicon.acs pk3\acs\Lexicon.o
     if not exist pk3\acs\acs.err goto 20
     del pk3\acs\acs.err
     compiler\acc\acc.exe pk3\acs\lexGUI.acs pk3\acs\lexGUI.o
@@ -33,7 +33,7 @@ if %choice%==2 (
 
 if %choice%==3 (
     echo Step 1: ACS
-    compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\lexicon.acs pk3\acs\lexicon.o
+    compiler\bcc.exe -acc-stats -acc-err-file -x bcs pk3\acs\Lexicon.acs pk3\acs\Lexicon.o
     if not exist pk3\acs\acs.err goto 20
     del pk3\acs\acs.err
     compiler\acc\acc.exe pk3\acs\lexGUI.acs pk3\acs\lexGUI.o

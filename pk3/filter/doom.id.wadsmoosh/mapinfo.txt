@@ -1,0 +1,361 @@
+map E1M8 lookup "HUSTR_E1M8"
+{
+	levelnum = 8
+	next = "E2M1"
+	secretnext = "E1M9"
+	titlepatch = "WILV07"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 165
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+	music = "$MUSIC_E1M8"
+	ExitPic = "$IN_EPI1"
+	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
+	InterMusic = "$MUSIC_INTER"
+}
+
+map E2M8 lookup "HUSTR_E2M8"
+{
+	levelnum = 18
+	next = "E3M1"
+	secretnext = "E2M9"
+	titlepatch = "WILV17"
+	sky1 = "SKY2"
+	cluster = 2
+	par = 135
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E2M8"
+	ExitPic = "$IN_EPI2"
+	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
+	InterMusic = "$MUSIC_INTER"
+}
+
+map E3M8 lookup "HUSTR_E3M8"
+{
+	levelnum = 28
+	next = "E4M1"
+	secretnext = "E3M9"
+	titlepatch = "WILV27"
+	sky1 = "SKY3"
+	cluster = 3
+	par = 105
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "$MUSIC_E3M8"
+	ExitPic = "$IN_EPI3"
+	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
+	InterMusic = "$MUSIC_INTER"
+}
+
+map E4M8 lookup "HUSTR_E4M8"
+{
+	levelnum = 38
+	next = "VR"
+	secretnext = "E4M9"
+	titlepatch = "WILV37"
+	sky1 = "SKY4"
+	cluster = 4
+	par = 360
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+	music = "$MUSIC_E2M5"
+	ExitPic = "INTER_E4"
+	Author = "$WS_AU_GREEN"
+	BorderTexture = "FLOOR7_2"
+	InterMusic = "$MUSIC_INTER"
+}
+
+map E5M8 "$HUSTR_E5M8"
+{
+	levelnum = 48
+	titlepatch = "WILV47"
+	next = "VR"
+	nosoundclipping
+	music = "D_E5M8"
+	par = 300
+	BorderTexture = "FLOOR7_2"
+	nocrouch
+	nojump
+	sky1 = "SKY5"
+	cluster = 25
+	enterpic = "SIGILINT"
+	exitpic = "SIGILINT"
+	InterMusic = "S_INTER"
+	Author = "$WS_AU_ROMERO"
+}
+
+map E6M8 "$HUSTR_E6M8"
+{
+	levelnum = 58
+	titlepatch = "WILV57"
+	next = "VR"
+	nosoundclipping
+	music = "D_E6M8"
+	par = 390
+	BorderTexture = "FLOOR7_2"
+	nocrouch
+	nojump
+	sky1 = "SKY6"
+	cluster = 26
+	enterpic = "SIGILIN2"
+	exitpic = "SIGILIN2"
+	InterMusic = "S2_INTER"
+	Author = "$WS_AU_ROMERO"
+}
+
+map MAP30 lookup "HUSTR_30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 180
+	allowmonstertelefrags
+	music = "$MUSIC_OPENIN"
+	Author = "$WS_AU_PETERSEN"
+}
+
+map NV_MAP08 lookup "NHUSTR_8"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "RSKY3"
+	cluster = 11
+	titlepatch = "NWILV07"
+	par = 105
+	music = "$MUSIC_SHAWN"
+	ExitPic = "NVINTER"
+	Author = "$WS_AU_IWAKURA"
+}
+
+map PL_MAP30 lookup "PHUSTR_30"
+{
+	sky1 = "PSKY3"
+	cluster = 21
+	titlepatch = "PWILV29"
+	par = 180
+	allowmonstertelefrags
+	music = "P_OPENIN"
+	Author = "$WS_AU_MILO_CASALI"
+	next = "VR"
+	ExitPic = "PLUINTER"
+	InterMusic = "P_DM2INT"
+}
+
+map TN_MAP30 lookup "THUSTR_30"
+{
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV29"
+	par = 180
+	allowmonstertelefrags
+	compat_stairs
+	music = "T_OPENIN"
+	next = "VR"
+	Author = "$WS_AU_SIEBEN"
+	ExitPic = "TNTINTER"
+	InterMusic = "T_DM2INT"
+}
+
+// Master Levels
+map ML_MAP01 lookup "ML_ATTACK"
+{
+    next = "ML_MAP02"
+    sky1 = "RSKY1"
+    music = "$MUSIC_RUNNIN"
+    Author = "$WS_AU_WILLITS_CHASAR"
+    cluster = 24
+}
+
+map ML_MAP02 lookup "ML_CANYON"
+{
+    next = "ML_MAP03"
+    sky1 = "RSKY1"
+    music = "$MUSIC_STALKS"
+    Author = "$WS_AU_WILLITS_CHASAR"
+    cluster = 24
+}
+
+map ML_MAP03 lookup "ML_CATWALK"
+{
+    next = "ML_MAP04"
+    sky1 = "RSKY1"
+    music = "$MUSIC_COUNTD"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP04 lookup "ML_FISTULA"
+{
+    next = "ML_MAP05"
+    sky1 = "RSKY1"
+    music = "$MUSIC_DOOM"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP05 lookup "ML_COMBINE"
+{
+    next = "ML_MAP06"
+    sky1 = "ML_SKY1"
+    music = "$MUSIC_BETWEE"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP06 lookup "ML_SUBSPACE"
+{
+    next = "ML_MAP07"
+    sky1 = "RSKY1"
+    music = "$MUSIC_IN_CIT"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP07 lookup "ML_PARADOX"
+{
+    next = "ML_MAP08"
+    sky1 = "RSKY1"
+    music = "$MUSIC_DDTBLU"
+    Author = "$WS_AU_MUSTAINE"
+    cluster = 24
+}
+
+map ML_MAP08 lookup "ML_SUBTERRA"
+{
+    next = "ML_MAP09"
+    sky1 = "RSKY1"
+    music = "$MUSIC_DEAD"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP09 lookup "ML_GARRISON"
+{
+    next = "ML_MAP10"
+    sky1 = "RSKY1"
+    music = "$MUSIC_THE_DA"
+    Author = "$WS_AU_KLIE"
+    cluster = 24
+}
+
+map ML_MAP10 lookup "ML_BLACKTWR"
+{
+    next = "ML_MAP11"
+    sky1 = "RSKY3"
+    music = "$MUSIC_ADRIAN"
+    Author = "$WS_AU_KVERNMO"
+    cluster = 24
+}
+
+map ML_MAP11 lookup "ML_VIRGIL"
+{
+    next = "ML_MAP12"
+    sky1 = "ML_SKY3"
+    music = "$MUSIC_COUNTD"
+    Author = "$WS_AU_ANDERSON"
+    cluster = 24
+}
+
+map ML_MAP12 lookup "ML_MINOS"
+{
+    next = "ML_MAP13"
+    sky1 = "ML_SKY3"
+    music = "$MUSIC_DOOM"
+    Author = "$WS_AU_ANDERSON"
+    cluster = 24
+}
+
+map ML_MAP13 lookup "ML_NESSUS"
+{
+    next = "ML_MAP14"
+    sky1 = "ML_SKY3"
+    music = "$MUSIC_SHAWN"
+    Author = "$WS_AU_ANDERSON"
+    cluster = 24
+}
+
+map ML_MAP14 lookup "ML_GERYON"
+{
+    next = "ML_MAP15"
+    sky1 = "ML_SKY3"
+    music = "$MUSIC_DDTBLU"
+    Author = "$WS_AU_ANDERSON"
+    cluster = 24
+}
+
+map ML_MAP15 lookup "ML_VESPERAS"
+{
+    next = "ML_MAP16"
+    sky1 = "ML_SKY3"
+    music = "$MUSIC_IN_CIT"
+    Author = "$WS_AU_ANDERSON"
+    cluster = 24
+}
+
+map ML_MAP16 lookup "ML_MANOR"
+{
+    next = "ML_MAP17"
+    sky1 = "ML_SKY2"
+    music = "$MUSIC_SHAWN"
+    Author = "$WS_AU_FLYNN"
+    cluster = 24
+}
+
+map ML_MAP17 lookup "ML_TTRAP"
+{
+    next = "ML_MAP18"
+    sky1 = "ML_SKY2"
+    music = "$MUSIC_STLKS2"
+    Author = "$WS_AU_FLYNN"
+    cluster = 24
+}
+
+map ML_MAP18 lookup "ML_TEETH"
+{
+    next = "ML_MAP19"
+    secretnext = "ML_MAP21"
+    sky1 = "RSKY1"
+    music = "$MUSIC_EVIL"
+    Author = "$WS_AU_KVERNMO"
+    cluster = 24
+}
+
+map ML_MAP19 lookup "ML_BLOODSEA"
+{
+    next = "ML_MAP20"
+    sky1 = "RSKY1"
+    music = "$MUSIC_SHAWN"
+    Author = "$WS_AU_KVERNMO"
+    map07special
+    cluster = 24
+}
+
+map ML_MAP20 lookup "ML_MEPHISTO"
+{
+    next = "VR"
+    sky1 = "RSKY1"
+    music = "$MUSIC_OPENIN"
+    Author = "$WS_AU_KVERNMO"
+    map07special
+	cluster = 24
+}
+
+map ML_MAP21 lookup "ML_TEETH_SECRET"
+{
+    next = "ML_MAP19"
+    sky1 = "RSKY1"
+    music = "$MUSIC_ULTIMA"
+    Author = "$WS_AU_KVERNMO"
+	cluster = 24
+}

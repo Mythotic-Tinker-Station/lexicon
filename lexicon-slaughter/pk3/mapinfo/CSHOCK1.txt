@@ -1,0 +1,47 @@
+// Combat Shock 1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CSH101 "agitator"
+{
+	titlepatch = "CSH1V00"
+	next = "CSH102"
+	secretnext = "CSH102"
+	sky1 = "CSH10227"
+	music = "D_CSH101"
+	intermusic = "D_CSH1IN"
+}
+
+map CSH102 "gozu" 
+{
+	titlepatch = "CSH1V01"
+	next = "CSH103"
+	secretnext = "CSH103"
+	sky1 = "CSH10227"
+	music = "D_CSH102"
+	intermusic = "D_CSH1IN"
+}
+
+map CSH103 "fudoh"
+{
+	titlepatch = "CSH1V02"
+	next = "CSH104"
+	secretnext = "CSH104"
+	sky1 = "CSH10227"
+	music = "D_CSH103"
+	intermusic = "D_CSH1IN"
+}
+
+map CSH104 "messatsu"
+{
+	titlepatch = "CSH1V03"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CSH10227"
+	music = "D_CSH104"
+	intermusic = "D_CSH1IN"
+}

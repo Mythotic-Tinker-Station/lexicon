@@ -1,0 +1,425 @@
+// Slaughterfest 2012 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	specialaction = "Cyberdemon", "Door_Open", 666, 16
+}
+
+map SF1201 "01 Exodus - cannonball"
+{
+	titlepatch = "SF12V00"
+	next = "SF1202"
+	secretnext = "SF1202"
+	sky1 = "SF120448"
+	music = "D_SF1201"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1202 "02 Cashews - Death Egg"
+{
+	titlepatch = "SF12V01"
+	next = "SF1203"
+	secretnext = "SF1203"
+	sky1 = "SF120448"
+	music = "D_SF1202"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1203 "03 Island of Mystery - Ribbiks"
+{
+	titlepatch = "SF12V02"
+	next = "SF1204"
+	secretnext = "SF1204"
+	sky1 = "SF120448"
+	music = "D_SF1203"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1204 "04 Pure Hate - darkreaver"
+{
+	titlepatch = "SF12V03"
+	next = "SF1205"
+	secretnext = "SF1205"
+	sky1 = "SF120448"
+	music = "D_SF1204"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1205 "05 Fortress of Damnation - cannonball"
+{
+	titlepatch = "SF12V04"
+	next = "SF1206"
+	secretnext = "SF1206"
+	sky1 = "SF120448"
+	music = "D_SF1205"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1206 "06 Trifling - Phml"
+{
+	titlepatch = "SF12V05"
+	next = "SF1207"
+	secretnext = "SF1207"
+	sky1 = "SF120448"
+	music = "D_SF1206"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1207 "07 Simply Dead - Kyka"
+{
+	titlepatch = "SF12V06"
+	next = "SF1208"
+	secretnext = "SF1208"
+	sky1 = "SF120448"
+	music = "D_SF1207"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+	Map07Special
+}
+
+map SF1208 "08 Tingsryd - dannebubinga"
+{
+	titlepatch = "SF12V07"
+	next = "SF1209"
+	secretnext = "SF1209"
+	sky1 = "SF120448"
+	music = "D_SF1208"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1209 "09 Core Annihilation - cannonball"
+{
+	titlepatch = "SF12V08"
+	next = "SF1210"
+	secretnext = "SF1210"
+	sky1 = "SF120448"
+	music = "D_SF1209"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1210 "10 Total Recall - cannonball"
+{
+	titlepatch = "SF12V09"
+	next = "SF1211"
+	secretnext = "SF1211"
+	sky1 = "SF120448"
+	music = "D_SF1210"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1211 "11 Warborn - Rayzik"
+{
+	titlepatch = "SF12V10"
+	next = "SF1212"
+	secretnext = "SF1212"
+	sky1 = "SF120448"
+	music = "D_SF1211"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1212 "12 Damnation - darkreaver"
+{
+	titlepatch = "SF12V11"
+	next = "SF1213"
+	secretnext = "SF1213"
+	sky1 = "SF120449"
+	music = "D_SF1212"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1213 "13 Unleash the Fire - Rayzik"
+{
+	titlepatch = "SF12V12"
+	next = "SF1214"
+	secretnext = "SF1214"
+	sky1 = "SF120449"
+	music = "D_SF1213"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1214 "14 Damned Legion - Archi"
+{
+	titlepatch = "SF12V13"
+	next = "SF1215"
+	secretnext = "SF1215"
+	sky1 = "SF120449"
+	music = "D_SF1214"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1215 "15 Doomherolandia - General Rainbow Bacon"
+{
+	titlepatch = "SF12V14"
+	next = "SF1216"
+	secretnext = "SF1231"
+	sky1 = "SF120449"
+	music = "D_SF1215"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1216 "16 Twobox - Phml"
+{
+	titlepatch = "SF12V15"
+	next = "SF1217"
+	secretnext = "SF1217"
+	sky1 = "SF120449"
+	music = "D_SF1216"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1217 "17 Electric Wizard - Ribbiks"
+{
+	titlepatch = "SF12V16"
+	next = "SF1218"
+	secretnext = "SF1218"
+	sky1 = "SF120449"
+	music = "D_SF1217"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1218 "18 Last Cup of Sorrow - Bloodite Krypto"
+{
+	titlepatch = "SF12V17"
+	next = "SF1219"
+	secretnext = "SF1219"
+	sky1 = "SF120449"
+	music = "D_SF1218"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1219 "19 Split Wide Open - TimeOfDeath"
+{
+	titlepatch = "SF12V18"
+	next = "SF1220"
+	secretnext = "SF1220"
+	sky1 = "SF120449"
+	music = "D_SF1219"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1220 "20 True Grit - cannonball"
+{
+	titlepatch = "SF12V19"
+	next = "SF1221"
+	secretnext = "SF1221"
+	sky1 = "SF120449"
+	music = "D_SF1220"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1221 "21 Walk With Me in Hell - Rayzik"
+{
+	titlepatch = "SF12V20"
+	next = "SF1222"
+	secretnext = "SF1222"
+	sky1 = "SF120450"
+	music = "D_SF1221"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1222 "22 Royale Arena - cannonball"
+{
+	titlepatch = "SF12V21"
+	next = "SF1223"
+	secretnext = "SF1223"
+	sky1 = "SF120450"
+	music = "D_SF1222"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1223 "23 Castle Lava - TimeOfDeath"
+{
+	titlepatch = "SF12V22"
+	next = "SF1224"
+	secretnext = "SF1224"
+	sky1 = "SF120450"
+	music = "D_SF1223"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1224 "24 Bane's Atrium - General Rainbow Bacon"
+{
+	titlepatch = "SF12V23"
+	next = "SF1225"
+	secretnext = "SF1225"
+	sky1 = "SF120450"
+	music = "D_SF1224"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1225 "25 Fourtress - elmle"
+{
+	titlepatch = "SF12V24"
+	next = "SF1226"
+	secretnext = "SF1226"
+	sky1 = "SF120450"
+	music = "D_SF1225"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1226 "26 Crimson - Phml"
+{
+	titlepatch = "SF12V25"
+	next = "SF1227"
+	secretnext = "SF1227"
+	sky1 = "SF120450"
+	music = "D_SF1226"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1227 "27 Decimal Error - ArmouredBlood"
+{
+	titlepatch = "SF12V26"
+	next = "SF1228"
+	secretnext = "SF1228"
+	sky1 = "SF120450"
+	music = "D_SF1227"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1228 "28 Slaughtenstein - Phml"
+{
+	titlepatch = "SF12V27"
+	next = "SF1229"
+	secretnext = "SF1229"
+	sky1 = "SF120450"
+	music = "D_SF1228"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1229 "29 Degrassi - TimeOfDeath"
+{
+	titlepatch = "SF12V28"
+	next = "SF1230"
+	secretnext = "SF1230"
+	sky1 = "SF120450"
+	music = "D_SF1229"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1230 "30 Anathema - Ribbiks"
+{
+	titlepatch = "SF12V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SF120450"
+	music = "D_SF1230"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+	allowmonstertelefrags
+}
+
+map SF1231 "31 sworf - gggmork"
+{
+	titlepatch = "SF12V30"
+	next = "SF1216"
+	secretnext = "SF1232"
+	sky1 = "SF120450"
+	music = "D_SF1231"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1232 "32 Brookhaven Hospital - TimeOfDeath"
+{
+	titlepatch = "SF12V31"
+	next = "SF1216"
+	secretnext = "SF1216"
+	sky1 = "SF120450"
+	music = "D_SF1232"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1233 "33 Boontown - Processingcontrol"
+{
+	titlepatch = "SF12V32"
+	next = "SF1201"
+	secretnext = "SF1201"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1234 "34 Hard Contact - ArmouredBlood"
+{
+	titlepatch = "SF12V33"
+	next = "SF1201"
+	secretnext = "SF1201"
+	music = "D_SF1234"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}
+
+map SF1235 "35 KSP - TimeOfDeath"
+{
+	titlepatch = "SF12V34"
+	next = "SF1201"
+	secretnext = "SF1201"
+	intermusic = "D_SF12IN"
+	ExitPic = "SF12INT"
+	EnterPic = "SF12INT"
+}

@@ -1,0 +1,25 @@
+Actor Lexicon_DSV1_BurningBarrel : BurningBarrel
+{
+	States
+	{
+	Spawn:
+		LY00 DEF 4 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_DSV1_CommanderKeen : CommanderKeen
+{
+	DeathSound "DSV1/DSKEENDT"
+}
+
+Actor Lexicon_DSV1_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("DSV1/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}

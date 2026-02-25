@@ -1,0 +1,783 @@
+===========================================================================
+Archive Maintainer      : doom2/Ports/megawads
+Advanced engine needed  : PrBoom-Plus -complevel 9 compatible
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Slaughterfest 2011
+Filename                : SF2011.wad
+Release date            : February 7, 2012
+Author                  : Various
+Email Address           : thelastbreathofthedying@yahoo.com
+
+Description             : A compilation of 32 slaughter maps, each designed
+                          to be played from a pistol start.
+
+Additional Credits to   : Textures, flats, and sprites from cc4-tex,
+                          doom, gothictx, Oblige, q1tex, retres - 
+                          See the CREDITS and MAPLIST sections for more
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+
+Dehacked/BEX Patch      : Dehacked lump included in the main wad.
+
+                          OPTIONAL .bex files included in the "extras" zip
+                          file. They speed up the weapons and give the
+                          player more health and ammo. All maps were
+                          designed to be played without the optional .bex
+                          files.
+
+                          Also in the "extras" zip file is a wad called
+                          SF2011TOD.wad that makes the caco corpses
+                          smaller. Map28 and map29 are intended to be
+                          played with that wad.
+
+                          The password for the "extras" zip file is "doom".
+
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Untested
+Deathmatch 2-4 Player   : Some maps
+Other game styles       : None
+Difficulty Settings     : Some maps
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : lasted 200 days
+Editor(s) used          : level editors, boom anim tool, xwe, slumped,
+                          paint, paint shop pro, GIMP, Bitmap Font Writer
+Known Bugs              : 
+May Not Run With...     : 
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse, as long as you give proper credit.
+
+You MAY distribute this zip file for free, provided you keep this entire
+zip file intact.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.doomworld.com/idgames
+FTP sites: 
+
+===========================================================================
+* DISCLAIMER *
+This PWAD contains select texture(s) and flat(s) that can originally be
+found in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of
+said flat(s) and texture(s) and also to the rest of the Gothic Crew
+(1997/98). The ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each
+said PKZIP archive contains thirty-two professional quality levels and
+music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+===========================================================================
+
+///////////////////
+// C R E D I T S //
+///////////////////
+
+===========================================================================
+
+DoomHero85      - Project creator, mapping
+
+AnimaZero       - playtesting
+ArmouredBlood   - playtesting
+Bloodite Krypto - playtesting
+dannebubinga    - mapping, playtesting
+gggmork         - mapping, playtesting
+Grain of Salt   - mapping, graphics, map compiling, texture compiling,
+                  playtesting
+j4rio           - gameplay edits, playtesting
+Memfis          - mapping, playtesting
+Odd-o-matic     - mapping
+Okuplok         - mapping
+Olympus         - mapping
+Phml            - mapping, texture compiling, playtesting
+RjY             - bug reports
+tempun          - bug reports
+TimeOfDeath     - mapping, texture compiling
+TrueDude        - mapping
+Zom-B           - mapping, playtesting
+
+Textures, flats and sprites credits:
+NiGHTMARE, Espi, Eriance, Fredrik Johansson, Janitor, DaGGeR, Ola Bjorling,
+Vader, XDelusion, Esselfortium, RottKing, Nuxius, Afterglow, AgentSpork,
+RottKing, Enjay, Huy Pham, SargeBaldy, Tormentor667, The GothicDM Team,
+The Requiem Team, The Eternal Doom Team, id Software, Raven Software,
+Rogue Entertainment, andrewj
+
+===========================================================================
+
+///////////////////
+// M A P L I S T //
+///////////////////
+
+===========================================================================
+
+MAP01  - Apple Acres
+Author - Grain of Salt
+Music  - Akira Yamaoka -- "Not Tomorrow", from Silent Hill. MIDI file from
+         vgmusic.
+Comments: Inspired by an old, unreleased megawad called “The End”.
+Commander Keen. Maple Story. A train station. A book of rubbish ghost
+stories I once had. And, finally, the dark section of Phml’s MAP25 directly
+influenced my decision to use an empty void for a sky.
+
+A remake of a speedmap that was itself a remake of a speedmap. What annoys
+me about this map is that the sections after the first fight should be
+*more* chaotic. I wanted to preserve the ridiculous cyber/archvile free for
+all that existed in the very oldest version (now lost in the mists of
+time), but it just didn’t work out. There is also a hedgemaze in this map
+Oh well, at least the first room plays alright.
+
+Tested by gggmork, dannebubinga and Phml. Build time: Maybe three days. No
+bugs that I know of.
+
+===========================================
+
+MAP02  - Control Freak
+Author - Grain of Salt
+Music  - Kevin Schilder -- "SWAMPR", from Hexen.
+Comments: Inspired by Hexen, Julian Plenti is... Skyscraper, and
+half-remembered mansion-esque maps from Quake and Hexen 2 (the part
+inspired by that got deleted, though...)
+
+I wanted to make a map which would have one small, symmetrical room
+repeated 1700 times (don’t ask), but eventually I got sick of that idea
+and ended up with this instead. Early versions featured nothing but Hell
+Knights and a tide of Cacodemons that eventually filled the map from
+outside, but that was too much like Bananabread, so I got rid of it. This
+version is two rows and two columns smaller, and a lot lighter on the
+monsters, but still pretty unforgiving if you don’t play precisely.
+Features an unused voodoo mechanism which lowered the central pillars in
+older versions and warped in two cyberdemons. Or possibly three. Nearly my
+favourite map. And if we had dozens more maps to choose from for this
+project, this is the only one of mine besides MAP16 that I would keep.
+
+Tested by: Phml and gggmork. Build time: 4 or 5 hours, with some minimal
+tidying over the following weeks. No bugs that I know of.
+
+===========================================
+
+MAP03  - Lull
+Author - Grain of Salt
+Music  - Kevin Schilder -- "DEEPR", from Hexen.
+Comments: Inspired by Hexen, and Hexen: Deathkings, and something else I
+can't remember.
+
+Not hard enough, and too much like Control Freak, but it’s still quite
+pretty, and I like it. Again, this came from trying to make a room that
+could repeat 1700 times. One day this will make sense. Besides that,
+gggmork’s version is better. Go play that.
+
+Tested by: Phml. Build time: About 4 hours. No bugs that I know of.
+
+===========================================
+
+MAP04  - North
+Author - Grain of Salt
+Music  - Kevin Schilder -- "E2M4", from Heretic.
+Comments: Inspired by Heretic and... David Bowie?
+
+So apparently we’re in the arctic now.
+
+Tested by: gggmork and Phml. Build time: 3 hours on some gloomy morning.
+No bugs that I know of.
+
+===========================================
+
+MAP05  - Eyes and Ears
+Author - Grain of Salt
+Music  - Yasunori Mitsuda -- "The Girl Who Stole The Stars", from Chrono
+Cross. MIDI file from vgmusic, slightly edited by me, for volume, and to
+postpone the flute (?) melody at the start.
+Comments: Inspired by nothing I can remember. Probably some kind of music.
+
+This map was once ridiculously hard. The pillared cyberdemons used to be
+groups of about nine archviles. The HKs were revenants. But it was just
+unpleasant to play, so I toned it down quite a lot. This version is still
+a bit evil, but not so bad.
+
+Tested by: UnholyMessias, Phml and dannebubinga. Build time: 4 hours. No
+bugs that I know of.
+
+===========================================
+
+MAP06  - Earthquake
+Author - Grain of Salt
+Music  - Lee Jackson -- "Stalag 3D", from Duke Nukem 3D.
+Comments: Inspired by Quake, “Homonculus” by Xiu Xiu, general Halloween
+themes, a Quake deathmatch map I remember from 1999, from a pack of maps
+called something like “Time to Kill”...? Or maybe “Countdown... something”.
+It was on a CD. Help me out here.
+
+Anyway. This map is quite hard. It also looks pretty drab and pointless. In
+the end, I just couldn’t get that much detail out of the Quake textures.
+There aren’t enough textures there that work together. 
+
+Tested by: Phml and dannebubinga. Build time: 5 hours. In terms of bugs...
+if you idclip and go stand on the cliffs, you can make the sky look weird.
+But why would you do that?
+
+===========================================
+
+MAP07  - Lull Remix
+Author - Grain of Salt
+         gggmork
+Music  - Descent, Music 18.
+Comments: *censored*
+
+===========================================
+
+MAP08  - Metsu
+Author - dannebubinga
+Music  - TNT map 06
+Comments: This started as a speed map in the vein of Hell Revealed. I
+didn't complete it so when this project started I used the map as a base
+for a longer slaughtermap. 
+
+Metsu is named after Ryu's ultra combo in Street Fighter 4 which is called
+Metsu Hadoken. Metsu meaning "destruction", sums up what this map is all
+about - demolish the fucking place and get the hell out of there. 
+
+Works in coop, but not playtested.
+
+Tested by Phml, gggmork and Bloodite Krypto (thanks guys).
+
+===========================================
+
+MAP09  - Ginipiggu
+Author - dannebubinga
+Music  - Plutonia map 21
+Comments: A simple slaughter-ish attempt on a circle of death tribute, made
+in a very short time borderlining on speed map. 
+
+Also known as "Videopung" which is quite funny if you understand swedish.
+Later went for anoher japanese/english name which of course is
+"Guinea Pig". 
+
+Works in coop, but not playtested.
+
+Tested by Phml
+
+===========================================
+
+MAP10  - True Violence
+Author - dannebubinga
+Music  - Plutonia map 2
+Comments: My first time using the q1tex resource. It turned out quite nice
+and plays very well too. This map is very inspired by my fellow mapper
+"Grain of Salt" who uses these textures in a very tasteful way. 
+
+Works in coop, but not playtested. The YK fight may break when in coop
+mode, but I don't know how 2 players would fit in there anyway. Player may
+also get stuck in the BK room if the player uses an AV jump to the coop
+teleporter leading to the BK room.
+
+Tested by Phml, Grain of Salt and Memfis (many thanks for that!).
+
+===========================================
+
+MAP11  - Satsui No Hado
+Author - dannebubinga
+Music  - Descent (d cent06)
+Comments: The nerd inside of me thought that I should pay another homage
+name-wise to the Street Fighter series. A big tech-base structure with
+gallons of cooling water running everywhere and tons of Hell Knights. The
+map is also a response to recent discussions about symmetry and how you've
+failed as a mapper if you implement it. What I think about symmetry is
+after playing this map - kind of obvious. 
+
+Works in coop, but not playtested.
+
+Tested by Phml.
+
+===========================================
+
+MAP12  - Ultra
+Author - dannebubinga
+Music  - Descent (d cent09)
+Comments: A speedmap inspired by phmlspd. It may not look that way, but
+that's how I thought while I was mapping. I wanted the map to look like a
+phmlspd map, but when I threw in the jungle textures to spice it up a bit,
+it became quite abstract. A pretty poor looking map tbh, plays quite good
+for fast maxes and speed runs though. 
+
+Works in coop, but not playtested.
+
+Tested by Phml and Grain of Salt.
+
+===========================================
+
+MAP13  - Kama Sutra Lite
+Author - Memfis
+Music  - MUS_E2M3 (slowed down a bit) from Heretic [created by Kevin
+         Schilder]
+Comments: Just a little tribute to one of the most original KS maps. Made
+at russian 4 hour speedmapping event, with small corrections made soon
+after.
+
+===========================================
+
+MAP14  - Unholy Courtyard
+Author - Olympus
+Music  -
+Comments: This was a, well, different style map than I usually make! It's
+probably noticeable but it was inspired by a map from Hell Revealed.
+
+===========================================
+
+MAP15  - Killtastrophe
+Author - Odd-o-matic
+         dannebubinga (gameplay edits)
+Music  - "Nobody Told Me About id", E2M8 from DOOM, by Bobby Prince
+Comments:
+
+===========================================
+
+MAP16  - Night Train
+Author - DoomHero85
+         j4rio
+         Grain of Salt
+Music  - Descent, Music 12.
+Comments: DH85 - This was a speedmap for the project and I'm glad people
+took the time to flesh it out a little.
+
+Grain of Salt - Inspired by my own maps. Windows 95. Duke Nukem 3D.
+
+Finally a good map! In July, when nothing much had happened yet in SF2011,
+DoomHero85 (that’s General Rainbow Bacon to you) released a speedmap called
+“Butt Donuts”. Much later, when we were compiling the beta releases, j4rio
+was generally unsatisfied by the DH85 maps we were looking at, and released
+a fix to make this one beatable, as well as adding a few interesting
+fights. I played j4rio’s version, and I started having ideas for how to
+detail it, so I loaded up Doom Builder, and a few hours later I had this.
+As well as the detailing, I tweaked the beginning fight quite a lot, I took
+out a couple of areas that didn’t work, and I shuffled the order of things
+around. So essentially, DoomHero created the shape of the map, j4rio fixed
+the gameplay, and I made it look pretty. In terms of aesthetics, it’s
+basically a rip-off of my Green Goddess maps, but no one played Green
+Goddess so I think we’re safe. I love the MIDI piano on this track. Ahhhh.
+
+Tested by: Phml and j4rio. Build time: Four hours of detailing. A few days
+of tweaks and discussion. No bugs that I know of.
+
+===========================================
+
+MAP17  - Soup
+Author - DoomHero85
+         j4rio (gameplay edits)
+Music  -
+Comments: This was a speedmap for the project and I'm glad people took the
+time to flesh it out a little.
+
+===========================================
+
+MAP18  - MetalFuneral
+Author - DoomHero85
+         j4rio (gameplay edits)
+Music  -
+Comments: This was a speedmap for the project and I'm glad people took the
+time to flesh it out a little.
+
+===========================================
+
+MAP19  - Waffles
+Author - DoomHero85
+         j4rio (gameplay edits)
+Music  -
+Comments: This was a speedmap for the project and I'm glad people took the
+time to flesh it out a little.
+
+===========================================
+
+MAP20  - Slotter
+Author - gggmork
+Music  - The Sound of Censorship
+Comments: *censored*
+
+===========================================
+
+MAP21  - junk1
+Author - gggmork
+Music  - The Sound of Censorship
+Comments: *censored*
+
+===========================================
+
+MAP22  - 00shit1
+Author - gggmork
+Music  - The Sound of Censorship
+Comments: *censored*
+
+===========================================
+
+MAP23  - 00barf1
+Author - gggmork
+Music  - The Sound of Censorship
+Comments: *censored*
+
+===========================================
+
+MAP24  - Untitled
+Author - Okuplok
+Music  - Romancing SaGa 3 - Battle 1 (Rock Remix) by Marine
+Comments:
+
+===========================================
+
+MAP25  - Cat
+Author - Phml
+Music  - "Death Rattle", Tactics Ogre
+Comments: A couple years back, I made several speedmaps. Not being big on
+intellectual property and all that stuff, I explicitely said anyone was
+free to do with these as they wished.
+
+Now, some people thought it meant they could take the wad and haphazardly
+throw a bunch of monsters in it, completely destroying balance ; and so far
+all of that is fine, more power to them if they enjoy it that way.
+
+Then comes the annoying part: the original wad was named Phmlspd (creative,
+isn't it), and our fellows, which we'll assume were just appalled at the
+astounding amount of effort required to change a wad title, decided to just
+stick a version number at the end of it, call it a day and host it on
+Skulltag.
+
+Not only making it look like that sorry mess was condoned by me, but that
+it was the official thing, and that I was directly responsible for this
+atrocity. Yeah. Thank you very much, guys.
+
+So I bitched about it, still respectfully and all at this point, on the
+Skulltag forums, pointing out I wasn't so hot on the wad being tied to my
+name. Whoever was involved didn't bother to answer, and for a few days it
+seemed like the situation wasn't about to change any.
+
+Suddenly, the (Skulltag) wad name changed. 
+
+To... Chillax.
+
+Oh, it. Is. ON.
+
+And so, Cat. A remix of Phmlspd map01, filled to the brim with monsters,
+with several new areas and redesigns of the old ones. Gritty redesigns,
+because if Hollywood told us something, reboots must be angsty.
+
+Following that thought, the secret area was a homage of sorts to some of
+ToD's maps, trying to grasp an eerie feeling of something that went
+terribly wrong and resulted in this black, soulless dimension filled with
+nothing but blood and monsters. Well, there's the blood and the monsters.
+
+Difficulty settings roughly implemented: HMP is like UV with more powerups
+and a few problematic monsters gone. HNTR is intended as a walk in the
+park / tourist difficulty; although there's still shit to shoot. Co-op
+starts are there, but no playtesting or balancing has been done, save for
+removing the BFG (which in itself should make a sizeable difference).
+
+===========================================
+
+MAP26  - Mouse
+Author - Phml
+Music  - "The Jade Emperor", Secret of Evermore
+Comments: Huge, dead temple.
+
+Let's get this out of the way, the texture scheme is ripped straight out of
+Sunder Map11. 
+
+And *I* asked permission, thank you very much. 
+
+...Sorry. I'll behave.
+
+Back to the point: if you like anything about the aesthetics, Insane Gazebo
+is the one to thank for it ; and in that case, you ought to check Sunder if
+you haven't already. If, on the other hand, you think this map is complete
+junk, throw your rotten apples at me. I can't come close to the level of
+artistic skill the man has, and picking the same pieces to build with only
+makes the above that much more obvious.
+
+There's been many ideas, some discarded and some kept from the start, as it
+took an ungodly 3 months or so to get this done. 10-20 minutes a day at a
+time, admittedly, as not to yell in disgust and discard the whole thing
+while it looked like I was getting nowhere with it. The plan was to have a
+layout that'd tie back on itself in a way that fight dynamics could heavily
+change based on where and when you choose to fight ; a maze-ish environment
+with lowering walls triggered by walkover lines rather than switches, which
+along with the scale was an attempt to build on the lab mouse thing.
+
+While the set pieces were there, the gameplay was somewhat lacking in
+certain parts. Thankfully, dannebubinga single-handedly saved this map. He
+did a lot of playtesting during the final month, gave a lot of feedback,
+got me to consider and rework various stuff I wouldn't have thought of
+myself. Of course, he's not the only one who's been providing valuable
+feedback, and much thanks to everyone involved. It's just that danne's
+contribution was so critical to the result it'd be wrong not to acknowledge
+its extent.
+
+Difficulty settings roughly implemented: HMP is like UV with more powerups
+and a few problematic monsters gone. HNTR is a bit easier still. Co-op
+starts are there, but no playtesting or balancing has been done.
+
+===========================================
+
+MAP27  - Supernib
+Author - TimeOfDeath
+Music  -
+Comments: Named after the licorice cuz I was eating them when I made the
+map.
+
+===========================================
+
+MAP28  - em1all
+Author - TimeOfDeath
+Music  -
+Comments: This is map33 from em116.wad, credit to eternall.wad.
+
+===========================================
+
+MAP29  - Chocolate Pain
+Author - TimeOfDeath
+Music  -
+Comments: There's this grocery store in Canada called Sobey's, and they
+sell these pastry things (kinda like croissants) that are stuffed with
+chocolate. On the plastic container it says they're called "Pain Aux
+Chocolat", so yeah...
+
+===========================================
+
+MAP30  - Mixed Nuts
+Author - TrueDude
+         j4rio (gameplay edits)
+Music  - Blind Guardian - Time What is Time
+Comments: [TD] An attempt to make the biggest map with the largest possible
+enemy count I could. I originally aimed to surpass Holy Hell, but I only
+reached just above 3/4 of its monster count I made the fatal mistake of
+testing with ZDoom, so when I switched to prBoom most of the enemies
+couldn't move because of how close they were to each other. I eventually
+just left it out for some else to finish.
+
+===========================================
+
+MAP31  - Crest of Simplicity Part 2
+Author - Zom-B
+         TimeOfDeath (minor edits)
+Music  -
+Comments:
+
+===========================================
+
+MAP32  - Bananabread
+Author - Grain of Salt
+Music  - Ellinia Forest, from Maple Story. MIDI file from vgmusic.
+Comments: Inspired by nothing.
+
+I spent about twenty minutes making a detailed 64x64 segment of stairs, and
+then I copy-pasted it into a big arena and filled it with stuff for some
+reason. The music here was the music I used for a very early version of
+Apple Acres, and I was sorry to see it go, so I found a space for it on
+this map, which never really had a track associated with it. It’s not a
+complex map. Just run, fire and stay alive.
+
+Tested by: gggmork and Phml. Build time: Less than 2 hours. No bugs that I
+know of.
+
+===========================================================================
+
+/////////////////////////////////////////
+// A U T H O R   I N F O R M A T I O N //
+/////////////////////////////////////////
+
+===========================================================================
+
+Author     - dannebubinga
+Alias      - Daniel Jakobsson
+Email      - daniel.tomhet@gmail.com
+Other wads - combat shock
+Comments   - I'm proud to be a part of SF2k11. Some of the finest players
+and mappers have contributed to this project and I hope we can continue
+making quality slaughter maps together in future projects!
+
+===========================================
+
+Author     - DoomHero85
+Alias      - General Rainbow Bacon
+Email      - sgraham924@gmail.com
+Other wads -
+Comments   -
+
+===========================================
+
+Author     - gggmork
+Alias      - *censored*
+Email      - *censored*
+Other wads - *censored*
+Comments   - *censored*
+
+Banworld Minion: "We have successfully censored gggmork's above text
+fields, sir!"
+
+Dark Helmet: "Excellent!"
+
+Banworld Minion: "And the forum Ban Laser is almost complete! We just need
+your input on what to set the ban duration to!" 
+
+Dark Helmet: "Set the ban duration to... INFINITY... ha ha haaa, even if
+gggmork is cryogenically unfrozen 5 BILLION years from now, he'll STILL be
+banned from MY forum! That's what he gets for DARING to post an external
+link that conflicts with my opinion, AKA. the law, and for posting
+gibberish! Any communication that does not conform with Banworld Newspeak
+Version 3 shall now be called "gibberish", and add it to the drop down box
+of potential review abuses at idgames! Remember, giving any of MY maps less
+than perfect scores is considered gibberish, and shall be met with the
+power of SCHWARTZ!"
+
+Banworld Minion: "YES SIR!" *covers crotch*
+
+Dark Helmet: "Make sure gggmork can't download his own demos from the
+Banworld forum; his user generated content is now... OUR content, just as
+we always planned! Send our propagandists to compare him to antisemitic
+chess players and double child murderers, now that he can no longer reply!
+Revoke bathroom privileges forum-wide! Place the censored loser forum on
+rolling evidence deletion! Ban all pictures of puppies, even ones on
+externally linked sites, because puppies don't wear clothes! And now...
+commence Operation Vacusuck on Planet Troll, and bring me a platter of
+BANanas! BAN! BAN! BAN!"
+
+===========================================
+
+Author     - Grain of Salt
+Alias      - Grain of Salt
+Email      - None
+Other wads - Green Goddess, which was never completed, and was released
+             only on the forums, and MAP25 of Progressive Fiction, which
+             isn't going to come out for a while. So, in effect...
+             nothing. :)
+Comments   - First off, I've got to thank the other members of the team for
+their contributions. We were lucky enough to get some of the best slaughter
+mappers around, and I'm thankful I got to work on something with them.
+Really, what other project is ever going to have new maps by TimeOfDeath,
+Phml and gggmork at the same time?
+
+SF2011 gives me a pretty strong Hell Revealed 2 vibe. We have similar
+gameplay, a similar mix of maps, and we even have a third episode that
+starts off gothic and segues into a surreal, scaled-up classic theme. All
+we're missing is a ridiculous IoS map at the end. Actually, why did no one
+do that? Come on, that would have been great. In terms of map variation,
+this is one of the strangest megawads I've ever seen. We have some maps
+with barely any thought given to the gameplay or aesthetics, and we have
+some maps that are extraordinary works of art in every respect. Luckily,
+most maps here are pretty solid, thanks to people like Phml and
+dannebubinga ravenously testing everything they can get hold of. There are
+weird lapses, but I guess that was inevitable in a project this open. I'm
+looking forward to SF2012, which will have twice as long to gather maps,
+and will therefore hopefully be able to avoid getting stuck with unfinished
+speedmaps. SF2012 could well be the last version of the project involving
+broadly this group of mappers, so we'd better make it a good one.
+
+Now pick a map and record something.
+
+===========================================
+
+Author     - j4rio
+Alias      - none
+Email      - nope
+Other wads - none
+Comments   - none
+
+===========================================
+
+Author     - Memfis
+Alias      - kuchitsu
+Email      - kuchitsu4@gmail.com
+Other wads - sbspd020 MAP02, ht MAP17, whitemar MAP04, vodeim21, kashimir,
+             spd6 MAP12, stckblod, map18mem, greenday, kurogane
+Comments   - GUSTA, PLEASE RELEASE KS2 ALREADY!
+
+===========================================
+
+Author     - Odd-o-matic
+Alias      -
+Email      -
+Other wads -
+Comments   -
+
+===========================================
+
+Author     - Okuplok
+Alias      -
+Email      -
+Other wads -
+Comments   -
+
+===========================================
+
+Author     - Olympus
+Alias      -
+Email      -
+Other wads - Progressive Fiction (Hadephobia) Maps 12 and 23
+Comments   - This was really a fun project to work on, mostly because it
+was a different type of gameplay than I usually do. Now, I know I will
+probably not be able to beat a single map from this mapset, but I think it
+will be a good challenge for hardcore doomers. I hope the players have as
+much fun playing it as I did making my map for it.
+
+===========================================
+
+Author     - Phml
+Alias      - None that I know of
+Email      - Phml.ji@gmail.com
+Other wads - Chaos Order, Bloodlust, Phmlspd, Trifling, dwspd022 map02,
+             dwspd024 map13
+Comments   - Quality not guaranteed
+
+===========================================
+
+Author     - TimeOfDeath
+Alias      - eternal slumber, Anigav, Croysent
+Email      - thelastbreathofthedying@yahoo.com
+Other wads - dib28a map01 03 04 05 09 22 23 26 27 28, 2sector map07,
+             rjsloth12, masterjumps map06, smedley, squane, chips19,
+             flanagan, dekutree, loink, tom19, sloth0409, uuhhtod, slut,
+             bump, av20mem, em116, nostril, reality3, ninadobrev, pppp,
+             64lemons, nh1
+Comments   - DOOM is liek r34lly gr8
+
+===========================================
+
+Author     - Michael A. Jurich
+Alias      - TrueDude
+Email      - midwestgenius@gmail.com
+Other wads - bonedry.wad
+Comments   -
+
+===========================================
+
+Author     - Zom-B
+Alias      -
+Email      -
+Other wads -
+Comments   -
+
+===========================================================================
+
+///////////////////////////
+// E N D   O F   F I L E //
+///////////////////////////
+
+===========================================================================

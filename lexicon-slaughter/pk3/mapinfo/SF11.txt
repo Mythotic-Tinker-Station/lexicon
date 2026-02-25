@@ -1,0 +1,393 @@
+// Slaughterfest 2011 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SF1101 "MAP01 - Apple Acres"
+{
+	titlepatch = "SF11V00"
+	next = "SF1102"
+	secretnext = "SF1102"
+	sky1 = "SF110361"
+	music = "D_SF1101"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1102 "MAP02 - Control Freak"
+{
+	titlepatch = "SF11V01"
+	next = "SF1103"
+	secretnext = "SF1103"
+	sky1 = "SF110361"
+	music = "D_SF1102"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1103 "MAP03 - Lull"
+{
+	titlepatch = "SF11V02"
+	next = "SF1104"
+	secretnext = "SF1104"
+	sky1 = "SF110361"
+	music = "D_SF1103"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1104 "MAP04 - North"
+{
+	titlepatch = "SF11V03"
+	next = "SF1105"
+	secretnext = "SF1105"
+	sky1 = "SF110361"
+	music = "D_SF1104"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1105 "MAP05 - Eyes and Ears"
+{
+	titlepatch = "SF11V04"
+	next = "SF1106"
+	secretnext = "SF1106"
+	sky1 = "SF110361"
+	music = "D_SF1105"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1106 "MAP06 - Earthquake"
+{
+	titlepatch = "SF11V05"
+	next = "SF1107"
+	secretnext = "SF1107"
+	sky1 = "SF110361"
+	music = "D_SF1106"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1107 "MAP07 - Lull Remix"
+{
+	titlepatch = "SF11V06"
+	next = "SF1108"
+	secretnext = "SF1108"
+	sky1 = "SF110361"
+	music = "D_SF1107"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+	Map07Special
+}
+
+map SF1108 "MAP08 - Metsu"
+{
+	titlepatch = "SF11V07"
+	next = "SF1109"
+	secretnext = "SF1109"
+	sky1 = "SF110361"
+	music = "D_SF1108"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1109 "MAP09 - Ginipiggu"
+{
+	titlepatch = "SF11V08"
+	next = "SF1110"
+	secretnext = "SF1110"
+	sky1 = "SF110361"
+	music = "D_SF1109"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1110 "MAP10 - True Violence"
+{
+	titlepatch = "SF11V09"
+	next = "SF1111"
+	secretnext = "SF1111"
+	sky1 = "SF110361"
+	music = "D_SF1110"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1111 "MAP11 - Satsui No Hado"
+{
+	titlepatch = "SF11V10"
+	next = "SF1112"
+	secretnext = "SF1112"
+	sky1 = "SF110361"
+	music = "D_SF1111"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1112 "MAP12 - Ultra"
+{
+	titlepatch = "SF11V11"
+	next = "SF1113"
+	secretnext = "SF1113"
+	sky1 = "SF110362"
+	music = "D_SF1112"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1113 "MAP13 - Kama Sutra Lite"
+{
+	titlepatch = "SF11V12"
+	next = "SF1114"
+	secretnext = "SF1114"
+	sky1 = "SF110362"
+	music = "D_SF1113"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1114 "MAP14 - Unholy Courtyard"
+{
+	titlepatch = "SF11V13"
+	next = "SF1115"
+	secretnext = "SF1115"
+	sky1 = "SF110362"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1115 "MAP15 - Killtastrophe"
+{
+	titlepatch = "SF11V14"
+	next = "SF1116"
+	secretnext = "SF1131"
+	sky1 = "SF110362"
+	music = "D_SF1115"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1116 "MAP16 - Night Train"
+{
+	titlepatch = "SF11V15"
+	next = "SF1117"
+	secretnext = "SF1117"
+	sky1 = "SF110362"
+	music = "D_SF1116"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1117 "MAP17 - Soup"
+{
+	titlepatch = "SF11V16"
+	next = "SF1118"
+	secretnext = "SF1118"
+	sky1 = "SF110362"
+	music = "D_SF1117"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1118 "MAP18 - MetalFuneral"
+{
+	titlepatch = "SF11V17"
+	next = "SF1119"
+	secretnext = "SF1119"
+	sky1 = "SF110362"
+	music = "D_SF1118"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1119 "MAP19 - Waffles"
+{
+	titlepatch = "SF11V18"
+	next = "SF1120"
+	secretnext = "SF1120"
+	sky1 = "SF110362"
+	music = "D_SF1119"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1120 "MAP20 - Slotter"
+{
+	titlepatch = "SF11V19"
+	next = "SF1121"
+	secretnext = "SF1121"
+	sky1 = "SF110362"
+	music = "D_SF1120"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1121 "MAP21 - junk1"
+{
+	titlepatch = "SF11V20"
+	next = "SF1122"
+	secretnext = "SF1122"
+	sky1 = "SF110363"
+	music = "D_SF1121"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1122 "MAP22 - 00shit1"
+{
+	titlepatch = "SF11V21"
+	next = "SF1123"
+	secretnext = "SF1123"
+	sky1 = "SF110363"
+	music = "D_SF1122"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1123 "MAP23 - 00barf1"
+{
+	titlepatch = "SF11V22"
+	next = "SF1124"
+	secretnext = "SF1124"
+	sky1 = "SF110363"
+	music = "D_SF1123"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1124 "MAP24 - Untitled"
+{
+	titlepatch = "SF11V23"
+	next = "SF1125"
+	secretnext = "SF1125"
+	sky1 = "SF110363"
+	music = "D_SF1124"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1125 "MAP25 - Cat"
+{
+	titlepatch = "SF11V24"
+	next = "SF1126"
+	secretnext = "SF1126"
+	sky1 = "SF110363"
+	music = "D_SF1125"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1126 "MAP26 - Mouse"
+{
+	titlepatch = "SF11V25"
+	next = "SF1127"
+	secretnext = "SF1127"
+	sky1 = "SF110363"
+	music = "D_SF1126"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1127 "MAP27 - Supernib"
+{
+	titlepatch = "SF11V26"
+	next = "SF1128"
+	secretnext = "SF1128"
+	sky1 = "SF110363"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1128 "MAP28 - em1all"
+{
+	titlepatch = "SF11V27"
+	next = "SF1129"
+	secretnext = "SF1129"
+	sky1 = "SF110363"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1129 "MAP29 - Chocolate Pain"
+{
+	titlepatch = "SF11V28"
+	next = "SF1130"
+	secretnext = "SF1130"
+	sky1 = "SF110363"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1130 "MAP30 - Mixed Nuts"
+{
+	titlepatch = "SF11V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SF110363"
+	music = "D_SF1130"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+	allowmonstertelefrags
+}
+
+map SF1131 "MAP31 - Crest of Simplicity Part 2"
+{
+	titlepatch = "SF11V30"
+	next = "SF1116"
+	secretnext = "SF1132"
+	sky1 = "SF110363"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}
+
+map SF1132 "MAP32 - Bananabread"
+{
+	titlepatch = "SF11V31"
+	next = "SF1116"
+	secretnext = "SF1116"
+	sky1 = "SF110363"
+	music = "D_SF1132"
+	intermusic = "D_SF11IN"
+	ExitPic = "SF11INT"
+	EnterPic = "SF11INT"
+}

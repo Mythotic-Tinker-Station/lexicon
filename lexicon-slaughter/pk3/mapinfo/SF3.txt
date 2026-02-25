@@ -1,0 +1,424 @@
+// Slaughterfest 3 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	specialaction = "Cyberdemon", "Door_Open", 666, 16
+}
+
+map SF1301 "01: Resurrect Dead"
+{
+	titlepatch = "SF13V00"
+	next = "SF1302"
+	secretnext = "SF1302"
+	sky1 = "SF130610"
+	music = "D_SF1301"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1302 "02: Firestarter"
+{
+	titlepatch = "SF13V01"
+	next = "SF1303"
+	secretnext = "SF1303"
+	sky1 = "SF130610"
+	music = "D_SF1302"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1303 "03: Pathogen"
+{
+	titlepatch = "SF13V02"
+	next = "SF1304"
+	secretnext = "SF1304"
+	sky1 = "SF130610"
+	music = "D_SF1303"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1304 "04: Desecration"
+{
+	titlepatch = "SF13V03"
+	next = "SF1305"
+	secretnext = "SF1305"
+	sky1 = "SF130610"
+	music = "D_SF1304"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1305 "05: Evil Battlefield of Demons"
+{
+	titlepatch = "SF13V04"
+	next = "SF1306"
+	secretnext = "SF1306"
+	sky1 = "SF130610"
+	music = "D_SF1305"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1306 "06: Wavebreaker"
+{
+	titlepatch = "SF13V05"
+	next = "SF1307"
+	secretnext = "SF1307"
+	sky1 = "SF130610"
+	music = "D_SF1306"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1307 "07: Morkfang"
+{
+	titlepatch = "SF13V06"
+	next = "SF1308"
+	secretnext = "SF1308"
+	sky1 = "SF130610"
+	music = "D_SF1307"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+	Map07Special
+}
+
+map SF1308 "08: Resurgam"
+{
+	titlepatch = "SF13V07"
+	next = "SF1309"
+	secretnext = "SF1309"
+	sky1 = "SF130610"
+	music = "D_SF1308"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1309 "09: Yonahe"
+{
+	titlepatch = "SF13V08"
+	next = "SF1310"
+	secretnext = "SF1310"
+	sky1 = "SF130610"
+	music = "D_SF1309"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1310 "10: Dunleitt"
+{
+	titlepatch = "SF13V09"
+	next = "SF1311"
+	secretnext = "SF1311"
+	sky1 = "SF130610"
+	music = "D_SF1310"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1311 "11: Broken Mind"
+{
+	titlepatch = "SF13V10"
+	next = "SF1312"
+	secretnext = "SF1312"
+	sky1 = "SF130610"
+	music = "D_SF1311"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1312 "12: Gevurah"
+{
+	titlepatch = "SF13V11"
+	next = "SF1313"
+	secretnext = "SF1313"
+	sky1 = "SF130611"
+	music = "D_SF1312"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1313 "13: The Farthest Reach"
+{
+	titlepatch = "SF13V12"
+	next = "SF1314"
+	secretnext = "SF1314"
+	sky1 = "SF130611"
+	music = "D_SF1313"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1314 "14: Blue Shift"
+{
+	titlepatch = "SF13V13"
+	next = "SF1315"
+	secretnext = "SF1315"
+	sky1 = "SF130611"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1315 "15: Skittle Biscuit"
+{
+	titlepatch = "SF13V14"
+	next = "SF1316"
+	secretnext = "SF1331"
+	sky1 = "SF130611"
+	music = "D_SF1315"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1316 "16: Nibblet"
+{
+	titlepatch = "SF13V15"
+	next = "SF1317"
+	secretnext = "SF1317"
+	sky1 = "SF130611"
+	music = "D_SF1316"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1317 "17: Fierce Attack"
+{
+	titlepatch = "SF13V16"
+	next = "SF1318"
+	secretnext = "SF1318"
+	sky1 = "SF130611"
+	music = "D_SF1317"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1318 "18: Via Tortuosa"
+{
+	titlepatch = "SF13V17"
+	next = "SF1319"
+	secretnext = "SF1319"
+	sky1 = "SF130611"
+	music = "D_SF1318"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1319 "19: Meet-A-Bear"
+{
+	titlepatch = "SF13V18"
+	next = "SF1320"
+	secretnext = "SF1320"
+	sky1 = "SF130611"
+	music = "D_SF1319"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1320 "20: Red Recluse"
+{
+	titlepatch = "SF13V19"
+	next = "SF1321"
+	secretnext = "SF1321"
+	sky1 = "SF130611"
+	music = "D_SF1320"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1321 "21: Heck Revealed"
+{
+	titlepatch = "SF13V20"
+	next = "SF1322"
+	secretnext = "SF1322"
+	sky1 = "SF130612"
+	music = "D_SF1321"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1322 "22: Uprising"
+{
+	titlepatch = "SF13V21"
+	next = "SF1323"
+	secretnext = "SF1323"
+	sky1 = "SF130612"
+	music = "$MUSIC_DDTBL3"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1323 "23: Chaos Slaughter"
+{
+	titlepatch = "SF13V22"
+	next = "SF1324"
+	secretnext = "SF1324"
+	sky1 = "SF130612"
+	music = "D_SF1323"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1324 "24: Joyless"
+{
+	titlepatch = "SF13V23"
+	next = "SF1325"
+	secretnext = "SF1325"
+	sky1 = "SF130612"
+	music = "$MUSIC_THEDA3"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1325 "25: Temple of Judgement"
+{
+	titlepatch = "SF13V24"
+	next = "SF1326"
+	secretnext = "SF1326"
+	sky1 = "SF130612"
+	music = "D_SF1325"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1326 "26: Dysphoria"
+{
+	titlepatch = "SF13V25"
+	next = "SF1327"
+	secretnext = "SF1327"
+	sky1 = "SF130612"
+	music = "D_SF1326"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1327 "27: To Mega Therion"
+{
+	titlepatch = "SF13V26"
+	next = "SF1328"
+	secretnext = "SF1328"
+	sky1 = "SF130612"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1328 "28: dHoles"
+{
+	titlepatch = "SF13V27"
+	next = "SF1329"
+	secretnext = "SF1329"
+	sky1 = "SF130612"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1329 "29: Escaping the Spiral Labyrinth"
+{
+	titlepatch = "SF13V28"
+	next = "SF1330"
+	secretnext = "SF1330"
+	sky1 = "SF130612"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1330 "30: Chronoblast"
+{
+	titlepatch = "SF13V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SF130612"
+	music = "D_SF1330"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+	allowmonstertelefrags
+}
+
+map SF1331 "31: With Fist In Hand"
+{
+	titlepatch = "SF13V30"
+	next = "SF1316"
+	secretnext = "SF1332"
+	sky1 = "SF130612"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1332 "32: Pacman"
+{
+	titlepatch = "SF13V31"
+	next = "SF1316"
+	secretnext = "SF1316"
+	sky1 = "SF130612"
+	music = "D_SF1332"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1333 "33: Three Lines"
+{
+	titlepatch = "SF13V32"
+	next = "SF1301"
+	secretnext = "SF1301"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1334 "34: Mult00000001"
+{
+	titlepatch = "SF13V33"
+	next = "SF1301"
+	secretnext = "SF1301"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}
+
+map SF1335 "35: Butt"
+{
+	titlepatch = "SF13V34"
+	next = "SF1301"
+	secretnext = "SF1301"
+	intermusic = "D_SF13IN"
+	ExitPic = "SF13INT"
+	EnterPic = "SF13INT"
+}

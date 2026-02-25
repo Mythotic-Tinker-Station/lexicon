@@ -1,0 +1,390 @@
+// Dark Tarturus Mapinfo
+
+map DKTS01 "Arch Bridge"
+{
+	next = "DKTS02"
+	secretnext = "DKTS02"
+	sky1 = "DKTS0300"
+	music = "D_DKTS01"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS02 "Final Destination"
+{
+	next = "DKTS03"
+	secretnext = "DKTS03"
+	sky1 = "DKTS0300"
+	music = "D_DKTS02"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS03 "Lunatic's Game"
+{
+	next = "DKTS04"
+	secretnext = "DKTS04"
+	sky1 = "DKTS0300"
+	music = "D_DKTS03"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS04 "Nothing Special"
+{
+	next = "DKTS05"
+	secretnext = "DKTS05"
+	sky1 = "DKTS0300"
+	music = "D_DKTS04"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS05 "The Gate"
+{
+	next = "DKTS06"
+	secretnext = "DKTS06"
+	sky1 = "DKTS0300"
+	music = "D_DKTS05"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS06 "WOW:Finished"
+{
+	next = "DKTS07"
+	secretnext = "DKTS07"
+	sky1 = "DKTS0300"
+	music = "D_DKTS06"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS07 "Open Season"
+{
+	next = "DKTS08"
+	secretnext = "DKTS08"
+	sky1 = "DKTS0300"
+	music = "D_DKTS07"
+	intermusic = "D_DKTSIN"
+	Map07Special
+}
+
+map DKTS08 "Ground Zero"
+{
+	next = "DKTS09"
+	secretnext = "DKTS09"
+	sky1 = "DKTS0300"
+	music = "D_DKTS08"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS09 "Extreme Caution"
+{
+	next = "DKTS10"
+	secretnext = "DKTS10"
+	sky1 = "DKTS0300"
+	music = "D_DKTS09"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS10 "Skyscraper"
+{
+	next = "DKTS11"
+	secretnext = "DKTS11"
+	sky1 = "DKTS0300"
+	music = "D_DKTS10"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS11 "Hex"
+{
+	next = "DKTS12"
+	secretnext = "DKTS12"
+	sky1 = "DKTS0300"
+	music = "D_DKTS11"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS12 "The Last Settlement"
+{
+	next = "DKTS13"
+	secretnext = "DKTS13"
+	sky1 = "DKTS0299"
+	music = "D_DKTS12"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS13 "Pancake'd"
+{
+	next = "DKTS14"
+	secretnext = "DKTS14"
+	sky1 = "DKTS0300"
+	music = "D_DKTS13"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS14 "Doors of Troll"
+{
+	next = "DKTS15"
+	secretnext = "DKTS15"
+	sky1 = "DKTS0300"
+	music = "D_DKTS14"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS15 "Path of Light"
+{
+	next = "DKTS16"
+	secretnext = "DKTS31"
+	sky1 = "DKTS0300"
+	music = "D_DKTS15"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS16 "Lake Rumor"
+{
+	next = "DKTS17"
+	secretnext = "DKTS17"
+	sky1 = "DKTS0300"
+	music = "D_DKTS16"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS17 "Rituals and Ceremonies"
+{
+	next = "DKTS18"
+	secretnext = "DKTS18"
+	sky1 = "DKTS0303"
+	music = "D_DKTS17"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS18 "Contra"
+{
+	next = "DKTS19"
+	secretnext = "DKTS19"
+	sky1 = "DKTS0307"
+	music = "D_DKTS18"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS19 "Dimensions"
+{
+	next = "DKTS20"
+	secretnext = "DKTS20"
+	sky1 = "SKY2"
+	music = "D_DKTS19"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS20 "Frozen Throne"
+{
+	next = "DKTS21"
+	secretnext = "DKTS21"
+	sky1 = "DKTS0301"
+	music = "D_DKTS20"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS21 "The Killer's Breed"
+{
+	next = "DKTS22"
+	secretnext = "DKTS22"
+	sky1 = "DKTS0303"
+	music = "D_DKTS21"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS22 "Facing World"
+{
+	next = "DKTS23"
+	secretnext = "DKTS23"
+	sky1 = "DKTS0299"
+	music = "D_DKTS22"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS23 "Nowhere"
+{
+	next = "DKTS24"
+	secretnext = "DKTS24"
+	sky1 = "SKY3"
+	music = "D_DKTS23"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS24 "Revive Station"
+{
+	next = "DKTS25"
+	secretnext = "DKTS25"
+	sky1 = "SKY2"
+	music = "D_DKTS24"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS25 "BFG Charge"
+{
+	next = "DKTS26"
+	secretnext = "DKTS26"
+	sky1 = "SKY3"
+	music = "D_DKTS25"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS26 "Corridor of Doom"
+{
+	next = "DKTS27"
+	secretnext = "DKTS27"
+	sky1 = "SKY3"
+	music = "D_DKTS26"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS27 "Doomer's Room"
+{
+	next = "DKTS28"
+	secretnext = "DKTS28"
+	sky1 = "SKY3"
+	music = "D_DKTS27"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS28 "The Vestibule of Hell"
+{
+	next = "DKTS29"
+	secretnext = "DKTS29"
+	sky1 = "SKY3"
+	music = "D_DKTS28"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS29 "Dark Tartarus"
+{
+	next = "DKTS30"
+	secretnext = "DKTS30"
+	sky1 = "DKTS0299"
+	music = "D_DKTS29"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS30 "Boom! Headshot"
+{
+	next = "DKTS33"
+	secretnext = "DKTS33"
+	sky1 = "SKY3"
+	music = "D_DKTS30"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS31 "Return to Wolfenstein"
+{
+	next = "DKTS16"
+	secretnext = "DKTS32"
+	sky1 = "DKTS0300"
+	music = "D_DKTS31"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS32 "The Cursed Marine"
+{
+	next = "DKTS16"
+	secretnext = "DKTS16"
+	sky1 = "DKTS0299"
+	music = "D_DKTS32"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS33 "Welcome"
+{
+	next = "DKTS34"
+	secretnext = "DKTS34"
+	sky1 = "DKTS0299"
+	music = "D_DKTS33"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS34 "Shallow Grave"
+{
+	next = "DKTS35"
+	secretnext = "DKTS35"
+	sky1 = "DKTS0299"
+	music = "D_DKTS34"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS35 "Devil's Tower"
+{
+	next = "DKTS36"
+	secretnext = "DKTS36"
+	sky1 = "DKTS0306"
+	music = "D_DKTS35"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS36 "Behind the Sky"
+{
+	next = "DKTS37"
+	secretnext = "DKTS37"
+	sky1 = "DKTS0304"
+	music = "D_DKTS36"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS37 "Truly Evil"
+{
+	next = "DKTS38"
+	secretnext = "DKTS38"
+	sky1 = "DKTS0303"
+	music = "D_DKTS37"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS38 "Skull Hunt"
+{
+	next = "DKTS39"
+	secretnext = "DKTS39"
+	sky1 = "DKTS0300"
+	music = "D_DKTS38"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS39 "Dead Tonight"
+{
+	next = "DKTS40"
+	secretnext = "DKTS40"
+	sky1 = "DKTS0303"
+	music = "D_DKTS39"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS40 "Horrible Things"
+{
+	titlepatch = "CWILV29"
+	next = "DKTS41"
+	secretnext = "DKTS41"
+	sky1 = "DKTS0303"
+	music = "D_DKTS40"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS41 " "
+{
+	next = "DKTS42"
+	secretnext = "DKTS42"
+	sky1 = "DKTS0300"
+	music = "D_DKTS41"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS42 "Beat Doom V0.01"
+{
+	next = "DKTS43"
+	secretnext = "DKTS43"
+	sky1 = "DKTS0300"
+	music = "D_DKTS42"
+	intermusic = "D_DKTSIN"
+}
+
+map DKTS43 "LOCK N' LOAD"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DKTS0300"
+	music = "D_DKTS43"
+	intermusic = "D_DKTSIN"
+}

@@ -1,0 +1,393 @@
+// SlaughterMAX Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SMAX01 "Mud Elemental"
+{
+	titlepatch = "SMAXV00"
+	next = "SMAX02"
+	secretnext = "SMAX02"
+	sky1 = "SKY1"
+	music = "D_SMAX01"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX02 "Showdown"
+{
+	titlepatch = "SMAXV01"
+	next = "SMAX03"
+	secretnext = "SMAX03"
+	sky1 = "SKY1"
+	music = "D_SMAX02"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX03 "Canyon Base"
+{
+	titlepatch = "SMAXV02"
+	next = "SMAX04"
+	secretnext = "SMAX04"
+	sky1 = "SKY1"
+	music = "D_SMAX03"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX04 "Struggle Bug"
+{
+	titlepatch = "SMAXV03"
+	next = "SMAX05"
+	secretnext = "SMAX05"
+	sky1 = "SKY1"
+	music = "D_SMAX04"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX05 "The Broken Machine"
+{
+	titlepatch = "SMAXV04"
+	next = "SMAX06"
+	secretnext = "SMAX06"
+	sky1 = "SKY1"
+	music = "D_SMAX05"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX06 "Sons of Liberty"
+{
+	titlepatch = "SMAXV05"
+	next = "SMAX07"
+	secretnext = "SMAX07"
+	sky1 = "SKY1"
+	music = "D_SMAX06"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX07 "Lift of Enlightenment"
+{
+	titlepatch = "SMAXV06"
+	next = "SMAX08"
+	secretnext = "SMAX08"
+	sky1 = "SKY1"
+	music = "D_SMAX07"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+	Map07Special
+}
+
+map SMAX08 "Dang!"
+{
+	titlepatch = "SMAXV07"
+	next = "SMAX09"
+	secretnext = "SMAX09"
+	sky1 = "SKY1"
+	music = "D_SMAX08"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX09 "Heavy Impact"
+{
+	titlepatch = "SMAXV08"
+	next = "SMAX10"
+	secretnext = "SMAX10"
+	sky1 = "SKY1"
+	music = "D_SMAX09"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX10 "Velvet"
+{
+	titlepatch = "SMAXV09"
+	next = "SMAX11"
+	secretnext = "SMAX11"
+	sky1 = "SKY1"
+	music = "D_SMAX10"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX11 "ritournelle"
+{
+	titlepatch = "SMAXV10"
+	next = "SMAX12"
+	secretnext = "SMAX12"
+	sky1 = "SKY1"
+	music = "D_SMAX11"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX12 "Abscess"
+{
+	titlepatch = "SMAXV11"
+	next = "SMAX13"
+	secretnext = "SMAX13"
+	sky1 = "SKY2"
+	music = "D_SMAX12"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX13 "Rocketfest 2018"
+{
+	titlepatch = "SMAXV12"
+	next = "SMAX14"
+	secretnext = "SMAX14"
+	sky1 = "SKY2"
+	music = "D_SMAX13"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX14 "Slaughterstein"
+{
+	titlepatch = "SMAXV13"
+	next = "SMAX15"
+	secretnext = "SMAX15"
+	sky1 = "SKY2"
+	music = "D_SMAX14"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX15 "Necroveins"
+{
+	titlepatch = "SMAXV14"
+	next = "SMAX16"
+	secretnext = "SMAX31"
+	sky1 = "SKY2"
+	music = "D_SMAX15"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX16 "Blood and Stones"
+{
+	titlepatch = "SMAXV15"
+	next = "SMAX17"
+	secretnext = "SMAX17"
+	sky1 = "SKY2"
+	music = "D_SMAX16"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX17 "Literally Unplayable"
+{
+	titlepatch = "SMAXV16"
+	next = "SMAX18"
+	secretnext = "SMAX18"
+	sky1 = "SKY2"
+	music = "D_SMAX17"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX18 "Swiss Cheese Strike"
+{
+	titlepatch = "SMAXV17"
+	next = "SMAX19"
+	secretnext = "SMAX19"
+	sky1 = "SKY2"
+	music = "D_SMAX18"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX19 "Last Light"
+{
+	titlepatch = "SMAXV18"
+	next = "SMAX20"
+	secretnext = "SMAX20"
+	sky1 = "SKY2"
+	music = "D_SMAX19"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX20 "The Mouth of Madness"
+{
+	titlepatch = "SMAXV19"
+	next = "SMAX21"
+	secretnext = "SMAX21"
+	sky1 = "SKY2"
+	music = "D_SMAX20"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX21 "The Outhouse"
+{
+	titlepatch = "SMAXV20"
+	next = "SMAX22"
+	secretnext = "SMAX22"
+	sky1 = "SKY3"
+	music = "D_SMAX21"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX22 "Electro Wizard"
+{
+	titlepatch = "SMAXV21"
+	next = "SMAX23"
+	secretnext = "SMAX23"
+	sky1 = "SKY3"
+	music = "D_SMAX22"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX23 "Pandemonium Unveiled"
+{
+	titlepatch = "SMAXV22"
+	next = "SMAX24"
+	secretnext = "SMAX24"
+	sky1 = "SKY3"
+	music = "D_SMAX23"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX24 "Dead Ringer"
+{
+	titlepatch = "SMAXV23"
+	next = "SMAX25"
+	secretnext = "SMAX25"
+	sky1 = "SKY3"
+	music = "D_SMAX24"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX25 "Castle of Hell"
+{
+	titlepatch = "SMAXV24"
+	next = "SMAX26"
+	secretnext = "SMAX26"
+	sky1 = "SKY3"
+	music = "D_SMAX25"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX26 "Eviscerate"
+{
+	titlepatch = "SMAXV25"
+	next = "SMAX27"
+	secretnext = "SMAX27"
+	sky1 = "SKY3"
+	music = "D_SMAX26"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX27 "Back and Forth"
+{
+	titlepatch = "SMAXV26"
+	next = "SMAX28"
+	secretnext = "SMAX28"
+	sky1 = "SKY3"
+	music = "D_SMAX27"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX28 "The Eclipse of Betelgeuse"
+{
+	titlepatch = "SMAXV27"
+	next = "SMAX29"
+	secretnext = "SMAX29"
+	sky1 = "SKY3"
+	music = "D_SMAX28"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX29 "Skindustrial Sector 04"
+{
+	titlepatch = "SMAXV28"
+	next = "SMAX30"
+	secretnext = "SMAX30"
+	sky1 = "SKY3"
+	music = "D_SMAX29"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX30 "Bugger This"
+{
+	titlepatch = "SMAXV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+	allowmonstertelefrags
+}
+
+map SMAX31 "Assassin's Greed"
+{
+	titlepatch = "SMAXV30"
+	next = "SMAX16"
+	secretnext = "SMAX32"
+	sky1 = "SKY3"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}
+
+map SMAX32 "Power Overwhelming"
+{
+	titlepatch = "SMAXV31"
+	next = "SMAX16"
+	secretnext = "SMAX16"
+	sky1 = "SKY3"
+	music = "D_SMAX32"
+	intermusic = "D_SMAXIN"
+	ExitPic = "SMAXINT"
+	EnterPic = "SMAXINT"
+}

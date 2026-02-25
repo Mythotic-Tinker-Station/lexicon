@@ -1,0 +1,297 @@
+// Pizza Steve Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map PZST01 "Pizza Steve Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "PZST02"
+	secretnext = "PZST02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map PZST02 "Pizza Steve Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "PZST03"
+	secretnext = "PZST03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map PZST03 "Pizza Steve Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "PZST04"
+	secretnext = "PZST04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map PZST04 "Pizza Steve Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "PZST05"
+	secretnext = "PZST05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map PZST05 "Pizza Steve Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "PZST06"
+	secretnext = "PZST06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map PZST06 "Pizza Steve Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "PZST07"
+	secretnext = "PZST07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map PZST07 "Pizza Steve Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "PZST08"
+	secretnext = "PZST08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map PZST08 "Pizza Steve Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "PZST09"
+	secretnext = "PZST09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map PZST09 "Pizza Steve Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "PZST10"
+	secretnext = "PZST10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}
+
+map PZST10 "Pizza Steve Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "PZST11"
+	secretnext = "PZST11"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+}
+
+map PZST11 "Pizza Steve Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "PZST12"
+	secretnext = "PZST12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+}
+
+map PZST12 "Pizza Steve Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "PZST13"
+	secretnext = "PZST13"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+}
+
+map PZST13 "Pizza Steve Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "PZST14"
+	secretnext = "PZST14"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+}
+
+map PZST14 "Pizza Steve Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "PZST15"
+	secretnext = "PZST15"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+}
+
+map PZST15 "Pizza Steve Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "PZST16"
+	secretnext = "PZST31"
+	sky1 = "SKY2"
+	music = "$MUSIC_RUNNI2"
+}
+
+map PZST16 "Pizza Steve Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "PZST17"
+	secretnext = "PZST17"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+}
+
+map PZST17 "Pizza Steve Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "PZST18"
+	secretnext = "PZST18"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+}
+
+map PZST18 "Pizza Steve Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "PZST19"
+	secretnext = "PZST19"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+}
+
+map PZST19 "Pizza Steve Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "PZST20"
+	secretnext = "PZST20"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+}
+
+map PZST20 "Pizza Steve Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "PZST21"
+	secretnext = "PZST21"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+}
+
+map PZST21 "Pizza Steve Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "PZST22"
+	secretnext = "PZST22"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+}
+
+map PZST22 "Pizza Steve Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "PZST23"
+	secretnext = "PZST23"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+}
+
+map PZST23 "Pizza Steve Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "PZST24"
+	secretnext = "PZST24"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+}
+
+map PZST24 "Pizza Steve Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "PZST25"
+	secretnext = "PZST25"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+}
+
+map PZST25 "Pizza Steve Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "PZST26"
+	secretnext = "PZST26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+}
+
+map PZST26 "Pizza Steve Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "PZST27"
+	secretnext = "PZST27"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+}
+
+map PZST27 "Pizza Steve Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "PZST28"
+	secretnext = "PZST28"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMER2"
+}
+
+map PZST28 "Pizza Steve Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "PZST29"
+	secretnext = "PZST29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+}
+
+map PZST29 "Pizza Steve Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "PZST30"
+	secretnext = "PZST30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+}
+
+map PZST30 "Pizza Steve Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	allowmonstertelefrags
+}
+
+map PZST31 "Pizza Steve Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "PZST16"
+	secretnext = "PZST32"
+	sky1 = "SKY3"
+	music = "$MUSIC_EVIL"
+}
+
+map PZST32 "Pizza Steve Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "PZST16"
+	secretnext = "PZST16"
+	sky1 = "SKY3"
+	music = "$MUSIC_ULTIMA"
+}

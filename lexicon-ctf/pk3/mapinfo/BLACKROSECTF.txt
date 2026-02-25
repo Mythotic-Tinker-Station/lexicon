@@ -1,0 +1,213 @@
+// Black Rose CTF Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map BKRS01 "Two Roses' War"
+{
+	next = "BKRS02"
+	secretnext = "BKRS02"
+	sky1 = "BKRS0388", 0.4
+	sky2 = "BKRS0389", 0.1
+	music = "D_BKRS01"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+	doublesky
+	forcenoskystretch
+}
+
+map BKRS02 "Star Station"
+{
+	next = "BKRS03"
+	secretnext = "BKRS03"
+	sky1 = "BKRS0439"
+	music = "D_BKRS02"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS03 "The Docks"
+{
+	next = "BKRS04"
+	secretnext = "BKRS04"
+	sky1 = "BKRS0438"
+	music = "D_BKRS03"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS04 "Black Rose Castle"
+{
+	next = "BKRS05"
+	secretnext = "BKRS05"
+	sky1 = "BKRS0438"
+	music = "D_BKRS04"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS05 "Sludge Tunnels"
+{
+	next = "BKRS06"
+	secretnext = "BKRS06"
+	sky1 = "BKRS0388", 0.8
+	sky2 = "BKRS0389", 0.4
+	music = "D_BKRS05"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+	doublesky
+	forcenoskystretch
+}
+
+map BKRS06 "Tech Base"
+{
+	next = "BKRS07"
+	secretnext = "BKRS07"
+	sky1 = "BKRS0439"
+	music = "D_BKRS06"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+	forcenoskystretch
+}
+
+map BKRS07 "The Mall"
+{
+	next = "BKRS08"
+	secretnext = "BKRS08"
+	sky1 = "BKRS0388", 0.8
+	sky2 = "BKRS0389", 0.4
+	music = "D_BKRS07"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+	doublesky
+	forcenoskystretch
+}
+
+map BKRS08 "Chess Anyone?"
+{
+	next = "BKRS09"
+	secretnext = "BKRS09"
+	music = "D_BKRS08"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS09 "The Pit"
+{
+	next = "BKRS10"
+	secretnext = "BKRS10"
+	sky1 = "BKRS0389"
+	music = "D_BKRS09"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS10 "Night Club"
+{
+	next = "BKRS11"
+	secretnext = "BKRS11"
+	music = "D_BKRS10"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS11 "Other World"
+{
+	next = "BKRS12"
+	secretnext = "BKRS12"
+	music = "D_BKRS11"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS12 "Close Combat"
+{
+	next = "BKRS13"
+	secretnext = "BKRS13"
+	sky1 = "BKRS0580"
+	music = "D_BKRS12"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS13 "Mini Tech Base"
+{
+	next = "BKRS14"
+	secretnext = "BKRS14"
+	sky1 = "BKRS0580"
+	music = "D_BKRS13"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS14 "Night Shift"
+{
+	next = "BKRS15"
+	secretnext = "BKRS15"
+	sky1 = "BKRS0439"
+	music = "D_BKRS14"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS15 "Gothic Pit"
+{
+	next = "BKRS16"
+	secretnext = "BKRS16"
+	sky1 = "BKRS0580"
+	music = "D_BKRS15"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS16 "Space Command"
+{
+	next = "BKRS17"
+	secretnext = "BKRS17"
+	sky1 = "BKRS0439"
+	music = "D_BKRS16"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS17 "Medieval Riot"
+{
+	next = "BKRS18"
+	secretnext = "BKRS18"
+	sky1 = "BKRS0581"
+	music = "D_BKRS04"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS18 "Show Time"
+{
+	next = "BKRS19"
+	secretnext = "BKRS19"
+	sky1 = "BKRS0438"
+	music = "D_BKRS18"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS19 "19"
+{
+	next = "BKRS20"
+	secretnext = "BKRS20"
+	sky1 = "BKRS0438"
+	music = "D_BKRS19"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}
+
+map BKRS20 "20"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "BKRS0438"
+	music = "D_BKRS20"
+	ExitPic = "BKRSINT"
+	EnterPic = "BKRSINT"
+}

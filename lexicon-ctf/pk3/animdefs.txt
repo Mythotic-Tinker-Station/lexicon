@@ -1,0 +1,90 @@
+// 32in24 IV: CAPTURE THE FAG
+texture YD040111 range YD040113 tics 8
+flat YD040017 range YD040020 tics 8
+
+// 32in24 7: Return of the Night of Capture the Flag
+texture YD070244 range YD070245 tics 8
+texture YD070316 range YD070319 tics 8 allowdecals
+texture YD070343 range YD070346 tics 8
+texture YD071106 range YD071107 tics 8
+texture YD071108 range YD071109 tics 8
+flat YD070001 range YD070004 tics 8
+flat YD070005 range YD070008 tics 8
+flat YD070084 range YD070087 tics 8
+switch YD070257 on pic YD070269 tics 0
+switch YD070258 on pic YD070271 tics 0
+switch YD070259 on pic YD070272 tics 0
+switch YD070260 on pic YD070273 tics 0
+switch YD070261 on pic YD070274 tics 0
+switch YD070263 on pic YD070276 tics 0
+switch YD070307 on pic YD070311 tics 0
+
+// 32in24-12: IRON MAPPER
+texture YD120180 range YD120183 tics 8
+texture YD120202 range YD120205 tics 8
+texture YD120208 range YD120209 tics 8
+texture YD120210 range YD120212 tics 8 allowdecals
+texture YD120265 range YD120268 tics 8 allowdecals
+texture YD120272 range YD120275 tics 8
+flat YD120006 range YD120009 tics 8
+flat YD120010 range YD120012 tics 8
+flat YD120065 range YD120068 tics 8
+switch YD120226 on pic YD120238 tics 0
+switch YD120229 on pic YD120242 tics 0
+switch YD120232 on pic YD120245 tics 0
+switch YD120234 on pic YD120247 tics 0
+switch YD120264 on pic YD120241 tics 0
+
+// 32in24-16: DOOT CTF
+texture YD160632 range YD160633 tics 8
+texture YD161254 range YD161263 tics 2
+texture YD161458 range YD161461 tics 8
+texture YD162065 range YD162068 tics 8
+texture YD162469 range YD162472 tics 8
+flat YD160105 range YD160107 tics 8
+flat YD160315 range YD160318 tics 8
+flat YD160605 range YD160608 tics 8
+switch YD160652 on pic YD160674 tics 0
+switch YD160658 on pic YD160680 tics 0
+switch YD160660 on pic YD160682 tics 0
+switch YD160662 on pic YD160684 tics 0
+switch YD160672 on pic YD160694 tics 0
+switch YD162304 on pic YD162333 tics 0
+switch YD162307 on pic YD162336 tics 0
+switch YD162309 on pic YD162338 tics 0
+switch YD162313 on pic YD162342 tics 0
+switch YD162314 on pic YD162343 tics 0
+switch YD162321 on pic YD162350 tics 0
+switch YD162322 on pic YD162351 tics 0
+switch YD162331 on pic YD162360 tics 0
+
+// Black Rose CTF
+flat BKRS0042 range BKRS0045 tics 8
+flat BKRS0061 range BKRS0064 tics 8
+flat BKRS0116 range BKRS0118 tics 8
+flat BKRS0147 range BKRS0150 tics 8
+flat BKRS0196 range BKRS0198 tics 8
+flat BKRS0199 range BKRS0202 tics 8
+flat BKRS0203 range BKRS0206 tics 8
+flat BKRS0207 range BKRS0210 tics 8
+flat BKRS0211 range BKRS0214 tics 8
+
+texture BKRS0262 range BKRS0267 tics 1
+texture BKRS0268 range BKRS0273 tics 1
+texture BKRS0274 range BKRS0279 tics 1
+texture BKRS0280 range BKRS0285 tics 1
+texture BKRS0310 range BKRS0313 tics 1
+texture BKRS0498 range BKRS0510 tics 1
+
+warp flat BKRS0123
+warp2 flat BKRS0116
+warp2 flat BKRS0117
+warp2 flat BKRS0118
+warp2 flat BKRS0119
+warp2 flat BKRS0061
+warp2 flat BKRS0062
+warp2 flat BKRS0063
+warp2 flat BKRS0064
+
+// Odamex CTF
+switch OCTF0042 on pic OCTF0047 tics 0

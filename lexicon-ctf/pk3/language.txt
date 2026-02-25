@@ -1,0 +1,75 @@
+[default]
+LEX_CPTF_PACKNAME = "CTF (Doom 2)";
+LEX_CPTF_GAMETYPE = "CTF";
+
+LEX_CPTF_1 = "YD04";
+LEX_CPTF_2 = "YD07";
+LEX_CPTF_3 = "YD12";
+LEX_CPTF_4 = "YD16";
+LEX_CPTF_5 = "BKRS";
+LEX_CPTF_6 = "OCTF";
+
+// Custom actors and metadata for Lexicon CTF mapsets
+// 32in24 IV: CAPTURE THE FAG
+YD04_MAPSET_AUTHORS = "YEDS Team";
+YD04_MAPSET_CUSTOM = "N";
+YD04_MAPSET_DATE = "2007";
+YD04_MAPSET_MAPS = "32";
+YD04_MAPSET_TITLE = "32in24 IV";
+YD04_MAPSET_PACK = "CPTF";
+
+// 32in24 7: Return of the Night of Capture the Flag
+YD07_ACTOR_1 = "Lexicon_YD07_BossEye";
+YD07_ACTORALT_1 = "BossEye";
+YD07_TAG_PISTOL = "Dual Pistols";
+YD07_MAPSET_AUTHORS = "YEDS Team";
+YD07_MAPSET_CUSTOM = "Y";
+YD07_MAPSET_DATE = "2008";
+YD07_MAPSET_MAPS = "35";
+YD07_MAPSET_TITLE = "32in24 7";
+YD07_MAPSET_PACK = "CPTF";
+YD07_WEAPON_2 = "Lexicon_YD07_Pistol";
+
+// 32in24-12: IRON MAPPER
+YD12_MAPSET_AUTHORS = "YEDS Team";
+YD12_MAPSET_CUSTOM = "N";
+YD12_MAPSET_DATE = "2012";
+YD12_MAPSET_MAPS = "37";
+YD12_MAPSET_TITLE = "32in24 12";
+YD12_MAPSET_PACK = "CPTF";
+
+// 32in24-16: DOOT CTF
+YD16_MAPSET_AUTHORS = "YEDS Team";
+YD16_MAPSET_CUSTOM = "N";
+YD16_MAPSET_DATE = "2017";
+YD16_MAPSET_MAPS = "34";
+YD16_MAPSET_TITLE = "32in24 16";
+YD16_MAPSET_PACK = "CPTF";
+
+// Black Rose CTF
+BKRS_ACTOR_1 = "Lexicon_BKRS_SuperShotgun";
+BKRS_ACTORALT_1 = "SuperShotgun";
+BKRS_ACTOR_2 = "Lexicon_BKRS_Chaingun";
+BKRS_ACTORALT_2 = "Chaingun";
+BKRS_ACTOR_3 = "Lexicon_BKRS_PlasmaRifle";
+BKRS_ACTORALT_3 = "PlasmaRifle";
+BKRS_ACTOR_4 = "Lexicon_BKRS_Shell";
+BKRS_ACTORALT_4 = "Shell";
+BKRS_MAPSET_AUTHORS = "Mike12, Dr33v3r, Piz (Salty), Harrison, 999Cop, Zack, RestlessRodent, fixes by an anonymous author";
+BKRS_MAPSET_CUSTOM = "Y";
+BKRS_MAPSET_DATE = "2007";
+BKRS_MAPSET_MAPS = "20";
+BKRS_MAPSET_TITLE = "Black Rose";
+BKRS_MAPSET_PACK = "CPTF";
+BKRS_WEAPON_2 = "Lexicon_BKRS_Pistol";
+BKRS_WEAPON_5 = "Lexicon_BKRS_SuperShotgun";
+BKRS_WEAPON_6 = "Lexicon_BKRS_Chaingun";
+BKRS_WEAPON_8 = "Lexicon_BKRS_PlasmaRifle";
+
+// Odamex CTF
+OCTF_MAPSET_AUTHORS = "LexiMax, Ralphis, Agent Spork, deathz0r, Toke";
+OCTF_MAPSET_CUSTOM = "N";
+OCTF_MAPSET_DATE = "2007";
+OCTF_MAPSET_MAPS = "8";
+OCTF_MAPSET_TITLE = "Odamex CTF";
+OCTF_MAPSET_PACK = "CPTF";

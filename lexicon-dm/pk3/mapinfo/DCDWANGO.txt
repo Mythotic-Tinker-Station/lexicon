@@ -1,0 +1,248 @@
+// DCDWANGO Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DWDC01 "Threshold of Pain"
+{
+	titlepatch = "DWDCV00"
+	next = "DWDC02"
+	secretnext = "DWDC02"
+	sky1 = "DWDC0005"
+	music = "D_DWDC01"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC02 "Twisted Limbo"
+{
+	titlepatch = "DWDCV01"
+	next = "DWDC03"
+	secretnext = "DWDC03"
+	sky1 = "DWDC0005"
+	music = "D_DWDC02"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC03 "Bananas"
+{
+	titlepatch = "DWDCV02"
+	next = "DWDC04"
+	secretnext = "DWDC04"
+	sky1 = "DWDC0005"
+	music = "D_DWDC03"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC04 "Hamburger Hill"
+{
+	titlepatch = "DWDCV03"
+	next = "DWDC05"
+	secretnext = "DWDC05"
+	sky1 = "DWDC0005"
+	music = "D_DWDC04"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC05 "Frantic"
+{
+	titlepatch = "DWDCV04"
+	next = "DWDC06"
+	secretnext = "DWDC06"
+	sky1 = "DWDC0005"
+	music = "D_DWDC05"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC06 "Mouth of Madness"
+{
+	titlepatch = "DWDCV05"
+	next = "DWDC07"
+	secretnext = "DWDC07"
+	sky1 = "DWDC0005"
+	music = "D_DWDC06"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC07 "Pig Pen"
+{
+	titlepatch = "DWDCV06"
+	next = "DWDC08"
+	secretnext = "DWDC08"
+	sky1 = "DWDC0005"
+	music = "D_DWDC07"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+	Map07Special
+}
+
+map DWDC08 "'O' Hell"
+{
+	titlepatch = "DWDCV07"
+	next = "DWDC09"
+	secretnext = "DWDC09"
+	sky1 = "DWDC0005"
+	music = "D_DWDC08"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC09 "Rat Trap"
+{
+	titlepatch = "DWDCV08"
+	next = "DWDC10"
+	secretnext = "DWDC10"
+	sky1 = "DWDC0005"
+	music = "D_DWDC09"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC10 "Stellar Dementia"
+{
+	titlepatch = "DWDCV09"
+	next = "DWDC11"
+	secretnext = "DWDC11"
+	sky1 = "DWDC0005"
+	music = "D_DWDC10"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC11 "The Courtyard"
+{
+	titlepatch = "DWDCV10"
+	next = "DWDC12"
+	secretnext = "DWDC12"
+	sky1 = "DWDC0005"
+	music = "D_DWDC11"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC12 "Surprise!"
+{
+	titlepatch = "DWDCV11"
+	next = "DWDC13"
+	secretnext = "DWDC13"
+	sky1 = "SKY2"
+	music = "D_DWDC12"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC13 "Death Disco"
+{
+	titlepatch = "DWDCV12"
+	next = "DWDC14"
+	secretnext = "DWDC14"
+	sky1 = "SKY2"
+	music = "D_DWDC13"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC14 "Septic Death"
+{
+	titlepatch = "DWDCV13"
+	next = "DWDC15"
+	secretnext = "DWDC15"
+	sky1 = "SKY2"
+	music = "D_DWDC14"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC15 "Muffins"
+{
+	titlepatch = "DWDCV14"
+	next = "DWDC16"
+	secretnext = "DWDC16"
+	sky1 = "SKY2"
+	music = "D_DWDC15"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC16 "House U"
+{
+	titlepatch = "DWDCV15"
+	next = "DWDC17"
+	secretnext = "DWDC17"
+	sky1 = "SKY2"
+	music = "D_DWDC16"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC17 "Phat City"
+{
+	titlepatch = "DWDCV16"
+	next = "DWDC18"
+	secretnext = "DWDC18"
+	sky1 = "SKY2"
+	music = "D_DWDC17"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC18 "Chunks!"
+{
+	titlepatch = "DWDCV17"
+	next = "DWDC19"
+	secretnext = "DWDC19"
+	sky1 = "SKY2"
+	music = "D_DWDC18"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC19 "Massumph"
+{
+	titlepatch = "DWDCV18"
+	next = "DWDC32"
+	secretnext = "DWDC32"
+	sky1 = "SKY2"
+	music = "D_DWDC19"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}
+
+map DWDC32 "AZDWANGO Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_DWDCIN"
+	ExitPic = "DWDCINT"
+	EnterPic = "DWDCINT"
+}

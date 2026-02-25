@@ -1,0 +1,259 @@
+// The Bigger Thirty-Two Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BG3201 "BIGGER32 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "BG3202"
+	secretnext = "BG3202"
+	sky1 = "SKY1"
+	music = "D_BG3201"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3202 "BIGGER32 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "BG3203"
+	secretnext = "BG3203"
+	sky1 = "SKY1"
+	music = "D_BG3202"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3203 "BIGGER32 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "BG3204"
+	secretnext = "BG3204"
+	sky1 = "SKY1"
+	music = "D_BG3203"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3204 "BIGGER32 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "BG3205"
+	secretnext = "BG3205"
+	sky1 = "SKY1"
+	music = "D_BG3204"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3205 "BIGGER32 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "BG3206"
+	secretnext = "BG3206"
+	sky1 = "SKY1"
+	music = "D_BG3205"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3206 "BIGGER32 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "BG3207"
+	secretnext = "BG3207"
+	sky1 = "SKY1"
+	music = "D_BG3206"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3207 "BIGGER32 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "BG3208"
+	secretnext = "BG3208"
+	sky1 = "SKY1"
+	music = "D_BG3207"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3208 "BIGGER32 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "BG3209"
+	secretnext = "BG3209"
+	sky1 = "SKY1"
+	music = "D_BG3208"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3209 "BIGGER32 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "BG3210"
+	secretnext = "BG3210"
+	sky1 = "SKY1"
+	music = "D_BG3209"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3210 "BIGGER32 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "BG3211"
+	secretnext = "BG3211"
+	sky1 = "SKY1"
+	music = "D_BG3210"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3211 "BIGGER32 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "BG3212"
+	secretnext = "BG3212"
+	sky1 = "SKY1"
+	music = "D_BG3211"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3212 "BIGGER32 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "BG3213"
+	secretnext = "BG3213"
+	sky1 = "SKY2"
+	music = "D_BG3212"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3213 "BIGGER32 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "BG3214"
+	secretnext = "BG3214"
+	sky1 = "SKY2"
+	music = "D_BG3213"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3214 "BIGGER32 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "BG3215"
+	secretnext = "BG3215"
+	sky1 = "SKY2"
+	music = "D_BG3214"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3215 "BIGGER32 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "BG3216"
+	secretnext = "BG3216"
+	sky1 = "SKY2"
+	music = "D_BG3215"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3216 "BIGGER32 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "BG3217"
+	secretnext = "BG3217"
+	sky1 = "SKY2"
+	music = "D_BG3216"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3217 "BIGGER32 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "BG3218"
+	secretnext = "BG3218"
+	sky1 = "SKY2"
+	music = "D_BG3217"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3218 "BIGGER32 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "BG3219"
+	secretnext = "BG3219"
+	sky1 = "SKY2"
+	music = "D_BG3218"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3219 "BIGGER32 Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "BG3220"
+	secretnext = "BG3220"
+	sky1 = "SKY2"
+	music = "D_BG3219"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3220 "BIGGER32 Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "BG3221"
+	secretnext = "BG3221"
+	sky1 = "SKY2"
+	music = "D_BG3220"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}
+
+map BG3221 "BIGGER32 Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_BG3221"
+	intermusic = "D_BG32IN"
+	ExitPic = "BG32INT"
+	EnterPic = "BG32INT"
+}

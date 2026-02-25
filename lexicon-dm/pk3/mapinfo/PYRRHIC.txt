@@ -1,0 +1,361 @@
+// Pyrrhic XL Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map PRHC01 "Pyrrhic XL Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "PRHC02"
+	secretnext = "PRHC02"
+	sky1 = "PRHC0001"
+	music = "D_PRHC01"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC02 "Pyrrhic XL Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "PRHC03"
+	secretnext = "PRHC03"
+	sky1 = "PRHC0001"
+	music = "D_PRHC02"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC03 "Pyrrhic XL Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "PRHC04"
+	secretnext = "PRHC04"
+	sky1 = "PRHC0001"
+	music = "D_PRHC03"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC04 "Pyrrhic XL Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "PRHC05"
+	secretnext = "PRHC05"
+	sky1 = "PRHC0001"
+	music = "D_PRHC04"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC05 "Pyrrhic XL Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "PRHC06"
+	secretnext = "PRHC06"
+	sky1 = "PRHC0001"
+	music = "D_PRHC05"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC06 "Pyrrhic XL Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "PRHC07"
+	secretnext = "PRHC07"
+	sky1 = "PRHC0001"
+	music = "D_PRHC06"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC07 "Pyrrhic XL Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "PRHC08"
+	secretnext = "PRHC08"
+	sky1 = "PRHC0001"
+	music = "D_PRHC07"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+	Map07Special
+}
+
+map PRHC08 "Pyrrhic XL Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "PRHC09"
+	secretnext = "PRHC09"
+	sky1 = "PRHC0001"
+	music = "D_PRHC08"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC09 "Pyrrhic XL Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "PRHC10"
+	secretnext = "PRHC10"
+	sky1 = "PRHC0001"
+	music = "D_PRHC09"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC10 "Pyrrhic XL Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "PRHC11"
+	secretnext = "PRHC11"
+	sky1 = "PRHC0001"
+	music = "D_PRHC10"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC11 "Pyrrhic XL Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "PRHC12"
+	secretnext = "PRHC12"
+	sky1 = "PRHC0001"
+	music = "D_PRHC11"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC12 "Pyrrhic XL Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "PRHC13"
+	secretnext = "PRHC13"
+	sky1 = "PRHC0002"
+	music = "D_PRHC12"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC13 "Pyrrhic XL Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "PRHC14"
+	secretnext = "PRHC14"
+	sky1 = "PRHC0002"
+	music = "D_PRHC13"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC14 "Pyrrhic XL Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "PRHC15"
+	secretnext = "PRHC15"
+	sky1 = "PRHC0002"
+	music = "D_PRHC14"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC15 "Pyrrhic XL Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "PRHC16"
+	secretnext = "PRHC16"
+	sky1 = "PRHC0002"
+	music = "D_PRHC15"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC16 "Pyrrhic XL Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "PRHC17"
+	secretnext = "PRHC17"
+	sky1 = "PRHC0002"
+	music = "D_PRHC16"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC17 "Pyrrhic XL Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "PRHC18"
+	secretnext = "PRHC18"
+	sky1 = "PRHC0002"
+	music = "D_PRHC17"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC18 "Pyrrhic XL Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "PRHC19"
+	secretnext = "PRHC19"
+	sky1 = "PRHC0002"
+	music = "D_PRHC18"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC19 "Pyrrhic XL Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "PRHC20"
+	secretnext = "PRHC20"
+	sky1 = "PRHC0002"
+	music = "D_PRHC19"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC20 "Pyrrhic XL Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "PRHC21"
+	secretnext = "PRHC21"
+	sky1 = "PRHC0002"
+	music = "D_PRHC20"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC21 "Pyrrhic XL Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "PRHC22"
+	secretnext = "PRHC22"
+	sky1 = "PRHC0003"
+	music = "D_PRHC21"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC22 "Pyrrhic XL Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "PRHC23"
+	secretnext = "PRHC23"
+	sky1 = "PRHC0003"
+	music = "D_PRHC22"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC23 "Pyrrhic XL Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "PRHC24"
+	secretnext = "PRHC24"
+	sky1 = "PRHC0003"
+	music = "D_PRHC23"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC24 "Pyrrhic XL Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "PRHC25"
+	secretnext = "PRHC25"
+	sky1 = "PRHC0003"
+	music = "D_PRHC24"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC25 "Pyrrhic XL Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "PRHC26"
+	secretnext = "PRHC26"
+	sky1 = "PRHC0003"
+	music = "D_PRHC25"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC26 "Pyrrhic XL Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "PRHC27"
+	secretnext = "PRHC27"
+	sky1 = "PRHC0003"
+	music = "D_PRHC26"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC27 "Pyrrhic XL Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "PRHC28"
+	secretnext = "PRHC28"
+	sky1 = "PRHC0003"
+	music = "D_PRHC27"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC28 "Pyrrhic XL Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "PRHC29"
+	secretnext = "PRHC29"
+	sky1 = "PRHC0003"
+	music = "D_PRHC28"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC29 "Pyrrhic XL Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "PRHC30"
+	secretnext = "PRHC30"
+	sky1 = "PRHC0003"
+	music = "D_PRHC29"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC30 "Pyrrhic XL Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "PRHC31"
+	secretnext = "PRHC31"
+	sky1 = "PRHC0003"
+	music = "D_PRHC30"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+	allowmonstertelefrags
+}
+
+map PRHC31 "Pyrrhic XL Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "PRHC32"
+	secretnext = "PRHC32"
+	sky1 = "PRHC0003"
+	music = "D_PRHC31"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}
+
+map PRHC32 "Pyrrhic XL Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "PRHC0003"
+	music = "D_PRHC32"
+	ExitPic = "PRHCINT"
+	EnterPic = "PRHCINT"
+}

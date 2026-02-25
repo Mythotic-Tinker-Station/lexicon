@@ -1,0 +1,332 @@
+// DWANGO10 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW1001 "DWANGO10 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW1002"
+	secretnext = "DW1002"
+	sky1 = "DW100001"
+	music = "D_DW1001"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1002 "DWANGO10 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW1003"
+	secretnext = "DW1003"
+	sky1 = "DW100001"
+	music = "D_DW1002"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1003 "DWANGO10 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW1004"
+	secretnext = "DW1004"
+	sky1 = "DW100001"
+	music = "D_DW1003"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1004 "DWANGO10 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW1005"
+	secretnext = "DW1005"
+	sky1 = "DW100001"
+	music = "D_DW1004"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1005 "DWANGO10 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW1006"
+	secretnext = "DW1006"
+	sky1 = "DW100001"
+	music = "D_DW1005"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1006 "DWANGO10 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW1007"
+	secretnext = "DW1007"
+	sky1 = "DW100001"
+	music = "D_DW1006"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1007 "DWANGO10 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW1008"
+	secretnext = "DW1008"
+	sky1 = "DW100001"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+	Map07Special
+}
+
+map DW1008 "DWANGO10 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW1009"
+	secretnext = "DW1009"
+	sky1 = "DW100001"
+	music = "D_DW1008"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1009 "DWANGO10 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW1010"
+	secretnext = "DW1010"
+	sky1 = "DW100001"
+	music = "D_DW1009"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1010 "DWANGO10 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW1011"
+	secretnext = "DW1011"
+	sky1 = "DW100001"
+	music = "D_DW1010"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1011 "DWANGO10 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DW1012"
+	secretnext = "DW1012"
+	sky1 = "DW100001"
+	music = "D_DW1011"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1012 "DWANGO10 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DW1013"
+	secretnext = "DW1013"
+	sky1 = "DW100002"
+	music = "D_DW1012"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1013 "DWANGO10 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "DW1014"
+	secretnext = "DW1014"
+	sky1 = "DW100002"
+	music = "D_DW1013"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1014 "DWANGO10 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "DW1015"
+	secretnext = "DW1015"
+	sky1 = "DW100002"
+	music = "D_DW1014"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1015 "DWANGO10 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "DW1016"
+	secretnext = "DW1016"
+	sky1 = "DW100002"
+	music = "D_DW1015"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1016 "DWANGO10 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "DW1017"
+	secretnext = "DW1017"
+	sky1 = "DW100002"
+	music = "D_DW1016"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1017 "DWANGO10 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "DW1018"
+	secretnext = "DW1018"
+	sky1 = "DW100002"
+	music = "D_DW1017"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1018 "DWANGO10 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "DW1019"
+	secretnext = "DW1019"
+	sky1 = "DW100002"
+	music = "D_DW1018"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1019 "DWANGO10 Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "DW1020"
+	secretnext = "DW1020"
+	sky1 = "DW100002"
+	music = "D_DW1019"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1020 "DWANGO10 Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DW1021"
+	secretnext = "DW1021"
+	sky1 = "DW100002"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1021 "DWANGO10 Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DW1022"
+	secretnext = "DW1022"
+	sky1 = "DW100003"
+	music = "D_DW1021"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1022 "DWANGO10 Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DW1023"
+	secretnext = "DW1023"
+	sky1 = "DW100003"
+	music = "D_DW1022"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1023 "DWANGO10 Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DW1024"
+	secretnext = "DW1024"
+	sky1 = "DW100003"
+	music = "D_DW1023"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1024 "DWANGO10 Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "DW1025"
+	secretnext = "DW1025"
+	sky1 = "DW100003"
+	music = "D_DW1024"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1025 "DWANGO10 Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "DW1026"
+	secretnext = "DW1026"
+	sky1 = "DW100003"
+	music = "D_DW1025"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1026 "DWANGO10 Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "DW1032"
+	secretnext = "DW1032"
+	sky1 = "DW100003"
+	music = "D_DW1026"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}
+
+map DW1032 "DWANGO10 Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DW100003"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_DW10IN"
+	ExitPic = "DW10INT"
+	EnterPic = "DW10INT"
+}

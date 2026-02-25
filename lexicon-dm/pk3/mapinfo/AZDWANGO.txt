@@ -1,0 +1,338 @@
+// AZDWANGO Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DWAZ01 "Dejavu"
+{
+	titlepatch = "DWAZV00"
+	next = "DWAZ02"
+	secretnext = "DWAZ02"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ01"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ02 "AZDWANGO Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DWAZ03"
+	secretnext = "DWAZ03"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ02"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ03 "AZDWANGO Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DWAZ04"
+	secretnext = "DWAZ04"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ03"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ04 "New Arena"
+{
+	titlepatch = "DWAZV03"
+	next = "DWAZ05"
+	secretnext = "DWAZ05"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ04"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ05 "Archon"
+{
+	titlepatch = "DWAZV04"
+	next = "DWAZ06"
+	secretnext = "DWAZ06"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ05"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ06 "AZDWANGO Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DWAZ07"
+	secretnext = "DWAZ07"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ06"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ07 "Unholy"
+{
+	titlepatch = "DWAZV06"
+	next = "DWAZ08"
+	secretnext = "DWAZ08"
+	sky1 = "DWAZ0001"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+	Map07Special
+}
+
+map DWAZ08 "AZDWANGO Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DWAZ09"
+	secretnext = "DWAZ09"
+	sky1 = "DWAZ0001"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ09 "AZDWANGO Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DWAZ10"
+	secretnext = "DWAZ10"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ09"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ10 "AZDWANGO Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DWAZ11"
+	secretnext = "DWAZ11"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ10"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ11 "AZDWANGO Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DWAZ12"
+	secretnext = "DWAZ12"
+	sky1 = "DWAZ0001"
+	music = "D_DWAZ11"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ12 "AZDWANGO Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DWAZ13"
+	secretnext = "DWAZ13"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ12"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ13 "Magoo"
+{
+	titlepatch = "DWAZV12"
+	next = "DWAZ14"
+	secretnext = "DWAZ14"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ13"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ14 "Bloodfalls"
+{
+	titlepatch = "DWAZV13"
+	next = "DWAZ15"
+	secretnext = "DWAZ15"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ14"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ15 "AZDWANGO Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "DWAZ16"
+	secretnext = "DWAZ16"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ15"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ16 "AZDWANGO Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "DWAZ17"
+	secretnext = "DWAZ17"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ16"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ17 "AZDWANGO Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "DWAZ18"
+	secretnext = "DWAZ18"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ17"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ18 "AZDWANGO Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "DWAZ19"
+	secretnext = "DWAZ19"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ18"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ19 "AZDWANGO Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "DWAZ20"
+	secretnext = "DWAZ20"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ19"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ20 "AZDWANGO Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DWAZ21"
+	secretnext = "DWAZ21"
+	sky1 = "DWAZ0002"
+	music = "D_DWAZ20"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ21 "AZDWANGO Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DWAZ22"
+	secretnext = "DWAZ22"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ21"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ22 "AZDWANGO Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DWAZ23"
+	secretnext = "DWAZ23"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ22"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ23 "AZDWANGO Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DWAZ24"
+	secretnext = "DWAZ24"
+	sky1 = "DWAZ0003"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ24 "AZDWANGO Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "DWAZ25"
+	secretnext = "DWAZ25"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ24"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ25 "AZDWANGO Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "DWAZ26"
+	secretnext = "DWAZ26"
+	sky1 = "DWAZ0003"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ26 "AZDWANGO Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "DWAZ27"
+	secretnext = "DWAZ27"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ26"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ27 "AZDWANGO Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "DWAZ28"
+	secretnext = "DWAZ28"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ27"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ28 "AZDWANGO Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "DWAZ29"
+	secretnext = "DWAZ29"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ28"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ29 "AZDWANGO Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "DWAZ30"
+	secretnext = "DWAZ30"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ29"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}
+
+map DWAZ30 "AZDWANGO Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DWAZ0003"
+	music = "D_DWAZ30"
+	ExitPic = "DWAZINT"
+	EnterPic = "DWAZINT"
+}

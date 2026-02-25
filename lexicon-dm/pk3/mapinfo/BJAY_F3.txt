@@ -1,0 +1,187 @@
+// BeeJay's DooM 2 Deathmatch Party Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BJF301 "BJAY_F3 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "BJF302"
+	secretnext = "BJF302"
+	sky1 = "BJF30001"
+	music = "$MUSIC_RUNNIN"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF302 "BJAY_F3 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "BJF303"
+	secretnext = "BJF303"
+	sky1 = "BJF30001"
+	music = "D_BJF302"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF303 "BJAY_F3 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "BJF304"
+	secretnext = "BJF304"
+	sky1 = "BJF30001"
+	music = "D_BJF303"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF304 "BJAY_F3 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "BJF305"
+	secretnext = "BJF305"
+	sky1 = "BJF30001"
+	music = "D_BJF304"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF305 "BJAY_F3 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "BJF306"
+	secretnext = "BJF306"
+	sky1 = "BJF30001"
+	music = "D_BJF305"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF306 "BJAY_F3 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "BJF307"
+	secretnext = "BJF307"
+	sky1 = "BJF30001"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF307 "BJAY_F3 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "BJF308"
+	secretnext = "BJF308"
+	sky1 = "BJF30001"
+	music = "D_BJF307"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF308 "BJAY_F3 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "BJF309"
+	secretnext = "BJF309"
+	sky1 = "BJF30001"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF309 "BJAY_F3 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "BJF310"
+	secretnext = "BJF310"
+	sky1 = "BJF30001"
+	music = "D_BJF309"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF310 "BJAY_F3 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "BJF311"
+	secretnext = "BJF311"
+	sky1 = "BJF30001"
+	music = "D_BJF310"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF311 "BJAY_F3 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "BJF312"
+	secretnext = "BJF312"
+	sky1 = "BJF30001"
+	music = "D_BJF311"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF312 "BJAY_F3 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "BJF313"
+	secretnext = "BJF313"
+	sky1 = "BJF30002"
+	music = "D_BJF312"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF313 "BJAY_F3 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "BJF314"
+	secretnext = "BJF314"
+	sky1 = "BJF30002"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF314 "BJAY_F3 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "BJF315"
+	secretnext = "BJF315"
+	sky1 = "BJF30002"
+	music = "D_BJF314"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF315 "BJAY_F3 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "BJF316"
+	secretnext = "BJF316"
+	sky1 = "BJF30002"
+	music = "D_BJF315"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF316 "BJAY_F3 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "BJF317"
+	secretnext = "BJF317"
+	sky1 = "BJF30002"
+	music = "D_BJF316"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF317 "BJAY_F3 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "BJF318"
+	secretnext = "BJF318"
+	sky1 = "BJF30002"
+	music = "D_BJF317"
+	intermusic = "D_BJF3IN"
+}
+
+map BJF318 "BJAY_F3 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "BJF30002"
+	music = "D_BJF318"
+	intermusic = "D_BJF3IN"
+}

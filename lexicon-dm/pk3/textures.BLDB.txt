@@ -1,0 +1,18 @@
+Texture "BLDB0001", 64, 64
+{
+	Patch "BLDB0028", 0, 0
+}
+Texture "BLDB0009", 64, 128
+{
+	Patch "BLDB0028", 0, 0
+}
+Texture "BLDB0010", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "BLDB0015", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}

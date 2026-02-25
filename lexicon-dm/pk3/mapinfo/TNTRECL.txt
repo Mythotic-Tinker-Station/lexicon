@@ -1,0 +1,391 @@
+// Reclamation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map RCLM01 "Icy Hot"
+{
+	titlepatch = "RCLMV00"
+	next = "RCLM02"
+	secretnext = "RCLM02"
+	sky1 = "RCLM0020"
+	music = "D_RCLM01"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM02 "Neighbourhood Watch"
+{
+	titlepatch = "RCLMV01"
+	next = "RCLM03"
+	secretnext = "RCLM03"
+	sky1 = "RCLM0020"
+	music = "D_RCLM02"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM03 "War Circle"
+{
+	titlepatch = "RCLMV02"
+	next = "RCLM04"
+	secretnext = "RCLM04"
+	sky1 = "RCLM0020"
+	music = "D_RCLM03"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM04 "Security Bay"
+{
+	titlepatch = "RCLMV03"
+	next = "RCLM05"
+	secretnext = "RCLM05"
+	sky1 = "RCLM0020"
+	music = "D_RCLM04"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM05 "Dust and Bones"
+{
+	titlepatch = "RCLMV04"
+	next = "RCLM06"
+	secretnext = "RCLM06"
+	sky1 = "RCLM0020"
+	music = "D_RCLM05"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM06 "The Pits"
+{
+	titlepatch = "RCLMV05"
+	next = "RCLM07"
+	secretnext = "RCLM07"
+	sky1 = "RCLM0020"
+	music = "D_RCLM06"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM07 "Telesaw"
+{
+	titlepatch = "RCLMV06"
+	next = "RCLM08"
+	secretnext = "RCLM08"
+	sky1 = "RCLM0020"
+	music = "D_RCLM07"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM08 "Helldorado"
+{
+	titlepatch = "RCLMV07"
+	next = "RCLM09"
+	secretnext = "RCLM09"
+	sky1 = "RCLM0020"
+	music = "D_RCLM08"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM09 "Station 4"
+{
+	titlepatch = "RCLMV08"
+	next = "RCLM10"
+	secretnext = "RCLM10"
+	sky1 = "RCLM0020"
+	music = "D_RCLM09"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM10 "UPM Death Factory"
+{
+	titlepatch = "RCLMV09"
+	next = "RCLM11"
+	secretnext = "RCLM11"
+	sky1 = "RCLM0020"
+	music = "D_RCLM10"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM11 "Eye on You"
+{
+	titlepatch = "RCLMV10"
+	next = "RCLM12"
+	secretnext = "RCLM12"
+	sky1 = "RCLM0020"
+	music = "D_RCLM11"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM12 "Harvest"
+{
+	titlepatch = "RCLMV11"
+	next = "RCLM13"
+	secretnext = "RCLM13"
+	sky1 = "RCLM0268"
+	music = "D_RCLM12"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM13 "Slaughterhouse 5"
+{
+	titlepatch = "RCLMV12"
+	next = "RCLM14"
+	secretnext = "RCLM14"
+	sky1 = "RCLM0268"
+	music = "D_RCLM13"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM14 "Nexus"
+{
+	titlepatch = "RCLMV13"
+	next = "RCLM15"
+	secretnext = "RCLM15"
+	sky1 = "RCLM0268"
+	music = "D_RCLM14"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM15 "Watchtower"
+{
+	titlepatch = "RCLMV14"
+	next = "RCLM16"
+	secretnext = "RCLM16"
+	sky1 = "RCLM0268"
+	music = "D_RCLM15"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM16 "Warchild"
+{
+	titlepatch = "RCLMV15"
+	next = "RCLM17"
+	secretnext = "RCLM17"
+	sky1 = "RCLM0268"
+	music = "D_RCLM16"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM17 "Rockin"
+{
+	titlepatch = "RCLMV16"
+	next = "RCLM18"
+	secretnext = "RCLM18"
+	sky1 = "RCLM0268"
+	music = "D_RCLM17"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM18 "Circle of Death"
+{
+	titlepatch = "RCLMV17"
+	next = "RCLM19"
+	secretnext = "RCLM19"
+	sky1 = "RCLM0268"
+	music = "D_RCLM18"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM19 "Catacombs"
+{
+	titlepatch = "RCLMV18"
+	next = "RCLM20"
+	secretnext = "RCLM20"
+	sky1 = "RCLM0268"
+	music = "D_RCLM19"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM20 "Rocket Seppuku"
+{
+	titlepatch = "RCLMV19"
+	next = "RCLM21"
+	secretnext = "RCLM21"
+	sky1 = "RCLM0268"
+	music = "D_RCLM20"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM21 "Wasted Effort"
+{
+	titlepatch = "RCLMV20"
+	next = "RCLM22"
+	secretnext = "RCLM22"
+	sky1 = "RCLM0269"
+	music = "D_RCLM21"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM22 "Brain Candy"
+{
+	titlepatch = "RCLMV21"
+	next = "RCLM23"
+	secretnext = "RCLM23"
+	sky1 = "RCLM0269"
+	music = "D_RCLM22"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM23 "Habitat"
+{
+	titlepatch = "RCLMV22"
+	next = "RCLM24"
+	secretnext = "RCLM24"
+	sky1 = "RCLM0269"
+	music = "D_RCLM23"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM24 "Symmetry Halls"
+{
+	titlepatch = "RCLMV23"
+	next = "RCLM25"
+	secretnext = "RCLM25"
+	sky1 = "RCLM0269"
+	music = "D_RCLM24"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM25 "Speed"
+{
+	titlepatch = "RCLMV24"
+	next = "RCLM26"
+	secretnext = "RCLM26"
+	sky1 = "RCLM0269"
+	music = "D_RCLM25"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM26 "Nobodies Hero"
+{
+	titlepatch = "RCLMV25"
+	next = "RCLM27"
+	secretnext = "RCLM27"
+	sky1 = "RCLM0269"
+	music = "D_RCLM26"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM27 "Cataclysm"
+{
+	titlepatch = "RCLMV26"
+	next = "RCLM28"
+	secretnext = "RCLM28"
+	sky1 = "RCLM0269"
+	music = "D_RCLM27"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM28 "Final Solution"
+{
+	titlepatch = "RCLMV27"
+	next = "RCLM29"
+	secretnext = "RCLM29"
+	sky1 = "RCLM0269"
+	music = "D_RCLM28"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM29 "Ethereal Mansion"
+{
+	titlepatch = "RCLMV28"
+	next = "RCLM30"
+	secretnext = "RCLM30"
+	sky1 = "RCLM0269"
+	music = "D_RCLM29"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM30 "Drop Zone"
+{
+	titlepatch = "RCLMV29"
+	next = "RCLM31"
+	secretnext = "RCLM31"
+	sky1 = "RCLM0269"
+	music = "D_RCLM30"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM31 "Frag Factory"
+{
+	titlepatch = "RCLMV30"
+	next = "RCLM32"
+	secretnext = "RCLM32"
+	sky1 = "RCLM0269"
+	music = "D_RCLM31"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}
+
+map RCLM32 "Death Paradigm"
+{
+	titlepatch = "RCLMV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "RCLM0269"
+	music = "D_RCLM32"
+	intermusic = "D_RCLMIN"
+	ExitPic = "RCLMINT"
+	EnterPic = "RCLMINT"
+}

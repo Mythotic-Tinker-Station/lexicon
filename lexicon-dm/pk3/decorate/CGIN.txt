@@ -1,0 +1,41 @@
+Actor Lexicon_CGIN_SlimeyWimey
+{
+	Scale 0.1
+	Radius 16
+	Height 32
+	ProjectilePassHeight -16
+	States
+	{
+	Spawn:
+		LZ01 EFGHIJKJIHGF 2
+		loop
+	}
+}
+
+Actor Lexicon_CGIN_DogOfDracula
+{
+	Scale 0.2
+	Radius 16
+	Height 32
+	ProjectilePassHeight -16
+	States
+	{
+	Spawn:
+		LZ01 L -1
+		stop
+	}
+}
+
+Actor Lexicon_CGIN_SlickWillie
+{
+	Scale 0.2
+	Radius 16
+	Height 32
+	ProjectilePassHeight -16
+	States
+	{
+	Spawn:
+		LZ01 M -1
+		stop
+	}
+}

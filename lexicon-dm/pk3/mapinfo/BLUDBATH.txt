@@ -1,0 +1,391 @@
+// BLUDBATH Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BLDB01 "BLUDBATH Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "BLDB02"
+	secretnext = "BLDB02"
+	sky1 = "BLDB0024"
+	music = "D_BLDB01"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB02 "BLUDBATH Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "BLDB03"
+	secretnext = "BLDB03"
+	sky1 = "BLDB0024"
+	music = "D_BLDB02"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB03 "BLUDBATH Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "BLDB04"
+	secretnext = "BLDB04"
+	sky1 = "BLDB0024"
+	music = "D_BLDB03"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB04 "BLUDBATH Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "BLDB05"
+	secretnext = "BLDB05"
+	sky1 = "BLDB0024"
+	music = "D_BLDB04"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB05 "BLUDBATH Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "BLDB06"
+	secretnext = "BLDB06"
+	sky1 = "BLDB0024"
+	music = "D_BLDB05"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB06 "BLUDBATH Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "BLDB07"
+	secretnext = "BLDB07"
+	sky1 = "BLDB0024"
+	music = "D_BLDB06"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB07 "BLUDBATH Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "BLDB08"
+	secretnext = "BLDB08"
+	sky1 = "BLDB0024"
+	music = "D_BLDB07"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB08 "BLUDBATH Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "BLDB09"
+	secretnext = "BLDB09"
+	sky1 = "BLDB0024"
+	music = "D_BLDB08"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB09 "BLUDBATH Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "BLDB10"
+	secretnext = "BLDB10"
+	sky1 = "BLDB0024"
+	music = "D_BLDB09"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB10 "BLUDBATH Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "BLDB11"
+	secretnext = "BLDB11"
+	sky1 = "BLDB0024"
+	music = "D_BLDB10"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB11 "BLUDBATH Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "BLDB12"
+	secretnext = "BLDB12"
+	sky1 = "BLDB0024"
+	music = "D_BLDB11"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB12 "BLUDBATH Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "BLDB13"
+	secretnext = "BLDB13"
+	sky1 = "BLDB0024"
+	music = "D_BLDB12"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB13 "BLUDBATH Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "BLDB14"
+	secretnext = "BLDB14"
+	sky1 = "BLDB0024"
+	music = "D_BLDB13"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB14 "BLUDBATH Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "BLDB15"
+	secretnext = "BLDB15"
+	sky1 = "BLDB0024"
+	music = "D_BLDB14"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB15 "BLUDBATH Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "BLDB16"
+	secretnext = "BLDB16"
+	sky1 = "BLDB0024"
+	music = "D_BLDB15"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB16 "BLUDBATH Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "BLDB17"
+	secretnext = "BLDB17"
+	sky1 = "BLDB0024"
+	music = "D_BLDB16"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB17 "BLUDBATH Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "BLDB18"
+	secretnext = "BLDB18"
+	sky1 = "BLDB0024"
+	music = "D_BLDB17"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB18 "BLUDBATH Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "BLDB19"
+	secretnext = "BLDB19"
+	sky1 = "BLDB0024"
+	music = "D_BLDB18"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB19 "BLUDBATH Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "BLDB20"
+	secretnext = "BLDB20"
+	sky1 = "BLDB0024"
+	music = "D_BLDB19"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB20 "BLUDBATH Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "BLDB21"
+	secretnext = "BLDB21"
+	sky1 = "BLDB0024"
+	music = "D_BLDB20"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB21 "BLUDBATH Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "BLDB22"
+	secretnext = "BLDB22"
+	sky1 = "BLDB0024"
+	music = "D_BLDB21"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB22 "BLUDBATH Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "BLDB23"
+	secretnext = "BLDB23"
+	sky1 = "BLDB0024"
+	music = "D_BLDB22"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB23 "BLUDBATH Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "BLDB24"
+	secretnext = "BLDB24"
+	sky1 = "BLDB0024"
+	music = "D_BLDB23"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB24 "BLUDBATH Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "BLDB25"
+	secretnext = "BLDB25"
+	sky1 = "BLDB0024"
+	music = "D_BLDB24"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB25 "BLUDBATH Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "BLDB26"
+	secretnext = "BLDB26"
+	sky1 = "BLDB0024"
+	music = "D_BLDB25"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB26 "BLUDBATH Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "BLDB27"
+	secretnext = "BLDB27"
+	sky1 = "BLDB0024"
+	music = "D_BLDB26"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB27 "BLUDBATH Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "BLDB28"
+	secretnext = "BLDB28"
+	sky1 = "BLDB0024"
+	music = "D_BLDB27"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB28 "BLUDBATH Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "BLDB29"
+	secretnext = "BLDB29"
+	sky1 = "BLDB0024"
+	music = "D_BLDB28"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB29 "BLUDBATH Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "BLDB30"
+	secretnext = "BLDB30"
+	sky1 = "BLDB0024"
+	music = "D_BLDB29"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB30 "BLUDBATH Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "BLDB31"
+	secretnext = "BLDB31"
+	sky1 = "BLDB0024"
+	music = "D_BLDB30"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB31 "BLUDBATH Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "BLDB32"
+	secretnext = "BLDB32"
+	sky1 = "BLDB0024"
+	music = "D_BLDB31"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}
+
+map BLDB32 "BLUDBATH Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "BLDB0024"
+	music = "D_BLDB32"
+	intermusic = "D_BLDBIN"
+	ExitPic = "BLDBINT"
+	EnterPic = "BLDBINT"
+}

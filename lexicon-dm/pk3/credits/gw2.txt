@@ -1,0 +1,151 @@
+===========================================================================
+Advanced engine needed  : Boom Compatible
+Primary purpose         : Deathmatch
+===========================================================================
+Title                   : Greenwar II
+Filename                : gw2.zip
+Release date            : November 26th, 2009
+Author                  : 32in24 Team/Hellbent
+Email Address           : shaikoten@hotmail.com
+                          esselfortium@gmail.com
+                          chesterules@yahoo.com
+Other Files By Author   : Greenwar, r-mega, Lost Refinery, UAC Experiment
+
+                          32in24.wad (FFA), 32in24sp.wad, 32in24-3.wad
+                          (DUEL CORE EDITION), 32in24-4.wad (CTF)
+                          32in24-5.wad (FFA) 32in24-6.wad (FFA)
+                          32in24-7.wad (CTF) 32in24-8.wad (FFA)
+
+Description             : Greenwar II is the sequel to the highly-acclaimed 
+                          deathmatch megawad Greenwar!  The project followed
+                          the similar method of past 32in24 projects; have
+                          one team make bare layouts and then have another
+                          team detail those layouts.  However in this case,
+                          all of the layouts were created by Hellbent, the 
+                          author of the original Greenwar.  Gameplay was 
+                          preserved as faithfully as possible while also
+                          making the maps look damn sexy.
+
+Maplist:
+------------------------------------------------------------------
+----Map # -------------Map Name---------------------- Detailer----
+------------------------------------------------------------------
+    MAP01 - The Desecrated Ruins                       Craigs
+    MAP02 - Chinook                                    Mechadon
+    MAP03 - Enter Baal's Sinister Wargrounds of Hate   Rottking
+    MAP04 - Mayan Ryan                                 esselfortium
+    MAP05 - Filth Factory                              Butts
+    MAP06 - Escape From Philadelphia                   Rottking
+    MAP07 - Catarhactes                                Mechadon
+    MAP08 - Memnoch                                    Mechadon
+    MAP09 - Ascensio                                   Hellbent
+    MAP10 - Absinthe                                   brinks
+    MAP11 - Schism                                     Mechadon
+    MAP12 - Graceful Onslaught                         Craigs
+    MAP13 - Tesseract                                  Mechadon
+    MAP14 - Turquoise Hexagon Sun                      esselfortium
+    MAP15 - Superfluo                                  Mechadon/Hellbent
+    MAP16 - Recycle or Die                             Mechadon
+    MAP17 - Milton                                     Cybershark
+    MAP18 - Through the Nuking Glass                   Rottking
+    MAP19 - Werner Herzog Eats His Shoe                esselfortium
+    MAP20 - Rusty Garden                               Vader
+    MAP21 - BFG Containment Area                       Lupinx-Kassman/esselfortium
+    MAP22 - Chaos Wargrounds of Yog-Sothoth's Arctic   Rottking
+            Caverns of Terror
+    MAP23 - Paregoric                                  Mechadon
+    MAP24 - Dominion Grinder                           Butts/Mechadon
+    MAP25 - Ogrim's Shrine                             Vader
+    MAP26 - Opus                                       Craigs
+    MAP27 - Electropsychosis                           TheMionicDonut
+    MAP28 - Trepidation                                Mechadon
+    MAP29 - Diametric Opposition                       Mechadon
+    MAP30 - Freezer Burn                               Kuchikitaichou/Cybershark
+    MAP31 - The Charles Fort Experiment                The Green Herring
+    MAP32 - Rapecube                                   brinks
+    MAP33 - Limbo Dancing                              Cybershark
+    MAP34 - Bleeding Grounds                           TheMionicDonut
+    MAP35 - Edgecrusher                                Mechadon
+    MAP36 - nz12b                                      -n/a-
+
+Additional Credits To	: Shaikoten, esselfortium, and the 32in24 regulars
+                          for running the project and doing all of the
+                          detailing.  esselfortium for compiling the
+                          texture resource.  Shaikoten for making some
+                          graphics.  The Green Herring for the music in 
+                          MAP35...and everyone else who has their music in 
+                          here.  Also Csonicgo,TheMionicDonut, and Mechadon 
+                          for helping come up with map names towards the 
+                          end of development.  And Shaikoten, Hellbent, and  
+                          Mechadon for finding musical bits for various maps. 
+                          Lastly Mechadon for compiling the wad, making the 
+                          CWILV patches, the statusbar, compiling the various 
+                          MAPINFO lumps, and fixing map bugs.  And everyone 
+                          else that I'm sure we've forgotten!
+
+                          Special thanks go to r and Croesus for playtesting 
+                          all my maps over the years, and r especially for 
+                          making lists of my wads and keeping them organized 
+                          so that I was able to select them. Also a special 
+                          thanks go to r, milton and croesus for teaching me 
+                          how to make fun dm maps.
+
+                          Oh yeah, and a special thanks to mek for all the 
+                          work at the end to get this thing out the door!
+
+===========================================================================
+* What is included *
+
+New levels              : 36
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP36
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : Any Deathmatch variants
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : New from scratch (except for MAP33 which was based
+                          off of E3M7)
+Build Time              : 2 years & 10 days (excluding the creation of the
+                          original layouts)
+Editor(s) used          : Doom Builder, Doom Builder 2, XWE, SLumpEd, GIMP,
+                          MSPaint
+Known Bugs              : The skies in MAP08 and MAP23 when played in a port such as 
+                          PRBoom+ are borked.  MAP36 will crash outright in PRBoom+
+                          and probably other, simlar ports.  Certain Boom ports may
+                          crash upon exiting MAPs 33 and higher.
+May Not Run With...     : non-Boom compatible ports, waffles
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com
+           http://mekworx.phenomer.net

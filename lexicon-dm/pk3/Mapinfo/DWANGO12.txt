@@ -1,0 +1,344 @@
+// DWANGO12 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW1201 "DWANGO12 Map 1"
+{
+	titlepatch = "DW12V00"
+	next = "DW1202"
+	secretnext = "DW1202"
+	sky1 = "DW120005"
+	music = "D_DW1201"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1202 "DWANGO12 Map 2"
+{
+	titlepatch = "DW12V01"
+	next = "DW1203"
+	secretnext = "DW1203"
+	sky1 = "DW120005"
+	music = "D_DW1202"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1203 "DWANGO12 Map 3"
+{
+	titlepatch = "DW12V02"
+	next = "DW1204"
+	secretnext = "DW1204"
+	sky1 = "DW120005"
+	music = "D_DW1203"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1204 "DWANGO12 Map 4"
+{
+	titlepatch = "DW12V03"
+	next = "DW1205"
+	secretnext = "DW1205"
+	sky1 = "DW120005"
+	music = "D_DW1204"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1205 "DWANGO12 Map 5"
+{
+	titlepatch = "DW12V04"
+	next = "DW1206"
+	secretnext = "DW1206"
+	sky1 = "DW120005"
+	music = "D_DW1205"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1206 "DWANGO12 Map 6"
+{
+	titlepatch = "DW12V05"
+	next = "DW1207"
+	secretnext = "DW1207"
+	sky1 = "DW120005"
+	music = "D_DW1206"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1207 "DWANGO12 Map 7"
+{
+	titlepatch = "DW12V06"
+	next = "DW1208"
+	secretnext = "DW1208"
+	sky1 = "DW120005"
+	music = "D_DW1207"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+	Map07Special
+}
+
+map DW1208 "DWANGO12 Map 8"
+{
+	titlepatch = "DW12V07"
+	next = "DW1209"
+	secretnext = "DW1209"
+	sky1 = "DW120005"
+	music = "D_DW1208"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1209 "DWANGO12 Map 9"
+{
+	titlepatch = "DW12V08"
+	next = "DW1210"
+	secretnext = "DW1210"
+	sky1 = "DW120005"
+	music = "D_DW1209"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1210 "DWANGO12 Map 10"
+{
+	titlepatch = "DW12V09"
+	next = "DW1211"
+	secretnext = "DW1211"
+	sky1 = "DW120005"
+	music = "D_DW1210"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1211 "DWANGO12 Map 11"
+{
+	titlepatch = "DW12V10"
+	next = "DW1212"
+	secretnext = "DW1212"
+	sky1 = "DW120005"
+	music = "D_DW1211"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1212 "DWANGO12 Map 12"
+{
+	titlepatch = "DW12V11"
+	next = "DW1213"
+	secretnext = "DW1213"
+	sky1 = "DW120006"
+	music = "D_DW1212"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1213 "DWANGO12 Map 13"
+{
+	titlepatch = "DW12V12"
+	next = "DW1214"
+	secretnext = "DW1214"
+	sky1 = "DW120006"
+	music = "D_DW1213"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1214 "DWANGO12 Map 14"
+{
+	titlepatch = "DW12V13"
+	next = "DW1215"
+	secretnext = "DW1215"
+	sky1 = "DW120006"
+	music = "D_DW1214"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1215 "DWANGO12 Map 15"
+{
+	titlepatch = "DW12V14"
+	next = "DW1216"
+	secretnext = "DW1216"
+	sky1 = "DW120006"
+	music = "D_DW1215"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1216 "DWANGO12 Map 16"
+{
+	titlepatch = "DW12V15"
+	next = "DW1217"
+	secretnext = "DW1217"
+	sky1 = "DW120006"
+	music = "D_DW1216"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1217 "DWANGO12 Map 17"
+{
+	titlepatch = "DW12V16"
+	next = "DW1218"
+	secretnext = "DW1218"
+	sky1 = "DW120006"
+	music = "D_DW1217"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1218 "DWANGO12 Map 18"
+{
+	titlepatch = "DW12V17"
+	next = "DW1219"
+	secretnext = "DW1219"
+	sky1 = "DW120006"
+	music = "D_DW1218"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1219 "DWANGO12 Map 19"
+{
+	titlepatch = "DW12V18"
+	next = "DW1220"
+	secretnext = "DW1220"
+	sky1 = "DW120006"
+	music = "D_DW1219"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1220 "DWANGO12 Map 20"
+{
+	titlepatch = "DW12V19"
+	next = "DW1221"
+	secretnext = "DW1221"
+	sky1 = "DW120006"
+	music = "D_DW1220"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1221 "DWANGO12 Map 21"
+{
+	titlepatch = "DW12V20"
+	next = "DW1222"
+	secretnext = "DW1222"
+	sky1 = "DW120007"
+	music = "D_DW1221"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1222 "DWANGO12 Map 22"
+{
+	titlepatch = "DW12V21"
+	next = "DW1223"
+	secretnext = "DW1223"
+	sky1 = "DW120007"
+	music = "D_DW1222"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1223 "DWANGO12 Map 23"
+{
+	titlepatch = "DW12V22"
+	next = "DW1224"
+	secretnext = "DW1224"
+	sky1 = "DW120007"
+	music = "D_DW1223"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1224 "DWANGO12 Map 24"
+{
+	titlepatch = "DW12V23"
+	next = "DW1225"
+	secretnext = "DW1225"
+	sky1 = "DW120007"
+	music = "D_DW1224"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1225 "DWANGO12 Map 25"
+{
+	titlepatch = "DW12V24"
+	next = "DW1226"
+	secretnext = "DW1226"
+	sky1 = "DW120007"
+	music = "D_DW1225"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1226 "DWANGO12 Map 26"
+{
+	titlepatch = "DW12V25"
+	next = "DW1227"
+	secretnext = "DW1227"
+	sky1 = "DW120007"
+	music = "D_DW1226"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1227 "DWANGO12 Map 27"
+{
+	titlepatch = "DW12V26"
+	next = "DW1228"
+	secretnext = "DW1228"
+	sky1 = "DW120007"
+	music = "D_DW1227"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}
+
+map DW1228 "DWANGO12 Map 28"
+{
+	titlepatch = "DW12V27"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DW120007"
+	music = "D_DW1228"
+	intermusic = "D_DW12IN"
+	ExitPic = "DW12INT"
+	EnterPic = "DW12INT"
+}

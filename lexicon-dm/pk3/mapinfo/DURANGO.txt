@@ -1,0 +1,361 @@
+// Durango Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DUGO01 "exitway:bydown"
+{
+	titlepatch = "DUGOV00"
+	next = "DUGO02"
+	secretnext = "DUGO02"
+	sky1 = "DUGO0229"
+	music = "D_DUGO01"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO02 "Indigena by down"
+{
+	titlepatch = "DUGOV01"
+	next = "DUGO03"
+	secretnext = "DUGO03"
+	sky1 = "DUGO0229"
+	music = "D_DUGO02"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO03 "Sala de tortura bydown"
+{
+	titlepatch = "DUGOV02"
+	next = "DUGO04"
+	secretnext = "DUGO04"
+	sky1 = "DUGO0229"
+	music = "D_DUGO03"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO04 "INDIGENA 2 By down"
+{
+	titlepatch = "DUGOV03"
+	next = "DUGO05"
+	secretnext = "DUGO05"
+	sky1 = "DUGO0229"
+	music = "D_DUGO04"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO05 "Calabozos exteriores by down"
+{
+	titlepatch = "DUGOV04"
+	next = "DUGO06"
+	secretnext = "DUGO06"
+	sky1 = "DUGO0229"
+	music = "D_DUGO05"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO06 "PONGAN PAPEL ByALT3000"
+{
+	titlepatch = "DUGOV05"
+	next = "DUGO07"
+	secretnext = "DUGO07"
+	sky1 = "DUGO0229"
+	music = "D_DUGO06"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO07 "SPEED12 bydown"
+{
+	titlepatch = "DUGOV06"
+	next = "DUGO08"
+	secretnext = "DUGO08"
+	sky1 = "DUGO0229"
+	music = "D_DUGO07"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+	Map07Special
+}
+
+map DUGO08 "HUGO BASE by:ALT3000"
+{
+	titlepatch = "DUGOV07"
+	next = "DUGO09"
+	secretnext = "DUGO09"
+	sky1 = "DUGO0229"
+	music = "D_DUGO08"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO09 "CONCHITA bydevilmyeyes"
+{
+	titlepatch = "DUGOV08"
+	next = "DUGO10"
+	secretnext = "DUGO10"
+	sky1 = "DUGO0229"
+	music = "D_DUGO09"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO10 "ZOMBIE by00_Zombie_00"
+{
+	titlepatch = "DUGOV09"
+	next = "DUGO11"
+	secretnext = "DUGO11"
+	sky1 = "DUGO0229"
+	music = "$MUSIC_DEAD"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO11 "ARGENTINA by:cutman999"
+{
+	titlepatch = "DUGOV10"
+	next = "DUGO12"
+	secretnext = "DUGO12"
+	sky1 = "DUGO0229"
+	music = "D_DUGO11"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO12 "Knee deep in red bydown"
+{
+	titlepatch = "DUGOV11"
+	next = "DUGO13"
+	secretnext = "DUGO13"
+	sky1 = "DUGO0230"
+	music = "D_DUGO12"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO13 "SACRIFIES bydown"
+{
+	titlepatch = "DUGOV12"
+	next = "DUGO14"
+	secretnext = "DUGO14"
+	sky1 = "DUGO0230"
+	music = "D_DUGO13"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO14 "HUGOJEDON bydown"
+{
+	titlepatch = "DUGOV13"
+	next = "DUGO15"
+	secretnext = "DUGO15"
+	sky1 = "DUGO0230"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO15 "IN UTERO by devilmyeyes"
+{
+	titlepatch = "DUGOV14"
+	next = "DUGO16"
+	secretnext = "DUGO16"
+	sky1 = "DUGO0230"
+	music = "D_DUGO15"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO16 "HELLWAY by down"
+{
+	titlepatch = "DUGOV15"
+	next = "DUGO17"
+	secretnext = "DUGO17"
+	sky1 = "DUGO0230"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO17 "DESGARRO PERINEAL by devilmyeyes"
+{
+	titlepatch = "DUGOV16"
+	next = "DUGO18"
+	secretnext = "DUGO18"
+	sky1 = "DUGO0230"
+	music = "D_DUGO17"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO18 "BUNKER bydown"
+{
+	titlepatch = "DUGOV17"
+	next = "DUGO19"
+	secretnext = "DUGO19"
+	sky1 = "DUGO0230"
+	music = "D_DUGO18"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO19 "PUTONIA by down"
+{
+	titlepatch = "DUGOV18"
+	next = "DUGO20"
+	secretnext = "DUGO20"
+	sky1 = "DUGO0230"
+	music = "D_DUGO19"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO20 "House of sex by devilmyeyes"
+{
+	titlepatch = "DUGOV19"
+	next = "DUGO21"
+	secretnext = "DUGO21"
+	sky1 = "DUGO0230"
+	music = "D_DUGO20"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO21 "SIMPLE MUERTE by down"
+{
+	titlepatch = "DUGOV20"
+	next = "DUGO22"
+	secretnext = "DUGO22"
+	sky1 = "DUGO0229"
+	music = "D_DUGO21"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO22 "Wachas abandonadas by down"
+{
+	titlepatch = "DUGOV21"
+	next = "DUGO23"
+	secretnext = "DUGO23"
+	sky1 = "DUGO0229"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO23 "DURANGO CITY by down"
+{
+	titlepatch = "DUGOV22"
+	next = "DUGO24"
+	secretnext = "DUGO24"
+	sky1 = "DUGO0229"
+	music = "D_DUGO23"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO24 "FIESTA FACTORY byzaid"
+{
+	titlepatch = "DUGOV23"
+	next = "DUGO25"
+	secretnext = "DUGO25"
+	sky1 = "DUGO0229"
+	music = "D_DUGO24"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO25 "MEMENTO MORI"
+{
+	titlepatch = "DUGOV24"
+	next = "DUGO26"
+	secretnext = "DUGO26"
+	sky1 = "DUGO0229"
+	music = "D_DUGO25"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO26 "hugo vs ancalagon by down"
+{
+	titlepatch = "DUGOV25"
+	next = "DUGO27"
+	secretnext = "DUGO27"
+	sky1 = "DUGO0229"
+	music = "D_DUGO26"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO27 "MARBLE 1 by down:"
+{
+	titlepatch = "DUGOV26"
+	next = "DUGO28"
+	secretnext = "DUGO28"
+	sky1 = "DUGO0229"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO28 "MARBLE 2 by:down"
+{
+	titlepatch = "DUGOV27"
+	next = "DUGO29"
+	secretnext = "DUGO29"
+	sky1 = "DUGO0229"
+	music = "$MUSIC_TENSE"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO29 "Malevolgia by cyber"
+{
+	titlepatch = "DUGOV28"
+	next = "DUGO30"
+	secretnext = "DUGO30"
+	sky1 = "DUGO0229"
+	music = "D_DUGO29"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO30 "DURANGO BYDOWN"
+{
+	titlepatch = "DUGOV29"
+	next = "DUGO31"
+	secretnext = "DUGO31"
+	sky1 = "DUGO0229"
+	music = "D_DUGO20"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+	allowmonstertelefrags
+}
+
+map DUGO31 "Melodies of hell by down"
+{
+	titlepatch = "DUGOV30"
+	next = "DUGO32"
+	secretnext = "DUGO32"
+	sky1 = "DUGO0229"
+	music = "D_DUGO31"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}
+
+map DUGO32 "DURANGO CITY2 by down"
+{
+	titlepatch = "DUGOV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DUGO0229"
+	music = "D_DUGO32"
+	ExitPic = "DUGOINT"
+	EnterPic = "DUGOINT"
+}

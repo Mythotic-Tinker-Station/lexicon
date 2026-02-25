@@ -1,0 +1,60 @@
+Texture "BOUR0028", 256, 128
+{
+	Patch "BOUR0118", 0, 0
+}
+Texture "BOUR0040", 64, 128
+{
+	Patch "WALL47_1", 18, 0
+	Patch "WALL47_1", -23, 0
+	Patch "WALL47_1", -34, 0
+	Patch "WALL47_1", -45, 0
+	Patch "WALL47_1", -52, 0
+}
+Texture "BOUR0042", 64, 128
+{
+	Patch "BODIES", 0, 0
+	Patch "W102_1", 0, 117
+	Patch "W102_1", 0, -116
+}
+Texture "BOUR0043", 64, 128
+{
+	Patch "BODIES", 0, 0
+	Patch "WALL42_3", -16, 2
+	Patch "WALL42_3", 55, 4
+	Patch "W98_1", 0, 116
+	Patch "W98_1", 0, -117
+}
+Texture "BOUR0044", 64, 16
+{
+	Patch "RW26_1", 0, 0
+}
+Texture "BOUR0046", 32, 128
+{
+	Patch "WALL42_3", 0, 0
+	Patch "WALL47_1", 1, 0
+	Patch "WALL42_3", 31, 0
+}
+Texture "BOUR0056", 64, 128
+{
+	Patch "BOUR0091", 0, 0
+	Patch "BOUR0091", 0, 32
+	Patch "BOUR0091", 0, 64
+	Patch "BOUR0091", 0, 96
+}
+Texture "BOUR0057", 64, 128
+{
+	Patch "BOUR0093", 0, 0
+	Patch "BOUR0093", 0, 32
+	Patch "BOUR0093", 0, 64
+	Patch "BOUR0093", 0, 96
+}
+Texture "BOUR0058", 128, 128
+{
+	Patch "BOUR0094", 0, 0
+	Patch "BOUR0094", 0, 64
+}
+Texture "BOUR0060", 128, 128
+{
+	Patch "BOUR0096", 0, 0
+	Patch "BOUR0096", 0, 64
+}

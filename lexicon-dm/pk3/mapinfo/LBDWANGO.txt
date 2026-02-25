@@ -1,0 +1,393 @@
+// LBDWANGO Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DWLB01 "LBDWANGO Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DWLB02"
+	secretnext = "DWLB02"
+	sky1 = "DWLB0006"
+	music = "D_DWLB01"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB02 "LBDWANGO Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DWLB03"
+	secretnext = "DWLB03"
+	sky1 = "DWLB0006"
+	music = "D_DWLB02"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB03 "LBDWANGO Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DWLB04"
+	secretnext = "DWLB04"
+	sky1 = "DWLB0006"
+	music = "D_DWLB03"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB04 "LBDWANGO Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DWLB05"
+	secretnext = "DWLB05"
+	sky1 = "DWLB0006"
+	music = "D_DWLB04"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB05 "LBDWANGO Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DWLB06"
+	secretnext = "DWLB06"
+	sky1 = "DWLB0006"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB06 "LBDWANGO Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DWLB07"
+	secretnext = "DWLB07"
+	sky1 = "DWLB0006"
+	music = "D_DWLB06"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB07 "LBDWANGO Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DWLB08"
+	secretnext = "DWLB08"
+	sky1 = "DWLB0006"
+	music = "D_DWLB07"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+	Map07Special
+}
+
+map DWLB08 "LBDWANGO Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DWLB09"
+	secretnext = "DWLB09"
+	sky1 = "DWLB0006"
+	music = "D_DWLB08"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB09 "LBDWANGO Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DWLB10"
+	secretnext = "DWLB10"
+	sky1 = "DWLB0006"
+	music = "D_DWLB09"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB10 "LBDWANGO Map 0"
+{
+	titlepatch = "CWILV09"
+	next = "DWLB11"
+	secretnext = "DWLB11"
+	sky1 = "DWLB0006"
+	music = "D_DWLB10"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB11 "LBDWANGO Map 1"
+{
+	titlepatch = "CWILV10"
+	next = "DWLB12"
+	secretnext = "DWLB12"
+	sky1 = "DWLB0006"
+	music = "D_DWLB11"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB12 "LBDWANGO Map 2"
+{
+	titlepatch = "CWILV11"
+	next = "DWLB13"
+	secretnext = "DWLB13"
+	sky1 = "DWLB0007"
+	music = "D_DWLB12"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB13 "LBDWANGO Map 3"
+{
+	titlepatch = "CWILV12"
+	next = "DWLB14"
+	secretnext = "DWLB14"
+	sky1 = "DWLB0007"
+	music = "D_DWLB13"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB14 "LBDWANGO Map 4"
+{
+	titlepatch = "CWILV13"
+	next = "DWLB15"
+	secretnext = "DWLB15"
+	sky1 = "DWLB0007"
+	music = "D_DWLB14"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB15 "LBDWANGO Map 5"
+{
+	titlepatch = "CWILV14"
+	next = "DWLB16"
+	secretnext = "DWLB16"
+	sky1 = "DWLB0007"
+	music = "D_DWLB15"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB16 "LBDWANGO Map 6"
+{
+	titlepatch = "CWILV15"
+	next = "DWLB17"
+	secretnext = "DWLB17"
+	sky1 = "DWLB0007"
+	music = "D_DWLB16"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB17 "LBDWANGO Map 7"
+{
+	titlepatch = "CWILV16"
+	next = "DWLB18"
+	secretnext = "DWLB18"
+	sky1 = "DWLB0007"
+	music = "D_DWLB17"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB18 "LBDWANGO Map 8"
+{
+	titlepatch = "CWILV17"
+	next = "DWLB19"
+	secretnext = "DWLB19"
+	sky1 = "DWLB0007"
+	music = "D_DWLB18"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB19 "LBDWANGO Map 9"
+{
+	titlepatch = "CWILV18"
+	next = "DWLB20"
+	secretnext = "DWLB20"
+	sky1 = "DWLB0007"
+	music = "D_DWLB19"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB20 "LBDWANGO Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DWLB21"
+	secretnext = "DWLB21"
+	sky1 = "DWLB0007"
+	music = "D_DWLB20"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB21 "LBDWANGO Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DWLB22"
+	secretnext = "DWLB22"
+	sky1 = "DWLB0008"
+	music = "D_DWLB21"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB22 "LBDWANGO Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DWLB23"
+	secretnext = "DWLB23"
+	sky1 = "DWLB0008"
+	music = "D_DWLB22"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB23 "LBDWANGO Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DWLB24"
+	secretnext = "DWLB24"
+	sky1 = "DWLB0008"
+	music = "D_DWLB23"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB24 "LBDWANGO Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "DWLB25"
+	secretnext = "DWLB25"
+	sky1 = "DWLB0008"
+	music = "D_DWLB24"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB25 "LBDWANGO Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "DWLB26"
+	secretnext = "DWLB26"
+	sky1 = "DWLB0008"
+	music = "D_DWLB25"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB26 "LBDWANGO Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "DWLB27"
+	secretnext = "DWLB27"
+	sky1 = "DWLB0008"
+	music = "D_DWLB26"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB27 "LBDWANGO Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "DWLB28"
+	secretnext = "DWLB28"
+	sky1 = "DWLB0008"
+	music = "D_DWLB27"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB28 "LBDWANGO Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "DWLB29"
+	secretnext = "DWLB29"
+	sky1 = "DWLB0008"
+	music = "D_DWLB28"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB29 "LBDWANGO Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "DWLB30"
+	secretnext = "DWLB30"
+	sky1 = "DWLB0008"
+	music = "D_DWLB29"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB30 "LBDWANGO Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "DWLB31"
+	secretnext = "DWLB31"
+	sky1 = "DWLB0008"
+	music = "D_DWLB30"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+	allowmonstertelefrags
+}
+
+map DWLB31 "LBDWANGO Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "DWLB32"
+	secretnext = "DWLB32"
+	sky1 = "DWLB0008"
+	music = "D_DWLB31"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}
+
+map DWLB32 "LBDWANGO Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DWLB0008"
+	music = "D_DWLB32"
+	intermusic = "D_DWLBIN"
+	ExitPic = "DWLBINT"
+	EnterPic = "DWLBINT"
+}

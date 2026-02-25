@@ -1,0 +1,35 @@
+Texture "BLDL0006", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S0", 15, 18
+	Patch "BLDL0057", 64, 0
+	Patch "BLDL0058", 81, 20
+}
+Texture "BLDL0012", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S1", 15, 18
+	Patch "BLDL0057", 64, 0
+	Patch "BLDL0059", 81, 20
+}
+Texture "BLDL0064", 1024, 128
+{
+	Patch "BLDL0045", 0, 0
+	Patch "BLDL0045", 256, 0
+	Patch "BLDL0045", 512, 0
+	Patch "BLDL0045", 764, 0
+}
+Texture "BLDL0065", 1024, 128
+{
+	Patch "BLDL0049", 0, 0
+	Patch "BLDL0050", 256, 0
+	Patch "BLDL0051", 512, 0
+	Patch "BLDL0052", 764, 0
+}
+Texture "BLDL0066", 1024, 128
+{
+	Patch "BLDL0053", 0, 0
+	Patch "BLDL0054", 256, 0
+	Patch "BLDL0055", 512, 0
+	Patch "BLDL0056", 764, 0
+}

@@ -1,0 +1,393 @@
+// IPXMATCH Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map IPXM01 "Ludicrous Gibs"
+{
+	titlepatch = "IPXMV00"
+	next = "IPXM02"
+	secretnext = "IPXM02"
+	sky1 = "IPXM0001"
+	music = "D_IPXM01"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM02 "Shotgun War"
+{
+	titlepatch = "IPXMV01"
+	next = "IPXM03"
+	secretnext = "IPXM03"
+	sky1 = "IPXM0001"
+	music = "D_IPXM02"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM03 "Frag Festival"
+{
+	titlepatch = "IPXMV02"
+	next = "IPXM04"
+	secretnext = "IPXM04"
+	sky1 = "IPXM0001"
+	music = "D_IPXM03"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM04 "Search and Destroy"
+{
+	titlepatch = "IPXMV03"
+	next = "IPXM05"
+	secretnext = "IPXM05"
+	sky1 = "IPXM0001"
+	music = "D_IPXM04"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM05 "Enemy Kicking"
+{
+	titlepatch = "IPXMV04"
+	next = "IPXM06"
+	secretnext = "IPXM06"
+	sky1 = "IPXM0001"
+	music = "D_IPXM05"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM06 "Rocket Yard"
+{
+	titlepatch = "IPXMV05"
+	next = "IPXM07"
+	secretnext = "IPXM07"
+	sky1 = "IPXM0001"
+	music = "D_IPXM06"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM07 "Speedy Frags"
+{
+	titlepatch = "IPXMV06"
+	next = "IPXM08"
+	secretnext = "IPXM08"
+	sky1 = "IPXM0001"
+	music = "D_IPXM07"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+	Map07Special
+}
+
+map IPXM08 "Blitzkrieg"
+{
+	titlepatch = "IPXMV07"
+	next = "IPXM09"
+	secretnext = "IPXM09"
+	sky1 = "IPXM0001"
+	music = "D_IPXM08"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM09 "Doom Holocaust"
+{
+	titlepatch = "IPXMV08"
+	next = "IPXM10"
+	secretnext = "IPXM10"
+	sky1 = "IPXM0001"
+	music = "D_IPXM09"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM10 "BFG Massacre"
+{
+	titlepatch = "IPXMV09"
+	next = "IPXM11"
+	secretnext = "IPXM11"
+	sky1 = "IPXM0001"
+	music = "D_IPXM10"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM11 "Point and Shoot"
+{
+	titlepatch = "IPXMV10"
+	next = "IPXM12"
+	secretnext = "IPXM12"
+	sky1 = "IPXM0001"
+	music = "D_IPXM11"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM12 "Deadly Rifles"
+{
+	titlepatch = "IPXMV11"
+	next = "IPXM13"
+	secretnext = "IPXM13"
+	sky1 = "IPXM0002"
+	music = "D_IPXM12"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM13 "Chaingun Chacha"
+{
+	titlepatch = "IPXMV12"
+	next = "IPXM14"
+	secretnext = "IPXM14"
+	sky1 = "IPXM0002"
+	music = "D_IPXM13"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM14 "Mega Kills"
+{
+	titlepatch = "IPXMV13"
+	next = "IPXM15"
+	secretnext = "IPXM15"
+	sky1 = "IPXM0002"
+	music = "D_IPXM14"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM15 "Death Halls"
+{
+	titlepatch = "IPXMV14"
+	next = "IPXM16"
+	secretnext = "IPXM16"
+	sky1 = "IPXM0002"
+	music = "D_IPXM15"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM16 "Cursed Area"
+{
+	titlepatch = "IPXMV15"
+	next = "IPXM17"
+	secretnext = "IPXM17"
+	sky1 = "IPXM0002"
+	music = "D_IPXM16"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM17 "Frag District"
+{
+	titlepatch = "IPXMV16"
+	next = "IPXM18"
+	secretnext = "IPXM18"
+	sky1 = "IPXM0002"
+	music = "D_IPXM17"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM18 "Instant Death"
+{
+	titlepatch = "IPXMV17"
+	next = "IPXM19"
+	secretnext = "IPXM19"
+	sky1 = "IPXM0002"
+	music = "D_IPXM18"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM19 "Endless War"
+{
+	titlepatch = "IPXMV18"
+	next = "IPXM20"
+	secretnext = "IPXM20"
+	sky1 = "IPXM0002"
+	music = "D_IPXM19"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM20 "Scary Search"
+{
+	titlepatch = "IPXMV19"
+	next = "IPXM21"
+	secretnext = "IPXM21"
+	sky1 = "IPXM0002"
+	music = "D_IPXM20"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM21 "Escape from Nirvana"
+{
+	titlepatch = "IPXMV20"
+	next = "IPXM22"
+	secretnext = "IPXM22"
+	sky1 = "IPXM0003"
+	music = "D_IPXM21"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM22 "Apocalypse"
+{
+	titlepatch = "IPXMV21"
+	next = "IPXM23"
+	secretnext = "IPXM23"
+	sky1 = "IPXM0003"
+	music = "D_IPXM22"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM23 "Total Carnage"
+{
+	titlepatch = "IPXMV22"
+	next = "IPXM24"
+	secretnext = "IPXM24"
+	sky1 = "IPXM0003"
+	music = "D_IPXM23"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM24 "Frag or Die"
+{
+	titlepatch = "IPXMV23"
+	next = "IPXM25"
+	secretnext = "IPXM25"
+	sky1 = "IPXM0003"
+	music = "D_IPXM24"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM25 "So Many Targets"
+{
+	titlepatch = "IPXMV24"
+	next = "IPXM26"
+	secretnext = "IPXM26"
+	sky1 = "IPXM0003"
+	music = "D_IPXM25"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM26 "Nightmare"
+{
+	titlepatch = "IPXMV25"
+	next = "IPXM27"
+	secretnext = "IPXM27"
+	sky1 = "IPXM0003"
+	music = "D_IPXM26"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM27 "Hell Gateway"
+{
+	titlepatch = "IPXMV26"
+	next = "IPXM28"
+	secretnext = "IPXM28"
+	sky1 = "IPXM0003"
+	music = "D_IPXM27"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM28 "Funny Frags"
+{
+	titlepatch = "IPXMV27"
+	next = "IPXM29"
+	secretnext = "IPXM29"
+	sky1 = "IPXM0003"
+	music = "D_IPXM28"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM29 "Destruction Area"
+{
+	titlepatch = "IPXMV28"
+	next = "IPXM30"
+	secretnext = "IPXM30"
+	sky1 = "IPXM0003"
+	music = "D_IPXM29"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM30 "Elite Area"
+{
+	titlepatch = "IPXMV29"
+	next = "IPXM31"
+	secretnext = "IPXM31"
+	sky1 = "IPXM0003"
+	music = "D_IPXM30"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+	allowmonstertelefrags
+}
+
+map IPXM31 "Fragging Instinct"
+{
+	titlepatch = "IPXMV30"
+	next = "IPXM32"
+	secretnext = "IPXM32"
+	sky1 = "IPXM0003"
+	music = "D_IPXM31"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}
+
+map IPXM32 "Death Ahead"
+{
+	titlepatch = "IPXMV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "IPXM0003"
+	music = "D_IPXM32"
+	intermusic = "D_IPXMIN"
+	ExitPic = "IPXMINT"
+	EnterPic = "IPXMINT"
+}

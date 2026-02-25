@@ -1,0 +1,115 @@
+// DANZIG1 + DANZIG2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DNZG01 "DANZIG1 #11"
+{
+	titlepatch = "CWILV10"
+	next = "DANZ02"
+	secretnext = "DANZ02"
+	sky1 = "RSKY1"
+	music = "D_STLKS2"
+}
+
+map DNZG02 "DANZIG1 #12"
+{
+	titlepatch = "CWILV11"
+	next = "DANZ03"
+	secretnext = "DANZ03"
+	sky1 = "RSKY2"
+	music = "D_THEDA2"
+}
+
+map DNZG03 "DANZIG1 #13"
+{
+	titlepatch = "CWILV12"
+	next = "DANZ04"
+	secretnext = "DANZ04"
+	sky1 = "RSKY2"
+	music = "D_DOOM2"
+}
+
+map DNZG04 "DANZIG1 #14"
+{
+	titlepatch = "CWILV13"
+	next = "DANZ05"
+	secretnext = "DANZ05"
+	sky1 = "RSKY2"
+	music = "D_DDTBL2"
+}
+
+map DNZG05 "DANZIG1 #15"
+{
+	titlepatch = "CWILV14"
+	next = "DANZ06"
+	secretnext = "DANZ06"
+	sky1 = "RSKY2"
+	music = "D_RUNNI2"
+}
+
+map DNZG06 "DANZIG2 #16"
+{
+	titlepatch = "CWILV15"
+	next = "DANZ07"
+	secretnext = "DANZ07"
+	sky1 = "RSKY2"
+	music = "D_SHAWN2"
+}
+
+map DNZG07 "DANZIG2 #17"
+{
+	titlepatch = "CWILV16"
+	next = "DANZ08"
+	secretnext = "DANZ08"
+	sky1 = "RSKY2"
+	music = "D_MESSAG"
+}
+
+map DNZG08 "DANZIG2 #18"
+{
+	titlepatch = "CWILV17"
+	next = "DANZ09"
+	secretnext = "DANZ09"
+	sky1 = "RSKY2"
+	music = "D_DEAD2"
+}
+
+map DNZG09 "DANZIG2 #19"
+{
+	titlepatch = "CWILV18"
+	next = "DANZ10"
+	secretnext = "DANZ10"
+	sky1 = "RSKY2"
+	music = "D_STLKS3"
+}
+
+map DNZG10 "DANZIG2 #20"
+{
+	titlepatch = "CWILV19"
+	next = "DANZ11"
+	secretnext = "DANZ11"
+	sky1 = "RSKY2"
+	music = "D_ROMERO"
+}
+
+map DNZG11 "DANZIG1 #31"
+{
+	titlepatch = "CWILV20"
+	next = "DANZ12"
+	secretnext = "DANZ12"
+	sky1 = "RSKY3"
+	music = "D_EVIL"
+}
+
+map DNZG12 "DANZIG1 #32"
+{
+	titlepatch = "CWILV21"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "RSKY3"
+	music = "D_ULTIMA"
+}

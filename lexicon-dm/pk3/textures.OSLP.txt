@@ -1,0 +1,412 @@
+Texture "OSLP0112", 256, 128
+{
+	Patch "RW24_4", 0, 0
+	Patch "RW24_4", 64, 0
+	Patch "RW24_4", 128, 0
+	Patch "RW24_4", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "OSLP0128", 64, 64
+{
+	Patch "OSLP0349", 0, 0
+	Patch "OSLP0349", 32, 0
+	Patch "OSLP0349", 0, 32
+	Patch "OSLP0349", 32, 32
+}
+Texture "OSLP0132", 128, 128
+{
+	Patch "OSLP0115", 0, 0
+	Patch "OSLP0115", 64, 0
+	Patch "W111_3", 0, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_2", 64, 0
+	Patch "W111_3", 64, 64
+	Patch "SW2_4", 37, 48
+	Patch "OSLP0169", -8, 0
+	Patch "OSLP0169", 120, 0
+}
+Texture "OSLP0133", 32, 128
+{
+	Patch "WALL47_1", 0, 0
+	Patch "EXIT1", 0, 56
+}
+Texture "OSLP0136", 64, 192
+{
+	Patch "OSLP0164", 0, 64
+	Patch "OSLP0164", 0, 128
+	Patch "OSLP0164", 0, 0
+}
+Texture "OSLP0140", 64, 128
+{
+	Patch "OSLP0139", 0, 0
+	Patch "OSLP0174", 0, -112
+}
+Texture "OSLP0155", 64, 160
+{
+	Patch "OSLP0154", 0, 32
+	Patch "OSLP0159", 0, -32
+}
+Texture "OSLP0158", 128, 128
+{
+	Patch "OSLP0383", 113, 0
+	Patch "OSLP0383", -6, 0
+}
+Texture "OSLP0166", 64, 128
+{
+	Patch "OSLP0391", 0, 0
+	Patch "OSLP0391", 0, 64
+}
+Texture "OSLP0167", 64, 32
+{
+	Patch "OSLP0392", 0, -1
+}
+Texture "OSLP0170", 32, 128
+{
+	Patch "OSLP0169", 16, 0
+	Patch "OSLP0169", 0, 0
+	Patch "OSLP0169", 8, 0
+}
+Texture "OSLP0175", 128, 32
+{
+	Patch "OSLP0159", 0, 0
+}
+Texture "OSLP0179", 64, 128
+{
+	Patch "OSLP0340", 0, 0
+	Patch "OSLP0340", 0, 64
+}
+Texture "OSLP0180", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "OSLP0341", 0, 64
+}
+Texture "OSLP0200", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "OSLP0206", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "OSLP0212", 128, 128
+{
+	Patch "OSLP0409", 0, 0
+}
+Texture "OSLP0220", 64, 128
+{
+	Patch "OSLP0413", 0, 0
+	Patch "OSLP0413", 0, 64
+}
+Texture "OSLP0229", 64, 64
+{
+	Patch "OSLP0422", 0, 0
+	Patch "COMP03_4", -27, 0
+	Patch "COMP03_4", 57, 0
+	Patch "COMP03_4", 0, 44
+	Patch "COMP03_4", 32, 44
+}
+Texture "OSLP0230", 64, 128
+{
+	Patch "OSLP0423", 0, 0
+	Patch "OSLP0423", 0, 64
+}
+Texture "OSLP0231", 64, 128
+{
+	Patch "OSLP0424", 0, 0
+	Patch "OSLP0424", 0, 64
+}
+Texture "OSLP0233", 64, 128
+{
+	Patch "OSLP0426", 0, 0
+	Patch "OSLP0426", 0, 64
+}
+Texture "OSLP0234", 64, 128
+{
+	Patch "OSLP0427", 0, 0
+	Patch "OSLP0427", 0, 64
+}
+Texture "OSLP0235", 64, 128
+{
+	Patch "OSLP0428", 0, 0
+	Patch "OSLP0428", 0, 64
+}
+Texture "OSLP0236", 64, 128
+{
+	Patch "OSLP0429", 0, 0
+	Patch "OSLP0507", 0, 64
+}
+Texture "OSLP0237", 64, 128
+{
+	Patch "OSLP0507", 0, 0
+	Patch "OSLP0507", 0, 64
+}
+Texture "OSLP0238", 64, 128
+{
+	Patch "OSLP0430", 0, 0
+	Patch "OSLP0430", 0, 64
+}
+Texture "OSLP0239", 64, 128
+{
+	Patch "OSLP0431", 0, 0
+	Patch "OSLP0431", 0, 64
+}
+Texture "OSLP0240", 64, 128
+{
+	Patch "OSLP0432", 0, 0
+	Patch "OSLP0432", 0, 64
+}
+Texture "OSLP0241", 32, 128
+{
+	Patch "OSLP0433", 0, 0
+	Patch "OSLP0433", 0, 64
+}
+Texture "OSLP0242", 64, 128
+{
+	Patch "OSLP0435", 0, 0
+	Patch "OSLP0435", 0, 64
+}
+Texture "OSLP0243", 128, 64
+{
+	Patch "OSLP0436", 0, 0
+	Patch "OSLP0434", 64, 0
+}
+Texture "OSLP0250", 64, 128
+{
+	Patch "OSLP0443", 0, 0
+	Patch "OSLP0443", 0, 64
+}
+Texture "OSLP0251", 64, 128
+{
+	Patch "OSLP0444", 0, 0
+	Patch "OSLP0444", 0, 64
+}
+Texture "OSLP0252", 64, 128
+{
+	Patch "OSLP0445", 0, 0
+	Patch "OSLP0445", 0, 64
+}
+Texture "OSLP0254", 64, 128
+{
+	Patch "OSLP0447", 0, 0
+	Patch "OSLP0447", 0, 64
+}
+Texture "OSLP0255", 64, 128
+{
+	Patch "OSLP0448", 0, 0
+	Patch "OSLP0448", 0, 64
+}
+Texture "OSLP0263", 64, 128
+{
+	Patch "OSLP0456", 0, 0
+	Patch "OSLP0456", 32, 0
+}
+Texture "OSLP0264", 64, 128
+{
+	Patch "OSLP0457", 0, 0
+	Patch "OSLP0457", 0, 64
+}
+Texture "OSLP0265", 64, 128
+{
+	Patch "OSLP0458", 0, 0
+	Patch "OSLP0458", 0, 64
+}
+Texture "OSLP0266", 64, 128
+{
+	Patch "OSLP0459", 0, 0
+	Patch "OSLP0459", 0, 64
+}
+Texture "OSLP0267", 64, 128
+{
+	Patch "OSLP0460", 0, 0
+	Patch "OSLP0460", 0, 64
+}
+Texture "OSLP0273", 16, 128
+{
+	Patch "OSLP0466", 0, 0
+	Patch "OSLP0466", 0, 32
+	Patch "OSLP0466", 0, 64
+	Patch "OSLP0466", 0, 96
+}
+Texture "OSLP0274", 16, 128
+{
+	Patch "OSLP0467", 0, 0
+	Patch "OSLP0467", 0, 32
+	Patch "OSLP0467", 0, 64
+	Patch "OSLP0467", 0, 96
+}
+Texture "OSLP0276", 64, 128
+{
+	Patch "OSLP0469", 0, 0
+	Patch "OSLP0469", 0, 64
+}
+Texture "OSLP0278", 64, 128
+{
+	Patch "OSLP0471", 0, 0
+	Patch "OSLP0471", 0, 64
+}
+Texture "OSLP0279", 64, 128
+{
+	Patch "OSLP0472", 0, 0
+	Patch "OSLP0472", 0, 64
+}
+Texture "OSLP0280", 64, 128
+{
+	Patch "OSLP0476", 0, 0
+	Patch "OSLP0478", 0, 64
+}
+Texture "OSLP0281", 64, 128
+{
+	Patch "OSLP0476", 0, 0
+	Patch "OSLP0476", 0, 64
+}
+Texture "OSLP0282", 64, 128
+{
+	Patch "OSLP0473", 0, 0
+	Patch "OSLP0473", 0, 64
+}
+Texture "OSLP0284", 64, 128
+{
+	Patch "OSLP0475", 0, 0
+}
+Texture "OSLP0285", 64, 128
+{
+	Patch "OSLP0479", 0, 0
+	Patch "OSLP0479", 0, 64
+}
+Texture "OSLP0286", 64, 128
+{
+	Patch "OSLP0479", 0, 0
+	Patch "OSLP0476", 0, 64
+}
+Texture "OSLP0287", 64, 128
+{
+	Patch "OSLP0477", 0, 0
+	Patch "OSLP0477", 0, 64
+}
+Texture "OSLP0288", 64, 128
+{
+	Patch "OSLP0479", 0, 0
+	Patch "OSLP0478", 0, 64
+}
+Texture "OSLP0290", 64, 128
+{
+	Patch "OSLP0481", 0, 0
+	Patch "OSLP0481", 0, 64
+}
+Texture "OSLP0292", 64, 128
+{
+	Patch "OSLP0483", 0, 0
+}
+Texture "OSLP0293", 64, 128
+{
+	Patch "OSLP0484", 0, 0
+}
+Texture "OSLP0294", 64, 64
+{
+	Patch "OSLP0486", 0, 0
+	Patch "OSLP0485", 32, 0
+}
+Texture "OSLP0295", 64, 128
+{
+	Patch "OSLP0487", 0, 0
+	Patch "OSLP0487", 0, 64
+}
+Texture "OSLP0300", 64, 128
+{
+	Patch "OSLP0491", 0, 0
+	Patch "OSLP0491", 0, 64
+}
+Texture "OSLP0302", 64, 128
+{
+	Patch "OSLP0493", 0, 0
+	Patch "OSLP0493", 0, 64
+}
+Texture "OSLP0303", 64, 32
+{
+	Patch "OSLP0528", 0, 0
+	Patch "OSLP0523", 32, 0
+}
+Texture "OSLP0306", 64, 128
+{
+	Patch "OSLP0495", 0, 0
+	Patch "OSLP0495", 0, 64
+}
+Texture "OSLP0307", 64, 128
+{
+	Patch "OSLP0496", 0, 0
+	Patch "OSLP0496", 0, 64
+}
+Texture "OSLP0308", 64, 128
+{
+	Patch "OSLP0506", 0, 0
+	Patch "OSLP0506", 0, 64
+}
+Texture "OSLP0309", 64, 128
+{
+	Patch "OSLP0497", 0, 0
+	Patch "OSLP0497", 0, 64
+}
+Texture "OSLP0310", 64, 128
+{
+	Patch "OSLP0498", 0, 0
+	Patch "OSLP0498", 0, 64
+}
+Texture "OSLP0312", 128, 32
+{
+	Patch "OSLP0502", 0, 0
+	Patch "OSLP0503", 32, 0
+	Patch "OSLP0500", 64, 0
+	Patch "OSLP0501", 96, 0
+}
+Texture "OSLP0313", 64, 128
+{
+	Patch "OSLP0504", 0, 0
+	Patch "OSLP0504", 0, 64
+}
+Texture "OSLP0314", 64, 128
+{
+	Patch "OSLP0429", 0, 0
+	Patch "OSLP0429", 0, 64
+}
+Texture "OSLP0316", 64, 128
+{
+	Patch "OSLP0506", 0, 0
+	Patch "OSLP0507", 0, 64
+}
+Texture "OSLP0317", 64, 128
+{
+	Patch "OSLP0487", 0, 0
+	Patch "OSLP0507", 0, 64
+}
+Texture "OSLP0323", 64, 64
+{
+	Patch "OSLP0514", 0, 0
+	Patch "OSLP0515", 32, 0
+}
+Texture "OSLP0324", 64, 128
+{
+	Patch "OSLP0512", 0, 0
+	Patch "OSLP0512", 0, 64
+}
+Texture "OSLP0327", 64, 128
+{
+	Patch "OSLP0526", 0, 0
+	Patch "OSLP0526", 0, 64
+}
+Texture "OSLP0329", 64, 128
+{
+	Patch "OSLP0517", 0, 0
+	Patch "OSLP0517", 0, 64
+}
+Texture "OSLP0334", 64, 128
+{
+	Patch "OSLP0521", 0, 0
+	Patch "OSLP0521", 0, 64
+}
+Texture "OSLP0335", 64, 128
+{
+	Patch "OSLP0522", 0, 0
+	Patch "OSLP0522", 0, 64
+}

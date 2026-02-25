@@ -1,0 +1,12 @@
+/*
+	Lexicon Deathmatch Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXDTHM"
+
+Script "Lexicon_DeathmatchPack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","DTHM",3);
+}

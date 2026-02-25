@@ -1,0 +1,369 @@
+// OZWANGO Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DWOZ01 "OZWANGO Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DWOZ02"
+	secretnext = "DWOZ02"
+	sky1 = "SKY1"
+	music = "D_DWOZ01"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ02 "OZWANGO Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DWOZ03"
+	secretnext = "DWOZ03"
+	sky1 = "SKY1"
+	music = "D_DWOZ02"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ03 "OZWANGO Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DWOZ04"
+	secretnext = "DWOZ04"
+	sky1 = "SKY1"
+	music = "D_DWOZ03"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ04 "OZWANGO Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DWOZ05"
+	secretnext = "DWOZ05"
+	sky1 = "SKY1"
+	music = "D_DWOZ04"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ05 "OZWANGO Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DWOZ06"
+	secretnext = "DWOZ06"
+	sky1 = "SKY1"
+	music = "D_DWOZ05"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ06 "OZWANGO Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DWOZ07"
+	secretnext = "DWOZ07"
+	sky1 = "SKY1"
+	music = "D_DWOZ06"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ07 "OZWANGO Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DWOZ08"
+	secretnext = "DWOZ08"
+	sky1 = "SKY1"
+	music = "D_DWOZ07"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+	Map07Special
+}
+
+map DWOZ08 "OZWANGO Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DWOZ09"
+	secretnext = "DWOZ09"
+	sky1 = "SKY1"
+	music = "D_DWOZ08"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ09 "OZWANGO Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DWOZ10"
+	secretnext = "DWOZ10"
+	sky1 = "SKY1"
+	music = "D_DWOZ09"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ10 "OZWANGO Map 0"
+{
+	titlepatch = "CWILV09"
+	next = "DWOZ11"
+	secretnext = "DWOZ11"
+	sky1 = "SKY1"
+	music = "D_DWOZ10"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ11 "OZWANGO Map 1"
+{
+	titlepatch = "CWILV10"
+	next = "DWOZ12"
+	secretnext = "DWOZ12"
+	sky1 = "SKY1"
+	music = "D_DWOZ11"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ12 "OZWANGO Map 2"
+{
+	titlepatch = "CWILV11"
+	next = "DWOZ13"
+	secretnext = "DWOZ13"
+	sky1 = "SKY2"
+	music = "D_DWOZ12"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ13 "OZWANGO Map 3"
+{
+	titlepatch = "CWILV12"
+	next = "DWOZ14"
+	secretnext = "DWOZ14"
+	sky1 = "SKY2"
+	music = "D_DWOZ13"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ14 "OZWANGO Map 4"
+{
+	titlepatch = "CWILV13"
+	next = "DWOZ15"
+	secretnext = "DWOZ15"
+	sky1 = "SKY2"
+	music = "D_DWOZ14"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ15 "OZWANGO Map 5"
+{
+	titlepatch = "CWILV14"
+	next = "DWOZ16"
+	secretnext = "DWOZ16"
+	sky1 = "SKY2"
+	music = "D_DWOZ15"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ16 "OZWANGO Map 6"
+{
+	titlepatch = "CWILV15"
+	next = "DWOZ17"
+	secretnext = "DWOZ17"
+	sky1 = "SKY2"
+	music = "D_DWOZ16"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ17 "OZWANGO Map 7"
+{
+	titlepatch = "CWILV16"
+	next = "DWOZ18"
+	secretnext = "DWOZ18"
+	sky1 = "SKY2"
+	music = "D_DWOZ17"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ18 "OZWANGO Map 8"
+{
+	titlepatch = "CWILV17"
+	next = "DWOZ19"
+	secretnext = "DWOZ19"
+	sky1 = "SKY2"
+	music = "D_DWOZ18"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ19 "OZWANGO Map 9"
+{
+	titlepatch = "CWILV18"
+	next = "DWOZ20"
+	secretnext = "DWOZ20"
+	sky1 = "SKY2"
+	music = "D_DWOZ19"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ20 "OZWANGO Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DWOZ21"
+	secretnext = "DWOZ21"
+	sky1 = "SKY2"
+	music = "D_DWOZ20"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ21 "OZWANGO Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DWOZ22"
+	secretnext = "DWOZ22"
+	sky1 = "SKY3"
+	music = "D_DWOZ21"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ22 "OZWANGO Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DWOZ23"
+	secretnext = "DWOZ23"
+	sky1 = "SKY3"
+	music = "D_DWOZ22"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ23 "OZWANGO Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DWOZ24"
+	secretnext = "DWOZ24"
+	sky1 = "SKY3"
+	music = "D_DWOZ23"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ24 "OZWANGO Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "DWOZ25"
+	secretnext = "DWOZ25"
+	sky1 = "SKY3"
+	music = "D_DWOZ24"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ25 "OZWANGO Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "DWOZ26"
+	secretnext = "DWOZ26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ26 "OZWANGO Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "DWOZ27"
+	secretnext = "DWOZ27"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ27 "OZWANGO Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "DWOZ28"
+	secretnext = "DWOZ28"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ28 "OZWANGO Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "DWOZ29"
+	secretnext = "DWOZ29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ29 "OZWANGO Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "DWOZ30"
+	secretnext = "DWOZ30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+}
+
+map DWOZ30 "OZWANGO Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_DWOZIN"
+	ExitPic = "DWOZINT"
+	EnterPic = "DWOZINT"
+	allowmonstertelefrags
+}

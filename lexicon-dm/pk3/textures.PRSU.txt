@@ -1,0 +1,106 @@
+Texture "PRSU0020", 64, 16
+{
+	Patch "PRSU0178", 0, 0
+}
+Texture "PRSU0046", 128, 128
+{
+	Patch "PRSU0045", 0, 0
+	Patch "PRSU0149", 21, 44
+}
+Texture "PRSU0067", 128, 128
+{
+	Patch "PRSU0172", 0, 0
+	Patch "PRSU0172", 64, 0
+}
+Texture "PRSU0068", 128, 128
+{
+	Patch "PRSU0173", 0, 0
+	Patch "PRSU0173", 64, 0
+}
+Texture "PRSU0069", 128, 128
+{
+	Patch "PRSU0174", 0, 0
+	Patch "PRSU0174", 64, 0
+}
+Texture "PRSU0070", 128, 128
+{
+	Patch "PRSU0175", 0, 0
+	Patch "PRSU0175", 64, 0
+}
+Texture "PRSU0075", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "PRSU0076", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S0", 15, 18
+	Patch "PRSU0156", 64, 0
+	Patch "PRSU0157", 81, 20
+}
+Texture "PRSU0081", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "PRSU0082", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S1", 15, 18
+	Patch "PRSU0156", 64, 0
+	Patch "PRSU0158", 81, 20
+}
+Texture "PRSU0086", 512, 128
+{
+	Patch "PRSU0127", 0, 0
+	Patch "PRSU0128", 256, 0
+	Patch "PRSU0129", 320, 0
+	Patch "PRSU0130", 384, 0
+	Patch "PRSU0131", 448, 0
+}
+Texture "PRSU0087", 512, 128
+{
+	Patch "PRSU0132", 0, 0
+	Patch "PRSU0129", 256, 0
+	Patch "PRSU0130", 320, 0
+	Patch "PRSU0131", 384, 0
+	Patch "PRSU0128", 448, 0
+}
+Texture "PRSU0088", 512, 128
+{
+	Patch "PRSU0133", 0, 0
+	Patch "PRSU0130", 256, 0
+	Patch "PRSU0131", 320, 0
+	Patch "PRSU0128", 384, 0
+	Patch "PRSU0129", 448, 0
+}
+Texture "PRSU0089", 512, 128
+{
+	Patch "PRSU0134", 0, 0
+	Patch "PRSU0131", 256, 0
+	Patch "PRSU0128", 320, 0
+	Patch "PRSU0129", 384, 0
+	Patch "PRSU0130", 448, 0
+}
+Texture "PRSU0180", 1024, 128
+{
+	Patch "PRSU0090", 0, 0
+	Patch "PRSU0091", 256, 0
+	Patch "PRSU0092", 512, 0
+	Patch "PRSU0093", 768, 0
+}
+Texture "PRSU0181", 1024, 128
+{
+	Patch "PRSU0094", 0, 0
+	Patch "PRSU0095", 256, 0
+	Patch "PRSU0096", 512, 0
+	Patch "PRSU0097", 768, 0
+}
+Texture "PRSU0182", 1024, 128
+{
+	Patch "PRSU0098", 0, 0
+	Patch "PRSU0099", 256, 0
+	Patch "PRSU0100", 512, 0
+	Patch "PRSU0101", 768, 0
+}

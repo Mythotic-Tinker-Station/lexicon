@@ -1,0 +1,215 @@
+// Switcheroom 2: The Forgotten Maps Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SWRY01 "Iconic"
+{
+	titlepatch = "SWRYV00"
+	next = "SWRY02"
+	secretnext = "SWRY02"
+	sky1 = "SKY1"
+	music = "D_SWRY01"
+}
+
+map SWRY02 "Nukeage Underworld"
+{
+	titlepatch = "SWRYV01"
+	next = "SWRY03"
+	secretnext = "SWRY03"
+	sky1 = "SKY1"
+	music = "D_SWRY02"
+}
+
+map SWRY03 "The Dead Factory"
+{
+	titlepatch = "SWRYV02"
+	next = "SWRY04"
+	secretnext = "SWRY04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map SWRY04 "Sector Zeta"
+{
+	titlepatch = "SWRYV03"
+	next = "SWRY05"
+	secretnext = "SWRY05"
+	sky1 = "SKY1"
+	music = "D_SWRY04"
+}
+
+map SWRY05 "Containment Overflow"
+{
+	titlepatch = "SWRYV04"
+	next = "SWRY06"
+	secretnext = "SWRY06"
+	sky1 = "SKY1"
+	music = "D_SWRY05"
+}
+
+map SWRY06 "Death Yard"
+{
+	titlepatch = "SWRYV05"
+	next = "SWRY07"
+	secretnext = "SWRY07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map SWRY07 "Demonic Response Center"
+{
+	titlepatch = "SWRYV06"
+	next = "SWRY08"
+	secretnext = "SWRY08"
+	sky1 = "SKY1"
+	music = "D_SWRY07"
+	Map07Special
+}
+
+map SWRY08 "Underfactory"
+{
+	titlepatch = "SWRYV07"
+	next = "SWRY09"
+	secretnext = "SWRY09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map SWRY09 "Ruins"
+{
+	titlepatch = "SWRYV08"
+	next = "SWRY10"
+	secretnext = "SWRY10"
+	sky1 = "SKY2"
+	music = "D_SWRY09"
+}
+
+map SWRY10 "Sludge Falls"
+{
+	titlepatch = "SWRYV09"
+	next = "SWRY11"
+	secretnext = "SWRY11"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD"
+}
+
+map SWRY11 "Wolfencity"
+{
+	titlepatch = "SWRYV10"
+	next = "SWRY12"
+	secretnext = "SWRY22"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS2"
+}
+
+map SWRY12 "Projects"
+{
+	titlepatch = "SWRYV11"
+	next = "SWRY13"
+	secretnext = "SWRY13"
+	sky1 = "SKY2"
+	music = "D_SWRY12"
+}
+
+map SWRY13 "Abandoned Market"
+{
+	titlepatch = "SWRYV12"
+	next = "SWRY14"
+	secretnext = "SWRY14"
+	sky1 = "SKY2"
+	music = "D_SWRY13"
+}
+
+map SWRY14 "The Gantchlet"
+{
+	titlepatch = "SWRYV13"
+	next = "SWRY15"
+	secretnext = "SWRY15"
+	sky1 = "SKY2"
+	music = "D_SWRY14"
+}
+
+map SWRY15 "Church of Evil"
+{
+	titlepatch = "SWRYV14"
+	next = "SWRY16"
+	secretnext = "SWRY31"
+	sky1 = "SKY3"
+	music = "D_SWRY15"
+}
+
+map SWRY16 "Refueled Agony"
+{
+	titlepatch = "SWRYV15"
+	next = "SWRY17"
+	secretnext = "SWRY17"
+	sky1 = "SKY3"
+	music = "$MUSIC_DEAD2"
+}
+
+map SWRY17 "Fellowz Keep"
+{
+	titlepatch = "SWRYV16"
+	next = "SWRY18"
+	secretnext = "SWRY18"
+	sky1 = "SKY3"
+	music = "D_SWRY17"
+}
+
+map SWRY18 "Mines of Grosse"
+{
+	titlepatch = "SWRYV17"
+	next = "SWRY19"
+	secretnext = "SWRY19"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMERO"
+}
+
+map SWRY19 "Mines of Grosse 2"
+{
+	titlepatch = "SWRYV18"
+	next = "SWRY20"
+	secretnext = "SWRY20"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN2"
+}
+
+map SWRY20 "Grosse Mines"
+{
+	titlepatch = "SWRYV19"
+	next = "SWRY21"
+	secretnext = "SWRY21"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSAG"
+}
+
+map SWRY21 "Spirit Traps"
+{
+	titlepatch = "SWRYV20"
+	next = "SWRY22"
+	secretnext = "SWRY22"
+	sky1 = "SKY3"
+	music = "D_SWRY21"
+}
+
+map SWRY22 "\"O\" of Life"
+{
+	titlepatch = "SWRYV21"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+}
+
+map SWRY32 "Grosse Simple"
+{
+	titlepatch = "SWRYV22"
+	next = "SWRY12"
+	secretnext = "SWRY12"
+	sky1 = "SKY3"
+	music = "D_SWRY32"
+}

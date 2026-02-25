@@ -1,0 +1,393 @@
+// Zones of Fear Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ZNOF01 "BLOOD (enkeli)"
+{
+	titlepatch = "ZNOFV00"
+	next = "ZNOF02"
+	secretnext = "ZNOF02"
+	sky1 = "SKY1"
+	music = "D_ZNOF01"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF02 "GRIM (enkeli)"
+{
+	titlepatch = "ZNOFV01"
+	next = "ZNOF03"
+	secretnext = "ZNOF03"
+	sky1 = "SKY1"
+	music = "D_ZNOF02"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF03 "CITY CENTRE (damned)"
+{
+	titlepatch = "ZNOFV02"
+	next = "ZNOF04"
+	secretnext = "ZNOF04"
+	sky1 = "SKY1"
+	music = "D_ZNOF03"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF04 "NAZILAND (enkeli)"
+{
+	titlepatch = "ZNOFV03"
+	next = "ZNOF05"
+	secretnext = "ZNOF05"
+	sky1 = "SKY1"
+	music = "D_ZNOF04"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF05 "ONLY GENUINE CAN PASS (damned)"
+{
+	titlepatch = "ZNOFV04"
+	next = "ZNOF06"
+	secretnext = "ZNOF06"
+	sky1 = "SKY1"
+	music = "D_ZNOF05"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF06 "UAC WAREHOUSE (jaeden)"
+{
+	titlepatch = "ZNOFV05"
+	next = "ZNOF07"
+	secretnext = "ZNOF07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF07 "GREEN TEMPLE (enkeli)"
+{
+	titlepatch = "ZNOFV06"
+	next = "ZNOF08"
+	secretnext = "ZNOF08"
+	sky1 = "SKY1"
+	music = "D_ZNOF07"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+	Map07Special
+}
+
+map ZNOF08 "SEARCHING ON HOLY GROUND (des_arthes)"
+{
+	titlepatch = "ZNOFV07"
+	next = "ZNOF09"
+	secretnext = "ZNOF09"
+	sky1 = "SKY1"
+	music = "D_ZNOF08"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF09 "CATHEDRAL OF UNENDING DARK (jaeden)"
+{
+	titlepatch = "ZNOFV08"
+	next = "ZNOF10"
+	secretnext = "ZNOF10"
+	sky1 = "SKY1"
+	music = "D_ZNOF09"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF10 "TEST OF PATIENCE (enkeli)"
+{
+	titlepatch = "ZNOFV09"
+	next = "ZNOF11"
+	secretnext = "ZNOF11"
+	sky1 = "SKY1"
+	music = "D_ZNOF10"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF11 "CAVES OF AGONY (jaeden)"
+{
+	titlepatch = "ZNOFV10"
+	next = "ZNOF12"
+	secretnext = "ZNOF12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF12 "HEXAGON CASTLE (enkeli+klofkac)"
+{
+	titlepatch = "ZNOFV11"
+	next = "ZNOF13"
+	secretnext = "ZNOF13"
+	sky1 = "SKY2"
+	music = "D_ZNOF12"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF13 "AN UNKNOWN HOUR (damned)"
+{
+	titlepatch = "ZNOFV12"
+	next = "ZNOF14"
+	secretnext = "ZNOF14"
+	sky1 = "SKY2"
+	music = "D_ZNOF13"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF14 "RUSTED TOWER (enkeli)"
+{
+	titlepatch = "ZNOFV13"
+	next = "ZNOF15"
+	secretnext = "ZNOF15"
+	sky1 = "SKY2"
+	music = "D_ZNOF14"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF15 "THE CITY RUN (jaeden)"
+{
+	titlepatch = "ZNOFV14"
+	next = "ZNOF16"
+	secretnext = "ZNOF31"
+	sky1 = "SKY2"
+	music = "D_ZNOF15"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF16 "THE MAYHEM (enkeli)"
+{
+	titlepatch = "ZNOFV15"
+	next = "ZNOF17"
+	secretnext = "ZNOF17"
+	sky1 = "SKY2"
+	music = "D_ZNOF16"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF17 "CIRCLE (enkeli)"
+{
+	titlepatch = "ZNOFV16"
+	next = "ZNOF18"
+	secretnext = "ZNOF18"
+	sky1 = "SKY2"
+	music = "D_ZNOF17"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF18 "GODLESS (enkeli)"
+{
+	titlepatch = "ZNOFV17"
+	next = "ZNOF19"
+	secretnext = "ZNOF19"
+	sky1 = "SKY2"
+	music = "D_ZNOF18"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF19 "GATE THAT LEADS TO HELL (enkeli)"
+{
+	titlepatch = "ZNOFV18"
+	next = "ZNOF20"
+	secretnext = "ZNOF20"
+	sky1 = "SKY2"
+	music = "D_ZNOF19"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF20 "THE RIFT (jaeden)"
+{
+	titlepatch = "ZNOFV19"
+	next = "ZNOF21"
+	secretnext = "ZNOF21"
+	sky1 = "SKY2"
+	music = "D_ZNOF20"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF21 "PEACE (enkeli)"
+{
+	titlepatch = "ZNOFV20"
+	next = "ZNOF22"
+	secretnext = "ZNOF22"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF21"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF22 "UNDERSITE (jaeden)"
+{
+	titlepatch = "ZNOFV21"
+	next = "ZNOF23"
+	secretnext = "ZNOF23"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF22"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF23 "THE CONQUEST (enkeli)"
+{
+	titlepatch = "ZNOFV22"
+	next = "ZNOF24"
+	secretnext = "ZNOF24"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF23"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF24 "THE RIDDLE (jaeden)"
+{
+	titlepatch = "ZNOFV23"
+	next = "ZNOF25"
+	secretnext = "ZNOF25"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF24"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF25 "THE OBLIVION (enkeli)"
+{
+	titlepatch = "ZNOFV24"
+	next = "ZNOF26"
+	secretnext = "ZNOF26"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF25"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF26 "TOWER OF BLOOD (jaeden)"
+{
+	titlepatch = "ZNOFV25"
+	next = "ZNOF27"
+	secretnext = "ZNOF27"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF26"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF27 "DEEPER AND DEEPER (enkeli)"
+{
+	titlepatch = "ZNOFV26"
+	next = "ZNOF28"
+	secretnext = "ZNOF28"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF27"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF28 "THE FALLEN (pipicz)"
+{
+	titlepatch = "ZNOFV27"
+	next = "ZNOF29"
+	secretnext = "ZNOF29"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF28"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF29 "ROTTEN (enkeli)"
+{
+	titlepatch = "ZNOFV28"
+	next = "ZNOF30"
+	secretnext = "ZNOF30"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF29"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF30 "THE DOOMCORE (jaeden)"
+{
+	titlepatch = "ZNOFV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF30"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+	allowmonstertelefrags
+}
+
+map ZNOF31 "RIVALSIDE (jaeden)"
+{
+	titlepatch = "ZNOFV30"
+	next = "ZNOF16"
+	secretnext = "ZNOF32"
+	sky1 = "ZNOF0232"
+	music = "D_ZNOF31"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}
+
+map ZNOF32 "AN INGLOURIOUS BASTERD (damned)"
+{
+	titlepatch = "ZNOFV31"
+	next = "ZNOF16"
+	secretnext = "ZNOF16"
+	sky1 = "ZNOF0232"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_ZNOFIN"
+	ExitPic = "ZNOFINT"
+	EnterPic = "ZNOFINT"
+}

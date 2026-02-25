@@ -1,0 +1,393 @@
+// Scythe 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SCY201 "Castle Entryway"
+{
+	titlepatch = "SCY2V00"
+	next = "SCY202"
+	secretnext = "SCY202"
+	sky1 = "SCY20711"
+	music = "D_SCY201"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY202 "Rooftop Warzone"
+{
+	titlepatch = "SCY2V01"
+	next = "SCY203"
+	secretnext = "SCY203"
+	sky1 = "SCY20711"
+	music = "D_SCY202"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY203 "Castle Gardens II"
+{
+	titlepatch = "SCY2V02"
+	next = "SCY204"
+	secretnext = "SCY204"
+	sky1 = "SCY20711"
+	music = "D_SCY203"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY204 "Cursed Cellars"
+{
+	titlepatch = "SCY2V03"
+	next = "SCY205"
+	secretnext = "SCY205"
+	sky1 = "SCY20711"
+	music = "D_SCY204"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY205 "Halls of Anguish"
+{
+	titlepatch = "SCY2V04"
+	next = "SCY206"
+	secretnext = "SCY206"
+	sky1 = "SCY20711"
+	music = "D_SCY205"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY206 "Temple Entryway"
+{
+	titlepatch = "SCY2V05"
+	next = "SCY207"
+	secretnext = "SCY207"
+	sky1 = "SCY20711"
+	music = "D_SCY206"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY207 "Temple of Isis"
+{
+	titlepatch = "SCY2V06"
+	next = "SCY208"
+	secretnext = "SCY208"
+	sky1 = "SCY20711"
+	music = "D_SCY207"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+	Map07Special
+}
+
+map SCY208 "Graverobbers"
+{
+	titlepatch = "SCY2V07"
+	next = "SCY209"
+	secretnext = "SCY209"
+	sky1 = "SCY20711"
+	music = "D_SCY208"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY209 "Valley of the Queen"
+{
+	titlepatch = "SCY2V08"
+	next = "SCY210"
+	secretnext = "SCY210"
+	sky1 = "SCY20711"
+	music = "D_SCY209"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY210 "Pharaos Tomb"
+{
+	titlepatch = "SCY2V09"
+	next = "SCY211"
+	secretnext = "SCY211"
+	sky1 = "SCY20711"
+	music = "D_SCY210"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY211 "UAC Base X"
+{
+	titlepatch = "SCY2V10"
+	next = "SCY212"
+	secretnext = "SCY212"
+	sky1 = "SCY20711"
+	music = "D_SCY211"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY212 "Battlegrounds"
+{
+	titlepatch = "SCY2V11"
+	next = "SCY213"
+	secretnext = "SCY213"
+	sky1 = "SCY20712"
+	music = "D_SCY212"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY213 "Mining Project"
+{
+	titlepatch = "SCY2V12"
+	next = "SCY214"
+	secretnext = "SCY214"
+	sky1 = "SCY20712"
+	music = "D_SCY213"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY214 "The Haunted Mines"
+{
+	titlepatch = "SCY2V13"
+	next = "SCY215"
+	secretnext = "SCY215"
+	sky1 = "SCY20712"
+	music = "D_SCY214"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY215 "End of the line"
+{
+	titlepatch = "SCY2V14"
+	next = "SCY216"
+	secretnext = "SCY231"
+	sky1 = "SCY20712"
+	music = "D_SCY215"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY216 "Mr X"
+{
+	titlepatch = "SCY2V15"
+	next = "SCY217"
+	secretnext = "SCY217"
+	sky1 = "SCY20712"
+	music = "D_SCY216"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY217 "Canyon of Blood"
+{
+	titlepatch = "SCY2V16"
+	next = "SCY218"
+	secretnext = "SCY218"
+	sky1 = "SCY20712"
+	music = "D_SCY217"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY218 "Living Lands"
+{
+	titlepatch = "SCY2V17"
+	next = "SCY219"
+	secretnext = "SCY219"
+	sky1 = "SCY20712"
+	music = "D_SCY218"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY219 "Withering Away"
+{
+	titlepatch = "SCY2V18"
+	next = "SCY220"
+	secretnext = "SCY220"
+	sky1 = "SCY20712"
+	music = "D_SCY219"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY220 "The Gates"
+{
+	titlepatch = "SCY2V19"
+	next = "SCY221"
+	secretnext = "SCY221"
+	sky1 = "SCY20712"
+	music = "D_SCY220"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY221 "Doom Gardens"
+{
+	titlepatch = "SCY2V20"
+	next = "SCY222"
+	secretnext = "SCY222"
+	sky1 = "SCY20713"
+	music = "D_SCY221"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY222 "The Garden Base II"
+{
+	titlepatch = "SCY2V21"
+	next = "SCY223"
+	secretnext = "SCY223"
+	sky1 = "SCY20713"
+	music = "D_SCY222"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY223 "Whispering Winds"
+{
+	titlepatch = "SCY2V22"
+	next = "SCY224"
+	secretnext = "SCY224"
+	sky1 = "SCY20713"
+	music = "D_SCY223"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY224 "Gaias Temple"
+{
+	titlepatch = "SCY2V23"
+	next = "SCY225"
+	secretnext = "SCY225"
+	sky1 = "SCY20713"
+	music = "D_SCY224"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY225 "Forgotten City"
+{
+	titlepatch = "SCY2V24"
+	next = "SCY226"
+	secretnext = "SCY226"
+	sky1 = "SCY20713"
+	music = "D_SCY225"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY226 "Death"
+{
+	titlepatch = "SCY2V25"
+	next = "SCY227"
+	secretnext = "SCY227"
+	sky1 = "SCY20713"
+	music = "D_SCY226"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY227 "Afterlife II"
+{
+	titlepatch = "SCY2V26"
+	next = "SCY228"
+	secretnext = "SCY228"
+	sky1 = "SCY20713"
+	music = "D_SCY227"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY228 "Nightmare"
+{
+	titlepatch = "SCY2V27"
+	next = "SCY229"
+	secretnext = "SCY229"
+	sky1 = "SCY20713"
+	music = "D_SCY228"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY229 "Dust to Dust"
+{
+	titlepatch = "SCY2V28"
+	next = "SCY230"
+	secretnext = "SCY230"
+	sky1 = "SCY20713"
+	music = "D_SCY229"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY230 "Haunting Dreams"
+{
+	titlepatch = "SCY2V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SCY20713"
+	music = "D_SCY230"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+	allowmonstertelefrags
+}
+
+map SCY231 "Secret"
+{
+	titlepatch = "SCY2V30"
+	next = "SCY216"
+	secretnext = "SCY232"
+	sky1 = "SCY20713"
+	music = "D_SCY231"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}
+
+map SCY232 "Super Secret"
+{
+	titlepatch = "SCY2V31"
+	next = "SCY216"
+	secretnext = "SCY216"
+	sky1 = "SCY20713"
+	music = "D_SCY232"
+	intermusic = "D_SCY2IN"
+	ExitPic = "SCY2INT"
+	EnterPic = "SCY2INT"
+}

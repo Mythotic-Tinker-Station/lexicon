@@ -1,0 +1,349 @@
+Texture "94TU0002", 256, 128
+{
+	Patch "94TU0084", 0, -8
+}
+Texture "94TU0005", 128, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "94TU0125", 1, 60
+	Patch "WALL62_2", 64, 0
+}
+Texture "94TU0006", 128, 128
+{
+	Patch "WALL04_3", 0, 0
+	Patch "WALL04_4", 16, 0
+	Patch "WALL04_5", 32, 0
+	Patch "WALL04_2", 48, 0
+	Patch "NUKEDGE", 0, 104
+	Patch "WALL04_3", 0, 33
+	Patch "WALL04_4", 16, 33
+	Patch "WALL04_5", 32, 33
+	Patch "WALL04_2", 48, 33
+	Patch "94TU0125", 0, 69
+	Patch "WALL04_2", 64, 0
+	Patch "WALL04_3", 80, 0
+	Patch "WALL04_4", 112, 0
+	Patch "WALL04_7", 96, 0
+	Patch "WALL04_2", 112, 72
+	Patch "WALL04_3", 96, 72
+	Patch "WALL04_4", 80, 72
+	Patch "WALL04_5", 64, 64
+	Patch "NUKEDGE", 64, 105
+}
+Texture "94TU0007", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "94TU0008", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "94TU0014", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "94TU0125", 0, 57
+}
+Texture "94TU0015", 256, 128
+{
+	Patch "94TU0107", 0, 0
+	Patch "94TU0108", 64, 0
+	Patch "94TU0110", 128, 0
+	Patch "94TU0109", 192, 0
+	Patch "94TU0112", 0, 64
+	Patch "94TU0114", 64, 64
+	Patch "94TU0113", 128, 64
+	Patch "94TU0111", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "94TU0016", 128, 128
+{
+	Patch "94TU0116", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "94TU0115", 96, 0
+	Patch "94TU0116", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "94TU0115", 96, 64
+}
+Texture "94TU0017", 128, 128
+{
+	Patch "94TU0103", 26, 64
+	Patch "94TU0102", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "94TU0103", 28, 0
+	Patch "94TU0106", 72, 64
+	Patch "94TU0104", 72, 0
+	Patch "94TU0105", 0, 0
+}
+Texture "94TU0018", 256, 56
+{
+	Patch "94TU0107", 0, 0
+	Patch "94TU0108", 64, 0
+	Patch "94TU0109", 128, 0
+	Patch "94TU0113", 192, 0
+}
+Texture "94TU0019", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "94TU0101", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "94TU0107", 0, 0
+	Patch "94TU0101", 96, 4
+	Patch "94TU0108", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "94TU0021", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "94TU0023", 16, 128
+{
+	Patch "94TU0090", 0, 0
+	Patch "94TU0090", 0, 56
+}
+Texture "94TU0025", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "94TU0119", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "94TU0120", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "94TU0121", 132, 69
+	Patch "94TU0122", 68, 7
+	Patch "94TU0123", 4, 7
+	Patch "94TU0124", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "94TU0026", 128, 128
+{
+	Patch "94TU0092", 0, 56
+	Patch "94TU0093", 64, 56
+	Patch "94TU0092", 0, 0
+	Patch "94TU0093", 64, 0
+}
+Texture "94TU0027", 64, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "94TU0125", 1, 49
+}
+Texture "94TU0031", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "94TU0035", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 8
+}
+Texture "94TU0038", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "94TU0040", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "94TU0042", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "94TU0044", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "94TU0045", 128, 128
+{
+	Patch "94TU0151", 0, 0
+}
+Texture "94TU0046", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "94TU0047", 128, 128
+{
+	Patch "94TU0151", -120, -8
+}
+Texture "94TU0053", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "94TU0056", 128, 128
+{
+	Patch "94TU0139", 64, 70
+	Patch "94TU0141", 0, 70
+	Patch "94TU0140", 0, -2
+	Patch "94TU0139", 64, -2
+}
+Texture "94TU0057", 64, 128
+{
+	Patch "94TU0142", 0, 0
+	Patch "94TU0142", 0, 32
+	Patch "94TU0142", 0, 96
+	Patch "94TU0142", 0, 64
+}
+Texture "94TU0058", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "94TU0150", 14, 74
+}
+Texture "94TU0059", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "94TU0129", 0, 0
+}
+Texture "94TU0060", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "94TU0128", 4, 0
+	Patch "W32_4", 0, 64
+}
+Texture "94TU0061", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "94TU0118", 4, 18
+	Patch "94TU0118", 38, 18
+}
+Texture "94TU0062", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "94TU0118", 81, 34
+	Patch "94TU0118", 19, 34
+}
+Texture "94TU0063", 16, 128
+{
+	Patch "94TU0138", -4, 56
+	Patch "94TU0138", -4, 0
+}
+Texture "94TU0064", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "94TU0118", 7, 27
+	Patch "94TU0118", 37, 27
+}
+Texture "94TU0068", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, 56
+	Patch "CYL1_1", 0, 0
+	Patch "WALL01_1", 118, 0
+	Patch "WALL01_1", 117, 56
+}
+Texture "94TU0069", 64, 128
+{
+	Patch "94TU0143", 0, 0
+	Patch "94TU0144", 32, 0
+}
+Texture "94TU0070", 256, 128
+{
+	Patch "94TU0134", 0, 0
+	Patch "94TU0135", 128, 0
+}
+Texture "94TU0072", 128, 128
+{
+	Patch "94TU0130", -12, 0
+	Patch "94TU0130", 116, 0
+}
+Texture "94TU0073", 128, 128
+{
+	Patch "94TU0131", -4, 0
+	Patch "94TU0131", 124, 0
+}
+Texture "94TU0075", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "94TU0149", 0, 79
+	Patch "94TU0149", 64, 15
+}
+Texture "94TU0076", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+Texture "94TU0088", 1024, 128
+{
+	Patch "94TU0160", 0, 0
+	Patch "94TU0161", 256, 0
+	Patch "94TU0162", 512, 0
+	Patch "94TU0163", 768, 0
+}

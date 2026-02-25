@@ -1,0 +1,205 @@
+===========================================================================
+Advanced engine needed  : Boom + UMAPINFO
+Primary purpose         : Single play
+===========================================================================
+Title                   : Vertex Relocation
+Filename                : vx_reloc.wad
+Release date            : 2025-12-17
+Author                  : 4chan.org/vr/doom
+Email Address           : [redacted]
+
+Description             : 33 maps built around vanilla Doom 2 enemy placement.
+
+                          Mappers were allowed to change anything that isn't
+                          a monster, but were not allowed to move the enemies 
+                          or modify their flags. Despite the name, there were
+                          no restrictions on map geometry, so few (if any)
+                          vertices are shared with the original maps.
+
+                          The mapset is generally balanced for pistol starting.
+
+                          vx_reloc_4x3.wad contains HUD graphics for engines
+                          that don't support widescreen status bar (Odamex etc)
+
+                          doom-sat.pdf contains details on implementation of a
+                          boolean satisfiability puzzle using the Doom engine.
+
+Additional Credits to   : anonymous, aan, brxyz, EtzelFred93, EyeBallTank,
+                          guywithteacup, Hand-peeled, joe-ilya, MajaMystic256,
+                          NepNep, Sitri, TimeGuardian, tms, ViolentBeetle
+
+                          (see detailed credits below)
+
+===========================================================================
+* What is included *
+
+New levels              : 33
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : U/ZMAPINFO & COMPLVL lumps; 4x3 HUD wad; DOOM-SAT pdf
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP33
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Doom 2 enemy placement
+Build Time              : Jan 2024 - Mar 2024, Sep 2024 - May 2025 (17+16 maps)
+Editor(s) used          : Ultimate Doom Builder, Eureka, Slade
+Known Bugs              : Vanilla bugged (stuck) enemy placements left intact
+Tested With             : Nugget 4.2.0, GZDoom 4.14.1
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://4chan.org/vr/doom; https://clovr.xyz/wadsup
+
+
+===========================================================================
+* Additional Credits *
+
+MAP01 "Entry Job" by TimeGuardian
+MIDI: "The Lost Son" by Narnia
+
+MAP02 "Underbase" by anonymous
+MIDI: "Letni" from Jazz Jackrabbit
+
+MAP33 "Anon Becomes a Siamese Twin With a Shark" by joe-ilya
+MIDI: "Cold Spaghetti" from Pizza Tower
+
+MAP03 "Getting Tight" by EyeBallTank
+MIDI: "Countdown to Death"  [unchanged]
+
+MAP04 "Sheepnado Decimates Infested Starport" by NepNep
+MIDI: "Artiljerija, Bosanac Bekrija" by Muhamed 'Hamo' Brkić
+
+MAP05 "The Wasteland Tower" by anonymous
+MIDI: "Saltbringer" by James Paddock
+
+MAP06 "Her" by joe-ilya
+MIDI: "The Golden Ages" by 4mat
+
+MAP07 "Circle of Secrets" by tms
+MIDI: "Mad 'n' Mental" by Vincent Fong
+
+MAP08 "Combination Lock" by tms
+MIDI: "Time x Time = Time" by Mark Klem
+
+MAP09 "Der Mortage" by guywithteacup
+MIDI: "Sailor Mars Theme" from Sailor Moon SuperS Fighting
+
+MAP10 "Gazoline Processing" by guywithteacup
+MIDI: "Stage 5-2" from Steel Empire
+
+MAP11 "Witch Doctor" by anonymous
+MIDI: "Danger Zone" from Persona 3 Portable
+
+MAP12 "Seaside Sanctuary" by Hand-peeled
+MIDI: "Guardian Angel Loses Their Will" by msx
+
+MAP13 "Easy Street" by anonymous
+MIDI: "Detroit Rock City" by KISS
+
+MAP14 "Residence" by guywithteacup
+MIDI: "City of Ruins" from Resident Evil 3
+
+MAP15 "Gates of the West" by aan
+MIDI: "Swirls" from Marathon
+
+MAP31 "Room Relocation" by TimeGuardian
+MIDI: "Doom II Mashup" by stewboy
+
+MAP32 "Fegelein's Afterlife" by anonymous
+MIDI: "Boot Camp" by Soundgarden
+
+MAP16 "Suburban Heatwave" by aan
+MIDI: "Dead Heaven" by Gary Numan
+
+MAP17 "Feline Squire" by joe-ilya
+MIDI: "Take All (I Have More)" by Mark Klem
+
+MAP18 "Biocide" by anonymous
+MIDI: "Dark Groove" from Jazz Jackrabbit 2
+
+MAP19 "With Great Displeasure" by Hand-peeled
+MIDI: "Salt Marsh" by Tom Jensen
+
+MAP20 "Red-Handed" by guywithteacup
+MIDI: "The Devastation" from Power Strike
+
+MAP21 "Foo Fighters" by joe-ilya & MajaMystic256
+MIDI: "Generator" by Foo Fighters
+
+MAP22 "The Crematorium" by Sitri
+MIDI: "Gut Wrencher" from Duke Nukem 3D
+
+MAP23 "Hot Reception" by guywithteacup
+MIDI: "Natural Killer Cyborg" from Mother 3
+
+MAP24 "Styx" by guywithteacup
+MIDI: "Introduction" from Bubblegum Crash!
+
+MAP25 "Bloody Hell" from Hand-peeled
+MIDI: "Killing Spirit" by Sam Woodman
+
+MAP26 "Nag Hammadi" by brxyz
+MIDI: "Halifni" by Abdel Halim Hafez
+
+MAP27 "Eviction Notice" by Sitri
+MIDI: "Game04" from Descent 2
+
+MAP28 "Wrong Way" by Hand-peeled
+MIDI: "Double, Double, Toil and Trouble" from Blood
+
+MAP29 "God I Wish I Was Romero" by EtzelFred93
+MIDI: "Shawn's Got the Shotgun"  [unchanged]
+
+MAP30 "A Hole Where You'll Burn to Death" by ViolentBeetle
+MIDI: "Shhh, the Shadows are Near" by decino
+
+
+D_DM2TTL: "Dwarven Clanhall" from Stonekeep
+D_READ_M: "Dark Dwarves' Lair" from Stonekeep
+D_DM2INT: "Kiss the Girls and Make Them Cry" from Duke Nukem 2
+D_EVIL:   "The End of the Road" from Adlib Song Album: Latin Rhythms
+D_BUNNY:  "Consumite Furore" from Phantasmagoria
+
+
+Project lead: TimeGuardian
+Release packaging and story screens: Coffee Achiever
+Title screen & intermission graphics: aan
+Status bar: anonymous
+Final polishing for RC3: anonymous
+
+
+Bunny screen render uses some of Cheello's voxels as well as some CC-BY models:
+  PC case & monitor by Moomo0802, headphones by lucq22, SSG by Sebastian Kansik
+

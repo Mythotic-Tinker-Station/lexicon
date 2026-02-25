@@ -1,0 +1,223 @@
+// Lost Civilization Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	ClipMidTextures
+	CheckSwitchRange
+	sky1 = "LSCV1785"
+}
+
+map LSCV01 "Mountain pass"
+{
+	titlepatch = "CWILV00"
+	next = "LSCV02"
+	secretnext = "LSCV02"
+	music = "D_LSCV01"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV02 "Oceanside"
+{
+	titlepatch = "CWILV01"
+	next = "LSCV03"
+	secretnext = "LSCV03"
+	music = "D_LSCV02"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV03 "The farmlands"
+{
+	titlepatch = "CWILV02"
+	next = "LSCV04"
+	secretnext = "LSCV04"
+	music = "D_LSCV03"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV04 "River valley"
+{
+	titlepatch = "CWILV03"
+	next = "LSCV05"
+	secretnext = "LSCV05"
+	music = "D_LSCV04"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV05 "Mountain village"
+{
+	titlepatch = "CWILV04"
+	next = "LSCV06"
+	secretnext = "LSCV06"
+	music = "D_LSCV05"
+	intermusic = "D_LSCVIN"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV06 "The secret city"
+{
+	titlepatch = "CWILV05"
+	next = "LSCV07"
+	secretnext = "LSCV07"
+	music = "D_LSCV06"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV07 "Lost in the forest"
+{
+	titlepatch = "CWILV06"
+	next = "LSCV08"
+	secretnext = "LSCV08"
+	music = "D_LSCV07"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+	Map07Special
+}
+
+map LSCV08 "Castle"
+{
+	titlepatch = "CWILV07"
+	next = "LSCV09"
+	secretnext = "LSCV09"
+	music = "D_LSCV08"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV09 "Courtyard"
+{
+	titlepatch = "CWILV08"
+	next = "LSCV10"
+	secretnext = "LSCV10"
+	music = "D_LSCV09"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV10 "Nightmare"
+{
+	titlepatch = "CWILV09"
+	next = "LSCV11"
+	secretnext = "LSCV11"
+	music = "D_LSCV10"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV11 "Nightfall"
+{
+	titlepatch = "CWILV10"
+	next = "LSCV12"
+	secretnext = "LSCV12"
+	music = "D_LSCV11"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV12 "Suburb"
+{
+	titlepatch = "CWILV11"
+	next = "LSCV13"
+	secretnext = "LSCV13"
+	music = "D_LSCV12"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV13 "City centre"
+{
+	titlepatch = "CWILV12"
+	next = "LSCV14"
+	secretnext = "LSCV14"
+	music = "D_LSCV13"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV14 "Downtown"
+{
+	titlepatch = "CWILV13"
+	next = "LSCV15"
+	secretnext = "LSCV15"
+	music = "D_LSCV14"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV15 "Mansion"
+{
+	titlepatch = "CWILV14"
+	next = "LSCV16"
+	secretnext = "LSCV31"
+	music = "D_LSCV15"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV16 "Fort"
+{
+	titlepatch = "CWILV15"
+	next = "LSCV17"
+	secretnext = "LSCV17"
+	music = "D_LSCV16"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV17 "Prison"
+{
+	titlepatch = "CWILV16"
+	next = "LSCV18"
+	secretnext = "LSCV18"
+	music = "D_LSCV17"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV18 "Laboratory"
+{
+	titlepatch = "CWILV17"
+	next = "LSCV19"
+	secretnext = "LSCV19"
+	music = "D_LSCV18"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV19 "Division"
+{
+	titlepatch = "CWILV18"
+	next = "LSCV20"
+	secretnext = "LSCV20"
+	music = "D_LSCV19"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV20 "Ending"
+{
+	titlepatch = "CWILV19"
+	next = "VR"
+	secretnext = "VR"
+	music = "D_LSCV20"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}
+
+map LSCV31 "Spiderweb arena"
+{
+	titlepatch = "CWILV30"
+	next = "LSCV16"
+	secretnext = "LSCV16"
+	sky1 = "LSCV1802"
+	music = "D_DM2TTL"
+	ExitPic = "LSCVINT"
+	EnterPic = "LSCVINT"
+}

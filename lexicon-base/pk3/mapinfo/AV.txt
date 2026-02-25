@@ -1,0 +1,395 @@
+// Alien Vendetta Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ALVD01 "Sunset"
+{
+	titlepatch = "ALVDV00"
+	next = "ALVD02"
+	secretnext = "ALVD02"
+	sky1 = "ALVD0737"
+	music = "D_ALVD01"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD02 "Rusty Rage"
+{
+	titlepatch = "ALVDV01"
+	next = "ALVD03"
+	secretnext = "ALVD03"
+	sky1 = "ALVD0737"
+	music = "D_ALVD02"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD03 "Cargo Depot"
+{
+	titlepatch = "ALVDV02"
+	next = "ALVD04"
+	secretnext = "ALVD04"
+	sky1 = "ALVD0737"
+	music = "D_ALVD03"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD04 "Seclusion"
+{
+	titlepatch = "ALVDV03"
+	next = "ALVD05"
+	secretnext = "ALVD05"
+	sky1 = "ALVD0737"
+	music = "D_ALVD04"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD05 "Crimson Tide"
+{
+	titlepatch = "ALVDV04"
+	next = "ALVD06"
+	secretnext = "ALVD06"
+	sky1 = "ALVD0737"
+	music = "D_ALVD05"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD06 "Hillside Siege"
+{
+	titlepatch = "ALVDV05"
+	next = "ALVD07"
+	secretnext = "ALVD07"
+	sky1 = "ALVD0737"
+	music = "D_ALVD06"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD07 "Showdown"
+{
+	titlepatch = "ALVDV06"
+	next = "ALVD08"
+	secretnext = "ALVD08"
+	sky1 = "ALVD0737"
+	music = "D_ALVD07"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+	compat_shorttex = 1
+	Map07Special
+}
+
+map ALVD08 "Beast Island"
+{
+	titlepatch = "ALVDV07"
+	next = "ALVD09"
+	secretnext = "ALVD09"
+	sky1 = "ALVD0737"
+	music = "D_ALVD08"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD09 "Castle Gardens"
+{
+	titlepatch = "ALVDV08"
+	next = "ALVD10"
+	secretnext = "ALVD10"
+	sky1 = "ALVD0737"
+	music = "D_ALVD09"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD10 "Toxic Touch"
+{
+	titlepatch = "ALVDV09"
+	next = "ALVD11"
+	secretnext = "ALVD11"
+	sky1 = "ALVD0737"
+	music = "D_ALVD10"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD11 "Nemesis"
+{
+	titlepatch = "ALVDV10"
+	next = "ALVD12"
+	secretnext = "ALVD12"
+	sky1 = "ALVD0737"
+	music = "D_ALVD11"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD12 "Entropy"
+{
+	titlepatch = "ALVDV11"
+	next = "ALVD13"
+	secretnext = "ALVD13"
+	sky1 = "ALVD0832"
+	music = "D_ALVD12"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD13 "Suicidal Tendencies"
+{
+	titlepatch = "ALVDV12"
+	next = "ALVD14"
+	secretnext = "ALVD14"
+	sky1 = "ALVD0832"
+	music = "D_ALVD13"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD14 "Overwhelming Odds"
+{
+	titlepatch = "ALVDV13"
+	next = "ALVD15"
+	secretnext = "ALVD15"
+	sky1 = "ALVD0832"
+	music = "D_ALVD14"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD15 "Bulls on Parade"
+{
+	titlepatch = "ALVDV14"
+	next = "ALVD16"
+	secretnext = "ALVD31"
+	sky1 = "ALVD0832"
+	music = "D_ALVD15"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+	compat_trace = 1
+}
+
+map ALVD16 "Mutual Destruction"
+{
+	titlepatch = "ALVDV15"
+	next = "ALVD17"
+	secretnext = "ALVD17"
+	sky1 = "ALVD0832"
+	music = "D_ALVD16"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD17 "Nukefall"
+{
+	titlepatch = "ALVDV16"
+	next = "ALVD18"
+	secretnext = "ALVD18"
+	sky1 = "ALVD0832"
+	music = "D_ALVD17"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD18 "Lake Poison"
+{
+	titlepatch = "ALVDV17"
+	next = "ALVD19"
+	secretnext = "ALVD19"
+	sky1 = "ALVD0832"
+	music = "D_ALVD18"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD19 "Alien Resurrection"
+{
+	titlepatch = "ALVDV18"
+	next = "ALVD20"
+	secretnext = "ALVD20"
+	sky1 = "ALVD0832"
+	music = "D_ALVD19"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD20 "Misri Halek"
+{
+	titlepatch = "ALVDV19"
+	next = "ALVD21"
+	secretnext = "ALVD21"
+	sky1 = "ALVD0832"
+	music = "D_ALVD20"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD21 "One Flew Over The Cacos Nest"
+{
+	titlepatch = "ALVDV20"
+	next = "ALVD22"
+	secretnext = "ALVD22"
+	sky1 = "ALVD0833"
+	music = "D_ALVD21"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD22 "Rubicon"
+{
+	titlepatch = "ALVDV21"
+	next = "ALVD23"
+	secretnext = "ALVD23"
+	sky1 = "ALVD0833"
+	music = "D_ALVD22"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD23 "Blood Sacrifice"
+{
+	titlepatch = "ALVDV22"
+	next = "ALVD24"
+	secretnext = "ALVD24"
+	sky1 = "ALVD0833"
+	music = "D_ALVD23"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD24 "Clandestine Complex"
+{
+	titlepatch = "ALVDV23"
+	next = "ALVD25"
+	secretnext = "ALVD25"
+	sky1 = "ALVD0833"
+	music = "D_ALVD24"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD25 "Demonic Hordes"
+{
+	titlepatch = "ALVDV24"
+	next = "ALVD26"
+	secretnext = "ALVD26"
+	sky1 = "ALVD0833"
+	music = "D_ALVD25"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD26 "Dark Dome"
+{
+	titlepatch = "ALVDV25"
+	next = "ALVD27"
+	secretnext = "ALVD27"
+	sky1 = "ALVD0833"
+	music = "D_ALVD26"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD27 "Stench of Evil"
+{
+	titlepatch = "ALVDV26"
+	next = "ALVD28"
+	secretnext = "ALVD28"
+	sky1 = "ALVD0833"
+	music = "D_ALVD27"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD28 "Whispering Shadows"
+{
+	titlepatch = "ALVDV27"
+	next = "ALVD29"
+	secretnext = "ALVD29"
+	sky1 = "ALVD0833"
+	music = "D_ALVD28"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD29 "Fire Walk With Me"
+{
+	titlepatch = "ALVDV28"
+	next = "ALVD30"
+	secretnext = "ALVD30"
+	sky1 = "ALVD0833"
+	music = "D_ALVD29"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD30 "Point Dreadful"
+{
+	titlepatch = "ALVDV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ALVD0833"
+	music = "D_ALVD30"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+	allowmonstertelefrags
+}
+
+map ALVD31 "Killer Colours"
+{
+	titlepatch = "ALVDV30"
+	next = "ALVD16"
+	secretnext = "ALVD32"
+	sky1 = "ALVD0833"
+	music = "D_ALVD31"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}
+
+map ALVD32 "No Guts No Glory"
+{
+	titlepatch = "ALVDV31"
+	next = "ALVD16"
+	secretnext = "ALVD16"
+	sky1 = "ALVD0833"
+	music = "D_ALVD32"
+	intermusic = "D_ALVDIN"
+	ExitPic = "ALVDINT"
+	EnterPic = "ALVDINT"
+}

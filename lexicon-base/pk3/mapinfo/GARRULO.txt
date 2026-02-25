@@ -1,0 +1,297 @@
+// Garrulismo Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map GRLS01 "primer asalto"
+{
+	titlepatch = "GRLSV00"
+	next = "GRLS02"
+	secretnext = "GRLS02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map GRLS02 "C. computadoras"
+{
+	titlepatch = "GRLSV01"
+	next = "GRLS03"
+	secretnext = "GRLS03"
+	sky1 = "SKY1"
+	music = "D_GRLS02"
+}
+
+map GRLS03 "puesto de mando"
+{
+	titlepatch = "GRLSV02"
+	next = "GRLS04"
+	secretnext = "GRLS04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map GRLS04 "generador"
+{
+	titlepatch = "GRLSV03"
+	next = "GRLS05"
+	secretnext = "GRLS05"
+	sky1 = "SKY1"
+	music = "D_GRLS04"
+}
+
+map GRLS05 "paseo por los almacenes"
+{
+	titlepatch = "GRLSV04"
+	next = "GRLS06"
+	secretnext = "GRLS06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map GRLS06 "Salas ciberneticas"
+{
+	titlepatch = "GRLSV05"
+	next = "GRLS07"
+	secretnext = "GRLS07"
+	sky1 = "SKY1"
+	music = "D_GRLS06"
+}
+
+map GRLS07 "el edificio rojo"
+{
+	titlepatch = "GRLSV06"
+	next = "GRLS08"
+	secretnext = "GRLS08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map GRLS08 "Excursion toxica"
+{
+	titlepatch = "GRLSV07"
+	next = "GRLS09"
+	secretnext = "GRLS09"
+	sky1 = "SKY1"
+	music = "D_GRLS08"
+}
+
+map GRLS09 "P. refinado"
+{
+	titlepatch = "GRLSV08"
+	next = "GRLS10"
+	secretnext = "GRLS10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}
+
+map GRLS10 "los 'dipositos'"
+{
+	titlepatch = "GRLSV09"
+	next = "GRLS11"
+	secretnext = "GRLS11"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+}
+
+map GRLS11 "alcantarillado"
+{
+	titlepatch = "GRLSV10"
+	next = "GRLS12"
+	secretnext = "GRLS12"
+	sky1 = "SKY1"
+	music = "D_GRLS11"
+}
+
+map GRLS12 "Zona industrial"
+{
+	titlepatch = "GRLSV11"
+	next = "GRLS13"
+	secretnext = "GRLS13"
+	sky1 = "SKY2"
+	music = "D_GRLS12"
+}
+
+map GRLS13 "en la fabrica"
+{
+	titlepatch = "GRLSV12"
+	next = "GRLS14"
+	secretnext = "GRLS14"
+	sky1 = "SKY2"
+	music = "D_GRLS13"
+}
+
+map GRLS14 "Barrio conflictivo"
+{
+	titlepatch = "GRLSV13"
+	next = "GRLS15"
+	secretnext = "GRLS15"
+	sky1 = "SKY2"
+	music = "D_GRLS14"
+}
+
+map GRLS15 "Distrito comercial"
+{
+	titlepatch = "GRLSV14"
+	next = "GRLS16"
+	secretnext = "GRLS31"
+	sky1 = "SKY2"
+	music = "D_GRLS15"
+}
+
+map GRLS16 "Torre oficinas"
+{
+	titlepatch = "GRLSV15"
+	next = "GRLS17"
+	secretnext = "GRLS17"
+	sky1 = "SKY2"
+	music = "D_GRLS16"
+}
+
+map GRLS17 "Escaleras"
+{
+	titlepatch = "GRLSV16"
+	next = "GRLS18"
+	secretnext = "GRLS18"
+	sky1 = "SKY2"
+	music = "D_GRLS17"
+}
+
+map GRLS18 "Guerrilla urbana"
+{
+	titlepatch = "GRLSV17"
+	next = "GRLS19"
+	secretnext = "GRLS19"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+}
+
+map GRLS19 "visita al trullo"
+{
+	titlepatch = "GRLSV18"
+	next = "GRLS20"
+	secretnext = "GRLS20"
+	sky1 = "SKY2"
+	music = "D_GRLS19"
+}
+
+map GRLS20 "laboratorio"
+{
+	titlepatch = "GRLSV19"
+	next = "GRLS21"
+	secretnext = "GRLS21"
+	sky1 = "SKY2"
+	music = "D_GRLS20"
+}
+
+map GRLS21 "La puerta"
+{
+	titlepatch = "GRLSV20"
+	next = "GRLS22"
+	secretnext = "GRLS22"
+	sky1 = "SKY3"
+	music = "D_GRLS21"
+}
+
+map GRLS22 "Suburbio infernal"
+{
+	titlepatch = "GRLSV21"
+	next = "GRLS23"
+	secretnext = "GRLS23"
+	sky1 = "SKY3"
+	music = "D_GRLS22"
+}
+
+map GRLS23 "guarida de Mr. ciberio"
+{
+	titlepatch = "GRLSV22"
+	next = "GRLS24"
+	secretnext = "GRLS24"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+}
+
+map GRLS24 "P. y rosas"
+{
+	titlepatch = "GRLSV23"
+	next = "GRLS25"
+	secretnext = "GRLS25"
+	sky1 = "SKY3"
+	music = "D_GRLS24"
+}
+
+map GRLS25 "Tierra volcanica"
+{
+	titlepatch = "GRLSV24"
+	next = "GRLS26"
+	secretnext = "GRLS26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+}
+
+map GRLS26 "El gran lago matanza"
+{
+	titlepatch = "GRLSV25"
+	next = "GRLS27"
+	secretnext = "GRLS27"
+	sky1 = "SKY3"
+	music = "D_GRLS26"
+}
+
+map GRLS27 "dispersa la mani!"
+{
+	titlepatch = "GRLSV26"
+	next = "GRLS28"
+	secretnext = "GRLS28"
+	sky1 = "SKY3"
+	music = "D_GRLS27"
+}
+
+map GRLS28 "R.I.P en la necropolis"
+{
+	titlepatch = "GRLSV27"
+	next = "GRLS29"
+	secretnext = "GRLS29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+}
+
+map GRLS29 "corazon del infierno"
+{
+	titlepatch = "GRLSV28"
+	next = "GRLS30"
+	secretnext = "GRLS30"
+	sky1 = "SKY3"
+	music = "D_GRLS29"
+}
+
+map GRLS30 "Lo indescriptible"
+{
+	titlepatch = "GRLSV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	allowmonstertelefrags
+}
+
+map GRLS31 "Lab. subterraneo"
+{
+	titlepatch = "GRLSV30"
+	next = "GRLS16"
+	secretnext = "GRLS32"
+	sky1 = "SKY3"
+	music = "D_GRLS31"
+}
+
+map GRLS32 "Samsara"
+{
+	titlepatch = "GRLSV31"
+	next = "GRLS16"
+	secretnext = "GRLS16"
+	sky1 = "SKY3"
+	music = "$MUSIC_ULTIMA"
+}

@@ -1,0 +1,406 @@
+// Vertex Relocation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map VXRL01 "Entry Job"
+{
+	titlepatch = "VXRLV00"
+	next = "VXRL02"
+	secretnext = "VXRL02"
+	sky1 = "SKY1"
+	music = "D_VXRL01"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL02 "Underbase"
+{
+	titlepatch = "VXRLV01"
+	next = "VXRL33"
+	secretnext = "VXRL33"
+	sky1 = "SKY1"
+	music = "D_VXRL02"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL03 "Getting Tight"
+{
+	titlepatch = "VXRLV02"
+	next = "VXRL04"
+	secretnext = "VXRL04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL04 "Sheepnado Decimates Infested Starport"
+{
+	titlepatch = "VXRLV03"
+	next = "VXRL05"
+	secretnext = "VXRL05"
+	sky1 = "SKY1"
+	music = "D_VXRL04"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL05 "The Wasteland Tower"
+{
+	titlepatch = "VXRLV04"
+	next = "VXRL06"
+	secretnext = "VXRL06"
+	sky1 = "SKY1"
+	music = "D_VXRL05"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL06 "Her"
+{
+	titlepatch = "VXRLV05"
+	next = "VXRL07"
+	secretnext = "VXRL07"
+	sky1 = "SKY1"
+	music = "D_VXRL06"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL07 "Circle of Secrets"
+{
+	titlepatch = "VXRLV06"
+	next = "VXRL08"
+	secretnext = "VXRL08"
+	sky1 = "SKY1"
+	music = "D_VXRL07"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+	Map07Special
+}
+
+map VXRL08 "Combination Lock"
+{
+	titlepatch = "VXRLV07"
+	next = "VXRL09"
+	secretnext = "VXRL09"
+	sky1 = "SKY1"
+	music = "D_VXRL08"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL09 "Der Mortage"
+{
+	titlepatch = "VXRLV08"
+	next = "VXRL10"
+	secretnext = "VXRL10"
+	sky1 = "SKY1"
+	music = "D_VXRL09"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL10 "Gazoline Processing"
+{
+	titlepatch = "VXRLV09"
+	next = "VXRL11"
+	secretnext = "VXRL11"
+	sky1 = "SKY1"
+	music = "D_VXRL10"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL11 "Witch Doctor"
+{
+	titlepatch = "VXRLV10"
+	next = "VXRL12"
+	secretnext = "VXRL12"
+	sky1 = "SKY1"
+	music = "D_VXRL11"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL12 "Seaside Sanctuary"
+{
+	titlepatch = "VXRLV11"
+	next = "VXRL13"
+	secretnext = "VXRL13"
+	sky1 = "VXRL0097"
+	music = "D_VXRL12"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL13 "Easy Street"
+{
+	titlepatch = "VXRLV12"
+	next = "VXRL14"
+	secretnext = "VXRL14"
+	sky1 = "SKY2"
+	music = "D_VXRL13"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL14 "Residence"
+{
+	titlepatch = "VXRLV13"
+	next = "VXRL15"
+	secretnext = "VXRL15"
+	sky1 = "SKY2"
+	music = "D_VXRL14"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL15 "Gates of the West"
+{
+	titlepatch = "VXRLV14"
+	next = "VXRL16"
+	secretnext = "VXRL31"
+	sky1 = "SKY2"
+	music = "D_VXRL15"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL16 "Suburban Heatwave"
+{
+	titlepatch = "VXRLV15"
+	next = "VXRL17"
+	secretnext = "VXRL17"
+	sky1 = "SKY2"
+	music = "D_VXRL16"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL17 "Feline Squire"
+{
+	titlepatch = "VXRLV16"
+	next = "VXRL18"
+	secretnext = "VXRL18"
+	sky1 = "SKY2"
+	music = "D_VXRL17"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL18 "Biocide"
+{
+	titlepatch = "VXRLV17"
+	next = "VXRL19"
+	secretnext = "VXRL19"
+	sky1 = "VXRL0176"
+	music = "D_VXRL18"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+	fade = "505050"
+}
+
+map VXRL19 "With Great Displeasure"
+{
+	titlepatch = "VXRLV18"
+	next = "VXRL20"
+	secretnext = "VXRL20"
+	sky1 = "VXRL0131"
+	music = "D_VXRL19"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL20 "Red-Handed"
+{
+	titlepatch = "VXRLV19"
+	next = "VXRL21"
+	secretnext = "VXRL21"
+	sky1 = "SKY2"
+	music = "D_VXRL20"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL21 "Foo Fighters"
+{
+	titlepatch = "VXRLV20"
+	next = "VXRL22"
+	secretnext = "VXRL22"
+	sky1 = "SKY3"
+	music = "D_VXRL21"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL22 "The Crematorium"
+{
+	titlepatch = "VXRLV21"
+	next = "VXRL23"
+	secretnext = "VXRL23"
+	sky1 = "SKY3"
+	music = "D_VXRL22"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL23 "Hot Reception"
+{
+	titlepatch = "VXRLV22"
+	next = "VXRL24"
+	secretnext = "VXRL24"
+	sky1 = "SKY3"
+	music = "D_VXRL23"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL24 "Styx"
+{
+	titlepatch = "VXRLV23"
+	next = "VXRL25"
+	secretnext = "VXRL25"
+	sky1 = "SKY3"
+	music = "D_VXRL24"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL25 "Bloody Hell"
+{
+	titlepatch = "VXRLV24"
+	next = "VXRL26"
+	secretnext = "VXRL26"
+	sky1 = "VXRL0102"
+	music = "D_VXRL25"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL26 "Nag Hammadi"
+{
+	titlepatch = "VXRLV25"
+	next = "VXRL27"
+	secretnext = "VXRL27"
+	sky1 = "SKY3"
+	music = "D_VXRL26"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL27 "Eviction Notice"
+{
+	titlepatch = "VXRLV26"
+	next = "VXRL28"
+	secretnext = "VXRL28"
+	sky1 = "SKY3"
+	music = "D_VXRL27"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL28 "Wrong Way"
+{
+	titlepatch = "VXRLV27"
+	next = "VXRL29"
+	secretnext = "VXRL29"
+	sky1 = "SKY3"
+	music = "D_VXRL28"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL29 "God I Wish I Was Romero"
+{
+	titlepatch = "VXRLV28"
+	next = "VXRL30"
+	secretnext = "VXRL30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL30 "A Hole Where You'll Burn to Death"
+{
+	titlepatch = "VXRLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_VXRL30"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+	allowmonstertelefrags
+}
+
+map VXRL31 "Room Relocation"
+{
+	titlepatch = "VXRLV30"
+	next = "VXRL16"
+	secretnext = "VXRL32"
+	sky1 = "SKY3"
+	music = "D_VXRL31"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL32 "Fegelein's Afterlife"
+{
+	titlepatch = "VXRLV31"
+	next = "VXRL16"
+	secretnext = "VXRL16"
+	sky1 = "SKY3"
+	music = "D_VXRL32"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}
+
+map VXRL33 "Anon Becomes a Siamese Twin With a Shark"
+{
+	titlepatch = "VXRLV32"
+	next = "VXRL03"
+	secretnext = "VXRL03"
+	sky1 = "SKY1"
+	music = "D_VXRL33"
+	intermusic = "D_VXRLIN"
+	ExitPic = "VXRLINT"
+	EnterPic = "VXRLINT"
+}

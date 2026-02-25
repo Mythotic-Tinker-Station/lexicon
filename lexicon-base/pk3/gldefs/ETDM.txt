@@ -1,0 +1,74 @@
+object Lexicon_ETDM_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_ETDM_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_ETDM_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}
+
+pointlight Lexicon_ETDM_IMPBALL
+{
+    color 1.0 0.0 0.0
+    size 64
+}
+
+flickerlight Lexicon_ETDM_IMPBALL_X1
+{
+    color 0.7 0.2 0.0
+    size 80
+    secondarySize 88
+    chance 0.25
+}
+
+flickerlight Lexicon_ETDM_IMPBALL_X2
+{
+    color 0.4 0.0 0.0
+    size 96
+    secondarySize 104
+    chance 0.25
+}
+
+flickerlight Lexicon_ETDM_IMPBALL_X3
+{
+    color 0.2 0.0 0.0
+    size 112
+    secondarySize 120
+    chance 0.25
+}
+
+object Lexicon_ETDM_DoomImpBall
+{
+    frame LX62Q { light Lexicon_ETDM_IMPBALL    }
+    frame LX62R { light Lexicon_ETDM_IMPBALL    }
+
+    frame LX62S { light Lexicon_ETDM_IMPBALL_X1 }
+    frame LX62T { light Lexicon_ETDM_IMPBALL_X2 }
+    frame LX62U { light Lexicon_ETDM_IMPBALL_X3 }
+}
+
+object Lexicon_ETDM_Rocket
+{
+    frame MISLA { light ROCKET    }
+
+    frame MISLB { light ROCKET_X1 }
+    frame MISLC { light ROCKET_X2 }
+    frame MISLD { light ROCKET_X3 }
+}
+
+object Lexicon_ETDM_TechLamp2
+{
+    frame LX62 { light SMALLLAMP }
+}
+
+object Lexicon_ETDM_TechLamp
+{
+    frame LX62 { light BIGLAMP }
+}

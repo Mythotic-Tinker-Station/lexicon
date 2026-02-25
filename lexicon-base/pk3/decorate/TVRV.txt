@@ -1,0 +1,145 @@
+ACTOR Lexicon_TVRV_ShortRedColumn : ShortRedColumn
+{
+	States
+	{
+	Spawn:
+		LX30 K -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_TVRV_Candelabra : Candelabra
+{
+	States
+	{
+	Spawn:
+		LX30 L -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR Lexicon_TVRV_EvilEye : EvilEye
+{
+	States
+	{
+	Spawn:
+		LX30 MNON 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_TVRV_BloodyTwitch : BloodyTwitch
+{
+	States
+	{
+	Spawn:
+		LX30 P 10
+		LX30 Q 15
+		LX30 R 8
+		LX30 Q 6
+		Loop
+	}
+}
+
+ACTOR Lexicon_TVRV_NonsolidTwitch : Lexicon_TVRV_BloodyTwitch
+{
+	-SOLID
+	Radius 20
+}
+
+ACTOR Lexicon_TVRV_CommanderKeen : CommanderKeen
+{
+	PainSound "TVRV/DSKEENPN"
+	DeathSound "TVRV/DSKEENDT"
+	States
+	{
+	Spawn:
+		LX32 A -1
+		Loop
+	Death:
+		LX32 AB	6
+		LX32 C 6 A_Scream
+		LX32 DEFGH 6
+		LX32 I 6 A_NoBlocking
+		LX32 J 6
+		LX32 K 6 A_KeenDie
+		LX32 L -1
+		Stop
+	Pain:
+		LX32 U 4
+		LX32 U 8 A_Pain
+		Goto Spawn
+	}
+}
+
+ACTOR Lexicon_TVRV_HangNoGuts : HangNoGuts
+{
+	States
+	{
+	Spawn:
+		LX30 S -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_TVRV_HangTNoBrain : HangTNoBrain
+{
+	States
+	{
+	Spawn:
+		LX30 T -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_TVRV_Megasphere : Megasphere
+{
+	States
+	{
+	Spawn:
+		LX30 UVWX 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_TVRV_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_BrainAwake
+		SSWV A 150 A_BrainSpit("Lexicon_TVRV_SpawnShot")
+		Wait
+	}
+}
+
+ACTOR Lexicon_TVRV_SpawnShot : SpawnShot
+{
+	States
+	{
+	Spawn:
+		LX30 U 3 BRIGHT A_SpawnSound
+		LX30 VWX 3 BRIGHT A_SpawnFly
+		Loop
+	}
+}
+
+ACTOR Lexicon_TVRV_HealthBonus : HealthBonus
+{
+	States
+	{
+	Spawn:
+		LX32 MNOPON 6
+		Loop
+	}
+}
+
+ACTOR Lexicon_TVRV_ArmorBonus : ArmorBonus
+{
+	States
+	{
+	Spawn:
+		LX32 QRSTSR 6
+		Loop
+	}
+}

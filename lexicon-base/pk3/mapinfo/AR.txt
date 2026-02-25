@@ -1,0 +1,404 @@
+// Anomaly Report Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ANRP01 "aerials"
+{
+	titlepatch = "ANRPV00"
+	next = "ANRP02"
+	secretnext = "ANRP02"
+	sky1 = "ANRP0052"
+	music = "D_ANRP01"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP02 "monkey wrench"
+{
+	titlepatch = "ANRPV01"
+	next = "ANRP03"
+	secretnext = "ANRP03"
+	sky1 = "ANRP0052"
+	music = "D_ANRP02"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP03 "grasslands"
+{
+	titlepatch = "ANRPV02"
+	next = "ANRP04"
+	secretnext = "ANRP04"
+	sky1 = "ANRP0052"
+	music = "D_ANRP03"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP04 "watchtowers"
+{
+	titlepatch = "ANRPV03"
+	next = "ANRP05"
+	secretnext = "ANRP05"
+	sky1 = "ANRP0052"
+	music = "D_ANRP04"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP05 "canyon station"
+{
+	titlepatch = "ANRPV04"
+	next = "ANRP06"
+	secretnext = "ANRP06"
+	sky1 = "ANRP0052"
+	music = "D_ANRP05"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP06 "crosswalk"
+{
+	titlepatch = "ANRPV05"
+	next = "ANRP07"
+	secretnext = "ANRP07"
+	sky1 = "ANRP0052"
+	music = "D_ANRP06"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP07 "killing arena"
+{
+	titlepatch = "ANRPV06"
+	next = "ANRP08"
+	secretnext = "ANRP08"
+	sky1 = "ANRP0052"
+	music = "D_ANRP07"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+	Map07Special
+}
+
+map ANRP08 "tanker"
+{
+	titlepatch = "ANRPV07"
+	next = "ANRP09"
+	secretnext = "ANRP09"
+	sky1 = "ANRP0052"
+	music = "D_ANRP08"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP09 "los alamos"
+{
+	titlepatch = "ANRPV08"
+	next = "ANRP10"
+	secretnext = "ANRP10"
+	sky1 = "ANRP0052"
+	music = "D_ANRP09"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP10 "pendleton"
+{
+	titlepatch = "ANRPV09"
+	next = "ANRP11"
+	secretnext = "ANRP11"
+	sky1 = "ANRP0052"
+	music = "D_ANRP10"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP11 "countdown"
+{
+	titlepatch = "ANRPV10"
+	next = "ANRP12"
+	secretnext = "ANRP12"
+	sky1 = "ANRP0052"
+	music = "D_ANRP11"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP12 "water temple"
+{
+	titlepatch = "ANRPV11"
+	next = "ANRP13"
+	secretnext = "ANRP13"
+	sky1 = "ANRP0053"
+	music = "D_ANRP12"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP13 "the crucible"
+{
+	titlepatch = "ANRPV12"
+	next = "ANRP14"
+	secretnext = "ANRP14"
+	sky1 = "ANRP0053"
+	music = "D_ANRP13"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP14 "fortress floodgates"
+{
+	titlepatch = "ANRPV13"
+	next = "ANRP15"
+	secretnext = "ANRP15"
+	sky1 = "ANRP0053"
+	music = "D_ANRP14"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP15 "colosseum"
+{
+	titlepatch = "ANRPV14"
+	next = "ANRP16"
+	secretnext = "ANRP31"
+	sky1 = "ANRP0053"
+	music = "D_ANRP15"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP16 "wrecking base"
+{
+	titlepatch = "ANRPV15"
+	next = "ANRP17"
+	secretnext = "ANRP17"
+	sky1 = "ANRP0053"
+	music = "D_ANRP16"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP17 "rebel keep"
+{
+	titlepatch = "ANRPV16"
+	next = "ANRP18"
+	secretnext = "ANRP18"
+	sky1 = "ANRP0053"
+	music = "D_ANRP17"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP18 "sunset villa"
+{
+	titlepatch = "ANRPV17"
+	next = "ANRP19"
+	secretnext = "ANRP19"
+	sky1 = "ANRP0053"
+	music = "D_ANRP18"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP19 "pavilion"
+{
+	titlepatch = "ANRPV18"
+	next = "ANRP20"
+	secretnext = "ANRP20"
+	sky1 = "ANRP0053"
+	music = "D_ANRP19"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP20 "diamondocalypse"
+{
+	titlepatch = "ANRPV19"
+	next = "ANRP21"
+	secretnext = "ANRP21"
+	sky1 = "ANRP0053"
+	music = "D_ANRP20"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP21 "highway havoc"
+{
+	titlepatch = "ANRPV20"
+	next = "ANRP22"
+	secretnext = "ANRP22"
+	sky1 = "ANRP0054"
+	music = "D_ANRP21"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP22 "technochasm"
+{
+	titlepatch = "ANRPV21"
+	next = "ANRP23"
+	secretnext = "ANRP23"
+	sky1 = "ANRP0054"
+	music = "D_ANRP22"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP23 "deja vu"
+{
+	titlepatch = "ANRPV22"
+	next = "ANRP24"
+	secretnext = "ANRP24"
+	sky1 = "ANRP0054"
+	music = "D_ANRP23"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP24 "sting labs"
+{
+	titlepatch = "ANRPV23"
+	next = "ANRP25"
+	secretnext = "ANRP25"
+	sky1 = "ANRP0054"
+	music = "D_ANRP24"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP25 "nevermore"
+{
+	titlepatch = "ANRPV24"
+	next = "ANRP26"
+	secretnext = "ANRP26"
+	sky1 = "ANRP0054"
+	music = "D_ANRP25"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP26 "valley of shadows"
+{
+	titlepatch = "ANRPV25"
+	next = "ANRP27"
+	secretnext = "ANRP27"
+	sky1 = "ANRP0054"
+	music = "D_ANRP26"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP27 "the trenches"
+{
+	titlepatch = "ANRPV26"
+	next = "ANRP28"
+	secretnext = "ANRP28"
+	sky1 = "ANRP0054"
+	music = "D_ANRP27"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP28 "nightfire"
+{
+	titlepatch = "ANRPV27"
+	next = "ANRP29"
+	secretnext = "ANRP29"
+	sky1 = "ANRP0054"
+	music = "D_ANRP28"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP29 "end times"
+{
+	titlepatch = "ANRPV28"
+	next = "ANRP30"
+	secretnext = "ANRP30"
+	sky1 = "ANRP0054"
+	music = "D_ANRP29"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP30 "anomaly"
+{
+	titlepatch = "ANRPV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ANRP0054"
+	music = "D_ANRP30"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+	allowmonstertelefrags
+}
+
+map ANRP31 "echoes redux"
+{
+	titlepatch = "ANRPV30"
+	next = "ANRP16"
+	secretnext = "ANRP32"
+	sky1 = "ANRP0054"
+	music = "D_ANRP31"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP32 "when in romero"
+{
+	titlepatch = "ANRPV31"
+	next = "ANRP16"
+	secretnext = "ANRP16"
+	sky1 = "ANRP0054"
+	music = "D_ANRP32"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}
+
+map ANRP33 "x+y"
+{
+	titlepatch = "ANRPV32"
+	next = "ANRP01"
+	secretnext = "ANRP01"
+	sky1 = "ANRP0052"
+	intermusic = "D_ANRPIN"
+	ExitPic = "ANRPINT"
+	EnterPic = "ANRPINT"
+}

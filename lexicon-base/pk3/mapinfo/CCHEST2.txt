@@ -1,0 +1,361 @@
+// Community Chest 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CCH201 "The Furnace"
+{
+	titlepatch = "CCH2V00"
+	next = "CCH202"
+	secretnext = "CCH202"
+	sky1 = "SKY1"
+	music = "D_CCH201"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH202 "Coolant Platform"
+{
+	titlepatch = "CCH2V01"
+	next = "CCH203"
+	secretnext = "CCH203"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH203 "Slige Control"
+{
+	titlepatch = "CCH2V02"
+	next = "CCH204"
+	secretnext = "CCH204"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH204 "Deja Vu"
+{
+	titlepatch = "CCH2V03"
+	next = "CCH205"
+	secretnext = "CCH205"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH205 "Elixir"
+{
+	titlepatch = "CCH2V04"
+	next = "CCH206"
+	secretnext = "CCH206"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH206 "The View"
+{
+	titlepatch = "CCH2V05"
+	next = "CCH207"
+	secretnext = "CCH207"
+	sky1 = "SKY1"
+	music = "D_CCH206"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH207 "To Hell and Back"
+{
+	titlepatch = "CCH2V06"
+	next = "CCH208"
+	secretnext = "CCH208"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+	Map07Special
+}
+
+map CCH208 "The Pit"
+{
+	titlepatch = "CCH2V07"
+	next = "CCH209"
+	secretnext = "CCH209"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH209 "The Transformer"
+{
+	titlepatch = "CCH2V08"
+	next = "CCH210"
+	secretnext = "CCH210"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH210 "Intermission"
+{
+	titlepatch = "CCH2V09"
+	next = "CCH211"
+	secretnext = "CCH211"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH211 "Beyond Pain"
+{
+	titlepatch = "CCH2V10"
+	next = "CCH212"
+	secretnext = "CCH212"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH212 "Redemption"
+{
+	titlepatch = "CCH2V11"
+	next = "CCH213"
+	secretnext = "CCH213"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH213 "Annihilation Invention"
+{
+	titlepatch = "CCH2V12"
+	next = "CCH214"
+	secretnext = "CCH214"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH214 "Shadow of Evil"
+{
+	titlepatch = "CCH2V13"
+	next = "CCH215"
+	secretnext = "CCH215"
+	sky1 = "SKY2"
+	music = "D_CCH214"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH215 "City Heat"
+{
+	titlepatch = "CCH2V14"
+	next = "CCH216"
+	secretnext = "CCH231"
+	sky1 = "SKY2"
+	music = "D_CCH215"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH216 "Spirit World - Headquarters"
+{
+	titlepatch = "CCH2V15"
+	next = "CCH217"
+	secretnext = "CCH217"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH217 "Through the Black"
+{
+	titlepatch = "CCH2V16"
+	next = "CCH218"
+	secretnext = "CCH218"
+	sky1 = "SKY2"
+	music = "D_CCH217"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH218 "Internal Reaches"
+{
+	titlepatch = "CCH2V17"
+	next = "CCH219"
+	secretnext = "CCH219"
+	sky1 = "SKY2"
+	music = "D_CCH218"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH219 "The Marbelous Three"
+{
+	titlepatch = "CCH2V18"
+	next = "CCH220"
+	secretnext = "CCH220"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH220 "Enigma"
+{
+	titlepatch = "CCH2V19"
+	next = "CCH221"
+	secretnext = "CCH221"
+	sky1 = "SKY2"
+	music = "D_CCH220"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH221 "Undead Nation"
+{
+	titlepatch = "CCH2V20"
+	next = "CCH222"
+	secretnext = "CCH222"
+	sky1 = "SKY3"
+	music = "D_CCH221"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH222 "Thematic Elements"
+{
+	titlepatch = "CCH2V21"
+	next = "CCH223"
+	secretnext = "CCH223"
+	sky1 = "SKY3"
+	music = "D_CCH222"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH223 "Death Mountain"
+{
+	titlepatch = "CCH2V22"
+	next = "CCH224"
+	secretnext = "CCH224"
+	sky1 = "SKY3"
+	music = "D_CCH223"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH224 "The Mucus Flow"
+{
+	titlepatch = "CCH2V23"
+	next = "CCH225"
+	secretnext = "CCH225"
+	sky1 = "SKY3"
+	music = "D_CCH224"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH225 "Desecration"
+{
+	titlepatch = "CCH2V24"
+	next = "CCH226"
+	secretnext = "CCH226"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH226 "Geist Halls"
+{
+	titlepatch = "CCH2V25"
+	next = "CCH227"
+	secretnext = "CCH227"
+	sky1 = "SKY3"
+	music = "D_CCH226"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH227 "Gethsemane"
+{
+	titlepatch = "CCH2V26"
+	next = "CCH228"
+	secretnext = "CCH228"
+	sky1 = "SKY3"
+	music = "D_CCH227"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH228 "No Room"
+{
+	titlepatch = "CCH2V27"
+	next = "CCH229"
+	secretnext = "CCH229"
+	sky1 = "SKY3"
+	music = "D_CCH228"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH229 "Event Horizon"
+{
+	titlepatch = "CCH2V28"
+	next = "CCH230"
+	secretnext = "CCH230"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH230 "In Threes"
+{
+	titlepatch = "CCH2V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_CCH230"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+	allowmonstertelefrags
+}
+
+map CCH231 "Idee Fixe"
+{
+	titlepatch = "CCH2V30"
+	next = "CCH216"
+	secretnext = "CCH232"
+	sky1 = "SKY3"
+	music = "D_CCH231"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}
+
+map CCH232 "Sodding Death"
+{
+	titlepatch = "CCH2V31"
+	next = "CCH216"
+	secretnext = "CCH216"
+	sky1 = "SKY3"
+	music = "D_CCH232"
+	ExitPic = "CCH2INT"
+	EnterPic = "CCH2INT"
+}

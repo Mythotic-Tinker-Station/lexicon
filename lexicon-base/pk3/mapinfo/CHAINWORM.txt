@@ -1,0 +1,127 @@
+// Chainworm Kommando Mapinfo
+
+map CWKM01 "HILLSIDE BASE"
+{
+	titlepatch = "CWILV00"
+	next = "CWKM02"
+	secretnext = "CWKM02"
+	sky1 = "SKY1"
+	music = "D_CWKM01"
+	ExitPic = "CWKMINT1"
+	EnterPic = "CWKMINT1"
+}
+
+map CWKM02 "UNDERGROUND LABS"
+{
+	titlepatch = "CWILV01"
+	next = "CWKM03"
+	secretnext = "CWKM03"
+	sky1 = "SKY1"
+	music = "D_CWKM02"
+	ExitPic = "CWKMINT2"
+	EnterPic = "CWKMINT2"
+}
+
+map CWKM03 "FREIGHT YARD"
+{
+	titlepatch = "CWILV02"
+	next = "CWKM04"
+	secretnext = "CWKM04"
+	sky1 = "SKY1"
+	music = "D_CWKM03"
+	ExitPic = "CWKMINT3"
+	EnterPic = "CWKMINT3"
+}
+
+map CWKM04 "TOTENWALD"
+{
+	titlepatch = "CWILV03"
+	next = "CWKM05"
+	secretnext = "CWKM05"
+	sky1 = "SKY1"
+	music = "D_CWKM04"
+	ExitPic = "CWKMINT4"
+	EnterPic = "CWKMINT4"
+}
+
+map CWKM05 "WOLFSKUHLEN"
+{
+	titlepatch = "CWILV04"
+	next = "CWKM06"
+	secretnext = "CWKM06"
+	sky1 = "SKY1"
+	music = "D_CWKM05"
+	ExitPic = "CWKMINT5"
+	EnterPic = "CWKMINT5"
+}
+
+map CWKM06 "BUDBERG CRYPTS"
+{
+	titlepatch = "CWILV05"
+	next = "CWKM07"
+	secretnext = "CWKM07"
+	sky1 = "SKY1"
+	music = "D_CWKM06"
+	ExitPic = "CWKMINT6"
+	EnterPic = "CWKMINT6"
+}
+
+map CWKM07 "THE PORTAL"
+{
+	titlepatch = "CWILV06"
+	next = "CWKM08"
+	secretnext = "CWKM08"
+	sky1 = "SKY1"
+	music = "D_CWKM07"
+	ExitPic = "CWKMINT7"
+	EnterPic = "CWKMINT7"
+	Map07Special
+}
+
+map CWKM08 "DH'AGO-BA"
+{
+	titlepatch = "CWILV07"
+	next = "CWKM09"
+	secretnext = "CWKM09"
+	sky1 = "SKY1"
+	music = "D_CWKM08"
+	ExitPic = "CWKMINT8"
+	EnterPic = "CWKMINT8"
+	OutsideFog = "8D773D"
+}
+
+map CWKM09 "WINTERLINGEN"
+{
+	titlepatch = "CWILV08"
+	next = "CWKM10"
+	secretnext = "CWKM10"
+	sky1 = "CWKM0868"
+	music = "D_CWKM09"
+	ExitPic = "CWKMINT9"
+	EnterPic = "CWKMINT9"
+}
+
+map CWKM10 "HELLGRINDER"
+{
+	titlepatch = "CWILV09"
+	next = "CWKM11"
+	secretnext = "CWKM11"
+	sky1 = "CWKM0869"
+	music = "D_CWKM10"
+	ExitPic = "CWKMINT0"
+	EnterPic = "CWKMINT0"
+	OutsideFog = "FF0000"
+	CyberdemonSpecial
+	SpecialAction_OpenDoor
+}
+
+map CWKM11 "CREDITS"
+{
+	titlepatch = "CWILV10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "D_CWKM11"
+	ExitPic = "CWKMINT0"
+	EnterPic = "CWKMINT0"
+}

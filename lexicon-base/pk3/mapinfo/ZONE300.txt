@@ -1,0 +1,403 @@
+// Zone 300 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ZN3001 "The Spaceport"
+{
+	titlepatch = "ZN30V00"
+	next = "ZN3002"
+	secretnext = "ZN3002"
+	sky1 = "SKY1"
+	music = "D_ZN3001"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3002 "Control Facility"
+{
+	titlepatch = "ZN30V01"
+	next = "ZN3003"
+	secretnext = "ZN3003"
+	sky1 = "SKY1"
+	music = "D_ZN3002"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3003 "The Alleyway"
+{
+	titlepatch = "ZN30V02"
+	next = "ZN3004"
+	secretnext = "ZN3004"
+	sky1 = "SKY1"
+	music = "D_ZN3003"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3004 "Canyon Hub"
+{
+	titlepatch = "ZN30V03"
+	next = "ZN3005"
+	secretnext = "ZN3005"
+	sky1 = "SKY1"
+	music = "D_ZN3004"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3005 "Skybase 300"
+{
+	titlepatch = "ZN30V04"
+	next = "ZN3006"
+	secretnext = "ZN3006"
+	sky1 = "SKY1"
+	music = "D_ZN3005"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3006 "Whispering Corridor"
+{
+	titlepatch = "ZN30V05"
+	next = "ZN3007"
+	secretnext = "ZN3007"
+	sky1 = "SKY1"
+	music = "D_ZN3006"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3007 "Heavyweight"
+{
+	titlepatch = "ZN30V06"
+	next = "ZN3008"
+	secretnext = "ZN3008"
+	sky1 = "SKY1"
+	music = "D_ZN3007"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+	Map07Special
+}
+
+map ZN3008 "Waste Disposal Plant"
+{
+	titlepatch = "ZN30V07"
+	next = "ZN3009"
+	secretnext = "ZN3009"
+	sky1 = "SKY1"
+	music = "D_ZN3008"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3009 "Nuclear Power Station"
+{
+	titlepatch = "ZN30V08"
+	next = "ZN3010"
+	secretnext = "ZN3010"
+	sky1 = "SKY1"
+	music = "D_ZN3009"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3010 "Cargo Bay"
+{
+	titlepatch = "ZN30V09"
+	next = "ZN3011"
+	secretnext = "ZN3011"
+	sky1 = "SKY1"
+	music = "D_ZN3010"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3011 "Simbattle"
+{
+	titlepatch = "ZN30V10"
+	next = "ZN3012"
+	secretnext = "ZN3012"
+	sky1 = "SKY1"
+	music = "D_ZN3011"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3012 "Villa of Pain"
+{
+	titlepatch = "ZN30V11"
+	next = "ZN3013"
+	secretnext = "ZN3013"
+	sky1 = "SKY2"
+	music = "D_ZN3012"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3013 "Dark Crypt"
+{
+	titlepatch = "ZN30V12"
+	next = "ZN3014"
+	secretnext = "ZN3014"
+	sky1 = "SKY2"
+	music = "D_ZN3013"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3014 "The Circle"
+{
+	titlepatch = "ZN30V13"
+	next = "ZN3015"
+	secretnext = "ZN3015"
+	sky1 = "SKY2"
+	music = "D_ZN3014"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3015 "Trouble Town"
+{
+	titlepatch = "ZN30V14"
+	next = "ZN3016"
+	secretnext = "ZN3031"
+	sky1 = "SKY2"
+	music = "D_ZN3015"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3016 "Bruiser Fortress"
+{
+	titlepatch = "ZN30V15"
+	next = "ZN3017"
+	secretnext = "ZN3017"
+	sky1 = "SKY2"
+	music = "D_ZN3016"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3017 "Constriction"
+{
+	titlepatch = "ZN30V16"
+	next = "ZN3018"
+	secretnext = "ZN3018"
+	sky1 = "SKY2"
+	music = "D_ZN3017"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3018 "Zombie Hideout"
+{
+	titlepatch = "ZN30V17"
+	next = "ZN3019"
+	secretnext = "ZN3019"
+	sky1 = "SKY2"
+	music = "D_ZN3018"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3019 "The Invasion"
+{
+	titlepatch = "ZN30V18"
+	next = "ZN3020"
+	secretnext = "ZN3020"
+	sky1 = "SKY2"
+	music = "D_ZN3019"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3020 "Death Row"
+{
+	titlepatch = "ZN30V19"
+	next = "ZN3021"
+	secretnext = "ZN3021"
+	sky1 = "SKY2"
+	music = "D_ZN3020"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3021 "Blood Lust"
+{
+	titlepatch = "ZN30V20"
+	next = "ZN3022"
+	secretnext = "ZN3022"
+	sky1 = "SKY3"
+	music = "D_ZN3021"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3022 "Firestorm Tomb"
+{
+	titlepatch = "ZN30V21"
+	next = "ZN3023"
+	secretnext = "ZN3023"
+	sky1 = "SKY3"
+	music = "D_ZN3022"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3023 "Dungeon of Inferno"
+{
+	titlepatch = "ZN30V22"
+	next = "ZN3024"
+	secretnext = "ZN3024"
+	sky1 = "SKY3"
+	music = "D_ZN3023"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3024 "Cavern of The Evil Spirit"
+{
+	titlepatch = "ZN30V23"
+	next = "ZN3025"
+	secretnext = "ZN3025"
+	sky1 = "SKY3"
+	music = "D_ZN3024"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3025 "Hellucination"
+{
+	titlepatch = "ZN30V24"
+	next = "ZN3026"
+	secretnext = "ZN3026"
+	sky1 = "SKY3"
+	music = "D_ZN3025"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3026 "Valley of Brimstone"
+{
+	titlepatch = "ZN30V25"
+	next = "ZN3027"
+	secretnext = "ZN3027"
+	sky1 = "SKY3"
+	music = "D_ZN3026"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3027 "Dissect"
+{
+	titlepatch = "ZN30V26"
+	next = "ZN3028"
+	secretnext = "ZN3028"
+	sky1 = "SKY3"
+	music = "D_ZN3027"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3028 "Unholy Demise"
+{
+	titlepatch = "ZN30V27"
+	next = "ZN3029"
+	secretnext = "ZN3029"
+	sky1 = "SKY3"
+	music = "D_ZN3028"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3029 "Den of Torture"
+{
+	titlepatch = "ZN30V28"
+	next = "ZN3030"
+	secretnext = "ZN3030"
+	sky1 = "SKY3"
+	music = "D_ZN3029"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3030 "Eternal Core"
+{
+	titlepatch = "ZN30V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_ZN3030"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+	allowmonstertelefrags
+}
+
+map ZN3031 "Creepy"
+{
+	titlepatch = "ZN30V30"
+	next = "ZN3016"
+	secretnext = "ZN3032"
+	sky1 = "SKY3"
+	music = "D_ZN3031"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3032 "Condemnation"
+{
+	titlepatch = "ZN30V31"
+	next = "ZN3016"
+	secretnext = "ZN3016"
+	sky1 = "SKY3"
+	music = "D_ZN3032"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}
+
+map ZN3033 "Zone 300 Map 33"
+{
+	next = "ZN3001"
+	secretnext = "ZN3001"
+	sky1 = "SKY3"
+	intermusic = "D_ZN30IN"
+	ExitPic = "ZN30INT"
+	EnterPic = "ZN30INT"
+}

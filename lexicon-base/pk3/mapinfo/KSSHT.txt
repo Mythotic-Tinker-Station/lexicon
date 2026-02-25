@@ -1,0 +1,361 @@
+// Khorus' Speedy Shit Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map KSHT01 "Khorus' Speedy Shit Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "KSHT02"
+	secretnext = "KSHT02"
+	sky1 = "SKY1"
+	music = "D_KSHT01"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT02 "Khorus' Speedy Shit Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "KSHT03"
+	secretnext = "KSHT03"
+	sky1 = "SKY1"
+	music = "D_KSHT02"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT03 "Khorus' Speedy Shit Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "KSHT04"
+	secretnext = "KSHT04"
+	sky1 = "SKY1"
+	music = "D_KSHT03"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT04 "Khorus' Speedy Shit Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "KSHT05"
+	secretnext = "KSHT05"
+	sky1 = "SKY1"
+	music = "D_KSHT04"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT05 "Khorus' Speedy Shit Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "KSHT06"
+	secretnext = "KSHT06"
+	sky1 = "SKY1"
+	music = "D_KSHT05"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT06 "Khorus' Speedy Shit Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "KSHT07"
+	secretnext = "KSHT07"
+	sky1 = "SKY1"
+	music = "D_KSHT06"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT07 "Khorus' Speedy Shit Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "KSHT08"
+	secretnext = "KSHT08"
+	sky1 = "SKY1"
+	music = "D_KSHT07"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+	Map07Special
+}
+
+map KSHT08 "Khorus' Speedy Shit Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "KSHT09"
+	secretnext = "KSHT09"
+	sky1 = "SKY1"
+	music = "D_KSHT08"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT09 "Khorus' Speedy Shit Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "KSHT10"
+	secretnext = "KSHT10"
+	sky1 = "SKY1"
+	music = "D_KSHT09"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT10 "Khorus' Speedy Shit Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "KSHT11"
+	secretnext = "KSHT11"
+	sky1 = "SKY1"
+	music = "D_KSHT10"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT11 "Khorus' Speedy Shit Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "KSHT12"
+	secretnext = "KSHT12"
+	sky1 = "SKY1"
+	music = "D_KSHT11"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT12 "Khorus' Speedy Shit Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "KSHT13"
+	secretnext = "KSHT13"
+	sky1 = "SKY2"
+	music = "D_KSHT12"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT13 "Khorus' Speedy Shit Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "KSHT14"
+	secretnext = "KSHT14"
+	sky1 = "SKY2"
+	music = "D_KSHT13"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT14 "Khorus' Speedy Shit Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "KSHT15"
+	secretnext = "KSHT15"
+	sky1 = "SKY2"
+	music = "D_KSHT14"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT15 "Khorus' Speedy Shit Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "KSHT16"
+	secretnext = "KSHT31"
+	sky1 = "SKY2"
+	music = "D_KSHT15"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT16 "Khorus' Speedy Shit Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "KSHT17"
+	secretnext = "KSHT17"
+	sky1 = "SKY2"
+	music = "D_KSHT16"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT17 "Khorus' Speedy Shit Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "KSHT18"
+	secretnext = "KSHT18"
+	sky1 = "SKY2"
+	music = "D_KSHT17"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT18 "Khorus' Speedy Shit Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "KSHT19"
+	secretnext = "KSHT19"
+	sky1 = "SKY2"
+	music = "D_KSHT18"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT19 "Khorus' Speedy Shit Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "KSHT20"
+	secretnext = "KSHT20"
+	sky1 = "SKY2"
+	music = "D_KSHT19"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT20 "Khorus' Speedy Shit Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "KSHT21"
+	secretnext = "KSHT21"
+	sky1 = "SKY2"
+	music = "D_KSHT20"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT21 "Khorus' Speedy Shit Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "KSHT22"
+	secretnext = "KSHT22"
+	sky1 = "SKY3"
+	music = "D_KSHT21"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT22 "Khorus' Speedy Shit Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "KSHT23"
+	secretnext = "KSHT23"
+	sky1 = "SKY3"
+	music = "D_KSHT22"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT23 "Khorus' Speedy Shit Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "KSHT24"
+	secretnext = "KSHT24"
+	sky1 = "SKY3"
+	music = "D_KSHT23"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT24 "Khorus' Speedy Shit Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "KSHT25"
+	secretnext = "KSHT25"
+	sky1 = "SKY3"
+	music = "D_KSHT24"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT25 "Khorus' Speedy Shit Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "KSHT26"
+	secretnext = "KSHT26"
+	sky1 = "SKY3"
+	music = "D_KSHT25"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT26 "Khorus' Speedy Shit Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "KSHT27"
+	secretnext = "KSHT27"
+	sky1 = "SKY3"
+	music = "D_KSHT26"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT27 "Khorus' Speedy Shit Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "KSHT28"
+	secretnext = "KSHT28"
+	sky1 = "SKY3"
+	music = "D_KSHT27"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT28 "Khorus' Speedy Shit Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "KSHT29"
+	secretnext = "KSHT29"
+	sky1 = "SKY3"
+	music = "D_KSHT28"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT29 "Khorus' Speedy Shit Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "KSHT30"
+	secretnext = "KSHT30"
+	sky1 = "SKY3"
+	music = "D_KSHT29"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT30 "Khorus' Speedy Shit Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_KSHT30"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+	allowmonstertelefrags
+}
+
+map KSHT31 "Khorus' Speedy Shit Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "KSHT16"
+	secretnext = "KSHT32"
+	sky1 = "SKY3"
+	music = "D_KSHT31"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}
+
+map KSHT32 "Khorus' Speedy Shit Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "KSHT16"
+	secretnext = "KSHT16"
+	sky1 = "SKY3"
+	music = "D_KSHT32"
+	ExitPic = "KSHTINT"
+	EnterPic = "KSHTINT"
+}

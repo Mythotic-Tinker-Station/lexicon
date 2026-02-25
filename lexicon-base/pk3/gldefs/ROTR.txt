@@ -1,0 +1,54 @@
+object Lexicon_ROTR_LostSoul
+{
+    frame LX12A { light LOSTSOUL    }
+    frame LX12B { light LOSTSOUL    }
+    frame LX12C { light LOSTSOUL    }
+    frame LX12D { light LOSTSOUL    }
+    frame LX12E { light LOSTSOUL    }
+    frame LX12F { light LOSTSOUL    }
+    frame LX12G { light LOSTSOUL    }
+
+    frame LX12H { light LOSTSOUL_X1 }
+    frame LX12I { light LOSTSOUL_X2 }
+    frame LX12J { light LOSTSOUL_X3 }
+    frame LX12K { light LOSTSOUL_X4 }
+}
+
+object Lexicon_ROTR_Infrared
+{
+    frame LX12 { light LOSTSOUL }
+}
+
+object Lexicon_ROTR_HealthBonus
+{
+    frame BON1 { light HEALTHPOTION }
+}
+
+object Lexicon_ROTR_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame PLSEA { light PLASMA_X1 }
+    frame PLSEB { light PLASMA_X2 }
+    frame PLSEC { light PLASMA_X2 }
+    frame PLSED { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+object Lexicon_ROTR_ArachnotronPlasma
+{
+    frame APLSA { light ARACHPLAS }
+    frame APLSB { light ARACHPLAS }
+
+    frame APBXA { light ARACHPLAS_X1 }
+    frame APBXB { light ARACHPLAS_X2 }
+    frame APBXC { light ARACHPLAS_X2 }
+    frame APBXD { light ARACHPLAS_X3 }
+    frame APBXE { light ARACHPLAS_X4 }
+}
+
+object Lexicon_ROTR_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}

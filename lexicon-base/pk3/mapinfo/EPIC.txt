@@ -1,0 +1,68 @@
+// Epic Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map EPC101 "A fool's paradise"
+{
+	titlepatch = "EPC1V00"
+	next = "EPC102"
+	secretnext = "EPC102"
+	sky1 = "EPC10559"
+	music = "D_EPC101"
+	intermusic = "D_EPC1IN"
+	ExitPic = "EPC1INT"
+	EnterPic = "EPC1INT"
+}
+
+map EPC102 "Sand-storm"
+{
+	titlepatch = "EPC1V01"
+	next = "EPC103"
+	secretnext = "EPC103"
+	sky1 = "EPC10559"
+	music = "D_EPC102"
+	intermusic = "D_EPC1IN"
+	ExitPic = "EPC1INT"
+	EnterPic = "EPC1INT"
+}
+
+map EPC103 "Arc of the pendulum"
+{
+	titlepatch = "EPC1V02"
+	next = "EPC104"
+	secretnext = "EPC104"
+	sky1 = "EPC10559"
+	music = "D_EPC103"
+	intermusic = "D_EPC1IN"
+	ExitPic = "EPC1INT"
+	EnterPic = "EPC1INT"
+}
+
+map EPC104 "The Helltrain"
+{
+	titlepatch = "EPC1V03"
+	next = "EPC105"
+	secretnext = "EPC105"
+	sky1 = "EPC10559"
+	music = "D_EPC104"
+	intermusic = "D_EPC1IN"
+	ExitPic = "EPC1INT"
+	EnterPic = "EPC1INT"
+	allowjump
+}
+
+map EPC105 "The Citadel"
+{
+	titlepatch = "EPC1V04"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "EPC10559"
+	music = "D_EPC105"
+	intermusic = "D_EPC1IN"
+	ExitPic = "EPC1INT"
+	EnterPic = "EPC1INT"
+}

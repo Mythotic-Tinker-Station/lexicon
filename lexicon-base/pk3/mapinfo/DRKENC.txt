@@ -1,0 +1,391 @@
+defaultmap
+{
+	sky1 = "DKEC0229" , 0
+	nojump
+	nocrouch
+}
+ 
+ map DKEC01 "level 1: the unafraid"
+{
+	titlepatch = "DKECV00"
+	next = "DKEC02"
+	secretnext = "DKEC02"
+	sky1 = "DKEC0215"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC01"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC02 "level 2: poison the wells"
+{
+	titlepatch = "DKECV01"
+	next = "DKEC03"
+	secretnext = "DKEC03"
+	sky1 = "DKEC0215"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC02"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC03 "level 3: metal meets flesh"
+{
+	titlepatch = "DKECV02"
+	next = "DKEC04"
+	secretnext = "DKEC04"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC03"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC04 "level 4: cast off skin"
+{
+	titlepatch = "DKECV03"
+	next = "DKEC05"
+	secretnext = "DKEC05"
+	sky1 = "DKEC0213"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC04"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC05 "level 5: the uninvited"
+{
+	titlepatch = "DKECV04"
+	next = "DKEC06"
+	secretnext = "DKEC06"
+	sky1 = "DKEC0213"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC05"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC06 "level 6: procession of flames"
+{
+	titlepatch = "DKECV05"
+	next = "DKEC07"
+	secretnext = "DKEC07"
+	sky1 = "DKEC0213"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC06"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC07 "level 7: black powder corpse"
+{
+	titlepatch = "DKECV06"
+	next = "DKEC08"
+	secretnext = "DKEC08"
+	sky1 = "DKEC0228"
+	intermusic = "D_DKECIN"
+	map07special
+	music = "D_DKEC07"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC08 "level 8: to kill the blind"
+{
+	titlepatch = "DKECV07"
+	next = "DKEC09"
+	secretnext = "DKEC09"
+	sky1 = "DKEC0211"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC08"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC09 "level 9: shejeema's claw"
+{
+	titlepatch = "DKECV08"
+	next = "DKEC10"
+	secretnext = "DKEC10"
+	sky1 = "DKEC0211"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC09"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC10 "level 10: the unloved"
+{
+	titlepatch = "DKECV09"
+	next = "DKEC11"
+	secretnext = "DKEC11"
+	sky1 = "DKEC0211"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC10"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC11 "level 11: dead bolt"
+{
+	titlepatch = "DKECV10"
+	next = "DKEC12"
+	secretnext = "DKEC12"
+	sky1 = "DKEC0209"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC11"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC12 "level 12: gema's deception"
+{
+	titlepatch = "DKECV11"
+	next = "DKEC13"
+	secretnext = "DKEC13"
+	sky1 = "DKEC0214"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC12"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC13 "level 13: in the arms of mama pus"
+{
+	titlepatch = "DKECV12"
+	next = "DKEC14"
+	secretnext = "DKEC14"
+	sky1 = "DKEC0214"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC13"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC14 "level 14: the path unseen"
+{
+	titlepatch = "DKECV13"
+	next = "DKEC15"
+	secretnext = "DKEC15"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC14"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC15 "level 15: seed of doubt"
+{
+	titlepatch = "DKECV14"
+	next = "DKEC16"
+	secretnext = "DKEC31"
+	sky1 = "DKEC0230"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC15"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC16 "level 16: failed evolution"
+{
+	titlepatch = "DKECV15"
+	next = "DKEC17"
+	secretnext = "DKEC17"
+	sky1 = "DKEC0222"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC16"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC17 "level 17: blank stare"
+{
+	titlepatch = "DKECV16"
+	next = "DKEC18"
+	secretnext = "DKEC18"
+	sky1 = "DKEC0222"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC17"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC18 "level 18: grand grotesque"
+{
+	titlepatch = "DKECV17"
+	next = "DKEC19"
+	secretnext = "DKEC19"
+	sky1 = "DKEC0218"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC18"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC19 "level 19: almost human"
+{
+	titlepatch = "DKECV18"
+	next = "DKEC20"
+	secretnext = "DKEC20"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC19"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC20 "level 20: the hum of death"
+{
+	titlepatch = "DKECV19"
+	next = "DKEC21"
+	secretnext = "DKEC21"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC20"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC21 "level 21: creatures of the worst kind"
+{
+	titlepatch = "DKECV20"
+	next = "DKEC22"
+	secretnext = "DKEC22"
+	sky1 = "DKEC0026"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC21"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC22 "level 22: darkest eve"
+{
+	titlepatch = "DKECV21"
+	next = "DKEC23"
+	secretnext = "DKEC23"
+	sky1 = "DKEC0026"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC22"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC23 "level 23: satan's promise"
+{
+	titlepatch = "DKECV22"
+	next = "DKEC24"
+	secretnext = "DKEC24"
+	sky1 = "DKEC0026"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC23"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC24 "level 24: particles of pan"
+{
+	titlepatch = "DKECV23"
+	next = "DKEC25"
+	secretnext = "DKEC25"
+	sky1 = "DKEC0019"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC24"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC25 "level 25: dead theory"
+{
+	titlepatch = "DKECV24"
+	next = "DKEC26"
+	secretnext = "DKEC26"
+	sky1 = "DKEC0020"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC25"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC26 "level 26: a madman's mathematics"
+{
+	titlepatch = "DKECV25"
+	next = "DKEC27"
+	secretnext = "DKEC27"
+	sky1 = "DKEC0020"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC26"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC27 "level 27: still dead"
+{
+	titlepatch = "DKECV26"
+	next = "DKEC28"
+	secretnext = "DKEC28"
+	sky1 = "DKEC0020"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC27"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC28 "level 28: grand universe"
+{
+	titlepatch = "DKECV27"
+	next = "DKEC29"
+	secretnext = "DKEC29"
+	sky1 = "DKEC0216"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC28"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC29 "level 29: infected dimensions"
+{
+	titlepatch = "DKECV28"
+	next = "DKEC30"
+	secretnext = "DKEC30"
+	sky1 = "DKEC0218"
+	intermusic = "D_DKECIN"
+	music = "D_DKEC29"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC30 "level 30: victory conditions"
+{
+	titlepatch = "DKECV29"
+    next = "VR"
+    secretnext = "VR"
+	sky1 = "DKEC0216"
+	intermusic = "D_DKECIN"
+	music = "D_OPENIN"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC31 "level 31: hidden citadel"
+{
+	titlepatch = "DKECV30"
+	next = "DKEC16"
+	secretnext = "DKEC32"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_EVIL"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}
+
+map DKEC32 "level 32: the black tower"
+{
+	titlepatch = "DKECV31"
+	next = "DKEC16"
+	secretnext = "DKEC16"
+	sky1 = "DKEC0231"
+	intermusic = "D_DKECIN"
+	music = "D_ULTIMA"
+    ExitPic = "DKECINT"
+	EnterPic = "DKECINT"
+}

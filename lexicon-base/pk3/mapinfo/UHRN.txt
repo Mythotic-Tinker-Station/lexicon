@@ -1,0 +1,393 @@
+// Unholy Realms Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UHRN01 "water treatment"
+{
+	titlepatch = "UHRNV00"
+	next = "UHRN02"
+	secretnext = "UHRN02"
+	sky1 = "UHRN0407"
+	music = "D_UHRN01"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN02 "storage"
+{
+	titlepatch = "UHRNV01"
+	next = "UHRN03"
+	secretnext = "UHRN03"
+	sky1 = "UHRN0407"
+	music = "D_UHRN02"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN03 "nukage processing zone"
+{
+	titlepatch = "UHRNV02"
+	next = "UHRN04"
+	secretnext = "UHRN04"
+	sky1 = "UHRN0407"
+	music = "D_UHRN03"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN04 "uac courtyard"
+{
+	titlepatch = "UHRNV03"
+	next = "UHRN05"
+	secretnext = "UHRN05"
+	sky1 = "UHRN0407"
+	music = "D_UHRN04"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN05 "slime depository"
+{
+	titlepatch = "UHRNV04"
+	next = "UHRN06"
+	secretnext = "UHRN06"
+	sky1 = "UHRN0407"
+	music = "D_UHRN05"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN06 "sewage entrypoint"
+{
+	titlepatch = "UHRNV05"
+	next = "UHRN07"
+	secretnext = "UHRN07"
+	sky1 = "UHRN0407"
+	music = "D_UHRN06"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN07 "passage underground"
+{
+	titlepatch = "UHRNV06"
+	next = "UHRN08"
+	secretnext = "UHRN08"
+	sky1 = "UHRN0407"
+	music = "D_UHRN07"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+	Map07Special
+}
+
+map UHRN08 "research point beta"
+{
+	titlepatch = "UHRNV07"
+	next = "UHRN09"
+	secretnext = "UHRN09"
+	sky1 = "UHRN0407"
+	music = "D_UHRN08"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN09 "metallic bloodline"
+{
+	titlepatch = "UHRNV08"
+	next = "UHRN10"
+	secretnext = "UHRN10"
+	sky1 = "UHRN0407"
+	music = "D_UHRN09"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN10 "premortem"
+{
+	titlepatch = "UHRNV09"
+	next = "UHRN11"
+	secretnext = "UHRN11"
+	sky1 = "UHRN0407"
+	music = "D_UHRN10"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN11 "death"
+{
+	titlepatch = "UHRNV10"
+	next = "UHRN12"
+	secretnext = "UHRN12"
+	sky1 = "UHRN0407"
+	music = "D_UHRN11"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN12 "the other side"
+{
+	titlepatch = "UHRNV11"
+	next = "UHRN13"
+	secretnext = "UHRN13"
+	sky1 = "UHRN0408"
+	music = "D_UHRN12"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN13 "temple of leviathan"
+{
+	titlepatch = "UHRNV12"
+	next = "UHRN14"
+	secretnext = "UHRN14"
+	sky1 = "UHRN0408"
+	music = "D_UHRN13"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN14 "drifting complex"
+{
+	titlepatch = "UHRNV13"
+	next = "UHRN15"
+	secretnext = "UHRN15"
+	sky1 = "UHRN0408"
+	music = "D_UHRN14"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN15 "ravine of the hated"
+{
+	titlepatch = "UHRNV14"
+	next = "UHRN16"
+	secretnext = "UHRN31"
+	sky1 = "UHRN0408"
+	music = "D_UHRN15"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN16 "dockside"
+{
+	titlepatch = "UHRNV15"
+	next = "UHRN17"
+	secretnext = "UHRN17"
+	sky1 = "UHRN0408"
+	music = "D_UHRN16"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN17 "mising gamma sector"
+{
+	titlepatch = "UHRNV16"
+	next = "UHRN18"
+	secretnext = "UHRN18"
+	sky1 = "UHRN0408"
+	music = "D_UHRN17"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN18 "the sanguine base"
+{
+	titlepatch = "UHRNV17"
+	next = "UHRN19"
+	secretnext = "UHRN19"
+	sky1 = "UHRN0408"
+	music = "D_UHRN18"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN19 "borough of blood"
+{
+	titlepatch = "UHRNV18"
+	next = "UHRN20"
+	secretnext = "UHRN20"
+	sky1 = "UHRN0408"
+	music = "D_UHRN19"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN20 "rite of passage"
+{
+	titlepatch = "UHRNV19"
+	next = "UHRN21"
+	secretnext = "UHRN21"
+	sky1 = "UHRN0408"
+	music = "D_UHRN20"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN21 "limbo"
+{
+	titlepatch = "UHRNV20"
+	next = "UHRN22"
+	secretnext = "UHRN22"
+	sky1 = "UHRN0409"
+	music = "D_UHRN21"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN22 "Lust"
+{
+	titlepatch = "UHRNV21"
+	next = "UHRN23"
+	secretnext = "UHRN23"
+	sky1 = "UHRN0409"
+	music = "D_UHRN22"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN23 "Gluttony"
+{
+	titlepatch = "UHRNV22"
+	next = "UHRN24"
+	secretnext = "UHRN24"
+	sky1 = "UHRN0409"
+	music = "D_UHRN23"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN24 "Greed"
+{
+	titlepatch = "UHRNV23"
+	next = "UHRN25"
+	secretnext = "UHRN25"
+	sky1 = "UHRN0409"
+	music = "D_UHRN24"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN25 "Anger"
+{
+	titlepatch = "UHRNV24"
+	next = "UHRN26"
+	secretnext = "UHRN26"
+	sky1 = "UHRN0409"
+	music = "D_UHRN25"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN26 "Heresy"
+{
+	titlepatch = "UHRNV25"
+	next = "UHRN27"
+	secretnext = "UHRN27"
+	sky1 = "UHRN0409"
+	music = "D_UHRN26"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN27 "Violence"
+{
+	titlepatch = "UHRNV26"
+	next = "UHRN28"
+	secretnext = "UHRN28"
+	sky1 = "UHRN0409"
+	music = "D_UHRN27"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN28 "Fraud"
+{
+	titlepatch = "UHRNV27"
+	next = "UHRN29"
+	secretnext = "UHRN29"
+	sky1 = "UHRN0409"
+	music = "D_UHRN28"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN29 "Treachery"
+{
+	titlepatch = "UHRNV28"
+	next = "UHRN30"
+	secretnext = "UHRN30"
+	sky1 = "UHRN0409"
+	music = "D_UHRN29"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN30 "dis"
+{
+	titlepatch = "UHRNV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "UHRN0409"
+	music = "D_UHRN30"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+	allowmonstertelefrags
+}
+
+map UHRN31 "Destructive Infinity"
+{
+	titlepatch = "UHRNV30"
+	next = "UHRN16"
+	secretnext = "UHRN32"
+	sky1 = "UHRN0409"
+	music = "D_UHRN31"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}
+
+map UHRN32 "a charming khorus"
+{
+	titlepatch = "UHRNV31"
+	next = "UHRN16"
+	secretnext = "UHRN16"
+	sky1 = "UHRN0409"
+	music = "D_UHRN32"
+	intermusic = "D_UHRNIN"
+	ExitPic = "UHRNINT"
+	EnterPic = "UHRNINT"
+}

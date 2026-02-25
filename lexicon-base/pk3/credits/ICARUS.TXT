@@ -1,0 +1,208 @@
+ICARUS: ALIEN VANGUARD text file 22 March 1996
+
+Contents:
+1. Announcement
+2. Installation
+3. Troubleshooting
+4. System requirements
+5. Where to find files
+6. How to get help
+7. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                   +------------------------+
+                   | Icarus: Alien Vanguard |
+                   +------------------------+
+
+Icarus is a whole new set of 32 DOOM II levels from TeamTNT.  It
+is now available on ftp.cdrom.com and its mirrors.  See below
+for the exact path.
+
+Icarus has 32 levels that are excellent for single and
+cooperative play, but we didn't forget the Deathmatchers of the
+world, either!
+
+We've taken extra steps to make sure that every level is an
+exceptional Deathmatch level so that after you're done playing
+it alone, you can go through Icarus again and waste your
+buddies.  Some maps have special features, and others reduce the
+level size for Deathmatch.  In all cases, though, you'll know we
+had Deathmatch in mind when we made Icarus.  And no more days of
+filtering through all the junky DM levels on the 'net.
+
+You'll wonder what happened to the weekend when you play Icarus.
+
+Features:
+
+ - 32 never before seen levels
+ - All new music (not CD and movie rips--the word is _new_)
+ - Over 200 completely new textures
+ - Cohesive theme and storyline
+ - Deathmatch designed in
+ - All difficulty levels
+ - All in one WAD -- no complicated startup
+ - Designed for DOOM version 1.9
+ - Demos available for versions 1.666 and 1.7
+ - It's by 25 TeamTNT members, so you know it's good
+ - Startup batch file included
+
+
+---------------
+2. INSTALLATION
+---------------
+
+Icarus comes in one WAD file, zipped into one ZIP file.  You'll
+need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+ICARUS.ZIP.  This will produce ICARUS.WAD and ICARUS.BAT (and
+another copy of this file).
+
+Just unzip it into your DOOM2 directory and run ICARUS.BAT.
+Press Enter at the prompt in DOOM, and crank the music up.
+
+Floppy download:
+
+If you had to download the floppy-sized parts of the ICARUS.ZIP
+file, you'll end up with ICARZIP.1, ICARZIP.2 and ICARZIP.BAT.
+Just copy all that to your DOOM2 directory, run ICARZIP.BAT, and
+then you'll have ICARUS.ZIP and can follow the instructions above.
+Note that once you're sure ICARUS.ZIP has been correctly created,
+you can delete the three ICARZIP files.
+
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+Not much can go wrong, since this is just one WAD file.  However,
+since not much can go wrong, something might, and maybe a few
+steps here will help.
+
+a.  First, verify that ICARUS.BAT and ICARUS.WAD are in your
+    DOOM2 directory, and that you are in that directory when you
+    type ICARUS.
+
+b.  Spell ICARUS right.
+
+c.  If it starts up and crashes with a message similar to
+
+      "Demo is from a different version"
+
+    then you're not running DOOM2 version 1.9.  Preferably,
+    upgrade your DOOM2, but if you can't or won't, we're also
+    providing a replacement for the demos for versions 1.666 and
+    1.7.  Look where you got ICARUS for the appropriate ZIP file
+    named ICDEMOnn.ZIP where nn is 16 or 17 for version 1.666
+    or 1.7, whichever you have.  If your DOOM version is earlier
+    than 1.666, you'll need to upgrade or ICARUS likely will not
+    work anyway.  Your DOOM2 version number will appear at the
+    top of the screen while DOOM2 is initializing.
+
+    You'll also get ICARUSnn.BAT with the demo file (nn=same
+    number as in ICDEMOnn.ZIP) and that'll run DOOM2 with all
+    the main ICARUS.WAD and the demos loaded.
+
+d.  If you notice that the full-screen intermission texts (like
+    between MAP06 and MAP07) don't make sense any more, or that
+    the automap names don't match the level names, that's because
+    we chose to honor id Software's wish that we not alter their
+    DOOM2.EXE file, and that's where that stuff is stored.
+
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   A computer that will play DOOM2 well.  Some of the levels are
+   pretty large, and we've found that the bigger the better (but
+   you knew that).  We did do (painful) testing on a 486/33 with
+   4MB of RAM, so we know that it will run, but it's going to be
+   excruciatingly slow in spots (kind of like DOOM2 is).
+
+   You'll like it better if you have a good sound card, and you
+   will probably find that there's no way to get all the secrets
+   without some sort of sound card.
+
+   The WAD file is a bit under 10MB, and you'll need about 15MB
+   free available during unzipping.
+
+   Any other requirements (modem, network stuff) are no different
+   than if you were running DOOM2 without ICARUS.
+
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Icarus:  Alien Vanguard was uploaded to ftp.cdrom.com at
+   12:01 AM on Friday, March 22, 1996.  It will be moved to its
+   own directory:  and will be propagated to the cdrom.com
+   mirrors after that.  We expect to also upload it over the few
+   days following that date, to Compuserve, AOL, Fidonet and
+   possibly some others.  As of this writing, only ftp.cdrom.com
+   has it, and that's the place you can be guaranteed to find
+   the most recent version.
+
+   So, FTP to ftp.cdrom.com and look in directory (mixed case)
+       /pub/doom2/themes/TeamTNT
+
+   There will be one single .ZIP file for those who can download
+   that.  There will be a 2-part .ZIP file and a batch file to
+   assemble the parts for people who need to fit it on floppies.
+
+   Check the file ICFILES.TXT in the TeamTNT directory for
+   details about each of the files.
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about DOOM2 itself, contact id Software.
+
+   If it's about ICARUS, don't contact id Software.
+
+   Icarus questions can be handled by other players on the
+   usenet newsgroups, various forums on Compuserve and other
+   services, and by TeamTNT by email.  Either write to us at
+
+      teamtnt@neosoft.com
+
+   or go to our web page at
+
+      <http://www.neosoft.com/~teamtnt>
+
+   We'll be putting a FAQ out too, and that'll answer some of
+   the more common questions, and we'll also be setting up a
+   set of hints on our web page that will allow you to "drill"
+   to only the information you want, and not accidentally see
+   more than you intended to.  The hint pages should be up in a
+   week or so after the initial release.
+
+------------------
+7. SOME LEGALITIES
+------------------
+
+   Icarus: Alien Vanguard is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Icarus.
+   Icarus should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's DM collection or CD.  If it does, let us know right
+   away.
+
+   We thank you for trying Icarus.  Let us know what you think
+   about it.  When the Final DOOM product gets released by id
+   Software, grab a copy and tell us what you think of our other
+   32-level work called Evilution.  Meanwhile, we're done with
+   Icarus, and are off to work on another project.  Let's
+   see....Hexen...Quake...
+
+   Icarus: Alien Vanguard and associated files are
+   (C) Copyright 1996 TeamTNT
+
+///End of file
+

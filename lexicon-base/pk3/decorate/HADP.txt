@@ -1,0 +1,32 @@
+Actor Lexicon_HADP_CommanderKeen : CommanderKeen
+{
+	Height 56
+	-SPAWNCEILING
+	-NOGRAVITY
+	PainSound "grunt/pain"
+	DeathSound "grunt/death"
+	States
+	{
+	Spawn:
+		LX25 I -1
+		Stop
+	Death:
+		LX25 AB	6
+		LX25 C 6 A_Scream
+		LX25 DEFGH 6
+		LX25 I 6 A_NoBlocking
+		LX25 J 6
+		LX25 K 6 A_KeenDie
+		LX25 L -1
+		Stop
+	Pain:
+		LX25 M 4
+		LX25 M 8 A_Pain
+		Goto Spawn
+	}
+}
+
+Actor Lexicon_HADP_NonsolidMeat3 : NonsolidMeat3
+{
+	Height 84
+}

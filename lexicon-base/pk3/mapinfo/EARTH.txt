@@ -1,0 +1,127 @@
+// Earth Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map ERTH01 "The Ruins"
+{
+	titlepatch = "ERTHV00"
+	next = "ERTH02"
+	secretnext = "ERTH02"
+	sky1 = "ERTH0424"
+	music = "D_ERTH01"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH02 "The Tomb"
+{
+	titlepatch = "ERTHV01"
+	next = "ERTH03"
+	secretnext = "ERTH03"
+	sky1 = "ERTH0424"
+	music = "D_ERTH02"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH03 "Mines of Moria"
+{
+	titlepatch = "ERTHV02"
+	next = "ERTH04"
+	secretnext = "ERTH04"
+	sky1 = "ERTH0424"
+	music = "D_ERTH03"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH04 "The Chasm"
+{
+	titlepatch = "ERTHV03"
+	next = "ERTH05"
+	secretnext = "ERTH05"
+	sky1 = "ERTH0424"
+	music = "D_ERTH04"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH05 "Strategic Defense Command"
+{
+	titlepatch = "ERTHV04"
+	next = "ERTH06"
+	secretnext = "ERTH06"
+	sky1 = "ERTH0424"
+	music = "D_ERTH05"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH06 "Observation Station"
+{
+	titlepatch = "ERTHV05"
+	next = "ERTH07"
+	secretnext = "ERTH07"
+	sky1 = "ERTH0424"
+	music = "D_ERTH06"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH07 "The Emerald Tower"
+{
+	titlepatch = "ERTHV06"
+	next = "ERTH08"
+	secretnext = "ERTH08"
+	sky1 = "ERTH0424"
+	music = "D_ERTH07"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+	Map07Special
+}
+
+map ERTH08 "The Ammo Pit"
+{
+	titlepatch = "ERTHV07"
+	next = "ERTH09"
+	secretnext = "ERTH09"
+	sky1 = "ERTH0424"
+	music = "D_ERTH08"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH09 "Islands"
+{
+	titlepatch = "ERTHV08"
+	next = "ERTH10"
+	secretnext = "ERTH10"
+	sky1 = "ERTH0424"
+	music = "D_ERTH09"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}
+
+map ERTH10 "The Hill"
+{
+	titlepatch = "ERTHV09"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ERTH0424"
+	music = "D_ERTH10"
+	intermusic = "D_ERTHIN"
+	ExitPic = "ERTHINT"
+	EnterPic = "ERTHINT"
+}

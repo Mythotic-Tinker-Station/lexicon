@@ -1,0 +1,393 @@
+// 1994 Tune-up Community Project Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 94TU01 "BITTER-SWEET"
+{
+	titlepatch = "94TUV00"
+	next = "94TU02"
+	secretnext = "94TU02"
+	sky1 = "94TU0002"
+	music = "D_94TU01"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU02 "TAREDONE"
+{
+	titlepatch = "94TUV01"
+	next = "94TU03"
+	secretnext = "94TU03"
+	sky1 = "94TU0002"
+	music = "D_94TU02"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU03 "HYPER-VYPER"
+{
+	titlepatch = "94TUV02"
+	next = "94TU04"
+	secretnext = "94TU04"
+	sky1 = "94TU0002"
+	music = "D_94TU03"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU04 "HADES PART 1"
+{
+	titlepatch = "94TUV03"
+	next = "94TU05"
+	secretnext = "94TU05"
+	sky1 = "94TU0002"
+	music = "D_94TU04"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU05 "BCS01"
+{
+	titlepatch = "94TUV04"
+	next = "94TU06"
+	secretnext = "94TU06"
+	sky1 = "94TU0002"
+	music = "D_94TU05"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU06 "HADES PART 2"
+{
+	titlepatch = "94TUV05"
+	next = "94TU07"
+	secretnext = "94TU07"
+	sky1 = "94TU0002"
+	music = "D_94TU06"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU07 "DEAD TEMPLE"
+{
+	titlepatch = "94TUV06"
+	next = "94TU08"
+	secretnext = "94TU08"
+	sky1 = "94TU0002"
+	music = "D_94TU07"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+	Map07Special
+}
+
+map 94TU08 "HELIPAD"
+{
+	titlepatch = "94TUV07"
+	next = "94TU09"
+	secretnext = "94TU09"
+	sky1 = "94TU0002"
+	music = "D_94TU08"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU09 "BUG HUNT"
+{
+	titlepatch = "94TUV08"
+	next = "94TU10"
+	secretnext = "94TU10"
+	sky1 = "94TU0002"
+	music = "D_94TU09"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU10 "MELANGE V2"
+{
+	titlepatch = "94TUV09"
+	next = "94TU11"
+	secretnext = "94TU11"
+	sky1 = "94TU0002"
+	music = "D_94TU10"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU11 "ELEMENTS"
+{
+	titlepatch = "94TUV10"
+	next = "94TU12"
+	secretnext = "94TU12"
+	sky1 = "94TU0002"
+	music = "D_94TU11"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU12 "RAWNWOOD"
+{
+	titlepatch = "94TUV11"
+	next = "94TU13"
+	secretnext = "94TU13"
+	sky1 = "94TU0164"
+	music = "D_94TU12"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU13 "THE UNWILLING"
+{
+	titlepatch = "94TUV12"
+	next = "94TU14"
+	secretnext = "94TU14"
+	sky1 = "94TU0164"
+	music = "D_94TU13"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU14 "COMCON2"
+{
+	titlepatch = "94TUV13"
+	next = "94TU15"
+	secretnext = "94TU15"
+	sky1 = "94TU0164"
+	music = "D_94TU14"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU15 "CRATEBASE"
+{
+	titlepatch = "94TUV14"
+	next = "94TU16"
+	secretnext = "94TU31"
+	sky1 = "94TU0164"
+	music = "D_94TU15"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU16 "INFINITY PLUS"
+{
+	titlepatch = "94TUV15"
+	next = "94TU17"
+	secretnext = "94TU17"
+	sky1 = "94TU0164"
+	music = "D_94TU16"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU17 "TUNNELS"
+{
+	titlepatch = "94TUV16"
+	next = "94TU18"
+	secretnext = "94TU18"
+	sky1 = "94TU0164"
+	music = "D_94TU17"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU18 "SUBWAY REDUX"
+{
+	titlepatch = "94TUV17"
+	next = "94TU19"
+	secretnext = "94TU19"
+	sky1 = "94TU0164"
+	music = "D_94TU18"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU19 "UNDERSEA"
+{
+	titlepatch = "94TUV18"
+	next = "94TU20"
+	secretnext = "94TU20"
+	sky1 = "94TU0164"
+	music = "D_94TU19"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU20 "OUTLAND"
+{
+	titlepatch = "94TUV19"
+	next = "94TU21"
+	secretnext = "94TU21"
+	sky1 = "94TU0164"
+	music = "D_94TU20"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU21 "RETURN TO ULTIMA"
+{
+	titlepatch = "94TUV20"
+	next = "94TU22"
+	secretnext = "94TU22"
+	sky1 = "94TU0004"
+	music = "D_94TU21"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU22 "NEFARIOUS"
+{
+	titlepatch = "94TUV21"
+	next = "94TU23"
+	secretnext = "94TU23"
+	sky1 = "94TU0004"
+	music = "D_94TU22"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU23 "BCS03"
+{
+	titlepatch = "94TUV22"
+	next = "94TU24"
+	secretnext = "94TU24"
+	sky1 = "94TU0004"
+	music = "D_94TU23"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU24 "FORTIFIED CASTLE"
+{
+	titlepatch = "94TUV23"
+	next = "94TU25"
+	secretnext = "94TU25"
+	sky1 = "94TU0004"
+	music = "D_94TU24"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU25 "FORT BORG"
+{
+	titlepatch = "94TUV24"
+	next = "94TU26"
+	secretnext = "94TU26"
+	sky1 = "94TU0004"
+	music = "D_94TU25"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU26 "A BEAUTIFUL DAY IN THE NEIGHBORHOOD?"
+{
+	titlepatch = "94TUV25"
+	next = "94TU27"
+	secretnext = "94TU27"
+	sky1 = "94TU0004"
+	music = "D_94TU26"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU27 "WETWORKED2"
+{
+	titlepatch = "94TUV26"
+	next = "94TU28"
+	secretnext = "94TU28"
+	sky1 = "94TU0004"
+	music = "D_94TU27"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU28 "THE NIGHTMARE"
+{
+	titlepatch = "94TUV27"
+	next = "94TU29"
+	secretnext = "94TU29"
+	sky1 = "94TU0004"
+	music = "D_94TU28"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU29 "HELL CASTLE"
+{
+	titlepatch = "94TUV28"
+	next = "94TU30"
+	secretnext = "94TU30"
+	sky1 = "94TU0004"
+	music = "D_94TU29"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU30 "PURE EVIL"
+{
+	titlepatch = "94TUV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "94TU0004"
+	music = "D_94TU30"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+	allowmonstertelefrags
+}
+
+map 94TU31 "ORIGINAL SIN"
+{
+	titlepatch = "94TUV30"
+	next = "94TU16"
+	secretnext = "94TU32"
+	sky1 = "94TU0004"
+	music = "D_94TU31"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}
+
+map 94TU32 "CYBERPIE"
+{
+	titlepatch = "94TUV31"
+	next = "94TU16"
+	secretnext = "94TU16"
+	sky1 = "94TU0004"
+	music = "D_94TU32"
+	intermusic = "D_94TUIN"
+	ExitPic = "94TUINT"
+	EnterPic = "94TUINT"
+}

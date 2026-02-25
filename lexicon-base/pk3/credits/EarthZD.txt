@@ -1,0 +1,243 @@
+================================================================
+Title			: Earth
+Filename		: EarthZD.wad
+Author			: Roger Ritenour
+Emale Address		: ritenour@mail.rlc.net
+
+Description		: Ten level episode for the game engine,
+			  ZDOOM. This episode fully accomodates 
+			  ZDoom's enhancements of free-look, jumping
+			  and the Boom/ZDoom enhanced set of line
+			  specials. It also has areas of complexity
+			  and grandeur of archetecture and settings
+			  not previously possible under DoomII. 
+			  EarthZD also has a custom sky specifically 
+			  designed for ZDoom. It is based upon the 
+			  Earth.wad episode for DoomII by the same 
+			  author.
+
+	Story Line	: You arrive home in Earth's planetary 
+			  system exhausted from enduring vicious 
+			  combat that started on Phobos and led to the
+			  Gates of Hell. You are on your way to sun,
+			  surf, and fishing for a spell of well 
+			  earned vacation. However, upon arrival in
+			  low Earth orbit, you learn the terrible 
+			  truth--Earth is not free. You study your
+			  options and decide to insert upon a remote
+			  and rocky coastline.
+			Levels:
+			  The Ruins (MAP01): You stand at your point
+				of arrival, facing out to sea with 
+				rolling breakers splasing on the rocks. 
+				This looks like it should have been 
+				your vacation site. But behind you
+				are the ruins of civilization,
+				haunted with alien hellspawn...
+			  The Tomb (MAP02): To have hope of 
+				freeing the world, you must take
+				back the one place the enemy
+				considers special. It is located 
+				under the great pyramid...
+			  Mines of Moria (MAP03): Like its
+				Lord of the Rings namesake, it
+				is crawling with evil things...
+			  The Chasm (MAP04): The enemy is 
+				bivouacked in rugged coastal 
+				terrain. You mission is to clear 
+				them out...
+			  Strategic Defense Command (MAP05): A 
+				deep underground command and
+				control center, one of the last 
+				great hopes for mankind in 
+				repelling the alien invasion. 
+				However, it seems to be off line,
+				You need to find out why...
+			  Observation Station (MAP06): This place
+				has seen some action before it
+				fell to the enemy. Beware!...
+			  The Emerald Tower (MAP07): The Enemy
+				has established a command post in
+				a giant ornate emerald green tower.
+				Your mission is to disrupt their
+				communications by taking it back...
+			  Ammo Pit (MAP08): This is the domain of
+				the arch-vile. Trick him
+				into helping you...
+			  Islands (MAP09): You arrive on an rocky
+				island in a rugged fjord. Out to
+				sea and somewhat up the coast is
+				another, larger island that you
+				must somehow reach...
+			  The Hill (MAP10): You must capture a 
+				heavily defended fortress on a hill...
+
+	Combat		: These levels contain a wide variety of
+			  combat situations requiring different 
+			  strategies. To win these levels,
+			  especially at the more difficult skill
+			  settings, requires thinking in terms of
+			  fields of fire, planning your cover, 
+			  looking out for your flanks and 
+			  backside, and keeping open  your lines
+			  of retreat. Most of the monster
+			  placement is randomized so that their
+			  location and response are different each
+			  time these levels are played. Hence, you
+			  will be unable to count on finding
+			  specific monsters at specific locations.
+			  (And there will not be many opportunities
+			  for blasting monsters in their sleep.)
+			  The monsters occasionally show sneaky
+			  behavior due to features in the level
+			  designs.
+	Setting:	  This episode is set on a rocky coastline.
+			  with spectacular outdoor views. These 
+			  include high vistas and overlooks, live
+			  surf crashing onto the rocks, scenic
+			  elevator rides on the outside of tall 
+			  buildings, spectacular bridges and a 
+			  spectacular hilltop fortress new to 
+			  EarthZD.
+	General:	  Secrets generally have some clue that
+			  the thoughtful and observant player can
+			  spot. These levels are designed to be
+			  winnable at the easier skill settings
+			  without finding the secrets, but to win
+			  the more difficult settings requires
+			  locating most of the secrets.  There are
+			  no totally hidden hazards or traps; 
+			  there will always be some visual
+			  or audio cue to warn of there presence.
+			  Some of the pools and slime pits have
+			  depth, ie, you will sink into them, 
+			  sometimes up to your eyeballs.
+			  Remember, though, this is ZDoom with 
+			  free-look and jumping that plays more
+			  like Quake than the original Doom.
+			  Objects like trees, barrels, etc., are
+			  not infinitely tall and the player can
+			  jump up onto objects as tall as 56 units;
+			  this will be an important factor in 
+			  navigating some places and finding some
+			  secrets. One final note; cliff edges at 
+			  most of the high vistas are lethal to fall 
+			  off of (one cannot expect to survive a fall
+			  of several hundred feet in real life).
+
+Directions for running	: EarthZD is a patch wad and is run with
+			  ZDoom using an IWAD file. The IWAD file
+			  can be DoomII, Plutonia, or TNT. Unzip
+			  EarthZD.zip and place EarthZD.wad into
+			  a directory of your choice. To start 
+			  ZDoom (from the directory you have ZDoom 
+			  in), enter on the command line of the
+			  MS-DOS prompt something like:
+
+   zdoom -iwad c:\doom2\doom2.wad -width 800 -height 600 -file <path>earthzd.wad
+
+			  If you run this with Plutonia or TNT,
+			  the -iwad part of the command would be 
+			  appropriately modified with the iwad's
+			  filename and path. The <path> in the -file 
+			  parameter is the location where you placed 
+			  EarthZD.wad. The -width and -height 
+			  parameters set your screen resolution.
+			  In the example given, the resolution is
+			  800 x 600, which produces a relatively 
+			  crisp level of detail. On a Pentium 200 
+			  MHz MMX CPU, this produced a satisfactory 
+			  frame rate. Newer, faster CPUs may use
+			  even higher resolutions. On a 133 MHz 
+			  Pentium, 640 x 400 is recommended. Older
+			  machines should use the standard Doom 
+			  320 x 200. Note on delays in loading:
+			  wads with tall sky textures sometimes
+			  require extra time for loading. If 
+			  the startup screen for ZDoom appears to 
+			  lock up, give it at least 30 seconds for
+			  the loading process to complete.
+			  
+Additional Credits	: Olivier Montanuy, author of WINTEX.
+			  I borrowed his grandfather clock and
+			  television, though they have been
+			  enhanced. Stephen's DOOM
+			  Music v. 1.5 for some of the music
+			  selections. Doom version 1.2 for some
+			  additional music selections. Anton
+			  Baranov (AN_MUSIC.WAD) for other music
+			  selections.
+
+* Play Information *
+
+Episode and Level #	: Map01-Map10 for ZDoom, 
+			  (tested under v1.17b)
+Single Player		: Yes
+Cooperative Player	: Yes (untested)
+Deathmatch		: Yes (untested)
+Difficulty Settings	: Yes, full range, all settings are 
+			  somewhat more difficult than standard
+			  Doom settings.
+New Sounds		: No
+New Graphics		: Yes, a new non-repeating, vertically
+			  retilable sky to support some spectacular
+			  vistas plus a lot of new wall textures.
+			  Special graphics to implement special
+			  effects such as the animated surf. 
+			  The graphics in this pwad are designed
+			  to complement and enhance rather than to
+			  replace the standard Doom graphics.
+New Music		: Yes, a mixture of new music, existing, 
+			  and a few pieces from doom1 as judged
+			  appropriate for the mood of the level. 
+
+*Construction *
+
+Base			: Much enhanced version of the episode,
+			  Earth.wad by the same author.
+Editors/Tools used: 
+
+	WAD Builders:	  Wintex/Deutex, O. Montanuy
+			  Patcher, Jim Flynn 
+			(Wintex used in original Earth.wad, 
+			Patcher used in ZDOOM upgrades)
+ 
+	Level Editors:	  WinDEU32 5.23, R. Paquay, R Quinet, B. Wyber
+			  DETH 4.16b, J. Burden, S. Oke plus 
+				other contributors
+			  Waded, M. Ayres 
+			(Multiple level editors used throughout 
+			history of development)
+
+	Node Builders:	  BSP 1.2, Colin Reed
+			  Nbld 1.0, Jim Flynn  
+			  WARM11, Robert Fenske 
+			  RMB, Jens Hykkelbjerg (reject map builder)
+			(Multiple node builders used in development,
+			In the final version, 9 maps are compiled 
+			under Nbld, with one under BSP (that would 
+			not compile correctly under Nbld.))
+
+	Graphics Tools	  Corel Photopaint 6 and 8
+			  CorelDraw 6
+
+Known Bugs		: Monsters sticking together, an occasional
+			  ZDOOM problem when a floating monster 
+			  descends on top of a another monster,
+			  typically occuring at locations where
+			  floating monsters must descent to pass
+			  through doorway to pursue the player.
+			  Monsters remain stuck until the player
+			  kills one of them. The remaining monster 
+			  goes free.
+
+
+* Copyright / Permissions *
+
+You MAY use these levels as a base to build additional levels
+You MAY modify these levels provided that you give proper credit
+to the originator, whether it is me or someone I borrowed from.
+If you do, please drop me a line, I would like to see what you 
+come up with. You MAY distribute this WAD in any electronic
+format provided you include this information file unmodified.
+

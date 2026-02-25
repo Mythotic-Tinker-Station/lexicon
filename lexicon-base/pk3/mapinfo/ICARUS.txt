@@ -1,0 +1,395 @@
+// Icarus: Alien Vanguard Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ICAV01 "Shuttlecraft"
+{
+	titlepatch = "ICAVV00"
+	next = "ICAV02"
+	secretnext = "ICAV02"
+	sky1 = "ICAV0564"
+	music = "D_ICAV01"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV02 "Shuttle Bay"
+{
+	titlepatch = "ICAVV01"
+	next = "ICAV03"
+	secretnext = "ICAV03"
+	sky1 = "ICAV0564"
+	music = "D_ICAV02"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV03 "Quarry"
+{
+	titlepatch = "ICAVV02"
+	next = "ICAV04"
+	secretnext = "ICAV04"
+	sky1 = "ICAV0564"
+	music = "D_ICAV03"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV04 "Engineering"
+{
+	titlepatch = "ICAVV03"
+	next = "ICAV05"
+	secretnext = "ICAV05"
+	sky1 = "ICAV0564"
+	music = "D_ICAV04"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV05 "Flipside"
+{
+	titlepatch = "ICAVV04"
+	next = "ICAV06"
+	secretnext = "ICAV06"
+	sky1 = "ICAV0564"
+	music = "D_ICAV05"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV06 "P.E.T. Rescue"
+{
+	titlepatch = "ICAVV05"
+	next = "ICAV07"
+	secretnext = "ICAV07"
+	sky1 = "ICAV0564"
+	music = "D_ICAV06"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV07 "Sickbay"
+{
+	titlepatch = "ICAVV06"
+	next = "ICAV08"
+	secretnext = "ICAV08"
+	sky1 = "ICAV0564"
+	music = "D_ICAV07"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+	Map07Special
+}
+
+map ICAV08 "Donnybrook"
+{
+	titlepatch = "ICAVV07"
+	next = "ICAV09"
+	secretnext = "ICAV09"
+	sky1 = "ICAV0564"
+	music = "D_ICAV08"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV09 "The Moat"
+{
+	titlepatch = "ICAVV08"
+	next = "ICAV10"
+	secretnext = "ICAV10"
+	sky1 = "ICAV0564"
+	music = "D_ICAV09"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV10 "Bridge"
+{
+	titlepatch = "ICAVV09"
+	next = "ICAV11"
+	secretnext = "ICAV11"
+	sky1 = "ICAV0564"
+	music = "D_ICAV10"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV11 "Feeding Frenzy"
+{
+	titlepatch = "ICAVV10"
+	next = "ICAV12"
+	secretnext = "ICAV12"
+	sky1 = "ICAV0564"
+	music = "D_ICAV11"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV12 "Hydroponics"
+{
+	titlepatch = "ICAVV11"
+	next = "ICAV13"
+	secretnext = "ICAV13"
+	sky1 = "ICAV0565"
+	music = "D_ICAV12"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV13 "Asylum"
+{
+	titlepatch = "ICAVV12"
+	next = "ICAV14"
+	secretnext = "ICAV14"
+	sky1 = "ICAV0565"
+	music = "D_ICAV13"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV14 "Fortress of Evil"
+{
+	titlepatch = "ICAVV13"
+	next = "ICAV15"
+	secretnext = "ICAV15"
+	sky1 = "ICAV0565"
+	music = "D_ICAV14"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV15 "Waste Disposal"
+{
+	titlepatch = "ICAVV14"
+	next = "ICAV16"
+	secretnext = "ICAV31"
+	sky1 = "ICAV0565"
+	music = "D_ICAV15"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV16 "Bootcamp"
+{
+	titlepatch = "ICAVV15"
+	next = "ICAV17"
+	secretnext = "ICAV17"
+	sky1 = "ICAV0565"
+	music = "D_ICAV16"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV17 "Bloodbath"
+{
+	titlepatch = "ICAVV16"
+	next = "ICAV18"
+	secretnext = "ICAV18"
+	sky1 = "ICAV0565"
+	music = "D_ICAV17"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV18 "Cargo Bay"
+{
+	titlepatch = "ICAVV17"
+	next = "ICAV19"
+	secretnext = "ICAV19"
+	sky1 = "ICAV0565"
+	music = "D_ICAV18"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV19 "Blessed are the Quick"
+{
+	titlepatch = "ICAVV18"
+	next = "ICAV20"
+	secretnext = "ICAV20"
+	sky1 = "ICAV0565"
+	music = "D_ICAV19"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV20 "WarTemple"
+{
+	titlepatch = "ICAVV19"
+	next = "ICAV21"
+	secretnext = "ICAV21"
+	sky1 = "ICAV0565"
+	music = "D_ICAV20"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV21 "Engine Core"
+{
+	titlepatch = "ICAVV20"
+	next = "ICAV22"
+	secretnext = "ICAV22"
+	sky1 = "ICAV0566"
+	music = "D_ICAV21"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV22 "Nightfall"
+{
+	titlepatch = "ICAVV21"
+	next = "ICAV23"
+	secretnext = "ICAV23"
+	sky1 = "ICAV0566"
+	music = "D_ICAV22"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV23 "Painful Discharge"
+{
+	titlepatch = "ICAVV22"
+	next = "ICAV24"
+	secretnext = "ICAV24"
+	sky1 = "ICAV0566"
+	music = "D_ICAV23"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV24 "The Haunting"
+{
+	titlepatch = "ICAVV23"
+	next = "ICAV25"
+	secretnext = "ICAV25"
+	sky1 = "ICAV0566"
+	music = "D_ICAV24"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+	compat_corpsegibs = 1
+	// Can't do anything about the ghost monsters, sadly.
+}
+
+map ICAV25 "Another Fine Mess"
+{
+	titlepatch = "ICAVV24"
+	next = "ICAV26"
+	secretnext = "ICAV26"
+	sky1 = "ICAV0566"
+	music = "D_ICAV25"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV26 "Weapons Bay"
+{
+	titlepatch = "ICAVV25"
+	next = "ICAV27"
+	secretnext = "ICAV27"
+	sky1 = "ICAV0566"
+	music = "D_ICAV26"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV27 "Starhenge"
+{
+	titlepatch = "ICAVV26"
+	next = "ICAV28"
+	secretnext = "ICAV28"
+	sky1 = "ICAV0566"
+	music = "D_ICAV27"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV28 "Excavations"
+{
+	titlepatch = "ICAVV27"
+	next = "ICAV29"
+	secretnext = "ICAV29"
+	sky1 = "ICAV0566"
+	music = "D_ICAV28"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV29 "Brutality"
+{
+	titlepatch = "ICAVV28"
+	next = "ICAV30"
+	secretnext = "ICAV30"
+	sky1 = "ICAV0566"
+	music = "D_ICAV29"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV30 "Nucleus"
+{
+	titlepatch = "ICAVV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ICAV0566"
+	music = "D_ICAV30"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+	allowmonstertelefrags
+}
+
+map ICAV31 "Great Balls of Fire"
+{
+	titlepatch = "ICAVV30"
+	next = "ICAV16"
+	secretnext = "ICAV32"
+	sky1 = "ICAV0566"
+	music = "D_ICAV31"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}
+
+map ICAV32 "Prestidigitation"
+{
+	titlepatch = "ICAVV31"
+	next = "ICAV16"
+	secretnext = "ICAV16"
+	sky1 = "ICAV0566"
+	music = "D_ICAV32"
+	intermusic = "D_ICAVIN"
+	ExitPic = "ICAVINT"
+	EnterPic = "ICAVINT"
+}

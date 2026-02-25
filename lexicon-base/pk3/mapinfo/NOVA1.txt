@@ -1,0 +1,393 @@
+// NOVA: The Birth Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NOV101 "Outpost - Primeval"
+{
+	titlepatch = "NOV1V00"
+	next = "NOV102"
+	secretnext = "NOV102"
+	sky1 = "SKY1"
+	music = "D_NOV101"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV102 "Administration Center - Jaws in Space"
+{
+	titlepatch = "NOV1V01"
+	next = "NOV103"
+	secretnext = "NOV103"
+	sky1 = "SKY1"
+	music = "D_NOV102"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV103 "Water Treatment Plant - mrthejoshmon"
+{
+	titlepatch = "NOV1V02"
+	next = "NOV104"
+	secretnext = "NOV104"
+	sky1 = "SKY1"
+	music = "D_NOV103"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV104 "Factory Factor - EvilNed"
+{
+	titlepatch = "NOV1V03"
+	next = "NOV105"
+	secretnext = "NOV105"
+	sky1 = "SKY1"
+	music = "D_NOV104"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV105 "Hazard Facility - kildeth"
+{
+	titlepatch = "NOV1V04"
+	next = "NOV106"
+	secretnext = "NOV106"
+	sky1 = "SKY1"
+	music = "D_NOV105"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV106 "Sewage Processing - Arjak"
+{
+	titlepatch = "NOV1V05"
+	next = "NOV107"
+	secretnext = "NOV107"
+	sky1 = "SKY1"
+	music = "D_NOV106"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV107 "Service Station Sick - EvilNed"
+{
+	titlepatch = "NOV1V06"
+	next = "NOV108"
+	secretnext = "NOV108"
+	sky1 = "SKY1"
+	music = "D_NOV107"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+	Map07Special
+}
+
+map NOV108 "Compound - mrthejoshmon"
+{
+	titlepatch = "NOV1V07"
+	next = "NOV109"
+	secretnext = "NOV109"
+	sky1 = "SKY1"
+	music = "D_NOV108"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV109 "Suspend - Fuzzyfireball"
+{
+	titlepatch = "NOV1V08"
+	next = "NOV110"
+	secretnext = "NOV110"
+	sky1 = "SKY1"
+	music = "D_NOV109"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV110 "Hell's Furnace - EvilNed"
+{
+	titlepatch = "NOV1V09"
+	next = "NOV111"
+	secretnext = "NOV111"
+	sky1 = "SKY1"
+	music = "D_NOV110"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV111 "Phobus Anomaly - Phobus"
+{
+	titlepatch = "NOV1V10"
+	next = "NOV112"
+	secretnext = "NOV112"
+	sky1 = "SKY1"
+	music = "D_NOV111"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV112 "Incubator - mrthejoshmon"
+{
+	titlepatch = "NOV1V11"
+	next = "NOV113"
+	secretnext = "NOV113"
+	sky1 = "SKY2"
+	music = "D_NOV112"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV113 "Warehouse District - sgt Dopey"
+{
+	titlepatch = "NOV1V12"
+	next = "NOV114"
+	secretnext = "NOV114"
+	sky1 = "SKY2"
+	music = "D_NOV113"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV114 "Man Cub Up - EvilNed"
+{
+	titlepatch = "NOV1V13"
+	next = "NOV115"
+	secretnext = "NOV115"
+	sky1 = "SKY2"
+	music = "D_NOV114"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV115 "The Prisoner - cannonball"
+{
+	titlepatch = "NOV1V14"
+	next = "NOV116"
+	secretnext = "NOV131"
+	sky1 = "SKY2"
+	music = "D_NOV115"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV116 "Teleportarium - Paul D"
+{
+	titlepatch = "NOV1V15"
+	next = "NOV117"
+	secretnext = "NOV117"
+	sky1 = "SKY2"
+	music = "D_NOV116"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV117 "Sewer City - EvilNed"
+{
+	titlepatch = "NOV1V16"
+	next = "NOV118"
+	secretnext = "NOV118"
+	sky1 = "SKY2"
+	music = "D_NOV117"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV118 "Power Core - cannonball"
+{
+	titlepatch = "NOV1V17"
+	next = "NOV119"
+	secretnext = "NOV119"
+	sky1 = "SKY2"
+	music = "D_NOV118"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV119 "Bad Blood - mouldy"
+{
+	titlepatch = "NOV1V18"
+	next = "NOV120"
+	secretnext = "NOV120"
+	sky1 = "SKY2"
+	music = "D_NOV119"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV120 "Castle Bloodletting - Arjak"
+{
+	titlepatch = "NOV1V19"
+	next = "NOV121"
+	secretnext = "NOV121"
+	sky1 = "SKY2"
+	music = "D_NOV120"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV121 "Beta Base - joe-ilya"
+{
+	titlepatch = "NOV1V20"
+	next = "NOV122"
+	secretnext = "NOV122"
+	sky1 = "SKY3"
+	music = "D_NOV121"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV122 "Broken Confluence Point - Hurricyclone"
+{
+	titlepatch = "NOV1V21"
+	next = "NOV123"
+	secretnext = "NOV123"
+	sky1 = "SKY3"
+	music = "D_NOV122"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV123 "Immaterium - Paul D"
+{
+	titlepatch = "NOV1V22"
+	next = "NOV124"
+	secretnext = "NOV124"
+	sky1 = "SKY3"
+	music = "D_NOV123"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV124 "Ring of Gyges - Stygian"
+{
+	titlepatch = "NOV1V23"
+	next = "NOV125"
+	secretnext = "NOV125"
+	sky1 = "SKY3"
+	music = "D_NOV124"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV125 "Vile Arterium - mouldy"
+{
+	titlepatch = "NOV1V24"
+	next = "NOV126"
+	secretnext = "NOV126"
+	sky1 = "SKY3"
+	music = "D_NOV125"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV126 "Hell's Playground - joe-ilya"
+{
+	titlepatch = "NOV1V25"
+	next = "NOV127"
+	secretnext = "NOV127"
+	sky1 = "SKY3"
+	music = "D_NOV126"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV127 "Sensorium - kildeth"
+{
+	titlepatch = "NOV1V26"
+	next = "NOV128"
+	secretnext = "NOV128"
+	sky1 = "SKY3"
+	music = "D_NOV127"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV128 "The Seventh Circle - mouldy"
+{
+	titlepatch = "NOV1V27"
+	next = "NOV129"
+	secretnext = "NOV129"
+	sky1 = "SKY3"
+	music = "D_NOV128"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV129 "Extorta Nova - fiend-o-hell"
+{
+	titlepatch = "NOV1V28"
+	next = "NOV130"
+	secretnext = "NOV130"
+	sky1 = "SKY3"
+	music = "D_NOV129"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV130 "Megiddo - Various"
+{
+	titlepatch = "NOV1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_NOV130"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+	allowmonstertelefrags
+}
+
+map NOV131 "Iron Exuviae - dobu gabu maru"
+{
+	titlepatch = "NOV1V30"
+	next = "NOV116"
+	secretnext = "NOV132"
+	sky1 = "SKY3"
+	music = "D_NOV131"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}
+
+map NOV132 "Riptide - Hurricyclone"
+{
+	titlepatch = "NOV1V31"
+	next = "NOV116"
+	secretnext = "NOV116"
+	sky1 = "SKY3"
+	music = "D_NOV132"
+	intermusic = "D_NOV1IN"
+	ExitPic = "NOV1INT"
+	EnterPic = "NOV1INT"
+}

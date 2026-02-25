@@ -1,0 +1,365 @@
+// Doom 2 Reloaded
+
+defaultmap
+{
+	nojump
+	nocrouch
+	ExitPic = "D2RLINT"
+	EnterPic = "D2RLINT"
+	InterMusic = "D_DM2INT"
+	SuckTime = 1
+}
+
+map D2RL01 "Infestation"
+{
+	TitlePatch = "D2RLV00"
+	Next = "D2RL02"
+	SecretNext = "D2RL02"
+	Sky1 = "SKY1"
+	Music = "D_RUNNIN"
+	Par = 360
+// 	Cluster = 1
+}
+
+map D2RL02 "Return to UAC"
+{
+	TitlePatch = "D2RLV01"
+	Next = "D2RL03"
+	SecretNext = "D2RL03"
+	Sky1 = "SKY1"
+	Music = "D_STALKS"
+	Par = 465
+// 	Cluster = 1
+}
+
+map D2RL03 "Phobos Overdrive"
+{
+	TitlePatch = "D2RLV02"
+	Next = "D2RL04"
+	SecretNext = "D2RL04"
+	Sky1 = "SKY1"
+	Music = "D_COUNTD"
+	Par = 435
+// 	Cluster = 1
+}
+
+map D2RL04 "Alpha Base"
+{
+	TitlePatch = "D2RLV03"
+	Next = "D2RL05"
+	SecretNext = "D2RL05"
+	Sky1 = "SKY1"
+	Music = "D_BETWEE"
+	Par = 390
+// 	Cluster = 1
+}
+
+map D2RL05 "Lockdown"
+{
+	TitlePatch = "D2RLV04"
+	Next = "D2RL06"
+	SecretNext = "D2RL06"
+	Sky1 = "SKY1"
+	Music = "D_DOOM"
+	Par = 435
+// 	Cluster = 1
+}
+
+map D2RL06 "Comms Station"
+{
+	TitlePatch = "D2RLV05"
+	Next = "D2RL07"
+	SecretNext = "D2RL07"
+	Sky1 = "SKY1"
+	Music = "D_THE_DA"
+	Par = 510
+// 	Cluster = 1
+}
+
+map D2RL07 "Witch Space"
+{
+	TitlePatch = "D2RLV06"
+	Next = "D2RL08"
+	SecretNext = "D2RL08"
+	Sky1 = "SKY1"
+	Music = "D_SHAWN"
+	Par = 180
+	Map07Special
+// 	Cluster = 2
+}
+
+map D2RL08 "Waste Processing"
+{
+	TitlePatch = "D2RLV07"
+	Next = "D2RL09"
+	SecretNext = "D2RL09"
+	Sky1 = "SKY1"
+	Music = "D_DDTBLU"
+	Par = 540
+// 	Cluster = 2
+}
+
+map D2RL09 "Phobos Subversion"
+{
+	TitlePatch = "D2RLV08"
+	Next = "D2RL10"
+	SecretNext = "D2RL10"
+	Sky1 = "SKY1"
+	Music = "D_IN_CIT"
+	Par = 420
+// 	Cluster = 2
+}
+
+map D2RL10 "Administration"
+{
+	TitlePatch = "D2RLV09"
+	Next = "D2RL11"
+	SecretNext = "D2RL11"
+	Sky1 = "SKY1"
+	Music = "D_DEAD"
+	Par = 375
+// 	Cluster = 2
+}
+
+map D2RL11 "Phobos Lab"
+{
+	TitlePatch = "D2RLV10"
+	Next = "D2RL12"
+	SecretNext = "D2RL12"
+	Sky1 = "SKY1"
+	Music = "D_STLKS2"
+	Par = 420
+// 	Cluster = 2
+}
+
+map D2RL12 "Return to Earth"
+{
+	TitlePatch = "D2RLV11"
+	Next = "D2RL13"
+	SecretNext = "D2RL13"
+	Sky1 = "SKY2"
+	Music = "D_THEDA2"
+	Par = 285
+// 	Cluster = 3
+}
+
+map D2RL13 "Slimefalls"
+{
+	TitlePatch = "D2RLV12"
+	Next = "D2RL14"
+	SecretNext = "D2RL14"
+	Sky1 = "SKY2"
+	Music = "D_DOOM2"
+	Par = 405
+// 	Cluster = 3
+}
+
+map D2RL14 "Underground"
+{
+	TitlePatch = "D2RLV13"
+	Next = "D2RL15"
+	SecretNext = "D2RL15"
+	Sky1 = "SKY2"
+	Music = "D_DDTBL2"
+	Par = 360
+// 	Cluster = 3
+}
+
+map D2RL15 "South Central"
+{
+	TitlePatch = "D2RLV14"
+	Next = "D2RL16"
+	SecretNext = "D2RL31"
+	Sky1 = "SKY2"
+	Music = "D_RUNNI2"
+	Par = 555
+// 	Cluster = 3
+}
+
+map D2RL16 "Research Facility"
+{
+	TitlePatch = "D2RLV15"
+	Next = "D2RL17"
+	SecretNext = "D2RL17"
+	Sky1 = "SKY2"
+	Music = "D_DEAD2"
+	Par = 450
+// 	Cluster = 3
+}
+
+map D2RL17 "Downtown"
+{
+	TitlePatch = "D2RLV16"
+	Next = "D2RL18"
+	SecretNext = "D2RL18"
+	Sky1 = "SKY2"
+	Music = "D_STLKS3"
+	Par = 735
+// 	Cluster = 3
+}
+
+map D2RL18 "Warehouse Siege"
+{
+	TitlePatch = "D2RLV17"
+	Next = "D2RL19"
+	SecretNext = "D2RL19"
+	Sky1 = "SKY2"
+	Music = "D_ROMERO"
+	Par = 420
+// 	Cluster = 3
+}
+
+map D2RL19 "Void Complex"
+{
+	TitlePatch = "D2RLV18"
+	Next = "D2RL20"
+	SecretNext = "D2RL20"
+	Sky1 = "SKY2"
+	Music = "D_SHAWN2"
+	Par = 510
+// 	Cluster = 3
+}
+
+map D2RL20 "Revelations"
+{
+	TitlePatch = "D2RLV19"
+	Next = "D2RL21"
+	SecretNext = "D2RL21"
+	Sky1 = "SKY2"
+	Music = "D_MESSAG"
+	Par = 840
+// 	Cluster = 3
+}
+
+map D2RL21 "Limbo"
+{
+	TitlePatch = "D2RLV20"
+	Next = "D2RL22"
+	SecretNext = "D2RL22"
+	Sky1 = "D2RL0105"
+	Music = "D_COUNT2"
+	Par = 450
+// 	Cluster = 4
+}
+
+map D2RL22 "River Styx"
+{
+	TitlePatch = "D2RLV21"
+	Next = "D2RL23"
+	SecretNext = "D2RL23"
+	Sky1 = "D2RL0105"
+	Music = "D_DDTBL3"
+	Par = 375
+// 	Cluster = 4
+}
+
+map D2RL23 "Elysian Plains"
+{
+	TitlePatch = "D2RLV22"
+	Next = "D2RL24"
+	SecretNext = "D2RL24"
+	Sky1 = "D2RL0105"
+	Music = "D_AMPIE"
+	Par = 450
+// 	Cluster = 4
+}
+
+map D2RL24 "Necromanteion"
+{
+	TitlePatch = "D2RLV23"
+	Next = "D2RL25"
+	SecretNext = "D2RL25"
+	Sky1 = "D2RL0105"
+	Music = "D_THEDA3"
+	Par = 465
+// 	Cluster = 4
+}
+
+map D2RL25 "Hell's Gate"
+{
+	TitlePatch = "D2RLV24"
+	Next = "D2RL26"
+	SecretNext = "D2RL26"
+	Sky1 = "D2RL0105"
+	Music = "D_ADRIAN"
+	Par = 735
+// 	Cluster = 4
+}
+
+map D2RL26 "Acheron"
+{
+	TitlePatch = "D2RLV25"
+	Next = "D2RL27"
+	SecretNext = "D2RL27"
+	Sky1 = "D2RL0105"
+	Music = "D_MESSG2"
+	Par = 585
+// 	Cluster = 4
+}
+
+map D2RL27 "Phlegethon"
+{
+	TitlePatch = "D2RLV26"
+	Next = "D2RL28"
+	SecretNext = "D2RL28"
+	Sky1 = "D2RL0105"
+	Music = "D_ROMER2"
+	Par = 420
+// 	Cluster = 4
+}
+
+map D2RL28 "The Underworld"
+{
+	TitlePatch = "D2RLV27"
+	Next = "D2RL29"
+	SecretNext = "D2RL29"
+	Sky1 = "D2RL0105"
+	Music = "D_TENSE"
+	Par = 900
+// 	Cluster = 4
+}
+
+map D2RL29 "Cocytus"
+{
+	TitlePatch = "D2RLV28"
+	Next = "D2RL30"
+	SecretNext = "D2RL30"
+	Sky1 = "D2RL0105"
+	Music = "D_SHAWN3"
+	Par = 1305
+// 	Cluster = 4
+}
+
+map D2RL30 "The Final Conflict"
+{
+	TitlePatch = "D2RLV29"
+	next = "VR"
+	Secretnext = "VR"
+	Sky1 = "D2RL0105"
+	Music = "D_OPENIN"
+	Par = 345
+	AllowMonsterTelefrags
+// 	Cluster = 4
+}
+
+map D2RL31 "Entryway Reloaded"
+{
+	TitlePatch = "D2RLV30"
+	Next = "D2RL16"
+	SecretNext = "D2RL32"
+	Sky1 = "D2RL0105"
+	Music = "D_EVIL"
+	Par = 120
+// 	Cluster = 5
+}
+
+map D2RL32 "The Super Secret Level"
+{
+	TitlePatch = "D2RLV31"
+	Next = "D2RL16"
+	SecretNext = "D2RL16"
+	Sky1 = "D2RL0105"
+	Music = "D_ULTIMA"
+	Par = 1170
+// 	Cluster = 6
+}

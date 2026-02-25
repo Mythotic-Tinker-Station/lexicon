@@ -1,0 +1,104 @@
+// DBP03: Forest Swords Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DB0301 "Rocky Start"
+{
+	titlepatch = "DB03V00"
+	next = "DB0302"
+	secretnext = "DB0302"
+	sky1 = "DB030276"
+	music = "D_DB0301"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0302 "Canyon Crawl"
+{
+	titlepatch = "DB03V01"
+	next = "DB0303"
+	secretnext = "DB0303"
+	sky1 = "DB030276"
+	music = "D_DB0302"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0303 "Guerilla Skeletons"
+{
+	titlepatch = "DB03V02"
+	next = "DB0304"
+	secretnext = "DB0304"
+	sky1 = "DB030276"
+	music = "D_DB0303"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0304 "Forest Fort"
+{
+	titlepatch = "DB03V03"
+	next = "DB0305"
+	secretnext = "DB0305"
+	sky1 = "DB030276"
+	music = "D_DB0304"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0305 "The Valley"
+{
+	titlepatch = "DB03V04"
+	next = "DB0306"
+	secretnext = "DB0306"
+	sky1 = "DB030276"
+	music = "D_DB0305"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0306 "Crisis Center"
+{
+	titlepatch = "DB03V05"
+	next = "DB0307"
+	secretnext = "DB0307"
+	sky1 = "DB030276"
+	music = "D_DB0306"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}
+
+map DB0307 "It doesnt have a name"
+{
+	titlepatch = "DB03V06"
+	next = "DB0308"
+	secretnext = "DB0308"
+	sky1 = "DB030276"
+	music = "D_DB0307"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+	Map07Special
+}
+
+map DB0308 "The Chapel"
+{
+	titlepatch = "DB03V07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DB030276"
+	music = "D_DB0308"
+	intermusic = "D_DB03IN"
+	ExitPic = "DB03INT"
+	EnterPic = "DB03INT"
+}

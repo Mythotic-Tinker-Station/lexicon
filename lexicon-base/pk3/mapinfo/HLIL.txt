@@ -1,0 +1,297 @@
+// Hell in Hell Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLIL01 "Waste Management Facility"
+{
+	titlepatch = "CWILV00"
+	next = "HLIL02"
+	secretnext = "HLIL02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map HLIL02 "Waste holding pits"
+{
+	titlepatch = "CWILV01"
+	next = "HLIL03"
+	secretnext = "HLIL03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map HLIL03 "Six Doors of Chaos"
+{
+	titlepatch = "CWILV02"
+	next = "HLIL04"
+	secretnext = "HLIL04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map HLIL04 "The UAC Experimental Laboritories"
+{
+	titlepatch = "CWILV03"
+	next = "HLIL05"
+	secretnext = "HLIL05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map HLIL05 "Water Treatment Facility"
+{
+	titlepatch = "CWILV04"
+	next = "HLIL06"
+	secretnext = "HLIL06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map HLIL06 "The Weapons Testing Facility"
+{
+	titlepatch = "CWILV05"
+	next = "HLIL07"
+	secretnext = "HLIL07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map HLIL07 "Evil Test of Skill"
+{
+	titlepatch = "CWILV06"
+	next = "HLIL08"
+	secretnext = "HLIL08"
+	sky1 = "SKY1"
+	map07special
+	music = "$MUSIC_SHAWN"
+}
+
+map HLIL08 "Caves of DOOM"
+{
+	titlepatch = "CWILV07"
+	next = "HLIL09"
+	secretnext = "HLIL09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map HLIL09 "The Fortress Of Fire"
+{
+	titlepatch = "CWILV08"
+	next = "HLIL10"
+	secretnext = "HLIL10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}
+
+map HLIL10 "The Lava Pits"
+{
+	titlepatch = "CWILV09"
+	next = "HLIL11"
+	secretnext = "HLIL11"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+}
+
+map HLIL11 "Hell in Hell"
+{
+	titlepatch = "CWILV10"
+	next = "HLIL12"
+	secretnext = "HLIL12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+}
+
+map HLIL12 "The UAC Factory"
+{
+	titlepatch = "CWILV11"
+	next = "HLIL13"
+	secretnext = "HLIL13"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+}
+
+map HLIL13 "Downtown New York City"
+{
+	titlepatch = "CWILV12"
+	next = "HLIL14"
+	secretnext = "HLIL14"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+}
+
+map HLIL14 "New York City"
+{
+	titlepatch = "CWILV13"
+	next = "HLIL15"
+	secretnext = "HLIL15"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+}
+
+map HLIL15 "Nuclear Power Plant"
+{
+	titlepatch = "CWILV14"
+	next = "HLIL16"
+	secretnext = "HLIL31"
+	sky1 = "SKY2"
+	music = "$MUSIC_RUNNI2"
+}
+
+map HLIL16 "Florida Suburbs"
+{
+	titlepatch = "CWILV15"
+	next = "HLIL17"
+	secretnext = "HLIL17"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+}
+
+map HLIL17 "The tenements of Miami Florida"
+{
+	titlepatch = "CWILV16"
+	next = "HLIL18"
+	secretnext = "HLIL18"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+}
+
+map HLIL18 "Mount Erebus the second"
+{
+	titlepatch = "CWILV17"
+	next = "HLIL19"
+	secretnext = "HLIL19"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+}
+
+map HLIL19 "The Minotaurs hideout in the Baron City"
+{
+	titlepatch = "CWILV18"
+	next = "HLIL20"
+	secretnext = "HLIL20"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+}
+
+map HLIL20 "The Arizona Mining facility"
+{
+	titlepatch = "CWILV19"
+	next = "HLIL21"
+	secretnext = "HLIL21"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+}
+
+map HLIL21 "Hells portal"
+{
+	titlepatch = "CWILV20"
+	next = "HLIL22"
+	secretnext = "HLIL22"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+}
+
+map HLIL22 "Winsdor Castle"
+{
+	titlepatch = "CWILV21"
+	next = "HLIL23"
+	secretnext = "HLIL23"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+}
+
+map HLIL23 "The California State Prison"
+{
+	titlepatch = "CWILV22"
+	next = "HLIL24"
+	secretnext = "HLIL24"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+}
+
+map HLIL24 "The Secret City"
+{
+	titlepatch = "CWILV23"
+	next = "HLIL25"
+	secretnext = "HLIL25"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+}
+
+map HLIL25 "The Church of Sighs"
+{
+	titlepatch = "CWILV24"
+	next = "HLIL26"
+	secretnext = "HLIL26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+}
+
+map HLIL26 "Satan's Palace of Misery"
+{
+	titlepatch = "CWILV25"
+	next = "HLIL27"
+	secretnext = "HLIL27"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+}
+
+map HLIL27 "The Fuel Station Tepidess orbiting mars"
+{
+	titlepatch = "CWILV26"
+	next = "HLIL28"
+	secretnext = "HLIL28"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMER2"
+}
+
+map HLIL28 "The Imperial Space Marine City"
+{
+	titlepatch = "CWILV27"
+	next = "HLIL29"
+	secretnext = "HLIL29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+}
+
+map HLIL29 "The Hot side of Mars"
+{
+	titlepatch = "CWILV28"
+	next = "HLIL30"
+	secretnext = "HLIL30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+}
+
+map HLIL30 "THE DARKSIDE OF MARS"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	allowmonstertelefrags
+	music = "$MUSIC_OPENIN"
+}
+
+map HLIL31 "Hell in Hell Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "HLIL16"
+	secretnext = "HLIL32"
+	sky1 = "SKY3"
+	music = "$MUSIC_EVIL"
+}
+
+map HLIL32 "Hell in Hell Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "HLIL16"
+	secretnext = "HLIL16"
+	sky1 = "SKY3"
+	music = "$MUSIC_ULTIMA"
+}

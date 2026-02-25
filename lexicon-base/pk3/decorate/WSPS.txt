@@ -1,0 +1,12 @@
+ACTOR Lexicon_WSPS_Cyberdemon : Cyberdemon
+{
+	PainChance 128
+	PainSound "WSPS/DSITMBK"
+	DeathSound "WSPS/DSTINK"
+}
+
+Actor Lexicon_WSPS_CommanderKeen : CommanderKeen
+{
+	PainSound "WSPS/DSKEENPN"
+	DeathSound "WSPS/DSKEENDT"
+}

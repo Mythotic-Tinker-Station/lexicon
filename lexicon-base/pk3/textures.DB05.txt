@@ -1,0 +1,44 @@
+Texture "DB050051", 128, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+	Patch "WALL62_2", 64, 0
+	Patch "DB050323", 0, 0
+}
+Texture "DB050090", 32, 64
+{
+	Patch "EXIT1", 0, 0
+	Patch "DB050327", 0, 16
+}
+Texture "DB050161", 128, 128
+{
+	Patch "SW17_4", 0, 0
+	Patch "SW17_5", 32, 0
+	Patch "SW17_6", 64, 0
+	Patch "SW18_7", 96, 0
+	Patch "DB050323", 0, 0
+}
+Texture "DB050163", 512, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+	Patch "DB050367", 0, 0
+}
+Texture "DB050168", 512, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+	Patch "DB050368", 0, 0
+}
+Texture "DB050213", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 64, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "DB050258", 128, 32
+{
+	Patch "DB050374", 0, 0
+}

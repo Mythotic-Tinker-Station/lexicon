@@ -1,0 +1,393 @@
+// Kama Sutra Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map KSUT01 "Into the Underground"
+{
+	titlepatch = "KSUTV00"
+	next = "KSUT02"
+	secretnext = "KSUT02"
+	sky1 = "SKY1"
+	music = "D_KSUT01"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT02 "The Hidden Engine"
+{
+	titlepatch = "KSUTV01"
+	next = "KSUT03"
+	secretnext = "KSUT03"
+	sky1 = "SKY1"
+	music = "D_KSUT02"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT03 "Mr.Adolf Kill You!"
+{
+	titlepatch = "KSUTV02"
+	next = "KSUT04"
+	secretnext = "KSUT04"
+	sky1 = "SKY1"
+	music = "D_KSUT03"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT04 "Water Base"
+{
+	titlepatch = "KSUTV03"
+	next = "KSUT05"
+	secretnext = "KSUT05"
+	sky1 = "SKY1"
+	music = "D_KSUT04"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT05 "Klondike"
+{
+	titlepatch = "KSUTV04"
+	next = "KSUT06"
+	secretnext = "KSUT06"
+	sky1 = "SKY1"
+	music = "D_KSUT05"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT06 "Research Complex"
+{
+	titlepatch = "KSUTV05"
+	next = "KSUT07"
+	secretnext = "KSUT07"
+	sky1 = "SKY1"
+	music = "D_KSUT06"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT07 "Colosseum"
+{
+	titlepatch = "KSUTV06"
+	next = "KSUT08"
+	secretnext = "KSUT08"
+	sky1 = "SKY1"
+	music = "D_KSUT07"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+	Map07Special
+}
+
+map KSUT08 "Time Is Tickin' Out"
+{
+	titlepatch = "KSUTV07"
+	next = "KSUT09"
+	secretnext = "KSUT09"
+	sky1 = "SKY1"
+	music = "D_KSUT08"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT09 "The Holocaust"
+{
+	titlepatch = "KSUTV08"
+	next = "KSUT10"
+	secretnext = "KSUT10"
+	sky1 = "SKY1"
+	music = "D_KSUT09"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT10 "To Be Or Not To Be..."
+{
+	titlepatch = "KSUTV09"
+	next = "KSUT11"
+	secretnext = "KSUT11"
+	sky1 = "SKY1"
+	music = "D_KSUT10"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT11 "Execution"
+{
+	titlepatch = "KSUTV10"
+	next = "KSUT12"
+	secretnext = "KSUT12"
+	sky1 = "SKY1"
+	music = "D_KSUT11"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT12 "King Arena"
+{
+	titlepatch = "KSUTV11"
+	next = "KSUT13"
+	secretnext = "KSUT13"
+	sky1 = "SKY2"
+	music = "D_KSUT12"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT13 "The Holocaust II"
+{
+	titlepatch = "KSUTV12"
+	next = "KSUT14"
+	secretnext = "KSUT14"
+	sky1 = "SKY2"
+	music = "D_KSUT13"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT14 "Dog Eat Dog"
+{
+	titlepatch = "KSUTV13"
+	next = "KSUT15"
+	secretnext = "KSUT15"
+	sky1 = "SKY2"
+	music = "D_KSUT14"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT15 "Miss Sporty"
+{
+	titlepatch = "KSUTV14"
+	next = "KSUT16"
+	secretnext = "KSUT31"
+	sky1 = "SKY2"
+	music = "D_KSUT15"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT16 "Leeds Castle"
+{
+	titlepatch = "KSUTV15"
+	next = "KSUT17"
+	secretnext = "KSUT17"
+	sky1 = "SKY2"
+	music = "D_KSUT16"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT17 "Cyber Machine"
+{
+	titlepatch = "KSUTV16"
+	next = "KSUT18"
+	secretnext = "KSUT18"
+	sky1 = "SKY2"
+	music = "D_KSUT17"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT18 "The Train Is Approaching"
+{
+	titlepatch = "KSUTV17"
+	next = "KSUT19"
+	secretnext = "KSUT19"
+	sky1 = "SKY2"
+	music = "D_KSUT18"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT19 "Natural"
+{
+	titlepatch = "KSUTV18"
+	next = "KSUT20"
+	secretnext = "KSUT20"
+	sky1 = "SKY2"
+	music = "D_KSUT19"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT20 "Traps"
+{
+	titlepatch = "KSUTV19"
+	next = "KSUT21"
+	secretnext = "KSUT21"
+	sky1 = "SKY2"
+	music = "D_KSUT20"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT21 "Diablo's Heart"
+{
+	titlepatch = "KSUTV20"
+	next = "KSUT22"
+	secretnext = "KSUT22"
+	sky1 = "KSUT0259"
+	music = "D_KSUT21"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT22 "Fire Play"
+{
+	titlepatch = "KSUTV21"
+	next = "KSUT23"
+	secretnext = "KSUT23"
+	sky1 = "KSUT0259"
+	music = "D_KSUT22"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT23 "A Little Big Massacre"
+{
+	titlepatch = "KSUTV22"
+	next = "KSUT24"
+	secretnext = "KSUT24"
+	sky1 = "KSUT0259"
+	music = "D_KSUT23"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT24 "The Gift From Gott"
+{
+	titlepatch = "KSUTV23"
+	next = "KSUT25"
+	secretnext = "KSUT25"
+	sky1 = "KSUT0259"
+	music = "D_KSUT24"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT25 "Cow Face"
+{
+	titlepatch = "KSUTV24"
+	next = "KSUT26"
+	secretnext = "KSUT26"
+	sky1 = "KSUT0259"
+	music = "D_KSUT25"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT26 "Kill Bill"
+{
+	titlepatch = "KSUTV25"
+	next = "KSUT27"
+	secretnext = "KSUT27"
+	sky1 = "KSUT0259"
+	music = "D_KSUT26"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT27 "Stairway To Heaven"
+{
+	titlepatch = "KSUTV26"
+	next = "KSUT28"
+	secretnext = "KSUT28"
+	sky1 = "KSUT0259"
+	music = "D_KSUT27"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT28 "Hard Target"
+{
+	titlepatch = "KSUTV27"
+	next = "KSUT29"
+	secretnext = "KSUT29"
+	sky1 = "KSUT0259"
+	music = "D_KSUT28"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT29 "I'm Just A Doom Addict"
+{
+	titlepatch = "KSUTV28"
+	next = "KSUT30"
+	secretnext = "KSUT30"
+	sky1 = "KSUT0259"
+	music = "D_KSUT29"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT30 "<|>"
+{
+	titlepatch = "KSUTV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "KSUT0259"
+	music = "D_KSUT30"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+	allowmonstertelefrags
+}
+
+map KSUT31 "Devastation"
+{
+	titlepatch = "KSUTV30"
+	next = "KSUT16"
+	secretnext = "KSUT32"
+	sky1 = "KSUT0259"
+	music = "D_KSUT31"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}
+
+map KSUT32 "Anger Management"
+{
+	titlepatch = "KSUTV31"
+	next = "KSUT16"
+	secretnext = "KSUT16"
+	sky1 = "KSUT0259"
+	music = "D_KSUT32"
+	intermusic = "D_KSUTIN"
+	ExitPic = "KSUTINT"
+	EnterPic = "KSUTINT"
+}

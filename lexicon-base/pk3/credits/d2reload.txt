@@ -1,0 +1,726 @@
+===========================================================================
+Advanced engine needed  : None
+Primary purpose         : Single player
+===========================================================================
+Title                   : Doom 2 Reloaded
+Filename                : D2RELOAD.WAD
+Release date            : 11/10/09
+Author                  : Andy Stewart
+Email Address           : eschdoom@whatisblueandfurry.com
+Other Files By Author   : None
+Misc. Author Info       : Old Doomer
+
+Description             : 32 Level Megawad for use with Doom2. Hopefully a
+                          fun packed collection of mainly small to medium
+                          sized maps.
+
+Additional Credits to   : id software of course
+                          Pascal vd Heiden for DoomBuilder
+                          Csabo for XWE
+                          Simon Howard for Chocolate Doom
+                          Creators of Skulltag
+                          www.wadsinprogress.com
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes (Only one)
+Music                   : No
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (DEHACKED lump)
+Demos                   : Yes
+Other                   : No
+Other files required    : Doom 2
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : 01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts and weapons (from deathmatch)
+Deathmatch 2-4 Player   : Player starts and weapons
+Other game styles       : 1 map has 'Run fast' another has 'Don't shoot'
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : 30 New, 2 Old but remade from scratch
+Build Time              : Approx 50 hours / map, the bigger maps took
+                          longer
+Editor(s) used          : Doombuilder, XWE, ZDBSP, ZENNODE
+Known Bugs              : Some VPOs, HOMs and possibly misaligned textures
+                          (detailed below)
+May Not Run With        : None
+Tested With             : Lots of source ports (detailed below)
+                          Chocolate Doom used for single player testing
+                          Skulltag used for multiplayer testing
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. This file may not be used for any commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+
+Background              : The plan was to try and make a megawad for Doom2
+                          that would look alright and be fun to play.
+                          Hopefully this has been acheived.
+
+                          The goals were:
+
+                          1. Make something that would follow a similar
+                             story to the original Doom / Doom 2 / Doom 3.
+                          2. Skill level: Not too hard, to be more fun than
+                             a challenge.
+                          3. Make all maps playable from a pistol start.
+                          4. Make all maps completable in under 10 minutes
+                             UV Max 100% Secrets.
+                          5. Should work with all source ports and original
+                             Doom.
+                          6. Try to maintain continuity between maps.
+                          
+                          Notes:
+                          There is no high detail due to limitations but
+                          I've tried to make most areas aesthetically
+                          pleasing while trying to avoid inducing HOMs or
+                          VPOs.
+                          Most of the maps are pretty linear, some of the
+                          later maps are more non-linear.
+                          Maps 17, 20, 25, 29, 32 break rule 4.
+                          MAP30 may be of particular interest to nightmare
+                          speed runners.
+                          Please make sure you play MAP32 all the way to
+                          the end (100% Secrets), try not to give up or
+                          cheat.
+                          A couple of maps MAP09 and MAP18 have slightly
+                          different gameplay than normal.
+                          The skill level on UV is hopefully comparable to
+                          original Doom 2, if you found it too easy and
+                          want more of a challenge try to get UV MAX under
+                          par from pistol start.
+
+                          All maps are playable using the original Doom 2
+                          v1.9.
+                          I recommend using a source port mainly due to the
+                          increased graphic / sound quality but also
+                          because it is possible to encounter visplane
+                          overflows and hall of mirrors on some maps
+                          (specific areas are detailed below).
+                          All maps are designed with gl based ports in
+                          mind, so none of the maps have special effects
+                          (i.e. deep water, bridges) that may cause
+                          problems with these.
+
+                          There are 12 deathmatch starts on all maps except
+                          MAP30 and MAP31 which have 4.
+                          It seems to play OK as long as you have 12
+                          players (4 on 30 and 31).
+                          You can play in co-op mode but this was untested.
+                          Co-op mode has the extra weapons intended for
+                          deathmatch.
+
+                          The included demos work with Doom2 v1.9 and
+                          Chocolate Doom.
+
+                          This wad is dedicated to absent friends and to
+                          anyone who bothers to take the time to do this
+                          type of thing (especially those listed below but
+                          not just wads and source ports for Doom any
+                          contribution).
+                          Please enjoy.
+
+                          Inspiration and ideas from the following:
+
+                          Aliens TC
+                          Scythe 1 and 2, One Bloody Night
+                          Alien Vendetta
+                          Hell Revealed 1 and 2
+                          The Darkening 1 and 2
+                          2002 A Doom Odyssey
+                          Community Chest 1, 2 and 3
+                          Memento Mori 1 and 2
+                          Eternal, TNT, The Plutonia Experiment 1 and 2
+                          The Master Levels
+                          Batman TC
+                          Vile Flesh
+                          Town Infection
+                          Tmp.wad for Doom
+                          Demonfear
+                          Deus Vult
+                          Doom 64 Absolution
+                          Wads by Dr.Sleep
+                          Wads by id Software
+                          Half Life 2
+                          Doom 3
+
+                          Ancient deathmatch sarge salute to:
+                          Loki, The Shadow, Drax, Osiris, Zoser, Cranium,
+                          Macca (King of Planets), Pete, Piano, Mulder,
+                          Flare, Hunter, Woof, Bloodbiter, Doomgod, Danny,
+                          Fluffy, Rob...
+
+Testing                 : Doom 2 Reloaded has been tested with the
+                          following versions / source ports:
+                          Doom2 v1.9, Chocolate Doom, Skulltag, ZDoom,
+                          GZDoom, Doomsday Engine, Vavoom, Edge, Risen3D,
+                          ZDaemon, Odamex, Doom Legacy, PrBoom,
+                          Eternity Engine.
+                          There are a couple of problems in a couple of
+                          ports. Most can be worked around using the 
+                          no clip cheat (see below for details).
+
+===========================================================================
+
+Story                   : You (a high ranking employee of UAC) are
+                          stationed on mars. It's your job to retire
+                          replicants that don't want to help with the
+                          terraforming project.
+                          Everything has been fine until recently.
+                          Contact has been lost with a remote water
+                          processing faclility.
+                          The UAC want you to investigate...
+                          There has been a lot of top secret activity
+                          recently, you wonder if the incident may be
+                          related.
+
+Episode and Level #     : MAP01
+Title                   : Infestation
+Description             : Contact has been lost with a remote water 
+                          processing station on Mars. You are stationed at
+                          a nearby outpost. Unusually UAC have requested
+                          that you investigate. Possibly this is due to
+                          your high security clearance...
+Par Time                : 6:00 UV MAX
+
+Episode and Level #     : MAP02
+Title                   : Return to UAC
+Description             : You take the transport from the station back to
+                          the outpost. The place is overrun. One of the
+                          hyper-transports has been trashed. Get the backup
+                          online and return to the UAC base on Phobos.
+Par Time                : 7:45 UV MAX
+
+Episode and Level #     : MAP03
+Title                   : Phobos Overdrive
+Description             : The normally busy complex initially appears
+                          deserted. Alpha Base is to the west and you will
+                          need a key card to gain entry. The east side of
+                          the facility is also locked. It may be possible
+                          to find an alternative entrance via the waste
+                          tunnels.
+Par Time                : 7:15 UV MAX
+
+Episode and Level #     : MAP04
+Title                   : Alpha Base
+Description             : There is a Comms Station on the other side of the
+                          facility. The door is locked but you should be
+                          able to find a key card in one of the offices.
+                          You vaguely recollect a nasty accident occurred
+                          here in one of the power distribution conduits.
+Par Time                : 6:30 UV MAX
+
+Episode and Level #     : MAP05
+Title                   : Lockdown
+Description             : Security has been activated. The base is locked
+                          down. Looks like you are going to have to find a
+                          different way in if you want to reach the Comms
+                          Station.
+Par Time                : 7:15 UV MAX
+
+Episode and Level #     : MAP06
+Title                   : Comms Station
+Description             : You've made it! Locate and raise the antenna to
+                          contact Earth and warn them about the invasion,
+                          then find a transport that will take you to the
+                          main UAC base. Hopefully there may be someone
+                          still alive.
+Par Time                : 8:30 UV MAX
+
+Episode and Level #     : MAP07
+Title                   : Witch Space
+Description             : Your transport from the Comms Station has been
+                          subverted and you find yourself in a weird but
+                          strangely familiar place, possibly another
+                          dimension. Retire all demons to proceed.
+Par Time                : 3:00 UV MAX
+
+Episode and Level #     : MAP08
+Title                   : Waste Processing
+Description             : You awake as if from a dream. You are back on
+                          Phobos. It looks like the underground nukage
+                          processing facility which isn't too far from
+                          where you wanted to be anyway. Get to the surface
+                          and head for the UAC administration area.
+Par Time                : 9:00 UV MAX
+
+Episode and Level #     : MAP09
+Title                   : Phobos Subversion
+Description             : It looks as though someone is still alive.
+                          A terminal informs you that another invasion is
+                          imminent but you can subvert the portal to the
+                          crusher. Alas the reactor has been flooded so you
+                          will have to drain it in order to restore power.
+Par Time                : 7:00 UV MAX
+
+Episode and Level #     : MAP10
+Title                   : Administration
+Description             : You have finally reached the UAC administration
+                          area but there is no trace of any survivors.
+                          Have they evacuated? Proceed on through to the
+                          laboratory. You believe there may be something
+                          there that is your only chance for survival.
+Par Time                : 6:15 UV MAX
+
+Episode and Level #     : MAP11
+Title                   : Phobos Lab
+Description             : The strange laboratory experiments may reveal a
+                          clue as to the reason for your current
+                          predicament. You hope the rumours about the long
+                          range hyper-transport were true. If it exists you
+                          may be able to use it to return directly to
+                          earth.
+Par Time                : 7:00 UV MAX
+
+Episode and Level #     : MAP12
+Title                   : Return to Earth
+Description             : You have made it back to earth. It looks like the
+                          demons have been here a while. Get to the UAC HQ
+                          and find out whats going on. Unfortunately it is
+                          on the opposite side of the city. Head through
+                          the tunnel, there is a subway system nearby.
+Par Time                : 4:45 UV MAX
+
+Episode and Level #     : MAP13
+Title                   : Slime Falls
+Description             : The chaos of the conflict probably caused the
+                          road to cave in. The only way forward is down
+                          through the slime. There should be a pumping
+                          station nearby so you should be able to access
+                          the road from it.
+Par Time                : 6:45 UV MAX
+
+Episode and Level #     : MAP14
+Title                   : Underground
+Description             : The entrance to the underground subway system is
+                          nearby. You'll probably have to walk the
+                          underground rather than ride it. Still, things
+                          could be worse. Hopefully the tunnel hasn't caved
+                          in.
+Par Time                : 6:00 UV MAX
+
+Episode and Level #     : MAP15
+Title                   : South Central
+Description             : You're not sure where you are, maybe a building
+                          belonging to one of the UACs defense contractors.
+                          Get out of the building and follow the road to
+                          the nearby UAC research facility which you can
+                          pass through for a shortcut.
+Par Time                : 9:15 UV MAX
+
+Episode and Level #     : MAP16
+Title                   : Research Facility
+Description             : The shortcut through the research facility will
+                          save you some time. Once you get through this
+                          you will have covered most of the journey to UAC
+                          HQ. You have a growing suspicion that all of your
+                          questions will be answered there.
+Par Time                : 7:30 UV MAX
+
+Episode and Level #     : MAP17
+Title                   : Downtown
+Description             : Find a way out of the research facility and
+                          continue through the city. There is a UAC
+                          warehouse nearby. It's on the way and you should
+                          be able to get some supplies there. You will have
+                          to scale the back wall to get in though.
+Par Time                : 12:15 UV MAX
+
+Episode and Level #     : MAP18
+Title                   : Warehous Siege
+Description             : A bunch of survivors are locked in and under
+                          siege on the other side of the warehouse.
+                          Their messages warn not to attack for fear of
+                          alerting the sentinels. You will have to use
+                          stealth until you can find a way to secure the
+                          area.
+Par Time                : 7:00 UV MAX
+
+Episode and Level #     : MAP19
+Title                   : Void Complex
+Description             : You leave the warehouse feeling deeply disturbed
+                          by recent events. Your resolve to bring an end to
+                          the carnage is intensified. The UAC HQ shouldn't
+                          be too far away now.
+Par Time                : 8:30 UV MAX
+
+Episode and Level #     : MAP20
+Title                   : Revelations
+Description             : The UAC HQ building is just around the corner.
+                          The entrance will require some sort of security
+                          card for access. The increased activity in the
+                          area only serves to confirm your suspicions that
+                          the building is some sort of gateway for them.
+Par Time                : 14:00 UV MAX
+
+Episode and Level #     : MAP21
+Title                   : Limbo
+Description             : The UAC have succeeded in creating an
+                          inter-dimensional hyper-transport. The drawback
+                          is the destination appears to be Hell. You must
+                          journey through Hell until you can locate the
+                          source of the anomaly and close the gateway.
+Par Time                : 7:30 UV MAX
+
+Episode and Level #     : MAP22
+Title                   : River Styx
+Description             : You find yourself in a castle at the shores of
+                          the River Styx. Make your way down to the jetty
+                          and take the boat across the river to the
+                          Elysian Plains.
+Par Time                : 6:15 UV MAX
+
+Episode and Level #     : MAP23
+Title                   : Elysian Plains
+Description             : A final resting place for the souls of the heroic
+                          and virtuous. Be careful not to awaken them from
+                          their slumber or they may summon demonic forms
+                          and rise from their graves.
+Par Time                : 7:30 UV MAX
+
+Episode and Level #     : MAP24
+Title                   : Necromanteion
+Description             : Navigate the simple labyrinth beneath the
+                          ancient temple. Watch your back and beware of
+                          traps that may have been set to catch out the
+                          foolish. Seek out the gargoyles it is written in
+                          legend that they conspire to keep a great secret.
+Par Time                : 7:45 UV MAX
+
+Episode and Level #     : MAP25
+Title                   : Hell's Gate
+Description             : You have left the labyrinth and are now high
+                          above it at the heart of the ancient temple. You
+                          are at the door to Hades, the realm of the dead.
+                          The only way is through...
+Par Time                : 12:15 UV MAX
+
+Episode and Level #     : MAP26
+Title                   : Acheron
+Description             : You enter the Acropolis of Acheron, whose river
+                          borders Hell. It is written that the newly-dead
+                          are ferried across it by Charon in order to enter
+                          the Underworld. Be sure to stay alert or you will
+                          be joining them.
+Par Time                : 9:45 UV MAX
+
+Episode and Level #     : MAP27
+Title                   : Phlegethon
+Description             : A place built on a river of blood that boils
+                          souls. Here are punished those who committed
+                          crimes of violence against their fellow men.
+Par Time                : 7:00 UV MAX
+
+Episode and Level #     : MAP28
+Title                   : The Underworld
+Description             : Jaded, you struggle wearily onwards. You sense
+                          your long journey is finally beginning to reach
+                          a conclusion. Enter the fortress and find the
+                          entrance to the Underworld.
+Par Time                : 15:00 UV MAX
+
+Episode and Level #     : MAP29
+Title                   : Cocytus
+Description             : You are about to breach the very center of Hell.
+                          Tread carefully in this hostile environment. The
+                          way to the portal is guarded by many. Many have
+                          tried before you and failed. You are mankinds
+                          last hope.
+Par Time                : 21:45 UV MAX
+
+Episode and Level #     : MAP30
+Title                   : The Final Conflict
+Description             : It sensed your presence as you arrived but it
+                          doesn't appear to be too concerned.
+                          Overconfidence could prove to be it's downfall.
+                          If you can get to the inner sanctum you may catch
+                          it off guard. Only your fate will decide the
+                          outcome now.
+Par Time                : 5:45 UV SPEED
+
+Episode and Level #     : MAP31
+Title                   : Entryway Reloaded
+Description             : You had better hurry if you want to unlock this
+                          maps secret. Looks like it's been built by
+                          demons, rather than humans. You wonder who the
+                          inmates of this corner of hell will be.
+Par Time                : 2:00 UV MAX
+
+Episode and Level #     : MAP32
+Title                   : The Super Secret Level
+Description             : Your efforts will be rewarded if you can complete
+                          this map with 100% secrets. Everyone fails the
+                          first time. If you never know failure, how can
+                          you know success?
+Par Time                : 19:30 UV MAX
+
+===========================================================================
+
+Note on Par Times       : All par times are rounded up to the next multiple
+                          of 15 seconds but if that value was within 5
+                          seconds of the time another 15 seconds was added.
+                          All par times are UV MAX except for MAP30 which
+                          is UV SPEED. MAP15 and 31 par times include
+                          taking the secret exits. I'm not too fast so most
+                          speed runners will probably find the par times
+                          easy to beat.
+
+Gameplay Tips           : In total there are 170 secrets littered
+                          throughout the 32 maps. (Approx 5 per map, 32
+                          on MAP32). Please try to find them all as they
+                          will aid your journey greatly.
+                          They all have some clue as to where they are you
+                          just need to be observant or make an educated
+                          guess.
+
+                          If you are stuck on the following maps these tips
+                          may be of some help:
+
+MAP09                   : You only have a short time until the invasion
+                          starts. The easier the skill level the more time
+                          you have. Drain the reactor and redirect the
+                          portal to the crusher as fast as possible. Close
+                          the doors surrounding the crusher for the best
+                          results. If you use original Doom2 on UV you may
+                          have a hard time as there are some arch viles.
+
+MAP18                   : Don't shoot anything until you have activated the
+                          security grid. There are a couple of clues left
+                          around that will guide you. There are a couple of
+                          areas that you can make safe if you really want
+                          to take out something that's been chasing you,
+                          but it may be easier just to lock them out and
+                          take them out later. There is always some way to
+                          avoid the demons, you just need to figure it out.
+                          It should be safe to shoot about 10 seconds after
+                          activating the security grid.
+
+MAP32                   : You will need your wits about you to complete
+                          this level with 100% secrets. One of the earlier
+                          secrets is on a time delay, make sure you get to
+                          it within 30 seconds.
+                          If you can't make the time delay door have a
+                          think because there is another way to do it that
+                          requires less effort though it could take a bit
+                          longer if you were concerned about the time.
+
+Specific Problems       : When played with the original Doom 2 v1.9 the
+                          following problems can occur:
+
+                          MAP01 - The health potions at the 2nd secret can
+                                  jump into the air if the secret is
+                                  activated before they are picked up, this
+                                  is due to the way Doom moves things.
+                          MAP03 - Be careful When looking in from yellow
+                                  door area as you can get a Visplane
+                                  overflow .
+                          MAP07 - It is possible to get trapped (no exit)
+                                  if you keep killing resurrected demons.
+                                  You can get a visplane overflow when
+                                  the whole level is open and looking in
+                                  from the outside area.
+                          MAP11 - In the warehouse you can get a hall of
+                                  mirrors when stand by the big closed
+                                  doors and look inward.
+                          MAP20 - There may a couple of barely noticeable
+                                  Halls of Mirrors at various points.
+                          MAP22 - At start area when up on the right (you
+                                  get there later on) it is possible to get
+                                  a visplane overflow when looking towards
+                                  the shotgun.
+                          MAP26 - When entering the super shotgun area just
+                                  before the red key you can get a visplane
+                                  overflow if you are looking straight
+                                  ahead.
+
+Source Port Details     : D2RELOAD.WAD builds with glBSP 2.05, 2.10c, 2.20
+                          and 2.24 and reports 0 serious warnings,
+                          0 minor warnings.
+
+                          Chocolate Doom 1.2.1
+                           As listed above for original Doom 2.
+
+                          PrBoom 2.4.7
+                           No gameplay problems.
+                           DEMO2 desyncs very slightly at the end.
+
+                          ZDoom v2.1.7
+                           No gameplay problems.
+                           Demos not supported.
+
+                          GZDoom v1.2.0
+                           No gameplay problems.
+                           Demos not supported.
+
+                          Skulltag 0.97d5
+                           No gameplay problems.
+                           Demos not supported.
+
+                          If you are using the nashgore mod with zdoom
+                          based ports you may experience an extreme
+                          slowdown on MAP18 after activating the security
+                          grid. Please be patient because the game does
+                          return to normal eventually.
+
+                          Doomsday 1.9 beta 6.7
+                           A shame so many problems because it looks so
+                           great.
+                           Problems:
+                           Demos not supported.
+                           MAP01 It is possible to go through a wall and
+                                 out of the map in the box room.
+                           MAP13 The earthquake ;) at the exit lowers to
+                                 far and prevents the player exiting but if
+                                 you are quick you can make it otherwise
+                                 use noclip.
+                           MAP26 The Cyberdemon and Spiderdemon area
+                                 doesn't lower correctly and prevents
+                                 access to the yellow key. It is also
+                                 possible to run through one of the walls
+                                 in this area. Use no clip to get the
+                                 yellow key.
+                           This port draws some transparent textures
+                           incorrectly. This causes problems because
+                           transparent textures are used quite a lot for
+                           barriers etc. Sometimes the barriers aren't
+                           visible at all which will cause a lot of
+                           confusion for the player.
+                           Draws some lower textures incorrectly (if you
+                           have a lift which has a window at the bottom,
+                           the lower texture alignment sometimes looks
+                           wrong).
+                           Enemies can see you when they shouldn't i.e. if
+                           you are on the top of a lift and they are at the
+                           bottom or vice versa and there is no line of
+                           sight they can still see you and you can hear
+                           them shooting at you.
+                           It is possible to get stuck in enemies and for
+                           them to get stuck in each other.
+                           Whether the rendering problems are related to my
+                           ATI graphics card or not I am not sure.
+
+                          Risen3D v2.2.0.4:
+                           Problems:
+                           Demos not supported.
+                           MAP06 Half way up the comms tower an invisible
+                                 wall blocks the rest of the way up, use
+                                 no clip as a workaround.
+                           MAP18 In one part of the map the idea is to get
+                                 the monsters to fight each other so that
+                                 you can sneak passed but this doesn't work
+                                 in Risen3D (but you can just run passed
+                                 anyway).
+                           MAP22 Has problems rendering the RL room. (parts
+                                 of the floor are invisible).
+                                 Texture drawing problem in BFG secret area
+                                 (middle texture not clipped).
+                           MAP28 Has problems rendering the area near the
+                                 exit (floor is invisible).
+                           Other When a floor is raised and becomes a lift,
+                                 the lift makes the floor raising sound
+                                 when it is activated as well as the lift
+                                 sound.
+                                 When the player closes a switched door
+                                 that is open the door open sound plays.
+
+                          Edge v1.31 Win32
+                           Problems:
+                           Demos not supported.
+                           MAP30 The auto aim prevents shooting the boss
+                                 brain but there is an option to turn it
+                                 off or use mlook.
+                           MAP32 The music for MAP31 plays.
+                                 Secret 22 is inaccessible, the barrel
+                                 doesn't seem to activate the trigger.
+                                 Secret 26 is inaccessible because the
+                                 stairs to and from it don't build.
+                                 On one playthrough the door at secret 04
+                                 locked but I have not been able to 
+                                 recreate this.
+                           Some switch textures appear opposite (pressed
+                           instead of unpressed and vice versa).
+                           The built in GLBSP reports 2 minor warnings.
+                           The raise and change texture trigger works
+                           differently (sets texture to sector rather than
+                           trigger) which can make the floors look odd.
+                           When you teleport the player doesn't always face
+                           the same way as the teleport destination thing.
+                           Music seems to sound off key (using System
+                           option).
+
+                          Vavoom 1.30 for Windows
+                           Problems:
+                           Demos not supported.
+                           MAP21 There was a problem with the monsters
+                                 activating early from sound in one of the
+                                 areas but I've modified the map to get
+                                 around it.
+                           MAP29 Vavoom crashed a couple of times while
+                                 playing this map, not sure why.
+                           Automap shows secret areas that would normally
+                           be hidden.
+
+                          ZDaemon 1.08.08
+                           Problems:
+                           Demos not supported.
+                           MAP21 Had a similar problem to Vavoom with
+                                 sound, modified map to compensate.
+                           MAP32 Secret 22 is inaccessible, the barrel
+                                 doesn't seem to activate the trigger.
+                           Gameplay is slightly different because the
+                           monsters behave differently (they can open
+                           turbo doors).
+
+                          Eternity Engine v3.35.92
+                           Problems:
+                           MAP20 Eternity crashed a couple of times.
+                           DEMO1 and DEMO2 dsync slightly at the end.
+
+                          Odamex win32 0.4.3
+                           Problems:
+                           MAP30 Boss sight sound fades as you move away
+                           from it so you have to wait for it to finish if
+                           you want to hear it.
+                           The helper demo HELP18 goes out of sync, but
+                           then works for quite a while before going
+                           completely out of sync (in console type
+                           'playdemo HELP18').
+                           Map names displayed in automap are off by one
+                           i.e. MAP02 displays description for MAP01.
+                           On some maps (19, 20) the flats are drawn
+                           misaligned.
+                           MAP25 Crashed once with unhandled exception.
+
+                          Doom Legacy 1.42 Win32
+                           Problems:
+                           MAP02 The third secret is inaccessible because
+                                 the door drops immediately when triggered.
+                                 Use no clip to get in.
+                           MAP08, 09, 20 There is a problem drawing the
+                                 patches / textures for the ends of the
+                                 bridge.
+                           MAP32 One of the secrets requires you to rocket
+                                 jump but I can't seem to do it.
+                           Demos DEMO1, DEMO2 and DEMO3 play but go out of
+                           sync.
+                           The helper demo HELP18 goes out of sync similar
+                           to Odamex but strangely seems to play a bit
+                           longer than Odamex.

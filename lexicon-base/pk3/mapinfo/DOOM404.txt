@@ -1,0 +1,329 @@
+// Doom 404 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D40401 "trouble ticket"
+{
+	titlepatch = "D404V00"
+	next = "D40402"
+	secretnext = "D40402"
+	sky1 = "SKY1"
+	music = "D_D40401"
+	intermusic = "D_D404IN"
+}
+
+map D40402 "bad signal"
+{
+	titlepatch = "D404V01"
+	next = "D40403"
+	secretnext = "D40403"
+	sky1 = "SKY1"
+	music = "D_D40402"
+	intermusic = "D_D404IN"
+}
+
+map D40403 "pebkac"
+{
+	titlepatch = "D404V02"
+	next = "D40404"
+	secretnext = "D40404"
+	sky1 = "SKY1"
+	music = "D_D40403"
+	intermusic = "D_D404IN"
+}
+
+map D40404 "system access"
+{
+	titlepatch = "D404V03"
+	next = "D40405"
+	secretnext = "D40405"
+	sky1 = "SKY1"
+	music = "D_D40404"
+	intermusic = "D_D404IN"
+}
+
+map D40405 "server room"
+{
+	titlepatch = "D404V04"
+	next = "D40406"
+	secretnext = "D40406"
+	sky1 = "SKY1"
+	music = "D_D40405"
+	intermusic = "D_D404IN"
+}
+
+map D40406 "interface"
+{
+	titlepatch = "D404V05"
+	next = "D40407"
+	secretnext = "D40407"
+	sky1 = "SKY1"
+	music = "D_D40406"
+	intermusic = "D_D404IN"
+}
+
+map D40407 "firewall"
+{
+	titlepatch = "D404V06"
+	next = "D40408"
+	secretnext = "D40408"
+	sky1 = "SKY1"
+	music = "D_D40407"
+	intermusic = "D_D404IN"
+	Map07Special
+}
+
+map D40408 "random access"
+{
+	titlepatch = "D404V07"
+	next = "D40409"
+	secretnext = "D40409"
+	sky1 = "SKY1"
+	music = "D_D40408"
+	intermusic = "D_D404IN"
+}
+
+map D40409 "hard drive"
+{
+	titlepatch = "D404V08"
+	next = "D40410"
+	secretnext = "D40410"
+	sky1 = "SKY1"
+	music = "D_D40409"
+	intermusic = "D_D404IN"
+}
+
+map D40410 "fat32"
+{
+	titlepatch = "D404V09"
+	next = "D40411"
+	secretnext = "D40411"
+	sky1 = "SKY1"
+	music = "D_D40410"
+	intermusic = "D_D404IN"
+}
+
+map D40411 "infinite loop"
+{
+	titlepatch = "D404V10"
+	next = "D40412"
+	secretnext = "D40412"
+	sky1 = "SKY1"
+	music = "D_D40411"
+	intermusic = "D_D404IN"
+}
+
+map D40412 "machine code"
+{
+	titlepatch = "D404V11"
+	next = "D40413"
+	secretnext = "D40413"
+	sky1 = "SKY2"
+	music = "D_D40412"
+	intermusic = "D_D404IN"
+}
+
+map D40413 "bugged"
+{
+	titlepatch = "D404V12"
+	next = "D40414"
+	secretnext = "D40414"
+	sky1 = "SKY2"
+	music = "D_D40413"
+	intermusic = "D_D404IN"
+}
+
+map D40414 "recycle bin"
+{
+	titlepatch = "D404V13"
+	next = "D40415"
+	secretnext = "D40415"
+	sky1 = "SKY2"
+	music = "D_D40414"
+	intermusic = "D_D404IN"
+}
+
+map D40415 "password protected"
+{
+	titlepatch = "D404V14"
+	next = "D40416"
+	secretnext = "D40431"
+	sky1 = "SKY2"
+	music = "D_D40415"
+	intermusic = "D_D404IN"
+}
+
+map D40416 "defrag"
+{
+	titlepatch = "D404V15"
+	next = "D40417"
+	secretnext = "D40417"
+	sky1 = "SKY2"
+	music = "D_D40416"
+	intermusic = "D_D404IN"
+}
+
+map D40417 "cpu"
+{
+	titlepatch = "D404V16"
+	next = "D40418"
+	secretnext = "D40418"
+	sky1 = "SKY2"
+	music = "D_D40417"
+	intermusic = "D_D404IN"
+}
+
+map D40418 "bad sector"
+{
+	titlepatch = "D404V17"
+	next = "D40419"
+	secretnext = "D40419"
+	sky1 = "SKY2"
+	music = "D_D40418"
+	intermusic = "D_D404IN"
+}
+
+map D40419 "crash"
+{
+	titlepatch = "D404V18"
+	next = "D40420"
+	secretnext = "D40420"
+	sky1 = "SKY2"
+	music = "D_D40419"
+	intermusic = "D_D404IN"
+}
+
+map D40420 "portal"
+{
+	titlepatch = "D404V19"
+	next = "D40421"
+	secretnext = "D40421"
+	sky1 = "SKY2"
+	music = "D_D40420"
+	intermusic = "D_D404IN"
+}
+
+map D40421 "daemon"
+{
+	titlepatch = "D404V20"
+	next = "D40422"
+	secretnext = "D40422"
+	sky1 = "SKY3"
+	music = "D_D40421"
+	intermusic = "D_D404IN"
+}
+
+map D40422 "terrorbyte"
+{
+	titlepatch = "D404V21"
+	next = "D40423"
+	secretnext = "D40423"
+	sky1 = "SKY3"
+	music = "D_D40422"
+	intermusic = "D_D404IN"
+}
+
+map D40423 "biomatrix"
+{
+	titlepatch = "D404V22"
+	next = "D40424"
+	secretnext = "D40424"
+	sky1 = "SKY3"
+	music = "D_D40423"
+	intermusic = "D_D404IN"
+}
+
+map D40424 "sintax"
+{
+	titlepatch = "D404V23"
+	next = "D40425"
+	secretnext = "D40425"
+	sky1 = "SKY3"
+	music = "D_D40424"
+	intermusic = "D_D404IN"
+}
+
+map D40425 "hexadeathimal"
+{
+	titlepatch = "D404V24"
+	next = "D40426"
+	secretnext = "D40426"
+	sky1 = "SKY3"
+	music = "D_D40425"
+	intermusic = "D_D404IN"
+}
+
+map D40426 "encryption"
+{
+	titlepatch = "D404V25"
+	next = "D40427"
+	secretnext = "D40427"
+	sky1 = "SKY3"
+	music = "D_D40426"
+	intermusic = "D_D404IN"
+}
+
+map D40427 "demesne"
+{
+	titlepatch = "D404V26"
+	next = "D40428"
+	secretnext = "D40428"
+	sky1 = "SKY3"
+	music = "D_D40427"
+	intermusic = "D_D404IN"
+}
+
+map D40428 "icon"
+{
+	titlepatch = "D404V27"
+	next = "D40429"
+	secretnext = "D40429"
+	sky1 = "SKY3"
+	music = "D_D40428"
+	intermusic = "D_D404IN"
+}
+
+map D40429 "hellmaker"
+{
+	titlepatch = "D404V28"
+	next = "D40430"
+	secretnext = "D40430"
+	sky1 = "SKY3"
+	music = "D_D40429"
+	intermusic = "D_D404IN"
+}
+
+map D40430 "terminal"
+{
+	titlepatch = "D404V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_D40430"
+	intermusic = "D_D404IN"
+	allowmonstertelefrags
+}
+
+map D40431 "nazi shooter!"
+{
+	titlepatch = "D404V30"
+	next = "D40416"
+	secretnext = "D40432"
+	sky1 = "SKY3"
+	music = "D_D40431"
+	intermusic = "D_D404IN"
+}
+
+map D40432 "thule"
+{
+	titlepatch = "D404V31"
+	next = "D40416"
+	secretnext = "D40416"
+	sky1 = "SKY3"
+	music = "D_D40432"
+	intermusic = "D_D404IN"
+}

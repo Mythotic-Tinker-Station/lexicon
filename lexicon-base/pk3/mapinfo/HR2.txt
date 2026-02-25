@@ -1,0 +1,393 @@
+// Hell Revealed 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HR2001 "IGNITION!"
+{
+	titlepatch = "HR20V00"
+	next = "HR2002"
+	secretnext = "HR2002"
+	sky1 = "HR200256"
+	music = "D_HR2001"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2002 "High Voltage"
+{
+	titlepatch = "HR20V01"
+	next = "HR2003"
+	secretnext = "HR2003"
+	sky1 = "HR200256"
+	music = "D_HR2002"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2003 "Shackled"
+{
+	titlepatch = "HR20V02"
+	next = "HR2004"
+	secretnext = "HR2004"
+	sky1 = "HR200256"
+	music = "D_HR2003"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2004 "Reluctant Pain"
+{
+	titlepatch = "HR20V03"
+	next = "HR2005"
+	secretnext = "HR2005"
+	sky1 = "HR200256"
+	music = "D_HR2004"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2005 "Insatanity"
+{
+	titlepatch = "HR20V04"
+	next = "HR2006"
+	secretnext = "HR2006"
+	sky1 = "HR200256"
+	music = "D_HR2005"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2006 "Revival"
+{
+	titlepatch = "HR20V05"
+	next = "HR2007"
+	secretnext = "HR2007"
+	sky1 = "HR200256"
+	music = "D_HR2006"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2007 "Not That Simple II"
+{
+	titlepatch = "HR20V06"
+	next = "HR2008"
+	secretnext = "HR2008"
+	sky1 = "HR200256"
+	music = "D_HR2007"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+	Map07Special
+}
+
+map HR2008 "Ballistics"
+{
+	titlepatch = "HR20V07"
+	next = "HR2009"
+	secretnext = "HR2009"
+	sky1 = "HR200256"
+	music = "D_HR2008"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2009 "The Siege II"
+{
+	titlepatch = "HR20V08"
+	next = "HR2010"
+	secretnext = "HR2010"
+	sky1 = "HR200256"
+	music = "D_HR2009"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2010 "Base Blaze"
+{
+	titlepatch = "HR20V09"
+	next = "HR2011"
+	secretnext = "HR2011"
+	sky1 = "HR200256"
+	music = "D_HR2010"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2011 "Raw Hatred"
+{
+	titlepatch = "HR20V10"
+	next = "HR2012"
+	secretnext = "HR2012"
+	sky1 = "HR200256"
+	music = "D_HR2011"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2012 "Anti Static"
+{
+	titlepatch = "HR20V11"
+	next = "HR2013"
+	secretnext = "HR2013"
+	sky1 = "HR200257"
+	music = "D_HR2012"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2013 "Hardcore"
+{
+	titlepatch = "HR20V12"
+	next = "HR2014"
+	secretnext = "HR2014"
+	sky1 = "HR200257"
+	music = "D_HR2013"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2014 "Metal Meltdown"
+{
+	titlepatch = "HR20V13"
+	next = "HR2015"
+	secretnext = "HR2015"
+	sky1 = "HR200257"
+	music = "D_HR2014"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2015 "The Path II"
+{
+	titlepatch = "HR20V14"
+	next = "HR2016"
+	secretnext = "HR2031"
+	sky1 = "HR200257"
+	music = "D_HR2015"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2016 "The Chapel Of Black Granite"
+{
+	titlepatch = "HR20V15"
+	next = "HR2017"
+	secretnext = "HR2017"
+	sky1 = "HR200257"
+	music = "D_HR2016"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2017 "An Eye For An Eye"
+{
+	titlepatch = "HR20V16"
+	next = "HR2018"
+	secretnext = "HR2018"
+	sky1 = "HR200257"
+	music = "D_HR2017"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2018 "Excess Meat"
+{
+	titlepatch = "HR20V17"
+	next = "HR2019"
+	secretnext = "HR2019"
+	sky1 = "HR200257"
+	music = "D_HR2018"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2019 "Mind Trap"
+{
+	titlepatch = "HR20V18"
+	next = "HR2020"
+	secretnext = "HR2020"
+	sky1 = "HR200257"
+	music = "D_HR2019"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2020 "Fear Of The Dark"
+{
+	titlepatch = "HR20V19"
+	next = "HR2021"
+	secretnext = "HR2021"
+	sky1 = "HR200257"
+	music = "D_HR2020"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2021 "Conflux"
+{
+	titlepatch = "HR20V20"
+	next = "HR2022"
+	secretnext = "HR2022"
+	sky1 = "HR200258"
+	music = "D_HR2021"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2022 "Sewer Slaughter"
+{
+	titlepatch = "HR20V21"
+	next = "HR2023"
+	secretnext = "HR2023"
+	sky1 = "HR200258"
+	music = "D_HR2022"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2023 "When The Heavens Fall"
+{
+	titlepatch = "HR20V22"
+	next = "HR2024"
+	secretnext = "HR2024"
+	sky1 = "HR200258"
+	music = "D_HR2023"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2024 "The Imnost Dens III"
+{
+	titlepatch = "HR20V23"
+	next = "HR2025"
+	secretnext = "HR2025"
+	sky1 = "HR200258"
+	music = "D_HR2024"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2025 "The End Is Nigh"
+{
+	titlepatch = "HR20V24"
+	next = "HR2026"
+	secretnext = "HR2026"
+	sky1 = "HR200258"
+	music = "D_HR2025"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2026 "Dis 2000"
+{
+	titlepatch = "HR20V25"
+	next = "HR2027"
+	secretnext = "HR2027"
+	sky1 = "HR200258"
+	music = "D_HR2026"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2027 "Resistance Remains"
+{
+	titlepatch = "HR20V26"
+	next = "HR2028"
+	secretnext = "HR2028"
+	sky1 = "HR200258"
+	music = "D_HR2027"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2028 "Beyond The Sea"
+{
+	titlepatch = "HR20V27"
+	next = "HR2029"
+	secretnext = "HR2029"
+	sky1 = "HR200258"
+	music = "D_HR2028"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2029 "Hell's Cauldron"
+{
+	titlepatch = "HR20V28"
+	next = "HR2030"
+	secretnext = "HR2030"
+	sky1 = "HR200258"
+	music = "D_HR2029"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2030 "Source Control"
+{
+	titlepatch = "HR20V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HR200258"
+	music = "D_HR2030"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+	allowmonstertelefrags
+}
+
+map HR2031 "The Descent II"
+{
+	titlepatch = "HR20V30"
+	next = "HR2016"
+	secretnext = "HR2032"
+	sky1 = "HR200258"
+	music = "D_HR2031"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}
+
+map HR2032 "Playground"
+{
+	titlepatch = "HR20V31"
+	next = "HR2016"
+	secretnext = "HR2016"
+	sky1 = "HR200258"
+	music = "D_HR2032"
+	intermusic = "D_HR20IN"
+	ExitPic = "HR20INT"
+	EnterPic = "HR20INT"
+}

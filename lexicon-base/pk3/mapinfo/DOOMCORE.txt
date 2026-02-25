@@ -1,0 +1,935 @@
+// Doom Core Trilogy
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DCTL01 "Stratos One"
+{
+	titlepatch = "DCTLV00"
+	next = "DCTL02"
+	secretnext = "DCTL02"
+	sky1 = "DCTL0277"
+	music = "D_DCTL01"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL02 "Silence of the Lambs"
+{
+	titlepatch = "DCTLV01"
+	next = "DCTL03"
+	secretnext = "DCTL03"
+	sky1 = "DCTL0277"
+	music = "D_DCTL02"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL03 "Fortress Command"
+{
+	titlepatch = "DCTLV02"
+	next = "DCTL04"
+	secretnext = "DCTL04"
+	sky1 = "DCTL0277"
+	music = "D_DCTL03"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL04 "Locked & Loaded"
+{
+	titlepatch = "DCTLV03"
+	next = "DCTL05"
+	secretnext = "DCTL05"
+	sky1 = "DCTL0277"
+	music = "D_DCTL04"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL05 "Echoes"
+{
+	titlepatch = "DCTLV04"
+	next = "DCTL06"
+	secretnext = "DCTL06"
+	sky1 = "DCTL0277"
+	music = "D_DCTL05"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL06 "Kingdom Come"
+{
+	titlepatch = "DCTLV05"
+	next = "DCTL07"
+	secretnext = "DCTL07"
+	sky1 = "DCTL0277"
+	music = "D_DCTL06"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL07 "Maximum Carnage"
+{
+	titlepatch = "DCTLV06"
+	next = "DCTL08"
+	secretnext = "DCTL08"
+	sky1 = "DCTL0277"
+	music = "D_DCTL07"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+	Map07Special
+}
+
+map DCTL08 "The Flood"
+{
+	titlepatch = "DCTLV07"
+	next = "DCTL09"
+	secretnext = "DCTL09"
+	sky1 = "DCTL0277"
+	music = "D_DCTL08"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL09 "The Foxtrot"
+{
+	titlepatch = "DCTLV08"
+	next = "DCTL10"
+	secretnext = "DCTL10"
+	sky1 = "DCTL0277"
+	music = "D_DCTL09"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL10 "Artillery Base"
+{
+	titlepatch = "DCTLV09"
+	next = "DCTL11"
+	secretnext = "DCTL11"
+	sky1 = "DCTL0277"
+	music = "D_DCTL10"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL11 "The Cyberstation"
+{
+	titlepatch = "DCTLV10"
+	next = "DCTL12"
+	secretnext = "DCTL12"
+	sky1 = "DCTL0277"
+	music = "D_DCTL11"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL12 "The Old Abandoned Mill"
+{
+	titlepatch = "DCTLV11"
+	next = "DCTL13"
+	secretnext = "DCTL13"
+	sky1 = "DCTL0278"
+	music = "D_DCTL12"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL13 "Subterranean Suburbs"
+{
+	titlepatch = "DCTLV12"
+	next = "DCTL14"
+	secretnext = "DCTL14"
+	sky1 = "DCTL0278"
+	music = "D_DCTL13"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL14 "Magnum Opus"
+{
+	titlepatch = "DCTLV13"
+	next = "DCTL15"
+	secretnext = "DCTL15"
+	sky1 = "DCTL0278"
+	music = "D_DCTL14"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL15 "Toxic Wastelands"
+{
+	titlepatch = "DCTLV14"
+	next = "DCTL16"
+	secretnext = "DCTL31"
+	sky1 = "DCTL0278"
+	music = "D_DCTL15"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL16 "Fistful of Lead"
+{
+	titlepatch = "DCTLV15"
+	next = "DCTL17"
+	secretnext = "DCTL17"
+	sky1 = "DCTL0278"
+	music = "D_DCTL16"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL17 "Spire of A Dove"
+{
+	titlepatch = "DCTLV16"
+	next = "DCTL18"
+	secretnext = "DCTL18"
+	sky1 = "DCTL0278"
+	music = "D_DCTL17"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL18 "Fueling Docks"
+{
+	titlepatch = "DCTLV17"
+	next = "DCTL19"
+	secretnext = "DCTL19"
+	sky1 = "DCTL0278"
+	music = "D_DCTL18"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL19 "Mountain Stronghold"
+{
+	titlepatch = "DCTLV18"
+	next = "DCTL20"
+	secretnext = "DCTL20"
+	sky1 = "DCTL0278"
+	music = "D_DCTL19"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL20 "Core Babylon"
+{
+	titlepatch = "DCTLV19"
+	next = "DCTL21"
+	secretnext = "DCTL21"
+	sky1 = "DCTL0278"
+	music = "D_DCTL20"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL21 "Remembered Fear"
+{
+	titlepatch = "DCTLV20"
+	next = "DCTL22"
+	secretnext = "DCTL22"
+	sky1 = "DCTL0279"
+	music = "D_DCTL21"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL22 "Gehenna"
+{
+	titlepatch = "DCTLV21"
+	next = "DCTL23"
+	secretnext = "DCTL23"
+	sky1 = "DCTL0279"
+	music = "D_DCTL22"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL23 "Nexus"
+{
+	titlepatch = "DCTLV22"
+	next = "DCTL24"
+	secretnext = "DCTL24"
+	sky1 = "DCTL0279"
+	music = "D_DCTL23"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL24 "Beyond The Firestorm"
+{
+	titlepatch = "DCTLV23"
+	next = "DCTL25"
+	secretnext = "DCTL25"
+	sky1 = "DCTL0279"
+	music = "D_DCTL24"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL25 "Incubator"
+{
+	titlepatch = "DCTLV24"
+	next = "DCTL26"
+	secretnext = "DCTL26"
+	sky1 = "DCTL0279"
+	music = "D_DCTL25"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL26 "Cages Apart"
+{
+	titlepatch = "DCTLV25"
+	next = "DCTL27"
+	secretnext = "DCTL27"
+	sky1 = "DCTL0279"
+	music = "D_DCTL26"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL27 "Walkway"
+{
+	titlepatch = "DCTLV26"
+	next = "DCTL28"
+	secretnext = "DCTL28"
+	sky1 = "DCTL0279"
+	music = "D_DCTL27"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL28 "Unknown"
+{
+	titlepatch = "DCTLV27"
+	next = "DCTL29"
+	secretnext = "DCTL29"
+	sky1 = "DCTL0279"
+	music = "D_DCTL28"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL29 "The Gutterway"
+{
+	titlepatch = "DCTLV28"
+	next = "DCTL30"
+	secretnext = "DCTL30"
+	sky1 = "DCTL0279"
+	music = "D_DCTL29"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL30 "Frontiers"
+{
+	titlepatch = "DCTLV29"
+	next = "DCTL33"
+	secretnext = "DCTL33"
+	sky1 = "DCTL0279"
+	music = "D_DCTL30"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+	allowmonstertelefrags
+}
+
+map DCTL31 "Dreamscape"
+{
+	titlepatch = "DCTLV30"
+	next = "DCTL16"
+	secretnext = "DCTL32"
+	sky1 = "DCTL0279"
+	music = "D_DCTL31"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL32 "Like A Fist"
+{
+	titlepatch = "DCTLV31"
+	next = "DCTL16"
+	secretnext = "DCTL16"
+	sky1 = "DCTL0279"
+	music = "D_DCTL32"
+	intermusic = "D_DCTL31"
+	ExitPic = "DCTLINT1"
+	EnterPic = "DCTLINT1"
+}
+
+map DCTL33 "Stratos Gate"
+{
+	titlepatch = "DCTLV32"
+	next = "DCTL34"
+	secretnext = "DCTL34"
+	sky1 = "DCTL0771"
+	music = "D_DCTL33"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL34 "Soldier's Stand"
+{
+	titlepatch = "DCTLV33"
+	next = "DCTL35"
+	secretnext = "DCTL35"
+	sky1 = "DCTL0771"
+	music = "D_DCTL34"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL35 "The Cup of Wrath"
+{
+	titlepatch = "DCTLV34"
+	next = "DCTL36"
+	secretnext = "DCTL36"
+	sky1 = "DCTL0771"
+	music = "D_DCTL35"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL36 "Divine Judgement"
+{
+	titlepatch = "DCTLV35"
+	next = "DCTL37"
+	secretnext = "DCTL37"
+	sky1 = "DCTL0771"
+	music = "D_DCTL36"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL37 "Substance"
+{
+	titlepatch = "DCTLV36"
+	next = "DCTL38"
+	secretnext = "DCTL38"
+	sky1 = "DCTL0771"
+	music = "D_DCTL37"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL38 "Sledgehammer"
+{
+	titlepatch = "DCTLV37"
+	next = "DCTL39"
+	secretnext = "DCTL39"
+	sky1 = "DCTL0771"
+	music = "D_DCTL38"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL39 "Lazarus"
+{
+	titlepatch = "DCTLV38"
+	next = "DCTL40"
+	secretnext = "DCTL40"
+	sky1 = "DCTL0771"
+	music = "D_DCTL39"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+	Map07Special
+}
+
+map DCTL40 "Triplet II"
+{
+	titlepatch = "DCTLV39"
+	next = "DCTL41"
+	secretnext = "DCTL41"
+	sky1 = "DCTL0771"
+	music = "D_DCTL40"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL41 "Fracture"
+{
+	titlepatch = "DCTLV40"
+	next = "DCTL42"
+	secretnext = "DCTL42"
+	sky1 = "DCTL0771"
+	music = "D_DCTL41"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL42 "The Tech Towers"
+{
+	titlepatch = "DCTLV41"
+	next = "DCTL42"
+	secretnext = "DCTL42"
+	sky1 = "DCTL0771"
+	music = "D_DCTL42"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL43 "Hello, Cybie!"
+{
+	titlepatch = "DCTLV42"
+	next = "DCTL43"
+	secretnext = "DCTL43"
+	sky1 = "DCTL0771"
+	music = "D_DCTL43"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL44 "Armageddon Valley"
+{
+	titlepatch = "DCTLV43"
+	next = "DCTL44"
+	secretnext = "DCTL44"
+	sky1 = "DCTL0772"
+	music = "D_DCTL44"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL45 "Stronghold Earth"
+{
+	titlepatch = "DCTLV44"
+	next = "DCTL45"
+	secretnext = "DCTL45"
+	sky1 = "DCTL0772"
+	music = "D_DCTL45"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL46 "Tyranny"
+{
+	titlepatch = "DCTLV45"
+	next = "DCTL46"
+	secretnext = "DCTL46"
+	sky1 = "DCTL0772"
+	music = "D_DCTL46"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL47 "Blade Runner"
+{
+	titlepatch = "DCTLV46"
+	next = "DCTL48"
+	secretnext = "DCTL63"
+	sky1 = "DCTL0772"
+	music = "D_DCTL47"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL48 "Dark Zone"
+{
+	titlepatch = "DCTLV47"
+	next = "DCTL49"
+	secretnext = "DCTL49"
+	sky1 = "DCTL0772"
+	music = "D_DCTL48"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL49 "Fatality"
+{
+	titlepatch = "DCTLV48"
+	next = "DCTL50"
+	secretnext = "DCTL50"
+	sky1 = "DCTL0772"
+	music = "D_DCTL49"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL50 "Sleeping Spirits"
+{
+	titlepatch = "DCTLV49"
+	next = "DCTL51"
+	secretnext = "DCTL51"
+	sky1 = "DCTL0772"
+	music = "D_DCTL50"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL51 "Dusk Town"
+{
+	titlepatch = "DCTLV50"
+	next = "DCTL52"
+	secretnext = "DCTL52"
+	sky1 = "DCTL0772"
+	music = "D_DCTL51"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL52 "One Such Reverie"
+{
+	titlepatch = "DCTLV51"
+	next = "DCTL53"
+	secretnext = "DCTL53"
+	sky1 = "DCTL0772"
+	music = "D_DCTL52"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL53 "Sunrise"
+{
+	titlepatch = "DCTLV52"
+	next = "DCTL54"
+	secretnext = "DCTL54"
+	sky1 = "DCTL0277"
+	music = "D_DCTL53"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL54 "Egyptian Plains"
+{
+	titlepatch = "DCTLV53"
+	next = "DCTL55"
+	secretnext = "DCTL55"
+	sky1 = "DCTL0277"
+	music = "D_DCTL54"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL55 "Cyclone Rider"
+{
+	titlepatch = "DCTLV54"
+	next = "DCTL56"
+	secretnext = "DCTL56"
+	sky1 = "DCTL0277"
+	music = "D_DCTL55"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL56 "Sewer System"
+{
+	titlepatch = "DCTLV55"
+	next = "DCTL57"
+	secretnext = "DCTL57"
+	sky1 = "DCTL0277"
+	music = "D_DCTL56"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL57 "Sever Tomorrow"
+{
+	titlepatch = "DCTLV56"
+	next = "DCTL58"
+	secretnext = "DCTL58"
+	sky1 = "DCTL0277"
+	music = "D_DCTL57"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL58 "Fallen Angel"
+{
+	titlepatch = "DCTLV57"
+	next = "DCTL59"
+	secretnext = "DCTL59"
+	sky1 = "DCTL0277"
+	music = "D_DCTL58"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL59 "Godspeed!"
+{
+	titlepatch = "DCTLV58"
+	next = "DCTL60"
+	secretnext = "DCTL60"
+	sky1 = "DCTL0277"
+	music = "D_DCTL59"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL60 "Turbine Accelerator"
+{
+	titlepatch = "DCTLV59"
+	next = "DCTL61"
+	secretnext = "DCTL61"
+	sky1 = "DCTL0277"
+	music = "D_DCTL60"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL61 "Salvation"
+{
+	titlepatch = "DCTLV60"
+	next = "DCTL62"
+	secretnext = "DCTL62"
+	sky1 = "DCTL0277"
+	music = "D_DCTL61"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL62 "Final Doom"
+{
+	titlepatch = "DCTLV61"
+	next = "DCTL65"
+	secretnext = "DCTL65"
+	sky1 = "DCTL0277"
+	music = "D_DCTL62"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL63 "Metal Mansion"
+{
+	titlepatch = "DCTLV62"
+	next = "DCTL48"
+	secretnext = "DCTL64"
+	sky1 = "DCTL0277"
+	music = "D_DCTL63"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL64 "Deadlock"
+{
+	titlepatch = "DCTLV63"
+	next = "DCTL48"
+	secretnext = "DCTL48"
+	sky1 = "DCTL0277"
+	music = "D_DCTL64"
+	intermusic = "D_DCTLIN"
+	ExitPic = "DCTLINT2"
+	EnterPic = "DCTLINT2"
+}
+
+map DCTL65 "East Mezzanine Way"
+{
+	titlepatch = "DCTLV64"
+	next = "DCTL66"
+	secretnext = "DCTL66"
+	sky1 = "DCTL0772"
+	music = "D_DCTL65"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL66 "Stratos Headquarters"
+{
+	titlepatch = "DCTLV65"
+	next = "DCTL67"
+	secretnext = "DCTL67"
+	sky1 = "DCTL0772"
+	music = "D_DCTL66"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL67 "Ancient Mining Technology"
+{
+	titlepatch = "DCTLV66"
+	next = "DCTL68"
+	secretnext = "DCTL68"
+	sky1 = "DCTL0772"
+	music = "D_DCTL67"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL68 "Outpost of The Silent Gravestone"
+{
+	titlepatch = "DCTLV67"
+	next = "DCTL69"
+	secretnext = "DCTL69"
+	sky1 = "DCTL0772"
+	music = "D_DCTL68"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL69 "Beelzebub's Fungus Attic"
+{
+	titlepatch = "DCTLV68"
+	next = "DCTL70"
+	secretnext = "DCTL70"
+	sky1 = "DCTL0772"
+	music = "D_DCTL69"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL70 "Amongst The Deadly Water Chasm"
+{
+	titlepatch = "DCTLV69"
+	next = "DCTL71"
+	secretnext = "DCTL71"
+	sky1 = "DCTL0772"
+	music = "D_DCTL70"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL71 "Trail of Twenty-Four Riddles"
+{
+	titlepatch = "DCTLV70"
+	next = "DCTL72"
+	secretnext = "DCTL72"
+	sky1 = "DCTL0772"
+	music = "D_DCTL71"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+	Map07Special
+}
+
+map DCTL72 "Ion Station"
+{
+	titlepatch = "DCTLV71"
+	next = "DCTL73"
+	secretnext = "DCTL73"
+	sky1 = "DCTL0772"
+	music = "D_DCTL18"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL73 "To Whom They Forsook"
+{
+	titlepatch = "DCTLV72"
+	next = "DCTL74"
+	secretnext = "DCTL74"
+	sky1 = "DCTL0772"
+	music = "D_DCTL72"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL74 "Excursions"
+{
+	titlepatch = "DCTLV73"
+	next = "DCTL75"
+	secretnext = "DCTL75"
+	sky1 = "DCTL0772"
+	music = "D_DCTL73"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL75 "The Last Stand"
+{
+	titlepatch = "DCTLV74"
+	next = "DCTL76"
+	secretnext = "DCTL76"
+	sky1 = "DCTL0772"
+	music = "D_DCTL74"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL76 "Tribute"
+{
+	titlepatch = "DCTLV75"
+	next = "DCTL77"
+	secretnext = "DCTL77"
+	sky1 = "DCTL0772"
+	music = "D_DCTL75"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}
+
+map DCTL77 "Terrace View"
+{
+	titlepatch = "DCTLV76"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DCTL0772"
+	music = "D_DCTL16"
+	intermusic = "D_DCTLI2"
+	ExitPic = "DCTLINT3"
+	EnterPic = "DCTLINT3"
+}

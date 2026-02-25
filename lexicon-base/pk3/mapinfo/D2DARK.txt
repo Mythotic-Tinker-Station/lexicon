@@ -1,0 +1,107 @@
+// Doom II: Dark World Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D2DW01 "gateway"
+{
+	titlepatch = "D2DWV00"
+	next = "D2DW02"
+	secretnext = "D2DW02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map D2DW02 "underhells"
+{
+	titlepatch = "D2DWV01"
+	next = "D2DW03"
+	secretnext = "D2DW03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map D2DW03 "anguish"
+{
+	titlepatch = "D2DWV02"
+	next = "D2DW04"
+	secretnext = "D2DW04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map D2DW04 "the heart"
+{
+	titlepatch = "D2DWV03"
+	next = "D2DW05"
+	secretnext = "D2DW05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map D2DW05 "the wasteyard"
+{
+	titlepatch = "D2DWV04"
+	next = "D2DW06"
+	secretnext = "D2DW06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map D2DW06 "the rise and fall"
+{
+	titlepatch = "D2DWV05"
+	next = "D2DW07"
+	secretnext = "D2DW07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map D2DW07 "dead"
+{
+	titlepatch = "D2DWV06"
+	next = "D2DW08"
+	secretnext = "D2DW08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map D2DW08 "deceive and seduce"
+{
+	titlepatch = "D2DWV07"
+	next = "D2DW09"
+	secretnext = "D2DW09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map D2DW09 "the bloodpit"
+{
+	titlepatch = "D2DWV08"
+	next = "D2DW10"
+	secretnext = "D2DW10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}
+
+map D2DW10 "spawning pool"
+{
+	titlepatch = "D2DWV09"
+	next = "D2DW11"
+	secretnext = "D2DW11"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+}
+
+map D2DW11 "cocytus"
+{
+	titlepatch = "D2DWV10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+}

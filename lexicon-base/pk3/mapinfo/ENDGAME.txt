@@ -1,0 +1,80 @@
+// Endgame Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ENGM01 "Endgame Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "ENGM02"
+	secretnext = "ENGM02"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_RUNNIN"
+}
+
+map ENGM02 "Endgame Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "ENGM03"
+	secretnext = "ENGM03"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_STALKS"
+}
+
+map ENGM03 "Endgame Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "ENGM04"
+	secretnext = "ENGM04"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_COUNTD"
+}
+
+map ENGM04 "Endgame Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "ENGM05"
+	secretnext = "ENGM05"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_BETWEE"
+}
+
+map ENGM05 "Endgame Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "ENGM06"
+	secretnext = "ENGM06"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_DOOM"
+}
+
+map ENGM06 "Endgame Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "ENGM07"
+	secretnext = "ENGM07"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_THE_DA"
+}
+
+map ENGM07 "Endgame Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "ENGM08"
+	secretnext = "ENGM08"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map ENGM08 "Endgame Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ENGM0294"
+	music = "$MUSIC_DDTBLU"
+}

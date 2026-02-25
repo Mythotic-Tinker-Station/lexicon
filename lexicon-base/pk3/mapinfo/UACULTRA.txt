@@ -1,0 +1,140 @@
+// UAC Ultra Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UACU01 "Dig"
+{
+	titlepatch = "UACUV00"
+	next = "UACU02"
+	secretnext = "UACU02"
+	sky1 = "SKY1"
+	music = "D_UACU01"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU02 "UAC in Exile"
+{
+	titlepatch = "UACUV01"
+	next = "UACU03"
+	secretnext = "UACU03"
+	sky1 = "SKY1"
+	music = "D_UACU02"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU03 "Sifting Adjunct"
+{
+	titlepatch = "UACUV02"
+	next = "UACU04"
+	secretnext = "UACU04"
+	sky1 = "SKY1"
+	music = "D_UACU03"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU04 "Pyrolysis"
+{
+	titlepatch = "UACUV03"
+	next = "UACU05"
+	secretnext = "UACU05"
+	sky1 = "SKY1"
+	music = "D_UACU04"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU05 "Hardware"
+{
+	titlepatch = "UACUV04"
+	next = "UACU06"
+	secretnext = "UACU06"
+	sky1 = "SKY1"
+	music = "D_UACU05"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU06 "Collapsys"
+{
+	titlepatch = "UACUV05"
+	next = "UACU07"
+	secretnext = "UACU07"
+	sky1 = "SKY1"
+	music = "D_UACU06"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU07 "Haymaker"
+{
+	titlepatch = "UACUV06"
+	next = "UACU08"
+	secretnext = "UACU08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+	Map07Special
+}
+
+map UACU08 "Worst Case Scenario"
+{
+	titlepatch = "UACUV07"
+	next = "UACU09"
+	secretnext = "UACU09"
+	sky1 = "SKY1"
+	music = "D_UACU08"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU09 "Counteraction Terminal"
+{
+	titlepatch = "UACUV08"
+	next = "UACU10"
+	secretnext = "UACU10"
+	sky1 = "SKY1"
+	music = "D_UACU09"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU10 "Skagway"
+{
+	titlepatch = "UACUV09"
+	next = "UACU11"
+	secretnext = "UACU11"
+	sky1 = "SKY1"
+	music = "D_UACU10"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}
+
+map UACU11 "Sick"
+{
+	titlepatch = "UACUV10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_UACUIN"
+	ExitPic = "UACUINT"
+	EnterPic = "UACUINT"
+}

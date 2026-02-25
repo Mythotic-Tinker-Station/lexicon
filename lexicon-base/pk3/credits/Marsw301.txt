@@ -1,0 +1,477 @@
+================================================================
+Title                   : MARSWAR  V3.01
+Author                  : Nathan Lineback
+Email Address           : lineback@toastytech.com
+Misc. Author Info       : These are some old levels I originally did
+                          back in 1995, with some anti M$ stuff added 
+                          in 98. 
+Requirements            : Doom II V1.9 or a port such as Skulltag,
+                          Zdoom, or Jdoom. 
+
+Changed in version 3:
+
+   * Fixed many problems caused by the ability to jump.
+   * Completed the three levels (map 15, 20, and 25) that
+     were supposed to be there originally. 
+   * Fixed co-op bugs.
+   * Improved deathmatch modes. 
+   * Added the original MOD music files. Zdoom, Jdoom, and 
+     Skulltag will play them instead of the MIDI versions. 
+   * Objects face the right direction when 3d models are used (Jdoom)
+
+Changes in version 3.01: 
+   - Fixed the door trap on map29 so it works better in multiplayer.
+   - Modified instruments in 4MAT.MOD (map02) to make it less annoying.
+   - Misc other minor fixes.
+
+Description             : You are a Martian terraformer stuck in a
+                          small station in the middle of nowhere.
+
+                          Since the beginning of the terraforming
+                          project, the United Organizations of Earth
+                          have been threatening to take over. Recent
+                          events have prompted an invasion from
+                          Earth, only something went wrong with their
+                          new "space-warp" capable ships... that were
+                          built by some company with the initials "MS". 
+
+
+Additional Credits to   : Everybody
+================================================================
+
+* Play Information *
+
+Map #                   : All Doom 2 levels.
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes 
+Deathmatch 2-4 Player   : Yes 
+Difficulty Settings     : Yes
+New Sounds              : One
+New Musics              : Yes
+New Graphics            : Yes
+Demos Replaced          : All
+
+* Construction *
+
+Base                    : New level from scratch
+
+Build Time              : All eternity. (And then some!)
+Editor(s) used          : Just ones and zeros. 
+Known Bugs              : There will always be bugs. 
+
+* Copyright / Permissions *
+
+Authors MAY use this level as a base to build additional levels.
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format as long as you include this file intact.
+
+* Where to get this WAD *
+
+http://toastytech.com/doom/
+
+
+Levels in this WAD
+------------------------------
+MAP01: TERRAFORMING STATION       -Big open level
+MAP02: THETA BASE                 -GET THE PLASMA GUN!
+MAP03: MANUFACTURING PLANT        -Who's initials are those?
+MAP04: ALPHA BASE                 -The center of the project!
+MAP05: CRASH SITE                 -Crashed UOE ship
+MAP06: BETA BASE                  -Get the BFG!
+
+MAP07: INFESTATION                -Check out the floating stuff
+MAP08: BUNKER ZERO                -Clean this place out!
+MAP09: DEATH MANAGEMENT           -Small, fun level
+MAP10: TRANSPORT SHIP             -HUGE Martian ship
+MAP11: UOE DROPSHIP               -There is more to this UOE ship..
+
+MAP12: UOE OPERATIONS - EARTH     -You find yourself on EARTH! YUCK!
+MAP13: UOE WAREHOUSE              -Medium sized warehouse
+MAP14: UOE CIVILIAN CENTER        -Exciting detailed level
+MAP15: THE FRINGES                -Huge level
+MAP16: ENLIGHTENMENT              -Check out the floating toothbrush!
+MAP17: UOE COMMERCIAL SECTOR      -Totally surreal
+MAP18: THE EDGE                   -Not a serious level
+MAP19: FOUNDATION                 -Deep underground level
+MAP20: LAND OF THE LAME           -Fight your way to the hell portal!
+
+MAP21: HIGHWAY TO HELL            -The UOE city is consumed by hell!
+MAP22: XEROX                      -Cacodemons xeroxing their butts.
+MAP23: THE GATES OF HELL          -Level is big enough for anybody
+MAP24: 83' EAST                   -Check out my TI/99/4A expansion unit.
+MAP25: 1984                       -This is where they train the zombies.
+MAP26: MAXIMUM SECURITY           -Bizarre computer junk yard.
+MAP27: MARKETING                  -Don't get your head blown off...
+MAP28: DOOM USER INTERFACE        -DUI!
+MAP29: CHOICES                    -Some choice... 
+MAP30: ICON OF SIN                -BILL!!!!!!! 
+
+MAP31: WOLF 3D                    -My old version of Wolf 3D map 1
+MAP32: HELL LABS                  -Contains a zoo.
+
+
+Extended story:
+
+The full story line is not important, but here it is anyway.
+
+It is a thousand or so years in the future and you are a Martian
+terraformer stuck in a small station in the middle of nowhere.
+
+Since the beginning of the terraforming project, the United
+Organizations of Earth have been threatening to take control. They do
+not like the independence that Mars has gained and view Mars as a
+threat.
+
+The United Organizations of Earth are an accumulation of all
+governments, large corporations, and corporate owned governments of
+Earth. For over a hundred years they have tightly controlled the
+population of earth, at an almost microscopic level limiting what
+they are allowed to know and what they may do.
+
+A few months ago, a huge number of radical, highly educated people
+escaped UOE persecution by coming to Mars in a large space-warp
+capable ship they built more or less by themselves without the
+knowledge of the UOE.
+
+This was the last straw for the UOE. They attempted to quickly clone
+the space-warp technology and sent off an invasion force.
+
+Only something went wrong with their new "space-warp" capable
+ships...
+
+------------------------------
+MAP01: TERRAFORMING STATION -Big open level
+
+This has been your home for the last several years. Before that you
+worked in the repair shop in Alpha Base across from the medical
+center. You have been desperately waiting for additional personnel. 
+But there have been many delays so you are still stuck here all by
+yourself.
+
+Day in and day out it is the same thing. The only thing of note
+recently is the slight rise in O2 levels at the lowest levels of the
+nearby river. And tiny robotic insects have been busy processing and
+fertilizing the soil enabling certain genetically enhanced plants to
+grow.
+
+In preparation for the new personnel, you moved some of the larger
+equipment and supplies to a nearby cave.
+
+You hear about the invasion from earth (can't they just leave mars
+alone?) and that something has gone wrong with their ships - their
+warp drives were garbage and mutated everyone on board. Then the
+communications black out came as people began to report hideous
+monsters attacking. Hours later you hear an out of control transport 
+shuttle skid to a stop outside and several bizarre deformed troops - 
+only vaguely recognizable as UOE troops - disembark.
+
+You have a "berserk" pack and a pistol. Time to put a stop to this.
+
+
+MAP02: THETA BASE -GET THE PLASMA GUN!
+-----------------
+
+Once you secure the shuttle, your first stop is Theta Base. This is
+where all the cool tech comes from. They supposedly have developed a
+plasma rifle that is powered by common energy cells, and you need to
+get it!
+
+You had many friends at Theta base, your last contact with them was 
+hours ago and there has been no response since. You don't really want 
+to think about what has happened to them, and it won't be any fun 
+searching the base. But you know they had all kinds of goodies 
+stashed away that might help you.
+
+
+MAP03: MANUFACTURING PLANT -Who's initials are those?
+---------------------------
+
+Once you have some weapons in tow, your second stop is to pick up
+some armor at the manufacturing plant. They had just started 
+producing that when the news of the invasion broke. You make a one
+way entrance through a loading dock in the back, hoping you can
+either get to your shuttle in the front, or grab your old personal
+shuttle that has been here in the shop for weeks now - if they have
+gotten it repaired.
+
+Notes: This is a recycled level from my Wolf3D spear of destiny
+hackup.
+
+Notes: The personal shuttle was original supposed to lead to a
+secret level. This level was originally designed for Doom 1 and E1M3 
+was the level that could exit to a secret level.
+
+MAP04: ALPHA BASE -The center of the project!
+------------------
+
+Finally at the central command post for Mars terraforming, you hope to 
+determine what is going on. But everybody seems to be dead! And 
+someone or something just locked the hanger door behind you!
+
+You recall hiding a high-security keycard inside the equipment in your
+old office. That should get you in to the command area. But can you
+disarm your old booby traps?
+
+MAP05: CRASH SITE -Crashed UOE ship
+------------------
+
+Your investigations turn up that one of the UOE dropships crashed 
+near Beta base. You decided to investigate. What you find is 
+disturbingly demonic - and whatever this is seems to be spreading.
+
+MAP06: BETA BASE -Get the BFG!
+------------------
+
+Determined to get to the heart of the matter you enter the base
+through a crawl space access port in to the central lab. This base
+has been heavily mutated by whatever forces are present. You are
+almost too scared to proceed but you must avenge the lives that have
+been lost and put a stop to this infestation.
+
+Note: This was actually the first original Doom Level I ever made.
+
+MAP07: INFESTATION -Check out the floating stuff
+------------------
+
+This Bizarre structure appears to have popped up out of nowhere, it is 
+full of weird monsters, and within the laws of physics seem to have 
+taken a lunch break!
+
+Note: This is another recycled level from my Spear of Destiny hackup.
+
+
+MAP08: BUNKER ZERO -Clean this place out!
+------------------
+
+You only vaguely recognize this place as once having been the central
+waste recycling center. But many monsters still linger here and must
+be exterminated.
+
+MAP09: DEATH MANAGEMENT -Small, fun level
+--------------------
+
+Another small infested outpost that you must cleanse. You have gotten
+good a that so far, so why not?
+
+Note: This is a recycled level from my Spear of Destiny hackup. This
+was always one of my personal favorites.
+
+MAP10: TRANSPORT SHIP -HUGE Martian ship
+-----------------------
+
+This ship was constructed on earth a long time ago by a person who is 
+only remembered by the masses now as a madman with an impossible 
+dream of making a warp drive capable ship. For decades after he died, 
+the structure was used as a university, one of the few places on 
+earth where people were actually allowed to learn anymore. Advanced 
+learning had been all but abolished by the United Organizations 
+(governments, corporations, and corporate owned governments) of 
+Earth.
+
+Only known to a handful of people, the warp engines buried deep
+within this structure were almost functional and in time they were 
+completed.
+
+Then, a few months prior, a long standing skirmish came to a head and 
+the UOE initiated a crackdown on all who dared defy the complacency 
+laws. Those who would publicly make statements, share information, 
+experiment, or create were rounded up, locked up, punished, 
+reeducated, and more often than not - put to death.
+
+A great many people fled to this structure for protection as it was
+very well fortified. The UOE police and armies attacked, but before 
+the structure could be infiltrated someone, deep within the 
+mechanical bowels of the ship, flipped a switch and the structure - 
+thought by most to be just an odd dome shaped building - raised from 
+the ground and flew in to the sky. And as UOE fighter planes tried to 
+follow it, it suddenly disappeared. The warp drive worked perfectly.
+
+Around the Earth thousands of UOE troops and corporate government 
+officials took a collective a dump in their shorts.
+
+Moments later the ship reappeared over mars and descended to the
+surface where it has been since.
+
+With its defenses used up the mutant invaders have just infiltrated
+the ship. There are very likely many survivors hiding in the old 
+dormitories or in other places deep within the ship. With the rest of 
+the infestation eradicated and with powerful weapons in tow you must 
+come to their rescue.
+
+MAP11: UOE DROPSHIP -There is more to this UOE ship.. 
+--------------------
+
+There were many ships in the UOE fleet that attacked mars, but this
+last intact ship seems to have some kind of link back to earth, and
+to whatever caused this mutant infestation.
+
+MAP12: UOE OPERATIONS - EARTH -You find yourself on EARTH! YUCK!
+--------------------------
+
+You find yourself hurled all the way to earth! Right in to the center
+of the UOE main operations facility where they created their warp
+ships. Immediately it becomes clear by looking at their computers why 
+they had such problems.
+
+And yes, these people are so stupid they have to label their doors as
+"door".
+
+MAP13: UOE WAREHOUSE -Medium sized warehouse
+-----------------------
+
+Just a another spooky warehouse filled with bad guys.
+
+This level started off as an experiment with what I could make using
+boxes and kind of grew out of that.
+
+MAP14: UOE CIVILIAN CENTER -Exciting detailed level
+------------------------
+
+This is another level recycled from my Spear of Destiny hackup. It 
+turned out quite a bit larger than it really needed to be.
+
+MAP15: THE FRINGES -Huge level
+--------------------------
+
+This is a gigantic, surreal level. I had finished this one up a while
+back and finally added it where it belongs in 3.0. 
+
+MAP16: ENLIGHTENMENT -Check out the floating toothbrush!
+---------------------------
+
+There is all kinds of weird stuff in this level, including a floppy 
+disk, cassette tape, and a toothbrush. I put everything in this level 
+including the kitchen sink!
+
+MAP17: UOE COMMERCIAL SECTOR -Totally surreal 
+---------------------------
+
+This level was almost entirely inspired by dreams. There is lots of 
+weird stuff such as switches hidden in compartments in the sky, 
+pillars you have to get on top of and run over fast to "fly" to a 
+hidden location, and at the end a room of cool stuff you can't take 
+with you when you wake up.
+
+MAP18: THE EDGE -Not a serious level
+----------------------
+
+This was my first Doom II level so it has most of the Doom II bad 
+guys in there including the SS Nazis.
+
+MAP19: FOUNDATION -Deep underground level
+-----------------------
+
+The idea here is you are going underground, under the city on earth. 
+This level has various puzzles you have to solve from a central 
+"teleport room".
+
+MAP20: LAND OF THE LAME -Fight your way to the hell portal!
+--------------------------
+
+This is the source of power for the UOE warp engines. As you can tell
+right from the start, the folks here aren't so bright. 
+
+
+MAP21: HIGHWAY TO HELL -The UOE city is consumed by hell!
+-----------------------
+
+You have made it to hell. A subtle story begins to unfold about 
+the evil that controls the UOE and infested your peaceful planet of
+Mars...
+
+Towards the back of this level you have to fight your way through a 
+maze of vacuum tubes and drum memory representing the beginnings of
+technology.
+
+MAP22: XEROX -Cacodemons xeroxing their butts.
+-------------------------
+
+This place has some neat technology, but it looks like somebody is 
+trying to load it all up on to their truck! Who could it be? By the 
+time you can get down there it is all gone.
+
+MAP23: THE GATES OF HELL -Level is big enough for anybody
+------------------------
+
+This tiny little level reads "640k is enough for any one!"
+
+MAP24: 83' EAST -Check out my TI/99/4A expansion unit.
+-----------------------
+
+In the courtyard you can see multiple old computer systems from the 
+1980s including a TRS-80 model III, an Apple II and an expansion box 
+for a TI-99/4A. They are supposed to be staring at a monolith that 
+represents a new threat.
+
+MAP25: 1984 -This is where they train the zombies.
+----------------------
+
+Not much going on here, although the zombies seem to be headed somewhere.
+
+
+MAP26: MAXIMUM SECURITY -Bizarre computer junk yard.
+-----------------------
+
+This level is intentionally non intuitive. At the start you try to go 
+directly to the exit and the last door stalls. It features old 
+computers such as a Mac, Next cube, a MacCharlie, and the maze from 
+the game "MazeWar" of Xerox Alto fame.
+
+MAP27: MARKETING -Don't get your head blown off...
+----------------------
+
+Parts of this level were inspired by dreams. Also as sort of a 
+secret I included the house where I was living at the time I made 
+most of these levels.
+
+MAP28: DOOM USER INTERFACE -DUI!
+--------------------------
+
+The theme of this level is "Tron". I also included several 
+theoretical attempts at how doom could be used for graphing or other 
+applications. The music I used was from Future Crew's "Unreal",
+
+MAP29: CHOICES -Some choice... 
+-------------------
+
+In this level, things are not always what they seem.
+
+MAP30: ICON OF SIN! -BILL!!!!!!! 
+-----------------------------
+
+(Look at your automap!) 
+
+And blast Bill Gates!
+
+This is basically the same as the regular MAP30 but with a smashed
+up version of the terraforming station you started in added. (it was
+somehow brought here to hell with you, no specific reason) and with 
+a giant Bill Gates!
+
+MAP31: WOLF 3D -My old version of Wolf 3D map 1
+----------------------------
+
+Of course this would not be complete without yet another take on the 
+first level of Wolf 3D. I made this before Doom II came out and ID 
+did their own.
+
+MAP32: HELL LABS -Contains a zoo.
+---------------------------
+
+This started off as a kind of laboratory that I actually spent quite 
+a bit of time in trying to discern what various sector or line defs 
+types did. That is what the room with the silver pillars was all 
+about.
+
+The back area was originally just a maze of hallways but I turned it
+in to a "zoo" where you can see each monster in its own habitat. And
+release them and let them shoot it out with each other.
+
+It is not obvious but the first room was made from a copy of MAP03 /
+The manufacturing plant when it was just the first room.
+
+Not a bug: There is a switch that turns out all of the lights. This
+was intentional.
+

@@ -1,0 +1,58 @@
+Actor Lexicon_4MVR_CommanderKeen : CommanderKeen
+{
+	Health 20
+	Height 42
+	-NOGRAVITY
+	States
+	{
+	Spawn:
+		LX63 O -1
+		Loop
+	Death:
+		LX63 PQ	6
+		LX63 R 6 A_Scream
+		LX63 STU 6
+		TNT1 A 12
+		TNT1 A 6 A_NoBlocking
+		TNT1 A 6
+		TNT1 A 6 A_KeenDie
+		TNT1 A -1
+		Stop
+	Pain:
+		TNT1 A 4
+		TNT1 A 8 A_Pain
+		Goto Spawn
+	}
+}
+
+Actor Lexicon_4MVR_BossBrain : BossBrain { Radius 16 }
+
+Actor Lexicon_4MVR_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("4MVR/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}
+
+ACTOR Lexicon_4MVR_Berserk : CustomInventory
+{
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTBERSERK"
+	Inventory.PickupSound "misc/p_pkup"
+	States
+	{
+	Spawn:
+		LX63 V -1
+		Stop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength")
+		TNT1 A 0 HealThing(100, 0)
+		TNT1 A 0 A_SelectWeapon("Fist")
+		Stop
+	}
+}

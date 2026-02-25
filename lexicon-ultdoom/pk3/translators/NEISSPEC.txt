@@ -1,0 +1,3 @@
+include "xlat/doom_base.txt"
+
+307 = WALK, Floor_LowerToHighest (tag, F_FAST, 128)

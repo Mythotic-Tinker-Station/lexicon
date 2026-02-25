@@ -1,0 +1,275 @@
+===========================================================================
+Advanced engine needed  : UMAPINFO Boom compatible engine req.
+Primary purpose         : Single play
+===========================================================================
+Title                   : HELL'S BANE
+Filename		: hellbane.wad
+Date of release		: January 13th, 2024
+Author                  : Chris Hansen
+Email Address           : [redacted]
+Other Files By Author   : Monument
+			  Flay The Obscene series
+			  High/Low series
+			  CH Retro Episode
+			  Helpyourselfish
+			  In A World
+			  Rip it, Tear it, Smash it!
+			  C'mon bro, I got tigerblood!
+			  The Wailing Horde
+			  Gore
+			  Bond of Hatred
+			  Blood flows where my shotgun blows
+			  ... and more
+
+			  	  	
+			  Hellcore
+			  Mayhem 2048
+			  Mayhem 2015
+			  2002 A Doom Odyssey
+			  THT: Threnody
+			  TNT: Revilution
+			  2022 A Doom Odyssey
+			  Realm Of Chaos 2
+			  ... and more
+
+===========================================================================
+Misc. Author Info       : http://www.windward.dk/TDR
+
+===========================================================================
+Story       		: The red dust of a forsaken planet, far away into the fringes
+			  of existence, blows away all hope as a new threat arises from
+			  the dark, one filled with horns and flesh mutations of steel.
+			  Humanity is but a small obstacle in their path towards
+			  domination. No man can stand their path, no weapon can truly
+			  kill them all, for demons is what they are... and you need
+			  a demon to kill a demon.
+			  At the dawn of a new age, hell's bane comes.
+
+==========================================================================
+Description		: A 36 level megawad for Ult. Doom replacing all 4 episodes.
+			  It's a collection of my levels released over the past
+			  25 years, so it's kind of anniversary release. Also, this
+			  is the year that Doom turns 30. congratulations Doom!
+			  Most levels you will recognize if you're familiar with my
+			  work while a few levels are brand new for this release.
+			  Some levels have seen minor or major alterations.
+			  I just that no matter how many levels you've played or
+			  haven't played, that you you will enjoy playing these
+			  levels. I've tried to avoid a simple copy and paste
+			  affair and have spent almost 2 years on making this
+			  an interesting, engaging and exciting compilation
+			  despite the very obvious reuse and recycling present.
+			  It is after all an anthology :)
+
+			  New custom skies from scratch by me. I also made some
+			  liquid textures. Use them if you please in your own levels;
+			  just remember to credit me, thanks.
+
+			  
+			  IMPORTANT INFORMATION:
+
+			  *************************************************
+			  Pistol start intended, but feel free to play continuously.
+
+			  Jumping and mouselook NOT intended. May break progression
+			  if you do. Noclipping definitely not recommended.
+
+			  The episode 3 sky will have a little ugliness in it if
+			  you use GZDoom in software renderer mode with capped
+			  skies on. Nothing mayor, just ignore it.
+
+			  Load hb_stbar.wad after hellbane.wad if you prefer a fullscreen
+			  status bar.
+
+			  Damaging floors: Nukage 2-5%. Lava 5-10%. Water and blood no damage.
+			  
+			  IMPORTANT SOURCEPORT NOTE:		
+			  In order for the boss levels to function correctly
+			  you will need one of these sourceports or newer.
+			  The wad requires a sourceport that supports UMAPINFO
+			  if you want the intended experience:
+
+			  DSDA-Doom 0.26.2
+			  PrBoom+ 2.5.17um
+			  PrBoom+ 2.6.66-ucrt64
+			  PrBoom+ 2.61um-w32
+			  Woof 11.2.0-win64 
+			  GZDoom dev builds from 16th July 2023 onwards
+			  (boss levels wont work in GZDoom 4.10)
+
+			  *************************************************
+
+			  List of levels (name, origin, changes):
+
+			  	E1M1: The frontier 				(Frontier Settlements: Distress!) modified
+			  	E1M2: Meek 					(Meek) modified
+			  	E1M3: Main-frame 				(CH Retro Episode) modified
+			  	E1M4: Command center 				(CH Retro Episode) modified
+			  	E1M5: Chemical processing plant 		(CH Retro Episode) modified
+			  	E1M6: Primary base 				(CH Retro Episode) modified
+			  	E1M7: Laboratories 				(CH Retro Episode) modified
+			  	E1M8: The grinder 				(Gore) modified
+			  	E1M9: Strategical offensive array 		(CH Retro Episode) modified
+			  	E2M1: Rip and tear				(Monument) minor fixes
+			  	E2M2: Beta station 				(Monument) minor fixes
+			  	E2M3: The wailing halls 			(Monument) minor fixes
+			  	E2M4: Hive of the horde 			(Monument) minor fixes
+			  	E2M5: Chasm control 				(Monument) minor fixes
+			  	E2M6: Smash it! 				(Monument) minor fixes
+			  	E2M7: Hunt'em highnlow 				(Monument) minor fixes
+			  	E2M8: Domain of evil 				(Monument) minor fixes
+			  	E2M9: The end? 					(Monument) minor fixes
+			  	E3M1: The trickster's behest 			(128KB challenge) minor fixes
+			  	E3M2: Chart the course for carnage		(exclusive) new from scratch
+			  	E3M3: The bloody realms 			(Bloody realms of Hell) minor fixes
+			 	E3M4: Obituary written 				(2002 A Doom Odyssey) revamped
+			  	E3M5: Twisted high 				(High/Low 3) modified
+			  	E3M6: The remedy				(exclusive) new from scratch
+			  	E3M7: No way back				(exclusive) new from scratch
+		 	  	E3M8: Death will be no respite			(exclusive) new from scratch
+			  	E3M9: Flay the obscene 				(Flay the obscene - DeathmatcH) revamped
+			  	E4M1: The blessed hex 				(The Blessed Hex) revamped
+			  	E4M2: Hell unleashed				(2002 A Doom Odyssey) modified
+			  	E4M3: Disreputable stronghold 			(2002 A Doom Odyssey) modified
+			  	E4M4: High'n'low 				(High/Low 4) revamped
+			  	E4M5: Indominatable haunt 			(2002 A Doom Odyssey) modified
+			  	E4M6: Odious grounds 				(2002 A Doom Odyssey) modified
+			  	E4M7: Bond of hatred 				(Bond of hatred) modified
+			  	E4M8: Deus in absentia 				(High/Low 4) revamped
+			  	E4M9: Good vibrations 				(Good vibrations) modified
+
+			 Soundtrack:
+
+				E1M1 "Gate crasher"		Lazernaut
+   				E1M2 "Unending cruelty"		Lazernaut
+    				E1M3 "Relinquished command" 	Lazernaut
+    				E1M4 "They must be contained"	Lazernaut
+   	 			E1M5 "Dark matter anomaly"	Lazernaut
+    				E1M6 "Rooftop" 			Korp
+    				E1M7 "Second wind"		Lazernaut
+    				E1M8 "March of the blue jays"	LightningBoltForever
+    				E1M9 "Ripper"			Cacodreamin'
+
+    				E2M1 "Armageddon apparatus" 	MFG38
+    				E2M2 "Looking down the barrel"	wallabra
+    				E2M3 "Mephisto's Lament"	MFG38
+    				E2M4 "Don't look it in the eye" LightningBoltForever
+    				E2M5 "Cauldron"			wallabra
+    				E2M6 "Sight implement" 		wallabra
+    				E2M7 "Pebbles in wine" 		wallabra
+    				E2M8 "Final frontier" 		MFG38
+    				E2M9 "Metrozipper"		wallabra
+
+    				E3M1 "Forest Orchestra"		Herr Dethnout
+    				E3M2 "Aquatic nightmare"	Crunchynut44
+    				E3M3 "Just say no to yes"	continnuum.mid
+    				E3M4 "Claustrophobic Corridors" Lazernaut
+    				E3M5 "After hours"		LightningBoltForever
+    				E3M6 "The awaiting tempest"	Korp
+    				E3M7 "Whims of the malevolent"	MFG38
+    				E3M8 "Tethered"			Bobby J
+    				E3M9 "The devil's riff"		Crunchynut44
+
+    				E4M1 "Xazozwag" 		Korp
+    				E4M2 "Staring over the canyon" 	LightningBoltForever
+    				E4M3 "Red light" 		Cacodreamin'
+    				E4M4 "Ruin" 			Cacodreamin' and wallabra
+    				E4M5 "Galvanise"		Crunchynut44
+    				E4M6 "Wasp's Nest" 		wallabra
+    				E4M7 "Feud" 			LightningBoltForever
+    				E4M8 "Invite the apocalypse"	MFG38
+    				E4M9 "Back to the rail" 	wallabra
+
+    				Intermission (D_INTER) 		Lazernaut
+    				Title (D_INTRO) 		Lazernaut
+    				Victory (D_VICTOR) 		LightningBoltForever
+    				Episode 3 ending (D_BUNNY) 	LightningBoltForever
+
+==========================================================================
+Testers			: Biodegradable, GarrettChan, LadyMistDragon, jgs1989
+			  Thank you so much for all the help!
+
+==========================================================================
+Additional Credits to   : I owe a huge thanks to these amazing people:
+			  Lazernaut
+			  wallabra
+			  LightningBoltForever
+			  MFG38
+			  Crunchynut44
+			  continnuum.mid
+			  Cacodreamin'
+			  Herr Dethnout
+			  Korp
+			  Bobby "J
+
+			  Story by Endless
+
+			  Episode artwork by NotMuchNormal
+
+			  plums for tech advice and feedback
+
+			  boris for lots of valuable feedback
+
+			  Mechadon for advice on making sky textures
+
+			  NightFright for extended statusbar (hb_stbar.wad)
+
+			  4MaTC
+			  
+===========================================================================
+* What is included *
+
+New levels              : 36
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : UMAPINFO
+Other files required    : None
+
+===========================================================================
+* Play Information *
+
+Game                    : Ult. Doom
+Map #                   : E1M1 to E4M9 (all four episodes replaced)
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Not really/not recommended
+Other game styles       : None
+Difficulty Settings     : Yes
+
+===========================================================================
+* Construction *
+
+Base                    : Old levels and some brand new
+Build Time              : 2 years
+Editor(s) used          : GZDoomBuilder, Ultimate Doom Builder, Slade 3,
+			  paint.net, Bitmap Font Writer, WadSpy, zokumbsp
+Known Bugs              : Boss levels does not work in certain ports.
+			  See above compatible ports list in "Description"
+May Not Run With        : vanilla Doom
+Tested With             : Eternity, GZdoom, PrBoom+, zDoom, DSDA-Doom
+
+===========================================================================
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+===========================================================================
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: doomworld.com
+           windward.dk/TDR
+
+*end of file*

@@ -1,0 +1,186 @@
+// 2002 A Doom Odyssey - 10th Anniversary Edition
+texture ADO10105 range ADO10108 tics 8
+texture ADO10109 range ADO10112 tics 8
+texture ADO10113 range ADO10116 tics 8
+switch ADO10285 on pic ADO10290 tics 0
+switch ADO10286 on pic ADO10291 tics 0
+switch ADO10287 on pic ADO10292 tics 0
+switch ADO10288 on pic ADO10293 tics 0
+switch ADO10289 on pic ADO10294 tics 0
+
+// Ultimate Doom the Way id Did
+switch D1WD0001 on pic D1WD0006 tics 0
+switch D1WD0002 on pic D1WD0007 tics 0
+switch D1WD0003 on pic D1WD0008 tics 0
+switch D1WD0004 on pic D1WD0009 tics 0
+switch D1WD0005 on pic D1WD0010 tics 0
+
+// Doom the Way id Did : Lost Episodes
+switch D1LE0001 on pic D1LE0006 tics 0
+switch D1LE0002 on pic D1LE0007 tics 0
+switch D1LE0003 on pic D1LE0008 tics 0
+switch D1LE0004 on pic D1LE0009 tics 0
+switch D1LE0005 on pic D1LE0010 tics 0
+
+// ConC.E.R.Ned
+texture CCRN0012 range CCRN0015 tics 8
+texture CCRN0016 range CCRN0019 tics 8
+texture CCRN0020 range CCRN0023 tics 8
+
+// Double Impact
+switch DBIM0002 on pic DBIM0007 tics 0
+switch DBIM0003 on pic DBIM0008 tics 0
+switch DBIM0005 on pic DBIM0010 tics 0
+switch DBIM0006 on pic DBIM0011 tics 0
+
+// Base Ganymede: Complete
+switch BGCP0003 on pic BGCP0008 tics 0
+switch BGCP0007 on pic BGCP0012 tics 0
+
+// Nostalgia Zero
+texture NSGZ0048 range NSGZ0049 tics 8
+flat NSGZ0009 range NSGZ0012 tics 8
+switch NSGZ0035 on pic NSGZ0040 tics 0
+switch NSGZ0038 on pic NSGZ0043 tics 0
+switch NSGZ0039 on pic NSGZ0044 tics 0
+switch NSGZ0050 on pic NSGZ0051 tics 0
+
+// Solar Struggle
+texture SLRS0053 range SLRS0056 tics 8
+texture SLRS0122 range SLRS0125 tics 8
+texture SLRS0190 range SLRS0193 tics 8
+texture SLRS0219 range SLRS0222 tics 8
+texture SLRS0228 range SLRS0231 tics 8
+flat SLRS0008 range SLRS0011 tics 8
+flat SLRS0024 range SLRS0027 tics 8
+flat SLRS0028 range SLRS0031 tics 8
+flat SLRS0032 range SLRS0035 tics 8
+switch SLRS0153 on pic SLRS0167 tics 0
+switch SLRS0154 on pic SLRS0168 tics 0
+switch SLRS0155 on pic SLRS0169 tics 0
+switch SLRS0156 on pic SLRS0170 tics 0
+switch SLRS0157 on pic SLRS0171 tics 0
+switch SLRS0158 on pic SLRS0172 tics 0
+switch SLRS0159 on pic SLRS0173 tics 0
+switch SLRS0160 on pic SLRS0174 tics 0
+switch SLRS0161 on pic SLRS0162 tics 0
+switch SLRS0163 on pic SLRS0164 tics 0
+switch SLRS0165 on pic SLRS0166 tics 0
+
+// (The Ultimate) Return to Hadron
+texture URTH0050 range URTH0053 tics 8
+texture URTH0054 range URTH0057 tics 8
+texture URTH0058 range URTH0061 tics 8
+texture URTH0062 range URTH0065 tics 8
+switch URTH0040 on pic URTH0045 tics 0
+switch URTH0043 on pic URTH0048 tics 0
+
+// Death Tormention: The Complete Trilogy
+texture DTCT0051 range DTCT0054 tics 8
+texture DTCT0125 range DTCT0128 tics 8
+texture DTCT0129 range DTCT0132 tics 8
+texture DTCT0133 range DTCT0136 tics 8
+flat DTCT0012 range DTCT0015 tics 8
+flat DTCT0027 range DTCT0030 tics 8
+flat DTCT0035 range DTCT0038 tics 8
+switch DTCT0140 on pic DTCT0147 tics 0
+switch DTCT0141 on pic DTCT0148 tics 0
+switch DTCT0142 on pic DTCT0149 tics 0
+switch DTCT0143 on pic DTCT0150 tics 0
+switch DTCT0144 on pic DTCT0151 tics 0
+switch DTCT0145 on pic DTCT0152 tics 0
+switch DTCT0146 on pic DTCT0153 tics 0
+texture DTCT0260 range DTCT0261 tics 8
+
+// FRAYED
+texture FRAY0065 range FRAY0068 tics 8
+texture FRAY0069 range FRAY0072 tics 8
+texture FRAY0074 range FRAY0076 tics 8
+texture FRAY0078 range FRAY0080 tics 8
+texture FRAY0096 range FRAY0099 tics 8
+texture FRAY0100 range FRAY0103 tics 8
+texture FRAY0127 range FRAY0129 tics 8
+texture FRAY0131 range FRAY0134 tics 8
+texture FRAY0135 range FRAY0138 tics 8
+texture FRAY0143 range FRAY0144 tics 160
+texture FRAY0144 range FRAY0146 tics 80
+texture FRAY0162 range FRAY0164 tics 8
+texture FRAY0172 range FRAY0173 tics 8
+flat FRAY0006 range FRAY0009 tics 8
+flat FRAY0012 range FRAY0015 tics 8
+flat FRAY0023 range FRAY0025 tics 8
+flat FRAY0035 range FRAY0038 tics 8
+switch FRAY0055 on pic FRAY0060 tics 0
+switch FRAY0056 on pic FRAY0061 tics 0
+switch FRAY0057 on pic FRAY0062 tics 0
+switch FRAY0058 on pic FRAY0063 tics 0
+switch FRAY0059 on pic FRAY0064 tics 0
+switch FRAY0093 on pic FRAY0094 tics 0
+switch FRAY0177 on pic FRAY0178 tics 0
+
+// The Ultimate NMD
+switch NMDU0002 on pic NMDU0007 tics 0
+switch NMDU0003 on pic NMDU0008 tics 0
+switch NMDU0004 on pic NMDU0009 tics 0
+switch NMDU0005 on pic NMDU0010 tics 0
+switch NMDU0006 on pic NMDU0011 tics 0
+
+// Deathless
+texture DTHL0029 range DTHL0032 tics 8
+texture DTHL0051 range DTHL0054 tics 8
+texture DTHL0071 range DTHL0074 tics 8
+texture DTHL0119 range DTHL0122 tics 8
+texture DTHL0152 range DTHL0155 tics 8 allowdecals
+texture DTHL0156 range DTHL0159 tics 8 allowdecals
+flat DTHL0001 range DTHL0004 tics 8
+flat DTHL0005 range DTHL0008 tics 8
+switch DTHL0093 on pic DTHL0098 tics 0
+switch DTHL0095 on pic DTHL0100 tics 0
+switch DTHL0096 on pic DTHL0101 tics 0
+switch DTHL0097 on pic DTHL0102 tics 0
+
+// The Ultimate Doom In Name Only
+texture UDIN0014 range UDIN0017 tics 8
+texture UDIN0018 range UDIN0021 tics 8
+texture UDIN0022 range UDIN0025 tics 8
+texture UDIN0026 range UDIN0029 tics 8
+switch UDIN0003 on pic UDIN0008 tics 0
+switch UDIN0004 on pic UDIN0009 tics 0
+switch UDIN0005 on pic UDIN0010 tics 0
+switch UDIN0006 on pic UDIN0011 tics 0
+switch UDIN0007 on pic UDIN0012 tics 0
+
+// 2022 A Doom Odyssey
+texture ADO20027 range ADO20030 tics 8
+texture ADO20031 range ADO20034 tics 8
+texture ADO20035 range ADO20038 tics 8
+texture ADO20039 range ADO20042 tics 8
+flat ADO20009 range ADO20012 tics 8
+flat ADO20019 range ADO20022 tics 8
+switch ADO20070 on pic ADO20075 tics 0
+switch ADO20071 on pic ADO20076 tics 0
+switch ADO20072 on pic ADO20077 tics 0
+switch ADO20073 on pic ADO20078 tics 0
+switch ADO20074 on pic ADO20079 tics 0
+
+// No End in Sight
+texture NEIS0432 range NEIS0434 tics 8 allowdecals
+switch NEIS0066 on pic NEIS0074 tics 0
+switch NEIS0067 on pic NEIS0075 tics 0
+switch NEIS0068 on pic NEIS0076 tics 0
+switch NEIS0069 on pic NEIS0077 tics 0
+switch NEIS0070 on pic NEIS0078 tics 0
+switch NEIS0071 on pic NEIS0079 tics 0
+switch NEIS0072 on pic NEIS0080 tics 0
+switch NEIS0073 on pic NEIS0081 tics 0
+switch NEIS0439 on pic NEIS0440 tics 0
+
+// Hell's Bane
+texture HLBN0012 range HLBN0015 tics 8
+texture HLBN0016 range HLBN0019 tics 8
+texture HLBN0020 range HLBN0023 tics 8
+texture HLBN0024 range HLBN0027 tics 8
+switch HLBN0002 on pic HLBN0007 tics 0
+switch HLBN0003 on pic HLBN0008 tics 0
+switch HLBN0005 on pic HLBN0010 tics 0
+switch HLBN0006 on pic HLBN0011 tics 0

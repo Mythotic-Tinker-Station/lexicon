@@ -1,0 +1,44 @@
+ACTOR Lexicon_ADO1_WolfensteinSS : WolfensteinSS
+{
+	SeeSound "ADO1/DSSSSIT"
+	DeathSound "ADO1/DSSSDTH"
+	States
+	{
+	Spawn:
+		LW75 AB 10 A_Look
+		Loop
+	See:
+		LW75 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LW75 E 10 A_FaceTarget
+		LW75 F 10 A_FaceTarget
+		LW75 G 4 BRIGHT A_CPosAttack
+		LW75 F 6 A_FaceTarget
+		LW75 G 4 BRIGHT A_CPosAttack
+		LW75 F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		LW75 H 3
+		LW75 H 3 A_Pain
+		Goto See
+	Death:
+		LW75 I 5
+		LW75 J 5 A_Scream
+		LW75 K 5 A_NoBlocking
+		LW75 L 5
+		LW75 M -1
+		Stop
+	XDeath:
+		LW75 N 5 
+		LW75 O 5 A_XScream
+		LW75 P 5 A_NoBlocking
+		LW75 QRSTU 5
+		LW75 V -1
+		Stop
+	Raise:
+		LW75 M 5
+		LW75 LKJI 5
+		Goto See 
+	}
+}

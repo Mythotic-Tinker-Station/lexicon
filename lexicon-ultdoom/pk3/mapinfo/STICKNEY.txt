@@ -1,0 +1,381 @@
+// Stickney Installation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map STKNE1M1 "Insertion"
+{
+	titlepatch = "STKNV00"
+	next = "STKNE1M2"
+	secretnext = "STKNE1M2"
+	sky1 = "STKN0001"
+	music = "D_STKN01"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M2 "Reactor Core"
+{
+	titlepatch = "STKNV01"
+	next = "STKNE1M3"
+	secretnext = "STKNE1M3"
+	sky1 = "STKN0001"
+	music = "D_STKN02"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M3 "Filtration Plant"
+{
+	titlepatch = "STKNV02"
+	next = "STKNE1M4"
+	secretnext = "STKNE1M9"
+	sky1 = "STKN0001"
+	music = "D_STKN03"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M4 "Control Center"
+{
+	titlepatch = "STKNV03"
+	next = "STKNE1M5"
+	secretnext = "STKNE1M5"
+	sky1 = "STKN0001"
+	music = "D_STKN04"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M5 "Data Storage"
+{
+	titlepatch = "STKNV04"
+	next = "STKNE1M6"
+	secretnext = "STKNE1M6"
+	sky1 = "STKN0001"
+	music = "D_STKN05"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M6 "Drilling Compound"
+{
+	titlepatch = "STKNV05"
+	next = "STKNE1M7"
+	secretnext = "STKNE1M7"
+	sky1 = "STKN0001"
+	music = "D_STKN06"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M7 "Anomaly Research"
+{
+	titlepatch = "STKNV06"
+	next = "STKNE1M8"
+	secretnext = "STKNE1M8"
+	sky1 = "STKN0001"
+	music = "D_STKN07"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE1M8 "Phobos Gate"
+{
+	titlepatch = "STKNV07"
+	next = "STKNE2M1"
+	secretnext = "STKNE2M1"
+	sky1 = "STKN0001"
+	music = "D_STKN08"
+	intermusic = "D_STKNIN"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map STKNE1M9 "Demon Housing"
+{
+	titlepatch = "STKNV08"
+	next = "STKNE1M4"
+	secretnext = "STKNE1M4"
+	sky1 = "STKN0001"
+	music = "D_STKN09"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M1 "Derelict"
+{
+	titlepatch = "STKNV09"
+	next = "STKNE2M2"
+	secretnext = "STKNE2M2"
+	sky1 = "STKN0002"
+	music = "D_STKN10"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M2 "Melded Compound"
+{
+	titlepatch = "STKNV10"
+	next = "STKNE2M3"
+	secretnext = "STKNE2M3"
+	sky1 = "STKN0002"
+	music = "D_STKN11"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M3 "Nukeworks"
+{
+	titlepatch = "STKNV11"
+	next = "STKNE2M4"
+	secretnext = "STKNE2M4"
+	sky1 = "STKN0002"
+	music = "D_STKN12"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M4 "?"
+{
+	titlepatch = "STKNV12"
+	next = "STKNE2M5"
+	secretnext = "STKNE2M5"
+	sky1 = "STKN0002"
+	music = "D_STKN13"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M5 "Stranded Barracks"
+{
+	titlepatch = "STKNV13"
+	next = "STKNE2M6"
+	secretnext = "STKNE2M9"
+	sky1 = "STKN0002"
+	music = "D_STKN14"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M6 "Maintenance Network"
+{
+	titlepatch = "STKNV14"
+	next = "STKNE2M7"
+	secretnext = "STKNE2M7"
+	sky1 = "STKN0002"
+	music = "D_STKN15"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M7 "Lost Quarry"
+{
+	titlepatch = "STKNV15"
+	next = "STKNE2M8"
+	secretnext = "STKNE2M8"
+	sky1 = "STKN0002"
+	music = "D_STKN16"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE2M8 "Sheol"
+{
+	titlepatch = "STKNV16"
+	next = "STKNE3M1"
+	secretnext = "STKNE3M1"
+	sky1 = "STKN0002"
+	music = "D_STKN17"
+	intermusic = "D_STKNIN"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map STKNE2M9 "Pain-Per-View"
+{
+	titlepatch = "STKNV17"
+	next = "STKNE2M6"
+	secretnext = "STKNE2M6"
+	sky1 = "STKN0002"
+	music = "D_STKN18"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M1 "Maelstrom"
+{
+	titlepatch = "STKNV18"
+	next = "STKNE3M2"
+	secretnext = "STKNE3M2"
+	sky1 = "STKN0003"
+	music = "D_STKN19"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M2 "Soulless"
+{
+	titlepatch = "STKNV19"
+	next = "STKNE3M3"
+	secretnext = "STKNE3M3"
+	sky1 = "STKN0003"
+	music = "D_STKN20"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M3 "Crimson Manse"
+{
+	titlepatch = "STKNV20"
+	next = "STKNE3M4"
+	secretnext = "STKNE3M4"
+	sky1 = "STKN0003"
+	music = "D_STKN21"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M4 "Terrorformer"
+{
+	titlepatch = "STKNV21"
+	next = "STKNE3M5"
+	secretnext = "STKNE3M5"
+	sky1 = "STKN0003"
+	music = "D_STKN22"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M5 "Veiled Monastery"
+{
+	titlepatch = "STKNV22"
+	next = "STKNE3M6"
+	secretnext = "STKNE3M6"
+	sky1 = "STKN0003"
+	music = "D_STKN23"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M6 "Inferno"
+{
+	titlepatch = "STKNV23"
+	next = "STKNE3M7"
+	secretnext = "STKNE3M9"
+	sky1 = "STKN0003"
+	music = "D_STKN24"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M7 "Aorta"
+{
+	titlepatch = "STKNV24"
+	next = "STKNE3M8"
+	secretnext = "STKNE3M8"
+	sky1 = "STKN0003"
+	music = "D_STKN25"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE3M8 "Din"
+{
+	titlepatch = "STKNV25"
+	next = "STKNE4M1"
+	secretnext = "STKNE4M1"
+	sky1 = "STKN0003"
+	music = "D_STKN26"
+	intermusic = "D_STKNIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map STKNE3M9 "Gantlat"
+{
+	titlepatch = "STKNV26"
+	next = "STKNE3M7"
+	secretnext = "STKNE3M7"
+	sky1 = "STKN0003"
+	music = "D_STKN27"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M1 "Ingress"
+{
+	titlepatch = "STKNV27"
+	next = "STKNE4M2"
+	secretnext = "STKNE4M2"
+	sky1 = "STKN0004"
+	music = "D_STKN22"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M2 "Crepuscule"
+{
+	titlepatch = "STKNV28"
+	next = "STKNE4M3"
+	secretnext = "STKNE4M9"
+	sky1 = "STKN0004"
+	music = "D_STKN20"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M3 "Primeval Archives"
+{
+	titlepatch = "STKNV29"
+	next = "STKNE4M4"
+	secretnext = "STKNE4M4"
+	sky1 = "STKN0004"
+	music = "D_STKN21"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M4 "Blind Fury"
+{
+	titlepatch = "STKNV30"
+	next = "STKNE4M5"
+	secretnext = "STKNE4M5"
+	sky1 = "STKN0004"
+	music = "D_STKN05"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M5 "Sanguine Aqueduct"
+{
+	titlepatch = "STKNV31"
+	next = "STKNE4M6"
+	secretnext = "STKNE4M6"
+	sky1 = "STKN0004"
+	music = "D_STKN16"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M6 "Ashen Redoubt"
+{
+	titlepatch = "STKNV32"
+	next = "STKNE4M7"
+	secretnext = "STKNE4M7"
+	sky1 = "STKN0004"
+	music = "D_STKN13"
+	intermusic = "D_STKNIN"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map STKNE4M7 "Sleep Of Reason"
+{
+	titlepatch = "STKNV33"
+	next = "STKNE4M8"
+	secretnext = "STKNE4M8"
+	sky1 = "STKN0004"
+	music = "D_STKN15"
+	intermusic = "D_STKNIN"
+}
+
+map STKNE4M8 "Monolith"
+{
+	titlepatch = "STKNV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "STKN0004"
+	music = "D_STKN14"
+	intermusic = "D_STKNIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map STKNE4M9 "Fish"
+{
+	titlepatch = "STKNV35"
+	next = "STKNE4M3"
+	secretnext = "STKNE4M3"
+	sky1 = "STKN0004"
+	music = "D_STKN09"
+	intermusic = "D_STKNIN"
+}

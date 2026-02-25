@@ -1,0 +1,344 @@
+// ConC.E.R.Ned Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CCRNE1M1 "Toxic Touchdown"
+{
+	titlepatch = "CCRNUV00"
+	next = "CCRNE1M2"
+	secretnext = "CCRNE1M2"
+	sky1 = "DSKY1"
+	music = "D_CCRN01"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M2 "Mutagenic Quarantine"
+{
+	titlepatch = "CCRNUV01"
+	next = "CCRNE1M3"
+	secretnext = "CCRNE1M9"
+	sky1 = "DSKY1"
+	music = "D_CCRN02"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M3 "The Cleanser"
+{
+	titlepatch = "CCRNUV02"
+	next = "CCRNE1M4"
+	secretnext = "CCRNE1M4"
+	sky1 = "DSKY1"
+	music = "D_CCRN03"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M4 "Withering Gardens"
+{
+	titlepatch = "CCRNUV03"
+	next = "CCRNE1M5"
+	secretnext = "CCRNE1M5"
+	sky1 = "DSKY1"
+	music = "D_CCRN04"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M5 "Administration"
+{
+	titlepatch = "CCRNUV04"
+	next = "CCRNE1M6"
+	secretnext = "CCRNE1M6"
+	sky1 = "DSKY1"
+	music = "D_CCRN05"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M6 "Laboratory"
+{
+	titlepatch = "CCRNUV05"
+	next = "CCRNE1M7"
+	secretnext = "CCRNE1M7"
+	sky1 = "DSKY1"
+	music = "D_CCRN06"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M7 "Reactor"
+{
+	titlepatch = "CCRNUV06"
+	next = "CCRNE1M8"
+	secretnext = "CCRNE1M8"
+	sky1 = "DSKY1"
+	music = "D_CCRN07"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M8 "Particle Accelerator"
+{
+	titlepatch = "CCRNUV07"
+	next = "CCRNE2M1"
+	secretnext = "CCRNE2M1"
+	sky1 = "DSKY1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	music = "$MUSIC_E1M8"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE1M9 "Atomsmasher"
+{
+	titlepatch = "CCRNUV08"
+	next = "CCRNE1M4"
+	secretnext = "CCRNE1M4"
+	sky1 = "DSKY1"
+	music = "D_CCRN08"
+	ExitPic = "CCRNINT1"
+	EnterPic = "CCRNINT1"
+	intermusic = "D_CCRNIN"
+}
+
+// Registered/Retail Episode 2
+
+map CCRNE2M1 "Collider Anomaly"
+{
+	titlepatch = "CCRNUV10"
+	next = "CCRNE2M2"
+	secretnext = "CCRNE2M2"
+	sky1 = "DSKY2"
+	music = "D_CCRN09"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M2 "Logistics"
+{
+	titlepatch = "CCRNUV11"
+	next = "CCRNE2M3"
+	secretnext = "CCRNE2M3"
+	sky1 = "DSKY2"
+	music = "D_CCRN10"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M3 "Hydrophonic Facility"
+{
+	titlepatch = "CCRNUV12"
+	next = "CCRNE2M4"
+	secretnext = "CCRNE2M4"
+	sky1 = "DSKY2"
+	music = "D_CCRN11"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M4 "Infirmary"
+{
+	titlepatch = "CCRNUV13"
+	next = "CCRNE2M5"
+	secretnext = "CCRNE2M5"
+	sky1 = "DSKY2"
+	music = "D_CCRN12"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M5 "Tactical Command"
+{
+	titlepatch = "CCRNUV14"
+	next = "CCRNE2M6"
+	secretnext = "CCRNE2M9"
+	sky1 = "DSKY2"
+	music = "D_CCRN13"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M6 "Haunted Cellars"
+{
+	titlepatch = "CCRNUV15"
+	next = "CCRNE2M7"
+	secretnext = "CCRNE2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M7 "The Core"
+{
+	titlepatch = "CCRNUV16"
+	next = "CCRNE2M8"
+	secretnext = "CCRNE2M8"
+	sky1 = "DSKY2"
+	music = "D_CCRN14"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M8 "Gates To Hell"
+{
+	titlepatch = "CCRNUV17"
+	next = "CCRNE3M1"
+	secretnext = "CCRNE3M1"
+	sky1 = "DSKY2"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+	music = "D_CCRN15"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE2M9 "Blackout"
+{
+	titlepatch = "CCRNUV18"
+	next = "CCRNE2M6"
+	secretnext = "CCRNE2M6"
+	sky1 = "DSKY2"
+	music = "D_CCRN16"
+	ExitPic = "CCRNINT2"
+	EnterPic = "CCRNINT2"
+	intermusic = "D_CCRNIN"
+}
+
+// Registered/Retail Episode 3
+
+map CCRNE3M1 "Passover"
+{
+	titlepatch = "CCRNUV20"
+	next = "CCRNE3M2"
+	secretnext = "CCRNE3M2"
+	sky1 = "DSKY3"
+	music = "D_CCRN17"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M2 "Fire Temple"
+{
+	titlepatch = "CCRNUV21"
+	next = "CCRNE3M3"
+	secretnext = "CCRNE3M3"
+	sky1 = "DSKY3"
+	music = "D_CCRN18"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M3 "Infernal Catacombs"
+{
+	titlepatch = "CCRNUV22"
+	next = "CCRNE3M4"
+	secretnext = "CCRNE3M4"
+	sky1 = "DSKY3"
+	music = "D_CCRN19"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M4 "Demonizer"
+{
+	titlepatch = "CCRNUV23"
+	next = "CCRNE3M5"
+	secretnext = "CCRNE3M5"
+	sky1 = "DSKY3"
+	music = "D_CCRN20"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M5 "Complex Trauma"
+{
+	titlepatch = "CCRNUV24"
+	next = "CCRNE3M6"
+	secretnext = "CCRNE3M6"
+	sky1 = "DSKY3"
+	music = "D_CCRN21"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M6 "Devils Crucible"
+{
+	titlepatch = "CCRNUV25"
+	next = "CCRNE3M7"
+	secretnext = "CCRNE3M9"
+	sky1 = "DSKY3"
+	music = "D_CCRN22"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M7 "Back To System Central"
+{
+	titlepatch = "CCRNUV26"
+	next = "CCRNE3M8"
+	secretnext = "CCRNE3M8"
+	sky1 = "DSKY3"
+	music = "D_CCRN23"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M8 "Fortress Of Tyrants"
+{
+	titlepatch = "CCRNUV27"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+	music = "D_CCRN24"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}
+
+map CCRNE3M9 "Cyberslayer"
+{
+	titlepatch = "CCRNUV28"
+	next = "CCRNE3M7"
+	secretnext = "CCRNE3M7"
+	sky1 = "DSKY3"
+	music = "D_CCRN25"
+	ExitPic = "CCRNINT3"
+	EnterPic = "CCRNINT3"
+	intermusic = "D_CCRNIN"
+}

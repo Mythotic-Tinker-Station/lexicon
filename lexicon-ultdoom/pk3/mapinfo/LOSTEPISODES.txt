@@ -1,0 +1,232 @@
+// The Lost Episodes of Doom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map JPTRE1M1 "UAC Spaceport"
+{
+	titlepatch = "JPTRV00"
+	next = "JPTRE1M2"
+	secretnext = "JPTRE1M2"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M1"
+}
+
+map JPTRE1M2 "Fusion Power Plant"
+{
+	titlepatch = "JPTRV01"
+	next = "JPTRE1M3"
+	secretnext = "JPTRE1M3"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M2"
+}
+
+map JPTRE1M3 "Jovian Deuterium Plant"
+{
+	titlepatch = "JPTRV02"
+	next = "JPTRE1M4"
+	secretnext = "JPTRE1M4"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M3"
+}
+
+map JPTRE1M4 "Jupiter Planetary Control Center"
+{
+	titlepatch = "JPTRV03"
+	next = "JPTRE1M5"
+	secretnext = "JPTRE1M5"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M4"
+}
+
+map JPTRE1M5 "Weapons Research Center"
+{
+	titlepatch = "JPTRV04"
+	next = "JPTRE1M6"
+	secretnext = "JPTRE1M6"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M5"
+}
+
+map JPTRE1M6 "Halls of Injustice"
+{
+	titlepatch = "JPTRV05"
+	next = "JPTRE1M7"
+	secretnext = "JPTRE1M7"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M6"
+}
+
+map JPTRE1M7 "Core of Evil"
+{
+	titlepatch = "JPTRV06"
+	next = "JPTRE1M8"
+	secretnext = "JPTRE1M8"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M7"
+}
+
+map JPTRE1M8 "Callisto Consecration"
+{
+	titlepatch = "JPTRV07"
+	next = "JPTRE2M1"
+	secretnext = "JPTRE2M1"
+	sky1 = "JPTR0001"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map JPTRE2M1 "Io Anomaly"
+{
+	titlepatch = "JPTRV08"
+	next = "JPTRE2M2"
+	secretnext = "JPTRE2M2"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M1"
+}
+
+map JPTRE2M2 "Io Munitions Works"
+{
+	titlepatch = "JPTRV09"
+	next = "JPTRE2M3"
+	secretnext = "JPTRE2M3"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M2"
+}
+
+map JPTRE2M3 "Io Toxic Disposal Plant"
+{
+	titlepatch = "JPTRV10"
+	next = "JPTRE2M4"
+	secretnext = "JPTRE2M4"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M3"
+}
+
+map JPTRE2M4 "Weapons Testing Facility"
+{
+	titlepatch = "JPTRV11"
+	next = "JPTRE2M5"
+	secretnext = "JPTRE2M5"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M4"
+}
+
+map JPTRE2M5 "Io Training Camp"
+{
+	titlepatch = "JPTRV12"
+	next = "JPTRE2M6"
+	secretnext = "JPTRE2M6"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M5"
+}
+
+map JPTRE2M6 "Io Military Garrison "
+{
+	titlepatch = "JPTRV13"
+	next = "JPTRE2M7"
+	secretnext = "JPTRE2M7"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M6"
+}
+
+map JPTRE2M7 "The Draining Pit"
+{
+	titlepatch = "JPTRV14"
+	next = "JPTRE2M8"
+	secretnext = "JPTRE2M8"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M7"
+}
+
+map JPTRE2M8 "Late For Supper"
+{
+	titlepatch = "JPTRV15"
+	next = "JPTRE3M1"
+	secretnext = "JPTRE3M1"
+	sky1 = "JPTR0002"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map JPTRE3M1 "Jovian Stonehenge"
+{
+	titlepatch = "JPTRV16"
+	next = "JPTRE3M2"
+	secretnext = "JPTRE3M2"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M1"
+}
+
+map JPTRE3M2 "Pillar of Peril"
+{
+	titlepatch = "JPTRV17"
+	next = "JPTRE3M3"
+	secretnext = "JPTRE3M3"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M2"
+}
+
+map JPTRE3M3 "Subterranean Stoneworks"
+{
+	titlepatch = "JPTRV18"
+	next = "JPTRE3M4"
+	secretnext = "JPTRE3M4"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M3"
+}
+
+map JPTRE3M4 "Pools of Despair"
+{
+	titlepatch = "JPTRV19"
+	next = "JPTRE3M5"
+	secretnext = "JPTRE3M5"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M4"
+}
+
+map JPTRE3M5 "The Cat-Skinner Box"
+{
+	titlepatch = "JPTRV20"
+	next = "JPTRE3M6"
+	secretnext = "JPTRE3M6"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M5"
+}
+
+map JPTRE3M6 "Somber Io Promenade"
+{
+	titlepatch = "JPTRV21"
+	next = "JPTRE3M7"
+	secretnext = "JPTRE3M7"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M6"
+}
+
+map JPTRE3M7 "Jovian Killjoy"
+{
+	titlepatch = "JPTRV22"
+	next = "JPTRE3M8"
+	secretnext = "JPTRE3M8"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M7"
+}
+
+map JPTRE3M8 "Jovian Deja Vu Again"
+{
+	titlepatch = "JPTRV23"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "JPTR0003"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}

@@ -1,0 +1,126 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : 
+Advanced engine needed  : Limit removing
+Primary purpose         : Single player, but co-op options implemented (if barely tested)
+===========================================================================
+Title                   : (The Ultimate) Return to Hadron
+Filename                : UHadron.wad
+Release date            : 17/05/2024
+Author                  : Matt "Cannonball" Powell
+Email Address           : [redacted]
+Other Files By Author   : Project lead for UDINO, Maps from various other projects over the past 12 years.
+Misc. Author Info       : Weather forum moderator
+Description             : The 4 episode compilation of the Return to Hadron saga, initially revisiting old locations with a better grasp of the map edition, this has evolved into a full megawad that leads to hostile new worlds.
+
+Additional Credits to   : ID Games for Doom
+			  Skies
+E1 - Mek's box of skies (Mechadon)
+E2 - Mek's box of skies (Mechadon)
+E3 - NOVA2 (EvilNed)
+E4 - Mek's box of skies (Mechadon)
+
+Textures;
+- 32in24-15tex_V2.wad compilled by Sarah Mancuso
+- Noirpack by Fuzzball,
+- Jimmytex by James Paddock
+-Beam Zombie - Captain Toenail and Ghastly Dragon - It's dehacked parameters have been edited by myself to achieve what I had in mind
+Mini Mind - If someone can give a definitive credit for this I would be most welcome - I can't remember if I tweaked the speed/health on this or whether it is the same as the one used in Deadly Standards 4)
+other credits further down the textfile
+
+===========================================================================
+* What is included *
+
+New levels              : 36
+Sounds                  : No
+Music                   : Replacements for all maps, none are bespoke to the project.
+Graphics                : Liquid & ALLBLACK textures plus a few others used in E4 (See credits above)
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : E1M1 to E4M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts included on all level, there might be more on some levels.
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes 
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 9 years on and off
+Editor(s) used          : Doom builder 2, Doom builder X, UDoombuilder and Slade 3 and potentially more
+Known Bugs              : Hopefully none, but no guarantees
+May Not Run With        : Vanilla due to limits being exceeded in most of the levels.
+Tested With             : DSDA Doom
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com/idgames/
+FTP sites:
+
+Maplist and midi choice
+
+E1M1 - The Breach - I hope this doesn't suck too much (James Paddock)
+E1M2 - Nukage Disaster - Prelude to Misri in B Minor (James Paddock for AV Midi Pack)
+E1M3 - Toxic Treatment - Stargaze (Psyrus)
+E1M4 - Withered Gardens - Aerial Tombs (Alfonzo)
+E1M5 - The IMP Crowd - Copperhead (Alfonzo)
+E1M6 - Gateway Lab - Darkness Calls (James Paddock)
+E1M7 - CB Reactor INC - Fragments (AD_79)
+E1M8 - Collider Control - Fallen Sun (James Paddock)
+E1M9 - Prototype - Earthglow (Tristan Clark)
+
+E2M1 - Flesh Start - Alien Jungle (Stuart Rynn - BTSX E2M1)
+E2M2 - Logistics Complex - Broken Mirror (Tristan Clark)
+E2M3 - Comm Centre - Crawl (Jeremy Doyle)
+E2M4 - Mortuary - Arcadia, Arcadia demade (John Weekly AKA Primeval)
+E2M5 - Bunker - Reaching Deeper (Tristan Clark)
+E2M6 - Aqueduct of Agony - Paint the town red (James Paddock from Cabin)
+E2M7 - Core Processory - Radioisotope (AD_79)
+E2M8 - Ground Zero - Stigmatism (Primeval)
+E2M9 - Descent into Darkness - Jailbreak (Stewboy)
+
+E3M1 - Nemesis - Jaws of fate (AD_79)
+E3M2 - Infernal Keep - Stomping Grounds (Lee Jackson TNT Midi pack)
+E3M3 - Blood Debt - Keepsake Fever (Alfonzo for TVR! Midi pack)
+E3M4 - Colonic Desecration - Deep Forest (Stewboy)
+E3M5 - Trauma Complex - Pluvious (Bucket)
+E3M6 - Crimson Crevice - The face of wraith (Stewboy)
+E3M7 - Void Bastion - Weather Warning (James Paddock BTSX E2)
+E3M8 - Hive Mind - No more history (Cammy for the Ultimate Doom midi pack)
+E3M9 - Trojan - Featherfall (Stewboy)
+
+E4M1 - Mourning Facility - Eye of the storm (Tristan Clark)
+E4M2 - Meteorain - Xenotime (Dragonfly)
+E4M3 - Malignancy - Of Serpents nailed to fate (Cammy for the AV Midi pack)
+E4M4 - Tainted Eden - Subterfuge (AD_79)
+E4M5 - God Complex - Bipolar Boogie (Xulgonoth/Cammy)
+E4M6 - Attack the Block - Shhh the shadows are near (Decino)
+E4M7 - Quadraphobia - Dark Walls (James Paddock from Cabin)
+E4M8 - Cerulean Escape - 2012 (ZDCMP2 Remix) (James Paddock)
+E4M9 - Power Trip - Hangar 7 (James Paddock)
+
+It is worth noting that these maps are much ore challenging than most Ultimate Doom episodes, and whilst these won't reach the difficulty of the hardest wads out there, some of these maps will push you. Difficulty settings are there to help on some of the tougher maps or indeed those that play by a different set of rules. I would say on average this is around the level seen in UDINO.

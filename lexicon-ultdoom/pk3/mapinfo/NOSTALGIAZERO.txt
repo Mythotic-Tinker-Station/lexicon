@@ -1,0 +1,453 @@
+// Nostalgia Zero Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NSGZE1M1 "Hangar 18"
+{
+	titlepatch = "NSGZV00"
+	next = "NSGZE1M2"
+	secretnext = "NSGZE1M2"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ01"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M2 "Fight Fire With Fire"
+{
+	titlepatch = "NSGZV01"
+	next = "NSGZE1M3"
+	secretnext = "NSGZE1M3"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ02"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M3 "Zero Tolerance"
+{
+	titlepatch = "NSGZV02"
+	next = "NSGZE1M4"
+	secretnext = "NSGZE1M9"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ03"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M4 "Bulls on Parade"
+{
+	titlepatch = "NSGZV03"
+	next = "NSGZE1M5"
+	secretnext = "NSGZE1M5"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ04"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M5 "No Remorse"
+{
+	titlepatch = "NSGZV04"
+	next = "NSGZE1M6"
+	secretnext = "NSGZE1M6"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ05"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M6 "Flight of Icarus"
+{
+	titlepatch = "NSGZV05"
+	next = "NSGZE1M7"
+	secretnext = "NSGZE1M7"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ06"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M7 "War Ensemble"
+{
+	titlepatch = "NSGZV06"
+	next = "NSGZE1M8"
+	secretnext = "NSGZE1M8"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ07"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE1M8 "Valley of the Dead"
+{
+	titlepatch = "NSGZV07"
+	next = "NSGZE2M1"
+	secretnext = "NSGZE2M1"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ08"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map NSGZE1M9 "Jump in the Fire"
+{
+	titlepatch = "NSGZV08"
+	next = "NSGZE1M4"
+	secretnext = "NSGZE1M4"
+	sky1 = "NSGZ0100"
+	music = "D_NSGZ09"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M1 "Wake Up Dead"
+{
+	titlepatch = "NSGZV09"
+	next = "NSGZE2M2"
+	secretnext = "NSGZE2M2"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ10"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M2 "Creeping Death"
+{
+	titlepatch = "NSGZV10"
+	next = "NSGZE2M3"
+	secretnext = "NSGZE2M3"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ11"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M3 "Harvester of Sorrow"
+{
+	titlepatch = "NSGZV11"
+	next = "NSGZE2M4"
+	secretnext = "NSGZE2M4"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ12"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M4 "Legions of the Dead"
+{
+	titlepatch = "NSGZV12"
+	next = "NSGZE2M5"
+	secretnext = "NSGZE2M5"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ13"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M5 "Sweating Bullets"
+{
+	titlepatch = "NSGZV13"
+	next = "NSGZE2M6"
+	secretnext = "NSGZE2M9"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ14"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M6 "Heresy"
+{
+	titlepatch = "NSGZV14"
+	next = "NSGZE2M7"
+	secretnext = "NSGZE2M7"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ15"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M7 "Covenant of Death"
+{
+	titlepatch = "NSGZV15"
+	next = "NSGZE2M8"
+	secretnext = "NSGZE2M8"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ16"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE2M8 "Gates to Hell"
+{
+	titlepatch = "NSGZV16"
+	next = "NSGZE3M1"
+	secretnext = "NSGZE3M1"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ17"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map NSGZE2M9 "Treachery"
+{
+	titlepatch = "NSGZV17"
+	next = "NSGZE2M6"
+	secretnext = "NSGZE2M6"
+	sky1 = "NSGZ0101"
+	music = "D_NSGZ18"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M1 "Baptized in Blood"
+{
+	titlepatch = "NSGZV18"
+	next = "NSGZE3M2"
+	secretnext = "NSGZE3M2"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ19"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M2 "Left Hand Path"
+{
+	titlepatch = "NSGZV19"
+	next = "NSGZE3M3"
+	secretnext = "NSGZE3M3"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ20"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M3 "Spirit in Black"
+{
+	titlepatch = "NSGZV20"
+	next = "NSGZE3M4"
+	secretnext = "NSGZE3M4"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ21"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M4 "Immortal Rites"
+{
+	titlepatch = "NSGZV21"
+	next = "NSGZE3M5"
+	secretnext = "NSGZE3M5"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ22"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M5 "Altar of Sacrifice"
+{
+	titlepatch = "NSGZV22"
+	next = "NSGZE3M6"
+	secretnext = "NSGZE3M6"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ23"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M6 "The Frayed Ends of Sanity"
+{
+	titlepatch = "NSGZV23"
+	next = "NSGZE3M7"
+	secretnext = "NSGZE3M9"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ24"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M7 "Crypts of Eternity"
+{
+	titlepatch = "NSGZV24"
+	next = "NSGZE3M8"
+	secretnext = "NSGZE3M8"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ25"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE3M8 "Infernal Death"
+{
+	titlepatch = "NSGZV25"
+	next = "NSGZE4M1"
+	secretnext = "NSGZE4M1"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ26"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map NSGZE3M9 "Caved"
+{
+	titlepatch = "NSGZV26"
+	next = "NSGZE3M7"
+	secretnext = "NSGZE3M7"
+	sky1 = "NSGZ0102"
+	music = "D_NSGZ27"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M1 "Rapture"
+{
+	titlepatch = "NSGZV27"
+	next = "NSGZE4M2"
+	secretnext = "NSGZE4M2"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ22"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M2 "Prophet of Hatred"
+{
+	titlepatch = "NSGZV28"
+	next = "NSGZE4M3"
+	secretnext = "NSGZE4M9"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ20"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M3 "Soul Burn"
+{
+	titlepatch = "NSGZV29"
+	next = "NSGZE4M4"
+	secretnext = "NSGZE4M4"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ21"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M4 "9th Circle"
+{
+	titlepatch = "NSGZV30"
+	next = "NSGZE4M5"
+	secretnext = "NSGZE4M5"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ05"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M5 "Thrones of Blood"
+{
+	titlepatch = "NSGZV31"
+	next = "NSGZE4M6"
+	secretnext = "NSGZE4M6"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ16"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M6 "Effigy of the Forgotten"
+{
+	titlepatch = "NSGZV32"
+	next = "NSGZE4M7"
+	secretnext = "NSGZE4M7"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ13"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map NSGZE4M7 "The Seven Tongues of God"
+{
+	titlepatch = "NSGZV33"
+	next = "NSGZE4M8"
+	secretnext = "NSGZE4M8"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ15"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}
+
+map NSGZE4M8 "Thy Kingdom Come"
+{
+	titlepatch = "NSGZV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ14"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map NSGZE4M9 "Red Velvet Wound"
+{
+	titlepatch = "NSGZV35"
+	next = "NSGZE4M3"
+	secretnext = "NSGZE4M3"
+	sky1 = "NSGZ0103"
+	music = "D_NSGZ09"
+	intermusic = "D_NSGZIN"
+	ExitPic = "NSGZINT"
+	EnterPic = "NSGZINT"
+}

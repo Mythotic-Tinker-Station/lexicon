@@ -1,0 +1,381 @@
+// (The Ultimate) Return to Hadron Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map URTHE1M1 "The Breach"
+{
+	titlepatch = "URTHV00"
+	next = "URTHE1M2"
+	secretnext = "URTHE1M2"
+	sky1 = "URTH0150"
+	music = "D_URTH01"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M2 "Nukage Disaster"
+{
+	titlepatch = "URTHV01"
+	next = "URTHE1M3"
+	secretnext = "URTHE1M3"
+	sky1 = "URTH0150"
+	music = "D_URTH02"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M3 "Toxic Treatment"
+{
+	titlepatch = "URTHV02"
+	next = "URTHE1M4"
+	secretnext = "URTHE1M9"
+	sky1 = "URTH0150"
+	music = "D_URTH03"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M4 "Withered Garden"
+{
+	titlepatch = "URTHV03"
+	next = "URTHE1M5"
+	secretnext = "URTHE1M5"
+	sky1 = "URTH0150"
+	music = "D_URTH04"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M5 "The Imp Crowd"
+{
+	titlepatch = "URTHV04"
+	next = "URTHE1M6"
+	secretnext = "URTHE1M6"
+	sky1 = "URTH0150"
+	music = "D_URTH05"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M6 "Gateway Lab"
+{
+	titlepatch = "URTHV05"
+	next = "URTHE1M7"
+	secretnext = "URTHE1M7"
+	sky1 = "URTH0150"
+	music = "D_URTH06"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M7 "CB Reactor Inc"
+{
+	titlepatch = "URTHV06"
+	next = "URTHE1M8"
+	secretnext = "URTHE1M8"
+	sky1 = "URTH0150"
+	music = "D_URTH07"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE1M8 "Collider Control"
+{
+	titlepatch = "URTHV07"
+	next = "URTHE2M1"
+	secretnext = "URTHE2M1"
+	sky1 = "URTH0150"
+	music = "D_URTH08"
+	intermusic = "D_URTHIN"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map URTHE1M9 "Prototype"
+{
+	titlepatch = "URTHV08"
+	next = "URTHE1M4"
+	secretnext = "URTHE1M4"
+	sky1 = "URTH0150"
+	music = "D_URTH09"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M1 "Flesh Start"
+{
+	titlepatch = "URTHV09"
+	next = "URTHE2M2"
+	secretnext = "URTHE2M2"
+	sky1 = "URTH0151"
+	music = "D_URTH10"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M2 "Logistics Complex"
+{
+	titlepatch = "URTHV10"
+	next = "URTHE2M3"
+	secretnext = "URTHE2M3"
+	sky1 = "URTH0151"
+	music = "D_URTH11"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M3 "Comm Centre"
+{
+	titlepatch = "URTHV11"
+	next = "URTHE2M4"
+	secretnext = "URTHE2M4"
+	sky1 = "URTH0151"
+	music = "D_URTH12"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M4 "Mortuary"
+{
+	titlepatch = "URTHV12"
+	next = "URTHE2M5"
+	secretnext = "URTHE2M5"
+	sky1 = "URTH0151"
+	music = "D_URTH13"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M5 "Bunker"
+{
+	titlepatch = "URTHV13"
+	next = "URTHE2M6"
+	secretnext = "URTHE2M9"
+	sky1 = "URTH0151"
+	music = "D_URTH14"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M6 "Aqueduct of Agony"
+{
+	titlepatch = "URTHV14"
+	next = "URTHE2M7"
+	secretnext = "URTHE2M7"
+	sky1 = "URTH0151"
+	music = "D_URTH15"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M7 "Core Processor"
+{
+	titlepatch = "URTHV15"
+	next = "URTHE2M8"
+	secretnext = "URTHE2M8"
+	sky1 = "URTH0151"
+	music = "D_URTH16"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE2M8 "Ground Zero"
+{
+	titlepatch = "URTHV16"
+	next = "URTHE3M1"
+	secretnext = "URTHE3M1"
+	sky1 = "URTH0151"
+	music = "D_URTH17"
+	intermusic = "D_URTHIN"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map URTHE2M9 "Descent into Darkness"
+{
+	titlepatch = "URTHV17"
+	next = "URTHE2M6"
+	secretnext = "URTHE2M6"
+	sky1 = "URTH0151"
+	music = "D_URTH18"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M1 "Nemesis"
+{
+	titlepatch = "URTHV18"
+	next = "URTHE3M2"
+	secretnext = "URTHE3M2"
+	sky1 = "URTH0152"
+	music = "D_URTH19"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M2 "Infernal Keep"
+{
+	titlepatch = "URTHV19"
+	next = "URTHE3M3"
+	secretnext = "URTHE3M3"
+	sky1 = "URTH0152"
+	music = "D_URTH20"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M3 "Blood Debt"
+{
+	titlepatch = "URTHV20"
+	next = "URTHE3M4"
+	secretnext = "URTHE3M4"
+	sky1 = "URTH0152"
+	music = "D_URTH21"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M4 "Colonic Desecration"
+{
+	titlepatch = "URTHV21"
+	next = "URTHE3M5"
+	secretnext = "URTHE3M5"
+	sky1 = "URTH0152"
+	music = "D_URTH22"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M5 "Trauma Complex"
+{
+	titlepatch = "URTHV22"
+	next = "URTHE3M6"
+	secretnext = "URTHE3M6"
+	sky1 = "URTH0152"
+	music = "D_URTH23"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M6 "Crimson Crevice"
+{
+	titlepatch = "URTHV23"
+	next = "URTHE3M7"
+	secretnext = "URTHE3M9"
+	sky1 = "URTH0152"
+	music = "D_URTH24"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M7 "Void Bastion"
+{
+	titlepatch = "URTHV24"
+	next = "URTHE3M8"
+	secretnext = "URTHE3M8"
+	sky1 = "URTH0152"
+	music = "D_URTH25"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE3M8 "Hive Mind"
+{
+	titlepatch = "URTHV25"
+	next = "URTHE4M1"
+	secretnext = "URTHE4M1"
+	sky1 = "URTH0152"
+	music = "D_URTH26"
+	intermusic = "D_URTHIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map URTHE3M9 "Trojan"
+{
+	titlepatch = "URTHV26"
+	next = "URTHE3M7"
+	secretnext = "URTHE3M7"
+	sky1 = "URTH0152"
+	music = "D_URTH27"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M1 "Mourning Facility"
+{
+	titlepatch = "URTHV27"
+	next = "URTHE4M2"
+	secretnext = "URTHE4M2"
+	sky1 = "URTH0153"
+	music = "D_URTH28"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M2 "Meteorain"
+{
+	titlepatch = "URTHV28"
+	next = "URTHE4M3"
+	secretnext = "URTHE4M9"
+	sky1 = "URTH0153"
+	music = "D_URTH29"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M3 "Malignancy"
+{
+	titlepatch = "URTHV29"
+	next = "URTHE4M4"
+	secretnext = "URTHE4M4"
+	sky1 = "URTH0153"
+	music = "D_URTH30"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M4 "Tainted Eden"
+{
+	titlepatch = "URTHV30"
+	next = "URTHE4M5"
+	secretnext = "URTHE4M5"
+	sky1 = "URTH0153"
+	music = "D_URTH31"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M5 "God Complex"
+{
+	titlepatch = "URTHV31"
+	next = "URTHE4M6"
+	secretnext = "URTHE4M6"
+	sky1 = "URTH0153"
+	music = "D_URTH32"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M6 "Attack the Block"
+{
+	titlepatch = "URTHV32"
+	next = "URTHE4M7"
+	secretnext = "URTHE4M7"
+	sky1 = "URTH0153"
+	music = "D_URTH33"
+	intermusic = "D_URTHIN"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map URTHE4M7 "Quadraphobia"
+{
+	titlepatch = "URTHV33"
+	next = "URTHE4M8"
+	secretnext = "URTHE4M8"
+	sky1 = "URTH0153"
+	music = "D_URTH34"
+	intermusic = "D_URTHIN"
+}
+
+map URTHE4M8 "Cerulean Escape"
+{
+	titlepatch = "URTHV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "URTH0153"
+	music = "D_URTH35"
+	intermusic = "D_URTHIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map URTHE4M9 "Powertrip"
+{
+	titlepatch = "URTHV35"
+	next = "URTHE4M3"
+	secretnext = "URTHE4M3"
+	sky1 = "URTH0153"
+	music = "D_URTH36"
+	intermusic = "D_URTHIN"
+}

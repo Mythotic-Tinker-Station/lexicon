@@ -1,0 +1,630 @@
+// Ultimate Doom the Way id Did Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D1WXE1M1 "Security Outpost"
+{
+	titlepatch = "D1WXV00"
+	next = "D1WXE1M2"
+	secretnext = "D1WXE1M2"
+	sky1 = "DSKY1"
+	music = "D_D1WD01"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M2 "Supply Depot"
+{
+	titlepatch = "D1WXV01"
+	next = "D1WXE1M3"
+	secretnext = "D1WXE1M3"
+	sky1 = "DSKY1"
+	music = "D_D1WD02"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M3 "Recycling Plant"
+{
+	titlepatch = "D1WXV02"
+	next = "D1WXE1M4"
+	secretnext = "D1WXE1M9"
+	sky1 = "DSKY1"
+	music = "D_D1WD03"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M4 "Quarantine Zone"
+{
+	titlepatch = "D1WXV03"
+	next = "D1WXE1M5"
+	secretnext = "D1WXE1M5"
+	sky1 = "DSKY1"
+	music = "D_D1WD04"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M5 "Kepler Dorsum"
+{
+	titlepatch = "D1WXV04"
+	next = "D1WXE1M6"
+	secretnext = "D1WXE1M6"
+	sky1 = "DSKY1"
+	music = "D_D1WD05"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M6 "Pumping Station"
+{
+	titlepatch = "D1WXV05"
+	next = "D1WXE1M7"
+	secretnext = "D1WXE1M7"
+	sky1 = "DSKY1"
+	music = "D_D1WD06"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M7 "Transport Hub"
+{
+	titlepatch = "D1WXV06"
+	next = "D1WXE1M8"
+	secretnext = "D1WXE1M8"
+	sky1 = "DSKY1"
+	music = "D_D1WD07"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE1M8 "Darkside Lab"
+{
+	titlepatch = "D1WXV07"
+	next = "D1WXE2M1"
+	secretnext = "D1WXE2M1"
+	sky1 = "DSKY1"
+	music = "D_D1WD08"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map D1WXE1M9 "Relay Station"
+{
+	titlepatch = "D1WXV08"
+	next = "D1WXE1M4"
+	secretnext = "D1WXE1M4"
+	sky1 = "DSKY1"
+	music = "D_D1WD09"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT1"
+	EnterPic = "D1WXINT1"
+}
+
+map D1WXE2M1 "Biosphere"
+{
+	titlepatch = "D1WXV09"
+	next = "D1WXE2M2"
+	secretnext = "D1WXE2M2"
+	sky1 = "DSKY2"
+	music = "D_D1WD10"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M2 "Cooling Towers"
+{
+	titlepatch = "D1WXV10"
+	next = "D1WXE2M3"
+	secretnext = "D1WXE2M3"
+	sky1 = "DSKY2"
+	music = "D_D1WD11"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M3 "Infirmary"
+{
+	titlepatch = "D1WXV11"
+	next = "D1WXE2M4"
+	secretnext = "D1WXE2M4"
+	sky1 = "DSKY2"
+	music = "D_D1WD12"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M4 "Waste Treatment"
+{
+	titlepatch = "D1WXV12"
+	next = "D1WXE2M5"
+	secretnext = "D1WXE2M5"
+	sky1 = "DSKY2"
+	music = "D_D1WD13"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M5 "Logistics Facility"
+{
+	titlepatch = "D1WXV13"
+	next = "D1WXE2M6"
+	secretnext = "D1WXE2M9"
+	sky1 = "DSKY2"
+	music = "D_D1WD14"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M6 "Rend of Misery"
+{
+	titlepatch = "D1WXV14"
+	next = "D1WXE2M7"
+	secretnext = "D1WXE2M7"
+	sky1 = "DSKY2"
+	music = "D_D1WD15"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M7 "Dark Passage"
+{
+	titlepatch = "D1WXV15"
+	next = "D1WXE2M8"
+	secretnext = "D1WXE2M8"
+	sky1 = "DSKY2"
+	music = "D_D1WD16"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE2M8 "The Gate"
+{
+	titlepatch = "D1WXV16"
+	next = "D1WXE3M1"
+	secretnext = "D1WXE3M1"
+	sky1 = "DSKY2"
+	music = "D_D1WD17"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map D1WXE2M9 "Petersen Station"
+{
+	titlepatch = "D1WXV17"
+	next = "D1WXE2M6"
+	secretnext = "D1WXE2M6"
+	sky1 = "DSKY2"
+	music = "D_D1WX18"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT2"
+	EnterPic = "D1WXINT2"
+}
+
+map D1WXE3M1 "Hell Breach"
+{
+	titlepatch = "D1WXV18"
+	next = "D1WXE3M2"
+	secretnext = "D1WXE3M2"
+	sky1 = "DSKY3"
+	music = "D_D1WD19"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M2 "Manufactorium"
+{
+	titlepatch = "D1WXV19"
+	next = "D1WXE3M3"
+	secretnext = "D1WXE3M3"
+	sky1 = "DSKY3"
+	music = "D_D1WD20"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M3 "Necromanteion"
+{
+	titlepatch = "D1WXV20"
+	next = "D1WXE3M4"
+	secretnext = "D1WXE3M4"
+	sky1 = "DSKY3"
+	music = "D_D1WD21"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M4 "Tartarus"
+{
+	titlepatch = "D1WXV21"
+	next = "D1WXE3M5"
+	secretnext = "D1WXE3M5"
+	sky1 = "DSKY3"
+	music = "D_D1WD22"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M5 "Purgatorio"
+{
+	titlepatch = "D1WXV22"
+	next = "D1WXE3M6"
+	secretnext = "D1WXE3M6"
+	sky1 = "DSKY3"
+	music = "D_D1WD23"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M6 "Stygian Caverns"
+{
+	titlepatch = "D1WXV23"
+	next = "D1WXE3M7"
+	secretnext = "D1WXE3M9"
+	sky1 = "DSKY3"
+	music = "D_D1WD24"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M7 "Sheol's Descent"
+{
+	titlepatch = "D1WXV24"
+	next = "D1WXE3M8"
+	secretnext = "D1WXE3M8"
+	sky1 = "DSKY3"
+	music = "D_D1WD25"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE3M8 "Ninth Circle"
+{
+	titlepatch = "D1WXV25"
+	next = "D1WXE4M1"
+	secretnext = "D1WXE4M1"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map D1WXE3M9 "Weeping Hollow"
+{
+	titlepatch = "D1WXV26"
+	next = "D1WXE3M7"
+	secretnext = "D1WXE3M7"
+	sky1 = "DSKY3"
+	music = "D_D1WX27"
+	intermusic = "D_D1WDIN"
+	ExitPic = "D1WXINT3"
+	EnterPic = "D1WXINT3"
+}
+
+map D1WXE4M1 "Bridge to Nowhere"
+{
+	titlepatch = "D1WXV27"
+	next = "D1WXE4M2"
+	secretnext = "D1WXE4M2"
+	sky1 = "D1WX0011"
+	music = "D_D1WD22"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M2 "Demonic Halls"
+{
+	titlepatch = "D1WXV28"
+	next = "D1WXE4M3"
+	secretnext = "D1WXE4M9"
+	sky1 = "D1WX0011"
+	music = "D_D1WD20"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M3 "Despair"
+{
+	titlepatch = "D1WXV29"
+	next = "D1WXE4M4"
+	secretnext = "D1WXE4M4"
+	sky1 = "D1WX0011"
+	music = "D_D1WD21"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M4 "Phlegethon"
+{
+	titlepatch = "D1WXV30"
+	next = "D1WXE4M5"
+	secretnext = "D1WXE4M5"
+	sky1 = "D1WX0011"
+	music = "D_D1WD05"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M5 "Diabolico"
+{
+	titlepatch = "D1WXV31"
+	next = "D1WXE4M6"
+	secretnext = "D1WXE4M6"
+	sky1 = "D1WX0011"
+	music = "D_D1WD16"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M6 "The Mourning Halls"
+{
+	titlepatch = "D1WXV32"
+	next = "D1WXE4M7"
+	secretnext = "D1WXE4M7"
+	sky1 = "D1WX0011"
+	music = "D_D1WD13"
+	intermusic = "D_D1WDIN"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map D1WXE4M7 "Babel's Gate"
+{
+	titlepatch = "D1WXV33"
+	next = "D1WXE4M8"
+	secretnext = "D1WXE4M8"
+	sky1 = "D1WX0011"
+	music = "D_D1WD15"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE4M8 "Temple Guardian"
+{
+	titlepatch = "D1WXV34"
+	next = "D1WXE5M1"
+	secretnext = "D1WXE5M1"
+	sky1 = "D1WX0011"
+	music = "D_D1WD14"
+	intermusic = "D_D1WDIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map D1WXE4M9 "Bean Oversight"
+{
+	titlepatch = "D1WXV35"
+	next = "D1WXE4M3"
+	secretnext = "D1WXE4M3"
+	sky1 = "D1WX0011"
+	music = "D_D1WD09"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M1 "Landing Zone"
+{
+	titlepatch = "D1WXV36"
+	next = "D1WXE5M2"
+	secretnext = "D1WXE5M0"
+	sky1 = "DSKY1"
+	music = "D_D1WD10"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M2 "Observatory"
+{
+	titlepatch = "D1WXV37"
+	next = "D1WXE5M3"
+	sky1 = "DSKY1"
+	music = "D_D1WD02"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M3 "Recycling Plant"
+{
+	titlepatch = "D1WXV38"
+	next = "D1WXE5M4"
+	secretnext = "D1WXE5M9"
+	sky1 = "DSKY1"
+	music = "D_D1WD03"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M4 "Phobos Garrison"
+{
+	titlepatch = "D1WXV39"
+	next = "D1WXE5M5"
+	sky1 = "DSKY1"
+	music = "D_D1WD06"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M5 "Science Facility"
+{
+	titlepatch = "D1WXV40"
+	next = "D1WXE5M6"
+	sky1 = "DSKY1"
+	music = "D_D1WD14"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M6 "Disposal Area"
+{
+	titlepatch = "D1WXV41"
+	next = "D1WXE5M7"
+	sky1 = "DSKY1"
+	music = "D_D1WD12"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M7 "Sanguine Refinery"
+{
+	titlepatch = "D1WXV42"
+	next = "D1WXE5M8"
+	sky1 = "DSKY1"
+	music = "D_D1WD16"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M8 "Like Rotten Meat"
+{
+	titlepatch = "D1WXV43"
+	next = "D1WXE6M1"
+	sky1 = "DSKY1"
+	music = "D_D1WD08"
+	intermusic = "D_D1WDIN"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map D1WXE5M9 "Wayward Outpost"
+{
+	titlepatch = "D1WXV44"
+	next = "D1WXE5M4"
+	sky1 = "DSKY1"
+	music = "D_D1WD19"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE5M0 "Starport"
+{
+	titlepatch = "D1WXV45"
+	next = "D1WXE5M2"
+	secretnext = "D1WXE5M1"
+	sky1 = "DSKY1"
+	music = "D_D1WD01"
+	intermusic = "D_D1WDIN"
+}
+
+map D1WXE6M1 "Deja Vu"
+{
+	titlepatch = "D1WXV46"
+	next = "D1WXE6M2"
+	sky1 = "DSKY3"
+	music = "D_D1WD08"
+	intermusic = "D_D1WDIN"
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map D1WXE6M2 "Intrusion Zone"
+{
+	titlepatch = "D1WXV47"
+	next = "D1WXE6M3"
+	sky1 = "DSKY3"
+	music = "D_D1WD08"
+	intermusic = "D_D1WDIN"
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map D1WXE6M3 "The Pain Yards"
+{
+	titlepatch = "D1WXV48"
+	next = "D1WXE6M4"
+	sky1 = "DSKY3"
+	music = "D_D1WD17"
+	intermusic = "D_D1WDIN"
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M4 "Deimos Fortress"
+{
+	titlepatch = "D1WXV49"
+	next = "D1WXE6M5"
+	sky1 = "DSKY3"
+	music = "D_D1WD17"
+	intermusic = "D_D1WDIN"
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M5 "Pit of Despair"
+{
+	titlepatch = "D1WXV50"
+	next = "D1WXE6M6"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M6 "Anomaly of Evil"
+{
+	titlepatch = "D1WXV51"
+	next = "D1WXE6M7"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M7 "Land of Awe"
+{
+	titlepatch = "D1WXV52"
+	next = "D1WXE6M8"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M8 "Malebolge"
+{
+	titlepatch = "D1WXV53"
+	next = "D1WXE6M9"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map D1WXE6M9 "Hell's Mosh Pit"
+{
+	titlepatch = "D1WXV54"
+	next = "VR"
+	sky1 = "DSKY3"
+	music = "D_D1WD26"
+	intermusic = "D_D1WDIN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}

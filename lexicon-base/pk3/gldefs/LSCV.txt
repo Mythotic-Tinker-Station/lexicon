@@ -1,0 +1,156 @@
+object Lexicon_LSCV_BurningBarrel
+{
+    frame LX66 { light FIREBARREL }
+}
+
+flickerlight2 Lexicon_LSCV_NONSOLIDMEAT2
+{
+	color 0.8 0.8 1.0
+	size 96
+	secondarySize 92
+	interval 0.4
+	offset 0 -64 0
+}
+
+object Lexicon_LSCV_NonsolidMeat2
+{
+	frame LX66 { light Lexicon_LSCV_NONSOLIDMEAT2 }
+}
+
+flickerlight2 Lexicon_LSCV_NONSOLIDMEAT3
+{
+	color 0.0 0.0 1.0
+	size 128
+	secondarySize 132
+	interval 0.1
+	offset 0 30 0
+}
+
+object Lexicon_LSCV_NonsolidMeat3
+{
+	frame LX66 { light Lexicon_LSCV_NONSOLIDMEAT3 }
+}
+
+flickerlight2 Lexicon_LSCV_NONSOLIDMEAT4
+{
+	color 0.8 0.8 1.0
+	size 56
+	secondarySize 54
+	interval 0.4
+	offset 0 -64 0
+}
+
+object Lexicon_LSCV_NonsolidMeat4
+{
+	frame LX66 { light Lexicon_LSCV_NONSOLIDMEAT4 }
+}
+
+flickerlight2 Lexicon_LSCV_NONSOLIDTWITCH
+{
+	color 1.0 0.3 0.0
+	size 86
+	secondarySize 94
+	interval 0.4
+	offset 0 -64 0
+}
+
+object Lexicon_LSCV_NonsolidTwitch
+{
+	frame LX66 { light Lexicon_LSCV_NONSOLIDTWITCH }
+}
+
+flickerlight2 Lexicon_LSCV_FLOATINGSKULL
+{
+	color 1.0 0.9 0.0
+	size 48
+	secondarySize 54
+	interval 0.1
+	offset 0 32 0
+}
+
+object Lexicon_LSCV_FloatingSkull
+{
+	frame LX66 { light Lexicon_LSCV_FLOATINGSKULL }
+}
+
+flickerlight2 Lexicon_LSCV_SKULLCANDLES
+{
+    color 1.0 0.9 0.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 32 0
+}
+
+object Lexicon_LSCV_HeadCandles
+{
+    frame LX66 { light Lexicon_LSCV_SKULLCANDLES }
+}
+
+flickerlight2 Lexicon_LSCV_BIGBLUETORCH
+{
+    color 0.0 0.0 1.0
+    size 128
+    secondarySize 132
+    interval 0.1
+    offset 0 60 0
+}
+
+object Lexicon_LSCV_BlueTorch
+{
+    frame LX66 { light Lexicon_LSCV_BIGBLUETORCH }
+}
+
+flickerlight2 Lexicon_LSCV_SMALLBLUETORCH
+{
+    color 1.0 0.3 0.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 35 0
+}
+
+object Lexicon_LSCV_ShortBlueTorch
+{
+    frame LX67 { light Lexicon_LSCV_SMALLBLUETORCH }
+}
+
+object Lexicon_LSCV_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame PLSEA { light PLASMA_X1 }
+    frame PLSEB { light PLASMA_X2 }
+    frame PLSEC { light PLASMA_X2 }
+    frame PLSED { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+object Lexicon_LSCV_ArachnotronPlasma
+{
+    frame APLSA { light ARACHPLAS }
+    frame APLSB { light ARACHPLAS }
+
+    frame APBXA { light ARACHPLAS_X1 }
+    frame APBXB { light ARACHPLAS_X2 }
+    frame APBXC { light ARACHPLAS_X2 }
+    frame APBXD { light ARACHPLAS_X3 }
+    frame APBXE { light ARACHPLAS_X4 }
+}
+
+object Lexicon_LSCV_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_LSCV_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_LSCV_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}

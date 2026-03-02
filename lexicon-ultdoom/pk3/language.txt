@@ -1,0 +1,262 @@
+[default]
+LEX_ULTD_PACKNAME = "Base (Ultimate Doom)";
+LEX_ULTD_GAMETYPE = "COOP";
+
+LEX_ULTD_1 = "ADO1";
+LEX_ULTD_2 = "D1WD";
+LEX_ULTD_3 = "D1WX";
+LEX_ULTD_4 = "CCRN";
+LEX_ULTD_5 = "DBIM";
+LEX_ULTD_6 = "BGCP";
+LEX_ULTD_7 = "SWR1";
+LEX_ULTD_8 = "SWRX";
+LEX_ULTD_9 = "DDAM";
+LEX_ULTD_10 = "JPTR";
+LEX_ULTD_11 = "WD13";
+LEX_ULTD_12 = "NSGZ";
+LEX_ULTD_13 = "STKN";
+LEX_ULTD_14 = "SLRS";
+LEX_ULTD_15 = "URTH";
+LEX_ULTD_16 = "DTCT";
+LEX_ULTD_17 = "FRAY";
+LEX_ULTD_18 = "NMDU";
+LEX_ULTD_19 = "DTHL";
+LEX_ULTD_20 = "UDIN";
+LEX_ULTD_21 = "MOC1";
+LEX_ULTD_22 = "ADO2";
+LEX_ULTD_23 = "NEIS";
+LEX_ULTD_24 = "HLBN";
+
+// 2002 A Doom Odyssey - 10th Anniversary Edition
+ADO1_ACTOR_1 = "Lexicon_ADO1_WolfensteinSS";
+ADO1_MAPSET_AUTHORS = "Paul Corfiatis, various authors";
+ADO1_MAPSET_CUSTOM = "Y";
+ADO1_MAPSET_DATE = "2012";
+ADO1_MAPSET_MAPS = "38";
+ADO1_MAPSET_TITLE = "2002 A Doom Odyssey";
+ADO1_MAPSET_PACK = "ULTD";
+ADO1_MAPSET_IWAD = "doom1";
+
+// Ultimate Doom the Way id Did
+D1WD_MAPSET_AUTHORS = "DTWID Team, music by Mr. Freeze";
+D1WD_MAPSET_CUSTOM = "N";
+D1WD_MAPSET_DATE = "2019";
+D1WD_MAPSET_MAPS = "36";
+D1WD_MAPSET_TITLE = "Ultimate Doom the Way id Did";
+D1WD_MAPSET_PACK = "ULTD";
+D1WD_MAPSET_IWAD = "doom1";
+
+// Doom the Way id Did: The Lost Episodes
+D1WX_MAPSET_AUTHORS = "DTWID Team, music by Mr. Freeze, various coopfixes by BLOODWOLF";
+D1WX_MAPSET_CUSTOM = "N";
+D1WX_MAPSET_DATE = "2012";
+D1WX_MAPSET_MAPS = "55";
+D1WX_MAPSET_TITLE = "DTWID: The Lost Episodes";
+D1WX_MAPSET_PACK = "ULTD";
+D1WX_MAPSET_IWAD = "doom1";
+
+// ConC.E.R.Ned
+CCRN_MAPSET_AUTHORS = "Matt \"cannonball\" Powell";
+CCRN_MAPSET_CUSTOM = "N";
+CCRN_MAPSET_DATE = "2013";
+CCRN_MAPSET_MAPS = "27";
+CCRN_MAPSET_TITLE = "ConC.E.R.Ned";
+CCRN_MAPSET_PACK = "ULTD";
+CCRN_MAPSET_IWAD = "doom1";
+
+// Double Impact
+DBIM_MAPSET_AUTHORS = "RottKing, Ralphis, Unidoom";
+DBIM_MAPSET_CUSTOM = "N";
+DBIM_MAPSET_DATE = "2011";
+DBIM_MAPSET_MAPS = "9";
+DBIM_MAPSET_TITLE = "Double Impact";
+DBIM_MAPSET_PACK = "ULTD";
+DBIM_MAPSET_IWAD = "doom1";
+
+// Base Ganymede: Complete
+BGCP_MAPSET_AUTHORS = "Adam \"Khorus\" Woodmanseye, various coopfixes by BLOODWOLF";
+BGCP_MAPSET_CUSTOM = "N";
+BGCP_MAPSET_DATE = "2012";
+BGCP_MAPSET_MAPS = "27";
+BGCP_MAPSET_TITLE = "Base Ganymede: Complete";
+BGCP_MAPSET_PACK = "ULTD";
+BGCP_MAPSET_IWAD = "doom1";
+
+// Switcheroom
+SWR1_MAPSET_AUTHORS = "Various authors";
+SWR1_MAPSET_CUSTOM = "N";
+SWR1_MAPSET_DATE = "2014";
+SWR1_MAPSET_MAPS = "36";
+SWR1_MAPSET_TITLE = "Switcheroom";
+SWR1_MAPSET_PACK = "ULTD";
+SWR1_MAPSET_IWAD = "doom1";
+
+// Switcheroom: The Forgotten Maps
+SWRX_MAPSET_AUTHORS = "Various authors";
+SWRX_MAPSET_CUSTOM = "N";
+SWRX_MAPSET_DATE = "2017";
+SWRX_MAPSET_MAPS = "18";
+SWRX_MAPSET_TITLE = "Switcheroom: The Forgotten Maps";
+SWRX_MAPSET_PACK = "ULTD";
+SWRX_MAPSET_IWAD = "doom1";
+
+// Doom: Damnation
+DDAM_MAPSET_AUTHORS = "Ofisil";
+DDAM_MAPSET_CUSTOM = "N";
+DDAM_MAPSET_DATE = "2021";
+DDAM_MAPSET_MAPS = "36";
+DDAM_MAPSET_TITLE = "Doom: Damnation";
+DDAM_MAPSET_PACK = "ULTD";
+DDAM_MAPSET_IWAD = "doom1";
+
+// The Lost Episodes of Doom
+JPTR_MAPSET_AUTHORS = "Christen Klie and Bob Carter, custom skies by BlueFireZ88, TITLEPIC by KMX E XII";
+JPTR_MAPSET_CUSTOM = "N";
+JPTR_MAPSET_DATE = "1995";
+JPTR_MAPSET_MAPS = "24";
+JPTR_MAPSET_TITLE = "The Lost Episodes of Doom";
+JPTR_MAPSET_PACK = "ULTD";
+JPTR_MAPSET_IWAD = "doom1";
+
+// Wonderful Doom
+WD13_MAPSET_AUTHORS = "Wraith";
+WD13_MAPSET_CUSTOM = "N";
+WD13_MAPSET_DATE = "2011";
+WD13_MAPSET_MAPS = "36";
+WD13_MAPSET_TITLE = "Wonderful Doom";
+WD13_MAPSET_PACK = "ULTD";
+WD13_MAPSET_IWAD = "doom1";
+
+// Nostalgia Zero
+NSGZ_ACTOR_1 = "Lexicon_NSGZ_PlasmaRifle";
+NSGZ_ACTORALT_1 = "PlasmaRifle";
+NSGZ_MAPSET_AUTHORS = "myolden";
+NSGZ_MAPSET_CUSTOM = "Y";
+NSGZ_MAPSET_DATE = "2024";
+NSGZ_MAPSET_MAPS = "36";
+NSGZ_MAPSET_TITLE = "Nostalgia Zero";
+NSGZ_MAPSET_PACK = "ULTD";
+NSGZ_MAPSET_IWAD = "doom1";
+
+// Stickney Installation
+STKN_MAPSET_AUTHORS = "Snaxalotl \"Kyra\"";
+STKN_MAPSET_CUSTOM = "N";
+STKN_MAPSET_DATE = "2022";
+STKN_MAPSET_MAPS = "36";
+STKN_MAPSET_TITLE = "Stickney Installation";
+STKN_MAPSET_PACK = "ULTD";
+STKN_MAPSET_IWAD = "doom1";
+
+// Solar Struggle
+SLRS_MAPSET_AUTHORS = "ViolentBeetle, various authors";
+SLRS_MAPSET_CUSTOM = "N";
+SLRS_MAPSET_DATE = "2022";
+SLRS_MAPSET_MAPS = "36";
+SLRS_MAPSET_TITLE = "Solar Struggle";
+SLRS_MAPSET_PACK = "ULTD";
+SLRS_MAPSET_IWAD = "doom1";
+
+// (The Ultimate) Return to Hadron
+URTH_ACTOR_1 = "Lexicon_URTH_DeadLostSoul";
+URTH_ACTOR_2 = "Lexicon_URTH_GibbedMarineExtra";
+URTH_OB_DEADLOSTSOUL = "%o couldn't dodge a beam zombie.";
+URTH_TAG_DEADLOSTSOUL = "Beam Zombie";
+URTH_OB_GIBBEDMARINEEXTRA = "A Mini-mind turned %o into swiss cheese.";
+URTH_TAG_GIBBEDMARINEEXTRA = "Mini-mind";
+URTH_MAPSET_AUTHORS = "Matt \"cannonball\" Powell";
+URTH_MAPSET_CUSTOM = "Y";
+URTH_MAPSET_DATE = "2024";
+URTH_MAPSET_MAPS = "36";
+URTH_MAPSET_TITLE = "Return to Hadron";
+URTH_MAPSET_PACK = "ULTD";
+URTH_MAPSET_IWAD = "doom1";
+
+// Death Tormention: The Complete Trilogy
+DTCT_ACTOR_1 = "Lexicon_DTCT_DeadLostSoul";
+DTCT_TAG_DEADLOSTSOUL = "Stealth Baron";
+DTCT_MAPSET_AUTHORS = "Paul Corfiatis, Kristian Aro, Chris Harbin, Chris Harriman";
+DTCT_MAPSET_CUSTOM = "Y";
+DTCT_MAPSET_DATE = "2019";
+DTCT_MAPSET_MAPS = "38";
+DTCT_MAPSET_TITLE = "Death Tormention";
+DTCT_MAPSET_PACK = "ULTD";
+DTCT_MAPSET_IWAD = "doom1";
+
+// FRAYED
+FRAY_ACTOR_1 = "Lexicon_FRAY_Stalagtite";
+FRAY_MAPSET_AUTHORS = "John Carrell";
+FRAY_MAPSET_CUSTOM = "N";
+FRAY_MAPSET_DATE = "2024";
+FRAY_MAPSET_MAPS = "36";
+FRAY_MAPSET_TITLE = "FRAYED";
+FRAY_MAPSET_PACK = "ULTD";
+FRAY_MAPSET_IWAD = "doom1";
+
+// The Ultimate NMD
+NMDU_MAPSET_AUTHORS = "Fiend";
+NMDU_MAPSET_CUSTOM = "N";
+NMDU_MAPSET_DATE = "2009";
+NMDU_MAPSET_MAPS = "27";
+NMDU_MAPSET_TITLE = "The Ultimate NMD";
+NMDU_MAPSET_PACK = "ULTD";
+NMDU_MAPSET_IWAD = "doom1";
+
+// Deathless
+DTHL_ACTOR_1 = "Lexicon_DTHL_SpiderMastermind";
+DTHL_ACTOR_2 = "Lexicon_DTHL_LostSoul";
+DTHL_ACTORALT_2 = "LostSoul";
+DTHL_ACTOR_3 = "Lexicon_DTHL_Soulsphere";
+DTHL_ACTORALT_3 = "Soulsphere";
+DTHL_MAPSET_AUTHORS = "Jimmy";
+DTHL_MAPSET_CUSTOM = "Y";
+DTHL_MAPSET_DATE = "2020";
+DTHL_MAPSET_MAPS = "36";
+DTHL_MAPSET_TITLE = "Deathless";
+DTHL_MAPSET_PACK = "ULTD";
+DTHL_MAPSET_IWAD = "doom1";
+
+// The Ultimate Doom In Name Only
+UDIN_MAPSET_AUTHORS = "UDINO Team";
+UDIN_MAPSET_CUSTOM = "N";
+UDIN_MAPSET_DATE = "2023";
+UDIN_MAPSET_MAPS = "36";
+UDIN_MAPSET_TITLE = "The Ultimate Doom In Name Only";
+UDIN_MAPSET_PACK = "ULTD";
+UDIN_MAPSET_IWAD = "doom1";
+
+// Maps of Chaos
+MOC1_MAPSET_AUTHORS = "DoomVideoVault";
+MOC1_MAPSET_CUSTOM = "N";
+MOC1_MAPSET_DATE = "2020";
+MOC1_MAPSET_MAPS = "27";
+MOC1_MAPSET_TITLE = "Maps of Chaos (Doom 1)";
+MOC1_MAPSET_PACK = "ULTD";
+MOC1_MAPSET_IWAD = "doom1";
+
+// 2022 A Doom Odyssey
+ADO2_MAPSET_AUTHORS = "Paul Corfiatis, various authors";
+ADO2_MAPSET_CUSTOM = "N";
+ADO2_MAPSET_DATE = "2022";
+ADO2_MAPSET_MAPS = "50";
+ADO2_MAPSET_TITLE = "2022 A Doom Odyssey";
+ADO2_MAPSET_PACK = "ULTD";
+ADO2_MAPSET_IWAD = "doom1";
+
+// No End in Sight
+NEIS_MAPSET_AUTHORS = "Emil \"NaturalTvventy\" Brundage, Xaser Acheron, Chris Lutz";
+NEIS_MAPSET_CUSTOM = "N";
+NEIS_MAPSET_DATE = "2016";
+NEIS_MAPSET_MAPS = "37";
+NEIS_MAPSET_TITLE = "No End in Sight";
+NEIS_MAPSET_PACK = "ULTD";
+NEIS_MAPSET_IWAD = "doom1";
+
+// Hell's Bane
+HLBN_ACTOR_1 = "Lexicon_HLBN_TallRedColumn";
+HLBN_MAPSET_AUTHORS = "Chris Hansen";
+HLBN_MAPSET_CUSTOM = "Y";
+HLBN_MAPSET_DATE = "2024";
+HLBN_MAPSET_MAPS = "36";
+HLBN_MAPSET_TITLE = "Hell's Bane";
+HLBN_MAPSET_PACK = "ULTD";
+HLBN_MAPSET_IWAD = "doom1";

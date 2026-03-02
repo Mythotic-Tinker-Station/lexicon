@@ -1,0 +1,669 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : SlaughterMAX
+Filename                : smax.wad
+Release date            : 1/1/2020
+Author                  : Various
+Email Address           : [redacted]
+Other Files By Author   : N/A
+Misc. Author Info       : See bottom of text file for full credits.
+
+Description             : SlaughterMAX is a community project meant to spread
+                          the joy of making and playing slaughter maps. All
+                          maps that were submitted and had a UV Max demo
+                          recorded were included, until there were 32 maps.
+                          The demos are also included in the zip file, so if
+                          you ever wonder "how the heck is this even
+                          possible?!" or just want a good show, check out the
+                          demos!
+                          
+                          Note about difficulty settings:
+                          
+                          Ultra-Violence (renamed "UV Max") is the main
+                          difficulty that all of the demos were recorded on.
+                          Hurt Me Plenty (renamed "Casual") is slightly more
+                          forgiving and is recommended for casual play. Hey
+                          Not Too Rough has been re-branded as "WILD!" and
+                          has experimental, ridiculous, or very hard gameplay
+                          that is sometimes barely tested, and will usually
+                          be harder than UV.
+
+Additional Credits to   : See bottom of text file for full credits.
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : About 9 months from project start to finish
+Editor(s) used          : GZDB, DB2, SLADE, GIMP, MS Paint, Bitmap Font
+                          Writer, HxD, and whatever else the various authors
+                          used!
+Known Bugs              : There's at least one soft-lock. Watch your step!
+May Not Run With        : Some of the maps will not be performant in GZDoom,
+                          for example
+Tested With             : PrBoom+ or GlBoom+, complevel 9
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes. If you remix, transform, or build upon the
+material, you must distribute your contributions under the same license as
+the original.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+=============================================================================
+========  SlaughterMAX  =====================================================
+=============================================================================
+
+PROJECT LEAD: Benjogami
+
+MAPPERS:
+
+42PercentHealth
+A7MAD
+antares031
+Archi
+Bdubzzz
+Bemused
+Benjogami
+DanielAlexander
+Dododamian
+elmle
+floatRand
+Killer5
+mArt1And00m3r11339
+Memfis
+Nirvana
+RjY
+Scotty
+Spectre01
+tourniquet
+Xyzzy01
+Yousuf Anik
+
+MAXERS:
+
+A7MAD
+Ancalagon
+antares031
+Bdubzzz
+Bloodite Krypto
+DanielAlexander
+elmle
+mArt1And00m3r11339
+Player177
+Spectre01
+The Green Herring
+
+TITLEPIC is by DanielAlexander
+M_DOOM, INTERPIC, BOSSBACK and Status Bar are by antares031
+
+Title midi is from Everquest
+Intermission midi is a midi version of "Chill and Rigor"
+from 9 Hours, 9 Persons, 9 Doors
+
+Thank you NoisyVelvet for recording the autoplay demos
+
+Thank you elmle for testing WILD mode
+
+=============================================================================
+========  CREDITS FOR EACH MAP  =============================================
+=============================================================================
+MAP01: Mud Elemental
+Map by: Memfis
+Max by: Ancalagon
+Max time: 0:01:53
+Midi: from Phobosphere
+=============================================================================
+MAP02: Showdown
+Map by: Dododamian
+Max by: A7MAD
+Max time: 0:04:13
+Midi: E3M1 (Untitled) by Bobby Prince 
+=============================================================================
+MAP03: Canyon Base
+Map by: DanielAlexander
+Max by: DanielAlexander
+Max time: 0:12:25
+Midi: Last Ninja 2 - Central Park Loader OST
+=============================================================================
+MAP04: Struggle Bug
+Map by: A7MAD
+Max by: Bloodite Krypto
+Max time: 0:01:29
+Midi: "Heretic E1M9 Graveyard" by Kevin Schilder
+Additional credits: Sky is by Mechadon
+=============================================================================
+MAP05: The Broken Machine
+Map by: DanielAlexander
+Max by: Ancalagon
+Max time: 0:03:22
+Midi: Street Fighter II - Ken's Theme
+=============================================================================
+MAP06: Sons of Liberty
+Map by: Scotty
+Max by: Bloodite Krypto
+Max time: 0:09:13
+Midi: "Yell Dead Cell" from Metal Gear Solid 2
+Additional credits: Sky is from Sunlust
+=============================================================================
+MAP07: Lift of Enlightenment
+Map by: Bemused
+Max by: Bloodite Krypto
+Max time: 0:01:42
+Midi: "Gutknot" by Thyrbse, from Hell Revealed 2
+=============================================================================
+MAP08: Dang!
+Map by: 42PercentHealth
+Max by: Ancalagon
+Max time: 0:08:16
+Midi: "Legion of Fear" by Knightrider of Doom
+Additional credits: Sky is by Eradrop
+=============================================================================
+MAP09: Heavy Impact
+Map by: Yousuf Anik
+Max by: Bloodite Krypto
+Max time: 0:22:21
+Midi: Children of Bodom - Lake Bodom (midi version)
+=============================================================================
+MAP10: Velvet
+Map by: floatRand
+Max by: Player177
+Max time: 0:09:40
+Midi: "Crystal Teardrops" from Castlevania: Symphony of the Night
+Mapper comments:
+"When I started working on this map concept, I had some few constraints; 
+
+* A rather constrained space, after coming from Confinement project I had
+some hungering for more.
+* Contains invasion finale that can be accessed from start
+* Shortcuts and secret doors aplenty
+
+"Originally I had floated idea of making map sort of silly 'revenant
+factory', with conveyors moving them around, and finale being bit comical bit
+where you open security system to slam a button that releases all revenants
+into the factory. I had even thought about using 'Spalding Factory' theme
+from Barkley Gaiden. However, I must I struggled with the theme (perhaps it
+is just that I kinda am bad at using Doom2 textures), so I kinda went with my
+'safe space' which is magical libraries etc. A throwback to 'Felt' of
+Disjunction and first map I made public. But perhaps it is masturbatory to
+reference something so recent - and something that is not perhaps that great. 
+
+"Either way, doing slaughter-style gameplay proved to be bit difficult with
+the set constraints and maybe feels like afterthought. I hadn't really done
+that much slaughtery stuff, outside of specific encounters from
+Disjunction - map10 finale particular. I also tried to make the final
+encounter difficult to cheese, a situation where you have no safe corners to
+sit in and you have to use to shortcuts / openings you made prior, but if you
+rush the switches to the exit you can access outside section which can be used
+to safely kill revenants. Oh well. It isn't the fastest way apparently, so I
+guess it isn't that bad of a deal. 
+
+"Oh, and I did enjoy making those 'elemental plane' sections. The 'elemental
+plane of fire' worked out much better, but the water one? I guess I didn't
+have as many ideas as I hoped. Oh well." -floatRand
+=============================================================================
+MAP11: ritournelle
+Map by: tourniquet
+Max by: Player177
+Max time: 0:09:37
+Midi: "Amethyst Princess" by rdwpa
+Additional credits: Sky is from Speed of Doom
+=============================================================================
+MAP12: Abscess
+Map by: Nirvana
+Max by: Bdubzzz
+Max time: 0:05:18
+Midi: Secret of Evermore, Mini-boss
+Additional credits: Sky is by Mechadon. Bdubz for testing and demo, 
+Scotty
+for fixing sky transfer woes.
+Mapper comments:
+"I was originally going to make the map a much more wide open, canyon-like
+space, utilising the contrasting rock textures you see in the starting area
+throughout. However, once I built the entrance to the main building, I
+decided I liked the idea of a river of blood pouring out to form a large pool
+and the concept became "where is this blood coming from?" I'm a big fan of
+using the default Doom 2 textures (it's one of the reasons I was drawn to
+this project), because I think it forces you to think outside the box in
+terms of textures-use. In this vein, I was inspired by the gaping maw in
+Sunder map 2 and decided I would design my own giant demonic mouth using the
+Icon of Sin's big ugly teeth. I really like how it turned out and love the
+Doomy boxiness of it all.
+
+"This big mouth inspired the rest of the room, with the skin and brain
+textures overtaking the area and this room inspired the name of the map; the
+demonic presence sort of eating away at the rest of the world. If I had, had
+more time to edit the map I would have altered the final fight to be a bit
+more exciting, but I was happy to punch out a little map without too many
+hangups. At least Bdubz enjoyed it :D" -Nirvana 
+
+Maxer comments:
+"I put the most effort in to getting a FAST time for this map because it was
+turning out to be a little friendly competition ;p 5:2x was my goal and it
+ended up being 5:18. I think to  really improve it anymore it comes down to
+infighting RNG with the first encounter that you skip. (sometimes when i went
+to the final encounter there was barely any hell knights left, other times
+there was a lot left and a cyber) Also screw those mancs on the cliffs :p"
+-Bdubzzz
+=============================================================================
+MAP13: Rocketfest 2018
+Map by: Scotty
+Max by: Bdubzzz
+Max time: 0:06:49
+Midi: from Rise of the Triad
+Additional credits: Sky is by Mechadon
+Maxer comments:
+"This demo was the most fun to record and the time ended up being pretty good
+for me since I'm not a speedrunner :D" -Bdubzzz
+=============================================================================
+MAP14: Slaughterstein
+Map by: Xyzzy01
+Max by: Bdubzzz
+Max time: 0:07:02
+Midi: "Evil Incarnate" by Bobby Prince
+Mapper comments:
+"...what. I literally made this random throw-away map (that I probably wasn't
+even planning on releasing) over a year ago to deal with mapper's block I had
+at the time, and somehow it's now part of a much larger project?! ._.
+Regardless, I am immensely content it found a home here; making it qualify
+for this project really opened my eyes to the world of slaughtermapping, and
+now I hope to make more slaughtermaps in the future! :D
+
+"Anyway, the idea behind this map was to just make a challenge map, totally
+styled to that of Wolfenstein 3D. I always loved those secret maps in Doom II
+and decided to make my own! The various encounters in this map used to be much
+easier, but they all had a similar theme: a fight that forces the player to
+work with the limited space they have in each room and incentivize the player
+to herd the monsters and find ways around them to access ammo. I think the
+final version of Slaughterstein by Benjogami still has that aspect intact,
+which is a relief! I went all out on making this as 'wolf' as possible by
+having ZERO light variation, items and monsters arranged in a grid, large
+secret areas, and I even simulated vines that are hard to see through like
+the ones from that game. The thing I like the most about this map is its
+simple nonlinearity; you can make your own path through it by choosing which
+door to open next. I think about the only thing I would change about
+Slaughterstein, looking back at it, is making those secrets less generous
+than they are. ;)
+
+"I gotta say, for a map that I wasn't really taking seriously while building
+it, it's becoming one of my favorites! I should make more like this one...
+Oh, and thank you Bdubzzz for maxing it! You got this
+map accepted after all." -Xyzzy01
+
+Maxer comments:
+"Mostly a casual Max with a couple of fast strats I practiced. Nothing to
+impressive ;p What was fun about this map is there's a lot of ways to go
+so you had to think about 'whats actually the fastest
+route to go for a UV-Max?'" -Bdubzzz
+=============================================================================
+MAP15: Necroveins
+Map by: Benjogami
+Max by: A7MAD
+Max time: 0:05:22
+Midi: Original by PRIMEVAL
+Mapper comments:
+"The idea that started this map was the maze of viles far below the floor that
+would resurrect stuff that died in the middle of the map, and everything else
+was speedmapped around that. I made it in a single day, less than a week after
+the project was started, because I wanted to set a casual tone for the
+project, with simple but bold visuals and blunt gameplay that still invited
+different approaches.
+
+"I chose the map for the 15 slot because it was easiest to patch a secret
+exit into my own map ;)" -Benjogami
+
+=============================================================================
+MAP16: Blood and Stones
+Map by: Bdubzzz
+Max by: Bdubzzz
+Max time: 0:21:43
+Midi: "Atlantis Theme" from Banjo Tooie
+Mapper comments:
+"My first map I completed. The focus was more on gameplay that I find
+enjoyable/challenging and not map design/detailing/layout. There definitely
+would be a few things I would change looking back at the map but I think its
+better to leave early projects untouched and look back at them.. Did I
+improve as a mapper? :thinking face emoji:" -Bdubzzz
+=============================================================================
+MAP17: Literally Unplayable
+Map by: Bemused
+Max by: Ancalagon
+Max time: 0:11:06
+Midi: "Gotham" by Lee Jackson
+=============================================================================
+MAP18: Swiss Cheese Strike
+Map by: Bdubzzz
+Max by: Bdubzzz
+Max time: 0:23:28
+Midi: Final Fantasy/Chrono Trigger/Secret of Mana medley
+Mapper comments:
+"2nd map I made that again mostly focuses on gameplay. The textures used
+throughout are kind of random. This map has a couple encounters that ended up
+being pretty cool but maybe a little extreme for your average
+doom slaughter player." -Bdubzzz
+=============================================================================
+MAP19: Last Light
+Map by: Benjogami
+Max by: Bloodite Krypto
+Max time: 0:11:41
+Midi: "Opening to Hell" by Bobby Prince
+Additional credits: Sky is by Mechadon, edited by Benjogami
+Mapper comments:
+"Similar to Necroveins in that it started with a single gameplay concept that
+I wanted to explore: a huge mess of corpses inside maze-like partitions, and
+then a huge mess of viles is released into the center of it. I didn't
+particularly care how the corpses got there, even if it was more grindy than
+difficult, because I felt like the vile phase would be a good payoff.
+
+"But of course making all those corpses is a large portion of the map, so it
+should be somewhat interesting. I decided that each of the 3 keys should
+trigger fights that were tense by themselves, and that choosing between
+different orders and combinations and timings of keys should be
+an interesting process.
+
+"The tall bright fireblu pillars that mark where unused megaspheres are was a
+purely functional addition---while testing, I found it annoying that I didn't
+know where the megaspheres were, and adding a bright fireblu pillar that went
+dark when the megasphere was grabbed seemed like a good way to fix it. This
+led to the map's name and the theme of fading power/light." -Benjogami
+=============================================================================
+MAP20: The Mouth of Madness
+Map by: elmle
+Max by: elmle
+Max time: 0:32:37
+Midi: A remix of the Shinra Company theme from FF7 called Son of Chaos
+=============================================================================
+MAP21: The Outhouse
+Map by: Benjogami
+Max by: Bloodite Krypto
+Max time: 0:03:54
+Midi: from The Elder Scrolls: Daggerfall
+Additional credits: Sky is by Mechadon
+Mapper comments:
+"I made this map and then wanted it to have a home, because I really liked
+it. Because it's a small map and doesn't really stand by itself, and because
+I didn't have any ideas/motivation for a set, I thought about the sort of
+community project I might like it to live in, and came up with the ruleset
+for SlaughterMAX.
+
+"After writing my comments for Necroveins and Last Light, I realize that
+all of my SlaughterMAX maps (and probably a lot of my other maps) start with
+a single gameplay idea (usually involving viles) that I want to explore (so
+that I can play it myself :D). This map's idea was to have a whole mess of
+viles that the player can't deal with and has to run from, and then to have
+those viles pursue the player and filter through the map and combine with the
+other resident monsters to create a randomized oppressive mess for the player
+to solve. I wanted every phase of the map to be very oppressive. It's also a
+bit of a love letter to Doom's wonderfully simple but random and surprising
+monster pathing. I like to make maps that play differently
+each time." -Benjogami
+
+=============================================================================
+MAP22: Electro Wizard
+Map by: A7MAD
+Max by: Bloodite Krypto
+Max time: 0:10:28
+Midi: "Bergschrund" by James Paddock
+Mapper comments:
+"A map dedicated for players to take their anger on
+hordes of Cyberdemons and archi's" -A7MAD
+=============================================================================
+MAP23: Pandemonium Unveiled
+Map by: Archi
+Max by: A7MAD
+Max time: 0:12:57
+Midi: "I Sawed the Demons" remix by Jay Reichard
+=============================================================================
+MAP24: Dead Ringer
+Map by: A7MAD
+Max by: Bloodite Krypto
+Max time: 0:22:32
+Midi: "Guardhouse" by James Paddock
+Mapper comments:
+"I forgot to tag all the monsters with the 'deaf' tag , ooops..." -A7MAD
+=============================================================================
+MAP25: Castle of Hell
+Map by: Bdubzzz
+Max by: Bdubzzz
+Max time: 0:18:52
+Midi: "Sidstyler" by Machinae Supremacy 
+Mapper comments:
+"4th map I made that is themed outside of a castle ( ended up being the
+smallest and undetailed castle ever). The idea was you eventually go to a
+hell like area in the map. I wanted this map to be short ( so it was easier
+to MAX) but to still have an epic final fight, which I think it does ;)"
+-Bdubzzz
+=============================================================================
+MAP26: Eviscerate
+Map by: Killer5
+Max by: Bloodite Krypto
+Max time: 0:10:44
+Midi: "Goin' Down The Fast Way" by Lee Jackson
+=============================================================================
+MAP27: BacknForth
+Map by: Bdubzzz
+Max by: Bdubzzz
+Max time: 0:34:01
+Midi: Forest Theme from Actraiser
+Additional credits: Sky is the EP4 sky from The Ultimate Doom by Id Software
+Mapper comments:
+"3rd map I made where I actually thought of a concept before making the map.
+You go 'back and forth' to a new encounter at the end of the map each time
+and when you go back something changes on the map/monsters appear etc. This
+was harder to do then expected and ended up just being small encounters
+with more monsters. I also tried to stick with a 'theme'
+for the map. (marble/hell textures)" -Bdubzzz
+
+Maxer comments:
+"This map was by far the hardest to get a UV-Max demo for. It eventually came
+down to nerfing some problem encounters." -Bdubzzz
+=============================================================================
+MAP28: The Eclipse of Betelgeuse
+Map by: antares031
+Max by: antares031
+Max time: 0:41:38
+Midi: Psychedelic Eyeball - The Day of Defeat
+Additional credits: Sky is by Mechadon
+Mapper comments:
+"Try to load this level with GLBoom+, if you're having a frame-rate issue.
+Thanks, and have fun." -antares031
+=============================================================================
+MAP29: Skindustrial Sector 04
+Map by: Spectre01
+Max by: Spectre01
+Max time: 1:34:01
+Midi: "Winds of the Destiny" by Petter Mårtensen, from HR2 MAP20.
+	"Church of the Machine" by Symphony X, from Scythe 2 MAP30.
+Mapper comments:
+"*HNTR is the intended difficulty!*
+Large, abstract "skin-tech" city that's partially submerged in an ocean of
+infected blood. Designed to be played from a Pistol Start. Originally
+intended for DMP2017, as a sequel to my map from the previous year, this
+level ended up here instead. The goal was to make a map which pushed
+difficulty to the limit of what I find enjoyable in Doom: Medium-scale,
+high-threat encounters that limit the player's mobility; whether through high
+monster density, environmental hazards, or dangerous turret monsters (hence
+the 4 Cybers in the central tower at the start). I also wanted an epic finale,
+which lead to the creation of the sandbox-ish, macro-slaughter fight to wrap
+up the map. Considering how long the map ended up, while maintaining a high
+level of difficulty, it wasn't very friendly from a saveless/speedrunning
+perspective. I ended up moving the intended difficulty to HNTR, and the more
+reasonable HMP to UV, so the map could qualify for this project." -Spectre01
+   
+Maxer comments:
+"It was still way harder to get a successful exit than I expected. Playing
+consistently for a long period is not my forte. The demo ended up being 94
+minutes long, largely due to extremely conservative play in the final area
+(also platforming in Doom). Also, -shorttics really suck." -Spectre01
+=============================================================================
+MAP30: Bugger This
+Map by: RjY
+Max by: The Green Herring
+Max time: 0:01:44
+Midi: "Opening to Hell" by Bobby Prince
+=============================================================================
+MAP31: Assassin's Greed
+Map by: mArt1And00m3r11339
+Max by: mArt1And00m3r11339
+Max time: 0:54:19
+Midi: "Evil Incarnate" by Bobby Prince
+=============================================================================
+MAP32: Power Overwhelming
+Map by: Killer5
+Max by: Ancalagon
+Max time: 0:15:16
+Midi: from Gubble
+=============================================================================
+=============================================================================
+=============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=============================================================================
+========  Selected commentaries on the slaughter genre  =====================
+=============================================================================
+
+"Well, anyone can do this: create a few large sectors, some detail and put
+thousands of ammo and enemies, we don't need skilled mappers for this
+worthless shit! This is a very worthless ugly megawad, what a
+waste of time! - 1/5"
+     -anonymous, about some other wad
+
+"I'm played this with god mode on and it seems to be a bit too easy for me.
+Seriously, there's too much ammunition and powerups for such encounters.
+Hell Revealed is better all the way. 2/5"
+     -anonymous, about some other wad
+
+"chewbacca taking a shit would be more entertaining"
+     -anonymous, about some other wad
+
+"Uglyslaughter map. After I died in the second room to cyberdemons and a
+horde of arch-viles and hell knights I noclipped through the map only to
+find a level full of misery."
+     -anonymous, about some other wad
+
+"Right. Map 1, ~30 revenants, a dozen Barons and 2 Cyberdemons. Yawn. I
+cannot even begin to express how much I loathe these idiot slaughter fests.
+How old are the authors? 12? Sick to bloody death of downloading garbage
+like this and having hopes of an enjoyable game pissed all over. Mark crap
+like this for what it is - idiot overkill crap."
+     -anonymous, about some other wad
+
+"Terrible... slaughter stuff, just make some normal mapset, please. Elitist
+gameplay all over the place."
+     -anonymous, about some other wad
+
+"Wow. A *slaughter* wad. How inventive and fascinating. My score reflects
+this sentiment. What rubbish."
+     -anonymous, about some other wad
+
+"ugly colors and design, slaughter gameplay, nothing in common with alien
+vendetta, pure shit. 0/5"
+     -anonymous, about some other wad
+
+"Well, slaughterfests differ completely in gameplay phylosophy. Traditional
+DooM gameplay is a mix of strategy, tactics, and variation in style and
+intensity. Slaughtermaps usually try to place as many monsters per square
+inch as possible, whereby the only thing a player needs to do, is finding a
+walk path creating massive infights. Therefore SF gameplay is imho extremely
+monotonous and boring. And yes, IMHO the gameplay (BTW for sure not too
+difficult @ UV) completely ruined this mapset. It's a pity."
+     -anonymous, about some other wad
+
+"A terrible level set - nothing but uninspired map designs and constant,
+near impossible later on enemy floods. Who thought this
+would be a good idea?"
+     -anonymous, about some other wad
+

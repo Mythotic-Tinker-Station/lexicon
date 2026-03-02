@@ -1,0 +1,383 @@
+// Countergoat Initiative Mapinfo
+
+defaultmap
+{
+	NoJump
+	NoCrouch
+}
+
+map CGIN01 "Donut De-Livers"
+{
+	next = "CGIN02"
+	secretnext = "CGIN02"
+	sky1 = "CGIN1100"
+	music = "D_CGIN01"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN02 "Mixing Bowl"
+{
+	next = "CGIN03"
+	secretnext = "CGIN03"
+	sky1 = "CGIN1101"
+	music = "D_CGIN02"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN03 "High Fructose Corn Syruppuku"
+{
+	next = "CGIN04"
+	secretnext = "CGIN04"
+	sky1 = "CGIN1102"
+	music = "D_CGIN03"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN04 "Pier SR50"
+{
+	next = "CGIN05"
+	secretnext = "CGIN05"
+	sky1 = "SKY1"
+	music = "D_CGIN04"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN05 "Alfonzo Battles Genghis Khan in Old Neo Tokyo"
+{
+	next = "CGIN06"
+	secretnext = "CGIN06"
+	sky1 = "CGIN1103"
+	music = "D_CGIN05"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN06 "Whore Island"
+{
+	next = "CGIN07"
+	secretnext = "CGIN07"
+	sky1 = "SKY1"
+	music = "D_CGIN06"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN07 "Thirteen Men All Backflipping Into a Shitstorm to Piss Off Alfonzo"
+{
+	next = "CGIN08"
+	secretnext = "CGIN08"
+	sky1 = "SKY1"
+	music = "D_CGIN07"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+	Map07Special
+}
+
+map CGIN08 "Saskatoon"
+{
+	next = "CGIN09"
+	secretnext = "CGIN09"
+	sky1 = "SKY1"
+	music = "D_CGIN08"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN09 "Jactory"
+{
+	next = "CGIN10"
+	secretnext = "CGIN10"
+	sky1 = "CGIN1104"
+	music = "D_CGIN09"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN10 "Tarnsman Digs a Hole to Guatemala"
+{
+	next = "CGIN11"
+	secretnext = "CGIN11"
+	sky1 = "SKY1"
+	music = "D_CGIN10"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN11 "Alfonzo's Jungle Excursion: No Gaycaeks Allowed"
+{
+	next = "CGIN12"
+	secretnext = "CGIN12"
+	sky1 = "CGIN1105"
+	music = "D_CGIN11"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN12 "Alfonzo Battles the Golden Ninja Clan for Control of Mount Fuji"
+{
+	next = "CGIN13"
+	secretnext = "CGIN13"
+	sky1 = "CGIN1106"
+	music = "D_CGIN12"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN13 "Goat to the Choppa"
+{
+	next = "CGIN14"
+	secretnext = "CGIN14"
+	sky1 = "CGIN1107"
+	music = "D_CGIN13"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN14 "Blunt Force Vasectomy"
+{
+	next = "CGIN15"
+	secretnext = "CGIN15"
+	sky1 = "CGIN1103"
+	music = "D_CGIN14"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN15 "Clusterfuck Processor"
+{
+	next = "CGIN16"
+	secretnext = "CGIN16"
+	sky1 = "SKY1"
+	music = "D_CGIN15"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN16 "Off the Rails On This AD Train"
+{
+	next = "CGIN17"
+	secretnext = "CGIN17"
+	sky1 = "CGIN1108"
+	music = "D_CGIN16"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN17 "Sandpaper Blowjob"
+{
+	next = "CGIN18"
+	secretnext = "CGIN18"
+	sky1 = "CGIN1109"
+	music = "D_CGIN17"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN18 "Wilhelm Academy"
+{
+	next = "CGIN19"
+	secretnext = "CGIN19"
+	sky1 = "CGIN1110"
+	music = "D_CGIN18"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN19 "Mambo Number 6"
+{
+	next = "CGIN20"
+	secretnext = "CGIN20"
+	sky1 = "SKY1"
+	music = "D_CGIN19"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN20 "Petersen Baekery"
+{
+	next = "CGIN21"
+	secretnext = "CGIN21"
+	sky1 = "SKY1"
+	music = "D_CGIN20"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN21 "Dyslexia Station"
+{
+	next = "CGIN22"
+	secretnext = "CGIN22"
+	sky1 = "CGIN1109"
+	music = "D_CGIN21"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN22 "Pepsi Blue"
+{
+	next = "CGIN23"
+	secretnext = "CGIN23"
+	sky1 = "CGIN1111"
+	music = "D_CGIN22"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN23 "UAC Ultra Quesadilla Explosion"
+{
+	next = "CGIN24"
+	secretnext = "CGIN24"
+	sky1 = "CGIN1112"
+	music = "D_CGIN23"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN24 "The Toilet Store"
+{
+	next = "CGIN25"
+	secretnext = "CGIN25"
+	sky1 = "CGIN1113"
+	music = "D_CGIN24"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN25 "Pot City"
+{
+	next = "CGIN26"
+	secretnext = "CGIN26"
+	sky1 = "CGIN1114"
+	music = "D_CGIN25"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN26 "Mr. Tib's Crib"
+{
+	next = "CGIN27"
+	secretnext = "CGIN27"
+	sky1 = "SKY1"
+	music = "D_CGIN26"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN27 "Redeemed Memories"
+{
+	next = "CGIN28"
+	secretnext = "CGIN28"
+	sky1 = "CGIN1115"
+	music = "D_CGIN27"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN28 "The Pipewall Doesn't Stop"
+{
+	next = "CGIN29"
+	secretnext = "CGIN29"
+	sky1 = "SKY1"
+	music = "D_CGIN28"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN29 "License to Stack"
+{
+	next = "CGIN30"
+	secretnext = "CGIN30"
+	sky1 = "CGIN1106"
+	music = "D_CGIN29"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN30 "License to Stack 2: Crate Expectations"
+{
+	next = "CGIN31"
+	secretnext = "CGIN31"
+	sky1 = "CGIN1115"
+	music = "D_CGIN30"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+	allowmonstertelefrags
+}
+
+map CGIN31 "Angry Towers with Top Hats"
+{
+	next = "CGIN32"
+	secretnext = "CGIN32"
+	sky1 = "CGIN1116"
+	music = "D_CGIN31"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN32 "Alfonzo's Vacation in Peter Burns' Nightmare Funhouse"
+{
+	next = "CGIN90"
+	secretnext = "CGIN90"
+	sky1 = "SKY3"
+	music = "D_CGIN32"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN90 "Bad Ass Baratus's Freaky Fucktangle"
+{
+	next = "CGIN98"
+	secretnext = "CGIN98"
+	sky1 = "CGIN1113"
+	music = "D_CGIN90"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}
+
+map CGIN98 "Jimmylight Projectile Hell"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY2"
+	music = "D_CGIN98"
+	intermusic = "D_CGININ"
+	ExitPic = "CGININT"
+	EnterPic = "CGININT"
+}

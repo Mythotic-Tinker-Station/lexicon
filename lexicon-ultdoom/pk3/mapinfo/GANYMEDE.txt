@@ -1,0 +1,259 @@
+// Base Ganymede: Complete Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BGCPE1M1 "Base Ganymede Map 1"
+{
+	titlepatch = "BGCPUV00"
+	next = "BGCPE1M2"
+	secretnext = "BGCPE1M2"
+	sky1 = "BGCP0018"
+	music = "D_BGCP01"
+}
+
+map BGCPE1M2 "Base Ganymede Map 2"
+{
+	titlepatch = "BGCPUV01"
+	next = "BGCPE1M3"
+	secretnext = "BGCPE1M9"
+	sky1 = "BGCP0018"
+	music = "D_BGCP02"
+}
+
+map BGCPE1M3 "Base Ganymede Map 3"
+{
+	titlepatch = "BGCPUV02"
+	next = "BGCPE1M4"
+	secretnext = "BGCPE1M4"
+	sky1 = "BGCP0018"
+	music = "D_BGCP03"
+}
+
+map BGCPE1M4 "Base Ganymede Map 4"
+{
+	titlepatch = "BGCPUV03"
+	next = "BGCPE1M5"
+	secretnext = "BGCPE1M5"
+	sky1 = "BGCP0018"
+	music = "D_BGCP04"
+}
+
+map BGCPE1M5 "Base Ganymede Map 5"
+{
+	titlepatch = "BGCPUV04"
+	next = "BGCPE1M6"
+	secretnext = "BGCPE1M6"
+	sky1 = "BGCP0018"
+	music = "D_BGCP05"
+}
+
+map BGCPE1M6 "Base Ganymede Map 6"
+{
+	titlepatch = "BGCPUV05"
+	next = "BGCPE1M7"
+	secretnext = "BGCPE1M7"
+	sky1 = "BGCP0018"
+	music = "D_BGCP06"
+}
+
+map BGCPE1M7 "Base Ganymede Map 7"
+{
+	titlepatch = "BGCPUV06"
+	next = "BGCPE1M8"
+	secretnext = "BGCPE1M8"
+	sky1 = "BGCP0018"
+	music = "D_BGCP07"
+}
+
+map BGCPE1M8 "Base Ganymede Map 8"
+{
+	titlepatch = "BGCPUV07"
+	next = "BGCPE2M1"
+	secretnext = "BGCPE2M1"
+	sky1 = "BGCP0018"
+	music = "D_BGCP08"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map BGCPE1M9 "Base Ganymede Secret Map 1"
+{
+	titlepatch = "BGCPUV08"
+	next = "BGCPE1M4"
+	secretnext = "BGCPE1M4"
+	sky1 = "BGCP0018"
+	music = "D_BGCP09"
+}
+
+map BGCPE2M1 "Base Ganymede Map 9"
+{
+	titlepatch = "BGCPUV10"
+	next = "BGCPE2M2"
+	secretnext = "BGCPE2M2"
+	sky1 = "BGCP0018"
+	music = "D_BGCP10"
+}
+
+map BGCPE2M2 "Base Ganymede Map 10"
+{
+	titlepatch = "BGCPUV11"
+	next = "BGCPE2M3"
+	secretnext = "BGCPE2M3"
+	sky1 = "BGCP0018"
+	music = "D_BGCP11"
+}
+
+map BGCPE2M3 "Base Ganymede Map 11"
+{
+	titlepatch = "BGCPUV12"
+	next = "BGCPE2M4"
+	secretnext = "BGCPE2M4"
+	sky1 = "BGCP0018"
+	music = "D_BGCP12"
+}
+
+map BGCPE2M4 "Base Ganymede Map 12"
+{
+	titlepatch = "BGCPUV13"
+	next = "BGCPE2M5"
+	secretnext = "BGCPE2M5"
+	sky1 = "BGCP0018"
+	music = "D_BGCP13"
+}
+
+map BGCPE2M5 "Base Ganymede Map 13"
+{
+	titlepatch = "BGCPUV14"
+	next = "BGCPE2M6"
+	secretnext = "BGCPE2M9"
+	sky1 = "BGCP0018"
+	music = "D_BGCP14"
+}
+
+map BGCPE2M6 "Base Ganymede Map 14"
+{
+	titlepatch = "BGCPUV15"
+	next = "BGCPE2M7"
+	secretnext = "BGCPE2M7"
+	sky1 = "BGCP0018"
+	music = "D_BGCP15"
+}
+
+map BGCPE2M7 "Base Ganymede Map 15"
+{
+	titlepatch = "BGCPUV16"
+	next = "BGCPE2M8"
+	secretnext = "BGCPE2M8"
+	sky1 = "BGCP0018"
+	music = "D_BGCP16"
+}
+
+map BGCPE2M8 "Base Ganymede Map 16"
+{
+	titlepatch = "BGCPUV17"
+	next = "BGCPE3M2"
+	secretnext = "BGCPE3M2"
+	sky1 = "BGCP0018"
+	music = "D_BGCP17"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map BGCPE2M9 "Base Ganymede Secret Map 2"
+{
+	titlepatch = "BGCPUV18"
+	next = "BGCPE2M6"
+	secretnext = "BGCPE2M6"
+	sky1 = "BGCP0018"
+	music = "D_BGCP18"
+}
+
+map BGCPE3M1 "Base Ganymede Map 17"
+{
+	titlepatch = "BGCPUV20"
+	next = "BGCPE3M2"
+	secretnext = "BGCPE3M2"
+	sky1 = "BGCP0018"
+	music = "D_BGCP19"
+}
+
+map BGCPE3M2 "Base Ganymede Map 18"
+{
+	titlepatch = "BGCPUV21"
+	next = "BGCPE3M3"
+	secretnext = "BGCPE3M3"
+	sky1 = "BGCP0018"
+	music = "D_BGCP20"
+}
+
+map BGCPE3M3 "Base Ganymede Map 19"
+{
+	titlepatch = "BGCPUV22"
+	next = "BGCPE3M4"
+	secretnext = "BGCPE3M4"
+	sky1 = "BGCP0018"
+	music = "D_BGCP21"
+}
+
+map BGCPE3M4 "Base Ganymede Map 20"
+{
+	titlepatch = "BGCPUV23"
+	next = "BGCPE3M5"
+	secretnext = "BGCPE3M5"
+	sky1 = "BGCP0018"
+	music = "D_BGCP22"
+}
+
+map BGCPE3M5 "Base Ganymede Map 21"
+{
+	titlepatch = "BGCPUV24"
+	next = "BGCPE3M6"
+	secretnext = "BGCPE3M6"
+	sky1 = "BGCP0018"
+	music = "D_BGCP23"
+}
+
+map BGCPE3M6 "Base Ganymede Map 22"
+{
+	titlepatch = "BGCPUV25"
+	next = "BGCPE3M7"
+	secretnext = "BGCPE3M9"
+	sky1 = "BGCP0018"
+	music = "D_BGCP24"
+}
+
+map BGCPE3M7 "Base Ganymede Map 23"
+{
+	titlepatch = "BGCPUV26"
+	next = "BGCPE3M8"
+	secretnext = "BGCPE3M8"
+	sky1 = "BGCP0018"
+	music = "D_BGCP25"
+}
+
+map BGCPE3M8 "Base Ganymede Map 24"
+{
+	titlepatch = "BGCPUV27"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "BGCP0018"
+	music = "D_BGCP26"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map BGCPE3M9 "Base Ganymede Secret Map 3"
+{
+	titlepatch = "BGCPUV28"
+	next = "BGCPE3M7"
+	secretnext = "BGCPE3M7"
+	sky1 = "BGCP0018"
+	music = "D_BGCP27"
+}

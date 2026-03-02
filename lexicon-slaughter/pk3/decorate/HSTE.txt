@@ -1,0 +1,55 @@
+ACTOR Lexicon_HSTE_Arachnotron : Arachnotron
+{
+	States
+	{
+	Missile:
+		BSPI A 20 Bright A_FaceTarget
+		TNT1 A 0 A_FaceTarget
+		BSPI G 4 Bright A_CustomMissile("Lexicon_HSTE_ArachnotronPlasma")
+		BSPI H 4 Bright
+		BSPI H 1 Bright A_SpidRefire
+		Goto Missile+1
+	}
+}
+
+ACTOR Lexicon_HSTE_ArachnotronPlasma : ArachnotronPlasma { SeeSound "HSTE/DSPLASMA" }
+
+ACTOR Lexicon_HSTE_PlasmaRifle : DoomWeapon
+{
+	Weapon.SelectionOrder 100
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 40
+	Weapon.AmmoType "Cell"
+	Weapon.SlotNumber 6
+	+WEAPON.CHEATNOTWEAPON
+	Inventory.PickupMessage "$GOTPLASMA"
+	Tag "$TAG_PLASMARIFLE"
+	States
+	{
+	Ready:
+		PLSG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PLSG A 1 A_Lower
+		Loop
+	Select:
+		PLSG A 1 A_Raise
+		Loop
+	Fire:
+		TNT1 A 0 A_GunFlash("Flash",GFF_NOEXTCHANGE)
+		PLSG A 3 A_FireCustomMissile("Lexicon_HSTE_PlasmaBall")
+		PLSG B 20 A_ReFire
+		Goto Ready
+	Flash:
+		TNT1 A 0 A_Light1
+		PLSF A 4 Bright A_Jump(128,1)
+		Goto LightDone
+		PLSF B 4 Bright
+		Goto LightDone
+	Spawn:
+		PLAS A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HSTE_PlasmaBall : PlasmaBall { SeeSound "HSTE/DSPLASMA" }

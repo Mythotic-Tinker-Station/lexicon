@@ -1,0 +1,318 @@
+ACTOR Lexicon_EPC1_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX18 G -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_EPC1_ShortGreenColumn : ShortGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX18 H -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_EPC1_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LX18 I -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_EPC1_ShortRedColumn : ShortRedColumn
+{
+	States
+	{
+	Spawn:
+		LX18 J -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_EPC1_SkullColumn : SkullColumn
+{
+	Health 40
+	-SOLID
+	PainSound "imp/death"
+	DeathSound "imp/death"
+	States
+	{
+	See:
+		HDB2 A -1 
+		stop
+	Pain:
+		HDB2 A -1 
+		stop
+	Melee:
+		HDB2 A -1 
+		stop
+	Missile:
+		HDB2 A -1 
+		stop
+	Death:
+		TROO N 5 
+		TROO O 5 A_XScream
+		TROO P 5 
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO UA -1
+		stop
+	XDeath:
+		TROO N 5 
+		TROO O 5 A_XScream
+		TROO P 5 
+		TROO Q 5 A_Fall
+		TROO RST 5 
+		TROO UA -1
+		stop
+	}
+}
+
+ACTOR Lexicon_EPC1_GreenTorch : GreenTorch
+{
+	States
+	{
+	Spawn:
+		LX18 CDEF 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_EPC1_ShotgunGuy : ShotgunGuy
+{
+	States
+	{
+	Spawn:
+		LX24 AB 10 A_Look
+		Loop
+	See:
+		LX24 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LX24 E 10 A_FaceTarget
+		LX24 F 10 BRIGHT A_SposAttackUseAtkSound
+		LX24 E 10
+		Goto See
+	Pain:
+		LX24 G 3
+		LX24 G 3 A_Pain
+		Goto See
+	Death:
+		LX24 H 5
+		LX24 I 5 A_Scream
+		LX24 J 5 A_NoBlocking
+		LX24 K 5
+		LX24 L -1
+		Stop
+	XDeath:
+		LX24 M 5
+		LX24 N 5 A_XScream
+		LX24 O 5 A_NoBlocking
+		LX24 PQRST 5
+		LX24 U -1
+		Stop
+	Raise:
+		LX24 L 5
+		LX24 KJIH 5
+		Goto See
+	}
+}
+
+ACTOR Lexicon_EPC1_ChaingunGuy : ChaingunGuy
+{
+	States
+	{
+	Spawn:
+		LX21 AB 10 A_Look
+		Loop
+	See:
+		LX21 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LX21 E 10 A_FaceTarget
+		LX21 FE 4 BRIGHT A_CPosAttack
+		LX21 F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		LX21 G 3
+		LX21 G 3 A_Pain
+		Goto See
+	Death:
+		LX21 H 5
+		LX21 I 5 A_Scream
+		LX21 J 5 A_NoBlocking
+		LX21 KLM 5
+		LX21 N -1
+		Stop
+	XDeath:
+		LX21 O 5 
+		LX21 P 5 A_XScream
+		LX21 Q 5 A_NoBlocking
+		LX21 RS 5
+		LX21 T -1
+		Stop
+	Raise:
+		LX21 N 5
+		LX21 MLKJIH 5
+		Goto See
+	}
+}
+
+ACTOR Lexicon_EPC1_Revenant : Revenant
+{
+	States
+	{
+	Spawn:
+		LX23 AB 10 A_Look
+		Loop
+	See:
+		LX23 AABBCCDDEEFF 2 A_Chase
+		Loop
+	Melee:
+		LX23 G 1 A_FaceTarget
+		LX23 G 6 A_SkelWhoosh
+		LX23 H 6 A_FaceTarget
+		LX23 I 6 A_SkelFist
+		Goto See
+	Missile:
+		LX23 J 1 BRIGHT A_FaceTarget 
+		LX23 J 9 BRIGHT A_FaceTarget
+		LX23 K 10 A_SkelMissile
+		LX23 K 10 A_FaceTarget
+		Goto See
+	Pain:
+		LX23 L 5
+		LX23 L 5 A_Pain
+		Goto See
+	Death:
+		LX23 LM 7
+		LX23 N 7 A_Scream
+		LX23 O 7 A_NoBlocking
+		LX23 P 7
+		LX23 Q -1
+		Stop
+	Raise:
+		LX23 Q 5
+		LX23 PONML 5
+		Goto See
+	}
+}
+
+ACTOR Lexicon_EPC1_DoomImp : DoomImp
+{
+	States
+	{
+	Spawn:
+		LX19 AB 10 A_Look
+		Loop
+	See:
+		LX19 AABBCCDD 3 A_Chase
+		Loop
+	Melee:
+	Missile:
+		LX19 EF 8 A_FaceTarget
+		LX19 G 6 A_TroopAttack 
+		Goto See
+	Pain:
+		LX19 H 2
+		LX19 H 2 A_Pain
+		Goto See
+	Death:
+		LX19 I 8
+		LX19 J 8 A_Scream
+		LX19 K 6
+		LX19 L 6 A_NoBlocking
+		LX19 M -1
+		Stop
+	XDeath:
+		LX19 N 5
+		LX19 O 5 A_XScream
+		LX19 P 5
+		LX19 Q 5 A_NoBlocking
+		LX19 RST 5
+		LX19 U -1
+		Stop
+	Raise:
+		LX19 MLKJI 8
+		Goto See
+	}
+}
+
+ACTOR Lexicon_EPC1_ZombieMan : ZombieMan
+{
+	States
+	{
+	Spawn:
+		LX20 AB 10 A_Look
+		Loop
+	See:
+		LX20 AABBCCDD 4 A_Chase
+		Loop
+	Missile:
+		LX20 E 10 A_FaceTarget
+		LX20 F 8 A_PosAttack
+		LX20 E 8
+		Goto See
+	Pain:
+		LX20 G 3
+		LX20 G 3 A_Pain
+		Goto See
+	Death:
+		LX20 H 5
+		LX20 I 5 A_Scream
+		LX20 J 5 A_NoBlocking
+		LX20 K 5
+		LX20 L -1
+		Stop
+	XDeath:
+		LX20 M 5
+		LX20 N 5 A_XScream
+		LX20 O 5 A_NoBlocking
+		LX20 PQRST 5
+		LX20 U -1
+		Stop
+	Raise:
+		LX20 K 5
+		LX20 JIH 5
+		Goto See
+	}
+}
+
+ACTOR Lexicon_EPC1_LostSoul : LostSoul
+{
+	States
+	{
+	Spawn:
+		LX22 AB 10 BRIGHT A_Look
+		Loop
+	See:
+		LX22 AB 6 BRIGHT A_Chase
+		Loop
+	Missile:
+		LX22 C 10 BRIGHT A_FaceTarget
+		LX22 D 4 BRIGHT A_SkullAttack
+		LX22 CD 4 BRIGHT
+		Goto Missile+2
+	Pain:
+		LX22 E 3 BRIGHT
+		LX22 E 3 BRIGHT A_Pain
+		Goto See
+	Death:
+		LX22 F 6 BRIGHT
+		LX22 G 6 BRIGHT A_Scream
+		LX22 H 6 BRIGHT
+		LX22 I 6 BRIGHT A_NoBlocking
+		LX22 J 6
+		LX22 K 6
+		Stop
+	}
+}

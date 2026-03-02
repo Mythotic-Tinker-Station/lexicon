@@ -1,0 +1,418 @@
+// Claustrophobia 1024 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map C24201 "The Warp Facility"
+{
+	titlepatch = "C242V00"
+	next = "C24202"
+	secretnext = "C24202"
+	sky1 = "C2420769"
+	music = "D_C24201"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+	compat_badangles = 1
+}
+
+map C24202 "Return to the Darkening"
+{
+	titlepatch = "C242V01"
+	next = "C24203"
+	secretnext = "C24203"
+	sky1 = "C2420775"
+	music = "D_C24202"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24203 "Break the Chain"
+{
+	titlepatch = "C242V02"
+	next = "C24204"
+	secretnext = "C24204"
+	sky1 = "C2420770"
+	music = "D_C24203"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24204 "Pit of Sludge"
+{
+	titlepatch = "C242V03"
+	next = "C24205"
+	secretnext = "C24205"
+	sky1 = "SKY1"
+	music = "D_C24204"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24205 "Subterfuge 1024"
+{
+	titlepatch = "C242V04"
+	next = "C24206"
+	secretnext = "C24206"
+	sky1 = "C2420794"
+	music = "D_C24205"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24206 "Four Square"
+{
+	titlepatch = "C242V05"
+	next = "C24207"
+	secretnext = "C24207"
+	sky1 = "C2420779"
+	music = "D_C24206"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24207 "Dead In, Dead Out"
+{
+	titlepatch = "C242V06"
+	next = "C24208"
+	secretnext = "C24208"
+	sky1 = "C2420775"
+	music = "D_C24207"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+	Map07Special
+}
+
+map C24208 "Hex of Depression"
+{
+	titlepatch = "C242V07"
+	next = "C24209"
+	secretnext = "C24209"
+	sky1 = "C2420776"
+	music = "D_C24208"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24209 "Bitter Sanctuary"
+{
+	titlepatch = "C242V08"
+	next = "C24210"
+	secretnext = "C24210"
+	sky1 = "C2420770"
+	music = "D_C24209"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24210 "Mudbath"
+{
+	titlepatch = "C242V09"
+	next = "C24211"
+	secretnext = "C24211"
+	sky1 = "SKY1"
+	music = "D_C24210"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24211 "Technicfear"
+{
+	titlepatch = "C242V10"
+	next = "C24212"
+	secretnext = "C24212"
+	sky1 = "C2420770"
+	music = "D_C24211"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24212 "Spitshine"
+{
+	titlepatch = "C242V11"
+	next = "C24213"
+	secretnext = "C24213"
+	sky1 = "C2420778"
+	music = "D_C24212"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24213 "Assault"
+{
+	titlepatch = "C242V12"
+	next = "C24214"
+	secretnext = "C24214"
+	sky1 = "C2420776"
+	music = "D_C24213"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24214 "Deception"
+{
+	titlepatch = "C242V13"
+	next = "C24215"
+	secretnext = "C24215"
+	sky1 = "C2420782"
+	music = "D_C24214"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24215 "The Inmost Con'dens'ed"
+{
+	titlepatch = "C242V14"
+	next = "C24216"
+	secretnext = "C24231"
+	sky1 = "C2420768"
+	music = "D_C24215"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24216 "Nocturnal Abyss"
+{
+	titlepatch = "C242V15"
+	next = "C24217"
+	secretnext = "C24217"
+	sky1 = "C2420766"
+	music = "D_C24216"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24217 "Transfer Base"
+{
+	titlepatch = "C242V16"
+	next = "C24218"
+	secretnext = "C24218"
+	sky1 = "C2420782"
+	music = "D_C24217"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24218 "Weather Station"
+{
+	titlepatch = "C242V17"
+	next = "C24219"
+	secretnext = "C24219"
+	sky1 = "C2420772"
+	music = "D_C24218"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24219 "Nova Scotia Robots"
+{
+	titlepatch = "C242V18"
+	next = "C24220"
+	secretnext = "C24220"
+	sky1 = "C2420797"
+	music = "D_C24219"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24220 "Refinery"
+{
+	titlepatch = "C242V19"
+	next = "C24221"
+	secretnext = "C24221"
+	sky1 = "SKY2"
+	music = "D_C24220"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24221 "Padma"
+{
+	titlepatch = "C242V20"
+	next = "C24222"
+	secretnext = "C24222"
+	sky1 = "C2420775"
+	music = "D_C24221"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24222 "Diminished Apparatus"
+{
+	titlepatch = "C242V21"
+	next = "C24223"
+	secretnext = "C24223"
+	sky1 = "C2420779"
+	music = "D_C24222"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24223 "Fear No Evil"
+{
+	titlepatch = "C242V22"
+	next = "C24224"
+	secretnext = "C24224"
+	sky1 = "SKY3"
+	music = "D_C24223"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24224 "Second Assault"
+{
+	titlepatch = "C242V23"
+	next = "C24225"
+	secretnext = "C24225"
+	sky1 = "SKY3"
+	music = "D_C24224"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24225 "Cabracan 1024"
+{
+	titlepatch = "C242V24"
+	next = "C24226"
+	secretnext = "C24226"
+	sky1 = "C2420796"
+	music = "D_C24225"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24226 "Aura of Evil"
+{
+	titlepatch = "C242V25"
+	next = "C24227"
+	secretnext = "C24227"
+	sky1 = "C2421593"
+	music = "D_C24226"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24227 "Hell Sewage"
+{
+	titlepatch = "C242V26"
+	next = "C24228"
+	secretnext = "C24228"
+	sky1 = "C2420770"
+	music = "D_C24227"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24228 "Poison Ivy"
+{
+	titlepatch = "C242V27"
+	next = "C24229"
+	secretnext = "C24229"
+	sky1 = "C2420778"
+	music = "D_C24228"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24229 "Magnum Opus"
+{
+	titlepatch = "C242V28"
+	next = "C24230"
+	secretnext = "C24230"
+	sky1 = "C2421043"
+	music = "D_C24229"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24230 "Thanatophobia"
+{
+	titlepatch = "C242V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_C24230"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+	allowmonstertelefrags
+}
+
+map C24231 "Skyscrape IV"
+{
+	titlepatch = "C242V30"
+	next = "C24216"
+	secretnext = "C24232"
+	sky1 = "C2420774"
+	music = "D_C24231"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24232 "Oil Rig"
+{
+	titlepatch = "C242V31"
+	next = "C24216"
+	secretnext = "C24216"
+	sky1 = "C2420781"
+	music = "D_C24232"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24233 "Nil"
+{
+	titlepatch = "C242V32"
+	next = "C24201"
+	secretnext = "C24201"
+	sky1 = "C2420766"
+	music = "D_C24233"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}
+
+map C24234 "**NULL**"
+{
+	titlepatch = "C242V33"
+	next = "C24201"
+	secretnext = "C24201"
+	sky1 = "C2420766"
+	music = "D_C24234"
+	intermusic = "D_C242IN"
+	ExitPic = "C242INT"
+	EnterPic = "C242INT"
+}

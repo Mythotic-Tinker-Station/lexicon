@@ -1,0 +1,305 @@
+Texture "NDC10060", 128, 128
+{
+	Patch "NDC10382", 0, 0
+	Patch "NDC10384", 64, 0
+	Patch "NDC10384", 0, 71
+	Patch "NDC10382", 64, 71
+}
+Texture "NDC10061", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+Texture "NDC10066", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NDC10067", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "NDC10069", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "NDC10071", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NDC10072", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "NDC10073", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NDC10074", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "NDC10080", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "NDC10081", 256, 128
+{
+	Patch "NDC10351", 0, 0
+	Patch "NDC10352", 64, 0
+	Patch "NDC10354", 128, 0
+	Patch "NDC10353", 192, 0
+	Patch "NDC10356", 0, 64
+	Patch "NDC10358", 64, 64
+	Patch "NDC10357", 128, 64
+	Patch "NDC10355", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "NDC10082", 128, 128
+{
+	Patch "NDC10360", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "NDC10359", 96, 0
+	Patch "NDC10360", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "NDC10359", 96, 64
+}
+Texture "NDC10083", 128, 128
+{
+	Patch "NDC10347", 26, 64
+	Patch "NDC10346", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "NDC10347", 28, 0
+	Patch "NDC10350", 72, 64
+	Patch "NDC10348", 72, 0
+	Patch "NDC10349", 0, 0
+}
+Texture "NDC10084", 256, 56
+{
+	Patch "NDC10351", 0, 0
+	Patch "NDC10352", 64, 0
+	Patch "NDC10353", 128, 0
+	Patch "NDC10357", 192, 0
+}
+Texture "NDC10085", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "NDC10345", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "NDC10351", 0, 0
+	Patch "NDC10345", 96, 4
+	Patch "NDC10352", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "NDC10086", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "NDC10362", 5, 0
+	Patch "NDC10362", 35, 0
+}
+Texture "NDC10087", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "NDC10089", 16, 128
+{
+	Patch "NDC10333", 0, 0
+	Patch "NDC10333", 0, 56
+}
+Texture "NDC10091", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "NDC10363", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "NDC10364", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "NDC10365", 132, 69
+	Patch "NDC10366", 68, 7
+	Patch "NDC10367", 4, 7
+	Patch "NDC10368", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "NDC10092", 128, 128
+{
+	Patch "NDC10335", 0, 56
+	Patch "NDC10336", 64, 56
+	Patch "NDC10335", 0, 0
+	Patch "NDC10336", 64, 0
+}
+Texture "NDC10096", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "NDC10097", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "NDC10098", 128, 128
+{
+	Patch "NDC10337", 0, 0
+}
+Texture "NDC10099", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "NDC10100", 128, 128
+{
+	Patch "NDC10337", -120, -8
+}
+Texture "NDC10106", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "NDC10109", 128, 128
+{
+	Patch "NDC10382", 64, 70
+	Patch "NDC10384", 0, 70
+	Patch "NDC10383", 0, -2
+	Patch "NDC10382", 64, -2
+}
+Texture "NDC10110", 64, 128
+{
+	Patch "NDC10385", 0, 0
+	Patch "NDC10385", 0, 32
+	Patch "NDC10385", 0, 96
+	Patch "NDC10385", 0, 64
+}
+Texture "NDC10111", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "NDC10393", 14, 74
+}
+Texture "NDC10112", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "NDC10372", 0, 0
+}
+Texture "NDC10113", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "NDC10371", 4, 0
+	Patch "W32_4", 0, 64
+}
+Texture "NDC10115", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "NDC10362", 81, 34
+	Patch "NDC10362", 19, 34
+}
+Texture "NDC10116", 16, 128
+{
+	Patch "NDC10381", -4, 56
+	Patch "NDC10381", -4, 0
+}
+Texture "NDC10117", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "NDC10362", 7, 27
+	Patch "NDC10362", 37, 27
+}
+Texture "NDC10120", 64, 128
+{
+	Patch "NDC10386", 0, 0
+	Patch "NDC10387", 32, 0
+}
+Texture "NDC10121", 256, 128
+{
+	Patch "NDC10377", 0, 0
+	Patch "NDC10378", 128, 0
+}
+Texture "NDC10123", 128, 128
+{
+	Patch "NDC10373", -12, 0
+	Patch "NDC10373", 116, 0
+}
+Texture "NDC10124", 128, 128
+{
+	Patch "NDC10374", -4, 0
+	Patch "NDC10374", 124, 0
+}
+Texture "NDC10129", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "NDC10392", 0, 79
+	Patch "NDC10392", 64, 15
+}

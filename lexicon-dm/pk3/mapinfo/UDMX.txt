@@ -1,0 +1,619 @@
+// UDMX + UDM3 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UDMX01 "x factor"
+{
+	titlepatch = "UDMXV00"
+	next = "UDMX02"
+	secretnext = "UDMX02"
+	sky1 = "UDMX1694"
+	music = "D_UDMX01"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX02 "map of the hour"
+{
+	titlepatch = "UDMXV01"
+	next = "UDMX03"
+	secretnext = "UDMX03"
+	sky1 = "UDMX1694"
+	music = "D_UDMX02"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX03 "wikid sick"
+{
+	titlepatch = "UDMXV02"
+	next = "UDMX04"
+	secretnext = "UDMX04"
+	sky1 = "UDMX1694"
+	music = "D_UDMX03"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX04 "outpost delta flashback"
+{
+	titlepatch = "UDMXV03"
+	next = "UDMX05"
+	secretnext = "UDMX05"
+	sky1 = "UDMX1694"
+	music = "D_UDMX04"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX05 "plasma grid"
+{
+	titlepatch = "UDMXV04"
+	next = "UDMX06"
+	secretnext = "UDMX06"
+	sky1 = "UDMX1694"
+	music = "D_UDMX05"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX06 "gridlock"
+{
+	titlepatch = "UDMXV05"
+	next = "UDMX07"
+	secretnext = "UDMX07"
+	sky1 = "UDMX1694"
+	music = "D_UDMX06"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX07 "valley of the damned"
+{
+	titlepatch = "UDMXV06"
+	next = "UDMX08"
+	secretnext = "UDMX08"
+	sky1 = "UDMX1694"
+	music = "D_UDMX07"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+	Map07Special
+}
+
+map UDMX08 "miami manslaughter"
+{
+	titlepatch = "UDMXV07"
+	next = "UDMX09"
+	secretnext = "UDMX09"
+	sky1 = "UDMX1694"
+	music = "D_UDMX08"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX09 "red nose reef"
+{
+	titlepatch = "UDMXV08"
+	next = "UDMX10"
+	secretnext = "UDMX10"
+	sky1 = "UDMX1694"
+	music = "D_UDMX09"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX10 "triple decker x"
+{
+	titlepatch = "UDMXV09"
+	next = "UDMX11"
+	secretnext = "UDMX11"
+	sky1 = "UDMX1694"
+	music = "D_UDMX10"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX11 "the atomic dam"
+{
+	titlepatch = "UDMXV10"
+	next = "UDMX12"
+	secretnext = "UDMX12"
+	sky1 = "UDMX1694"
+	music = "D_UDMX11"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX12 "gosh darned keep"
+{
+	titlepatch = "UDMXV11"
+	next = "UDMX13"
+	secretnext = "UDMX13"
+	sky1 = "UDMX1695"
+	music = "D_UDMX12"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX13 "at the center"
+{
+	titlepatch = "UDMXV12"
+	next = "UDMX14"
+	secretnext = "UDMX14"
+	sky1 = "UDMX1695"
+	music = "D_UDMX13"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX14 "quark"
+{
+	titlepatch = "UDMXV13"
+	next = "UDMX15"
+	secretnext = "UDMX15"
+	sky1 = "UDMX1695"
+	music = "D_UDMX14"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX15 "ud1m10 flashback"
+{
+	titlepatch = "UDMXV14"
+	next = "UDMX16"
+	secretnext = "UDMX16"
+	sky1 = "UDMX1695"
+	music = "D_UDMX15"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX16 "pingabringa"
+{
+	titlepatch = "UDMXV15"
+	next = "UDMX17"
+	secretnext = "UDMX17"
+	sky1 = "UDMX1695"
+	music = "D_UDMX16"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX17 "this was e1-themed once"
+{
+	titlepatch = "UDMXV16"
+	next = "UDMX18"
+	secretnext = "UDMX18"
+	sky1 = "UDMX1695"
+	music = "D_UDMX17"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX18 "the edge flashback"
+{
+	titlepatch = "UDMXV17"
+	next = "UDMX19"
+	secretnext = "UDMX19"
+	sky1 = "UDMX1695"
+	music = "D_UDMX18"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX19 "the renaissance"
+{
+	titlepatch = "UDMXV18"
+	next = "UDMX20"
+	secretnext = "UDMX20"
+	sky1 = "UDMX1695"
+	music = "D_UDMX19"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX20 "obligatory liam map"
+{
+	titlepatch = "UDMXV19"
+	next = "UDMX21"
+	secretnext = "UDMX21"
+	sky1 = "UDMX1695"
+	music = "D_UDMX20"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX21 "the cursed library"
+{
+	titlepatch = "UDMXV20"
+	next = "UDMX22"
+	secretnext = "UDMX22"
+	sky1 = "UDMX1696"
+	music = "D_UDMX21"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX22 "the brown insanity"
+{
+	titlepatch = "UDMXV21"
+	next = "UDMX23"
+	secretnext = "UDMX23"
+	sky1 = "UDMX1696"
+	music = "D_UDMX22"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX23 "acid jail"
+{
+	titlepatch = "UDMXV22"
+	next = "UDMX24"
+	secretnext = "UDMX24"
+	sky1 = "UDMX1696"
+	music = "D_UDMX23"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX24 "shafted flashback"
+{
+	titlepatch = "UDMXV23"
+	next = "UDMX25"
+	secretnext = "UDMX25"
+	sky1 = "UDMX1696"
+	music = "D_UDMX24"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX25 "rockafella's mustard"
+{
+	titlepatch = "UDMXV24"
+	next = "UDMX26"
+	secretnext = "UDMX26"
+	sky1 = "UDMX1696"
+	music = "D_UDMX25"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX26 "sonic x"
+{
+	titlepatch = "UDMXV25"
+	next = "UDMX27"
+	secretnext = "UDMX27"
+	sky1 = "UDMX1696"
+	music = "D_UDMX26"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX27 "castlemania"
+{
+	titlepatch = "UDMXV26"
+	next = "UDMX28"
+	secretnext = "UDMX28"
+	sky1 = "UDMX1696"
+	music = "D_UDMX27"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX28 "b-ville"
+{
+	titlepatch = "UDMXV27"
+	next = "UDMX29"
+	secretnext = "UDMX29"
+	sky1 = "UDMX1696"
+	music = "D_UDMX28"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+map UDMX29 "ud3m1 flashback"
+{
+	titlepatch = "UDMXV28"
+	next = "UDMX31"
+	secretnext = "UDMX31"
+	sky1 = "UDMX1696"
+	music = "D_UDMX29"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+}
+
+/*
+map UDMX30 "hall of champions"
+{
+	titlepatch = "UDMXV29"
+	next = "UDMX31"
+	secretnext = "UDMX31"
+	sky1 = "UDMX1696"
+	music = "D_UDMX30"
+	intermusic = "D_UDMXI1"
+	ExitPic = "UDMXIN1"
+	EnterPic = "UDMXIN1"
+	allowmonstertelefrags
+}
+*/
+
+map UDMX31 "MAP10 - By: Ralphis"
+{
+	titlepatch = "UDMXV30"
+	next = "UDMX32"
+	secretnext = "UDMX32"
+	sky1 = "UDMX1697"
+	music = "D_UDMX31"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX32 "Flying Buttresses - By: Ralphis"
+{
+	titlepatch = "UDMXV31"
+	next = "UDMX33"
+	secretnext = "UDMX33"
+	sky1 = "UDMX1697"
+	music = "D_UDMX32"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX33 "Phobos Deep in Unidoom - By: DeathZ0r"
+{
+	titlepatch = "UDMXV32"
+	next = "UDMX34"
+	secretnext = "UDMX34"
+	sky1 = "UDMX1697"
+	music = "D_UDMX33"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX34 "The Cool Map - By: AceOfSpades"
+{
+	titlepatch = "UDMXV33"
+	next = "UDMX35"
+	secretnext = "UDMX35"
+	sky1 = "UDMX1697"
+	music = "D_UDMX34"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX35 "Grosse Hoseschlange - By: Ralphis"
+{
+	titlepatch = "UDMXV34"
+	next = "UDMX36"
+	secretnext = "UDMX36"
+	sky1 = "UDMX1697"
+	music = "D_UDMX35"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX36 "Kokkenballz - By: Harvey"
+{
+	titlepatch = "UDMXV35"
+	next = "UDMX37"
+	secretnext = "UDMX37"
+	sky1 = "UDMX1697"
+	music = "D_UDMX36"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX37 "Fetus Gumbo - By: Doomraider"
+{
+	titlepatch = "UDMXV36"
+	next = "UDMX38"
+	secretnext = "UDMX38"
+	sky1 = "UDMX1697"
+	music = "D_UDMX37"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX38 "Sky Fortress - By: Mephisto"
+{
+	titlepatch = "UDMXV37"
+	next = "UDMX39"
+	secretnext = "UDMX39"
+	sky1 = "UDMX1697"
+	music = "D_UDMX38"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX39 "Satyricon - By: AlexMax"
+{
+	titlepatch = "UDMXV38"
+	next = "UDMX40"
+	secretnext = "UDMX40"
+	sky1 = "UDMX1697"
+	music = "D_UDMX39"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX40 "MAP01 - By: AlexMax"
+{
+	titlepatch = "UDMXV39"
+	next = "UDMX41"
+	secretnext = "UDMX41"
+	sky1 = "UDMX1697"
+	music = "D_UDMX40"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX41 "Unidoom Sucks - By: Toke"
+{
+	titlepatch = "UDMXV40"
+	next = "UDMX42"
+	secretnext = "UDMX42"
+	sky1 = "UDMX1697"
+	music = "D_UDMX41"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX42 "One Man's Burden - By: Liam"
+{
+	titlepatch = "UDMXV41"
+	next = "UDMX43"
+	secretnext = "UDMX43"
+	sky1 = "UDMX1698"
+	music = "D_UDMX42"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX43 "The Claustrophobic Place - By: Mephisto"
+{
+	titlepatch = "UDMXV42"
+	next = "UDMX44"
+	secretnext = "UDMX44"
+	sky1 = "UDMX1698"
+	music = "D_UDMX43"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX44 "Fun To Be Had - By: Liam"
+{
+	titlepatch = "UDMXV43"
+	next = "UDMX45"
+	secretnext = "UDMX45"
+	sky1 = "UDMX1698"
+	music = "D_UDMX44"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX45 "Nowhere To Hide - By: Mephisto"
+{
+	titlepatch = "UDMXV44"
+	next = "UDMX46"
+	secretnext = "UDMX46"
+	sky1 = "UDMX1698"
+	music = "D_UDMX45"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX46 "Citadel of UD - By: UniDoom"
+{
+	titlepatch = "UDMXV45"
+	next = "UDMX48"
+	secretnext = "UDMX48"
+	sky1 = "UDMX1698"
+	music = "D_UDMX46"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+/*
+map UDMX47 "Hall of Champions - By: DeathZ0r"
+{
+	titlepatch = "UDMXV46"
+	next = "UDMX48"
+	secretnext = "UDMX48"
+	sky1 = "UDMX1698"
+	music = "D_UDMX47"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+*/
+
+map UDMX48 "You Can't Shoot! - By: AlexMax"
+{
+	titlepatch = "UDMXV47"
+	next = "UDMX49"
+	secretnext = "UDMX49"
+	sky1 = "UDMX1698"
+	music = "D_UDMX48"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX49 "You Can't Dodge! - By: AlexMax"
+{
+	titlepatch = "UDMXV48"
+	next = "UDMX50"
+	secretnext = "UDMX50"
+	sky1 = "UDMX1698"
+	music = "D_UDMX49"
+	intermusic = "D_UDMXI2"
+	ExitPic = "UDMXIN2"
+	EnterPic = "UDMXIN2"
+}
+
+map UDMX50 "udmtnctte"
+{
+	titlepatch = "UDMXV49"
+	next = "UDMX51"
+	secretnext = "UDMX51"
+	sky1 = "UDMX1696"
+	music = "D_UDMX50"
+}
+
+map UDMX51 "zdm.wad map01"
+{
+	titlepatch = "UDMXV50"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "UDMX1696"
+	music = "D_UDMX51"
+}

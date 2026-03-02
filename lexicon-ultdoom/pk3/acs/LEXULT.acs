@@ -1,0 +1,12 @@
+/*
+	Lexicon Ultimate Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXBASE"
+
+Script "Lexicon_UltimatePack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","ULTD",1);
+}

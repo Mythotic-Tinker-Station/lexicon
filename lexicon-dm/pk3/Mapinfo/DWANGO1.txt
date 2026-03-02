@@ -1,0 +1,107 @@
+// DWANGO1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW0101 "DWANGO1 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW0102"
+	secretnext = "DW0102"
+	sky1 = "SKY1"
+	music = "D_DW0101"
+}
+
+map DW0102 "DWANGO1 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW0103"
+	secretnext = "DW0103"
+	sky1 = "SKY1"
+	music = "D_DW0102"
+}
+
+map DW0103 "DWANGO1 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW0104"
+	secretnext = "DW0104"
+	sky1 = "SKY1"
+	music = "D_DW0103"
+}
+
+map DW0104 "DWANGO1 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW0105"
+	secretnext = "DW0105"
+	sky1 = "SKY1"
+	music = "D_DW0104"
+}
+
+map DW0105 "DWANGO1 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW0106"
+	secretnext = "DW0106"
+	sky1 = "SKY1"
+	music = "D_DW0105"
+}
+
+map DW0106 "DWANGO1 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW0107"
+	secretnext = "DW0107"
+	sky1 = "SKY1"
+	music = "D_DW0106"
+}
+
+map DW0107 "DWANGO1 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW0108"
+	secretnext = "DW0108"
+	sky1 = "SKY1"
+	music = "D_DW0107"
+	Map07Special
+}
+
+map DW0108 "DWANGO1 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW0109"
+	secretnext = "DW0109"
+	sky1 = "SKY1"
+	music = "D_DW0108"
+}
+
+map DW0109 "DWANGO1 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW0110"
+	secretnext = "DW0110"
+	sky1 = "SKY1"
+	music = "D_DW0109"
+}
+
+map DW0110 "DWANGO1 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW0111"
+	secretnext = "DW0111"
+	sky1 = "SKY1"
+	music = "D_DW0110"
+}
+
+map DW0111 "DWANGO1 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "D_DW0111"
+}

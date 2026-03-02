@@ -1,0 +1,575 @@
+﻿===========================================================================
+Archive Maintainer      : doom2/Ports/megawads, update of sf3
+Advanced engine needed  : PrBoom-Plus -complevel 9 compatible
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Slaughterfest 3
+Filename                : sf3.wad
+Release date            : July 7th, 2018
+Author                  : Various
+Email Address           : [redacted]
+Description             : A long-awaited third entry in the series, this is
+			  another compilation of 35 slaughter maps designed
+			  to be played from pistol start.
+
+Additional Credits to   : Textures, flats, and sprites from cc4-tex,
+                          doom, gothictx, Oblige, q1tex, retres - 
+                          See the CREDITS and MAPLIST sections for more
+===========================================================================
+* What is included *
+
+New levels              : 35
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Dehacked lump included in the main wad
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-35
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Some maps
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 5 years
+Editor(s) used          : doom builder, boom anim tool, xwe, slumped,
+                          slade, various image editors
+Known Bugs              : - Map33 doesn't work as intended in (g)zdoom
+			  - Map18 may become broken when cheats are used
+ 			  to access some of the areas before they are 
+			  meant to be accessed legitimately
+May Not Run With...     : doom2.exe
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse, as long as you give proper credit.
+
+You MAY distribute this zip file for free, provided you keep this entire
+zip file intact.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.doomworld.com/idgames
+
+===========================================================================
+/////////////////////////
+//////   MAPLIST   //////
+/////////////////////////
+===========================================================================
+
+########################################################
+#                                                      #
+# 01 Grain of Salt    Resurrect Dead on Planet Jupiter #
+# 02 cannonball       Firestarter                      #
+# 03 darkreaver       Pathogen                         #
+# 04 Rayzik           Desecration                      #
+# 05 tatsurd-cacocaco Evil Battlefield of Demons       #
+# 06 cannonball       Wavebreaker                      #
+# 07 Phml             Morkfang                         #
+# 08 Grain of Salt    Resurgam                         #
+# 09 Phml             Yonahe                           #
+# 10 Phml             Dunleitt                         #
+# 11 Archi            Broken Mind                      #
+# 12 Demonologist     Gevurah                          #
+# 13 Rayzik           The Farthest Reach               #
+# 14 cannonball       Blue Shift                       #
+# 15 Ribbiks          Skittle Biscuit                  #
+# 16 Ribbiks & Archi  Nibblet                          #
+# 17 tatsurd-cacocaco Fierce Attack                    #
+# 18 Demonologist     Via Tortuosa                     #
+# 19 dannebubinga     Meet-A-Bear                      #
+# 20 ArmouredBlood    Red Recluse                      #
+# 21 Grain of Salt    Heck Revealed                    #
+# 22 cannonball       Uprising                         #
+# 23 Solarn           Chaos Slaughter                  #
+# 24 dannebubinga     Joyless                          #
+# 25 Archi            Temple of Judgement              #
+# 26 Archi            Dysphoria                        #
+# 27 Demonologist     To Mega Therion                  #
+# 28 TimeOfDeath      dholes                           #
+# 29 TimeOfDeath      Escaping the Spiral Labyrinth    #
+# 30 Archi            Chronoblast                      #
+# 31 kraflab          With Fist in Hand                #
+# 32 __Lagger__       Pacman                           #
+# 33 Phml             Three Lines                      #
+# 34 gggmork          Mult00000001                     #
+# 35 gggmork          Butt                             #  
+#                                                      #
+########################################################
+
+===========================================================================
+/////////////////////////
+//////   CREDITS   //////
+/////////////////////////
+===========================================================================
+
+Slaughterfest Founder:
+	- General Rainbow Bacon
+
+Extra Playtesting:
+	- ArmouredBlood
+	- Dannebubinga
+	- Demonologist
+	- gggmork
+	- __Lagger__
+	- j4rio
+	- jongo
+	- Memfis
+	- Nevan
+	- Ribbiks
+	- Phml
+	- Archi
+	- plums
+	- Bloodite Krypto
+	- Grain of Salt
+	- degree23
+	- SteveD
+	- tourniquet
+	- WH-Wilou84
+        - loveless
+
+Titlepic / Interpic / Status-Bar:
+	- __Lagger__
+	- Grain of Salt
+
+This wad contains textures from:
+cc4-tex
+gothictx
+Oblige
+q1tex
+
+NiGHTMARE
+Espi
+Eriance
+Fredrik Johansson
+Janitor
+DaGGeR
+Ola Bjorling
+Vader
+XDelusion
+Esselfortium
+RottKing
+Nuxius
+Afterglow
+AgentSpork
+RottKing
+Enjay
+Huy Pham
+SargeBaldy
+Tormentor667
+The GothicDM Team
+The Requiem Team
+The Eternal Doom Team
+id Software
+Raven Software
+Rogue Entertainment
+andrewj
+
+* DISCLAIMER *
+This PWAD contains select texture(s) and flat(s) that can originally be
+found in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of
+said flat(s) and texture(s) and also to the rest of the Gothic Crew
+(1997/98). The ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each
+PKZIP archive contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+===========================================================================
+//////////////////////////
+//////   MAP INFO   //////
+//////////////////////////
+===========================================================================
+
+MAP01    - Resurrect Dead on Planet Jupiter
+Author   - Grain of Salt
+Music    - "Canyon" by Ribbiks
+Comments - Started as an edit of Cannonball's "Exodus" from SF2012, but I 
+don't think it has much in common with that map any more. I worked on this 
+mostly in summer 2013, and despite its age, I actually still quite like it.
+Possibly overdetailed in parts, but the gameplay still holds up, for me,
+and I enjoy playing it. The outdoor area looks clunky, but outdoor areas 
+aren't my thing, so I don't really mind. So overall, this might be the 
+first map I've released that I can actually stand behind.
+
+MAP02    - Firestarter
+Author   - Matt "cannonball" Powell
+Music    - "Night Bats" by Mark Klem
+Comments - I completed redid this map but using the initial grid set up, 
+like Wavebreaker I tried to mix some lock in fights with some of the other 
+free flowing parts of the map.
+
+MAP03    - Pathogen
+Author   - darkreaver
+Music    - "Close Quarters (2004 version)" by Maxime Tondreau
+Comments - Short and simple map. Nothing fancy.
+
+MAP04    - Desecration
+Author   - Rayzik
+Music    - "Descending" by Lamb of God (edited for this application)
+Comments - Likely an easier map compared to the rest, the gore nest kind of
+theme was fun to play with. Looking back, I probably didn't use enough 
+cyberdemons.
+
+MAP05    - Evil Battlefield of Demons
+Author   - tatsurd-cacocaco
+Music    - TNT map07
+Comments - N/A
+
+MAP06    - Wavebreaker
+Author   - Matt "cannonball" Powell
+Music    - "Goin' down the fast way" from Rise of the Triad
+Comments - This map has had some major changes, if for the reason that the 
+old version got moved into another wad I am making by myself, but it gave 
+the opportunity to strip the map back and start again, if only but to 
+create a more uniform look to the map to make GOS happy :) This map was 
+based creating a stressful situation with a lot of crossfire, this version 
+has added some staged fights to break the map up a tad.
+
+MAP07    - Morkfang
+Author   - Phml
+Music    - "Retribution Dawns" by Aubrey Hodges (midi by Jay Reichard)
+Comments - N/A
+
+MAP08    - Resurgam
+Author   - Grain of Salt
+Music    - "Tulku" from Hexen 2: Portal of Praevus
+Comments - This used to have a purple sky but Ribbiks made me take it out, 
+tsk. Again, too much cleanup, but the PE bit is fun :P
+
+MAP09    - Yohane
+Author   - Phml
+Music    - "Chimes of Death" by James Paddock
+Comments - N/A
+
+MAP10    - Dunleitt
+Author   - Phml
+Music    - "And So I Carry On..." by David Shaw
+Comments - N/A
+
+MAP11    - Broken Mind
+Author   - Archi
+Music    - "Clonk" by Esselfortium (from BTSX E1 MAP04)
+Comments - N/A
+
+MAP12    - Gevurah
+Author   - Demonologist
+Music    - "Hellbound" by ??? (taken from map23 of NDCP2)
+Comments - Originally titled "Acedia", this was to be the first map of a
+personal project of mine dedicated to deadly sins (how original). However, 
+shortly after making it I realised that I'm going nowhere with that mapset 
+and cancelled its further development. This map had been lying abandoned 
+for some time, and in the end I submitted it to SF3 meaning for it to be a 
+relatively relaxing and forgiving level with a bunch of more upbeat moments
+here and there. Conceptually simple, its looks are also obviously heavily 
+inspired by map11 of Sunder, though of course it's nowhere near that map's 
+scale, length and level of grandeur.
+
+MAP13    - The Farthest Reach
+Author   - Rayzik
+Music    - "Crystal Mountain" by Death
+Comments - A map made in the same theme as my previous entry "Walk With Me
+In Hell", this one was supposed to be it's 'sequel'. It kind of fits better
+as a prequel now that I think about it...
+
+MAP14    - Blue Shift
+Author   - Matt "cannonball" Powell
+Music    - Untitled track by Stewart Rynn (Used in Interception.wad)
+Comments - This map was made in 2016 and was very much inspired by the 
+likes of Ribbiks and Danne's work in Sunlust, in fact I guess the visual 
+resemble that of Map08-10 of that wad. So yeah enjoy me taking inspiration 
+and I hope it gets at least close to their work.
+
+MAP15    - Skittle Biscuit
+Author   - Ribbiks
+Music    - "holyshit.mid" by Ribbiks
+Comments - In contrast to most of my existing maps, I wanted to make some
+slaughter that was more open and free-form. So I picked up a chaotic midi
+I wrote and spat out a colorful layout chock full of monsters!! Enjoy!!
+
+MAP16    - Nibblet
+Author   - Ribbiks & Archi
+Music    - "oozinator.mid" by Ribbiks
+Comments - Another compact, overly colorful box stuffed with monsters.
+           Thanks to Archi for picking up the slack and finally getting
+           me to finish this!
+
+MAP17    - Fierce Attack
+Author   - tatsurd-cacocaco
+Music    - "In the Arms of Death (Testament's Theme)" from Guilty Gear XX 
+Korean Edition
+Comments - N/A
+
+MAP18    - Via Tortuosa
+Author   - Demonologist
+Music    - "Two tides" from Ecco the Dolphin 2
+Comments - A spiritual successor and pretty much a sequel of the dreaded 
+"Ex Tenebris" from Doomworld Mega Project 2013, this map continues its 
+predecessor's visual theme and atmospheric motifs, but is meant to be more 
+focused in its encounters and less linear in its progression. It's still 
+hard enough, quickly reaching its peak difficulty and staying on that level
+until the very end, no matter which way you choose. There are no easier 
+paths and preferred options. In the end - I'm really satisfied with the 
+result in spite of the time passed since its creation. I'm subconsciously 
+itching to improve something in my maps every time I look back at them, but 
+this one is an exception, as there's simply nothing that comes to mind.
+
+MAP19    - Meet-A-Bear
+Author   - dannebubinga
+Music    - N/A
+Comments - N/A
+
+MAP20    - Red Recluse
+Author   - ArmouredBlood
+Music    - "Hold Back the Day" by DevilDriver
+Comments - This has been done for years, I can't remember much about the 
+dev process. I just remember I wanted to have these crazy tall arches 
+covering an area in a sea of blood, leading to a castle, and that's about 
+it.
+
+MAP21    - Heck Revealed
+Author   - Grain of Salt, Demonologist, Ribbiks, Archi
+Music    - "One for the Vine" by Genesis
+Comments - GoS: Collab map featuring several sf3 mappers. I sent an
+unfinished thing to Ribbiks, he added a bit, then Demonologist added a bit,
+then Archi. Not sure if it holds together as one map very well, but it has
+a lot of individual nice bits.
+Demonologist: I made the left wing (the one with zimmer rocks everywhere),
+quick and dirty. Have fun!
+
+MAP22    - Uprising
+Author   - Matt "cannonball" Powell
+Music    - "Dave D Taylor blues" from Doom 2 by Robert Prince
+Comments - This was made when the doomworld megawad club played hell 
+revealed, so this is my homage to "Resistance is futile". Whilst it 
+resembles the original I tried to make the map to more modern standards and
+remove some of the more questionable decisions made. Hopefully this plays 
+well and whilst I state modern, it does have that old school bfg massacre 
+which people will remember from the original map. 
+
+MAP23    - Chaos Slaughter
+Author   - Solarn
+Music    - midi version of "Max Heat" from Mega Man Zero 4, downloaded from 
+somewhere years ago
+Comments - At this point, this is a fairly old map that I'm not too proud 
+of anymore. It's essentially a huge square arena that opens up gradually, 
+with two smallish disconnected side rooms that have somewhat different 
+mechanics. The styles are way too inconsistent and haphazard, but I feel 
+like the gameplay still holds up.
+
+MAP24    - Joyless
+Author   - dannebubinga
+Music    - "In the Dark" by Bobby Prince
+Comments - N/A
+
+MAP25    - Temple of Judgement
+Author   - Archi
+Music    - "Stormy Volcano" by Petter Mårtensen (from Hell Revealed 2 MAP19)
+Comments - N/A
+
+MAP26    - Dysphoria
+Author   - Archi
+Music    - "Conductor" by Jimmy (from BTSX E1 MAP07)
+Comments - N/A
+
+MAP27    - To Mega Therion
+Author   - Demonologist
+Music    - "Skedar Ruins (Battle Shrine)" from Perfect Dark
+Comments - A really tough map, with gameplay being mostly inspired by 
+Darkwave0000's works but pushed towards extremes of this approach, it's 
+designed to put your crowd control skills to the ultimate test in more ways 
+than one, be it evasion, outrunning, suppression or frantic bfg spam with 
+good timing with regards to powerup pickups, all tied together in such a 
+way that you will never be truly isolated from the rest of the map, and 
+when monsters can't reach you - they can at least shoot you, and from a 
+considerable distance. I strongly advise choosing HMP or even HNTR for a 
+first playthrough, as they're more freeform and less punishing when it 
+comes to deviation from the intended approach, whereas UV pretty much 
+enforces it, requiring deep enough understanding of the map's logic and 
+traps and making your life quite miserable otherwise. I still hope, 
+however, that even at its peak moments this map can still be enjoyable not 
+only for me and the playtesting crew. Good luck!
+
+MAP28    - dholes
+Author   - TimeOfDeath
+Comments - I was really into eating vanilla and chocolate donut holes with 
+milk while making this map. That's why it's called dholes. This map 
+features a giant "king" made out of cyberdemons with a spiderdemon as the 
+head. It also features a section where you must go into the void as far as 
+you can, until you come out the other side. [Note from Demonologist: the 
+void got replaced by a teleporter following ToD's suggestion later on to 
+make things a bit more user-friendly, see ESP.wad for the "untainted" 
+version of this map.]
+
+MAP29    - Escaping the Spiral Labyrinth
+Author   - TimeOfDeath
+Comments - This was the first map I made for this project. Following in the
+footsteps of Degrassi from sf12, trying to build a long epic map. The name 
+is from one of my death metal albums, which was originally from a song I 
+released in 2002. See if you can spot the amish beard. I actually made the 
+north and south parts of this map separately and then pasted them together 
+at the end because my computer is too slow for making big maps.
+
+MAP30    - Chronoblast
+Author   - Archi
+Music    - "No Glory For Foot Soldiers" by Hero To Be (midi by ~Flounder~)
+Comments - N/A
+
+MAP31    - With Fist in Hand
+Author   - kraflab
+Music    - "Cellar" from Super Castlevania 4
+Comments - My goal was to make a simple slaughtermap with some 
+puzzle/gimmick vibes, which I think I achieved. I'm not really big on 
+slaughtermaps, but I like punching things, ssg-ing imps, and rocketing 
+zombies, so maybe you can guess where the combat elements came from.
+
+MAP32    - Pacman
+Author   - __Lagger__
+Comments - N/A
+
+MAP33    - Three Lines
+Author   - Phml
+Comments - N/A
+
+MAP34    - Mult00000001
+Author   - gggmork
+Comments - N/A
+
+MAP35    - Butt
+Author   - gggmork
+Comments - N/A
+
+===========================================================================
+/////////////////////////////
+//////   AUTHOR INFO   //////
+/////////////////////////////
+===========================================================================
+
+Author     - Solarn
+Other Wads - Map 17 from Claustrophobia 1024 with Kyka, Map 27 from
+Claustrophobia 1024 2 with Jodwin, Map 23 from the 1994 Tune-Up Project 
+with tatsurd-cacocaco, a bunch of dwspd maps. I also have a bunch of early 
+stuff that I have never uploaded to /idgames
+
+Author     - Grain of Salt
+Alias      - Some people call me GoS
+Email      - Nah :-)
+Other wads - GG.wad (7 maps), SF2011 (8 maps), h_phobia (1 map). They're 
+not so good.
+Comments   - I am Grain of Salt. I always detail to the extreme because I 
+believe in our potential. That is how we became strong. Can you withstand 
+our power?
+
+Author     - Christian Lian
+Alias      - darkreaver
+Email      - abominat at gmail.com
+Other wads - ahatred.wad, boh666.wad, pwfinal.wad, and some other shit here
+and there
+Comments   - Hail Satan
+
+Author     - kraflab
+Email      - kraflab@gmail.com
+Other wads - N/A
+Comments   - I'm mainly a speedrunner, and I don't map very often (this is 
+the first project I've submitted anything to), but I thought it would be 
+fun to give it a shot, since I rarely play slaughtermaps, let alone make 
+them
+
+Author     - Rayzik
+Other wads - SF2012(Maps 09, 11, 21), MAYhem 2016(Map 31 - I recommend this
+if you want more of my slaughtermaps to play), Roulette Contest Series #1, 
+#2, #3(1 Map per contest)
+Comments   - ...Soon™
+
+Author     - Christopher Shepherd
+Alias      - ArmouredBlood
+Email      - btitangamer@gmail.com
+Other wads - Newgothic Movement 1, Shai'tan's luck
+Comments   - bum and/or wow addict
+
+Author     - Vladimir Bespalov
+Alias      - Demonologist
+Email      - demonologist@inbox.ru
+Other wads - rod.wad, frvrmore.wad, contributions to various community 
+projects
+Comments   - Slaughtermaps in general played a defining role in my Dooming 
+career, and I'm really glad to become a part of the Slaughterfest series 
+that are bound to represent this approach explicitly. I may have sounded 
+like an ass in the past at times when it came to discussions and opinions, 
+but nevertheless I could always tell - and I'm telling it now - that these 
+series were founded and carried on by a dedicated group of great and 
+talented individuals, and discussing stuff with them has always been fun 
+and interesting. Enlightening, even. A sincere thanks goes to everyone 
+involved into each and every Slaughterfest, and of course - to you, the 
+player. Have fun!
+
+Author     - Phml
+Comments   - N/A
+
+Author     - TimeOfDeath
+Email      - thelastbreathofthedying@yahoo.com
+Other wads - dib28a (map01/03/04/05/09/22/23/26/27/28), 2sector (map07), 
+masterjumps (map06), smedley, squane, flanagan, dekutree, loink, chips19, 
+e1m1mem2 (map01), tom19, slut, av20mem, bump, uuhhtod, sloth2k9, rjsloth, 
+nostril, em116, reality3, yourmom, loserfag, ditkd, 32in2410 (map30), 
+ninadbrv, pppp, 64lemons, nh1, nh2, sf2011 (map27/28/29), expiredl, 
+32in2412 (map37), dmp2012 (map39), bustagut, sf2012 (map19/23/29/32/35), 
+100linen (map11/17/31), merkin, intoverf, tinytod, nina2, roomblow, 
+dmp2013z (map20), cassie, xaserpic, esp, teledest, 50shades (map16), 
+dib2627, nh3, nh4, udino (e4m9), nh5, nh666, 37.
+Comments   - http://nostrilcaverns.bandcamp.com
+
+Author     - Matthew Powell
+Alias      - cannonball
+Email      - cannonballmp@yahoo.co.uk
+Other wads - Hadron.wad, draftex.wad, concern.wad, sparta.wad, S2PV.wad and
+many other community contributions including SF2012.wad
+Comments   - Well my maps for SF2012 were not that great though it might 
+just be me being overly critical of my old work. Hopefully the submissions 
+for this will atone for that. Anyway this project has been slow in 
+development but hopefully that will mean for a better experience from all 
+those who play this, and also to see some great demos from those doomgod 
+(even if many of them have been involved in this project).
+
+Author     - Arthur O
+Alias      - Archi
+Other wads - N/A
+
+Author     - Zachary Stephens
+Alias      - Ribbiks
+Email      - ribbiks@gmail.com
+Other wads - Pepper, Italo-Doom, Summer of '69, Sunlust, Crumpets, Swim With
+The Whales, Stardate 20x6. Lots of other crap.
+Comments   - I'd nominate myself for laziest community project manager, but
+it's probably just par for the course as far as doomworld goes. Cheers to
+Demonologist and Archi for performing the necessary prodding to get this
+mapset out the door.
+
+Author     - Daniel Jakobsson
+Alias      - dannebubinga
+Email      - daniel.tomhet@gmail.com
+Other wads - Italo-Doom, Summer of '69, Sunlust, Danne's E1, Combat Shock 2,
+Combat Shock
+Comments   - Bang bang, baby, get into your body.
+
+Author     - tatsurd-cacocaco
+Comments   - N/A
+
+Author     - gggmork
+Comments   - N/A
+
+Author     - __Lagger__
+Comments   - N/A

@@ -1,0 +1,423 @@
+// Hadephobia Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HADP01 "Escape from the Asylum"
+{
+	titlepatch = "HADPV00"
+	next = "HADP02"
+	secretnext = "HADP02"
+	sky1 = "HADP0001"
+	music = "D_HADP01"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP02 "Storage Basement"
+{
+	titlepatch = "HADPV01"
+	next = "HADP03"
+	secretnext = "HADP03"
+	sky1 = "HADP0001"
+	music = "$MUSIC_STALKS"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP03 "The Stench of Freedom"
+{
+	titlepatch = "HADPV02"
+	next = "HADP04"
+	secretnext = "HADP04"
+	sky1 = "HADP0001"
+	music = "D_HADP03"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP04 "Washed Up"
+{
+	titlepatch = "HADPV03"
+	next = "HADP05"
+	secretnext = "HADP05"
+	sky1 = "HADP0001"
+	music = "D_HADP04"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP05 "Rumex Crispus"
+{
+	titlepatch = "HADPV04"
+	next = "HADP06"
+	secretnext = "HADP06"
+	sky1 = "HADP0001"
+	music = "D_HADP05"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP06 "Hull Revealed"
+{
+	titlepatch = "HADPV05"
+	next = "HADP07"
+	secretnext = "HADP07"
+	sky1 = "HADP0001"
+	music = "D_HADP06"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP07 "Deadly Exploitation"
+{
+	titlepatch = "HADPV06"
+	next = "HADP08"
+	secretnext = "HADP08"
+	sky1 = "HADP0001"
+	music = "D_HADP07"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+	Map07Special
+}
+
+map HADP08 "Sub-Station"
+{
+	titlepatch = "HADPV07"
+	next = "HADP09"
+	secretnext = "HADP09"
+	sky1 = "HADP0001"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP09 "Terminus"
+{
+	titlepatch = "HADPV08"
+	next = "HADP10"
+	secretnext = "HADP10"
+	sky1 = "HADP0001"
+	music = "$MUSIC_IN_CIT"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP10 "Excavation Site"
+{
+	titlepatch = "HADPV09"
+	next = "HADP11"
+	secretnext = "HADP11"
+	sky1 = "HADP0001"
+	music = "D_HADP10"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP11 "Descent into Underworld"
+{
+	titlepatch = "HADPV10"
+	next = "HADP12"
+	secretnext = "HADP12"
+	sky1 = "HADP0001"
+	music = "D_HADP11"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP12 "Passover"
+{
+	titlepatch = "HADPV11"
+	next = "HADP13"
+	secretnext = "HADP13"
+	sky1 = "HADP0002"
+	music = "D_HADP12"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP13 "Metal Territory"
+{
+	titlepatch = "HADPV12"
+	next = "HADP14"
+	secretnext = "HADP14"
+	sky1 = "HADP0002"
+	music = "D_HADP13"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP14 "Power Up"
+{
+	titlepatch = "HADPV13"
+	next = "HADP15"
+	secretnext = "HADP15"
+	sky1 = "HADP0002"
+	music = "D_HADP14"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP15 "Septic Underbelly"
+{
+	titlepatch = "HADPV14"
+	next = "HADP16"
+	secretnext = "HADP31"
+	sky1 = "HADP0002"
+	music = "D_HADP15"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP16 "Eisenhower Heliport"
+{
+	titlepatch = "HADPV15"
+	next = "HADP17"
+	secretnext = "HADP17"
+	sky1 = "HADP0002"
+	music = "D_HADP16"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP17 "Communication Tower"
+{
+	titlepatch = "HADPV16"
+	next = "HADP18"
+	secretnext = "HADP18"
+	sky1 = "HADP0002"
+	music = "D_HADP17"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP18 "Altar of Chaos"
+{
+	titlepatch = "HADPV17"
+	next = "HADP19"
+	secretnext = "HADP19"
+	sky1 = "HADP0002"
+	music = "D_HADP18"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP19 "Satan's Fortress"
+{
+	titlepatch = "HADPV18"
+	next = "HADP20"
+	secretnext = "HADP20"
+	sky1 = "HADP0002"
+	music = "D_HADP19"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP20 "Ostoyae Anomaly"
+{
+	titlepatch = "HADPV19"
+	next = "HADP21"
+	secretnext = "HADP21"
+	sky1 = "HADP0002"
+	music = "D_HADP20"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP21 "Constriction"
+{
+	titlepatch = "HADPV20"
+	next = "HADP22"
+	secretnext = "HADP22"
+	sky1 = "HADP0003"
+	music = "D_HADP21"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP22 "Prime Mover"
+{
+	titlepatch = "HADPV21"
+	next = "HADP23"
+	secretnext = "HADP23"
+	sky1 = "HADP0003"
+	music = "D_HADP22"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP23 "Gloom Keep"
+{
+	titlepatch = "HADPV22"
+	next = "HADP24"
+	secretnext = "HADP24"
+	sky1 = "HADP0003"
+	music = "D_HADP23"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP24 "Lifeblood"
+{
+	titlepatch = "HADPV23"
+	next = "HADP25"
+	secretnext = "HADP25"
+	sky1 = "HADP0003"
+	music = "D_HADP24"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP25 "Sacrifice"
+{
+	titlepatch = "HADPV24"
+	next = "HADP26"
+	secretnext = "HADP26"
+	sky1 = "HADP0003"
+	music = "D_HADP25"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP26 "Pride of the Descent"
+{
+	titlepatch = "HADPV25"
+	next = "HADP27"
+	secretnext = "HADP27"
+	sky1 = "HADP0003"
+	music = "D_HADP26"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP27 "Drilling Station"
+{
+	titlepatch = "HADPV26"
+	next = "HADP28"
+	secretnext = "HADP28"
+	sky1 = "HADP0003"
+	music = "D_HADP27"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP28 "Teleportation Center"
+{
+	titlepatch = "HADPV27"
+	next = "HADP29"
+	secretnext = "HADP29"
+	sky1 = "HADP0003"
+	music = "D_HADP28"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP29 "Dead Planet"
+{
+	titlepatch = "HADPV28"
+	next = "HADP30"
+	secretnext = "HADP30"
+	sky1 = "HADP0003"
+	music = "D_HADP29"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP30 "Hadephobia"
+{
+	titlepatch = "HADPV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HADP0003"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+	allowmonstertelefrags
+}
+
+map HADP31 "Hell's Armoury"
+{
+	titlepatch = "HADPV30"
+	next = "HADP16"
+	secretnext = "HADP32"
+	sky1 = "HADP0003"
+	music = "D_HADP31"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP32 "Sirenum Scopuli"
+{
+	titlepatch = "HADPV31"
+	next = "HADP16"
+	secretnext = "HADP16"
+	sky1 = "HADP0003"
+	music = "D_HADP32"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP33 "Hadephobia Map 33"
+{
+	titlepatch = "HADPV32"
+	next = "HADP34"
+	secretnext = "HADP34"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP34 "Hadephobia Map 34"
+{
+	titlepatch = "HADPV33"
+	next = "HADP35"
+	secretnext = "HADP35"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}
+
+map HADP35 "Hadephobia Map 35"
+{
+	titlepatch = "HADPV34"
+	next = "HADP01"
+	secretnext = "HADP01"
+	intermusic = "D_HADPIN"
+	ExitPic = "HADPINT"
+	EnterPic = "HADPINT"
+}

@@ -1,0 +1,394 @@
+// Mars War Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	evenlighting
+}
+
+map MSWR01 "Terraforming Station"
+{
+	titlepatch = "MSWRV00"
+	next = "MSWR02"
+	secretnext = "MSWR02"
+	sky1 = "SKY1"
+	music = "D_MSWR01"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR02 "Theta Base"
+{
+	titlepatch = "MSWRV01"
+	next = "MSWR03"
+	secretnext = "MSWR03"
+	sky1 = "SKY1"
+	music = "D_MSWR02"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR03 "Manufacturing Plant"
+{
+	titlepatch = "MSWRV02"
+	next = "MSWR04"
+	secretnext = "MSWR04"
+	sky1 = "SKY1"
+	music = "D_MSWR03"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR04 "Alpha Base"
+{
+	titlepatch = "MSWRV03"
+	next = "MSWR05"
+	secretnext = "MSWR05"
+	sky1 = "SKY1"
+	music = "D_MSWR04"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR05 "Crash Site"
+{
+	titlepatch = "MSWRV04"
+	next = "MSWR06"
+	secretnext = "MSWR06"
+	sky1 = "SKY1"
+	music = "D_MSWR05"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR06 "Beta Base"
+{
+	titlepatch = "MSWRV05"
+	next = "MSWR07"
+	secretnext = "MSWR07"
+	sky1 = "SKY1"
+	music = "D_MSWR06"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR07 "Infestation"
+{
+	titlepatch = "MSWRV06"
+	next = "MSWR08"
+	secretnext = "MSWR08"
+	sky1 = "SKY1"
+	music = "D_MSWR07"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+	Map07Special
+}
+
+map MSWR08 "Bunker Zero"
+{
+	titlepatch = "MSWRV07"
+	next = "MSWR09"
+	secretnext = "MSWR09"
+	sky1 = "SKY1"
+	music = "D_MSWR08"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR09 "Death Management"
+{
+	titlepatch = "MSWRV08"
+	next = "MSWR10"
+	secretnext = "MSWR10"
+	sky1 = "SKY1"
+	music = "D_MSWR09"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR10 "Transport Ship"
+{
+	titlepatch = "MSWRV09"
+	next = "MSWR11"
+	secretnext = "MSWR11"
+	sky1 = "SKY1"
+	music = "D_MSWR10"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR11 "Drop Ship"
+{
+	titlepatch = "MSWRV10"
+	next = "MSWR12"
+	secretnext = "MSWR12"
+	sky1 = "SKY1"
+	music = "D_MSWR11"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR12 "Operations"
+{
+	titlepatch = "MSWRV11"
+	next = "MSWR13"
+	secretnext = "MSWR13"
+	sky1 = "SKY2"
+	music = "D_MSWR12"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR13 "Warehouse"
+{
+	titlepatch = "MSWRV12"
+	next = "MSWR14"
+	secretnext = "MSWR14"
+	sky1 = "SKY2"
+	music = "D_MSWR13"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR14 "Civilian Center"
+{
+	titlepatch = "MSWRV13"
+	next = "MSWR15"
+	secretnext = "MSWR15"
+	sky1 = "SKY2"
+	music = "D_MSWR14"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR15 "The Fringes"
+{
+	titlepatch = "MSWRV14"
+	next = "MSWR16"
+	secretnext = "MSWR31"
+	sky1 = "SKY2"
+	music = "D_MSWR15"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR16 "Enlightenment"
+{
+	titlepatch = "MSWRV15"
+	next = "MSWR17"
+	secretnext = "MSWR17"
+	sky1 = "SKY2"
+	music = "D_MSWR16"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR17 "Commercial Sector"
+{
+	titlepatch = "MSWRV16"
+	next = "MSWR18"
+	secretnext = "MSWR18"
+	sky1 = "SKY2"
+	music = "D_MSWR17"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR18 "The Edge"
+{
+	titlepatch = "MSWRV17"
+	next = "MSWR19"
+	secretnext = "MSWR19"
+	sky1 = "SKY2"
+	music = "D_MSWR18"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR19 "The Foundation"
+{
+	titlepatch = "MSWRV18"
+	next = "MSWR20"
+	secretnext = "MSWR20"
+	sky1 = "SKY2"
+	music = "D_MSWR19"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR20 "Land of the Lame"
+{
+	titlepatch = "MSWRV19"
+	next = "MSWR21"
+	secretnext = "MSWR21"
+	sky1 = "SKY2"
+	music = "D_MSWR20"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR21 "Highway to Hell"
+{
+	titlepatch = "MSWRV20"
+	next = "MSWR22"
+	secretnext = "MSWR22"
+	sky1 = "SKY3"
+	music = "D_MSWR21"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR22 "Xerox"
+{
+	titlepatch = "MSWRV21"
+	next = "MSWR23"
+	secretnext = "MSWR23"
+	sky1 = "SKY3"
+	music = "D_MSWR22"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR23 "The Gates of Hell"
+{
+	titlepatch = "MSWRV22"
+	next = "MSWR24"
+	secretnext = "MSWR24"
+	sky1 = "SKY3"
+	music = "D_MSWR23"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR24 "83' E"
+{
+	titlepatch = "MSWRV23"
+	next = "MSWR25"
+	secretnext = "MSWR25"
+	sky1 = "SKY3"
+	music = "D_MSWR24"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR25 "1984"
+{
+	titlepatch = "MSWRV24"
+	next = "MSWR26"
+	secretnext = "MSWR26"
+	sky1 = "SKY3"
+	music = "D_MSWR25"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR26 "Maximum Security"
+{
+	titlepatch = "MSWRV25"
+	next = "MSWR27"
+	secretnext = "MSWR27"
+	sky1 = "SKY3"
+	music = "D_MSWR26"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR27 "Marketing"
+{
+	titlepatch = "MSWRV26"
+	next = "MSWR28"
+	secretnext = "MSWR28"
+	sky1 = "SKY3"
+	music = "D_MSWR27"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR28 "Doom User Interface"
+{
+	titlepatch = "MSWRV27"
+	next = "MSWR29"
+	secretnext = "MSWR29"
+	sky1 = "SKY3"
+	music = "D_MSWR28"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR29 "Choices"
+{
+	titlepatch = "MSWRV28"
+	next = "MSWR30"
+	secretnext = "MSWR30"
+	sky1 = "SKY3"
+	music = "D_MSWR29"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR30 "Icon of Sin"
+{
+	titlepatch = "MSWRV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_MSWR30"
+	intermusic = "D_MSWRI2"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+	allowmonstertelefrags
+}
+
+map MSWR31 "Wolfenstein"
+{
+	titlepatch = "MSWRV30"
+	next = "MSWR16"
+	secretnext = "MSWR32"
+	sky1 = "SKY1"
+	music = "D_MSWR31"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}
+
+map MSWR32 "Hell Labs"
+{
+	titlepatch = "MSWRV31"
+	next = "MSWR16"
+	secretnext = "MSWR16"
+	sky1 = "SKY3"
+	music = "D_MSWR32"
+	intermusic = "D_MSWRIN"
+	ExitPic = "MSWRINT"
+	EnterPic = "MSWRINT"
+}

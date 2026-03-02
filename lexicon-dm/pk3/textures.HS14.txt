@@ -1,0 +1,71 @@
+Texture "HS140002", 64, 128
+{
+	Patch "HS140048", 0, 0
+	Patch "HS140048", 0, 64
+}
+Texture "HS140003", 64, 128
+{
+	Patch "HS140047", 0, 0
+	Patch "HS140047", 0, 32
+	Patch "HS140047", 0, 64
+	Patch "HS140047", 0, 96
+}
+Texture "HS140006", 64, 128
+{
+	Patch "HS140049", 0, 0
+	Patch "HS140049", 0, 64
+}
+Texture "HS140012", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "HS140039", 15, 18
+}
+Texture "HS140016", 64, 128
+{
+	Patch "W31_1", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "HS140041", 16, 70
+}
+Texture "HS140017", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "HS140039", 16, 20
+}
+Texture "HS140021", 64, 128
+{
+	Patch "RW18_3", 0, 0
+	Patch "HS140041", 16, 72
+}
+Texture "HS140023", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "HS140039", 16, 72
+}
+Texture "HS140027", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "HS140040", 15, 18
+}
+Texture "HS140031", 64, 128
+{
+	Patch "W31_1", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "HS140042", 16, 70
+}
+Texture "HS140032", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "HS140040", 16, 20
+}
+Texture "HS140036", 64, 128
+{
+	Patch "RW18_3", 0, 0
+	Patch "HS140042", 16, 72
+}
+Texture "HS140038", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "HS140040", 16, 72
+}

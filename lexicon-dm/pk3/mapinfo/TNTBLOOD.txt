@@ -1,0 +1,391 @@
+// Bloodlands Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BLDL01 "Sandcastle"
+{
+	titlepatch = "BLDLV00"
+	next = "BLDL02"
+	secretnext = "BLDL02"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_RUNNIN"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL02 "Sudden Death"
+{
+	titlepatch = "BLDLV01"
+	next = "BLDL03"
+	secretnext = "BLDL03"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_STALKS"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL03 "Desparado"
+{
+	titlepatch = "BLDLV02"
+	next = "BLDL04"
+	secretnext = "BLDL04"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_COUNTD"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL04 "Bastion"
+{
+	titlepatch = "BLDLV03"
+	next = "BLDL05"
+	secretnext = "BLDL05"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_BETWEE"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL05 "Crossfire"
+{
+	titlepatch = "BLDLV04"
+	next = "BLDL06"
+	secretnext = "BLDL06"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL06 "Exposure"
+{
+	titlepatch = "BLDLV05"
+	next = "BLDL07"
+	secretnext = "BLDL07"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL07 "Bolofest"
+{
+	titlepatch = "BLDLV06"
+	next = "BLDL08"
+	secretnext = "BLDL08"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL08 "Storage Substation #6"
+{
+	titlepatch = "BLDLV07"
+	next = "BLDL09"
+	secretnext = "BLDL09"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL09 "No Excuse"
+{
+	titlepatch = "BLDLV08"
+	next = "BLDL10"
+	secretnext = "BLDL10"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_IN_CIT"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL10 "Concertina"
+{
+	titlepatch = "BLDLV09"
+	next = "BLDL11"
+	secretnext = "BLDL11"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL11 "Barnburner"
+{
+	titlepatch = "BLDLV10"
+	next = "BLDL12"
+	secretnext = "BLDL12"
+	sky1 = "BLDL0064"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL12 "Piazza di Morte"
+{
+	titlepatch = "BLDLV11"
+	next = "BLDL13"
+	secretnext = "BLDL13"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL13 "Iron Cross"
+{
+	titlepatch = "BLDLV12"
+	next = "BLDL14"
+	secretnext = "BLDL14"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL14 "Cry Havoc"
+{
+	titlepatch = "BLDLV13"
+	next = "BLDL15"
+	secretnext = "BLDL15"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL15 "Blood Ridge"
+{
+	titlepatch = "BLDLV14"
+	next = "BLDL16"
+	secretnext = "BLDL16"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL16 "Ritual Misery"
+{
+	titlepatch = "BLDLV15"
+	next = "BLDL17"
+	secretnext = "BLDL17"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL17 "Termination Grounds"
+{
+	titlepatch = "BLDLV16"
+	next = "BLDL18"
+	secretnext = "BLDL18"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_STLKS3"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL18 "Abusive Maneuvers"
+{
+	titlepatch = "BLDLV17"
+	next = "BLDL19"
+	secretnext = "BLDL19"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_ROMERO"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL19 "A Sewer Runs Through It"
+{
+	titlepatch = "BLDLV18"
+	next = "BLDL20"
+	secretnext = "BLDL20"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_SHAWN2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL20 "Exopy"
+{
+	titlepatch = "BLDLV19"
+	next = "BLDL21"
+	secretnext = "BLDL21"
+	sky1 = "BLDL0065"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL21 "The Helix"
+{
+	titlepatch = "BLDLV20"
+	next = "BLDL22"
+	secretnext = "BLDL22"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL22 "A Time to Die"
+{
+	titlepatch = "BLDLV21"
+	next = "BLDL23"
+	secretnext = "BLDL23"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_DDTBL3"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL23 "Fiesta"
+{
+	titlepatch = "BLDLV22"
+	next = "BLDL24"
+	secretnext = "BLDL24"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL24 "Inuit"
+{
+	titlepatch = "BLDLV23"
+	next = "BLDL25"
+	secretnext = "BLDL25"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_THEDA3"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL25 "Mr. Rogers' Neighborhood"
+{
+	titlepatch = "BLDLV24"
+	next = "BLDL26"
+	secretnext = "BLDL26"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL26 "Masada"
+{
+	titlepatch = "BLDLV25"
+	next = "BLDL27"
+	secretnext = "BLDL27"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL27 "P'gon Load"
+{
+	titlepatch = "BLDLV26"
+	next = "BLDL28"
+	secretnext = "BLDL28"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL28 "Tunnel"
+{
+	titlepatch = "BLDLV27"
+	next = "BLDL29"
+	secretnext = "BLDL29"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL29 "Bannockburn"
+{
+	titlepatch = "BLDLV28"
+	next = "BLDL30"
+	secretnext = "BLDL30"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL30 "Elements"
+{
+	titlepatch = "BLDLV29"
+	next = "BLDL31"
+	secretnext = "BLDL31"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL31 "Olympic Stairway"
+{
+	titlepatch = "BLDLV30"
+	next = "BLDL32"
+	secretnext = "BLDL32"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}
+
+map BLDL32 "Cold Warage"
+{
+	titlepatch = "BLDLV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "BLDL0066"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_BLDLIN"
+	ExitPic = "BLDLINT"
+	EnterPic = "BLDLINT"
+}

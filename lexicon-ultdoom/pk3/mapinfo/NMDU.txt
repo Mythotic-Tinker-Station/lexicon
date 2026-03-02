@@ -1,0 +1,259 @@
+// The Ultimate NMD Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NMDUE1M1 "Reception"
+{
+	titlepatch = "NMDUV00"
+	next = "NMDUE1M2"
+	secretnext = "NMDUE1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map NMDUE1M2 "Security Center"
+{
+	titlepatch = "NMDUV01"
+	next = "NMDUE1M3"
+	secretnext = "NMDUE1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map NMDUE1M3 "Processing Station"
+{
+	titlepatch = "NMDUV02"
+	next = "NMDUE1M4"
+	secretnext = "NMDUE1M9"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+}
+
+map NMDUE1M4 "Treatment Plant"
+{
+	titlepatch = "NMDUV03"
+	next = "NMDUE1M5"
+	secretnext = "NMDUE1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+}
+
+map NMDUE1M5 "Computer Core"
+{
+	titlepatch = "NMDUV04"
+	next = "NMDUE1M6"
+	secretnext = "NMDUE1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+}
+
+map NMDUE1M6 "Research Lab"
+{
+	titlepatch = "NMDUV05"
+	next = "NMDUE1M7"
+	secretnext = "NMDUE1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map NMDUE1M7 "Power Station"
+{
+	titlepatch = "NMDUV06"
+	next = "NMDUE1M8"
+	secretnext = "NMDUE1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+}
+
+map NMDUE1M8 "Origin"
+{
+	titlepatch = "NMDUV07"
+	next = "NMDUE2M1"
+	secretnext = "NMDUE2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map NMDUE1M9 "Lost Outpost"
+{
+	titlepatch = "NMDUV08"
+	next = "NMDUE1M4"
+	secretnext = "NMDUE1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M9"
+}
+
+map NMDUE2M1 "Gateway"
+{
+	titlepatch = "NMDUV09"
+	next = "NMDUE2M2"
+	secretnext = "NMDUE2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M1"
+}
+
+map NMDUE2M2 "Depot"
+{
+	titlepatch = "NMDUV10"
+	next = "NMDUE2M3"
+	secretnext = "NMDUE2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M2"
+}
+
+map NMDUE2M3 "Main Engineering"
+{
+	titlepatch = "NMDUV11"
+	next = "NMDUE2M4"
+	secretnext = "NMDUE2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M3"
+}
+
+map NMDUE2M4 "Torture Chambers"
+{
+	titlepatch = "NMDUV12"
+	next = "NMDUE2M5"
+	secretnext = "NMDUE2M5"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M4"
+}
+
+map NMDUE2M5 "Chemical Lab"
+{
+	titlepatch = "NMDUV13"
+	next = "NMDUE2M6"
+	secretnext = "NMDUE2M9"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map NMDUE2M6 "Leadworks"
+{
+	titlepatch = "NMDUV14"
+	next = "NMDUE2M7"
+	secretnext = "NMDUE2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+}
+
+map NMDUE2M7 "Deimos Reactor"
+{
+	titlepatch = "NMDUV15"
+	next = "NMDUE2M8"
+	secretnext = "NMDUE2M8"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M7"
+}
+
+map NMDUE2M8 "Hellbound"
+{
+	titlepatch = "NMDUV16"
+	next = "NMDUE3M1"
+	secretnext = "NMDUE3M1"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map NMDUE2M9 "Marble Yards"
+{
+	titlepatch = "NMDUV17"
+	next = "NMDUE2M6"
+	secretnext = "NMDUE2M6"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map NMDUE3M1 "Atrium"
+{
+	titlepatch = "NMDUV18"
+	next = "NMDUE3M2"
+	secretnext = "NMDUE3M2"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M1"
+}
+
+map NMDUE3M2 "Submystic"
+{
+	titlepatch = "NMDUV19"
+	next = "NMDUE3M3"
+	secretnext = "NMDUE3M3"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M2"
+}
+
+map NMDUE3M3 "Bag of Bones"
+{
+	titlepatch = "NMDUV20"
+	next = "NMDUE3M4"
+	secretnext = "NMDUE3M4"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M3"
+}
+
+map NMDUE3M4 "Primary Suffering"
+{
+	titlepatch = "NMDUV21"
+	next = "NMDUE3M5"
+	secretnext = "NMDUE3M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map NMDUE3M5 "Pain Summit"
+{
+	titlepatch = "NMDUV22"
+	next = "NMDUE3M6"
+	secretnext = "NMDUE3M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M5"
+}
+
+map NMDUE3M6 "Modestly Priced Monster Living Units"
+{
+	titlepatch = "NMDUV23"
+	next = "NMDUE3M7"
+	secretnext = "NMDUE3M9"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M6"
+}
+
+map NMDUE3M7 "Malebolge"
+{
+	titlepatch = "NMDUV24"
+	next = "NMDUE3M8"
+	secretnext = "NMDUE3M8"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M7"
+}
+
+map NMDUE3M8 "Brains!"
+{
+	titlepatch = "NMDUV25"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map NMDUE3M9 "Barrens"
+{
+	titlepatch = "NMDUV26"
+	next = "NMDUE3M7"
+	secretnext = "NMDUE3M7"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M9"
+}

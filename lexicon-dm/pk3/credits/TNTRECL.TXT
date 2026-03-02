@@ -1,0 +1,288 @@
+Reclamation text file 28 February 1999
+
+Contents:
+   1. Announcement
+   2. Installation
+   3. Troubleshooting
+   4. System requirements
+   5. Where to find files
+   6. How to get help
+   7. Participants and credits
+   8. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                  +-------------------------+
+                  |       Reclamation       |
+                  +-------------------------+
+
+   Reclamation is the fourth set of 32 DOOM II Deathmatch-only levels 
+   from TeamTNT.  It is now available on ftp.cdrom.com and its mirrors.  
+   See below for the exact path.
+
+   TeamTNT strikes again with yet another 32 levels of all-Deathmatch
+   frag mayhem.  Reclamation follows in the footsteps of the popular 
+   TeamTNT sets "Bloodlands", "Grievance" and "Pursuit".  There's lots 
+   of interesting architecture, impeccable texture alignment and play 
+   balance, and this time around they've been made with Boom-specific
+   features.  Some are visual features, but all levels have some special
+   gameplay features that aren't possible with normal DOOM2.  Just when
+   you thought you knew how to play Deathmatch, someone adds some more
+   twists.  As before, most of the levels are tight fragfests, a couple
+   that are big enough for a more leisurely pace, and lots of selection
+   in between.
+
+   Features:
+
+   - 32 new levels with Boom features
+   - Many new textures, new skies
+   - Difficulty levels = game rules
+   - 3 multiplayer demos
+   - All in one WAD, easy to run
+   - Music by Rich Nagel and Ty Halderman
+   - It's by TeamTNT members!
+   - Startup batch file included
+   - .BEX file included to change level names
+     and intermission story texts
+   - By the makers of 
+     - "FINAL DOOM"
+     - Icarus:Alien Vanguard
+     - TNT:Bloodlands
+     - TNT:Grievance
+     - TNT:Pursuit
+     - Eternal DOOM
+     - Eternal Deathmatch
+     - ... so far ...
+
+---------------
+2. INSTALLATION
+---------------
+
+   Reclamation comes in one WAD file, zipped into one ZIP file.  You'll
+   need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+   TNTRECL.ZIP.  This will produce TNTRECL.WAD, TNTRECL.BEX and TNTRECL.BAT
+   (and another copy of this file, TNTRECL.TXT).
+
+   Just unzip it into your DOOM2 directory and run TNTRECL.BAT, or 
+   load TNTRECL.WAD in your favorite front-end program that understands
+   how to use the Boom engine.  Note that TNTRECL.BEX is not required
+   to be able to run Reclamation--it's just nice to use if you want the
+   intermission stories and the automap level names to be right.
+
+   Floppy download:
+
+      Sorry, but Reclamation is too large to fit on a single floppy.
+
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+   Not much can go wrong, since this is just one WAD file.  However,
+   since not much can go wrong, something might, and maybe a few
+   steps here will help.
+
+   a.  First, verify that TNTRECL.BAT and TNTRECL.WAD are in your
+       DOOM2 directory, and that you are in that directory when you
+       type TNTRECL.  Be sure that Boom is there too or at least
+       is in your path.  
+
+   b.  Spell TNTRECL right. 
+
+   c.  If you notice that the full-screen intermission texts (like
+       between MAP06 and MAP07) don't make sense any more, or that
+       the automap names don't match the level names, and that matters
+       to you, then you didn't run the TNTRECL.BAT file, which will
+       also load the TNTRECL.BEX file to change that stuff.
+
+       You can run it at the command line as:
+
+          boom tntrecl tntrecl.bex
+
+       instead, if you don't like batch files.
+
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   A computer that will play Boom well.  Some of the levels may be
+   a bit resource-intensive if you have a lower-end computer.  
+   Multiplayer is always a bit sluggish, so it may be even more 
+   important for these levels to have a state of the art computer.  
+   However, this isn't one of the new 3d games, so you don't benefit 
+   from GL and such.
+
+   You'll like it better if you have a good sound card, but if you
+   do much deathmatch you already know that.
+
+   The WAD file is a bit over 8MB, and you'll need about 10-12MB 
+   free available during unzipping.
+
+   Any other requirements (modem, network stuff) are no different
+   than if you were running Boom without Reclamation.
+
+   Reclamation will run with ZDoom, we're told, but we're not going
+   to be able to answer any questions or help you solve any problems
+   if you're not using BOOM v2.02 when they happen.  There's one 
+   small problem with the ZDoom menu vs. the one in Reclamation, in 
+   that the cursor apparently goes one row lower than usual on the 
+   screen when you go to ZDoom's options menu selection.  Everything
+   still works the same though, and most of the time people don't 
+   see the menus much during a DM session.
+
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Reclamation can be found with the rest of the TeamTNT products in 
+
+	ftp://ftp.cdrom.com/pub/idgames/themes/TeamTNT
+
+   ftp.cdrom.com is the one place you can be guaranteed to find
+   the most recent version, and you can always get to a pointer to
+   the file from our web site (see below).
+
+   While you're there, get Eternal DOOM, Icarus, Eternal DOOM, Grievance,
+   Bloodlands, Pursuit, Eternal Deathmatch and whatever else we've created
+   by the time you read this...
+
+   File list (contents of TNTRECL.ZIP):
+      TNTRECL.WAD  -- Music, graphics, levels, etc.
+      TNTRECL.BEX  -- BEX file to change text
+      TNTRECL.BAT  -- A handy batch file to run it with
+      TNTRECL.TXT  -- This file
+      FILE_ID.DIZ  -- A BBS info file
+      DESC.SDI     -- A BBS one-line description file
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about Boom itself, contact us or post questions on our
+   message board, or just ask in the news groups.
+
+   If it's about Reclamation, same thing, but be sure to mention 
+   that it's Reclamation and that it's being played with Boom.  If
+   you're using some other source port besides Boom or PRBoom, then
+   talk to the author(s) of that engine, or just use ours.
+
+   Don't bother id Software about any of it.
+
+   We're available through our web site at www.teamtnt.com.  You can 
+   select the mail link there if you want to send email.
+
+---------------------------
+7. PARTICIPANTS AND CREDITS
+---------------------------
+
+   The following TeamTNT members were involved in creating
+   Reclamation.  Testing was a team effort, and a big thanks goes
+   out to the fragbait the team members used to test against.
+
+   The Punch Team spent well over a hundred hours going back
+   through all the levels after selection.  Some levels needed only
+   minor tweaks, but some required extensive reworking before
+   release.  The Punch Team is what makes the difference in a 
+   TeamTNT product and our thanks go out to those folks.
+
+   Ty Halderman   
+	Project Coordinator, builds, web and FTP sites, 
+	email support, Punch Team, new textures, titlepic,
+        intermission, credit, etc. graphics, review coordinator,
+        public beta test coordinator, documentor, level music.
+	Oh, and made a level too.
+
+   Gary Gosson
+        Levels and Punch Team.
+
+   Dale Harris
+	Levels and Punch Team
+
+   Rich Nagel
+        Intermission and title music
+
+   Level design information:
+        MAP01  Dale Harris - Cadaver    "Icy Hot"
+        MAP02  Gary Gosson              "Neighbourhood Watch"
+        MAP03  Jani Saksa - Sir Robin   "War Circle"
+        MAP04  Dale Harris - Cadaver    "Security Bay"
+        MAP05  Jani Saksa - Sir Robin   "Dust and Bones"
+        MAP06  Robert Taylor            "The Pits"
+        MAP07  David Wood - Hakx        "Telesaw"
+        MAP08  Jani Saksa - Sir Robin   "Helldorado"
+        MAP09  Robert Taylor            "Station 4"
+        MAP10  Jani Saksa - Sir Robin   "UPM Death Factory"
+        MAP11  David Wood - Hakx        "Eye on You"
+        MAP12  Gary Gosson              "Harvest"
+        MAP13  Jani Saksa - Sir Robin   "Slaughterhouse 5"
+        MAP14  Gary Gosson              "Nexus"  
+        MAP15  Paul Fleschute - Moe     "Watchtower"
+        MAP16  Gary Gosson              "Warchild"
+        MAP17  Paul Fleschute - Moe     "Rockin'"
+        MAP18  David Wood - Hakx        "Circle of Death"
+        MAP19  Steve Noonan - Funkymonk "Catacombs"
+        MAP20  Robert Taylor            "Rocket Seppuku"
+        MAP21  Ty Halderman             "Wasted Effort"
+        MAP22  Gary Gosson              "Brain Candy"
+        MAP23  Tommie Quick - Fatal     "Habitat"
+        MAP24  David Wood - Hakx        "Symmetry Halls"
+        MAP25  Steve Noonan - Funkymonk "Speed"
+        MAP26  Gary Gosson              "Nobodies Hero"
+        MAP27  Tommie Quick - Fatal     "Cataclysm"
+        MAP28  Gary Gosson              "Final Solution"
+        MAP29  Tommie Quick - Fatal     "Ethereal Mansion"
+        MAP30  Steve Noonan - Funkymonk "Drop Zone"
+        MAP31  Steve Noonan - Funkymonk "Frag Factory"
+        MAP32  Richard Jaspars - Styx   "Death Paradigm"
+
+   Members and non-members who offered themselves as fragbait:
+
+	'Cordata'		(Steven Sturza)
+        'Swaff'                 (Harold Swaffield)
+        (and no doubt others who are too numerous or shy to mention)
+
+   We had a public beta test for two weeks just before release, 
+   and these are the folks who participated in that test:
+
+        Philip (Cyan Bloodbane) Valois <cyanb@hotmail.com>
+        Erik (agatar) der Hagopian <e_r_i_k_d_h@hotmail.com>
+        Zebediah C. (Zeb) McClure <zcm3496@rit.edu>
+        Jason (Collar) Norris <collar@iinet.net.au>
+        Rhys (Killer Doom) Perkins <Mike.perkins@btinternet.com>
+        Phillip Andrew (Da Raven) Cardon <philoraven@juno.com>
+
+   Our particular thanks to Phillip Cardon for the comprehensive
+   way in which he did his part in the beta testing.
+
+   And of course we thank the authors of the many utilities we used
+   to produce Reclamation.  Without you the DOOM-editing environment
+   would just suck.  
+
+------------------
+8. SOME LEGALITIES
+------------------
+
+   Reclamation is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Reclamation.
+   Reclamation should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's DM collection or CD.  If it does, let us know right
+   away.  We are serious about the CD thing--no commercial
+   compilations are allowed to include any TeamTNT products under
+   any circumstances, even if they delete this text file...
+
+   We thank you for trying Reclamation.  Let us know what you think
+   about it.  Keep checking our web page for other team products--we're 
+   still churning stuff out.
+
+   Reclamation and associated files are
+   (C) Copyright 1999 TeamTNT
+
+///End of file

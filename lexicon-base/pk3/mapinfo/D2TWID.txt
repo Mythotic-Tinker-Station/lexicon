@@ -1,0 +1,307 @@
+// Doom 2 The Way id Did Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	specialaction = "Cyberdemon", "Door_Open", 666, 16
+}
+
+map D2WD01 "Loading Bay"
+{
+	titlepatch = "D2WDV00"
+	next = "D2WD02"
+	secretnext = "D2WD02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map D2WD02 "The Compound"
+{
+	titlepatch = "D2WDV01"
+	next = "D2WD03"
+	secretnext = "D2WD33"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map D2WD03 "Water Main"
+{
+	titlepatch = "D2WDV02"
+	next = "D2WD04"
+	secretnext = "D2WD04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map D2WD04 "The Siltyards"
+{
+	titlepatch = "D2WDV03"
+	next = "D2WD05"
+	secretnext = "D2WD05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map D2WD05 "The Boiler"
+{
+	titlepatch = "D2WDV04"
+	next = "D2WD06"
+	secretnext = "D2WD06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map D2WD06 "The Gorge"
+{
+	titlepatch = "D2WDV05"
+	next = "D2WD07"
+	secretnext = "D2WD07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map D2WD07 "Counterpoint"
+{
+	titlepatch = "D2WDV06"
+	next = "D2WD08"
+	secretnext = "D2WD08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map D2WD08 "Starstruct, Inc."
+{
+	titlepatch = "D2WDV07"
+	next = "D2WD09"
+	secretnext = "D2WD09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map D2WD09 "The Gambit"
+{
+	titlepatch = "D2WDV08"
+	next = "D2WD10"
+	secretnext = "D2WD10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}
+
+map D2WD10 "Reservoirs"
+{
+	titlepatch = "D2WDV09"
+	next = "D2WD11"
+	secretnext = "D2WD11"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+}
+
+map D2WD11 "The Garrison"
+{
+	titlepatch = "D2WDV10"
+	next = "D2WD12"
+	secretnext = "D2WD12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+}
+
+map D2WD12 "The Shipyard"
+{
+	titlepatch = "D2WDV11"
+	next = "D2WD13"
+	secretnext = "D2WD13"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+}
+
+map D2WD13 "The Wharf"
+{
+	titlepatch = "D2WDV12"
+	next = "D2WD14"
+	secretnext = "D2WD14"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+}
+
+map D2WD14 "Flooded Library"
+{
+	titlepatch = "D2WDV13"
+	next = "D2WD15"
+	secretnext = "D2WD15"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+}
+
+map D2WD15 "The Causeway"
+{
+	titlepatch = "D2WDV14"
+	next = "D2WD16"
+	secretnext = "D2WD31"
+	sky1 = "SKY2"
+	music = "D_D2WD15"
+}
+
+map D2WD16 "Cul-de-sac"
+{
+	titlepatch = "D2WDV15"
+	next = "D2WD17"
+	secretnext = "D2WD17"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+}
+
+map D2WD17 "The Precinct"
+{
+	titlepatch = "D2WDV16"
+	next = "D2WD18"
+	secretnext = "D2WD18"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+}
+
+map D2WD18 "The Sanctum"
+{
+	titlepatch = "D2WDV17"
+	next = "D2WD19"
+	secretnext = "D2WD19"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+}
+
+map D2WD19 "Bedlam"
+{
+	titlepatch = "D2WDV18"
+	next = "D2WD20"
+	secretnext = "D2WD20"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+}
+
+map D2WD20 "Leap of Faith"
+{
+	titlepatch = "D2WDV19"
+	next = "D2WD21"
+	secretnext = "D2WD21"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+}
+
+map D2WD21 "Passage to Exile"
+{
+	titlepatch = "D2WDV20"
+	next = "D2WD22"
+	secretnext = "D2WD22"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+}
+
+map D2WD22 "Borderlands"
+{
+	titlepatch = "D2WDV21"
+	next = "D2WD23"
+	secretnext = "D2WD23"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+}
+
+map D2WD23 "The Crucible"
+{
+	titlepatch = "D2WDV22"
+	next = "D2WD24"
+	secretnext = "D2WD24"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+}
+
+map D2WD24 "Crushed Spirits"
+{
+	titlepatch = "D2WDV23"
+	next = "D2WD25"
+	secretnext = "D2WD25"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+}
+
+map D2WD25 "Dead Sea"
+{
+	titlepatch = "D2WDV24"
+	next = "D2WD26"
+	secretnext = "D2WD26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+}
+
+map D2WD26 "Damned Strait!"
+{
+	titlepatch = "D2WDV25"
+	next = "D2WD27"
+	secretnext = "D2WD27"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+}
+
+map D2WD27 "The Bloodwash"
+{
+	titlepatch = "D2WDV26"
+	next = "D2WD28"
+	secretnext = "D2WD28"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMER2"
+}
+
+map D2WD28 "Abyss"
+{
+	titlepatch = "D2WDV27"
+	next = "D2WD29"
+	secretnext = "D2WD29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+}
+
+map D2WD29 "The Mortal Coil"
+{
+	titlepatch = "D2WDV28"
+	next = "D2WD30"
+	secretnext = "D2WD30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+}
+
+map D2WD30 "Hell on Earth"
+{
+	titlepatch = "D2WDV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	allowmonstertelefrags
+}
+
+map D2WD31 "Vorticon"
+{
+	titlepatch = "D2WDV30"
+	next = "D2WD16"
+	secretnext = "D2WD32"
+	sky1 = "SKY3"
+	music = "D_D2WD31"
+}
+
+map D2WD32 "Well of Wishes"
+{
+	titlepatch = "D2WDV31"
+	next = "D2WD16"
+	secretnext = "D2WD16"
+	sky1 = "SKY3"
+	music = "D_D2WD32"
+}
+
+map D2WD33 "Hexsoil"
+{
+	titlepatch = "D2WDV32"
+	next = "D2WD03"
+	secretnext = "D2WD03"
+	sky1 = "SKY3"
+	music = "$MUSIC_READ_M"
+}

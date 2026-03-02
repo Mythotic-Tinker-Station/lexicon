@@ -1,0 +1,297 @@
+// Estranged Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ESTR01 "Outpost"
+{
+	titlepatch = "ESTRV00"
+	next = "ESTR02"
+	secretnext = "ESTR02"
+	sky1 = "ESTR0230"
+	music = "$MUSIC_RUNNIN"
+}
+
+map ESTR02 "Waste Treatment"
+{
+	titlepatch = "ESTRV01"
+	next = "ESTR03"
+	secretnext = "ESTR03"
+	sky1 = "ESTR0230"
+	music = "D_ESTR02"
+}
+
+map ESTR03 "Survey Centre"
+{
+	titlepatch = "ESTRV02"
+	next = "ESTR04"
+	secretnext = "ESTR04"
+	sky1 = "ESTR0230"
+	music = "D_ESTR03"
+}
+
+map ESTR04 "Venom"
+{
+	titlepatch = "ESTRV03"
+	next = "ESTR05"
+	secretnext = "ESTR05"
+	sky1 = "ESTR0230"
+	music = "D_ESTR04"
+}
+
+map ESTR05 "Dust N' Bones"
+{
+	titlepatch = "ESTRV04"
+	next = "ESTR06"
+	secretnext = "ESTR06"
+	sky1 = "ESTR0230"
+	music = "D_ESTR05"
+}
+
+map ESTR06 "Razor"
+{
+	titlepatch = "ESTRV05"
+	next = "ESTR07"
+	secretnext = "ESTR07"
+	sky1 = "ESTR0230"
+	music = "D_ESTR06"
+}
+
+map ESTR07 "Scream"
+{
+	titlepatch = "ESTRV06"
+	next = "ESTR08"
+	secretnext = "ESTR08"
+	sky1 = "ESTR0230"
+	music = "D_ESTR07"
+	Map07Special
+}
+
+map ESTR08 "Reptile"
+{
+	titlepatch = "ESTRV07"
+	next = "ESTR09"
+	secretnext = "ESTR09"
+	sky1 = "ESTR0230"
+	music = "D_ESTR08"
+}
+
+map ESTR09 "Torture Chambers"
+{
+	titlepatch = "ESTRV08"
+	next = "ESTR10"
+	secretnext = "ESTR10"
+	sky1 = "ESTR0230"
+	music = "D_ESTR09"
+}
+
+map ESTR10 "Deadlands"
+{
+	titlepatch = "ESTRV09"
+	next = "ESTR11"
+	secretnext = "ESTR11"
+	sky1 = "ESTR0230"
+	music = "D_ESTR10"
+}
+
+map ESTR11 "Barren Keep"
+{
+	titlepatch = "ESTRV10"
+	next = "ESTR12"
+	secretnext = "ESTR12"
+	sky1 = "ESTR0230"
+	music = "D_ESTR11"
+}
+
+map ESTR12 "Dig Site"
+{
+	titlepatch = "ESTRV11"
+	next = "ESTR13"
+	secretnext = "ESTR13"
+	sky1 = "ESTR0231"
+	music = "D_ESTR12"
+}
+
+map ESTR13 "Dark Heart"
+{
+	titlepatch = "ESTRV12"
+	next = "ESTR14"
+	secretnext = "ESTR14"
+	sky1 = "ESTR0231"
+	music = "D_ESTR13"
+}
+
+map ESTR14 "Fissure"
+{
+	titlepatch = "ESTRV13"
+	next = "ESTR15"
+	secretnext = "ESTR15"
+	sky1 = "ESTR0231"
+	music = "$MUSIC_DDTBL2"
+}
+
+map ESTR15 "The Floating Fortress"
+{
+	titlepatch = "ESTRV14"
+	next = "ESTR16"
+	secretnext = "ESTR31"
+	sky1 = "ESTR0231"
+	music = "D_ESTR15"
+}
+
+map ESTR16 "Battle Room"
+{
+	titlepatch = "ESTRV15"
+	next = "ESTR17"
+	secretnext = "ESTR17"
+	sky1 = "ESTR0231"
+	music = "$MUSIC_DEAD2"
+}
+
+map ESTR17 "Twisted Realms"
+{
+	titlepatch = "ESTRV16"
+	next = "ESTR18"
+	secretnext = "ESTR18"
+	sky1 = "ESTR0231"
+	music = "D_ESTR17"
+}
+
+map ESTR18 "Crater"
+{
+	titlepatch = "ESTRV17"
+	next = "ESTR19"
+	secretnext = "ESTR19"
+	sky1 = "ESTR0231"
+	music = "$MUSIC_ROMERO"
+}
+
+map ESTR19 "Haunted Mines"
+{
+	titlepatch = "ESTRV18"
+	next = "ESTR20"
+	secretnext = "ESTR20"
+	sky1 = "ESTR0231"
+	music = "D_ESTR19"
+}
+
+map ESTR20 "The Rift"
+{
+	titlepatch = "ESTRV19"
+	next = "ESTR21"
+	secretnext = "ESTR21"
+	sky1 = "ESTR0231"
+	music = "D_ESTR20"
+}
+
+map ESTR21 "Hell Hole"
+{
+	titlepatch = "ESTRV20"
+	next = "ESTR22"
+	secretnext = "ESTR22"
+	sky1 = "ESTR0505"
+	music = "$MUSIC_COUNT2"
+}
+
+map ESTR22 "The Bloodworks"
+{
+	titlepatch = "ESTRV21"
+	next = "ESTR23"
+	secretnext = "ESTR23"
+	sky1 = "ESTR0505"
+	music = "D_ESTR22"
+}
+
+map ESTR23 "Eye of Misery"
+{
+	titlepatch = "ESTRV22"
+	next = "ESTR24"
+	secretnext = "ESTR24"
+	sky1 = "ESTR0505"
+	music = "D_ESTR23"
+}
+
+map ESTR24 "Scorching Back"
+{
+	titlepatch = "ESTRV23"
+	next = "ESTR25"
+	secretnext = "ESTR25"
+	sky1 = "ESTR0505"
+	music = "D_ESTR24"
+}
+
+map ESTR25 "The Depths"
+{
+	titlepatch = "ESTRV24"
+	next = "ESTR26"
+	secretnext = "ESTR26"
+	sky1 = "ESTR0505"
+	music = "D_ESTR25"
+}
+
+map ESTR26 "Valley of Defilement"
+{
+	titlepatch = "ESTRV25"
+	next = "ESTR27"
+	secretnext = "ESTR27"
+	sky1 = "ESTR0505"
+	music = "D_ESTR26"
+}
+
+map ESTR27 "Flame Peak"
+{
+	titlepatch = "ESTRV26"
+	next = "ESTR28"
+	secretnext = "ESTR28"
+	sky1 = "ESTR0505"
+	music = "D_ESTR27"
+}
+
+map ESTR28 "Astral Plane"
+{
+	titlepatch = "ESTRV27"
+	next = "ESTR29"
+	secretnext = "ESTR29"
+	sky1 = "ESTR0505"
+	music = "D_ESTR28"
+}
+
+map ESTR29 "Sheol"
+{
+	titlepatch = "ESTRV28"
+	next = "ESTR30"
+	secretnext = "ESTR30"
+	sky1 = "ESTR0505"
+	music = "D_ESTR29"
+}
+
+map ESTR30 "Chimes at Midnight"
+{
+	titlepatch = "ESTRV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ESTR0505"
+	music = "D_ESTR30"
+	allowmonstertelefrags
+}
+
+map ESTR31 "The Tomb"
+{
+	titlepatch = "ESTRV30"
+	next = "ESTR16"
+	secretnext = "ESTR32"
+	sky1 = "ESTR0505"
+	music = "D_ESTR31"
+}
+
+map ESTR32 "Void Walker"
+{
+	titlepatch = "ESTRV31"
+	next = "ESTR16"
+	secretnext = "ESTR16"
+	sky1 = "ESTR0505"
+	music = "D_ESTR32"
+}

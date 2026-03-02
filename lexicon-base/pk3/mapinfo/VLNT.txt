@@ -1,0 +1,337 @@
+defaultmap
+{
+	InterMusic = "D_VLNTIN"
+	ExitPic = "VLNTINT"
+	EnterPic = "VLNTINT"
+	NoJump
+	NoCrouch
+	Sky1 = "VLNT2923"
+}
+
+/*
+clusterdef 1
+{
+	ExitText = "E1TEXT"
+	Music = "D_VLNTRD"
+	Pic = "VLNTE1PI"
+}
+
+clusterdef 2
+{
+	ExitText = "E2TEXT"
+	Music = "D_VLNTRD"
+	Pic = "VLNTE2PI"
+}
+
+clusterdef 3
+{
+	ExitText = "E3TEXT"
+	Music = "D_VLNTRD"
+	Pic = "VLNTE3PI"
+}
+
+clusterdef 4
+{
+	ExitText = "E4TEXT"
+	Music = "D_VLNTRD"
+	Pic = "VLNTE4PI"
+}
+
+clusterdef 5
+{
+	ExitText = "E5TEXT"
+	Music = "D_VLNTRD"
+	Pic = "VLNTBOSS"
+}
+*/
+
+map VLNT01 "Bad Reception"
+{
+	TitlePatch = "VLNTV00"
+	Next = "VLNT02"
+	Music = "D_VLNT01"
+	Par = 230
+// 	Cluster = 1
+}
+
+map VLNT02 "No Rush"
+{
+	TitlePatch = "VLNTV01"
+	Next = "VLNT03"
+	Music = "D_VLNT02"
+	Par = 105
+// 	Cluster = 1
+}
+
+map VLNT03 "Tiers of Pain"
+{
+	TitlePatch = "VLNTV02"
+	Next = "VLNT04"
+	Music = "D_VLNT03"
+	Par = 60
+// 	Cluster = 1
+}
+
+map VLNT04 "Moonlit Stroll"
+{
+	TitlePatch = "VLNTV03"
+	Next = "VLNT05"
+	Music = "D_VLNT04"
+	Par = 270
+// 	Cluster = 1
+}
+
+map VLNT05 "Aggrovator"
+{
+	TitlePatch = "VLNTV04"
+	Next = "VLNT06"
+	Music = "D_VLNT05"
+	Par = 240
+// 	Cluster = 1
+}
+
+map VLNT06 "Engineering Disaster"
+{
+	TitlePatch = "VLNTV05"
+	Next = "VLNT07"
+	Music = "D_VLNT06"
+	Par = 330
+// 	Cluster = 1
+}
+
+map VLNT07 "The Mancubian Candidate"
+{
+	TitlePatch = "VLNTV06"
+	Next = "VLNT08"
+	Map07Special
+	Music = "D_VLNT07"
+	Par = 240
+// 	Cluster = 1
+}
+
+map VLNT08 "Bushwhacked"
+{
+	TitlePatch = "VLNTV07"
+	Next = "VLNT09"
+	Music = "D_VLNT08"
+	Par = 300
+// 	Cluster = 2
+}
+
+map VLNT09 "14 Angrier Archviles"
+{
+	TitlePatch = "VLNTV08"
+	Next = "VLNT10"
+	Music = "D_VLNT09"
+	Par = 450
+// 	Cluster = 2
+}
+
+map VLNT10 "Candlecove"
+{
+	TitlePatch = "VLNTV09"
+	Next = "VLNT11"
+	Music = "D_VLNT10"
+	Par = 540
+// 	Cluster = 2
+}
+
+map VLNT11 "Yesterday's Insanity"
+{
+	TitlePatch = "VLNTV10"
+	Next = "VLNT12"
+	Music = "D_VLNT11"
+	Par = 270
+// 	Cluster = 2
+}
+
+map VLNT12 "Bane Capitol"
+{
+	TitlePatch = "VLNTV11"
+	Next = "VLNT13"
+	Music = "D_VLNT12"
+	Par = 330
+// 	Cluster = 2
+}
+
+map VLNT13 "The Netweaver"
+{
+	TitlePatch = "VLNTV12"
+	Next = "VLNT14"
+	Music = "D_VLNT13"
+	Par = 540
+// 	Cluster = 2
+}
+
+map VLNT14 "Implosion"
+{
+	TitlePatch = "VLNTV13"
+	Next = "VLNT15"
+	Music = "D_VLNT14"
+	Par = 330
+// 	Cluster = 3
+}
+
+map VLNT15 "Screams aren't a crime... yet"
+{
+	TitlePatch = "VLNTV14"
+	Next = "VLNT16"
+	SecretNext = "VLNT31"
+	Music = "D_VLNT15"
+	Par = 600
+// 	Cluster = 3
+}
+
+map VLNT16 "Toxic Traverse"
+{
+	TitlePatch = "VLNTV15"
+	Next = "VLNT17"
+	Music = "D_VLNT16"
+	Par = 390
+// 	Cluster = 3
+}
+
+map VLNT17 "Precipice"
+{
+	TitlePatch = "VLNTV16"
+	Next = "VLNT18"
+	Music = "D_VLNT17"
+	Par = 540
+// 	Cluster = 3
+}
+
+map VLNT18 "Crush Depth"
+{
+	TitlePatch = "VLNTV17"
+	Next = "VLNT19"
+	Music = "D_VLNT18"
+	Par = 510
+// 	Cluster = 3
+}
+
+map VLNT19 "The Popes of Roam"
+{
+	TitlePatch = "VLNTV18"
+	Next = "VLNT20"
+	Music = "D_VLNT19"
+	Par = 120
+// 	Cluster = 4
+}
+
+map VLNT20 "Swept Into Immolation"
+{
+	TitlePatch = "VLNTV19"
+	Next = "VLNT21"
+	Music = "D_VLNT20"
+	Par = 480
+// 	Cluster = 4
+}
+
+map VLNT21 "Skindustrial Zone"
+{
+	TitlePatch = "VLNTV20"
+	Next = "VLNT22"
+	Music = "D_VLNT21"
+	Par = 420
+// 	Cluster = 4
+}
+
+map VLNT22 "Spiraling Into Nether"
+{
+	TitlePatch = "VLNTV21"
+	Next = "VLNT23"
+	Music = "D_VLNT22"
+	Par = 330
+// 	Cluster = 4
+}
+
+map VLNT23 "Genocide Motor"
+{
+	TitlePatch = "VLNTV22"
+	Next = "VLNT24"
+	Music = "D_VLNT23"
+	Par = 540
+// 	Cluster = 4
+}
+
+map VLNT24 "None More Merciless"
+{
+	TitlePatch = "VLNTV23"
+	Next = "VLNT25"
+	Music = "D_VLNT24"
+	Par = 660
+// 	Cluster = 4
+}
+
+map VLNT25 "The Eagle Has Landed"
+{
+	TitlePatch = "VLNTV24"
+	Next = "VLNT26"
+	Music = "D_VLNT25"
+	Par = 270
+// 	Cluster = 5
+}
+
+map VLNT26 "Blast Wave"
+{
+	TitlePatch = "VLNTV25"
+	Next = "VLNT27"
+	Music = "D_VLNT26"
+	Par = 360
+// 	Cluster = 5
+}
+
+map VLNT27 "Rocket Zone II"
+{
+	TitlePatch = "VLNTV26"
+	Next = "VLNT28"
+	Music = "D_VLNT27"
+	Par = 900
+// 	Cluster = 5
+}
+
+map VLNT28 "A Lightbridge Too Far"
+{
+	TitlePatch = "VLNTV27"
+	Next = "VLNT29"
+	Music = "D_VLNT28"
+	Par = 900
+// 	Cluster = 5
+}
+
+map VLNT29 "Red Shift"
+{
+	TitlePatch = "VLNTV28"
+	Next = "VLNT30"
+	Music = "D_VLNT29"
+	Par = 480
+// 	Cluster = 5
+}
+
+map VLNT30 "Electric Nightmare"
+{
+	TitlePatch = "VLNTV29"
+	next = "VR"
+	Music = "D_VLNT30"
+	Par = 360
+// 	Cluster = 5
+}
+
+map VLNT31 "Cyberwar 7734"
+{
+	TitlePatch = "VLNTV30"
+	Next = "VLNT16"
+	SecretNext = "VLNT32"
+	Music = "D_VLNT31"
+	Par = 1200
+// 	Cluster = 3
+}
+
+map VLNT32 "The Ghosts of the Old Kingdom"
+{
+	TitlePatch = "VLNTV31"
+	Next = "VLNT16"
+	Music = "D_VLNT32"
+	Par = 360
+// 	Cluster = 3
+}

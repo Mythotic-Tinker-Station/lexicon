@@ -1,0 +1,118 @@
+// Last Day on Earth Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map LDOE01 "underground base"
+{
+	titlepatch = "LDOEV00"
+	next = "LDOE02"
+	secretnext = "LDOE02"
+	sky1 = "LDOE0026"
+	music = "D_LDOE01"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE02 "experimental lab"
+{
+	titlepatch = "LDOEV01"
+	next = "LDOE03"
+	secretnext = "LDOE03"
+	sky1 = "LDOE0026"
+	music = "D_LDOE02"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE03 "water plant"
+{
+	titlepatch = "LDOEV02"
+	next = "LDOE04"
+	secretnext = "LDOE04"
+	sky1 = "LDOE0026"
+	music = "D_LDOE03"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE04 "shotgun factory"
+{
+	titlepatch = "LDOEV03"
+	next = "LDOE05"
+	secretnext = "LDOE05"
+	sky1 = "LDOE0026"
+	music = "D_LDOE04"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE05 "the jail"
+{
+	titlepatch = "LDOEV04"
+	next = "LDOE06"
+	secretnext = "LDOE06"
+	sky1 = "LDOE0026"
+	music = "D_LDOE05"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE06 "uac centre"
+{
+	titlepatch = "LDOEV05"
+	next = "LDOE07"
+	secretnext = "LDOE07"
+	sky1 = "LDOE0026"
+	music = "D_LDOE06"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE07 "inmost mines"
+{
+	titlepatch = "LDOEV06"
+	next = "LDOE08"
+	secretnext = "LDOE08"
+	sky1 = "LDOE0026"
+	music = "D_LDOE07"
+	intermusic = "D_LDOEIN"
+	Map07Special
+}
+
+map LDOE08 "military station"
+{
+	titlepatch = "LDOEV07"
+	next = "LDOE09"
+	secretnext = "LDOE09"
+	sky1 = "LDOE0026"
+	music = "D_LDOE08"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE09 "medical facility"
+{
+	titlepatch = "LDOEV08"
+	next = "LDOE10"
+	secretnext = "LDOE10"
+	sky1 = "LDOE0026"
+	music = "D_LDOE09"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE10 "uac tower"
+{
+	titlepatch = "LDOEV09"
+	next = "LDOE11"
+	secretnext = "LDOE11"
+	sky1 = "LDOE0026"
+	music = "D_LDOE10"
+	intermusic = "D_LDOEIN"
+}
+
+map LDOE11 "the door"
+{
+	titlepatch = "LDOEV10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "LDOE0026"
+	music = "D_LDOE11"
+	intermusic = "D_LDOEIN"
+}

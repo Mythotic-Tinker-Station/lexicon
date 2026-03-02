@@ -1,0 +1,281 @@
+===========================================================================
+Archive Maintainer      : Please place in levels/doom2/ports/megawads
+Advanced engine needed  : Zandronum or ZDaemon
+Primary purpose         : Deathmatch
+===========================================================================
+Title                   : Countergoat Initiative
+Filename                : CGI1.zip
+Author                  : Team Countergoat Initiative
+Email Address           : aclonedpickle@gmail.com
+Other Files By Author   : Various
+Misc. Author Info       : Do not be fooled by the goats. They are dangerous,
+                          they are cunning, they are sneaky, and they want us
+                          all dead. Prepare yourself with this high-tech
+                          training simulation. The goats will strike one day,
+                          sooner than you think. Don't let them crush
+                          civilization under their dopey hooves. 
+
+Description             : CGI1 is a dueling mapset with 30 standard maps,
+                          four gimmick maps, and a hub (Zandronum only). They
+                          have been crafted and finely tuned by the best of
+                          the best in the Countergoat cause. 
+                          
+                          MAP01: Donut De-Livers
+                             by TheMionicDonut
+                             music: midi of Virtua Fighter 2 - Chicago
+                          
+                          MAP02: Mixing Bowl
+                             by ClonedPickle
+                             music: "Fold" by Mark Klem
+                          
+                          MAP03: High Fructose Corn Syruppuku
+                             by Jimmy
+                             music: "Liquid Luck" by Jimmy
+                          
+                          MAP04: Pier SR50
+                             by Alfonzo
+                             music: "Spectral Cybernetics" by Jimmy
+                          
+                          MAP05: Alfonzo Battles Genghis Khan in Old Neo
+                          Tokyo
+                             by Tarnsman
+                             music: MAP29 track from UDMX, by Ralphis
+                          
+                          MAP06: Whore Island
+                             by Alfonzo
+                             music: "Bombshell" by Jimmy
+                          
+                          MAP07: Thirteen Men All Backflipping Into a
+                          Shitstorm to Piss Off Alfonzo
+                             by Tarnsman
+                             music: "some Marvel vs Capcom theme" [thanks, Tarnsman]
+                          
+                          MAP08: Saskatoon
+                             by RottKing
+                             music: Chipp's Theme from Guilty Gear X
+                          
+                          MAP09: Jactory
+                             by jmickle
+                             music: "altazimuth" by jmickle
+                          
+                          MAP10: Tarnsman Digs a Hole to Guatemala
+                             by Jimmy
+                             music: "Minerals" by Jimmy
+                          
+                          MAP11: Alfonzo's Jungle Excursion: No Gaycaeks
+                          Allowed
+                             by Tarnsman
+                             music: a midi of "Bungle in the Jungle" by
+                          Jethro Tull
+                          
+                          MAP12: Alfonzo Battles the Golden Ninja Clan for
+                          Control of Mount Fuji
+                             by Tarnsman
+                             music: a midi of "House of the Rising Sun" by
+                          The Animals
+                          
+                          MAP13: Goat to the Choppa
+                             by Jimmy
+                             music: "Reign in Madness" by Symphony X
+                          
+                          MAP14: Blunt Force Vasectomy
+                             by ClonedPickle
+                             music: "Wrong Turn" by Jimmy
+                          
+                          MAP15: Clusterfuck Processor
+                             by Marcaek
+                             music: ??? by Jeremy Doyle (requiem map19)
+                          
+                          MAP16: Off the Rails on the AD Train
+                             by AD_79
+                             music: "Cosmic Prolapse" by Jimmy
+                          
+                          MAP17: Sandpaper Blowjob
+                             by ClonedPickle
+                             music: midi of "Preacher Man" by Fields of
+                          Nephilim
+                             (shoutout to TheGreenHerring for knowing that)
+                          
+                          MAP18: Wilhelm Academy
+                             by Alfonzo
+                             music: map28 of 32in24-10
+                          
+                          MAP19: Mambo Number 6
+                             by TheMionicDonut
+                             music: midi of "Mambo Number 5" by Lou Bega
+                          
+                          MAP20: Petersen Baekery
+                             by Marcaek
+                             music: level 17 of Descent 1
+                          
+                          MAP21: Dyslexia Station
+                             by Jimmy
+                             music: 
+                          
+                          MAP22: Pepsi Blue
+                             by Marcaek
+                             music: level 2 of Descent 1
+                          
+                          MAP23: UAC Ultra Quesadilla Explosion
+                             by TheMionicDonut
+                             music: Kraid's Theme from Metroid
+                          
+                          MAP24: The Toilet Store
+                             by TheMionicDonut
+                             music: 
+                          
+                          MAP25: Pot City
+                             by Megalyth
+                             music: "Dark Halls" by Bobby Prince
+                          
+                          MAP26: Mr. Tib's Crib
+                             by Tib
+                             music: "Run 'Em, Gun 'Em, Kill 'Em" by Jimmy
+                          
+                          MAP27: Redeemed Memories
+                             by ClonedPickle
+                             music: "The Unjolly" by Mark Klem
+                          
+                          MAP28: The Pipewall Doesn't Stop
+                             by RottKing
+                             music: Gungaroon's Theme from Mega Man X7
+                          
+                          MAP29: License to Stack
+                             by Alfonzo
+                             music: "Warehaus" from Duke Nukem 3D
+                          
+                          MAP30: License to Stack 2: Crate Expectations
+                             by Alfonzo
+                             music: MAP21 of 32in24-12
+                          
+                          ~~ gimmick map zone ~~
+                          
+                          MAP31: Angry Towers with Top Hats
+                             by Xaser
+                             music:
+                          
+                          MAP32: Alfonzo's Vacation in Peter Burns' Nightmare
+                          Funhouse
+                             by Tarnsman
+                             music: midi of "You Spin Me Round (Like a
+                          Record)" by Dead or Alive
+                          
+                          MAP90: Baratus' Freaky Fucktangle
+                             by Baratus
+                             music:
+                          
+                          MAP98: Jimmylight Projectile Hell
+                             by ClonedPickle
+                             music: midi of "Even Flow" by Pearl Jam,
+                          improved by Minigunner
+                          
+                          BUNKER: Countergoat Hub
+                             by Tarnsman
+                             music: "Rise" by Lee Jackson
+                          
+                          Intermission music: "How'd I Do?" by Lee Jackson
+
+Additional Credits to   : AlexMax for writing the initial Duel32 hub code and
+                          allowing us to shamelessly steal it!
+                          
+                          TerminusEst13 for fixing all the ACS I tried to
+                          write and ruined horribly because I am super bad at
+                          reading existing ACS code!
+                          
+                          [IFOC]75, Combinebob, and Ru5tK1ng for some initial feedback
+                          outside of the CGI team
+                          
+                          esselfortium for doing the majority of the
+                          compiling in 32in24tex.wad, which is where a lot of
+                          the textures came from. Also for pointing out how
+                          horribly broken the ANIMATED lump was
+                          
+                          Baratus (Jimmybro) for assorted graphics
+                          
+                          SomethingAwful for the smug dog emote (and the
+                          Jetsons for having it in SPACEDM5 already)
+                          
+                          Epic Games and Unidoom for the AWW SMACK sound
+                          
+                          General Sound Library (DIEHI/punch sound)
+                          
+                          The Price is Right
+                          
+                          40oz for UAC Ultra textures
+                          
+                          Nick Baker because we probably used his textures
+                          somewhere
+                          
+                          Other texture artists whose work we may have used
+
+                          DaniJ for constantly blocking talk of METADATA for lumps with irrelevant inane ramblings
+
+                          https://s3-eu-west-1.amazonaws.com/static.nextnature.net/app/uploads/2013/11/tree-dwelling-goats.jpg
+
+                          http://www.saltartists.com/wp-content/uploads/2014/05/goats-on-trees-in-morocco-3.jpg
+
+                          Team Batsu
+
+                          Tarnsman for the taunt sound
+                          
+===========================================================================
+* What is included *
+
+New levels              : 35
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : MAPINFO, DECORATE, etc.
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-32, MAP90, MAP98, BUNKER
+Single Player           : Player starts only
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : Designed for duels (1-on-1), can probably
+                          comfortably fit a 2-v-2 or 4p FFA on some maps.
+Difficulty Settings     : Not implemented
+
+
+* Construction *
+
+Base                    : Maps are new from scratch; hub map code is almost
+                          identical to Duel32's
+Build Time              : First saved wad I have dates back to November 22nd,
+                          2013
+Editor(s) used          : SLADE, Doom Builder 2, Paint Shop Pro 7, probably
+                          more
+Known Bugs              : None in Zandronum; MAP98 and BUNKER will crash
+                          ZDaemon and any other port that doesn't recognize
+                          UDMF. MAP03 easter egg will not show up in ZDaemon.
+                          MAP90 will display <!>s instead of slimers in
+                          ZDaemon. Odamex has all sorts of zany nonsensical
+                          bugs. Load into other source ports at your own
+                          risk.
+May Not Run With        : (G)ZDoom will crash because of a Zandronum-only MAPINFO code word.
+                          Most Boom-capable source ports should load the wad
+                          fine, but it's only recommended to use...
+Tested With             : Zandronum 2.1.2 and ZDaemon 1.10
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of their
+resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have received
+permission from the original authors of any modified or included content in
+this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

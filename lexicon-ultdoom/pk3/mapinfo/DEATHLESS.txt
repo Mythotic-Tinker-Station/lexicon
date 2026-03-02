@@ -1,0 +1,417 @@
+// Deathless Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DTHLE1M1 "Contagion"
+{
+	titlepatch = "DTHLV00"
+	next = "DTHLE1M2"
+	secretnext = "DTHLE1M2"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M1"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M2 "Laid to Rust"
+{
+	titlepatch = "DTHLV01"
+	next = "DTHLE1M3"
+	secretnext = "DTHLE1M3"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M2"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M3 "Sluice Gate"
+{
+	titlepatch = "DTHLV02"
+	next = "DTHLE1M4"
+	secretnext = "DTHLE1M9"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M3"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M4 "Underflow"
+{
+	titlepatch = "DTHLV03"
+	next = "DTHLE1M5"
+	secretnext = "DTHLE1M5"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M4"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M5 "Outage"
+{
+	titlepatch = "DTHLV04"
+	next = "DTHLE1M6"
+	secretnext = "DTHLE1M6"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M5"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M6 "Burial Ground"
+{
+	titlepatch = "DTHLV05"
+	next = "DTHLE1M7"
+	secretnext = "DTHLE1M7"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M6"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M7 "Mainstay"
+{
+	titlepatch = "DTHLV06"
+	next = "DTHLE1M8"
+	secretnext = "DTHLE1M8"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M7"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE1M8 "Embolon"
+{
+	titlepatch = "DTHLV07"
+	next = "DTHLE2M1"
+	secretnext = "DTHLE2M1"
+	sky1 = "DTHL0200"
+	music = "$MUSIC_E1M8"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map DTHLE1M9 "Gods"
+{
+	titlepatch = "DTHLV08"
+	next = "DTHLE1M4"
+	secretnext = "DTHLE1M4"
+	sky1 = "DTHL0200"
+	music = "D_DTHL01"
+	ExitPic = "DTHLINT1"
+	EnterPic = "DTHLINT1"
+}
+
+map DTHLE2M1 "Hydroelectrics"
+{
+	titlepatch = "DTHLV09"
+	next = "DTHLE2M2"
+	secretnext = "DTHLE2M2"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M1"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M2 "Snake Alley"
+{
+	titlepatch = "DTHLV10"
+	next = "DTHLE2M3"
+	secretnext = "DTHLE2M3"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M2"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M3 "Greenhouse"
+{
+	titlepatch = "DTHLV11"
+	next = "DTHLE2M4"
+	secretnext = "DTHLE2M4"
+	sky1 = "DTHL0201"
+	music = "D_DTHL02"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M4 "Virulent"
+{
+	titlepatch = "DTHLV12"
+	next = "DTHLE2M5"
+	secretnext = "DTHLE2M5"
+	sky1 = "DTHL0201"
+	music = "D_DTHL03"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M5 "Repugnant Gardens"
+{
+	titlepatch = "DTHLV13"
+	next = "DTHLE2M6"
+	secretnext = "DTHLE2M9"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M5"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M6 "The Mad Mistress"
+{
+	titlepatch = "DTHLV14"
+	next = "DTHLE2M7"
+	secretnext = "DTHLE2M7"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M6"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M7 "City of Coal"
+{
+	titlepatch = "DTHLV15"
+	next = "DTHLE2M8"
+	secretnext = "DTHLE2M8"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M7"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE2M8 "Dukes"
+{
+	titlepatch = "DTHLV16"
+	next = "DTHLE3M1"
+	secretnext = "DTHLE3M1"
+	sky1 = "DTHL0201"
+	music = "$MUSIC_E2M8"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map DTHLE2M9 "Slain"
+{
+	titlepatch = "DTHLV17"
+	next = "DTHLE2M6"
+	secretnext = "DTHLE2M6"
+	sky1 = "DTHL0201"
+	music = "D_DTHL04"
+	ExitPic = "DTHLINT2"
+	EnterPic = "DTHLINT2"
+}
+
+map DTHLE3M1 "Open Wound"
+{
+	titlepatch = "DTHLV18"
+	next = "DTHLE3M2"
+	secretnext = "DTHLE3M2"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M1"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M2 "Salted Earth"
+{
+	titlepatch = "DTHLV19"
+	next = "DTHLE3M3"
+	secretnext = "DTHLE3M3"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M2"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M3 "Forlorn Morgue"
+{
+	titlepatch = "DTHLV20"
+	next = "DTHLE3M4"
+	secretnext = "DTHLE3M4"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M3"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M4 "Vestibule"
+{
+	titlepatch = "DTHLV21"
+	next = "DTHLE3M5"
+	secretnext = "DTHLE3M5"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M4"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M5 "Soul Drinker"
+{
+	titlepatch = "DTHLV22"
+	next = "DTHLE3M6"
+	secretnext = "DTHLE3M6"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M5"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M6 "Dire Prayers"
+{
+	titlepatch = "DTHLV23"
+	next = "DTHLE3M7"
+	secretnext = "DTHLE3M9"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M6"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M7 "Wormwood Cathedral"
+{
+	titlepatch = "DTHLV24"
+	next = "DTHLE3M8"
+	secretnext = "DTHLE3M8"
+	sky1 = "DTHL0202"
+	music = "D_DTHL05"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE3M8 "Ire"
+{
+	titlepatch = "DTHLV25"
+	next = "DTHLE4M1"
+	secretnext = "DTHLE4M1"
+	sky1 = "DTHL0202"
+	music = "$MUSIC_E3M8"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map DTHLE3M9 "The Wastes"
+{
+	titlepatch = "DTHLV26"
+	next = "DTHLE3M7"
+	secretnext = "DTHLE3M7"
+	sky1 = "DTHL0202"
+	music = "D_DTHL06"
+	ExitPic = "DTHLINT3"
+	EnterPic = "DTHLINT3"
+}
+
+map DTHLE4M1 "Inhuman Remains"
+{
+	titlepatch = "DTHLV27"
+	next = "DTHLE4M2"
+	secretnext = "DTHLE4M2"
+	sky1 = "DTHL0203"
+	music = "$MUSIC_E3M4"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M2 "Fetid Site"
+{
+	titlepatch = "DTHLV28"
+	next = "DTHLE4M3"
+	secretnext = "DTHLE4M9"
+	sky1 = "DTHL0203"
+	music = "D_DTHL07"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M3 "Corroded"
+{
+	titlepatch = "DTHLV29"
+	next = "DTHLE4M4"
+	secretnext = "DTHLE4M4"
+	sky1 = "DTHL0203"
+	music = "D_DTHL08"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M4 "Incision"
+{
+	titlepatch = "DTHLV30"
+	next = "DTHLE4M5"
+	secretnext = "DTHLE4M5"
+	sky1 = "DTHL0203"
+	music = "D_DTHL09"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M5 "Serene Shadows"
+{
+	titlepatch = "DTHLV31"
+	next = "DTHLE4M6"
+	secretnext = "DTHLE4M6"
+	sky1 = "DTHL0203"
+	music = "$MUSIC_E2M7"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M6 "Vertigo"
+{
+	titlepatch = "DTHLV32"
+	next = "DTHLE4M7"
+	secretnext = "DTHLE4M7"
+	sky1 = "DTHL0203"
+	music = "D_DTHL03"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map DTHLE4M7 "Sea of Entrails"
+{
+	titlepatch = "DTHLV33"
+	next = "DTHLE4M8"
+	secretnext = "DTHLE4M8"
+	sky1 = "DTHL0203"
+	music = "D_DTHL10"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}
+
+map DTHLE4M8 "Desecrators"
+{
+	titlepatch = "DTHLV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DTHL0203"
+	music = "D_DTHL11"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map DTHLE4M9 "Under"
+{
+	titlepatch = "DTHLV35"
+	next = "DTHLE4M3"
+	secretnext = "DTHLE4M3"
+	sky1 = "DTHL0203"
+	music = "D_DTHL12"
+	ExitPic = "DTHLINT4"
+	EnterPic = "DTHLINT4"
+}

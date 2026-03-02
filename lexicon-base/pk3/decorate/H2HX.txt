@@ -1,0 +1,257 @@
+Actor Lexicon_H2HX_Backpack : Backpack
+{
+	States
+	{
+	Spawn:
+		LX69 A -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_GibbedMarineExtra : GibbedMarineExtra
+{
+	States
+	{
+	Spawn:
+		LX69 B -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_DeadMarine : DeadMarine
+{
+	States
+	{
+	Spawn:
+		LX69 C -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_CellPack : CellPack
+{
+	States
+	{
+	Spawn:
+		LX69 D -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_LiveStick : LiveStick
+{
+	States
+	{
+	Spawn:
+		LX69 E 6
+		LX69 F 8
+		Loop
+	}
+}
+
+Actor Lexicon_H2HX_TorchTree : TorchTree
+{
+	States
+	{
+	Spawn:
+		LX69 G -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Stalagtite : Stalagtite
+{
+	States
+	{
+	Spawn:
+		LX69 H -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_BigTree : BigTree
+{
+	States
+	{
+	Spawn:
+		LX69 F -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Clip : Clip
+{
+	States
+	{
+	Spawn:
+		LX69 J -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Shell : Shell
+{
+	States
+	{
+	Spawn:
+		LX69 K -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_RocketAmmo : RocketAmmo
+{
+	States
+	{
+	Spawn:
+		LX69 L -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Stimpack : Stimpack
+{
+	States
+	{
+	Spawn:
+		LX69 M -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Medikit : Medikit
+{
+	States
+	{
+	Spawn:
+		LX69 N -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_HealthBonus : HealthBonus
+{
+	States
+	{
+	Spawn:
+		LX69 OPQRQP 6
+		Loop
+	}
+}
+
+Actor Lexicon_H2HX_ArmorBonus : ArmorBonus
+{
+	States
+	{
+	Spawn:
+		LX69 STUVUT 6
+		loop
+	}
+}
+
+Actor Lexicon_H2HX_GreenArmor : GreenArmor
+{
+	States
+	{
+	Spawn:
+		LX69 W 6
+		LX69 X 7 bright
+		loop
+	}
+}
+
+Actor Lexicon_H2HX_BlueArmor : BlueArmor
+{
+	States
+	{
+	Spawn:
+		LX69 Y 6
+		LX69 Z 6 bright
+		loop
+	}
+}
+
+Actor Lexicon_H2HX_Berserk : Berserk
+{
+	States
+	{
+	Spawn:
+		LX69 "[" -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_RadSuit : RadSuit
+{
+	States
+	{
+	Spawn:
+		LX69 "\" -1 Bright
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_AllMap : AllMap
+{
+	States
+	{
+	Spawn:
+		LX70 ABCDCB 6 Bright
+		Loop
+	}
+}
+
+Actor Lexicon_H2HX_RocketBox : RocketBox
+{
+	States
+	{
+	Spawn:
+		LX69 "]" -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Cell : Cell
+{
+	States
+	{
+	Spawn:
+		LX70 E -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_ClipBox : ClipBox
+{
+	States
+	{
+	Spawn:
+		LX70 F -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_ShellBox : ShellBox
+{
+	States
+	{
+	Spawn:
+		LX70 G -1
+		Stop
+	}
+}
+
+Actor Lexicon_H2HX_Zombieman : Zombieman { DropItem "Lexicon_H2HX_Clip" }
+
+Actor Lexicon_H2HX_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_BrainAwake
+		SSWV A 150 A_BrainSpit("Lexicon_H2HX_SpawnShot")
+		Wait
+	}
+}
+
+Actor Lexicon_H2HX_SpawnShot : SpawnShot { SeeSound "H2HX/DSBOSPIT" }

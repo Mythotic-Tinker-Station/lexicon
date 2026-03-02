@@ -1,0 +1,164 @@
+// Vanguard Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map VNGD01 "Overgrown Sepulcher"
+{
+	titlepatch = "VNGDV00"
+	next = "VNGD02"
+	secretnext = "VNGD02"
+	sky1 = "SKY1"
+	music = "D_VNGD01"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD02 "Drowned Shrine"
+{
+	titlepatch = "VNGDV01"
+	next = "VNGD03"
+	secretnext = "VNGD03"
+	sky1 = "SKY1"
+	music = "D_VNGD02"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD03 "13 Angry Archviles"
+{
+	titlepatch = "VNGDV02"
+	next = "VNGD04"
+	secretnext = "VNGD04"
+	sky1 = "SKY1"
+	music = "D_VNGD03"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD04 "Hangman's Paradise"
+{
+	titlepatch = "VNGDV03"
+	next = "VNGD05"
+	secretnext = "VNGD05"
+	sky1 = "SKY1"
+	music = "D_VNGD04"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD05 "Forgotten Village"
+{
+	titlepatch = "VNGDV04"
+	next = "VNGD06"
+	secretnext = "VNGD06"
+	sky1 = "SKY1"
+	music = "D_VNGD05"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD06 "Punchline"
+{
+	titlepatch = "VNGDV05"
+	next = "VNGD07"
+	secretnext = "VNGD07"
+	sky1 = "SKY1"
+	music = "D_VNGD06"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD07 "Dead Symmetrical"
+{
+	titlepatch = "VNGDV06"
+	next = "VNGD08"
+	secretnext = "VNGD08"
+	sky1 = "SKY1"
+	music = "D_VNGD07"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+	Map07Special
+}
+
+map VNGD08 "Cratastrophe"
+{
+	titlepatch = "VNGDV07"
+	next = "VNGD09"
+	secretnext = "VNGD09"
+	sky1 = "SKY1"
+	music = "D_VNGD08"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD09 "Free Parking"
+{
+	titlepatch = "VNGDV08"
+	next = "VNGD10"
+	secretnext = "VNGD10"
+	sky1 = "SKY1"
+	music = "D_VNGD09"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD10 "Superstructure"
+{
+	titlepatch = "VNGDV09"
+	next = "VNGD11"
+	secretnext = "VNGD11"
+	sky1 = "SKY1"
+	music = "D_VNGD10"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD11 "Temple of Asmodeus"
+{
+	titlepatch = "VNGDV10"
+	next = "VNGD12"
+	secretnext = "VNGD12"
+	sky1 = "SKY1"
+	music = "D_VNGD11"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD12 "Infernal Chasm"
+{
+	titlepatch = "VNGDV11"
+	next = "VNGD13"
+	secretnext = "VNGD13"
+	sky1 = "SKY2"
+	music = "D_VNGD12"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}
+
+map VNGD13 "Punch-Out"
+{
+	titlepatch = "VNGDV12"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY2"
+	music = "D_VNGD13"
+	intermusic = "D_VNGDIN"
+	ExitPic = "VNGDINT"
+	EnterPic = "VNGDINT"
+}

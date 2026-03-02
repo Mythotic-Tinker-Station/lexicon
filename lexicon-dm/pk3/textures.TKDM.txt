@@ -1,0 +1,204 @@
+WallTexture "TKDM0037", 128, 128
+{
+	Patch "BLODRIP1", 0, 0
+	Patch "TKDM0529", 32, 0
+	Patch "TKDM0532", 48, 0
+	Patch "TKDM0540", 64, 0
+}
+
+WallTexture "TKDM0038", 128, 128
+{
+	Patch "BLODRIP2", 0, 0
+	Patch "TKDM0530", 32, 0
+	Patch "TKDM0531", 48, 0
+	Patch "TKDM0541", 64, 0
+}
+
+WallTexture "TKDM0039", 128, 128
+{
+	Patch "BLODRIP3", 0, 0
+	Patch "TKDM0531", 32, 0
+	Patch "TKDM0530", 48, 0
+	Patch "TKDM0542", 64, 0
+}
+
+WallTexture "TKDM0040", 128, 128
+{
+	Patch "BLODRIP4", 0, 0
+	Patch "TKDM0532", 32, 0
+	Patch "TKDM0529", 48, 0
+	Patch "TKDM0543", 64, 0
+}
+
+WallTexture "TKDM0088", 256, 128
+{
+	Patch "AG128_2", 0, 0
+	Patch "TKDM0580", 4, 7
+	Patch "AG128_2", 64, 0
+	Patch "TKDM0579", 68, 7
+	Patch "AG128_2", 128, 0
+	Patch "TKDM0578", 132, 7
+	Patch "AG128_2", 192, 0
+	Patch "TKDM0581", 196, 7
+}
+
+WallTexture "TKDM0090", 128, 128
+{
+	Patch "TKDM0557", 0, 0
+	Patch "COMP03_2", 32, 0
+	Patch "TKDM0556", 96, 0
+	Patch "TKDM0557", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "TKDM0556", 96, 64
+}
+
+WallTexture "TKDM0092", 256, 128
+{
+	Patch "TKDM0558", 0, 0
+	Patch "COMP03_5", 64, 0
+	Patch "COMP04_1", 128, 0
+	Patch "COMP04_2", 192, 0
+	Patch "TKDM0552", 0, 64
+	Patch "TKDM0553", 64, 64
+	Patch "TKDM0554", 128, 64
+	Patch "TKDM0555", 192, 64
+}
+
+WallTexture "TKDM0151", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "TKDM0585", 0, 0
+}
+
+WallTexture "TKDM0312", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+
+WallTexture "TKDM0321", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_6", 12, 62
+	Patch "TKDM0575", 64, 0
+}
+
+WallTexture "TKDM0338", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+
+WallTexture "TKDM0340", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+
+WallTexture "TKDM0341", 128, 128
+{
+	Patch "STONE6", 0, 0
+	Patch "SW2S0", 16, 72
+	Patch "STONE6", 64, 0
+	Patch "TKDM0573", 80, 72
+}
+
+WallTexture "TKDM0342", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+
+WallTexture "TKDM0346", 128, 128
+{
+	Patch "WOODMET1", 0, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "W108_2", 24, 52
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+	Patch "TKDM0546", 64, 0
+}
+
+WallTexture "TKDM0352", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+
+WallTexture "TKDM0361", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_5", 12, 62
+	Patch "TKDM0576", 64, 0
+}
+
+WallTexture "TKDM0378", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+
+WallTexture "TKDM0380", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "W28_5", 0, 0
+	Patch "WARNA0", 24, 73
+}
+
+WallTexture "TKDM0381", 128, 128
+{
+	Patch "STONE6", 0, 0
+	Patch "SW2S1", 16, 72
+	Patch "STONE6", 64, 0
+	Patch "TKDM0574", 80, 72
+}
+
+WallTexture "TKDM0382", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+
+WallTexture "TKDM0386", 128, 128
+{
+	Patch "WOODMET1", 0, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+	Patch "W108_3", 24, 52
+	Patch "TKDM0547", 64, 0
+}
+

@@ -1,0 +1,286 @@
+// Rise of the Triangles Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	specialaction = "Cyberdemon", "Door_Open", 666, 16
+	specialaction = "SpiderMastermind", "Door_Open", 666, 16
+}
+
+map ROTR01 "ey!"
+{
+	titlepatch = "ROTRV00"
+	next = "ROTR02"
+	secretnext = "ROTR02"
+	sky1 = "ROTR0238"
+	music = "D_ROTR01"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR02 "gas"
+{
+	titlepatch = "ROTRV01"
+	next = "ROTR03"
+	secretnext = "ROTR03"
+	sky1 = "ROTR0238"
+	music = "D_ROTR02"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR03 "zap"
+{
+	titlepatch = "ROTRV02"
+	next = "ROTR04"
+	secretnext = "ROTR04"
+	sky1 = "ROTR0238"
+	music = "D_ROTR03"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR04 "low"
+{
+	titlepatch = "ROTRV03"
+	next = "ROTR05"
+	secretnext = "ROTR05"
+	sky1 = "ROTR0238"
+	music = "D_ROTR04"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR05 "vat"
+{
+	titlepatch = "ROTRV04"
+	next = "ROTR06"
+	secretnext = "ROTR06"
+	sky1 = "ROTR0238"
+	music = "D_ROTR05"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR06 "oak"
+{
+	titlepatch = "ROTRV05"
+	next = "ROTR07"
+	secretnext = "ROTR07"
+	sky1 = "ROTR0238"
+	music = "D_ROTR06"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR07 "top"
+{
+	titlepatch = "ROTRV06"
+	next = "ROTR08"
+	secretnext = "ROTR08"
+	sky1 = "ROTR0238"
+	music = "D_ROTR07"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+	Map07Special
+}
+
+map ROTR08 "bay"
+{
+	titlepatch = "ROTRV07"
+	next = "ROTR09"
+	secretnext = "ROTR09"
+	sky1 = "ROTR0238"
+	music = "D_ROTR08"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR09 "pit"
+{
+	titlepatch = "ROTRV08"
+	next = "ROTR10"
+	secretnext = "ROTR10"
+	sky1 = "ROTR0238"
+	music = "D_ROTR09"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR10 "den"
+{
+	titlepatch = "ROTRV09"
+	next = "ROTR11"
+	secretnext = "ROTR11"
+	sky1 = "ROTR0238"
+	music = "D_ROTR10"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR11 "ape"
+{
+	titlepatch = "ROTRV10"
+	next = "ROTR12"
+	secretnext = "ROTR12"
+	sky1 = "ROTR0238"
+	music = "D_ROTR11"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR12 "hop"
+{
+	titlepatch = "ROTRV11"
+	next = "ROTR13"
+	secretnext = "ROTR13"
+	sky1 = "SKY2"
+	music = "D_ROTR12"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR13 "uac"
+{
+	titlepatch = "ROTRV12"
+	next = "ROTR14"
+	secretnext = "ROTR14"
+	sky1 = "SKY2"
+	music = "D_ROTR13"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR14 "job"
+{
+	titlepatch = "ROTRV13"
+	next = "ROTR15"
+	secretnext = "ROTR15"
+	sky1 = "SKY2"
+	music = "D_ROTR14"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR15 "wen"
+{
+	titlepatch = "ROTRV14"
+	next = "ROTR16"
+	secretnext = "ROTR31"
+	sky1 = "SKY2"
+	music = "D_ROTR15"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR16 "rip"
+{
+	titlepatch = "ROTRV15"
+	next = "ROTR17"
+	secretnext = "ROTR17"
+	sky1 = "SKY2"
+	music = "D_ROTR16"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR17 "nin"
+{
+	titlepatch = "ROTRV16"
+	next = "ROTR18"
+	secretnext = "ROTR18"
+	sky1 = "SKY2"
+	music = "D_ROTR17"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR18 "cut"
+{
+	titlepatch = "ROTRV17"
+	next = "ROTR19"
+	secretnext = "ROTR19"
+	sky1 = "SKY2"
+	music = "D_ROTR18"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR19 "ire"
+{
+	titlepatch = "ROTRV18"
+	next = "ROTR20"
+	secretnext = "ROTR20"
+	sky1 = "SKY2"
+	music = "D_ROTR19"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR20 "far"
+{
+	titlepatch = "ROTRV19"
+	next = "ROTR21"
+	secretnext = "ROTR21"
+	sky1 = "SKY2"
+	music = "D_ROTR20"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR21 "sin"
+{
+	titlepatch = "ROTRV20"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ROTR0240"
+	music = "D_ROTR21"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR31 "keel"
+{
+	titlepatch = "ROTRV30"
+	next = "ROTR16"
+	secretnext = "ROTR32"
+	sky1 = "ROTR0240"
+	music = "D_ROTR31"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}
+
+map ROTR32 "!"
+{
+	titlepatch = "ROTRV31"
+	next = "ROTR16"
+	secretnext = "ROTR16"
+	sky1 = "ROTR0240"
+	music = "D_ROTR32"
+	intermusic = "D_ROTRIN"
+	ExitPic = "ROTRINT"
+	EnterPic = "ROTRINT"
+}

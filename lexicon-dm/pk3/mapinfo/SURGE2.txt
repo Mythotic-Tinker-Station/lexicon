@@ -1,0 +1,297 @@
+// Surge DM II Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SRG201 "Nostalgia"
+{
+	titlepatch = "SRG2V00"
+	next = "SRG202"
+	secretnext = "SRG202"
+	sky1 = "SRG20474"
+	music = "D_SRG201"
+}
+
+map SRG202 "Quad Base"
+{
+	titlepatch = "SRG2V01"
+	next = "SRG203"
+	secretnext = "SRG203"
+	sky1 = "SRG20474"
+	music = "D_SRG202"
+}
+
+map SRG203 "When Worlds Collide"
+{
+	titlepatch = "SRG2V02"
+	next = "SRG204"
+	secretnext = "SRG204"
+	sky1 = "SRG20474"
+	music = "D_SRG203"
+}
+
+map SRG204 "Comm Tower"
+{
+	titlepatch = "SRG2V03"
+	next = "SRG205"
+	secretnext = "SRG205"
+	sky1 = "SRG20474"
+	music = "D_SRG204"
+}
+
+map SRG205 "Dizzy?"
+{
+	titlepatch = "SRG2V04"
+	next = "SRG206"
+	secretnext = "SRG206"
+	sky1 = "SRG20474"
+	music = "D_SRG205"
+}
+
+map SRG206 "Untitled"
+{
+	titlepatch = "SRG2V05"
+	next = "SRG207"
+	secretnext = "SRG207"
+	sky1 = "SRG20474"
+	music = "D_SRG206"
+}
+
+map SRG207 "The Spoogle Experiment"
+{
+	titlepatch = "SRG2V06"
+	next = "SRG208"
+	secretnext = "SRG208"
+	sky1 = "SRG20474"
+	music = "D_SRG207"
+	Map07Special
+}
+
+map SRG208 "The Lava Pit"
+{
+	titlepatch = "SRG2V07"
+	next = "SRG209"
+	secretnext = "SRG209"
+	sky1 = "SRG20474"
+	music = "D_SRG208"
+}
+
+map SRG209 "Kick Him in the Back!"
+{
+	titlepatch = "SRG2V08"
+	next = "SRG210"
+	secretnext = "SRG210"
+	sky1 = "SRG20474"
+	music = "D_SRG209"
+}
+
+map SRG210 "Untitled"
+{
+	titlepatch = "SRG2V09"
+	next = "SRG211"
+	secretnext = "SRG211"
+	sky1 = "SRG20474"
+	music = "D_SRG210"
+}
+
+map SRG211 "The Way"
+{
+	titlepatch = "SRG2V10"
+	next = "SRG212"
+	secretnext = "SRG212"
+	sky1 = "SRG20474"
+	music = "D_SRG211"
+}
+
+map SRG212 "Untitled"
+{
+	titlepatch = "SRG2V11"
+	next = "SRG213"
+	secretnext = "SRG213"
+	sky1 = "SRG20475"
+	music = "D_SRG212"
+}
+
+map SRG213 "Abandoned Mines"
+{
+	titlepatch = "SRG2V12"
+	next = "SRG214"
+	secretnext = "SRG214"
+	sky1 = "SRG20475"
+	music = "D_SRG213"
+}
+
+map SRG214 "Frag It"
+{
+	titlepatch = "SRG2V13"
+	next = "SRG215"
+	secretnext = "SRG215"
+	sky1 = "SRG20475"
+	music = "D_SRG214"
+}
+
+map SRG215 "Storage Area"
+{
+	titlepatch = "SRG2V14"
+	next = "SRG216"
+	secretnext = "SRG216"
+	sky1 = "SRG20475"
+	music = "D_SRG215"
+}
+
+map SRG216 "Underpass"
+{
+	titlepatch = "SRG2V15"
+	next = "SRG217"
+	secretnext = "SRG217"
+	sky1 = "SRG20475"
+	music = "D_SRG216"
+}
+
+map SRG217 "Hexadecimate"
+{
+	titlepatch = "SRG2V16"
+	next = "SRG218"
+	secretnext = "SRG218"
+	sky1 = "SRG20475"
+	music = "D_SRG217"
+}
+
+map SRG218 "Untitled"
+{
+	titlepatch = "SRG2V17"
+	next = "SRG219"
+	secretnext = "SRG219"
+	sky1 = "SRG20475"
+	music = "D_SRG218"
+}
+
+map SRG219 "Backed Up"
+{
+	titlepatch = "SRG2V18"
+	next = "SRG220"
+	secretnext = "SRG220"
+	sky1 = "SRG20475"
+	music = "D_SRG219"
+}
+
+map SRG220 "Untitled"
+{
+	titlepatch = "SRG2V19"
+	next = "SRG221"
+	secretnext = "SRG221"
+	sky1 = "SRG20475"
+	music = "D_SRG220"
+}
+
+map SRG221 "Untitled"
+{
+	titlepatch = "SRG2V20"
+	next = "SRG222"
+	secretnext = "SRG222"
+	sky1 = "SRG20476"
+	music = "D_SRG221"
+}
+
+map SRG222 "Shoot the Bastard!"
+{
+	titlepatch = "SRG2V21"
+	next = "SRG223"
+	secretnext = "SRG223"
+	sky1 = "SRG20476"
+	music = "D_SRG222"
+}
+
+map SRG223 "A Perfect Circle"
+{
+	titlepatch = "SRG2V22"
+	next = "SRG224"
+	secretnext = "SRG224"
+	sky1 = "SRG20476"
+	music = "D_SRG223"
+}
+
+map SRG224 "Stone Age"
+{
+	titlepatch = "SRG2V23"
+	next = "SRG225"
+	secretnext = "SRG225"
+	sky1 = "SRG20476"
+	music = "D_SRG224"
+}
+
+map SRG225 "Bah"
+{
+	titlepatch = "SRG2V24"
+	next = "SRG226"
+	secretnext = "SRG226"
+	sky1 = "SRG20476"
+	music = "D_SRG225"
+}
+
+map SRG226 "Untitled"
+{
+	titlepatch = "SRG2V25"
+	next = "SRG227"
+	secretnext = "SRG227"
+	sky1 = "SRG20476"
+	music = "D_SRG226"
+}
+
+map SRG227 "Provert"
+{
+	titlepatch = "SRG2V26"
+	next = "SRG228"
+	secretnext = "SRG228"
+	sky1 = "SRG20476"
+	music = "D_SRG227"
+}
+
+map SRG228 "Untitled"
+{
+	titlepatch = "SRG2V27"
+	next = "SRG229"
+	secretnext = "SRG229"
+	sky1 = "SRG20476"
+	music = "D_SRG228"
+}
+
+map SRG229 "Up and Down"
+{
+	titlepatch = "SRG2V28"
+	next = "SRG230"
+	secretnext = "SRG230"
+	sky1 = "SRG20476"
+	music = "D_SRG229"
+}
+
+map SRG230 "Mewse"
+{
+	titlepatch = "SRG2V29"
+	next = "SRG231"
+	secretnext = "SRG231"
+	sky1 = "SRG20476"
+	music = "D_SRG230"
+	allowmonstertelefrags
+}
+
+map SRG231 "Technoid"
+{
+	titlepatch = "SRG2V30"
+	next = "SRG232"
+	secretnext = "SRG232"
+	sky1 = "SRG20476"
+	music = "D_SRG231"
+}
+
+map SRG232 "Infested Hollow"
+{
+	titlepatch = "SRG2V31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SRG20476"
+	music = "D_SRG232"
+}

@@ -1,0 +1,390 @@
+// 32in24 IV: CAPTURE THE FAG Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map YD0401 "Deliverance"
+{
+	titlepatch = "CWILV00"
+	next = "YD0402"
+	secretnext = "YD0402"
+	sky1 = "YD040246"
+	music = "D_YD0401"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0402 "Cassholes"
+{
+	titlepatch = "CWILV01"
+	next = "YD0403"
+	secretnext = "YD0403"
+	sky1 = "YD040246"
+	music = "D_YD0402"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0403 "Teleflag"
+{
+	titlepatch = "CWILV02"
+	next = "YD0404"
+	secretnext = "YD0404"
+	sky1 = "YD040246"
+	music = "D_YD0403"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0404 "Bricks, yes bricks this time, lots of bricks(brown bricks)"
+{
+	titlepatch = "CWILV03"
+	next = "YD0405"
+	secretnext = "YD0405"
+	sky1 = "YD040246"
+	music = "D_YD0404"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0405 "Knuckle Bombah"
+{
+	titlepatch = "CWILV04"
+	next = "YD0406"
+	secretnext = "YD0406"
+	sky1 = "YD040246"
+	music = "D_YD0405"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0406 "No Volition"
+{
+	titlepatch = "CWILV05"
+	next = "YD0407"
+	secretnext = "YD0407"
+	sky1 = "YD040246"
+	music = "D_YD0406"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0407 "RedvsBlue"
+{
+	titlepatch = "CWILV06"
+	next = "YD0408"
+	secretnext = "YD0408"
+	sky1 = "YD040246"
+	music = "D_YD0407"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0408 "Whoa! A Highly Advanced CTF Map"
+{
+	titlepatch = "CWILV07"
+	next = "YD0409"
+	secretnext = "YD0409"
+	sky1 = "YD040246"
+	music = "D_YD0408"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0409 "Generic Gray"
+{
+	titlepatch = "CWILV08"
+	next = "YD0410"
+	secretnext = "YD0410"
+	sky1 = "YD040246"
+	music = "D_YD0409"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0410 "Toxic"
+{
+	titlepatch = "CWILV09"
+	next = "YD0411"
+	secretnext = "YD0411"
+	sky1 = "YD040246"
+	music = "D_YD0410"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0411 "Industrial Playground"
+{
+	titlepatch = "CWILV10"
+	next = "YD0412"
+	secretnext = "YD0412"
+	sky1 = "YD040246"
+	music = "D_YD0411"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0412 "Jesus saves...AND SCORES!"
+{
+	titlepatch = "CWILV11"
+	next = "YD0413"
+	secretnext = "YD0413"
+	sky1 = "YD040022"
+	music = "D_YD0412"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0413 "Azathoth's Decayed Base of Boppin'"
+{
+	titlepatch = "CWILV12"
+	next = "YD0414"
+	secretnext = "YD0414"
+	sky1 = "YD040022"
+	music = "D_YD0413"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0414 "Nazigothitorium"
+{
+	titlepatch = "CWILV13"
+	next = "YD0415"
+	secretnext = "YD0415"
+	sky1 = "YD040022"
+	music = "D_YD0414"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0415 "Cave"
+{
+	titlepatch = "CWILV14"
+	next = "YD0416"
+	secretnext = "YD0416"
+	sky1 = "YD040022"
+	music = "D_YD0415"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0416 "Nyarlathotep's Evil Manse of Destruction"
+{
+	titlepatch = "CWILV15"
+	next = "YD0417"
+	secretnext = "YD0417"
+	sky1 = "YD040022"
+	music = "D_YD0416"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0417 "Buntaluffigus"
+{
+	titlepatch = "CWILV16"
+	next = "YD0418"
+	secretnext = "YD0418"
+	sky1 = "YD040022"
+	music = "$MUSIC_STLKS3"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0418 "Skyscraper CTF"
+{
+	titlepatch = "CWILV17"
+	next = "YD0419"
+	secretnext = "YD0419"
+	sky1 = "YD040022"
+	music = "D_YD0418"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0419 "Mt. Awesome"
+{
+	titlepatch = "CWILV18"
+	next = "YD0420"
+	secretnext = "YD0420"
+	sky1 = "YD040022"
+	music = "D_YD0419"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0420 "The BIGBRIK Experience"
+{
+	titlepatch = "CWILV19"
+	next = "YD0421"
+	secretnext = "YD0421"
+	sky1 = "YD040022"
+	music = "D_YD0420"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0421 "Obligatory Power Plant"
+{
+	titlepatch = "CWILV20"
+	next = "YD0422"
+	secretnext = "YD0422"
+	sky1 = "YD040023"
+	music = "D_YD0421"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0422 "Your Clan Sucks on This Map"
+{
+	titlepatch = "CWILV21"
+	next = "YD0423"
+	secretnext = "YD0423"
+	sky1 = "YD040023"
+	music = "D_YD0422"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0423 "Wheelchair Inaccessible"
+{
+	titlepatch = "CWILV22"
+	next = "YD0424"
+	secretnext = "YD0424"
+	sky1 = "YD040023"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0424 "Kass Fortress part 2: NOT A DUEL TOWER"
+{
+	titlepatch = "CWILV23"
+	next = "YD0425"
+	secretnext = "YD0425"
+	sky1 = "YD040023"
+	music = "D_YD0424"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0425 "Ernesto Attends Camp"
+{
+	titlepatch = "CWILV24"
+	next = "YD0426"
+	secretnext = "YD0426"
+	sky1 = "YD040023"
+	music = "D_YD0425"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0426 "Too Much Marble"
+{
+	titlepatch = "CWILV25"
+	next = "YD0427"
+	secretnext = "YD0427"
+	sky1 = "YD040023"
+	music = "D_YD0426"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0427 "Castle of Eternal Essels in the Sky"
+{
+	titlepatch = "CWILV26"
+	next = "YD0428"
+	secretnext = "YD0428"
+	sky1 = "YD040023"
+	music = "D_YD0427"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0428 "Pretty Poly"
+{
+	titlepatch = "CWILV27"
+	next = "YD0429"
+	secretnext = "YD0429"
+	sky1 = "YD040023"
+	music = "D_YD0428"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0429 "Two Holds Barred"
+{
+	titlepatch = "CWILV28"
+	next = "YD0430"
+	secretnext = "YD0430"
+	sky1 = "YD040023"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0430 "Cap Dat Shit"
+{
+	titlepatch = "CWILV29"
+	next = "YD0431"
+	secretnext = "YD0431"
+	sky1 = "YD040023"
+	music = "D_YD0430"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0431 "Mountain Zero"
+{
+	titlepatch = "CWILV30"
+	next = "YD0432"
+	secretnext = "YD0432"
+	sky1 = "YD040023"
+	music = "D_YD0431"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}
+
+map YD0432 "Kitten Factory"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "YD040023"
+	music = "D_YD0432"
+	intermusic = "D_YD04IN"
+	ExitPic = "YD04INT"
+	EnterPic = "YD04INT"
+}

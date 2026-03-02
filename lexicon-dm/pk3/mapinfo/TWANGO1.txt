@@ -1,0 +1,394 @@
+// TWANGO1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TWN101 "Eternal Legacy"
+{
+	titlepatch = "TWN1V00"
+	next = "TWN102"
+	secretnext = "TWN102"
+	sky1 = "TWN10174"
+	music = "D_TWN101"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN102 "Mr. TWANGO"
+{
+	titlepatch = "TWN1V01"
+	next = "TWN103"
+	secretnext = "TWN103"
+	sky1 = "TWN10174"
+	music = "D_TWN102"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN103 "Menace"
+{
+	titlepatch = "TWN1V02"
+	next = "TWN104"
+	secretnext = "TWN104"
+	sky1 = "TWN10174"
+	music = "D_TWN103"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN104 "Shipment"
+{
+	titlepatch = "TWN1V03"
+	next = "TWN105"
+	secretnext = "TWN105"
+	sky1 = "TWN10174"
+	music = "D_TWN104"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN105 "Enemy"
+{
+	titlepatch = "TWN1V04"
+	next = "TWN106"
+	secretnext = "TWN106"
+	sky1 = "TWN10174"
+	music = "D_TWN105"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN106 "Liminal Base"
+{
+	titlepatch = "TWN1V05"
+	next = "TWN107"
+	secretnext = "TWN107"
+	sky1 = "TWN10174"
+	music = "D_TWN106"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN107 "Even Simpler"
+{
+	titlepatch = "TWN1V06"
+	next = "TWN108"
+	secretnext = "TWN108"
+	sky1 = "TWN10174"
+	map07special
+	music = "D_TWN107"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN108 "BrownWar"
+{
+	titlepatch = "TWN1V07"
+	next = "TWN109"
+	secretnext = "TWN109"
+	sky1 = "TWN10174"
+	music = "D_TWN108"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN109 "Joe's House"
+{
+	titlepatch = "TWN1V08"
+	next = "TWN110"
+	secretnext = "TWN110"
+	sky1 = "TWN10174"
+	music = "D_TWN109"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN110 "Refinery"
+{
+	titlepatch = "TWN1V09"
+	next = "TWN111"
+	secretnext = "TWN111"
+	sky1 = "TWN10174"
+	music = "D_TWN110"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN111 "Server Rooms on Fire"
+{
+	titlepatch = "TWN1V10"
+	next = "TWN112"
+	secretnext = "TWN112"
+	sky1 = "TWN10174"
+	music = "D_TWN111"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN112 "All Night Frags"
+{
+	titlepatch = "TWN1V11"
+	next = "TWN113"
+	secretnext = "TWN113"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN112"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN113 "The Library"
+{
+	titlepatch = "TWN1V12"
+	next = "TWN114"
+	secretnext = "TWN114"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN113"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN114 "Blood Yard"
+{
+	titlepatch = "TWN1V13"
+	next = "TWN115"
+	secretnext = "TWN115"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN114"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN115 "Unmazed"
+{
+	titlepatch = "TWN1V14"
+	next = "TWN116"
+	secretnext = "TWN116"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN115"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN116 "Fatal Frag"
+{
+	titlepatch = "TWN1V15"
+	next = "TWN117"
+	secretnext = "TWN117"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN116"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN117 "Deuteronomy"
+{
+	titlepatch = "TWN1V16"
+	next = "TWN118"
+	secretnext = "TWN118"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN117"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN118 "Grisly Gibs"
+{
+	titlepatch = "TWN1V17"
+	next = "TWN119"
+	secretnext = "TWN119"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN118"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN119 "Interdimansia"
+{
+	titlepatch = "TWN1V18"
+	next = "TWN120"
+	secretnext = "TWN120"
+	sky1 = "TWN10309", 0.3
+	music = "D_TWN119"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN120 "Engine 3000"
+{
+	titlepatch = "TWN1V19"
+	next = "TWN121"
+	secretnext = "TWN121"
+	sky1 = "TWN10175", 0.2
+	music = "D_TWN120"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN121 "Bunker Buster"
+{
+	titlepatch = "TWN1V20"
+	next = "TWN122"
+	secretnext = "TWN122"
+	sky1 = "TWN10176"
+	music = "D_TWN121"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN122 "Mr. Crunchy"
+{
+	titlepatch = "TWN1V21"
+	next = "TWN123"
+	secretnext = "TWN123"
+	sky1 = "TWN10176"
+	music = "D_TWN122"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN123 "Silenced Lamasery"
+{
+	titlepatch = "TWN1V22"
+	next = "TWN124"
+	secretnext = "TWN124"
+	sky1 = "TWN10176"
+	music = "D_TWN123"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN124 "Streets"
+{
+	titlepatch = "TWN1V23"
+	next = "TWN125"
+	secretnext = "TWN125"
+	sky1 = "TWN10176"
+	music = "D_TWN124"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN125 "Sadistic"
+{
+	titlepatch = "TWN1V24"
+	next = "TWN126"
+	secretnext = "TWN126"
+	sky1 = "TWN10176"
+	music = "D_TWN125"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN126 "Romero's Void"
+{
+	titlepatch = "TWN1V25"
+	next = "TWN127"
+	secretnext = "TWN127"
+	sky1 = "TWN10176"
+	music = "D_TWN126"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN127 "Dethmatch Temple"
+{
+	titlepatch = "TWN1V26"
+	next = "TWN128"
+	secretnext = "TWN128"
+	sky1 = "TWN10176"
+	music = "D_TWN127"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN128 "Sewage Plant"
+{
+	titlepatch = "TWN1V27"
+	next = "TWN129"
+	secretnext = "TWN129"
+	sky1 = "TWN10176"
+	music = "D_TWN128"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN129 "Warp Routine"
+{
+	titlepatch = "TWN1V28"
+	next = "TWN130"
+	secretnext = "TWN130"
+	sky1 = "TWN10176"
+	music = "D_TWN129"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN130 "Back to Basics"
+{
+	titlepatch = "TWN1V29"
+	next = "TWN131"
+	secretnext = "TWN131"
+	sky1 = "TWN10176"
+	allowmonstertelefrags
+	music = "D_TWN130"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN131 "This fucking map"
+{
+	titlepatch = "TWN1V30"
+	next = "TWN132"
+	secretnext = "TWN132"
+	sky1 = "TWN10175", 0.2
+	allowmonstertelefrags
+	music = "D_TWN131"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}
+
+map TWN132 "Quad Goal Deathmatch!"
+{
+	titlepatch = "TWN1V31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "TWN10310"
+	music = "D_TWN132"
+	intermusic = "D_TWN1IN"
+	ExitPic = "TWN1INT"
+	EnterPic = "TWN1INT"
+}

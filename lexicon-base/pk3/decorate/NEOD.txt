@@ -1,0 +1,393 @@
+Actor Lexicon_NEOD_VictoryBabe
+{
+    Radius 12
+    Height 56
+    Speed 10
+    Translation 2
+    +ISMONSTER
+    +SOLID
+    +FLOORCLIP
+    AttackSound "NEOD/DSBABSI1"
+    States
+    {
+    Spawn:
+        LX55 DE 10 A_Look
+        Loop
+    See:
+        LX55 DDEEFFGG 3 A_Chase
+        Loop
+    Melee:
+        LX55 HHHH 10 A_FaceTarget
+        LX55 H 6 A_BrainDie
+        Goto See
+    }
+}
+
+Actor Lexicon_NEOD_CommanderKeen : CommanderKeen
+{
+	States
+	{
+	Spawn:
+		LX18 M -1
+		Stop
+	Death:
+		LX18 MN 6
+		LX18 O 6 A_Scream
+		LX18 PQRST 6
+		LX18 U 6 A_NoBlocking
+		LX18 V 6
+		LX18 W 6 A_KeenDie
+		LX18 X -1
+		Stop
+	Pain:
+		LX18 Y 4
+		LX18 Y 8 A_Pain
+		Goto Spawn
+	}
+}
+
+Actor Lexicon_NEOD_Meat2_ND //replaces NonsolidMeat2
+{
+	Radius 16
+	Height 84
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 X -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_Meat3_ND //replaces NonsolidMeat3
+{
+	Radius 16
+	Height 84
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 Y -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_Meat4_ND //replaces NonsolidMeat4
+{
+	Radius 16
+	Height 68
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 Z -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_Meat5_ND //replaces NonsolidMeat5
+{
+	Radius 16
+	Height 52
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 "[" -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_BloodyTwitch_ND //replaces NonsolidTwitch
+{
+	Radius 12
+	Height 68
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 W -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangNoGuts_ND //replaces HangNoGuts
+{
+	Radius 16
+	Height 88
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 P -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangBNoBrain_ND //replaces HangBNoBrain
+{
+	Radius 16
+	Height 88
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 R -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangTLookingDown_ND //replaces HangTLookingDown
+{
+	Radius 16
+	Height 64
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 S -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangTLookingUp_ND //replaces HangTLookingUp
+{
+	Radius 16
+	Height 64
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 U -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangTSkull_ND //replaces HangTSkull
+{
+	Radius 16
+	Height 64
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 T -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_HangTNoBrain_ND //replaces HangTNoBrain
+{
+	Radius 16
+	Height 64
+	+SOLID
+	-NOGRAVITY
+	-SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 V -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_FloatingSkull_ND //replaces FloatingSkull
+{
+	Radius 16
+	Height 26
+	ProjectilePassHeight -16
+	+SOLID
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX55 LMN 6 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_NEOD_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX55 O -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_GibbedMarineExtra_ND //replaces GibbedMarineExtra
+{
+	States
+	{
+	Spawn:
+		LX55 "\" -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_Stalagmite : Stalagmite
+{
+	States
+	{
+	Spawn:
+		LX55 "]" -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_TechPillar : TechPillar
+{
+	States
+	{
+	Spawn:
+		LX18 L -1
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_BurningBarrel : BurningBarrel
+{
+	States
+	{
+	Spawn:
+		LX55 IJK 4 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_NEOD_WaterSplash : WaterSplash
+{
+	States
+	{
+	Spawn:
+		LX44 OPQ 8
+		LX44 R 16
+		Stop
+	Death:
+		LX44 R 10
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_WaterSplashBase : WaterSplashBase
+{
+	States
+	{
+	Spawn:
+		LX44 STUVWXY 5
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_LavaSplash : LavaSplash
+{
+	States
+	{
+	Spawn:
+		LX47 MNOPQR 5 Bright
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_LavaSmoke : LavaSmoke
+{
+	States
+	{
+	Spawn:
+		LX47 STUVW 5 Bright
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_SludgeChunk : SludgeChunk
+{
+	States
+	{
+	Spawn:
+		LX36 QRST 8
+		Stop
+	Death:
+		LX36 T 6
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_SludgeSplash : SludgeSplash
+{
+	States
+	{
+	Spawn:
+		LX36 UVWX 6
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_BloodSplash : BloodSplash
+{
+	States
+	{
+	Spawn:
+		LX48 NOP 8
+		LX48 Q 16
+		Stop
+	Death:
+		LX48 Q 10
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_BloodSplashBase : BloodSplashBase
+{
+	States
+	{
+	Spawn:
+		LX48 RSTUVWX 5
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_SlimeChunk : SlimeChunk
+{
+	States
+	{
+	Spawn:
+		LX36 IJK 8
+		LX36 L 16
+		Stop
+	Death:
+		LX36 L 10
+		Stop
+	}
+}
+
+Actor Lexicon_NEOD_SlimeSplash : SlimeSplash
+{
+	States
+	{
+	Spawn:
+		LX36 MNOP 6
+		Stop
+	}
+}

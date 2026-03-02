@@ -1,0 +1,396 @@
+// Hell Revealed I Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HR1001 "Into the Gate"
+{
+	titlepatch = "HR10V00"
+	next = "HR1002"
+	secretnext = "HR1002"
+	sky1 = "HR100274"
+	music = "D_HR1001"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1002 "Gateway Lab"
+{
+	titlepatch = "HR10V01"
+	next = "HR1003"
+	secretnext = "HR1003"
+	sky1 = "HR100274"
+	music = "D_HR1002"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1003 "The Dumpster"
+{
+	titlepatch = "HR10V02"
+	next = "HR1004"
+	secretnext = "HR1004"
+	sky1 = "HR100274"
+	music = "D_HR1003"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1004 "The Garden Terminal"
+{
+	titlepatch = "HR10V03"
+	next = "HR1005"
+	secretnext = "HR1005"
+	sky1 = "HR100274"
+	music = "D_HR1004"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1005 "Core Infection"
+{
+	titlepatch = "HR10V04"
+	next = "HR1006"
+	secretnext = "HR1006"
+	sky1 = "HR100274"
+	music = "D_HR1005"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1006 "The Round Crossroads"
+{
+	titlepatch = "HR10V05"
+	next = "HR1007"
+	secretnext = "HR1007"
+	sky1 = "HR100274"
+	music = "D_HR1006"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1007 "Arachnophobia"
+{
+	titlepatch = "HR10V06"
+	next = "HR1008"
+	secretnext = "HR1008"
+	sky1 = "HR100274"
+	music = "D_HR1007"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+	Map07Special
+}
+
+map HR1008 "The Jail"
+{
+	titlepatch = "HR10V07"
+	next = "HR1009"
+	secretnext = "HR1009"
+	sky1 = "HR100274"
+	music = "D_HR1008"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1009 "Knockout"
+{
+	titlepatch = "HR10V08"
+	next = "HR1010"
+	secretnext = "HR1010"
+	sky1 = "HR100274"
+	music = "D_HR1009"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1010 "Chambers of War"
+{
+	titlepatch = "HR10V09"
+	next = "HR1011"
+	secretnext = "HR1011"
+	sky1 = "HR100274"
+	music = "D_HR1010"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1011 "Underground Base"
+{
+	titlepatch = "HR10V10"
+	next = "HR1012"
+	secretnext = "HR1012"
+	sky1 = "HR100274"
+	music = "D_HR1011"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1012 "Great Halls of Fire"
+{
+	titlepatch = "HR10V11"
+	next = "HR1013"
+	secretnext = "HR1013"
+	sky1 = "HR100275"
+	music = "D_HR1012"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1013 "Last Look at Eden"
+{
+	titlepatch = "HR10V12"
+	next = "HR1014"
+	secretnext = "HR1014"
+	sky1 = "HR100275"
+	music = "D_HR1013"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1014 "City in the Clouds"
+{
+	titlepatch = "HR10V13"
+	next = "HR1015"
+	secretnext = "HR1015"
+	sky1 = "HR100275"
+	music = "D_HR1014"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1015 "Gates to Hell"
+{
+	titlepatch = "HR10V14"
+	next = "HR1016"
+	secretnext = "HR1031"
+	sky1 = "HR100275"
+	music = "D_HR1015"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1016 "The Path"
+{
+	titlepatch = "HR10V15"
+	next = "HR1017"
+	secretnext = "HR1017"
+	sky1 = "HR100275"
+	music = "D_HR1016"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1017 "The Black Towers"
+{
+	titlepatch = "HR10V16"
+	next = "HR1018"
+	secretnext = "HR1018"
+	sky1 = "HR100275"
+	music = "D_HR1017"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1018 "Hard Attack"
+{
+	titlepatch = "HR10V17"
+	next = "HR1019"
+	secretnext = "HR1019"
+	sky1 = "HR100275"
+	music = "D_HR1018"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1019 "Everything Dies"
+{
+	titlepatch = "HR10V18"
+	next = "HR1020"
+	secretnext = "HR1020"
+	sky1 = "HR100275"
+	music = "D_HR1019"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+	compat_limitpain = 1
+}
+
+map HR1020 "Judgement Day"
+{
+	titlepatch = "HR10V19"
+	next = "HR1021"
+	secretnext = "HR1021"
+	sky1 = "HR100275"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1021 "Siege"
+{
+	titlepatch = "HR10V20"
+	next = "HR1022"
+	secretnext = "HR1022"
+	sky1 = "HR100276"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1022 "Resistance is Futile"
+{
+	titlepatch = "HR10V21"
+	next = "HR1023"
+	secretnext = "HR1023"
+	sky1 = "HR100276"
+	music = "$MUSIC_DDTBL3"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1023 "Ascending to the Stars"
+{
+	titlepatch = "HR10V22"
+	next = "HR1024"
+	secretnext = "HR1024"
+	sky1 = "HR100276"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1024 "Post Mortem"
+{
+	titlepatch = "HR10V23"
+	next = "HR1025"
+	secretnext = "HR1025"
+	sky1 = "HR100276"
+	music = "$MUSIC_THEDA3"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1025 "Dead Progressive"
+{
+	titlepatch = "HR10V24"
+	next = "HR1026"
+	secretnext = "HR1026"
+	sky1 = "HR100276"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1026 "Afterlife"
+{
+	titlepatch = "HR10V25"
+	next = "HR1027"
+	secretnext = "HR1027"
+	sky1 = "HR100276"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+	compat_corpsegibs = 1
+	// Can't do anything about the ghost monsters, sadly.
+}
+
+map HR1027 "Cyberpunk"
+{
+	titlepatch = "HR10V26"
+	next = "HR1028"
+	secretnext = "HR1028"
+	sky1 = "HR100276"
+	music = "D_HR1027"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1028 "Top Hell"
+{
+	titlepatch = "HR10V27"
+	next = "HR1029"
+	secretnext = "HR1029"
+	sky1 = "HR100276"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1029 "Temple of Fear"
+{
+	titlepatch = "HR10V28"
+	next = "HR1030"
+	secretnext = "HR1030"
+	sky1 = "HR100276"
+	music = "D_HR1029"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1030 "Hell Revealed"
+{
+	titlepatch = "HR10V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HR100276"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+	allowmonstertelefrags
+}
+
+map HR1031 "The Descent"
+{
+	titlepatch = "HR10V30"
+	next = "HR1016"
+	secretnext = "HR1032"
+	sky1 = "HR100276"
+	music = "D_HR1031"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}
+
+map HR1032 "Mostly Harmful"
+{
+	titlepatch = "HR10V31"
+	next = "HR1016"
+	secretnext = "HR1016"
+	sky1 = "HR100276"
+	music = "D_HR1032"
+	intermusic = "D_HR10IN"
+	ExitPic = "HR10INT"
+	EnterPic = "HR10INT"
+}

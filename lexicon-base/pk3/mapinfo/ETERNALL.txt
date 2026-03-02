@@ -1,0 +1,397 @@
+// Eternal Doom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ETDM01 "Genesis"
+{
+	titlepatch = "ETDMV00"
+	next = "ETDM02"
+	secretnext = "ETDM02"
+	sky1 = "ETDM0789"
+	music = "D_ETDM01"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM02 "Tower of Hell"
+{
+	titlepatch = "ETDMV01"
+	next = "ETDM03"
+	secretnext = "ETDM03"
+	sky1 = "ETDM0789"
+	music = "D_ETDM02"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM03 "Inter-Base"
+{
+	titlepatch = "ETDMV02"
+	next = "ETDM04"
+	secretnext = "ETDM04"
+	sky1 = "ETDM0789"
+	music = "D_ETDM03"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM04 "Nucleus"
+{
+	titlepatch = "ETDMV03"
+	next = "ETDM05"
+	secretnext = "ETDM05"
+	sky1 = "ETDM0789"
+	music = "D_ETDM04"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM05 "Time Gate"
+{
+	titlepatch = "ETDMV04"
+	next = "ETDM06"
+	secretnext = "ETDM06"
+	sky1 = "ETDM0789"
+	music = "D_ETDM05"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM06 "Pathos"
+{
+	titlepatch = "ETDMV05"
+	next = "ETDM07"
+	secretnext = "ETDM07"
+	sky1 = "ETDM0789"
+	music = "D_ETDM06"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM07 "The Abbey"
+{
+	titlepatch = "ETDMV06"
+	next = "ETDM08"
+	secretnext = "ETDM08"
+	sky1 = "ETDM0789"
+	music = "D_ETDM07"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+	Map07Special
+}
+
+map ETDM08 "Woodhead"
+{
+	titlepatch = "ETDMV07"
+	next = "ETDM09"
+	secretnext = "ETDM09"
+	sky1 = "ETDM0789"
+	music = "D_ETDM08"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM09 "Forlorn Fortress"
+{
+	titlepatch = "ETDMV08"
+	next = "ETDM10"
+	secretnext = "ETDM10"
+	sky1 = "ETDM0789"
+	music = "D_ETDM09"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM10 "Crimson Tide"
+{
+	titlepatch = "ETDMV09"
+	next = "ETDM11"
+	secretnext = "ETDM11"
+	sky1 = "ETDM0789"
+	music = "D_ETDM10"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM11 "Dawn of the Dead"
+{
+	titlepatch = "ETDMV10"
+	next = "ETDM12"
+	secretnext = "ETDM12"
+	sky1 = "ETDM0789"
+	music = "D_ETDM11"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM12 "Darkdome"
+{
+	titlepatch = "ETDMV11"
+	next = "ETDM13"
+	secretnext = "ETDM13"
+	sky1 = "ETDM0790"
+	music = "D_ETDM12"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM13 "Drop 'em!"
+{
+	titlepatch = "ETDMV12"
+	next = "ETDM14"
+	secretnext = "ETDM14"
+	sky1 = "ETDM0790"
+	music = "D_ETDM13"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM14 "Pistol Only"
+{
+	titlepatch = "ETDMV13"
+	next = "ETDM15"
+	secretnext = "ETDM15"
+	sky1 = "ETDM0790"
+	music = "D_ETDM14"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM15 "Celebration of Evil"
+{
+	titlepatch = "ETDMV14"
+	next = "ETDM16"
+	secretnext = "ETDM31"
+	sky1 = "ETDM0790"
+	music = "D_ETDM15"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM16 "Guardstation"
+{
+	titlepatch = "ETDMV15"
+	next = "ETDM17"
+	secretnext = "ETDM17"
+	sky1 = "ETDM0790"
+	music = "D_ETDM16"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM17 "The Crypt"
+{
+	titlepatch = "ETDMV16"
+	next = "ETDM18"
+	secretnext = "ETDM18"
+	sky1 = "ETDM0790"
+	music = "D_ETDM17"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM18 "Stands"
+{
+	titlepatch = "ETDMV17"
+	next = "ETDM19"
+	secretnext = "ETDM19"
+	sky1 = "ETDM0790"
+	music = "D_ETDM18"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM19 "Warheros"
+{
+	titlepatch = "ETDMV18"
+	next = "ETDM20"
+	secretnext = "ETDM20"
+	sky1 = "ETDM0790"
+	music = "D_ETDM19"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM20 "Silures"
+{
+	titlepatch = "ETDMV19"
+	next = "ETDM21"
+	secretnext = "ETDM21"
+	sky1 = "ETDM0790"
+	music = "D_ETDM20"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM21 "Fire and Stone"
+{
+	titlepatch = "ETDMV20"
+	next = "ETDM22"
+	secretnext = "ETDM22"
+	sky1 = "ETDM0791"
+	music = "D_ETDM21"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM22 "The Seeker"
+{
+	titlepatch = "ETDMV21"
+	next = "ETDM23"
+	secretnext = "ETDM23"
+	sky1 = "ETDM0791"
+	music = "D_ETDM22"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM23 "Time Gate II"
+{
+	titlepatch = "ETDMV22"
+	next = "ETDM24"
+	secretnext = "ETDM24"
+	sky1 = "ETDM0791"
+	music = "D_ETDM23"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM24 "Rainbow Bridge"
+{
+	titlepatch = "ETDMV23"
+	next = "ETDM25"
+	secretnext = "ETDM25"
+	sky1 = "ETDM0791"
+	music = "D_ETDM24"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM25 "Beginner's End"
+{
+	titlepatch = "ETDMV24"
+	next = "ETDM26"
+	secretnext = "ETDM26"
+	sky1 = "ETDM0791"
+	music = "D_ETDM25"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+	compat_stairs = 1
+	compat_maskedmidtex = 1
+}
+
+map ETDM26 "No Parking"
+{
+	titlepatch = "ETDMV25"
+	next = "ETDM27"
+	secretnext = "ETDM27"
+	sky1 = "ETDM0791"
+	music = "D_ETDM26"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM27 "Paldorian"
+{
+	titlepatch = "ETDMV26"
+	next = "ETDM28"
+	secretnext = "ETDM28"
+	sky1 = "ETDM0791"
+	music = "D_ETDM27"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM28 "Timeslip"
+{
+	titlepatch = "ETDMV27"
+	next = "ETDM29"
+	secretnext = "ETDM29"
+	sky1 = "ETDM0791"
+	music = "D_ETDM28"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+	compat_trace = 1
+	compat_useblocking = 1
+}
+
+map ETDM29 "Dominion"
+{
+	titlepatch = "ETDMV28"
+	next = "ETDM30"
+	secretnext = "ETDM30"
+	sky1 = "ETDM0791"
+	music = "D_ETDM29"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM30 "Excalibur"
+{
+	titlepatch = "ETDMV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ETDM0791"
+	music = "D_ETDM30"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+	allowmonstertelefrags
+}
+
+map ETDM31 "Monster Mansion"
+{
+	titlepatch = "ETDMV30"
+	next = "ETDM16"
+	secretnext = "ETDM32"
+	sky1 = "ETDM0791"
+	music = "D_ETDM31"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}
+
+map ETDM32 "Halls of Disarray"
+{
+	titlepatch = "ETDMV31"
+	next = "ETDM16"
+	secretnext = "ETDM16"
+	sky1 = "ETDM0791"
+	music = "D_ETDM32"
+	intermusic = "D_ETDMIN"
+	ExitPic = "ETDMINT"
+	EnterPic = "ETDMINT"
+}

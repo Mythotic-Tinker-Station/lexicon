@@ -1,0 +1,109 @@
+// Double Impact Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DBIME1M1 "Maintenance Area"
+{
+	titlepatch = "DBIMV00"
+	next = "DBIME1M2"
+	secretnext = "DBIME1M2"
+	sky1 = "DBIM0001"
+	music = "D_DBIM01"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M2 "Central Computing"
+{
+	titlepatch = "DBIMV01"
+	next = "DBIME1M3"
+	secretnext = "DBIME1M3"
+	sky1 = "DBIM0001"
+	music = "D_DBIM02"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M3 "Research Complex"
+{
+	titlepatch = "DBIMV02"
+	next = "DBIME1M4"
+	secretnext = "DBIME1M9"
+	sky1 = "DBIM0001"
+	music = "D_DBIM03"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M4 "Hydroponic Facility"
+{
+	titlepatch = "DBIMV03"
+	next = "DBIME1M5"
+	secretnext = "DBIME1M5"
+	sky1 = "DBIM0001"
+	music = "D_DBIM04"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M5 "Engineering Station"
+{
+	titlepatch = "DBIMV04"
+	next = "DBIME1M6"
+	secretnext = "DBIME1M6"
+	sky1 = "DBIM0001"
+	music = "D_DBIM05"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M6 "Command Center"
+{
+	titlepatch = "DBIMV05"
+	next = "DBIME1M7"
+	secretnext = "DBIME1M7"
+	sky1 = "DBIM0001"
+	music = "$MUSIC_E1M6"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M7 "Waste Treatment"
+{
+	titlepatch = "DBIMV06"
+	next = "DBIME1M8"
+	secretnext = "DBIME1M8"
+	sky1 = "DBIM0001"
+	music = "$MUSIC_E1M7"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}
+
+map DBIME1M8 "Launch Bay"
+{
+	titlepatch = "DBIMV07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DBIM0001"
+	music = "D_DBIM06"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map DBIME1M9 "Operations"
+{
+	titlepatch = "DBIMV08"
+	next = "DBIME1M4"
+	secretnext = "DBIME1M4"
+	sky1 = "DBIM0001"
+	music = "D_DBIM07"
+	ExitPic = "DBIMINT"
+	EnterPic = "DBIMINT"
+}

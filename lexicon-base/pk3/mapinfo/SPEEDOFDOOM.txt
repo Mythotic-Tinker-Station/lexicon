@@ -1,0 +1,405 @@
+// Speed of Doom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SPOD01 "First Blood"
+{
+	titlepatch = "SPODV00"
+	next = "SPOD02"
+	secretnext = "SPOD02"
+	sky1 = "SPOD0068"
+	music = "D_SPOD01"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD02 "Mysterious Cove"
+{
+	titlepatch = "SPODV01"
+	next = "SPOD03"
+	secretnext = "SPOD03"
+	sky1 = "SPOD0068"
+	music = "D_SPOD02"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD03 "Constrained Base"
+{
+	titlepatch = "SPODV02"
+	next = "SPOD04"
+	secretnext = "SPOD04"
+	sky1 = "SPOD0068"
+	music = "D_SPOD03"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD04 "Sedgemire"
+{
+	titlepatch = "SPODV03"
+	next = "SPOD05"
+	secretnext = "SPOD05"
+	sky1 = "SPOD0068"
+	music = "D_SPOD04"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD05 "Cliffside Siege"
+{
+	titlepatch = "SPODV04"
+	next = "SPOD06"
+	secretnext = "SPOD06"
+	sky1 = "SPOD0068"
+	music = "D_SPOD05"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD06 "Dreamscape"
+{
+	titlepatch = "SPODV05"
+	next = "SPOD07"
+	secretnext = "SPOD07"
+	sky1 = "SPOD0068"
+	music = "D_SPOD06"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD07 "Simple Prison-yard"
+{
+	titlepatch = "SPODV06"
+	next = "SPOD08"
+	secretnext = "SPOD08"
+	sky1 = "SPOD0068"
+	music = "D_SPOD07"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+	Map07Special
+}
+
+map SPOD08 "Frenetic"
+{
+	titlepatch = "SPODV07"
+	next = "SPOD09"
+	secretnext = "SPOD09"
+	sky1 = "SPOD0068"
+	music = "D_SPOD08"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD09 "Depredation"
+{
+	titlepatch = "SPODV08"
+	next = "SPOD10"
+	secretnext = "SPOD10"
+	sky1 = "SPOD0068"
+	music = "D_SPOD09"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD10 "Vile Pain"
+{
+	titlepatch = "SPODV09"
+	next = "SPOD11"
+	secretnext = "SPOD11"
+	sky1 = "SPOD0068"
+	music = "D_SPOD10"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD11 "Transcension"
+{
+	titlepatch = "SPODV10"
+	next = "SPOD12"
+	secretnext = "SPOD12"
+	sky1 = "SPOD0068"
+	music = "D_SPOD11"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD12 "The Meat Grinder"
+{
+	titlepatch = "SPODV11"
+	next = "SPOD13"
+	secretnext = "SPOD13"
+	sky1 = "SPOD0069"
+	music = "D_SPOD12"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD13 "Lucifer's Tears"
+{
+	titlepatch = "SPODV12"
+	next = "SPOD14"
+	secretnext = "SPOD14"
+	sky1 = "SPOD0069"
+	music = "D_SPOD13"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD14 "Sledge"
+{
+	titlepatch = "SPODV13"
+	next = "SPOD15"
+	secretnext = "SPOD15"
+	sky1 = "SPOD0069"
+	music = "D_SPOD14"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD15 "Descent to Core"
+{
+	titlepatch = "SPODV14"
+	next = "SPOD16"
+	secretnext = "SPOD31"
+	sky1 = "SPOD0069"
+	music = "D_SPOD15"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD16 "The Core"
+{
+	titlepatch = "SPODV15"
+	next = "SPOD17"
+	secretnext = "SPOD17"
+	sky1 = "SPOD0069"
+	music = "D_SPOD16"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD17 "The Shrine"
+{
+	titlepatch = "SPODV16"
+	next = "SPOD18"
+	secretnext = "SPOD18"
+	sky1 = "SPOD0069"
+	music = "D_SPOD17"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD18 "Silent Hour"
+{
+	titlepatch = "SPODV17"
+	next = "SPOD19"
+	secretnext = "SPOD19"
+	sky1 = "SPOD0069"
+	music = "D_SPOD18"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD19 "Impure Serenity"
+{
+	titlepatch = "SPODV18"
+	next = "SPOD20"
+	secretnext = "SPOD20"
+	sky1 = "SPOD0069"
+	music = "D_SPOD19"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD20 "The Path to Hell"
+{
+	titlepatch = "SPODV19"
+	next = "SPOD21"
+	secretnext = "SPOD21"
+	sky1 = "SPOD0069"
+	music = "D_SPOD20"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD21 "Resurrection"
+{
+	titlepatch = "SPODV20"
+	next = "SPOD22"
+	secretnext = "SPOD22"
+	sky1 = "SPOD0070"
+	music = "D_SPOD21"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD22 "Dead Echo"
+{
+	titlepatch = "SPODV21"
+	next = "SPOD23"
+	secretnext = "SPOD23"
+	sky1 = "SPOD0070"
+	music = "D_SPOD22"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD23 "Poison Ivy II"
+{
+	titlepatch = "SPODV22"
+	next = "SPOD24"
+	secretnext = "SPOD24"
+	sky1 = "SPOD0070"
+	music = "D_SPOD23"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD24 "Hell's Honeycomb"
+{
+	titlepatch = "SPODV23"
+	next = "SPOD25"
+	secretnext = "SPOD25"
+	sky1 = "SPOD0070"
+	music = "D_SPOD24"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD25 "Death's Nocturne"
+{
+	titlepatch = "SPODV24"
+	next = "SPOD26"
+	secretnext = "SPOD26"
+	sky1 = "SPOD0070"
+	music = "D_SPOD25"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD26 "Blessed Hellscape"
+{
+	titlepatch = "SPODV25"
+	next = "SPOD27"
+	secretnext = "SPOD27"
+	sky1 = "SPOD0070"
+	music = "D_SPOD26"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD27 "Hais Temple"
+{
+	titlepatch = "SPODV26"
+	next = "SPOD28"
+	secretnext = "SPOD28"
+	sky1 = "SPOD0070"
+	music = "D_SPOD27"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD28 "Twilight Massacre"
+{
+	titlepatch = "SPODV27"
+	next = "SPOD29"
+	secretnext = "SPOD29"
+	sky1 = "SPOD0070"
+	music = "D_SPOD28"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD29 "The Ruins of Kalnik"
+{
+	titlepatch = "SPODV28"
+	next = "SPOD30"
+	secretnext = "SPOD30"
+	sky1 = "SPOD0070"
+	music = "D_SPOD29"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD30 "Darkness Without End"
+{
+	titlepatch = "SPODV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SPOD0070"
+	music = "D_SPOD30"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+	allowmonstertelefrags
+}
+
+map SPOD31 "1010011010"
+{
+	titlepatch = "SPODV30"
+	next = "SPOD16"
+	secretnext = "SPOD32"
+	sky1 = "SPOD0070"
+	music = "D_SPOD31"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD32 "The Pyramid of Death"
+{
+	titlepatch = "SPODV31"
+	next = "SPOD16"
+	secretnext = "SPOD16"
+	sky1 = "SPOD0070"
+	music = "D_SPOD32"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}
+
+map SPOD33 "Descent to Nowhere"
+{
+	titlepatch = "SPODV32"
+	next = "SPOD01"
+	secretnext = "SPOD01"
+	sky1 = "SPOD0070"
+	music = "D_SPOD33"
+	intermusic = "D_SPODIN"
+	ExitPic = "SPODINT"
+	EnterPic = "SPODINT"
+}

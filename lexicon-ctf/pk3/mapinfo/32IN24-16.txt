@@ -1,0 +1,414 @@
+// 32in24-16: DOOT CTF Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map YD1601 "Bad Times at the Armory"
+{
+	titlepatch = "YD16V00"
+	next = "YD1602"
+	secretnext = "YD1602"
+	sky1 = "YD162018"
+	music = "D_YD1601"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1602 "Flag Quest"
+{
+	titlepatch = "YD16V01"
+	next = "YD1603"
+	secretnext = "YD1603"
+	sky1 = "YD160642"
+	music = "D_YD1602"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1603 "Cthulhu Fhtagn (What a Wonderful Phrase)"
+{
+	titlepatch = "YD16V02"
+	next = "YD1604"
+	secretnext = "YD1604"
+	sky1 = "YD160642"
+	music = "D_YD1603"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1604 "The Greasy Brown Toad Bloater Special"
+{
+	titlepatch = "YD16V03"
+	next = "YD1605"
+	secretnext = "YD1605"
+	sky1 = "YD162017"
+	music = "D_YD1604"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1605 "Stones 'n' Bones"
+{
+	titlepatch = "YD16V04"
+	next = "YD1606"
+	secretnext = "YD1606"
+	sky1 = "YD160642"
+	music = "D_YD1605"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1606 "Spooky Shit"
+{
+	titlepatch = "YD16V05"
+	next = "YD1607"
+	secretnext = "YD1607"
+	sky1 = "YD160642"
+	music = "D_YD1606"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1607 "Tootsie Roll Showdown"
+{
+	titlepatch = "YD16V06"
+	next = "YD1608"
+	secretnext = "YD1608"
+	sky1 = "YD160642"
+	music = "D_YD1607"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1608 "Peruvian Voodoo Fortress"
+{
+	titlepatch = "YD16V07"
+	next = "YD1609"
+	secretnext = "YD1609"
+	sky1 = "YD162027"
+	music = "D_YD1608"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1609 "Count Mortimer's Quest"
+{
+	titlepatch = "YD16V08"
+	next = "YD1610"
+	secretnext = "YD1610"
+	sky1 = "YD160642"
+	music = "D_YD1609"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1610 "Scarydarkfast"
+{
+	titlepatch = "YD16V09"
+	next = "YD1611"
+	secretnext = "YD1611"
+	sky1 = "YD160642"
+	music = "D_YD1610"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1611 "Count Toothy's Super Canoe"
+{
+	titlepatch = "YD16V10"
+	next = "YD1612"
+	secretnext = "YD1612"
+	sky1 = "YD160642"
+	music = "D_YD1611"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1612 "The Devil Is Evil"
+{
+	titlepatch = "YD16V11"
+	next = "YD1613"
+	secretnext = "YD1613"
+	sky1 = "YD160643"
+	music = "D_YD1612"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1613 "Ren & Stimpack"
+{
+	titlepatch = "YD16V12"
+	next = "YD1614"
+	secretnext = "YD1614"
+	sky1 = "YD160643"
+	music = "D_YD1613"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1614 "Bone Pun or Something"
+{
+	titlepatch = "YD16V13"
+	next = "YD1615"
+	secretnext = "YD1615"
+	sky1 = "YD160643"
+	music = "D_YD1614"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1615 "Displeasure Island"
+{
+	titlepatch = "YD16V14"
+	next = "YD1616"
+	secretnext = "YD1616"
+	sky1 = "YD160643"
+	music = "D_YD1615"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1616 "Voodoo Geometry"
+{
+	titlepatch = "YD16V15"
+	next = "YD1617"
+	secretnext = "YD1617"
+	sky1 = "YD160643"
+	music = "D_YD1616"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1617 "Creepy Cube Conspiracy"
+{
+	titlepatch = "YD16V16"
+	next = "YD1618"
+	secretnext = "YD1618"
+	sky1 = "YD162032"
+	music = "D_YD1617"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1618 "Grave Danger"
+{
+	titlepatch = "YD16V17"
+	next = "YD1619"
+	secretnext = "YD1619"
+	sky1 = "YD160643"
+	music = "D_YD1618"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1619 "Come On Down to Spooky Town"
+{
+	titlepatch = "YD16V18"
+	next = "YD1620"
+	secretnext = "YD1620"
+	sky1 = "YD160643"
+	music = "D_YD1619"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1620 "Get On the Floor, Everybody Walk the Bloodivore"
+{
+	titlepatch = "YD16V19"
+	next = "YD1621"
+	secretnext = "YD1621"
+	sky1 = "YD160643"
+	music = "D_YD1620"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1621 "Gloomy Gulch"
+{
+	titlepatch = "YD16V20"
+	next = "YD1622"
+	secretnext = "YD1622"
+	sky1 = "YD162050"
+	music = "D_YD1621"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1622 "Captive's Crypts"
+{
+	titlepatch = "YD16V21"
+	next = "YD1623"
+	secretnext = "YD1623"
+	sky1 = "YD162053"
+	music = "D_YD1622"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1623 "Pumpkin Patch Kids"
+{
+	titlepatch = "YD16V22"
+	next = "YD1624"
+	secretnext = "YD1624"
+	sky1 = "YD162043"
+	music = "D_YD1623"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1624 "32spooky24me"
+{
+	titlepatch = "YD16V23"
+	next = "YD1625"
+	secretnext = "YD1625"
+	sky1 = "YD160644"
+	music = "D_YD1624"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1625 "BAD MOON"
+{
+	titlepatch = "YD16V24"
+	next = "YD1626"
+	secretnext = "YD1626"
+	sky1 = "YD160644"
+	music = "D_YD1625"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1626 "YOU'RE GONNA HAVE A BAD TIME"
+{
+	titlepatch = "YD16V25"
+	next = "YD1627"
+	secretnext = "YD1627"
+	sky1 = "YD160644"
+	music = "D_YD1626"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1627 "Castles of the Cyber-Creeps"
+{
+	titlepatch = "YD16V26"
+	next = "YD1628"
+	secretnext = "YD1628"
+	sky1 = "YD160644"
+	music = "D_YD1627"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1628 "FatSmile.jpg"
+{
+	titlepatch = "YD16V27"
+	next = "YD1629"
+	secretnext = "YD1629"
+	sky1 = "YD162055"
+	music = "D_YD1628"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1629 "The Treefolk Assault Pumpkin Valley"
+{
+	titlepatch = "YD16V28"
+	next = "YD1630"
+	secretnext = "YD1630"
+	sky1 = "YD160644"
+	music = "D_YD1629"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1630 "GASTERISK"
+{
+	titlepatch = "YD16V29"
+	next = "YD1631"
+	secretnext = "YD1631"
+	sky1 = "YD160644"
+	music = "D_YD1630"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1631 "Naval Skeletal Battle +"
+{
+	titlepatch = "YD16V30"
+	next = "YD1632"
+	secretnext = "YD1632"
+	sky1 = "YD162057"
+	music = "D_YD1631"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1632 "The Wolfenshining"
+{
+	titlepatch = "YD16V31"
+	next = "YD1633"
+	secretnext = "YD1633"
+	sky1 = "YD160644"
+	music = "D_YD1632"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1633 "Naval Skeletal Battle"
+{
+	titlepatch = "YD16V32"
+	next = "YD1634"
+	secretnext = "YD1634"
+	sky1 = "YD160642"
+	music = "D_YD1633"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}
+
+map YD1634 "Coloured War"
+{
+	titlepatch = "YD16V33"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "YD160643"
+	music = "D_YD1634"
+	intermusic = "D_YD16IN"
+	ExitPic = "YD16INT"
+	EnterPic = "YD16INT"
+}

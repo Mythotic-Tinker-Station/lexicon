@@ -1,0 +1,440 @@
+// No End in Sight Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NEISE1M1 "Terminal"
+{
+	titlepatch = "NEISV00"
+	next = "NEISE1M2"
+	secretnext = "NEISE1M2"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M1"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M2 "Slime Trails"
+{
+	titlepatch = "NEISV01"
+	next = "NEISE1M3"
+	secretnext = "NEISE1M3"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M2"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M3 "Logistics Center"
+{
+	titlepatch = "NEISV02"
+	next = "NEISE1M4"
+	secretnext = "NEISE1M9"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M3"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M4 "Abandoned Factory"
+{
+	titlepatch = "NEISV03"
+	next = "NEISE1M5"
+	secretnext = "NEISE1M5"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M4"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M5 "Warehouse"
+{
+	titlepatch = "NEISV04"
+	next = "NEISE1M6"
+	secretnext = "NEISE1M6"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M5"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M6 "Power Core"
+{
+	titlepatch = "NEISV05"
+	next = "NEISE1M7"
+	secretnext = "NEISE1M7"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M6"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M7 "Biosphere"
+{
+	titlepatch = "NEISV06"
+	next = "NEISE1M8"
+	secretnext = "NEISE1M8"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M7"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M8 "Enigma"
+{
+	titlepatch = "NEISV07"
+	next = "NEISE2M1"
+	secretnext = "NEISE2M1"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M8"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map NEISE1M9 "Quarantine Silos"
+{
+	titlepatch = "NEISV08"
+	next = "NEISE1M4"
+	secretnext = "NEISE1M4"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E1M9"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE1M0 "Tom's Halls"
+{
+	titlepatch = "NEISV09"
+	next = "NEISE1M4"
+	secretnext = "NEISE1M4"
+	sky1 = "NEIS0435"
+	music = "$MUSIC_E2M1"
+	ExitPic = "NEISINT1"
+	EnterPic = "NEISINT1"
+}
+
+map NEISE2M1 "Receiving Station"
+{
+	titlepatch = "NEISV10"
+	next = "NEISE2M2"
+	secretnext = "NEISE2M2"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M1"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M2 "Proving Grounds"
+{
+	titlepatch = "NEISV11"
+	next = "NEISE2M3"
+	secretnext = "NEISE2M3"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M2"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M3 "Contagion Engine"
+{
+	titlepatch = "NEISV12"
+	next = "NEISE2M4"
+	secretnext = "NEISE2M4"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M3"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M4 "Derelict Vessel"
+{
+	titlepatch = "NEISV13"
+	next = "NEISE2M5"
+	secretnext = "NEISE2M5"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M4"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M5 "Deep Storage"
+{
+	titlepatch = "NEISV14"
+	next = "NEISE2M6"
+	secretnext = "NEISE2M9"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M5"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M6 "Poison Control"
+{
+	titlepatch = "NEISV15"
+	next = "NEISE2M7"
+	secretnext = "NEISE2M7"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M6"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M7 "Gateway Labs"
+{
+	titlepatch = "NEISV16"
+	next = "NEISE2M8"
+	secretnext = "NEISE2M8"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M7"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE2M8 "Rubicon"
+{
+	titlepatch = "NEISV17"
+	next = "NEISE3M1"
+	secretnext = "NEISE3M1"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M8"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map NEISE2M9 "Castle of Illusions"
+{
+	titlepatch = "NEISV18"
+	next = "NEISE2M6"
+	secretnext = "NEISE2M6"
+	sky1 = "NEIS0436"
+	music = "$MUSIC_E2M9"
+	ExitPic = "NEISINT2"
+	EnterPic = "NEISINT2"
+}
+
+map NEISE3M1 "Gates of Hades"
+{
+	titlepatch = "NEISV19"
+	next = "NEISE3M2"
+	secretnext = "NEISE3M2"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M1"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M2 "Emblem of Destruction"
+{
+	titlepatch = "NEISV20"
+	next = "NEISE3M3"
+	secretnext = "NEISE3M3"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M2"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M3 "The Grinder"
+{
+	titlepatch = "NEISV21"
+	next = "NEISE3M4"
+	secretnext = "NEISE3M4"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M3"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M4 "Fortuna Bridge"
+{
+	titlepatch = "NEISV22"
+	next = "NEISE3M5"
+	secretnext = "NEISE3M5"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M4"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M5 "Forgotten Caverns"
+{
+	titlepatch = "NEISV23"
+	next = "NEISE3M6"
+	secretnext = "NEISE3M6"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M5"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M6 "Anomaly Retribution"
+{
+	titlepatch = "NEISV24"
+	next = "NEISE3M7"
+	secretnext = "NEISE3M9"
+	sky1 = "NEIS0437"
+	music = "D_NEIS01"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M7 "Netherworld Citadel"
+{
+	titlepatch = "NEISV25"
+	next = "NEISE3M8"
+	secretnext = "NEISE3M8"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M7"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE3M8 "Requiem"
+{
+	titlepatch = "NEISV26"
+	next = "NEISE4M1"
+	secretnext = "NEISE4M1"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M8"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map NEISE3M9 "Lake of Fire"
+{
+	titlepatch = "NEISV27"
+	next = "NEISE3M7"
+	secretnext = "NEISE3M7"
+	sky1 = "NEIS0437"
+	music = "$MUSIC_E3M9"
+	ExitPic = "NEISINT3"
+	EnterPic = "NEISINT3"
+}
+
+map NEISE4M1 "Nexus"
+{
+	titlepatch = "NEISV28"
+	next = "NEISE4M2"
+	secretnext = "NEISE4M2"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E3M4"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M2 "Parallels"
+{
+	titlepatch = "NEISV29"
+	next = "NEISE4M3"
+	secretnext = "NEISE4M9"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E3M2"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M3 "Square Zero"
+{
+	titlepatch = "NEISV30"
+	next = "NEISE4M4"
+	secretnext = "NEISE4M4"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E3M3"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M4 "Wartorn Precinct"
+{
+	titlepatch = "NEISV31"
+	next = "NEISE4M5"
+	secretnext = "NEISE4M5"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E1M5"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M5 "The Blood Beneath"
+{
+	titlepatch = "NEISV32"
+	next = "NEISE4M6"
+	secretnext = "NEISE4M6"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E2M7"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M6 "Sanctuary of Filth"
+{
+	titlepatch = "NEISV33"
+	next = "NEISE4M7"
+	secretnext = "NEISE4M0"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E2M4"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+	cyberdemonspecial
+	specialaction_opendoor
+	translator = "translators/NEISSPEC.txt"
+}
+
+map NEISE4M7 "Vacuum Consortium"
+{
+	titlepatch = "NEISV34"
+	next = "NEISE4M8"
+	secretnext = "NEISE4M8"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E2M6"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M8 "No End In Sight"
+{
+	titlepatch = "NEISV35"
+	next = "NEISVR"
+	secretnext = "NEISVR"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E2M5"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map NEISE4M9 "Vile Cross"
+{
+	titlepatch = "NEISV36"
+	next = "NEISE4M3"
+	secretnext = "NEISE4M3"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E1M9"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}
+
+map NEISE4M0 "RGC Alpha"
+{
+	titlepatch = "NEISV37"
+	next = "NEISE4M7"
+	secretnext = "NEISE4M7"
+	sky1 = "NEIS0438"
+	music = "$MUSIC_E2M8"
+	ExitPic = "NEISINT4"
+	EnterPic = "NEISINT4"
+}

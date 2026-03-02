@@ -1,0 +1,608 @@
+// Onslaught DM Pack Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map OSLP01 "Onslaught DM Pack Map 1"
+{
+	next = "OSLP02"
+	secretnext = "OSLP02"
+	sky1 = "OSLP0545"
+	music = "D_OSLP01"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP02 "Onslaught DM Pack Map 2"
+{
+	next = "OSLP03"
+	secretnext = "OSLP03"
+	sky1 = "OSLP0545"
+	music = "D_OSLP02"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP03 "Onslaught DM Pack Map 3"
+{
+	next = "OSLP04"
+	secretnext = "OSLP04"
+	sky1 = "OSLP0545"
+	music = "D_OSLP03"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP04 "Onslaught DM Pack Map 4"
+{
+	next = "OSLP05"
+	secretnext = "OSLP05"
+	sky1 = "OSLP0545"
+	music = "D_OSLP04"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP05 "Onslaught DM Pack Map 5"
+{
+	next = "OSLP06"
+	secretnext = "OSLP06"
+	sky1 = "OSLP0545"
+	music = "D_OSLP05"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP06 "Onslaught DM Pack Map 6"
+{
+	next = "OSLP07"
+	secretnext = "OSLP07"
+	sky1 = "OSLP0545"
+	music = "D_OSLP06"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP07 "Onslaught DM Pack Map 7"
+{
+	next = "OSLP08"
+	secretnext = "OSLP08"
+	sky1 = "OSLP0545"
+	music = "D_OSLP07"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	Map07Special
+}
+
+map OSLP08 "Onslaught DM Pack Map 8"
+{
+	next = "OSLP09"
+	secretnext = "OSLP09"
+	sky1 = "OSLP0545"
+	music = "D_OSLP08"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP09 "Onslaught DM Pack Map 9"
+{
+	next = "OSLP10"
+	secretnext = "OSLP10"
+	sky1 = "OSLP0545"
+	music = "D_OSLP09"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP10 "Onslaught DM Pack Map 10"
+{
+	next = "OSLP11"
+	secretnext = "OSLP11"
+	sky1 = "OSLP0545"
+	music = "D_OSLP10"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP11 "Onslaught DM Pack Map 11"
+{
+	next = "OSLP12"
+	secretnext = "OSLP12"
+	sky1 = "OSLP0545"
+	music = "D_OSLP11"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP12 "Onslaught DM Pack Map 12"
+{
+	next = "OSLP13"
+	secretnext = "OSLP13"
+	sky1 = "OSLP0546"
+	music = "D_OSLP12"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP13 "Onslaught DM Pack Map 13"
+{
+	next = "OSLP14"
+	secretnext = "OSLP14"
+	sky1 = "OSLP0546"
+	music = "D_OSLP13"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP14 "Onslaught DM Pack Map 14"
+{
+	next = "OSLP15"
+	secretnext = "OSLP15"
+	sky1 = "OSLP0546"
+	music = "D_OSLP14"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP15 "Onslaught DM Pack Map 15"
+{
+	next = "OSLP16"
+	secretnext = "OSLP16"
+	sky1 = "OSLP0546"
+	music = "D_OSLP15"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP16 "Onslaught DM Pack Map 16"
+{
+	next = "OSLP17"
+	secretnext = "OSLP17"
+	sky1 = "OSLP0546"
+	music = "D_OSLP16"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP17 "Onslaught DM Pack Map 17"
+{
+	next = "OSLP18"
+	secretnext = "OSLP18"
+	sky1 = "OSLP0546"
+	music = "D_OSLP17"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP18 "Onslaught DM Pack Map 18"
+{
+	next = "OSLP19"
+	secretnext = "OSLP19"
+	sky1 = "OSLP0546"
+	music = "D_OSLP18"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP19 "Onslaught DM Pack Map 19"
+{
+	next = "OSLP20"
+	secretnext = "OSLP20"
+	sky1 = "OSLP0546"
+	music = "D_OSLP19"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP20 "Onslaught DM Pack Map 20"
+{
+	next = "OSLP21"
+	secretnext = "OSLP21"
+	sky1 = "OSLP0546"
+	music = "D_OSLP20"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP21 "Onslaught DM Pack Map 21"
+{
+	next = "OSLP22"
+	secretnext = "OSLP22"
+	sky1 = "OSLP0547"
+	music = "D_OSLP21"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP22 "Penetration"
+{
+	titlepatch = "OSLPV00"
+	next = "OSLP23"
+	secretnext = "OSLP23"
+	sky1 = "OSLP0545"
+	music = "D_OSLP22"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP23 "Uroburos"
+{
+	titlepatch = "OSLPV01"
+	next = "OSLP24"
+	secretnext = "OSLP24"
+	sky1 = "OSLP0545"
+	music = "D_OSLP23"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP24 "Abrasion"
+{
+	titlepatch = "OSLPV02"
+	next = "OSLP25"
+	secretnext = "OSLP25"
+	sky1 = "OSLP0545"
+	music = "D_OSLP24"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP25 "Einfach"
+{
+	titlepatch = "OSLPV03"
+	next = "OSLP26"
+	secretnext = "OSLP26"
+	sky1 = "OSLP0545"
+	music = "D_OSLP25"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP26 "Doom 4 Tough"
+{
+	titlepatch = "OSLPV04"
+	next = "OSLP27"
+	secretnext = "OSLP27"
+	sky1 = "OSLP0545"
+	music = "D_OSLP26"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP27 "Dirge"
+{
+	titlepatch = "OSLPV05"
+	next = "OSLP28"
+	secretnext = "OSLP28"
+	sky1 = "OSLP0545"
+	music = "D_OSLP27"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP28 "Mortal Coil"
+{
+	titlepatch = "OSLPV06"
+	next = "OSLP29"
+	secretnext = "OSLP29"
+	sky1 = "OSLP0545"
+	music = "D_OSLP28"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP29 "Winged Fortress"
+{
+	titlepatch = "OSLPV07"
+	next = "OSLP30"
+	secretnext = "OSLP30"
+	sky1 = "OSLP0545"
+	music = "D_OSLP29"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP30 "Mars Sand"
+{
+	titlepatch = "OSLPV08"
+	next = "OSLP31"
+	secretnext = "OSLP31"
+	sky1 = "OSLP0545"
+	music = "D_OSLP30"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	allowmonstertelefrags
+}
+
+map OSLP31 "Onslaught"
+{
+	titlepatch = "OSLPV09"
+	next = "OSLP32"
+	secretnext = "OSLP32"
+	sky1 = "OSLP0545"
+	music = "D_OSLP31"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP32 "Rusted Judas"
+{
+	titlepatch = "OSLPV10"
+	next = "OSLP33"
+	secretnext = "OSLP33"
+	sky1 = "OSLP0545"
+	music = "D_OSLP32"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP33 "Hell Pit Anal Temple"
+{
+	titlepatch = "OSLPV11"
+	next = "OSLP34"
+	secretnext = "OSLP34"
+	sky1 = "OSLP0547"
+	music = "D_OSLP33"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	OutsideFog = "ff ff ff"
+}
+
+map OSLP34 "Haxed"
+{
+	titlepatch = "OSLPV12"
+	next = "OSLP35"
+	secretnext = "OSLP35"
+	sky1 = "OSLP0547"
+	music = "D_OSLP34"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP35 "Casualty"
+{
+	titlepatch = "OSLPV13"
+	next = "OSLP36"
+	secretnext = "OSLP36"
+	sky1 = "OSLP0547"
+	music = "D_OSLP35"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP36 "Carcass Depository"
+{
+	titlepatch = "OSLPV14"
+	next = "OSLP37"
+	secretnext = "OSLP37"
+	sky1 = "OSLP0547"
+	music = "D_OSLP36"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	OutsideFog = "ff ff ff"
+}
+
+map OSLP37 "Explode"
+{
+	titlepatch = "OSLPV15"
+	next = "OSLP38"
+	secretnext = "OSLP38"
+	sky1 = "OSLP0547"
+	music = "D_OSLP08"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP38 "Departure Point"
+{
+	titlepatch = "OSLPV16"
+	next = "OSLP39"
+	secretnext = "OSLP39"
+	sky1 = "OSLP0547"
+	music = "D_OSLP37"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP39 "Unbeherrschtheit"
+{
+	titlepatch = "OSLPV17"
+	next = "OSLP40"
+	secretnext = "OSLP40"
+	sky1 = "OSLP0547"
+	music = "D_OSLP38"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP40 "Metal Fact"
+{
+	titlepatch = "OSLPV18"
+	next = "OSLP41"
+	secretnext = "OSLP41"
+	sky1 = "OSLP0545"
+	music = "D_OSLP08"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP41 "Forsaken Ruins"
+{
+	titlepatch = "OSLPV19"
+	next = "OSLP42"
+	secretnext = "OSLP42"
+	sky1 = "OSLP0545"
+	music = "D_OSLP31"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP42 "Execution"
+{
+	titlepatch = "OSLPV20"
+	next = "OSLP43"
+	secretnext = "OSLP43"
+	sky1 = "OSLP0550"
+	music = "D_OSLP39"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP43 "Anceint Temple"
+{
+	titlepatch = "OSLPV21"
+	next = "OSLP44"
+	secretnext = "OSLP44"
+	sky1 = "OSLP0550"
+	music = "D_OSLP40"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP44 "The UAC"
+{
+	titlepatch = "OSLPV22"
+	next = "OSLP45"
+	secretnext = "OSLP45"
+	sky1 = "OSLP0548"
+	music = "D_OSLP41"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}
+
+map OSLP45 "Cleaning Complex"
+{
+	titlepatch = "OSLPV23"
+	next = "OSLP46"
+	secretnext = "OSLP46"
+	sky1 = "OSLP0548"
+	music = "D_OSLP42"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}
+
+map OSLP46 "Deserted Base"
+{
+	titlepatch = "OSLPV24"
+	next = "OSLP47"
+	secretnext = "OSLP47"
+	sky1 = "OSLP0548"
+	music = "D_OSLP43"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}
+
+map OSLP47 "Daemonic Castle"
+{
+	titlepatch = "OSLPV25"
+	next = "OSLP48"
+	secretnext = "OSLP48"
+	sky1 = "OSLP0549"
+	music = "D_OSLP44"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP48 "Bloody Computer Zone"
+{
+	titlepatch = "OSLPV26"
+	next = "OSLP49"
+	secretnext = "OSLP49"
+	sky1 = "OSLP0548"
+	music = "D_OSLP45"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}
+
+map OSLP49 "Unholy Cathedral"
+{
+	titlepatch = "OSLPV27"
+	next = "OSLP50"
+	secretnext = "OSLP50"
+	sky1 = "OSLP0550"
+	music = "D_OSLP46"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+}
+
+map OSLP50 "Hell Arena"
+{
+	titlepatch = "OSLPV28"
+	next = "OSLP51"
+	secretnext = "OSLP51"
+	sky1 = "OSLP0548"
+	music = "D_OSLP47"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}
+
+map OSLP51 "Refuelling Base"
+{
+	titlepatch = "OSLPV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "OSLP0548"
+	music = "D_OSLP48"
+	intermusic = "D_OSLPIN"
+	ExitPic = "OSLPINT"
+	EnterPic = "OSLPINT"
+	ForceNoSkyStretch
+}

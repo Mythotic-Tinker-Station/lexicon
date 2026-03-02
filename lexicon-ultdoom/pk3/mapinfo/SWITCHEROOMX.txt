@@ -1,0 +1,181 @@
+// Switcheroom: The Forgotten Maps Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SWRXE1M1 "Hellgar"
+{
+	titlepatch = "SWRXV00"
+	next = "SWRXE1M2"
+	secretnext = "SWRXE1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map SWRXE1M2 "Nuclear Keep"
+{
+	titlepatch = "SWRXV01"
+	next = "SWRXE1M3"
+	secretnext = "SWRXE1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map SWRXE1M3 "Hell Plant"
+{
+	titlepatch = "SWRXV02"
+	next = "SWRXE1M4"
+	secretnext = "SWRXE1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map SWRXE1M4 "Commnd Hated"
+{
+	titlepatch = "SWRXV03"
+	next = "SWRXE1M5"
+	secretnext = "SWRXE1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map SWRXE1M5 "Perfect Control"
+{
+	titlepatch = "SWRXV04"
+	next = "SWRXE1M6"
+	secretnext = "SWRXE1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map SWRXE1M6 "Against Thee Processing Too"
+{
+	titlepatch = "SWRXV05"
+	next = "SWRXE1M7"
+	secretnext = "SWRXE1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map SWRXE1M7 "Babel Anomaly"
+{
+	titlepatch = "SWRXV06"
+	next = "SWRXE1M8"
+	secretnext = "SWRXE1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map SWRXE1M8 "Babel Anomaly Too"
+{
+	titlepatch = "SWRXV07"
+	next = "SWRXE1M9"
+	secretnext = "SWRXE1M9"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map SWRXE1M9 "Military Fortress"
+{
+	titlepatch = "SWRXV08"
+	next = "SWRXE2M1"
+	secretnext = "SWRXE2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M9"
+}
+
+map SWRXE2M1 "Radiation Zone"
+{
+	titlepatch = "SWRXV09"
+	next = "SWRXE2M2"
+	secretnext = "SWRXE2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map SWRXE2M2 "Deimos Warrens"
+{
+	titlepatch = "SWRXV10"
+	next = "SWRXE2M3"
+	secretnext = "SWRXE2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map SWRXE2M3 "Warrens Anomaly"
+{
+	titlepatch = "SWRXV11"
+	next = "SWRXE2M4"
+	secretnext = "SWRXE2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map SWRXE2M4 "House of Control"
+{
+	titlepatch = "SWRXV12"
+	next = "SWRXE2M5"
+	secretnext = "SWRXE2M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map SWRXE2M5 "Unto Dis"
+{
+	titlepatch = "SWRXV13"
+	next = "SWRXE2M6"
+	secretnext = "SWRXE2M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map SWRXE2M6 "Slough of Hatred"
+{
+	titlepatch = "SWRXV14"
+	next = "SWRXE2M7"
+	secretnext = "SWRXE2M7"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M2"
+}
+
+map SWRXE2M7 "They Will Cathedral"
+{
+	titlepatch = "SWRXV15"
+	next = "SWRXE2M8"
+	secretnext = "SWRXE2M8"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M7"
+}
+
+map SWRXE2M8 "Commnd Will Repent"
+{
+	titlepatch = "SWRXV16"
+	next = "SWRXE2M9"
+	secretnext = "SWRXE2M9"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M7"
+}
+
+map SWRXE2M9 "Dis The Cruel"
+{
+	titlepatch = "SWRXV17"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M5"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}

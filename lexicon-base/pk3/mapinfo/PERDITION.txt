@@ -1,0 +1,393 @@
+// Perdition's Gate Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map PDGT01 "UAC HQ"
+{
+	titlepatch = "CWILV00"
+	next = "PDGT02"
+	secretnext = "PDGT02"
+	sky1 = "PDGT0094"
+	music = "D_PDGT01"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT02 "UAC Complex B"
+{
+	titlepatch = "CWILV01"
+	next = "PDGT03"
+	secretnext = "PDGT03"
+	sky1 = "PDGT0094"
+	music = "D_PDGT02"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT03 "Recreational Yard"
+{
+	titlepatch = "CWILV02"
+	next = "PDGT04"
+	secretnext = "PDGT04"
+	sky1 = "PDGT0094"
+	music = "D_PDGT03"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT04 "Storage Area"
+{
+	titlepatch = "CWILV03"
+	next = "PDGT05"
+	secretnext = "PDGT05"
+	sky1 = "PDGT0094"
+	music = "D_PDGT04"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT05 "Sub-Basement"
+{
+	titlepatch = "CWILV04"
+	next = "PDGT06"
+	secretnext = "PDGT06"
+	sky1 = "PDGT0094"
+	music = "D_PDGT05"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT06 "Delta Area"
+{
+	titlepatch = "CWILV05"
+	next = "PDGT07"
+	secretnext = "PDGT07"
+	sky1 = "PDGT0094"
+	music = "D_PDGT06"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT07 "Toxin Refinery"
+{
+	titlepatch = "CWILV06"
+	next = "PDGT08"
+	secretnext = "PDGT08"
+	sky1 = "PDGT0094"
+	music = "D_PDGT07"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+	Map07Special
+}
+
+map PDGT08 "Drainage Tunnels"
+{
+	titlepatch = "CWILV07"
+	next = "PDGT09"
+	secretnext = "PDGT09"
+	sky1 = "PDGT0094"
+	music = "D_PDGT08"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT09 "UAC Experimentation Center"
+{
+	titlepatch = "CWILV08"
+	next = "PDGT10"
+	secretnext = "PDGT10"
+	sky1 = "PDGT0094"
+	music = "D_PDGT09"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT10 "High Security Area"
+{
+	titlepatch = "CWILV09"
+	next = "PDGT11"
+	secretnext = "PDGT11"
+	sky1 = "PDGT0094"
+	music = "D_PDGT10"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT11 "UAC Teleporter Labs"
+{
+	titlepatch = "CWILV10"
+	next = "PDGT12"
+	secretnext = "PDGT12"
+	sky1 = "PDGT0094"
+	music = "D_PDGT11"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT12 "Ancient Gate"
+{
+	titlepatch = "CWILV11"
+	next = "PDGT13"
+	secretnext = "PDGT13"
+	sky1 = "PDGT0095"
+	music = "D_PDGT12"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT13 "Teleport Platform"
+{
+	titlepatch = "CWILV12"
+	next = "PDGT14"
+	secretnext = "PDGT14"
+	sky1 = "PDGT0095"
+	music = "D_PDGT13"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT14 "Transfer Locking Area"
+{
+	titlepatch = "CWILV13"
+	next = "PDGT15"
+	secretnext = "PDGT15"
+	sky1 = "PDGT0095"
+	music = "D_PDGT14"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT15 "Teleporter Center"
+{
+	titlepatch = "CWILV14"
+	next = "PDGT16"
+	secretnext = "PDGT31"
+	sky1 = "PDGT0095"
+	music = "D_PDGT15"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT16 "Teleporter Power"
+{
+	titlepatch = "CWILV15"
+	next = "PDGT17"
+	secretnext = "PDGT17"
+	sky1 = "PDGT0095"
+	music = "D_PDGT16"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT17 "The Throne of the Vile"
+{
+	titlepatch = "CWILV16"
+	next = "PDGT18"
+	secretnext = "PDGT18"
+	sky1 = "PDGT0095"
+	music = "D_PDGT17"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT18 "Computer Center"
+{
+	titlepatch = "CWILV17"
+	next = "PDGT19"
+	secretnext = "PDGT19"
+	sky1 = "PDGT0095"
+	music = "D_PDGT18"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT19 "Closer to Hell"
+{
+	titlepatch = "CWILV18"
+	next = "PDGT20"
+	secretnext = "PDGT20"
+	sky1 = "PDGT0095"
+	music = "D_PDGT19"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT20 "The Last Stand"
+{
+	titlepatch = "CWILV19"
+	next = "PDGT21"
+	secretnext = "PDGT21"
+	sky1 = "PDGT0095"
+	music = "D_PDGT20"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT21 "Hell's Gate"
+{
+	titlepatch = "CWILV20"
+	next = "PDGT22"
+	secretnext = "PDGT22"
+	sky1 = "PDGT0096"
+	music = "D_PDGT21"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT22 "The Deepest Reaches"
+{
+	titlepatch = "CWILV21"
+	next = "PDGT23"
+	secretnext = "PDGT23"
+	sky1 = "PDGT0096"
+	music = "D_PDGT22"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT23 "Hell's Gymnasium"
+{
+	titlepatch = "CWILV22"
+	next = "PDGT24"
+	secretnext = "PDGT24"
+	sky1 = "PDGT0096"
+	music = "D_PDGT23"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT24 "The BloodStone Gardens of Hell"
+{
+	titlepatch = "CWILV23"
+	next = "PDGT25"
+	secretnext = "PDGT25"
+	sky1 = "PDGT0096"
+	music = "D_PDGT24"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT25 "Hell's Park"
+{
+	titlepatch = "CWILV24"
+	next = "PDGT26"
+	secretnext = "PDGT26"
+	sky1 = "PDGT0096"
+	music = "D_PDGT25"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT26 "The Blood Tunnels"
+{
+	titlepatch = "CWILV25"
+	next = "PDGT27"
+	secretnext = "PDGT27"
+	sky1 = "PDGT0096"
+	music = "D_PDGT26"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT27 "Hell's Masterpiece"
+{
+	titlepatch = "CWILV26"
+	next = "PDGT28"
+	secretnext = "PDGT28"
+	sky1 = "PDGT0096"
+	music = "D_PDGT27"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT28 "High-Tech Hades"
+{
+	titlepatch = "CWILV27"
+	next = "PDGT29"
+	secretnext = "PDGT29"
+	sky1 = "PDGT0096"
+	music = "D_PDGT28"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT29 "The Bomb Facility"
+{
+	titlepatch = "CWILV28"
+	next = "PDGT30"
+	secretnext = "PDGT30"
+	sky1 = "PDGT0096"
+	music = "D_PDGT29"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT30 "The Escape"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "PDGT0096"
+	music = "D_PDGT30"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+	allowmonstertelefrags
+}
+
+map PDGT31 "The Planet of Living Rock"
+{
+	titlepatch = "CWILV30"
+	next = "PDGT16"
+	secretnext = "PDGT32"
+	sky1 = "PDGT0096"
+	music = "D_PDGT31"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}
+
+map PDGT32 "The Sea of Radioactive Waste"
+{
+	titlepatch = "CWILV31"
+	next = "PDGT16"
+	secretnext = "PDGT16"
+	sky1 = "PDGT0096"
+	music = "D_PDGT32"
+	intermusic = "D_PDGTIN"
+	ExitPic = "PDGTINT"
+	EnterPic = "PDGTINT"
+}

@@ -1,0 +1,161 @@
+// Newgothic Movement 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NGM201 "Newgothic Movement 2 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "NGM202"
+	secretnext = "NGM202"
+	sky1 = "NGM20212"
+	music = "D_NGM201"
+}
+
+map NGM202 "Newgothic Movement 2 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "NGM203"
+	secretnext = "NGM203"
+	sky1 = "NGM20212"
+	music = "D_NGM202"
+}
+
+map NGM203 "Newgothic Movement 2 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "NGM204"
+	secretnext = "NGM204"
+	sky1 = "NGM20212"
+	music = "D_NGM203"
+}
+
+map NGM204 "Newgothic Movement 2 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "NGM205"
+	secretnext = "NGM205"
+	sky1 = "NGM20212"
+	music = "D_NGM204"
+}
+
+map NGM205 "Newgothic Movement 2 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "NGM206"
+	secretnext = "NGM206"
+	sky1 = "NGM20212"
+	music = "D_NGM205"
+}
+
+map NGM206 "Newgothic Movement 2 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "NGM207"
+	secretnext = "NGM207"
+	sky1 = "NGM20212"
+	music = "D_NGM206"
+}
+
+map NGM207 "Newgothic Movement 2 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "NGM208"
+	secretnext = "NGM208"
+	sky1 = "NGM20212"
+	music = "D_NGM207"
+	Map07Special
+}
+
+map NGM208 "Newgothic Movement 2 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "NGM209"
+	secretnext = "NGM209"
+	sky1 = "NGM20212"
+	music = "D_NGM208"
+}
+
+map NGM209 "Newgothic Movement 2 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "NGM210"
+	secretnext = "NGM210"
+	sky1 = "NGM20212"
+	music = "D_NGM209"
+}
+
+map NGM210 "Newgothic Movement 2 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "NGM211"
+	secretnext = "NGM211"
+	sky1 = "NGM20212"
+	music = "D_NGM210"
+}
+
+map NGM211 "Newgothic Movement 2 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "NGM212"
+	secretnext = "NGM212"
+	sky1 = "NGM20212"
+	music = "D_NGM211"
+}
+
+map NGM212 "Newgothic Movement 2 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "NGM213"
+	secretnext = "NGM213"
+	sky1 = "NGM20213"
+	music = "D_NGM212"
+}
+
+map NGM213 "Newgothic Movement 2 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "NGM214"
+	secretnext = "NGM214"
+	sky1 = "NGM20213"
+	music = "D_NGM213"
+}
+
+map NGM214 "Newgothic Movement 2 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "NGM215"
+	secretnext = "NGM215"
+	sky1 = "NGM20213"
+	music = "D_NGM214"
+}
+
+map NGM215 "Newgothic Movement 2 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "NGM216"
+	secretnext = "NGM231"
+	sky1 = "NGM20213"
+	music = "D_NGM215"
+}
+
+map NGM216 "Newgothic Movement 2 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "NGM20213"
+	music = "D_NGM216"
+}
+
+map NGM231 "Newgothic Movement 2 Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "NGM216"
+	secretnext = "NGM216"
+	sky1 = "NGM20214"
+	music = "D_NGM231"
+}

@@ -1,0 +1,438 @@
+// Whispers of Satan Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map WSPS01 "Sintlabs"
+{
+	titlepatch = "WSPSV00"
+	next = "WSPS02"
+	secretnext = "WSPS99"
+	sky1 = "WSPS0272"
+	music = "D_WSPS01"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS02 "The Sink"
+{
+	titlepatch = "WSPSV01"
+	next = "WSPS03"
+	secretnext = "WSPS03"
+	sky1 = "WSPS0272"
+	music = "D_WSPS02"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS03 "Poison Sewers"
+{
+	titlepatch = "WSPSV02"
+	next = "WSPS04"
+	secretnext = "WSPS04"
+	sky1 = "WSPS0272"
+	music = "D_WSPS03"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS04 "Lost Beacon"
+{
+	titlepatch = "WSPSV03"
+	next = "WSPS05"
+	secretnext = "WSPS05"
+	sky1 = "WSPS0272"
+	music = "D_WSPS04"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS05 "Pumping Station 083A"
+{
+	titlepatch = "WSPSV04"
+	next = "WSPS06"
+	secretnext = "WSPS06"
+	sky1 = "WSPS0272"
+	music = "D_WSPS05"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS06 "Covert Operations Facility"
+{
+	titlepatch = "WSPSV05"
+	next = "WSPS07"
+	secretnext = "WSPS07"
+	sky1 = "WSPS0272"
+	music = "D_WSPS06"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS07 "Death Alley"
+{
+	titlepatch = "WSPSV06"
+	next = "WSPS08"
+	secretnext = "WSPS08"
+	sky1 = "WSPS0272"
+	music = "D_WSPS07"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+	Map07Special
+}
+
+map WSPS08 "Basement Jazz"
+{
+	titlepatch = "WSPSV07"
+	next = "WSPS09"
+	secretnext = "WSPS09"
+	sky1 = "WSPS0272"
+	music = "D_WSPS08"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS09 "The School"
+{
+	titlepatch = "WSPSV08"
+	next = "WSPS10"
+	secretnext = "WSPS10"
+	sky1 = "WSPS0272"
+	music = "D_WSPS09"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS10 "Playgrounds of Caesar"
+{
+	titlepatch = "WSPSV09"
+	next = "WSPS11"
+	secretnext = "WSPS11"
+	sky1 = "WSPS0272"
+	music = "D_WSPS10"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS11 "CyberFunk"
+{
+	titlepatch = "WSPSV10"
+	next = "WSPS12"
+	secretnext = "WSPS12"
+	sky1 = "WSPS0272"
+	music = "D_WSPS11"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS12 "Blood Station"
+{
+	titlepatch = "WSPSV11"
+	next = "WSPS13"
+	secretnext = "WSPS13"
+	sky1 = "WSPS0273"
+	music = "D_WSPS12"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS13 "Traps of Torment"
+{
+	titlepatch = "WSPSV12"
+	next = "WSPS14"
+	secretnext = "WSPS14"
+	sky1 = "WSPS0273"
+	music = "D_WSPS13"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS14 "The Wasted Dens"
+{
+	titlepatch = "WSPSV13"
+	next = "WSPS15"
+	secretnext = "WSPS15"
+	sky1 = "WSPS0273"
+	music = "D_WSPS14"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS15 "Temple of Water"
+{
+	titlepatch = "WSPSV14"
+	next = "WSPS16"
+	secretnext = "WSPS31"
+	sky1 = "WSPS0273"
+	music = "D_WSPS15"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS16 "Undervilla"
+{
+	titlepatch = "WSPSV15"
+	next = "WSPS17"
+	secretnext = "WSPS17"
+	sky1 = "WSPS0273"
+	music = "D_WSPS16"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS17 "Mines of Despair"
+{
+	titlepatch = "WSPSV16"
+	next = "WSPS18"
+	secretnext = "WSPS18"
+	sky1 = "WSPS0273"
+	music = "D_WSPS17"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS18 "Elements"
+{
+	titlepatch = "WSPSV17"
+	next = "WSPS19"
+	secretnext = "WSPS19"
+	sky1 = "WSPS0273"
+	music = "D_WSPS18"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS19 "Cryosleep"
+{
+	titlepatch = "WSPSV18"
+	next = "WSPS20"
+	secretnext = "WSPS20"
+	sky1 = "WSPS0273"
+	music = "D_WSPS19"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS20 "Inexorable Opposition"
+{
+	titlepatch = "WSPSV19"
+	next = "WSPS21"
+	secretnext = "WSPS21"
+	sky1 = "WSPS0273"
+	music = "D_WSPS20"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS21 "2048 B.C"
+{
+	titlepatch = "WSPSV20"
+	next = "WSPS22"
+	secretnext = "WSPS22"
+	sky1 = "WSPS0274"
+	music = "D_WSPS21"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS22 "Soul Disruption"
+{
+	titlepatch = "WSPSV21"
+	next = "WSPS23"
+	secretnext = "WSPS23"
+	sky1 = "WSPS0274"
+	music = "D_WSPS22"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS23 "Pathway to Elysion"
+{
+	titlepatch = "WSPSV22"
+	next = "WSPS24"
+	secretnext = "WSPS24"
+	sky1 = "WSPS0274"
+	music = "D_WSPS23"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS24 "Ultimate Hatred"
+{
+	titlepatch = "WSPSV23"
+	next = "WSPS25"
+	secretnext = "WSPS25"
+	sky1 = "WSPS0274"
+	music = "D_WSPS24"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS25 "Vulcana"
+{
+	titlepatch = "WSPSV24"
+	next = "WSPS26"
+	secretnext = "WSPS26"
+	sky1 = "WSPS0274"
+	music = "D_WSPS25"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS26 "Hellhole"
+{
+	titlepatch = "WSPSV25"
+	next = "WSPS27"
+	secretnext = "WSPS27"
+	sky1 = "WSPS0274"
+	music = "D_WSPS26"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS27 "Halls of Cocytus"
+{
+	titlepatch = "WSPSV26"
+	next = "WSPS28"
+	secretnext = "WSPS28"
+	sky1 = "WSPS0274"
+	music = "D_WSPS27"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS28 "Sacrificial Grounds"
+{
+	titlepatch = "WSPSV27"
+	next = "WSPS29"
+	secretnext = "WSPS29"
+	sky1 = "WSPS0274"
+	music = "D_WSPS28"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS29 "Heated Trauma"
+{
+	titlepatch = "WSPSV28"
+	next = "WSPS30"
+	secretnext = "WSPS30"
+	sky1 = "WSPS0274"
+	music = "D_WSPS29"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS30 "The Verge of Revelation"
+{
+	titlepatch = "WSPSV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "WSPS0274"
+	music = "D_WSPS30"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+	allowmonstertelefrags
+}
+
+map WSPS31 "Space Station Skywalker"
+{
+	titlepatch = "WSPSV30"
+	next = "WSPS16"
+	secretnext = "WSPS32"
+	sky1 = "WSPS0274"
+	music = "D_WSPS31"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS32 "Ultimative Geheimnis"
+{
+	titlepatch = "WSPSV31"
+	next = "WSPS16"
+	secretnext = "WSPS35"
+	sky1 = "WSPS0274"
+	music = "D_WSPS32"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS33 "Credits"
+{
+	next = "WSPS01"
+	secretnext = "WSPS01"
+	sky1 = "WSPS0274"
+	music = "D_WSPS33"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS34 "1994 Revisited"
+{
+	next = "WSPS16"
+	secretnext = "WSPS16"
+	sky1 = "WSPS0276"
+	music = "D_WSPS34"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS35 "ein lustiger ort"
+{
+	titlepatch = "WSPSV34"
+	next = "WSPS16"
+	secretnext = "WSPS34"
+	sky1 = "WSPS0283"
+	music = "D_WSPS35"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}
+
+map WSPS99 "Hidden Warp Zone"
+{
+	next = "WSPS10"
+	secretnext = "WSPS27"
+	sky1 = "WSPS0272"
+	music = "D_WSPS99"
+	intermusic = "D_WSPSIN"
+	ExitPic = "WSPSINT"
+	EnterPic = "WSPSINT"
+}

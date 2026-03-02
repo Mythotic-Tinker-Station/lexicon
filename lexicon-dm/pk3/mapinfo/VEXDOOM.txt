@@ -1,0 +1,115 @@
+// Intrinsic Violence Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TVOX01 "Intrinsic Violence Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "TVOX02"
+	secretnext = "TVOX02"
+	sky1 = "TVOX0069"
+	music = "D_TVOX01"
+}
+
+map TVOX02 "Intrinsic Violence Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "TVOX03"
+	secretnext = "TVOX03"
+	sky1 = "TVOX0069"
+	music = "D_TVOX02"
+}
+
+map TVOX03 "Intrinsic Violence Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "TVOX04"
+	secretnext = "TVOX04"
+	sky1 = "TVOX0069"
+	music = "D_TVOX03"
+}
+
+map TVOX04 "Intrinsic Violence Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "TVOX05"
+	secretnext = "TVOX05"
+	sky1 = "TVOX0069"
+	music = "D_TVOX04"
+}
+
+map TVOX05 "Intrinsic Violence Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "TVOX06"
+	secretnext = "TVOX06"
+	sky1 = "TVOX0069"
+	music = "D_TVOX05"
+}
+
+map TVOX06 "Intrinsic Violence Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "TVOX07"
+	secretnext = "TVOX07"
+	sky1 = "TVOX0069"
+	music = "D_TVOX06"
+}
+
+map TVOX07 "Intrinsic Violence Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "TVOX08"
+	secretnext = "TVOX08"
+	sky1 = "TVOX0069"
+	music = "D_TVOX07"
+}
+
+map TVOX08 "Intrinsic Violence Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "TVOX09"
+	secretnext = "TVOX09"
+	sky1 = "TVOX0069"
+	music = "D_TVOX08"
+}
+
+map TVOX09 "Intrinsic Violence Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "TVOX10"
+	secretnext = "TVOX10"
+	sky1 = "TVOX0069"
+	music = "D_TVOX09"
+}
+
+map TVOX10 "Intrinsic Violence Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "TVOX31"
+	secretnext = "TVOX31"
+	sky1 = "TVOX0069"
+	music = "D_TVOX10"
+}
+
+map TVOX31 "Intrinsic Violence Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "TVOX32"
+	secretnext = "TVOX32"
+	sky1 = "TVOX0071"
+	music = "$MUSIC_EVIL"
+}
+
+map TVOX32 "Intrinsic Violence Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "TVOX0071"
+	music = "$MUSIC_ULTIMA"
+}

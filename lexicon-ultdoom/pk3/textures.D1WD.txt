@@ -1,0 +1,84 @@
+Texture "D1WD0001", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D1WD0002", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "D1WD0003", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "D1WD0004", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "D1WD0005", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "D1WD0006", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D1WD0007", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "D1WD0008", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "D1WD0009", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "D1WD0010", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "D1WD0011", 128, 128
+{
+	Patch "WALL02_1", 0, 56
+	Patch "WALL02_1", -14, 0
+	Patch "WALL02_1", 64, 56
+	Patch "WALL02_1", 74, 0
+	Patch "WALL02_3", 50, 0
+}

@@ -1,0 +1,391 @@
+// FreeDM: Classic Edition Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map FRDM01 "Tech Test"
+{
+	titlepatch = "FRDMV00"
+	next = "FRDM02"
+	secretnext = "FRDM02"
+	sky1 = "SKY1"
+	music = "D_FRDM01"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM02 "Natural Station"
+{
+	titlepatch = "FRDMV01"
+	next = "FRDM03"
+	secretnext = "FRDM03"
+	sky1 = "SKY1"
+	music = "D_FRDM02"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM03 "Issues of Claveria"
+{
+	titlepatch = "FRDMV02"
+	next = "FRDM04"
+	secretnext = "FRDM04"
+	sky1 = "SKY1"
+	music = "D_FRDM03"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM04 "Steel"
+{
+	titlepatch = "FRDMV03"
+	next = "FRDM05"
+	secretnext = "FRDM05"
+	sky1 = "SKY1"
+	music = "D_FRDM04"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM05 "Dense Fields"
+{
+	titlepatch = "FRDMV04"
+	next = "FRDM06"
+	secretnext = "FRDM06"
+	sky1 = "SKY1"
+	music = "D_FRDM05"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM06 "Temple of Ammon"
+{
+	titlepatch = "FRDMV05"
+	next = "FRDM07"
+	secretnext = "FRDM07"
+	sky1 = "SKY1"
+	music = "D_FRDM06"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM07 "Main Stronghold"
+{
+	titlepatch = "FRDMV06"
+	next = "FRDM08"
+	secretnext = "FRDM08"
+	sky1 = "SKY1"
+	music = "D_FRDM07"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM08 "Artifact Base"
+{
+	titlepatch = "FRDMV07"
+	next = "FRDM09"
+	secretnext = "FRDM09"
+	sky1 = "SKY1"
+	music = "D_FRDM08"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM09 "Industrial Outland"
+{
+	titlepatch = "FRDMV08"
+	next = "FRDM10"
+	secretnext = "FRDM10"
+	sky1 = "SKY1"
+	music = "D_FRDM09"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM10 "Detached Grounds"
+{
+	titlepatch = "FRDMV09"
+	next = "FRDM11"
+	secretnext = "FRDM11"
+	sky1 = "SKY1"
+	music = "D_FRDM10"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM11 "Isolated Facility"
+{
+	titlepatch = "FRDMV10"
+	next = "FRDM12"
+	secretnext = "FRDM12"
+	sky1 = "SKY1"
+	music = "D_FRDM11"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM12 "Up 'n Down Canyon"
+{
+	titlepatch = "FRDMV11"
+	next = "FRDM13"
+	secretnext = "FRDM13"
+	sky1 = "SKY2"
+	music = "D_FRDM12"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM13 "Unholy Blood"
+{
+	titlepatch = "FRDMV12"
+	next = "FRDM14"
+	secretnext = "FRDM14"
+	sky1 = "SKY2"
+	music = "D_FRDM13"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM14 "Technical Assault"
+{
+	titlepatch = "FRDMV13"
+	next = "FRDM15"
+	secretnext = "FRDM15"
+	sky1 = "SKY2"
+	music = "D_FRDM14"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM15 "Shallow Complex"
+{
+	titlepatch = "FRDMV14"
+	next = "FRDM16"
+	secretnext = "FRDM16"
+	sky1 = "SKY2"
+	music = "D_FRDM15"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM16 "Barren Alleys"
+{
+	titlepatch = "FRDMV15"
+	next = "FRDM17"
+	secretnext = "FRDM17"
+	sky1 = "SKY2"
+	music = "D_FRDM16"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM17 "Underwoods"
+{
+	titlepatch = "FRDMV16"
+	next = "FRDM18"
+	secretnext = "FRDM18"
+	sky1 = "SKY2"
+	music = "D_FRDM17"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM18 "Deserted Courtyard"
+{
+	titlepatch = "FRDMV17"
+	next = "FRDM19"
+	secretnext = "FRDM19"
+	sky1 = "SKY2"
+	music = "D_FRDM18"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM19 "Tech Isle"
+{
+	titlepatch = "FRDMV18"
+	next = "FRDM20"
+	secretnext = "FRDM20"
+	sky1 = "SKY2"
+	music = "D_FRDM19"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM20 "Warehouse"
+{
+	titlepatch = "FRDMV19"
+	next = "FRDM21"
+	secretnext = "FRDM21"
+	sky1 = "SKY2"
+	music = "D_FRDM20"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM21 "Refinary"
+{
+	titlepatch = "FRDMV20"
+	next = "FRDM22"
+	secretnext = "FRDM22"
+	sky1 = "SKY3"
+	music = "D_FRDM21"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM22 "Fourplay"
+{
+	titlepatch = "FRDMV21"
+	next = "FRDM23"
+	secretnext = "FRDM23"
+	sky1 = "SKY3"
+	music = "D_FRDM22"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM23 "Confrontation"
+{
+	titlepatch = "FRDMV22"
+	next = "FRDM24"
+	secretnext = "FRDM24"
+	sky1 = "SKY3"
+	music = "D_FRDM23"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM24 "Flooded Base"
+{
+	titlepatch = "FRDMV23"
+	next = "FRDM25"
+	secretnext = "FRDM25"
+	sky1 = "SKY3"
+	music = "D_FRDM24"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM25 "Mansion Yard"
+{
+	titlepatch = "FRDMV24"
+	next = "FRDM26"
+	secretnext = "FRDM26"
+	sky1 = "SKY3"
+	music = "D_FRDM25"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM26 "Acidic Crypt"
+{
+	titlepatch = "FRDMV25"
+	next = "FRDM27"
+	secretnext = "FRDM27"
+	sky1 = "SKY3"
+	music = "D_FRDM26"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM27 "The Exile"
+{
+	titlepatch = "FRDMV26"
+	next = "FRDM28"
+	secretnext = "FRDM28"
+	sky1 = "SKY3"
+	music = "D_FRDM27"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM28 "Weapons Factory"
+{
+	titlepatch = "FRDMV27"
+	next = "FRDM29"
+	secretnext = "FRDM29"
+	sky1 = "SKY3"
+	music = "D_FRDM28"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM29 "Unusual Territory"
+{
+	titlepatch = "FRDMV28"
+	next = "FRDM30"
+	secretnext = "FRDM30"
+	sky1 = "SKY3"
+	music = "D_FRDM29"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM30 "Last Man Standing"
+{
+	titlepatch = "FRDMV29"
+	next = "FRDM31"
+	secretnext = "FRDM31"
+	sky1 = "SKY3"
+	music = "D_FRDM30"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM31 "Desolated Fort"
+{
+	titlepatch = "FRDMV30"
+	next = "FRDM32"
+	secretnext = "FRDM32"
+	sky1 = "SKY3"
+	music = "D_FRDM31"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}
+
+map FRDM32 "Chocolate"
+{
+	titlepatch = "FRDMV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_FRDM32"
+	intermusic = "D_FRDMIN"
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+}

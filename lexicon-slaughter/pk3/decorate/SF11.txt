@@ -1,0 +1,63 @@
+Actor Lexicon_SF11_WolfensteinSS : WolfensteinSS
+{
+	States
+	{
+	Spawn:
+		LY00 B 1 Bright //A_WeaponReady
+		goto Spawn
+	See:
+		LY00 B 1 Bright //A_Raise
+		goto See
+	Pain:
+		SSWV H 3 
+		SSWV H 3 A_Pain
+		LY00 B 1 Bright //A_Raise
+		goto See
+	Raise:
+		SSWV MLKJI 5 
+		LY00 B 1 Bright //A_Raise
+		goto See
+	}
+}
+
+Actor Lexicon_SF11_Chainsaw : Weapon
+{
+	Weapon.Kickback 0
+	Weapon.SelectionOrder 2200
+	Weapon.UpSound "weapons/sawup"
+	Weapon.ReadySound "weapons/sawidle"
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 1
+	Inventory.PickupMessage "$GOTCHAINSAW"
+	Tag "$SF12_TAG_CHAINSAW"
+	+WEAPON.MELEEWEAPON		
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Spawn:
+		LY00 A -1 Bright 
+		stop
+	Deselect:
+		LY00 B 1 Bright A_Lower
+		goto Deselect
+	Select:
+		LY00 B 1 Bright A_Raise
+		goto Select
+	Ready:
+		LY00 B 1 Bright A_WeaponReady
+		goto Ready
+	Fire:
+		LY00 B 20 Bright A_BFGSound
+		LY00 C 10 Bright A_GunFlash
+		LY00 C 10 Bright A_FireBFG
+		LY00 C 20 Bright A_Refire
+		LY00 B 1 Bright A_WeaponReady
+		goto Ready
+	Flash:
+		BFGF A 11 Bright A_Light1
+		BFGF B 6 Bright A_Light2
+		SHTG E 0 A_Light0
+		stop
+	}
+}

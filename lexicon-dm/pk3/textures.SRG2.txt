@@ -1,0 +1,109 @@
+Texture "SRG20063", 64, 128
+{
+	Patch "SRG20268", 0, 0
+	Patch "SRG20269", 0, 64
+}
+Texture "SRG20065", 64, 128
+{
+	Patch "SRG20274", 0, 0
+	Patch "SRG20274", 0, 64
+	Patch "SRG20276", 32, 0
+	Patch "SRG20276", 32, 64
+}
+Texture "SRG20066", 64, 128
+{
+	Patch "BCRATEL1", 0, 0
+	Patch "BCRATER1", 32, 0
+	Patch "SRG20274", 0, 64
+	Patch "SRG20276", 32, 64
+}
+Texture "SRG20067", 64, 128
+{
+	Patch "SRG20274", 0, 0
+	Patch "SRG20276", 32, 0
+	Patch "GCRATEL1", 0, 64
+	Patch "GCRATER1", 32, 64
+}
+Texture "SRG20071", 64, 128
+{
+	Patch "SRG20277", 0, 0
+	Patch "SRG20277", 32, 0
+	Patch "SRG20274", 0, 64
+	Patch "SRG20276", 32, 64
+}
+Texture "SRG20072", 64, 128
+{
+	Patch "SRG20279", 0, 0
+	Patch "SRG20279", 32, 0
+	Patch "GCRATEL1", 0, 64
+	Patch "GCRATER1", 32, 64
+}
+Texture "SRG20077", 64, 128
+{
+	Patch "SRG20467", 0, 0
+	Patch "SRG20467", 0, 64
+}
+Texture "SRG20078", 64, 128
+{
+	Patch "SRG20457", 0, 0
+	Patch "SRG20457", 0, 64
+}
+Texture "SRG20079", 64, 128
+{
+	Patch "SRG20281", 0, 0
+	Patch "SRG20282", 0, 64
+}
+Texture "SRG20100", 128, 128
+{
+	Patch "SRG20301", 0, 0
+	Patch "SRG20302", 64, 0
+}
+Texture "SRG20115", 32, 128
+{
+	Patch "SRG20318", 0, 0
+	Patch "SRG20318", 0, 32
+	Patch "SRG20318", 0, 64
+	Patch "SRG20318", 0, 96
+}
+Texture "SRG20116", 32, 128
+{
+	Patch "SRG20319", 0, 0
+	Patch "SRG20319", 0, 32
+	Patch "SRG20319", 0, 64
+	Patch "SRG20319", 0, 96
+}
+Texture "SRG20117", 64, 128
+{
+	Patch "SRG20318", 0, 0
+	Patch "SRG20318", 32, 32
+	Patch "SRG20318", 0, 64
+	Patch "SRG20318", 32, 96
+	Patch "SRG20319", 32, 0
+	Patch "SRG20319", 0, 32
+	Patch "SRG20319", 32, 64
+	Patch "SRG20319", 0, 96
+}
+Texture "SRG20146", 64, 128
+{
+	Patch "SRG20329", 0, 0
+	Patch "SRG20329", 0, 64
+}
+Texture "SRG20215", 64, 128
+{
+	Patch "SRG20409", 0, 0
+	Patch "SRG20409", 0, 64
+}
+Texture "SRG20229", 64, 127
+{
+	Patch "SRG20414", 0, 0
+}
+Texture "SRG20244", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "SRG20249", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}

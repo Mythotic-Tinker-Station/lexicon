@@ -1,0 +1,79 @@
+// SynJ. Series Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SYNJ01 "SYNJ08 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "SYNJ02"
+	secretnext = "SYNJ02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map SYNJ02 "SYNJ08 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "SYNJ03"
+	secretnext = "SYNJ03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map SYNJ03 "SYNJ08 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "SYNJ04"
+	secretnext = "SYNJ04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map SYNJ04 "SYNJ08 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "SYNJ05"
+	secretnext = "SYNJ05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map SYNJ05 "SYNJ08 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "SYNJ06"
+	secretnext = "SYNJ06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map SYNJ06 "SYNJ08 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "SYNJ07"
+	secretnext = "SYNJ07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map SYNJ07 "SYNJ08 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "SYNJ08"
+	secretnext = "SYNJ08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+}
+
+map SYNJ08 "SYNJ08 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}

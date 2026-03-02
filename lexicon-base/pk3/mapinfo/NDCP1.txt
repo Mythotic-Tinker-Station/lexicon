@@ -1,0 +1,361 @@
+// Newdoom Community Project Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NDC101 "Desecrated Paths"
+{
+	titlepatch = "NDC1V00"
+	next = "NDC102"
+	secretnext = "NDC102"
+	sky1 = "NDC10500"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC102 "Wet Works"
+{
+	titlepatch = "NDC1V01"
+	next = "NDC103"
+	secretnext = "NDC103"
+	sky1 = "NDC10500"
+	music = "$MUSIC_STALKS"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC103 "Doomsday Machine"
+{
+	titlepatch = "NDC1V02"
+	next = "NDC104"
+	secretnext = "NDC104"
+	sky1 = "NDC10500"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC104 "Shotfun"
+{
+	titlepatch = "NDC1V03"
+	next = "NDC105"
+	secretnext = "NDC105"
+	sky1 = "NDC10500"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC105 "Disdainful"
+{
+	titlepatch = "NDC1V04"
+	next = "NDC106"
+	secretnext = "NDC106"
+	sky1 = "NDC10500"
+	music = "$MUSIC_DOOM"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC106 "Bitter Loathing"
+{
+	titlepatch = "NDC1V05"
+	next = "NDC107"
+	secretnext = "NDC107"
+	sky1 = "NDC10500"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC107 "Identity Check"
+{
+	titlepatch = "NDC1V06"
+	next = "NDC108"
+	secretnext = "NDC108"
+	sky1 = "NDC10500"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+	Map07Special
+}
+
+map NDC108 "Xenturion"
+{
+	titlepatch = "NDC1V07"
+	next = "NDC109"
+	secretnext = "NDC109"
+	sky1 = "NDC10500"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC109 "Baleful Confines"
+{
+	titlepatch = "NDC1V08"
+	next = "NDC110"
+	secretnext = "NDC110"
+	sky1 = "NDC10500"
+	music = "D_NDC109"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC110 "Processing Station 10-29:71"
+{
+	titlepatch = "NDC1V09"
+	next = "NDC111"
+	secretnext = "NDC111"
+	sky1 = "NDC10500"
+	music = "$MUSIC_DEAD"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC111 "The Ignorant"
+{
+	titlepatch = "NDC1V10"
+	next = "NDC112"
+	secretnext = "NDC112"
+	sky1 = "NDC10500"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC112 "Infested"
+{
+	titlepatch = "NDC1V11"
+	next = "NDC113"
+	secretnext = "NDC113"
+	sky1 = "NDC10501"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC113 "Apocalypse Lab"
+{
+	titlepatch = "NDC1V12"
+	next = "NDC114"
+	secretnext = "NDC114"
+	sky1 = "NDC10501"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC114 "Jail Break"
+{
+	titlepatch = "NDC1V13"
+	next = "NDC115"
+	secretnext = "NDC115"
+	sky1 = "NDC10501"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC115 "City Of Lost Souls"
+{
+	titlepatch = "NDC1V14"
+	next = "NDC116"
+	secretnext = "NDC131"
+	sky1 = "NDC10501"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC116 "Upon Necropolis"
+{
+	titlepatch = "NDC1V15"
+	next = "NDC117"
+	secretnext = "NDC117"
+	sky1 = "NDC10501"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC117 "Assimilation"
+{
+	titlepatch = "NDC1V16"
+	next = "NDC118"
+	secretnext = "NDC118"
+	sky1 = "NDC10501"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC118 "Daemon Campus"
+{
+	titlepatch = "NDC1V17"
+	next = "NDC119"
+	secretnext = "NDC119"
+	sky1 = "NDC10501"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC119 "Maitenance Area"
+{
+	titlepatch = "NDC1V18"
+	next = "NDC120"
+	secretnext = "NDC120"
+	sky1 = "NDC10501"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC120 "Sepulchre"
+{
+	titlepatch = "NDC1V19"
+	next = "NDC121"
+	secretnext = "NDC121"
+	sky1 = "NDC10501"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC121 "13th Cross"
+{
+	titlepatch = "NDC1V20"
+	next = "NDC122"
+	secretnext = "NDC122"
+	sky1 = "NDC10502"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC122 "Caverns Of Despair"
+{
+	titlepatch = "NDC1V21"
+	next = "NDC123"
+	secretnext = "NDC123"
+	sky1 = "NDC10502"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC123 "Elemental"
+{
+	titlepatch = "NDC1V22"
+	next = "NDC124"
+	secretnext = "NDC124"
+	sky1 = "NDC10502"
+	music = "D_NDC123"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC124 "La Casa del Diablo"
+{
+	titlepatch = "NDC1V23"
+	next = "NDC125"
+	secretnext = "NDC125"
+	sky1 = "NDC10502"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC125 "Bitter Harvest"
+{
+	titlepatch = "NDC1V24"
+	next = "NDC126"
+	secretnext = "NDC126"
+	sky1 = "NDC10502"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC126 "Silenced Progression"
+{
+	titlepatch = "NDC1V25"
+	next = "NDC127"
+	secretnext = "NDC127"
+	sky1 = "NDC10502"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC127 "No Brakes"
+{
+	titlepatch = "NDC1V26"
+	next = "NDC128"
+	secretnext = "NDC128"
+	sky1 = "NDC10502"
+	music = "D_NDC127"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC128 "Hotash Slay"
+{
+	titlepatch = "NDC1V27"
+	next = "NDC129"
+	secretnext = "NDC129"
+	sky1 = "NDC10502"
+	music = "$MUSIC_TENSE"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC129 "Strayed From Sanity"
+{
+	titlepatch = "NDC1V28"
+	next = "NDC130"
+	secretnext = "NDC130"
+	sky1 = "NDC10502"
+	music = "D_NDC129"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC130 "Mortis Infinitum"
+{
+	titlepatch = "NDC1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "NDC10502"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+	allowmonstertelefrags
+}
+
+map NDC131 "Conglomeration Complex"
+{
+	titlepatch = "NDC1V30"
+	next = "NDC116"
+	secretnext = "NDC132"
+	sky1 = "NDC10502"
+	music = "$MUSIC_EVIL"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}
+
+map NDC132 "In The Castle Of The Wolf"
+{
+	titlepatch = "NDC1V31"
+	next = "NDC116"
+	secretnext = "NDC116"
+	sky1 = "NDC10502"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "NDC1INT"
+	EnterPic = "NDC1INT"
+}

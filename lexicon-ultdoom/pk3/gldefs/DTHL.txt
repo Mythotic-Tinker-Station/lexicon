@@ -1,0 +1,30 @@
+object Lexicon_DTHL_LostSoul
+{
+    frame SKULA { light LOSTSOUL    }
+    frame SKULB { light LOSTSOUL    }
+    frame SKULC { light LOSTSOUL    }
+    frame SKULD { light LOSTSOUL    }
+    frame SKULE { light LOSTSOUL    }
+    frame SKULF { light LOSTSOUL    }
+    frame SKULG { light LOSTSOUL    }
+
+    frame SKULH { light LOSTSOUL_X1 }
+    frame SKULI { light LOSTSOUL_X2 }
+    frame SKULJ { light LOSTSOUL_X3 }
+    frame SKULK { light LOSTSOUL_X4 }
+}
+
+// Soul Sphere
+pulselight Lexicon_DTHL_SOULSPHERE
+{
+    color 0.3 0.1 0.1
+    size 70
+    secondarySize 73
+    interval 2.0
+    offset 0 16 0
+}
+
+object Lexicon_DTHL_Soulsphere
+{
+	frame LW75 { light Lexicon_DTHL_SOULSPHERE }
+}

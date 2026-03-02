@@ -1,0 +1,16 @@
+// Dark Tartarus
+Texture DKTS0308, 512, 512
+{
+	XScale 16.0
+	YScale 16.0
+	WorldPanning
+	patch DKTS0308, 0, 0
+}
+
+Texture DKTS0309, 2560, 1440
+{
+	XScale 8.0
+	YScale 8.0
+	WorldPanning
+	patch DKTS0309, 0, 0
+}

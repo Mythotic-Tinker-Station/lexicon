@@ -1,0 +1,95 @@
+// Odamex CTF Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map OCTF01 "The Ride"
+{
+	next = "OCTF02"
+	secretnext = "OCTF02"
+	sky1 = "OCTF0302"
+	music = "D_OCTF01"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF02 "Something Epic II"
+{
+	next = "OCTF03"
+	secretnext = "OCTF03"
+	sky1 = "OCTF0041"
+	music = "D_OCTF02"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF03 "Pagan CTF"
+{
+	next = "OCTF04"
+	secretnext = "OCTF04"
+	sky1 = "OCTF0305"
+	music = "D_OCTF03"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF04 "Zero Fort"
+{
+	next = "OCTF05"
+	secretnext = "OCTF05"
+	sky1 = "OCTF0301"
+	music = "D_OCTF04"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF05 "Toxic Fortress"
+{
+	next = "OCTF06"
+	secretnext = "OCTF06"
+	sky1 = "OCTF0307"
+	music = "D_OCTF05"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF06 "Lava Incorporated"
+{
+	next = "OCTF07"
+	secretnext = "OCTF07"
+	sky1 = "OCTF0304"
+	music = "D_OCTF06"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}
+
+map OCTF07 "Somewhat Complex"
+{
+	next = "OCTF08"
+	secretnext = "OCTF08"
+	sky1 = "OCTF0303"
+	music = "D_OCTF07"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+	Map07Special
+}
+
+map OCTF08 "Legacy"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "OCTF0306"
+	music = "D_OCTF08"
+	intermusic = "D_OCTFIN"
+	ExitPic = "OCTFINT"
+	EnterPic = "OCTFINT"
+}

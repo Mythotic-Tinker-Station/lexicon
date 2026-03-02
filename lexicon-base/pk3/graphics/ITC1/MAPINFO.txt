@@ -1,0 +1,429 @@
+// MAPINFO for Interception
+
+defaultmap
+{
+	sucktime = 1
+}
+
+map MAP01 "Excavation Site"
+{
+	next = "MAP02"
+	secretnext = "MAP02"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 55
+	music = "$MUSIC_RUNNIN"
+}
+
+map MAP02 "Research Facility"
+{
+	next = "MAP03"
+	secretnext = "MAP03"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 240
+	music = "$MUSIC_STALKS"
+}
+
+map MAP03 "Flooded Caverns"
+{
+	next = "MAP04"
+	secretnext = "MAP04"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 225
+	music = "$MUSIC_COUNTD"
+}
+
+map MAP04 "Medical Center"
+{
+	next = "MAP05"
+	secretnext = "MAP05"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 140
+	music = "$MUSIC_BETWEE"
+}
+
+map MAP05 "Dangerous Curves"
+{
+	next = "MAP06"
+	secretnext = "MAP06"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 395
+	music = "$MUSIC_DOOM"
+}
+
+map MAP06 "Rail Terminal 38"
+{
+	next = "MAP07"
+	secretnext = "MAP07"
+	sky1 = "SKY1"
+	cluster = 5
+	par = 155
+	sucktime = 1
+	music = "$MUSIC_THE_DA"
+}
+
+map MAP07 "Floodgates"
+{
+	next = "MAP08"
+	secretnext = "MAP08"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 210
+	map07special
+	music = "$MUSIC_SHAWN"
+}
+
+map MAP08 "Panopticon"
+{
+	next = "MAP09"
+	secretnext = "MAP09"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 120
+	music = "$MUSIC_DDTBLU"
+}
+
+map MAP09 "Iron Jungle"
+{
+	next = "MAP10"
+	secretnext = "MAP10"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 270
+	music = "$MUSIC_IN_CIT"
+}
+
+map MAP10 "Chemical Laboratory"
+{
+	next = "MAP11"
+	secretnext = "MAP11"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 235
+	music = "$MUSIC_DEAD"
+}
+
+map MAP11 "The Ocean Outpost"
+{
+	next = "MAP12"
+	secretnext = "MAP12"
+	sky1 = "SKY1"
+	cluster = 6
+	par = 210
+	music = "$MUSIC_STLKS2"
+}
+
+map MAP12 "Underearth"
+{
+	next = "MAP13"
+	secretnext = "MAP13"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_THEDA2"
+}
+
+map MAP13 "Castle Grounds"
+{
+	next = "MAP14"
+	secretnext = "MAP14"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 380
+	music = "$MUSIC_DOOM2"
+}
+
+map MAP14 "Antidote"
+{
+	next = "MAP15"
+	secretnext = "MAP15"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DDTBL2"
+}
+
+map MAP15 "Elm Street"
+{
+	next = "MAP16"
+	secretnext = "MAP31"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_RUNNI2"
+}
+
+map MAP16 "Vertigo Plant"
+{
+	next = "MAP17"
+	secretnext = "MAP17"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 490
+	music = "$MUSIC_DEAD2"
+}
+
+map MAP17 "Hell House"
+{
+	next = "MAP18"
+	secretnext = "MAP18"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 420
+	music = "$MUSIC_STLKS3"
+}
+
+map MAP18 "City of Burning Sulfur"
+{
+	next = "MAP19"
+	secretnext = "MAP19"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_ROMERO"
+}
+
+map MAP19 "Alpha Tower"
+{
+	next = "MAP20"
+	secretnext = "MAP20"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_SHAWN2"
+}
+
+map MAP20 "Beta Tower"
+{
+	next = "MAP21"
+	secretnext = "MAP21"
+	sky1 = "SKY2"
+	cluster = 7
+	par = 340
+	music = "$MUSIC_MESSAG"
+}
+
+map MAP21 "Wrong Dimension"
+{
+	next = "MAP22"
+	secretnext = "MAP22"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 180
+	music = "$MUSIC_COUNT2"
+}
+
+map MAP22 "Bone Dread"
+{
+	next = "MAP23"
+	secretnext = "MAP23"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_DDTBL3"
+}
+
+map MAP23 "Abysmal Affliction"
+{
+	next = "MAP24"
+	secretnext = "MAP24"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 180
+	music = "$MUSIC_AMPIE"
+}
+
+map MAP24 "Bloody Castle"
+{
+	next = "MAP25"
+	secretnext = "MAP25"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_THEDA3"
+}
+
+map MAP25 "Demon's Spite"
+{
+	next = "MAP26"
+	secretnext = "MAP26"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_ADRIAN"
+}
+
+map MAP26 "Wrecking Fist"
+{
+	next = "MAP27"
+	secretnext = "MAP27"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_MESSG2"
+}
+
+map MAP27 "Blood Siege"
+{
+	next = "MAP28"
+	secretnext = "MAP28"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 355
+	music = "$MUSIC_ROMER2"
+}
+
+map MAP28 "Amongst the Ash"
+{
+	next = "MAP29"
+	secretnext = "MAP29"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 420
+	music = "$MUSIC_TENSE"
+}
+
+map MAP29 "Barbatos' Fortress"
+{
+	next = "MAP30"
+	secretnext = "MAP30"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_SHAWN3"
+}
+
+map MAP30 "Interception"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "SKY3"
+	cluster = 8
+	par = 65
+	allowmonstertelefrags
+	music = "$MUSIC_OPENIN"
+}
+
+map MAP31 "Degravitation"
+{
+	next = "MAP16"
+	secretnext = "MAP32"
+	sky1 = "SKY3"
+	cluster = 9
+	par = 215
+	music = "$MUSIC_EVIL"
+}
+
+map MAP32 "The Cataclysm"
+{
+	next = "MAP16"
+	secretnext = "MAP16"
+	sky1 = "SKY3"
+	cluster = 10
+	par = 305
+	music = "$MUSIC_ULTIMA"
+}
+
+
+// DOOM II first cluster (up thru level 6)
+
+cluster 5
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = "DEEPER AND DEEPER YOU GO INTO THE FACILITY,",
+		   "EVERY STEP YOU TAKE ECHOING THROUGH THE",
+		   "HALLS. UP AHEAD YOU SEE A BRIGHT LIGHT.",
+		   "STEPPING FORWARD SLOWLY, YOU SEE THE ENTRY",
+		   "POINT THROUGH WHICH TONS OF DEMONS ARE",
+		   "POURING OUT OF. THE FLOODGATES OF ANCIENT",
+		   "ROMERO WERE NO MATCH FOR THE HOARD.",
+                   "",
+		   "BUT THERE IS STILL HOPE! IF YOU SHUT THE",
+		   "GATES QUICKLY ENOUGH, YOU MAY BE ABLE TO",
+		   "SEAL THEM AWAY FOREVER..."
+}
+
+// DOOM II second cluster (up thru level 11)
+
+cluster 6
+{
+	flat = "$BGFLAT11"
+	music = "$MUSIC_READ_M"
+	exittext = "YOU HAVE SEALED THE FLOODGATES, BUT YOU",
+		   "JUST KNOW THAT THOSE DEMONS WILL STOP AT",
+		   "NOTHING TO GET TO THE SURFACE. YOU HAVE TO",
+		   "GO TO THE SOURCE. THE PROBLEM? YOU'RE GONNA",
+		   "HAVE TO GET THROUGH THEIR CITY FIRST...",
+		   "",
+		   "THERE ARE TWO VERY LARGE TOWERS AT EACH",
+		   "END OF THE CITY. THEY LOOK AS IF THEY SUPPLY",
+		   "POWER TO THE CITY, SO DESTROYING THEM",
+		   "MIGHT BE YOUR BEST BET. GET TO IT, HERO..."
+}
+
+// DOOM II third cluster (up thru level 20)
+
+cluster 7
+{
+	flat = "$BGFLAT20"
+	music = "$MUSIC_READ_M"
+	exittext = "WHAT A RIDE! IT SEEMS YOU'VE FINALLY MADE IT",
+		   "TO THE DEMONS' HOMEWORLD. THE STENCH OF",
+		   "HUMAN CORPSES MAKES YOU GAG. YOU WERE",
+		   "HOPING YOU WOULDN'T HAVE TO GO TO HELL",
+		   "ANYTIME SOON, BUT THERE'S NO POINT IN",
+		   "QUITTING WHILE YOU ARE AHEAD..."
+}
+
+// DOOM II fourth cluster (up thru level 30)
+
+cluster 8
+{
+	flat = "$BGFLAT30"
+	music = "$MUSIC_READ_M"
+	exittext = "END OF THE LINE! LOOKS LIKE THOSE DEMONS",
+		   "ARE FINALLY GONE FOR GOOD...",
+		   "",
+		   "BUT, AS IT TURNS OUT, YOUR JOB WAS ONLY",
+		   "GETTING STARTED. BARBATOS WAS MERELY",
+		   "A MASK TO HIDE THE PORTAL THE DEMONS",
+		   "USED TO MAKE IT HERE. THERE'S NO WAY",
+		   "IN HELL YOU'RE GONNA LET THOSE DEMONS",
+		   "WIN. NOT IN THIS LIFETIME!",
+		   "",
+		   "YOU TAKE THE PLUNGE INTO WHATEVER SICK,",
+		   "TWISTED DIMENSION THE DEMONS HAVE",
+		   "CONQUERED BEFORE. THE FATE OF THE",
+		   "UNIVERSE LIES ON YOUR SHOULDERS..."
+}
+
+// DOOM II fifth cluster (level 31)
+
+cluster 9
+{
+	flat = "$BGFLAT15"
+	music = "$MUSIC_READ_M"
+	entertext = "LOOKS LIKE YOU HAVE TAKEN A WRONG TURN",
+		    "SOMEWHERE ALONG THE LINE. IT DOESN'T",
+		    "EVEN SEEM LIKE YOU ARE IN THE SAME",
+		    "DIMENSION ANYMORE.",
+		    "",
+		    "WELCOME TO NETHERLAND..."
+}
+
+// DOOM II sixth cluster (level 32)
+
+cluster 10
+{
+	flat = "$BGFLAT31"
+	music = "$MUSIC_READ_M"
+	entertext = "IT SEEMS YOU ARE IN AN EVEN STRANGER WORLD...",
+		    "",
+		    "READY TO SEE HOW FAR THE RABBIT HOLE",
+		    "GOES, HERO?"
+}

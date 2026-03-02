@@ -1,0 +1,395 @@
+// Hell to Pay Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLTP01 "The Holding Cells"
+{
+	titlepatch = "CWILV00"
+	next = "HLTP02"
+	secretnext = "HLTP02"
+	sky1 = "HLTP0352"
+	music = "D_HLTP01"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP02 "The Slave Quarters"
+{
+	titlepatch = "CWILV01"
+	next = "HLTP03"
+	secretnext = "HLTP03"
+	sky1 = "HLTP0352"
+	music = "D_HLTP02"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP03 "The Mines"
+{
+	titlepatch = "CWILV02"
+	next = "HLTP04"
+	secretnext = "HLTP04"
+	sky1 = "HLTP0352"
+	music = "D_HLTP03"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP04 "Nukage Processing"
+{
+	titlepatch = "CWILV03"
+	next = "HLTP05"
+	secretnext = "HLTP05"
+	sky1 = "HLTP0352"
+	music = "D_HLTP04"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP05 "Trustee Country"
+{
+	titlepatch = "CWILV04"
+	next = "HLTP06"
+	secretnext = "HLTP06"
+	sky1 = "HLTP0352"
+	music = "D_HLTP05"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP06 "Command and Control"
+{
+	titlepatch = "CWILV05"
+	next = "HLTP07"
+	secretnext = "HLTP07"
+	sky1 = "HLTP0352"
+	music = "D_HLTP06"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP07 "The Industrial Park"
+{
+	titlepatch = "CWILV06"
+	next = "HLTP08"
+	secretnext = "HLTP08"
+	sky1 = "HLTP0352"
+	music = "D_HLTP07"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+	Map07Special
+}
+
+map HLTP08 "The Warehouse"
+{
+	titlepatch = "CWILV07"
+	next = "HLTP09"
+	secretnext = "HLTP09"
+	sky1 = "HLTP0352"
+	music = "D_HLTP08"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP09 "The Military Complex"
+{
+	titlepatch = "CWILV08"
+	next = "HLTP10"
+	secretnext = "HLTP10"
+	sky1 = "HLTP0352"
+	music = "D_HLTP09"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP10 "The Liquid Metal Labs"
+{
+	titlepatch = "CWILV09"
+	next = "HLTP11"
+	secretnext = "HLTP11"
+	sky1 = "HLTP0352"
+	music = "D_HLTP10"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP11 "The Space Port"
+{
+	titlepatch = "CWILV10"
+	next = "HLTP12"
+	secretnext = "HLTP12"
+	sky1 = "HLTP0352"
+	music = "D_HLTP11"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP12 "The Cargo Hold"
+{
+	titlepatch = "CWILV11"
+	next = "HLTP13"
+	secretnext = "HLTP13"
+	sky1 = "HLTP0353"
+	music = "D_HLTP12"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP13 "The Engine Room"
+{
+	titlepatch = "CWILV12"
+	next = "HLTP14"
+	secretnext = "HLTP14"
+	sky1 = "HLTP0353"
+	music = "D_HLTP13"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP14 "The Habitat Deck"
+{
+	titlepatch = "CWILV13"
+	next = "HLTP15"
+	secretnext = "HLTP15"
+	sky1 = "HLTP0353"
+	music = "D_HLTP14"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+	// Can't do anything about the ghost monsters, sadly.
+}
+
+map HLTP15 "Captain Bellows"
+{
+	titlepatch = "CWILV14"
+	next = "HLTP31"
+	secretnext = "HLTP31"
+	sky1 = "HLTP0353"
+	music = "D_HLTP15"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP16 "Io Base"
+{
+	titlepatch = "CWILV15"
+	next = "HLTP17"
+	secretnext = "HLTP17"
+	sky1 = "HLTP0353"
+	music = "D_HLTP16"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP17 "Hot as Hell"
+{
+	titlepatch = "CWILV16"
+	next = "HLTP18"
+	secretnext = "HLTP18"
+	sky1 = "HLTP0353"
+	music = "D_HLTP17"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP18 "Big Crane"
+{
+	titlepatch = "CWILV17"
+	next = "HLTP19"
+	secretnext = "HLTP19"
+	sky1 = "HLTP0353"
+	music = "D_HLTP18"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP19 "Demon Chow"
+{
+	titlepatch = "CWILV18"
+	next = "HLTP20"
+	secretnext = "HLTP20"
+	sky1 = "HLTP0353"
+	music = "D_HLTP19"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP20 "Master Computer"
+{
+	titlepatch = "CWILV19"
+	next = "HLTP21"
+	secretnext = "HLTP21"
+	sky1 = "HLTP0353"
+	music = "D_HLTP20"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP21 "Planet Hell"
+{
+	titlepatch = "CWILV20"
+	next = "HLTP22"
+	secretnext = "HLTP22"
+	sky1 = "HLTP0100"
+	music = "D_HLTP21"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP22 "Vile Temple"
+{
+	titlepatch = "CWILV21"
+	next = "HLTP23"
+	secretnext = "HLTP23"
+	sky1 = "HLTP0100"
+	music = "D_HLTP22"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+	// Can't do anything about the ghost monsters, sadly.
+}
+
+map HLTP23 "Hell's Cavern"
+{
+	titlepatch = "CWILV22"
+	next = "HLTP24"
+	secretnext = "HLTP24"
+	sky1 = "HLTP0100"
+	music = "D_HLTP23"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP24 "Hell's Park"
+{
+	titlepatch = "CWILV23"
+	next = "HLTP25"
+	secretnext = "HLTP25"
+	sky1 = "HLTP0100"
+	music = "D_HLTP24"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP25 "Hell's Gauntlet"
+{
+	titlepatch = "CWILV24"
+	next = "HLTP26"
+	secretnext = "HLTP26"
+	sky1 = "HLTP0100"
+	music = "D_HLTP25"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP26 "Circle of Hell"
+{
+	titlepatch = "CWILV25"
+	next = "HLTP27"
+	secretnext = "HLTP27"
+	sky1 = "HLTP0100"
+	music = "D_HLTP26"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP27 "Hell Squared"
+{
+	titlepatch = "CWILV26"
+	next = "HLTP28"
+	secretnext = "HLTP28"
+	sky1 = "HLTP0100"
+	music = "D_HLTP27"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP28 "Neophyte Reception"
+{
+	titlepatch = "CWILV27"
+	next = "HLTP29"
+	secretnext = "HLTP29"
+	sky1 = "HLTP0100"
+	music = "D_HLTP28"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP29 "Initiation"
+{
+	titlepatch = "CWILV28"
+	next = "HLTP30"
+	secretnext = "HLTP30"
+	sky1 = "HLTP0100"
+	music = "D_HLTP29"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP30 "Sky High"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HLTP0100"
+	music = "D_HLTP30"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+	allowmonstertelefrags
+}
+
+map HLTP31 "Secret Facility"
+{
+	titlepatch = "CWILV30"
+	next = "HLTP32"
+	secretnext = "HLTP32"
+	sky1 = "HLTP0100"
+	music = "D_HLTP31"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}
+
+map HLTP32 "Self-Destruct"
+{
+	titlepatch = "CWILV31"
+	next = "HLTP16"
+	secretnext = "HLTP16"
+	sky1 = "HLTP0100"
+	music = "D_HLTP32"
+	intermusic = "D_HLTPIN"
+	ExitPic = "HLTPINT"
+	EnterPic = "HLTPINT"
+}

@@ -1,0 +1,84 @@
+Actor Lexicon_PDGR_SpiderMastermind : SpiderMastermind
+{
+	Health 4500
+	Speed 0
+	Radius 30
+	Height 64
+	ReactionTime 16
+	PainChance 32
+	Mass 999999
+	Translation 2
+	+SPAWNCEILING
+	+NOGRAVITY
+	+FLOAT
+	AttackSound ""
+	Tag "Technology Mastermind"
+	States
+	{
+	Spawn:
+		LX63 A 5 A_Look
+		Goto See
+	See:
+		LX63 B 5 A_Chase
+	See2:
+		LX63 ABABABA 5 A_Chase
+		loop
+	Pain:
+		LX63 C 5 A_Pain
+		LX63 A 10 A_FaceTarget
+		LX63 D 5 A_CyberAttack
+		LX63 E 5 A_FaceTarget
+		LX63 F 5 A_CyberAttack
+		goto See
+	Missile:
+		LX63 C 1 A_FaceTarget
+		LX63 A 4 A_FatAttack1
+		LX63 A 4 A_FatAttack2
+		LX63 A 4 A_FatAttack3
+		goto See
+	Death:
+		LX63 G 20 A_Scream
+		LX63 H 10 A_Fall
+		LX63 IJKLMNN 10 
+		LX63 N 30 
+		LX63 N -1 A_BrainDie
+		stop
+	}
+}
+
+Actor Lexicon_PDGR_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("PDGR/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 175 A_BrainSpit("Lexicon_PDGR_SpawnShot")
+		Wait
+	}
+}
+
+Actor Lexicon_PDGR_SpawnShot : SpawnShot
+{
+	Speed 15
+	Radius 2
+	Height 8
+	Damage 2
+	-NOCLIP
+	+TELEPORT
+	States
+	{
+	Spawn:
+		LX62 VW 12 
+		loop
+	Death:
+		FIRE ABC 4 Bright A_Fire
+		FIRE D 4 Bright A_Explode
+		FIRE CDCDCDC 4 Bright A_Fire
+		FIRE D 4 Bright A_Explode
+		FIRE EFGH 4 Bright A_Fire
+		stop
+	}
+}
+
+// 7 SpiderMastermind
+// 89 BossEye

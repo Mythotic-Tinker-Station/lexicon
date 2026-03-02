@@ -1,0 +1,393 @@
+// CzechBox Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CZBX01 "Entrygay"
+{
+	titlepatch = "CZBXV00"
+	next = "CZBX02"
+	secretnext = "CZBX02"
+	sky1 = "CZBX0033"
+	music = "D_94TU01"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX02 "RUINS"
+{
+	titlepatch = "CZBXV01"
+	next = "CZBX03"
+	secretnext = "CZBX03"
+	sky1 = "CZBX0033"
+	music = "D_94TU02"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX03 "Excavations"
+{
+	titlepatch = "CZBXV02"
+	next = "CZBX04"
+	secretnext = "CZBX04"
+	sky1 = "CZBX0033"
+	music = "D_94TU03"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX04 "Chapel of Baphomet"
+{
+	titlepatch = "CZBXV03"
+	next = "CZBX05"
+	secretnext = "CZBX05"
+	sky1 = "CZBX0033"
+	music = "D_94TU04"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX05 "Infested Helipad"
+{
+	titlepatch = "CZBXV04"
+	next = "CZBX06"
+	secretnext = "CZBX06"
+	sky1 = "CZBX0033"
+	music = "D_94TU05"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX06 "Close Quarters"
+{
+	titlepatch = "CZBXV05"
+	next = "CZBX07"
+	secretnext = "CZBX07"
+	sky1 = "CZBX0033"
+	music = "D_94TU06"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX07 "Fuck Censorship"
+{
+	titlepatch = "CZBXV06"
+	next = "CZBX08"
+	secretnext = "CZBX08"
+	sky1 = "CZBX0033"
+	music = "D_94TU07"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+	Map07Special
+}
+
+map CZBX08 "Mountain Hideout"
+{
+	titlepatch = "CZBXV07"
+	next = "CZBX09"
+	secretnext = "CZBX09"
+	sky1 = "CZBX0033"
+	music = "D_94TU08"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX09 "Stairway to Star"
+{
+	titlepatch = "CZBXV08"
+	next = "CZBX10"
+	secretnext = "CZBX10"
+	sky1 = "CZBX0033"
+	music = "D_94TU09"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX10 "Kafkaesque World"
+{
+	titlepatch = "CZBXV09"
+	next = "CZBX11"
+	secretnext = "CZBX11"
+	sky1 = "CZBX0033"
+	music = "D_94TU10"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX11 "Blast Furnace"
+{
+	titlepatch = "CZBXV10"
+	next = "CZBX12"
+	secretnext = "CZBX12"
+	sky1 = "CZBX0033"
+	music = "D_94TU11"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX12 "Ninive"
+{
+	titlepatch = "CZBXV11"
+	next = "CZBX13"
+	secretnext = "CZBX13"
+	sky1 = "CZBX0034"
+	music = "D_94TU12"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX13 "Castle Climber"
+{
+	titlepatch = "CZBXV12"
+	next = "CZBX14"
+	secretnext = "CZBX14"
+	sky1 = "CZBX0034"
+	music = "D_94TU13"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX14 "Truck Depot"
+{
+	titlepatch = "CZBXV13"
+	next = "CZBX15"
+	secretnext = "CZBX15"
+	sky1 = "CZBX0034"
+	music = "D_94TU14"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX15 "Hometown"
+{
+	titlepatch = "CZBXV14"
+	next = "CZBX16"
+	secretnext = "CZBX31"
+	sky1 = "CZBX0034"
+	music = "D_94TU15"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX16 "Twilight Light"
+{
+	titlepatch = "CZBXV15"
+	next = "CZBX17"
+	secretnext = "CZBX17"
+	sky1 = "CZBX0034"
+	music = "D_94TU16"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX17 "Tickets, Please!"
+{
+	titlepatch = "CZBXV16"
+	next = "CZBX18"
+	secretnext = "CZBX18"
+	sky1 = "CZBX0034"
+	music = "D_94TU17"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX18 "Orwell's Nightmare"
+{
+	titlepatch = "CZBXV17"
+	next = "CZBX19"
+	secretnext = "CZBX19"
+	sky1 = "CZBX0034"
+	music = "D_94TU18"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX19 "HQ"
+{
+	titlepatch = "CZBXV18"
+	next = "CZBX20"
+	secretnext = "CZBX20"
+	sky1 = "CZBX0034"
+	music = "D_94TU19"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX20 "Teleportation Transfer Terminal aka TTT"
+{
+	titlepatch = "CZBXV19"
+	next = "CZBX21"
+	secretnext = "CZBX21"
+	sky1 = "CZBX0034"
+	music = "D_94TU20"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX21 "Raccoons' Den"
+{
+	titlepatch = "CZBXV20"
+	next = "CZBX22"
+	secretnext = "CZBX22"
+	sky1 = "CZBX0035"
+	music = "D_94TU21"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX22 "Breadcrumbs"
+{
+	titlepatch = "CZBXV21"
+	next = "CZBX23"
+	secretnext = "CZBX23"
+	sky1 = "CZBX0035"
+	music = "D_94TU22"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX23 "Crates"
+{
+	titlepatch = "CZBXV22"
+	next = "CZBX24"
+	secretnext = "CZBX24"
+	sky1 = "CZBX0035"
+	music = "D_94TU23"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX24 "Binky Dance"
+{
+	titlepatch = "CZBXV23"
+	next = "CZBX25"
+	secretnext = "CZBX25"
+	sky1 = "CZBX0035"
+	music = "D_94TU24"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX25 "Infernal Stronghold Rush"
+{
+	titlepatch = "CZBXV24"
+	next = "CZBX26"
+	secretnext = "CZBX26"
+	sky1 = "CZBX0035"
+	music = "D_94TU25"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX26 "Cuteness Overload"
+{
+	titlepatch = "CZBXV25"
+	next = "CZBX27"
+	secretnext = "CZBX27"
+	sky1 = "CZBX0035"
+	music = "D_94TU26"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX27 "Lift it!"
+{
+	titlepatch = "CZBXV26"
+	next = "CZBX28"
+	secretnext = "CZBX28"
+	sky1 = "CZBX0035"
+	music = "D_94TU27"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX28 "Criticall Hit"
+{
+	titlepatch = "CZBXV27"
+	next = "CZBX29"
+	secretnext = "CZBX29"
+	sky1 = "CZBX0035"
+	music = "D_94TU28"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX29 "Hole"
+{
+	titlepatch = "CZBXV28"
+	next = "CZBX30"
+	secretnext = "CZBX30"
+	sky1 = "CZBX0035"
+	music = "D_94TU29"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX30 "Icon of Souls"
+{
+	titlepatch = "CZBXV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CZBX0035"
+	music = "D_94TU30"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+	allowmonstertelefrags
+}
+
+map CZBX31 "Fresh Air"
+{
+	titlepatch = "CZBXV30"
+	next = "CZBX16"
+	secretnext = "CZBX32"
+	sky1 = "CZBX0035"
+	music = "D_94TU31"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}
+
+map CZBX32 "This Map Is Boring"
+{
+	titlepatch = "CZBXV31"
+	next = "CZBX16"
+	secretnext = "CZBX16"
+	sky1 = "CZBX0035"
+	music = "D_94TU32"
+	intermusic = "D_CZBXIN"
+	ExitPic = "CZBXINT"
+	EnterPic = "CZBXINT"
+}

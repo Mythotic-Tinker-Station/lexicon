@@ -1,0 +1,394 @@
+// Going Down Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	compat_sectorsounds = 1
+}
+
+map GDWN01 "Going Up"
+{
+	titlepatch = "GDWNV00"
+	next = "GDWN02"
+	secretnext = "GDWN02"
+	sky1 = "GDWN0007"
+	music = "D_GDWN01"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN02 "Evil Admin"
+{
+	titlepatch = "GDWNV01"
+	next = "GDWN03"
+	secretnext = "GDWN03"
+	sky1 = "GDWN0007"
+	music = "D_GDWN02"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN03 "Crawl Space"
+{
+	titlepatch = "GDWNV02"
+	next = "GDWN04"
+	secretnext = "GDWN04"
+	sky1 = "GDWN0007"
+	music = "D_GDWN03"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN04 "Blood and Rockets"
+{
+	titlepatch = "GDWNV03"
+	next = "GDWN05"
+	secretnext = "GDWN05"
+	sky1 = "GDWN0007"
+	music = "D_GDWN04"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN05 "Time Warp"
+{
+	titlepatch = "GDWNV04"
+	next = "GDWN06"
+	secretnext = "GDWN06"
+	sky1 = "GDWN0007"
+	music = "D_GDWN05"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN06 "Painframe"
+{
+	titlepatch = "GDWNV05"
+	next = "GDWN07"
+	secretnext = "GDWN07"
+	sky1 = "GDWN0007"
+	music = "D_GDWN06"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN07 "Bad Reception"
+{
+	titlepatch = "GDWNV06"
+	next = "GDWN08"
+	secretnext = "GDWN08"
+	sky1 = "GDWN0007"
+	music = "D_GDWN07"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+	Map07Special
+}
+
+map GDWN08 "Hide and Seek"
+{
+	titlepatch = "GDWNV07"
+	next = "GDWN09"
+	secretnext = "GDWN09"
+	sky1 = "GDWN0007"
+	music = "D_GDWN08"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN09 "Broken Records"
+{
+	titlepatch = "GDWNV08"
+	next = "GDWN10"
+	secretnext = "GDWN10"
+	sky1 = "GDWN0007"
+	music = "D_GDWN09"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN10 "Trip Switch"
+{
+	titlepatch = "GDWNV09"
+	next = "GDWN11"
+	secretnext = "GDWN11"
+	sky1 = "GDWN0007"
+	music = "D_GDWN10"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN11 "Vivisection"
+{
+	titlepatch = "GDWNV10"
+	next = "GDWN12"
+	secretnext = "GDWN12"
+	sky1 = "GDWN0007"
+	music = "D_GDWN11"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN12 "Dead End"
+{
+	titlepatch = "GDWNV11"
+	next = "GDWN13"
+	secretnext = "GDWN13"
+	sky1 = "GDWN0008"
+	music = "D_GDWN12"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN13 "Deep Trouble"
+{
+	titlepatch = "GDWNV12"
+	next = "GDWN14"
+	secretnext = "GDWN14"
+	sky1 = "GDWN0008"
+	music = "D_GDWN13"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN14 "Secrets and Lies"
+{
+	titlepatch = "GDWNV13"
+	next = "GDWN15"
+	secretnext = "GDWN15"
+	sky1 = "GDWN0008"
+	music = "D_GDWN14"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN15 "Gladiator"
+{
+	titlepatch = "GDWNV14"
+	next = "GDWN16"
+	secretnext = "GDWN31"
+	sky1 = "GDWN0008"
+	music = "D_GDWN15"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN16 "Black Mass"
+{
+	titlepatch = "GDWNV15"
+	next = "GDWN17"
+	secretnext = "GDWN17"
+	sky1 = "GDWN0008"
+	music = "D_GDWN16"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN17 "Rest in Pieces"
+{
+	titlepatch = "GDWNV16"
+	next = "GDWN18"
+	secretnext = "GDWN18"
+	sky1 = "GDWN0008"
+	music = "D_GDWN17"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN18 "Buried Alive"
+{
+	titlepatch = "GDWNV17"
+	next = "GDWN19"
+	secretnext = "GDWN19"
+	sky1 = "GDWN0008"
+	music = "D_GDWN18"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN19 "200 Megahurts"
+{
+	titlepatch = "GDWNV18"
+	next = "GDWN20"
+	secretnext = "GDWN20"
+	sky1 = "GDWN0008"
+	music = "D_GDWN19"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN20 "The Mouth of Madness"
+{
+	titlepatch = "GDWNV19"
+	next = "GDWN21"
+	secretnext = "GDWN21"
+	sky1 = "GDWN0008"
+	music = "D_GDWN20"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN21 "Indigestion"
+{
+	titlepatch = "GDWNV20"
+	next = "GDWN22"
+	secretnext = "GDWN22"
+	sky1 = "GDWN0009"
+	music = "D_GDWN21"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN22 "Constipation Station"
+{
+	titlepatch = "GDWNV21"
+	next = "GDWN23"
+	secretnext = "GDWN23"
+	sky1 = "GDWN0009"
+	music = "D_GDWN22"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN23 "Demonology"
+{
+	titlepatch = "GDWNV22"
+	next = "GDWN24"
+	secretnext = "GDWN24"
+	sky1 = "GDWN0009"
+	music = "D_GDWN23"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN24 "Bridge of Blood"
+{
+	titlepatch = "GDWNV23"
+	next = "GDWN25"
+	secretnext = "GDWN25"
+	sky1 = "GDWN0009"
+	music = "D_GDWN24"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN25 "Forbidden Fruit"
+{
+	titlepatch = "GDWNV24"
+	next = "GDWN26"
+	secretnext = "GDWN26"
+	sky1 = "GDWN0009"
+	music = "D_GDWN25"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN26 "Insanity"
+{
+	titlepatch = "GDWNV25"
+	next = "GDWN27"
+	secretnext = "GDWN27"
+	sky1 = "GDWN0009"
+	music = "D_GDWN26"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN27 "Hard Cover"
+{
+	titlepatch = "GDWNV26"
+	next = "GDWN28"
+	secretnext = "GDWN28"
+	sky1 = "GDWN0009"
+	music = "D_GDWN27"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN28 "Necropolis"
+{
+	titlepatch = "GDWNV27"
+	next = "GDWN29"
+	secretnext = "GDWN29"
+	sky1 = "GDWN0009"
+	music = "D_GDWN28"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN29 "Demolition"
+{
+	titlepatch = "GDWNV28"
+	next = "GDWN30"
+	secretnext = "GDWN30"
+	sky1 = "GDWN0009"
+	music = "D_GDWN29"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN30 "Game Over"
+{
+	titlepatch = "GDWNV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "GDWN0009"
+	music = "D_GDWN30"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+	allowmonstertelefrags
+}
+
+map GDWN31 "Stair Crazy"
+{
+	titlepatch = "GDWNV30"
+	next = "GDWN16"
+	secretnext = "GDWN32"
+	sky1 = "GDWN0009"
+	music = "D_GDWN31"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}
+
+map GDWN32 "Roof Rage"
+{
+	titlepatch = "GDWNV31"
+	next = "GDWN16"
+	secretnext = "GDWN16"
+	sky1 = "GDWN0009"
+	music = "D_GDWN32"
+	intermusic = "D_GDWNIN"
+	ExitPic = "GDWNINT"
+	EnterPic = "GDWNINT"
+}

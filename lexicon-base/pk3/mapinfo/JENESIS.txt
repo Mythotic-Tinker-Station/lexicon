@@ -1,0 +1,393 @@
+// JENESIS Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map JENS01 "Treatment Plant"
+{
+	titlepatch = "JENSV00"
+	next = "JENS02"
+	secretnext = "JENS02"
+	sky1 = "SKY1"
+	music = "D_JENS01"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS02 "The Canal"
+{
+	titlepatch = "JENSV01"
+	next = "JENS03"
+	secretnext = "JENS03"
+	sky1 = "SKY1"
+	music = "D_JENS02"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS03 "The Oasis Facility"
+{
+	titlepatch = "JENSV02"
+	next = "JENS04"
+	secretnext = "JENS04"
+	sky1 = "SKY1"
+	music = "D_JENS03"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS04 "The Garden Terminal II"
+{
+	titlepatch = "JENSV03"
+	next = "JENS05"
+	secretnext = "JENS05"
+	sky1 = "SKY1"
+	music = "D_JENS04"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS05 "Submerged Refinery"
+{
+	titlepatch = "JENSV04"
+	next = "JENS06"
+	secretnext = "JENS06"
+	sky1 = "SKY1"
+	music = "D_JENS05"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS06 "Waystation"
+{
+	titlepatch = "JENSV05"
+	next = "JENS07"
+	secretnext = "JENS07"
+	sky1 = "SKY1"
+	music = "D_JENS06"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS07 "Dead Center"
+{
+	titlepatch = "JENSV06"
+	next = "JENS08"
+	secretnext = "JENS08"
+	sky1 = "SKY1"
+	music = "D_JENS07"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+	Map07Special
+}
+
+map JENS08 "Plunge"
+{
+	titlepatch = "JENSV07"
+	next = "JENS09"
+	secretnext = "JENS09"
+	sky1 = "SKY1"
+	music = "D_JENS08"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS09 "Slime Vaults"
+{
+	titlepatch = "JENSV08"
+	next = "JENS10"
+	secretnext = "JENS10"
+	sky1 = "SKY1"
+	music = "D_JENS09"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS10 "Ruins"
+{
+	titlepatch = "JENSV09"
+	next = "JENS11"
+	secretnext = "JENS11"
+	sky1 = "SKY1"
+	music = "D_JENS10"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS11 "Devil's Industry"
+{
+	titlepatch = "JENSV10"
+	next = "JENS12"
+	secretnext = "JENS12"
+	sky1 = "SKY1"
+	music = "D_JENS11"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS12 "Highway of Destruction"
+{
+	titlepatch = "JENSV11"
+	next = "JENS13"
+	secretnext = "JENS13"
+	sky1 = "SKY1"
+	music = "D_JENS12"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS13 "Transporter Station"
+{
+	titlepatch = "JENSV12"
+	next = "JENS14"
+	secretnext = "JENS14"
+	sky1 = "SKY1"
+	music = "D_JENS13"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS14 "Poisoned Ocean"
+{
+	titlepatch = "JENSV13"
+	next = "JENS15"
+	secretnext = "JENS15"
+	sky1 = "SKY1"
+	music = "D_JENS14"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS15 "Alchemy"
+{
+	titlepatch = "JENSV14"
+	next = "JENS16"
+	secretnext = "JENS31"
+	sky1 = "SKY1"
+	music = "D_JENS15"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS16 "Crestfallen"
+{
+	titlepatch = "JENSV15"
+	next = "JENS17"
+	secretnext = "JENS17"
+	sky1 = "SKY1"
+	music = "D_JENS16"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS17 "Deadline"
+{
+	titlepatch = "JENSV16"
+	next = "JENS18"
+	secretnext = "JENS18"
+	sky1 = "SKY1"
+	music = "D_JENS17"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS18 "Mineshaft"
+{
+	titlepatch = "JENSV17"
+	next = "JENS19"
+	secretnext = "JENS19"
+	sky1 = "SKY1"
+	music = "D_JENS18"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS19 "Subterranean Labs"
+{
+	titlepatch = "JENSV18"
+	next = "JENS20"
+	secretnext = "JENS20"
+	sky1 = "SKY1"
+	music = "D_JENS19"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS20 "Into the Gate"
+{
+	titlepatch = "JENSV19"
+	next = "JENS21"
+	secretnext = "JENS21"
+	sky1 = "SKY1"
+	music = "D_JENS20"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS21 "The Other Side"
+{
+	titlepatch = "JENSV20"
+	next = "JENS22"
+	secretnext = "JENS22"
+	sky1 = "SKY1"
+	music = "D_JENS21"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS22 "Haunted Halls"
+{
+	titlepatch = "JENSV21"
+	next = "JENS23"
+	secretnext = "JENS23"
+	sky1 = "SKY1"
+	music = "D_JENS22"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS23 "The Atrium"
+{
+	titlepatch = "JENSV22"
+	next = "JENS24"
+	secretnext = "JENS24"
+	sky1 = "SKY1"
+	music = "D_JENS23"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS24 "Hades' Wall"
+{
+	titlepatch = "JENSV23"
+	next = "JENS25"
+	secretnext = "JENS25"
+	sky1 = "SKY1"
+	music = "D_JENS24"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS25 "The Carcass Pit"
+{
+	titlepatch = "JENSV24"
+	next = "JENS26"
+	secretnext = "JENS26"
+	sky1 = "SKY1"
+	music = "D_JENS25"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS26 "The Savage Abyss"
+{
+	titlepatch = "JENSV25"
+	next = "JENS27"
+	secretnext = "JENS27"
+	sky1 = "SKY1"
+	music = "D_JENS26"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS27 "The Vulcanum"
+{
+	titlepatch = "JENSV26"
+	next = "JENS28"
+	secretnext = "JENS28"
+	sky1 = "SKY1"
+	music = "D_JENS27"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS28 "Baphomet's Keep"
+{
+	titlepatch = "JENSV27"
+	next = "JENS29"
+	secretnext = "JENS29"
+	sky1 = "SKY1"
+	music = "D_JENS28"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS29 "Mutant Jenesis"
+{
+	titlepatch = "JENSV28"
+	next = "JENS30"
+	secretnext = "JENS30"
+	sky1 = "SKY1"
+	music = "D_JENS29"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS30 "Abysm"
+{
+	titlepatch = "JENSV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "D_JENS30"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+	allowmonstertelefrags
+}
+
+map JENS31 "Duality"
+{
+	titlepatch = "JENSV30"
+	next = "JENS16"
+	secretnext = "JENS32"
+	sky1 = "SKY1"
+	music = "D_JENS31"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}
+
+map JENS32 "Reprise"
+{
+	titlepatch = "JENSV31"
+	next = "JENS16"
+	secretnext = "JENS16"
+	sky1 = "SKY1"
+	music = "D_JENS32"
+	intermusic = "D_JENSIN"
+	ExitPic = "JENSINT"
+	EnterPic = "JENSINT"
+}

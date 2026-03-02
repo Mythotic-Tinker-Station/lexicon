@@ -1,0 +1,393 @@
+// Vile Flesh Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map VLFL01 "M01: Administration"
+{
+	titlepatch = "VLFLV00"
+	next = "VLFL02"
+	secretnext = "VLFL02"
+	sky1 = "VLFL0001"
+	music = "D_VLFL01"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL02 "M02: Nuke Storage"
+{
+	titlepatch = "VLFLV01"
+	next = "VLFL03"
+	secretnext = "VLFL03"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_STALKS"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL03 "M03: Processing"
+{
+	titlepatch = "VLFLV02"
+	next = "VLFL04"
+	secretnext = "VLFL04"
+	sky1 = "VLFL0001"
+	music = "D_VLFL03"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL04 "M04: Mainframe"
+{
+	titlepatch = "VLFLV03"
+	next = "VLFL05"
+	secretnext = "VLFL05"
+	sky1 = "VLFL0001"
+	music = "D_VLFL04"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL05 "M05: Outpost"
+{
+	titlepatch = "VLFLV04"
+	next = "VLFL06"
+	secretnext = "VLFL06"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL06 "M06: Secure Area"
+{
+	titlepatch = "VLFLV05"
+	next = "VLFL07"
+	secretnext = "VLFL07"
+	sky1 = "VLFL0001"
+	music = "D_VLFL06"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL07 "M07: Labs"
+{
+	titlepatch = "VLFLV06"
+	next = "VLFL08"
+	secretnext = "VLFL08"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+	Map07Special
+}
+
+map VLFL08 "M08: Gateway"
+{
+	titlepatch = "VLFLV07"
+	next = "VLFL09"
+	secretnext = "VLFL09"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL09 "M09: Weapons Bay"
+{
+	titlepatch = "VLFLV08"
+	next = "VLFL10"
+	secretnext = "VLFL10"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_IN_CIT"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL10 "M10: Beacon"
+{
+	titlepatch = "VLFLV09"
+	next = "VLFL11"
+	secretnext = "VLFL11"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL11 "M11: War Rooms"
+{
+	titlepatch = "VLFLV10"
+	next = "VLFL12"
+	secretnext = "VLFL12"
+	sky1 = "VLFL0001"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL12 "M12: Cliff Face"
+{
+	titlepatch = "VLFLV11"
+	next = "VLFL13"
+	secretnext = "VLFL13"
+	sky1 = "VLFL0002"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL13 "M13: Subterrainia"
+{
+	titlepatch = "VLFLV12"
+	next = "VLFL14"
+	secretnext = "VLFL14"
+	sky1 = "VLFL0002"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL14 "M14: The Pits"
+{
+	titlepatch = "VLFLV13"
+	next = "VLFL15"
+	secretnext = "VLFL15"
+	sky1 = "VLFL0002"
+	music = "D_VLFL14"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL15 "M15: Village"
+{
+	titlepatch = "VLFLV14"
+	next = "VLFL16"
+	secretnext = "VLFL31"
+	sky1 = "VLFL0002"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL16 "M16: Cathedral"
+{
+	titlepatch = "VLFLV15"
+	next = "VLFL17"
+	secretnext = "VLFL17"
+	sky1 = "VLFL0002"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL17 "M17: Guard Towers"
+{
+	titlepatch = "VLFLV16"
+	next = "VLFL18"
+	secretnext = "VLFL18"
+	sky1 = "VLFL0002"
+	music = "D_VLFL17"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL18 "M18: Boneyard"
+{
+	titlepatch = "VLFLV17"
+	next = "VLFL19"
+	secretnext = "VLFL19"
+	sky1 = "VLFL0002"
+	music = "D_VLFL18"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL19 "M19: The Pillars"
+{
+	titlepatch = "VLFLV18"
+	next = "VLFL20"
+	secretnext = "VLFL20"
+	sky1 = "VLFL0002"
+	music = "D_VLFL19"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL20 "M20: Demon Seed"
+{
+	titlepatch = "VLFLV19"
+	next = "VLFL21"
+	secretnext = "VLFL21"
+	sky1 = "VLFL0002"
+	music = "D_VLFL20"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL21 "M21: Flesh Mill"
+{
+	titlepatch = "VLFLV20"
+	next = "VLFL22"
+	secretnext = "VLFL22"
+	sky1 = "VLFL0003"
+	music = "D_VLFL21"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL22 "M22: Ungod"
+{
+	titlepatch = "VLFLV21"
+	next = "VLFL23"
+	secretnext = "VLFL23"
+	sky1 = "VLFL0003"
+	music = "D_VLFL22"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL23 "M23: Return Ticket"
+{
+	titlepatch = "VLFLV22"
+	next = "VLFL24"
+	secretnext = "VLFL24"
+	sky1 = "VLFL0003"
+	music = "D_VLFL23"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL24 "M24: City Center"
+{
+	titlepatch = "VLFLV23"
+	next = "VLFL25"
+	secretnext = "VLFL25"
+	sky1 = "VLFL0003"
+	music = "D_VLFL24"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL25 "M25: UAC Headquaters"
+{
+	titlepatch = "VLFLV24"
+	next = "VLFL26"
+	secretnext = "VLFL26"
+	sky1 = "VLFL0003"
+	music = "D_VLFL25"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL26 "M26: Service Tunnels"
+{
+	titlepatch = "VLFLV25"
+	next = "VLFL27"
+	secretnext = "VLFL27"
+	sky1 = "VLFL0003"
+	music = "D_VLFL26"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL27 "M27: Dimension Shift"
+{
+	titlepatch = "VLFLV26"
+	next = "VLFL28"
+	secretnext = "VLFL28"
+	sky1 = "VLFL0003"
+	music = "D_VLFL27"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL28 "M28: Tower Block"
+{
+	titlepatch = "VLFLV27"
+	next = "VLFL29"
+	secretnext = "VLFL29"
+	sky1 = "VLFL0003"
+	music = "D_VLFL28"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL29 "M29: Earth Siege"
+{
+	titlepatch = "VLFLV28"
+	next = "VLFL30"
+	secretnext = "VLFL30"
+	sky1 = "VLFL0003"
+	music = "D_VLFL29"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL30 "M30: Hell Revealed"
+{
+	titlepatch = "VLFLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "VLFL0003"
+	music = "D_VLFL30"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+	allowmonstertelefrags
+}
+
+map VLFL31 "M31: Rough Draft"
+{
+	titlepatch = "VLFLV30"
+	next = "VLFL16"
+	secretnext = "VLFL32"
+	sky1 = "VLFL0003"
+	music = "D_VLFL31"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}
+
+map VLFL32 "M32: Spider Web"
+{
+	titlepatch = "VLFLV31"
+	next = "VLFL16"
+	secretnext = "VLFL16"
+	sky1 = "VLFL0003"
+	music = "D_VLFL32"
+	intermusic = "D_VLFLIN"
+	ExitPic = "VLFLINT"
+	EnterPic = "VLFLINT"
+}

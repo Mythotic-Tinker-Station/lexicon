@@ -1,0 +1,393 @@
+// Doom 2 Redux Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D2RX01 "Doom 2 Redux Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "D2RX02"
+	secretnext = "D2RX02"
+	sky1 = "SKY1"
+	music = "D_D2RX01"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX02 "Doom 2 Redux Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "D2RX03"
+	secretnext = "D2RX03"
+	sky1 = "SKY1"
+	music = "D_D2RX02"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX03 "Doom 2 Redux Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "D2RX04"
+	secretnext = "D2RX04"
+	sky1 = "SKY1"
+	music = "D_D2RX03"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX04 "Doom 2 Redux Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "D2RX05"
+	secretnext = "D2RX05"
+	sky1 = "SKY1"
+	music = "D_D2RX04"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX05 "Doom 2 Redux Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "D2RX06"
+	secretnext = "D2RX06"
+	sky1 = "SKY1"
+	music = "D_D2RX05"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX06 "Doom 2 Redux Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "D2RX07"
+	secretnext = "D2RX07"
+	sky1 = "SKY1"
+	music = "D_D2RX06"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX07 "Doom 2 Redux Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "D2RX08"
+	secretnext = "D2RX08"
+	sky1 = "SKY1"
+	music = "D_D2RX07"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+	Map07Special
+}
+
+map D2RX08 "Doom 2 Redux Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "D2RX09"
+	secretnext = "D2RX09"
+	sky1 = "SKY1"
+	music = "D_D2RX08"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX09 "Doom 2 Redux Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "D2RX10"
+	secretnext = "D2RX10"
+	sky1 = "SKY1"
+	music = "D_D2RX09"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX10 "Doom 2 Redux Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "D2RX11"
+	secretnext = "D2RX11"
+	sky1 = "SKY1"
+	music = "D_D2RX10"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX11 "Doom 2 Redux Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "D2RX12"
+	secretnext = "D2RX12"
+	sky1 = "SKY1"
+	music = "D_D2RX11"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX12 "Doom 2 Redux Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "D2RX13"
+	secretnext = "D2RX13"
+	sky1 = "SKY2"
+	music = "D_D2RX12"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX13 "Doom 2 Redux Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "D2RX14"
+	secretnext = "D2RX14"
+	sky1 = "SKY2"
+	music = "D_D2RX13"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX14 "Doom 2 Redux Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "D2RX15"
+	secretnext = "D2RX15"
+	sky1 = "SKY2"
+	music = "D_D2RX14"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX15 "Doom 2 Redux Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "D2RX16"
+	secretnext = "D2RX31"
+	sky1 = "SKY2"
+	music = "D_D2RX15"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX16 "Doom 2 Redux Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "D2RX17"
+	secretnext = "D2RX17"
+	sky1 = "SKY2"
+	music = "D_D2RX16"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX17 "Doom 2 Redux Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "D2RX18"
+	secretnext = "D2RX18"
+	sky1 = "SKY2"
+	music = "D_D2RX17"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX18 "Doom 2 Redux Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "D2RX19"
+	secretnext = "D2RX19"
+	sky1 = "SKY2"
+	music = "D_D2RX18"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX19 "Doom 2 Redux Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "D2RX20"
+	secretnext = "D2RX20"
+	sky1 = "SKY2"
+	music = "D_D2RX19"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX20 "Doom 2 Redux Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "D2RX21"
+	secretnext = "D2RX21"
+	sky1 = "SKY2"
+	music = "D_D2RX20"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX21 "Doom 2 Redux Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "D2RX22"
+	secretnext = "D2RX22"
+	sky1 = "SKY3"
+	music = "D_D2RX21"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX22 "Doom 2 Redux Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "D2RX23"
+	secretnext = "D2RX23"
+	sky1 = "SKY3"
+	music = "D_D2RX22"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX23 "Doom 2 Redux Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "D2RX24"
+	secretnext = "D2RX24"
+	sky1 = "SKY3"
+	music = "D_D2RX23"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX24 "Doom 2 Redux Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "D2RX25"
+	secretnext = "D2RX25"
+	sky1 = "SKY3"
+	music = "D_D2RX24"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX25 "Doom 2 Redux Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "D2RX26"
+	secretnext = "D2RX26"
+	sky1 = "SKY3"
+	music = "D_D2RX25"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX26 "Doom 2 Redux Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "D2RX27"
+	secretnext = "D2RX27"
+	sky1 = "SKY3"
+	music = "D_D2RX26"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX27 "Doom 2 Redux Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "D2RX28"
+	secretnext = "D2RX28"
+	sky1 = "SKY3"
+	music = "D_D2RX27"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX28 "Doom 2 Redux Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "D2RX29"
+	secretnext = "D2RX29"
+	sky1 = "SKY3"
+	music = "D_D2RX28"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX29 "Doom 2 Redux Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "D2RX30"
+	secretnext = "D2RX30"
+	sky1 = "SKY3"
+	music = "D_D2RX29"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX30 "Doom 2 Redux Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_D2RX30"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+	allowmonstertelefrags
+}
+
+map D2RX31 "Doom 2 Redux Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "D2RX16"
+	secretnext = "D2RX32"
+	sky1 = "SKY3"
+	music = "D_D2RX31"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}
+
+map D2RX32 "Doom 2 Redux Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "D2RX16"
+	secretnext = "D2RX16"
+	sky1 = "SKY3"
+	music = "D_D2RX32"
+	intermusic = "D_D2RXIN"
+	ExitPic = "D2RXINT"
+	EnterPic = "D2RXINT"
+}

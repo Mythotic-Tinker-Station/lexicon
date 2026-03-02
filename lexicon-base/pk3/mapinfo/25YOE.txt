@@ -1,0 +1,393 @@
+// Doom II: 25 Years on Earth Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D25Y01 "Drop Pod Excursion"
+{
+	titlepatch = "D25YV00"
+	next = "D25Y02"
+	secretnext = "D25Y02"
+	sky1 = "D25Y0042"
+	music = "D_D25Y01"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y02 "Bunker Buster"
+{
+	titlepatch = "D25YV01"
+	next = "D25Y03"
+	secretnext = "D25Y03"
+	sky1 = "D25Y0042"
+	music = "D_D25Y02"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y03 "Urban Renewal"
+{
+	titlepatch = "D25YV02"
+	next = "D25Y04"
+	secretnext = "D25Y04"
+	sky1 = "D25Y0042"
+	music = "D_D25Y03"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y04 "Wasted Luxury"
+{
+	titlepatch = "D25YV03"
+	next = "D25Y05"
+	secretnext = "D25Y05"
+	sky1 = "D25Y0042"
+	music = "D_D25Y04"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y05 "Skyline"
+{
+	titlepatch = "D25YV04"
+	next = "D25Y06"
+	secretnext = "D25Y06"
+	sky1 = "D25Y0042"
+	music = "D_D25Y05"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y06 "Destination Defenestration"
+{
+	titlepatch = "D25YV05"
+	next = "D25Y07"
+	secretnext = "D25Y07"
+	sky1 = "D25Y0042"
+	music = "D_D25Y06"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y07 "Rat Run"
+{
+	titlepatch = "D25YV06"
+	next = "D25Y08"
+	secretnext = "D25Y08"
+	sky1 = "D25Y0042"
+	music = "D_D25Y07"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+	Map07Special
+}
+
+map D25Y08 "Constriction"
+{
+	titlepatch = "D25YV07"
+	next = "D25Y09"
+	secretnext = "D25Y09"
+	sky1 = "D25Y0042"
+	music = "D_D25Y08"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y09 "Skulking Death"
+{
+	titlepatch = "D25YV08"
+	next = "D25Y10"
+	secretnext = "D25Y10"
+	sky1 = "D25Y0042"
+	music = "D_D25Y09"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y10 "Haste Keep"
+{
+	titlepatch = "D25YV09"
+	next = "D25Y11"
+	secretnext = "D25Y11"
+	sky1 = "D25Y0042"
+	music = "D_D25Y10"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y11 "Bloody Denial"
+{
+	titlepatch = "D25YV10"
+	next = "D25Y12"
+	secretnext = "D25Y12"
+	sky1 = "D25Y0042"
+	music = "D_D25Y11"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y12 "Emerald Fluid"
+{
+	titlepatch = "D25YV11"
+	next = "D25Y13"
+	secretnext = "D25Y13"
+	sky1 = "D25Y0043"
+	music = "D_D25Y12"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y13 "Caldera"
+{
+	titlepatch = "D25YV12"
+	next = "D25Y14"
+	secretnext = "D25Y14"
+	sky1 = "D25Y0043"
+	music = "D_D25Y13"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y14 "Water Treatment"
+{
+	titlepatch = "D25YV13"
+	next = "D25Y15"
+	secretnext = "D25Y15"
+	sky1 = "D25Y0043"
+	music = "D_D25Y14"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y15 "Spaceport"
+{
+	titlepatch = "D25YV14"
+	next = "D25Y16"
+	secretnext = "D25Y31"
+	sky1 = "D25Y0043"
+	music = "D_D25Y15"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y16 "Unruly Cargo"
+{
+	titlepatch = "D25YV15"
+	next = "D25Y17"
+	secretnext = "D25Y17"
+	sky1 = "D25Y0043"
+	music = "D_D25Y16"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y17 "Entrance Made"
+{
+	titlepatch = "D25YV16"
+	next = "D25Y18"
+	secretnext = "D25Y18"
+	sky1 = "D25Y0043"
+	music = "D_D25Y17"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y18 "Meat Grinder"
+{
+	titlepatch = "D25YV17"
+	next = "D25Y19"
+	secretnext = "D25Y19"
+	sky1 = "D25Y0043"
+	music = "D_D25Y18"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y19 "Fester"
+{
+	titlepatch = "D25YV18"
+	next = "D25Y20"
+	secretnext = "D25Y20"
+	sky1 = "D25Y0043"
+	music = "D_D25Y19"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y20 "Reclamation"
+{
+	titlepatch = "D25YV19"
+	next = "D25Y21"
+	secretnext = "D25Y21"
+	sky1 = "D25Y0043"
+	music = "D_D25Y20"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y21 "Security Station"
+{
+	titlepatch = "D25YV20"
+	next = "D25Y22"
+	secretnext = "D25Y22"
+	sky1 = "D25Y0044"
+	music = "D_D25Y21"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y22 "Power Trip"
+{
+	titlepatch = "D25YV21"
+	next = "D25Y23"
+	secretnext = "D25Y23"
+	sky1 = "D25Y0044"
+	music = "D_D25Y22"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y23 "Corporate Hell"
+{
+	titlepatch = "D25YV22"
+	next = "D25Y24"
+	secretnext = "D25Y24"
+	sky1 = "D25Y0044"
+	music = "D_D25Y23"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y24 "The Front Line"
+{
+	titlepatch = "D25YV23"
+	next = "D25Y25"
+	secretnext = "D25Y25"
+	sky1 = "D25Y0044"
+	music = "D_D25Y24"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y25 "Middle Management"
+{
+	titlepatch = "D25YV24"
+	next = "D25Y26"
+	secretnext = "D25Y26"
+	sky1 = "D25Y0044"
+	music = "D_D25Y25"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y26 "Upper Management"
+{
+	titlepatch = "D25YV25"
+	next = "D25Y27"
+	secretnext = "D25Y27"
+	sky1 = "D25Y0044"
+	music = "D_D25Y26"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y27 "Press Gang"
+{
+	titlepatch = "D25YV26"
+	next = "D25Y28"
+	secretnext = "D25Y28"
+	sky1 = "D25Y0044"
+	music = "D_D25Y27"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y28 "Broundry 3"
+{
+	titlepatch = "D25YV27"
+	next = "D25Y29"
+	secretnext = "D25Y29"
+	sky1 = "D25Y0044"
+	music = "D_D25Y28"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y29 "The Armoury"
+{
+	titlepatch = "D25YV28"
+	next = "D25Y30"
+	secretnext = "D25Y30"
+	sky1 = "D25Y0044"
+	music = "D_D25Y29"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y30 "Final Test"
+{
+	titlepatch = "D25YV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "D25Y0044"
+	music = "D_D25Y30"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+	allowmonstertelefrags
+}
+
+map D25Y31 "Holiday"
+{
+	titlepatch = "D25YV30"
+	next = "D25Y16"
+	secretnext = "D25Y32"
+	sky1 = "D25Y0044"
+	music = "D_D25Y31"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}
+
+map D25Y32 "The Waiting Room"
+{
+	titlepatch = "D25YV31"
+	next = "D25Y16"
+	secretnext = "D25Y16"
+	sky1 = "D25Y0044"
+	music = "D_D25Y32"
+	intermusic = "D_D25YIN"
+	ExitPic = "D25YINT"
+	EnterPic = "D25YINT"
+}

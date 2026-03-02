@@ -1,0 +1,1509 @@
+// 1994 Tune-Up Community Project
+texture 94TU0028 range 94TU0030 tics 8 allowdecals
+texture 94TU0077 range 94TU0080 tics 8
+switch 94TU0007 on pic 94TU0008 tics 0
+switch 94TU0038 on pic 94TU0042 tics 0
+switch 94TU0040 on pic 94TU0044 tics 0
+
+// 300 Minutes of /vr/
+texture 3MVR0011 range 3MVR0014 tics 8
+switch 3MVR0001 on pic 3MVR0006 tics 0
+switch 3MVR0002 on pic 3MVR0007 tics 0
+
+// 400 Minutes of /vr/
+texture 4MVR0189 range 4MVR0190 tics 8
+texture 4MVR0191 range 4MVR0192 tics 8
+texture 4MVR0193 range 4MVR0195 tics 8
+texture 4MVR0196 range 4MVR0198 tics 8
+texture 4MVR0334 range 4MVR0336 tics 8
+texture 4MVR0339 range 4MVR0342 tics 8
+texture 4MVR0361 range 4MVR0363 tics 8
+texture 4MVR0379 range 4MVR0381 tics 8
+texture 4MVR0406 range 4MVR0409 tics 8
+texture 4MVR0536 range 4MVR0538 tics 8
+texture 4MVR0767 range 4MVR0770 tics 8
+texture 4MVR0784 range 4MVR0787 tics 8
+flat 4MVR0009 range 4MVR0012 tics 2
+flat 4MVR0033 range 4MVR0034 tics 8
+flat 4MVR0049 range 4MVR0052 tics 8
+flat 4MVR0053 range 4MVR0056 tics 8
+flat 4MVR0057 range 4MVR0060 tics 8
+flat 4MVR0078 range 4MVR0080 tics 8
+switch 4MVR0669 on pic 4MVR0699 tics 0
+switch 4MVR0670 on pic 4MVR0700 tics 0
+switch 4MVR0672 on pic 4MVR0702 tics 0
+switch 4MVR0673 on pic 4MVR0703 tics 0
+switch 4MVR0675 on pic 4MVR0705 tics 0
+switch 4MVR0676 on pic 4MVR0706 tics 0
+switch 4MVR0677 on pic 4MVR0707 tics 0
+switch 4MVR0679 on pic 4MVR0709 tics 0
+switch 4MVR0680 on pic 4MVR0710 tics 0
+switch 4MVR0681 on pic 4MVR0711 tics 0
+switch 4MVR0682 on pic 4MVR0712 tics 0
+switch 4MVR0683 on pic 4MVR0713 tics 0
+switch 4MVR0685 on pic 4MVR0715 tics 0
+switch 4MVR0686 on pic 4MVR0716 tics 0
+switch 4MVR0687 on pic 4MVR0717 tics 0
+switch 4MVR0690 on pic 4MVR0720 tics 0
+switch 4MVR0692 on pic 4MVR0694 tics 0
+switch 4MVR0696 on pic 4MVR0723 tics 0
+switch 4MVR0697 on pic 4MVR0724 tics 0
+switch 4MVR0698 on pic 4MVR0725 tics 0
+switch 4MVR0813 on pic 4MVR0814 tics 0
+
+// Alien Vendetta
+texture ALVD0746 range ALVD0749 tics 8
+texture ALVD0792 range ALVD0800 tics 8
+texture ALVD0834 range ALVD0844 tics 8 allowdecals
+texture ALVD0932 range ALVD0935 tics 8 allowdecals
+switch ALVD0738 on pic ALVD0739 tics 0
+switch ALVD0936 on pic ALVD0937 tics 0
+
+// Ancient Aliens
+texture AALI1071 range AALI1074 tics 8
+texture AALI1075 range AALI1078 tics 8
+texture AALI1079 range AALI1088 tics 8
+texture AALI1089 range AALI1098 tics 8
+texture AALI1099 range AALI1108 tics 8
+texture AALI1109 range AALI1118 tics 8
+texture AALI1119 range AALI1122 tics 8
+texture AALI1123 range AALI1126 tics 8
+texture AALI1127 range AALI1136 tics 8
+texture AALI1137 range AALI1146 tics 8
+texture AALI1147 range AALI1156 tics 8
+texture AALI1157 range AALI1166 tics 8
+texture AALI1167 range AALI1170 tics 8
+texture AALI1171 range AALI1174 tics 8
+texture AALI1175 range AALI1184 tics 8
+texture AALI1185 range AALI1194 tics 8
+texture AALI1195 range AALI1204 tics 8
+texture AALI1205 range AALI1214 tics 8
+texture AALI1215 range AALI1218 tics 8
+texture AALI1219 range AALI1222 tics 8
+texture AALI1223 range AALI1232 tics 8
+texture AALI1233 range AALI1242 tics 8
+texture AALI1243 range AALI1252 tics 8
+texture AALI1253 range AALI1262 tics 8
+texture AALI1263 range AALI1266 tics 8
+texture AALI1267 range AALI1270 tics 8
+texture AALI1271 range AALI1274 tics 8
+texture AALI1279 range AALI1282 tics 8
+texture AALI1283 range AALI1286 tics 8
+texture AALI1412 range AALI1415 tics 8
+texture AALI1437 range AALI1440 tics 8 allowdecals
+texture AALI1620 range AALI1623 tics 8
+texture AALI1775 range AALI1778 tics 8
+texture AALI2221 range AALI2230 tics 8
+texture AALI2232 range AALI2241 tics 8
+texture AALI2243 range AALI2252 tics 8
+texture AALI2253 range AALI2262 tics 8
+texture AALI2264 range AALI2273 tics 8
+texture AALI2275 range AALI2284 tics 8
+texture AALI2286 range AALI2295 tics 8
+texture AALI2296 range AALI2297 tics 8
+texture AALI2299 range AALI2300 tics 8
+texture AALI2301 range AALI2303 tics 8
+texture AALI2304 range AALI2306 tics 8
+texture AALI2430 range AALI2433 tics 8
+texture AALI2434 range AALI2436 tics 8 allowdecals
+texture AALI2444 range AALI2453 tics 8
+texture AALI2454 range AALI2463 tics 8
+texture AALI2464 range AALI2473 tics 8
+texture AALI2474 range AALI2483 tics 8
+texture AALI2484 range AALI2493 tics 8
+texture AALI2494 range AALI2503 tics 8
+texture AALI2504 range AALI2513 tics 8
+texture AALI2514 range AALI2523 tics 8
+texture AALI2524 range AALI2533 tics 8
+texture AALI2534 range AALI2542 tics 8
+texture AALI2548 range AALI2556 tics 8
+texture AALI2562 range AALI2570 tics 8
+texture AALI2576 range AALI2584 tics 8
+texture AALI2590 range AALI2598 tics 8
+texture AALI2604 range AALI2612 tics 8
+texture AALI2618 range AALI2626 tics 8
+texture AALI2672 range AALI2675 tics 8
+texture AALI3036 range AALI3039 tics 8
+texture AALI3078 range AALI3080 tics 8 allowdecals
+texture AALI3103 range AALI3106 tics 8
+texture AALI3185 range AALI3188 tics 8
+texture AALI3775 range AALI3778 tics 8
+texture AALI3779 range AALI3782 tics 8
+texture AALI3783 range AALI3786 tics 8
+texture AALI3787 range AALI3790 tics 8
+texture AALI3791 range AALI3794 tics 8
+texture AALI3795 range AALI3798 tics 8
+texture AALI3799 range AALI3802 tics 8
+texture AALI3803 range AALI3806 tics 8
+texture AALI3807 range AALI3810 tics 8
+texture AALI3811 range AALI3814 tics 8
+texture AALI3815 range AALI3818 tics 8
+texture AALI3819 range AALI3822 tics 8
+texture AALI3823 range AALI3826 tics 8
+texture AALI3827 range AALI3830 tics 8
+texture AALI3831 range AALI3834 tics 8
+texture AALI3835 range AALI3838 tics 8
+texture AALI3839 range AALI3842 tics 8
+texture AALI3843 range AALI3846 tics 8
+texture AALI3847 range AALI3850 tics 8
+texture AALI3851 range AALI3854 tics 8
+texture AALI3855 range AALI3858 tics 8
+texture AALI3859 range AALI3862 tics 8
+texture AALI3863 range AALI3866 tics 8
+texture AALI3867 range AALI3870 tics 8
+texture AALI3871 range AALI3874 tics 8
+texture AALI3875 range AALI3878 tics 8
+texture AALI3879 range AALI3882 tics 8
+texture AALI3883 range AALI3886 tics 8
+texture AALI3887 range AALI3890 tics 8
+texture AALI3891 range AALI3894 tics 8
+texture AALI3895 range AALI3898 tics 8
+texture AALI3899 range AALI3902 tics 8
+texture AALI3903 range AALI3906 tics 8
+texture AALI3907 range AALI3910 tics 8
+texture AALI3911 range AALI3914 tics 8
+texture AALI3915 range AALI3918 tics 8
+texture AALI3919 range AALI3922 tics 8
+texture AALI3923 range AALI3926 tics 8
+texture AALI3927 range AALI3930 tics 8
+texture AALI3931 range AALI3934 tics 8
+texture AALI3935 range AALI3938 tics 8
+texture AALI3939 range AALI3942 tics 8
+texture AALI3943 range AALI3952 tics 8
+texture AALI3953 range AALI3962 tics 8
+texture AALI3980 range AALI3989 tics 8
+texture AALI3990 range AALI3999 tics 8
+texture AALI4001 range AALI4004 tics 8
+texture AALI4063 range AALI4066 tics 8
+texture AALI4079 range AALI4086 tics 8
+texture AALI4087 range AALI4096 tics 8
+texture AALI4097 range AALI4106 tics 8
+texture AALI4109 range AALI4116 tics 8
+texture AALI4132 range AALI4147 tics 8
+texture AALI4148 range AALI4163 tics 8
+texture AALI4164 range AALI4179 tics 8
+texture AALI4180 range AALI4195 tics 8
+texture AALI4211 range AALI4221 tics 8
+texture AALI4222 range AALI4232 tics 8
+texture AALI4233 range AALI4243 tics 8
+texture AALI4244 range AALI4254 tics 8
+texture AALI4255 range AALI4265 tics 8
+texture AALI4298 range AALI4305 tics 8
+texture AALI4314 range AALI4321 tics 8
+texture AALI4334 range AALI4351 tics 8
+texture AALI4352 range AALI4369 tics 8
+texture AALI4376 range AALI4379 tics 8
+texture AALI4403 range AALI4584 tics 8
+texture AALI4585 range AALI4766 tics 8
+texture AALI4767 range AALI4772 tics 8
+texture AALI4822 range AALI4832 tics 8
+texture AALI4834 range AALI4845 tics 8
+texture AALI4846 range AALI4857 tics 8
+texture AALI4858 range AALI4869 tics 8
+texture AALI4870 range AALI4881 tics 8
+texture AALI4882 range AALI4893 tics 8
+texture AALI4894 range AALI4905 tics 8
+texture AALI4906 range AALI4917 tics 8
+texture AALI4918 range AALI4929 tics 8
+texture AALI4930 range AALI4941 tics 8
+texture AALI4942 range AALI4953 tics 8
+texture AALI4980 range AALI4989 tics 8
+texture AALI4990 range AALI4999 tics 8
+texture AALI5057 range AALI5060 tics 8
+texture AALI5195 range AALI5200 tics 8
+flat AALI0009 range AALI0012 tics 8
+flat AALI0013 range AALI0016 tics 8
+flat AALI0017 range AALI0020 tics 8
+flat AALI0021 range AALI0024 tics 8
+flat AALI0025 range AALI0028 tics 8
+flat AALI0029 range AALI0032 tics 8
+flat AALI0033 range AALI0036 tics 8
+flat AALI0037 range AALI0040 tics 8
+flat AALI0056 range AALI0059 tics 8
+flat AALI0076 range AALI0085 tics 8
+flat AALI0086 range AALI0095 tics 8
+flat AALI0096 range AALI0105 tics 8
+flat AALI0106 range AALI0115 tics 8
+flat AALI0116 range AALI0125 tics 8
+flat AALI0158 range AALI0161 tics 8
+flat AALI0207 range AALI0209 tics 8
+flat AALI0258 range AALI0260 tics 8
+flat AALI0268 range AALI0271 tics 8
+flat AALI0272 range AALI0275 tics 8
+flat AALI0276 range AALI0279 tics 8
+flat AALI0316 range AALI0319 tics 8
+flat AALI0332 range AALI0337 tics 8
+flat AALI0338 range AALI0341 tics 8
+flat AALI0342 range AALI0345 tics 8
+flat AALI0346 range AALI0349 tics 8
+flat AALI0355 range AALI0357 tics 8
+flat AALI0801 range AALI0804 tics 8
+switch AALI3582 on pic AALI3632 tics 0
+switch AALI3583 on pic AALI3633 tics 0
+switch AALI3584 on pic AALI3634 tics 0
+switch AALI3585 on pic AALI3635 tics 0
+switch AALI3586 on pic AALI3636 tics 0
+switch AALI3587 on pic AALI3637 tics 0
+switch AALI3588 on pic AALI3638 tics 0
+switch AALI3589 on pic AALI3639 tics 0
+switch AALI3590 on pic AALI3640 tics 0
+switch AALI3591 on pic AALI3641 tics 0
+switch AALI3592 on pic AALI3642 tics 0
+switch AALI3593 on pic AALI3643 tics 0
+switch AALI3594 on pic AALI3644 tics 0
+switch AALI3595 on pic AALI3645 tics 0
+switch AALI3596 on pic AALI3646 tics 0
+switch AALI3597 on pic AALI3647 tics 0
+switch AALI3598 on pic AALI3648 tics 0
+switch AALI3599 on pic AALI3649 tics 0
+switch AALI3600 on pic AALI3650 tics 0
+switch AALI3601 on pic AALI3651 tics 0
+switch AALI3602 on pic AALI3652 tics 0
+switch AALI3603 on pic AALI3653 tics 0
+switch AALI3604 on pic AALI3654 tics 0
+switch AALI3605 on pic AALI3655 tics 0
+switch AALI3606 on pic AALI3656 tics 0
+switch AALI3607 on pic AALI3657 tics 0
+switch AALI3608 on pic AALI3658 tics 0
+switch AALI3609 on pic AALI3659 tics 0
+switch AALI3610 on pic AALI3660 tics 0
+switch AALI3611 on pic AALI3661 tics 0
+switch AALI3612 on pic AALI3662 tics 0
+switch AALI3613 on pic AALI3663 tics 0
+switch AALI3614 on pic AALI3664 tics 0
+switch AALI3615 on pic AALI3665 tics 0
+switch AALI3616 on pic AALI3666 tics 0
+switch AALI3617 on pic AALI3667 tics 0
+switch AALI3618 on pic AALI3668 tics 0
+switch AALI3619 on pic AALI3669 tics 0
+switch AALI3620 on pic AALI3670 tics 0
+switch AALI3621 on pic AALI3671 tics 0
+switch AALI3622 on pic AALI3672 tics 0
+switch AALI3623 on pic AALI3673 tics 0
+switch AALI3624 on pic AALI3674 tics 0
+switch AALI3625 on pic AALI3675 tics 0
+switch AALI3626 on pic AALI3676 tics 0
+switch AALI3627 on pic AALI3677 tics 0
+switch AALI3628 on pic AALI3678 tics 0
+switch AALI3629 on pic AALI3679 tics 0
+switch AALI3630 on pic AALI3680 tics 0
+switch AALI3631 on pic AALI3681 tics 0
+switch AALI3682 on pic AALI3683 tics 0
+switch AALI3684 on pic AALI3685 tics 0
+switch AALI3686 on pic AALI3687 tics 0
+switch AALI3688 on pic AALI3689 tics 0
+switch AALI3690 on pic AALI3691 tics 0
+switch AALI5038 on pic AALI5039 tics 0
+switch AALI6641 on pic AALI6642 tics 0
+switch AALI6643 on pic AALI6644 tics 0
+switch AALI6646 on pic AALI6645 tics 0
+switch AALI6648 on pic AALI6647 tics 0
+switch AALI6650 on pic AALI6649 tics 0
+switch YYYY0016 on pic YYYY0017 tics 0
+switch YYYY0317 on pic YYYY0318 tics 0
+
+// Akeldama
+texture AKDL0066 range AKDL0069 tics 8
+texture AKDL0257 range AKDL0260 tics 8 allowdecals
+switch AKDL0046 on pic AKDL0056 tics 0
+switch AKDL0047 on pic AKDL0057 tics 0
+switch AKDL0048 on pic AKDL0058 tics 0
+switch AKDL0049 on pic AKDL0059 tics 0
+switch AKDL0050 on pic AKDL0060 tics 0
+switch AKDL0051 on pic AKDL0061 tics 0
+switch AKDL0052 on pic AKDL0062 tics 0
+switch AKDL0053 on pic AKDL0063 tics 0
+switch AKDL0054 on pic AKDL0064 tics 0
+switch AKDL0055 on pic AKDL0065 tics 0
+
+// Anomaly Report
+texture ANRP0044 range ANRP0047 tics 8 allowdecals
+texture ANRP0048 range ANRP0051 tics 8
+texture ANRP0071 range ANRP0074 tics 8
+switch ANRP0055 on pic ANRP0063 tics 0
+switch ANRP0056 on pic ANRP0064 tics 0
+switch ANRP0057 on pic ANRP0156 tics 0
+switch ANRP0058 on pic ANRP0066 tics 0
+switch ANRP0059 on pic ANRP0067 tics 0
+switch ANRP0060 on pic ANRP0068 tics 0
+switch ANRP0061 on pic ANRP0157 tics 0
+switch ANRP0062 on pic ANRP0070 tics 0
+switch ANRP0152 on pic ANRP0156 tics 0
+switch ANRP0153 on pic ANRP0157 tics 0
+switch ANRP0446 on pic ANRP0450 tics 0
+switch ANRP0447 on pic ANRP0451 tics 0
+
+// Bloodspeed
+texture BDSP0365 range BDSP0368 tics 8
+texture BDSP0796 range BDSP0799 tics 8
+texture BDSP0832 range BDSP0834 tics 8 allowdecals
+flat BDSP0168 range BDSP0171 tics 8
+switch BDSP0237 on pic BDSP0252 tics 0
+switch BDSP0239 on pic BDSP0254 tics 0
+switch BDSP0240 on pic BDSP0772 tics 0
+switch BDSP0241 on pic BDSP0256 tics 0
+switch BDSP0242 on pic BDSP0257 tics 0
+switch BDSP0244 on pic BDSP0259 tics 0
+switch BDSP0247 on pic BDSP0262 tics 0
+switch BDSP0250 on pic BDSP0265 tics 0
+switch BDSP0251 on pic BDSP0266 tics 0
+switch BDSP0715 on pic BDSP0716 tics 0
+switch BDSP0765 on pic BDSP0770 tics 0
+switch BDSP0823 on pic BDSP0824 tics 0
+switch BDSP0830 on pic BDSP0844 tics 0
+switch BDSP0835 on pic BDSP0836 tics 0
+switch BDSP0839 on pic BDSP0842 tics 0
+switch BDSP0840 on pic BDSP0841 tics 0
+
+// Chainworm Kommando
+texture	CWKM0098 range CWKM0101 tics 8
+texture CWKM0130 range CWKM0132 tics 4
+texture CWKM0207 range CWKM0214 tics 4
+texture CWKM0262 range CWKM0265 tics 4
+texture CWKM0351 range CWKM0354 tics 4
+texture CWKM0356 range CWKM0359 tics 16
+texture CWKM0365 range CWKM0368 tics 4
+texture	CWKM0369 range CWKM0372 tics 8
+texture	CWKM0390 range CWKM0397 tics 4
+texture	CWKM0446 range CWKM0449 tics 8
+texture	CWKM0452 range CWKM0453 tics 2
+texture	CWKM0456 range CWKM0458 tics 2
+texture	CWKM0864 range CWKM0865 tics 4
+switch CWKM0102 on sound Switch1 pic CWKM0103 tics 0
+switch CWKM0086 on sound Switch1 pic CWKM0087 tics 0
+switch CWKM0347 on sound Switch1 pic TNT1A0 tics 0
+switch CWKM0376 on sound Switch1 pic CWKM0377 tics 0
+switch CWKM0378 on sound Switch1 pic CWKM0379 tics 0
+switch CWKM0409 on sound Switch1 pic CWKM0410 tics 0
+
+// Claustrophobia 1024
+texture C2421010 range C2421013 tics 8
+texture C2421026 range C2421029 tics 8
+texture C2421498 range C2421501 tics 8
+flat C2420186 range C2420189 tics 8
+switch C2420625 on pic C2420665 tics 0
+switch C2420626 on pic C2420666 tics 0
+switch C2420630 on pic C2420670 tics 0
+switch C2420641 on pic C2420681 tics 0
+switch C2420642 on pic C2420682 tics 0
+switch C2420656 on pic C2420696 tics 0
+switch C2420931 on pic C2420932 tics 0
+switch C2420933 on pic C2420934 tics 0
+switch C2421211 on pic C2421212 tics 0
+switch C2421379 on pic C2421380 tics 0
+switch C2421386 on pic C2421387 tics 0
+switch C2421388 on pic C2421389 tics 0
+switch C2421390 on pic C2421391 tics 0
+switch C2421437 on pic C2421442 tics 0
+switch C2421438 on pic C2421443 tics 0
+switch C2421440 on pic C2421447 tics 0
+switch C2421441 on pic C2421448 tics 0
+switch C2421445 on pic C2421446 tics 0
+
+// Claustrophobia 1024 2
+texture C2430631 range C2430634 tics 8
+texture C2430647 range C2430650 tics 8
+texture C2431003 range C2431006 tics 8
+texture C2431119 range C2431122 tics 8
+flat C2430097 range C2430100 tics 8
+flat C2430183 range C2430186 tics 8
+switch C2430363 on pic C2430373 tics 0
+switch C2430364 on pic C2430374 tics 0
+switch C2430365 on pic C2430375 tics 0
+switch C2430366 on pic C2430376 tics 0
+switch C2430367 on pic C2430377 tics 0
+switch C2430368 on pic C2430378 tics 0
+switch C2430369 on pic C2430379 tics 0
+switch C2430370 on pic C2430380 tics 0
+switch C2430371 on pic C2430381 tics 0
+switch C2430372 on pic C2430382 tics 0
+switch C2430552 on pic C2430553 tics 0
+switch C2430554 on pic C2430555 tics 0
+switch C2430830 on pic C2430831 tics 0
+switch C2430832 on pic C2430833 tics 0
+switch C2430941 on pic C2430942 tics 0
+switch C2431000 on pic C2431001 tics 0
+switch C2431007 on pic C2431008 tics 0
+switch C2431009 on pic C2431010 tics 0
+switch C2431011 on pic C2431012 tics 0
+switch C2431058 on pic C2431063 tics 0
+switch C2431059 on pic C2431064 tics 0
+switch C2431060 on pic C2431065 tics 0
+switch C2431061 on pic C2431068 tics 0
+switch C2431062 on pic C2431069 tics 0
+switch C2431066 on pic C2431067 tics 0
+switch C2431378 on pic C2431379 tics 0
+switch C2431380 on pic C2431381 tics 0
+switch C2431657 on pic C2431658 tics 0
+switch C2431659 on pic C2431660 tics 0
+switch C2431768 on pic C2431769 tics 0
+switch C2431827 on pic C2431828 tics 0
+switch C2431834 on pic C2431835 tics 0
+switch C2431836 on pic C2431837 tics 0
+switch C2431838 on pic C2431839 tics 0
+switch C2431886 on pic C2431891 tics 0
+switch C2431887 on pic C2431892 tics 0
+switch C2431888 on pic C2431893 tics 0
+switch C2431889 on pic C2431896 tics 0
+switch C2431890 on pic C2431897 tics 0
+switch C2431894 on pic C2431895 tics 0
+
+// Community Chest 2
+texture CCH20494 range CCH20497 tics 8
+texture CCH20502 range CCH20505 tics 8
+texture CCH20524 range CCH20526 tics 8 allowdecals
+
+// Community Chest 3
+texture CCH30225 range CCH30228 tics 8
+texture CCH30519 range CCH30522 tics 8
+texture CCH30748 range CCH30750 tics 8 allowdecals
+texture CCH30923 range CCH30925 tics 8
+texture CCH30926 range CCH30928 tics 8
+texture CCH30931 range CCH30939 tics 8
+texture CCH30940 range CCH30941 tics 8
+texture CCH30947 range CCH30948 tics 8
+texture CCH30994 range CCH30997 tics 8
+flat CCH30086 range CCH30087 tics 8
+flat CCH30101 range CCH30104 tics 8
+flat CCH30138 range CCH30145 tics 8
+switch CCH30821 on pic CCH30865 tics 0
+switch CCH30822 on pic CCH30866 tics 0
+switch CCH30833 on pic CCH30877 tics 0
+switch CCH30835 on pic CCH30879 tics 0
+
+// Community Chest 4
+texture CCH40571 range CCH40574 tics 8
+texture CCH41146 range CCH41149 tics 5
+texture CCH41254 range CCH41257 tics 8
+texture CCH41258 range CCH41261 tics 8
+texture CCH41285 range CCH41288 tics 8
+texture CCH41302 range CCH41311 tics 2
+texture CCH41314 range CCH41323 tics 2
+texture CCH41436 range CCH41439 tics 8
+texture CCH41489 range CCH41494 tics 2
+texture CCH41544 range CCH41547 tics 2
+texture CCH41661 range CCH41664 tics 8
+texture CCH41667 range CCH41670 tics 4
+texture CCH41673 range CCH41675 tics 2
+texture CCH41755 range CCH41758 tics 8
+texture CCH41811 range CCH41814 tics 4
+flat CCH40298 range CCH40301 tics 8
+flat CCH40361 range CCH40364 tics 8
+flat CCH40387 range CCH40388 tics 8
+flat CCH40422 range CCH40425 tics 8
+flat CCH40426 range CCH40429 tics 8
+switch CCH40506 on pic CCH40514 tics 0
+switch CCH40507 on pic CCH40516 tics 0
+switch CCH40508 on pic CCH40518 tics 0
+switch CCH40509 on pic CCH40519 tics 0
+switch CCH40541 on pic CCH40546 tics 0
+switch CCH40542 on pic CCH40515 tics 0
+switch CCH40545 on pic CCH40549 tics 0
+switch CCH41262 on pic CCH41263 tics 0
+switch CCH41264 on pic CCH41265 tics 0
+switch CCH41479 on pic CCH41480 tics 0
+switch CCH41688 on pic CCH41689 tics 0
+switch CCH41854 on pic CCH41855 tics 0
+switch CCH41856 on pic CCH41857 tics 0
+
+// Congestion 1024
+switch C2410467 on pic C2410507 tics 0
+switch C2410470 on pic C2410510 tics 0
+
+// CzechBox
+texture CZBX0058 range CZBX0061 tics 8
+switch CZBX0036 on pic CZBX0041 tics 0
+switch CZBX0037 on pic CZBX0042 tics 0
+
+// Doom 2: Dark World
+texture D2DW0034 range D2DW0037 tics 8
+flat D2DW0002 range D2DW0005 tics 8
+flat D2DW0006 range D2DW0008 tics 8
+switch D2DW0023 on pic D2DW0024 tics 0
+
+// Doom 2 Reloaded
+texture D2RL0101 range D2RL0104 tics 8
+texture D2RL0115 range D2RL0118 tics 8
+texture D2RL0151 range D2RL0165 tics 8 allowdecals
+texture D2RL0169 range D2RL0180 tics 8 allowdecals
+switch D2RL0106 on pic D2RL0107 tics 0
+switch D2RL0211 on pic D2RL0212 tics 0
+
+// Doom 2 The Way id Did
+texture D2WD0550 pic 1 tics 35 pic 1 tics 35
+texture D2WD0551 pic 1 tics 35 pic 1 tics 35
+texture D2WD0552 pic 1 tics 35 pic 1 tics 35
+texture D2WD0553 pic 1 tics 35 pic 1 tics 35
+texture D2WD0554 pic 1 tics 35 pic 1 tics 35
+texture D2WD0555 pic 1 tics 35 pic 1 tics 35
+texture D2WD0617 pic 1 tics 35 pic 1 tics 35
+texture D2WD0618 pic 1 tics 35 pic 1 tics 35
+texture D2WD0655 pic 1 tics 35 pic 1 tics 35
+texture D2WD0616 pic 1 tics 35 pic 1 tics 35
+
+// Doom 404
+texture D4040269 range D4040272 tics 8
+switch D4040257 on pic D4040263 tics 0
+switch D4040258 on pic D4040264 tics 0
+switch D4040259 on pic D4040265 tics 0
+switch D4040260 on pic D4040266 tics 0
+switch D4040261 on pic D4040267 tics 0
+switch D4040262 on pic D4040268 tics 0
+
+// Doom Core Trilogy
+texture DCTL0070 range DCTL0073 tics 8 allowdecals
+texture DCTL0761 range DCTL0764 tics 8
+texture DCTL0776 range DCTL0778 tics 8 allowdecals
+switch DCTL0331 on pic DCTL0371 tics 0
+switch DCTL0333 on pic DCTL0707 tics 0
+switch DCTL0360 on pic DCTL0400 tics 0
+switch DCTL0362 on pic DCTL0711 tics 0
+switch DCTL0364 on pic DCTL0404 tics 0
+
+// Doom II: 25 Years on Earth
+texture D25Y0010 range D25Y0013 tics 8 allowdecals
+texture D25Y0020 range D25Y0023 tics 8
+texture D25Y0058 range D25Y0061 tics 8
+texture D25Y0067 range D25Y0070 tics 8
+switch D25Y0047 on pic D25Y0052 tics 0
+switch D25Y0048 on pic D25Y0053 tics 0
+switch D25Y0049 on pic D25Y0054 tics 0
+switch D25Y0050 on pic D25Y0055 tics 0
+switch D25Y0051 on pic D25Y0056 tics 0
+
+// DBP01: Monuments of Mars
+texture DB010119 range DB010122 tics 8
+
+// DBP02: Circle of Cania
+texture DB020125 range DB020128 tics 8
+texture DB020247 range DB020250 tics 8
+texture DB020509 range DB020512 tics 8
+
+// DBP03: Forest Swords
+texture DB030129 range DB030132 tics 8
+texture DB030251 range DB030254 tics 8
+texture DB030517 range DB030520 tics 8
+flat DB030042 range DB030045 tics 8
+switch DB030366 on pic DB030406 tics 0
+
+// DBP04: Xenomorph Base
+texture DB040087 range DB040090 tics 8 allowdecals
+texture DB040148 range DB040151 tics 8
+texture DB040536 range DB040539 tics 8
+flat DB040045 range DB040060 tics 8
+flat DB040061 range DB040064 tics 8
+switch DB040350 on pic DB040390 tics 0
+
+// DBP05: Coffin Curse
+texture DB050253 range DB050256 tics 8
+switch DB050163 on pic DB050168 tics 0
+
+// Doom 2 Redux
+texture D2RX0326 range D2RX0329 tics 8 allowdecals
+texture D2RX0389 range D2RX0392 tics 8
+texture D2RX0414 range D2RX0417 tics 8 allowdecals
+texture D2RX0475 range D2RX0478 tics 8
+texture D2RX0492 range D2RX0493 tics 8
+texture D2RX0497 range D2RX0499 tics 8
+flat D2RX0010 range D2RX0013 tics 8
+switch D2RX0675 on pic D2RX0715 tics 0
+switch D2RX0680 on pic D2RX0720 tics 0
+switch D2RX0686 on pic D2RX0726 tics 0
+
+// Earth
+texture ERTH0412 range ERTH0423 tics 8
+texture ERTH0507 range ERTH0525 tics 8
+texture ERTH0526 range ERTH0544 tics 8
+texture ERTH0545 range ERTH0563 tics 8 allowdecals
+switch ERTH0425 on pic ERTH0426 tics 0
+switch ERTH0569 on pic ERTH0570 tics 0
+
+// Endgame
+texture ENGM0126 range ENGM0129 tics 8
+texture ENGM0455 range ENGM0458 tics 8
+
+// Epic
+texture EPC10125 range EPC10128 tics 4
+texture EPC10186 range EPC10189 tics 4
+texture EPC10531 range EPC10533 tics 8 allowdecals
+flat EPC10095 range EPC10098 tics 4
+switch EPC10632 on pic EPC10672 tics 0
+switch EPC10640 on pic EPC10680 tics 0
+switch EPC10647 on pic EPC10687 tics 0
+switch EPC10649 on pic EPC10689 tics 0
+switch EPC10652 on pic EPC10692 tics 0
+
+// Epic 2
+texture EPC20669 range EPC20676 tics 8
+texture EPC20684 range EPC20687 tics 8
+texture EPC21060 range EPC21061 tics 8
+texture EPC21062 range EPC21069 tics 8
+texture EPC21070 range EPC21072 tics 8
+texture EPC21073 range EPC21078 tics 8
+texture EPC21210 range EPC21212 tics 8 allowdecals
+texture EPC21228 range EPC21236 tics 8
+texture EPC21739 range EPC21742 tics 8
+flat EPC20484 range EPC20487 tics 8
+flat EPC20488 range EPC20491 tics 8
+flat EPC20492 range EPC20499 tics 8
+flat EPC20500 range EPC20505 tics 8
+flat EPC20506 range EPC20515 tics 8
+flat EPC20516 range EPC20523 tics 8
+flat EPC20524 range EPC20558 tics 8
+switch EPC21369 on pic EPC21381 tics 0
+switch EPC21370 on pic EPC21382 tics 0
+switch EPC21371 on pic EPC21383 tics 0
+switch EPC21372 on pic EPC21384 tics 0
+switch EPC21373 on pic EPC21385 tics 0
+switch EPC21374 on pic EPC21386 tics 0
+switch EPC21375 on pic EPC21387 tics 0
+switch EPC21376 on pic EPC21388 tics 0
+switch EPC21377 on pic EPC21389 tics 0
+switch EPC21378 on pic EPC21390 tics 0
+switch EPC21379 on pic EPC21391 tics 0
+switch EPC21380 on pic EPC21392 tics 0
+switch EPC22312 on pic EPC22314 tics 0
+switch EPC22313 on pic EPC22315 tics 0
+switch EPC22823 on pic EPC22824 tics 0
+switch EPC22825 on pic EPC22826 tics 0
+switch EPC22839 on pic EPC22840 tics 0
+switch EPC22849 on pic EPC22850 tics 0
+switch EPC22851 on pic EPC22852 tics 0
+switch EPC22863 on pic EPC22864 tics 0
+switch EPC22865 on pic EPC22866 tics 0
+switch EPC22928 on pic EPC22929 tics 0
+switch EPC22930 on pic EPC22931 tics 0
+switch EPC22932 on pic EPC22933 tics 0
+
+// Equinox
+texture EQNX0047 range EQNX0051 tics 8
+texture EQNX0057 range EQNX0060 tics 8 allowdecals
+flat EQNX0013 range EQNX0016 tics 8
+flat EQNX0018 range EQNX0021 tics 8
+flat EQNX0025 range EQNX0027 tics 8
+flat EQNX0030 range EQNX0033 tics 8
+switch EQNX0145 on pic EQNX0179 tics 0
+switch EQNX0147 on pic EQNX0181 tics 0
+switch EQNX0152 on pic EQNX0186 tics 0
+switch EQNX0153 on pic EQNX0187 tics 0
+switch EQNX0155 on pic EQNX0189 tics 0
+switch EQNX0161 on pic EQNX0195 tics 0
+switch EQNX0164 on pic EQNX0198 tics 0
+switch EQNX0168 on pic EQNX0202 tics 0
+
+// Eternal Doom
+texture ETDM0245 range ETDM0248 tics 8
+texture ETDM0274 range ETDM0277 tics 8 allowdecals
+texture ETDM0278 range ETDM0281 tics 8 allowdecals
+texture ETDM0395 range ETDM0398 tics 8
+texture ETDM0476 range ETDM0477 tics 8
+texture ETDM0480 range ETDM0481 tics 8
+texture ETDM0482 range ETDM0484 tics 8
+texture ETDM0485 range ETDM0487 tics 8
+texture ETDM0506 range ETDM0508 tics 8 allowdecals
+texture ETDM0744 range ETDM0746 tics 8 allowdecals
+texture ETDM0758 range ETDM0761 tics 8
+texture ETDM1048 range ETDM1063 tics 8
+flat ETDM0086 range ETDM0088 tics 8
+flat ETDM0101 range ETDM0104 tics 8
+flat ETDM0105 range ETDM0108 tics 8
+flat ETDM0121 range ETDM0123 tics 8
+flat ETDM0150 range ETDM0153 tics 8
+flat ETDM0166 range ETDM0169 tics 8
+flat ETDM0170 range ETDM0173 tics 8
+flat ETDM0174 range ETDM0177 tics 8
+switch ETDM0903 on pic ETDM0944 tics 0
+switch ETDM0904 on pic ETDM0945 tics 0
+switch ETDM0905 on pic ETDM0946 tics 0
+switch ETDM0906 on pic ETDM0947 tics 0
+switch ETDM0907 on pic ETDM0948 tics 0
+switch ETDM0908 on pic ETDM0949 tics 0
+switch ETDM0910 on pic ETDM0951 tics 0
+switch ETDM0911 on pic ETDM0952 tics 0
+switch ETDM0912 on pic ETDM0953 tics 0
+switch ETDM0913 on pic ETDM0954 tics 0
+switch ETDM0914 on pic ETDM0955 tics 0
+switch ETDM0915 on pic ETDM0956 tics 0
+switch ETDM0916 on pic ETDM0957 tics 0
+switch ETDM0917 on pic ETDM0958 tics 0
+switch ETDM0918 on pic ETDM0959 tics 0
+switch ETDM0920 on pic ETDM0961 tics 0
+switch ETDM0921 on pic ETDM0962 tics 0
+switch ETDM0922 on pic ETDM0963 tics 0
+switch ETDM0923 on pic ETDM0964 tics 0
+switch ETDM0924 on pic ETDM0965 tics 0
+switch ETDM0925 on pic ETDM0966 tics 0
+switch ETDM0926 on pic ETDM0967 tics 0
+switch ETDM0927 on pic ETDM0968 tics 0
+switch ETDM0928 on pic ETDM0969 tics 0
+switch ETDM0929 on pic ETDM0970 tics 0
+switch ETDM0930 on pic ETDM0971 tics 0
+switch ETDM0931 on pic ETDM0972 tics 0
+switch ETDM0932 on pic ETDM0973 tics 0
+switch ETDM0933 on pic ETDM0974 tics 0
+switch ETDM0934 on pic ETDM0975 tics 0
+switch ETDM0935 on pic ETDM0976 tics 0
+switch ETDM0936 on pic ETDM0977 tics 0
+switch ETDM0937 on pic ETDM0978 tics 0
+switch ETDM0938 on pic ETDM0979 tics 0
+switch ETDM0939 on pic ETDM0980 tics 0
+switch ETDM0940 on pic ETDM0981 tics 0
+switch ETDM0941 on pic ETDM0982 tics 0
+switch ETDM0942 on pic ETDM0983 tics 0
+switch ETDM0943 on pic ETDM0984 tics 0
+
+// Eviltech: Soul Of Megawad
+switch EVLT0004 on pic EVLT0005 tics 0
+switch EVLT0033 on pic EVLT0037 tics 0
+switch EVLT0034 on pic EVLT0038 tics 0
+switch EVLT0035 on pic EVLT0039 tics 0
+switch EVLT0036 on pic EVLT0040 tics 0
+texture EVLT0073 range EVLT0076 tics 8
+
+// Fore/vr/ Alone
+switch FVRA3935 on pic FVRA3940 tics 0
+
+// Garrulismo
+switch GRLS0024 on pic GRLS0029 tics 0
+switch GRLS0025 on pic GRLS0030 tics 0
+switch GRLS0026 on pic GRLS0031 tics 0
+switch GRLS0027 on pic GRLS0032 tics 0
+switch GRLS0028 on pic GRLS0033 tics 0
+
+// Going Down
+texture GDWN0003 range GDWN0006 tics 8
+texture GDWN0013 range GDWN0016 tics 8
+
+// Gridlock 64
+texture GD640520 range GD640522 tics 8 allowdecals
+texture GD640565 range GD640568 tics 8
+texture GD641337 range GD641340 tics 5
+texture GD641461 range GD641464 tics 8
+texture GD641465 range GD641468 tics 8
+texture GD641498 range GD641501 tics 8
+texture GD641516 range GD641525 tics 2
+flat GD640346 range GD640349 tics 8
+switch GD640480 on pic GD640489 tics 0
+switch GD640481 on pic GD640490 tics 0
+switch GD640482 on pic GD640492 tics 0
+switch GD640483 on pic GD640494 tics 0
+switch GD640484 on pic GD640495 tics 0
+switch GD640485 on pic GD640496 tics 0
+switch GD640486 on pic GD640497 tics 0
+switch GD640487 on pic GD640498 tics 0
+switch GD640526 on pic GD640531 tics 0
+switch GD640527 on pic GD640491 tics 0
+switch GD640528 on pic GD640532 tics 0
+switch GD640530 on pic GD640534 tics 0
+switch GD641471 on pic GD641472 tics 0
+
+// Hadephobia
+texture HADP0011 range HADP0014 tics 8
+
+// Hellbound
+texture HLBD0084 range HLBD0087 tics 8
+texture HLBD0448 range HLBD0450 tics 8 allowdecals 
+texture HLBD0458 range HLBD0461 tics 8 allowdecals 
+texture HLBD0486 range HLBD0489 tics 8
+switch HLBD0287 on pic HLBD0327 tics 0
+switch HLBD0313 on pic HLBD0353 tics 0
+switch HLBD0315 on pic HLBD0355 tics 0
+switch HLBD0317 on pic HLBD0357 tics 0
+
+// Hellcore
+texture HLC10387 range HLC10389 tics 8
+texture HLC10436 range HLC10439 tics 8
+texture HLC10518 range HLC10522 tics 4
+flat HLC10013 range HLC10018 tics 8
+
+// Hellcore 2.0
+texture HLC20472 range HLC20474 tics 8 allowdecals
+texture HLC20482 range HLC20485 tics 8 allowdecals
+texture HLC20521 range HLC20524 tics 8
+texture HLC20550 range HLC20553 tics 8 allowdecals
+texture HLC20565 range HLC20568 tics 8
+flat HLC20013 range HLC20018 tics 8
+switch HLC20577 on pic HLC20579 tics 0
+switch HLC20578 on pic HLC20580 tics 0
+
+// Hell Revealed I
+texture HR100430 range HR100433 tics 8
+
+// Hell Revealed II
+texture HR200469 range HR200472 tics 8
+switch HR200320 on pic HR200360 tics 0
+
+// Hell to Pay
+texture HLTP0174 range HLTP0182 tics 8
+texture HLTP0196 range HLTP0199 tics 8
+texture HLTP0312 range HLTP0319 tics 8 allowdecals
+texture HLTP0320 range HLTP0335 tics 8 allowdecals
+texture HLTP0336 range HLTP0351 tics 8 allowdecals
+texture HLTP0367 range HLTP0370 tics 8 allowdecals
+flat HLTP0069 range HLTP0073 tics 8
+switch HLTP0104 on pic HLTP0105 tics 0
+switch HLTP0183 on pic HLTP0184 tics 0
+switch HLTP0354 on pic HLTP0355 tics 0
+switch HLTP0356 on pic HLTP0357 tics 0
+switch HLTP0358 on pic HLTP0359 tics 0
+switch HLTP0360 on pic HLTP0361 tics 0
+
+// Icarus: Alien Vanguard
+texture ICAV0613 range ICAV0616 tics 8
+texture ICAV0617 range ICAV0622 tics 8 allowdecals
+flat ICAV0007 range ICAV0010 tics 8
+switch ICAV0623 on pic ICAV0624 tics 0
+
+// Japanese Community Project
+texture JPCP0510 range JPCP0512 tics 8 allowdecals
+texture JPCP0529 range JPCP0532 tics 8 allowdecals
+texture JPCP0555 range JPCP0558 tics 8
+texture JPCP1323 range JPCP1326 tics 8
+texture JPCP1447 range JPCP1450 tics 8
+texture JPCP1451 range JPCP1454 tics 8
+texture JPCP1484 range JPCP1487 tics 8
+texture JPCP1502 range JPCP1511 tics 8
+texture JPCP1514 range JPCP1523 tics 8
+flat JPCP0337 range JPCP0340 tics 8
+switch JPCP0471 on pic JPCP0480 tics 0
+switch JPCP0472 on pic JPCP0481 tics 0
+switch JPCP0473 on pic JPCP0483 tics 0
+switch JPCP0474 on pic JPCP0484 tics 0
+switch JPCP0475 on pic JPCP0485 tics 0
+switch JPCP0476 on pic JPCP0486 tics 0
+switch JPCP0477 on pic JPCP0487 tics 0
+switch JPCP0478 on pic JPCP0488 tics 0
+switch JPCP0479 on pic JPCP0489 tics 0
+switch JPCP0516 on pic JPCP0521 tics 0
+switch JPCP0517 on pic JPCP0482 tics 0
+switch JPCP0518 on pic JPCP0522 tics 0
+switch JPCP0519 on pic JPCP0523 tics 0
+switch JPCP0520 on pic JPCP0524 tics 0
+switch JPCP1455 on pic JPCP1456 tics 0
+switch JPCP1457 on pic JPCP1458 tics 0
+
+// Jenesis
+texture JENS0106 range JENS0107 tics 8
+texture JENS0156 range JENS0158 tics 8 allowdecals
+texture JENS0182 range JENS0185 tics 8 allowdecals
+texture JENS0210 range JENS0213 tics 8
+texture JENS0275 range JENS0282 tics 2
+texture JENS0325 range JENS0328 tics 8
+texture JENS0329 range JENS0332 tics 8
+texture JENS0342 range JENS0345 tics 8
+texture JENS0379 range JENS0386 tics 2
+flat JENS0010 range JENS0012 tics 8
+switch JENS0117 on pic JENS0120 tics 0
+switch JENS0118 on pic JENS0121 tics 0
+switch JENS0119 on pic JENS0122 tics 0
+switch JENS0166 on pic JENS0172 tics 0
+switch JENS0167 on pic JENS0173 tics 0
+switch JENS0168 on pic JENS0174 tics 0
+switch JENS0169 on pic JENS0175 tics 0
+switch JENS0170 on pic JENS0176 tics 0
+switch JENS0171 on pic JENS0177 tics 0
+switch JENS0366 on pic JENS0367 tics 0
+switch JENS0394 on pic JENS0395 tics 0
+switch JENS0702 on pic JENS0703 tics 0
+
+// Jiffy Bag
+texture JFBG0156 range JFBG0159 tics 8 allowdecals
+texture JFBG0190 range JFBG0193 tics 8
+texture JFBG0205 range JFBG0208 tics 8
+texture JFBG0212 range JFBG0214 tics 8 allowdecals
+texture JFBG0216 range JFBG0219 tics 8
+texture JFBG0245 range JFBG0248 tics 8
+texture JFBG0317 range JFBG0319 tics 8
+texture JFBG0349 range JFBG0351 tics 8
+texture JFBG0354 range JFBG0357 tics 8
+texture JFBG0360 range JFBG0363 tics 8
+texture JFBG0364 range JFBG0367 tics 8
+texture JFBG0394 range JFBG0397 tics 8
+texture JFBG0398 range JFBG0401 tics 8
+flat JFBG0005 range JFBG0008 tics 8
+flat JFBG0019 range JFBG0022 tics 8
+flat JFBG0024 range JFBG0027 tics 8
+flat JFBG0034 range JFBG0037 tics 8
+flat JFBG0038 range JFBG0041 tics 8
+flat JFBG0047 range JFBG0050 tics 8
+flat JFBG0061 range JFBG0064 tics 8
+flat JFBG0106 range JFBG0109 tics 8
+switch JFBG0230 on pic JFBG0237 tics 0
+switch JFBG0231 on pic JFBG0238 tics 0
+switch JFBG0232 on pic JFBG0240 tics 0
+switch JFBG0233 on pic JFBG0241 tics 0
+switch JFBG0234 on pic JFBG0242 tics 0
+switch JFBG0235 on pic JFBG0243 tics 0
+switch JFBG0236 on pic JFBG0244 tics 0
+switch JFBG0300 on pic JFBG0301 tics 0
+switch JFBG0358 on pic JFBG0359 tics 0
+switch JFBG0384 on pic JFBG0385 tics 0
+switch JFBG0408 on pic JFBG0409 tics 0
+switch JFBG0540 on pic JFBG0541 tics 0
+switch JFBG0607 on pic JFBG0610 tics 0
+switch JFBG0681 on pic JFBG0682 tics 0
+switch JFBG0754 on pic JFBG0755 tics 0
+
+// Kama Sutra
+texture KSUT0411 range KSUT0414 tics 8
+
+// Last Day on Earth
+texture LDOE0038 range LDOE0075 tics 8
+texture LDOE0043 range LDOE0080 tics 8
+texture LDOE0072 range LDOE0075 tics 8
+texture LDOE0077 range LDOE0080 tics 8
+switch LDOE0031 on pic LDOE0066 tics 0
+switch LDOE0065 on pic LDOE0066 tics 0
+
+// Lost Civilization
+texture LSCV0622 range LSCV0625 tics 8 allowdecals
+texture LSCV0760 range LSCV0763 tics 6
+texture LSCV0784 range LSCV0787 tics 6
+texture LSCV0846 range LSCV0851 tics 4
+texture LSCV0852 range LSCV0857 tics 4
+texture LSCV0877 range LSCV0880 tics 6
+texture LSCV0908 range LSCV0911 tics 4
+texture LSCV0993 range LSCV0996 tics 2
+texture LSCV0997 range LSCV1000 tics 2
+texture LSCV1031 range LSCV1034 tics 4
+texture LSCV1035 range LSCV1038 tics 4
+texture LSCV1039 range LSCV1042 tics 4
+texture LSCV1057 range LSCV1062 tics 35
+texture LSCV1121 range LSCV1124 tics 2
+texture LSCV1125 range LSCV1134 tics 2
+texture LSCV1135 range LSCV1144 tics 2
+texture LSCV1151 range LSCV1155 tics 2
+texture LSCV1161 range LSCV1163 tics 1
+texture LSCV1164 range LSCV1166 tics 1
+texture LSCV1167 range LSCV1169 tics 2
+texture LSCV1185 range LSCV1188 tics 4
+texture LSCV1189 range LSCV1190 tics 10
+texture LSCV1213 range LSCV1228 tics 1
+texture LSCV1329 range LSCV1332 tics 10
+texture LSCV1357 range LSCV1420 tics 4
+texture LSCV1551 range LSCV1555 tics 2
+texture LSCV1642 range LSCV1645 tics 4
+texture LSCV1733 range LSCV1735 tics 4
+texture LSCV1736 range LSCV1739 tics 10
+texture LSCV1740 range LSCV1743 tics 8
+texture LSCV1744 range LSCV1747 tics 8
+texture LSCV1748 range LSCV1751 tics 12
+texture LSCV1764 range LSCV1767 tics 8
+texture LSCV1777 range LSCV1779 tics 1
+texture LSCV1905 range LSCV1908 tics 2
+texture LSCV1912 range LSCV1915 tics 4
+texture LSCV2100 range LSCV2101 tics 10
+texture LSCV2125 range LSCV2128 tics 6
+texture LSCV2359 range LSCV2366 tics 3
+texture LSCV2554 range LSCV2560 tics 2
+texture LSCV2584 range LSCV2591 tics 2
+texture LSCV2592 range LSCV2599 tics 2
+texture LSCV2896 range LSCV2899 tics 2
+texture LSCV2943 range LSCV2946 tics 8
+flat LSCV0342 range LSCV0345 tics 2
+flat LSCV0388 range LSCV0391 tics 4
+switch LSCV0653 on pic LSCV0667 tics 0
+switch LSCV0655 on pic LSCV0669 tics 0
+switch LSCV0656 on pic LSCV0670 tics 0
+switch LSCV0657 on pic LSCV0671 tics 0
+switch LSCV0658 on pic LSCV0672 tics 0
+switch LSCV0665 on pic LSCV0679 tics 0
+
+// Mars War
+texture MSWR0083 range MSWR0086 tics 8 allowdecals
+texture MSWR0333 range MSWR0335 tics 8 allowdecals
+texture MSWR0584 range MSWR0587 tics 8
+switch MSWR0395 on pic MSWR0435 tics 0
+switch MSWR0425 on pic MSWR0465 tics 0
+
+// Memento Mori I
+texture MM100293 range MM100295 tics 8 allowdecals
+texture MM100493 range MM100496 tics 8
+switch MM100348 on pic MM100388 tics 0
+switch MM100349 on pic MM100389 tics 0
+switch MM100353 on pic MM100393 tics 0
+switch MM100375 on pic MM100415 tics 0
+switch MM100376 on pic MM100416 tics 0
+switch MM100377 on pic MM100417 tics 0
+switch MM100379 on pic MM100419 tics 0
+
+// Memento Mori II
+texture MM200149 range MM200152 tics 8 allowdecals
+texture MM200371 range MM200373 tics 8 allowdecals
+texture MM200524 range MM200527 tics 8
+switch MM200426 on pic MM200466 tics 0
+switch MM200427 on pic MM200467 tics 0
+switch MM200431 on pic MM200471 tics 0
+switch MM200434 on pic MM200474 tics 0
+switch MM200453 on pic MM200493 tics 0
+switch MM200454 on pic MM200494 tics 0
+switch MM200455 on pic MM200495 tics 0
+switch MM200457 on pic MM200497 tics 0
+
+// NeoDoom: Vaccinated Edition
+texture NEOD0516 range NEOD0527 tics 8
+texture NEOD0618 range NEOD0625 tics 8
+texture NEOD0711 range NEOD0712 tics 8
+texture NEOD0748 range NEOD0755 tics 8
+texture NEOD0781 range NEOD0788 tics 8
+texture NEOD0819 range NEOD0821 tics 8
+texture NEOD0896 range NEOD0899 tics 8
+texture NEOD0926 range NEOD0929 tics 8
+texture NEOD0935 range NEOD0938 tics 8
+texture NEOD0972 range NEOD0980 tics 8
+texture NEOD1222 range NEOD1225 tics 8
+flat NEOD0113 range NEOD0116 tics 8
+flat NEOD0257 range NEOD0260 tics 8
+flat NEOD0419 range NEOD0421 tics 8
+flat NEOD0422 range NEOD0425 tics 8
+flat NEOD0426 range NEOD0429 tics 8
+flat NEOD0430 range NEOD0432 tics 8
+flat NEOD0433 range NEOD0436 tics 8
+flat NEOD0437 range NEOD0440 tics 8
+flat NEOD0441 range NEOD0444 tics 8
+flat NEOD0445 range NEOD0448 tics 8
+switch NEOD0452 on pic NEOD0456 tics 0
+switch NEOD0453 on pic NEOD0457 tics 0
+switch NEOD0454 on pic NEOD0458 tics 0
+switch NEOD0455 on pic NEOD0459 tics 0
+switch NEOD1785 on pic NEOD1789 tics 0
+switch NEOD1786 on pic NEOD1790 tics 0
+switch NEOD1787 on pic NEOD1791 tics 0
+switch NEOD1788 on pic NEOD1792 tics 0
+
+// Requiem
+texture REQU0058 range REQU0061 tics 8
+flat REQU0032 range REQU0039 tics 8
+switch REQU0481 on pic REQU0521 tics 0
+switch REQU0483 on pic REQU0523 tics 0
+switch REQU0485 on pic REQU0525 tics 0
+switch REQU0486 on pic REQU0526 tics 0
+switch REQU0487 on pic REQU0527 tics 0
+switch REQU0488 on pic REQU0528 tics 0
+switch REQU0489 on pic REQU0529 tics 0
+switch REQU0490 on pic REQU0530 tics 0
+
+// Perdition's Gate
+texture PDGT0097 range PDGT0104 tics 8 allowdecals
+texture PDGT0209 range PDGT0212 tics 8
+switch PDGT0105 on pic PDGT0109 tics 0
+switch PDGT0106 on pic PDGT0110 tics 0
+switch PDGT0107 on pic PDGT0111 tics 0
+switch PDGT0108 on pic PDGT0112 tics 0
+
+// Perdition's Gate Resurgence
+texture PDGR0146 range PDGR0149 tics 8
+texture PDGR0150 range PDGR0153 tics 8
+texture PDGR0156 range PDGR0158 tics 8
+texture PDGR0293 range PDGR0296 tics 8
+switch PDGR0164 on pic PDGR0173 tics 0
+switch PDGR0165 on pic PDGR0174 tics 0
+switch PDGR0166 on pic PDGR0175 tics 0
+switch PDGR0167 on pic PDGR0176 tics 0
+switch PDGR0168 on pic PDGR0177 tics 0
+switch PDGR0170 on pic PDGR0179 tics 0
+
+// Revolution
+texture TVRV0029 range TVRV0031 tics 8
+texture TVRV0032 range TVRV0034 tics 8
+texture TVRV0040 range TVRV0042 tics 8 allowdecals
+flat TVRV0002 range TVRV0005 tics 8
+flat TVRV0009 range TVRV0012 tics 8
+switch TVRV0048 on pic TVRV0049 tics 0
+
+// Scythe
+flat SCY10005 range SCY10008 tics 8
+switch SCY10023 on pic SCY10025 tics 0
+switch SCY10024 on pic SCY10026 tics 0
+
+// Scythe 2
+texture SCY20624 range SCY20627 tics 8 allowdecals
+texture SCY20687 range SCY20690 tics 8
+texture SCY20694 range SCY20697 tics 8 allowdecals
+texture SCY20700 range SCY20703 tics 8
+texture SCY20704 range SCY20705 tics 8
+texture SCY20706 range SCY20708 tics 8
+flat SCY20011 range SCY20014 tics 8
+flat SCY20113 range SCY20116 tics 8
+flat SCY20117 range SCY20120 tics 8
+flat SCY20121 range SCY20124 tics 8
+switch SCY20715 on pic SCY20718 tics 0
+switch SCY20716 on pic SCY20719 tics 0
+switch SCY20717 on pic SCY20720 tics 0
+switch SCY21235 on pic SCY21236 tics 0
+
+// Speed of Doom
+texture SPOD0352 range SPOD0355 tics 8
+texture SPOD0361 range SPOD0364 tics 8
+texture SPOD0365 range SPOD0368 tics 8
+texture SPOD0385 range SPOD0388 tics 8
+texture SPOD0389 range SPOD0392 tics 8
+texture SPOD0397 range SPOD0400 tics 8
+flat SPOD0065 range SPOD0067 tics 8
+switch SPOD0381 on pic SPOD0382 tics 0
+switch SPOD0383 on pic SPOD0384 tics 0
+switch SPOD0724 on pic SPOD0723 tics 0
+switch SPOD0727 on pic SPOD0725 tics 0
+
+// Stardate 20X6
+texture SDX60242 range SDX60245 tics 8
+texture SDX60466 range SDX60469 tics 8
+flat SDX60001 range SDX60003 tics 8
+switch SDX60326 on pic SDX60366 tics 0
+switch SDX60351 on pic SDX60391 tics 0
+
+// Stardate 20X7
+texture SDX70209 range SDX70211 tics 8
+texture SDX70302 range SDX70304 tics 8 allowdecals
+texture SDX70581 range SDX70590 tics 8
+texture SDX70593 range SDX70608 tics 8
+texture SDX70634 range SDX70637 tics 8
+texture SDX70713 range SDX70716 tics 8
+texture SDX70720 range SDX70723 tics 8
+texture SDX70729 range SDX71057 tics 8
+texture SDX71110 range SDX71125 tics 8
+flat SDX70001 range SDX70004 tics 8
+flat SDX70061 range SDX70064 tics 8
+flat SDX70074 range SDX70088 tics 8
+switch SDX70384 on pic SDX70424 tics 0
+switch SDX70530 on pic SDX70531 tics 0
+switch SDX70619 on pic SDX70616 tics 0
+switch SDX70705 on pic SDX70708 tics 0
+switch SDX70706 on pic SDX70709 tics 0
+switch SDX70707 on pic SDX70710 tics 0
+
+// Sunlust
+texture SNLU0197 range SNLU0200 tics 8
+texture SNLU0392 range SNLU0394 tics 8 allowdecals
+texture SNLU0715 range SNLU0724 tics 8
+texture SNLU0725 range SNLU0734 tics 8
+texture SNLU0735 range SNLU0744 tics 8
+texture SNLU0758 range SNLU0760 tics 8
+texture SNLU0790 range SNLU0793 tics 8
+texture SNLU0797 range SNLU0812 tics 8
+texture SNLU0813 range SNLU0828 tics 8
+texture SNLU0829 range SNLU0844 tics 8
+texture SNLU0845 range SNLU0860 tics 8
+texture SNLU0861 range SNLU0864 tics 8
+texture SNLU0922 range SNLU0925 tics 8
+texture SNLU0977 range SNLU0980 tics 8
+texture SNLU1045 range SNLU1048 tics 8
+texture SNLU1062 range SNLU1070 tics 8
+flat SNLU0005 range SNLU0008 tics 8
+flat SNLU0127 range SNLU0130 tics 8
+flat SNLU0145 range SNLU0148 tics 8
+flat SNLU0169 range SNLU0171 tics 8
+flat SNLU0176 range SNLU0179 tics 8
+flat SNLU0181 range SNLU0184 tics 8
+flat SNLU0185 range SNLU0188 tics 8
+switch SNLU0490 on pic SNLU0530 tics 0
+switch SNLU0876 on pic SNLU0871 tics 0
+switch SNLU1019 on pic SNLU1023 tics 0
+switch SNLU1020 on pic SNLU1024 tics 0
+
+// Super MAYhem 17
+texture MY170640 range MY170643 tics 8
+texture MY170663 range MY170665 tics 8
+texture MY170693 range MY170696 tics 8
+texture MY170721 range MY170724 tics 8
+texture MY170747 range MY170750 tics 8
+texture MY170781 range MY170784 tics 8
+texture MY170790 range MY170792 tics 8
+texture MY170807 range MY170809 tics 8
+texture MY170818 range MY170821 tics 8
+texture MY170837 range MY170839 tics 8
+texture MY170869 range MY170872 tics 8
+texture MY170882 range MY170885 tics 8
+texture MY170901 range MY170904 tics 8
+texture MY170909 range MY170912 tics 8
+texture MY170925 range MY170939 tics 8
+texture MY170982 range MY170984 tics 8
+texture MY170998 range MY171008 tics 8
+flat MY170033 range MY170036 tics 8
+flat MY170051 range MY170054 tics 8
+flat MY170076 range MY170079 tics 8
+flat MY170082 range MY170085 tics 8
+flat MY170113 range MY170116 tics 8
+flat MY170128 range MY170131 tics 8
+flat MY170132 range MY170135 tics 8
+flat MY170136 range MY170139 tics 8
+flat MY170140 range MY170143 tics 8
+switch MY170491 on pic MY170531 tics 0
+switch MY170493 on pic MY170533 tics 0
+switch MY170500 on pic MY171072 tics 0
+
+// Swift Death
+texture SWDH0085 range SWDH0088 tics 8
+texture SWDH0439 range SWDH0442 tics 8 allowdecals
+
+// Team Rocket: Blasting Off at the Speed of Mapping
+texture TMR10235 range TMR10237 tics 5
+texture TMR10378 range TMR10381 tics 8
+texture TMR10394 range TMR10397 tics 8
+texture TMR10410 range TMR10413 tics 8
+texture TMR10424 range TMR10442 tics 8
+texture TMR10458 range TMR10461 tics 8
+texture TMR10482 range TMR10490 tics 8
+texture TMR10493 range TMR10496 tics 8
+texture TMR10515 range TMR10517 tics 8
+texture TMR10533 range TMR10536 tics 8
+texture TMR10670 range TMR10673 tics 8
+flat TMR10041 range TMR10044 tics 8
+flat TMR10086 range TMR10089 tics 8
+flat TMR10095 range TMR10097 tics 8
+flat TMR10104 range TMR10107 tics 8
+flat TMR10108 range TMR10111 tics 8
+flat TMR10127 range TMR10130 tics 8
+flat TMR10131 range TMR10134 tics 8
+flat TMR10161 range TMR10164 tics 8
+flat TMR10165 range TMR10168 tics 8
+switch TMR10574 on pic TMR10617 tics 0
+switch TMR10575 on pic TMR10618 tics 0
+switch TMR10576 on pic TMR10619 tics 0
+switch TMR10577 on pic TMR10620 tics 0
+switch TMR10578 on pic TMR10621 tics 0
+switch TMR10580 on pic TMR10623 tics 0
+switch TMR10581 on pic TMR10624 tics 0
+switch TMR10584 on pic TMR10627 tics 0
+switch TMR10585 on pic TMR10628 tics 0
+switch TMR10586 on pic TMR10629 tics 0
+switch TMR10587 on pic TMR10630 tics 0
+switch TMR10588 on pic TMR10631 tics 0
+switch TMR10589 on pic TMR10632 tics 0
+switch TMR10590 on pic TMR10633 tics 0
+switch TMR10591 on pic TMR10634 tics 0
+switch TMR10592 on pic TMR10635 tics 0
+switch TMR10593 on pic TMR10636 tics 0
+switch TMR10595 on pic TMR10638 tics 0
+switch TMR10596 on pic TMR10639 tics 0
+switch TMR10601 on pic TMR10644 tics 0
+switch TMR10602 on pic TMR10645 tics 0
+switch TMR10603 on pic TMR10646 tics 0
+switch TMR10604 on pic TMR10647 tics 0
+switch TMR10606 on pic TMR10649 tics 0
+switch TMR10611 on pic TMR10654 tics 0
+switch TMR10614 on pic TMR10657 tics 0
+switch TMR10615 on pic TMR10658 tics 0
+
+// Team Rocket 2: Looks Like We're Blasting Off Again
+texture TMR21117 range TMR21120 tics 8
+texture TMR21286 range TMR21287 tics 8
+texture TMR21441 range TMR21444 tics 8
+texture TMR21489 range TMR21492 tics 8
+texture TMR21568 range TMR21571 tics 8
+texture TMR21638 range TMR21640 tics 8
+texture TMR21941 range TMR21944 tics 4
+texture TMR21945 range TMR21948 tics 4
+texture TMR21949 range TMR21952 tics 4
+texture TMR21953 range TMR21956 tics 4
+texture TMR21957 range TMR21960 tics 4
+texture TMR21961 range TMR21964 tics 4
+texture TMR21965 range TMR21968 tics 4
+texture TMR21969 range TMR21972 tics 4
+texture TMR21973 range TMR21976 tics 4
+texture TMR21977 range TMR21980 tics 4
+texture TMR21981 range TMR21988 tics 4
+texture TMR21989 range TMR21992 tics 4
+texture TMR22026 range TMR22049 tics 3
+texture TMR22050 range TMR22073 tics 3
+flat TMR20072 range TMR20075 tics 8
+flat TMR20080 range TMR20083 tics 8
+flat TMR20132 range TMR20135 tics 8
+flat TMR20141 range TMR20144 tics 8
+flat TMR20145 range TMR20148 tics 8
+flat TMR20164 range TMR20167 tics 8
+flat TMR20170 range TMR20173 tics 8
+flat TMR20186 range TMR20189 tics 8
+flat TMR20205 range TMR20207 tics 8
+switch TMR20267 on pic TMR20272 tics 0
+switch TMR21703 on pic TMR21709 tics 0
+switch TMR21704 on pic TMR21710 tics 0
+switch TMR21706 on pic TMR21712 tics 0
+switch TMR21707 on pic TMR21713 tics 0
+warp flat TMR20235
+warp flat TMR20236
+warp flat TMR20237
+warp flat TMR20238
+warp flat TMR20255
+warp flat TMR20254
+warp flat TMR20256
+
+// UAC Ultra
+texture UACU0043 range UACU0046 tics 8
+texture UACU0049 range UACU0052 tics 8
+texture UACU0175 range UACU0178 tics 8
+flat UACU0031 range UACU0034 tics 8
+flat UACU0035 range UACU0038 tics 8
+flat UACU0039 range UACU0042 tics 8
+switch UACU0047 on pic UACU0048 tics 0
+
+// Unholy Realms
+texture UHRN0508 range UHRN0510 tics 8 allowdecals
+texture UHRN0527 range UHRN0530 tics 8 allowdecals
+texture UHRN0553 range UHRN0556 tics 8
+texture UHRN1321 range UHRN1324 tics 8
+texture UHRN1445 range UHRN1448 tics 8
+texture UHRN1449 range UHRN1452 tics 8
+texture UHRN1482 range UHRN1485 tics 8
+texture UHRN1500 range UHRN1509 tics 8
+texture UHRN1512 range UHRN1521 tics 8
+flat UHRN0337 range UHRN0340 tics 8
+switch UHRN0471 on pic UHRN0479 tics 0
+switch UHRN0472 on pic UHRN0481 tics 0
+switch UHRN0473 on pic UHRN0482 tics 0
+switch UHRN0474 on pic UHRN0483 tics 0
+switch UHRN0475 on pic UHRN0484 tics 0
+switch UHRN0476 on pic UHRN0485 tics 0
+switch UHRN0477 on pic UHRN0486 tics 0
+switch UHRN0478 on pic UHRN0487 tics 0
+switch UHRN0514 on pic UHRN0519 tics 0
+switch UHRN0515 on pic UHRN0480 tics 0
+switch UHRN0516 on pic UHRN0520 tics 0
+switch UHRN0517 on pic UHRN0521 tics 0
+switch UHRN0518 on pic UHRN0522 tics 0
+switch UHRN1453 on pic UHRN1454 tics 0
+switch UHRN1455 on pic UHRN1456 tics 0
+
+// Valiant: Vaccinated Edition
+texture VLNT1034 range VLNT1037 tics 8
+texture VLNT1051 range VLNT1054 tics 8 allowdecals
+texture VLNT1055 range VLNT1058 tics 8 allowdecals
+texture VLNT1433 range VLNT1436 tics 5
+texture VLNT1987 range VLNT1996 tics 2
+texture VLNT1998 range VLNT2007 tics 2
+texture VLNT2008 range VLNT2009 tics 8
+texture VLNT2011 range VLNT2012 tics 8
+texture VLNT2013 range VLNT2015 tics 8
+texture VLNT2016 range VLNT2018 tics 8
+texture VLNT2019 range VLNT2052 tics 2
+texture VLNT2174 range VLNT2177 tics 8
+texture VLNT2178 range VLNT2180 tics 8 allowdecals
+texture VLNT2194 range VLNT2209 tics 2
+texture VLNT2210 range VLNT2225 tics 2
+texture VLNT2234 range VLNT2237 tics 8
+texture VLNT2238 range VLNT2241 tics 8
+texture VLNT2242 range VLNT2248 tics 4
+texture VLNT2303 range VLNT2309 tics 4
+texture VLNT2590 range VLNT2593 tics 1
+texture VLNT2709 range VLNT2711 tics 8 allowdecals
+texture VLNT2853 range VLNT2861 tics 4
+texture VLNT2866 range VLNT2874 tics 4
+texture VLNT3012 range VLNT3014 tics 8 allowdecals
+texture VLNT3016 range VLNT3019 tics 8
+texture VLNT3486 range VLNT3489 tics 8
+flat VLNT0001 range VLNT0003 tics 8
+flat VLNT0052 range VLNT0055 tics 8
+flat VLNT0275 range VLNT0278 tics 8
+flat VLNT0279 range VLNT0282 tics 8
+flat VLNT0779 range VLNT0782 tics 8
+switch VLNT3235 on pic VLNT3263 tics 0
+switch VLNT3236 on pic VLNT3264 tics 0
+switch VLNT3237 on pic VLNT3265 tics 0
+switch VLNT3238 on pic VLNT3266 tics 0
+switch VLNT3239 on pic VLNT3267 tics 0
+switch VLNT3240 on pic VLNT3268 tics 0
+switch VLNT3241 on pic VLNT3269 tics 0
+switch VLNT3242 on pic VLNT3270 tics 0
+switch VLNT3243 on pic VLNT3271 tics 0
+switch VLNT3244 on pic VLNT3272 tics 0
+switch VLNT3245 on pic VLNT3273 tics 0
+switch VLNT3246 on pic VLNT3274 tics 0
+switch VLNT3247 on pic VLNT3276 tics 0
+switch VLNT3248 on pic VLNT3278 tics 0
+switch VLNT3249 on pic VLNT3279 tics 0
+switch VLNT3250 on pic VLNT3280 tics 0
+switch VLNT3251 on pic VLNT3281 tics 0
+switch VLNT3252 on pic VLNT3284 tics 0
+switch VLNT3253 on pic VLNT3285 tics 0
+switch VLNT3254 on pic VLNT3286 tics 0
+switch VLNT3255 on pic VLNT3287 tics 0
+switch VLNT3256 on pic VLNT3288 tics 0
+switch VLNT3257 on pic VLNT3289 tics 0
+switch VLNT3258 on pic VLNT3290 tics 0
+switch VLNT3259 on pic VLNT3291 tics 0
+switch VLNT3260 on pic VLNT3292 tics 0
+switch VLNT3261 on pic VLNT3293 tics 0
+
+// Vanguard
+texture VNGD0916 range VNGD0919 tics 8
+texture VNGD1240 range VNGD1243 tics 8
+texture VNGD3170 range VNGD3173 tics 8
+switch VNGD2960 on pic VNGD3002 tics 0
+
+// Whispers of Satan
+texture WSPS0201 range WSPS0204 tics 8 allowdecals
+texture WSPS0284 range WSPS0286 tics 8 allowdecals
+texture WSPS0291 range WSPS0294 tics 8
+flat WSPS0059 range WSPS0062 tics 8
+switch WSPS0287 on pic WSPS0289 tics 0
+switch WSPS0288 on pic WSPS0290 tics 0
+texture WSPS0087 range WSPS0088 tics 4
+warp texture WSPS0279
+warp texture WSPS0611
+warp flat WSPS0069
+warp flat WSPS0070
+warp flat WSPS0080
+warp flat WSPS0081
+
+// Zone 300
+texture ZN300087 range ZN300090 tics 8
+texture ZN300390 range ZN300393 tics 8
+
+// Newdoom Community Project
+texture NDC10093 range NDC10095 tics 8 allowdecals
+texture NDC10288 range NDC10291 tics 8
+switch NDC10066 on pic NDC10071 tics 0
+switch NDC10067 on pic NDC10072 tics 0
+switch NDC10069 on pic NDC10074 tics 0
+
+// Newdoom Community Project 2
+texture NDC20233 range NDC20235 tics 8 allowdecals
+texture NDC20399 range NDC20402 tics 8
+texture NDC20418 range NDC20420 tics 2
+texture NDC20421 range NDC20423 tics 2
+texture NDC20427 range NDC20433 tics 1
+texture NDC20442 range NDC20444 tics 4
+texture NDC20447 range NDC20448 tics 1
+texture NDC20451 range NDC20452 tics 6
+texture NDC20469 range NDC20471 tics 2
+texture NDC20472 range NDC20475 tics 1
+texture NDC20479 range NDC20503 tics 8
+texture NDC20504 range NDC20509 tics 4
+texture NDC20510 range NDC20513 tics 3
+texture NDC20514 range NDC20519 tics 4
+texture NDC20672 range NDC20675 tics 4
+texture NDC20688 range NDC20690 tics 6
+texture NDC20718 range NDC20721 tics 5
+texture NDC20732 range NDC20734 tics 5
+texture NDC20769 range NDC20772 tics 8
+texture NDC20773 range NDC20776 tics 8
+flat NDC20167 range NDC20173 tics 1
+flat NDC20182 range NDC20185 tics 2
+flat NDC20186 range NDC20189 tics 2
+flat NDC20193 range NDC20196 tics 4
+switch NDC20237 on pic NDC20242 tics 0
+switch NDC20238 on pic NDC20243 tics 0
+switch NDC20685 on pic NDC20686 tics 0
+switch NDC20724 on pic NDC20725 tics 0
+switch NDC20726 on pic NDC20727 tics 0
+
+// H2H-Xmas
+texture H2HX0015 range H2HX0018 tics 8
+switch H2HX0005 on pic H2HX0010 tics 0
+
+// Vertex Relocation
+texture VXRL0085 range VXRL0088 tics 8
+texture VXRL0098 range VXRL0100 tics 8
+texture VXRL0119 range VXRL0122 tics 8
+texture VXRL0309 range VXRL0312 tics 8
+flat VXRL0052 range VXRL0055 tics 8
+flat VXRL0060 range VXRL0062 tics 8
+flat VXRL0068 range VXRL0071 tics 2
+switch VXRL0072 on pic VXRL0077 tics 0
+switch VXRL0073 on pic VXRL0078 tics 0
+switch VXRL0300 on pic VXRL0301 tics 0
+
+// Switcheroom 2
+texture SWR20001 range SWR20004 tics 8
+switch SWR20005 on pic SWR20010 tics 0
+switch SWR20006 on pic SWR20011 tics 0

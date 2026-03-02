@@ -1,0 +1,417 @@
+// Team Rocket: Blasting Off at the Speed of Mapping Mapset
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TMR101 "Jim Bagrow's Small Night In - AD_79"
+{
+	titlepatch = "TMR1V00"
+	next = "TMR102"
+	secretnext = "TMR102"
+	sky1 = "SKY1"
+	music = "D_TMR101"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR102 "Teahouse - Jimmy"
+{
+	titlepatch = "TMR1V01"
+	next = "TMR103"
+	secretnext = "TMR103"
+	sky1 = "SKY1"
+	music = "D_TMR102"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR103 "Uncle Touchy's Magic Puzzle Basement - Matt Tropiano"
+{
+	titlepatch = "TMR1V02"
+	next = "TMR104"
+	secretnext = "TMR104"
+	sky1 = "SKY1"
+	music = "D_TMR103"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR104 "Coat Hangar - Dragonfly"
+{
+	titlepatch = "TMR1V03"
+	next = "TMR105"
+	secretnext = "TMR105"
+	sky1 = "SKY1"
+	music = "D_TMR104"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR105 "Skyspace V - Xyzzy01"
+{
+	titlepatch = "TMR1V04"
+	next = "TMR106"
+	secretnext = "TMR106"
+	sky1 = "SKY1"
+	music = "D_TMR105"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR106 "Process of Elimination - Dragonfly"
+{
+	titlepatch = "TMR1V05"
+	next = "TMR107"
+	secretnext = "TMR107"
+	sky1 = "SKY1"
+	music = "D_TMR106"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR107 "Obsidian Archetype - AD_79"
+{
+	titlepatch = "TMR1V06"
+	next = "TMR108"
+	secretnext = "TMR108"
+	sky1 = "SKY1"
+	music = "D_TMR107"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+	Map07Special
+}
+
+map TMR108 "Meanwhile at the Harbor - FloatRand"
+{
+	titlepatch = "TMR1V07"
+	next = "TMR109"
+	secretnext = "TMR109"
+	sky1 = "SKY1"
+	music = "D_TMR108"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR109 "Acceleration - Dragonfly"
+{
+	titlepatch = "TMR1V08"
+	next = "TMR110"
+	secretnext = "TMR110"
+	sky1 = "SKY1"
+	music = "D_TMR109"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR110 "The Oppressor - AD_79"
+{
+	titlepatch = "TMR1V09"
+	next = "TMR111"
+	secretnext = "TMR111"
+	sky1 = "SKY1"
+	music = "D_TMR110"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR111 "Down With The Thiccness - Matt Tropiano"
+{
+	titlepatch = "TMR1V10"
+	next = "TMR112"
+	secretnext = "TMR112"
+	sky1 = "SKY1"
+	music = "D_TMR111"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR112 "Little Savage - Jimmy"
+{
+	titlepatch = "TMR1V11"
+	next = "TMR113"
+	secretnext = "TMR113"
+	sky1 = "SKY2"
+	music = "D_TMR112"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR113 "Dominohoes - Dragonfly"
+{
+	titlepatch = "TMR1V12"
+	next = "TMR114"
+	secretnext = "TMR114"
+	sky1 = "SKY2"
+	music = "D_TMR113"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR114 "Cobble - AtronxGH"
+{
+	titlepatch = "TMR1V13"
+	next = "TMR115"
+	secretnext = "TMR115"
+	sky1 = "SKY2"
+	music = "D_TMR114"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR115 "Roadkill - Dragonfly"
+{
+	titlepatch = "TMR1V14"
+	next = "TMR116"
+	secretnext = "TMR131"
+	sky1 = "SKY2"
+	music = "D_TMR115"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR116 "Frank Lloyd Wrong's Aqueduct - Matt Tropiano"
+{
+	titlepatch = "TMR1V15"
+	next = "TMR117"
+	secretnext = "TMR117"
+	sky1 = "SKY2"
+	music = "D_TMR116"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR117 "Petrichor Gardens - Jimmy"
+{
+	titlepatch = "TMR1V16"
+	next = "TMR118"
+	secretnext = "TMR118"
+	sky1 = "SKY2"
+	music = "D_TMR117"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR118 "Pinch Me I Must Be Dreaming - Dragonfly"
+{
+	titlepatch = "TMR1V17"
+	next = "TMR119"
+	secretnext = "TMR119"
+	sky1 = "SKY2"
+	music = "D_TMR118"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR119 "Deluge of Ashes - AD_79"
+{
+	titlepatch = "TMR1V18"
+	next = "TMR120"
+	secretnext = "TMR120"
+	sky1 = "SKY2"
+	music = "D_TMR119"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR120 "Vile Remnants - AD_79"
+{
+	titlepatch = "TMR1V19"
+	next = "TMR121"
+	secretnext = "TMR121"
+	sky1 = "SKY2"
+	music = "D_TMR120"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR121 "Jog On - Dragonfly"
+{
+	titlepatch = "TMR1V20"
+	next = "TMR122"
+	secretnext = "TMR122"
+	sky1 = "SKY3"
+	music = "D_TMR121"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR122 "Soup Pot - Dragonfly"
+{
+	titlepatch = "TMR1V21"
+	next = "TMR123"
+	secretnext = "TMR123"
+	sky1 = "SKY3"
+	music = "D_TMR122"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR123 "Bug Collection - Jimmy"
+{
+	titlepatch = "TMR1V22"
+	next = "TMR124"
+	secretnext = "TMR124"
+	sky1 = "SKY3"
+	music = "D_TMR123"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR124 "Tenderizing Romp - Breezeep"
+{
+	titlepatch = "TMR1V23"
+	next = "TMR125"
+	secretnext = "TMR125"
+	sky1 = "SKY3"
+	music = "D_TMR124"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR125 "Lands Betwixt - Matt Tropiano"
+{
+	titlepatch = "TMR1V24"
+	next = "TMR126"
+	secretnext = "TMR126"
+	sky1 = "SKY3"
+	music = "D_TMR125"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR126 "This Is Your Afterlife - Jimmy"
+{
+	titlepatch = "TMR1V25"
+	next = "TMR127"
+	secretnext = "TMR127"
+	sky1 = "SKY3"
+	music = "D_TMR126"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR127 "Snow Problem - Matt Tropiano"
+{
+	titlepatch = "TMR1V26"
+	next = "TMR128"
+	secretnext = "TMR128"
+	sky1 = "SKY3"
+	music = "D_TMR127"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR128 "Den of Skreevil - Jimmy"
+{
+	titlepatch = "TMR1V27"
+	next = "TMR129"
+	secretnext = "TMR129"
+	sky1 = "SKY3"
+	music = "D_TMR128"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR129 "Papyrus Containing the Spell to Summon the Breath of Life Enshrined in the Collected Scrolls of Sheryl Crow - AD_79"
+{
+	titlepatch = "TMR1V28"
+	next = "TMR130"
+	secretnext = "TMR130"
+	sky1 = "SKY3"
+	music = "D_TMR129"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR130 "End of Days - Matt Tropiano"
+{
+	titlepatch = "TMR1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_TMR130"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+	allowmonstertelefrags
+}
+
+map TMR131 "Sleep Forever - Dobu Gabu Maru"
+{
+	titlepatch = "TMR1V30"
+	next = "TMR116"
+	secretnext = "TMR132"
+	sky1 = "SKY3"
+	music = "D_TMR131"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR132 "Neon Ignition - Dragonfly"
+{
+	titlepatch = "TMR1V31"
+	next = "TMR116"
+	secretnext = "TMR116"
+	sky1 = "SKY3"
+	music = "D_TMR132"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR133 "Inner Demons - Dragonfly"
+{
+	titlepatch = "TMR1V32"
+	next = "TMR134"
+	secretnext = "TMR134"
+	sky1 = "SKY3"
+	music = "D_TMR133"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}
+
+map TMR134 "Vermilion - AtronxGH"
+{
+	titlepatch = "TMR1V33"
+	next = "TMR101"
+	secretnext = "TMR101"
+	sky1 = "SKY3"
+	music = "D_TMR134"
+	intermusic = "D_TMR1IN"
+	ExitPic = "TMR1INT"
+	EnterPic = "TMR1INT"
+}

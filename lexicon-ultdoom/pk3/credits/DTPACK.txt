@@ -1,0 +1,91 @@
+===========================================================================
+Advanced engine needed  : Limit Removing / Boom, Mapinfo preferred.
+Primary purpose         : Single play
+===========================================================================
+Title                   : Death Tormention: The Complete Trilogy
+Filename                : DTPACK.wad
+Release date            : 8 January 2019
+Author                  : Paul Corfiatis (Pcorf), Kristian "Nebula" Aro,
+                          Chris Harbin, Chris "Impboy" Harriman
+Email Address           : [redacted]
+Other Files By Author   : Many. Go to www.paulcorfiatis.com for more.
+
+Description             : 20 years after the release of the original Death
+                          Tormention. I present "The Death Tormention
+                          Trilogy". This compilation megawad contains all
+                          previously released 3 Death Tormention episodes in
+                          one megawad replacing Episode 2, Episode 3 and
+                          Episode 4 of the Ultimate Doom with improvements to
+                          gameplay and various bug fixes over the original.
+                          Also replacing Episode 1 is Simply Phobos.
+
+===========================================================================
+* What is included *
+
+New levels              : 38
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes (x4 Prboom_Plus)
+Other                   : No
+Other files required    : Zdoom based port (due to MAPINFO entry)
+
+
+* Play Information *
+
+Game                    : Ultimate Doom
+Map #                   : E1M1 to E4M9, (E2M10, E4M10 Zdoom only)
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch / Compilation
+Editor(s) used          : Various (Pcorf: Doomcad 6.1, Doom Builder 1.68 and
+                          2.1, Wintex 4.3, XWE 1.16, Slade 3.1.0.1, Cakewalk
+                          music software for midis)
+Known Bugs              : None if you use Zdoom or MAPINFO compatible ports.
+
+			  If playing in Boom (or Prboom), E2M8 and E3M8 do
+                          not end as intended and you cannot access the super
+                          secret levels in Episode 2 and Episode 4. This is
+                          because the first two Death Tormention episodes
+                          replaced Episode 4. Please read the
+                          DTPACK_readme.txt for more info about changes and
+                          fixes. If you play this in Zdoom, it works as
+                          intended due to the MAPINFO entry.
+
+			  If you play this in Prboom-plus the secret levels
+			  in E2 and E3 don't work properly. E2M2 takes you to
+			  E2M9 but you return to E2M6. E3M2 takes you to E3M9
+			  but you return to E3M7. This is because it does not
+			  support MAPINFO.
+
+			  ZDOOM is reccomended due to the MAPINFO entry!
+
+May Not Run With        : Vanilla Doom
+Tested With             : Zdoom 2.81 (Recommended), Prboom-Plus
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: www.doomworld.com/idgames and www.paulcorfiatis.com

@@ -1,0 +1,104 @@
+// DBP02: Circle of Cania
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DB0201 "The chill before the thrill"
+{
+	titlepatch = "DB02V00"
+	next = "DB0202"
+	secretnext = "DB0202"
+	sky1 = "DB020272"
+	music = "D_DB0201"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0202 "Frostbite"
+{
+	titlepatch = "DB02V01"
+	next = "DB0203"
+	secretnext = "DB0203"
+	sky1 = "DB020272"
+	music = "D_DB0202"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0203 "Some other Circle"
+{
+	titlepatch = "DB02V02"
+	next = "DB0204"
+	secretnext = "DB0204"
+	sky1 = "DB020272"
+	music = "D_DB0203"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0204 "The Stairway"
+{
+	titlepatch = "DB02V03"
+	next = "DB0205"
+	secretnext = "DB0205"
+	sky1 = "DB020272"
+	music = "D_DB0204"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0205 "Frosty Cream Glade"
+{
+	titlepatch = "DB02V04"
+	next = "DB0206"
+	secretnext = "DB0206"
+	sky1 = "DB020272"
+	music = "D_DB0205"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0206 "Cold Shoulder"
+{
+	titlepatch = "DB02V05"
+	next = "DB0207"
+	secretnext = "DB0207"
+	sky1 = "DB020272"
+	music = "D_DB0206"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}
+
+map DB0207 "Below Zero"
+{
+	titlepatch = "DB02V06"
+	next = "DB0208"
+	secretnext = "DB0208"
+	sky1 = "DB020272"
+	music = "D_DB0207"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+	Map07Special
+}
+
+map DB0208 "Hot action in clod igloos"
+{
+	titlepatch = "DB02V07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DB020272"
+	music = "D_DB0208"
+	intermusic = "D_DB02IN"
+	ExitPic = "DB02INT"
+	EnterPic = "DB02INT"
+}

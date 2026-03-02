@@ -1,0 +1,284 @@
+// Vignettes of Deathmatch Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map VODM01 "Square Dance"
+{
+	titlepatch = "CWILV00"
+	next = "VODM02"
+	secretnext = "VODM02"
+	sky1 = "VODM0056"
+	music = "D_VODM01"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM02 "Modicum"
+{
+	titlepatch = "CWILV01"
+	next = "VODM03"
+	secretnext = "VODM03"
+	sky1 = "VODM0159"
+	music = "D_VODM02"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM03 "Mountain-Side Observatory"
+{
+	titlepatch = "CWILV02"
+	next = "VODM04"
+	secretnext = "VODM04"
+	sky1 = "VODM0157"
+	music = "D_VODM03"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM04 "Behind These Bars"
+{
+	titlepatch = "CWILV03"
+	next = "VODM05"
+	secretnext = "VODM05"
+	sky1 = "VODM0161"
+	music = "D_VODM04"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM05 "Dig up the Dead"
+{
+	titlepatch = "CWILV04"
+	next = "VODM06"
+	secretnext = "VODM06"
+	sky1 = "VODM0056"
+	music = "D_VODM05"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM06 "Space Nips Station"
+{
+	titlepatch = "CWILV05"
+	next = "VODM07"
+	secretnext = "VODM07"
+	sky1 = "VODM0158"
+	music = "D_VODM06"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM07 "BFG Forge"
+{
+	titlepatch = "CWILV06"
+	next = "VODM08"
+	secretnext = "VODM08"
+	sky1 = "VODM0160"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+	Map07Special
+}
+
+map VODM08 "Detailed"
+{
+	titlepatch = "CWILV07"
+	next = "VODM09"
+	secretnext = "VODM09"
+	sky1 = "VODM0056"
+	music = "D_VODM08"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM09 "Detailed 2"
+{
+	titlepatch = "CWILV08"
+	next = "VODM10"
+	secretnext = "VODM10"
+	sky1 = "VODM0057"
+	music = "D_VODM09"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM10 "Blinking Hell Lights"
+{
+	titlepatch = "CWILV09"
+	next = "VODM11"
+	secretnext = "VODM11"
+	sky1 = "VODM0058"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM11 "White Rock"
+{
+	titlepatch = "CWILV10"
+	next = "VODM12"
+	secretnext = "VODM12"
+	sky1 = "VODM0196"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM12 "Apocraphia"
+{
+	titlepatch = "CWILV11"
+	next = "VODM13"
+	secretnext = "VODM13"
+	sky1 = "VODM0161"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM13 "Serenading Lapse in Judgement"
+{
+	titlepatch = "CWILV12"
+	next = "VODM14"
+	secretnext = "VODM14"
+	sky1 = "VODM0160"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM14 "Modern Urban Jungle"
+{
+	titlepatch = "CWILV13"
+	next = "VODM15"
+	secretnext = "VODM15"
+	sky1 = "VODM0056"
+	music = "D_VODM14"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM15 "Hit The Club"
+{
+	titlepatch = "CWILV14"
+	next = "VODM16"
+	secretnext = "VODM16"
+	sky1 = "VODM0158"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM16 "Razor Map"
+{
+	titlepatch = "CWILV15"
+	next = "VODM17"
+	secretnext = "VODM17"
+	sky1 = "VODM0159"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM17 "Grey Tussle"
+{
+	titlepatch = "CWILV16"
+	next = "VODM18"
+	secretnext = "VODM18"
+	sky1 = "VODM0160"
+	music = "D_VODM17"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM18 "Grey Tussle 2"
+{
+	titlepatch = "CWILV17"
+	next = "VODM19"
+	secretnext = "VODM19"
+	sky1 = "VODM0196"
+	music = "D_VODM18"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM19 "Red Fire Blood Tower"
+{
+	titlepatch = "CWILV18"
+	next = "VODM20"
+	secretnext = "VODM20"
+	sky1 = "VODM0058"
+	music = "$MUSIC_SHAWN2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM20 "Detailed 3"
+{
+	titlepatch = "CWILV19"
+	next = "VODM21"
+	secretnext = "VODM21"
+	sky1 = "VODM0196"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM21 "Off the Gallows"
+{
+	titlepatch = "CWILV20"
+	next = "VODM22"
+	secretnext = "VODM22"
+	sky1 = "VODM0056"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM22 "Melted Again"
+{
+	titlepatch = "CWILV21"
+	next = "VODM23"
+	secretnext = "VODM23"
+	sky1 = "VODM0056"
+	music = "D_VODM22"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}
+
+map VODM23 "Fort of Fragsalot"
+{
+	titlepatch = "CWILV22"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "VODM0161"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_VODMIN"
+	ExitPic = "VODMINT"
+	EnterPic = "VODMINT"
+}

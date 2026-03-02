@@ -1,0 +1,395 @@
+// Ancient Aliens Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	sky1 = "AALI3164"
+}
+
+map AALI01 "The Ancient Navajo Wolf Warp"
+{
+	titlepatch = "AALIV00"
+	next = "AALI02"
+	secretnext = "AALI02"
+	sky1 = "AALI3153"
+	music = "D_AALI01"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI02 "Sanctum of the Wastes"
+{
+	titlepatch = "AALIV01"
+	next = "AALI03"
+	secretnext = "AALI03"
+	sky1 = "AALI3153"
+	music = "D_AALI02"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI03 "Arachnotron Arrival"
+{
+	titlepatch = "AALIV02"
+	next = "AALI04"
+	secretnext = "AALI04"
+	sky1 = "AALI3153"
+	music = "D_AALI03"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI04 "Bad Medicine Men"
+{
+	titlepatch = "AALIV03"
+	next = "AALI05"
+	secretnext = "AALI05"
+	sky1 = "AALI3153"
+	music = "D_AALI04"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI05 "Last Refuge of the Anasazi"
+{
+	titlepatch = "AALIV04"
+	next = "AALI06"
+	secretnext = "AALI06"
+	sky1 = "AALI3153"
+	music = "D_AALI05"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI06 "Sinkhole Showdown"
+{
+	titlepatch = "AALIV05"
+	next = "AALI07"
+	secretnext = "AALI07"
+	sky1 = "AALI3153"
+	music = "D_AALI06"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI07 "Dare To Fly Where Eagles Soar"
+{
+	titlepatch = "AALIV06"
+	next = "AALI08"
+	secretnext = "AALI08"
+	sky1 = "AALI3153"
+	music = "D_AALI07"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+	Map07Special
+}
+
+map AALI08 "Ancient Aliens"
+{
+	titlepatch = "AALIV07"
+	next = "AALI09"
+	secretnext = "AALI09"
+	sky1 = "AALI3153"
+	music = "D_AALI08"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI09 "The Nectar Flow"
+{
+	titlepatch = "AALIV08"
+	next = "AALI10"
+	secretnext = "AALI10"
+	sky1 = "AALI3153"
+	music = "D_AALI09"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI10 "Gift of Denial"
+{
+	titlepatch = "AALIV09"
+	next = "AALI11"
+	secretnext = "AALI11"
+	sky1 = "AALI3153"
+	music = "D_AALI10"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI11 "On The Origin of Spacies"
+{
+	titlepatch = "AALIV10"
+	next = "AALI12"
+	secretnext = "AALI12"
+	sky1 = "AALI3153"
+	music = "D_AALI11"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI12 "Magenta Heat"
+{
+	titlepatch = "AALIV11"
+	next = "AALI13"
+	secretnext = "AALI13"
+	sky1 = "AALI3154"
+	music = "D_AALI12"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI13 "Polychromatic Terrace"
+{
+	titlepatch = "AALIV12"
+	next = "AALI14"
+	secretnext = "AALI14"
+	sky1 = "AALI3154"
+	music = "D_AALI13"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI14 "Blazing Boulevard"
+{
+	titlepatch = "AALIV13"
+	next = "AALI15"
+	secretnext = "AALI15"
+	sky1 = "AALI3154"
+	music = "D_AALI14"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI15 "Wormhole Junction"
+{
+	titlepatch = "AALIV14"
+	next = "AALI16"
+	secretnext = "AALI31"
+	sky1 = "AALI3154"
+	music = "D_AALI15"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI16 "Leave Your Sol Behind"
+{
+	titlepatch = "AALIV15"
+	next = "AALI17"
+	secretnext = "AALI17"
+	sky1 = "AALI3154"
+	music = "D_AALI16"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI17 "Daylight Under a Dark Sol"
+{
+	titlepatch = "AALIV16"
+	next = "AALI18"
+	secretnext = "AALI18"
+	sky1 = "AALI3154"
+	music = "D_AALI17"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI18 "Illuminati Revealed"
+{
+	titlepatch = "AALIV17"
+	next = "AALI19"
+	secretnext = "AALI19"
+	sky1 = "AALI3154"
+	music = "D_AALI18"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI19 "Crash Landing"
+{
+	titlepatch = "AALIV18"
+	next = "AALI20"
+	secretnext = "AALI20"
+	sky1 = "AALI3154"
+	music = "D_AALI19"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI20 "Code"
+{
+	titlepatch = "AALIV19"
+	next = "AALI21"
+	secretnext = "AALI21"
+	sky1 = "AALI3154"
+	music = "D_AALI20"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI21 "Cyberbullying: Beyond Earth"
+{
+	titlepatch = "AALIV20"
+	next = "AALI22"
+	secretnext = "AALI22"
+	sky1 = "AALI3155"
+	music = "D_AALI21"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI22 "Acerola-Orion"
+{
+	titlepatch = "AALIV21"
+	next = "AALI23"
+	secretnext = "AALI23"
+	sky1 = "AALI3155"
+	music = "D_AALI22"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI23 "Trinary Temple"
+{
+	titlepatch = "AALIV22"
+	next = "AALI24"
+	secretnext = "AALI24"
+	sky1 = "AALI3155"
+	music = "D_AALI23"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI24 "Culture Shock"
+{
+	titlepatch = "AALIV23"
+	next = "AALI25"
+	secretnext = "AALI25"
+	sky1 = "AALI5150"
+	sky2 = "AALI5150"
+	music = "D_AALI24"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI25 "Xenoarboreum"
+{
+	titlepatch = "AALIV24"
+	next = "AALI26"
+	secretnext = "AALI26"
+	sky1 = "AALI3155"
+	music = "D_AALI25"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI26 "Egyptian Metaphysics"
+{
+	titlepatch = "AALIV25"
+	next = "AALI27"
+	secretnext = "AALI27"
+	sky1 = "AALI3155"
+	music = "D_AALI26"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI27 "Kingdom of the Crystal Skulls"
+{
+	titlepatch = "AALIV26"
+	next = "AALI28"
+	secretnext = "AALI28"
+	sky1 = "AALI3155"
+	music = "D_AALI27"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI28 "Floating Arena"
+{
+	titlepatch = "AALIV27"
+	next = "AALI29"
+	secretnext = "AALI29"
+	sky1 = "AALI3155"
+	music = "D_AALI28"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI29 "The Ones Behind it All"
+{
+	titlepatch = "AALIV28"
+	next = "AALI30"
+	secretnext = "AALI30"
+	sky1 = "AALI3155"
+	music = "D_AALI29"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI30 "The End"
+{
+	titlepatch = "AALIV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "AALI4130"
+	music = "D_AALI30"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+	allowmonstertelefrags
+}
+
+map AALI31 "Grey Dwarf"
+{
+	titlepatch = "AALIV30"
+	next = "AALI16"
+	secretnext = "AALI32"
+	sky1 = "AALI3155"
+	music = "D_AALI31"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}
+
+map AALI32 "Ossuarium Exoterre"
+{
+	titlepatch = "AALIV31"
+	next = "AALI16"
+	secretnext = "AALI16"
+	sky1 = "AALI3155"
+	music = "D_AALI32"
+	intermusic = "D_AALIIN"
+	ExitPic = "AALIINT"
+	EnterPic = "AALIINT"
+}

@@ -1,0 +1,396 @@
+// Requiem Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map REQU01 "The Gateway"
+{
+	titlepatch = "REQUV00"
+	next = "REQU02"
+	secretnext = "REQU02"
+	sky1 = "REQU0040"
+	music = "D_REQU01"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU02 "Sacrificium"
+{
+	titlepatch = "REQUV01"
+	next = "REQU03"
+	secretnext = "REQU03"
+	sky1 = "REQU0040"
+	music = "D_REQU02"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU03 "Poison Processing"
+{
+	titlepatch = "REQUV02"
+	next = "REQU04"
+	secretnext = "REQU04"
+	sky1 = "REQU0040"
+	music = "D_REQU03"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU04 "Fireworks"
+{
+	titlepatch = "REQUV03"
+	next = "REQU05"
+	secretnext = "REQU05"
+	sky1 = "REQU0040"
+	music = "D_REQU04"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+	compat_useblocking = 1
+}
+
+map REQU05 "The Canyon"
+{
+	titlepatch = "REQUV04"
+	next = "REQU06"
+	secretnext = "REQU06"
+	sky1 = "REQU0040"
+	music = "D_REQU05"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU06 "Natas Ot Etubrit"
+{
+	titlepatch = "REQUV05"
+	next = "REQU07"
+	secretnext = "REQU07"
+	sky1 = "REQU0040"
+	music = "D_REQU06"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU07 "Hells Gift"
+{
+	titlepatch = "REQUV06"
+	next = "REQU08"
+	secretnext = "REQU08"
+	sky1 = "REQU0040"
+	music = "D_REQU07"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+	Map07Special
+}
+
+map REQU08 "The Reactor"
+{
+	titlepatch = "REQUV07"
+	next = "REQU09"
+	secretnext = "REQU09"
+	sky1 = "REQU0040"
+	music = "D_REQU08"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU09 "Deep Down Below"
+{
+	titlepatch = "REQUV08"
+	next = "REQU10"
+	secretnext = "REQU10"
+	sky1 = "REQU0040"
+	music = "D_REQU09"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU10 "The Black Gate"
+{
+	titlepatch = "REQUV09"
+	next = "REQU11"
+	secretnext = "REQU11"
+	sky1 = "REQU0040"
+	music = "D_REQU10"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU11 "Rate In The Walls"
+{
+	titlepatch = "REQUV10"
+	next = "REQU12"
+	secretnext = "REQU12"
+	sky1 = "REQU0040"
+	music = "D_REQU11"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU12 "Militant Reprisal"
+{
+	titlepatch = "REQUV11"
+	next = "REQU13"
+	secretnext = "REQU13"
+	sky1 = "REQU0041"
+	music = "D_REQU12"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU13 "Town Of The Dead"
+{
+	titlepatch = "REQUV12"
+	next = "REQU14"
+	secretnext = "REQU14"
+	sky1 = "REQU0041"
+	music = "D_REQU13"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU14 "The Portal"
+{
+	titlepatch = "REQUV13"
+	next = "REQU15"
+	secretnext = "REQU15"
+	sky1 = "REQU0041"
+	music = "D_REQU14"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU15 "Last Resort"
+{
+	titlepatch = "REQUV14"
+	next = "REQU16"
+	secretnext = "REQU31"
+	sky1 = "REQU0041"
+	music = "D_REQU15"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU16 "Escape From Chaos"
+{
+	titlepatch = "REQUV15"
+	next = "REQU17"
+	secretnext = "REQU17"
+	sky1 = "REQU0041"
+	music = "D_REQU16"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU17 "Dens Of Iniquity"
+{
+	titlepatch = "REQUV16"
+	next = "REQU18"
+	secretnext = "REQU18"
+	sky1 = "REQU0041"
+	music = "D_REQU17"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU18 "Base Of Thron"
+{
+	titlepatch = "REQUV17"
+	next = "REQU19"
+	secretnext = "REQU19"
+	sky1 = "REQU0041"
+	music = "D_REQU18"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU19 "Skinny Puppy"
+{
+	titlepatch = "REQUV18"
+	next = "REQU20"
+	secretnext = "REQU20"
+	sky1 = "REQU0041"
+	music = "D_REQU19"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU20 "The Forsaken Hall"
+{
+	titlepatch = "REQUV19"
+	next = "REQU21"
+	secretnext = "REQU21"
+	sky1 = "REQU0041"
+	music = "D_REQU20"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU21 "Den Of The Skull"
+{
+	titlepatch = "REQUV20"
+	next = "REQU22"
+	secretnext = "REQU22"
+	sky1 = "REQU0042"
+	music = "D_REQU21"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU22 "Arachnophobia"
+{
+	titlepatch = "REQUV21"
+	next = "REQU23"
+	secretnext = "REQU23"
+	sky1 = "REQU0042"
+	music = "D_REQU22"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU23 "Hatred"
+{
+	titlepatch = "REQUV22"
+	next = "REQU24"
+	secretnext = "REQU24"
+	sky1 = "REQU0042"
+	music = "D_REQU23"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+	compat_corpsegibs = 1
+	// Can't do anything about the ghost monsters, sadly.
+}
+
+map REQU24 "Procrustes Chambers"
+{
+	titlepatch = "REQUV23"
+	next = "REQU25"
+	secretnext = "REQU25"
+	sky1 = "REQU0042"
+	music = "D_REQU24"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU25 "Chaos Zone"
+{
+	titlepatch = "REQUV24"
+	next = "REQU26"
+	secretnext = "REQU26"
+	sky1 = "REQU0042"
+	music = "D_REQU25"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU26 "Excoriation"
+{
+	titlepatch = "REQUV25"
+	next = "REQU27"
+	secretnext = "REQU27"
+	sky1 = "REQU0042"
+	music = "D_REQU26"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU27 "Cursed Kingdom"
+{
+	titlepatch = "REQUV26"
+	next = "REQU28"
+	secretnext = "REQU28"
+	sky1 = "REQU0042"
+	music = "D_REQU27"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU28 "Fetals' Remains"
+{
+	titlepatch = "REQUV27"
+	next = "REQU29"
+	secretnext = "REQU29"
+	sky1 = "REQU0042"
+	music = "D_REQU28"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU29 "Downer"
+{
+	titlepatch = "REQUV28"
+	next = "REQU30"
+	secretnext = "REQU30"
+	sky1 = "REQU0042"
+	music = "D_REQU29"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU30 "Nevermore"
+{
+	titlepatch = "REQUV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "REQU0042"
+	music = "D_REQU30"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+	allowmonstertelefrags
+}
+
+map REQU31 "Doorway To Quake"
+{
+	titlepatch = "REQUV30"
+	next = "REQU16"
+	secretnext = "REQU32"
+	sky1 = "REQU0042"
+	music = "D_REQU31"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}
+
+map REQU32 "Bitter Herb"
+{
+	titlepatch = "REQUV31"
+	next = "REQU16"
+	secretnext = "REQU16"
+	sky1 = "REQU0042"
+	music = "D_REQU32"
+	intermusic = "D_REQUIN"
+	ExitPic = "REQUINT"
+	EnterPic = "REQUINT"
+}

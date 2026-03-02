@@ -1,0 +1,393 @@
+// Swift Death Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SWDH01 "First Sequence"
+{
+	titlepatch = "SWDHV00"
+	next = "SWDH02"
+	secretnext = "SWDH02"
+	sky1 = "SWDH0231"
+	music = "D_SWDH01"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH02 "Hyperia Alert"
+{
+	titlepatch = "SWDHV01"
+	next = "SWDH03"
+	secretnext = "SWDH03"
+	sky1 = "SWDH0231"
+	music = "D_SWDH02"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH03 "Punished Zone"
+{
+	titlepatch = "SWDHV02"
+	next = "SWDH04"
+	secretnext = "SWDH04"
+	sky1 = "SWDH0231"
+	music = "D_SWDH03"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH04 "Devil Whisperer"
+{
+	titlepatch = "SWDHV03"
+	next = "SWDH05"
+	secretnext = "SWDH05"
+	sky1 = "SWDH0231"
+	music = "D_SWDH04"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH05 "Hyperia Meteor"
+{
+	titlepatch = "SWDHV04"
+	next = "SWDH06"
+	secretnext = "SWDH06"
+	sky1 = "SWDH0231"
+	music = "D_SWDH05"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH06 "Evil Mesa"
+{
+	titlepatch = "SWDHV05"
+	next = "SWDH07"
+	secretnext = "SWDH07"
+	sky1 = "SWDH0231"
+	music = "D_SWDH06"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH07 "Nevrose"
+{
+	titlepatch = "SWDHV06"
+	next = "SWDH08"
+	secretnext = "SWDH08"
+	sky1 = "SWDH0231"
+	music = "D_SWDH07"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+	Map07Special
+}
+
+map SWDH08 "Deeper Eagle - Memfis"
+{
+	titlepatch = "SWDHV07"
+	next = "SWDH09"
+	secretnext = "SWDH09"
+	sky1 = "SWDH0231"
+	music = "D_SWDH08"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH09 "Arioch Domain"
+{
+	titlepatch = "SWDHV08"
+	next = "SWDH10"
+	secretnext = "SWDH10"
+	sky1 = "SWDH0231"
+	music = "D_SWDH09"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH10 "Ruse"
+{
+	titlepatch = "SWDHV09"
+	next = "SWDH11"
+	secretnext = "SWDH11"
+	sky1 = "SWDH0231"
+	music = "D_SWDH10"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH11 "Octave"
+{
+	titlepatch = "SWDHV10"
+	next = "SWDH12"
+	secretnext = "SWDH12"
+	sky1 = "SWDH0231"
+	music = "D_SWDH11"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH12 "Central Chain"
+{
+	titlepatch = "SWDHV11"
+	next = "SWDH13"
+	secretnext = "SWDH13"
+	sky1 = "SWDH0232"
+	music = "D_SWDH12"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH13 "Calipso"
+{
+	titlepatch = "SWDHV12"
+	next = "SWDH14"
+	secretnext = "SWDH14"
+	sky1 = "SWDH0232"
+	music = "D_SWDH13"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH14 "Vile Gear"
+{
+	titlepatch = "SWDHV13"
+	next = "SWDH15"
+	secretnext = "SWDH15"
+	sky1 = "SWDH0232"
+	music = "D_SWDH14"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH15 "Multiplex"
+{
+	titlepatch = "SWDHV14"
+	next = "SWDH16"
+	secretnext = "SWDH31"
+	sky1 = "SWDH0232"
+	music = "D_SWDH15"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH16 "Observatory"
+{
+	titlepatch = "SWDHV15"
+	next = "SWDH17"
+	secretnext = "SWDH17"
+	sky1 = "SWDH0232"
+	music = "D_SWDH16"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH17 "Turbulence"
+{
+	titlepatch = "SWDHV16"
+	next = "SWDH18"
+	secretnext = "SWDH18"
+	sky1 = "SWDH0232"
+	music = "D_SWDH17"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH18 "Incarnavile"
+{
+	titlepatch = "SWDHV17"
+	next = "SWDH19"
+	secretnext = "SWDH19"
+	sky1 = "SWDH0232"
+	music = "D_SWDH18"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH19 "Rose Inferno"
+{
+	titlepatch = "SWDHV18"
+	next = "SWDH20"
+	secretnext = "SWDH20"
+	sky1 = "SWDH0232"
+	music = "D_SWDH19"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH20 "Xaenos Rock"
+{
+	titlepatch = "SWDHV19"
+	next = "SWDH21"
+	secretnext = "SWDH21"
+	sky1 = "SWDH0232"
+	music = "D_SWDH20"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH21 "Technophage"
+{
+	titlepatch = "SWDHV20"
+	next = "SWDH22"
+	secretnext = "SWDH22"
+	sky1 = "SWDH0233"
+	music = "D_SWDH21"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH22 "Psychedevil"
+{
+	titlepatch = "SWDHV21"
+	next = "SWDH23"
+	secretnext = "SWDH23"
+	sky1 = "SWDH0233"
+	music = "D_SWDH22"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH23 "Evil System"
+{
+	titlepatch = "SWDHV22"
+	next = "SWDH24"
+	secretnext = "SWDH24"
+	sky1 = "SWDH0233"
+	music = "D_SWDH23"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH24 "Apolyon Mons - JC"
+{
+	titlepatch = "SWDHV23"
+	next = "SWDH25"
+	secretnext = "SWDH25"
+	sky1 = "SWDH0233"
+	music = "D_SWDH24"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH25 "Nevada Trash"
+{
+	titlepatch = "SWDHV24"
+	next = "SWDH26"
+	secretnext = "SWDH26"
+	sky1 = "SWDH0233"
+	music = "D_SWDH25"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH26 "Doppler Effect"
+{
+	titlepatch = "SWDHV25"
+	next = "SWDH27"
+	secretnext = "SWDH27"
+	sky1 = "SWDH0233"
+	music = "D_SWDH26"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH27 "Ruins and Chains"
+{
+	titlepatch = "SWDHV26"
+	next = "SWDH28"
+	secretnext = "SWDH28"
+	sky1 = "SWDH0233"
+	music = "D_SWDH27"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH28 "Roundabout"
+{
+	titlepatch = "SWDHV27"
+	next = "SWDH29"
+	secretnext = "SWDH29"
+	sky1 = "SWDH0233"
+	music = "D_SWDH28"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH29 "Imperium"
+{
+	titlepatch = "SWDHV28"
+	next = "SWDH30"
+	secretnext = "SWDH30"
+	sky1 = "SWDH0233"
+	music = "D_SWDH29"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH30 "Itanimulli"
+{
+	titlepatch = "SWDHV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SWDH0233"
+	music = "D_SWDH30"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+	allowmonstertelefrags
+}
+
+map SWDH31 "Fleshopolis"
+{
+	titlepatch = "SWDHV30"
+	next = "SWDH16"
+	secretnext = "SWDH32"
+	sky1 = "SWDH0233"
+	music = "D_SWDH31"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}
+
+map SWDH32 "Violence Mechanix - JC"
+{
+	titlepatch = "SWDHV31"
+	next = "SWDH16"
+	secretnext = "SWDH16"
+	sky1 = "SWDH0233"
+	music = "D_SWDH32"
+	intermusic = "D_SWDHIN"
+	ExitPic = "SWDHINT"
+	EnterPic = "SWDHINT"
+}

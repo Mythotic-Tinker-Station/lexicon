@@ -1,0 +1,134 @@
+// DWANGO3 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW0301 "DWANGO3 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW0302"
+	secretnext = "DW0302"
+	sky1 = "DW030001"
+	music = "D_DW0301"
+}
+
+map DW0302 "DWANGO3 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW0303"
+	secretnext = "DW0303"
+	sky1 = "DW030001"
+	music = "D_DW0302"
+}
+
+map DW0303 "DWANGO3 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW0304"
+	secretnext = "DW0304"
+	sky1 = "DW030001"
+	music = "D_DW0303"
+}
+
+map DW0304 "DWANGO3 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW0305"
+	secretnext = "DW0305"
+	sky1 = "DW030001"
+	music = "D_DW0304"
+}
+
+map DW0305 "DWANGO3 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW0306"
+	secretnext = "DW0306"
+	sky1 = "DW030001"
+	music = "D_DW0305"
+}
+
+map DW0306 "DWANGO3 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW0307"
+	secretnext = "DW0307"
+	sky1 = "DW030001"
+	music = "D_DW0306"
+}
+
+map DW0307 "DWANGO3 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW0308"
+	secretnext = "DW0308"
+	sky1 = "DW030001"
+	music = "D_DW0307"
+	Map07Special
+}
+
+map DW0308 "DWANGO3 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW0309"
+	secretnext = "DW0309"
+	sky1 = "DW030001"
+	music = "D_DW0308"
+}
+
+map DW0309 "DWANGO3 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW0310"
+	secretnext = "DW0310"
+	sky1 = "DW030001"
+	music = "D_DW0309"
+}
+
+map DW0310 "DWANGO3 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW0311"
+	secretnext = "DW0311"
+	sky1 = "DW030001"
+	music = "D_DW0310"
+}
+
+map DW0311 "DWANGO3 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DW0312"
+	secretnext = "DW0312"
+	sky1 = "DW030001"
+	music = "D_DW0311"
+}
+
+map DW0312 "DWANGO3 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DW0313"
+	secretnext = "DW0313"
+	sky1 = "DW030002"
+	music = "D_DW0312"
+}
+
+map DW0313 "DWANGO3 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "DW0331"
+	secretnext = "DW0331"
+	sky1 = "DW030002"
+	music = "D_DW0313"
+}
+
+map DW0331 "DWANGO3 Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DW030003"
+	music = "D_DW0331"
+}

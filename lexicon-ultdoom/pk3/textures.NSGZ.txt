@@ -1,0 +1,394 @@
+Texture "NSGZ0014", 128, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_2", 64, 56
+	Patch "WALL02_2", 64, 0
+}
+Texture "NSGZ0015", 256, 128
+{
+	Patch "COMP02_1", 0, 0
+	Patch "NSGZ0061", 64, 0
+	Patch "NSGZ0062", 128, 0
+	Patch "COMP02_3", 192, 0
+	Patch "NSGZ0063", 0, 64
+	Patch "NSGZ0064", 64, 64
+	Patch "COMP02_7", 128, 64
+	Patch "COMP02_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "NSGZ0016", 128, 128
+{
+	Patch "NSGZ0057", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "NSGZ0017", 128, 128
+{
+	Patch "NSGZ0058", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "NSGZ0018", 256, 128
+{
+	Patch "COMP04_5", 32, 0
+	Patch "COMP04_8", 96, 0
+	Patch "COMP03_8", 160, 0
+	Patch "COMP04_6", 0, 64
+	Patch "COMP04_7", 64, 64
+	Patch "NSGZ0070", 128, 64
+	Patch "NSGZ0066", 192, 0
+	Patch "NSGZ0069", 192, 64
+	Patch "COMP03_8", 0, 0
+}
+Texture "NSGZ0019", 128, 128
+{
+	Patch "NSGZ0068", 0, 0
+	Patch "NSGZ0065", 32, 0
+	Patch "NSGZ0067", 96, 0
+	Patch "NSGZ0068", 0, 64
+	Patch "NSGZ0065", 32, 64
+	Patch "NSGZ0067", 96, 64
+}
+Texture "NSGZ0020", 128, 128
+{
+	Patch "COMP01_5", 26, 64
+	Patch "NSGZ0059", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "COMP01_5", 28, 0
+	Patch "COMP1C_6", 72, 64
+	Patch "COMP01_6", 72, 0
+	Patch "NSGZ0060", 0, 0
+}
+Texture "NSGZ0021", 256, 56
+{
+	Patch "COMP02_1", 0, 0
+	Patch "NSGZ0061", 64, 0
+	Patch "COMP02_3", 128, 0
+	Patch "COMP02_7", 192, 0
+}
+Texture "NSGZ0022", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "SW11_5", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "COMP02_1", 0, 0
+	Patch "SW11_5", 96, 4
+	Patch "NSGZ0061", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "NSGZ0023", 8, 128
+{
+	Patch "NSGZ0055", 0, 112
+	Patch "NSGZ0055", 0, 0
+	Patch "NSGZ0055", 0, 96
+	Patch "NSGZ0055", 0, 80
+	Patch "NSGZ0055", 0, 16
+	Patch "NSGZ0055", 0, 32
+	Patch "NSGZ0055", 0, 48
+	Patch "NSGZ0055", 0, 64
+}
+Texture "NSGZ0027", 16, 128
+{
+	Patch "NSGZ0071", 0, 0
+	Patch "NSGZ0072", 8, 0
+	Patch "NSGZ0073", 8, 0
+	Patch "NSGZ0071", 0, 8
+	Patch "NSGZ0073", 8, 8
+	Patch "NSGZ0071", 0, 16
+	Patch "NSGZ0073", 8, 16
+	Patch "NSGZ0071", 0, 24
+	Patch "NSGZ0073", 8, 24
+	Patch "NSGZ0071", 0, 32
+	Patch "NSGZ0073", 8, 32
+	Patch "NSGZ0071", 0, 40
+	Patch "NSGZ0073", 8, 40
+	Patch "NSGZ0071", 0, 48
+	Patch "NSGZ0073", 8, 48
+	Patch "NSGZ0071", 0, 56
+	Patch "NSGZ0073", 8, 56
+	Patch "NSGZ0071", 0, 64
+	Patch "NSGZ0073", 8, 64
+	Patch "NSGZ0071", 0, 72
+	Patch "NSGZ0073", 8, 72
+	Patch "NSGZ0071", 0, 80
+	Patch "NSGZ0073", 8, 80
+	Patch "NSGZ0071", 0, 88
+	Patch "NSGZ0073", 8, 88
+	Patch "NSGZ0071", 0, 96
+	Patch "NSGZ0073", 8, 96
+	Patch "NSGZ0071", 0, 104
+	Patch "NSGZ0073", 8, 104
+	Patch "NSGZ0071", 0, 112
+	Patch "NSGZ0073", 8, 112
+	Patch "NSGZ0071", 0, 120
+	Patch "NSGZ0073", 8, 120
+}
+Texture "NSGZ0028", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "TSCRN2", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "TSCRN3", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "TSCRN4", 132, 69
+	Patch "TSCRN5", 68, 7
+	Patch "NSGZ0074", 4, 7
+	Patch "NSGZ0075", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "NSGZ0030", 64, 128
+{
+	Patch "STEP03", 0, 0
+	Patch "STEP03", 0, 64
+	Patch "STEP03", 0, 32
+	Patch "STEP03", 0, 96
+	Patch "STEP03", 0, 8
+	Patch "STEP03", 0, 72
+	Patch "STEP03", 0, 40
+	Patch "STEP03", 0, 104
+	Patch "STEP03", 0, 16
+	Patch "STEP03", 0, 80
+	Patch "STEP03", 0, 48
+	Patch "STEP03", 0, 112
+	Patch "STEP03", 0, 24
+	Patch "STEP03", 0, 88
+	Patch "STEP03", 0, 56
+	Patch "STEP03", 0, 120
+	Patch "STEP03", 32, 0
+	Patch "STEP03", 32, 64
+	Patch "STEP03", 32, 32
+	Patch "STEP03", 32, 96
+	Patch "STEP03", 32, 8
+	Patch "STEP03", 32, 72
+	Patch "STEP03", 32, 40
+	Patch "STEP03", 32, 104
+	Patch "STEP03", 32, 16
+	Patch "STEP03", 32, 80
+	Patch "STEP03", 32, 48
+	Patch "STEP03", 32, 112
+	Patch "STEP03", 32, 24
+	Patch "STEP03", 32, 88
+	Patch "STEP03", 32, 56
+	Patch "STEP03", 32, 120
+}
+Texture "NSGZ0032", 64, 128
+{
+	Patch "STEP06", 0, 0
+	Patch "STEP06", 0, 32
+	Patch "STEP06", 0, 64
+	Patch "STEP06", 0, 96
+	Patch "STEP06", 0, 8
+	Patch "STEP06", 0, 40
+	Patch "STEP06", 0, 72
+	Patch "STEP06", 0, 104
+	Patch "STEP06", 0, 16
+	Patch "STEP06", 0, 48
+	Patch "STEP06", 0, 80
+	Patch "STEP06", 0, 112
+	Patch "STEP06", 0, 24
+	Patch "STEP06", 0, 56
+	Patch "STEP06", 0, 88
+	Patch "STEP06", 0, 120
+	Patch "STEP06", 32, 0
+	Patch "STEP06", 32, 32
+	Patch "STEP06", 32, 64
+	Patch "STEP06", 32, 96
+	Patch "STEP06", 32, 8
+	Patch "STEP06", 32, 40
+	Patch "STEP06", 32, 72
+	Patch "STEP06", 32, 104
+	Patch "STEP06", 32, 16
+	Patch "STEP06", 32, 48
+	Patch "STEP06", 32, 80
+	Patch "STEP06", 32, 112
+	Patch "STEP06", 32, 24
+	Patch "STEP06", 32, 56
+	Patch "STEP06", 32, 88
+	Patch "STEP06", 32, 120
+}
+Texture "NSGZ0033", 64, 128
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 32
+	Patch "STEP09", 0, 64
+	Patch "STEP09", 0, 96
+	Patch "STEP09", 0, 8
+	Patch "STEP09", 0, 40
+	Patch "STEP09", 0, 72
+	Patch "STEP09", 0, 104
+	Patch "STEP09", 0, 16
+	Patch "STEP09", 0, 48
+	Patch "STEP09", 0, 80
+	Patch "STEP09", 0, 112
+	Patch "STEP09", 0, 24
+	Patch "STEP09", 0, 56
+	Patch "STEP09", 0, 88
+	Patch "STEP09", 0, 120
+	Patch "STEP09", 32, 0
+	Patch "STEP09", 32, 32
+	Patch "STEP09", 32, 64
+	Patch "STEP09", 32, 96
+	Patch "STEP09", 32, 8
+	Patch "STEP09", 32, 40
+	Patch "STEP09", 32, 72
+	Patch "STEP09", 32, 104
+	Patch "STEP09", 32, 16
+	Patch "STEP09", 32, 48
+	Patch "STEP09", 32, 80
+	Patch "STEP09", 32, 112
+	Patch "STEP09", 32, 24
+	Patch "STEP09", 32, 56
+	Patch "STEP09", 32, 88
+	Patch "STEP09", 32, 120
+}
+Texture "NSGZ0034", 64, 128
+{
+	Patch "STEP07", 0, 0
+	Patch "STEP07", 0, 32
+	Patch "STEP07", 0, 64
+	Patch "STEP07", 0, 96
+	Patch "STEP07", 0, 16
+	Patch "STEP07", 0, 48
+	Patch "STEP07", 0, 80
+	Patch "STEP07", 0, 112
+	Patch "STEP07", 32, 0
+	Patch "STEP07", 32, 32
+	Patch "STEP07", 32, 64
+	Patch "STEP07", 32, 96
+	Patch "STEP07", 32, 16
+	Patch "STEP07", 32, 48
+	Patch "STEP07", 32, 80
+	Patch "STEP07", 32, 112
+	Patch "STEP10", 0, 8
+	Patch "STEP10", 0, 40
+	Patch "STEP10", 0, 72
+	Patch "STEP10", 0, 104
+	Patch "STEP10", 0, 24
+	Patch "STEP10", 0, 56
+	Patch "STEP10", 0, 88
+	Patch "STEP10", 0, 120
+	Patch "STEP10", 32, 8
+	Patch "STEP10", 32, 40
+	Patch "STEP10", 32, 72
+	Patch "STEP10", 32, 104
+	Patch "STEP10", 32, 24
+	Patch "STEP10", 32, 56
+	Patch "STEP10", 32, 88
+	Patch "STEP10", 32, 120
+}
+Texture "NSGZ0035", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NSGZ0038", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "NSGZ0039", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "NSGZ0040", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NSGZ0042", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "NSGZ0043", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "NSGZ0044", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "NSGZ0045", 64, 128
+{
+	Patch "NSGZ0065", 0, 0
+	Patch "NSGZ0082", 0, 64
+}
+Texture "NSGZ0046", 128, 128
+{
+	Patch "NSGZ0079", 64, 70
+	Patch "NSGZ0081", 0, 70
+	Patch "NSGZ0080", 0, -2
+	Patch "NSGZ0079", 64, -2
+}
+Texture "NSGZ0047", 16, 128
+{
+	Patch "NSGZ0078", 0, 0
+	Patch "NSGZ0078", 0, 24
+	Patch "NSGZ0078", 0, 48
+	Patch "NSGZ0078", 0, 72
+	Patch "NSGZ0078", 0, 96
+	Patch "STEP07", 0, 120
+}
+Texture "NSGZ0050", 64, 128
+{
+	Patch "NSGZ0065", 0, 0
+	Patch "NSGZ0082", 0, 64
+	Patch "SW2_7", 14, 66
+}
+Texture "NSGZ0051", 64, 128
+{
+	Patch "NSGZ0065", 0, 0
+	Patch "NSGZ0082", 0, 64
+	Patch "SW2_8", 14, 66
+}
+Texture "NSGZ0052", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "NSGZ0083", 0, 59
+}

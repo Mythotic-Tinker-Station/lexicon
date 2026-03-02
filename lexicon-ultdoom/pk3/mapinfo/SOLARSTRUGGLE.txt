@@ -1,0 +1,453 @@
+// Solar Struggle Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SLRSE1M1 "Detention Facility"
+{
+	titlepatch = "SLRSV00"
+	next = "SLRSE1M2"
+	secretnext = "SLRSE1M2"
+	sky1 = "SLRS0215"
+	music = "D_SLRS01"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI02"
+	EnterPic = "SLRSI01"
+}
+
+map SLRSE1M2 "Admin Offices"
+{
+	titlepatch = "SLRSV01"
+	next = "SLRSE1M3"
+	secretnext = "SLRSE1M3"
+	sky1 = "SLRS0215"
+	music = "D_SLRS02"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI04"
+	EnterPic = "SLRSI03"
+}
+
+map SLRSE1M3 "Barracks"
+{
+	titlepatch = "SLRSV02"
+	next = "SLRSE1M4"
+	secretnext = "SLRSE1M9"
+	sky1 = "SLRS0215"
+	music = "D_SLRS03"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI06"
+	EnterPic = "SLRSI05"
+}
+
+map SLRSE1M4 "Mineral Processing"
+{
+	titlepatch = "SLRSV03"
+	next = "SLRSE1M5"
+	secretnext = "SLRSE1M5"
+	sky1 = "SLRS0215"
+	music = "D_SLRS04"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI08"
+	EnterPic = "SLRSI07"
+}
+
+map SLRSE1M5 "Mining Complex"
+{
+	titlepatch = "SLRSV04"
+	next = "SLRSE1M6"
+	secretnext = "SLRSE1M6"
+	sky1 = "SLRS0215"
+	music = "D_SLRS05"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI10"
+	EnterPic = "SLRSI09"
+}
+
+map SLRSE1M6 "Visitor Center"
+{
+	titlepatch = "SLRSV05"
+	next = "SLRSE1M7"
+	secretnext = "SLRSE1M7"
+	sky1 = "SLRS0215"
+	music = "D_SLRS06"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI12"
+	EnterPic = "SLRSI11"
+}
+
+map SLRSE1M7 "Traffic Control"
+{
+	titlepatch = "SLRSV06"
+	next = "SLRSE1M8"
+	secretnext = "SLRSE1M8"
+	sky1 = "SLRS0215"
+	music = "D_SLRS07"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI14"
+	EnterPic = "SLRSI13"
+}
+
+map SLRSE1M8 "Huygens Spaceport"
+{
+	titlepatch = "SLRSV07"
+	next = "SLRSE2M1"
+	secretnext = "SLRSE2M1"
+	sky1 = "SLRS0215"
+	music = "D_SLRS08"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI15"
+	EnterPic = "SLRSI15"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map SLRSE1M9 "Excavation Site"
+{
+	titlepatch = "SLRSV08"
+	next = "SLRSE1M4"
+	secretnext = "SLRSE1M4"
+	sky1 = "SLRS0215"
+	music = "D_SLRS09"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI17"
+	EnterPic = "SLRSI16"
+}
+
+map SLRSE2M1 "Piazzi Spaceport"
+{
+	titlepatch = "SLRSV09"
+	next = "SLRSE2M2"
+	secretnext = "SLRSE2M2"
+	sky1 = "SLRS0216"
+	music = "D_SLRS10"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI19"
+	EnterPic = "SLRSI18"
+}
+
+map SLRSE2M2 "Storage Complex"
+{
+	titlepatch = "SLRSV10"
+	next = "SLRSE2M3"
+	secretnext = "SLRSE2M3"
+	sky1 = "SLRS0216"
+	music = "D_SLRS11"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI21"
+	EnterPic = "SLRSI20"
+}
+
+map SLRSE2M3 "Stock Exchange"
+{
+	titlepatch = "SLRSV11"
+	next = "SLRSE2M4"
+	secretnext = "SLRSE2M4"
+	sky1 = "SLRS0216"
+	music = "D_SLRS12"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI23"
+	EnterPic = "SLRSI22"
+}
+
+map SLRSE2M4 "Air Filtration Plant"
+{
+	titlepatch = "SLRSV12"
+	next = "SLRSE2M5"
+	secretnext = "SLRSE2M5"
+	sky1 = "SLRS0216"
+	music = "D_SLRS13"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI25"
+	EnterPic = "SLRSI24"
+}
+
+map SLRSE2M5 "Abandoned Tunnels"
+{
+	titlepatch = "SLRSV13"
+	next = "SLRSE2M6"
+	secretnext = "SLRSE2M9"
+	sky1 = "SLRS0216"
+	music = "D_SLRS14"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI27"
+	EnterPic = "SLRSI26"
+}
+
+map SLRSE2M6 "Transport Nexus"
+{
+	titlepatch = "SLRSV14"
+	next = "SLRSE2M7"
+	secretnext = "SLRSE2M7"
+	sky1 = "SLRS0216"
+	music = "D_SLRS15"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI29"
+	EnterPic = "SLRSI28"
+}
+
+map SLRSE2M7 "Research Complex"
+{
+	titlepatch = "SLRSV15"
+	next = "SLRSE2M8"
+	secretnext = "SLRSE2M8"
+	sky1 = "SLRS0216"
+	music = "D_SLRS16"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI31"
+	EnterPic = "SLRSI30"
+}
+
+map SLRSE2M8 "Ceres Gateway"
+{
+	titlepatch = "SLRSV16"
+	next = "SLRSE3M1"
+	secretnext = "SLRSE3M1"
+	sky1 = "SLRS0216"
+	music = "D_SLRS17"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI32"
+	EnterPic = "SLRSI32"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map SLRSE2M9 "Artifact Storage"
+{
+	titlepatch = "SLRSV17"
+	next = "SLRSE2M6"
+	secretnext = "SLRSE2M6"
+	sky1 = "SLRS0216"
+	music = "D_SLRS18"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI34"
+	EnterPic = "SLRSI33"
+}
+
+map SLRSE3M1 "Lunar Gateway"
+{
+	titlepatch = "SLRSV18"
+	next = "SLRSE3M2"
+	secretnext = "SLRSE3M2"
+	sky1 = "SLRS0217"
+	music = "D_SLRS19"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI36"
+	EnterPic = "SLRSI35"
+}
+
+map SLRSE3M2 "Tranquility Terminal"
+{
+	titlepatch = "SLRSV19"
+	next = "SLRSE3M3"
+	secretnext = "SLRSE3M3"
+	sky1 = "SLRS0217"
+	music = "D_SLRS20"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI38"
+	EnterPic = "SLRSI37"
+}
+
+map SLRSE3M3 "Deep Space Observatory"
+{
+	titlepatch = "SLRSV20"
+	next = "SLRSE3M4"
+	secretnext = "SLRSE3M4"
+	sky1 = "SLRS0217"
+	music = "D_SLRS21"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI40"
+	EnterPic = "SLRSI39"
+}
+
+map SLRSE3M4 "Fusion Plant"
+{
+	titlepatch = "SLRSV21"
+	next = "SLRSE3M5"
+	secretnext = "SLRSE3M5"
+	sky1 = "SLRS0217"
+	music = "D_SLRS22"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI42"
+	EnterPic = "SLRSI41"
+}
+
+map SLRSE3M5 "Helium Refinery"
+{
+	titlepatch = "SLRSV22"
+	next = "SLRSE3M6"
+	secretnext = "SLRSE3M6"
+	sky1 = "SLRS0217"
+	music = "D_SLRS23"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI44"
+	EnterPic = "SLRSI43"
+}
+
+map SLRSE3M6 "Deep Crust Borehole"
+{
+	titlepatch = "SLRSV23"
+	next = "SLRSE3M7"
+	secretnext = "SLRSE3M9"
+	sky1 = "SLRS0217"
+	music = "D_SLRS24"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI46"
+	EnterPic = "SLRSI45"
+}
+
+map SLRSE3M7 "Freight Terminal"
+{
+	titlepatch = "SLRSV24"
+	next = "SLRSE3M8"
+	secretnext = "SLRSE3M8"
+	sky1 = "SLRS0217"
+	music = "D_SLRS25"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI48"
+	EnterPic = "SLRSI47"
+}
+
+map SLRSE3M8 "Space Elevator"
+{
+	titlepatch = "SLRSV25"
+	next = "SLRSE4M1"
+	secretnext = "SLRSE4M1"
+	sky1 = "SLRS0217"
+	music = "D_SLRS26"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI49"
+	EnterPic = "SLRSI49"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map SLRSE3M9 "The Dark Side"
+{
+	titlepatch = "SLRSV26"
+	next = "SLRSE3M7"
+	secretnext = "SLRSE3M7"
+	sky1 = "SLRS0217"
+	music = "D_SLRS27"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI51"
+	EnterPic = "SLRSI50"
+}
+
+map SLRSE4M1 "Docking Bay"
+{
+	titlepatch = "SLRSV27"
+	next = "SLRSE4M2"
+	secretnext = "SLRSE4M2"
+	sky1 = "SLRS0218"
+	music = "D_SLRS28"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI53"
+	EnterPic = "SLRSI52"
+}
+
+map SLRSE4M2 "Customs Office"
+{
+	titlepatch = "SLRSV28"
+	next = "SLRSE4M3"
+	secretnext = "SLRSE4M9"
+	sky1 = "SLRS0218"
+	music = "D_SLRS29"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI55"
+	EnterPic = "SLRSI54"
+}
+
+map SLRSE4M3 "Commerial District"
+{
+	titlepatch = "SLRSV29"
+	next = "SLRSE4M4"
+	secretnext = "SLRSE4M4"
+	sky1 = "SLRS0218"
+	music = "D_SLRS30"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI57"
+	EnterPic = "SLRSI56"
+}
+
+map SLRSE4M4 "Residential Areas"
+{
+	titlepatch = "SLRSV30"
+	next = "SLRSE4M5"
+	secretnext = "SLRSE4M5"
+	sky1 = "SLRS0218"
+	music = "D_SLRS31"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI59"
+	EnterPic = "SLRSI58"
+}
+
+map SLRSE4M5 "Waste Recycling Facility"
+{
+	titlepatch = "SLRSV31"
+	next = "SLRSE4M6"
+	secretnext = "SLRSE4M6"
+	sky1 = "SLRS0218"
+	music = "D_SLRS32"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI61"
+	EnterPic = "SLRSI60"
+}
+
+map SLRSE4M6 "Mass Propulsion"
+{
+	titlepatch = "SLRSV32"
+	next = "SLRSE4M7"
+	secretnext = "SLRSE4M7"
+	sky1 = "SLRS0218"
+	music = "D_SLRS33"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI63"
+	EnterPic = "SLRSI62"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map SLRSE4M7 "The Tether"
+{
+	titlepatch = "SLRSV33"
+	next = "SLRSE4M8"
+	secretnext = "SLRSE4M8"
+	sky1 = "SLRS0218"
+	music = "D_SLRS34"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI65"
+	EnterPic = "SLRSI64"
+}
+
+map SLRSE4M8 "Impact Site"
+{
+	titlepatch = "SLRSV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SLRS0218"
+	music = "D_SLRS35"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI65"
+	EnterPic = "SLRSI65"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map SLRSE4M9 "Cult Headquarters"
+{
+	titlepatch = "SLRSV35"
+	next = "SLRSE4M3"
+	secretnext = "SLRSE4M3"
+	sky1 = "SLRS0218"
+	music = "D_SLRS36"
+	intermusic = "D_SLRSIN"
+	ExitPic = "SLRSI67"
+	EnterPic = "SLRSI66"
+}

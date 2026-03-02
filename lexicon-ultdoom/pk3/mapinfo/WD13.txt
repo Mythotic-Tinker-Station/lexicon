@@ -1,0 +1,345 @@
+// Wonderful Doom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map WD13E1M1 "Wonderful Doom Map 1"
+{
+	titlepatch = "WILV00"
+	next = "WD13E1M2"
+	secretnext = "WD13E1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map WD13E1M2 "Wonderful Doom Map 2"
+{
+	titlepatch = "WILV01"
+	next = "WD13E1M3"
+	secretnext = "WD13E1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map WD13E1M3 "Wonderful Doom Map 3"
+{
+	titlepatch = "WILV02"
+	next = "WD13E1M4"
+	secretnext = "WD13E1M9"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+}
+
+map WD13E1M4 "Wonderful Doom Map 4"
+{
+	titlepatch = "WILV03"
+	next = "WD13E1M5"
+	secretnext = "WD13E1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+}
+
+map WD13E1M5 "Wonderful Doom Map 5"
+{
+	titlepatch = "WILV04"
+	next = "WD13E1M6"
+	secretnext = "WD13E1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+}
+
+map WD13E1M6 "Wonderful Doom Map 6"
+{
+	titlepatch = "WILV05"
+	next = "WD13E1M7"
+	secretnext = "WD13E1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map WD13E1M7 "Wonderful Doom Map 7"
+{
+	titlepatch = "WILV06"
+	next = "WD13E1M8"
+	secretnext = "WD13E1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+}
+
+map WD13E1M8 "Wonderful Doom Map 8"
+{
+	titlepatch = "WILV07"
+	next = "WD13E2M1"
+	secretnext = "WD13E2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map WD13E1M9 "Wonderful Doom Secret Map 1"
+{
+	titlepatch = "WILV08"
+	next = "WD13E1M4"
+	secretnext = "WD13E1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M9"
+}
+
+map WD13E2M1 "Wonderful Doom Map 9"
+{
+	titlepatch = "WILV10"
+	next = "WD13E2M2"
+	secretnext = "WD13E2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M1"
+}
+
+map WD13E2M2 "Wonderful Doom Map 10"
+{
+	titlepatch = "WILV11"
+	next = "WD13E2M3"
+	secretnext = "WD13E2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M2"
+}
+
+map WD13E2M3 "Wonderful Doom Map 11"
+{
+	titlepatch = "WILV12"
+	next = "WD13E2M4"
+	secretnext = "WD13E2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M3"
+}
+
+map WD13E2M4 "Wonderful Doom Map 12"
+{
+	titlepatch = "WILV13"
+	next = "WD13E2M5"
+	secretnext = "WD13E2M5"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M4"
+}
+
+map WD13E2M5 "Wonderful Doom Map 13"
+{
+	titlepatch = "WILV14"
+	next = "WD13E2M6"
+	secretnext = "WD13E2M9"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map WD13E2M6 "Wonderful Doom Map 14"
+{
+	titlepatch = "WILV15"
+	next = "WD13E2M7"
+	secretnext = "WD13E2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+}
+
+map WD13E2M7 "Wonderful Doom Map 15"
+{
+	titlepatch = "WILV16"
+	next = "WD13E2M8"
+	secretnext = "WD13E2M8"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M7"
+}
+
+map WD13E2M8 "Wonderful Doom Map 16"
+{
+	titlepatch = "WILV17"
+	next = "WD13E3M1"
+	secretnext = "WD13E3M1"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map WD13E2M9 "Wonderful Doom Secret Map 2"
+{
+	titlepatch = "WILV18"
+	next = "WD13E2M6"
+	secretnext = "WD13E2M6"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map WD13E3M1 "Wonderful Doom Map 17"
+{
+	titlepatch = "WILV20"
+	next = "WD13E3M2"
+	secretnext = "WD13E3M2"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M1"
+}
+
+map WD13E3M2 "Wonderful Doom Map 18"
+{
+	titlepatch = "WILV21"
+	next = "WD13E3M3"
+	secretnext = "WD13E3M3"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M2"
+}
+
+map WD13E3M3 "Wonderful Doom Map 19"
+{
+	titlepatch = "WILV22"
+	next = "WD13E3M4"
+	secretnext = "WD13E3M4"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M3"
+}
+
+map WD13E3M4 "Wonderful Doom Map 20"
+{
+	titlepatch = "WILV23"
+	next = "WD13E3M5"
+	secretnext = "WD13E3M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map WD13E3M5 "Wonderful Doom Map 21"
+{
+	titlepatch = "WILV24"
+	next = "WD13E3M6"
+	secretnext = "WD13E3M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M5"
+}
+
+map WD13E3M6 "Wonderful Doom Map 22"
+{
+	titlepatch = "WILV25"
+	next = "WD13E3M7"
+	secretnext = "WD13E3M9"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M6"
+}
+
+map WD13E3M7 "Wonderful Doom Map 23"
+{
+	titlepatch = "WILV26"
+	next = "WD13E3M8"
+	secretnext = "WD13E3M8"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M7"
+}
+
+map WD13E3M8 "Wonderful Doom Map 24"
+{
+	titlepatch = "WILV27"
+	next = "WD13E4M1"
+	secretnext = "WD13E4M1"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map WD13E3M9 "Wonderful Doom Secret Map 3"
+{
+	titlepatch = "WILV28"
+	next = "WD13E3M7"
+	secretnext = "WD13E3M7"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M9"
+}
+
+map WD13E4M1 "Wonderful Doom Map 25"
+{
+	titlepatch = "WILV30"
+	next = "WD13E4M2"
+	secretnext = "WD13E4M2"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M4"
+}
+
+map WD13E4M2 "Wonderful Doom Map 26"
+{
+	titlepatch = "WILV31"
+	next = "WD13E4M3"
+	secretnext = "WD13E4M9"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M2"
+}
+
+map WD13E4M3 "Wonderful Doom Map 27"
+{
+	titlepatch = "WILV32"
+	next = "WD13E4M4"
+	secretnext = "WD13E4M4"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M3"
+}
+
+map WD13E4M4 "Wonderful Doom Map 28"
+{
+	titlepatch = "WILV33"
+	next = "WD13E4M5"
+	secretnext = "WD13E4M5"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E1M5"
+}
+
+map WD13E4M5 "Wonderful Doom Map 29"
+{
+	titlepatch = "WILV34"
+	next = "WD13E4M6"
+	secretnext = "WD13E4M6"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M7"
+}
+
+map WD13E4M6 "Wonderful Doom Map 30"
+{
+	titlepatch = "WILV35"
+	next = "WD13E4M7"
+	secretnext = "WD13E4M7"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map WD13E4M7 "Wonderful Doom Map 31"
+{
+	titlepatch = "WILV36"
+	next = "WD13E4M8"
+	secretnext = "WD13E4M8"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M6"
+}
+
+map WD13E4M8 "Wonderful Doom Map 32"
+{
+	titlepatch = "WILV37"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M5"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map WD13E4M9 "Wonderful Doom Secret Map 4"
+{
+	titlepatch = "WILV38"
+	next = "WD13E4M3"
+	secretnext = "WD13E4M3"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E1M9"
+}

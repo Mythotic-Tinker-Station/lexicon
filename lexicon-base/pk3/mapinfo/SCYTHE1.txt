@@ -1,0 +1,393 @@
+// Scythe Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SCY101 "Get Going"
+{
+	titlepatch = "SCY1V00"
+	next = "SCY102"
+	secretnext = "SCY102"
+	sky1 = "SCY10018"
+	music = "D_SCY101"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY102 "Punchline"
+{
+	titlepatch = "SCY1V01"
+	next = "SCY103"
+	secretnext = "SCY103"
+	sky1 = "SCY10018"
+	music = "D_SCY102"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY103 "Up and Around"
+{
+	titlepatch = "SCY1V02"
+	next = "SCY104"
+	secretnext = "SCY104"
+	sky1 = "SCY10018"
+	music = "D_SCY103"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY104 "Lost Warehouse"
+{
+	titlepatch = "SCY1V03"
+	next = "SCY105"
+	secretnext = "SCY105"
+	sky1 = "SCY10018"
+	music = "D_SCY104"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY105 "Slimy Tunnels"
+{
+	titlepatch = "SCY1V04"
+	next = "SCY106"
+	secretnext = "SCY106"
+	sky1 = "SCY10018"
+	music = "D_SCY105"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY106 "Pressure Point"
+{
+	titlepatch = "SCY1V05"
+	next = "SCY107"
+	secretnext = "SCY107"
+	sky1 = "SCY10018"
+	music = "D_SCY106"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY107 "Deadly"
+{
+	titlepatch = "SCY1V06"
+	next = "SCY108"
+	secretnext = "SCY108"
+	sky1 = "SCY10018"
+	music = "D_SCY107"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+	Map07Special
+}
+
+map SCY108 "Garden Base"
+{
+	titlepatch = "SCY1V07"
+	next = "SCY109"
+	secretnext = "SCY109"
+	sky1 = "SCY10018"
+	music = "D_SCY108"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY109 "Computer Storage"
+{
+	titlepatch = "SCY1V08"
+	next = "SCY110"
+	secretnext = "SCY110"
+	sky1 = "SCY10018"
+	music = "D_SCY109"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY110 "The Lords"
+{
+	titlepatch = "SCY1V09"
+	next = "SCY111"
+	secretnext = "SCY111"
+	sky1 = "SCY10018"
+	music = "D_SCY110"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY111 "Sneak Peak"
+{
+	titlepatch = "SCY1V10"
+	next = "SCY112"
+	secretnext = "SCY112"
+	sky1 = "SCY10018"
+	music = "D_SCY111"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY112 "Walk in the Park"
+{
+	titlepatch = "SCY1V11"
+	next = "SCY113"
+	secretnext = "SCY113"
+	sky1 = "SCY10019"
+	music = "D_SCY112"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY113 "Subverted Base"
+{
+	titlepatch = "SCY1V12"
+	next = "SCY114"
+	secretnext = "SCY114"
+	sky1 = "SCY10019"
+	music = "D_SCY113"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY114 "Power Outage"
+{
+	titlepatch = "SCY1V13"
+	next = "SCY115"
+	secretnext = "SCY115"
+	sky1 = "SCY10019"
+	music = "D_SCY114"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY115 "Blood Bath"
+{
+	titlepatch = "SCY1V14"
+	next = "SCY116"
+	secretnext = "SCY131"
+	sky1 = "SCY10019"
+	music = "D_SCY115"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY116 "Burial Grounds"
+{
+	titlepatch = "SCY1V15"
+	next = "SCY117"
+	secretnext = "SCY117"
+	sky1 = "SCY10019"
+	music = "D_SCY116"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY117 "Book Lords"
+{
+	titlepatch = "SCY1V16"
+	next = "SCY118"
+	secretnext = "SCY118"
+	sky1 = "SCY10019"
+	music = "D_SCY117"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY118 "MS Futura"
+{
+	titlepatch = "SCY1V17"
+	next = "SCY119"
+	secretnext = "SCY119"
+	sky1 = "SCY10019"
+	music = "D_SCY118"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY119 "Ad"
+{
+	titlepatch = "SCY1V18"
+	next = "SCY120"
+	secretnext = "SCY120"
+	sky1 = "SCY10019"
+	music = "D_SCY119"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY120 "The Starport"
+{
+	titlepatch = "SCY1V19"
+	next = "SCY121"
+	secretnext = "SCY121"
+	sky1 = "SCY10019"
+	music = "D_SCY120"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY121 "Solitude"
+{
+	titlepatch = "SCY1V20"
+	next = "SCY122"
+	secretnext = "SCY122"
+	sky1 = "SCY10020"
+	music = "D_SCY121"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY122 "Despair"
+{
+	titlepatch = "SCY1V21"
+	next = "SCY123"
+	secretnext = "SCY123"
+	sky1 = "SCY10020"
+	music = "D_SCY122"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY123 "Anger"
+{
+	titlepatch = "SCY1V22"
+	next = "SCY124"
+	secretnext = "SCY124"
+	sky1 = "SCY10020"
+	music = "D_SCY123"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY124 "Hatred"
+{
+	titlepatch = "SCY1V23"
+	next = "SCY125"
+	secretnext = "SCY125"
+	sky1 = "SCY10020"
+	music = "D_SCY124"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY125 "Envy"
+{
+	titlepatch = "SCY1V24"
+	next = "SCY126"
+	secretnext = "SCY126"
+	sky1 = "SCY10020"
+	music = "D_SCY125"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY126 "Fear"
+{
+	titlepatch = "SCY1V25"
+	next = "SCY127"
+	secretnext = "SCY127"
+	sky1 = "SCY10020"
+	music = "D_SCY126"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY127 "Terror"
+{
+	titlepatch = "SCY1V26"
+	next = "SCY128"
+	secretnext = "SCY128"
+	sky1 = "SCY10020"
+	music = "D_SCY127"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY128 "Run From It"
+{
+	titlepatch = "SCY1V27"
+	next = "SCY129"
+	secretnext = "SCY129"
+	sky1 = "SCY10020"
+	music = "D_SCY128"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY129 "Hell on Earth"
+{
+	titlepatch = "SCY1V28"
+	next = "SCY130"
+	secretnext = "SCY130"
+	sky1 = "SCY10020"
+	music = "D_SCY129"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY130 "Fire and Ice"
+{
+	titlepatch = "SCY1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SCY10020"
+	music = "D_SCY130"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+	allowmonstertelefrags
+}
+
+map SCY131 "I Dunno Torn"
+{
+	titlepatch = "SCY1V30"
+	next = "SCY116"
+	secretnext = "SCY132"
+	sky1 = "SCY10020"
+	music = "D_SCY131"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}
+
+map SCY132 "Enoz Soahc"
+{
+	titlepatch = "SCY1V31"
+	next = "SCY116"
+	secretnext = "SCY116"
+	sky1 = "SCY10020"
+	music = "D_SCY132"
+	intermusic = "D_SCY1IN"
+	ExitPic = "SCY1INT"
+	EnterPic = "SCY1INT"
+}

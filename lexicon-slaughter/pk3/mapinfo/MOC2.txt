@@ -1,0 +1,361 @@
+// Maps of Chaos (Doom 2 version) Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map MOC201 "Maps of Chaos Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "MOC202"
+	secretnext = "MOC202"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC202 "Maps of Chaos Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "MOC203"
+	secretnext = "MOC203"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC203 "Maps of Chaos Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "MOC204"
+	secretnext = "MOC204"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC204 "Maps of Chaos Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "MOC205"
+	secretnext = "MOC205"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC205 "Maps of Chaos Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "MOC206"
+	secretnext = "MOC206"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC206 "Maps of Chaos Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "MOC207"
+	secretnext = "MOC207"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC207 "Maps of Chaos Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "MOC208"
+	secretnext = "MOC208"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+	Map07Special
+}
+
+map MOC208 "Maps of Chaos Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "MOC209"
+	secretnext = "MOC209"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC209 "Maps of Chaos Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "MOC210"
+	secretnext = "MOC210"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC210 "Maps of Chaos Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "MOC211"
+	secretnext = "MOC211"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC211 "Maps of Chaos Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "MOC212"
+	secretnext = "MOC212"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC212 "Maps of Chaos Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "MOC213"
+	secretnext = "MOC213"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC213 "Maps of Chaos Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "MOC214"
+	secretnext = "MOC214"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC214 "Maps of Chaos Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "MOC215"
+	secretnext = "MOC215"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC215 "Maps of Chaos Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "MOC216"
+	secretnext = "MOC231"
+	sky1 = "SKY2"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC216 "Maps of Chaos Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "MOC217"
+	secretnext = "MOC217"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC217 "Maps of Chaos Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "MOC218"
+	secretnext = "MOC218"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC218 "Maps of Chaos Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "MOC219"
+	secretnext = "MOC219"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC219 "Maps of Chaos Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "MOC220"
+	secretnext = "MOC220"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC220 "Maps of Chaos Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "MOC221"
+	secretnext = "MOC221"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC221 "Maps of Chaos Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "MOC222"
+	secretnext = "MOC222"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC222 "Maps of Chaos Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "MOC223"
+	secretnext = "MOC223"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC223 "Maps of Chaos Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "MOC224"
+	secretnext = "MOC224"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC224 "Maps of Chaos Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "MOC225"
+	secretnext = "MOC225"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC225 "Maps of Chaos Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "MOC226"
+	secretnext = "MOC226"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC226 "Maps of Chaos Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "MOC227"
+	secretnext = "MOC227"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC227 "Maps of Chaos Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "MOC228"
+	secretnext = "MOC228"
+	sky1 = "SKY3"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC228 "Maps of Chaos Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "MOC229"
+	secretnext = "MOC229"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC229 "Maps of Chaos Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "MOC230"
+	secretnext = "MOC230"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC230 "Maps of Chaos Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+	allowmonstertelefrags
+}
+
+map MOC231 "Maps of Chaos Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "MOC216"
+	secretnext = "MOC232"
+	sky1 = "SKY3"
+	music = "$MUSIC_EVIL"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}
+
+map MOC232 "Maps of Chaos Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "MOC216"
+	secretnext = "MOC216"
+	sky1 = "SKY3"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "MOC2INT"
+	EnterPic = "MOC2INT"
+}

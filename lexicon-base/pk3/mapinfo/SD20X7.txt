@@ -1,0 +1,99 @@
+// Stardate 20X7 Mapinfo
+
+defaultmap
+{
+	InterMusic = "D_SDX7IN"
+	ExitPic = "SDX7INT"
+	EnterPic = "SDX7INT"
+	Sky1 = "SDX70330"
+	NoJump
+	NoCrouch
+}
+
+map SDX701 "Sun/Moon/Stars"
+{
+	TitlePatch = "SDX7V00"
+	Next = "SDX702"
+	SecretNext = "SDX702"
+	Music = "D_SDX701"
+}
+
+map SDX702 "Eastern Sun"
+{
+	TitlePatch = "SDX7V01"
+	Next = "SDX703"
+	SecretNext = "SDX703"
+	Music = "D_SDX702"
+}
+
+map SDX703 "Amethyst III"
+{
+	TitlePatch = "SDX7V02"
+	Next = "SDX704"
+	SecretNext = "SDX704"
+	Music = "D_SDX703"
+}
+
+map SDX704 "Velvet Blood Mission"
+{
+	TitlePatch = "SDX7V03"
+	Next = "SDX705"
+	SecretNext = "SDX705"
+	Music = "D_SDX704"
+}
+
+map SDX705 "Sphinx Rising"
+{
+	TitlePatch = "SDX7V04"
+	Next = "SDX706"
+	SecretNext = "SDX706"
+	Music = "D_SDX705"
+}
+
+map SDX706 "The Other Side"
+{
+	TitlePatch = "SDX7V05"
+	Next = "SDX707"
+	SecretNext = "SDX707"
+	Music = "D_SDX706"
+}
+
+map SDX707 "Lotus Keep"
+{
+	TitlePatch = "SDX7V06"
+	Next = "SDX708"
+	SecretNext = "SDX708"
+	Music = "D_SDX707"
+}
+
+map SDX708 "Grand Ballroom"
+{
+	TitlePatch = "SDX7V07"
+	Next = "SDX709"
+	SecretNext = "SDX709"
+	Music = "D_SDX708"
+}
+
+map SDX709 "Do You Believe?"
+{
+	TitlePatch = "SDX7V08"
+	next = "VR"
+	Secretnext = "VR"
+	Music = "D_SDX709"
+}
+
+map SDX731 "Hopscotch"
+{
+	TitlePatch = "SDX7V30"
+	Next = "SDX732"
+	SecretNext = "SDX732"
+	Music = "D_SDX731"
+}
+
+map SDX732 "Issai Perfect"
+{
+	TitlePatch = "SDX7V31"
+	next = "VR"
+	Secretnext = "VR"
+	Music = "D_SDX732"
+}

@@ -1,0 +1,637 @@
+// 2022 A Doom Odyssey Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ADO2E1M1 "Endoom Trance"
+{
+	titlepatch = "ADO2V00"
+	next = "ADO2E1M2"
+	secretnext = "ADO2E1M2"
+	sky1 = "DSKY1"
+	music = "D_ADO201"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M2 "Atomic Research"
+{
+	titlepatch = "ADO2V01"
+	next = "ADO2E1M3"
+	secretnext = "ADO2E1M3"
+	sky1 = "DSKY1"
+	music = "D_ADO202"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M3 "Computer Plant"
+{
+	titlepatch = "ADO2V02"
+	next = "ADO2E1M4"
+	secretnext = "ADO2E1M9"
+	sky1 = "DSKY1"
+	music = "D_ADO203"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M4 "Roboden"
+{
+	titlepatch = "ADO2V03"
+	next = "ADO2E1M5"
+	secretnext = "ADO2E1M5"
+	sky1 = "DSKY1"
+	music = "D_ADO204"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M5 "Suspense Base"
+{
+	titlepatch = "ADO2V04"
+	next = "ADO2E1M6"
+	secretnext = "ADO2E1M6"
+	sky1 = "DSKY1"
+	music = "D_ADO205"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M6 "Engineering"
+{
+	titlepatch = "ADO2V05"
+	next = "ADO2E1M7"
+	secretnext = "ADO2E1M7"
+	sky1 = "DSKY1"
+	music = "D_ADO206"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M7 "Alpha Starport"
+{
+	titlepatch = "ADO2V06"
+	next = "ADO2E1M8"
+	secretnext = "ADO2E1M8"
+	sky1 = "DSKY1"
+	music = "D_ADO207"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1M8 "Paradigm"
+{
+	titlepatch = "ADO2V07"
+	next = "ADO2E2M1"
+	secretnext = "ADO2E1MX"
+	sky1 = "DSKY1"
+	music = "D_ADO208"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+	nosoundclipping
+	baronspecial
+	specialaction_lowerfloor
+}
+
+map ADO2E1M9 "Central Refinery"
+{
+	titlepatch = "ADO2V08"
+	next = "ADO2E1M4"
+	secretnext = "ADO2E1M4"
+	sky1 = "DSKY1"
+	music = "D_ADO209"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+}
+
+map ADO2E1MX "Baron's Pacman Delights"
+{
+	titlepatch = "ADO2V09"
+	next = "ADO2E2M1"
+	secretnext = "ADO2E2M1"
+	sky1 = "DSKY1"
+	music = "D_ADO210"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT1"
+	EnterPic = "ADO2INT1"
+	baronspecial
+	specialaction_lowerfloor
+}
+
+map ADO2E2M1 "Shogun"
+{
+	titlepatch = "ADO2V10"
+	next = "ADO2E2M2"
+	secretnext = "ADO2E2M2"
+	sky1 = "DSKY2"
+	music = "D_ADO211"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M2 "Stronghold"
+{
+	titlepatch = "ADO2V11"
+	next = "ADO2E2M3"
+	secretnext = "ADO2E2M3"
+	sky1 = "DSKY2"
+	music = "D_ADO212"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M3 "Budonoki"
+{
+	titlepatch = "ADO2V12"
+	next = "ADO2E2M4"
+	secretnext = "ADO2E2M4"
+	sky1 = "DSKY2"
+	music = "D_ADO213"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M4 "Shipping"
+{
+	titlepatch = "ADO2V13"
+	next = "ADO2E2M5"
+	secretnext = "ADO2E2M5"
+	sky1 = "DSKY2"
+	music = "D_ADO214"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M5 "Akuma"
+{
+	titlepatch = "ADO2V14"
+	next = "ADO2E2M6"
+	secretnext = "ADO2E2M9"
+	sky1 = "DSKY2"
+	music = "D_ADO215"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M6 "Damned Outpost"
+{
+	titlepatch = "ADO2V15"
+	next = "ADO2E2M7"
+	secretnext = "ADO2E2M7"
+	sky1 = "DSKY2"
+	music = "D_ADO216"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M7 "Osore"
+{
+	titlepatch = "ADO2V16"
+	next = "ADO2E2M8"
+	secretnext = "ADO2E2M8"
+	sky1 = "DSKY2"
+	music = "D_ADO217"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2M8 "Escape From Babel"
+{
+	titlepatch = "ADO2V17"
+	next = "ADO2E3M1"
+	secretnext = "ADO2E3M1"
+	sky1 = "DSKY2"
+	music = "D_ADO218"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map ADO2E2M9 "Infernal Scorn"
+{
+	titlepatch = "ADO2V18"
+	next = "ADO2E2M6"
+	secretnext = "ADO2E2MX"
+	sky1 = "DSKY2"
+	music = "D_ADO219"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E2MX "FROG.WAD"
+{
+	titlepatch = "ADO2V19"
+	next = "ADO2E2M6"
+	secretnext = "ADO2E2M6"
+	sky1 = "DSKY2"
+	music = "D_ADO220"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INTX"
+	EnterPic = "ADO2INTX"
+}
+
+map ADO2E3M1 "Disturbing Comfort"
+{
+	titlepatch = "ADO2V20"
+	next = "ADO2E3M2"
+	secretnext = "ADO2E3M2"
+	sky1 = "DSKY3"
+	music = "D_ADO221"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M2 "The Ravenous Canyon"
+{
+	titlepatch = "ADO2V21"
+	next = "ADO2E3M3"
+	secretnext = "ADO2E3M3"
+	sky1 = "DSKY3"
+	music = "D_ADO222"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M3 "Essence of Blood"
+{
+	titlepatch = "ADO2V22"
+	next = "ADO2E3M4"
+	secretnext = "ADO2E3M4"
+	sky1 = "DSKY3"
+	music = "D_ADO223"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M4 "Disquietude Consternation"
+{
+	titlepatch = "ADO2V23"
+	next = "ADO2E3M5"
+	secretnext = "ADO2E3M5"
+	sky1 = "DSKY3"
+	music = "D_ADO224"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M5 "Putrescent Dirge"
+{
+	titlepatch = "ADO2V24"
+	next = "ADO2E3M6"
+	secretnext = "ADO2E3M6"
+	sky1 = "DSKY3"
+	music = "D_ADO225"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M6 "Lament Configuration"
+{
+	titlepatch = "ADO2V25"
+	next = "ADO2E3M7"
+	secretnext = "ADO2E3M9"
+	sky1 = "DSKY3"
+	music = "D_ADO226"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M7 "Loviatar"
+{
+	titlepatch = "ADO2V26"
+	next = "ADO2E3M8"
+	secretnext = "ADO2E3M8"
+	sky1 = "DSKY3"
+	music = "D_ADO227"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E3M8 "Dementertainment Loop"
+{
+	titlepatch = "ADO2V27"
+	next = "ADO2E4M1"
+	secretnext = "ADO2E4M1"
+	sky1 = "DSKY3"
+	music = "D_ADO228"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map ADO2E3M9 "Lemarchand's Retreat"
+{
+	titlepatch = "ADO2V28"
+	next = "ADO2E3M7"
+	secretnext = "ADO2E3MX"
+	sky1 = "DSKY3"
+	music = "D_ADO229"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+	baronspecial
+	specialaction_lowerfloor
+}
+
+map ADO2E3MX "BUNNY.WAD"
+{
+	titlepatch = "ADO2V29"
+	next = "ADO2E3M7"
+	secretnext = "ADO2E3M7"
+	sky1 = "DSKY3"
+	music = "D_ADO230"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT3"
+	EnterPic = "ADO2INT3"
+}
+
+map ADO2E4M1 "Tormental"
+{
+	titlepatch = "ADO2V30"
+	next = "ADO2E4M2"
+	secretnext = "ADO2E4M2"
+	sky1 = "DSKY4"
+	music = "D_ADO231"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M2 "Bloodgore"
+{
+	titlepatch = "ADO2V31"
+	next = "ADO2E4M3"
+	secretnext = "ADO2E4M9"
+	sky1 = "DSKY4"
+	music = "D_ADO232"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M3 "Mysteries Of Hades"
+{
+	titlepatch = "ADO2V32"
+	next = "ADO2E4M4"
+	secretnext = "ADO2E4M4"
+	sky1 = "DSKY4"
+	music = "D_ADO233"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M4 "Valley Of Afterlife"
+{
+	titlepatch = "ADO2V33"
+	next = "ADO2E4M5"
+	secretnext = "ADO2E4M5"
+	sky1 = "DSKY4"
+	music = "D_ADO234"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M5 "Trepidation"
+{
+	titlepatch = "ADO2V34"
+	next = "ADO2E4M6"
+	secretnext = "ADO2E4M6"
+	sky1 = "DSKY4"
+	music = "D_ADO235"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M6 "Fort Docks"
+{
+	titlepatch = "ADO2V35"
+	next = "ADO2E4M7"
+	secretnext = "ADO2E4M7"
+	sky1 = "DSKY4"
+	music = "D_ADO236"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map ADO2E4M7 "Impious Alcazar"
+{
+	titlepatch = "ADO2V36"
+	next = "ADO2E4M8"
+	secretnext = "ADO2E4M8"
+	sky1 = "DSKY4"
+	music = "D_ADO237"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E4M8 "Gateway To Sigil"
+{
+	titlepatch = "ADO2V37"
+	next = "ADO2E5M1"
+	secretnext = "ADO2E5M1"
+	sky1 = "DSKY4"
+	music = "D_ADO238"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map ADO2E4M9 "The Calm"
+{
+	titlepatch = "ADO2V38"
+	next = "ADO2E4M3"
+	secretnext = "ADO2E4MX"
+	sky1 = "DSKY4"
+	music = "D_ADO239"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	baronspecial
+	specialaction_OpenDoor
+}
+
+map ADO2E4MX "PIGEON.WAD"
+{
+	titlepatch = "ADO2V38"
+	next = "ADO2E4M3"
+	secretnext = "ADO2E4M3"
+	sky1 = "DSKY4"
+	music = "D_ADO240"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M1 "PHENEX"
+{
+	titlepatch = "ADO2V39"
+	next = "ADO2E5M2"
+	secretnext = "ADO2E5M2"
+	sky1 = "ADO20081"
+	music = "D_ADO241"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M2 "ANDREALPHUS"
+{
+	titlepatch = "ADO2V40"
+	next = "ADO2E5M3"
+	secretnext = "ADO2E5M3"
+	sky1 = "ADO20081"
+	music = "D_ADO242"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	compat_nopassover = 0
+}
+
+map ADO2E5M3 "UKOBACH"
+{
+	titlepatch = "ADO2V41"
+	next = "ADO2E5M4"
+	secretnext = "ADO2E5M4"
+	sky1 = "ADO20081"
+	music = "D_ADO243"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M4 "LERAJE"
+{
+	titlepatch = "ADO2V42"
+	next = "ADO2E5M5"
+	secretnext = "ADO2E5M9"
+	sky1 = "ADO20081"
+	music = "D_ADO244"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M5 "OROBAS"
+{
+	titlepatch = "ADO2V43"
+	next = "ADO2E5M6"
+	secretnext = "ADO2E5M6"
+	sky1 = "ADO20081"
+	music = "D_ADO245"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M6 "RONOVE"
+{
+	titlepatch = "ADO2V44"
+	next = "ADO2E5M7"
+	secretnext = "ADO2E5M7"
+	sky1 = "ADO20081"
+	music = "D_ADO246"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+}
+
+map ADO2E5M7 "ELIGOS"
+{
+	titlepatch = "ADO2V45"
+	next = "ADO2E5M8"
+	secretnext = "ADO2E5M8"
+	sky1 = "ADO20081"
+	music = "D_ADO247"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	compat_nopassover = 0
+}
+
+map ADO2E5M8 "NABERIUS"
+{
+	titlepatch = "ADO2V46"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ADO20081"
+	music = "D_ADO248"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	spidermastermindspecial
+	specialaction_lowerfloor
+	compat_nopassover = 0
+}
+
+map ADO2E5M9 "A DOOMED ODYSSEY"
+{
+	titlepatch = "ADO2V47"
+	next = "ADO2E5M5"
+	secretnext = "ADO2E5MX"
+	sky1 = "ADO20081"
+	music = "D_ADO249"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	baronspecial
+	specialaction_lowerfloor
+}
+
+map ADO2E5MX "PLASMA"
+{
+	titlepatch = "ADO2V48"
+	next = "ADO2E5M5"
+	secretnext = "ADO2E5M5"
+	sky1 = "ADO20081"
+	music = "D_ADO250"
+	intermusic = "D_ADO2IN"
+	ExitPic = "ADO2INT4"
+	EnterPic = "ADO2INT4"
+	spidermastermindspecial
+	specialaction_lowerfloor
+	compat_nopassover = 0
+}

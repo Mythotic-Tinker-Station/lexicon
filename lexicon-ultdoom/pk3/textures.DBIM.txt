@@ -1,0 +1,71 @@
+Texture "DBIM0001", 1024, 128
+{
+	Patch "DBIM0012", 0, 0
+	Patch "DBIM0013", 256, 0
+	Patch "DBIM0014", 512, 0
+	Patch "DBIM0015", 768, 0
+}
+Texture "DBIM0002", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DBIM0003", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "DBIM0005", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "DBIM0006", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "DBIM0007", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DBIM0008", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "DBIM0010", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "DBIM0011", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}

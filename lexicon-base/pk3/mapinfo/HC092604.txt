@@ -1,0 +1,381 @@
+// Hellcore Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLC101 "Hellcore Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "HLC102"
+	secretnext = "HLC102"
+	sky1 = "HLC10489"
+	music = "D_HLC101"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC102 "Hellcore Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "HLC103"
+	secretnext = "HLC103"
+	sky1 = "HLC10489"
+	music = "D_HLC102"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC103 "Hellcore Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "HLC104"
+	secretnext = "HLC104"
+	sky1 = "HLC10489"
+	music = "D_HLC103"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC104 "Hellcore Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "HLC105"
+	secretnext = "HLC105"
+	sky1 = "HLC10489"
+	music = "D_HLC104"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC105 "Hellcore Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "HLC106"
+	secretnext = "HLC106"
+	sky1 = "HLC10489"
+	music = "D_HLC105"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC106 "Hellcore Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "HLC107"
+	secretnext = "HLC107"
+	sky1 = "HLC10489"
+	music = "D_HLC106"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC107 "Hellcore Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "HLC108"
+	secretnext = "HLC108"
+	sky1 = "HLC10489"
+	music = "D_HLC107"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+	Map07Special
+}
+
+map HLC108 "Hellcore Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "HLC109"
+	secretnext = "HLC109"
+	sky1 = "HLC10489"
+	music = "D_HLC108"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC109 "Hellcore Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "HLC110"
+	secretnext = "HLC110"
+	sky1 = "HLC10489"
+	music = "D_HLC109"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC110 "Hellcore Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "HLC111"
+	secretnext = "HLC111"
+	sky1 = "HLC10489"
+	music = "D_HLC110"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC111 "Hellcore Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "HLC112"
+	secretnext = "HLC112"
+	sky1 = "HLC10489"
+	music = "D_HLC111"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC112 "Hellcore Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "HLC113"
+	secretnext = "HLC113"
+	sky1 = "HLC10490"
+	music = "D_HLC112"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC113 "Hellcore Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "HLC114"
+	secretnext = "HLC114"
+	sky1 = "HLC10490"
+	music = "D_HLC113"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC114 "Hellcore Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "HLC115"
+	secretnext = "HLC115"
+	sky1 = "HLC10490"
+	music = "D_HLC114"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC115 "Hellcore Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "HLC116"
+	secretnext = "HLC131"
+	sky1 = "HLC10490"
+	music = "D_HLC115"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC116 "Hellcore Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "HLC117"
+	secretnext = "HLC117"
+	sky1 = "HLC10490"
+	music = "D_HLC116"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC117 "Hellcore Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "HLC118"
+	secretnext = "HLC118"
+	sky1 = "HLC10490"
+	music = "D_HLC117"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC118 "Hellcore Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "HLC119"
+	secretnext = "HLC119"
+	sky1 = "HLC10490"
+	music = "$MUSIC_ROMERO"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC119 "Hellcore Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "HLC120"
+	secretnext = "HLC120"
+	sky1 = "HLC10490"
+	music = "D_HLC119"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC120 "Hellcore Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "HLC121"
+	secretnext = "HLC121"
+	sky1 = "HLC10490"
+	music = "D_HLC120"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC121 "Hellcore Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "HLC122"
+	secretnext = "HLC122"
+	sky1 = "HLC10491"
+	music = "D_HLC121"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC122 "Hellcore Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "HLC123"
+	secretnext = "HLC123"
+	sky1 = "HLC10491"
+	music = "D_HLC122"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC123 "Hellcore Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "HLC124"
+	secretnext = "HLC124"
+	sky1 = "HLC10491"
+	music = "D_HLC123"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC124 "Hellcore Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "HLC125"
+	secretnext = "HLC125"
+	sky1 = "HLC10491"
+	music = "D_HLC124"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC125 "Hellcore Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "HLC126"
+	secretnext = "HLC126"
+	sky1 = "HLC10491"
+	music = "D_HLC125"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC126 "Hellcore Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "HLC127"
+	secretnext = "HLC127"
+	sky1 = "HLC10491"
+	music = "D_HLC126"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC127 "Hellcore Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "HLC128"
+	secretnext = "HLC128"
+	sky1 = "HLC10491"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC128 "Hellcore Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "HLC129"
+	secretnext = "HLC129"
+	sky1 = "HLC10491"
+	music = "D_HLC128"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC129 "Hellcore Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "HLC130"
+	secretnext = "HLC130"
+	sky1 = "HLC10491"
+	music = "D_HLC129"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}
+
+map HLC130 "Hellcore Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HLC10491"
+	music = "D_HLC130"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+	allowmonstertelefrags
+}
+
+map HLC131 "Hellcore Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "HLC116"
+	secretnext = "HLC116"
+	sky1 = "HLC10491"
+	music = "D_HLC131"
+	intermusic = "D_HLC1IN"
+	ExitPic = "HLC1INT"
+	EnterPic = "HLC1INT"
+}

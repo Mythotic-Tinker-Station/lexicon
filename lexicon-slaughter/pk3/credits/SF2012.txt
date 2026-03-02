@@ -1,0 +1,607 @@
+===========================================================================
+Archive Maintainer      : doom2/Ports/megawads
+Advanced engine needed  : PrBoom-Plus -complevel 9 compatible
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Slaughterfest 2012
+Filename                : SF2012.wad
+Release date            : July 30, 2013
+Author                  : Various
+Email Address           : thelastbreathofthedying@yahoo.com
+                          ribbiks@gmail.com
+Description             : Another compilation of slaughter maps, 35 to be
+                          precise. Designed to be played from pistol start.
+
+Additional Credits to   : Textures, flats, and sprites from cc4-tex,
+                          doom, gothictx, Oblige, q1tex, retres - 
+                          See the CREDITS and MAPLIST sections for more
+===========================================================================
+* What is included *
+
+New levels              : 35
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+
+Dehacked/BEX Patch      : Dehacked lump included in the main wad.
+
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-35
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Some maps
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A year, and then some
+Editor(s) used          : doom builder, boom anim tool, xwe, slumped,
+                          slade, various image editors
+Known Bugs              : N/A
+May Not Run With...     : N/A
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse, as long as you give proper credit.
+
+You MAY distribute this zip file for free, provided you keep this entire
+zip file intact.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: www.doomworld.com/idgames
+
+===========================================================================
+/////////////////////////
+//////   MAPLIST   //////
+/////////////////////////
+===========================================================================
+
+###################################################
+#                                                 #
+# 01 cannonball             Exodus                #
+# 02 Death Egg              Cashews               #
+# 03 Ribbiks                Island of Mystery     #
+# 04 darkreaver             Pure Hate             #
+# 05 cannonball             Fortress of Damnation #
+# 06 Phml                   Trifling              #
+# 07 Kyka                   Simply Dead           #
+# 08 dannebubinga           Tingsryd              #
+# 09 cannonball             Core Annihilation     #
+# 10 cannonball             Total Recall          #
+# 11 Rayzik                 Warborn               #
+# 12 darkreaver             Damnation             #
+# 13 Rayzik                 Unleash the Fire      #
+# 14 Archi                  Damned Legion         #
+# 15 GRB/j4rio/dobugabumaru Doomherolandia        #
+# 16 Phml                   Twobox                #
+# 17 Ribbiks                Electric Wizard       #
+# 18 Bloodite Krypto        Last Cup of Sorrow    #
+# 19 TimeOfDeath            Split Wide Open       #
+# 20 cannonball             True Grit             #
+# 21 Rayzik                 Walk With Me in Hell  #
+# 22 cannonball             Royale Arena          #
+# 23 TimeOfDeath            Castle Lava           #
+# 24 General Rainbow Bacon  Bane's Atrium         #
+# 25 elmle                  Fourtress             #
+# 26 Phml                   Crimson               #
+# 27 ArmouredBlood          Decimal Error         #
+# 28 Phml                   Slaughtenstein        #
+# 29 TimeOfDeath            Degrassi              #
+# 30 Ribbiks                Anathema              #
+# 31 gggmork                sworf                 #
+# 32 TimeOfDeath            Brookhaven Hospital   #
+# 33 Processingcontrol      BoomTown              #
+# 34 ArmouredBlood          Hard Contact          #
+# 35 TimeOfDeath            KSP                   #  
+#                                                 #
+###################################################
+
+===========================================================================
+/////////////////////////
+//////   CREDITS   //////
+/////////////////////////
+===========================================================================
+
+Slaughterfest Founder:
+	- General Rainbow Bacon
+
+Extra Playtesting:
+	- 1ntru
+	- Ancalagon
+	- ArmouredBlood
+	- dannebubinga
+	- Hirogen2
+	- j4rio
+	- jongo
+	- Memfis
+	- Phml
+	- Rayzik
+	- Ribbiks
+	- [WH]-Wilou84
+
+Story:
+	- ProcessingControl
+
+Titlepic / Interpic / Status-Bar:
+	- Grain of Salt
+
+This wad contains textures from:
+cc4-tex
+gothictx
+Oblige
+q1tex
+
+NiGHTMARE
+Espi
+Eriance
+Fredrik Johansson
+Janitor
+DaGGeR
+Ola Bjorling
+Vader
+XDelusion
+Esselfortium
+RottKing
+Nuxius
+Afterglow
+AgentSpork
+RottKing
+Enjay
+Huy Pham
+SargeBaldy
+Tormentor667
+The GothicDM Team
+The Requiem Team
+The Eternal Doom Team
+id Software
+Raven Software
+Rogue Entertainment
+andrewj
+
+* DISCLAIMER *
+This PWAD contains select texture(s) and flat(s) that can originally be
+found in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of
+said flat(s) and texture(s) and also to the rest of the Gothic Crew
+(1997/98). The ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each
+PKZIP archive contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+===========================================================================
+/////////////////////////////////////
+//////   THE STORY SO FAR...   //////
+/////////////////////////////////////
+===========================================================================
+
+During the summer of 2011 an enthusiastic and diverse group of doom
+mappers decided to work together and create a megawad consisting
+entirely of slaughter maps. For six hard months they labored to
+complete the project. These brave level designers spent day after day
+working away, creating sector upon sector and placing monster upon
+monster, in what would become one of the most thoroughly crafted wads
+of all time. Their work paid off; by the end of the year they had
+constructed a masterpiece which would undoubtedly influence all Doom
+wads to come. The project, entitled with the magnificent name
+“Slaughterfest 2011”, stood above the usual heap of doom wads as work
+of art perfect in every conceivable way.
+
+However, the megawad didn't receive the reception that its crafters
+had hoped for. It received no prize at the 2011 Cacowards, a great
+disappointment because, like most mappers, the Slaughterfest 2011
+designers made their wad mostly for the sake of getting one of the
+awards. Most of them then realized that the wad must have been spared
+an award because it was simply too good: Slaughterfest's level of
+quality was so high that putting on the same platform as Cacoward
+winners would be an insult.
+
+Before this issue could be resolved another dilemma emerged: once the
+wad was uploaded to the /idgames archive a group of jealous trolls
+began giving it negative reviews. One went as far as to call it a
+“very worthless ugly megawad”, a statement no sane person would make.
+Others gave it 1/5 ratings, tragically bringing the masterpiece's
+score down to 3/5, heartbreaking to all the determined mappers who
+spent weeks on end making elaborate levels in order to get a 5/5 (as
+well as a Cacoward). On top of all this, the /newstuff review for it
+was one of the worst in the publication's history. The reviewer not
+only refused to classify the wad as the magnum opus which it clearly
+is, but she went as far as to state that it “fails to impress” and
+that most of the maps are “ridiculously unfair”. While it was obvious
+that she was just a troll who probably couldn't even beat E1 on
+ITYTD*, her review was a massive insult to the entire Slaughterfest
+2011 team, because, just like all other mappers, the only reasons
+Slaughterfest 2011's designers made the wad were to get a Cacoward,
+get a 5/5 on the /idgames page, and get a favorable /newstuff review.
+
+Despite these setbacks, the Slaughterfest team regrouped in 2012 to
+begin work on another megawad with another highly original name:
+Slaughterfest 2012. They worked even harder on this one than they had
+on its predecessor, and they gave themselves double the amount of
+time. However, many of the mappers were reluctant to publicly release
+the project, based on the disappointing reception of the first one.
+They worried that the wad was be too perfect that it would be
+impossible for average lowly doomers to appreciate its quality.
+Intense debates occurred within the team over whether the new
+masterpiece should be kept private or not. Some argued that the public
+didn't deserve to lay eyes upon the wad due to how they treated the
+first one. Others argued that not releasing the wad would prevent it
+from receiving enough praise to make the project worthwhile. After
+weeks of bickering a compromise was finally reached: the megawad would
+be released if somebody succeeded in slaughtering all the trolls who
+criticized the first project. But who would undertake such a crazy
+challenge?
+
+YOU will!!!
+
+Your mission is to go through 35 ball-bustlingly difficult maps,
+killing thousands of trolls who dared speak low of the first
+Slaughterfest. You'll travel through a diverse selection of
+environments, including derelict hospitals, sprawling cities, imposing
+castles, and generic abstract zones. You'll face off against hordes of
+angry trolls (who coincidently look just like doom monsters) within
+epic blood-splattered arenas. The chances of survival are low, but if
+you're successful, the Slaughterfest team will be able to get all the
+praise, Cacowards, chicks, fame, cash, power, etc., that they
+deserve!!!
+
+*(no offence to fullmetalvaran)
+
+===========================================================================
+//////////////////////////
+//////   MAP INFO   //////
+//////////////////////////
+===========================================================================
+
+MAP01    - Exodus
+Author   - cannonball/Ribbiks/j4rio
+Music    - "Dark Groove" by Alexander Brandon from Jazz Jackrabbit 2
+Comments - This map I designed specifically really for the first map of
+           this wad. Starting simple but with enough threat, the
+           difficulty increasing until you reach a slaughter climax.
+           I think this map went ok. Special credits to Ribbiks and
+           j4rio for tuning this map up to the current level it is.
+           I went AWOL for a week without being sure of regaining
+           internet access so good job there :)
+
+MAP02    - Cashews
+Author   - Death Egg
+Music    - "Upon the Grave of Guilt" by Falconer
+Comments - A map that took quite a few revisions before it wasn't a pile
+           of shit, and even then took some more adjusting by another
+           member before it was finally actually decent. This was
+           originally meant to be the continuation of what I was
+           planning on doing in Mixed Nuts at the end of Slaughterfest
+           2011, but I realized that map was pretty awful, and so was
+           the map this was becoming, so I revamped the layout into what
+           it eventually became.
+
+MAP03    - Island of Mystery
+Author   - Ribbiks
+Music    - MegamanX4 Web-Spider Stage
+Comments - A green jungle/wood island of monsters! This was based on some
+           ideas I sketched out during lecture one day, and the map was
+           completed pretty much in one sitting.
+
+MAP04    - Pure Hate
+Author   - darkreaver
+Comments - Kind of small and cramped map, but UV-maxing turned out quite
+           OK. Quick and easy.
+
+MAP05    - Fortress of Damnation
+Author   - cannonball
+Music    - "Bergschrund" by James Paddock
+Comments - This was the last map I made for this wad. It's pretty quick and
+           easy with a similar style to map01 if a little more difficult.
+           I liked using the quake textures and this is prevalent
+           throughout my maps here. 
+
+MAP06    - Trifling
+Author   - Phml
+Comments - N/A
+
+MAP07    - Simply Dead
+Author   - Kyka
+Comments - N/A
+
+MAP08    - Tingsryd
+Author   - dannebubinga
+Music    - Some halloween midi. credit goes to no one since it sucks.
+Comments - Tingsryd is a village in the south of Sweden, not far from where
+           I was born. It's known for it's hockey team "Tingsryd Allmänna
+           Idrottsförening" (TAIF) which has crazy redneck fans who once
+           threw a dead cat on the ice after the referee didn't judge in
+           TAIF's favour. They also have "Börjes". A big store where you
+           can buy alot of cheap stuff. It's like wall-mart, but less
+           commercial and just more redneck. They have a well known
+           caféteria that serves coffee and a "räkmacka" for only 20:-
+           (~3$)!! The did however raise the price when we removed the
+           "50öre-coin", so a coffe that used to cost 1,50kr was increased
+           to 2kr (~1,5 cents). The old people who always used to drink
+           coffee at Börjes RAGED! 
+           Welcome to Tingsryd. www.tingsryd.se
+
+MAP09    - Core Annihilation
+Author   - cannonball
+Music    - "Sigma Stage 1" from Mega Man X
+Comments - Fast paced map with plenty of plasma and rockets for the start.
+           I tried to make the map as frenetic as possible, a lot of edits
+           later and hopefully this does the trick.
+
+MAP10    - Total Recall
+Author   - cannonball
+Music    - TNT's Daedalus (map02 music)
+Comments - A remix of GrainOfSalt's maps from Sf2011, short and violent,
+           this is a little less brutal than the GOS maps due to imps
+           replacing hellknights as the main opposition on the floor.
+
+MAP11    - Warborn
+Author   - Rayzik
+Music    - Warborn, Black Dahlia Murder
+Comments - A throwback map with the idea of Plutonia's MAP32.
+
+MAP12    - Damnation
+Author   - darkreaver
+Comments - The beginning areas of this map isnt exactly slaughtermap'ish,
+           but there are some hordes later on. dobugabumaru made some
+           finishing edits to the map, so thanks to him!
+
+MAP13    - Unleash the Fire
+Author   - Rayzik
+Music    - D_e3m8, original doom
+Comments - A hellish romp through a lava tube. Totally original
+
+MAP14    - Damned Legion
+Author   - Archi
+Music    - Cataclysmic Impact by Jimmy91, pl2 map30
+Comments - inspired by phml's map26 from sf11. Done in about 4 days.
+           bugfixes by j4rio and dannebubinga.
+
+MAP15    - Doomherolandia
+Author   - GRB/j4rio/dobugabumaru
+Music    - Gangnam style
+Comments - It's a map.
+
+MAP16    - Twobox
+Author   - Phml
+Comments - N/A
+
+MAP17    - Electric Wizard
+Author   - Ribbiks
+Music    - Chrono Trigger Undersea Palace
+Comments - First slaughter-type map I've ever made. relatively low monster
+           count, and lots of green!
+
+MAP18    - Last Cup of Sorrow
+Author   - Bloodite Krypto
+Comments - N/A
+
+MAP19    - Split Wide Open
+Author   - TimeOfDeath
+Comments - Named after the Cannibal Corpse song. I tried to make a weird
+           ugly 90's style map. It was fun.
+
+MAP20    - True Grit
+Author   - cannonball
+Music    - State of Rage by Maxime Tondreau
+Comments - This was the second map I ever made (serious), this went under
+           a major facelift since it's first incantation, and then j4rio
+           got his claws into it and finally this happened. Hopefully it
+           is a good episode ender.
+
+MAP21    - Walk With Me in Hell
+Author   - Rayzik
+Music    - Walk With Me In Hell, Lamb of God
+Comments - Open map with many monsters. Came to me in a dream
+
+MAP22    - Royale Arena
+Author   - cannonball
+Music    - Fortress of Doom (last Duel) from Lufia 
+Comments - This map was taken from a boom compatible megawad I was making
+           but due to laziness that wad looks unlikely to come to fruition.
+           This map is heavily inspired by Map28 of Hell Revealed and only
+           uses top tier monsters. Add some non-linearity in the mix and
+           there you go. I like this map a lot and uses a lot of intereting
+           architecture (rare for me haha)
+
+MAP23    - Castle Lava
+Author   - TimeOfDeath
+Comments - I started making this for one of GRB's speedmapping sessions,
+           but ended up spending a bit more time on it. The theme was a
+           castle surrounded by lava, duh.
+
+MAP24    - Bane's Atrium
+Author   - General Rainbow Bacon
+Comments - N/A
+
+MAP25    - Fourtress
+Author   - elmle
+Comments - N/A
+
+MAP26    - Crimson
+Author   - Phml
+Comments - N/A
+
+MAP27    - Decimal Error
+Author   - ArmouredBlood
+Comments - N/A
+
+MAP28    - Slaughtenstein
+Author   - Phml
+Comments - N/A
+
+MAP29    - Degrassi
+Author   - TimeOfDeath
+Music    - by Wolf Kraft (Eli Litwin)
+Comments - I started making this a while ago but left it for a while. Then
+           I picked it back up again to submit it to CC4 before the
+           deadline. Then it didn't really fit in with CC4 so I submitted
+           it to SF. The building in the south was a deathmatch map I made
+           for one of the 32in24s and was inspired by the mansion in the
+           game Undying. The area in the south-east part of the map was a
+           separate map I started earlier and then pasted it into degrassi.
+
+MAP30    - Anathema
+Author   - Ribbiks
+Music    - Blut Aus Nord "Epitome 2"
+Comments - Probably about 200 hours or so constructing and playtesting this
+           elaborate beast. The theme is mostly a sort of abstract
+           wood/metal/hell base, with a twinge of gothic thrown in. There
+           are only ~8k monsters on UV so it's not quite as ridiculous as
+           the finale of sf2011, but I was aiming for diversity, a larger
+           number of encounters usually with a couple hundred monsters a
+           piece. The difficulty is very high overall, largest challenge
+           being the sheer magnitude of the map. If anyone manages to max
+           this I anticipate the run will be between 1.5 to 2 hours, a long
+           time to keep up a high level of play :). A little luck doesn't
+           hurt in a few rooms, but with the right strategy there should
+           be more than enough health/ammo/secret-goodies to reliably
+           complete the map. Good Luck! Also a big thanks to j4 for testing
+           nearly every version as it came along, his gameplay suggestions
+           and bug-finding were helpful in balancing and polishing the map.
+
+MAP31    - sworf
+Author   - Sir Gggmorkian Bellend the 3rd
+Music    - Please supply yore own farts and+ burps.
+Comments - This is a map about the lice that have infested my nipples.
+
+MAP32    - Brookhaven Hospital
+Author   - TimeOfDeath
+Comments - This is a remake of the Brookhaven Hospital from the game Silent
+           Hill 2. I had the game playing on my tv while making the map.
+
+MAP33    - Boom Town
+Author   - Eli "ProcessingControl" Cohen
+Music    - Gothic Deathmatch II Map 13. Probably by Mark Klem
+Comments - This is not only my first slaughtermap, but also a 2 hour
+           speedmap. As you'd expect, it's nothing groundbreaking or
+           particularly memorable, but it at least provides a few minutes
+           of decent action. I was originally planning to improve the
+           visuals, but I ran out of time, leaving the map a big ugly box.
+           Thanks to Phml for improving the gameplay.
+
+MAP34    - Hard Contact
+Author   - ArmouredBlood
+Comments - N/A
+
+MAP35    - KSP
+Author   - TimeOfDeath
+Music    - tinytod by me
+Comments - The automap kinda looks like a Kite or a Snail or a Plane to me.
+
+===========================================================================
+/////////////////////////////
+//////   AUTHOR INFO   //////
+/////////////////////////////
+===========================================================================
+
+Author     - Archi
+Comments   - This was a fun project, hope that there will be more like this
+
+Author     - Chris Shepherd
+Alias      - Armouredblood
+Email      - BTitangamer@gmail.com
+Other Wads - NGMVMT1, Shai'tan's luck
+Comments   - I made these maps with my design philosophy of "what's
+             something cool to play? I want to make that! And that! And
+             something here ... and there ... and I'm tired of it. Someone
+             else might like it now."
+
+Author     - Bloodite Krypto
+Alias      - Krypto/Sindrom
+Comments   - Bit of a masochist :>
+
+Author     - Matt Powell
+Alias      - Cannonball
+Email      - cannonballmp@yahoo.co.uk
+Other wads - cbspeed.wad, cbpandemonium.wad, sparta.wad,
+             mayhem2012.wad (maps10,11)
+Comments   - I don't even play slaughtermaps, so why did I do this?? No
+             idea really, just seemed fun to do.
+
+Author     - Daniel Jakobsson
+Alias      - dannebubinga
+Email      - daniel.tomhet(a)gmail.com
+Other wads - combat shock, combat shock 2 and parts of sf2011.
+Comments   - fuck over-hyped generic tech-bases
+
+Author     - Christian Lian
+Alias      - darkreaver
+Other Wads - ahatred.wad, boh666.wad, map17 in pc_cp.wad, map29 in
+             cchest4.wad, map15 in dmp2012.wad
+
+Author     - Death Egg
+Email      - midwestgenius@gmail.com
+Other Wads - Hadephobia MAP21 and MAP31, Monochrome Mapping Project MAP21
+
+Author     - dobugabumaru
+Email      - edemaomega@yahoo.com
+Other Wads - Pesha.wad
+Comments   - Pretty cool mapset with a lot of thought put into it.
+
+Author     - Sebastian Graham
+Alias      - General Rainbow Bacon
+Email      - sgraham924@gmail.com
+Other wads - Various in community projects
+Comments   - "The supreme art of war is to subdue the enemy without
+             fighting" - Sun Tzu
+
+Author     - Grain of Salt
+Comments   - "Having lost, I have no right to say anything. Go face your
+             next challenge."
+
+Author     - gggmork (Mr. Fartpoop)
+Alias      - gggmarshmellowmork
+Email      - billgates@microsoft.com
+Other wads - GGG's Super Monster Snugglethon & Big-Balled Imps 2
+Comments   - Hey guys! Oh, big gulps huh? All right!... Welp, see ya later!
+
+Author     - j4rio
+Comments   - I trolled aspirating mappers to alter their terrible maps to
+             even more terrible maps and thus be responsible for existence
+             of the ultimate terrible megawad which stands above all
+             terrible megawads by miles. I successed spectacularly.
+
+Author     - Eli Cohen
+Alias      - ProcessingControl
+Email      - elic90@gmail.com
+Other wads - The Central Core (It sucks though), Cave-Room, Castle of Fear,
+             DoomHero85's Speedmap Session 001 (Map02), 32in24-11: Occupy
+             Doomworld (Map37), Doom The Way id Did (E3M8), Urban Fire,
+             Community Chest 4 (Map14), 32in24-12: IRON MAPPER (Map26),
+             Interception (Map17, Map28, & Map31)
+Comments   - Doom is cool.
+
+Author     - Blake Collins
+Alias      - Rayzik
+Email      - blakecollins1337@yahoo.com
+Comments   - I make maps. Sometimes they turn out good.
+
+Author     - Ribbiks
+Email      - ribbiks@gmail.com
+Other wads - Stardate 20X6
+
+Author     - TimeOfDeath
+Alias      - eternal slumber, Anigav, Croysent
+Email      - thelastbreathofthedying@yahoo.com
+Other wads - dib28a map01 03 04 05 09 22 23 26 27 28, 2sector map07,
+             rjsloth12, masterjumps map06, smedley, squane, chips19,
+             flanagan, dekutree, loink, tom19, sloth0409, uuhhtod, slut,
+             bump, av20mem, em116, nostril, reality3, ninadobrev, pppp,
+             64lemons, nh1, SF2011 map27 28 29, 32in24-10 map30,
+             DMP2012 map39, expiredlicense, 32in24-12 map37, tinytod,
+             merkin, bustagut
+Comments   - Yay another Slaughterfest. Also check out SF2013, which is
+             probably already released by the time you read this.

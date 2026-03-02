@@ -1,0 +1,678 @@
+// Doomkid's Deathmatch Series
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DKDS01 "dk_dm_13 map01"
+{
+	next = "DKDS02"
+	secretnext = "DKDS02"
+	sky1 = "DKDS0049"
+	music = "D_DKDS01"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS02 "dk_dm_13 map02"
+{
+	next = "DKDS03"
+	secretnext = "DKDS03"
+	sky1 = "DKDS0049"
+	music = "D_DKDS02"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS03 "dk_dm_13 map03"
+{
+	next = "DKDS04"
+	secretnext = "DKDS04"
+	sky1 = "DKDS0049"
+	music = "D_DKDS03"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS04 "dk_dm_13 map04"
+{
+	next = "DKDS05"
+	secretnext = "DKDS05"
+	sky1 = "DKDS0049"
+	music = "D_DKDS04"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS05 "dk_dm_13 map05"
+{
+	next = "DKDS06"
+	secretnext = "DKDS06"
+	sky1 = "DKDS0049"
+	music = "D_DKDS05"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS06 "dk_dm_13 map06"
+{
+	next = "DKDS07"
+	secretnext = "DKDS07"
+	sky1 = "DKDS0049"
+	music = "D_DKDS06"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS07 "dk_dm_13 map07"
+{
+	next = "DKDS08"
+	secretnext = "DKDS08"
+	sky1 = "DKDS0049"
+	music = "D_DKDS07"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS08 "dk_dm_13 map08"
+{
+	next = "DKDS09"
+	secretnext = "DKDS09"
+	sky1 = "DKDS0049"
+	music = "D_DKDS08"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS09 "dk_dm_13 map09"
+{
+	next = "DKDS10"
+	secretnext = "DKDS10"
+	sky1 = "DKDS0049"
+	music = "D_DKDS09"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS10 "dk_dm_13 map10"
+{
+	next = "DKDS11"
+	secretnext = "DKDS11"
+	sky1 = "DKDS0049"
+	music = "D_DKDS10"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS11 "dk_dm_13 map11"
+{
+	next = "DKDS12"
+	secretnext = "DKDS12"
+	sky1 = "DKDS0049"
+	music = "D_DKDS11"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS12 "dk_dm_13 map12"
+{
+	next = "DKDS13"
+	secretnext = "DKDS13"
+	sky1 = "DKDS0215"
+	music = "D_DKDS12"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS13 "dk_dm_13 map13"
+{
+	next = "DKDS14"
+	secretnext = "DKDS14"
+	sky1 = "DKDS0215"
+	music = "D_DKDS13"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS14 "dk_dm_13 map14"
+{
+	next = "DKDS15"
+	secretnext = "DKDS15"
+	sky1 = "DKDS0215"
+	music = "D_DKDS14"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS15 "dk_dm_13 map15"
+{
+	next = "DKDS16"
+	secretnext = "DKDS16"
+	sky1 = "DKDS0215"
+	music = "D_DKDS15"
+	intermusic = "D_DKDSI1"
+	ExitPic = "DKDSINT"
+	EnterPic = "DKDSINT"
+}
+
+map DKDS16 "dk_dm_2 map01"
+{
+	next = "DKDS17"
+	secretnext = "DKDS17"
+	sky1 = "DKDS0215"
+	music = "D_DKDS16"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS17 "dk_dm_2 map02"
+{
+	next = "DKDS18"
+	secretnext = "DKDS18"
+	sky1 = "DKDS0215"
+	music = "D_DKDS17"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS18 "dk_dm_2 map03"
+{
+	next = "DKDS19"
+	secretnext = "DKDS19"
+	sky1 = "DKDS0215"
+	music = "D_DKDS18"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS19 "dk_dm_2 map04"
+{
+	next = "DKDS20"
+	secretnext = "DKDS20"
+	sky1 = "DKDS0215"
+	music = "D_DKDS19"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS20 "dk_dm_2 map05"
+{
+	next = "DKDS21"
+	secretnext = "DKDS21"
+	sky1 = "DKDS0215"
+	music = "D_DKDS20"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS21 "dk_dm_2 map06"
+{
+	next = "DKDS22"
+	secretnext = "DKDS22"
+	sky1 = "DKDS0215"
+	music = "D_DKDS21"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS22 "dk_dm_2 map07"
+{
+	next = "DKDS23"
+	secretnext = "DKDS23"
+	sky1 = "DKDS0215"
+	music = "D_DKDS22"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS23 "dk_dm_2 map08"
+{
+	next = "DKDS24"
+	secretnext = "DKDS24"
+	sky1 = "DKDS0215"
+	music = "D_DKDS23"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS24 "dk_dm_2 map09"
+{
+	next = "DKDS25"
+	secretnext = "DKDS25"
+	sky1 = "DKDS0215"
+	music = "D_DKDS24"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS25 "dk_dm_2 map10"
+{
+	next = "DKDS26"
+	secretnext = "DKDS26"
+	sky1 = "DKDS0215"
+	music = "D_DKDS25"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS26 "dk_dm_2 map11"
+{
+	next = "DKDS27"
+	secretnext = "DKDS27"
+	sky1 = "DKDS0215"
+	music = "D_DKDS26"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS27 "dk_dm_2 map12"
+{
+	next = "DKDS28"
+	secretnext = "DKDS28"
+	sky1 = "DKDS0050"
+	music = "D_DKDS27"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS28 "dk_dm_2 map13"
+{
+	next = "DKDS29"
+	secretnext = "DKDS29"
+	sky1 = "DKDS0050"
+	music = "D_DKDS28"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS29 "dk_dm_2 map14"
+{
+	next = "DKDS30"
+	secretnext = "DKDS30"
+	sky1 = "DKDS0050"
+	music = "D_DKDS29"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS30 "dk_dm_2 map15"
+{
+	next = "DKDS31"
+	secretnext = "DKDS31"
+	sky1 = "DKDS0050"
+	music = "D_DKDS30"
+	intermusic = "D_DKDSI2"
+	ExitPic = "DKDSINT2"
+	EnterPic = "DKDSINT2"
+}
+
+map DKDS31 "dk_dm_3f map01"
+{
+	next = "DKDS32"
+	secretnext = "DKDS32"
+	sky1 = "DKDS0048"
+	music = "D_DKDS31"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS32 "dk_dm_3f map02"
+{
+	next = "DKDS33"
+	secretnext = "DKDS33"
+	sky1 = "DKDS0048"
+	music = "D_DKDS32"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS33 "dk_dm_3f map03"
+{
+	next = "DKDS34"
+	secretnext = "DKDS34"
+	sky1 = "DKDS0048"
+	music = "D_DKDS33"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS34 "dk_dm_3f map04"
+{
+	next = "DKDS35"
+	secretnext = "DKDS35"
+	sky1 = "DKDS0048"
+	music = "D_DKDS34"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS35 "dk_dm_3f map05"
+{
+	next = "DKDS36"
+	secretnext = "DKDS36"
+	sky1 = "DKDS0048"
+	music = "D_DKDS35"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS36 "dk_dm_3f map06"
+{
+	next = "DKDS37"
+	secretnext = "DKDS37"
+	sky1 = "DKDS0048"
+	music = "D_DKDS36"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS37 "dk_dm_3f map07"
+{
+	next = "DKDS38"
+	secretnext = "DKDS38"
+	sky1 = "DKDS0048"
+	music = "D_DKDS37"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS38 "dk_dm_3f map08"
+{
+	next = "DKDS39"
+	secretnext = "DKDS39"
+	sky1 = "DKDS0048"
+	music = "D_DKDS38"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS39 "dk_dm_3f map09"
+{
+	next = "DKDS40"
+	secretnext = "DKDS40"
+	sky1 = "DKDS0048"
+	music = "D_DKDS39"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS40 "dk_dm_3f map10"
+{
+	next = "DKDS41"
+	secretnext = "DKDS41"
+	sky1 = "DKDS0048"
+	music = "D_DKDS40"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS41 "dk_dm_3f map11"
+{
+	next = "DKDS42"
+	secretnext = "DKDS42"
+	sky1 = "DKDS0048"
+	music = "D_DKDS41"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS42 "dk_dm_3f map12"
+{
+	next = "DKDS43"
+	secretnext = "DKDS43"
+	sky1 = "DKDS0048"
+	music = "D_DKDS42"
+	intermusic = "D_DKDSI3"
+	ExitPic = "DKDSINT3"
+	EnterPic = "DKDSINT3"
+}
+
+map DKDS43 "dk_dm_4 map01"
+{
+	next = "DKDS44"
+	secretnext = "DKDS44"
+	sky1 = "DKDS0216"
+	music = "D_DKDS43"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS44 "dk_dm_4 map02"
+{
+	next = "DKDS45"
+	secretnext = "DKDS45"
+	sky1 = "DKDS0216"
+	music = "D_DKDS44"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS45 "dk_dm_4 map03"
+{
+	next = "DKDS46"
+	secretnext = "DKDS46"
+	sky1 = "DKDS0216"
+	music = "D_DKDS45"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS46 "dk_dm_4 map04"
+{
+	next = "DKDS47"
+	secretnext = "DKDS47"
+	sky1 = "DKDS0216"
+	music = "D_DKDS46"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS47 "dk_dm_4 map05"
+{
+	next = "DKDS48"
+	secretnext = "DKDS48"
+	sky1 = "DKDS0216"
+	music = "D_DKDS47"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS48 "dk_dm_4 map06"
+{
+	next = "DKDS49"
+	secretnext = "DKDS49"
+	sky1 = "DKDS0216"
+	music = "D_DKDS48"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS49 "dk_dm_4 map07"
+{
+	next = "DKDS50"
+	secretnext = "DKDS50"
+	sky1 = "DKDS0216"
+	music = "D_DKDS49"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS50 "dk_dm_4 map08"
+{
+	next = "DKDS51"
+	secretnext = "DKDS51"
+	sky1 = "DKDS0216"
+	music = "D_DKDS50"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS51 "dk_dm_4 map09"
+{
+	next = "DKDS52"
+	secretnext = "DKDS52"
+	sky1 = "DKDS0216"
+	music = "D_DKDS51"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS52 "dk_dm_4 map10"
+{
+	next = "DKDS53"
+	secretnext = "DKDS53"
+	sky1 = "DKDS0216"
+	music = "D_DKDS52"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS53 "dk_dm_4 map11"
+{
+	next = "DKDS54"
+	secretnext = "DKDS54"
+	sky1 = "DKDS0216"
+	music = "D_DKDS53"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS54 "dk_dm_4 map12"
+{
+	next = "DKDS55"
+	secretnext = "DKDS55"
+	sky1 = "DKDS0216"
+	music = "D_DKDS54"
+	intermusic = "D_DKDSI4"
+	ExitPic = "DKDSINT4"
+	EnterPic = "DKDSINT4"
+}
+
+map DKDS55 "kid_duel map01"
+{
+	next = "DKDS56"
+	secretnext = "DKDS56"
+	sky1 = "DKDS0216"
+	music = "D_DKDS55"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS56 "kid_duel map02"
+{
+	next = "DKDS57"
+	secretnext = "DKDS57"
+	sky1 = "DKDS0216"
+	music = "D_DKDS56"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS57 "kid_duel map03"
+{
+	next = "DKDS58"
+	secretnext = "DKDS58"
+	sky1 = "DKDS0216"
+	music = "D_DKDS57"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS58 "kid_duel map04"
+{
+	next = "DKDS59"
+	secretnext = "DKDS59"
+	sky1 = "DKDS0216"
+	music = "D_DKDS58"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS59 "kid_duel map05"
+{
+	next = "DKDS60"
+	secretnext = "DKDS60"
+	sky1 = "DKDS0216"
+	music = "D_DKDS59"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS60 "kid_duel map06"
+{
+	next = "DKDS61"
+	secretnext = "DKDS61"
+	sky1 = "DKDS0216"
+	music = "D_DKDS60"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}
+
+map DKDS61 "kid_duel map07"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DKDS0216"
+	music = "D_DKDS61"
+	intermusic = "D_DKDSI5"
+	ExitPic = "DKDSINT5"
+	EnterPic = "DKDSINT5"
+}

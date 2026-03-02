@@ -1,0 +1,247 @@
+name: Lexicon Release Pipeline
+
+on:
+  push:
+    tags:
+      - 'v*'   # Triggers on any tag like v1.0.0, v1.2.3-beta, etc.
+
+jobs:
+  # -------------------------------------------------------
+  # Gate: Only allow pipeline to run on master or dev
+  # -------------------------------------------------------
+  check-branch:
+    runs-on: ubuntu-latest
+    outputs:
+      allowed: ${{ steps.gate.outputs.allowed }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check branch is master or dev
+        id: gate
+        run: |
+          BRANCH=$(git branch -r --contains "${{ github.ref }}" \
+            | grep -v HEAD \
+            | sed 's|origin/||' \
+            | tr -d ' ' \
+            | head -n1)
+
+          echo "Branch detected: $BRANCH"
+
+          if [ "$BRANCH" = "master" ] || [ "$BRANCH" = "dev" ]; then
+            echo "✅ Branch '$BRANCH' is allowed."
+            echo "allowed=true" >> $GITHUB_OUTPUT
+          else
+            echo "🚫 Branch '$BRANCH' is not master or dev. Skipping pipeline."
+            echo "allowed=false" >> $GITHUB_OUTPUT
+          fi
+
+  build-and-release:
+    runs-on: ubuntu-latest
+    needs: check-branch
+    if: needs.check-branch.outputs.allowed == 'true'
+
+    steps:
+      # -------------------------------------------------------
+      # 1. Checkout full history so we can compare tags
+      # -------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # Full history needed for tag comparison
+
+      # -------------------------------------------------------
+      # 2. Determine release type from branch
+      # -------------------------------------------------------
+      - name: Determine release type
+        id: release_type
+        run: |
+          # Get the branch this tag was pushed from
+          BRANCH=$(git branch -r --contains "${{ github.ref }}" \
+            | grep -v HEAD \
+            | sed 's|origin/||' \
+            | tr -d ' ' \
+            | head -n1)
+
+          echo "Branch detected: $BRANCH"
+
+          if [ "$BRANCH" = "master" ]; then
+            echo "type=release"    >> $GITHUB_OUTPUT
+            echo "prerelease=false" >> $GITHUB_OUTPUT
+            echo "upload_path=${{ secrets.SERVER_RELEASE_PATH }}" >> $GITHUB_OUTPUT
+          elif [ "$BRANCH" = "dev" ]; then
+            echo "type=beta"       >> $GITHUB_OUTPUT
+            echo "prerelease=true" >> $GITHUB_OUTPUT
+            echo "upload_path=${{ secrets.SERVER_BETA_PATH }}"    >> $GITHUB_OUTPUT
+          fi
+
+      # -------------------------------------------------------
+      # 3. Find the previous tag to diff against
+      # -------------------------------------------------------
+      - name: Get previous tag
+        id: prev_tag
+        run: |
+          CURRENT_TAG="${{ github.ref_name }}"
+
+          # Get the tag before the current one (same branch lineage)
+          PREV_TAG=$(git tag --sort=-creatordate \
+            | grep -v "^${CURRENT_TAG}$" \
+            | head -n1)
+
+          if [ -z "$PREV_TAG" ]; then
+            echo "No previous tag found — treating all folders as changed."
+            echo "prev_tag=" >> $GITHUB_OUTPUT
+          else
+            echo "Previous tag: $PREV_TAG"
+            echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
+          fi
+
+      # -------------------------------------------------------
+      # 4. Detect which folders have changes since last tag
+      # -------------------------------------------------------
+      - name: Detect changed folders
+        id: changes
+        run: |
+          PREV_TAG="${{ steps.prev_tag.outputs.prev_tag }}"
+          CURRENT_TAG="${{ github.ref_name }}"
+
+          # Map: folder name -> compile flag -> output pk3 name
+          declare -A FOLDER_FLAG
+          FOLDER_FLAG["core"]="--core"
+          FOLDER_FLAG["lexicon-base"]="--base"
+          FOLDER_FLAG["lexicon-slaughter"]="--slaughter"
+          FOLDER_FLAG["lexicon-ultdoom"]="--ultimate"
+          FOLDER_FLAG["lexicon-dm"]="--dm"
+          FOLDER_FLAG["lexicon-ctf"]="--ctf"
+
+          declare -A FOLDER_PK3
+          FOLDER_PK3["core"]="lexicon"
+          FOLDER_PK3["lexicon-base"]="lexicon-base"
+          FOLDER_PK3["lexicon-slaughter"]="lexicon-slaughter"
+          FOLDER_PK3["lexicon-ultdoom"]="lexicon-ultdoom"
+          FOLDER_PK3["lexicon-dm"]="lexicon-dm"
+          FOLDER_PK3["lexicon-ctf"]="lexicon-ctf"
+
+          FOLDERS=("core" "lexicon-base" "lexicon-slaughter" "lexicon-ultdoom" "lexicon-dm" "lexicon-ctf")
+
+          CHANGED_FLAGS=""
+          CHANGED_FOLDERS=()
+          ALL_CHANGED=true
+
+          for FOLDER in "${FOLDERS[@]}"; do
+            if [ -z "$PREV_TAG" ]; then
+              # No previous tag — consider everything changed
+              HAS_CHANGES=true
+            else
+              DIFF=$(git diff --name-only "${PREV_TAG}".."${CURRENT_TAG}" -- "$FOLDER/")
+              if [ -n "$DIFF" ]; then
+                HAS_CHANGES=true
+              else
+                HAS_CHANGES=false
+                ALL_CHANGED=false
+              fi
+            fi
+
+            if [ "$HAS_CHANGES" = true ]; then
+              echo "✅ Changed: $FOLDER"
+              CHANGED_FLAGS="$CHANGED_FLAGS ${FOLDER_FLAG[$FOLDER]}"
+              CHANGED_FOLDERS+=("$FOLDER")
+            else
+              echo "⏭️  No changes: $FOLDER"
+            fi
+          done
+
+          if [ ${#CHANGED_FOLDERS[@]} -eq 0 ]; then
+            echo "::error::No folders have changed since the last tag. Aborting."
+            exit 1
+          fi
+
+          # If all 6 folders changed, use --all for efficiency
+          if [ "$ALL_CHANGED" = true ] || [ ${#CHANGED_FOLDERS[@]} -eq 6 ]; then
+            echo "All folders changed — using --all flag."
+            echo "compile_flags=--all" >> $GITHUB_OUTPUT
+          else
+            echo "compile_flags=$CHANGED_FLAGS" >> $GITHUB_OUTPUT
+          fi
+
+          # Save changed folders and their pk3 names as JSON for later steps
+          PK3_LIST=""
+          for FOLDER in "${CHANGED_FOLDERS[@]}"; do
+            PK3_LIST="$PK3_LIST ${FOLDER_PK3[$FOLDER]}.pk3"
+          done
+
+          echo "changed_pk3s=$PK3_LIST"  >> $GITHUB_OUTPUT
+          echo "any_changes=true"        >> $GITHUB_OUTPUT
+
+      # -------------------------------------------------------
+      # 5. Run Compile.sh for changed folders
+      # -------------------------------------------------------
+      - name: Compile changed packs
+        run: |
+          chmod +x ./Compile.sh
+          echo "Running: ./Compile.sh ${{ steps.changes.outputs.compile_flags }}"
+          ./Compile.sh ${{ steps.changes.outputs.compile_flags }}
+
+      # -------------------------------------------------------
+      # 6. Rename pk3 files to include version tag
+      # -------------------------------------------------------
+      - name: Rename pk3 files with version
+        id: renamed_files
+        run: |
+          VERSION="${{ github.ref_name }}"   # e.g. v1.2.0
+          UPLOAD_DIR="./release-files"
+          mkdir -p "$UPLOAD_DIR"
+
+          FILE_LIST=""
+          for PK3 in ${{ steps.changes.outputs.changed_pk3s }}; do
+            BASE="${PK3%.pk3}"                         # e.g. lexicon-base
+            NEW_NAME="${BASE}-${VERSION}.pk3"           # e.g. lexicon-base-v1.2.0.pk3
+
+            if [ -f "$PK3" ]; then
+              mv "$PK3" "$UPLOAD_DIR/$NEW_NAME"
+              echo "Renamed: $PK3 → $UPLOAD_DIR/$NEW_NAME"
+              FILE_LIST="$FILE_LIST $UPLOAD_DIR/$NEW_NAME"
+            else
+              echo "::error::Expected output file not found: $PK3"
+              exit 1
+            fi
+          done
+
+          echo "file_list=$FILE_LIST" >> $GITHUB_OUTPUT
+
+      # -------------------------------------------------------
+      # 7. Create GitHub Release
+      # -------------------------------------------------------
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ steps.release_type.outputs.type == 'beta' && format('Beta {0}', github.ref_name) || format('Release {0}', github.ref_name) }}
+          prerelease: ${{ steps.release_type.outputs.prerelease }}
+          files: ./release-files/*.pk3
+          body: |
+            ## Lexicon ${{ github.ref_name }} ${{ steps.release_type.outputs.type == 'beta' && '(Beta)' || '' }}
+
+            **Changed packs in this release:**
+            ${{ steps.changes.outputs.changed_pk3s }}
+
+            Built automatically from tag `${{ github.ref_name }}` on branch detected at tag time.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # -------------------------------------------------------
+      # 8. Upload files to server via SSH/SCP
+      # -------------------------------------------------------
+      - name: Upload to server via SCP
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host:     ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key:      ${{ secrets.SERVER_SSH_KEY }}
+          port:     ${{ secrets.SERVER_PORT || 22 }}
+          source:   "./release-files/*.pk3"
+          target:   ${{ steps.release_type.outputs.upload_path }}
+          strip_components: 2   # removes ./release-files/ prefix on server

@@ -1,413 +1,186 @@
 #!/bin/bash
-# bash turns my brains into mush x_x
+# Lexicon compile script thingy - Linux version
 
-# names used when creating the output pk3 files.
-CoreFileName="lexicon"
-BaseFileName="lexicon-base"
-SlaughtFileName="lexicon-slaughter"
-UltDoomFileName="lexicon-ultdoom"
-DmFileName="lexicon-dm"
-CTFFileName="lexicon-ctf"
+# [Tri] bash turns my brains into mush x_x
 
-# ANSI color codes via tput
+# output pk3 filenames
+CORE_PK3="lexicon"
+BASE_PK3="lexicon-base"
+SLAUGHTER_PK3="lexicon-slaughter"
+ULTDOOM_PK3="lexicon-ultdoom"
+DM_PK3="lexicon-dm"
+CTF_PK3="lexicon-ctf"
+
+# project root (the directory this script lives in)
+ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+
+# ANSI colors
 RED=$(tput setaf 1)
 GREEN=$(tput setaf 2)
 YELLOW=$(tput setaf 3)
 BLUE=$(tput setaf 4)
 MAGENTA=$(tput setaf 5)
 CYAN=$(tput setaf 6)
-WHITE=$(tput setaf 7)
 BOLD=$(tput bold)
 UNDERLINE=$(tput smul)
 RESET=$(tput sgr0)
 
-# summary text that will be shown each time the menu redraws
+# accumulated build results shown at the top of the menu after each run
 last_summary=""
 
-# helper to render a duration (seconds) in a human-friendly
-# HhMmSs format.  Used by the compile_* functions when writing the
-# summary string so the output is easier to read than raw seconds.
+# format a duration in seconds as a readable HhMmSs string
 format_duration() {
     local sec=$1
-    if [ $sec -lt 60 ]; then
-        echo "${sec}s"
+    if   [ $sec -lt 60 ];   then echo "${sec}s"
+    elif [ $sec -lt 3600 ]; then printf "%dm%02ds" $((sec/60)) $((sec%60))
     else
-        local m=$((sec/60))
-        local s=$((sec%60))
-        if [ $m -lt 60 ]; then
-            printf "%dm%02ds" $m $s
-        else
-            local h=$((m/60))
-            m=$((m%60))
-            printf "%dh%02dm%02ds" $h $m $s
-        fi
+        local h=$((sec/3600)) m=$(( (sec%3600)/60 )) s=$((sec%60))
+        printf "%dh%02dm%02ds" $h $m $s
     fi
 }
 
-# function to install 7zip based on the distribution
+# install 7zip via the system package manager
 install_7zip() {
-    if [ -f /etc/debian_version ]; then
-        sudo apt-get update && sudo apt-get install -y p7zip-full
-    elif [ -f /etc/redhat-release ]; then
-        if grep -q "CentOS" /etc/redhat-release; then
-            sudo yum install -y epel-release
-            sudo yum install -y p7zip
-        elif grep -q "Fedora" /etc/redhat-release; then
-            sudo dnf install -y p7zip
+    if   [ -f /etc/debian_version ];  then sudo apt-get update && sudo apt-get install -y p7zip-full
+    elif [ -f /etc/arch-release ];    then sudo pacman -Sy --noconfirm p7zip
+    elif [ -f /etc/redhat-release ];  then
+        if   grep -q "Fedora" /etc/redhat-release; then sudo dnf install -y p7zip
+        elif grep -q "CentOS" /etc/redhat-release; then sudo yum install -y epel-release && sudo yum install -y p7zip
         fi
-    elif [ -f /etc/arch-release ]; then
-        sudo pacman -Sy --noconfirm p7zip
     else
-        echo "${RED}Unsupported Linux distribution. Please install 7zip manually.${RESET}" >&2
+        echo "${RED}Unsupported distro. Please install 7zip manually.${RESET}" >&2
         exit 1
     fi
 }
 
-# simple wrapper that verifies 7za is present and installs it if not
+# verify 7za is available; if not, give the user 2 minutes to cancel then install
 ensure_7zip() {
-    echo "Checking for 7zip installation..."
-    if ! command -v 7za &> /dev/null; then
-        echo "${YELLOW}7zip is not installed. Attempting to install..."
-        sleep 120 # give user a moment to cancel or read
-        install_7zip
-        if ! command -v 7za &> /dev/null; then
-            echo "${RED}7zip installation failed. Please install it manually." >&2
-            exit 1
-        fi
+    if command -v 7za &>/dev/null; then return; fi
+    echo "${YELLOW}7zip not found. Installing in 120s -- press Ctrl-C to cancel.${RESET}"
+    sleep 120
+    install_7zip
+    if ! command -v 7za &>/dev/null; then
+        echo "${RED}7zip install failed. Please install it manually.${RESET}" >&2
+        exit 1
     fi
 }
 
-# function to compile the Lexicon Core File
-compile_core() {
-    # record the start time and assume success (status=0)
-    local start=$(date +%s)
-    local status=0
+# compile a single pak.
+#   $1 label     - display name used in log output   (e.g. "Core")
+#   $2 pak_dir   - path to pk3 source tree           (e.g. "core/pk3")
+#   $3 acs_src   - ACS source file, relative to ROOT_DIR
+#   $4 acs_out   - compiled .o output, relative to ROOT_DIR
+#   $5 out_name  - output pk3 base name              (e.g. "lexicon")
+#
+compile_pak() {
+    local label="$1" pak_dir="$2" acs_src="$3" acs_out="$4" out_name="$5"
+    local start status=0
 
-    # step 1: compile the ACS source using the custom bcc compiler
-    echo "Step 1: [Lexicon Core] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs core/pk3/acs/Lexicon.acs core/pk3/ACS/Lexicon.o # Note: There's two acs folders here but for some reason its required...
-    # check return code; if nonzero we mark failure but continue to allow cleanup
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon Core ACS compilation failed.${RESET}"
-        status=1
-    fi
-    # remove the temporary error file if created
-    if [ -f core/pk3/acs/acs.err ]; then
-        rm core/pk3/acs/acs.err
-    fi
+    start=$(date +%s)
+    cd "$ROOT_DIR" || exit 1
 
-    # step 2: create zip archive of the compiled files
-    echo "Step 2: [Lexicon Core] Zip into PK3"
-    cd core/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${CoreFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon Core.${RESET}"
-        status=1
-    fi
+    # step 1: compile ACS
+    echo "Step 1: [$label] Compile ACS"
+    compiler/bcc -acc-stats -acc-err-file -x bcs "$acs_src" "$acs_out"
+    [ $? -ne 0 ] && { echo "${RED}[$label] ACS compile failed.${RESET}"; status=1; }
+    rm -f "$(dirname "$acs_src")/acs.err"
 
-    # step 3: move the new archive into place
-    echo "Step 3: [Lexicon Core] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${CoreFileName}.pk3
-    mv ${CoreFileName}-New.pk3 ${CoreFileName}.pk3
-    echo "${GREEN}The Compile process for the Lexicon Core file has been complete...${RESET}"
+    # step 2: zip everything into a temporary pk3
+    echo "Step 2: [$label] Zip into PK3"
+    cd "$ROOT_DIR/$pak_dir" || { echo "${RED}Cannot cd to $pak_dir${RESET}" >&2; status=1; }
+    7za a -tzip -r -ssw -mx=9 "$ROOT_DIR/${out_name}-New.pk3" .
+    [ $? -ne 0 ] && { echo "${RED}[$label] 7zip failed.${RESET}"; status=1; }
 
-    # record duration and add an entry to the summary string
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
+    # step 3: replace the old pk3 with the new one
+    echo "Step 3: [$label] Replace PK3"
+    cd "$ROOT_DIR" || exit 1
+    rm -f "${out_name}.pk3"
+    mv "${out_name}-New.pk3" "${out_name}.pk3"
+    echo "${GREEN}[$label] Done.${RESET}"
+
+    local dur
+    dur=$(format_duration $(( $(date +%s) - start )))
     if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[Core] success (${durfmt})${RESET}\n"
+        last_summary+="${GREEN}[$label] success (${dur})${RESET}\n"
     else
-        last_summary+="${RED}[Core] FAILURE (${durfmt})${RESET}\n"
+        last_summary+="${RED}[$label] FAILURE (${dur})${RESET}\n"
     fi
 }
 
-# function to compile the main mapset collection
-compile_basepak() {
-    # these are all basically the same steps as compile_core 
-    local start=$(date +%s)
-    local status=0
+# per-pak wrappers
+compile_core()      { compile_pak "Core"          "core/pk3"              "core/pk3/acs/Lexicon.acs"              "core/pk3/acs/Lexicon.o"               "$CORE_PK3";     }
+compile_basepak()   { compile_pak "Base"           "lexicon-base/pk3"      "lexicon-base/pk3/acs/LEXBASE.acs"      "lexicon-base/pk3/acs/LEXBASE.o"        "$BASE_PK3";     }
+compile_slaughter() { compile_pak "Slaughter"      "lexicon-slaughter/pk3" "lexicon-slaughter/pk3/acs/LEXSLGT.acs" "lexicon-slaughter/pk3/acs/LEXSLGT.o"   "$SLAUGHTER_PK3"; }
+compile_ultdoom()   { compile_pak "Ultimate Doom"  "lexicon-ultdoom/pk3"   "lexicon-ultdoom/pk3/acs/LEXULT.acs"    "lexicon-ultdoom/pk3/acs/lexult.o"      "$ULTDOOM_PK3";  }
+compile_dm()        { compile_pak "Deathmatch"     "lexicon-dm/pk3"        "lexicon-dm/pk3/acs/LEXDTHM.acs"        "lexicon-dm/pk3/acs/LEXDTHM.o"          "$DM_PK3";       }
+compile_ctf()       { compile_pak "CTF"            "lexicon-ctf/pk3"       "lexicon-ctf/pk3/acs/LEXCTF.acs"        "lexicon-ctf/pk3/acs/LEXCTF.o"          "$CTF_PK3";      }
 
-    echo "Step 1: [Lexicon Base] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs lexicon-base/pk3/acs/LEXBASE.acs lexicon-base/pk3/acs/LEXBASE.o # Note: Only the one acs folder now
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon Base ACS compilation failed.${RESET}"
-        status=1
-    fi
-    if [ -f lexicon-base/pk3/acs/acs.err ]; then
-        rm lexicon-base/pk3/acs/acs.err
-    fi
-
-    echo "Step 2: [Lexicon Base] Zip into PK3"
-    cd lexicon-base/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${BaseFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon Base.${RESET}"
-        status=1
-    fi
-
-    echo "Step 3: [Lexicon Base] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${BaseFileName}.pk3
-    mv ${BaseFileName}-New.pk3 ${BaseFileName}.pk3
-
-    echo "${GREEN}The Compile process for the Lexicon Base Pak has been complete...${RESET}"
-
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
-    if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[Base] success (${durfmt})${RESET}\n"
-    else
-        last_summary+="${RED}[Base] FAILURE (${durfmt})${RESET}\n"
-    fi
+compile_all() {
+    compile_core
+    compile_basepak
+    compile_slaughter
+    compile_ultdoom
+    compile_dm
+    compile_ctf
 }
 
-# function to compile The slaughter mapset collection
-compile_slaughterpak() {
-    local start=$(date +%s)
-    local status=0
-
-    echo "Step 1: [Lexicon Slaughter] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs lexicon-slaughter/pk3/acs/LEXSLGT.acs lexicon-slaughter/pk3/acs/LEXSLGT.o # Note: Only the one acs folder now
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon Slaughter ACS compilation failed.${RESET}"
-        status=1
-    fi
-    if [ -f lexicon-slaughter/pk3/acs/acs.err ]; then
-        rm lexicon-slaughter/pk3/acs/acs.err
-    fi
-
-    echo "Step 2: [Lexicon Slaughter] Zip into PK3"
-    cd lexicon-slaughter/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${SlaughtFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon Slaughter.${RESET}"
-        status=1
-    fi
-
-    echo "Step 3: [Lexicon Slaughter] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${SlaughtFileName}.pk3
-    mv ${SlaughtFileName}-New.pk3 ${SlaughtFileName}.pk3
-    echo "${GREEN}The Compile process for the Lexicon Slaughter Pak has been complete...${RESET}"
-
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
-    if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[Slaughter] success (${durfmt})${RESET}\n"
-    else
-        last_summary+="${RED}[Slaughter] FAILURE (${durfmt})${RESET}\n"
-    fi
-}
-
-# function to compile The Ultimate Doom mapset collection
-compile_ultdoompak() {
-    local start=$(date +%s)
-    local status=0
-
-    echo "Step 1: [Lexicon Ultimate Doom] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs lexicon-ultdoom/pk3/acs/LEXULT.acs lexicon-ultdoom/pk3/acs/lexult.o # Note: Only the one acs folder now
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon Ultimate Doom ACS compilation failed.${RESET}"
-        status=1
-    fi
-    if [ -f lexicon-ultdoom/pk3/acs/acs.err ]; then
-        rm lexicon-ultdoom/pk3/acs/acs.err
-    fi
-
-    echo "Step 2: [Lexicon Ultimate Doom] Zip into PK3"
-    cd lexicon-ultdoom/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${UltDoomFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon Ultimate Doom.${RESET}"
-        status=1
-    fi
-
-    echo "Step 3: [Lexicon Ultimate Doom] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${UltDoomFileName}.pk3
-    mv ${UltDoomFileName}-New.pk3 ${UltDoomFileName}.pk3
-    echo "${GREEN}The Compile process for the Lexicon Ultimate Doom Pak has been complete...${RESET}"
-
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
-    if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[UltDoom] success (${durfmt})${RESET}\n"
-    else
-        last_summary+="${RED}[UltDoom] FAILURE (${durfmt})${RESET}\n"
-    fi
-}
-
-# function to compile The deathmatch mapset collection
-compile_dmpack() {
-    local start=$(date +%s)
-    local status=0
-
-    echo "Step 1: [Lexicon Deathmatch] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs lexicon-dm/pk3/acs/LEXDTHM.acs lexicon-dm/pk3/acs/LEXDTHM.o # Note: Only the one acs folder now
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon Deathmatch ACS compilation failed.${RESET}"
-        status=1
-    fi
-    if [ -f lexicon-dm/pk3/acs/acs.err ]; then
-        rm lexicon-dm/pk3/acs/acs.err
-    fi
-
-    echo "Step 2: [Lexicon Deathmatch] Zip into PK3"
-    cd lexicon-dm/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${DmFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon Deathmatch.${RESET}"
-        status=1
-    fi
-
-    echo "Step 3: [Lexicon Deathmatch] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${DmFileName}.pk3
-    mv ${DmFileName}-New.pk3 ${DmFileName}.pk3
-    echo "${GREEN}The Compile process for the Lexicon Deathmatch Pak has been complete...${RESET}"
-
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
-    if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[DM] success (${durfmt})${RESET}\n"
-    else
-        last_summary+="${RED}[DM] FAILURE (${durfmt})${RESET}\n"
-    fi
-}
-
-# function to compile The CTF mapset collection
-compile_ctfpack() {
-    local start=$(date +%s)
-    local status=0
-
-    echo "Step 1: [Lexicon CTF] Compile ACS"
-    compiler/bcc -acc-stats -acc-err-file -x bcs lexicon-ctf/pk3/acs/LEXCTF.acs lexicon-ctf/pk3/acs/LEXCTF.o # Note: Only the one acs folder now
-    if [ $? -ne 0 ]; then
-        echo "${RED}Lexicon CTF ACS compilation failed.${RESET}"
-        status=1
-    fi
-    if [ -f lexicon-ctf/pk3/acs/acs.err ]; then
-        rm lexicon-ctf/pk3/acs/acs.err
-    fi
-
-    echo "Step 2: [Lexicon CTF] Zip into PK3"
-    cd lexicon-ctf/pk3 || { echo "${RED}Failed to change directory to pk3${RESET}" >&2; status=1; }
-    7za a -tzip -r -ssw -mx=9 "../../${CTFFileName}-New.pk3" .
-    if [ $? -ne 0 ]; then
-        echo "${RED}7zip failed for Lexicon CTF.${RESET}"
-        status=1
-    fi
-
-    echo "Step 3: [Lexicon CTF] Rename Created PK3"
-    cd ../.. || { echo "${RED}Failed to change directory to parent${RESET}" >&2; status=1; }
-    rm -f ${CTFFileName}.pk3
-    mv ${CTFFileName}-New.pk3 ${CTFFileName}.pk3
-    echo "${GREEN}The Compile process for the Lexicon CTF Pak has been complete...${RESET}"
-
-    local end=$(date +%s)
-    local duration=$((end - start))
-    local durfmt=$(format_duration $duration)
-    if [ $status -eq 0 ]; then
-        last_summary+="${GREEN}[CTF] success (${durfmt})${RESET}\n"
-    else
-        last_summary+="${RED}[CTF] FAILURE (${durfmt})${RESET}\n"
-    fi
-}
-
-# command-line arguments handler helper
 usage() {
     cat <<'EOF'
 Usage: ./Compile.sh [options]
 
 Options:
-  --1, --core                   compile core pak
-  --2, --base                   compile base pak
-  --3, --slaughter              compile slaughter pak
-  --4, --ultimate               compile ultimate doom pak
-  --5, --dm                     compile deathmatch pak
-  --6, --ctf                    compile ctf pak
-  --7, --all                    compile all packs in order
-  --h, --help,                  display this help and exit
+  --1, --core          compile core pak
+  --2, --base          compile base pak
+  --3, --slaughter     compile slaughter pak
+  --4, --ultimate      compile ultimate doom pak
+  --5, --dm            compile deathmatch pak
+  --6, --ctf           compile ctf pak
+  --7, --all           compile all packs in order
+  --h, --help          show this help
 
-You may combine flags in any order; duplicate entries are ignored.
-Examples:
-  ./Compile.sh --core --base       # builds core then base
-  ./Compile.sh --1 --5 --ctf       # builds core, deathmatch and ctf
-
+Flags can be combined in any order; duplicates are ignored.
+  ./Compile.sh --core --base
+  ./Compile.sh --1 --5 --ctf
 EOF
 }
 
+# CLI mode
 if [ $# -gt 0 ]; then
-    declare -a task_list=()
+
+    declare -a tasks=()
     for arg in "$@"; do
         case "$arg" in
-            --h|--help)
-                usage
-                exit 0
-                ;;
-            --1|--core)
-                task_list+=(core)
-                ;;
-            --2|--base)
-                task_list+=(base)
-                ;;
-            --3|--slaughter)
-                task_list+=(slaughter)
-                ;;
-            --4|--ultimate)
-                task_list+=(ultdoompak)
-                ;;
-            --5|--dm)
-                task_list+=(dm)
-                ;;
-            --6|--ctf)
-                task_list+=(ctf)
-                ;;
-            --7|--all)
-                task_list=(core base slaughter ultdoompak dm ctf)
-                break
-                ;;
-            *)
-                echo "${RED}Unknown option: $arg${RESET}"
-                usage
-                exit 1
-                ;;
+            --h|--help)      usage; exit 0 ;;
+            --1|--core)      tasks+=(core) ;;
+            --2|--base)      tasks+=(base) ;;
+            --3|--slaughter) tasks+=(slaughter) ;;
+            --4|--ultimate)  tasks+=(ultdoom) ;;
+            --5|--dm)        tasks+=(dm) ;;
+            --6|--ctf)       tasks+=(ctf) ;;
+            --7|--all)       tasks=(core base slaughter ultdoom dm ctf); break ;;
+            *) echo "${RED}Unknown option: $arg${RESET}"; usage; exit 1 ;;
         esac
     done
 
     declare -A seen=()
-    filtered=()
-    for t in "${task_list[@]}"; do
-        if [ -z "${seen[$t]}" ]; then
-            seen[$t]=1
-            filtered+=("$t")
-        fi
+    declare -a unique=()
+    for t in "${tasks[@]}"; do
+        [ -z "${seen[$t]}" ] && { seen[$t]=1; unique+=("$t"); }
     done
-    task_list=("${filtered[@]}")
+    tasks=("${unique[@]}")
 
-    if [ ${#task_list[@]} -eq 0 ]; then
-        usage
-        exit 1
-    fi
+    [ ${#tasks[@]} -eq 0 ] && { usage; exit 1; }
 
-    # ensure required tools are present for batch mode
     ensure_7zip
 
-    last_summary=""
-    for t in "${task_list[@]}"; do
+    for t in "${tasks[@]}"; do
         case "$t" in
-            core) compile_core ;; 
-            base) compile_basepak ;; 
-            slaughter) compile_slaughterpak ;; 
-            ultdoompak) compile_ultdoompak ;; 
-            dm) compile_dmpack ;; 
-            ctf) compile_ctfpack ;; 
+            core)      compile_core ;;
+            base)      compile_basepak ;;
+            slaughter) compile_slaughter ;;
+            ultdoom)   compile_ultdoom ;;
+            dm)        compile_dm ;;
+            ctf)       compile_ctf ;;
         esac
     done
 
@@ -416,24 +189,12 @@ if [ $# -gt 0 ]; then
     exit 0
 fi
 
-# we rely on the command-line "7za" utility to create pk3 (zip) files.
-# if it is missing we try to install it via the local package manager
-# (supports Debian, RedHat/CentOS, Fedora, Arch).  The user has 2 minutes
-# to cancel before the installer runs.
-echo "Checking for 7zip installation..."
-if ! command -v 7za &> /dev/null; then
-    echo "${YELLOW}7zip is not installed. Attempting to install..."
-    sleep 120 # Sleep for 30 seconds to give the user time to read the message before attempting installation
-    install_7zip
-    if ! command -v 7za &> /dev/null; then
-        echo "${RED}7zip installation failed. Please install it manually." >&2
-        exit 1
-    fi
-fi
+# menu
+ensure_7zip
 
-# main menu
 while true; do
     clear
+
     if [ -n "$last_summary" ]; then
         echo -e "${BOLD}${UNDERLINE}Previous build:${RESET}"
         echo -e "$last_summary"
@@ -455,60 +216,27 @@ EOF
     echo ""
     echo "Please select an option to compile:"
     echo ""
-    echo -e "${CYAN}1)${RESET} Compile Lexicon Core Pak"
-    echo -e "${CYAN}2)${RESET} Compile Lexicon Base Pak"
-    echo -e "${CYAN}3)${RESET} Compile Lexicon Slaughter Pak"
-    echo -e "${CYAN}4)${RESET} Compile Lexicon Ultimate Doom Pak"
-    echo -e "${CYAN}5)${RESET} Compile Lexicon Deathmatch Pak"
-    echo -e "${CYAN}6)${RESET} Compile Lexicon CTF Pak"
-    echo -e "${CYAN}7)${RESET} Compile it all baby! (Warning: This will take a while... get a beer or 100 ready...)"
+    echo -e "${CYAN}1)${RESET} Core"
+    echo -e "${CYAN}2)${RESET} Base"
+    echo -e "${CYAN}3)${RESET} Slaughter"
+    echo -e "${CYAN}4)${RESET} Ultimate Doom"
+    echo -e "${CYAN}5)${RESET} Deathmatch"
+    echo -e "${CYAN}6)${RESET} CTF"
+    echo -e "${CYAN}7)${RESET} Everything (grab a beer, this takes a while)"
     echo -e "${CYAN}8)${RESET} Exit"
     echo ""
     read -rp "Enter your choice (1-8): " choice
 
+    last_summary=""
     case $choice in
-        1)
-            # single target: core only
-            last_summary=""
-            compile_core
-            ;;
-        2)
-            last_summary=""
-            compile_basepak
-            ;;
-        3)
-            last_summary=""
-            compile_slaughterpak
-            ;;
-        4)
-            last_summary=""
-            compile_ultdoompak
-            ;;
-        5)
-            last_summary=""
-            compile_dmpack
-            ;;
-        6)
-            last_summary=""
-            compile_ctfpack
-            ;;
-        7)
-            # build everything in sequence; summary accumulates each step
-            last_summary=""
-            echo "${CYAN}Alright boss. Dont say I didnt warn you... Starting the compilation of everything. Sit back, relax and enjoy the show. This is gonna take a while...${RESET}"
-            compile_core
-            compile_basepak
-            compile_slaughterpak
-            compile_ultdoompak
-            compile_dmpack
-            compile_ctfpack
-            ;;
-        8)
-            echo "Exiting the script. Goodbye!"
-            exit 0
-            ;;
-        *)
-            echo "${RED}Invalid option. Please enter a number between 1 and 8.${RESET}"
-            ;;
+        1) compile_core ;;
+        2) compile_basepak ;;
+        3) compile_slaughter ;;
+        4) compile_ultdoom ;;
+        5) compile_dm ;;
+        6) compile_ctf ;;
+        7) echo "${CYAN}Compiling everything... sit back and relax.${RESET}"; compile_all ;;
+        8) echo "Goodbye!"; exit 0 ;;
+        *) echo "${RED}Invalid choice. Enter 1-8.${RESET}" ;;
     esac
 done

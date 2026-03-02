@@ -1,7 +1,7 @@
 #!/bin/bash
+# bash turns my brains into mush x_x
 
-# Environment / configuration variables
-# Names used when creating the output pk3 files.
+# names used when creating the output pk3 files.
 CoreFileName="lexicon"
 BaseFileName="lexicon-base"
 SlaughtFileName="lexicon-slaughter"
@@ -44,10 +44,7 @@ format_duration() {
     fi
 }
 
-
-# Functions
-
-## Function to install 7zip based on the distribution
+# function to install 7zip based on the distribution
 install_7zip() {
     if [ -f /etc/debian_version ]; then
         sudo apt-get update && sudo apt-get install -y p7zip-full
@@ -66,7 +63,21 @@ install_7zip() {
     fi
 }
 
-## Function to compile the Lexicon Core File
+# simple wrapper that verifies 7za is present and installs it if not
+ensure_7zip() {
+    echo "Checking for 7zip installation..."
+    if ! command -v 7za &> /dev/null; then
+        echo "${YELLOW}7zip is not installed. Attempting to install..."
+        sleep 120 # give user a moment to cancel or read
+        install_7zip
+        if ! command -v 7za &> /dev/null; then
+            echo "${RED}7zip installation failed. Please install it manually." >&2
+            exit 1
+        fi
+    fi
+}
+
+# function to compile the Lexicon Core File
 compile_core() {
     # record the start time and assume success (status=0)
     local start=$(date +%s)
@@ -112,7 +123,7 @@ compile_core() {
     fi
 }
 
-## Function to compile the main mapset collection
+# function to compile the main mapset collection
 compile_basepak() {
     # these are all basically the same steps as compile_core 
     local start=$(date +%s)
@@ -153,7 +164,7 @@ compile_basepak() {
     fi
 }
 
-## Function to compile The slaughter mapset collection
+# function to compile The slaughter mapset collection
 compile_slaughterpak() {
     local start=$(date +%s)
     local status=0
@@ -192,7 +203,7 @@ compile_slaughterpak() {
     fi
 }
 
-## Function to compile The Ultimate Doom mapset collection
+# function to compile The Ultimate Doom mapset collection
 compile_ultdoompak() {
     local start=$(date +%s)
     local status=0
@@ -231,7 +242,7 @@ compile_ultdoompak() {
     fi
 }
 
-## Function to compile The deathmatch mapset collection
+# function to compile The deathmatch mapset collection
 compile_dmpack() {
     local start=$(date +%s)
     local status=0
@@ -270,7 +281,7 @@ compile_dmpack() {
     fi
 }
 
-## Function to compile The CTF mapset collection
+# function to compile The CTF mapset collection
 compile_ctfpack() {
     local start=$(date +%s)
     local status=0
@@ -309,7 +320,101 @@ compile_ctfpack() {
     fi
 }
 
-# Main Routine
+# command-line arguments handler helper
+usage() {
+    cat <<'EOF'
+Usage: ./Compile.sh [options]
+
+Options:
+  --1, --core                   compile core pak
+  --2, --base                   compile base pak
+  --3, --slaughter              compile slaughter pak
+  --4, --ultimate               compile ultimate doom pak
+  --5, --dm                     compile deathmatch pak
+  --6, --ctf                    compile ctf pak
+  --7, --all                    compile all packs in order
+  --h, --help,                  display this help and exit
+
+You may combine flags in any order; duplicate entries are ignored.
+Examples:
+  ./Compile.sh --core --base       # builds core then base
+  ./Compile.sh --1 --5 --ctf       # builds core, deathmatch and ctf
+
+EOF
+}
+
+if [ $# -gt 0 ]; then
+    declare -a task_list=()
+    for arg in "$@"; do
+        case "$arg" in
+            --h|--help)
+                usage
+                exit 0
+                ;;
+            --1|--core)
+                task_list+=(core)
+                ;;
+            --2|--base)
+                task_list+=(base)
+                ;;
+            --3|--slaughter)
+                task_list+=(slaughter)
+                ;;
+            --4|--ultimate)
+                task_list+=(ultdoompak)
+                ;;
+            --5|--dm)
+                task_list+=(dm)
+                ;;
+            --6|--ctf)
+                task_list+=(ctf)
+                ;;
+            --7|--all)
+                task_list=(core base slaughter ultdoompak dm ctf)
+                break
+                ;;
+            *)
+                echo "${RED}Unknown option: $arg${RESET}"
+                usage
+                exit 1
+                ;;
+        esac
+    done
+
+    declare -A seen=()
+    filtered=()
+    for t in "${task_list[@]}"; do
+        if [ -z "${seen[$t]}" ]; then
+            seen[$t]=1
+            filtered+=("$t")
+        fi
+    done
+    task_list=("${filtered[@]}")
+
+    if [ ${#task_list[@]} -eq 0 ]; then
+        usage
+        exit 1
+    fi
+
+    # ensure required tools are present for batch mode
+    ensure_7zip
+
+    last_summary=""
+    for t in "${task_list[@]}"; do
+        case "$t" in
+            core) compile_core ;; 
+            base) compile_basepak ;; 
+            slaughter) compile_slaughterpak ;; 
+            ultdoompak) compile_ultdoompak ;; 
+            dm) compile_dmpack ;; 
+            ctf) compile_ctfpack ;; 
+        esac
+    done
+
+    echo -e "\n${BOLD}Batch summary:${RESET}"
+    echo -e "$last_summary"
+    exit 0
+fi
 
 # we rely on the command-line "7za" utility to create pk3 (zip) files.
 # if it is missing we try to install it via the local package manager
@@ -326,10 +431,8 @@ if ! command -v 7za &> /dev/null; then
     fi
 fi
 
-
 # main menu
 while true; do
-    # start each iteration with a fresh screen and any previous summary
     clear
     if [ -n "$last_summary" ]; then
         echo -e "${BOLD}${UNDERLINE}Previous build:${RESET}"
@@ -337,7 +440,6 @@ while true; do
         echo
     fi
 
-    # Display the menu options with colors
     cat <<EOF
 ${BLUE}    -----------------------------------------------------------------
     |   ${MAGENTA}${BOLD}The Mythotic TinkerStation presents...${RESET}${BLUE}
@@ -409,7 +511,4 @@ EOF
             echo "${RED}Invalid option. Please enter a number between 1 and 8.${RESET}"
             ;;
     esac
-
-    # give the user a short pause to read the results before redrawing
-    sleep 10
 done

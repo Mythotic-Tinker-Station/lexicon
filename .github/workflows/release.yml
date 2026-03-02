@@ -242,6 +242,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key:      ${{ secrets.SERVER_SSH_KEY }}
           port:     ${{ secrets.SERVER_PORT || 22 }}
-          source:   "./release-files/*.pk3"
+          source:   "release-files/"
           target:   ${{ steps.release_type.outputs.upload_path }}
-          strip_components: 2   # removes ./release-files/ prefix on server
+          strip_components: 1   # removes ./release-files/ prefix on server

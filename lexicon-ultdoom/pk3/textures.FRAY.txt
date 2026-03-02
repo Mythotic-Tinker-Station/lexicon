@@ -1,0 +1,327 @@
+Texture "FRAY0040", 256, 128
+{
+	Patch "COMP02_1", 0, 0
+	Patch "FRAY0277", 64, 0
+	Patch "FRAY0278", 128, 0
+	Patch "COMP02_3", 192, 0
+	Patch "FRAY0279", 0, 64
+	Patch "FRAY0280", 64, 64
+	Patch "COMP02_7", 128, 64
+	Patch "COMP02_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "FRAY0041", 128, 128
+{
+	Patch "FRAY0273", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "FRAY0042", 128, 128
+{
+	Patch "FRAY0274", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "FRAY0043", 256, 128
+{
+	Patch "COMP04_5", 32, 0
+	Patch "COMP04_8", 96, 0
+	Patch "COMP03_8", 160, 0
+	Patch "COMP04_6", 0, 64
+	Patch "COMP04_7", 64, 64
+	Patch "FRAY0286", 128, 64
+	Patch "FRAY0282", 192, 0
+	Patch "FRAY0285", 192, 64
+	Patch "COMP03_8", 0, 0
+}
+Texture "FRAY0044", 128, 128
+{
+	Patch "FRAY0284", 0, 0
+	Patch "FRAY0281", 32, 0
+	Patch "FRAY0283", 96, 0
+	Patch "FRAY0284", 0, 64
+	Patch "FRAY0281", 32, 64
+	Patch "FRAY0283", 96, 64
+}
+Texture "FRAY0045", 128, 128
+{
+	Patch "COMP01_5", 26, 64
+	Patch "FRAY0275", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "COMP01_5", 28, 0
+	Patch "COMP1C_6", 72, 64
+	Patch "COMP01_6", 72, 0
+	Patch "FRAY0276", 0, 0
+}
+Texture "FRAY0046", 256, 56
+{
+	Patch "COMP02_1", 0, 0
+	Patch "FRAY0277", 64, 0
+	Patch "COMP02_3", 128, 0
+	Patch "COMP02_7", 192, 0
+}
+Texture "FRAY0047", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "SW11_5", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "COMP02_1", 0, 0
+	Patch "SW11_5", 96, 4
+	Patch "FRAY0277", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "FRAY0048", 8, 128
+{
+	Patch "FRAY0271", 0, 112
+	Patch "FRAY0271", 0, 0
+	Patch "FRAY0271", 0, 96
+	Patch "FRAY0271", 0, 80
+	Patch "FRAY0271", 0, 16
+	Patch "FRAY0271", 0, 32
+	Patch "FRAY0271", 0, 48
+	Patch "FRAY0271", 0, 64
+}
+Texture "FRAY0051", 16, 128
+{
+	Patch "FRAY0269", 0, 0
+	Patch "FRAY0269", 0, 56
+}
+Texture "FRAY0052", 16, 128
+{
+	Patch "FRAY0287", 0, 0
+	Patch "FRAY0288", 8, 0
+	Patch "FRAY0289", 8, 0
+	Patch "FRAY0287", 0, 8
+	Patch "FRAY0289", 8, 8
+	Patch "FRAY0287", 0, 16
+	Patch "FRAY0289", 8, 16
+	Patch "FRAY0287", 0, 24
+	Patch "FRAY0289", 8, 24
+	Patch "FRAY0287", 0, 32
+	Patch "FRAY0289", 8, 32
+	Patch "FRAY0287", 0, 40
+	Patch "FRAY0289", 8, 40
+	Patch "FRAY0287", 0, 48
+	Patch "FRAY0289", 8, 48
+	Patch "FRAY0287", 0, 56
+	Patch "FRAY0289", 8, 56
+	Patch "FRAY0287", 0, 64
+	Patch "FRAY0289", 8, 64
+	Patch "FRAY0287", 0, 72
+	Patch "FRAY0289", 8, 72
+	Patch "FRAY0287", 0, 80
+	Patch "FRAY0289", 8, 80
+	Patch "FRAY0287", 0, 88
+	Patch "FRAY0289", 8, 88
+	Patch "FRAY0287", 0, 96
+	Patch "FRAY0289", 8, 96
+	Patch "FRAY0287", 0, 104
+	Patch "FRAY0289", 8, 104
+	Patch "FRAY0287", 0, 112
+	Patch "FRAY0289", 8, 112
+	Patch "FRAY0287", 0, 120
+	Patch "FRAY0289", 8, 120
+}
+Texture "FRAY0053", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "TSCRN2", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "TSCRN3", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "TSCRN4", 132, 69
+	Patch "TSCRN5", 68, 7
+	Patch "FRAY0290", 4, 7
+	Patch "FRAY0291", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "FRAY0055", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "FRAY0056", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "FRAY0057", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "FRAY0058", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "FRAY0059", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "FRAY0060", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "FRAY0061", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "FRAY0062", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "FRAY0063", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "FRAY0064", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "FRAY0091", 64, 128
+{
+	Patch "FRAY0087", 0, 0
+	Patch "FLAMP", 7, 11
+	Patch "FLAMP", 35, 44
+}
+Texture "FRAY0092", 64, 128
+{
+	Patch "FRAY0105", 0, 0
+	Patch "FLAMP", 8, 11
+	Patch "FLAMP", 35, 11
+}
+Texture "FRAY0093", 32, 48
+{
+	Patch "SW3S1", 0, 16
+	Patch "FRAY0085", 0, 0
+}
+Texture "FRAY0094", 32, 48
+{
+	Patch "SW3S0", 0, 16
+	Patch "FRAY0084", 0, 0
+}
+Texture "FRAY0122", 32, 64
+{
+	Patch "COMP03_4", 0, 0
+	Patch "COMP03_4", 0, 64
+}
+Texture "FRAY0125", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "FRAY0143", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "FRAY0141", 0, 46
+}
+Texture "FRAY0144", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "FRAY0142", 0, 46
+}
+Texture "FRAY0145", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "FRAY0141", 0, 46
+}
+Texture "FRAY0146", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "FRAY0142", 0, 46
+}
+Texture "FRAY0169", 64, 128
+{
+	Patch "FRAY0281", 0, 0
+	Patch "FRAY0298", 0, 64
+}
+Texture "FRAY0170", 128, 128
+{
+	Patch "FRAY0295", 64, 70
+	Patch "FRAY0297", 0, 70
+	Patch "FRAY0296", 0, -2
+	Patch "FRAY0295", 64, -2
+}
+Texture "FRAY0171", 16, 128
+{
+	Patch "FRAY0294", 0, 0
+	Patch "FRAY0294", 0, 24
+	Patch "FRAY0294", 0, 48
+	Patch "FRAY0294", 0, 72
+	Patch "FRAY0294", 0, 96
+	Patch "STEP07", 0, 120
+}
+Texture "FRAY0177", 64, 128
+{
+	Patch "FRAY0281", 0, 0
+	Patch "FRAY0298", 0, 64
+	Patch "SW2_7", 14, 66
+}
+Texture "FRAY0178", 64, 128
+{
+	Patch "FRAY0281", 0, 0
+	Patch "FRAY0298", 0, 64
+	Patch "SW2_8", 14, 66
+}
+Texture "FRAY0179", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "FRAY0299", 0, 59
+}

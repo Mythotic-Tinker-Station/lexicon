@@ -1,0 +1,733 @@
+
+
+
+    +--+oooooo++oooooo++oooooo++oo++oo++oo++oooooo++oooooooo+--+
+   -+--+oo++oo++oo++++++oo++oo++oo++oo++oo++oo++++++oo+oo+oo+--+-
+ ---+--+oo++o+++oooo++++oo++oo++oo++oo++oo++oooo++++oo+oo+oo+--+---
+   -+--+oo++oo++oo++++++oo++oo++oo++oo++oo++oo++++++oo++++oo+--+-
+    +--+oo++oo++oooooo++oooooo++oooooo++oo++oooooo++oo++++oo+--+
+                            oo
+
+
+          THIS IS A SOMETHING LIKE A PUBLIC BETA OF REQUIEM,
+      IN CASE YOU FIND A BUG - TELL US - IN CASE YOU DONïT ITS
+                       THE FINAL VERSION ;) !
+
+ +----------------------------------------------------------------+
+
+  Welcome to the Doom2 Requiem
+  ----------------------------
+
+  Contents:
+  ---------
+
+  1.  Credits
+  2.  Mission Information / MAP descriptions
+  3.  Author Information
+  4.  Tips and Tricks
+  5.  Thanks and Greetings
+
+ +----------------------------------------------------------------+
+
+
+  1.  C R E D I T S
+
+
+  + Maps / Level Editing +
+  ------------------------
+
+    Adelusion,             2,19,24,28
+    Dario Casali,          23
+    Orin Flaharty,         1,10
+    Anthony Galica         21
+    Florian Helmberger,    2
+    Iikka Keranen,         3,8,13,16,22,27,31
+    Bill McClendon         5
+    Thomas Möller,         6
+    Jens Nielsen,          7
+    Ian Quick,             12
+    Michael Rapp,          17
+    Eric Sambach,          14,18
+    Adam Williamson,       29
+    Adam Windsor,          11,20,25,26,30,32
+    Matthias Worch         4,7,9,15
+
+
+  + Artwork / Graphics +
+  ----------------------
+
+    Adelusion, Dario Casali, Iikka Keranen, Thomas Moeller,
+    Matthias Worch
+
+  + Music / Midi +
+  ----------------
+
+    Jeremy Doyle, Mark Klem, David Shaw
+
+  + Moderation +
+  --------------
+
+    Chris Thornton
+
+  + Info Pack / Information File +
+  ---------------------------------
+
+    Chris Thornton, Thomas Moeller, Harrow Software
+
+
+  + Requiem Homepage +
+  --------------------
+
+    Rhys Hughes
+
+
+ +----------------------------------------------------------------+
+
+
+  2.  M I S S I O N  I N F O R M A T I O N
+
+
+ +----------------------------------------------------------------+
+  + Mission 01 +
+  --------------
+
+  Title       : THE GATEWAY
+  Author      : Orin Flaharty
+
+  Description : Welcome to Requiem.  First map out of thirty,
+                and as expected, a nice steady ride.
+                Your objective is to travel through the small
+                technology base, where the demons have used
+                metal-like architecture and slayed human corpses
+                together.
+                Find the exit just outside the base, and prepare
+                for mission 2.
+ +----------------------------------------------------------------+
+  + Mission 02 +
+  --------------
+
+  Title       : SACRIFICIUM
+  Author      : Adelusion / Florian Helmberger
+
+  Description : You stumble upon a Small "Demonic" Cult...
+                its whereabouts... Unknown.
+ +----------------------------------------------------------------+
+  + Mission 03 +
+  --------------
+
+  Title       : POISON PROCESSING
+  Author      : Iikka Keranen
+
+  Description :
+ +----------------------------------------------------------------+
+  + Mission 04 +
+  --------------
+
+  Title       : FIREWORKS
+  Author      : Matthias Worch
+
+  Description : Another outpost of hell, surrounded by a field
+                of lava. Your mission is as simple as always:
+                Don't die...
+ +----------------------------------------------------------------+
+  + Mission 05 +
+  --------------
+
+  Title       : THE CANYON
+  Author      : Crash (Bill J. McClendon)
+
+  Description : It just doesn't seem to be getting any easier,
+                does it...?
+                NOW it appears the mutant hellspawn have located
+                and utterly corrupted the waste-processing plant
+                in an outlying area. The only reason you can think
+                of for them to do this is the ample room they have
+                in the canyon... but that area is sealed...
+                ...isn't it?
+ +----------------------------------------------------------------+
+  + Mission 06 +
+  --------------
+
+  Title       : NATAS OT ETUBIRT
+  Author      : Thomas Möller (vorph|TiC)
+
+  Description : This is the place where water usually got cleaned
+                to make it re-usable for drinking; the monsters
+                converted the architecture to a radioactive-slime
+                producing facility.  The use for the slime is still
+                unknown, but you can be sure they don't plan good
+                things with it.  You must get in and eradicate all
+                alien resistance, and try to re-establish a working
+                facility.  Good luck.
+ +----------------------------------------------------------------+
+  + Mission 07 +
+  --------------
+
+  Title       : HELL´S GIFT
+  Author      : Jens Nielsen / Matthias Worch
+
+  Description : A rather small level reminding of "Dead Simple"
+                in the original DooM II.
+ +----------------------------------------------------------------+
+  + Mission 08 +
+  --------------
+
+  Title       : THE REACTOR
+  Author      : Iikka Keranen
+
+  Description :
+ +----------------------------------------------------------------+
+  + Mission 09 +
+  --------------
+
+  Title       : DEEP DOWN BELOW
+  Author      : Matthias Worch
+  
+  Description : This is the (slightly modified) Map06 from "The 
+                Troopers' Playground". Completely indoor with a 
+                metal/tech theme. The DM part is taken from TTPDEATH.  
+                To find out more about the whole TTP episode visit 
+                my homepage at www.geocities.com/Hollywood/7766.
++----------------------------------------------------------------+
+ + Mission 10  +
+  --------------
+
+  Title       : THE BLACK GATE
+  Author      : Orin Flaharty
+  
+  Description : Twisted demons created these repulsively evil 
+                buildings, as a battleground prepared against
+                those who step within, and otherwise a place for 
+                defensive construction and research.  It used to
+                be a group of churches and embassies, where religious 
+                ceremonies took place thousands of years before the 
+                demons took over.  Be well prepared for a showdown
+                with a big demon as you get closer to the way out ...
+
+                Thanks to Adam Windsor for providing a revised ending 
+                of Orin's level after the original file corrupted.
++----------------------------------------------------------------+
+  + Mission 11 +
+  --------------
+
+  Title       : RATS IN THE WALLS
+  Author      : Adam Windsor
+  
+  Description : Just one of the many bases that has fallen to the 
+                demonic attack, this was once a research and 
+                development centre for the UAC, investigating the 
+                uses and processing of various non-toxic chemicals 
+                recovered from Mars and her moons.  Many areas of the 
+                base are cluttered with the shielded piping used
+                for the chemicals : this may make progress treacherous,
+                so watch your step. Be on the look out for signs of 
+                concealed equipment bays, there are sure to be several 
+                scattered across the base.
+ +----------------------------------------------------------------+
+  + Mission 12 +
+  --------------
+
+  Title       : MILITANT REPRISAL
+  Author      : Ian Quick
+
+  Description : A large military base that guards the entrance to
+                the Town of the Dead - it promises to be heavily
+                guarded by its slain defenders. As usual, you must
+                wade through the mutilated corpses of your seemingly
+                limitless enemies to reach the exit.
+ +----------------------------------------------------------------+
+  + Mission 13 +
+  --------------
+
+  Title       : TOWN OF THE DEAD
+  Author      : Iikka Keranen
+  
+  Description : 
+ +----------------------------------------------------------------+
+  + Mission 14 +
+  --------------
+
+  Title       : THE PORTAL
+  Author      : Eric Sambach
+  
+  Description : All you have to do is find the blue key so you can 
+                enter the Portal. Now get to work.
+ +----------------------------------------------------------------+
+  + Mission 15 +
+  --------------
+
+  Title       : LAST RESORT
+  Author      : Matthias Worch
+  
+  Description : A rather large level combining hellish and 
+                city-like architecture. Don't kill every monster in 
+                sight if you want to reach the secret levels...;)
+ +----------------------------------------------------------------+
+  + Mission 16 +
+  --------------
+
+  Title       : ESCAPE FROM CHAOS
+  Author      : Iikka Keranen
+
+  Description : 
+ +----------------------------------------------------------------+
+  + Mission 17 +
+  --------------
+
+  Title       : DENS OF INIQUITY
+  Author      : Michael S. Rapp
+  
+  Description : Dens of Iniquity. Big deal, you say to yourself as 
+                you read the sign alongside the road pointing to the
+                area up ahead.  With the sun lowering in your squinted 
+                eyes, you look ahead for signs of trouble.  Your finger
+                is reaching for the safety on your shotgun as you 
+                open the first door that you come to. You take a deep 
+                breath and step inside. The door closes swiftly behind 
+                you as you strain to see through the murky darkness. 
+                As your eyes slowly adjust you hear it, within seconds 
+                it descends upon you...
+ +----------------------------------------------------------------+
+  + Mission 18 +
+  --------------
+
+  Title       : BASE OF THORN
+  Author      : Eric Sambach
+  
+  Description : Hint:  When you get the red key, it's best to run 
+                really fast to the exit.
+ +----------------------------------------------------------------+
+  + Mission 19 +
+  --------------
+
+  Title       : SKINNY PUPPY
+  Author      : ADELUSION
+  
+  Description : 
+ +----------------------------------------------------------------+
+  + Mission 20 +
+  --------------
+
+  Title       : THE FORSAKEN HALL
+  Author      : Adam Windsor
+  
+  Description : This seems to be a quiet, forgotten corner of Hell.  
+                You suspect it won't stay forgotten for long.
+ +----------------------------------------------------------------+
+  + Mission 21 +
+  --------------
+
+  Title       : DEN OF THE SKULL
+  Author      : Anthony Galica
+  
+  Description : You are trapped in the den of the skull, and it is 
+                not a very safe place...
+                only your best fighting ability and intelligence
+                will help you through. There is a large and complex 
+                world ahead of you that you must get through, filled 
+                with surprises and wonders as you fight evil to save
+                yourself and the world once more.. otherwise, it 
+                will be your REQUIEM they are singing...  Keep in 
+                mind that the exit is for Authorized Personnel Only.
+ +----------------------------------------------------------------+
+  + Mission 22 +
+  --------------
+
+  Title       : ARACHNOPHOBIA
+  Author      : Iikka Keranen
+  Description : 
+ +----------------------------------------------------------------+
+  + Mission 23 +
+  --------------
+
+  Title       : HATRED
+  Author      : Dario Casali
+
+  Description : This map is a taste of what Final Doom is all about
+                - unleashing the potential of the DooM2 engine.
+                The level incorporates a unique use for the Archvile 
+                ghost making technique, where it can resurrect a demon 
+                giving him the ability to walk through walls and not be 
+                shot.  The first known way to kill such an enemy is to 
+                hit him in a rocket explosion.  Another way is to get
+                the ghost to hit another enemy who has a close attack 
+                ability, who will then go and tear the ghost apart.
+ +----------------------------------------------------------------+
+  + Mission 24 +
+  --------------
+
+  Title       : PROSCRUSTES CHAMBERS
+  Author      : Adelusion
+
+  Description : Within this Gothic Castle-Like Dwelling... some Foul 
+                Smelling Chambers exist... some filled with Creatures, 
+                and some filled with rotted out Flesh ! Though some 
+                Marines before you have fallen to their fate, you must 
+                find their remains, and carry on...
+ +----------------------------------------------------------------+
+  + Mission 25 +
+  --------------
+
+  Title       : CHAOS ZONE
+  Author      : Adam Windsor
+
+  Description : A small fortress over-looking a lake of lava.  
+                Probably be a prime piece of real estate for a Demon.  
+                Let's see what a pissed off marine with a Rocket 
+                Launcher can do to the property values around here....
+ +----------------------------------------------------------------+
+  + Mission 26 +
+  --------------
+
+  Title       : EXCORIATION
+  Author      : Adam Windsor
+
+  Description : A nightmare of frantic combat.  You remember violent
+                flashes of naked fear ... the red-hot barrels of your 
+                shotgun burning your hands ... you remember laughing 
+                in the carnage.
+ +----------------------------------------------------------------+
+  + Mission 27 +
+  --------------
+
+  Title       : CURSED KINGDOM
+  Author      : Iikka Keranen
+
+  Description : 
+ +----------------------------------------------------------------+
+  + Mission 28 +
+  --------------
+
+  Title       : FETALS' REMAINS
+  Author      : Adelusion
+
+  Description : You're casted into another strange environment, 
+                you're mission:  To find the Red Skull and place 
+                it back onto the Alter to reveal the passage way 
+                out... Very well protected, though... you must 
+                not fail, you have gone too far to quit now!
+ +----------------------------------------------------------------+
+  + Mission 29 +
+  --------------
+
+  Title       : DOWNER
+  Author      : Adam Williamson
+
+  Description : I started completely fresh to create the biggest 
+                level I've ever made, and one of the biggest for 
+                Doom (there's about five, to my knowledge, that are 
+                bigger, and one is in Requiem).  It's also scary 
+                and dark. Texturing influenced by map4 of mm2, one 
+                of my favourite levels.  Made with the word HARD 
+                in mind.
+ +----------------------------------------------------------------+
+  + Mission 30 +
+  --------------
+
+  Title       : NEVERMORE
+  Author      : Adam Windsor
+
+  Description : You have uncovered the secret stronghold of the 
+                Demons .... Intelligence says you should have the 
+                advantage of surprise on your side, but they believe 
+                that the Demons will be able to summon many 
+                reinforcements quickly, if need be.  Your objective 
+                is straightforward enough -- find the switch to open
+                the shielding on the Demons' power core and destroy
+                the power source itself, but you must do so quickly 
+                enough that demonic reinforcements do not overwhelm 
+                you ....
+ +----------------------------------------------------------------+
+  + Mission 31 +
+  --------------
+
+  Title       : DOORWAY TO QUAKE
+  Author      : Iikka Keranen
+
+  Description : This is the something you have always dreamed of. :)
+ +----------------------------------------------------------------+
+ + Mission 32 +
+  --------------
+
+  Title       : BITTER HERB
+  Author      : Adam Windsor
+
+  Description : Who knows where you are now ... somewhere deep in
+                demons, you're sure.  Hmm .. big courtyard, building 
+                on the far side ... no sign of anything yet .....
+                .... No, wait.  Here they come.  Right on time.
+ +----------------------------------------------------------------+
+
+
+  3. A U T H O R  I N F O R M A T I O N
+
+
+ +----------------------------------------------------------------+
+  Name         : Adelusion
+
+  E-mail       : adelusion@aol.com
+  Homepage     : http://members.aol.com/adelusion/adel.html 
+  Other Works  : FetalDM Series, Co-Author Dystopia3, STRAIN
+  Tools Used   : DCK2.2, DCK3.6 
+  
+  credits to   :  All that inspires me
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Dario Casali 
+
+  E-mail       : dario@casali.demon.co.uk
+  Homepage     : http://www.linefeed.com/linefeed/alek/dario/home.html
+  Other Works  : Final Doom - "Doom2 Unleashed"
+  Tools Used   : Deth, Deutex, Wintex, Deusf
+
+  credits to   :  
+  greetings to :  
+ +----------------------------------------------------------------+
+  Name         : Jeremy Doyle
+
+  E-mail       : jdoyle@mindport.net
+  Homepage     : 
+  Other Works  : 
+  Tools Used   : 
+
+  credits to   :   
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Orin Flaharty
+
+  E-mail       : akira963@ix.netcom.com
+  Homepage     :
+  Other Works  : Memento Mori 2 maps 12 and 31
+  Tools Used   : Doomed, Warm
+
+  credits to   :   
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Anthony Galica
+
+  E-mail       : agalica@ix.netcom.com
+  Homepage     : 
+  Other Works  : Crush.wad, Beyond Doom :The Apocalypse TC
+  Tools Used   : Waded 1.87b, WadAuthor, DMapEdit, WARM, 
+                 BSP1.5X, RMB30
+  credits to   : The Beyond Doom team and everyone on Requiem  
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Florian Helmberger
+
+  E-mail       : helmberg@ins.at
+  Homepage     : 
+  Other Works  : zwieback, zestful, zerlot, mm2 map4, strain map3
+  Tools Used   : 
+  credits to   : 
+  greetings to :
+ +----------------------------------------------------------------+
+  Name         : Rhys Hughes aka Renton and PiNHEAD
+
+  E-mail       : hughesr@azh.bt.co.uk
+  Homepage     : www.fragged.com (Up in August "97")
+  Other Works  : Memento Mori 2 Level 13 and DeathDay for DooM][
+  Tools Used   :
+  Credits to   : The one and only iD software
+  Greetings to : All Requiem crew and my Clan of amigos Xtreme Chaos.
+                 Flame, Sickboy, Psychopath, Glynny and Pintglass the 
+                 lads at XC. :) 
+ +----------------------------------------------------------------+
+  Name         : Mark Klem
+
+  E-mail       : mklem@merlin.ebicom.net
+  Homepage     : http://www2.ebicom.net/~mklem
+  Other Works  : Strain, MM1, MM2, All Hell Breaks Loose,
+                 Wacky Wheels, various single wads.
+  Tools Used   : 
+  credits to   : 
+  greetings to : Everybody.
+ +----------------------------------------------------------------+
+  Name         : CRASH (Bill J. McClendon)
+
+  E-mail       : crash_@ix.netcom.com
+  Homepage     : www.geocities.com/TimesSquare/1481/quake.htm
+  Other Works  : 3x-play.wad, diamonds.wad, maps 01, 11, and
+                 12 in Strain, and The Unofficial WAD Designers' 
+                 Handbook (v1.0, 1.1, and 1.2), now on line at
+                 http://www.apci.net/~ron1701/
+  Tools Used   : DCK 2.2 and 3.61
+  credits to   : Chris Thornton, Adam Windsor for beta-testing 
+                 and deathmatch testing  of just about every 
+                 Doom map i've done over the past two years,my 
+                 wife for putting up with this incredibly
+                 time-consuming obsession, iD and Ben Morris
+                 for the obvious reasons, Adelusion for some 
+                 of the best textures i've ever had the 
+                 pleasure of working with, and David Shaw and
+                 Mark Klem, who are two of the most
+                 talented midi artists i've ever heard.  
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Thomas Möller (vorph / TiC)
+
+  E-mail       : vorph@tic.de
+  Homepage     : homes.cls.de/users/t/thomasm (personal pages)	  
+                 www.tic.de     (TiC - pages)
+                 www.tic.de/mv  (Mental Vortex)
+  Other Works  : SUDTIC, TEUTIC, OBTIC, MM, MM2
+                 + several Deathmatch maps and Weapon-addons
+                 + some Quake stuff
+  Tools Used   : various, mainly NWT, deth and improces
+  credits to   : NO ONE, fuck off ! :)
+  greetings to : panza, langsuyar, tyrell,all at Mental Vortex,
+                 all at id, all at banjo inc., the mm-crew and 
+                 the mm2-crew, the requiem-crew (yep ;)),
+                 the freaks on #quake.ger, comtron,
+                 the quest authors (it sucks, that you stopped 
+                 coding on it!) and all lamers I forgot to
+                 mention here.
+ +----------------------------------------------------------------+
+  Name         : Jens Nielsen
+
+  E-mail       : djinni@danbbs.dk
+  Homepage     :
+  Other Works  : Corridors of hell for solo/dm (cor-helx.zip)
+                 Walkabout creek for coop/solo (wlkabot2.zip)
+                 Memento Mori 2 map29
+  Tools Used   : Deep, Rmb
+  credits to   :
+  greetings to :
+ +----------------------------------------------------------------+
+  Name         : Ian Quick
+
+  E-mail       : dalamar@magna.com.au
+  Homepage     :
+  Other works  :
+  Tools Used   : Deth, BSP
+  credits to   : id software (of course - it can't be said enough)
+                 Antony J. Burden/Simon Oke (authors of Deth)
+  greetings to : joorsh, slutbot, ewat =)
+ +----------------------------------------------------------------+
+  Name         : Michael S. Rapp
+  E-mail       : michael.rapp@aquila.com
+  Homepage     :
+  Other Works  : co-author of Memento Mori (level 19)
+                 co-author of Memento Mori 2 (level 17)
+                 author of MRDM2301.wad for Doom I
+                 (rated no. 1 in TiC's Wad Reviews)
+  Tools Used   : DoomCad, WinDeu, Deth, BSP
+  credits to   : iD, and the authors of the editors that I used
+                 Playtesters - Nate 666, Scott Rapp
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Eric Sambach
+  E-mail       : munyul@viper.net.au
+  Homepage     : http://www.viper.net.au/~munyul
+  Other Works  : A new Quake dm series called "The MunY 
+                 series".  Files are called muny##.bsp.
+                 Also, try ae_tups.wad and ae_tups2.wad,
+                 both on cdrom.com.
+  Tools Used   : 
+  credits to   : All the guys that created the utilities
+                 I used!
+  greetings to :
+ +----------------------------------------------------------------+
+  Name         : David Shaw
+  E-mail       : davids1622@aol.com / tolwyn@televar.com
+  Homepage     : http://www.televar.com/~tolwyn
+  Other Works  : Level editing for ´Insertion´
+                 (maps 1, 2, and 4);
+                 Music for various other projects.
+  Tools Used   : DETH, WARM 1.6 (Doom) | Cakewalk Pro 3.01,
+                 Kurzweil Music Systems, and ALESIS (music)
+  credits to   : TiC, TeamTNT, "JR" Dietz, Greg Husted, id
+                 Software, the Casali brothers, RAVEN software,
+                 SAMS publishing, Dr. Sleep and the
+                 programmers / creators of DETH,
+                 and my wife for her undying patience.
+  greetings to :
+ +----------------------------------------------------------------+
+  Name         : Chris Thornton
+  E-mail       : thornton@healey.com.au
+  Homepage     : 
+  Other Works  : 
+  Tools Used   :
+  credits to   : iD, all the guys on Requiem - 
+                 you did a fine job
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Adam Williamson
+  E-mail       : Adam@scss.demon.co.uk
+  Homepage     : 
+  Other Works  : In date order: 2spookxx.wad, Memento Mori 2 
+                 map6, Insertion MAP09, Tyranny MAPs 01-10
+  Tools Used   : DCK 3.6, 3.61, 3.62. ZenNode 0.98a.
+                 WARM 1.5x. RMB3
+  credits to   : iD, Chris Thornton, whoever made Rattamahatta
+                 (ulp)
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Adam Windsor
+  E-mail       : s339890@student.uq.edu.au
+  Homepage     : 
+  Other Works  : DFEAR1 --o DFEAR5, TBEAST
+  Tools Used   : DETH, BSP
+  credits to   : iD, the makers of DETH & BSP
+  greetings to : 
+ +----------------------------------------------------------------+
+  Name         : Matthias Worch
+  E-mail       : langsuyar@ocrana.de
+  Homepage     : http://www.geocities.com/hollywood/7766
+  Other Works  : The Troopers' Playground, MM2 levels 3, 10,
+                 14 & 18 
+  Tools Used   : Deth (the only one), Warm, Zennode, NWT
+  credits to   : Everybody in the Requiem Crew, TiC,
+                 Clan Ocrana
+  greetings to :
+ +----------------------------------------------------------------+
+
+
+ 4.  T I P S  A N D  T R I C K S
+
+
+  You know, cheating is lame, in case you get in trouble
+  (lack of Ammo or Health) while playing better start playing
+  Requiem with keeping some things in mind:
+
+
+  a) Try to reach EVERY secret, this gives you extra items and though
+     easier gameplay.
+
+  b) Don´t pick Ammo Boxes up when they don´t take full effect
+     (e.g. you got 99 shells and pick up a 25 shells pack - you´d
+      waste 24 IMPORTANT shells !) Same goes for health packs.
+
+  c) In case you don't know how to continue a map, take a look at the
+     map <TAB> and look for undiscovered places, walking through 
+     poisoned areas is in most cases NOT the right way ;)
+
+  d) In case its still too difficult - play a lower skill level. 
+
+  e) In case its still too difficult at "hurt me plenty" - play pacman ! ;)
+
+ +----------------------------------------------------------------+
+
+
+  5.  T H A N K S  A N D  G R E E T I N G S
+
+
+ +----------------------------------------------------------------+
+
+  The  R E Q U I E M   T E A M 
+
+  expresses its deepest thanks to you, 
+  for playing this thing after waiting 
+  so long for it.
+
+  Also, all of us would like to thank 
+  Id Software, for obvious reasons.
+
+  Last, but not least, we thank all the people who
+  created the tools used during the process of developing
+
+  REQUIEM.
+
+ +----------------------------------------------------------------+
+ 
+

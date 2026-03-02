@@ -1,0 +1,9 @@
+ACTOR Lexicon_FRAY_Stalagtite : Stalagtite
+{
+	States
+	{
+	Spawn:
+		LW75 N -1
+		Stop
+	}
+}

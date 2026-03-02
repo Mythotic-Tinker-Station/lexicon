@@ -1,0 +1,394 @@
+// Memento Mori 1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map MM1001 "The Teleporter"
+{
+	titlepatch = "MM10V00"
+	next = "MM1002"
+	secretnext = "MM1002"
+	sky1 = "MM100287"
+	music = "D_MM1001"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1002 "The Bridge"
+{
+	titlepatch = "MM10V01"
+	next = "MM1003"
+	secretnext = "MM1003"
+	sky1 = "MM100287"
+	music = "D_MM1002"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1003 "Interlock"
+{
+	titlepatch = "MM10V02"
+	next = "MM1004"
+	secretnext = "MM1004"
+	sky1 = "MM100287"
+	music = "D_MM1003"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1004 "The Stand"
+{
+	titlepatch = "MM10V03"
+	next = "MM1005"
+	secretnext = "MM1005"
+	sky1 = "MM100287"
+	music = "D_MM1004"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1005 "Hell's Kitchen"
+{
+	titlepatch = "MM10V04"
+	next = "MM1006"
+	secretnext = "MM1006"
+	sky1 = "MM100287"
+	music = "D_MM1005"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1006 "The Powerstation"
+{
+	titlepatch = "MM10V05"
+	next = "MM1007"
+	secretnext = "MM1007"
+	sky1 = "MM100287"
+	music = "D_MM1006"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1007 "Not That Simple"
+{
+	titlepatch = "MM10V06"
+	next = "MM1008"
+	secretnext = "MM1008"
+	sky1 = "MM100287"
+	music = "D_MM1007"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+	Map07Special
+}
+
+map MM1008 "And The Dead Shall Rise"
+{
+	titlepatch = "MM10V07"
+	next = "MM1009"
+	secretnext = "MM1009"
+	sky1 = "MM100287"
+	music = "D_MM1008"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1009 "High-Tech Grave"
+{
+	titlepatch = "MM10V08"
+	next = "MM1010"
+	secretnext = "MM1010"
+	sky1 = "MM100287"
+	music = "D_MM1009"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1010 "The Mansion"
+{
+	titlepatch = "MM10V09"
+	next = "MM1011"
+	secretnext = "MM1011"
+	sky1 = "MM100287"
+	music = "D_MM1010"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1011 "Halls Of Insanity"
+{
+	titlepatch = "MM10V10"
+	next = "MM1012"
+	secretnext = "MM1012"
+	sky1 = "MM100287"
+	music = "D_MM1011"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1012 "Kinetics"
+{
+	titlepatch = "MM10V11"
+	next = "MM1013"
+	secretnext = "MM1013"
+	sky1 = "MM100288"
+	music = "D_MM1012"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1013 "The Inmost Dens II"
+{
+	titlepatch = "MM10V12"
+	next = "MM1014"
+	secretnext = "MM1014"
+	sky1 = "MM100288"
+	music = "D_MM1013"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1014 "Aquaduct"
+{
+	titlepatch = "MM10V13"
+	next = "MM1015"
+	secretnext = "MM1015"
+	sky1 = "MM100288"
+	music = "D_MM1014"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1015 "Karmacoma"
+{
+	titlepatch = "MM10V14"
+	next = "MM1016"
+	secretnext = "MM1031"
+	sky1 = "MM100288"
+	music = "D_MM1015"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1016 "Stoned"
+{
+	titlepatch = "MM10V15"
+	next = "MM1017"
+	secretnext = "MM1017"
+	sky1 = "MM100288"
+	music = "D_MM1016"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1017 "House Of Thorn"
+{
+	titlepatch = "MM10V16"
+	next = "MM1018"
+	secretnext = "MM1018"
+	sky1 = "MM100288"
+	music = "D_MM1017"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1018 "A Dead's Man's Town"
+{
+	titlepatch = "MM10V17"
+	next = "MM1019"
+	secretnext = "MM1019"
+	sky1 = "MM100288"
+	music = "D_MM1018"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1019 "Maltraiter"
+{
+	titlepatch = "MM10V18"
+	next = "MM1020"
+	secretnext = "MM1020"
+	sky1 = "MM100288"
+	music = "D_MM1019"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1020 "Mountain Depot"
+{
+	titlepatch = "MM10V19"
+	next = "MM1021"
+	secretnext = "MM1021"
+	sky1 = "MM100288"
+	music = "D_MM1020"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1021 "Twilight Lab"
+{
+	titlepatch = "MM10V20"
+	next = "MM1022"
+	secretnext = "MM1022"
+	sky1 = "MM100289"
+	music = "D_MM1021"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1022 "The Escape"
+{
+	titlepatch = "MM10V21"
+	next = "MM1023"
+	secretnext = "MM1023"
+	sky1 = "MM100289"
+	music = "D_MM1022"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1023 "Showdown"
+{
+	titlepatch = "MM10V22"
+	next = "MM1024"
+	secretnext = "MM1024"
+	sky1 = "MM100289"
+	music = "D_MM1023"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1024 "Diehard"
+{
+	titlepatch = "MM10V23"
+	next = "MM1025"
+	secretnext = "MM1025"
+	sky1 = "MM100289"
+	music = "D_MM1024"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1025 "Cesspool"
+{
+	titlepatch = "MM10V24"
+	next = "MM1026"
+	secretnext = "MM1026"
+	sky1 = "MM100289"
+	music = "D_MM1025"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1026 "Between Scattered Corpses"
+{
+	titlepatch = "MM10V25"
+	next = "MM1027"
+	secretnext = "MM1027"
+	sky1 = "MM100289"
+	music = "D_MM1026"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1027 "Fort Hades"
+{
+	titlepatch = "MM10V26"
+	next = "MM1028"
+	secretnext = "MM1028"
+	sky1 = "MM100289"
+	music = "D_MM1027"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1028 "City Of The Unavenged"
+{
+	titlepatch = "MM10V27"
+	next = "MM1029"
+	secretnext = "MM1029"
+	sky1 = "MM100289"
+	music = "D_MM1028"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1029 "Island Of Death"
+{
+	titlepatch = "MM10V28"
+	next = "MM1030"
+	secretnext = "MM1030"
+	sky1 = "MM100289"
+	music = "D_MM1029"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+	compat_shorttex = 1
+}
+
+map MM1030 "Viper"
+{
+	titlepatch = "MM10V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "MM100289"
+	music = "D_MM1030"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+	allowmonstertelefrags
+}
+
+map MM1031 "Technology Base"
+{
+	titlepatch = "MM10V30"
+	next = "MM1016"
+	secretnext = "MM1032"
+	sky1 = "MM100289"
+	music = "D_MM1031"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}
+
+map MM1032 "The Hidden Slime Factory"
+{
+	titlepatch = "MM10V31"
+	next = "MM1016"
+	secretnext = "MM1016"
+	sky1 = "MM100289"
+	music = "D_MM1032"
+	intermusic = "D_MM10IN"
+	ExitPic = "MM10INT"
+	EnterPic = "MM10INT"
+}

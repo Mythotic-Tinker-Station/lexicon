@@ -1,0 +1,315 @@
+// Eviltech: Soul Of Megawad Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map EVLT01 "Catedral"
+{
+	next = "EVLT02"
+	secretnext = "EVLT02"
+	sky1 = "EVLT0002"
+	music = "D_EVLT01"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT02 "9 De Julio"
+{
+	next = "EVLT03"
+	secretnext = "EVLT03"
+	sky1 = "EVLT0002"
+	music = "D_EVLT02"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT03 "Tribunales"
+{
+	next = "EVLT04"
+	secretnext = "EVLT04"
+	sky1 = "EVLT0002"
+	music = "D_EVLT03"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT04 "Callao"
+{
+	next = "EVLT05"
+	secretnext = "EVLT05"
+	sky1 = "EVLT0002"
+	music = "D_EVLT04"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT05 "Facultad De Medicina"
+{
+	next = "EVLT06"
+	secretnext = "EVLT06"
+	sky1 = "EVLT0002"
+	music = "D_EVLT05"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT06 "Pueyrredon"
+{
+	next = "EVLT07"
+	secretnext = "EVLT07"
+	sky1 = "EVLT0002"
+	music = "D_EVLT06"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT07 "Aguero"
+{
+	next = "EVLT08"
+	secretnext = "EVLT08"
+	sky1 = "EVLT0002"
+	music = "D_EVLT07"
+	intermusic = "D_EVLTIN"
+	Map07Special
+}
+
+map EVLT08 "Bulnes"
+{
+	next = "EVLT09"
+	secretnext = "EVLT09"
+	sky1 = "EVLT0002"
+	music = "D_EVLT08"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT09 "Scalabrini Ortiz"
+{
+	next = "EVLT10"
+	secretnext = "EVLT10"
+	sky1 = "EVLT0002"
+	music = "D_EVLT09"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT10 "Plaza Italia"
+{
+	next = "EVLT11"
+	secretnext = "EVLT11"
+	sky1 = "EVLT0002"
+	music = "D_EVLT10"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT11 "Palermo"
+{
+	next = "EVLT12"
+	secretnext = "EVLT12"
+	sky1 = "EVLT0002"
+	music = "D_EVLT11"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT12 "Constitucion"
+{
+	next = "EVLT13"
+	secretnext = "EVLT13"
+	sky1 = "EVLT0077"
+	music = "D_EVLT12"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT13 "San Juan"
+{
+	next = "EVLT14"
+	secretnext = "EVLT14"
+	sky1 = "EVLT0077"
+	music = "D_EVLT13"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT14 "Independencia C"
+{
+	next = "EVLT15"
+	secretnext = "EVLT15"
+	sky1 = "EVLT0077"
+	music = "D_EVLT14"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT15 "Mariano Moreno"
+{
+	next = "EVLT16"
+	secretnext = "EVLT31"
+	sky1 = "EVLT0077"
+	music = "D_EVLT15"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT16 "Avenida De Mayo"
+{
+	next = "EVLT17"
+	secretnext = "EVLT17"
+	sky1 = "EVLT0077"
+	music = "D_EVLT16"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT17 "Diagonal Norte"
+{
+	next = "EVLT18"
+	secretnext = "EVLT18"
+	sky1 = "EVLT0077"
+	music = "D_EVLT17"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT18 "Lavalle"
+{
+	next = "EVLT19"
+	secretnext = "EVLT19"
+	sky1 = "EVLT0077"
+	music = "D_EVLT18"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT19 "Plaza San Martin"
+{
+	next = "EVLT20"
+	secretnext = "EVLT20"
+	sky1 = "EVLT0077"
+	music = "D_EVLT19"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT20 "Retiro"
+{
+	next = "EVLT21"
+	secretnext = "EVLT21"
+	sky1 = "EVLT0077"
+	music = "D_EVLT20"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT21 "Bolivar"
+{
+	next = "EVLT22"
+	secretnext = "EVLT22"
+	sky1 = "EVLT0003"
+	music = "D_EVLT21"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT22 "Belgrano"
+{
+	next = "EVLT23"
+	secretnext = "EVLT23"
+	sky1 = "EVLT0003"
+	music = "D_EVLT22"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT23 "Independencia E"
+{
+	next = "EVLT24"
+	secretnext = "EVLT24"
+	sky1 = "EVLT0003"
+	music = "D_EVLT23"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT24 "San Jose"
+{
+	next = "EVLT25"
+	secretnext = "EVLT25"
+	sky1 = "EVLT0003"
+	music = "D_EVLT24"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT25 "Entre Rios"
+{
+	next = "EVLT26"
+	secretnext = "EVLT26"
+	sky1 = "EVLT0003"
+	music = "D_EVLT25"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT26 "Pichincha"
+{
+	next = "EVLT27"
+	secretnext = "EVLT27"
+	sky1 = "EVLT0003"
+	music = "D_EVLT26"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT27 "Jujuy"
+{
+	next = "EVLT28"
+	secretnext = "EVLT28"
+	sky1 = "EVLT0003"
+	music = "D_EVLT27"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT28 "Urquiza"
+{
+	next = "EVLT29"
+	secretnext = "EVLT29"
+	sky1 = "EVLT0003"
+	music = "D_EVLT28"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT29 "Boedo"
+{
+	next = "EVLT30"
+	secretnext = "EVLT30"
+	sky1 = "EVLT0003"
+	music = "D_EVLT29"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT30 "La Plata"
+{
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "EVLT0003"
+	music = "D_EVLT30"
+	intermusic = "D_EVLTIN"
+	allowmonstertelefrags
+}
+
+map EVLT31 "Ministro Carranza"
+{
+	next = "EVLT16"
+	secretnext = "EVLT32"
+	sky1 = "EVLT0003"
+	music = "D_EVLT31"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT32 "Jose Maria Moreno"
+{
+	next = "EVLT16"
+	secretnext = "EVLT33"
+	sky1 = "EVLT0003"
+	music = "D_EVLT32"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT33 "Emilio Mitre"
+{
+	next = "EVLT16"
+	secretnext = "EVLT34"
+	sky1 = "EVLT0003"
+	music = "D_EVLT33"
+	intermusic = "D_EVLTIN"
+}
+
+map EVLT34 "Nostromo"
+{
+	next = "EVLT16"
+	secretnext = "EVLT16"
+	sky1 = "EVLT0003"
+	music = "D_EVLT01"
+	intermusic = "D_EVLTIN"
+}

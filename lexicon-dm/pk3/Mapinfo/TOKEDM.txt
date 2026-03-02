@@ -1,0 +1,84 @@
+// Use this file as a template for any MAPINFO entries
+// that you want to write.
+
+map TKDM01 "TokeDM Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "TKDM02"
+	secretnext = "TKDM02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map TKDM02 "TokeDM Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "TKDM03"
+	secretnext = "TKDM03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map TKDM03 "TokeDM Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "TKDM04"
+	secretnext = "TKDM04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map TKDM04 "TokeDM Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "TKDM05"
+	secretnext = "TKDM05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map TKDM05 "TokeDM Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "TKDM06"
+	secretnext = "TKDM06"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map TKDM06 "TokeDM Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "TKDM07"
+	secretnext = "TKDM07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map TKDM07 "TokeDM Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "TKDM08"
+	secretnext = "TKDM08"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map TKDM08 "TokeDM Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "TKDM09"
+	secretnext = "TKDM09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}
+
+map TKDM09 "TokeDM Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+}

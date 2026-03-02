@@ -1,0 +1,361 @@
+// WANG Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map WANG01 "WANG Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "WANG02"
+	secretnext = "WANG02"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG02 "WANG Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "WANG03"
+	secretnext = "WANG03"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG03 "WANG Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "WANG04"
+	secretnext = "WANG04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG04 "WANG Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "WANG05"
+	secretnext = "WANG05"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG05 "WANG Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "WANG06"
+	secretnext = "WANG06"
+	sky1 = "SKY1"
+	music = "D_WANG05"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG06 "WANG Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "WANG07"
+	secretnext = "WANG07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG07 "WANG Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "WANG08"
+	secretnext = "WANG08"
+	sky1 = "SKY1"
+	music = "D_WANG07"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+	Map07Special
+}
+
+map WANG08 "WANG Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "WANG09"
+	secretnext = "WANG09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG09 "WANG Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "WANG10"
+	secretnext = "WANG10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG10 "WANG Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "WANG11"
+	secretnext = "WANG11"
+	sky1 = "SKY1"
+	music = "D_WANG10"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG11 "WANG Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "WANG12"
+	secretnext = "WANG12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG12 "WANG Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "WANG13"
+	secretnext = "WANG13"
+	sky1 = "SKY2"
+	music = "D_WANG12"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG13 "WANG Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "WANG14"
+	secretnext = "WANG14"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG14 "WANG Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "WANG15"
+	secretnext = "WANG15"
+	sky1 = "SKY2"
+	music = "D_WANG14"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG15 "WANG Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "WANG16"
+	secretnext = "WANG16"
+	sky1 = "SKY2"
+	music = "D_WANG15"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG16 "WANG Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "WANG17"
+	secretnext = "WANG17"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG17 "WANG Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "WANG18"
+	secretnext = "WANG18"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG18 "WANG Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "WANG19"
+	secretnext = "WANG19"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG19 "WANG Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "WANG20"
+	secretnext = "WANG20"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG20 "WANG Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "WANG21"
+	secretnext = "WANG21"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG21 "WANG Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "WANG22"
+	secretnext = "WANG22"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG22 "WANG Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "WANG23"
+	secretnext = "WANG23"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG23 "WANG Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "WANG24"
+	secretnext = "WANG24"
+	sky1 = "SKY3"
+	music = "D_WANG23"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG24 "WANG Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "WANG25"
+	secretnext = "WANG25"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG25 "WANG Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "WANG26"
+	secretnext = "WANG26"
+	sky1 = "SKY3"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG26 "WANG Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "WANG27"
+	secretnext = "WANG27"
+	sky1 = "SKY3"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG27 "WANG Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "WANG28"
+	secretnext = "WANG28"
+	sky1 = "SKY3"
+	music = "D_WANG27"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG28 "WANG Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "WANG29"
+	secretnext = "WANG29"
+	sky1 = "SKY3"
+	music = "$MUSIC_TENSE"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG29 "WANG Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "WANG30"
+	secretnext = "WANG30"
+	sky1 = "SKY3"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG30 "WANG Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "WANG31"
+	secretnext = "WANG31"
+	sky1 = "SKY3"
+	music = "D_WANG30"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+	allowmonstertelefrags
+}
+
+map WANG31 "WANG Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "WANG32"
+	secretnext = "WANG32"
+	sky1 = "SKY3"
+	music = "D_WANG31"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}
+
+map WANG32 "WANG Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_WANG32"
+	ExitPic = "WANGINT"
+	EnterPic = "WANGINT"
+}

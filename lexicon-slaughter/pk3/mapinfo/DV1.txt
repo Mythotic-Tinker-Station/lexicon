@@ -1,0 +1,67 @@
+// Deus Vult Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DSV101 "Insurgents"
+{
+	titlepatch = "DSV1V00"
+	next = "DSV102"
+	secretnext = "DSV102"
+	sky1 = "DSV10492"
+	music = "D_DSV101"
+	intermusic = "D_DSV1IN"
+	ExitPic = "DSV1INT"
+	EnterPic = "DSV1INT"
+}
+
+map DSV102 "Torture Chamber"
+{
+	titlepatch = "DSV1V01"
+	next = "DSV103"
+	secretnext = "DSV103"
+	sky1 = "DSV10492"
+	music = "D_DSV102"
+	intermusic = "D_DSV1IN"
+	ExitPic = "DSV1INT"
+	EnterPic = "DSV1INT"
+}
+
+map DSV103 "Cathedral"
+{
+	titlepatch = "DSV1V02"
+	next = "DSV104"
+	secretnext = "DSV104"
+	sky1 = "DSV10492"
+	music = "D_DSV103"
+	intermusic = "D_DSV1IN"
+	ExitPic = "DSV1INT"
+	EnterPic = "DSV1INT"
+}
+
+map DSV104 "End of Days"
+{
+	titlepatch = "DSV1V03"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSV10492"
+	music = "D_DSV104"
+	intermusic = "D_DSV1IN"
+	ExitPic = "DSV1INT"
+	EnterPic = "DSV1INT"
+}
+
+map DSV105 "Deus Vult"
+{
+	titlepatch = "DSV1V04"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSV10492"
+	music = "D_DSV105"
+	intermusic = "D_DSV1IN"
+	ExitPic = "DSV1INT"
+	EnterPic = "DSV1INT"
+}

@@ -1,0 +1,344 @@
+// Super MAYhem 17 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map MY1701 "shroom stronghold"
+{
+	titlepatch = "MY17V00"
+	next = "MY1702"
+	secretnext = "MY1702"
+	sky1 = "MY170436"
+	music = "D_MY1701"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1702 "all along the bowser tower"
+{
+	titlepatch = "MY17V01"
+	next = "MY1703"
+	secretnext = "MY1703"
+	sky1 = "MY170436"
+	music = "D_MY1702"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1703 "sillydust sanctuary"
+{
+	titlepatch = "MY17V02"
+	next = "MY1704"
+	secretnext = "MY1704"
+	sky1 = "MY170436"
+	music = "D_MY1703"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1704 "marina moonlight"
+{
+	titlepatch = "MY17V03"
+	next = "MY1705"
+	secretnext = "MY1705"
+	sky1 = "MY170436"
+	music = "D_MY1704"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1705 "painfully and elitely rusted"
+{
+	titlepatch = "MY17V04"
+	next = "MY1706"
+	secretnext = "MY1706"
+	sky1 = "MY170436"
+	music = "D_MY1705"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1706 "airship of doom"
+{
+	titlepatch = "MY17V05"
+	next = "MY1707"
+	secretnext = "MY1707"
+	sky1 = "MY170436"
+	music = "D_MY1706"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1707 "groovy hills"
+{
+	titlepatch = "MY17V06"
+	next = "MY1708"
+	secretnext = "MY1708"
+	sky1 = "MY170436"
+	music = "D_MY1707"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+	Map07Special
+}
+
+map MY1708 "the oasis"
+{
+	titlepatch = "MY17V07"
+	next = "MY1709"
+	secretnext = "MY1709"
+	sky1 = "MY170436"
+	music = "D_MY1708"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1709 "curse of the mummy's sister's etc."
+{
+	titlepatch = "MY17V08"
+	next = "MY1710"
+	secretnext = "MY1710"
+	sky1 = "MY170436"
+	music = "D_MY1709"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1710 "shifting sands"
+{
+	titlepatch = "MY17V09"
+	next = "MY1711"
+	secretnext = "MY1711"
+	sky1 = "MY170436"
+	music = "D_MY1710"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1711 "aztec ruins"
+{
+	titlepatch = "MY17V10"
+	next = "MY1712"
+	secretnext = "MY1712"
+	sky1 = "MY170436"
+	music = "D_MY1711"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1712 "cool cool shotgun"
+{
+	titlepatch = "MY17V11"
+	next = "MY1713"
+	secretnext = "MY1713"
+	sky1 = "SKY2"
+	music = "D_MY1712"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1713 "koopa anomaly"
+{
+	titlepatch = "MY17V12"
+	next = "MY1714"
+	secretnext = "MY1714"
+	sky1 = "SKY2"
+	music = "D_MY1713"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1714 "absolute zero"
+{
+	titlepatch = "MY17V13"
+	next = "MY1715"
+	secretnext = "MY1715"
+	sky1 = "SKY2"
+	music = "D_MY1714"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1715 "ziegenhaus"
+{
+	titlepatch = "MY17V14"
+	next = "MY1716"
+	secretnext = "MY1731"
+	sky1 = "SKY2"
+	music = "D_MY1715"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1716 "skyward vivarium"
+{
+	titlepatch = "MY17V15"
+	next = "MY1717"
+	secretnext = "MY1717"
+	sky1 = "SKY2"
+	music = "D_MY1716"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1717 "all the monster's teeth are perfect"
+{
+	titlepatch = "MY17V16"
+	next = "MY1718"
+	secretnext = "MY1718"
+	sky1 = "SKY2"
+	music = "D_MY1717"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1718 "this plumber wants cake"
+{
+	titlepatch = "MY17V17"
+	next = "MY1719"
+	secretnext = "MY1719"
+	sky1 = "SKY2"
+	music = "D_MY1718"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1719 "your princess is in another fort..."
+{
+	titlepatch = "MY17V18"
+	next = "MY1720"
+	secretnext = "MY1720"
+	sky1 = "SKY2"
+	music = "D_MY1719"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1720 "transformation palace"
+{
+	titlepatch = "MY17V19"
+	next = "MY1721"
+	secretnext = "MY1721"
+	sky1 = "SKY2"
+	music = "D_MY1720"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1721 "rainbow road"
+{
+	titlepatch = "MY17V20"
+	next = "MY1722"
+	secretnext = "MY1722"
+	sky1 = "SKY3"
+	music = "D_MY1721"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1722 "chocolate starfish islands"
+{
+	titlepatch = "MY17V21"
+	next = "MY1723"
+	secretnext = "MY1723"
+	sky1 = "SKY3"
+	music = "D_MY1722"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1723 "down the wrong pipe"
+{
+	titlepatch = "MY17V22"
+	next = "MY1724"
+	secretnext = "MY1724"
+	sky1 = "SKY3"
+	music = "D_MY1723"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1724 "bowser's daddy dungeon"
+{
+	titlepatch = "MY17V23"
+	next = "MY1725"
+	secretnext = "MY1725"
+	sky1 = "SKY3"
+	music = "D_MY1724"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1725 "bastille bowser"
+{
+	titlepatch = "MY17V24"
+	next = "MY1726"
+	secretnext = "MY1726"
+	sky1 = "SKY3"
+	music = "D_MY1725"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1726 "bowser in the black abyss"
+{
+	titlepatch = "MY17V25"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_MY1726"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1731 "sinkysand switchland"
+{
+	titlepatch = "MY17V30"
+	next = "MY1716"
+	secretnext = "MY1732"
+	sky1 = "SKY3"
+	music = "D_MY1731"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}
+
+map MY1732 "return to birabuto kingdom"
+{
+	titlepatch = "MY17V31"
+	next = "MY1716"
+	secretnext = "MY1716"
+	sky1 = "SKY3"
+	music = "D_MY1732"
+	intermusic = "D_MY17IN"
+	ExitPic = "MY17INT"
+	EnterPic = "MY17INT"
+}

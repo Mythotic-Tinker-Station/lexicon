@@ -1,0 +1,164 @@
+// Equinox Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map EQNX01 "Equinox Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "EQNX02"
+	secretnext = "EQNX02"
+	sky1 = "EQNX0123"
+	music = "D_EQNX01"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX02 "Equinox Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "EQNX03"
+	secretnext = "EQNX03"
+	sky1 = "EQNX0123"
+	music = "D_EQNX02"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX03 "Equinox Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "EQNX04"
+	secretnext = "EQNX04"
+	sky1 = "EQNX0123"
+	music = "D_EQNX03"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX04 "Equinox Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "EQNX05"
+	secretnext = "EQNX05"
+	sky1 = "EQNX0123"
+	music = "D_EQNX04"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX05 "Equinox Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "EQNX06"
+	secretnext = "EQNX06"
+	sky1 = "EQNX0123"
+	music = "D_EQNX05"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX06 "Equinox Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "EQNX07"
+	secretnext = "EQNX07"
+	sky1 = "EQNX0123"
+	music = "D_EQNX06"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX07 "Equinox Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "EQNX08"
+	secretnext = "EQNX08"
+	sky1 = "EQNX0123"
+	music = "D_EQNX07"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+	Map07Special
+}
+
+map EQNX08 "Equinox Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "EQNX09"
+	secretnext = "EQNX09"
+	sky1 = "EQNX0123"
+	music = "D_EQNX08"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX09 "Equinox Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "EQNX10"
+	secretnext = "EQNX10"
+	sky1 = "EQNX0123"
+	music = "D_EQNX09"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX10 "Equinox Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "EQNX11"
+	secretnext = "EQNX11"
+	sky1 = "EQNX0123"
+	music = "D_EQNX10"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX11 "Equinox Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "EQNX12"
+	secretnext = "EQNX12"
+	sky1 = "EQNX0123"
+	music = "D_EQNX11"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX12 "Equinox Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "EQNX13"
+	secretnext = "EQNX13"
+	sky1 = "EQNX0124"
+	music = "D_EQNX12"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}
+
+map EQNX13 "Equinox Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "EQNX0124"
+	music = "D_EQNX13"
+	intermusic = "D_EQNXIN"
+	ExitPic = "EQNXINT"
+	EnterPic = "EQNXINT"
+}

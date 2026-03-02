@@ -1,0 +1,180 @@
+// Deus Vult Mapinfo
+
+defaultmap
+{
+	compat_shorttex = 1
+	compat_limitpain = 1
+	compat_dropoff = 1
+	compat_trace = 0
+	compat_boomscroll = 0
+	nojump
+	nocrouch
+}
+
+map DSV201 "Entryway Pass"
+{
+	titlepatch = "DSV2V00"
+	next = "DSV202"
+	secretnext = "DSV202"
+	sky1 = "DSV24246"
+	music = "D_DSV201"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV202 "Mutagen"
+{
+	titlepatch = "DSV2V01"
+	next = "DSV203"
+	secretnext = "DSV203"
+	sky1 = "DSV24246"
+	music = "D_DSV202"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV203 "Crouching Demon, Hidden Archvile"
+{
+	titlepatch = "DSV2V02"
+	next = "DSV212"
+	secretnext = "DSV212"
+	sky1 = "DSV24246"
+	music = "D_DSV203"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV212 "Minas Morgul"
+{
+	titlepatch = "DSV2V11"
+	next = "DSV213"
+	secretnext = "DSV213"
+	sky1 = "DSV24249"
+	music = "D_DSV212"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV213 "Eagle's Nest"
+{
+	titlepatch = "DSV2V12"
+	next = "DSV219"
+	secretnext = "DSV219"
+	sky1 = "DSV24249"
+	music = "D_DSV213"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV219 "Stargate"
+{
+	titlepatch = "DSV2V18"
+	next = "DSV220"
+	secretnext = "DSV220"
+	sky1 = "DSV24249"
+	music = "D_DSV219"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV220 "Desert Temple"
+{
+	titlepatch = "DSV2V19"
+	next = "DSV221"
+	secretnext = "DSV221"
+	sky1 = "DSV24249"
+	music = "D_DSV220"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV221 "The Unholy Cathedral"
+{
+	titlepatch = "DSV2V20"
+	next = "DSV222"
+	secretnext = "DSV222"
+	sky1 = "DSV24250"
+	music = "D_DSV221"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV222 "You Shall Not Pass!"
+{
+	titlepatch = "DSV2V21"
+	next = "DSV223"
+	secretnext = "DSV223"
+	sky1 = "DSV24250"
+	music = "D_DSV222"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV223 "Hell's Vendetta"
+{
+	titlepatch = "DSV2V22"
+	next = "DSV229"
+	secretnext = "DSV229"
+	sky1 = "DSV24250"
+	music = "D_DSV223"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV229 "Saint Peter's Gate"
+{
+	titlepatch = "DSV2V28"
+	next = "DSV230"
+	secretnext = "DSV231"
+	sky1 = "DSV24250"
+	music = "D_DSV229"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV230 "Saint Peter's Gate"
+{
+	titlepatch = "DSV2V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSV24250"
+	music = "D_DSV229"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV231 "The Manliest Level Yet"
+{
+	titlepatch = "DSV2V30"
+	next = "DSV219"
+	secretnext = "DSV232"
+	sky1 = "DSV24250"
+	music = "D_DSV231"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}
+
+map DSV232 "Sauron's Gauntlets!"
+{
+	titlepatch = "DSV2V31"
+	next = "DSV230"
+	secretnext = "DSV230"
+	sky1 = "DSV24250"
+	music = "D_DSV232"
+	intermusic = "D_DSV2IN"
+	ExitPic = "DSV2INT"
+	EnterPic = "DSV2INT"
+}

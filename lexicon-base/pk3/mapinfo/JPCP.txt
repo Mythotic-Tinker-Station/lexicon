@@ -1,0 +1,392 @@
+// Japanese Community Project Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map JPCP01 "First Assault"
+{
+	titlepatch = "JPCPV00"
+	next = "JPCP02"
+	secretnext = "JPCP02"
+	sky1 = "JPCP0407"
+	music = "D_JPCP01"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP02 "Rural Mini-Base"
+{
+	titlepatch = "JPCPV01"
+	next = "JPCP03"
+	secretnext = "JPCP03"
+	sky1 = "JPCP0407"
+	music = "D_JPCP02"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP03 "The Sign of Armageddon"
+{
+	titlepatch = "JPCPV02"
+	next = "JPCP04"
+	secretnext = "JPCP04"
+	sky1 = "JPCP0407"
+	music = "D_JPCP03"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP04 "Thaumasia"
+{
+	titlepatch = "JPCPV03"
+	next = "JPCP05"
+	secretnext = "JPCP05"
+	sky1 = "JPCP0407"
+	music = "D_JPCP04"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP05 "Woodexial"
+{
+	titlepatch = "JPCPV04"
+	next = "JPCP06"
+	secretnext = "JPCP06"
+	sky1 = "JPCP0407"
+	music = "D_JPCP05"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP06 "Riminshi Valley"
+{
+	titlepatch = "JPCPV05"
+	next = "JPCP07"
+	secretnext = "JPCP07"
+	sky1 = "JPCP0407"
+	music = "D_JPCP06"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP07 "Confused Arena"
+{
+	titlepatch = "JPCPV06"
+	next = "JPCP08"
+	secretnext = "JPCP08"
+	sky1 = "JPCP0407"
+	music = "D_JPCP07"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+	Map07Special
+}
+
+map JPCP08 "54-pit"
+{
+	titlepatch = "JPCPV07"
+	next = "JPCP09"
+	secretnext = "JPCP09"
+	sky1 = "JPCP0407"
+	music = "D_JPCP08"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP09 "The Three World"
+{
+	titlepatch = "JPCPV08"
+	next = "JPCP10"
+	secretnext = "JPCP10"
+	sky1 = "JPCP0407"
+	music = "D_JPCP09"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP10 "The Odd Encampment"
+{
+	titlepatch = "JPCPV09"
+	next = "JPCP11"
+	secretnext = "JPCP11"
+	sky1 = "JPCP0407"
+	music = "D_JPCP10"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP11 "My fav"
+{
+	titlepatch = "JPCPV10"
+	next = "JPCP12"
+	secretnext = "JPCP12"
+	sky1 = "JPCP0407"
+	music = "D_JPCP11"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP12 "Magnetic force apparatus"
+{
+	titlepatch = "JPCPV11"
+	next = "JPCP13"
+	secretnext = "JPCP13"
+	sky1 = "JPCP0408"
+	music = "D_JPCP12"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP13 "Bad Morning"
+{
+	titlepatch = "JPCPV12"
+	next = "JPCP14"
+	secretnext = "JPCP14"
+	sky1 = "JPCP0408"
+	music = "D_JPCP13"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP14 "G_T_Factory"
+{
+	titlepatch = "JPCPV13"
+	next = "JPCP15"
+	secretnext = "JPCP15"
+	sky1 = "JPCP0408"
+	music = "D_JPCP14"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP15 "Nandeyanen"
+{
+	titlepatch = "JPCPV14"
+	next = "JPCP16"
+	secretnext = "JPCP31"
+	sky1 = "JPCP0408"
+	music = "D_JPCP15"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP16 "Forlorn Defense Line"
+{
+	titlepatch = "JPCPV15"
+	next = "JPCP17"
+	secretnext = "JPCP17"
+	sky1 = "JPCP0408"
+	music = "D_JPCP16"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP17 "UAC energy plant"
+{
+	titlepatch = "JPCPV16"
+	next = "JPCP18"
+	secretnext = "JPCP18"
+	sky1 = "JPCP0408"
+	music = "D_JPCP17"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP18 "Space Port Panik"
+{
+	titlepatch = "JPCPV17"
+	next = "JPCP19"
+	secretnext = "JPCP19"
+	sky1 = "JPCP0408"
+	music = "D_JPCP18"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP19 "Remind"
+{
+	titlepatch = "JPCPV18"
+	next = "JPCP20"
+	secretnext = "JPCP20"
+	sky1 = "JPCP0408"
+	music = "D_JPCP19"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP20 "Escape from UAC space base"
+{
+	titlepatch = "JPCPV19"
+	next = "JPCP21"
+	secretnext = "JPCP21"
+	sky1 = "JPCP0408"
+	music = "D_JPCP20"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP21 "Search and Destroy"
+{
+	titlepatch = "JPCPV20"
+	next = "JPCP22"
+	secretnext = "JPCP22"
+	sky1 = "JPCP0409"
+	music = "D_JPCP21"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP22 "A den of vice"
+{
+	titlepatch = "JPCPV21"
+	next = "JPCP23"
+	secretnext = "JPCP23"
+	sky1 = "JPCP0409"
+	music = "D_JPCP22"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP23 "Thermal disposal place"
+{
+	titlepatch = "JPCPV22"
+	next = "JPCP24"
+	secretnext = "JPCP24"
+	sky1 = "JPCP0409"
+	music = "D_JPCP23"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP24 "Probably Maybe Certainly"
+{
+	titlepatch = "JPCPV23"
+	next = "JPCP25"
+	secretnext = "JPCP25"
+	sky1 = "JPCP0409"
+	music = "D_JPCP24"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP25 "Cakravartin's miscalculation"
+{
+	titlepatch = "JPCPV24"
+	next = "JPCP26"
+	secretnext = "JPCP26"
+	sky1 = "JPCP0409"
+	music = "D_JPCP25"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP26 "Embodiment Of Maliciousness"
+{
+	titlepatch = "JPCPV25"
+	next = "JPCP27"
+	secretnext = "JPCP27"
+	sky1 = "JPCP0409"
+	music = "D_JPCP26"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP27 "A resplendent emerald green"
+{
+	titlepatch = "JPCPV26"
+	next = "JPCP28"
+	secretnext = "JPCP28"
+	sky1 = "JPCP0409"
+	music = "D_JPCP27"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP28 "HeLLport"
+{
+	titlepatch = "JPCPV27"
+	next = "JPCP29"
+	secretnext = "JPCP29"
+	sky1 = "JPCP0409"
+	music = "D_JPCP28"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP29 "hazmat hazama"
+{
+	titlepatch = "JPCPV28"
+	next = "JPCP30"
+	secretnext = "JPCP30"
+	sky1 = "JPCP0409"
+	music = "D_JPCP29"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP30 "Every beginning has an end"
+{
+	titlepatch = "JPCPV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "JPCP0409"
+	music = "D_JPCP30"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP31 "Manufacturing Plant"
+{
+	titlepatch = "JPCPV30"
+	next = "JPCP16"
+	secretnext = "JPCP32"
+	sky1 = "JPCP0409"
+	music = "D_JPCP31"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}
+
+map JPCP32 "Blood Fund Gang"
+{
+	titlepatch = "JPCPV31"
+	next = "JPCP16"
+	secretnext = "JPCP16"
+	sky1 = "JPCP0409"
+	music = "D_JPCP32"
+	intermusic = "D_JPCPIN"
+	ExitPic = "JPCPINT"
+	EnterPic = "JPCPINT"
+}

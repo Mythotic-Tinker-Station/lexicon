@@ -1,0 +1,12 @@
+// Barrel
+object Lexicon_SNLU_ExplosiveBarrel
+{
+	frame LX04Y { light ROCKET_X1 }
+	frame LX04Z { light ROCKET_X2 }
+	frame BEXPE { light ROCKET_X3 }
+}
+
+object Lexicon_SNLU_BurningBarrel
+{
+    frame LX04 { light FIREBARREL }
+}

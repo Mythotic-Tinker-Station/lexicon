@@ -1,0 +1,381 @@
+// Doom: Damnation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DDAME1M1 "UAC Base"
+{
+	titlepatch = "WILV00"
+	next = "DDAME1M2"
+	secretnext = "DDAME1M2"
+	sky1 = "DSKY1"
+	music = "D_DDAM01"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M2 "Nuclear Plant"
+{
+	titlepatch = "WILV01"
+	next = "DDAME1M3"
+	secretnext = "DDAME1M3"
+	sky1 = "DSKY1"
+	music = "D_DDAM02"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M3 "Prison Area"
+{
+	titlepatch = "WILV02"
+	next = "DDAME1M4"
+	secretnext = "DDAME1M9"
+	sky1 = "DSKY1"
+	music = "D_DDAM03"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M4 "Crimson Mines"
+{
+	titlepatch = "WILV03"
+	next = "DDAME1M5"
+	secretnext = "DDAME1M5"
+	sky1 = "DSKY1"
+	music = "D_DDAM04"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M5 "Powerhouse"
+{
+	titlepatch = "WILV04"
+	next = "DDAME1M6"
+	secretnext = "DDAME1M6"
+	sky1 = "DSKY1"
+	music = "D_DDAM05"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M6 "Warpgate Research Facility"
+{
+	titlepatch = "WILV05"
+	next = "DDAME1M7"
+	secretnext = "DDAME1M7"
+	sky1 = "DSKY1"
+	music = "D_DDAM06"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M7 "The Core"
+{
+	titlepatch = "WILV06"
+	next = "DDAME1M8"
+	secretnext = "DDAME1M8"
+	sky1 = "DSKY1"
+	music = "D_DDAM07"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME1M8 "The Guardians"
+{
+	titlepatch = "WILV07"
+	next = "DDAME2M1"
+	secretnext = "DDAME2M1"
+	sky1 = "DSKY1"
+	music = "D_DDAM08"
+	intermusic = "D_DDAMIN"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map DDAME1M9 "Phobos Sewers"
+{
+	titlepatch = "WILV08"
+	next = "DDAME1M4"
+	secretnext = "DDAME1M4"
+	sky1 = "DSKY1"
+	music = "D_DDAM09"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M1 "Deimos Satellite"
+{
+	titlepatch = "WILV10"
+	next = "DDAME2M2"
+	secretnext = "DDAME2M2"
+	sky1 = "DSKY2"
+	music = "D_DDAM10"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M2 "Sector 0"
+{
+	titlepatch = "WILV11"
+	next = "DDAME2M3"
+	secretnext = "DDAME2M3"
+	sky1 = "DSKY2"
+	music = "D_DDAM11"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M3 "Warehouse"
+{
+	titlepatch = "WILV12"
+	next = "DDAME2M4"
+	secretnext = "DDAME2M4"
+	sky1 = "DSKY2"
+	music = "D_DDAM12"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M4 "Deimos Base"
+{
+	titlepatch = "WILV13"
+	next = "DDAME2M5"
+	secretnext = "DDAME2M5"
+	sky1 = "DSKY2"
+	music = "D_DDAM13"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M5 "The Temple"
+{
+	titlepatch = "WILV14"
+	next = "DDAME2M6"
+	secretnext = "DDAME2M9"
+	sky1 = "DSKY2"
+	music = "D_DDAM14"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M6 "Volcano"
+{
+	titlepatch = "WILV15"
+	next = "DDAME2M7"
+	secretnext = "DDAME2M7"
+	sky1 = "DSKY2"
+	music = "D_DDAM15"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M7 "The Legion"
+{
+	titlepatch = "WILV16"
+	next = "DDAME2M8"
+	secretnext = "DDAME2M8"
+	sky1 = "DSKY2"
+	music = "D_DDAM16"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME2M8 "Hellgate"
+{
+	titlepatch = "WILV17"
+	next = "DDAME3M1"
+	secretnext = "DDAME3M1"
+	sky1 = "DSKY2"
+	music = "D_DDAM17"
+	intermusic = "D_DDAMIN"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map DDAME2M9 "Chaos Fissure"
+{
+	titlepatch = "WILV18"
+	next = "DDAME2M6"
+	secretnext = "DDAME2M6"
+	sky1 = "DSKY2"
+	music = "D_DDAM18"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M1 "Shores of Hell"
+{
+	titlepatch = "WILV20"
+	next = "DDAME3M2"
+	secretnext = "DDAME3M2"
+	sky1 = "DSKY3"
+	music = "D_DDAM19"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M2 "Unholy Valley"
+{
+	titlepatch = "WILV21"
+	next = "DDAME3M3"
+	secretnext = "DDAME3M3"
+	sky1 = "DSKY3"
+	music = "D_DDAM20"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M3 "Pandeimos"
+{
+	titlepatch = "WILV22"
+	next = "DDAME3M4"
+	secretnext = "DDAME3M4"
+	sky1 = "DSKY3"
+	music = "D_DDAM21"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M4 "Deathlight"
+{
+	titlepatch = "WILV23"
+	next = "DDAME3M5"
+	secretnext = "DDAME3M5"
+	sky1 = "DSKY3"
+	music = "D_DDAM22"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M5 "The Eternal Citadel"
+{
+	titlepatch = "WILV24"
+	next = "DDAME3M6"
+	secretnext = "DDAME3M6"
+	sky1 = "DSKY3"
+	music = "D_DDAM23"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M6 "Infernal Kiln"
+{
+	titlepatch = "WILV25"
+	next = "DDAME3M7"
+	secretnext = "DDAME3M9"
+	sky1 = "DSKY3"
+	music = "D_DDAM24"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M7 "Event Horizon"
+{
+	titlepatch = "WILV26"
+	next = "DDAME3M8"
+	secretnext = "DDAME3M8"
+	sky1 = "DSKY3"
+	music = "D_DDAM25"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME3M8 "The First Portal"
+{
+	titlepatch = "WILV27"
+	next = "DDAME4M1"
+	secretnext = "DDAME4M1"
+	sky1 = "DSKY3"
+	music = "D_DDAM26"
+	intermusic = "D_DDAMIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map DDAME3M9 "Pit of Nightmares"
+{
+	titlepatch = "WILV28"
+	next = "DDAME3M7"
+	secretnext = "DDAME3M7"
+	sky1 = "DSKY3"
+	music = "D_DDAM27"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M1 "UAC Earth"
+{
+	titlepatch = "WILV30"
+	next = "DDAME4M2"
+	secretnext = "DDAME4M2"
+	sky1 = "DSKY4"
+	music = "D_DDAM22"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M2 "Corrupted Sewers"
+{
+	titlepatch = "WILV31"
+	next = "DDAME4M3"
+	secretnext = "DDAME4M9"
+	sky1 = "DSKY4"
+	music = "D_DDAM20"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M3 "Secret Chapel"
+{
+	titlepatch = "WILV32"
+	next = "DDAME4M4"
+	secretnext = "DDAME4M4"
+	sky1 = "DSKY4"
+	music = "D_DDAM21"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M4 "Doomed City"
+{
+	titlepatch = "WILV33"
+	next = "DDAME4M5"
+	secretnext = "DDAME4M5"
+	sky1 = "DSKY4"
+	music = "D_DDAM05"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M5 "Gore Nest"
+{
+	titlepatch = "WILV34"
+	next = "DDAME4M6"
+	secretnext = "DDAME4M6"
+	sky1 = "DSKY4"
+	music = "D_DDAM16"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M6 "Forest of Desolation"
+{
+	titlepatch = "WILV35"
+	next = "DDAME4M7"
+	secretnext = "DDAME4M7"
+	sky1 = "DSKY4"
+	music = "D_DDAM13"
+	intermusic = "D_DDAMIN"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map DDAME4M7 "UAC Alpha"
+{
+	titlepatch = "WILV36"
+	next = "DDAME4M8"
+	secretnext = "DDAME4M8"
+	sky1 = "DSKY4"
+	music = "D_DDAM15"
+	intermusic = "D_DDAMIN"
+}
+
+map DDAME4M8 "Hell on Earth"
+{
+	titlepatch = "WILV37"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "D_DDAM14"
+	intermusic = "D_DDAMIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map DDAME4M9 "The Canyon"
+{
+	titlepatch = "WILV38"
+	next = "DDAME4M3"
+	secretnext = "DDAME4M3"
+	sky1 = "DSKY4"
+	music = "D_DDAM09"
+	intermusic = "D_DDAMIN"
+}

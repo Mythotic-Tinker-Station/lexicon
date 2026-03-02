@@ -1,0 +1,367 @@
+// Bourgeois Deathmatch Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BOUR01 "Darken"
+{
+	titlepatch = "BOURV00"
+	next = "BOUR02"
+	secretnext = "BOUR02"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR01"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR02 "Keepsake"
+{
+	titlepatch = "BOURV01"
+	next = "BOUR03"
+	secretnext = "BOUR03"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR02"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR03 "Solitary Refinement"
+{
+	titlepatch = "BOURV02"
+	next = "BOUR04"
+	secretnext = "BOUR04"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR03"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR04 "Tutorials Work"
+{
+	titlepatch = "BOURV03"
+	next = "BOUR05"
+	secretnext = "BOUR05"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR04"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR05 "Almighty Sweep"
+{
+	titlepatch = "BOURV04"
+	next = "BOUR06"
+	secretnext = "BOUR06"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR05"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR06 "Fade"
+{
+	titlepatch = "BOURV05"
+	next = "BOUR07"
+	secretnext = "BOUR07"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR06"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR07 "Tech Simple"
+{
+	titlepatch = "BOURV06"
+	next = "BOUR08"
+	secretnext = "BOUR08"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR07"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR08 "Dwango'd Decay"
+{
+	titlepatch = "BOURV07"
+	next = "BOUR09"
+	secretnext = "BOUR09"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR08"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR09 "It's Not a Donut"
+{
+	titlepatch = "BOURV08"
+	next = "BOUR10"
+	secretnext = "BOUR10"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR09"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR10 "Broken Format"
+{
+	titlepatch = "BOURV09"
+	next = "BOUR11"
+	secretnext = "BOUR11"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR10"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR11 "Operation Vanilla Extract"
+{
+	titlepatch = "BOURV10"
+	next = "BOUR12"
+	secretnext = "BOUR12"
+	sky1 = "BOUR0026", 0.0
+	music = "D_BOUR11"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR12 "Deactivation"
+{
+	titlepatch = "BOURV11"
+	next = "BOUR13"
+	secretnext = "BOUR13"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR12"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR13 "Grey Noise"
+{
+	titlepatch = "BOURV12"
+	next = "BOUR14"
+	secretnext = "BOUR14"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR13"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR14 "Joint Effort"
+{
+	titlepatch = "BOURV13"
+	next = "BOUR15"
+	secretnext = "BOUR15"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR14"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR15 "Chaotic Zone"
+{
+	titlepatch = "BOURV14"
+	next = "BOUR16"
+	secretnext = "BOUR31"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR15"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR16 "Brushed Off"
+{
+	titlepatch = "BOURV15"
+	next = "BOUR17"
+	secretnext = "BOUR17"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR16"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR17 "Demon Base"
+{
+	titlepatch = "BOURV16"
+	next = "BOUR18"
+	secretnext = "BOUR18"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR17"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR18 "Skies the Limits"
+{
+	titlepatch = "BOURV17"
+	next = "BOUR19"
+	secretnext = "BOUR19"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR18"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR19 "Future Disrespect"
+{
+	titlepatch = "BOURV18"
+	next = "BOUR20"
+	secretnext = "BOUR20"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR19"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR20 "Wrong Format"
+{
+	titlepatch = "BOURV19"
+	next = "BOUR21"
+	secretnext = "BOUR21"
+	sky1 = "BOUR0063", 0.0
+	music = "D_BOUR20"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR21 "Pretending to be Original"
+{
+	titlepatch = "BOURV20"
+	next = "BOUR22"
+	secretnext = "BOUR22"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR21"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR22 "Wango Tango"
+{
+	titlepatch = "BOURV21"
+	next = "BOUR23"
+	secretnext = "BOUR23"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR22"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR23 "Hell's Decent"
+{
+	titlepatch = "BOURV22"
+	next = "BOUR24"
+	secretnext = "BOUR24"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR23"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR24 "Midnight Sacrifice"
+{
+	titlepatch = "BOURV23"
+	next = "BOUR25"
+	secretnext = "BOUR25"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR24"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR25 "'Mazing"
+{
+	titlepatch = "BOURV24"
+	next = "BOUR26"
+	secretnext = "BOUR26"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR25"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR26 "Demade and Dismayed"
+{
+	titlepatch = "BOURV25"
+	next = "BOUR27"
+	secretnext = "BOUR27"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR26"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR27 "Discommodius"
+{
+	titlepatch = "BOURV26"
+	next = "BOUR28"
+	secretnext = "BOUR28"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR27"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR28 "Spiritual World"
+{
+	titlepatch = "BOURV27"
+	next = "BOUR29"
+	secretnext = "BOUR29"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR28"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR29 "Twilight in September"
+{
+	titlepatch = "BOURV28"
+	next = "BOUR30"
+	secretnext = "BOUR30"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR29"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}
+
+map BOUR30 "Delineated Light"
+{
+	titlepatch = "BOURV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3", 0.0
+	music = "D_BOUR30"
+	intermusic = "D_BOURIN"
+	ExitPic = "BOURINT"
+	EnterPic = "BOURINT"
+}

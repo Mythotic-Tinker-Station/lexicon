@@ -1,0 +1,3511 @@
+WallTexture "UHRN0407", 1024, 128
+{
+	Patch "UHRN1745", 0, 0
+	Patch "UHRN1746", 256, 0
+	Patch "UHRN1747", 512, 0
+	Patch "UHRN1748", 768, 0
+}
+
+WallTexture "UHRN0412", 128, 128
+{
+	Patch "TP2_1", 0, 0
+	Patch "UHRN1759", 0, 72
+	Patch "UHRN1759", 64, 72
+	Patch "UHRN2707", 96, 120
+	Patch "UHRN2707", 96, 64
+	Patch "UHRN2707", 64, 120
+	Patch "UHRN2707", 64, 64
+	Patch "UHRN2707", 32, 120
+	Patch "UHRN2707", 32, 64
+	Patch "UHRN2707", 0, 120
+	Patch "UHRN2707", 0, 64
+}
+
+WallTexture "UHRN0413", 128, 128
+{
+	Patch "TP2_1", 0, 0
+	Patch "UHRN1766", 0, 72
+	Patch "UHRN2715", 96, 64
+	Patch "UHRN2715", 64, 64
+	Patch "UHRN2715", 32, 120
+	Patch "UHRN2715", 32, 64
+	Patch "UHRN2715", 0, 120
+	Patch "UHRN2715", 0, 64
+	Patch "UHRN1766", 64, 72
+	Patch "UHRN2715", 96, 120
+	Patch "UHRN2715", 64, 120
+}
+
+WallTexture "UHRN0414", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W106_1", 0, 0
+}
+
+WallTexture "UHRN0415", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W107_1", 0, 0
+}
+
+WallTexture "UHRN0416", 64, 128
+{
+	Patch "UHRN1677", 0, 0
+	Patch "UHRN1677", 0, 64
+}
+
+WallTexture "UHRN0417", 128, 128
+{
+	Patch "UHRN1641", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+WallTexture "UHRN0418", 128, 128
+{
+	Patch "UHRN1642", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+WallTexture "UHRN0419", 256, 128
+{
+	Patch "UHRN1680", 32, 0
+	Patch "UHRN1682", 96, 0
+	Patch "UHRN1678", 160, 0
+	Patch "UHRN1679", 0, 64
+	Patch "UHRN1681", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "UHRN1668", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "UHRN1678", 0, 0
+}
+
+WallTexture "UHRN0420", 64, 128
+{
+	Patch "UHRN1679", 0, 0
+	Patch "UHRN1679", 0, 64
+}
+
+WallTexture "UHRN0423", 64, 128
+{
+	Patch "UHRN1647", 0, 0
+	Patch "UHRN1649", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0424", 64, 128
+{
+	Patch "UHRN1647", 0, 0
+	Patch "UHRN1649", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0425", 64, 128
+{
+	Patch "UHRN1647", 0, 0
+	Patch "UHRN1649", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0426", 64, 128
+{
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 32, 0
+	Patch "UHRN1644", 0, 64
+	Patch "UHRN1646", 32, 64
+}
+
+WallTexture "UHRN0427", 64, 128
+{
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0428", 64, 128
+{
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0429", 64, 128
+{
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0430", 64, 128
+{
+	Patch "UHRN2595", 0, 0
+	Patch "UHRN2598", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0431", 64, 128
+{
+	Patch "UHRN1652", 0, 0
+	Patch "UHRN1652", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0432", 64, 128
+{
+	Patch "UHRN1652", 0, 0
+	Patch "UHRN1652", 32, 0
+	Patch "UHRN1644", 0, 64
+	Patch "UHRN1646", 32, 64
+}
+
+WallTexture "UHRN0433", 64, 128
+{
+	Patch "UHRN2600", 0, 0
+	Patch "UHRN2600", 32, 0
+	Patch "UHRN1644", 0, 64
+	Patch "UHRN1646", 32, 64
+}
+
+WallTexture "UHRN0434", 64, 128
+{
+	Patch "UHRN2600", 0, 0
+	Patch "UHRN2600", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0435", 64, 128
+{
+	Patch "UHRN2600", 0, 0
+	Patch "UHRN2600", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0436", 64, 128
+{
+	Patch "UHRN2600", 0, 0
+	Patch "UHRN2600", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0437", 64, 128
+{
+	Patch "UHRN2596", 0, 0
+	Patch "UHRN2596", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0438", 64, 128
+{
+	Patch "UHRN2596", 0, 0
+	Patch "UHRN2596", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0439", 64, 128
+{
+	Patch "UHRN2591", 0, 0
+	Patch "UHRN2591", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0440", 64, 128
+{
+	Patch "UHRN2591", 0, 0
+	Patch "UHRN2591", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0441", 64, 128
+{
+	Patch "UHRN1652", 0, 0
+	Patch "UHRN1652", 32, 0
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2598", 32, 64
+}
+
+WallTexture "UHRN0442", 64, 128
+{
+	Patch "UHRN1652", 0, 0
+	Patch "UHRN1652", 32, 0
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2593", 32, 64
+}
+
+WallTexture "UHRN0443", 64, 128
+{
+	Patch "UHRN2591", 0, 0
+	Patch "UHRN2591", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0444", 64, 128
+{
+	Patch "UHRN2591", 0, 0
+	Patch "UHRN2591", 32, 0
+	Patch "UHRN1644", 0, 64
+	Patch "UHRN1646", 32, 64
+}
+
+WallTexture "UHRN0445", 64, 128
+{
+	Patch "UHRN2596", 0, 0
+	Patch "UHRN2596", 32, 0
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1649", 32, 64
+}
+
+WallTexture "UHRN0446", 64, 128
+{
+	Patch "UHRN2596", 0, 0
+	Patch "UHRN2596", 32, 0
+	Patch "UHRN1644", 0, 64
+	Patch "UHRN1646", 32, 64
+}
+
+WallTexture "UHRN0447", 64, 16
+{
+	Patch "UHRN1653", 0, 0
+	Patch "UHRN1653", 16, 0
+	Patch "UHRN1653", 32, 0
+	Patch "UHRN1653", 48, 0
+}
+
+WallTexture "UHRN0448", 64, 16
+{
+	Patch "UHRN2589", 0, 0
+	Patch "UHRN2589", 16, 0
+	Patch "UHRN2589", 32, 0
+	Patch "UHRN2589", 48, 0
+}
+
+WallTexture "UHRN0449", 64, 16
+{
+	Patch "UHRN2599", 0, 0
+	Patch "UHRN2599", 16, 0
+	Patch "UHRN2599", 32, 0
+	Patch "UHRN2599", 48, 0
+}
+
+WallTexture "UHRN0450", 64, 16
+{
+	Patch "UHRN2594", 0, 0
+	Patch "UHRN2594", 16, 0
+	Patch "UHRN2594", 32, 0
+	Patch "UHRN2594", 48, 0
+}
+
+WallTexture "UHRN0451", 128, 128
+{
+	Patch "UHRN1647", 0, 64
+	Patch "UHRN1648", 40, 64
+	Patch "UHRN1648", 32, 64
+	Patch "UHRN1648", 48, 64
+	Patch "UHRN1648", 56, 64
+	Patch "UHRN1649", 96, 64
+	Patch "UHRN1648", 88, 64
+	Patch "UHRN1648", 80, 64
+	Patch "UHRN1648", 72, 64
+	Patch "UHRN1648", 64, 64
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 96, 0
+	Patch "UHRN1645", 48, 0
+	Patch "UHRN1645", 40, 0
+	Patch "UHRN1645", 32, 0
+	Patch "UHRN1645", 72, 0
+	Patch "UHRN1645", 64, 0
+	Patch "UHRN1645", 56, 0
+	Patch "UHRN1645", 80, 0
+	Patch "UHRN1645", 88, 0
+}
+
+WallTexture "UHRN0453", 64, 128
+{
+	Patch "UHRN0452", 0, 0
+	Patch "UHRN2603", 0, 0
+	Patch "UHRN2603", 32, 0
+	Patch "UHRN2603", 32, 32
+	Patch "UHRN2603", 0, 32
+}
+
+WallTexture "UHRN0454", 64, 16
+{
+	Patch "UHRN2602", 0, 0
+	Patch "UHRN2602", 16, 0
+	Patch "UHRN2602", 32, 0
+	Patch "UHRN2602", 48, 0
+}
+
+WallTexture "UHRN0455", 128, 128
+{
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2597", 40, 64
+	Patch "UHRN2597", 32, 64
+	Patch "UHRN2597", 48, 64
+	Patch "UHRN2597", 56, 64
+	Patch "UHRN2598", 96, 64
+	Patch "UHRN2597", 88, 64
+	Patch "UHRN2597", 80, 64
+	Patch "UHRN2597", 72, 64
+	Patch "UHRN2597", 64, 64
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 96, 0
+	Patch "UHRN1645", 48, 0
+	Patch "UHRN1645", 40, 0
+	Patch "UHRN1645", 32, 0
+	Patch "UHRN1645", 72, 0
+	Patch "UHRN1645", 64, 0
+	Patch "UHRN1645", 56, 0
+	Patch "UHRN1645", 80, 0
+	Patch "UHRN1645", 88, 0
+}
+
+WallTexture "UHRN0456", 128, 128
+{
+	Patch "UHRN2595", 0, 64
+	Patch "UHRN2597", 40, 64
+	Patch "UHRN2597", 32, 64
+	Patch "UHRN2597", 48, 64
+	Patch "UHRN2597", 56, 64
+	Patch "UHRN2598", 96, 64
+	Patch "UHRN2597", 88, 64
+	Patch "UHRN2597", 80, 64
+	Patch "UHRN2597", 72, 64
+	Patch "UHRN2597", 64, 64
+	Patch "UHRN1647", 0, 0
+	Patch "UHRN1649", 96, 0
+	Patch "UHRN1648", 48, 0
+	Patch "UHRN1648", 40, 0
+	Patch "UHRN1648", 32, 0
+	Patch "UHRN1648", 72, 0
+	Patch "UHRN1648", 64, 0
+	Patch "UHRN1648", 56, 0
+	Patch "UHRN1648", 80, 0
+	Patch "UHRN1648", 88, 0
+}
+
+WallTexture "UHRN0457", 128, 128
+{
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2592", 40, 64
+	Patch "UHRN2592", 32, 64
+	Patch "UHRN2592", 48, 64
+	Patch "UHRN2592", 56, 64
+	Patch "UHRN2593", 96, 64
+	Patch "UHRN2592", 88, 64
+	Patch "UHRN2592", 80, 64
+	Patch "UHRN2592", 72, 64
+	Patch "UHRN2592", 64, 64
+	Patch "UHRN1644", 0, 0
+	Patch "UHRN1646", 96, 0
+	Patch "UHRN1645", 48, 0
+	Patch "UHRN1645", 40, 0
+	Patch "UHRN1645", 32, 0
+	Patch "UHRN1645", 72, 0
+	Patch "UHRN1645", 64, 0
+	Patch "UHRN1645", 56, 0
+	Patch "UHRN1645", 80, 0
+	Patch "UHRN1645", 88, 0
+}
+
+WallTexture "UHRN0458", 128, 128
+{
+	Patch "UHRN2590", 0, 64
+	Patch "UHRN2592", 40, 64
+	Patch "UHRN2592", 32, 64
+	Patch "UHRN2592", 48, 64
+	Patch "UHRN2592", 56, 64
+	Patch "UHRN2593", 96, 64
+	Patch "UHRN2592", 88, 64
+	Patch "UHRN2592", 80, 64
+	Patch "UHRN2592", 72, 64
+	Patch "UHRN2592", 64, 64
+	Patch "UHRN1647", 0, 0
+	Patch "UHRN1649", 96, 0
+	Patch "UHRN1648", 48, 0
+	Patch "UHRN1648", 40, 0
+	Patch "UHRN1648", 32, 0
+	Patch "UHRN1648", 72, 0
+	Patch "UHRN1648", 64, 0
+	Patch "UHRN1648", 56, 0
+	Patch "UHRN1648", 80, 0
+	Patch "UHRN1648", 88, 0
+}
+
+WallTexture "UHRN0460", 64, 128
+{
+	Patch "UHRN1683", 0, 64
+	Patch "UHRN1683", 0, 0
+	Patch "EXIT1", 17, 22
+}
+
+WallTexture "UHRN0461", 256, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 0
+	Patch "UHRN0633", 128, 0
+	Patch "UHRN0633", 192, 0
+	Patch "UHRN1803", 64, 0
+	Patch "UHRN1804", 128, 0
+	Patch "UHRN1804", 192, 0
+	Patch "UHRN1804", 0, 0
+	Patch "UHRN1804", 64, 56
+	Patch "UHRN1803", 128, 56
+	Patch "UHRN1804", 192, 56
+	Patch "UHRN1804", 0, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+}
+
+WallTexture "UHRN0469", 128, 128
+{
+	Patch "UHRN1683", 0, 64
+	Patch "UHRN1683", 64, 0
+	Patch "UHRN1684", 0, 0
+	Patch "UHRN1684", 64, 64
+}
+
+WallTexture "UHRN0470", 128, 128
+{
+	Patch "UHRN1686", 0, 0
+	Patch "UHRN1685", 0, 64
+	Patch "UHRN1686", 64, 64
+	Patch "UHRN1685", 64, 0
+}
+
+WallTexture "UHRN0471", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "UHRN1667", 20, 79
+}
+
+WallTexture "UHRN0472", 64, 128
+{
+	Patch "UHRN1677", 0, 64
+	Patch "UHRN1680", 0, 0
+	Patch "UHRN1677", 32, 64
+	Patch "SW2S0", 16, 72
+}
+
+WallTexture "UHRN0473", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "UHRN1667", 19, 79
+}
+
+WallTexture "UHRN0474", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "UHRN1667", 20, 68
+}
+
+WallTexture "UHRN0475", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "UHRN1667", 20, 80
+}
+
+WallTexture "UHRN0476", 64, 128
+{
+	Patch "UHRN1683", 0, 64
+	Patch "UHRN1683", 0, 0
+	Patch "SW1S0", 16, 78
+}
+
+WallTexture "UHRN0477", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "UHRN1667", 20, 79
+}
+
+WallTexture "UHRN0478", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "UHRN1667", 20, 84
+}
+
+WallTexture "UHRN0479", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "UHRN1666", 20, 79
+}
+
+WallTexture "UHRN0480", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "UHRN1666", 20, 80
+}
+
+WallTexture "UHRN0481", 64, 128
+{
+	Patch "UHRN1677", 0, 64
+	Patch "UHRN1680", 0, 0
+	Patch "UHRN1677", 32, 64
+	Patch "SW2S1", 16, 72
+}
+
+WallTexture "UHRN0482", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "UHRN1666", 19, 79
+}
+
+WallTexture "UHRN0483", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "UHRN1666", 20, 68
+}
+
+WallTexture "UHRN0484", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "UHRN1666", 20, 80
+}
+
+WallTexture "UHRN0485", 64, 128
+{
+	Patch "UHRN1683", 0, 64
+	Patch "UHRN1683", 0, 0
+	Patch "SW1S1", 16, 78
+}
+
+WallTexture "UHRN0486", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "UHRN1666", 20, 79
+}
+
+WallTexture "UHRN0487", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "UHRN1666", 20, 84
+}
+
+WallTexture "UHRN0488", 24, 72
+{
+	Patch "WALL00_3", 0, 0
+	Patch "WALL00_3", 12, -6
+}
+
+WallTexture "UHRN0492", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+
+WallTexture "UHRN0493", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+
+WallTexture "UHRN0494", 256, 128
+{
+	Patch "UHRN1669", 0, 0
+	Patch "UHRN1670", 64, 0
+	Patch "UHRN1672", 128, 0
+	Patch "UHRN1671", 192, 0
+	Patch "UHRN1674", 0, 64
+	Patch "UHRN1676", 64, 64
+	Patch "UHRN1675", 128, 64
+	Patch "UHRN1673", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+WallTexture "UHRN0495", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "COMP03_1", 64, 64
+	Patch "COMP03_2", 64, 0
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+}
+
+WallTexture "UHRN0496", 256, 128
+{
+	Patch "UHRN1701", 26, 64
+	Patch "UHRN1700", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "UHRN1701", 28, 0
+	Patch "UHRN1704", 72, 64
+	Patch "UHRN1703", 0, 0
+	Patch "UHRN1701", 176, 0
+	Patch "UHRN1701", 128, 64
+	Patch "UHRN1701", 112, 0
+	Patch "UHRN1701", 160, 64
+	Patch "UHRN1701", 136, 0
+	Patch "UHRN2503", 200, 0
+	Patch "UHRN2504", 200, 64
+	Patch "UHRN2505", 136, 64
+	Patch "UHRN1702", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+
+WallTexture "UHRN0497", 256, 128
+{
+	Patch "UHRN1701", 26, 64
+	Patch "UHRN2519", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "UHRN1701", 28, 0
+	Patch "UHRN1704", 72, 64
+	Patch "UHRN2520", 0, 0
+	Patch "UHRN1701", 176, 0
+	Patch "UHRN1701", 128, 64
+	Patch "UHRN1701", 112, 0
+	Patch "UHRN1701", 160, 64
+	Patch "UHRN1701", 136, 0
+	Patch "UHRN2503", 200, 0
+	Patch "UHRN2504", 200, 64
+	Patch "UHRN2506", 136, 64
+	Patch "UHRN1702", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+
+WallTexture "UHRN0498", 256, 56
+{
+	Patch "UHRN1669", 0, 0
+	Patch "UHRN1670", 64, 0
+	Patch "UHRN1671", 128, 0
+	Patch "UHRN1675", 192, 0
+}
+
+WallTexture "UHRN0499", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "UHRN1699", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "UHRN1669", 0, 0
+	Patch "UHRN1699", 96, 4
+	Patch "UHRN1670", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+
+WallTexture "UHRN0500", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "UHRN1708", 5, 0
+	Patch "UHRN1708", 35, 0
+}
+
+WallTexture "UHRN0501", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+
+WallTexture "UHRN0503", 16, 128
+{
+	Patch "UHRN1688", 0, 0
+	Patch "UHRN1688", 0, 56
+}
+
+WallTexture "UHRN0505", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "UHRN1709", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "UHRN1710", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "UHRN1711", 132, 69
+	Patch "UHRN1712", 68, 7
+	Patch "UHRN1713", 4, 7
+	Patch "UHRN1714", 132, 7
+	Patch "AG128_1", 192, 0
+	Patch "UHRN2539", 196, 7
+	Patch "UHRN2536", 196, 69
+}
+
+WallTexture "UHRN0506", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "UHRN2535", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "UHRN2536", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "UHRN2537", 132, 69
+	Patch "UHRN2541", 68, 7
+	Patch "UHRN2538", 4, 7
+	Patch "UHRN2540", 132, 7
+	Patch "AG128_1", 192, 0
+	Patch "UHRN2534", 196, 7
+	Patch "UHRN2542", 196, 69
+}
+
+WallTexture "UHRN0507", 128, 128
+{
+	Patch "UHRN1690", 0, 56
+	Patch "UHRN1691", 64, 56
+	Patch "UHRN1690", 0, 0
+	Patch "UHRN1691", 64, 0
+}
+
+WallTexture "UHRN0511", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+
+WallTexture "UHRN0512", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+
+WallTexture "UHRN0513", 64, 128
+{
+	Patch "UHRN1639", 40, 0
+	Patch "UHRN1639", 0, 0
+	Patch "UHRN1639", 19, 0
+}
+
+WallTexture "UHRN0514", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+
+WallTexture "UHRN0515", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "UHRN1667", 20, 80
+}
+
+WallTexture "UHRN0516", 128, 128
+{
+	Patch "UHRN0467", 0, 0
+	Patch "SW3S0", 48, 76
+}
+
+WallTexture "UHRN0517", 64, 128
+{
+	Patch "UHRN1684", 0, 0
+	Patch "UHRN1683", 0, 64
+	Patch "WARNB0", 24, 73
+}
+
+WallTexture "UHRN0518", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+
+WallTexture "UHRN0519", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+
+WallTexture "UHRN0520", 128, 128
+{
+	Patch "UHRN0467", 0, 0
+	Patch "SW3S1", 48, 76
+}
+
+WallTexture "UHRN0521", 64, 128
+{
+	Patch "UHRN1683", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "UHRN1684", 0, 0
+}
+
+WallTexture "UHRN0522", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+
+WallTexture "UHRN0531", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+
+WallTexture "UHRN0532", 256, 72
+{
+	Patch "WALL03_4", 0, 0
+	Patch "UHRN1726", 128, 0
+	Patch "WALL03_4", 64, 0
+	Patch "WALL03_4", 192, 0
+}
+
+WallTexture "UHRN0533", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
+}
+
+WallTexture "UHRN0534", 128, 128
+{
+	Patch "UHRN1728", 64, 66
+	Patch "UHRN1730", 0, 66
+	Patch "UHRN1729", 0, 0
+	Patch "UHRN1728", 64, 0
+}
+
+WallTexture "UHRN0535", 64, 128
+{
+	Patch "UHRN1731", 0, 0
+	Patch "UHRN1731", 0, 32
+	Patch "UHRN1731", 0, 96
+	Patch "UHRN1731", 0, 64
+}
+
+WallTexture "UHRN0536", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "UHRN1739", 14, 74
+}
+
+WallTexture "UHRN0537", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "UHRN1718", 0, 0
+}
+
+WallTexture "UHRN0538", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "UHRN1717", 4, 0
+	Patch "W32_4", 0, 64
+}
+
+WallTexture "UHRN0539", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "UHRN1708", 4, 18
+	Patch "UHRN1708", 38, 18
+}
+
+WallTexture "UHRN0540", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "UHRN1708", 81, 34
+	Patch "UHRN1708", 19, 34
+}
+
+WallTexture "UHRN0541", 16, 128
+{
+	Patch "UHRN1727", -4, 56
+	Patch "UHRN1727", -4, 0
+}
+
+WallTexture "UHRN0542", 64, 128
+{
+	Patch "UHRN1684", 0, 0
+	Patch "UHRN1683", 0, 64
+	Patch "UHRN1708", 7, 27
+	Patch "UHRN1708", 37, 27
+}
+
+WallTexture "UHRN0545", 64, 128
+{
+	Patch "UHRN1732", 0, 0
+	Patch "UHRN1733", 32, 0
+}
+
+WallTexture "UHRN0546", 256, 128
+{
+	Patch "UHRN1723", 0, 0
+	Patch "UHRN1724", 128, 0
+}
+
+WallTexture "UHRN0548", 128, 128
+{
+	Patch "UHRN1719", -12, 0
+	Patch "UHRN1719", 116, 0
+}
+
+WallTexture "UHRN0549", 128, 128
+{
+	Patch "UHRN1720", -4, 0
+	Patch "UHRN1720", 124, 0
+}
+
+WallTexture "UHRN0551", 128, 128
+{
+	Patch "UHRN1685", 64, 64
+	Patch "UHRN1686", 64, 0
+	Patch "UHRN1685", 0, 0
+	Patch "UHRN1686", 0, 64
+	Patch "UHRN1738", 0, 79
+	Patch "UHRN1738", 64, 15
+}
+
+WallTexture "UHRN0552", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+
+WallTexture "UHRN0557", 64, 128
+{
+	Patch "SW11_4", 0, 0
+	Patch "UHRN1699", 32, 0
+}
+
+WallTexture "UHRN0563", 128, 128
+{
+	Patch "UHRN1759", 0, 56
+	Patch "UHRN1759", 0, 0
+	Patch "UHRN1760", 64, 56
+	Patch "UHRN1760", 64, 0
+	Patch "UHRN1761", 88, 56
+	Patch "UHRN1761", 88, 0
+}
+
+WallTexture "UHRN0572", 128, 128
+{
+	Patch "UHRN1766", 0, 56
+	Patch "UHRN1766", 0, 0
+	Patch "UHRN1767", 64, 56
+	Patch "UHRN1767", 64, 0
+	Patch "UHRN1768", 88, 56
+	Patch "UHRN1768", 88, 0
+}
+
+WallTexture "UHRN0573", 64, 128
+{
+	Patch "UHRN1759", 0, 56
+	Patch "UHRN1759", 0, 0
+}
+
+WallTexture "UHRN0574", 64, 128
+{
+	Patch "UHRN1766", 0, 56
+	Patch "UHRN1766", 0, 0
+}
+
+WallTexture "UHRN0575", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+}
+
+WallTexture "UHRN0593", 128, 128
+{
+	Patch "UHRN0585", 0, 0
+	Patch "UHRN1786", 99, 120
+	Patch "UHRN1786", 67, 120
+	Patch "UHRN1786", 35, 120
+	Patch "UHRN1786", 3, 120
+}
+
+WallTexture "UHRN0594", 128, 128
+{
+	Patch "UHRN0585", 0, 0
+	Patch "UHRN1787", 99, 120
+	Patch "UHRN1787", 67, 120
+	Patch "UHRN1787", 35, 120
+	Patch "UHRN1787", 3, 120
+}
+
+WallTexture "UHRN0595", 128, 128
+{
+	Patch "UHRN0585", 0, 0
+	Patch "UHRN1788", 99, 120
+	Patch "UHRN1788", 67, 120
+	Patch "UHRN1788", 35, 120
+	Patch "UHRN1788", 3, 120
+}
+
+WallTexture "UHRN0596", 128, 128
+{
+	Patch "UHRN0585", 0, 0
+	Patch "UHRN1789", 99, 120
+	Patch "UHRN1789", 67, 120
+	Patch "UHRN1789", 35, 120
+	Patch "UHRN1789", 3, 120
+}
+
+WallTexture "UHRN0597", 128, 128
+{
+	Patch "UHRN0585", 0, 0
+	Patch "UHRN1790", 99, 120
+	Patch "UHRN1790", 67, 120
+	Patch "UHRN1790", 35, 120
+	Patch "UHRN1790", 3, 120
+}
+
+WallTexture "UHRN0598", 128, 128
+{
+	Patch "UHRN0591", 0, 0
+	Patch "UHRN1786", 99, 120
+	Patch "UHRN1786", 67, 120
+	Patch "UHRN1786", 35, 120
+	Patch "UHRN1786", 3, 120
+}
+
+WallTexture "UHRN0599", 128, 128
+{
+	Patch "UHRN0591", 0, 0
+	Patch "UHRN1787", 99, 120
+	Patch "UHRN1787", 67, 120
+	Patch "UHRN1787", 35, 120
+	Patch "UHRN1787", 3, 120
+}
+
+WallTexture "UHRN0600", 128, 128
+{
+	Patch "UHRN0591", 0, 0
+	Patch "UHRN1788", 99, 120
+	Patch "UHRN1788", 67, 120
+	Patch "UHRN1788", 35, 120
+	Patch "UHRN1788", 3, 120
+}
+
+WallTexture "UHRN0601", 128, 128
+{
+	Patch "UHRN0591", 0, 0
+	Patch "UHRN1789", 99, 120
+	Patch "UHRN1789", 67, 120
+	Patch "UHRN1789", 35, 120
+	Patch "UHRN1789", 3, 120
+}
+
+WallTexture "UHRN0602", 128, 128
+{
+	Patch "UHRN0591", 0, 0
+	Patch "UHRN1790", 99, 120
+	Patch "UHRN1790", 67, 120
+	Patch "UHRN1790", 35, 120
+	Patch "UHRN1790", 3, 120
+}
+
+WallTexture "UHRN0604", 128, 128
+{
+	Patch "UHRN1791", 0, 0
+	Patch "UHRN1792", 0, 64
+}
+
+WallTexture "UHRN0605", 128, 128
+{
+	Patch "UHRN1793", 0, 64
+	Patch "UHRN1791", 0, 0
+}
+
+WallTexture "UHRN0606", 128, 128
+{
+	Patch "UHRN1793", 0, 0
+	Patch "UHRN1794", 0, 64
+}
+
+WallTexture "UHRN0607", 128, 128
+{
+	Patch "UHRN1794", 0, 0
+	Patch "UHRN1794", -16, 64
+	Patch "UHRN1794", 112, 64
+}
+
+WallTexture "UHRN0613", 128, 128
+{
+	Patch "UHRN0632", 8, 0
+	Patch "UHRN0632", 56, 8
+	Patch "UHRN1800", 0, 0
+}
+
+WallTexture "UHRN0614", 128, 128
+{
+	Patch "UHRN0633", 8, 0
+	Patch "UHRN0633", 56, 8
+	Patch "UHRN1800", 0, 0
+}
+
+WallTexture "UHRN0616", 64, 128
+{
+	Patch "UHRN1802", 0, 0
+	Patch "UHRN1802", -32, 64
+	Patch "UHRN1802", 32, 64
+}
+
+WallTexture "UHRN0617", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 24
+	Patch "UHRN1804", 64, 64
+	Patch "UHRN1804", 0, 64
+	Patch "UHRN1803", 32, 0
+	Patch "UHRN1804", 96, 0
+	Patch "UHRN1804", -32, 0
+}
+
+WallTexture "UHRN0618", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 24
+	Patch "UHRN1804", 64, 64
+	Patch "UHRN1804", 0, 64
+	Patch "UHRN1803", 32, 0
+	Patch "UHRN1804", 96, 0
+	Patch "UHRN1804", -32, 0
+}
+
+WallTexture "UHRN0619", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN1804", 0, 0
+	Patch "UHRN1804", -32, 64
+	Patch "UHRN0632", 64, 24
+	Patch "UHRN1804", 64, 0
+	Patch "UHRN1804", 96, 64
+	Patch "UHRN1804", 32, 64
+}
+
+WallTexture "UHRN0620", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN1804", 0, 0
+	Patch "UHRN1804", -32, 64
+	Patch "UHRN0633", 64, 24
+	Patch "UHRN1804", 64, 0
+	Patch "UHRN1804", 96, 64
+	Patch "UHRN1804", 32, 64
+}
+
+WallTexture "UHRN0621", 64, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN1805", 0, 0
+	Patch "UHRN0624", 0, 64
+}
+
+WallTexture "UHRN0622", 64, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN1805", 0, 0
+	Patch "UHRN0624", 0, 64
+}
+
+WallTexture "UHRN0634", 64, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN1816", 0, 0
+}
+
+WallTexture "UHRN0635", 64, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN1816", 0, 0
+}
+
+WallTexture "UHRN0636", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 8
+	Patch "UHRN1817", 0, 0
+}
+
+WallTexture "UHRN0637", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 8
+	Patch "UHRN1817", 0, 0
+}
+
+WallTexture "UHRN0638", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 8
+	Patch "UHRN1817", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0639", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 56
+	Patch "UHRN1818", 0, 0
+}
+
+WallTexture "UHRN0640", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 56
+	Patch "UHRN1818", 0, 0
+}
+
+WallTexture "UHRN0641", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 56
+	Patch "UHRN1818", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0642", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 56
+	Patch "UHRN1819", 0, 0
+}
+
+WallTexture "UHRN0643", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 56
+	Patch "UHRN1819", 0, 0
+}
+
+WallTexture "UHRN0644", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 56
+	Patch "UHRN1819", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0645", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 16
+	Patch "UHRN1820", 0, 0
+}
+
+WallTexture "UHRN0646", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 16
+	Patch "UHRN1820", 0, 0
+}
+
+WallTexture "UHRN0647", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 16
+	Patch "UHRN1820", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0648", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 16
+	Patch "UHRN1821", 0, 0
+}
+
+WallTexture "UHRN0649", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 16
+	Patch "UHRN1821", 0, 0
+}
+
+WallTexture "UHRN0650", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 16
+	Patch "UHRN1821", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0651", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 8
+	Patch "UHRN1822", 0, 0
+}
+
+WallTexture "UHRN0652", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 8
+	Patch "UHRN1822", 0, 0
+}
+
+WallTexture "UHRN0653", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 8
+	Patch "UHRN1822", 0, 0
+	Patch "UHRN1828", 0, 56
+}
+
+WallTexture "UHRN0654", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 0
+	Patch "UHRN1823", 0, 0
+}
+
+WallTexture "UHRN0655", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 0
+	Patch "UHRN1823", 0, 0
+}
+
+WallTexture "UHRN0656", 128, 128
+{
+	Patch "UHRN0632", 0, 0
+	Patch "UHRN0632", 64, 0
+	Patch "UHRN1824", 0, 0
+}
+
+WallTexture "UHRN0657", 128, 128
+{
+	Patch "UHRN0633", 0, 0
+	Patch "UHRN0633", 64, 0
+	Patch "UHRN1824", 0, 0
+}
+
+WallTexture "UHRN0666", 64, 128
+{
+	Patch "UHRN1844", 0, 0
+	Patch "UHRN1844", 0, 64
+}
+
+WallTexture "UHRN0715", 256, 128
+{
+	Patch "UHRN0713", 0, 0
+	Patch "UHRN0713", 128, 0
+	Patch "W106_1", 0, 0
+}
+
+WallTexture "UHRN0716", 256, 128
+{
+	Patch "UHRN0702", 0, 0
+	Patch "UHRN0702", 128, 0
+	Patch "W107_1", 0, 0
+}
+
+WallTexture "UHRN0717", 256, 128
+{
+	Patch "UHRN0713", 0, 0
+	Patch "UHRN0713", 128, 0
+	Patch "W107_1", 0, 0
+}
+
+WallTexture "UHRN0723", 16, 128
+{
+	Patch "UHRN1897", 0, 0
+	Patch "UHRN1899", 8, 0
+	Patch "UHRN1897", 0, 8
+	Patch "UHRN1899", 8, 8
+	Patch "UHRN1897", 0, 16
+	Patch "UHRN1899", 8, 16
+	Patch "UHRN1897", 0, 24
+	Patch "UHRN1899", 8, 24
+	Patch "UHRN1897", 0, 32
+	Patch "UHRN1899", 8, 32
+	Patch "UHRN1897", 0, 40
+	Patch "UHRN1899", 8, 40
+	Patch "UHRN1897", 0, 48
+	Patch "UHRN1899", 8, 48
+	Patch "UHRN1897", 0, 56
+	Patch "UHRN1899", 8, 56
+	Patch "UHRN1897", 0, 64
+	Patch "UHRN1899", 8, 64
+	Patch "UHRN1897", 0, 72
+	Patch "UHRN1899", 8, 72
+	Patch "UHRN1897", 0, 80
+	Patch "UHRN1899", 8, 80
+	Patch "UHRN1897", 0, 88
+	Patch "UHRN1899", 8, 88
+	Patch "UHRN1897", 0, 96
+	Patch "UHRN1899", 8, 96
+	Patch "UHRN1897", 0, 104
+	Patch "UHRN1899", 8, 104
+	Patch "UHRN1897", 0, 112
+	Patch "UHRN1899", 8, 112
+	Patch "UHRN1897", 0, 120
+	Patch "UHRN1899", 8, 120
+}
+
+WallTexture "UHRN0724", 32, 128
+{
+	Patch "UHRN1907", 16, 0
+	Patch "UHRN1908", 24, 0
+	Patch "UHRN1907", 16, 8
+	Patch "UHRN1908", 24, 8
+	Patch "UHRN1907", 16, 16
+	Patch "UHRN1908", 24, 16
+	Patch "UHRN1907", 16, 24
+	Patch "UHRN1908", 24, 24
+	Patch "UHRN1907", 16, 32
+	Patch "UHRN1908", 24, 32
+	Patch "UHRN1907", 16, 40
+	Patch "UHRN1908", 24, 40
+	Patch "UHRN1907", 16, 48
+	Patch "UHRN1908", 24, 48
+	Patch "UHRN1907", 16, 56
+	Patch "UHRN1908", 24, 56
+	Patch "UHRN1907", 16, 64
+	Patch "UHRN1908", 24, 64
+	Patch "UHRN1907", 16, 72
+	Patch "UHRN1908", 24, 72
+	Patch "UHRN1907", 16, 80
+	Patch "UHRN1908", 24, 80
+	Patch "UHRN1907", 16, 88
+	Patch "UHRN1908", 24, 88
+	Patch "UHRN1907", 16, 96
+	Patch "UHRN1908", 24, 96
+	Patch "UHRN1907", 16, 104
+	Patch "UHRN1908", 24, 104
+	Patch "UHRN1907", 16, 112
+	Patch "UHRN1908", 24, 112
+	Patch "UHRN1907", 16, 120
+	Patch "UHRN1908", 24, 120
+	Patch "UHRN1907", 8, 64
+	Patch "UHRN1907", 8, 72
+	Patch "UHRN1907", 8, 80
+	Patch "UHRN1907", 8, 88
+	Patch "UHRN1907", 8, 96
+	Patch "UHRN1907", 8, 104
+	Patch "UHRN1907", 8, 112
+	Patch "UHRN1907", 8, 120
+	Patch "UHRN1906", 0, 0
+	Patch "UHRN1906", 0, 8
+	Patch "UHRN1906", 0, 16
+	Patch "UHRN1906", 0, 24
+	Patch "UHRN1906", 0, 32
+	Patch "UHRN1906", 0, 40
+	Patch "UHRN1906", 0, 48
+	Patch "UHRN1906", 0, 56
+	Patch "UHRN1906", 0, 64
+	Patch "UHRN1906", 0, 72
+	Patch "UHRN1906", 0, 80
+	Patch "UHRN1906", 0, 88
+	Patch "UHRN1906", 0, 96
+	Patch "UHRN1906", 0, 104
+	Patch "UHRN1906", 0, 112
+	Patch "UHRN1906", 0, 120
+	Patch "UHRN1907", 8, 56
+	Patch "UHRN1907", 8, 48
+	Patch "UHRN1907", 8, 40
+	Patch "UHRN1907", 8, 32
+	Patch "UHRN1907", 8, 24
+	Patch "UHRN1907", 8, 16
+	Patch "UHRN1907", 8, 8
+	Patch "UHRN1907", 8, 0
+}
+
+WallTexture "UHRN0725", 32, 128
+{
+	Patch "UHRN1904", 16, 0
+	Patch "UHRN1905", 24, 0
+	Patch "UHRN1904", 16, 8
+	Patch "UHRN1905", 24, 8
+	Patch "UHRN1904", 16, 16
+	Patch "UHRN1905", 24, 16
+	Patch "UHRN1904", 16, 24
+	Patch "UHRN1905", 24, 24
+	Patch "UHRN1904", 16, 32
+	Patch "UHRN1905", 24, 32
+	Patch "UHRN1904", 16, 40
+	Patch "UHRN1905", 24, 40
+	Patch "UHRN1904", 16, 48
+	Patch "UHRN1905", 24, 48
+	Patch "UHRN1904", 16, 56
+	Patch "UHRN1905", 24, 56
+	Patch "UHRN1904", 16, 64
+	Patch "UHRN1905", 24, 64
+	Patch "UHRN1904", 16, 72
+	Patch "UHRN1905", 24, 72
+	Patch "UHRN1904", 16, 80
+	Patch "UHRN1905", 24, 80
+	Patch "UHRN1904", 16, 88
+	Patch "UHRN1905", 24, 88
+	Patch "UHRN1904", 16, 96
+	Patch "UHRN1905", 24, 96
+	Patch "UHRN1904", 16, 104
+	Patch "UHRN1905", 24, 104
+	Patch "UHRN1904", 16, 112
+	Patch "UHRN1905", 24, 112
+	Patch "UHRN1904", 16, 120
+	Patch "UHRN1905", 24, 120
+	Patch "UHRN1904", 8, 64
+	Patch "UHRN1904", 8, 72
+	Patch "UHRN1904", 8, 80
+	Patch "UHRN1904", 8, 88
+	Patch "UHRN1904", 8, 96
+	Patch "UHRN1904", 8, 104
+	Patch "UHRN1904", 8, 112
+	Patch "UHRN1904", 8, 120
+	Patch "UHRN1903", 0, 0
+	Patch "UHRN1903", 0, 120
+	Patch "UHRN1903", 0, 112
+	Patch "UHRN1903", 0, 104
+	Patch "UHRN1903", 0, 96
+	Patch "UHRN1903", 0, 88
+	Patch "UHRN1903", 0, 80
+	Patch "UHRN1903", 0, 72
+	Patch "UHRN1903", 0, 64
+	Patch "UHRN1903", 0, 56
+	Patch "UHRN1903", 0, 48
+	Patch "UHRN1903", 0, 40
+	Patch "UHRN1903", 0, 32
+	Patch "UHRN1903", 0, 24
+	Patch "UHRN1903", 0, 16
+	Patch "UHRN1903", 0, 8
+	Patch "UHRN1904", 8, 56
+	Patch "UHRN1904", 8, 48
+	Patch "UHRN1904", 8, 40
+	Patch "UHRN1904", 8, 32
+	Patch "UHRN1904", 8, 24
+	Patch "UHRN1904", 8, 16
+	Patch "UHRN1904", 8, 8
+	Patch "UHRN1904", 8, 0
+}
+
+WallTexture "UHRN0726", 32, 128
+{
+	Patch "UHRN1901", 16, 0
+	Patch "UHRN1902", 24, 0
+	Patch "UHRN1901", 16, 8
+	Patch "UHRN1902", 24, 8
+	Patch "UHRN1901", 16, 16
+	Patch "UHRN1902", 24, 16
+	Patch "UHRN1901", 16, 24
+	Patch "UHRN1902", 24, 24
+	Patch "UHRN1901", 16, 32
+	Patch "UHRN1902", 24, 32
+	Patch "UHRN1901", 16, 40
+	Patch "UHRN1902", 24, 40
+	Patch "UHRN1901", 16, 48
+	Patch "UHRN1902", 24, 48
+	Patch "UHRN1901", 16, 56
+	Patch "UHRN1902", 24, 56
+	Patch "UHRN1901", 16, 64
+	Patch "UHRN1902", 24, 64
+	Patch "UHRN1901", 16, 72
+	Patch "UHRN1902", 24, 72
+	Patch "UHRN1901", 16, 80
+	Patch "UHRN1902", 24, 80
+	Patch "UHRN1901", 16, 88
+	Patch "UHRN1902", 24, 88
+	Patch "UHRN1901", 16, 96
+	Patch "UHRN1902", 24, 96
+	Patch "UHRN1901", 16, 104
+	Patch "UHRN1902", 24, 104
+	Patch "UHRN1901", 16, 112
+	Patch "UHRN1902", 24, 112
+	Patch "UHRN1901", 16, 120
+	Patch "UHRN1902", 24, 120
+	Patch "UHRN1901", 8, 64
+	Patch "UHRN1901", 8, 72
+	Patch "UHRN1901", 8, 80
+	Patch "UHRN1901", 8, 88
+	Patch "UHRN1901", 8, 96
+	Patch "UHRN1901", 8, 104
+	Patch "UHRN1901", 8, 112
+	Patch "UHRN1901", 8, 120
+	Patch "UHRN1900", 0, 0
+	Patch "UHRN1900", 0, 120
+	Patch "UHRN1900", 0, 112
+	Patch "UHRN1900", 0, 104
+	Patch "UHRN1900", 0, 96
+	Patch "UHRN1900", 0, 88
+	Patch "UHRN1900", 0, 80
+	Patch "UHRN1900", 0, 72
+	Patch "UHRN1900", 0, 64
+	Patch "UHRN1900", 0, 56
+	Patch "UHRN1900", 0, 48
+	Patch "UHRN1900", 0, 40
+	Patch "UHRN1900", 0, 32
+	Patch "UHRN1900", 0, 24
+	Patch "UHRN1900", 0, 16
+	Patch "UHRN1900", 0, 8
+	Patch "UHRN1901", 8, 56
+	Patch "UHRN1901", 8, 48
+	Patch "UHRN1901", 8, 40
+	Patch "UHRN1901", 8, 32
+	Patch "UHRN1901", 8, 24
+	Patch "UHRN1901", 8, 16
+	Patch "UHRN1901", 8, 8
+	Patch "UHRN1901", 8, 0
+}
+
+WallTexture "UHRN0727", 32, 128
+{
+	Patch "UHRN1898", 16, 0
+	Patch "UHRN1899", 24, 0
+	Patch "UHRN1898", 16, 8
+	Patch "UHRN1899", 24, 8
+	Patch "UHRN1898", 16, 16
+	Patch "UHRN1899", 24, 16
+	Patch "UHRN1898", 16, 24
+	Patch "UHRN1899", 24, 24
+	Patch "UHRN1898", 16, 32
+	Patch "UHRN1899", 24, 32
+	Patch "UHRN1898", 16, 40
+	Patch "UHRN1899", 24, 40
+	Patch "UHRN1898", 16, 48
+	Patch "UHRN1899", 24, 48
+	Patch "UHRN1898", 16, 56
+	Patch "UHRN1899", 24, 56
+	Patch "UHRN1898", 16, 64
+	Patch "UHRN1899", 24, 64
+	Patch "UHRN1898", 16, 72
+	Patch "UHRN1899", 24, 72
+	Patch "UHRN1898", 16, 80
+	Patch "UHRN1899", 24, 80
+	Patch "UHRN1898", 16, 88
+	Patch "UHRN1899", 24, 88
+	Patch "UHRN1898", 16, 96
+	Patch "UHRN1899", 24, 96
+	Patch "UHRN1898", 16, 104
+	Patch "UHRN1899", 24, 104
+	Patch "UHRN1898", 16, 112
+	Patch "UHRN1899", 24, 112
+	Patch "UHRN1898", 16, 120
+	Patch "UHRN1899", 24, 120
+	Patch "UHRN1898", 8, 64
+	Patch "UHRN1898", 8, 72
+	Patch "UHRN1898", 8, 80
+	Patch "UHRN1898", 8, 88
+	Patch "UHRN1898", 8, 96
+	Patch "UHRN1898", 8, 104
+	Patch "UHRN1898", 8, 112
+	Patch "UHRN1898", 8, 120
+	Patch "UHRN1897", 0, 0
+	Patch "UHRN1897", 0, 120
+	Patch "UHRN1897", 0, 112
+	Patch "UHRN1897", 0, 104
+	Patch "UHRN1897", 0, 96
+	Patch "UHRN1897", 0, 88
+	Patch "UHRN1897", 0, 80
+	Patch "UHRN1897", 0, 72
+	Patch "UHRN1897", 0, 64
+	Patch "UHRN1897", 0, 56
+	Patch "UHRN1897", 0, 48
+	Patch "UHRN1897", 0, 40
+	Patch "UHRN1897", 0, 32
+	Patch "UHRN1897", 0, 24
+	Patch "UHRN1897", 0, 16
+	Patch "UHRN1897", 0, 8
+	Patch "UHRN1898", 8, 56
+	Patch "UHRN1898", 8, 48
+	Patch "UHRN1898", 8, 40
+	Patch "UHRN1898", 8, 24
+	Patch "UHRN1898", 8, 32
+	Patch "UHRN1898", 8, 16
+	Patch "UHRN1898", 8, 8
+	Patch "UHRN1898", 8, 0
+}
+
+WallTexture "UHRN0728", 16, 128
+{
+	Patch "UHRN1900", 0, 0
+	Patch "UHRN1902", 8, 0
+	Patch "UHRN1900", 0, 8
+	Patch "UHRN1902", 8, 8
+	Patch "UHRN1900", 0, 16
+	Patch "UHRN1902", 8, 16
+	Patch "UHRN1900", 0, 24
+	Patch "UHRN1902", 8, 24
+	Patch "UHRN1900", 0, 32
+	Patch "UHRN1902", 8, 32
+	Patch "UHRN1900", 0, 40
+	Patch "UHRN1902", 8, 40
+	Patch "UHRN1900", 0, 48
+	Patch "UHRN1902", 8, 48
+	Patch "UHRN1900", 0, 56
+	Patch "UHRN1902", 8, 56
+	Patch "UHRN1900", 0, 64
+	Patch "UHRN1902", 8, 64
+	Patch "UHRN1900", 0, 72
+	Patch "UHRN1902", 8, 72
+	Patch "UHRN1900", 0, 80
+	Patch "UHRN1902", 8, 80
+	Patch "UHRN1900", 0, 88
+	Patch "UHRN1902", 8, 88
+	Patch "UHRN1900", 0, 96
+	Patch "UHRN1902", 8, 96
+	Patch "UHRN1900", 0, 104
+	Patch "UHRN1902", 8, 104
+	Patch "UHRN1900", 0, 112
+	Patch "UHRN1902", 8, 112
+	Patch "UHRN1900", 0, 120
+	Patch "UHRN1902", 8, 120
+}
+
+WallTexture "UHRN0729", 16, 128
+{
+	Patch "UHRN1903", 0, 0
+	Patch "UHRN1905", 8, 0
+	Patch "UHRN1903", 0, 8
+	Patch "UHRN1905", 8, 8
+	Patch "UHRN1903", 0, 16
+	Patch "UHRN1905", 8, 16
+	Patch "UHRN1903", 0, 24
+	Patch "UHRN1905", 8, 24
+	Patch "UHRN1903", 0, 32
+	Patch "UHRN1905", 8, 32
+	Patch "UHRN1903", 0, 40
+	Patch "UHRN1905", 8, 40
+	Patch "UHRN1903", 0, 48
+	Patch "UHRN1905", 8, 48
+	Patch "UHRN1903", 0, 56
+	Patch "UHRN1905", 8, 56
+	Patch "UHRN1903", 0, 64
+	Patch "UHRN1905", 8, 64
+	Patch "UHRN1903", 0, 72
+	Patch "UHRN1905", 8, 72
+	Patch "UHRN1903", 0, 80
+	Patch "UHRN1905", 8, 80
+	Patch "UHRN1903", 0, 88
+	Patch "UHRN1905", 8, 88
+	Patch "UHRN1903", 0, 96
+	Patch "UHRN1905", 8, 96
+	Patch "UHRN1903", 0, 104
+	Patch "UHRN1905", 8, 104
+	Patch "UHRN1903", 0, 112
+	Patch "UHRN1905", 8, 112
+	Patch "UHRN1903", 0, 120
+	Patch "UHRN1905", 8, 120
+}
+
+WallTexture "UHRN0730", 16, 128
+{
+	Patch "UHRN1906", 0, 0
+	Patch "UHRN1908", 8, 0
+	Patch "UHRN1906", 0, 8
+	Patch "UHRN1908", 8, 8
+	Patch "UHRN1906", 0, 16
+	Patch "UHRN1908", 8, 16
+	Patch "UHRN1906", 0, 24
+	Patch "UHRN1908", 8, 24
+	Patch "UHRN1906", 0, 32
+	Patch "UHRN1908", 8, 32
+	Patch "UHRN1906", 0, 40
+	Patch "UHRN1908", 8, 40
+	Patch "UHRN1906", 0, 48
+	Patch "UHRN1908", 8, 48
+	Patch "UHRN1906", 0, 56
+	Patch "UHRN1908", 8, 56
+	Patch "UHRN1906", 0, 64
+	Patch "UHRN1908", 8, 64
+	Patch "UHRN1906", 0, 72
+	Patch "UHRN1908", 8, 72
+	Patch "UHRN1906", 0, 80
+	Patch "UHRN1908", 8, 80
+	Patch "UHRN1906", 0, 88
+	Patch "UHRN1908", 8, 88
+	Patch "UHRN1906", 0, 96
+	Patch "UHRN1908", 8, 96
+	Patch "UHRN1906", 0, 104
+	Patch "UHRN1908", 8, 104
+	Patch "UHRN1906", 0, 112
+	Patch "UHRN1908", 8, 112
+	Patch "UHRN1906", 0, 120
+	Patch "UHRN1908", 8, 120
+}
+
+WallTexture "UHRN0733", 16, 128
+{
+	Patch "UHRN1911", 0, 0
+	Patch "UHRN1911", 0, 56
+}
+
+WallTexture "UHRN0734", 16, 128
+{
+	Patch "UHRN1912", 0, 56
+	Patch "UHRN1897", 0, 0
+	Patch "UHRN1897", 0, 40
+	Patch "UHRN1897", 0, 32
+	Patch "UHRN1897", 0, 24
+	Patch "UHRN1897", 0, 16
+	Patch "UHRN1897", 0, 8
+	Patch "UHRN1897", 0, 48
+	Patch "UHRN1899", 8, 48
+	Patch "UHRN1899", 8, 40
+	Patch "UHRN1899", 8, 32
+	Patch "UHRN1899", 8, 24
+	Patch "UHRN1899", 8, 16
+	Patch "UHRN1899", 8, 8
+	Patch "UHRN1899", 8, 0
+}
+
+WallTexture "UHRN0737", 16, 128
+{
+	Patch "UHRN1915", 0, 0
+	Patch "UHRN1915", 0, 56
+}
+
+WallTexture "UHRN0738", 16, 128
+{
+	Patch "UHRN1916", 0, 56
+	Patch "UHRN1900", 0, 0
+	Patch "UHRN1900", 0, 48
+	Patch "UHRN1900", 0, 40
+	Patch "UHRN1900", 0, 32
+	Patch "UHRN1900", 0, 24
+	Patch "UHRN1900", 0, 16
+	Patch "UHRN1900", 0, 8
+	Patch "UHRN1902", 8, 48
+	Patch "UHRN1902", 8, 40
+	Patch "UHRN1902", 8, 32
+	Patch "UHRN1902", 8, 24
+	Patch "UHRN1902", 8, 16
+	Patch "UHRN1902", 8, 8
+	Patch "UHRN1902", 8, 0
+}
+
+WallTexture "UHRN0741", 16, 128
+{
+	Patch "UHRN1919", 0, 0
+	Patch "UHRN1919", 0, 56
+}
+
+WallTexture "UHRN0742", 16, 128
+{
+	Patch "UHRN1920", 0, 56
+	Patch "UHRN1906", 0, 0
+	Patch "UHRN1906", 0, 48
+	Patch "UHRN1906", 0, 40
+	Patch "UHRN1906", 0, 32
+	Patch "UHRN1906", 0, 24
+	Patch "UHRN1906", 0, 16
+	Patch "UHRN1906", 0, 8
+	Patch "UHRN1908", 8, 48
+	Patch "UHRN1908", 8, 40
+	Patch "UHRN1908", 8, 32
+	Patch "UHRN1908", 8, 24
+	Patch "UHRN1908", 8, 16
+	Patch "UHRN1908", 8, 8
+	Patch "UHRN1908", 8, 0
+}
+
+WallTexture "UHRN0745", 16, 128
+{
+	Patch "UHRN1923", 0, 0
+	Patch "UHRN1923", 0, 56
+}
+
+WallTexture "UHRN0746", 16, 128
+{
+	Patch "UHRN1924", 0, 56
+	Patch "UHRN1903", 0, 0
+	Patch "UHRN1903", 0, 48
+	Patch "UHRN1903", 0, 40
+	Patch "UHRN1903", 0, 32
+	Patch "UHRN1903", 0, 24
+	Patch "UHRN1903", 0, 16
+	Patch "UHRN1903", 0, 8
+	Patch "UHRN1905", 8, 48
+	Patch "UHRN1905", 8, 40
+	Patch "UHRN1905", 8, 32
+	Patch "UHRN1905", 8, 24
+	Patch "UHRN1905", 8, 16
+	Patch "UHRN1905", 8, 8
+	Patch "UHRN1905", 8, 0
+}
+
+WallTexture "UHRN0749", 16, 128
+{
+	Patch "UHRN1927", 0, 0
+	Patch "UHRN1927", 0, 56
+}
+
+WallTexture "UHRN0750", 16, 128
+{
+	Patch "UHRN1928", 0, 56
+	Patch "BLITA0", 0, 0
+	Patch "BLITA0", 0, 48
+	Patch "BLITA0", 0, 40
+	Patch "BLITA0", 0, 32
+	Patch "BLITA0", 0, 24
+	Patch "BLITA0", 0, 16
+	Patch "BLITA0", 0, 8
+	Patch "BLITC0", 8, 48
+	Patch "BLITC0", 8, 40
+	Patch "BLITC0", 8, 32
+	Patch "BLITC0", 8, 24
+	Patch "BLITC0", 8, 16
+	Patch "BLITC0", 8, 8
+	Patch "BLITC0", 8, 0
+}
+
+WallTexture "UHRN0798", 64, 128
+{
+	Patch "UHRN1978", 0, 0
+	Patch "UHRN1978", 32, 64
+	Patch "UHRN1978", -32, 64
+}
+
+WallTexture "UHRN0811", 128, 128
+{
+	Patch "UHRN1996", 1, 0
+	Patch "UHRN1996", -127, 0
+}
+
+WallTexture "UHRN0830", 64, 128
+{
+	Patch "UHRN2015", 0, 0
+	Patch "UHRN2015", 32, 64
+	Patch "UHRN2015", -32, 64
+}
+
+WallTexture "UHRN0831", 64, 128
+{
+	Patch "UHRN0829", 0, 0
+	Patch "UHRN0829", -32, 64
+	Patch "UHRN0829", 32, 64
+}
+
+WallTexture "UHRN0832", 64, 128
+{
+	Patch "UHRN0463", 0, 0
+	Patch "UHRN0463", 32, 64
+	Patch "UHRN0463", -32, 64
+}
+
+WallTexture "UHRN0833", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "UHRN1987", 1, 104
+	Patch "UHRN1987", -63, 104
+}
+
+WallTexture "UHRN0834", 64, 128
+{
+	Patch "RW33_2", 0, 0
+	Patch "UHRN1987", -63, 104
+	Patch "UHRN1987", 1, 104
+}
+
+WallTexture "UHRN0835", 64, 128
+{
+	Patch "UHRN0829", 0, 0
+	Patch "UHRN1987", 1, 104
+	Patch "UHRN1987", -63, 104
+}
+
+WallTexture "UHRN0836", 64, 128
+{
+	Patch "UHRN0463", 0, 0
+	Patch "UHRN1987", -63, 104
+	Patch "UHRN1987", 1, 104
+}
+
+WallTexture "UHRN0837", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN1987", -63, 104
+	Patch "UHRN1987", 1, 104
+}
+
+WallTexture "UHRN0838", 64, 128
+{
+	Patch "UHRN0829", 0, 0
+	Patch "UHRN0829", 32, 64
+	Patch "UHRN0829", -32, 64
+	Patch "UHRN1987", -63, 104
+	Patch "UHRN1987", 1, 104
+}
+
+WallTexture "UHRN0839", 64, 128
+{
+	Patch "UHRN0807", 0, 0
+	Patch "UHRN1985", -63, 104
+	Patch "UHRN1985", 1, 104
+}
+
+WallTexture "UHRN0840", 128, 128
+{
+	Patch "UHRN1996", 1, 0
+	Patch "UHRN1985", 65, 104
+	Patch "UHRN1996", -127, 0
+	Patch "UHRN1985", 1, 104
+	Patch "UHRN1985", -63, 104
+	Patch "UHRN1986", 33, 104
+}
+
+WallTexture "UHRN0841", 128, 128
+{
+	Patch "UHRN0813", 0, 0
+	Patch "UHRN1985", 1, 104
+	Patch "UHRN1985", 65, 104
+	Patch "UHRN1985", -63, 104
+}
+
+WallTexture "UHRN0842", 128, 128
+{
+	Patch "UHRN0818", 0, 0
+	Patch "UHRN1986", 1, 104
+	Patch "UHRN1986", 65, 104
+	Patch "UHRN1986", -63, 104
+}
+
+WallTexture "UHRN0843", 128, 128
+{
+	Patch "UHRN0820", 0, 0
+	Patch "UHRN1986", -63, 104
+	Patch "UHRN1986", 1, 104
+	Patch "UHRN1986", 65, 104
+}
+
+WallTexture "UHRN0844", 128, 128
+{
+	Patch "UHRN0822", 0, 0
+	Patch "UHRN1985", -63, 104
+	Patch "UHRN1985", 1, 104
+	Patch "UHRN1985", 65, 104
+}
+
+WallTexture "UHRN0845", 128, 128
+{
+	Patch "UHRN0824", 0, 0
+	Patch "UHRN1987", -63, 104
+	Patch "UHRN1987", 1, 104
+	Patch "UHRN1987", 65, 104
+}
+
+WallTexture "UHRN0846", 64, 128
+{
+	Patch "UHRN2017", 0, 0
+	Patch "UHRN2017", 32, 64
+	Patch "UHRN2017", -32, 64
+}
+
+WallTexture "UHRN0847", 64, 128
+{
+	Patch "UHRN2016", 0, 0
+	Patch "UHRN2016", 32, 64
+	Patch "UHRN2016", -32, 64
+}
+
+WallTexture "UHRN0855", 64, 128
+{
+	Patch "UHRN2027", 0, 0
+	Patch "UHRN0857", 24, 0
+	Patch "UHRN2027", 40, 0
+}
+
+WallTexture "UHRN0856", 128, 64
+{
+	Patch "UHRN2028", 0, 0
+	Patch "UHRN0858", 0, 24
+	Patch "UHRN2028", 0, 40
+}
+
+WallTexture "UHRN0960", 64, 128
+{
+	Patch "UHRN2158", 0, 0
+	Patch "UHRN2158", 0, 64
+}
+
+WallTexture "UHRN0961", 64, 128
+{
+	Patch "UHRN2159", 0, 0
+	Patch "UHRN2159", 0, 64
+}
+
+WallTexture "UHRN0962", 64, 128
+{
+	Patch "UHRN2160", 0, 0
+	Patch "UHRN2160", 0, 64
+}
+
+WallTexture "UHRN1042", 256, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 192, 0
+	Patch "SW11_1", 128, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 224, 0
+	Patch "SW11_2", 160, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 32, 0
+	Patch "UHRN2288", 0, 56
+}
+
+WallTexture "UHRN1048", 128, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 32, 0
+	Patch "UHRN2286", 0, 44
+}
+
+WallTexture "UHRN1061", 64, 128
+{
+	Patch "UHRN1060", 0, 0
+	Patch "UHRN2310", 9, 60
+	Patch "UHRN2310", 25, 60
+	Patch "UHRN2310", 41, 60
+}
+
+WallTexture "UHRN1062", 64, 128
+{
+	Patch "UHRN1060", 0, 0
+	Patch "UHRN2311", 9, 60
+	Patch "UHRN2311", 25, 60
+	Patch "UHRN2311", 41, 60
+}
+
+WallTexture "UHRN1063", 64, 128
+{
+	Patch "UHRN1078", 0, 0
+	Patch "UHRN2311", 9, 60
+	Patch "UHRN2311", 25, 60
+	Patch "UHRN2311", 41, 60
+}
+
+WallTexture "UHRN1064", 64, 128
+{
+	Patch "UHRN1080", 0, 0
+	Patch "UHRN2311", 9, 60
+	Patch "UHRN2311", 25, 60
+	Patch "UHRN2311", 41, 60
+}
+
+WallTexture "UHRN1065", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "UHRN2311", 9, 60
+	Patch "UHRN2311", 25, 60
+	Patch "UHRN2311", 41, 60
+}
+
+WallTexture "UHRN1066", 64, 128
+{
+	Patch "UHRN1060", 0, 0
+	Patch "UHRN2312", 9, 60
+	Patch "UHRN2312", 25, 60
+	Patch "UHRN2312", 41, 60
+}
+
+WallTexture "UHRN1067", 64, 128
+{
+	Patch "UHRN1078", 0, 0
+	Patch "UHRN2312", 9, 60
+	Patch "UHRN2312", 25, 60
+	Patch "UHRN2312", 41, 60
+}
+
+WallTexture "UHRN1068", 64, 128
+{
+	Patch "UHRN1080", 0, 0
+	Patch "UHRN2312", 9, 60
+	Patch "UHRN2312", 25, 60
+	Patch "UHRN2312", 41, 60
+}
+
+WallTexture "UHRN1069", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "UHRN2312", 9, 60
+	Patch "UHRN2312", 25, 60
+	Patch "UHRN2312", 41, 60
+}
+
+WallTexture "UHRN1070", 64, 128
+{
+	Patch "UHRN1060", 0, 0
+	Patch "UHRN2313", 9, 60
+	Patch "UHRN2313", 25, 60
+	Patch "UHRN2313", 41, 60
+}
+
+WallTexture "UHRN1071", 64, 128
+{
+	Patch "UHRN1078", 0, 0
+	Patch "UHRN2313", 9, 60
+	Patch "UHRN2313", 25, 60
+	Patch "UHRN2313", 41, 60
+}
+
+WallTexture "UHRN1072", 64, 128
+{
+	Patch "UHRN1080", 0, 0
+	Patch "UHRN2313", 9, 60
+	Patch "UHRN2313", 25, 60
+	Patch "UHRN2313", 41, 60
+}
+
+WallTexture "UHRN1073", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "UHRN2313", 9, 60
+	Patch "UHRN2313", 25, 60
+	Patch "UHRN2313", 41, 60
+}
+
+WallTexture "UHRN1074", 64, 128
+{
+	Patch "UHRN1060", 0, 0
+	Patch "UHRN2309", 9, 60
+	Patch "UHRN2309", 25, 60
+	Patch "UHRN2309", 41, 60
+}
+
+WallTexture "UHRN1075", 64, 128
+{
+	Patch "UHRN1078", 0, 0
+	Patch "UHRN2309", 9, 60
+	Patch "UHRN2309", 25, 60
+	Patch "UHRN2309", 41, 60
+}
+
+WallTexture "UHRN1076", 64, 128
+{
+	Patch "UHRN1080", 0, 0
+	Patch "UHRN2309", 9, 60
+	Patch "UHRN2309", 25, 60
+	Patch "UHRN2309", 41, 60
+}
+
+WallTexture "UHRN1077", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "UHRN2309", 9, 60
+	Patch "UHRN2309", 25, 60
+	Patch "UHRN2309", 41, 60
+}
+
+WallTexture "UHRN1079", 64, 128
+{
+	Patch "UHRN1078", 0, 0
+	Patch "UHRN2310", 9, 60
+	Patch "UHRN2310", 25, 60
+	Patch "UHRN2310", 41, 60
+}
+
+WallTexture "UHRN1081", 64, 128
+{
+	Patch "UHRN1080", 0, 0
+	Patch "UHRN2310", 9, 60
+	Patch "UHRN2310", 25, 60
+	Patch "UHRN2310", 41, 60
+}
+
+WallTexture "UHRN1082", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "UHRN2310", 9, 60
+	Patch "UHRN2310", 25, 60
+	Patch "UHRN2310", 41, 60
+}
+
+WallTexture "UHRN1083", 64, 128
+{
+	Patch "UHRN1057", 0, 0
+	Patch "UHRN2304", 38, 124
+	Patch "UHRN2304", 6, 124
+	Patch "UHRN2304", 38, 92
+	Patch "UHRN2304", 6, 92
+	Patch "UHRN2304", 38, 60
+	Patch "UHRN2304", 6, 60
+	Patch "UHRN2304", 38, 28
+	Patch "UHRN2304", 6, 28
+}
+
+WallTexture "UHRN1084", 64, 128
+{
+	Patch "UHRN1058", 0, 0
+	Patch "UHRN2304", 38, 124
+	Patch "UHRN2304", 6, 124
+	Patch "UHRN2304", 38, 92
+	Patch "UHRN2304", 6, 92
+	Patch "UHRN2304", 38, 60
+	Patch "UHRN2304", 6, 60
+	Patch "UHRN2304", 38, 28
+	Patch "UHRN2304", 6, 28
+}
+
+WallTexture "UHRN1085", 64, 128
+{
+	Patch "UHRN1059", 0, 0
+	Patch "UHRN2304", 38, 124
+	Patch "UHRN2304", 6, 124
+	Patch "UHRN2304", 38, 92
+	Patch "UHRN2304", 6, 92
+	Patch "UHRN2304", 38, 60
+	Patch "UHRN2304", 6, 60
+	Patch "UHRN2304", 38, 28
+	Patch "UHRN2304", 6, 28
+}
+
+WallTexture "UHRN1086", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "UHRN2304", 38, 124
+	Patch "UHRN2304", 6, 124
+	Patch "UHRN2304", 38, 92
+	Patch "UHRN2304", 6, 92
+	Patch "UHRN2304", 38, 60
+	Patch "UHRN2304", 6, 60
+	Patch "UHRN2304", 38, 28
+	Patch "UHRN2304", 6, 28
+}
+
+WallTexture "UHRN1087", 64, 128
+{
+	Patch "UHRN1057", 0, 0
+	Patch "UHRN2305", 38, 124
+	Patch "UHRN2305", 6, 124
+	Patch "UHRN2305", 38, 92
+	Patch "UHRN2305", 6, 92
+	Patch "UHRN2305", 38, 60
+	Patch "UHRN2305", 6, 60
+	Patch "UHRN2305", 38, 28
+	Patch "UHRN2305", 6, 28
+}
+
+WallTexture "UHRN1088", 64, 128
+{
+	Patch "UHRN1058", 0, 0
+	Patch "UHRN2305", 38, 124
+	Patch "UHRN2305", 6, 124
+	Patch "UHRN2305", 38, 92
+	Patch "UHRN2305", 6, 92
+	Patch "UHRN2305", 38, 60
+	Patch "UHRN2305", 6, 60
+	Patch "UHRN2305", 38, 28
+	Patch "UHRN2305", 6, 28
+}
+
+WallTexture "UHRN1089", 64, 128
+{
+	Patch "UHRN1059", 0, 0
+	Patch "UHRN2305", 38, 124
+	Patch "UHRN2305", 6, 124
+	Patch "UHRN2305", 38, 92
+	Patch "UHRN2305", 6, 92
+	Patch "UHRN2305", 38, 60
+	Patch "UHRN2305", 6, 60
+	Patch "UHRN2305", 38, 28
+	Patch "UHRN2305", 6, 28
+}
+
+WallTexture "UHRN1090", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "UHRN2305", 38, 124
+	Patch "UHRN2305", 6, 124
+	Patch "UHRN2305", 38, 92
+	Patch "UHRN2305", 6, 92
+	Patch "UHRN2305", 38, 60
+	Patch "UHRN2305", 6, 60
+	Patch "UHRN2305", 38, 28
+	Patch "UHRN2305", 6, 28
+}
+
+WallTexture "UHRN1091", 64, 128
+{
+	Patch "UHRN1057", 0, 0
+	Patch "UHRN2306", 38, 124
+	Patch "UHRN2306", 6, 124
+	Patch "UHRN2306", 38, 92
+	Patch "UHRN2306", 6, 92
+	Patch "UHRN2306", 38, 60
+	Patch "UHRN2306", 6, 60
+	Patch "UHRN2306", 38, 28
+	Patch "UHRN2306", 6, 28
+}
+
+WallTexture "UHRN1092", 64, 128
+{
+	Patch "UHRN1059", 0, 0
+	Patch "UHRN2306", 38, 124
+	Patch "UHRN2306", 6, 124
+	Patch "UHRN2306", 38, 92
+	Patch "UHRN2306", 6, 92
+	Patch "UHRN2306", 38, 60
+	Patch "UHRN2306", 6, 60
+	Patch "UHRN2306", 38, 28
+	Patch "UHRN2306", 6, 28
+}
+
+WallTexture "UHRN1093", 64, 128
+{
+	Patch "UHRN1058", 0, 0
+	Patch "UHRN2306", 38, 124
+	Patch "UHRN2306", 6, 124
+	Patch "UHRN2306", 38, 92
+	Patch "UHRN2306", 6, 92
+	Patch "UHRN2306", 38, 60
+	Patch "UHRN2306", 6, 60
+	Patch "UHRN2306", 38, 28
+	Patch "UHRN2306", 6, 28
+}
+
+WallTexture "UHRN1094", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "UHRN2306", 38, 124
+	Patch "UHRN2306", 6, 124
+	Patch "UHRN2306", 38, 92
+	Patch "UHRN2306", 6, 92
+	Patch "UHRN2306", 38, 60
+	Patch "UHRN2306", 6, 60
+	Patch "UHRN2306", 38, 28
+	Patch "UHRN2306", 6, 28
+}
+
+WallTexture "UHRN1095", 64, 128
+{
+	Patch "UHRN1057", 0, 0
+	Patch "UHRN2307", 38, 124
+	Patch "UHRN2307", 6, 124
+	Patch "UHRN2307", 38, 92
+	Patch "UHRN2307", 6, 92
+	Patch "UHRN2307", 38, 60
+	Patch "UHRN2307", 6, 60
+	Patch "UHRN2307", 38, 28
+	Patch "UHRN2307", 6, 28
+}
+
+WallTexture "UHRN1096", 64, 128
+{
+	Patch "UHRN1059", 0, 0
+	Patch "UHRN2307", 38, 124
+	Patch "UHRN2307", 6, 124
+	Patch "UHRN2307", 38, 92
+	Patch "UHRN2307", 6, 92
+	Patch "UHRN2307", 38, 60
+	Patch "UHRN2307", 6, 60
+	Patch "UHRN2307", 38, 28
+	Patch "UHRN2307", 6, 28
+}
+
+WallTexture "UHRN1097", 64, 128
+{
+	Patch "UHRN1058", 0, 0
+	Patch "UHRN2307", 38, 124
+	Patch "UHRN2307", 6, 124
+	Patch "UHRN2307", 38, 92
+	Patch "UHRN2307", 6, 92
+	Patch "UHRN2307", 38, 60
+	Patch "UHRN2307", 6, 60
+	Patch "UHRN2307", 38, 28
+	Patch "UHRN2307", 6, 28
+}
+
+WallTexture "UHRN1098", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "UHRN2307", 38, 124
+	Patch "UHRN2307", 6, 124
+	Patch "UHRN2307", 38, 92
+	Patch "UHRN2307", 6, 92
+	Patch "UHRN2307", 38, 60
+	Patch "UHRN2307", 6, 60
+	Patch "UHRN2307", 38, 28
+	Patch "UHRN2307", 6, 28
+}
+
+WallTexture "UHRN1099", 64, 128
+{
+	Patch "UHRN1057", 0, 0
+	Patch "UHRN2308", 38, 124
+	Patch "UHRN2308", 6, 124
+	Patch "UHRN2308", 38, 92
+	Patch "UHRN2308", 6, 92
+	Patch "UHRN2308", 38, 60
+	Patch "UHRN2308", 6, 60
+	Patch "UHRN2308", 38, 28
+	Patch "UHRN2308", 6, 28
+}
+
+WallTexture "UHRN1100", 64, 128
+{
+	Patch "UHRN1058", 0, 0
+	Patch "UHRN2308", 38, 124
+	Patch "UHRN2308", 6, 124
+	Patch "UHRN2308", 38, 92
+	Patch "UHRN2308", 6, 92
+	Patch "UHRN2308", 38, 60
+	Patch "UHRN2308", 6, 60
+	Patch "UHRN2308", 38, 28
+	Patch "UHRN2308", 6, 28
+}
+
+WallTexture "UHRN1101", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "UHRN2308", 38, 124
+	Patch "UHRN2308", 6, 124
+	Patch "UHRN2308", 38, 92
+	Patch "UHRN2308", 6, 92
+	Patch "UHRN2308", 38, 60
+	Patch "UHRN2308", 6, 60
+	Patch "UHRN2308", 38, 28
+	Patch "UHRN2308", 6, 28
+}
+
+WallTexture "UHRN1102", 64, 128
+{
+	Patch "UHRN1059", 0, 0
+	Patch "UHRN2308", 38, 124
+	Patch "UHRN2308", 6, 124
+	Patch "UHRN2308", 38, 92
+	Patch "UHRN2308", 6, 92
+	Patch "UHRN2308", 38, 60
+	Patch "UHRN2308", 6, 60
+	Patch "UHRN2308", 38, 28
+	Patch "UHRN2308", 6, 28
+}
+
+WallTexture "UHRN1154", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "UHRN2368", 3, 3
+}
+
+WallTexture "UHRN1155", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "UHRN2369", 3, 3
+}
+
+WallTexture "UHRN1156", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "UHRN2370", 3, 3
+}
+
+WallTexture "UHRN1157", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "UHRN2371", 3, 3
+}
+
+WallTexture "UHRN1158", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "UHRN2372", 3, 3
+}
+
+WallTexture "UHRN1159", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "UHRN2373", 5, 24
+}
+
+WallTexture "UHRN1160", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "UHRN2374", 5, 24
+}
+
+WallTexture "UHRN1161", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "UHRN2375", 5, 24
+}
+
+WallTexture "UHRN1162", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "UHRN2376", 5, 24
+}
+
+WallTexture "UHRN1163", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN2368", 4, 2
+}
+
+WallTexture "UHRN1164", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN2369", 4, 2
+}
+
+WallTexture "UHRN1165", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN2370", 4, 2
+}
+
+WallTexture "UHRN1166", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN2371", 4, 2
+}
+
+WallTexture "UHRN1167", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "UHRN2372", 4, 2
+}
+
+WallTexture "UHRN1168", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "UHRN2368", 4, 116
+}
+
+WallTexture "UHRN1169", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "UHRN2369", 4, 116
+}
+
+WallTexture "UHRN1170", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "UHRN2370", 4, 116
+}
+
+WallTexture "UHRN1171", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "UHRN2371", 4, 116
+}
+
+WallTexture "UHRN1172", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "UHRN2372", 4, 116
+}
+
+WallTexture "UHRN1173", 64, 128
+{
+	Patch "UHRN1107", 0, 0
+	Patch "UHRN2368", 3, 3
+}
+
+WallTexture "UHRN1174", 64, 128
+{
+	Patch "UHRN1107", 0, 0
+	Patch "UHRN2369", 3, 3
+}
+
+WallTexture "UHRN1175", 64, 128
+{
+	Patch "UHRN1107", 0, 0
+	Patch "UHRN2370", 3, 3
+}
+
+WallTexture "UHRN1176", 64, 128
+{
+	Patch "UHRN1107", 0, 0
+	Patch "UHRN2371", 3, 3
+}
+
+WallTexture "UHRN1177", 64, 128
+{
+	Patch "UHRN1107", 0, 0
+	Patch "UHRN2372", 3, 3
+}
+
+WallTexture "UHRN1178", 64, 128
+{
+	Patch "UHRN1105", 0, 0
+	Patch "UHRN2373", 5, 24
+}
+
+WallTexture "UHRN1179", 64, 128
+{
+	Patch "UHRN1105", 0, 0
+	Patch "UHRN2374", 5, 24
+}
+
+WallTexture "UHRN1180", 64, 128
+{
+	Patch "UHRN1105", 0, 0
+	Patch "UHRN2375", 5, 24
+}
+
+WallTexture "UHRN1181", 64, 128
+{
+	Patch "UHRN1105", 0, 0
+	Patch "UHRN2376", 5, 24
+}
+
+WallTexture "UHRN1215", 256, 128
+{
+	Patch "UHRN2413", 0, 0
+	Patch "UHRN2414", 64, 0
+	Patch "UHRN2415", 128, 0
+	Patch "UHRN2416", 192, 0
+}
+
+WallTexture "UHRN1219", 256, 128
+{
+	Patch "UHRN2420", 0, 0
+	Patch "UHRN2421", 64, 0
+	Patch "UHRN2422", 128, 0
+	Patch "UHRN2423", 192, 0
+}
+
+WallTexture "UHRN1220", 256, 128
+{
+	Patch "UHRN2424", 192, 0
+	Patch "UHRN2428", 0, 0
+	Patch "UHRN2429", 64, 0
+	Patch "UHRN2430", 128, 0
+}
+
+WallTexture "UHRN1292", 64, 128
+{
+	Patch "UHRN2507", 0, 0
+	Patch "UHRN2507", 0, 8
+	Patch "UHRN2507", 0, 16
+	Patch "UHRN2507", 0, 24
+	Patch "UHRN2507", 0, 120
+	Patch "UHRN2507", 0, 112
+	Patch "UHRN2507", 0, 104
+	Patch "UHRN2507", 0, 88
+	Patch "UHRN2507", 0, 96
+	Patch "UHRN2507", 0, 80
+	Patch "UHRN2507", 0, 72
+	Patch "UHRN2507", 0, 64
+	Patch "UHRN2507", 0, 56
+	Patch "UHRN2507", 0, 48
+	Patch "UHRN2507", 0, 40
+	Patch "UHRN2507", 0, 32
+}
+
+WallTexture "UHRN1293", 64, 128
+{
+	Patch "UHRN2508", 0, 0
+	Patch "UHRN2508", 0, 64
+}
+
+WallTexture "UHRN1294", 64, 128
+{
+	Patch "UHRN2509", 0, 0
+	Patch "UHRN2509", 0, 64
+}
+
+WallTexture "UHRN1295", 64, 128
+{
+	Patch "UHRN2510", 0, 0
+	Patch "UHRN2510", 32, 64
+	Patch "UHRN2510", -32, 64
+}
+
+WallTexture "UHRN1296", 16, 128
+{
+	Patch "UHRN2511", 0, 0
+	Patch "UHRN2511", 0, 64
+}
+
+WallTexture "UHRN1297", 64, 128
+{
+	Patch "UHRN2512", 0, 0
+	Patch "UHRN2512", 0, 112
+	Patch "UHRN2512", 0, 96
+	Patch "UHRN2512", 0, 80
+	Patch "UHRN2512", 0, 64
+	Patch "UHRN2512", 0, 48
+	Patch "UHRN2512", 0, 32
+	Patch "UHRN2512", 0, 16
+}
+
+WallTexture "UHRN1298", 8, 128
+{
+	Patch "UHRN2513", 0, 0
+	Patch "UHRN2513", 0, 64
+}
+
+WallTexture "UHRN1301", 64, 128
+{
+	Patch "UHRN2516", 0, 0
+	Patch "UHRN2516", 0, 64
+}
+
+WallTexture "UHRN1302", 64, 128
+{
+	Patch "UHRN2517", 0, 0
+	Patch "UHRN2517", 0, 64
+}
+
+WallTexture "UHRN1303", 256, 128
+{
+	Patch "UHRN2518", 128, 64
+	Patch "UHRN2528", 192, 0
+	Patch "UHRN2529", 192, 64
+	Patch "UHRN1680", 32, 0
+	Patch "UHRN1682", 96, 0
+	Patch "UHRN1678", 0, 0
+	Patch "UHRN1678", 160, 0
+	Patch "UHRN1679", 0, 64
+	Patch "UHRN1681", 64, 64
+}
+
+WallTexture "UHRN1304", 256, 56
+{
+	Patch "UHRN2521", 64, 0
+	Patch "UHRN2526", 192, 0
+	Patch "UHRN2522", 128, 0
+	Patch "UHRN1669", 0, 0
+}
+
+WallTexture "UHRN1305", 128, 128
+{
+	Patch "UHRN1699", 32, 4
+	Patch "UHRN1699", 96, 4
+	Patch "SW11_4", 0, 4
+	Patch "SW11_4", 64, 4
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 0, 56
+	Patch "UHRN1669", 0, 0
+	Patch "UHRN2521", 64, 0
+}
+
+WallTexture "UHRN1306", 256, 128
+{
+	Patch "UHRN2523", 128, 0
+	Patch "UHRN2522", 192, 0
+	Patch "UHRN2524", 192, 64
+	Patch "UHRN2525", 0, 64
+	Patch "UHRN2526", 128, 64
+	Patch "UHRN2527", 64, 64
+	Patch "UHRN2521", 64, 0
+	Patch "UHRN1669", 0, 0
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 224, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 0, 120
+}
+
+WallTexture "UHRN1311", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "UHRN2543", 0, 0
+}
+
+WallTexture "UHRN1312", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "UHRN2544", 0, 0
+}
+
+WallTexture "UHRN1313", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "UHRN2545", 0, 0
+}
+
+WallTexture "UHRN1318", 128, 128
+{
+	Patch "UHRN2550", 0, 0
+	Patch "UHRN2551", 64, 0
+	Patch "UHRN2552", 0, 64
+	Patch "UHRN2553", 64, 64
+}
+
+WallTexture "UHRN1325", 16, 128
+{
+	Patch "UHRN1317", 0, 112
+	Patch "UHRN1317", 0, 96
+	Patch "UHRN1317", 0, 80
+	Patch "UHRN1317", 0, 64
+	Patch "UHRN1317", 0, 48
+	Patch "UHRN1317", 0, 32
+	Patch "UHRN1317", 0, 0
+	Patch "UHRN1317", 0, 16
+}
+
+WallTexture "UHRN1326", 32, 128
+{
+	Patch "UHRN1314", 0, 0
+	Patch "UHRN1314", 0, 96
+	Patch "UHRN1314", 0, 64
+	Patch "UHRN1314", 0, 32
+}
+
+WallTexture "UHRN1327", 64, 128
+{
+	Patch "UHRN2569", 0, 0
+	Patch "UHRN2568", 0, 64
+}
+
+WallTexture "UHRN1328", 128, 128
+{
+	Patch "UHRN2560", 64, 0
+	Patch "UHRN2563", 64, 64
+	Patch "UHRN2563", 0, 0
+	Patch "UHRN2560", 0, 64
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+}
+
+WallTexture "UHRN1329", 64, 128
+{
+	Patch "UHRN2561", 0, 0
+	Patch "UHRN2562", 0, 64
+}
+
+WallTexture "UHRN1330", 128, 128
+{
+	Patch "UHRN2562", 64, 0
+	Patch "UHRN2562", 0, 64
+	Patch "UHRN2561", 0, 0
+	Patch "UHRN2561", 64, 64
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+}
+
+WallTexture "UHRN1331", 64, 128
+{
+	Patch "UHRN2563", 0, 0
+	Patch "UHRN2560", 0, 64
+}
+
+WallTexture "UHRN1332", 128, 128
+{
+	Patch "UHRN2564", 64, 0
+	Patch "UHRN2564", 0, 64
+	Patch "UHRN2565", 0, 0
+	Patch "UHRN2565", 64, 64
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+}
+
+WallTexture "UHRN1333", 64, 128
+{
+	Patch "UHRN2565", 0, 0
+	Patch "UHRN2564", 0, 64
+}
+
+WallTexture "UHRN1334", 64, 128
+{
+	Patch "UHRN2566", 0, 0
+	Patch "UHRN2567", 0, 64
+}
+
+WallTexture "UHRN1335", 128, 128
+{
+	Patch "UHRN2567", 64, 0
+	Patch "UHRN2567", 0, 64
+	Patch "UHRN2566", 0, 0
+	Patch "UHRN2566", 64, 64
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+}
+
+WallTexture "UHRN1336", 128, 128
+{
+	Patch "UHRN2568", 64, 0
+	Patch "UHRN2568", 0, 64
+	Patch "UHRN2569", 0, 0
+	Patch "UHRN2569", 64, 64
+	Patch "UHRN1706", 96, 64
+	Patch "UHRN1706", 96, 0
+	Patch "UHRN1705", 0, 0
+	Patch "UHRN1705", 0, 64
+}
+
+WallTexture "UHRN1337", 128, 128
+{
+	Patch "UHRN2584", 0, 0
+	Patch "UHRN2579", 64, 66
+	Patch "UHRN2583", 0, 66
+	Patch "UHRN2583", 64, 0
+}
+
+WallTexture "UHRN1338", 128, 128
+{
+	Patch "UHRN2572", 0, 0
+	Patch "UHRN2573", 64, 66
+	Patch "UHRN2571", 64, 0
+	Patch "UHRN2571", 0, 66
+}
+
+WallTexture "UHRN1339", 128, 128
+{
+	Patch "UHRN2575", 0, 0
+	Patch "UHRN2574", 0, 66
+	Patch "UHRN2574", 64, 0
+	Patch "UHRN2576", 64, 66
+}
+
+WallTexture "UHRN1340", 128, 128
+{
+	Patch "UHRN2578", 0, 0
+	Patch "UHRN2577", 0, 66
+	Patch "UHRN2577", 64, 0
+	Patch "UHRN2570", 64, 66
+}
+
+WallTexture "UHRN1341", 128, 128
+{
+	Patch "UHRN2581", 0, 0
+	Patch "UHRN2580", 0, 66
+	Patch "UHRN2580", 64, 0
+	Patch "UHRN2582", 64, 66
+}
+
+WallTexture "UHRN1345", 64, 128
+{
+	Patch "UHRN2609", 0, 0
+	Patch "UHRN2609", 0, 64
+}
+
+WallTexture "UHRN1347", 64, 128
+{
+	Patch "UHRN2611", 0, 0
+	Patch "UHRN2611", 0, 64
+}
+
+WallTexture "UHRN1348", 64, 128
+{
+	Patch "UHRN2612", 0, 0
+	Patch "UHRN2612", 0, 64
+}
+
+WallTexture "UHRN1349", 64, 128
+{
+	Patch "UHRN2613", 0, 0
+	Patch "UHRN2613", 0, 64
+}
+
+WallTexture "UHRN1350", 64, 128
+{
+	Patch "UHRN2614", 0, 0
+	Patch "UHRN2614", 0, 64
+}
+
+WallTexture "UHRN1351", 64, 128
+{
+	Patch "UHRN2615", 0, 0
+	Patch "UHRN2615", 0, 64
+}
+
+WallTexture "UHRN1352", 64, 128
+{
+	Patch "UHRN2616", 0, 0
+	Patch "UHRN2616", 0, 64
+}
+
+WallTexture "UHRN1353", 64, 128
+{
+	Patch "UHRN2617", 0, 0
+	Patch "UHRN2617", 0, 64
+}
+
+WallTexture "UHRN1354", 64, 128
+{
+	Patch "UHRN2618", 0, 0
+	Patch "UHRN2618", 0, 64
+}
+
+WallTexture "UHRN1372", 32, 16
+{
+	Patch "UHRN2705", 0, 0
+	Patch "UHRN2706", 0, 8
+}
+
+WallTexture "UHRN1373", 32, 16
+{
+	Patch "UHRN2700", 0, 0
+	Patch "UHRN2700", 0, 8
+}
+
+WallTexture "UHRN1374", 32, 16
+{
+	Patch "UHRN2701", 0, 0
+	Patch "UHRN2701", 0, 8
+}
+
+WallTexture "UHRN1375", 32, 16
+{
+	Patch "UHRN2702", 0, 0
+	Patch "UHRN2704", 0, 8
+}
+
+WallTexture "UHRN1377", 32, 16
+{
+	Patch "UHRN2704", 0, 0
+	Patch "UHRN2704", 0, 8
+}
+
+WallTexture "UHRN1378", 32, 16
+{
+	Patch "UHRN2707", 0, 0
+	Patch "UHRN2708", 0, 8
+}
+
+WallTexture "UHRN1380", 32, 16
+{
+	Patch "UHRN2710", 0, 0
+	Patch "UHRN2711", 0, 8
+}
+
+WallTexture "UHRN1381", 32, 16
+{
+	Patch "UHRN2711", 0, 0
+	Patch "UHRN2711", 0, 8
+}
+
+WallTexture "UHRN1382", 32, 16
+{
+	Patch "UHRN2712", 0, 0
+	Patch "UHRN2713", 0, 8
+}
+
+WallTexture "UHRN1383", 64, 16
+{
+	Patch "UHRN2717", 0, 0
+	Patch "UHRN2717", 0, 8
+}
+
+WallTexture "UHRN1385", 32, 16
+{
+	Patch "UHRN2715", 0, 0
+	Patch "UHRN2714", 0, 8
+}
+
+WallTexture "UHRN1405", 64, 128
+{
+	Patch "UHRN2680", 0, 0
+	Patch "UHRN2680", -32, 64
+	Patch "UHRN2680", 32, 64
+}
+
+WallTexture "UHRN1453", 256, 128
+{
+	Patch "UHRN2763", 0, 0
+	Patch "UHRN2765", 128, 0
+	Patch "UHRN2773", 128, 64
+	Patch "UHRN2775", 128, 96
+	Patch "UHRN2755", 160, 64
+	Patch "UHRN2757", 160, 96
+	Patch "UHRN2767", 216, 0
+	Patch "UHRN2769", 192, 24
+	Patch "UHRN2771", 216, 24
+	Patch "UHRN1667", 192, 0
+	Patch "UHRN2761", 192, 48
+	Patch "UHRN2017", 192, 80
+	Patch "UHRN2017", 224, 48
+	Patch "UHRN2017", 240, 0
+}
+
+WallTexture "UHRN1454", 256, 128
+{
+	Patch "UHRN2017", 224, 48
+	Patch "UHRN2017", 192, 80
+	Patch "UHRN2017", 240, 0
+	Patch "UHRN2764", 0, 0
+	Patch "UHRN2766", 128, 0
+	Patch "UHRN2768", 216, 0
+	Patch "UHRN2770", 192, 24
+	Patch "UHRN2772", 216, 24
+	Patch "UHRN2774", 128, 64
+	Patch "UHRN2776", 128, 96
+	Patch "UHRN2756", 160, 64
+	Patch "UHRN2758", 160, 96
+	Patch "UHRN2762", 192, 48
+	Patch "UHRN1666", 192, 0
+}
+
+WallTexture "UHRN1570", 8, 128
+{
+	Patch "UHRN2693", 0, 0
+	Patch "UHRN2693", 0, 64
+}
+
+WallTexture "UHRN1576", 64, 128
+{
+	Patch "UHRN2193", 0, 0
+	Patch "UHRN2193", 0, 64
+}
+
+WallTexture "UHRN1577", 64, 128
+{
+	Patch "UHRN2161", 0, 0
+	Patch "UHRN2161", 0, 64
+}
+
+WallTexture "UHRN1578", 64, 128
+{
+	Patch "UHRN2163", 0, 0
+	Patch "UHRN2163", 0, 64
+}
+
+WallTexture "UHRN1579", 64, 128
+{
+	Patch "UHRN2162", 0, 0
+	Patch "UHRN2162", 0, 64
+}
+
+WallTexture "UHRN1580", 64, 128
+{
+	Patch "UHRN2172", 0, 0
+	Patch "UHRN2172", 0, 64
+}
+
+WallTexture "UHRN1581", 64, 128
+{
+	Patch "UHRN2194", 0, 0
+	Patch "UHRN2194", 0, 64
+}
+
+WallTexture "UHRN1582", 64, 128
+{
+	Patch "UHRN2195", 0, 0
+	Patch "UHRN2195", 0, 64
+}
+
+WallTexture "UHRN1583", 64, 128
+{
+	Patch "UHRN2196", 0, 0
+	Patch "UHRN2196", 0, 64
+}
+
+WallTexture "UHRN1584", 64, 128
+{
+	Patch "UHRN2197", 0, 0
+	Patch "UHRN2197", 0, 64
+}
+
+WallTexture "UHRN1585", 64, 128
+{
+	Patch "UHRN2198", 0, 0
+	Patch "UHRN2198", 0, 64
+}
+
+WallTexture "UHRN1588", 64, 128
+{
+	Patch "UHRN2204", 0, 0
+	Patch "UHRN2204", 0, 64
+}
+
+WallTexture "UHRN1589", 64, 128
+{
+	Patch "UHRN2199", 0, 0
+	Patch "UHRN2199", 0, 64
+}
+
+WallTexture "UHRN1590", 64, 128
+{
+	Patch "UHRN2200", 0, 0
+	Patch "UHRN2200", 0, 64
+}
+
+WallTexture "UHRN1591", 64, 128
+{
+	Patch "UHRN2202", 0, 0
+	Patch "UHRN2202", 0, 64
+}
+
+WallTexture "UHRN1592", 64, 128
+{
+	Patch "UHRN2203", 0, 0
+	Patch "UHRN2203", 0, 64
+}
+
+WallTexture "UHRN1604", 256, 96
+{
+	Patch "UHRN2220", 0, 0
+	Patch "UHRN2221", 128, 0
+}
+
+WallTexture "UHRN1605", 64, 128
+{
+	Patch "UHRN2205", 0, 0
+	Patch "UHRN2205", 0, 64
+}
+
+WallTexture "UHRN1606", 64, 128
+{
+	Patch "UHRN2209", 0, 0
+	Patch "UHRN2209", 0, 64
+}
+
+WallTexture "UHRN1607", 64, 128
+{
+	Patch "UHRN2206", 0, 0
+	Patch "UHRN2206", 0, 64
+}
+
+WallTexture "UHRN1608", 64, 128
+{
+	Patch "UHRN2207", 0, 0
+	Patch "UHRN2207", 0, 64
+}
+
+WallTexture "UHRN1609", 64, 128
+{
+	Patch "UHRN2208", 0, 0
+	Patch "UHRN2208", 32, 64
+	Patch "UHRN2208", -32, 64
+}
+
+WallTexture "UHRN1610", 64, 128
+{
+	Patch "UHRN2210", 0, 0
+	Patch "UHRN2210", 0, 64
+}
+
+WallTexture "UHRN1611", 64, 128
+{
+	Patch "UHRN2211", 0, 0
+	Patch "UHRN2211", 0, 64
+}
+
+WallTexture "UHRN1618", 128, 64
+{
+	Patch "UHRN2075", 0, 0
+	Patch "UHRN2075", 0, 40
+	Patch "UHRN1622", 0, 24
+}
+
+WallTexture "UHRN1635", 64, 128
+{
+	Patch "UHRN2074", 0, 0
+	Patch "UHRN1621", 24, 0
+	Patch "UHRN2074", 40, 0
+}
+
+WallTexture "UHRN1636", 64, 128
+{
+	Patch "UHRN2212", 0, 0
+	Patch "UHRN2212", 0, 64
+}
+
+WallTexture "UHRN1637", 64, 128
+{
+	Patch "UHRN2213", 0, 0
+	Patch "UHRN2213", 0, 64
+}
+
+WallTexture "UHRN1638", 64, 128
+{
+	Patch "UHRN2699", 0, 0
+	Patch "UHRN2699", 0, 64
+}
+

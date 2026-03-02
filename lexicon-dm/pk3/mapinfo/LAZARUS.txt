@@ -1,0 +1,248 @@
+// Lazarus Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map LZRS01 "Chain - Map01"
+{
+	titlepatch = "CWILV00"
+	next = "LZRS02"
+	secretnext = "LZRS02"
+	sky1 = "LZRS0140"
+	music = "D_LZRS01"
+}
+
+map LZRS02 "Blood Abyss"
+{
+	titlepatch = "CWILV01"
+	next = "LZRS03"
+	secretnext = "LZRS03"
+	sky1 = "LZRS0141"
+	music = "D_LZRS02"
+}
+
+map LZRS03 "Spaceport"
+{
+	titlepatch = "CWILV02"
+	next = "LZRS04"
+	secretnext = "LZRS04"
+	sky1 = "LZRS0138"
+	music = "D_LZRS03"
+}
+
+map LZRS04 "Lazarus"
+{
+	titlepatch = "CWILV03"
+	next = "LZRS05"
+	secretnext = "LZRS05"
+	sky1 = "LZRS0135"
+	music = "D_LZRS04"
+}
+
+map LZRS05 "Cicatriz"
+{
+	titlepatch = "CWILV04"
+	next = "LZRS06"
+	secretnext = "LZRS06"
+	sky1 = "LZRS0138"
+	music = "D_LZRS05"
+}
+
+map LZRS06 "FragSquatter"
+{
+	titlepatch = "CWILV05"
+	next = "LZRS07"
+	secretnext = "LZRS07"
+	music = "D_LZRS06"
+}
+
+map LZRS07 "Archaeological Dig"
+{
+	titlepatch = "CWILV06"
+	next = "LZRS08"
+	secretnext = "LZRS08"
+	sky1 = "LZRS0137"
+	music = "D_LZRS07"
+	Map07Special
+}
+
+map LZRS08 "Deserted Outpost"
+{
+	titlepatch = "CWILV07"
+	next = "LZRS09"
+	secretnext = "LZRS09"
+	sky1 = "LZRS0135"
+	music = "D_LZRS08"
+}
+
+map LZRS09 "Containment Site"
+{
+	titlepatch = "CWILV08"
+	next = "LZRS10"
+	secretnext = "LZRS10"
+	sky1 = "LZRS0140"
+	music = "D_LZRS09"
+}
+
+map LZRS10 "Zombie Is..."
+{
+	titlepatch = "CWILV09"
+	next = "LZRS11"
+	secretnext = "LZRS11"
+	sky1 = "LZRS0141"
+	music = "D_LZRS10"
+}
+
+map LZRS11 "LV-426"
+{
+	titlepatch = "CWILV10"
+	next = "LZRS12"
+	secretnext = "LZRS12"
+	music = "D_LZRS11"
+}
+
+map LZRS12 "Ghoul - Map12"
+{
+	titlepatch = "CWILV11"
+	next = "LZRS13"
+	secretnext = "LZRS13"
+	sky1 = "LZRS0142"
+	music = "D_LZRS12"
+}
+
+map LZRS13 "Chain/Ghoul - Map13"
+{
+	titlepatch = "CWILV12"
+	next = "LZRS14"
+	secretnext = "LZRS14"
+	sky1 = "LZRS0136"
+	music = "D_LZRS13"
+}
+
+map LZRS14 "Ghoul - Map14"
+{
+	titlepatch = "CWILV13"
+	next = "LZRS15"
+	secretnext = "LZRS15"
+	sky1 = "LZRS0137"
+	music = "D_LZRS14"
+}
+
+map LZRS15 "Devi - Map15"
+{
+	titlepatch = "CWILV14"
+	next = "LZRS16"
+	secretnext = "LZRS16"
+	sky1 = "LZRS0140"
+	music = "D_LZRS15"
+}
+
+map LZRS16 "Chain - Map16"
+{
+	titlepatch = "CWILV15"
+	next = "LZRS17"
+	secretnext = "LZRS17"
+	sky1 = "LZRS0137"
+	music = "D_LZRS16"
+}
+
+map LZRS17 "Cybershark - Map17"
+{
+	titlepatch = "CWILV16"
+	next = "LZRS18"
+	secretnext = "LZRS18"
+	sky1 = "LZRS0139"
+	music = "D_LZRS17"
+}
+
+map LZRS18 "Hobomaster - Map18"
+{
+	titlepatch = "CWILV17"
+	next = "LZRS19"
+	secretnext = "LZRS19"
+	sky1 = "LZRS0139"
+	music = "D_LZRS18"
+}
+
+map LZRS19 "Brinstar"
+{
+	titlepatch = "CWILV18"
+	next = "LZRS20"
+	secretnext = "LZRS20"
+	music = "D_LZRS19"
+}
+
+map LZRS20 "Library of Hades"
+{
+	titlepatch = "CWILV19"
+	next = "LZRS21"
+	secretnext = "LZRS21"
+	sky1 = "LZRS0139"
+	music = "D_LZRS20"
+}
+
+map LZRS21 "Meph - Map21"
+{
+	titlepatch = "CWILV20"
+	next = "LZRS22"
+	secretnext = "LZRS22"
+	sky1 = "LZRS0140"
+	music = "D_LZRS21"
+}
+
+map LZRS22 "Ghoul - Map22"
+{
+	titlepatch = "CWILV21"
+	next = "LZRS23"
+	secretnext = "LZRS23"
+	sky1 = "LZRS0135"
+	music = "D_LZRS22"
+}
+
+map LZRS23 "Ghoul - Map23"
+{
+	titlepatch = "CWILV22"
+	next = "LZRS24"
+	secretnext = "LZRS24"
+	sky1 = "LZRS0139"
+	music = "D_LZRS23"
+}
+
+map LZRS24 "Mid - Map24"
+{
+	titlepatch = "CWILV23"
+	next = "LZRS25"
+	secretnext = "LZRS25"
+	sky1 = "LZRS0140"
+	music = "D_LZRS24"
+}
+
+map LZRS25 "Chain - Map25"
+{
+	titlepatch = "CWILV24"
+	next = "LZRS26"
+	secretnext = "LZRS26"
+	sky1 = "LZRS0135"
+	music = "D_LZRS25"
+}
+
+map LZRS26 "Chain - Map26"
+{
+	titlepatch = "CWILV25"
+	next = "LZRS27"
+	secretnext = "LZRS27"
+	sky1 = "LZRS0142"
+	music = "D_LZRS26"
+}
+
+map LZRS27 "Mid - Map27"
+{
+	titlepatch = "CWILV26"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "LZRS0142"
+	music = "D_LZRS27"
+}

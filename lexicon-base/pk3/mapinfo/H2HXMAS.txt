@@ -1,0 +1,393 @@
+// H2H-Xmas Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map H2HX01 "Terminal"
+{
+	titlepatch = "H2HXV00"
+	next = "H2HX02"
+	secretnext = "H2HX02"
+	sky1 = "H2HX0200"
+	music = "D_H2HX01"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX02 "Security"
+{
+	titlepatch = "H2HXV01"
+	next = "H2HX03"
+	secretnext = "H2HX03"
+	sky1 = "H2HX0200"
+	music = "D_H2HX02"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX03 "Hangar"
+{
+	titlepatch = "H2HXV02"
+	next = "H2HX04"
+	secretnext = "H2HX04"
+	sky1 = "H2HX0200"
+	music = "D_H2HX03"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX04 "The Sewers"
+{
+	titlepatch = "H2HXV03"
+	next = "H2HX05"
+	secretnext = "H2HX05"
+	sky1 = "H2HX0200"
+	music = "D_H2HX04"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX05 "More Sewers"
+{
+	titlepatch = "H2HXV04"
+	next = "H2HX06"
+	secretnext = "H2HX06"
+	sky1 = "H2HX0200"
+	music = "D_H2HX05"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX06 "Water Works"
+{
+	titlepatch = "H2HXV05"
+	next = "H2HX07"
+	secretnext = "H2HX07"
+	sky1 = "H2HX0200"
+	music = "D_H2HX06"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX07 "Valve House"
+{
+	titlepatch = "H2HXV06"
+	next = "H2HX08"
+	secretnext = "H2HX08"
+	sky1 = "H2HX0200"
+	music = "D_H2HX07"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+	Map07Special
+}
+
+map H2HX08 "Outskirts"
+{
+	titlepatch = "H2HXV07"
+	next = "H2HX09"
+	secretnext = "H2HX09"
+	sky1 = "H2HX0200"
+	music = "D_H2HX08"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX09 "The High Rise"
+{
+	titlepatch = "H2HXV08"
+	next = "H2HX10"
+	secretnext = "H2HX10"
+	sky1 = "H2HX0200"
+	music = "D_H2HX09"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX10 "City Hall"
+{
+	titlepatch = "H2HXV09"
+	next = "H2HX11"
+	secretnext = "H2HX11"
+	sky1 = "H2HX0200"
+	music = "D_H2HX10"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX11 "Main Hall"
+{
+	titlepatch = "H2HXV10"
+	next = "H2HX12"
+	secretnext = "H2HX12"
+	sky1 = "H2HX0200"
+	music = "D_H2HX11"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX12 "The Court Yard"
+{
+	titlepatch = "H2HXV11"
+	next = "H2HX13"
+	secretnext = "H2HX13"
+	sky1 = "H2HX0200"
+	music = "D_H2HX12"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX13 "Town Square"
+{
+	titlepatch = "H2HXV12"
+	next = "H2HX14"
+	secretnext = "H2HX14"
+	sky1 = "H2HX0200"
+	music = "D_H2HX13"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX14 "Mini Malls"
+{
+	titlepatch = "H2HXV13"
+	next = "H2HX15"
+	secretnext = "H2HX15"
+	sky1 = "H2HX0200"
+	music = "D_H2HX14"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX15 "Urban Jungle"
+{
+	titlepatch = "H2HXV14"
+	next = "H2HX16"
+	secretnext = "H2HX31"
+	sky1 = "H2HX0200"
+	music = "D_H2HX15"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX16 "Santa Co"
+{
+	titlepatch = "H2HXV15"
+	next = "H2HX17"
+	secretnext = "H2HX17"
+	sky1 = "H2HX0200"
+	music = "D_H2HX16"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX17 "Chopping Mall"
+{
+	titlepatch = "H2HXV16"
+	next = "H2HX18"
+	secretnext = "H2HX18"
+	sky1 = "H2HX0200"
+	music = "D_H2HX17"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX18 "Stair Master"
+{
+	titlepatch = "H2HXV17"
+	next = "H2HX19"
+	secretnext = "H2HX19"
+	sky1 = "H2HX0200"
+	music = "D_H2HX18"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX19 "Round-A-Bout"
+{
+	titlepatch = "H2HXV18"
+	next = "H2HX20"
+	secretnext = "H2HX20"
+	sky1 = "H2HX0200"
+	music = "D_H2HX19"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX20 "Hotel Hell"
+{
+	titlepatch = "H2HXV19"
+	next = "H2HX21"
+	secretnext = "H2HX21"
+	sky1 = "H2HX0200"
+	music = "D_H2HX20"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX21 "Loading Docks"
+{
+	titlepatch = "H2HXV20"
+	next = "H2HX22"
+	secretnext = "H2HX22"
+	sky1 = "H2HX0200"
+	music = "D_H2HX21"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX22 "Elf-Town"
+{
+	titlepatch = "H2HXV21"
+	next = "H2HX23"
+	secretnext = "H2HX23"
+	sky1 = "H2HX0200"
+	music = "D_H2HX22"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX23 "Elf-Town Revisited"
+{
+	titlepatch = "H2HXV22"
+	next = "H2HX24"
+	secretnext = "H2HX24"
+	sky1 = "H2HX0200"
+	music = "D_H2HX23"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX24 "Working Hard"
+{
+	titlepatch = "H2HXV23"
+	next = "H2HX25"
+	secretnext = "H2HX25"
+	sky1 = "H2HX0200"
+	music = "D_H2HX24"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX25 "Santa's Shop"
+{
+	titlepatch = "H2HXV24"
+	next = "H2HX26"
+	secretnext = "H2HX26"
+	sky1 = "H2HX0200"
+	music = "D_H2HX25"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX26 "Elf's House"
+{
+	titlepatch = "H2HXV25"
+	next = "H2HX27"
+	secretnext = "H2HX27"
+	sky1 = "H2HX0200"
+	music = "D_H2HX26"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX27 "Living In Sin"
+{
+	titlepatch = "H2HXV26"
+	next = "H2HX28"
+	secretnext = "H2HX28"
+	sky1 = "H2HX0200"
+	music = "D_H2HX27"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX28 "Main Office"
+{
+	titlepatch = "H2HXV27"
+	next = "H2HX29"
+	secretnext = "H2HX29"
+	sky1 = "H2HX0200"
+	music = "D_H2HX28"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX29 "Main Branch"
+{
+	titlepatch = "H2HXV28"
+	next = "H2HX30"
+	secretnext = "H2HX30"
+	sky1 = "H2HX0200"
+	music = "D_H2HX29"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX30 "The North Pole"
+{
+	titlepatch = "H2HXV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "H2HX0200"
+	music = "D_H2HX30"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+	allowmonstertelefrags
+}
+
+map H2HX31 "The Lot"
+{
+	titlepatch = "H2HXV30"
+	next = "H2HX16"
+	secretnext = "H2HX32"
+	sky1 = "H2HX0200"
+	music = "D_H2HX31"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}
+
+map H2HX32 "Prison"
+{
+	titlepatch = "H2HXV31"
+	next = "H2HX16"
+	secretnext = "H2HX16"
+	sky1 = "H2HX0200"
+	music = "D_H2HX32"
+	intermusic = "D_H2HXIN"
+	ExitPic = "H2HXINT"
+	EnterPic = "H2HXINT"
+}

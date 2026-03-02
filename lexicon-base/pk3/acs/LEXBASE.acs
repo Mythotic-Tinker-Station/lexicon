@@ -1,0 +1,1566 @@
+/*
+	Lexicon Base Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXBASE"
+
+Script "Lexicon_BasePack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","BASE",1);
+}
+
+script "LexiconBaseExpansionPackMapScripts" ENTER
+{
+	str mapName = StrParam(n:PRINTNAME_LEVEL);
+
+	// Ancient Aliens
+	if (StrICmp(mapName,"AALI01") == 0)
+	{
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				If (!GetCVar("lexicon_no_music_changes")) { setmusic ("D_AALI40", 0); }
+				LocalAmbientSound("AALI/DSWLFHWL", 127);
+				Delay(130);
+			}
+			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI03") == 0)
+	{
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				LocalAmbientSound("AALI/DSBERHWL", 127);
+				Delay(70);
+			}
+			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI04") == 0)
+	{
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				LocalAmbientSound("AALI/DSBSNHWL", 127);
+				Delay(70);
+			}
+			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI07") == 0)
+	{
+		while(TRUE)
+		{
+			if (GetActorZ(0) > 100000000)
+			{
+				If (!GetCVar("lexicon_no_music_changes")) { setmusic ("D_AALI40", 0); }
+				LocalAmbientSound("AALI/DSWLFHWL", 127);
+				Delay(130);
+			}
+			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI16") == 0)
+	{
+		while (TRUE)
+		{
+			int z = GetActorZ(0);
+			if (z > 100000000)
+			{
+				if (z < 600000000)
+				{
+					LocalAmbientSound("AALI/DSWLFHWL", 127);
+					Delay(70);
+				}
+				else if (z < 1000000000)
+				{
+					LocalAmbientSound("AALI/DSEAGLE", 127);
+					Delay(70);			
+				}
+				else if (z < 1300000000)
+				{
+					LocalAmbientSound("AALI/DSBERHWL", 127);
+					Delay(70);
+				}
+				else if (z >= 1300000000)
+				{
+					LocalAmbientSound("AALI/DSBSNHWL", 127);
+					Delay(70);
+				}
+			}
+			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI30") == 0)
+	{
+		while (TRUE)
+		{ 
+			if (GetActorZ(0) > 100000000)
+			{
+				If (!GetCVar("lexicon_no_music_changes")) { setmusic (""); }
+				Delay(15);
+				LocalAmbientSound("AALI/DSGIORG", 127);
+				while (GetActorX(0) / 65536 > 7848)
+				{
+					Delay(1);
+				}
+				Delay(12);
+				LocalAmbientSound("AALI/DSSCREAM", 127);
+				Delay(175);
+			}
+			Delay(1);
+		}
+	}
+
+	// Jiffy Bag
+	if (StrICmp(mapName,"JFBG01") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Not actually set in Jamaica.", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Cockney Dong", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG02") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"I had this layout in mind for months", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Knock It Off!", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG03") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Probably the best map/music combo in here", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Drop the Wombat", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG04") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Named for the platforming.", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Ankle Grinder", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG05") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Now with 50% less Christmas spirit", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Time Bomb", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG06") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Obligatory piss map", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Gatorade Nightmare", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG07") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"M is for meh.", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Minerals", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG08") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Like MM MAP05 except more confusing", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Itchin' for a Bitchin'", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG09") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"aka. 'damaging compblue waterfall canyon'", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Gary", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG10") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Not quite so purple anymore, sorry Fuzzball :(", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Torsal Torsion", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG11") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"fka. 'descending into the crypt of dark sodomy'", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Unyes", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG12") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Octagonal mountains yay", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"How About I Slap Your Bass", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG13") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"\cd>MIDI made in like 10 mins  >Featured in Valiant\cj", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Flatulence Protocol", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG14") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"'Speedmapped' in 4 hours", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Tar", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG15") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Completed way after Altazimuth's birthday :(", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Octarine", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG16") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Same deal as 15 but with Jazz Mickle. I'm horrible", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Crunch Time", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG17") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Hopefully not amazingly broken this time", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Technical Difficulties", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG18") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"The theme was 'use the Violence resources'", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Mighty High", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG19") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"I legit don't know how to do crushers", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"What If I Don't Want To Be A Punching Bag", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG20") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Not sure if bad layout", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Jello Mackerel", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG21") == 0)
+	{ 
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Unjustifiable number of custom textures", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Mal", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG22") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Slayer gone wrong or something", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Bastardville", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG23") == 0)
+	{ 
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"I cannot do gimmicks", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Destruct", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG24") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Tiredness creates massive maps, apparently", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Reach Within", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG25") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Only appearance of SP_ROCK2, sad", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Sinister Waltz of id", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG26") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Only one key in a jimmymap? Heresy!", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Ampersand", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG27") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Tres sp00ky.", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Sol Plummeting", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG28") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"1. Bricks. 2. Blood. 3. ??? 4. Profit.", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Delay(0); Restart;", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG29") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Sleep deprivation is still awesome!", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Tungsten", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG30") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Oops I changed the exit room", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Stream of Embers", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG31") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"I dunno Alfonzo", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"Potioneer", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+	if (StrICmp(mapName,"JFBG32") == 0)
+	{
+		SetFont("BigFont");
+		HUDMessage (n:PRINTNAME_LEVEL, s:" - ", n:PRINTNAME_LEVELNAME;
+		HUDMSG_FADEINOUT, -1000, CR_WHITE, -0.075, 0.74, 2.0, 2.0, 2.0);
+
+		SetFont("SmallFont");
+		HUDMessage (s:"\"", s:"Why has God abandoned us", s:"\" - Jimmy\n\n",
+		s:"\cbNP: \"", s:"The Dave D. Taylor Blues", s:"\"";
+		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
+	}
+
+	// Team Rocket: Blasting Off at the Speed of Mapping
+	if (StrICmp(mapName,"TMR101") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Jim Bagrow's Small Night In"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Jim Bagrow's Small Night In"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR102") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Teahouse"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Teahouse"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR103") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Uncle Touchy's Magic Puzzle Basement"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Uncle Touchy's Magic Puzzle Basement"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR104") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Coat Hangar"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Coat Hangar"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR105") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Skyspace V"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Xyzzy01"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Skyspace V"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Xyzzy01"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR106") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Process of Elimination"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Process of Elimination"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR107") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Obsidian Archetype"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Obsidian Archetype"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR108") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Meanwhile at the Harbor"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"FloatRand"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Meanwhile at the Harbor"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"FloatRand"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR109") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Acceleration"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Acceleration"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR110") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"The Oppressor"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"The Oppressor"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR111") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Down With The Thiccness"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Down With The Thiccness"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR112") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Little Savage"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Little Savage"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR113") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Dominohoes"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Dominohoes"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR114") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Cobble"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AtronxGH"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Cobble"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AtronxGH"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR115") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Roadkill"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Roadkill"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR116") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Frank Lloyd Wrong's Aqueduct"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Frank Lloyd Wrong's Aqueduct"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR117") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Petrichor Gardens"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Petrichor Gardens"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR118") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Pinch Me I Must Be Dreaming"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Pinch Me I Must Be Dreaming"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR119") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Deluge of Ashes"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Deluge of Ashes"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR120") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Vile Remnants"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Vile Remnants"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR121") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Jog On"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Jog On"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR122") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Soup Pot"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Soup Pot"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR123") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Bug Collection"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Bug Collection"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR124") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Tenderizing Romp"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Breezeep"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Tenderizing Romp"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Breezeep"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR125") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Lands Betwixt"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Lands Betwixt"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR126") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"This Is Your Afterlife"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"This Is Your Afterlife"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR127") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Snow Problem"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Snow Problem"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR128") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Den of Skreevil"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Den of Skreevil"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR129") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Papyrus Containing the Spell to Summon the Breath of Life Enshrined in the Collected Scrolls of Sheryl Crow"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.02, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.02, 0.5);
+
+		delay(190);
+
+		SetFont("BigFont");
+		HudMessage(s:"Papyrus Containing the Spell to Summon the Breath of Life Enshrined in the Collected Scrolls of Sheryl Crow"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR130") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"End of Days"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"End of Days"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR131") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Sleep Forever"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dobu Gabu Maru"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Sleep Forever"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dobu Gabu Maru"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR132") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Neon Ignition"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Neon Ignition"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR133") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Inner Demons"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Inner Demons"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR134") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Vermilion"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AtronxGH"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Vermilion"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AtronxGH"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+
+	// Team Rocket 2: Looks Like We're Blasting Off Again
+	if (StrICmp(mapName,"TMR201") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Jimmy Likes to Keep Nice and Wet"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Jimmy Likes to Keep Nice and Wet"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR202") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Nightmare Cinema"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Nightmare Cinema"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR203") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"It's Impolite To Stairs"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"It's Impolite To Stairs"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR204") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Rocket Ranger"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Rocket Ranger"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR205") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Vacant Dreams"; HUDMSG_TYPEON, 998, 
+		CR_GREEN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_GREEN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Vacant Dreams"; HUDMSG_FADEOUT, 998, CR_GREEN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_GREEN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR206") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Delirium Caverns"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Delirium Caverns"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR207") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Breathin' Grease"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Remmirath"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Breathin' Grease"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Remmirath"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR208") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"A Relic of Time"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly/Jimmy"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"A Relic of Time"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly/Jimmy"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR209") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Panic Button!"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Panic Button!"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR210") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Goat Mockery Ritual"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Goat Mockery Ritual"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR211") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Pounded in the Butt"; HUDMSG_TYPEON, 998, 
+		CR_BROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_BROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Pounded in the Butt"; HUDMSG_FADEOUT, 998, CR_BROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_BROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR212") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Monster Arrival"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Monster Arrival"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR213") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"The Dead Sea"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"The Dead Sea"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR214") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Better Late Than Dead"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Breezeep"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Better Late Than Dead"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Breezeep"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR215") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Symmetrical Death"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Symmetrical Death"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR216") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Nuke Me Daddy"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy/Dragonfly"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Nuke Me Daddy"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy/Dragonfly"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR217") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"The Treasure of Aqueus"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"The Treasure of Aqueus"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR218") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Trash Talk Landfill"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Trash Talk Landfill"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR219") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Eccentric Circles"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Simpletonium"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Eccentric Circles"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Simpletonium"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR220") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Island of Fools"; HUDMSG_TYPEON, 998, 
+		CR_ORANGE, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_ORANGE, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Island of Fools"; HUDMSG_FADEOUT, 998, CR_ORANGE, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_ORANGE, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR221") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Romancing the Spider"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Romancing the Spider"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR222") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Feast"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Feast"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR223") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Bone Mass"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Bone Mass"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR224") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"By Christ, The Meat"; HUDMSG_TYPEON, 998, 
+		CR_RED, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_TYPEON, 997, CR_RED, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"By Christ, The Meat"; HUDMSG_FADEOUT, 998, CR_RED, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Matt Tropiano"; HUDMSG_FADEOUT, 997, CR_RED, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR225") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Octagonorrhea"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Octagonorrhea"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR226") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Deathication"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Obsidian"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Deathication"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Obsidian"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR227") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"A Pearl Necklace"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"A Pearl Necklace"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR228") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Stabwound"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Stabwound"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"AD_79"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR229") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Self-Destruct"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.02, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dobu Gabu Maru"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.02, 0.5);
+
+		delay(190);
+
+		SetFont("BigFont");
+		HudMessage(s:"Self-Destruct"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dobu Gabu Maru"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR230") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Shatterspine"; HUDMSG_TYPEON, 998, 
+		CR_DARKBROWN, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_DARKBROWN, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Shatterspine"; HUDMSG_FADEOUT, 998, CR_DARKBROWN, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_DARKBROWN, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR231") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Kentucky Fried BITCH"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Kentucky Fried BITCH"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Jimmy"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR232") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Plug Keyboard into USB Port 2"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Plug Keyboard into USB Port 2"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR233") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"Colon Candy"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"Colon Candy"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"TMR234") == 0)
+	{
+		SetFont("BigFont");
+		HudMessage(s:"NutZ"; HUDMSG_TYPEON, 998, 
+		CR_YELLOW, 1.5, 0.465, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Bridgeburner56"; HUDMSG_TYPEON, 997, CR_YELLOW, 1.5,
+		0.535, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(s:"NutZ"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"Bridgeburner56"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+}

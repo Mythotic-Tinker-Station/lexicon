@@ -1,0 +1,371 @@
+// 200 Minutes of /vr/ Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 2MVR01 "BOOK IT!"
+{
+	titlepatch = "2MVRV00"
+	next = "2MVR02"
+	secretnext = "2MVR02"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR02 "BROWNOUT"
+{
+	titlepatch = "2MVRV01"
+	next = "2MVR03"
+	secretnext = "2MVR03"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_STALKS"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR03 "COMMAND CENTER"
+{
+	titlepatch = "2MVRV02"
+	next = "2MVR04"
+	secretnext = "2MVR04"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR04 "COMPUTER ARRAY"
+{
+	titlepatch = "2MVRV03"
+	next = "2MVR05"
+	secretnext = "2MVR05"
+	sky1 = "2MVR0001"
+	music = "D_2MVR04"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR05 "THE DIG"
+{
+	titlepatch = "2MVRV04"
+	next = "2MVR06"
+	secretnext = "2MVR06"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_DOOM"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR06 "UNEARTH"
+{
+	titlepatch = "2MVRV05"
+	next = "2MVR07"
+	secretnext = "2MVR07"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR07 "OPENING THE GATES OF HELL"
+{
+	titlepatch = "2MVRV06"
+	next = "2MVR08"
+	secretnext = "2MVR08"
+	sky1 = "2MVR0001"
+	music = "D_2MVR07"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+	Map07Special
+}
+
+map 2MVR08 "POWER RELAY"
+{
+	titlepatch = "2MVRV07"
+	next = "2MVR09"
+	secretnext = "2MVR09"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR09 "ARCHIVES"
+{
+	titlepatch = "2MVRV08"
+	next = "2MVR10"
+	secretnext = "2MVR10"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR10 "JUNXION"
+{
+	titlepatch = "2MVRV09"
+	next = "2MVR11"
+	secretnext = "2MVR11"
+	sky1 = "2MVR0001"
+	music = "D_2MVR10"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR11 "THE OVERHALLS"
+{
+	titlepatch = "2MVRV10"
+	next = "2MVR12"
+	secretnext = "2MVR12"
+	sky1 = "2MVR0001"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR12 "THE BRIDGE"
+{
+	titlepatch = "2MVRV11"
+	next = "2MVR13"
+	secretnext = "2MVR13"
+	sky1 = "2MVR0002"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR13 "CATHEDRAL OF PAIN"
+{
+	titlepatch = "2MVRV12"
+	next = "2MVR14"
+	secretnext = "2MVR14"
+	sky1 = "2MVR0002"
+	music = "D_2MVR13"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR14 "200 MINUTES OF TECH"
+{
+	titlepatch = "2MVRV13"
+	next = "2MVR15"
+	secretnext = "2MVR15"
+	sky1 = "2MVR0002"
+	music = "D_2MVR14"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR15 "VALLEY OF HATRED"
+{
+	titlepatch = "2MVRV14"
+	next = "2MVR16"
+	secretnext = "2MVR31"
+	sky1 = "2MVR0002"
+	music = "D_2MVR15"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR16 "FREQUENTLY GIVEN ADVICE"
+{
+	titlepatch = "2MVRV15"
+	next = "2MVR17"
+	secretnext = "2MVR17"
+	sky1 = "2MVR0002"
+	music = "D_2MVR16"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR17 "IN DEEP"
+{
+	titlepatch = "2MVRV16"
+	next = "2MVR18"
+	secretnext = "2MVR18"
+	sky1 = "2MVR0002"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR18 "DEAD CARGO"
+{
+	titlepatch = "2MVRV17"
+	next = "2MVR19"
+	secretnext = "2MVR19"
+	sky1 = "2MVR0002"
+	music = "D_2MVR18"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR19 "DUCK AND COVER"
+{
+	titlepatch = "2MVRV18"
+	next = "2MVR20"
+	secretnext = "2MVR20"
+	sky1 = "2MVR0002"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR20 "PUNCH IT!"
+{
+	titlepatch = "2MVRV19"
+	next = "2MVR21"
+	secretnext = "2MVR21"
+	sky1 = "2MVR0002"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR21 "DEMON H.Q."
+{
+	titlepatch = "2MVRV20"
+	next = "2MVR22"
+	secretnext = "2MVR22"
+	sky1 = "2MVR0003"
+	music = "D_2MVR21"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR22 "BLOOD RIVER"
+{
+	titlepatch = "2MVRV21"
+	next = "2MVR23"
+	secretnext = "2MVR23"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR23 "THE DANCE"
+{
+	titlepatch = "2MVRV22"
+	next = "2MVR24"
+	secretnext = "2MVR24"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR24 "YE MIGHTY AND DESPAIR"
+{
+	titlepatch = "2MVRV23"
+	next = "2MVR25"
+	secretnext = "2MVR25"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR25 "HOME SWEET HELL"
+{
+	titlepatch = "2MVRV24"
+	next = "2MVR26"
+	secretnext = "2MVR26"
+	sky1 = "2MVR0003"
+	music = "D_2MVR25"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR26 "200 MINUTES OF HELL"
+{
+	titlepatch = "2MVRV25"
+	next = "2MVR27"
+	secretnext = "2MVR27"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR27 "WALLS OF JERICHO"
+{
+	titlepatch = "2MVRV26"
+	next = "2MVR28"
+	secretnext = "2MVR28"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR28 "200 MINUTES OF GOING DOWN"
+{
+	titlepatch = "2MVRV27"
+	next = "2MVR29"
+	secretnext = "2MVR29"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_TENSE"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR29 "AGGRAVATINGLY CRAMPED"
+{
+	titlepatch = "2MVRV28"
+	next = "2MVR30"
+	secretnext = "2MVR30"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR30 "CAROUSEL"
+{
+	titlepatch = "2MVRV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+	allowmonstertelefrags
+}
+
+map 2MVR31 "BRUTTO"
+{
+	titlepatch = "2MVRV30"
+	next = "2MVR16"
+	secretnext = "2MVR32"
+	sky1 = "2MVR0003"
+	music = "D_2MVR31"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR32 "SNEEK"
+{
+	titlepatch = "2MVRV31"
+	next = "2MVR16"
+	secretnext = "2MVR16"
+	sky1 = "2MVR0003"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}
+
+map 2MVR33 "ANACHRONISM"
+{
+	titlepatch = "2MVRV32"
+	next = "2MVR01"
+	secretnext = "2MVR01"
+	sky1 = "2MVR0001"
+	ExitPic = "2MVRINT"
+	EnterPic = "2MVRINT"
+}

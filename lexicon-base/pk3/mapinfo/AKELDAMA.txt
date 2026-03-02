@@ -1,0 +1,393 @@
+// Akeldama Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map AKDL01 "The Generator"
+{
+	titlepatch = "AKDLV00"
+	next = "AKDL02"
+	secretnext = "AKDL02"
+	sky1 = "AKDL0043"
+	music = "D_AKDL01"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL02 "Knights of Ilasac"
+{
+	titlepatch = "AKDLV01"
+	next = "AKDL03"
+	secretnext = "AKDL03"
+	sky1 = "AKDL0043"
+	music = "D_AKDL02"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL03 "Renegades"
+{
+	titlepatch = "AKDLV02"
+	next = "AKDL04"
+	secretnext = "AKDL04"
+	sky1 = "AKDL0043"
+	music = "D_AKDL03"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL04 "Chillwell"
+{
+	titlepatch = "AKDLV03"
+	next = "AKDL05"
+	secretnext = "AKDL05"
+	sky1 = "AKDL0043"
+	music = "D_AKDL04"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL05 "Bunker Hill"
+{
+	titlepatch = "AKDLV04"
+	next = "AKDL06"
+	secretnext = "AKDL06"
+	sky1 = "AKDL0043"
+	music = "D_AKDL05"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL06 "Insurrection"
+{
+	titlepatch = "AKDLV05"
+	next = "AKDL07"
+	secretnext = "AKDL07"
+	sky1 = "AKDL0043"
+	music = "D_AKDL06"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL07 "Carnage Facility"
+{
+	titlepatch = "AKDLV06"
+	next = "AKDL08"
+	secretnext = "AKDL08"
+	sky1 = "AKDL0043"
+	music = "D_AKDL07"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+	Map07Special
+}
+
+map AKDL08 "Arctic Compound"
+{
+	titlepatch = "AKDLV07"
+	next = "AKDL09"
+	secretnext = "AKDL09"
+	sky1 = "AKDL0043"
+	music = "D_AKDL08"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL09 "Winter Stronghold"
+{
+	titlepatch = "AKDLV08"
+	next = "AKDL10"
+	secretnext = "AKDL10"
+	sky1 = "AKDL0043"
+	music = "D_AKDL09"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL10 "Hangar Facility"
+{
+	titlepatch = "AKDLV09"
+	next = "AKDL11"
+	secretnext = "AKDL11"
+	sky1 = "AKDL0043"
+	music = "D_AKDL10"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL11 "The Glacier Base"
+{
+	titlepatch = "AKDLV10"
+	next = "AKDL12"
+	secretnext = "AKDL12"
+	sky1 = "AKDL0043"
+	music = "D_AKDL11"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL12 "Urban Strike"
+{
+	titlepatch = "AKDLV11"
+	next = "AKDL13"
+	secretnext = "AKDL13"
+	sky1 = "AKDL0044"
+	music = "D_AKDL12"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL13 "Toxic Disgust"
+{
+	titlepatch = "AKDLV12"
+	next = "AKDL14"
+	secretnext = "AKDL14"
+	sky1 = "AKDL0044"
+	music = "D_AKDL13"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL14 "Darkness Beneath"
+{
+	titlepatch = "AKDLV13"
+	next = "AKDL15"
+	secretnext = "AKDL15"
+	sky1 = "AKDL0044"
+	music = "D_AKDL14"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL15 "Breaching the Source"
+{
+	titlepatch = "AKDLV14"
+	next = "AKDL16"
+	secretnext = "AKDL31"
+	sky1 = "AKDL0044"
+	music = "D_AKDL15"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL16 "Aqueduct Fortress"
+{
+	titlepatch = "AKDLV15"
+	next = "AKDL17"
+	secretnext = "AKDL17"
+	sky1 = "AKDL0044"
+	music = "D_AKDL16"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL17 "Blood Covenant"
+{
+	titlepatch = "AKDLV16"
+	next = "AKDL18"
+	secretnext = "AKDL18"
+	sky1 = "AKDL0044"
+	music = "D_AKDL17"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL18 "Mortar"
+{
+	titlepatch = "AKDLV17"
+	next = "AKDL19"
+	secretnext = "AKDL19"
+	sky1 = "AKDL0044"
+	music = "D_AKDL18"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL19 "Death March"
+{
+	titlepatch = "AKDLV18"
+	next = "AKDL20"
+	secretnext = "AKDL20"
+	sky1 = "AKDL0044"
+	music = "D_AKDL19"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL20 "The Devil's Triangle"
+{
+	titlepatch = "AKDLV19"
+	next = "AKDL21"
+	secretnext = "AKDL21"
+	sky1 = "AKDL0044"
+	music = "D_AKDL20"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL21 "Disaster County"
+{
+	titlepatch = "AKDLV20"
+	next = "AKDL22"
+	secretnext = "AKDL22"
+	sky1 = "AKDL0045"
+	music = "D_AKDL21"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL22 "Dark Sacrifices"
+{
+	titlepatch = "AKDLV21"
+	next = "AKDL23"
+	secretnext = "AKDL23"
+	sky1 = "AKDL0045"
+	music = "D_AKDL22"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL23 "Chimera"
+{
+	titlepatch = "AKDLV22"
+	next = "AKDL24"
+	secretnext = "AKDL24"
+	sky1 = "AKDL0045"
+	music = "D_AKDL23"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL24 "Alexandria's Library"
+{
+	titlepatch = "AKDLV23"
+	next = "AKDL25"
+	secretnext = "AKDL25"
+	sky1 = "AKDL0045"
+	music = "D_AKDL24"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL25 "Opulence"
+{
+	titlepatch = "AKDLV24"
+	next = "AKDL26"
+	secretnext = "AKDL26"
+	sky1 = "AKDL0045"
+	music = "D_AKDL25"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL26 "Duskbound"
+{
+	titlepatch = "AKDLV25"
+	next = "AKDL27"
+	secretnext = "AKDL27"
+	sky1 = "AKDL0045"
+	music = "D_AKDL26"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL27 "Bitter Waters"
+{
+	titlepatch = "AKDLV26"
+	next = "AKDL28"
+	secretnext = "AKDL28"
+	sky1 = "AKDL0045"
+	music = "D_AKDL27"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL28 "Climbing Blood Mountain"
+{
+	titlepatch = "AKDLV27"
+	next = "AKDL29"
+	secretnext = "AKDL29"
+	sky1 = "AKDL0045"
+	music = "D_AKDL28"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL29 "Boglach"
+{
+	titlepatch = "AKDLV28"
+	next = "AKDL30"
+	secretnext = "AKDL30"
+	sky1 = "AKDL0045"
+	music = "D_AKDL29"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL30 "Mind of Enmity"
+{
+	titlepatch = "AKDLV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "AALI4130"
+	music = "D_AKDL30"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+	allowmonstertelefrags
+}
+
+map AKDL31 "Make Believe"
+{
+	titlepatch = "AKDLV30"
+	next = "AKDL16"
+	secretnext = "AKDL32"
+	sky1 = "AKDL0045"
+	music = "D_AKDL31"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}
+
+map AKDL32 "Operation Pump and Dump"
+{
+	titlepatch = "AKDLV31"
+	next = "AKDL16"
+	secretnext = "AKDL16"
+	sky1 = "AKDL0045"
+	music = "D_AKDL32"
+	intermusic = "D_AKDLIN"
+	ExitPic = "AKDLINT"
+	EnterPic = "AKDLINT"
+}

@@ -1,0 +1,393 @@
+// Perdition's Gate Resurgence Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map PDGR01 "Lighthouse Of Alexandria - Jaws In Space"
+{
+	titlepatch = "CWILV00"
+	next = "PDGR02"
+	secretnext = "PDGR02"
+	sky1 = "PDGR0590"
+	music = "D_PDGR01"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR02 "Sanctuary - Valkiriforce & Jaws In Space"
+{
+	titlepatch = "CWILV01"
+	next = "PDGR03"
+	secretnext = "PDGR03"
+	sky1 = "PDGR0590"
+	music = "D_PDGR02"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR03 "Bastet's Temple - Jaws in Space"
+{
+	titlepatch = "CWILV02"
+	next = "PDGR04"
+	secretnext = "PDGR04"
+	sky1 = "PDGR0590"
+	music = "D_PDGR03"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR04 "(Unnamed) - dt_ & Jaws In Space"
+{
+	titlepatch = "CWILV03"
+	next = "PDGR05"
+	secretnext = "PDGR05"
+	sky1 = "PDGR0590"
+	music = "D_PDGR04"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR05 "Temple Of Maeve - A. Gamma"
+{
+	titlepatch = "CWILV04"
+	next = "PDGR06"
+	secretnext = "PDGR06"
+	sky1 = "PDGR0590"
+	music = "D_PDGR05"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR06 "Troubled Research - Gothic"
+{
+	titlepatch = "CWILV05"
+	next = "PDGR07"
+	secretnext = "PDGR07"
+	sky1 = "PDGR0590"
+	music = "D_PDGR06"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR07 "Mummy Tombs - Valkiriforce"
+{
+	titlepatch = "CWILV06"
+	next = "PDGR08"
+	secretnext = "PDGR08"
+	sky1 = "PDGR0590"
+	music = "D_PDGR07"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+	Map07Special
+}
+
+map PDGR08 "Spelunker - Gothic"
+{
+	titlepatch = "CWILV07"
+	next = "PDGR09"
+	secretnext = "PDGR09"
+	sky1 = "PDGR0590"
+	music = "D_PDGR08"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR09 "Salem's Shrine - Purist"
+{
+	titlepatch = "CWILV08"
+	next = "PDGR10"
+	secretnext = "PDGR10"
+	sky1 = "PDGR0590"
+	music = "D_PDGR09"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR10 "(Unnamed) - dt_ & Jaws In Space"
+{
+	titlepatch = "CWILV09"
+	next = "PDGR11"
+	secretnext = "PDGR11"
+	sky1 = "PDGR0590"
+	music = "D_PDGR10"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR11 "The Ra-Moons Curse - NeedHealth & Jaws In Space"
+{
+	titlepatch = "CWILV10"
+	next = "PDGR12"
+	secretnext = "PDGR12"
+	sky1 = "PDGR0590"
+	music = "D_PDGR11"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR12 "Crossways - Valkiriforce"
+{
+	titlepatch = "CWILV11"
+	next = "PDGR13"
+	secretnext = "PDGR13"
+	sky1 = "PDGR0591"
+	music = "D_PDGR12"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR13 "(Unnamed) - 40oz"
+{
+	titlepatch = "CWILV12"
+	next = "PDGR14"
+	secretnext = "PDGR14"
+	sky1 = "PDGR0591"
+	music = "D_PDGR13"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR14 "Transfer To Hell - Jaws In Space"
+{
+	titlepatch = "CWILV13"
+	next = "PDGR15"
+	secretnext = "PDGR15"
+	sky1 = "PDGR0591"
+	music = "D_PDGR14"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR15 "Timeless Fortress - A. Gamma"
+{
+	titlepatch = "CWILV14"
+	next = "PDGR16"
+	secretnext = "PDGR31"
+	sky1 = "PDGR0591"
+	music = "D_PDGR15"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR16 "Hell's Vista - PepsiBepsi, Jaws in Space, & Scorpius"
+{
+	titlepatch = "CWILV15"
+	next = "PDGR17"
+	secretnext = "PDGR17"
+	sky1 = "PDGR0591"
+	music = "D_PDGR16"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR17 "(Unnamed) - Juza & Jaws In Space"
+{
+	titlepatch = "CWILV16"
+	next = "PDGR18"
+	secretnext = "PDGR18"
+	sky1 = "PDGR0591"
+	music = "D_PDGR17"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR18 "Summit Assault - Gothic"
+{
+	titlepatch = "CWILV17"
+	next = "PDGR19"
+	secretnext = "PDGR19"
+	sky1 = "PDGR0591"
+	music = "D_PDGR18"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR19 "Warp Docks - Wraith777"
+{
+	titlepatch = "CWILV18"
+	next = "PDGR20"
+	secretnext = "PDGR20"
+	sky1 = "PDGR0591"
+	music = "D_PDGR19"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR20 "Cyber Center - dt_ & Jaws In Space"
+{
+	titlepatch = "CWILV19"
+	next = "PDGR21"
+	secretnext = "PDGR21"
+	sky1 = "PDGR0591"
+	music = "D_PDGR20"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR21 "Assimilation - DukeOfDoom & Jaws In Space"
+{
+	titlepatch = "CWILV20"
+	next = "PDGR22"
+	secretnext = "PDGR22"
+	sky1 = "PDGR0592"
+	music = "D_PDGR21"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR22 "Cathedral Of Blood - Doomlust"
+{
+	titlepatch = "CWILV21"
+	next = "PDGR23"
+	secretnext = "PDGR23"
+	sky1 = "PDGR0592"
+	music = "D_PDGR22"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR23 "Pharaoh's Pit - Gothic"
+{
+	titlepatch = "CWILV22"
+	next = "PDGR24"
+	secretnext = "PDGR24"
+	sky1 = "PDGR0592"
+	music = "D_PDGR23"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR24 "(Unnamed) - dt_"
+{
+	titlepatch = "CWILV23"
+	next = "PDGR25"
+	secretnext = "PDGR25"
+	sky1 = "PDGR0592"
+	music = "D_PDGR24"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR25 "Conspicuous Courtyard - Jark & Jaws In Space"
+{
+	titlepatch = "CWILV24"
+	next = "PDGR26"
+	secretnext = "PDGR26"
+	sky1 = "PDGR0592"
+	music = "D_PDGR25"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR26 "Hell's Computer - A. Gamma"
+{
+	titlepatch = "CWILV25"
+	next = "PDGR27"
+	secretnext = "PDGR27"
+	sky1 = "PDGR0592"
+	music = "D_PDGR26"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR27 "Bad Flesh - Gothic"
+{
+	titlepatch = "CWILV26"
+	next = "PDGR28"
+	secretnext = "PDGR28"
+	sky1 = "PDGR0592"
+	music = "D_PDGR27"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR28 "Unholy Underworld - DukeOfDoom"
+{
+	titlepatch = "CWILV27"
+	next = "PDGR29"
+	secretnext = "PDGR29"
+	sky1 = "PDGR0592"
+	music = "D_PDGR28"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR29 "Brain Damage - Wraith777"
+{
+	titlepatch = "CWILV28"
+	next = "PDGR30"
+	secretnext = "PDGR30"
+	sky1 = "PDGR0592"
+	music = "D_PDGR29"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR30 "Spinal Shock - Wraith777"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "PDGR0592"
+	music = "D_PDGR30"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+	allowmonstertelefrags
+}
+
+map PDGR31 "Hidden Trials - dt_"
+{
+	titlepatch = "CWILV30"
+	next = "PDGR16"
+	secretnext = "PDGR32"
+	sky1 = "PDGR0592"
+	music = "D_PDGR31"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}
+
+map PDGR32 "Hidden Conquest - A. Gamma"
+{
+	titlepatch = "CWILV31"
+	next = "PDGR16"
+	secretnext = "PDGR16"
+	sky1 = "PDGR0592"
+	music = "D_PDGR32"
+	intermusic = "D_PDGRIN"
+	ExitPic = "PDGRINT"
+	EnterPic = "PDGRINT"
+}

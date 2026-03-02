@@ -1,0 +1,404 @@
+// 300 Minutes of /vr/ Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 3MVR01 "TRENCH"
+{
+	titlepatch = "3MVRV00"
+	next = "3MVR02"
+	secretnext = "3MVR02"
+	sky1 = "3MVR0015"
+	music = "D_3MVR01"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR02 "CURSE OF THE DONUTS"
+{
+	titlepatch = "3MVRV01"
+	next = "3MVR03"
+	secretnext = "3MVR03"
+	sky1 = "3MVR0015"
+	music = "D_3MVR02"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR03 "SUBTERRANEAN HIDEOUT"
+{
+	titlepatch = "3MVRV02"
+	next = "3MVR04"
+	secretnext = "3MVR04"
+	sky1 = "3MVR0015"
+	music = "D_3MVR03"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR04 "WAREHOUSE CLEANUP"
+{
+	titlepatch = "3MVRV03"
+	next = "3MVR05"
+	secretnext = "3MVR05"
+	sky1 = "3MVR0015"
+	music = "D_3MVR04"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR05 "BAY 54"
+{
+	titlepatch = "3MVRV04"
+	next = "3MVR06"
+	secretnext = "3MVR06"
+	sky1 = "3MVR0015"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR06 "TOP SECRET LABRADOODLE"
+{
+	titlepatch = "3MVRV05"
+	next = "3MVR07"
+	secretnext = "3MVR07"
+	sky1 = "3MVR0015"
+	music = "D_3MVR06"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR07 "MOONLIT HARBOR"
+{
+	titlepatch = "3MVRV06"
+	next = "3MVR08"
+	secretnext = "3MVR08"
+	sky1 = "3MVR0015"
+	music = "D_3MVR07"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+	Map07Special
+}
+
+map 3MVR08 "SYNDICATE"
+{
+	titlepatch = "3MVRV07"
+	next = "3MVR09"
+	secretnext = "3MVR09"
+	sky1 = "3MVR0015"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR09 "GO SLOWLY"
+{
+	titlepatch = "3MVRV08"
+	next = "3MVR10"
+	secretnext = "3MVR10"
+	sky1 = "3MVR0015"
+	music = "D_3MVR09"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR10 "CRASH SITE"
+{
+	titlepatch = "3MVRV09"
+	next = "3MVR11"
+	secretnext = "3MVR11"
+	sky1 = "3MVR0015"
+	music = "D_3MVR10"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR11 "SUPREME WEBBED COURT"
+{
+	titlepatch = "3MVRV10"
+	next = "3MVR12"
+	secretnext = "3MVR12"
+	sky1 = "3MVR0015"
+	music = "D_3MVR11"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR12 "CONCEPTION"
+{
+	titlepatch = "3MVRV11"
+	next = "3MVR13"
+	secretnext = "3MVR13"
+	sky1 = "3MVR0016"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR13 "GRAVELAND"
+{
+	titlepatch = "3MVRV12"
+	next = "3MVR14"
+	secretnext = "3MVR14"
+	sky1 = "3MVR0016"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR14 "BLUE SANCTUARY"
+{
+	titlepatch = "3MVRV13"
+	next = "3MVR15"
+	secretnext = "3MVR15"
+	sky1 = "3MVR0016"
+	music = "D_3MVR14"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR15 "THE ROOM OUT OF SHAPE"
+{
+	titlepatch = "3MVRV14"
+	next = "3MVR16"
+	secretnext = "3MVR31"
+	sky1 = "3MVR0016"
+	music = "D_3MVR15"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR16 "CHOOSE YOUR PATH"
+{
+	titlepatch = "3MVRV15"
+	next = "3MVR17"
+	secretnext = "3MVR17"
+	sky1 = "3MVR0016"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR17 "TOOMB"
+{
+	titlepatch = "3MVRV16"
+	next = "3MVR18"
+	secretnext = "3MVR18"
+	sky1 = "3MVR0016"
+	music = "D_3MVR17"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR18 "SATURDAY NIGHT CODEINE"
+{
+	titlepatch = "3MVRV17"
+	next = "3MVR19"
+	secretnext = "3MVR19"
+	sky1 = "3MVR0016"
+	music = "D_3MVR18"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR19 "BLOOD FEUD"
+{
+	titlepatch = "3MVRV18"
+	next = "3MVR20"
+	secretnext = "3MVR20"
+	sky1 = "3MVR0016"
+	music = "$MUSIC_SHAWN2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR20 "WELCOME TO THE PARK"
+{
+	titlepatch = "3MVRV19"
+	next = "3MVR21"
+	secretnext = "3MVR21"
+	sky1 = "3MVR0016"
+	music = "D_3MVR20"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR21 "COLLIDER"
+{
+	titlepatch = "3MVRV20"
+	next = "3MVR22"
+	secretnext = "3MVR22"
+	sky1 = "3MVR0017"
+	music = "D_3MVR21"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR22 "THE PUNCH DIMENSION"
+{
+	titlepatch = "3MVRV21"
+	next = "3MVR23"
+	secretnext = "3MVR23"
+	sky1 = "3MVR0017"
+	music = "D_3MVR22"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR23 "THY FLESH ON A PLATTER"
+{
+	titlepatch = "3MVRV22"
+	next = "3MVR24"
+	secretnext = "3MVR24"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR24 "MT. HECK"
+{
+	titlepatch = "3MVRV23"
+	next = "3MVR25"
+	secretnext = "3MVR25"
+	sky1 = "3MVR0017"
+	music = "D_3MVR24"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR25 "NO ARCH-VILES ALLOWED"
+{
+	titlepatch = "3MVRV24"
+	next = "3MVR26"
+	secretnext = "3MVR26"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR26 "PRAISE VANILLA WIZARD"
+{
+	titlepatch = "3MVRV25"
+	next = "3MVR27"
+	secretnext = "3MVR27"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR27 "PERFECT HATEMAIL"
+{
+	titlepatch = "3MVRV26"
+	next = "3MVR28"
+	secretnext = "3MVR28"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR28 "PURGATORI"
+{
+	titlepatch = "3MVRV27"
+	next = "3MVR29"
+	secretnext = "3MVR29"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR29 "IN YOUR ASS"
+{
+	titlepatch = "3MVRV28"
+	next = "3MVR30"
+	secretnext = "3MVR30"
+	sky1 = "3MVR0017"
+	music = "D_3MVR29"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR30 "ICON OF SHAME"
+{
+	titlepatch = "3MVRV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "3MVR0017"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+	allowmonstertelefrags
+}
+
+map 3MVR31 "ULTRA-PROGRESSIVE WORLD"
+{
+	titlepatch = "3MVRV30"
+	next = "3MVR16"
+	secretnext = "3MVR32"
+	sky1 = "3MVR0017"
+	music = "D_3MVR31"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR32 "SPEAR OF INSANITY"
+{
+	titlepatch = "3MVRV31"
+	next = "3MVR16"
+	secretnext = "3MVR16"
+	sky1 = "3MVR0017"
+	music = "D_3MVR22"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}
+
+map 3MVR33 "WARRENSTEIN"
+{
+	titlepatch = "3MVRV32"
+	next = "3MVR01"
+	secretnext = "3MVR01"
+	sky1 = "3MVR0015"
+	intermusic = "D_3MVRIN"
+	ExitPic = "3MVRINT"
+	EnterPic = "3MVRINT"
+}

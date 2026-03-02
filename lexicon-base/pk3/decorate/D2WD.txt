@@ -1,0 +1,119 @@
+ACTOR Lexicon_D2WD_DeadLostSoul : DeadLostSoul
+{
+	Health 100
+	Speed 8
+	Height 56
+	Damage 5
+	Mass 10000
+	+SOLID
+	+SHOOTABLE
+	+DROPOFF
+	+NOBLOOD
+	+COUNTKILL
+	AttackSound "D2WD/DSSKLDTH"
+	PainSound "D2WD/DSSKLDTH"
+	DeathSound "D2WD/DSKEENDT"
+	Tag "$D2WD_TAG_GARG"
+	States
+	{
+	Spawn:
+		LX06 ABCD 6 Bright A_Look
+		loop
+	See:
+		LX06 EF 4 Bright A_Chase
+		loop
+	Pain:
+		LX06 E 0
+		goto See
+	Missile:
+		LX06 A 10 Bright A_FaceTarget
+		LX06 E 0 Bright A_SkullAttack
+		LX06 EF 2 Bright
+		goto Missile+2
+	Death:
+		LX06 G 12 Bright A_Scream
+		LX06 H -1 A_Fall
+		stop
+	}
+}
+
+ACTOR Lexicon_D2WD_CommanderKeen : CommanderKeen
+{
+	Health 1
+	Speed 10
+	Height 56
+	PainChance 0
+	-SPAWNCEILING
+	-NOGRAVITY
+	+NOBLOOD
+	PainSound ""
+	DeathSound "D2WD/DSKEENPN"
+	Tag "$D2WD_TAG_YORP"
+	States
+	{
+	Spawn:
+		LX06 I 10 Bright A_Look
+		loop
+	See:
+		LX06 LM 4 Bright A_Chase
+		loop
+	Pain:
+		LX06 L 0
+		goto See
+	Melee:
+	Missile:
+		LX06 IJIKIJIK 6 Bright
+		goto See
+	Death:
+		LX06 N 0 Bright A_Scream
+		LX06 N 0 Bright A_KeenDie
+		LX06 NO 5 Bright 
+		goto Death+2
+	}
+}
+
+ACTOR Lexicon_D2WD_WolfensteinSS : WolfensteinSS
+{
+	Health 5000
+	Speed 12
+	Radius 32
+	Height 80
+	Damage 10
+	PainChance 0
+	Mass 10000
+	SeeSound ""
+	AttackSound "D2WD/DSTINK"
+	PainSound "D2WD/DSSSSIT"
+	ActiveSound "D2WD/DSTINK"
+	DeathSound "D2WD/DSSSDTH"
+	Tag "$D2WD_TAG_DOPEFISH"
+	States
+	{
+	Spawn:
+		LX06 PQ 10 Bright A_Look
+		Loop
+	See:
+		LX06 P 1 Bright A_Chase
+		Loop
+	Pain:
+		LX06 P 2 Bright A_Chase
+		goto See
+	Missile:
+		LX06 Q 0 Bright A_Pain
+		LX06 Q 15 Bright A_FaceTarget
+		LX06 R 15 Bright A_SkullAttack
+		LX06 Q 5 Bright A_FaceTarget
+		goto Missile+2
+	Death:
+	XDeath:
+		LX06 S 20 Bright A_Scream
+		LX06 T 10 Bright 
+		LX06 UV 10 Bright 
+		LX06 W 40 Bright 
+		LX06 W -1 Bright A_BrainDie
+		goto Death+2
+	Raise:
+		TROO A -1 
+		stop
+	}
+}

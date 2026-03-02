@@ -1,0 +1,15 @@
+ACTOR Lexicon_JFBG_SpiderMastermind : SpiderMastermind
+{
+	Health 3500
+	Speed 16
+	Radius 88
+	PainChance 20
+	States
+	{
+	Missile:
+		SPID A 15 Bright A_FaceTarget
+		SPID GH 4 Bright A_SPosAttack
+		SPID H 1 Bright A_SpidRefire
+		goto Missile+1
+	}
+}

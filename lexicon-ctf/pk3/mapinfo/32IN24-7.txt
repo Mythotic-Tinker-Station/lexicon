@@ -1,0 +1,426 @@
+// 32in24 7: Return of the Night of Capture the Flag Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map YD0701 "Fear and Loathing in Dwango5"
+{
+	titlepatch = "YD07V00"
+	next = "YD0702"
+	secretnext = "YD0702"
+	sky1 = "YD071941"
+	music = "D_YD0701"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0702 "Bartlett's III: The Road Warrior"
+{
+	titlepatch = "YD07V01"
+	next = "YD0703"
+	secretnext = "YD0703"
+	sky1 = "YD071941"
+	music = "D_YD0702"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0703 "Velocity Kitten Go"
+{
+	titlepatch = "YD07V02"
+	next = "YD0704"
+	secretnext = "YD0704"
+	sky1 = "YD071941"
+	music = "D_YD0703"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0704 "The Accursed Gorge"
+{
+	titlepatch = "YD07V03"
+	next = "YD0705"
+	secretnext = "YD0705"
+	sky1 = "YD071941"
+	music = "D_YD0704"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0705 "R.I.P. Charlton Heston"
+{
+	titlepatch = "YD07V04"
+	next = "YD0706"
+	secretnext = "YD0706"
+	sky1 = "YD071941"
+	music = "D_YD0705"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0706 "Bedeviled Duality"
+{
+	titlepatch = "YD07V05"
+	next = "YD0707"
+	secretnext = "YD0707"
+	sky1 = "YD071941"
+	music = "D_YD0706"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0707 "City of Dirty Maniacs"
+{
+	titlepatch = "YD07V06"
+	next = "YD0708"
+	secretnext = "YD0708"
+	sky1 = "YD071941"
+	music = "D_YD0707"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0708 "Really Pissed-Off Libraries"
+{
+	titlepatch = "YD07V07"
+	next = "YD0709"
+	secretnext = "YD0709"
+	sky1 = "YD071941"
+	music = "D_YD0708"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0709 "Keeping It Simple"
+{
+	titlepatch = "YD07V08"
+	next = "YD0710"
+	secretnext = "YD0710"
+	sky1 = "YD071941"
+	music = "D_YD0709"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0710 "The Soviet Russian Time Travel Fortress"
+{
+	titlepatch = "YD07V09"
+	next = "YD0711"
+	secretnext = "YD0711"
+	sky1 = "YD071941"
+	music = "D_YD0710"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0711 "Dastardly Dick's Dizzy Discus"
+{
+	titlepatch = "YD07V10"
+	next = "YD0712"
+	secretnext = "YD0712"
+	sky1 = "YD071941"
+	music = "D_YD0711"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0712 "Pyramid at Baron's Gate"
+{
+	titlepatch = "YD07V11"
+	next = "YD0713"
+	secretnext = "YD0713"
+	sky1 = "YD071942"
+	music = "D_YD0712"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0713 "Blood and Water"
+{
+	titlepatch = "YD07V12"
+	next = "YD0714"
+	secretnext = "YD0714"
+	sky1 = "YD071942"
+	music = "D_YD0713"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0714 "Crazy Villagers' Ritual of Sexual Pillagers"
+{
+	titlepatch = "YD07V13"
+	next = "YD0715"
+	secretnext = "YD0715"
+	sky1 = "YD071942"
+	music = "D_YD0714"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0715 "Ill Descent"
+{
+	titlepatch = "YD07V14"
+	next = "YD0716"
+	secretnext = "YD0716"
+	sky1 = "YD071942"
+	music = "D_YD0715"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0716 "Oh Dear"
+{
+	titlepatch = "YD07V15"
+	next = "YD0717"
+	secretnext = "YD0717"
+	sky1 = "YD071942"
+	music = "D_YD0716"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0717 "Speedy CTF"
+{
+	titlepatch = "YD07V16"
+	next = "YD0718"
+	secretnext = "YD0718"
+	sky1 = "YD071942"
+	music = "D_YD0717"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0718 "FIRST WE RUSH THEN WE CRUSH"
+{
+	titlepatch = "YD07V17"
+	next = "YD0719"
+	secretnext = "YD0719"
+	sky1 = "YD071942"
+	music = "D_YD0718"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0719 "Flow over Flow"
+{
+	titlepatch = "YD07V18"
+	next = "YD0720"
+	secretnext = "YD0720"
+	sky1 = "YD071942"
+	music = "D_YD0719"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0720 "Tits N' Cowbell"
+{
+	titlepatch = "YD07V19"
+	next = "YD0721"
+	secretnext = "YD0721"
+	sky1 = "YD071942"
+	music = "D_YD0720"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0721 "Conglom Lux"
+{
+	titlepatch = "YD07V20"
+	next = "YD0722"
+	secretnext = "YD0722"
+	sky1 = "YD071943"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0722 "Gargantuan Retarded"
+{
+	titlepatch = "YD07V21"
+	next = "YD0723"
+	secretnext = "YD0723"
+	sky1 = "YD071943"
+	music = "D_YD0722"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0723 "Birth of Headache"
+{
+	titlepatch = "YD07V22"
+	next = "YD0724"
+	secretnext = "YD0724"
+	sky1 = "YD071943"
+	music = "D_YD0723"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0724 "You Gotta Take the Stairs"
+{
+	titlepatch = "YD07V23"
+	next = "YD0725"
+	secretnext = "YD0725"
+	sky1 = "YD071943"
+	music = "D_YD0724"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0725 "Satyun"
+{
+	titlepatch = "YD07V24"
+	next = "YD0726"
+	secretnext = "YD0726"
+	sky1 = "YD071943"
+	music = "D_YD0725"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0726 "Broken Bones and Shit"
+{
+	titlepatch = "YD07V25"
+	next = "YD0727"
+	secretnext = "YD0727"
+	sky1 = "YD071943"
+	music = "D_YD0726"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0727 "Insane Gunslinger Compound"
+{
+	titlepatch = "YD07V26"
+	next = "YD0728"
+	secretnext = "YD0728"
+	sky1 = "YD071943"
+	music = "D_YD0727"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0728 "Dropping Loads"
+{
+	titlepatch = "YD07V27"
+	next = "YD0729"
+	secretnext = "YD0729"
+	sky1 = "YD071943"
+	music = "D_YD0728"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0729 "Major League Dooming"
+{
+	titlepatch = "YD07V28"
+	next = "YD0730"
+	secretnext = "YD0730"
+	sky1 = "YD071943"
+	music = "D_YD0729"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0730 "Icon of CTF"
+{
+	titlepatch = "YD07V29"
+	next = "YD0731"
+	secretnext = "YD0731"
+	sky1 = "YD071943"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0731 "Luftwaffles"
+{
+	titlepatch = "YD07V30"
+	next = "YD0732"
+	secretnext = "YD0732"
+	sky1 = "YD071943"
+	music = "D_YD0731"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0732 "LOLSMALL"
+{
+	titlepatch = "YD07V31"
+	next = "YD0733"
+	secretnext = "YD0733"
+	sky1 = "YD071943"
+	music = "D_YD0732"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0733 "Virgil's Leading CTF II"
+{
+	titlepatch = "YD07V32"
+	next = "YD0734"
+	secretnext = "YD0734"
+	sky1 = "YD071943"
+	music = "D_YD0733"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0734 "Flushhhhh"
+{
+	titlepatch = "YD07V33"
+	next = "YD0735"
+	secretnext = "YD0735"
+	sky1 = "YD071943"
+	music = "D_YD0734"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}
+
+map YD0735 "A Bad Place to live"
+{
+	titlepatch = "YD07V34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "YD071943"
+	music = "D_YD0735"
+	intermusic = "D_YD07IN"
+	ExitPic = "YD07INT"
+	EnterPic = "YD07INT"
+}

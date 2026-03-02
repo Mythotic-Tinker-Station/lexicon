@@ -1,0 +1,83 @@
+WallTexture "SPOD0070", 1024, 128
+{
+	Patch "SPOD0345", 0, 0
+	Patch "SPOD0346", 256, 0
+	Patch "SPOD0347", 512, 0
+	Patch "SPOD0348", 768, 0
+}
+
+WallTexture "SPOD0357", 256, 128
+{
+	Patch "SPOD0098", 0, 0
+	Patch "SPOD0099", 64, 0
+	Patch "SPOD0100", 128, 0
+	Patch "SPOD0101", 192, 0
+}
+
+WallTexture "SPOD0360", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 64, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 128, 0
+	Patch "SPOD0351", 0, 0
+}
+
+WallTexture "SPOD0372", 256, 128
+{
+	Patch "SPOD0084", 0, 0
+	Patch "SPOD0084", 128, 0
+	Patch "SPOD0351", 0, 0
+}
+
+WallTexture "SPOD0373", 256, 128
+{
+	Patch "SPOD0375", 64, 0
+	Patch "SPOD0375", 192, 0
+	Patch "SPOD0375", 128, 0
+	Patch "SPOD0375", 0, 0
+	Patch "SPOD0351", 0, 0
+}
+
+WallTexture "SPOD0374", 256, 128
+{
+	Patch "SPOD0375", 0, 0
+	Patch "SPOD0375", 64, 0
+	Patch "SPOD0375", 128, 0
+	Patch "SPOD0375", 192, 0
+	Patch "W106_1", 0, 0
+}
+
+WallTexture "SPOD0376", 256, 128
+{
+	Patch "SPOD0283", 0, 0
+	Patch "SPOD0284", 64, 0
+	Patch "SPOD0286", 192, 0
+	Patch "SPOD0285", 128, 0
+}
+
+WallTexture "SPOD0377", 256, 128
+{
+	Patch "SPOD0290", 0, 0
+	Patch "SPOD0291", 64, 0
+	Patch "SPOD0292", 128, 0
+	Patch "SPOD0293", 192, 0
+}
+
+WallTexture "SPOD0378", 128, 128
+{
+	Patch "SPOD0478", 0, 0
+	Patch "SPOD0478", 0, 64
+	Patch "SPOD0479", 96, 0
+	Patch "SPOD0479", 96, 63
+	Patch "SPOD0380", 32, 0
+}
+
+WallTexture "SPOD0379", 128, 128
+{
+	Patch "SPOD0480", 0, 0
+	Patch "SPOD0481", 64, 0
+	Patch "SPOD0482", 64, 70
+	Patch "SPOD0482", 0, 70
+}
+

@@ -1,0 +1,393 @@
+// Newdoom Community Project 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NDC201 "The Hive"
+{
+	titlepatch = "NDC2V00"
+	next = "NDC202"
+	secretnext = "NDC202"
+	sky1 = "NDC21800"
+	music = "D_NDC201"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC202 "Not-Applicable"
+{
+	titlepatch = "NDC2V01"
+	next = "NDC203"
+	secretnext = "NDC203"
+	sky1 = "NDC21800"
+	music = "$MUSIC_STALKS"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC203 "Voiced Silence"
+{
+	titlepatch = "NDC2V02"
+	next = "NDC204"
+	secretnext = "NDC204"
+	sky1 = "NDC21800"
+	music = "$MUSIC_COUNTD"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC204 "Infestations"
+{
+	titlepatch = "NDC2V03"
+	next = "NDC205"
+	secretnext = "NDC205"
+	sky1 = "NDC21800"
+	music = "D_NDC204"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC205 "Wasted!"
+{
+	titlepatch = "NDC2V04"
+	next = "NDC206"
+	secretnext = "NDC206"
+	sky1 = "NDC21800"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC206 "AMADEUS"
+{
+	titlepatch = "NDC2V05"
+	next = "NDC207"
+	secretnext = "NDC207"
+	sky1 = "NDC21800"
+	music = "D_NDC206"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC207 "NotsoSimple"
+{
+	titlepatch = "NDC2V06"
+	next = "NDC208"
+	secretnext = "NDC208"
+	sky1 = "NDC21800"
+	music = "D_NDC207"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+	Map07Special
+}
+
+map NDC208 "Shoot Down"
+{
+	titlepatch = "NDC2V07"
+	next = "NDC209"
+	secretnext = "NDC209"
+	sky1 = "NDC21800"
+	music = "D_NDC208"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC209 "Pistons"
+{
+	titlepatch = "NDC2V08"
+	next = "NDC210"
+	secretnext = "NDC210"
+	sky1 = "NDC21800"
+	music = "D_NDC209"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC210 "Graystar"
+{
+	titlepatch = "NDC2V09"
+	next = "NDC211"
+	secretnext = "NDC211"
+	sky1 = "NDC21800"
+	music = "D_NDC210"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC211 "Painkiller"
+{
+	titlepatch = "NDC2V10"
+	next = "NDC212"
+	secretnext = "NDC212"
+	sky1 = "NDC21800"
+	music = "D_NDC211"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC212 "Something Died"
+{
+	titlepatch = "NDC2V11"
+	next = "NDC213"
+	secretnext = "NDC213"
+	sky1 = "NDC21801"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC213 "Plutonic Dawn"
+{
+	titlepatch = "NDC2V12"
+	next = "NDC214"
+	secretnext = "NDC214"
+	sky1 = "NDC21801"
+	music = "D_NDC213"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC214 "COMRADE"
+{
+	titlepatch = "NDC2V13"
+	next = "NDC215"
+	secretnext = "NDC215"
+	sky1 = "NDC21801"
+	music = "D_NDC214"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC215 "Halfway Between"
+{
+	titlepatch = "NDC2V14"
+	next = "NDC216"
+	secretnext = "NDC231"
+	sky1 = "NDC21801"
+	music = "D_NDC215"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC216 "Conglomerate Complex"
+{
+	titlepatch = "NDC2V15"
+	next = "NDC217"
+	secretnext = "NDC217"
+	sky1 = "NDC21801"
+	music = "D_NDC216"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC217 "HEADACHE"
+{
+	titlepatch = "NDC2V16"
+	next = "NDC218"
+	secretnext = "NDC218"
+	sky1 = "NDC21801"
+	music = "D_NDC217"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC218 "Ominous Core"
+{
+	titlepatch = "NDC2V17"
+	next = "NDC219"
+	secretnext = "NDC219"
+	sky1 = "NDC21801"
+	music = "$MUSIC_ROMERO"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC219 "DARKSEED"
+{
+	titlepatch = "NDC2V18"
+	next = "NDC220"
+	secretnext = "NDC220"
+	sky1 = "NDC21801"
+	music = "D_NDC219"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC220 "Caverns"
+{
+	titlepatch = "NDC2V19"
+	next = "NDC221"
+	secretnext = "NDC221"
+	sky1 = "NDC21801"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC221 "Second Attention"
+{
+	titlepatch = "NDC2V20"
+	next = "NDC222"
+	secretnext = "NDC222"
+	sky1 = "NDC21802"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC222 "Evil Eye"
+{
+	titlepatch = "NDC2V21"
+	next = "NDC223"
+	secretnext = "NDC223"
+	sky1 = "NDC21802"
+	music = "D_NDC222"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC223 "Magma"
+{
+	titlepatch = "NDC2V22"
+	next = "NDC224"
+	secretnext = "NDC224"
+	sky1 = "NDC21802"
+	music = "D_NDC223"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC224 "Dimension Palace"
+{
+	titlepatch = "NDC2V23"
+	next = "NDC225"
+	secretnext = "NDC225"
+	sky1 = "NDC21802"
+	music = "D_NDC224"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC225 "BRIMSTONE"
+{
+	titlepatch = "NDC2V24"
+	next = "NDC226"
+	secretnext = "NDC226"
+	sky1 = "NDC21802"
+	music = "D_NDC225"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC226 "The ArchVile's Temple"
+{
+	titlepatch = "NDC2V25"
+	next = "NDC227"
+	secretnext = "NDC227"
+	sky1 = "NDC21802"
+	music = "D_NDC226"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC227 "Wastelands"
+{
+	titlepatch = "NDC2V26"
+	next = "NDC228"
+	secretnext = "NDC228"
+	sky1 = "NDC21802"
+	music = "D_NDC227"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC228 "Rusted Turmoil"
+{
+	titlepatch = "NDC2V27"
+	next = "NDC229"
+	secretnext = "NDC229"
+	sky1 = "NDC21802"
+	music = "D_NDC228"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC229 "Absolute Evil"
+{
+	titlepatch = "NDC2V28"
+	next = "NDC230"
+	secretnext = "NDC230"
+	sky1 = "NDC21802"
+	music = "D_NDC229"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC230 "Icon of Chaos"
+{
+	titlepatch = "NDC2V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "NDC21802"
+	music = "D_NDC230"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+	allowmonstertelefrags
+}
+
+map NDC231 "Die like you Mean it"
+{
+	titlepatch = "NDC2V30"
+	next = "NDC216"
+	secretnext = "NDC232"
+	sky1 = "NDC21802"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}
+
+map NDC232 "Cyber-Rinth"
+{
+	titlepatch = "NDC2V31"
+	next = "NDC216"
+	secretnext = "NDC216"
+	sky1 = "NDC21802"
+	music = "D_NDC232"
+	intermusic = "D_NDC2IN"
+	ExitPic = "NDC2INT"
+	EnterPic = "NDC2INT"
+}

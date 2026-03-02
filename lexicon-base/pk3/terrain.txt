@@ -1,0 +1,201 @@
+// Splashes
+// NeoDoom: Vaccinated Edition
+splash NEOD_Water
+{
+	smallclass		Lexicon_NEOD_WaterSplash
+	smallclip		12
+	smallsound		world/waterwalk
+
+	baseclass		Lexicon_NEOD_WaterSplashBase
+	chunkclass		Lexicon_NEOD_WaterSplash
+	chunkxvelshift		8
+	chunkyvelshift		8
+	chunkzvelshift  	8
+	chunkbasezvel		4
+	sound			world/waterland
+}
+
+splash NEOD_Blood
+{
+	smallclass		Lexicon_NEOD_BloodSplash
+	smallclip		12
+	smallsound		world/bloodwalk
+
+	baseclass		Lexicon_NEOD_BloodSplashBase
+	chunkclass		Lexicon_NEOD_BloodSplash
+	chunkxvelshift		8
+	chunkyvelshift		8
+	chunkzvelshift		8
+	chunkbasezvel		4
+	sound			world/bloodland
+}
+
+splash NEOD_Lava
+{
+	smallclass		Lexicon_NEOD_LavaSmoke
+	smallclip		12
+	smallsound		world/lavawalk
+
+	baseclass		Lexicon_NEOD_LavaSplash
+	chunkclass		Lexicon_NEOD_LavaSmoke
+	chunkxvelshift		-1
+	chunkyvelshift		-1
+	chunkzvelshift		7
+	chunkbasezvel		1
+	sound			world/lavaland
+}
+
+splash NEOD_Slime
+{
+	smallclass		Lexicon_NEOD_SludgeChunk
+	smallclip		12
+	smallsound		world/slimewalk
+
+	baseclass		Lexicon_NEOD_SludgeSplash
+	chunkclass		Lexicon_NEOD_SludgeChunk
+	chunkxvelshift		8
+	chunkyvelshift		8
+	chunkzvelshift		8
+	chunkbasezvel		2
+	sound			world/slimeland
+}
+
+splash NEOD_Nuke
+{
+	smallclass		Lexicon_NEOD_SlimeSplash
+	smallclip		12
+	smallsound		world/nukewalk
+
+	baseclass		Lexicon_NEOD_SlimeSplash
+	chunkxvelshift		-1
+	chunkyvelshift		-1
+	chunkzvelshift		7
+	chunkbasezvel		1
+	sound			world/nukeland
+}
+
+splash NEOD_Hot
+{
+	smallclass		Lexicon_NEOD_LavaSmoke
+	smallclip		12
+	smallsound		world/hotwalk
+
+	baseclass		Lexicon_NEOD_SlimeChunk
+	chunkclass		Lexicon_NEOD_LavaSmoke
+	chunkxvelshift		-1
+	chunkyvelshift		-1
+	chunkzvelshift		7
+	chunkbasezvel		1
+	sound			world/hotland
+}
+
+splash NEOD_Ice
+{
+	noalert
+	smallclass		None
+	smallclip		0
+	smallsound		none
+
+	baseclass		None
+	chunkclass		None
+	chunkxvelshift		0
+	chunkyvelshift		0
+	chunkzvelshift		0
+	chunkbasezvel		0
+	sound			world/ice
+}
+
+// Terrain
+// NeoDoom: Vaccinated Edition
+terrain NEOD_Water
+{
+	splash			NEOD_Water
+	footclip		16
+	liquid
+}
+
+terrain NEOD_Lava
+{
+	splash			NEOD_Lava
+	footclip		6
+	liquid
+}
+
+terrain NEOD_Blood
+{
+	splash			NEOD_Blood
+	footclip		10
+	liquid
+}
+
+terrain NEOD_Slime
+{
+	splash			NEOD_Slime
+	footclip		12
+	liquid
+}
+
+terrain NEOD_Nuke
+{
+	splash			NEOD_Nuke
+	footclip		14
+	liquid
+}
+
+terrain NEOD_Hot
+{
+	splash			NEOD_Hot
+	footclip		0
+	liquid
+}
+
+terrain NEOD_Ice
+{
+	splash			NEOD_Ice
+	footclip		0
+	friction		20
+}
+
+ifdoom
+// NeoDoom: Vaccinated Edition
+floor NEOD0419 NEOD_Nuke
+floor NEOD0420 NEOD_Nuke
+floor NEOD0421 NEOD_Nuke
+floor NEOD0422 NEOD_Water
+floor NEOD0423 NEOD_Water
+floor NEOD0424 NEOD_Water
+floor NEOD0425 NEOD_Water
+floor NEOD0426 NEOD_Lava
+floor NEOD0427 NEOD_Lava
+floor NEOD0428 NEOD_Lava
+floor NEOD0429 NEOD_Lava
+floor NEOD0430 NEOD_Blood
+floor NEOD0431 NEOD_Blood
+floor NEOD0432 NEOD_Blood
+floor NEOD0433 NEOD_Hot
+floor NEOD0434 NEOD_Hot
+floor NEOD0435 NEOD_Hot
+floor NEOD0436 NEOD_Hot
+floor NEOD0437 NEOD_Slime
+floor NEOD0438 NEOD_Slime
+floor NEOD0439 NEOD_Slime
+floor NEOD0440 NEOD_Slime
+floor NEOD0441 NEOD_Slime
+floor NEOD0442 NEOD_Slime
+floor NEOD0443 NEOD_Slime
+floor NEOD0444 NEOD_Slime
+floor NEOD0445 NEOD_Hot
+floor NEOD0446 NEOD_Hot
+floor NEOD0447 NEOD_Hot
+floor NEOD0448 NEOD_Hot
+floor NEOD0113 NEOD_Slime
+floor NEOD0114 NEOD_Slime
+floor NEOD0115 NEOD_Slime
+floor NEOD0116 NEOD_Slime
+floor NEOD0160 NEOD_Ice
+floor NEOD0248 NEOD_Nuke
+floor NEOD0257 NEOD_Slime
+floor NEOD0258 NEOD_Slime
+floor NEOD0259 NEOD_Slime
+floor NEOD0260 NEOD_Slime
+endif

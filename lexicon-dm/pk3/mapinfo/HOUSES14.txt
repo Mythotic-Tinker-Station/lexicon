@@ -1,0 +1,97 @@
+// Houses 1.4 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HS1401 "Houses 1.4 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "HS1402"
+	secretnext = "HS1402"
+	sky1 = "HS140008"
+	music = "D_HS1401"
+}
+
+map HS1402 "Houses 1.4 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "HS1403"
+	secretnext = "HS1403"
+	sky1 = "HS140008"
+	music = "D_HS1402"
+}
+
+map HS1403 "Houses 1.4 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "HS1404"
+	secretnext = "HS1404"
+	sky1 = "HS140008"
+	music = "D_HS1403"
+}
+
+map HS1404 "Houses 1.4 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "HS1405"
+	secretnext = "HS1405"
+	sky1 = "HS140008"
+	music = "D_HS1404"
+}
+
+map HS1405 "Houses 1.4 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "HS1406"
+	secretnext = "HS1406"
+	sky1 = "HS140008"
+	music = "D_HS1405"
+}
+
+map HS1406 "Houses 1.4 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "HS1407"
+	secretnext = "HS1407"
+	sky1 = "HS140008"
+	music = "D_HS1406"
+}
+
+map HS1407 "Houses 1.4 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "HS1408"
+	secretnext = "HS1408"
+	sky1 = "HS140008"
+	music = "D_HS1407"
+}
+
+map HS1408 "Houses 1.4 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "HS1409"
+	secretnext = "HS1409"
+	sky1 = "HS140008"
+	music = "D_HS1408"
+}
+
+map HS1409 "Houses 1.4 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "HS1410"
+	secretnext = "HS1410"
+	sky1 = "HS140008"
+	music = "D_HS1409"
+}
+
+map HS1410 "Houses 1.4 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HS140008"
+	music = "D_HS1410"
+}

@@ -1,0 +1,80 @@
+// ASDOOM][: The Final Countdown Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ASD201 "A Walk In The Park"
+{
+	titlepatch = "CWILV00"
+	next = "ASD202"
+	secretnext = "ASD202"
+	sky1 = "SKY1"
+	music = "$MUSIC_RUNNIN"
+}
+
+map ASD202 "In The Hall Of The Mountain Kings"
+{
+	titlepatch = "CWILV01"
+	next = "ASD203"
+	secretnext = "ASD203"
+	sky1 = "SKY1"
+	music = "$MUSIC_STALKS"
+}
+
+map ASD203 "Moody"
+{
+	titlepatch = "CWILV02"
+	next = "ASD204"
+	secretnext = "ASD204"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+}
+
+map ASD204 "Going Down?"
+{
+	titlepatch = "CWILV03"
+	next = "ASD205"
+	secretnext = "ASD205"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+}
+
+map ASD205 "Hell Of A Knight"
+{
+	titlepatch = "CWILV04"
+	next = "ASD206"
+	secretnext = "ASD206"
+	sky1 = "SKY1"
+	music = "$MUSIC_DOOM"
+}
+
+map ASD206 "The Heat Is On"
+{
+	titlepatch = "CWILV05"
+	next = "ASD207"
+	secretnext = "ASD207"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+}
+
+map ASD207 "A False Sense Of Security"
+{
+	titlepatch = "CWILV06"
+	next = "ASD208"
+	secretnext = "ASD208"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map ASD208 "Finale"
+{
+	titlepatch = "CWILV07"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+}

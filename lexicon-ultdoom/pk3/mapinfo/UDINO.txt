@@ -1,0 +1,381 @@
+// The Ultimate Doom In Name Only Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UDINE1M1 "Hangar"
+{
+	titlepatch = "UDINV00"
+	next = "UDINE1M2"
+	secretnext = "UDINE1M2"
+	sky1 = "UDIN0030"
+	music = "D_UDIN01"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M2 "Nuclear Plant"
+{
+	titlepatch = "UDINV01"
+	next = "UDINE1M3"
+	secretnext = "UDINE1M3"
+	sky1 = "UDIN0030"
+	music = "D_UDIN02"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M3 "Toxin Refinery"
+{
+	titlepatch = "UDINV02"
+	next = "UDINE1M4"
+	secretnext = "UDINE1M9"
+	sky1 = "UDIN0030"
+	music = "D_UDIN03"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M4 "Command Control"
+{
+	titlepatch = "UDINV03"
+	next = "UDINE1M5"
+	secretnext = "UDINE1M5"
+	sky1 = "UDIN0030"
+	music = "D_UDIN04"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M5 "Phobos Lab"
+{
+	titlepatch = "UDINV04"
+	next = "UDINE1M6"
+	secretnext = "UDINE1M6"
+	sky1 = "UDIN0030"
+	music = "D_UDIN05"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M6 "Central Processing"
+{
+	titlepatch = "UDINV05"
+	next = "UDINE1M7"
+	secretnext = "UDINE1M7"
+	sky1 = "UDIN0030"
+	music = "D_UDIN06"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M7 "Computer Station"
+{
+	titlepatch = "UDINV06"
+	next = "UDINE1M8"
+	secretnext = "UDINE1M8"
+	sky1 = "UDIN0030"
+	music = "D_UDIN07"
+	intermusic = "D_UDININ"
+}
+
+map UDINE1M8 "Phobos Anomaly"
+{
+	titlepatch = "UDINV07"
+	next = "UDINE2M1"
+	secretnext = "UDINE2M1"
+	sky1 = "UDIN0030"
+	music = "D_UDIN08"
+	intermusic = "D_UDININ"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map UDINE1M9 "Military Base"
+{
+	titlepatch = "UDINV08"
+	next = "UDINE1M4"
+	secretnext = "UDINE1M4"
+	sky1 = "UDIN0030"
+	music = "D_UDIN09"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M1 "Deimos Anomaly"
+{
+	titlepatch = "UDINV09"
+	next = "UDINE2M2"
+	secretnext = "UDINE2M2"
+	sky1 = "UDIN0031"
+	music = "D_UDIN10"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M2 "Containment Area"
+{
+	titlepatch = "UDINV10"
+	next = "UDINE2M3"
+	secretnext = "UDINE2M3"
+	sky1 = "UDIN0031"
+	music = "D_UDIN11"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M3 "Refinery"
+{
+	titlepatch = "UDINV11"
+	next = "UDINE2M4"
+	secretnext = "UDINE2M4"
+	sky1 = "UDIN0031"
+	music = "D_UDIN12"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M4 "Deimos Lab"
+{
+	titlepatch = "UDINV12"
+	next = "UDINE2M5"
+	secretnext = "UDINE2M5"
+	sky1 = "UDIN0031"
+	music = "D_UDIN13"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M5 "Command Centre"
+{
+	titlepatch = "UDINV13"
+	next = "UDINE2M6"
+	secretnext = "UDINE2M9"
+	sky1 = "UDIN0031"
+	music = "D_UDIN14"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M6 "Halls of the Damned"
+{
+	titlepatch = "UDINV14"
+	next = "UDINE2M7"
+	secretnext = "UDINE2M7"
+	sky1 = "UDIN0031"
+	music = "D_UDIN15"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M7 "Spawning Vats"
+{
+	titlepatch = "UDINV15"
+	next = "UDINE2M8"
+	secretnext = "UDINE2M8"
+	sky1 = "UDIN0031"
+	music = "D_UDIN16"
+	intermusic = "D_UDININ"
+}
+
+map UDINE2M8 "Tower of Babel"
+{
+	titlepatch = "UDINV16"
+	next = "UDINE3M1"
+	secretnext = "UDINE3M1"
+	sky1 = "UDIN0031"
+	music = "D_UDIN17"
+	intermusic = "D_UDININ"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map UDINE2M9 "Fortress of Mystery"
+{
+	titlepatch = "UDINV17"
+	next = "UDINE2M6"
+	secretnext = "UDINE2M6"
+	sky1 = "UDIN0031"
+	music = "D_UDIN18"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M1 "Hell Keep"
+{
+	titlepatch = "UDINV18"
+	next = "UDINE3M2"
+	secretnext = "UDINE3M2"
+	sky1 = "UDIN0032"
+	music = "D_UDIN19"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M2 "Slough of Despair"
+{
+	titlepatch = "UDINV19"
+	next = "UDINE3M3"
+	secretnext = "UDINE3M3"
+	sky1 = "UDIN0032"
+	music = "D_UDIN20"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M3 "Pandemonium"
+{
+	titlepatch = "UDINV20"
+	next = "UDINE3M4"
+	secretnext = "UDINE3M4"
+	sky1 = "UDIN0032"
+	music = "D_UDIN21"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M4 "House of Pain"
+{
+	titlepatch = "UDINV21"
+	next = "UDINE3M5"
+	secretnext = "UDINE3M5"
+	sky1 = "UDIN0032"
+	music = "D_UDIN22"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M5 "Unholy Cathedral"
+{
+	titlepatch = "UDINV22"
+	next = "UDINE3M6"
+	secretnext = "UDINE3M6"
+	sky1 = "UDIN0032"
+	music = "D_UDIN23"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M6 "Mt. Erebus"
+{
+	titlepatch = "UDINV23"
+	next = "UDINE3M7"
+	secretnext = "UDINE3M9"
+	sky1 = "UDIN0032"
+	music = "D_UDIN24"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M7 "Limbo"
+{
+	titlepatch = "UDINV24"
+	next = "UDINE3M8"
+	secretnext = "UDINE3M8"
+	sky1 = "UDIN0032"
+	music = "D_UDIN25"
+	intermusic = "D_UDININ"
+}
+
+map UDINE3M8 "Dis"
+{
+	titlepatch = "UDINV25"
+	next = "UDINE4M1"
+	secretnext = "UDINE4M1"
+	sky1 = "UDIN0032"
+	music = "D_UDIN26"
+	intermusic = "D_UDININ"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map UDINE3M9 "Warrens"
+{
+	titlepatch = "UDINV26"
+	next = "UDINE3M7"
+	secretnext = "UDINE3M7"
+	sky1 = "UDIN0032"
+	music = "D_UDIN27"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M1 "Hell Beneath"
+{
+	titlepatch = "UDINV27"
+	next = "UDINE4M2"
+	secretnext = "UDINE4M2"
+	sky1 = "UDIN0033"
+	music = "D_UDIN28"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M2 "Perfect Hatred"
+{
+	titlepatch = "UDINV28"
+	next = "UDINE4M3"
+	secretnext = "UDINE4M9"
+	sky1 = "UDIN0033"
+	music = "D_UDIN29"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M3 "Sever the Wicked"
+{
+	titlepatch = "UDINV29"
+	next = "UDINE4M4"
+	secretnext = "UDINE4M4"
+	sky1 = "UDIN0033"
+	music = "D_UDIN30"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M4 "Unruly Evil"
+{
+	titlepatch = "UDINV30"
+	next = "UDINE4M5"
+	secretnext = "UDINE4M5"
+	sky1 = "UDIN0033"
+	music = "D_UDIN31"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M5 "They Will Repent"
+{
+	titlepatch = "UDINV31"
+	next = "UDINE4M6"
+	secretnext = "UDINE4M6"
+	sky1 = "UDIN0033"
+	music = "D_UDIN32"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M6 "Against Thee Wickedly"
+{
+	titlepatch = "UDINV32"
+	next = "UDINE4M7"
+	secretnext = "UDINE4M7"
+	sky1 = "UDIN0033"
+	music = "D_UDIN33"
+	intermusic = "D_UDININ"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map UDINE4M7 "And Hell Followed"
+{
+	titlepatch = "UDINV33"
+	next = "UDINE4M8"
+	secretnext = "UDINE4M8"
+	sky1 = "UDIN0033"
+	music = "D_UDIN34"
+	intermusic = "D_UDININ"
+}
+
+map UDINE4M8 "Unto the Cruel"
+{
+	titlepatch = "UDINV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "UDIN0033"
+	music = "D_UDIN35"
+	intermusic = "D_UDININ"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map UDINE4M9 "Fear"
+{
+	titlepatch = "UDINV35"
+	next = "UDINE4M3"
+	secretnext = "UDINE4M3"
+	sky1 = "UDIN0033"
+	music = "D_UDIN36"
+	intermusic = "D_UDININ"
+}

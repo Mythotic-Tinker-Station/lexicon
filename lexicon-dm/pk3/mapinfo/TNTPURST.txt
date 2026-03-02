@@ -1,0 +1,391 @@
+// Pursuit Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map PRSU01 "Case Closed"
+{
+	titlepatch = "PRSUV00"
+	next = "PRSU02"
+	secretnext = "PRSU02"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_RUNNIN"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU02 "Sunrise"
+{
+	titlepatch = "PRSUV01"
+	next = "PRSU03"
+	secretnext = "PRSU03"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_STALKS"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU03 "Terminal Obsession"
+{
+	titlepatch = "PRSUV02"
+	next = "PRSU04"
+	secretnext = "PRSU04"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_COUNTD"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU04 "Waiting for Worms"
+{
+	titlepatch = "PRSUV03"
+	next = "PRSU05"
+	secretnext = "PRSU05"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_BETWEE"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU05 "Solar Plexus"
+{
+	titlepatch = "PRSUV04"
+	next = "PRSU06"
+	secretnext = "PRSU06"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_DOOM"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU06 "Your Own Pit to Die in"
+{
+	titlepatch = "PRSUV05"
+	next = "PRSU07"
+	secretnext = "PRSU07"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU07 "Weekend at OJs"
+{
+	titlepatch = "PRSUV06"
+	next = "PRSU08"
+	secretnext = "PRSU08"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU08 "Shadow Boxing"
+{
+	titlepatch = "PRSUV07"
+	next = "PRSU09"
+	secretnext = "PRSU09"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU09 "Arena"
+{
+	titlepatch = "PRSUV08"
+	next = "PRSU10"
+	secretnext = "PRSU10"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_IN_CIT"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU10 "Mommy, Where's Daddy?"
+{
+	titlepatch = "PRSUV09"
+	next = "PRSU11"
+	secretnext = "PRSU11"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU11 "Monolithic"
+{
+	titlepatch = "PRSUV10"
+	next = "PRSU12"
+	secretnext = "PRSU12"
+	sky1 = "PRSU0180"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU12 "Black Rage"
+{
+	titlepatch = "PRSUV11"
+	next = "PRSU13"
+	secretnext = "PRSU13"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU13 "Deathway"
+{
+	titlepatch = "PRSUV12"
+	next = "PRSU14"
+	secretnext = "PRSU14"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU14 "Damn It!"
+{
+	titlepatch = "PRSUV13"
+	next = "PRSU15"
+	secretnext = "PRSU15"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU15 "Run Like Hell"
+{
+	titlepatch = "PRSUV14"
+	next = "PRSU16"
+	secretnext = "PRSU16"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU16 "Chaos"
+{
+	titlepatch = "PRSUV15"
+	next = "PRSU17"
+	secretnext = "PRSU17"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU17 "Broken World"
+{
+	titlepatch = "PRSUV16"
+	next = "PRSU18"
+	secretnext = "PRSU18"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_STLKS3"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU18 "Pulse"
+{
+	titlepatch = "PRSUV17"
+	next = "PRSU19"
+	secretnext = "PRSU19"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_ROMERO"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU19 "Halflife"
+{
+	titlepatch = "PRSUV18"
+	next = "PRSU20"
+	secretnext = "PRSU20"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_SHAWN2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU20 "No Way Out"
+{
+	titlepatch = "PRSUV19"
+	next = "PRSU21"
+	secretnext = "PRSU21"
+	sky1 = "PRSU0181"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU21 "Under an Open Sky"
+{
+	titlepatch = "PRSUV20"
+	next = "PRSU22"
+	secretnext = "PRSU22"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU22 "Terminus"
+{
+	titlepatch = "PRSUV21"
+	next = "PRSU23"
+	secretnext = "PRSU23"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_DDTBL3"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU23 "Riven"
+{
+	titlepatch = "PRSUV22"
+	next = "PRSU24"
+	secretnext = "PRSU24"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU24 "Hot Patootie"
+{
+	titlepatch = "PRSUV23"
+	next = "PRSU25"
+	secretnext = "PRSU25"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_THEDA3"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU25 "Spelunker"
+{
+	titlepatch = "PRSUV24"
+	next = "PRSU26"
+	secretnext = "PRSU26"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU26 "Deathyard"
+{
+	titlepatch = "PRSUV25"
+	next = "PRSU27"
+	secretnext = "PRSU27"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU27 "Kill 'Em Dead"
+{
+	titlepatch = "PRSUV26"
+	next = "PRSU28"
+	secretnext = "PRSU28"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU28 "Pillars"
+{
+	titlepatch = "PRSUV27"
+	next = "PRSU29"
+	secretnext = "PRSU29"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_TENSE"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU29 "A Time to Kill, A Time to Die"
+{
+	titlepatch = "PRSUV28"
+	next = "PRSU30"
+	secretnext = "PRSU30"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_SHAWN3"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU30 "The Holy Goat"
+{
+	titlepatch = "PRSUV29"
+	next = "PRSU31"
+	secretnext = "PRSU31"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_OPENIN"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU31 "Sector 7"
+{
+	titlepatch = "PRSUV30"
+	next = "PRSU32"
+	secretnext = "PRSU32"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}
+
+map PRSU32 "Interstellar Overdrive"
+{
+	titlepatch = "PRSUV31"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "PRSU0182"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_PRSUIN"
+	ExitPic = "PRSUINT"
+	EnterPic = "PRSUINT"
+}

@@ -1,0 +1,393 @@
+// Interception 1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ITC101 "Excavation Site"
+{
+	titlepatch = "ITC1V00"
+	next = "ITC102"
+	secretnext = "ITC102"
+	sky1 = "ITC10230"
+	music = "D_ITC101"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC102 "Research Facility"
+{
+	titlepatch = "ITC1V01"
+	next = "ITC103"
+	secretnext = "ITC103"
+	sky1 = "ITC10230"
+	music = "D_ITC102"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC103 "Flooded Caverns"
+{
+	titlepatch = "ITC1V02"
+	next = "ITC104"
+	secretnext = "ITC104"
+	sky1 = "ITC10230"
+	music = "D_ITC103"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC104 "Medical Center"
+{
+	titlepatch = "ITC1V03"
+	next = "ITC105"
+	secretnext = "ITC105"
+	sky1 = "ITC10230"
+	music = "D_ITC104"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC105 "Dangerous Curves"
+{
+	titlepatch = "ITC1V04"
+	next = "ITC106"
+	secretnext = "ITC106"
+	sky1 = "ITC10230"
+	music = "D_ITC105"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC106 "Rail Terminal 38"
+{
+	titlepatch = "ITC1V05"
+	next = "ITC107"
+	secretnext = "ITC107"
+	sky1 = "ITC10230"
+	music = "D_ITC106"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC107 "Floodgates"
+{
+	titlepatch = "ITC1V06"
+	next = "ITC108"
+	secretnext = "ITC108"
+	sky1 = "ITC10230"
+	music = "D_ITC107"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+	Map07Special
+}
+
+map ITC108 "Panopticon"
+{
+	titlepatch = "ITC1V07"
+	next = "ITC109"
+	secretnext = "ITC109"
+	sky1 = "ITC10230"
+	music = "D_ITC108"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC109 "Iron Jungle"
+{
+	titlepatch = "ITC1V08"
+	next = "ITC110"
+	secretnext = "ITC110"
+	sky1 = "ITC10230"
+	music = "D_ITC109"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC110 "Chemical Laboratory"
+{
+	titlepatch = "ITC1V09"
+	next = "ITC111"
+	secretnext = "ITC111"
+	sky1 = "ITC10230"
+	music = "D_ITC110"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC111 "The Ocean Outpost"
+{
+	titlepatch = "ITC1V10"
+	next = "ITC112"
+	secretnext = "ITC112"
+	sky1 = "ITC10230"
+	music = "D_ITC111"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC112 "Underearth"
+{
+	titlepatch = "ITC1V11"
+	next = "ITC113"
+	secretnext = "ITC113"
+	sky1 = "ITC10231"
+	music = "D_ITC112"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC113 "Castle Grounds"
+{
+	titlepatch = "ITC1V12"
+	next = "ITC114"
+	secretnext = "ITC114"
+	sky1 = "ITC10231"
+	music = "D_ITC113"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC114 "Antidote"
+{
+	titlepatch = "ITC1V13"
+	next = "ITC115"
+	secretnext = "ITC115"
+	sky1 = "ITC10231"
+	music = "D_ITC114"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC115 "Elm Street"
+{
+	titlepatch = "ITC1V14"
+	next = "ITC116"
+	secretnext = "ITC131"
+	sky1 = "ITC10231"
+	music = "D_ITC115"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC116 "Vertigo Plant"
+{
+	titlepatch = "ITC1V15"
+	next = "ITC117"
+	secretnext = "ITC117"
+	sky1 = "ITC10231"
+	music = "D_ITC116"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC117 "Hell House"
+{
+	titlepatch = "ITC1V16"
+	next = "ITC118"
+	secretnext = "ITC118"
+	sky1 = "ITC10231"
+	music = "D_ITC117"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC118 "City of Burning Sulfur"
+{
+	titlepatch = "ITC1V17"
+	next = "ITC119"
+	secretnext = "ITC119"
+	sky1 = "ITC10231"
+	music = "D_ITC118"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC119 "Alpha Tower"
+{
+	titlepatch = "ITC1V18"
+	next = "ITC120"
+	secretnext = "ITC120"
+	sky1 = "ITC10231"
+	music = "D_ITC119"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC120 "Beta Tower"
+{
+	titlepatch = "ITC1V19"
+	next = "ITC121"
+	secretnext = "ITC121"
+	sky1 = "ITC10231"
+	music = "D_ITC120"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC121 "Wrong Dimension"
+{
+	titlepatch = "ITC1V20"
+	next = "ITC122"
+	secretnext = "ITC122"
+	sky1 = "ITC10232"
+	music = "D_ITC121"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC122 "Bone Dread"
+{
+	titlepatch = "ITC1V21"
+	next = "ITC123"
+	secretnext = "ITC123"
+	sky1 = "ITC10232"
+	music = "D_ITC122"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC123 "Abysmal Affliction"
+{
+	titlepatch = "ITC1V22"
+	next = "ITC124"
+	secretnext = "ITC124"
+	sky1 = "ITC10232"
+	music = "D_ITC123"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC124 "Bloody Castle"
+{
+	titlepatch = "ITC1V23"
+	next = "ITC125"
+	secretnext = "ITC125"
+	sky1 = "ITC10232"
+	music = "D_ITC124"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC125 "Demon's Spite"
+{
+	titlepatch = "ITC1V24"
+	next = "ITC126"
+	secretnext = "ITC126"
+	sky1 = "ITC10232"
+	music = "D_ITC125"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC126 "Wrecking Fist"
+{
+	titlepatch = "ITC1V25"
+	next = "ITC127"
+	secretnext = "ITC127"
+	sky1 = "ITC10232"
+	music = "D_ITC126"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC127 "Blood Siege"
+{
+	titlepatch = "ITC1V26"
+	next = "ITC128"
+	secretnext = "ITC128"
+	sky1 = "ITC10232"
+	music = "D_ITC127"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC128 "Amongst the Ash"
+{
+	titlepatch = "ITC1V27"
+	next = "ITC129"
+	secretnext = "ITC129"
+	sky1 = "ITC10232"
+	music = "D_ITC128"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC129 "Barbatos' Fortress"
+{
+	titlepatch = "ITC1V28"
+	next = "ITC130"
+	secretnext = "ITC130"
+	sky1 = "ITC10232"
+	music = "D_ITC129"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC130 "Interception"
+{
+	titlepatch = "ITC1V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "ITC10232"
+	music = "D_ITC130"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+	allowmonstertelefrags
+}
+
+map ITC131 "Degravitation"
+{
+	titlepatch = "ITC1V30"
+	next = "ITC116"
+	secretnext = "ITC132"
+	sky1 = "ITC10232"
+	music = "D_ITC131"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}
+
+map ITC132 "The Cataclysm"
+{
+	titlepatch = "ITC1V31"
+	next = "ITC116"
+	secretnext = "ITC116"
+	sky1 = "ITC10232"
+	music = "D_ITC132"
+	intermusic = "D_ITC1IN"
+	ExitPic = "ITC1INT"
+	EnterPic = "ITC1INT"
+}

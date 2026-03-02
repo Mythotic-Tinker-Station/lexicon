@@ -1,0 +1,106 @@
+Texture "HLBN0002", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "HLBN0003", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "HLBN0005", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "HLBN0006", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "HLBN0007", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "HLBN0008", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "HLBN0010", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "HLBN0011", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "HLBN0028", 1024, 128
+{
+	Patch "HLBN0068", 0, 0
+	Patch "HLBN0029", 256, 0
+	Patch "HLBN0030", 512, 0
+	Patch "HLBN0031", 768, 0
+}
+Texture "HLBN0032", 1024, 128
+{
+	Patch "HLBN0072", 0, 0
+	Patch "HLBN0033", 256, 0
+	Patch "HLBN0034", 512, 0
+	Patch "HLBN0035", 768, 0
+}
+Texture "HLBN0036", 1024, 128
+{
+	Patch "HLBN0076", 0, 0
+	Patch "HLBN0037", 256, 0
+	Patch "HLBN0038", 512, 0
+	Patch "HLBN0039", 768, 0
+}
+Texture "HLBN0040", 1024, 128
+{
+	Patch "HLBN0080", 0, 0
+	Patch "HLBN0041", 256, 0
+	Patch "HLBN0042", 512, 0
+	Patch "HLBN0043", 768, 0
+}
+Texture "HLBN0044", 1024, 128
+{
+	Patch "HLBN0084", 0, 0
+	Patch "HLBN0045", 256, 0
+	Patch "HLBN0046", 512, 0
+	Patch "HLBN0047", 768, 0
+}
+Texture "HLBN0048", 1024, 128
+{
+	Patch "HLBN0088", 0, 0
+	Patch "HLBN0049", 256, 0
+	Patch "HLBN0050", 512, 0
+	Patch "HLBN0051", 768, 0
+}

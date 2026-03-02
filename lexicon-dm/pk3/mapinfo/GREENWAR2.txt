@@ -1,0 +1,334 @@
+// Green War 2 Mapinfo
+
+defaultmap
+{
+	ExitPic = "GWR2INT"
+	EnterPic = "GWR2INT"
+	InterMusic = "D_GWR2IN"
+	NoJump
+	NoCrouch
+}
+
+map GWR201 "The Desecrated Ruins"
+{
+	titlepatch = "GWR2V00"
+	Next = "GWR202"
+	SecretNext = "GWR202"
+	Sky1 = "GWR20375"
+	Music = "D_GWR201"
+}
+
+map GWR202 "Chinook"
+{
+	titlepatch = "GWR2V01"
+	Next = "GWR203"
+	SecretNext = "GWR203"
+	Sky1 = "GWR20375"
+	Music = "D_GWR202"
+}
+
+map GWR203 "Enter Baal's Sinister Wargrounds of Hate"
+{
+	titlepatch = "GWR2V02"
+	Next = "GWR204"
+	SecretNext = "GWR204"
+	Sky1 = "GWR20375"
+	Music = "D_GWR203"
+}
+
+map GWR204 "Myan Ryan"
+{
+	titlepatch = "GWR2V03"
+	Next = "GWR205"
+	SecretNext = "GWR205"
+	Sky1 = "GWR20375"
+	Music = "D_GWR204"
+}
+
+map GWR205 "Filth Factory"
+{
+	titlepatch = "GWR2V04"
+	Next = "GWR206"
+	SecretNext = "GWR206"
+	Sky1 = "GWR20375"
+	Music = "D_GWR205"
+}
+
+map GWR206 "Escape From Philadelphia"
+{
+	titlepatch = "GWR2V05"
+	Next = "GWR207"
+	SecretNext = "GWR207"
+	Sky1 = "GWR20375"
+	Music = "D_GWR206"
+}
+
+map GWR207 "Catarhactes"
+{
+	titlepatch = "GWR2V06"
+	Next = "GWR208"
+	SecretNext = "GWR208"
+	Sky1 = "GWR20375"
+	Music = "D_GWR207"
+}
+
+map GWR208 "Memnoch"
+{
+	titlepatch = "GWR2V07"
+	Next = "GWR209"
+	SecretNext = "GWR209"
+	Sky1 = "GWR21079"
+	Music = "D_GWR208"
+}
+
+map GWR209 "Ascensio"
+{
+	titlepatch = "GWR2V08"
+	Next = "GWR210"
+	SecretNext = "GWR210"
+	Sky1 = "GWR20375"
+	Music = "D_GWR209"
+}
+
+map GWR210 "Absinthe"
+{
+	titlepatch = "GWR2V09"
+	Next = "GWR211"
+	SecretNext = "GWR211"
+	Sky1 = "GWR20375"
+	Music = "D_GWR210"
+}
+
+map GWR211 "Schism"
+{
+	titlepatch = "GWR2V10"
+	Next = "GWR212"
+	SecretNext = "GWR212"
+	Sky1 = "GWR20375"
+	Music = "D_GWR211"
+}
+
+map GWR212 "Graceful Onslaught"
+{
+	titlepatch = "GWR2V11"
+	Next = "GWR213"
+	SecretNext = "GWR213"
+	Sky1 = "GWR20376"
+	Music = "D_GWR212"
+}
+
+map GWR213 "Tesseract"
+{
+	titlepatch = "GWR2V12"
+	Next = "GWR214"
+	SecretNext = "GWR214"
+	Sky1 = "GWR20376"
+	Music = "D_GWR213"
+}
+
+map GWR214 "Turquoise Hexagon Sun"
+{
+	titlepatch = "GWR2V13"
+	Next = "GWR215"
+	SecretNext = "GWR215"
+	Sky1 = "GWR20376"
+	Music = "D_GWR214"
+}
+
+map GWR215 "Superfluo"
+{
+	titlepatch = "GWR2V14"
+	Next = "GWR216"
+	SecretNext = "GWR216"
+	Sky1 = "GWR20376"
+	Music = "D_GWR215"
+}
+
+map GWR216 "Recycle or Die"
+{
+	titlepatch = "GWR2V15"
+	Next = "GWR217"
+	SecretNext = "GWR217"
+	Sky1 = "GWR20376"
+	Music = "D_GWR216"
+}
+
+map GWR217 "Milton"
+{
+	titlepatch = "GWR2V16"
+	Next = "GWR218"
+	SecretNext = "GWR218"
+	Sky1 = "GWR20376"
+	Music = "D_GWR217"
+}
+
+map GWR218 "Through the Nuking Glass"
+{
+	titlepatch = "GWR2V17"
+	Next = "GWR219"
+	SecretNext = "GWR219"
+	Sky1 = "GWR20376"
+	Music = "D_GWR218"
+}
+
+map GWR219 "Werner Herzog Eats His Shoe"
+{
+	titlepatch = "GWR2V18"
+	Next = "GWR220"
+	SecretNext = "GWR220"
+	Sky1 = "GWR20376"
+	Music = "D_GWR219"
+}
+
+map GWR220 "Rusty Garden"
+{
+	titlepatch = "GWR2V19"
+	Next = "GWR221"
+	SecretNext = "GWR221"
+	Sky1 = "GWR20376"
+	Music = "D_GWR220"
+}
+
+map GWR221 "BFG Containment Area"
+{
+	titlepatch = "GWR2V20"
+	Next = "GWR222"
+	SecretNext = "GWR222"
+	Sky1 = "GWR20377"
+	Music = "D_GWR221"
+}
+
+map GWR222 "Chaos Wargrounds of Yog-Sothoth's Arctic Caverns of Terror"
+{
+	titlepatch = "GWR2V21"
+	Next = "GWR223"
+	SecretNext = "GWR223"
+	Sky1 = "GWR20377"
+	Music = "D_GWR222"
+}
+
+map GWR223 "Paregoric"
+{
+	titlepatch = "GWR2V22"
+	Next = "GWR224"
+	SecretNext = "GWR224"
+	Sky1 = "GWR20377"
+	Music = "D_GWR223"
+}
+
+map GWR224 "Dominion Grinder"
+{
+	titlepatch = "GWR2V23"
+	Next = "GWR225"
+	SecretNext = "GWR225"
+	Sky1 = "GWR20377"
+	Music = "D_GWR224"
+}
+
+map GWR225 "Ogrims's Shrine"
+{
+	titlepatch = "GWR2V24"
+	Next = "GWR226"
+	SecretNext = "GWR226"
+	Sky1 = "GWR20377"
+	Music = "D_GWR225"
+}
+
+map GWR226 "Opus"
+{
+	titlepatch = "GWR2V25"
+	Next = "GWR227"
+	SecretNext = "GWR227"
+	Sky1 = "GWR20377"
+	Music = "D_GWR226"
+}
+
+map GWR227 "Electropsychosis"
+{
+	titlepatch = "GWR2V26"
+	Next = "GWR228"
+	SecretNext = "GWR228"
+	Sky1 = "GWR20377"
+	Music = "D_ROMER2"
+}
+
+map GWR228 "Trepidation"
+{
+	titlepatch = "GWR2V27"
+	Next = "GWR229"
+	SecretNext = "GWR229"
+	Sky1 = "GWR20377"
+	Music = "D_GWR228"
+}
+
+map GWR229 "Diametric Opposition"
+{
+	titlepatch = "GWR2V28"
+	Next = "GWR230"
+	SecretNext = "GWR230"
+	Sky1 = "GWR20377"
+	Music = "D_GWR229"
+}
+
+map GWR230 "Freezer Burn"
+{
+	titlepatch = "GWR2V29"
+	Next = "GWR231"
+	SecretNext = "GWR231"
+	Sky1 = "GWR20377"
+	Music = "D_GWR230"
+}
+
+map GWR231 "The Charles Fort Experiment"
+{
+	titlepatch = "GWR2V30"
+	Next = "GWR232"
+	SecretNext = "GWR232"
+	Sky1 = "GWR20377"
+	Music = "D_GWR231"
+}
+
+map GWR232 "Rapecube"
+{
+	titlepatch = "GWR2V31"
+	Next = "GWR233"
+	SecretNext = "GWR233"
+	Sky1 = "GWR20377"
+	Music = "D_GWR232"
+}
+
+map GWR233 "Limbo Dancing"
+{
+	titlepatch = "GWR2V32"
+	Next = "GWR234"
+	SecretNext = "GWR234"
+	Sky1 = "GWR20377"
+	Music = "D_GWR233"
+}
+
+map GWR234 "Bleeding Grounds"
+{
+	titlepatch = "GWR2V33"
+	Next = "GWR235"
+	SecretNext = "GWR235"
+	Sky1 = "GWR20377"
+	Music = "D_GWR234"
+}
+
+map GWR235 "Edgecrusher"
+{
+	titlepatch = "GWR2V34"
+	Next = "GWR236"
+	SecretNext = "GWR236"
+	Sky1 = "GWR20377"
+	Music = "D_GWR235"
+}
+
+map GWR236 "nz12b"
+{
+	titlepatch = "GWR2V35"
+	Next = "VR"
+	SecretNext = "VR"
+	Sky1 = "GWR20377"
+	Music = "D_GWR236"
+}

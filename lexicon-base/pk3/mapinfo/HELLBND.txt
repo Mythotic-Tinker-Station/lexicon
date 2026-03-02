@@ -1,0 +1,393 @@
+// Hellbound Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLBD01 "apartments"
+{
+	titlepatch = "HLBDV00"
+	next = "HLBD02"
+	secretnext = "HLBD02"
+	sky1 = "HLBD0230"
+	music = "D_HLBD01"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD02 "canal road"
+{
+	titlepatch = "HLBDV01"
+	next = "HLBD03"
+	secretnext = "HLBD03"
+	sky1 = "HLBD0230"
+	music = "D_HLBD02"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD03 "testing chambers"
+{
+	titlepatch = "HLBDV02"
+	next = "HLBD04"
+	secretnext = "HLBD04"
+	sky1 = "HLBD0230"
+	music = "D_HLBD03"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD04 "processing plant"
+{
+	titlepatch = "HLBDV03"
+	next = "HLBD05"
+	secretnext = "HLBD05"
+	sky1 = "HLBD0230"
+	music = "D_HLBD04"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD05 "underground"
+{
+	titlepatch = "HLBDV04"
+	next = "HLBD06"
+	secretnext = "HLBD06"
+	sky1 = "HLBD0230"
+	music = "D_HLBD05"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD06 "gateway lab"
+{
+	titlepatch = "HLBDV05"
+	next = "HLBD07"
+	secretnext = "HLBD07"
+	sky1 = "HLBD0230"
+	music = "D_HLBD06"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD07 "the woods"
+{
+	titlepatch = "HLBDV06"
+	next = "HLBD08"
+	secretnext = "HLBD08"
+	sky1 = "HLBD0230"
+	music = "D_HLBD07"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+	Map07Special
+}
+
+map HLBD08 "military depo"
+{
+	titlepatch = "HLBDV07"
+	next = "HLBD09"
+	secretnext = "HLBD09"
+	sky1 = "HLBD0230"
+	music = "D_HLBD08"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD09 "disposal facility"
+{
+	titlepatch = "HLBDV08"
+	next = "HLBD10"
+	secretnext = "HLBD10"
+	sky1 = "HLBD0230"
+	music = "D_HLBD09"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD10 "cistern"
+{
+	titlepatch = "HLBDV09"
+	next = "HLBD11"
+	secretnext = "HLBD11"
+	sky1 = "HLBD0230"
+	music = "D_HLBD10"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD11 "venom canyon"
+{
+	titlepatch = "HLBDV10"
+	next = "HLBD12"
+	secretnext = "HLBD12"
+	sky1 = "HLBD0230"
+	music = "D_HLBD11"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD12 "power station"
+{
+	titlepatch = "HLBDV11"
+	next = "HLBD13"
+	secretnext = "HLBD13"
+	sky1 = "HLBD0231"
+	music = "D_HLBD12"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD13 "encrus station"
+{
+	titlepatch = "HLBDV12"
+	next = "HLBD14"
+	secretnext = "HLBD14"
+	sky1 = "HLBD0231"
+	music = "D_HLBD13"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD14 "doom district"
+{
+	titlepatch = "HLBDV13"
+	next = "HLBD15"
+	secretnext = "HLBD15"
+	sky1 = "HLBD0231"
+	music = "D_HLBD14"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD15 "the vault"
+{
+	titlepatch = "HLBDV14"
+	next = "HLBD16"
+	secretnext = "HLBD31"
+	sky1 = "HLBD0231"
+	music = "D_HLBD15"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD16 "city bounds"
+{
+	titlepatch = "HLBDV15"
+	next = "HLBD17"
+	secretnext = "HLBD17"
+	sky1 = "HLBD0231"
+	music = "D_HLBD16"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD17 "starport"
+{
+	titlepatch = "HLBDV16"
+	next = "HLBD18"
+	secretnext = "HLBD18"
+	sky1 = "HLBD0231"
+	music = "D_HLBD17"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD18 "computer complex"
+{
+	titlepatch = "HLBDV17"
+	next = "HLBD19"
+	secretnext = "HLBD19"
+	sky1 = "HLBD0231"
+	music = "D_HLBD18"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD19 "frontier lab"
+{
+	titlepatch = "HLBDV18"
+	next = "HLBD20"
+	secretnext = "HLBD20"
+	sky1 = "HLBD0231"
+	music = "D_HLBD19"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD20 "borderworld"
+{
+	titlepatch = "HLBDV19"
+	next = "HLBD21"
+	secretnext = "HLBD21"
+	sky1 = "HLBD0231"
+	music = "D_HLBD20"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD21 "the gates of hell"
+{
+	titlepatch = "HLBDV20"
+	next = "HLBD22"
+	secretnext = "HLBD22"
+	sky1 = "HLBD0232"
+	music = "D_HLBD21"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD22 "stygian depths"
+{
+	titlepatch = "HLBDV21"
+	next = "HLBD23"
+	secretnext = "HLBD23"
+	sky1 = "HLBD0232"
+	music = "D_HLBD22"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD23 "fortress of ages"
+{
+	titlepatch = "HLBDV22"
+	next = "HLBD24"
+	secretnext = "HLBD24"
+	sky1 = "HLBD0232"
+	music = "D_HLBD23"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD24 "city of pandemonium"
+{
+	titlepatch = "HLBDV23"
+	next = "HLBD25"
+	secretnext = "HLBD25"
+	sky1 = "HLBD0232"
+	music = "D_HLBD24"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD25 "bastion of void"
+{
+	titlepatch = "HLBDV24"
+	next = "HLBD26"
+	secretnext = "HLBD26"
+	sky1 = "HLBD0232"
+	music = "D_HLBD25"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD26 "forbidden archives"
+{
+	titlepatch = "HLBDV25"
+	next = "HLBD27"
+	secretnext = "HLBD27"
+	sky1 = "HLBD0232"
+	music = "D_HLBD26"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD27 "crimson abyss"
+{
+	titlepatch = "HLBDV26"
+	next = "HLBD28"
+	secretnext = "HLBD28"
+	sky1 = "HLBD0232"
+	music = "D_HLBD27"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD28 "the black citadel"
+{
+	titlepatch = "HLBDV27"
+	next = "HLBD29"
+	secretnext = "HLBD29"
+	sky1 = "HLBD0232"
+	music = "D_HLBD28"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD29 "ascension"
+{
+	titlepatch = "HLBDV28"
+	next = "HLBD30"
+	secretnext = "HLBD30"
+	sky1 = "HLBD0232"
+	music = "D_HLBD29"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD30 "worlds collide"
+{
+	titlepatch = "HLBDV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HLBD0232"
+	music = "D_HLBD30"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+	allowmonstertelefrags
+}
+
+map HLBD31 "diabolus ex machina"
+{
+	titlepatch = "HLBDV30"
+	next = "HLBD16"
+	secretnext = "HLBD32"
+	sky1 = "HLBD0232"
+	music = "D_HLBD31"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}
+
+map HLBD32 "spear of destiny"
+{
+	titlepatch = "HLBDV31"
+	next = "HLBD16"
+	secretnext = "HLBD16"
+	sky1 = "HLBD0232"
+	music = "D_HLBD32"
+	intermusic = "D_HLBDIN"
+	ExitPic = "HLBDINT"
+	EnterPic = "HLBDINT"
+}

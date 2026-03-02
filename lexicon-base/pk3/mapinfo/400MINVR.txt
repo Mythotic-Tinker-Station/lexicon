@@ -1,0 +1,454 @@
+// 400 Minutes of /vr/ Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 4MVR01 "Blood Refinery"
+{
+	titlepatch = "4MVRV00"
+	next = "4MVR02"
+	secretnext = "4MVR02"
+	sky1 = "4MVR0584"
+	music = "D_4MVR01"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI02"
+	EnterPic = "4MVRI01"
+}
+
+map 4MVR02 "Compound Fracture"
+{
+	titlepatch = "4MVRV01"
+	next = "4MVR03"
+	secretnext = "4MVR03"
+	sky1 = "4MVR0584"
+	music = "D_4MVR02"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI03"
+	EnterPic = "4MVRI02"
+}
+
+map 4MVR03 "Mister Pain Returns"
+{
+	titlepatch = "4MVRV02"
+	next = "4MVR04"
+	secretnext = "4MVR04"
+	sky1 = "4MVR0584"
+	music = "D_4MVR03"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI04"
+	EnterPic = "4MVRI03"
+}
+
+map 4MVR04 "Cracked"
+{
+	titlepatch = "4MVRV03"
+	next = "4MVR05"
+	secretnext = "4MVR05"
+	sky1 = "4MVR0584"
+	music = "D_4MVR04"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI05"
+	EnterPic = "4MVRI04"
+}
+
+map 4MVR05 "Moon Crater"
+{
+	titlepatch = "4MVRV04"
+	next = "4MVR06"
+	secretnext = "4MVR06"
+	sky1 = "4MVR0588"
+	music = "D_4MVR05"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI06"
+	EnterPic = "4MVRI05"
+}
+
+map 4MVR06 "Southwest Frag"
+{
+	titlepatch = "4MVRV05"
+	next = "4MVR07"
+	secretnext = "4MVR07"
+	sky1 = "4MVR0584"
+	music = "D_4MVR06"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI07"
+	EnterPic = "4MVRI06"
+}
+
+map 4MVR07 "Seeing Red"
+{
+	titlepatch = "4MVRV06"
+	next = "4MVR08"
+	secretnext = "4MVR08"
+	sky1 = "4MVR0584"
+	music = "D_4MVR07"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI08"
+	EnterPic = "4MVRI07"
+	Map07Special
+}
+
+map 4MVR08 "Acid Curve"
+{
+	titlepatch = "4MVRV07"
+	next = "4MVR09"
+	secretnext = "4MVR09"
+	sky1 = "4MVR0584"
+	music = "D_4MVR08"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI09"
+	EnterPic = "4MVRI08"
+}
+
+map 4MVR09 "Live Complex"
+{
+	titlepatch = "4MVRV08"
+	next = "4MVR10"
+	secretnext = "4MVR36"
+	sky1 = "4MVR0588"
+	music = "D_4MVR09"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI10"
+	EnterPic = "4MVRI09"
+	Map07Special
+}
+
+map 4MVR10 "Blood Office"
+{
+	titlepatch = "4MVRV09"
+	next = "4MVR11"
+	secretnext = "4MVR11"
+	sky1 = "4MVR0584"
+	music = "D_4MVR10"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI11"
+	EnterPic = "4MVRI10"
+}
+
+map 4MVR11 "I Am The Fat Rabbit"
+{
+	titlepatch = "4MVRV10"
+	next = "4MVR12"
+	secretnext = "4MVR12"
+	sky1 = "4MVR0584"
+	music = "D_4MVR11"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI12"
+	EnterPic = "4MVRI11"
+}
+
+map 4MVR12 "Biskelion"
+{
+	titlepatch = "4MVRV11"
+	next = "4MVR13"
+	secretnext = "4MVR13"
+	sky1 = "4MVR0585"
+	music = "D_4MVR12"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI13"
+	EnterPic = "4MVRI12"
+}
+
+map 4MVR13 "Undying Manor"
+{
+	titlepatch = "4MVRV12"
+	next = "4MVR14"
+	secretnext = "4MVR14"
+	sky1 = "4MVR0585"
+	music = "D_4MVR13"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI14"
+	EnterPic = "4MVRI13"
+}
+
+map 4MVR14 "I'll Be Here 'Til I'm Dead"
+{
+	titlepatch = "4MVRV13"
+	next = "4MVR15"
+	secretnext = "4MVR15"
+	sky1 = "4MVR0585"
+	music = "D_4MVR14"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI15"
+	EnterPic = "4MVRI14"
+}
+
+map 4MVR15 "Eversion"
+{
+	titlepatch = "4MVRV14"
+	next = "4MVR16"
+	secretnext = "4MVR31"
+	sky1 = "4MVR0585"
+	music = "D_4MVR15"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI16"
+	EnterPic = "4MVRI15"
+}
+
+map 4MVR16 "The Creature From Plaque Lagoon"
+{
+	titlepatch = "4MVRV15"
+	next = "4MVR17"
+	secretnext = "4MVR17"
+	sky1 = "4MVR0585"
+	music = "D_4MVR16"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI17"
+	EnterPic = "4MVRI16"
+}
+
+map 4MVR17 "Archahellago"
+{
+	titlepatch = "4MVRV16"
+	next = "4MVR18"
+	secretnext = "4MVR18"
+	sky1 = "SKY3"
+	music = "D_4MVR17"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI18"
+	EnterPic = "4MVRI17"
+}
+
+map 4MVR18 "Technocratic Insanity"
+{
+	titlepatch = "4MVRV17"
+	next = "4MVR19"
+	secretnext = "4MVR19"
+	sky1 = "4MVR0585"
+	music = "D_4MVR18"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI19"
+	EnterPic = "4MVRI18"
+}
+
+map 4MVR19 "Soul Survivor"
+{
+	titlepatch = "4MVRV18"
+	next = "4MVR20"
+	secretnext = "4MVR20"
+	sky1 = "4MVR0593"
+	music = "D_4MVR19"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI20"
+	EnterPic = "4MVRI19"
+}
+
+map 4MVR20 "Garbage Brain"
+{
+	titlepatch = "4MVRV19"
+	next = "4MVR21"
+	secretnext = "4MVR21"
+	sky1 = "4MVR0588"
+	music = "D_4MVR20"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI21"
+	EnterPic = "4MVRI20"
+}
+
+map 4MVR21 "Could Be Worse"
+{
+	titlepatch = "4MVRV20"
+	next = "4MVR22"
+	secretnext = "4MVR22"
+	sky1 = "SKY3"
+	music = "D_4MVR21"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI22"
+	EnterPic = "4MVRI21"
+}
+
+map 4MVR22 "Erosion of Sanity"
+{
+	titlepatch = "4MVRV21"
+	next = "4MVR23"
+	secretnext = "4MVR23"
+	sky1 = "SKY3"
+	music = "D_4MVR22"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI23"
+	EnterPic = "4MVRI22"
+}
+
+map 4MVR23 "Dash Tower"
+{
+	titlepatch = "4MVRV22"
+	next = "4MVR24"
+	secretnext = "4MVR24"
+	sky1 = "4MVR0584"
+	music = "D_4MVR23"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI25"
+	EnterPic = "4MVRI24"
+}
+
+map 4MVR24 "Yass Queen, Flay!"
+{
+	titlepatch = "4MVRV23"
+	next = "4MVR25"
+	secretnext = "4MVR25"
+	sky1 = "SKY3"
+	music = "D_4MVR24"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI26"
+	EnterPic = "4MVRI25"
+}
+
+map 4MVR25 "Kratom Withdrawal"
+{
+	titlepatch = "4MVRV24"
+	next = "4MVR26"
+	secretnext = "4MVR26"
+	sky1 = "SKY3"
+	music = "D_4MVR25"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI27"
+	EnterPic = "4MVRI26"
+}
+
+map 4MVR26 "Ultra Monkey Likes Daddy"
+{
+	titlepatch = "4MVRV25"
+	next = "4MVR27"
+	secretnext = "4MVR27"
+	sky1 = "SKY3"
+	music = "D_4MVR26"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI28"
+	EnterPic = "4MVRI27"
+}
+
+map 4MVR27 "Where Girls Learn To Pee On Command"
+{
+	titlepatch = "4MVRV26"
+	next = "4MVR28"
+	secretnext = "4MVR28"
+	sky1 = "SKY3"
+	music = "D_4MVR27"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI30"
+	EnterPic = "4MVRI29"
+}
+
+map 4MVR28 "Caves of Koone"
+{
+	titlepatch = "4MVRV27"
+	next = "4MVR29"
+	secretnext = "4MVR29"
+	sky1 = "SKY3"
+	music = "D_4MVR28"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI31"
+	EnterPic = "4MVRI30"
+}
+
+map 4MVR29 "Tuck Me Into Ramza's Foreskin"
+{
+	titlepatch = "4MVRV28"
+	next = "4MVR31"
+	secretnext = "4MVR31"
+	sky1 = "SKY3"
+	music = "D_4MVR29"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI32"
+	EnterPic = "4MVRI31"
+}
+
+map 4MVR30 "House of Fun"
+{
+	titlepatch = "4MVRV29"
+	next = "VR"
+	secretnext = "VR"
+	music = "D_4MVR30"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI38"
+	EnterPic = "4MVRI38"
+}
+
+map 4MVR31 "Magog a Go-Go"
+{
+	titlepatch = "4MVRV30"
+	next = "4MVR32"
+	secretnext = "4MVR32"
+	sky1 = "4MVR0584"
+	music = "D_4MVR31"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI33"
+	EnterPic = "4MVRI32"
+}
+
+map 4MVR32 "Sisyphus's Chrysalises"
+{
+	titlepatch = "4MVRV31"
+	next = "4MVR33"
+	secretnext = "4MVR33"
+	sky1 = "SKY3"
+	music = "D_4MVR32"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI34"
+	EnterPic = "4MVRI33"
+}
+
+map 4MVR33 "400 Line Actions"
+{
+	titlepatch = "4MVRV32"
+	next = "4MVR34"
+	secretnext = "4MVR34"
+	sky1 = "4MVR0584"
+	music = "D_4MVR33"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI35"
+	EnterPic = "4MVRI34"
+}
+
+map 4MVR34 "Feuer Frei!"
+{
+	titlepatch = "4MVRV33"
+	next = "4MVR35"
+	secretnext = "4MVR35"
+	sky1 = "4MVR0584"
+	music = "D_4MVR34"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI36"
+	EnterPic = "4MVRI35"
+}
+
+map 4MVR35 "Megatron"
+{
+	titlepatch = "4MVRV34"
+	next = "4MVR30"
+	secretnext = "4MVR30"
+	sky1 = "4MVR1331"
+	music = "D_4MVR35"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI37"
+	EnterPic = "4MVRI36"
+	SpecialAction = "SpiderMastermind", "Floor_LowerToNearest", 420, 32
+}
+
+map 4MVR36 "Invaded Space!"
+{
+	titlepatch = "4MVRV35"
+	next = "4MVR10"
+	secretnext = "4MVR37"
+	sky1 = "4MVR0588"
+	music = "D_4MVR36"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI10"
+	EnterPic = "4MVRI10"
+}
+
+map 4MVR37 "pac you in the face man"
+{
+	titlepatch = "4MVRV36"
+	next = "4MVR10"
+	secretnext = "4MVR10"
+	sky1 = "4MVR0588"
+	music = "D_4MVR37"
+	intermusic = "D_4MVRIN"
+	ExitPic = "4MVRI10"
+	EnterPic = "4MVRI10"
+	SpecialAction = "Cyberdemon", "Door_Open", 666, 16
+}

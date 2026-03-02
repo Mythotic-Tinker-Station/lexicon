@@ -1,0 +1,405 @@
+// Bloodspeed Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map BDSP01 "Outer Base"
+{
+	titlepatch = "BDSPV00"
+	next = "BDSP02"
+	secretnext = "BDSP02"
+	sky1 = "BDSP0230"
+	music = "D_BDSP01"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP02 "Waste Disposal Facility"
+{
+	titlepatch = "BDSPV01"
+	next = "BDSP03"
+	secretnext = "BDSP03"
+	sky1 = "BDSP0230"
+	music = "D_BDSP02"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP03 "Corrupted Industry"
+{
+	titlepatch = "BDSPV02"
+	next = "BDSP04"
+	secretnext = "BDSP04"
+	sky1 = "BDSP0230"
+	music = "D_BDSP03"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP04 "Translocation Research"
+{
+	titlepatch = "BDSPV03"
+	next = "BDSP05"
+	secretnext = "BDSP05"
+	sky1 = "BDSP0230"
+	music = "D_BDSP04"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP05 "Devil's Joy"
+{
+	titlepatch = "BDSPV04"
+	next = "BDSP06"
+	secretnext = "BDSP06"
+	sky1 = "BDSP0230"
+	music = "D_BDSP05"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP06 "Sprint"
+{
+	titlepatch = "BDSPV05"
+	next = "BDSP07"
+	secretnext = "BDSP07"
+	sky1 = "BDSP0230"
+	music = "D_BDSP06"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP07 "Nanotechnology Experiments"
+{
+	titlepatch = "BDSPV06"
+	next = "BDSP08"
+	secretnext = "BDSP08"
+	sky1 = "BDSP0230"
+	music = "D_BDSP07"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+	Map07Special
+}
+
+map BDSP08 "Symphony of Darox"
+{
+	titlepatch = "BDSPV07"
+	next = "BDSP09"
+	secretnext = "BDSP09"
+	sky1 = "BDSP0230"
+	music = "D_BDSP08"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP09 "Point Of Accident"
+{
+	titlepatch = "BDSPV08"
+	next = "BDSP10"
+	secretnext = "BDSP10"
+	sky1 = "BDSP0230"
+	music = "D_BDSP09"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP10 "Last Hangover"
+{
+	titlepatch = "BDSPV09"
+	next = "BDSP11"
+	secretnext = "BDSP11"
+	sky1 = "BDSP0230"
+	music = "D_BDSP10"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP11 "Spider Caves"
+{
+	titlepatch = "BDSPV10"
+	next = "BDSP12"
+	secretnext = "BDSP12"
+	sky1 = "BDSP0230"
+	music = "D_BDSP11"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP12 "Village of the Black Sun"
+{
+	titlepatch = "BDSPV11"
+	next = "BDSP13"
+	secretnext = "BDSP13"
+	sky1 = "BDSP0231"
+	music = "D_BDSP12"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP13 "Moments in Doom"
+{
+	titlepatch = "BDSPV12"
+	next = "BDSP14"
+	secretnext = "BDSP14"
+	sky1 = "BDSP0231"
+	music = "D_BDSP13"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP14 "Temple of Hades"
+{
+	titlepatch = "BDSPV13"
+	next = "BDSP15"
+	secretnext = "BDSP15"
+	sky1 = "BDSP0231"
+	music = "D_BDSP14"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP15 "Fortress Of Tears"
+{
+	titlepatch = "BDSPV14"
+	next = "BDSP16"
+	secretnext = "BDSP31"
+	sky1 = "BDSP0231"
+	music = "D_BDSP15"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP16 "Outskirts Of Hell"
+{
+	titlepatch = "BDSPV15"
+	next = "BDSP17"
+	secretnext = "BDSP17"
+	sky1 = "BDSP0231"
+	music = "D_BDSP16"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP17 "Hell Sunrise"
+{
+	titlepatch = "BDSPV16"
+	next = "BDSP18"
+	secretnext = "BDSP18"
+	sky1 = "BDSP0231"
+	music = "D_BDSP17"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP18 "Demonic Bloodpool"
+{
+	titlepatch = "BDSPV17"
+	next = "BDSP19"
+	secretnext = "BDSP19"
+	sky1 = "BDSP0231"
+	music = "D_BDSP18"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP19 "Pale Disease"
+{
+	titlepatch = "BDSPV18"
+	next = "BDSP20"
+	secretnext = "BDSP20"
+	sky1 = "BDSP0231"
+	music = "D_BDSP19"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP20 "Follow The Trail"
+{
+	titlepatch = "BDSPV19"
+	next = "BDSP21"
+	secretnext = "BDSP21"
+	sky1 = "BDSP0231"
+	music = "D_BDSP20"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP21 "Frozen Hideout"
+{
+	titlepatch = "BDSPV20"
+	next = "BDSP22"
+	secretnext = "BDSP22"
+	sky1 = "BDSP0232"
+	music = "D_BDSP21"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP22 "Cold Blood"
+{
+	titlepatch = "BDSPV21"
+	next = "BDSP23"
+	secretnext = "BDSP23"
+	sky1 = "BDSP0232"
+	music = "D_BDSP22"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP23 "Vainglory"
+{
+	titlepatch = "BDSPV22"
+	next = "BDSP24"
+	secretnext = "BDSP24"
+	sky1 = "BDSP0232"
+	music = "D_BDSP23"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP24 "Cyber Melter"
+{
+	titlepatch = "BDSPV23"
+	next = "BDSP25"
+	secretnext = "BDSP25"
+	sky1 = "BDSP0232"
+	music = "D_BDSP24"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP25 "Hermans Rest"
+{
+	titlepatch = "BDSPV24"
+	next = "BDSP26"
+	secretnext = "BDSP26"
+	sky1 = "BDSP0232"
+	music = "D_BDSP25"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP26 "Lord of the City"
+{
+	titlepatch = "BDSPV25"
+	next = "BDSP27"
+	secretnext = "BDSP27"
+	sky1 = "BDSP0232"
+	music = "D_BDSP26"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP27 "The Edge of Reason"
+{
+	titlepatch = "BDSPV26"
+	next = "BDSP28"
+	secretnext = "BDSP28"
+	sky1 = "BDSP0232"
+	music = "D_BDSP27"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP28 "Captured"
+{
+	titlepatch = "BDSPV27"
+	next = "BDSP29"
+	secretnext = "BDSP29"
+	sky1 = "BDSP0232"
+	music = "D_BDSP28"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP29 "Iced Sanctuary"
+{
+	titlepatch = "BDSPV28"
+	next = "BDSP30"
+	secretnext = "BDSP30"
+	sky1 = "BDSP0232"
+	music = "D_BDSP29"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP30 "A Harsh Message"
+{
+	titlepatch = "BDSPV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "AALI4130"
+	music = "D_BDSP30"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+	allowmonstertelefrags
+}
+
+map BDSP31 "Daemons of the Mind"
+{
+	titlepatch = "BDSPV30"
+	next = "BDSP16"
+	secretnext = "BDSP32"
+	sky1 = "BDSP0232"
+	music = "D_BDSP31"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP32 "Fort Boyard"
+{
+	titlepatch = "BDSPV31"
+	next = "BDSP16"
+	secretnext = "BDSP16"
+	sky1 = "BDSP0232"
+	music = "D_BDSP32"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}
+
+map BDSP33 "!?"
+{
+	titlepatch = "BDSPV32"
+	next = "BDSP01"
+	secretnext = "BDSP01"
+	sky1 = "BDSP0232"
+	music = "D_BDSP33"
+	intermusic = "D_BDSPIN"
+	ExitPic = "BDSPINT"
+	EnterPic = "BDSPINT"
+}

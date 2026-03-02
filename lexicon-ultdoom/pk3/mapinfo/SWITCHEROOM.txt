@@ -1,0 +1,345 @@
+// Switcheroom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SWR1E1M1 "Phobos Spaceport"
+{
+	titlepatch = "SWR1V00"
+	next = "SWR1E1M2"
+	secretnext = "SWR1E1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map SWR1E1M2 "The Reactor"
+{
+	titlepatch = "SWR1V01"
+	next = "SWR1E1M3"
+	secretnext = "SWR1E1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map SWR1E1M3 "Computer Lab"
+{
+	titlepatch = "SWR1V02"
+	next = "SWR1E1M4"
+	secretnext = "SWR1E1M9"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+}
+
+map SWR1E1M4 "Sladwall Inc."
+{
+	titlepatch = "SWR1V03"
+	next = "SWR1E1M5"
+	secretnext = "SWR1E1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+}
+
+map SWR1E1M5 "Headquarters"
+{
+	titlepatch = "SWR1V04"
+	next = "SWR1E1M6"
+	secretnext = "SWR1E1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+}
+
+map SWR1E1M6 "Against Thee Processing"
+{
+	titlepatch = "SWR1V05"
+	next = "SWR1E1M7"
+	secretnext = "SWR1E1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map SWR1E1M7 "Transport Station"
+{
+	titlepatch = "SWR1V06"
+	next = "SWR1E1M8"
+	secretnext = "SWR1E1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+}
+
+map SWR1E1M8 "Gomorrah"
+{
+	titlepatch = "SWR1V07"
+	next = "SWR1E2M1"
+	secretnext = "SWR1E2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map SWR1E1M9 "Abandoned Outpost"
+{
+	titlepatch = "SWR1V08"
+	next = "SWR1E1M4"
+	secretnext = "SWR1E1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M9"
+}
+
+map SWR1E2M1 "Excavation"
+{
+	titlepatch = "SWR1V09"
+	next = "SWR1E2M2"
+	secretnext = "SWR1E2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M1"
+}
+
+map SWR1E2M2 "Supply Overflow"
+{
+	titlepatch = "SWR1V10"
+	next = "SWR1E2M3"
+	secretnext = "SWR1E2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M2"
+}
+
+map SWR1E2M3 "Bio Processing"
+{
+	titlepatch = "SWR1V11"
+	next = "SWR1E2M4"
+	secretnext = "SWR1E2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M3"
+}
+
+map SWR1E2M4 "Mainframe Grid"
+{
+	titlepatch = "SWR1V12"
+	next = "SWR1E2M5"
+	secretnext = "SWR1E2M5"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M4"
+}
+
+map SWR1E2M5 "Nukage Spill"
+{
+	titlepatch = "SWR1V13"
+	next = "SWR1E2M6"
+	secretnext = "SWR1E2M9"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map SWR1E2M6 "Bunker"
+{
+	titlepatch = "SWR1V14"
+	next = "SWR1E2M7"
+	secretnext = "SWR1E2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+}
+
+map SWR1E2M7 "Hell Is Coming"
+{
+	titlepatch = "SWR1V15"
+	next = "SWR1E2M8"
+	secretnext = "SWR1E2M8"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M7"
+}
+
+map SWR1E2M8 "Eridu"
+{
+	titlepatch = "SWR1V16"
+	next = "SWR1E3M1"
+	secretnext = "SWR1E3M1"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map SWR1E2M9 "Deimos Spaceport"
+{
+	titlepatch = "SWR1V17"
+	next = "SWR1E2M6"
+	secretnext = "SWR1E2M6"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map SWR1E3M1 "The Baleful Fluids"
+{
+	titlepatch = "SWR1V18"
+	next = "SWR1E3M2"
+	secretnext = "SWR1E3M2"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M1"
+}
+
+map SWR1E3M2 "Echo Of Pain"
+{
+	titlepatch = "SWR1V19"
+	next = "SWR1E3M3"
+	secretnext = "SWR1E3M3"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M2"
+}
+
+map SWR1E3M3 "Phlegethon"
+{
+	titlepatch = "SWR1V20"
+	next = "SWR1E3M4"
+	secretnext = "SWR1E3M4"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M3"
+}
+
+map SWR1E3M4 "Hysteria"
+{
+	titlepatch = "SWR1V21"
+	next = "SWR1E3M5"
+	secretnext = "SWR1E3M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map SWR1E3M5 "Temple Of Demons"
+{
+	titlepatch = "SWR1V22"
+	next = "SWR1E3M6"
+	secretnext = "SWR1E3M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M5"
+}
+
+map SWR1E3M6 "Mt. Terror"
+{
+	titlepatch = "SWR1V23"
+	next = "SWR1E3M7"
+	secretnext = "SWR1E3M9"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M6"
+}
+
+map SWR1E3M7 "Bloody Premonition"
+{
+	titlepatch = "SWR1V24"
+	next = "SWR1E3M8"
+	secretnext = "SWR1E3M8"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M7"
+}
+
+map SWR1E3M8 "Abomination"
+{
+	titlepatch = "SWR1V25"
+	next = "SWR1E4M1"
+	secretnext = "SWR1E4M1"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map SWR1E3M9 "Dread"
+{
+	titlepatch = "SWR1V26"
+	next = "SWR1E3M7"
+	secretnext = "SWR1E3M7"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M9"
+}
+
+map SWR1E4M1 "They That Dwell Within"
+{
+	titlepatch = "SWR1V27"
+	next = "SWR1E4M2"
+	secretnext = "SWR1E4M2"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M4"
+}
+
+map SWR1E4M2 "Their Torment Ascendeth"
+{
+	titlepatch = "SWR1V28"
+	next = "SWR1E4M3"
+	secretnext = "SWR1E4M9"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M2"
+}
+
+map SWR1E4M3 "Instruments Of Cruelty"
+{
+	titlepatch = "SWR1V29"
+	next = "SWR1E4M4"
+	secretnext = "SWR1E4M4"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M3"
+}
+
+map SWR1E4M4 "House Of The Wicked"
+{
+	titlepatch = "SWR1V30"
+	next = "SWR1E4M5"
+	secretnext = "SWR1E4M5"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E1M5"
+}
+
+map SWR1E4M5 "Burn Them Thoroughly"
+{
+	titlepatch = "SWR1V31"
+	next = "SWR1E4M6"
+	secretnext = "SWR1E4M6"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M7"
+}
+
+map SWR1E4M6 "And Death Shall Flee"
+{
+	titlepatch = "SWR1V32"
+	next = "SWR1E4M7"
+	secretnext = "SWR1E4M7"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map SWR1E4M7 "Evil Is Before You"
+{
+	titlepatch = "SWR1V33"
+	next = "SWR1E4M8"
+	secretnext = "SWR1E4M8"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M6"
+}
+
+map SWR1E4M8 "Run To Evil"
+{
+	titlepatch = "SWR1V34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M5"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map SWR1E4M9 "Hate"
+{
+	titlepatch = "SWR1V35"
+	next = "SWR1E4M3"
+	secretnext = "SWR1E4M3"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E1M9"
+}

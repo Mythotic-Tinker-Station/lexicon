@@ -1,0 +1,393 @@
+// The Long Trek Back Home Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map D2TK01 "Icon of Sin"
+{
+	titlepatch = "D2TKV00"
+	next = "D2TK02"
+	secretnext = "D2TK02"
+	sky1 = "D2TK0001"
+	music = "D_D2TK01"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK02 "The Living End"
+{
+	titlepatch = "D2TKV01"
+	next = "D2TK03"
+	secretnext = "D2TK03"
+	sky1 = "D2TK0001"
+	music = "D_D2TK02"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK03 "The Spirit World"
+{
+	titlepatch = "D2TKV02"
+	next = "D2TK04"
+	secretnext = "D2TK04"
+	sky1 = "D2TK0001"
+	music = "D_D2TK03"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK04 "Monster Condo"
+{
+	titlepatch = "D2TKV03"
+	next = "D2TK05"
+	secretnext = "D2TK05"
+	sky1 = "D2TK0001"
+	music = "D_D2TK04"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK05 "The Abandoned Mines"
+{
+	titlepatch = "D2TKV04"
+	next = "D2TK06"
+	secretnext = "D2TK06"
+	sky1 = "D2TK0001"
+	music = "D_D2TK05"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK06 "Bloodfalls"
+{
+	titlepatch = "D2TKV05"
+	next = "D2TK07"
+	secretnext = "D2TK07"
+	sky1 = "D2TK0001"
+	music = "D_D2TK06"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK07 "The Chasm"
+{
+	titlepatch = "D2TKV06"
+	next = "D2TK08"
+	secretnext = "D2TK08"
+	sky1 = "D2TK0001"
+	music = "D_D2TK07"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+	Map07Special
+}
+
+map D2TK08 "Barrels o' Fun"
+{
+	titlepatch = "D2TKV07"
+	next = "D2TK09"
+	secretnext = "D2TK09"
+	sky1 = "D2TK0001"
+	music = "D_D2TK08"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK09 "The Catacombs"
+{
+	titlepatch = "D2TKV08"
+	next = "D2TK10"
+	secretnext = "D2TK10"
+	sky1 = "D2TK0001"
+	music = "D_D2TK09"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK10 "Nirvana"
+{
+	titlepatch = "D2TKV09"
+	next = "D2TK11"
+	secretnext = "D2TK11"
+	sky1 = "D2TK0001"
+	music = "D_D2TK10"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK11 "Gotcha!"
+{
+	titlepatch = "D2TKV10"
+	next = "D2TK12"
+	secretnext = "D2TK12"
+	sky1 = "D2TK0001"
+	music = "D_D2TK11"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK12 "The Citadel"
+{
+	titlepatch = "D2TKV11"
+	next = "D2TK13"
+	secretnext = "D2TK13"
+	sky1 = "D2TK0002"
+	music = "D_D2TK12"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK13 "The Courtyard"
+{
+	titlepatch = "D2TKV12"
+	next = "D2TK14"
+	secretnext = "D2TK14"
+	sky1 = "D2TK0002"
+	music = "D_D2TK13"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK14 "Tenements"
+{
+	titlepatch = "D2TKV13"
+	next = "D2TK15"
+	secretnext = "D2TK15"
+	sky1 = "D2TK0002"
+	music = "D_D2TK14"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK15 "Suburbs"
+{
+	titlepatch = "D2TKV14"
+	next = "D2TK16"
+	secretnext = "D2TK31"
+	sky1 = "D2TK0002"
+	music = "D_D2TK15"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK16 "Industrial Zone"
+{
+	titlepatch = "D2TKV15"
+	next = "D2TK17"
+	secretnext = "D2TK17"
+	sky1 = "D2TK0002"
+	music = "D_D2TK16"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK17 "The Inmost Dens"
+{
+	titlepatch = "D2TKV16"
+	next = "D2TK18"
+	secretnext = "D2TK18"
+	sky1 = "D2TK0002"
+	music = "D_D2TK17"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK18 "Downtown"
+{
+	titlepatch = "D2TKV17"
+	next = "D2TK19"
+	secretnext = "D2TK19"
+	sky1 = "D2TK0002"
+	music = "D_D2TK18"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK19 "The Factory"
+{
+	titlepatch = "D2TKV18"
+	next = "D2TK20"
+	secretnext = "D2TK20"
+	sky1 = "D2TK0002"
+	music = "D_D2TK19"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK20 "'O' of Destruction!"
+{
+	titlepatch = "D2TKV19"
+	next = "D2TK21"
+	secretnext = "D2TK21"
+	sky1 = "D2TK0002"
+	music = "D_D2TK20"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK21 "Refueling Base"
+{
+	titlepatch = "D2TKV20"
+	next = "D2TK22"
+	secretnext = "D2TK22"
+	sky1 = "D2TK0003"
+	music = "D_D2TK21"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK22 "The Pit"
+{
+	titlepatch = "D2TKV21"
+	next = "D2TK23"
+	secretnext = "D2TK23"
+	sky1 = "D2TK0003"
+	music = "D_D2TK22"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK23 "Tricks and Traps"
+{
+	titlepatch = "D2TKV22"
+	next = "D2TK24"
+	secretnext = "D2TK24"
+	sky1 = "D2TK0003"
+	music = "D_D2TK23"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK24 "Dead Simple"
+{
+	titlepatch = "D2TKV23"
+	next = "D2TK25"
+	secretnext = "D2TK25"
+	sky1 = "D2TK0003"
+	music = "D_D2TK24"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK25 "The Crusher"
+{
+	titlepatch = "D2TKV24"
+	next = "D2TK26"
+	secretnext = "D2TK26"
+	sky1 = "D2TK0003"
+	music = "D_D2TK25"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK26 "The Waste Tunnels"
+{
+	titlepatch = "D2TKV25"
+	next = "D2TK27"
+	secretnext = "D2TK27"
+	sky1 = "D2TK0003"
+	music = "D_D2TK26"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK27 "The Focus"
+{
+	titlepatch = "D2TKV26"
+	next = "D2TK28"
+	secretnext = "D2TK28"
+	sky1 = "D2TK0003"
+	music = "D_D2TK27"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK28 "The Gantlet"
+{
+	titlepatch = "D2TKV27"
+	next = "D2TK29"
+	secretnext = "D2TK29"
+	sky1 = "D2TK0003"
+	music = "D_D2TK28"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK29 "Underhalls"
+{
+	titlepatch = "D2TKV28"
+	next = "D2TK30"
+	secretnext = "D2TK30"
+	sky1 = "D2TK0003"
+	music = "D_D2TK29"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK30 "Entryway"
+{
+	titlepatch = "D2TKV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "D2TK4130"
+	music = "D_D2TK30"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+	allowmonstertelefrags
+}
+
+map D2TK31 "Comm Satellite"
+{
+	titlepatch = "D2TKV30"
+	next = "D2TK16"
+	secretnext = "D2TK32"
+	sky1 = "D2TK0003"
+	music = "D_D2TK31"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}
+
+map D2TK32 "Dark Side"
+{
+	titlepatch = "D2TKV31"
+	next = "D2TK16"
+	secretnext = "D2TK16"
+	sky1 = "D2TK0003"
+	music = "D_D2TK32"
+	intermusic = "D_D2TKIN"
+	ExitPic = "D2TKINT"
+	EnterPic = "D2TKINT"
+}

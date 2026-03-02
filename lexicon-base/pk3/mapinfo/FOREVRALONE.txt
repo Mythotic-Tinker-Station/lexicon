@@ -1,0 +1,284 @@
+// Fore/vr/ Alone Mapset
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map FVRA01 "Outism"
+{
+	titlepatch = "FVRAV00"
+	next = "FVRA02"
+	secretnext = "FVRA02"
+	sky1 = "SKY1"
+	music = "D_FVRA01"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA02 "Robutt"
+{
+	titlepatch = "FVRAV01"
+	next = "FVRA03"
+	secretnext = "FVRA03"
+	sky1 = "SKY1"
+	music = "D_FVRA02"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA03 "Eto"
+{
+	titlepatch = "FVRAV02"
+	next = "FVRA04"
+	secretnext = "FVRA04"
+	sky1 = "SKY1"
+	music = "D_FVRA03"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA04 "Dirty Foot Canyon"
+{
+	titlepatch = "FVRAV03"
+	next = "FVRA05"
+	secretnext = "FVRA05"
+	sky1 = "SKY1"
+	music = "D_FVRA04"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA05 "A Daring!! Escape"
+{
+	titlepatch = "FVRAV04"
+	next = "FVRA06"
+	secretnext = "FVRA06"
+	sky1 = "SKY1"
+	music = "D_FVRA05"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA06 "Daina's Ass"
+{
+	titlepatch = "FVRAV05"
+	next = "FVRA07"
+	secretnext = "FVRA07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA07 "Ass Massage"
+{
+	titlepatch = "FVRAV06"
+	next = "FVRA08"
+	secretnext = "FVRA08"
+	sky1 = "SKY1"
+	music = "D_FVRA07"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+	Map07Special
+}
+
+map FVRA08 "Boop-Oop-a-Doom!"
+{
+	titlepatch = "FVRAV07"
+	next = "FVRA09"
+	secretnext = "FVRA09"
+	sky1 = "SKY1"
+	music = "D_FVRA08"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA09 "Purgatori Reborn"
+{
+	titlepatch = "FVRAV08"
+	next = "FVRA10"
+	secretnext = "FVRA10"
+	sky1 = "SKY1"
+	music = "D_FVRA09"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA10 "Panacea"
+{
+	titlepatch = "FVRAV09"
+	next = "FVRA11"
+	secretnext = "FVRA11"
+	sky1 = "SKY1"
+	music = "D_FVRA10"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA11 "Trapped By the Ocean Scent"
+{
+	titlepatch = "FVRAV10"
+	next = "FVRA12"
+	secretnext = "FVRA12"
+	sky1 = "SKY1"
+	music = "D_FVRA11"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA12 "Hope for Tyranny"
+{
+	titlepatch = "FVRAV11"
+	next = "FVRA13"
+	secretnext = "FVRA13"
+	sky1 = "OSKY33"
+	music = "D_FVRA12"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA13 "Red Boat"
+{
+	titlepatch = "FVRAV12"
+	next = "FVRA14"
+	secretnext = "FVRA14"
+	sky1 = "SKY2"
+	music = "D_FVRA13"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA14 "Can I Slither In?"
+{
+	titlepatch = "FVRAV13"
+	next = "FVRA15"
+	secretnext = "FVRA15"
+	sky1 = "SKY2"
+	music = "D_FVRA14"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA15 "Soul"
+{
+	titlepatch = "FVRAV14"
+	next = "FVRA16"
+	secretnext = "FVRA16"
+	sky1 = "OSKY21"
+	music = "D_FVRA15"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA16 "Shanalotte"
+{
+	titlepatch = "FVRAV15"
+	next = "FVRA17"
+	secretnext = "FVRA17"
+	sky1 = "SKY2"
+	music = "D_FVRA16"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA17 "The Amataya Inquisition"
+{
+	titlepatch = "FVRAV16"
+	next = "FVRA18"
+	secretnext = "FVRA18"
+	sky1 = "OSKY32"
+	music = "D_FVRA17"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA18 "Half-Genie in a Bottle"
+{
+	titlepatch = "FVRAV17"
+	next = "FVRA19"
+	secretnext = "FVRA19"
+	sky1 = "OSKY32"
+	music = "D_FVRA18"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA19 "Bloody Seasons"
+{
+	titlepatch = "FVRAV18"
+	next = "FVRA20"
+	secretnext = "FVRA20"
+	sky1 = "OSKY11"
+	music = "D_FVRA19"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA20 "Crescent Moon Sortie"
+{
+	titlepatch = "FVRAV19"
+	next = "FVRA21"
+	secretnext = "FVRA31"
+	sky1 = "SKY2"
+	music = "D_FVRA20"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA21 "Demonic Hairday"
+{
+	titlepatch = "FVRAV20"
+	next = "FVRA22"
+	secretnext = "FVRA22"
+	sky1 = "SKY3"
+	music = "D_FVRA21"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA22 "Sleep Tight"
+{
+	titlepatch = "FVRAV21"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "OSKY33"
+	music = "D_FVRA22"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}
+
+map FVRA31 "Rainboom"
+{
+	titlepatch = "FVRAV30"
+	next = "FVRA21"
+	secretnext = "FVRA21"
+	sky1 = "SKY3"
+	music = "D_FVRA31"
+	intermusic = "D_FVRAIN"
+	ExitPic = "FVRAINT"
+	EnterPic = "FVRAINT"
+}

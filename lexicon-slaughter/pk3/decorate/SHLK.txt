@@ -1,0 +1,39 @@
+Actor Lexicon_SHLK_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LY01 Y -1
+		Stop
+	}
+}
+
+Actor Lexicon_SHLK_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LY01 Z -1
+		Stop
+	}
+}
+
+Actor Lexicon_SHLK_BigTree : BigTree
+{
+	States
+	{
+	Spawn:
+		LY01 "[" -1
+		Stop
+	}
+}
+
+Actor Lexicon_SHLK_ColonGibs : ColonGibs
+{
+	States
+	{
+	Spawn:
+		LY01 "\" -1
+		Stop
+	}
+}

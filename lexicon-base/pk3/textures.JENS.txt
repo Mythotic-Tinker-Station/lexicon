@@ -1,0 +1,653 @@
+Texture "JENS0105", 64, 128
+{
+	Patch "JENS0416", 0, 64
+	Patch "JENS0416", 0, 0
+	Patch "EXIT1", 17, 22
+}
+Texture "JENS0115", 128, 128
+{
+	Patch "JENS0416", 0, 64
+	Patch "JENS0416", 64, 0
+	Patch "JENS0417", 0, 0
+	Patch "JENS0417", 64, 64
+}
+Texture "JENS0116", 128, 128
+{
+	Patch "JENS0419", 0, 0
+	Patch "JENS0418", 0, 64
+	Patch "JENS0419", 64, 64
+	Patch "JENS0418", 64, 0
+}
+Texture "JENS0117", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "JENS0118", 64, 128
+{
+	Patch "WALL00_7", 32, -16
+	Patch "WALL00_6", 16, 0
+	Patch "SW1S0", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+}
+Texture "JENS0119", 64, 128
+{
+	Patch "JENS0416", 0, 64
+	Patch "JENS0416", 0, 0
+	Patch "SW1S0", 16, 78
+}
+Texture "JENS0120", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "JENS0121", 64, 128
+{
+	Patch "WALL00_7", 32, -16
+	Patch "WALL00_6", 16, 0
+	Patch "SW1S1", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+}
+Texture "JENS0122", 64, 128
+{
+	Patch "JENS0416", 0, 64
+	Patch "JENS0416", 0, 0
+	Patch "SW1S1", 16, 78
+}
+Texture "JENS0138", 24, 72
+{
+	Patch "WALL00_3", 0, 0
+	Patch "WALL00_3", 12, -6
+}
+Texture "JENS0142", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+Texture "JENS0143", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "JENS0144", 256, 128
+{
+	Patch "JENS0437", 0, 0
+	Patch "JENS0438", 64, 0
+	Patch "JENS0440", 128, 0
+	Patch "JENS0439", 192, 0
+	Patch "JENS0442", 0, 64
+	Patch "JENS0444", 64, 64
+	Patch "JENS0443", 128, 64
+	Patch "JENS0441", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "JENS0145", 128, 128
+{
+	Patch "JENS0446", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "JENS0445", 96, 0
+	Patch "JENS0446", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "JENS0445", 96, 64
+}
+Texture "JENS0146", 128, 128
+{
+	Patch "JENS0433", 26, 64
+	Patch "JENS0432", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "JENS0433", 28, 0
+	Patch "JENS0436", 72, 64
+	Patch "JENS0434", 72, 0
+	Patch "JENS0435", 0, 0
+}
+Texture "JENS0147", 256, 56
+{
+	Patch "JENS0437", 0, 0
+	Patch "JENS0438", 64, 0
+	Patch "JENS0439", 128, 0
+	Patch "JENS0443", 192, 0
+}
+Texture "JENS0148", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "JENS0431", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "JENS0437", 0, 0
+	Patch "JENS0431", 96, 4
+	Patch "JENS0438", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "JENS0149", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "JENS0448", 5, 0
+	Patch "JENS0448", 35, 0
+}
+Texture "JENS0150", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "JENS0152", 16, 128
+{
+	Patch "JENS0420", 0, 0
+	Patch "JENS0420", 0, 56
+}
+Texture "JENS0154", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "JENS0449", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "JENS0450", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "JENS0451", 132, 69
+	Patch "JENS0452", 68, 7
+	Patch "JENS0453", 4, 7
+	Patch "JENS0454", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "JENS0155", 128, 128
+{
+	Patch "JENS0422", 0, 56
+	Patch "JENS0423", 64, 56
+	Patch "JENS0422", 0, 0
+	Patch "JENS0423", 64, 0
+}
+Texture "JENS0159", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "JENS0161", 32, 8
+{
+	Patch "STEP03", 0, 0
+}
+Texture "JENS0163", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 8
+}
+Texture "JENS0164", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "JENS0166", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "JENS0167", 64, 128
+{
+	Patch "RW1_1", 0, 0
+	Patch "SW2_7", 14, 66
+}
+Texture "JENS0168", 64, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "SW2_7", 14, 66
+}
+Texture "JENS0169", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "JENS0170", 64, 128
+{
+	Patch "JENS0417", 0, 0
+	Patch "JENS0416", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "JENS0171", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "JENS0172", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "JENS0173", 64, 128
+{
+	Patch "RW1_1", 0, 0
+	Patch "SW2_8", 14, 66
+}
+Texture "JENS0174", 64, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "SW2_8", 14, 66
+}
+Texture "JENS0175", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "JENS0176", 64, 128
+{
+	Patch "JENS0416", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "JENS0417", 0, 0
+}
+Texture "JENS0177", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "JENS0178", 128, 128
+{
+	Patch "JENS0484", 0, 0
+}
+Texture "JENS0179", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "JENS0180", 128, 128
+{
+	Patch "JENS0484", -120, -8
+}
+Texture "JENS0186", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "JENS0187", 256, 72
+{
+	Patch "WALL03_4", 0, 0
+	Patch "JENS0466", 128, 0
+	Patch "WALL03_4", 64, 0
+	Patch "WALL03_4", 192, 0
+}
+Texture "JENS0188", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
+}
+Texture "JENS0189", 128, 128
+{
+	Patch "JENS0468", 64, 70
+	Patch "JENS0470", 0, 70
+	Patch "JENS0469", 0, 0
+	Patch "JENS0468", 64, 0
+}
+Texture "JENS0190", 64, 128
+{
+	Patch "JENS0471", 0, 0
+	Patch "JENS0471", 0, 32
+	Patch "JENS0471", 0, 96
+	Patch "JENS0471", 0, 64
+}
+Texture "JENS0191", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "JENS0483", 14, 74
+}
+Texture "JENS0192", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "JENS0458", 0, 0
+}
+Texture "JENS0193", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "JENS0457", 4, 0
+	Patch "W32_4", 0, 64
+}
+Texture "JENS0194", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "JENS0448", 4, 18
+	Patch "JENS0448", 38, 18
+}
+Texture "JENS0195", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "JENS0448", 81, 34
+	Patch "JENS0448", 19, 34
+}
+Texture "JENS0196", 16, 128
+{
+	Patch "JENS0467", -4, 56
+	Patch "JENS0467", -4, 0
+}
+Texture "JENS0197", 64, 128
+{
+	Patch "JENS0417", 0, 0
+	Patch "JENS0416", 0, 64
+	Patch "JENS0448", 7, 27
+	Patch "JENS0448", 37, 27
+}
+Texture "JENS0200", 64, 128
+{
+	Patch "WALL04_3", 0, 0
+	Patch "WALL04_4", 16, 0
+	Patch "WALL04_5", 32, 0
+	Patch "WALL04_2", 48, 0
+	Patch "NUKEDGE", 0, 104
+	Patch "WALL04_3", 0, 33
+	Patch "WALL04_4", 16, 33
+	Patch "WALL04_5", 32, 33
+	Patch "WALL04_2", 48, 33
+	Patch "PS20A0", -1, 68
+}
+Texture "JENS0201", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, 56
+	Patch "CYL1_1", 0, 0
+	Patch "WALL01_1", 118, 0
+	Patch "WALL01_1", 117, 56
+}
+Texture "JENS0202", 64, 128
+{
+	Patch "JENS0472", 0, 0
+	Patch "JENS0473", 32, 0
+}
+Texture "JENS0203", 256, 128
+{
+	Patch "JENS0463", 0, 0
+	Patch "JENS0464", 128, 0
+}
+Texture "JENS0205", 128, 128
+{
+	Patch "JENS0459", -12, 0
+	Patch "JENS0459", 116, 0
+}
+Texture "JENS0206", 128, 128
+{
+	Patch "JENS0460", -4, 0
+	Patch "JENS0460", 124, 0
+}
+Texture "JENS0208", 128, 128
+{
+	Patch "JENS0418", 64, 64
+	Patch "JENS0419", 64, 0
+	Patch "JENS0418", 0, 0
+	Patch "JENS0419", 0, 64
+	Patch "JENS0482", 0, 79
+	Patch "JENS0482", 64, 15
+}
+Texture "JENS0209", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+Texture "JENS0255", 128, 128
+{
+	Patch "JENS0540", 0, 64
+	Patch "JENS0540", 0, 0
+}
+Texture "JENS0260", 128, 128
+{
+	Patch "JENS0250", 0, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 64, 0
+	Patch "W111_3", 64, 64
+	Patch "JENS0560", 47, 49
+}
+Texture "JENS0263", 1024, 128
+{
+	Patch "JENS0549", 0, 0
+	Patch "JENS0548", 256, 0
+	Patch "JENS0550", 512, 0
+	Patch "JENS0551", 768, 0
+}
+Texture "JENS0264", 1024, 128
+{
+	Patch "JENS0556", 0, 0
+	Patch "JENS0557", 256, 0
+	Patch "JENS0558", 512, 0
+	Patch "JENS0559", 768, 0
+}
+Texture "JENS0265", 1024, 128
+{
+	Patch "JENS0552", 0, 0
+	Patch "JENS0553", 256, 0
+	Patch "JENS0554", 512, 0
+	Patch "JENS0555", 768, 0
+}
+Texture "JENS0271", 128, 64
+{
+	Patch "RIPW15", 0, 48
+	Patch "JENS0243", 0, 16
+	Patch "JENS0243", 64, 16
+}
+Texture "JENS0273", 64, 64
+{
+	Patch "JENS0483", 14, 15
+}
+Texture "JENS0320", 256, 128
+{
+	Patch "JENS0635", 0, 0
+	Patch "JENS0636", 64, 0
+	Patch "JENS0637", 128, 0
+	Patch "JENS0638", 192, 0
+}
+Texture "JENS0334", 64, 64
+{
+	Patch "JENS0643", 1, 15
+}
+Texture "JENS0335", 64, 64
+{
+	Patch "JENS0644", 1, 15
+}
+Texture "JENS0336", 64, 64
+{
+	Patch "JENS0645", 1, 15
+}
+Texture "JENS0337", 64, 64
+{
+	Patch "JENS0646", 1, 15
+}
+Texture "JENS0338", 64, 64
+{
+	Patch "JENS0647", 1, 15
+}
+Texture "JENS0339", 64, 64
+{
+	Patch "JENS0648", 1, 15
+}
+Texture "JENS0340", 64, 64
+{
+	Patch "JENS0649", 1, 15
+}
+Texture "JENS0360", 64, 128
+{
+	Patch "JENS0250", 0, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_3", 0, 64
+	Patch "JENS0560", 16, 17
+	Patch "JENS0560", 16, 81
+}
+Texture "JENS0361", 128, 64
+{
+	Patch "JENS0250", 0, 0
+	Patch "W112_1", 0, 0
+	Patch "W112_1", 64, 0
+	Patch "JENS0560", 16, 16
+}
+Texture "JENS0362", 128, 64
+{
+	Patch "JENS0250", 0, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_3", 64, 0
+	Patch "JENS0560", 47, 17
+}
+Texture "JENS0366", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "JENS0655", 16, 16
+	Patch "JENS0657", 16, 80
+}
+Texture "JENS0367", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "JENS0656", 16, 16
+	Patch "JENS0658", 16, 80
+}
+Texture "JENS0369", 1024, 128
+{
+	Patch "JENS0676", 0, 0
+	Patch "JENS0677", 256, 0
+	Patch "JENS0678", 512, 0
+	Patch "JENS0679", 768, 0
+}
+Texture "JENS0371", 32, 16
+{
+	Patch "LADDER16", -16, 0
+}
+Texture "JENS0372", 32, 16
+{
+	Patch "LADDER16", -32, 0
+	Patch "LADDER16", 0, 8
+}
+Texture "JENS0373", 768, 384
+{
+	Patch "JENS0681", 0, 0
+	Patch "JENS0682", 256, 0
+	Patch "JENS0683", 512, 0
+	Patch "JENS0684", 256, 128
+	Patch "JENS0685", 256, 256
+}
+Texture "JENS0388", 128, 256
+{
+	Patch "JENS0696", 0, 0
+}
+Texture "JENS0391", 32, 72
+{
+	Patch "JENS0699", 0, 0
+	Patch "JENS0701", 24, 0
+}
+Texture "JENS0392", 32, 72
+{
+	Patch "JENS0700", 0, 0
+	Patch "JENS0701", 24, 0
+}
+Texture "JENS0393", 64, 72
+{
+	Patch "JENS0701", 0, 0
+	Patch "JENS0701", 40, 0
+}
+Texture "JENS0396", 64, 72
+{
+	Patch "JENS0704", 0, 0
+	Patch "JENS0701", 40, 0
+}
+Texture "JENS0397", 64, 72
+{
+	Patch "JENS0705", 0, 0
+	Patch "JENS0701", 48, 0
+}
+Texture "JENS0398", 64, 72
+{
+	Patch "JENS0706", 0, 0
+	Patch "JENS0701", 56, 0
+}
+Texture "JENS0399", 32, 72
+{
+	Patch "JENS0701", 0, 0
+	Patch "JENS0707", 4, 0
+}
+Texture "JENS0400", 64, 72
+{
+	Patch "JENS0708", 0, 0
+	Patch "JENS0701", 40, 0
+}
+Texture "JENS0401", 64, 72
+{
+	Patch "JENS0709", 0, 0
+	Patch "JENS0701", 40, 0
+}
+Texture "JENS0409", 1024, 128
+{
+	Patch "JENS0717", 0, 0
+	Patch "JENS0718", 256, 0
+	Patch "JENS0719", 512, 0
+	Patch "JENS0720", 768, 0
+}

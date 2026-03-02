@@ -1,0 +1,361 @@
+// Revolution!
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TVRV01 "Carnivorous Cargo"
+{
+	titlepatch = "TVRVV00"
+	next = "TVRV02"
+	secretnext = "TVRV02"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV02 "Depression"
+{
+	titlepatch = "TVRVV01"
+	next = "TVRV03"
+	secretnext = "TVRV03"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_STALKS"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV03 "Infestation"
+{
+	titlepatch = "TVRVV02"
+	next = "TVRV04"
+	secretnext = "TVRV04"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV04 "Phobopolis"
+{
+	titlepatch = "TVRVV03"
+	next = "TVRV05"
+	secretnext = "TVRV05"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV05 "R'N R"
+{
+	titlepatch = "TVRVV04"
+	next = "TVRV06"
+	secretnext = "TVRV06"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_DOOM"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV06 "Wasted!"
+{
+	titlepatch = "TVRVV05"
+	next = "TVRV07"
+	secretnext = "TVRV07"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV07 "The Valley of Death"
+{
+	titlepatch = "TVRVV06"
+	next = "TVRV08"
+	secretnext = "TVRV08"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+	Map07Special
+}
+
+map TVRV08 "Rockit"
+{
+	titlepatch = "TVRVV07"
+	next = "TVRV09"
+	secretnext = "TVRV09"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV09 "Wrath of Man"
+{
+	titlepatch = "TVRVV08"
+	next = "TVRV10"
+	secretnext = "TVRV10"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV10 "Lab of the Lost"
+{
+	titlepatch = "TVRVV09"
+	next = "TVRV11"
+	secretnext = "TVRV11"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_DEAD"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV11 "The Transporter"
+{
+	titlepatch = "TVRVV10"
+	next = "TVRV12"
+	secretnext = "TVRV12"
+	sky1 = "TVRV0044"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV12 "Utopia"
+{
+	titlepatch = "TVRVV11"
+	next = "TVRV13"
+	secretnext = "TVRV13"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV13 "Amok"
+{
+	titlepatch = "TVRVV12"
+	next = "TVRV14"
+	secretnext = "TVRV14"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV14 "Dead End"
+{
+	titlepatch = "TVRVV13"
+	next = "TVRV15"
+	secretnext = "TVRV15"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV15 "Battleground"
+{
+	titlepatch = "TVRVV14"
+	next = "TVRV16"
+	secretnext = "TVRV31"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV16 "Utopia Factory"
+{
+	titlepatch = "TVRVV15"
+	next = "TVRV17"
+	secretnext = "TVRV17"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV17 "The Miners"
+{
+	titlepatch = "TVRVV16"
+	next = "TVRV18"
+	secretnext = "TVRV18"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV18 "XS"
+{
+	titlepatch = "TVRVV17"
+	next = "TVRV19"
+	secretnext = "TVRV19"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV19 "Xenocracy"
+{
+	titlepatch = "TVRVV18"
+	next = "TVRV20"
+	secretnext = "TVRV20"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV20 "X Marx the Spot"
+{
+	titlepatch = "TVRVV19"
+	next = "TVRV21"
+	secretnext = "TVRV21"
+	sky1 = "TVRV0045"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV21 "Hausterium"
+{
+	titlepatch = "TVRVV20"
+	next = "TVRV22"
+	secretnext = "TVRV22"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV22 "Beyond the Oracle"
+{
+	titlepatch = "TVRVV21"
+	next = "TVRV23"
+	secretnext = "TVRV23"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV23 "Pyramide of Pain"
+{
+	titlepatch = "TVRVV22"
+	next = "TVRV24"
+	secretnext = "TVRV24"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV24 "The Sect"
+{
+	titlepatch = "TVRVV23"
+	next = "TVRV25"
+	secretnext = "TVRV25"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV25 "The Prefect"
+{
+	titlepatch = "TVRVV24"
+	next = "TVRV26"
+	secretnext = "TVRV26"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV26 "Phragmobasidium"
+{
+	titlepatch = "TVRVV25"
+	next = "TVRV27"
+	secretnext = "TVRV27"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV27 "Necrosis"
+{
+	titlepatch = "TVRVV26"
+	next = "TVRV28"
+	secretnext = "TVRV28"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV28 "Exodus"
+{
+	titlepatch = "TVRVV27"
+	next = "TVRV29"
+	secretnext = "TVRV29"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_TENSE"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV29 "Hall of Maim"
+{
+	titlepatch = "TVRVV28"
+	next = "TVRV30"
+	secretnext = "TVRV30"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV30 "The Forgotten God"
+{
+	titlepatch = "TVRVV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+	allowmonstertelefrags
+}
+
+map TVRV31 "Raw"
+{
+	titlepatch = "TVRVV30"
+	next = "TVRV16"
+	secretnext = "TVRV32"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_EVIL"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}
+
+map TVRV32 "'Zombie or Not to Be'"
+{
+	titlepatch = "TVRVV31"
+	next = "TVRV16"
+	secretnext = "TVRV16"
+	sky1 = "TVRV0046"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "TVRVINT"
+	EnterPic = "TVRVINT"
+}

@@ -1,0 +1,573 @@
+// Chillax Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CHLX01 "Chillax Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "CHLX02"
+	secretnext = "CHLX02"
+	sky1 = "CHLX0658"
+	music = "D_CHLX01"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX02 "Chillax Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "CHLX03"
+	secretnext = "CHLX03"
+	sky1 = "CHLX0658"
+	music = "D_CHLX02"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX03 "Chillax Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "CHLX04"
+	secretnext = "CHLX04"
+	sky1 = "CHLX0658"
+	music = "D_CHLX03"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX04 "Chillax Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "CHLX05"
+	secretnext = "CHLX05"
+	sky1 = "CHLX0658"
+	music = "D_CHLX04"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX05 "Chillax Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "CHLX06"
+	secretnext = "CHLX06"
+	sky1 = "CHLX0658"
+	music = "D_CHLX05"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX06 "Chillax Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "CHLX07"
+	secretnext = "CHLX07"
+	sky1 = "CHLX0658"
+	music = "D_CHLX06"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX07 "Chillax Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "CHLX08"
+	secretnext = "CHLX08"
+	sky1 = "CHLX0658"
+	music = "D_CHLX07"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+	Map07Special
+}
+
+map CHLX08 "Chillax Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "CHLX09"
+	secretnext = "CHLX09"
+	sky1 = "CHLX0658"
+	music = "D_CHLX08"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX09 "Chillax Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "CHLX10"
+	secretnext = "CHLX10"
+	sky1 = "CHLX0658"
+	music = "D_CHLX09"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX10 "Chillax Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "CHLX11"
+	secretnext = "CHLX11"
+	sky1 = "CHLX0658"
+	music = "D_CHLX10"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX11 "Chillax Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "CHLX12"
+	secretnext = "CHLX12"
+	sky1 = "CHLX0658"
+	music = "D_CHLX11"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX12 "Chillax Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "CHLX13"
+	secretnext = "CHLX13"
+	sky1 = "CHLX0659"
+	music = "D_CHLX12"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX13 "Chillax Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "CHLX14"
+	secretnext = "CHLX14"
+	sky1 = "CHLX0659"
+	music = "D_CHLX13"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX14 "Chillax Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "CHLX15"
+	secretnext = "CHLX15"
+	sky1 = "CHLX0659"
+	music = "D_CHLX14"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX15 "Chillax Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "CHLX16"
+	secretnext = "CHLX31"
+	sky1 = "CHLX0659"
+	music = "D_CHLX15"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX16 "Chillax Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "CHLX17"
+	secretnext = "CHLX17"
+	sky1 = "CHLX0659"
+	music = "D_CHLX16"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX17 "Chillax Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "CHLX18"
+	secretnext = "CHLX18"
+	sky1 = "CHLX0659"
+	music = "D_CHLX17"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX18 "Chillax Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "CHLX19"
+	secretnext = "CHLX19"
+	sky1 = "CHLX0659"
+	music = "D_CHLX18"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX19 "Chillax Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "CHLX20"
+	secretnext = "CHLX20"
+	sky1 = "CHLX0659"
+	music = "D_CHLX19"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX20 "Kuthundral's Fortress"
+{
+	titlepatch = "CWILV19"
+	next = "CHLX21"
+	secretnext = "CHLX21"
+	sky1 = "CHLX0659"
+	music = "D_CHLX20"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX21 "Descent into the Maelstrom"
+{
+	titlepatch = "CWILV20"
+	next = "CHLX22"
+	secretnext = "CHLX22"
+	sky1 = "CHLX0660"
+	music = "D_CHLX21"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX22 "Chillax Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "CHLX23"
+	secretnext = "CHLX23"
+	sky1 = "CHLX0660"
+	music = "D_CHLX22"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX23 "Chillax Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "CHLX24"
+	secretnext = "CHLX24"
+	sky1 = "CHLX0660"
+	music = "D_CHLX23"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX24 "Chillax Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "CHLX25"
+	secretnext = "CHLX25"
+	sky1 = "CHLX0660"
+	music = "D_CHLX24"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX25 "Chillax Map 25"
+{
+	titlepatch = "CWILV24"
+	next = "CHLX26"
+	secretnext = "CHLX26"
+	sky1 = "CHLX0660"
+	music = "D_CHLX25"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX26 "Chillax Map 26"
+{
+	titlepatch = "CWILV25"
+	next = "CHLX27"
+	secretnext = "CHLX27"
+	sky1 = "CHLX0660"
+	music = "D_CHLX26"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX27 "Chillax Map 27"
+{
+	titlepatch = "CWILV26"
+	next = "CHLX28"
+	secretnext = "CHLX28"
+	sky1 = "CHLX0660"
+	music = "D_CHLX27"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX28 "Chillax Map 28"
+{
+	titlepatch = "CWILV27"
+	next = "CHLX29"
+	secretnext = "CHLX29"
+	sky1 = "CHLX0660"
+	music = "D_CHLX28"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX29 "Chillax Map 29"
+{
+	titlepatch = "CWILV28"
+	next = "CHLX30"
+	secretnext = "CHLX30"
+	sky1 = "CHLX0660"
+	music = "D_CHLX29"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX30 "Chillax Map 30"
+{
+	titlepatch = "CWILV29"
+	next = "CHLX33"
+	secretnext = "CHLX33"
+	sky1 = "CHLX0660"
+	music = "D_CHLX30"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+	allowmonstertelefrags
+}
+
+map CHLX31 "Chillax Map 31"
+{
+	titlepatch = "CWILV30"
+	next = "CHLX16"
+	secretnext = "CHLX32"
+	sky1 = "CHLX0660"
+	music = "D_CHLX31"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX32 "Chillax Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "CHLX16"
+	secretnext = "CHLX16"
+	sky1 = "CHLX0660"
+	music = "D_CHLX32"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX33 "Impregnable Fort"
+{
+	titlepatch = "CHLXV33"
+	next = "CHLX34"
+	secretnext = "CHLX34"
+	sky1 = "CHLX0660"
+	music = "D_CHLX33"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX34 "Paroxysm Ecstasy"
+{
+	titlepatch = "CHLXV34"
+	next = "CHLX35"
+	secretnext = "CHLX35"
+	sky1 = "CHLX0660"
+	music = "D_CHLX34"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX35 "Lethal Artifice"
+{
+	titlepatch = "CHLXV35"
+	next = "CHLX36"
+	secretnext = "CHLX36"
+	sky1 = "CHLX0660"
+	music = "D_CHLX35"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX36 "Sinistral Keep"
+{
+	titlepatch = "CHLXV36"
+	next = "CHLX37"
+	secretnext = "CHLX37"
+	sky1 = "CHLX0660"
+	music = "D_CHLX36"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX37 "Knuckle Splitter"
+{
+	titlepatch = "CHLXV37"
+	next = "CHLX38"
+	secretnext = "CHLX38"
+	sky1 = "CHLX0660"
+	music = "D_CHLX37"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX38 "Mutilator"
+{
+	titlepatch = "CHLXV38"
+	next = "CHLX39"
+	secretnext = "CHLX39"
+	sky1 = "CHLX0660"
+	music = "D_CHLX38"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX39 "Morgus Rictus"
+{
+	titlepatch = "CHLXV39"
+	next = "CHLX40"
+	secretnext = "CHLX40"
+	sky1 = "CHLX0660"
+	music = "D_CHLX39"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX40 "Suicide Assured"
+{
+	titlepatch = "CHLXV40"
+	next = "CHLX41"
+	secretnext = "CHLX41"
+	sky1 = "CHLX0660"
+	music = "D_CHLX40"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX41 "Hallowed Grounds"
+{
+	titlepatch = "CHLXV41"
+	next = "CHLX42"
+	secretnext = "CHLX42"
+	sky1 = "CHLX0660"
+	music = "D_CHLX41"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX42 "Spartan Gauntlet"
+{
+	titlepatch = "CHLXV42"
+	next = "CHLX43"
+	secretnext = "CHLX43"
+	sky1 = "CHLX0660"
+	music = "D_CHLX42"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX43 "Searing Malice"
+{
+	titlepatch = "CHLXV43"
+	next = "CHLX44"
+	secretnext = "CHLX44"
+	sky1 = "CHLX0660"
+	music = "D_CHLX43"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX44 "Diabolical Torment"
+{
+	titlepatch = "CHLXV44"
+	next = "CHLX45"
+	secretnext = "CHLX45"
+	sky1 = "CHLX0660"
+	music = "D_CHLX44"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX45 "Feeding Frenzy"
+{
+	titlepatch = "CHLXV45"
+	next = "CHLX46"
+	secretnext = "CHLX46"
+	sky1 = "CHLX0660"
+	music = "D_CHLX45"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX46 "Deadly Deja Vu"
+{
+	titlepatch = "CHLXV46"
+	next = "CHLX47"
+	secretnext = "CHLX47"
+	sky1 = "CHLX0660"
+	music = "D_CHLX46"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}
+
+map CHLX47 "Grimlock Dungeon"
+{
+	titlepatch = "CHLXV47"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CHLX0660"
+	music = "D_CHLX47"
+	intermusic = "D_CHLXIN"
+	ExitPic = "CHLXINT"
+	EnterPic = "CHLXINT"
+}

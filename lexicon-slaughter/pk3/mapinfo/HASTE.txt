@@ -1,0 +1,212 @@
+// Haste Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HSTE01 "The Barbican"
+{
+	titlepatch = "HSTEV00"
+	next = "HSTE02"
+	secretnext = "HSTE02"
+	sky1 = "HSTE0274"
+	music = "D_HSTE01"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE02 "The Wheelhouse"
+{
+	titlepatch = "HSTEV01"
+	next = "HSTE03"
+	secretnext = "HSTE03"
+	sky1 = "HSTE0274"
+	music = "D_HSTE02"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE03 "Snoutish Pug Nose"
+{
+	titlepatch = "HSTEV02"
+	next = "HSTE04"
+	secretnext = "HSTE04"
+	sky1 = "HSTE0274"
+	music = "D_HSTE03"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE04 "Floodplain"
+{
+	titlepatch = "HSTEV03"
+	next = "HSTE05"
+	secretnext = "HSTE05"
+	sky1 = "HSTE0274"
+	music = "D_HSTE04"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE05 "Firebug"
+{
+	titlepatch = "HSTEV04"
+	next = "HSTE06"
+	secretnext = "HSTE06"
+	sky1 = "HSTE0274"
+	music = "D_HSTE05"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE06 "Concrete Vice"
+{
+	titlepatch = "HSTEV05"
+	next = "HSTE07"
+	secretnext = "HSTE07"
+	sky1 = "HSTE0274"
+	music = "D_HSTE06"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE07 "Magma Templum"
+{
+	titlepatch = "HSTEV06"
+	next = "HSTE08"
+	secretnext = "HSTE08"
+	sky1 = "HSTE0274"
+	music = "D_HSTE07"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+	Map07Special
+}
+
+map HSTE08 "The Cradle"
+{
+	titlepatch = "HSTEV07"
+	next = "HSTE09"
+	secretnext = "HSTE09"
+	sky1 = "HSTE0274"
+	music = "D_HSTE08"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE09 "Infinium"
+{
+	titlepatch = "HSTEV08"
+	next = "HSTE10"
+	secretnext = "HSTE10"
+	sky1 = "HSTE0274"
+	music = "D_HSTE09"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE10 "The Green Mind"
+{
+	titlepatch = "HSTEV09"
+	next = "HSTE11"
+	secretnext = "HSTE11"
+	sky1 = "HSTE0274"
+	music = "D_HSTE10"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE11 "Wanderlust"
+{
+	titlepatch = "HSTEV10"
+	next = "HSTE12"
+	secretnext = "HSTE12"
+	sky1 = "HSTE0274"
+	music = "D_HSTE11"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE12 "Thrown to the Wolves"
+{
+	titlepatch = "HSTEV11"
+	next = "HSTE13"
+	secretnext = "HSTE13"
+	sky1 = "SKY2"
+	music = "D_HSTE12"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE13 "Rotting Under the Foot of Time"
+{
+	titlepatch = "HSTEV12"
+	next = "HSTE14"
+	secretnext = "HSTE14"
+	sky1 = "SKY2"
+	music = "D_HSTE13"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE14 "Athenaeum"
+{
+	titlepatch = "HSTEV13"
+	next = "HSTE15"
+	secretnext = "HSTE15"
+	sky1 = "SKY2"
+	music = "D_HSTE14"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE15 "Tell me More"
+{
+	titlepatch = "HSTEV14"
+	next = "HSTE16"
+	secretnext = "HSTE31"
+	sky1 = "SKY2"
+	music = "D_HSTE15"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE16 "Sepia"
+{
+	titlepatch = "HSTEV15"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY2"
+	music = "D_HSTE16"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}
+
+map HSTE31 "Hibernation"
+{
+	titlepatch = "HSTEV30"
+	next = "HSTE16"
+	secretnext = "HSTE16"
+	sky1 = "SKY3"
+	music = "D_HSTE31"
+	intermusic = "D_HSTEIN"
+	ExitPic = "HSTEINT"
+	EnterPic = "HSTEINT"
+}

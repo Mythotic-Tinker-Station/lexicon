@@ -1,0 +1,481 @@
+// Death Tormention: The Complete Trilogy Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DTCTE1M1 "Cargo Hanger"
+{
+	titlepatch = "DTCTV00"
+	next = "DTCTE1M2"
+	secretnext = "DTCTE1M2"
+	sky1 = "DSKY1"
+	music = "D_DTCT01"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M2 "Security Checkpoint"
+{
+	titlepatch = "DTCTV01"
+	next = "DTCTE1M3"
+	secretnext = "DTCTE1M3"
+	sky1 = "DSKY1"
+	music = "D_DTCT02"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M3 "Waste Refinery"
+{
+	titlepatch = "DTCTV02"
+	next = "DTCTE1M4"
+	secretnext = "DTCTE1M9"
+	sky1 = "DSKY1"
+	music = "D_DTCT03"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M4 "Hi tech Lair"
+{
+	titlepatch = "DTCTV03"
+	next = "DTCTE1M5"
+	secretnext = "DTCTE1M5"
+	sky1 = "DSKY1"
+	music = "D_DTCT04"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M5 "Carmen's Lab"
+{
+	titlepatch = "DTCTV04"
+	next = "DTCTE1M6"
+	secretnext = "DTCTE1M6"
+	sky1 = "DSKY1"
+	music = "D_DTCT05"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M6 "Breeding Facility"
+{
+	titlepatch = "DTCTV05"
+	next = "DTCTE1M7"
+	secretnext = "DTCTE1M7"
+	sky1 = "DSKY1"
+	music = "D_DTCT06"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M7 "Destruction on Phobos"
+{
+	titlepatch = "DTCTV06"
+	next = "DTCTE1M8"
+	secretnext = "DTCTE1M8"
+	sky1 = "DSKY1"
+	music = "D_DTCT07"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE1M8 "Black Gate"
+{
+	titlepatch = "DTCTV07"
+	next = "DTCTE2M1"
+	secretnext = "DTCTE2M1"
+	sky1 = "DSKY1"
+	music = "D_DTCT08"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map DTCTE1M9 "Keswick"
+{
+	titlepatch = "DTCTV08"
+	next = "DTCTE1M4"
+	secretnext = "DTCTE1M4"
+	sky1 = "DSKY1"
+	music = "D_DTCT09"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT1"
+	EnterPic = "DTCTINT1"
+}
+
+map DTCTE2M1 "Lost Aztec"
+{
+	titlepatch = "DTCTV09"
+	next = "DTCTE2M2"
+	secretnext = "DTCTE2M2"
+	sky1 = "DSKY2"
+	music = "D_DTCT10"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M2 "Mansion Of Slayer"
+{
+	titlepatch = "DTCTV10"
+	next = "DTCTE2M3"
+	secretnext = "DTCTE2M9"
+	sky1 = "DSKY2"
+	music = "D_DTCT11"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M3 "Chiron"
+{
+	titlepatch = "DTCTV11"
+	next = "DTCTE2M4"
+	secretnext = "DTCTE2M4"
+	sky1 = "DSKY2"
+	music = "D_DTCT12"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M4 "The Bunker"
+{
+	titlepatch = "DTCTV12"
+	next = "DTCTE2M5"
+	secretnext = "DTCTE2M5"
+	sky1 = "DSKY2"
+	music = "D_DTCT13"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M5 "The Omen"
+{
+	titlepatch = "DTCTV13"
+	next = "DTCTE2M6"
+	secretnext = "DTCTE2M6"
+	sky1 = "DSKY2"
+	music = "D_DTCT14"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M6 "Dark Habitat"
+{
+	titlepatch = "DTCTV14"
+	next = "DTCTE2M7"
+	secretnext = "DTCTE2MX"
+	sky1 = "DSKY2"
+	music = "D_DTCT15"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map DTCTE2M7 "The Inmost Crypt"
+{
+	titlepatch = "DTCTV15"
+	next = "DTCTE2M8"
+	secretnext = "DTCTE2M8"
+	sky1 = "DSKY2"
+	music = "D_DTCT16"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2M8 "Masteryard"
+{
+	titlepatch = "DTCTV16"
+	next = "DTCTE3M1"
+	secretnext = "DTCTE3M1"
+	sky1 = "DSKY2"
+	music = "D_DTCT17"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map DTCTE2M9 "Dark Oasis"
+{
+	titlepatch = "DTCTV17"
+	next = "DTCTE2M6"
+	secretnext = "DTCTE2M6"
+	sky1 = "DSKY2"
+	music = "D_DTCT18"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE2MX "Iron Fist"
+{
+	titlepatch = "DTCTV18"
+	next = "DTCTE2M6"
+	secretnext = "DTCTE2M6"
+	sky1 = "DSKY2"
+	music = "D_DTCT19"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT2"
+	EnterPic = "DTCTINT2"
+}
+
+map DTCTE3M1 "Hell Gate"
+{
+	titlepatch = "DTCTV19"
+	next = "DTCTE3M2"
+	secretnext = "DTCTE3M2"
+	sky1 = "DSKY3"
+	music = "D_DTCT20"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M2 "Return to the Abyss"
+{
+	titlepatch = "DTCTV20"
+	next = "DTCTE3M3"
+	secretnext = "DTCTE3M9"
+	sky1 = "DSKY3"
+	music = "D_DTCT21"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M3 "Villa of Scotchies"
+{
+	titlepatch = "DTCTV21"
+	next = "DTCTE3M4"
+	secretnext = "DTCTE3M4"
+	sky1 = "DSKY3"
+	music = "D_DTCT22"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M4 "Going after Ashley!"
+{
+	titlepatch = "DTCTV22"
+	next = "DTCTE3M5"
+	secretnext = "DTCTE3M5"
+	sky1 = "DSKY3"
+	music = "D_DTCT23"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M5 "Pain Temple"
+{
+	titlepatch = "DTCTV23"
+	next = "DTCTE3M6"
+	secretnext = "DTCTE3M6"
+	sky1 = "DSKY3"
+	music = "D_DTCT24"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M6 "Threshold of Pain"
+{
+	titlepatch = "DTCTV24"
+	next = "DTCTE3M7"
+	secretnext = "DTCTE3M7"
+	sky1 = "DSKY3"
+	music = "D_DTCT25"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map DTCTE3M7 "The Unholy Ages"
+{
+	titlepatch = "DTCTV25"
+	next = "DTCTE3M8"
+	secretnext = "DTCTE3M8"
+	sky1 = "DSKY3"
+	music = "D_DTCT26"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE3M8 "The Last Hunt"
+{
+	titlepatch = "DTCTV26"
+	next = "DTCTE4M1"
+	secretnext = "DTCTE4M1"
+	sky1 = "DSKY3"
+	music = "D_DTCT27"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map DTCTE3M9 "Crazy Keep"
+{
+	titlepatch = "DTCTV27"
+	next = "DTCTE3M7"
+	secretnext = "DTCTE3M7"
+	sky1 = "DSKY3"
+	music = "D_DTCT28"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT3"
+	EnterPic = "DTCTINT3"
+}
+
+map DTCTE4M1 "The Unholy Aquaduct"
+{
+	titlepatch = "DTCTV28"
+	next = "DTCTE4M2"
+	secretnext = "DTCTE4M2"
+	sky1 = "DSKY4"
+	music = "D_DTCT29"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M2 "Roelfenstine"
+{
+	titlepatch = "DTCTV29"
+	next = "DTCTE4M3"
+	secretnext = "DTCTE4M9"
+	sky1 = "DSKY4"
+	music = "D_DTCT30"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M3 "Valley of Whispers"
+{
+	titlepatch = "DTCTV30"
+	next = "DTCTE4M4"
+	secretnext = "DTCTE4M4"
+	sky1 = "DSKY4"
+	music = "D_DTCT31"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M4 "Erebus Furnace"
+{
+	titlepatch = "DTCTV31"
+	next = "DTCTE4M5"
+	secretnext = "DTCTE4M5"
+	sky1 = "DSKY4"
+	music = "D_DTCT32"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M5 "The Badlands"
+{
+	titlepatch = "DTCTV32"
+	next = "DTCTE4M6"
+	secretnext = "DTCTE4M6"
+	sky1 = "DSKY4"
+	music = "D_DTCT33"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M6 "Twin Peaks"
+{
+	titlepatch = "DTCTV33"
+	next = "DTCTE4M7"
+	secretnext = "DTCTE4M7"
+	sky1 = "DSKY4"
+	music = "D_DTCT34"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map DTCTE4M7 "Carmen's Lair"
+{
+	titlepatch = "DTCTV34"
+	next = "DTCTE4M8"
+	secretnext = "DTCTE4M8"
+	sky1 = "DSKY4"
+	music = "D_DTCT35"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4M8 "Emancipation of Mimi"
+{
+	titlepatch = "DTCTV35"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "D_DTCT36"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map DTCTE4M9 "Edge of the world"
+{
+	titlepatch = "DTCTV36"
+	next = "DTCTE4M3"
+	secretnext = "DTCTE4M3"
+	sky1 = "DSKY4"
+	music = "D_DTCT37"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}
+
+map DTCTE4MX "Unbleed"
+{
+	titlepatch = "DTCTV37"
+	next = "DTCTE4M2"
+	secretnext = "DTCTE4MX"
+	sky1 = "DSKY4"
+	music = "D_DTCT38"
+	intermusic = "D_DTCTIN"
+	ExitPic = "DTCTINT4"
+	EnterPic = "DTCTINT4"
+}

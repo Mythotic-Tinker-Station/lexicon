@@ -1,0 +1,393 @@
+// Jiffy Bag Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map JFBG01 "jamaica base"
+{
+	titlepatch = "JFBGV00"
+	next = "JFBG02"
+	secretnext = "JFBG02"
+	sky1 = "SKY1"
+	music = "D_JFBG01"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG02 "salvation"
+{
+	titlepatch = "JFBGV01"
+	next = "JFBG03"
+	secretnext = "JFBG03"
+	sky1 = "SKY1"
+	music = "D_JFBG02"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG03 "brick-a-brac"
+{
+	titlepatch = "JFBGV02"
+	next = "JFBG04"
+	secretnext = "JFBG04"
+	sky1 = "SKY1"
+	music = "D_JFBG03"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG04 "ankle grinder"
+{
+	titlepatch = "JFBGV03"
+	next = "JFBG05"
+	secretnext = "JFBG05"
+	sky1 = "SKY1"
+	music = "D_JFBG04"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG05 "rainfall processor"
+{
+	titlepatch = "JFBGV04"
+	next = "JFBG06"
+	secretnext = "JFBG06"
+	sky1 = "SKY1"
+	music = "D_JFBG05"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG06 "decrepit cauldron"
+{
+	titlepatch = "JFBGV05"
+	next = "JFBG07"
+	secretnext = "JFBG07"
+	sky1 = "SKY1"
+	music = "D_JFBG06"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG07 "mineshafted"
+{
+	titlepatch = "JFBGV06"
+	next = "JFBG08"
+	secretnext = "JFBG08"
+	sky1 = "SKY1"
+	music = "D_JFBG07"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+	Map07Special
+}
+
+map JFBG08 "kitchen nightmares"
+{
+	titlepatch = "JFBGV07"
+	next = "JFBG09"
+	secretnext = "JFBG09"
+	sky1 = "SKY1"
+	music = "D_JFBG08"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG09 "battery canyon"
+{
+	titlepatch = "JFBGV08"
+	next = "JFBG10"
+	secretnext = "JFBG10"
+	sky1 = "SKY1"
+	music = "D_JFBG09"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG10 "polluted basin"
+{
+	titlepatch = "JFBGV09"
+	next = "JFBG11"
+	secretnext = "JFBG11"
+	sky1 = "SKY1"
+	music = "D_JFBG10"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG11 "cryptology"
+{
+	titlepatch = "JFBGV10"
+	next = "JFBG12"
+	secretnext = "JFBG12"
+	sky1 = "SKY1"
+	music = "D_JFBG11"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG12 "shell out"
+{
+	titlepatch = "JFBGV11"
+	next = "JFBG13"
+	secretnext = "JFBG13"
+	sky1 = "SKY2"
+	music = "D_JFBG12"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG13 "protocol 1024"
+{
+	titlepatch = "JFBGV12"
+	next = "JFBG14"
+	secretnext = "JFBG14"
+	sky1 = "SKY2"
+	music = "D_JFBG13"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG14 "chemical depot"
+{
+	titlepatch = "JFBGV13"
+	next = "JFBG15"
+	secretnext = "JFBG15"
+	sky1 = "SKY2"
+	music = "D_JFBG14"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG15 "waterfront"
+{
+	titlepatch = "JFBGV14"
+	next = "JFBG16"
+	secretnext = "JFBG31"
+	sky1 = "SKY2"
+	music = "D_JFBG15"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG16 "oranges and demons"
+{
+	titlepatch = "JFBGV15"
+	next = "JFBG17"
+	secretnext = "JFBG17"
+	sky1 = "SKY2"
+	music = "D_JFBG16"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG17 "j-pad's space pad"
+{
+	titlepatch = "JFBGV16"
+	next = "JFBG18"
+	secretnext = "JFBG18"
+	sky1 = "SKY2"
+	music = "D_JFBG17"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG18 "identity theft"
+{
+	titlepatch = "JFBGV17"
+	next = "JFBG19"
+	secretnext = "JFBG19"
+	sky1 = "SKY2"
+	music = "D_JFBG18"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG19 "boxed in"
+{
+	titlepatch = "JFBGV18"
+	next = "JFBG20"
+	secretnext = "JFBG20"
+	sky1 = "SKY2"
+	music = "D_JFBG19"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG20 "rectangular prison"
+{
+	titlepatch = "JFBGV19"
+	next = "JFBG21"
+	secretnext = "JFBG21"
+	sky1 = "SKY2"
+	music = "D_JFBG20"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG21 "insomniac's night"
+{
+	titlepatch = "JFBGV20"
+	next = "JFBG22"
+	secretnext = "JFBG22"
+	sky1 = "SKY3"
+	music = "D_JFBG21"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG22 "'o' of construction!"
+{
+	titlepatch = "JFBGV21"
+	next = "JFBG23"
+	secretnext = "JFBG23"
+	sky1 = "SKY3"
+	music = "D_JFBG22"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG23 "thrash compactor"
+{
+	titlepatch = "JFBGV22"
+	next = "JFBG24"
+	secretnext = "JFBG24"
+	sky1 = "SKY3"
+	music = "D_JFBG23"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG24 "fortress of misery"
+{
+	titlepatch = "JFBGV23"
+	next = "JFBG25"
+	secretnext = "JFBG25"
+	sky1 = "SKY3"
+	music = "D_JFBG24"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG25 "the dome of romero"
+{
+	titlepatch = "JFBGV24"
+	next = "JFBG26"
+	secretnext = "JFBG26"
+	sky1 = "SKY3"
+	music = "D_JFBG25"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG26 "goldkey"
+{
+	titlepatch = "JFBGV25"
+	next = "JFBG27"
+	secretnext = "JFBG27"
+	sky1 = "SKY3"
+	music = "D_JFBG26"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG27 "faces of darkness"
+{
+	titlepatch = "JFBGV26"
+	next = "JFBG28"
+	secretnext = "JFBG28"
+	sky1 = "SKY3"
+	music = "D_JFBG27"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG28 "sanguine domicile"
+{
+	titlepatch = "JFBGV27"
+	next = "JFBG29"
+	secretnext = "JFBG29"
+	sky1 = "SKY3"
+	music = "D_JFBG28"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG29 "fluvial terrace"
+{
+	titlepatch = "JFBGV28"
+	next = "JFBG30"
+	secretnext = "JFBG30"
+	sky1 = "SKY3"
+	music = "D_JFBG29"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG30 "fleshbrain's domain"
+{
+	titlepatch = "JFBGV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "D_JFBG30"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+	allowmonstertelefrags
+}
+
+map JFBG31 "somewhere that's green"
+{
+	titlepatch = "JFBGV30"
+	next = "JFBG16"
+	secretnext = "JFBG32"
+	sky1 = "SKY3"
+	music = "D_JFBG31"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}
+
+map JFBG32 "catacombs"
+{
+	titlepatch = "JFBGV31"
+	next = "JFBG16"
+	secretnext = "JFBG16"
+	sky1 = "SKY3"
+	music = "D_JFBG32"
+	intermusic = "D_JFBGIN"
+	ExitPic = "JFBGINT"
+	EnterPic = "JFBGINT"
+}

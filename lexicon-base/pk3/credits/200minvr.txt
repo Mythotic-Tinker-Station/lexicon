@@ -1,0 +1,265 @@
+===========================================================================
+Advanced engine needed  : None mostly. A limit-removing engine may help.
+                          In PrBoom, use -complevel 2 (Doom 2 v1.9).
+                          In ZDoom, use Doom (strict) compatibility flags.
+Primary purpose         : Single+Coop play
+===========================================================================
+Title                   : 200 minutes of /vr/
+Filename                : 200minvr.wad
+Release date            : 2014-06-30
+Author                  : Various
+Email Address           : 
+Other Files By Author   : See the pastebin link in our threads.
+Misc. Author Info       : https://boards.4chan.org/vr/doom
+
+Description             : A megawad of vanilla maps, each made in 200 minutes.
+                          https://archive.foolz.us/vr/thread/1614552/#1620243
+
+Additional Credits to   : MIDIs: see below.
+                          Skies by Onslaught Six.
+                          Title/Interpic by Anonymous.
+===========================================================================
+* What is included *
+
+New levels              : 33
+Sounds                  : No
+Music                   : 11 midis
+Graphics                : Titlepic/interpic, skies, map titles
+Dehacked/BEX Patch      : Internal BEX to set map titles only
+Demos                   : 3
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP33
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Difficulty Settings     : Some maps only
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Up to 200 minutes, over May and June 2014.
+Editor(s) used          : Various
+Known Bugs              : These are speedmaps; some bugs undoubtedly remain.
+                          Many textures remain unaligned.
+                          Only some maps were submitted with music.
+                          Some maps have visual glitches in vanilla, but there
+                          are no known overflow crashes (visplanes etc.)
+                          In vanilla, the automap level names aren't changed.
+May Not Run With        : Vanilla works. But a limit-removing engine helps.
+Tested With             : Various, depending on author. Compiler tested by
+                          recording with PrBoom -complevel 2 then checking for
+                          crash-free playback with Chocolate Doom -timedemo.
+
+
+* Copyright / Permissions *
+
+Redistribution and use with or without modification is permitted provided
+appropriate credit is given.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites:
+FTP sites:
+
+
+* Map information and credits *
+
+Map:         01
+Title:       Book It!
+Author:      Anonymous
+Submission:  03
+
+Map:         02
+Title:       Brownout
+Author:      Anonymous
+Submission:  15
+Notes:       Was only made in 60 minutes due to a mix-up.
+
+Map:         03
+Title:       Command Center
+Author:      !!2X5No4WhqAK
+Submission:  05
+Notes:       This is the only map with deathmatch starts.
+
+Map:         04
+Title:       Computer Array
+Author:      Onslaught Six
+Submission:  18
+Music:       D_E2M3 remix by Jay Reichard (Zorasoft.net) from prjdoom.wad
+
+Map:         05
+Title:       The Dig
+Author:      Braido
+Submission:  09
+
+Map:         06
+Title:       Unearth
+Author:      Anonymous
+Submission:  01
+Notes:       This was the first map posted, very soon after the challenge
+             was announced. Thanks for getting the ball rolling!
+
+Map:         07
+Title:       Opening The Gates Of Hell
+Author:      Onslaught Six
+Submission:  23
+Music:       Slayer midi of wide availability but unknown origin
+
+Map:         08
+Title:       Power Relay
+Author:      Anonymous
+Submission:  06
+
+Map:         09
+Title:       Archives
+Author:      Anonymous
+Submission:  31
+
+Map:         10
+Title:       Junxion
+Author:      Anonymous
+Submission:  02
+Music:       Swan Lake Motha Fucka by Frankie Ho,
+             from http://www.classicalmidiconnection.com
+
+Map:         11
+Title:       The Overhalls
+Author:      Cheesewheel
+Submission:  04
+
+Map:         12
+Title:       The Bridge
+Author:      Anonymous
+Submission:  34
+
+Map:         13
+Title:       Cathedral Of Pain
+Author:      Onslaught Six
+Submission:  10
+Music:       Slayer midi of wide availability but unknown origin
+
+Map:         14
+Title:       200 Minutes of Tech
+Author:      Cheesewheel
+Submission:  33
+Music:       Submitted by author, source not stated.
+
+Map:         15
+Title:       Valley of Hatred
+Author:      Onslaught Six
+Submission:  17
+Music:       D_E3M5 remix by Jay Reichard (Zorasoft.net) from prjdoom.wad
+
+Map:         16
+Title:       Frequently Given Advice
+Author:      Anonymous
+Submission:  12
+Music:       Submitted by author, source not stated.
+
+Map:         17
+Title:       In Deep
+Author:      Anonymous
+Submission:  08
+Notes:       Pervasive drawsegs overflow in vanilla. It's playable without
+             crashing but a limit-removing engine is recommended.
+
+Map:         18
+Title:       Dead Cargo
+Author:      Sergeant Mark IV
+Submission:  26
+Music:       Submitted by author, source not stated.
+Notes:       Some drawsegs overflow in vanilla, in a certain place.
+
+Map:         19
+Title:       Duck and Cover
+Author:      Anonymous
+Submission:  32
+
+Map:         20
+Title:       Punch It!
+Author:      Anonymous
+Submission:  22
+
+Map:         21
+Title:       Demon H.Q.
+Author:      Anonymous
+Submission:  29
+Music:       Submitted by author, source not stated.
+
+Map:         22
+Title:       Blood River
+Author:      Anonymous
+Submission:  16
+
+Map:         23
+Title:       The Dance
+Author:      Fudge
+Submission:  13
+
+Map:         24
+Title:       Ye Mighty And Despair
+Author:      Onslaught Six
+Submission:  20
+
+Map:         25
+Title:       Home Sweet Hell
+Author:      Anonymous
+Submission:  14
+Music:       Submitted by author, source not stated.
+
+Map:         26
+Title:       200 Minutes of Hell
+Author:      Cheesewheel
+Submission:  21
+
+Map:         27
+Title:       Walls of Jericho
+Author:      Anonymous
+Submission:  19
+
+Map:         28
+Title:       200 Minutes of Going Down
+Author:      Cactuses
+Submission:  11
+Notes:       If playing with ZDoom make sure compat_missileclip is on,
+             so you can shoot through the pillars.
+
+Map:         29
+Title:       Aggravatingly Cramped
+Author:      RjY
+Submission:  35
+
+Map:         30
+Title:       Carousel
+Author:      Anonymous
+Submission:  28
+
+Map:         31
+Title:       Brutto
+Author:      Anonymous
+Submission:  24
+Music:       wirfuhle.mid, from http://ingeb.org
+Notes:       Originally submitted as map32, the name is a pun on "Grosse"
+
+Map:         32
+Title:       Sneek
+Author:      Anonymous
+Submission:  07
+Notes:       Intended to make use of ZDoom partial invisibility behaviour,
+             but still fully playable in vanilla game physics.
+
+Map:         33
+Title:       Anachronism
+Author:      Anonymous
+Notes:       Needs a limit-removing source port. Was begun as a 200 minute
+             map but went overtime and the author carried on adding to it.
+             Consensus was that we should include it as secret bonus level.

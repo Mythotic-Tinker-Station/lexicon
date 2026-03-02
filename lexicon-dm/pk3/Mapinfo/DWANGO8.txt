@@ -1,0 +1,296 @@
+// DWANGO8 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW0801 "DWANGO8 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW0802"
+	secretnext = "DW0802"
+	sky1 = "SKY1"
+	music = "D_DW0801"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0802 "DWANGO8 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW0803"
+	secretnext = "DW0803"
+	sky1 = "SKY1"
+	music = "D_DW0802"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0803 "DWANGO8 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW0804"
+	secretnext = "DW0804"
+	sky1 = "SKY1"
+	music = "D_DW0803"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0804 "DWANGO8 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW0805"
+	secretnext = "DW0805"
+	sky1 = "SKY1"
+	music = "D_DW0804"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0805 "DWANGO8 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW0806"
+	secretnext = "DW0806"
+	sky1 = "SKY1"
+	music = "D_DW0805"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0806 "DWANGO8 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW0807"
+	secretnext = "DW0807"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0807 "DWANGO8 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW0808"
+	secretnext = "DW0808"
+	sky1 = "SKY1"
+	music = "$MUSIC_SHAWN"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+	Map07Special
+}
+
+map DW0808 "DWANGO8 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW0809"
+	secretnext = "DW0809"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0809 "DWANGO8 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW0810"
+	secretnext = "DW0810"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0810 "DWANGO8 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW0811"
+	secretnext = "DW0811"
+	sky1 = "SKY1"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0811 "DWANGO8 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DW0812"
+	secretnext = "DW0812"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0812 "DWANGO8 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DW0813"
+	secretnext = "DW0813"
+	sky1 = "SKY2"
+	music = "$MUSIC_THEDA2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0813 "DWANGO8 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "DW0814"
+	secretnext = "DW0814"
+	sky1 = "SKY2"
+	music = "$MUSIC_DOOM2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0814 "DWANGO8 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "DW0815"
+	secretnext = "DW0815"
+	sky1 = "SKY2"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0815 "DWANGO8 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "DW0816"
+	secretnext = "DW0816"
+	sky1 = "SKY2"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0816 "DWANGO8 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "DW0817"
+	secretnext = "DW0817"
+	sky1 = "SKY2"
+	music = "$MUSIC_DEAD2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0817 "DWANGO8 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "DW0818"
+	secretnext = "DW0818"
+	sky1 = "SKY2"
+	music = "$MUSIC_STLKS3"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0818 "DWANGO8 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "DW0819"
+	secretnext = "DW0819"
+	sky1 = "SKY2"
+	music = "$MUSIC_ROMERO"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0819 "DWANGO8 Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "DW0820"
+	secretnext = "DW0820"
+	sky1 = "SKY2"
+	music = "$MUSIC_SHAWN2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0820 "DWANGO8 Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DW0821"
+	secretnext = "DW0821"
+	sky1 = "SKY2"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0821 "DWANGO8 Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DW0822"
+	secretnext = "DW0822"
+	sky1 = "SKY3"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0822 "DWANGO8 Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DW0823"
+	secretnext = "DW0823"
+	sky1 = "SKY3"
+	music = "$MUSIC_DDTBL3"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0823 "DWANGO8 Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DW0824"
+	secretnext = "DW0824"
+	sky1 = "SKY3"
+	music = "$MUSIC_AMPIE"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}
+
+map DW0824 "DWANGO8 Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY3"
+	music = "$MUSIC_THEDA3"
+	intermusic = "D_DW08IN"
+	ExitPic = "DW08INT"
+	EnterPic = "DW08INT"
+}

@@ -1,0 +1,75 @@
+ACTOR Lexicon_SNLU_ExplosiveBarrel : ExplosiveBarrel
+{
+	States
+	{
+	Spawn:
+		LX04 W 6
+		Loop
+	Death:
+		LX04 W 5 Bright
+		LX04 X 5 Bright A_Scream
+		LX04 Y 5 Bright
+		LX04 Z 5 Bright A_Explode
+		Goto Super::Death+4
+	}
+} 
+
+ACTOR Lexicon_SNLU_TallGreenColumn : TallGreenColumn
+{
+	States
+    {
+	Spawn:
+		LX04 A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_SNLU_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LX04 B -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_SNLU_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX04 C -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_SNLU_FloatingSkull : FloatingSkull
+{
+	States
+	{
+	Spawn:
+		LX04 DEF 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_SNLU_Meat3 : Meat3 
+{
+	States
+	{
+	Spawn:
+		LX04 G -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_SNLU_BurningBarrel : BurningBarrel
+{
+	States
+	{
+	Spawn:
+		LX04 HIJ 4 BRIGHT
+		Loop
+	}
+}

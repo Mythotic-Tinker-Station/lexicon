@@ -1,0 +1,8 @@
+Actor Lexicon_DTCT_DeadLostSoul : BaronOfHell
+{
+	Health 500
+	+SHADOW
+	Obituary "$OB_STEALTHBARON"
+	HitObituary "$OB_STEALTHBARON"
+	Tag "$DTCT_TAG_DEADLOSTSOUL"
+}

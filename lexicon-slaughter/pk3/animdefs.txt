@@ -1,0 +1,382 @@
+// Chillax
+texture CHLX0363 range CHLX0366 tics 8 allowdecals
+texture CHLX0451 range CHLX0454 tics 8 allowdecals
+texture CHLX0512 range CHLX0515 tics 8
+texture CHLX0529 range CHLX0530 tics 8
+texture CHLX0534 range CHLX0536 tics 8
+texture CHLX0859 range CHLX0861 tics 8
+flat CHLX0018 range CHLX0021 tics 8
+switch CHLX0712 on pic CHLX0752 tics 0
+switch CHLX0717 on pic CHLX0757 tics 0
+switch CHLX0723 on pic CHLX0763 tics 0
+
+// Combat Shock 1
+texture CSH10049 range CSH10054 tics 8
+texture CSH10076 range CSH10079 tics 8
+texture CSH10081 range CSH10099 tics 8
+texture CSH10157 range CSH10160 tics 8 allowdecals
+switch CSH10069 on pic CSH10070 tics 0
+switch CSH10391 on pic CSH10392 tics 0
+
+// Combat Shock 2
+texture CSH20472 range CSH20475 tics 8
+texture CSH20517 range CSH20519 tics 8 allowdecals
+texture CSH20536 range CSH20539 tics 8 allowdecals
+texture CSH20562 range CSH20565 tics 8
+switch CSH20480 on pic CSH20488 tics 0
+switch CSH20481 on pic CSH20490 tics 0
+switch CSH20482 on pic CSH20491 tics 0
+switch CSH20483 on pic CSH20492 tics 0
+switch CSH20484 on pic CSH20493 tics 0
+switch CSH20485 on pic CSH20494 tics 0
+switch CSH20486 on pic CSH20495 tics 0
+switch CSH20487 on pic CSH20496 tics 0
+switch CSH20523 on pic CSH20528 tics 0
+switch CSH20524 on pic CSH20489 tics 0
+switch CSH20525 on pic CSH20529 tics 0
+switch CSH20526 on pic CSH20530 tics 0
+switch CSH20527 on pic CSH20531 tics 0
+
+// Dark Tartarus
+Switch	Doom 3		DKTS0235   	On Pic	DKTS0236   	Tics 0
+Texture	Optional	DKTS0249  	Range	DKTS0252  	Tics 8
+Texture	Optional	DKTS0253  	Range	DKTS0256  	Tics 8
+Texture	Optional	DKTS0245	Range	DKTS0248	Tics 8
+Texture	Optional	DKTS0082	Range	DKTS0080	Tics 8
+Texture	Optional	DKTS0011	Range	DKTS0014	Tics 8
+Switch	Doom 3		DKTS0271   	On Pic	DKTS0272  	Tics 0
+
+// Deus Vult
+texture DSV10136 range DSV10139 tics 8 allowdecals
+texture DSV10140 range DSV10143 tics 8 allowdecals
+texture DSV10217 range DSV10220 tics 8
+texture DSV10269 range DSV10270 tics 8
+texture DSV10292 range DSV10294 tics 8 allowdecals
+flat DSV10085 range DSV10088 tics 8
+flat DSV10089 range DSV10092 tics 8
+switch DSV10557 on pic DSV10597 tics 0
+switch DSV10559 on pic DSV10599 tics 0
+switch DSV10573 on pic DSV10613 tics 0
+
+// Deus Vult II
+texture DSV24722 range DSV24725 tics 8
+texture DSV24831 range DSV24839 tics 8
+texture DSV24840 range DSV24848 tics 8
+texture DSV24849 range DSV24852 tics 8
+texture DSV24853 range DSV24856 tics 8
+texture DSV24857 range DSV24860 tics 8
+texture DSV24861 range DSV24864 tics 8
+texture DSV24865 range DSV24868 tics 8
+texture DSV24869 range DSV24877 tics 8
+texture DSV24878 range DSV24886 tics 8
+texture DSV24887 range DSV24890 tics 8
+texture DSV24891 range DSV24898 tics 8
+texture DSV24899 range DSV24902 tics 8
+texture DSV24903 range DSV24906 tics 8
+texture DSV24907 range DSV24908 tics 8
+texture DSV24909 range DSV24911 tics 8
+texture DSV24912 range DSV24917 tics 8
+texture DSV24918 range DSV24923 tics 8
+texture DSV24924 range DSV24929 tics 8
+texture DSV24930 range DSV24935 tics 8
+texture DSV24936 range DSV24939 tics 8
+texture DSV24944 range DSV24947 tics 8
+texture DSV24948 range DSV24957 tics 8
+texture DSV24958 range DSV24963 tics 8
+texture DSV24964 range DSV24976 tics 8
+texture DSV24977 range DSV24981 tics 8
+texture DSV24982 range DSV24985 tics 8
+texture DSV24986 range DSV24988 tics 8
+texture DSV24989 range DSV25003 tics 8
+texture DSV25004 range DSV25017 tics 8
+texture DSV25018 range DSV25023 tics 8
+texture DSV25024 range DSV25063 tics 8
+texture DSV25064 range DSV25079 tics 8
+texture DSV25080 range DSV25095 tics 8
+texture DSV25096 range DSV25111 tics 8
+texture DSV25112 range DSV25127 tics 8
+texture DSV25128 range DSV25143 tics 8
+texture DSV25144 range DSV25159 tics 8
+texture DSV25160 range DSV25175 tics 8
+texture DSV25176 range DSV25179 tics 8
+texture DSV25180 range DSV25183 tics 8
+texture DSV25184 range DSV25187 tics 8
+texture DSV25188 range DSV25191 tics 8
+texture DSV25192 range DSV25195 tics 8
+texture DSV25196 range DSV25199 tics 8
+texture DSV25200 range DSV25203 tics 8
+texture DSV25204 range DSV25211 tics 8
+texture DSV25212 range DSV25214 tics 8
+texture DSV25215 range DSV25218 tics 8
+texture DSV25219 range DSV25222 tics 8
+texture DSV25223 range DSV25226 tics 8
+texture DSV25231 range DSV25234 tics 8
+texture DSV25235 range DSV25243 tics 8
+texture DSV25244 range DSV25252 tics 8
+texture DSV25253 range DSV25256 tics 8
+texture DSV25257 range DSV25264 tics 8
+texture DSV25265 range DSV25268 tics 8
+texture DSV25269 range DSV25272 tics 8
+texture DSV25273 range DSV25274 tics 8
+texture DSV25275 range DSV25277 tics 8
+texture DSV25278 range DSV25283 tics 8
+texture DSV25284 range DSV25289 tics 8
+texture DSV25290 range DSV25295 tics 8
+texture DSV25296 range DSV25301 tics 8
+texture DSV25302 range DSV25305 tics 8
+texture DSV25306 range DSV25308 tics 8
+texture DSV25309 range DSV25312 tics 8
+texture DSV25313 range DSV25356 tics 8
+texture DSV25357 range DSV25375 tics 8
+texture DSV25376 range DSV25457 tics 8
+texture DSV25458 range DSV25470 tics 8
+texture DSV25471 range DSV25518 tics 8
+texture DSV25519 range DSV25522 tics 8
+texture DSV25527 range DSV25530 tics 8
+texture DSV25535 range DSV25538 tics 8
+texture DSV25539 range DSV25547 tics 8
+texture DSV25548 range DSV25556 tics 8
+texture DSV25557 range DSV25560 tics 8
+texture DSV25561 range DSV25568 tics 8
+texture DSV25569 range DSV25572 tics 8
+texture DSV25573 range DSV25576 tics 8
+texture DSV25579 range DSV25581 tics 8
+texture DSV25582 range DSV25587 tics 8
+texture DSV25588 range DSV25593 tics 8
+texture DSV25594 range DSV25599 tics 8
+texture DSV25600 range DSV25605 tics 8
+texture DSV25606 range DSV25609 tics 8
+texture DSV25610 range DSV25613 tics 8
+texture DSV25614 range DSV25618 tics 8
+texture DSV25619 range DSV25623 tics 8
+texture DSV25624 range DSV25627 tics 8
+texture DSV25628 range DSV25631 tics 8
+texture DSV25632 range DSV25635 tics 8
+texture DSV25636 range DSV25639 tics 8
+texture DSV25640 range DSV25643 tics 8
+texture DSV25644 range DSV25647 tics 8
+texture DSV25648 range DSV25651 tics 8
+texture DSV25652 range DSV25660 tics 8
+texture DSV25661 range DSV25669 tics 8
+texture DSV25670 range DSV25673 tics 8
+texture DSV25674 range DSV25677 tics 8
+texture DSV25678 range DSV25683 tics 8
+texture DSV25684 range DSV25689 tics 8
+texture DSV25690 range DSV25693 tics 8
+flat DSV21048 range DSV21053 tics 8
+flat DSV21054 range DSV21059 tics 8
+flat DSV21064 range DSV21067 tics 8
+flat DSV21068 range DSV21071 tics 8
+flat DSV21072 range DSV21074 tics 8
+flat DSV21075 range DSV21080 tics 8
+flat DSV21081 range DSV21086 tics 8
+flat DSV21087 range DSV21092 tics 8
+flat DSV21096 range DSV21099 tics 8
+flat DSV21100 range DSV21103 tics 8
+flat DSV21104 range DSV21106 tics 8
+flat DSV21107 range DSV21112 tics 8
+flat DSV21117 range DSV21119 tics 8
+flat DSV21124 range DSV21130 tics 8
+flat DSV21131 range DSV21134 tics 8
+flat DSV21135 range DSV21138 tics 8
+flat DSV21143 range DSV21146 tics 8
+flat DSV21147 range DSV21156 tics 8
+flat DSV21169 range DSV21174 tics 8
+flat DSV21175 range DSV21180 tics 8
+flat DSV21181 range DSV21186 tics 8
+flat DSV21190 range DSV21193 tics 8
+flat DSV21194 range DSV21197 tics 8
+flat DSV21198 range DSV21200 tics 8
+flat DSV21201 range DSV21206 tics 8
+flat DSV21207 range DSV21212 tics 8
+flat DSV21213 range DSV21218 tics 8
+flat DSV21219 range DSV21221 tics 8
+flat DSV21222 range DSV21225 tics 8
+flat DSV21226 range DSV21228 tics 8
+switch DSV24438 on pic DSV24537 tics 0
+switch DSV24439 on pic DSV24538 tics 0
+switch DSV24440 on pic DSV24539 tics 0
+switch DSV24441 on pic DSV24540 tics 0
+switch DSV24442 on pic DSV24541 tics 0
+switch DSV24443 on pic DSV24542 tics 0
+switch DSV24444 on pic DSV24543 tics 0
+switch DSV24445 on pic DSV24544 tics 0
+switch DSV24446 on pic DSV24545 tics 0
+switch DSV24447 on pic DSV24546 tics 0
+switch DSV24448 on pic DSV24547 tics 0
+switch DSV24449 on pic DSV24548 tics 0
+switch DSV24450 on pic DSV24549 tics 0
+switch DSV24451 on pic DSV24550 tics 0
+switch DSV24452 on pic DSV24551 tics 0
+switch DSV24453 on pic DSV24552 tics 0
+switch DSV24454 on pic DSV24553 tics 0
+switch DSV24455 on pic DSV24554 tics 0
+switch DSV24456 on pic DSV24555 tics 0
+switch DSV24457 on pic DSV24556 tics 0
+switch DSV24458 on pic DSV24557 tics 0
+switch DSV24459 on pic DSV24558 tics 0
+switch DSV24460 on pic DSV24559 tics 0
+switch DSV24461 on pic DSV24560 tics 0
+switch DSV24462 on pic DSV24561 tics 0
+switch DSV24463 on pic DSV24562 tics 0
+switch DSV24464 on pic DSV24563 tics 0
+switch DSV24465 on pic DSV24564 tics 0
+switch DSV24466 on pic DSV24565 tics 0
+switch DSV24467 on pic DSV24566 tics 0
+switch DSV24468 on pic DSV24567 tics 0
+switch DSV24469 on pic DSV24568 tics 0
+switch DSV24470 on pic DSV24569 tics 0
+switch DSV24471 on pic DSV24570 tics 0
+switch DSV24472 on pic DSV24571 tics 0
+switch DSV24473 on pic DSV24572 tics 0
+switch DSV24474 on pic DSV24573 tics 0
+switch DSV24475 on pic DSV24574 tics 0
+switch DSV24476 on pic DSV24575 tics 0
+switch DSV24477 on pic DSV24576 tics 0
+switch DSV24478 on pic DSV24577 tics 0
+switch DSV24479 on pic DSV24578 tics 0
+switch DSV24480 on pic DSV24579 tics 0
+switch DSV24481 on pic DSV24580 tics 0
+switch DSV24482 on pic DSV24581 tics 0
+switch DSV24483 on pic DSV24582 tics 0
+switch DSV24484 on pic DSV24583 tics 0
+switch DSV24485 on pic DSV24584 tics 0
+switch DSV24486 on pic DSV24585 tics 0
+switch DSV24487 on pic DSV24586 tics 0
+switch DSV24488 on pic DSV24587 tics 0
+switch DSV24489 on pic DSV24588 tics 0
+switch DSV24490 on pic DSV24589 tics 0
+switch DSV24491 on pic DSV24590 tics 0
+switch DSV24492 on pic DSV24591 tics 0
+switch DSV24493 on pic DSV24592 tics 0
+switch DSV24494 on pic DSV24593 tics 0
+switch DSV24495 on pic DSV24594 tics 0
+switch DSV24496 on pic DSV24595 tics 0
+switch DSV24497 on pic DSV24596 tics 0
+switch DSV24498 on pic DSV24597 tics 0
+switch DSV24499 on pic DSV24598 tics 0
+switch DSV24500 on pic DSV24599 tics 0
+switch DSV24501 on pic DSV24600 tics 0
+switch DSV24502 on pic DSV24601 tics 0
+switch DSV24503 on pic DSV24602 tics 0
+switch DSV24504 on pic DSV24603 tics 0
+switch DSV24505 on pic DSV24604 tics 0
+switch DSV24506 on pic DSV24605 tics 0
+switch DSV24507 on pic DSV24606 tics 0
+switch DSV24508 on pic DSV24607 tics 0
+switch DSV24509 on pic DSV24608 tics 0
+switch DSV24510 on pic DSV24609 tics 0
+switch DSV24511 on pic DSV24610 tics 0
+switch DSV24512 on pic DSV24611 tics 0
+switch DSV24513 on pic DSV24612 tics 0
+switch DSV24514 on pic DSV24613 tics 0
+switch DSV24515 on pic DSV24614 tics 0
+switch DSV24516 on pic DSV24615 tics 0
+switch DSV24517 on pic DSV24616 tics 0
+switch DSV24518 on pic DSV24617 tics 0
+switch DSV24519 on pic DSV24618 tics 0
+switch DSV24520 on pic DSV24619 tics 0
+switch DSV24521 on pic DSV24620 tics 0
+switch DSV24522 on pic DSV24621 tics 0
+switch DSV24523 on pic DSV24622 tics 0
+switch DSV24524 on pic DSV24623 tics 0
+switch DSV24525 on pic DSV24624 tics 0
+switch DSV24526 on pic DSV24625 tics 0
+switch DSV24527 on pic DSV24626 tics 0
+switch DSV24528 on pic DSV24627 tics 0
+switch DSV24529 on pic DSV24628 tics 0
+switch DSV24530 on pic DSV24629 tics 0
+switch DSV24531 on pic DSV24630 tics 0
+switch DSV24532 on pic DSV24631 tics 0
+switch DSV24533 on pic DSV24632 tics 0
+switch DSV24534 on pic DSV24633 tics 0
+switch DSV24535 on pic DSV24634 tics 0
+switch DSV24536 on pic DSV24635 tics 0
+
+// Drown in Blood
+switch DIBL0096 on pic DIBL0102 tics 0
+switch DIBL0101 on pic DIBL0107 tics 0
+
+// Haste
+texture HSTE0128 range HSTE0131 tics 8
+texture HSTE0566 range HSTE0569 tics 8
+texture HSTE0584 range HSTE0602 tics 8
+texture HSTE0606 range HSTE0609 tics 8
+switch HSTE0613 on pic HSTE0614 tics 0
+
+// Newgothic Movement 1
+texture NGM10457 range NGM10460 tics 8 allowdecals
+texture NGM10520 range NGM10523 tics 8
+texture NGM10545 range NGM10548 tics 8 allowdecals
+texture NGM10606 range NGM10609 tics 8
+texture NGM10628 range NGM10630 tics 8
+texture NGM10727 range NGM10730 tics 8
+flat NGM10011 range NGM10014 tics 8
+warp flat NGM10110
+warp flat NGM10170
+
+// Newgothic Movement 2
+texture NGM20647 range NGM20650 tics 8
+texture NGM20779 range NGM20782 tics 8
+texture NGM20817 range NGM20820 tics 8
+texture NGM20845 range NGM20854 tics 8
+texture NGM20856 range NGM20865 tics 8
+texture NGM21158 range NGM21161 tics 8
+
+// Shai'tan's Luck
+texture SHLK0830 range SHLK0833 tics 8
+flat SHLK0010 range SHLK0013 tics 8
+
+// Slaughterfest 2011
+texture SF110653 range SF110656 tics 8
+texture SF110658 range SF110661 tics 8
+texture SF110662 range SF110665 tics 8
+texture SF110725 range SF110731 tics 8
+texture SF110785 range SF110788 tics 8
+flat SF110071 range SF110074 tics 8
+flat SF110111 range SF110114 tics 8
+switch SF110765 on pic SF110770 tics 0
+switch SF110766 on pic SF110771 tics 0
+switch SF110767 on pic SF110772 tics 0
+switch SF110768 on pic SF110773 tics 0
+
+// Slaughterfest 2012
+texture SF120745 range SF120748 tics 8
+texture SF120872 range SF120875 tics 8
+flat SF120071 range SF120074 tics 8
+flat SF120111 range SF120114 tics 8
+switch SF120852 on pic SF120857 tics 0
+switch SF120853 on pic SF120858 tics 0
+switch SF120854 on pic SF120859 tics 0
+switch SF120855 on pic SF120860 tics 0
+switch SF120856 on pic SF120861 tics 0
+
+// Slaughetfest 3
+texture SF130897 range SF130900 tics 8
+texture SF131047 range SF131050 tics 8
+texture SF131051 range SF131054 tics 8
+texture SF131216 range SF131218 tics 8
+texture SF131296 range SF131299 tics 8
+texture SF131310 range SF131312 tics 8
+texture SF131401 range SF131404 tics 8
+texture SF131498 range SF131501 tics 8
+texture SF131566 range SF131569 tics 8
+texture SF131573 range SF131582 tics 8
+texture SF131586 range SF131601 tics 8
+texture SF131608 range SF131617 tics 8
+texture SF131642 range SF131651 tics 8
+texture SF131652 range SF131661 tics 8
+texture SF131670 range SF131673 tics 8
+flat SF130293 range SF130296 tics 8
+flat SF130308 range SF130314 tics 8
+switch SF131088 on pic SF131080 tics 0
+switch SF131216 on pic SF131219 tics 0
+switch SF131243 on pic SF131244 tics 0
+switch SF131306 on pic SF131307 tics 0
+switch SF131308 on pic SF131309 tics 0
+switch SF131314 on pic SF131315 tics 0
+switch SF131437 on pic SF131440 tics 0
+switch SF131438 on pic SF131441 tics 0
+
+// SlaughterMAX
+texture SMAX0011 range SMAX0014 tics 8

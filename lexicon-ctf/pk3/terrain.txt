@@ -1,0 +1,168 @@
+// Splashes
+// Black Rose CTF
+splash BKRS_Water
+{
+	smallclass		Lexicon_BKRS_WaterSplash
+	smallclip		12
+	smallsound		BKRS/drip
+
+	baseclass		Lexicon_BKRS_WaterSplashBase
+	chunkclass		Lexicon_BKRS_WaterSplash
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	2
+	sound			BKRS/watersplash
+}
+
+splash BKRS_Blood
+{
+	smallclass		Lexicon_BKRS_BloodSplash
+	smallclip		12
+	smallsound		BKRS/sludgegloop
+
+	baseclass		Lexicon_BKRS_BloodSplashBase
+	chunkclass		Lexicon_BKRS_BloodSplash
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	1
+	sound			BKRS/sludgegloop
+}
+
+splash BKRS_Nuke
+{
+	smallclass		Lexicon_BKRS_LavaSmoke
+	smallclip		12
+	smallsound		BKRS/lavasizzle
+
+	baseclass		Lexicon_BKRS_SlimeSplash
+	chunkclass		Lexicon_BKRS_LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			BKRS/lavasizzle
+}
+
+splash BKRS_Lava
+{
+	smallclass		Lexicon_BKRS_LavaSmoke
+	smallclip		12
+	smallsound		BKRS/lavasizzle
+
+	baseclass		Lexicon_BKRS_LavaSplash
+	chunkclass		Lexicon_BKRS_LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			BKRS/lavasizzle
+}
+
+splash BKRS_Slime
+{
+	smallclass		Lexicon_BKRS_SludgeChunk
+	smallclip		12
+	smallsound		BKRS/sludgegloop
+
+	baseclass		Lexicon_BKRS_SludgeSplash
+	chunkclass		Lexicon_BKRS_SludgeChunk
+	chunkxvelshift	8
+	chunkyvelshift	8
+	chunkzvelshift	8
+	chunkbasezvel	1
+	sound			BKRS/sludgegloop
+}
+
+splash BKRS_Hot
+{
+	smallclass		Lexicon_BKRS_LavaSmoke
+	smallclip		12
+	smallsound		BKRS/hotsiz
+
+	baseclass		Lexicon_BKRS_SlimeChunk
+	chunkclass		Lexicon_BKRS_LavaSmoke
+	chunkxvelshift	-1
+	chunkyvelshift	-1
+	chunkzvelshift	7
+	chunkbasezvel	1
+	sound			BKRS/hotsiz
+}
+
+// Terrain
+// Black Rose CTF
+terrain BKRS_Water
+{
+	splash			BKRS_Water
+	footclip		8
+	liquid
+}
+
+terrain BKRS_Lava
+{
+	splash			BKRS_Lava
+	footclip		8
+	liquid
+}
+
+terrain BKRS_Blood
+{
+	splash			BKRS_Blood
+	footclip		8
+	liquid
+}
+
+terrain BKRS_Nuke
+{
+	splash			BKRS_Nuke
+	liquid
+}
+
+terrain BKRS_Slime
+{
+	splash			BKRS_Slime
+	liquid
+}
+
+terrain BKRS_Hot
+{
+	splash			BKRS_Hot
+	footclip		0
+	liquid
+}
+
+ifdoom
+// Black Rose CTF
+floor BKRS0196 BKRS_Blood
+floor BKRS0197 BKRS_Blood
+floor BKRS0198 BKRS_Blood
+floor BKRS0199 BKRS_Slime
+floor BKRS0200 BKRS_Slime
+floor BKRS0201 BKRS_Slime
+floor BKRS0202 BKRS_Slime
+floor BKRS0203 BKRS_Slime
+floor BKRS0204 BKRS_Slime
+floor BKRS0205 BKRS_Slime
+floor BKRS0206 BKRS_Slime
+floor BKRS0116 BKRS_Nuke
+floor BKRS0117 BKRS_Nuke
+floor BKRS0118 BKRS_Nuke
+floor BKRS0061 BKRS_Water
+floor BKRS0062 BKRS_Water
+floor BKRS0063 BKRS_Water
+floor BKRS0064 BKRS_Water
+floor BKRS0207 BKRS_Lava
+floor BKRS0208 BKRS_Lava
+floor BKRS0209 BKRS_Lava
+floor BKRS0210 BKRS_Lava
+floor BKRS0211 BKRS_Hot
+floor BKRS0212 BKRS_Hot
+floor BKRS0213 BKRS_Hot
+floor BKRS0214 BKRS_Hot
+floor BKRS0147 BKRS_Hot
+floor BKRS0148 BKRS_Hot
+floor BKRS0149 BKRS_Hot
+floor BKRS0150 BKRS_Hot
+floor BKRS0123 BKRS_Slime
+endif

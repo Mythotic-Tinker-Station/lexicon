@@ -1,0 +1,91 @@
+// Combat Shock 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CSH201 "aftermath"
+{
+	titlepatch = "CSH2V00"
+	next = "CSH202"
+	secretnext = "CSH202"
+	sky1 = "CSH20412"
+	music = "D_CSH201"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH202 "rope or bullet" 
+{
+	titlepatch = "CSH2V01"
+	next = "CSH203"
+	secretnext = "CSH203"
+	sky1 = "CSH20412"
+	music = "D_CSH202"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH203 "hone gumi"
+{
+	titlepatch = "CSH2V02"
+	next = "CSH204"
+	secretnext = "CSH204"
+	sky1 = "CSH20412"
+	music = "D_CSH203"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH204 "rapid fire"
+{
+	titlepatch = "CSH2V03"
+	next = "CSH205"
+	secretnext = "CSH205"
+	sky1 = "CSH20412"
+	music = "D_CSH204"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH205 "boiling point"
+{
+	titlepatch = "CSH2V04"
+	next = "CSH206"
+	secretnext = "CSH206"
+	sky1 = "CSH20412"
+	music = "D_CSH205"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH206 "closure"
+{
+	titlepatch = "CSH2V05"
+	next = "CSH207"
+	secretnext = "CSH207"
+	sky1 = "CSH20412"
+	music = "D_CSH206"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+}
+
+map CSH207 "shocked for life"
+{
+	titlepatch = "CSH2V06"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "CSH20412"
+	music = "D_CSH207"
+	intermusic = "D_CSH2IN"
+	ExitPic = "CSH2INT"
+	EnterPic = "CSH2INT"
+	Map07Special
+}

@@ -1,0 +1,736 @@
+------====== iPXMaTcH ======------
+---------- FiNaL VeRsioN ---------
+
+
+
+Compiled by Jeannot "NUMBeRsiX" Langlois
+jeannot12@hotmail.com
+(Email address **MAY** not exist after 98/05/22)
+
+Please send me an email to tell me what you think about IPXMATCH!  I love
+receiving email, so any comments (good or bad) are welcome!  Do not be shy
+to send a message! :-)
+
+Please read this file carefully and entirely to learn every important detail
+about IPXMATCH and... a little bit about myself :-).
+
+This is a new (the last) IPXMATCH version.  Since IPXMATCH is now perfect
+(according to my quality standards) there will be no more releases.  Anyway,
+it was supposed that there would only be ONE release, but bugs easily hide
+themselves :-).  This version corrects the major bug of level 21 (Escape 
+from nirvana), minor bugs in levels 6 (Rocket yard) and 12 (Deadly rifles)
+and a minor sky bug in levels 21 to 32.  The background musics are also 
+imported in a better way so music rippers will have no more problems stealing 
+them :-).  One sample demo (four players) recorded during our NETDOOM 97 
+party is also included with the package.  I provided this to you because I 
+want to apologize for this second (but last) release that will force you all 
+to upgrade from the previous version.  Please refer to the "sample demo" 
+section for more details.
+
+The older IPXMATCH version is no longer distributed and should not be used.
+Please replace your old version with the final (current) version.  Recorded
+demos with the previous version will still work except if they use level 21.
+To avoid any playing problems, check with all players participating in a
+IPXMATCH game that everyone is using the FINAL IPXMATCH version.  To do so,
+load each IPXMATCH copy on every computer in single player mode (type "DOOM2"
+and press ENTER from your actual IPXMATCH directory) and check the title 
+screen.  The final version clearly indicates "FINAL VERSION".
+
+Before I forget, I want to say that I am truly sorry to bring a new version
+and force everyone of you to upgrade, but I did not notice these bugs during
+the month of beta testing.  Please accept my apologies.  I swear there will
+not be another version.  Thanks.
+
+See the "corrected bugs" section to learn more about the bugs which have
+been removed from IPXMATCH.
+
+Please continue to read this file to learn more about IPXMATCH.  Print it, 
+frame it and place it on your room's wall (laughs).  Just joking.  Let's get 
+a little more serious.  This is some kind of great deathmatch package 
+specially designed for four players network games.
+
+If you are in a hurry to see what it looks like, please make sure you 
+unzipped the IPXMATCH.xxx archive in your actual unmodified DOOM II version 
+1.9 and type "IM_INST" to install IPXMATCH.  Please read carefully the 
+instructions and conditions on the screen:  the installation procedure may 
+easily fail if you do not follow them.  IPXMATCH will backup your original 
+DOOM II version 1.9 in its original directory and modify the copy's internal
+WAD (IWAD) in order to install the IPXMATCH patch.  Do not attempt to play 
+IPXMATCH using the provided pwads!  They need to be merged in a IWAD in order 
+to all work properly!  Use IM_INST.BAT!
+
+Comments (good or bad) are welcome at my email address:  
+jeannot12@hotmail.com.  This email address **may** not be valid after
+1998/05/22.  Please let me hear what you think about IPXMATCH!
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     GENERAL INFORMATION     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+Title:                    IPXMATCH
+
+Filenames:                IPXLEVEL.WAD
+                          IPXSNDS.WAD
+                          IPXMUSIC.WAD
+                          IPXGFX.WAD
+                          IPXSPRIT.WAD
+                          IPXDEMO.WAD
+                          DM2LIGHT.WAD
+
+Author:                   Jeannot "NUMBeRsiX" Langlois
+
+Email address:            jeannot12@hotmail.com
+                          This address **may** not be valid after 1998/05/22.
+
+Miscellaneous wads info:  IPXMATCH can be played with one, two, three or 
+                          four players, but will be best enjoyed with four 
+                          players.  IPXMATCH can be played cooperatively to 
+                          explore the levels with other players before 
+                          starting a deathmatch game.  No real cooperative 
+                          game is possible since no level contains monsters.
+                          IPXMATCH has been created in a way that simplifies
+                          its installation and use:  once installed, no pwads
+                          are required at all.  It only requires about 20 MB
+                          of the C: hard drive space once installed.  See 
+                          the "how to play?" section below to learn what is 
+                          required for IPXMATCH to work.
+                       
+Miscellaneous author info: 18 and half years old.  Studing in natural
+                           sciences and will study in computer science next
+                           year.  Couple of college parties (eheheh!), 
+                           computer maniac (why is that for? *clic* ...BOOM!),  
+                           endless patience when decided to finish something 
+                           (this WILL be in IPXMATCH!  still just a few bugs 
+                           to correct! %@*#!& !!), DOOM is the best! (yeah, 
+                           sure, on my DX-33 :-), says everyday: "%@*#!& !! I 
+                           hate Windows... Dos rules!", Beavis and Butthead 
+                           sounds fanatic (do not worry, no Beavis and 
+                           Butthead sounds are present in IPXMATCH!  IPXMATCH 
+                           is a SERIOUS deathmatch package! eheh... cool! :-), 
+                           IPX networks fan since I and three other friends 
+                           successfully understood and mounted an IPX network 
+                           13 months ago, Prisoner fan (I will not be pushed,
+                           filed, indexed, briefed, recorded, classified,
+                           declassified, forced to use Windows 95, punished
+                           or numbered -- my life is my own! :-), X-Files
+                           fan (I want to learn the truth!  Why is that
+                           button for? *click* BOOM!), etc...
+                     
+Build time:               6.5 months for the creation and one month of beta
+                          testing.  Many slow downloads from internet
+                          (accelerate, will you accelerate!  %@*#!&), many 
+                          ideas coming one at a time (imagination is not 
+                          always present), many problems (no! texture wrongly
+                          aligned!  bad editor version!  sound file
+                          corrupted!  %@*#!&), many Windows lockups (general
+                          protection fault...  unstable system...  %@*#!&), 
+                          working alone on a giga-project (patience is a 
+                          virtue), bad experiences with still-at-beta-phase 
+                          editors (SUDDEN HANG!  %@*#!&), etc...  
+
+Description:              These wads form a deathmatch package specially
+                          designed for four players deathmatch network games.
+                          IPXMATCH is a compilation of numerous resources 
+                          from numerous people which are listed in the 
+                          "credits" section of this file.  IPXMATCH contains
+                          40 new deathmatch sounds, 35 new musics, many new
+                          graphics, 32 new levels, new presentation demos,
+                          new sprites and other things which I forget.  After
+                          IPXMATCH is installed, it occupies about 20 MB of
+                          the C: hard drive space but does not require any
+                          more pwads to be played!  This way, more memory is
+                          left to improve the gameplay!  IPXMATCH was created
+                          with the idea of providing many diverse deathmatch
+                          situations which would allow infinite hours of
+                          cool and intense deathmatching.
+              
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     PLAY INFORMATION     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ  
+
+
+
+Maps replaced:            01-32
+Single player:            Yes
+Cooperative 2-4 player:   Yes (first the exploration - 4 starts per level)
+Deathmatch 2-4 player:    Yes (and then the real game - 6 starts per level)
+Difficulty settings:      N/A (partly present but no monsters)
+New sounds:               Yes (the 40 best ones I have collected yet)
+New graphics:             Yes (some cool ones)
+New sprites:              Yes (great ones)
+New music:                Yes (35 new musics)
+Demos replaced:           Yes (1, 2 and 3)
+Sample demo:              Yes (INTENSE.LMP)
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     HOW TO PLAY?     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+To play IPXMATCH, unzip the IPXMATCH.xxx archive in your original unmodified 
+DOOM II version 1.9 directory and type "IM_INST".  Carefully follow the 
+instructions on the screen.
+
+In order to install IPXMATCH, you must:
+
+-- Have a minimum of 25 MB of available hard disk space on your C: drive
+-- Be using DOS version 6.0 or higher
+-- Have DOOM II version 1.9 in its unmodified original version
+-- Have no files missing from DOOM II version 1.9
+-- Have the IPXMATCH.xxx archive unzipped into your DOOM II directory
+-- Not already be using a \IPXMATCH directory on your C: drive
+-- Be loading the IM_INST.BAT batch file from your original DOOM II 
+   version 1.9 directory
+-- Not interrupt the IM_INST.BAT procedure
+
+After IPXMATCH is installed, you can have a look at it in single-player mode
+or start a deathmatch game.  Just follow your usual procedure for starting
+the game (type "DOOM2" and press ENTER from the IPXMATCH directory).  Please 
+note that since no pwads are required to play IPXMATCH, every player must 
+install IPXMATCH successfully on his computer in order to be able to play 
+IPXMATCH.
+
+If you enter IPXMATCH in single-player mode, you can watch the provided 
+presentation demos by waiting a few seconds after the IPXMATCH FINAL VERSION 
+title screen is displayed.
+
+A practical command-line parameter for every type of game is -DEVPARM.
+Even if not required, it allows you to see the instant FPS (frame per second) 
+rate (animation rate given in number of images displayed per second and
+indicated at the bottom-left of the screen) and capture screens to PCX format 
+using the F1 key in almost every case.  Notice that when -DEVPARM is used,
+the HELP screen (which is replaced by a new one in IPXMATCH) is not available.
+
+To calculate your instant FPS rate, use this formula:
+
+                           70
+INSTANT FPS RATE = ------------------
+                   NUMBER OF DOTS + 1
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     SAMPLE DEMO     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+One sample demo has been included with the IPXMATCH FINAL VERSION package:
+INTENSE.LMP.  This sample demo was recorded during our NETDOOM 97 party.
+
+To playback the demo, go to your IPXMATCH directory and type:
+
+DOOM2 -DEVPARM -PLAYDEMO INTENSE
+
+The "-DEVPARM" switch is optional but allows to calculate the instant frame
+per second rate and capture screens using the F1 key.
+
+Here is a list of the players who allowed me to record this demo:
+
+INTENSE.LMP
+
+11 minutes 47 seconds
+
+Player #1 (Green) : Jeannot "NUMBeRsiX" Langlois
+Player #2 (Indigo): Marc "FaTHeRTiM" Boisvert
+Player #3 (Brown) : David "sMoKe" Perreault
+Player #4 (Red)   : Daniel "NeTDaN" Dudemaine
+
+Active viewpoint: Player #2 (Indigo)
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     CONSTRUCTION     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+Base:                     Bored of playing the original levels, bored of 
+                          playing in the same levels every time I played a 
+                          network game with my friends, bored of playing 
+                          great and bad levels downloaded from internet 
+                          which often contained a couple of weapons and 
+                          almost no sufficient ammo in it, bored of 
+                          downloading big pwads which only had a couple of 
+                          interesting things, bored of playing pwads with too 
+                          much modifications, bored of playing pwads which 
+                          were created too fast and missed a certain quality, 
+                          wanted change, wanted to get levels which would be 
+                          great in four players games, wanted levels which 
+                          would bring many hours of intense gaming, wanted 
+                          the players to collapse from exhaustion and their
+                          heads to pound on the keyboard before playing and 
+                          knowing all the levels.
+
+Editors used:             Please refer to the "credits" section.
+
+KNOWN bugs:               None.  After 6.5 months of work and 1 month of beta
+                          testing, IPXMATCH is kind of bug-free and ready to
+                          use.  I have tried to be as perfectionnist as I
+                          could with this project.  You will notice it by
+                          having a look at the modifications I have done in
+                          every level so they could be playable for a long
+                          time without becoming bored.  In fact, I may admit
+                          that there is one bug, but not caused by IPXMATCH.
+                          The skies are normally supposed to be blue from
+                          levels 1 to 11, orange in levels 12 to 20 and red
+                          in levels 21 to 32.  If you warp into a level using 
+                          a command line parameter, a front-end utility or a 
+                          cheat code, the level's sky color will be right 
+                          color.  But if you start the game on level 1 and 
+                          progress toward the end of the game by finishing 
+                          every level using the end-level switch (without 
+                          cheating), the sky will remain blue.  This 
+                          principle is the same if you warp in a level and 
+                          continue progressing without cheating.  This bug 
+                          is from the DOOM II game itself.  I cannot correct
+                          it.
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     COPYRIGHT/PERMISSIONS     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+Authors may use this package as a base to build additional packages.
+Since I did NOT build the provided levels myself (I modified them a
+little bit, please have a look at the "credits" section) and their authors 
+did allow to distribute them, anyone can take away any part of this 
+package and modify it to its needs.
+
+Please send me an email message to jeannot12@hotmail.com if you
+modify IPXMATCH!  I just want to see where IPXMATCH goes and becomes!
+
+Please do not distribute any modified versions of IPXMATCH without
+changing its name and giving credit to all the people who made it 
+possible!
+
+You MAY distribute this WAD, provided you include this file, with
+NO MODIFICATIONS.  If you modify it, RENAME IT to SOMETHING ELSE and
+give credit to ANYONE INVOLVED in your creation (people deserve it!).  
+You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc...) as long as you include this file 
+and the other files provided with the IPXMATCH.xxx archive intact.
+
+I encourage everyone to spread IPXMATCH as far as you can!  Shareware
+CD developpers: include IPXMATCH in your DOOM II pwads directory!
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³     WHERE TO GET THIS WAD     ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+FTP sites:                ftp://ftp.cdrom.com/pub/doom/...
+                          Since I do not know where the IPXMATCH archive will
+                          be placed once I will upload it, search under the 
+                          pub/ directory of ftp.cdrom.com for IPXMATCH.xxx.  
+                          XXX designates the archive format (i.e.: ARJ, ZIP, 
+                          etc...).  Will probably be ZIP.
+BBS numbers:              None.  Sorry, no BBS has survived the "internet 
+                          bang" in my phone area code :-(.
+Other:                    Not known to date, but search for IPXMATCH.xxx
+                          (Where xxx could mostly be ZIP or ARJ).
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³      CORRECTED BUGS      ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+Here are the bugs which have been corrected in the FINAL VERSION:
+
+1) MAJOR BUG:  All the six deathmatch start positions on level 21 were in
+               the same vicinity.  This is only a small mistake, but can
+               lead to serious disadvantages in a deathmatch game (A player
+               could easily get 30 frags per minute in a two-player game:
+               the other player did always respawn in the same area).
+               Probably this was caused by the idea of working on IPXMATCH
+               at 3:00 am in the morning after a college party :-).
+
+2) MINOR BUG:  The interior surface of the exit doors on levels 6 and 12 were
+               drawn as "unpegged".  When opening the exit door from the
+               inside, the texture shown a weird way of opening a door.  This
+               was hard to spot, but annoying to know for a perfectionnist
+               :-).
+
+5) MINOR BUG:  The red sky in levels 21 to 32 had a few weird pixels in its
+               dark spot.  I corrected the problem so it does not look like
+               the vision of someone on acid anymore :-).
+
+4) IMPROVEMENT: The background music importation technique has been improved:
+                Musics are now imported using the MIDI2MUS converter.  This
+                saves about 20% to 25% of space because MUS files are
+                compressed.  Since I did not know that this was the way to 
+                go, I previously used DEU to insert the MIDI files directly 
+                into PWADS.  Even if the tunes played correctly in DOOM II, 
+                it was impossible to play them in editors or rip them.  
+                Sometimes it even caused some editors to crash :-).
+
+
+
+ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+³      CREDITS SECTION      ³
+ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+
+
+Here is where all the people who contributed to this deathmatch package
+lay in glory.  Observe how many people were implicated in it.
+
+The IPXMATCH project was started on 1997/04/18 and finished on 1997/10/31.
+Its beta testing period started on 1997/11/01 and finished on 1997/11/30.
+
+All the resources contained in IPXMATCH were compiled by Jeannot "NUMBeRsiX" 
+Langlois and NOBODY else.
+
+First of all, an infinite number of thanks to ID Software for providing us,
+the players, an excellent game:  DOOM II.  Think about it:  played it since
+1993 and still not bored of it!
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ BETA TESTERS AND HELPS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+A special thank to my fellow friends:
+
+Alexandre "DiSeMBoWeLLeR" Fortier
+BenoŒt "RaYDeN" Sigouin
+Christian "ToiSoN" Gu‚vin
+Daniel "NeTDaN" Dudemaine
+David "sKYWaLKeR" Ferron
+David "sMoKe" Perreault
+Guillaume "GUiLL" Bolduc
+Jean-Fran‡ois "MoRTeL" Martel
+Marc "FaTHeRTiM" Boisvert
+Rapha‰l "RaPH" Bolduc
+S‚bastien "PaPaRasiT" Paradis
+Simon "Moi" Ouellet
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ EDITORS USED ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+I wish to thank all the authors of these fine utilities who allowed me to 
+do so much for IPXMATCH:
+
+Windows Paint Brush v3.1
+Paint Shop Pro v3.0
+Paint Shop Pro v2.0
+DMGRAPH v1.1
+WAD Master v0.9
+WAD Master v1.04á
+DEU v5.21
+Wave Studio v2.0
+IDBSP v1.1á
+DEUTEX v3.6
+Quick MUS2MID v2.0
+The Draw v4.63
+Screen Thief vTD 1.01
+LMPUTIL v2.20
+NWT v1.3
+MIDI2MUS v2.04
+Sequencer Plus Gold v4.02
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ LEVELS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+These people will never be thanked enough (their imagination
+allows us to have such cool battlefields!):
+
+01      Cole Savage             (MANCERX3.WAD)
+02      Inner Circle            (DM96.WAD)
+03      Gunpwdr                 (DCDWANGO.WAD)
+04      Eric Sambach            (AE_TUPS.WAD)
+05      Cole Savage             (MANCERX3.WAD)
+06      Russ Verner             (ABBSDTH2.WAD)
+07      Shrew                   (DCDWANGO.WAD)
+08      Dr FunFrock             (ARROW3.WAD)
+09      Russ Verner             (ABBSDTH2.WAD)
+10      Cole Savage             (MANCERX2.WAD)
+11      Shrew                   (DCDWANGO.WAD)
+12      Russ Verner             (ABBSDTH2.WAD)
+13      Inner Circle            (DM96.WAD)
+14      Cole Savage             (MANCERX3.WAD)
+15      Cole Savage             (MANCER.WAD)
+16      Russ Verner             (ABBSDTH2.WAD)
+17      B. Vannatta             (IGOR9.WAD)
+        B. Weldon
+18      Unknow (not mentioned)  (SUPERDM.WAD)
+19      Cole Savage             (MANCERX2.WAD)
+20      Jeremy Sammons          (PIMP.WAD)
+21      Nathan                  (DCDWANGO.WAD)
+22      B. Vannatta             (IGOR9.WAD)
+        B. Weldon
+23      Inner Circle            (DM96.WAD)
+24      Cole Savage             (MANCERX2.WAD)
+25      Bane                    (AGONISM8.WAD)
+26      The Shadow              (SHDWSDTH.WAD)
+27      Phatman                 (DCDWANGO.WAD)
+28      Ralph Evans             (HATTRICK.WAD)
+29      Eric Sambach            (AE_TUPS.WAD)
+30      Cole Savage             (MANCERX2.WAD)
+31      Perseus                 (BESTDML1.WAD)
+        Hazzie
+32      Eric Sambach            (AE_TUPS.WAD)
+
+N.B.:  All levels were modified a bit by myself: guns, ammo, exit adding,
+texture aligning, etc).
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ GRAPHICS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+These people brought an interesting look to IPXMATCH:
+
+BRIGHT VIEW PATCH               Enigma-13               (DGOLD4BT.WAD)
+BLUE ALPHABET                   Denis Grenader          (DOOMNUKE.WAD)
+                                Phil Leverance
+STATUS BAR                      MrBlonde and Myself     (DOOMPRO.WAD)
+INTERMISSION SCREEN             ID Software and Myself  (SPEAR OF DESTINY)
+TITLE SCREEN                    Myself
+DOOM END SCREEN                 Myself
+MENU CURSOR                     ? (Cannot remember)     (ALIENS PATCH)
+IPXMATCH LOGO                   Myself
+RED DISKETTE ICON               Myself
+BOSS BACK SCREEN                ID Software             (SPEAR OF DESTINY)
+BLUE SKY                        Dr FunFrock             (ARROW3.WAD)
+ORANGE SKY                      Cole Savage             (MANCERX2.WAD)
+RED SKY                         Inner Circle and Myself (DM96.WAD)
+CREDITS SCREEN                  Myself
+HELP SCREEN                     Myself
+MENU RED SLIDING BAR            Myself
+LEVEL TITLES                    Myself
+NEW SWITCH TEXTURE              Unknow (not mentioned)  (HEROES2.WAD)
+
+N.B.:  As indicated above, some graphics were modified or entirely created by
+me.
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ SPRITES ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+Other very cool resources were provided by these people:
+
+CLAW                            Tic             (TICLAW.ZIP)
+DARK FORCE PISTOL               Tiger           (DFGUNS10.ZIP)
+DARK FORCE RIFLE                Tiger           (DFGUNS10.ZIP)
+RED BFG GUN                     Myself
+RED ENERGY PACK                 Myself
+DARK FORCE SHOTGUN ICON         Tiger           (DFGUNS10.ZIP)
+DARK FORCE CHAINGUN ICON        Tiger           (DFGUNS10.ZIP)
+GREY PLASMA GUN ICON            Darrell Esau    (ANGEL.WAD)
+RED BARRELS                     Myself
+RED CELLS                       Myself
+GREEN PLASMA                    Darrell Esau    (ANGEL.WAD)                
+GREEN PLASMA GUN                Darrell Esau    (ANGEL.WAD)
+BLUE ROCKETS                    Darrell Esau    (ANGEL.WAD)
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ DEMOS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+Thanks again to my great friends for these demos:
+
+DEMO #1 -- LEVEL 03 -- FRAG FESTIVAL
+
+Player #1 (Green) : Christian "ToiSoN" Gu‚vin
+Player #2 (Indigo): S‚bastien "PaPaRaSiT" Paradis
+Player #3 (Brown) : Marc "FaTHeRTiM" Boisvert
+Player #4 (Red)   : Jeannot "NUMBeRsiX" Langlois
+
+Active viewpoint:  Player #1 (Green)
+
+DEMO #2 -- LEVEL 13 -- CHAINGUN CHACHA
+
+Player #1 (Green) : Christian "ToiSoN" Gu‚vin
+Player #2 (Indigo): S‚bastien "PaPaRaSiT" Paradis
+Player #3 (Brown) : Marc "FaTHeRTiM" Boisvert
+Player #4 (Red)   : Jeannot "NUMBeRsiX" Langlois
+
+Active viewpoint:  Player #1 (Green)
+
+DEMO #3 -- LEVEL 25 -- SO MANY TARGETS
+
+Player #1 (Green) : Christian "ToiSoN" Gu‚vin
+Player #2 (Indigo): S‚bastien "PaPaRaSiT" Paradis
+Player #3 (Brown) : Marc "FaTHeRTiM" Boisvert
+Player #4 (Red)   : Jeannot "NUMBeRsiX" Langlois
+
+Active viewpoint:  Player #1 (Green)
+
+N.B.:  Demos were recorded using a two-minute timer.
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ MUSICS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+These people are also very important in the mood setting of every level
+and situation of the game:
+
+01              Apogee Software         (RISE OF THE TRIADS)
+02              Russ Verner             (ABBSDTH2.WAD)
+03              Spamjav                 (DCDWANGO.WAD)
+                Shrew
+                Gunpwdr
+                Nathan
+                Phatman
+                Dynamo
+04              Predator                (HARDCORE.WAD)
+                Rambo
+05              Unknow (not mentioned)  (SUPERDM.WAD)
+06              Unknow (not mentioned)  (HEROES2.WAD)
+07              Ian Chipman             (METLDMII.WAD)
+08              Ian Chipman             (METLDMII.WAD)
+09              Apogee Software         (DUKE NUKEM 3D)
+10              Ian Chipman             (METLDMII.WAD)
+11              Ian Chipman             (METLDMII.WAD)
+12              Skywalker               (NIRVANA.WAD)
+13              Skywalker               (NIRVANA.WAD)
+14              Ian Chipman             (METLDMII.WAD)
+15              Russ Verner             (ABBSDTH2.WAD)
+16              David Perreault         (AUTORACE.MID)
+17              Skywalker               (NIRVANA.WAD)
+18              Apogee Software         (RISE OF THE TRIADS)
+19              Skywalker               (NIRVANA.WAD)
+20              Martin Beauvais         (T2.MID)
+21              Skywalker               (NIRVANA.WAD)
+22              ? (Cannot remember)     (BRINGEM2.MID)
+23              David Perreault         (KNIGHT.MID)
+24              Apogee Software         (RISE OF THE TRIADS)
+25              Skywalker               (NIRVANA.WAD)
+26              Ian Chipman             (METLDMII.WAD)
+27              Blake Baltzley          (PHM.WAD)
+28              Denis Grenader          (DOOMNUKE.WAD)          
+                Phil Leverance
+29              Peter Gozon             (KLAUS1-1.WAD)
+30              ? (Cannot remember)     (IMPOSSIB.MID)
+31              Skywalker               (NIRVANA.WAD)
+32              Ian Chipman             (METLDMII.WAD)
+MESSAGE         ? (Cannot remember)     (X_FILES.MID)
+TITLE           Inner Circle and Myself (DM96.WAD)
+INTERMISSION    Ralph Evans             (HATTRICK.WAD)
+
+N.B.:  As indicated above, the TITLE music has been slightly modified from
+the original:  its useless part (never heard) has been removed.
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ SOUNDS ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+These people brought one of the most important thing into IPXMATCH:
+
+PISTOL          Darrell Esau                    (ANGEL.WAD)
+SHOTGN          Inner Circle                    (DM96.WAD)
+SGCOCK          Will Pendleton                  (BLASTEM.WAD)
+SAWUP           Jim Wiscarson and Myself        (CHCKMATE.WAD)
+SAWIDL          Jim Wiscarson and Myself        (CHCKMATE.WAD)
+SAWFUL          Jim Wiscarson and Myself        (CHCKMATE.WAD)
+SAWHIT          Jim Wiscarson and Myself        (CHCKMATE.WAD)
+RLAUNC          ID Software                     (QUAKE)
+RXPLOD          Darrell Esau and Myself         (ANGEL.WAD)
+FIRXPL          Andy Smith                      (DMSFX.WAD)
+PSTART          Steve Chaney and Myself         (ANIME.WAD)
+PSTOP           Steve Chaney                    (ANIME.WAD)
+DOROPN          Apogee Software                 (DUKE NUKEM 3D)
+DORCLS          Apogee Software                 (DUKE NUKEM 3D)
+STNMOV          Enigma-13                       (DGOLD3.WAD)
+SWTCHN          Apogee Software                 (RISE OF THE TRIADS)
+SWTCHX          Apogee Software and Myself      (RISE OF THE TRIADS)
+PLPAIN          ID Software                     (QUAKE)
+SLOP            ID Software                     (QUAKE)
+ITEMUP          Darrell Esau                    (ANGEL.WAD)
+WPNUP           ID Software                     (QUAKE)
+OOF             ID Software                     (QUAKE)
+TELEPT          ID Software                     (QUAKE)
+PLDETH          ID Software                     (QUAKE)
+PDIEHI          ID Software                     (QUAKE)
+NOWAY           Apogee Software                 (RISE OF THE TRIADS)
+BAREXP          ID Software                     (QUAKE)
+PUNCH           ? (Cannot remember)             (DSPUNCH.WAV)
+STINK           Darrell Esau                    (ANGEL.WAD)
+BDOPN           Apogee Software                 (DUKE NUKEM 3D)
+BDCLS           Apogee Software                 (DUKE NUKEM 3D)
+ITMBK           ID Software                     (QUAKE)
+GETPOW          ID Software                     (QUAKE)
+PLASMA          Unknow (not mentioned)          (ALIENSND.WAD)
+BFG             Cole Savage                     (MANCERX2.WAD)
+DSHTGN          Spamjav                         (DCDWANGO.WAD)
+                Shrew
+                Gunpwdr
+                Nathan
+                Phatman
+                Dynamo
+DBOPN           Spamjav                         (DCDWANGO.WAD)
+                Shrew
+                Gunpwdr
+                Nathan
+                Phatman
+                Dynamo
+DBCLS           Spamjav                         (DCDWANGO.WAD)
+                Shrew
+                Gunpwdr
+                Nathan
+                Phatman
+                Dynamo
+DBLOAD          Apogee Software and Myself      (DUKE NUKEM 3D)
+DSRADIO         Darrell Esau                    (ANGEL.WAD)
+
+N.B.:  Some specially marked sounds effects above have been slightly modified 
+by me, such as fading out, shorting, cutting, etc.
+
+
+ÄÄÄÄÄÄÍÍÍÍÍÍ FORGIVEN ONES ÍÍÍÍÍÍÄÄÄÄÄÄ
+
+
+I am a human being as you are.  I am not a number, I am a free man!  I am
+the great cornholio!  All lies lead to the truth! :-)  Just joking.  Let's 
+get serious.  I do have the right to forget things.  However, I have made 
+sure that everyone who has helped me with this package has had his name 
+listed above.  Special cases are marked "? (Cannot remember)".  Those are
+the names which I could not figure out, even after a great brain effort.
+Sorry if I forgot your name.  Please accept my apologies.  I'm truly sorry.
+
+On the other hand, some people's names could not be honored on this list 
+because their identification was missing from the original resources I
+borrowed them from.  These are identified as "Unknow (not mentioned)".
+
+Parts which were created and or modified by me are credited to "Myself" or
+to someone else and "Myself".  These cases are self-explanatory 
+(modifications).
+
+
+Enjoy IPXMATCH FINAL VERSION!
+
+May the FRAGS be with you!
+
+Never stop deathmatching!
+
+Deathmatch games start but never end!
+
+Jeannot "NUMBeRsiX" Langlois
+
+1998/01/16 -- 00:48
+
+Joke of the day:
+
+Humans *DO* have DIP switches like computer peripherals:  DNA!
+
+------[END OF DOCUMENT]------

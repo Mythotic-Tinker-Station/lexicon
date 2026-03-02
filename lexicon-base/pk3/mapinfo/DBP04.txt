@@ -1,0 +1,79 @@
+// DBP04: Xenomorph Base Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DB0401 "Anywhere But Here"
+{
+	titlepatch = "DB04V00"
+	next = "DB0402"
+	secretnext = "DB0402"
+	sky1 = "DB040295"
+	music = "D_DB0401"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}
+
+map DB0402 "Beacon"
+{
+	titlepatch = "DB04V01"
+	next = "DB0403"
+	secretnext = "DB0403"
+	sky1 = "DB040295"
+	music = "D_DB0402"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}
+
+map DB0403 "Spiral Edge"
+{
+	titlepatch = "DB04V02"
+	next = "DB0404"
+	secretnext = "DB0404"
+	sky1 = "DB040295"
+	music = "D_DB0403"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}
+
+map DB0404 "Rotten"
+{
+	titlepatch = "DB04V03"
+	next = "DB0405"
+	secretnext = "DB0405"
+	sky1 = "DB040295"
+	music = "D_DB0404"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}
+
+map DB0405 "Forty And Two"
+{
+	titlepatch = "DB04V04"
+	next = "DB0406"
+	secretnext = "DB0406"
+	sky1 = "DB040295"
+	music = "D_DB0405"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}
+
+map DB0406 "Necroplasm"
+{
+	titlepatch = "DB04V05"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DB040295"
+	music = "D_DB0406"
+	intermusic = "D_DB04IN"
+	ExitPic = "DB04INT"
+	EnterPic = "DB04INT"
+}

@@ -1,0 +1,371 @@
+// #1DWANGO
+switch DW1D0001 on pic DW1D0006 tics 0
+switch DW1D0002 on pic DW1D0007 tics 0
+switch DW1D0003 on pic DW1D0008 tics 0
+switch DW1D0004 on pic DW1D0009 tics 0
+switch DW1D0005 on pic DW1D0010 tics 0
+
+// Addictive Deathmatch Series
+texture ADMS0003 range ADMS0006 tics 8
+
+// AZDWANGO
+switch DWAZ0004 on pic DWAZ0009 tics 0
+switch DWAZ0005 on pic DWAZ0010 tics 0
+switch DWAZ0006 on pic DWAZ0011 tics 0
+switch DWAZ0007 on pic DWAZ0012 tics 0
+switch DWAZ0008 on pic DWAZ0013 tics 0
+
+// Bloodlands
+texture BLDL0041 range BLDL0044 tics 8
+switch BLDL0006 on pic BLDL0012 tics 0
+
+// BLUDBATH
+texture BLDB0002 range BLDB0005 tics 8
+switch BLDB0010 on pic BLDB0015 tics 0
+
+// Bourgeois Megawad
+texture BOUR0074 range BOUR0077 tics 8
+
+// Countergoat Initiative
+texture CGIN0132 range CGIN0135 tics 8
+texture CGIN0140 range CGIN0141 tics 8
+texture CGIN0224 range CGIN0227 tics 8
+texture CGIN0305 range CGIN0320 tics 8
+texture CGIN0321 range CGIN0336 tics 8
+texture CGIN0337 range CGIN0352 tics 8
+texture CGIN0493 range CGIN0496 tics 8
+texture CGIN0601 range CGIN0602 tics 8
+flat CGIN0001 range CGIN0003 tics 8
+flat CGIN0024 range CGIN0026 tics 8
+flat CGIN0099 range CGIN0102 tics 8
+flat CGIN0128 range CGIN0131 tics 8
+switch CGIN0146 on pic CGIN0149 tics 0
+switch CGIN0147 on pic CGIN0150 tics 0
+switch CGIN0148 on pic CGIN0151 tics 0
+
+// DCDWANGO
+texture DWDC0001 range DWDC0004 tics 8 allowdecals
+switch DWDC0006 on pic DWDC0011 tics 0
+switch DWDC0007 on pic DWDC0012 tics 0
+switch DWDC0008 on pic DWDC0013 tics 0
+switch DWDC0009 on pic DWDC0014 tics 0
+switch DWDC0010 on pic DWDC0015 tics 0
+
+// Decamatch Complete
+texture DECA0018 range DECA0020 tics 8 allowdecals
+texture DECA0052 range DECA0055 tics 8
+switch DECA0023 on pic DECA0025 tics 0
+switch DECA0024 on pic DECA0026 tics 0
+switch DECA0058 on pic DECA0059 tics 0
+switch DECA0060 on pic DECA0061 tics 0
+
+// Doomkid's Deathmatch Series
+texture DKDS0037 range DKDS0040 tics 8 allowdecals
+texture DKDS0077 range DKDS0080 tics 8 allowdecals
+texture DKDS0041 range DKDS0044 tics 8
+texture DKDS0045 range DKDS0046 tics 8
+texture DKDS0114 range DKDS0117 tics 8
+texture DKDS0193 range DKDS0195 tics 8 allowdecals
+texture DKDS0211 range DKDS0214 tics 8
+flat DKDS0013 range DKDS0016 tics 8
+flat DKDS0024 range DKDS0027 tics 8
+flat DKDS0031 range DKDS0034 tics 8
+switch DKDS0051 on pic DKDS0056 tics 0
+
+// Durango
+texture DUGO0438 range DUGO0441 tics 8
+
+// DWANGO2
+texture DW020029 range DW020031 tics 8 allowdecals
+texture DW020038 range DW020041 tics 8 allowdecals
+switch DW020002 on pic DW020007 tics 0
+switch DW020003 on pic DW020008 tics 0
+switch DW020004 on pic DW020009 tics 0
+switch DW020005 on pic DW020010 tics 0
+switch DW020006 on pic DW020011 tics 0
+
+// DWANGO3
+switch DW030004 on pic DW030009 tics 0
+switch DW030005 on pic DW030010 tics 0
+switch DW030006 on pic DW030011 tics 0
+switch DW030007 on pic DW030012 tics 0
+switch DW030008 on pic DW030013 tics 0
+
+// DWANGO4
+switch DW040003 on pic DW040008 tics 0
+switch DW040004 on pic DW040009 tics 0
+switch DW040005 on pic DW040010 tics 0
+switch DW040006 on pic DW040011 tics 0
+switch DW040007 on pic DW040012 tics 0
+
+// DWANGO5
+switch DW050004 on pic DW050009 tics 0
+switch DW050005 on pic DW050010 tics 0
+switch DW050006 on pic DW050011 tics 0
+switch DW050007 on pic DW050012 tics 0
+switch DW050008 on pic DW050013 tics 0
+
+// DWANGO6
+switch DW060004 on pic DW060009 tics 0
+switch DW060005 on pic DW060010 tics 0
+switch DW060006 on pic DW060011 tics 0
+switch DW060007 on pic DW060012 tics 0
+switch DW060008 on pic DW060013 tics 0
+
+// DWANGO7
+switch DW070002 on pic DW070007 tics 0
+switch DW070003 on pic DW070008 tics 0
+switch DW070004 on pic DW070009 tics 0
+switch DW070005 on pic DW070010 tics 0
+switch DW070006 on pic DW070011 tics 0
+
+// DWANGO10
+switch DW100004 on pic DW100009 tics 0
+switch DW100005 on pic DW100010 tics 0
+switch DW100006 on pic DW100011 tics 0
+switch DW100007 on pic DW100012 tics 0
+switch DW100008 on pic DW100013 tics 0
+
+// DWANGO11
+switch DW110008 on pic DW110019 tics 0
+switch DW110009 on pic DW110020 tics 0
+switch DW110010 on pic DW110021 tics 0
+switch DW110011 on pic DW110022 tics 0
+switch DW110012 on pic DW110023 tics 0
+switch DW110013 on pic DW110024 tics 0
+switch DW110014 on pic DW110025 tics 0
+switch DW110015 on pic DW110026 tics 0
+switch DW110016 on pic DW110027 tics 0
+switch DW110017 on pic DW110028 tics 0
+switch DW110018 on pic DW110029 tics 0
+
+// DWANGO12
+texture DW120001 range DW120004 tics 8
+switch DW120008 on pic DW120013 tics 0
+switch DW120009 on pic DW120014 tics 0
+switch DW120010 on pic DW120015 tics 0
+switch DW120011 on pic DW120016 tics 0
+switch DW120012 on pic DW120017 tics 0
+
+// DWANGOX
+switch DW0X0003 on pic DW0X0008 tics 0
+switch DW0X0004 on pic DW0X0009 tics 0
+switch DW0X0005 on pic DW0X0010 tics 0
+switch DW0X0006 on pic DW0X0011 tics 0
+switch DW0X0007 on pic DW0X0012 tics 0
+
+// DWANGO 20th Anniversary Edition
+texture DW200005 range DW200006 tics 8 allowdecals
+
+// DWANGO!
+switch DWEX0003 on pic DWEX0008 tics 0
+switch DWEX0004 on pic DWEX0009 tics 0
+switch DWEX0005 on pic DWEX0010 tics 0
+switch DWEX0006 on pic DWEX0011 tics 0
+switch DWEX0007 on pic DWEX0012 tics 0
+
+// FreeDM: Classic Edition
+texture FRDM0018 range FRDM0021 tics 8
+switch FRDM0002 on pic FRDM0007 tics 0
+switch FRDM0003 on pic FRDM0008 tics 0
+
+// LBDWANGO
+texture DWLB0002 range DWLB0005 tics 8
+switch DWLB0010 on pic DWLB0015 tics 0
+switch DWLB0011 on pic DWLB0016 tics 0
+switch DWLB0012 on pic DWLB0017 tics 0
+switch DWLB0013 on pic DWLB0018 tics 0
+switch DWLB0014 on pic DWLB0019 tics 0
+
+// Eternal Deathmatch Set
+texture EDMS0205 range EDMS0208 tics 8
+texture EDMS0213 range EDMS0211 tics 8
+texture EDMS0215 range EDMS0217 tics 8
+flat EDMS0102 range EDMS0104 tics 8
+flat EDMS0117 range EDMS0120 tics 8
+flat EDMS0121 range EDMS0124 tics 8
+flat EDMS0137 range EDMS0139 tics 8
+flat EDMS0166 range EDMS0169 tics 8
+flat EDMS0182 range EDMS0185 tics 8
+flat EDMS0186 range EDMS0189 tics 8
+flat EDMS0190 range EDMS0193 tics 8
+switch EDMS0228 on pic EDMS0234 tics 0
+switch EDMS0229 on pic EDMS0235 tics 0
+switch EDMS0230 on pic EDMS0236 tics 0
+switch EDMS0231 on pic EDMS0237 tics 0
+switch EDMS0232 on pic EDMS0238 tics 0
+switch EDMS0233 on pic EDMS0239 tics 0
+
+// EXEC + Brit10 + Brit11
+texture BREX0073 range BREX0076 tics 8
+switch BREX0094 on pic BREX0096 tics 0
+switch BREX0095 on pic BREX0097 tics 0
+
+// Gothic DeathMatches
+texture GTH10178 range GTH10181 tics 8
+switch GTH10176 on pic GTH10177 tics 0
+
+// Gothic DeathMatch II
+texture GTH20233 range GTH20236 tics 8
+texture GTH20293 range GTH20296 tics 8
+texture GTH20297 range GTH20300 tics 8
+texture GTH20301 range GTH20304 tics 8
+texture GTH20305 range GTH20306 tics 8
+texture GTH20307 range GTH20309 tics 8
+flat GTH20010 range GTH20013 tics 8
+switch GTH20313 on pic GTH20316 tics 0
+switch GTH20314 on pic GTH20317 tics 0
+switch GTH20315 on pic GTH20318 tics 0
+
+// Green War 2
+texture GWR20364 range GWR20367 tics 8
+texture GWR20729 range GWR20732 tics 8
+texture GWR20733 range GWR20736 tics 8
+texture GWR20737 range GWR20740 tics 8 allowdecals
+texture GWR20741 range GWR20744 tics 8 allowdecals
+texture GWR20840 range GWR20842 tics 8 allowdecals
+flat GWR20061 range GWR20064 tics 8
+flat GWR20177 range GWR20180 tics 8
+flat GWR20253 range GWR20255 tics 8
+flat GWR20257 range GWR20260 tics 8
+switch GWR20400 on pic GWR20432 tics 0
+switch GWR20401 on pic GWR20433 tics 0
+switch GWR20402 on pic GWR20434 tics 0
+switch GWR20405 on pic GWR20437 tics 0
+switch GWR20406 on pic GWR20438 tics 0
+switch GWR20407 on pic GWR20439 tics 0
+switch GWR20408 on pic GWR20440 tics 0
+switch GWR20409 on pic GWR20441 tics 0
+switch GWR20410 on pic GWR20442 tics 0
+switch GWR20411 on pic GWR20443 tics 0
+switch GWR20413 on pic GWR20445 tics 0
+switch GWR20414 on pic GWR20446 tics 0
+switch GWR20415 on pic GWR20447 tics 0
+switch GWR20416 on pic GWR20448 tics 0
+switch GWR20419 on pic GWR20451 tics 0
+switch GWR20420 on pic GWR20452 tics 0
+switch GWR20428 on pic GWR20461 tics 0
+switch GWR20430 on pic GWR20463 tics 0
+
+// Grievance
+texture GRVE0001 range GRVE0004 tics 8 allowdecals
+texture GRVE0035 range GRVE0038 tics 8
+switch GRVE0008 on pic GRVE0009 tics 0
+
+// Houses 1.4
+switch HS140012 on pic HS140027 tics 0
+switch HS140016 on pic HS140031 tics 0
+switch HS140017 on pic HS140032 tics 0
+switch HS140021 on pic HS140036 tics 0
+switch HS140023 on pic HS140038 tics 0
+
+// Intrinsic Violence
+switch TVOX0075 on pic TVOX0080 tics 0
+
+// IPXMATCH
+switch IPXM0004 on pic IPXM0013 tics 0
+switch IPXM0005 on pic IPXM0014 tics 0
+switch IPXM0006 on pic IPXM0015 tics 0
+switch IPXM0007 on pic IPXM0016 tics 0
+switch IPXM0008 on pic IPXM0017 tics 0
+switch IPXM0009 on pic IPXM0018 tics 0
+switch IPXM0010 on pic IPXM0019 tics 0
+switch IPXM0011 on pic IPXM0020 tics 0
+switch IPXM0012 on pic IPXM0021 tics 0
+
+// Lazarus
+texture LZRS0035 range LZRS0038 tics 6
+texture LZRS0039 range LZRS0042 tics 8
+texture LZRS0054 range LZRS0056 tics 6
+texture LZRS0079 range LZRS0087 tics 4
+flat LZRS0010 range LZRS0013 tics 8
+switch LZRS0022 on pic LZRS0027 tics 0
+switch LZRS0023 on pic LZRS0028 tics 0
+
+// Onslaught DM Pack
+texture OSLP0147 range OSLP0150 tics 8
+switch OSLP0200 on pic OSLP0206 tics 0
+switch OSLP0204 on pic OSLP0210 tics 0
+
+// Overload Deathmatches
+texture OVLD0012 range OVLD0015 tics 8
+texture OVLD0039 range OVLD0042 tics 8
+texture OVLD0044 range OVLD0047 tics 8
+
+// OZWANGO
+switch DWOZ0001 on pic DWOZ0006 tics 0
+switch DWOZ0002 on pic DWOZ0007 tics 0
+switch DWOZ0003 on pic DWOZ0008 tics 0
+switch DWOZ0004 on pic DWOZ0009 tics 0
+switch DWOZ0005 on pic DWOZ0010 tics 0
+
+// Pursuit
+texture PRSU0067 range PRSU0070 tics 8 allowdecals
+texture PRSU0086 range PRSU0089 tics 8
+switch PRSU0075 on pic PRSU0081 tics 0
+switch PRSU0076 on pic PRSU0082 tics 0
+
+// Reclamation
+texture RCLM0056 range RCLM0059 tics 8
+texture RCLM0083 range RCLM0086 tics 8 allowdecals
+texture RCLM0096 range RCLM0099 tics 8
+texture RCLM0112 range RCLM0115 tics 8
+flat RCLM0002 range RCLM0005 tics 8
+flat RCLM0006 range RCLM0009 tics 8
+flat RCLM0010 range RCLM0013 tics 4
+switch RCLM0024 on pic RCLM0030 tics 0
+switch RCLM0101 on pic RCLM0102 tics 0
+switch RCLM0103 on pic RCLM0104 tics 0
+switch RCLM0105 on pic RCLM0106 tics 0
+switch RCLM0135 on pic RCLM0136 tics 0
+switch RCLM0138 on pic RCLM0139 tics 0
+
+// Surge DM
+texture SRG10045 range SRG10047 tics 8
+texture SRG10048 range SRG10051 tics 8
+texture SRG10052 range SRG10055 tics 8
+switch SRG10082 on pic SRG10088 tics 0
+
+// Surge DM II
+texture SRG20049 range SRG20052 tics 8
+texture SRG20088 range SRG20090 tics 8
+texture SRG20191 range SRG20206 tics 8
+texture SRG20236 range SRG20239 tics 8
+texture SRG20253 range SRG20256 tics 8
+switch SRG20244 on pic SRG20249 tics 0
+
+// TokeDM
+texture TKDM0033 range TKDM0036 tics 8 allowdecals
+texture TKDM0037 range TKDM0040 tics 8 allowdecals
+texture TKDM0102 range TKDM0105 tics 8
+texture TKDM0256 range TKDM0258 tics 8 allowdecals
+texture TKDM0407 range TKDM0410 tics 8
+flat TKDM0007 range TKDM0010 tics 8
+switch TKDM0312 on pic TKDM0352 tics 0
+switch TKDM0321 on pic TKDM0361 tics 0
+switch TKDM0338 on pic TKDM0378 tics 0
+switch TKDM0340 on pic TKDM0380 tics 0
+switch TKDM0341 on pic TKDM0381 tics 0
+switch TKDM0342 on pic TKDM0382 tics 0
+switch TKDM0346 on pic TKDM0386 tics 0
+
+// TWANGO1
+texture TWN10106 range TWN10109 tics 8
+texture TWN10210 range TWN10213 tics 8
+switch TWN10189 on pic TWN10194 tics 0
+switch TWN10190 on pic TWN10195 tics 0
+
+// UDMX + UDM3
+texture UDMX0926 range UDMX0929 tics 8
+flat UDMX0240 range UDMX0242 tics 8
+flat UDMX0279 range UDMX0281 tics 8
+flat UDMX0398 range UDMX0401 tics 8
+switch UDMX0410 on pic UDMX0415 tics 0
+switch UDMX0411 on pic UDMX0416 tics 0
+switch UDMX0413 on pic UDMX0418 tics 0
+
+// Vignettes of Deathmatch
+texture VODM0073 range VODM0076 tics 8
+flat VODM0053 range VODM0040 tics 6
+switch VODM0088 on pic VODM0089 tics 0
+texture VODM0069 range VODM0072 tics 8

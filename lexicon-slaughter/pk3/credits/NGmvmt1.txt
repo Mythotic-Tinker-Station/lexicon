@@ -1,0 +1,45 @@
+===========================================================================
+Advanced engine needed  : prboom/+ 2.5.0.7 or newer, for map21.
+Primary purpose         : Single player
+===========================================================================
+Title                   : Newgothic - movement 1
+Filename                : NGmvmt1.wad
+Release date            : 10/23/2010 - bugfixed 12/17/2010
+Author                  : Christopher Shepherd aka Armouredblood
+Email Address           : BTitanGamer@gmail.com
+Other Files By Author   : SL (shai'tan's luck), celticmansion, some dwspd maps in 22-24, a few maps in pcorf's community project (also in-progress), some more maps in the 1994 remake challenge (also in-progress), a few odds-and-ends elsewhere
+Misc. Author Info       : Bio major, fantasy/sci fi fanatic.
+Description             : My little repository of insane slaughter maps. Movement 1 released because I wanted to focus on Uacultra 2 with 40oz. So about the maps, this wad contains 18 gothic, industrial, or hell-themed maps, many are actually a bit of a combination of themes. Expect numbers of monsters around the largest slaughter maps you've encountered, or possibly more. But the gameplay in most will be a little easier cause I overstock powerups. 
+Additional Credits to   : gothicteam for gothictx, decontex and ogrodtex authors, 40oz for ultratex. Big thanks to phml, gggmork, anima zero, and lately rjy for a lot of testing and dealing with the random crap I throw into my maps ;) All the authors in the midi list are awesome, and so is doomhero85 for uploading midi versions of the two slayer songs and incantations of fire, which I used. And just now entryway, for releasing a test version of prboom just so it runs my map xD
+===========================================================================
+* What is included *
+New levels              : 18
+Sounds                  : NO
+Music                   : YES - See midi list
+Graphics                : Gothictx, Decontex, Ogrodtex, Ultratex
+Dehacked/BEX Patch      : NO
+Demos                   : NO
+Other                   : NO
+Other files required    : NO
+* Play Information *
+Game                    : DOOM2
+Map #                   : 01-16,21,31
+Single Player           : Designed for
+Cooperative 2-4 Player  :  Starts only
+Deathmatch 2-4 Player   : a few maps (15, 21) have dm starts. Not recommended though
+Other game styles       : NO
+Difficulty Settings     : A few maps will have fewer monsters off of UV, but most difficulty nerfing is done by the engine
+* Construction *
+Base                    : New from scratch
+Build Time              :  10 months, off and on. Average time to map a map was 2-3 weeks. Bugfixing took another  month +
+Editor(s) used          : DB2, XWE, WINTEX 3.4
+Known Bugs              : maps 13,15, and 21 can experience slowdowns on less powerful computers, and the eastern caves part of map21 causes slowdown for everyone who has played it. 
+May Not Run With        : maps 13 and 21 requires prboom/+ 2.5.0.7 or newer because it uses zdbsp -extended nodes. Other maps can be played on older versions. Additionally a new version (2.5.0.9 test) fixes the dying and crashing bug on 21.
+Tested With             : prboom+ 2.5.0.7/9, skulltag, probably gzdoom at some time
+* Copyright / Permissions *
+You can modify the levels if you want, but credit me if you do. Midis and texture packs seem to be free use with credit except for gothictx.
+
+* Where to get the file that this text file describes *
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: Something gothic thread on DW/wads&mods
+FTP sites:

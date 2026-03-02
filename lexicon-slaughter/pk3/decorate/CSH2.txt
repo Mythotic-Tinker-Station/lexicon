@@ -1,0 +1,119 @@
+Actor Lexicon_CSH2_ZombieMan : ZombieMan
+{
+	States
+	{
+	Spawn:
+		LY05 AB 10 A_Look
+		Loop
+	See:
+		LY05 AABBCCDD 4 A_Chase
+		Loop
+	Missile:
+		LY05 E 10 A_FaceTarget
+		LY05 F 8 A_PosAttack
+		LY05 E 8
+		Goto See
+	Pain:
+		LY05 G 3
+		LY05 G 3 A_Pain
+		Goto See
+	Death:
+		LY05 H 5
+		LY05 I 5 A_Scream
+		LY05 J 5 A_NoBlocking
+		LY05 K 5
+		LY05 L -1
+		Stop
+	XDeath:
+		LY05 M 5
+		LY05 N 5 A_XScream
+		LY05 O 5 A_NoBlocking
+		LY05 PQRST 5
+		LY05 U -1
+		Stop
+	Raise:
+		LY05 K 5
+		LY05 JIH 5
+		Goto See
+	}
+}
+
+Actor Lexicon_CSH2_ShotgunGuy : ShotgunGuy
+{
+	States
+	{
+	Spawn:
+		LY04 AB 10 A_Look
+		Loop
+	See:
+		LY04 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LY04 E 10 A_FaceTarget
+		LY04 F 10 BRIGHT A_SposAttackUseAtkSound
+		LY04 E 10
+		Goto See
+	Pain:
+		LY04 G 3
+		LY04 G 3 A_Pain
+		Goto See
+	Death:
+		LY04 H 5
+		LY04 I 5 A_Scream
+		LY04 J 5 A_NoBlocking
+		LY04 K 5
+		LY04 L -1
+		Stop
+	XDeath:
+		LY04 M 5
+		LY04 N 5 A_XScream
+		LY04 O 5 A_NoBlocking
+		LY04 PQRST 5
+		LY04 U -1
+		Stop
+	Raise:
+		LY04 L 5
+		LY04 KJIH 5
+		Goto See
+	}
+}
+
+Actor Lexicon_CSH2_ChaingunGuy : ChaingunGuy
+{
+	States
+	{
+	Spawn:
+		LY06 AB 10 A_Look
+		Loop
+	See:
+		LY06 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LY06 E 10 A_FaceTarget
+		LY06 FE 4 BRIGHT A_CPosAttack
+		LY06 F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		LY06 G 3
+		LY06 G 3 A_Pain
+		Goto See
+	Death:
+		LY06 H 5
+		LY06 I 5 A_Scream
+		LY06 J 5 A_NoBlocking
+		LY06 KLM 5
+		LY06 N -1
+		Stop
+	XDeath:
+		LY06 O 5 
+		LY06 P 5 A_XScream
+		LY06 Q 5 A_NoBlocking
+		LY06 RS 5
+		LY06 T -1
+		Stop
+	Raise:
+		LY06 N 5
+		LY06 MLKJIH 5
+		Goto See
+	}
+}

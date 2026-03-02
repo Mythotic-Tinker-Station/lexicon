@@ -1,0 +1,298 @@
+// The Final Frag Mapinfo
+
+defaultmap
+{
+	ExitPic = "FNFGINT"
+	EnterPic = "FNFGINT"
+	InterMusic = "D_FNFGIN"
+	NoJump
+	NoCrouch
+}
+
+map FNFG01 "Singe"
+{
+	TitlePatch = "FNFGV00"
+	Next = "FNFG02"
+	SecretNext = "FNFG02"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG01"
+}
+
+map FNFG02 "The Omen"
+{
+	TitlePatch = "FNFGV01"
+	Next = "FNFG03"
+	SecretNext = "FNFG03"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG02"
+}
+
+map FNFG03 "Scorch"
+{
+	TitlePatch = "FNFGV02"
+	Next = "FNFG04"
+	SecretNext = "FNFG04"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG03"
+}
+
+map FNFG04 "The Hook"
+{
+	TitlePatch = "FNFGV03"
+	Next = "FNFG05"
+	SecretNext = "FNFG05"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG04"
+}
+
+map FNFG05 "Venom"
+{
+	TitlePatch = "FNFGV04"
+	Next = "FNFG06"
+	SecretNext = "FNFG06"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG05"
+}
+
+map FNFG06 "Death Zone"
+{
+	TitlePatch = "FNFGV05"
+	Next = "FNFG07"
+	SecretNext = "FNFG07"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG06"
+}
+
+map FNFG07 "Quad"
+{
+	TitlePatch = "FNFGV06"
+	Next = "FNFG08"
+	SecretNext = "FNFG08"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG07"
+}
+
+map FNFG08 "Plasma Hell"
+{
+	TitlePatch = "FNFGV07"
+	Next = "FNFG09"
+	SecretNext = "FNFG09"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG08"
+}
+
+map FNFG09 "The Archives"
+{
+	TitlePatch = "FNFGV08"
+	Next = "FNFG10"
+	SecretNext = "FNFG10"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG09"
+}
+
+map FNFG10 "Inner Sanctum"
+{
+	TitlePatch = "FNFGV09"
+	Next = "FNFG11"
+	SecretNext = "FNFG11"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG10"
+}
+
+map FNFG11 "Taste"
+{
+	TitlePatch = "FNFGV10"
+	Next = "FNFG12"
+	SecretNext = "FNFG12"
+	Sky1 = "FNFG0002"
+	Music = "D_FNFG11"
+}
+
+map FNFG12 "System Control"
+{
+	TitlePatch = "FNFGV11"
+	Next = "FNFG13"
+	SecretNext = "FNFG13"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG12"
+}
+
+map FNFG13 "Return to the Archives"
+{
+	TitlePatch = "FNFGV12"
+	Next = "FNFG14"
+	SecretNext = "FNFG14"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG13"
+}
+
+map FNFG14 "The Reactor"
+{
+	TitlePatch = "FNFGV13"
+	Next = "FNFG15"
+	SecretNext = "FNFG15"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG14"
+}
+
+map FNFG15 "Nuclear Meltdown"
+{
+	TitlePatch = "FNFGV14"
+	Next = "FNFG16"
+	SecretNext = "FNFG31"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG15"
+}
+
+map FNFG16 "Napalm"
+{
+	TitlePatch = "FNFGV15"
+	Next = "FNFG17"
+	SecretNext = "FNFG17"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG16"
+}
+
+map FNFG17 "To Die"
+{
+	TitlePatch = "FNFGV16"
+	Next = "FNFG18"
+	SecretNext = "FNFG18"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG17"
+}
+
+map FNFG18 "The Bloodletting"
+{
+	TitlePatch = "FNFGV17"
+	Next = "FNFG19"
+	SecretNext = "FNFG19"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG18"
+}
+
+map FNFG19 "The Void"
+{
+	TitlePatch = "FNFGV18"
+	Next = "FNFG20"
+	SecretNext = "FNFG20"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG19"
+}
+
+map FNFG20 "Enigma"
+{
+	TitlePatch = "FNFGV19"
+	Next = "FNFG21"
+	SecretNext = "FNFG21"
+	Sky1 = "FNFG0003"
+	Music = "D_FNFG20"
+}
+
+map FNFG21 "Carnage"
+{
+	TitlePatch = "FNFGV20"
+	Next = "FNFG22"
+	SecretNext = "FNFG22"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG21"
+}
+
+map FNFG22 "id"
+{
+	TitlePatch = "FNFGV21"
+	Next = "FNFG23"
+	SecretNext = "FNFG23"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG22"
+}
+
+map FNFG23 "Armageddon"
+{
+	TitlePatch = "FNFGV22"
+	Next = "FNFG24"
+	SecretNext = "FNFG24"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG23"
+}
+
+map FNFG24 "Razor"
+{
+	TitlePatch = "FNFGV23"
+	Next = "FNFG25"
+	SecretNext = "FNFG25"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG24"
+}
+
+map FNFG25 "Dweller in the Cellar"
+{
+	TitlePatch = "FNFGV24"
+	Next = "FNFG26"
+	SecretNext = "FNFG26"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG25"
+}
+
+map FNFG26 "Medideath"
+{
+	TitlePatch = "FNFGV25"
+	Next = "FNFG27"
+	SecretNext = "FNFG27"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG26"
+}
+
+map FNFG27 "Brimstone"
+{
+	TitlePatch = "FNFGV26"
+	Next = "FNFG28"
+	SecretNext = "FNFG28"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG27"
+}
+
+map FNFG28 "Entryway"
+{
+	TitlePatch = "FNFGV27"
+	Next = "FNFG29"
+	SecretNext = "FNFG29"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG28"
+}
+
+map FNFG29 "Dead Simple"
+{
+	TitlePatch = "FNFGV28"
+	Next = "FNFG30"
+	SecretNext = "FNFG30"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG29"
+}
+
+map FNFG30 "Halls of the Doomed"
+{
+	TitlePatch = "FNFGV29"
+	next = "VR"
+	Secretnext = "VR"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG30"
+}
+
+map FNFG31 "Hangar"
+{
+	TitlePatch = "FNFGV30"
+	Next = "FNFG16"
+	SecretNext = "FNFG32"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG31"
+}
+
+map FNFG32 "A Classic"
+{
+	TitlePatch = "FNFGV31"
+	Next = "FNFG16"
+	SecretNext = "FNFG16"
+	Sky1 = "FNFG0004"
+	Music = "D_FNFG32"
+}

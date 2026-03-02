@@ -1,0 +1,238 @@
+Texture "H2HX0005", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "H2HX0010", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "H2HX0020", 64, 128
+{
+	Patch "RW1_3", 0, 0
+	Patch "H2HX0155", 0, 96
+	Patch "H2HX0156", 32, 96
+}
+Texture "H2HX0021", 64, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "H2HX0157", 0, 96
+	Patch "H2HX0158", 32, 96
+}
+Texture "H2HX0022", 64, 128
+{
+	Patch "RW41_3", 0, 0
+	Patch "H2HX0156", 0, 96
+	Patch "H2HX0157", 32, 96
+}
+Texture "H2HX0024", 64, 128
+{
+	Patch "RW1_4", 0, 0
+	Patch "H2HX0155", 0, 96
+	Patch "H2HX0154", 32, 96
+}
+Texture "H2HX0040", 128, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "WALL00_1", 64, 0
+	Patch "WALL00_2", 83, 0
+	Patch "H2HX0156", 0, 96
+	Patch "H2HX0158", 32, 96
+	Patch "H2HX0160", 64, 96
+	Patch "H2HX0154", 96, 96
+}
+Texture "H2HX0047", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "H2HX0156", 0, 96
+	Patch "H2HX0154", 32, 96
+}
+Texture "H2HX0060", 64, 128
+{
+	Patch "RW9_3", 0, 0
+	Patch "H2HX0159", 0, 96
+	Patch "H2HX0156", 32, 96
+}
+Texture "H2HX0061", 64, 128
+{
+	Patch "RW9_4", 0, 0
+	Patch "H2HX0156", 0, 96
+	Patch "H2HX0157", 32, 96
+}
+Texture "H2HX0062", 64, 128
+{
+	Patch "RW22_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0063", 64, 128
+{
+	Patch "RW1_3", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0064", 64, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0065", 64, 96
+{
+	Patch "RW41_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0066", 64, 128
+{
+	Patch "RW41_3", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0068", 64, 128
+{
+	Patch "RW1_4", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0076", 64, 128
+{
+	Patch "RW12_3", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0081", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0082", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0086", 128, 128
+{
+	Patch "MWALL4_2", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0087", 128, 128
+{
+	Patch "MWALL5_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0088", 128, 128
+{
+	Patch "MWALL4_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0089", 128, 128
+{
+	Patch "MWALL1_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0090", 128, 128
+{
+	Patch "MWALL2_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0092", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0097", 64, 128
+{
+	Patch "RW30_3", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0102", 128, 128
+{
+	Patch "RW13_1", 0, 0
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0103", 64, 128
+{
+	Patch "RW9_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0104", 64, 128
+{
+	Patch "RW9_2", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0105", 64, 128
+{
+	Patch "RW9_3", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0106", 64, 128
+{
+	Patch "RW16_4", 0, 0
+	Patch "H2HX0162", 14, 22
+}
+Texture "H2HX0109", 128, 48
+{
+	Patch "H2HX0165", 0, 0
+}
+Texture "H2HX0110", 128, 48
+{
+	Patch "H2HX0166", 0, 0
+}
+Texture "H2HX0111", 64, 48
+{
+	Patch "H2HX0167", 0, 0
+}
+Texture "H2HX0112", 64, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "H2HX0168", 7, 32
+}
+Texture "H2HX0113", 64, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "H2HX0169", 7, 32
+}
+Texture "H2HX0114", 64, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "H2HX0170", 7, 32
+}
+Texture "H2HX0117", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}
+Texture "H2HX0120", 128, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "W28_8", 64, 0
+	Patch "W28_5", 0, 0
+	Patch "W28_5", 64, 64
+	Patch "H2HX0156", 0, 96
+	Patch "H2HX0154", 32, 96
+	Patch "H2HX0158", 64, 96
+	Patch "H2HX0153", 96, 96
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0121", 128, 128
+{
+	Patch "W28_7", 0, 0
+	Patch "W28_6", 0, 64
+	Patch "W28_7", 64, 64
+	Patch "W28_6", 64, 0
+	Patch "H2HX0153", 0, 96
+	Patch "H2HX0155", 32, 96
+	Patch "H2HX0158", 64, 96
+	Patch "H2HX0153", 96, 96
+	Patch "H2HX0161", 0, 0
+	Patch "H2HX0161", 64, 0
+}
+Texture "H2HX0122", 64, 128
+{
+	Patch "RW42_1", 0, 0
+	Patch "H2HX0161", 0, 0
+}

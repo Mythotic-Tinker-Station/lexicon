@@ -1,0 +1,298 @@
+// Gothic DeathMatch II Mapinfo
+
+defaultmap
+{
+	ExitPic = "GTH2INT"
+	EnterPic = "GTH2INT"
+	InterMusic = "D_GTH2IN"
+	NoJump
+	NoCrouch
+}
+
+map GTH201 "Ruckas"
+{
+	TitlePatch = "GTH2V00"
+	Next = "GTH202"
+	SecretNext = "GTH202"
+	Sky1 = "GTH20310"
+	Music = "D_GTH201"
+}
+
+map GTH202 "Hellsphere"
+{
+	TitlePatch = "GTH2V01"
+	Next = "GTH203"
+	SecretNext = "GTH203"
+	Sky1 = "GTH20310"
+	Music = "D_GTH202"
+}
+
+map GTH203 "American Gothic"
+{
+	TitlePatch = "GTH2V02"
+	Next = "GTH204"
+	SecretNext = "GTH204"
+	Sky1 = "GTH20310"
+	Music = "D_GTH203"
+}
+
+map GTH204 "Kingdom Come to Zero Hour"
+{
+	TitlePatch = "GTH2V03"
+	Next = "GTH205"
+	SecretNext = "GTH205"
+	Sky1 = "GTH20310"
+	Music = "D_GTH204"
+}
+
+map GTH205 "Invalid"
+{
+	TitlePatch = "GTH2V04"
+	Next = "GTH206"
+	SecretNext = "GTH206"
+	Sky1 = "GTH20310"
+	Music = "D_GTH205"
+}
+
+map GTH206 "Niggle"
+{
+	TitlePatch = "GTH2V05"
+	Next = "GTH207"
+	SecretNext = "GTH207"
+	Sky1 = "GTH20310"
+	Music = "D_GTH206"
+}
+
+map GTH207 "The Darkness Beneath"
+{
+	TitlePatch = "GTH2V06"
+	Next = "GTH208"
+	SecretNext = "GTH208"
+	Sky1 = "GTH20310"
+	Music = "D_GTH207"
+}
+
+map GTH208 "Shades of Amber"
+{
+	TitlePatch = "GTH2V07"
+	Next = "GTH209"
+	SecretNext = "GTH209"
+	Sky1 = "GTH20310"
+	Music = "D_GTH208"
+}
+
+map GTH209 "Benthian Bastille"
+{
+	TitlePatch = "GTH2V08"
+	Next = "GTH210"
+	SecretNext = "GTH210"
+	Sky1 = "GTH20310"
+	Music = "D_GTH209"
+}
+
+map GTH210 "San Salvador de Leyre: Crypt"
+{
+	TitlePatch = "GTH2V09"
+	Next = "GTH211"
+	SecretNext = "GTH211"
+	Sky1 = "GTH20310"
+	Music = "D_GTH210"
+}
+
+map GTH211 "Shrouded Ground"
+{
+	TitlePatch = "GTH2V10"
+	Next = "GTH212"
+	SecretNext = "GTH212"
+	Sky1 = "GTH20310"
+	Music = "D_GTH211"
+}
+
+map GTH212 "Souls for the Pagans"
+{
+	TitlePatch = "GTH2V11"
+	Next = "GTH213"
+	SecretNext = "GTH213"
+	Sky1 = "GTH20311"
+	Music = "D_GTH212"
+}
+
+map GTH213 "Focal Zero"
+{
+	TitlePatch = "GTH2V12"
+	Next = "GTH214"
+	SecretNext = "GTH214"
+	Sky1 = "GTH20311"
+	Music = "D_GTH213"
+}
+
+map GTH214 "Fontevrault 1110 a.d."
+{
+	TitlePatch = "GTH2V13"
+	Next = "GTH215"
+	SecretNext = "GTH215"
+	Sky1 = "GTH20311"
+	Music = "D_GTH214"
+}
+
+map GTH215 "Fragment Sixty Six"
+{
+	TitlePatch = "GTH2V14"
+	Next = "GTH216"
+	SecretNext = "GTH231"
+	Sky1 = "GTH20311"
+	Music = "D_GTH206"
+}
+
+map GTH216 "Dyhani"
+{
+	TitlePatch = "GTH2V15"
+	Next = "GTH217"
+	SecretNext = "GTH217"
+	Sky1 = "GTH20311"
+	Music = "D_GTH216"
+}
+
+map GTH217 "Mausoleum"
+{
+	TitlePatch = "GTH2V16"
+	Next = "GTH218"
+	SecretNext = "GTH218"
+	Sky1 = "GTH20311"
+	Music = "D_GTH203"
+}
+
+map GTH218 "Cardona, San Vicenc"
+{
+	TitlePatch = "GTH2V17"
+	Next = "GTH219"
+	SecretNext = "GTH219"
+	Sky1 = "GTH20311"
+	Music = "D_GTH218"
+}
+
+map GTH219 "Artemisia Absinthium"
+{
+	TitlePatch = "GTH2V18"
+	Next = "GTH220"
+	SecretNext = "GTH220"
+	Sky1 = "GTH20311"
+	Music = "D_GTH219"
+}
+
+map GTH220 "Hoo Doo"
+{
+	TitlePatch = "GTH2V19"
+	Next = "GTH221"
+	SecretNext = "GTH221"
+	Sky1 = "GTH20311"
+	Music = "D_GTH220"
+}
+
+map GTH221 "Dominion"
+{
+	TitlePatch = "GTH2V20"
+	Next = "GTH222"
+	SecretNext = "GTH222"
+	Sky1 = "GTH20312"
+	Music = "D_GTH221"
+}
+
+map GTH222 "Ephemeral Playground"
+{
+	TitlePatch = "GTH2V21"
+	Next = "GTH223"
+	SecretNext = "GTH223"
+	Sky1 = "GTH20312"
+	Music = "D_GTH222"
+}
+
+map GTH223 "Gateway to Inverness"
+{
+	TitlePatch = "GTH2V22"
+	Next = "GTH224"
+	SecretNext = "GTH224"
+	Sky1 = "GTH20312"
+	Music = "D_GTH223"
+}
+
+map GTH224 "Acropolis"
+{
+	TitlePatch = "GTH2V23"
+	Next = "GTH225"
+	SecretNext = "GTH225"
+	Sky1 = "GTH20312"
+	Music = "D_GTH224"
+}
+
+map GTH225 "The Keeper's Call"
+{
+	TitlePatch = "GTH2V24"
+	Next = "GTH226"
+	SecretNext = "GTH226"
+	Sky1 = "GTH20312"
+	Music = "D_GTH208"
+}
+
+map GTH226 "Opiate"
+{
+	TitlePatch = "GTH2V25"
+	Next = "GTH227"
+	SecretNext = "GTH227"
+	Sky1 = "GTH20312"
+	Music = "D_GTH211"
+}
+
+map GTH227 "Bricolage"
+{
+	TitlePatch = "GTH2V26"
+	Next = "GTH228"
+	SecretNext = "GTH228"
+	Sky1 = "GTH20312"
+	Music = "D_GTH213"
+}
+
+map GTH228 "Witches Congregation"
+{
+	TitlePatch = "GTH2V27"
+	Next = "GTH229"
+	SecretNext = "GTH229"
+	Sky1 = "GTH20312"
+	Music = "D_GTH228"
+}
+
+map GTH229 "Apocolyptopolis"
+{
+	TitlePatch = "GTH2V28"
+	Next = "GTH230"
+	SecretNext = "GTH230"
+	Sky1 = "GTH20312"
+	Music = "D_GTH229"
+}
+
+map GTH230 "Quake 3:16"
+{
+	TitlePatch = "GTH2V29"
+	next = "VR"
+	Secretnext = "VR"
+	Sky1 = "GTH20312"
+	Music = "D_GTH230"
+}
+
+map GTH231 "Absolution"
+{
+	TitlePatch = "GTH2V30"
+	Next = "GTH216"
+	SecretNext = "GTH232"
+	Sky1 = "GTH20312"
+	Music = "D_GTH220"
+}
+
+map GTH232 "Ad Infinitum"
+{
+	TitlePatch = "GTH2V31"
+	Next = "GTH216"
+	SecretNext = "GTH216"
+	Sky1 = "GTH20312"
+	Music = "D_GTH210"
+}

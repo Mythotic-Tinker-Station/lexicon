@@ -1,0 +1,393 @@
+// Sunlust Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SNLU01 "Chasing Suns"
+{
+	titlepatch = "SNLUV00"
+	next = "SNLU02"
+	secretnext = "SNLU02"
+	sky1 = "SKY1"
+	music = "D_SNLU01"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU02 "Down Through"
+{
+	titlepatch = "SNLUV01"
+	next = "SNLU03"
+	secretnext = "SNLU03"
+	sky1 = "SKY1"
+	music = "D_SNLU02"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU03 "Forgotten Shrine"
+{
+	titlepatch = "SNLUV02"
+	next = "SNLU04"
+	secretnext = "SNLU04"
+	sky1 = "SKY1"
+	music = "D_SNLU03"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU04 "Sol"
+{
+	titlepatch = "SNLUV03"
+	next = "SNLU05"
+	secretnext = "SNLU05"
+	sky1 = "SKY1"
+	music = "D_SNLU04"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU05 "Gear Up"
+{
+	titlepatch = "SNLUV04"
+	next = "SNLU06"
+	secretnext = "SNLU06"
+	sky1 = "RSKY1"
+	music = "D_SNLU05"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU06 "Neo Gerouru"
+{
+	titlepatch = "SNLUV05"
+	next = "SNLU07"
+	secretnext = "SNLU07"
+	sky1 = "SKY1"
+	music = "D_SNLU06"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU07 "Total Enclosure"
+{
+	titlepatch = "SNLUV06"
+	next = "SNLU08"
+	secretnext = "SNLU08"
+	sky1 = "SKY1"
+	music = "D_SNLU07"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+	Map07Special
+}
+
+map SNLU08 "Oneira"
+{
+	titlepatch = "SNLUV07"
+	next = "SNLU09"
+	secretnext = "SNLU09"
+	sky1 = "SKY1"
+	music = "D_SNLU08"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU09 "Saquasohuh"
+{
+	titlepatch = "SNLUV08"
+	next = "SNLU10"
+	secretnext = "SNLU10"
+	sky1 = "SKY1"
+	music = "D_SNLU09"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU10 "Maru"
+{
+	titlepatch = "SNLUV09"
+	next = "SNLU11"
+	secretnext = "SNLU11"
+	sky1 = "SKY1"
+	music = "D_SNLU10"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU11 "Cave Culture"
+{
+	titlepatch = "SNLUV10"
+	next = "SNLU12"
+	secretnext = "SNLU12"
+	sky1 = "SKY1"
+	music = "D_SNLU11"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU12 "Dangeresque"
+{
+	titlepatch = "SNLUV11"
+	next = "SNLU13"
+	secretnext = "SNLU13"
+	sky1 = "SKY1"
+	music = "D_SNLU12"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU13 "Ruins of Skania"
+{
+	titlepatch = "SNLUV12"
+	next = "SNLU14"
+	secretnext = "SNLU14"
+	sky1 = "SKY1"
+	music = "D_SNLU13"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU14 "Troglobite"
+{
+	titlepatch = "SNLUV13"
+	next = "SNLU15"
+	secretnext = "SNLU15"
+	sky1 = "SKY1"
+	music = "D_SNLU14"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU15 "Strength And Anger"
+{
+	titlepatch = "SNLUV14"
+	next = "SNLU16"
+	secretnext = "SNLU31"
+	sky1 = "SKY1"
+	music = "D_SNLU15"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU16 "Lost Antiques"
+{
+	titlepatch = "SNLUV15"
+	next = "SNLU17"
+	secretnext = "SNLU17"
+	sky1 = "SKY1"
+	music = "D_SNLU16"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU17 "The Womb"
+{
+	titlepatch = "SNLUV16"
+	next = "SNLU18"
+	secretnext = "SNLU18"
+	sky1 = "SKY1"
+	music = "D_SNLU17"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU18 "Mu Cephei"
+{
+	titlepatch = "SNLUV17"
+	next = "SNLU19"
+	secretnext = "SNLU19"
+	sky1 = "SKY1"
+	music = "D_SNLU18"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU19 "Blood Geometry"
+{
+	titlepatch = "SNLUV18"
+	next = "SNLU20"
+	secretnext = "SNLU20"
+	sky1 = "SKY1"
+	music = "D_SNLU19"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU20 "Inverti in Darkness"
+{
+	titlepatch = "SNLUV19"
+	next = "SNLU21"
+	secretnext = "SNLU21"
+	sky1 = "SKY1"
+	music = "D_SNLU20"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU21 "Entering Aquatic Desert"
+{
+	titlepatch = "SNLUV20"
+	next = "SNLU22"
+	secretnext = "SNLU22"
+	sky1 = "SKY1"
+	music = "D_SNLU21"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU22 "Black Rabbit"
+{
+	titlepatch = "SNLUV21"
+	next = "SNLU23"
+	secretnext = "SNLU23"
+	sky1 = "SKY1"
+	music = "D_SNLU22"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU23 "In Flight"
+{
+	titlepatch = "SNLUV22"
+	next = "SNLU24"
+	secretnext = "SNLU24"
+	sky1 = "SKY1"
+	music = "D_SNLU23"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU24 "Dying On Cue"
+{
+	titlepatch = "SNLUV23"
+	next = "SNLU25"
+	secretnext = "SNLU25"
+	sky1 = "SKY1"
+	music = "D_SNLU24"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU25 "Proxyon"
+{
+	titlepatch = "SNLUV24"
+	next = "SNLU26"
+	secretnext = "SNLU26"
+	sky1 = "SKY1"
+	music = "D_SNLU25"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU26 "Kinetics"
+{
+	titlepatch = "SNLUV25"
+	next = "SNLU27"
+	secretnext = "SNLU27"
+	sky1 = "SKY1"
+	music = "D_SNLU26"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU27 "Emerald Spire"
+{
+	titlepatch = "SNLUV26"
+	next = "SNLU28"
+	secretnext = "SNLU28"
+	sky1 = "SKY1"
+	music = "D_SNLU27"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU28 "Maelstrom"
+{
+	titlepatch = "SNLUV27"
+	next = "SNLU29"
+	secretnext = "SNLU29"
+	sky1 = "SKY1"
+	music = "D_SNLU28"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU29 "Go Fuck Yourself"
+{
+	titlepatch = "SNLUV28"
+	next = "SNLU30"
+	secretnext = "SNLU30"
+	sky1 = "SKY1"
+	music = "D_SNLU29"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU30 "God Machine"
+{
+	titlepatch = "SNLUV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "D_SNLU30"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+	allowmonstertelefrags
+}
+
+map SNLU31 "Birds of A Feather"
+{
+	titlepatch = "SNLUV30"
+	next = "SNLU16"
+	secretnext = "SNLU32"
+	sky1 = "RSKY3"
+	music = "D_SNLU31"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}
+
+map SNLU32 "Postcoitus Doom"
+{
+	titlepatch = "SNLUV31"
+	next = "SNLU16"
+	secretnext = "SNLU16"
+	sky1 = "SKY1"
+	music = "D_SNLU32"
+	intermusic = "D_SNLUIN"
+	ExitPic = "SNLUINT"
+	EnterPic = "SNLUINT"
+}

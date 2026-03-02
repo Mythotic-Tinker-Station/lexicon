@@ -1,0 +1,381 @@
+// Hell's Bane Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLBNE1M1 "The Frontier"
+{
+	titlepatch = "HLBNV00"
+	next = "HLBNE1M2"
+	secretnext = "HLBNE1M2"
+	sky1 = "DSKY1"
+	music = "D_HLBN01"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M2 "Meek"
+{
+	titlepatch = "HLBNV01"
+	next = "HLBNE1M3"
+	secretnext = "HLBNE1M3"
+	sky1 = "DSKY1"
+	music = "D_HLBN02"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M3 "Main-Frame"
+{
+	titlepatch = "HLBNV02"
+	next = "HLBNE1M4"
+	secretnext = "HLBNE1M9"
+	sky1 = "DSKY1"
+	music = "D_HLBN03"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M4 "Command Center"
+{
+	titlepatch = "HLBNV03"
+	next = "HLBNE1M5"
+	secretnext = "HLBNE1M5"
+	sky1 = "DSKY1"
+	music = "D_HLBN04"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M5 "Chemical Processing Plant"
+{
+	titlepatch = "HLBNV04"
+	next = "HLBNE1M6"
+	secretnext = "HLBNE1M6"
+	sky1 = "DSKY1"
+	music = "D_HLBN05"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M6 "Primary Base"
+{
+	titlepatch = "HLBNV05"
+	next = "HLBNE1M7"
+	secretnext = "HLBNE1M7"
+	sky1 = "DSKY1"
+	music = "D_HLBN06"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M7 "Laboratories"
+{
+	titlepatch = "HLBNV06"
+	next = "HLBNE1M8"
+	secretnext = "HLBNE1M8"
+	sky1 = "DSKY1"
+	music = "D_HLBN07"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE1M8 "The Grinder"
+{
+	titlepatch = "HLBNV07"
+	next = "HLBNE2M1"
+	secretnext = "HLBNE2M1"
+	sky1 = "DSKY1"
+	music = "D_HLBN08"
+	intermusic = "D_HLBNIN"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map HLBNE1M9 "Strategical Offensive Array"
+{
+	titlepatch = "HLBNV08"
+	next = "HLBNE1M4"
+	secretnext = "HLBNE1M4"
+	sky1 = "DSKY1"
+	music = "D_HLBN09"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M1 "Rip and Tear"
+{
+	titlepatch = "HLBNV09"
+	next = "HLBNE2M2"
+	secretnext = "HLBNE2M2"
+	sky1 = "DSKY2"
+	music = "D_HLBN10"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M2 "Beta Station"
+{
+	titlepatch = "HLBNV10"
+	next = "HLBNE2M3"
+	secretnext = "HLBNE2M3"
+	sky1 = "DSKY2"
+	music = "D_HLBN11"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M3 "The Wailing Halls"
+{
+	titlepatch = "HLBNV11"
+	next = "HLBNE2M4"
+	secretnext = "HLBNE2M4"
+	sky1 = "DSKY2"
+	music = "D_HLBN12"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M4 "Hive of the Horde"
+{
+	titlepatch = "HLBNV12"
+	next = "HLBNE2M5"
+	secretnext = "HLBNE2M5"
+	sky1 = "DSKY2"
+	music = "D_HLBN13"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M5 "Chasm Control"
+{
+	titlepatch = "HLBNV13"
+	next = "HLBNE2M6"
+	secretnext = "HLBNE2M9"
+	sky1 = "DSKY2"
+	music = "D_HLBN14"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M6 "Smash It!"
+{
+	titlepatch = "HLBNV14"
+	next = "HLBNE2M7"
+	secretnext = "HLBNE2M7"
+	sky1 = "DSKY2"
+	music = "D_HLBN15"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M7 "Hunt'em High'n'Low"
+{
+	titlepatch = "HLBNV15"
+	next = "HLBNE2M8"
+	secretnext = "HLBNE2M8"
+	sky1 = "DSKY2"
+	music = "D_HLBN16"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE2M8 "Domain of Evil"
+{
+	titlepatch = "HLBNV16"
+	next = "HLBNE3M1"
+	secretnext = "HLBNE3M1"
+	sky1 = "DSKY2"
+	music = "D_HLBN17"
+	intermusic = "D_HLBNIN"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map HLBNE2M9 "The End?"
+{
+	titlepatch = "HLBNV17"
+	next = "HLBNE2M6"
+	secretnext = "HLBNE2M6"
+	sky1 = "DSKY2"
+	music = "D_HLBN18"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M1 "The Trickster's Behest"
+{
+	titlepatch = "HLBNV18"
+	next = "HLBNE3M2"
+	secretnext = "HLBNE3M2"
+	sky1 = "DSKY3"
+	music = "D_HLBN19"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M2 "Chart the Course for Carnage"
+{
+	titlepatch = "HLBNV19"
+	next = "HLBNE3M3"
+	secretnext = "HLBNE3M3"
+	sky1 = "DSKY3"
+	music = "D_HLBN20"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M3 "The Bloody Realms"
+{
+	titlepatch = "HLBNV20"
+	next = "HLBNE3M4"
+	secretnext = "HLBNE3M4"
+	sky1 = "DSKY3"
+	music = "D_HLBN21"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M4 "Obituary Written"
+{
+	titlepatch = "HLBNV21"
+	next = "HLBNE3M5"
+	secretnext = "HLBNE3M5"
+	sky1 = "DSKY3"
+	music = "D_HLBN22"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M5 "Twisted High"
+{
+	titlepatch = "HLBNV22"
+	next = "HLBNE3M6"
+	secretnext = "HLBNE3M6"
+	sky1 = "DSKY3"
+	music = "D_HLBN23"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M6 "The Remedy"
+{
+	titlepatch = "HLBNV23"
+	next = "HLBNE3M7"
+	secretnext = "HLBNE3M9"
+	sky1 = "DSKY3"
+	music = "D_HLBN24"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M7 "No Way Back"
+{
+	titlepatch = "HLBNV24"
+	next = "HLBNE3M8"
+	secretnext = "HLBNE3M8"
+	sky1 = "DSKY3"
+	music = "D_HLBN25"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE3M8 "Death Will Be No Respite"
+{
+	titlepatch = "HLBNV25"
+	next = "HLBNE4M1"
+	secretnext = "HLBNE4M1"
+	sky1 = "DSKY3"
+	music = "D_HLBN26"
+	intermusic = "D_HLBNIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map HLBNE3M9 "Flay the Obscene"
+{
+	titlepatch = "HLBNV26"
+	next = "HLBNE3M7"
+	secretnext = "HLBNE3M7"
+	sky1 = "DSKY3"
+	music = "D_HLBN27"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M1 "The Blessed Hex"
+{
+	titlepatch = "HLBNV27"
+	next = "HLBNE4M2"
+	secretnext = "HLBNE4M2"
+	sky1 = "DSKY4"
+	music = "D_HLBN28"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M2 "Hell Unleashed"
+{
+	titlepatch = "HLBNV28"
+	next = "HLBNE4M3"
+	secretnext = "HLBNE4M9"
+	sky1 = "DSKY4"
+	music = "D_HLBN29"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M3 "Disreputable Stronghold"
+{
+	titlepatch = "HLBNV29"
+	next = "HLBNE4M4"
+	secretnext = "HLBNE4M4"
+	sky1 = "DSKY4"
+	music = "D_HLBN30"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M4 "High'n'Low"
+{
+	titlepatch = "HLBNV30"
+	next = "HLBNE4M5"
+	secretnext = "HLBNE4M5"
+	sky1 = "DSKY4"
+	music = "D_HLBN31"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M5 "Indominatable Haunt"
+{
+	titlepatch = "HLBNV31"
+	next = "HLBNE4M6"
+	secretnext = "HLBNE4M6"
+	sky1 = "DSKY4"
+	music = "D_HLBN32"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M6 "Odious Grounds"
+{
+	titlepatch = "HLBNV32"
+	next = "HLBNE4M7"
+	secretnext = "HLBNE4M7"
+	sky1 = "DSKY4"
+	music = "D_HLBN33"
+	intermusic = "D_HLBNIN"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map HLBNE4M7 "Bond of Hatred"
+{
+	titlepatch = "HLBNV33"
+	next = "HLBNE4M8"
+	secretnext = "HLBNE4M8"
+	sky1 = "DSKY4"
+	music = "D_HLBN34"
+	intermusic = "D_HLBNIN"
+}
+
+map HLBNE4M8 "Deus in Absentia"
+{
+	titlepatch = "HLBNV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "D_HLBN35"
+	intermusic = "D_HLBNIN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map HLBNE4M9 "Good Vibrations"
+{
+	titlepatch = "HLBNV35"
+	next = "HLBNE4M3"
+	secretnext = "HLBNE4M3"
+	sky1 = "DSKY4"
+	music = "D_HLBN36"
+	intermusic = "D_HLBNIN"
+}

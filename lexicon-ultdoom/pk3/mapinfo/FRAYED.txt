@@ -1,0 +1,417 @@
+// FRAYED Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map FRAYE1M1 "MX Outpost"
+{
+	titlepatch = "FRAYV00"
+	next = "FRAYE1M2"
+	secretnext = "FRAYE1M2"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M1"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M2 "Shipping Station"
+{
+	titlepatch = "FRAYV01"
+	next = "FRAYE1M3"
+	secretnext = "FRAYE1M3"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M2"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M3 "Operation Obsolete"
+{
+	titlepatch = "FRAYV02"
+	next = "FRAYE1M4"
+	secretnext = "FRAYE1M9"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M3"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M4 "Holding Area"
+{
+	titlepatch = "FRAYV03"
+	next = "FRAYE1M5"
+	secretnext = "FRAYE1M5"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M4"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M5 "Dark Draw"
+{
+	titlepatch = "FRAYV04"
+	next = "FRAYE1M6"
+	secretnext = "FRAYE1M6"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M5"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M6 "MainBreak"
+{
+	titlepatch = "FRAYV05"
+	next = "FRAYE1M7"
+	secretnext = "FRAYE1M7"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M6"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M7 "Contingency"
+{
+	titlepatch = "FRAYV06"
+	next = "FRAYE1M8"
+	secretnext = "FRAYE1M8"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M7"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE1M8 "Ephigor"
+{
+	titlepatch = "FRAYV07"
+	next = "FRAYE2M1"
+	secretnext = "FRAYE2M1"
+	sky1 = "FRAY0200"
+	music = "$MUSIC_E1M8"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map FRAYE1M9 "Garden Of Heathen"
+{
+	titlepatch = "FRAYV08"
+	next = "FRAYE1M4"
+	secretnext = "FRAYE1M4"
+	sky1 = "FRAY0200"
+	music = "D_FRAY01"
+	ExitPic = "FRAYINT1"
+	EnterPic = "FRAYINT1"
+}
+
+map FRAYE2M1 "Filtration Plant"
+{
+	titlepatch = "FRAYV09"
+	next = "FRAYE2M2"
+	secretnext = "FRAYE2M2"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M1"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M2 "The Gridlock"
+{
+	titlepatch = "FRAYV10"
+	next = "FRAYE2M3"
+	secretnext = "FRAYE2M3"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M2"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M3 "Fuel Refinery"
+{
+	titlepatch = "FRAYV11"
+	next = "FRAYE2M4"
+	secretnext = "FRAYE2M4"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M3"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M4 "Pipeline"
+{
+	titlepatch = "FRAYV12"
+	next = "FRAYE2M5"
+	secretnext = "FRAYE2M5"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M4"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M5 "Dump Zone"
+{
+	titlepatch = "FRAYV13"
+	next = "FRAYE2M6"
+	secretnext = "FRAYE2M9"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M5"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M6 "The Waste Gates"
+{
+	titlepatch = "FRAYV14"
+	next = "FRAYE2M7"
+	secretnext = "FRAYE2M7"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M6"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M7 "Terrestrial Decay"
+{
+	titlepatch = "FRAYV15"
+	next = "FRAYE2M8"
+	secretnext = "FRAYE2M8"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M7"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE2M8 "Nephilim"
+{
+	titlepatch = "FRAYV16"
+	next = "FRAYE3M1"
+	secretnext = "FRAYE3M1"
+	sky1 = "FRAY0201"
+	music = "$MUSIC_E2M8"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map FRAYE2M9 "Smelter Core"
+{
+	titlepatch = "FRAYV17"
+	next = "FRAYE2M6"
+	secretnext = "FRAYE2M6"
+	sky1 = "FRAY0201"
+	music = "D_FRAY02"
+	ExitPic = "FRAYINT2"
+	EnterPic = "FRAYINT2"
+}
+
+map FRAYE3M1 "Ritual Coast"
+{
+	titlepatch = "FRAYV18"
+	next = "FRAYE3M2"
+	secretnext = "FRAYE3M2"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M1"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M2 "Odyssey Of Ivy"
+{
+	titlepatch = "FRAYV19"
+	next = "FRAYE3M3"
+	secretnext = "FRAYE3M3"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M2"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M3 "Lethal Sea"
+{
+	titlepatch = "FRAYV20"
+	next = "FRAYE3M4"
+	secretnext = "FRAYE3M4"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M3"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M4 "Hydra Cathedral"
+{
+	titlepatch = "FRAYV21"
+	next = "FRAYE3M5"
+	secretnext = "FRAYE3M5"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M4"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M5 "HellPox"
+{
+	titlepatch = "FRAYV22"
+	next = "FRAYE3M6"
+	secretnext = "FRAYE3M6"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M5"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M6 "Crimson Keep"
+{
+	titlepatch = "FRAYV23"
+	next = "FRAYE3M7"
+	secretnext = "FRAYE3M9"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M6"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M7 "Death's Door"
+{
+	titlepatch = "FRAYV24"
+	next = "FRAYE3M8"
+	secretnext = "FRAYE3M8"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M7"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE3M8 "Tophet"
+{
+	titlepatch = "FRAYV25"
+	next = "FRAYE4M1"
+	secretnext = "FRAYE4M1"
+	sky1 = "FRAY0202"
+	music = "$MUSIC_E3M8"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map FRAYE3M9 "Honey"
+{
+	titlepatch = "FRAYV26"
+	next = "FRAYE3M7"
+	secretnext = "FRAYE3M7"
+	sky1 = "FRAY0202"
+	music = "D_FRAY03"
+	ExitPic = "FRAYINT3"
+	EnterPic = "FRAYINT3"
+}
+
+map FRAYE4M1 "Epigeous"
+{
+	titlepatch = "FRAYV27"
+	next = "FRAYE4M2"
+	secretnext = "FRAYE4M2"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E3M4"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M2 "Station 8"
+{
+	titlepatch = "FRAYV28"
+	next = "FRAYE4M3"
+	secretnext = "FRAYE4M9"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E3M2"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M3 "Hannah District"
+{
+	titlepatch = "FRAYV29"
+	next = "FRAYE4M4"
+	secretnext = "FRAYE4M4"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E3M3"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M4 "Ephigor Manor"
+{
+	titlepatch = "FRAYV30"
+	next = "FRAYE4M5"
+	secretnext = "FRAYE4M5"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E1M5"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M5 "Hyperion Oddity"
+{
+	titlepatch = "FRAYV31"
+	next = "FRAYE4M6"
+	secretnext = "FRAYE4M6"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E2M7"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M6 "Halls Of Mammon"
+{
+	titlepatch = "FRAYV32"
+	next = "FRAYE4M7"
+	secretnext = "FRAYE4M7"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E2M4"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map FRAYE4M7 "Final Transmission"
+{
+	titlepatch = "FRAYV33"
+	next = "FRAYE4M8"
+	secretnext = "FRAYE4M8"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E2M6"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}
+
+map FRAYE4M8 "The Void Beckons"
+{
+	titlepatch = "FRAYV34"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "FRAY0203"
+	music = "$MUSIC_E2M5"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map FRAYE4M9 "Nibiru"
+{
+	titlepatch = "FRAYV35"
+	next = "FRAYE4M3"
+	secretnext = "FRAYE4M3"
+	sky1 = "FRAY0203"
+	music = "D_FRAY04"
+	ExitPic = "FRAYINT4"
+	EnterPic = "FRAYINT4"
+}

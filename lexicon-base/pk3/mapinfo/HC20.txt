@@ -1,0 +1,140 @@
+// Hellcore 2.0
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HLC201 "On Hell's Horizon"
+{
+	titlepatch = "HLC2V00"
+	next = "HLC202"
+	secretnext = "HLC202"
+	sky1 = "HLC20574"
+	music = "D_HLC201"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC202 "Baron Streets"
+{
+	titlepatch = "HLC2V01"
+	next = "HLC203"
+	secretnext = "HLC203"
+	sky1 = "HLC20574"
+	music = "D_HLC202"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC203 "Parasite Dawn"
+{
+	titlepatch = "HLC2V02"
+	next = "HLC204"
+	secretnext = "HLC204"
+	sky1 = "HLC20574"
+	music = "D_HLC203"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC204 "Defying the Odds"
+{
+	titlepatch = "HLC2V03"
+	next = "HLC205"
+	secretnext = "HLC205"
+	sky1 = "HLC20574"
+	music = "D_HLC204"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC205 "Vestibule of Plague"
+{
+	titlepatch = "HLC2V04"
+	next = "HLC206"
+	secretnext = "HLC206"
+	sky1 = "HLC20574"
+	music = "D_HLC205"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC206 "Limbo"
+{
+	titlepatch = "HLC2V05"
+	next = "HLC207"
+	secretnext = "HLC207"
+	sky1 = "HLC20574"
+	music = "D_HLC206"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC207 "Tribulation"
+{
+	titlepatch = "HLC2V06"
+	next = "HLC208"
+	secretnext = "HLC208"
+	sky1 = "HLC20574"
+	music = "D_HLC207"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+	Map07Special
+}
+
+map HLC208 "Tryx 'N Traps"
+{
+	titlepatch = "HLC2V07"
+	next = "HLC209"
+	secretnext = "HLC209"
+	sky1 = "HLC20574"
+	music = "D_HLC208"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC209 "Hobb's End Horror"
+{
+	titlepatch = "HLC2V08"
+	next = "HLC210"
+	secretnext = "HLC210"
+	sky1 = "HLC20574"
+	music = "D_HLC209"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC210 "Nightmare's Requiem"
+{
+	titlepatch = "HLC2V09"
+	next = "HLC211"
+	secretnext = "HLC211"
+	sky1 = "HLC20574"
+	music = "D_HLC210"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}
+
+map HLC211 "Hellcore"
+{
+	titlepatch = "HLC2V10"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "HLC20574"
+	music = "D_HLC211"
+	intermusic = "D_HLC2IN"
+	ExitPic = "HLC2INT"
+	EnterPic = "HLC2INT"
+}

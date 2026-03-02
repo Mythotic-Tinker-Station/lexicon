@@ -1,0 +1,9 @@
+ACTOR Lexicon_RCLM_ShortBlueTorch : ShortBlueTorch
+{
+	States
+	{
+	Spawn:
+		LZ01 ABCD 4
+		Loop
+	}
+}

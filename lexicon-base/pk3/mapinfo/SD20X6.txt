@@ -1,0 +1,103 @@
+// Stardate 20X6 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SDX601 "Amethyst II"
+{
+	titlepatch = "SDX6V00"
+	next = "SDX602"
+	secretnext = "SDX602"
+	sky1 = "SDX60267"
+	music = "D_SDX601"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX602 "Mud Bunny"
+{
+	titlepatch = "SDX6V01"
+	next = "SDX603"
+	secretnext = "SDX603"
+	sky1 = "SDX60267"
+	music = "D_SDX602"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX603 "Foxhole"
+{
+	titlepatch = "SDX6V02"
+	next = "SDX604"
+	secretnext = "SDX604"
+	sky1 = "SDX60267"
+	music = "D_CCH410"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX604 "Tanagra"
+{
+	titlepatch = "SDX6V03"
+	next = "SDX605"
+	secretnext = "SDX605"
+	sky1 = "SDX60267"
+	music = "D_SDX604"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX605 "Sector 8"
+{
+	titlepatch = "SDX6V04"
+	next = "SDX606"
+	secretnext = "SDX606"
+	sky1 = "SDX60267"
+	music = "D_SDX605"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX606 "Vehelits"
+{
+	titlepatch = "SDX6V05"
+	next = "SDX607"
+	secretnext = "SDX607"
+	sky1 = "SDX60267"
+	music = "D_SDX606"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX607 "Magnus"
+{
+	titlepatch = "SDX6V06"
+	next = "VR"
+	secretnext = "SDX631"
+	sky1 = "SDX60267"
+	music = "D_SDX607"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}
+
+map SDX631 "Hyperspace"
+{
+	titlepatch = "SDX6V30"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "SDX60267"
+	music = "D_SDX631"
+	intermusic = "D_SDX6IN"
+	ExitPic = "SDX6INT"
+	EnterPic = "SDX6INT"
+}

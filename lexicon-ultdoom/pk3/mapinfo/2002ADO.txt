@@ -1,0 +1,439 @@
+// 2002 A Doom Odyssey - 10th Anniversary Edition Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ADO1E1M1 "The Entry"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO101"
+	next = "ADO1E1M2"
+	titlepatch = "ADO1V00"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M2 "Helicopter bay"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO102"
+	next = "ADO1E1M3"
+	titlepatch = "ADO1V01"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M3 "The doomed lab"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO103"
+	next = "ADO1E1M4"
+	secretnext = "ADO1E1M9"
+	titlepatch = "ADO1V02"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M4 "Substation 537A"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO104"
+	next = "ADO1E1M5"
+	titlepatch = "ADO1V03"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M5 "Combat station"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO105"
+	next = "ADO1E1M6"
+	titlepatch = "ADO1V04"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M6 "Toxic treatment plant"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO106"
+	next = "ADO1E1M7"
+	titlepatch = "ADO1V05"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M7 "Service base"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO107"
+	next = "ADO1E1M8"
+	titlepatch = "ADO1V06"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E1M8 "Paradox"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO108"
+	next = "ADO1E2M1"
+	titlepatch = "ADO1V07"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map ADO1E1M9 "Lugano Base ZRX"
+{
+	sky1 = "DSKY1"
+	music = "D_ADO109"
+	next = "ADO1E2M4"
+	titlepatch = "ADO1V08"
+	ExitPic = "ADO1INT1"
+	EnterPic = "ADO1INT1"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M1 "Station Alpha"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO110"
+	next = "ADO1E2M2"
+	titlepatch = "ADO1V09"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M2 "Station Beta"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO111"
+	next = "ADO1E2M2"
+	titlepatch = "ADO1V10"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M3 "The lost labs"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO112"
+	next = "ADO1E2M3"
+	titlepatch = "ADO1V11"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M4 "Shotgun blues"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO113"
+	next = "ADO1E2M5"
+	secretnext = "ADO1E5M1"
+	titlepatch = "ADO1V12"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M5 "Fortress of Fatalities"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO114"
+	next = "ADO1E2M6"
+	secretnext = "ADO1E2M9"
+	titlepatch = "ADO1V13"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M6 "Between demons and insects"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO115"
+	next = "ADO1E2M7"
+	titlepatch = "ADO1V14"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M7 "Puzzles to solve"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO116"
+	next = "ADO1E2M8"
+	titlepatch = "ADO1V15"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E2M8 "Total disturbance"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO117"
+	next = "ADO1E3M1"
+	titlepatch = "ADO1V16"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map ADO1E2M9 "Dungeon of Hate"
+{
+	sky1 = "DSKY2"
+	music = "D_ADO118"
+	next = "ADO1E2M6"
+	titlepatch = "ADO1V17"
+	ExitPic = "ADO1INT2"
+	EnterPic = "ADO1INT2"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M1 "Gatehouse"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO119"
+	next = "ADO1E3M2"
+	titlepatch = "ADO1V18"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M2 "Caves of Bosnia"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO120"
+	next = "ADO1E3M3"
+	titlepatch = "ADO1V19"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M3 "Stronghold of damnation"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO121"
+	next = "ADO1E3M4"
+	titlepatch = "ADO1V20"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M4 "Halls of ebola"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO122"
+	next = "ADO1E3M5"
+	titlepatch = "ADO1V21"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M5 "Blood and Guts"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO123"
+	next = "ADO1E3M6"
+	secretnext = "ADO1E5M2"
+	titlepatch = "ADO1V22"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M6 "Obituary written"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO124"
+	next = "ADO1E3M7"
+	secretnext = "ADO1E3M9"
+	titlepatch = "ADO1V23"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M7 "System Central"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO125"
+	next = "ADO1E3M8"
+	titlepatch = "ADO1V24"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E3M8 "Spider temple"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO126"
+	next = "ADO1E4M1"
+	titlepatch = "ADO1V25"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map ADO1E3M9 "The lost chord"
+{
+	sky1 = "DSKY3"
+	music = "D_ADO127"
+	next = "ADO1E3M7"
+	titlepatch = "ADO1V26"
+	ExitPic = "ADO1INT3"
+	EnterPic = "ADO1INT3"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M1 "Unity"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO128"
+	next = "ADO1E4M2"
+	titlepatch = "ADO1V27"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M2 "Back to Base X"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO129"
+	next = "ADO1E4M3"
+	secretnext = "ADO1E4M9"
+	titlepatch = "ADO1V28"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M3 "Hell Unleashed"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO130"
+	next = "ADO1E4M4"
+	titlepatch = "ADO1V29"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M4 "Disreputable stronghold"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO131"
+	next = "ADO1E4M5"
+	titlepatch = "ADO1V30"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M5 "Indomitable haunt"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO132"
+	next = "ADO1E4M6"
+	titlepatch = "ADO1V31"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M6 "Dementia"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO133"
+	next = "ADO1E4M7"
+	titlepatch = "ADO1V32"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M7 "Odious grounds"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO134"
+	next = "ADO1E4M8"
+	titlepatch = "ADO1V33"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E4M8 "Impossible mission"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO135"
+	next = "VR"
+	titlepatch = "ADO1V34"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
+}
+
+map ADO1E4M9 "De-moon side"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO136"
+	next = "ADO1E4M3"
+	titlepatch = "ADO1V35"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E5M1 "Surfing the mighty green"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO137"
+	next = "ADO1E2M5"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}
+
+map ADO1E5M2 "Secret Wolfenstein Level"
+{
+	sky1 = "DSKY4"
+	music = "D_ADO138"
+	next = "ADO1E3M6"
+	ExitPic = "ADO1INT4"
+	EnterPic = "ADO1INT4"
+	intermusic = "D_ADO1IN"
+}

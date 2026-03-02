@@ -1,0 +1,259 @@
+// Maps of Chaos 1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map MOC1E1M1 "MoC: Hangar"
+{
+	titlepatch = "WILV00"
+	next = "MOC1E1M2"
+	secretnext = "MOC1E1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map MOC1E1M2 "MoC: Nuclear Plant"
+{
+	titlepatch = "WILV01"
+	next = "MOC1E1M3"
+	secretnext = "MOC1E1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map MOC1E1M3 "MoC: Toxin Refinery"
+{
+	titlepatch = "WILV02"
+	next = "MOC1E1M4"
+	secretnext = "MOC1E1M9"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+}
+
+map MOC1E1M4 "MoC: Command Control"
+{
+	titlepatch = "WILV03"
+	next = "MOC1E1M5"
+	secretnext = "MOC1E1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+}
+
+map MOC1E1M5 "MoC: Phobos Lab"
+{
+	titlepatch = "WILV04"
+	next = "MOC1E1M6"
+	secretnext = "MOC1E1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+}
+
+map MOC1E1M6 "MoC: Central Processing"
+{
+	titlepatch = "WILV05"
+	next = "MOC1E1M7"
+	secretnext = "MOC1E1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map MOC1E1M7 "MoC: Computer Station"
+{
+	titlepatch = "WILV06"
+	next = "MOC1E1M8"
+	secretnext = "MOC1E1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+}
+
+map MOC1E1M8 "MoC: Phobos Anomaly"
+{
+	titlepatch = "WILV07"
+	next = "MOC1E2M1"
+	secretnext = "MOC1E2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map MOC1E1M9 "MoC: Military Base"
+{
+	titlepatch = "WILV08"
+	next = "MOC1E1M4"
+	secretnext = "MOC1E1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M9"
+}
+
+map MOC1E2M1 "MoC: Deimos Anomaly"
+{
+	titlepatch = "WILV10"
+	next = "MOC1E2M2"
+	secretnext = "MOC1E2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M1"
+}
+
+map MOC1E2M2 "MoC: Containment Area"
+{
+	titlepatch = "WILV11"
+	next = "MOC1E2M3"
+	secretnext = "MOC1E2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M2"
+}
+
+map MOC1E2M3 "MoC: Refinery"
+{
+	titlepatch = "WILV12"
+	next = "MOC1E2M4"
+	secretnext = "MOC1E2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M3"
+}
+
+map MOC1E2M4 "MoC: Deimos Lab"
+{
+	titlepatch = "WILV13"
+	next = "MOC1E2M5"
+	secretnext = "MOC1E2M5"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M4"
+}
+
+map MOC1E2M5 "MoC: Command Center"
+{
+	titlepatch = "WILV14"
+	next = "MOC1E2M6"
+	secretnext = "MOC1E2M9"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map MOC1E2M6 "MoC: Halls of the Damned"
+{
+	titlepatch = "WILV15"
+	next = "MOC1E2M7"
+	secretnext = "MOC1E2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+}
+
+map MOC1E2M7 "MoC: Spawning Vats"
+{
+	titlepatch = "WILV16"
+	next = "MOC1E2M8"
+	secretnext = "MOC1E2M8"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M7"
+}
+
+map MOC1E2M8 "MoC: Tower of Babel"
+{
+	titlepatch = "WILV17"
+	next = "MOC1E3M1"
+	secretnext = "MOC1E3M1"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map MOC1E2M9 "MoC: Fortress of Mystery"
+{
+	titlepatch = "WILV18"
+	next = "MOC1E2M6"
+	secretnext = "MOC1E2M6"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M9"
+}
+
+map MOC1E3M1 "MoC: Hell Keep"
+{
+	titlepatch = "WILV20"
+	next = "MOC1E3M2"
+	secretnext = "MOC1E3M2"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M1"
+}
+
+map MOC1E3M2 "MoC: Slough of Despair"
+{
+	titlepatch = "WILV21"
+	next = "MOC1E3M3"
+	secretnext = "MOC1E3M3"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M2"
+}
+
+map MOC1E3M3 "MoC: Pandemonium"
+{
+	titlepatch = "WILV22"
+	next = "MOC1E3M4"
+	secretnext = "MOC1E3M4"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M3"
+}
+
+map MOC1E3M4 "MoC: House of Pain"
+{
+	titlepatch = "WILV23"
+	next = "MOC1E3M5"
+	secretnext = "MOC1E3M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map MOC1E3M5 "MoC: Unholy Cathedral"
+{
+	titlepatch = "WILV24"
+	next = "MOC1E3M6"
+	secretnext = "MOC1E3M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M5"
+}
+
+map MOC1E3M6 "MoC: Mt. Erebus"
+{
+	titlepatch = "WILV25"
+	next = "MOC1E3M7"
+	secretnext = "MOC1E3M9"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M6"
+}
+
+map MOC1E3M7 "MoC: Limbo"
+{
+	titlepatch = "WILV26"
+	next = "MOC1E3M8"
+	secretnext = "MOC1E3M8"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M7"
+}
+
+map MOC1E3M8 "MoC: Dis"
+{
+	titlepatch = "WILV27"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}
+
+map MOC1E3M9 "MoC: Warrens"
+{
+	titlepatch = "WILV28"
+	next = "MOC1E3M7"
+	secretnext = "MOC1E3M7"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M9"
+}

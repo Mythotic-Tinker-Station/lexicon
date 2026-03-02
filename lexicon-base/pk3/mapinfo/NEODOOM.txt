@@ -1,0 +1,392 @@
+// NeoDoom: Vaccinated Edition Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map NEOD01 "Landing Base"
+{
+	titlepatch = "NEODV00"
+	next = "NEOD02"
+	secretnext = "NEOD02"
+	sky1 = "NEOD0449"
+	music = "D_NEOD01"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD02 "Poison Refinery"
+{
+	titlepatch = "NEODV01"
+	next = "NEOD03"
+	secretnext = "NEOD03"
+	sky1 = "NEOD0449"
+	music = "D_NEOD02"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD03 "Command Central"
+{
+	titlepatch = "NEODV02"
+	next = "NEOD04"
+	secretnext = "NEOD04"
+	sky1 = "NEOD0449"
+	music = "D_NEOD03"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD04 "Creature Prision"
+{
+	titlepatch = "NEODV03"
+	next = "NEOD05"
+	secretnext = "NEOD05"
+	sky1 = "NEOD0449"
+	music = "D_NEOD04"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD05 "Computer Station"
+{
+	titlepatch = "NEODV04"
+	next = "NEOD06"
+	secretnext = "NEOD06"
+	sky1 = "NEOD0449"
+	music = "D_NEOD05"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD06 "Toxin Supplier"
+{
+	titlepatch = "NEODV05"
+	next = "NEOD07"
+	secretnext = "NEOD07"
+	sky1 = "NEOD0449"
+	music = "D_NEOD06"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD07 "Slime Machine"
+{
+	titlepatch = "NEODV06"
+	next = "NEOD08"
+	secretnext = "NEOD08"
+	sky1 = "NEOD0449"
+	music = "D_NEOD07"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+	Map07Special
+}
+
+map NEOD08 "Damaged Dam"
+{
+	titlepatch = "NEODV07"
+	next = "NEOD09"
+	secretnext = "NEOD09"
+	sky1 = "NEOD0931"
+	music = "D_NEOD02"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD09 "Hidden Industry"
+{
+	titlepatch = "NEODV08"
+	next = "NEOD10"
+	secretnext = "NEOD10"
+	sky1 = "NEOD0931"
+	music = "D_NEOD03"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD10 "Sewerage"
+{
+	titlepatch = "NEODV09"
+	next = "NEOD11"
+	secretnext = "NEOD11"
+	sky1 = "NEOD0931"
+	music = "D_NEOD06"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD11 "The Mansion"
+{
+	titlepatch = "NEODV10"
+	next = "NEOD12"
+	secretnext = "NEOD12"
+	sky1 = "NEOD0931"
+	music = "D_NEOD08"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD12 "South Zone"
+{
+	titlepatch = "NEODV11"
+	next = "NEOD13"
+	secretnext = "NEOD13"
+	sky1 = "NEOD0450"
+	music = "D_NEOD09"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD13 "Residential Ward"
+{
+	titlepatch = "NEODV12"
+	next = "NEOD14"
+	secretnext = "NEOD14"
+	sky1 = "NEOD0450"
+	music = "D_NEOD10"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD14 "Center District"
+{
+	titlepatch = "NEODV13"
+	next = "NEOD15"
+	secretnext = "NEOD15"
+	sky1 = "NEOD0450"
+	music = "D_NEOD11"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD15 "Commercial Downtown"
+{
+	titlepatch = "NEODV14"
+	next = "NEOD16"
+	secretnext = "NEOD31"
+	sky1 = "NEOD0450"
+	music = "D_NEOD12"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD16 "Doom Shopping"
+{
+	titlepatch = "NEODV15"
+	next = "NEOD17"
+	secretnext = "NEOD17"
+	sky1 = "NEOD0450"
+	music = "D_NEOD13"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD17 "Municipal Park"
+{
+	titlepatch = "NEODV16"
+	next = "NEOD18"
+	secretnext = "NEOD18"
+	sky1 = "NEOD0450"
+	music = "D_NEOD14"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD18 "Forgotten Fortress"
+{
+	titlepatch = "NEODV17"
+	next = "NEOD19"
+	secretnext = "NEOD19"
+	sky1 = "NEOD1738"
+	music = "D_NEOD15"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD19 "Temple of the Waterfall"
+{
+	titlepatch = "NEODV18"
+	next = "NEOD20"
+	secretnext = "NEOD20"
+	sky1 = "NEOD1738"
+	music = "D_NEOD16"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD20 "Inner Temple"
+{
+	titlepatch = "NEODV19"
+	next = "NEOD21"
+	secretnext = "NEOD21"
+	sky1 = "NEOD1738"
+	music = "D_NEOD17"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD21 "Frozen Lands"
+{
+	titlepatch = "NEODV20"
+	next = "NEOD22"
+	secretnext = "NEOD22"
+	sky1 = "NEOD1743"
+	music = "D_NEOD18"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD22 "Demonic Island"
+{
+	titlepatch = "NEODV21"
+	next = "NEOD23"
+	secretnext = "NEOD23"
+	sky1 = "NEOD0451"
+	music = "D_NEOD19"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD23 "Profane Cathedral"
+{
+	titlepatch = "NEODV22"
+	next = "NEOD24"
+	secretnext = "NEOD24"
+	sky1 = "NEOD0451"
+	music = "D_NEOD20"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD24 "Tower of Suffering"
+{
+	titlepatch = "NEODV23"
+	next = "NEOD25"
+	secretnext = "NEOD25"
+	sky1 = "NEOD0451"
+	music = "D_NEOD21"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD25 "Eternity Cemetery"
+{
+	titlepatch = "NEODV24"
+	next = "NEOD26"
+	secretnext = "NEOD26"
+	sky1 = "NEOD0451"
+	music = "D_NEOD16"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD26 "Underground Castle"
+{
+	titlepatch = "NEODV25"
+	next = "NEOD27"
+	secretnext = "NEOD27"
+	sky1 = "NEOD0451"
+	music = "D_NEOD15"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD27 "Demonic Throat Canyon"
+{
+	titlepatch = "NEODV26"
+	next = "NEOD28"
+	secretnext = "NEOD28"
+	sky1 = "NEOD0451"
+	music = "D_NEOD17"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD28 "Gateway to the Evil"
+{
+	titlepatch = "NEODV27"
+	next = "NEOD29"
+	secretnext = "NEOD29"
+	sky1 = "NEOD0451"
+	music = "D_NEOD22"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD29 "At the Heart of it all"
+{
+	titlepatch = "NEODV28"
+	next = "NEOD30"
+	secretnext = "NEOD30"
+	sky1 = "NEOD0451"
+	music = "D_NEOD23"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD30 "The Return"
+{
+	titlepatch = "NEODV29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "NEOD0934"
+	music = "D_NEOD07"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+	allowmonstertelefrags
+}
+
+map NEOD31 "Vacation House"
+{
+	titlepatch = "NEODV30"
+	next = "NEOD16"
+	secretnext = "NEOD32"
+	sky1 = "NEOD0449"
+	music = "D_NEOD08"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}
+
+map NEOD32 "A Brick on the Wall"
+{
+	titlepatch = "NEODV31"
+	next = "NEOD16"
+	secretnext = "NEOD16"
+	sky1 = "NEOD0931"
+	music = "D_NEOD24"
+	intermusic = "D_NEODIN"
+	ExitPic = "NEODINT"
+	EnterPic = "NEODINT"
+}

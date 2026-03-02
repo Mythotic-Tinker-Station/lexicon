@@ -1,0 +1,163 @@
+// Eternal Deathmatch Set Mapinfo
+
+defaultmap
+{
+	ExitPic = "EDMSINT"
+	EnterPic = "EDMSINT"
+	InterMusic = "D_EDMSIN"
+	Sky1 = "EDMS0226"
+	NoJump
+	NoCrouch
+}
+
+map EDMS01 "Palace of Exile"
+{
+	TitlePatch = "EDMSV00"
+	Next = "EDMS02"
+	SecretNext = "EDMS02"
+	Music = "D_EDMS01"
+}
+
+map EDMS02 "Dodge City"
+{
+	TitlePatch = "EDMSV01"
+	Next = "EDMS03"
+	SecretNext = "EDMS03"
+	Music = "D_EDMS02"
+}
+
+map EDMS03 "War Heros"
+{
+	TitlePatch = "EDMSV02"
+	Next = "EDMS04"
+	SecretNext = "EDMS04"
+	Music = "D_EDMS03"
+}
+
+map EDMS04 "Birdmans Camp"
+{
+	TitlePatch = "EDMSV03"
+	Next = "EDMS05"
+	SecretNext = "EDMS05"
+	Music = "D_EDMS04"
+}
+
+map EDMS05 "Shotgun Shelter"
+{
+	TitlePatch = "EDMSV04"
+	Next = "EDMS06"
+	SecretNext = "EDMS06"
+	Music = "D_EDMS05"
+}
+
+map EDMS06 "Cliffhanger"
+{
+	TitlePatch = "EDMSV05"
+	Next = "EDMS07"
+	SecretNext = "EDMS07"
+	Music = "D_EDMS06"
+}
+
+map EDMS07 "Power Ring"
+{
+	TitlePatch = "EDMSV06"
+	Next = "EDMS08"
+	SecretNext = "EDMS08"
+	Music = "D_EDMS07"
+}
+
+map EDMS08 "Killing Floor"
+{
+	TitlePatch = "EDMSV07"
+	Next = "EDMS09"
+	SecretNext = "EDMS09"
+	Music = "D_EDMS08"
+}
+
+map EDMS09 "Raw Deal"
+{
+	TitlePatch = "EDMSV08"
+	Next = "EDMS10"
+	SecretNext = "EDMS10"
+	Music = "D_EDMS09"
+}
+
+map EDMS10 "Half Moon"
+{
+	TitlePatch = "EDMSV09"
+	Next = "EDMS11"
+	SecretNext = "EDMS11"
+	Music = "D_EDMS10"
+}
+
+map EDMS11 "Full Hairy Moon"
+{
+	TitlePatch = "EDMSV10"
+	Next = "EDMS12"
+	SecretNext = "EDMS12"
+	Music = "D_EDMS11"
+}
+
+map EDMS12 "Plus Factor"
+{
+	TitlePatch = "EDMSV11"
+	Next = "EDMS13"
+	SecretNext = "EDMS13"
+	Music = "D_EDMS12"
+}
+
+map EDMS13 "Death Wish"
+{
+	TitlePatch = "EDMSV12"
+	Next = "EDMS14"
+	SecretNext = "EDMS14"
+	Music = "D_EDMS13"
+}
+
+map EDMS14 "The Tiki Hut"
+{
+	TitlePatch = "EDMSV13"
+	Next = "EDMS15"
+	SecretNext = "EDMS15"
+	Music = "D_EDMS14"
+}
+
+map EDMS15 "Half Pipe"
+{
+	TitlePatch = "EDMSV14"
+	Next = "EDMS16"
+	SecretNext = "EDMS16"
+	Music = "D_EDMS15"
+}
+
+map EDMS16 "Gimme Shelter"
+{
+	TitlePatch = "EDMSV15"
+	Next = "EDMS17"
+	SecretNext = "EDMS17"
+	Music = "D_EDMS16"
+}
+
+map EDMS17 "Crazy Eight"
+{
+	TitlePatch = "EDMSV16"
+	Next = "EDMS18"
+	SecretNext = "EDMS18"
+	Music = "D_EDMS01"
+}
+
+map EDMS18 "2400 Fulton Street"
+{
+	TitlePatch = "EDMSV17"
+	Next = "EDMS19"
+	SecretNext = "EDMS19"
+	Music = "D_EDMS18"
+}
+
+map EDMS19 "Deja Vu"
+{
+	TitlePatch = "EDMSV18"
+	next = "VR"
+	Secretnext = "VR"
+	Music = "D_EDMS08"
+}

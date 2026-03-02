@@ -1,0 +1,396 @@
+// Memento Mori 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map MM2001 "Outpost"
+{
+	titlepatch = "MM20V00"
+	next = "MM2002"
+	secretnext = "MM2002"
+	sky1 = "MM200365"
+	music = "D_MM2001"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2002 "The Feeding Pit"
+{
+	titlepatch = "MM20V01"
+	next = "MM2003"
+	secretnext = "MM2003"
+	sky1 = "MM200365"
+	music = "D_MM2002"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2003 "...And Hell Beneath"
+{
+	titlepatch = "MM20V02"
+	next = "MM2004"
+	secretnext = "MM2004"
+	sky1 = "MM200365"
+	music = "D_MM2003"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+	compat_shorttex = 1
+}
+
+map MM2004 "Ratamahatta"
+{
+	titlepatch = "MM20V03"
+	next = "MM2005"
+	secretnext = "MM2005"
+	sky1 = "MM200365"
+	music = "D_MM2004"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2005 "Rites Of Passage"
+{
+	titlepatch = "MM20V04"
+	next = "MM2006"
+	secretnext = "MM2006"
+	sky1 = "MM200365"
+	music = "D_MM2005"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2006 "Trapped"
+{
+	titlepatch = "MM20V05"
+	next = "MM2007"
+	secretnext = "MM2007"
+	sky1 = "MM200365"
+	music = "D_MM2006"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2007 "Frustration"
+{
+	titlepatch = "MM20V06"
+	next = "MM2008"
+	secretnext = "MM2008"
+	sky1 = "MM200365"
+	music = "D_MM2007"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+	Map07Special
+}
+
+map MM2008 "Stigmata"
+{
+	titlepatch = "MM20V07"
+	next = "MM2009"
+	secretnext = "MM2009"
+	sky1 = "MM200365"
+	music = "D_MM2008"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2009 "Sabbath Sewer"
+{
+	titlepatch = "MM20V08"
+	next = "MM2010"
+	secretnext = "MM2010"
+	sky1 = "MM200365"
+	music = "D_MM2009"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2010 "Clear For Death"
+{
+	titlepatch = "MM20V09"
+	next = "MM2011"
+	secretnext = "MM2011"
+	sky1 = "MM200365"
+	music = "D_MM2010"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2011 "Sewer Shutdown"
+{
+	titlepatch = "MM20V10"
+	next = "MM2012"
+	secretnext = "MM2012"
+	sky1 = "MM200365"
+	music = "D_MM2011"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2012 "The Waterway"
+{
+	titlepatch = "MM20V11"
+	next = "MM2013"
+	secretnext = "MM2013"
+	sky1 = "MM200366"
+	music = "D_MM2012"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+	compat_badangles = 1
+}
+
+map MM2013 "Devils Paradise"
+{
+	titlepatch = "MM20V12"
+	next = "MM2014"
+	secretnext = "MM2014"
+	sky1 = "MM200366"
+	music = "D_MM2013"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2014 "A Question Of Time"
+{
+	titlepatch = "MM20V13"
+	next = "MM2015"
+	secretnext = "MM2015"
+	sky1 = "MM200366"
+	music = "D_MM2014"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2015 "The Devils Coterie"
+{
+	titlepatch = "MM20V14"
+	next = "MM2016"
+	secretnext = "MM2031"
+	sky1 = "MM200366"
+	music = "D_MM2015"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2016 "The Nephilim"
+{
+	titlepatch = "MM20V15"
+	next = "MM2017"
+	secretnext = "MM2017"
+	sky1 = "MM200366"
+	music = "D_MM2016"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2017 "No One"
+{
+	titlepatch = "MM20V16"
+	next = "MM2018"
+	secretnext = "MM2018"
+	sky1 = "MM200366"
+	music = "D_MM2017"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2018 "Regulate"
+{
+	titlepatch = "MM20V17"
+	next = "MM2019"
+	secretnext = "MM2019"
+	sky1 = "MM200366"
+	music = "D_MM2018"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2019 "The Shaft"
+{
+	titlepatch = "MM20V18"
+	next = "MM2020"
+	secretnext = "MM2020"
+	sky1 = "MM200366"
+	music = "D_MM2019"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2020 "The Experiment"
+{
+	titlepatch = "MM20V19"
+	next = "MM2021"
+	secretnext = "MM2021"
+	sky1 = "MM200366"
+	music = "D_MM2020"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2021 "Sanctuary"
+{
+	titlepatch = "MM20V20"
+	next = "MM2022"
+	secretnext = "MM2022"
+	sky1 = "MM200367"
+	music = "D_MM2021"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2022 "R.R.F. Refinary"
+{
+	titlepatch = "MM20V21"
+	next = "MM2023"
+	secretnext = "MM2023"
+	sky1 = "MM200367"
+	music = "D_MM2022"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2023 "No Way Out"
+{
+	titlepatch = "MM20V22"
+	next = "MM2024"
+	secretnext = "MM2024"
+	sky1 = "MM200367"
+	music = "D_MM2023"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2024 "IO Lab"
+{
+	titlepatch = "MM20V23"
+	next = "MM2025"
+	secretnext = "MM2025"
+	sky1 = "MM200367"
+	music = "D_MM2024"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2025 "Forgotten Town"
+{
+	titlepatch = "MM20V24"
+	next = "MM2026"
+	secretnext = "MM2026"
+	sky1 = "MM200367"
+	music = "D_MM2025"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+	compat_shorttex = 1
+}
+
+map MM2026 "Base Exposure"
+{
+	titlepatch = "MM20V25"
+	next = "MM2027"
+	secretnext = "MM2027"
+	sky1 = "MM200367"
+	music = "D_MM2026"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2027 "The Silos"
+{
+	titlepatch = "MM20V26"
+	next = "MM2028"
+	secretnext = "MM2028"
+	sky1 = "MM200367"
+	music = "D_MM2027"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2028 "Corporate Hell"
+{
+	titlepatch = "MM20V27"
+	next = "MM2029"
+	secretnext = "MM2029"
+	sky1 = "MM200367"
+	music = "D_MM2028"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2029 "Kings Of Metal"
+{
+	titlepatch = "MM20V28"
+	next = "MM2030"
+	secretnext = "MM2030"
+	sky1 = "MM200367"
+	music = "D_MM2029"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2030 "It"
+{
+	titlepatch = "MM20V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "MM200367"
+	music = "D_MM2030"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+	allowmonstertelefrags
+}
+
+map MM2031 "Dejavu"
+{
+	titlepatch = "MM20V30"
+	next = "MM2016"
+	secretnext = "MM2032"
+	sky1 = "MM200367"
+	music = "D_MM2031"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}
+
+map MM2032 "Dances With Demons"
+{
+	titlepatch = "MM20V31"
+	next = "MM2016"
+	secretnext = "MM2016"
+	sky1 = "MM200367"
+	music = "D_MM2032"
+	intermusic = "D_MM20IN"
+	ExitPic = "MM20INT"
+	EnterPic = "MM20INT"
+}

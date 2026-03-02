@@ -1,0 +1,98 @@
+Actor Lexicon_GDWN_WolfensteinSS : WolfensteinSS
+{
+	Health 12000
+	Speed 16
+	Radius 64
+	Height 100
+	PainChance 40
+	Mass 1000
+	SeeSound "spider/sight"
+	AttackSound "weapons/shotgf"
+	PainSound "brain/pain"
+	DeathSound "brain/death"
+	ActiveSound "demon/active"
+	Tag "$GDWN_TAG_WOLFSS"
+	Obituary "$GDWN_OB_WOLFSS"
+	States
+	{
+	Spawn:
+		LX26 AB 10 A_Look
+		Loop
+	See:
+		LX26 A 3 A_Metal
+		LX26 ABB 3 A_Chase
+		LX26 C 3 A_Metal
+		LX26 CDD 3 A_Chase
+		loop
+	Pain:
+		LX26 E 3 
+		LX26 H 3 A_BrainPain
+		LX26 E 10 A_FaceTarget
+		LX26 G 4 A_FatAttack1
+		LX26 F 4 A_FaceTarget
+		LX26 G 4 A_FatAttack2
+		LX26 F 4 A_FaceTarget
+		LX26 G 4 A_SkelMissile
+		LX26 F 4 A_FaceTarget
+		LX26 G 4 A_SkelMissile
+		goto See
+	Missile:
+		LX26 EE 10 A_FaceTarget
+		LX26 GE 4 Bright A_CPosAttack
+		LX26 G 1 A_SpidRefire
+		goto Missile+1
+	Death:
+	XDeath:
+		LX26 I 5 
+		LX26 N 10 A_BrainScream
+		LX26 O 10 A_Fall
+		LX26 PQRSTU 10 
+		LX26 V -1 A_BrainDie
+		stop
+	}
+}
+
+Actor Lexicon_GDWN_CommanderKeen : CommanderKeen
+{
+	-SOLID
+	PainSound "GDWN/DSKEENPN"
+	DeathSound "GDWN/DSKEENDT"
+	States
+	{
+	Spawn:
+		LX25 O -1
+		Stop
+	Death:
+		LX25 P 6
+		LX25 "[" 6
+		LX25 Q 6 A_Scream
+		LX25 RSTUV 6
+		LX25 W 6 A_NoBlocking
+		LX25 X 6
+		LX25 Y 6 A_KeenDie
+		LX25 Z -1
+		Stop
+	Pain:
+		LX25 Z 4
+		LX25 Z 8 A_Pain
+		Goto Spawn
+	}
+}
+
+Actor Lexicon_GDWN_ShortBlueTorch : ShortBlueTorch
+{
+	Health 10
+	-SOLID
+	+SHOOTABLE
+	DeathSound "GDWN/DSSSDTH"
+	States
+	{
+	Spawn:
+		BAR1 AB 4 
+		loop
+	Death:
+		BEXP D 4 A_Scream
+		LX25 N 200 
+		stop
+	}
+}

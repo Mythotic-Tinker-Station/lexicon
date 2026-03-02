@@ -1,0 +1,450 @@
+// 32in24-12: IRON MAPPER Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map YD1201 "This Aggression Will Not Stand, Man"
+{
+	titlepatch = "YD12V00"
+	next = "YD1202"
+	secretnext = "YD1202"
+	sky1 = "YD121400"
+	music = "D_YD1201"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1202 "Splatterday Night Fever"
+{
+	titlepatch = "YD12V01"
+	next = "YD1203"
+	secretnext = "YD1203"
+	sky1 = "YD121400"
+	music = "D_YD1202"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1203 "Face to Face"
+{
+	titlepatch = "YD12V02"
+	next = "YD1204"
+	secretnext = "YD1204"
+	sky1 = "YD121401"
+	music = "D_YD1203"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1204 "Sauce Port"
+{
+	titlepatch = "YD12V03"
+	next = "YD1205"
+	secretnext = "YD1205"
+	sky1 = "YD121400"
+	music = "D_YD1204"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1205 "Water Purification Facility"
+{
+	titlepatch = "YD12V04"
+	next = "YD1206"
+	secretnext = "YD1206"
+	sky1 = "YD121402"
+	music = "D_YD1205"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1206 "The Battle of Snake Canyon"
+{
+	titlepatch = "YD12V05"
+	next = "YD1207"
+	secretnext = "YD1207"
+	sky1 = "YD120654"
+	music = "D_YD1206"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1207 "Just Out of Reach"
+{
+	titlepatch = "YD12V06"
+	next = "YD1208"
+	secretnext = "YD1208"
+	sky1 = "YD121400"
+	music = "D_YD1207"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1208 "A Roboticized Lizard Made Entirely of Wooden Moving Parts"
+{
+	titlepatch = "YD12V07"
+	next = "YD1209"
+	secretnext = "YD1209"
+	sky1 = "YD121401"
+	music = "D_YD1208"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1209 "Lost Facility #28"
+{
+	titlepatch = "YD12V08"
+	next = "YD1210"
+	secretnext = "YD1210"
+	sky1 = "YD121401"
+	music = "D_YD1209"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1210 "Gray Mainstream Map"
+{
+	titlepatch = "YD12V09"
+	next = "YD1211"
+	secretnext = "YD1211"
+	sky1 = "YD121400"
+	music = "D_YD1210"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1211 "Scary Flaggers and Nice Sprites"
+{
+	titlepatch = "YD12V10"
+	next = "YD1212"
+	secretnext = "YD1212"
+	sky1 = "YD120779"
+	music = "D_YD1211"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1212 "Hamburglar Hill"
+{
+	titlepatch = "YD12V11"
+	next = "YD1213"
+	secretnext = "YD1213"
+	sky1 = "YD121401"
+	music = "D_YD1212"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1213 "Flag Island"
+{
+	titlepatch = "YD12V12"
+	next = "YD1214"
+	secretnext = "YD1214"
+	sky1 = "YD120779"
+	music = "D_YD1213"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1214 "Danny Tamberelli's Manboobs"
+{
+	titlepatch = "YD12V13"
+	next = "YD1215"
+	secretnext = "YD1215"
+	sky1 = "YD121401"
+	music = "D_YD1214"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1215 "Mark It Zero"
+{
+	titlepatch = "YD12V14"
+	next = "YD1216"
+	secretnext = "YD1216"
+	sky1 = "YD121401"
+	music = "D_YD1215"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1216 "Green Vaults"
+{
+	titlepatch = "YD12V15"
+	next = "YD1217"
+	secretnext = "YD1217"
+	sky1 = "YD120630"
+	music = "D_YD1216"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1217 "Close Friends!"
+{
+	titlepatch = "YD12V16"
+	next = "YD1218"
+	secretnext = "YD1218"
+	sky1 = "YD121400"
+	music = "D_YD1217"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1218 "Tong Dat Catte"
+{
+	titlepatch = "YD12V17"
+	next = "YD1219"
+	secretnext = "YD1219"
+	sky1 = "YD121401"
+	music = "D_YD1218"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1219 "Some Tourist Attraction"
+{
+	titlepatch = "YD12V18"
+	next = "YD1220"
+	secretnext = "YD1220"
+	sky1 = "YD120655"
+	music = "D_YD1219"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1220 "Eye of the Tiger"
+{
+	titlepatch = "YD12V19"
+	next = "YD1221"
+	secretnext = "YD1221"
+	sky1 = "YD121400"
+	music = "D_YD1220"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1221 "Meatwad Goes to the Super Bowl"
+{
+	titlepatch = "YD12V20"
+	next = "YD1222"
+	secretnext = "YD1222"
+	sky1 = "YD121401"
+	music = "D_YD1221"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1222 "Water Defecation Facility"
+{
+	titlepatch = "YD12V21"
+	next = "YD1223"
+	secretnext = "YD1223"
+	sky1 = "YD121402"
+	music = "D_YD1222"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1223 "I've Got Two Words for You and They're Not 'Happy Birthday'"
+{
+	titlepatch = "YD12V22"
+	next = "YD1224"
+	secretnext = "YD1224"
+	sky1 = "YD121402"
+	music = "D_YD1223"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1224 "Generica"
+{
+	titlepatch = "YD12V23"
+	next = "YD1225"
+	secretnext = "YD1225"
+	sky1 = "YD121401"
+	music = "D_YD1224"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1225 "Cereal Crates"
+{
+	titlepatch = "YD12V24"
+	next = "YD1226"
+	secretnext = "YD1226"
+	sky1 = "YD121400"
+	music = "D_YD1225"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1226 "Right Angle of Destiny"
+{
+	titlepatch = "YD12V25"
+	next = "YD1227"
+	secretnext = "YD1227"
+	sky1 = "YD121402"
+	music = "D_YD1226"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1227 "Go to Hell, Do Not Collect $200"
+{
+	titlepatch = "YD12V26"
+	next = "YD1228"
+	secretnext = "YD1228"
+	sky1 = "YD120652"
+	music = "D_YD1227"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1228 "Mudman Wonderland"
+{
+	titlepatch = "YD12V27"
+	next = "YD1229"
+	secretnext = "YD1229"
+	sky1 = "YD121402"
+	music = "D_YD1228"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1229 "Seclatus"
+{
+	titlepatch = "YD12V28"
+	next = "YD1230"
+	secretnext = "YD1230"
+	sky1 = "YD121401"
+	music = "D_YD1229"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1230 "Kingdom of Naughty Aeronautics"
+{
+	titlepatch = "YD12V29"
+	next = "YD1231"
+	secretnext = "YD1231"
+	sky1 = "YD121402"
+	music = "D_YD1230"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1231 "WTF CTF"
+{
+	titlepatch = "YD12V30"
+	next = "YD1232"
+	secretnext = "YD1232"
+	sky1 = "YD121400"
+	music = "D_YD1231"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1232 "Thanks Zero. I'm Okay."
+{
+	titlepatch = "YD12V31"
+	next = "YD1233"
+	secretnext = "YD1233"
+	sky1 = "YD121402"
+	music = "D_YD1232"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1233 "Obvious Filler Map"
+{
+	titlepatch = "YD12V32"
+	next = "YD1234"
+	secretnext = "YD1234"
+	sky1 = "YD121400"
+	music = "D_YD1233"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1234 "Late in Britland"
+{
+	titlepatch = "YD12V33"
+	next = "YD1235"
+	secretnext = "YD1235"
+	sky1 = "YD121401"
+	music = "D_YD1234"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1235 "Bridge to Nowhere"
+{
+	titlepatch = "YD12V34"
+	next = "YD1236"
+	secretnext = "YD1236"
+	sky1 = "YD121401"
+	music = "D_YD1235"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1236 "A Complete Disregard of All That You Love"
+{
+	titlepatch = "YD12V35"
+	next = "YD1237"
+	secretnext = "YD1237"
+	sky1 = "YD121402"
+	music = "D_YD1236"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}
+
+map YD1237 "The Tooters"
+{
+	titlepatch = "YD12V36"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "YD121402"
+	music = "D_YD1237"
+	intermusic = "D_YD12IN"
+	ExitPic = "YD12INT"
+	EnterPic = "YD12INT"
+}

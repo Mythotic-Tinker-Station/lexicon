@@ -1,0 +1,167 @@
+// DWANGOX Mapinfo
+
+map DW0X01 "DWANGOX Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW0X02"
+	secretnext = "DW0X02"
+	sky1 = "DW0X0001"
+	music = "D_DW0X01"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X02 "DWANGOX Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW0X03"
+	secretnext = "DW0X03"
+	sky1 = "DW0X0001"
+	music = "D_DW0X02"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X03 "DWANGOX Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW0X04"
+	secretnext = "DW0X04"
+	sky1 = "DW0X0001"
+	music = "D_DW0X03"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X04 "DWANGOX Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW0X05"
+	secretnext = "DW0X05"
+	sky1 = "DW0X0001"
+	music = "D_DW0X04"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X05 "DWANGOX Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW0X06"
+	secretnext = "DW0X06"
+	sky1 = "DW0X0001"
+	music = "D_DW0X05"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X06 "DWANGOX Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW0X07"
+	secretnext = "DW0X07"
+	sky1 = "DW0X0001"
+	music = "D_DW0X06"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X07 "DWANGOX Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW0X08"
+	secretnext = "DW0X08"
+	sky1 = "DW0X0001"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+	Map07Special
+}
+
+map DW0X08 "DWANGOX Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW0X09"
+	secretnext = "DW0X09"
+	sky1 = "DW0X0001"
+	music = "D_DW0X08"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X09 "DWANGOX Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW0X10"
+	secretnext = "DW0X10"
+	sky1 = "DW0X0001"
+	music = "D_DW0X09"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X10 "DWANGOX Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW0X11"
+	secretnext = "DW0X11"
+	sky1 = "DW0X0001"
+	music = "D_DW0X10"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X11 "DWANGOX Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DW0X12"
+	secretnext = "DW0X12"
+	sky1 = "DW0X0001"
+	music = "D_DW0X11"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X12 "DWANGOX Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DW0X13"
+	secretnext = "DW0X13"
+	sky1 = "DW0X0002"
+	music = "D_DW0X12"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X13 "DWANGOX Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "DW0X14"
+	secretnext = "DW0X14"
+	sky1 = "DW0X0002"
+	music = "D_DW0X13"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X14 "DWANGOX Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "DW0X15"
+	secretnext = "DW0X15"
+	sky1 = "DW0X0002"
+	music = "D_DW0X14"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}
+
+map DW0X15 "DWANGOX Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "DW0X0002"
+	music = "D_DW0X15"
+	ExitPic = "DW0XINT"
+	EnterPic = "DW0XINT"
+}

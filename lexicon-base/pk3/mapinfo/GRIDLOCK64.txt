@@ -1,0 +1,396 @@
+// Gridlock 64 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	specialaction = "Cyberdemon", "Door_Open", 666, 16
+	specialaction = "SpiderMastermind", "Door_Open", 666, 16
+}
+
+map GD6401 "Retrofit"
+{
+	titlepatch = "GD64V00"
+	next = "GD6402"
+	secretnext = "GD6402"
+	sky1 = "GD640416"
+	music = "D_GD6401"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6402 "Pillar64"
+{
+	titlepatch = "GD64V01"
+	next = "GD6403"
+	secretnext = "GD6403"
+	sky1 = "GD640416"
+	music = "D_GD6402"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6403 "Overgrowth"
+{
+	titlepatch = "GD64V02"
+	next = "GD6404"
+	secretnext = "GD6404"
+	sky1 = "GD640416"
+	music = "D_GD6403"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6404 "Stiff"
+{
+	titlepatch = "GD64V03"
+	next = "GD6405"
+	secretnext = "GD6405"
+	sky1 = "GD640416"
+	music = "D_GD6404"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6405 "Europa Facility"
+{
+	titlepatch = "GD64V04"
+	next = "GD6406"
+	secretnext = "GD6406"
+	sky1 = "GD640416"
+	music = "D_GD6405"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6406 "Phantasm"
+{
+	titlepatch = "GD64V05"
+	next = "GD6407"
+	secretnext = "GD6407"
+	sky1 = "GD640416"
+	music = "D_GD6406"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6407 "Middleway"
+{
+	titlepatch = "GD64V06"
+	next = "GD6408"
+	secretnext = "GD6408"
+	sky1 = "GD640416"
+	music = "D_GD6407"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+	Map07Special
+}
+
+map GD6408 "Pinball"
+{
+	titlepatch = "GD64V07"
+	next = "GD6409"
+	secretnext = "GD6409"
+	sky1 = "GD640416"
+	music = "D_GD6408"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6409 "Survive!"
+{
+	titlepatch = "GD64V08"
+	next = "GD6410"
+	secretnext = "GD6410"
+	sky1 = "GD640416"
+	music = "D_GD6409"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6410 "The Lost Tower"
+{
+	titlepatch = "GD64V09"
+	next = "GD6411"
+	secretnext = "GD6411"
+	sky1 = "GD640416"
+	music = "D_GD6410"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6411 "Old Town"
+{
+	titlepatch = "GD64V10"
+	next = "GD6412"
+	secretnext = "GD6412"
+	sky1 = "GD640416"
+	music = "D_GD6411"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6412 "Nazi-Festung"
+{
+	titlepatch = "GD64V11"
+	next = "GD6413"
+	secretnext = "GD6413"
+	sky1 = "GD640417"
+	music = "D_GD6412"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6413 "Marble Backlash"
+{
+	titlepatch = "GD64V12"
+	next = "GD6414"
+	secretnext = "GD6414"
+	sky1 = "GD640417"
+	music = "D_GD6413"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6414 "Gothrock"
+{
+	titlepatch = "GD64V13"
+	next = "GD6415"
+	secretnext = "GD6415"
+	sky1 = "GD640417"
+	music = "D_GD6414"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6415 "Sheev Wheej"
+{
+	titlepatch = "GD64V14"
+	next = "GD6416"
+	secretnext = "GD6431"
+	sky1 = "GD640417"
+	music = "D_GD6415"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6416 "Castle of Atlantis"
+{
+	titlepatch = "GD64V15"
+	next = "GD6417"
+	secretnext = "GD6417"
+	sky1 = "GD640417"
+	music = "D_GD6416"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6417 "Hell Keep"
+{
+	titlepatch = "GD64V16"
+	next = "GD6418"
+	secretnext = "GD6418"
+	sky1 = "GD640417"
+	music = "D_GD6417"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6418 "Crimson Castle"
+{
+	titlepatch = "GD64V17"
+	next = "GD6419"
+	secretnext = "GD6419"
+	sky1 = "GD640417"
+	music = "D_GD6418"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6419 "Blood Lake Penitentiary"
+{
+	titlepatch = "GD64V18"
+	next = "GD6420"
+	secretnext = "GD6420"
+	sky1 = "GD640417"
+	music = "D_GD6419"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6420 "Uninvited Quests"
+{
+	titlepatch = "GD64V19"
+	next = "GD6421"
+	secretnext = "GD6421"
+	sky1 = "GD640417"
+	music = "D_GD6420"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6421 "Through and Around"
+{
+	titlepatch = "GD64V20"
+	next = "GD6422"
+	secretnext = "GD6422"
+	sky1 = "GD640418"
+	music = "D_GD6421"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6422 "Trials of Iniquity"
+{
+	titlepatch = "GD64V21"
+	next = "GD6423"
+	secretnext = "GD6423"
+	sky1 = "GD640418"
+	music = "D_GD6422"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6423 "Blood Cathedral"
+{
+	titlepatch = "GD64V22"
+	next = "GD6424"
+	secretnext = "GD6424"
+	sky1 = "GD640418"
+	music = "D_GD6423"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6424 "Temple of Despair"
+{
+	titlepatch = "GD64V23"
+	next = "GD6425"
+	secretnext = "GD6425"
+	sky1 = "GD640418"
+	music = "D_GD6424"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6425 "Exit Wound"
+{
+	titlepatch = "GD64V24"
+	next = "GD6426"
+	secretnext = "GD6426"
+	sky1 = "GD640418"
+	music = "D_GD6425"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6426 "Bladerunner"
+{
+	titlepatch = "GD64V25"
+	next = "GD6427"
+	secretnext = "GD6427"
+	sky1 = "GD640418"
+	music = "D_GD6426"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6427 "64 ways to die"
+{
+	titlepatch = "GD64V26"
+	next = "GD6428"
+	secretnext = "GD6428"
+	sky1 = "GD640418"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6428 "Tower of Hope"
+{
+	titlepatch = "GD64V27"
+	next = "GD6429"
+	secretnext = "GD6429"
+	sky1 = "GD640418"
+	music = "D_GD6428"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6429 "The Show must go on"
+{
+	titlepatch = "GD64V28"
+	next = "GD6430"
+	secretnext = "GD6430"
+	sky1 = "GD640418"
+	music = "D_GD6429"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6430 "The Master"
+{
+	titlepatch = "GD64V29"
+	next = "VR"
+	secretnext = "VR"
+	sky1 = "GD640418"
+	music = "D_GD6430"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+	allowmonstertelefrags
+	compat_sectorsounds
+}
+
+map GD6431 "Monochrome Mood"
+{
+	titlepatch = "GD64V30"
+	next = "GD6416"
+	secretnext = "GD6432"
+	sky1 = "GD640418"
+	music = "D_GD6431"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}
+
+map GD6432 "Dinosaur Foot"
+{
+	titlepatch = "GD64V31"
+	next = "GD6416"
+	secretnext = "GD6416"
+	sky1 = "GD640418"
+	music = "$MUSIC_ULTIMA"
+	intermusic = "D_GD64IN"
+	ExitPic = "GD64INT"
+	EnterPic = "GD64INT"
+}

@@ -1,0 +1,273 @@
+// Small torch
+object Lexicon_MY17_ShortRedTorch
+{
+	frame LX10 { light FIREBARREL }
+}
+
+// Big torch
+flickerlight2 Lexicon_MY17_BIGTORCH
+{
+	color 1.0 0.9 0.0
+	size 64
+	secondarySize 72
+	interval 0.1
+	offset 0 60 0
+}
+
+object Lexicon_MY17_RedTorch
+{
+	frame LX10 { light Lexicon_MY17_BIGTORCH }
+}
+
+// Hanging torch
+flickerlight2 Lexicon_MY17_HANGINGTORCH
+{
+	color 1.0 0.9 0.0
+	size 48
+	secondarySize 54
+	interval 0.1
+}
+
+object Lexicon_MY17_BloodyTwitch
+{
+	frame LX10 { light Lexicon_MY17_HANGINGTORCH }
+}
+
+object Lexicon_MY17_NonsolidTwitch
+{
+	frame LX10 { light Lexicon_MY17_HANGINGTORCH }
+}
+
+
+// Super Mushroom
+pulselight Lexicon_MY17_SOULSPHERE
+{
+	color 0.8 0.5 0.5
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+object Lexicon_MY17_Soulsphere
+{
+	frame LX08 { light Lexicon_MY17_SOULSPHERE }
+}
+
+// Super star
+pulselight Lexicon_MY17_INVULN_1
+{
+	color 1.0 1.0 0.3
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+pulselight Lexicon_MY17_INVULN_2
+{
+	color 0.3 0.3 1.0
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+object Lexicon_MY17_InvulnerabilitySphere
+{
+	frame LX08R { light Lexicon_MY17_INVULN_1 }
+	frame LX08S { light Lexicon_MY17_INVULN_2 }
+	frame LX08T { light Lexicon_MY17_INVULN_2 }
+	frame LX08U { light Lexicon_MY17_INVULN_1 }
+}
+
+// Ghost suit
+pointlight Lexicon_MY17_BLURSPHERE
+{
+	color 0.5 0.5 0.5
+	size 40
+	offset 0 16 0
+}
+
+object Lexicon_MY17_BlurSphere
+{
+	frame LX08 { light Lexicon_MY17_BLURSPHERE }
+}
+
+// Mega mushroom
+pointlight Lexicon_MY17_MEGASPHERE1
+{
+	color 0.7 0.7 0.2
+	size 40
+	offset 0 16 0
+}
+
+pointlight Lexicon_MY17_MEGASPHERE2
+{
+	color 0.7 0.7 0.2
+	size 32
+	offset 0 16 0
+}
+
+pointlight Lexicon_MY17_MEGASPHERE3
+{
+	color 0.7 0.7 0.2
+	size 24
+	offset 0 16 0
+}
+
+pointlight Lexicon_MY17_MEGASPHERE4
+{
+	color 0.7 0.7 0.2
+	size 16
+	offset 0 16 0
+}
+
+object Lexicon_MY17_Megasphere
+{
+	frame LX10N { light Lexicon_MY17_MEGASPHERE1 }
+	frame LX10O { light Lexicon_MY17_MEGASPHERE2 }
+	frame LX10P { light Lexicon_MY17_MEGASPHERE3 }
+	frame LX10Q { light Lexicon_MY17_MEGASPHERE4 }
+}
+
+// Health Coin
+object Lexicon_MY17_HealthBonus
+{
+	frame LX09 { light HEALTHPOTION }
+}
+
+// Armour Coin
+object Lexicon_MY17_ArmorBonus
+{
+	frame LX09 { light ARMORBONUS }
+}
+
+// Blue Key
+object Lexicon_MY17_BlueSkull
+{
+	frame LX10 { light HEALTHPOTION }
+}
+
+// Yellow Key
+object Lexicon_MY17_YellowSkull
+{
+	frame LX10 { light YELLOWKEY }
+}
+
+// Red Key
+object Lexicon_MY17_RedSkull
+{
+	frame LX10 { light REDKEY }
+}
+
+// Red Coin
+object Lexicon_MY17_RedCard
+{
+	frame LX02 { light REDKEY }
+}
+
+// Green armour
+object Lexicon_MY17_GreenArmor
+{
+	frame LX08X { light GREENARMOR1 }
+	frame LX08Y { light GREENARMOR2 }
+}
+
+// Blue armour
+object Lexicon_MY17_BlueArmor
+{
+	frame LX08V { light BLUEARMOR1 }
+	frame LX08W { light BLUEARMOR2 }
+}
+
+// Bullet Bill
+object Lexicon_MY17_Rocket
+{
+	frame LX07A { light ROCKET }
+
+	frame MISLB { light ROCKET_X1 }
+	frame MISLC { light ROCKET_X2 }
+	frame MISLD { light ROCKET_X3 }
+}
+
+// Fireball
+flickerlight Lexicon_MY17_FIREBALL_X1
+{
+	color 0.7 0.7 0.0
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+object Lexicon_MY17_PlasmaBall
+{
+	frame LX07F { light IMPBALL }
+	frame LX07G { light IMPBALL }
+
+	frame LX07H { light Lexicon_MY17_FIREBALL_X1 }
+	frame LX07I { light IMPBALL_X1 }
+	frame LX07J { light IMPBALL_X2 }
+	frame LX07K { light IMPBALL_X3 }
+}
+
+// Imp Fireball
+object Lexicon_MY17_DoomImpBall
+{
+	frame LX07T { light IMPBALL }
+	frame LX07U { light IMPBALL }
+
+	frame LX07V { light Lexicon_MY17_FIREBALL_X1 }
+	frame LX07W { light IMPBALL_X2 }
+	frame LX07X { light IMPBALL_X3 }
+}
+
+// Arachnotron Fireball
+pointlight Lexicon_MY17_GREENFIREBALL
+{
+	color 0.6 1.0 0.0
+	size 64
+}
+
+flickerlight Lexicon_MY17_GREENFIREBALL_X1
+{
+	color 0.7 0.7 0.7
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight Lexicon_MY17_GREENFIREBALL_X2
+{
+	color 0.4 0.7 0.0
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight Lexicon_MY17_GREENFIREBALL_X3
+{
+	color 0.2 0.4 0.0
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight Lexicon_MY17_GREENFIREBALL_X4
+{
+	color 0.08 0.2 0.0
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object Lexicon_MY17_ArachnotronPlasma
+{
+	frame LX07M { light Lexicon_MY17_GREENFIREBALL }
+	frame LX07N { light Lexicon_MY17_GREENFIREBALL }
+
+	frame LX07O { light Lexicon_MY17_GREENFIREBALL_X1 }
+	frame LX07P { light Lexicon_MY17_GREENFIREBALL_X2 }
+	frame LX07Q { light Lexicon_MY17_GREENFIREBALL_X3 }
+	frame LX07R { light Lexicon_MY17_GREENFIREBALL_X4 }
+}

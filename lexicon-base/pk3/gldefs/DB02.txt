@@ -1,0 +1,27 @@
+flickerlight2 DB02_BIGWHITETORCH
+{
+	color 1.0 1.0 1.0
+	size 64
+	secondarySize 72
+	interval 0.1
+	offset 0 60 0
+}
+
+object Lexicon_DB02_GreenTorch
+{
+	frame LX04 { light DB02_BIGWHITETORCH }
+}
+
+flickerlight2 DB02_SMALLWHITETORCH
+{
+	color 1.0 1.0 1.0
+	size 48
+	secondarySize 54
+	interval 0.1
+	offset 0 35 0
+}
+
+object Lexicon_DB02_ShortGreenTorch
+{
+	frame LX04 { light DB02_SMALLWHITETORCH }
+}

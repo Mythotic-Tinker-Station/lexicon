@@ -1,0 +1,267 @@
+// Surge DM Mapinfo
+
+defaultmap
+{
+	ExitPic = "SRG1INT"
+	EnterPic = "SRG1INT"
+	InterMusic = "D_SRG1IN"
+	Sky1 = "SRG10159"
+	NoJump
+	NoCrouch
+}
+
+map SRG101 "Dead Right"
+{
+	TitlePatch = "SRG1V00"
+	Next = "SRG102"
+	SecretNext = "SRG102"
+	Music = "D_SRG101"
+}
+
+map SRG102 "Center of Attention"
+{
+	TitlePatch = "SRG1V01"
+	Next = "SRG103"
+	SecretNext = "SRG103"
+	Music = "D_SRG102"
+}
+
+map SRG103 "Supersonic"
+{
+	TitlePatch = "SRG1V02"
+	Next = "SRG104"
+	SecretNext = "SRG104"
+	Music = "D_SRG103"
+}
+
+map SRG104 "Darkest Days"
+{
+	TitlePatch = "SRG1V03"
+	Next = "SRG105"
+	SecretNext = "SRG105"
+	Music = "D_SRG104"
+}
+
+map SRG105 "Medevil"
+{
+	TitlePatch = "SRG1V04"
+	Next = "SRG106"
+	SecretNext = "SRG106"
+	Music = "D_SRG105"
+}
+
+map SRG106 "Hangman"
+{
+	TitlePatch = "SRG1V05"
+	Next = "SRG107"
+	SecretNext = "SRG107"
+	Music = "D_SRG106"
+}
+
+map SRG107 "Impossible Pain"
+{
+	TitlePatch = "SRG1V06"
+	Next = "SRG108"
+	SecretNext = "SRG108"
+	Music = "D_SRG107"
+}
+
+map SRG108 "Shred"
+{
+	TitlePatch = "SRG1V07"
+	Next = "SRG109"
+	SecretNext = "SRG109"
+	Music = "D_SRG108"
+}
+
+map SRG109 "Bloodshot"
+{
+	TitlePatch = "SRG1V08"
+	Next = "SRG110"
+	SecretNext = "SRG110"
+	Music = "D_SRG109"
+}
+
+map SRG110 "Square O' Death"
+{
+	TitlePatch = "SRG1V09"
+	Next = "SRG111"
+	SecretNext = "SRG111"
+	Music = "D_SRG110"
+}
+
+map SRG111 "Intense"
+{
+	TitlePatch = "SRG1V10"
+	Next = "SRG112"
+	SecretNext = "SRG112"
+	Music = "D_SRG111"
+}
+
+map SRG112 "Tombstone"
+{
+	TitlePatch = "SRG1V11"
+	Next = "SRG113"
+	SecretNext = "SRG113"
+	Music = "D_SRG112"
+}
+
+map SRG113 "Tower of the Decaying"
+{
+	TitlePatch = "SRG1V12"
+	Next = "SRG114"
+	SecretNext = "SRG114"
+	Music = "D_SRG104"
+}
+
+map SRG114 "Speed"
+{
+	TitlePatch = "SRG1V13"
+	Next = "SRG115"
+	SecretNext = "SRG115"
+	Music = "D_SRG114"
+}
+
+map SRG115 "Overkill"
+{
+	TitlePatch = "SRG1V14"
+	Next = "SRG116"
+	SecretNext = "SRG131"
+	Music = "D_SRG115"
+}
+
+map SRG116 "X Squared"
+{
+	TitlePatch = "SRG1V15"
+	Next = "SRG117"
+	SecretNext = "SRG117"
+	Music = "D_SRG102"
+}
+
+map SRG117 "Battlefields"
+{
+	TitlePatch = "SRG1V16"
+	Next = "SRG118"
+	SecretNext = "SRG118"
+	Music = "D_SRG103"
+}
+
+map SRG118 "Shameless Destruction"
+{
+	TitlePatch = "SRG1V17"
+	Next = "SRG119"
+	SecretNext = "SRG119"
+	Music = "D_SRG104"
+}
+
+map SRG119 "Arena of Fire"
+{
+	TitlePatch = "SRG1V18"
+	Next = "SRG120"
+	SecretNext = "SRG120"
+	Music = "D_SRG105"
+}
+
+map SRG120 "Singe"
+{
+	TitlePatch = "SRG1V19"
+	Next = "SRG121"
+	SecretNext = "SRG121"
+	Music = "D_SRG106"
+}
+
+map SRG121 "Close Quarters"
+{
+	TitlePatch = "SRG1V20"
+	Next = "SRG122"
+	SecretNext = "SRG122"
+	Music = "D_SRG107"
+}
+
+map SRG122 "Skin"
+{
+	TitlePatch = "SRG1V21"
+	Next = "SRG123"
+	SecretNext = "SRG123"
+	Music = "D_SRG108"
+}
+
+map SRG123 "Top of the World"
+{
+	TitlePatch = "SRG1V22"
+	Next = "SRG124"
+	SecretNext = "SRG124"
+	Music = "D_SRG109"
+}
+
+map SRG124 "Aurikan's Theatre"
+{
+	TitlePatch = "SRG1V23"
+	Next = "SRG125"
+	SecretNext = "SRG125"
+	Music = "D_SRG110"
+}
+
+map SRG125 "Hidden Pain"
+{
+	TitlePatch = "SRG1V24"
+	Next = "SRG126"
+	SecretNext = "SRG126"
+	Music = "D_SRG111"
+}
+
+map SRG126 "Catafrag"
+{
+	TitlePatch = "SRG1V25"
+	Next = "SRG127"
+	SecretNext = "SRG127"
+	Music = "D_SRG112"
+}
+
+map SRG127 "Dance in the Darkness"
+{
+	TitlePatch = "SRG1V26"
+	Next = "SRG128"
+	SecretNext = "SRG128"
+	Music = "D_SRG104"
+}
+
+map SRG128 "Head Rush"
+{
+	TitlePatch = "SRG1V27"
+	Next = "SRG129"
+	SecretNext = "SRG129"
+	Music = "D_SRG114"
+}
+
+map SRG129 "Blow Through"
+{
+	TitlePatch = "SRG1V28"
+	Next = "SRG130"
+	SecretNext = "SRG130"
+	Music = "D_SRG115"
+}
+
+map SRG130 "Storm Pipes"
+{
+	TitlePatch = "SRG1V29"
+	next = "VR"
+	Secretnext = "VR"
+	Music = "D_SRG130"
+}
+
+map SRG131 "Heat"
+{
+	TitlePatch = "SRG1V30"
+	Next = "SRG116"
+	SecretNext = "SRG132"
+	Music = "D_SRG130"
+}
+
+map SRG132 "Death Flight"
+{
+	TitlePatch = "SRG1V31"
+	Next = "SRG116"
+	SecretNext = "SRG116"
+	Music = "D_SRG101"
+}

@@ -1,0 +1,634 @@
+                           SOME DOOM GUYS PRESENT:
+
+                               S U R G E   D M
+
+
+Filename                : SURGE.ZIP (SURGE.WAD and SURGE.TXT)
+
+Note			: This version has a few minor bug fixes
+			  over the original release.
+
+Date Finished           : December 24th 1998
+ 
+Developers		: Nick Baker (Chief mapper and gfx guy)
+			  nbaker1@net.ntl.com
+			  http://nickbaker.ml.org
+                          
+			  David Gevert (Mapper)
+			  Blitzr4@aol.com
+			  http://www.quakecity.net/dagger
+
+			  Martin Friberg (Mapper)
+			  nails@hem2.passagen.se
+			  http://www.doomshack.com/doomster
+
+			  Mike Watson (Mapper)
+			  cyberdemon@cyb.ml.org
+			  http://cyb.ml.org
+
+			  Jesse Myers (Mapper)
+			  njx9@gamescentral.com
+			  http://njx9.ml.org
+
+			  Qingshuo Wang (Mapper)
+			  pixelrex@yahoo.com
+			  http://members.xoom.com/pixelrex/
+
+			  Yashar Garibzadeh (Mapper)
+			  femco@online.no
+
+			  Mike Reid (Mapper)
+			  prower@prow.ml.org
+			                         
+Other Releases          : Nick's stuff:
+                          Realms of Pain (RLMSPAIN.ZIP)
+                          GothicDM 2, maps 17 and 32 (GOTHICDM2.ZIP)
+                          The Darkening E1, graphics and levels (DARKEN.ZIP)
+                          Upcoming (as of this release):
+			  Moderator for Paradox TC
+                          Levels, music and graphics for Caverns of Darkness,
+                          Crucified Dreams, Doom Resurrection,
+                          Darkening E2, Execution DM, Hellstorm, Mockery,
+			  Mordeth E2, SlaughterDM, Twice Risen, Ultimate
+			  Invasion.
+
+			  David's stuff:
+			  Earthbase 3 (BASE3.ZIP)
+			  Dave DM series (DGDM*.ZIP)
+			  Upcoming (as of this release):
+			  Moderator for SlaughterDM
+                          Levels and graphics for Eternity TC, Paradox TC,
+			  Mordeth E3.
+
+			  Martins stuff:
+                          Trent's Rhapsody (DM)
+                          Live Backwards (DM)
+                          UAC Corporation (SP)
+                          Crestfallen (SP)
+                          Levels for Beyond Doom TATC
+			  Upcoming (as of this release):
+			  Levels for Ninja Doom.
+
+			  Mike Watson's stuff:
+                          Eulogy1-9
+                          Descent 1
+			  Dismemberment
+			  Upcoming (as of this release):
+                          Levels for Hell Reavealed 2
+
+			  Jesse's stuff:
+			  Upcoming (as of this release):
+			  Levels for Mortality
+                          
+			  Qingshuo's stuff:
+			  Simply Evil
+			  Upcoming (as of this release):
+			  Levels for Crucified Dreams, Jagged Edges,
+			  Painful Echoes and SlaughterDM
+
+			  Yashar's stuff:
+			  Upcoming (as of this release):
+			  Levels for Hell Revealed 2, Paradox, Crucified
+			  Dreams, Destruction and Prox.
+
+			  Mike Reid's stuff:
+			  The Seventh series
+			  Upcoming (as of this release):
+			  Levels for Hell Revealed 2 and Paradox.
+
+Misc. Developer Info    : Nick:
+                          Born in 1981.
+                          Contributor to Doom News (http://news.doomshack.com)
+                          First played Doom in early '94, started editing about
+			  half a year later, finest released level is probably
+			  GothicDM 2 MAP32, but look out for Mordeth E2 MAP13!
+
+			  David:
+			  15 years old, obsessed with quality of levels,
+			  moderator of SlaughterDM
+
+                          Martin:
+                          Born in 1978.
+                          Runs DooMster (http://www.doomshack.com/doomster/)
+                          Been dooming since -95 and editing since late -95.
+
+			  Mike Watson:
+                          Been Dooming since before Doom was released.
+                          I can't remember when my birthday is.  Oh wait, 
+                          it's today!  http://cyb.ml.org... send me money!
+
+			  Jesse:
+			  Born in 1981.
+			  Runs The House of Diablo II
+			  (http://diablo2.gamescentral.com/),
+
+			  Qingshuo:
+			  13 year old dude in Edina, Minnesota who has no plans
+			  for his future ;-)
+			  Has a website at pixelrex.quakecity.net
+			  
+			  Yashar:
+			  Born in Iran in 83, moved to Norway a few years later...
+			  Been playing doom for 3 years or so, and designing levels
+			  for 1 1/2.
+
+			  Mike Reid:
+
+Description             : In case you couldn't tell, this is a dedication to
+			  Ola Bjorling's uber cool Overload.
+
+                          It currently features 8 high paced frag filled
+                          levels in the style of Overload and all new
+                          textures (mostly "inspired" by the original
+                          Overload textures).  The textures don't look quite
+                          so awesome as the originals, but we're not allowed
+                          to use them.  Oh yeah, some textures are inspired
+                          by some of Ola's Darkening E1 textures too.  So
+                          ph33r.
+				                                                 
+Additional Credits to   : The whole team would like to thank:
+
+			  * Ola and friends for one of the greatest DM level
+			    sets of all time
+
+			  Nick thanks:
+
+			  * The authors of DeeP '97 and WinTex
+			  * All the people who've shown me how crap I am at
+			    playing DM
+			  * The people who realise that they could upgrade
+			    their 486 to a Pentium with a single day's wages
+			    nowadays.
+			  * America for having hardly any local Doom servers,
+                            while England has one throughout the entire
+                            country, ie BT's own Wireplay service.  So ph33r
+                            us Brits! =P
+
+			  David thanks:
+
+			  * Ola Bjorling and the rest of the Overload Team
+                            for their awesome Overload set.  You like frags?
+                            You'll like this. members.xoom.com/bjorling
+			  * Nick Baker for starting this Overload Tribute
+			    Project.
+
+			  Martin thanks:
+
+			  * Ben Morris for DCK.
+                          * Rand Phares for his great Doom Consitency
+                            Checker.
+
+			  Mike Watson thanks:
+
+                          * Matt Ayres for WadEd (even though it's got way too
+                            many bugs.
+                          * Anyone who helped me out with any kind of
+                            level editing for Doom (they know who they are...
+                            or maybe they don't...).
+                          * Ola, cause without him, Surge would be
+                            Overload and we'd all have nothing to make it
+                            a tribute to (you think anyone will make a
+                            tribute to Surge?).
+
+
+			  Jesse thanks:
+   			
+			  * Everyone, Matthew Ayres too, especially if he
+                            releases the WadEd Source.
+
+			  Qingshuo thanks:
+
+			  * No fuck'n thanX to BrewBoy.
+
+			  Yashar thanks:
+
+			  * Nick Baker for starting the whole project, and
+			    involving me.
+			  * Chrozoron for different reasons.
+
+			  Mike Reid thanks:
+
+			  *
+
+===========================================================================
+* Play Information *
+
+Map #                   : MAP01 - MAP32
+Single Player           : Yes, to scout out the killing fields.
+Cooperative             : No, though the starts are there.
+Deathmatch              : Duh!
+Difficulty Settings     : Nope. Just play skill 5 old deathmatch for max ammo
+                          The levels have the weapons we find to be most
+                          suitable.
+New Sounds              : No
+New Music               : Yes, freeware music from the net for all levels.
+New Graphics            : Yes - Either inspired by original Overload or
+                          Darkening E1 ones, or taken from the Darkening E1.
+Demos Replaced          : Not yet
+
+* Construction *
+
+Base                    : New levels from scratch
+Build Time              : Varies, see below
+Tool(s) used            : A load of 'em:
+
+                          Nick used:
+			  DeeP '97 v9.30
+			  Wintex 4.3
+                          Paintshop Pro v5.01
+                          MS-DOS EDIT :)
+
+			  David used:
+			  EdMap 1.4
+			  DMapEdit 4.0.11
+			  Deth 4.16
+
+			  Martin used:
+
+			  *
+
+			  Mike Watson used:
+                          WadEd 1.83b
+                          WadAuthor 1.30
+                          Warm 1.6
+
+			  Jesse used:
+     			  WadEd 1.88b
+			  DeeP 97
+			  EdMap 1.21
+
+			  Qingshuo used:
+
+			  HellMaker 1.2 beta 2
+
+			  Yashar used:
+
+			  Dck 2.2
+			  Dck 3.0
+			  Deth 4.1 (i think)
+
+			  Mike Reid used:
+
+			  WadEd 1.87R 
+                          WARM 1.6
+                          Deep97
+
+
+Known Bugs              : What?!? You think we'd release something with
+                          bugs?!? No, there aren't any, at least none that we
+			  know of.  Please report any to nbaker1@net.ntl.com.
+
+May Not Run With...     : Heretic, Hexen, Quake, Quake 2, Sin, Half-Life, etc =P
+			  Unlike Overload, this sky DOES tile, so you can use
+			  whatever ports you want.  So ph33r.
+
+
+MAP01
+Title                   : Dead Right
+Author                  : Nick Baker
+Description             : Kinda inspired by Overload MAP10: The Ruins of
+			  Valhalla.
+Construction time       : About 4 hours.  The lighting is what took the most
+			  time, I think it looks great now.
+Gameplay pace           : MEDIUM
+Recommended # of players: 2
+
+MAP02
+Title                   : Center (or Centre if you're Nick :P) Of Attention
+Author                  : Mike Watson
+Description             : Small, but open.  Lot's of fun.  That's all I
+                          gotta say, go kill someone!
+Construction time       : 3 days total.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP03
+Title                   : Supersonic
+Author                  : Yashar Garibzadeh
+Description             : A round courtyard, with plenty of pillars and stuff
+			  to make for an interesting Deathmatch.
+Construction time       : Unknown
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP04
+Title                   : Darkest Days
+Author                  : Mike Watson
+Description             : If you're a darker color you'll have an definate
+                          advantage.  Also, the BFG is easy to get, but trust
+                          me, ambushes are easy too.
+Construction time       : 2 hours
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP05
+Title                   : Medevil
+Author                  : Jesse Myers
+Description             : A large open courtyard with some nice detail.
+Construction time       : 
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP06
+Title                   : Hangman
+Author                  : Nick Baker
+Description             : You'll soon see where the name comes from :) A
+			  central courtyard with some bits going off.
+Construction time       : 4 hours or so.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP07
+Tile			: Impossible Pain
+Author			: Mike Watson
+Description		: Metal and brick fragathon.
+Construction time	: 2 and a half hours
+Gameplay pace		: INSANE
+Recommended # of players: 2
+
+MAP08
+Title                   : Shred
+Author                  : Martin Friberg
+Description             : Tiny, dark, highly detailed arena.
+Construction time       : 
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP09
+Title                   : Bloodshot
+Author                  : Mike Watson
+Description             : Also small (see a pattern?), but fairly easy to move
+                          around in.  High frags I hope.
+Construction time       : 4 hours
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP10
+Title                   : Square O' Death
+Author                  : David Gevert
+Description             : Squarish brick 'n' metal arena.
+Construction time       : A little over 2 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP11
+Title                   : Intense
+Author                  : Yashar Garibzadeh
+Description             : A small central building with a path all around it.
+Construction time       : Unknown
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP12
+Title                   : Tombstone
+Author                  : Nick Baker
+Description             : Inspired by Overload MAP13: Screaming Fury and also
+                          some other level I vaguely remember from somewhere,
+                          probably one of Mr Doom's.
+Construction time       : 3 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2 
+
+MAP13
+Title                   : Tower Of The Decaying
+Author                  : Qingshuo Wang
+Description             : A large tower build in the middle of a rocky valley.
+Construction time       :
+Gameplay pace           : MEDIUM
+Recommended # of players: 2-4
+
+MAP14
+Title                   : Speed
+Author                  : Mike Reid
+Description             : Extremely small and fast paced DM, with no cover at all!
+Construction time       :
+Gameplay pace           : INSANE
+Recommended # of players:
+
+MAP15
+Title                   : Overkill
+Author                  : Mike Watson
+Description             : Pretty small, powerful weapons.  BFG has to be
+                          lowered to get it, which is fairly simple, but
+                          your enemy can swipe it from you.  ph33r some
+                          more!
+Construction time       : 2 hours
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP31
+Title                   : Heat
+Author                  : Nick Baker
+Description             : Another level named after it's main feature :)
+			  The powerful weapons are in the lava, but you'll
+			  sustain damage getting them...
+Construction time       : 1 1/4 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP32
+Title                   : Death Flight
+Author                  : Mike Watson
+Description             : Kinda big, kinda small.  If you happen to get a
+                          rocket in the face that knocks you out a window
+                          don't respawn right away, the ride is pretty fun.
+                          Did I mention NOT to jump out the window?
+Construction time       : 6 hours
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP16
+Title                   : X Squared
+Author                  : David Gevert
+Description             : Squarish brick 'n' metal arena, you'll see why I
+                          named it what I did very soon...
+Construction time       : A little over 1 1/2 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP17
+Title                   : Battlefields
+Author                  : Yashar Garibzadeh
+Description             : Another courtyard, with a couple of teleporters to
+			  keep things interesting.
+Construction time       : Unknown
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP18
+Title                   : Shameless Destruction
+Author                  : Mike Watson
+Description             : I was bored, and didn't feel like making an SP
+                          map.  It's actually pretty cool too.  Cold too ;)
+Construction time       : 2 hours
+Gameplay pace           : INSANE(even better with 3+ players)
+Recommended # of players: 2-4
+
+MAP19
+Title                   : Arena of Fire
+Author                  : Nick Baker
+Description             : Another level with a firey theme :)
+			  Needs some more detail added.
+Construction time       : 2 hours (so far)
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP20
+Title                   : Singe
+Author                  : Martin Friberg
+Description             : One of the fastest paced DM levels you'll ever play.
+			  You'll love it :)
+Construction time       :
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP21
+Title                   : Close Quarters
+Author                  : Mike Watson
+Description             : It's really, really tiny and you should have some
+			  fun at least.  Most likely whoever gets off the first
+			  shot will win, but he may also die from it heh.  Also,
+                          that's not a waffle in the middle, okay??
+Construction time       : One hour
+Gameplay pace           : MEDIUM
+Recommended # of players: 2 (anymore would be really weird)
+
+MAP22
+Title                   : Skin
+Author                  : Yashar Garibzadeh and Martin Friberg
+Description             : Darkly themed, tiny DM level.
+Construction time       :
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP23
+Title                   : Top Of The World
+Author                  : Yashar Garibzadeh
+Description             : One of the best looking levels of the pack, it has a
+			  simply stunning view :)
+Construction time       : Unknown
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP24
+Title                   : Aurikan's Theatre
+Author                  : Jesse Myers
+Description             : Kind of a stone henge type level. 
+Construction time       :
+Gameplay pace           :
+Recommended # of players:
+
+MAP25
+Title                   : Hidden Pain
+Authors                 : Mike Watson and Nick Baker
+Description             : Really dark and brown with a few secrets.  Also,
+			  you'll have to work for that BFG too.  This is just
+			  about the only level in the pack that is not
+			  symmetrical at all.
+Construction time       : About 8 hours
+Gameplay pace           : INSANE
+Recommended # of players: 4
+
+MAP26
+Title                   : Catafrag
+Author                  : Nick Baker
+Description             : I was messing around with my level editor one day,
+                          and came up with this...
+Construction time       : 2 hours
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP27
+Title                   : Dance In The Darkness
+Author                  : Yashar Garibzadeh
+Description             : Tiny little level that is extremely fast paced.
+Construction time       : Unknown
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP28
+Title                   : Head Rush
+Author                  : Mike Watson
+Description             : Small building surrounded by water.  This is the
+			  first DM map I ever made (about six months or so
+			  ago I think) with texture changes (of course) and
+			  with less ammo and health.
+Construction time       : 3 hours total
+Gameplay pace           : INSANE
+Recommended # of players: 2-4
+
+MAP29
+Title                   : Blow Through
+Author                  : David Gevert
+Description             : Another fast-paced fragged filled arena.
+Construction time       : A little over an hour and a half.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP30
+Title                   : Storm Pipes
+Author                  : Nick Baker
+Description             : Large metallic tunnels form this level.
+			  It's very Quake like, and there's a
+			  specific Quake DM level that it's heavily
+			  inspired by, but I've forgotten what it was
+			  called :)
+Construction time       : 3 hours
+Gameplay pace           : MEDIUM
+Recommended # of players: 2-4
+
+* Where to get this WAD *
+
+Only level contributors and testers should have this version of the WAD.  If
+you are not one of these, then you shouldn't have it.  If you are, then look
+on the ftp site for the latest version (I'm trying to release a new build 
+weekly.
+
+* Disclaimer *
+
+All similarities with Ola Bjorling's Overload are purely intentional.
+
+The word ph33r was harmed during the making of this TXT file.
+
+* Build History *
+
+Build 14: Improved versions of a few levels (Exits added, weapons changed,
+etc), levels re-ordered, all levels except 07, 08 and 22 now included, level
+graphics complete (except for levels not yet finished).
+
+Build 13: Added Nick Baker's MAP23 and Mike Reid's MAP24, added DM/co-op
+starts to various maps, sector and sidedef merging, etc.  First version
+with beta testers!
+
+Build 12: Updated Nick Baker's MAP11, added some new flats.
+
+Build 11: Added Cyberdemon's MAP21 and MAP22, updated Nick Baker's MAP11
+
+Build 10: Added Cyberdemon's MAP19 and Jesse Myer's MAP20
+
+Build 9: Added Gemini's MAP16, MAP17 and MAP18
+
+Build 8: Added Nick Baker's MAP11 and MAP14, Mike Watson's MAP12 and MAP13,
+piXel reX's MAP15 and Gemini's MAP31 and MAP32.  Added some new textures,
+notably an ice texture and ice and snow flats.
+
+Build 7: Added David Gevert's MAP07, Martin Friberg's MAP08, Mike Watson's
+MAP09 and Jesse Myer's MAP10.  Replaced a couple of Ola's Darkening E1
+textures and added a new sky.  Surge.WAD and Srgemaps.WAD are now in seperate
+ZIP files for greater convenience.  Added MAPINFO entry.
+
+Build 6: Added Nick Baker's MAP06
+
+Build 5: Added David Gevert's MAP05
+
+Build 4: Added Nick Baker's MAP04 - Not released
+
+Build 3: Added Nick Baker's MAP02 and David Gevert's MAP03 - Not released
+
+Build 2: Added Nick Baker's MAP01 
+
+Build 1: Textures only - Not released
+
+* Future *
+
+More levels.

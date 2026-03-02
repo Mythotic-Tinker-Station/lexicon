@@ -1,0 +1,161 @@
+=============================================================================
+Title                   : Danzig for DOOM ][ Deathmatch 
+Filename                : danzig2.wad (five levels) 
+Authors                 : Map16 - B. Weldon
+                          Map17 - B. Vannatta
+                          Map18 - B. Vannatta
+                          Map19 - B. Vannatta
+                          Map20 - B. Vannatta
+Email Address           : vannatta@bobcat.ent.ohiou.edu
+                          weldon@helios.phy.ohiou.edu
+Misc. Author Info       : Authors of the Igor Series and the Danzig Series
+Description             : Danzig2.wad is a concatenation of the second five 
+                          Danzig pwads.  These levels are designed for 
+                          intense two-, three-, or four-player DOOM ][ 
+                          Deathmatch.  Supports various modes of play (see 
+                          below) and monsters (use respawn). 
+Additional Credits to   : TIMinator (asht@cadvision.com) 
+                                - Thanks to Tim, Tower, and their group of  
+                                  Calgary DOOMers for all of their excellent 
+                                  ideas and playtesting.  Tim and Tower 
+                                  handled all of the weapon placements for 
+                                  the TEAM deathmatch skill setting (Skill 3) 
+                                  in Map20.  I would like to thank Tim for 
+                                  all of his help in creating this series - 
+                                  Tim was there in the beginning of Danzig, 
+                                  and he's here in the end.  Thank you, Tim!
+                          Tower (thompsos@cuug.ab.ca)
+                                - Much thanks to Scott for his playtesting
+                                  and ideas, especially in Map20.  Scott has
+                                  been playing DOOM for a long time - his
+                                  advice has been invaluable.
+                          Steve Grecni (grecni@bobcat.ent.ohiou.edu)
+                                - Thanks to Steve and his group for their 
+                                  great ideas and playtesting.  Steve provided
+                                  much of the two-player playtesting that went
+                                  into this second half of the Danzig Series.
+                                  Check out his GIDEON*.WAD series for DOOM ][
+                                  Deathmatch.
+                          Genesis Krzyzaniak (genesisk@eden.com)
+                                - Thanks to Genesis for some thorough 
+                                  playtesting and great ideas.  Be sure to
+                                  check out his GKDM*.WAD series for DOOM2
+                                  deathmatch.
+                          id Software
+                                - The MASTERS...
+=============================================================================
+
+
+* Play Information *
+
+Map #                   : Map16-Map20
+Single Player           : No
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : YES
+Difficulty Settings     : Implemented for various modes of play (SEE BELOW)
+New Sounds              : No
+New Graphics            : No
+New Music               : No
+Demos Replaced          : None
+                                       
+
+* Construction *
+
+Base                    : New levels from scratch
+Editor(s) used          : ---
+Known Bugs              : please report any to vannatta@bobcat.ent.ohiou.edu
+
+
+* Copyright / Permissions *
+
+Authors MAY NOT use this level as a base to build additional levels, 
+concatenations, or otherwise.
+
+You MAY distribute this PWAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file
+intact.
+
+
+* Where to get this PWAD *
+
+FTP sites:  wcarchive.cdrom.com
+
+
+* Important Notes *
+
+        Danzig2 is a set of five tight levels designed to provide for intense
+two-, three-, or four-player DOOM ][ Deathmatches.  I've included support for 
+various modes of play as follows (these support modes DO NOT apply to Map20;
+see below for further details):
+        
+        1.  Original Deathmatch rules ("I'm Too Young To Die" and "Hey, Not 
+            Too Rough" support this) 
+            
+        2.  Deathmatch 2.0 rules ("Hurt Me Plenty" supports this) 
+        
+        3.  What I call "Expert" mode ("Ultraviolent" and "Nightmare" support 
+            this)  
+        
+Support for Deathmatch 2.0 has been altered from previous Danzig levels to 
+better provide for -altdeath play.  Original Deathmatch is now basically the 
+same setup as Expert mode without any plasma weapons.  Expert mode still has 
+very little health and ammo, but DOES include almost every weapon in the level 
+(including the BFG).  Use Expert mode if you want access to the more powerful 
+weapons.
+        I've also included monster support - monsters are placed 
+strategically to add spice to the game.  Usually players don't need this in a 
+three- or four-player game, but sometimes a two-person game can get a little 
+slow.  Either way you like it, BE SURE TO INCLUDE THE RESPAWN OPTION WHEN 
+USING MONSTERS in your Deathmatches.
+        Also note that these levels do not involve cooperative exits; the
+exits should be simple to find.
+        
+
+* Danzig20/Map20 *
+
+        Map20 of this set (danzig20) is my final DOOM level.  WHEW!  Between 
+the two of us, Brandon and I have now released 20 pwads for DOOM II Death-
+match.  We've both learned a lot since the early levels of the old Igor 
+Series, and hope you've enjoyed this second series of deathmatch pwads.  
+        As you'll notice, Map20 contains bits and pieces of ideas from our 
+previous levels - a sort of recap of our work.  You'll see features from 
+Igor9 Map06, Danzig11, Danzig13, Danzig14, Danzig15, Danzig16, as well as 
+various other ideas.  Obviously Map20 is larger than previous Danzig levels;    
+this is to accomodate 1) team play, in which players need more room to 
+maneuver and plan joint strategies, and 2) tournament play - when 
+creating Map20, I had a tournament layout in mind.  Thus, while Map20 may not
+promote the furiously fast-paced fragfests of previous Danzigs, it WILL force 
+you to use skill and strategy - especially the Skill 1/2 difficulty setting.
+        Please note that some minor changes have occured in THING placements 
+with respect to the difficulty levels in Map20.  Skills 1&2 still support 
+Original Deathmatch rules, but now contain NO supershotguns - only shotguns, 
+chainguns, and rocket launchers (like E1Mx of Original DOOM).  Skill 3 is set 
+up to support TEAM deathmatch, and includes all of the weapons in locations 
+optimized for TEAM play.  Skills 4&5 still include all weapons but little 
+health/armor/ammo.
+        Theme for Map20 is somewhat of a departure from the last four or five
+levels of this series, and more of a return to the older TECH style used in 
+early Danzig and Igor pwads.  I had a futuristic warehouse in mind when 
+creating Map20, with an older "original" area which was expanded to include 
+a newer area; by looking carefully, you'll notice that the level seems 
+split into these two different areas.  One area is older looking, with many 
+brown, dirty textures and some old crates lying around.  The other area 
+appears newer, with crisper textures and inset computer terminals.  Also, 
+ample lighting should prevent any confusion over uniform colors when playing 
+team matches.
+     
+        Finally, while concessions were necessary to incorporate both free-
+for-all AND team play into one level, we hope Map20 proves fairly well-rounded 
+and playable.  We also hope Map20 provides a satisfactory ending to a series 
+that Brandon and I have thoroughly enjoyed creating (and hopefully you've 
+enjoyed playing!).  Please feel free to send any comments/suggestions, as we 
+look forward to some final feedback.   
+        As always, thanks for using Danzig.  
+        
+        FINALLY finally, as of this writing, TIMinator and I are considering
+a JOINT deathmatch pwad series - one in which we'll both contribute ideas 
+in creating pwads.  This series would encompass Map21 through Map30 of 
+DOOM ][ and would be called J****.  So maybe I'm not done with DOOM yet... ;)
+        
+                                                    - B. Vannatta

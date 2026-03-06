@@ -73,7 +73,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==1 (
 		echo Step 2: PACK
 		cd core\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -85,7 +85,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==2 (
 		echo Step 2: PACK
 		cd lexicon-base\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -97,7 +97,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==3 (
 		echo Step 2: PACK
 		cd lexicon-slaughter\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -109,7 +109,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==4 (
 		echo Step 2: PACK
 		cd lexicon-ultdoom\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -121,7 +121,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==5 (
 		echo Step 2: PACK
 		cd lexicon-dm\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -133,7 +133,7 @@ if %secondChoice%==2 (
 	if %firstChoice%==6 (
 		echo Step 2: PACK
 		cd lexicon-ctf\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 		
 		echo Step 3: REPLACE
 		cd ..\..
@@ -155,7 +155,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd core\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -172,7 +172,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd lexicon-base\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -189,7 +189,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd lexicon-slaughter\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -206,7 +206,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd lexicon-ultdoom\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -223,7 +223,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd lexicon-dm\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -240,7 +240,7 @@ if %secondChoice%==3 (
 
 		echo Step 2: PACK
 		cd lexicon-ctf\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -281,22 +281,22 @@ if %secondChoice%==4 (
 
 		echo Step 2: PACK
 		cd core\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-base\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-slaughter\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-ultdoom\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-UltDoom-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-dm\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-DM-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-ctf\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..

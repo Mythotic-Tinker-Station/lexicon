@@ -1,3 +1,19 @@
+Actor LexiconHeckCube 230
+{
+	Radius 32
+	Height 64
+	Scale 0.5
+	+NOGRAVITY
+	+SOLID
+	+FLOATBOB
+	States
+	{
+		Spawn:
+			LX99 "]" -1
+			Stop
+	}
+}
+
 Actor LexiconGameTokenChecker
 {
 	Radius 1

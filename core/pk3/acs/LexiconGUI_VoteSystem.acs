@@ -179,7 +179,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		
 		//Draw the background
 		SetFont("LEXBACKG");
-		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 160, CR_UNTRANSLATED, 0.1, 0.1, 0.0, 0.25);	
+		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 160, CR_UNTRANSLATED, 0.1, 0.1, 0.0, 0.5);	
 		
 		//Set the rectangle back
 		SetHudClipRect(0,0,0,0);

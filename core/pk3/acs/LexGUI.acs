@@ -54,7 +54,13 @@ Script "Lexicon_Core_Open" OPEN
 
 	if(!isVR())
 		terminate;	
-		
+	
+	int i = Random(1, 32);
+	str musicString;
+	if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
+	else { musicString = strparam(s:"LXHBMS", d:i); }
+	if (!isMusicRandomizerLoaded()) { SetMusic(musicString,0); }
+	
 	//Generate all the map data on the server
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
 	

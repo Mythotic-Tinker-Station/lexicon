@@ -1,0 +1,17 @@
+model LexiconHeckCube
+{
+	path "models/heckcube"
+	model 0 "heckcube.md3"
+	model 1 "heckcube2.md3"
+	model 2 "heckcube_runes.md3"
+	path "models/heckcube"
+	skin 0 "heckcube.png"
+	skin 1 "heckcube2.png"
+	skin 2 "heckcube_runes.png"
+	scale 4.0 4.0 4.0
+
+	FrameIndex LX99 "]" 0 0
+	FrameIndex LX99 "]" 1 0
+	FrameIndex LX99 "]" 2 0
+
+}

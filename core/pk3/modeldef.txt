@@ -10,8 +10,14 @@ model LexiconHeckCube
 	skin 2 "heckcube_runes.png"
 	scale 4.0 4.0 4.0
 
+	FrameIndex LX99 "[" 0 0
+	FrameIndex LX99 "[" 1 0
+	FrameIndex LX99 "[" 2 0
+
+    model 3 "heckcube_glowrunes.md3"
+    skin 3 "heckcube_runes2.png"
+
 	FrameIndex LX99 "]" 0 0
 	FrameIndex LX99 "]" 1 0
 	FrameIndex LX99 "]" 2 0
-
 }

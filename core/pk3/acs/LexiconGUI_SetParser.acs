@@ -51,8 +51,11 @@ function void addLexiconMapSets (void)
 	processedMapSets = 0;
 	for(int i = 0; i < MAXEXPANSIONS; i++)
 	{
+		str flags = strParam(l:strparam(s:"LEX_",s:existingMapSetTypes[i],s:"_",s:"FLAGS"));
 		//PrintBold(s:strPAram(s:"Processing Acronym: ",s:existingMapSetTypes[i]));
 		if(existingMapSetTypes[i] == "")
+			continue;
+		else if(!SkulltagEnabled() && flags == "SKULLTAG")
 			continue;
 		
 		for(int j = 1; j < MAXMAPSETSPERPACK; j++)

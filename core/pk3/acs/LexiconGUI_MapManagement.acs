@@ -161,7 +161,7 @@ str gameModeTypes[MAXGAMEMODES][2] =
 };
 
 //0 means compatible in both ports, 1 means Zandronum only, 2 means do not show
-int gameModeValues[MAXGAMEMODES] = { 0, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 2, 2, 2, 2 };
+int gameModeValues[MAXGAMEMODES] = { 0, 1, 1, 0, 1, 1, 1, 1, 1, 2, 2, 1, 1, 2, 2, 2 };
 
 //Find the next valid game type depending on source port
 function int findNextGameType(int current, int prev)
@@ -209,7 +209,8 @@ function int findNextMapType(int current, int prev)
 	}
 	else
 	{
-		for(i = current+MAXEXPANSIONS-1; i > current; i--)
+		//03/17/2026 - I think we should use greater than or equal to ensure it can cycle back to the original mapset
+		for(i = current+MAXEXPANSIONS-1; i >= current; i--)
 		{
 			result = cycleNextMapType(i%MAXEXPANSIONS);
 			if(result > -1)
@@ -228,10 +229,11 @@ function int cycleNextGameMode(int i)
 	str gameMode = "";
 	int isCoop = i == 0 || i == 1;
 	int isDeathMatch = i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 11;
+	int isCTF = i == 12;
 	for(int j = 0; j < MAXEXPANSIONS; j++)
 	{
 		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
-		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))
+		if((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch) || (gameMode == "CTF" && isCTF))
 		{
 			validGameMode = true;
 			break;
@@ -251,7 +253,8 @@ function int cycleNextMapType(int i)
 	int gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[i],s:"_GAMETYPE"));
 	int isCoop = selectedGameMode == 0 || selectedGameMode == 1;
 	int isDeathMatch = selectedGameMode == 3 || selectedGameMode == 4|| selectedGameMode == 5 || selectedGameMode == 6 || selectedGameMode == 7 || selectedGameMode == 8 || selectedGameMode == 11;
-	if((((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch))) && strlen(gameMode) > 0)
+	int isCTF = selectedGameMode == 12;
+	if(((gameMode == "COOP" && isCoop) || (gameMode == "COMP" && isDeathMatch) || (gameMode == "CTF" && isCTF)) && strlen(gameMode) > 0)
 		result = i;
 		
 	return result;

@@ -105,6 +105,12 @@ function bool LegacyOfRustEnabled(void)
 	return CheckFont("XWILV00");
 }
 
+//Check if Skulltag Content is loaded
+function bool SkulltagEnabled(void)
+{
+	return returnLanguageText("PICKUP_REDARMOR") != "UNDEFINED";
+}
+
 //Check for Doom complete/Wad fusion. Usually just means checking multiple functions.
 function bool isUsingWadSmoosh(void)
 {

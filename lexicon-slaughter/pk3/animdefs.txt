@@ -127,7 +127,7 @@ texture DSV25302 range DSV25305 tics 8
 texture DSV25306 range DSV25308 tics 8
 texture DSV25309 range DSV25312 tics 8
 texture DSV25313 range DSV25356 tics 8
-texture DSV25357 range DSV25375 tics 8
+texture DSV25357 range DSV25375 tics 3
 texture DSV25376 range DSV25457 tics 8
 texture DSV25458 range DSV25470 tics 8
 texture DSV25471 range DSV25518 tics 8
@@ -352,7 +352,7 @@ switch SF120855 on pic SF120860 tics 0
 switch SF120856 on pic SF120861 tics 0
 
 // Slaughetfest 3
-texture SF130897 range SF130900 tics 8
+texture SF130897 range SF130900 tics 5
 texture SF131047 range SF131050 tics 8
 texture SF131051 range SF131054 tics 8
 texture SF131216 range SF131218 tics 8
@@ -361,11 +361,11 @@ texture SF131310 range SF131312 tics 8
 texture SF131401 range SF131404 tics 8
 texture SF131498 range SF131501 tics 8
 texture SF131566 range SF131569 tics 8
-texture SF131573 range SF131582 tics 8
-texture SF131586 range SF131601 tics 8
-texture SF131608 range SF131617 tics 8
-texture SF131642 range SF131651 tics 8
-texture SF131652 range SF131661 tics 8
+texture SF131573 range SF131582 tics 2
+texture SF131586 range SF131601 tics 2
+texture SF131608 range SF131617 tics 2
+texture SF131642 range SF131651 tics 2
+texture SF131652 range SF131661 tics 2
 texture SF131670 range SF131673 tics 8
 flat SF130293 range SF130296 tics 8
 flat SF130308 range SF130314 tics 8

@@ -55,7 +55,7 @@ Script "Lexicon_Core_Open" OPEN
 	if(!isVR())
 		terminate;	
 	
-	int i = Random(1, 32);
+	int i = Random(1, 56);
 	str musicString;
 	if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
 	else { musicString = strparam(s:"LXHBMS", d:i); }
@@ -176,13 +176,27 @@ Script "Lexicon_InGame" (int arg1)
 	}
 }
 
-Script "Lexicon_Credits" (void)
+Script "Lexicon_Credits" (void) CLIENTSIDE
 {
 	SetActivator(0, AAPTR_TARGET);
+	int isInGUI = CheckInventory("LexiconTerminalOpen");
+	int creditsTimer = 175;
 
-	SetFont("LXSMALLFONT");
-	SetHudSize(640, 480, FALSE);
+	if (isInGUI) { Log(s:"GGGG"); terminate; }
+	displayLexiconCredits("This is a test message...", 100, 240.0);
+	Delay(creditsTimer);
 
+	if (isInGUI) { Log(s:"GGGG"); terminate; }
+	displayLexiconCredits("This is a 2nd test message...", 100, 220.0);
+	displayLexiconCredits("This is a 3rd test message... GGGG", 101, 260.0);
+	Delay(creditsTimer);
+
+	if (isInGUI) { Log(s:"GGGG"); terminate; }
+	displayLexiconCredits("This is a 4th test message...", 100, 220.0);
+	displayLexiconCredits("This is a 5th test message...", 101, 260.0);
+	Delay(creditsTimer);
+
+/*
 	HudMessage(s:"Lexicon Lead/Overseer:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 5.0);
 	HudMessage(s:"MiFU"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 260.0, 5.0);
 	Delay(175);
@@ -274,6 +288,8 @@ Script "Lexicon_Credits" (void)
 	HudMessage(s:"For more of the Mythotic Tinker-Station's work,"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 10.0);
 	HudMessage(s:"visit our Discord server via"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 240.0, 10.0);
 	HudMessage(s:"https://discord.gg/mwFZvHe"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 260.0, 10.0);
+*/
+
 }
 
 Script "Lexicon_InGame_Enter" enter { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }

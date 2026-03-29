@@ -209,3 +209,10 @@ function int GetMouseSensitivityY(int player)
 	int pitch = GetCvar("m_pitch");
 	return FixedMul(overallY,pitch);
 }
+
+function void displayLexiconCredits(str text, int id, int y)
+{
+	SetFont("LXSMALLFONT");
+	SetHudSize(640, 480, FALSE);
+	HudMessage(s:text; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, id, "LexiconWhite", 320.0, y, 5.0);
+}

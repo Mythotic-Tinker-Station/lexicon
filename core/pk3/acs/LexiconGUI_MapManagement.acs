@@ -4,9 +4,6 @@ int selectedMapType; //The value used here for checking what pack to be looking 
 int selectedGameMode; //The value the user has selected for the game mode
 int queriedMapSetCount;
 
-//Max function
-function int max(int a, int b) { return a > b ? a : b; }
-
 //Return information from a language lump about a map
 function str returnMapString(int type, int id, int useQuery)
 {

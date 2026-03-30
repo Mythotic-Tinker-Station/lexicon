@@ -5,7 +5,17 @@ LexiconWhite
 
 LexiconLightGray
 {
-    #c4c4c4    #c4c4c4
+    #BFBFBF    #BFBFBF
+}
+
+LexiconGray
+{
+    #7F7F7F    #7F7F7F
+}
+
+LexiconDarkGray
+{
+    #3F3F3F    #3F3F3F
 }
 
 LexiconRed
@@ -15,5 +25,10 @@ LexiconRed
 
 LexiconGold
 {
-    #ffc400    #ffc400
+    #FFBF00    #FFBF00
+}
+
+LexiconGreen
+{
+    #00FF00    #00FF00
 }

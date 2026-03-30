@@ -2,12 +2,27 @@ LXBIGFONT
 {
     Template FONTB%03d
     SPACEWIDTH 18
+    BASE 0
+    FIRST 0
+    COUNT 256
 }
 
 LXSMALLFONT
 {
     Template FONTA%03d
     SPACEWIDTH 9
+    BASE 0
+    FIRST 0
+    COUNT 256
+}
+
+LXMEDIUMFONT
+{
+    Template FONTC%03d
+    SPACEWIDTH 9
+    BASE 0
+    FIRST 0
+    COUNT 256
 }
 
 LEXIUI

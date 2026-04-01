@@ -1,28 +1,146 @@
-#DEFINE IMAGEX 320
-#DEFINE IMAGEY 200
-#DEFINE UISCALE 2.0
-#DEFINE HEADERSCALE 0.5
-#DEFINE MAXCOLS 3
-#DEFINE MAXROWS 3
-#DEFINE W_ARROW 128
-#DEFINE H_ARROW 64
-#DEFINE CANVASBASEX 800
-#DEFINE CANVASBASEY 600
 #DEFINE DEPLOYCOUNTDOWN 105
-#DEFINE STARTINGIMAGE 100
+
+//UI Scale
+#DEFINE UISCALE 3.0 //Scales 640x480 to 1920x1440
+#DEFINE ALTUISCALE 2.0 //Scales 640x480 to 1280x960
+
+//Font Sizes
+#DEFINE BIGFONTSIZE_X 18
+#DEFINE BIGFONTSIZE_Y 32
+#DEFINE SMALLFONTSIZE_X 9
+#DEFINE SMALLFONTSIZE_Y 16
+
+//Canvas
+#DEFINE BASECANVAS_X 640
+#DEFINE BASECANVAS_Y 480
+
+//Background
+#DEFINE BACKGROUNDSIZE_X 640
+#DEFINE BACKGROUNDSIZE_Y 480
+
+//Generic Boxes
+#DEFINE BOXPADDING 8
+
+//Grid Scale and Size
+#DEFINE GRIDSCALE 6.0 //Scales 320x240 to 1920x1440
+#DEFINE GRIDCOLS 3
+#DEFINE GRIDROWS 3
+
+//Grid Image Resolution
+#DEFINE GRIDIMAGESIZE_X 320
+#DEFINE GRIDIMAGESIZE_Y 200
+
+//Grid Canvas Size
+#DEFINE GRIDCANVAS_X GRIDIMAGESIZE_X
+#DEFINE GRIDCANVAS_Y (GRIDIMAGESIZE_Y * 1.2)>>16 //Aspect corrected
+
+//Grid Padding
+#DEFINE GRRIDPADDING_X BIGFONTSIZE_X
+#DEFINE GRRIDPADDING_Y BIGFONTSIZE_Y / 2
+
+//Grid Image Box
+#DEFINE GRIDIMAGEBOX_X GRIDIMAGESIZE_X + (GRRIDPADDING_X * 2)
+#DEFINE GRIDIMAGEBOX_Y GRIDIMAGESIZE_Y + (GRRIDPADDING_Y * 2)
+
+//Grid Text Position
+#DEFINE GRIDTEXT_X GRIDIMAGEBOX_X / 2 //Centered
+#DEFINE GRIDTEXT_Y GRIDIMAGEBOX_Y //Offset
+
+//Grid Text Lines
+#DEFINE GRIDTEXTLINES BIGFONTSIZE_Y * 2
+
+//Grid Text Box
+#DEFINE GRIDTEXTBOX_X GRIDIMAGEBOX_X
+#DEFINE GRIDTEXTBOX_Y GRIDTEXTLINES
+
+//Grid Total Size
+#DEFINE GRIDSIZE_X GRIDIMAGEBOX_X
+#DEFINE GRIDSIZE_Y GRIDIMAGEBOX_Y + (GRIDTEXTBOX_Y + GRRIDPADDING_Y)
+
+/*
+* Proabably don't need to many defines [DA]
+*/
+
+//Message IDs
+#DEFINE MAGIC 49151
+
+//UI
+//Each ID must be below UI_CURSOR
+#DEFINE UI_CURSOR           MAGIC + 0
+#DEFINE UI_MAPSET           MAGIC + 1
+#DEFINE UI_MAPSETTOTAL      MAGIC + 2
+#DEFINE UI_GAMEMODE         MAGIC + 3
+#DEFINE UI_PAGES            MAGIC + 4
+#DEFINE UI_PAGELEFT         MAGIC + 5
+#DEFINE UI_PAGERIGHT        MAGIC + 6
+#DEFINE UI_SCROLLPOS        MAGIC + 7
+#DEFINE UI_SCROLLUP         MAGIC + 8
+#DEFINE UI_SCROLLDOWN       MAGIC + 9
+#DEFINE UI_MAPINFO          MAGIC + 10
+#DEFINE UI_VOTEINFO         MAGIC + 11
+#DEFINE UI_NOMPAPS          MAGIC + 12
+#DEFINE UI_MAPHOVER         MAGIC + 13 //Must be above UI_MAPGRID
+#DEFINE UI_MAPGRID_START    MAGIC + 14 //Dynamic
+#DEFINE UI_MAPGRID_END      UI_MAPGRID_START + (GRIDCOLS * GRIDROWS * 2)
+#DEFINE UI_BACKGROUND       UI_MAPGRID_END + 1 //Must be last
+
+#DEFINE UI_START            UI_CURSOR
+#DEFINE UI_END              UI_BACKGROUND
+
+//Messages
+#DEFINE MSG_VOTEINFO       UI_END + 1 //Additive
+
+//These positions are based off the background texture in pixels
+//First block is X axis, Second block is Y axis
+//First value is Left/Top, Second value is Right/Bottom (respectively)
+//Too bad there's no struct support in regular ACS
+int mappackbox[2][3] = {
+	{  16, 360 },
+	{  16,  48 }
+};
+
+int gamemodebox[2][3] = {
+	{ 376, 624 },
+	{  16,  48 }
+};
+
+int mapgridbox[2][3] = {
+	{  16, 432 },
+	{  64, 400 }
+};
+
+int scrollbox[2][3] = {
+	{ 416, 448 },
+	{  64, 416 }
+};
+
+int paginationbox[2][3] = {
+	{  16, 448 },
+	{ 384, 416 }
+};
+
+int informationbox[2][3] = {
+	{ 464, 624 },
+	{  64, 464 }
+};
+
+int voteinfobox[2][3] = {
+	{  16, 448 },
+	{ 432, 464 }
+};
 
 //This script is called from the client to the net to update the votes
 script "Lexicon_AddVote" (int pln, int mapset, int gamemode) NET
 {
-	addVote(pln,mapset,gamemode);
+	addVote(pln, mapset, gamemode);
 }
 
 //Add vote to the player array. Then send the information to all clients.
 function void addVote(int pln, int mapset, int gamemode)
 {
-	playerVotes[pln][0] = 1+mapset;
+	playerVotes[pln][0] = 1 + mapset;
 	playerVotes[pln][1] = gamemode;
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,playerVotes[pln][0],playerVotes[pln][1]);
+	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient", pln, playerVotes[pln][0], playerVotes[pln][1]);
 }
 
 //Remove the vote from the player array, and send it to clients
@@ -30,7 +148,7 @@ function void removeVote(int pln)
 {
 	playerVotes[pln][0] = 0;
 	playerVotes[pln][1] = 0;
-	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient",pln,playerVotes[pln][0],playerVotes[pln][1]);
+	ACS_NamedExecuteWithResult("Lexicon_SendVoteToClient", pln, playerVotes[pln][0], playerVotes[pln][1]);
 }
 
 //Count the amount of votes this mapset has. This function looks for unique votes
@@ -58,15 +176,16 @@ function int pickWinner (void)
 		//If there is a winner in the slot, add to the winner count. Otherwise, you've run out of winners
 		if(winningSets[i][0] > 0)
 			winnerCount++;
-		else break;
+		else
+			break;
 	}
 	
 	//Print error is there's somehow no winners. Otherwise, pick a random winner from the total winners
 	if(winnerCount < 0)
 		Log(s:"FATAL ERROR - No winners. How is this possible?");
-	int pickSet = random(0,winnerCount);
+	int pickSet = random(0, winnerCount);
 	result = winningSets[pickSet][0];
-	SetCvar("Lexicon_GameType",winningSets[pickSet][1]);
+	SetCvar("Lexicon_GameType", winningSets[pickSet][1]);
 	
 	return result;
 }
@@ -78,71 +197,111 @@ function void clearWinners (void)
 		winningSets[i][0] = 0;
 }
 
+//Converts to float
+function int scaleDimensions(int value, int scale)
+{
+	return FixedMul(itof(value), scale);
+}
+
+function int unScaleDimensions(int value, int scale)
+{
+	return FixedDiv(itof(value), scale);
+}
+
 //Main thinker for the vote menu
 Script "Lexicon_VoteInterface" (int playerNum) clientside
 {
 	//Do not run script if the client doesn't match the player
 	if(playerNum != ConsolePlayerNumber()) terminate;
+	
+	int hudBoundsX = ftoi(BASECANVAS_X * UISCALE);
+	int hudBoundsY = ftoi(BASECANVAS_Y * UISCALE);
+	int hudCenterX = hudBoundsX / 2;
+	int hudCenterY = hudBoundsY / 2;
 
-	int cursorx, cursory;
-		
-	int hudboundsx = intFloat(CANVASBASEX*UISCALE)>>16;
-	int hudboundsy = intFloat(CANVASBASEY*UISCALE)>>16;
-	int hudcenterx = hudboundsx/2;
-	int hudcentery = hudboundsy/2;
+	int hudAltBoundsX = ftoi(BASECANVAS_X * ALTUISCALE);
+	int hudAltBoundsY = ftoi(BASECANVAS_Y * ALTUISCALE);
+	int hudAltCenterX = hudAltBoundsX / 2;
+	int hudAltCenterY = hudAltBoundsY / 2;
 	
-	//Set the percentages of the offsets for the boundaries, necessary for the UI to appear symmetrical
-	int offsetLeft = 0.111 * hudboundsx / 2;
-	int offsetRight = 0.107 * hudboundsx / 2;
-	int offsetTop = 0.042 * hudboundsy / 2;
-	int offsetBottom = 0.047 * hudboundsy / 2;
+	//Default cursor position to center
+	int cursorX = hudCenterX;
+	int cursorY = hudCenterY;
 	
-	//Magic numbers for offsetting the screen, these will need to be adjusted in the future
-	int mouseCursorBorderLeft = ftoi(FixedMul(offsetLeft,UISCALE));
-	int mouseCursorBorderRight = hudboundsx - ftoi(FixedMul(offsetRight,UISCALE));
-	int mouseCursorBorderTop = ftoi(FixedMul(offsetTop,UISCALE));
-	int mouseCursorBorderBottom = hudboundsy - ftoi(FixedMul(offsetBottom,UISCALE));
+	//Magic numbers for offsetting the screen
+	int mouseCursorBorderLeft = 0;
+	int mouseCursorBorderRight = hudBoundsX;
+	int mouseCursorBorderTop = 0;
+	int mouseCursorBorderBottom = hudBoundsY;
 	
-	int dimensionalMultiplier = 7; //Multiplier used for the canvas size
-	int imagesHudX = IMAGEX * dimensionalMultiplier; //Width of the virtual canvas - the larger the values, the smaller things are
-	int imagesHudY = IMAGEY * dimensionalMultiplier; //Height of the virtual canvas - the larger the values, the smaller things are
+	int imagesHudX = ftoi(GRIDCANVAS_X * GRIDSCALE); //Width of the virtual canvas - the larger the values, the smaller things are
+	int imagesHudY = ftoi(GRIDCANVAS_Y * GRIDSCALE); //Height of the virtual canvas - the larger the values, the smaller things are
 	
-	int uiScaleToImageScaleX = FixedDiv(imagesHudX<<16,hudboundsx<<16);
-	int uiScaleToImageScaleY = FixedDiv(imagesHudY<<16,hudboundsy<<16);
-	int imageScaleToUIScaleX = FixedDiv(hudboundsx<<16,imagesHudX<<16);
-	int imageScaleToUIScaleY = FixedDiv(hudboundsy<<16,imagesHudY<<16);
-
-	int rowStart = intFloat(imagesHudX * 0.229); //Each row starts at this value
-	int columnStart = intFloat(imagesHudY * 0.0875); //Each column starts at this value
+	int uiScaleToImageScaleX = FixedDiv(itof(imagesHudX), itof(hudBoundsX));
+	int uiScaleToImageScaleY = FixedDiv(itof(imagesHudY), itof(hudBoundsY));
+	int imageScaleToUIScaleX = FixedDiv(itof(hudBoundsX), itof(imagesHudX));
+	int imageScaleToUIScaleY = FixedDiv(itof(hudBoundsY), itof(imagesHudY));
 	
-	int setDistanceX = intFloat(IMAGEX * 1.27); //Distance between map sets on X
-	int setDistanceY = intFloat(IMAGEY * 1.5); //Distance between map sets on Y
+	int rowStart = scaleDimensions(mapgridbox[0][0], FixedMul(UISCALE, uiScaleToImageScaleX)); //Each row starts at this value
+	int columnStart = scaleDimensions(mapgridbox[1][0], FixedMul(UISCALE, uiScaleToImageScaleY)); //Each column starts at this value
+	
+	int setDistanceX = itof(GRIDSIZE_X); //Distance between map sets on X
+	int setDistanceY = itof(GRIDSIZE_Y); //Distance between map sets on Y
 	
 	int maxrow = 4; //Maximum amount of boxes per row
 	int maxcol = 3; //Maximum amount of boxes per column
+	int columnincrementor; //This is a helper value to increment to the next column
 	int rowincrementor; //This is a helper value to increment to the next row
 	
-	int startingX, startingY; //Virtual values for row/column offsets
-	int posX, posY; //Values for map set image placements
+	int spacingX, spacingY; //Spacing between grid objects
+	int s1, s2, s3, s4, s5, s6;
+	//These should really be redone
+	{
+		s1 = scaleDimensions(mapgridbox[0][1] - mapgridbox[0][0], UISCALE);
+		s2 = FixedDiv(itof(GRIDSIZE_X * GRIDCOLS), uiScaleToImageScaleX);
+		s3 = (s1 - s2);
+		s4 = FixedMul(s3, FixedDiv(GRIDCOLS, GRIDCOLS + 1));
+		s5 = FixedMul(s4, uiScaleToImageScaleX);
+		s6 = (s5 / GRIDCOLS);
+		spacingX = intFloat(s6);
+	}
+	{
+		s1 = scaleDimensions(mapgridbox[1][1] - mapgridbox[1][0], UISCALE);
+		s2 = FixedDiv(itof(GRIDSIZE_Y * GRIDROWS), uiScaleToImageScaleY);
+		s3 = (s1 - s2);
+		s4 = FixedMul(s3, FixedDiv(GRIDROWS, GRIDROWS + 1));
+		s5 = FixedMul(s4, uiScaleToImageScaleY);
+		s6 = (s5 / GRIDROWS);
+		spacingY = intFloat(s6);
+	}
 	
-	int messageScaleX; //Used internally for modifying text scales. Should make different scalings easier to handle
-	int messageScaleY; //Used internally for modifying text scales. Should make different scalings easier to handle
+	int posX, posY; //Values for map set image placements
+	int boxX, boxY, boxW, boxH;
 	
 	int pageOffset; //A index value used for checking what page of map sets the user is on
-	int pagination; //Calculated value used for determining the starting offset of the main loop
+	int maxPageOffset; //A index value used for determining the max page offset
+	int pagination; //Calculated value used for determining the starting page offset
+	int nextPagination; //Calculated value used for determining the next page offset
+	int maxPagination; //Calculated value used for determining the last page offset
+	bool canPagePrev; //A value that checks if you can go to the previous page
+	bool canPageNext; //A value that checks if you can go to the next page
+	
 	int uiDelay; //Timer to prevent input from causing unwanted actions
-
+	int scrollDelay; //Timer to slow scrolling down
+	
 	int uiElementHover; //Internal value for checking what UI element is being hovered over. Each of course have to have their own id.
 	int uiElementHoverLast; //Same as before, but to prevent the sound/effects from spamming
+	int uiElementHold; //Internal value for checking what UI element is being click held. Each of course have to have their own id.
 	
 	str typeName; //Internal strings that's used for getting interface text from some place
-	int messageid; //Internal message id for mapset pagination objects
+	int messageId; //Internal message id for mapset pagination objects
 	int i; //For loops
-	int maxPageSize = MAXROWS * MAXCOLS; //Store max page size for the loop and what not
+	int gridSize = GRIDCOLS * GRIDROWS; //Overall size of the grid
+	int maxPageSize = GRIDCOLS; //Store max page size for the loop and what not
 	
 	//Select the first selectable map type and query
-	selectedGameMode = findNextGameType(-1,0);
-	selectedMapType = findNextMapType(-1,0);
+	selectedGameMode = findNextGameType(-1, 0);
+	selectedMapType = findNextMapType(-1, 0);
 	queryMapSets();
 	while(Classifyactor(0) & ACTOR_ALIVE && !CheckInventory("LexiconTerminalExit") && !disableTerminal)
 	{
@@ -151,325 +310,485 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		int pitch = GetPlayerInput(-1, INPUT_PITCH) * GetInvertedMouse(playerNum);
 		int buttons = GetPlayerInput(-1, INPUT_BUTTONS);
 		int oldbuttons = GetPlayerInput(-1, INPUT_OLDBUTTONS);
-		int Lclicking = buttons & BT_ATTACK && !(oldbuttons & BT_ATTACK);
-		int Rclicking = buttons & BT_ALTATTACK && !(oldbuttons & BT_ALTATTACK);
+		int leftClick = buttons & BT_ATTACK && !(oldbuttons & BT_ATTACK);
+		int rightClick = buttons & BT_ALTATTACK && !(oldbuttons & BT_ALTATTACK);
+		int leftClickHold = buttons & BT_ATTACK;
+		int rightClickHold = buttons & BT_ALTATTACK;
+		int scrollUp = buttons & BT_FORWARD;
+		int scrollDown = buttons & BT_BACK;
 		
 		//Clamp mouse inputs for the cursor to keep it in the bounds
 		if(yaw > 1 || yaw < -1)
-			cursorx -= FixedMul(yaw/18,GetMouseSensitivityX(playerNum));
-
+			cursorX -= FixedMul(yaw / 18, GetMouseSensitivityX(playerNum));
+		
 		if(pitch > 1 || pitch < -1)
-			cursory -= FixedMul(pitch/9,GetMouseSensitivityY(playerNum));
-
-		if(cursorx < mouseCursorBorderLeft)
-			cursorx = mouseCursorBorderLeft;	
-		else if(cursorx > mouseCursorBorderRight)
-			cursorx = mouseCursorBorderRight;
-
-		if(cursory < mouseCursorBorderTop)
-			cursory = mouseCursorBorderTop;
-		else if(cursory > mouseCursorBorderBottom)
-			cursory = mouseCursorBorderBottom;
-				
-		//Clamp UI elements into this space
-		SetHudClipRect(mouseCursorBorderLeft,mouseCursorBorderTop,mouseCursorBorderRight-mouseCursorBorderLeft,mouseCursorBorderBottom-mouseCursorBorderTop);
-		messageScaleX = hudboundsx;
-		messageScaleY = hudboundsy;
-		SetHudSize(messageScaleX,messageScaleY,false);
+			cursorY -= FixedMul(pitch / 9, GetMouseSensitivityY(playerNum));
 		
-		//Draw the background
-		SetFont("LEXBACKG");
-		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 160, CR_UNTRANSLATED, 0.1, 0.1, 0.0, 0.5);	
+		if(cursorX < mouseCursorBorderLeft)
+			cursorX = mouseCursorBorderLeft;	
+		else if(cursorX > mouseCursorBorderRight)
+			cursorX = mouseCursorBorderRight;
 		
-		//Set the rectangle back
-		SetHudClipRect(0,0,0,0);
-
-		//Draw a border for the mapsets
-		SetFont("LEXBORD2");
-		posX = intFloat(messageScaleX*0.125) + 0.1;
-		posY = intFloat(messageScaleY*0.18) + 0.1;
-		drawBorder(posX, posY, 1, 155, intFloat(messageScaleX*0.1875*MAXCOLS)>>16, intFloat(messageScaleY*0.667)>>16, "LexiconWhite");
+		if(cursorY < mouseCursorBorderTop)
+			cursorY = mouseCursorBorderTop;
+		else if(cursorY > mouseCursorBorderBottom)
+			cursorY = mouseCursorBorderBottom;
 		
-		//Now draw border for the informational panel
-		posX = intFloat(messageScaleX*0.695) + 0.1;
-		posY = intFloat(messageScaleY*0.18) + 0.1;
-		drawBorder(posX, posY, 1, 151, intFloat(messageScaleX*0.1875)>>16, intFloat(messageScaleY*0.667)>>16, "LexiconWhite");
-
-		//Draw cursor
+		//Set the HUD size to fit the background image
+		SetHudSize(BACKGROUNDSIZE_X, BACKGROUNDSIZE_Y, true);
+		
+		//Draw the background image
+		SetFont("LEXBACKN");
+		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD, UI_BACKGROUND, CR_UNTRANSLATED, itof(BACKGROUNDSIZE_X / 2), itof(BACKGROUNDSIZE_Y / 2), 0.0);	
+		
+		//Set the HUD size to the canvas size
+		SetHudSize(hudBoundsX, hudBoundsY, true);
+		
+		//Draw the cursor
 		SetFont("CURSOR");
-		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, (cursorx*1.0) + 0.1, (cursory*1.0) + 0.1, 0.0);	
+		HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, UI_CURSOR, CR_UNTRANSLATED, itof(cursorX) + 0.1, itof(cursorY) + 0.1, 0.0);	
+
+		//Draw the map set selector
+		typeName = returnLanguageText(strParam(s:"LEX_", s:existingMapSetTypes[selectedMapType], s:"_PACKNAME"));
+		posX = mappackbox[0][0] + BOXPADDING * 2;
+		posY = (mappackbox[1][0] + mappackbox[1][1]) / 2;
+		bool hoverMapSet =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, mappackbox[0][0] + BOXPADDING, mappackbox[0][1] - BOXPADDING, mappackbox[1][0] + BOXPADDING / 2, mappackbox[1][1] - BOXPADDING / 2, UISCALE, UISCALE) || uiElementHover == UI_MAPSET;
+		SetFont("LXBIGFONT");
+		HudMessage(s:"Map Pack: ", s:(hoverMapSet ? "\c[LexiconGold]" : "\c[LexiconWhite]"), s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_MAPSET, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)) + 0.1, intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+		posX = mappackbox[0][1] - BOXPADDING * 2;
+		HudMessage(s:"Sets: \c[LexiconWhite]", i:queriedMapSetCount; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_MAPSETTOTAL, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)) + 0.2, intFloat(scaleDimensions(posY, UISCALE)), 0.0);
 		
-		//Now draw the preferred game mode	
+		//Mouse hover and click event
+		if(hoverMapSet)
+		{
+			uiElementHover = UI_MAPSET;
+			if(uiElementHover != uiElementHoverLast) 
+				LocalAmbientSound("Lexicon/Hover", 127);
+				
+			if(leftClick && uiDelay <= 0)
+			{
+				LocalAmbientSound("Lexicon/Select", 127);
+				selectedMapType = findNextMapType(selectedMapType, 0);
+				queryMapSets();
+				pageOffset = 0;
+				uiDelay = 4;
+			}
+			
+			if(rightClick && uiDelay <= 0)
+			{
+				LocalAmbientSound("Lexicon/Select", 127);
+				selectedMapType = findNextMapType(selectedMapType, 1);
+				queryMapSets();
+				pageOffset = 0;
+				uiDelay = 4;
+			}
+		}
+		
+		//Draw the game mode selector
 		typeName = gameModeTypes[selectedGameMode][1];
+		posX = gamemodebox[0][0] + BOXPADDING * 2;
+		posY = (gamemodebox[1][0] + gamemodebox[1][1]) / 2;
+		bool hoverGameMode =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, gamemodebox[0][0] + BOXPADDING, gamemodebox[0][1] - BOXPADDING, gamemodebox[1][0] + BOXPADDING / 2, gamemodebox[1][1] - BOXPADDING / 2, UISCALE, UISCALE) || uiElementHover == UI_GAMEMODE;
 		SetFont("LXBIGFONT");
-		messageScaleX = ftoi(intFloat(1.25*hudboundsx));
-		messageScaleY = ftoi(intFloat(1.25*hudboundsy));
-		SetHudSize(messageScaleX,messageScaleY,false);
-		posX = intFloat(messageScaleX*0.72);	
-		posY = intFloat(messageScaleY*0.11);
-		HudMessage(s:"Game Mode: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.5)>>16, ((posX>>16) * 0.8)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
+		HudMessage(s:"Game Mode: ", s:(hoverGameMode ? "\c[LexiconGold]" : "\c[LexiconWhite]"), s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_GAMEMODE, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)) + 0.1, intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+		
+		//Mouse hover and click event
+		if(hoverGameMode)
 		{
-			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", posX + 0.1, posY, 0.0);
-			uiElementHover = 1;
+			uiElementHover = UI_GAMEMODE;
 			if(uiElementHover != uiElementHoverLast) 
-				LocalAmbientSound("Lexicon/Hover",127);
+				LocalAmbientSound("Lexicon/Hover", 127);
 				
-			if(Lclicking && uiDelay <= 0)
+			if(leftClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select",127);
-				selectedGameMode = findNextGameType(selectedGameMode,0);
-				selectedMapType = findNextMapType(-1,0);
+				LocalAmbientSound("Lexicon/Select", 127);
+				selectedGameMode = findNextGameType(selectedGameMode, 0);
+				selectedMapType = findNextMapType(-1, 0);
 				queryMapSets();
 				pageOffset = 0;
-				uiDelay = 5;
+				uiDelay = 4;
 			}
 			
-			if(Rclicking && uiDelay <= 0)
+			if(rightClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select",127);
-				selectedGameMode = findNextGameType(selectedGameMode,1);
-				selectedMapType = findNextMapType(-1,0);
+				LocalAmbientSound("Lexicon/Select", 127);
+				selectedGameMode = findNextGameType(selectedGameMode, 1);
+				selectedMapType = findNextMapType(-1, 0);
 				queryMapSets();
 				pageOffset = 0;
-				uiDelay = 5;
+				uiDelay = 4;
 			}
 		}
-		else
-			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconLightGray", posX + 0.1, posY, 0.0);
-		
-		//And draw the map pack
-		typeName = returnLanguageText(strParam(s:"LEX_",s:existingMapSetTypes[selectedMapType],s:"_PACKNAME"));
-		posX = intFloat(messageScaleX*0.25);
-		HudMessage(s:"Map Type: "; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconRed", posX + 0.2, posY, 0.0);
-		if(checkConfines(cursorX, cursorY, ((posX>>16) * 0.5)>>16, ((posX>>16) * 0.9)>>16, ((posY>>16) * 0.45)>>16, ((posY>>16) * 0.55)>>16, 0.625, 0.625))
-		{
-			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", posX + 0.1, posY, 0.0);
-			uiElementHover = 1;
-			if(uiElementHover != uiElementHoverLast) 
-				LocalAmbientSound("Lexicon/Hover",127);
-				
-			if(Lclicking && uiDelay <= 0)
-			{
-				LocalAmbientSound("Lexicon/Select",127);
-				selectedMapType = findNextMapType(selectedMapType,0);
-				queryMapSets();
-				pageOffset = 0;
-				uiDelay = 5;
-			}
-			
-			if(Rclicking && uiDelay <= 0)
-			{
-				LocalAmbientSound("Lexicon/Select",127);
-				selectedMapType = findNextMapType(selectedMapType,1);
-				queryMapSets();
-				pageOffset = 0;
-				uiDelay = 5;
-			}
-		}
-		else
-			HudMessage(s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconLightGray", posX + 0.1, posY, 0.0);
-		
-		//Draw left arrow and handle logic
-		messageScaleX = hudboundsx;
-		messageScaleY = hudboundsy;
-		SetHudSize(messageScaleX,messageScaleY,false);
-		SetFont("LARROWL");
-		posX = intFloat(hudcenterx*0.7);
-		posY = intFloat(mouseCursorBorderBottom * 0.933);
-		
-		if(pageOffset > 0)
-		{
-			if(checkConfines(cursorX, cursorY, (posX>>16) - (intFloat(W_ARROW*UISCALE/2)>>16), (posX>>16) + (intFloat(W_ARROW*UISCALE/2)>>16), (posY>>16) - (intFloat(H_ARROW*UISCALE/2)>>16), (posY>>16) + (intFloat(H_ARROW*UISCALE/2)>>16), 1.0, 1.0))
-			{
-				SetFont("LARROWL2");
-				uiElementHover = 2;
-				if(uiElementHover != uiElementHoverLast) 
-					LocalAmbientSound("Lexicon/Hover",127);
-					
-				if(Lclicking && uiDelay <= 0 && pageOffset > 0)
-				{
-					LocalAmbientSound("Lexicon/Select",127);
-					pageOffset--;
-					uiDelay = 5;
-				}
-			}
-			else
-				SetFont("LARROWL1");
-			
-			HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, posX, posY, 0.0);
-		}
-		else RemoveMessages(101,101);
-		
-		//Draw right arrow and handle logic
-		
-		if(((pageOffset + 1) * maxPageSize) < queriedMapSetCount)
-		{
-			posX = intFloat(hudcenterx*1.3);
-			posY = intFloat(mouseCursorBorderBottom * 0.933);
-			if(checkConfines(cursorX, cursorY, (posX>>16) - (intFloat(W_ARROW*UISCALE/2)>>16), (posX>>16) + (intFloat(W_ARROW*UISCALE/2)>>16), (posY>>16) - (intFloat(H_ARROW*UISCALE/2)>>16), (posY>>16) + (intFloat(H_ARROW*UISCALE/2)>>16), 1.0, 1.0))
-			{
-				SetFont("LARROWR2");
-				uiElementHover = 3;
-				if(uiElementHover != uiElementHoverLast) 
-					LocalAmbientSound("Lexicon/Hover",127);
-					
-				if(Lclicking && uiDelay <= 0 && (((pageOffset + 1) * maxPageSize) < queriedMapSetCount))
-				{
-					LocalAmbientSound("Lexicon/Select",127);
-					pageOffset++;
-					uiDelay = 5;
-				}
-			}
-			else
-				SetFont("LARROWR1");
-				
-			HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 102, CR_UNTRANSLATED, posX, posY, 0.0);	
-		}
-		else RemoveMessages(102,102);
-		
-		//Draw the current vote between the arrows
-		SetFont("LXBIGFONT");
-		posX = intFloat(hudcenterx*1.0);
-		posY = intFloat(mouseCursorBorderBottom * 0.92);
-		HudMessage(s:"Current Vote"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconRed", posX + 0.4, posY, 0.0);	
-		posY = intFloat(mouseCursorBorderBottom * 0.95);
-		SetFont("LXSMALLFONT");
-		HudMessage(s:playerVotes[PlayerNum][0] > 0 ? returnMapString(1,playerVotes[PlayerNum][0]-1,0) : "None"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconGold", posX + 0.4, posY, 0.0);
-		
-		
+
 		pagination = pageOffset * maxPageSize;
-		messageScaleX = imagesHudX;
-		messageScaleY = imagesHudY;
-		SetHudSize(messageScaleX,messageScaleY,false);
-		//Draw map set boxes
+		nextPagination = (pageOffset + 1) * maxPageSize;
+		maxPagination = max(0, queriedMapSetCount - (GRIDCOLS * (GRIDROWS - 1)));
+		maxPageOffset = max(0, (maxPagination - 1) / GRIDCOLS);
+		canPagePrev = pageOffset > 0;
+		canPageNext = nextPagination < maxPagination;
 		if(queriedMapSetCount > 0)
 		{
-			for(i = pagination; i < pagination + maxPageSize; i++)
+			int offset;
+			int size = 16;
+			
+			//Draw the indexes of the visible map sets
+			posX = (paginationbox[0][0] + paginationbox[0][1]) / 2;
+			posY = (paginationbox[1][0] + paginationbox[1][1]) / 2;
+			SetFont("LXBIGFONT");
+			HudMessage(i:pagination + 1, s:" - ", i:min(queriedMapSetCount, (pageOffset + GRIDROWS) * maxPageSize); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_PAGES, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)), intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+/*
+			offset = (paginationbox[0][0] + paginationbox[0][1]) / 8;
+			//Left pagination
 			{
-				RemoveMessages(109,109);
-				messageid = 122 + (i - pagination);
-				messageScaleX = imagesHudX;
-				messageScaleY = imagesHudY;
-				SetHudSize(messageScaleX,messageScaleY,false);
+				//Draw left arrow
+				posX = (paginationbox[0][0] + paginationbox[0][1]) / 2 - offset;
+				posY = (paginationbox[1][0] + paginationbox[1][1]) / 2;
+				bool hoverLeftArrow =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, posX - offset + BOXPADDING, posX + offset - BOXPADDING, posY - size + BOXPADDING, posY + size - BOXPADDING, UISCALE, UISCALE) || uiElementHover == UI_PAGELEFT || uiElementHold == UI_PAGELEFT;
+				SetFont("LXBIGFONT");
+				HudMessage(s:(canPagePrev ? (hoverLeftArrow ? "\c[LexiconGold]" : "\c[LexiconWhite]") : "\c[LexiconDarkGray]"), s:"\x11"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, UI_PAGELEFT, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, UISCALE)), intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+				
+				//Mouse hover and click event
+				if(hoverLeftArrow && canPagePrev)
+				{
+					uiElementHover = UI_PAGELEFT;
+					if(uiElementHover != uiElementHoverLast) 
+						LocalAmbientSound("Lexicon/Hover", 127);
+						
+					if(leftClick || leftClickHold)
+					{
+						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPagePrev)
+						{
+							LocalAmbientSound("Lexicon/Select", 127);
+							pageOffset -= GRIDROWS;
+							scrollDelay = 8;
+						}
+						uiElementHold = UI_PAGELEFT;
+						uiDelay = 2;
+					}
+				}
+			}
+			
+			//Right pagination
+			{
+				//Draw right arrow
+				posX = (paginationbox[0][0] + paginationbox[0][1]) / 2 + offset;
+				posY = (paginationbox[1][0] + paginationbox[1][1]) / 2;
+				bool hoverRightArrow =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, posX - offset + BOXPADDING, posX + offset - BOXPADDING, posY - size + BOXPADDING, posY + size - BOXPADDING, UISCALE, UISCALE) || uiElementHover == UI_PAGERIGHT || uiElementHold == UI_PAGERIGHT;
+				SetFont("LXBIGFONT");
+				HudMessage(s:(canPageNext ? (hoverRightArrow ? "\c[LexiconGold]" : "\c[LexiconWhite]") : "\c[LexiconDarkGray]"), s:"\x10"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, UI_PAGERIGHT, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, UISCALE)), intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+				
+				//Mouse hover and click event
+				if(hoverRightArrow && canPageNext)
+				{
+					uiElementHover = UI_PAGERIGHT;
+					if(uiElementHover != uiElementHoverLast) 
+						LocalAmbientSound("Lexicon/Hover", 127);
+					
+					if(leftClick || leftClickHold)
+					{
+						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPageNext)
+						{
+							LocalAmbientSound("Lexicon/Select", 127);
+							pageOffset += GRIDROWS;
+							scrollDelay = 8;
+						}
+						uiElementHold = UI_PAGERIGHT;
+						uiDelay = 2;
+					}
+				}
+			}
+*/
+			//Scrollbar uses a different scale to make the glpyhs bigger
+			SetHudSize(hudAltBoundsX, hudAltBoundsY, true);
+			
+			//Up scroll
+			{
+				//Draw up arrow
+				posX = (scrollbox[0][0] + scrollbox[0][1]) / 2;
+				posY = scrollbox[1][0] + BOXPADDING + size / 2;
+				bool hoverUpArrow =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, posX - size + BOXPADDING, posX + size - BOXPADDING, posY - size + BOXPADDING, posY + size - BOXPADDING, UISCALE, UISCALE) || uiElementHover == UI_SCROLLUP || uiElementHold == UI_SCROLLUP;
+				SetFont("LXBIGFONT");
+				HudMessage(s:(canPagePrev ? (hoverUpArrow ? "\c[LexiconGold]" : "\c[LexiconWhite]") : "\c[LexiconDarkGray]"), s:"\x1E"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, UI_SCROLLUP, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, ALTUISCALE)), intFloat(scaleDimensions(posY, ALTUISCALE)), 0.0);
+				
+				//Mouse hover and click event
+				if(hoverUpArrow && canPagePrev)
+				{
+					uiElementHover = UI_SCROLLUP;
+					if(uiElementHover != uiElementHoverLast) 
+						LocalAmbientSound("Lexicon/Hover", 127);
+						
+					if(leftClick || leftClickHold)
+					{
+						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPagePrev)
+						{
+							LocalAmbientSound("Lexicon/Select", 127);
+							pageOffset--;
+							scrollDelay = 8;
+						}
+						uiElementHold = UI_SCROLLUP;
+						uiDelay = 2;
+					}
+				}
+				
+			}
+			
+			//Down scroll
+			{
+				//Draw down arrow
+				posX = (scrollbox[0][0] + scrollbox[0][1]) / 2;
+				posY = scrollbox[1][1] - BOXPADDING - size / 2;
+				bool hoverDownArrow =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, posX - size + BOXPADDING, posX + size - BOXPADDING, posY - size + BOXPADDING, posY + size - BOXPADDING, UISCALE, UISCALE) || uiElementHover == UI_SCROLLDOWN || uiElementHold == UI_SCROLLDOWN;
+				SetFont("LXBIGFONT");
+				HudMessage(s:(canPageNext ? (hoverDownArrow ? "\c[LexiconGold]" : "\c[LexiconWhite]") : "\c[LexiconDarkGray]"), s:"\x1F"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, UI_SCROLLDOWN, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, ALTUISCALE)), intFloat(scaleDimensions(posY, ALTUISCALE)), 0.0);
+				
+				//Mouse hover and click event
+				if(hoverDownArrow && canPageNext)
+				{
+					uiElementHover = UI_SCROLLDOWN;
+					if(uiElementHover != uiElementHoverLast) 
+						LocalAmbientSound("Lexicon/Hover", 127);
+						
+					if(leftClick || leftClickHold)
+					{
+						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPageNext)
+						{
+							LocalAmbientSound("Lexicon/Select", 127);
+							pageOffset++;
+							scrollDelay = 8;
+						}
+						uiElementHold = UI_SCROLLDOWN;
+						uiDelay = 2;
+					}
+				}
+			}
+			
+			offset = size * 2;
+			//Scroll block
+			{
+				int h = scrollbox[1][1] - scrollbox[1][0] - offset * 2;
+				int s = pageOffset;
+				int e = maxPageOffset;
+				int l = ftoi(lerp(0, h, e == 0 ? 0 : min(1.0, FixedDiv(itof(s), itof(e)))));
+				int ls = ftoi(lerp(0, h, FixedDiv(1.0, itof(e))));
+				//Draw scroll block
+				posX = (scrollbox[0][0] + scrollbox[0][1]) / 2;
+				posY = scrollbox[1][0] + offset + l;
+				bool hoverScrollBar =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, posX - size + BOXPADDING, posX + size - BOXPADDING, posY - size + BOXPADDING, posY + size - BOXPADDING, UISCALE, UISCALE) || uiElementHover == UI_SCROLLPOS || uiElementHold == UI_SCROLLPOS;
+				SetFont("LXBIGFONT");
+				HudMessage(s:(e > 0 ? (hoverScrollBar ? "\c[LexiconGold]" : "\c[LexiconWhite]") : "\c[LexiconDarkGray]"), s:"\xFE"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_SCROLLPOS, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, ALTUISCALE)), intFloat(scaleDimensions(posY, ALTUISCALE)), 0.0);
+				
+				//Mouse hover and click event
+				if(hoverScrollBar && e > 0)
+				{
+					uiElementHover = UI_SCROLLPOS;
+					if(uiElementHover != uiElementHoverLast) 
+						LocalAmbientSound("Lexicon/Hover", 127);
+						
+					if(leftClickHold)
+					{
+						if(leftClick)
+							LocalAmbientSound("Lexicon/Select", 127);
+						
+						int scrollAmount = max(1, abs(cursorY - ftoi(scaleDimensions(posY, UISCALE))) / (ftoi(scaleDimensions(ls, UISCALE)) + 1) / 2);
+						if(cursorY < ftoi(scaleDimensions(posY - ls / 2 - 2, UISCALE)) && canPagePrev)
+						{
+							pageOffset -= scrollAmount;
+						}
+						if(cursorY > ftoi(scaleDimensions(posY + ls / 2 + 2, UISCALE)) && canPageNext)
+						{
+							pageOffset += scrollAmount;
+						}
+						
+						uiElementHold = UI_SCROLLPOS;
+						uiDelay = 4;
+					}
+				}
+			}
+			
+			//Restore HUD size
+			SetHudSize(hudBoundsX, hudBoundsY, true);
+			
+			//Draw map set boxes
+			for(i = pagination; i < pagination + gridSize; i++)
+			{
+				RemoveMessage(UI_NOMPAPS);
+				messageId = UI_MAPGRID_START + ((i - pagination) * 2);
+				
+				SetHudSize(imagesHudX, imagesHudY, true);
 				if(i < queriedMapSetCount)
 				{
-					//Increment the row for every MAXCOLS boxes
-					if(i % MAXCOLS == 0)
-						rowincrementor++;
-					
-					startingX = i % MAXCOLS == 0 ? rowStart : 0;
-					
-					posX = rowStart + setDistanceX * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-					posY = columnStart + setDistanceY * rowincrementor;
-					SetFont(strparam(s:returnMapString(0,i,1),s:"TN"));
-					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageid+maxPageSize, CR_UNTRANSLATED, posX, posY, 0.0);
-					
-					int mapPackSelected = checkConfines(cursorX, cursorY, (posX>>16) - (IMAGEX/2), (posX>>16) + (IMAGEX/2), (posY>>16) - (IMAGEY/2), (posY>>16) + (IMAGEY/2), uiScaleToImageScaleX, uiScaleToImageScaleY);
-						
-					if(mapPackSelected)
+					//Increment the row for every GRIDCOLS boxes
+					if(i % GRIDCOLS == 0)
 					{
-						SetFont("LEXIUI");
-						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 121, "LexiconGold", posX, posY, 0.0);
-						
-						//Draw informational panel on the right. Because of how I want to format the title, I need to separate it
-						messageScaleX = hudboundsx;
-						messageScaleY = hudboundsy;
-						SetHudSize(messageScaleX,messageScaleY,false);
-						SetHudClipRect(intFloat(messageScaleX*0.695)>>16,intFloat(messageScaleY*0.18)>>16,intFloat(messageScaleX*0.18)>>16,intFloat(messageScaleY*0.667)>>16,intFloat(messageScaleX*0.18)>>16);
-						SetFont("LXSMALLFONT");
+						columnincrementor = 0;
+						rowincrementor++;
+					}
+					columnincrementor++;
 					
-						//Draw Title
-						posX = intFloat(messageScaleX*0.79);
-						posY = intFloat(messageScaleY*0.2) + 0.1;
-						HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 150, "LexiconGold", posX, posY, 0.0);
+					int gposX = rowStart + (spacingX * columnincrementor) + (setDistanceX * (columnincrementor - 1));
+					int gposY = columnStart + (spacingY * rowincrementor) + (setDistanceY * (rowincrementor - 1));
+					
+					//Draw the map pack image
+					int mposX = gposX + itof(GRIDIMAGEBOX_X / 2);
+					int mposY = gposY + itof(GRIDIMAGEBOX_Y / 2);
+					SetFont(strparam(s:returnMapString(0, i, 1), s:"TN"));
+					HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, messageId, CR_UNTRANSLATED, intFloat(mposX), intFloat(mposY), 0.0);
+					
+					bool hoverMapPack =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, ftoi(gposX), ftoi(gposX) + GRIDSIZE_X, ftoi(gposY), ftoi(gposY) + GRIDSIZE_Y, imageScaleToUIScaleX, imageScaleToUIScaleX) || uiElementHover == messageId;
+					
+					//Create a bounding box under the image
+					boxX = gposX;
+					boxY = gposY + itof(GRIDTEXT_Y);
+					boxW = GRIDTEXTBOX_X;
+					boxH = GRIDTEXTBOX_Y;
+					
+					SetHudClipRect(ftoi(boxX), ftoi(boxY), boxW, boxH, boxW);
+					
+					//Draw the pack title under the image
+					int nposX = boxX + itof(GRIDTEXT_X);
+					int nposY = boxY;
+					SetFont("LXBIGFONT");
+					HudMessage(s:returnMapString(1, i, 1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageId + 1, hoverMapPack ? "LexiconGold" : "LexiconRed", intFloat(nposX) + 0.4, intFloat(nposY) + 0.1, 0.0);
+					
+					//Remove bounding box
+					SetHudClipRect(0, 0, 0, 0, 0);	
+					
+					if(hoverMapPack)
+					{
+						//Draw the highlight box over the image
+						SetFont("LEXIUI");
+						int bposX = gposX + itof(GRIDIMAGEBOX_X / 2);
+						int bposY = gposY + itof(GRIDIMAGEBOX_Y / 2);
+						HudMessage(s:"a"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, UI_MAPHOVER, "LexiconGold", intFloat(bposX), intFloat(bposY), 0.0);
 						
-						//Now draw map information
+						//Restore HUD size
+						SetHudSize(hudBoundsX, hudBoundsY, true);
 						
-						posX = intFloat(messageScaleX*0.7) + 0.1;
-						posY = intFloat(messageScaleY*0.24) + 0.1;
-						str authorInfo = strParam(s:"Author: \c[LexiconWhite]",l:returnMapString(2,i,1),s:"\c-");
-						str dateInfo = strParam(s:"\nDate: \c[LexiconWhite]",l:returnMapString(3,i,1),s:"\c-");
-						str actorInfo = strParam(s:"\nCustom Actors: \c[LexiconWhite]",l:returnMapString(4,i,1),s:"\c-");
-						str mapCountInfo = strParam(s:"\nMap Count: \c[LexiconWhite]",l:returnMapString(5,i,1),s:"\c-");
-						//str descriptionInfo = strParam(s:"\nDescription: \c[LexiconWhite]",l:returnMapString(6,i,1),s:"\c-");
-						HudMessage(s:strParam(s:authorInfo,s:dateInfo,s:actorInfo,s:mapCountInfo); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, 149, "LexiconRed", posX, posY, 0.0);
+						//Create a bounding box within the informational panel on the right
+						boxX = scaleDimensions(informationbox[0][0] + BOXPADDING, UISCALE);
+						boxY = scaleDimensions(informationbox[1][0] + BOXPADDING, UISCALE);
+						boxW = scaleDimensions(informationbox[0][1] - informationbox[0][0] - (BOXPADDING * 2), UISCALE);
+						boxH = scaleDimensions(informationbox[1][1] - informationbox[1][0] - (BOXPADDING * 2), UISCALE);
+						SetHudClipRect(ftoi(boxX), ftoi(boxY), ftoi(boxW), ftoi(boxH), ftoi(boxW));
 						
-						//Restore image space
-						SetHudClipRect(0,0,0,0,0);	
-						messageScaleX = imagesHudX;
-						messageScaleY = imagesHudY;
-						SetHudSize(messageScaleX,messageScaleY,false);
+						//Draw map title and information in the informational
+						SetFont("LXBIGFONT");
+						int dposX = boxX;
+						int dposY = boxY;
+						str mapTitle = strParam(s:"\c[LexiconGold]", l:returnMapString(1, i, 1), s:"\c-\n");
+						str authorInfo = strParam(s:"\nAuthor: \c[LexiconWhite]", l:returnMapString(2, i, 1), s:"\c-");
+						str dateInfo = strParam(s:"\nDate: \c[LexiconWhite]", l:returnMapString(3, i, 1), s:"\c-");
+						str actorInfo = strParam(s:"\nCustom Actors: \c[LexiconWhite]", l:returnMapString(4, i, 1), s:"\c-");
+						str mapCountInfo = strParam(s:"\nMap Count: \c[LexiconWhite]", l:returnMapString(5, i, 1), s:"\c-");
+						str descriptionInfo = ""; //strParam(s:"\nDescription: \c[LexiconWhite]", l:returnMapString(6, i, 1), s:"\c-"); //Descriptions when?
+						HudMessage(s:strParam(s:mapTitle, s:authorInfo, s:dateInfo, s:actorInfo, s:mapCountInfo, s:descriptionInfo); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_COLORSTRING|HUDMSG_ALPHA, UI_MAPINFO, "LexiconRed", intFloat(dposX) + 0.1, intFloat(dposY) + 0.1, 0.0);
 						
-						uiElementHover = 4+(i - pagination);
+						//Remove bounding box
+						SetHudClipRect(0, 0, 0, 0, 0);
+						
+						//Mouse hover and click event
+						uiElementHover = messageId;
 						if(uiElementHover != uiElementHoverLast) 
-							LocalAmbientSound("Lexicon/Hover",127);	
+							LocalAmbientSound("Lexicon/Hover", 127);	
 							
-						if(Lclicking)
+						if(leftClick && uiDelay <= 0)
 						{
 							if(!isZDoom())
-								NamedRequestScriptPuke("Lexicon_AddVote",PlayerNum,returnQuery(i),selectedGameMode);
+								NamedRequestScriptPuke("Lexicon_AddVote", playerNum, returnQuery(i), selectedGameMode);
 							else
-								addVote(PlayerNum,returnQuery(i),selectedGameMode);
+								addVote(playerNum, returnQuery(i), selectedGameMode);
 															
-							LocalAmbientSound("Lexicon/Select",127);
+							LocalAmbientSound("Lexicon/Select", 127);
+							uiDelay = 8;
 						}
-						if(Rclicking)
+						if(rightClick && uiDelay <= 0)
 						{
-							removeVote(PlayerNum);
-							LocalAmbientSound("Lexicon/Back",127);
+							removeVote(playerNum);
+							LocalAmbientSound("Lexicon/Back", 127);
+							uiDelay = 8;
 						}
 					}
-					messageScaleX = hudboundsx;
-					messageScaleY = hudboundsy;
-					SetHudSize(messageScaleX,messageScaleY,false);
-					//There is so much separation here between the UI and the images that I'm better off just recreating the dimensions here
-					posX = intFloat(messageScaleX*0.23) + intFloat(messageScaleX*0.18) * ((i - pagination) - ((rowincrementor - 1) * MAXCOLS));
-					posY = intFloat(messageScaleY*0.167) + (intFloat(messageScaleY*0.215) * rowincrementor);				
-					SetFont("LXSMALLFONT");
-					//SetHudClipRect((posX>>16) - (IMAGEX/2),(posY>>16) - (IMAGEY/2),IMAGEX,IMAGEY,IMAGEX);
-					HudMessage(s:returnMapString(1,i,1); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, messageid, mapPackSelected ? "LexiconGold" : "LexiconRed", posX + 0.4, posY + 0.1, 0.0);
-					//SetHudClipRect(0,0,0,0,0);	
-				}	
+				}
 				else
 				{
-					RemoveMessages(messageid,messageid);
-					RemoveMessages(messageid+maxPageSize,messageid+maxPageSize);
+					RemoveMessage(messageId);
+					RemoveMessage(messageId + 1);
 				}
 			}
 		}
 		else
 		{
-			for(i = 0; i < maxPageSize; i++)
-			{
-				messageid = 122 + (i - pagination);
-				RemoveMessages(messageid,messageid);
-				RemoveMessages(messageid+maxPageSize,messageid+maxPageSize);
-			}
-		
-			RemoveMessages(149,150);
-			SetFont("LXSMALLFONT");
-			messageScaleX = hudboundsx;
-			messageScaleY = hudboundsy;
-			SetHudSize(messageScaleX,messageScaleY,false);
-			posX = (messageScaleX/2) << 16;
-			posY = intFloat(messageScaleY * 0.15);
+			RemoveMessage(UI_PAGES);
+			RemoveMessage(UI_PAGELEFT);
+			RemoveMessage(UI_PAGERIGHT);
+			RemoveMessage(UI_SCROLLPOS);
+			RemoveMessage(UI_SCROLLUP);
+			RemoveMessage(UI_SCROLLDOWN);
+			RemoveMessage(UI_MAPINFO);
+			RemoveMessage(UI_MAPHOVER);
+			RemoveMessages(UI_MAPGRID_START, UI_MAPGRID_END);
 			
-			HudMessage(s:"No mapsets can be found under your search criteria with the IWAD you have loaded..."; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconLightGray", posX, posY, 0.0);
+			//No map text uses a different scale
+			SetHudSize(hudAltBoundsX, hudAltBoundsY, true);
+			
+			//Create a bounding box within the map grid panel
+			boxX = scaleDimensions(mapgridbox[0][0] + BOXPADDING, ALTUISCALE);
+			boxY = scaleDimensions(mapgridbox[1][0] + BOXPADDING, ALTUISCALE);
+			boxW = scaleDimensions(mapgridbox[0][1] - mapgridbox[0][0] - (BOXPADDING * 2), ALTUISCALE);
+			boxH = scaleDimensions(mapgridbox[1][1] - mapgridbox[1][0] - (BOXPADDING * 2), ALTUISCALE);
+			SetHudClipRect(ftoi(boxX), ftoi(boxY), ftoi(boxW), ftoi(boxH), ftoi(boxW));
+			
+			posX = boxX + boxW / 2;
+			posY = boxY;
+			SetFont("LXBIGFONT");
+			HudMessage(s:"No map sets can be found under your search criteria with the IWAD you have loaded..."; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_NOMPAPS, "LexiconLightGray", intFloat(posX) + 0.4, intFloat(posY) + 0.1, 0.0);
+			
+			//Remove bounding box
+			SetHudClipRect(0, 0, 0, 0, 0);
 		}
+		
+		//Restore HUD size
+		SetHudSize(hudBoundsX, hudBoundsY, true);
+		
+		//Remove any lingering bounding boxes
+		SetHudClipRect(0, 0, 0, 0, 0);
+		
+		//Draw your vote
+		posX = voteinfobox[0][0] + BOXPADDING * 2;
+		posY = (voteinfobox[1][0] + voteinfobox[1][1]) / 2;
+		SetFont("LXBIGFONT");
+		HudMessage(s:"\c[LexiconRed]Your Vote: \c[LexiconGold]", s:(playerVotes[playerNum][0] > 0 ? strparam(s:returnMapString(1, playerVotes[playerNum][0] - 1, 0), s:"\c- [\c[LexiconGreen]", s:gameModeTypes[playerVotes[playerNum][1]][1], s:"\c-]") : "None"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_VOTEINFO, CR_UNTRANSLATED, intFloat(scaleDimensions(posX, UISCALE)) + 0.1, intFloat(scaleDimensions(posY, UISCALE)), 0.0);	
 		
 		//Clear frame from image if not hovered over one
-		if(uiElementHoverLast < 4)
+		if(uiElementHoverLast < UI_MAPGRID_START)
 		{
-			RemoveMessages(120,121);
-			RemoveMessages(149,150);
+			RemoveMessage(UI_MAPINFO);
+			RemoveMessage(UI_MAPHOVER);
 		}
 		
-		//Set back to 0
+		//Scroll events
+		if(scrollUp && scrollDelay <= 0 && canPagePrev)
+		{
+			LocalAmbientSound("Lexicon/Select", 127);
+			pageOffset--;
+			scrollDelay = 8;
+		}
+		
+		if(scrollDown && scrollDelay <= 0 && canPageNext)
+		{
+			LocalAmbientSound("Lexicon/Select", 127);
+			pageOffset++;
+			scrollDelay = 8;
+		}
+		
+		pageOffset = clamp(pageOffset, 0, maxPageOffset);
 		rowincrementor = 0;
 		uiDelay--;
+		scrollDelay--;
 		uiElementHoverLast = uiElementHover;
 		uiElementHover = 0;
+		if(uiDelay <= 0)
+			uiElementHold = 0;
 		
 		Delay(1);
 	}
@@ -477,75 +796,101 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	if(isZDoom())
 	{
 		if(!(Classifyactor(0) & ACTOR_ALIVE))
-			TakeInventory("LexiconTerminalExit",1);
+			TakeInventory("LexiconTerminalExit", 1);
 	}
-	else NamedRequestScriptPuke("Lexicon_TerminalExit",PlayerNumber(),0,0,0);
-
-	RemoveMessages(100,160);
+	else
+		NamedRequestScriptPuke("Lexicon_TerminalExit", PlayerNumber(), 0, 0, 0);
+	
+	RemoveMessages(UI_START, UI_END);
 }
 
 //Clientside script to show current vote tallies
 Script "Lexicon_VoteTextDisplay" (int time, int waitTime) clientside
 {
-	SetFont("LXBIGFONT");
 	str VoteText = "";
+	str VoteCoundown = "";
 	int votesForAll = 0;
 	for(int i = 0; i < 64; i++)
 	{
-		if(playerVotes[i][0] == 0) continue;
+		//if(playerVotes[i][0] == 0) continue;
 		votesForAll = 1;
-		int voteCount = countVote(i,PlayerVotes[i][0],PlayerVotes[i][1]);
+		int voteCount = countVote(i, playerVotes[i][0], playerVotes[i][1]);
 		if(voteCount == 0)
 		{
-			int totalVoteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
+			int totalVoteCount = countVote(64, playerVotes[i][0], playerVotes[i][1]);
 			if(totalVoteCount > 0)
 			{
-				VotesDisplay[i] = strParam(s:"\n",s:returnMapString(1,PlayerVotes[i][0]-1,0),s:" [",s:gameModeTypes[PlayerVotes[i][1]][1],s:"]",s:" - Votes: ",d:totalVoteCount);
-				VoteText = strparam(s:VoteText,s:VotesDisplay[i]);
+				VotesDisplay[i] = strParam(s:"\n", i:(i + 1), s:": \c[LexiconGold]", s:returnMapString(1, playerVotes[i][0] - 1, 0), s:"\c- [\c[LexiconGreen]", s:gameModeTypes[playerVotes[i][1]][1], s:"\c-]", s:" - Votes: \c[LexiconRed]", d:totalVoteCount);
+				VoteText = strparam(s:VoteText, s:VotesDisplay[i]);
 			}
 		}
 	}
 	
 	if(time < waitTime && votesForAll > 0)
 	{
-		int minute = time/(35*60);
-		int second = (time/(35)) % 60;
-		VoteText = strparam(s:VoteText,s:"\n",d:minute,s:":",s:second < 10 ? "0" : "",d:second,s:" before highest voted set is chosen.");
+		int minute = time / (35 * 60);
+		int second = (time / 35) % 60;
+		VoteCoundown = strparam(d:minute, s:":", s:second < 10 ? "0" : "", d:second, s:" before highest voted set is chosen");
 	}
 	
-	//Weird formula, but we basically need the text a little smaller
-	SetHudSize(((CANVASBASEX*UISCALE*7)/4)>>16,((CANVASBASEY*UISCALE*7)/4)>>16,0);
-	int posX = intFloat((((CANVASBASEX*UISCALE*7)/4)>>16)*-0.16);
-	HudMessage(s:VoteText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 146, CR_UNTRANSLATED, posX + 0.1, 32.1, 0.0);
+	int hudBoundsX = ftoi(BASECANVAS_X * UISCALE);
+	int hudBoundsY = ftoi(BASECANVAS_Y * UISCALE);
+	int hudCenterX = hudBoundsX / 2;
+	int hudCenterY = hudBoundsY / 2;
+	
+	SetHudSize(hudBoundsX, hudBoundsY, true);
+	int posX = hudCenterX;
+	int posY = hudCenterY / 4;
+	SetFont("LXBIGFONT");
+	HudMessage(s:VoteCoundown; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 1, CR_UNTRANSLATED, itof(posX), itof(posY) + 0.1, 0.0);
+	posY += SMALLFONTSIZE_Y;
+	HudMessage(s:VoteText; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 0, CR_UNTRANSLATED, itof(posX), itof(posY) + 0.1, 0.0);
 }
 
 //Behavior for clients when the map set has been chosen
 Script "Lexicon_PerformVoteBehavior" (int winner) Clientside
 {
-	RemoveMessages(100,160);
+	RemoveMessages(UI_START, UI_END);
 	disableTerminal = true;
-	int deployTimer = DEPLOYCOUNTDOWN;
+	int deployTimer = DEPLOYCOUNTDOWN + 35;
 	
-	SetHudSize(640,480,false);
-	while(deployTimer > 0)
+	int hudBoundsX = BASECANVAS_X;
+	int hudBoundsY = BASECANVAS_Y;
+	int hudCenterX = hudBoundsX / 2;
+	int hudCenterY = hudBoundsY / 2;
+
+	int posX;
+	int posY;
+	
+	while(deployTimer > 35)
 	{
-		int second = (deployTimer/(35)) % 60;
-		SetFont("LXSMALLFONT");	
-		HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\c[LexiconGold]",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\c[LexiconGold]",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0);
+		int second = (deployTimer / 35) % 60;
+		SetHudSize(hudBoundsX, hudBoundsY, true);
+		posX = hudCenterX;
+		posY = hudCenterY / 2;
 		SetFont("LXBIGFONT");
-		HudMessage(d:second+1; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.05, 1.0);	
+		posY -= BIGFONTSIZE_Y;
+		HudMessage(s:StrParam(s:"Vote Completed!"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 0, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
+		posY += BIGFONTSIZE_Y;
+		SetFont("LXSMALLFONT");	
+		posY += SMALLFONTSIZE_Y;
+		HudMessage(s:StrParam(s:"Winning Map Set: \c[LexiconGold]", s:returnMapString(1, winner, 0)); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 1, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
+		posY += SMALLFONTSIZE_Y;
+		HudMessage(s:StrParam(s:"Game mode: ", s:"\c[LexiconGreen]", s:gameModeTypes[GetCvar("Lexicon_GameType")][1]); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 2, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
+		posY += SMALLFONTSIZE_Y * 2;
+		HudMessage(s:StrParam(s:"Prepare for deployment"); HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 3, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
+		posY += SMALLFONTSIZE_Y;
+		SetFont("LXBIGFONT");
+		posY += BIGFONTSIZE_Y;
+		HudMessage(d:second; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 4, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
 		deployTimer--;
 		Delay(1);
 	}
+	HudMessage(d:0; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, MSG_VOTEINFO + 4, CR_UNTRANSLATED, itof(posX), itof(posY), 0.0);
 	
-	SetFont("LXSMALLFONT");	
-	HudMessage(s:StrParam(s:"Mapset Chosen:\n\n\c[LexiconGold]",s:returnMapString(1,winner,0),s:"\c-\nGame type: ",s:"\c[LexiconGold]",s:gameModeTypes[GetCvar("Lexicon_GameType")][1],s:"\c-\n\nPrepare for deployment:"); HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 100, CR_UNTRANSLATED, 320.4, 240.0, 0.0, 1.0);
-	SetFont("LXBIGFONT");
-	HudMessage(d:0; HUDMSG_FADEOUT|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA, 101, CR_UNTRANSLATED, 320.4, 300.0, 0.0, 1.0);	
-	
-	FadeTo(0,0,0,1.0,1.0);
+	FadeTo(0, 0, 0, 1.0, 1.0);
 	Delay(35);
-	FadeRange(0,0,0,1.0,0,0,0,1.0,30.0);
+	FadeRange(0, 0, 0, 1.0, 0, 0, 0, 1.0, 30.0);
 }
 
 //Code used for calculating the vote tally. Always run on the base map
@@ -570,8 +915,10 @@ Script "Lexicon_VoteTally" (void)
 		//This timer will make it so a map is chosen if a time frame is exceeded, unless that's also a tie
 		if(voteCounts > 0)
 			voteTimeLimit--;
-		else if(voteTimeLimit <= 0) voteTimeLimit = 0;
-		else voteTimeLimit = WAITTIMER;
+		else if(voteTimeLimit <= 0)
+			voteTimeLimit = 0;
+		else
+			voteTimeLimit = WAITTIMER;
 		
 		if((voteCounts == PlayerCount() || voteTimeLimit == 0) && PlayerCount() > 0)
 		{
@@ -580,10 +927,10 @@ Script "Lexicon_VoteTally" (void)
 			for(i = 0; i < 64; i++)
 			{
 				if(playerVotes[i][0] == 0) continue;
-				int uniqueVoteCount = countVote(i,PlayerVotes[i][0],PlayerVotes[i][1]);
+				int uniqueVoteCount = countVote(i, playerVotes[i][0], playerVotes[i][1]);
 				if(uniqueVoteCount == 0)
 				{
-					voteCount = countVote(64,PlayerVotes[i][0],PlayerVotes[i][1]);
+					voteCount = countVote(64, playerVotes[i][0], playerVotes[i][1]);
 					if(voteCount >= highestVote && voteCount != 0)
 					{
 						if(voteCount > highestVote)
@@ -591,8 +938,8 @@ Script "Lexicon_VoteTally" (void)
 							ClearWinners();
 							winners = 0;
 						}
-						winningSets[winners][0] = PlayerVotes[i][0];
-						winningSets[winners][1] = PlayerVotes[i][1];
+						winningSets[winners][0] = playerVotes[i][0];
+						winningSets[winners][1] = playerVotes[i][1];
 						winners++;
 						highestVote = voteCount;
 					}
@@ -604,22 +951,22 @@ Script "Lexicon_VoteTally" (void)
 			//Prevent ties from changing the map immediately
 			if((!tie && voteTimeLimit > 0) || voteTimeLimit == 0)
 			{
-				pickedMapSet = pickWinner()-1;		
+				pickedMapSet = pickWinner() - 1;		
 				disableTerminal = true;
 				for(i = 0; i < 64; i++)
 				{
 					if(PlayerInGame(i))
-						ACS_NamedExecuteWithResult("Lexicon_PerformVoteBehavior",pickedMapSet,0,0,0);
+						ACS_NamedExecuteWithResult("Lexicon_PerformVoteBehavior", pickedMapSet, 0, 0, 0);
 				}
 			
-				SetPlayerProperty(1,1,PROP_TOTALLYFROZEN);
+				SetPlayerProperty(1, 1, PROP_TOTALLYFROZEN);
 				Delay(DEPLOYCOUNTDOWN + 35);
-				SetPlayerProperty(1,0,PROP_TOTALLYFROZEN);
+				SetPlayerProperty(1, 0, PROP_TOTALLYFROZEN);
 				
 				//Determine the level name needed
-				str iwad = strParam(l:strparam(s:returnMapString(0,pickedMapSet,0),s:"_MAPSET_IWAD"));
+				str iwad = strParam(l:strparam(s:returnMapString(0, pickedMapSet, 0), s:"_MAPSET_IWAD"));
 				str append = isDoom1wad(iwad) ? "E1M1" : "01";
-				str mapset = strParam(s:returnMapString(1,pickedMapSet,0)); //In this case, we're taking the mapset name
+				str mapset = strParam(s:returnMapString(1, pickedMapSet, 0)); //In this case, we're taking the mapset name
 				str level = "";
 				if(mapset == "Doom II")
 					level = "MAP01";	
@@ -669,7 +1016,7 @@ Script "Lexicon_VoteTally" (void)
 						level = "MAP01";
 				}
 				else
-					level = strParam(s:returnMapString(0,pickedMapSet,0),s:append);
+					level = strParam(s:returnMapString(0, pickedMapSet, 0), s:append);
 				
 				TakeInventory("LexiconTerminalOpen", 1);
 				TakeInventory("LexiconTerminalExit", 1);
@@ -677,9 +1024,9 @@ Script "Lexicon_VoteTally" (void)
 				
 				//Now set the map
 				if(GetCVar("lexicon_vanilla_mode") || isGameModded())
-					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION,-1);
+					ChangeLevel(level, 0, CHANGELEVEL_NOINTERMISSION, -1);
 				else
-					ChangeLevel(level,0,CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY,-1);
+					ChangeLevel(level, 0, CHANGELEVEL_NOINTERMISSION|CHANGELEVEL_RESETINVENTORY, -1);
 			}
 		}
 		Delay(1);

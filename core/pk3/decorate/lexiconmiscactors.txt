@@ -17,7 +17,7 @@ Actor LexiconHeckCube : SwitchableDecoration 230
 		Active:
 			TNT1 A 0 A_ChangeFlag("USESPECIAL", false)
 			TNT1 A 0 ACS_NamedExecuteAlways("Lexicon_Credits")
-			LX99 "]" 2275
+			LX99 "]" 4025
 			TNT1 A 0 A_ChangeFlag("USESPECIAL", true)
 			Goto Spawn
 	}

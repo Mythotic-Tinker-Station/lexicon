@@ -176,120 +176,344 @@ Script "Lexicon_InGame" (int arg1)
 	}
 }
 
+// Done with some assistance from Shiny Metagross
 Script "Lexicon_Credits" (void) CLIENTSIDE
 {
 	SetActivator(0, AAPTR_TARGET);
-	int isInGUI = CheckInventory("LexiconTerminalOpen");
-	int creditsTimer = 175;
+	int inGUI = CheckInventory("LexiconTerminalOpen");
+	int creditTimer = 175;
 
-	if (isInGUI) { Log(s:"GGGG"); terminate; }
-	displayLexiconCredits("This is a test message...", 100, 240.0);
-	Delay(creditsTimer);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Founders/Owners:", 100, 220.0);
+		displayLexiconCredits("MiFU", 101, 240.0);
+		displayLexiconCredits("Tribeam", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	if (isInGUI) { Log(s:"GGGG"); terminate; }
-	displayLexiconCredits("This is a 2nd test message...", 100, 220.0);
-	displayLexiconCredits("This is a 3rd test message... GGGG", 101, 260.0);
-	Delay(creditsTimer);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Project Leads/Management:", 100, 220.0);
+		displayLexiconCredits("MiFU", 101, 240.0);
+		displayLexiconCredits("meleemario", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	if (isInGUI) { Log(s:"GGGG"); terminate; }
-	displayLexiconCredits("This is a 4th test message...", 100, 220.0);
-	displayLexiconCredits("This is a 5th test message...", 101, 260.0);
-	Delay(creditsTimer);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Lead Developers:", 100, 220.0);
+		displayLexiconCredits("cubebert", 101, 240.0);
+		displayLexiconCredits("Tribeam", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-/*
-	HudMessage(s:"Lexicon Lead/Overseer:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 5.0);
-	HudMessage(s:"MiFU"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 260.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Scripting / Tooling:", 100, 180.0);
+		displayLexiconCredits("Tribeam", 101, 200.0);
+		displayLexiconCredits("cubebert", 102, 220.0);
+		displayLexiconCredits("Shiny Metagross", 103, 240.0);
+		displayLexiconCredits("Popsoap", 104, 260.0);
+		displayLexiconCredits("Michaelis", 105, 280.0);
+		displayLexiconCredits("Penguin", 106, 300.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"Developers:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 160.0, 5.0);
-	HudMessage(s:"cubebert"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 200.0, 5.0);
-	HudMessage(s:"Popsoap"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 220.0, 5.0);
-	HudMessage(s:"Michaelis"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 240.0, 5.0);
-	HudMessage(s:"Shiny Metagross"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 260.0, 5.0);
-	HudMessage(s:"meleemario"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 280.0, 5.0);
-	HudMessage(s:"Tribeam"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconWhite", 320.0, 300.0, 5.0);
-	HudMessage(s:"tabijaky"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", 320.0, 320.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Mapset Compiling:", 100, 150.0);
+		displayLexiconCredits("cubebert", 101, 170.0);
+		displayLexiconCredits("Popsoap", 102, 190.0);
+		displayLexiconCredits("Michaelis", 103, 210.0);
+		displayLexiconCredits("Shiny Metagross", 104, 230.0);
+		displayLexiconCredits("meleemario", 105, 250.0);
+		displayLexiconCredits("Tribeam", 106, 270.0);
+		displayLexiconCredits("K0RPSE", 107, 290.0);
+		displayLexiconCredits("tabijaky", 108, 310.0);
+		displayLexiconCredits("Hell_Pike", 109, 330.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"Lead Lexicon Developers:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"Tribeam"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"cubebert"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 270.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Mapset Selector Code and UI Design:", 100, 220.0);
+		displayLexiconCredits("Shiny Metagross", 101, 240.0);
+		displayLexiconCredits("Dark-Assassin", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"Mapset Selector Code:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 5.0);
-	HudMessage(s:"Shiny Metagross"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 260.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Design:", 100, 210.0);
+		displayLexiconCredits("Tribeam", 101, 230.0);
+		displayLexiconCredits("Fiendzy", 102, 250.0);
+		displayLexiconCredits("cubebert", 103, 270.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"VR Hub Design:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"Tribeam"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"cubebert"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 270.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Beta Testers:", 100, 100.0);
+		displayLexiconCredits("cubebert", 101, 120.0);
+		displayLexiconCredits("Popsoap", 102, 140.0);
+		displayLexiconCredits("Shiny Metagross", 103, 160.0);
+		displayLexiconCredits("meleemario", 104, 180.0);
+		displayLexiconCredits("Tribeam", 105, 200.0);
+		displayLexiconCredits("Kaapeli47", 106, 220.0);
+		displayLexiconCredits("tehvappy50", 107, 240.0);
+		displayLexiconCredits("Blushberry", 108, 260.0);
+		displayLexiconCredits("Bugsie", 109, 280.0);
+		displayLexiconCredits("Challenger", 110, 300.0);
+		displayLexiconCredits("DEUS VAULT", 111, 320.0);
+		displayLexiconCredits("Dinosaur Nerd", 112, 340.0);
+		displayLexiconCredits("Eagle", 113, 360.0);
+		displayLexiconCredits("Fluffy", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"Beta Testers:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 130.0, 5.0);
-	HudMessage(s:"cubebert"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 170.0, 5.0);
-	HudMessage(s:"Popsoap"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 190.0, 5.0);
-	HudMessage(s:"Shiny Metagross"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"meleemario"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 230.0, 5.0);
-	HudMessage(s:"Tribeam"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"Kaapeli47"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconWhite", 320.0, 270.0, 5.0);
-	HudMessage(s:"BathySalts"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", 320.0, 290.0, 5.0);
-	HudMessage(s:"[FAP] The Powerful Hoe"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconWhite", 320.0, 310.0, 5.0);
-	HudMessage(s:"The Proverbial Derp"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconWhite", 320.0, 330.0, 5.0);
-	HudMessage(s:"Shakar-a'tar"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 110, "LexiconWhite", 320.0, 350.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Beta Testers:", 100, 100.0);
+		displayLexiconCredits("Fookerton", 101, 120.0);
+		displayLexiconCredits("Gosimer", 102, 140.0);
+		displayLexiconCredits("Hell_Pike", 103, 160.0);
+		displayLexiconCredits("ImSoTiredOfBeingHere", 104, 180.0);
+		displayLexiconCredits("Issac12", 105, 200.0);
+		displayLexiconCredits("Jaycobe", 106, 220.0);
+		displayLexiconCredits("Kenopath", 107, 240.0);
+		displayLexiconCredits("Kunai Kitsune", 108, 260.0);
+		displayLexiconCredits("Michaelis", 109, 280.0);
+		displayLexiconCredits("Mister36", 110, 300.0);
+		displayLexiconCredits("Nash Muhandes", 111, 320.0);
+		displayLexiconCredits("NationWideMoose", 112, 340.0);
+		displayLexiconCredits("Penguin", 113, 360.0);
+		displayLexiconCredits("Professor Renderer", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"OTEX Textures:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 5.0);
-	HudMessage(s:"Ola Bjorling"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 260.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Beta Testers:", 100, 190.0);
+		displayLexiconCredits("Saad356", 101, 210.0);
+		displayLexiconCredits("Shadowlink223", 102, 230.0);
+		displayLexiconCredits("SyKoTiC", 103, 250.0);
+		displayLexiconCredits("tabijaky", 104, 270.0);
+		displayLexiconCredits("Zungling", 105, 290.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"VR Hub Music:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 130.0, 5.0);
-	HudMessage(s:"Jugi"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 170.0, 5.0);
-	HudMessage(s:"Daisuke Ishiwatari"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 190.0, 5.0);
-	HudMessage(s:"Robert A. Allen & Joshua Jensen"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"JazzCat"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 230.0, 5.0);
-	HudMessage(s:"4-Mat"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"Yerzmyey"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconWhite", 320.0, 270.0, 5.0);
-	HudMessage(s:"Amiga Junglism, Spot, XSM & tEiS"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", 320.0, 290.0, 5.0);
-	HudMessage(s:"Workbench"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconWhite", 320.0, 310.0, 5.0);
-	HudMessage(s:"Disease"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconWhite", 320.0, 330.0, 5.0);
-	HudMessage(s:"Szudi"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 110, "LexiconWhite", 320.0, 350.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Lexicon DM Beta Testers:", 100, 190.0);
+		displayLexiconCredits("[FAP] The Powerful Hoe", 101, 210.0);
+		displayLexiconCredits("The Proverbial Derp", 102, 230.0);
+		displayLexiconCredits("Shakar-a'tar", 103, 250.0);
+		displayLexiconCredits("Mame", 104, 270.0);
+		displayLexiconCredits("Bathysalts", 105, 290.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"VR Hub Music:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 130.0, 5.0);
-	HudMessage(s:"Ambient Move"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 170.0, 5.0);
-	HudMessage(s:"Big Bear"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 190.0, 5.0);
-	HudMessage(s:"Trancerboy"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"Gaspode"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 230.0, 5.0);
-	HudMessage(s:"Doh"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"Necros"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconWhite", 320.0, 270.0, 5.0);
-	HudMessage(s:"Jester"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 107, "LexiconWhite", 320.0, 290.0, 5.0);
-	HudMessage(s:"Zauron"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 108, "LexiconWhite", 320.0, 310.0, 5.0);
-	HudMessage(s:"Basehead"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 109, "LexiconWhite", 320.0, 330.0, 5.0);
-	HudMessage(s:"Prism"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 110, "LexiconWhite", 320.0, 350.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Mapset Compiling:", 100, 150.0);
+		displayLexiconCredits("cubebert", 101, 170.0);
+		displayLexiconCredits("Popsoap", 102, 190.0);
+		displayLexiconCredits("Michaelis", 103, 210.0);
+		displayLexiconCredits("Shiny Metagross", 104, 230.0);
+		displayLexiconCredits("meleemario", 105, 250.0);
+		displayLexiconCredits("Tribeam", 106, 270.0);
+		displayLexiconCredits("K0RPSE", 107, 290.0);
+		displayLexiconCredits("tabijaky", 108, 310.0);
+		displayLexiconCredits("Hell_Pike", 109, 330.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"VR Hub Music:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 180.0, 5.0);
-	HudMessage(s:"Jesper Kyd"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 220.0, 5.0);
-	HudMessage(s:"Dr. Awesome"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 240.0, 5.0);
-	HudMessage(s:"Hunz"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 260.0, 5.0);
-	HudMessage(s:"Counterpoint"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 280.0, 5.0);
-	HudMessage(s:"Big Jim"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 300.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Afina Artwork:", 100, 230.0);
+		displayLexiconCredits("Rigrug", 101, 250.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"VR Hub Music:"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 170.0, 5.0);
-	HudMessage(s:"Marvel"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 210.0, 5.0);
-	HudMessage(s:"CorgiAtom"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 230.0, 5.0);
-	HudMessage(s:"Deathman27"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 103, "LexiconWhite", 320.0, 250.0, 5.0);
-	HudMessage(s:"Maktone"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 104, "LexiconWhite", 320.0, 270.0, 5.0);
-	HudMessage(s:"MrDeath"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 105, "LexiconWhite", 320.0, 290.0, 5.0);
-	HudMessage(s:"Quazar of Sanxion"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 106, "LexiconWhite", 320.0, 310.0, 5.0);
-	Delay(175);
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Other Graphics:", 100, 180.0);
+		displayLexiconCredits("BugsBunny205 (Menu Logo)", 101, 200.0);
+		displayLexiconCredits("Hell_Pike (Brightmaps, GLDefs)", 102, 220.0);
+		displayLexiconCredits("KillerKouhai (Loading Screen)", 103, 240.0);
+		displayLexiconCredits("Tiddles (Title Screen / Console background)", 104, 260.0);
+		displayLexiconCredits("TheMisterCat (Lexicon Cube Artifact)", 105, 280.0);
+		displayLexiconCredits("Tribeam (Various Font edits and VR GFX)", 106, 300.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
-	HudMessage(s:"For more of the Mythotic Tinker-Station's work,"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 100, "LexiconWhite", 320.0, 220.0, 10.0);
-	HudMessage(s:"visit our Discord server via"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 101, "LexiconWhite", 320.0, 240.0, 10.0);
-	HudMessage(s:"https://discord.gg/mwFZvHe"; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, 102, "LexiconWhite", 320.0, 260.0, 10.0);
-*/
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Mixed Contributions:", 100, 180.0);
+		displayLexiconCredits("Clint", 101, 200.0);
+		displayLexiconCredits("Hell_Pike", 102, 220.0);
+		displayLexiconCredits("Michaelis", 103, 240.0);
+		displayLexiconCredits("Penguin", 104, 260.0);
+		displayLexiconCredits("Popsoap", 105, 280.0);
+		displayLexiconCredits("Shaewn", 106, 300.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
 
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("OTEX Textures:", 100, 230.0);
+		displayLexiconCredits("Ola Bjorling", 101, 250.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Music:", 100, 100.0);
+		displayLexiconCredits("Jugi", 101, 120.0);
+		displayLexiconCredits("Daisuke Ishiwatari", 102, 140.0);
+		displayLexiconCredits("Robert A. Allen & Joshua Jensen", 103, 160.0);
+		displayLexiconCredits("JazzCat", 104, 180.0);
+		displayLexiconCredits("4-Mat", 105, 200.0);
+		displayLexiconCredits("Yerzmyey", 106, 220.0);
+		displayLexiconCredits("Amiga Junglism, Spot, XSM & tEiS", 107, 240.0);
+		displayLexiconCredits("WorkbenchDisease", 108, 260.0);
+		displayLexiconCredits("Szudi", 109, 280.0);
+		displayLexiconCredits("Ambient Move", 110, 300.0);
+		displayLexiconCredits("Big Bear", 111, 320.0);
+		displayLexiconCredits("Trancerboy", 112, 340.0);
+		displayLexiconCredits("Gaspode", 113, 360.0);
+		displayLexiconCredits("Doh", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Music:", 100, 100.0);
+		displayLexiconCredits("Necros", 101, 120.0);
+		displayLexiconCredits("Jester", 102, 140.0);
+		displayLexiconCredits("Zauron", 103, 160.0);
+		displayLexiconCredits("Basehead", 104, 180.0);
+		displayLexiconCredits("Prism", 105, 200.0);
+		displayLexiconCredits("Jesper Kyd", 106, 220.0);
+		displayLexiconCredits("Dr. Awesome", 107, 240.0);
+		displayLexiconCredits("Hunz", 108, 260.0);
+		displayLexiconCredits("Counterpoint", 109, 280.0);
+		displayLexiconCredits("Big Jim", 110, 300.0);
+		displayLexiconCredits("Marvel", 111, 320.0);
+		displayLexiconCredits("CorgiAtom", 112, 340.0);
+		displayLexiconCredits("Deathman27", 113, 360.0);
+		displayLexiconCredits("Maktone", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Music:", 100, 100.0);
+		displayLexiconCredits("MrDeath", 101, 120.0);
+		displayLexiconCredits("Quazar of Sanxion", 102, 140.0);
+		displayLexiconCredits("Lizardking", 103, 160.0);
+		displayLexiconCredits("Biteon", 104, 180.0);
+		displayLexiconCredits("Ko0x", 105, 200.0);
+		displayLexiconCredits("Xerxes", 106, 220.0);
+		displayLexiconCredits("Lonestar", 107, 240.0);
+		displayLexiconCredits("TrAFo in EMC", 108, 260.0);
+		displayLexiconCredits("Jakim", 109, 280.0);
+		displayLexiconCredits("LHS", 110, 300.0);
+		displayLexiconCredits("Jorov", 111, 320.0);
+		displayLexiconCredits("TSEC", 112, 340.0);
+		displayLexiconCredits("X-ceed / Scope", 113, 360.0);
+		displayLexiconCredits("Yoni of Fobia Design", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Music:", 100, 100.0);
+		displayLexiconCredits("cubebert", 101, 120.0);
+		displayLexiconCredits("Popsoap", 102, 140.0);
+		displayLexiconCredits("Shiny Metagross", 103, 160.0);
+		displayLexiconCredits("meleemario", 104, 180.0);
+		displayLexiconCredits("Tribeam", 105, 200.0);
+		displayLexiconCredits("Kaapeli47", 106, 220.0);
+		displayLexiconCredits("tehvappy50", 107, 240.0);
+		displayLexiconCredits("Blushberry", 108, 260.0);
+		displayLexiconCredits("Bugsie", 109, 280.0);
+		displayLexiconCredits("Challenger", 110, 300.0);
+		displayLexiconCredits("DEUS VAULT", 111, 320.0);
+		displayLexiconCredits("Dinosaur Nerd", 112, 340.0);
+		displayLexiconCredits("Eagle", 113, 360.0);
+		displayLexiconCredits("Fluffy", 114, 380.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("VR Hub Music:", 100, 220.0);
+		displayLexiconCredits("Seablue", 101, 240.0);
+		displayLexiconCredits("Beldoroon", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("Emotional Support :D :", 100, 230.0);
+		displayLexiconCredits("Ayashi", 101, 250.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
+		displayLexiconCredits("For more of the Mythotic Tinker-Station's work,", 100, 220.0);
+		displayLexiconCredits("visit our Discord server via", 101, 240.0);
+		displayLexiconCredits("https://discord.gg/mwFZvHe", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114);
 }
 
 Script "Lexicon_InGame_Enter" enter { ACS_NamedExecuteWithResult("Lexicon_InGame", 0,0,0); }

@@ -466,28 +466,6 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("VR Hub Music:", 100, 100.0);
-		displayLexiconCredits("cubebert", 101, 120.0);
-		displayLexiconCredits("Popsoap", 102, 140.0);
-		displayLexiconCredits("Shiny Metagross", 103, 160.0);
-		displayLexiconCredits("meleemario", 104, 180.0);
-		displayLexiconCredits("Tribeam", 105, 200.0);
-		displayLexiconCredits("Kaapeli47", 106, 220.0);
-		displayLexiconCredits("tehvappy50", 107, 240.0);
-		displayLexiconCredits("Blushberry", 108, 260.0);
-		displayLexiconCredits("Bugsie", 109, 280.0);
-		displayLexiconCredits("Challenger", 110, 300.0);
-		displayLexiconCredits("DEUS VAULT", 111, 320.0);
-		displayLexiconCredits("Dinosaur Nerd", 112, 340.0);
-		displayLexiconCredits("Eagle", 113, 360.0);
-		displayLexiconCredits("Fluffy", 114, 380.0);
-		creditTimer--;
-		Delay(1);
-	}
-	RemoveMessages(100, 114); creditTimer = 175;
-
-	while(creditTimer > 0 && !inGUI)
-	{
 		displayLexiconCredits("VR Hub Music:", 100, 220.0);
 		displayLexiconCredits("Seablue", 101, 240.0);
 		displayLexiconCredits("Beldoroon", 102, 260.0);

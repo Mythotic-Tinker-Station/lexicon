@@ -221,6 +221,7 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: ${{ steps.release_type.outputs.type == 'beta' && format('Beta {0}', github.ref_name) || format('Release {0}', github.ref_name) }}
           prerelease: ${{ steps.release_type.outputs.prerelease }}
+          draft: true
           files: ./release-files/*.pk3
           body: |
             ## Lexicon ${{ github.ref_name }} ${{ steps.release_type.outputs.type == 'beta' && '(Beta)' || '' }}
@@ -229,6 +230,14 @@ jobs:
             ${{ steps.changes.outputs.changed_pk3s }}
 
             Built automatically from tag `${{ github.ref_name }}` on branch detected at tag time.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # -------------------------------------------------------
+      # 7b. Publish the draft once all assets are attached
+      # -------------------------------------------------------
+      - name: Publish release
+        run: gh release edit "${{ github.ref_name }}" --draft=false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

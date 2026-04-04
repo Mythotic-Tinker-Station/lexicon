@@ -12,7 +12,8 @@ Script "LexiconFireworks" Open
         // a mapset has been completed
         if(GetCVar("Lexicon_Mapset_Completed") == 1337)
         {
-            // spawn fireworks here
+            // vr map skybox tid: 3
+            
         }
     }
 }

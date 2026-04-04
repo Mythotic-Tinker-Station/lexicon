@@ -128,3 +128,310 @@ Actor LexiconInventoryGiven : Inventory
 }
 
 actor LexiconClipGive : Clip { +IGNORESKILL }
+
+Actor LexiconFirework_Spawner
+{
+	Scale 0.5
+	+NOINTERACTION
+	+CLIENTSIDEONLY
+	States
+	{
+		Spawn:
+			TNT1 A 1 A_Jump(4, "Spawn2")
+			Loop
+
+		Spawn2:
+			TNT1 A 0 A_SetAngle(frandom(0, 360))
+			TNT1 A 0 A_SpawnItemEx("LexiconFirework", sin(angle) * 1248, cos(angle) * 1248, 0, 0, 0, 0, 0)
+			Goto Spawn
+
+		Death:
+			TNT1 A 0
+			Stop
+	}
+}
+
+Actor LexiconFirework
+{
+	Scale 0.3
+	+NOINTERACTION
+	+CLIENTSIDEONLY
+	RenderStyle Add
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-1, 1), random(-1, 1), 10, CVF_REPLACE)
+			LX98 A 0 A_Jump(256, "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Purple")
+			Loop
+
+		Red:
+			LX98 A 0 A_ScaleVelocity(0.98)
+			LX98 A 0 A_SpawnItemEx("LexiconFireworkParticle_Red", 0, 0, 0, 0, 0, 0, 0)
+			LX98 A 1 A_JumpIf(velz <= 2, "Death_Red")
+			Loop
+
+		Orange:
+			LX98 B 0 A_ScaleVelocity(0.98)
+			LX98 B 0 A_SpawnItemEx("LexiconFireworkParticle_Orange", 0, 0, 0, 0, 0, 0, 0)
+			LX98 B 1 A_JumpIf(velz <= 2, "Death_Orange")
+			Loop
+
+		Yellow:
+			LX98 C 0 A_ScaleVelocity(0.98)
+			LX98 C 0 A_SpawnItemEx("LexiconFireworkParticle_Yellow", 0, 0, 0, 0, 0, 0, 0)
+			LX98 C 1 A_JumpIf(velz <= 2, "Death_Yellow")
+			Loop
+
+		Green:
+			LX98 D 0 A_ScaleVelocity(0.98)
+			LX98 D 0 A_SpawnItemEx("LexiconFireworkParticle_Green", 0, 0, 0, 0, 0, 0, 0)
+			LX98 D 1 A_JumpIf(velz <= 2, "Death_Green")
+			Loop
+
+		Cyan:
+			LX98 E 0 A_ScaleVelocity(0.98)
+			LX98 E 0 A_SpawnItemEx("LexiconFireworkParticle_Cyan", 0, 0, 0, 0, 0, 0, 0)
+			LX98 E 1 A_JumpIf(velz <= 2, "Death_Cyan")
+			Loop
+
+		Blue:
+			LX98 F 0 A_ScaleVelocity(0.98)
+			LX98 F 0 A_SpawnItemEx("LexiconFireworkParticle_Blue", 0, 0, 0, 0, 0, 0, 0)
+			LX98 F 1 A_JumpIf(velz <= 2, "Death_Blue")
+			Loop
+
+		Purple:
+			LX98 G 0 A_ScaleVelocity(0.98)
+			LX98 G 0 A_SpawnItemEx("LexiconFireworkParticle_Purple", 0, 0, 0, 0, 0, 0, 0)
+			LX98 G 1 A_JumpIf(velz <= 2, "Death_Purple")
+			Loop
+
+		Death_Red:
+			LX98 AAAAAAA 0 A_SpawnItemEx("LexiconFireworkExplode_Red", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Orange:
+			LX98 BBBBBBB 0 A_SpawnItemEx("LexiconFireworkExplode_Orange", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Yellow:
+			LX98 CCCCCCC 0 A_SpawnItemEx("LexiconFireworkExplode_Yellow", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Green:
+			LX98 DDDDDDD 0 A_SpawnItemEx("LexiconFireworkExplode_Green", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Cyan:
+			LX98 EEEEEEE 0 A_SpawnItemEx("LexiconFireworkExplode_Cyan", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Blue:
+			LX98 FFFFFFF 0 A_SpawnItemEx("LexiconFireworkExplode_Blue", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+
+		Death_Purple:
+			LX98 GGGGGGG 0 A_SpawnItemEx("LexiconFireworkExplode_Purple", 0, 0, 0, 0, 0, 0, 0)
+			Stop
+	}
+}
+
+Actor LexiconFireworkExplode_Red
+{
+	Scale 0.1
+	+CLIENTSIDEONLY
+	gravity 0.01
+	RenderStyle Add
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 A 0 A_ScaleVelocity(0.98)
+			LX98 A 0 A_SpawnItemEx("LexiconFireworkParticle_Red", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 A 1 A_FadeOut(0.01)
+			Loop
+
+		Death:
+			LX98 A 0
+			Stop
+	}
+}
+
+Actor LexiconFireworkExplode_Orange : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 B 0 A_ScaleVelocity(0.98)
+			LX98 B 0 A_SpawnItemEx("LexiconFireworkParticle_Orange", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 B 1 A_FadeOut(0.01)
+			Loop
+	}
+}
+
+Actor LexiconFireworkExplode_Yellow : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 C 0 A_ScaleVelocity(0.98)
+			LX98 C 0 A_SpawnItemEx("LexiconFireworkParticle_Yellow", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 C 1 A_FadeOut(0.01)
+			Loop
+	}
+}
+
+Actor LexiconFireworkExplode_Green : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 D 0 A_ScaleVelocity(0.98)
+			LX98 D 0 A_SpawnItemEx("LexiconFireworkParticle_Green", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 D 1 A_FadeOut(0.01)
+			Loop
+	}
+}
+
+Actor LexiconFireworkExplode_Cyan : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 E 0 A_ScaleVelocity(0.98)
+			LX98 E 0 A_SpawnItemEx("LexiconFireworkParticle_Cyan", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 E 1 A_FadeOut(0.01)
+			Loop
+	}
+}
+
+Actor LexiconFireworkExplode_Blue : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 F 0 A_ScaleVelocity(0.98)
+			LX98 F 0 A_SpawnItemEx("LexiconFireworkParticle_Blue", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 F 1 A_FadeOut(0.01)
+			Loop
+	}
+}
+
+Actor LexiconFireworkExplode_Purple : LexiconFireworkExplode_Red
+{
+	States
+	{
+		Spawn:
+			LX98 A 0
+			LX98 A 0 A_ChangeVelocity(random(-3, 3), random(-3, 3), random(-3, 3), CVF_REPLACE)
+
+		Spawn2:
+			LX98 G 0 A_ScaleVelocity(0.98)
+			LX98 G 0 A_SpawnItemEx("LexiconFireworkParticle_Purple", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 G 1 A_FadeOut(0.02)
+			Loop
+	}
+}
+
+
+Actor LexiconFireworkParticle_Red
+{
+	Scale 0.2
+	+NOINTERACTION
+	+CLIENTSIDEONLY
+	RenderStyle Add
+	States
+	{
+		Spawn:
+			LX98 A 1 A_FadeOut(0.03)
+			Loop
+
+		Death:
+			LX98 A 0
+			Stop
+	}
+}
+
+Actor LexiconFireworkParticle_Orange : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 B 1 A_FadeOut(0.03)
+			Loop
+	}
+}
+
+Actor LexiconFireworkParticle_Yellow : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 C 1 A_FadeOut(0.03)
+			Loop
+	}
+}
+
+Actor LexiconFireworkParticle_Green : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 D 1 A_FadeOut(0.03)
+			Loop
+	}
+}
+
+Actor LexiconFireworkParticle_Cyan : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 E 1 A_FadeOut(0.03)
+			Loop
+	}
+}
+
+Actor LexiconFireworkParticle_Blue : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 F 1 A_FadeOut(0.03)
+			Loop
+	}
+}
+
+Actor LexiconFireworkParticle_Purple : LexiconFireworkParticle_Red
+{
+	States
+	{
+		Spawn:
+			LX98 G 1 A_FadeOut(0.03)
+			Loop
+	}
+}

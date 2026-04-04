@@ -271,6 +271,7 @@ map EVLT29 "Boedo"
 map EVLT30 "La Plata"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "EVLT0003"
 	music = "D_EVLT30"

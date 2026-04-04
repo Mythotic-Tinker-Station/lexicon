@@ -1,6 +1,7 @@
 map TSP01 "The Spire"
 {
 	next = "VR"
+	sucktime = 1337
 	sky1 = "TSPSKY1"
 	music = "D_SPIRE"
 	nocrouch
@@ -11,6 +12,7 @@ map TSP01 "The Spire"
 map TSP201 "The Spire 2"
 {
 	next = "VR"
+	sucktime = 1337
 	sky1 = "SKY1"
 	music = "D_SPIRE2"
 	nocrouch
@@ -22,6 +24,7 @@ map EYE01 "The Eye"
 {
 	music = D_EYE
 	next = "VR"
+	sucktime = 1337
 	sky1 = "SKY1"
 	nojump
     nocrouch
@@ -33,6 +36,7 @@ map HP103 "Sens"
 	sky1 = "AFGSKY1"
 	music = "TOTSIREN"
 	next = "VR"
+	sucktime = 1337
 }
 
 MAP AAA01 "A Clear Line Drawn"
@@ -46,4 +50,5 @@ Map AAA02 "Hot Water Music"
 music = "WARBRAIN"
 sky1 = "RSKY15"
 next = "VR"
+sucktime = 1337
 }

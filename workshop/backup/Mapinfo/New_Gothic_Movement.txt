@@ -149,6 +149,7 @@ map NG121 "New Gothic 1 MAP21"
 	sky1 = "RSKY3"
 	music = "d_ng121"
 	next = "VR"
+	sucktime = 1337
 	nocrouch
 	nojump
     SuckTime = 1337

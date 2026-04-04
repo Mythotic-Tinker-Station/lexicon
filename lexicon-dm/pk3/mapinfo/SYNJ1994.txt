@@ -73,6 +73,7 @@ map SYNJ08 "SYNJ08 Map 8"
 {
 	titlepatch = "CWILV07"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY1"
 	music = "$MUSIC_DDTBLU"

@@ -82,6 +82,7 @@ map SDX607 "Magnus"
 {
 	titlepatch = "SDX6V06"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "SDX631"
 	sky1 = "SDX60267"
 	music = "D_SDX607"
@@ -94,6 +95,7 @@ map SDX631 "Hyperspace"
 {
 	titlepatch = "SDX6V30"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SDX60267"
 	music = "D_SDX631"

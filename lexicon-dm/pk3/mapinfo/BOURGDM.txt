@@ -358,6 +358,7 @@ map BOUR30 "Delineated Light"
 {
 	titlepatch = "BOURV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY3", 0.0
 	music = "D_BOUR30"

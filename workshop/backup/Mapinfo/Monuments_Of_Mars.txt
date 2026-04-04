@@ -80,6 +80,7 @@ map MOM06 "Steel Militia"
 map MOM07 "Geothermal Gymnastics"
 	{
 	next = "VR"
+	sucktime = 1337
 	enterpic = "MOMINT"
 	exitpic = "MOMINT"
 	intermusic = "D_MOMINT"

@@ -246,6 +246,8 @@ function void getLexiconIwad(void)
 	Thing_Remove(checkerTid);
 }
 
+function bool isVR (void) { return stricmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0; }
+
 // sort an array of integers
 /*
 function void bubble_sort(int[]& a)

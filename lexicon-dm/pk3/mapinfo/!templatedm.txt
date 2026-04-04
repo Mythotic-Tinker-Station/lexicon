@@ -287,6 +287,7 @@ map MAP32 lookup "HUSTR_32"
 {
 	titlepatch = "CWILV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY3"
 	music = "$MUSIC_ULTIMA"

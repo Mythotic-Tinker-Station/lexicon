@@ -351,6 +351,7 @@ map PIZ29 "Twenty-Nine"
 map PIZ30 "Thirty"
 	{
 	next = "VR"
+	sucktime = 1337
 	sky1 = RSKY3
 	titlepatch = CLILV29
 	enterpic = INTERPIC

@@ -59,6 +59,7 @@ map E4M8 lookup "HUSTR_E4M8"
 {
 	levelnum = 38
 	next = "VR"
+	sucktime = 1337
 	secretnext = "E4M9"
 	titlepatch = "WILV37"
 	sky1 = "SKY4"
@@ -79,6 +80,7 @@ map E5M8 "$HUSTR_E5M8"
 	levelnum = 48
 	titlepatch = "WILV47"
 	next = "VR"
+	sucktime = 1337
 	nosoundclipping
 	music = "D_E5M8"
 	par = 300
@@ -98,6 +100,7 @@ map E6M8 "$HUSTR_E6M8"
 	levelnum = 58
 	titlepatch = "WILV57"
 	next = "VR"
+	sucktime = 1337
 	nosoundclipping
 	music = "D_E6M8"
 	par = 390
@@ -116,6 +119,7 @@ map MAP30 lookup "HUSTR_30"
 {
 	titlepatch = "CWILV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "RSKY3"
 	cluster = 8
@@ -128,6 +132,7 @@ map MAP30 lookup "HUSTR_30"
 map NV_MAP08 lookup "NHUSTR_8"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "RSKY3"
 	cluster = 11
@@ -148,6 +153,7 @@ map PL_MAP30 lookup "PHUSTR_30"
 	music = "P_OPENIN"
 	Author = "$WS_AU_MILO_CASALI"
 	next = "VR"
+	sucktime = 1337
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
 }
@@ -162,6 +168,7 @@ map TN_MAP30 lookup "THUSTR_30"
 	compat_stairs
 	music = "T_OPENIN"
 	next = "VR"
+	sucktime = 1337
 	Author = "$WS_AU_SIEBEN"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_DM2INT"
@@ -344,6 +351,7 @@ map ML_MAP19 lookup "ML_BLOODSEA"
 map ML_MAP20 lookup "ML_MEPHISTO"
 {
     next = "VR"
+    sucktime = 1337
     sky1 = "RSKY1"
     music = "$MUSIC_OPENIN"
     Author = "$WS_AU_KVERNMO"

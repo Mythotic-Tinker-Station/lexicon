@@ -358,6 +358,7 @@ map DKEC30 "level 30: victory conditions"
 {
 	titlepatch = "DKECV29"
     next = "VR"
+    sucktime = 1337
     secretnext = "VR"
 	sky1 = "DKEC0216"
 	intermusic = "D_DKECIN"

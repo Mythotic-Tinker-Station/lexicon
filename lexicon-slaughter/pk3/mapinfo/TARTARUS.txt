@@ -383,6 +383,7 @@ map DKTS42 "Beat Doom V0.01"
 map DKTS43 "LOCK N' LOAD"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DKTS0300"
 	music = "D_DKTS43"

@@ -74,6 +74,7 @@ map ENGM08 "Endgame Map 8"
 {
 	titlepatch = "CWILV07"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "ENGM0294"
 	music = "$MUSIC_DDTBLU"

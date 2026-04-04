@@ -205,6 +205,7 @@ map BKRS19 "19"
 map BKRS20 "20"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "BKRS0438"
 	music = "D_BKRS20"

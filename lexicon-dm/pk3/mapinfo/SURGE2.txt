@@ -291,6 +291,7 @@ map SRG232 "Infested Hollow"
 {
 	titlepatch = "SRG2V31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SRG20476"
 	music = "D_SRG232"

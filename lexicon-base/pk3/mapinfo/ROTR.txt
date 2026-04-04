@@ -253,6 +253,7 @@ map ROTR21 "sin"
 {
 	titlepatch = "ROTRV20"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "ROTR0240"
 	music = "D_ROTR21"

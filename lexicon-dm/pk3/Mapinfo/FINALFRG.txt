@@ -274,6 +274,7 @@ map FNFG30 "Halls of the Doomed"
 {
 	TitlePatch = "FNFGV29"
 	next = "VR"
+	sucktime = 1337
 	Secretnext = "VR"
 	Sky1 = "FNFG0004"
 	Music = "D_FNFG30"

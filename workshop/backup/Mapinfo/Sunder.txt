@@ -198,6 +198,7 @@ map SND15 "Babylon's Chimera"
 map SND16 "Whispers of the Gnarled King"
 	{
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY2"
 	music = "D_SNDR16"

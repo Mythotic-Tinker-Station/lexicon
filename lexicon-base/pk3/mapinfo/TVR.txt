@@ -330,6 +330,7 @@ map TVRV30 "The Forgotten God"
 {
 	titlepatch = "TVRVV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "TVRV0046"
 	music = "$MUSIC_OPENIN"

@@ -244,6 +244,7 @@ map DW2029 "CHURCH of DOOM ]["
 map DW2030 "Death by Cyberdemon"
 {
 	next = "VR"
+	sucktime = 1337
 	Secretnext = "VR"
 	Sky1 = "DW200011"
 	Music = "D_DW2030"

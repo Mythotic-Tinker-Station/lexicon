@@ -382,6 +382,7 @@ map PRSU32 "Interstellar Overdrive"
 {
 	titlepatch = "PRSUV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "PRSU0182"
 	music = "$MUSIC_ULTIMA"

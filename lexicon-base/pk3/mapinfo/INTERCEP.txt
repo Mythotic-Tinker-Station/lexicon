@@ -359,6 +359,7 @@ map ITC130 "Interception"
 {
 	titlepatch = "ITC1V29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "ITC10232"
 	music = "D_ITC130"

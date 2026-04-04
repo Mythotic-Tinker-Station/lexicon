@@ -246,6 +246,7 @@ map SRG130 "Storm Pipes"
 {
 	TitlePatch = "SRG1V29"
 	next = "VR"
+	sucktime = 1337
 	Secretnext = "VR"
 	Music = "D_SRG130"
 }

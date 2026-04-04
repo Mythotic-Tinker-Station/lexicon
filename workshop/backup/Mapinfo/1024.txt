@@ -499,6 +499,7 @@ map TT130 lookup "Nullified Departure"
 {
 	titlepatch = "TT1LV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "TT1SKY3"
 	ExitPic = "TT1LV34"

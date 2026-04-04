@@ -272,6 +272,7 @@ map ESTR30 "Chimes at Midnight"
 {
 	titlepatch = "ESTRV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "ESTR0505"
 	music = "D_ESTR30"

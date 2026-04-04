@@ -322,6 +322,7 @@ map E4M8 lookup "HUSTR_E4M8"
 {
 	titlepatch = "WILV37"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DSKY4"
 	music = "$MUSIC_E2M5"

@@ -362,6 +362,7 @@ map HR1030 "Hell Revealed"
 {
 	titlepatch = "HR10V29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "HR100276"
 	music = "$MUSIC_OPENIN"

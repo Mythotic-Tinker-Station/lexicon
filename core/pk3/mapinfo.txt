@@ -63,6 +63,7 @@ map E4M8 lookup "HUSTR_E4M8"
 	levelnum = 38
 	titlepatch = "WILV37"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "E4M9"
 	sky1 = "SKY4"
 	cluster = 4
@@ -76,6 +77,7 @@ map MAP30 lookup "HUSTR_30"
 {
 	titlepatch = "CWILV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY3"
 	cluster = 8

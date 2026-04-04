@@ -78,6 +78,7 @@ map TKDM09 "TokeDM Map 9"
 {
 	titlepatch = "CWILV08"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY1"
 	music = "$MUSIC_IN_CIT"

@@ -323,6 +323,7 @@ map DW1032 "DWANGO10 Map 32"
 {
 	titlepatch = "CWILV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DW100003"
 	music = "$MUSIC_ULTIMA"

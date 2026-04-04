@@ -92,6 +92,7 @@ map FSW07 "It Doesn't Have A Name"
 map FSW08 "The Chapel"
 	{
 	next = "VR"
+	sucktime = 1337
 	enterpic = "FSWINT"
 	exitpic = "FSWINT"
 	intermusic = "D_MOMINT"

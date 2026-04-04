@@ -59,6 +59,7 @@ map EPC105 "The Citadel"
 {
 	titlepatch = "EPC1V04"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "EPC10559"
 	music = "D_EPC105"

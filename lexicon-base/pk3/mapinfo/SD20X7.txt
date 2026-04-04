@@ -78,6 +78,7 @@ map SDX709 "Do You Believe?"
 {
 	TitlePatch = "SDX7V08"
 	next = "VR"
+	sucktime = 1337
 	Secretnext = "VR"
 	Music = "D_SDX709"
 }
@@ -94,6 +95,7 @@ map SDX732 "Issai Perfect"
 {
 	TitlePatch = "SDX7V31"
 	next = "VR"
+	sucktime = 1337
 	Secretnext = "VR"
 	Music = "D_SDX732"
 }

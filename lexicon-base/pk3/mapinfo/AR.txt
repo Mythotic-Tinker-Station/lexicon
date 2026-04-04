@@ -359,6 +359,7 @@ map ANRP30 "anomaly"
 {
 	titlepatch = "ANRPV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "ANRP0054"
 	music = "D_ANRP30"

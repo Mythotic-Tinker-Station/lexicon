@@ -318,6 +318,7 @@ map DIBL29 "Drown in Blood Map 29"
 map DIBL30 "Drown in Blood Map 30"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DIBL0093"
 	music = "$MUSIC_OPENIN"
@@ -331,6 +332,7 @@ map DIBL30 "Drown in Blood Map 30"
 map DIBL33 "Fortress"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DIBL0093"
 	music = "D_DIBL33"

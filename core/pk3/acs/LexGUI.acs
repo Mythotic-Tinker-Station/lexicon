@@ -256,6 +256,16 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
+		displayLexiconCredits("Mapset Selector Sounds:", 100, 220.0);
+		displayLexiconCredits("Idea Factory", 101, 240.0);
+		displayLexiconCredits("(From Megadimension Neptunia VII, ripped by Jdramirez)", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
 		displayLexiconCredits("VR Hub Design:", 100, 210.0);
 		displayLexiconCredits("Tribeam", 101, 230.0);
 		displayLexiconCredits("Fiendzy", 102, 250.0);

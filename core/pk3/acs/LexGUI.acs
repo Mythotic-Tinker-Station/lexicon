@@ -387,13 +387,14 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("Mixed Contributions:", 100, 180.0);
-		displayLexiconCredits("Clint", 101, 200.0);
-		displayLexiconCredits("Hell_Pike", 102, 220.0);
-		displayLexiconCredits("Michaelis", 103, 240.0);
-		displayLexiconCredits("Penguin", 104, 260.0);
-		displayLexiconCredits("Popsoap", 105, 280.0);
-		displayLexiconCredits("Shaewn", 106, 300.0);
+		displayLexiconCredits("Mixed Contributions:", 100, 170.0);
+		displayLexiconCredits("Clint", 101, 190.0);
+		displayLexiconCredits("Hell_Pike", 102, 210.0);
+		displayLexiconCredits("Michaelis", 103, 230.0);
+		displayLexiconCredits("Penguin", 104, 250.0);
+		displayLexiconCredits("Popsoap", 105, 270.0);
+		displayLexiconCredits("SeventhSentinel", 106, 290.0);
+		displayLexiconCredits("Shaewn", 107, 310.0);
 		creditTimer--;
 		Delay(1);
 	}

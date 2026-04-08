@@ -1,0 +1,99 @@
+// Galope Madness Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map GLMDE1M1 "Research Labs"
+{
+	titlepatch = "GLMDV00"
+	next = "GLMDE1M2"
+	secretnext = "GLMDE1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M2 "Reciclyng Sector"
+{
+	titlepatch = "GLMDV01"
+	next = "GLMDE1M3"
+	secretnext = "GLMDE1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M3 "Underground Way"
+{
+	titlepatch = "GLMDV02"
+	next = "GLMDE1M4"
+	secretnext = "GLMDE1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M4 "Cave Entrance"
+{
+	titlepatch = "GLMDV03"
+	next = "GLMDE1M5"
+	secretnext = "GLMDE1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M5 "Elite Hideout"
+{
+	titlepatch = "GLMDV04"
+	next = "GLMDE1M6"
+	secretnext = "GLMDE1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M6 "Hell Inside"
+{
+	titlepatch = "GLMDV05"
+	next = "GLMDE1M7"
+	secretnext = "GLMDE1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M7 "Blood Grounds"
+{
+	titlepatch = "GLMDV06"
+	next = "GLMDE1M8"
+	secretnext = "GLMDE1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+}
+
+map GLMDE1M8 "Punishment Arena"
+{
+	titlepatch = "GLMDV07"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	ExitPic = "GLMDINT"
+	EnterPic = "GLMDINT"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}

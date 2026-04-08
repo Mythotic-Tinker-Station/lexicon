@@ -251,7 +251,7 @@ Actor LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 A 0 A_ScaleVelocity(0.98)
-			LX98 A 0 A_SpawnItemEx("LexiconFireworkParticle_Red", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 A 0 A_SpawnItemEx("LexiconFireworkParticle_Red", 0, 0, 0, 0, 0, 0, 0)
 			LX98 A 1 A_FadeOut(0.01)
 			Loop
 
@@ -271,7 +271,7 @@ Actor LexiconFireworkExplode_Orange : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 B 0 A_ScaleVelocity(0.98)
-			LX98 B 0 A_SpawnItemEx("LexiconFireworkParticle_Orange", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 B 0 A_SpawnItemEx("LexiconFireworkParticle_Orange", 0, 0, 0, 0, 0, 0, 0)
 			LX98 B 1 A_FadeOut(0.01)
 			Loop
 	}
@@ -287,7 +287,7 @@ Actor LexiconFireworkExplode_Yellow : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 C 0 A_ScaleVelocity(0.98)
-			LX98 C 0 A_SpawnItemEx("LexiconFireworkParticle_Yellow", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 C 0 A_SpawnItemEx("LexiconFireworkParticle_Yellow", 0, 0, 0, 0, 0, 0, 0)
 			LX98 C 1 A_FadeOut(0.01)
 			Loop
 	}
@@ -303,7 +303,7 @@ Actor LexiconFireworkExplode_Green : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 D 0 A_ScaleVelocity(0.98)
-			LX98 D 0 A_SpawnItemEx("LexiconFireworkParticle_Green", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 D 0 A_SpawnItemEx("LexiconFireworkParticle_Green", 0, 0, 0, 0, 0, 0, 0)
 			LX98 D 1 A_FadeOut(0.01)
 			Loop
 	}
@@ -319,7 +319,7 @@ Actor LexiconFireworkExplode_Cyan : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 E 0 A_ScaleVelocity(0.98)
-			LX98 E 0 A_SpawnItemEx("LexiconFireworkParticle_Cyan", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 E 0 A_SpawnItemEx("LexiconFireworkParticle_Cyan", 0, 0, 0, 0, 0, 0, 0)
 			LX98 E 1 A_FadeOut(0.01)
 			Loop
 	}
@@ -335,7 +335,7 @@ Actor LexiconFireworkExplode_Blue : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 F 0 A_ScaleVelocity(0.98)
-			LX98 F 0 A_SpawnItemEx("LexiconFireworkParticle_Blue", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 F 0 A_SpawnItemEx("LexiconFireworkParticle_Blue", 0, 0, 0, 0, 0, 0, 0)
 			LX98 F 1 A_FadeOut(0.01)
 			Loop
 	}
@@ -351,7 +351,7 @@ Actor LexiconFireworkExplode_Purple : LexiconFireworkExplode_Red
 
 		Spawn2:
 			LX98 G 0 A_ScaleVelocity(0.98)
-			LX98 G 0 A_SpawnItemEx("LexiconFireworkParticle_Purple", 0, 0, 0, 0, 0, 0, 0, SXF_TRANSFERALPHA)
+			LX98 G 0 A_SpawnItemEx("LexiconFireworkParticle_Purple", 0, 0, 0, 0, 0, 0, 0)
 			LX98 G 1 A_FadeOut(0.02)
 			Loop
 	}

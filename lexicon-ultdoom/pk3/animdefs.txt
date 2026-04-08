@@ -184,3 +184,11 @@ switch HLBN0002 on pic HLBN0007 tics 0
 switch HLBN0003 on pic HLBN0008 tics 0
 switch HLBN0005 on pic HLBN0010 tics 0
 switch HLBN0006 on pic HLBN0011 tics 0
+
+// Absolute Extinction
+texture ABSX0019 range ABSX0022 tics 8
+texture ABSX0028 range ABSX0031 tics 8
+switch ABSX0010 on pic ABSX0015 tics 0
+switch ABSX0011 on pic ABSX0016 tics 0
+switch ABSX0012 on pic ABSX0017 tics 0
+switch ABSX0013 on pic ABSX0018 tics 0

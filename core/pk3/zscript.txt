@@ -35,7 +35,6 @@ Class Skybox_3D_Controller : SkyViewpoint
     Default
     {
         RenderStyle "None";
-        +CLIENTSIDE;
         +NOINTERACTION;
         +INVISIBLE;
     }

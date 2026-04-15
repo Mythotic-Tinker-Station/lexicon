@@ -72,11 +72,20 @@ Class Skybox_3D_Controller : SkyViewpoint
                 break;
             }
         }
+        TextureID gzdoom_detector = TexMan.CheckForTexture("skymist1");
+        if(!gzdoom_detector.isValid()) 
+        { 
+            Console.Printf("You're Running GZdoom");
+            return; 
+        }
+        Console.Printf("You're Running UZdoom");
     }
 
     override void Tick()
     {
-        if(!SMF_PRECISE) { return; }
+        TextureID gzdoom_detector = TexMan.CheckForTexture("skymist1");
+        if(!gzdoom_detector.isValid()) { return; }
+
         if(!sky_box) { return; }
         if(!players[consoleplayer].mo) { return; }
         player_spot = players[consoleplayer].mo.pos;

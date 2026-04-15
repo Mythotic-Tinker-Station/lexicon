@@ -75,10 +75,8 @@ Class Skybox_3D_Controller : SkyViewpoint
         TextureID gzdoom_detector = TexMan.CheckForTexture("skymist1");
         if(!gzdoom_detector.isValid()) 
         { 
-            Console.Printf("You're Running GZdoom");
             return; 
         }
-        Console.Printf("You're Running UZdoom");
     }
 
     override void Tick()

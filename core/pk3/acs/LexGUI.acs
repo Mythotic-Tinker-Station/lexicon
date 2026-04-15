@@ -257,8 +257,8 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 	while(creditTimer > 0 && !inGUI)
 	{
 		displayLexiconCredits("Mapset Selector Sounds:", 100, 220.0);
-		displayLexiconCredits("Idea Factory", 101, 240.0);
-		displayLexiconCredits("(From Megadimension Neptunia VII, ripped by Jdramirez)", 102, 260.0);
+		displayLexiconCredits("Idea Factory and Compile Heart", 101, 240.0);
+		displayLexiconCredits("(From Hyperdimension Neptunia mk2, ripped by Shiruba)", 102, 260.0);
 		creditTimer--;
 		Delay(1);
 	}

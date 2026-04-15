@@ -367,7 +367,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 				
 			if(leftClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select", 127);
+				LocalAmbientSound("Lexicon/Next", 127);
 				selectedMapType = findNextMapType(selectedMapType, 0);
 				queryMapSets();
 				pageOffset = 0;
@@ -376,7 +376,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 			
 			if(rightClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select", 127);
+				LocalAmbientSound("Lexicon/Next", 127);
 				selectedMapType = findNextMapType(selectedMapType, 1);
 				queryMapSets();
 				pageOffset = 0;
@@ -401,7 +401,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 				
 			if(leftClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select", 127);
+				LocalAmbientSound("Lexicon/Next", 127);
 				selectedGameMode = findNextGameType(selectedGameMode, 0);
 				selectedMapType = findNextMapType(-1, 0);
 				queryMapSets();
@@ -411,7 +411,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 			
 			if(rightClick && uiDelay <= 0)
 			{
-				LocalAmbientSound("Lexicon/Select", 127);
+				LocalAmbientSound("Lexicon/Next", 127);
 				selectedGameMode = findNextGameType(selectedGameMode, 1);
 				selectedMapType = findNextMapType(-1, 0);
 				queryMapSets();
@@ -458,7 +458,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					{
 						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPagePrev)
 						{
-							LocalAmbientSound("Lexicon/Select", 127);
+							LocalAmbientSound("Lexicon/Next", 127);
 							pageOffset -= GRIDROWS;
 							scrollDelay = 8;
 						}
@@ -488,7 +488,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					{
 						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPageNext)
 						{
-							LocalAmbientSound("Lexicon/Select", 127);
+							LocalAmbientSound("Lexicon/Next", 127);
 							pageOffset += GRIDROWS;
 							scrollDelay = 8;
 						}
@@ -521,7 +521,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					{
 						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPagePrev)
 						{
-							LocalAmbientSound("Lexicon/Select", 127);
+							LocalAmbientSound("Lexicon/Scroll", 127);
 							pageOffset--;
 							scrollDelay = 8;
 						}
@@ -552,7 +552,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					{
 						if(((leftClick && uiDelay <= 0) || (leftClickHold && scrollDelay <= 0)) && canPageNext)
 						{
-							LocalAmbientSound("Lexicon/Select", 127);
+							LocalAmbientSound("Lexicon/Scroll", 127);
 							pageOffset++;
 							scrollDelay = 8;
 						}
@@ -587,7 +587,7 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 					if(leftClickHold)
 					{
 						if(leftClick)
-							LocalAmbientSound("Lexicon/Select", 127);
+							LocalAmbientSound("Lexicon/Scroll", 127);
 						
 						int scrollAmount = max(1, abs(cursorY - ftoi(scaleDimensions(posY, UISCALE))) / (ftoi(scaleDimensions(ls, UISCALE)) + 1) / 2);
 						if(cursorY < ftoi(scaleDimensions(posY - ls / 2 - 2, UISCALE)) && canPagePrev)

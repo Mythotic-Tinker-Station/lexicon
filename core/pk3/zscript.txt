@@ -76,6 +76,7 @@ Class Skybox_3D_Controller : SkyViewpoint
 
     override void Tick()
     {
+        if(!SMF_PRECISE) { return; }
         if(!sky_box) { return; }
         if(!players[consoleplayer].mo) { return; }
         player_spot = players[consoleplayer].mo.pos;

@@ -36,6 +36,7 @@ Class Skybox_3D_Controller : SkyViewpoint
         RenderStyle "None";
         +NOINTERACTION;
         +INVISIBLE;
+		+CLIENTSIDEONLY;
     }
 
     override void PostBeginPlay()

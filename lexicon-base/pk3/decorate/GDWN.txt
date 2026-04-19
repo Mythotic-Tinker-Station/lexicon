@@ -70,7 +70,7 @@ Actor Lexicon_GDWN_CommanderKeen : CommanderKeen
 		LX25 W 6 A_NoBlocking
 		LX25 X 6
 		LX25 Y 6 A_KeenDie
-		LX25 Z -1
+		LX25 Y -1
 		Stop
 	Pain:
 		LX25 Z 4

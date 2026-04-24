@@ -248,12 +248,6 @@ function void getLexiconIwad(void)
 
 function bool isVR (void) { return stricmp(strparam(n:PRINTNAME_LEVEL),"VR") == 0; }
 
-script "LexiconKillTarget" (void)
-{
-	SetActivator(0,AAPTR_TARGET);
-	Thing_Damage(0,50000);
-}
-
 // sort an array of integers
 /*
 function void bubble_sort(int[]& a)

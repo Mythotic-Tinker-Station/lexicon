@@ -142,16 +142,18 @@ Script "Lexicon_InGame" (int arg1)
 	int mapsetWeapon1 = getDynLangEntry(mapsetAcronym, "WEAPON", "1");
 	int mapsetWeapon2 = getDynLangEntry(mapsetAcronym, "WEAPON", "2");
 	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
+	int mapsetPistolStart = getDynLangEntry(mapsetAcronym, "MAPFLAG", "PISTOLSTART");
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 	
-	if (!CheckInventory("LexiconInventoryGiven"))
+	if ((!CheckInventory("LexiconInventoryGiven")) || (mapsetPistolStart == "Y" && arg1 == 0))
 	{
 		if(GetCVar("lexicon_iwad") == 0)
 		{
 			if(!GetCVar("lexicon_vanilla_mode") && !isGameModded())
 			{
 				ClearInventory();
+				SetActorProperty(0, APROP_HEALTH, 100);
 				if (mapsetWeapon1 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon1, 1); }
 				else { GiveInventory("Fist", 1); }
 				

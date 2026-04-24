@@ -83,7 +83,7 @@ function bool isGameModded (void)
 	return false;
 }
 
-// Needed for actors that need to check for compatibility
+// Needed for actors that check for compatibility
 script "LexiconIsGameModded" (void)
 {
 	int result = 0;

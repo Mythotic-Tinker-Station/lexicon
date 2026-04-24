@@ -277,6 +277,16 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
+		displayLexiconCredits("VR Hub Fireworks Sounds:", 100, 220.0);
+		displayLexiconCredits("Bizarre Creations", 101, 240.0);
+		displayLexiconCredits("(From Boom Boom Rocket, ripped by teh_supar_hackr)", 102, 260.0);
+		creditTimer--;
+		Delay(1);
+	}
+	RemoveMessages(100, 114); creditTimer = 175;
+
+	while(creditTimer > 0 && !inGUI)
+	{
 		displayLexiconCredits("Beta Testers:", 100, 100.0);
 		displayLexiconCredits("cubebert", 101, 120.0);
 		displayLexiconCredits("Popsoap", 102, 140.0);

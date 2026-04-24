@@ -17,7 +17,7 @@ Actor LexiconHeckCube : SwitchableDecoration 230
 		Active:
 			TNT1 A 0 A_ChangeFlag("USESPECIAL", false)
 			TNT1 A 0 ACS_NamedExecuteAlways("Lexicon_Credits")
-			LX99 "]" 4025
+			LX99 "]" 4200
 			TNT1 A 0 A_ChangeFlag("USESPECIAL", true)
 			Goto Spawn
 	}
@@ -134,16 +134,21 @@ Actor LexiconFirework_Spawner
 	Scale 0.5
 	+NOINTERACTION
 	+CLIENTSIDEONLY
+	var int user_firework_amount;
 	States
 	{
 		Spawn:
+			TNT1 A 0 NoDelay A_SetUserVar("user_firework_amount", 20)
+		SpawnContinue:
 			TNT1 A 1 A_Jump(4, "Spawn2")
 			Loop
 
 		Spawn2:
+			TNT1 A 0 A_SetUserVar("user_firework_amount", user_firework_amount - 1)
 			TNT1 A 0 A_SetAngle(frandom(0, 360))
 			TNT1 A 0 A_SpawnItemEx("LexiconFirework", sin(angle) * 1248, cos(angle) * 1248, 0, 0, 0, 0, 0)
-			Goto Spawn
+			TNT1 A 0 A_JumpIf(user_firework_amount <= 0, "Death")
+			Goto SpawnContinue
 
 		Death:
 			TNT1 A 0
@@ -161,6 +166,7 @@ Actor LexiconFirework
 	{
 		Spawn:
 			LX98 A 0
+			LX98 A 0 A_PlaySound("Lexicon/FireworksLaunch", 0, 1.0, 0, ATTN_NONE)
 			LX98 A 0 A_ChangeVelocity(random(-1, 1), random(-1, 1), 10, CVF_REPLACE)
 			LX98 A 0 A_Jump(256, "Red", "Orange", "Yellow", "Green", "Cyan", "Blue", "Purple")
 			Loop
@@ -208,30 +214,37 @@ Actor LexiconFirework
 			Loop
 
 		Death_Red:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 AAAAAAA 0 A_SpawnItemEx("LexiconFireworkExplode_Red", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Orange:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 BBBBBBB 0 A_SpawnItemEx("LexiconFireworkExplode_Orange", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Yellow:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 CCCCCCC 0 A_SpawnItemEx("LexiconFireworkExplode_Yellow", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Green:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 DDDDDDD 0 A_SpawnItemEx("LexiconFireworkExplode_Green", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Cyan:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 EEEEEEE 0 A_SpawnItemEx("LexiconFireworkExplode_Cyan", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Blue:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 FFFFFFF 0 A_SpawnItemEx("LexiconFireworkExplode_Blue", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 
 		Death_Purple:
+			LX98 A 0 A_PlaySound("Lexicon/FireworksExplosion", 0, 1.0, 0, ATTN_NONE)
 			LX98 GGGGGGG 0 A_SpawnItemEx("LexiconFireworkExplode_Purple", 0, 0, 0, 0, 0, 0, 0)
 			Stop
 	}

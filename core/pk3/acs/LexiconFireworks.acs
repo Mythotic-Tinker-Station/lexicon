@@ -10,9 +10,9 @@ Script "LexiconFireworks" Open
     else
     {
         // a mapset has been completed
-        //if(GetCVar("Lexicon_Mapset_Completed") == 1337)
-        //{
+        if(GetCVar("Lexicon_Mapset_Completed") == 1337)
+        {
             SpawnSpot("LexiconFirework_Spawner", 300);
-        //}
+        }
     }
 }

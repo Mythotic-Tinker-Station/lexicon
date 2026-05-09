@@ -42,6 +42,9 @@ Script "Lexicon_Core_Enter" ENTER
 
 Script "Lexicon_Core_Open" OPEN
 {
+	if(GetCvar("lexicon_internalgamemode") == -1)
+		SetCvar("lexicon_internalgamemode",returnGameTypeInteger());
+
 	WAITTIMER = GetCvar("Lexicon_WaitTimer")*35;
 	//Determine if the current game type must change
 	ACS_NamedExecuteWithResult("Lexicon_GameTypeChanger");

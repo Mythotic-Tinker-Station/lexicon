@@ -167,6 +167,11 @@ function int findNextGameType(int current, int prev)
 	int validGameMode = 0;
 	str gameMode = "";
 	int i = 0;
+	
+	//Enforce the game mode is set with this CVAR
+	if(!isZDoom() && GetCvar("lexicon_enforcegamemode"))
+		return GetCvar("lexicon_internalgamemode");
+	
 	if(!prev)
 	{
 		for(i = current+1; i < current+MAXGAMEMODES+1; i++)
@@ -227,6 +232,11 @@ function int cycleNextGameMode(int i)
 	int isCoop = i == 0 || i == 1;
 	int isDeathMatch = i == 3 || i == 4 || i == 5 || i == 6 || i == 7 || i == 8 || i == 11;
 	int isCTF = i == 12;
+	
+	//Enforce the game mode is set with this CVAR
+	if(!isZDoom() && GetCvar("lexicon_enforcegamemode"))
+		return GetCvar("lexicon_internalgamemode");
+		
 	for(int j = 0; j < MAXEXPANSIONS; j++)
 	{
 		gameMode = strParam(l:strParam(s:"LEX_",s:existingMapSetTypes[j],s:"_GAMETYPE"));
@@ -255,4 +265,14 @@ function int cycleNextMapType(int i)
 		result = i;
 		
 	return result;
+}
+
+//Why the hell does GetCurrentGameMode return a string?
+function int returnGameTypeInteger(void)
+{
+	for(int i = 0; i < MAXGAMEMODES; i++)
+		if(stricmp(GetCurrentGameMode(),gameModeTypes[i][0]) == 0)
+			return i;
+			
+	return 0;
 }

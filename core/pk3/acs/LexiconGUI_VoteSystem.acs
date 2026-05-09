@@ -299,7 +299,9 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 	int gridSize = GRIDCOLS * GRIDROWS; //Overall size of the grid
 	int maxPageSize = GRIDCOLS; //Store max page size for the loop and what not
 	
-	//Select the first selectable map type and query
+	//Select the first selectable map type and query. I can have it constantly check, but if you're in the menu
+	//it could be messy to try and force people into one game type if they already opened the menu.
+	int enforceGameType = !isZDoom() && GetCvar("lexicon_enforcegamemode");
 	selectedGameMode = findNextGameType(-1, 0);
 	selectedMapType = findNextMapType(-1, 0);
 	queryMapSets();
@@ -390,10 +392,10 @@ Script "Lexicon_VoteInterface" (int playerNum) clientside
 		posY = (gamemodebox[1][0] + gamemodebox[1][1]) / 2;
 		bool hoverGameMode =  !uiElementHold && !uiElementHover && checkConfines2(cursorX, cursorY, gamemodebox[0][0] + BOXPADDING, gamemodebox[0][1] - BOXPADDING, gamemodebox[1][0] + BOXPADDING / 2, gamemodebox[1][1] - BOXPADDING / 2, UISCALE, UISCALE) || uiElementHover == UI_GAMEMODE;
 		SetFont("LXBIGFONT");
-		HudMessage(s:"Game Mode: ", s:(hoverGameMode ? "\c[LexiconGold]" : "\c[LexiconWhite]"), s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_GAMEMODE, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)) + 0.1, intFloat(scaleDimensions(posY, UISCALE)), 0.0);
+		HudMessage(s:"Game Mode: ", s:(enforceGameType ? "\c[LexiconGray]" : hoverGameMode ? "\c[LexiconGold]" : "\c[LexiconWhite]"), s:typeName; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, UI_GAMEMODE, "LexiconRed", intFloat(scaleDimensions(posX, UISCALE)) + 0.1, intFloat(scaleDimensions(posY, UISCALE)), 0.0);
 		
 		//Mouse hover and click event
-		if(hoverGameMode)
+		if(hoverGameMode && !enforceGameType)
 		{
 			uiElementHover = UI_GAMEMODE;
 			if(uiElementHover != uiElementHoverLast) 

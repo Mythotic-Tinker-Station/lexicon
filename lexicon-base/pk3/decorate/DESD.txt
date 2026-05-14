@@ -1,0 +1,44 @@
+Actor Lexicon_DESD_RedSkull : CustomInventory
+{
+	Inventory.PickupMessage "$DESD_MSG_REDSKULL"
+	States
+	{
+	Spawn:
+		LX70 H 10
+		LX70 I 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 3)
+		Stop
+	}
+}
+
+Actor Lexicon_DESD_YellowSkull : CustomInventory
+{
+	Inventory.PickupMessage "$DESD_MSG_YELWSKUL"
+	States
+	{
+	Spawn:
+		LX70 J 10
+		LX70 K 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 4)
+		Stop
+	}
+}
+
+Actor Lexicon_DESD_BlueSkull : CustomInventory
+{
+	Inventory.PickupMessage "$DESD_MSG_BLUESKUL"
+	States
+	{
+	Spawn:
+		LX70 L 10
+		LX70 M 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 5)
+		Stop
+	}
+}

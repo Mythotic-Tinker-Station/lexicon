@@ -98,6 +98,8 @@ LEX_BASE_93 = "SWRY";
 LEX_BASE_94 = "BDSP";
 LEX_BASE_95 = "AKDL";
 LEX_BASE_96 = "D2TK";
+LEX_BASE_97 = "AOAH";
+LEX_BASE_98 = "DESD";
 
 // Custom actors and metadata for Lexicon Base mapsets
 // 1994 Tune-up Community Project
@@ -1650,3 +1652,25 @@ D2TK_MAPSET_DATE = "2021";
 D2TK_MAPSET_MAPS = "32";
 D2TK_MAPSET_TITLE = "The Long Trek Back Home";
 D2TK_MAPSET_PACK = "BASE";
+
+// Ashes of Annihilation
+AOAH_MAPSET_AUTHORS = "player_skat01";
+AOAH_MAPSET_CUSTOM = "N";
+AOAH_MAPSET_DATE = "2026";
+AOAH_MAPSET_MAPS = "20";
+AOAH_MAPSET_TITLE = "Ashes of Annihilation";
+AOAH_MAPSET_PACK = "BASE";
+
+// Destiny Doom
+DESD_ACTOR_1 = "Lexicon_DESD_RedSkull";
+DESD_ACTOR_2 = "Lexicon_DESD_YellowSkull";
+DESD_ACTOR_3 = "Lexicon_DESD_BlueSkull";
+DESD_MSG_REDSKULL = "Picked up a purple keycard.";
+DESD_MSG_YELWSKUL = "Picked up an orange keycard.";
+DESD_MSG_BLUESKUL = "Picked up a green keycard.";
+DESD_MAPSET_AUTHORS = "FLunky";
+DESD_MAPSET_CUSTOM = "Y";
+DESD_MAPSET_DATE = "2026";
+DESD_MAPSET_MAPS = "32";
+DESD_MAPSET_TITLE = "Destiny Doom";
+DESD_MAPSET_PACK = "BASE";

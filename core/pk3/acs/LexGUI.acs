@@ -184,6 +184,9 @@ Script "Lexicon_InGame" (int arg1)
 // Done with some assistance from Shiny Metagross
 Script "Lexicon_Credits" (void) CLIENTSIDE
 {
+	// I can't figure out how to make the credits display only for the activating player, so do this for now
+	if (GameType() != GAME_SINGLE_PLAYER ) { SetActorState(0, "Nope"); terminate; }
+
 	SetActivator(0, AAPTR_TARGET);
 	int inGUI = CheckInventory("LexiconTerminalOpen");
 	int creditTimer = 175;

@@ -183,7 +183,7 @@ function int findNextGameType(int current, int prev)
 	}
 	else
 	{
-		for(i = current+MAXGAMEMODES-1; i > current; i--)
+		for(i = current+MAXGAMEMODES-1; i >= current; i--)
 		{
 			result = cycleNextGameMode(i%MAXGAMEMODES);
 			if(result > -1)

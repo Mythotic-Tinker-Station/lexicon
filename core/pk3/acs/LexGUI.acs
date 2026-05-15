@@ -106,6 +106,8 @@ Script "Lexicon_GameTypeChanger" (void)
 	}
 }
 
+/*
+// commented out but kept in the event we need this
 script "Lexicon_Doom1EpisodeHealthReset" ENTER
 {
 	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
@@ -121,6 +123,7 @@ script "Lexicon_Doom1EpisodeHealthReset" ENTER
 		}
 	}
 }
+*/
 
 script "Lexicon_Doom1TextureReplacement" OPEN
 {

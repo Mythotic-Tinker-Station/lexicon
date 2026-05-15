@@ -1,11 +1,12 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 69
+#define COMPATNUMBER 73
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
 						"ADECVKR4", // Alice: Toys of Madness
 						"ARBARX2", // Aracnocide
 						"M4THNA", // Ashes Series
+						"JHELP03", // Broadsword Jim
 						"RBLD1", // Brutal Doom
 						"COKELEVL", // Cola 3: The Soda of Style
 						"EYETARG3", // Colourful Hell
@@ -15,11 +16,12 @@ str compatArray[COMPATNUMBER] = {
 						"D4DFRONT", // Death Foretold
 						"NIVENPRT", // Deathstrider
 						"HUDSTMEL", // DemonSteele
+						"HRLYPIC", // Disaster Jester
 						"HB2SB0H", // Doom4Doom
 						"SKY-0151", // Doom 64: Unseen Evil
 						"STHE40MM", // Doomzone
+						"BALLCGUN", // Doom Comic '96
 						"PLAYDOUM", // Doom Delta
-						"Slot8bal", // Doom Tournament
 						"PPDADMO1", // DoomRL Arsenal
 						"BBS_M1", // DoomRPG
 						"DN13D033", // Duke Nukem 3D Weapons & Aliens
@@ -39,9 +41,11 @@ str compatArray[COMPATNUMBER] = {
 						"HWMSLOT", // Lambda
 						"NARISELE", // La Tailor Girl
 						"LDM_BACK", // LegenDoom
+						"LITHFDPS", // Lithium
 						"CIGAR13", // Lt. Typhon
 						"invsiph", // MetaDoom
 						"WPFSDMCN", // Metroid Dreadnought
+						"PEWPEWL", // ModOhFun!
 						"Z_SKULL2", // NeoCore
 						"NTEINT27", // Netronian Chaos
 						"NTMLOGO2", // Nobody Told Me About id

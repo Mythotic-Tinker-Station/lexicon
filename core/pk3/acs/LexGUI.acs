@@ -85,11 +85,18 @@ Script "Lexicon_GameTypeChanger" (void)
 {
 	int currentGameMode = GetCvar("Lexicon_GameType");
 	int isCoop = currentGameMode == 0 || currentGameMode == 1;
+	int isCTF = currentGameMode == 12 || currentGameMode == 13;
+	int isDuel = currentGameMode == 5;
+	int isLMS = currentGameMode == 7 || currentGameMode == 8;
 	if(isVR())
 	{
 		SetGameplaySetting("SV_NOEXIT",false);
 		SetGameplaySetting("SV_NOMONSTERS",false);
-		SetGameplaySetting("Fraglimit",0);	
+		SetGameplaySetting("TimeLimit",0);
+		SetGameplaySetting("Fraglimit",0);
+		SetGameplaySetting("PointLimit",0);
+		SetGameplaySetting("Duellimit",0);
+		SetGameplaySetting("Winlimit",0);
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[0][0])!=0)
 			SetCurrentGameMode(gameModeTypes[0][0]);
 	}
@@ -98,9 +105,21 @@ Script "Lexicon_GameTypeChanger" (void)
 		SetGameplaySetting("SV_NOEXIT",!isCoop);
 		SetGameplaySetting("SV_NOMONSTERS",!isCoop);
 		
+		if(!isCoop && GetCvar("TimeLimit") == 0)
+			SetGameplaySetting("TimeLimit",GetCvar("Lexicon_DefaultTimeLimit"));
+		
 		if(!isCoop && GetCvar("FragLimit") == 0)
-			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));	
-					
+			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));
+		
+		if(isCTF && GetCvar("PointLimit") == 0)
+			SetGameplaySetting("PointLimit",GetCvar("Lexicon_DefaultPointLimit"));
+		
+		if(isDuel && GetCvar("DuelLimit") == 0)
+			SetGameplaySetting("DuelLimit",GetCvar("Lexicon_DefaultDuelLimit"));
+		
+		if(isLMS && GetCvar("WinLimit") == 0)
+			SetGameplaySetting("WinLimit",GetCvar("Lexicon_DefaultWinLimit"));
+		
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
 			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
 	}

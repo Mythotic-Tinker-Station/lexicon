@@ -10,7 +10,11 @@ server noarchive int Lexicon_Mapset_Completed = 0;
 server int Lexicon_WaitTimer = 180; //Timer for waiting for all players to vote, in seconds
 
 //Default settings for some game modes - useful for people that didn't really plan ahead to make a coop session a deathmatch one and vice versa
+server int Lexicon_DefaultTimeLimit = 0;
 server int Lexicon_DefaultFragLimit = 30;
+server int Lexicon_DefaultPointLimit = 5;
+server int Lexicon_DefaultDuelLimit = 3;
+server int Lexicon_DefaultWinLimit = 3;
 
 /*
 // Unused for now

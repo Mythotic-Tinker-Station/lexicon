@@ -118,7 +118,7 @@ jobs:
           FOLDER_FLAG["lexicon-ctf"]="--ctf"
 
           declare -A FOLDER_PK3
-          FOLDER_PK3["core"]="lexicon"
+          FOLDER_PK3["core"]="lexicon-core"
           FOLDER_PK3["lexicon-base"]="lexicon-base"
           FOLDER_PK3["lexicon-slaughter"]="lexicon-slaughter"
           FOLDER_PK3["lexicon-ultdoom"]="lexicon-ultdoom"

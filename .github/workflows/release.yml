@@ -79,167 +79,36 @@ jobs:
           fi
 
       # -------------------------------------------------------
-      # 3. Find the previous tag to diff against
+      # 3. Prepare build list (always build all folders)
       # -------------------------------------------------------
-      - name: Get previous tag
-        id: prev_tag
-        run: |
-          CURRENT_TAG="${{ github.ref_name }}"
-          CURRENT_BRANCH="${{ steps.release_type.outputs.branch }}"
- 
-          echo "Current tag:    $CURRENT_TAG"
-          echo "Current branch: $CURRENT_BRANCH"
- 
-          # Helper: is this tag a beta tag? (dev tags contain 'beta')
-          is_beta() {
-            case "$1" in
-              *beta*|*BETA*|*Beta*) return 0 ;;
-              *) return 1 ;;
-            esac
-          }
- 
-          # Helper (fallback): resolve which branch a tag was made from,
-          # using the SAME method step 2 uses to detect the current branch.
-          tag_branch() {
-            git branch -r --contains "refs/tags/$1" 2>/dev/null \
-              | grep -v HEAD \
-              | sed 's|origin/||' \
-              | tr -d ' ' \
-              | grep -E '^(master|dev)$' \
-              | head -n1
-          }
- 
-          # Decide what "same line" means for the current tag.
-          # PRIMARY check: naming convention.
-          #   dev  -> beta tags     (contain 'beta')
-          #   master -> release tags (do NOT contain 'beta')
-          if [ "$CURRENT_BRANCH" = "dev" ]; then
-            WANT_BETA=true
-          else
-            WANT_BETA=false
-          fi
- 
-          PREV_TAG=""
-          for TAG in $(git tag --sort=-creatordate); do
-            [ "$TAG" = "$CURRENT_TAG" ] && continue
- 
-            # PRIMARY: match on naming convention
-            if is_beta "$TAG"; then TAG_IS_BETA=true; else TAG_IS_BETA=false; fi
- 
-            if [ "$TAG_IS_BETA" = "$WANT_BETA" ]; then
-              echo "  ✓ $TAG (name match)"
-              PREV_TAG="$TAG"
-              break
-            else
-              echo "  ✗ $TAG (name mismatch)"
-            fi
-          done
- 
-          # FALLBACK: if naming convention found nothing, fall back to
-          # branch containment so the pipeline still works for tags that
-          # don't follow the convention.
-          if [ -z "$PREV_TAG" ]; then
-            echo "No name-based match found — falling back to branch detection."
-            for TAG in $(git tag --sort=-creatordate); do
-              [ "$TAG" = "$CURRENT_TAG" ] && continue
- 
-              THIS_BRANCH=$(tag_branch "$TAG")
-              echo "  - $TAG (branch: ${THIS_BRANCH:-unknown})"
- 
-              if [ "$THIS_BRANCH" = "$CURRENT_BRANCH" ]; then
-                PREV_TAG="$TAG"
-                break
-              fi
-            done
-          fi
- 
-          if [ -z "$PREV_TAG" ]; then
-            echo "No previous tag found for '$CURRENT_BRANCH' — treating all folders as changed."
-            echo "prev_tag=" >> $GITHUB_OUTPUT
-          else
-            echo "Previous tag: $PREV_TAG"
-            echo "prev_tag=$PREV_TAG" >> $GITHUB_OUTPUT
-          fi
-
-      # -------------------------------------------------------
-      # 4. Detect which folders have changes since last tag
-      # -------------------------------------------------------
-      - name: Detect changed folders
+      - name: Prepare build list
         id: changes
         run: |
-          PREV_TAG="${{ steps.prev_tag.outputs.prev_tag }}"
-          CURRENT_TAG="${{ github.ref_name }}"
-
-          # Map: folder name -> compile flag -> output pk3 name
-          declare -A FOLDER_FLAG
-          FOLDER_FLAG["core"]="--core"
-          FOLDER_FLAG["lexicon-base"]="--base"
-          FOLDER_FLAG["lexicon-slaughter"]="--slaughter"
-          FOLDER_FLAG["lexicon-ultdoom"]="--ultimate"
-          FOLDER_FLAG["lexicon-dm"]="--dm"
-          FOLDER_FLAG["lexicon-ctf"]="--ctf"
-
+          # All packs are built every release. The pk3 output names below
+          # must match the variables in Compile.sh.
           declare -A FOLDER_PK3
-          FOLDER_PK3["core"]="lexicon-core"
+          FOLDER_PK3["core"]="lexicon"
           FOLDER_PK3["lexicon-base"]="lexicon-base"
           FOLDER_PK3["lexicon-slaughter"]="lexicon-slaughter"
           FOLDER_PK3["lexicon-ultdoom"]="lexicon-ultdoom"
           FOLDER_PK3["lexicon-dm"]="lexicon-dm"
           FOLDER_PK3["lexicon-ctf"]="lexicon-ctf"
-
+ 
           FOLDERS=("core" "lexicon-base" "lexicon-slaughter" "lexicon-ultdoom" "lexicon-dm" "lexicon-ctf")
-
-          CHANGED_FLAGS=""
-          CHANGED_FOLDERS=()
-          ALL_CHANGED=true
-
-          for FOLDER in "${FOLDERS[@]}"; do
-            if [ -z "$PREV_TAG" ]; then
-              # No previous tag — consider everything changed
-              HAS_CHANGES=true
-            else
-              DIFF=$(git diff --name-only "${PREV_TAG}".."${CURRENT_TAG}" -- "$FOLDER/")
-              if [ -n "$DIFF" ]; then
-                HAS_CHANGES=true
-              else
-                HAS_CHANGES=false
-                ALL_CHANGED=false
-              fi
-            fi
-
-            if [ "$HAS_CHANGES" = true ]; then
-              echo "✅ Changed: $FOLDER"
-              CHANGED_FLAGS="$CHANGED_FLAGS ${FOLDER_FLAG[$FOLDER]}"
-              CHANGED_FOLDERS+=("$FOLDER")
-            else
-              echo "⏭️  No changes: $FOLDER"
-            fi
-          done
-
-          if [ ${#CHANGED_FOLDERS[@]} -eq 0 ]; then
-            echo "::error::No folders have changed since the last tag. Aborting."
-            exit 1
-          fi
-
-          # If all 6 folders changed, use --all for efficiency
-          if [ "$ALL_CHANGED" = true ] || [ ${#CHANGED_FOLDERS[@]} -eq 6 ]; then
-            echo "All folders changed — using --all flag."
-            echo "compile_flags=--all" >> $GITHUB_OUTPUT
-          else
-            echo "compile_flags=$CHANGED_FLAGS" >> $GITHUB_OUTPUT
-          fi
-
-          # Save changed folders and their pk3 names as JSON for later steps
+ 
+          echo "Building all packs with --all"
+ 
           PK3_LIST=""
-          for FOLDER in "${CHANGED_FOLDERS[@]}"; do
+          for FOLDER in "${FOLDERS[@]}"; do
             PK3_LIST="$PK3_LIST ${FOLDER_PK3[$FOLDER]}.pk3"
           done
-
-          echo "changed_pk3s=$PK3_LIST"  >> $GITHUB_OUTPUT
-          echo "any_changes=true"        >> $GITHUB_OUTPUT
+ 
+          echo "compile_flags=--all"        >> $GITHUB_OUTPUT
+          echo "changed_pk3s=$PK3_LIST"      >> $GITHUB_OUTPUT
+          echo "any_changes=true"            >> $GITHUB_OUTPUT
 
       # -------------------------------------------------------
-      # 5. Run Compile.sh for changed folders
+      # 4. Run Compile.sh for changed folders
       # -------------------------------------------------------
       - name: Compile changed packs
         run: |
@@ -248,7 +117,7 @@ jobs:
           ./Compile.sh ${{ steps.changes.outputs.compile_flags }}
 
       # -------------------------------------------------------
-      # 6. Rename pk3 files to include version tag
+      # 5. Rename pk3 files to include version tag
       # -------------------------------------------------------
       - name: Rename pk3 files with version
         id: renamed_files
@@ -275,7 +144,7 @@ jobs:
           echo "file_list=$FILE_LIST" >> $GITHUB_OUTPUT
 
       # -------------------------------------------------------
-      # 7. Create GitHub Release
+      # 6. Create GitHub Release
       # -------------------------------------------------------
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
@@ -296,7 +165,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------------------------------
-      # 7b. Publish the draft once all assets are attached
+      # 6b. Publish the draft once all assets are attached
       # -------------------------------------------------------
       - name: Publish release
         run: gh release edit "${{ github.ref_name }}" --draft=false
@@ -304,7 +173,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # -------------------------------------------------------
-      # 8. Upload files to server via SSH/SCP
+      # 7. Upload files to server via SSH/SCP
       # -------------------------------------------------------
       - name: Upload to server via SCP
         uses: appleboy/scp-action@v0.1.7

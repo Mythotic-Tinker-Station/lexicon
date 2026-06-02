@@ -87,7 +87,7 @@ jobs:
           # All packs are built every release. The pk3 output names below
           # must match the variables in Compile.sh.
           declare -A FOLDER_PK3
-          FOLDER_PK3["core"]="lexicon"
+          FOLDER_PK3["core"]="lexicon-core"
           FOLDER_PK3["lexicon-base"]="lexicon-base"
           FOLDER_PK3["lexicon-slaughter"]="lexicon-slaughter"
           FOLDER_PK3["lexicon-ultdoom"]="lexicon-ultdoom"

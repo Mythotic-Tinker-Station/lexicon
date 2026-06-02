@@ -26,6 +26,8 @@ LEX_ULTD_21 = "MOC1";
 LEX_ULTD_22 = "ADO2";
 LEX_ULTD_23 = "NEIS";
 LEX_ULTD_24 = "HLBN";
+LEX_ULTD_25 = "GLMD";
+LEX_ULTD_26 = "ABSX";
 
 // 2002 A Doom Odyssey - 10th Anniversary Edition
 ADO1_ACTOR_1 = "Lexicon_ADO1_WolfensteinSS";
@@ -260,3 +262,21 @@ HLBN_MAPSET_MAPS = "36";
 HLBN_MAPSET_TITLE = "Hell's Bane";
 HLBN_MAPSET_PACK = "ULTD";
 HLBN_MAPSET_IWAD = "doom1";
+
+// Galope Madness
+GLMD_MAPSET_AUTHORS = "XDR";
+GLMD_MAPSET_CUSTOM = "N";
+GLMD_MAPSET_DATE = "2026";
+GLMD_MAPSET_MAPS = "8";
+GLMD_MAPSET_TITLE = "Galope Madness";
+GLMD_MAPSET_PACK = "ULTD";
+GLMD_MAPSET_IWAD = "doom1";
+
+// Absolute Extinction
+ABSX_MAPSET_AUTHORS = "player_skat01";
+ABSX_MAPSET_CUSTOM = "N";
+ABSX_MAPSET_DATE = "2026";
+ABSX_MAPSET_MAPS = "24";
+ABSX_MAPSET_TITLE = "Absolute Extinction";
+ABSX_MAPSET_PACK = "ULTD";
+ABSX_MAPSET_IWAD = "doom1";

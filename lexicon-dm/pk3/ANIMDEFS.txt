@@ -355,6 +355,14 @@ texture TWN10210 range TWN10213 tics 8
 switch TWN10189 on pic TWN10194 tics 0
 switch TWN10190 on pic TWN10195 tics 0
 
+// UDM1
+flat UDMA0064 range UDMA0067 tics 8
+texture UDMA0386 range UDMA0389 tics 8
+
+// UDM2
+texture UDMB0404 range UDMB0407 tics 8
+switch UDMB0103 on pic UDMB0109 tics 0
+
 // UDMX + UDM3
 texture UDMX0926 range UDMX0929 tics 8
 flat UDMX0240 range UDMX0242 tics 8

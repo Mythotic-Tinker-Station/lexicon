@@ -669,6 +669,7 @@ map DKDS60 "kid_duel map06"
 map DKDS61 "kid_duel map07"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DKDS0216"
 	music = "D_DKDS61"

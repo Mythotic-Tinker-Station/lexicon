@@ -926,6 +926,7 @@ map DCTL77 "Terrace View"
 {
 	titlepatch = "DCTLV76"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DCTL0772"
 	music = "D_DCTL16"

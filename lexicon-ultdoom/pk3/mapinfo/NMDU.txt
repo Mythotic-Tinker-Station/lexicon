@@ -241,6 +241,7 @@ map NMDUE3M8 "Brains!"
 {
 	titlepatch = "NMDUV25"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DSKY3"
 	music = "$MUSIC_E3M8"

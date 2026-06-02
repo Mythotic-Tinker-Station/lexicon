@@ -1,0 +1,140 @@
+// Overload Deathmatches Mapinfo
+
+defaultmap
+{
+	ExitPic = "OVLDINT"
+	EnterPic = "OVLDINT"
+	InterMusic = "D_OVLDIN"
+	Sky1 = "OVLD0043"
+	NoJump
+	NoCrouch
+}
+
+map OVLD01 "Fragtastic"
+{
+	TitlePatch = "OVLDV00"
+	Next = "OVLD02"
+	SecretNext = "OVLD02"
+	Music = "D_OVLD01"
+}
+
+map OVLD02 "Deja Vu"
+{
+	TitlePatch = "OVLDV01"
+	Next = "OVLD03"
+	SecretNext = "OVLD03"
+	Music = "D_OVLD02"
+}
+
+map OVLD03 "Close Quakecounters"
+{
+	TitlePatch = "OVLDV02"
+	Next = "OVLD04"
+	SecretNext = "OVLD04"
+	Music = "D_COUNTD"
+}
+
+map OVLD04 "Threesome"
+{
+	TitlePatch = "OVLDV03"
+	Next = "OVLD05"
+	SecretNext = "OVLD05"
+	Music = "D_BETWEE"
+}
+
+map OVLD05 "Fort Fury"
+{
+	TitlePatch = "OVLDV04"
+	Next = "OVLD06"
+	SecretNext = "OVLD06"
+	Music = "D_DOOM"
+}
+
+map OVLD06 "Satans Circus"
+{
+	TitlePatch = "OVLDV05"
+	Next = "OVLD07"
+	SecretNext = "OVLD07"
+	Music = "D_OVLD06"
+}
+
+map OVLD07 "Frag-isle"
+{
+	TitlePatch = "OVLDV06"
+	Next = "OVLD08"
+	SecretNext = "OVLD08"
+	Music = "D_SHAWN"
+}
+
+map OVLD08 "Panic is my Name"
+{
+	TitlePatch = "OVLDV07"
+	Next = "OVLD09"
+	SecretNext = "OVLD09"
+	Music = "D_OVLD08"
+}
+
+map OVLD09 "Satans Sewers"
+{
+	TitlePatch = "OVLDV08"
+	Next = "OVLD10"
+	SecretNext = "OVLD10"
+	Music = "D_IN_CIT"
+}
+
+map OVLD10 "Ruins of Valhalla"
+{
+	TitlePatch = "OVLDV09"
+	Next = "OVLD11"
+	SecretNext = "OVLD11"
+	Music = "D_DEAD"
+}
+
+map OVLD11 "Paranoia"
+{
+	TitlePatch = "OVLDV10"
+	Next = "OVLD12"
+	SecretNext = "OVLD12"
+	Music = "D_OVLD11"
+}
+
+map OVLD12 "LLAWEHTNIELOH"
+{
+	TitlePatch = "OVLDV11"
+	Next = "OVLD13"
+	SecretNext = "OVLD13"
+	Music = "D_OVLD12"
+}
+
+map OVLD13 "Screaming Fury"
+{
+	TitlePatch = "OVLDV12"
+	Next = "OVLD14"
+	SecretNext = "OVLD14"
+	Music = "D_OVLD13"
+}
+
+map OVLD14 "Frag-mentation"
+{
+	TitlePatch = "OVLDV13"
+	Next = "OVLD15"
+	SecretNext = "OVLD15"
+	Music = "D_OVLD14"
+}
+
+map OVLD15 "High Fragquency"
+{
+	TitlePatch = "OVLDV14"
+	Next = "OVLD31"
+	SecretNext = "OVLD31"
+	Music = "D_OVLD15"
+}
+
+map OVLD31 "Fragmageddon"
+{
+	TitlePatch = "OVLDV30"
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Music = "D_EVIL"
+}

@@ -598,6 +598,7 @@ map OSLP51 "Refuelling Base"
 {
 	titlepatch = "OSLPV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "OSLP0548"
 	music = "D_OSLP48"

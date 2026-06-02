@@ -86,6 +86,7 @@ map OCTF07 "Somewhat Complex"
 map OCTF08 "Legacy"
 {
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "OCTF0306"
 	music = "D_OCTF08"

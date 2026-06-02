@@ -1,3 +1,23 @@
 Lexicon/Hover 	LEXHOVER
+Lexicon/Scroll 	LEXSCROL
+Lexicon/Next 	LEXNEXT
 Lexicon/Select 	LEXSELCT
 Lexicon/Back 	LEXBACK
+
+$random Lexicon/FireworksLaunch		{ Lexicon/FireworksLaunch1 Lexicon/FireworksLaunch2 Lexicon/FireworksLaunch3 }
+Lexicon/FireworksLaunch1			LEXFWL1
+Lexicon/FireworksLaunch2			LEXFWL2
+Lexicon/FireworksLaunch3			LEXFWL3
+
+$random Lexicon/FireworksExplosion	{ Lexicon/FireworksExplosion1 Lexicon/FireworksExplosion2 Lexicon/FireworksExplosion3 Lexicon/FireworksExplosion4 }
+Lexicon/FireworksExplosion1			LEXFWE1
+Lexicon/FireworksExplosion2			LEXFWE2
+Lexicon/FireworksExplosion3			LEXFWE3
+Lexicon/FireworksExplosion4			LEXFWE4
+
+$volume Lexicon/Hover 0.5
+$volume Lexicon/Scroll 0.5
+$volume Lexicon/Next 0.5
+$volume Lexicon/Back 0.5
+$volume Lexicon/FireworksLaunch 0.5
+$volume Lexicon/FireworksExplosion 0.5

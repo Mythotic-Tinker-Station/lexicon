@@ -84,6 +84,7 @@ map E4M8 "$HUSTR_E4M8"
 {
 	LevelNum = 38
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "WILV37"
 	Par = 360
 	Music = "$MUSIC_E2M5"
@@ -103,6 +104,7 @@ map E5M8 "$HUSTR_E5M8"
 {
 	LevelNum = 48
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "WILV47"
 	Par = 300
 	NoSoundClipping
@@ -118,6 +120,7 @@ map E6M8 "$HUSTR_E6M8"
 {
 	LevelNum = 58
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "WILV57"
 	Par = 390
 	NoSoundClipping
@@ -132,6 +135,7 @@ map E6M8 "$HUSTR_E6M8"
 map MAP30 "$HUSTR_30"
 {
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "CWILV29"
 	Par = 180
 	Music = "$MUSIC_OPENIN"
@@ -144,6 +148,7 @@ map MAP30 "$HUSTR_30"
 map NV_MAP08 "$NHUSTR_8"
 {
 	Next = "VR"
+	sucktime = 1337
 	Sky1 = "SKY3"
 	TitlePatch = "NWILV07"
 	Par = 105
@@ -156,6 +161,7 @@ map NV_MAP08 "$NHUSTR_8"
 map PL_MAP30 "$PHUSTR_30"
 {
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "PWILV29"
 	Music = "P_OPENIN"
 	AllowMonsterTelefrags
@@ -169,6 +175,7 @@ map PL_MAP30 "$PHUSTR_30"
 map TN_MAP30 "$THUSTR_30"
 {
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "TWILV29"
 	Music = "T_OPENIN"
 	AllowMonsterTelefrags
@@ -210,6 +217,7 @@ map LR_MAP07 "$XHUSTR_7"
 map LR_MAP14 "$XHUSTR_15"
 {
 	Next = "VR"
+	sucktime = 1337
 	TitlePatch = "XWILV16"
 	Sky1 = "SKYX5A"
 	Music = "D_SKELET"
@@ -432,6 +440,7 @@ map ML_MAP19 "$ML_BLOODSEA"
 map ML_MAP20 "$ML_MEPHISTO"
 {
 	Next = "VR"
+	sucktime = 1337
 	Sky1 = "SKY3"
 	TitlePatch = "MWILV19"
 	Music = "$MUSIC_SHAWN"

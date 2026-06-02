@@ -352,6 +352,7 @@ map GD30 "Game Over"
 {
 music = "D_GD30"
 next = "VR"
+sucktime = 1337
 sky1 = "GDSKY1"
 nocrouch
 nojump

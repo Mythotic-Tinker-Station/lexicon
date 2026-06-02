@@ -1,0 +1,299 @@
+// BUCKET DM 2 Mapinfo
+
+defaultmap
+{
+	ExitPic = "BKT2INT"
+	EnterPic = "BKT2INT"
+	InterMusic = "D_BKT2IN"
+	NoJump
+	NoCrouch
+}
+
+map BKT201 "Rear Entryway"
+{
+	TitlePatch = "BKT2V00"
+	Next = "BKT202"
+	SecretNext = "BKT202"
+	Sky1 = "SKY1"
+	Music = "D_BKT201"
+}
+
+map BKT202 "Acid Base"
+{
+	TitlePatch = "BKT2V01"
+	Next = "BKT203"
+	SecretNext = "BKT203"
+	Sky1 = "SKY1"
+	Music = "D_BKT202"
+}
+
+map BKT203 "Templar"
+{
+	TitlePatch = "BKT2V02"
+	Next = "BKT204"
+	SecretNext = "BKT204"
+	Sky1 = "SKY1"
+	Music = "D_BKT203"
+}
+
+map BKT204 "Juglar"
+{
+	TitlePatch = "BKT2V03"
+	Next = "BKT205"
+	SecretNext = "BKT205"
+	Sky1 = "SKY1"
+	Music = "D_BKT204"
+}
+
+map BKT205 "Circle Strafe Arena"
+{
+	TitlePatch = "BKT2V04"
+	Next = "BKT206"
+	SecretNext = "BKT206"
+	Sky1 = "SKY1"
+	Music = "D_BKT205"
+}
+
+map BKT206 "Crack is Wack"
+{
+	TitlePatch = "BKT2V05"
+	Next = "BKT207"
+	SecretNext = "BKT207"
+	Sky1 = "SKY1"
+	Music = "D_BKT206"
+}
+
+map BKT207 "Dead Simpler"
+{
+	TitlePatch = "BKT2V06"
+	Next = "BKT208"
+	SecretNext = "BKT208"
+	Sky1 = "SKY1"
+	Music = "D_BKT207"
+}
+
+map BKT208 "Primate House"
+{
+	TitlePatch = "BKT2V07"
+	Next = "BKT209"
+	SecretNext = "BKT209"
+	Sky1 = "SKY1"
+	Music = "D_BKT208"
+}
+
+map BKT209 "MAP09 From Outer Space"
+{
+	TitlePatch = "BKT2V08"
+	Next = "BKT210"
+	SecretNext = "BKT210"
+	Sky1 = "SKY1"
+	Music = "D_BKT209"
+}
+
+map BKT210 "Rocket Arena"
+{
+	TitlePatch = "BKT2V09"
+	Next = "BKT211"
+	SecretNext = "BKT211"
+	Sky1 = "SKY1"
+	Music = "D_BKT210"
+}
+
+map BKT211 "Doo-Doo Processing"
+{
+	TitlePatch = "BKT2V10"
+	Next = "BKT212"
+	SecretNext = "BKT212"
+	Sky1 = "SKY1"
+	Music = "D_BKT211"
+}
+
+map BKT212 "Lugnuts of War"
+{
+	TitlePatch = "BKT2V11"
+	Next = "BKT213"
+	SecretNext = "BKT213"
+	Sky1 = "SKY2"
+	Music = "D_BKT212"
+}
+
+map BKT213 "Tower of Tor"
+{
+	TitlePatch = "BKT2V12"
+	Next = "BKT214"
+	SecretNext = "BKT214"
+	Sky1 = "SKY2"
+	Music = "D_BKT213"
+}
+
+map BKT214 "Crate Factory"
+{
+	TitlePatch = "BKT2V13"
+	Next = "BKT215"
+	SecretNext = "BKT215"
+	Sky1 = "SKY2"
+	Music = "D_BKT214"
+}
+
+map BKT215 "It Came From 1994"
+{
+	TitlePatch = "BKT2V14"
+	Next = "BKT216"
+	SecretNext = "BKT231"
+	Sky1 = "SKY2"
+	Music = "D_BKT215"
+}
+
+map BKT216 "R.I.P. Charleton Heston"
+{
+	TitlePatch = "BKT2V15"
+	Next = "BKT217"
+	SecretNext = "BKT217"
+	Sky1 = "SKY2"
+	Music = "D_BKT216"
+}
+
+map BKT217 "Shart Deco"
+{
+	TitlePatch = "BKT2V16"
+	Next = "BKT218"
+	SecretNext = "BKT218"
+	Sky1 = "SKY2"
+	Music = "D_BKT217"
+}
+
+map BKT218 "Jehosephat"
+{
+	TitlePatch = "BKT2V17"
+	Next = "BKT219"
+	SecretNext = "BKT219"
+	Sky1 = "SKY2"
+	Music = "D_BKT218"
+}
+
+map BKT219 "Torture Porn"
+{
+	TitlePatch = "BKT2V18"
+	Next = "BKT220"
+	SecretNext = "BKT220"
+	Sky1 = "SKY2"
+	Music = "D_BKT219"
+}
+
+map BKT220 "Plasma Arena"
+{
+	TitlePatch = "BKT2V19"
+	Next = "BKT221"
+	SecretNext = "BKT221"
+	Sky1 = "SKY2"
+	Music = "D_BKT220"
+}
+
+map BKT221 "Gooery"
+{
+	TitlePatch = "BKT2V20"
+	Next = "BKT222"
+	SecretNext = "BKT222"
+	Sky1 = "SKY3"
+	Music = "D_BKT221"
+}
+
+map BKT222 "So Gothic It Hurts"
+{
+	TitlePatch = "BKT2V21"
+	Next = "BKT223"
+	SecretNext = "BKT223"
+	Sky1 = "SKY3"
+	Music = "D_BKT222"
+}
+
+map BKT223 "Vulgar Pun"
+{
+	TitlePatch = "BKT2V22"
+	Next = "BKT224"
+	SecretNext = "BKT224"
+	Sky1 = "SKY3"
+	Music = "D_BKT223"
+}
+
+map BKT224 "Cliffs of Burton"
+{
+	TitlePatch = "BKT2V23"
+	Next = "BKT225"
+	SecretNext = "BKT225"
+	Sky1 = "SKY3"
+	Music = "D_BKT224"
+}
+
+map BKT225 "Volcanic Panic"
+{
+	TitlePatch = "BKT2V24"
+	Next = "BKT226"
+	SecretNext = "BKT226"
+	Sky1 = "SKY3"
+	Music = "D_BKT225"
+}
+
+map BKT226 "Sea Monkeys"
+{
+	TitlePatch = "BKT2V25"
+	Next = "BKT227"
+	SecretNext = "BKT227"
+	Sky1 = "SKY3"
+	Music = "D_BKT226"
+}
+
+map BKT227 "Amid Evil"
+{
+	TitlePatch = "BKT2V26"
+	Next = "BKT228"
+	SecretNext = "BKT228"
+	Sky1 = "SKY3"
+	Music = "D_BKT227"
+}
+
+map BKT228 "I Have No Mouth..."
+{
+	TitlePatch = "BKT2V27"
+	Next = "BKT229"
+	SecretNext = "BKT229"
+	Sky1 = "SKY3"
+	Music = "D_BKT228"
+}
+
+map BKT229 "...And I Must Scream"
+{
+	TitlePatch = "BKT2V28"
+	Next = "BKT230"
+	SecretNext = "BKT230"
+	Sky1 = "SKY3"
+	Music = "D_BKT229"
+}
+
+map BKT230 "BFG Arena"
+{
+	TitlePatch = "BKT2V29"
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Sky1 = "SKY3"
+	Music = "D_BKT230"
+}
+
+map BKT231 "Gefragt"
+{
+	TitlePatch = "BKT2V30"
+	Next = "BKT216"
+	SecretNext = "BKT232"
+	Sky1 = "SKY3"
+	Music = "D_BKT231"
+}
+
+map BKT232 "Saxon Violence"
+{
+	TitlePatch = "BKT2V31"
+	Next = "BKT216"
+	SecretNext = "BKT216"
+	Sky1 = "SKY3"
+	Music = "D_BKT232"
+}

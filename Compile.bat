@@ -108,8 +108,8 @@ if %secondChoice%==2 (
 		
 		echo Step 3: REPLACE
 		cd ..\..
-		del Lexicon.pk3
-		ren Lexicon-New.pk3 Lexicon.pk3
+		del Lexicon-Core.pk3
+		ren Lexicon-New.pk3 Lexicon-Core.pk3
 		pause
 	)
 
@@ -176,10 +176,10 @@ if %secondChoice%==2 (
 	if %firstChoice%==7 (
 		echo Step 2: PACK
 		cd core\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Core-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		cd ..\..\lexicon-base\pk3
-		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Base-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png/*.jpg *.wad *.md2 *.md3 *.tga %.mp3 %.pal %.bmp %.map %.lmp %.raw %.mus %.mid %.ogg %.vgz %.wav %.mod %.it %.xm %.s3m %.psm %.pk3 %.gl
 
 		cd ..\..\lexicon-slaughter\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Slaughter-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
@@ -195,8 +195,8 @@ if %secondChoice%==2 (
 
 		echo Step 3: REPLACE
 		cd ..\..
-		del Lexicon.pk3
-		ren Lexicon-New.pk3 Lexicon.pk3
+		del Lexicon-Core.pk3
+		ren Lexicon-Core-New.pk3 Lexicon-Core.pk3
 
 		del Lexicon-Base.pk3
 		ren Lexicon-Base-New.pk3 Lexicon-Base.pk3
@@ -232,8 +232,8 @@ if %secondChoice%==3 (
 
 		echo Step 3: REPLACE
 		cd ..\..
-		del Lexicon.pk3
-		ren Lexicon-New.pk3 Lexicon.pk3
+		del Lexicon-Core.pk3
+		ren Lexicon-New.pk3 Lexicon-Core.pk3
 		pause
 	)
 
@@ -373,8 +373,8 @@ if %secondChoice%==3 (
 
 		echo Step 3: REPLACE
 		cd ..\..
-		del Lexicon.pk3
-		ren Lexicon-New.pk3 Lexicon.pk3
+		del Lexicon-Core.pk3
+		ren Lexicon-New.pk3 Lexicon-Core.pk3
 
 		del Lexicon-Base.pk3
 		ren Lexicon-Base-New.pk3 Lexicon-Base.pk3

@@ -360,6 +360,7 @@ map SF1330 "30: Chronoblast"
 {
 	titlepatch = "SF13V29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SF130612"
 	music = "D_SF1330"

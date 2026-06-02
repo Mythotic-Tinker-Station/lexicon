@@ -382,6 +382,7 @@ map BLDL32 "Cold Warage"
 {
 	titlepatch = "BLDLV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "BLDL0066"
 	music = "$MUSIC_ULTIMA"

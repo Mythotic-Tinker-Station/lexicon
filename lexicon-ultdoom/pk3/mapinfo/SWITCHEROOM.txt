@@ -327,6 +327,7 @@ map SWR1E4M8 "Run To Evil"
 {
 	titlepatch = "SWR1V34"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DSKY4"
 	music = "$MUSIC_E2M5"

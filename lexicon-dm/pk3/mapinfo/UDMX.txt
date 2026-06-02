@@ -613,6 +613,7 @@ map UDMX51 "zdm.wad map01"
 {
 	titlepatch = "UDMXV50"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "UDMX1696"
 	music = "D_UDMX51"

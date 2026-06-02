@@ -1,0 +1,225 @@
+// UDM1 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UDMA01 "UDM1 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "UDMA02"
+	secretnext = "UDMA02"
+	sky1 = "UDMA0093"
+	music = "D_UDMA01"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA02 "UDM1 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "UDMA03"
+	secretnext = "UDMA03"
+	sky1 = "UDMA0093"
+	music = "D_UDMA02"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA03 "UDM1 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "UDMA04"
+	secretnext = "UDMA04"
+	sky1 = "UDMA0093"
+	music = "D_UDMA03"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA04 "UDM1 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "UDMA05"
+	secretnext = "UDMA05"
+	sky1 = "UDMA0093"
+	music = "D_UDMA04"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA05 "UDM1 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "UDMA06"
+	secretnext = "UDMA06"
+	sky1 = "UDMA0093"
+	music = "D_UDMA05"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA06 "UDM1 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "UDMA07"
+	secretnext = "UDMA07"
+	sky1 = "UDMA0093"
+	music = "D_UDMA06"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA07 "UDM1 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "UDMA08"
+	secretnext = "UDMA08"
+	sky1 = "UDMA0093"
+	music = "D_UDMA07"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+	Map07Special
+}
+
+map UDMA08 "UDM1 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "UDMA09"
+	secretnext = "UDMA09"
+	sky1 = "UDMA0093"
+	music = "D_UDMA08"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA09 "UDM1 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "UDMA10"
+	secretnext = "UDMA10"
+	sky1 = "UDMA0093"
+	music = "D_UDMA09"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA10 "UDM1 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "UDMA11"
+	secretnext = "UDMA11"
+	sky1 = "UDMA0093"
+	music = "D_UDMA10"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA11 "UDM1 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "UDMA12"
+	secretnext = "UDMA12"
+	sky1 = "UDMA0093"
+	music = "D_UDMA11"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA12 "UDM1 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "UDMA13"
+	secretnext = "UDMA13"
+	sky1 = "UDMA0094"
+	music = "D_UDMA12"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA13 "UDM1 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "UDMA14"
+	secretnext = "UDMA14"
+	sky1 = "UDMA0094"
+	music = "D_UDMA13"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA14 "UDM1 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "UDMA15"
+	secretnext = "UDMA15"
+	sky1 = "UDMA0094"
+	music = "D_UDMA14"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA15 "UDM1 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "UDMA16"
+	secretnext = "UDMA16"
+	sky1 = "UDMA0094"
+	music = "D_UDMA15"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA16 "UDM1 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "UDMA17"
+	secretnext = "UDMA17"
+	sky1 = "UDMA0094"
+	music = "D_UDMA16"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA17 "UDM1 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "UDMA18"
+	secretnext = "UDMA18"
+	sky1 = "UDMA0094"
+	music = "D_UDMA17"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}
+
+map UDMA18 "UDM1 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "UDMA0094"
+	music = "D_UDMA18"
+	intermusic = "D_UDMAIN"
+	ExitPic = "UDMAINT"
+	EnterPic = "UDMAINT"
+}

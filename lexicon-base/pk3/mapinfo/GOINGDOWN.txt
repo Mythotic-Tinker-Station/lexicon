@@ -360,6 +360,7 @@ map GDWN30 "Game Over"
 {
 	titlepatch = "GDWNV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "GDWN0009"
 	music = "D_GDWN30"

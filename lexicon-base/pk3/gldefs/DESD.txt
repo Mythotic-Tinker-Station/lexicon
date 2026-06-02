@@ -1,0 +1,38 @@
+pulselight Lexicon_DESD_REDSKULL
+{
+    color 0.6 0.0 0.6
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object Lexicon_DESD_RedSkull
+{
+    frame LX70 { light Lexicon_DESD_REDSKULL }
+}
+
+pulselight Lexicon_DESD_YELLOWSKULL
+{
+    color 0.6 0.6 0.0
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object Lexicon_DESD_YellowSkull
+{
+    frame LX70 { light Lexicon_DESD_YELLOWSKULL }
+}
+
+pulselight Lexicon_DESD_BLUESKULL
+{
+    color 0.0 0.6 0.6
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object Lexicon_DESD_BlueSkull
+{
+    frame LX70 { light Lexicon_DESD_BLUESKULL }
+}

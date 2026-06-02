@@ -1,0 +1,76 @@
+// Addictive Deathmatch Series Mapinfo
+
+defaultmap
+{
+	ExitPic = "ADMSINT"
+	EnterPic = "ADMSINT"
+	InterMusic = "D_DM2INT"
+	Sky1 = "SKY1"
+	NoJump
+	NoCrouch
+}
+
+map ADMS01 "The Great Hall"
+{
+	TitlePatch = "ADMSV00"
+	Next = "ADMS02"
+	SecretNext = "ADMS02"
+	Music = "D_DW0303"
+}
+
+map ADMS02 "Red Cross ?"
+{
+	TitlePatch = "ADMSV01"
+	Next = "ADMS03"
+	SecretNext = "ADMS03"
+	Music = "D_DW0110"
+}
+
+map ADMS03 "Claustrophobia"
+{
+	TitlePatch = "ADMSV02"
+	Next = "ADMS04"
+	SecretNext = "ADMS04"
+	Music = "D_ADMS03"
+}
+
+map ADMS04 "Killer's Instict"
+{
+	TitlePatch = "ADMSV03"
+	Next = "ADMS05"
+	SecretNext = "ADMS05"
+	Music = "D_ADMS04"
+}
+
+map ADMS05 "The Tower"
+{
+	TitlePatch = "ADMSV04"
+	Next = "ADMS06"
+	SecretNext = "ADMS06"
+	Music = "D_DW0211"
+}
+
+map ADMS06 "X Rivers"
+{
+	TitlePatch = "ADMSV05"
+	Next = "ADMS07"
+	SecretNext = "ADMS07"
+	Music = "D_ADMS06"
+}
+
+map ADMS07 "Deadly Architecture"
+{
+	TitlePatch = "ADMSV06"
+	Next = "ADMS08"
+	SecretNext = "ADMS08"
+	Music = "D_DW0308"
+}
+
+map ADMS08 "Snipe Spots"
+{
+	TitlePatch = "ADMSV07"
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Music = "D_ADMS08"
+}

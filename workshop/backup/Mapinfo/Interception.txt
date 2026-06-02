@@ -498,6 +498,7 @@ map INT30 lookup "Interception"
 {
 	titlepatch = "INTLV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "INTSKY3"
 	ExitPic = "INTLV35"

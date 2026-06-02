@@ -8,7 +8,7 @@ Actor Lexicon_HADP_CommanderKeen : CommanderKeen
 	States
 	{
 	Spawn:
-		LX25 I -1
+		LX25 A -1
 		Stop
 	Death:
 		LX25 AB	6

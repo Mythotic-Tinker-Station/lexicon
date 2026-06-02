@@ -317,6 +317,7 @@ map DIB27 "Untitled"
 map DIB30 "Operation: Drown in Blood"
 	{
 	next = "VR"
+	sucktime = 1337
 	sky1 = "DIBSKY3"
 	music = "D_1PART"
 	exitpic = "DIBINT"

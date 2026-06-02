@@ -111,6 +111,7 @@ map LDOE11 "the door"
 {
 	titlepatch = "LDOEV10"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "LDOE0026"
 	music = "D_LDOE11"

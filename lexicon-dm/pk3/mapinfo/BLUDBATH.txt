@@ -382,6 +382,7 @@ map BLDB32 "BLUDBATH Map 32"
 {
 	titlepatch = "CWILV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "BLDB0024"
 	music = "D_BLDB32"

@@ -82,6 +82,7 @@ map SD607 lookup "Magnus"
 {
 	titlepatch = "SD6LV06"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "SD631"
 	sky1 = "SKY1"
 	par = 120
@@ -98,6 +99,7 @@ map SD631 lookup "Hyperspace"
 {
 	titlepatch = "SD6LV30"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKY1"
 	cluster = 9

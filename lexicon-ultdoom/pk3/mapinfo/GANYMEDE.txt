@@ -241,6 +241,7 @@ map BGCPE3M8 "Base Ganymede Map 24"
 {
 	titlepatch = "BGCPUV27"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "BGCP0018"
 	music = "D_BGCP26"

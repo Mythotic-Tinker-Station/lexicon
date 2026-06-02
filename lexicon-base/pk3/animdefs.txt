@@ -333,6 +333,9 @@ switch ANRP0153 on pic ANRP0157 tics 0
 switch ANRP0446 on pic ANRP0450 tics 0
 switch ANRP0447 on pic ANRP0451 tics 0
 
+// Ashes of Annihilation
+texture AOAH0018 range AOAH0021 tics 8
+
 // Bloodspeed
 texture BDSP0365 range BDSP0368 tics 8
 texture BDSP0796 range BDSP0799 tics 8
@@ -514,6 +517,15 @@ switch C2410470 on pic C2410510 tics 0
 texture CZBX0058 range CZBX0061 tics 8
 switch CZBX0036 on pic CZBX0041 tics 0
 switch CZBX0037 on pic CZBX0042 tics 0
+
+// Destiny Doom
+texture DESD0119 range DESD0122 tics 8
+texture DESD0335 range DESD0338 tics 8
+switch DESD0144 on pic DESD0150 tics 0
+switch DESD0145 on pic DESD0151 tics 0
+switch DESD0146 on pic DESD0152 tics 0
+switch DESD0147 on pic DESD0153 tics 0
+switch DESD0149 on pic DESD0155 tics 0
 
 // Doom 2: Dark World
 texture D2DW0034 range D2DW0037 tics 8

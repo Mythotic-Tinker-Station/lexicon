@@ -87,6 +87,7 @@ map DBIME1M8 "Launch Bay"
 {
 	titlepatch = "DBIMV07"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DBIM0001"
 	music = "D_DBIM06"

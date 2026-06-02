@@ -330,6 +330,7 @@ map 2MVR30 "CAROUSEL"
 {
 	titlepatch = "2MVRV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "2MVR0003"
 	music = "$MUSIC_OPENIN"

@@ -46,6 +46,7 @@ map DSV104 "End of Days"
 {
 	titlepatch = "DSV1V03"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DSV10492"
 	music = "D_DSV104"
@@ -58,6 +59,7 @@ map DSV105 "Deus Vult"
 {
 	titlepatch = "DSV1V04"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "DSV10492"
 	music = "D_DSV105"

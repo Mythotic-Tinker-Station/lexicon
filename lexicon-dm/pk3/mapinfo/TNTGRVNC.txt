@@ -1,0 +1,299 @@
+// Grievance
+
+defaultmap
+{
+	ExitPic = "GRVEINT"
+	EnterPic = "GRVEINT"
+	InterMusic = "D_GRVEIN"
+	NoJump
+	NoCrouch
+}
+
+map GRVE01 "Unreal"
+{
+	TitlePatch = "GRVEV00"
+	Next = "GRVE02"
+	SecretNext = "GRVE02"
+	Sky1 = "GRVE0006"
+	Music = "D_RUNNIN"
+}
+
+map GRVE02 "Termination Time"
+{
+	TitlePatch = "GRVEV01"
+	Next = "GRVE03"
+	SecretNext = "GRVE03"
+	Sky1 = "GRVE0006"
+	Music = "D_STALKS"
+}
+
+map GRVE03 "House of Sins"
+{
+	TitlePatch = "GRVEV02"
+	Next = "GRVE04"
+	SecretNext = "GRVE04"
+	Sky1 = "GRVE0006"
+	Music = "D_COUNTD"
+}
+
+map GRVE04 "Abbatoir"
+{
+	TitlePatch = "GRVEV03"
+	Next = "GRVE05"
+	SecretNext = "GRVE05"
+	Sky1 = "GRVE0006"
+	Music = "D_BETWEE"
+}
+
+map GRVE05 "Calix Stay"
+{
+	TitlePatch = "GRVEV04"
+	Next = "GRVE06"
+	SecretNext = "GRVE06"
+	Sky1 = "GRVE0006"
+	Music = "D_DOOM"
+}
+
+map GRVE06 "Cray-II"
+{
+	TitlePatch = "GRVEV05"
+	Next = "GRVE07"
+	SecretNext = "GRVE07"
+	Sky1 = "GRVE0006"
+	Music = "D_THE_DA"
+}
+
+map GRVE07 "Death Wish"
+{
+	TitlePatch = "GRVEV06"
+	Next = "GRVE08"
+	SecretNext = "GRVE08"
+	Sky1 = "GRVE0006"
+	Music = "D_SHAWN"
+}
+
+map GRVE08 "Maven"
+{
+	TitlePatch = "GRVEV07"
+	Next = "GRVE09"
+	SecretNext = "GRVE09"
+	Sky1 = "GRVE0006"
+	Music = "D_DDTBLU"
+}
+
+map GRVE09 "Acid Lab"
+{
+	TitlePatch = "GRVEV08"
+	Next = "GRVE10"
+	SecretNext = "GRVE10"
+	Sky1 = "GRVE0006"
+	Music = "D_IN_CIT"
+}
+
+map GRVE10 "Wreck"
+{
+	TitlePatch = "GRVEV09"
+	Next = "GRVE11"
+	SecretNext = "GRVE11"
+	Sky1 = "GRVE0006"
+	Music = "D_DEAD"
+}
+
+map GRVE11 "Close Encounters"
+{
+	TitlePatch = "GRVEV10"
+	Next = "GRVE12"
+	SecretNext = "GRVE12"
+	Sky1 = "GRVE0006"
+	Music = "D_STLKS2"
+}
+
+map GRVE12 "The Time Clock"
+{
+	TitlePatch = "GRVEV11"
+	Next = "GRVE13"
+	SecretNext = "GRVE13"
+	Sky1 = "GRVE0007"
+	Music = "D_THEDA2"
+}
+
+map GRVE13 "Osiris"
+{
+	TitlePatch = "GRVEV12"
+	Next = "GRVE14"
+	SecretNext = "GRVE14"
+	Sky1 = "GRVE0007"
+	Music = "D_DOOM2"
+}
+
+map GRVE14 "Green"
+{
+	TitlePatch = "GRVEV13"
+	Next = "GRVE15"
+	SecretNext = "GRVE15"
+	Sky1 = "GRVE0007"
+	Music = "D_DDTBL2"
+}
+
+map GRVE15 "The Diner"
+{
+	TitlePatch = "GRVEV14"
+	Next = "GRVE16"
+	SecretNext = "GRVE16"
+	Sky1 = "GRVE0007"
+	Music = "D_RUNNI2"
+}
+
+map GRVE16 "Shaft"
+{
+	TitlePatch = "GRVEV15"
+	Next = "GRVE17"
+	SecretNext = "GRVE17"
+	Sky1 = "GRVE0007"
+	Music = "D_DEAD2"
+}
+
+map GRVE17 "Slaughterhouse"
+{
+	TitlePatch = "GRVEV16"
+	Next = "GRVE18"
+	SecretNext = "GRVE18"
+	Sky1 = "GRVE0007"
+	Music = "D_STLKS3"
+}
+
+map GRVE18 "Maison de Mori"
+{
+	TitlePatch = "GRVEV17"
+	Next = "GRVE19"
+	SecretNext = "GRVE19"
+	Sky1 = "GRVE0007"
+	Music = "D_ROMERO"
+}
+
+map GRVE19 "Encryption"
+{
+	TitlePatch = "GRVEV18"
+	Next = "GRVE20"
+	SecretNext = "GRVE20"
+	Sky1 = "GRVE0007"
+	Music = "D_SHAWN2"
+}
+
+map GRVE20 "Octafest"
+{
+	TitlePatch = "GRVEV19"
+	Next = "GRVE21"
+	SecretNext = "GRVE21"
+	Sky1 = "GRVE0007"
+	Music = "D_MESSAG"
+}
+
+map GRVE21 "Stardust"
+{
+	TitlePatch = "GRVEV20"
+	Next = "GRVE22"
+	SecretNext = "GRVE22"
+	Sky1 = "GRVE0005"
+	Music = "D_COUNT2"
+}
+
+map GRVE22 "Place of Dead Souls (Mancer Final)"
+{
+	TitlePatch = "GRVEV21"
+	Next = "GRVE23"
+	SecretNext = "GRVE23"
+	Sky1 = "GRVE0005"
+	Music = "D_DDTBL3"
+}
+
+map GRVE23 "Sinus Headache"
+{
+	TitlePatch = "GRVEV22"
+	Next = "GRVE24"
+	SecretNext = "GRVE24"
+	Sky1 = "GRVE0005"
+	Music = "D_AMPIE"
+}
+
+map GRVE24 "Catacomb"
+{
+	TitlePatch = "GRVEV23"
+	Next = "GRVE25"
+	SecretNext = "GRVE25"
+	Sky1 = "GRVE0005"
+	Music = "D_THEDA3"
+}
+
+map GRVE25 "Bad Karma"
+{
+	TitlePatch = "GRVEV24"
+	Next = "GRVE26"
+	SecretNext = "GRVE26"
+	Sky1 = "GRVE0005"
+	Music = "D_ADRIAN"
+}
+
+map GRVE26 "Amok Time"
+{
+	TitlePatch = "GRVEV25"
+	Next = "GRVE27"
+	SecretNext = "GRVE27"
+	Sky1 = "GRVE0005"
+	Music = "D_MESSG2"
+}
+
+map GRVE27 "Cray-I"
+{
+	TitlePatch = "GRVEV26"
+	Next = "GRVE28"
+	SecretNext = "GRVE28"
+	Sky1 = "GRVE0005"
+	Music = "D_ROMER2"
+}
+
+map GRVE28 "Temple"
+{
+	TitlePatch = "GRVEV27"
+	Next = "GRVE29"
+	SecretNext = "GRVE29"
+	Sky1 = "GRVE0005"
+	Music = "D_TENSE"
+}
+
+map GRVE29 "Roundabout"
+{
+	TitlePatch = "GRVEV28"
+	Next = "GRVE30"
+	SecretNext = "GRVE30"
+	Sky1 = "GRVE0005"
+	Music = "D_SHAWN3"
+}
+
+map GRVE30 "Finale"
+{
+	TitlePatch = "GRVEV29"
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Sky1 = "GRVE0005"
+	Music = "D_OPENIN"
+}
+
+map GRVE31 "TriAgain"
+{
+	TitlePatch = "GRVEV30"
+	Next = "GRVE16"
+	SecretNext = "GRVE32"
+	Sky1 = "GRVE0005"
+	Music = "D_EVIL"
+}
+
+map GRVE32 "Core"
+{
+	TitlePatch = "GRVEV31"
+	Next = "GRVE16"
+	SecretNext = "GRVE16"
+	Sky1 = "GRVE0005"
+	Music = "D_ULTIMA"
+}

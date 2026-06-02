@@ -1,0 +1,185 @@
+Texture "DESD0123", 32, 128
+{
+	Patch "DESD0437", 0, 0
+	Patch "DESD0437", 0, 64
+}
+Texture "DESD0124", 128, 128
+{
+	Patch "DESD0646", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "DESD0125", 128, 128
+{
+	Patch "DESD0647", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "DESD0126", 256, 128
+{
+	Patch "DESD0347", 32, 0
+	Patch "DESD0178", 96, 0
+	Patch "DESD0177", 160, 0
+	Patch "DESD0348", 0, 64
+	Patch "DESD0349", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "DESD0438", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "DESD0177", 0, 0
+}
+Texture "DESD0127", 64, 128
+{
+	Patch "DESD0348", 0, 0
+	Patch "DESD0348", 0, 64
+}
+Texture "DESD0128", 64, 128
+{
+	Patch "DESD0551", 0, 0
+}
+Texture "DESD0129", 64, 128
+{
+	Patch "DESD0552", 0, 0
+}
+Texture "DESD0130", 64, 128
+{
+	Patch "DESD0620", 0, 0
+	Patch "DESD0622", 32, 0
+	Patch "DESD0620", 0, 64
+	Patch "DESD0622", 32, 64
+}
+Texture "DESD0131", 64, 128
+{
+	Patch "GCRATEL1", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "DESD0620", 0, 64
+	Patch "DESD0622", 32, 64
+}
+Texture "DESD0132", 64, 128
+{
+	Patch "DESD0283", 0, 0
+	Patch "DESD0283", 32, 0
+	Patch "DESD0620", 0, 64
+	Patch "DESD0622", 32, 64
+}
+Texture "DESD0133", 64, 16
+{
+	Patch "DESD0582", 0, 0
+	Patch "DESD0582", 16, 0
+	Patch "DESD0582", 32, 0
+	Patch "DESD0582", 48, 0
+}
+Texture "DESD0134", 128, 128
+{
+	Patch "DESD0620", 0, 64
+	Patch "DESD0621", 40, 64
+	Patch "DESD0621", 32, 64
+	Patch "DESD0621", 48, 64
+	Patch "DESD0621", 56, 64
+	Patch "DESD0622", 96, 64
+	Patch "DESD0621", 88, 64
+	Patch "DESD0621", 80, 64
+	Patch "DESD0621", 72, 64
+	Patch "DESD0621", 64, 64
+	Patch "GCRATEL1", 0, 0
+	Patch "GCRATER1", 96, 0
+	Patch "GCRATEM1", 48, 0
+	Patch "GCRATEM1", 40, 0
+	Patch "GCRATEM1", 32, 0
+	Patch "GCRATEM1", 72, 0
+	Patch "GCRATEM1", 64, 0
+	Patch "GCRATEM1", 56, 0
+	Patch "GCRATEM1", 80, 0
+	Patch "GCRATEM1", 88, 0
+}
+Texture "DESD0138", 64, 128
+{
+	Patch "DESD0543", 0, 0
+}
+Texture "DESD0139", 64, 128
+{
+	Patch "DESD0548", 0, 0
+}
+Texture "DESD0141", 256, 128
+{
+	Patch "DESD0414", 0, 0
+}
+Texture "DESD0142", 256, 128
+{
+	Patch "DESD0415", 0, 0
+}
+Texture "DESD0143", 256, 128
+{
+	Patch "DESD0416", 0, 0
+}
+Texture "DESD0144", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DESD0145", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DESD0146", 64, 128
+{
+	Patch "DESD0437", 0, 64
+	Patch "DESD0347", 0, 0
+	Patch "DESD0437", 32, 64
+	Patch "SW2S0", 16, 72
+}
+Texture "DESD0147", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DESD0148", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DESD0149", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DESD0150", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DESD0151", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DESD0152", 64, 128
+{
+	Patch "DESD0437", 0, 64
+	Patch "DESD0347", 0, 0
+	Patch "DESD0437", 32, 64
+	Patch "SW2S1", 16, 72
+}
+Texture "DESD0153", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DESD0154", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DESD0155", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DESD0156", 128, 128
+{
+	Patch "DESD0593", 0, 0
+}
+Texture "DESD0157", 128, 128
+{
+	Patch "DESD0594", 0, 0
+}

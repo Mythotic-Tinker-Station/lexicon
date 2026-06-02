@@ -6,12 +6,42 @@ function int intFloat(int toround)
 	return itof(ftoi(toround));
 }
 
-function int RemoveMessages(int rangemin, int rangemax)
+function int max(int a, int b)
 {
+	return a > b ? a : b;
+}
+
+function int min(int a, int b)
+{
+	return a < b ? a : b;
+}
+
+function int abs(int a)
+{
+	return a < 0 ? -a : a;
+}
+
+function int clamp(int a, int b, int c)
+{
+	return min(c, max(b, a));
+}
+
+function int lerp(int a, int b, int f)
+{
+    return a + f * (b - a);
+}
+
+function void RemoveMessages(int rangemin, int rangemax)
+{
+	if (rangemax < rangemin)
+		rangemax = rangemin;
 	for(int a = rangemin; a <= rangemax; a++)
 		HudMessage(s:""; HUDMSG_PLAIN, a, CR_UNTRANSLATED, 0.0, 0.0, 0.1);
+}
 
-	return 0;
+function void RemoveMessage(int id)
+{
+	HudMessage(s:""; HUDMSG_PLAIN, id, CR_UNTRANSLATED, 0.0, 0.0, 0.1);
 }
 
 function str getDynLangEntry(str p1, str p2, str p3)
@@ -36,6 +66,15 @@ function int checkConfines(int cursorx, int cursory, int xl, int xr, int yl, int
 {
 	cursorx = ftoi(cursorx*scaleX);
 	cursory = ftoi(cursory*scaleY);
+	return cursorx > xl && cursorx < xr && cursory > yl && cursory < yr;	
+}
+//Alternative that works opposite to above by scaling the bounds rather than the cursor
+function int checkConfines2(int cursorx, int cursory, int xl, int xr, int yl, int yr, int scaleX, int scaleY)
+{
+	xl = ftoi(xl*scaleX);
+	xr = ftoi(xr*scaleX);
+	yl = ftoi(yl*scaleY);
+	yr = ftoi(yr*scaleY);
 	return cursorx > xl && cursorx < xr && cursory > yl && cursory < yr;	
 }
 
@@ -208,4 +247,12 @@ function int GetMouseSensitivityY(int player)
 	overallY = GetCvar("m_sensitivity_y") + GetCvar("mouse_sensitivity");
 	int pitch = GetCvar("m_pitch");
 	return FixedMul(overallY,pitch);
+}
+
+//Input text, followed by id, the y offset of the message, and the current creditTimer
+function void displayLexiconCredits(str text, int id, int y)
+{
+    SetFont("LXSMALLFONT");
+    SetHudSize(640, 480, FALSE);
+    HudMessage(s:text; HUDMSG_PLAIN|HUDMSG_NOTWITHFULLMAP|HUDMSG_LAYER_OVERHUD|HUDMSG_ALPHA|HUDMSG_COLORSTRING, id, "LexiconWhite", 320.0, y, 1.0/35);
 }

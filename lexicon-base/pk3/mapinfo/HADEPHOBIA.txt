@@ -359,6 +359,7 @@ map HADP30 "Hadephobia"
 {
 	titlepatch = "HADPV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "HADP0003"
 	music = "$MUSIC_OPENIN"

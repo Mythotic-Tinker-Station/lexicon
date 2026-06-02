@@ -4,7 +4,7 @@
 # [Tri] bash turns my brains into mush x_x
 
 # output pk3 filenames
-CORE_PK3="lexicon"
+CORE_PK3="lexicon-core"
 BASE_PK3="lexicon-base"
 SLAUGHTER_PK3="lexicon-slaughter"
 ULTDOOM_PK3="lexicon-ultdoom"

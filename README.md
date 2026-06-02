@@ -90,181 +90,181 @@ Feel free to use the tracker on here. You can also join our discord at [The Myth
 
 ### Founders/Owners
 
-MiFU
-Tribeam
+- MiFU
+- Tribeam
 
 ### Project Leads/Management
 
-MiFU
-meleemario
+- MiFU
+- meleemario
 
 ### Lead Developers
 
-cubebert
-Tribeam
+- cubebert
+- Tribeam
 
 ### Scripting / Tooling
 
-Tribeam
-cubebert
-Shiny Metagross
-Popsoap
-Michaelis
-Penguin
+- Tribeam
+- cubebert
+- Shiny Metagross
+- Popsoap
+- Michaelis
+- Penguin
 
 ### Mapset Compiling
 
-cubebert
-Popsoap
-Michaelis
-Shiny Metagross
-meleemario
-Tribeam
-K0RPSE
-tabijaky
-Hell_Pike
+- cubebert
+- Popsoap
+- Michaelis
+- Shiny Metagross
+- meleemario
+- Tribeam
+- K0RPSE
+- tabijaky
+- Hell_Pike
 
 ### Mapset Selector Code and UI Design
 
-Shiny Metagross
-Dark-Assassin
+- Shiny Metagross
+- Dark-Assassin
 
 ### Mapset Selector Sounds
 
-Idea Factory and Compile Heart (From Hyperdimension Neptunia mk2, ripped by Shiruba)
+- Idea Factory and Compile Heart (From Hyperdimension Neptunia mk2, ripped by Shiruba)
 
 ### VR Hub Design
 
-Tribeam
-Fiendzy
-cubebert
+- Tribeam
+- Fiendzy
+- cubebert
 
 ### VR Hub Fireworks Sounds
 
-Bizarre Creations (From Boom Boom Rocket, ripped by teh_supar_hackr)
+- Bizarre Creations (From Boom Boom Rocket, ripped by teh_supar_hackr)
 
 ### Beta Testers
 
-cubebert
-Popsoap
-Shiny Metagross
-meleemario
-Tribeam
-Kaapeli47
-tehvappy50
-Blushberry
-Bugsie
-Challenger
-DEUS VAULT
-Dinosaur Nerd
-Eagle
-Fluffy
-Fookerton
-Gosimer
-Hell_Pike
-ImSoTiredOfBeingHere
-Issac12
-Jaycobe
-Kenopath
-Kunai Kitsune
-Michaelis
-Mister36
-Nash Muhandes
-NationWideMoose
-Penguin
-Professor Renderer
-Saad356
-Shadowlink223
-SyKoTiC
-tabijaky
-Zungling
+- cubebert
+- Popsoap
+- Shiny Metagross
+- meleemario
+- Tribeam
+- Kaapeli47
+- tehvappy50
+- Blushberry
+- Bugsie
+- Challenger
+- DEUS VAULT
+- Dinosaur Nerd
+- Eagle
+- Fluffy
+- Fookerton
+- Gosimer
+- Hell_Pike
+- ImSoTiredOfBeingHere
+- Issac12
+- Jaycobe
+- Kenopath
+- Kunai Kitsune
+- Michaelis
+- Mister36
+- Nash Muhandes
+- NationWideMoose
+- Penguin
+- Professor Renderer
+- Saad356
+- Shadowlink223
+- SyKoTiC
+- tabijaky
+- Zungling
 
 ### Lexicon DM Beta Testers
 
-[FAP] The Powerful Hoe
-The Proverbial Derp
-Shakar-a'tar
-Mame
-Bathysalts
+- [FAP] The Powerful Hoe
+- The Proverbial Derp
+- Shakar-a'tar
+- Mame
+- Bathysalts
 
 ### Afina Artwork
 
-Rigrug
+- Rigrug
 
 ### Other Graphics
 
-BugsBunny205 (Menu Logo)
-Hell_Pike (Brightmaps, GLDefs)
-KillerKouhai (Loading Screen)
-Tiddles (Title Screen / Console background)
-TheMisterCat (Lexicon Cube Artifact)
-Tribeam (Various Font edits and VR GFX)
+- BugsBunny205 (Menu Logo)
+- Hell_Pike (Brightmaps, GLDefs)
+- KillerKouhai (Loading Screen)
+- Tiddles (Title Screen / Console background)
+- TheMisterCat (Lexicon Cube Artifact)
+- Tribeam (Various Font edits and VR GFX)
 
 ### Mixed Contributions
 
 (Folks who has done a bit of everything over the lifetime of Lexicon)
 
-Clint
-Hell_Pike
-Michaelis
-Penguin
-Popsoap
-SeventhSentinel
-Shaewn
+- Clint
+- Hell_Pike
+- Michaelis
+- Penguin
+- Popsoap
+- SeventhSentinel
+- Shaewn
 
 ### OTEX Textures
 
-Ola Bjorling
+- Ola Bjorling
 
 ### VR Hub Music
 
-Jugi
-Daisuke Ishiwatari
-Robert A. Allen & Joshua Jensen
-JazzCat
-4-Mat
-Yerzmyey
-Amiga Junglism, Spot, XSM & tEiS
-WorkbenchDisease
-Szudi
-Ambient Move
-Big Bear
-Trancerboy
-Gaspode
-Doh
-Necros
-Jester
-Zauron
-Basehead
-Prism
-Jesper Kyd
-Dr. Awesome
-Hunz
-Counterpoint
-Big Jim
-Marvel
-CorgiAtom
-Deathman27
-Maktone
-MrDeath
-Quazar of Sanxion
-Lizardking
-Biteon
-Ko0x
-Xerxes
-Lonestar
-TrAFo in EMC
-Jakim
-LHS
-Jorov
-TSEC
-X-ceed / Scope
-Yoni of Fobia Design
-Seablue
-Beldoroon
+- Jugi
+- Daisuke Ishiwatari
+- Robert A. Allen & Joshua Jensen
+- JazzCat
+- 4-Mat
+- Yerzmyey
+- Amiga Junglism, Spot, XSM & tEiS
+- WorkbenchDisease
+- Szudi
+- Ambient Move
+- Big Bear
+- Trancerboy
+- Gaspode
+- Doh
+- Necros
+- Jester
+- Zauron
+- Basehead
+- Prism
+- Jesper Kyd
+- Dr. Awesome
+- Hunz
+- Counterpoint
+- Big Jim
+- Marvel
+- CorgiAtom
+- Deathman27
+- Maktone
+- MrDeath
+- Quazar of Sanxion
+- Lizardking
+- Biteon
+- Ko0x
+- Xerxes
+- Lonestar
+- TrAFo in EMC
+- Jakim
+- LHS
+- Jorov
+- TSEC
+- X-ceed / Scope
+- Yoni of Fobia Design
+- Seablue
+- Beldoroon
 
 ### Emotional Support :D
 
-Ayashi
+- Ayashi
 
 **Note** - These credits are cut down. More detailed version appears ingame and in the LCREDITS texture in the textures/lexicon folder

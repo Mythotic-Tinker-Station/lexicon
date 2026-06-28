@@ -113,7 +113,8 @@ map 4MVR09 "Live Complex"
 	intermusic = "D_4MVRIN"
 	ExitPic = "4MVRI10"
 	EnterPic = "4MVRI09"
-	Map07Special
+	SpecialAction = "Arachnotron", "Floor_RaiseToNearest", 667, 16
+	SpecialAction = "Fatso", "Floor_LowerToLowest", 666, 16
 }
 
 map 4MVR10 "Blood Office"

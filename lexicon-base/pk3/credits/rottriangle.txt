@@ -1,0 +1,140 @@
+===========================================================================
+Advanced engine needed  : Boom
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Rise of the Triangles
+Filename                : rottriangle
+Release date            : 15/6/24 (dd/m/yy)
+Author                  : Ilya Lazarev (joe-ilya)
+Email Address           : [redacted]
+Other Files By Author   : https://doomwiki.org/wiki/Ilya_Lazarev_(joe-ilya)
+Misc. Author Info       : Fuck war, make wad.
+
+Description             : Low budget alert! It has gotten so bad the
+                          environment, and even your head have turned into
+                          the least cost-effective shapes to draw; triangles,
+                          with each map only using 100 linedefs.
+                          You must find the bottle reusing center as soon as
+                          possible, and deposit all your used health bonuses,
+                          before your world runs out of money and ceases to
+                          exist. Unluckily for you the Icon of Sin's (twin?
+                          No. Triplet? No. Quadruplet? No.) infinite-let
+                          sister has invaded earth, and swallowed the entire
+                          reuse center before returning to hell. You must go
+                          after her.
+
+Additional Credits to   : CodeImp and co for Ultimate Doom Builder
+                          ID for Doom
+                          Exl for WhackED4
+                          Adobe for Photoshop
+                          Microsoft for MSPaint
+                          Lee Jackson, Bobby Prince, and MSPaintR0cks for the
+                          music.
+                          Apogee for the custom sounds from Rise of the Triad
+                          MSPaintR0cks for the MAP31 resources.
+                          Myk Friedman and Walter Stabosz for the yellow HUD
+                          hands.
+                          Kilkakon for the handless plasma gun cooldown frame.
+===========================================================================
+* What is included *
+
+New levels              : 24
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-22
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : Prop Hunt
+Difficulty Settings     : Yes
+Freelook		: Not required
+Jumping/Crouching	: No
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 3 months for RC1, after a 4 month break it took me 2
+			  weeks to make the RC2 additions.
+Editor(s) used          : Ultimate Doom Builder, Slade 3, WhackED4, EndEdit
+Known Bugs              : In Zdaemon the rubble sprite fades in and out.
+			  In Odamex the death exits don't work, and MAP32
+			  crashes in it.
+			  In some source ports the menu title doesn't appear
+			  correctly.
+			  In MAP31, the teleporter in the water doesn't
+			  trigger half the time, if that happens, press on
+			  the horizon to teleport back.
+May Not Run With        : Old outdated source ports, and some gameplay mods.
+Tested With             : Nugget Doom 3.0.0 - DSDA-Doom 0.27.5 - GZDoom 4.11.3
+			  Zandronum 3.1 - Loosely tested on ZDaemon 1.10.24
+
+* Music list *
+
+All tracks by MSPaintR0cks/WatchDaToast were taken from Rise of the Wool Ball.
+All tracks by Lee Jackson's and Bobby Prince's were taken from Rise of the Triad and its beta.
+
+Title - Intro theme for transformer, from Rise of the Wool Ball
+Intermission - "Wonders of Technology" from RotWB
+Text - "A Night Storm on a Texas Road" by Lee Jackson
+
+1 - "Run Like Smeg" by Lee Jackson
+2 - "Gazz!" by Bobby Prince
+3 - "The Gym" by MSPaintR0cks (Remix of "The Imp Song" by Bobby Prince from Doom)
+4 - "Watz Next?" by Lee Jackson
+5 - "Rise of the Triad" by Bobby Prince
+6 - "Into The Woods" by MSPaintR0cks
+7 - "Adagio for Strings and Organ" by Tomaso Albinoni, sequenced by Lee Jackson
+8 - "Serpent" by Bobby Prince
+9 - "Muddy Waters" by MSPaintR0cks
+10 - "Shards" by Lee Jackson
+11 - "Work Day" by Bobby Prince
+12 - "Rebbeca's Theme" by MSPaintR0cks
+13 - "Goin' Down the Fast Way" by Lee Jackson
+14 - "Excalibur" by Bobby Prince
+15 - "I Choose the Stairs" by Lee Jackson
+16 - "No Way Back" by MSPaintR0cks
+17 - "The Desecrated Tomb" by Bobby Prince
+18 - "Puzzling Punishment" by MSPaintR0cks
+19 - "Task Force" by Lee Jackson
+20 - "Vaccinating The Demon Dogs" by Bobby Prince
+21 - "Top Of The Tower" by MSPaintR0cks
+22 - "How'd I Do?" by Lee Jackson
+
+31 - "Keelhauled" by ALESTORM, sequenced by MSPaintR0cks
+32 - "The Monastery" by Bobby Prince
+
+* Wad version differences *
+
+RC1 - All maps finished.
+RC2 - Deathmatch, GZDoom, and Zandronum support added.
+Difficulty settings added.
+Multiplayer exclusive monsters added.
+Final IDGames version - ENDOOM graphic added as a bow for the project. Enjoy!
+Fixed IDGames version - MAP12 spectre fix, MAP31 voodoo doll exploit fix
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

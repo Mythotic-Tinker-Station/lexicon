@@ -1,0 +1,92 @@
+Actor Lexicon_JENS_CommanderKeen : CommanderKeen
+{
+	Health 5000
+	Radius 32
+	Height 216
+	-SPAWNCEILING
+	-NOGRAVITY
+	PainSound "JENS/DSKEENPN"
+	DeathSound "JENS/DSKEENDT"
+	States
+	{
+	Spawn:
+		LX58 "[" 10 A_Look
+		goto Spawn
+	See:
+		LX58 XYZ 4 A_Chase
+		LX58 "[" 4 A_Chase
+		LX58 ZY 4 A_Chase
+		goto See
+	Pain:
+		LX58 X 24 A_Pain
+		goto See
+	Missile:
+		LX58 X 6 A_FaceTarget
+		LX58 YXYX 6 Bright A_SkelMissile
+		goto See
+	Death:
+		LX58 X 100 Bright A_BrainScream
+		LX58 "[" -1 Bright A_BrainDie
+		stop
+	}
+}
+
+Actor Lexicon_JENS_WolfensteinSS : WolfensteinSS
+{
+	Health 90
+	SeeSound "grunt/sight"
+	DeathSound "grunt/death"
+	States
+	{
+	Spawn:
+		LX58 AB 10 A_Look
+		loop
+	See:
+		LX58 ABCD 4 A_Chase
+		goto See
+	Pain:
+		LX58 G 6 A_Pain
+		goto See
+	Missile:
+		LX58 E 6 A_FaceTarget
+		LX58 F 6 A_SPosAttack
+		goto See
+	Death:
+		LX58 H 5 
+		LX58 I 5 A_Scream
+		LX58 J 5 
+		LX58 K 5 A_Fall
+		LX58 L -1 
+		stop
+	XDeath:
+		LX58 M 5 
+		LX58 N 5 A_XScream
+		LX58 O 5 A_Fall
+		LX58 PQRST 5 
+		LX58 U -1 
+		stop
+	Raise:
+		TROO A -1 
+		stop
+	}
+}
+
+Actor Lexicon_JENS_BossBrain : BossBrain
+{
+	Health 1000
+	Height 48
+	States
+	{
+	Spawn:
+		LX58 V -1
+		Stop
+	Pain:
+		LX58 W 36 A_BrainPain
+		Goto Spawn
+	Death:
+		LX58 V 100 A_BrainScream
+		LX58 VV 10
+		LX58 V -1 A_BrainDie
+		Stop
+	}
+}

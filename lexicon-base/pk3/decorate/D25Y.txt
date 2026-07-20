@@ -1,0 +1,9 @@
+ACTOR Lexicon_D25Y_GibbedMarineExtra : GibbedMarineExtra
+{
+	States
+	{
+	Spawn:
+		LX00 J -1
+		Stop
+	}
+}

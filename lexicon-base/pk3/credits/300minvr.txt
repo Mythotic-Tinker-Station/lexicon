@@ -1,0 +1,312 @@
+===========================================================================
+Advanced engine needed  : None for the most part. There are some visual bugs
+                          in chocolate doom, limit removing engines
+                          recommended.
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : 300 minutes of /vr/
+Filename                : 300minvr.wad
+Release date            : 2017-09-16 (updated 2017-10-05)
+Author                  : Various users of 4chan's /vr/ board
+Email Address           : [redacted] (manager/compiler/uploader)
+                          [redacted] (fixer/updater)
+Other Files By Author   : 200 minutes of /vr/, others (see threads for details)
+Misc. Author Info       : https://boards.4chan.org/vr/catalog#s=doom%20thread
+
+Description             : A megawad compilation of maps made by /vr/ users.
+                          Participants were asked to make a map in 300 minutes,
+                          with an initial two-week deadline period for
+                          submission. There was no particular theme beyond
+                          vanilla compatibility / no custom textures.
+
+                          At deadline 25 maps had been submitted, so it was
+                          decided to allow extra time to complete the set;
+                          also the previously submitted maps were bugfixed and
+                          polished, and finally the wad released to /idgames.
+
+                          Post-release update: the initial /idgames upload was
+                          found to be incomplete, so it was agreed to allow a
+                          further period of updates, bugfixing, and polishing.
+
+                          Please note the maps are intended for pistol starts.
+
+Additional Credits to   : Project manager: Repugnus
+                          MIDI files: see below
+                          Title screen and intermission background: Anonymous
+                          Sky 1: Rottking (from ROTT skies pack -
+                          https://www.doomworld.com/idgames/id=15066 )
+                          Skies 2 and 3: Anonymous /vr/ users
+                          Waterfall textures: cc4-tex
+                          Intro and Intermission MIDIs: HexenMapper
+                          Intermission titles, demos, ENDOOM (derived from
+                          TITLEPIC), dehacked lump, testing, bug-fixing: RjY
+                          Additional testing / FDAs / streams: TerminusEst13,
+                          Suitepee, Beginner, NoisyVelvet, Rowsol, Da_Werecat,
+                          Keyboard_Doomer, Leodoom85, Lirui1001, GarrettChan,
+                          Memfis, EffinghamHuffnagel, and various anons.
+===========================================================================
+* What is included *
+
+New levels              : 33
+Sounds                  : No
+Music                   : Yes
+Graphics                : New skies, titlepic/interpic, cwilv[00-32]
+Dehacked/BEX Patch      : Text replacements only
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP33
+Single Player           : Designed for (pistol starts)
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Only in a select few maps
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Maps made in 300 minutes from August to September
+                          2017
+Editor(s) used          : Various
+Known Bugs              : Drawseg overflow/tutti frutti errors in
+                          chocolate doom in some maps. Texture misalignments,
+                          other cosmetic issues that won't affect gameplay.
+                          Not very many of the maps have difficulty settings.
+May Not Run With        : Works mostly with vanilla; limit removing engine
+                          helps
+Tested With             : Various
+
+
+* Copyright / Permissions *
+
+Redistribution and use with or without modification is permitted provided
+appropriate credit is given.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://boards.4chan.org/vr/doom
+
+* Map information and credits *
+
+Map:         01
+Title:       Trench
+Author:      Rolo
+Submission:  29
+Music:       Speed Trial by Cyber-Rainforce
+
+Map:         02
+Title:       Curse of the Donuts
+Author:      Turret49
+Submission:  16
+Music:       Water World - Donkey Kong Country 3 (midi by Jay Reichard)
+
+Map:         03
+Title:       Subterranean Hideout
+Author:      Repugnus
+Submission:  18
+Music:       Upstate Devil by alfonzo
+
+Map:         04
+Title:       Warehouse Cleanup
+Author:      Nuclear Potato
+Submission:  24
+Music:       Prison from Final Doom, remixed by Jay Reichard
+             (https://zorasoft.net/prjdoom.html)
+
+Map:         05
+Title:       Bay 54
+Author:      Red
+Submission:  4
+
+Map:         06
+Title:       Top Secret Labradoodle
+Author:      Revae
+Submission:  19
+Music:       Enya MIDI http://www.sysrq.info/~stv/enya/midi/sm/joh_smao.mid
+
+Map:         07
+Title:       Moonlit Harbor
+Author:      A2Rob
+Submission:  17
+Music:       from Deus Vult II
+
+Map:         08
+Title:       Syndicate
+Author:      Rolo
+Submission:  11
+
+Map:         09
+Title:       Go Slowly
+Author:      amok
+Submission:  28
+Music:       Silence from F-Zero X
+Note:        It is intended that the player can reach the exit "early".
+             There is a choice of three routes, each with its own key.
+
+Map:         10
+Title:       Crash Site
+Author:      HexenMapper
+Submission:  2
+Music:       Self composed MIDI from author
+
+Map:         11
+Title:       Supreme Webbed Court
+Author:      Breezeep
+Submission:  6
+Music:       Flip the Switch by alfonzo
+
+Map:         12
+Title:       Conception
+Author:      sarais
+Submission:  1
+Note:        As submitted, the map had thousands of tiny detail sectors.
+             It also had enough ammunition to annihilate a small country.
+             Both have been greatly reduced, for the respective sakes of
+             visplanes, and sanity.
+
+Map:         13
+Title:       Graveland
+Author:      Axebeard
+Submission:  5
+
+Map:         14
+Title:       Blue Sanctuary
+Author:      Hebridean Isle
+Submission:  9
+Music:       Music: Sinking Old Sanctuary from Castlevania Bloodlines 
+             www.vgmusic.com/music/console/sega/genesis/CVB-_The_Sinking_Old_Sanctuary.mid
+
+Map:         15
+Title:       The Room Out of Shape
+Author:      Breezeep
+Submission:  26
+Music:       Gatorade Nightmare by Jimmy
+
+Map:         16
+Title:       Choose Your Path
+Author:      Anonymous
+Submission:  3
+Note:        There was a note here about 100% kills being impossible by design,
+             but it's gone now.
+
+Map:         17
+Title:       Toomb
+Author:      HexenMapper
+Submission:  12
+Music:       Self composed MIDI by author
+Note:        If you're stuck, look for false walls.
+
+Map:         18
+Title:       Saturday Night Codeine
+Author:      TerminusEst13
+Submission:  8
+Music:       Prog Rock from The Incredible Machine
+
+Map:         19
+Title:       Blood Feud
+Author:      Permuband
+Submission:  15
+Note:        Post-release work done to this probably went a bit beyond the
+             remit of simple bugfixing, but the final confrontation couldn't
+             be left alone after feedback mocked how easy it was to skip the
+             whole thing entirely.
+
+Map:         20
+Title:       Welcome to the Park
+Author:      RjY
+Submission:  23
+Music:       D_TENSE from cchest3.wad, by John "The Green Herring" Cage
+Note:        Nothing in this map is unintentional. The lack of music, the
+             final battle that is so optional it doesn't even start until
+             you're standing on the exit, dozens of apparently spurious
+             secret areas (update: these are gone now)
+
+Map:         21
+Title:       Collider
+Author:      amok
+Submission:  13
+Music:       "Course Select" from Thunder Force IV
+Note:        You can run out of visplanes if you are terribly unlucky. Doing
+             something about this would likely ruin the map though. It has
+             already been cut down significantly.
+
+Map:         22
+Title:       The Punch Dimension
+Author:      Dogman
+Submission:  21
+Music:       Age of Empires 2 OST (I Will Beat on Your Behind)
+Note:        Unfortunately relies on ZDoom physics for punching a few
+             monsters, but they're all avoidable, or can eventually be dealt
+             with in other ways. 100% kills wasn't really intended, but is
+             possible. One monster being stuck in a wall is intentional.
+
+Map:         23
+Title:       Thy Flesh on a Platter
+Author:      Anonymous
+Submission:  20
+
+Map:         24
+Title:       Mt. Heck
+Author:      Skelly
+Submission:  7
+Music:       Agony Rhapsody (TNT)
+ 
+Map:         25
+Title:       No Archviles Allowed
+Author:      Xangi
+Submission:  30   
+ 
+Map:         26
+Title:       Praise Vanilla Wizard
+Author:      Scroton
+Submission:  14
+
+Map:         27
+Title:       Perfect Hatemail
+Author:      Scroton
+Submission:  10
+
+Map:         28
+Title:       Purgatori
+Author:      Charcola
+Submission:  22
+
+Map:         29
+Title:       In Your Ass
+Author:      Party Boy
+Submission:  32
+Music:       Speed Of Light .midi was downloaded from FreeMidi.org
+
+Map:         30
+Title:       Icon of Shame
+Author:      Repugnus
+Submission:  25
+
+Map:         31
+Title:       Ultra-Progressive World
+Author:      TerminusEst13
+Submission:  27
+Music:       "Westopolis" by Viscra Maelstrom
+
+Map:         32
+Title:       Spear of Insanity
+Author:      A2Rob
+Submission:  31
+Music:       "Getaway" by stewboy
+Note:        Map required considerable visplane reduction; some doors were
+             not meant to keep closing, but it was found to be necessary to
+             keep the visible detail down. cf. ksutra, pl2.
+
+Map:         33
+Title:       Warrenstein
+Author:      Anonymous
+Submission:  33
+Note:        This map was a late submission, but was included anyway. 
+             Use "idclev33" to access this map.

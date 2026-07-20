@@ -1,0 +1,114 @@
+object Lexicon_EPC2_BurningBarrel
+{
+    frame LX33 { light FIREBARREL }
+}
+
+object Lexicon_EPC2_RedTorch
+{
+    frame LX34 { light BIGREDTORCH }
+}
+
+object Lexicon_EPC2_ShortRedTorch
+{
+    frame LX34 { light SMALLREDTORCH }
+}
+
+object Lexicon_EPC2_ShortBlueTorch
+{
+    frame LX34 { light SMALLBLUETORCH }
+}
+
+object Lexicon_EPC2_GreenTorch
+{
+    frame LX34 { light FIREBARREL }
+}
+
+object Lexicon_EPC2_ShortGreenTorch
+{
+    frame SMGT { light SMALLGREENTORCH }
+}
+
+object Lexicon_EPC2_TechLamp
+{
+    frame LX35 { light FIREBARREL }
+}
+
+object Lexicon_EPC2_TechLamp2
+{
+    frame LX35 { light SMALLLAMP }
+}
+
+object Lexicon_EPC2_ExplosiveBarrel
+{
+    frame LX33  { light BARREL }
+
+    frame LX33W { light ROCKET_X1 }
+    frame LX33X { light ROCKET_X2 }
+    frame LX33Y { light ROCKET_X3 }
+}
+
+object Lexicon_EPC2_HealthBonus
+{
+    frame LX35 { light HEALTHPOTION }
+}
+
+object Lexicon_EPC2_ArmorBonus
+{
+    frame LX35 { light ARMORBONUS }
+}
+
+object Lexicon_EPC2_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame PLSEA { light PLASMA_X1 }
+    frame PLSEB { light PLASMA_X2 }
+    frame PLSEC { light PLASMA_X2 }
+    frame PLSED { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+object Lexicon_EPC2_ArachnotronPlasma
+{
+    frame APLSA { light ARACHPLAS }
+    frame APLSB { light ARACHPLAS }
+
+    frame APBXA { light ARACHPLAS_X1 }
+    frame APBXB { light ARACHPLAS_X2 }
+    frame APBXC { light ARACHPLAS_X2 }
+    frame APBXD { light ARACHPLAS_X3 }
+    frame APBXE { light ARACHPLAS_X4 }
+}
+
+object Lexicon_EPC2_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_EPC2_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_EPC2_ChaingunGuy
+{
+    frame LX40E { light ZOMBIEATK }
+    frame LX40F { light ZOMBIEATK }
+}
+
+object Lexicon_EPC2_LostSoul
+{
+    frame SKULA { light LOSTSOUL    }
+    frame SKULB { light LOSTSOUL    }
+    frame SKULC { light LOSTSOUL    }
+    frame SKULD { light LOSTSOUL    }
+    frame SKULE { light LOSTSOUL    }
+    frame SKULF { light LOSTSOUL    }
+    frame SKULG { light LOSTSOUL    }
+
+    frame SKULH { light LOSTSOUL_X1 }
+    frame SKULI { light LOSTSOUL_X2 }
+    frame SKULJ { light LOSTSOUL_X3 }
+    frame SKULK { light LOSTSOUL_X4 }
+}

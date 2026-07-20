@@ -54,6 +54,7 @@ map DV04 "End of Days"
 map DV05 "Deus Vult"
 	{
 	next = "VR"
+	sucktime = 1337
 	sky1 = DVSKY1
 	titlepatch = DVILV04
 	enterpic = DVINT

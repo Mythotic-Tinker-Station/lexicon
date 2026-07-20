@@ -1,0 +1,148 @@
+Actor Lexicon_GD64_ZombieMan : ZombieMan
+{
+	States
+	{
+	XDeath:
+		POSS M 5 
+		POSS N 5 A_XScream
+		SPOS O 5 A_Fall
+		SPOS PQRST 5 
+		SPOS U -1 
+		stop
+	}
+}
+
+Actor Lexicon_GD64_CommanderKeen : CommanderKeen
+{
+	States
+	{
+	Pain:
+		KEEN M 12 A_Pain
+		KEEN A -1 
+		goto Spawn
+	Death:
+		TFOG A 0 A_Scream
+		TFOG A 0 A_KeenDie
+		TFOG ABABCDEFGHIJ 6 Bright 
+		stop
+	}
+}
+
+Actor Lexicon_GD64_DeadLostSoul : DeadLostSoul
+{
+	Health 8000
+	Speed 24
+	Radius 40
+	Height 110
+	ReactionTime 1
+	PainChance 32
+	Mass 1000
+	+SOLID
+	+SHOOTABLE
+	+NOGRAVITY
+	+FLOAT
+	+COUNTKILL
+	SeeSound "cyber/sight"
+	PainSound "demon/pain"
+	DeathSound "misc/teleport"
+	ActiveSound "demon/active"
+	States
+	{
+	Spawn:
+		LX60 A 10 A_Look
+		goto Spawn
+	See:
+		LX60 AB 3 A_Chase
+		goto See
+	Pain:
+		LX60 E 12 A_BrainPain
+		LX60 C 8 A_FaceTarget
+		LX60 D 8 Bright A_CyberAttack
+		LX60 AB 3 A_Chase
+		goto See
+	Missile:
+		LX60 C 12 A_FaceTarget
+		LX60 D 0 Bright A_FatAttack1
+		LX60 D 0 Bright A_FatAttack2
+		LX60 D 3 Bright A_FatAttack3
+		LX60 C 6 A_FaceTarget
+		LX60 D 3 Bright A_SkelMissile
+		LX60 C 24 A_FaceTarget
+	State_774:
+		LX60 C 2 A_FaceTarget
+		LX60 D 2 Bright A_BspiAttack
+		LX60 C 0 A_SpidRefire
+		goto State_774
+	Death:
+		LX60 E 24 A_BrainPain
+		LX60 E 0 A_Scream
+		LX60 E 0 A_KeenDie
+		TFOG ABABCDEFGHIJ 6 Bright 
+		stop
+	}
+}
+
+Actor Lexicon_GD64_GibbedMarineExtra : GibbedMarineExtra
+{
+	Health 6000
+	Speed 24
+	Radius 40
+	Height 110
+	PainChance 32
+	Mass 1000
+	+SOLID
+	+SHOOTABLE
+	+NOGRAVITY
+	+FLOAT
+	+COUNTKILL
+	SeeSound "cyber/sight"
+	PainSound "demon/pain"
+	DeathSound "brain/death"
+	ActiveSound "demon/active"
+	States
+	{
+	Spawn:
+		LX60 A 10 A_Look
+		goto Spawn
+	See:
+		LX60 AB 3 A_Chase
+		goto See
+	Pain:
+		LX60 E 24 A_BrainPain
+		LX60 C 6 A_BrainAwake
+		LX60 DD 12 Bright A_BrainSpit
+		LX60 AB 3 A_Chase
+		goto See
+	Missile:
+		LX60 C 12 A_FaceTarget
+		LX60 D 0 Bright A_FatAttack1
+		LX60 D 0 Bright A_FatAttack2
+		LX60 D 3 Bright A_FatAttack3
+		LX60 C 6 A_FaceTarget
+		LX60 D 3 Bright A_SkelMissile
+		LX60 C 24 A_FaceTarget
+	State_774:
+		LX60 C 2 A_FaceTarget
+		LX60 D 2 Bright A_BspiAttack
+		LX60 C 0 A_SpidRefire
+		goto State_774
+	Death:
+		LX60 E 10 
+		LX60 F 10 A_Scream
+		LX60 GHIJKL 10 
+		LX60 M 64 
+		LX60 M 0 A_BrainDie
+		stop
+	}
+}
+
+Actor Lexicon_GD64_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("GD64/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}

@@ -1,0 +1,105 @@
+NOTE - BOURGFIX is still compatible with demos recorded for BOURGDM.WAD!
+The _only_ change is that the exits are now silent rather than having 
+a "BIG BADDA BOOM" as Coincident so eloquently described it :)
+
+===========================================================================
+Advanced engine needed  : 100% vanilla compatible
+Primary purpose         : Single player, Cooperative, Deathmatch
+===========================================================================
+Title                   : Bourgeois Megawad
+Filename                : BourgFix.wad, BourgFix.deh (Previously bourgdm.wad, bourgdm.deh)
+Release date            : Feb. 8th, 2021 - EXIT SOUND FIX Jun. 1st, 2021
+Author                  : Decay, Doomkid, Razgriz
+Email Address           : thedevilzworker@hotmail.com
+Other Files By Author   : Too many to list!
+
+Description             : 30 maps suitable for Deathmatch, Singleplayer, or
+                          Cooperative. This set is a combination of brand new
+                          levels and remixed/demade maps from the authors'
+                          previous projects: Don't Be A Bitch Remastered
+                          (dbabrm.pk3), Aeon Deathmatch (AeonDM.pk3),
+                          Progressive Duel 2 (Progduel2.pk3) and Neon
+                          Deathmatch (NeonDM.pk3) which required advanced
+                          engines but are now completely vanilla and Unity
+                          compatible. It was not an easy task bringing them
+                          from UDMF format for Zandronum to vanilla! Although
+                          it is primarily a Deathmatch set, it is fully
+                          Single Player and Cooperative compatible, with
+                          changes in the map layouts to make them more
+                          interesting. Additionally, difficulty settings have
+                          been thoroughly implemented. Enjoy!
+                          
+                          Note: Press F1 in game for map authors. Decay did
+                          the SP gameplay alterations for all maps except for
+                          04, 07 (Doomkid did these) and 10, 22 (Razgriz did
+                          these... mostly..)
+
+Additional Credits to   : All new textures are patched from stock textures
+                          either in Slade or MS Paint by one of the authors.
+                          The handful of new MIDIs files are by Doomkid, the
+                          rest are taken from Doom, Doom 2 and Final Doom.
+                          
+                          A warm thank you to FrancisT18, Terminus (Moti),
+                          xvertigox, rdwpa, Michaelis, Krawa,
+                          Keyboard_Doomer, Mr.Crispy, OpenRift, Lil_Ruff,
+                          finnks13, maxmanium, Lol 6, ReaperAA, Uni and
+                          anyone else who either tested or participated in
+                          the project threads or commented in some way -
+                          you're all awesome!
+===========================================================================
+* What is included *
+
+New levels              : 30
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : optional music packs
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : Map01 - Map30 (No Map31 or Map32)
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : Survival
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Half the maps are new, half are heavily remixed
+                          from prior projects.
+Build Time              : About 4 months, give or take.
+Editor(s) used          : GZDoom Builder, Slade3, XWE, WDC, etc.
+Known Bugs              : No known bugs, please report them to us if you find
+                          them.
+May Not Run With        : 100% Vanilla and Unity copatible.
+Tested With             : vanilla, chocolate, gzdoom, zdaemon, odamex,
+                          zandronum, unity, etc etc..
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: doomshack.org
+           doomworld.com
+           allfearthesentinel.net
+           etc.

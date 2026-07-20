@@ -1,0 +1,80 @@
+Texture "FRDM0002", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "FRDM0003", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "FRDM0007", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "FRDM0008", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "FRDM0017", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "FRDM0022", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "FRDM0023", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "FRDM0037", 0, 79
+	Patch "FRDM0037", 64, 15
+}
+Texture "FRDM0025", 128, 128
+{
+	Patch "FRDM0039", 0, 56
+	Patch "FRDM0040", 64, 56
+	Patch "FRDM0039", 0, 0
+	Patch "FRDM0040", 64, 0
+}
+Texture "FRDM0027", 16, 128
+{
+	Patch "FRDM0041", -4, 56
+	Patch "FRDM0041", -4, 0
+}
+Texture "FRDM0028", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}

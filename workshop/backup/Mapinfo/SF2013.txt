@@ -499,6 +499,7 @@ map SF330 lookup "Chronoblast"
 {
 	titlepatch = "SF3LV29"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SF3SKY3"
 	ExitPic = "SF3LV35"

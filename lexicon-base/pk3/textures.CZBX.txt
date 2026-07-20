@@ -1,0 +1,297 @@
+Texture "CZBX0028", 64, 128
+{
+	Patch "CZBX0141", 0, 0
+	Patch "CZBX0142", 32, 0
+	Patch "CZBX0141", 0, 64
+	Patch "CZBX0142", 32, 64
+}
+Texture "CZBX0029", 64, 128
+{
+	Patch "CZBX0144", 0, 0
+	Patch "CZBX0145", 32, 0
+	Patch "CZBX0144", 0, 64
+	Patch "CZBX0145", 32, 64
+}
+Texture "CZBX0030", 64, 128
+{
+	Patch "CZBX0144", 0, 0
+	Patch "CZBX0145", 32, 0
+	Patch "CZBX0141", 0, 64
+	Patch "CZBX0142", 32, 64
+}
+Texture "CZBX0031", 64, 128
+{
+	Patch "CZBX0146", 0, 0
+	Patch "CZBX0146", 32, 0
+	Patch "CZBX0141", 0, 64
+	Patch "CZBX0142", 32, 64
+}
+Texture "CZBX0032", 128, 128
+{
+	Patch "CZBX0141", 0, 64
+	Patch "CZBX0150", 40, 64
+	Patch "CZBX0150", 32, 64
+	Patch "CZBX0150", 48, 64
+	Patch "CZBX0150", 56, 64
+	Patch "CZBX0142", 96, 64
+	Patch "CZBX0150", 88, 64
+	Patch "CZBX0150", 80, 64
+	Patch "CZBX0150", 72, 64
+	Patch "CZBX0150", 64, 64
+	Patch "CZBX0144", 0, 0
+	Patch "CZBX0145", 96, 0
+	Patch "CZBX0149", 48, 0
+	Patch "CZBX0149", 40, 0
+	Patch "CZBX0149", 32, 0
+	Patch "CZBX0149", 72, 0
+	Patch "CZBX0149", 64, 0
+	Patch "CZBX0149", 56, 0
+	Patch "CZBX0149", 80, 0
+	Patch "CZBX0149", 88, 0
+}
+Texture "CZBX0033", 1024, 128
+{
+	Patch "CZBX0200", 0, 0
+	Patch "CZBX0201", 256, 0
+	Patch "CZBX0202", 512, 0
+	Patch "CZBX0203", 768, 0
+}
+Texture "CZBX0034", 1024, 128
+{
+	Patch "CZBX0204", 0, 0
+	Patch "CZBX0205", 256, 0
+	Patch "CZBX0206", 512, 0
+	Patch "CZBX0207", 768, 0
+}
+Texture "CZBX0035", 1024, 128
+{
+	Patch "CZBX0208", 0, 0
+	Patch "CZBX0209", 256, 0
+	Patch "CZBX0210", 512, 0
+	Patch "CZBX0211", 768, 0
+}
+Texture "CZBX0036", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "CZBX0037", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "CZBX0041", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "CZBX0042", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "CZBX0062", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "CZBX0063", 64, 128
+{
+	Patch "CZBX0132", 0, 0
+	Patch "CZBX0132", 16, 0
+	Patch "CZBX0132", 32, 0
+	Patch "CZBX0132", 48, 0
+}
+Texture "CZBX0072", 64, 128
+{
+	Patch "CZBX0141", 0, 0
+	Patch "CZBX0142", 32, 0
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0154", 32, 64
+}
+Texture "CZBX0073", 64, 128
+{
+	Patch "CZBX0144", 0, 0
+	Patch "CZBX0145", 32, 0
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0154", 32, 64
+}
+Texture "CZBX0074", 64, 128
+{
+	Patch "CZBX0151", 0, 0
+	Patch "CZBX0154", 32, 0
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0154", 32, 64
+}
+Texture "CZBX0075", 64, 128
+{
+	Patch "CZBX0146", 0, 0
+	Patch "CZBX0146", 32, 0
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0154", 32, 64
+}
+Texture "CZBX0076", 64, 128
+{
+	Patch "CZBX0152", 0, 0
+	Patch "CZBX0152", 32, 0
+	Patch "CZBX0141", 0, 64
+	Patch "CZBX0142", 32, 64
+}
+Texture "CZBX0077", 64, 128
+{
+	Patch "CZBX0152", 0, 0
+	Patch "CZBX0152", 32, 0
+	Patch "CZBX0144", 0, 64
+	Patch "CZBX0145", 32, 64
+}
+Texture "CZBX0078", 128, 128
+{
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0153", 40, 64
+	Patch "CZBX0153", 32, 64
+	Patch "CZBX0153", 48, 64
+	Patch "CZBX0153", 56, 64
+	Patch "CZBX0154", 96, 64
+	Patch "CZBX0153", 88, 64
+	Patch "CZBX0153", 80, 64
+	Patch "CZBX0153", 72, 64
+	Patch "CZBX0153", 64, 64
+	Patch "CZBX0144", 0, 0
+	Patch "CZBX0145", 96, 0
+	Patch "CZBX0149", 48, 0
+	Patch "CZBX0149", 40, 0
+	Patch "CZBX0149", 32, 0
+	Patch "CZBX0149", 72, 0
+	Patch "CZBX0149", 64, 0
+	Patch "CZBX0149", 56, 0
+	Patch "CZBX0149", 80, 0
+	Patch "CZBX0149", 88, 0
+}
+Texture "CZBX0079", 128, 128
+{
+	Patch "CZBX0151", 0, 64
+	Patch "CZBX0153", 40, 64
+	Patch "CZBX0153", 32, 64
+	Patch "CZBX0153", 48, 64
+	Patch "CZBX0153", 56, 64
+	Patch "CZBX0154", 96, 64
+	Patch "CZBX0153", 88, 64
+	Patch "CZBX0153", 80, 64
+	Patch "CZBX0153", 72, 64
+	Patch "CZBX0153", 64, 64
+	Patch "CZBX0141", 0, 0
+	Patch "CZBX0142", 96, 0
+	Patch "CZBX0150", 48, 0
+	Patch "CZBX0150", 40, 0
+	Patch "CZBX0150", 32, 0
+	Patch "CZBX0150", 72, 0
+	Patch "CZBX0150", 64, 0
+	Patch "CZBX0150", 56, 0
+	Patch "CZBX0150", 80, 0
+	Patch "CZBX0150", 88, 0
+}
+Texture "CZBX0088", 256, 128
+{
+	Patch "CZBX0087", 0, 0
+	Patch "CZBX0087", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "CZBX0089", 256, 128
+{
+	Patch "CZBX0087", 0, 0
+	Patch "CZBX0087", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "CZBX0092", 64, 128
+{
+	Patch "CZBX0167", 0, 0
+	Patch "CZBX0168", 0, 64
+}
+Texture "CZBX0093", 64, 128
+{
+	Patch "CZBX0183", 0, 0
+	Patch "CZBX0184", 0, 64
+}
+Texture "CZBX0094", 64, 128
+{
+	Patch "CZBX0185", 0, 0
+	Patch "CZBX0186", 0, 64
+}
+Texture "CZBX0095", 256, 128
+{
+	Patch "CZBX0169", 26, 64
+	Patch "CZBX0170", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "CZBX0169", 28, 0
+	Patch "CZBX0171", 72, 64
+	Patch "CZBX0172", 0, 0
+	Patch "CZBX0169", 176, 0
+	Patch "CZBX0169", 128, 64
+	Patch "CZBX0169", 112, 0
+	Patch "CZBX0169", 160, 64
+	Patch "CZBX0169", 136, 0
+	Patch "CZBX0173", 200, 0
+	Patch "CZBX0174", 200, 64
+	Patch "CZBX0175", 136, 64
+	Patch "CZBX0176", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+Texture "CZBX0098", 16, 128
+{
+	Patch "CZBX0178", 0, 0
+	Patch "CZBX0179", 8, 0
+	Patch "CZBX0178", 0, 8
+	Patch "CZBX0179", 8, 8
+	Patch "CZBX0178", 0, 16
+	Patch "CZBX0179", 8, 16
+	Patch "CZBX0178", 0, 24
+	Patch "CZBX0179", 8, 24
+	Patch "CZBX0178", 0, 32
+	Patch "CZBX0179", 8, 32
+	Patch "CZBX0178", 0, 40
+	Patch "CZBX0179", 8, 40
+	Patch "CZBX0178", 0, 48
+	Patch "CZBX0179", 8, 48
+	Patch "CZBX0178", 0, 56
+	Patch "CZBX0179", 8, 56
+	Patch "CZBX0178", 0, 64
+	Patch "CZBX0179", 8, 64
+	Patch "CZBX0178", 0, 72
+	Patch "CZBX0179", 8, 72
+	Patch "CZBX0178", 0, 80
+	Patch "CZBX0179", 8, 80
+	Patch "CZBX0178", 0, 88
+	Patch "CZBX0179", 8, 88
+	Patch "CZBX0178", 0, 96
+	Patch "CZBX0179", 8, 96
+	Patch "CZBX0178", 0, 104
+	Patch "CZBX0179", 8, 104
+	Patch "CZBX0178", 0, 112
+	Patch "CZBX0179", 8, 112
+	Patch "CZBX0178", 0, 120
+	Patch "CZBX0179", 8, 120
+}
+Texture "CZBX0099", 128, 128
+{
+	Patch "CZBX0163", 0, 56
+	Patch "CZBX0164", 64, 56
+	Patch "CZBX0163", 0, 0
+	Patch "CZBX0164", 64, 0
+}

@@ -1,0 +1,83 @@
+object Lexicon_EPC2_BurningBarrel
+{
+    frame LX33 { light FIREBARREL }
+}
+
+object Lexicon_HLTP_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame LX42U { light PLASMA_X1 }
+    frame LX42V { light PLASMA_X2 }
+    frame LX42W { light PLASMA_X2 }
+    frame LX42X { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+pointlight Lexicon_MY17_BFGBALL
+{
+    color 1.0 1.0 0.0
+    size 80
+}
+
+flickerlight Lexicon_MY17_BFGBALL_X1
+{
+    color 1.0 1.0 0.2
+    size 80
+    secondarySize 88
+    chance 0.3
+}
+
+flickerlight Lexicon_MY17_BFGBALL_X2
+{
+    color 1.0 1.0 0.3
+    size 104
+    secondarySize 112
+    chance 0.3
+}
+
+flickerlight Lexicon_MY17_BFGBALL_X3
+{
+    color 1.0 1.0 0.5
+    size 120
+    secondarySize 128
+    chance 0.3
+}
+
+flickerlight Lexicon_MY17_BFGBALL_X4
+{
+    color 0.7 0.7 0.2
+    size 56
+    secondarySize 64
+    chance 0.3
+}
+
+flickerlight Lexicon_MY17_BFGBALL_X5
+{
+    color 0.3 0.3 0.1
+    size 48
+    secondarySize 56
+    chance 0.3
+}
+
+object Lexicon_HLTP_BFGBall
+{
+    frame LX43F { light Lexicon_MY17_BFGBALL }
+    frame LX43G { light Lexicon_MY17_BFGBALL }
+
+    frame LX43H { light Lexicon_MY17_BFGBALL_X1 }
+    frame LX43I { light Lexicon_MY17_BFGBALL_X2 }
+    frame LX43J { light Lexicon_MY17_BFGBALL_X3 }
+    frame LX43K { light Lexicon_MY17_BFGBALL_X1 }
+    frame LX43L { light Lexicon_MY17_BFGBALL_X4 }
+    frame LX43M { light Lexicon_MY17_BFGBALL_X5 }
+}
+
+object Lexicon_HLTP_BFGExtra
+{
+    frame LX43N { light Lexicon_MY17_BFGBALL    }
+    frame LX43O { light Lexicon_MY17_BFGBALL_X1 }
+    frame LX43P { light Lexicon_MY17_BFGBALL_X4 }
+    frame LX43Q { light Lexicon_MY17_BFGBALL_X5 }
+}

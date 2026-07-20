@@ -1,0 +1,394 @@
+// Destiny Doom Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DESD01 "Nova Base"
+{
+	titlepatch = "DESDV00"
+	next = "DESD02"
+	secretnext = "DESD02"
+	sky1 = "DESD0141"
+	music = "D_DESD01"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD02 "Columns"
+{
+	titlepatch = "DESDV01"
+	next = "DESD03"
+	secretnext = "DESD03"
+	sky1 = "DESD0141"
+	music = "D_DESD02"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD03 "SS Blue Station"
+{
+	titlepatch = "DESDV02"
+	next = "DESD04"
+	secretnext = "DESD04"
+	sky1 = "DESD0141"
+	music = "D_DESD03"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD04 "Marble Fever"
+{
+	titlepatch = "DESDV03"
+	next = "DESD05"
+	secretnext = "DESD05"
+	sky1 = "DESD0141"
+	music = "D_DESD04"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD05 "Ultimate Station"
+{
+	titlepatch = "DESDV04"
+	next = "DESD06"
+	secretnext = "DESD06"
+	sky1 = "DESD0141"
+	music = "D_DESD05"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD06 "Metal Base"
+{
+	titlepatch = "DESDV05"
+	next = "DESD07"
+	secretnext = "DESD07"
+	sky1 = "DESD0141"
+	music = "D_DESD06"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD07 "Dead Simple"
+{
+	titlepatch = "DESDV06"
+	next = "DESD08"
+	secretnext = "DESD08"
+	sky1 = "DESD0141"
+	music = "D_DESD07"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+	Map07Special
+}
+
+map DESD08 "Synth Streets"
+{
+	titlepatch = "DESDV07"
+	next = "DESD09"
+	secretnext = "DESD09"
+	sky1 = "DESD0141"
+	music = "D_DESD08"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD09 "Doom1 Fever"
+{
+	titlepatch = "DESDV08"
+	next = "DESD10"
+	secretnext = "DESD10"
+	sky1 = "DESD0141"
+	music = "D_DESD09"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD10 "SS Blue Station 2"
+{
+	titlepatch = "DESDV09"
+	next = "DESD11"
+	secretnext = "DESD11"
+	sky1 = "DESD0141"
+	music = "D_DESD10"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD11 "Oldschool Fever"
+{
+	titlepatch = "DESDV10"
+	next = "DESD12"
+	secretnext = "DESD12"
+	sky1 = "DESD0141"
+	music = "D_DESD11"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD12 "Woodhouse Lava"
+{
+	titlepatch = "DESDV11"
+	next = "DESD13"
+	secretnext = "DESD13"
+	sky1 = "DESD0142"
+	music = "D_DESD12"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD13 "Marble Fever 2"
+{
+	titlepatch = "DESDV12"
+	next = "DESD14"
+	secretnext = "DESD14"
+	sky1 = "DESD0142"
+	music = "D_DESD13"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD14 "Mini Flavor"
+{
+	titlepatch = "DESDV13"
+	next = "DESD15"
+	secretnext = "DESD15"
+	sky1 = "DESD0142"
+	music = "D_DESD14"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD15 "Cyber Station"
+{
+	titlepatch = "DESDV14"
+	next = "DESD16"
+	secretnext = "DESD31"
+	sky1 = "DESD0142"
+	music = "D_DESD15"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD16 "Factory Deluxe"
+{
+	titlepatch = "DESDV15"
+	next = "DESD17"
+	secretnext = "DESD17"
+	sky1 = "DESD0142"
+	music = "D_DESD16"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD17 "Out of Base"
+{
+	titlepatch = "DESDV16"
+	next = "DESD18"
+	secretnext = "DESD18"
+	sky1 = "DESD0142"
+	music = "D_DESD17"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD18 "Nukage Base"
+{
+	titlepatch = "DESDV17"
+	next = "DESD19"
+	secretnext = "DESD19"
+	sky1 = "DESD0142"
+	music = "D_DESD18"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD19 "Volcano Woodhouse"
+{
+	titlepatch = "DESDV18"
+	next = "DESD20"
+	secretnext = "DESD20"
+	sky1 = "DESD0142"
+	music = "D_DESD19"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD20 "SS Blue Station 3"
+{
+	titlepatch = "DESDV19"
+	next = "DESD21"
+	secretnext = "DESD21"
+	sky1 = "DESD0142"
+	music = "D_DESD20"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD21 "Columns 2"
+{
+	titlepatch = "DESDV20"
+	next = "DESD22"
+	secretnext = "DESD22"
+	sky1 = "DESD0143"
+	music = "D_DESD21"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD22 "Mt. Erebus"
+{
+	titlepatch = "DESDV21"
+	next = "DESD23"
+	secretnext = "DESD23"
+	sky1 = "DESD0143"
+	music = "D_DESD22"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD23 "Ultimate Fighters"
+{
+	titlepatch = "DESDV22"
+	next = "DESD24"
+	secretnext = "DESD24"
+	sky1 = "DESD0143"
+	music = "D_DESD23"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD24 "SS Blue Station 4"
+{
+	titlepatch = "DESDV23"
+	next = "DESD25"
+	secretnext = "DESD25"
+	sky1 = "DESD0143"
+	music = "D_DESD24"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD25 "Containment Deluxe"
+{
+	titlepatch = "DESDV24"
+	next = "DESD26"
+	secretnext = "DESD26"
+	sky1 = "DESD0143"
+	music = "D_DESD25"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD26 "Deimos Fap"
+{
+	titlepatch = "DESDV25"
+	next = "DESD27"
+	secretnext = "DESD27"
+	sky1 = "DESD0143"
+	music = "D_DESD26"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD27 "Trouble Center"
+{
+	titlepatch = "DESDV26"
+	next = "DESD28"
+	secretnext = "DESD28"
+	sky1 = "DESD0143"
+	music = "D_DESD27"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD28 "Wolfenstein Special"
+{
+	titlepatch = "DESDV27"
+	next = "DESD29"
+	secretnext = "DESD29"
+	sky1 = "DESD0143"
+	music = "D_DESD28"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD29 "Archi Terror"
+{
+	titlepatch = "DESDV28"
+	next = "DESD30"
+	secretnext = "DESD30"
+	sky1 = "DESD0143"
+	music = "D_DESD29"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD30 "LA Memories"
+{
+	titlepatch = "DESDV29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DESD0143"
+	music = "D_DESD30"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+	allowmonstertelefrags
+}
+
+map DESD31 "Uhrensohn"
+{
+	titlepatch = "DESDV30"
+	next = "DESD16"
+	secretnext = "DESD32"
+	sky1 = "DESD0143"
+	music = "D_DESD31"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}
+
+map DESD32 "Black Mamba"
+{
+	titlepatch = "DESDV31"
+	next = "DESD16"
+	secretnext = "DESD16"
+	sky1 = "DESD0143"
+	music = "D_DESD32"
+	intermusic = "D_DESDIN"
+	ExitPic = "DESDINT"
+	EnterPic = "DESDINT"
+}

@@ -1,0 +1,175 @@
+// Barrel
+pulselight Lexicon_SDX6_BARREL
+{
+	color 0.5 0.0 0.5
+	size 20
+	secondarySize 21
+	interval 0.5
+	offset 0 36 0
+}
+
+object Lexicon_SDX6_ExplosiveBarrel
+{
+	frame LX02W { light Lexicon_SDX6_BARREL }
+	frame LX02X { light Lexicon_SDX6_BARREL }
+
+	frame BEXPC { light ROCKET_X1 }
+	frame BEXPD { light ROCKET_X2 }
+	frame BEXPE { light ROCKET_X3 }
+}
+
+// Small purple torch
+flickerlight2 Lexicon_SDX6_SMALLPURPLETORCH
+{
+	color 1.0 0.0 1.0
+	size 48
+	secondarySize 54
+	interval 0.1
+	offset 0 35 0
+}
+
+object Lexicon_SDX6_ShortGreenTorch
+{
+	frame LX03 { light Lexicon_SDX6_SMALLPURPLETORCH }
+}
+
+// Invulnerability Sphere
+pulselight Lexicon_SDX6_INVULN
+{
+	color 1.0 0.0 1.0
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+object Lexicon_SDX6_InvulnerabilitySphere
+{
+	frame LX03 { light Lexicon_SDX6_INVULN }
+}
+
+// Armour Helmet
+pulselight Lexicon_SDX6_ARMORBONUS
+{
+	color 0.6 0.0 0.6
+	size 16
+	secondarySize 14
+	interval 1.0
+}
+
+object Lexicon_SDX6_ArmorBonus
+{
+	frame BON2 { light Lexicon_SDX6_ARMORBONUS }
+	frame LX02 { light Lexicon_SDX6_ARMORBONUS }
+}
+
+// Purple armour
+pointlight Lexicon_SDX6_PURPLEARMOR1
+{
+	color 0.6 0.0 0.6
+	size 48
+}
+
+pointlight Lexicon_SDX6_PURPLEARMOR2
+{
+	color 0.6 0.0 0.6
+	size 32
+}
+
+object Lexicon_SDX6_GreenArmor
+{
+	frame LX02P { light Lexicon_SDX6_PURPLEARMOR1 }
+	frame LX02Q { light Lexicon_SDX6_PURPLEARMOR2 }
+}
+
+// Baron / Hell Knight fireball
+pointlight Lexicon_SDX6_BARONBALL
+{
+	color 1.0 0.0 1.0
+	size 64
+}
+
+flickerlight Lexicon_SDX6_BARONBALL_X1
+{
+	color 0.7 0.0 0.7
+	size 80
+	secondarySize 88
+	chance 0.25
+}
+
+flickerlight Lexicon_SDX6_BARONBALL_X2
+{
+	color 0.4 0.0 0.4
+	size 96
+	secondarySize 104
+	chance 0.25
+}
+
+flickerlight Lexicon_SDX6_BARONBALL_X3
+{
+	color 0.2 0.0 0.2
+	size 112
+	secondarySize 120
+	chance 0.25
+}
+
+object Lexicon_SDX6_BaronBall
+{
+	frame LX02R { light Lexicon_SDX6_BARONBALL }
+	frame LX02S { light Lexicon_SDX6_BARONBALL }
+
+	frame LX02T { light Lexicon_SDX6_BARONBALL_X1 }
+	frame LX02U { light Lexicon_SDX6_BARONBALL_X2 }
+	frame LX02V { light Lexicon_SDX6_BARONBALL_X3 }
+}
+
+// Arachnotron Fireball
+pointlight Lexicon_SDX6_ARACHPLAS
+{
+	color 1.0 0.0 1.0
+	size 56
+}
+
+flickerlight Lexicon_SDX6_ARACHPLAS_X1
+{
+	color 0.8 0.0 0.8
+	size 72
+	secondarySize 80
+	chance 0.3
+}
+
+flickerlight Lexicon_SDX6_ARACHPLAS_X2
+{
+	color 0.6 0.0 0.6
+	size 88
+	secondarySize 96
+	chance 0.3
+}
+
+flickerlight Lexicon_SDX6_ARACHPLAS_X3
+{
+	color 0.4 0.0 0.4
+	size 48
+	secondarySize 32
+	chance 0.3
+}
+
+flickerlight Lexicon_SDX6_ARACHPLAS_X4
+{
+	color 0.2 0.0 0.2
+	size 24
+	secondarySize 16
+	chance 0.3
+}
+
+object Lexicon_SDX6_ArachnotronPlasma
+{
+	frame LX02N { light Lexicon_SDX6_ARACHPLAS }
+	frame LX02O { light Lexicon_SDX6_ARACHPLAS }
+
+	frame LX02M { light Lexicon_SDX6_ARACHPLAS_X1 }
+	frame APBXB { light Lexicon_SDX6_ARACHPLAS_X2 }
+	frame APBXC { light Lexicon_SDX6_ARACHPLAS_X2 }
+	frame APBXD { light Lexicon_SDX6_ARACHPLAS_X3 }
+	frame APBXE { light Lexicon_SDX6_ARACHPLAS_X4 }
+}

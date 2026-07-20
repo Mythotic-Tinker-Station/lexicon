@@ -1,0 +1,19 @@
+Actor Lexicon_DTHL_LostSoul : LostSoul { Health 70 }
+
+Actor Lexicon_DTHL_SpiderMastermind : SpiderMastermind
+{
+	Speed 16
+	Radius 88
+	Health 3500
+	PainChance 20
+}
+
+Actor Lexicon_DTHL_Soulsphere : Soulsphere
+{
+	States
+	{
+	Spawn:
+		LW75 WXYZYX 6 Bright
+		Loop
+	}
+}

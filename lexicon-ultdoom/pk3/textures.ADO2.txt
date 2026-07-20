@@ -1,0 +1,311 @@
+Texture "ADO20045", 128, 96
+{
+	Patch "ADO20155", 0, 0
+	Patch "ADO20155", 96, 0
+}
+Texture "ADO20046", 128, 96
+{
+	Patch "ADO20156", 0, 0
+	Patch "ADO20156", 96, 0
+}
+Texture "ADO20047", 128, 65
+{
+	Patch "ADO20157", 0, 0
+	Patch "ADO20157", 96, 0
+}
+Texture "ADO20048", 128, 96
+{
+	Patch "ADO20158", 0, 0
+	Patch "ADO20158", 96, 0
+}
+Texture "ADO20049", 128, 64
+{
+	Patch "ADO20159", 0, 0
+	Patch "ADO20159", 96, 0
+}
+Texture "ADO20050", 128, 96
+{
+	Patch "ADO20160", 0, 0
+	Patch "ADO20160", 96, 0
+}
+Texture "ADO20051", 128, 64
+{
+	Patch "ADO20161", 0, 0
+	Patch "ADO20161", 96, 0
+}
+Texture "ADO20056", 256, 104
+{
+	Patch "ADO20162", 0, 0
+	Patch "ADO20163", 128, 0
+}
+Texture "ADO20057", 256, 104
+{
+	Patch "ADO20169", 0, 0
+	Patch "ADO20170", 128, 0
+}
+Texture "ADO20058", 256, 104
+{
+	Patch "ADO20164", 0, 0
+	Patch "ADO20165", 128, 0
+}
+Texture "ADO20059", 256, 104
+{
+	Patch "ADO20166", 0, 0
+	Patch "ADO20167", 128, 0
+}
+Texture "ADO20060", 256, 104
+{
+	Patch "ADO20176", 0, 0
+	Patch "ADO20177", 128, 0
+}
+Texture "ADO20061", 256, 104
+{
+	Patch "ADO20178", 0, 0
+	Patch "ADO20179", 128, 0
+}
+Texture "ADO20062", 256, 104
+{
+	Patch "ADO20180", 0, 0
+	Patch "ADO20181", 128, 0
+}
+Texture "ADO20066", 256, 96
+{
+	Patch "ADO20174", 0, 0
+	Patch "ADO20175", 128, 0
+}
+Texture "ADO20067", 256, 104
+{
+	Patch "ADO20168", 0, 0
+	Patch "ADO20167", 128, 0
+}
+Texture "ADO20070", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ADO20071", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "ADO20072", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "ADO20073", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "ADO20074", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "ADO20075", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "ADO20076", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "ADO20077", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "ADO20078", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "ADO20079", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "ADO20081", 1024, 128
+{
+	Patch "ADO20203", 0, 0
+	Patch "ADO20204", 256, 0
+	Patch "ADO20205", 512, 0
+	Patch "ADO20206", 768, 0
+}
+Texture "ADO20084", 64, 128
+{
+	Patch "ADO20143", 0, 0
+	Patch "ADO20143", 32, 64
+	Patch "ADO20143", -32, 64
+}
+Texture "ADO20085", 64, 128
+{
+	Patch "ADO20143", 0, 0
+	Patch "ADO20144", 0, 64
+	Patch "ADO20143", 0, 32
+}
+Texture "ADO20086", 64, 128
+{
+	Patch "ADO20144", 0, 0
+	Patch "ADO20144", 32, 64
+	Patch "ADO20144", -32, 64
+}
+Texture "ADO20090", 256, 96
+{
+	Patch "ADO20068", 0, -32
+	Patch "ADO20068", 64, -16
+	Patch "ADO20068", 128, 0
+	Patch "ADO20068", 192, 0
+	Patch "ADO20174", -42, 0
+	Patch "ADO20175", 86, 0
+	Patch "ADO20174", 214, 0
+}
+Texture "ADO20094", 128, 128
+{
+	Patch "MWALL2_1", 0, 0
+	Patch "ADO20092", 0, 64
+	Patch "ADO20091", 64, 64
+}
+Texture "ADO20095", 128, 128
+{
+	Patch "MWALL3_1", 0, 0
+	Patch "ADO20091", 0, 64
+	Patch "ADO20092", 35, 87
+	Patch "ADO20091", 64, 64
+}
+Texture "ADO20096", 128, 128
+{
+	Patch "MWALL1_1", 0, 0
+	Patch "ADO20091", 64, 64
+	Patch "ADO20092", 0, 64
+}
+Texture "ADO20125", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20126", 256, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "WALL62_2", 64, 0
+	Patch "WALL62_2", 128, 0
+	Patch "WALL62_2", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "ADO20127", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL62_1", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "ADO20128", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL62_1", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20129", 64, 128
+{
+	Patch "GCRATEL1", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "BCRATEL1", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+Texture "ADO20130", 256, 128
+{
+	Patch "ADO20069", 0, 0
+	Patch "ADO20069", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20132", 256, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "WALL00_1", 64, 0
+	Patch "WALL00_1", 128, -16
+	Patch "WALL00_1", 192, -16
+	Patch "W107_1", 0, 0
+}
+Texture "ADO20133", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20134", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "ADO20137", 256, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "WLA128_1", 64, 0
+	Patch "WLA128_1", 128, 0
+	Patch "WLA128_1", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20138", 256, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "WLA128_1", 64, 0
+	Patch "WLA128_1", 128, 0
+	Patch "WLA128_1", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "ADO20139", 256, 128
+{
+	Patch "WALL40_1", 128, 0
+	Patch "WALL40_2", 0, 0
+	Patch "W106_1", 0, 0
+}
+Texture "ADO20140", 256, 128
+{
+	Patch "WALL40_1", 128, 0
+	Patch "WALL40_2", 0, 0
+	Patch "W107_1", 0, 0
+}

@@ -1,0 +1,366 @@
+WallTexture "HLC10104", 24, 72
+{
+    Patch "WALL00_3", 0, 0
+    Patch "WALL00_3", 12, -6
+}
+
+WallTexture "HLC10135", 128, 72
+{
+    Patch "HLC10366", 67, -32
+    Patch "HLC10919", 0, 0
+}
+
+WallTexture "HLC10137", 128, 72
+{
+    Patch "HLC10366", 67, -11
+    Patch "HLC10921", 0, 0
+}
+
+WallTexture "HLC10224", 32, 64
+{
+    Patch "HLC10362", -18, -29
+    Patch "HLC10866", 0, 0
+}
+
+WallTexture "HLC10374", 64, 128
+{
+    Patch "WALL62_1", 0, 0
+    Patch "HLC10685", 0, 57
+}
+
+WallTexture "HLC10375", 256, 128
+{
+    Patch "HLC10585", 0, 0
+    Patch "HLC10586", 64, 0
+    Patch "HLC10587", 128, 0
+    Patch "HLC10588", 192, 0
+    Patch "HLC10589", 0, 64
+    Patch "HLC10590", 64, 64
+    Patch "HLC10591", 128, 64
+    Patch "HLC10592", 192, 64
+    Patch "HLC10572", 0, 56
+    Patch "HLC10572", 32, 56
+    Patch "HLC10572", 64, 56
+    Patch "HLC10572", 96, 56
+    Patch "HLC10572", 128, 56
+    Patch "HLC10572", 160, 56
+    Patch "HLC10572", 192, 56
+    Patch "HLC10572", 224, 56
+    Patch "HLC10572", 0, 120
+    Patch "HLC10572", 32, 120
+    Patch "HLC10572", 64, 120
+    Patch "HLC10572", 96, 120
+    Patch "HLC10572", 128, 120
+    Patch "HLC10572", 160, 120
+    Patch "HLC10572", 192, 120
+    Patch "HLC10572", 224, 120
+}
+
+WallTexture "HLC10376", 128, 128
+{
+    Patch "HLC10593", 0, 0
+    Patch "HLC10573", 32, 0
+    Patch "HLC10594", 96, 0
+    Patch "HLC10593", 0, 64
+    Patch "HLC10573", 32, 64
+    Patch "HLC10594", 96, 64
+}
+
+WallTexture "HLC10377", 128, 128
+{
+    Patch "HLC10595", 26, 64
+    Patch "HLC10596", 0, 64
+    Patch "HLC10562", 0, 56
+    Patch "HLC10562", 64, 56
+    Patch "HLC10562", 0, 120
+    Patch "HLC10562", 64, 120
+    Patch "HLC10595", 28, 0
+    Patch "HLC10597", 72, 64
+    Patch "HLC10598", 72, 0
+    Patch "HLC10599", 0, 0
+}
+
+WallTexture "HLC10378", 256, 56
+{
+    Patch "HLC10585", 0, 0
+    Patch "HLC10586", 64, 0
+    Patch "HLC10588", 128, 0
+    Patch "HLC10591", 192, 0
+}
+
+WallTexture "HLC10379", 128, 128
+{
+    Patch "HLC10564", 0, 4
+    Patch "HLC10600", 32, 4
+    Patch "HLC10564", 64, 4
+    Patch "HLC10585", 0, 0
+    Patch "HLC10600", 96, 4
+    Patch "HLC10586", 64, 0
+    Patch "HLC10572", 0, 56
+    Patch "HLC10572", 32, 56
+    Patch "HLC10572", 64, 56
+    Patch "HLC10572", 96, 56
+}
+
+WallTexture "HLC10380", 64, 128
+{
+    Patch "HLC10551", 0, 56
+    Patch "HLC10551", 0, 0
+    Patch "HLC10601", 5, 0
+    Patch "HLC10601", 35, 0
+}
+
+WallTexture "HLC10381", 16, 128
+{
+    Patch "HLC10567", 0, 56
+    Patch "HLC10574", 0, 0
+    Patch "HLC10575", 8, 0
+    Patch "HLC10574", 0, 48
+    Patch "HLC10575", 8, 48
+    Patch "HLC10574", 0, 40
+    Patch "HLC10575", 8, 40
+    Patch "HLC10574", 0, 32
+    Patch "HLC10575", 8, 32
+    Patch "HLC10574", 0, 24
+    Patch "HLC10575", 8, 24
+    Patch "HLC10574", 0, 16
+    Patch "HLC10575", 8, 16
+    Patch "HLC10574", 0, 8
+    Patch "HLC10575", 8, 8
+}
+
+WallTexture "HLC10383", 16, 128
+{
+    Patch "HLC10603", 0, 0
+    Patch "HLC10603", 0, 56
+}
+
+WallTexture "HLC10385", 256, 128
+{
+    Patch "AG128_1", 0, 0
+    Patch "HLC10605", 4, 69
+    Patch "AG128_1", 64, 0
+    Patch "HLC10606", 68, 69
+    Patch "AG128_1", 128, 0
+    Patch "HLC10607", 132, 69
+    Patch "HLC10608", 68, 7
+    Patch "HLC10609", 4, 7
+    Patch "HLC10610", 132, 7
+    Patch "AG128_1", 192, 0
+}
+
+WallTexture "HLC10386", 128, 128
+{
+    Patch "HLC10611", 0, 56
+    Patch "HLC10612", 64, 56
+    Patch "HLC10611", 0, 0
+    Patch "HLC10612", 64, 0
+}
+
+WallTexture "HLC10391", 64, 128
+{
+    Patch "HLC10565", 0, 0
+    Patch "HLC10566", 32, 0
+}
+
+WallTexture "HLC10392", 64, 128
+{
+    Patch "WALL01_1", 0, 0
+    Patch "WALL01_2", 16, 0
+    Patch "WALL01_3", 32, 0
+    Patch "WALL01_4", 48, 0
+    Patch "WALL01_1", 0, 72
+    Patch "WALL01_2", 16, 72
+    Patch "WALL01_3", 32, 72
+    Patch "WALL01_4", 48, 72
+    Patch "HLC10562", 0, 64
+    Patch "HLC10562", 0, 120
+    Patch "HLC10685", 1, 43
+}
+
+WallTexture "HLC10401", 256, 128
+{
+    Patch "HLC10551", 0, 56
+    Patch "HLC10551", 0, 0
+    Patch "HLC10550", 88, 56
+    Patch "HLC10550", 88, 0
+    Patch "HLC10552", 64, 56
+    Patch "HLC10552", 64, 0
+    Patch "HLC10552", 152, 56
+    Patch "HLC10552", 152, 0
+    Patch "HLC10552", 232, 56
+    Patch "HLC10551", 176, 56
+    Patch "HLC10552", 232, 0
+    Patch "HLC10551", 176, 0
+    Patch "HLC10414", 0, 0
+}
+
+WallTexture "HLC10402", 256, 72
+{
+    Patch "HLC10553", 0, 0
+    Patch "HLC10623", 128, 0
+    Patch "HLC10553", 64, 0
+    Patch "HLC10553", 192, 0
+}
+
+WallTexture "HLC10403", 128, 128
+{
+    Patch "WALL52_1", 0, 0
+    Patch "HLC10685", 0, 28
+}
+
+WallTexture "HLC10404", 128, 128
+{
+    Patch "HLC10624", 64, 70
+    Patch "HLC10625", 0, 70
+    Patch "HLC10626", 0, -2
+    Patch "HLC10624", 64, -2
+}
+
+WallTexture "HLC10405", 64, 128
+{
+    Patch "HLC10627", 0, 0
+    Patch "HLC10627", 0, 32
+    Patch "HLC10627", 0, 96
+    Patch "HLC10627", 0, 64
+}
+
+WallTexture "HLC10406", 64, 128
+{
+    Patch "HLC10561", 0, 0
+    Patch "HLC10561", 0, 64
+    Patch "HLC10628", 14, 74
+}
+
+WallTexture "HLC10407", 64, 72
+{
+    Patch "HLC10578", 0, 9
+    Patch "HLC10629", 0, 0
+}
+
+WallTexture "HLC10408", 64, 128
+{
+    Patch "HLC10578", 0, 0
+    Patch "HLC10630", 4, 0
+    Patch "HLC10560", 0, 64
+}
+
+WallTexture "HLC10409", 64, 128
+{
+    Patch "WALL62_1", -1, 0
+    Patch "HLC10601", 4, 18
+    Patch "HLC10601", 38, 18
+}
+
+WallTexture "HLC10410", 128, 128
+{
+    Patch "HLC10554", 0, 0
+    Patch "HLC10554", 64, 0
+    Patch "HLC10554", 0, 64
+    Patch "HLC10554", 64, 64
+    Patch "HLC10601", 81, 34
+    Patch "HLC10601", 19, 34
+}
+
+WallTexture "HLC10411", 16, 128
+{
+    Patch "HLC10631", -4, 56
+    Patch "HLC10631", -4, 0
+}
+
+WallTexture "HLC10412", 64, 128
+{
+    Patch "HLC10556", 0, 0
+    Patch "HLC10559", 0, 64
+    Patch "HLC10601", 7, 27
+    Patch "HLC10601", 37, 27
+}
+
+WallTexture "HLC10415", 64, 128
+{
+    Patch "HLC10632", 0, 0
+    Patch "HLC10633", 32, 0
+}
+
+WallTexture "HLC10416", 256, 128
+{
+    Patch "HLC10634", 0, 0
+    Patch "HLC10635", 128, 0
+}
+
+WallTexture "HLC10418", 128, 128
+{
+    Patch "HLC10637", -12, 0
+    Patch "HLC10637", 116, 0
+}
+
+WallTexture "HLC10419", 128, 128
+{
+    Patch "HLC10638", -4, 0
+    Patch "HLC10638", 124, 0
+}
+
+WallTexture "HLC10422", 128, 128
+{
+    Patch "HLC10557", 64, 64
+    Patch "HLC10558", 64, 0
+    Patch "HLC10557", 0, 0
+    Patch "HLC10558", 0, 64
+    Patch "HLC10641", 0, 79
+    Patch "HLC10641", 64, 15
+}
+
+WallTexture "HLC10423", 64, 128
+{
+    Patch "HLC10576", 0, 0
+    Patch "HLC10581", 24, 70
+}
+
+WallTexture "HLC10430", 256, 128
+{
+    Patch "HLC10647", 0, 0
+    Patch "HLC10648", 128, 0
+}
+
+WallTexture "HLC10486", 64, 128
+{
+    Patch "HLC10694", 0, 0
+    Patch "HLC10694", 0, 0
+}
+
+WallTexture "HLC10487", 64, 128
+{
+    Patch "HLC10695", 0, 0
+    Patch "HLC10695", 0, 0
+}
+
+WallTexture "HLC10488", 64, 128
+{
+    Patch "HLC10696", 0, 0
+    Patch "HLC10696", 0, 0
+}
+
+WallTexture "HLC10489", 1024, 240
+{
+    Patch "HLC10922", 0, 0
+    Patch "HLC10923", 256, 0
+    Patch "HLC10924", 512, 0
+    Patch "HLC10925", 768, 0
+}
+
+WallTexture "HLC10490", 1024, 240
+{
+    Patch "HLC10926", 0, 0
+    Patch "HLC10927", 256, 0
+    Patch "HLC10928", 512, 0
+    Patch "HLC10929", 768, 0
+}
+
+WallTexture "HLC10491", 1024, 240
+{
+    Patch "HLC10930", 0, 0
+    Patch "HLC10931", 256, 0
+    Patch "HLC10932", 512, 0
+    Patch "HLC10933", 768, 0
+}
+

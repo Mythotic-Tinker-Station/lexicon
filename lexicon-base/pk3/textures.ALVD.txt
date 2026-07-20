@@ -1,0 +1,342 @@
+WallTexture "ALVD0641", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD0955", 0, 0
+}
+
+WallTexture "ALVD0675", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD0644", 0, 0
+}
+
+WallTexture "ALVD0680", 256, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD0676", 128, 0
+	Patch "ALVD0992", 0, 2
+}
+
+WallTexture "ALVD0681", 256, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD0676", 128, 0
+	Patch "ALVD0993", 0, 13
+}
+
+WallTexture "ALVD0683", 64, 128
+{
+	Patch "ALVD0869", 0, 0
+	Patch "ALVD0996", 12, 16
+}
+
+WallTexture "ALVD0684", 64, 128
+{
+	Patch "ALVD0869", 0, 0
+	Patch "ALVD0997", 12, 16
+}
+
+WallTexture "ALVD0685", 64, 128
+{
+	Patch "ALVD0869", 0, 0
+	Patch "ALVD0998", 12, 16
+}
+
+WallTexture "ALVD0686", 64, 128
+{
+	Patch "ALVD0869", 0, 0
+	Patch "ALVD0999", 12, 16
+}
+
+WallTexture "ALVD0687", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1000", 0, 2
+}
+
+WallTexture "ALVD0688", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1001", 0, 1
+}
+
+WallTexture "ALVD0689", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1002", 0, 8
+}
+
+WallTexture "ALVD0690", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1003", 0, 5
+}
+
+WallTexture "ALVD0691", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1004", 0, 1
+}
+
+WallTexture "ALVD0693", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1006", 0, -1
+	Patch "ALVD1006", 64, -1
+}
+
+WallTexture "ALVD0694", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1007", 96, 0
+	Patch "ALVD1007", 64, 0
+	Patch "ALVD1007", 32, 0
+	Patch "ALVD1007", 0, 0
+}
+
+WallTexture "ALVD0695", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1008", 0, 0
+	Patch "ALVD1008", 64, 0
+}
+
+WallTexture "ALVD0696", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1009", 0, -1
+	Patch "ALVD1009", 64, -1
+}
+
+WallTexture "ALVD0697", 128, 128
+{
+	Patch "ALVD0676", 0, 0
+	Patch "ALVD1010", 64, 0
+	Patch "ALVD1010", 0, 0
+}
+
+WallTexture "ALVD0701", 128, 128
+{
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+	Patch "ALVD1014", 0, 0
+}
+
+WallTexture "ALVD0736", 128, 128
+{
+	Patch "ALVD0735", 0, 0
+	Patch "ALVD0735", 64, 0
+	Patch "ALVD0955", 0, 0
+}
+
+WallTexture "ALVD0738", 256, 128
+{
+	Patch "ALVD1048", 0, 0
+	Patch "ALVD1049", 128, 0
+	Patch "ALVD1050", 192, 0
+}
+
+WallTexture "ALVD0739", 256, 128
+{
+	Patch "ALVD1051", 0, 0
+	Patch "ALVD1050", 128, 0
+	Patch "ALVD1049", 192, 0
+}
+
+WallTexture "ALVD0740", 128, 128
+{
+	Patch "WOOD7", 64, 0
+	Patch "WOOD8", 0, 0
+	Patch "ALVD0955", 0, 0
+}
+
+WallTexture "ALVD0755", 64, 128
+{
+	Patch "ALVD1066", 0, 0
+	Patch "ALVD1066", 0, 64
+}
+
+WallTexture "ALVD0756", 64, 128
+{
+	Patch "ALVD1067", 0, 0
+	Patch "ALVD1067", 0, 64
+}
+
+WallTexture "ALVD0833", 1024, 128
+{
+	Patch "ALVD1144", 0, 0
+	Patch "ALVD1145", 256, 0
+	Patch "ALVD1146", 512, 0
+	Patch "ALVD1147", 768, 0
+}
+
+WallTexture "ALVD0834", 512, 128
+{
+	Patch "ALVD0945", 0, 0
+	Patch "ALVD1148", 64, 0
+	Patch "ALVD1149", 128, 0
+	Patch "ALVD1150", 192, 0
+	Patch "ALVD0932", 256, 0
+	Patch "ALVD0932", 320, 0
+	Patch "ALVD1152", 384, 0
+}
+
+WallTexture "ALVD0835", 512, 128
+{
+	Patch "ALVD0945", 0, 0
+	Patch "ALVD1153", 64, 0
+	Patch "ALVD1154", 128, 0
+	Patch "ALVD1155", 192, 0
+	Patch "ALVD0933", 256, 0
+	Patch "ALVD0933", 320, 0
+	Patch "ALVD1157", 384, 0
+}
+
+WallTexture "ALVD0836", 512, 128
+{
+	Patch "ALVD0946", 0, 0
+	Patch "ALVD1158", 64, 0
+	Patch "ALVD1159", 128, 0
+	Patch "ALVD1160", 192, 0
+	Patch "ALVD0934", 256, 0
+	Patch "ALVD0934", 320, 0
+	Patch "ALVD1162", 384, 0
+}
+
+WallTexture "ALVD0837", 512, 128
+{
+	Patch "ALVD0947", 0, 0
+	Patch "ALVD1163", 64, 0
+	Patch "ALVD1164", 128, 0
+	Patch "ALVD1165", 192, 0
+	Patch "ALVD0935", 256, 0
+	Patch "ALVD0935", 320, 0
+	Patch "ALVD1167", 384, 0
+}
+
+WallTexture "ALVD0838", 512, 128
+{
+	Patch "ALVD0946", 0, 0
+	Patch "ALVD1168", 64, 0
+	Patch "ALVD1169", 128, 0
+	Patch "ALVD1150", 192, 0
+	Patch "ALVD0932", 256, 0
+	Patch "ALVD0932", 320, 0
+	Patch "ALVD1170", 384, 0
+}
+
+WallTexture "ALVD0839", 512, 128
+{
+	Patch "ALVD0945", 0, 0
+	Patch "ALVD1171", 64, 0
+	Patch "ALVD1172", 128, 0
+	Patch "ALVD1155", 192, 0
+	Patch "ALVD0933", 256, 0
+	Patch "ALVD0933", 320, 0
+	Patch "ALVD1173", 384, 0
+}
+
+WallTexture "ALVD0840", 512, 128
+{
+	Patch "ALVD0946", 0, 0
+	Patch "ALVD1174", 64, 0
+	Patch "ALVD1175", 128, 0
+	Patch "ALVD1160", 192, 0
+	Patch "ALVD0934", 256, 0
+	Patch "ALVD0934", 320, 0
+	Patch "ALVD1176", 384, 0
+}
+
+WallTexture "ALVD0841", 512, 128
+{
+	Patch "ALVD0947", 0, 0
+	Patch "ALVD1171", 64, 0
+	Patch "ALVD1172", 128, 0
+	Patch "ALVD1165", 192, 0
+	Patch "ALVD0935", 256, 0
+	Patch "ALVD0935", 320, 0
+	Patch "ALVD1177", 384, 0
+}
+
+WallTexture "ALVD0842", 512, 128
+{
+	Patch "ALVD0946", 0, 0
+	Patch "ALVD1168", 64, 0
+	Patch "ALVD1169", 128, 0
+	Patch "ALVD1150", 192, 0
+	Patch "ALVD0932", 256, 0
+	Patch "ALVD0932", 320, 0
+	Patch "ALVD1178", 384, 0
+}
+
+WallTexture "ALVD0843", 512, 128
+{
+	Patch "ALVD0945", 0, 0
+	Patch "ALVD1163", 64, 0
+	Patch "ALVD1164", 128, 0
+	Patch "ALVD1155", 192, 0
+	Patch "ALVD0933", 256, 0
+	Patch "ALVD0933", 320, 0
+	Patch "ALVD1179", 384, 0
+}
+
+WallTexture "ALVD0844", 512, 128
+{
+	Patch "ALVD0946", 0, 0
+	Patch "ALVD1158", 64, 0
+	Patch "ALVD1159", 128, 0
+	Patch "ALVD1160", 192, 0
+	Patch "ALVD0934", 256, 0
+	Patch "ALVD0934", 320, 0
+	Patch "ALVD1180", 384, 0
+}
+
+WallTexture "ALVD0858", 64, 128
+{
+	Patch "ALVD1194", 0, 0
+	Patch "ALVD1194", 0, 64
+}
+
+WallTexture "ALVD0859", 64, 128
+{
+	Patch "ALVD1195", 0, 0
+	Patch "ALVD1195", 0, 64
+}
+
+WallTexture "ALVD0860", 64, 128
+{
+	Patch "ALVD1196", 0, 0
+	Patch "ALVD1196", 0, 64
+}
+
+WallTexture "ALVD0863", 64, 128
+{
+	Patch "ALVD1199", 0, 0
+	Patch "ALVD1199", 0, 64
+}
+
+WallTexture "ALVD0864", 64, 128
+{
+	Patch "ALVD1200", 0, 0
+	Patch "ALVD1200", 0, 64
+}
+
+WallTexture "ALVD0870", 128, 128
+{
+	Patch "ALVD1205", 0, 0
+	Patch "ALVD1205", 0, 0
+}
+

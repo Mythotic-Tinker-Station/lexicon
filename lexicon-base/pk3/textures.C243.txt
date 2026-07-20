@@ -1,0 +1,350 @@
+WallTexture "C2430337", 32, 128
+{
+	Patch "C2431134", 0, 0
+	Patch "C2431134", 0, 64
+}
+
+WallTexture "C2430338", 128, 128
+{
+	Patch "C2431158", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+WallTexture "C2430339", 128, 128
+{
+	Patch "C2431159", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+
+WallTexture "C2430340", 256, 128
+{
+	Patch "C2431137", 32, 0
+	Patch "C2431140", 96, 0
+	Patch "C2431136", 160, 0
+	Patch "C2431138", 0, 64
+	Patch "C2431139", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "C2431135", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "C2431136", 0, 0
+}
+
+WallTexture "C2430341", 64, 128
+{
+	Patch "C2431138", 0, 0
+	Patch "C2431138", 0, 64
+}
+
+WallTexture "C2430344", 64, 128
+{
+	Patch "C2431123", 0, 0
+	Patch "C2431125", 32, 0
+	Patch "C2431123", 0, 64
+	Patch "C2431125", 32, 64
+}
+
+WallTexture "C2430345", 64, 128
+{
+	Patch "C2431143", 0, 0
+	Patch "C2431145", 32, 0
+	Patch "C2431143", 0, 64
+	Patch "C2431145", 32, 64
+}
+
+WallTexture "C2430346", 64, 128
+{
+	Patch "C2431143", 0, 0
+	Patch "C2431145", 32, 0
+	Patch "C2431123", 0, 64
+	Patch "C2431125", 32, 64
+}
+
+WallTexture "C2430347", 64, 128
+{
+	Patch "C2431152", 0, 0
+	Patch "C2431152", 32, 0
+	Patch "C2431123", 0, 64
+	Patch "C2431125", 32, 64
+}
+
+WallTexture "C2430348", 64, 16
+{
+	Patch "C2431161", 0, 0
+	Patch "C2431161", 16, 0
+	Patch "C2431161", 32, 0
+	Patch "C2431161", 48, 0
+}
+
+WallTexture "C2430349", 128, 128
+{
+	Patch "C2431123", 0, 64
+	Patch "C2431124", 40, 64
+	Patch "C2431124", 32, 64
+	Patch "C2431124", 48, 64
+	Patch "C2431124", 56, 64
+	Patch "C2431125", 96, 64
+	Patch "C2431124", 88, 64
+	Patch "C2431124", 80, 64
+	Patch "C2431124", 72, 64
+	Patch "C2431124", 64, 64
+	Patch "C2431143", 0, 0
+	Patch "C2431145", 96, 0
+	Patch "C2431144", 48, 0
+	Patch "C2431144", 40, 0
+	Patch "C2431144", 32, 0
+	Patch "C2431144", 72, 0
+	Patch "C2431144", 64, 0
+	Patch "C2431144", 56, 0
+	Patch "C2431144", 80, 0
+	Patch "C2431144", 88, 0
+}
+
+WallTexture "C2430351", 64, 128
+{
+	Patch "C2431165", 0, 64
+	Patch "C2431165", 0, 0
+	Patch "EXIT1", 17, 22
+}
+
+WallTexture "C2430358", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "C2431157", 0, 0
+}
+
+WallTexture "C2430359", 128, 128
+{
+	Patch "SW19_1", 64, 0
+	Patch "C2431156", 0, 0
+}
+
+WallTexture "C2430360", 128, 128
+{
+	Patch "C2431165", 0, 64
+	Patch "C2431165", 64, 0
+	Patch "C2431162", 0, 0
+	Patch "C2431162", 64, 64
+}
+
+WallTexture "C2430361", 128, 128
+{
+	Patch "C2431164", 0, 0
+	Patch "C2431163", 0, 64
+	Patch "C2431164", 64, 64
+	Patch "C2431163", 64, 0
+}
+
+WallTexture "C2430362", 64, 128
+{
+	Patch "C2431153", 19, 72
+	Patch "C2431153", 19, 0
+	Patch "C2431153", 0, 0
+	Patch "C2431153", 0, 72
+	Patch "C2431153", 40, 0
+	Patch "C2431153", 40, 72
+}
+
+WallTexture "C2430363", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "C2431154", 20, 79
+}
+
+WallTexture "C2430364", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "C2431154", 20, 80
+}
+
+WallTexture "C2430365", 64, 128
+{
+	Patch "C2431134", 0, 64
+	Patch "C2431137", 0, 0
+	Patch "C2431134", 32, 64
+	Patch "SW2S0", 16, 72
+}
+
+WallTexture "C2430366", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "C2431154", 19, 79
+}
+
+WallTexture "C2430367", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "C2431154", 20, 68
+}
+
+WallTexture "C2430368", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "C2431154", 20, 80
+}
+
+WallTexture "C2430369", 64, 128
+{
+	Patch "C2430357", 0, 0
+	Patch "SW2_7", 14, 66
+}
+
+WallTexture "C2430370", 64, 128
+{
+	Patch "C2431165", 0, 64
+	Patch "C2431165", 0, 0
+	Patch "SW1S0", 16, 78
+}
+
+WallTexture "C2430371", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "C2431154", 20, 79
+}
+
+WallTexture "C2430372", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "C2431154", 20, 84
+}
+
+WallTexture "C2430373", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "C2431155", 20, 79
+}
+
+WallTexture "C2430374", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "C2431155", 20, 80
+}
+
+WallTexture "C2430375", 64, 128
+{
+	Patch "C2431134", 0, 64
+	Patch "C2431137", 0, 0
+	Patch "C2431134", 32, 64
+	Patch "SW2S1", 16, 72
+}
+
+WallTexture "C2430376", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "C2431155", 19, 79
+}
+
+WallTexture "C2430377", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "C2431155", 20, 68
+}
+
+WallTexture "C2430378", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "C2431155", 20, 80
+}
+
+WallTexture "C2430379", 64, 128
+{
+	Patch "C2430357", 0, 0
+	Patch "SW2_8", 14, 66
+}
+
+WallTexture "C2430380", 64, 128
+{
+	Patch "C2431165", 0, 64
+	Patch "C2431165", 0, 0
+	Patch "SW1S1", 16, 78
+}
+
+WallTexture "C2430381", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "C2431155", 20, 79
+}
+
+WallTexture "C2430382", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "C2431155", 20, 84
+}
+
+WallTexture "C2430821", 64, 128
+{
+	Patch "C2431648", 0, 0
+	Patch "C2431648", 0, 64
+}
+
+WallTexture "C2430822", 64, 128
+{
+	Patch "C2431649", 0, 0
+	Patch "C2431648", 0, 64
+}
+
+WallTexture "C2430823", 64, 128
+{
+	Patch "C2431651", 0, 0
+	Patch "C2431651", 0, 64
+}
+
+WallTexture "C2430824", 64, 128
+{
+	Patch "C2431652", 0, 72
+	Patch "C2431652", 0, 0
+	Patch "C2431653", 0, 64
+}
+
+WallTexture "C2430825", 64, 128
+{
+	Patch "C2431652", 0, 0
+	Patch "C2431651", 0, 64
+}
+
+WallTexture "C2430826", 256, 128
+{
+	Patch "C2431650", 0, 0
+	Patch "C2431649", 64, 0
+	Patch "C2431650", 128, 0
+	Patch "C2431650", 192, 0
+	Patch "C2431650", 0, 56
+	Patch "C2431650", 64, 56
+	Patch "C2431649", 128, 56
+	Patch "C2431650", 192, 56
+	Patch "C2431653", 0, 120
+	Patch "C2431653", 64, 120
+	Patch "C2431653", 128, 120
+	Patch "C2431653", 192, 120
+}
+
+WallTexture "C2430827", 128, 128
+{
+	Patch "C2431654", 0, 0
+	Patch "C2431654", 64, 0
+	Patch "C2431655", 83, 0
+}
+
+WallTexture "C2430828", 128, 128
+{
+	Patch "C2431654", 0, 0
+	Patch "C2431654", 64, 0
+}
+
+WallTexture "C2431206", 128, 512
+{
+	Patch "C2430779", 0, 0
+	Patch "C2430780", 0, 128
+	Patch "C2430781", 0, 256
+	Patch "C2430782", 0, 384
+}
+

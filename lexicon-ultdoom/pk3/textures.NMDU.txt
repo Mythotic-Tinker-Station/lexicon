@@ -1,0 +1,136 @@
+Texture "NMDU0001", 128, 96
+{
+	Patch "W13_1", 0, 0
+	Patch "W13_1", 0, 24
+	Patch "NMDU0017", 17, 0
+	Patch "W13_1", 113, 0
+	Patch "W13_1", 113, 25
+}
+Texture "NMDU0002", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NMDU0003", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "NMDU0004", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "NMDU0005", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "NMDU0006", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "NMDU0007", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NMDU0008", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "NMDU0009", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "NMDU0010", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "NMDU0011", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "NMDU0012", 64, 128
+{
+	Patch "NMDU0019", 0, 0
+	Patch "BCRATER1", 32, 0
+	Patch "NMDU0019", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+Texture "NMDU0013", 64, 128
+{
+	Patch "NMDU0020", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "NMDU0020", 0, 64
+	Patch "GCRATER1", 32, 64
+}
+Texture "NMDU0014", 64, 128
+{
+	Patch "NMDU0021", 0, 0
+	Patch "NMDU0021", 32, 0
+	Patch "NMDU0019", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+Texture "NMDU0015", 128, 128
+{
+	Patch "NMDU0019", 0, 64
+	Patch "BCRATEM1", 40, 64
+	Patch "BCRATEM1", 32, 64
+	Patch "BCRATEM1", 48, 64
+	Patch "BCRATEM1", 56, 64
+	Patch "BCRATER1", 96, 64
+	Patch "BCRATEM1", 88, 64
+	Patch "BCRATEM1", 80, 64
+	Patch "BCRATEM1", 72, 64
+	Patch "BCRATEM1", 64, 64
+	Patch "NMDU0020", 0, 0
+	Patch "GCRATER1", 96, 0
+	Patch "GCRATEM1", 48, 0
+	Patch "GCRATEM1", 40, 0
+	Patch "GCRATEM1", 32, 0
+	Patch "GCRATEM1", 72, 0
+	Patch "GCRATEM1", 64, 0
+	Patch "GCRATEM1", 56, 0
+	Patch "GCRATEM1", 80, 0
+	Patch "GCRATEM1", 88, 0
+}
+Texture "NMDU0016", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, 56
+	Patch "NMDU0018", 0, 0
+	Patch "WALL01_1", 118, 0
+	Patch "WALL01_1", 117, 56
+}

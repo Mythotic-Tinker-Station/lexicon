@@ -380,6 +380,7 @@ map HBND29 "Ascension"
 map HBND30 "Worlds Collide"
 	{
 	next = "VR"
+	sucktime = 1337
 	sky1 = HLBSKY3
 	titlepatch = HLBLV29
 	enterpic = HLBINT

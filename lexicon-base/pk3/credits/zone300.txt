@@ -1,0 +1,146 @@
+===========================================================================
+Advanced engine needed  : None
+Primary purpose         : Single play
+===========================================================================
+Title                   : Zone 300
+Filename                : zone300.wad
+Release date            : 23 September 2013
+Author                  : Paul Corfiatis (Pcorf)
+Email Address           : pcorfiatis@our.net.au
+			  pcorfiatis@hotmail.com
+
+Description             : A 32 level megawad of small maps for Doom 2. Your 
+			  mission is simple. Blast you way through techbases, 
+			  dungeons and hellish abodes and save Earth from
+			  extinction. These maps contain no more than 300 
+			  linedefs apart from the much larger super secret
+			  level. Zone 300 = Short, quick and simple.
+
+Credits			: id for Doom, Codeimp for Doom Builder, and the
+			  authors of all the other software.
+ 
+Design Info		: Well after months of inactivity in mapping I 
+			  thought I'd surprise you all with a new release.
+			  I wanted to challenge myself to make a complete 
+			  32 map megawad with a complete original musical 
+			  score in less than 2 months. The maps on average 
+			  contain around 50 to 100 monsters. The good thing 
+			  about smaller maps that it was much easier for me 
+			  to get the gameplay balance right. Inspired by
+			  Doomworld's 100 linedef project I thought to myself
+			  you could make decent levels with no more than 300
+			  linedefs. It should run with Vanilla Doom2.exe.
+			  As you know I do not make slaughter maps so the 
+			  difficulty of the maps are comparable to id's
+			  maps and if you find it too easy you can always
+			  play it with -fast monsters or on nightmare 
+			  difficutly. Multiplayer and DM are supported and
+			  there is extra multiplayer stuff in the maps such
+			  as weapons for DM. The Icon of Sin also looks a bit
+			  different in MAP30, its now greyscale and negative
+			  and has a new name "The Icon of Damnation" deep
+			  within the Eternal Core. The music is all original
+			  although the intermission contains the remix of
+			  the Doom 2 readme song used in Doom 2 Unleashed 
+			  (aka Pcorf Community Project). I wanted new music
+			  because you always hear the usual music replacements
+			  in megawads from other games like Duke3D and Rott.
+			  Enough is a enough so now go and load up Zone 300 
+			  and try to beat it as fast as you can. All maps are 
+			  playable from a pistol start.
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes (original music)
+Graphics                : Yes (titlepic and some modified textures) 
+Dehacked/BEX Patch      : Yes (Built in)
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 9 August 2013 to 23 September 2013
+Editor(s) used          : Doombuilder 2.12.1553, XWE, Cakewalk Sonar 7 for the music
+			  WhackEd4 1.0.2
+Bugs			: - MAP07, MAP11 cannot be completed in -nomonsters mode.
+			  - Super secret exit cannot be reached in DM mode.
+May Not Run With...     : Quake, Duke Nukem 3D
+
+* MAP LIST *
+
+List of map names for those who chose to play this in Vanilla Doom.
+
+LEVEL				DATE COMPLETED	NOTES		
+------------------------------------------------------
+MAP01 The Spaceport		9 Aug 2013		
+MAP02 Control Facility		9 AUg 2013
+MAP03 The Alleyway		11 Aug 2013
+MAP04 Canyon Hub		12 Aug 2013
+MAP05 Skybase 300		13 AUg 2013
+MAP06 Whispering Corridor	15 Aug 2013
+MAP07 Heavyweight		15 Aug 2013	Cannot be completed in single player
+						nomonsters mode.
+MAP08 Waste Disposal Plant	16 Aug 2013
+MAP09 Nuclear Power Station	17 Aug 2013
+MAP10 Cargo Bay			19 AUg 2013
+MAP11 Simbattle			20 Aug 2013	Cannot be completed in single player 
+						nomonsters mode.
+MAP12 Villa of Pain		22 AUg 2013
+MAP13 Dark Crypt		22 Aug 2013
+MAP14 The Circle		22 AUg 2013
+MAP15 Trouble Town		23 AUg 2013
+MAP16 Bruiser Fortress		30 Aug 2013
+MAP17 Constriction		1 Sep 2013
+MAP18 Zombie Hideout		4 Sep 2013
+MAP19 The Invasion		5 Sep 2013
+MAP20 Death Row			9 Sep 2013
+	
+MAP21 Blood Lust		10 Sep 2013
+MAP22 Firestorm Tomb		10 Sep 2013
+MAP23 Dungeon of Inferno	13 Sep 2013
+MAP24 Cavern of The Evil Spirit	15 Sep 2013	
+MAP25 Hellucination		17 Sep 2013
+MAP26 Valley of Brimstone	17 Sep 2013
+MAP27 Dissect			19 Sep 2013	
+MAP28 Unholy Demise		20 Sep 2013
+MAP29 Den of Torture		21 Sep 2013
+MAP30 Eternal Core		14 Sep 2013
+
+MAP31 Creepy			28 AUg 2013	Secret exit cannot be reached in
+						nomonsters mode or DM mode.
+MAP32 Condemnation		23 Sep 2013	An abandoned map intended for Doom 2 the 
+						way id did that I decided to complete and
+						the only map with over 300 linedefs.	
+
+* Copyright / Permissions *
+
+Authors may not use the levels in this file as a base for modification or
+reuse. However authors can use the music in this file as a in their own
+wad files as long as they give me (Pcorf) credit in their .txt files. 
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+Web sites: www.paulcorfiatis.com
+           www.doomworld.com/idgames
+FTP sites: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

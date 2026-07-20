@@ -1,0 +1,282 @@
+Texture "NDC20227", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "NDC20335", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "NDC20336", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "NDC20337", 132, 69
+	Patch "NDC20338", 68, 7
+	Patch "NDC20339", 4, 7
+	Patch "NDC20340", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "NDC20237", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NDC20238", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NDC20242", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NDC20243", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NDC20307", 64, 64
+{
+	Patch "NDC20743", 0, 0
+	Patch "NDC20925", 34, 46
+}
+Texture "NDC20310", 64, 64
+{
+	Patch "NDC20743", 0, 0
+	Patch "NDC20924", 4, 4
+	Patch "NDC20925", 34, 46
+}
+Texture "NDC20311", 64, 128
+{
+	Patch "NDC20955", 0, 0
+	Patch "NDC20956", 0, 64
+}
+Texture "NDC20367", 128, 128
+{
+	Patch "NDC21035", 0, 0
+	Patch "NDC21035", 64, 0
+	Patch "NDC21035", 0, 64
+	Patch "NDC21035", 64, 64
+}
+Texture "NDC20368", 128, 128
+{
+	Patch "NDC21034", 0, 0
+	Patch "NDC21034", 0, 16
+	Patch "NDC21034", 0, 32
+	Patch "NDC21034", 0, 48
+	Patch "NDC21034", 0, 64
+	Patch "NDC21034", 0, 80
+	Patch "NDC21034", 0, 96
+	Patch "NDC21034", 0, 112
+}
+Texture "NDC20390", 256, 128
+{
+	Patch "NDC21052", 0, 0
+	Patch "NDC21053", 64, 0
+	Patch "NDC21055", 128, 0
+	Patch "NDC21054", 192, 0
+	Patch "NDC21057", 0, 64
+	Patch "NDC21059", 64, 64
+	Patch "NDC21058", 128, 64
+	Patch "NDC21056", 192, 64
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+}
+Texture "NDC20391", 128, 128
+{
+	Patch "NDC21064", 64, 70
+	Patch "NDC21064", 0, 70
+	Patch "NDC21065", 0, -2
+	Patch "NDC21064", 64, -2
+}
+Texture "NDC20392", 256, 56
+{
+	Patch "NDC21052", 0, 0
+	Patch "NDC21053", 64, 0
+	Patch "NDC21054", 128, 0
+	Patch "NDC21058", 192, 0
+}
+Texture "NDC20393", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "NDC21062", 5, 0
+	Patch "NDC21062", 35, 0
+}
+Texture "NDC20394", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+}
+Texture "NDC20395", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "NDC21062", 4, 18
+	Patch "NDC21062", 38, 18
+}
+Texture "NDC20397", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "NDC21062", 81, 34
+	Patch "NDC21062", 19, 34
+}
+Texture "NDC20398", 128, 128
+{
+	Patch "NDC21061", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "NDC21060", 96, 0
+	Patch "NDC21061", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "NDC21060", 96, 64
+}
+Texture "NDC20414", 256, 18
+{
+	Patch "NDC21204", 0, 0
+}
+Texture "NDC20418", 128, 26
+{
+	Patch "NDC20415", 0, 0
+}
+Texture "NDC20419", 128, 26
+{
+	Patch "NDC20415", 0, 0
+}
+Texture "NDC20420", 128, 26
+{
+	Patch "NDC20417", 0, 0
+}
+Texture "NDC20421", 128, 26
+{
+	Patch "NDC20417", 0, 0
+}
+Texture "NDC20422", 128, 26
+{
+	Patch "NDC20415", 0, 0
+}
+Texture "NDC20423", 128, 26
+{
+	Patch "NDC20415", 0, 0
+}
+Texture "NDC20466", 64, 128
+{
+	Patch "NDC21157", 0, 0
+	Patch "NDC21157", 0, 64
+}
+Texture "NDC20522", 256, 128
+{
+	Patch "NDC21117", 0, 0
+}
+Texture "NDC20529", 64, 128
+{
+	Patch "NDC21110", 0, 0
+	Patch "NDC21110", 0, 64
+}
+Texture "NDC20531", 16, 64
+{
+	Patch "NDC21108", 0, 0
+}
+Texture "NDC20533", 64, 128
+{
+	Patch "NDC21106", 0, 0
+	Patch "NDC21106", 0, 64
+}
+Texture "NDC20539", 64, 128
+{
+	Patch "NDC21096", 0, 0
+	Patch "NDC21096", 0, 64
+}
+Texture "NDC20540", 64, 128
+{
+	Patch "NDC21095", 0, 0
+	Patch "NDC21095", 0, 64
+}
+Texture "NDC20547", 64, 128
+{
+	Patch "NDC21088", 0, 0
+	Patch "NDC21088", 0, 64
+}
+Texture "NDC20551", 512, 128
+{
+	Patch "NDC21082", 0, 0
+	Patch "NDC21083", 128, 0
+	Patch "NDC21084", 384, 0
+}
+Texture "NDC20555", 256, 100
+{
+	Patch "NDC21078", 0, 0
+}
+Texture "NDC20561", 128, 128
+{
+	Patch "NDC20560", 0, 0
+	Patch "NDC21072", 0, 64
+}
+Texture "NDC20570", 64, 128
+{
+	Patch "NDC21255", 0, 0
+}
+Texture "NDC20688", 512, 128
+{
+	Patch "NDC21286", 0, 0
+	Patch "NDC21287", 384, 0
+	Patch "NDC21288", 256, 0
+}
+Texture "NDC20689", 512, 128
+{
+	Patch "NDC21289", 128, 0
+	Patch "NDC21287", 384, 0
+	Patch "NDC21286", 0, 0
+	Patch "NDC21290", 256, 0
+}
+Texture "NDC20690", 512, 128
+{
+	Patch "NDC21286", 0, 0
+	Patch "NDC21291", 128, 0
+	Patch "NDC21292", 256, 0
+	Patch "NDC21287", 384, 0
+}
+Texture "NDC20709", 512, 128
+{
+	Patch "NDC21311", 0, 0
+	Patch "NDC20712", 256, 0
+}
+Texture "NDC20710", 1024, 128
+{
+	Patch "NDC21312", 256, 0
+	Patch "NDC20713", 0, 0
+	Patch "NDC20711", 512, 0
+	Patch "NDC20714", 768, 0
+}
+Texture "NDC20791", 128, 128
+{
+	Patch "NDC21396", 0, 0
+	Patch "NDC21397", 96, 0
+	Patch "NDC21397", 96, 64
+	Patch "NDC21396", 0, 64
+	Patch "NDC20789", 32, 0
+}

@@ -1,0 +1,111 @@
+WallTexture "SDX70170", 64, 128
+{
+	Patch "SDX71243", 0, 0
+	Patch "SDX71244", 0, 64
+}
+
+WallTexture "SDX70384", 64, 128
+{
+	Patch "SDX71243", 0, 0
+	Patch "SDX71244", 0, 64
+	Patch "SW2_7", 14, 66
+}
+
+WallTexture "SDX70424", 64, 128
+{
+	Patch "SDX71243", 0, 0
+	Patch "SDX71244", 0, 64
+	Patch "SW2_8", 14, 66
+}
+
+WallTexture "SDX70532", 64, 128
+{
+	Patch "SDX71193", 0, 0
+	Patch "SDX71195", 0, 0
+	Patch "SDX71195", 1, 112
+}
+
+WallTexture "SDX70591", 64, 128
+{
+	Patch "SDX71287", 0, 0
+	Patch "SDX71287", 0, 64
+}
+
+WallTexture "SDX70645", 1024, 128
+{
+	Patch "SDX71883", 0, 0
+	Patch "SDX71884", 256, 0
+	Patch "SDX71885", 512, 0
+	Patch "SDX71886", 768, 0
+}
+
+WallTexture "SDX70682", 128, 128
+{
+	Patch "SDX71502", 0, 56
+	Patch "SDX71503", 64, 56
+	Patch "SDX71502", 0, 0
+	Patch "SDX71503", 64, 0
+}
+
+WallTexture "SDX70687", 64, 128
+{
+	Patch "SDX71461", 0, 0
+	Patch "SDX71461", 0, 64
+}
+
+WallTexture "SDX70694", 256, 128
+{
+	Patch "SDX71500", 0, 0
+	Patch "SDX71501", 128, 0
+}
+
+WallTexture "SDX70705", 64, 128
+{
+	Patch "SDX71384", 0, 64
+	Patch "SDX71383", 0, 0
+	Patch "SW2_7", 14, 66
+}
+
+WallTexture "SDX70707", 256, 128
+{
+	Patch "SDX71274", 0, 0
+	Patch "SDX71259", 128, 0
+	Patch "SDX71402", 128, 64
+	Patch "SDX71390", 128, 96
+	Patch "SDX71492", 160, 64
+	Patch "SDX71493", 160, 96
+	Patch "SDX71471", 216, 0
+	Patch "SDX71469", 192, 24
+	Patch "SDX71473", 216, 24
+	Patch "SW4S0", 192, 0
+	Patch "SDX71494", 192, 48
+	Patch "SDX71238", 192, 80
+	Patch "SDX71238", 224, 48
+	Patch "SDX71238", 240, 0
+}
+
+WallTexture "SDX70708", 64, 128
+{
+	Patch "SDX71383", 0, 0
+	Patch "SDX71384", 0, 64
+	Patch "SW2_8", 14, 66
+}
+
+WallTexture "SDX70710", 256, 128
+{
+	Patch "SDX71238", 224, 48
+	Patch "SDX71238", 192, 80
+	Patch "SDX71238", 240, 0
+	Patch "SDX71275", 0, 0
+	Patch "SDX71260", 128, 0
+	Patch "SDX71472", 216, 0
+	Patch "SDX71470", 192, 24
+	Patch "SDX71474", 216, 24
+	Patch "SDX71403", 128, 64
+	Patch "SDX71391", 128, 96
+	Patch "SDX71496", 160, 64
+	Patch "SDX71497", 160, 96
+	Patch "SDX71495", 192, 48
+	Patch "SW4S1", 192, 0
+}
+

@@ -1,0 +1,166 @@
+===========================================================================
+Advanced engine needed  : Limit removing, Pr/GL-boom plus recommended (plays fine on ZDoom/GZdoom)
+Primary purpose         : Single Player + Coop play 
+===========================================================================
+Title                   : ConC.E.R.Ned
+Filename                : concern.wad
+Release date            : 16/07/2013
+Author                  : Matt "cannonball" Powell
+Email Address           : cannonballmp@yahoo.co.uk
+Other Files By Author   : cbspeed, sparta, cbpandemonium, where the base has no name, ragnor's stronghold, maps in 		                  Mayhem2012 (Maps10,11), Slaughterfest 2012 (Maps01,05,09,10,20,22), D2INO (map12,15,21)
+Misc. Author Info       : Is doom mapping really using my chemistry degree???
+
+Description             : 3 episode wad for ultimate doom with the usual tech/hell tech/hell setup with a few 			  		  exceptions from time to time. This is an expansion from my cbspeed.wad I realeased last 	  			  August, so the first episode is an updated version of cbspeed with hopefully improved 		          	  gameplay and layout flow. Episodes 2 and 3 were solely built from scratch. The wad is 			          designed to hopefully give a varied and at times challenging gameplay experience.
+
+Additional Credits to   : ID Games for doom
+			  The artists/games/tv shows for which the music for this wad comes from.
+			  Larzuk and Nevan for playtesting throughout development (pre-beta) 
+			  Ribbiks for some useful beta fdas, Steve D and kakhome1 for extensive beta testing.
+===========================================================================
+* What is included *
+
+New levels              : 27
+Sounds                  : No
+Music                   : Just music used in other mapsets/games
+Graphics                : New titlepic/interpic/status bar and a few other things
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes 
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : Episodes 1-3
+Single Player           : Designed for
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch (episode 1 is a tweaked version of cbspeed.wad)
+Build Time              : 10 months on and off 
+Editor(s) used          : Doom builder 2 and Slade 3
+Known Bugs              : Visplane overflows and homs in vanilla, perhaps some tutti-frutti in hacked ports which 			          support limit removing wads. Issue with the final boss in Zdaemon (bug in engine which will 			          hopefully be fixed)
+May Not Run With        : Vanilla for several levels
+Tested With             : Pr-boom plus V2.5.1.3, choco render limits, zdoom and gzdoom
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com/idgames/
+FTP sites:
+
+==============================================================================================================
+
+Story
+
+In the year 2150, scientists have finally started to crack the deep internal secrets of time, space and matter. Using the CERN facility as it's based, the UAC had manged to carry out revolutionary research into new particles, but also the transport of matter. Things seem to be going well, but alas things were about to change. One day there was a huge power surge from the northern section of the collider complex. Suddenly monsters of unknown origin started pouring out of a gapping whole created inside the particle accelerator. All those inside the complex died or succumbed to a much worse fate. 
+Luckily you were outside the facility and in case of an emergency a lockdown proceedure is innitiated which stops the spread of contamination. But even this was struggling with the demonic forces present. Given the lack of time for planning. You decide to head back to the base itself and stop this invasion before it's too late. 
+
+=====================================================================================
+
+Maplist and music
+
+Title Music - Guile Theme from Street Fighter 2
+Intermission music - Same one used in Memento Mori 2 by Mark Klem
+Victory Music - Theme from Bladerunner by Vangelis
+
+E1M1 - Toxic Touchdown
+Music used - Mighty Morphin Power Rangers midi
+
+
+E1M2 - Mutagenic Quarantine
+Music used -  track 279.mid by Ray Schmitz (Shtbag)
+
+E1M3 - The Cleanser
+Music used - Smoke and mirrors from Rise of the Triad by Lee Jackson/Robert Prince
+
+E1M4 - Withering Gardens.
+Music used - Under Death by Mark Klem from Requiem Map08
+
+E1M5 - Administration
+Music used - Lord Of L.A by Robert Prince (E3M8 of Duke Nukem)
+
+E1M6 - Laboratory
+Music used - Infinite by Tom Mustaine (TNT Map10/18)
+
+E1M7 - Reactor
+Music Used - Gut Wrencher by Robert Prince (from Duke Nukem 3D)
+
+E1M8 - Particle Accelerator
+Music used - Sign of Evil by RObert Prince (origional track for this slot)
+
+E1M9 -  Atom Smasher
+Music Used - Descent (d cent06)
+
+E2M1 - Collider Anomaly
+Music Used - Vile Flesh music from Map07/28 composed by Gwyn Williams
+
+E2M2 - Logistics
+Music used - Mars Processing Station (Map08) from Descent
+
+E2M3 - Hydrophonic Facility
+Music Used - Mesmarine by Mark Klem (requiem map12,31)
+
+E2M4 - Infirmary
+Music used - Mist Ache by Lee Jackson (Rise Of The Triad)
+
+E2M5 - Tactical Command
+Music Used - Reason for nothing by Mark Klem (Requiem, Map16/22)
+
+E2M6 - Haunted Cellars
+Music Used - Sinister by Robert Prince (Doom E2M6)
+
+E2M7 - The Core
+Music Used - Junkie Smack by Mark Klem (MM2 Map29)
+
+E2M8 - Gates To Hell
+Music Used - Doom Victory music by Robert Prince
+
+E2M9 - Blackout
+Music Used - Vile Flesh music from Map13/27 composed by Gwyn Williams
+
+E3M1 - Passover
+Music Used - Cryonic Dreams by Kristian Aro (Whispers Of Satan map27)
+
+E3M2 - Fire Temple
+Music Used - Anchor by Mark Klem (MM2 Map05)
+
+E3M3 - Infernal Catacombs 
+Music Used - Grove From Hexen
+
+E3M4 - Demonizer
+Music Used - Mute City from F-Zero
+
+E3M5 - Complex Trauma
+Music Used - Vile Flesh Music Map18 Composed by Gwyn Williams
+
+E3M6 - Devils Crucible
+Music Used - E2M3 (river of fire) from Herectic
+
+E3M7 - Back To System Central
+Music Used - Backfire by Paul Corfiatis (used in E3M7 of 2002ado.wad)
+
+E3M8 - Fortress Of Tyrants
+Music Used - The River Of Souls from Turok 2
+
+E3M9 - Cyberslayer
+Music Used - Triangle Of Fear by Mark Klem (MM Map15/22)

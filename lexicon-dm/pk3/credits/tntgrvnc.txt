@@ -1,0 +1,236 @@
+Grievance text file 4 December 1996
+
+Contents:
+1. Announcement
+2. Installation
+3. Troubleshooting
+4. System requirements
+5. Where to find files
+6. How to get help
+7. Participants and credits
+8. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                  +--------------------------+
+                  |        Grievance         |
+                  |   Alas, how shall this   |
+                  | bloody deed be answer'd? |
+                  +--------------------------+
+
+Grievance is another set of 32 DOOM II Deathmatch-only levels from 
+TeamTNT.  It is now available on ftp.cdrom.com and its mirrors.  
+See below for the exact path.
+
+TeamTNT strikes again with yet another 32 levels of all-Deathmatch
+frag mayhem.  Grievance, the followon to the popular TeamTNT
+Bloodlands set of 32 DM levels, has lots of interesting architecture,
+impeccable texture alignment and play balance, and (oh, yeah) FRAGS!
+Frags out the wazoo.  As in Bloodlands, there's a variety of small
+tight fragfests and slightly larger ones for hunting or more players,
+but we tried to make sure that even in the bigger levels you have 
+a good idea where your, um, "friend" is.
+
+You wondered what happened to the weekend when you played Icarus.  
+You'll wonder what happened to the month when you play Bloodlands.
+You'll wonder who blew your butt off in Grievance...
+
+Features:
+
+ - 32 brand new levels by some of the best Deathmatchers
+ - Difficulty levels used to fine-tune game rules
+ - Three multiplayer fragfest demos
+ - All in one WAD, easy to run
+ - Works with DOOM II version 1.9 or Final DOOM
+ - Intermission music by David Shaw
+ - Small overall WAD size of 3MB, zipped to fit on a diskette
+ - It's by TeamTNT members, so you know it's good
+ - Startup batch file included
+ - Kept small by limiting new graphics and music
+
+
+---------------
+2. INSTALLATION
+---------------
+Grievance comes in one WAD file, zipped into one ZIP file.  You'll
+need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+TNTGRVNC.ZIP.  This will produce TNTGRVNC.WAD and TNTGRVNC.BAT (and
+another copy of this file).
+
+Just unzip it into your DOOM2 directory and run TNTGRVNC.BAT, or 
+load TNTGRVNC.WAD in your favorite front-end program.
+
+Floppy download:
+
+Not a problem.  Grievance fits on a floppy--it's barely over a meg
+when zipped.
+
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+Not much can go wrong, since this is just one WAD file.  However,
+since not much can go wrong, something might, and maybe a few
+steps here will help.
+
+a.  First, verify that TNTGRVNC.BAT and TNTGRVNC.WAD are in your
+    DOOM2 directory, and that you are in that directory when you
+    type TNTGRVNC.
+
+b.  Spell TNTGRVNC right. (we left out the vowels, so you don't
+    have to remember "I before E except...")
+
+c.  If it starts up and crashes with a message similar to
+
+      "Demo is from a different version"
+
+    then you're not running DOOM2 version 1.9.  You'll need to
+    upgrade if you're going to look at the demos (which are 
+    well worth the trouble).  Upgrade files are available all
+    over the place, and particularly at ftp.cdrom.com or 
+    ftp.idsoftware.com.  Your DOOM2 version number will appear 
+    at the top of the screen while DOOM2 is initializing.
+
+d.  If you notice that the full-screen intermission texts (like
+    between MAP06 and MAP07) don't make sense any more, or that
+    the automap names don't match the level names, that's because
+    we chose to honor id Software's wish that we not alter their
+    DOOM2.EXE file, and that's where that stuff is stored.
+
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   A computer that will play DOOM2 well.  Deathmatch is deathmatch,
+   and you won't need any more computer or modem power than you'd 
+   need with DOOM2 by itself.  
+
+   You'll like it better if you have a good sound card, but if you
+   do much deathmatch you already know that.
+
+   The WAD file is a bit over 3MB, and you'll need about 5MB 
+   free available during unzipping.
+
+   Any other requirements (modem, network stuff) are no different
+   than if you were running DOOM2 without Grievance.
+
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Grievance was uploaded to ftp.cdrom.com at
+   12:01 AM CDT on Wednesday 4 December 1996.  It will be moved to 
+   its own directory and will be propagated to the cdrom.com
+   mirrors after that.  We will also more or less simultaneously
+   upload it to Compuserve, with AOL, Fidonet, etc. following close
+   behind.  Most of these locations have a waiting period before the
+   files are publically available, but it won't be long...
+
+   ftp.cdrom.com is the one place you can be guaranteed to find
+   the most recent version, and you can always get to a pointer to
+   the file from our web site (see below).
+
+   So, FTP to ftp.cdrom.com and look in directory (mixed case)
+       /pub/doom2/themes/TeamTNT
+
+   While you're there, get Icarus and Bloodlands if you don't 
+   already have them.
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about DOOM2 itself, contact id Software.
+
+   If it's about Grievance, don't contact id Software.
+
+   Grievance questions can be handled by other players on the
+   usenet newsgroups, various forums on Compuserve and other
+   services, and by TeamTNT by email.  Either write to us at
+
+      info@teamtnt.com
+
+   or go to our web page at
+
+      <http://www.teamtnt.com>
+
+
+---------------------------
+7. PARTICIPANTS AND CREDITS
+---------------------------
+
+   The following TeamTNT members were involved in creating
+   Grievance.  Testing was a team effort, and a big thanks goes
+   out to the fragbait the team members used to test against, 
+   even though non-TeamTNT folks aren't listed here by name.
+
+   Ty Halderman   
+	Project Coordinator, builds, web and FTP sites, 
+	email support, Punch Team, new textures, titlepic,
+        intermission, credit, etc. graphics, review coordinator
+
+   Gary Gosson
+        Mr. Punch Team
+
+   David Shaw
+        Intermission music
+
+   Rand Phares
+        New textures, Graphics coordination
+
+   Level design and of course testing was done by these members:
+	Thomas Elliot Cannon [Myscha] 
+	Charles Cox [Mange] 
+	Jim Dethlefsen [Derf] 
+	Andrew Dowswell 
+	Gary Gosson 
+	Ty Halderman 
+	Richard Jaspars [Styx] 
+	Jim Kennedy 
+	Brian Kidby [The Kid] 
+	Mike Marcotte [Krusty] 
+	Andrew Martin [Flatline] 
+	Rand Phares 
+	Cole Savage [MaNCeR] 
+	Robert Taylor 
+	Paul Turnbull [Stenger] 
+
+   Other assistance and early level work done by:
+	Dean Johnson 
+	John Minadeo 
+	John Wakelin [Single Malt] 
+
+   As always, we thank the authors of the many utilities we used
+   to produce Grievance.  Without you the DOOM-editing environment
+   would just suck.  
+
+------------------
+8. SOME LEGALITIES
+------------------
+
+   Grievance is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Grievance.
+   Grievance should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's DM collection or CD.  If it does, let us know right
+   away.  We are serious about the CD thing--no commercial
+   compilations are allowed to include any TeamTNT products under
+   any circumstances, even if they delete this text file...
+
+   We thank you for trying Grievance.  Let us know what you think
+   about it.  Try out Icarus, Bloodlands and Final DOOM too, and 
+   keep checking our web page for other team products--we're still
+   churning stuff out.
+
+   Grievance and associated files are
+   (C) Copyright 1996 TeamTNT
+
+///End of file

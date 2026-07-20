@@ -1,0 +1,36 @@
+object Lexicon_EPC1_GreenTorch
+{
+    frame LX18 { light BIGREDTORCH }
+}
+
+object Lexicon_EPC1_ZombieMan
+{
+    frame LX20F { light ZOMBIEATK }
+}
+
+object Lexicon_EPC1_ShotgunGuy
+{
+    frame LX24F { light ZOMBIEATK }
+}
+
+object Lexicon_EPC1_ChaingunGuy
+{
+    frame LX21E { light ZOMBIEATK }
+    frame LX21F { light ZOMBIEATK }
+}
+
+object Lexicon_EPC1_LostSoul
+{
+    frame LX22A { light LOSTSOUL    }
+    frame LX22B { light LOSTSOUL    }
+    frame LX22C { light LOSTSOUL    }
+    frame LX22D { light LOSTSOUL    }
+    frame LX22E { light LOSTSOUL    }
+    frame LX22F { light LOSTSOUL    }
+    frame LX22G { light LOSTSOUL    }
+
+    frame LX22H { light LOSTSOUL_X1 }
+    frame LX22I { light LOSTSOUL_X2 }
+    frame LX22J { light LOSTSOUL_X3 }
+    frame LX22K { light LOSTSOUL_X4 }
+}

@@ -1,0 +1,175 @@
+Bloodlands text file 3 August 1996
+
+Contents:
+1. Announcement
+2. Installation
+3. Troubleshooting
+4. System requirements
+5. Where to find files
+6. How to get help
+7. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                  +--------------------------+
+                  | Bloodlands - Episode One |
+                  |   The Deathmatch Levels  |
+                  +--------------------------+
+
+Bloodlands is a set of 32 DOOM II Deathmatch-only levels from 
+TeamTNT.  It is now available on ftp.cdrom.com and its mirrors.  
+See below for the exact path.
+
+We tried to pay attention to deathmatch in Icarus: Alien Vanguard, 
+but there's no substitute for dedication.  Bloodlands is all
+deathmatch, all the time.  We have small levels for tight, high
+frag-count mayhem, and larger ones for more players and for the
+folks who like hunt-and-seek deathmatch.  But in every case it's
+going to be a fun time.
+
+You wondered what happened to the weekend when you played Icarus.  
+You'll wonder what happened to the month when you play Bloodlands.
+
+Features:
+
+ - 32 brand new levels by some of the best Deathmatchers
+ - Difficulty levels used to fine-tune game rules
+ - Three 5-minute fragfest demos with 3 and 4 players
+ - All in one WAD, easy to run
+ - Works with DOOM II version 1.9 or Final DOOM
+ - Intermission music by David Shaw
+ - Small overall WAD size of 3MB, zipped to fit on a diskette
+ - It's by TeamTNT members, so you know it's good
+ - Startup batch file included
+ - Kept small by limiting new graphics and music
+
+
+---------------
+2. INSTALLATION
+---------------
+Bloodlands comes in one WAD file, zipped into one ZIP file.  You'll
+need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+TNTBLOOD.ZIP.  This will produce TNTBLOOD.WAD and TNTBLOOD.BAT (and
+another copy of this file).
+
+Just unzip it into your DOOM2 directory and run TNTBLOOD.BAT, or 
+load TNTBLOOD.WAD in your favorite front-end program.
+
+Floppy download:
+
+Not a problem.  Bloodlands fits on a floppy--it's barely over a meg
+when zipped.
+
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+Not much can go wrong, since this is just one WAD file.  However,
+since not much can go wrong, something might, and maybe a few
+steps here will help.
+
+a.  First, verify that TNTBLOOD.BAT and TNTBLOOD.WAD are in your
+    DOOM2 directory, and that you are in that directory when you
+    type TNTBLOOD.
+
+b.  Spell TNTBLOOD right.
+
+c.  If it starts up and crashes with a message similar to
+
+      "Demo is from a different version"
+
+    then you're not running DOOM2 version 1.9.  You'll need to
+    upgrade if you're going to look at the demos (which are 
+    well worth the trouble).  Upgrade files are available all
+    over the place, and particularly at ftp.cdrom.com or 
+    ftp.idsoftware.com.  Your DOOM2 version number will appear 
+    at the top of the screen while DOOM2 is initializing.
+
+d.  If you notice that the full-screen intermission texts (like
+    between MAP06 and MAP07) don't make sense any more, or that
+    the automap names don't match the level names, that's because
+    we chose to honor id Software's wish that we not alter their
+    DOOM2.EXE file, and that's where that stuff is stored.
+
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   A computer that will play DOOM2 well.  Deathmatch is deathmatch,
+   and you won't need any more computer or modem power than you'd 
+   need with DOOM2 by itself.  
+
+   You'll like it better if you have a good sound card, but if you
+   do much deathmatch you already know that.
+
+   The WAD file is a bit over 3MB, and you'll need about 5MB 
+   free available during unzipping.
+
+   Any other requirements (modem, network stuff) are no different
+   than if you were running DOOM2 without Bloodlands.
+
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Bloodlands was uploaded to ftp.cdrom.com at
+   1:00 PM CDT on Saturday 2 August 1996.  It will be moved to its
+   own directory and will be propagated to the cdrom.com
+   mirrors after that.  We expect to also upload it over the few
+   days following that date, to Compuserve, AOL, Fidonet and
+   possibly some others.  As of this writing, only ftp.cdrom.com
+   has it, and that's the place you can be guaranteed to find
+   the most recent version.
+
+   So, FTP to ftp.cdrom.com and look in directory (mixed case)
+       /pub/doom2/themes/TeamTNT
+
+   While you're there, get Icarus if you don't already have it.
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about DOOM2 itself, contact id Software.
+
+   If it's about Bloodlands, don't contact id Software.
+
+   Bloodlands questions can be handled by other players on the
+   usenet newsgroups, various forums on Compuserve and other
+   services, and by TeamTNT by email.  Either write to us at
+
+      teamtnt@neosoft.com
+
+   or go to our web page at
+
+      <http://www.neosoft.com/~teamtnt>
+
+   
+------------------
+7. SOME LEGALITIES
+------------------
+
+   Bloodlands is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Bloodlands.
+   Bloodlands should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's DM collection or CD.  If it does, let us know right
+   away.
+
+   We thank you for trying Bloodlands.  Let us know what you think
+   about it.  Try out Icarus and Final DOOM too, and check back 
+   around October '96 for another episode of Bloodlands.
+
+   Bloodlands - Episode One and associated files are
+   (C) Copyright 1996 TeamTNT
+
+///End of file
+

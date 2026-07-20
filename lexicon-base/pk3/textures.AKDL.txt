@@ -1,0 +1,79 @@
+Texture "AKDL0043", 1024, 128
+{
+	Patch "AKDL0070", 0, 0
+	Patch "AKDL0071", 256, 0
+	Patch "AKDL0072", 512, 0
+	Patch "AKDL0073", 768, 0
+}
+Texture "AKDL0045", 1024, 128
+{
+	Patch "AKDL0095", 0, 0
+	Patch "AKDL0096", 256, 0
+	Patch "AKDL0097", 512, 0
+	Patch "AKDL0098", 768, 0
+}
+Texture "AKDL0046", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_7", 14, 66
+	Patch "AKDL0107", 64, 0
+}
+Texture "AKDL0047", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "AKDL0054", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "AKDL0055", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "AKDL0056", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_8", 14, 66
+	Patch "AKDL0108", 64, 0
+}
+Texture "AKDL0057", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "AKDL0064", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "AKDL0065", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "AKDL0287", 64, 128
+{
+	Patch "AKDL0605", 0, 0
+}
+Texture "AKDL0329", 64, 128
+{
+	Patch "RW41_2", 0, 0
+	Patch "SW2_4", 6, 6
+}
+Texture "AKDL0330", 64, 16
+{
+	Patch "W33_7", 0, 0
+	Patch "WLITA0", 4, 4
+	Patch "WLITB0", 12, 4
+	Patch "WLITB0", 16, 4
+	Patch "WLITC0", 21, 4
+	Patch "WLITA0", 35, 4
+	Patch "WLITB0", 38, 4
+	Patch "WLITB0", 44, 4
+	Patch "WLITC0", 52, 4
+}

@@ -1,0 +1,59 @@
+ACTOR Lexicon_DB02_GreenTorch : GreenTorch
+{
+	States
+	{
+	Spawn:
+		LX04 KLMN 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_DB02_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX04 O -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB02_Stalagtite : Stalagtite
+{
+	States
+	{
+	Spawn:
+		LX04 P -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB02_ShortGreenColumn : ShortGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX04 Q -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB02_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX04 R -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB02_ShortGreenTorch : ShortGreenTorch
+{
+	States
+	{
+	Spawn:
+		LX04 STUV 4 BRIGHT
+		Loop
+	}
+}

@@ -1,0 +1,1432 @@
+Texture "GD640416", 1024, 128
+{
+	Patch "GD641783", 0, 0
+	Patch "GD641784", 256, 0
+	Patch "GD641785", 512, 0
+	Patch "GD641786", 768, 0
+}
+Texture "GD640424", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W107_1", 0, 0
+}
+Texture "GD640425", 64, 128
+{
+	Patch "GD641715", 0, 0
+	Patch "GD641715", 0, 64
+}
+Texture "GD640426", 128, 128
+{
+	Patch "GD641679", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "GD640427", 128, 128
+{
+	Patch "GD641680", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "GD640428", 256, 128
+{
+	Patch "GD641718", 32, 0
+	Patch "GD641720", 96, 0
+	Patch "GD641716", 160, 0
+	Patch "GD641717", 0, 64
+	Patch "GD641719", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "GD641706", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "GD641716", 0, 0
+}
+Texture "GD640429", 64, 128
+{
+	Patch "GD641717", 0, 0
+	Patch "GD641717", 0, 64
+}
+Texture "GD640432", 64, 128
+{
+	Patch "GD641685", 0, 0
+	Patch "GD641687", 32, 0
+	Patch "GD641685", 0, 64
+	Patch "GD641687", 32, 64
+}
+Texture "GD640433", 64, 128
+{
+	Patch "GD641685", 0, 0
+	Patch "GD641687", 32, 0
+	Patch "GD642632", 0, 64
+	Patch "GD642635", 32, 64
+}
+Texture "GD640434", 64, 128
+{
+	Patch "GD641685", 0, 0
+	Patch "GD641687", 32, 0
+	Patch "GD642637", 0, 64
+	Patch "GD642640", 32, 64
+}
+Texture "GD640435", 64, 128
+{
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 32, 0
+	Patch "GD641682", 0, 64
+	Patch "GD641684", 32, 64
+}
+Texture "GD640436", 64, 128
+{
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 32, 0
+	Patch "GD642632", 0, 64
+	Patch "GD642635", 32, 64
+}
+Texture "GD640437", 64, 128
+{
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 32, 0
+	Patch "GD641685", 0, 64
+	Patch "GD641687", 32, 64
+}
+Texture "GD640438", 64, 128
+{
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 32, 0
+	Patch "GD642637", 0, 64
+	Patch "GD642640", 32, 64
+}
+Texture "GD640439", 64, 128
+{
+	Patch "GD642637", 0, 0
+	Patch "GD642640", 32, 0
+	Patch "GD642637", 0, 64
+	Patch "GD642640", 32, 64
+}
+Texture "GD640440", 64, 128
+{
+	Patch "GD641690", 0, 0
+	Patch "GD641690", 32, 0
+	Patch "GD641685", 0, 64
+	Patch "GD641687", 32, 64
+}
+Texture "GD640441", 64, 128
+{
+	Patch "GD641690", 0, 0
+	Patch "GD641690", 32, 0
+	Patch "GD641682", 0, 64
+	Patch "GD641684", 32, 64
+}
+Texture "GD640460", 128, 128
+{
+	Patch "GD641685", 0, 64
+	Patch "GD641686", 40, 64
+	Patch "GD641686", 32, 64
+	Patch "GD641686", 48, 64
+	Patch "GD641686", 56, 64
+	Patch "GD641687", 96, 64
+	Patch "GD641686", 88, 64
+	Patch "GD641686", 80, 64
+	Patch "GD641686", 72, 64
+	Patch "GD641686", 64, 64
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 96, 0
+	Patch "GD641683", 48, 0
+	Patch "GD641683", 40, 0
+	Patch "GD641683", 32, 0
+	Patch "GD641683", 72, 0
+	Patch "GD641683", 64, 0
+	Patch "GD641683", 56, 0
+	Patch "GD641683", 80, 0
+	Patch "GD641683", 88, 0
+}
+Texture "GD640464", 128, 128
+{
+	Patch "GD642637", 0, 64
+	Patch "GD642639", 40, 64
+	Patch "GD642639", 32, 64
+	Patch "GD642639", 48, 64
+	Patch "GD642639", 56, 64
+	Patch "GD642640", 96, 64
+	Patch "GD642639", 88, 64
+	Patch "GD642639", 80, 64
+	Patch "GD642639", 72, 64
+	Patch "GD642639", 64, 64
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 96, 0
+	Patch "GD641683", 48, 0
+	Patch "GD641683", 40, 0
+	Patch "GD641683", 32, 0
+	Patch "GD641683", 72, 0
+	Patch "GD641683", 64, 0
+	Patch "GD641683", 56, 0
+	Patch "GD641683", 80, 0
+	Patch "GD641683", 88, 0
+}
+Texture "GD640465", 128, 128
+{
+	Patch "GD642637", 0, 64
+	Patch "GD642639", 40, 64
+	Patch "GD642639", 32, 64
+	Patch "GD642639", 48, 64
+	Patch "GD642639", 56, 64
+	Patch "GD642640", 96, 64
+	Patch "GD642639", 88, 64
+	Patch "GD642639", 80, 64
+	Patch "GD642639", 72, 64
+	Patch "GD642639", 64, 64
+	Patch "GD641685", 0, 0
+	Patch "GD641687", 96, 0
+	Patch "GD641686", 48, 0
+	Patch "GD641686", 40, 0
+	Patch "GD641686", 32, 0
+	Patch "GD641686", 72, 0
+	Patch "GD641686", 64, 0
+	Patch "GD641686", 56, 0
+	Patch "GD641686", 80, 0
+	Patch "GD641686", 88, 0
+}
+Texture "GD640466", 128, 128
+{
+	Patch "GD642632", 0, 64
+	Patch "GD642634", 40, 64
+	Patch "GD642634", 32, 64
+	Patch "GD642634", 48, 64
+	Patch "GD642634", 56, 64
+	Patch "GD642635", 96, 64
+	Patch "GD642634", 88, 64
+	Patch "GD642634", 80, 64
+	Patch "GD642634", 72, 64
+	Patch "GD642634", 64, 64
+	Patch "GD641682", 0, 0
+	Patch "GD641684", 96, 0
+	Patch "GD641683", 48, 0
+	Patch "GD641683", 40, 0
+	Patch "GD641683", 32, 0
+	Patch "GD641683", 72, 0
+	Patch "GD641683", 64, 0
+	Patch "GD641683", 56, 0
+	Patch "GD641683", 80, 0
+	Patch "GD641683", 88, 0
+}
+Texture "GD640467", 128, 128
+{
+	Patch "GD642632", 0, 64
+	Patch "GD642634", 40, 64
+	Patch "GD642634", 32, 64
+	Patch "GD642634", 48, 64
+	Patch "GD642634", 56, 64
+	Patch "GD642635", 96, 64
+	Patch "GD642634", 88, 64
+	Patch "GD642634", 80, 64
+	Patch "GD642634", 72, 64
+	Patch "GD642634", 64, 64
+	Patch "GD641685", 0, 0
+	Patch "GD641687", 96, 0
+	Patch "GD641686", 48, 0
+	Patch "GD641686", 40, 0
+	Patch "GD641686", 32, 0
+	Patch "GD641686", 72, 0
+	Patch "GD641686", 64, 0
+	Patch "GD641686", 56, 0
+	Patch "GD641686", 80, 0
+	Patch "GD641686", 88, 0
+}
+Texture "GD640469", 64, 128
+{
+	Patch "GD641721", 0, 64
+	Patch "GD641721", 0, 0
+	Patch "EXIT1", 17, 22
+}
+Texture "GD640478", 128, 128
+{
+	Patch "GD641721", 0, 64
+	Patch "GD641721", 64, 0
+	Patch "GD641722", 0, 0
+	Patch "GD641722", 64, 64
+}
+Texture "GD640480", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "GD640481", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "GD641705", 20, 79
+}
+Texture "GD640482", 64, 128
+{
+	Patch "GD641715", 0, 64
+	Patch "GD641718", 0, 0
+	Patch "GD641715", 32, 64
+	Patch "SW2S0", 16, 72
+}
+Texture "GD640483", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "GD641705", 19, 79
+}
+Texture "GD640484", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "GD641705", 20, 68
+}
+Texture "GD640485", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "GD641705", 20, 80
+}
+Texture "GD640486", 64, 128
+{
+	Patch "GD641721", 0, 64
+	Patch "GD641721", 0, 0
+	Patch "SW1S0", 16, 78
+}
+Texture "GD640487", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "GD641705", 20, 79
+}
+Texture "GD640489", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "GD640490", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "GD641704", 20, 79
+}
+Texture "GD640491", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "GD641704", 20, 80
+}
+Texture "GD640492", 64, 128
+{
+	Patch "GD641715", 0, 64
+	Patch "GD641718", 0, 0
+	Patch "GD641715", 32, 64
+	Patch "SW2S1", 16, 72
+}
+Texture "GD640494", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "GD641704", 19, 79
+}
+Texture "GD640495", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "GD641704", 20, 68
+}
+Texture "GD640496", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "GD641704", 20, 80
+}
+Texture "GD640497", 64, 128
+{
+	Patch "GD641721", 0, 64
+	Patch "GD641721", 0, 0
+	Patch "SW1S1", 16, 78
+}
+Texture "GD640498", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "GD641704", 20, 79
+}
+Texture "GD640506", 256, 128
+{
+	Patch "GD641707", 0, 0
+	Patch "GD641708", 64, 0
+	Patch "GD641710", 128, 0
+	Patch "GD641709", 192, 0
+	Patch "GD641712", 0, 64
+	Patch "GD641714", 64, 64
+	Patch "GD641713", 128, 64
+	Patch "GD641711", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "GD640507", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "COMP03_1", 64, 64
+	Patch "COMP03_2", 64, 0
+	Patch "GD641743", 0, 0
+	Patch "GD641743", 0, 64
+	Patch "GD641744", 96, 64
+	Patch "GD641744", 96, 0
+}
+Texture "GD640508", 256, 128
+{
+	Patch "GD641739", 26, 64
+	Patch "GD641738", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "GD641739", 28, 0
+	Patch "GD641742", 72, 64
+	Patch "GD641741", 0, 0
+	Patch "GD641739", 176, 0
+	Patch "GD641739", 128, 64
+	Patch "GD641739", 112, 0
+	Patch "GD641739", 160, 64
+	Patch "GD641739", 136, 0
+	Patch "GD642545", 200, 0
+	Patch "GD642546", 200, 64
+	Patch "GD642547", 136, 64
+	Patch "GD641740", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+Texture "GD640513", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "GD640517", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "GD641747", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "GD641748", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "GD641749", 132, 69
+	Patch "GD641750", 68, 7
+	Patch "GD641751", 4, 7
+	Patch "GD641752", 132, 7
+	Patch "AG128_1", 192, 0
+	Patch "GD642581", 196, 7
+	Patch "GD642578", 196, 69
+}
+Texture "GD640519", 128, 128
+{
+	Patch "GD641728", 0, 56
+	Patch "GD641729", 64, 56
+	Patch "GD641728", 0, 0
+	Patch "GD641729", 64, 0
+}
+Texture "GD640523", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "GD640525", 64, 128
+{
+	Patch "GD641677", 40, 0
+	Patch "GD641677", 0, 0
+	Patch "GD641677", 19, 0
+}
+Texture "GD640526", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "GD640527", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "GD641705", 20, 80
+}
+Texture "GD640528", 128, 128
+{
+	Patch "GD640476", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "GD640530", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "GD640531", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "GD640532", 128, 128
+{
+	Patch "GD640476", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "GD640534", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "GD640535", 128, 128
+{
+	Patch "GD641778", 0, 0
+}
+Texture "GD640537", 128, 128
+{
+	Patch "GD641778", -120, -8
+}
+Texture "GD640543", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "GD640546", 128, 128
+{
+	Patch "GD641766", 64, 66
+	Patch "GD641768", 0, 66
+	Patch "GD641767", 0, 0
+	Patch "GD641766", 64, 0
+}
+Texture "GD640547", 64, 128
+{
+	Patch "GD641769", 0, 0
+	Patch "GD641769", 0, 32
+	Patch "GD641769", 0, 96
+	Patch "GD641769", 0, 64
+}
+Texture "GD640548", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "GD641777", 14, 74
+}
+Texture "GD640552", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "GD641746", 81, 34
+	Patch "GD641746", 19, 34
+}
+Texture "GD640553", 16, 128
+{
+	Patch "GD641765", -4, 56
+	Patch "GD641765", -4, 0
+}
+Texture "GD640557", 64, 128
+{
+	Patch "GD641770", 0, 0
+	Patch "GD641771", 32, 0
+}
+Texture "GD640558", 256, 128
+{
+	Patch "GD641761", 0, 0
+	Patch "GD641762", 128, 0
+}
+Texture "GD640560", 128, 128
+{
+	Patch "GD641757", -12, 0
+	Patch "GD641757", 116, 0
+}
+Texture "GD640561", 128, 128
+{
+	Patch "GD641758", -4, 0
+	Patch "GD641758", 124, 0
+}
+Texture "GD640575", 128, 128
+{
+	Patch "GD641797", 0, 56
+	Patch "GD641797", 0, 0
+	Patch "GD641798", 64, 56
+	Patch "GD641798", 64, 0
+	Patch "GD641799", 88, 56
+	Patch "GD641799", 88, 0
+}
+Texture "GD640584", 128, 128
+{
+	Patch "GD641804", 0, 56
+	Patch "GD641804", 0, 0
+	Patch "GD641805", 64, 56
+	Patch "GD641805", 64, 0
+	Patch "GD641806", 88, 56
+	Patch "GD641806", 88, 0
+}
+Texture "GD640587", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+}
+Texture "GD640609", 128, 128
+{
+	Patch "GD640597", 0, 0
+	Patch "GD641828", 99, 120
+	Patch "GD641828", 67, 120
+	Patch "GD641828", 35, 120
+	Patch "GD641828", 3, 120
+}
+Texture "GD640616", 128, 128
+{
+	Patch "GD641829", 0, 0
+	Patch "GD641830", 0, 64
+}
+Texture "GD640617", 128, 128
+{
+	Patch "GD641831", 0, 64
+	Patch "GD641829", 0, 0
+}
+Texture "GD640619", 128, 128
+{
+	Patch "GD641832", 0, 0
+	Patch "GD641832", -16, 64
+	Patch "GD641832", 112, 64
+}
+Texture "GD640632", 128, 128
+{
+	Patch "GD641867", 0, 0
+	Patch "GD641842", 0, 0
+	Patch "GD641842", -32, 64
+	Patch "GD641867", 64, 24
+	Patch "GD641842", 64, 0
+	Patch "GD641842", 96, 64
+	Patch "GD641842", 32, 64
+}
+Texture "GD640644", 64, 128
+{
+	Patch "GD641853", 0, 0
+}
+Texture "GD640645", 64, 128
+{
+	Patch "GD641867", 0, 0
+}
+Texture "GD640648", 128, 128
+{
+	Patch "GD641853", 0, 0
+	Patch "GD641853", 64, 8
+	Patch "GD641855", 0, 0
+}
+Texture "GD640650", 128, 128
+{
+	Patch "GD641853", 0, 0
+	Patch "GD641853", 64, 8
+	Patch "GD641855", 0, 0
+	Patch "GD641866", 0, 56
+}
+Texture "GD640657", 128, 128
+{
+	Patch "GD641853", 0, 0
+	Patch "GD641853", 64, 16
+	Patch "GD641858", 0, 0
+}
+Texture "GD640662", 128, 128
+{
+	Patch "GD641853", 0, 0
+	Patch "GD641853", 64, 16
+	Patch "GD641859", 0, 0
+	Patch "GD641866", 0, 56
+}
+Texture "GD640678", 64, 128
+{
+	Patch "GD641882", 0, 0
+	Patch "GD641882", 0, 64
+}
+Texture "GD640729", 256, 128
+{
+	Patch "GD640715", 0, 0
+	Patch "GD640715", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "GD640736", 16, 128
+{
+	Patch "GD641936", 0, 0
+	Patch "GD641938", 8, 0
+	Patch "GD641936", 0, 8
+	Patch "GD641938", 8, 8
+	Patch "GD641936", 0, 16
+	Patch "GD641938", 8, 16
+	Patch "GD641936", 0, 24
+	Patch "GD641938", 8, 24
+	Patch "GD641936", 0, 32
+	Patch "GD641938", 8, 32
+	Patch "GD641936", 0, 40
+	Patch "GD641938", 8, 40
+	Patch "GD641936", 0, 48
+	Patch "GD641938", 8, 48
+	Patch "GD641936", 0, 56
+	Patch "GD641938", 8, 56
+	Patch "GD641936", 0, 64
+	Patch "GD641938", 8, 64
+	Patch "GD641936", 0, 72
+	Patch "GD641938", 8, 72
+	Patch "GD641936", 0, 80
+	Patch "GD641938", 8, 80
+	Patch "GD641936", 0, 88
+	Patch "GD641938", 8, 88
+	Patch "GD641936", 0, 96
+	Patch "GD641938", 8, 96
+	Patch "GD641936", 0, 104
+	Patch "GD641938", 8, 104
+	Patch "GD641936", 0, 112
+	Patch "GD641938", 8, 112
+	Patch "GD641936", 0, 120
+	Patch "GD641938", 8, 120
+}
+Texture "GD640737", 32, 128
+{
+	Patch "GD641946", 16, 0
+	Patch "GD641947", 24, 0
+	Patch "GD641946", 16, 8
+	Patch "GD641947", 24, 8
+	Patch "GD641946", 16, 16
+	Patch "GD641947", 24, 16
+	Patch "GD641946", 16, 24
+	Patch "GD641947", 24, 24
+	Patch "GD641946", 16, 32
+	Patch "GD641947", 24, 32
+	Patch "GD641946", 16, 40
+	Patch "GD641947", 24, 40
+	Patch "GD641946", 16, 48
+	Patch "GD641947", 24, 48
+	Patch "GD641946", 16, 56
+	Patch "GD641947", 24, 56
+	Patch "GD641946", 16, 64
+	Patch "GD641947", 24, 64
+	Patch "GD641946", 16, 72
+	Patch "GD641947", 24, 72
+	Patch "GD641946", 16, 80
+	Patch "GD641947", 24, 80
+	Patch "GD641946", 16, 88
+	Patch "GD641947", 24, 88
+	Patch "GD641946", 16, 96
+	Patch "GD641947", 24, 96
+	Patch "GD641946", 16, 104
+	Patch "GD641947", 24, 104
+	Patch "GD641946", 16, 112
+	Patch "GD641947", 24, 112
+	Patch "GD641946", 16, 120
+	Patch "GD641947", 24, 120
+	Patch "GD641946", 8, 64
+	Patch "GD641946", 8, 72
+	Patch "GD641946", 8, 80
+	Patch "GD641946", 8, 88
+	Patch "GD641946", 8, 96
+	Patch "GD641946", 8, 104
+	Patch "GD641946", 8, 112
+	Patch "GD641946", 8, 120
+	Patch "GD641945", 0, 0
+	Patch "GD641945", 0, 8
+	Patch "GD641945", 0, 16
+	Patch "GD641945", 0, 24
+	Patch "GD641945", 0, 32
+	Patch "GD641945", 0, 40
+	Patch "GD641945", 0, 48
+	Patch "GD641945", 0, 56
+	Patch "GD641945", 0, 64
+	Patch "GD641945", 0, 72
+	Patch "GD641945", 0, 80
+	Patch "GD641945", 0, 88
+	Patch "GD641945", 0, 96
+	Patch "GD641945", 0, 104
+	Patch "GD641945", 0, 112
+	Patch "GD641945", 0, 120
+	Patch "GD641946", 8, 56
+	Patch "GD641946", 8, 48
+	Patch "GD641946", 8, 40
+	Patch "GD641946", 8, 32
+	Patch "GD641946", 8, 24
+	Patch "GD641946", 8, 16
+	Patch "GD641946", 8, 8
+	Patch "GD641946", 8, 0
+}
+Texture "GD640738", 32, 128
+{
+	Patch "GD641943", 16, 0
+	Patch "GD641944", 24, 0
+	Patch "GD641943", 16, 8
+	Patch "GD641944", 24, 8
+	Patch "GD641943", 16, 16
+	Patch "GD641944", 24, 16
+	Patch "GD641943", 16, 24
+	Patch "GD641944", 24, 24
+	Patch "GD641943", 16, 32
+	Patch "GD641944", 24, 32
+	Patch "GD641943", 16, 40
+	Patch "GD641944", 24, 40
+	Patch "GD641943", 16, 48
+	Patch "GD641944", 24, 48
+	Patch "GD641943", 16, 56
+	Patch "GD641944", 24, 56
+	Patch "GD641943", 16, 64
+	Patch "GD641944", 24, 64
+	Patch "GD641943", 16, 72
+	Patch "GD641944", 24, 72
+	Patch "GD641943", 16, 80
+	Patch "GD641944", 24, 80
+	Patch "GD641943", 16, 88
+	Patch "GD641944", 24, 88
+	Patch "GD641943", 16, 96
+	Patch "GD641944", 24, 96
+	Patch "GD641943", 16, 104
+	Patch "GD641944", 24, 104
+	Patch "GD641943", 16, 112
+	Patch "GD641944", 24, 112
+	Patch "GD641943", 16, 120
+	Patch "GD641944", 24, 120
+	Patch "GD641943", 8, 64
+	Patch "GD641943", 8, 72
+	Patch "GD641943", 8, 80
+	Patch "GD641943", 8, 88
+	Patch "GD641943", 8, 96
+	Patch "GD641943", 8, 104
+	Patch "GD641943", 8, 112
+	Patch "GD641943", 8, 120
+	Patch "GD641942", 0, 0
+	Patch "GD641942", 0, 120
+	Patch "GD641942", 0, 112
+	Patch "GD641942", 0, 104
+	Patch "GD641942", 0, 96
+	Patch "GD641942", 0, 88
+	Patch "GD641942", 0, 80
+	Patch "GD641942", 0, 72
+	Patch "GD641942", 0, 64
+	Patch "GD641942", 0, 56
+	Patch "GD641942", 0, 48
+	Patch "GD641942", 0, 40
+	Patch "GD641942", 0, 32
+	Patch "GD641942", 0, 24
+	Patch "GD641942", 0, 16
+	Patch "GD641942", 0, 8
+	Patch "GD641943", 8, 56
+	Patch "GD641943", 8, 48
+	Patch "GD641943", 8, 40
+	Patch "GD641943", 8, 32
+	Patch "GD641943", 8, 24
+	Patch "GD641943", 8, 16
+	Patch "GD641943", 8, 8
+	Patch "GD641943", 8, 0
+}
+Texture "GD640739", 32, 128
+{
+	Patch "GD641940", 16, 0
+	Patch "GD641941", 24, 0
+	Patch "GD641940", 16, 8
+	Patch "GD641941", 24, 8
+	Patch "GD641940", 16, 16
+	Patch "GD641941", 24, 16
+	Patch "GD641940", 16, 24
+	Patch "GD641941", 24, 24
+	Patch "GD641940", 16, 32
+	Patch "GD641941", 24, 32
+	Patch "GD641940", 16, 40
+	Patch "GD641941", 24, 40
+	Patch "GD641940", 16, 48
+	Patch "GD641941", 24, 48
+	Patch "GD641940", 16, 56
+	Patch "GD641941", 24, 56
+	Patch "GD641940", 16, 64
+	Patch "GD641941", 24, 64
+	Patch "GD641940", 16, 72
+	Patch "GD641941", 24, 72
+	Patch "GD641940", 16, 80
+	Patch "GD641941", 24, 80
+	Patch "GD641940", 16, 88
+	Patch "GD641941", 24, 88
+	Patch "GD641940", 16, 96
+	Patch "GD641941", 24, 96
+	Patch "GD641940", 16, 104
+	Patch "GD641941", 24, 104
+	Patch "GD641940", 16, 112
+	Patch "GD641941", 24, 112
+	Patch "GD641940", 16, 120
+	Patch "GD641941", 24, 120
+	Patch "GD641940", 8, 64
+	Patch "GD641940", 8, 72
+	Patch "GD641940", 8, 80
+	Patch "GD641940", 8, 88
+	Patch "GD641940", 8, 96
+	Patch "GD641940", 8, 104
+	Patch "GD641940", 8, 112
+	Patch "GD641940", 8, 120
+	Patch "GD641939", 0, 0
+	Patch "GD641939", 0, 120
+	Patch "GD641939", 0, 112
+	Patch "GD641939", 0, 104
+	Patch "GD641939", 0, 96
+	Patch "GD641939", 0, 88
+	Patch "GD641939", 0, 80
+	Patch "GD641939", 0, 72
+	Patch "GD641939", 0, 64
+	Patch "GD641939", 0, 56
+	Patch "GD641939", 0, 48
+	Patch "GD641939", 0, 40
+	Patch "GD641939", 0, 32
+	Patch "GD641939", 0, 24
+	Patch "GD641939", 0, 16
+	Patch "GD641939", 0, 8
+	Patch "GD641940", 8, 56
+	Patch "GD641940", 8, 48
+	Patch "GD641940", 8, 40
+	Patch "GD641940", 8, 32
+	Patch "GD641940", 8, 24
+	Patch "GD641940", 8, 16
+	Patch "GD641940", 8, 8
+	Patch "GD641940", 8, 0
+}
+Texture "GD640742", 16, 128
+{
+	Patch "GD641942", 0, 0
+	Patch "GD641944", 8, 0
+	Patch "GD641942", 0, 8
+	Patch "GD641944", 8, 8
+	Patch "GD641942", 0, 16
+	Patch "GD641944", 8, 16
+	Patch "GD641942", 0, 24
+	Patch "GD641944", 8, 24
+	Patch "GD641942", 0, 32
+	Patch "GD641944", 8, 32
+	Patch "GD641942", 0, 40
+	Patch "GD641944", 8, 40
+	Patch "GD641942", 0, 48
+	Patch "GD641944", 8, 48
+	Patch "GD641942", 0, 56
+	Patch "GD641944", 8, 56
+	Patch "GD641942", 0, 64
+	Patch "GD641944", 8, 64
+	Patch "GD641942", 0, 72
+	Patch "GD641944", 8, 72
+	Patch "GD641942", 0, 80
+	Patch "GD641944", 8, 80
+	Patch "GD641942", 0, 88
+	Patch "GD641944", 8, 88
+	Patch "GD641942", 0, 96
+	Patch "GD641944", 8, 96
+	Patch "GD641942", 0, 104
+	Patch "GD641944", 8, 104
+	Patch "GD641942", 0, 112
+	Patch "GD641944", 8, 112
+	Patch "GD641942", 0, 120
+	Patch "GD641944", 8, 120
+}
+Texture "GD640743", 16, 128
+{
+	Patch "GD641945", 0, 0
+	Patch "GD641947", 8, 0
+	Patch "GD641945", 0, 8
+	Patch "GD641947", 8, 8
+	Patch "GD641945", 0, 16
+	Patch "GD641947", 8, 16
+	Patch "GD641945", 0, 24
+	Patch "GD641947", 8, 24
+	Patch "GD641945", 0, 32
+	Patch "GD641947", 8, 32
+	Patch "GD641945", 0, 40
+	Patch "GD641947", 8, 40
+	Patch "GD641945", 0, 48
+	Patch "GD641947", 8, 48
+	Patch "GD641945", 0, 56
+	Patch "GD641947", 8, 56
+	Patch "GD641945", 0, 64
+	Patch "GD641947", 8, 64
+	Patch "GD641945", 0, 72
+	Patch "GD641947", 8, 72
+	Patch "GD641945", 0, 80
+	Patch "GD641947", 8, 80
+	Patch "GD641945", 0, 88
+	Patch "GD641947", 8, 88
+	Patch "GD641945", 0, 96
+	Patch "GD641947", 8, 96
+	Patch "GD641945", 0, 104
+	Patch "GD641947", 8, 104
+	Patch "GD641945", 0, 112
+	Patch "GD641947", 8, 112
+	Patch "GD641945", 0, 120
+	Patch "GD641947", 8, 120
+}
+Texture "GD640747", 16, 128
+{
+	Patch "GD641951", 0, 56
+	Patch "GD641936", 0, 0
+	Patch "GD641936", 0, 40
+	Patch "GD641936", 0, 32
+	Patch "GD641936", 0, 24
+	Patch "GD641936", 0, 16
+	Patch "GD641936", 0, 8
+	Patch "GD641936", 0, 48
+	Patch "GD641938", 8, 48
+	Patch "GD641938", 8, 40
+	Patch "GD641938", 8, 32
+	Patch "GD641938", 8, 24
+	Patch "GD641938", 8, 16
+	Patch "GD641938", 8, 8
+	Patch "GD641938", 8, 0
+}
+Texture "GD640811", 64, 128
+{
+	Patch "GD642017", 0, 0
+	Patch "GD642017", 32, 64
+	Patch "GD642017", -32, 64
+}
+Texture "GD640844", 64, 128
+{
+	Patch "GD640842", 0, 0
+	Patch "GD640842", -32, 64
+	Patch "GD640842", 32, 64
+}
+Texture "GD640846", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "GD642026", 1, 104
+	Patch "GD642026", -63, 104
+}
+Texture "GD640849", 64, 128
+{
+	Patch "GD640472", 0, 0
+	Patch "GD642026", -63, 104
+	Patch "GD642026", 1, 104
+}
+Texture "GD640850", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "GD642026", -63, 104
+	Patch "GD642026", 1, 104
+}
+Texture "GD640852", 64, 128
+{
+	Patch "GD640820", 0, 0
+	Patch "GD642024", -63, 104
+	Patch "GD642024", 1, 104
+}
+Texture "GD640868", 64, 128
+{
+	Patch "GD642066", 0, 0
+	Patch "GD640870", 24, 0
+	Patch "GD642066", 40, 0
+}
+Texture "GD640869", 128, 64
+{
+	Patch "GD642067", 0, 0
+	Patch "GD640871", 0, 24
+	Patch "GD642067", 0, 40
+}
+Texture "GD640976", 64, 128
+{
+	Patch "GD642200", 0, 0
+	Patch "GD642200", 0, 64
+}
+Texture "GD640977", 64, 128
+{
+	Patch "GD642201", 0, 0
+	Patch "GD642201", 0, 64
+}
+Texture "GD640978", 64, 128
+{
+	Patch "GD642202", 0, 0
+	Patch "GD642202", 0, 64
+}
+Texture "GD641064", 128, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 32, 0
+	Patch "GD642328", 0, 44
+}
+Texture "GD641101", 64, 128
+{
+	Patch "GD641075", 0, 0
+	Patch "GD642346", 38, 124
+	Patch "GD642346", 6, 124
+	Patch "GD642346", 38, 92
+	Patch "GD642346", 6, 92
+	Patch "GD642346", 38, 60
+	Patch "GD642346", 6, 60
+	Patch "GD642346", 38, 28
+	Patch "GD642346", 6, 28
+}
+Texture "GD641170", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "GD642410", 3, 3
+}
+Texture "GD641172", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "GD642412", 3, 3
+}
+Texture "GD641173", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "GD642413", 3, 3
+}
+Texture "GD641174", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "GD642414", 3, 3
+}
+Texture "GD641176", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "GD642416", 5, 24
+}
+Texture "GD641180", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "GD642411", 4, 2
+}
+Texture "GD641182", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "GD642413", 4, 2
+}
+Texture "GD641184", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "GD642410", 4, 116
+}
+Texture "GD641187", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "GD642413", 4, 116
+}
+Texture "GD641231", 256, 128
+{
+	Patch "GD642455", 0, 0
+	Patch "GD642456", 64, 0
+	Patch "GD642457", 128, 0
+	Patch "GD642458", 192, 0
+}
+Texture "GD641235", 256, 128
+{
+	Patch "GD642462", 0, 0
+	Patch "GD642463", 64, 0
+	Patch "GD642464", 128, 0
+	Patch "GD642465", 192, 0
+}
+Texture "GD641236", 256, 128
+{
+	Patch "GD642466", 192, 0
+	Patch "GD642470", 0, 0
+	Patch "GD642471", 64, 0
+	Patch "GD642472", 128, 0
+}
+Texture "GD641308", 64, 128
+{
+	Patch "GD642549", 0, 0
+	Patch "GD642549", 0, 8
+	Patch "GD642549", 0, 16
+	Patch "GD642549", 0, 24
+	Patch "GD642549", 0, 120
+	Patch "GD642549", 0, 112
+	Patch "GD642549", 0, 104
+	Patch "GD642549", 0, 88
+	Patch "GD642549", 0, 96
+	Patch "GD642549", 0, 80
+	Patch "GD642549", 0, 72
+	Patch "GD642549", 0, 64
+	Patch "GD642549", 0, 56
+	Patch "GD642549", 0, 48
+	Patch "GD642549", 0, 40
+	Patch "GD642549", 0, 32
+}
+Texture "GD641309", 64, 128
+{
+	Patch "GD642550", 0, 0
+	Patch "GD642550", 0, 64
+}
+Texture "GD641310", 64, 128
+{
+	Patch "GD642551", 0, 0
+	Patch "GD642551", 0, 64
+}
+Texture "GD641313", 64, 128
+{
+	Patch "GD642554", 0, 0
+	Patch "GD642554", 0, 112
+	Patch "GD642554", 0, 96
+	Patch "GD642554", 0, 80
+	Patch "GD642554", 0, 64
+	Patch "GD642554", 0, 48
+	Patch "GD642554", 0, 32
+	Patch "GD642554", 0, 16
+}
+Texture "GD641317", 64, 128
+{
+	Patch "GD642558", 0, 0
+	Patch "GD642558", 0, 64
+}
+Texture "GD641318", 64, 128
+{
+	Patch "GD642559", 0, 0
+	Patch "GD642559", 0, 64
+}
+Texture "GD641319", 256, 128
+{
+	Patch "GD642560", 128, 64
+	Patch "GD642570", 192, 0
+	Patch "GD642571", 192, 64
+	Patch "GD641718", 32, 0
+	Patch "GD641720", 96, 0
+	Patch "GD641716", 0, 0
+	Patch "GD641716", 160, 0
+	Patch "GD641717", 0, 64
+	Patch "GD641719", 64, 64
+}
+Texture "GD641322", 256, 128
+{
+	Patch "GD642565", 128, 0
+	Patch "GD642564", 192, 0
+	Patch "GD642566", 192, 64
+	Patch "GD642567", 0, 64
+	Patch "GD642568", 128, 64
+	Patch "GD642569", 64, 64
+	Patch "GD642563", 64, 0
+	Patch "GD641707", 0, 0
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 224, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 0, 120
+}
+Texture "GD641334", 128, 128
+{
+	Patch "GD642592", 0, 0
+	Patch "GD642593", 64, 0
+	Patch "GD642594", 0, 64
+	Patch "GD642595", 64, 64
+}
+Texture "GD641343", 64, 128
+{
+	Patch "GD642611", 0, 0
+	Patch "GD642610", 0, 64
+}
+Texture "GD641344", 128, 128
+{
+	Patch "GD642602", 64, 0
+	Patch "GD642605", 64, 64
+	Patch "GD642605", 0, 0
+	Patch "GD642602", 0, 64
+	Patch "GD641743", 0, 0
+	Patch "GD641743", 0, 64
+	Patch "GD641744", 96, 64
+	Patch "GD641744", 96, 0
+}
+Texture "GD641345", 64, 128
+{
+	Patch "GD642603", 0, 0
+	Patch "GD642604", 0, 64
+}
+Texture "GD641346", 128, 128
+{
+	Patch "GD642604", 64, 0
+	Patch "GD642604", 0, 64
+	Patch "GD642603", 0, 0
+	Patch "GD642603", 64, 64
+	Patch "GD641743", 0, 0
+	Patch "GD641743", 0, 64
+	Patch "GD641744", 96, 64
+	Patch "GD641744", 96, 0
+}
+Texture "GD641347", 64, 128
+{
+	Patch "GD642605", 0, 0
+	Patch "GD642602", 0, 64
+}
+Texture "GD641349", 64, 128
+{
+	Patch "GD642607", 0, 0
+	Patch "GD642606", 0, 64
+}
+Texture "GD641350", 64, 128
+{
+	Patch "GD642608", 0, 0
+	Patch "GD642609", 0, 64
+}
+Texture "GD641351", 128, 128
+{
+	Patch "GD642609", 64, 0
+	Patch "GD642609", 0, 64
+	Patch "GD642608", 0, 0
+	Patch "GD642608", 64, 64
+	Patch "GD641743", 0, 0
+	Patch "GD641743", 0, 64
+	Patch "GD641744", 96, 64
+	Patch "GD641744", 96, 0
+}
+Texture "GD641352", 128, 128
+{
+	Patch "GD642610", 64, 0
+	Patch "GD642610", 0, 64
+	Patch "GD642611", 0, 0
+	Patch "GD642611", 64, 64
+	Patch "GD641744", 96, 64
+	Patch "GD641744", 96, 0
+	Patch "GD641743", 0, 0
+	Patch "GD641743", 0, 64
+}
+Texture "GD641357", 128, 128
+{
+	Patch "GD642623", 0, 0
+	Patch "GD642622", 0, 66
+	Patch "GD642622", 64, 0
+	Patch "GD642624", 64, 66
+}
+Texture "GD641370", 64, 128
+{
+	Patch "GD642660", 0, 0
+	Patch "GD642660", 0, 64
+}
+Texture "GD641391", 32, 16
+{
+	Patch "GD642744", 0, 0
+	Patch "GD642746", 0, 8
+}
+Texture "GD641421", 64, 128
+{
+	Patch "GD642722", 0, 0
+	Patch "GD642722", -32, 64
+	Patch "GD642722", 32, 64
+}
+Texture "GD641592", 64, 128
+{
+	Patch "GD642235", 0, 0
+	Patch "GD642235", 0, 64
+}
+Texture "GD641594", 64, 128
+{
+	Patch "GD642205", 0, 0
+	Patch "GD642205", 0, 64
+}
+Texture "GD641595", 64, 128
+{
+	Patch "GD642204", 0, 0
+	Patch "GD642204", 0, 64
+}
+Texture "GD641599", 64, 128
+{
+	Patch "GD642238", 0, 0
+	Patch "GD642238", 0, 64
+}
+Texture "GD641605", 64, 128
+{
+	Patch "GD642241", 0, 0
+	Patch "GD642241", 0, 64
+}
+Texture "GD641609", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+}
+Texture "GD641620", 256, 96
+{
+	Patch "GD642262", 0, 0
+	Patch "GD642263", 128, 0
+}
+Texture "GD641621", 64, 128
+{
+	Patch "GD642247", 0, 0
+	Patch "GD642247", 0, 64
+}
+Texture "GD641622", 64, 128
+{
+	Patch "GD642251", 0, 0
+	Patch "GD642251", 0, 64
+}
+Texture "GD641623", 64, 128
+{
+	Patch "GD642248", 0, 0
+	Patch "GD642248", 0, 64
+}
+Texture "GD641624", 64, 128
+{
+	Patch "GD642249", 0, 0
+	Patch "GD642249", 0, 64
+}
+Texture "GD641634", 128, 64
+{
+	Patch "GD642114", 0, 0
+	Patch "GD642114", 0, 40
+	Patch "GD641638", 0, 24
+}
+Texture "GD641651", 64, 128
+{
+	Patch "GD642113", 0, 0
+	Patch "GD641637", 24, 0
+	Patch "GD642113", 40, 0
+}
+Texture "GD641653", 64, 128
+{
+	Patch "GD642255", 0, 0
+	Patch "GD642255", 0, 64
+}
+Texture "GD641654", 64, 128
+{
+	Patch "GD642741", 0, 0
+	Patch "GD642741", 0, 64
+}

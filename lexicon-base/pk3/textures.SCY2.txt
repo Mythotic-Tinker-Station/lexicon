@@ -1,0 +1,483 @@
+WallTexture "SCY20153", 16, 128
+{
+    Patch "SCY21315", 0, 0
+    Patch "SCY21317", 8, 0
+    Patch "SCY21315", 0, 8
+    Patch "SCY21315", 0, 16
+    Patch "SCY21317", 8, 16
+    Patch "SCY21317", 8, 8
+    Patch "SCY21315", 0, 24
+    Patch "SCY21317", 8, 24
+    Patch "SCY21315", 0, 32
+    Patch "SCY21317", 8, 32
+    Patch "SCY21315", 0, 40
+    Patch "SCY21317", 8, 40
+    Patch "SCY21315", 0, 48
+    Patch "SCY21317", 8, 48
+    Patch "SCY21315", 0, 56
+    Patch "SCY21317", 8, 56
+    Patch "SCY21315", 0, 64
+    Patch "SCY21317", 8, 64
+    Patch "SCY21315", 0, 72
+    Patch "SCY21317", 8, 72
+    Patch "SCY21315", 0, 80
+    Patch "SCY21317", 8, 80
+    Patch "SCY21315", 0, 88
+    Patch "SCY21317", 8, 88
+    Patch "SCY21315", 0, 96
+    Patch "SCY21317", 8, 96
+    Patch "SCY21315", 0, 104
+    Patch "SCY21317", 8, 104
+    Patch "SCY21315", 0, 112
+    Patch "SCY21317", 8, 112
+    Patch "SCY21315", 0, 120
+    Patch "SCY21317", 8, 120
+}
+
+WallTexture "SCY20160", 256, 128
+{
+    Patch "SCY21204", 0, 0
+    Patch "SCY21204", 64, 0
+    Patch "SCY21204", 128, 0
+    Patch "SCY21204", 192, 0
+    Patch "SCY20190", 0, 16
+}
+
+WallTexture "SCY20236", 256, 128
+{
+    Patch "SCY21292", 0, 0
+    Patch "SCY21292", 64, 0
+    Patch "SCY21292", 128, 0
+    Patch "SCY21292", 192, 0
+}
+
+WallTexture "SCY20256", 256, 128
+{
+    Patch "SCY21090", 0, 0
+    Patch "SCY20250", 160, 0
+    Patch "SCY20250", 192, 0
+}
+
+WallTexture "SCY20257", 128, 112
+{
+    Patch "SCY21091", 0, 0
+    Patch "SCY20154", 112, 0
+}
+
+WallTexture "SCY20262", 128, 128
+{
+    Patch "SCY21097", 0, 0
+    Patch "SCY20154", 96, 0
+    Patch "SCY20154", 112, 0
+}
+
+WallTexture "SCY20269", 256, 128
+{
+    Patch "SCY21103", 0, 0
+    Patch "SCY20250", 208, 0
+}
+
+WallTexture "SCY20270", 256, 128
+{
+    Patch "SCY21107", 0, 0
+    Patch "SCY20250", 208, 0
+}
+
+WallTexture "SCY20273", 256, 176
+{
+    Patch "SCY21111", 0, 0
+    Patch "SCY20250", 192, 0
+}
+
+WallTexture "SCY20279", 256, 176
+{
+    Patch "SCY21120", 0, 0
+    Patch "SCY20277", 192, 0
+}
+
+WallTexture "SCY20281", 256, 128
+{
+    Patch "SCY21123", 0, 0
+    Patch "SCY20250", 160, 0
+    Patch "SCY20250", 192, 0
+}
+
+WallTexture "SCY20282", 256, 128
+{
+    Patch "SCY21124", 0, 0
+    Patch "SCY20250", 192, 0
+}
+
+WallTexture "SCY20290", 128, 64
+{
+    Patch "SCY21133", 0, 0
+    Patch "SCY20248", 96, 0
+}
+
+WallTexture "SCY20291", 128, 64
+{
+    Patch "SCY21133", 0, -64
+    Patch "SCY20248", 96, 0
+}
+
+WallTexture "SCY20301", 16, 64
+{
+    Patch "SCY20300", 0, 0
+    Patch "SCY20300", 0, 16
+    Patch "SCY20300", 0, 32
+    Patch "SCY20300", 0, 48
+}
+
+WallTexture "SCY20305", 64, 192
+{
+    Patch "SCY20699", 0, 0
+    Patch "SCY20693", 0, 64
+}
+
+WallTexture "SCY20306", 128, 112
+{
+    Patch "DOOR11_1", 4, 0
+    Patch "DOOR11_1", 124, 0
+    Patch "DOOR11_1", -116, 0
+    Patch "SCY20304", 48, 48
+}
+
+WallTexture "SCY20310", 256, 128
+{
+    Patch "SCY20308", 0, 0
+    Patch "SCY20308", 64, 0
+    Patch "SCY20308", 128, 0
+    Patch "SCY20308", 192, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20311", 256, 128
+{
+    Patch "SCY20308", 0, 0
+    Patch "SCY20308", 64, 0
+    Patch "SCY20308", 128, 0
+    Patch "SCY20308", 192, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20312", 256, 128
+{
+    Patch "RW5_4", 0, 0
+    Patch "RW5_3", 64, 0
+    Patch "RW5_4", 128, 0
+    Patch "RW5_3", 192, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20313", 256, 128
+{
+    Patch "RW5_4", 0, 0
+    Patch "RW5_3", 64, 0
+    Patch "RW5_4", 128, 0
+    Patch "RW5_3", 192, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20314", 256, 128
+{
+    Patch "RW24_2", 0, 0
+    Patch "RW24_2", 64, 0
+    Patch "RW24_2", 128, 0
+    Patch "RW24_2", 192, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20315", 256, 128
+{
+    Patch "RW24_2", 0, 0
+    Patch "RW24_2", 64, 0
+    Patch "RW24_2", 128, 0
+    Patch "RW24_2", 192, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20316", 256, 128
+{
+    Patch "SCY20698", 0, 0
+    Patch "SCY20698", 64, 0
+    Patch "SCY20698", 128, 0
+    Patch "SCY20698", 192, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20317", 256, 128
+{
+    Patch "SCY20698", 0, 0
+    Patch "SCY20698", 64, 0
+    Patch "SCY20698", 128, 0
+    Patch "SCY20698", 192, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20326", 64, 128
+{
+    Patch "RW26_1", 0, 0
+    Patch "EXIT2", 16, 64
+    Patch "EXIT2", 16, 48
+    Patch "EXIT2", 24, 64
+    Patch "EXIT2", 24, 48
+    Patch "EXIT2", 32, 64
+    Patch "EXIT2", 32, 48
+    Patch "EXIT2", 40, 64
+    Patch "EXIT2", 40, 48
+    Patch "W108_4", 24, 52
+}
+
+WallTexture "SCY20382", 128, 128
+{
+    Patch "SCY20377", 0, 0
+    Patch "W111_2", 0, 0
+    Patch "W111_3", 64, 64
+    Patch "W111_2", 0, 64
+    Patch "W111_3", 64, 0
+}
+
+WallTexture "SCY20383", 256, 128
+{
+    Patch "SCY20381", 0, 0
+    Patch "SCY20381", 128, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20384", 256, 128
+{
+    Patch "SCY20381", 0, 0
+    Patch "SCY20381", 128, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20385", 128, 128
+{
+    Patch "SCY21282", 0, 0
+    Patch "SCY21282", 0, 64
+}
+
+WallTexture "SCY20392", 256, 128
+{
+    Patch "RW1_2", 0, 0
+    Patch "RW1_2", 64, 0
+    Patch "RW1_2", 128, 0
+    Patch "RW1_2", 192, 0
+    Patch "W107_1", 0, 0
+}
+
+WallTexture "SCY20393", 256, 128
+{
+    Patch "RW1_2", 0, 0
+    Patch "RW1_2", 64, 0
+    Patch "RW1_2", 128, 0
+    Patch "RW1_2", 192, 0
+    Patch "W106_1", 0, 0
+}
+
+WallTexture "SCY20394", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "RW9_1", 0, 0
+    Patch "RW9_1", 64, 0
+}
+
+WallTexture "SCY20395", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "WALL47_1", 0, 64
+    Patch "WALL47_1", 64, 64
+}
+
+WallTexture "SCY20396", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "W111_3", 0, 0
+    Patch "W111_3", 64, 0
+    Patch "W111_3", 0, 64
+    Patch "W111_3", 64, 64
+    Patch "PS20A0", 33, 51
+}
+
+WallTexture "SCY20397", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "DUCT1", 16, 16
+}
+
+WallTexture "SCY20398", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "RW33_1", 0, 64
+    Patch "RW33_1", 64, 64
+}
+
+WallTexture "SCY20399", 128, 128
+{
+    Patch "RW41_1", 0, 0
+    Patch "RW41_1", 64, 0
+    Patch "T14_5", 20, 32
+}
+
+WallTexture "SCY20475", 64, 128
+{
+    Patch "SCY20817", 0, 0
+    Patch "SCY20817", 0, 64
+}
+
+WallTexture "SCY20476", 64, 128
+{
+    Patch "SCY20818", 0, 0
+    Patch "SCY20818", 0, 64
+}
+
+WallTexture "SCY20477", 64, 128
+{
+    Patch "SCY20819", 0, 0
+    Patch "SCY20819", 0, 64
+}
+
+WallTexture "SCY20478", 64, 128
+{
+    Patch "SCY20820", 0, 0
+    Patch "SCY20820", 0, 64
+}
+
+WallTexture "SCY20485", 32, 128
+{
+    Patch "SCY20588", 0, 0
+    Patch "SCY20588", 0, 32
+    Patch "SCY20585", 0, 64
+    Patch "SCY20588", 0, 96
+}
+
+WallTexture "SCY20493", 64, 128
+{
+    Patch "SCY20492", 0, 0
+    Patch "SCY20577", 0, 0
+    Patch "SCY20577", 1, 112
+}
+
+WallTexture "SCY20494", 64, 96
+{
+    Patch "SCY20492", 0, 0
+    Patch "SCY20577", 0, 80
+    Patch "SCY20577", 0, 0
+}
+
+WallTexture "SCY20495", 64, 64
+{
+    Patch "SCY20492", 0, 0
+    Patch "SCY20577", 0, 0
+    Patch "SCY20577", 0, 48
+}
+
+WallTexture "SCY20499", 64, 128
+{
+    Patch "SCY20840", 0, 0
+    Patch "SCY20840", 0, 64
+}
+
+WallTexture "SCY20509", 16, 128
+{
+    Patch "SCY20850", 0, 0
+    Patch "SCY20850", 0, 64
+}
+
+WallTexture "SCY20647", 32, 128
+{
+    Patch "SCY20508", 0, 0
+    Patch "SCY20508", 16, 0
+    Patch "SCY20575", 0, 0
+}
+
+WallTexture "SCY20648", 64, 128
+{
+    Patch "SCY20547", 0, 0
+    Patch "SCY20575", 0, 0
+    Patch "SCY20575", 32, 0
+    Patch "SCY20575", 0, 64
+    Patch "SCY20575", 32, 64
+}
+
+WallTexture "SCY20649", 64, 128
+{
+    Patch "SCY20547", 0, 0
+    Patch "SCY20575", 0, 0
+    Patch "SCY20575", 32, 0
+}
+
+WallTexture "SCY20667", 64, 128
+{
+    Patch "SCY20414", 0, 0
+    Patch "SCY20571", 0, 0
+    Patch "SCY20571", 32, 0
+    Patch "SCY20571", 0, 112
+    Patch "SCY20571", 32, 112
+}
+
+WallTexture "SCY20710", 256, 128
+{
+    Patch "SCY21048", 0, 0
+    Patch "TP7_2", 128, 0
+}
+
+WallTexture "SCY20713", 1024, 128
+{
+    Patch "SCY21288", 0, 0
+    Patch "SCY21289", 256, 0
+    Patch "SCY21290", 768, 0
+    Patch "SCY21291", 512, 0
+}
+
+WallTexture "SCY20716", 256, 128
+{
+    Patch "WALL62_2", 0, 0
+    Patch "SW4S0", 20, 80
+    Patch "SCY20490", 64, 0
+    Patch "SCY20490", 128, 0
+    Patch "SCY20490", 192, 0
+    Patch "SCY21039", 96, 76
+    Patch "SCY21040", 192, 76
+}
+
+WallTexture "SCY20717", 64, 72
+{
+    Patch "W32_4", 0, 0
+    Patch "SW2S0", 0, 16
+    Patch "W33_8", 0, 64
+    Patch "SCY21039", 32, 0
+    Patch "SCY21040", 32, 32
+}
+
+WallTexture "SCY20719", 256, 128
+{
+    Patch "WALL62_2", 0, 0
+    Patch "SW4S1", 20, 80
+    Patch "SCY20490", 64, 0
+    Patch "SCY20490", 128, 0
+    Patch "SCY20490", 192, 0
+    Patch "SCY21042", 96, 76
+    Patch "SCY21043", 192, 76
+}
+
+WallTexture "SCY20720", 64, 72
+{
+    Patch "W32_4", 0, 0
+    Patch "SW2S1", 0, 16
+    Patch "W33_8", 0, 64
+    Patch "SCY21042", 32, 0
+    Patch "SCY21043", 32, 32
+}
+
+WallTexture "SCY20721", 128, 128
+{
+    Patch "SCY21045", 0, -27
+    Patch "SCY21045", 0, 16
+}
+

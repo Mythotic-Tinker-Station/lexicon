@@ -1,0 +1,773 @@
+WallTexture "WSPS0084", 256, 88
+{
+	Patch "WSPS0597", 0, 0
+	Patch "WSPS0598", 64, 0
+	Patch "WSPS0599", 128, 0
+	Patch "WSPS0600", 192, 0
+	Patch "WSPS0601", 0, 44
+	Patch "WSPS0602", 64, 44
+	Patch "WSPS0603", 128, 44
+	Patch "WSPS0604", 192, 44
+}
+
+WallTexture "WSPS0085", 128, 88
+{
+	Patch "WSPS0605", 0, 0
+	Patch "WSPS0606", 64, 0
+	Patch "WSPS0607", 0, 44
+	Patch "WSPS0608", 64, 44
+}
+
+WallTexture "WSPS0087", 128, 128
+{
+	Patch "WSPS0486", 0, 0
+	Patch "WSPS0486", 64, 0
+	Patch "WSPS0486", 0, 64
+	Patch "WSPS0486", 64, 64
+	Patch "WSPS0487", 33, 41
+}
+
+WallTexture "WSPS0088", 128, 128
+{
+	Patch "WSPS0486", 0, 0
+	Patch "WSPS0486", 64, 0
+	Patch "WSPS0486", 0, 64
+	Patch "WSPS0486", 64, 64
+	Patch "WSPS0488", 34, 41
+}
+
+WallTexture "WSPS0090", 256, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 0, 64
+	Patch "WSPS0515", 64, 0
+	Patch "WSPS0515", 64, 64
+	Patch "WSPS0515", 128, 0
+	Patch "WSPS0515", 192, 0
+	Patch "WSPS0515", 128, 64
+	Patch "WSPS0515", 192, 64
+	Patch "WSPS0518", -1, 5
+}
+
+WallTexture "WSPS0093", 64, 128
+{
+	Patch "WSPS0517", 0, 0
+	Patch "WSPS0517", 0, 64
+}
+
+WallTexture "WSPS0098", 256, 96
+{
+	Patch "WSPS0592", 128, 0
+	Patch "WSPS0592", 160, 0
+	Patch "WSPS0592", 192, 0
+	Patch "WSPS0592", 224, 0
+	Patch "WSPS0594", 0, 0
+}
+
+WallTexture "WSPS0099", 64, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0514", 0, 0
+	Patch "WSPS0515", 0, 64
+}
+
+WallTexture "WSPS0100", 64, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 0, 64
+	Patch "WSPS0513", 0, 0
+}
+
+WallTexture "WSPS0101", 64, 128
+{
+	Patch "WSPS0512", 0, 0
+	Patch "WSPS0512", 0, 64
+	Patch "WSPS0511", 0, 0
+}
+
+WallTexture "WSPS0102", 128, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 64, 0
+	Patch "WSPS0515", 0, 64
+	Patch "WSPS0515", 64, 64
+	Patch "WSPS0514", -8, 0
+	Patch "WSPS0510", 73, 23
+	Patch "WSPS0516", 34, 18
+}
+
+WallTexture "WSPS0103", 64, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 0, 64
+}
+
+WallTexture "WSPS0104", 64, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 0, 64
+	Patch "WSPS0582", 0, 52
+}
+
+WallTexture "WSPS0105", 64, 128
+{
+	Patch "WSPS0515", 0, 0
+	Patch "WSPS0515", 0, 64
+	Patch "WSPS0583", 0, 11
+}
+
+WallTexture "WSPS0106", 64, 128
+{
+	Patch "WSPS0512", 0, 0
+	Patch "WSPS0512", 0, 64
+}
+
+WallTexture "WSPS0107", 128, 128
+{
+	Patch "WSPS0512", 0, 0
+	Patch "WSPS0512", 64, 0
+	Patch "WSPS0512", 0, 64
+	Patch "WSPS0512", 64, 64
+	Patch "WSPS0487", 29, 12
+	Patch "WSPS0488", 29, 71
+}
+
+WallTexture "WSPS0110", 64, 128
+{
+	Patch "STEP06", 0, 120
+	Patch "STEP06", 32, 120
+	Patch "WSPS0523", 0, 80
+	Patch "WSPS0523", 0, 40
+	Patch "WSPS0521", 0, 0
+}
+
+WallTexture "WSPS0112", 64, 128
+{
+	Patch "WSPS0585", 0, 0
+	Patch "WSPS0585", -32, 64
+	Patch "WSPS0585", 32, 64
+}
+
+WallTexture "WSPS0113", 128, 128
+{
+	Patch "WSPS0586", 0, 0
+	Patch "WSPS0586", 32, 64
+	Patch "WSPS0586", 64, 0
+	Patch "WSPS0586", -32, 64
+	Patch "WSPS0586", 96, 64
+}
+
+WallTexture "WSPS0114", 256, 128
+{
+	Patch "WSPS0111", 0, 0
+	Patch "WSPS0588", 48, 16
+}
+
+WallTexture "WSPS0115", 64, 128
+{
+	Patch "WSPS0501", 0, 0
+	Patch "WSPS0501", 0, 64
+}
+
+WallTexture "WSPS0116", 64, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "PS20A0", 0, 51
+}
+
+WallTexture "WSPS0117", 64, 128
+{
+	Patch "SGCRATE2", 0, 0
+	Patch "SGCRATE2", 0, 64
+	Patch "SGCRATE2", 32, 0
+	Patch "SGCRATE2", 32, 64
+}
+
+WallTexture "WSPS0118", 512, 128
+{
+	Patch "WSPS0484", 0, 0
+	Patch "WSPS0484", 96, 0
+	Patch "WSPS0484", 144, 0
+	Patch "WSPS0484", 192, 0
+	Patch "WSPS0484", 240, 0
+	Patch "WSPS0484", 288, 0
+	Patch "WSPS0484", 336, 0
+	Patch "WSPS0484", 384, 0
+	Patch "WSPS0484", 432, 0
+	Patch "WSPS0484", 48, 0
+	Patch "SGCRATE2", 480, 0
+	Patch "SGCRATE2", 480, 64
+}
+
+WallTexture "WSPS0119", 512, 128
+{
+	Patch "WSPS0485", 0, 0
+	Patch "WSPS0485", 48, 0
+	Patch "WSPS0485", 96, 0
+	Patch "WSPS0485", 144, 0
+	Patch "WSPS0485", 192, 0
+	Patch "WSPS0485", 240, 0
+	Patch "WSPS0485", 288, 0
+	Patch "WSPS0485", 336, 0
+	Patch "WSPS0485", 384, 0
+	Patch "WSPS0485", 432, 0
+	Patch "BCRATER1", 480, 64
+	Patch "BCRATER1", 480, 0
+}
+
+WallTexture "WSPS0129", 64, 128
+{
+	Patch "WSPS0441", 0, 0
+	Patch "WSPS0441", 0, 64
+}
+
+WallTexture "WSPS0130", 64, 128
+{
+	Patch "WSPS0442", 0, 0
+	Patch "WSPS0442", 0, 64
+}
+
+WallTexture "WSPS0131", 64, 128
+{
+	Patch "WSPS0443", 0, 0
+	Patch "WSPS0443", 0, 64
+}
+
+WallTexture "WSPS0139", 64, 128
+{
+	Patch "WSPS0451", 0, 0
+	Patch "WSPS0451", 0, 64
+}
+
+WallTexture "WSPS0145", 32, 128
+{
+	Patch "WSPS0457", 0, 0
+	Patch "WSPS0457", 0, 64
+}
+
+WallTexture "WSPS0146", 128, 128
+{
+	Patch "WSPS0458", 0, 0
+	Patch "WSPS0458", 0, 64
+}
+
+WallTexture "WSPS0147", 128, 128
+{
+	Patch "WSPS0459", 0, 0
+	Patch "WSPS0459", 0, 64
+}
+
+WallTexture "WSPS0148", 128, 128
+{
+	Patch "WSPS0460", 0, 0
+	Patch "WSPS0460", 0, 64
+}
+
+WallTexture "WSPS0155", 128, 128
+{
+	Patch "WSPS0466", 0, 0
+	Patch "WSPS0466", 0, 64
+	Patch "WSPS0466", 64, 0
+	Patch "WSPS0466", 64, 64
+}
+
+WallTexture "WSPS0156", 64, 128
+{
+	Patch "WSPS0467", 0, 0
+	Patch "WSPS0467", 0, 64
+}
+
+WallTexture "WSPS0161", 64, 128
+{
+	Patch "WSPS0472", 0, 0
+	Patch "WSPS0472", 0, 64
+}
+
+WallTexture "WSPS0162", 64, 128
+{
+	Patch "WSPS0473", 0, 0
+	Patch "WSPS0473", 0, 64
+}
+
+WallTexture "WSPS0164", 256, 64
+{
+	Patch "WSPS0475", 0, 0
+	Patch "WSPS0476", 64, 0
+	Patch "WSPS0477", 128, 0
+	Patch "WSPS0476", 192, 0
+}
+
+WallTexture "WSPS0165", 64, 128
+{
+	Patch "WSPS0478", 0, 0
+	Patch "WSPS0478", 0, 64
+}
+
+WallTexture "WSPS0166", 64, 128
+{
+	Patch "WSPS0479", 0, 0
+	Patch "WSPS0479", 0, 64
+}
+
+WallTexture "WSPS0167", 64, 128
+{
+	Patch "WSPS0480", 0, 0
+	Patch "WSPS0480", 0, 64
+}
+
+WallTexture "WSPS0169", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_2", 64, 0
+	Patch "WALL47_3", 44, 48
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+}
+
+WallTexture "WSPS0170", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_2", 64, 0
+	Patch "WALL47_4", 44, 48
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+}
+
+WallTexture "WSPS0171", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_2", 64, 0
+	Patch "WALL47_5", 44, 48
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+}
+
+WallTexture "WSPS0172", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_2", 64, 0
+	Patch "W111_2", 64, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 0, 0
+	Patch "W111_3", 64, 64
+	Patch "SW2_2", 53, 51
+}
+
+WallTexture "WSPS0173", 128, 128
+{
+	Patch "RW9_3", 0, 0
+	Patch "RW9_3", 63, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_2", 64, 0
+	Patch "W111_3", 64, 64
+	Patch "W111_3", 0, 0
+	Patch "SW2_2", 53, 51
+}
+
+WallTexture "WSPS0174", 64, 128
+{
+	Patch "WSPS0365", 0, 0
+	Patch "WSPS0365", 0, 64
+}
+
+WallTexture "WSPS0175", 64, 128
+{
+	Patch "WSPS0366", 0, 0
+	Patch "WSPS0366", 0, 64
+}
+
+WallTexture "WSPS0176", 64, 128
+{
+	Patch "WSPS0369", 0, 0
+	Patch "WSPS0369", 0, 64
+}
+
+WallTexture "WSPS0177", 64, 128
+{
+	Patch "WSPS0370", 0, 0
+	Patch "WSPS0370", 0, 64
+}
+
+WallTexture "WSPS0178", 64, 128
+{
+	Patch "WSPS0371", 0, 0
+	Patch "WSPS0371", 0, 64
+}
+
+WallTexture "WSPS0179", 64, 128
+{
+	Patch "WSPS0372", 0, 0
+	Patch "WSPS0372", 0, 64
+}
+
+WallTexture "WSPS0180", 64, 128
+{
+	Patch "WSPS0373", 0, 0
+	Patch "WSPS0373", 0, 64
+}
+
+WallTexture "WSPS0196", 64, 128
+{
+	Patch "WSPS0364", 0, 0
+	Patch "WSPS0364", 0, 64
+}
+
+WallTexture "WSPS0197", 64, 128
+{
+	Patch "WSPS0368", 0, 0
+	Patch "WSPS0368", 0, 64
+}
+
+WallTexture "WSPS0198", 64, 128
+{
+	Patch "WSPS0367", 0, 0
+	Patch "WSPS0367", 0, 64
+}
+
+WallTexture "WSPS0205", 256, 128
+{
+	Patch "RW1_1", 0, 0
+	Patch "RW1_1", 64, 0
+	Patch "RW1_1", 128, 0
+	Patch "RW1_1", 192, 0
+	Patch "W107_1", 0, 0
+}
+
+WallTexture "WSPS0212", 64, 128
+{
+	Patch "WSPS0380", 0, -60
+	Patch "WSPS0380", 0, 0
+}
+
+WallTexture "WSPS0213", 64, 128
+{
+	Patch "WSPS0381", 0, -56
+	Patch "WSPS0381", 0, 0
+}
+
+WallTexture "WSPS0214", 64, 128
+{
+	Patch "WSPS0382", 0, -48
+	Patch "WSPS0382", 0, 0
+}
+
+WallTexture "WSPS0224", 128, 128
+{
+	Patch "WSPS0394", 0, 0
+	Patch "WSPS0395", 64, 0
+}
+
+WallTexture "WSPS0225", 64, 128
+{
+	Patch "WSPS0396", 0, 0
+	Patch "WSPS0396", 0, 64
+}
+
+WallTexture "WSPS0230", 64, 88
+{
+	Patch "WSPS0401", 0, 0
+	Patch "WSPS0401", 0, 44
+}
+
+WallTexture "WSPS0231", 64, 88
+{
+	Patch "WSPS0402", 0, 0
+	Patch "WSPS0401", 0, 44
+}
+
+WallTexture "WSPS0234", 64, 128
+{
+	Patch "WSPS0405", 0, 4
+	Patch "WSPS0405", 0, 68
+	Patch "WSPS0405", 0, -60
+}
+
+WallTexture "WSPS0241", 64, 128
+{
+	Patch "WSPS0412", 0, 0
+	Patch "WSPS0412", 0, 64
+}
+
+WallTexture "WSPS0252", 64, 128
+{
+	Patch "WSPS0590", 0, 0
+	Patch "WSPS0590", 0, 64
+}
+
+WallTexture "WSPS0255", 16, 128
+{
+	Patch "WSPS0356", 0, 56
+	Patch "WSPS0356", 0, 0
+}
+
+WallTexture "WSPS0260", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "SW2_4", 6, 63
+}
+
+WallTexture "WSPS0261", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "SW2_2", 20, 76
+}
+
+WallTexture "WSPS0262", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "SW2_1", 20, 76
+}
+
+WallTexture "WSPS0267", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "AG128_1", 64, 0
+	Patch "AG128_1", 128, 0
+	Patch "AG128_1", 192, 0
+	Patch "WSPS0350", 4, 69
+	Patch "WSPS0351", 68, 69
+	Patch "WSPS0352", 132, 69
+	Patch "WSPS0353", 68, 7
+	Patch "WSPS0354", 4, 7
+	Patch "WSPS0355", 132, 7
+}
+
+WallTexture "WSPS0268", 128, 128
+{
+	Patch "WSPS0349", 64, 56
+	Patch "WSPS0348", 0, 56
+	Patch "WSPS0348", 0, 0
+	Patch "WSPS0349", 64, 0
+}
+
+WallTexture "WSPS0269", 128, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "AG128_1", 64, 0
+	Patch "CYL1_1", 5, 0
+}
+
+WallTexture "WSPS0270", 128, 128
+{
+	Patch "WSPS0362", -12, 0
+	Patch "WSPS0362", 116, 0
+}
+
+WallTexture "WSPS0271", 128, 128
+{
+	Patch "WSPS0363", -4, 0
+	Patch "WSPS0363", 124, 0
+}
+
+WallTexture "WSPS0273", 512, 128
+{
+	Patch "WSPS0437", 0, 0
+	Patch "WSPS0438", 256, 0
+}
+
+WallTexture "WSPS0274", 512, 128
+{
+	Patch "WSPS0550", 0, 0
+	Patch "WSPS0551", 256, 0
+}
+
+WallTexture "WSPS0277", 512, 128
+{
+	Patch "WSPS0577", 0, 0
+	Patch "WSPS0578", 256, 0
+}
+
+WallTexture "WSPS0278", 512, 128
+{
+	Patch "WSPS0579", 0, 0
+	Patch "WSPS0580", 256, 0
+}
+
+WallTexture "WSPS0279", 512, 128
+{
+	Patch "WSPS0499", 0, 0
+	Patch "WSPS0500", 256, 0
+}
+
+WallTexture "WSPS0280", 256, 128
+{
+	Patch "WSPS0593", 0, 0
+	Patch "WSPS0498", 0, 24
+}
+
+WallTexture "WSPS0282", 512, 128
+{
+	Patch "WSPS0502", 0, 0
+	Patch "WSPS0503", 256, 0
+}
+
+WallTexture "WSPS0287", 128, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "SW4S0", 20, 80
+	Patch "WSPS0381", 64, 0
+}
+
+WallTexture "WSPS0289", 128, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "SW4S1", 20, 80
+	Patch "WSPS0211", 64, 0
+}
+
+WallTexture "WSPS0296", 64, 128
+{
+	Patch "WSPS0522", 0, 0
+	Patch "WSPS0523", 0, 40
+	Patch "WSPS0523", 0, 80
+	Patch "STEP06", 0, 120
+	Patch "STEP06", 32, 120
+}
+
+WallTexture "WSPS0297", 64, 128
+{
+	Patch "WSPS0523", 0, 0
+	Patch "WSPS0523", 0, 40
+	Patch "WSPS0523", 0, 80
+	Patch "STEP06", 0, 120
+	Patch "STEP06", 32, 120
+}
+
+WallTexture "WSPS0300", 256, 128
+{
+	Patch "WSPS0524", 0, 0
+	Patch "WSPS0525", 128, 0
+}
+
+WallTexture "WSPS0302", 256, 128
+{
+	Patch "WSPS0301", 0, 0
+	Patch "WSPS0525", 0, 0
+}
+
+WallTexture "WSPS0307", 256, 104
+{
+	Patch "WSPS0545", 0, 0
+	Patch "WSPS0546", 128, 0
+}
+
+WallTexture "WSPS0308", 256, 104
+{
+	Patch "WSPS0529", 0, 0
+	Patch "WSPS0530", 128, 0
+}
+
+WallTexture "WSPS0309", 256, 104
+{
+	Patch "WSPS0531", 0, 0
+	Patch "WSPS0532", 128, 0
+}
+
+WallTexture "WSPS0310", 256, 104
+{
+	Patch "WSPS0533", 0, 0
+	Patch "WSPS0534", 128, 0
+}
+
+WallTexture "WSPS0311", 256, 104
+{
+	Patch "WSPS0535", 0, 0
+	Patch "WSPS0534", 128, 0
+}
+
+WallTexture "WSPS0312", 256, 104
+{
+	Patch "WSPS0536", 0, 0
+	Patch "WSPS0537", 128, 0
+}
+
+WallTexture "WSPS0313", 256, 104
+{
+	Patch "WSPS0543", 0, 0
+	Patch "WSPS0544", 128, 0
+}
+
+WallTexture "WSPS0314", 256, 104
+{
+	Patch "WSPS0547", 0, 0
+	Patch "WSPS0548", 128, 0
+}
+
+WallTexture "WSPS0315", 256, 96
+{
+	Patch "WSPS0541", 0, 0
+	Patch "WSPS0542", 128, 0
+}
+
+WallTexture "WSPS0322", 128, 128
+{
+	Patch "WSPS0562", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0323", 128, 128
+{
+	Patch "WSPS0563", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0324", 128, 128
+{
+	Patch "WSPS0564", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0325", 128, 128
+{
+	Patch "WSPS0565", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0326", 128, 128
+{
+	Patch "WSPS0566", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0327", 128, 128
+{
+	Patch "WSPS0567", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0328", 128, 128
+{
+	Patch "WSPS0568", 0, 0
+	Patch "WSPS0592", 96, 0
+}
+
+WallTexture "WSPS0331", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "WSPS0556", 0, 104
+	Patch "WSPS0556", 64, 104
+	Patch "WSPS0556", 128, 104
+	Patch "WSPS0556", 192, 104
+}
+
+WallTexture "WSPS0332", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "WSPS0557", 0, 104
+	Patch "WSPS0557", 64, 104
+	Patch "WSPS0557", 128, 104
+	Patch "WSPS0557", 192, 104
+}
+
+WallTexture "WSPS0336", 64, 128
+{
+	Patch "WSPS0575", 0, 64
+	Patch "WSPS0575", 0, -64
+}
+

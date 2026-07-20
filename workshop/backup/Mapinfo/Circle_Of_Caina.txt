@@ -92,6 +92,7 @@ map COC07 "Below Zero"
 map COC08 "Hot Action In Cold Igloos"
 	{
 	next = "VR"
+	sucktime = 1337
 	enterpic = "COCINT"
 	exitpic = "COCINT"
 	intermusic = "D_MOMINT"

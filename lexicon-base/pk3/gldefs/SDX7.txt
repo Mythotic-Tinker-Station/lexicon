@@ -1,0 +1,379 @@
+// Plasma
+pointlight Lexicon_SDX7_PLASMABALL
+{
+	color 0.8 0.1 1.0
+	size 56
+}
+
+flickerlight Lexicon_SDX7_PLASMA_X1
+{
+	color 0.8 0.2 1.0
+	size 64
+	secondarySize 72
+	chance 0.4
+}
+
+flickerlight Lexicon_SDX7_PLASMA_X2
+{
+	color 0.64 0.2 0.8
+	size 80
+	secondarySize 88
+	chance 0.4
+}
+
+flickerlight Lexicon_SDX7_PLASMA_X3
+{
+	color 0.4 0.1 0.5
+	size 64
+	secondarySize 72
+	chance 0.4
+}
+
+flickerlight Lexicon_SDX7_PLASMA_X4
+{
+	color 0.16 0.0 0.2
+	size 8
+	secondarySize 16
+	chance 0.4
+}
+
+object Lexicon_SDX7_PlasmaBall
+{
+	frame LX14P { light Lexicon_SDX7_PLASMABALL }
+	frame LX14Q { light Lexicon_SDX7_PLASMABALL }
+
+	frame LX14R { light Lexicon_SDX7_PLASMA_X1 }
+	frame LX14S { light Lexicon_SDX7_PLASMA_X2 }
+	frame LX14T { light Lexicon_SDX7_PLASMA_X2 }
+	frame LX14U { light Lexicon_SDX7_PLASMA_X3 }
+	frame LX14V { light Lexicon_SDX7_PLASMA_X4 }
+}
+
+// Afrit
+flickerlight2 Lexicon_SDX7_AFRIT1
+{
+	color 0.7 0.1 0.6
+	size 96
+	secondarySize 128
+	Interval 0.9
+	offset 0 24 0
+}
+
+pointlight Lexicon_SDX7_AFRIT2
+{
+	color 1.0 0.8 0.2
+	offset 0 32 0
+	size 96
+}
+
+pointlight Lexicon_SDX7_AFRIT3
+{
+	color 1.0 0.8 0.2
+	offset 0 32 0
+	size 72
+}
+
+pointlight Lexicon_SDX7_AFRIT4
+{
+	color 0.8 0.7 0.15
+	offset 0 36 0
+	size 64
+}
+
+pointlight Lexicon_SDX7_AFRIT5
+{
+	color 0.7 0.7 0.15
+	offset 0 40 0
+	size 56
+}
+
+pointlight Lexicon_SDX7_AFRIT6
+{
+	color 0.7 0.7 0.0
+	offset 0 42 0
+	size 48
+}
+
+pointlight Lexicon_SDX7_AFRIT7
+{
+	color 0.7 0.7 0.0
+	offset 0 44 0
+	size 40
+}
+
+pointlight Lexicon_SDX7_AFRIT8
+{
+	color 0.6 0.6 0.0
+	offset 0 48 0
+	size 36
+}
+
+pointlight Lexicon_SDX7_AFRIT9
+{
+	color 0.5 0.5 0.0
+	offset 0 52 0
+	size 32
+}
+
+pointlight Lexicon_SDX7_AFRIT10
+{
+	color 0.4 0.4 0.0
+	offset 0 58 0
+	size 24
+}
+
+pointlight Lexicon_SDX7_AFRIT11
+{
+	color 0.3 0.3 0.0
+	offset 0 64 0
+	size 16
+}
+
+object Lexicon_SDX7_CommanderKeen
+{
+	frame LX17N { light Lexicon_SDX7_AFRIT1 }
+	frame LX17O { light Lexicon_SDX7_AFRIT1 }
+	frame LX17P { light Lexicon_SDX7_AFRIT1 }
+	frame LX17Q { light Lexicon_SDX7_AFRIT1 }
+	frame LX17R { light Lexicon_SDX7_AFRIT1 }
+	frame LX17S { light Lexicon_SDX7_AFRIT1 }
+	frame LX17T { light Lexicon_SDX7_AFRIT1 }
+	frame LX17U { light Lexicon_SDX7_AFRIT1 }
+	frame LX17V { light Lexicon_SDX7_AFRIT2 }
+	frame LX17W { light Lexicon_SDX7_AFRIT3 }
+	frame LX17X { light Lexicon_SDX7_AFRIT4 }
+	frame LX17Y { light Lexicon_SDX7_AFRIT5 }
+	frame LX17Z { light Lexicon_SDX7_AFRIT6 }
+	frame LX17[ { light Lexicon_SDX7_AFRIT7 }
+	frame LX17\ { light Lexicon_SDX7_AFRIT8 }
+	frame LX17] { light Lexicon_SDX7_AFRIT9 }
+	frame LX18A { light Lexicon_SDX7_AFRIT10 }
+	frame LX18B { light Lexicon_SDX7_AFRIT11 }
+}
+
+// Small white torch
+object Lexicon_SDX7_ShortGreenTorch
+{
+	frame LX16 { light DB02_SMALLWHITETORCH }
+}
+
+// Small purple torch
+object Lexicon_SDX7_ShortBlueTorch
+{
+	frame LX15 { light Lexicon_SDX6_SMALLPURPLETORCH }
+	frame LX16 { light Lexicon_SDX6_SMALLPURPLETORCH }
+}
+
+// Small purple torch (upside down)
+flickerlight2 Lexicon_SDX7_UPSIDEDOWNSMALLPURPLETORCH
+{
+	color 1.0 0.0 1.0
+	size 48
+	secondarySize 54
+	interval 0.1
+	offset 0 -35 0
+}
+
+object Lexicon_SDX7_GreenTorch
+{
+	frame LX16 { light Lexicon_SDX7_UPSIDEDOWNSMALLPURPLETORCH }
+}
+
+// Tall purple torch
+flickerlight2 Lexicon_SDX7_BIGPURPLETORCH
+{
+	color 1.0 0.0 1.0
+	size 64
+	secondarySize 72
+	interval 0.1
+	offset 0 60 0
+}
+
+object Lexicon_SDX7_BlueTorch
+{
+	frame LX16 { light Lexicon_SDX7_BIGPURPLETORCH }
+}
+
+// Short tech lamp
+pulselight Lexicon_SDX7_SMALLLAMP
+{
+	color 1.0 0.8 1.0
+	size 56
+	secondarySize 58
+	interval 0.4
+	offset 0 44 0
+}
+
+object Lexicon_SDX7_TechLamp2
+{
+	frame LX13 { light Lexicon_SDX7_SMALLLAMP }
+}
+
+pulselight Lexicon_SDX7_HIGHSMALLLAMP1
+{
+	color 1.0 0.8 1.0
+	size 56
+	secondarySize 58
+	interval 0.4
+	offset 0 172 0
+}
+
+pulselight Lexicon_SDX7_HIGHSMALLLAMP2
+{
+	color 1.0 0.8 1.0
+	size 56
+	secondarySize 58
+	interval 0.4
+	offset 0 236 0
+}
+
+object Lexicon_SDX7_HeadCandles
+{
+	frame LX15 { light Lexicon_SDX7_HIGHSMALLLAMP1 }
+}
+
+object Lexicon_SDX7_LiveStick
+{
+	frame LX15 { light Lexicon_SDX7_HIGHSMALLLAMP2 }
+}
+
+// Chain lamp
+pulselight Lexicon_SDX7_CHAINLAMP
+{
+	color 1.0 0.8 0.8
+	size 64
+	secondarySize 66
+	interval 0.4
+	offset 0 -64 0
+}
+
+object Lexicon_SDX7_TechLamp
+{
+	frame LX16 { light Lexicon_SDX7_CHAINLAMP }
+}
+
+// Soul Sphere
+pulselight Lexicon_SDX7_SOULSPHERE
+{
+	color 1.0 0.0 1.0
+	size 40
+	secondarySize 42
+	interval 2.0
+	offset 0 16 0
+}
+
+object Lexicon_SDX7_Soulsphere
+{
+	frame LX15 { light Lexicon_SDX7_SOULSPHERE }
+}
+
+// Blur Sphere
+pointlight Lexicon_SDX7_BLURSPHERE2
+{
+	color 1.0 0.0 1.0
+	size 32
+	offset 0 16 0
+}
+
+pointlight Lexicon_SDX7_BLURSPHERE3
+{
+	color 1.0 0.0 1.0
+	size 24
+	offset 0 16 0
+}
+
+pointlight Lexicon_SDX7_BLURSPHERE4
+{
+	color 1.0 0.0 1.0
+	size 16
+	offset 0 16 0
+}
+
+pointlight Lexicon_SDX7_BLURSPHERE5
+{
+	color 1.0 0.0 1.0
+	size 8
+	offset 0 16 0
+}
+
+object Lexicon_SDX7_BlurSphere
+{
+	frame LX15 { light BLURSPHERE1 }
+
+	frame LX15R { light Lexicon_SDX7_BLURSPHERE2 }
+	frame LX15S { light Lexicon_SDX7_BLURSPHERE3 }
+	frame LX15T { light Lexicon_SDX7_BLURSPHERE4 }
+	frame LX15U { light Lexicon_SDX7_BLURSPHERE5 }
+}
+
+// Armour Helmet
+pulselight Lexicon_SDX7_ARMORBONUS
+{
+	color 0.6 0.6 0.0
+	size 16
+	secondarySize 14
+	interval 1.0
+}
+
+object Lexicon_SDX7_ArmorBonus
+{
+	frame LX15 { light Lexicon_SDX7_ARMORBONUS }
+}
+
+// Health Potion
+pulselight Lexicon_SDX7_HEALTHPOTION
+{
+	color 0.6 0.0 0.6
+	size 16
+	secondarySize 18
+	interval 2.0
+}
+
+object Lexicon_SDX7_HealthBonus
+{
+	frame LX15 { light Lexicon_SDX7_HEALTHPOTION }
+}
+
+// Purple armour
+object Lexicon_SDX7_BlueArmor
+{
+	frame LX15P { light Lexicon_SDX6_PURPLEARMOR1 }
+	frame LX15Q { light Lexicon_SDX6_PURPLEARMOR2 }
+}
+
+// Black Keys
+pulselight Lexicon_SDX7_BLACKKEY
+{
+    color 0.2 0.2 0.2
+    size 16
+    secondarySize 18
+    interval 2.0
+}
+
+object Lexicon_SDX7_RedCard
+{
+	frame LX14 { light Lexicon_SDX7_BLACKKEY }
+	frame LX15 { light Lexicon_SDX7_BLACKKEY }
+}
+
+object Lexicon_SDX7_RedSkull
+{
+	frame LX15 { light Lexicon_SDX7_BLACKKEY }
+}
+
+// Yellow Keys
+object Lexicon_SDX7_YellowSkull
+{
+	frame LX14 { light YELLOWKEY }
+}
+
+// Purple Keys
+object Lexicon_SDX7_BlueCard
+{
+	frame LX14 { light Lexicon_SDX7_HEALTHPOTION }
+}
+
+object Lexicon_SDX7_BlueSkull
+{
+	frame LX14 { light Lexicon_SDX7_HEALTHPOTION }
+}

@@ -1,0 +1,15 @@
+object Lexicon_CSH2_ZombieMan
+{
+    frame LY05F { light ZOMBIEATK }
+}
+
+object Lexicon_CSH2_ShotgunGuy
+{
+    frame LY04F { light ZOMBIEATK }
+}
+
+object Lexicon_CSH2_ChaingunGuy
+{
+    frame LY06E { light ZOMBIEATK }
+    frame LY06F { light ZOMBIEATK }
+}

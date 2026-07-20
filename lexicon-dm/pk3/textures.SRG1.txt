@@ -1,0 +1,35 @@
+Texture "SRG10044", 256, 128
+{
+	Patch "SRG10141", 128, 0
+	Patch "SRG10142", 0, 0
+}
+Texture "SRG10048", 128, 128
+{
+	Patch "SFALL1", 0, 0
+	Patch "SRG10155", 64, 0
+}
+Texture "SRG10049", 128, 128
+{
+	Patch "SFALL2", 0, 0
+	Patch "SRG10156", 64, 0
+}
+Texture "SRG10050", 128, 128
+{
+	Patch "SFALL3", 0, 0
+	Patch "SRG10157", 64, 0
+}
+Texture "SRG10051", 128, 128
+{
+	Patch "SFALL4", 0, 0
+	Patch "SRG10158", 64, 0
+}
+Texture "SRG10072", 64, 128
+{
+	Patch "SRG10075", 0, 0
+	Patch "SRG10121", 0, 0
+}
+Texture "SRG10080", 128, 128
+{
+	Patch "SRG10139", 0, 0
+	Patch "SRG10139", 0, 64
+}

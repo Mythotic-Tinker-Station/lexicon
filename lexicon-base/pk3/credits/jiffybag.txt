@@ -1,0 +1,150 @@
+===========================================================================
+Primary Purpose         : Single play/co-op
+Advanced engine needed  : PrBoom+ 2.5.1.4 or above
+===========================================================================
+Title                   : Jiffy Bag
+Filename                : jiffybag.wad
+Release date            : 2 January 2019
+Author                  : Jimmy
+Email Address           : [redacted]
+Other Files By Author   : Jenesis, Jenocide DM, Jimmy's Jukebox, Jungle Spirits,
+                          The Joy of Mapping, realms of Zoon, Deathless,
+                          Harmony/Plutonia/Revolution MIDI Packs.
+Misc. Author Info       : :^)
+
+Description             : Jiffy Bag is a collection of 32 random maps made by me
+                          over the last 5 years or so. The maps all vary quite
+                          dramatically in theme, and are similar only in terms 
+                          of size and design - given the short time I had to 
+                          make these in, my general approach to mapping is
+                          pretty obvious in how each map plays and is structured,
+                          but this should hopefully contribute to a well-rounded,
+                          consistent end product.
+
+                          The maps come from a variety of sources and all of
+                          them have received extensive balancing and other tune-
+                          ups. The set as a whole is intended for continuous
+                          play, but pistol starts should be viable too.
+
+                          The music tracks featured in maps 1-31 are all speed-
+                          MIDIs by me, and you can grab them on my Bandcamp 
+                          under the four "30in30" speedMIDI albums.
+                          
+                          The optional jiffynames.wad file can be loaded with 
+                          these maps in ZDoom-derivative ports to print the
+                          map name and a snarky quote from the author on level
+                          start.
+
+Additional Credits to   : Tarnsman and Alfonzo for starting up TTV!Zone. (Season 2 when!?)
+                          Obsidian for hosting the Abyssal Speedmapping Sessions.
+                          TerminusEst13 for hosting the DUMP projects.
+                          Shaikoten for hosting 32in24.
+                          The folks at battleofthebits.org.
+===========================================================================
+* What is included *
+
+New levels              : MAP01-32
+Sounds                  : No
+Music                   : Yes, all custom!
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes, alters Spider Mastermind behavior slightly
+Demos                   : No
+Other                   : ZMAPINFO to disable jump/crouch, and EMAPINFO.
+
+
+* Play Information *
+
+Game                    : Doom 2
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Maps each took about 2 hours to initially make.
+                          Compiling/fixing/testing them all in this then
+                          took several years! Lmao!
+Editor(s) used          : Doom Builder 2, GZDoom Builder, SLADE
+May Not Run With...     : Vanilla, Chocolate, Boom - use PrBoom.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.jamespaddockmusic.com/
+           http://jimmy.the-powerhouse.net/WAD/
+
+
+* Map list *
+
+       MAP NAME                 -- MUSIC USED (all by me exc. 32)	-- MAP ORIGIN
+
+MAP01: Jamaica Base		-- "Cockney Dong"			-- made with/for jmickle's map theme generator page
+MAP02: Salvation		-- "Knock It Off!"			-- made for TTV!Zone
+MAP03: Brick-a-Brac		-- "Drop the Wombat"			-- made for Abyssal
+MAP04: Ankle Grinder		-- "Ankle Grinder"			-- made for Battleofthebits.org
+MAP05: Rainfall Processor	-- "Time Bomb"				-- made for 32in24
+MAP06: Decrepit Cauldron	-- "Gatorade Nightmare"			-- made for Abyssal
+MAP07: Mineshafted		-- "Minerals"				-- made for Abyssal
+MAP08: Kitchen Nightmares	-- "Itchin' for a Bitchin'"		-- made for TheMionicDonut's birthday
+MAP09: Battery Canyon		-- "Gary"				-- made for Abyssal
+MAP10: Polluted Basin		-- "Torsal Torsion"			-- made for Abyssal
+MAP11: Cryptology		-- "Unyes"				-- made for Abyssal
+
+MAP12: Shell Out		-- "How About I Slap Your Bass"			-- made for Battleofthebits.org
+MAP13: Protocol 1024 		-- "Flatulence Protocol"			-- made for TTV!Zone
+MAP14: Chemical Depot		-- "Tar"					-- made for Abyssal (excluded)
+MAP15: Waterfront		-- "Octarine"					-- made for Altazimuth's birthday
+MAP16: Oranges and Demons	-- "Crunch Time"				-- made for jmickle's birthday
+MAP17: J-Pad's Space Pad	-- "Technical Difficulties"			-- made for Abyssal
+MAP18: Identity Theft		-- "Mighty High"				-- made for Abyssal
+MAP19: Boxed In			-- "What If I Don't Want To Be a Punching Bag"	-- made for Abyssal
+MAP20: Rectangular Prison	-- "Jello Mackerel"				-- made for Abyssal
+
+MAP21: Insomniac's Night	-- "Mal"				-- made for Abyssal
+MAP22: 'O' of Construction!	-- "Bastardville"			-- made for Abyssal
+MAP23: Thrash Compactor		-- "Destruct"				-- made for Abyssal
+MAP24: Fortress of Misery	-- "Reach Within"			-- made for Abyssal
+MAP25: The Dome of Romero	-- "Sinister Waltz of id"		-- made for Abyssal
+MAP26: Goldkey 			-- "Ampersand"				-- made for Abyssal
+MAP27: Faces of Darkness	-- "Sol Plummeting"			-- made for Abyssal
+MAP28: Sanguine Domicile	-- "Delay(0); Restart;"			-- made for Abyssal
+MAP29: Fluvial Terrace		-- "Tungsten"				-- made for DUMP
+MAP30: Fleshbrain's Domain	-- "Stream of Embers"			-- made for Abyssal
+
+MAP31: Somewhere That's Green	-- "Potioneer"			-- made for Abyssal (collab with Alfonzo, who thing-placed it)
+MAP32: Catacombs		-- "The Dave D. Taylor Blues"	-- awful map made with DeePsea 15 years ago
+
+
+* Full credits for resources *
+
+doom.wad
+plutonia.wad
+tnt.wad
+mm2.wad
+NiGHTMARE
+Cage (cagetex 1 & 2)
+Fuzzball (litextra.wad)
+DrDoctor (drtex)
+RottKing (koultex)
+rf` (helltex, rf1024)
+Psyren (psytex)
+Jonathan Rimmer (erattex1)
+elend (MAP30 sky)
+Jimmy (jimmytex, jimmyskies, zoontex)
+

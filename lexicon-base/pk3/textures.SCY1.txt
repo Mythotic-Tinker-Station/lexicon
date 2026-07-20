@@ -1,0 +1,48 @@
+WallTexture "SCY10017", 128, 72
+{
+	Patch "SCY10050", 0, 0
+	Patch "DOOR3_4", 64, 0
+	Patch "DOOR3_5", 88, 0
+	Patch "T14_5", 112, 0
+}
+
+WallTexture "SCY10021", 64, 128
+{
+	Patch "SCY10063", 0, 0
+	Patch "SCY10064", 32, 0
+}
+
+WallTexture "SCY10022", 128, 128
+{
+	Patch "SCY10071", 0, 0
+	Patch "SCY10072", 64, 0
+	Patch "SCY10073", 96, 0
+	Patch "SCY10074", 32, 0
+}
+
+WallTexture "SCY10023", 64, 128
+{
+	Patch "SCY10011", -42, 0
+	Patch "SW3S1", 16, 72
+}
+
+WallTexture "SCY10024", 128, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "SW4S0", 20, 80
+	Patch "SCY10042", 64, 0
+}
+
+WallTexture "SCY10025", 64, 128
+{
+	Patch "SCY10011", -42, 0
+	Patch "SW3S0", 16, 72
+}
+
+WallTexture "SCY10026", 128, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "SW4S1", 20, 80
+	Patch "SCY10041", 64, 0
+}
+

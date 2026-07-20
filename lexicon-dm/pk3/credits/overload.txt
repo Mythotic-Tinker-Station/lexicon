@@ -1,0 +1,425 @@
+                       THE SVEEDISH DOOM CHEFS PRESENTS:
+
+                            O V E R L O A D   D M
+
+
+Title                   : Overload Deathmatches
+Filename                : OVERLOAD.ZIP (OVERLOAD.WAD and OVERLOAD.TXT)
+Date Finished           : august 29 1998
+Developers              : Ola Bjorling (Team ruler, gfx guy and dictator)
+                          ola@techno.org
+                          http://members.xoom.com/bjorling
+
+                          Tobias Forsberg (slave mapper)
+                          planet_quido@hotmail.com
+                          http://members.xoom.com/quido
+
+                          Nicklas Linnes (slave mapper, music)
+                          klafshslafsh@hotmail.com
+                          http://members.xoom.com/Linnes
+
+                          Martin Friberg (slave mapper and human toolshed)
+                          nails@hem2.passagen.se
+                          http://www.doomshack.com/doomster
+
+                          Testing: Lars Ljung, Fredrik Lind
+                          Additional testing: Matthew Dixon & Dan Twomey
+
+Other Releases          : Olas stuff:
+                          Tantrum (TANTRUM.ZIP)
+                          The talosian incident, map 8 (TALOSIAN.ZIP)
+                          The Darkening, graphics (DARKEN.ZIP)
+                          A few textures for Gothic DM 2
+                          Upcoming (as of this release):
+                          graphics for Mordeth episode 3,
+                          The Darkening episode 2. 
+                          Minor additions to other projects, such as
+                          sky textures and stuff like that.
+
+                          Tobias stuff:
+                          None at all!
+
+                          Nicklas stuff:
+                          None at all!
+
+                          Martins stuff:
+                          Trent's Rhapsody (DM)
+                          Live Backwards (DM)
+                          UAC Corporation (SP)
+                          Crestfallen (SP)
+                          Working on Ninja Doom and Beyond Doom TACTC
+
+Misc. Developer Info    : Ola:
+                          Born 1979. 
+                          I've been DOOMing since 1993 and editing since
+                          mid 94.
+
+                          Tobias:
+                          5 years old. A great fan of LEGO.
+                          
+                          Nicklas:
+                          Born 1981. If I told you more I'd have to kill you.
+
+                          Martin:
+                          Born in 1978.
+                          Runs DooMster (http://www.doomshack.com/doomster/)
+                          Been dooming since -95 and editing since late -95.
+
+Description             : 16 rather small and quite high-paced deathmatch
+                          levels that I (Ola) originally started making for 
+                          myself and some friends to play since everything 
+                          else what too big or just plain ugly. (And we're 
+                          too lazy to look for good levels :-)
+                          Later I introduced Nicklas and Tobias to DOOM
+                          editing and they started making maps for this
+                          project too. Martin Friberg teamed up quite soon
+                          to help us.
+
+                          There are a few new textures in there, all being
+                          commercial quality and no fucking MS Paint CRAP.
+
+                          Any switches you find have to do with the exit.
+                          There are no switches to reveal weapons or other
+                          goodies.
+
+Some thoughts from the 
+aurhors of Overload:      If you think these levels are too small - go play
+                          something else. Overloads levels are small because
+                          we wanted them that way. You dont like respawnfrags?
+                          You like to hunt your oponent? You hate symetric
+                          levels? Then dont play Overload, because its not
+                          made for you. However, if you feel like some
+                          insanely fast DM play in damn good looking levels,
+                          Overload is for you.
+
+                          Some other things which has made these maps
+                          symmetrical are the facts that they are small (in
+                          case noone noticed) and if one made them irregular
+                          it could give unfair disadvantages in forms of
+                          starting points closer to weapons and such. Better
+                          cover in some places. Since these maps are lightning
+                          fast, everyone should play on the same conditions as
+                          your enemy.
+                          In bigger maps everyone has LOTS of time planning
+                          out a strategy compared to these.
+                                                  
+Additional Credits to   : The whole team thanks:
+                          id for the greatest game of all time
+			  
+                          Ola thanks:
+                          * Lee Killough for essential Visplane info and
+                            some info on the "slime trail" bug.
+                            Lee also gave me a new, unreleased version of
+                            BSP, 2.4b, to fiddle with. Thanks!
+                          * Eric James Roberts for help with rocket-
+                            eating walls.
+                          * Mr. DOOM (Tom Sanner) for great inspiration.
+                          * Lars Ljung for making me look good in DM.
+                          * Jeff Rabenhorst for the excellent EdMap.
+                          * Julia and all other friends for being there.
+
+                          Tobias thanks:
+                          * Lars Ljung for making me look good in DM.
+                          * Jeff Rabenhorst for the excellent EdMap.
+                          * Mom for changing diapers.
+                          * Ola Bjorling (with two funky dots over the 
+                            second o) for editing help.
+
+                          Nicklas thanks:
+                          * Lars Ljung for making me look good in DM.
+                          * Jeff Rabenhorst for the excellent EdMap.
+                          * AST (Advanced Sucking Technology)
+                          * Ola Bjorling (with two funky dots over the 
+                            second o) for editing help.
+
+                          Martin thanks:
+                          * Lars Ljung for making the other guys look good
+                            in DM.
+                          * Malcolm Sailor for inspiration
+                          * Ben Morris for DCK
+                          * Rand Phares for his great Doom Consitency
+                            Checker
+
+                          Yes, we ARE mocking this Lars guy. ;-)
+                        
+===========================================================================
+* Play Information *
+
+Map #                   : MAP01 - MAP16
+Single Player           : Yes - to look around 
+Cooperative             : No, silly
+Deathmatch              : Take a wild guess
+Difficulty Settings     : Nope. Just play skill 5 old deathmatch for max ammo.
+                          The levels have the weapons we find to be most
+                          suitable.
+New Sounds              : No
+New Music               : Yes, but not for all levels.
+New Graphics            : Yes - Textures, sky, map names, title pic, 
+                          intermission background, credits screen and ENDOOM.
+                          The OFACExxx textures are based on an advertisment
+                          for Final DOOM. The OWOODxx textures are based on
+                          ids WOODxx ones. OEVILxxx textures are based on ids
+                          MARBFAC3 texture and their corroded metal ones.
+                          All others are made from scratch, including the sky:
+                          it is not a photo, as some seem to believe.
+Demos Replaced          : 3 of 'em:
+
+                                   GREEN:      GREY:    MAP: SCORE:
+                          DEMO1 is Tobias  vs. Nicklas  11   21-15
+                          DEMO2 is Tobias  vs. Ola      13   25-19
+                          DEMO3 is Nicklas vs. Tobias   01   24-23
+
+                          All players are mousers. Recorded via serial cable
+                          with a P133 and a P2/300. All demos last 5 minutes.
+
+* Construction *
+
+Base                    : New levels from scratch
+Build Time              : Some levels took 30 minutes, other took 30 hours...
+                          See details for each map below.
+Tool(s) used            : A whole slew of 'em:
+
+                          Ola used:
+                          EdMap 1.40
+                          EdMap 1.31
+                          DMAPEDIT 4.0
+                          BSP 2.3x
+                          BSP 2.4b
+                          Adobe Photoshop 3.0.5
+                          Metatools KPT Bryce 2
+                          3D Studio R4
+                          Wintex 4.3
+                          DEUSF 3.8
+                          WinDCC 2.02
+                          DSHRINK
+                          MS-DOS EDIT :)
+
+                          Tobias used:
+                          EdMap 1.40
+                          BSP 2.3x
+                          Wintex 4.3
+                          
+                          Nicklas used:
+                          EdMap 1.40
+                          BSP 2.2
+                          MidiSoft Studio
+                          MS-DOS EDIT >:-]
+
+                          Martin used:
+                          DCK 3.62
+                          DCC 1.04
+                          ZenNode 0.98a
+
+Known Bugs              : The slime-trail bug appears in some levels.
+                          We have done our best to remove this by running
+                          levels through DMAPEDITs nodebuilder (quite
+                          efficient with this bug) and BSP 2.4b, but some
+                          lightshadings can still cause the slime trails
+                          to show at certain angles, like in map03 and 4.
+May Not Run With...     : DOOM Legacy, DosDOOM and ZDoom. Well, it WILL run,
+                          but the sky will look really ugly or tile in
+                          strange ways if you use mlook. Mlook is for Quack,
+                          and not DOOM, anyways. Also, *some* of the source 
+                          ports that support high resolutions will have the
+                          map titles and stuff wrong. Blame them, not us.
+
+MAP01
+Title                   : Fragtastic
+Author                  : Ola Bjorling
+Description             : 4 Pillars is all you have to hide behind. This is
+                          a shotguns-only level. Lots of respawnfrags, but
+                          it's quite easy to fool your opponent as you 
+                          respawn...
+Construction time       : About 10 hours (had to redo it from scratch since
+                          EdMap felt like eating it. Argh!) The texture 
+                          aligning took ages.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP02
+Title                   : Deja Vu
+Author                  : Ola Bjorling
+Description             : A very small level consisting of 4 identical rooms
+                          each holding 1 weapon; Super Shotgun, 
+                          Rocketlauncher, Chaingun and BFG 9000.
+                          Learn to use all the weapons and you'll have a
+                          huge advantage.
+Construction time       : originally made in 30 minutes and then fine-tuned
+                          for an additional hour and a half.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP03
+Title                   : Close Quakecounters
+Author                  : Ola Bjorling
+Description             : Quake'ish level with neat 3D effects and nice
+                          level of detail. Weapons are Rocketlauncher,
+                          DB shotgun and Plasma rifle.
+                          If you learn to use the SSG and RL in 
+                          combination, the victory will be yours.
+Construction time       : About 20 hours.
+Gameplay pace           : MEDIUM
+Recommended # of players: 2 - 3
+
+MAP04
+Title                   : Threesome
+Author                  : Ola Bjorling
+Description             : Triangular little bugger that looks a bit like
+                          a temple. Weapons are DB shotgun and rocketlauncher.
+                          Learn to aim or you'll frag yourself with the
+                          rockets...
+                          Some slime-trails in this one, seems impossible to 
+                          get rid of.
+Construction time       : About 20 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2 
+
+MAP05
+Title                   : Fort Fury
+Author                  : Ola Bjorling
+Description             : A small yet innovative DM level that makes great
+                          use of jumping. Extremely detailed level.
+                          Weapons to be found are Shotgun, DB shotgun and
+                          the Plasma rifle.
+Construction time       : 20-30 hours.
+Gameplay pace           : MEDIUM
+Recommended # of players: 2 - 3
+
+MAP06
+Title                   : Satans Circus
+Author                  : Nicklas Linnes and Ola Bjorling
+Description             : Quite large area-wise, but you can see your
+                          opponent almost all the time, making it very
+                          high-paced.
+                          Nicklas did the basic layout while Ola cleaned
+                          it up and added some decorative details.
+                          It's a bloody miracle it doesn't VPO...
+                          Weapons are Shotgun, DB shotgun, Chaingun and
+                          the Rocket launcher.
+Construction time       : 20 hours.
+Gameplay pace           : HIGH
+Recommended # of players: 2
+
+MAP07
+Title                   : Frag Isle
+Author                  : Nicklas Linnes
+Description             : A small altar of some sort in a little valley.
+                          Weapons are rocketlauncher, Super Shotgun,
+                          Shotgun, Chainsaw and Chaingun.
+Construction time       : Nicklas doesn't wear a watch.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP08
+Title                   : Panic Is My Name
+Author                  : Tobias Forsberg and Ola Bjorling
+Description             : Very simple layout, but with some funky detailing
+                          and great gameplay.
+                          Weapons are Plasma (RL in skill 3), Shotgun and
+                          Super Shotgun.
+Construction time       : 15 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+
+MAP09
+Title                   : Satans Sewers
+Author                  : Tobias Forsberg
+Description             : Run around in these ancient, dark sewers and kill
+                          people. Thats it, really. 
+                          Weapons are Chaingun, Shotgun and Super Shotgun.
+Construction time       : 20 hours.
+Gameplay pace           : HIGH
+Recommended # of players: 2
+
+
+MAP10
+Title                   : Ruins Of Valhalla
+Author                  : Nicklas Linnes
+Description             : Probably the most detailed map in the WAD. The old
+                          Norse Gods must have been kind to Nicklas and done
+                          some kick-ass node calculating as thanks for the
+                          maps name. Otherwise it'd get a VPO for sure.
+                          Weapons are Rocketlauncher, Plasma, Chaingun,
+                          Shotgun, Super Shotgun and Berserk.
+Construction time       : Nicklas can't tell the time.
+Gameplay pace           : HIGH
+Recommended # of players: 2
+
+MAP11
+Title                   : Paranoia
+Author                  : Ola Bjorling
+Description             : A map heavily inspired by Frenzy (map03) in
+                          MRDOOM30.WAD. Round and round it goes, but with
+                          a twist - learn to use the little windows and you
+                          have a huge advantage! See the demo in the WAD.
+                          I would have put more detail in there if it wasn't
+                          for the Visplane limit.
+                          Weapons are Rocketlauncher and Super Shotgun.
+Construction time       : About 15 hours. (Had to redo it from scratch)
+Gameplay pace           : INSANE
+Recommended # of players: 2 
+
+MAP12
+Title                   : LLAWEHTNIELOH
+Author                  : Tobias Forsberg
+Description             : The only really non-symetric level in Overload.
+                          Weapons: Chaingun, Shotgun, Super Shotgun, 
+                          BFG 9000, Rocketlauncher
+Construction time       : 20 hours. took 19 to spell the title.
+Gameplay pace           : MEDIUM
+Recommended # of players: 2 - 3
+
+MAP13
+Title                   : Screaming Fury
+Author                  : Martin Friberg and Ola Bjorling
+Description             : Open arena-style level.
+                          Weapons are Super Shotgun and Rocketlauncher.
+Construction time       : 20-30 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP14
+Title                   : Frag-Mentation
+Author                  : Nicklas Linnes
+Description             : A tight bugger for people with good steering.
+                          Weapons: Shotgun, Super Shotgun, Rocketlauncher,
+                          Plasma, Berserk, Chainsaw, Chaingun
+Construction time       : Time is only an illusion, anyway.
+Gameplay pace           : HIGH
+Recommended # of players: 2
+
+MAP15
+Title                   : High Fragquency
+Author                  : Nicklas Linnes
+Description             : This map earns its name with its high gameplay
+                          speed. The design is somewhat inspired by the works
+                          of Iikka Keranen.
+                          Weapons are Chaingun, Chainsaw, Shotgun and Super
+                          Shotgun.
+Construction time       : 71654 seconds. Approximately.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+MAP16
+Title                   : Fragmageddon
+Author                  : Tobias Forsberg
+Description             : This maps gives you a really intense battle. 
+                          Provided tools of destruction are Super Shotgun,
+                          Chaingun and Plasma - if you can find it...
+Construction time       : 20 hours.
+Gameplay pace           : INSANE
+Recommended # of players: 2
+
+
+* Where to get this WAD *
+
+FTP sites:
+Mother of all DOOM sites : ftp.cdrom.com/pub/doom/
+...or our favourite mirror: http://ftp.sunet.se/idgames/
+
+BBS numbers:
+Do BBSs still exist? :-)
+
+Other:
+Nope.

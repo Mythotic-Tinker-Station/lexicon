@@ -1,0 +1,979 @@
+// Rubble ------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_BlurSphere
+{
+	Radius 32
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 ] -1
+		Stop
+	}
+}	
+
+// Chair --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_PointPusher
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 C -1
+		Stop
+	}
+}	
+
+// Grass --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_PointPuller
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 O -1
+		Stop
+	}
+}	
+
+// Mushroom --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Stalagtite
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 A -1
+		Stop
+	}
+}	
+
+// Rock --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_BossTarget
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 V -1
+		Stop
+	}
+}	
+
+// Weaker Lost Soul ------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_LostSoul
+{
+	Health 50
+	Radius 16
+	Height 56
+	Mass 50
+	Speed 8
+	Damage 3
+	PainChance 256
+	Monster
+	+FLOAT +NOGRAVITY +MISSILEMORE +DONTFALL +NOICEDEATH
+	AttackSound "skull/melee"
+	PainSound "skull/pain"
+	DeathSound "skull/death"
+	ActiveSound "skull/active"
+	RenderStyle SoulTrans
+	Obituary "$ROTR_OB_SKULL"
+	States
+	{
+	Spawn:
+		LX12 AB 10 BRIGHT A_Look
+		Loop
+	See:
+		LX12 AB 6 BRIGHT A_Chase
+		Loop
+	Missile:
+		LX12 C 10 BRIGHT A_FaceTarget
+		LX12 D 4 BRIGHT A_SkullAttack
+		LX12 CD 4 BRIGHT
+		Goto Missile+2
+	Pain:
+		LX12 E 3 BRIGHT
+		LX12 E 3 BRIGHT A_Pain
+		Goto See
+	Death:
+		LX12 F 6 BRIGHT
+		LX12 G 6 BRIGHT A_Scream
+		LX12 H 6 BRIGHT
+		LX12 I 6 BRIGHT A_NoBlocking
+		LX12 JK 6
+		Stop
+	}
+}
+
+// Exit --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Meat5
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	AttackSound "switches/exitbutn"
+	States
+	{
+	Spawn:
+		LX11 K 6 BRIGHT A_Look
+		Loop
+	See:
+		LX11 K 6 BRIGHT A_Chase
+		Loop
+	Melee:
+		LX11 K -1 BRIGHT A_BrainDie
+		Stop
+	}
+}	
+
+// Flowers --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_TallGreenColumn
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 P -1
+		Stop
+	}
+}	
+
+// Green Tree ------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangTLookingDown
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 Z -1
+		Stop
+	}
+}	
+
+// Bin --------------------------------------------------------------------
+
+ACTOR Lexicon_ROTR_NonsolidMeat3
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 Q -1
+		Stop
+	}
+}	
+
+// Non-solid Hanging Body 1 ----------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangNoGuts
+{
+	Radius 16
+	Height 88
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB1 A -1
+		Stop
+	}
+}
+
+// Non-solid Hanging Body 5 ----------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangTLookingUp
+{
+	Radius 16
+	Height 64
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB5 A -1
+		Stop
+	}
+}
+
+// Non-solid Hanging Body 6 ----------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangTNoBrain
+{
+	Radius 16
+	Height 64
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		HDB6 A -1
+		Stop
+	}
+}
+
+// Marker Yellow Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangTSkull
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 N -1 BRIGHT
+		Stop
+	}
+}	
+
+// Marker Blue Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_GibbedMarineExtra
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 L -1 BRIGHT
+		Stop
+	}
+}	
+
+// Marker Red Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_DeadLostSoul
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 M -1 BRIGHT
+		Stop
+	}
+}	
+
+// Live Wire -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_BloodyTwitch
+{
+	Radius 16
+	Height 73
+	ProjectilePassHeight -16
+	Obituary "$OB_ZAP"
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+	Spawn:
+		LX11 D 5 BRIGHT A_Look
+		Loop
+	See:
+		LX11 F 12 BRIGHT A_SargAttack
+		LX11 GE 12 BRIGHT
+		Loop
+	}
+}	
+
+// Spike Floor -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_DeadCacodemon
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 [ -1
+		Stop
+	}
+}	
+
+// Spike Ceiling -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_NonsolidMeat4
+{
+	Radius 16
+	Height 45
+	ProjectilePassHeight -16
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+		Spawn:
+		LX11 \ -1
+		Stop
+	}
+}	
+
+// Red Ceiling Light -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Megasphere
+{
+	Radius 20
+	Height 16
+	ProjectilePassHeight -16
+	RenderStyle Translucent
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+		Spawn:
+		LX12 LMNO 6 BRIGHT
+		Loop
+	}
+}	
+
+// Fire -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Infrared
+{
+	Radius 20
+	Height 40
+	ProjectilePassHeight -16
+	RenderStyle Translucent
+	Obituary "$OB_FLAME"
+	States
+	{
+	Spawn:
+		LX12 P 5 BRIGHT A_Look
+		Loop
+	See:
+		LX12 P 9 BRIGHT A_SargAttack
+		LX12 QRS 9 BRIGHT
+		Loop
+	}
+}	
+
+// Poo -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangBNoBrain
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	States
+	{
+		Spawn:
+		LX11 W -1
+		Stop
+	}
+}
+
+// Invisible Barrier -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_CommanderKeen
+{
+	Radius 32
+	Height 1000
+	ProjectilePassHeight -16
+	RenderStyle None
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		TNT1 A -1
+		Stop
+	}
+}	
+
+// Gizmo Blue Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Meat2
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 H -1 BRIGHT
+		Stop
+	}
+}	
+
+// Gizmo Red Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Meat4
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 J -1 BRIGHT
+		Stop
+	}
+}	
+
+// Gizmo Yellow Key -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_HangingCorpse
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 I -1 BRIGHT
+		Stop
+	}
+}	
+
+// Hanging Candelabra -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_BossEye
+{
+	Radius 20
+	Height 65
+	ProjectilePassHeight -16
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+		Spawn:
+		LX11 STU 4 BRIGHT
+		Loop
+	}
+}	
+
+// Big Brain/Instant Death Exit ------------------------------------------------
+
+ACTOR Lexicon_ROTR_BossBrain
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+SHOOTABLE
+	States
+	{
+		Spawn:
+		BBRN A -1
+		Stop
+	Death:
+		TNT1 A -1 A_BrainDie
+		Stop
+	}
+}	
+
+// Fountain -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_AllMap
+{
+	Radius 20
+	Height 25
+	ProjectilePassHeight -16
+	RenderStyle Translucent
+	States
+	{
+		Spawn:
+		LX12 TUV 6
+		Loop
+	}
+}	
+
+// Streetlight -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_TechLamp2
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 B -1 BRIGHT
+		Stop
+	}
+}	
+
+// Hydrant -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_DeadShotgunGuy
+{
+	Radius 16
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 R -1
+		Stop
+	}
+}	
+
+// Lightbulb -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_TallRedColumn
+{
+	Radius 16
+	Height 32
+	ProjectilePassHeight -16
+	+NOGRAVITY
+	+SPAWNCEILING
+	States
+	{
+		Spawn:
+		LX12 W -1 BRIGHT
+		Stop
+	}
+}	
+
+// TV -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_Column
+{
+	Radius 32
+	Height 25
+	ProjectilePassHeight -16
+	+SOLID
+	+USESPECIAL
+	States
+	{
+		Spawn:
+		LX11 YX 15 BRIGHT
+		Loop
+	}
+}	
+
+// Cat -----------------------------------------------------------
+
+ACTOR Lexicon_ROTR_WolfensteinSS
+{
+	Health 50
+	Radius 20
+	Height 56
+	Speed 8
+	PainChance 170
+	Monster
+	+FLOORCLIP
+	SeeSound "ROTR/DSSSSIT"
+	PainSound "ROTR/DSSKLDTH"
+	DeathSound "ROTR/DSSSDTH"
+	ActiveSound "ROTR/DSTINK"
+	AttackSound "wolfss/attack"
+	Obituary "$ROTR_OB_WOLFSS"
+	Dropitem "Clip"
+	Tag "$ROTR_TAG_CAT"
+	States
+	{
+	Spawn:
+		LX13 A 10 A_Look
+		Loop
+	See:
+		LX13 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LX13 E 10 A_FaceTarget
+		LX13 F 10 A_FaceTarget
+		LX13 G 4 BRIGHT A_CPosAttack
+		LX13 F 6 A_FaceTarget
+		LX13 H 4 BRIGHT A_CPosAttack
+		LX13 F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		LX13 I 3
+		LX13 I 3 A_Pain
+		Goto See
+	Death:
+		LX13 I 5
+		LX13 J 5 A_Scream
+		LX13 K 5 A_NoBlocking
+		LX13 L 5
+		LX13 M -1
+		Stop
+	Raise:
+		LX13 M 5
+		LX13 LKJI 5
+		Goto See 
+	}
+}
+
+Actor Lexicon_ROTR_Arachnotron : Arachnotron
+{
+	States
+	{
+	See:
+		BSPI A 20
+		BSPI AABBCC 3 A_Chase
+		BSPI D 3 A_BabyMetal
+		BSPI DEEFF 3 A_Chase
+		Loop
+	Missile:
+		BSPI A 20 Bright A_FaceTarget
+		TNT1 A 0 A_FaceTarget
+		BSPI G 4 Bright A_CustomMissile("Lexicon_ROTR_ArachnotronPlasma")
+		BSPI H 4 Bright
+		BSPI H 1 Bright A_SpidRefire
+		Goto Missile+1
+	}
+}
+
+ACTOR Lexicon_ROTR_ArachnotronPlasma : ArachnotronPlasma { SeeSound "ROTR/DSPLASMA" }
+
+Actor Lexicon_ROTR_PainElemental : PainElemental
+{
+	States
+	{
+	Missile:
+		PAIN D 5 A_FaceTarget
+		PAIN E 5 A_FaceTarget
+		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 1 BRIGHT A_PainAttack("Lexicon_ROTR_LostSoul")
+		Goto See
+	Death:
+		PAIN H 8 BRIGHT
+		PAIN I 8 BRIGHT A_Scream
+		PAIN JK 8 BRIGHT
+		PAIN L 8 BRIGHT A_PainDie("Lexicon_ROTR_LostSoul")
+		PAIN M 8 BRIGHT
+		Stop
+	Raise:
+		TROO A -1 
+		stop
+	}
+}
+
+Actor Lexicon_ROTR_HealthBonus : HealthBonus { RenderStyle "Translucent" Alpha 0.5 Inventory.PickupMessage "$ROTR_MSG_HTHBONUS" }
+
+Actor Lexicon_ROTR_EvilEye : EvilEye { RenderStyle "Translucent" Alpha 0.5 }
+
+Actor Lexicon_ROTR_ColonGibs : ColonGibs { -NOBLOCKMAP }
+
+Actor Lexicon_ROTR_SmallBloodPool : SmallBloodPool { -NOBLOCKMAP RenderStyle "Translucent" Alpha 0.5 }
+
+Actor Lexicon_ROTR_BrainStem : BrainStem { -NOBLOCKMAP }
+
+ACTOR Lexicon_ROTR_Fist : Weapon
+{
+	Weapon.SelectionOrder 3700
+	Weapon.Kickback 100
+	Obituary "$ROTR_OB_MPFIST"
+	Tag "$TAG_FIST"
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 0
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.MELEEWEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		LX13 N 1 A_WeaponReady
+		Loop
+	Deselect:
+		LX13 N 1 A_Lower
+		Loop
+	Select:
+		LX13 N 1 A_Raise
+		Loop
+	Fire:
+		LX13 O 4
+		LX13 P 4 A_Punch
+		LX13 Q 5
+		LX13 P 4
+		LX13 O 5 A_ReFire
+		Goto Ready
+	}
+}
+
+ACTOR Lexicon_ROTR_Pistol : DoomWeapon
+{
+	Weapon.SelectionOrder 1900
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 20
+	Weapon.AmmoType "Clip"
+	Weapon.SlotNumber 2
+	Obituary "$ROTR_OB_MPPISTOL"
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED"
+	Tag "$TAG_PISTOL"
+	Radius 20
+	Height 16
+	States
+	{
+	Ready:
+		LX13 R 1 A_WeaponReady
+		Loop
+	Deselect:
+		LX13 R 1 A_Lower
+		Loop
+	Select:
+		LX13 R 1 A_Raise
+		Loop
+	Fire:
+		LX13 R 4
+		LX13 S 6 A_FirePistol
+		LX13 T 4
+		LX13 S 5 A_ReFire
+		Goto Ready
+	Flash:
+		PISF A 7 Bright A_Light1
+		Goto LightDone
+		PISF A 7 Bright A_Light1
+		Goto LightDone
+ 	Spawn:
+		PIST A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_Chainsaw : Weapon
+{
+	Weapon.Kickback 0
+	Weapon.SelectionOrder 2200
+	Weapon.UpSound "weapons/sawup"
+	Weapon.ReadySound "weapons/sawidle"
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 1
+	Inventory.PickupMessage "$ROTR_MSG_CHAINSAW"
+	Obituary "$ROTR_OB_MPCHAINSAW"
+	Tag "$TAG_CHAINSAW"
+	+WEAPON.MELEEWEAPON		
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		LX13 YZ 4 A_WeaponReady
+		Loop
+	Deselect:
+		LX13 Y 1 A_Lower
+		Loop
+	Select:
+		LX13 Y 1 A_Raise
+		Loop
+	Fire:
+		LX13 WX 4 A_Saw
+		LX13 X 0 A_ReFire
+		Goto Ready
+	Spawn:
+		CSAW A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_Shotgun : DoomWeapon
+{
+	Weapon.SelectionOrder 1300
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 8
+	Weapon.AmmoType "Shell"
+	Weapon.SlotNumber 3
+	Weapon.SlotPriority 0
+	Inventory.PickupMessage "$ROTR_MSG_SHOTGUN"
+	Obituary "$ROTR_OB_MPSHOTGUN"
+	Tag "$TAG_SHOTGUN"
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		LX14 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		LX14 A 1 A_Lower
+		Loop
+	Select:
+		LX14 A 1 A_Raise
+		Loop
+	Fire:
+		LX14 A 3
+		LX14 A 7 A_FireShotgun
+		LX14 BC 5
+		LX14 D 4
+		LX14 CB 5
+		LX14 A 3
+		LX14 A 7 A_ReFire
+		Goto Ready
+	Flash:
+		SHTF A 4 Bright A_Light1
+		SHTF B 3 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		SHOT A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_SuperShotgun : DoomWeapon
+{
+	Weapon.SelectionOrder 400
+	Weapon.AmmoUse 2
+	Weapon.AmmoGive 8
+	Weapon.AmmoType "Shell"
+	Weapon.SlotNumber 3
+	Weapon.SlotPriority 1
+	Inventory.PickupMessage "$ROTR_MSG_SHOTGUN2"
+	Obituary "$ROTR_OB_MPSSHOTGUN"
+	Tag "$TAG_SUPERSHOTGUN"
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		LX14 E 1 A_WeaponReady
+		Loop
+	Deselect:
+		LX14 E 1 A_Lower
+		Loop
+	Select:
+		LX14 E 1 A_Raise
+		Loop
+	Fire:
+		LX14 E 3
+		LX14 E 7 A_FireShotgun2
+		LX14 F 7
+		LX14 G 7 A_CheckReload
+		LX14 H 7 A_OpenShotgun2
+		LX14 I 7
+		LX14 J 7 A_LoadShotgun2
+		LX14 K 6
+		LX14 L 6 A_CloseShotgun2
+		LX14 E 5 A_ReFire
+		Goto Ready
+	// unused states
+		LX14 F 7
+		LX14 E 3
+		Goto Deselect
+	Flash:
+		SHT2 I 4 Bright A_Light1
+		SHT2 J 3 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		SGN2 A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_PlasmaRifle : DoomWeapon
+{
+	Weapon.SelectionOrder 100
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 40
+	Weapon.AmmoType "Cell"
+	Weapon.SlotNumber 6
+	Inventory.PickupMessage "$ROTR_MSG_PLASMA"
+	Tag "$TAG_PLASMARIFLE"
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		PLSG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PLSG A 1 A_Lower
+		Loop
+	Select:
+		PLSG A 1 A_Raise
+		Loop
+	Fire:
+		PLSG A 3 A_FireCustomMissile("Lexicon_ROTR_PlasmaBall")
+		LX14 M 20 A_ReFire
+		Goto Ready
+	Flash:
+		PLSF A 4 Bright A_Light1
+		Goto LightDone
+		PLSF B 4 Bright A_Light1
+		Goto LightDone
+	Spawn:
+		PLAS A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_PlasmaBall
+{
+	Game Doom
+	SpawnID 51
+	Radius 13
+	Height 8
+	Speed 25
+	Damage 5
+	Projectile
+	+RANDOMIZE
+	RenderStyle Add
+	Alpha 0.75
+	SeeSound "ROTR/DSPLASMA"
+	DeathSound "weapons/plasmax"
+	Obituary "$ROTR_OB_MPPLASMARIFLE"
+	States
+	{
+	Spawn:
+		PLSS AB 6 Bright
+		Loop
+	Death:
+		PLSE ABCDE 4 Bright
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_Berserk : CustomInventory
+{
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$ROTR_MSG_BERSERK"
+	Inventory.PickupSound "misc/p_pkup"
+	States
+	{
+	Spawn:
+		PSTR A -1
+		Stop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength")
+		TNT1 A 0 HealThing(100, 0)
+		TNT1 A 0 A_SelectWeapon("Lexicon_ROTR_Fist")
+		Stop
+	}
+}
+
+ACTOR Lexicon_ROTR_ShotgunGuy : ShotgunGuy { DropItem "Lexicon_ROTR_Shotgun" }

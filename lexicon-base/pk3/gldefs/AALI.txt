@@ -1,0 +1,86 @@
+object Lexicon_AALI_Candelabra
+{
+    frame CBRA { light CANDELABRA }
+}
+
+object Lexicon_AALI_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame PLSEA { light PLASMA_X1 }
+    frame PLSEB { light PLASMA_X2 }
+    frame PLSEC { light PLASMA_X2 }
+    frame PLSED { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+pointlight Lexicon_AALI_ARACHPLAS
+{
+    color 0.89 0.10 0.48
+    size 56
+}
+
+flickerlight Lexicon_AALI_ARACHPLAS_X1
+{
+    color 0.8 0.07 0.26
+    size 72
+    secondarySize 80
+    chance 0.3
+}
+
+flickerlight Lexicon_AALI_ARACHPLAS_X2
+{
+    color 0.9 0.05 0.22
+    size 88
+    secondarySize 96
+    chance 0.3
+}
+
+flickerlight Lexicon_AALI_ARACHPLAS_X3
+{
+    color 0.6 0.04 0.18
+    size 48
+    secondarySize 32
+    chance 0.3
+}
+
+flickerlight Lexicon_AALI_ARACHPLAS_X4
+{
+    color 0.3 0.03 0.12
+    size 24
+    secondarySize 16
+    chance 0.3
+}
+
+object Lexicon_AALI_ArachnotronPlasma
+{
+	frame LX50R { light Lexicon_AALI_ARACHPLAS }
+	frame LX50S { light Lexicon_AALI_ARACHPLAS }
+
+	frame LX50T { light Lexicon_AALI_ARACHPLAS_X1 }
+	frame LX50U { light Lexicon_AALI_ARACHPLAS_X2 }
+	frame LX50V { light Lexicon_AALI_ARACHPLAS_X2 }
+	frame LX50W { light Lexicon_AALI_ARACHPLAS_X3 }
+	frame LX50X { light Lexicon_AALI_ARACHPLAS_X4 }
+}
+
+object Lexicon_AALI_RevenantTracerDumbfire
+{
+    frame FATBR { light TRACER    }
+    frame FATBS { light TRACER    }
+
+    frame FBXPA { light TRACER_X1 }
+    frame FBXPB { light TRACER_X2 }
+    frame FBXPC { light TRACER_X3 }
+}
+
+object Lexicon_AALI_RevenantTracerHoming
+{
+    frame FATBA { light TRACER    }
+    frame FATBB { light TRACER    }
+
+    frame FBXPA { light TRACER_X1 }
+    frame FBXPB { light TRACER_X2 }
+    frame FBXPC { light TRACER_X3 }
+}

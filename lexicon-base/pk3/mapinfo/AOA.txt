@@ -1,0 +1,189 @@
+// Ashes of Annihilation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map AOAH01 "Monitoring Hub"
+{
+	titlepatch = "AOAHV00"
+	next = "AOAH02"
+	secretnext = "AOAH02"
+	sky1 = "AOAH0100"
+	music = "D_AOAH01"
+}
+
+map AOAH02 "Waste Management"
+{
+	titlepatch = "AOAHV01"
+	next = "AOAH03"
+	secretnext = "AOAH03"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_BETWEE"
+}
+
+map AOAH03 "Canyon Facility"
+{
+	titlepatch = "AOAHV02"
+	next = "AOAH04"
+	secretnext = "AOAH04"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_COUNTD"
+}
+
+map AOAH04 "Steel Complex"
+{
+	titlepatch = "AOAHV03"
+	next = "AOAH05"
+	secretnext = "AOAH05"
+	sky1 = "AOAH0100"
+	music = "D_AOAH04"
+}
+
+map AOAH05 "Computer Plant"
+{
+	titlepatch = "AOAHV04"
+	next = "AOAH06"
+	secretnext = "AOAH06"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_DDTBLU"
+}
+
+map AOAH06 "Experimental Labs"
+{
+	titlepatch = "AOAHV05"
+	next = "AOAH07"
+	secretnext = "AOAH07"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_THE_DA"
+}
+
+map AOAH07 "Last Outpost"
+{
+	titlepatch = "AOAHV06"
+	next = "AOAH08"
+	secretnext = "AOAH08"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map AOAH08 "Fluid Distribution Zone"
+{
+	titlepatch = "AOAHV07"
+	next = "AOAH09"
+	secretnext = "AOAH09"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_IN_CIT"
+}
+
+map AOAH09 "Foundry Area"
+{
+	titlepatch = "AOAHV08"
+	next = "AOAH10"
+	secretnext = "AOAH10"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_DOOM"
+}
+
+map AOAH10 "Floodgate Works"
+{
+	titlepatch = "AOAHV09"
+	next = "AOAH11"
+	secretnext = "AOAH11"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_DEAD"
+}
+
+map AOAH11 "Data Processing"
+{
+	titlepatch = "AOAHV10"
+	next = "AOAH12"
+	secretnext = "AOAH12"
+	sky1 = "AOAH0100"
+	music = "$MUSIC_COUNTD"
+}
+
+map AOAH12 "Conduits"
+{
+	titlepatch = "AOAHV11"
+	next = "AOAH13"
+	secretnext = "AOAH13"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_DDTBLU"
+}
+
+map AOAH13 "Pump Station"
+{
+	titlepatch = "AOAHV12"
+	next = "AOAH14"
+	secretnext = "AOAH14"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_THE_DA"
+}
+
+map AOAH14 "Burning Depths"
+{
+	titlepatch = "AOAHV13"
+	next = "AOAH15"
+	secretnext = "AOAH15"
+	sky1 = "AOAH0101"
+	music = "$MUSIC_MESSAG"
+}
+
+map AOAH15 "Demonic Incursion"
+{
+	titlepatch = "AOAHV14"
+	next = "AOAH16"
+	secretnext = "AOAH16"
+	sky1 = "AOAH0102"
+	music = "$MUSIC_AMPIE"
+}
+
+map AOAH16 "Defiled Halls"
+{
+	titlepatch = "AOAHV15"
+	next = "AOAH17"
+	secretnext = "AOAH17"
+	sky1 = "AOAH0102"
+	music = "$MUSIC_DEAD"
+}
+
+map AOAH17 "Seat of the Unholy"
+{
+	titlepatch = "AOAHV16"
+	next = "AOAH18"
+	secretnext = "AOAH18"
+	sky1 = "AOAH0102"
+	music = "$MUSIC_IN_CIT"
+}
+
+map AOAH18 "Infernal Keep"
+{
+	titlepatch = "AOAHV17"
+	next = "AOAH19"
+	secretnext = "AOAH19"
+	sky1 = "AOAH0102"
+	music = "D_AOAH18"
+}
+
+map AOAH19 "Bloodsea Citadel"
+{
+	titlepatch = "AOAHV18"
+	next = "AOAH20"
+	secretnext = "AOAH20"
+	sky1 = "AOAH0102"
+	music = "$MUSIC_SHAWN"
+}
+
+map AOAH20 "Fallen Earth"
+{
+	titlepatch = "AOAHV19"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "AOAH0102"
+	music = "D_AOAH20"
+}

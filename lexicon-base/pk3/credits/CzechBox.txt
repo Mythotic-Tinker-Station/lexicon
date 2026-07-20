@@ -1,0 +1,406 @@
+
+
+    ▄████▄  ▒███████▒▓█████  ▄████▄   ██░ ██  ▄▄▄▄    ▒█████  ▒██   ██▒
+   ▒██▀ ▀█  ▒ ▒ ▒ ▄▀░▓█   ▀ ▒██▀ ▀█  ▓██░ ██▒▓█████▄ ▒██▒  ██▒▒▒ █ █ ▒░
+   ▒▓█    ▄ ░ ▒ ▄▀▒░ ▒███   ▒▓█    ▄ ▒██▀▀██░▒██▒ ▄██▒██░  ██▒░░  █   ░
+   ▒▓▓▄ ▄██▒  ▄▀▒   ░▒▓█  ▄ ▒▓▓▄ ▄██▒░▓█ ░██ ▒██░█▀  ▒██   ██░ ░ █ █ ▒ 
+   ▒ ▓███▀ ░▒███████▒░▒████▒▒ ▓███▀ ░░▓█▒░██▓░▓█  ▀█▓░ ████▓▒░▒██▒ ▒██▒
+   ░ ░▒ ▒  ░░▒▒ ▓░▒░▒░░ ▒░ ░░ ░▒ ▒  ░ ▒ ░░▒░▒░▒▓███▀▒░ ▒░▒░▒░ ▒▒ ░ ░▓ ░
+     ░  ▒   ░░▒ ▒ ░ ▒ ░ ░  ░  ░  ▒    ▒ ░▒░ ░▒░▒   ░   ░ ▒ ▒░ ░░   ░▒ ░
+   ░        ░ ░ ░ ░ ░   ░   ░         ░  ░░ ░ ░    ░ ░ ░ ░ ▒   ░    ░  
+   ░ ░        ░ ░       ░  ░░ ░       ░  ░  ░ ░          ░ ░   ░    ░  
+   ░        ░               ░                      ░                   
+
+===========================================================================
+Advanced engine needed  : Boom Compatible
+Primary purpose         : Single play
+===========================================================================
+Title                   : Czechbox
+Filename                : CzechBox.wad
+Release date            : 19.1.2020
+Author                  : Damned, Matthias, Sulphurit, Jaeden, Kloki38,
+                          Pipicz
+Email Address           : [redacted]
+Other Files By Authors  : Zones of Fear
+Misc. Author Info       : Group of mappers from Czech Republic and Slovakia.
+                          The team was gathered around Liquiddoom.net portal.
+
+Description             : Czech Community project with all 32 maps made by
+                          Czech or Slovak authors. The maps should be
+                          playable with pistol start and also in one run. It
+                          should be fully BooM compatible and
+                          jumping/crouching is not allowed since it could
+                          spoil the gameplay of many maps.
+                          Also Voodoo dolls are used in several maps, so
+                          please use ports that support this feature.
+
+Additional Credits to   : Testing: Leebigh, PavelU
+                          Additional graphics and textures: Community Chest 4
+                          textures, Damned, Eradrop (skies)
+                          Thanks to: ID Soft, Doom Builder, Slade,
+                          Liquiddoom, Doom Writer
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (map names)
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 13.10.2012 - 19.1.2020 (more than 7 years) :)
+Editor(s) used          : Doom Builder, Slade
+May Not Run With        : Vanilla doom, limit removing. BooM and voodoo doll
+                          needs to be supported.
+Tested With             : Prboom+, QZDoom, GZDoom, K8Vavoom
+
+
+===========================================================================
++++++++++++++++++++++++Additional Level Information++++++++++++++++++++++++
+===========================================================================
+
+Map01     : Entrygay
+Author    : Sulphurit
+Music     : Lands of Lore - Gladstone Forest (Southlands)
+Comments  : Damned:"Sulhpurit was pretty active during the first months of
+            the project, but he as fast as he appeared he also disappeared.
+            Still we decided to keep his maps in, but we selected the name
+            , background music, etc. by ourselves. It is pretty easy and
+            small map, but it works fine as a starter."
+---------------------------------------------------------------------------
+Map02     : Ruins
+Author    : Matthias alias enkeli33
+Music     : Lands of Lore - The Draracle
+Comments  : Matthias: "This map looked much more epic in my head than the
+            actual result. Well, I was trying to make it in more 'aztec'
+            style map, that's why it's Ruins. I doesn't look like that
+            though."
+---------------------------------------------------------------------------
+Map03     : Excavations
+Author    : Sulphurit
+Music     : Lands of Lore - Upper Opinwood
+Comments  : Damned:"This is similar case as the first map. Sulphurit
+            disappeared so we managed all completion if the map by
+            ourselves. I kind of like the theme, but boring secrets and too
+            crowded fights makes it average."
+---------------------------------------------------------------------------
+Map04     : Chapel of Baphomet
+Author    : Sulphurit
+Music     : ?
+Comments  : Damned:"This is the 3rd and last submission by Sulphurit before
+            he disappeared."
+---------------------------------------------------------------------------
+Map05     : Infested Helipad
+Author    : Damned
+Music     : Memento Mori II - Give In (With Pleasure)
+Comments  : I planned this map for earlier slot, but Sulphurit was too fast
+            with his submissions so I had to put it to slot M05. The main
+            idea was the helipad and everything else has been build without
+            any specific plan. 
+---------------------------------------------------------------------------
+Map06     : Close Quarters
+Author    : Jaeden
+Music     : Lands of Lore - Catwalk Caverns
+Comments  : Damned: Jaeden, who submitted most of the superhuge maps in
+            Zones of Fear provided this time compact map with crumped rooms
+            and close combats.
+---------------------------------------------------------------------------
+Map07     : Fuck Censorship
+Author    : Matthias alias enkeli33
+Music     : Lands of Lore - The Urbish Mines
+Comments  : Matthias: "This map is some sort of experiment and playing with
+            surrealism or something. I remember reading about removing and
+            remaking some sectors in original Doom because they looked too
+            much as swastika. So I put some swastika symbols here. No, I am
+            not nazi, I just don't like cesnorship. Fuck censorship.
+---------------------------------------------------------------------------
+Map08     : Mountain Hideout
+Author    : Jaeden
+Music     : Bullet for my Valentine - The Last Fight
+Comments  : Damned: I really like the hub layout of this map and how the
+            player progress. For me this is his best map in Czechbox.
+---------------------------------------------------------------------------
+Map09     : Stairway to Star
+Author    : Damned
+Music     : Castlevania - Arya of Sorrow (Floating Gardens)
+Comments  : I've build the central staircase more than 10 years ago and it
+            lay on my HDD untouched since than. Still I've found the idea
+            pretty good so I didn't want to just scrap it. I had idea to
+            make DM map from it, but when this project started, I decided
+            to build the whole SP map around it. The Hitler secret is quite
+            tricky. Don't hesitate to use bigger guns on him. :)
+---------------------------------------------------------------------------
+Map10     : Kafkaesque World
+Author    : Matthias alias enkeli33
+Music     : Doom 1 - E1M3
+Comments  : Matthias: "I had this idea in my head with seeing platforms
+            raising trought the window and go to jump on them, so I used
+            this idea here. And there is also the tunnel jumping. Mostly
+            inspirated by a section in Map 20 in old videogame Powerslave.
+---------------------------------------------------------------------------
+Map11     : Blast Furnace
+Author    : Damned
+Music     : Whispers of Satan - MAP21
+Comments  : This map started as most of my maps. I've just started to draw
+            something without any plan and without idea, where the design
+            will go. After several days of mapping I've found out, that the
+            map is not consistent. It had two parts with completely
+            different layout style so I've decided to split the draft and
+            made two maps out of it. I suppose you would not guess, that
+            the second part of this map is now map20. This map used heavily
+            the voodoo doll conveyor belts to rise and lower the bridges to
+            the central part of the furnance. The mastermind in the end is
+            not too big challenge if you know, how to block it.
+---------------------------------------------------------------------------
+Map12     : Nineve
+Author    : Matthias alias enkeli33
+Music     : Anvil of Dawn - Underground City
+Comments  : Matthias: "Like the Map02, I wanted to use some historical
+            theme, so I situated this map in the acient city of Ninive. So
+            you can see the city outside from the main building. As usual I
+            suck at mapping, so not really city-feeling I guess. Maybe
+            it'll be a surprise, but the design in general was inspirated
+            by the old videogame Strife.
+---------------------------------------------------------------------------
+Map13     : Castle Climber
+Author    : Damned
+Music     : Rise of the Triad - You Suck!
+Comments  : I had in mind several ideas, which I found interesting, but I
+            haven't belived those ideas could be fun to play. One of those
+            ideas was to build map, which will be really vertically
+            oriented. One difficulty is, how to build it in not really 3D
+            Doom engine. Another difficulty is, how to make it fun and
+            playable. Since whole map is visible right from the start, I
+            needed to use lot of monster cabinets with teleporters.
+            Also the map uses shootable switches as standard and it has
+            been finalized long before Sigil was announced. So I have bad
+            feeling that John Romero stole my idea. :)
+---------------------------------------------------------------------------
+Map14     : Truck Depot
+Author    : Kloki38
+Music     : TNT Evilution - Let's Kill at Will
+Comments  : In the first version we had another map by mr. Musalek alias
+            NinjaLiquidator. He originally submitted the map for CzechBox,
+            but due to the long development of this project he published
+            the map in the meantime in his own project. Therefore we
+            decided replace this quicky by original map so Kloki build this
+            piece in few hours.
+---------------------------------------------------------------------------
+Map15     : Hometown
+Author    : Jaeden
+Music     : TNT Evilution - AimShootKill
+Comments  : Damned: I am not big fan of city maps, but this one is executed
+            pretty well. After the player clear out the exteriors there is
+            not enough action. The secret exit is pretty nice though.
+---------------------------------------------------------------------------
+Map16     : Twilight light
+Author    : Damned
+Music     : Rise of the Triad - Excalibur 
+Comments  : This was the second map I've created for Czechbox. I started
+            again without any plan and waited, what will come from my
+            intuitive improvisation. I build as usual some techbase, but
+            then I wanted to make it interesting and build the outside area
+            with caves and rocks. I liked how this part came out, so this
+            was in fact the starting point for my map29, which I consider
+            as one of the best maps I've ever done.
+---------------------------------------------------------------------------
+Map17     : Tickets, Please!
+Author    : Kloki38
+Music     : Whispers of Satan - Covert Operations Facility (Map06)
+Comments  : Damned: Kloki likes to build maps based on real environment.
+            Here you will fight the demons in subway station. The train
+            part is pretty repetitive and the final fight with cyberdemon
+            is quite easy, but overall it plays well.
+---------------------------------------------------------------------------
+Map18     : Orwell's Nightmare
+Author    : Matthias alias enkeli33
+Music     : Anvil of Dawn - Sunken Ship / Quagmire
+Comments  : Matthias: "I've always wanted to make the bloody/fleshy map,
+            something like 'In the flesh' level in Blood videogame. And
+            Doom has lots of meaty/bloody textures. Result was really
+            horrible and I must've made a lots of changed later.
+            And as usual, I used wannabe-poetic name."
+---------------------------------------------------------------------------
+Map19     : HQ 
+Author    : Pipicz
+Music     : Rise of the Triad - MMMenu
+Comments  : Damned: Hey Pipi, would you like to provide a map for this
+            Czechbox shit? :) So the same as for Zones of Fear, I've
+            convinced Pipicz to submit something. I still regret I wasn't
+            able to convince Gusta as well :D
+---------------------------------------------------------------------------
+Map20     : Teleportation Transfer Terminal aka TTT
+Author    : Damned
+Music     : Duke Nukem 3D - Water World (E1L4)
+Comments  : The map TTT has been separated from map11. In fact this part
+            had been created even before the part for map11. The opening
+            area was something for me like training of detailing and
+            mapping skills after long pause in doom designing. Maybe
+            therefore the map looks more focused on appearence than on
+            gameplay. Still I really like few moments, like the final area
+            with bridge, or the cyberdemon fight.
+---------------------------------------------------------------------------
+Map21     : Raccoons' Den
+Author    : Matthias alias enkeli33
+Music     : Lands of Lore - Draracle Caves 1 - Urbish Mines 2
+Comments  : Matthias: "I had this idea in my head of a map that has a big
+            hole in the middle, and most of the map is situated in dens
+            around the hole. As usual, it looked better in my head. Also
+            this map is some sort of appreaciation of raccoons, because
+            they are coon animals and they love washing things. So you have
+            to wash yourself in this map :)"
+---------------------------------------------------------------------------
+Map22     : Breadcrumbs
+Author    : Damned
+Music     : Plutonia MIDI Pack - Seasons of Insanity (Jimmy Paddock)
+Comments  : Here I tried to create completely non-linear map. Player can go
+            to all directions, collect the keys in any order and in the end
+            just open the exit door. Because of this character, the
+            navigation through the map could be little bit confusing, so
+            I've added several "breadcrumbs" marks around the map, that
+            should show the player, what key could they get, if they head 
+            this particular direction. In the end I like this whole
+            interconnected layout of the map, but the gameplay could suffer
+            because of it.
+---------------------------------------------------------------------------
+Map23     : Made by Crates
+Author    : Matthias alias enkeli33 (heavily remixed by Damned)
+Music     : Castlevania: Symphony of the Night - Dance of Pale
+Comments  : Matthias: "I had an idea to make a castle with crates. It
+            turned out to be far more complicated that it looked in my
+            head, because, if you want something that is not totally
+            'crate-shaped', it's not only difficult to make, but it also
+            mess with the textures around. Eventually I am satisfied with
+            this map the most."
+---------------------------------------------------------------------------
+Map24     : Binky Dance
+Author    : Matthias alias enkeli33
+Music     : Serious Sam - Dunes fight
+Comments  : Matthias: "I wanted to try to make map that keeps you on a one
+            place all the time. Something like a big battle arena, and also
+            this map is a rabbit appreaciation, because rabbits are cool.
+            Did you know when rabbits are happy, they jumping and such? And
+            it's called binky dance!"
+---------------------------------------------------------------------------
+Map25     : Infernal Stronghold Rush
+Author    : Damned
+Music     : Haunted Castle - Cross your Heart
+Comments  : I also wanted to make some more slaughterish map for this set
+            and slot25 fits well. Also I wanted to make map in more hellish
+            environment, because most of my maps are just variations of
+            techbase. It is different, but still I find it quite enjoyable.            
+---------------------------------------------------------------------------
+Map26     : Cuteness Overload
+Author    : Matthias alias enkeli33
+Music     : Lands of Lore - Lower Opinwood
+Comments  : Matthias: "I realized it's really fun to fight with an army of
+            low-tier enemies with BFG9000, so I wanted to make a whole map
+            based on this. Anyway, this whole map was made within a day.
+            Not suprise, huh?"
+---------------------------------------------------------------------------
+Map27     : Lift it!
+Author    : Damned
+Music     : TNT Evilution - Blood Jungle
+Comments  : This map uses another idea I had in my mind for ages, but dared
+            to really use it in map. There is big central elevator, that
+            connects all the floors of the map. I haven't believed it could
+            work because I knew the elevator will slow down the gameplay
+            and break the flow of the map. Still I always wanted to do it
+            and community project like Czechbox offered me the option. I
+            managed to do the big lift with voodoo doll conveyor belt and
+            technically it works well. I was aware of the gameplay issues
+            that will be caused by the elevator, but I think it is overall
+            not that bad.
+---------------------------------------------------------------------------
+Map28     : Criticall Hit
+Author    : Matthias alias enkeli33
+Music     : Lands of Lore - Draracle Caves 2 - Urbish Mines 3
+Comments  : Matthias: "This whole thing is actually a remake a map I made
+            what I was a kid. I liked the idea you have a caste or a
+            palace, but you can enter directly and you have to use sewers
+            to get inside. It's little bit inspired by The Assault mode
+            from Unreal Tournament."
+---------------------------------------------------------------------------
+Map29     : Hole
+Author    : Damned
+Music     : TNT Evilution - Into the Beast's Belly
+Comments  : I started to work on this map early (I started it as my third
+            contribution to the project), but it become my magnum opus. I
+            wanted to do the exterior map, where you jump to the abyss and
+            you need to climb up again. It is partially inspired by DooM2
+            map29 (The Living End) and also by the movie Dark Knight Rises.
+            I like how the map look, I also like the progression, I like
+            the gameplay. So this is my overall most favorite map of the
+            set and I am really proud on it. :) Enjoy!
+---------------------------------------------------------------------------
+Map30     : Icon of Souls
+Author    : Damned
+Music     : Descent 2 - Briefing (Alien Vendetta - MAP22)
+Comments  : I've never ever done before the true Icon of Sin map and again
+            Czechbox offered me a chance to do so. I wanted to do the Icon
+            more plastic, not just wall. I think I havent seen round Icon
+            before, so here it is. Anyway, you will probably hate this map.
+            It is pretty dificult to finish it, when you are not really
+            sure what to do. Also my deviation to spam swarms of lost souls
+            got unchained here (I had to even lower the amount of the lost
+            souls during game testing). So here is small guidence.
+            1. Hit the switch on the north (marked 1 on automap).
+            2. Then hit all 4 brains of fourheaded Icon.
+            3. Push 2 eye switched on east and west (marked 2 on automap).
+            4. Hit again any brain of Icon to finally kill it.    
+---------------------------------------------------------------------------
+Map31     : Fresh Air
+Author    : Damned
+Music     : Descent 2 - Level 1
+Comments  : I wanted to do platformer map. Majority of Doomers hates this
+            kind of maps and therefore I've decided to secure bonus map
+            slot for it. I like the layout and how the player is
+            progressing through the map. Due to the openess of the map,
+            testing was quite hard. During the testing I always found some
+            platforms, where you can get too early and skip half of the
+            map. I tried to get rid of those, so it should not be possible
+            now. Still rocket jumps will completely ruin the gameplay,
+            because you would be able to jump directly to the exit. 
+---------------------------------------------------------------------------
+Map32     : This Map Is Boring
+Author    : Matthias alias enkeli33
+Music     : Castlevania Bloodlines - The Discolored Wall (Stage 3)
+Comments  : Matthias: "Just another map inspired by Powerslave videogame.
+            This time I was inspired by Map 04.
+            Not much similarities I'd say."
+---------------------------------------------------------------------------
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

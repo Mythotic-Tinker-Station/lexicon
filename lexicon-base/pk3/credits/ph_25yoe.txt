@@ -1,0 +1,107 @@
+===========================================================================
+Archive Maintainer      : /levels/doom2/Ports/megawads/ please!
+Update to               : 
+Advanced engine needed  : limit-removing
+Primary purpose         : Single Player
+===========================================================================
+Title                   : Doom II: 25 Years on Earth (One Year Late Edition)
+Filename                : ph_25yoe.zip
+Release date            : 19/09/20
+Author                  : James "Phobus" Cresswell
+Email Address           : [redacted]
+Other Files By Author   : All available at https://drive.google.com/drive/folders/1W9YJEHQ_6xt1ldH3Oo3Kh2kvWT70oLDZ
+
+
+Misc. Author Info       : Should've got this out 30th September 2019!
+
+Description             : To celebrate the 25th Anniversary of the introduction of such wonders as the Super Shotgun and Arch Vile, I present a brand new, limit-removing megaWAD, which uses every line and sector action at least once! Difficulty starts low and gradually builds through this set as your journey unfolds across a planet lost to Hell 25 years ago. Will this be the mission that finally defeats the demons? No jumping or crouching, please! Do feel free to use mouse look (I do), and if gameplay mods are your thing, go ahead - this should be compatible with everything. The megaWAD is designed for continuous play, but every map is beatable from pistol starts if that's how you prefer to do things!
+
+This "One Year Late Edition" has a range of bugfixes and tweaks based on the extensive feedback provided by the Doomworld MegaWAD Club over June 2020. This should now be very safe to use in prboom+ complevel 2 or any port or compatability setting at least as forgiving as that. It also has a lovely new status bar by P4IR47, from the Doomworld forums!
+
+Additional Credits to   :
+id Software (Doom and Doom II)
+CodeImp, MaxEd, anotak and other contributors (Doom Builder 2, GZDoomBuilder-bugfix and DBX)
+sirjuddington and other contributors (SLumpEd, SLADE3)
+aap (DoomWord)
+Microsoft (Paint)
+P4IR47 (Custom Status Bar graphics)
+Mechadon (Mek's Box o' Skies)
+Nick "NiGHTMARE" Baker (additional *FALL# textures)
+Adelusion (ADSILVER)
+Memfis (the green gibbed marine sprite was taken from "Kuchitsu")
+Jason Briscoe (BOSSBACK Source Image)
+All music taken from en.midimelody.ru and freemidi.org, which don't seem to include author credits
+
+Special Thanks to	:
+Doomer Boards Krew, The Hellforge and NoNoWADMo Discords for putting up with me talking aobut this project whenever I started back up with work on it, plus encouragement, ideas and so on!
+Doomworld Forums for hosting the main thread and getting some hype going whenever I had something worth showing!
+
+
+Check the included ph_25yoe_MAPS.txt for a list of MIDIs used and a little insight into each map!
+
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (internal)
+Demos                   : Yes (DEMO1, DEMO2 and DEMO3, details below)
+Other                   : DECORATE and ZMAPINFO (both optional)
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : MAP01-MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player	: No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Anywhere between 4 and 20 hours per map, spread over about six years
+Editor(s) used          : Doom Builder 2, GZDoomBuilder-bugfix, DBX, SLumpEd, SLADE3, DoomWord, Paint
+Known Bugs              : No major ones, but...
+1	Some slight slime trails may be visible in software rendering, but I've tried to fix any big ones.
+2	Some raising floors can be repeated way more than necessary - where possible, I've mitigated against this, either with switches to reset them, or lift line actions on the floor in question.
+3	The main lighting effect in MAP13 works differently depending on whether your port is emulating vanilla behaviour or Boom behaviour. I focused on getting complevel 2 looking right in prboom+, but the more modern port behaviour isn't horribly broken, whereas if I'd done it the other way around, it would have been.
+4	MAP17 has an explosive special effect early on, but the barrels don't always all teleport, or teleport a bit too late in their explosion. Not a big deal, but something I would've wanted to script if the option was there.
+Tested With		: prboom+ 2.5.1.3, Crispy Doom and GZDoom 4.2.3
+May Not Run With...     : Vanilla Doom II or Chocolate Doom
+
+
+* Demos *
+
+All demos are on Ultra-Violence, recorded using prboom+ 2.5.1.3 in complevel 2
+
+DEMO1			: MAP06 - Demonstrates progression and backtracking; dies at the end - ignores secrets (although I got lucky and got the optional soulsphere by accident)
+DEMO2			: MAP27 - Shows what happens when you don't press the switch, dies, then demonstrates what pressing the switches quickly enough means for progression; dies before showing you how to conquer the central room (you can work that out for yourself, I'm sure!) - ignores secrets
+DEMO3			: MAP15 - How to get to the secret exit. Don't watch this if you want to work it out for yourself! This demo is recorded on a slightly out-of-date version of the map, but still works just fine until the final enemy, where it's been moved and my demo guy dies very ineptly. If you've followed those steps, you'll be locked in to the secret exit path, you lucky devil!
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: https://drive.google.com/drive/folders/1W9YJEHQ_6xt1ldH3Oo3Kh2kvWT70oLDZ
+FTP sites:

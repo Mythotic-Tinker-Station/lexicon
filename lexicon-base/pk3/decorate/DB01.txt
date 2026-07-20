@@ -1,0 +1,9 @@
+ACTOR Lexicon_DB01_DeadStick : DeadStick
+{
+	States
+	{
+	Spawn:
+		LX00 A -1
+		Stop
+	}
+}

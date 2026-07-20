@@ -1,0 +1,98 @@
+Actor Lexicon_URTH_DeadLostSoul : DeadLostSoul
+{
+	Health 50
+	Speed 9
+	Height 56
+	PainChance 160
+	+SOLID
+	+SHOOTABLE
+	+COUNTKILL
+	Monster
+	SeeSound "grunt/sight"
+	AttackSound "weapons/plasmaf"
+	PainSound "grunt/pain"
+	DeathSound "*death"
+	ActiveSound "grunt/active"
+	Obituary "$URTH_OB_DEADLOSTSOUL"
+	Tag "$URTH_TAG_DEADLOSTSOUL"
+	States
+	{
+	Spawn:
+		LW76 AB 5 A_Look
+		loop
+	See:
+		LW76 AABBCCDD 1 A_Chase
+		loop
+	Pain:
+		LW76 H 3 
+		LW76 H 3 A_Pain
+		goto See
+	Missile:
+		LW76 E 3 A_FaceTarget
+		LW76 F 3 A_FaceTarget
+		LW76 G 3 Bright A_BspiAttack
+		LW76 F 2 A_FaceTarget
+		LW76 G 2 Bright A_BspiAttack
+		LW76 F 1 A_SpidRefire
+		goto Missile+1
+	Death:
+		LW76 I 5 
+		LW76 J 5 A_Scream
+		LW76 K 5 A_Fall
+		LW76 L 5 
+		LW76 M -1 
+		stop
+	}
+}
+
+Actor Lexicon_URTH_GibbedMarineExtra : GibbedMarineExtra
+{
+	Health 500
+	Speed 12
+	Radius 64
+	Height 64
+	PainChance 128
+	Mass 400
+	+SOLID
+	+SHOOTABLE
+	+COUNTKILL
+	Monster
+	SeeSound "spider/sight"
+	AttackSound "weapons/shotgf"
+	PainSound "demon/pain"
+	DeathSound "spider/death"
+	ActiveSound "spider/walk"
+	Obituary "$URTH_OB_GIBBEDMARINEEXTRA"
+	Tag "$URTH_TAG_GIBBEDMARINEEXTRA"
+	States
+	{
+	Spawn:
+		LW77 AB 10 A_Look
+		loop
+	See:
+		LW77 A 3 A_Chase
+		LW77 A 3 A_Metal
+		LW77 BB 3 A_Chase
+		LW77 C 3 A_Metal
+		LW77 CD 3 A_Chase
+		LW77 D 3 A_Metal
+		loop
+	Pain:
+		LW77 G 3 
+		LW77 G 3 A_Pain
+		goto See
+	Missile:
+		LW77 E 10 A_FaceTarget
+		LW77 F 4 Bright A_SpidRefire
+		LW77 E 4 Bright A_SPosAttack
+		LW77 F 1 A_SPosAttack
+		goto Missile+1
+	Death:
+		LW77 H 5 
+		LW77 I 5 A_Scream
+		LW77 J 5 A_Fall
+		LW77 KLMNOP 5 
+		LW77 Q -1 
+		stop
+	}
+}

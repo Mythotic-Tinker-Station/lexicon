@@ -1,0 +1,69 @@
+ACTOR Lexicon_DB03_TallRedColumn : TallRedColumn
+{
+	States
+    {
+	Spawn:
+		LX00 B -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_ShortRedColumn : ShortRedColumn
+{
+	States
+	{
+	Spawn:
+		LX00 C -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX00 D -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_HangTLookingDown : HangTLookingDown
+{
+	States
+	{
+	Spawn:
+		LX00 E -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_HangTSkull : HangTSkull 
+{
+	States
+	{
+	Spawn:
+		LX00 F -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_HangTLookingUp : HangTLookingUp
+{
+	States
+	{
+	Spawn:
+		LX00 G -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_DB03_DeadStick : DeadStick
+{
+	States
+	{
+	Spawn:
+		LX00 H -1
+		Stop
+	}
+}

@@ -1,0 +1,181 @@
+===========================================================================
+Advanced engine needed  : Boom-compatible source port with support for sky
+                          transfers (PrBoom+ -cl9, run without complevel to avoid friction bugs on the ice maps)
+Primary purpose         : Single play
+Update to               : Mayhem17.wad
+===========================================================================
+Title                   : Super MAYhem 17 (v1.1)
+Filename                : Mayhem17.wad
+Release date            : February 7th, 2018 (updated Feb 23rd)
+Author                  : A buncha super schmucks
+Email Address           : [redacted]
+Other Files By Author   : Varies by author
+
+Description             : Super Mayhem 17 is a 28 map set based on using assets from the various classic mario
+                          games. Maps were designed in one month with time after for making fixes and quality assurance.
+
+			  mayhem17_updatev1.wad contains a pair of critical fixes for map25, as well as new barrel sprites 
+			  and sound effects for moving platforms.
+
+Music                   : 01 - "Ambient/Djent"
+                          by   ninja.kitty (https://www.ultimate-guitar.com/forum/showthread.php?t=1523228)
+
+                        : 02 - Yoshi's Desert - Mario Kart: Super Circuit
+                          by   Minako Hamano, Masanobu Matsunaga, Kenichi Nishimaki, Kenji Yamamoto
+
+                        : 03 - Water's Edge (sonic 06)
+                          by   Tomoya Ohtani, Mariko Nanba, sequenced by Sc00ts
+
+                        : 04 - Mint rock glow
+                          by   queenjazz
+
+                        : 05 - Final Fantasy Legend III - The Dungeon Theme
+                          by   Ryuuji Sasai
+
+                        : 06 - Airship Theme (SMB3)
+                          by   Koji Kondo
+
+                        : 07 - Ska-p - Sectas
+                          by   ???
+
+                        : 08 - Desk Lamp
+                          by   Stuart "Stewboy" Rynn
+
+                        : 09 - Duck Tales 2 - Egyptian Pyramid
+                          by   Minae Fujii, Sequenced by TurquoiseStar
+
+                        : 10 - unknown
+
+                        : 11 - Equinox Map02
+                          by   ???
+
+                        : 12 - Forest Maze (super mario RPG)
+                          by   Yoko Shimomura
+
+                          Super mario World - Overworld theme
+                               Koji Kondo
+
+                        : 13 - Koopa's Road (Mario 64)
+                          by   Koji Kondo
+
+                        : 14 - Phendrana Drifts (Metroid Prime)
+                          by   Kenji Yamamoto & Kouichi Kyuma
+
+                        : 15 - Slam Shuffle (Final Fantasy 6)
+                          by   Nobuo Uematsu
+
+                        : 16 - Lawnmower Marmalade
+                          by   James Paddock
+
+                        : 17 - Super Mario Kart Super Circuit - Ribbon Road
+                          by   Nintendo, sequenced by Sean Bee
+
+                        : 18 - Super Mario Bros. - Castle (Techno Gabber remix)
+                          by   Nintendo, Remixed by someBODY
+
+                        : 19 - Melty Molten Galaxy (super mario galaxy)
+                          by   Mahito Yokota, sequenced by sonicfan113
+
+                        : 20 - Meteor Spacecraft
+                          by   Chex Quest 3
+
+                        : 21 - Rainbow Road (Mario Kart)
+                          by   Soyo Oka
+
+                        : 22 - Super mario bros 3 Overworld
+                          by   Koji Kondo 
+
+                          Super Mario 3 Underground Music
+                          Nintendo, Sequenced by erik@vbe.com
+
+                        : 23 - Manta Storm (Super Mario Sunshine)
+                          by   Koji Kondo & Shinobu Tanaka, arranged by BowzerBonz
+
+                        : 24 - Overworld (Haunted Remix) (Super mario world)
+                          by   Nintendo, sequenced by Zagro
+
+                        : 25 - Bloody tears (castlevania 2)
+                          by   Kenichi Matsubara, edited by David Esposito
+
+                        : 26 - Mario Kart 64: Bowser's Castle 
+                          by   Nintendo, Remix by Jarel Jones
+
+                          Bowser's Rage (Paper mario)
+                          Yuka Tsujiyoko
+
+                        : 31 - Super Mario Bros 2 overworld
+                          by   Koji Kondo
+
+                        : 32 - Overworld Theme (Super mario land)
+                          by   Hirokazu Tanaka
+
+                          Story Screen - Mario Paint BG2
+                          by Alluro95
+
+                          Others taken from various Mario games
+
+
+Additional Credits to   : Nintendo for various graphics, rf` for sprites, Fuzzball for
+                          Menu gfx, Gothic for screens, leodoom85 for endpic\endmap.
+                          Alfonzo for music edits. Jimmy for fonts. Obsidian for boss
+                          DEHACKED. xxkaijuking91xx for Bowser spritesheet.
+
+Testing -               : MrZzul, Kingdime, Loveless, Memfis, rdwpa, Nine inch Heels,
+                          kondoriyano, floatrand, Altazimuth, Edward850, Zdaemon TNS team
+
+The Doulminati for emotional terrorism\technical support. 
+
+If I missed you somehow let me know because I can update this textfile any time.
+
+===========================================================================
+* What is included *
+
+New levels              : 29 (including outro level)
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : MAPINFO, MUSINFO, Hi-res PNG endpic, post-release bugfix wad
+Other files required    : Nope
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-26, 31-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : All maps were made in the space of one month, disregarding tweaks.
+Editor(s) used          : Doom Builder X, SLADE 3, GIMP
+Known Bugs              : The ice maps and chocolate starfish islands will not work properly
+                          if you load them from a save, use -complevel 11 or run PrBoom+ 
+                          without -complevel to avoid issues.
+May Not Run With...     : Vanilla Doom, any port that doesn't support sky
+                          transfers or Boom features
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse, with the exception of the textures\sprites. Permissions have been 
+obtained from original authors for any of their resources modified or
+included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

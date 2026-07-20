@@ -1,0 +1,117 @@
+Texture "TWN10091", 128, 128
+{
+	Patch "TWN10253", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "TWN10254", 96, 0
+	Patch "TWN10253", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "TWN10254", 96, 64
+}
+Texture "TWN10093", 128, 128
+{
+	Patch "TWN10078", 0, 0
+	Patch "TWN10078", 64, 0
+	Patch "TWN10250", 0, 0
+}
+Texture "TWN10095", 128, 128
+{
+	Patch "TWN10081", 0, 0
+	Patch "TWN10081", 64, 0
+	Patch "TWN10250", 0, 0
+}
+Texture "TWN10104", 64, 128
+{
+	Patch "RW26_1", 0, 47
+	Patch "RW24_4", 0, -33
+}
+Texture "TWN10115", 64, 128
+{
+	Patch "TWN10267", 0, 0
+	Patch "TWN10267", 0, 32
+	Patch "TWN10267", 0, 64
+	Patch "TWN10267", 0, 96
+}
+Texture "TWN10126", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "TWN10274", 0, 0
+}
+Texture "TWN10127", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "TWN10275", 5, 0
+	Patch "TWN10275", 35, 0
+}
+Texture "TWN10128", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "TWN10130", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "TWN10275", 4, 18
+	Patch "TWN10275", 38, 18
+}
+Texture "TWN10131", 16, 128
+{
+	Patch "TWN10277", -4, 56
+	Patch "TWN10277", -4, 0
+}
+Texture "TWN10181", 64, 128
+{
+	Patch "SW11_4", 0, 0
+	Patch "TWN10308", 32, 0
+}
+Texture "TWN10185", 32, 16
+{
+	Patch "TWN10186", 0, 8
+	Patch "TWN10186", 0, 5
+	Patch "STEP04", 0, 0
+}
+Texture "TWN10189", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "TWN10190", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "TWN10194", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "TWN10195", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "TWN10196", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "TWN10217", 64, 128
+{
+	Patch "TWN10216", -192, 0
+	Patch "SW2_2", 22, 18
+	Patch "SW2_1", 22, 76
+}

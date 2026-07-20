@@ -125,6 +125,7 @@ map SD709 lookup "Do You Believe?"
 {
 	titlepatch = "SD7LV07"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SD7SKY1"
 	par = 120
@@ -142,6 +143,7 @@ map SD731 lookup "Hopscotch"
 {
 	titlepatch = "SD7LV30"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SD7SKY1"
 	cluster = 9
@@ -159,6 +161,7 @@ map SD732 lookup "Issai Perfect"
 {
 	titlepatch = "SD7LV31"
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SD7SKY1"
 	cluster = 9

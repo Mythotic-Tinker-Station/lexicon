@@ -1,0 +1,394 @@
+// DWANGO11 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW1101 "Crossroads"
+{
+	titlepatch = "DW11V00"
+	next = "DW1102"
+	secretnext = "DW1102"
+	sky1 = "DW110004"
+	music = "D_DW1101"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1102 "The Underdark"
+{
+	titlepatch = "DW11V01"
+	next = "DW1103"
+	secretnext = "DW1103"
+	sky1 = "DW110004"
+	music = "D_DW1102"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1103 "DV II"
+{
+	titlepatch = "DW11V02"
+	next = "DW1104"
+	secretnext = "DW1104"
+	sky1 = "DW110004"
+	music = "D_DW1103"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1104 "Limbo"
+{
+	titlepatch = "DW11V03"
+	next = "DW1105"
+	secretnext = "DW1105"
+	sky1 = "DW110004"
+	music = "D_DW1104"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1105 "Misery"
+{
+	titlepatch = "DW11V04"
+	next = "DW1106"
+	secretnext = "DW1106"
+	sky1 = "DW110004"
+	music = "D_DW1105"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1106 "Backlash"
+{
+	titlepatch = "DW11V05"
+	next = "DW1107"
+	secretnext = "DW1107"
+	sky1 = "DW110004"
+	music = "D_DW1106"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1107 "Bware"
+{
+	titlepatch = "DW11V06"
+	next = "DW1108"
+	secretnext = "DW1108"
+	sky1 = "DW110004"
+	music = "D_DW1107"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+	Map07Special
+}
+
+map DW1108 "Misery II"
+{
+	titlepatch = "DW11V07"
+	next = "DW1109"
+	secretnext = "DW1109"
+	sky1 = "DW110004"
+	music = "D_DW1108"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1109 "UAC Outpost"
+{
+	titlepatch = "DW11V08"
+	next = "DW1110"
+	secretnext = "DW1110"
+	sky1 = "DW110004"
+	music = "D_DW1109"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1110 "Bengal's Lair"
+{
+	titlepatch = "DW11V09"
+	next = "DW1111"
+	secretnext = "DW1111"
+	sky1 = "DW110004"
+	music = "D_DW1110"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1111 "Toxic Dumps"
+{
+	titlepatch = "DW11V10"
+	next = "DW1112"
+	secretnext = "DW1112"
+	sky1 = "DW110004"
+	music = "D_DW1111"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1112 "Deja Vu"
+{
+	titlepatch = "DW11V11"
+	next = "DW1113"
+	secretnext = "DW1113"
+	sky1 = "DW110005"
+	music = "D_DW1112"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1113 "Landscape"
+{
+	titlepatch = "DW11V12"
+	next = "DW1114"
+	secretnext = "DW1114"
+	sky1 = "DW110005"
+	music = "D_DW1113"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1114 "Bengal's Den"
+{
+	titlepatch = "DW11V13"
+	next = "DW1115"
+	secretnext = "DW1115"
+	sky1 = "DW110005"
+	music = "D_DW1114"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1115 "The Pit"
+{
+	titlepatch = "DW11V14"
+	next = "DW1116"
+	secretnext = "DW1116"
+	sky1 = "DW110005"
+	music = "D_DW1115"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1116 "RDM1"
+{
+	titlepatch = "DW11V15"
+	next = "DW1117"
+	secretnext = "DW1117"
+	sky1 = "DW110005"
+	music = "D_DW1116"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1117 "The Stronghold"
+{
+	titlepatch = "DW11V16"
+	next = "DW1118"
+	secretnext = "DW1118"
+	sky1 = "DW110005"
+	music = "D_DW1117"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1118 "The Courtyard"
+{
+	titlepatch = "DW11V17"
+	next = "DW1119"
+	secretnext = "DW1119"
+	sky1 = "DW110005"
+	music = "D_DW1118"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1119 "Speed"
+{
+	titlepatch = "DW11V18"
+	next = "DW1120"
+	secretnext = "DW1120"
+	sky1 = "DW110005"
+	music = "D_DW1119"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1120 "Tourniquet"
+{
+	titlepatch = "DW11V19"
+	next = "DW1121"
+	secretnext = "DW1121"
+	sky1 = "DW110005"
+	music = "$MUSIC_MESSAG"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1121 "Nirvana"
+{
+	titlepatch = "DW11V20"
+	next = "DW1122"
+	secretnext = "DW1122"
+	sky1 = "DW110006"
+	music = "D_DW1121"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1122 "Omen-X"
+{
+	titlepatch = "DW11V21"
+	next = "DW1123"
+	secretnext = "DW1123"
+	sky1 = "DW110006"
+	music = "D_DW1122"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1123 "Misery III"
+{
+	titlepatch = "DW11V22"
+	next = "DW1124"
+	secretnext = "DW1124"
+	sky1 = "DW110006"
+	music = "D_DW1123"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1124 "The Outskirts"
+{
+	titlepatch = "DW11V23"
+	next = "DW1125"
+	secretnext = "DW1125"
+	sky1 = "DW110006"
+	music = "D_DW1124"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1125 "The Plateau"
+{
+	titlepatch = "DW11V24"
+	next = "DW1126"
+	secretnext = "DW1126"
+	sky1 = "DW110006"
+	music = "D_DW1125"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1126 "Mindphuck"
+{
+	titlepatch = "DW11V25"
+	next = "DW1127"
+	secretnext = "DW1127"
+	sky1 = "DW110006"
+	music = "D_DW1126"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1127 "The Lost Chambers"
+{
+	titlepatch = "DW11V26"
+	next = "DW1128"
+	secretnext = "DW1128"
+	sky1 = "DW110006"
+	music = "D_DW1127"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1128 "XLR8"
+{
+	titlepatch = "DW11V27"
+	next = "DW1129"
+	secretnext = "DW1129"
+	sky1 = "DW110006"
+	music = "D_DW1128"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1129 "Tourniquet II"
+{
+	titlepatch = "DW11V28"
+	next = "DW1130"
+	secretnext = "DW1130"
+	sky1 = "DW110006"
+	music = "D_DW1129"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1130 "Crossfire"
+{
+	titlepatch = "DW11V29"
+	next = "DW1131"
+	secretnext = "DW1131"
+	sky1 = "DW110006"
+	music = "D_DW1130"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+	allowmonstertelefrags
+}
+
+map DW1131 "The Outback"
+{
+	titlepatch = "DW11V30"
+	next = "DW1132"
+	secretnext = "DW1132"
+	sky1 = "DW110006"
+	music = "D_DW1110"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}
+
+map DW1132 "The Castle"
+{
+	titlepatch = "DW11V31"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DW110006"
+	music = "D_DW1132"
+	intermusic = "D_DW11IN"
+	ExitPic = "DW11INT"
+	EnterPic = "DW11INT"
+}

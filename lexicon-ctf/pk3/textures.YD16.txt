@@ -1,0 +1,771 @@
+Texture "YD160616", 64, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+}
+Texture "YD160617", 64, 128
+{
+	Patch "YD163111", 0, 0
+	Patch "YD163111", 0, 64
+}
+Texture "YD160620", 256, 128
+{
+	Patch "YD163114", 32, 0
+	Patch "YD163116", 96, 0
+	Patch "YD163112", 160, 0
+	Patch "YD163113", 0, 64
+	Patch "YD163115", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "YD163102", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "YD163112", 0, 0
+}
+Texture "YD160634", 16, 128
+{
+	Patch "YD162521", 0, 0
+	Patch "YD162522", 8, 0
+	Patch "YD162523", 8, 0
+	Patch "YD162521", 0, 8
+	Patch "YD162523", 8, 8
+	Patch "YD162521", 0, 16
+	Patch "YD162523", 8, 16
+	Patch "YD162521", 0, 24
+	Patch "YD162523", 8, 24
+	Patch "YD162521", 0, 32
+	Patch "YD162523", 8, 32
+	Patch "YD162521", 0, 40
+	Patch "YD162523", 8, 40
+	Patch "YD162521", 0, 48
+	Patch "YD162523", 8, 48
+	Patch "YD162521", 0, 56
+	Patch "YD162523", 8, 56
+	Patch "YD162521", 0, 64
+	Patch "YD162523", 8, 64
+	Patch "YD162521", 0, 72
+	Patch "YD162523", 8, 72
+	Patch "YD162521", 0, 80
+	Patch "YD162523", 8, 80
+	Patch "YD162521", 0, 88
+	Patch "YD162523", 8, 88
+	Patch "YD162521", 0, 96
+	Patch "YD162523", 8, 96
+	Patch "YD162521", 0, 104
+	Patch "YD162523", 8, 104
+	Patch "YD162521", 0, 112
+	Patch "YD162523", 8, 112
+	Patch "YD162521", 0, 120
+	Patch "YD162523", 8, 120
+}
+Texture "YD160645", 256, 128
+{
+	Patch "YD163077", 0, 0
+	Patch "YD163078", 64, 0
+	Patch "YD163079", 128, 0
+	Patch "YD163080", 192, 0
+}
+Texture "YD160648", 64, 16
+{
+	Patch "YD164073", 0, 0
+	Patch "YD164073", 0, 8
+}
+Texture "YD160649", 128, 128
+{
+	Patch "YD163117", 0, 64
+	Patch "YD163117", 64, 0
+	Patch "YD163118", 0, 0
+	Patch "YD163118", 64, 64
+}
+Texture "YD160650", 128, 128
+{
+	Patch "YD163120", 0, 0
+	Patch "YD163119", 0, 64
+	Patch "YD163120", 64, 64
+	Patch "YD163119", 64, 0
+}
+Texture "YD160651", 64, 128
+{
+	Patch "YD163081", 40, 0
+	Patch "YD163081", 0, 0
+	Patch "YD163081", 19, 0
+}
+Texture "YD160652", 64, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+	Patch "SW2_7", 14, 66
+}
+Texture "YD160658", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "YD162736", 15, 18
+}
+Texture "YD160660", 64, 128
+{
+	Patch "WALL00_7", 32, 0
+	Patch "WALL00_6", 16, 0
+	Patch "YD162736", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+}
+Texture "YD160662", 64, 128
+{
+	Patch "YD163077", 0, 0
+	Patch "SW2_7", 12, 66
+}
+Texture "YD160672", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "YD163101", 20, 79
+}
+Texture "YD160674", 64, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+	Patch "SW2_8", 14, 66
+}
+Texture "YD160680", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "YD162738", 15, 18
+}
+Texture "YD160682", 64, 128
+{
+	Patch "WALL00_8", 48, 0
+	Patch "WALL00_7", 32, 0
+	Patch "WALL00_6", 16, 0
+	Patch "WALL00_5", 0, -1
+	Patch "YD162738", 16, 20
+}
+Texture "YD160684", 64, 128
+{
+	Patch "YD163077", 0, 0
+	Patch "SW2_8", 12, 66
+}
+Texture "YD160694", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "YD163100", 20, 79
+}
+Texture "YD160708", 64, 128
+{
+	Patch "YD163716", 0, 0
+	Patch "YD163716", 0, 64
+}
+Texture "YD160892", 128, 128
+{
+	Patch "YD160889", 0, 0
+	Patch "YD162634", 99, 120
+	Patch "YD162634", 67, 120
+	Patch "YD162634", 35, 120
+	Patch "YD162634", 3, 120
+}
+Texture "YD160895", 128, 128
+{
+	Patch "YD160889", 0, 0
+	Patch "YD162637", 99, 120
+	Patch "YD162637", 67, 120
+	Patch "YD162637", 35, 120
+	Patch "YD162637", 3, 120
+}
+Texture "YD160934", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W107_1", 0, 0
+}
+Texture "YD160946", 64, 128
+{
+	Patch "YD163122", 0, 0
+	Patch "YD163122", 32, 64
+	Patch "YD163122", -32, 64
+}
+Texture "YD160973", 256, 128
+{
+	Patch "YD163103", 0, 0
+	Patch "YD163104", 64, 0
+	Patch "YD163106", 128, 0
+	Patch "YD163105", 192, 0
+	Patch "YD163108", 0, 64
+	Patch "YD163110", 64, 64
+	Patch "YD163109", 128, 64
+	Patch "YD163107", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "YD161000", 64, 128
+{
+	Patch "YD162743", 0, 0
+	Patch "YD162740", 0, 64
+}
+Texture "YD161008", 128, 128
+{
+	Patch "YD162768", 0, 0
+	Patch "YD162767", 0, 66
+	Patch "YD162767", 64, 0
+	Patch "YD162769", 64, 66
+}
+Texture "YD161009", 128, 128
+{
+	Patch "YD162952", 64, 66
+	Patch "YD162954", 0, 66
+	Patch "YD162953", 0, 0
+	Patch "YD162952", 64, 0
+}
+Texture "YD161017", 64, 128
+{
+	Patch "YD162746", 0, 0
+	Patch "YD162747", 0, 64
+}
+Texture "YD161022", 64, 128
+{
+	Patch "YD162787", 0, 0
+	Patch "YD162787", 0, 64
+}
+Texture "YD161025", 64, 128
+{
+	Patch "YD162790", 0, 0
+	Patch "YD162790", 0, 112
+	Patch "YD162790", 0, 96
+	Patch "YD162790", 0, 80
+	Patch "YD162790", 0, 64
+	Patch "YD162790", 0, 48
+	Patch "YD162790", 0, 32
+	Patch "YD162790", 0, 16
+}
+Texture "YD161036", 128, 128
+{
+	Patch "YD162747", 64, 0
+	Patch "YD162747", 0, 64
+	Patch "YD162746", 0, 0
+	Patch "YD162746", 64, 64
+	Patch "YD162929", 0, 0
+	Patch "YD162929", 0, 64
+	Patch "YD162930", 96, 64
+	Patch "YD162930", 96, 0
+}
+Texture "YD161038", 128, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+	Patch "YD162519", 64, 64
+	Patch "YD162520", 64, 0
+	Patch "YD162929", 0, 0
+	Patch "YD162929", 0, 64
+	Patch "YD162930", 96, 64
+	Patch "YD162930", 96, 0
+}
+Texture "YD161066", 64, 128
+{
+	Patch "YD163729", 0, 0
+	Patch "YD163729", 0, 64
+}
+Texture "YD161067", 64, 128
+{
+	Patch "YD163734", 0, 0
+	Patch "YD163734", 0, 64
+}
+Texture "YD161189", 8, 128
+{
+	Patch "YD162985", 0, 0
+	Patch "YD162985", 0, 16
+	Patch "YD162985", 0, 32
+	Patch "YD162985", 0, 48
+	Patch "YD162985", 0, 64
+	Patch "YD162985", 0, 80
+	Patch "YD162985", 0, 96
+	Patch "YD162985", 0, 112
+}
+Texture "YD161197", 8, 128
+{
+	Patch "YD162992", 0, 0
+	Patch "YD162992", 0, 16
+	Patch "YD162992", 0, 32
+	Patch "YD162992", 0, 48
+	Patch "YD162992", 0, 64
+	Patch "YD162992", 0, 80
+	Patch "YD162992", 0, 96
+	Patch "YD162992", 0, 112
+}
+Texture "YD161292", 64, 128
+{
+	Patch "YD163173", 0, 0
+	Patch "YD163173", -32, 64
+	Patch "YD163173", 32, 64
+}
+Texture "YD161294", 64, 128
+{
+	Patch "YD161277", 0, 0
+	Patch "YD163195", 0, 13
+	Patch "YD163195", 0, 45
+	Patch "YD163195", 0, 77
+	Patch "YD163195", 0, 109
+}
+Texture "YD161307", 8, 128
+{
+	Patch "YD163186", 0, 0
+	Patch "YD163186", 0, 64
+}
+Texture "YD161313", 64, 128
+{
+	Patch "YD163207", 0, 0
+	Patch "YD163207", 0, 64
+}
+Texture "YD161314", 64, 128
+{
+	Patch "YD163208", 0, 0
+	Patch "YD163208", 0, 64
+}
+Texture "YD161322", 64, 128
+{
+	Patch "YD163146", 0, 0
+	Patch "YD163146", 0, 64
+}
+Texture "YD161347", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+}
+Texture "YD161363", 128, 128
+{
+	Patch "YD161361", 0, 0
+	Patch "YD163260", 0, 0
+}
+Texture "YD161364", 128, 128
+{
+	Patch "YD161360", 0, 0
+	Patch "YD163260", 0, 0
+}
+Texture "YD161366", 128, 128
+{
+	Patch "YD161361", 0, 0
+	Patch "YD163261", 0, 0
+}
+Texture "YD161383", 128, 128
+{
+	Patch "YD163234", 0, 0
+	Patch "YD163234", 64, 8
+	Patch "YD163236", 0, 0
+}
+Texture "YD161388", 128, 128
+{
+	Patch "YD163234", 0, 0
+	Patch "YD163234", 64, 8
+	Patch "YD163241", 0, 0
+}
+Texture "YD161395", 128, 128
+{
+	Patch "YD163234", 8, 0
+	Patch "YD163234", 56, 8
+	Patch "YD163219", 0, 0
+}
+Texture "YD161402", 64, 128
+{
+	Patch "YD163248", 0, 0
+	Patch "YD163224", 0, 0
+	Patch "YD161374", 0, 64
+}
+Texture "YD161403", 64, 128
+{
+	Patch "YD163248", 0, 0
+	Patch "YD163235", 0, 0
+}
+Texture "YD161464", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "YD162932", 4, 18
+	Patch "YD162932", 38, 18
+}
+Texture "YD161465", 16, 128
+{
+	Patch "YD163766", -4, 56
+	Patch "YD163766", -4, 0
+}
+Texture "YD161467", 16, 128
+{
+	Patch "YD162912", 0, 0
+	Patch "YD162912", 0, 56
+}
+Texture "YD161473", 32, 128
+{
+	Patch "YD163349", 16, 0
+	Patch "YD163350", 24, 0
+	Patch "YD163349", 16, 8
+	Patch "YD163350", 24, 8
+	Patch "YD163349", 16, 16
+	Patch "YD163350", 24, 16
+	Patch "YD163349", 16, 24
+	Patch "YD163350", 24, 24
+	Patch "YD163349", 16, 32
+	Patch "YD163350", 24, 32
+	Patch "YD163349", 16, 40
+	Patch "YD163350", 24, 40
+	Patch "YD163349", 16, 48
+	Patch "YD163350", 24, 48
+	Patch "YD163349", 16, 56
+	Patch "YD163350", 24, 56
+	Patch "YD163349", 16, 64
+	Patch "YD163350", 24, 64
+	Patch "YD163349", 16, 72
+	Patch "YD163350", 24, 72
+	Patch "YD163349", 16, 80
+	Patch "YD163350", 24, 80
+	Patch "YD163349", 16, 88
+	Patch "YD163350", 24, 88
+	Patch "YD163349", 16, 96
+	Patch "YD163350", 24, 96
+	Patch "YD163349", 16, 104
+	Patch "YD163350", 24, 104
+	Patch "YD163349", 16, 112
+	Patch "YD163350", 24, 112
+	Patch "YD163349", 16, 120
+	Patch "YD163350", 24, 120
+	Patch "YD163349", 8, 64
+	Patch "YD163349", 8, 72
+	Patch "YD163349", 8, 80
+	Patch "YD163349", 8, 88
+	Patch "YD163349", 8, 96
+	Patch "YD163349", 8, 104
+	Patch "YD163349", 8, 112
+	Patch "YD163349", 8, 120
+	Patch "YD163348", 0, 0
+	Patch "YD163348", 0, 120
+	Patch "YD163348", 0, 112
+	Patch "YD163348", 0, 104
+	Patch "YD163348", 0, 96
+	Patch "YD163348", 0, 88
+	Patch "YD163348", 0, 80
+	Patch "YD163348", 0, 72
+	Patch "YD163348", 0, 64
+	Patch "YD163348", 0, 56
+	Patch "YD163348", 0, 48
+	Patch "YD163348", 0, 40
+	Patch "YD163348", 0, 32
+	Patch "YD163348", 0, 24
+	Patch "YD163348", 0, 16
+	Patch "YD163348", 0, 8
+	Patch "YD163349", 8, 56
+	Patch "YD163349", 8, 48
+	Patch "YD163349", 8, 40
+	Patch "YD163349", 8, 32
+	Patch "YD163349", 8, 24
+	Patch "YD163349", 8, 16
+	Patch "YD163349", 8, 8
+	Patch "YD163349", 8, 0
+}
+Texture "YD161489", 16, 128
+{
+	Patch "YD162951", -4, 56
+	Patch "YD162951", -4, 0
+}
+Texture "YD161492", 16, 128
+{
+	Patch "YD163356", 0, 0
+	Patch "YD163356", 0, 56
+}
+Texture "YD161493", 16, 128
+{
+	Patch "YD163342", 0, 0
+	Patch "YD163344", 8, 0
+	Patch "YD163342", 0, 8
+	Patch "YD163344", 8, 8
+	Patch "YD163342", 0, 16
+	Patch "YD163344", 8, 16
+	Patch "YD163342", 0, 24
+	Patch "YD163344", 8, 24
+	Patch "YD163342", 0, 32
+	Patch "YD163344", 8, 32
+	Patch "YD163342", 0, 40
+	Patch "YD163344", 8, 40
+	Patch "YD163342", 0, 48
+	Patch "YD163344", 8, 48
+	Patch "YD163342", 0, 56
+	Patch "YD163344", 8, 56
+	Patch "YD163342", 0, 64
+	Patch "YD163344", 8, 64
+	Patch "YD163342", 0, 72
+	Patch "YD163344", 8, 72
+	Patch "YD163342", 0, 80
+	Patch "YD163344", 8, 80
+	Patch "YD163342", 0, 88
+	Patch "YD163344", 8, 88
+	Patch "YD163342", 0, 96
+	Patch "YD163344", 8, 96
+	Patch "YD163342", 0, 104
+	Patch "YD163344", 8, 104
+	Patch "YD163342", 0, 112
+	Patch "YD163344", 8, 112
+	Patch "YD163342", 0, 120
+	Patch "YD163344", 8, 120
+}
+Texture "YD161494", 32, 128
+{
+	Patch "YD163343", 16, 0
+	Patch "YD163344", 24, 0
+	Patch "YD163343", 16, 8
+	Patch "YD163344", 24, 8
+	Patch "YD163343", 16, 16
+	Patch "YD163344", 24, 16
+	Patch "YD163343", 16, 24
+	Patch "YD163344", 24, 24
+	Patch "YD163343", 16, 32
+	Patch "YD163344", 24, 32
+	Patch "YD163343", 16, 40
+	Patch "YD163344", 24, 40
+	Patch "YD163343", 16, 48
+	Patch "YD163344", 24, 48
+	Patch "YD163343", 16, 56
+	Patch "YD163344", 24, 56
+	Patch "YD163343", 16, 64
+	Patch "YD163344", 24, 64
+	Patch "YD163343", 16, 72
+	Patch "YD163344", 24, 72
+	Patch "YD163343", 16, 80
+	Patch "YD163344", 24, 80
+	Patch "YD163343", 16, 88
+	Patch "YD163344", 24, 88
+	Patch "YD163343", 16, 96
+	Patch "YD163344", 24, 96
+	Patch "YD163343", 16, 104
+	Patch "YD163344", 24, 104
+	Patch "YD163343", 16, 112
+	Patch "YD163344", 24, 112
+	Patch "YD163343", 16, 120
+	Patch "YD163344", 24, 120
+	Patch "YD163343", 8, 64
+	Patch "YD163343", 8, 72
+	Patch "YD163343", 8, 80
+	Patch "YD163343", 8, 88
+	Patch "YD163343", 8, 96
+	Patch "YD163343", 8, 104
+	Patch "YD163343", 8, 112
+	Patch "YD163343", 8, 120
+	Patch "YD163342", 0, 0
+	Patch "YD163342", 0, 120
+	Patch "YD163342", 0, 112
+	Patch "YD163342", 0, 104
+	Patch "YD163342", 0, 96
+	Patch "YD163342", 0, 88
+	Patch "YD163342", 0, 80
+	Patch "YD163342", 0, 72
+	Patch "YD163342", 0, 64
+	Patch "YD163342", 0, 56
+	Patch "YD163342", 0, 48
+	Patch "YD163342", 0, 40
+	Patch "YD163342", 0, 32
+	Patch "YD163342", 0, 24
+	Patch "YD163342", 0, 16
+	Patch "YD163342", 0, 8
+	Patch "YD163343", 8, 56
+	Patch "YD163343", 8, 48
+	Patch "YD163343", 8, 40
+	Patch "YD163343", 8, 24
+	Patch "YD163343", 8, 32
+	Patch "YD163343", 8, 16
+	Patch "YD163343", 8, 8
+	Patch "YD163343", 8, 0
+}
+Texture "YD161718", 64, 128
+{
+	Patch "YD163519", 0, 0
+	Patch "YD163519", 32, 64
+	Patch "YD163519", -32, 64
+}
+Texture "YD161755", 128, 128
+{
+	Patch "YD161754", 0, 0
+	Patch "YD163566", 0, 14
+}
+Texture "YD161756", 128, 128
+{
+	Patch "YD161754", 0, 0
+	Patch "YD163565", 0, 14
+}
+Texture "YD161871", 128, 128
+{
+	Patch "YD162914", 0, 56
+	Patch "YD162915", 64, 56
+	Patch "YD162914", 0, 0
+	Patch "YD162915", 64, 0
+}
+Texture "YD161872", 128, 128
+{
+	Patch "YD163767", 0, 56
+	Patch "YD163768", 64, 56
+	Patch "YD163767", 0, 0
+	Patch "YD163768", 64, 0
+}
+Texture "YD161873", 128, 128
+{
+	Patch "YD163770", 0, 56
+	Patch "YD163770", 0, 0
+	Patch "YD163771", 64, 56
+	Patch "YD163771", 64, 0
+}
+Texture "YD161908", 64, 128
+{
+	Patch "YD163721", 0, 0
+	Patch "YD163721", 0, 64
+}
+Texture "YD161916", 64, 128
+{
+	Patch "YD163733", 0, 0
+	Patch "YD163733", 0, 64
+}
+Texture "YD161921", 64, 128
+{
+	Patch "YD163679", 0, 0
+	Patch "YD163679", 0, 64
+}
+Texture "YD161998", 256, 128
+{
+	Patch "YD162947", 0, 0
+	Patch "YD162948", 128, 0
+}
+Texture "YD162004", 128, 128
+{
+	Patch "YD162943", -12, 0
+	Patch "YD162943", 116, 0
+}
+Texture "YD162005", 128, 128
+{
+	Patch "YD162944", -4, 0
+	Patch "YD162944", 124, 0
+}
+Texture "YD162130", 256, 128
+{
+	Patch "YD163406", 0, 0
+	Patch "YD163407", 64, 0
+	Patch "YD163408", 128, 0
+	Patch "YD163409", 192, 0
+}
+Texture "YD162148", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "YD162149", 256, 16
+{
+	Patch "YD164074", 0, 0
+	Patch "YD164074", 56, 0
+	Patch "YD164074", 112, 0
+	Patch "YD164074", 168, 0
+	Patch "YD164074", 223, 0
+}
+Texture "YD162151", 32, 16
+{
+	Patch "YD164058", 0, 0
+	Patch "YD164060", 0, 8
+}
+Texture "YD162155", 32, 16
+{
+	Patch "YD164060", 0, 0
+	Patch "YD164060", 0, 8
+}
+Texture "YD162157", 32, 16
+{
+	Patch "YD164068", 0, 0
+	Patch "YD164069", 0, 8
+}
+Texture "YD162158", 32, 16
+{
+	Patch "YD164061", 0, 0
+	Patch "YD164062", 0, 8
+}
+Texture "YD162258", 64, 128
+{
+	Patch "YD164109", 0, 0
+	Patch "YD162250", 24, 0
+	Patch "YD164109", 40, 0
+}
+Texture "YD162299", 64, 128
+{
+	Patch "YD164141", 0, 0
+	Patch "YD162276", 24, 0
+	Patch "YD164141", 40, 0
+}
+Texture "YD162307", 64, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+	Patch "YD164241", 12, 64
+}
+Texture "YD162313", 64, 128
+{
+	Patch "YD163077", 0, 0
+	Patch "YD164241", 12, 62
+}
+Texture "YD162314", 64, 128
+{
+	Patch "YD163406", 0, 0
+	Patch "YD164241", 12, 62
+}
+Texture "YD162321", 256, 128
+{
+	Patch "YD164230", 0, 0
+	Patch "YD164232", 64, 0
+	Patch "YD164236", 128, 0
+	Patch "YD164234", 192, 0
+}
+Texture "YD162336", 64, 128
+{
+	Patch "YD162519", 0, 0
+	Patch "YD162520", 0, 64
+	Patch "YD164248", 12, 64
+}
+Texture "YD162342", 64, 128
+{
+	Patch "YD163077", 0, 0
+	Patch "YD164248", 12, 62
+}
+Texture "YD162343", 64, 128
+{
+	Patch "YD163406", 0, 0
+	Patch "YD164248", 12, 62
+}
+Texture "YD162350", 256, 128
+{
+	Patch "YD164231", 0, 0
+	Patch "YD164233", 64, 0
+	Patch "YD164237", 128, 0
+	Patch "YD164235", 192, 0
+}
+Texture "YD162419", 64, 128
+{
+	Patch "YD162403", 0, 0
+	Patch "YD164287", 3, 3
+}
+Texture "YD162422", 64, 128
+{
+	Patch "YD162403", 0, 0
+	Patch "YD164290", 3, 3
+}
+Texture "YD162512", 64, 128
+{
+	Patch "YD163726", 0, 0
+	Patch "YD163726", 0, 64
+}
+Texture "YD162514", 64, 128
+{
+	Patch "YD163727", 0, 0
+	Patch "YD163727", 0, 64
+}
+Texture "YD162515", 64, 128
+{
+	Patch "YD163725", 0, 0
+	Patch "YD163725", 0, 64
+}

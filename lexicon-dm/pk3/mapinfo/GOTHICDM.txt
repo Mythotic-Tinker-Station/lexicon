@@ -1,0 +1,299 @@
+// Gothic DeathMatches Mapinfo
+
+defaultmap
+{
+	ExitPic = "GTH1INT"
+	EnterPic = "GTH1INT"
+	InterMusic = "D_GTH1IN"
+	NoJump
+	NoCrouch
+}
+
+map GTH101 "Yesterday's Void"
+{
+	TitlePatch = "GTH1V00"
+	Next = "GTH102"
+	SecretNext = "GTH102"
+	Sky1 = "GTH10173"
+	Music = "D_GTH101"
+}
+
+map GTH102 "Plaza at the End of the World"
+{
+	TitlePatch = "GTH1V01"
+	Next = "GTH103"
+	SecretNext = "GTH103"
+	Sky1 = "GTH10173"
+	Music = "D_GTH102"
+}
+
+map GTH103 "Gopher"
+{
+	TitlePatch = "GTH1V02"
+	Next = "GTH104"
+	SecretNext = "GTH104"
+	Sky1 = "GTH10173"
+	Music = "D_GTH103"
+}
+
+map GTH104 "Lovecraftian DreamScape"
+{
+	TitlePatch = "GTH1V03"
+	Next = "GTH105"
+	SecretNext = "GTH105"
+	Sky1 = "GTH10173"
+	Music = "D_GTH104"
+}
+
+map GTH105 "Father, For I Have Sinned"
+{
+	TitlePatch = "GTH1V04"
+	Next = "GTH106"
+	SecretNext = "GTH106"
+	Sky1 = "GTH10173"
+	Music = "D_GTH105"
+}
+
+map GTH106 "Untitled"
+{
+	TitlePatch = "GTH1V05"
+	Next = "GTH107"
+	SecretNext = "GTH107"
+	Sky1 = "GTH10173"
+	Music = "D_GTH106"
+}
+
+map GTH107 "Necropolis"
+{
+	TitlePatch = "GTH1V06"
+	Next = "GTH108"
+	SecretNext = "GTH108"
+	Sky1 = "GTH10173"
+	Music = "D_GTH107"
+}
+
+map GTH108 "Temple of Dreams"
+{
+	TitlePatch = "GTH1V07"
+	Next = "GTH109"
+	SecretNext = "GTH109"
+	Sky1 = "GTH10173"
+	Music = "D_GTH108"
+}
+
+map GTH109 "Fall of the Medium"
+{
+	TitlePatch = "GTH1V08"
+	Next = "GTH110"
+	SecretNext = "GTH110"
+	Sky1 = "GTH10173"
+	Music = "D_GTH109"
+}
+
+map GTH110 "Out Comes the Evil"
+{
+	TitlePatch = "GTH1V09"
+	Next = "GTH111"
+	SecretNext = "GTH111"
+	Sky1 = "GTH10173"
+	Music = "D_GTH110"
+}
+
+map GTH111 "Final Reclamation"
+{
+	TitlePatch = "GTH1V10"
+	Next = "GTH112"
+	SecretNext = "GTH112"
+	Sky1 = "GTH10173"
+	Music = "D_GTH111"
+}
+
+map GTH112 "Patterned Chaos"
+{
+	TitlePatch = "GTH1V11"
+	Next = "GTH113"
+	SecretNext = "GTH113"
+	Sky1 = "GTH10174"
+	Music = "D_GTH112"
+}
+
+map GTH113 "Tempest"
+{
+	TitlePatch = "GTH1V12"
+	Next = "GTH114"
+	SecretNext = "GTH114"
+	Sky1 = "GTH10174"
+	Music = "D_GTH113"
+}
+
+map GTH114 "Absence of Faith"
+{
+	TitlePatch = "GTH1V13"
+	Next = "GTH115"
+	SecretNext = "GTH115"
+	Sky1 = "GTH10174"
+	Music = "D_GTH114"
+}
+
+map GTH115 "Of Ashes and Wormwood"
+{
+	TitlePatch = "GTH1V14"
+	Next = "GTH116"
+	SecretNext = "GTH131"
+	Sky1 = "GTH10174"
+	Music = "D_GTH115"
+}
+
+map GTH116 "Bastillion"
+{
+	TitlePatch = "GTH1V15"
+	Next = "GTH117"
+	SecretNext = "GTH117"
+	Sky1 = "GTH10174"
+	Music = "D_GTH102"
+}
+
+map GTH117 "Catharsis"
+{
+	TitlePatch = "GTH1V16"
+	Next = "GTH118"
+	SecretNext = "GTH118"
+	Sky1 = "GTH10174"
+	Music = "D_GTH103"
+}
+
+map GTH118 "Necrose Evangelicum"
+{
+	TitlePatch = "GTH1V17"
+	Next = "GTH119"
+	SecretNext = "GTH119"
+	Sky1 = "GTH10174"
+	Music = "D_GTH104"
+}
+
+map GTH119 "Libris Ex Mortis"
+{
+	TitlePatch = "GTH1V18"
+	Next = "GTH120"
+	SecretNext = "GTH120"
+	Sky1 = "GTH10174"
+	Music = "D_GTH105"
+}
+
+map GTH120 "Wasted"
+{
+	TitlePatch = "GTH1V19"
+	Next = "GTH121"
+	SecretNext = "GTH121"
+	Sky1 = "GTH10174"
+	Music = "D_GTH106"
+}
+
+map GTH121 "Creator"
+{
+	TitlePatch = "GTH1V20"
+	Next = "GTH122"
+	SecretNext = "GTH122"
+	Sky1 = "GTH10175"
+	Music = "D_GTH107"
+}
+
+map GTH122 "Destroyer"
+{
+	TitlePatch = "GTH1V21"
+	Next = "GTH123"
+	SecretNext = "GTH123"
+	Sky1 = "GTH10175"
+	Music = "D_GTH108"
+}
+
+map GTH123 "Pinion"
+{
+	TitlePatch = "GTH1V22"
+	Next = "GTH124"
+	SecretNext = "GTH124"
+	Sky1 = "GTH10175"
+	Music = "D_GTH109"
+}
+
+map GTH124 "Ethereal Manifestation"
+{
+	TitlePatch = "GTH1V23"
+	Next = "GTH125"
+	SecretNext = "GTH125"
+	Sky1 = "GTH10175"
+	Music = "D_GTH110"
+}
+
+map GTH125 "Death Glance"
+{
+	TitlePatch = "GTH1V24"
+	Next = "GTH126"
+	SecretNext = "GTH126"
+	Sky1 = "GTH10175"
+	Music = "D_GTH111"
+}
+
+map GTH126 "Lucifer's Flowers"
+{
+	TitlePatch = "GTH1V25"
+	Next = "GTH127"
+	SecretNext = "GTH127"
+	Sky1 = "GTH10175"
+	Music = "D_GTH112"
+}
+
+map GTH127 "Untitled"
+{
+	TitlePatch = "GTH1V26"
+	Next = "GTH128"
+	SecretNext = "GTH128"
+	Sky1 = "GTH10175"
+	Music = "D_GTH113"
+}
+
+map GTH128 "Industrial Revolution"
+{
+	TitlePatch = "GTH1V27"
+	Next = "GTH129"
+	SecretNext = "GTH129"
+	Sky1 = "GTH10175"
+	Music = "D_GTH114"
+}
+
+map GTH129 "Everything Explodes"
+{
+	TitlePatch = "GTH1V28"
+	Next = "GTH130"
+	SecretNext = "GTH130"
+	Sky1 = "GTH10175"
+	Music = "D_GTH115"
+}
+
+map GTH130 "Beyond Good and Evil"
+{
+	TitlePatch = "GTH1V29"
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Sky1 = "GTH10175"
+	Music = "D_GTH108"
+}
+
+map GTH131 "Blood Roses"
+{
+	TitlePatch = "GTH1V30"
+	Next = "GTH116"
+	SecretNext = "GTH132"
+	Sky1 = "GTH10175"
+	Music = "D_GTH109"
+}
+
+map GTH132 "...And Beyond"
+{
+	TitlePatch = "GTH1V31"
+	Next = "GTH116"
+	SecretNext = "GTH116"
+	Sky1 = "GTH10175"
+	Music = "D_GTH101"
+}

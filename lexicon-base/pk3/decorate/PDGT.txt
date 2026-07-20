@@ -1,0 +1,16 @@
+Actor Lexicon_PDGT_WolfensteinSS : WolfensteinSS
+{
+	SeeSound "PDGT/DSSSSIT"
+	DeathSound "PDGT/DSSSDTH"
+}
+
+Actor Lexicon_PDGT_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("PDGT/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}

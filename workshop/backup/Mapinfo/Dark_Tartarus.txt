@@ -468,6 +468,7 @@ map TAT42 "Beat Doom V0.01"
 map TAT43 "LOCK N' LOAD"
 	{
 	next = "VR"
+	sucktime = 1337
 	secretnext = "VR"
 	sky1 = "SKYML2"
 	intermusic = "D_TATINT"

@@ -1,0 +1,1508 @@
+Texture "TMR10220", 128, 128
+{
+	Patch "TMR10897", 0, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_3", 64, 64
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 64, 0
+}
+Texture "TMR10223", 256, 128
+{
+	Patch "TMR10905", 0, 0
+	Patch "TMR10905", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "TMR10233", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 64, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "TMR10275", 64, 128
+{
+	Patch "TMR10274", 0, 0
+	Patch "TMR10862", 0, 0
+	Patch "TMR10862", 1, 112
+}
+Texture "TMR10276", 64, 96
+{
+	Patch "TMR10274", 0, 0
+	Patch "TMR10862", 0, 80
+	Patch "TMR10862", 0, 0
+}
+Texture "TMR10277", 64, 64
+{
+	Patch "TMR10274", 0, 0
+	Patch "TMR10862", 0, 0
+	Patch "TMR10862", 0, 48
+}
+Texture "TMR10308", 128, 96
+{
+	Patch "RW33_2", -41, 0
+	Patch "RW33_2", 16, 21
+	Patch "RW33_2", -63, 0
+	Patch "DOOR2_1", 17, 0
+	Patch "STEP08", 95, 25
+	Patch "STEP08", 95, 24
+	Patch "STEP08", 95, 41
+	Patch "STEP08", 95, 40
+	Patch "STEP08", 95, 56
+	Patch "STEP08", 95, 55
+	Patch "RW33_4", 16, 64
+	Patch "RW33_4", 48, 64
+	Patch "RW33_3", 80, -104
+	Patch "RW33_3", 16, -104
+	Patch "RW33_1", 112, 0
+	Patch "RW33_1", 127, 0
+}
+Texture "TMR10309", 128, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "RW33_1", 64, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 64, 64
+	Patch "W111_2", 64, 0
+	Patch "W111_3", 0, 0
+	Patch "SW2_1", 53, 51
+}
+Texture "TMR10311", 128, 128
+{
+	Patch "WALL97_2", 0, 0
+	Patch "WALL97_2", 64, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_3", 64, 64
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 64, 0
+}
+Texture "TMR10313", 64, 128
+{
+	Patch "RW34_2", 32, 0
+	Patch "RW34_2", 62, 0
+	Patch "RW34_2", 63, 0
+	Patch "RW34_2", -32, 0
+	Patch "RW34_2", -62, 0
+	Patch "RW34_2", -63, 0
+}
+Texture "TMR10320", 128, 128
+{
+	Patch "RW23_3", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "RW5_4", 64, 32
+	Patch "RW5_3", 0, 32
+}
+Texture "TMR10321", 128, 128
+{
+	Patch "RW23_3", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "W96_1", 0, 32
+	Patch "RW5_4", 64, 40
+	Patch "RW5_3", 0, 40
+}
+Texture "TMR10331", 256, 128
+{
+	Patch "RW10_3", 0, 0
+	Patch "RW10_3", 64, 0
+	Patch "RW10_3", 128, 0
+	Patch "RW10_3", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "TMR10332", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL00_6", 0, 6
+	Patch "WALL00_5", 16, 6
+	Patch "WALL00_7", 32, 6
+	Patch "WALL00_6", 41, 6
+	Patch "WALL00_8", 48, 6
+	Patch "WALL62_1", 0, 64
+	Patch "WALL00_6", 48, 70
+	Patch "WALL00_5", 32, 70
+	Patch "WALL00_7", 0, 70
+	Patch "WALL00_8", 16, 70
+	Patch "WALL00_6", 11, 70
+}
+Texture "TMR10336", 64, 128
+{
+	Patch "RW26_1", 0, 0
+	Patch "RW1_1", 0, 16
+	Patch "RW26_2", 0, 112
+}
+Texture "TMR10337", 128, 128
+{
+	Patch "TMR11075", 0, 0
+	Patch "TMR11076", 64, 0
+}
+Texture "TMR10340", 256, 128
+{
+	Patch "TMR10911", 0, 0
+	Patch "TMR10912", 64, 0
+	Patch "TMR10914", 128, 0
+	Patch "TMR10913", 192, 0
+	Patch "TMR10916", 0, 64
+	Patch "TMR10918", 64, 64
+	Patch "TMR10917", 128, 64
+	Patch "TMR10915", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "TMR10341", 64, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "COMP03_4", -16, 0
+	Patch "COMP03_4", 48, 0
+	Patch "COMP03_4", -16, 64
+	Patch "COMP03_4", 48, 64
+	Patch "COMP03_4", 16, 112
+	Patch "COMP03_4", 16, -48
+}
+Texture "TMR10342", 128, 128
+{
+	Patch "TMR11156", 64, 70
+	Patch "TMR11158", 0, 70
+	Patch "TMR11157", 0, -2
+	Patch "TMR11156", 64, -2
+}
+Texture "TMR10343", 128, 128
+{
+	Patch "TMR10919", 0, 0
+	Patch "TMR10919", 64, 64
+	Patch "TMR10920", 0, 64
+	Patch "TMR10921", 64, 0
+}
+Texture "TMR10344", 128, 128
+{
+	Patch "COMP04_2", 0, 0
+	Patch "COMP04_1", 64, 0
+	Patch "RW46_3", 0, 43
+	Patch "RW46_3", 64, 43
+	Patch "RWDMON7", 0, 96
+	Patch "STEP08", 0, 88
+	Patch "STEP08", 64, 88
+	Patch "STEP08", 32, 88
+	Patch "STEP08", 96, 88
+	Patch "LADDER16", 0, 121
+	Patch "LADDER16", 64, 121
+}
+Texture "TMR10345", 128, 128
+{
+	Patch "TMR10919", 0, 0
+	Patch "TMR10921", 64, 0
+	Patch "TMR10920", 0, 64
+	Patch "TMR10919", 64, 64
+	Patch "TMR10922", 0, 0
+	Patch "TMR10923", 97, 0
+	Patch "TMR10922", 0, 64
+	Patch "TMR10923", 97, 64
+}
+Texture "TMR10346", 128, 128
+{
+	Patch "TMR10924", 0, 0
+	Patch "TMR10926", 64, 0
+	Patch "TMR10925", 0, 64
+	Patch "TMR10924", 64, 64
+	Patch "TMR10922", 0, 0
+	Patch "TMR10923", 97, 0
+	Patch "TMR10922", 0, 64
+	Patch "TMR10923", 97, 64
+}
+Texture "TMR10347", 128, 128
+{
+	Patch "TMR10924", 0, 0
+	Patch "TMR10924", 64, 64
+	Patch "TMR10925", 0, 64
+	Patch "TMR10926", 64, 0
+}
+Texture "TMR10350", 128, 128
+{
+	Patch "TMR10930", 0, 0
+	Patch "TMR10930", 128, 0
+	Patch "TMR10935", 32, 32
+	Patch "TMR10935", 32, 96
+	Patch "TMR10935", 96, 32
+	Patch "TMR10935", 96, 96
+	Patch "TMR10936", 160, 32
+	Patch "TMR10939", 160, 96
+	Patch "TMR10937", 224, 32
+	Patch "TMR10940", 224, 96
+}
+Texture "TMR10351", 64, 128
+{
+	Patch "TMR10931", 0, 0
+	Patch "TMR10929", 0, 64
+	Patch "TMR10929", 128, 64
+	Patch "TMR10941", 15, 15
+	Patch "TMR10941", 15, 47
+	Patch "TMR10945", 143, 15
+	Patch "TMR10943", 143, 47
+	Patch "TMR10941", 47, 15
+	Patch "TMR10941", 47, 47
+	Patch "TMR10946", 175, 15
+	Patch "TMR10944", 175, 47
+	Patch "TMR10943", 79, 15
+	Patch "TMR10941", 79, 47
+	Patch "TMR10947", 207, 15
+	Patch "TMR10945", 207, 47
+	Patch "TMR10944", 111, 15
+	Patch "TMR10942", 111, 47
+	Patch "TMR10948", 239, 15
+	Patch "TMR10946", 239, 47
+	Patch "TMR10936", 32, 96
+	Patch "TMR10939", 160, 96
+	Patch "TMR10938", 96, 96
+	Patch "TMR10940", 224, 96
+}
+Texture "TMR10354", 128, 128
+{
+	Patch "TMR10934", 0, 0
+	Patch "TMR10936", 96, 32
+	Patch "TMR10936", 96, 96
+}
+Texture "TMR10355", 128, 128
+{
+	Patch "TMR10930", 0, 0
+	Patch "TMR10934", 0, 64
+	Patch "TMR10935", 32, 32
+	Patch "TMR10936", 96, 96
+	Patch "TMR10935", 96, 32
+}
+Texture "TMR10363", 64, 96
+{
+	Patch "RW33_1", 0, 0
+	Patch "DOOR12_1", -8, 0
+	Patch "WALL42_3", -17, 0
+	Patch "WALL42_3", 57, 0
+	Patch "W111_2", 0, 47
+	Patch "WALL47_2", 59, 0
+	Patch "WALL47_2", -59, 0
+	Patch "WALL47_2", 0, 49
+	Patch "WALL47_2", 0, -112
+	Patch "WALL42_3", 62, -2
+	Patch "WALL42_3", -22, 0
+	Patch "RW33_1", 0, 88
+	Patch "RW33_1", 0, 95
+	Patch "RW33_1", 0, -120
+}
+Texture "TMR10366", 192, 128
+{
+	Patch "RW41_4", 64, 0
+	Patch "RW41_3", 0, 0
+	Patch "RW41_1", 128, 0
+	Patch "EXIT1", 16, 22
+	Patch "EXIT1", 80, 22
+	Patch "EXIT1", 144, 22
+}
+Texture "TMR10367", 256, 128
+{
+	Patch "RW10_1", 0, 0
+	Patch "WALL62_1", 64, 0
+	Patch "WALL62_2", 128, 0
+	Patch "WALL02_2", 192, 56
+	Patch "WALL02_2", 192, 0
+	Patch "EXIT1", 16, 36
+	Patch "EXIT1", 80, 36
+	Patch "EXIT1", 144, 36
+	Patch "EXIT1", 208, 36
+}
+Texture "TMR10369", 128, 128
+{
+	Patch "W33_5", 64, 0
+	Patch "WALL00_1", 0, 0
+	Patch "W33_7", 64, 64
+	Patch "WALL00_2", 29, 0
+	Patch "EXIT1", 16, 22
+	Patch "EXIT1", 80, 22
+}
+Texture "TMR10370", 256, 128
+{
+	Patch "RW33_1", 64, 0
+	Patch "WALL47_1", 0, 0
+	Patch "WALL42_3", 148, 0
+	Patch "WALL42_3", 128, 0
+	Patch "WALL42_3", 168, 0
+	Patch "WALL03_7", 192, 0
+	Patch "WALL03_7", 192, 64
+	Patch "EXIT1", 16, 22
+	Patch "EXIT1", 80, 22
+	Patch "EXIT1", 144, 22
+	Patch "EXIT1", 208, 22
+}
+Texture "TMR10382", 128, 128
+{
+	Patch "W32_4", 64, 0
+	Patch "W33_7", 0, 64
+	Patch "W32_1", 0, 0
+	Patch "W33_7", 64, 64
+}
+Texture "TMR10383", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "WALL00_3", 0, 0
+	Patch "WALL00_3", 49, 0
+}
+Texture "TMR10384", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "TMR11045", 14, 74
+}
+Texture "TMR10388", 256, 128
+{
+	Patch "W112_1", 0, 0
+	Patch "W112_1", 64, 0
+	Patch "W112_1", 128, 0
+	Patch "W112_1", 192, 0
+	Patch "WALL47_2", 0, 3
+	Patch "WALL47_2", 64, 3
+	Patch "WALL47_2", 128, 3
+	Patch "WALL47_2", 192, 3
+	Patch "W96_1", 0, 4
+	Patch "W96_1", 128, 4
+	Patch "W96_1", 64, 12
+	Patch "W96_1", -64, 12
+	Patch "W96_1", 192, 12
+	Patch "W96_1", 64, 24
+	Patch "W96_1", -64, 24
+	Patch "W96_1", 192, 24
+	Patch "W105_1", 0, 20
+	Patch "W105_1", 128, 20
+	Patch "WALL48_1", 0, 33
+	Patch "WALL48_2", 64, 33
+	Patch "WALL48_3", 128, 33
+	Patch "WALL48_4", 192, 33
+	Patch "RW26_1", 0, 114
+	Patch "RW26_1", 64, 114
+	Patch "RW26_1", 128, 114
+	Patch "RW26_1", 192, 114
+}
+Texture "TMR10414", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "TMR10415", 32, 128
+{
+	Patch "BLITA0", 0, 0
+	Patch "BLITB0", 8, 0
+	Patch "BLITB0", 16, 0
+	Patch "BLITC0", 24, 0
+	Patch "BLITA0", 0, 8
+	Patch "BLITB0", 8, 8
+	Patch "BLITB0", 16, 8
+	Patch "BLITC0", 24, 8
+	Patch "BLITA0", 0, 16
+	Patch "BLITB0", 8, 16
+	Patch "BLITB0", 16, 16
+	Patch "BLITC0", 24, 16
+	Patch "BLITA0", 0, 24
+	Patch "BLITB0", 8, 24
+	Patch "BLITB0", 16, 24
+	Patch "BLITC0", 24, 24
+	Patch "BLITA0", 0, 32
+	Patch "BLITB0", 8, 32
+	Patch "BLITB0", 16, 32
+	Patch "BLITC0", 24, 32
+	Patch "BLITA0", 0, 40
+	Patch "BLITB0", 8, 40
+	Patch "BLITB0", 16, 40
+	Patch "BLITC0", 24, 40
+	Patch "BLITA0", 0, 48
+	Patch "BLITB0", 8, 48
+	Patch "BLITB0", 16, 48
+	Patch "BLITC0", 24, 48
+	Patch "BLITA0", 0, 56
+	Patch "BLITB0", 8, 56
+	Patch "BLITB0", 16, 56
+	Patch "BLITC0", 24, 56
+	Patch "BLITA0", 0, 64
+	Patch "BLITB0", 8, 64
+	Patch "BLITB0", 16, 64
+	Patch "BLITC0", 24, 64
+	Patch "BLITA0", 0, 72
+	Patch "BLITB0", 8, 72
+	Patch "BLITB0", 16, 72
+	Patch "BLITC0", 24, 72
+	Patch "BLITA0", 0, 80
+	Patch "BLITB0", 8, 80
+	Patch "BLITB0", 16, 80
+	Patch "BLITC0", 24, 80
+	Patch "BLITA0", 0, 88
+	Patch "BLITB0", 8, 88
+	Patch "BLITB0", 16, 88
+	Patch "BLITC0", 24, 88
+	Patch "BLITA0", 0, 96
+	Patch "BLITB0", 8, 96
+	Patch "BLITB0", 16, 96
+	Patch "BLITC0", 24, 96
+	Patch "BLITA0", 0, 104
+	Patch "BLITB0", 8, 104
+	Patch "BLITB0", 16, 104
+	Patch "BLITC0", 24, 104
+	Patch "BLITA0", 0, 112
+	Patch "BLITB0", 8, 112
+	Patch "BLITB0", 16, 112
+	Patch "BLITC0", 24, 112
+	Patch "BLITA0", 0, 120
+	Patch "BLITB0", 8, 120
+	Patch "BLITB0", 16, 120
+	Patch "BLITC0", 24, 120
+}
+Texture "TMR10416", 32, 128
+{
+	Patch "WLITA0", 0, 0
+	Patch "WLITB0", 8, 0
+	Patch "WLITB0", 16, 0
+	Patch "WLITC0", 24, 0
+	Patch "BLITA0", 0, 8
+	Patch "BLITA0", 0, 24
+	Patch "BLITA0", 0, 40
+	Patch "BLITA0", 0, 56
+	Patch "BLITB0", 8, 8
+	Patch "BLITB0", 8, 24
+	Patch "BLITB0", 8, 40
+	Patch "BLITB0", 8, 56
+	Patch "BLITB0", 16, 8
+	Patch "BLITC0", 24, 8
+	Patch "BLITB0", 16, 24
+	Patch "BLITB0", 16, 40
+	Patch "BLITB0", 16, 56
+	Patch "BLITC0", 24, 24
+	Patch "BLITC0", 24, 40
+	Patch "BLITC0", 24, 56
+	Patch "WLITA0", 0, 16
+	Patch "WLITA0", 0, 32
+	Patch "WLITA0", 0, 48
+	Patch "WLITA0", 0, 64
+	Patch "WLITA0", 0, 80
+	Patch "WLITA0", 0, 96
+	Patch "WLITA0", 0, 112
+	Patch "WLITC0", 24, 112
+	Patch "WLITC0", 24, 96
+	Patch "WLITC0", 24, 80
+	Patch "WLITC0", 24, 16
+	Patch "WLITC0", 24, 32
+	Patch "WLITC0", 24, 48
+	Patch "WLITC0", 24, 64
+	Patch "WLITB0", 8, 16
+	Patch "WLITB0", 16, 16
+	Patch "WLITB0", 8, 32
+	Patch "WLITB0", 16, 32
+	Patch "WLITB0", 16, 48
+	Patch "WLITB0", 8, 48
+	Patch "WLITB0", 8, 64
+	Patch "WLITB0", 16, 64
+	Patch "WLITB0", 16, 112
+	Patch "WLITB0", 8, 112
+	Patch "WLITB0", 8, 96
+	Patch "WLITB0", 16, 96
+	Patch "WLITB0", 8, 80
+	Patch "WLITB0", 16, 80
+	Patch "BLITA0", 0, 120
+	Patch "BLITC0", 24, 120
+	Patch "BLITC0", 24, 104
+	Patch "BLITC0", 24, 88
+	Patch "BLITC0", 24, 72
+	Patch "BLITA0", 0, 104
+	Patch "BLITA0", 0, 88
+	Patch "BLITA0", 0, 72
+	Patch "BLITB0", 8, 120
+	Patch "BLITB0", 16, 120
+	Patch "BLITB0", 8, 104
+	Patch "BLITB0", 16, 104
+	Patch "BLITB0", 8, 88
+	Patch "BLITB0", 16, 88
+	Patch "BLITB0", 16, 72
+	Patch "BLITB0", 8, 72
+}
+Texture "TMR10419", 16, 128
+{
+	Patch "TMR11155", -4, 56
+	Patch "TMR11155", -4, 0
+}
+Texture "TMR10446", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "RW33_2", 0, 32
+	Patch "RW33_1", 0, 96
+	Patch "RW38_1", 0, 114
+}
+Texture "TMR10447", 128, 128
+{
+	Patch "RW46_3", 0, 0
+	Patch "RW46_3", 64, 0
+	Patch "RW33_3", 0, 64
+	Patch "RW33_2", 64, 64
+}
+Texture "TMR10448", 256, 128
+{
+	Patch "RW33_3", 160, 0
+	Patch "RW33_4", 128, 0
+	Patch "RWDMON7", 145, 64
+	Patch "RW33_2", 0, 0
+	Patch "RW46_3", 64, 0
+	Patch "WALL42_3", 137, 64
+	Patch "RW33_3", 96, 64
+	Patch "RW38_1", 32, 64
+	Patch "RW33_1", 224, 0
+}
+Texture "TMR10450", 64, 16
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL00_7", 44, 2
+	Patch "W96_1", 0, 3
+}
+Texture "TMR10452", 64, 16
+{
+	Patch "RW26_1", 0, 0
+}
+Texture "TMR10453", 128, 128
+{
+	Patch "W112_1", 0, 0
+	Patch "W112_1", 64, 0
+	Patch "WALL47_2", 0, 3
+	Patch "WALL47_2", 64, 3
+	Patch "W96_1", 0, 3
+	Patch "WALL47_1", 0, 16
+	Patch "WALL47_1", 64, 16
+	Patch "WALL42_3", -16, 16
+	Patch "WALL42_3", 52, -113
+	Patch "WALL42_3", 120, 16
+	Patch "WALL62_1", 0, 127
+}
+Texture "TMR10455", 128, 128
+{
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL47_2", 14, 0
+	Patch "WALL47_2", 50, 0
+	Patch "WALL42_6", 16, 12
+	Patch "WALL42_5", 72, 12
+	Patch "WALL42_1", 44, 72
+}
+Texture "TMR10456", 128, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "RW38_1", 64, 0
+	Patch "WALL47_1", 32, 16
+	Patch "WALL42_3", 9, 16
+	Patch "RW33_1", -32, 16
+	Patch "RW33_1", 96, 16
+	Patch "RW33_4", 64, 80
+	Patch "RW33_4", 0, 80
+	Patch "WALL62_1", 0, 113
+	Patch "W105_1", 0, 116
+}
+Texture "TMR10465", 128, 32
+{
+	Patch "M1_1", 0, 0
+}
+Texture "TMR10466", 64, 32
+{
+	Patch "RW47_1", 0, 0
+	Patch "W33_8", 0, 0
+}
+Texture "TMR10467", 64, 48
+{
+	Patch "RW47_1", 0, 0
+	Patch "W33_8", 0, 0
+}
+Texture "TMR10471", 128, 128
+{
+	Patch "RW26_1", 0, 0
+	Patch "RW26_1", 64, 0
+	Patch "RW33_1", 0, 16
+	Patch "RW33_1", 64, 16
+	Patch "RW33_4", 64, 80
+	Patch "RW33_4", 0, 80
+	Patch "W46_37", 13, 29
+	Patch "W46_37", 45, 29
+	Patch "W46_37", 77, 29
+	Patch "W46_37", 109, 29
+	Patch "WALL62_1", 0, 113
+	Patch "W105_1", 0, 116
+}
+Texture "TMR10474", 128, 64
+{
+	Patch "WALL62_1", 0, 0
+	Patch "NUKEDGE", 0, 40
+	Patch "NUKEDGE", 64, 40
+}
+Texture "TMR10475", 64, 128
+{
+	Patch "RW10_1", 0, 0
+	Patch "NUKEDGE", -1, 106
+	Patch "SFALL1", 63, 115
+	Patch "WALL42_3", -23, 104
+	Patch "SFALL1", -63, 115
+}
+Texture "TMR10478", 64, 128
+{
+	Patch "RW21_5", 0, 0
+	Patch "RW15_1", 0, 83
+	Patch "WALL97_1", 0, 125
+}
+Texture "TMR10480", 64, 128
+{
+	Patch "PLAT2_1", 32, 0
+	Patch "PLAT2_1", 63, 0
+	Patch "PLAT2_1", -96, 0
+	Patch "PLAT2_1", -127, 0
+}
+Texture "TMR10499", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "W98_1", 0, 2
+	Patch "RW30_3", 0, 14
+	Patch "RW30_3", 64, 14
+	Patch "WALL62_1", 0, 114
+	Patch "W98_1", 0, 116
+	Patch "WALL42_3", -12, 0
+	Patch "WALL42_3", 116, 0
+}
+Texture "TMR10500", 256, 128
+{
+	Patch "RW30_3", 0, 0
+	Patch "RW30_3", 128, 0
+	Patch "RW30_3", 64, 0
+	Patch "RW30_3", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "TMR10501", 256, 128
+{
+	Patch "RW35_2", 0, 0
+	Patch "RW35_2", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "TMR10506", 128, 128
+{
+	Patch "TMR11159", -4, 0
+	Patch "TMR11159", 124, 0
+}
+Texture "TMR10514", 1024, 128
+{
+	Patch "TMR11082", 0, 0
+	Patch "TMR11083", 256, 0
+	Patch "TMR11084", 512, 0
+	Patch "TMR11085", 768, 0
+}
+Texture "TMR10532", 256, 128
+{
+	Patch "W112_1", 0, 0
+	Patch "W112_1", 64, 0
+	Patch "W112_1", 128, 0
+	Patch "W112_1", 192, 0
+	Patch "WALL47_2", 0, 3
+	Patch "WALL47_2", 64, 3
+	Patch "WALL47_2", 128, 3
+	Patch "WALL47_2", 192, 3
+	Patch "W96_1", 0, 4
+	Patch "W96_1", 128, 4
+	Patch "W96_1", 64, 12
+	Patch "W96_1", -64, 12
+	Patch "W96_1", 192, 12
+	Patch "W96_1", 64, 24
+	Patch "W96_1", -64, 24
+	Patch "W96_1", 192, 24
+	Patch "W105_1", 0, 20
+	Patch "W105_1", 128, 20
+	Patch "WALL49_1", 0, 33
+	Patch "WALL49_2", 64, 33
+	Patch "WALL49_3", 128, 33
+	Patch "WALL49_4", 192, 33
+	Patch "RW26_1", 0, 114
+	Patch "RW26_1", 64, 114
+	Patch "RW26_1", 128, 114
+	Patch "RW26_1", 192, 114
+}
+Texture "TMR10537", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "TMR10538", 128, 128
+{
+	Patch "SW17_4", 0, 0
+	Patch "SW17_5", 32, 0
+	Patch "SW12_4", 64, 0
+	Patch "SW18_7", 96, 0
+	Patch "W94_1", 0, 56
+	Patch "SW12_5", 0, 74
+	Patch "SW12_4", 32, 74
+	Patch "SW12_5", 64, 74
+	Patch "SW12_4", 96, 74
+}
+Texture "TMR10540", 32, 16
+{
+	Patch "RIPW15", 0, 8
+	Patch "STEP08", 0, 0
+}
+Texture "TMR10557", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "TMR10570", 64, 128
+{
+	Patch "RW11_3", 0, -1
+	Patch "RW11_3", 0, 42
+	Patch "RW11_3", 1, 86
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 40, 0
+}
+Texture "TMR10571", 64, 128
+{
+	Patch "WALL47_1", 15, 0
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 40, 0
+}
+Texture "TMR10572", 16, 128
+{
+	Patch "WALL42_3", -4, 0
+}
+Texture "TMR10573", 32, 128
+{
+	Patch "SUPPORT2", 4, 0
+	Patch "SUPPORT2", 4, 72
+	Patch "TMR10365", 0, 0
+	Patch "TMR10365", 24, 0
+}
+Texture "TMR10575", 128, 128
+{
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_2", 64, 64
+	Patch "COMP03_4", 48, 0
+	Patch "COMP03_4", 112, 0
+	Patch "COMP03_4", 48, 64
+	Patch "COMP03_4", 112, 64
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_7", 14, 66
+	Patch "WARNB0", 88, 82
+}
+Texture "TMR10576", 256, 128
+{
+	Patch "W17_1", 204, 4
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+	Patch "RW10_1", 128, 0
+	Patch "RW10_1", 128, 32
+	Patch "RW10_1", 128, 64
+	Patch "RW10_1", 128, 96
+	Patch "WARNB0", 152, 73
+	Patch "RW10_4", 192, 0
+	Patch "SW2_7", 207, 66
+}
+Texture "TMR10577", 256, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "SW1S0", 16, 72
+	Patch "SW1S0", 80, 72
+	Patch "RW41_1", 128, 0
+	Patch "SW2_7", 142, 66
+	Patch "RW5_4", 192, 0
+	Patch "SW2_7", 206, 66
+}
+Texture "TMR10578", 128, 128
+{
+	Patch "WALL02_2", 64, 55
+	Patch "TP2_1", 32, 74
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_2", 64, 0
+	Patch "SW3S1", 16, 75
+	Patch "SW3S1", 80, 75
+}
+Texture "TMR10580", 192, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "SW4S0", 20, 80
+	Patch "RW41_1", 64, 0
+	Patch "SW3S1", 80, 75
+	Patch "WALL62_1", 128, 0
+	Patch "SW2S0", 144, 75
+}
+Texture "TMR10581", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW3S1", 48, 72
+	Patch "WALL03_4", 128, 0
+	Patch "WALL03_4", 128, 72
+	Patch "SW2_7", 142, 70
+	Patch "RW1_2", 192, 0
+	Patch "SW2_7", 206, 69
+}
+Texture "TMR10584", 128, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "COMP04_5", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S0", 16, 72
+	Patch "COMP03_5", 64, 0
+	Patch "COMP04_7", 64, 64
+	Patch "EXIT1", 80, 98
+	Patch "EXIT1", 80, 78
+	Patch "SW1S0", 80, 80
+}
+Texture "TMR10585", 128, 128
+{
+	Patch "WALL00_8", 32, -5
+	Patch "WALL00_6", 16, 0
+	Patch "SW1S0", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+	Patch "RW22_2", 64, 0
+	Patch "SW2_7", 78, 16
+}
+Texture "TMR10587", 128, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S0", 0, 16
+	Patch "RW31_3", 32, 0
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 64, 64
+	Patch "WARNB0", 55, 20
+	Patch "COMP03_4", 96, 4
+	Patch "EXIT1", 96, 0
+	Patch "EXIT2", 96, 56
+	Patch "EXIT2", 104, 56
+	Patch "EXIT2", 112, 56
+	Patch "EXIT2", 120, 56
+	Patch "SW4S0", 100, 23
+}
+Texture "TMR10588", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_6", 12, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL42_6", 77, 0
+}
+Texture "TMR10589", 256, 128
+{
+	Patch "W31_1", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "SW2S0", 16, 70
+	Patch "W33_5", 64, 0
+	Patch "W33_5", 64, 64
+	Patch "SW1S0", 80, 80
+	Patch "RW31_3", 129, 0
+	Patch "SW2S0", 145, 80
+	Patch "WALL01_7", 193, 56
+	Patch "WALL01_8", 208, 56
+	Patch "WALL01_C", 224, 56
+	Patch "WALL01_9", 240, 56
+	Patch "SW3S1", 208, 76
+	Patch "W33_5", 192, 0
+	Patch "SW2_7", 207, 13
+}
+Texture "TMR10590", 256, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "SW4S0", 20, 80
+	Patch "WALL72_3", 64, 0
+	Patch "WALL69_4", 64, 64
+	Patch "SW4S0", 84, 88
+	Patch "W32_1", 160, 64
+	Patch "W32_1", 224, 64
+	Patch "WALL00_1", 128, 0
+	Patch "WALL00_3", 153, -3
+	Patch "SW3S1", 144, 76
+	Patch "WALL71_5", 192, 0
+	Patch "SW2_7", 207, 13
+	Patch "WARNB0", 216, 89
+}
+Texture "TMR10591", 192, 128
+{
+	Patch "W112_1", 64, 0
+	Patch "WALL47_2", 64, 3
+	Patch "W96_1", 64, 4
+	Patch "W96_1", 64, 12
+	Patch "W96_1", 64, 20
+	Patch "M1_1", 64, 32
+	Patch "WALL48_3", 64, 33
+	Patch "WALL42_3", 52, 33
+	Patch "WALL42_3", 116, 33
+	Patch "WALL48_2", 0, 0
+	Patch "SW2_7", 14, 67
+	Patch "SW2_7", 78, 62
+	Patch "DOOR11_1", 64, 113
+	Patch "RW26_1", 64, 114
+	Patch "WALL48_1", 128, 0
+	Patch "W107_1", 128, 0
+	Patch "SW2_7", 142, 67
+}
+Texture "TMR10592", 256, 128
+{
+	Patch "W112_1", 64, 0
+	Patch "WALL47_2", 64, 3
+	Patch "W98_1", 32, 4
+	Patch "W98_1", 32, 12
+	Patch "W98_1", 32, 20
+	Patch "M1_1", 64, 32
+	Patch "WALL49_2", 64, 33
+	Patch "WALL42_3", 52, 33
+	Patch "WALL42_3", 116, 33
+	Patch "WALL49_1", 0, 0
+	Patch "SW2_7", 14, 67
+	Patch "SW2_7", 78, 62
+	Patch "DOOR11_1", 64, 113
+	Patch "RW26_1", 64, 114
+	Patch "WALL22_1", 128, 0
+	Patch "WALL23_2", 128, 40
+	Patch "WALL23_1", 128, 88
+	Patch "SW2_7", 142, 67
+	Patch "WALL78_1", 192, 0
+	Patch "SW2_7", 206, 67
+}
+Texture "TMR10593", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_5", 11, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL42_5", 76, 0
+}
+Texture "TMR10595", 192, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "SW1S0", 16, 20
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL00_7", 77, 0
+	Patch "WALL00_7", 99, 0
+	Patch "WALL00_6", 90, 0
+	Patch "SW2_7", 78, 72
+	Patch "WALL47_1", 128, 0
+	Patch "SW3S1", 145, 74
+}
+Texture "TMR10596", 192, 128
+{
+	Patch "RW33_3", 128, 0
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S0", 20, 68
+	Patch "RW46_4", 64, 0
+	Patch "SW3S1", 80, 72
+	Patch "RW33_2", 128, 64
+	Patch "WARNB0", 136, 87
+}
+Texture "TMR10601", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_1", 12, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL42_1", 76, 0
+}
+Texture "TMR10602", 256, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "SW2_5", 0, 59
+	Patch "HELL8_2", 64, 0
+	Patch "HELL8_4", 128, 0
+	Patch "SW2_5", 96, 59
+	Patch "RW47_4", 192, 0
+	Patch "SW2_7", 207, 70
+}
+Texture "TMR10603", 128, 128
+{
+	Patch "RW10_3", 64, 33
+	Patch "RW9_3", 63, 67
+	Patch "RW9_3", 67, 67
+	Patch "WALL00_6", 66, 67
+	Patch "WALL00_5", 80, 67
+	Patch "WALL00_8", 96, 67
+	Patch "WALL00_7", 111, 67
+	Patch "SW2_7", 78, 78
+	Patch "RW48_4", 0, 0
+	Patch "WALL62_1", 66, 126
+	Patch "RW26_1", 64, -64
+	Patch "W94_1", 64, -80
+	Patch "RW26_1", 64, -112
+	Patch "SW2_7", 78, 14
+}
+Texture "TMR10606", 192, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW19_4", -1, 0
+	Patch "SW3S1", 48, 76
+	Patch "SW12_1", 128, 0
+	Patch "SW12_2", 160, 0
+	Patch "SW3S1", 144, 76
+}
+Texture "TMR10611", 128, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW1S0", 16, 72
+	Patch "SW11_4", 64, 0
+	Patch "SW11_4", 96, 0
+	Patch "SW1S0", 80, 72
+}
+Texture "TMR10614", 256, 128
+{
+	Patch "W96_2", 172, 0
+	Patch "RW26_1", 0, 0
+	Patch "RW26_1", 64, 0
+	Patch "RW26_4", 128, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "W108_2", 24, 52
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+	Patch "WALL42_6", 76, 36
+	Patch "RW9_3", 64, 90
+	Patch "W111_2", 64, 112
+	Patch "RW26_1", 64, 113
+	Patch "SW2_7", 142, 45
+	Patch "SW3S1", 208, 64
+}
+Texture "TMR10615", 256, 128
+{
+	Patch "WALL97_3", 124, 0
+	Patch "RW9_3", 64, 0
+	Patch "WALL97_3", 188, 0
+	Patch "WALL40_2", -64, 0
+	Patch "SW2_7", 14, 66
+	Patch "SW2_7", 78, 66
+	Patch "RW23_1", 192, 0
+	Patch "SW2_7", 142, 72
+	Patch "SW2_7", 206, 66
+}
+Texture "TMR10618", 128, 128
+{
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_2", 64, 64
+	Patch "COMP03_4", 48, 0
+	Patch "COMP03_4", 112, 0
+	Patch "COMP03_4", 48, 64
+	Patch "COMP03_4", 112, 64
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_8", 14, 66
+	Patch "WARNA0", 88, 82
+}
+Texture "TMR10619", 256, 128
+{
+	Patch "W17_1", 204, 4
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+	Patch "RW10_1", 128, 0
+	Patch "RW10_1", 128, 32
+	Patch "RW10_1", 128, 64
+	Patch "RW10_1", 128, 96
+	Patch "WARNA0", 152, 73
+	Patch "RW10_4", 192, 0
+	Patch "SW2_8", 207, 66
+}
+Texture "TMR10620", 256, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "SW1S1", 16, 72
+	Patch "SW1S1", 80, 72
+	Patch "RW41_1", 128, 0
+	Patch "SW2_8", 142, 66
+	Patch "RW5_4", 192, 0
+	Patch "SW2_8", 206, 66
+}
+Texture "TMR10621", 128, 128
+{
+	Patch "WALL02_2", 64, 55
+	Patch "TP2_1", 32, 74
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_2", 64, 0
+	Patch "SW3S0", 16, 75
+	Patch "SW3S0", 80, 75
+}
+Texture "TMR10623", 192, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "SW4S1", 20, 80
+	Patch "RW41_1", 64, 0
+	Patch "SW3S0", 80, 75
+	Patch "WALL62_1", 128, 0
+	Patch "SW2S1", 144, 75
+}
+Texture "TMR10624", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW3S0", 48, 72
+	Patch "WALL03_4", 128, 0
+	Patch "WALL03_4", 128, 72
+	Patch "SW2_8", 142, 70
+	Patch "RW1_2", 192, 0
+	Patch "SW2_8", 206, 69
+}
+Texture "TMR10627", 128, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "COMP04_5", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S1", 16, 72
+	Patch "COMP03_5", 64, 0
+	Patch "COMP04_7", 64, 64
+	Patch "EXIT1", 80, 98
+	Patch "EXIT1", 80, 78
+	Patch "SW1S1", 80, 80
+}
+Texture "TMR10628", 128, 128
+{
+	Patch "WALL00_8", 32, -5
+	Patch "WALL00_6", 16, 0
+	Patch "SW1S1", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+	Patch "RW22_2", 64, 0
+	Patch "SW2_8", 78, 16
+}
+Texture "TMR10630", 128, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S1", 0, 16
+	Patch "RW31_3", 32, 0
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 64, 64
+	Patch "WARNA0", 55, 20
+	Patch "COMP03_4", 96, 4
+	Patch "EXIT1", 96, 0
+	Patch "EXIT2", 96, 56
+	Patch "EXIT2", 104, 56
+	Patch "EXIT2", 112, 56
+	Patch "EXIT2", 120, 56
+	Patch "SW4S1", 100, 23
+}
+Texture "TMR10631", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_5", 12, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL47_5", 77, 0
+}
+Texture "TMR10632", 256, 128
+{
+	Patch "W31_1", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "SW2S1", 16, 70
+	Patch "W33_5", 64, 0
+	Patch "W33_5", 64, 64
+	Patch "SW1S1", 80, 80
+	Patch "RW31_3", 129, 0
+	Patch "SW2S1", 145, 80
+	Patch "WALL01_7", 193, 56
+	Patch "WALL01_8", 208, 56
+	Patch "WALL01_C", 224, 56
+	Patch "WALL01_9", 240, 56
+	Patch "SW3S0", 208, 76
+	Patch "W33_5", 192, 0
+	Patch "SW2_8", 207, 13
+}
+Texture "TMR10633", 256, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "SW4S1", 20, 80
+	Patch "WALL72_3", 64, 0
+	Patch "WALL69_4", 64, 64
+	Patch "SW4S1", 84, 88
+	Patch "W32_1", 160, 64
+	Patch "W32_1", 224, 64
+	Patch "WALL00_1", 128, 0
+	Patch "WALL00_3", 153, -3
+	Patch "SW3S0", 144, 76
+	Patch "WALL71_5", 192, 0
+	Patch "SW2_8", 207, 13
+	Patch "WARNA0", 216, 89
+}
+Texture "TMR10634", 192, 128
+{
+	Patch "W112_1", 64, 0
+	Patch "WALL47_2", 64, 3
+	Patch "W96_1", 64, 4
+	Patch "W96_1", 64, 12
+	Patch "W96_1", 64, 20
+	Patch "M1_1", 64, 32
+	Patch "WALL48_3", 64, 33
+	Patch "WALL42_3", 52, 33
+	Patch "WALL42_3", 116, 33
+	Patch "WALL48_2", 0, 0
+	Patch "SW2_8", 14, 67
+	Patch "SW2_8", 78, 62
+	Patch "DOOR11_1", 64, 113
+	Patch "RW26_1", 64, 114
+	Patch "WALL48_1", 128, 0
+	Patch "W107_1", 128, 0
+	Patch "SW2_8", 142, 67
+}
+Texture "TMR10635", 256, 128
+{
+	Patch "W112_1", 64, 0
+	Patch "WALL47_2", 64, 3
+	Patch "W98_1", 32, 4
+	Patch "W98_1", 32, 12
+	Patch "W98_1", 32, 20
+	Patch "M1_1", 64, 32
+	Patch "WALL49_2", 64, 33
+	Patch "WALL42_3", 52, 33
+	Patch "WALL42_3", 116, 33
+	Patch "WALL49_1", 0, 0
+	Patch "SW2_8", 14, 67
+	Patch "SW2_8", 78, 62
+	Patch "DOOR11_1", 64, 113
+	Patch "RW26_1", 64, 114
+	Patch "WALL22_1", 128, 0
+	Patch "WALL23_2", 128, 40
+	Patch "WALL23_1", 128, 88
+	Patch "SW2_8", 142, 67
+	Patch "WALL78_1", 192, 0
+	Patch "SW2_8", 206, 67
+}
+Texture "TMR10636", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_4", 11, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL47_4", 76, 0
+}
+Texture "TMR10638", 192, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "SW1S1", 16, 20
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL00_7", 77, 0
+	Patch "WALL00_7", 99, 0
+	Patch "WALL00_6", 90, 0
+	Patch "SW2_8", 78, 72
+	Patch "WALL47_1", 128, 0
+	Patch "SW3S0", 145, 74
+}
+Texture "TMR10639", 192, 128
+{
+	Patch "RW33_3", 128, 0
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S1", 20, 68
+	Patch "RW46_4", 64, 0
+	Patch "SW3S0", 80, 72
+	Patch "RW33_2", 128, 64
+	Patch "WARNA0", 136, 87
+}
+Texture "TMR10644", 128, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_3", 12, 62
+	Patch "WALL42_3", 64, 0
+	Patch "WALL42_3", 104, 0
+	Patch "WALL47_3", 76, 0
+}
+Texture "TMR10645", 256, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "SW2_6", 0, 59
+	Patch "HELL8_2", 64, 0
+	Patch "HELL8_4", 128, 0
+	Patch "SW2_6", 96, 59
+	Patch "RW47_4", 192, 0
+	Patch "SW2_8", 207, 70
+}
+Texture "TMR10646", 128, 128
+{
+	Patch "RW10_3", 64, 33
+	Patch "RW9_3", 63, 67
+	Patch "RW9_3", 67, 67
+	Patch "WALL00_6", 66, 67
+	Patch "WALL00_5", 80, 67
+	Patch "WALL00_8", 96, 67
+	Patch "WALL00_7", 111, 67
+	Patch "SW2_8", 78, 78
+	Patch "RW48_2", 0, 0
+	Patch "WALL62_1", 66, 126
+	Patch "RW26_1", 64, -64
+	Patch "W94_1", 64, -80
+	Patch "RW26_1", 64, -112
+	Patch "SW2_8", 78, 14
+}
+Texture "TMR10649", 192, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW19_4", -1, 0
+	Patch "SW3S0", 48, 76
+	Patch "SW12_1", 128, 0
+	Patch "SW12_2", 160, 0
+	Patch "SW3S0", 144, 76
+}
+Texture "TMR10654", 128, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW1S1", 16, 72
+	Patch "SW11_4", 64, 0
+	Patch "SW11_4", 96, 0
+	Patch "SW1S1", 80, 72
+}
+Texture "TMR10657", 256, 128
+{
+	Patch "W96_2", 172, 0
+	Patch "RW26_1", 0, 0
+	Patch "RW26_1", 64, 0
+	Patch "RW26_4", 128, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "W108_3", 24, 52
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+	Patch "WALL47_5", 76, 36
+	Patch "RW9_3", 64, 90
+	Patch "W111_2", 64, 112
+	Patch "RW26_1", 64, 113
+	Patch "SW2_8", 142, 45
+	Patch "SW3S0", 208, 64
+}
+Texture "TMR10658", 256, 128
+{
+	Patch "WALL97_3", 124, 0
+	Patch "RW9_3", 64, 0
+	Patch "WALL97_3", 188, 0
+	Patch "WALL40_2", -64, 0
+	Patch "SW2_8", 14, 66
+	Patch "SW2_8", 78, 66
+	Patch "RW23_1", 192, 0
+	Patch "SW2_8", 142, 72
+	Patch "SW2_8", 206, 66
+}
+Texture "TMR10660", 64, 128
+{
+	Patch "RW11_2", 0, 0
+	Patch "RW11_2", 0, 57
+	Patch "RW8_2", 0, 60
+	Patch "RW11_2", 0, 68
+}
+Texture "TMR10663", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "TMR10669", 128, 128
+{
+	Patch "RW26_2", 32, 0
+	Patch "RW26_1", -32, 0
+	Patch "RW26_1", 96, 0
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+}
+Texture "TMR10697", 128, 128
+{
+	Patch "WALL97_3", -4, 0
+	Patch "WALL97_2", 60, 0
+	Patch "WALL97_3", 124, 0
+	Patch "WALL40_2", 0, 59
+	Patch "WALL40_2", 64, 59
+	Patch "RW41_2", 0, 64
+	Patch "RW41_2", 64, 64
+}
+Texture "TMR10698", 128, 128
+{
+	Patch "WALL97_3", -4, 0
+	Patch "WALL97_2", 60, 0
+	Patch "WALL97_3", 124, 0
+	Patch "WALL40_2", 0, 59
+	Patch "WALL40_2", 64, 59
+	Patch "RW41_2", 0, 64
+	Patch "RW41_2", 64, 64
+	Patch "SW2_1", 21, 18
+	Patch "SW2_1", 85, 18
+}
+Texture "TMR10699", 64, 128
+{
+	Patch "W112_1", 0, 0
+	Patch "WALL47_2", 0, 3
+	Patch "W96_1", 0, 4
+	Patch "W96_1", -64, 12
+	Patch "W96_1", -64, 24
+	Patch "W105_1", 0, 20
+	Patch "RW23_1", 0, 33
+	Patch "M1_1", 0, 113
+	Patch "RW26_1", 0, 114
+}
+Texture "TMR10700", 128, 128
+{
+	Patch "W96_1", 0, 0
+	Patch "RW9_3", 0, 13
+	Patch "RW9_4", 64, 13
+	Patch "WALL62_1", 0, 116
+	Patch "W96_1", 0, 118
+}
+Texture "TMR10701", 64, 128
+{
+	Patch "W112_1", 0, 0
+	Patch "WALL47_2", 0, 3
+	Patch "W96_1", 0, 4
+	Patch "W96_1", -64, 12
+	Patch "W96_1", -64, 24
+	Patch "W105_1", 0, 20
+	Patch "RW9_3", 0, 33
+}
+Texture "TMR10703", 128, 128
+{
+	Patch "W96_1", 0, 0
+	Patch "RW9_3", 0, 13
+	Patch "RW9_4", 64, 13
+}
+Texture "TMR10704", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}

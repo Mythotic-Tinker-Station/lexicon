@@ -1,0 +1,19 @@
+object Lexicon_UACU_BlueCard
+{
+    frame LX28 { light HEALTHPOTION }
+}
+
+object Lexicon_UACU_YellowCard
+{
+    frame LX28 { light YELLOWKEY }
+}
+
+object Lexicon_UACU_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_UACU_RedCard
+{
+    frame LX28 { light REDKEY }
+}

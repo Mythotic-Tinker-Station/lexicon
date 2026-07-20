@@ -1,0 +1,114 @@
+Actor Lexicon_SCY2_WolfensteinSS : WolfensteinSS
+{
+	Health 250
+	Speed 16
+	PainChance 30
+	Translation 2
+	SeeSound "grunt/sight"
+	DeathSound "grunt/death"
+	Tag "$SCY2_TAG_WOLFSS"
+	Obituary "$SCY2_OB_WOLFSS"
+	States
+	{
+	Spawn:
+		PLAY AB 10 A_Look
+		loop
+	See:
+		PLAY AABBCCDD 1 A_Chase
+		loop
+	Pain:
+		PLAY G 3 
+		PLAY G 3 A_Pain
+		goto See
+	Missile:
+		PLAY E 2 A_FaceTarget
+		PLAY F 1 Bright A_BspiAttack
+		PLAY E 2 A_FaceTarget
+		PLAY F 1 Bright A_BspiAttack
+		PLAY E 2 A_FaceTarget
+		PLAY F 1 Bright A_BspiAttack
+		goto See
+	Death:
+		PLAY H 10 
+		PLAY I 10 A_Scream
+		PLAY J 10 A_Fall
+		PLAY K 10 
+		PLAY N -1 
+		stop
+	XDeath:
+		PLAY O 5 
+		PLAY P 5 A_XScream
+		PLAY Q 5 A_Fall
+		PLAY RSTUV 5 
+		PLAY W -1 
+		stop
+	Raise:
+		PLAY MKJIH 5 
+		goto See
+	}
+}
+
+Actor Lexicon_SCY2_CommanderKeen : CommanderKeen
+{
+	Health 2500
+	Speed 8
+	Radius 20
+	Height 64
+	PainChance 30
+	Mass 400
+	-SPAWNCEILING
+	+FLOAT
+	SeeSound "baron/sight"
+	PainSound "demon/pain"
+	DeathSound "baron/death"
+	ActiveSound "demon/active"
+	Tag "$SCY2_TAG_KEEN"
+	Obituary "$SCY2_OB_KEEN"
+	States
+	{
+	Spawn:
+		LX27 A 10 Bright A_Look
+		loop
+	See:
+		LX27 ABCD 3 Bright A_Chase
+		loop
+	Pain:
+		LX27 H 8 Bright 
+		LX27 A 3 Bright A_Pain
+		goto See
+	Missile:
+		LX27 EF 6 Bright A_FaceTarget
+		LX27 G 1 Bright A_FatAttack1
+		LX27 G 1 Bright A_FatAttack2
+		LX27 G 1 Bright A_FatAttack3
+		LX27 G 1 Bright A_FaceTarget
+		LX27 GG 1 Bright A_SkelMissile
+		LX27 G 8 Bright A_SkelMissile
+		goto See
+	Death:
+	XDeath:
+		LX27 I 5 Bright 
+		LX27 J 5 Bright A_Scream
+		LX27 K 5 Bright 
+		LX27 L 5 Bright A_Fall
+		LX27 MNOPQ 5 Bright 
+		LX27 R 5 Bright A_BossDeath
+		LX27 R 1 Bright 
+		stop
+	}
+}
+
+Actor Lexicon_SCY2_BossEye : BossEye
+{
+	States
+	{
+	Spawn:
+		LX27 C 3 Bright A_Chase
+		LX27 DAB 3 Bright A_Chase
+		goto Spawn
+	See:
+		LX27 DAB 3 Bright A_Chase
+		LX27 C 3 Bright A_Chase
+		goto See
+	}
+}

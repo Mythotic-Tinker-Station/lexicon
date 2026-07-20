@@ -1,0 +1,141 @@
+===========================================================================
+Archive Maintainer      : Please replace original file. Fixed issues with previous version(see below).  file size due to mp3 music.
+Advanced engine needed  : GZdoom
+Primary purpose         : Single play Co-op
+===========================================================================
+Title                   : Dark Encounters Re-release/bugfix 2019
+Filename                : drkenctr
+Release date            : May 19 2019. Original release date: October 31, 2017
+Author                  : Paul Dechene
+Email Address           : [redacted]
+Other Files By Author   : drkinvds (Dark Invaders)
+                          testsb43 (Test Subject 43)
+		DUpart1 (Dark Universe pt1)
+Misc. Author Info       : Musician, Bites off more than he can chew :)
+
+Description         Updated version of Dark Encounters megawad.
+		Fixes/Changes:
+	
+	All difficulty settings are now available (previously implemented HMP and UV only).
+	Replaced all "thing" actions with linedef actions or scripts for better compatiblity with mods.
+	Fixed issues with co-op players becoming stuck behind closing doors/walls etc. Any lock outs/ins where the player 
+		has no other way out/in will be on a reasonable timer.
+	Adjusted/added monster and ammo count for co-op and, to a lesser degree, in single player.
+	Map01 chainsaw secret now recognized by mods that did not trigger it.
+	Map06 Removed several burning barrels that were causing performance issues with some mods.
+	Map09 Yellow Key no longer triggers lowering sector twice, trapping the player.
+	Map13 Red Door is now set as repeatable action.
+	Map20 removed some invisible blocking lines that impeded player movement.
+	Map26 moved shootable switch as players were often getting stuck here.
+	Map31 added more monsters to final battle as it was underwhelming.
+	Increased font size on HUD messages.
+	Mouse look is REQUIRED for a few secrets and shootable switches. (This was incorrectly listed as "mouse look recommended")
+
+Story:
+
+    : "I knew they would come back some day...The leaders
+                          and generals of the world were content with their
+                          victory...my victory...heh. Never been much for
+                          parades, so I slipped back into my role as a
+                          good-ole space marine. I argued for a time about
+                          the potential for another invasion. Like before,
+                          they said their "new" technology would handle any
+                          threat. Yeah...sure it will...
+                          I...knew...they...would...come...back..."
+                          ***Please see text file for gameplay
+                          information.***
+
+
+
+ In This Wad...
+                          No jumping/crouching, mouse-look required in a few cases.
+                          Gameplay is in the style of the original Doom 2.
+                          Difficulty is slightly harder than Doom2 with encounters
+                          of varying difficulty thrown in through-out the maps. 
+                          Survival will require accuracy, agility, ammo management, spacial 
+                          awareness, and the following...
+
+                          ****On Hurt Me Plenty****
+                          Employ at least ONE of these approaches to avoid running out of ammo, or 
+                          use them all to have ammo-a-plenty.
+                              1.Find the secrets (most are not hard to find)...or
+                              2.Explore the entire map...or
+                              3.Use the berserk/chainsaw on targets of opportunity (my personal favorite). 
+                          ****On Ultra Violence****
+                          Employ at least TWO of the above approaches to avoid running out of ammo, or 
+                          use them all to have ammo-a-plenty.
+                          ****On Pistol Start****
+                          Employ ALL THREE of the above approaches to avoid running out of ammo.
+
+                          For best effect use dynamic lights, but sector lighting is implemented
+                          for better performance. 
+
+
+
+
+Additional Credits to   :  iD Creators of DOOM & DOOM2. GZDoom. scifista42
+                          for Grasstex - Doom textures with grass tops.
+                          GZDoombuilder. Eradrop for the sky textures.
+                          Cakewalk. Sonar LE recording software. Slade3.
+                          DoomWorld. Orangefreesounds.com, Free-loops.com, 
+                          Freesoundeffects.com (for ambient effects). All the
+                          great mappers and modders out there who never cease
+                          to amaze and entertain me. All music composed,
+                          recorded and performed by Paul Dechene. 
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : mapinfo
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 10 months
+Editor(s) used          : GZDoom Builder Doom2 UDMF
+Known Bugs              : some texture misalignments. Gzdoom 1.9 doesn't seem
+                          to wrap middle textures (bars, etc.)properly but it
+                          has no effect on gameplay.
+May Not Run With        : non limt-removing ports
+Tested With             : Zandronum 2.0 and 3.0, GZDoom 1.9, GZDoom 2.1, GZDoom 3.0, GZDoom 3.2.4, GZDoom 3.7.2
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+FTP sites: ftp://archives.gamers.org/pub/idgames/ and mirrors
+
+
+
+       

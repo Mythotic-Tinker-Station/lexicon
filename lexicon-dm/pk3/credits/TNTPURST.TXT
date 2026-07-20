@@ -1,0 +1,263 @@
+Pursuit text file 31 October 1997
+
+Contents:
+1. Announcement
+2. Installation
+3. Troubleshooting
+4. System requirements
+5. Where to find files
+6. How to get help
+7. Participants and credits
+8. Some legalities
+
+---------------
+1. ANNOUNCEMENT
+---------------
+
+            TeamTNT proudly announces the release of
+
+                  +--------------------------+
+                  |         Pursuit          |
+                  |    Deathmatch Reprise    |
+                  +--------------------------+
+
+Pursuit is the third set of 32 DOOM II Deathmatch-only levels from 
+TeamTNT.  It is now available on ftp.cdrom.com and its mirrors.  
+See below for the exact path.
+
+TeamTNT strikes again with yet another 32 levels of all-Deathmatch
+frag mayhem.  Pursuit follows in the footsteps of the popular TeamTNT
+sets "Bloodlands" and "Grievance".  There's lots of interesting 
+architecture, impeccable texture alignment and play balance, and 
+frags out the wazoo.  Most of the levels are tight fragfests, a couple
+that are big enough for a more leisurely pace, and lots of selection
+in between.
+
+You wondered what happened to the weekend when you played Icarus.  
+You'll wonder what happened to the month when you play Bloodlands.
+You'll wonder who blew your butt off in Grievance...
+You'll wonder how we can keep making these great levels in Pursuit.
+
+Features:
+
+ - 32 brand new levels by some of the best Deathmatchers
+ - Difficulty levels used to fine-tune game rules
+ - Three 4-player fragfest demos
+ - All in one WAD, easy to run
+ - Works with DOOM II version 1.9 or Final DOOM
+ - Intermission music by David Shaw
+ - Though the overall WAD size is a bit over 3MB, it all zips
+   to fit on a single diskette
+ - It's by TeamTNT members, so you know it's good
+ - Startup batch file included
+ - Kept small by limiting new graphics and music
+
+
+---------------
+2. INSTALLATION
+---------------
+Pursuit comes in one WAD file, zipped into one ZIP file.  You'll
+need PKUNZIP.EXE or an equivalent unzipping utility to unpack
+TNTPURST.ZIP.  This will produce TNTPURST.WAD and TNTPURST.BAT (and
+another copy of this file).
+
+Just unzip it into your DOOM2 directory and run TNTPURST.BAT, or 
+load TNTPURST.WAD in your favorite front-end program.
+
+Floppy download:
+
+Not a problem.  Pursuit fits on a floppy--it's not much over a meg
+when zipped.
+
+
+------------------
+3. TROUBLESHOOTING
+------------------
+
+Not much can go wrong, since this is just one WAD file.  However,
+since not much can go wrong, something might, and maybe a few
+steps here will help.
+
+a.  First, verify that TNTPURST.BAT and TNTPURST.WAD are in your
+    DOOM2 directory, and that you are in that directory when you
+    type TNTPURST.
+
+b.  Spell TNTPURST right. (we left out some vowels)
+
+c.  If it starts up and crashes with a message similar to
+
+      "Demo is from a different version"
+
+    then you're not running DOOM2 version 1.9.  You'll need to
+    upgrade if you're going to look at the demos (which are 
+    well worth the trouble).  Upgrade files are available all
+    over the place, and particularly at ftp.cdrom.com or 
+    ftp.idsoftware.com.  Your DOOM2 version number will appear 
+    at the top of the screen while DOOM2 is initializing.
+
+d.  If you notice that the full-screen intermission texts (like
+    between MAP06 and MAP07) don't make sense any more, or that
+    the automap names don't match the level names, that's because
+    we chose to honor id Software's wish that we not alter their
+    DOOM2.EXE file, and that's where that stuff is stored.
+
+
+----------------------
+4. SYSTEM REQUIREMENTS
+----------------------
+
+   A computer that will play DOOM2 well.  Deathmatch is deathmatch,
+   and you won't need any more computer or modem power than you'd 
+   need with DOOM2 by itself.  
+
+   You'll like it better if you have a good sound card, but if you
+   do much deathmatch you already know that.
+
+   The WAD file is a bit over 4MB, and you'll need about 6MB 
+   free available during unzipping.
+
+   Any other requirements (modem, network stuff) are no different
+   than if you were running DOOM2 without Pursuit.
+
+
+---------------------
+5. WHERE TO GET FILES
+---------------------
+
+   Pursuit was uploaded to ftp.cdrom.com on Hallowe'en 1997 (Oct 31)
+   and can be found with the rest of the TeamTNT products in 
+
+	ftp://pub/idgames/themes/TeamTNT
+
+   It will be propagated to the cdrom.com mirrors after that.  
+   We will also more or less simultaneously upload it to Compuserve, 
+   with AOL, Fidonet, etc. following close behind.  Most of 
+   these locations have a waiting period before the files are 
+   publically available, but it won't be long...
+
+   ftp.cdrom.com is the one place you can be guaranteed to find
+   the most recent version, and you can always get to a pointer to
+   the file from our web site (see below).
+
+   While you're there, get Eternal DOOM, Icarus, Grievance and 
+   Bloodlands if you don't already have them.
+
+------------------
+6. HOW TO GET HELP
+------------------
+
+   If it's about DOOM2 itself, contact id Software.
+
+   If it's about Pursuit, don't contact id Software.
+
+   Pursuit questions can be handled by other players on the
+   usenet newsgroups, various forums on Compuserve and other
+   services, and by TeamTNT by email.  Either write to us at
+
+      teamtnt@neosoft.com
+
+   or go to our web page at
+
+      <http://www.neosoft.com/~teamtnt>
+
+
+---------------------------
+7. PARTICIPANTS AND CREDITS
+---------------------------
+
+   The following TeamTNT members were involved in creating
+   Grievance.  Testing was a team effort, and a big thanks goes
+   out to the fragbait the team members used to test against.
+
+   Ty Halderman   
+	Project Coordinator, builds, web and FTP sites, 
+	email support, Punch Team, new textures, titlepic,
+        intermission, credit, etc. graphics, review coordinator.
+	Oh, and made 3 levels too.
+
+   Gary Gosson
+        Levels and Punch Team.
+
+   Lisa Moore
+	Levels and Punch Team
+
+   David Shaw
+        Intermission music and Punch Team
+
+   Level design information:
+	01   Ty Halderman   "Case Closed"
+	02   Gary Gosson   "Sunrise"
+	03   Lisa Moore "Terminal Obsession"
+	04   Gary Gosson   "Waiting for Worms"
+	05   Richard Jaspars - Styx "Solar Plexus"
+	06   Lisa Moore "Your Own Pit to Die in"
+	07   William Whitaker "Weekend at OJ's"
+	08   Ty Halderman   "Shadow Boxing"
+	09   Richard Jaspars - Styx "Arena"
+	10   Gary Gosson   "Mommy, Where's Daddy?"
+	11   Lisa Moore "Monolithic"
+	12   Tommie Quick "Black Rage"
+	13   Ty Halderman   "Deathway"
+	14   Jeremy Wagner - Iron Lich "Damn It!"
+	15   Richard Jaspars - Styx "Run Like Hell"
+	16   Richard Jaspars - Styx "Chaos"
+	17   Yonatan Donner "Broken World"
+	18   Mark Hatton - Hatty "Pulse"
+	19   William Whitaker "Halflife"
+	20   William Whitaker "No Way Out"
+	21   Andrew Dowswell "Under an Open Sky"
+	22   William Whitaker "Terminus"
+	23   Charles Cox - Mange "Riven"
+	24   Gary Gosson   "Hot Patootie"
+	25   Jim Kennedy "Spelunker"
+	26   Tommie Quick "Deathyard"
+	27   Jeremy Wagner - Iron Lich "Kill 'em Dead"
+	28   Tommie Quick "Pillars"
+	29   William Whitaker "A Time to Kill, A Time to Die"
+	30   Yonatan Donner "The Holy Goat"
+	31   Richard Jaspars - Styx "Sector 7" 
+	32   Mark Hatton - Hatty "Interstellar Overdrive"
+
+   Members and non-members who offered themselves as fragbait:
+	Robert Taylor [TeamTNT member]
+	'Mich'			(Michel Thomissen)
+	'SpaceManSpiff'		(Lorenzo Cricchio)
+	'Lamer'			(Dave Stewart)
+	'Blackacid'		(Robert Hough)
+	'Grean'se Lightning'	(Andrew Goode)
+	'Cordata'		(Steven Sturza)
+	'Fragleader'		(Erik)
+	'LickMe'		(Dave the FragMeat)
+	'Lord Bevis'		(Phil)
+	'Get Some!'		(Anton)
+	'Daf'			(Daphne Halderman)
+
+   Thanks to John Minadeo for mailing list resources.
+
+   And of course we thank the authors of the many utilities we used
+   to produce Pursuit.  Without you the DOOM-editing environment
+   would just suck.  
+
+------------------
+8. SOME LEGALITIES
+------------------
+
+   Pursuit is a copyrighted work and though free
+   is not public property ("public domain").  Don't take stuff
+   out of our levels, and don't take our levels out of Pursuit.
+   Pursuit should have been free to you (connection times and
+   stuff notwithstanding) and shouldn't have shown up on
+   someone's DM collection or CD.  If it does, let us know right
+   away.  We are serious about the CD thing--no commercial
+   compilations are allowed to include any TeamTNT products under
+   any circumstances, even if they delete this text file...
+
+   We thank you for trying Pursuit.  Let us know what you think
+   about it.  Try out Icarus, Bloodlands, Grievance, Eternal DOOM
+   and Final DOOM too, and keep checking our web page for other 
+   team products--we're still churning stuff out.
+
+   Pursuit and associated files are
+   (C) Copyright 1997 TeamTNT
+
+///End of file

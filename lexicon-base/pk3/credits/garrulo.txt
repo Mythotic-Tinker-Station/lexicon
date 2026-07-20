@@ -1,0 +1,313 @@
+	TEXT IN ENGLISH AT THE END OF FILE
+
+================================================================
+Título                  : Garrulismo
+Archivo                 : garrulo.WAD
+Autor                   : Eye del Cul
+Dirección e-milio       : eyedecul@ono.com
+Página web              : http://www.geocities.com/eyedecul
+
+Descripción             : Un episodio completo para el Doom2, con
+			sus correspondientes treinta y dos niveles.
+			A pesar del título, me esmerado mucho con
+			ellos, y creo que he conseguido unos escenarios
+			bien detallados y bastante originales.
+			  Los dos individuos que aparecen en la	portada,
+			con la ciudad futurista como fondo, son	Chiquito
+			de la Calzada -humorista famoso aquí en	España-,
+			y el Fary -inigualable cantante nacional- (nota
+			sin importancia para el público americano).
+
+Créditos a              : Mi colega (y "cuñadísimo") Anarko, por dejar-
+			me buscar midis	en internet desde su ordenador,
+			y por otros favores que sería largo enumerar.
+			  Mi hermana Vero por algunas pruebas de juego.
+			  Luis Maiguel por sus cintas de Black Sabbath
+			y Judas Priest, que tanto han amenizado las ho-
+			ras pasadas delante de la pantalla.
+			  Los autores de toda esa larga lista de WADs
+			que me han servido de inspiración, y me han
+			enseñado tanto...
+			  Y por supuesto, a todos aquellos que todavía
+			hoy siguen jugando al Doom.
+
+================================================================
+
+* Información *
+
+Juego (DOOM, DOOM2...)  : Doom2. Usé la versión 1.666.
+Episodio / nivel        : MAP01 al MAP32
+Un jugador              : Sí
+Cooperativo             : Sí (no probado)
+Deathmatch              : Sólo el MAP23
+Niveles dificultad      : Sí
+Sonidos nuevos          : Sí
+Música nueva            : Sí, algunos midis rockeros (Black Sabbath,
+			Barricada, Led Zeppelin, Guns'n'roses), y o-
+			tros del Doom1 y diversas procedencias.
+Gráficos nuevos         : Sí
+Demos sustitudas        : Las tres que trae el juego original.
+
+
+================================================================
+
+* Construcción *
+
+Base                    : Son niveles inéditos, a excepión de:
+			  El mapa 23, creado a partir de un clásico
+			para el Doom1 llamado E1M1CNC. Por cierto que
+			remodelarlo y adaptarlo para el Doom2 fue un
+			arduo trabajo...
+			  El mapa 4, que mandé a la página de Cabro
+			bajo el nombre "La Fuente Energética".
+			  El mapa 6, publicado también como "Judas
+			Priest a tiro limpio".
+
+Editores usados         : WINDEU, DEU5.21, DEU2, DCK
+			  NWTPRO, WINTEX4.0
+			  BSP5.0, REJECT2.1
+			  WADPTR, DEHACKED
+			  Y algunos malos editores gráficos, como
+			el IRFANVIEW, EDITART, BANNER, o el PAINT.
+			
+Tiempo construcción     : Veamos... Desde marzo de 2002 hasta octubre
+			de 2003; cosa de año y medio.
+
+Terminado el		: 16 de octubre de 2003.
+
+Ordenador Usado 	: Usé un 486Dx a 66 Mhz con 12 megas de RAM para
+			construir los quince primeros mapas; pero a partir
+			del MAP16, la tarea corrió a cargo de un AMD500.
+
+Bugs conocidos          : He repasado cada mapa muchas veces, en unas prue-
+			bas de juego que se me han llevado por delante un
+			buen puñado de horas. Yo diría que no los hay, pero
+			siendo realistas, entre tantos niveles bien se
+			puede esconder alguno...
+
+
+* Copyright / Permissions *
+
+Puedes copiar este WAD en disquetes o en páginas web o en lo que se te ocurra, pero -¡pecador!- hazlo adjuntando este archivo de texto. También puedes usarlo como base para construir nuevos niveles, y ese tipo de cosas. Ya ves que no soy exigente.
+
+
+
+================================================================
+			ALGUNAS NOTAS
+================================================================
+
+A) SOBRE EL PARCHE PARA DEHACKED (garrulo.deh)
+	¿Qué coño es un "parche para dehacked"?, se preguntarán
+   muchos... No tiene mayor misterio; se trata de un archivo des-
+   tinado a modificar diversos aspectos del Doom original. Por
+   ejemplo, podríamos crear así monstruos más rápidos, cambiar
+   el daño producido por nuestras armas... Y un sinfín de cosas
+   más. Pero la cuestión es que para hacer funcionar uno de es-
+   tos parches necesitas un editor, el Dehacked. Este programi-
+   ta lee el parche, y a continuación hace los cambios pertinen-
+   tes en el Doom.exe; y ya tenemos en funcionamiento los capri-
+   chos que se nos hayan ocurrido en nuestro archivo .DEH.
+	También puedes utilizar algún source-port para cargarlo;
+   además, he incluido una copia del parche dentro del fichero
+   "garrulo.WAD", de modo que ZDOOM y JDOOM (y quizás algún otro
+   source port) pueden leerlo automáticamente.
+	Y bien, ¿es necesario ejecutar el parche para jugar el
+   "garrulismo"? NO. El archivo "garrulo.deh" sólo contiene al-
+   gunos textos en español que sustituyen los mensajes origina-
+   les en inglés. Nada más. Por lo tanto, puedes prescindir de
+   él... Es sólo una pequeña guinda para los más sibaritas.
+
+B) DOOM2.EXE vs SOURCE PORTS
+	Para empezar, diré que los treinta y dos mapas del "ga-
+   rrulismo" están concebidos para funcionar con el Doom2 de
+   toda la vida, sin añadidos; incluso los he ejecutado en
+   mi 486 sin problemas -bueno, la fluidez del juego se resien-
+   te bastante, pero es que no son lo mismo 66 Mhz que los 500
+   de mi "nuevo" AMD-.
+	Así que en un principio, DOOM2 y nada más.
+	Pero claro, resulta preferible utilizar un source-port,
+   por las evidentes mejoras que aportan al juego (más resolu-
+   ción gráfica, etc). La cuestión es que en algunos mapas he
+   empleado ciertos trucos basados en peculiaridades del motor
+   del Doom original. Y es posible que estos trucos den resul-
+   tados extraños con algunos source-ports...
+	Yo recomendaría usar ZDOOM, cuyo funcionamiento con es-
+   tos niveles es impecable; además tiene la ventaja de cargar
+   automáticamente el parche para el Dehacked. BOOM también me
+   parece muy satisfactorio. Sin embargo, otros source-ports me
+   han dado algunos problemas, como el EDGE o el JDOOM. Debo de-
+   cir que esto no resulta importante, ya que los inconvenientes
+   no pasan de algunos HOMs en los mapas 19, 22 y 28.
+
+C) EL NIVEL DE DIFICULTAD
+	Citando al instructor Hartman, "soy duro pero soy justo".
+	Esto quiere decir que no hay trampas rastreras que te
+   lleven automáticamente a la muerte, ni hordas de enemigos
+   imposibles de derrotar. Si en algún momento te encuentras
+   con problemas irresolubles es porque has seguido el camino
+   equivocado.
+	A la mayoría de los jugadores les recomedaría la dificul-
+   tad "Hurt me Plenty"... Los niveles más fáciles son eso, fá-
+   ciles (mi hermana llegó invicta al sexto mapa jugando en "Hey,
+   not too rough", y eso que no se le suelen dar bien los video-
+   juegos); muy adecuados para los jóvenes reclutas, pero tal vez
+   poco estimulantes para curtidos veteranos. En cuanto a Ultra-
+   violencia... ¡je!
+	Por lo demás, en todos los mapas puedes conseguir el ar-
+   mamento imprescindible para seguir adelante, aunque los empie-
+   ces con la humilde pistolita y sus cincuenta balas. Esta vez,
+   el método del "graba partida-carga partida" no resulta impres-
+   cindible para llegar vivo al final, y puedes jugar a vidas, si
+   así te parece más divertido.
+
+
+
+
+
+
+
+
+
+	================================================================
+			GARRULISMO
+	     ...¿Qué sucedió? ¿Cómo sucedió?...
+	================================================================
+
+    Año 2026; primer creciente de noviembre. En varios observatorios astronómicos repartidos por todo el mundo, los científicos divisaron un objeto sin identificar dentro de los límites del sistema solar.
+    Como puede suponerse, este descubrimiento levantó un gran revuelo, y los más eminentes sabios investigaron el fenómeno. Comprobaron así que el objeto en cuestión tenía forma de taza del retrete, se movía a una velocidad prodigiosa, y lo mejor de todo, se dirigía irremediablemente hacia la Tierra... En un primer momento se pensó en un meteorito o en un cometa: pero los sesudos físicos de la universidad de Uiodochiopamistán, después de examinar datos tales como la anómala trayectoria del objeto y su masa, concluyeron que sólo podía tratarse de una enorme astronave.
+    Resulta imposible describir la conmoción que supuso esta revelación en la opinión pública mundial -la del primer mundo, los del tercero bastante tenían buscando qué comer-. ¡Seres extraterrestres e inteligentes! Aparecieron asociaciones en "defensa de los derechos de los alienígenas"; mientras, Herman Hess, líder del Partido Ario de Renania, dijo que "iba a recibir a los extraterrestres a bayonetazos". Y la pobre chusma de Angola o Palestina tuvo que ver como ya nadie se acordaba de ellos; los de la astronave eran gente sin duda más interesante, y además seguro que no pasaba hambre...
+    Así, la ONU dejó de lado asuntos menores como los problemas medioambientales de la Tierra y el devenir de Yugoslavia, y centró todos sus esfuerzos en una magna tarea; preparar un digno recibimiento a los ocupantes de la taza del retrete espacial. El resto de las cuestiones mundiales quedó descuidado en carpetas y archivadores, amontonando polvo en oficinas desiertas... Por ejemplo: después de 24 años escondido bajo una estatua de Buda y vestido con un burka, Osama Ben Laden apareció de nuevo en público y se paseó tranquilamente por las calles de Nueva York; a nadie le importó tres leches, y muy decepcionado por su repentina falta de notoriedad, pasó a dedicarse a las partidas profesionales de bolos.
+    Por fin, en el menguante de mayo de 2027, la letrina interestelar llegó a la Tierra. Aterrizó en territorio español; más concretamente, sobre el congreso de los diputados de Madrid y varios edificios cercanos, dejando toda la zona convertida en ruinas. Solamente el presidente del Gobierno y sus asesores, que habían faltado a la sesión parlamentaria y estaban de botellón en la Casa de Campo, sobrevivieron a la catástrofe. Sin embargo, y al igual que sucedió con la repentina reaparición de Ben Laden, la ciudadanía no se preocupó demasiado por este hecho.
+    Pero lo peor estaba por llegar. De aquella inmensa y refulgente taza del váter emanaba una música infernal, unos acordes demoníacos que llenaron de espanto a los madrileños; más tarde, alguien se dio cuenta de que aquella canción era "La Barbacoa", de Georgie Dann. Y entonces de la astronave salió un enjambre de criaturas, cada una más horrenda que la anterior, que de inmediato se desparramaron por las calles de la capital. Su conducta era abominable; devoraron hombres, mujeres y niños, y hasta policías antidisturbios; y además, lo hicieron cantando "El torito guapo" e imitando a Chiquito de la Calzada. A las personas que no quisieron comerse las lobotomizaron y convirtieron en esclavos y programadores de Antena-Tres.
+    Por supuesto, lo que quedaba del gobierno español -o sea, el presidente- no supo reaccionar, y la única medida que tomó fue prohibir el consumo de tabaco. Así que los extraterrestres pronto conquistaron todo el país, cuyo himno fue a partir de entonces "Mi limón mi limonero".
+
+    Se reunió el "Gabinete de Urgencia de las Naciones Unidas", para discutir cuál era el mejor modo de eliminar la amenaza alienígena. Tratábase de una conferencia extraordinaria, como bien puede suponerse, y acudieron los jefes de estado de casi todos los países de la Tierra; algunos, incluso, parecían tomarse la situación en serio y estaban dispuestos a buscar soluciones.
+    Y comenzaron los debates.
+    El primer día de deliberaciones se acordó que en las sesiones sucesivas se serviría agua, para gran enojo de los USA, que abogaban en favor de la Coca-cola.
+    En el segundo día se iba a abordar el tema sin preámbulos, pero el representante judío dijo que aquello "iba a ser una merienda de negros", y los delegados africanos montaron una trifulca monumental; como solución de última instancia, el gentil hebreo pidió disculpas y rectificó "negros" por "personas de color".
+    El tercer día trajo consigo algún tímido progreso, pero el hijo de "Tory" Blair y presidente británico, comentó que "nos espera un trabajo de chinos", a lo cual el delegado de China respondió de muy malos modos; el representante árabe aprovechó el follón para ir a rezar a La Meca, y cuando volvió todavía no se había aclarado el asunto...
+    El cuarto día el presidente iraní pidió armamento para defenderse de la invasión extraterrestre; pero los USA se negaron enérgicamente, diciendo que no había que colaborar con países terroristas. En ese momento, una mano inocente arrojó al delegado de Israel de la sala de sesiones.
+    En el quinto día seguía en pie lo de no admitir en las conversaciones a terroristas, así que ninguna delegación de ningún país pudo acudir.
+    Llegó el sexto día, y se aprobó un "manifiesto de colaboración internacional", consistente únicamente en el título; después, los delegados se retiraron a descansar...
+    El séptimo día era domingo, así que los mandatarios mundiales se tomaron el día libre y se dedicaron a jugar a las cartas en la sala de reuniones. Nunca se sabrá quién fue el que hizo trampa, pero las acusaciones rodaron de unos a otros durante toda una mañana, y la situación se caldeó...
+
+    Cuando los engendros extraterrestres irrumpieron en la sede de las Naciones Unidas al son del "Porompompero", sólo encontraron cadáveres esparcidos aquí y allá; muchos de ellos aún guardaban ases y comodines en las mangas de sus chaquetas. Los únicos supervivientes de la "cumbre internacional" habían sido los presidentes de Burkina Fasso y Lichenstein, que por pertenecer a países ridículos habían quedado al margen de la "deliberación de la ONU". Fueron lobotomizados de inmediato; después, a uno se le nombró Sumo Sacerdote, y al otro Ministro Mundial de Cultura.
+    Así fue como los monstruos de la taza del retrete dominaron la Tierra. La mitad de la población mundial fue devorada, y la otra mitad esclavizada. Curiosamente, los Estados Unidos fueron el único país donde las lobotomías masivas no produjeron cambios apreciables en el comportamiento de la gente.
+
+    ¿Todo el mundo había sido conquistado? ¡No! En el Vaticano un grupo de valientes resistía, comandados por el Papa Juan Pablo -sí, todavía vivía, aunque hubiese superado ya los cien años y se asemejase a una momia egipcia-. Pero la situación era desesperada. Todos los intentos de la Iglesia de evangelizar a los dementes alienígenas habían fracasado, y ahora una pequeña milicia de curas, obispos y cardenales defendía a fuerza de Kalasnikov el reducto de Su Santidad.
+    -La humanidad está irremediablemente perdida, pero aún quedamos nosotros. Debemos mandar a alguien a Madrid; allí está el "celebro" que guía a los extraterrestres. Le meteremos una bala por el ojete -le dijo cierta noche el Papa a su más estrecho colaborador, el cardenal Garibaldi.
+    -¡Por el sagrado Corán! -sí, el cardenal había bebido demasiada "sangre de Cristo"-. ¿Estáis seguro de eso, "Susan" -es decir, "Su Santidad"-?
+    -Claro, hombre. Siento en mi interior una ira nada cristiana. Y deja de tomarme por loco, que aún sé bien lo que me digo.
+    Pronto se reunió la jerarquía eclesiástica para elegir al "voluntario" que debía buscar y destruir al alienígena jefe. Y tras muy pocas discusiones -al fin y al cabo, según la teología católica, el Papa es la voz de Dios en la Tierra, y a ver pues quién es el chulo que le lleva la contraria-, se encontró al candidato; un joven cura llamado Itzaak Richmann, antiguo militante sionista del Stern, que dejó los rezos a Jerusalén el día que descubrió las incomparables facilidades que da el catolicismo para alcanzar el paraíso celestial.
+    Así que tras una emotiva ceremonia de despedida, le dieron una triste pistola con unas cuantas balas, y las llaves del papamóvil -"¡para lo que lo voy usar yo a estas alturas!", comentó Wojtila-. Y sin más, Itzaak partió rumbo a la capital española, cruzando a escondidas las desiertas carreteras europeas.
+    Madrid mostraba un aspecto deprimente; seres abyectos disfrazados de folclóricas cantaban y bebían por las calles arruinadas. Un humanoide impío, que se llamaba a sí mismo "Imp", pasó junto al joven cura diciendo: "¡Tengo uno hamatoma dentro, no puido!", y acompañaba sus palabras con extraños movimientos de manos.
+    Itzaak le pegó un tiro en la cabeza, y el ser demoníaco se marchó tan contento con su imitación de Chiquito; al parecer, la bala no le había alcanzado en ningún punto vital.
+    Después de esto, el sacerdote decidió comenzar su tarea de "busca y destruye"; se rumoreaba entre los combatientes del Vaticano, que los extraterrestres habían acondicionado la sede de la UAC (Unión de Agricultores Cabreados) como cuartel general. Así que hacia allí se encaminó... Cuando penetró en aquella mole de hormigón, el rumor palpitante de la capital, mezcla de rumbas, tecno-pop y chistes de Arévalo contados a gritos, quedó atrás.
+    -Este silencio es una bendición del Señor -exclamó Itzaak. Pero los rastros de caspa que había en aquel triste corredor, y un "ewandecandemor" procedente de algún lugar cercano, le indicaron que no se hallaba solo...
+
+
+
+
+		*** IN ENGLISH ***
+		(Sorry for the bad translation)
+
+
+================================================================
+Title                   : Garrulismo (spanish slang that I can't
+			translate to english)
+Filename                : garrulo.wad
+Author                  : Eye del Cul
+Email Address           : eyedecul@ono.com
+Web page                : http://www.geocities.com/eyedecul
+Misc. Author Info       : Unemployed spanish guy with a lot of free time.
+
+Description             : A complete episode for Doom2, with all 32 maps
+			replaced... I think that these are quality levels:
+			cool architecture, good light effects, studied use
+			of textures...
+			  And I hope, with a exciting gameplay!
+			  The two guys that appears in the main screen are
+			Chiquito de la Calzada -"Child of the Road" (!!!),
+			spanish humorist-, and El Fary -"The Fary", matchless
+			spanish singer, like Frank Sinatra, Bob Dylan or
+			other international stars (!!!)-.
+
+Additional Credits to   : My friend Anarko for play-testing, and allow me
+			to use his computer to search in the Internet the
+			midis that I used in these maps.
+			  My sister Veronica for some play-testing.
+			  Luis Maiguel for his cassetes of Black Sabbath
+			and Judas Priest, that have brightened up all those
+			hours in front of the monitor.
+			  The authors of the WADs that inspired me in the
+			creation of this episode.
+			  Of course, to all who still plays the old DOOMs...
+
+Other maps by the
+same author             : LABERINT.WAD (Doom1), NIVELES.WAD (The three comple- 
+			te episodes for the Doom1) --Download it from my
+			web page--.
+			  JUENTE.WAD (Doom2), JUDASP.WAD (Doom2), DESERT.WAD
+			(Doom2), RUBEND.WAD (Doom2) -In my web page; or in the
+			Cabro's page: http://www.geocities.com/cabro_us
+
+================================================================
+
+* Play Information *
+
+Episode and Level #     : MAP01 - MAP32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes, but untested
+Deathmatch 2-4 Player   : Only the MAP23
+Difficulty Settings     : Yes
+New Sounds              : Yes (at the last level, when the final boss...)
+New Graphics            : Yes
+New Music               : Yes, some midis from Doom1, and others of Led
+			Zeppelin, Black Sabbath, Guns'n'Roses, Barricada...
+Demos Replaced          : Yes, the three demos.
+
+
+* Construction *
+
+Base                    : New levels from scratch, except:
+			  Map23, built from a classic Doom1 map named
+			E1M1CNC. I spent a lot of time with it, rebuilding
+			all the architecture, adding some details and repla-
+			cing the original textures...
+			  MAP04, released in the Cabro's page as "The power
+			supply".
+			  MAP06, previously released, and known as "Judas
+			Priest shooting all of them!"
+
+Editors used		: WINDEU, DEU5.21, DEU2, DCK
+			  NWTPRO, WINTEX4.0
+			  BSP5.0, REJECT2.1
+			  WADPTR, DEHACKED
+			  And some bad graphic editors, like IRFANVIEW, EDITART,
+			BANNER -old MSDOS utility- or the MICROSOFT PAINT.
+			
+Build time		: Since march 2002 to october 2003...
+First release		: 16th october 2003.
+
+Computer used	 	: The first fifteen maps were built in a 486DX, running at
+			66 Mhz and with 12 megs of RAM; from the MAP16, the work was
+			done with a AMD running at 500 Mhz with 64 megs of RAM.
+
+Known bugs		: All of these levels have been tested scrupulously,
+			so there aren't known bugs. Unknown?, maybe... Notify me
+			if you find any.
+
+
+* Copyright / Permissions *
+
+
+Authors MAY use this level as a base to build additional levels.  
+
+You MAY distribute this WAD, provided you include this file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.
+
+* Where to get this WAD *
+
+At my web page: http://www.geocities.com/eyedecul

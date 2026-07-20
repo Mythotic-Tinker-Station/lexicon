@@ -3,7 +3,7 @@ name: Feature request
 about: Suggest an idea for the lexicon, not related to the mapsets but the function
   of lexicons vote map functions and code
 title: "[Suggestion] Feature Request: <brief description of request>"
-labels: ''
+labels: 'feature'
 assignees: ''
 
 ---

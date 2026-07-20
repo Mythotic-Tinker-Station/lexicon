@@ -1,0 +1,9 @@
+Actor Lexicon_C241_ShortGreenColumn : ShortGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX00 I -1
+		Stop
+	}
+}

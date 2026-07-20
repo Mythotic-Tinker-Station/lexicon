@@ -1,0 +1,352 @@
+Texture "EVLT0004", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "EVLT0005", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "EVLT0010", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+Texture "EVLT0011", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "EVLT0012", 256, 128
+{
+	Patch "EVLT0096", 0, 0
+	Patch "EVLT0097", 64, 0
+	Patch "EVLT0099", 128, 0
+	Patch "EVLT0098", 192, 0
+	Patch "EVLT0101", 0, 64
+	Patch "EVLT0103", 64, 64
+	Patch "EVLT0102", 128, 64
+	Patch "EVLT0100", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "EVLT0013", 128, 128
+{
+	Patch "EVLT0105", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "EVLT0104", 96, 0
+	Patch "EVLT0105", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "EVLT0104", 96, 64
+}
+Texture "EVLT0014", 128, 128
+{
+	Patch "EVLT0092", 26, 64
+	Patch "EVLT0091", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "EVLT0092", 28, 0
+	Patch "EVLT0095", 72, 64
+	Patch "EVLT0093", 72, 0
+	Patch "EVLT0094", 0, 0
+}
+Texture "EVLT0015", 256, 56
+{
+	Patch "EVLT0096", 0, 0
+	Patch "EVLT0097", 64, 0
+	Patch "EVLT0098", 128, 0
+	Patch "EVLT0102", 192, 0
+}
+Texture "EVLT0016", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "EVLT0090", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "EVLT0096", 0, 0
+	Patch "EVLT0090", 96, 4
+	Patch "EVLT0097", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "EVLT0018", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "EVLT0020", 16, 128
+{
+	Patch "EVLT0079", 0, 0
+	Patch "EVLT0079", 0, 56
+}
+Texture "EVLT0022", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "EVLT0108", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "EVLT0109", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "EVLT0110", 132, 69
+	Patch "EVLT0111", 68, 7
+	Patch "EVLT0112", 4, 7
+	Patch "EVLT0113", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "EVLT0023", 128, 128
+{
+	Patch "EVLT0081", 0, 56
+	Patch "EVLT0082", 64, 56
+	Patch "EVLT0081", 0, 0
+	Patch "EVLT0082", 64, 0
+}
+Texture "EVLT0027", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "EVLT0031", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 8
+}
+Texture "EVLT0032", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "EVLT0033", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "EVLT0034", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "EVLT0035", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "EVLT0036", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "EVLT0037", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "EVLT0038", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "EVLT0039", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "EVLT0040", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "EVLT0041", 128, 128
+{
+	Patch "EVLT0139", 0, 0
+}
+Texture "EVLT0042", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "EVLT0043", 128, 128
+{
+	Patch "EVLT0139", -120, -8
+}
+Texture "EVLT0049", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "EVLT0051", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
+}
+Texture "EVLT0052", 128, 128
+{
+	Patch "EVLT0127", 64, 70
+	Patch "EVLT0129", 0, 70
+	Patch "EVLT0128", 0, -2
+	Patch "EVLT0127", 64, -2
+}
+Texture "EVLT0053", 64, 128
+{
+	Patch "EVLT0130", 0, 0
+	Patch "EVLT0130", 0, 32
+	Patch "EVLT0130", 0, 96
+	Patch "EVLT0130", 0, 64
+}
+Texture "EVLT0054", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "EVLT0138", 14, 74
+}
+Texture "EVLT0057", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "EVLT0107", 4, 18
+	Patch "EVLT0107", 38, 18
+}
+Texture "EVLT0058", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "EVLT0107", 81, 34
+	Patch "EVLT0107", 19, 34
+}
+Texture "EVLT0059", 16, 128
+{
+	Patch "EVLT0126", -4, 56
+	Patch "EVLT0126", -4, 0
+}
+Texture "EVLT0060", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "EVLT0107", 7, 27
+	Patch "EVLT0107", 37, 27
+}
+Texture "EVLT0063", 64, 128
+{
+	Patch "WALL04_3", 0, 0
+	Patch "WALL04_4", 16, 0
+	Patch "WALL04_5", 32, 0
+	Patch "WALL04_2", 48, 0
+	Patch "NUKEDGE", 0, 104
+	Patch "WALL04_3", 0, 33
+	Patch "WALL04_4", 16, 33
+	Patch "WALL04_5", 32, 33
+	Patch "WALL04_2", 48, 33
+	Patch "PS20A0", -1, 68
+}
+Texture "EVLT0064", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, 56
+	Patch "CYL1_1", 0, 0
+	Patch "WALL01_1", 118, 0
+	Patch "WALL01_1", 117, 56
+}
+Texture "EVLT0065", 64, 128
+{
+	Patch "EVLT0131", 0, 0
+	Patch "EVLT0132", 32, 0
+}
+Texture "EVLT0066", 256, 128
+{
+	Patch "EVLT0122", 0, 0
+	Patch "EVLT0123", 128, 0
+}
+Texture "EVLT0068", 128, 128
+{
+	Patch "EVLT0118", -12, 0
+	Patch "EVLT0118", 116, 0
+}
+Texture "EVLT0069", 128, 128
+{
+	Patch "EVLT0119", -4, 0
+	Patch "EVLT0119", 124, 0
+}
+Texture "EVLT0071", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "EVLT0137", 0, 79
+	Patch "EVLT0137", 64, 15
+}

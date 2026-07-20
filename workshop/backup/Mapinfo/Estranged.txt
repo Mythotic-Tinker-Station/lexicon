@@ -265,6 +265,7 @@ nojump
 map EST30 "Chimes At Midnight"
 {
 next = "VR"
+sucktime = 1337
 music = "D_EST30"
 sky1 = "ESTSKY1"
 nocrouch

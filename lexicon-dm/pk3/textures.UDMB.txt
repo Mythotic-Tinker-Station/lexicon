@@ -1,0 +1,228 @@
+Texture "UDMB0076", 512, 128
+{
+	Patch "UDMB0480", 0, 0
+	Patch "UDMB0480", 64, 0
+	Patch "UDMB0480", 128, 0
+	Patch "UDMB0480", 192, 0
+	Patch "UDMB0480", 256, 0
+	Patch "UDMB0480", 320, 0
+	Patch "UDMB0480", 384, 0
+	Patch "UDMB0480", 448, 0
+	Patch "UDMB1004", 64, 4
+}
+Texture "UDMB0078", 64, 128
+{
+	Patch "UDMB0989", 0, 0
+	Patch "UDMB0989", 0, 64
+	{
+		FlipY
+	}
+}
+Texture "UDMB0085", 128, 128
+{
+	Patch "UDMB0133", 0, 0
+	Patch "UDMB0133", 64, 0
+	Patch "UDMB0969", 0, 0
+}
+Texture "UDMB0092", 128, 96
+{
+	Patch "W13_1", 0, 0
+	Patch "W13_1", 0, 24
+	Patch "UDMB0987", 17, 0
+	Patch "W13_1", 113, 0
+	Patch "W13_1", 113, 25
+}
+Texture "UDMB0155", 256, 128
+{
+	Patch "UDMB0570", 0, 0
+	Patch "UDMB0571", 64, 0
+	Patch "UDMB0573", 128, 0
+	Patch "UDMB0572", 192, 0
+	Patch "UDMB0575", 0, 64
+	Patch "UDMB0577", 64, 64
+	Patch "UDMB0576", 128, 64
+	Patch "UDMB0574", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "UDMB0156", 128, 128
+{
+	Patch "UDMB0579", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "UDMB0578", 96, 0
+	Patch "UDMB0579", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "UDMB0578", 96, 64
+}
+Texture "UDMB0159", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "UDMB0564", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "UDMB0570", 0, 0
+	Patch "UDMB0564", 96, 4
+	Patch "UDMB0571", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "UDMB0161", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "UDMB0165", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "UDMB0582", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "UDMB0583", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "UDMB0584", 132, 69
+	Patch "UDMB0585", 68, 7
+	Patch "UDMB0586", 4, 7
+	Patch "UDMB0587", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "UDMB0183", 128, 128
+{
+	Patch "UDMB0601", 64, 70
+	Patch "UDMB0603", 0, 70
+	Patch "UDMB0602", 0, -2
+	Patch "UDMB0601", 64, -2
+}
+Texture "UDMB0260", 64, 128
+{
+	Patch "UDMB0662", 0, 0
+	Patch "UDMB0662", 0, 64
+}
+Texture "UDMB0281", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0642", 5, 5
+}
+Texture "UDMB0282", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0641", 5, 5
+}
+Texture "UDMB0283", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0640", 5, 5
+}
+Texture "UDMB0284", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0638", 5, 5
+}
+Texture "UDMB0285", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0639", 5, 5
+}
+Texture "UDMB0286", 64, 64
+{
+	Patch "UDMB0643", 0, 0
+	Patch "UDMB0637", 5, 5
+}
+Texture "UDMB0297", 128, 128
+{
+	Patch "UDMB0625", 0, 0
+	Patch "UDMB0625", 64, 0
+}
+Texture "UDMB0298", 128, 128
+{
+	Patch "UDMB0242", 0, 0
+	Patch "UDMB0242", 64, 0
+}
+Texture "UDMB0332", 64, 128
+{
+	Patch "UDMB0742", 0, 0
+	Patch "UDMB0742", 0, 64
+}
+Texture "UDMB0333", 64, 128
+{
+	Patch "UDMB0743", 0, 0
+	Patch "UDMB0743", 0, 64
+}
+Texture "UDMB0334", 64, 128
+{
+	Patch "UDMB0744", 0, 0
+	Patch "UDMB0744", 0, 64
+}
+Texture "UDMB0336", 64, 128
+{
+	Patch "UDMB0746", 0, 0
+	Patch "UDMB0746", 0, 64
+}
+Texture "UDMB0337", 64, 128
+{
+	Patch "UDMB0747", 0, 0
+	Patch "UDMB0747", 0, 64
+}
+Texture "UDMB0366", 64, 128
+{
+	Patch "UDMB0747", 0, 0
+	Patch "UDMB0747", 0, 64
+}
+Texture "UDMB0416", 64, 128
+{
+	Patch "UDMB0412", 0, 0
+	Patch "UDMB0813", 0, 0
+}
+Texture "UDMB0438", 64, 128
+{
+	Patch "UDMB0839", 0, 0
+	Patch "UDMB0839", 0, 64
+}
+Texture "UDMB0439", 64, 128
+{
+	Patch "UDMB0840", 0, 0
+	Patch "UDMB0840", 0, 64
+}
+Texture "UDMB0491", 64, 128
+{
+	Patch "UDMB0486", 0, 0
+	Patch "UDMB0486", 16, 0
+	Patch "UDMB0486", 32, 0
+	Patch "UDMB0486", 48, 0
+	Patch "UDMB0493", 0, 0
+	Patch "UDMB0493", 0, 112
+}
+Texture "UDMB0525", 256, 128
+{
+	Patch "UDMB0932", 0, 0
+	Patch "UDMB0932", 64, 0
+	Patch "UDMB0932", 128, 0
+	Patch "UDMB0932", 192, 0
+	Patch "UDMB0538", 0, 16
+}

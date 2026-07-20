@@ -1,0 +1,598 @@
+
+         _______                                                    
+        |\      \                                                   
+        | +------+   ___          _______    ___    ___  _________  
+        | |######|  |\  \        /\      \  |\  \   \  \|\        \ 
+        | |##+---+  | +--+      /  /------\ | +--+  |+--+ +--------+
+        | |##|      | |##|     |\ /+######+\| |##|  ||##| |########|
+        | |##|      | |##|     | /+##+--+##+\ |##|  ||##| |###+----+
+        | |##|_____ | |##|____ | |###+--+###| |##|__||##| |###+----+
+        | |##|     \| |##|    \| |##########| |##|  \|##| |########|
+        | |##+------+ |##+-----+ |##+----+##| |##+---+##| |-----###|
+         \|#########|\|########|\|##|   \|##|\|#########|\|########|
+          +---------+ +--------+ +--+    +--+ +---------+ +--------+
+
+
+
+
+                  +---+ +---------+ +---------+ +--+    +--+
+                  |:::| |:::::::::| |:::::::::| |::|    |::|
+                  |:::| |::+---+::| +------+::| |::|    |::|
+                  |:::| |::|   |::| +------+::| |::|    |::|
+                  |:::| |::|   |::| |:::::::::| |::+----+::|
+                  |:::| |::|   |::| |::+------+ |::::::::::|
+                  |:::| |::|   |::| |::|        +-------+::|
+                  |:::| |::+---+::| |::+------+         |::|
+                  |:::| |:::::::::| |:::::::::|         |::|
+                  +---+ +---------+ +---------+         +--+
+
+                             /+++::::::::::::\
+                             \+++::::::::\+++|
+                                         |+++|
+                             /:::::::::::/+++|
+                             |+++/:::::::::::/
+                             |+++|
+                             |+++\::::::::+++\
+                             \::::::::::::+++/
+
+
+===========================================================================
+Advanced engine needed  : Boom and Boom-compatible ports.  
+Tested with             : prboom+, ZDoom, Risen3D
+
+
+Primary purpose         : Single player
+===========================================================================
+Title                   : Claustrophobia 1024 2: The Mystery of Too Many Maps
+Filename                : 1024cla2.wad
+                          1024cla2.txt
+Release date            : January 7th 2010
+===========================================================================
+Project Leader          : Jodwin
+Project Founder(s)      : Shitbag & Lutrov71 (Congestion 1024)
+                        : Mechadon (Claustrophobia 1024)
+===========================================================================
+Mappers/E-Mail          : Przemek 'Alterworldruler' Zimny       : ZimnyPr@Gmail.com
+
+                        : Cody 'Butts'                          : codys358@yahoo.com
+
+                        : Walter 'daimon' Confalonieri          : daimon.italia983@gmail.com
+
+                        : Elric 'Darkhaven/Fisk' Sullivan       : venomstryker@gmail.com
+
+                        : Ben 'Dreadopp' Taylor                 : skulltagger@gmail.com
+
+                        : gggmork                               : ---
+
+                        : Chris 'Impboy' Harriman               : impboy4@yahoo.com
+
+                        : Joonas 'Jodwin' Aijala                : jodwin@gmail.com
+
+                        : Justin 'KingKill33' Murphy            : dJ_MoBo@yahoo.com
+
+                        : Steve 'Kyka' Muller                   : sjdevh@yahoo.com
+
+                        : Lord Z                                : nzedopp@gmail.com
+
+                        : Mike 'Mik57' Ewer                     : Mik5757@yahoo.com
+
+                        : shotgunmasacre2                       : ---
+
+                        : Solarn                                : trehkan@gmail.com
+
+                        : Stuart (Stewboy) Rynn                 : stuart_rynn@hotmail.com
+
+                        : Stupidbunny                           : keegancovey@gmail.com
+
+                        : K. “TheMionicDonut” Larson            : Sparx7300@yahoo.com
+			
+===========================================================================
+===========================================================================
+Other files by authors:
+
+        Alterworldruler:        Dark Caliber, Xenus Revisited, Xenus 2: The New Nightmare
+
+        Butts:                  I made a map in Claustrophobia 1024. I detailed a map or two
+                                in Greenwar 2. 32-in-24-7: Made Map14, Map25; Detailed Map21.
+                                Diet 32-in-24: Detailed Map06.
+
+        daimon:                 really too much to list, bro
+
+        Fisk:                   f-tmcrr.wad, fskmps01.wad
+
+        Dreadopp:               ---
+
+        gggmork:                no 'official' releases
+
+        Impboy:                 Not telling you
+
+        Jodwin:                 A bunch of maps in 1024clau.wad, elegyftv.wad, oderesur.wad, etc...
+
+        KingKill33:             Padma (Claustrophobia)
+
+        Kyka:                   "MeaCulpa" project (under construction), from Claus1024:
+                                Map 04 (Detailing), Map 09, Map 17 (with Solarn and Jodwin) and
+                                Map 18 (with InsanityBringer))
+                                "Not so Simple" Doom2 map 07 remake.
+
+        Mik57:                  4 maps for GVH, about half of the maps for ZDWars
+
+        Lord Z:                 Two maps for the upcoming Heretic Treasure Chest, a map for the
+                                TEN Community map pack and a map for the upcoming Community Chest 4.
+
+        shotgunmasacre2:        ---
+
+        Solarn:                 None yet.
+
+        Stewboy:                Some 32in24s, a map in CC4
+
+        Stupidbunny:            HELLBND.WAD
+
+        TheMionicDonut:         closenc.wad
+
+===========================================================================
+===========================================================================
+Playtesters             : Snarboo
+                          The Green Herring
+
+                          r_rr
+                          nightmare93
+
+                          Kyka
+
+                          Snakes
+
+                          reki107
+
+                          ArmouredBlood
+
+                          hawkwind
+
+
+Music                   : Jimmy91 (title and intermission)
+                          Arthur Prawitt
+                          knight of doom
+                          Maxime Tondreau
+                          Derek Clay
+                          Octal Livershite
+                          The Jade Emperor
+                          Sam Palmer
+                          Magus15
+                          solis
+                          Jay Reichard
+                          David 'Tolwyn' Shaw
+                          Destructomatic 5001
+
+
+Textures                : François-Xavier Delmotte aka OgrO_FiX
+                               - Ogro Texture Pack
+                          Nick Baker, aka NiGHTMARE
+                               - Recoloured Doom and Doom 2 textures v2, 5th Episode textures
+                                 Useful flats, NiGHTMARE texture WAD 1, Silver textures
+                          Sean Johnson
+                               - Graphtallica Texture Pack
+                          David Gevert
+                               - DarkBase Texture Pack
+                          Jonathan Rimmer
+                               - Erratic Texture Pack 1
+                          Brett 'Mechadon' Harrell
+                               - CR8 Quake Texture Pack, IGPack Texture Edits, Various skies, 
+                                 HLLGRATE midtexture.  Compiled the texture resource.
+                          Espi
+                               - Suspended In Dusk textures
+                          esselfortium
+                               - Various textures from Greenwar 2, recolored version of the 
+                                 green glowy switches, esseltex set
+                          Eriance
+                               - Demon Eclipse textures
+                          Team TNT 
+                               - Final Doom (Evilution) textures
+                          Dreadopp
+                               - Key Switch textures/REDSHAWN
+                          Various Authors
+                               - Congestion 1024, Skulltag, 32in24-7, Gothic DM2,
+                                 Crucified Dreams.
+
+			  
+Graphics (from 1024Clau): Mechadon
+                               - TITLEPIC, INTERPIC, Statusbar, Bigfont, Smallfont, 
+                                 Menu graphics, CREDIT, HELP, M_THREM_, M_SLIDE_, 
+                                 M_DOOM, M_SKULL#, CWILV##, ENDOOM, CONFONT, and 
+                                 parts of the PLAYPAL.  Just about everything!
+                          Ravage
+                               - For parts of the PLAYPAL lump.
+                          AgentSpork
+                               - For his super smexy Simplicity blues.
+                          Wagi
+                               - For making ColorGenie and helping fix the pain 
+                                 flash issue.
+                          esselfortium
+                               - Is totally awesome for helping me fix the 
+                                 smallfont!
+                          Jimmy91
+                               - For making the "Jimmy91's super-cool menu 
+                                 patch creator"!
+
+
+Demos                   : Jodwin
+                      *Note* -- All of the demos were recorded with complevel 9.
+
+
+Additional Credits      : To Mechadon for giving Claus 2 his blessing, and all original
+                          mappers who were very cooperative with having their maps in
+                          Claus 2.
+
+===========================================================================
+===========================================================================
+Description             : Claustrophobia 1024 2 is the community-made sequel to
+                          Claustrophobia 1024 which was released in June 2009.  
+                          It's comprised of 34 brand-new maps restricting the player's 
+                          movements to a 1024x1024 space.  Decoration and monsters
+                          were allowed outside of this 1024 squared area.  The
+                          player is allowed outside of the 1024 boundary given
+                          he is killed instantly.  The focus of the project
+                          was to create a set of fun, quick & good looking maps while
+                          being able to work within the boundaries that were set.
+                          All of the maps were made to be played pistol start but
+                          it also plays just as well map-by-map.
+
+* What is included *
+
+New levels              : Yes
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01 - MAP32 (& MAP33 & MAP34)
+Single Player           : Yes
+Cooperative 2-4 Player  : Starts are there (but highly discouraged)
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Maps new from scratch, graphics based on Claustrophobia 1024
+Build Time              : 
+Editor(s) used          : Doom Builder, Doom Builder 2, XWE, Paint Shop Pro, 
+                          ENDOOMER, Irfanview
+Known Bugs              : - Exiting MAP33 in Boom, MBF, or WinMBF will cause the game
+                            to crash.  This may also happen in other, similar ports.
+                            You can still play the map but you will not be able to see
+                            your stats upon exiting.  Play the map in a newer sourceport
+                            if you want to see your stats (PrBoom+, ZDoom, etc).
+May Not Run With...     : Any non-Boom compatible ports.
+
+===========================================================================
+===========================================================================
+
+**Map List**
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+1.      Poliganoy               :Author:        Stewboy
+                                :Add. Author:   -/-
+                                :Description:   ---
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+2.      Corrosion               :Author:        shotgunmasacre2
+                                :Add. Author:   Jodwin
+                                :Description:   ---
+                                :Music:         "Scent of Hell" by David 'Tolwyn' Shaw
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+3.      Tekno1000               :Author:        Jodwin
+                                :Add. Author:   -/-
+                                :Description:   A simple techbase, originally created
+                                                before Break the Chain from 1024clau.
+                                :Music:         Stage 3 Rock remix from Double Dragon
+                                                sequenced by Arthur Prawitt
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+4.      666 Feet Under          :Author:        Impboy	
+                                :Add. Author:   Daimon
+                                :Description:   Fight through hell basically.
+                                :Music:         "Demons on the Prey" (E1M7) by Bobby Prince
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+5.      Enough Space?           :Author:        Lord_Z
+                                :Add. Author:   KingKill33 & Jodwin & Dreadopp & Mechadon
+                                :Description:   A cruise through the outer stretches of
+                                                the galaxy gone horribly wrong.
+                                :Music:         TNT:Evilution Map16
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+6.      Severed Survival        :Author:        Fisk & Daimon
+                                :Add. Author:   Jodwin
+                                :Description:   In an unforeseen teleportation malfunction,
+                                                you've somehow ended up severed from the
+                                                rest of your squad in a hellish outpost.
+                                :Music:         "And So I carry on..." by David 'Tolwyn' Shaw
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+7.      Into Hell               :Author:        KingKill33
+                                :Add. Author:   -/-
+                                :Description:   The smell of rot surrounds you, as the
+                                                bodies of countless demons and fellow
+                                                marines lay before you. You are trapped
+                                                in this morbid arena, and must fight to
+                                                survive. Can you?
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+8.      Minimal House           :Author:        Daimon
+                                :Add. Author:   Jodwin
+                                :Description:   Oh well, is a house. It looks so 1994 era,
+                                                dude, but for this reason you like it!
+                                :Music:         Super Robot Wars theme remixed by knigth
+                                                of doom
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+9.      Handful of Dread        :Author:        Dreadopp
+                                :Add. Author:   -/-
+                                :Description:   ---
+                                :Music:         "I Sawed The Demons" (E2M1) by Bobby Prince
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+10.     Metallic Echo           :Author:        Stewboy
+                                :Add. Author:   -/-
+                                :Description:   ---
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+11.     A Minor Doomsday        :Author:        Daimon
+                                :Add. Author:   Jodwin
+                                :Description:   A run through Doom, you begin in the lost
+                                                station of Phobos, then you'll walk on the
+
+                                                forgotten fleshy mech structure of Deimos,
+
+                                                and you take over in a little Hell Outpost.
+                                :Music:         Introduction theme from Megaman X 2, remixed
+
+                                                by Zoraspace
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+12.     Stagnant Depot          :Author:        KingKill33
+                                :Add. Author:   Jodwin
+                                :Description:   Haven't those demons heard that mail gets
+                                                x-rayed? They seem to be planning on
+
+                                                taking the next train out of here to 4k.
+
+                                                Make sure they miss their departure.
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+13.     The Blood Factory       :Author:        StupidBunny & Kyka
+                                :Add. Author:   -/-
+                                :Description:   Lots of close-quarters gameplay, some
+
+                                                tricky bits here and there. Action takes
+
+                                                place in factory building, with lots
+
+                                                large external area added for sense of space.
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+14.     Twilight of the         :Author:        alterworldruler
+        Demons                  :Add. Author:   -/-
+                                :Description:   This map was merely mine experiment with
+
+                                                setting up a moody atmosphere in a 1024
+
+                                                map, large bridges, crates underthem and
+
+                                                that crap. The bridge part was hard to
+
+                                                make but it was all worth it as it
+
+                                                expanded the play area.
+                                :Music:         "Breakaway" by Maxime Tondreau
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+15.     Spirited Away           :Author:        Jodwin
+                                :Add. Author:   -/-
+                                :Description:   You have been spirited away by the demons
+
+                                                to a gothic castle, where you had been
+
+                                                buried alive. Can you also escape alive?
+
+                                                Or will you be further spirited away to
+
+                                                the secret worlds..?
+                                :Music:         "Mystic's Glance" by David 'Tolwyn' Shaw
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+16.     End of the Line         :Author:        KingKill33
+                                :Add. Author:   Jodwin
+                                :Description:   This old, worn-down base has now become
+
+                                                the outpost of the demons. You must
+
+                                                clean them out and take it back so that
+
+                                                the humans may have a chance to survive.
+                                :Music:         "The Reflecting God" by Marilyn Manson
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+17.     Dismalady               :Author:        alterworldruler & TheMionicDonut
+                                :Add. Author:   Jodwin
+                                :Description:   alter: Originally, it was my second contribution
+
+                                                but I didn't finish it so TheMionicDonut
+
+                                                did the rest of the map so you can say,
+
+                                                it was our collaboration and I REALLY
+
+                                                gotta thank that guy, for finishing such
+
+
+                                                beautiful map.
+
+                                                TMD: For some reason vague enough to work
+                                                in Doom, you have teleported into yet
+                                                another demon-infested techbase. What are
+                                                the odds! You aren't the only one with
+                                                access to this warp though...
+                                :Music:         "Final Jam" by Derek Clay
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+18.     Graytech Industries     :Author:        Impboy
+                                :Add. Author:   Jodwin
+                                :Description:   A grayish base with hellspawn taken over.
+                                :Music:         "Helicopter" from Laser Invasion sequenced
+                                                by Octal Livershite
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+19.     Complex4k               :Author:        KingKill33 & Kyka
+                                :Add. Author:   -/-
+                                :Description:   Maybe you should've just came here instead
+                                                of dealing with the depot? Stop the demons
+                                                before they can use the mining facilities
+                                                for their own evil needs.
+                                :Music:         "Demanufacture" by Fear Factory
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+20.     Calypso Station         :Author:        Mik57
+                                :Add. Author:   Daimon
+                                :Description:   Another one of my first maps. I like how it
+                                                turned out, and I gained some old school
+                                                mapping experience from making it.
+                                :Music:         "Monuments of Treason" by Maxime Tondreau
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+21.     Darkness abides         :Author:        Jodwin
+                                :Add. Author:   -/-
+                                :Description:   A bunch of fights in a Quakeish underground
+                                                base.
+                                :Music:         "Assault" by Maxime Tondreau
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+22.     Power Station           :Author:        KingKill33 & Dreadopp
+                                :Add. Author:   -/-
+                                :Description:   The demons have knocked out the power, and
+                                                obviously, taken out the defense grids. It
+                                                won't be easy, but you need to get in
+                                                there and clear them out so that resistance
+                                                can get the grids back on.
+                                :Music:         "Moskau" by Rammstein
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+23.     The Dark Dawn           :Author:        alterworldruler
+                                :Add. Author:   Jodwin
+                                :Description:   This was my last contribution to original
+                                                claus which wasn't so good but it got
+                                                improved thanks to all these small people
+                                                in the team.
+                                :Music:         "House #3" from "A Nightmare on Elm Street"
+                                                by The Jade Emperor
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+24.     Oil Rig Zero            :Author:        Mik57
+                                :Add. Author:   Jodwin
+                                :Description:   One of my first serious maps. Had a few
+                                                noobisms, but Jodwin ironed them out
+                                                pretty well.
+                                                Story: Only 2 days until this Oil Rig was
+                                                constructed, it was invaded by Hell. It
+                                                is crucial to the EDF. It must be
+                                                recaptured at all costs.
+                                :Music:         "Warfare" from Command and Conquer:
+                                                Tiberian Dawn, converted to MIDI by Sam
+                                                Palmer
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+25.     The Process             :Author:        KingKill33 & Kyka
+                                :Add. Author:   -/-
+                                :Description:   The central delivery facility is over-run
+                                                with hellspawn, and it's your job to clean
+                                                house. Make sure you don't get the packages
+                                                bloody, though.
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+26.     Into the Skies          :Author:        Jodwin
+                                :Add. Author:   -/-
+                                :Description:   A bunch of fights in a techbase high in
+                                                the mountains.
+                                :Music:         "Shadow Boss" remix from Double Dragon 2
+                                                by Magus15
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+27.     Tower of Desolation     :Author:        Solarn
+                                :Add. Author:   Jodwin
+                                :Description:   An old, crumbling tower in the wastelands
+                                                of Hell. It seems empty as you go in, but... 
+                                :Music:         "In the arms of death" from Guilty Gear Isuka.
+                                                Converted to .midi by solis
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+28.     Obliteration            :Author:        Butts
+                                :Add. Author:   Jodwin
+                                :Description:   I just felt like making an unfair and
+                                                difficult map, where the focus was surviving
+                                                the hordes. It had to get toned down severely.
+                                :Music:         "Slayer of Light" by Ensiferum
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+29.     Taggart Sails to        :Author:        Jodwin
+        Orion                   :Add. Author:   -/-
+                                :Description:   A castle in the crimson realms between life
+                                                and afterlife. Can you make it through, or
+                                                will you be slain and left in the limbo for
+                                                ages to come?
+                                :Music:         "Pharaoh Sails to the Orion" by Nightwish
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+30.     ???                     :Author:        gggmork
+                                :Add. Author:   -/-
+                                :Description:   ...
+                                :Music:         "Prey" by Destructomatic 5001
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+31.     Somewhere That's        :Author:        TheMionicDonut
+        Green                   :Add. Author:   Jodwin & Daimon
+                                :Description:   This was the first thing that came to mind
+                                                when I saw the glorious new 1024 palette,
+                                                full of bright...greenness. Its just crazy
+                                                enough to qualify for a secret map, and I
+                                                hope you like the super secret exit method
+                                                as much as I did thinking of it. :]
+
+                                                With apologies to Alan Menkin
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+32.     Proceed With Caution    :Author:        Kyka
+                                :Add. Author:   -/-
+                                :Description:   I really wanted to make a 1024 map that
+                                                was just one big room. No corridors, no
+                                                fancy switch hunts, no nothing except you,
+                                                some guns and a stroll across a room to a
+                                                conveniently placed exit. After months of
+                                                work and helpful suggestions from a bunch
+                                                of people (DeathDestiny, Mechadon, Jodwin,
+                                                Hawkwind, The Green Herring), this is the
+                                                result. It is different from your usual
+                                                Doom gameplay, but I hope people like it.
+                                :Music:         
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+33.     The Unknown Machine     :Author:        Jodwin & Kyka
+                                :Add. Author:   -/-
+                                :Description:   The hellspawn have begun their invasion on 
+                                                the last civilian holding vault, and you alone
+                                                are left to oppose them. It is time to make
+                                                the last stand...can you prevail against the
+                                                hordes until you manage to destroy the
+                                                teleportation machine?
+                                :Music:         "Overclock" by Jimmy91
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+34.     Abstraction             :Author:        gggmork & Kyka
+                                :Add. Author:   -/-
+                                :Description:   gggmork = main layout, kyka = a lot of the
+                                                main textures/detail, jodwin = some zdoom
+                                                vs. prboom-plus compatibility touch-ups
+                                :Music:         "Rattlesnake" by Jimmy91 (Boom)
+                                                "Bark at the Moon" by Ozzy Osbourne (ZDoom
+                                                and Eternity)
++-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
+
+===========================================================================
+===========================================================================
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

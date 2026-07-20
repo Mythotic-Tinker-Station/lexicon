@@ -421,6 +421,7 @@ map SOD_33 "Descent to Nowhere"
 	{
 	titlepatch = "SODTP32"
 	next = "VR"
+	sucktime = 1337
 	enterpic = "SODINT"
 	exitpic = "SODINT"
 	intermusic = "D_SODINT"

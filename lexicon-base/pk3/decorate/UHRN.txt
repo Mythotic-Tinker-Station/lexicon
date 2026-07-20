@@ -1,0 +1,6 @@
+ACTOR Lexicon_UHRN_SpiderMastermind : SpiderMastermind
+{
+	ReactionTime 4
+	Speed 15
+	PainChance 15
+}

@@ -1,0 +1,855 @@
+Texture "D4040034", 256, 64
+{
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "COMP03_4", 192, 0
+	Patch "COMP03_4", 224, 0
+	Patch "D4040289", 0, 0
+	Patch "D4040290", 64, 0
+	Patch "D4040293", 128, 0
+}
+Texture "D4040035", 256, 64
+{
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "COMP03_4", 192, 0
+	Patch "COMP03_4", 224, 0
+	Patch "D4040289", 0, 0
+	Patch "D4040291", 64, 0
+	Patch "D4040293", 128, 0
+}
+Texture "D4040036", 256, 64
+{
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "COMP03_4", 192, 0
+	Patch "COMP03_4", 224, 0
+	Patch "D4040289", 0, 0
+	Patch "D4040292", 64, 0
+	Patch "D4040293", 128, 0
+}
+Texture "D4040037", 256, 64
+{
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "COMP03_4", 192, 0
+	Patch "COMP03_4", 224, 0
+	Patch "D4040289", 0, 0
+	Patch "D4040291", 64, 0
+	Patch "D4040293", 128, 0
+}
+Texture "D4040038", 128, 128
+{
+	Patch "D4040033", 32, 0
+	Patch "D4040294", 0, 0
+	Patch "D4040294", 0, 64
+	Patch "D4040295", 96, 0
+	Patch "D4040295", 96, 64
+}
+Texture "D4040039", 128, 128
+{
+	Patch "D4040296", 64, 70
+	Patch "D4040298", 0, 70
+	Patch "D4040297", 0, -2
+	Patch "D4040296", 64, -2
+}
+Texture "D4040040", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "EXIT1", 16, 20
+}
+Texture "D4040041", 128, 128
+{
+	Patch "D4040300", 0, 0
+	Patch "D4040299", 0, 64
+}
+Texture "D4040042", 128, 128
+{
+	Patch "D4040301", 0, 0
+	Patch "D4040299", 0, 64
+}
+Texture "D4040043", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_1", 0, 64
+	Patch "COMP03_1", 64, 64
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_8", 0, 0
+	Patch "COMP03_8", 96, 0
+	Patch "COMP03_4", 0, 64
+	Patch "COMP03_4", 96, 64
+}
+Texture "D4040044", 128, 128
+{
+	Patch "D4040302", 0, 0
+	Patch "D4040299", 0, 64
+}
+Texture "D4040045", 128, 128
+{
+	Patch "D4040063", 0, 0
+	Patch "D4040063", 64, 0
+	Patch "D4040300", 0, 31
+}
+Texture "D4040046", 128, 128
+{
+	Patch "D4040066", 0, 0
+	Patch "D4040066", 64, 0
+	Patch "D4040301", 0, 31
+}
+Texture "D4040047", 128, 128
+{
+	Patch "D4040195", 0, 0
+	Patch "D4040195", 64, 0
+	Patch "D4040302", 0, 31
+}
+Texture "D4040048", 128, 128
+{
+	Patch "D4040195", 0, 0
+	Patch "D4040195", 64, 0
+	Patch "D4040302", 0, 31
+	Patch "PS20A0", 33, 45
+}
+Texture "D4040050", 8, 128
+{
+	Patch "D4040304", 0, 0
+	Patch "D4040305", 0, 8
+	Patch "D4040305", 0, 16
+	Patch "D4040306", 0, 24
+	Patch "D4040304", 0, 32
+	Patch "D4040305", 0, 40
+	Patch "D4040305", 0, 48
+	Patch "D4040306", 0, 56
+	Patch "D4040304", 0, 64
+	Patch "D4040305", 0, 72
+	Patch "D4040305", 0, 80
+	Patch "D4040306", 0, 88
+	Patch "D4040304", 0, 96
+	Patch "D4040305", 0, 104
+	Patch "D4040305", 0, 112
+	Patch "D4040306", 0, 120
+}
+Texture "D4040051", 8, 128
+{
+	Patch "D4040304", 0, 0
+	Patch "D4040306", 0, 8
+	Patch "D4040304", 0, 16
+	Patch "D4040306", 0, 24
+	Patch "D4040304", 0, 32
+	Patch "D4040306", 0, 40
+	Patch "D4040304", 0, 48
+	Patch "D4040306", 0, 56
+	Patch "D4040304", 0, 64
+	Patch "D4040306", 0, 72
+	Patch "D4040304", 0, 80
+	Patch "D4040306", 0, 88
+	Patch "D4040304", 0, 96
+	Patch "D4040306", 0, 104
+	Patch "D4040304", 0, 112
+	Patch "D4040306", 0, 120
+}
+Texture "D4040052", 32, 128
+{
+	Patch "D4040307", 0, 0
+	Patch "D4040308", 8, 0
+	Patch "D4040308", 16, 0
+	Patch "D4040309", 24, 0
+	Patch "D4040307", 0, 8
+	Patch "D4040308", 8, 8
+	Patch "D4040308", 16, 8
+	Patch "D4040309", 24, 8
+	Patch "D4040307", 0, 16
+	Patch "D4040308", 8, 16
+	Patch "D4040308", 16, 16
+	Patch "D4040309", 24, 16
+	Patch "D4040307", 0, 24
+	Patch "D4040308", 8, 24
+	Patch "D4040308", 16, 24
+	Patch "D4040309", 24, 24
+	Patch "D4040307", 0, 32
+	Patch "D4040308", 8, 32
+	Patch "D4040308", 16, 32
+	Patch "D4040309", 24, 32
+	Patch "D4040307", 0, 40
+	Patch "D4040308", 8, 40
+	Patch "D4040308", 16, 40
+	Patch "D4040309", 24, 40
+	Patch "D4040307", 0, 48
+	Patch "D4040308", 8, 48
+	Patch "D4040308", 16, 48
+	Patch "D4040309", 24, 48
+	Patch "D4040307", 0, 56
+	Patch "D4040308", 8, 56
+	Patch "D4040308", 16, 56
+	Patch "D4040309", 24, 56
+	Patch "D4040307", 0, 64
+	Patch "D4040308", 8, 64
+	Patch "D4040308", 16, 64
+	Patch "D4040309", 24, 64
+	Patch "D4040307", 0, 72
+	Patch "D4040308", 8, 72
+	Patch "D4040308", 16, 72
+	Patch "D4040309", 24, 72
+	Patch "D4040307", 0, 80
+	Patch "D4040308", 8, 80
+	Patch "D4040308", 16, 80
+	Patch "D4040309", 24, 80
+	Patch "D4040307", 0, 88
+	Patch "D4040308", 8, 88
+	Patch "D4040308", 16, 88
+	Patch "D4040309", 24, 88
+	Patch "D4040307", 0, 96
+	Patch "D4040308", 8, 96
+	Patch "D4040308", 16, 96
+	Patch "D4040309", 24, 96
+	Patch "D4040307", 0, 104
+	Patch "D4040308", 8, 104
+	Patch "D4040308", 16, 104
+	Patch "D4040309", 24, 104
+	Patch "D4040307", 0, 112
+	Patch "D4040308", 8, 112
+	Patch "D4040308", 16, 112
+	Patch "D4040309", 24, 112
+	Patch "D4040307", 0, 120
+	Patch "D4040308", 8, 120
+	Patch "D4040308", 16, 120
+	Patch "D4040309", 24, 120
+}
+Texture "D4040053", 16, 128
+{
+	Patch "D4040307", 0, 0
+	Patch "D4040309", 8, 0
+	Patch "D4040307", 0, 8
+	Patch "D4040309", 8, 8
+	Patch "D4040307", 0, 16
+	Patch "D4040309", 8, 16
+	Patch "D4040307", 0, 24
+	Patch "D4040309", 8, 24
+	Patch "D4040307", 0, 32
+	Patch "D4040309", 8, 32
+	Patch "D4040307", 0, 40
+	Patch "D4040309", 8, 40
+	Patch "D4040307", 0, 48
+	Patch "D4040309", 8, 48
+	Patch "D4040307", 0, 56
+	Patch "D4040309", 8, 56
+	Patch "D4040307", 0, 64
+	Patch "D4040309", 8, 64
+	Patch "D4040307", 0, 72
+	Patch "D4040309", 8, 72
+	Patch "D4040307", 0, 80
+	Patch "D4040309", 8, 80
+	Patch "D4040307", 0, 88
+	Patch "D4040309", 8, 88
+	Patch "D4040307", 0, 96
+	Patch "D4040309", 8, 96
+	Patch "D4040307", 0, 104
+	Patch "D4040309", 8, 104
+	Patch "D4040307", 0, 112
+	Patch "D4040309", 8, 112
+	Patch "D4040307", 0, 120
+	Patch "D4040309", 8, 120
+}
+Texture "D4040055", 16, 128
+{
+	Patch "D4040311", 0, 0
+	Patch "D4040311", 0, 56
+}
+Texture "D4040056", 16, 128
+{
+	Patch "D4040312", 0, 56
+	Patch "D4040307", 0, 0
+	Patch "D4040309", 8, 0
+	Patch "D4040307", 0, 8
+	Patch "D4040309", 8, 8
+	Patch "D4040307", 0, 16
+	Patch "D4040309", 8, 16
+	Patch "D4040307", 0, 24
+	Patch "D4040309", 8, 24
+	Patch "D4040307", 0, 32
+	Patch "D4040309", 8, 32
+	Patch "D4040307", 0, 40
+	Patch "D4040309", 8, 40
+	Patch "D4040307", 0, 48
+	Patch "D4040309", 8, 48
+}
+Texture "D4040083", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "D4040340", 0, 0
+	Patch "D4040340", 40, 0
+}
+Texture "D4040084", 128, 64
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_2", 64, 0
+	Patch "D4040341", 0, 0
+	Patch "D4040341", 0, 40
+}
+Texture "D4040095", 128, 128
+{
+	Patch "D4040057", 0, 0
+	Patch "D4040276", 60, 60
+}
+Texture "D4040096", 128, 128
+{
+	Patch "D4040058", 0, 0
+	Patch "D4040276", 60, 60
+}
+Texture "D4040111", 64, 128
+{
+	Patch "D4040087", 0, 0
+	Patch "D4040097", 0, 31
+}
+Texture "D4040112", 64, 128
+{
+	Patch "D4040087", 0, 0
+	Patch "D4040098", 0, 31
+}
+Texture "D4040113", 64, 128
+{
+	Patch "D4040090", 0, 0
+	Patch "D4040097", 0, 31
+}
+Texture "D4040114", 64, 128
+{
+	Patch "D4040090", 0, 0
+	Patch "D4040098", 0, 31
+}
+Texture "D4040180", 256, 128
+{
+	Patch "SW11_4", 0, 0
+	Patch "D4040275", 32, 0
+	Patch "SW11_4", 64, 0
+	Patch "D4040275", 96, 0
+	Patch "SW11_4", 128, 0
+	Patch "D4040275", 160, 0
+	Patch "SW11_4", 192, 0
+	Patch "D4040275", 224, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040181", 256, 128
+{
+	Patch "SW11_4", 0, 0
+	Patch "D4040275", 32, 0
+	Patch "SW11_4", 64, 0
+	Patch "D4040275", 96, 0
+	Patch "SW11_4", 128, 0
+	Patch "D4040275", 160, 0
+	Patch "SW11_4", 192, 0
+	Patch "D4040275", 224, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040182", 256, 128
+{
+	Patch "SW12_1", 0, 0
+	Patch "SW12_2", 32, 0
+	Patch "SW12_1", 64, 0
+	Patch "SW12_2", 96, 0
+	Patch "SW12_1", 128, 0
+	Patch "SW12_2", 160, 0
+	Patch "SW12_1", 192, 0
+	Patch "SW12_2", 224, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040183", 256, 128
+{
+	Patch "SW12_1", 0, 0
+	Patch "SW12_2", 32, 0
+	Patch "SW12_1", 64, 0
+	Patch "SW12_2", 96, 0
+	Patch "SW12_1", 128, 0
+	Patch "SW12_2", 160, 0
+	Patch "SW12_1", 192, 0
+	Patch "SW12_2", 224, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040184", 256, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_2", 32, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_1", 128, 0
+	Patch "SW11_2", 160, 0
+	Patch "SW11_1", 192, 0
+	Patch "SW11_2", 224, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040185", 256, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_2", 32, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_1", 128, 0
+	Patch "SW11_2", 160, 0
+	Patch "SW11_1", 192, 0
+	Patch "SW11_2", 224, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040186", 256, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW12_4", 64, 0
+	Patch "SW12_5", 96, 0
+	Patch "SW12_4", 128, 0
+	Patch "SW12_5", 160, 0
+	Patch "SW12_4", 192, 0
+	Patch "SW12_5", 224, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040187", 256, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW12_4", 64, 0
+	Patch "SW12_5", 96, 0
+	Patch "SW12_4", 128, 0
+	Patch "SW12_5", 160, 0
+	Patch "SW12_4", 192, 0
+	Patch "SW12_5", 224, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040188", 256, 128
+{
+	Patch "D4040160", 0, 0
+	Patch "D4040160", 64, 0
+	Patch "D4040160", 128, 0
+	Patch "D4040160", 192, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040189", 256, 128
+{
+	Patch "D4040160", 0, 0
+	Patch "D4040160", 64, 0
+	Patch "D4040160", 128, 0
+	Patch "D4040160", 192, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040190", 256, 128
+{
+	Patch "D4040161", 0, 0
+	Patch "D4040161", 64, 0
+	Patch "D4040161", 128, 0
+	Patch "D4040161", 192, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040191", 256, 128
+{
+	Patch "D4040161", 0, 0
+	Patch "D4040161", 64, 0
+	Patch "D4040161", 128, 0
+	Patch "D4040161", 192, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040204", 128, 128
+{
+	Patch "D4040192", 0, 0
+	Patch "D4040276", 60, 60
+}
+Texture "D4040206", 256, 128
+{
+	Patch "D4040089", 0, 0
+	Patch "D4040089", 64, 0
+	Patch "D4040089", 128, 0
+	Patch "D4040089", 192, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 128, 0
+}
+Texture "D4040207", 64, 128
+{
+	Patch "D4040195", 0, 0
+	Patch "WALL03_7", 0, 32
+}
+Texture "D4040208", 64, 128
+{
+	Patch "D4040063", 0, 0
+	Patch "WALL03_7", 0, 32
+}
+Texture "D4040209", 64, 128
+{
+	Patch "D4040066", 0, 0
+	Patch "WALL03_7", 0, 32
+}
+Texture "D4040210", 256, 128
+{
+	Patch "D4040066", 0, 0
+	Patch "D4040066", 64, 0
+	Patch "D4040066", 128, 0
+	Patch "D4040066", 192, 0
+	Patch "COMP04_5", 192, 32
+	Patch "COMP04_6", 96, 32
+	Patch "COMP03_4", 160, 32
+	Patch "COMP03_8", 64, 32
+	Patch "COMP04_8", 0, 32
+}
+Texture "D4040211", 256, 128
+{
+	Patch "D4040066", 0, 0
+	Patch "D4040066", 64, 0
+	Patch "D4040066", 128, 0
+	Patch "D4040066", 192, 0
+	Patch "COMP03_4", 0, 32
+	Patch "COMP03_5", 32, 32
+	Patch "COMP04_1", 96, 32
+	Patch "COMP03_8", 160, 32
+	Patch "COMP04_2", 192, 32
+}
+Texture "D4040212", 128, 128
+{
+	Patch "D4040057", 0, 0
+	Patch "PS20A0", 32, 32
+}
+Texture "D4040213", 128, 128
+{
+	Patch "D4040058", 0, 0
+	Patch "PS20A0", 32, 32
+}
+Texture "D4040214", 256, 128
+{
+	Patch "D4040086", 0, 0
+	Patch "D4040086", 64, 0
+	Patch "D4040086", 128, 0
+	Patch "D4040086", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040215", 256, 128
+{
+	Patch "D4040085", 0, 0
+	Patch "D4040085", 64, 0
+	Patch "D4040085", 128, 0
+	Patch "D4040085", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040216", 256, 128
+{
+	Patch "D4040087", 0, 0
+	Patch "D4040087", 64, 0
+	Patch "D4040087", 128, 0
+	Patch "D4040087", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040217", 256, 128
+{
+	Patch "D4040088", 0, 0
+	Patch "D4040088", 64, 0
+	Patch "D4040088", 128, 0
+	Patch "D4040088", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040218", 256, 128
+{
+	Patch "D4040089", 0, 0
+	Patch "D4040089", 64, 0
+	Patch "D4040089", 128, 0
+	Patch "D4040089", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040219", 256, 128
+{
+	Patch "D4040090", 0, 0
+	Patch "D4040090", 64, 0
+	Patch "D4040090", 128, 0
+	Patch "D4040090", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040220", 256, 128
+{
+	Patch "D4040201", 0, 0
+	Patch "D4040201", 64, 0
+	Patch "D4040201", 128, 0
+	Patch "D4040201", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040221", 256, 128
+{
+	Patch "D4040202", 0, 0
+	Patch "D4040202", 64, 0
+	Patch "D4040202", 128, 0
+	Patch "D4040202", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040222", 256, 128
+{
+	Patch "D4040203", 0, 0
+	Patch "D4040203", 64, 0
+	Patch "D4040203", 128, 0
+	Patch "D4040203", 192, 0
+	Patch "W107_1", 0, 0
+}
+Texture "D4040223", 256, 128
+{
+	Patch "D4040085", 0, 0
+	Patch "D4040085", 64, 0
+	Patch "D4040085", 128, 0
+	Patch "D4040085", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040224", 256, 128
+{
+	Patch "D4040086", 0, 0
+	Patch "D4040086", 64, 0
+	Patch "D4040086", 128, 0
+	Patch "D4040086", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040225", 256, 128
+{
+	Patch "D4040087", 0, 0
+	Patch "D4040087", 64, 0
+	Patch "D4040087", 128, 0
+	Patch "D4040087", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040226", 256, 128
+{
+	Patch "D4040088", 0, 0
+	Patch "D4040088", 64, 0
+	Patch "D4040088", 128, 0
+	Patch "D4040088", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040227", 256, 128
+{
+	Patch "D4040089", 0, 0
+	Patch "D4040089", 64, 0
+	Patch "D4040089", 128, 0
+	Patch "D4040089", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040228", 256, 128
+{
+	Patch "D4040090", 0, 0
+	Patch "D4040090", 64, 0
+	Patch "D4040090", 128, 0
+	Patch "D4040090", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040229", 256, 128
+{
+	Patch "D4040201", 0, 0
+	Patch "D4040201", 64, 0
+	Patch "D4040201", 128, 0
+	Patch "D4040201", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040230", 256, 128
+{
+	Patch "D4040202", 0, 0
+	Patch "D4040202", 64, 0
+	Patch "D4040202", 128, 0
+	Patch "D4040202", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040231", 256, 128
+{
+	Patch "D4040203", 0, 0
+	Patch "D4040203", 64, 0
+	Patch "D4040203", 128, 0
+	Patch "D4040203", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "D4040232", 256, 128
+{
+	Patch "D4040203", 0, 0
+	Patch "D4040203", 64, 0
+	Patch "D4040203", 128, 0
+	Patch "D4040203", 192, 0
+	Patch "COMP04_2", 0, 32
+	Patch "COMP04_1", 64, 32
+	Patch "COMP03_1", 128, 31
+	Patch "COMP03_5", 160, 32
+	Patch "COMP03_8", 224, 32
+}
+Texture "D4040233", 64, 128
+{
+	Patch "D4040026", 0, 0
+	Patch "EXIT1", 16, 32
+}
+Texture "D4040234", 64, 128
+{
+	Patch "D4040027", 0, 0
+	Patch "EXIT1", 16, 32
+}
+Texture "D4040235", 64, 128
+{
+	Patch "D4040028", 0, 0
+	Patch "EXIT1", 16, 32
+}
+Texture "D4040236", 256, 128
+{
+	Patch "D4040033", 0, 0
+	Patch "D4040033", 64, 0
+	Patch "D4040033", 128, 0
+	Patch "D4040033", 192, 0
+	Patch "D4040432", 0, 0
+}
+Texture "D4040237", 128, 128
+{
+	Patch "D4040033", 0, 0
+	Patch "D4040033", 64, 0
+	Patch "D4040430", 0, 0
+}
+Texture "D4040238", 128, 128
+{
+	Patch "D4040033", 64, 0
+	Patch "D4040033", 0, 0
+	Patch "D4040431", 0, 0
+}
+Texture "D4040239", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_1", 0, 64
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_1", 64, 64
+	Patch "D4040431", 0, 0
+}
+Texture "D4040240", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_1", 0, 64
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_1", 64, 64
+	Patch "D4040430", 0, 0
+}
+Texture "D4040241", 256, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_1", 64, 0
+	Patch "COMP03_1", 128, 0
+	Patch "COMP03_1", 192, 0
+	Patch "COMP03_1", 192, 64
+	Patch "COMP03_1", 128, 64
+	Patch "COMP03_1", 64, 64
+	Patch "COMP03_1", 0, 64
+	Patch "D4040432", 0, 0
+}
+Texture "D4040242", 64, 128
+{
+	Patch "RW33_2", 0, 32
+	Patch "D4040066", 0, -96
+	Patch "D4040066", 0, 96
+}
+Texture "D4040243", 64, 128
+{
+	Patch "RW33_1", 0, 32
+	Patch "D4040066", 0, -96
+	Patch "D4040066", 0, 96
+}
+Texture "D4040244", 64, 128
+{
+	Patch "RW33_2", 0, -32
+	Patch "D4040066", 0, -96
+	Patch "D4040066", 0, 96
+}
+Texture "D4040245", 128, 128
+{
+	Patch "W94_1", 0, 0
+	Patch "D4040195", 64, 96
+	Patch "D4040195", 0, 96
+	Patch "D4040195", 0, -96
+	Patch "D4040195", 64, -96
+}
+Texture "D4040246", 256, 128
+{
+	Patch "SNAK7_1", 0, 0
+	Patch "SNAK7_1", 64, 0
+	Patch "SNAK7_1", 128, 0
+	Patch "SNAK7_1", 192, 0
+	Patch "D4040430", 0, 0
+	Patch "D4040431", 129, 0
+}
+Texture "D4040257", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D4040258", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D4040259", 128, 128
+{
+	Patch "WOLF5", 0, 0
+	Patch "SW3S0", 48, 60
+}
+Texture "D4040260", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D4040261", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D4040262", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "D4040263", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D4040264", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D4040265", 128, 128
+{
+	Patch "WOLF5", 0, 0
+	Patch "SW3S1", 48, 60
+}
+Texture "D4040266", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D4040267", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D4040268", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "D4040273", 128, 128
+{
+	Patch "WOLF5", 0, 0
+	Patch "EXIT1", 48, 60
+}
+Texture "D4040274", 128, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "EXIT1", 48, 56
+}

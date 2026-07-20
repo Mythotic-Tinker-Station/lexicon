@@ -1,0 +1,153 @@
+// UDM2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map UDMB01 "Doom II Arena"
+{
+	titlepatch = "UDMBV00"
+	next = "UDMB02"
+	secretnext = "UDMB02"
+	sky1 = "UDMB6000"
+	music = "D_UDMB01"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB02 "The Edge"
+{
+	titlepatch = "UDMBV01"
+	next = "UDMB03"
+	secretnext = "UDMB03"
+	sky1 = "UDMB6000"
+	music = "D_UDMB02"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB03 "Toxicity"
+{
+	titlepatch = "UDMBV02"
+	next = "UDMB04"
+	secretnext = "UDMB04"
+	sky1 = "UDMB6000"
+	music = "D_UDMB03"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB04 "Fortress of the Damned"
+{
+	titlepatch = "UDMBV03"
+	next = "UDMB05"
+	secretnext = "UDMB05"
+	sky1 = "UDMB6000"
+	music = "D_UDMB04"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB05 "Shafted"
+{
+	titlepatch = "UDMBV04"
+	next = "UDMB06"
+	secretnext = "UDMB06"
+	sky1 = "UDMB6000"
+	music = "D_UDMB05"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB06 "Outpost Delta"
+{
+	titlepatch = "UDMBV05"
+	next = "UDMB07"
+	secretnext = "UDMB07"
+	sky1 = "UDMB6000"
+	music = "D_UDMB06"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB07 "Spam!"
+{
+	titlepatch = "UDMBV06"
+	next = "UDMB08"
+	secretnext = "UDMB08"
+	sky1 = "UDMB6000"
+	music = "D_UDMB07"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+	Map07Special
+}
+
+map UDMB08 "Triple Decker II"
+{
+	titlepatch = "UDMBV07"
+	next = "UDMB09"
+	secretnext = "UDMB09"
+	sky1 = "UDMB6000"
+	music = "D_UDMB08"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB09 "Techno Tower"
+{
+	titlepatch = "UDMBV08"
+	next = "UDMB10"
+	secretnext = "UDMB10"
+	sky1 = "UDMB6000"
+	music = "D_UDMB09"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB10 "Symmetrical"
+{
+	titlepatch = "UDMBV09"
+	next = "UDMB11"
+	secretnext = "UDMB11"
+	sky1 = "UDMB6000"
+	music = "D_UDMB10"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB11 "UD Arena"
+{
+	titlepatch = "UDMBV10"
+	next = "UDMB12"
+	secretnext = "UDMB12"
+	sky1 = "UDMB6000"
+	music = "D_UDMB11"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}
+
+map UDMB12 "Super Mario Bros."
+{
+	titlepatch = "UDMBV11"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "UDMB6001"
+	music = "D_UDMB12"
+	intermusic = "D_UDMBIN"
+	ExitPic = "UDMBINT"
+	EnterPic = "UDMBINT"
+}

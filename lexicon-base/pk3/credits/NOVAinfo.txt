@@ -1,0 +1,900 @@
+*Template shamelessly stolen from Snakes shamelessly stolen from joshy*
+
+   .------.      .----.   .--------------.   .----.      ,-----,  ,-- +-.
+  |        \     |    |  |                |  |    |     /     /  /       \
+  |         \    |    |  |________________|  |    |    /     /  /         |
+  |          \   |    |  .----.      .----.  |    |   /     /  /          |
+  |    |\     \  |    |  |    |      |    |  |    |  /     /  /     /|    |
+  |    | \     \ |    |  |    |      |    |  |    | /     /  /     / |____|
+  |    |  \     \|    |  |    |      |    |  |    |/     /  /      `------.
+  |    |   \          |  |    |      |    |  |          /  /              |
+  |    |    \         |  |    `------'    |  |         /  /     _____     |
+  |    |     \        |  |                |  |        /  /     /     |    |
+  |____|      `._____/   `.______________.'  `._____,'  /_____/      |____|
+        _     _                        _       _            _     _
+      _| |_  | |___   ____            | |___  |_|  _ __   _| |_  | |___
+     |_  |_\ |___  | |  __|           |  _  | | | | |__\ |_  |_\ |___  |
+       | |   | | | | | |_/_           | |_| | | | | |      | |   | | | |
+       |_|   |_| |_| |____/           |_____| |_| |_|      |_|   |_| |_|
+
+
+--------------
+C O N T E N T:
+--------------
+
+  1.  INTRODUCTION            3.  LEVEL INFORMATION
+                                
+    1.1 Compatibility           3.1 Map List
+    1.2 Resources               3.2 Map Info
+    1.3 MIDI Music             
+
+                              4.  AUTHOR INFORMATION
+  2.  INSTALLATION 
+
+                              5.  SPECIAL THANKS
+               
+                                
+----------------
+[1] INTRODUCTION
+----------------
+
+  The project that would eventually become known as NOVA: The Birth had its
+  humble beginnings as the brainchild of Doomworld member kildeth, who came up
+  with its initial concept during November 2011. It was intended as a
+  collaboration project for those who were new to the Doom mapping community,
+  as kildeth himself was at the time. Over a period of more than two years,
+  the project grew into 32-map megawad in limit removing format (complevel 2),
+  using only stock Doom 2 textures. In that time, there were plenty of
+  submissions, many willing to participate, and more than a few who dropped
+  out or mysteriously disappeared. In the end though, the project in the eyes
+  of all parties involved, was a success. The maps contained within varied in
+  quality, from the mediocre and gaudy to the breathtakingly scenic. Despite
+  all the testing, there may still be occasional bugs and glitches present,
+  but let's face it, we were (and some of us, still are) a team of newbs who
+  had little experience at mapmaking for a Doom megawad - most of us didn't
+  know any better as we were constantly figuring everything out as we went
+  along.
+  It took us quite some time to complete the 32 maps necessary for full
+  megawad release, but we eventually made it, tying the map sequence up in a
+  rather loose plot to go with the story screens of NOVA, adding some graphics
+  and fancy skies, and then finally calling it a day. It certainly was quite
+  the experience.
+
+  Hope you enjoy playing this, and if you don't, well, YOU TRIED.
+
+  - Getsu Fune and kildeth.
+
+[1.1 Compatibility]
+
+  This wad was designed for limit-removing ports. All maps have been tested
+  in various ports, but usually PrBoom+ on -complevel 2.
+
+[1.2 Resources]
+
+  Only stock Doom 2 textures were used. However, EvilNed was kind enough to
+  donate skies of his own to the mapset, so credit goes to him for that.
+
+[1.3 Midi Music]
+
+  Comes from various sources, see [3.2 map info].
+
+
+----------------
+[2] INSTALLATION
+----------------
+    
+  Drag 'n' drop onto your source port of choice. Or feel free to use the
+  command line prompt, if that's your bag.
+
+
+---------------------
+[3] LEVEL INFORMATION
+---------------------
+
+[3.1 Map List]
+
+  MAP01: Outpost - PRIMEVAL
+  MAP02: Administration Center - Jaws In Space
+  MAP03: Water Treatment Plant - mrthejoshmon
+  MAP04: Factory Factor - EvilNed
+  MAP05: Hazard Facility - kildeth
+  MAP06: Sewage Processing - Arjak
+  MAP07: Service Station Sick - EvilNed
+  MAP08: Compound - mrthejoshmon
+  MAP09: Suspend - Fuzzyfireball
+  MAP10: Hell's Furnace - EvilNed
+  MAP11: Phobus Anomaly - Phobus
+  MAP12: Incubator - mrthejoshmon
+  MAP13: Warehouse District - sgt dopey
+  MAP14: Man Cub Up - EvilNed
+  MAP15: The Prisoner - Cannonball
+  MAP16: Teleportarium - Paul D
+  MAP17: Sewer City - EvilNed
+  MAP18: Power Core - cannonball
+  MAP19: Bad Blood - mouldy
+  MAP20: Castle Bloodletting - Arjak
+  MAP21: Beta Base - joe-ilya
+  MAP22: Broken Confluence Point - Getsu Fune
+  MAP23: Immaterium - Paul D
+  MAP24: Ring of Gyges - Stygian
+  MAP25: Vile Arterium - mouldy, Death Egg, dobu gabu maru
+  MAP26: Hell's Playground - joe-ilya
+  MAP27: Sensorium - kildeth
+  MAP28: The Seventh Circle - mouldy
+  MAP29: Extorta Nova - fiend-o-hell
+  MAP30: Megiddo - kildeth, dobu gabu maru, cannonball, mouldy and Arjak
+  MAP31: Iron Exuviae - dobu gabu maru
+  MAP32: Riptide - Getsu Fune
+
+[3.2 Map Info]
+
+-=-=-=--=-=|Map01|=-=-=--=-=-
+  Level Name: Outpost
+  Author: PRIMEVAL
+  Music Track: "Pumped Up" by PRIMEVAL, slightly ripping off Fight's song
+  "Into the Pit"
+
+  Author's Comments: A quick and simple tech-base map that kicks off with a
+  bit of action. Originally it was going to be the starter map for a megawad I
+  wanted to make with custom textures, but I scrapped the idea with only this
+  map finished. I didn't want to release such a small map by itself,
+  especially one with custom textures, but when I heard about Nova, I quickly
+  removed any custom textures used and donated it as stock, happy to have
+  finally given it a purpose.
+
+-=-=-=--=-=|Map02|=-=-=--=-=-
+  Level Name: Administration Center
+  Author: Jaws In Space
+  Music Track: "brace2.mid" by Paul D, based off of "Brace Yourself" by Jochen
+  Miller
+
+  Author's Comments: This is the 6th map I've posted to Doomworld, uploaded on
+  March 1st of 2013. At that time Nova was in a slump with nothing happening
+  to it so it was going to be released with about 20 finished levels. I was
+  actually busy with my first submission to the Switcheroom project so I
+  basically took a day off from that & threw this thing together in about 6
+  hours. After that I became a lot more involved with Switcheroom & also
+  finishing up maps for the Monochrome Mapping Project, so I kind of abandoned
+  this map until mid October 2013. The secret outdoor area wasn't added until
+  the very end of October. Even though it's not that great, I can't say I'm
+  disappointed with this level. It's got a lot of stuff in it that comes from
+  the pre Doomworld days, such as the zombie on the blood fountain in the hub
+  room, a fancy desk & awesome toilets. It's also got new designs that I've
+  learned to use more after the disastrous Monochrome Mapping Project, such as
+  thinner doors, curved walls & better use of lighting. Adding the outside
+  area was going to be an attempt to mask the hub spoke layout of this map. I
+  was going to expand it through secrets to where the exterior would
+  completely wrap around the interior, but I simply ran out of time before I
+  could implement this properly. Several people have commented on how some of
+  the areas in this map seem inspired by TNT, which I think is funny because
+  I've never played TNT. I still have a lot to learn about making maps for
+  Doom so I'll definitely be there for Nova 2.
+
+-=-=-=--=-=|Map03|=-=-=--=-=-
+  Level Name: Water Treatment Plant
+  Author: mrthejoshmon
+  Music Track: "Going Too Far" by nub_hat
+
+  Author's Comments: This map used to be an attempt at vanilla mapping, of
+  course I went over the visplane limit and crashed the game. This is also
+  MAP01 of my (as of now WIP) Megawad: Thy PrBoom Maps (used to be Thy Vanilla
+  Maps, changed for obvious reasons). This map pays homage to both MAP01 and
+  MAP04 of TNT: Evilution as TNT is my favorite IWAD, the starting room is a
+  replica (to some degree) of the switch room in TNT MAP01 and the tunnels are
+  a replica (also to some degree) of the tunnels in MAP04. This would actually
+  lead to Incubator, but not in this megawad ;)
+
+-=-=-=--=-=|Map04|=-=-=--=-=-
+  Level Name: Factory Factor
+  Author: EvilNed
+  Music Track: "Flatstomper" by nub_hat
+
+  Author's Comments: One of my first maps. Heavily inspired by TNT, which I
+  used to play a lot when I was younger. This map was started in the spring of
+  2010, so it's taken roughly 4 years to be finished.
+
+-=-=-=--=-=|Map05|=-=-=--=-=-
+  Level Name: Hazard Facility
+  Author: kildeth
+  Music Track: Midi version of "She Is My Sin" by Nightwish, midi
+  composer unknown
+
+  Author's Comments: This was the very first map of mine that I was ever to
+  see through to completion. I had dabbled in various Doom map editors over
+  the years but nothing seemed to come together in a big way, until I joined
+  Doomworld forums and took interest in a project known as 'Doom the Way ID
+  Did' and decided to contribute a map that would later become 'Hazard
+  Facility'. I did not stay in that project for very long and decided to start
+  my own megawad project consisting of works from other newbie mappers. That
+  project of course became Nova: The Birth and the rest was history. 
+  Hazard Facility itself is a diverse map that takes inspiration from John
+  Romero's works in the Doom episode 'Knee Deep in the Dead', having
+  originally been targeted for 'Doom the Way ID Did' and containing all of the
+  excitement a newbie mapper should have about their first work. Overall, I am
+  very proud of what I created and think 'Hazard Facility' holds up very well
+  as a mapping debut from myself. 
+
+-=-=-=--=-=|Map06|=-=-=--=-=-
+  Level Name: Sewage Processing
+  Author: Arjak
+  Music Track: Midi version of "Slaying the Dreamer" by Nightwish, midi
+  composer unknown
+
+  Author's Comments: This was only the second map I've ever done, after Caves
+  of Hell (coh_v2.wad). Caves was a learning experience for me, and it showed,
+  with its mishmash of themes, odd structure, and weird design in general.
+  With Sewage Processing, which was the first map I made for this project, I
+  tried to have a focused techbase theme, play with lighting a bit more, and
+  create balanced encounters that flowed through the level. I do feel that I
+  got a little lazy on this one, as the end comes somewhat abruptly with not
+  much of a payoff and I didn't use all of my ideas for this level. I probably
+  could've made it a bit longer, but my laziness won in the end, and what you
+  see is what you get.
+
+-=-=-=--=-=|Map07|=-=-=--=-=-
+  Level Name: Service Station Sick
+  Author: EvilNed
+  Music Track: "Escape Pod Theme" from Might and Magic V: Darkside of Xeen,
+  midi sequence by Joseph Collins.
+
+  Author's Comments: I don't know what inspired me when I made this map. This
+  was more of a "I'll start drawing and see where I end up" kind of deal. It
+  sort of shows as well. This map was started in the spring of 2010, so it's
+  taken roughly 4 years to be finished.
+
+-=-=-=--=-=|Map08|=-=-=--=-=-
+  Level Name: Compound
+  Author: mrthejoshmon
+  Music Track: Original midi composition by nub_hat
+
+  Author's Comments: This map is one of the few "good" maps I have ever made,
+  it takes place in an old storage compound that had been taken over by the
+  demons during an invasion. This is also MAP03 of my (as of now WIP) megawad:
+  Thy PrBoom Maps and would come after Incubator. With this map I wanted the
+  player to explore an old but not quite so abandoned compound, the gloomy
+  outdoors and pitch black warehouse are key elements that remind the player
+  that this is an old and dreary place.
+
+-=-=-=--=-=|Map09|=-=-=--=-=-
+  Level Name: Suspend
+  Author: Fuzzyfireball
+  Music Track: Midi version of "The Kinslayer" by Nightwish, midi
+  composer unknown
+
+  kildeth's Comments: Unfortunately Fuzzyfireball disappeared early on in the
+  project's creation and thus could not be contacted when it came time to
+  writing a blurb for their map in this textfile. :(
+  Guess I'll just have to fill in for them. 'Suspend' is a long snake-like
+  level and one of the first three maps to be created and compiled for the
+  first Nova demo. At the time this project was simply named 'The Newbie
+  Megawad Project' and no-one knew where it would eventually be headed. I was
+  very impressed at this map when I first saw it and still have fond memories 
+  of playing it now. I was responsible for choosing its soundtrack off a
+  website with a set of Nightwish midi's, which is also where several other
+  Nova maps get their soundtracks from. The map itself, despite being linear
+  is quite fun and challenging and fits in well with later Nova contributions.
+  
+
+-=-=-=--=-=|Map10|=-=-=--=-=-
+  Level Name: Hell's Furnace
+  Author: EvilNed
+  Music Track: "Grinder" from Red Alert 2, midi credits go to Hazvex
+
+  Author's Comments: Another TNT inspired map. I deliberately tried making a
+  map with a theme, or a central thematic point, much like many maps of Doom 2
+  had. So it's sort of a Doom 2 / TNT mashup. Hope you like it. This map was
+  started in the spring of 2010, so it's taken roughly 4 years to be finished.
+
+-=-=-=--=-=|Map11|=-=-=--=-=-
+  Level Name: Phobus Anomaly
+  Author: Phobus
+  Music Track: "Hellfire" from Soul Calibur II, midi composer unknown
+
+  Author's Comments: Whilst I'm aware that a project aimed at giving newbies
+  their first showcase in a big megaWAD isn't really appropriate for me, I've
+  always loved community projects where there's no pretension and that
+  people's work can be accepted even with flaws and so felt compelled to make
+  a contribution. The result is me cutting loose in a non-linear, vanilla-
+  compatible little base map with no real cohesion to theme and a hellish 
+  battle at the end. I kept it short and simple so I could get away with
+  having some bite in the set piece battles, going for that arcade-y
+  experience I enjoy so much in Doom. I chose the name because the map seems
+  unusual in my body of work and me being in Nova also seems unlikely... Plus
+  it was an easy pun!
+
+-=-=-=--=-=|Map12|=-=-=--=-=-
+  Level Name: Incubator
+  Author: mrthejoshmon
+  Music Track: "Kitchen Ace (and Taking Names)" by Bobby Prince (E1M4 of Doom)
+
+  Author's Comments: This is my first real tech base map, I don't like making
+  tech base levels. This map is also MAP02 of my (as of now WIP) megawad: Thy
+  PrBoom Maps and was a direct follow up to the map "WTP".
+  After you stepped on the teleport you realized that the UAC has a strange
+  interest in plants, but not just ordinary plants, they like half dead
+  plants. You have no idea what this strange collection is for (and you don't
+  want to find out) but going through is the only way out. I wanted this map
+  to be a straight up action packed blast through a tech base environment, the
+  incubator idea just came out of the complete blue. This map has gone through
+  6 different versions just for project NOVA, I hope it was worth it and I
+  hope you have fun!
+
+-=-=-=--=-=|Map13|=-=-=--=-=-
+  Level Name: Warehouse District
+  Author: sgt dopey
+  Music Track: Midi version of "Feel for You" by Nightwish, midi
+  composer unknown
+
+  kildeth's Comments: Unfortunately we were unable to reach sgt dopey before
+  Nova's release, and thus this map has gone without a written commentary by
+  its own author. Pity, as it is a decent map with a mix of urban cityscape
+  and storage facility type themes.
+  I chose the midi for this one as well, another Nightwish song, this time
+  from the album 'Century Child'. I feel the midi I chose was appropriate,
+  although maybe slightly too short considering the map's length. I remember
+  the soundtrack playing over a few times the last time I attempted this map,
+  but otherwise, all is good.
+
+-=-=-=--=-=|Map14|=-=-=--=-=-
+  Level Name: Man Cub Up
+  Author: EvilNed
+  Music Track: "Sangy2.mid" by Paul D (midi transcript from "Final
+  Liberation", composed by The Samsara Project)
+
+  Author's Comments: Another map designed around a theme, which I think I'm
+  quite fond of. This time, the theme was Mancubus and lots of slime. I also
+  decided at a very early stage to make this a sort of non-linear map. There's
+  some exploration to be done here, should one want too. This map was started
+  in the spring of 2010, so it's taken roughly 4 years to be finished.
+
+-=-=-=--=-=|Map15|=-=-=--=-=-
+  Level Name: The Prisoner
+  Author: cannonball
+  Music Track: Vile Flesh Map07/Map28 music by Gwyn "GMan" Williams
+
+  Author's Comments: This was a very early map of mine, early 2012, maybe
+  earlier??? This map has taken a lot of abuse, firstly from Paul D back in
+  it's first incarnation and rightly so, due to gameplay issues. The second 
+  was later on in a pre-beta test which actually involved other issues with my
+  mapping at the time.
+
+  Hello Tarnsman :)
+          
+  Overall I'm pretty hapy with the map now, given that the map has had major
+  overhauls but somehow the original layout and skeleton is still visible. 
+
+-=-=-=--=-=|Map16|=-=-=--=-=-
+  Level Name: Teleportarium
+  Author: Paul D
+  Music Track: Original midi composition by nub_hat
+
+  Author's Comments: This map really didn't start out as much, and since I am
+  so new to mapmaking I didn't go into it with an overall thematic concept or
+  much sense of cohesion. I had the idea for entering a fortified bunker-
+  looking base, but didn't think much as to what would happen next. The rest
+  of the map ended up being a patchwork of rooms that I would add over the
+  next few months, and the original version of this map was much shorter.
+  Looking back on it, I would like to have made it a bit more open and
+  interconnected, and the room-door-room design of it seems like it kind of
+  stifled gameplay a bit. My favorite Doom 2 map was actually Tricks and
+  Traps, so I guess that's where I got that from. I think the best thing I did
+  was add the teleportation gimmick if you decide to grab the blue key and try
+  to make a run for it instead of fighting in that room.  It was my first
+  complete original map.
+
+-=-=-=--=-=|Map17|=-=-=--=-=-
+  Level Name: Sewer City
+  Author: EvilNed
+  Music Track: Level 1: Cargo Hold from "Cyril Cyberpunk", midi sequenced by
+  Zero Prophet
+
+  Author's Comments: In some ways, my magnum opus of Nova I guess. Started
+  working on this much later than the other maps of mine, and it turned out to
+  be one massive map. I didn't set out to make a massive, epic map, it just
+  turned out that way. Out of all my maps for this project, I'm still most
+  proud of Map10 and Map14, as they are more concise and action packed.
+  There's a few moments in this map I'm kinda proud of, however, such as the
+  subterranean dark city part where arachnotrons and revenants are at your
+  throat from behind the crushers. My experiment here was to make it as
+  difficult as I could. I added lots of monsters and tweaked this area a lot.
+
+-=-=-=--=-=|Map18|=-=-=--=-=-
+  Level Name: Power Core
+  Author: cannonball
+  Music Track: "Circle of Fire" by David "Tolwyn" Shaw (MM2 Map28)
+
+  Author's Comments: I made a map which has the exact same level progression
+  as Map15 by complete accident... heh.
+  This was made later on to replace a previous map I made for the project
+  (Map21 of sparta.wad). Fair to say this had less drastic changes and most
+  were based on people playing through the map, and noting down certain flaws
+  which I didn't pick up at the time. Maybe I should have made a hell level. :P
+
+-=-=-=--=-=|Map19|=-=-=--=-=-
+  Level Name: Bad Blood
+  Author: mouldy
+  Music Track: Original midi composition by nub_hat
+
+  Author's Comments: This was my first doom map and was basically something I
+  did to get the hang of using Doom Builder. I spent more time working on the
+  scenery than thinking about the gameplay so navigation is awkward in places,
+  and because I was trying out a lot of visual things its a fairly disparate
+  collection of areas, but it was a good learning exercise.
+
+-=-=-=--=-=|Map20|=-=-=--=-=-
+  Level Name: Castle Bloodletting
+  Author: Arjak
+  Music Track: Original midi composition by nub_hat
+
+  Author's Comments: My third full map, and the one I'm most proud of so far.
+  It definitely came closer to my original vision than any of my previous
+  works, and I feel that for my experience level, it is quite solid. To be
+  honest, I suck at detailing, and I feel that the gameplay and flow are the
+  real stars here. I worked really hard on balancing, creating better secrets
+  (Sewage Processing's secrets were WAY too obvious), and trying to give the
+  map character and an epic feel. 
+  At first, I didn't care for nub_hat's music track because I saw this map as
+  very action oriented and deserving of something faster and punchier, but it
+  grew on me and now I love it for the atmospheric qualities it gives this
+  map. A map CAN be both action-packed and atmospheric, after all. Originally,
+  this map was supposed to be longer, with a part where you'd teleport up to
+  the ramparts of the castle and fight your way around, but that idea was
+  scrapped due to my laziness and inexperience. The map as it is ends with the
+  teleporter that would've originally taken you up to the ramparts. Besides
+  that though, the map was all I could've hoped for. I tend to not plan my
+  maps in advance, and instead just make it up as I go, but with this one, I
+  actually tried to at least come up with a general outline of what I wanted.
+  I think it shows, and I hope you enjoy playing this one as much as I did
+  creating it.
+
+-=-=-=--=-=|Map21|=-=-=--=-=-
+  Level Name: Beta Base
+  Author: joe-ilya
+  Music Track: "Push On the Gas" by Sam Woodman (HR2 Map01)
+
+  Author's Comments: Back when I was a kid and played random Mario ROM hacks,
+  I didn't know how to map very well for Super Mario World. I had some ideas
+  in my head, but never could map for SMW because it was far more complicated
+  than you think, I mean it.
+  So after I found Doom, I was playing it so much I wanted to make my own
+  maps, so then an idea popped in my head and I decided to call it Doom0; the
+  maps were all about being with just one weapon. When I finished those, I
+  tried to make a normal map and I didn't finish it, then I found this project
+  for newbies. I decided to remake the map into a base with hell around it,
+  and what I got:        
+
+  Bad reviews, but that's okay because I know it's cheesy and random, so I
+  don't wonder.
+
+-=-=-=--=-=|Map22|=-=-=--=-=-
+  Level Name: Broken Confluence Point
+  Author: Getsu Fune
+  Music Track: Descent Level 6 (Mercury Solar Lab) composed by
+  Parallax Software
+
+  Author's Comments: I played CC4 Map24 and had the idea to make a small map
+  that replicates that style, a base ramshackled by Hell's forces, yes, even
+  the barrel explosions included. It will have the player going from techbase
+  to hell, and back, and around again. Dobu had a hand with a number of thing
+  placements, this is my mapping Achilles' heel AFAIK, and his stuff helps.
+  Small, but rather tight on supplies. A lot of newb mistakes, like 1x1 grid
+  bullshit, wrong brightness levels, and other stuff. The ending may provide a
+  quick scare in the dark. On the bright side, I seem to have the 3D bridges
+  working already, but they're only in the deathmatch portion of the map. I
+  may just retool the ENTIRE damn map in the future, getting rid of all the
+  shit stuff and further expanding on it ;).
+
+-=-=-=--=-=|Map23|=-=-=--=-=-
+  Level Name: Immaterium
+  Author: Paul D
+  Music Track: "Ordos Mentat Theme" from Dune 2 by Frank Klepacki and Dwight
+  Okahara
+
+  Author's Comments: I originally had many more plans for this map, but I got
+  bogged down in actually making it, and I actually lost a few drafts of it
+  with hard drive reformats and stuff. The concept was actually fairly hard to
+  get to work properly in complevel 2, and although it was interesting to
+  learn the limits of roughly vanilla, I think I'll stick to boom compatible
+  and zdoom in the future.  
+  I think the map is conceptually strong and has an interesting theme - I
+  don't actually like the whole "stone and wood" hell theme, preferring the
+  more psychedelic "distorted version of reality" type of hell, where the
+  lines between the material and immaterial world are jumbled. I don't think I
+  managed to accomplish particularly compelling gameplay, but oh well. It was
+  during making this map that I regretfully got kind of burnt out on the whole
+  Doom scene, but I am looking to get back into the thick of things soon.
+
+-=-=-=--=-=|Map24|=-=-=--=-=-
+  Level Name: Ring of Gyges
+  Author: Stygian
+  Music Track: "Ring of Gyges" by nub_hat
+
+  Author's Comments: This is a terrestrial/hell-themed map with many large 
+  outdoor areas and places to explore. Although  it is possible to complete
+  the map very quickly, initial playthroughs can be slow and tedious due to a
+  high monster count and heavy use of monster-blocking lines.
+
+-=-=-=--=-=|Map25|=-=-=--=-=-
+  Level Name: Vile Arterium
+  Author: mouldy, based on a map by Death Egg and with some support from
+  dobu gabu maru
+  Music Track: Midi version of "Rebellion in Dreamland" by Gamma Ray, midi
+  composer unknown
+
+  dobu's Comments: I did a large amount of gameplay tweaking here, switching
+  around enemies and throwing in a handful of traps (the revenant warp-in is
+  mouldy's doing; don't blame me!) This was all based on Death Egg's original
+  arrangement of baddies, but I tried my best at making sure each pathway is
+  clogged with nasties and running ahead gets you punished (well, runners
+  easily found ways around that). Hopefully my layout does the map justice.
+
+-=-=-=--=-=|Map26|=-=-=--=-=-
+  Level Name: Hell's Playground
+  Author: joe-ilya
+  Music Track: "Becoming" by Pantera, midi composer unknown
+
+  Author's Comments: I decided to make another map, but this time it takes
+  inspiration from WOS.wad's Map10: Playground of Caesar. It has the same concept:
+  Challenge in every room, like Super Mario.
+
+-=-=-=--=-=|Map27|=-=-=--=-=-
+  Level Name: Sensorium
+  Author: kildeth, based on a map by AlwaysDoomed
+  Music Track: Midi version of "Sensorium" by Epica, midi composer unknown
+
+  Author's Comments: Once 'Hazard Facility' had been mostly completed to my
+  own satisfaction, I wanted to start on something really big and epic to
+  expand my mapping ability and challenge myself. The result was 'Sensorium';
+  a map originally created from a rather boxy and featureless ZDoom work by
+  Alwaysdoomed. I went at the piece room by room, expanding the entire level
+  several times in the process and making the necessary adjustments as I added
+  more and more detail and height variation in an attempt to make the most
+  awesome map possible. The creation of 'Sensorium' was not without its toll
+  though, there were times where I would be burnt out for months as I chipped
+  away at the map in increments, never feeling quite satisfied and always
+  wanting to get everything just perfect. Eventually though, it all began to
+  come together, and now finally, the map is here and complete. As with 
+  'Hazard Facility', I am also very proud of how this map turned out, and
+  think it to be a fitting tribute to the Epica song 'Sensorium', from which
+  this map takes its inspiration and midi from. 
+
+-=-=-=--=-=|Map28|=-=-=--=-=-
+  Level Name: The Seventh Circle
+  Author: mouldy, based on a map by PRIMEVAL
+  Music Track: Original midi composition by mouldy
+
+  Author's Comments: This started life as a scrap map from Primeval, which I
+  turned into an orgy of destruction. The idea was to set the player running
+  for their life and fighting all the way, with a gratuitous amount of killing
+  and complex pathways that allowed for multiple routes for both player and
+  monsters. The 2 keys are entirely optional, but it will hurt if you don't
+  get them. I also made the music for this map.
+
+-=-=-=--=-=|Map29|=-=-=--=-=-
+  Level Name: Extorta Nova
+  Author: fiend-o-hell, based on a map by Memfis
+  Music Track: "Castle Cimmeria" theme from the Lands Of Lore: Throne of Chaos
+  soundtrack, Composed by Frank Klepacki, Paul S. Mudra & Dwight K. Okahara,
+  midi arranged by Paul D
+
+  Author's Comments: 'Extorta Nova' is a map inspired by my other map
+  'ExtortaMontra', which is in turn from my standalone project. The former
+  borrows its namesake and many of its elements from the latter. Since this
+  was meant to be an end map, be prepared for extreme difficulty...
+
+-=-=-=--=-=|Map30|=-=-=--=-=-
+  Level Name: Megiddo
+  Author: kildeth, dobu gabu maru, cannonball, mouldy and Arjak
+  Music Track: Midi version of "Silent Screams" by Rob Halford, midi arranged
+  by Paul D
+
+  dobu's Comments: The name "Megiddo" comes from the Tel in Israel, more
+  commonly known in Greek as "Armageddon" (a battleground in the end times,
+  according to the Book of Revelation). I chose this largely because using
+  "Armageddon" feels a bit trite, and I have a large fascination for Abrahamic
+  theology.
+  If you are to blame anyone for the nightmare experienced in trying to max 
+  kills in this map, it can probably be me. I had this idea around
+  Slaughterfest 2013 to have every author contribute an arena to encapsulate
+  the project. I suggested a trimmed down version of this to the NOVA project
+  (5 authors instead of every author) and it was well received. I went ahead
+  to create the central room and final battle (which was stolen from an
+  abandoned map of mine initially intended for the Panophobia project). Due to
+  the length of each of our sections I believe cannonball suggested needing 3
+  keys to finish the map instead of completing all 5 portions, and it worked
+  out for the best that way.
+  My section (top right) was a bit roundabout in its conception. While working
+  on a map ultimately removed from the project (Immundum), I struggled with
+  fitting the hell arena in the linedef-heavy monstrosity I had created.
+  Considering that I might have to cut that section, I moved it over to be
+  included in my slice of Megiddo. Squeezing out some more lines in Immundum
+  allowed me to keep the hell arena, and so I got the gnarly idea to also keep
+  it for Megiddo as the intro to my vision of hell. Wondering where to go from
+  there, I got another idea to revisit prior areas in the megawad as a sort of
+  homage, attempting at first to include every map until I realized how
+  overambitious that was... so I reduced it to one area per author. I liked
+  how it worked out in the end, allowing me to tinker with various rooms and
+  enemy placement akin to my work in Vile Arterium.
+  While my Immundum section had to be scrapped since the wad was withdrawn, I
+  opted to reuse the furnace battle from Iron Exuviae and make it decisively
+  more cruel as it's completely optional to tackle.
+
+  cannonball's Comments: I made a section loosely based around the types of
+  Doom 2 maps I had been making at the time (note the similarity to the end of
+  Map15 of D2INO). I wanted a large slaughter arena but had to plan on using
+  monster closets as of course teleport ambushes would fail miserably here. It
+  took 2 attempts but I think it turned out well on the difficulty front,
+  maybe not so on the time to beat front. As an aside I would like to give
+  major credit to dobu gabu maru for the idea for this map, I think it's a
+  pretty decent one :)
+
+  kildeth's Comments: After finishing work on Map27: 'Sensorium', I was given
+  the option to work on a final piece for NOVA: The Birth's grand finale.
+  Being the one to start the whole project in the first place, I couldn't
+  forgive myself had I turned the opportunity down, so away I went with some
+  leftover inspiration and a half-baked set of ideas as to what I was going to
+  make, and put together a small map featuring a pyramid and a lava river.
+  What happened next was rather unfortunate at the time as I accidentally
+  deleted my work and couldn't retrieve it. I didn't give up though, and went
+  with my original plan to make something many magnitudes greater than the
+  first work, whilst still being based around the lava river and pyramid idea.
+  I'm still not sure what I think of my contribution to 'Megiddo', to me it
+  feels slightly rushed in comparison to the meticulous work I performed on
+  'Hazard Facility' and 'Sensorium', but given some time and distance from the
+  project, I'm sure I'll grow to appreciate it just as much and am very proud
+  of my work here also, which is more than I could say of my original
+  (deleted) plan. :P
+
+  Arjak's Comments: To be honest, I'm disappointed with this piece. I didn't
+  know how long to make it because all I knew about Megiddo was the concept,
+  that several mappers would each make a section of the map. With a supposed
+  deadline coming up (which we missed), no guidelines on length, and my
+  general laziness, I decided to keep it short, and the result is lackluster.
+  I wanted to make something amazing and striking, but my fear of it being too
+  long compared to the rest of the level made me cut down on my idea a lot.
+  Well, it turned out to be one of the shortest and easiest sections. It's one
+  of those maps where I wish I could go back and redo it with more time
+  available, because I really like the concept of a map taking place inside a
+  volcano.
+
+  mouldy's Comments: My Megiddo section is blue and a bit of a bastard. There
+  are 3 alternative routes to the exit switch, originally I made it so you had
+  to do all 3, but it was taking too long so I simplified it. The ethos behind
+  the design was a mixture of constant threat and awkward cover. I also
+  learned that teleport traps don't work very well on map 30, hence the
+  bolted-on monster closets.
+
+-=-=-=--=-=|Map31|=-=-=--=-=-
+  Level Name: Iron Exuviae
+  Author: dobu gabu maru
+  Music Track: "ohno.mid" by Paul D
+
+  Author's Comments: Iron Exuviae (initially titled "Seance") was created for
+  the Doomworld Mega Project 2012 as an offhand attempt to see if I could
+  create a single "cool" room. The plan was to have no monsters and just let
+  the journey be the experience, largely because the project was a haven for
+  oddball entries. As 2012 came and went my project sat in the recesses of my
+  HD, gathering the binary analog to dust. While mapping for my NOVA entries I
+  decided "what the hell" and worked on the wad some more, eventually
+  submitting it as a secret map. 
+  My feelings are quite mixed on it. Inspired by Pottus I attempted to map
+  using 45 degree angles but SURPRISE! It doesn't really work unless you stick
+  to the grid, so I returned to x and y axes halfway through. The puzzles I
+  tried my hand at are somewhat obscure but it was worth a shot as I'm
+  unlikely to do so in my other works. The central chamber, while perhaps
+  striking upon first glance, is the same structures copy and pasted eight
+  times which removes some of the genuineness. I'm most content with the
+  fights as they provide a good level of challenge but allow plenty of leeway 
+  in maneuverability, prompting the player to mess around a bit. It's
+  unfortunate in retrospect that my "unique" contribution to NOVA is a map I
+  initially designed as a throwaway, but it is what it is.
+
+-=-=-=--=-=|Map32|=-=-=--=-=-
+  Level Name: Riptide
+  Author: Getsu Fune
+  Music Track: World 3: Under the Ocean theme from Super Monkey Ball (GCN),
+  midi credits to Matthew Seldon
+
+  Author's Comments: I really wasn't sure about this map for several reasons.
+  One, I joined the project late and it seems that all they wanted were E3
+  maps at the time. And two, I wanted it to be a part of a (since scrapped)
+  project of my own. But it got accepted mainly because there wasn't a Map32
+  yet and I basically went "fuck it" with the supplies on the whole. Also, the
+  theme is pretty darn atmospheric, not many people make aqua-themed stuff.
+  Yep, and this one is almost entirely chainsaw and pistol oriented, unless
+  you find the secret shotgun, but then again I still don't give enough ammo. 
+  Continuous players probably won't have a problem if they have plenty of
+  ammo, but they're still gonna lose lots of it ;).
+
+
+--------
+[4] AUTHOR INFORMATION
+--------
+
+  Author            : Collin "Arjak" Pierce
+  Email address     : arjak2@yahoo.com
+  Webpage           : n/a
+  Other files by me : coh_v2.wad
+
+-------------------------
+
+  Author            : Matt "cannonball" Powell
+  Email address     : cannonballmp@yahoo.co.uk
+  Webpage           : n/a
+  Other files by me : cbspeed.wad, cbpandemonium.wad, sparta.wad, wtbhnn.wad,
+                      ragstron.wad, mayhem2012.wad (maps 10, 11),
+                      conC.E.R.N.ed.wad, sf2012.wad (maps 01, 05, 09, 10, 20,
+                      22), Map01 of DMP2012.wad.
+
+-------------------------
+
+  Author            : dobu gabu maru
+  Email address     : edemaomega@yahoo.com
+  Webpage           : n/a
+  Other files by me : Pesha.wad
+
+-------------------------
+
+  Author            : EvilNed
+  Email address     : jonathanridings@gmail.com
+  Webpage           : n/a
+  Other files by me : E1M3 in HYMN, E4M9 in Switcheroo, CCore.wad.
+
+-------------------------
+
+  Author            : fiend-o-hell
+  Email address     : n/a
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : Fuzzyfireball
+  Email address     : n/a
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : Getsu Fune
+  Email address     : nre622013@gmail.com
+  Webpage           : n/a
+  Other files by me : 32in24-13 Map40, pier.wad, "Aquafresh Crescents" in
+                      SF2013, "Courtyards of Bodycount" in  Five Rooms of
+                      Doom, DMP2013 MAP03.
+
+-------------------------
+
+  Author            : Jaws In Space
+  Email address     : jawsinspace@gmail.com
+  Webpage           : n/a
+  Other files by me : Maps 3, 6, 7, 11, 16 & 19 from the Monochrome Mapping
+                      Project.
+
+-------------------------
+
+  Author            : joe-ilya
+  Email address     : Ilyadude1999@gmail
+  Webpage           : n/a
+  Other files by me : Doom0alpha.wad, doom0.wad, Map20 & Map14 from
+                      100linet.wad.
+
+-------------------------
+
+  Author            : Michael "kildeth" Kilderry
+  Email address     : michaelkilderry@gmail.com
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : mouldy
+  Email address     : n/a
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : mrthejoshmon
+  Email address     : joshmon96@hotmail.co.uk
+  Webpage           : www.youtube.com/user/mrthejoshmon
+  Other files by me : wastes.wad, AIRBSE.wad, WTP.wad, Inc_v4.wad, Term.wad,
+                      Temp.wad, Comp.wad, WOOO.wad.
+
+-------------------------
+
+  Author            : Paul D
+  Email address     : n/a
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : James "Phobus" Cresswell
+  Email address     : james@mpcressy.com
+  Webpage           : www.phobus.serbegame.com/doom/
+  Other files by me : Scourge (ph_scrge.zip), White Light (ph_wl.zip),
+                      Warpzone (ph_wz.zip), Scars of the Wounded Prey
+                      (ph_quik1.zip), Too Much Brown Texture Pack demo room
+                      (2mbrown.zip), zctcmaps Map05 (zctc.zip), Twisted Joke
+                      (ph_dac.zip), Community Chest 3 Map18 (cchest3.zip),
+                      Justice - Infernal Mechanics (ph_quik3.zip), ZPack -
+                      Random Maps for ZDoom E1M2, E2M1, E2M0 (zpack.zip),
+                      Coils of the Twisted Tale (ph_quik2.zip), Ten Community
+                      Project Map05, Map16 (TCP.zip), Virus Episode 1
+                      "Shareware Demo Release" (ph_virus.zip), Tiny Pack 1 -
+                      "Tiny Chances of Survival" (ph_tp1.zip), Claws of the
+                      Enraged Beast (ph_quik4.zip), The Mouth of Death
+                      (ph_mod.zip), Phobus' Fragments of DAC2009
+                      (ph_dac2.zip), White Light: 2010 Edition (ph_wlx.zip),
+                      Small Dark Twisted Computer Lab (ph_quik5.zip),
+                      Doom 2 Unleashed Map10 (pc_cp.zip), Plutonia Revisited
+                      Community Project Map14 (prcp.zip), Tactical Chainsaw, 
+                      Stocked Player and Pistol Start Enforcer (ph_stuff.zip),
+                      1994 Tune-up Community  Project Map16 (1994tu.zip),
+                      32in24-11: Occupy Doomworld Map25, Map40 (32in2411.zip),
+                      Doom The Way id Did E3M6 (DTWiD.zip), Blood Red
+                      (ph_quik6.zip), MAYhem 2012 Map01, Map06
+                      (MAYhem2012.zip), Community Chest 4 Map03, Map07, Map13
+                      (cchest4.zip), Phobus Pre-'13 Grab Bag (ph_pre13.zip),
+                      Escalation I: The Breach (ph_e0050.zip),ZDoom Community
+                      Map Project: Take #2 (zdcmp2.zip).
+
+-------------------------
+
+  Author            : PRIMEVAL
+  Email Address     : jswx06@yahoo.com
+  Webpage           : http://www.reverbnation.com/tenebraeaeternus
+  Other files by me : Music for Reverie (reverie.wad), Unholy Realms
+                      (ur_final.wad), Plutonia Revisited Community Project
+                      (PRCP.wad), PsychoPhobia, Arcadia Demade (arcadia.wad),
+                      Alkylation (alk-ep1.wad), Flashback to Hell
+                      (FTH666.wad), Hadephobia (h_phobia.wad).
+
+-------------------------
+
+  Author            : sgt Dopey
+  Email address     : n/a
+  Webpage           : n/a
+  Other files by me : n/a
+
+-------------------------
+
+  Author            : Stygian
+  Email address     : refdaemon@yahoo.com
+  Webpage           : n/a
+  Other files by me : n/a
+
+
+--------
+[5] SPECIAL THANKS
+--------
+
+Special thanks to: Firstly, you, for playing and/or reading these textfiles.
+                   nub_hat for music compositions.
+                   Whoever made those Nightwish midis, they can be found here:
+                   http://freemidi.org/directory-770.
+                   EvilNed for awesome skies.
+                   kildeth for various graphics.
+                   dobu gabu maru, Getsu Fune, and kildeth for story screen
+                   blurbs.
+                   cannonball for creating demos.
+                   Snakes for offering advice and assistance to mappers very
+                   early in the project's development.
+                   nub_hat and Paul D for some sweet midis.
+                   Everyone who did extensive beta-playtesting of the mapset,
+                   including Demon of the Well, plums, Veinen and several of
+                   our own mappers. Also marineController for spotting lots of
+                   errors in our maps!
+                   plums and dobu for fixing bugs for the 1.1 update.
+                   Vermil, Veinen, Suitepee, Cannonball, Caleb13, and nub_hat,
+                   for bug reports.
+                   Getsu Fune for taking the time to write this textfile and
+                   the other one.
+                   Jaws In Space for testing the maps in Coop and DM, and for
+                   implementing Deathmatch to Maps 1, 2, 11, 12, 13, 16, 21,
+                   23, 24, 25, 26, 29, 30, 31 & adjusting Deathmatch on Maps
+                   3, 6, 8, 9 & 20.
+                   And finally, kildeth (again!) for starting the project
+                   idea, even though dobu took over the majority of the
+                   project whenever you were absent :P.

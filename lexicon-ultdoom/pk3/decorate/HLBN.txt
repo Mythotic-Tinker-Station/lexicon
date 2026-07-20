@@ -1,0 +1,9 @@
+Actor Lexicon_HLBN_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LW76 O -1
+		Stop
+	}
+}

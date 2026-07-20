@@ -1,0 +1,26 @@
+object Lexicon_H2HX_HealthBonus
+{
+    frame LX69 { light HEALTHPOTION }
+}
+
+object Lexicon_H2HX_ArmorBonus
+{
+    frame LX69 { light ARMORBONUS }
+}
+
+object Lexicon_H2HX_GreenArmor
+{
+    frame LX69W { light GREENARMOR1 }
+    frame LX69X { light GREENARMOR2 }
+}
+
+object Lexicon_H2HX_BlueArmor
+{
+    frame LX69Y { light BLUEARMOR1 }
+    frame LX69Z { light BLUEARMOR2 }
+}
+
+object Lexicon_H2HX_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}

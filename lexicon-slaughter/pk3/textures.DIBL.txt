@@ -1,0 +1,60 @@
+Texture "DIBL0050", 128, 128
+{
+	Patch "DIBL0036", 0, 0
+	Patch "DIBL0036", 64, 0
+	Patch "W111_3", 0, 0
+	Patch "W111_2", 0, 64
+	Patch "W111_2", 64, 0
+	Patch "W111_3", 64, 64
+	Patch "SW2_4", 37, 48
+	Patch "DIBL0080", -8, 0
+	Patch "DIBL0080", 120, 0
+}
+Texture "DIBL0051", 32, 128
+{
+	Patch "WALL47_1", 0, 0
+	Patch "EXIT1", 0, 56
+}
+Texture "DIBL0060", 32, 128
+{
+	Patch "DIBL0176", 0, 0
+}
+Texture "DIBL0066", 64, 160
+{
+	Patch "DIBL0065", 0, 32
+	Patch "DIBL0070", 0, -32
+}
+Texture "DIBL0069", 128, 128
+{
+	Patch "DIBL0151", 113, 0
+	Patch "DIBL0151", -6, 0
+}
+Texture "DIBL0077", 64, 128
+{
+	Patch "DIBL0159", 0, 0
+	Patch "DIBL0159", 0, 64
+}
+Texture "DIBL0078", 64, 32
+{
+	Patch "DIBL0160", 0, -1
+}
+Texture "DIBL0081", 32, 128
+{
+	Patch "DIBL0080", 16, 0
+	Patch "DIBL0080", 0, 0
+	Patch "DIBL0080", 8, 0
+}
+Texture "DIBL0096", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DIBL0102", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DIBL0108", 128, 128
+{
+	Patch "DIBL0178", 0, 0
+}

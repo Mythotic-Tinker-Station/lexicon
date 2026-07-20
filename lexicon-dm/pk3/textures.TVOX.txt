@@ -1,0 +1,80 @@
+Texture "TVOX0010", 512, 128
+{
+	Patch "TVOX0122", 0, 0
+	Patch "TVOX0123", 256, 0
+}
+Texture "TVOX0012", 512, 128
+{
+	Patch "TVOX0120", 0, 0
+	Patch "TVOX0121", 256, 0
+}
+Texture "TVOX0014", 64, 128
+{
+	Patch "TVOX0022", 0, 0
+	Patch "TVOX0022", 0, 16
+	Patch "TVOX0022", 0, 32
+	Patch "TVOX0022", 0, 48
+	Patch "TVOX0022", 0, 64
+	Patch "TVOX0022", 0, 80
+	Patch "TVOX0022", 0, 96
+	Patch "TVOX0022", 0, 112
+}
+Texture "TVOX0015", 64, 128
+{
+	Patch "TVOX0053", 0, 0
+	Patch "TVOX0022", 0, 48
+	Patch "TVOX0022", 0, 64
+}
+Texture "TVOX0033", 64, 128
+{
+	Patch "TVOX0051", 0, 0
+	Patch "TVOX0051", 16, 0
+	Patch "TVOX0051", 32, 0
+	Patch "TVOX0051", 48, 0
+	Patch "TVOX0022", 0, 0
+	Patch "TVOX0022", 0, 112
+}
+Texture "TVOX0042", 64, 128
+{
+	Patch "TVOX0110", 0, -1
+}
+Texture "TVOX0058", 64, 128
+{
+	Patch "TVOX0093", 0, 0
+	Patch "TVOX0093", 0, 64
+}
+Texture "TVOX0061", 64, 128
+{
+	Patch "TVOX0089", 0, 0
+	Patch "TVOX0089", 0, 16
+	Patch "TVOX0089", 0, 32
+	Patch "TVOX0089", 0, 48
+	Patch "TVOX0089", 0, 64
+	Patch "TVOX0089", 0, 80
+	Patch "TVOX0089", 0, 96
+	Patch "TVOX0089", 0, 112
+}
+Texture "TVOX0069", 1024, 128
+{
+	Patch "TVOX0141", 0, 0
+	Patch "TVOX0142", 256, 0
+	Patch "TVOX0143", 512, 0
+	Patch "TVOX0144", 768, 0
+}
+Texture "TVOX0071", 1024, 128
+{
+	Patch "TVOX0145", 0, 0
+	Patch "TVOX0146", 256, 0
+	Patch "TVOX0147", 512, 0
+	Patch "TVOX0148", 768, 0
+}
+Texture "TVOX0075", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "TVOX0080", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}

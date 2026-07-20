@@ -1,0 +1,360 @@
+===========================================================================
+Archive Maintainer      : 
+Update to               : 
+Advanced engine needed  : Limit removing
+Primary purpose         : Single player, but co-op options implemented (if barely tested)
+===========================================================================
+Title                   : The Ultimate Doom "In Name Only"
+Filename                : UDINO.wad
+Release date            : 30/11/2023
+Author                  : Cannonball, dobu gabu maru, and the UDINO team
+Email Address           : [redacted]
+Other Files By Author   : See the doom wiki for author history
+Misc. Author Info       : A bunch to random consciousness
+Description             : Ultimate Doom In Name Only tasks its authors with creating levels based
+                          solely off of the map titles from id's 1995 classic, Ultimate Doom.
+                          A priority of the project was to be equal parts fun, challenging, and
+                          creative.
+
+Additional Credits to   : ID Games for Doom
+			  Eradrop & Mechadon for the skies (Plums for the edit for the E2 Sky)
+			  Other credits further down the textfile
+===========================================================================
+* What is included *
+
+New levels              : 36
+Sounds                  : No
+Music                   : Replacements for all maps, none are bespoke to the project.
+Graphics                : Liquid & ALLBLACK textures
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : No
+
+
+* Play Information *
+
+Game                    : DOOM
+Map #                   : E1M1 to E4M9
+Single Player           : Designed for
+Cooperative 2-4 Player  : Starts included on all level, there might be more on some levels.
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes (Please use them)
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 9 years (first started July 1st 2014)
+Editor(s) used          : Doom builder 2, Doom builder X, UDoombuilder and Slade 3 and potentially more
+Known Bugs              : E1M7's linedef 26614 can be passed through (intercept overflow?)
+May Not Run With        : Vanilla due to limits being exceeded in most of the levels.
+Tested With             : DSDA Doom, Crispy Doom
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.doomworld.com/idgames/
+FTP sites:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxX
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ _______  _______  _______  ______  __________________ _______ 
+(  ____ \(  ____ )(  ____ \(  __  \ \__   __/\__   __/(  ____ \
+| (    \/| (    )|| (    \/| (  \  )   ) (      ) (   | (    \/
+| |      | (____)|| (__    | |   ) |   | |      | |   | (_____ 
+| |      |     __)|  __)   | |   | |   | |      | |   (_____  )
+| |      | (\ (   | (      | |   ) |   | |      | |         ) |
+| (____/\| ) \ \__| (____/\| (__/  )___) (___   | |   /\____) |
+(_______/|/   \__/(_______/(______/ \_______/   )_(   \_______)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+XxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxXxX
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+!!!!!!!!!!!!!!          B E W A R E          !!!!!!!!!!!!!!!!!!
+
+Ultimate Doom in Name Only is *D*I*F*F*I*C*U*L*T*!!!! All maps
+are designed for PISTOL START, but will require patience, swiftness,
+and smart thinking to escape alive. The first two episodes are somewhat
+of a toasty warm-up, while the last two are a raging inferno. If you've
+endured the likes of RESURGENCE and SCYTHE 2, then you are more than 
+equipped to handle UDINO, but all others should take heed--remember,
+difficulty options are there for a reason! Play to the style that suits
+you; having fun is more important than vainglorious e-bragging!
+
+    _______________________________________________________________________________
++X+| ____  ____    ___      __  ____   ___ ______    __     ____  ___  ____    __  |+X+
++x+| || \\ || \\  // \\     || ||     //   | || |    ||    ||    // \\ || \\  (( \ |+x+
++X+| ||_// ||_// ((   ))    || ||==  ((      ||      ||    ||==  ||=|| ||  ))  \\  |+X+
++x+| ||    || \\  \\_//  |__|| ||___  \\__   ||      ||__| ||___ || || ||_//  \_)) |+x+
++X+|_______________________________________________________________________________|+X+
+
+
+***Cannonball (Matthew Powell)***
+
+***dobu gabu maru (Darryl Steffen)***
+
+    __________________________________________________________________
++X+| ____  __     ___  _  _ ______  ____  __  ______  ____ ____   __  |+X+
++x+| || \\ ||    // \\ \\// | || | ||    (( \ | || | ||    || \\ (( \ |+x+
++X+| ||_// ||    ||=||  )/    ||   ||==   \\    ||   ||==  ||_//  \\  |+X+
++x+| ||    ||__| || || //     ||   ||___ \_))   ||   ||___ || \\ \_)) |+x+
++X+|__________________________________________________________________|+X+
+
+
+[-DEVELOPMENT-]
+
+Tristan
+mouldy
+Cannonball
+Ledillman
+Jaws in Space
+CorSair
+plums
+Steve D
+EffinghamHuffnagel
+dobu gabu maru
+Alfonzo & Tarnsman
+Scotty
+galileo31dos01
+Nine Inch Heels
+and *Magnusblitz*, our MVP: Most Valuable Playtester!
+
+(plus Antroid & the Doominati for discussions)
+
+[-RELEASE CANDIDATE-]
+
+Ravendesk
+finnks13
+taviow
+Catpho
+Mr. Meanor
+grothendiek1453
+Inuk
+bioshockfan90
+Arsinikk
+
+    ____________________
++X+|  ___  ____  ______ |+X+
++x+| // \\ || \\ | || | |+x+
++X+| ||=|| ||_//   ||   |+X+
++x+| || || || \\   ||   |+x+
++X+|____________________|+X+
+
+
+Credits -Cannonball
+Titlepic - Sincity2100 (In progress)
+Automap Cleanup - Dobu Gabu Maru
+
+    ______________________________________________________________________
++X+| ___  ___  ___  ____   __      __  __    ___  ___ __ __  __  __   ___ |+X+
++x+| ||\\//|| // \\ || \\ (( \   ( ||\ ||    ||\\//|| || || (( \ ||  //   |+x+
++X+| || \/ || ||=|| ||_//  \\      ||\\||    || \/ || || ||  \\  || ((    |+X+
++x+| ||    || || || ||    \_))     || \||    ||    || \\_// \_)) ||  \\__ |+x+
++X+|______________________________________________________________________|+X+
+
+       (Make sure to load E4_MUS if your port doesn't support MAPINFO,
+        so you don't miss out on some vital music for episode 4!)
+
+Title screen music is "At Doom's Gate" by Varis Alpha
+Intermission screen music is "Instant Gibbage" by James Paddock
+Victory screen music is "Omen 1196" by KevinHEZ
+Ending screen music is "Sweet Little Dead Bunny" by Varis Alpha
+
+E1M1 - Hangar
+Author - elic (Eli Cohen)
+         w/ Minor touch-ups by Cannonball
+Midi - "Gravestones" by Mark Klem
+
+E1M2 - Nuclear Plant
+Author - SteveD (Steve Duff)
+Midi - "Pinball Dreams (Amiga) Menu Theme" by Olaf Gustafson,
+       arranged by Friendly Floyd
+
+E1M3 - Toxin Refinery
+Author - Stewboy (Stuart Rynn)
+         w/ Edits by Jaws in Space, Cannonball
+Midi - "Patterns" by Psyrus
+
+E1M4 - Command Control
+Author - Stewboy (Stuart Rynn)
+         w/ Edits by DJVCardmaster, dobu gabu maru, Cannonball
+Midi - "Ascension" by Psyrus
+
+E1M5 - Phobos Lab
+Author - Sincity2100
+         w/ Edits by Jaws in Space, Cannonball, dobu gabu maru (for the final room)
+Midi - "Coffee Tremors" by James Paddock
+
+E1M6 - Central Processing
+Author - Cannonball (Matthew Powell)
+Midi - "Hypercube" by Stewboy
+
+E1M7 - Computer Station
+Author - dobu gabu maru (Darryl Steffen)
+Midi - "Copperhead" by Alfonzo
+
+E1M8 - Phobos Anomaly
+Author - Glaice/Armaetus
+         w/ Edits by Cannonball
+Midi - "The Forgotten God" by Tristan Clark
+
+E1M9 - Military Base 
+Author - Cannonball (Matthew Powell)
+Midi - "The Anthrax Solution" by Varis Alpha
+
+E2M1 - Deimos Anomaly
+Author - PedroVC
+         w/ Edits by dobu gabu maru
+Midi - "Pressure Point Huh Again" by Sonic Mayhem
+
+E2M2 - Containment Area
+Author - Riderr3
+Midi - "D_E1M3theme" from DTWID
+
+E2M3 - Refinery
+Author - DJVCardmaster
+Midi - "Trilema" by James Paddock
+
+E2M4 - Deimos Lab
+Author - Scifista42
+         w/ Edits by dobu gabu maru
+Midi - "Batman_cathedral" from VGmusic
+
+E2M5 - Command Center
+Author - Mouldy (Cyriak Harris)
+Midi - "Hard Drive" by AD_79 
+
+E2M6 - Halls of the Damned
+Author - PedroVC
+         w/ Edits by dobu gabu maru
+Midi - "Pollutants" by James Paddock
+
+E2M7 - Spawning Vats
+Author - General Rainbow Bacon
+         w/ Edits by dobu gabu maru
+Midi - "Haunting Echoes" by James Paddock
+
+E2M8 - Tower of Babel
+Author - Scotty (Alex Scott)
+Midi - "I Already Know about ID" by Primeval (John Weekly)
+
+E2M9 - Fortress of Mystery
+Author - Dreadopp
+         w/ Edits by dobu gabu maru
+Midi - "Red Sand" by Psyrus
+
+E3M1 - Hell Keep
+Author - Jmickle
+         w/ Edits by Cannonball)
+Midi - "Jaws of Fate" by AD_79 (Brayden Hart)
+
+E3M2 - Slough of Despair
+Author - Benjogami
+Midi - ???
+
+E3M3 - Pandemonium
+Author - dobu gabu maru (Darryl Steffen)
+Midi - "Treacle Empire" by James Paddock
+
+E3M4 - House of Pain
+Author - Walter Confalonieri
+         w/ Edits by dobu gabu maru
+Midi - "It's Gonna Be a Rough Ride" by The Green Herring (Eric Baker)
+
+E3M5 - Unholy Cathedral
+Author - Corsair
+         w/ Edits by dobu gabu maru
+Midi - "Orgolia" by Paul Corfiatis
+
+E3M6 - Mt Erubus
+Author - Nine Inch Heels
+Midi - Stone Tower from The Legend of Zelda: Majora's Mask
+
+E3M7 - Gateway to Limbo (Limbo)
+Author - Cannonball (Matthew Powell)
+Midi - "The Last Sunset" by Tristan Clark
+
+E3M8 - Dis
+Author - Nine Inch Heels
+Midi - Chrono Trigger
+
+E3M9 - Warrens
+Author - dobu gabu maru (Darryl Steffen)
+Midi - "Last Man Standing (Sacrificial Synphony)" by Kristian Aro
+
+E4M1 - Hell Beneath
+Author - _Bruce_
+Midi - "The Puppeteer" by James Paddock
+
+E4M2- Perfect Hatred
+Author - Steve D (Steve Duff)
+Midi - "Flatulence Protocal" by James Paddock
+
+E4M3 - Sever the Wicked
+Author - dobu gabu maru (Darryl Steffen)
+Midi - "Prowler" by James Paddock
+
+E4M4 - Unruly Evil
+Author - Tourniquet
+Midi - Preng by zan zan zawa veia
+
+E4M5 - They Will Repent
+Author - Cannonball (Matthew Powell)
+Midi - "A Warrior Reborn" by Tristan Clark (Rebirth Midi pack)
+
+E4M6 - Against Thee Wickedly
+Author - Steve D (Steve Duff)
+Midi - "Godhood Part 8 (The Void) by James Paddock
+
+E4M7 - And Hell Followed
+Author - Peanut
+         w/ Edits by dobu gabu maru
+Midi - "Hush" by Paul D
+
+E4M8 - Unto the Cruel
+Author - dobu gabu maru (Darryl Steffen)
+Midi - "SHWORD" by Yakfak
+
+E4M9 - Fear
+Author - TimeofDeath
+Midi - "Rising Colossus" by Varis Alpha
+
+    _______________________________________
++X+| ______ __  __  ___  __  __ __ __  __  |+X+
++x+| | || | ||  || // \\ ||\ || || // (( \ |+x+
++X+|   ||   ||==|| ||=|| ||\\|| ||<<   \\  |+X+
++x+|   ||   ||  || || || || \|| || \\ \_)) |+x+
++X+|_______________________________________|+X+
+
+Many thanks to Tristan Clark, who started this project eons ago. Without your efforts
+early on, UDINO would have never become what it is today.
+
+Given how long it has taken to cobble this project together, it's only natural that a bunch
+of mappers have come and gone in the process. Over nearly a decade, we've received a flood of
+submissions, discussed their pros and cons, and rejected almost as many maps as we accepted in
+the end. But our demands for standardization were in the hopes of making something truly special,
+all while managing to adhere to the strict limitations inherent to Ultimate Doom mapping. We are
+grateful to all the folks that contributed maps to our patchwork project, as well as those that
+have provided invaluable feedback and FDAs (where we may or may not have snickered watching you
+die).
+
+Lastly, a huge thanks to the DOOM community as a whole for being a place where an eclectic group
+of weirdos can gather together and produce some truly incredible, mind-bogglingly-cool stuff.

@@ -1,0 +1,194 @@
+===========================================================================
+Update to               : levels/doom/Ports/megawads/deathless
+Primary Purpose         : Single play/co-op
+Advanced engine needed  : Limit-removing
+===========================================================================
+Title                   : Deathless (v1.1)
+Filename                : deathless.wad
+Release date            : 25 May 2020
+Author                  : Jimmy
+Email Address           : [redacted]
+Other Files By Author   : Jenesis, Jenocide DM, Jiffy Bag, Jimmy's Jukebox,
+                          Jungle Spirits, The Joy of Mapping, realms of Zoon,
+                          Harmony/Plutonia/Revolution/Rebirth/Raven MIDI Packs.
+Misc. Author Info       : Ate too many pizza.
+
+Description             : A speedily-done Ultimate Doom megawad.
+                          
+                          The 27 layouts for the three new episodes were first
+                          blocked out starting midnight 1st Nov. The 27th map
+                          was thingplaced and balanced at about midnight on
+                          10th Nov, so the total build time for this is 9 days.
+                          A number of days after release were spent on finding
+                          bugs and balancing the maps for single and co-op play.
+
+                          No jumping or crouching (enforced). Freelook allowed.
+
+                          As with this mapset's predecessor Griefless, ***A
+                          LIMIT-REMOVING PORT IS RECOMMENDED***. Chocolate Doom
+                          may not handle some of these maps, and is completely
+                          untested.
+                          
+                          Crispy Doom is recommended for the best experience
+                          while playing this.
+                          
+                          The difficulty of the set is also fairly easy-going,
+                          particularly early on. For extra challenge if desired,
+                          the author recommends adding -fast and/or -solo-net to
+                          the command line.
+                          
+Additional Credits to   : Big thanks to Ryath for organizing "NaNoWADMo" and
+                          giving me an excuse to be a bastard by pulling crap
+                          like this out of the ether in substantially less than
+                          the month that was allotted.
+
+                          Special thanks to Alfonzo and Fuzzball for a fun co-op
+                          testing session, and to all those who provided
+                          feedback and demos in the thread and the NaNoWADMo
+                          discord.
+
+                          Thanks also to TeamTNS for hosting this on Thursday
+                          Night Survival two weeks running!
+                          
+                          Endless thanks to id Software and Bethesda for
+                          officially sanctioning this mapset and featuring it as
+                          an add-on for the new PC/console port of Doom! So cool.
+===========================================================================
+* What is included *
+
+New levels              : E1M1-M9, E2M1-M9, E3M1-M9, E4M1-M9
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes - lost soul and spiderdemon health have been
+                          changed (soul is now 70, spider is now 3500 and is
+                          now more threatening as a monster)
+Demos                   : Yes
+Other                   : ZMAPINFO, EMAPINFO, DECORATE to replicate DEHACKED
+                          behavior changes.
+
+
+* Play Information *
+
+Game                    : The Ultimate Doom
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : No
+Other game styles       : No
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Nov 1st-10th for first RC, rest of month for testing
+                          and fixing. A few months in 2020 for getting it ready
+                          for release on the Bethesda port.
+Editor(s) used          : GZDoom Builder, SLADE, Paint.NET for new graphics
+May Not Run With...     : Vanilla Doom, Chocolate Doom.
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://www.jamespaddockmusic.com/
+           http://jimmy.the-powerhouse.net/WAD/
+The thread: https://www.doomworld.com/forum/topic/103075-deathless-an-ultimate-doom-megawad-rc3/
+Get Griefless here: https://www.doomworld.com/forum/topic/101376-griefless-final-release-v11/
+
+
+* Map list *
+
+"Lifeless"
+E1M1: Contagion
+E1M2: Laid to Rust
+E1M3: Sluice Gate
+E1M4: Underflow
+E1M5: Outage
+E1M6: Burial Ground
+E1M7: Mainstay
+E1M8: Embolon
+E1M9: Gods
+
+"Ruthless"
+E2M1: Hydroelectrics
+E2M2: Snake Alley
+E2M3: Greenhouse
+E2M4: Virulent
+E2M5: Repugnant Gardens
+E2M6: The Mad Mistress
+E2M7: City of Coal
+E2M8: Dukes
+E2M9: Slain
+
+"Deathless"
+E3M1: Open Wound
+E3M2: Salted Earth
+E3M3: Forlorn Morgue
+E3M4: Vestibule
+E3M5: Soul Drinker
+E3M6: Dire Prayers
+E3M7: Wormwood Cathedral
+E3M8: Ire
+E3M9: The Wastes
+
+"Griefless"
+E4M1: Inhuman Remains
+E4M2: Fetid Site
+E4M3: Corroded
+E4M4: Incision
+E4M5: Serene Shadows
+E4M6: Vertigo
+E4M7: Sea of Entrails
+E4M8: Desecrators
+E4M9: Under
+
+
+* Full credits *
+
+Maps:
+===
+Jimmy
+
+Graphics:
+===
+Jimmy
+Fuzzball
+Mechadon (sky used in titlepic)
+E1 interpic created from skies by Mechadon and Eradrop, plus one from Necrodome.
+E2 interpic created from sky by Fuzzball and a Doom alpha sky edit by Sodaholic.
+E3 interpic created from sky by Eradrop and a screen from Robinson's Requiem.
+
+Textures:
+===
+doom2.wad
+Fuzzball (E2 + E4 sky)
+Simon666 (E3 sky)
+ItsNatureToDie (MARBCYB*, new SLAD falls)
+Vader (ASH edits, new cyber/spider doors)
+
+Testing:
+===
+Alfonzo
+Fuzzball
+TeamTNS
+
+Special Thanks:
+===
+Ryath for setting up NaNoWADMo!
+id Software/Bethesda for featuring Deathless!
+The team at Bethesda.net for the interview!
+All those who provided feedback and demos!

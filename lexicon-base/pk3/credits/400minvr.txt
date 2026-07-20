@@ -1,0 +1,340 @@
+===========================================================================
+Advanced engine needed  : UMAPINFO compatible port
+Primary purpose         : Single play
+===========================================================================
+Title                   : 400 Minutes of /vr/
+Filename                : 400minvr.wad
+Release date            : 5/23/2022
+Author                  : Various
+Email Address           : [redacted]
+Other Files By Author   : 2048 Units of /vr/, HFFM, Ad Mortem
+Misc. Author Info       : /vr/ - Retro Games, Doom General
+
+Description             : This project contains 37 maps, all made within 400
+                          minutes (with a few exceptions,) inspired by the
+                          previous X Minutes of /vr/ projects. All maps are
+                          Boom-compatible and use rfhelltx.wad for textures.
+                          UMAPINFO is utilized to supply special actions and
+                          allow for a 37 map WAD. This set is intended to be
+                          played in complevel 9 with a UMAPINFO compatible
+                          port.
+                          Also included in the zip is an extra WAD featuring
+                          a non-widescreen HUD for ports that do not support
+                          widescreen HUDs.
+
+Additional Credits to   : Level Design: Redead-ITA, Sitri, ViolentBeetle,
+                          Anonymous, EnragedEggplant, Desert Yeti, A2Rob,
+                          NepNep, Revae, Wolpertinger, ttu, Rancid Sam,
+                          Bartekmil, Captain Mozzarella, ASO3000, Coffee
+                          Achiever, Hand-peeled, Kuramori, Zipon, Washing
+                          Machine Enthusiasts, lunchlunch, MacGuffin,
+                          charcola, brxyz, punch you in the face man
+                          Testing/Streaming: stxvile, Tarnsman
+                          Co-op testing: Jedd, Babby_32X, Rancid Sam, Alex,
+                          punch you in the face man, Captain Mozzarella,
+                          Sitri
+===========================================================================
+* What is included *
+
+New levels              : 37
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : Internal UMAPINFO/ZMAPINFO lump
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-37
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2 Weeks
+Editor(s) used          : Ultimate Doombuilder, Slade
+Known Bugs              : May still contain texture misalignments, minimalist
+                          HUDs may have key displays slightly broken
+May Not Run With        : Any non-UMAPINFO compatible port
+Tested With             : DSDA, Woof!, GZDoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://boards.4channel.org/vr/catalog#s=doom%20thread
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MAP01: Blood Refinery
+Author: Redead-ITA
+Music: Handle With Care by Jimmy
+Submission: 5
+~
+MAP02: Compound Fracture
+Author: Sitri
+Music: Astral Dreadnought by Jimmy 
+Submission: 4
+~
+MAP03: Mister Pain Returns
+Author: ViolentBeetle
+Music: Within Reach by Jimmy
+Submission: 19
+~
+MAP04: Cracked
+Author: Anonymous
+Music: The Bay from Sim City 4
+Submission: 3
+~
+MAP05: Moon Crater
+Author: EnragedEggplant
+Music: An old midi made by the author's friend
+Submission: 10
+~
+MAP06: Southwest Frag
+Author: Desert Yeti
+Music: Fractilian Space from Mega Race
+Submission: 9
+~
+MAP07: Seeing Red
+Author: A2Rob
+Music: Stormwater by Jimmy
+Submission: 15
+~
+MAP08: Acid Curve
+Author: Redead-ITA
+Music: One Love by Prodigy
+Submission: 20
+~
+MAP09: Live Complex
+Author: NepNep
+Music: Dredge by Mark Klem
+Submission: 34
+~
+MAP10: Blood Office
+Author: Anonymous
+Music: The Jazz Machine by Stuart Rynn
+Submission: 28
+~
+MAP11: I am the Fat Rabbit
+Author: Revae
+Music: Do Not The Horse (Horseless Edition) by Dragonfly
+Submission: 21
+~
+MAP12: Biskelion
+Author: Wolpertinger
+Music: Two Stars by Dial Up for Murder
+Submission: 22
+~
+MAP13: Undying Manor
+Author: ttu
+Music: Clotho from Columns
+Submission: 29
+Notes: This was unfinished on submission, so the author was allowed an extra 60 minutes to complete the map.
+~
+MAP14: I'll Be Here 'Til I'm Dead
+Author: Rancid Sam
+Music: Thank You For The Venom by My Chemical Romance
+Submission: 24
+~
+MAP15: Eversion
+Author: Bartekmil
+Music: Parallel Dimensions from Quake
+Submission: 14
+~
+MAP16: The Creature From Plaque Lagoon
+Author: Captain Mozzarella
+Music: Intestinal Distress from Earthworm Jim 
+Submission: 12
+~
+MAP17: Archahellago
+Author: Sitri
+Music: Coma by Overkill
+Submission: 1
+~
+MAP18: Technocratic Insanity (AKA, Telefrag)
+Author: Anonymous
+Music: Metallic Madness Past from Sonic CD
+Submission: 23
+~
+MAP19: Soul Survivor
+Author: ASO3000
+Music: Every Breath you Take by The Police
+Submission: 26
+~
+MAP20: Garbage Brain
+Author: Coffee Achiever
+Music: Human Fly by The Cramps
+Known Issues: Enemies getting stuck on a circle plat
+Submission: 7
+~
+MAP21: Could be Worse
+Author: Hand-peeled
+Music: Plusfort by Bucket 
+Submission: 8
+~
+MAP22: Erosion of Sanity
+Author: Kuramori
+Music: Outstretch of Sin by David Shaw
+Submission: 31
+Notes: The author spent over 60 extra minutes testing, technically breaking the time limit.
+~
+MAP23: Dash Tower
+Author: zipon
+Music: The Docks from Heretic
+Submission: 30
+~
+MAP24: Yass Queen, Flay!
+Author: Washing Machine Enthusiasts
+Music: The Hellion / Electric Eye by Judas Priest
+Submission: 27
+~
+MAP25: Kratom Withdrawal
+Author: lunchlunch
+Music: Around the World by ATC
+Submission: 11
+~
+MAP26: Ultra Monkey Likes Daddy 
+Author: NepNep
+Music: Unlocated Hell from Touhou 17
+Submission: 2
+~
+MAP27: Where Girls Learn to Pee on Command
+Author: MacGuffin
+Music: Unholy Armada from Soldier Blade
+Submission: 25
+~
+MAP28: Caves of Koone
+Author: charcola
+Music: Getting Too Tense remix by Jay Reichard (Added by project lead)
+Submission: 36
+Notes: The author states he went "a bit over the time limit" 
+~
+MAP29: Tuck Me Into Ramza's Foreskin
+Author: Rancid Sam
+Music: Alone in the World from Wild Arms
+Submission: 39
+~
+MAP31: Magog a Go-Go
+Author: Coffee Achiever
+Music: Demon Speeding by Rob Zombie
+Submission: 38
+Notes: The author recorded him making this map with a timer. Good on you, anon.
+~
+MAP32: Sisyphus's Chrysalises
+Author: Anonymous
+Music: Battleships from Jazz Jackrabbit
+Submission: 17
+~
+MAP33: 400 Line Actions
+Author: Anonymous
+Music: Kitchen Names (And Taking Ace) by PRIMEVAL (Added by project lead)
+Submission: 18
+~
+MAP34: Feuer frei!
+Author: brxyz
+Music: Feuer frei! by Rammstein 
+Submission: 35
+~
+MAP35: Megatron
+Author: punch you in the face man
+Music: Slavestate by Godflesh 
+Submission: 32
+~
+MAP30: House of Fun
+Author: Washing Machine Enthusiasts
+Music: House of Fun by Madness
+Submission: 37
+Notes: This map required some special fixes for ZDoom. Check the DECORATE lump in the WAD for more info.
+~
+MAP36: Invaded Space
+Author: Sitri
+Music: Doomsday Zone from Sonic 3 & Knuckles
+Submission: 16
+~
+MAP37: Pac You in the Face Man
+Author: punch you in the face man
+Music: Popcorn by Hot Butter
+Submission: 13
+~
+
+
+Project Lead/Compiler: MacGuffin
+Textures used: rfhelltx.wad
+Status Bar: Cooperative effort by 3 anons
+Berserk: Anonymous
+INTER** Pictures: Captain Mozzarella
+TITLEPIC: Captain Mozzarella
+Keen replacements: From Space Invaders
+SKY1: Mechadon
+SKY2: ChopBlock223
+M_DOOM: Clock by Jazz Mickle
+BOSSBACK: punchyouinthefaceman
+-City background by Mechadon
+-Clock by Jazz Mickle
+Special Thanks: The Ma/vr/icks, and all of the anons who playtested and posted feedback and ideas for the project, especially
+the ones who verified if I got everything right. Thanks for putting up with my dumbassery and getting this project out the door, seriously.
+
+Additional music credits
+D_DM2TTL: What the Rain Hides by FuzzySpaceRaptor
+D_DM2INT: Curse of Vile from Megaman Zero 3  
+D_TEXT1: Halloween Ramble from Tyrian
+D_TEXT2: Story from XCOM
+D_TEXT3: Preparations 1 from XCOM: Terror from the Deep
+D_TEXT4: The Earth Spirit's Homecoming from Touhou 11
+D_TEXT5: Waiting by Sarah Mancuso
+
+Troll music credits
+D_RUNNIN: Never Gonna Give You Up by Rick Astley
+D_STALKS: NLSARCO.mid by Wolf Kraft
+D_COUNTD: Beyond Ugly by Hyena
+D_BETWEE: Triple Baka by Hatsune Miku (?)
+D_DOOM: The Moon from Ducktales NES
+D_THE_DA: What is Love by Haddaway
+D_SHAWN: You Just Beat a Doom 2 Level in the Middle of Detroit by punchyouinthefaceman
+D_DDTBLU: Unknown track by TimeOfDeath
+D_IN_CIT: Macho Man by The Village People
+D_DEAD: Lunar Clock ~ Luna Dial from Touhou 6
+D_STLKS2: This SUXX by Rich Nagel
+D_THEDA2: Sparta Techno Remix
+D_DOOM2: Party Rock Anthem by LMFAO
+D_DDTBL2: Beverly Hills Cop theme by Axel F
+D_RUNNI2: Toxic by Britney Spears
+D_DEAD2: Scatman's World by Scatman John
+D_STLKS3: Necrofantasia from Touhou 7
+D_ROMERO: It's Hip to be Square by Huey Lewis & the News
+D_SHAWN2: Barbie Girl by Aqua
+D_MESSAG: Do Ya Think I Am Sexy by Rod Stewart
+D_COUNT2: Tubthumping by Chumbawumba
+D_DDTBL3: Caramelldansen by Caramella Girls
+D_AMPIE: Ochame Kinou by Kasane Teto
+D_THEDA3: Djeth by Ribbiks
+D_ADRIAN: Gangnam Style by Psy
+D_MESSG2: Intro1 from Gubble
+D_ROMER2: Double Penis Surgery by Hyena
+D_TENSE: Music from Grinch's Ultimatum by PilotRedSun
+D_SHAWN3: The Duck and Roger the Horse by Cardiacs
+D_ULTIMA: City Escape from Sonic Adventure 2
+D_READ_M: Chicken Dance

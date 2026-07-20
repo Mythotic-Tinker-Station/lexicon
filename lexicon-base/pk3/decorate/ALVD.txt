@@ -1,0 +1,16 @@
+Actor Lexicon_ALVD_CommanderKeen : CommanderKeen
+{
+	PainSound "ALVD/DSKEENPN"
+	DeathSound "ALVD/DSKEENDT"
+}
+
+Actor Lexicon_ALVD_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("ALVD/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}

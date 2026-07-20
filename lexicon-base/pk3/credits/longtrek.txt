@@ -1,0 +1,235 @@
+===========================================================================
+Update to               : longtrek.zip
+Primary purpose         : Single play
+===========================================================================
+Title                   : The Long Trek Back Home v. 1.1
+Filename                : longtrek.zip
+Release date            : Sep 30th 2021
+Author                  : hervoheebo
+Email Address           : [redacted]
+Other Files By Author   : Deimos Deja Vu, The Journey, Serpent's Wake
+
+Description             : Presented as an immediate sequel to Doom ][, 
+The Long Trek Back Home sees you through the old levels in reverse order;
+Icon of Sin is the first and Entryway the last. Though the
+respective areas are familiar, great upheavals have taken place:
+destruction and Hellish subversion ensure that there is as much new as
+there is old. From the caved-in ruins of Hell to the corrupted cityscape
+to the former spaceport suffused in demonic magic, the road home is long...
+
+This is the updated version 1.1, for details please read the included
+text file LONGTUPD.txt.
+
+LongTrek is a new 32 level megawad for DOOM ][. It is designed to be 100%
+vanilla compatible and balanced for pistol start. As described, the new 
+levels are themed after their predecessors from D2, with a major exception
+being that you begin from the end and finish where it all started. This
+applies to the individual levels as well: the former starting room is now
+the goal and the exit is where you now begin. The style can be compared to
+that of "Deimos Deja Vu", but the individual areas are now a bit more
+accurate in terms of their relative positions with each other. Overall,
+hard and fast rules are shunned and the goal is to provide new experiences
+that pay tribute to the original levels in different ways.
+
+Almost all music tracks from D2 are updated to fit each individual level's
+mood, so even what were duplicate tracks in the original game now sound
+different.
+
+While there are some new graphics like the title screen and intermission
+screen, there are NO new walls or flats aside from the 3 new skies in order
+to retain the look & feel of DOOM ][.
+
+There is a Dehacked patch file included, which changes the automap names,
+story text and changes the flags of a few gib things so they don't float
+in the air (thanks to Keyboard_Doomer for the tip).
+
+The skill levels are overhauled. UV is still the same and considered the 
+default skill level. HMP is otherwise the exact same, but has more ammo
+items, while HNTR has extra health items. Because of the hard-coded
+increase in Spawn Cube fire rate that HNTR and ITYTD have, relevant areas
+are slightly more difficult in those skill levels. If the amount of
+health or ammo is unpleasantly low, please give the new skill levels a try.
+The level of difficulty expects that you are reasonably proficient in Doom,
+having at least finished the original D2 first. Also, like mentioned, the
+levels are balanced for pistol start.
+
+Multiplayer support is included, with co-op and DM starts and multiplayer-
+only items plus countermeasures against getting stuck because of level
+gimmicks. However, multiplayer has not been tested extensively.
+
+I recommend the wad be played with software rendering as
+the visuals are built around the default palette and lighting levels.
+The wad has been tested with the usual rules: no vertical mouselook, auto
+aim on, infinitely tall monsters, limit on Pain Elemental souls.
+As for music, "Arachno Soundfont" works very nicely, and for a more
+lo-fi sound "hisymak_genmidi_2017-11-29.wad" works fine.
+
+Bug Info & limitations:
+-Some secrets may be given away if a source port's "textured automap"
+feature is used.
+-The "deep water" effect used in several places causes a Hall of Mirrors
+if the viewpoint is lowered enough (by dying).
+-In vanilla, some areas will experience Hall of Mirrors in the distance
+because of a seg overflow, and the sprite limit can be hit in some areas
+causing sprites to flicker in and out of view.
+-Some areas that are inaccessible in normal play have confirmed visplane
+overflows in vanilla: including at least the top of the blood falls in
+MAP05: The Abandoned Mines and the lava sea in MAP19: The Factory.
+-Several areas are subject to the "Ghost Monsters" engine bug. There are
+often rockets placed at areas where these ethereal enemies may be born;
+try using the splash damage to kill them if you encounter them.
+-MAP07: The Chasm: The stair triggered by tag 667 is built to allow
+passage even if the last 2 Arachnotrons die simultaneously, but three or
+more will raise the stair too high and make it impossible to leave.
+-MAP31: The special visual effect behind the windows is ruined if the 
+player gets the invulnerability and runs back to the starting area.
+-MAP16: The Inmost Dens: Not a bug, but for your information the red key
+is absent on purpose despite the presence of a red-key locked door. In
+multiplayer there is a BFG behind the door.
+-MAP16: The Inmost Dens has a "Closes after 30 seconds" door (type 10),
+which is subject to an engine bug: if the door is blocked from closing, 
+it will rise indefinitely in vanilla and cause a crash after enough time
+if the area is re-entered.
+-MAP22: The Pit: the exit teleporter is opened by lowering layers of
+walls around it by pressing eye switches. Since the mechanic uses the
+"Lower to Lowest Floor" trigger, it is possible to 'waste' switches,
+especially in multiplayer, by pressing them too early which causes the
+next layer not to lower enough.
+There are more switches than minimally necessary; if you get stuck, 
+get all the keys and check the northern corridor of the BFG secret.
+-MAP29: Underhalls: Multiplayer: if two players press the two 
+floor-lowering secret switches (linedef 3551 and linedef 3562) close to
+simultaneously, the associated secret can become inaccessible.
+-MAP30: Entryway: Not considered a bug: there are purposely immobile
+Specters in a certain area.
+-No Monsters mode: note that several maps depend on switches that kill
+Commander Keens to create combination locks for doors. Since Keens do not
+spawn on -nomonsters, this will usually render the affected levels 
+impossible to finish. However, when playing in Deathmatch mode, players
+may spawn at DM-exclusive locations that cause the Keen doors to open
+upon leaving. Note also that MAP07: The Chasm utilizes tags 666 and 667
+with the Mancubus/Arachnotron death mechanism. 
+The following maps are affected:
+MAP07
+MAP09
+MAP11
+MAP18
+MAP19
+(MAP21) (has an alternate route)
+(MAP22) (has an alternate route)
+
+-Vanilla: savegame limits confirmed to crash the game upon saving in
+the following maps:
+MAP08
+MAP18
+MAP20
+MAP21
+MAP30
+
+Because the amount of things changes during play, other maps may also
+be affected! Be cautious if you decide to save the game in vanilla.
+-The default OPL emulator in Chocolate Doom may distort the music and
+play it at a higher tempo, even locking up the game with certain tracks
+like EVIL (MAP31 and ending.) Recommended to use another OPL or MIDI
+playback solution if you encounter this problem.
+-MAP20: Circle of Death may be affected by the bug where projectiles
+trigger linedefs; the single-use teleports on the spiral steps are
+used up early, therefore making the level shorter. This "trick" might
+be used in other levels as well.
+
+-Because of string space limitations in Dehacked, automap names don't
+include level numbers. Refer here if you get lost:
+MAP01: Icon of Sin
+MAP02: The Living End
+MAP03: The Spirit World
+MAP04: Monster Condo
+MAP05: The Abandoned Mines
+MAP06: Bloodfalls
+MAP07: The Chasm
+MAP08: Barrels o' Fun
+MAP09: The Catacombs
+MAP10: Nirvana
+MAP11: Gotcha!
+
+MAP12: The Citadel
+MAP13: The Courtyard
+MAP14: Tenements
+MAP15: Suburbs
+MAP16: Industrial Zone
+MAP17: The Inmost Dens
+MAP18: Downtown
+MAP19: The Factory
+MAP20: Circle of Death
+
+MAP21: Refueling Base
+MAP22: The Pit
+MAP23: Tricks & Traps
+MAP24: Dead Simple
+MAP25: The Crusher
+MAP26: The Waste Tunnels
+MAP27: The Focus
+MAP28: The Gantlet
+MAP29: Underhalls
+MAP30: Entryway
+
+
+Additional Credits to   : Testing Participation: Keyboard_Doomer, Hisymak, 
+Not Jabba. Replacement midi for D_EVIL is "Victors" from Wolfenstein 3D.
+Thanks to skepticist for informing me of the stuck bugs in MAP02 and
+MAP13 in addition to the point of no return in MAP19, which were fixed in
+this version.
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 1-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Designed for
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Long
+Editor(s) used          : Doom Builder 2, Anvil Studio, GIMP, SLADE,
+                          Endoomer, WhackEd4
+Known Bugs              : Refer to above list under "Description"
+May Not Run With        : Doom II for Tapwave Zodiac
+Tested With             : Chocorenderlimits, ZDoom 2.8.1, GZDoom 4.2.4a,
+                          dsda-doom 0.21.3, PrBoom-Plus 2.5.1.3,
+                          Chocolate Doom 2.0.0
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material. If you do so, you must
+give appropriate credit, provide a link to the license, and indicate if
+changes were made. You may do so in any reasonable manner, but not in any way
+that suggests the licensor endorses you or your use. You may not use the
+material for commercial purposes. If you remix, transform, or build upon the
+material, you must distribute your contributions under the same license as
+the original.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

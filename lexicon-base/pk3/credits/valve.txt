@@ -1,0 +1,242 @@
+===========================================================================
+Archive Maintainer      : Please place in levels/doom2/ports/megawads
+Advanced engine needed  : Boom compatible
+Primary purpose         : Single player
+===========================================================================
+
+Title                   : Valiant: Vaccinated Edition
+Filename                : valve.zip
+Release date            : December 3rd, 2015
+Author                  : Paul "skillsaw" DeBruyne
+Email Address           : pgdebruyne@gmail.com
+Other Files By Author   : Sector 666 (666.zip)
+                          Aeternum (aeternum.zip)
+                          Vanguard (vanguard.zip)
+                          Lunatic (lunatic.zip)
+                          Hanging Gardens (hgarden.zip)
+                          Valiant (valiant.zip)
+                          
+                          Contributions to various community, team, and
+                          personal projects, including Back to Saturn X 
+                          Episodes 1 and 2, Stronghold: On the Edge of 
+                          Chaos, ZPack, Community Chest 4, Unholy Realms, 
+                          and various 32in24 sessions.
+                          
+Misc. Author Info       : Makes maps for Doom
+
+Description             : This edition of Valiant strips out all of the MBF
+                          DeHackEd work from the original release, which
+                          means this version is compatible with gameplay 
+                          mods!
+                          
+                          If you really disliked the additional monsters
+                          and weapons in Valiant, you could also play this
+                          version as an alternative, since none of that
+                          content is present.  Have fun!  It's probably
+                          going to be a bit easy, though.
+
+===========================================================================
+
+Port Differences        : In ZDoom and Eternity, each episode is selected
+                          from the main menu.  In PrBoom-plus, Valiant 
+                          plays like a conventional 32 level megawad with a
+                          death exit at the end of each episode.
+                          
+                          Episode ending texts and splash screens are
+                          implemented using MAPINFO and therefore are only
+                          present in (G)ZDoom, Eternity, and Zandronum.
+                          
+                          Music changer objects are used a few times. These
+                          are not supported by Eternity, and thus Eternity
+                          will simply continue playing the map's default 
+                          midi track in these situations.
+                          
+                          I recommend playing in ZDoom or Eternity for the 
+                          optimal experience.  If you would like to record 
+                          demos or play multiplayer, PrBoom-plus or 
+                          Zandronum are recommended, respectively.
+
+===========================================================================
+
+Special Thanks          : Special thanks to dew, esselfortium, 
+                          Seele00TextOnly and Tarnsman for testing, quality
+                          control, criticism, and technical advice, and 
+                          also for being chill dudes.  Thanks so much for 
+                          your help!
+                          
+                          Special thanks to the creators and maintainers of
+                          utilities, source ports, and wikis, without which
+                          this project wouldn't have been possible.
+                          
+                          Special thanks to the Doom community as a whole,
+                          but especially the Doomworld forums and #doomtwid
+                          for making me feel at home.
+
+Texture Credits         : NiGHTMARE
+                          Espi
+                          Eriance
+                          Fredrik Johansson
+                          Janitor
+                          DaGGeR
+                          Ola Bjorling
+                          Vader
+                          XDelusion
+                          esselfortium
+                          RottKing
+                          Nuxius
+                          Afterglow
+                          AgentSpork
+                          Enjay
+                          Huy Pham
+                          SargeBaldy
+                          Tormentor667
+                          Iikka Keranen
+                          Cage
+                          FuzzballFox
+                          zrrion the insect
+                          Nightfall
+                          Blue Shadow
+                          skillsaw
+                          GothicDM Team
+                          Eternal Doom Team
+                          id Software
+                          Raven Software
+                          Rogue Entertainment
+                          Valve Software
+
+Sprite Credits          : NMN
+                          Eriance
+                          Jimmy
+                          Yurithehairfan
+                          Huy Pham
+                          IMX
+                          Vader
+                          Neoworm
+                          Cyb
+                          Icytux
+                          Captain Toenail
+                          Maelstrom
+                          Tormentor667
+                          skillsaw
+                          id Software
+                          Raven Software
+                          3d Realms
+
+Fonts                   : AgentSpork
+
+Palette                 : Uses red range from 32in24-13 palette by 
+                          esselfortium
+
+GLDefs                  : Gez
+                          
+Misc Graphics, Splash
+Screens, Status Bar     : skillsaw
+                        
+Music Credits           : MAP01 - "air.mid" (Stewboy)
+                          MAP02 - "coldwires.mid" (Stewboy)
+                          MAP03 - "window.mid" (Stewboy)
+                          MAP04 - "river.mid" (Stewboy)
+                          MAP05 - "core.mid" (Stewboy)
+                          MAP06 - "Water World" (Bobby Prince)
+                          MAP07 - "Aliens, Say Your Prayers" (Bobby Prince)
+                          MAP08 - "Astral Dreadnought" (Jimmy)
+                          MAP09 - "Dark Angel" (Jimmy)
+                          MAP10 - "Fallen Sun" (Jimmy)
+                          MAP11 - "Cataclysmic Impact" (Jimmy)
+                          MAP12 - "Flatulence Protocol" (Jimmy)
+                          MAP13 - "Postmodern Muck" (Jimmy)
+                          MAP14 - "rustybridge.mid" (Stewboy)
+                          MAP15 - "Goin' Down the Fast Way" (Lee Jackson)
+                          MAP16 - "skytemple.mid" (Stewboy)
+                          MAP17 - "Stealth Mode" (Jimmy)
+                          MAP18 - "Prototype (extended) ft. Stuart Rynn
+                                  (Jimmy)
+                          MAP19 - "Sunset Over Babylon" (Jimmy)
+                          MAP20 - "Anchor" (Mark Klem)
+                          MAP21 - "Points of View (Jimmy)
+                          MAP22 - "Baron's Province" (Jimmy)
+                          MAP23 - "Industrial" (SlayeR)
+                          MAP24 - "Frivolous Encounter" (Mark Klem)
+                          MAP25 - "Death Scythe" (Gundam Wing: Endless 
+                                   Duel)
+                          MAP26 - "On Space Station" (Gundam Wing: Endless
+                                  Duel)
+                          MAP27 - "Epyon" (Gundam Wing: Endless Duel)
+                          MAP28 - "Moon/Mars: Sukarabe Fight 3" (The Hybrid
+                                  Front)
+                          MAP29 - "Mercurius / Vayeate" (Gundam Wing: 
+                                  Endless Duel)
+                          MAP30 - "End Credits" (Thunder Force 4) and
+                                  "Antarctic" (Gundam Wing: Endless Duel)
+                          MAP31 - "stars.mid" (Stewboy)
+                          MAP32 - "Aztec Gods" (Jimmy)
+                          
+                          Intermission - "Character Select" (Gundam Wing:
+                                         Endless Duel)
+                          Title - "Versus Screen" (Gundam Wing: Endless
+                                  Duel)
+                          Text screen - "Credits" (Gundam Wing: Endless
+                                        Duel)
+
+Sound Credits           : Jimmy
+                          Eriance
+                          Xaser
+                          Monolith Games
+                          Croteam
+                          id Software
+                          3d Realms
+                          
+===========================================================================
+
+* What is included *
+
+New levels              : 32
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : No
+Other                   : MAPINFO, etc
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : Valiant.wad
+Build Time              : A few hours
+Editor(s) used          : Doom Builder, Slade, WhackEd, GIMP, Notepad++
+Known Bugs              : None
+May Not Run With...     : Ports without Boom support
+                          Ports without support for ZDBSP compressed nodes
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+(Note that if you'd like to use something from Valiant, feel free to
+contact me and I can try to let you know it's source.  Anything I made
+myself is totally free for reuse - but you should contact me just to make
+sure that the resource you want to use is my own work.)
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors

@@ -1,0 +1,1398 @@
+WallTexture "HLTP0101", 16, 128
+{
+	Patch "WALL42_3", -4, 0
+	Patch "W46_37", 4, 106
+	Patch "W46_37", 4, 86
+	Patch "W46_37", 4, 66
+	Patch "W46_37", 4, 46
+	Patch "W46_37", 4, 26
+	Patch "W46_37", 4, 6
+}
+
+WallTexture "HLTP0102", 16, 128
+{
+	Patch "WALL42_3", -4, 0
+	Patch "W46_38", 4, 106
+	Patch "W46_38", 4, 86
+	Patch "W46_38", 4, 66
+	Patch "W46_38", 4, 46
+	Patch "W46_38", 4, 26
+	Patch "W46_38", 4, 6
+}
+
+WallTexture "HLTP0103", 16, 128
+{
+	Patch "WALL42_3", -4, 0
+	Patch "W46_39", 4, 106
+	Patch "W46_39", 4, 86
+	Patch "W46_39", 4, 66
+	Patch "W46_39", 4, 46
+	Patch "W46_39", 4, 26
+	Patch "W46_39", 4, 6
+}
+
+WallTexture "HLTP0104", 128, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "SW2_7", 12, 66
+	Patch "HLTP0274", 64, 0
+	Patch "SW2_7", 76, 66
+}
+
+WallTexture "HLTP0105", 128, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "SW2_8", 12, 66
+	Patch "HLTP0274", 64, 0
+	Patch "SW2_8", 76, 66
+}
+
+WallTexture "HLTP0106", 128, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 64, 0
+	Patch "W28_8", 0, 64
+	Patch "W28_5", 64, 64
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0107", 128, 128
+{
+	Patch "RW23_3", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0108", 128, 128
+{
+	Patch "RW23_3", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "HLTP0400", 16, 24
+}
+
+WallTexture "HLTP0109", 128, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "RW23_4", 64, 0
+	Patch "HLTP0400", 16, 24
+}
+
+WallTexture "HLTP0110", 128, 128
+{
+	Patch "HLTP0205", 0, 0
+	Patch "HLTP0400", 16, 24
+}
+
+WallTexture "HLTP0111", 128, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "RW21_4", 64, 0
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0112", 128, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "RW21_4", 64, 0
+	Patch "HLTP0400", 16, 24
+}
+
+WallTexture "HLTP0113", 128, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "RW21_4", 64, 0
+	Patch "HLTP0402", 16, 24
+}
+
+WallTexture "HLTP0114", 128, 128
+{
+	Patch "RW8_2", 0, 0
+	Patch "RW8_2", 64, 0
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0115", 128, 128
+{
+	Patch "RW8_2", 0, 0
+	Patch "RW8_2", 64, 0
+	Patch "HLTP0402", 16, 24
+}
+
+WallTexture "HLTP0116", 128, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0280", 64, 0
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0117", 128, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0280", 64, 0
+	Patch "HLTP0400", 16, 24
+}
+
+WallTexture "HLTP0118", 128, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0280", 64, 0
+	Patch "HLTP0402", 16, 24
+}
+
+WallTexture "HLTP0119", 64, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0404", 0, 32
+}
+
+WallTexture "HLTP0120", 128, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "RW37_2", 64, 0
+	Patch "HLTP0399", 16, 24
+}
+
+WallTexture "HLTP0121", 128, 128
+{
+	Patch "RW9_3", 0, 0
+	Patch "RW9_3", 64, 0
+	Patch "HLTP0402", 16, 24
+}
+
+WallTexture "HLTP0122", 128, 128
+{
+	Patch "RW26_1", 0, 0
+	Patch "RW26_1", 64, 0
+	Patch "HLTP0402", 16, 24
+}
+
+WallTexture "HLTP0123", 64, 128
+{
+	Patch "RW26_1", 0, 0
+	Patch "HLTP0404", 0, 32
+}
+
+WallTexture "HLTP0124", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0406", 16, 32
+}
+
+WallTexture "HLTP0125", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0407", 16, 32
+}
+
+WallTexture "HLTP0126", 64, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0406", 16, 32
+}
+
+WallTexture "HLTP0127", 64, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0407", 16, 32
+}
+
+WallTexture "HLTP0129", 32, 128
+{
+	Patch "RW34_1", -8, 0
+	Patch "HLTP0409", -3, 2
+	Patch "HLTP0410", 10, 2
+	Patch "HLTP0411", 23, 2
+	Patch "HLTP0412", 0, 26
+	Patch "HLTP0411", 16, 26
+	Patch "HLTP0413", 0, 52
+	Patch "HLTP0411", 16, 50
+	Patch "HLTP0414", 0, 74
+	Patch "HLTP0411", 16, 74
+	Patch "HLTP0415", 0, 98
+	Patch "HLTP0411", 16, 98
+}
+
+WallTexture "HLTP0130", 32, 128
+{
+	Patch "RW34_1", -8, 0
+	Patch "HLTP0416", 0, 2
+	Patch "HLTP0411", 16, 2
+	Patch "HLTP0409", 0, 26
+	Patch "HLTP0411", 16, 26
+	Patch "HLTP0415", -2, 50
+	Patch "HLTP0410", 10, 50
+	Patch "HLTP0417", 24, 50
+	Patch "HLTP0409", -2, 74
+	Patch "HLTP0418", 9, 74
+	Patch "HLTP0417", 24, 74
+	Patch "HLTP0409", -2, 98
+	Patch "HLTP0410", 9, 98
+	Patch "HLTP0417", 24, 98
+}
+
+WallTexture "HLTP0131", 32, 128
+{
+	Patch "RW34_1", -8, 0
+	Patch "HLTP0418", 0, 2
+	Patch "HLTP0417", 16, 2
+}
+
+WallTexture "HLTP0134", 128, 128
+{
+	Patch "COMP04_1", 0, 0
+	Patch "COMP04_1", 0, 64
+	Patch "COMP03_5", 64, 0
+	Patch "COMP03_5", 64, 64
+	Patch "HLTP0421", 76, 8
+}
+
+WallTexture "HLTP0135", 64, 128
+{
+	Patch "HLTP0422", 0, 0
+	Patch "HLTP0422", 0, 64
+}
+
+WallTexture "HLTP0141", 32, 8
+{
+	Patch "BLITA0", 0, 0
+	Patch "BLITC0", 8, 0
+	Patch "HLTP0428", 16, 0
+}
+
+WallTexture "HLTP0146", 1024, 16
+{
+	Patch "HLTP0433", 0, 0
+	Patch "HLTP0434", 256, 0
+	Patch "HLTP0435", 512, 0
+	Patch "HLTP0436", 768, 0
+}
+
+WallTexture "HLTP0147", 1024, 16
+{
+	Patch "HLTP0437", 0, 0
+	Patch "HLTP0438", 256, 0
+	Patch "HLTP0439", 512, 0
+	Patch "HLTP0440", 768, 0
+}
+
+WallTexture "HLTP0152", 16, 128
+{
+	Patch "HLTP0428", 0, 0
+	Patch "HLTP0428", 0, 8
+	Patch "HLTP0428", 0, 16
+	Patch "HLTP0428", 0, 24
+	Patch "HLTP0428", 0, 32
+	Patch "HLTP0428", 0, 40
+	Patch "HLTP0428", 0, 48
+	Patch "HLTP0428", 0, 56
+	Patch "HLTP0428", 0, 64
+	Patch "HLTP0428", 0, 72
+	Patch "HLTP0428", 0, 80
+	Patch "HLTP0428", 0, 88
+	Patch "HLTP0428", 0, 96
+	Patch "HLTP0428", 0, 104
+	Patch "HLTP0428", 0, 112
+	Patch "HLTP0428", 0, 120
+}
+
+WallTexture "HLTP0158", 64, 64
+{
+	Patch "HLTP0450", 0, 0
+	Patch "HLTP0450", 32, 0
+	Patch "HLTP0451", 0, 0
+	Patch "HLTP0452", 0, 32
+}
+
+WallTexture "HLTP0159", 64, 128
+{
+	Patch "HLTP0450", 0, 0
+	Patch "HLTP0450", 32, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0453", 0, 0
+	Patch "HLTP0454", 0, 32
+	Patch "HLTP0455", 0, 64
+	Patch "HLTP0456", 0, 96
+}
+
+WallTexture "HLTP0161", 64, 128
+{
+	Patch "HLTP0280", 0, 0
+	Patch "HLTP0458", 5, 16
+	Patch "HLTP0459", 26, 16
+	Patch "HLTP0458", 47, 16
+	Patch "HLTP0458", 5, 77
+	Patch "HLTP0459", 26, 77
+	Patch "HLTP0458", 47, 77
+}
+
+WallTexture "HLTP0166", 16, 128
+{
+	Patch "HLTP0464", 0, 0
+	Patch "HLTP0464", 0, 64
+}
+
+WallTexture "HLTP0167", 128, 128
+{
+	Patch "HLTP0164", 0, 0
+	Patch "HLTP0164", 64, 0
+	Patch "HLTP0465", 0, 0
+	Patch "HLTP0465", 25, 0
+	Patch "HLTP0465", 51, 0
+	Patch "HLTP0465", 76, 0
+	Patch "HLTP0465", 102, 0
+	Patch "HLTP0466", 0, 24
+	Patch "HLTP0466", 107, 24
+	Patch "HLTP0467", 29, 36
+	Patch "HLTP0468", 0, 78
+}
+
+WallTexture "HLTP0183", 128, 128
+{
+	Patch "WALL54_1", -42, 0
+	Patch "SW3S1", 16, 72
+	Patch "RW33_1", 64, 0
+	Patch "HLTP0484", 80, 20
+}
+
+WallTexture "HLTP0184", 128, 128
+{
+	Patch "WALL54_1", -42, 0
+	Patch "SW3S0", 16, 72
+	Patch "RW33_1", 64, 0
+	Patch "HLTP0485", 80, 20
+}
+
+WallTexture "HLTP0194", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0495", 0, 64
+	Patch "HLTP0496", 15, 25
+}
+
+WallTexture "HLTP0204", 64, 128
+{
+	Patch "HLTP0506", 0, 0
+	Patch "HLTP0506", 0, 64
+}
+
+WallTexture "HLTP0206", 64, 128
+{
+	Patch "HLTP0507", 0, 0
+	Patch "HLTP0507", 0, 64
+}
+
+WallTexture "HLTP0207", 64, 128
+{
+	Patch "HLTP0508", 0, 0
+	Patch "HLTP0508", 0, 64
+}
+
+WallTexture "HLTP0208", 64, 128
+{
+	Patch "HLTP0450", 0, 0
+	Patch "HLTP0450", 32, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+}
+
+WallTexture "HLTP0209", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+}
+
+WallTexture "HLTP0210", 64, 128
+{
+	Patch "HLTP0450", 0, 0
+	Patch "HLTP0450", 32, 0
+	Patch "HLTP0510", 0, 64
+	Patch "HLTP0510", 32, 64
+}
+
+WallTexture "HLTP0211", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0511", 15, 64
+}
+
+WallTexture "HLTP0212", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0512", 15, 64
+}
+
+WallTexture "HLTP0213", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0513", 15, 64
+}
+
+WallTexture "HLTP0214", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0514", 15, 64
+}
+
+WallTexture "HLTP0215", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0515", 15, 64
+}
+
+WallTexture "HLTP0217", 64, 128
+{
+	Patch "HLTP0517", 0, 0
+	Patch "HLTP0517", 0, 64
+}
+
+WallTexture "HLTP0228", 64, 128
+{
+	Patch "HLTP0528", 0, 0
+	Patch "HLTP0528", 0, 64
+}
+
+WallTexture "HLTP0229", 64, 128
+{
+	Patch "HLTP0529", 0, 0
+	Patch "HLTP0529", 0, 64
+}
+
+WallTexture "HLTP0230", 64, 128
+{
+	Patch "HLTP0530", 0, 0
+	Patch "HLTP0530", 0, 64
+}
+
+WallTexture "HLTP0233", 64, 128
+{
+	Patch "HLTP0533", 0, 0
+	Patch "HLTP0533", 0, 64
+}
+
+WallTexture "HLTP0240", 64, 128
+{
+	Patch "HLTP0517", 0, 0
+	Patch "HLTP0517", 0, 64
+}
+
+WallTexture "HLTP0244", 64, 128
+{
+	Patch "HLTP0543", 0, 0
+	Patch "HLTP0543", 16, 0
+	Patch "HLTP0543", 32, 0
+	Patch "HLTP0543", 48, 0
+	Patch "HLTP0544", 0, 0
+	Patch "HLTP0544", 0, 112
+}
+
+WallTexture "HLTP0246", 64, 128
+{
+	Patch "HLTP0546", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+}
+
+WallTexture "HLTP0247", 64, 128
+{
+	Patch "HLTP0546", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0547", 6, 6
+}
+
+WallTexture "HLTP0248", 64, 128
+{
+	Patch "HLTP0546", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0548", 6, 6
+}
+
+WallTexture "HLTP0249", 64, 128
+{
+	Patch "HLTP0546", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0549", 6, 6
+}
+
+WallTexture "HLTP0250", 64, 128
+{
+	Patch "HLTP0546", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0550", 6, 6
+}
+
+WallTexture "HLTP0251", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+}
+
+WallTexture "HLTP0252", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0547", 11, 18
+}
+
+WallTexture "HLTP0253", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0548", 11, 18
+}
+
+WallTexture "HLTP0254", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0549", 11, 18
+}
+
+WallTexture "HLTP0255", 64, 128
+{
+	Patch "HLTP0495", 0, 0
+	Patch "HLTP0450", 0, 64
+	Patch "HLTP0450", 32, 64
+	Patch "HLTP0550", 11, 18
+}
+
+WallTexture "HLTP0256", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0552", 0, 64
+}
+
+WallTexture "HLTP0257", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0552", 0, 64
+	Patch "HLTP0553", 8, 12
+}
+
+WallTexture "HLTP0258", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0552", 0, 64
+	Patch "HLTP0554", 8, 12
+}
+
+WallTexture "HLTP0259", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0552", 0, 64
+	Patch "HLTP0555", 8, 12
+}
+
+WallTexture "HLTP0264", 128, 128
+{
+	Patch "HLTP0281", 0, 0
+	Patch "HLTP0281", 64, 0
+	Patch "HLTP0561", 4, 4
+	Patch "HLTP0562", 4, 68
+	Patch "HLTP0563", 68, 4
+	Patch "HLTP0564", 68, 68
+}
+
+WallTexture "HLTP0269", 64, 128
+{
+	Patch "HLTP0569", 0, 0
+	Patch "HLTP0569", 0, 64
+}
+
+WallTexture "HLTP0270", 64, 128
+{
+	Patch "HLTP0570", 0, 0
+	Patch "HLTP0570", 0, 64
+}
+
+WallTexture "HLTP0271", 64, 128
+{
+	Patch "HLTP0571", 0, 0
+	Patch "HLTP0571", 0, 64
+}
+
+WallTexture "HLTP0273", 1024, 16
+{
+	Patch "HLTP0573", 0, 0
+	Patch "HLTP0574", 256, 0
+	Patch "HLTP0575", 512, 0
+	Patch "HLTP0576", 768, 0
+}
+
+WallTexture "HLTP0276", 64, 128
+{
+	Patch "HLTP0275", 0, 0
+	Patch "HLTP0578", 10, 81
+	Patch "HLTP0579", 11, 46
+}
+
+WallTexture "HLTP0286", 64, 128
+{
+	Patch "HLTP0283", 0, 0
+	Patch "HLTP0586", 3, 58
+	Patch "HLTP0586", 35, 58
+}
+
+WallTexture "HLTP0287", 64, 128
+{
+	Patch "HLTP0283", 0, 0
+	Patch "HLTP0587", 3, 58
+	Patch "HLTP0587", 35, 58
+}
+
+WallTexture "HLTP0295", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0406", 15, 15
+	Patch "HLTP0406", 15, 78
+}
+
+WallTexture "HLTP0296", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0595", 24, 68
+}
+
+WallTexture "HLTP0297", 64, 128
+{
+	Patch "HLTP0279", 0, 0
+	Patch "HLTP0596", 19, 50
+}
+
+WallTexture "HLTP0300", 64, 128
+{
+	Patch "HLTP0599", 0, 0
+	Patch "HLTP0600", 32, 0
+	Patch "HLTP0599", 0, 64
+	Patch "HLTP0600", 32, 64
+	Patch "HLTP0601", 31, 31
+	Patch "HLTP0601", 31, 95
+}
+
+WallTexture "HLTP0301", 64, 128
+{
+	Patch "HLTP0602", 0, 0
+	Patch "HLTP0603", 32, 0
+	Patch "HLTP0602", 0, 64
+	Patch "HLTP0603", 32, 64
+	Patch "HLTP0604", 31, 31
+	Patch "HLTP0604", 31, 95
+}
+
+WallTexture "HLTP0302", 64, 128
+{
+	Patch "HLTP0599", 0, 0
+	Patch "HLTP0600", 32, 0
+	Patch "HLTP0602", 0, 64
+	Patch "HLTP0603", 32, 64
+	Patch "HLTP0601", 31, 31
+	Patch "HLTP0604", 31, 95
+}
+
+WallTexture "HLTP0303", 64, 128
+{
+	Patch "HLTP0605", 0, 0
+	Patch "HLTP0605", 0, 32
+	Patch "HLTP0605", 32, 0
+	Patch "HLTP0605", 32, 32
+	Patch "HLTP0602", 0, 64
+	Patch "HLTP0603", 32, 64
+	Patch "HLTP0604", 31, 95
+}
+
+WallTexture "HLTP0304", 64, 128
+{
+	Patch "HLTP0606", 0, 0
+	Patch "HLTP0606", 16, 0
+	Patch "HLTP0606", 32, 0
+	Patch "HLTP0606", 48, 0
+	Patch "HLTP0606", 0, 16
+	Patch "HLTP0606", 16, 16
+	Patch "HLTP0606", 32, 16
+	Patch "HLTP0606", 48, 16
+	Patch "HLTP0606", 0, 32
+	Patch "HLTP0606", 16, 32
+	Patch "HLTP0606", 32, 32
+	Patch "HLTP0606", 48, 32
+	Patch "HLTP0606", 0, 48
+	Patch "HLTP0606", 16, 48
+	Patch "HLTP0606", 32, 48
+	Patch "HLTP0606", 48, 48
+}
+
+WallTexture "HLTP0305", 128, 128
+{
+	Patch "HLTP0599", 0, 0
+	Patch "HLTP0607", 32, 0
+	Patch "HLTP0607", 48, 0
+	Patch "HLTP0607", 64, 0
+	Patch "HLTP0607", 80, 0
+	Patch "HLTP0600", 96, 0
+	Patch "HLTP0602", 0, 64
+	Patch "HLTP0608", 32, 64
+	Patch "HLTP0608", 48, 64
+	Patch "HLTP0608", 64, 64
+	Patch "HLTP0608", 80, 64
+	Patch "HLTP0603", 96, 64
+	Patch "HLTP0601", 95, 31
+	Patch "HLTP0604", 95, 95
+}
+
+WallTexture "HLTP0306", 64, 128
+{
+	Patch "HLTP0609", 0, 0
+	Patch "HLTP0610", 32, 0
+	Patch "HLTP0609", 0, 64
+	Patch "HLTP0610", 32, 64
+	Patch "HLTP0601", 22, 22
+	Patch "HLTP0601", 22, 86
+}
+
+WallTexture "HLTP0307", 64, 128
+{
+	Patch "HLTP0611", 0, 0
+	Patch "HLTP0612", 32, 0
+	Patch "HLTP0611", 0, 64
+	Patch "HLTP0612", 32, 64
+	Patch "HLTP0604", 22, 22
+	Patch "HLTP0604", 22, 86
+}
+
+WallTexture "HLTP0308", 64, 128
+{
+	Patch "HLTP0609", 0, 0
+	Patch "HLTP0610", 32, 0
+	Patch "HLTP0611", 0, 64
+	Patch "HLTP0612", 32, 64
+	Patch "HLTP0613", 22, 22
+	Patch "HLTP0614", 22, 86
+}
+
+WallTexture "HLTP0309", 64, 128
+{
+	Patch "HLTP0615", 0, 0
+	Patch "HLTP0615", 0, 32
+	Patch "HLTP0615", 32, 0
+	Patch "HLTP0615", 32, 32
+	Patch "HLTP0611", 0, 64
+	Patch "HLTP0612", 32, 64
+	Patch "HLTP0604", 22, 86
+}
+
+WallTexture "HLTP0310", 64, 128
+{
+	Patch "HLTP0616", 0, 0
+	Patch "HLTP0616", 16, 0
+	Patch "HLTP0616", 32, 0
+	Patch "HLTP0616", 48, 0
+	Patch "HLTP0616", 0, 16
+	Patch "HLTP0616", 16, 16
+	Patch "HLTP0616", 32, 16
+	Patch "HLTP0616", 48, 16
+	Patch "HLTP0616", 0, 32
+	Patch "HLTP0616", 16, 32
+	Patch "HLTP0616", 32, 32
+	Patch "HLTP0616", 48, 32
+	Patch "HLTP0616", 0, 48
+	Patch "HLTP0616", 16, 48
+	Patch "HLTP0616", 32, 48
+	Patch "HLTP0616", 48, 48
+}
+
+WallTexture "HLTP0311", 128, 128
+{
+	Patch "HLTP0611", 0, 0
+	Patch "HLTP0617", 32, 0
+	Patch "HLTP0617", 48, 0
+	Patch "HLTP0617", 64, 0
+	Patch "HLTP0617", 80, 0
+	Patch "HLTP0612", 96, 0
+	Patch "HLTP0609", 0, 64
+	Patch "HLTP0618", 32, 64
+	Patch "HLTP0618", 48, 64
+	Patch "HLTP0618", 64, 64
+	Patch "HLTP0618", 80, 64
+	Patch "HLTP0610", 96, 64
+	Patch "HLTP0604", 86, 22
+	Patch "HLTP0619", 86, 86
+}
+
+WallTexture "HLTP0312", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0621", 12, 88
+	Patch "HLTP0622", 8, 12
+}
+
+WallTexture "HLTP0313", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0623", 12, 88
+	Patch "HLTP0624", 8, 12
+}
+
+WallTexture "HLTP0314", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0625", 12, 88
+	Patch "HLTP0626", 8, 12
+}
+
+WallTexture "HLTP0315", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0627", 12, 88
+	Patch "HLTP0628", 8, 12
+}
+
+WallTexture "HLTP0316", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0629", 12, 88
+	Patch "HLTP0630", 8, 12
+}
+
+WallTexture "HLTP0317", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0631", 12, 88
+	Patch "HLTP0632", 8, 12
+}
+
+WallTexture "HLTP0318", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0633", 12, 88
+	Patch "HLTP0634", 8, 12
+}
+
+WallTexture "HLTP0319", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0635", 12, 88
+	Patch "HLTP0622", 8, 12
+}
+
+WallTexture "HLTP0320", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0636", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0627", 12, 88
+}
+
+WallTexture "HLTP0321", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0636", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0629", 12, 88
+}
+
+WallTexture "HLTP0322", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0637", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0631", 12, 88
+}
+
+WallTexture "HLTP0323", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0637", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0633", 12, 88
+}
+
+WallTexture "HLTP0324", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0638", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0635", 12, 88
+}
+
+WallTexture "HLTP0325", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0638", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0621", 12, 88
+}
+
+WallTexture "HLTP0326", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0639", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0623", 12, 88
+}
+
+WallTexture "HLTP0327", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0640", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0625", 12, 88
+}
+
+WallTexture "HLTP0328", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0641", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0627", 12, 88
+}
+
+WallTexture "HLTP0329", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0641", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0629", 12, 88
+}
+
+WallTexture "HLTP0330", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0641", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0631", 12, 88
+}
+
+WallTexture "HLTP0331", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0642", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0633", 12, 88
+}
+
+WallTexture "HLTP0332", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0642", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0635", 12, 88
+}
+
+WallTexture "HLTP0333", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0642", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0621", 12, 88
+}
+
+WallTexture "HLTP0334", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0643", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0623", 12, 88
+}
+
+WallTexture "HLTP0335", 64, 128
+{
+	Patch "HLTP0551", 0, 0
+	Patch "HLTP0643", 8, 12
+	Patch "HLTP0620", 0, 64
+	Patch "HLTP0625", 12, 88
+}
+
+WallTexture "HLTP0336", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0644", 5, 19
+	Patch "HLTP0645", 36, 19
+	Patch "HLTP0646", 22, 40
+}
+
+WallTexture "HLTP0337", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0645", 5, 19
+	Patch "HLTP0647", 36, 19
+	Patch "HLTP0648", 22, 40
+}
+
+WallTexture "HLTP0338", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0647", 5, 19
+	Patch "HLTP0649", 36, 19
+	Patch "HLTP0650", 22, 40
+}
+
+WallTexture "HLTP0339", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0649", 5, 19
+	Patch "HLTP0644", 36, 19
+	Patch "HLTP0651", 22, 40
+}
+
+WallTexture "HLTP0340", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0652", 5, 19
+	Patch "HLTP0653", 36, 19
+	Patch "HLTP0654", 22, 40
+}
+
+WallTexture "HLTP0341", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0652", 5, 19
+	Patch "HLTP0653", 36, 19
+	Patch "HLTP0655", 22, 40
+}
+
+WallTexture "HLTP0342", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0652", 5, 19
+	Patch "HLTP0653", 36, 19
+	Patch "HLTP0654", 22, 40
+}
+
+WallTexture "HLTP0343", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0652", 5, 19
+	Patch "HLTP0653", 36, 19
+	Patch "HLTP0654", 22, 40
+}
+
+WallTexture "HLTP0344", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0647", 5, 19
+	Patch "HLTP0645", 36, 19
+	Patch "HLTP0646", 22, 40
+}
+
+WallTexture "HLTP0345", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0647", 5, 19
+	Patch "HLTP0645", 36, 19
+	Patch "HLTP0646", 22, 40
+}
+
+WallTexture "HLTP0346", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0645", 5, 19
+	Patch "HLTP0644", 36, 19
+	Patch "HLTP0648", 22, 40
+}
+
+WallTexture "HLTP0347", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0644", 5, 19
+	Patch "HLTP0649", 36, 19
+	Patch "HLTP0656", 22, 40
+}
+
+WallTexture "HLTP0348", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0653", 5, 19
+	Patch "HLTP0652", 36, 19
+	Patch "HLTP0654", 22, 40
+}
+
+WallTexture "HLTP0349", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0653", 5, 19
+	Patch "HLTP0652", 36, 19
+	Patch "HLTP0655", 22, 40
+}
+
+WallTexture "HLTP0350", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0653", 5, 19
+	Patch "HLTP0652", 36, 19
+	Patch "HLTP0654", 22, 40
+}
+
+WallTexture "HLTP0351", 64, 128
+{
+	Patch "HLTP0509", 0, 0
+	Patch "HLTP0509", 32, 0
+	Patch "HLTP0509", 0, 64
+	Patch "HLTP0509", 32, 64
+	Patch "HLTP0644", 5, 19
+	Patch "HLTP0645", 36, 19
+	Patch "HLTP0646", 22, 40
+}
+
+WallTexture "HLTP0352", 1024, 128
+{
+	Patch "HLTP0657", 0, 0
+	Patch "HLTP0658", 256, 0
+	Patch "HLTP0659", 512, 0
+	Patch "HLTP0660", 768, 0
+}
+
+WallTexture "HLTP0353", 1024, 128
+{
+	Patch "HLTP0661", 0, 0
+	Patch "HLTP0662", 256, 0
+	Patch "HLTP0162", 512, 0
+	Patch "HLTP0663", 768, 0
+}
+
+WallTexture "HLTP0354", 256, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_7", 14, 66
+	Patch "HLTP0279", 64, 0
+	Patch "HLTP0664", 80, 64
+	Patch "HLTP0279", 128, 0
+	Patch "HLTP0665", 144, 64
+	Patch "HLTP0279", 192, 0
+	Patch "HLTP0666", 208, 72
+}
+
+WallTexture "HLTP0355", 256, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_8", 14, 66
+	Patch "HLTP0279", 64, 0
+	Patch "HLTP0667", 80, 64
+	Patch "HLTP0279", 128, 0
+	Patch "HLTP0668", 144, 64
+	Patch "HLTP0279", 192, 0
+	Patch "HLTP0669", 208, 72
+}
+
+WallTexture "HLTP0356", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_6", 12, 62
+	Patch "HLTP0275", 64, 0
+	Patch "HLTP0670", 74, 81
+	Patch "HLTP0275", 128, 0
+	Patch "HLTP0578", 138, 81
+	Patch "HLTP0671", 136, 46
+	Patch "HLTP0279", 192, 0
+	Patch "HLTP0672", 208, 72
+}
+
+WallTexture "HLTP0357", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_5", 12, 62
+	Patch "HLTP0275", 64, 0
+	Patch "HLTP0673", 74, 81
+	Patch "HLTP0275", 128, 0
+	Patch "HLTP0674", 138, 81
+	Patch "HLTP0671", 136, 46
+	Patch "HLTP0279", 192, 0
+	Patch "HLTP0675", 208, 72
+}
+
+WallTexture "HLTP0358", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_5", 11, 62
+	Patch "HLTP0275", 64, 0
+	Patch "HLTP0275", 128, 0
+	Patch "HLTP0578", 138, 81
+	Patch "HLTP0275", 192, 0
+	Patch "HLTP0676", 202, 81
+}
+
+WallTexture "HLTP0359", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_4", 11, 62
+	Patch "HLTP0275", 64, 0
+	Patch "HLTP0674", 74, 81
+	Patch "HLTP0275", 128, 0
+	Patch "HLTP0673", 138, 81
+	Patch "HLTP0275", 192, 0
+	Patch "HLTP0674", 202, 81
+}
+
+WallTexture "HLTP0360", 512, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_1", 12, 62
+	Patch "HLTP0510", 64, 0
+	Patch "HLTP0510", 64, 64
+	Patch "HLTP0510", 96, 0
+	Patch "HLTP0510", 96, 64
+	Patch "HLTP0677", 80, 64
+	Patch "HLTP0510", 128, 0
+	Patch "HLTP0510", 128, 64
+	Patch "HLTP0510", 160, 0
+	Patch "HLTP0510", 160, 64
+	Patch "HLTP0664", 144, 64
+	Patch "HLTP0510", 192, 0
+	Patch "HLTP0510", 192, 64
+	Patch "HLTP0510", 224, 0
+	Patch "HLTP0510", 224, 64
+	Patch "HLTP0665", 208, 64
+	Patch "HLTP0510", 256, 0
+	Patch "HLTP0510", 256, 64
+	Patch "HLTP0510", 288, 0
+	Patch "HLTP0510", 288, 64
+	Patch "HLTP0678", 272, 64
+	Patch "HLTP0279", 320, 0
+	Patch "HLTP0679", 336, 72
+	Patch "HLTP0279", 384, 0
+	Patch "HLTP0680", 400, 72
+	Patch "HLTP0450", 448, 0
+	Patch "HLTP0450", 448, 64
+	Patch "HLTP0450", 480, 0
+	Patch "HLTP0450", 480, 64
+	Patch "HLTP0666", 464, 72
+}
+
+WallTexture "HLTP0361", 512, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_3", 12, 62
+	Patch "HLTP0510", 64, 0
+	Patch "HLTP0510", 64, 64
+	Patch "HLTP0510", 96, 0
+	Patch "HLTP0510", 96, 64
+	Patch "HLTP0681", 80, 64
+	Patch "HLTP0510", 128, 0
+	Patch "HLTP0510", 128, 64
+	Patch "HLTP0510", 160, 0
+	Patch "HLTP0510", 160, 64
+	Patch "HLTP0667", 144, 64
+	Patch "HLTP0510", 192, 0
+	Patch "HLTP0510", 192, 64
+	Patch "HLTP0510", 224, 0
+	Patch "HLTP0510", 224, 64
+	Patch "HLTP0668", 208, 64
+	Patch "HLTP0510", 256, 0
+	Patch "HLTP0510", 256, 64
+	Patch "HLTP0510", 288, 0
+	Patch "HLTP0510", 288, 64
+	Patch "HLTP0682", 272, 64
+	Patch "HLTP0279", 320, 0
+	Patch "HLTP0683", 336, 72
+	Patch "HLTP0279", 384, 0
+	Patch "HLTP0684", 400, 72
+	Patch "HLTP0450", 448, 0
+	Patch "HLTP0450", 448, 64
+	Patch "HLTP0450", 480, 0
+	Patch "HLTP0450", 480, 64
+	Patch "HLTP0669", 464, 72
+}
+
+WallTexture "HLTP0362", 64, 128
+{
+	Patch "HLTP0507", 0, 0
+	Patch "HLTP0507", 0, 64
+	Patch "HLTP0685", 16, 16
+	Patch "HLTP0686", 16, 80
+}
+
+WallTexture "HLTP0367", 64, 128
+{
+	Patch "RWDM11A", 0, 0
+	Patch "RWDM11B", 0, 32
+	Patch "RWDM11C", 0, 64
+	Patch "RWDM11D", 0, 96
+}
+
+WallTexture "HLTP0368", 64, 128
+{
+	Patch "RWDM11D", 0, 0
+	Patch "RWDM11A", 0, 32
+	Patch "RWDM11B", 0, 64
+	Patch "RWDM11C", 0, 96
+}
+
+WallTexture "HLTP0369", 64, 128
+{
+	Patch "RWDM11C", 0, 0
+	Patch "RWDM11D", 0, 32
+	Patch "RWDM11A", 0, 64
+	Patch "RWDM11B", 0, 96
+}
+
+WallTexture "HLTP0370", 64, 128
+{
+	Patch "RWDM11B", 0, 0
+	Patch "RWDM11C", 0, 32
+	Patch "RWDM11D", 0, 64
+	Patch "RWDM11A", 0, 96
+}
+

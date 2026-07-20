@@ -1,0 +1,227 @@
+// Ancient Aliens
+decal Lexicon_AALI_ArachScorch1
+{
+	pic LX50R0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal Lexicon_AALI_ArachScorch2
+{
+	pic LX50S0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup Lexicon_AALI_ArachnotronScorch
+{
+	Lexicon_AALI_ArachScorch1	1
+	Lexicon_AALI_ArachScorch2	1
+}
+
+generator Lexicon_AALI_PlasmaBall	PlasmaScorch
+
+generator Lexicon_AALI_RevenantTracerDumbfire	RevenantScorch
+generator Lexicon_AALI_RevenantTracerHoming	RevenantScorch
+generator Lexicon_AALI_ArachnotronPlasma	Lexicon_AALI_ArachnotronScorch
+
+// Epic
+generator Lexicon_EPC1_ZombieMan	BulletChip
+generator Lexicon_EPC1_ShotgunGuy	BulletChip
+generator Lexicon_EPC1_ChaingunGuy	BulletChip
+
+// Epic 2
+generator Lexicon_EPC2_Pistol	BulletChip
+generator Lexicon_EPC2_Chaingun	BulletChip
+generator Lexicon_EPC2_PlasmaBall	PlasmaScorch
+
+generator Lexicon_EPC2_ArachnotronPlasma	ArachnotronScorch
+generator Lexicon_EPC2_ZombieMan	BulletChip
+generator Lexicon_EPC2_ShotgunGuy	BulletChip
+generator Lexicon_EPC2_ChaingunGuy	BulletChip
+generator Lexicon_EPC2_WolfensteinSS	BulletChip
+
+// Equinox
+generator Lexicon_EQNX_Pistol	BulletChip
+generator Lexicon_EQNX_Shotgun	BulletChip
+generator Lexicon_EQNX_Chaingun	BulletChip
+generator Lexicon_EQNX_PlasmaBall	PlasmaScorch
+generator Lexicon_EQNX_Rocket	Scorch
+
+generator Lexicon_EQNX_ArachnotronPlasma	ArachnotronScorch
+generator Lexicon_EQNX_BaronBall			BaronScorch
+generator Lexicon_EQNX_CacodemonBall		CacoScorch
+generator Lexicon_EQNX_RevenantTracer	RevenantScorch
+generator Lexicon_EQNX_DoomImpBall		DoomImpScorch
+generator Lexicon_EQNX_FatShot			Scorch
+generator Lexicon_EQNX_ZombieMan	BulletChip
+generator Lexicon_EQNX_ShotgunGuy	BulletChip
+generator Lexicon_EQNX_ChaingunGuy	BulletChip
+
+// Eternal Doom
+generator Lexicon_ETDM_Rocket	Scorch
+
+generator Lexicon_ETDM_DoomImpBall		DoomImpScorch
+generator Lexicon_ETDM_ZombieMan	BulletChip
+generator Lexicon_ETDM_ShotgunGuy	BulletChip
+generator Lexicon_ETDM_ChaingunGuy	BulletChip
+generator Lexicon_ETDM_WolfensteinSS	BulletChip
+
+// Going Down
+generator Lexicon_GDWN_WolfensteinSS	BulletChip
+
+// Gridlock 64
+generator Lexicon_GD64_ZombieMan	BulletChip
+
+// H2H-Xmas
+generator Lexicon_H2HX_ZombieMan	BulletChip
+
+// Jenesis
+generator Lexicon_JENS_WolfensteinSS	BulletChip
+
+// Jiffy Bag
+generator Lexicon_JFBG_SpiderMastermind	BulletChip
+
+// Lost Civilization
+generator Lexicon_LSCV_ArachnotronPlasma	ArachnotronScorch
+generator Lexicon_LSCV_PlasmaBall	PlasmaScorch
+generator Lexicon_LSCV_Pistol	BulletChip
+generator Lexicon_LSCV_Shotgun	BulletChip
+generator Lexicon_LSCV_Chaingun	BulletChip
+
+generator Lexicon_LSCV_ZombieMan	BulletChip
+generator Lexicon_LSCV_ShotgunGuy	BulletChip
+generator Lexicon_LSCV_ChaingunGuy	BulletChip
+generator Lexicon_LSCV_WolfensteinSS	BulletChip
+generator Lexicon_LSCV_SpiderMastermind	BulletChip
+
+// Rise of the Triangles
+generator Lexicon_ROTR_ArachnotronPlasma	ArachnotronScorch
+generator Lexicon_ROTR_PlasmaBall	PlasmaScorch
+generator Lexicon_ROTR_Pistol	BulletChip
+generator Lexicon_ROTR_Chainsaw	BulletChip
+generator Lexicon_ROTR_Shotgun	BulletChip
+generator Lexicon_ROTR_SuperShotgun	BulletChip
+
+generator Lexicon_ROTR_ShotgunGuy	BulletChip
+
+// Stardate 20X6
+decal Lexicon_SDX6_ArachScorch1
+{
+	pic LX02N0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal Lexicon_SDX6_ArachScorch2
+{
+	pic LX02O0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup Lexicon_SDX6_ArachnotronScorch
+{
+	Lexicon_SDX6_ArachScorch1	1
+	Lexicon_SDX6_ArachScorch2	1
+}
+
+generator Lexicon_SDX6_ArachnotronPlasma	Lexicon_SDX6_ArachnotronScorch
+
+// Stardate 20X7
+decal Lexicon_SDX7_PlasmaScorch1
+{
+	pic LX14P0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal Lexicon_SDX7_PlasmaScorch2
+{
+	pic LX14Q0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup Lexicon_SDX7_PlasmaScorch
+{
+	Lexicon_SDX7_PlasmaScorch1	1
+	Lexicon_SDX7_PlasmaScorch2	1
+}
+
+generator Lexicon_SDX7_PlasmaBall	Lexicon_SDX7_PlasmaScorch
+
+// Super MAYhem 17
+decal Lexicon_MY17_ArachScorch1
+{
+	pic LX07M0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal Lexicon_MY17_ArachScorch2
+{
+	pic LX07N0
+	add 1.0
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup Lexicon_MY17_ArachnotronScorch
+{
+	Lexicon_MY17_ArachScorch1	1
+	Lexicon_MY17_ArachScorch2	1
+}
+
+decal Lexicon_MY17_PlasmaScorch1
+{
+	pic LX07F0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower1
+}
+
+decal Lexicon_MY17_PlasmaScorch2
+{
+	pic LX07G0
+	add 1.0
+	fullbright
+	animator GoAway
+	lowerdecal PlasmaScorchLower2
+}
+
+decalgroup Lexicon_MY17_PlasmaScorch
+{
+	Lexicon_MY17_PlasmaScorch1	1
+	Lexicon_MY17_PlasmaScorch2	1
+}
+
+generator Lexicon_MY17_ArachnotronPlasma	Lexicon_MY17_ArachnotronScorch
+generator Lexicon_MY17_PlasmaBall	Lexicon_MY17_PlasmaScorch
+generator Lexicon_MY17_Rocket	Scorch
+generator Lexicon_MY17_DoomImpBall	DoomImpScorch
+
+// UAC Ultra
+generator Lexicon_UACU_Pistol	BulletChip
+generator Lexicon_UACU_Chainsaw	BulletChip
+generator Lexicon_UACU_Shotgun	BulletChip
+generator Lexicon_UACU_SuperShotgun	BulletChip
+
+generator Lexicon_UACU_ShotgunGuy	BulletChip
+
+// Unholy Realms
+generator Lexicon_UHRN_SpiderMastermind	BulletChip
+
+// Valiant: Vaccinated Edition
+generator Lexicon_VLNT_ArachnotronPlasma	ArachnotronScorch
+generator Lexicon_VLNT_PlasmaBall	PlasmaScorch

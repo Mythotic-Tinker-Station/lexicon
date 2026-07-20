@@ -1,0 +1,545 @@
+Texture "GWR20275", 128, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "GWR21728", 51, 0
+	Patch "GWR21728", 0, 0
+	Patch "GWR21728", 104, 0
+}
+Texture "GWR20277", 128, 128
+{
+	Patch "GWR21785", -5, 0
+	Patch "GWR21785", 123, 0
+}
+Texture "GWR20290", 256, 128
+{
+	Patch "GWR20293", 0, 0
+	Patch "GWR20293", 64, 0
+	Patch "GWR20293", 128, 0
+	Patch "GWR20293", 192, 0
+	Patch "GWR20942", 0, 0
+}
+Texture "GWR20291", 128, 128
+{
+	Patch "GWR21685", 0, 0
+	Patch "GWR21686", 16, 0
+	Patch "GWR21687", 32, 0
+	Patch "GWR21688", 48, 0
+	Patch "GWR21686", 64, 0
+	Patch "GWR21686", 112, -16
+	Patch "GWR21687", 96, -1
+	Patch "GWR21686", 80, 0
+}
+Texture "GWR20303", 64, 128
+{
+	Patch "GWR21708", 0, 0
+	Patch "GWR21807", 0, 64
+}
+Texture "GWR20304", 128, 128
+{
+	Patch "GWR21705", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "GWR20305", 128, 128
+{
+	Patch "GWR21706", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "GWR20306", 256, 128
+{
+	Patch "GWR21712", 32, 0
+	Patch "COMP04_8", 96, 0
+	Patch "COMP03_8", 160, 0
+	Patch "GWR21713", 0, 64
+	Patch "COMP04_7", 64, 64
+	Patch "GWR21711", 128, 64
+	Patch "GWR21709", 192, 0
+	Patch "GWR21710", 192, 64
+	Patch "COMP03_8", 0, 0
+}
+Texture "GWR20307", 64, 128
+{
+	Patch "GWR21713", 0, 0
+	Patch "GWR21713", 0, 64
+}
+Texture "GWR20308", 8, 128
+{
+	Patch "GWR21694", 0, 112
+	Patch "GWR21694", 0, 0
+	Patch "GWR21694", 0, 96
+	Patch "GWR21694", 0, 80
+	Patch "GWR21694", 0, 16
+	Patch "GWR21694", 0, 32
+	Patch "GWR21694", 0, 48
+	Patch "GWR21694", 0, 64
+}
+Texture "GWR20310", 128, 72
+{
+	Patch "GWR21714", 0, 0
+	Patch "DOOR3_4", 64, 0
+	Patch "DOOR3_5", 88, 0
+	Patch "T14_5", 112, 0
+}
+Texture "GWR20323", 256, 128
+{
+	Patch "GWR21736", 0, 0
+	Patch "GWR21737", 64, 0
+	Patch "GWR21738", 128, 0
+	Patch "GWR21739", 192, 0
+}
+Texture "GWR20324", 256, 128
+{
+	Patch "GWR21753", 0, 0
+	Patch "GWR21754", 64, 0
+	Patch "GWR21755", 128, 0
+	Patch "GWR21756", 192, 0
+}
+Texture "GWR20327", 256, 128
+{
+	Patch "GWR21736", 0, 0
+	Patch "GWR21737", 64, 0
+	Patch "GWR21738", 128, 0
+	Patch "GWR21739", 192, 0
+	Patch "GWR20941", 0, 0
+}
+Texture "GWR20328", 64, 128
+{
+	Patch "GWR21762", 0, 0
+	Patch "W32_4", 0, 64
+}
+Texture "GWR20330", 64, 128
+{
+	Patch "GWR21769", 0, 0
+	Patch "GWR21763", 0, 64
+	Patch "GWR21761", 32, 64
+}
+Texture "GWR20335", 16, 128
+{
+	Patch "GWR21715", 0, 0
+	Patch "GWR21716", 8, 0
+	Patch "GWR21717", 8, 0
+	Patch "GWR21715", 0, 8
+	Patch "GWR21717", 8, 8
+	Patch "GWR21715", 0, 16
+	Patch "GWR21717", 8, 16
+	Patch "GWR21715", 0, 24
+	Patch "GWR21717", 8, 24
+	Patch "GWR21715", 0, 32
+	Patch "GWR21717", 8, 32
+	Patch "GWR21715", 0, 40
+	Patch "GWR21717", 8, 40
+	Patch "GWR21715", 0, 48
+	Patch "GWR21717", 8, 48
+	Patch "GWR21715", 0, 56
+	Patch "GWR21717", 8, 56
+	Patch "GWR21715", 0, 64
+	Patch "GWR21717", 8, 64
+	Patch "GWR21715", 0, 72
+	Patch "GWR21717", 8, 72
+	Patch "GWR21715", 0, 80
+	Patch "GWR21717", 8, 80
+	Patch "GWR21715", 0, 88
+	Patch "GWR21717", 8, 88
+	Patch "GWR21715", 0, 96
+	Patch "GWR21717", 8, 96
+	Patch "GWR21715", 0, 104
+	Patch "GWR21717", 8, 104
+	Patch "GWR21715", 0, 112
+	Patch "GWR21717", 8, 112
+	Patch "GWR21715", 0, 120
+	Patch "GWR21717", 8, 120
+}
+Texture "GWR20344", 64, 128
+{
+	Patch "GWR21689", 0, 0
+	Patch "GWR21689", 0, 64
+}
+Texture "GWR20348", 64, 112
+{
+	Patch "GWR21791", 0, 0
+}
+Texture "GWR20357", 256, 128
+{
+	Patch "GWR21808", 0, 0
+	Patch "RP1_2", 128, 0
+}
+Texture "GWR20393", 128, 128
+{
+	Patch "SW17_1", 0, 0
+	Patch "GWR21794", 32, 0
+	Patch "GWR21795", 64, 0
+	Patch "GWR21796", 96, 0
+}
+Texture "GWR20395", 128, 128
+{
+	Patch "GWR21693", 0, 64
+	Patch "GWR21693", 64, 0
+	Patch "W28_5", 0, 0
+	Patch "W28_5", 64, 64
+}
+Texture "GWR20399", 64, 128
+{
+	Patch "GWR21728", 20, 0
+	Patch "GWR21728", 0, 0
+	Patch "GWR21728", 40, 0
+}
+Texture "GWR20400", 64, 128
+{
+	Patch "GWR21708", 0, 0
+	Patch "GWR21807", 0, 64
+	Patch "SW2_7", 14, 66
+}
+Texture "GWR20401", 128, 128
+{
+	Patch "GWR20292", 0, 0
+	Patch "GWR21719", 48, 72
+}
+Texture "GWR20402", 64, 128
+{
+	Patch "GWR20273", 0, 0
+	Patch "GWR21719", 16, 72
+}
+Texture "GWR20405", 64, 128
+{
+	Patch "GWR20293", 0, 0
+	Patch "GWR21721", 20, 80
+}
+Texture "GWR20406", 128, 128
+{
+	Patch "GWR20292", 0, 0
+	Patch "SW3S1", 48, 72
+}
+Texture "GWR20407", 64, 128
+{
+	Patch "GWR20296", -42, 0
+	Patch "SW3S1", 16, 72
+}
+Texture "GWR20408", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "GWR21719", 15, 18
+}
+Texture "GWR20409", 64, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "GWR21712", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S0", 16, 72
+}
+Texture "GWR20410", 64, 128
+{
+	Patch "GWR21687", 32, 0
+	Patch "GWR21686", 16, 0
+	Patch "GWR21719", 16, 20
+	Patch "GWR21686", 0, -16
+	Patch "GWR21687", 48, 0
+}
+Texture "GWR20411", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21730", 12, 62
+}
+Texture "GWR20413", 64, 128
+{
+	Patch "GWR21737", 0, 0
+	Patch "SW2_7", 13, 67
+}
+Texture "GWR20414", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21729", 11, 62
+}
+Texture "GWR20415", 64, 128
+{
+	Patch "GWR20339", 0, 0
+	Patch "SW2_7", 13, 55
+}
+Texture "GWR20416", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "GWR21719", 16, 20
+}
+Texture "GWR20419", 64, 128
+{
+	Patch "GWR20363", 0, 0
+	Patch "SW2_7", 14, 66
+}
+Texture "GWR20420", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21727", 12, 62
+}
+Texture "GWR20428", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "GWR21721", 20, 79
+}
+Texture "GWR20430", 64, 128
+{
+	Patch "GWR20475", 0, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "GWR21788", 24, 52
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+}
+Texture "GWR20432", 64, 128
+{
+	Patch "GWR21708", 0, 0
+	Patch "GWR21807", 0, 64
+	Patch "SW2_8", 14, 66
+}
+Texture "GWR20433", 128, 128
+{
+	Patch "GWR20292", 0, 0
+	Patch "GWR21720", 48, 72
+}
+Texture "GWR20434", 64, 128
+{
+	Patch "GWR20273", 0, 0
+	Patch "GWR21720", 16, 72
+}
+Texture "GWR20437", 64, 128
+{
+	Patch "GWR20293", 0, 0
+	Patch "GWR21722", 20, 80
+}
+Texture "GWR20438", 128, 128
+{
+	Patch "GWR20292", 0, 0
+	Patch "SW3S0", 48, 72
+}
+Texture "GWR20439", 64, 128
+{
+	Patch "GWR20296", -42, 0
+	Patch "SW3S0", 16, 72
+}
+Texture "GWR20440", 64, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "GWR21720", 15, 18
+}
+Texture "GWR20441", 64, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "GWR21712", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S1", 16, 72
+}
+Texture "GWR20442", 64, 128
+{
+	Patch "GWR21688", 48, 0
+	Patch "GWR21687", 32, 0
+	Patch "GWR21686", 16, 0
+	Patch "GWR21685", 0, -1
+	Patch "GWR21720", 16, 20
+}
+Texture "GWR20443", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21735", 12, 62
+}
+Texture "GWR20445", 64, 128
+{
+	Patch "GWR21737", 0, 0
+	Patch "SW2_8", 13, 67
+}
+Texture "GWR20446", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21734", 11, 62
+}
+Texture "GWR20447", 64, 128
+{
+	Patch "GWR20339", 0, 0
+	Patch "SW2_8", 13, 55
+}
+Texture "GWR20448", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "GWR21720", 16, 20
+}
+Texture "GWR20450", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "GWR21722", 20, 80
+}
+Texture "GWR20451", 64, 128
+{
+	Patch "GWR20363", 0, 0
+	Patch "SW2_8", 14, 66
+}
+Texture "GWR20452", 64, 128
+{
+	Patch "GWR20985", 0, 0
+	Patch "GWR21733", 12, 62
+}
+Texture "GWR20461", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "GWR21722", 20, 79
+}
+Texture "GWR20463", 64, 128
+{
+	Patch "GWR20475", 0, 0
+	Patch "EXIT2", 24, 48
+	Patch "EXIT2", 32, 64
+	Patch "EXIT2", 32, 48
+	Patch "EXIT2", 24, 64
+	Patch "EXIT2", 40, 48
+	Patch "EXIT2", 40, 64
+	Patch "EXIT2", 16, 48
+	Patch "EXIT2", 16, 64
+	Patch "W108_3", 24, 52
+}
+Texture "GWR20470", 128, 128
+{
+	Patch "GWR21690", 0, -27
+	Patch "GWR21690", 0, 16
+}
+Texture "GWR20665", 128, 128
+{
+	Patch "GWR21592", 0, 0
+}
+Texture "GWR20694", 128, 128
+{
+	Patch "GWR21807", 32, 0
+	Patch "GWR21708", 32, 64
+	Patch "GWR21146", 96, 0
+	Patch "GWR21146", 96, 64
+	Patch "GWR21145", 0, 0
+	Patch "GWR21145", 0, 64
+}
+Texture "GWR20830", 16, 128
+{
+	Patch "GWR21186", 0, 0
+	Patch "GWR21186", 0, 112
+	Patch "GWR21186", 0, 96
+	Patch "GWR21186", 0, 80
+	Patch "GWR21186", 0, 64
+	Patch "GWR21186", 0, 48
+	Patch "GWR21186", 0, 32
+	Patch "GWR21186", 0, 16
+}
+Texture "GWR20834", 32, 128
+{
+	Patch "GWR21181", 0, 0
+	Patch "GWR21181", 0, 120
+	Patch "GWR21181", 0, 112
+	Patch "GWR21181", 0, 104
+	Patch "GWR21181", 0, 96
+	Patch "GWR21181", 0, 88
+	Patch "GWR21181", 0, 80
+	Patch "GWR21181", 0, 72
+	Patch "GWR21181", 0, 64
+	Patch "GWR21181", 0, 56
+	Patch "GWR21181", 0, 48
+	Patch "GWR21181", 0, 40
+	Patch "GWR21181", 0, 32
+	Patch "GWR21181", 0, 24
+	Patch "GWR21181", 0, 16
+	Patch "GWR21181", 0, 8
+}
+Texture "GWR20835", 16, 128
+{
+	Patch "GWR21182", 0, 0
+	Patch "GWR21182", 0, 120
+	Patch "GWR21182", 0, 112
+	Patch "GWR21182", 0, 104
+	Patch "GWR21182", 0, 96
+	Patch "GWR21182", 0, 88
+	Patch "GWR21182", 0, 80
+	Patch "GWR21182", 0, 72
+	Patch "GWR21182", 0, 64
+	Patch "GWR21182", 0, 56
+	Patch "GWR21182", 0, 48
+	Patch "GWR21182", 0, 40
+	Patch "GWR21182", 0, 32
+	Patch "GWR21182", 0, 24
+	Patch "GWR21182", 0, 16
+	Patch "GWR21182", 0, 8
+}
+Texture "GWR20836", 16, 128
+{
+	Patch "GWR21183", 0, 0
+	Patch "GWR21183", 0, 112
+	Patch "GWR21183", 0, 96
+	Patch "GWR21183", 0, 80
+	Patch "GWR21183", 0, 64
+	Patch "GWR21183", 0, 48
+	Patch "GWR21183", 0, 32
+	Patch "GWR21183", 0, 16
+}
+Texture "GWR20837", 16, 128
+{
+	Patch "GWR21184", 0, 0
+	Patch "GWR21184", 0, 112
+	Patch "GWR21184", 0, 96
+	Patch "GWR21184", 0, 80
+	Patch "GWR21184", 0, 64
+	Patch "GWR21184", 0, 48
+	Patch "GWR21184", 0, 32
+	Patch "GWR21184", 0, 16
+}
+Texture "GWR20838", 16, 128
+{
+	Patch "GWR21185", 0, 0
+	Patch "GWR21185", 0, 112
+	Patch "GWR21185", 0, 96
+	Patch "GWR21185", 0, 80
+	Patch "GWR21185", 0, 64
+	Patch "GWR21185", 0, 48
+	Patch "GWR21185", 0, 32
+	Patch "GWR21185", 0, 16
+}
+Texture "GWR20914", 256, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 192, 0
+	Patch "SW11_1", 128, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 32, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 160, 0
+	Patch "SW11_2", 224, 0
+	Patch "GWR21168", 0, 56
+}
+Texture "GWR20925", 128, 128
+{
+	Patch "GWR21415", 96, 0
+	Patch "GWR21415", 96, 64
+	Patch "GWR21416", 0, 0
+	Patch "GWR21416", 0, 64
+	Patch "GWR21708", 32, 0
+	Patch "GWR21708", 32, 64
+}
+Texture "GWR20939", 256, 128
+{
+	Patch "GWR20494", 0, 0
+	Patch "GWR20494", 192, 64
+	Patch "GWR20494", 128, 64
+	Patch "GWR20494", 64, 64
+	Patch "GWR20494", 0, 64
+	Patch "GWR20494", 192, 0
+	Patch "GWR20494", 128, 0
+	Patch "GWR20494", 64, 0
+	Patch "GWR20941", 0, 0
+}
+Texture "GWR20940", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "AG128_1", 192, 0
+	Patch "AG128_1", 128, 0
+	Patch "AG128_1", 64, 0
+	Patch "GWR21140", 4, 7
+	Patch "GWR21139", 68, 7
+	Patch "GWR21135", 132, 7
+	Patch "GWR21136", 4, 69
+	Patch "GWR21137", 68, 69
+	Patch "GWR21138", 132, 69
+}

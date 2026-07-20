@@ -1,0 +1,3151 @@
+Texture "JPCP0407", 1024, 128
+{
+	Patch "JPCP1747", 0, 0
+	Patch "JPCP1748", 256, 0
+	Patch "JPCP1749", 512, 0
+	Patch "JPCP1750", 768, 0
+}
+Texture "JPCP0412", 128, 128
+{
+	Patch "TP2_1", 0, 0
+	Patch "JPCP1761", 0, 72
+	Patch "JPCP1761", 64, 72
+	Patch "JPCP2709", 96, 120
+	Patch "JPCP2709", 96, 64
+	Patch "JPCP2709", 64, 120
+	Patch "JPCP2709", 64, 64
+	Patch "JPCP2709", 32, 120
+	Patch "JPCP2709", 32, 64
+	Patch "JPCP2709", 0, 120
+	Patch "JPCP2709", 0, 64
+}
+Texture "JPCP0413", 128, 128
+{
+	Patch "TP2_1", 0, 0
+	Patch "JPCP1768", 0, 72
+	Patch "JPCP2717", 96, 64
+	Patch "JPCP2717", 64, 64
+	Patch "JPCP2717", 32, 120
+	Patch "JPCP2717", 32, 64
+	Patch "JPCP2717", 0, 120
+	Patch "JPCP2717", 0, 64
+	Patch "JPCP1768", 64, 72
+	Patch "JPCP2717", 96, 120
+	Patch "JPCP2717", 64, 120
+}
+Texture "JPCP0414", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W106_1", 0, 0
+}
+Texture "JPCP0415", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "W107_1", 0, 0
+}
+Texture "JPCP0416", 64, 128
+{
+	Patch "JPCP1679", 0, 0
+	Patch "JPCP1679", 0, 64
+}
+Texture "JPCP0417", 128, 128
+{
+	Patch "JPCP1643", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "JPCP0418", 128, 128
+{
+	Patch "JPCP1644", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "JPCP0419", 256, 128
+{
+	Patch "JPCP1682", 32, 0
+	Patch "JPCP1684", 96, 0
+	Patch "JPCP1680", 160, 0
+	Patch "JPCP1681", 0, 64
+	Patch "JPCP1683", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "JPCP1670", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "JPCP1680", 0, 0
+}
+Texture "JPCP0420", 64, 128
+{
+	Patch "JPCP1681", 0, 0
+	Patch "JPCP1681", 0, 64
+}
+Texture "JPCP0423", 64, 128
+{
+	Patch "JPCP1649", 0, 0
+	Patch "JPCP1651", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0424", 64, 128
+{
+	Patch "JPCP1649", 0, 0
+	Patch "JPCP1651", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0425", 64, 128
+{
+	Patch "JPCP1649", 0, 0
+	Patch "JPCP1651", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0426", 64, 128
+{
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 32, 0
+	Patch "JPCP1646", 0, 64
+	Patch "JPCP1648", 32, 64
+}
+Texture "JPCP0427", 64, 128
+{
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0428", 64, 128
+{
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0429", 64, 128
+{
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0430", 64, 128
+{
+	Patch "JPCP2597", 0, 0
+	Patch "JPCP2600", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0431", 64, 128
+{
+	Patch "JPCP1654", 0, 0
+	Patch "JPCP1654", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0432", 64, 128
+{
+	Patch "JPCP1654", 0, 0
+	Patch "JPCP1654", 32, 0
+	Patch "JPCP1646", 0, 64
+	Patch "JPCP1648", 32, 64
+}
+Texture "JPCP0433", 64, 128
+{
+	Patch "JPCP2602", 0, 0
+	Patch "JPCP2602", 32, 0
+	Patch "JPCP1646", 0, 64
+	Patch "JPCP1648", 32, 64
+}
+Texture "JPCP0434", 64, 128
+{
+	Patch "JPCP2602", 0, 0
+	Patch "JPCP2602", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0435", 64, 128
+{
+	Patch "JPCP2602", 0, 0
+	Patch "JPCP2602", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0436", 64, 128
+{
+	Patch "JPCP2602", 0, 0
+	Patch "JPCP2602", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0437", 64, 128
+{
+	Patch "JPCP2598", 0, 0
+	Patch "JPCP2598", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0438", 64, 128
+{
+	Patch "JPCP2598", 0, 0
+	Patch "JPCP2598", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0439", 64, 128
+{
+	Patch "JPCP2593", 0, 0
+	Patch "JPCP2593", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0440", 64, 128
+{
+	Patch "JPCP2593", 0, 0
+	Patch "JPCP2593", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0441", 64, 128
+{
+	Patch "JPCP1654", 0, 0
+	Patch "JPCP1654", 32, 0
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2600", 32, 64
+}
+Texture "JPCP0442", 64, 128
+{
+	Patch "JPCP1654", 0, 0
+	Patch "JPCP1654", 32, 0
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2595", 32, 64
+}
+Texture "JPCP0443", 64, 128
+{
+	Patch "JPCP2593", 0, 0
+	Patch "JPCP2593", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0444", 64, 128
+{
+	Patch "JPCP2593", 0, 0
+	Patch "JPCP2593", 32, 0
+	Patch "JPCP1646", 0, 64
+	Patch "JPCP1648", 32, 64
+}
+Texture "JPCP0445", 64, 128
+{
+	Patch "JPCP2598", 0, 0
+	Patch "JPCP2598", 32, 0
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1651", 32, 64
+}
+Texture "JPCP0446", 64, 128
+{
+	Patch "JPCP2598", 0, 0
+	Patch "JPCP2598", 32, 0
+	Patch "JPCP1646", 0, 64
+	Patch "JPCP1648", 32, 64
+}
+Texture "JPCP0447", 64, 16
+{
+	Patch "JPCP1655", 0, 0
+	Patch "JPCP1655", 16, 0
+	Patch "JPCP1655", 32, 0
+	Patch "JPCP1655", 48, 0
+}
+Texture "JPCP0448", 64, 16
+{
+	Patch "JPCP2591", 0, 0
+	Patch "JPCP2591", 16, 0
+	Patch "JPCP2591", 32, 0
+	Patch "JPCP2591", 48, 0
+}
+Texture "JPCP0449", 64, 16
+{
+	Patch "JPCP2601", 0, 0
+	Patch "JPCP2601", 16, 0
+	Patch "JPCP2601", 32, 0
+	Patch "JPCP2601", 48, 0
+}
+Texture "JPCP0450", 64, 16
+{
+	Patch "JPCP2596", 0, 0
+	Patch "JPCP2596", 16, 0
+	Patch "JPCP2596", 32, 0
+	Patch "JPCP2596", 48, 0
+}
+Texture "JPCP0451", 128, 128
+{
+	Patch "JPCP1649", 0, 64
+	Patch "JPCP1650", 40, 64
+	Patch "JPCP1650", 32, 64
+	Patch "JPCP1650", 48, 64
+	Patch "JPCP1650", 56, 64
+	Patch "JPCP1651", 96, 64
+	Patch "JPCP1650", 88, 64
+	Patch "JPCP1650", 80, 64
+	Patch "JPCP1650", 72, 64
+	Patch "JPCP1650", 64, 64
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 96, 0
+	Patch "JPCP1647", 48, 0
+	Patch "JPCP1647", 40, 0
+	Patch "JPCP1647", 32, 0
+	Patch "JPCP1647", 72, 0
+	Patch "JPCP1647", 64, 0
+	Patch "JPCP1647", 56, 0
+	Patch "JPCP1647", 80, 0
+	Patch "JPCP1647", 88, 0
+}
+Texture "JPCP0453", 64, 128
+{
+	Patch "JPCP0452", 0, 0
+	Patch "JPCP2605", 0, 0
+	Patch "JPCP2605", 32, 0
+	Patch "JPCP2605", 32, 32
+	Patch "JPCP2605", 0, 32
+}
+Texture "JPCP0454", 64, 16
+{
+	Patch "JPCP2604", 0, 0
+	Patch "JPCP2604", 16, 0
+	Patch "JPCP2604", 32, 0
+	Patch "JPCP2604", 48, 0
+}
+Texture "JPCP0455", 128, 128
+{
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2599", 40, 64
+	Patch "JPCP2599", 32, 64
+	Patch "JPCP2599", 48, 64
+	Patch "JPCP2599", 56, 64
+	Patch "JPCP2600", 96, 64
+	Patch "JPCP2599", 88, 64
+	Patch "JPCP2599", 80, 64
+	Patch "JPCP2599", 72, 64
+	Patch "JPCP2599", 64, 64
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 96, 0
+	Patch "JPCP1647", 48, 0
+	Patch "JPCP1647", 40, 0
+	Patch "JPCP1647", 32, 0
+	Patch "JPCP1647", 72, 0
+	Patch "JPCP1647", 64, 0
+	Patch "JPCP1647", 56, 0
+	Patch "JPCP1647", 80, 0
+	Patch "JPCP1647", 88, 0
+}
+Texture "JPCP0456", 128, 128
+{
+	Patch "JPCP2597", 0, 64
+	Patch "JPCP2599", 40, 64
+	Patch "JPCP2599", 32, 64
+	Patch "JPCP2599", 48, 64
+	Patch "JPCP2599", 56, 64
+	Patch "JPCP2600", 96, 64
+	Patch "JPCP2599", 88, 64
+	Patch "JPCP2599", 80, 64
+	Patch "JPCP2599", 72, 64
+	Patch "JPCP2599", 64, 64
+	Patch "JPCP1649", 0, 0
+	Patch "JPCP1651", 96, 0
+	Patch "JPCP1650", 48, 0
+	Patch "JPCP1650", 40, 0
+	Patch "JPCP1650", 32, 0
+	Patch "JPCP1650", 72, 0
+	Patch "JPCP1650", 64, 0
+	Patch "JPCP1650", 56, 0
+	Patch "JPCP1650", 80, 0
+	Patch "JPCP1650", 88, 0
+}
+Texture "JPCP0457", 128, 128
+{
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2594", 40, 64
+	Patch "JPCP2594", 32, 64
+	Patch "JPCP2594", 48, 64
+	Patch "JPCP2594", 56, 64
+	Patch "JPCP2595", 96, 64
+	Patch "JPCP2594", 88, 64
+	Patch "JPCP2594", 80, 64
+	Patch "JPCP2594", 72, 64
+	Patch "JPCP2594", 64, 64
+	Patch "JPCP1646", 0, 0
+	Patch "JPCP1648", 96, 0
+	Patch "JPCP1647", 48, 0
+	Patch "JPCP1647", 40, 0
+	Patch "JPCP1647", 32, 0
+	Patch "JPCP1647", 72, 0
+	Patch "JPCP1647", 64, 0
+	Patch "JPCP1647", 56, 0
+	Patch "JPCP1647", 80, 0
+	Patch "JPCP1647", 88, 0
+}
+Texture "JPCP0458", 128, 128
+{
+	Patch "JPCP2592", 0, 64
+	Patch "JPCP2594", 40, 64
+	Patch "JPCP2594", 32, 64
+	Patch "JPCP2594", 48, 64
+	Patch "JPCP2594", 56, 64
+	Patch "JPCP2595", 96, 64
+	Patch "JPCP2594", 88, 64
+	Patch "JPCP2594", 80, 64
+	Patch "JPCP2594", 72, 64
+	Patch "JPCP2594", 64, 64
+	Patch "JPCP1649", 0, 0
+	Patch "JPCP1651", 96, 0
+	Patch "JPCP1650", 48, 0
+	Patch "JPCP1650", 40, 0
+	Patch "JPCP1650", 32, 0
+	Patch "JPCP1650", 72, 0
+	Patch "JPCP1650", 64, 0
+	Patch "JPCP1650", 56, 0
+	Patch "JPCP1650", 80, 0
+	Patch "JPCP1650", 88, 0
+}
+Texture "JPCP0460", 64, 128
+{
+	Patch "JPCP1685", 0, 64
+	Patch "JPCP1685", 0, 0
+	Patch "EXIT1", 17, 22
+}
+Texture "JPCP0461", 256, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 0
+	Patch "JPCP0635", 128, 0
+	Patch "JPCP0635", 192, 0
+	Patch "JPCP1805", 64, 0
+	Patch "JPCP1806", 128, 0
+	Patch "JPCP1806", 192, 0
+	Patch "JPCP1806", 0, 0
+	Patch "JPCP1806", 64, 56
+	Patch "JPCP1805", 128, 56
+	Patch "JPCP1806", 192, 56
+	Patch "JPCP1806", 0, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 120
+}
+Texture "JPCP0469", 128, 128
+{
+	Patch "JPCP1685", 0, 64
+	Patch "JPCP1685", 64, 0
+	Patch "JPCP1686", 0, 0
+	Patch "JPCP1686", 64, 64
+}
+Texture "JPCP0470", 128, 128
+{
+	Patch "JPCP1688", 0, 0
+	Patch "JPCP1687", 0, 64
+	Patch "JPCP1688", 64, 64
+	Patch "JPCP1687", 64, 0
+}
+Texture "JPCP0471", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "JPCP0472", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "JPCP1669", 20, 79
+}
+Texture "JPCP0473", 64, 128
+{
+	Patch "JPCP1679", 0, 64
+	Patch "JPCP1682", 0, 0
+	Patch "JPCP1679", 32, 64
+	Patch "SW2S0", 16, 72
+}
+Texture "JPCP0474", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "JPCP1669", 19, 79
+}
+Texture "JPCP0475", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "JPCP1669", 20, 68
+}
+Texture "JPCP0476", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "JPCP1669", 20, 80
+}
+Texture "JPCP0477", 64, 128
+{
+	Patch "JPCP1685", 0, 64
+	Patch "JPCP1685", 0, 0
+	Patch "SW1S0", 16, 78
+}
+Texture "JPCP0478", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "JPCP1669", 20, 79
+}
+Texture "JPCP0479", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "JPCP1669", 20, 84
+}
+Texture "JPCP0480", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "JPCP0481", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "JPCP1668", 20, 79
+}
+Texture "JPCP0482", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "JPCP1668", 20, 80
+}
+Texture "JPCP0483", 64, 128
+{
+	Patch "JPCP1679", 0, 64
+	Patch "JPCP1682", 0, 0
+	Patch "JPCP1679", 32, 64
+	Patch "SW2S1", 16, 72
+}
+Texture "JPCP0484", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "JPCP1668", 19, 79
+}
+Texture "JPCP0485", 64, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "JPCP1668", 20, 68
+}
+Texture "JPCP0486", 64, 128
+{
+	Patch "RW31_1", 0, 0
+	Patch "JPCP1668", 20, 80
+}
+Texture "JPCP0487", 64, 128
+{
+	Patch "JPCP1685", 0, 64
+	Patch "JPCP1685", 0, 0
+	Patch "SW1S1", 16, 78
+}
+Texture "JPCP0488", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "JPCP1668", 20, 79
+}
+Texture "JPCP0489", 64, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "JPCP1668", 20, 84
+}
+Texture "JPCP0490", 24, 72
+{
+	Patch "WALL00_3", 0, 0
+	Patch "WALL00_3", 12, -6
+}
+Texture "JPCP0494", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+Texture "JPCP0495", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "JPCP0496", 256, 128
+{
+	Patch "JPCP1671", 0, 0
+	Patch "JPCP1672", 64, 0
+	Patch "JPCP1674", 128, 0
+	Patch "JPCP1673", 192, 0
+	Patch "JPCP1676", 0, 64
+	Patch "JPCP1678", 64, 64
+	Patch "JPCP1677", 128, 64
+	Patch "JPCP1675", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "JPCP0497", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "COMP03_1", 64, 64
+	Patch "COMP03_2", 64, 0
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+}
+Texture "JPCP0498", 256, 128
+{
+	Patch "JPCP1703", 26, 64
+	Patch "JPCP1702", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "JPCP1703", 28, 0
+	Patch "JPCP1706", 72, 64
+	Patch "JPCP1705", 0, 0
+	Patch "JPCP1703", 176, 0
+	Patch "JPCP1703", 128, 64
+	Patch "JPCP1703", 112, 0
+	Patch "JPCP1703", 160, 64
+	Patch "JPCP1703", 136, 0
+	Patch "JPCP2505", 200, 0
+	Patch "JPCP2506", 200, 64
+	Patch "JPCP2507", 136, 64
+	Patch "JPCP1704", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+Texture "JPCP0499", 256, 128
+{
+	Patch "JPCP1703", 26, 64
+	Patch "JPCP2521", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "JPCP1703", 28, 0
+	Patch "JPCP1706", 72, 64
+	Patch "JPCP2522", 0, 0
+	Patch "JPCP1703", 176, 0
+	Patch "JPCP1703", 128, 64
+	Patch "JPCP1703", 112, 0
+	Patch "JPCP1703", 160, 64
+	Patch "JPCP1703", 136, 0
+	Patch "JPCP2505", 200, 0
+	Patch "JPCP2506", 200, 64
+	Patch "JPCP2508", 136, 64
+	Patch "JPCP1704", 72, 0
+	Patch "W33_8", 192, 120
+	Patch "W33_8", 128, 120
+	Patch "W33_8", 192, 56
+	Patch "W33_8", 128, 56
+}
+Texture "JPCP0500", 256, 56
+{
+	Patch "JPCP1671", 0, 0
+	Patch "JPCP1672", 64, 0
+	Patch "JPCP1673", 128, 0
+	Patch "JPCP1677", 192, 0
+}
+Texture "JPCP0501", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "JPCP1701", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "JPCP1671", 0, 0
+	Patch "JPCP1701", 96, 4
+	Patch "JPCP1672", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "JPCP0502", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "JPCP1710", 5, 0
+	Patch "JPCP1710", 35, 0
+}
+Texture "JPCP0503", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "JPCP0505", 16, 128
+{
+	Patch "JPCP1690", 0, 0
+	Patch "JPCP1690", 0, 56
+}
+Texture "JPCP0507", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "JPCP1711", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "JPCP1712", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "JPCP1713", 132, 69
+	Patch "JPCP1714", 68, 7
+	Patch "JPCP1715", 4, 7
+	Patch "JPCP1716", 132, 7
+	Patch "AG128_1", 192, 0
+	Patch "JPCP2541", 196, 7
+	Patch "JPCP2538", 196, 69
+}
+Texture "JPCP0508", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "JPCP2537", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "JPCP2538", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "JPCP2539", 132, 69
+	Patch "JPCP2543", 68, 7
+	Patch "JPCP2540", 4, 7
+	Patch "JPCP2542", 132, 7
+	Patch "AG128_1", 192, 0
+	Patch "JPCP2536", 196, 7
+	Patch "JPCP2544", 196, 69
+}
+Texture "JPCP0509", 128, 128
+{
+	Patch "JPCP1692", 0, 56
+	Patch "JPCP1693", 64, 56
+	Patch "JPCP1692", 0, 0
+	Patch "JPCP1693", 64, 0
+}
+Texture "JPCP0513", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "JPCP0514", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "JPCP0515", 64, 128
+{
+	Patch "JPCP1641", 40, 0
+	Patch "JPCP1641", 0, 0
+	Patch "JPCP1641", 19, 0
+}
+Texture "JPCP0516", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "JPCP0517", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "JPCP1669", 20, 80
+}
+Texture "JPCP0518", 128, 128
+{
+	Patch "JPCP0467", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "JPCP0519", 64, 128
+{
+	Patch "JPCP1686", 0, 0
+	Patch "JPCP1685", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "JPCP0520", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "JPCP0521", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "JPCP0522", 128, 128
+{
+	Patch "JPCP0467", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "JPCP0523", 64, 128
+{
+	Patch "JPCP1685", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "JPCP1686", 0, 0
+}
+Texture "JPCP0524", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "JPCP0533", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "JPCP0534", 256, 72
+{
+	Patch "WALL03_4", 0, 0
+	Patch "JPCP1728", 128, 0
+	Patch "WALL03_4", 64, 0
+	Patch "WALL03_4", 192, 0
+}
+Texture "JPCP0535", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
+}
+Texture "JPCP0536", 128, 128
+{
+	Patch "JPCP1730", 64, 66
+	Patch "JPCP1732", 0, 66
+	Patch "JPCP1731", 0, 0
+	Patch "JPCP1730", 64, 0
+}
+Texture "JPCP0537", 64, 128
+{
+	Patch "JPCP1733", 0, 0
+	Patch "JPCP1733", 0, 32
+	Patch "JPCP1733", 0, 96
+	Patch "JPCP1733", 0, 64
+}
+Texture "JPCP0538", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "JPCP1741", 14, 74
+}
+Texture "JPCP0539", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "JPCP1720", 0, 0
+}
+Texture "JPCP0540", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "JPCP1719", 4, 0
+	Patch "W32_4", 0, 64
+}
+Texture "JPCP0541", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "JPCP1710", 4, 18
+	Patch "JPCP1710", 38, 18
+}
+Texture "JPCP0542", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "JPCP1710", 81, 34
+	Patch "JPCP1710", 19, 34
+}
+Texture "JPCP0543", 16, 128
+{
+	Patch "JPCP1729", -4, 56
+	Patch "JPCP1729", -4, 0
+}
+Texture "JPCP0544", 64, 128
+{
+	Patch "JPCP1686", 0, 0
+	Patch "JPCP1685", 0, 64
+	Patch "JPCP1710", 7, 27
+	Patch "JPCP1710", 37, 27
+}
+Texture "JPCP0547", 64, 128
+{
+	Patch "JPCP1734", 0, 0
+	Patch "JPCP1735", 32, 0
+}
+Texture "JPCP0548", 256, 128
+{
+	Patch "JPCP1725", 0, 0
+	Patch "JPCP1726", 128, 0
+}
+Texture "JPCP0550", 128, 128
+{
+	Patch "JPCP1721", -12, 0
+	Patch "JPCP1721", 116, 0
+}
+Texture "JPCP0551", 128, 128
+{
+	Patch "JPCP1722", -4, 0
+	Patch "JPCP1722", 124, 0
+}
+Texture "JPCP0553", 128, 128
+{
+	Patch "JPCP1687", 64, 64
+	Patch "JPCP1688", 64, 0
+	Patch "JPCP1687", 0, 0
+	Patch "JPCP1688", 0, 64
+	Patch "JPCP1740", 0, 79
+	Patch "JPCP1740", 64, 15
+}
+Texture "JPCP0554", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+Texture "JPCP0559", 64, 128
+{
+	Patch "SW11_4", 0, 0
+	Patch "JPCP1701", 32, 0
+}
+Texture "JPCP0565", 128, 128
+{
+	Patch "JPCP1761", 0, 56
+	Patch "JPCP1761", 0, 0
+	Patch "JPCP1762", 64, 56
+	Patch "JPCP1762", 64, 0
+	Patch "JPCP1763", 88, 56
+	Patch "JPCP1763", 88, 0
+}
+Texture "JPCP0574", 128, 128
+{
+	Patch "JPCP1768", 0, 56
+	Patch "JPCP1768", 0, 0
+	Patch "JPCP1769", 64, 56
+	Patch "JPCP1769", 64, 0
+	Patch "JPCP1770", 88, 56
+	Patch "JPCP1770", 88, 0
+}
+Texture "JPCP0575", 64, 128
+{
+	Patch "JPCP1761", 0, 56
+	Patch "JPCP1761", 0, 0
+}
+Texture "JPCP0576", 64, 128
+{
+	Patch "JPCP1768", 0, 56
+	Patch "JPCP1768", 0, 0
+}
+Texture "JPCP0577", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+}
+Texture "JPCP0595", 128, 128
+{
+	Patch "JPCP0587", 0, 0
+	Patch "JPCP1788", 99, 120
+	Patch "JPCP1788", 67, 120
+	Patch "JPCP1788", 35, 120
+	Patch "JPCP1788", 3, 120
+}
+Texture "JPCP0596", 128, 128
+{
+	Patch "JPCP0587", 0, 0
+	Patch "JPCP1789", 99, 120
+	Patch "JPCP1789", 67, 120
+	Patch "JPCP1789", 35, 120
+	Patch "JPCP1789", 3, 120
+}
+Texture "JPCP0597", 128, 128
+{
+	Patch "JPCP0587", 0, 0
+	Patch "JPCP1790", 99, 120
+	Patch "JPCP1790", 67, 120
+	Patch "JPCP1790", 35, 120
+	Patch "JPCP1790", 3, 120
+}
+Texture "JPCP0598", 128, 128
+{
+	Patch "JPCP0587", 0, 0
+	Patch "JPCP1791", 99, 120
+	Patch "JPCP1791", 67, 120
+	Patch "JPCP1791", 35, 120
+	Patch "JPCP1791", 3, 120
+}
+Texture "JPCP0599", 128, 128
+{
+	Patch "JPCP0587", 0, 0
+	Patch "JPCP1792", 99, 120
+	Patch "JPCP1792", 67, 120
+	Patch "JPCP1792", 35, 120
+	Patch "JPCP1792", 3, 120
+}
+Texture "JPCP0600", 128, 128
+{
+	Patch "JPCP0593", 0, 0
+	Patch "JPCP1788", 99, 120
+	Patch "JPCP1788", 67, 120
+	Patch "JPCP1788", 35, 120
+	Patch "JPCP1788", 3, 120
+}
+Texture "JPCP0601", 128, 128
+{
+	Patch "JPCP0593", 0, 0
+	Patch "JPCP1789", 99, 120
+	Patch "JPCP1789", 67, 120
+	Patch "JPCP1789", 35, 120
+	Patch "JPCP1789", 3, 120
+}
+Texture "JPCP0602", 128, 128
+{
+	Patch "JPCP0593", 0, 0
+	Patch "JPCP1790", 99, 120
+	Patch "JPCP1790", 67, 120
+	Patch "JPCP1790", 35, 120
+	Patch "JPCP1790", 3, 120
+}
+Texture "JPCP0603", 128, 128
+{
+	Patch "JPCP0593", 0, 0
+	Patch "JPCP1791", 99, 120
+	Patch "JPCP1791", 67, 120
+	Patch "JPCP1791", 35, 120
+	Patch "JPCP1791", 3, 120
+}
+Texture "JPCP0604", 128, 128
+{
+	Patch "JPCP0593", 0, 0
+	Patch "JPCP1792", 99, 120
+	Patch "JPCP1792", 67, 120
+	Patch "JPCP1792", 35, 120
+	Patch "JPCP1792", 3, 120
+}
+Texture "JPCP0606", 128, 128
+{
+	Patch "JPCP1793", 0, 0
+	Patch "JPCP1794", 0, 64
+}
+Texture "JPCP0607", 128, 128
+{
+	Patch "JPCP1795", 0, 64
+	Patch "JPCP1793", 0, 0
+}
+Texture "JPCP0608", 128, 128
+{
+	Patch "JPCP1795", 0, 0
+	Patch "JPCP1796", 0, 64
+}
+Texture "JPCP0609", 128, 128
+{
+	Patch "JPCP1796", 0, 0
+	Patch "JPCP1796", -16, 64
+	Patch "JPCP1796", 112, 64
+}
+Texture "JPCP0615", 128, 128
+{
+	Patch "JPCP0634", 8, 0
+	Patch "JPCP0634", 56, 8
+	Patch "JPCP1802", 0, 0
+}
+Texture "JPCP0616", 128, 128
+{
+	Patch "JPCP0635", 8, 0
+	Patch "JPCP0635", 56, 8
+	Patch "JPCP1802", 0, 0
+}
+Texture "JPCP0618", 64, 128
+{
+	Patch "JPCP1804", 0, 0
+	Patch "JPCP1804", -32, 64
+	Patch "JPCP1804", 32, 64
+}
+Texture "JPCP0619", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 24
+	Patch "JPCP1806", 64, 64
+	Patch "JPCP1806", 0, 64
+	Patch "JPCP1805", 32, 0
+	Patch "JPCP1806", 96, 0
+	Patch "JPCP1806", -32, 0
+}
+Texture "JPCP0620", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 24
+	Patch "JPCP1806", 64, 64
+	Patch "JPCP1806", 0, 64
+	Patch "JPCP1805", 32, 0
+	Patch "JPCP1806", 96, 0
+	Patch "JPCP1806", -32, 0
+}
+Texture "JPCP0621", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP1806", 0, 0
+	Patch "JPCP1806", -32, 64
+	Patch "JPCP0634", 64, 24
+	Patch "JPCP1806", 64, 0
+	Patch "JPCP1806", 96, 64
+	Patch "JPCP1806", 32, 64
+}
+Texture "JPCP0622", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP1806", 0, 0
+	Patch "JPCP1806", -32, 64
+	Patch "JPCP0635", 64, 24
+	Patch "JPCP1806", 64, 0
+	Patch "JPCP1806", 96, 64
+	Patch "JPCP1806", 32, 64
+}
+Texture "JPCP0623", 64, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP1807", 0, 0
+	Patch "JPCP0626", 0, 64
+}
+Texture "JPCP0624", 64, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP1807", 0, 0
+	Patch "JPCP0626", 0, 64
+}
+Texture "JPCP0636", 64, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP1818", 0, 0
+}
+Texture "JPCP0637", 64, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP1818", 0, 0
+}
+Texture "JPCP0638", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 8
+	Patch "JPCP1819", 0, 0
+}
+Texture "JPCP0639", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 8
+	Patch "JPCP1819", 0, 0
+}
+Texture "JPCP0640", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 8
+	Patch "JPCP1819", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0641", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 56
+	Patch "JPCP1820", 0, 0
+}
+Texture "JPCP0642", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 56
+	Patch "JPCP1820", 0, 0
+}
+Texture "JPCP0643", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 56
+	Patch "JPCP1820", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0644", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 56
+	Patch "JPCP1821", 0, 0
+}
+Texture "JPCP0645", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 56
+	Patch "JPCP1821", 0, 0
+}
+Texture "JPCP0646", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 56
+	Patch "JPCP1821", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0647", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 16
+	Patch "JPCP1822", 0, 0
+}
+Texture "JPCP0648", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 16
+	Patch "JPCP1822", 0, 0
+}
+Texture "JPCP0649", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 16
+	Patch "JPCP1822", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0650", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 16
+	Patch "JPCP1823", 0, 0
+}
+Texture "JPCP0651", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 16
+	Patch "JPCP1823", 0, 0
+}
+Texture "JPCP0652", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 16
+	Patch "JPCP1823", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0653", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 8
+	Patch "JPCP1824", 0, 0
+}
+Texture "JPCP0654", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 8
+	Patch "JPCP1824", 0, 0
+}
+Texture "JPCP0655", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 8
+	Patch "JPCP1824", 0, 0
+	Patch "JPCP1830", 0, 56
+}
+Texture "JPCP0656", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 0
+	Patch "JPCP1825", 0, 0
+}
+Texture "JPCP0657", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 0
+	Patch "JPCP1825", 0, 0
+}
+Texture "JPCP0658", 128, 128
+{
+	Patch "JPCP0634", 0, 0
+	Patch "JPCP0634", 64, 0
+	Patch "JPCP1826", 0, 0
+}
+Texture "JPCP0659", 128, 128
+{
+	Patch "JPCP0635", 0, 0
+	Patch "JPCP0635", 64, 0
+	Patch "JPCP1826", 0, 0
+}
+Texture "JPCP0668", 64, 128
+{
+	Patch "JPCP1846", 0, 0
+	Patch "JPCP1846", 0, 64
+}
+Texture "JPCP0717", 256, 128
+{
+	Patch "JPCP0715", 0, 0
+	Patch "JPCP0715", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "JPCP0718", 256, 128
+{
+	Patch "JPCP0704", 0, 0
+	Patch "JPCP0704", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "JPCP0719", 256, 128
+{
+	Patch "JPCP0715", 0, 0
+	Patch "JPCP0715", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "JPCP0725", 16, 128
+{
+	Patch "JPCP1899", 0, 0
+	Patch "JPCP1901", 8, 0
+	Patch "JPCP1899", 0, 8
+	Patch "JPCP1901", 8, 8
+	Patch "JPCP1899", 0, 16
+	Patch "JPCP1901", 8, 16
+	Patch "JPCP1899", 0, 24
+	Patch "JPCP1901", 8, 24
+	Patch "JPCP1899", 0, 32
+	Patch "JPCP1901", 8, 32
+	Patch "JPCP1899", 0, 40
+	Patch "JPCP1901", 8, 40
+	Patch "JPCP1899", 0, 48
+	Patch "JPCP1901", 8, 48
+	Patch "JPCP1899", 0, 56
+	Patch "JPCP1901", 8, 56
+	Patch "JPCP1899", 0, 64
+	Patch "JPCP1901", 8, 64
+	Patch "JPCP1899", 0, 72
+	Patch "JPCP1901", 8, 72
+	Patch "JPCP1899", 0, 80
+	Patch "JPCP1901", 8, 80
+	Patch "JPCP1899", 0, 88
+	Patch "JPCP1901", 8, 88
+	Patch "JPCP1899", 0, 96
+	Patch "JPCP1901", 8, 96
+	Patch "JPCP1899", 0, 104
+	Patch "JPCP1901", 8, 104
+	Patch "JPCP1899", 0, 112
+	Patch "JPCP1901", 8, 112
+	Patch "JPCP1899", 0, 120
+	Patch "JPCP1901", 8, 120
+}
+Texture "JPCP0726", 32, 128
+{
+	Patch "JPCP1909", 16, 0
+	Patch "JPCP1910", 24, 0
+	Patch "JPCP1909", 16, 8
+	Patch "JPCP1910", 24, 8
+	Patch "JPCP1909", 16, 16
+	Patch "JPCP1910", 24, 16
+	Patch "JPCP1909", 16, 24
+	Patch "JPCP1910", 24, 24
+	Patch "JPCP1909", 16, 32
+	Patch "JPCP1910", 24, 32
+	Patch "JPCP1909", 16, 40
+	Patch "JPCP1910", 24, 40
+	Patch "JPCP1909", 16, 48
+	Patch "JPCP1910", 24, 48
+	Patch "JPCP1909", 16, 56
+	Patch "JPCP1910", 24, 56
+	Patch "JPCP1909", 16, 64
+	Patch "JPCP1910", 24, 64
+	Patch "JPCP1909", 16, 72
+	Patch "JPCP1910", 24, 72
+	Patch "JPCP1909", 16, 80
+	Patch "JPCP1910", 24, 80
+	Patch "JPCP1909", 16, 88
+	Patch "JPCP1910", 24, 88
+	Patch "JPCP1909", 16, 96
+	Patch "JPCP1910", 24, 96
+	Patch "JPCP1909", 16, 104
+	Patch "JPCP1910", 24, 104
+	Patch "JPCP1909", 16, 112
+	Patch "JPCP1910", 24, 112
+	Patch "JPCP1909", 16, 120
+	Patch "JPCP1910", 24, 120
+	Patch "JPCP1909", 8, 64
+	Patch "JPCP1909", 8, 72
+	Patch "JPCP1909", 8, 80
+	Patch "JPCP1909", 8, 88
+	Patch "JPCP1909", 8, 96
+	Patch "JPCP1909", 8, 104
+	Patch "JPCP1909", 8, 112
+	Patch "JPCP1909", 8, 120
+	Patch "JPCP1908", 0, 0
+	Patch "JPCP1908", 0, 8
+	Patch "JPCP1908", 0, 16
+	Patch "JPCP1908", 0, 24
+	Patch "JPCP1908", 0, 32
+	Patch "JPCP1908", 0, 40
+	Patch "JPCP1908", 0, 48
+	Patch "JPCP1908", 0, 56
+	Patch "JPCP1908", 0, 64
+	Patch "JPCP1908", 0, 72
+	Patch "JPCP1908", 0, 80
+	Patch "JPCP1908", 0, 88
+	Patch "JPCP1908", 0, 96
+	Patch "JPCP1908", 0, 104
+	Patch "JPCP1908", 0, 112
+	Patch "JPCP1908", 0, 120
+	Patch "JPCP1909", 8, 56
+	Patch "JPCP1909", 8, 48
+	Patch "JPCP1909", 8, 40
+	Patch "JPCP1909", 8, 32
+	Patch "JPCP1909", 8, 24
+	Patch "JPCP1909", 8, 16
+	Patch "JPCP1909", 8, 8
+	Patch "JPCP1909", 8, 0
+}
+Texture "JPCP0727", 32, 128
+{
+	Patch "JPCP1906", 16, 0
+	Patch "JPCP1907", 24, 0
+	Patch "JPCP1906", 16, 8
+	Patch "JPCP1907", 24, 8
+	Patch "JPCP1906", 16, 16
+	Patch "JPCP1907", 24, 16
+	Patch "JPCP1906", 16, 24
+	Patch "JPCP1907", 24, 24
+	Patch "JPCP1906", 16, 32
+	Patch "JPCP1907", 24, 32
+	Patch "JPCP1906", 16, 40
+	Patch "JPCP1907", 24, 40
+	Patch "JPCP1906", 16, 48
+	Patch "JPCP1907", 24, 48
+	Patch "JPCP1906", 16, 56
+	Patch "JPCP1907", 24, 56
+	Patch "JPCP1906", 16, 64
+	Patch "JPCP1907", 24, 64
+	Patch "JPCP1906", 16, 72
+	Patch "JPCP1907", 24, 72
+	Patch "JPCP1906", 16, 80
+	Patch "JPCP1907", 24, 80
+	Patch "JPCP1906", 16, 88
+	Patch "JPCP1907", 24, 88
+	Patch "JPCP1906", 16, 96
+	Patch "JPCP1907", 24, 96
+	Patch "JPCP1906", 16, 104
+	Patch "JPCP1907", 24, 104
+	Patch "JPCP1906", 16, 112
+	Patch "JPCP1907", 24, 112
+	Patch "JPCP1906", 16, 120
+	Patch "JPCP1907", 24, 120
+	Patch "JPCP1906", 8, 64
+	Patch "JPCP1906", 8, 72
+	Patch "JPCP1906", 8, 80
+	Patch "JPCP1906", 8, 88
+	Patch "JPCP1906", 8, 96
+	Patch "JPCP1906", 8, 104
+	Patch "JPCP1906", 8, 112
+	Patch "JPCP1906", 8, 120
+	Patch "JPCP1905", 0, 0
+	Patch "JPCP1905", 0, 120
+	Patch "JPCP1905", 0, 112
+	Patch "JPCP1905", 0, 104
+	Patch "JPCP1905", 0, 96
+	Patch "JPCP1905", 0, 88
+	Patch "JPCP1905", 0, 80
+	Patch "JPCP1905", 0, 72
+	Patch "JPCP1905", 0, 64
+	Patch "JPCP1905", 0, 56
+	Patch "JPCP1905", 0, 48
+	Patch "JPCP1905", 0, 40
+	Patch "JPCP1905", 0, 32
+	Patch "JPCP1905", 0, 24
+	Patch "JPCP1905", 0, 16
+	Patch "JPCP1905", 0, 8
+	Patch "JPCP1906", 8, 56
+	Patch "JPCP1906", 8, 48
+	Patch "JPCP1906", 8, 40
+	Patch "JPCP1906", 8, 32
+	Patch "JPCP1906", 8, 24
+	Patch "JPCP1906", 8, 16
+	Patch "JPCP1906", 8, 8
+	Patch "JPCP1906", 8, 0
+}
+Texture "JPCP0728", 32, 128
+{
+	Patch "JPCP1903", 16, 0
+	Patch "JPCP1904", 24, 0
+	Patch "JPCP1903", 16, 8
+	Patch "JPCP1904", 24, 8
+	Patch "JPCP1903", 16, 16
+	Patch "JPCP1904", 24, 16
+	Patch "JPCP1903", 16, 24
+	Patch "JPCP1904", 24, 24
+	Patch "JPCP1903", 16, 32
+	Patch "JPCP1904", 24, 32
+	Patch "JPCP1903", 16, 40
+	Patch "JPCP1904", 24, 40
+	Patch "JPCP1903", 16, 48
+	Patch "JPCP1904", 24, 48
+	Patch "JPCP1903", 16, 56
+	Patch "JPCP1904", 24, 56
+	Patch "JPCP1903", 16, 64
+	Patch "JPCP1904", 24, 64
+	Patch "JPCP1903", 16, 72
+	Patch "JPCP1904", 24, 72
+	Patch "JPCP1903", 16, 80
+	Patch "JPCP1904", 24, 80
+	Patch "JPCP1903", 16, 88
+	Patch "JPCP1904", 24, 88
+	Patch "JPCP1903", 16, 96
+	Patch "JPCP1904", 24, 96
+	Patch "JPCP1903", 16, 104
+	Patch "JPCP1904", 24, 104
+	Patch "JPCP1903", 16, 112
+	Patch "JPCP1904", 24, 112
+	Patch "JPCP1903", 16, 120
+	Patch "JPCP1904", 24, 120
+	Patch "JPCP1903", 8, 64
+	Patch "JPCP1903", 8, 72
+	Patch "JPCP1903", 8, 80
+	Patch "JPCP1903", 8, 88
+	Patch "JPCP1903", 8, 96
+	Patch "JPCP1903", 8, 104
+	Patch "JPCP1903", 8, 112
+	Patch "JPCP1903", 8, 120
+	Patch "JPCP1902", 0, 0
+	Patch "JPCP1902", 0, 120
+	Patch "JPCP1902", 0, 112
+	Patch "JPCP1902", 0, 104
+	Patch "JPCP1902", 0, 96
+	Patch "JPCP1902", 0, 88
+	Patch "JPCP1902", 0, 80
+	Patch "JPCP1902", 0, 72
+	Patch "JPCP1902", 0, 64
+	Patch "JPCP1902", 0, 56
+	Patch "JPCP1902", 0, 48
+	Patch "JPCP1902", 0, 40
+	Patch "JPCP1902", 0, 32
+	Patch "JPCP1902", 0, 24
+	Patch "JPCP1902", 0, 16
+	Patch "JPCP1902", 0, 8
+	Patch "JPCP1903", 8, 56
+	Patch "JPCP1903", 8, 48
+	Patch "JPCP1903", 8, 40
+	Patch "JPCP1903", 8, 32
+	Patch "JPCP1903", 8, 24
+	Patch "JPCP1903", 8, 16
+	Patch "JPCP1903", 8, 8
+	Patch "JPCP1903", 8, 0
+}
+Texture "JPCP0729", 32, 128
+{
+	Patch "JPCP1900", 16, 0
+	Patch "JPCP1901", 24, 0
+	Patch "JPCP1900", 16, 8
+	Patch "JPCP1901", 24, 8
+	Patch "JPCP1900", 16, 16
+	Patch "JPCP1901", 24, 16
+	Patch "JPCP1900", 16, 24
+	Patch "JPCP1901", 24, 24
+	Patch "JPCP1900", 16, 32
+	Patch "JPCP1901", 24, 32
+	Patch "JPCP1900", 16, 40
+	Patch "JPCP1901", 24, 40
+	Patch "JPCP1900", 16, 48
+	Patch "JPCP1901", 24, 48
+	Patch "JPCP1900", 16, 56
+	Patch "JPCP1901", 24, 56
+	Patch "JPCP1900", 16, 64
+	Patch "JPCP1901", 24, 64
+	Patch "JPCP1900", 16, 72
+	Patch "JPCP1901", 24, 72
+	Patch "JPCP1900", 16, 80
+	Patch "JPCP1901", 24, 80
+	Patch "JPCP1900", 16, 88
+	Patch "JPCP1901", 24, 88
+	Patch "JPCP1900", 16, 96
+	Patch "JPCP1901", 24, 96
+	Patch "JPCP1900", 16, 104
+	Patch "JPCP1901", 24, 104
+	Patch "JPCP1900", 16, 112
+	Patch "JPCP1901", 24, 112
+	Patch "JPCP1900", 16, 120
+	Patch "JPCP1901", 24, 120
+	Patch "JPCP1900", 8, 64
+	Patch "JPCP1900", 8, 72
+	Patch "JPCP1900", 8, 80
+	Patch "JPCP1900", 8, 88
+	Patch "JPCP1900", 8, 96
+	Patch "JPCP1900", 8, 104
+	Patch "JPCP1900", 8, 112
+	Patch "JPCP1900", 8, 120
+	Patch "JPCP1899", 0, 0
+	Patch "JPCP1899", 0, 120
+	Patch "JPCP1899", 0, 112
+	Patch "JPCP1899", 0, 104
+	Patch "JPCP1899", 0, 96
+	Patch "JPCP1899", 0, 88
+	Patch "JPCP1899", 0, 80
+	Patch "JPCP1899", 0, 72
+	Patch "JPCP1899", 0, 64
+	Patch "JPCP1899", 0, 56
+	Patch "JPCP1899", 0, 48
+	Patch "JPCP1899", 0, 40
+	Patch "JPCP1899", 0, 32
+	Patch "JPCP1899", 0, 24
+	Patch "JPCP1899", 0, 16
+	Patch "JPCP1899", 0, 8
+	Patch "JPCP1900", 8, 56
+	Patch "JPCP1900", 8, 48
+	Patch "JPCP1900", 8, 40
+	Patch "JPCP1900", 8, 24
+	Patch "JPCP1900", 8, 32
+	Patch "JPCP1900", 8, 16
+	Patch "JPCP1900", 8, 8
+	Patch "JPCP1900", 8, 0
+}
+Texture "JPCP0730", 16, 128
+{
+	Patch "JPCP1902", 0, 0
+	Patch "JPCP1904", 8, 0
+	Patch "JPCP1902", 0, 8
+	Patch "JPCP1904", 8, 8
+	Patch "JPCP1902", 0, 16
+	Patch "JPCP1904", 8, 16
+	Patch "JPCP1902", 0, 24
+	Patch "JPCP1904", 8, 24
+	Patch "JPCP1902", 0, 32
+	Patch "JPCP1904", 8, 32
+	Patch "JPCP1902", 0, 40
+	Patch "JPCP1904", 8, 40
+	Patch "JPCP1902", 0, 48
+	Patch "JPCP1904", 8, 48
+	Patch "JPCP1902", 0, 56
+	Patch "JPCP1904", 8, 56
+	Patch "JPCP1902", 0, 64
+	Patch "JPCP1904", 8, 64
+	Patch "JPCP1902", 0, 72
+	Patch "JPCP1904", 8, 72
+	Patch "JPCP1902", 0, 80
+	Patch "JPCP1904", 8, 80
+	Patch "JPCP1902", 0, 88
+	Patch "JPCP1904", 8, 88
+	Patch "JPCP1902", 0, 96
+	Patch "JPCP1904", 8, 96
+	Patch "JPCP1902", 0, 104
+	Patch "JPCP1904", 8, 104
+	Patch "JPCP1902", 0, 112
+	Patch "JPCP1904", 8, 112
+	Patch "JPCP1902", 0, 120
+	Patch "JPCP1904", 8, 120
+}
+Texture "JPCP0731", 16, 128
+{
+	Patch "JPCP1905", 0, 0
+	Patch "JPCP1907", 8, 0
+	Patch "JPCP1905", 0, 8
+	Patch "JPCP1907", 8, 8
+	Patch "JPCP1905", 0, 16
+	Patch "JPCP1907", 8, 16
+	Patch "JPCP1905", 0, 24
+	Patch "JPCP1907", 8, 24
+	Patch "JPCP1905", 0, 32
+	Patch "JPCP1907", 8, 32
+	Patch "JPCP1905", 0, 40
+	Patch "JPCP1907", 8, 40
+	Patch "JPCP1905", 0, 48
+	Patch "JPCP1907", 8, 48
+	Patch "JPCP1905", 0, 56
+	Patch "JPCP1907", 8, 56
+	Patch "JPCP1905", 0, 64
+	Patch "JPCP1907", 8, 64
+	Patch "JPCP1905", 0, 72
+	Patch "JPCP1907", 8, 72
+	Patch "JPCP1905", 0, 80
+	Patch "JPCP1907", 8, 80
+	Patch "JPCP1905", 0, 88
+	Patch "JPCP1907", 8, 88
+	Patch "JPCP1905", 0, 96
+	Patch "JPCP1907", 8, 96
+	Patch "JPCP1905", 0, 104
+	Patch "JPCP1907", 8, 104
+	Patch "JPCP1905", 0, 112
+	Patch "JPCP1907", 8, 112
+	Patch "JPCP1905", 0, 120
+	Patch "JPCP1907", 8, 120
+}
+Texture "JPCP0732", 16, 128
+{
+	Patch "JPCP1908", 0, 0
+	Patch "JPCP1910", 8, 0
+	Patch "JPCP1908", 0, 8
+	Patch "JPCP1910", 8, 8
+	Patch "JPCP1908", 0, 16
+	Patch "JPCP1910", 8, 16
+	Patch "JPCP1908", 0, 24
+	Patch "JPCP1910", 8, 24
+	Patch "JPCP1908", 0, 32
+	Patch "JPCP1910", 8, 32
+	Patch "JPCP1908", 0, 40
+	Patch "JPCP1910", 8, 40
+	Patch "JPCP1908", 0, 48
+	Patch "JPCP1910", 8, 48
+	Patch "JPCP1908", 0, 56
+	Patch "JPCP1910", 8, 56
+	Patch "JPCP1908", 0, 64
+	Patch "JPCP1910", 8, 64
+	Patch "JPCP1908", 0, 72
+	Patch "JPCP1910", 8, 72
+	Patch "JPCP1908", 0, 80
+	Patch "JPCP1910", 8, 80
+	Patch "JPCP1908", 0, 88
+	Patch "JPCP1910", 8, 88
+	Patch "JPCP1908", 0, 96
+	Patch "JPCP1910", 8, 96
+	Patch "JPCP1908", 0, 104
+	Patch "JPCP1910", 8, 104
+	Patch "JPCP1908", 0, 112
+	Patch "JPCP1910", 8, 112
+	Patch "JPCP1908", 0, 120
+	Patch "JPCP1910", 8, 120
+}
+Texture "JPCP0735", 16, 128
+{
+	Patch "JPCP1913", 0, 0
+	Patch "JPCP1913", 0, 56
+}
+Texture "JPCP0736", 16, 128
+{
+	Patch "JPCP1914", 0, 56
+	Patch "JPCP1899", 0, 0
+	Patch "JPCP1899", 0, 40
+	Patch "JPCP1899", 0, 32
+	Patch "JPCP1899", 0, 24
+	Patch "JPCP1899", 0, 16
+	Patch "JPCP1899", 0, 8
+	Patch "JPCP1899", 0, 48
+	Patch "JPCP1901", 8, 48
+	Patch "JPCP1901", 8, 40
+	Patch "JPCP1901", 8, 32
+	Patch "JPCP1901", 8, 24
+	Patch "JPCP1901", 8, 16
+	Patch "JPCP1901", 8, 8
+	Patch "JPCP1901", 8, 0
+}
+Texture "JPCP0739", 16, 128
+{
+	Patch "JPCP1917", 0, 0
+	Patch "JPCP1917", 0, 56
+}
+Texture "JPCP0740", 16, 128
+{
+	Patch "JPCP1918", 0, 56
+	Patch "JPCP1902", 0, 0
+	Patch "JPCP1902", 0, 48
+	Patch "JPCP1902", 0, 40
+	Patch "JPCP1902", 0, 32
+	Patch "JPCP1902", 0, 24
+	Patch "JPCP1902", 0, 16
+	Patch "JPCP1902", 0, 8
+	Patch "JPCP1904", 8, 48
+	Patch "JPCP1904", 8, 40
+	Patch "JPCP1904", 8, 32
+	Patch "JPCP1904", 8, 24
+	Patch "JPCP1904", 8, 16
+	Patch "JPCP1904", 8, 8
+	Patch "JPCP1904", 8, 0
+}
+Texture "JPCP0743", 16, 128
+{
+	Patch "JPCP1921", 0, 0
+	Patch "JPCP1921", 0, 56
+}
+Texture "JPCP0744", 16, 128
+{
+	Patch "JPCP1922", 0, 56
+	Patch "JPCP1908", 0, 0
+	Patch "JPCP1908", 0, 48
+	Patch "JPCP1908", 0, 40
+	Patch "JPCP1908", 0, 32
+	Patch "JPCP1908", 0, 24
+	Patch "JPCP1908", 0, 16
+	Patch "JPCP1908", 0, 8
+	Patch "JPCP1910", 8, 48
+	Patch "JPCP1910", 8, 40
+	Patch "JPCP1910", 8, 32
+	Patch "JPCP1910", 8, 24
+	Patch "JPCP1910", 8, 16
+	Patch "JPCP1910", 8, 8
+	Patch "JPCP1910", 8, 0
+}
+Texture "JPCP0747", 16, 128
+{
+	Patch "JPCP1925", 0, 0
+	Patch "JPCP1925", 0, 56
+}
+Texture "JPCP0748", 16, 128
+{
+	Patch "JPCP1926", 0, 56
+	Patch "JPCP1905", 0, 0
+	Patch "JPCP1905", 0, 48
+	Patch "JPCP1905", 0, 40
+	Patch "JPCP1905", 0, 32
+	Patch "JPCP1905", 0, 24
+	Patch "JPCP1905", 0, 16
+	Patch "JPCP1905", 0, 8
+	Patch "JPCP1907", 8, 48
+	Patch "JPCP1907", 8, 40
+	Patch "JPCP1907", 8, 32
+	Patch "JPCP1907", 8, 24
+	Patch "JPCP1907", 8, 16
+	Patch "JPCP1907", 8, 8
+	Patch "JPCP1907", 8, 0
+}
+Texture "JPCP0751", 16, 128
+{
+	Patch "JPCP1929", 0, 0
+	Patch "JPCP1929", 0, 56
+}
+Texture "JPCP0752", 16, 128
+{
+	Patch "JPCP1930", 0, 56
+	Patch "BLITA0", 0, 0
+	Patch "BLITA0", 0, 48
+	Patch "BLITA0", 0, 40
+	Patch "BLITA0", 0, 32
+	Patch "BLITA0", 0, 24
+	Patch "BLITA0", 0, 16
+	Patch "BLITA0", 0, 8
+	Patch "BLITC0", 8, 48
+	Patch "BLITC0", 8, 40
+	Patch "BLITC0", 8, 32
+	Patch "BLITC0", 8, 24
+	Patch "BLITC0", 8, 16
+	Patch "BLITC0", 8, 8
+	Patch "BLITC0", 8, 0
+}
+Texture "JPCP0800", 64, 128
+{
+	Patch "JPCP1980", 0, 0
+	Patch "JPCP1980", 32, 64
+	Patch "JPCP1980", -32, 64
+}
+Texture "JPCP0813", 128, 128
+{
+	Patch "JPCP1998", 1, 0
+	Patch "JPCP1998", -127, 0
+}
+Texture "JPCP0832", 64, 128
+{
+	Patch "JPCP2017", 0, 0
+	Patch "JPCP2017", 32, 64
+	Patch "JPCP2017", -32, 64
+}
+Texture "JPCP0833", 64, 128
+{
+	Patch "JPCP0831", 0, 0
+	Patch "JPCP0831", -32, 64
+	Patch "JPCP0831", 32, 64
+}
+Texture "JPCP0834", 64, 128
+{
+	Patch "JPCP0463", 0, 0
+	Patch "JPCP0463", 32, 64
+	Patch "JPCP0463", -32, 64
+}
+Texture "JPCP0835", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "JPCP1989", 1, 104
+	Patch "JPCP1989", -63, 104
+}
+Texture "JPCP0836", 64, 128
+{
+	Patch "RW33_2", 0, 0
+	Patch "JPCP1989", -63, 104
+	Patch "JPCP1989", 1, 104
+}
+Texture "JPCP0837", 64, 128
+{
+	Patch "JPCP0831", 0, 0
+	Patch "JPCP1989", 1, 104
+	Patch "JPCP1989", -63, 104
+}
+Texture "JPCP0838", 64, 128
+{
+	Patch "JPCP0463", 0, 0
+	Patch "JPCP1989", -63, 104
+	Patch "JPCP1989", 1, 104
+}
+Texture "JPCP0839", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP1989", -63, 104
+	Patch "JPCP1989", 1, 104
+}
+Texture "JPCP0840", 64, 128
+{
+	Patch "JPCP0831", 0, 0
+	Patch "JPCP0831", 32, 64
+	Patch "JPCP0831", -32, 64
+	Patch "JPCP1989", -63, 104
+	Patch "JPCP1989", 1, 104
+}
+Texture "JPCP0841", 64, 128
+{
+	Patch "JPCP0809", 0, 0
+	Patch "JPCP1987", -63, 104
+	Patch "JPCP1987", 1, 104
+}
+Texture "JPCP0842", 128, 128
+{
+	Patch "JPCP1998", 1, 0
+	Patch "JPCP1987", 65, 104
+	Patch "JPCP1998", -127, 0
+	Patch "JPCP1987", 1, 104
+	Patch "JPCP1987", -63, 104
+	Patch "JPCP1988", 33, 104
+}
+Texture "JPCP0843", 128, 128
+{
+	Patch "JPCP0815", 0, 0
+	Patch "JPCP1987", 1, 104
+	Patch "JPCP1987", 65, 104
+	Patch "JPCP1987", -63, 104
+}
+Texture "JPCP0844", 128, 128
+{
+	Patch "JPCP0820", 0, 0
+	Patch "JPCP1988", 1, 104
+	Patch "JPCP1988", 65, 104
+	Patch "JPCP1988", -63, 104
+}
+Texture "JPCP0845", 128, 128
+{
+	Patch "JPCP0822", 0, 0
+	Patch "JPCP1988", -63, 104
+	Patch "JPCP1988", 1, 104
+	Patch "JPCP1988", 65, 104
+}
+Texture "JPCP0846", 128, 128
+{
+	Patch "JPCP0824", 0, 0
+	Patch "JPCP1987", -63, 104
+	Patch "JPCP1987", 1, 104
+	Patch "JPCP1987", 65, 104
+}
+Texture "JPCP0847", 128, 128
+{
+	Patch "JPCP0826", 0, 0
+	Patch "JPCP1989", -63, 104
+	Patch "JPCP1989", 1, 104
+	Patch "JPCP1989", 65, 104
+}
+Texture "JPCP0848", 64, 128
+{
+	Patch "JPCP2019", 0, 0
+	Patch "JPCP2019", 32, 64
+	Patch "JPCP2019", -32, 64
+}
+Texture "JPCP0849", 64, 128
+{
+	Patch "JPCP2018", 0, 0
+	Patch "JPCP2018", 32, 64
+	Patch "JPCP2018", -32, 64
+}
+Texture "JPCP0857", 64, 128
+{
+	Patch "JPCP2029", 0, 0
+	Patch "JPCP0859", 24, 0
+	Patch "JPCP2029", 40, 0
+}
+Texture "JPCP0858", 128, 64
+{
+	Patch "JPCP2030", 0, 0
+	Patch "JPCP0860", 0, 24
+	Patch "JPCP2030", 0, 40
+}
+Texture "JPCP0962", 64, 128
+{
+	Patch "JPCP2160", 0, 0
+	Patch "JPCP2160", 0, 64
+}
+Texture "JPCP0963", 64, 128
+{
+	Patch "JPCP2161", 0, 0
+	Patch "JPCP2161", 0, 64
+}
+Texture "JPCP0964", 64, 128
+{
+	Patch "JPCP2162", 0, 0
+	Patch "JPCP2162", 0, 64
+}
+Texture "JPCP1044", 256, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 192, 0
+	Patch "SW11_1", 128, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 224, 0
+	Patch "SW11_2", 160, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 32, 0
+	Patch "JPCP2290", 0, 56
+}
+Texture "JPCP1050", 128, 128
+{
+	Patch "SW11_1", 0, 0
+	Patch "SW11_1", 64, 0
+	Patch "SW11_2", 96, 0
+	Patch "SW11_2", 32, 0
+	Patch "JPCP2288", 0, 44
+}
+Texture "JPCP1063", 64, 128
+{
+	Patch "JPCP1062", 0, 0
+	Patch "JPCP2312", 9, 60
+	Patch "JPCP2312", 25, 60
+	Patch "JPCP2312", 41, 60
+}
+Texture "JPCP1064", 64, 128
+{
+	Patch "JPCP1062", 0, 0
+	Patch "JPCP2313", 9, 60
+	Patch "JPCP2313", 25, 60
+	Patch "JPCP2313", 41, 60
+}
+Texture "JPCP1065", 64, 128
+{
+	Patch "JPCP1080", 0, 0
+	Patch "JPCP2313", 9, 60
+	Patch "JPCP2313", 25, 60
+	Patch "JPCP2313", 41, 60
+}
+Texture "JPCP1066", 64, 128
+{
+	Patch "JPCP1082", 0, 0
+	Patch "JPCP2313", 9, 60
+	Patch "JPCP2313", 25, 60
+	Patch "JPCP2313", 41, 60
+}
+Texture "JPCP1067", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "JPCP2313", 9, 60
+	Patch "JPCP2313", 25, 60
+	Patch "JPCP2313", 41, 60
+}
+Texture "JPCP1068", 64, 128
+{
+	Patch "JPCP1062", 0, 0
+	Patch "JPCP2314", 9, 60
+	Patch "JPCP2314", 25, 60
+	Patch "JPCP2314", 41, 60
+}
+Texture "JPCP1069", 64, 128
+{
+	Patch "JPCP1080", 0, 0
+	Patch "JPCP2314", 9, 60
+	Patch "JPCP2314", 25, 60
+	Patch "JPCP2314", 41, 60
+}
+Texture "JPCP1070", 64, 128
+{
+	Patch "JPCP1082", 0, 0
+	Patch "JPCP2314", 9, 60
+	Patch "JPCP2314", 25, 60
+	Patch "JPCP2314", 41, 60
+}
+Texture "JPCP1071", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "JPCP2314", 9, 60
+	Patch "JPCP2314", 25, 60
+	Patch "JPCP2314", 41, 60
+}
+Texture "JPCP1072", 64, 128
+{
+	Patch "JPCP1062", 0, 0
+	Patch "JPCP2315", 9, 60
+	Patch "JPCP2315", 25, 60
+	Patch "JPCP2315", 41, 60
+}
+Texture "JPCP1073", 64, 128
+{
+	Patch "JPCP1080", 0, 0
+	Patch "JPCP2315", 9, 60
+	Patch "JPCP2315", 25, 60
+	Patch "JPCP2315", 41, 60
+}
+Texture "JPCP1074", 64, 128
+{
+	Patch "JPCP1082", 0, 0
+	Patch "JPCP2315", 9, 60
+	Patch "JPCP2315", 25, 60
+	Patch "JPCP2315", 41, 60
+}
+Texture "JPCP1075", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "JPCP2315", 9, 60
+	Patch "JPCP2315", 25, 60
+	Patch "JPCP2315", 41, 60
+}
+Texture "JPCP1076", 64, 128
+{
+	Patch "JPCP1062", 0, 0
+	Patch "JPCP2311", 9, 60
+	Patch "JPCP2311", 25, 60
+	Patch "JPCP2311", 41, 60
+}
+Texture "JPCP1077", 64, 128
+{
+	Patch "JPCP1080", 0, 0
+	Patch "JPCP2311", 9, 60
+	Patch "JPCP2311", 25, 60
+	Patch "JPCP2311", 41, 60
+}
+Texture "JPCP1078", 64, 128
+{
+	Patch "JPCP1082", 0, 0
+	Patch "JPCP2311", 9, 60
+	Patch "JPCP2311", 25, 60
+	Patch "JPCP2311", 41, 60
+}
+Texture "JPCP1079", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "JPCP2311", 9, 60
+	Patch "JPCP2311", 25, 60
+	Patch "JPCP2311", 41, 60
+}
+Texture "JPCP1081", 64, 128
+{
+	Patch "JPCP1080", 0, 0
+	Patch "JPCP2312", 9, 60
+	Patch "JPCP2312", 25, 60
+	Patch "JPCP2312", 41, 60
+}
+Texture "JPCP1083", 64, 128
+{
+	Patch "JPCP1082", 0, 0
+	Patch "JPCP2312", 9, 60
+	Patch "JPCP2312", 25, 60
+	Patch "JPCP2312", 41, 60
+}
+Texture "JPCP1084", 64, 128
+{
+	Patch "RW43_4", 0, 0
+	Patch "JPCP2312", 9, 60
+	Patch "JPCP2312", 25, 60
+	Patch "JPCP2312", 41, 60
+}
+Texture "JPCP1085", 64, 128
+{
+	Patch "JPCP1059", 0, 0
+	Patch "JPCP2306", 38, 124
+	Patch "JPCP2306", 6, 124
+	Patch "JPCP2306", 38, 92
+	Patch "JPCP2306", 6, 92
+	Patch "JPCP2306", 38, 60
+	Patch "JPCP2306", 6, 60
+	Patch "JPCP2306", 38, 28
+	Patch "JPCP2306", 6, 28
+}
+Texture "JPCP1086", 64, 128
+{
+	Patch "JPCP1060", 0, 0
+	Patch "JPCP2306", 38, 124
+	Patch "JPCP2306", 6, 124
+	Patch "JPCP2306", 38, 92
+	Patch "JPCP2306", 6, 92
+	Patch "JPCP2306", 38, 60
+	Patch "JPCP2306", 6, 60
+	Patch "JPCP2306", 38, 28
+	Patch "JPCP2306", 6, 28
+}
+Texture "JPCP1087", 64, 128
+{
+	Patch "JPCP1061", 0, 0
+	Patch "JPCP2306", 38, 124
+	Patch "JPCP2306", 6, 124
+	Patch "JPCP2306", 38, 92
+	Patch "JPCP2306", 6, 92
+	Patch "JPCP2306", 38, 60
+	Patch "JPCP2306", 6, 60
+	Patch "JPCP2306", 38, 28
+	Patch "JPCP2306", 6, 28
+}
+Texture "JPCP1088", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "JPCP2306", 38, 124
+	Patch "JPCP2306", 6, 124
+	Patch "JPCP2306", 38, 92
+	Patch "JPCP2306", 6, 92
+	Patch "JPCP2306", 38, 60
+	Patch "JPCP2306", 6, 60
+	Patch "JPCP2306", 38, 28
+	Patch "JPCP2306", 6, 28
+}
+Texture "JPCP1089", 64, 128
+{
+	Patch "JPCP1059", 0, 0
+	Patch "JPCP2307", 38, 124
+	Patch "JPCP2307", 6, 124
+	Patch "JPCP2307", 38, 92
+	Patch "JPCP2307", 6, 92
+	Patch "JPCP2307", 38, 60
+	Patch "JPCP2307", 6, 60
+	Patch "JPCP2307", 38, 28
+	Patch "JPCP2307", 6, 28
+}
+Texture "JPCP1090", 64, 128
+{
+	Patch "JPCP1060", 0, 0
+	Patch "JPCP2307", 38, 124
+	Patch "JPCP2307", 6, 124
+	Patch "JPCP2307", 38, 92
+	Patch "JPCP2307", 6, 92
+	Patch "JPCP2307", 38, 60
+	Patch "JPCP2307", 6, 60
+	Patch "JPCP2307", 38, 28
+	Patch "JPCP2307", 6, 28
+}
+Texture "JPCP1091", 64, 128
+{
+	Patch "JPCP1061", 0, 0
+	Patch "JPCP2307", 38, 124
+	Patch "JPCP2307", 6, 124
+	Patch "JPCP2307", 38, 92
+	Patch "JPCP2307", 6, 92
+	Patch "JPCP2307", 38, 60
+	Patch "JPCP2307", 6, 60
+	Patch "JPCP2307", 38, 28
+	Patch "JPCP2307", 6, 28
+}
+Texture "JPCP1092", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "JPCP2307", 38, 124
+	Patch "JPCP2307", 6, 124
+	Patch "JPCP2307", 38, 92
+	Patch "JPCP2307", 6, 92
+	Patch "JPCP2307", 38, 60
+	Patch "JPCP2307", 6, 60
+	Patch "JPCP2307", 38, 28
+	Patch "JPCP2307", 6, 28
+}
+Texture "JPCP1093", 64, 128
+{
+	Patch "JPCP1059", 0, 0
+	Patch "JPCP2308", 38, 124
+	Patch "JPCP2308", 6, 124
+	Patch "JPCP2308", 38, 92
+	Patch "JPCP2308", 6, 92
+	Patch "JPCP2308", 38, 60
+	Patch "JPCP2308", 6, 60
+	Patch "JPCP2308", 38, 28
+	Patch "JPCP2308", 6, 28
+}
+Texture "JPCP1094", 64, 128
+{
+	Patch "JPCP1061", 0, 0
+	Patch "JPCP2308", 38, 124
+	Patch "JPCP2308", 6, 124
+	Patch "JPCP2308", 38, 92
+	Patch "JPCP2308", 6, 92
+	Patch "JPCP2308", 38, 60
+	Patch "JPCP2308", 6, 60
+	Patch "JPCP2308", 38, 28
+	Patch "JPCP2308", 6, 28
+}
+Texture "JPCP1095", 64, 128
+{
+	Patch "JPCP1060", 0, 0
+	Patch "JPCP2308", 38, 124
+	Patch "JPCP2308", 6, 124
+	Patch "JPCP2308", 38, 92
+	Patch "JPCP2308", 6, 92
+	Patch "JPCP2308", 38, 60
+	Patch "JPCP2308", 6, 60
+	Patch "JPCP2308", 38, 28
+	Patch "JPCP2308", 6, 28
+}
+Texture "JPCP1096", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "JPCP2308", 38, 124
+	Patch "JPCP2308", 6, 124
+	Patch "JPCP2308", 38, 92
+	Patch "JPCP2308", 6, 92
+	Patch "JPCP2308", 38, 60
+	Patch "JPCP2308", 6, 60
+	Patch "JPCP2308", 38, 28
+	Patch "JPCP2308", 6, 28
+}
+Texture "JPCP1097", 64, 128
+{
+	Patch "JPCP1059", 0, 0
+	Patch "JPCP2309", 38, 124
+	Patch "JPCP2309", 6, 124
+	Patch "JPCP2309", 38, 92
+	Patch "JPCP2309", 6, 92
+	Patch "JPCP2309", 38, 60
+	Patch "JPCP2309", 6, 60
+	Patch "JPCP2309", 38, 28
+	Patch "JPCP2309", 6, 28
+}
+Texture "JPCP1098", 64, 128
+{
+	Patch "JPCP1061", 0, 0
+	Patch "JPCP2309", 38, 124
+	Patch "JPCP2309", 6, 124
+	Patch "JPCP2309", 38, 92
+	Patch "JPCP2309", 6, 92
+	Patch "JPCP2309", 38, 60
+	Patch "JPCP2309", 6, 60
+	Patch "JPCP2309", 38, 28
+	Patch "JPCP2309", 6, 28
+}
+Texture "JPCP1099", 64, 128
+{
+	Patch "JPCP1060", 0, 0
+	Patch "JPCP2309", 38, 124
+	Patch "JPCP2309", 6, 124
+	Patch "JPCP2309", 38, 92
+	Patch "JPCP2309", 6, 92
+	Patch "JPCP2309", 38, 60
+	Patch "JPCP2309", 6, 60
+	Patch "JPCP2309", 38, 28
+	Patch "JPCP2309", 6, 28
+}
+Texture "JPCP1100", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "JPCP2309", 38, 124
+	Patch "JPCP2309", 6, 124
+	Patch "JPCP2309", 38, 92
+	Patch "JPCP2309", 6, 92
+	Patch "JPCP2309", 38, 60
+	Patch "JPCP2309", 6, 60
+	Patch "JPCP2309", 38, 28
+	Patch "JPCP2309", 6, 28
+}
+Texture "JPCP1101", 64, 128
+{
+	Patch "JPCP1059", 0, 0
+	Patch "JPCP2310", 38, 124
+	Patch "JPCP2310", 6, 124
+	Patch "JPCP2310", 38, 92
+	Patch "JPCP2310", 6, 92
+	Patch "JPCP2310", 38, 60
+	Patch "JPCP2310", 6, 60
+	Patch "JPCP2310", 38, 28
+	Patch "JPCP2310", 6, 28
+}
+Texture "JPCP1102", 64, 128
+{
+	Patch "JPCP1060", 0, 0
+	Patch "JPCP2310", 38, 124
+	Patch "JPCP2310", 6, 124
+	Patch "JPCP2310", 38, 92
+	Patch "JPCP2310", 6, 92
+	Patch "JPCP2310", 38, 60
+	Patch "JPCP2310", 6, 60
+	Patch "JPCP2310", 38, 28
+	Patch "JPCP2310", 6, 28
+}
+Texture "JPCP1103", 64, 128
+{
+	Patch "RW43_3", 0, 0
+	Patch "JPCP2310", 38, 124
+	Patch "JPCP2310", 6, 124
+	Patch "JPCP2310", 38, 92
+	Patch "JPCP2310", 6, 92
+	Patch "JPCP2310", 38, 60
+	Patch "JPCP2310", 6, 60
+	Patch "JPCP2310", 38, 28
+	Patch "JPCP2310", 6, 28
+}
+Texture "JPCP1104", 64, 128
+{
+	Patch "JPCP1061", 0, 0
+	Patch "JPCP2310", 38, 124
+	Patch "JPCP2310", 6, 124
+	Patch "JPCP2310", 38, 92
+	Patch "JPCP2310", 6, 92
+	Patch "JPCP2310", 38, 60
+	Patch "JPCP2310", 6, 60
+	Patch "JPCP2310", 38, 28
+	Patch "JPCP2310", 6, 28
+}
+Texture "JPCP1156", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "JPCP2370", 3, 3
+}
+Texture "JPCP1157", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "JPCP2371", 3, 3
+}
+Texture "JPCP1158", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "JPCP2372", 3, 3
+}
+Texture "JPCP1159", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "JPCP2373", 3, 3
+}
+Texture "JPCP1160", 64, 128
+{
+	Patch "RW39_1", 0, 0
+	Patch "JPCP2374", 3, 3
+}
+Texture "JPCP1161", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "JPCP2375", 5, 24
+}
+Texture "JPCP1162", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "JPCP2376", 5, 24
+}
+Texture "JPCP1163", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "JPCP2377", 5, 24
+}
+Texture "JPCP1164", 64, 128
+{
+	Patch "RW37_3", 0, 0
+	Patch "JPCP2378", 5, 24
+}
+Texture "JPCP1165", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP2370", 4, 2
+}
+Texture "JPCP1166", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP2371", 4, 2
+}
+Texture "JPCP1167", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP2372", 4, 2
+}
+Texture "JPCP1168", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP2373", 4, 2
+}
+Texture "JPCP1169", 64, 128
+{
+	Patch "RW38_1", 0, 0
+	Patch "JPCP2374", 4, 2
+}
+Texture "JPCP1170", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "JPCP2370", 4, 116
+}
+Texture "JPCP1171", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "JPCP2371", 4, 116
+}
+Texture "JPCP1172", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "JPCP2372", 4, 116
+}
+Texture "JPCP1173", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "JPCP2373", 4, 116
+}
+Texture "JPCP1174", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "JPCP2374", 4, 116
+}
+Texture "JPCP1175", 64, 128
+{
+	Patch "JPCP1109", 0, 0
+	Patch "JPCP2370", 3, 3
+}
+Texture "JPCP1176", 64, 128
+{
+	Patch "JPCP1109", 0, 0
+	Patch "JPCP2371", 3, 3
+}
+Texture "JPCP1177", 64, 128
+{
+	Patch "JPCP1109", 0, 0
+	Patch "JPCP2372", 3, 3
+}
+Texture "JPCP1178", 64, 128
+{
+	Patch "JPCP1109", 0, 0
+	Patch "JPCP2373", 3, 3
+}
+Texture "JPCP1179", 64, 128
+{
+	Patch "JPCP1109", 0, 0
+	Patch "JPCP2374", 3, 3
+}
+Texture "JPCP1180", 64, 128
+{
+	Patch "JPCP1107", 0, 0
+	Patch "JPCP2375", 5, 24
+}
+Texture "JPCP1181", 64, 128
+{
+	Patch "JPCP1107", 0, 0
+	Patch "JPCP2376", 5, 24
+}
+Texture "JPCP1182", 64, 128
+{
+	Patch "JPCP1107", 0, 0
+	Patch "JPCP2377", 5, 24
+}
+Texture "JPCP1183", 64, 128
+{
+	Patch "JPCP1107", 0, 0
+	Patch "JPCP2378", 5, 24
+}
+Texture "JPCP1217", 256, 128
+{
+	Patch "JPCP2415", 0, 0
+	Patch "JPCP2416", 64, 0
+	Patch "JPCP2417", 128, 0
+	Patch "JPCP2418", 192, 0
+}
+Texture "JPCP1221", 256, 128
+{
+	Patch "JPCP2422", 0, 0
+	Patch "JPCP2423", 64, 0
+	Patch "JPCP2424", 128, 0
+	Patch "JPCP2425", 192, 0
+}
+Texture "JPCP1222", 256, 128
+{
+	Patch "JPCP2426", 192, 0
+	Patch "JPCP2430", 0, 0
+	Patch "JPCP2431", 64, 0
+	Patch "JPCP2432", 128, 0
+}
+Texture "JPCP1294", 64, 128
+{
+	Patch "JPCP2509", 0, 0
+	Patch "JPCP2509", 0, 8
+	Patch "JPCP2509", 0, 16
+	Patch "JPCP2509", 0, 24
+	Patch "JPCP2509", 0, 120
+	Patch "JPCP2509", 0, 112
+	Patch "JPCP2509", 0, 104
+	Patch "JPCP2509", 0, 88
+	Patch "JPCP2509", 0, 96
+	Patch "JPCP2509", 0, 80
+	Patch "JPCP2509", 0, 72
+	Patch "JPCP2509", 0, 64
+	Patch "JPCP2509", 0, 56
+	Patch "JPCP2509", 0, 48
+	Patch "JPCP2509", 0, 40
+	Patch "JPCP2509", 0, 32
+}
+Texture "JPCP1295", 64, 128
+{
+	Patch "JPCP2510", 0, 0
+	Patch "JPCP2510", 0, 64
+}
+Texture "JPCP1296", 64, 128
+{
+	Patch "JPCP2511", 0, 0
+	Patch "JPCP2511", 0, 64
+}
+Texture "JPCP1297", 64, 128
+{
+	Patch "JPCP2512", 0, 0
+	Patch "JPCP2512", 32, 64
+	Patch "JPCP2512", -32, 64
+}
+Texture "JPCP1298", 16, 128
+{
+	Patch "JPCP2513", 0, 0
+	Patch "JPCP2513", 0, 64
+}
+Texture "JPCP1299", 64, 128
+{
+	Patch "JPCP2514", 0, 0
+	Patch "JPCP2514", 0, 112
+	Patch "JPCP2514", 0, 96
+	Patch "JPCP2514", 0, 80
+	Patch "JPCP2514", 0, 64
+	Patch "JPCP2514", 0, 48
+	Patch "JPCP2514", 0, 32
+	Patch "JPCP2514", 0, 16
+}
+Texture "JPCP1300", 8, 128
+{
+	Patch "JPCP2515", 0, 0
+	Patch "JPCP2515", 0, 64
+}
+Texture "JPCP1303", 64, 128
+{
+	Patch "JPCP2518", 0, 0
+	Patch "JPCP2518", 0, 64
+}
+Texture "JPCP1304", 64, 128
+{
+	Patch "JPCP2519", 0, 0
+	Patch "JPCP2519", 0, 64
+}
+Texture "JPCP1305", 256, 128
+{
+	Patch "JPCP2520", 128, 64
+	Patch "JPCP2530", 192, 0
+	Patch "JPCP2531", 192, 64
+	Patch "JPCP1682", 32, 0
+	Patch "JPCP1684", 96, 0
+	Patch "JPCP1680", 0, 0
+	Patch "JPCP1680", 160, 0
+	Patch "JPCP1681", 0, 64
+	Patch "JPCP1683", 64, 64
+}
+Texture "JPCP1306", 256, 56
+{
+	Patch "JPCP2523", 64, 0
+	Patch "JPCP2528", 192, 0
+	Patch "JPCP2524", 128, 0
+	Patch "JPCP1671", 0, 0
+}
+Texture "JPCP1307", 128, 128
+{
+	Patch "JPCP1701", 32, 4
+	Patch "JPCP1701", 96, 4
+	Patch "SW11_4", 0, 4
+	Patch "SW11_4", 64, 4
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 0, 56
+	Patch "JPCP1671", 0, 0
+	Patch "JPCP2523", 64, 0
+}
+Texture "JPCP1308", 256, 128
+{
+	Patch "JPCP2525", 128, 0
+	Patch "JPCP2524", 192, 0
+	Patch "JPCP2526", 192, 64
+	Patch "JPCP2527", 0, 64
+	Patch "JPCP2528", 128, 64
+	Patch "JPCP2529", 64, 64
+	Patch "JPCP2523", 64, 0
+	Patch "JPCP1671", 0, 0
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 224, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 0, 120
+}
+Texture "JPCP1313", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "JPCP2545", 0, 0
+}
+Texture "JPCP1314", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "JPCP2546", 0, 0
+}
+Texture "JPCP1315", 64, 16
+{
+	Patch "RW22_1", 0, 0
+	Patch "JPCP2547", 0, 0
+}
+Texture "JPCP1320", 128, 128
+{
+	Patch "JPCP2552", 0, 0
+	Patch "JPCP2553", 64, 0
+	Patch "JPCP2554", 0, 64
+	Patch "JPCP2555", 64, 64
+}
+Texture "JPCP1327", 16, 128
+{
+	Patch "JPCP1319", 0, 112
+	Patch "JPCP1319", 0, 96
+	Patch "JPCP1319", 0, 80
+	Patch "JPCP1319", 0, 64
+	Patch "JPCP1319", 0, 48
+	Patch "JPCP1319", 0, 32
+	Patch "JPCP1319", 0, 0
+	Patch "JPCP1319", 0, 16
+}
+Texture "JPCP1328", 32, 128
+{
+	Patch "JPCP1316", 0, 0
+	Patch "JPCP1316", 0, 96
+	Patch "JPCP1316", 0, 64
+	Patch "JPCP1316", 0, 32
+}
+Texture "JPCP1329", 64, 128
+{
+	Patch "JPCP2571", 0, 0
+	Patch "JPCP2570", 0, 64
+}
+Texture "JPCP1330", 128, 128
+{
+	Patch "JPCP2562", 64, 0
+	Patch "JPCP2565", 64, 64
+	Patch "JPCP2565", 0, 0
+	Patch "JPCP2562", 0, 64
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+}
+Texture "JPCP1331", 64, 128
+{
+	Patch "JPCP2563", 0, 0
+	Patch "JPCP2564", 0, 64
+}
+Texture "JPCP1332", 128, 128
+{
+	Patch "JPCP2564", 64, 0
+	Patch "JPCP2564", 0, 64
+	Patch "JPCP2563", 0, 0
+	Patch "JPCP2563", 64, 64
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+}
+Texture "JPCP1333", 64, 128
+{
+	Patch "JPCP2565", 0, 0
+	Patch "JPCP2562", 0, 64
+}
+Texture "JPCP1334", 128, 128
+{
+	Patch "JPCP2566", 64, 0
+	Patch "JPCP2566", 0, 64
+	Patch "JPCP2567", 0, 0
+	Patch "JPCP2567", 64, 64
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+}
+Texture "JPCP1335", 64, 128
+{
+	Patch "JPCP2567", 0, 0
+	Patch "JPCP2566", 0, 64
+}
+Texture "JPCP1336", 64, 128
+{
+	Patch "JPCP2568", 0, 0
+	Patch "JPCP2569", 0, 64
+}
+Texture "JPCP1337", 128, 128
+{
+	Patch "JPCP2569", 64, 0
+	Patch "JPCP2569", 0, 64
+	Patch "JPCP2568", 0, 0
+	Patch "JPCP2568", 64, 64
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+}
+Texture "JPCP1338", 128, 128
+{
+	Patch "JPCP2570", 64, 0
+	Patch "JPCP2570", 0, 64
+	Patch "JPCP2571", 0, 0
+	Patch "JPCP2571", 64, 64
+	Patch "JPCP1708", 96, 64
+	Patch "JPCP1708", 96, 0
+	Patch "JPCP1707", 0, 0
+	Patch "JPCP1707", 0, 64
+}
+Texture "JPCP1339", 128, 128
+{
+	Patch "JPCP2586", 0, 0
+	Patch "JPCP2581", 64, 66
+	Patch "JPCP2585", 0, 66
+	Patch "JPCP2585", 64, 0
+}
+Texture "JPCP1340", 128, 128
+{
+	Patch "JPCP2574", 0, 0
+	Patch "JPCP2575", 64, 66
+	Patch "JPCP2573", 64, 0
+	Patch "JPCP2573", 0, 66
+}
+Texture "JPCP1341", 128, 128
+{
+	Patch "JPCP2577", 0, 0
+	Patch "JPCP2576", 0, 66
+	Patch "JPCP2576", 64, 0
+	Patch "JPCP2578", 64, 66
+}
+Texture "JPCP1342", 128, 128
+{
+	Patch "JPCP2580", 0, 0
+	Patch "JPCP2579", 0, 66
+	Patch "JPCP2579", 64, 0
+	Patch "JPCP2572", 64, 66
+}
+Texture "JPCP1343", 128, 128
+{
+	Patch "JPCP2583", 0, 0
+	Patch "JPCP2582", 0, 66
+	Patch "JPCP2582", 64, 0
+	Patch "JPCP2584", 64, 66
+}
+Texture "JPCP1347", 64, 128
+{
+	Patch "JPCP2611", 0, 0
+	Patch "JPCP2611", 0, 64
+}
+Texture "JPCP1349", 64, 128
+{
+	Patch "JPCP2613", 0, 0
+	Patch "JPCP2613", 0, 64
+}
+Texture "JPCP1350", 64, 128
+{
+	Patch "JPCP2614", 0, 0
+	Patch "JPCP2614", 0, 64
+}
+Texture "JPCP1351", 64, 128
+{
+	Patch "JPCP2615", 0, 0
+	Patch "JPCP2615", 0, 64
+}
+Texture "JPCP1352", 64, 128
+{
+	Patch "JPCP2616", 0, 0
+	Patch "JPCP2616", 0, 64
+}
+Texture "JPCP1353", 64, 128
+{
+	Patch "JPCP2617", 0, 0
+	Patch "JPCP2617", 0, 64
+}
+Texture "JPCP1354", 64, 128
+{
+	Patch "JPCP2618", 0, 0
+	Patch "JPCP2618", 0, 64
+}
+Texture "JPCP1355", 64, 128
+{
+	Patch "JPCP2619", 0, 0
+	Patch "JPCP2619", 0, 64
+}
+Texture "JPCP1356", 64, 128
+{
+	Patch "JPCP2620", 0, 0
+	Patch "JPCP2620", 0, 64
+}
+Texture "JPCP1374", 32, 16
+{
+	Patch "JPCP2707", 0, 0
+	Patch "JPCP2708", 0, 8
+}
+Texture "JPCP1375", 32, 16
+{
+	Patch "JPCP2702", 0, 0
+	Patch "JPCP2702", 0, 8
+}
+Texture "JPCP1376", 32, 16
+{
+	Patch "JPCP2703", 0, 0
+	Patch "JPCP2703", 0, 8
+}
+Texture "JPCP1377", 32, 16
+{
+	Patch "JPCP2704", 0, 0
+	Patch "JPCP2706", 0, 8
+}
+Texture "JPCP1379", 32, 16
+{
+	Patch "JPCP2706", 0, 0
+	Patch "JPCP2706", 0, 8
+}
+Texture "JPCP1380", 32, 16
+{
+	Patch "JPCP2709", 0, 0
+	Patch "JPCP2710", 0, 8
+}
+Texture "JPCP1382", 32, 16
+{
+	Patch "JPCP2712", 0, 0
+	Patch "JPCP2713", 0, 8
+}
+Texture "JPCP1383", 32, 16
+{
+	Patch "JPCP2713", 0, 0
+	Patch "JPCP2713", 0, 8
+}
+Texture "JPCP1384", 32, 16
+{
+	Patch "JPCP2714", 0, 0
+	Patch "JPCP2715", 0, 8
+}
+Texture "JPCP1385", 64, 16
+{
+	Patch "JPCP2719", 0, 0
+	Patch "JPCP2719", 0, 8
+}
+Texture "JPCP1387", 32, 16
+{
+	Patch "JPCP2717", 0, 0
+	Patch "JPCP2716", 0, 8
+}
+Texture "JPCP1407", 64, 128
+{
+	Patch "JPCP2682", 0, 0
+	Patch "JPCP2682", -32, 64
+	Patch "JPCP2682", 32, 64
+}
+Texture "JPCP1455", 256, 128
+{
+	Patch "JPCP2765", 0, 0
+	Patch "JPCP2767", 128, 0
+	Patch "JPCP2775", 128, 64
+	Patch "JPCP2777", 128, 96
+	Patch "JPCP2757", 160, 64
+	Patch "JPCP2759", 160, 96
+	Patch "JPCP2769", 216, 0
+	Patch "JPCP2771", 192, 24
+	Patch "JPCP2773", 216, 24
+	Patch "JPCP1669", 192, 0
+	Patch "JPCP2763", 192, 48
+	Patch "JPCP2019", 192, 80
+	Patch "JPCP2019", 224, 48
+	Patch "JPCP2019", 240, 0
+}
+Texture "JPCP1456", 256, 128
+{
+	Patch "JPCP2019", 224, 48
+	Patch "JPCP2019", 192, 80
+	Patch "JPCP2019", 240, 0
+	Patch "JPCP2766", 0, 0
+	Patch "JPCP2768", 128, 0
+	Patch "JPCP2770", 216, 0
+	Patch "JPCP2772", 192, 24
+	Patch "JPCP2774", 216, 24
+	Patch "JPCP2776", 128, 64
+	Patch "JPCP2778", 128, 96
+	Patch "JPCP2758", 160, 64
+	Patch "JPCP2760", 160, 96
+	Patch "JPCP2764", 192, 48
+	Patch "JPCP1668", 192, 0
+}
+Texture "JPCP1572", 8, 128
+{
+	Patch "JPCP2695", 0, 0
+	Patch "JPCP2695", 0, 64
+}
+Texture "JPCP1578", 64, 128
+{
+	Patch "JPCP2195", 0, 0
+	Patch "JPCP2195", 0, 64
+}
+Texture "JPCP1579", 64, 128
+{
+	Patch "JPCP2163", 0, 0
+	Patch "JPCP2163", 0, 64
+}
+Texture "JPCP1580", 64, 128
+{
+	Patch "JPCP2165", 0, 0
+	Patch "JPCP2165", 0, 64
+}
+Texture "JPCP1581", 64, 128
+{
+	Patch "JPCP2164", 0, 0
+	Patch "JPCP2164", 0, 64
+}
+Texture "JPCP1582", 64, 128
+{
+	Patch "JPCP2174", 0, 0
+	Patch "JPCP2174", 0, 64
+}
+Texture "JPCP1583", 64, 128
+{
+	Patch "JPCP2196", 0, 0
+	Patch "JPCP2196", 0, 64
+}
+Texture "JPCP1584", 64, 128
+{
+	Patch "JPCP2197", 0, 0
+	Patch "JPCP2197", 0, 64
+}
+Texture "JPCP1585", 64, 128
+{
+	Patch "JPCP2198", 0, 0
+	Patch "JPCP2198", 0, 64
+}
+Texture "JPCP1586", 64, 128
+{
+	Patch "JPCP2199", 0, 0
+	Patch "JPCP2199", 0, 64
+}
+Texture "JPCP1587", 64, 128
+{
+	Patch "JPCP2200", 0, 0
+	Patch "JPCP2200", 0, 64
+}
+Texture "JPCP1590", 64, 128
+{
+	Patch "JPCP2206", 0, 0
+	Patch "JPCP2206", 0, 64
+}
+Texture "JPCP1591", 64, 128
+{
+	Patch "JPCP2201", 0, 0
+	Patch "JPCP2201", 0, 64
+}
+Texture "JPCP1592", 64, 128
+{
+	Patch "JPCP2202", 0, 0
+	Patch "JPCP2202", 0, 64
+}
+Texture "JPCP1593", 64, 128
+{
+	Patch "JPCP2204", 0, 0
+	Patch "JPCP2204", 0, 64
+}
+Texture "JPCP1594", 64, 128
+{
+	Patch "JPCP2205", 0, 0
+	Patch "JPCP2205", 0, 64
+}
+Texture "JPCP1606", 256, 96
+{
+	Patch "JPCP2222", 0, 0
+	Patch "JPCP2223", 128, 0
+}
+Texture "JPCP1607", 64, 128
+{
+	Patch "JPCP2207", 0, 0
+	Patch "JPCP2207", 0, 64
+}
+Texture "JPCP1608", 64, 128
+{
+	Patch "JPCP2211", 0, 0
+	Patch "JPCP2211", 0, 64
+}
+Texture "JPCP1609", 64, 128
+{
+	Patch "JPCP2208", 0, 0
+	Patch "JPCP2208", 0, 64
+}
+Texture "JPCP1610", 64, 128
+{
+	Patch "JPCP2209", 0, 0
+	Patch "JPCP2209", 0, 64
+}
+Texture "JPCP1611", 64, 128
+{
+	Patch "JPCP2210", 0, 0
+	Patch "JPCP2210", 32, 64
+	Patch "JPCP2210", -32, 64
+}
+Texture "JPCP1612", 64, 128
+{
+	Patch "JPCP2212", 0, 0
+	Patch "JPCP2212", 0, 64
+}
+Texture "JPCP1613", 64, 128
+{
+	Patch "JPCP2213", 0, 0
+	Patch "JPCP2213", 0, 64
+}
+Texture "JPCP1620", 128, 64
+{
+	Patch "JPCP2077", 0, 0
+	Patch "JPCP2077", 0, 40
+	Patch "JPCP1624", 0, 24
+}
+Texture "JPCP1637", 64, 128
+{
+	Patch "JPCP2076", 0, 0
+	Patch "JPCP1623", 24, 0
+	Patch "JPCP2076", 40, 0
+}
+Texture "JPCP1638", 64, 128
+{
+	Patch "JPCP2214", 0, 0
+	Patch "JPCP2214", 0, 64
+}
+Texture "JPCP1639", 64, 128
+{
+	Patch "JPCP2215", 0, 0
+	Patch "JPCP2215", 0, 64
+}
+Texture "JPCP1640", 64, 128
+{
+	Patch "JPCP2701", 0, 0
+	Patch "JPCP2701", 0, 64
+}

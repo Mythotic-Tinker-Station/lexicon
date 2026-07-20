@@ -1,0 +1,12 @@
+/*
+	Lexicon CTF Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXCTF"
+
+Script "Lexicon_CTFPack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","CPTF",3);
+}

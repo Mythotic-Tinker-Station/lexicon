@@ -1,0 +1,267 @@
+// Green War Mapinfo
+
+defaultmap
+{
+	ExitPic = "INTERPIC"
+	EnterPic = "INTERPIC"
+	InterMusic = "D_DM2INT"
+	NoJump
+	NoCrouch
+}
+
+map GWAR01 "Green War 01"
+{
+	Next = "GWAR02"
+	SecretNext = "GWAR02"
+	Sky1 = "SKY1"
+	Music = "D_RUNNIN"
+}
+
+map GWAR02 "Green War 02"
+{
+	Next = "GWAR03"
+	SecretNext = "GWAR03"
+	Sky1 = "SKY1"
+	Music = "D_STALKS"
+}
+
+map GWAR03 "Green War 03"
+{
+	Next = "GWAR04"
+	SecretNext = "GWAR04"
+	Sky1 = "SKY1"
+	Music = "D_COUNTD"
+}
+
+map GWAR04 "Green War 04"
+{
+	Next = "GWAR05"
+	SecretNext = "GWAR05"
+	Sky1 = "SKY1"
+	Music = "D_BETWEE"
+}
+
+map GWAR05 "Green War 05"
+{
+	Next = "GWAR06"
+	SecretNext = "GWAR06"
+	Sky1 = "SKY1"
+	Music = "D_DOOM"
+}
+
+map GWAR06 "Green War 06"
+{
+	Next = "GWAR07"
+	SecretNext = "GWAR07"
+	Sky1 = "SKY1"
+	Music = "D_THE_DA"
+}
+
+map GWAR07 "Green War 07"
+{
+	Next = "GWAR08"
+	SecretNext = "GWAR08"
+	Sky1 = "SKY1"
+	Music = "D_SHAWN"
+}
+
+map GWAR08 "Green War 08"
+{
+	Next = "GWAR09"
+	SecretNext = "GWAR09"
+	Sky1 = "SKY1"
+	Music = "D_DDTBLU"
+}
+
+map GWAR09 "Green War 09"
+{
+	Next = "GWAR10"
+	SecretNext = "GWAR10"
+	Sky1 = "SKY1"
+	Music = "D_IN_CIT"
+}
+
+map GWAR10 "Green War 10"
+{
+	Next = "GWAR11"
+	SecretNext = "GWAR11"
+	Sky1 = "SKY1"
+	Music = "D_DEAD"
+}
+
+map GWAR11 "Green War 11"
+{
+	Next = "GWAR12"
+	SecretNext = "GWAR12"
+	Sky1 = "SKY1"
+	Music = "D_STLKS2"
+}
+
+map GWAR12 "Green War 12"
+{
+	Next = "GWAR13"
+	SecretNext = "GWAR13"
+	Sky1 = "SKY2"
+	Music = "D_THEDA2"
+}
+
+map GWAR13 "Green War 13"
+{
+	Next = "GWAR14"
+	SecretNext = "GWAR14"
+	Sky1 = "SKY2"
+	Music = "D_DOOM2"
+}
+
+map GWAR14 "Green War 14"
+{
+	Next = "GWAR15"
+	SecretNext = "GWAR15"
+	Sky1 = "SKY2"
+	Music = "D_DDTBL2"
+}
+
+map GWAR15 "Green War 15"
+{
+	Next = "GWAR16"
+	SecretNext = "GWAR16"
+	Sky1 = "SKY2"
+	Music = "D_RUNNI2"
+}
+
+map GWAR16 "Green War 16"
+{
+	Next = "GWAR17"
+	SecretNext = "GWAR17"
+	Sky1 = "SKY2"
+	Music = "D_DEAD2"
+}
+
+map GWAR17 "Green War 17"
+{
+	Next = "GWAR18"
+	SecretNext = "GWAR18"
+	Sky1 = "SKY2"
+	Music = "D_STLKS3"
+}
+
+map GWAR18 "Green War 18"
+{
+	Next = "GWAR19"
+	SecretNext = "GWAR19"
+	Sky1 = "SKY2"
+	Music = "D_ROMERO"
+}
+
+map GWAR19 "Green War 19"
+{
+	Next = "GWAR20"
+	SecretNext = "GWAR20"
+	Sky1 = "SKY2"
+	Music = "D_SHAWN2"
+}
+
+map GWAR20 "Green War 20"
+{
+	Next = "GWAR21"
+	SecretNext = "GWAR21"
+	Sky1 = "SKY2"
+	Music = "D_MESSAG"
+}
+
+map GWAR21 "Green War 21"
+{
+	Next = "GWAR22"
+	SecretNext = "GWAR22"
+	Sky1 = "SKY3"
+	Music = "D_COUNT2"
+}
+
+map GWAR22 "Green War 22"
+{
+	Next = "GWAR23"
+	SecretNext = "GWAR23"
+	Sky1 = "SKY3"
+	Music = "D_DDTBL3"
+}
+
+map GWAR23 "Green War 23"
+{
+	Next = "GWAR24"
+	SecretNext = "GWAR24"
+	Sky1 = "SKY3"
+	Music = "D_AMPIE"
+}
+
+map GWAR24 "Green War 24"
+{
+	Next = "GWAR25"
+	SecretNext = "GWAR25"
+	Sky1 = "SKY3"
+	Music = "D_THEDA3"
+}
+
+map GWAR25 "Green War 25"
+{
+	Next = "GWAR26"
+	SecretNext = "GWAR26"
+	Sky1 = "SKY3"
+	Music = "D_ADRIAN"
+}
+
+map GWAR26 "Green War 26"
+{
+	Next = "GWAR27"
+	SecretNext = "GWAR27"
+	Sky1 = "SKY3"
+	Music = "D_MESSG2"
+}
+
+map GWAR27 "Green War 27"
+{
+	Next = "GWAR28"
+	SecretNext = "GWAR28"
+	Sky1 = "SKY3"
+	Music = "D_ROMER2"
+}
+
+map GWAR28 "Green War 28"
+{
+	Next = "GWAR29"
+	SecretNext = "GWAR29"
+	Sky1 = "SKY3"
+	Music = "D_TENSE"
+}
+
+map GWAR29 "Green War 29"
+{
+	Next = "GWAR30"
+	SecretNext = "GWAR30"
+	Sky1 = "SKY3"
+	Music = "D_SHAWN3"
+}
+
+map GWAR30 "Green War 30"
+{
+	next = "GWAR31"
+	Secretnext = "GWAR31"
+	Sky1 = "SKY3"
+	Music = "D_OPENIN"
+}
+
+map GWAR31 "Green War 31"
+{
+	Next = "GWAR32"
+	SecretNext = "GWAR32"
+	Sky1 = "SKY3"
+	Music = "D_EVIL"
+}
+
+map GWAR32 "Green War 32"
+{
+	Next = "VR"
+	sucktime = 1337
+	SecretNext = "VR"
+	Sky1 = "SKY3"
+	Music = "D_ULTIMA"
+}

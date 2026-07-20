@@ -1,0 +1,233 @@
+// Absolute Extinction Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ABSXE1M1 "Core Hangar"
+{
+	titlepatch = "ABSXV00"
+	next = "ABSXE1M2"
+	secretnext = "ABSXE1M2"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M1"
+}
+
+map ABSXE1M2 "Processing Bay"
+{
+	titlepatch = "ABSXV01"
+	next = "ABSXE1M3"
+	secretnext = "ABSXE1M3"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M2"
+}
+
+map ABSXE1M3 "Biotech Lab"
+{
+	titlepatch = "ABSXV02"
+	next = "ABSXE1M4"
+	secretnext = "ABSXE1M4"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M3"
+}
+
+map ABSXE1M4 "Data Storage"
+{
+	titlepatch = "ABSXV03"
+	next = "ABSXE1M5"
+	secretnext = "ABSXE1M5"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M4"
+}
+
+map ABSXE1M5 "Comms Sector"
+{
+	titlepatch = "ABSXV04"
+	next = "ABSXE1M6"
+	secretnext = "ABSXE1M6"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M5"
+}
+
+map ABSXE1M6 "Acid Dump"
+{
+	titlepatch = "ABSXV05"
+	next = "ABSXE1M7"
+	secretnext = "ABSXE1M7"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M6"
+}
+
+map ABSXE1M7 "Logic Station"
+{
+	titlepatch = "ABSXV06"
+	next = "ABSXE1M8"
+	secretnext = "ABSXE1M8"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M7"
+}
+
+map ABSXE1M8 "Rising Anomaly"
+{
+	titlepatch = "ABSXV07"
+	next = "ABSXE2M1"
+	secretnext = "ABSXE2M1"
+	sky1 = "DSKY1"
+	music = "$MUSIC_E1M8"
+	nosoundclipping
+	baronspecial
+	specialaction_exitlevel //specialaction_lowerfloor
+}
+
+map ABSXE2M1 "Chemical Refinery"
+{
+	titlepatch = "ABSXV08"
+	next = "ABSXE2M2"
+	secretnext = "ABSXE2M2"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M1"
+}
+
+map ABSXE2M2 "Abandoned Complex"
+{
+	titlepatch = "ABSXV09"
+	next = "ABSXE2M3"
+	secretnext = "ABSXE2M3"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M2"
+}
+
+map ABSXE2M3 "Teleport Hub"
+{
+	titlepatch = "ABSXV10"
+	next = "ABSXE2M4"
+	secretnext = "ABSXE2M4"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M3"
+}
+
+map ABSXE2M4 "Dead Facility"
+{
+	titlepatch = "ABSXV11"
+	next = "ABSXE2M5"
+	secretnext = "ABSXE2M5"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M4"
+}
+
+map ABSXE2M5 "Blood Halls"
+{
+	titlepatch = "ABSXV12"
+	next = "ABSXE2M6"
+	secretnext = "ABSXE2M6"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M5"
+}
+
+map ABSXE2M6 "Infested Depot"
+{
+	titlepatch = "ABSXV13"
+	next = "ABSXE2M7"
+	secretnext = "ABSXE2M7"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M6"
+}
+
+map ABSXE2M7 "Research Lab"
+{
+	titlepatch = "ABSXV14"
+	next = "ABSXE2M8"
+	secretnext = "ABSXE2M8"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M7"
+}
+
+map ABSXE2M8 "Beyond Deimos"
+{
+	titlepatch = "ABSXV15"
+	next = "ABSXE3M1"
+	secretnext = "ABSXE3M1"
+	sky1 = "DSKY2"
+	music = "$MUSIC_E2M8"
+	nosoundclipping
+	cyberdemonspecial
+	specialaction_exitlevel
+}
+
+map ABSXE3M1 "Inferno Gate"
+{
+	titlepatch = "ABSXV16"
+	next = "ABSXE3M2"
+	secretnext = "ABSXE3M2"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M1"
+}
+
+map ABSXE3M2 "Burning Bastion"
+{
+	titlepatch = "ABSXV17"
+	next = "ABSXE3M3"
+	secretnext = "ABSXE3M3"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M2"
+}
+
+map ABSXE3M3 "Outer Crags"
+{
+	titlepatch = "ABSXV18"
+	next = "ABSXE3M4"
+	secretnext = "ABSXE3M4"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M3"
+}
+
+map ABSXE3M4 "Buried Sanctum"
+{
+	titlepatch = "ABSXV19"
+	next = "ABSXE3M5"
+	secretnext = "ABSXE3M5"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M4"
+}
+
+map ABSXE3M5 "Unholy Citadel"
+{
+	titlepatch = "ABSXV20"
+	next = "ABSXE3M6"
+	secretnext = "ABSXE3M6"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M5"
+}
+
+map ABSXE3M6 "Valley of Death"
+{
+	titlepatch = "ABSXV21"
+	next = "ABSXE3M7"
+	secretnext = "ABSXE3M7"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M6"
+}
+
+map ABSXE3M7 "Abyssal"
+{
+	titlepatch = "ABSXV22"
+	next = "ABSXE3M8"
+	secretnext = "ABSXE3M8"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M7"
+}
+
+map ABSXE3M8 "Crucible"
+{
+	titlepatch = "ABSXV23"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DSKY3"
+	music = "$MUSIC_E3M8"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_exitlevel
+}

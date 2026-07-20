@@ -1,0 +1,18 @@
+Script "LexiconFireworks" Open
+{
+    // check if we are not on the vr map
+    if(!isVR()) 
+    {
+        // get map sucktime as a marker of map completion
+        SetCvar("Lexicon_Mapset_Completed", GetLevelInfo(LEVELINFO_SUCK_TIME));
+    }
+    // we are on the VR map
+    else
+    {
+        // a mapset has been completed
+        if(GetCVar("Lexicon_Mapset_Completed") == 1337)
+        {
+            SpawnSpot("LexiconFirework_Spawner", 300);
+        }
+    }
+}

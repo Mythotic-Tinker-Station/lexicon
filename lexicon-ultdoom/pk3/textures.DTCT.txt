@@ -1,0 +1,122 @@
+Texture "DTCT0042", 64, 128
+{
+	Patch "DTCT0259", 0, 0
+	Patch "DTCT0260", 24, 102
+}
+Texture "DTCT0074", 256, 128
+{
+	Patch "DTCT0218", 0, 0
+	Patch "DTCT0218", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "DTCT0098", 128, 128
+{
+	Patch "DTCT0234", 0, 0
+	Patch "DTCT0235", 64, 0
+}
+Texture "DTCT0140", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DTCT0141", 128, 128
+{
+	Patch "DTCT0157", 0, 0
+	Patch "SW2_7", 48, 72
+}
+Texture "DTCT0142", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "DTCT0143", 64, 128
+{
+	Patch "DTCT0161", 0, 0
+	Patch "SW2_7", 14, 66
+}
+Texture "DTCT0144", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "DTCT0145", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "DTCT0146", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "DTCT0147", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DTCT0148", 128, 128
+{
+	Patch "DTCT0157", 0, 0
+	Patch "SW2_8", 48, 72
+}
+Texture "DTCT0149", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "DTCT0150", 64, 128
+{
+	Patch "DTCT0161", 0, 0
+	Patch "SW2_8", 14, 66
+}
+Texture "DTCT0151", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "DTCT0152", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "DTCT0153", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "DTCT0160", 64, 128
+{
+	Patch "DTCT0157", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "DTCT0162", 64, 128
+{
+	Patch "DTCT0161", 0, 0
+	Patch "PS20A0", 1, 60
+}

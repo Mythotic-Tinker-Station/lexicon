@@ -1,0 +1,1158 @@
+===========================================================================
+Archive Maintainer      : replace dctrilogy under levels/doom2/Ports/megawads
+Advanced engine needed  : ZDoom
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Doom Core Trilogy
+Filename                : dctrilogy.wad
+Release date            : 11/26/19
+Author                  : Michael Jan Krizik (valkiriforce)
+Email Address           : [redacted]
+Other Files By Author   : Doom Core, Reverie, Eternally Yours, Vispire,
+                          Absolute Dishonor, TNT: Resistance, Oceanside,
+                          Sargasso
+Misc. Author Info       : Old school Doomer.
+
+Description             : The complete Doom Core Trilogy - contains the Doom
+                          Core and Reverie megawads and the episode Eternally
+                          Yours - 77 maps in all for use with ZDoom ports.
+                          Also contains many new co-op related fixes and
+                          features a few new maps and text screens and
+                          graphics to make for the definitive experience.
+
+Additional Credits to   : Id Software, Csabo, Doom Builder 2 crew and all
+                          playtesters and supporters alike.
+===========================================================================
+* What is included *
+
+New levels              : 77
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-77
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Over 2 years.
+Editor(s) used          : Doom Builder 2, XWE, Slade 3
+May Not Run With        : Non-supported MAPINFO ports.
+Tested With             : ZDoom/GZDoom
+=Level Listing=
+
+MAP01: Stratos One
+MAP02: Silence Of The Lambs
+MAP03: Fortress Command
+MAP04: Locked And Loaded
+MAP05: Echoes
+MAP06: Kingdom Come
+MAP07: Maximum Carnage
+MAP08: The Flood
+MAP09: The Foxtrot
+MAP10: Artillery Base
+MAP11: The Cyberstation
+MAP12: The Old Abandoned Mill
+MAP13: Subterranean Suburbs
+MAP14: Magnum Opus
+MAP15: Toxic Wastelands
+MAP16: Fistful Of Lead
+MAP17: Spire Of A Dove
+MAP18: Fueling Docks
+MAP19: Mountain Stronghold
+MAP20: Core Babylon
+MAP21: Remembered Fear
+MAP22: Gehenna
+MAP23: Nexus
+MAP24: Beyond The Firestorm
+MAP25: Incubator
+MAP26: Cages Apart
+MAP27: Walkway
+MAP28: The Gutterway
+MAP29: Toxicity
+MAP30: Frontiers
+MAP31: Dreamscape
+MAP32: Like A Fist
+MAP33: Stratos Gate
+MAP34: Soldier's Stand
+MAP35: The Cup Of Wrath
+MAP36: Divine Judgement
+MAP37: Substance
+MAP38: Sledgehammer
+MAP39: Lazarus
+MAP40: Triplet II
+MAP41: Fracture
+MAP42: The Tech Towers
+MAP43: Hello, Cybie!
+MAP44: Armageddon Valley
+MAP45: Stronghold Earth
+MAP46: Tyranny
+MAP47: Blade Runner
+MAP48: Dark Zone
+MAP49: Fatality
+MAP50: Sleeping Spirits
+MAP51: Dusk Town
+MAP52: One Such Reverie
+MAP53: Sunrise
+MAP54: Egyptian Plains
+MAP55: Cyclone Rider
+MAP56: Sewer System
+MAP57: Sever Tomorrow
+MAP58: Fallen Angel
+MAP59: Godspeed!
+MAP60: Turbine Accelerator
+MAP61: Salvation
+MAP62: Final Doom
+MAP63: Metal Mansion
+MAP64: Deadlock
+MAP65: Mezzanine
+MAP66: Stratos HQ
+MAP67: Fortress
+MAP68: Outpost Silence
+MAP69: Meshing Core
+MAP70: Cacoplasm
+MAP71: Woodheart
+MAP72: Ion Station
+MAP73: The Forsaken Town
+MAP74: Excursions
+MAP75: The Last Stand
+MAP76: Credits
+MAP77: Terrace View
+
+
+=Track Listing=
+
+Title Screen - "Reverie" (PRIMEVAL)
+Intermission (Doom Core) - Legions of the Lost [Final Doom: TNT: Evilution]
+Intermission (Reverie) - "Onward" (PRIMEVAL)
+Read Message - "Through Suffering" (PRIMEVAL)
+MAP01 - Turbo Tunnel (Joseph Collins) [Battletoads]
+MAP02 - Watch Your Step (Michael Barrette) [Doom 64]
+MAP03 - Stage 3 (Sean Bee) [Cybernator]
+MAP04 - Kitchen Ace (And Taking Names) [The Ultimate Doom]
+MAP05 - Needle Man's Stage (Mark Richardson) [Mega Man III]
+MAP06 - Death's Bells [Final Doom: TNT: Evilution]
+MAP07 - Waltz of the Demons [The Ultimate Doom]
+MAP08 - Oww!!! [Rise of the Triad]
+MAP09 - Surf City (The Jade Emperor) [Battletoads]
+MAP10 - Track 1 (Metal Remix) (Brandon "SyniKal" McKagan) [Top Gear]
+MAP11 - Karnath's Lair (Teck) [Battletoads]
+MAP12 - Blizzardman's Stage (Heavy Metal Remix) (Mark Richardson) [Mega Man VI]
+MAP13 - Demons on the Prey [The Ultimate Doom]
+MAP14 - Adiago for Strings (G Minor) [Rise of the Triad]
+MAP15 - Intermission from DOOM [The Ultimate Doom]
+MAP16 - I Sawed The Demons [The Ultimate Doom]
+MAP17 - Adrian's Asleep [Doom II]
+MAP18 - Hiding The Secrets [The Ultimate Doom]
+MAP19 - Volkmire's Inferno (Teck) [Battletoads]
+MAP20 - Last Boss (Heavy Metal Remix) (Mark Richardson) [Mega Man VI]
+MAP21 - Suspense [The Ultimate Doom]
+MAP22 - Bye Bye American Pie [Doom II]
+MAP23 - He1M9 [Heretic]
+MAP24 - Horizon [Final Doom: TNT: Evilution]
+MAP25 - Wily Stage 2 (Sivak Drac) [Mega Man 8] (edited by valkiriforce) 
+MAP26 - Stage 8 (v2.0) (Mark7) [Super Castlevania IV] (edited by valkiriforce)
+MAP27 - Untitled [The Ultimate Doom]
+MAP28 - Demons on the Prey [The Ultimate Doom]
+MAP29 - The Sewers by Stewboy
+MAP30 - Final Battle Against Sigma - "For The Last Time" (Freddie) [Mega Man X5]
+MAP31 - Legions of the Lost [Final Doom: TNT: Evilution]
+MAP32 - Intruder Excluder (Wyatt Croucher) [Battletoads]
+MAP33 - "Let's Rock!" (PRIMEVAL)
+MAP34 - "Shut Up And Bleed" (PRIMEVAL)
+MAP35 - "Have A Frag On Me" (PRIMEVAL)
+MAP36 - "Haunted Corridors" (PRIMEVAL)
+MAP37 - "DOOM Funk" (PRIMEVAL)
+MAP38 - "Ashes" (PRIMEVAL)
+MAP39 - "Arachnobus Mayhem" (PRIMEVAL)
+MAP40 - "Knee Deep in DOOM" (PRIMEVAL)
+MAP41 - "Death Waltz in B Minor" (PRIMEVAL)
+MAP42 - "Locked & Loaded" (PRIMEVAL)
+MAP43 - "Guns-ablaze" (PRIMEVAL)
+MAP44 - "Burning Times" (PRIMEVAL)
+MAP45 - "The Calling" (PRIMEVAL)
+MAP46 - "Legions of the Night" (PRIMEVAL)
+MAP47 - "City Streets" (PRIMEVAL)
+MAP48 - "Dispersion" (James Paddock)
+MAP49 - "Fortress of Misery" (PRIMEVAL)
+MAP50 - "Becoming" (PRIMEVAL)
+MAP51 - "MDK" (James Paddock)
+MAP52 - "Sludgeville" (stewboy)
+MAP53 - "Darkness Calls" (James Paddock)
+MAP54 - "Aztec Gods" (James Paddock)
+MAP55 - "Relics" (James Paddock)
+MAP56 - "Fallen Sun" (James Paddock)
+MAP57 - "Killing Spree" (PRIMEVAL)
+MAP58 - "The Crypts" (PRIMEVAL)
+MAP59 - "Bound For Glory" (PRIMEVAL, stewboy & James Paddock)
+MAP60 - "Crimson Sky" (PRIMEVAL)
+MAP61 - "Hell's Last Stand" (PRIMEVAL)
+MAP62 - "After The Storm" (stewboy)
+MAP63 - "Lost In Our Dreams" (PRIMEVAL)
+MAP64 - "Stigmatism" (PRIMEVAL)
+MAP65 - "Skedar Ruins" (Gold Jinjo) [Perfect Dark]
+MAP66 - "Message of the Archvile" [Doom II]
+MAP67 - "Goldwood Tunnels" (Jay Reichard) [Jet Force Gemini]
+MAP68 - "Mist ache" (Lee Jackson) [Rise Of The Triad]
+MAP69 - "Funeral of Queen Mary" (Lee Jackson) [Rise Of The Triad]
+MAP70 - "Gresta" (Tom Mustaine) [Icarus: Alien Vanguard]
+MAP71 - "Attack Ship - Covert Assault" (Iceplug) [Perfect Dark]
+MAP72 - "Hiding The Secrets" (Robert Prince) [The Ultimate Doom]
+MAP73 - MAP06 of Perdition's Gate
+MAP74 - MAP08 of Perdition's Gate
+MAP75 - MAP31 of Perdition's Gate
+MAP76 - "Credits (2)" (Jarel Jones) [Mega Man X]
+MAP77 - "I Sawed The Demons" (Robert Prince) [The Ultimate Doom]
+
+=Level Info=
+
+MAP01 - Stratos One
+Music: Turbo Tunnel [Battletoads]
+Inspiration: Master Levels For Doom II
+
+I wanted to make a level that cuts straight into the action, without giving the player too much of what is
+needed; but just enough to be able to handle it. It was sort of inspired by how The Master Levels cut into
+the action immediately with attack.wad.
+
+MAP02 - Silence Of The Lambs
+Music: Watch Your Step [Doom 64]
+Inspiration: Based on a dream
+
+The idea of this level is the supsension of encounter with the enemies. The level starts off being exposed
+to the mancubi enemy and having to act quickly by grabbing the super shotgun provided and being careful
+enough not to fall in the gap in front of you. You have to be aware of the environment and look out for
+areas to take cover. Originally in the dream, this was a Doom 64 level (with a weird sort of blue mist in
+all that metal darkness).
+
+MAP03 - Fortress Command
+Music: Stage 3 [Cybernator]
+Inspiration: Based on a dream
+
+Map 3 is a large fortress area with lots of exploration. I wanted to create a lot of connecting areas to
+make for a fun and interesting experience in exploring the outdoor areas as well as the fortress itself.
+
+MAP04 - Locked And Loaded
+Music: Kitchen Ace (And Taking Names) [The Ultimate Doom]
+Inspiration: Doom II in general
+
+Originally called "The Great Outdoors" for all the outdoor activity; but I later replaced them with all
+those metal areas and I had to change the name. Lame title, I know, couldn't think of anything for this
+one.
+
+MAP05 - Echoes
+Music: Needle Man's Stage [Mega Man III]
+Inspiration: Doom II
+
+This was probably my first favorite level I made for this whole megawad. This one also endured multiple
+changes to keep it up with the other, newer levels I was making at the time. Though it may/may not look
+pretty from automap view, I love how those tunnels came out.
+
+MAP06 - Kingdom Come
+Music: Death's Bells [Final Doom: TNT: Evilution]
+Inspiration: Ideas. :P
+
+A big walled-in sky fortress with four seperate areas to explore. Not a very long level despite its size,
+and if you're willing to explore, you'll find there's plenty of items to be found outside the fortress
+walls.
+
+MAP07 - Maximum Carnage
+Music: Waltz of the Demons [The Ultimate Doom]
+Inspiration: Final Doom
+
+I am usually very glad to replace older levels that are no longer on par with any of the newer levels; no
+matter how much I may try to update them/change them. This was probably the best map replacement I made.
+It's a tough little one, sure, but it really adds to the new set of levels after the text screen inter-
+mission.
+
+MAP08 - The Flood
+Music: Oww!!! [Rise of the Triad]
+Inspiration: Based on a dream
+
+I'm a little unsure about the inspiration for this level (besides the dream). I almost feel this was just
+a little bit influenced by The Sewers and possibly the Enigma episode. Anyway, it's another level that
+involves finding radiation suits in order to continue exploring the map.
+
+MAP09 - The Foxtrot
+Music: Surf City [Battletoads]
+Inspiration: Master Levels For Doom II (The Catwalk)
+
+Like The Catwalk, I wanted to try my hand on a rectangular-structured stage that involved the player first
+exploring both sides of the map before finishing up by going up the middle section.
+
+MAP10 - Artillery Base
+Music: Track 1 (Metal Remix) [Top Gear]
+Inspiration: Doom II (Refueling Base)
+
+Like Refueling Base, I tried to make a base area with lots of connecting areas as well as making unique
+areas all throughout the map. The goal of this level is to find the three keys, find the three switches
+for the keys, and typically find the exit and be careful.
+
+MAP11 - The Cyberstation
+Music: Karnath's Lair [Battletoads]
+Inspiration: Based on a dream
+
+Based on a harsh dream that played around with the idea of Cyberdemon placement. There are about 7 Cyber
+demons on the Ultra-Violence difficulty and most of them are placed where they are to caution the player
+to watch and be careful of where they choose to go. There are also quite a few traps to look out for so
+be sure to be on your guard when playing this level.
+
+MAP12 - The Old Abandoned Mill
+Music: Blizzardman's Stage (Heavy Metal Remix [Mega Man VI]
+Inspiration: Doom II (The Factory)/Based on a dream
+
+I wasn't sure I wanted to make a level inspired by The Factory because I wanted most of these
+levels to be my own original work. But I couldn't ignore the fact that a dream I had sometime
+earlier seemed to be strongly inspired by this level and as it turns out I'm glad I decided
+to go along with this one. :) Have fun with those monster crowds.
+
+MAP13 - Subterranean Suburbs
+Music: Demons on the Prey [The Ultimate Doom]
+Inspiration: Visions
+
+I had this vision of a level that had buildings underground - and for each key you find in each area, you
+would unlock a higher floor with more buildings. So I thought it sounded fun enough to try my hand on it
+and try to make this a reality. It was originally called "Alpha Interior" because I wasn't sure at the
+time what to call this level - much later I thought of Doom II's "Suburbs" and it gave me the idea for
+this title.
+
+MAP14 - Magnum Opus
+Music: Adiago for Strings (G Minor) [Rise of the Triad]
+Inspiration: Final Doom/Somwhat Jim Flynn
+
+I'll be honest, I don't know why I called this "Magnum Opus" as I wouldn't exactly consider this my great-
+est acheivement. And that's not to diminish the quality behind this level; I do believe I did a great job
+on this one (I was a little low on ideas for titles though). Anyway, the inspiration itself is also just a
+little unsure; though I think the passcode puzzle was probably inspired by one of Jim Flynn's levels.
+
+MAP15 - Toxic Wastelands
+Music: Intermission from DOOM [The Ultimate Doom]
+Inspiration: Master Levels For Doom II (Bloodsea Keep)
+
+This was one of several levels made within one day. Just a minature wood level hovering over a sea of
+toxic waste.
+
+MAP16 - Fistful Of Lead
+Music: I Sawed The Demons [The Ultimate Doom]
+Inspiration: visions/city levels in general
+
+I sketched this one up before making it, I find it's a very useful way to make maps. :) This is also one
+of my favorites; I love the atmosphere given by the sky texture used here. Kind of reminds me of SSBB for
+some odd reason. Thanks to David J. Finnamore for the sky texture.
+
+MAP17 - Spire Of A Dove
+Music: Adrian's Asleep [Doom II]
+Inspiration: visions
+
+I think this was one of my more original levels. I wanted so badly to use blue marble textures throughout
+this level I had to use my sister's computer just to email myself the marble textures and change the color
+hue on photoshop. My computer wouldn't let me install photoshop at the time for some reason...
+
+MAP18 - Fueling Docks
+Music: Hiding The Secrets [The Ultimate Doom]
+Inspiration: visions
+
+I'm very proud of how this came out. This is probably the one level I made that reminds me constantly that
+I am capable of making fun levels, too. I'd say this map encouraged me to keep going when I felt my levels
+weren't up there with all the super-detailed levels of today. But then I realized that's not the point,
+I never intended this megawad to be in league with those giants; it's simply a fun, old school styled mega
+wad for those who (like me) sometimes feel the need to play something out of nostalgic value. So do try
+and appreciate this one.
+
+MAP19 - Mountain Stronghold
+Music: Volkmire's Inferno [Battletoads]
+Inspiration: Um...Jim Flynn!
+
+I had designer's block throughout the making of this level. What kept happening is I would make some areas
+then ask myself, "How should I fill this gap?" which often left me wandering endlessly in my ideas. Well,
+now that that's over with, I can look back at yet another level that makes me feel capable of accomplish-
+ing something great in the making of Doom WADs.
+
+MAP20 - Core Babylon
+Music: Last Boss (Heavy Metal Remix) [Mega Man VI]
+Inspiration: visions, I guess?
+
+I had the idea all along to make three levels connect with each other as if it were one big level. Well,
+that ended up changing into two levels (Mountain Stronghold and this one) that connect with one another
+to make one big level. I was originally going to make a town level (map18) , then have it lead up to the
+main stronghold (map19) then have it lead into the second floor of the stronghold (map20). Instead, I went
+with the MAP18 I have now and made maps 19 and 20 focus on the stronghold itself. The other cool idea for
+this level is the cyberdemon that pops up on the bridge. You can either choose to fight it yourself or
+simply continue the level without bothering the beast. Both have their benefits: when defeated you won't
+have to worry about flying rockets across the bridge. When left alone the cyberdemon will help you fight
+the last battle in the end room.
+
+MAP21 - Remembered Fear
+Music: Suspense [The Ultimate Doom]
+Inspiration: TNT: Evilution (Storage Facility & Caribbean)
+
+Both influences are obvious and present. This is another map that ended up replacing the old MAP21; and
+I'd say I'm happy with the end result. Keep an eye out for those secrets; you never know where they are
+(unless you open up the editor...drat!).
+
+MAP22 - Gehenna
+Music: Bye Bye American Pie [Doom II]
+Inspiration: Doom II (The Living End)
+
+Like any other level with this recurring theme (Perfect Hatred, Anti-Christ, Diehard, etc.) it's an over-
+hanging level with plenty of harmful floors. Let's just say it's another tough level (maybe) with lots of
+cacodemons to blast away. I'd like to try and make a level like this again sometime; I'm sure I could do
+better...
+
+MAP23 - Nexus
+Music: He1M9 [Heretic]
+Inspiration: Slaughter maps (probably Showdown from Memento Mori)
+
+Big violent plus-sign of a level. :P
+
+MAP24 - Beyond The Firestorm
+Music: Horizon [Final Doom: TNT: Evilution]
+Inspiration: Final Doom (Bunker) Requiem (Hatred)
+
+I must have sketched this level out several times before turning it into something completely different.
+I mostly wanted to make a level that was sort of like Bunker from Final Doom, but this one grew into
+whatever it wanted to be (as well as having a bit of Requiem's influence).
+
+MAP25 - Incubator
+Music: Wily Stage 2 [Mega Man 8]
+Inspiration: Memento Mori MAP25: Cesspool
+
+This is one of a few maps original to the Doom Core Trilogy - part of my goal with the updates was to
+replace the maps I always sort of dreaded reaching on a regular playthrough - that included the filler
+maps of MAP25-27, as they were originally rejects from Reverie's early days I decided to use for the
+last slots of Doom Core. I decided to go for a techbase theme since I didn't make enough of these back
+then.
+
+MAP26 - Cages Apart
+Music: Cellar [Super Castlevania IV]
+Inspiration: PSX Doom
+
+Another replaced map for the trilogy release - this is an idea I've had for a while it seems - the map
+titled Cages Apart sat among many other map titles I've come up with over time which remind me of certain
+ideas that I've never tackled, so I decided to do that here with a new map after the last one.
+
+MAP27 - Walkway
+Music: Untitled [The Ultimate Doom]
+Inspiration: visions
+
+This is an old Doom Core map that was only rejected on the basis of being difficult to properly transfer
+into a vanilla-friendly environment, what with the many open areas that either triggered the HOM or visplane
+limits. It's here now to replace the last of the few filler maps in its rightful place - although it was
+originally MAP28.
+
+MAP28 - Unknown
+Music: Demons On The Prey [The Ultimate Doom]
+Inspiration: Memento Mori
+
+Just a speedmap to replace the original MAP28 Walkway at the time since that one was hard to make Vanilla-
+Compatible.
+
+MAP29 - The Gutterway
+Music: The Sewers by Stewboy
+Inspiration: Final Doom (The Sewers)
+
+One of Plutonia Revisited's rejected maps, with obvious inspiration.
+
+MAP30 - Frontiers
+Music: Final Battle Against Sigma - "For The Last Time" [Mega Man X5]
+Inspiration: Based on a dream
+
+The dream was pretty much as you play it. Except I added that Icon of Sin area for hard mode.
+
+MAP31 - Dreamscape
+Music: Legions of the Lost [Final Doom: TNT: Evilution]
+Inspiration: Doom II (Entryway/The Inmost Dens)
+
+I LOVE how this came out; another favorite of mine. The idea is to give a little of that Doom II Entryway
+style (and a little of that Inmost Dens influence, too) to make for a more nostalgic experience. It also
+has a little history in a couple of the areas and you'll be delighted to see the references made here and
+there. This one's also tricky on the secret side, so you'd better have a "Super Metroid" mindset to work
+this one through.
+
+MAP32 - Like A Fist
+Music: Intruder Excluder [Battletoads]
+Inspiration: Based on a dream
+
+Yet again, a harsh dream that drops you right in front of a cyberdemon. Take off running for the blue
+teleport and arm yourself because this is going to be a bit of a challenge (mostly if you decide to play
+this one from a pistol start).
+
+MAP33: Stratos Gate
+Music: "Let's Rock!" (PRIMEVAL)
+Build Time: 3 hours
+
+Entryway style obviously, I tried to avoid any sort of style imitations or remakes, but
+this one sort of slipped through for lack of a better MAP01 start. The original MAP01
+was going more for a Plutonia-style start up, of which was later removed and placed in
+the MAP25 slot of Doom Core. So yes, I would probably be guilty for this one in terms of
+style imitation (somewhat). I was going to sketch out MAP01 candidates in my sketchbook
+one afternoon, this was the first map I sketched out to be an entryway style opener much
+like TNT MAP01 (only much closer to entryway than I probably should have gone). I liked
+the way it looked so much I decided to try and make it that night and it came out within
+3 hours. There was a time I thought about replacing it, but after awhile I realize the
+only reason I would have wanted to replace it was that people would suspect it was too
+close to the entryway style. I agree, it probably is, but I like it enough to leave it
+there as it is, as I've grown accustomed to it as the opening of Reverie.
+
+MAP34: Soldier's Stand
+Music: "Shut Up And Bleed" (PRIMEVAL)
+Build Time: 2 days
+
+I guess mostly Christen Klie comes to mind for this one, with some slight influences for
+some interesting inter-connected areas. A little tech base level built into the side of
+a mountain. Didn't take long to make, it was a nice little mapping session of mine.
+
+MAP35: The Cup Of Wrath
+Music: "Have A Frag On Me" (PRIMEVAL)
+Build Time: 3 days
+
+Structurally speaking, I was inspired by Cleimos 2 after viewing the maps numerous times
+in XWE (without the grid). So I had seen the structure of this map in my head before I
+ever had an idea of what it was actually going to look like. It's an interesting way to
+improvise when approaching the territory of level design. Some might think it takes
+inspiration from MAP03 of Doom II 'The Gantlet' due to the use of starport and metal
+textures, but this level really doesn't hold much inspiration from that level.
+
+MAP36: Divine Judgement
+Music: "Haunted Corridors" (PRIMEVAL)
+Build Time: Unsure - around 5 or 6 days
+
+Personally, I don't think I've studied Jens Nielsen's designs closely enough to put out
+a map that could be confused for his creations, but the intent was at least to get a
+different enough map that it would seem to have come from someone else. Which was
+certainly a focus of mine when working on this megawad. If I was going to do it alone,
+I was at least going to pretend I was multiple different authors making different maps
+enough to give a good taste of variety. I can't say as to whether I've accomplished this
+or not. I was between completing this and MAP20 at the time of working on this. I
+remember being in a motel room in San Simeon viewing the two of them while the Sixth
+Sense was playing on TV - good memories. :)
+
+MAP37: Substance
+Music: "DOOM Funk" (PRIMEVAL)
+Build Time: A handful of hours, made within a day.
+
+Orin Flaharty comes to mind, though slightly with few given techniques (overhanging
+poles, some solid looking areas, the use of nook and crannies to house candles). Some
+slight Jens Nielsen ideas were also tossed in for added measure (narrow staircase with
+torches). The last room texture choice is a bit "Circle of Death" or maybe "Hell's
+Kitchen" given the author influence. Though the author himself (Orin Flaharty) was John
+Romero influenced - gives an odd hybrid of influence. A little bit of American McGee
+influence as well, given the use of the BROWNHUG texture surrounding the grass flats.
+It's an odd quirk but I like the old 90's vibe it gives.
+
+MAP38: Sledgehammer
+Music: "Ashes" (PRIMEVAL)
+Build Time: 4-5 days
+
+You may have noticed the full automap structure looks much like a sledgehammer itself.
+This was done on purpose much like MAP03, as some maps weren't so much influenced in
+category of texture choice or architecture, but sometimes automap structure inspiration
+can call for some interesting results. It's a fun thing to experiment with, I really
+just imagined a MAP06 slot would look something like the way it came out. It was also
+originally more difficult, relying on some puzzles to figure out how to solve the level,
+but I was rebuked by the playtesters to make it easier, so I did.
+
+MAP39: Lazarus
+Music: "Arachnobus Mayhem" (PRIMEVAL)
+Build Time: A handful of hours
+
+Another one made within a day, had the picture of this map in my head for awhile before
+finally stepping up and mapping the whole thing out. It was so much fun in the early
+days of Reverie's developement, as most of the maps at the time were made within a day.
+Amazing times.
+
+MAP40: Triplet II
+Music: "Knee Deep in DOOM" (PRIMEVAL)
+Build Time: A week or so
+
+An unofficial sequel to Jim Flynn's episode replacement for Doom II: Enigma. Even though
+it was actually 9 levels it is definitely one of my favorite episodes ever made for Doom
+II (besides Dystopia 3). I am also a big fan of Jim Flynn's work, as he had a tendancy
+of making epic-sized maps with incredible innovations and ideas that made you feel
+overwhelmed in amazement. I tried to go for that here, not so much in the Jim Flynn
+style, but with a mix of my own ideas. I'm sorry to say that I could not conquer the
+savegame buffer of this level; you could always save it at the exit of MAP07 in any
+vanilla doom port.
+
+MAP41: Fracture
+Music: "Death Waltz in B Minor" (PRIMEVAL)
+Build Time: 2 days
+
+Inspired by Sverre Kvernmo's Derelict Station (CABAL2.ZIP) A smallish base with plenty
+of action to be had, while being somewhat fractured. The furious "ending" of this level
+was also inspired by the constant traps that occurred at the end of CABAL6 (Eye of the
+Storm) by Sverre Kvernmo. This was probably another one of those maps that I had doubts
+about at first when I started woring on it, but sometimes you have to push your way
+through those doubts and just make a fun level. I recall listening to King Crimson while
+working on this level, I reckon the song "Fracture" gave me the idea for the title, as
+it seemed fitting.
+
+MAP42: The Tech Towers
+Music: "Locked & Loaded" (PRIMEVAL)
+Build Time: 5-6 days
+
+Another Enigma-inspired map; with a hint of Memento Mori II (Corporate Hell). Hope you
+guys don't get too lost in this one, as it can prove to frustrate some people not
+knowing where to go; I recommend following that red arrow in the beginning, though
+you're free to be as lost as you like in this monster, if that's your thing. I think
+most of all I thought about that level in Enigma titled "The Tower" as that was also
+somewhat of a beast to navigate, but I really love getting lost in all it's creation. I
+wanted to make an epic-sized level slightly inspired from such an idea, as it consists
+of many buildings to navigate, but with a little more direction on where to go thanks to
+the dogging of the doomworld community. Note: I will never make a megawad for you dogs
+again. "Good riddance!" you might say, well, I'm inclined to believe the same. :)
+
+MAP43: Hello, Cybie!
+Music: "Guns-ablaze" (PRIMEVAL)
+Build Time: 2-3 days
+
+Another map purposely structured to look odd yet creative. Definitely another of the
+Christen Klie inspired maps, more specifically Subspace from The Master Levels, only
+much more difficult. If you look at the automap structure of Subspace from the Master
+Levels then you should be able to spot the influence it had on this map.
+
+MAP44: Armageddon valley
+Music: "Burning Times" (PRIMEVAL)
+Build Time: Most likely a few days.
+
+Just a little rocky earth level to get the next episode started up. A bit inspired from
+The Waterway by Orin Flaharty, somewhat Cleimos 2 as well. There are some really tricky
+secrets in this level so keep your eyes open.
+
+MP45: Stronghold Earth
+Music: "The Calling" (PRIMEVAL)
+Build Time: 3-5 days
+
+Another big map to be explored, with some rockies and some buildings. Inspiration comes
+mostly from Fortress of Death by Andrew Harvey. I thought the exit idea was hilarious,
+seeing the boat and paddles right there waiting for you. As if you were on some quick
+getaway from hell and you're yelling to yourself, "ROW!!! ROW!!! FOR THE LOVE OF GOD,
+ROW!!!"
+
+MAP46: Tyranny
+Music: "Legions of the Night" (PRIMEVAL)
+Build Time: Probably 3 days
+
+Another map built to look that way structurally on purpose. It's an interesting practice
+to make with what you have according to the shapes of sectors and such. It makes the
+maps look so pretty. Some Icarus inspirations, with Christen Klie (again) for some
+interesting quirks. The idea in this one is sort of starting from scratch (outside the
+fortress) then working your way through security (the bridge) then eventually usurping
+the fortress itself. The arch-vile could be seen as the ruler of this place, sitting on
+his throne the way he is. It feels good to feel like you're conquering enemy territory
+and you've accomplished yet another mission along the way.
+
+MAP47: Blade Runner
+Music: "City Streets" (PRIMEVAL)
+Build Time: Weeks
+
+Another city map inspired from Industrial Zone, Corporate Hell and Karmacoma. Also
+contains a homage to another of Christen Klie's creations (The Catwalk). If you're
+extra tricky you'll find the secret exit, which isn't easy to find as it relies upon
+secret searching in this level. This also suffers from savegame buffer, so be sure to
+save at the exit of MAP14 if you're into that.
+
+MAP48: Dark Zone
+Music: "Dispersion" (James Paddock)
+Build Time: A handful of hours
+
+I made that first area at night then mapped the rest out the following day. I've had
+this idea for the longest time and I'm glad to have finally mapped it out. It was a good
+stretch for my mind to work out. That one area you teleport to with the highway street
+and the street lights with a mountain view is inspired from a real place I used to visit
+quite often. In Long Beach, there's this El Dorado Park area where people like to fly
+their remote control airplanes. I used to bike ride there every afternoon (about 1 PM)
+and watch them fly their planes. Sometimes I would ride there in the late evening of a
+clear day, so you could see the mountains at sunset. This area I made looks somewhat
+similar to such an area.
+
+MAP49: Fatality
+Music: "Fortress of Misery" (PRIMEVAL)
+Build Time: 2-3 days
+
+Took awhile to settle for some ideas surrounding the MAP17 slot. Some slight "The Five"
+influence with the starting area, followed by some mixed styles of Orin and Jens yet
+again, as they were both very creative. It was also slightly inspired by The Shaft from
+Memento Mori II, having a series of miniature battle fields to take out before
+continuing the actual level.
+
+MAP50: Sleeping Spirits
+Music: "Becoming" (PRIMEVAL)
+Build Time: 4-5 days
+
+Obviously this one draws from Blessed Are The Quick (Icarus) with some minor hints and
+influences from The Mansion (PSX Doom). Had to try and make an animated rain texture,
+of which ended up looking exactly like the one in Icarus (whoops!) Named Sleeping
+Spirits because of the ghosts that wake upon gunfire. Keep an eye out for the television
+set, you can turn it on/off via a remote control laying on the bed of a bedroom.
+
+MAP51: Dusk Town
+Music: "MDK" (James Paddock)
+Build Time: Made within a day (mostly).
+
+Somehow reminds me of Plutonia; I guess it's the earth feel that naturally lumps it in
+the Plutonia category. Anyway, I started this map one morning but a car ride took the
+whole day away from me, so the following day I picked up from where I was and completed
+it. Can be quite a nasty map so watch out.
+
+MAP52: One Such Reverie
+Music: "Sludgeville" (stewboy)
+Build Time: A long time!
+
+I was constantly thrown away from this map, due to having to pursue other ideas I had
+that had to be made (MAP01/MAP04 for example) but eventually I came back and completed
+this map. I made the starting area and the following area in a handful of hours, but I
+wasn't really sure where to take the map. So I felt making an interconnecting map with
+teleporters would be a good way to go. Even though I already had that in mind for
+something else entirely (see Triplet II).
+
+MAP53: Sunrise
+Music: "Darkness Calls" (James Paddock)
+Build Time: Probably 2 hours.
+
+A smallish map intended for survival. Made within a movie's length (Princess Mononoke -
+on a random trivial note). It used to be strictly that first arena you teleport to but
+I'm glad to have expanded it the way I did over time.
+
+MAP54: Egyptian Plains
+Music: "Aztec Gods" (James Paddock)
+Build Time: 2-3 days
+
+Another Cleimos 2-inspired map, using those CLEGYPTA-D textures. I do like how it turned
+out, though ironically I really like how that sewer area turned out. Someone thought it
+was Epic 2 inspired but it actually isn't as I hadn't played that megawad until long
+after I had completed this level.
+
+MAP55: Cyclone Rider
+Music: "Relics" (James Paddock)
+Build Time: 4-6 days
+
+Had to make that first area as I was inspired by the design of MAP26 of Memento Mori
+(Between Scattered Corpses). It had four spider masterminds and a cyberdemon at the
+begging and yet it managed not to be too overwhelming. Following this is the level
+itself, which puts the good old Doom 64 textures to use, with some further style mixing
+structurally speaking. I used some of the Doom 64 textures because the most I can do
+with texturing is either remixing existing stock Doom II textures or just taking a
+picture of something outside and making that a texture. I felt there was sort of a lack
+of new textures, in other words, that I thought Doom 64's textures would be interesting
+and fun to use for such an occasion.
+
+MAP56: Sewer System (Arch Vile's Den)
+Music: "Fallen Sun" (James Paddock)
+Build Time: 3-4 days
+
+I think MAP24, 25 & 26 were the toughest to come up with. They were just three empty
+slots that needed to be filled to complete this megawad, and I wasn't about to stop.
+After a long while, I finally stepped up to make a sewer-themed level. Not much
+background surrounds it other than the idea that it would originally be populated by
+arch-viles (hence the subtitle "Arch Vile's Den").
+
+MAP57: Sever Tomorrow
+Music: "Killing Spree" (PRIMEVAL)
+Build Time: 2-3 days
+
+I tried hard to find inspirations for these last three levels, even going as far as
+searching up old N64 classics on YouTube. Originally, I had a couple ideas for this
+map. It would either be inspired by the cruiser ship from Go For Broke (Bomberman 64)
+or possibly Mizer's Palace (Jet Force Gemini). I ended up going with something else
+completely; something that at first was inspired by Last Call from Final Doom, with a
+mix of Super Mario 64 thrown in there (the western areas, mostly inspired from inside
+the Pyramid of Super Mario 64). This is another map that can be difficult if you don't
+take your time with the monsters of the map. This was also the very last map I made for
+this megawad so you can imagine how excited I was to complete it.
+
+MAP58: Fallen Angel
+Music: "The Crypts" (PRIMEVAL)
+Build Time: 2-3 days
+
+Sort of a mix between the inspired structure of MAP25 of Cleimos 2 (Well of Fire) but
+with the style of play for something like Not That Simple (Memento Mori). A smallish,
+violent level without any worry of savegame buffers. Plenty of monsters to fight when
+navigating to and fro certain areas of the map.
+
+MAP59: Godspeed!
+Music: "Bound For Glory" (PRIMEVAL, stewboy & James Paddock)
+Build Time: 3-4 days
+
+When I first got Plutonia Revisited I had to get a sneak peak of each level before
+actually playing the megawad. When I reached MAP24 (Terra Incognita by 4mer) I knew
+right away I was looking forward to playing that level, and I knew right away I wanted
+to make a Living End style level that is as free-going as it looks. I've decided to
+avoid the use of damaging floors surrounding the entire level as I would like to
+encourage further exploration as well as breaking away from the age-old tradition of
+Living End-type levels.
+
+MAP60: Turbine Accelerator
+Music: "Crimson Sky" (PRIMEVAL)
+Build Time: 3 days
+
+Inspired from the bigger Casali maps (Pharoah, Caribbean, The Sewers, Odyssey Of Noises)
+only this is more of a metal-themed tech map. With an outdoor area and a waterway near
+the end. This was one of the earliest map ideas I had for this megawad (of which would
+originally have been a 3-level PWAD) along with MAP29 and MAP30. Reverie was based on a
+reverie of sorts, with MAP29 & 30 following closely by.
+
+MAP61: Salvation
+Music: "Hell's Last Stand" (PRIMEVAL)
+Build Time: Some hours
+
+I really intended this level to be sort of an arena-type battle. This was actually based
+on a dream I had, with MAP28 & 30 following as part of my vision for this project. It
+really is amazing what you can do to make dreams come true. Also made within a day.
+
+MAP62: Final Doom
+Music: "After The Storm" (stewboy)
+Build Time: 3 days
+
+This last level incorporates everything I wanted Reverie to be; beautiful and action-
+packed, with a slight hint of nostalgic goodness. There are plenty megawads out there
+already that go for the hellish ending, with crazy blood caves and torture chambers. I
+wanted Reverie to have a beautiful ending with an atmosphere of hope for survival. It
+really puts a good feeling in your heart to know you've saved the world once again from
+these hellish monsters. Even if it's just a dream, of which, realistically so, could be
+associated with the idea of video games in general. We all like to feel like a hero from
+time to time; this is just the way video games should be.
+
+MAP63: Metal Mansion
+Music: "Lost In Our Dreams" (PRIMEVAL)
+Build Time: 4-5 days
+
+Something inspired from Excalibur (Eternal Doom) because I was really attracted to the
+idea of a puzzle map that relies upon secret searching. It gives the option to quit and
+take the normal exit if you're too exhausted by the subtle hints of progression found
+throughout the level. Otherwise, if you're extra clever, you'll discover all the secrets
+in order to reach the super secret level.
+
+MAP64: Deadlock
+Music: "Stigmatism" (PRIMEVAL)
+Build Time: 3-4 days
+
+Just a smallish map that plays violently. Another of which takes inspiration from the
+secret levels that were rather small in size (Requeim MAP32, Icarus MAP32, Cleimos 2
+MAP32). I was tempted to replace this one at one point, since it seems there isn't too
+much special about this super secret level, but I couldn't bring myself to remove a map
+that I enjoyed. Hope you guys can manage well with this one.
+
+MAP65: Mezzanine (or, "East Mezzanine Way")
+Music: "Skedar Ruins" (Gold Jinjo) [Perfect Dark]
+Re-Build Time: somewhere around 2-3 days...
+
+One of three tune-up levels. This was actually the first map I ever made when introduced to mapping for Doom II.
+It's actually based on my grandparent's house as well as a little influence from the surrounding neighborhood.
+Updated to look MUCH more polished...
+
+MAP66: Stratos HQ (or, "Stratos Headquarters")
+Music: "Message of the Archvile" [Doom II]
+Re-Build Time: 2 days I think.
+
+The second personalized tune-up map of mine. This one was originally made maybe sometime in late 2009/early 2010, not
+long after the first map was made (late October/early November 2009, I think). This one also underwent a major update,
+and I must say this level has never looked better...
+
+MAP67: Fortress (or, "Ancient Mining Technology")
+Music: "Goldwood Tunnels" (Jay Reichard) [Jet Force Gemini]
+Re-Build Time: 2 days
+
+The last of the three super old maps I decided to tune-up for this episode. I was originally going to get as many old
+levels as I could into this episode, but the other levels were killing my interest just as well as they were killing
+me. I really felt the need to make brand-new levels instead of trying to save some really old maps I made. Although
+I am glad to have gotten at least three old maps into this episode. Anyway, this was originally MAP03 of the super old
+version of Doom Core, long before it was ever near 32 maps. It was somewhere around 9-10 maps before I started to re-
+place a bunch of those outdated maps. Once again, I'm very pleased with the results of the update.
+
+MAP68: Outpost Silence (or, "Outpost Of The Silent Gravestone")
+Music: Mist ache" (Lee Jackson) [Rise Of The Triad]
+Build Time: 2 days
+
+It was kind of slow at first trying to find myself in this map, but things started to take off as soon as I reached
+making that caged baron of hell area. I was mostly influenced by what I recall seeing and playing in Denis Moeller's
+levels, more specifically his map The Inmost Dens II. I also remember I had that music for that level stuck in my head
+so I'm sure that really drove my mapping up to speed through completing it.
+
+MAP69: Meshing Core (or, "Beelzebub's Fungus Attic")
+Music: "Funeral of Queen Mary" (Lee Jackson) [Rise Of The Triad]
+Build Time: 2 days
+
+This is actually a birthday map I made for Phobus. The mapping time for this map was phenomenal. Although I listed
+2 days as the build time, the map was mostly made within a day. I only made that starting area one day and worked a
+little bit with it, but the next day I suddenly took off and didn't stop until it was completed. I wish I could have
+recorded myself with fraps or something because I couldn't believe I was making this map so fast. I don't mean to
+sound as though I were boasting, it was one of those days where I started having all these good ideas and I couldn't
+help but press on until it was finished. Anyway, that's what I remember the most when I think of this map. I do like
+some of those inter-connected areas came out. It's one of those things where you look at this room that looks like
+nothing exciting will happen, only to find after progressing a bit the room starts to take itself apart, with moving
+floors and cielings and staircases and all that. I had a lot of fun making this map.
+
+MAP70: Cacoplasm (or, "Amongst The Deadly Water Chasm")
+Music: "Gresta" (Tom Mustaine) [Icarus: Alien Vanguard]
+Build Time: 1 day
+
+A short level, but quite open for destruction. Lots of fighting going on in big, open (cave) spaces. Certainly has its
+inspiration from Icarus: Alien Vanguard MAP31 (Great Balls of Fire) cause I liked the openness of that map as well.
+Also has plenty of secrets to search for.
+
+MAP71: Woodheart (or, "Trail Of Twenty-Four Riddles")
+Music: "Attack Ship - Covert Assault" (Iceplug) [Perfect Dark]
+Build Time: 2 days
+
+WARNING! This map is chock full of traps and surprises. You'd best navigate and search for some secrets, as there are
+plenty in this map. Though of course the map is possible to beat without secrets (but it sure took me awhile, though!)
+This map is quite challenging mostly because of the monster placement. Probably not for the faint of heart, so keep
+steady and make choicy battle maneuvers, you're gonna need it. The level is obviously Jens Nielsen inspired, because
+he was one of my favorite authors. It is possible to get trapped if that arch-vile enemy tries to resurrect the only
+arachnotron enemy in the level. So yeah, try to avoid that. If it does happen, however, try to avoid killing him
+again, at least until you are able to access the exit. Then you can terminate him from the platform so it won't matter
+that it raises a second time (just don't fall down). Oh, and don't worry about what the switches do; a vast majority
+of them pretty much have the same effect. There are 24 pillars blocking the exit, and as you progress the level, the
+exit becomes a little more available. Hence the "Twenty-Four Riddles" part of the subtitle.
+
+MAP72: Ion Station
+Music: "Hiding The Secrets" (Robert Prince) [The Ultimate Doom]
+Build Time: 3 days
+
+Another birthday map, this time for DeathevocatioN. Worked on in the style of Andy Badorek as I recall DeathevocatioN
+expressing his love for the non-linear style of his maps. I'll admit techbase maps are not the easiest for me to
+design, but this one came along nicely. I ended up using another music track because someone somewhere always has a
+problem with the music track...
+
+MAP73: The Forsaken Town (or, "To Whom They Forsook")
+Music: MAP06 of Perdition's Gate
+Build Time: 2 days
+
+A map with plenty of doom2.exe tricks including the 3d bridge, double 3d bridge, a swinging door, a room-over-room
+effect, and other interesting tricks. I really love how that huge double 3D bridge area came out.
+
+MAP74: Excursions
+Music: MAP08 of Perdition's Gate
+Built Time: 5 days
+
+Lots of places to go, have fun.
+
+MAP75: The Last Stand
+Music: MAP31 of Perdition's Gate
+Build Time: 2 days
+
+The last area before the icon of sin area was actually based on a dream I had where I was working on an episode with
+Thomas Van Der Velden, only he was actually Jan Van Der Veken (!?!?). I'm quite surprised it came out exactly as I
+remembered seeing it in the dream. The last area was originally more bare, sort of focusing on the icon battle itself
+rather than having a building to navigate. So I returned after a long while and I decided I wanted something a little
+more fun to play around with, so I added that building structure with a rather difficult progression. Navigate outside
+of the building to flip all the surrounding switches to give access to the icon's weak spot. It is also recommended
+that if you plan to save it at any time in this level you should save it just before the teleporter to the last area.
+Apparently the game might crash for an unknown reason if you try to load a saved file from the last area. Strange...
+
+MAP76: Goodbye Again
+Music: "Credits (2)" (Jarel Jones) [Mega Man X]
+Build Time: like 2 minutes lol
+
+Just a credits map - a silly one at that, and it's the end of the wad! Or is it?
+
+MAP77: Terrace View
+Music: "I Sawed The Demons" (Robert Prince) [The Ultimate Doom]
+Build Time: a few days
+
+Based on the second map I ever created, which never was finished. I wanted to somewhat recreate another old home
+location in Lake Tahoe we used to live in - this time with focus on more Doomy designs and hordes of enemies flooding
+the exterior areas. It's a nice little bonus to round out the trilogy experience and the real conclusion of the story.
+
+===========================
+*Contributers*
+Texture graphic REDMNTN by David J. Finnamore doom@elvenminstrel.com 
+Texture graphic PERLNDRA by David J. Finnamore doom@elvenminstrel.com
+
+John Weekley (PRIMEVAL) - Original music tracks for maps 33-47, 49, 50, 57-61, 63, 64,
+and intermission sceen, text intermission, and title screen.
+
+James Paddock (Jimmy91) - Original music tracks for MAP48, 51, 53-56, 59.
+
+Stuart Rynn (stewboy) - Original music tracks for MAP29, 52, 59, 62.
+
+*Many other music tracks were taken from vgmusic.com
+
+A big thanks to PRIMEVAL, James Paddock & stewboy for the new music.
+
+Another great big thank-you to all the playtesters, MegaDoomer, hawkwind, waverider, kmxexii, Ryathaen, Joshy and
+ArmouredBlood.
+
+And yet another thanks to hawkwind for the DeHackEd/BEX patches for the WAD.
+
+==========================
+*Wad description/History*
+
+===DOOM CORE===
+
+This is a new 32-level megawad made entirely from scratch. This is not an insanely detailed megawad
+that took infinity hours to make, the maps are more on-par with the Doom II style (which I know most
+of you hate) or at least designed to my own particular satisfaction. Anyway, this is what I *think* I
+would have made had I been involved at the time. Many maps were either based on dreams I've had or were
+simply ideas that came to me at the time of making this.
+
+I started the mapping for this personal project sometime in late November 2009. Some of the earlier
+maps I made were used for the first episode onward so there is some what of a progression of detail
+as the levels go on (though the oldest map of the set is MAP02). Some of the original maps were re-
+placed later on due to my dissatisfaction so some of them might jump back and forth. Anyway, I hope
+you can at least enjoy some of this, after all, there's plenty of maps to try out. If not, well, you
+can go play your precious "Alien Vendetta", "Speed of Doom" or whatever.
+
+Anyway, with that aside:
+
+THE STORY:
+
+Doomguy goes hallucinating...Doom Core...
+
+In order to break free from his hallucination, he must terminate himself (easy/normal) or destroy the real
+mastermind behind the hallucination operation (hard).
+
+If you do break free, however, you'll be rewarded with an eternal vacation in a world of your very own to
+play around with...
+
+That is until he went from hallucinating to having a daydream...
+
+
+===REVERIE===
+
+Reverie began as a side-project besides Doom Core, and it was to be a few maps or more in length. As I came
+to understand vanilla mapping better over the previous months, I was able to focus myself better on achieving
+what I felt to be a more cohesive experience, which led to me engaging it with even more maps and ideas. After
+a while it was starting to turn into another megawad alongside Doom Core, which wasn't even finished yet. I
+eventually returned to Doom Core in the following summer of 2011 and wrapped up what was left to be done before
+releasing it in July 2011. Reverie was started in August 2010, and was later completed in the following August,
+but wasn't quite ready for release due to the soundtrack being incomplete. It would later finish by November 2011
+for a release two weeks in. It later won a cacoward that year in 2011.
+
+-=The Story=-
+
+
+After fighting your way through your demonic hallucinations the year before, you go for a ride in what seems like
+an everyday activity of putting miles behind you to enjoy the cool breeze of the open world around you, but something
+is wrong - a strange disturbance can be felt in the wind, and it sweeps underneath your vehicle - sending you outside
+and into the unknown. Not much is remembered about the incident - the mystery of it envelops you in a haze of
+confusion and wonder. You awake to find youself somewhere else entirely - a familiar starport can be spotted across
+from you, with danger looming the horizon...
+
+And thus the same unwanted threat makes haste to wreak havoc in your peaceful little world - now it's time you
+threatened their time in silence and bring with you a greater force of violence.
+
+
+===ETERNALLY YOURS===
+
+The last of the Doom Core Trilogy - Eternally Yours sets itself apart as only containing an episode's length of maps
+at 11 slots along with a credits map. It contains a few of my oldest maps updated to meet the par of my mapping quality
+at the time and a couple of birthday maps I created - the rest were original ideas to round out what was intended to be
+my original goodbye from the Doom community. As I appreciate the amount of experience that came with working on Doom
+Core and Reverie, I still feel to this day that Eternally Yours was my most matured effort that I hold as one of my
+best works.
+
+
+-=The Story=-
+
+First the demons tried to steal your mind, then they tried to steal your soul...now months later the threat of
+invasion becomes a reality, as it's no longer an attack on your senses but an attack on the world at large. The
+anti-christ arrives to put the earth in eternal turmoil and sufferings, and you've only got your loaded pistol
+you keep safe at home on the off-chance you might need it against an armed robber. You've got a neighborhood
+full of unwanted neighbors - undead soldiers, demons and other monstrosities - and now it's time to lay them all
+to eternal unrest. Your goal is to eliminate the demon-spitter and lay low - realistically, this threat is too
+much for a single human being, so it should be enough to annihilate the local hellspawn and take cover until
+any further backup arrives.
+
+**Changes**
+
+-Adjusted difficulty settings throughout Doom Core, Reverie and Eternally Yours
+-Various co-op related fixes throughout
+-MAP01's starting room switches are now non-interactive
+-Fixed the midi volume and loop for maps 1, 3, 5, 11, 12, 19, 20 & 32
+-MAP02 has a lift to the starting platform
+-MAP05 now has the original hub pillar with chaingunners on platform
+-MAP06 is back to the original non-restricted open walls
+-Secret effect added to outer ring of MAP06
+-MAP07 secret effect added to soulsphere platform
+-MAP07 door texture added to make the way of progress easier
+-Changed exit door and added exit sign in MAP08
+-Changed the secret platforms on MAP09 and also added a teleport function for the mega armor
+-Changed lift function on MAP09
+-Added a crusher function for the caged chaingunners on MAP09
+-Changed lift function on MAP10
+-Fixed exit height on MAP10
+-Added exit sign on MAP10
+-Contains original MAP11 without the large restricting wall
+-Relocated hidden switch on MAP11
+-Added secret effect for rocket launcher on MAP11
+-Removed Cyberdemon behind the player and in the pit of MAP11
+-Contains original MAP13 without restricted views into higher platforms
+-Added secret effect on soulsphere for MAP13
+-Added exit sign on MAP13
+-Changed secret pillar texture on MAP14
+-Adjusted floor-changing function on MAP15
+-Contains original sky concept of MAP17 with the correct episode 1 sky
+-MAP19 now includes the original introduction of scaling through mountainous terrain before reaching the fortress
+-Removed the switch puzzle at the start of MAP19
+-Added a fail safe teleporter to the exit platform if players get locked out of the exit lift
+-Changed secret textures on MAP21
+-Changed MAP22's exit Cybermon to a multiplayer monster
+-Slight texture change for red skullkey stair lift on MAP22
+-Added teleport to platform in the last large area of MAP24, thus making the whole map accessible
+-Removed death exit on MAP24
+-Replaced maps 25 & 26 with all-new maps
+-Replaced MAP27 with the original MAP28: Walkway
+-Combined maps 27 and 28 into one map, with some additional changes in items and visuals
+-Changed MAP25, 26, 27 and 29's music tracks
+-Moved the original MAP29 (The Gutterway) to MAP28
+-MAP29 has an all-new map
+-Added more cells to the last room of MAP30
+-Contains original MAP31 concept with visible starting areas of Doom IWADs and the "Rip and Tear" text and end screen
+of The Ultimate Doom
+-Secret texture changed on MAP32
+-All hidden lines of Reverie are now visible - thus upgrading the computer powerup to revealing the location of
+secrets
+-Changed MAP36's starting door so it doesn't close permanently
+-Adjusted the hidden switch in MAP36's soulsphere area to make it more visibly different
+-Added secret tag 666 switch in MAP39 hidden for -nomonsters playthrough
+-Added new invulnerability secret in MAP42 near red door bridge
+-Slightly lowered wall in MAP42's blue key location
+-Removed MAP43's death exit
+-Fixed MAP46 wall function which could previously lock other players out
+-Changed the platform puzzle on MAP56 to be more straightforward
+-Slightly widened walking platforms in pool area of MAP65
+-Fixed exit doortrak texture on MAP67
+-Changed MAP70's music track to its original track before release
+-Relocated cyberdemon location for easy playthrough of MAP72
+-Fixed lockdown locations on MAP75 so co-op players won't be locked out
+-Raised Icon of Sin's location so it can be destroyed with any weapon
+-MAP76 now has a secret exit
+-All-new MAP77
+-Added new text screens for Doom Core and Eternally Yours
+-New graphics for text screens and a new BOSSBACK for Eternally Yours
+-Uses Reverie's HUD graphic throughout
+
+==========================
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format.
+If you do so, you must give appropriate credit, provide a link to the
+license, and indicate if changes were made. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or your
+use. You may not use the material for commercial purposes. If you remix,
+transform, or build upon the material, you may not distribute the modified
+material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

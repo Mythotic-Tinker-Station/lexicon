@@ -1,0 +1,115 @@
+Texture "RCLM0024", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S0", 15, 18
+	Patch "RCLM0200", 64, 0
+	Patch "RCLM0201", 81, 20
+}
+Texture "RCLM0030", 128, 72
+{
+	Patch "W13_1", 0, 0
+	Patch "SW1S1", 15, 18
+	Patch "RCLM0200", 64, 0
+	Patch "RCLM0202", 81, 20
+}
+Texture "RCLM0056", 512, 128
+{
+	Patch "RCLM0177", 0, 0
+	Patch "RCLM0178", 256, 0
+	Patch "RCLM0179", 320, 0
+	Patch "RCLM0180", 384, 0
+	Patch "RCLM0181", 448, 0
+}
+Texture "RCLM0057", 512, 128
+{
+	Patch "RCLM0182", 0, 0
+	Patch "RCLM0179", 256, 0
+	Patch "RCLM0180", 320, 0
+	Patch "RCLM0181", 384, 0
+	Patch "RCLM0178", 448, 0
+}
+Texture "RCLM0058", 512, 128
+{
+	Patch "RCLM0183", 0, 0
+	Patch "RCLM0180", 256, 0
+	Patch "RCLM0181", 320, 0
+	Patch "RCLM0178", 384, 0
+	Patch "RCLM0179", 448, 0
+}
+Texture "RCLM0059", 512, 128
+{
+	Patch "RCLM0184", 0, 0
+	Patch "RCLM0181", 256, 0
+	Patch "RCLM0178", 320, 0
+	Patch "RCLM0179", 384, 0
+	Patch "RCLM0180", 448, 0
+}
+Texture "RCLM0070", 128, 128
+{
+	Patch "RCLM0195", 0, 0
+	Patch "RCLM0196", 21, 44
+}
+Texture "RCLM0071", 128, 128
+{
+	Patch "RCLM0197", 0, 0
+	Patch "RCLM0196", 21, 44
+}
+Texture "RCLM0072", 128, 128
+{
+	Patch "RCLM0198", 0, 0
+	Patch "RCLM0196", 21, 44
+}
+Texture "RCLM0083", 128, 128
+{
+	Patch "RCLM0212", 0, 0
+	Patch "RCLM0212", 64, 0
+}
+Texture "RCLM0084", 128, 128
+{
+	Patch "RCLM0213", 0, 0
+	Patch "RCLM0213", 64, 0
+}
+Texture "RCLM0085", 128, 128
+{
+	Patch "RCLM0214", 0, 0
+	Patch "RCLM0214", 64, 0
+}
+Texture "RCLM0086", 128, 128
+{
+	Patch "RCLM0215", 0, 0
+	Patch "RCLM0215", 64, 0
+}
+Texture "RCLM0089", 64, 16
+{
+	Patch "RCLM0218", 0, 0
+}
+Texture "RCLM0101", 64, 64
+{
+	Patch "RCLM0092", 0, 0
+	Patch "RCLM0230", 0, 0
+}
+Texture "RCLM0102", 64, 64
+{
+	Patch "RCLM0092", 0, 0
+	Patch "RCLM0231", 0, 0
+}
+Texture "RCLM0103", 64, 64
+{
+	Patch "RCLM0092", 0, 0
+	Patch "RCLM0232", 16, 16
+}
+Texture "RCLM0104", 64, 64
+{
+	Patch "RCLM0092", 0, 0
+	Patch "RCLM0233", 16, 16
+}
+Texture "RCLM0135", 32, 16
+{
+	Patch "RCLM0264", 0, 0
+	Patch "RCLM0265", 16, 0
+}
+Texture "RCLM0136", 32, 16
+{
+	Patch "RCLM0266", 0, 0
+	Patch "RCLM0267", 16, 0
+}

@@ -1,0 +1,267 @@
+// DWANGO 20th Anniversary Edition Mapinfo
+
+defaultmap
+{
+	ExitPic = "DW20INT"
+	EnterPic = "DW20INT"
+	InterMusic = "D_DW20IN"
+	NoJump
+	NoCrouch
+}
+
+map DW2001 "Revamp"
+{
+	Next = "DW2002"
+	SecretNext = "DW2002"
+	Sky1 = "DW200009"
+	Music = "D_DW2001"
+}
+
+map DW2002 "Point Blank 4"
+{
+	Next = "DW2003"
+	SecretNext = "DW2003"
+	Sky1 = "DW200009"
+	Music = "D_DW2002"
+}
+
+map DW2003 "Prophet2"
+{
+	Next = "DW2004"
+	SecretNext = "DW2004"
+	Sky1 = "DW200009"
+	Music = "D_DW2003"
+}
+
+map DW2004 "HOOKED.WAD MAP04"
+{
+	Next = "DW2005"
+	SecretNext = "DW2005"
+	Sky1 = "DW200009"
+	Music = "D_DW2004"
+}
+
+map DW2005 "HOOKED.WAD MAP02"
+{
+	Next = "DW2006"
+	SecretNext = "DW2006"
+	Sky1 = "DW200009"
+	Music = "D_DW2005"
+}
+
+map DW2006 "Rat in a Cage"
+{
+	Next = "DW2007"
+	SecretNext = "DW2007"
+	Sky1 = "DW200009"
+	Music = "D_DW2006"
+}
+
+map DW2007 "DAMNATION ALLEY II"
+{
+	Next = "DW2008"
+	SecretNext = "DW2008"
+	Sky1 = "DW200009"
+	Music = "D_DW2007"
+}
+
+map DW2008 "Giggler3"
+{
+	Next = "DW2009"
+	SecretNext = "DW2009"
+	Sky1 = "DW200009"
+	Music = "D_DW2008"
+}
+
+map DW2009 "Pud Whacker!! MAP12"
+{
+	Next = "DW2010"
+	SecretNext = "DW2010"
+	Sky1 = "DW200009"
+	Music = "D_DW2009"
+}
+
+map DW2010 "Prophet4"
+{
+	Next = "DW2011"
+	SecretNext = "DW2011"
+	Sky1 = "DW200009"
+	Music = "D_DW2010"
+}
+
+map DW2011 "SPOTLITE"
+{
+	Next = "DW2012"
+	SecretNext = "DW2012"
+	Sky1 = "DW200009"
+	Music = "D_DW2011"
+}
+
+map DW2012 "Thrill Me"
+{
+	Next = "DW2013"
+	SecretNext = "DW2013"
+	Sky1 = "DW200010"
+	Music = "D_DW2012"
+}
+
+map DW2013 "gsxr_13.wad"
+{
+	Next = "DW2014"
+	SecretNext = "DW2014"
+	Sky1 = "DW200010"
+	Music = "D_DW2013"
+}
+
+map DW2014 "QUAD KILL MAP15"
+{
+	Next = "DW2015"
+	SecretNext = "DW2015"
+	Sky1 = "DW200010"
+	Music = "D_DW2014"
+}
+
+map DW2015 "Death Mirror"
+{
+	Next = "DW2016"
+	SecretNext = "DW2031"
+	Sky1 = "DW200010"
+	Music = "D_DW2015"
+}
+
+map DW2016 "Brutal Deathmatch"
+{
+	Next = "DW2017"
+	SecretNext = "DW2017"
+	Sky1 = "DW200010"
+	Music = "D_DW2016"
+}
+
+map DW2017 "Giggler5"
+{
+	Next = "DW2018"
+	SecretNext = "DW2018"
+	Sky1 = "DW200010"
+	Music = "D_DW2017"
+}
+
+map DW2018 "The Pillars"
+{
+	Next = "DW2019"
+	SecretNext = "DW2019"
+	Sky1 = "DW200010"
+	Music = "D_DW2018"
+}
+
+map DW2019 "HARMONY.WAD"
+{
+	Next = "DW2020"
+	SecretNext = "DW2020"
+	Sky1 = "DW200010"
+	Music = "D_DW2019"
+}
+
+map DW2020 "Cloverleaf"
+{
+	Next = "DW2021"
+	SecretNext = "DW2021"
+	Sky1 = "DW200010"
+	Music = "D_DW2020"
+}
+
+map DW2021 "If we lost an eye..."
+{
+	Next = "DW2022"
+	SecretNext = "DW2022"
+	Sky1 = "DW200011"
+	Music = "D_DW2021"
+}
+
+map DW2022 "PiGMaN 1"
+{
+	Next = "DW2023"
+	SecretNext = "DW2023"
+	Sky1 = "DW200011"
+	Music = "D_DW2022"
+}
+
+map DW2023 "MerDoom II"
+{
+	Next = "DW2024"
+	SecretNext = "DW2024"
+	Sky1 = "DW200011"
+	Music = "D_DW2023"
+}
+
+map DW2024 "Pud Whacker!! MAP09"
+{
+	Next = "DW2025"
+	SecretNext = "DW2025"
+	Sky1 = "DW200011"
+	Music = "D_DW2024"
+}
+
+map DW2025 "HOOKED.WAD MAP05"
+{
+	Next = "DW2026"
+	SecretNext = "DW2026"
+	Sky1 = "DW200011"
+	Music = "D_DW2025"
+}
+
+map DW2026 "ANKLBITE.WAD"
+{
+	Next = "DW2027"
+	SecretNext = "DW2027"
+	Sky1 = "DW200011"
+	Music = "D_DW2026"
+}
+
+map DW2027 "The Iron Cross"
+{
+	Next = "DW2028"
+	SecretNext = "DW2028"
+	Sky1 = "DW200011"
+	Music = "D_DW2027"
+}
+
+map DW2028 "Unknown"
+{
+	Next = "DW2029"
+	SecretNext = "DW2029"
+	Sky1 = "DW200011"
+	Music = "D_DW2028"
+}
+
+map DW2029 "CHURCH of DOOM ]["
+{
+	Next = "DW2030"
+	SecretNext = "DW2030"
+	Sky1 = "DW200011"
+	Music = "D_DW2029"
+}
+
+map DW2030 "Death by Cyberdemon"
+{
+	next = "VR"
+	sucktime = 1337
+	Secretnext = "VR"
+	Sky1 = "DW200011"
+	Music = "D_DW2030"
+}
+
+map DW2031 "Football"
+{
+	Next = "DW2016"
+	SecretNext = "DW2032"
+	Sky1 = "DW200011"
+	Music = "D_DW2031"
+}
+
+map DW2032 "After Life - no rest for the wicked"
+{
+	Next = "DW2016"
+	SecretNext = "DW2016"
+	Sky1 = "DW200011"
+	Music = "D_DW2032"
+}

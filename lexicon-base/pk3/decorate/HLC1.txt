@@ -1,0 +1,107 @@
+Actor Lexicon_HLC1_CommanderKeen : CommanderKeen
+{
+	PainSound "HLC1/DSKEENPN"
+	DeathSound "HLC1/DSKEENDT"
+	States
+	{
+	Pain:
+		KEEN M 4 
+	State_777:
+		KEEN M 158 A_Pain
+		goto State_777
+	Death:
+		KEEN AB 6 
+	State_766:
+		KEEN C 124 A_Scream
+		goto State_766
+	}
+}
+
+Actor Lexicon_HLC1_Meat4 : Meat4
+{
+	-SOLID
+	+NOSECTOR
+	+AMBUSH
+	-SPAWNCEILING
+	-NOGRAVITY
+	+NOCLIP
+	PainSound "HLC1/DSFLAMST"
+	States
+	{
+	Spawn:
+		KEEN M 158 A_Pain
+		loop
+	Death:
+		KEEN M 158 A_Pain
+		loop
+	}
+}
+
+Actor Lexicon_HLC1_Meat5 : Meat5
+{
+	-SOLID
+	+NOSECTOR
+	+AMBUSH
+	-SPAWNCEILING
+	-NOGRAVITY
+	+NOCLIP
+	DeathSound "HLC1/DSKEENDT"
+	States
+	{
+	Spawn:
+		KEEN C 124 A_Scream
+		loop
+	Death:
+		KEEN C 124 A_Scream
+		loop
+	}
+}
+
+Actor Lexicon_HLC1_NonsolidMeat5 : NonsolidMeat5
+{
+	+NOSECTOR
+	-SPAWNCEILING
+	-NOGRAVITY
+	+NOCLIP
+	SeeSound "HLC1/DSKEENPN"
+	ActiveSound "HLC1/DSKEENPN"
+	States
+	{
+	Spawn:
+		TROO AB 10 A_Look
+		loop
+	See:
+		TROO AABBCCDD 3 A_Chase
+		loop
+	}
+}
+
+Actor Lexicon_HLC1_Archvile : Archvile
+{
+	States
+	{
+	Missile:
+		VILE G 0 BRIGHT A_VileStart
+		VILE G 10 BRIGHT A_FaceTarget 
+		VILE H 8 BRIGHT A_VileTarget("Lexicon_HLC1_ArchvileFire")
+		VILE IJKLMN 8 BRIGHT A_FaceTarget 
+		VILE O 8 BRIGHT A_VileAttack
+		VILE P 20 BRIGHT
+		Goto See
+	}
+}
+
+Actor Lexicon_HLC1_ArchvileFire : ArchvileFire
+{
+	States
+	{
+	Spawn:
+		FIRE A 2 BRIGHT A_PlaySound("HLC1/DSFLAMST", CHAN_BODY)
+		FIRE BAB 2 BRIGHT A_Fire
+		FIRE C 2 BRIGHT A_FireCrackle
+		FIRE BCBCDCDCDEDED 2 BRIGHT A_Fire
+		FIRE E 2 BRIGHT A_FireCrackle
+		FIRE FEFEFGHGHGH 2 BRIGHT A_Fire
+		Stop
+	}
+}

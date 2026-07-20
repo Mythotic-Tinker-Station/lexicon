@@ -1,0 +1,9 @@
+ACTOR Lexicon_D2RL_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("D2RL/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		Goto Super::See+1
+	}
+}

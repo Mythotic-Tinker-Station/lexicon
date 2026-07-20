@@ -1,0 +1,326 @@
+WallTexture "PDGT0051", 64, 128
+{
+	Patch "PDGT0216", 0, 0
+	Patch "PDGT0216", 0, 64
+}
+
+WallTexture "PDGT0078", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0244", 10, 18
+}
+
+WallTexture "PDGT0079", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0245", 10, 18
+}
+
+WallTexture "PDGT0080", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0246", 10, 18
+}
+
+WallTexture "PDGT0088", 16, 128
+{
+	Patch "PDGT0254", 0, 0
+	Patch "PDGT0254", 0, 8
+	Patch "PDGT0254", 0, 16
+	Patch "PDGT0254", 0, 24
+	Patch "PDGT0254", 0, 32
+	Patch "PDGT0254", 0, 40
+	Patch "PDGT0254", 0, 48
+	Patch "PDGT0254", 0, 56
+	Patch "PDGT0254", 0, 64
+	Patch "PDGT0254", 0, 72
+	Patch "PDGT0254", 0, 80
+	Patch "PDGT0254", 0, 88
+	Patch "PDGT0254", 0, 96
+	Patch "PDGT0254", 0, 104
+	Patch "PDGT0254", 0, 112
+	Patch "PDGT0254", 0, 120
+}
+
+WallTexture "PDGT0094", 1024, 128
+{
+	Patch "PDGT0260", 0, 0
+	Patch "PDGT0261", 256, 0
+	Patch "PDGT0262", 512, 0
+	Patch "PDGT0263", 768, 0
+}
+
+WallTexture "PDGT0095", 1024, 128
+{
+	Patch "PDGT0264", 0, 0
+	Patch "PDGT0265", 256, 0
+	Patch "PDGT0266", 512, 0
+	Patch "PDGT0267", 768, 0
+}
+
+WallTexture "PDGT0096", 1024, 128
+{
+	Patch "PDGT0268", 0, 0
+	Patch "PDGT0269", 256, 0
+	Patch "PDGT0270", 512, 0
+	Patch "PDGT0271", 768, 0
+}
+
+WallTexture "PDGT0105", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL42_5", 11, 62
+	Patch "PDGT0087", 64, 0
+	Patch "PDGT0280", 80, 64
+	Patch "PDGT0087", 128, 0
+	Patch "PDGT0281", 144, 64
+	Patch "PDGT0087", 192, 0
+	Patch "PDGT0282", 208, 72
+}
+
+WallTexture "PDGT0106", 256, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "SW2_7", 14, 64
+	Patch "PDGT0173", 64, 0
+	Patch "SW2S0", 80, 66
+	Patch "PDGT0173", 128, 0
+	Patch "SW3S0", 144, 66
+	Patch "PDGT0173", 192, 0
+	Patch "PDGT0284", 208, 64
+}
+
+WallTexture "PDGT0107", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+	Patch "PDGT0119", 128, 0
+	Patch "PDGT0119", 192, 0
+	Patch "PDGT0286", 176, 72
+}
+
+WallTexture "PDGT0108", 128, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "SW4S0", 20, 79
+	Patch "RW37_2", 64, 0
+	Patch "PDGT0287", 80, 72
+}
+
+WallTexture "PDGT0109", 256, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "WALL47_4", 11, 62
+	Patch "PDGT0087", 64, 0
+	Patch "PDGT0288", 80, 64
+	Patch "PDGT0087", 128, 0
+	Patch "PDGT0289", 144, 64
+	Patch "PDGT0087", 192, 0
+	Patch "PDGT0290", 208, 72
+}
+
+WallTexture "PDGT0110", 256, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "SW2_8", 14, 64
+	Patch "PDGT0173", 64, 0
+	Patch "SW2S1", 80, 66
+	Patch "PDGT0173", 128, 0
+	Patch "SW3S1", 144, 66
+	Patch "PDGT0173", 192, 0
+	Patch "PDGT0290", 208, 64
+}
+
+WallTexture "PDGT0111", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+	Patch "PDGT0119", 128, 0
+	Patch "PDGT0119", 192, 0
+	Patch "PDGT0291", 176, 72
+}
+
+WallTexture "PDGT0112", 128, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "SW4S1", 20, 79
+	Patch "RW37_2", 64, 0
+	Patch "PDGT0292", 80, 72
+}
+
+WallTexture "PDGT0113", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0293", 10, 18
+}
+
+WallTexture "PDGT0115", 64, 128
+{
+	Patch "PDGT0295", 0, 0
+	Patch "PDGT0296", 0, 0
+}
+
+WallTexture "PDGT0136", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0316", 10, 18
+}
+
+WallTexture "PDGT0137", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0317", 10, 18
+}
+
+WallTexture "PDGT0138", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0318", 10, 18
+}
+
+WallTexture "PDGT0139", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0319", 10, 18
+}
+
+WallTexture "PDGT0140", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0320", 10, 18
+}
+
+WallTexture "PDGT0141", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0321", 10, 18
+}
+
+WallTexture "PDGT0142", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0322", 10, 18
+}
+
+WallTexture "PDGT0143", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0323", 10, 18
+}
+
+WallTexture "PDGT0144", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0324", 10, 18
+}
+
+WallTexture "PDGT0145", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0325", 10, 18
+}
+
+WallTexture "PDGT0146", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0326", 10, 18
+}
+
+WallTexture "PDGT0147", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0327", 10, 18
+}
+
+WallTexture "PDGT0148", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0328", 10, 18
+}
+
+WallTexture "PDGT0149", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0329", 10, 18
+}
+
+WallTexture "PDGT0150", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0330", 10, 18
+}
+
+WallTexture "PDGT0151", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0331", 10, 18
+}
+
+WallTexture "PDGT0152", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0332", 10, 18
+}
+
+WallTexture "PDGT0153", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0333", 10, 18
+}
+
+WallTexture "PDGT0192", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0371", 10, 18
+}
+
+WallTexture "PDGT0193", 64, 64
+{
+	Patch "PDGT0243", 0, 0
+	Patch "PDGT0372", 10, 18
+}
+
+WallTexture "PDGT0209", 256, 128
+{
+	Patch "PDGT0388", 0, 0
+	Patch "PDGT0243", 64, 0
+	Patch "PDGT0389", 74, 18
+	Patch "PDGT0243", 128, 0
+	Patch "PDGT0390", 138, 18
+	Patch "PDGT0243", 192, 0
+	Patch "PDGT0391", 202, 18
+}
+
+WallTexture "PDGT0210", 256, 128
+{
+	Patch "PDGT0392", 0, 0
+	Patch "PDGT0243", 64, 0
+	Patch "PDGT0393", 74, 18
+	Patch "PDGT0243", 128, 0
+	Patch "PDGT0394", 138, 18
+	Patch "PDGT0243", 192, 0
+	Patch "PDGT0395", 202, 18
+}
+
+WallTexture "PDGT0211", 256, 128
+{
+	Patch "PDGT0396", 0, 0
+	Patch "PDGT0243", 64, 0
+	Patch "PDGT0397", 74, 18
+	Patch "PDGT0243", 128, 0
+	Patch "PDGT0398", 138, 18
+	Patch "PDGT0243", 192, 0
+	Patch "PDGT0399", 202, 18
+}
+
+WallTexture "PDGT0212", 256, 128
+{
+	Patch "PDGT0400", 0, 0
+	Patch "PDGT0243", 64, 0
+	Patch "PDGT0401", 74, 18
+	Patch "PDGT0243", 128, 0
+	Patch "PDGT0402", 138, 18
+	Patch "PDGT0243", 192, 0
+	Patch "PDGT0403", 202, 18
+}
+

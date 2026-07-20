@@ -1,0 +1,291 @@
+Texture "SLRS0060", 128, 128
+{
+	Patch "W105_1", -5, 0
+	Patch "W105_1", 123, 0
+}
+Texture "SLRS0071", 128, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+	Patch "WALL62_2", 64, 0
+}
+Texture "SLRS0072", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "SLRS0085", 64, 128
+{
+	Patch "GCRATEL1", 0, 0
+	Patch "GCRATER1", 32, 0
+	Patch "BCRATEL1", 0, 64
+	Patch "BCRATER1", 32, 64
+}
+Texture "SLRS0102", 128, 128
+{
+	Patch "WALL04_3", 0, 0
+	Patch "WALL04_4", 16, 0
+	Patch "WALL04_5", 32, 0
+	Patch "WALL04_2", 48, 0
+	Patch "NUKEDGE", 0, 104
+	Patch "WALL04_3", 0, 33
+	Patch "WALL04_4", 16, 33
+	Patch "WALL04_5", 32, 33
+	Patch "WALL04_2", 48, 33
+	Patch "PS20A0", 0, 69
+	Patch "WALL04_2", 64, 0
+	Patch "WALL04_3", 80, 0
+	Patch "WALL04_4", 112, 0
+	Patch "WALL04_7", 96, 0
+	Patch "WALL04_2", 112, 72
+	Patch "WALL04_3", 96, 72
+	Patch "WALL04_4", 80, 72
+	Patch "WALL04_5", 64, 64
+	Patch "NUKEDGE", 64, 105
+}
+Texture "SLRS0126", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 64, 0
+	Patch "W13_1", 0, 56
+	Patch "CYL1_1", 0, 0
+}
+Texture "SLRS0144", 32, 16
+{
+	Patch "STEP05", 0, 8
+	Patch "STEP05", 0, 5
+	Patch "STEP04", 0, 0
+}
+Texture "SLRS0145", 32, 16
+{
+	Patch "SW11_4", 0, -112
+	Patch "STEP03", 0, 0
+}
+Texture "SLRS0146", 32, 16
+{
+	Patch "STEP05", 0, 0
+	Patch "STEP05", 0, 8
+}
+Texture "SLRS0147", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP08", 0, 8
+}
+Texture "SLRS0153", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_7", 14, 66
+	Patch "SLRS0058", 64, 0
+	Patch "SW1S0", 80, 72
+}
+Texture "SLRS0154", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "SLRS0155", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "SLRS0156", 256, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S0", 20, 68
+	Patch "MWALL1_1", 64, 0
+	Patch "SW2_7", 77, 55
+	Patch "SLRS0088", 128, 0
+	Patch "SW1S0", 144, 20
+	Patch "SLRS0098", 192, 0
+	Patch "SW4S0", 212, 80
+}
+Texture "SLRS0157", 128, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "SW2_5", 0, 59
+	Patch "SLRS0327", 64, 0
+}
+Texture "SLRS0158", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "SLRS0159", 128, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+	Patch "SLRS0150", 64, 0
+	Patch "SW2S0", 80, 72
+}
+Texture "SLRS0160", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "SLRS0161", 128, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW1S0", 16, 72
+	Patch "SLRS0183", 64, 0
+	Patch "SW4S0", 84, 79
+}
+Texture "SLRS0162", 128, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+	Patch "SW1S1", 16, 72
+	Patch "SLRS0183", 64, 0
+	Patch "SW4S1", 84, 79
+}
+Texture "SLRS0163", 128, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "SW4S0", 20, 84
+	Patch "SLRS0200", 64, 0
+	Patch "EXIT2", 88, 48
+	Patch "EXIT2", 96, 64
+	Patch "EXIT2", 96, 48
+	Patch "EXIT2", 88, 64
+	Patch "W108_2", 88, 52
+	Patch "EXIT2", 104, 48
+	Patch "EXIT2", 104, 64
+	Patch "EXIT2", 80, 48
+	Patch "EXIT2", 80, 64
+}
+Texture "SLRS0164", 128, 128
+{
+	Patch "WALL00_1", 0, -16
+	Patch "W106_1", 0, 0
+	Patch "SW4S1", 20, 84
+	Patch "SLRS0200", 64, 0
+	Patch "EXIT2", 88, 48
+	Patch "EXIT2", 96, 64
+	Patch "EXIT2", 96, 48
+	Patch "EXIT2", 88, 64
+	Patch "W108_3", 88, 52
+	Patch "EXIT2", 104, 48
+	Patch "EXIT2", 104, 64
+	Patch "EXIT2", 80, 48
+	Patch "EXIT2", 80, 64
+}
+Texture "SLRS0165", 256, 128
+{
+	Patch "WALL40_2", -64, 0
+	Patch "SW2_7", 14, 66
+	Patch "SLRS0107", 64, 0
+	Patch "SW2_7", 78, 64
+	Patch "SLRS0205", 128, 0
+	Patch "SW2_7", 144, 66
+	Patch "SLRS0296", 192, 0
+	Patch "SW2_7", 206, 66
+}
+Texture "SLRS0166", 256, 128
+{
+	Patch "WALL40_2", -64, 0
+	Patch "SW2_8", 14, 66
+	Patch "SLRS0107", 64, 0
+	Patch "SW2_8", 78, 64
+	Patch "SLRS0205", 128, 0
+	Patch "SW2_8", 144, 66
+	Patch "SLRS0296", 192, 0
+	Patch "SW2_8", 206, 66
+}
+Texture "SLRS0167", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_8", 14, 66
+	Patch "SLRS0058", 64, 0
+	Patch "SW1S1", 80, 72
+}
+Texture "SLRS0168", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "SLRS0169", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "SLRS0170", 256, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S1", 20, 68
+	Patch "MWALL1_1", 64, 0
+	Patch "SW2_8", 77, 55
+	Patch "SLRS0088", 128, 0
+	Patch "SW1S1", 144, 20
+	Patch "SLRS0098", 192, 0
+	Patch "SW4S1", 212, 80
+}
+Texture "SLRS0171", 128, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "SW2_6", 0, 59
+	Patch "SLRS0331", 64, 0
+}
+Texture "SLRS0172", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "SLRS0173", 128, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+	Patch "SLRS0150", 64, 0
+	Patch "SW2S1", 80, 72
+}
+Texture "SLRS0174", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "SLRS0180", 128, 128
+{
+	Patch "SLRS0337", 0, 0
+	Patch "SLRS0338", 64, 0
+}
+Texture "SLRS0189", 256, 128
+{
+	Patch "SLRS0346", 0, 0
+	Patch "SLRS0347", 128, 0
+	Patch "SLRS0348", 64, 0
+	Patch "SLRS0349", 192, 0
+}
+Texture "SLRS0223", 64, 64
+{
+	Patch "SLRS0143", 0, 0
+}

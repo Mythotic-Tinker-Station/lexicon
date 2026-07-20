@@ -1,0 +1,94 @@
+Actor Lexicon_NDC2_CommanderKeen : CommanderKeen
+{
+	Height 56
+	PainChance 200
+	Mass 100
+	-SPAWNCEILING
+	-NOGRAVITY
+	SeeSound "grunt/sight"
+	AttackSound "weapons/shotgf"
+	PainSound "demon/pain"
+	DeathSound "grunt/death"
+	Obituary "$NDC2_OB_GUNNER"
+	Tag "$NDC2_TAG_GUNNER"
+	States
+	{
+	Spawn:
+		LX64 AA 10 A_Look
+		goto Spawn
+	See:
+		LX64 A 3 A_FaceTarget
+		LX64 B 2 Bright A_CPosAttack
+		LX64 A 1 A_CPosRefire
+		loop
+	Pain:
+		LX64 C 3
+		LX64 D 3 A_Pain
+		goto Spawn
+	Missile:
+		LX64 A 3 A_FaceTarget
+		LX64 B 2 Bright A_CPosAttack
+		LX64 A 1 A_CPosRefire
+		goto See
+	Death:
+		LX64 C 10
+		LX64 E 10 
+		LX64 F 10 A_Scream
+		LX64 GHI 10
+		LX64 I 0 A_KeenDie
+		LX64 I -1 
+		stop
+	}
+}
+
+Actor Lexicon_NDC2_WolfensteinSS : WolfensteinSS
+{
+	Health 150
+	Speed 30
+	Radius 31
+	PainChance 128
+	Mass 400
+	+DROPOFF
+	+SKULLFLY
+	AttackSound "NDC2/DSKEENPN"
+	PainSound "NDC2/DSKEENDT"
+	ActiveSound "NDC2/DSKEENPN"
+	DeathSound "NDC2/DSKEENDT"
+	Obituary "$NDC2_OB_CACOSPLODE"
+	Tag "$NDC2_TAG_CACOSPLODE"
+	States
+	{
+	Spawn:
+		LX64 J 5 A_Look
+		LX64 K 4 A_Look
+		loop
+	See:
+		LX64 JJKKLL 3 A_Chase
+		LX64 MM 3 Bright A_Chase
+		loop
+	Pain:
+		LX64 N 5 Bright 
+		LX64 O 3 Bright A_Pain
+		goto See
+	Melee:
+		LX64 Q 3 Bright A_Explode
+		MISL B 8 Bright A_Explode
+		MISL C 6 Bright 
+		MISL D 4 Bright 
+		stop
+	Death:
+	XDeath:
+		LX64 P 5 Bright 
+		LX64 Q 5 Bright A_Scream
+		MISL B 8 Bright A_Explode
+		MISL C 6 Bright 
+		MISL D 4 Bright 
+		stop
+	Missile:
+		TROO A -1 
+		stop
+	Raise:
+		TROO A -1 
+		stop
+	}
+}

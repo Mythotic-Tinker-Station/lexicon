@@ -1,0 +1,148 @@
+Texture "LSCV0620", 128, 96
+{
+	Patch "W13_1", 0, 0
+	Patch "W13_1", 0, 24
+	Patch "LSCV2620", 17, 0
+	Patch "W13_1", 113, 0
+	Patch "W13_1", 113, 25
+}
+Texture "LSCV0622", 32, 128
+{
+	Patch "LSCV1642", 0, 0
+}
+Texture "LSCV0623", 32, 128
+{
+	Patch "LSCV1643", 0, 0
+}
+Texture "LSCV0624", 32, 128
+{
+	Patch "LSCV1644", 0, 0
+}
+Texture "LSCV0625", 32, 128
+{
+	Patch "LSCV1645", 0, 0
+}
+Texture "LSCV0626", 32, 128
+{
+	Patch "LSCV2626", 0, 0
+	Patch "LSCV2626", 0, 64
+}
+Texture "LSCV0627", 128, 128
+{
+	Patch "LSCV2602", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "LSCV0628", 128, 128
+{
+	Patch "LSCV2603", 0, 0
+	Patch "AG128_2", 0, 72
+	Patch "AG128_2", 64, 72
+}
+Texture "LSCV0629", 256, 128
+{
+	Patch "LSCV2628", 32, 0
+	Patch "LSCV2630", 96, 0
+	Patch "LSCV2627", 160, 0
+	Patch "LSCV2103", 0, 64
+	Patch "LSCV2629", 64, 64
+	Patch "COMP04_2", 128, 64
+	Patch "LSCV2625", 192, 0
+	Patch "COMP04_1", 192, 64
+	Patch "LSCV2627", 0, 0
+}
+Texture "LSCV0644", 64, 128
+{
+	Patch "LSCV2612", 0, 0
+}
+Texture "LSCV0650", 128, 128
+{
+	Patch "LSCV2631", 0, 64
+	Patch "LSCV2631", 64, 0
+	Patch "LSCV2632", 0, 0
+	Patch "LSCV2632", 64, 64
+}
+Texture "LSCV0651", 128, 128
+{
+	Patch "LSCV2634", 0, 0
+	Patch "LSCV2633", 0, 64
+	Patch "LSCV2634", 64, 64
+	Patch "LSCV2633", 64, 0
+}
+Texture "LSCV0652", 64, 128
+{
+	Patch "LSCV2600", 19, 72
+	Patch "LSCV2600", 19, 0
+	Patch "LSCV2600", 0, 0
+	Patch "LSCV2600", 0, 72
+	Patch "LSCV2600", 40, 0
+	Patch "LSCV2600", 40, 72
+}
+Texture "LSCV0653", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "LSCV0655", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "LSCV2624", 20, 79
+}
+Texture "LSCV0656", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "LSCV2624", 20, 80
+}
+Texture "LSCV0657", 64, 128
+{
+	Patch "LSCV2626", 0, 64
+	Patch "LSCV2628", 0, 0
+	Patch "LSCV2626", 32, 64
+	Patch "SW2S0", 16, 72
+}
+Texture "LSCV0658", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "LSCV2624", 19, 79
+}
+Texture "LSCV0665", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "LSCV2624", 20, 79
+}
+Texture "LSCV0667", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "LSCV0669", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "LSCV2623", 20, 79
+}
+Texture "LSCV0670", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "LSCV2623", 20, 80
+}
+Texture "LSCV0671", 64, 128
+{
+	Patch "LSCV2626", 0, 64
+	Patch "LSCV2628", 0, 0
+	Patch "LSCV2626", 32, 64
+	Patch "SW2S1", 16, 72
+}
+Texture "LSCV0672", 64, 128
+{
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "LSCV2623", 19, 79
+}
+Texture "LSCV0679", 64, 128
+{
+	Patch "RW37_2", 0, 0
+	Patch "LSCV2623", 20, 79
+}

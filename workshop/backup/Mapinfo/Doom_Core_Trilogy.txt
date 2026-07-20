@@ -946,6 +946,7 @@ map DCOR77 "Terrace View"
 	nojump
 	nocrouch
 	next = "VR"
+	sucktime = 1337
     secretnext = "VR"
 	music = P_E5M6
 	sky1 = DCRSKY5

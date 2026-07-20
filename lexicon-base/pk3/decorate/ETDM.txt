@@ -1,0 +1,309 @@
+Actor Lexicon_ETDM_Zombieman : Zombieman
+{
+	SeeSound "ETDM/grunt/sight"
+}
+
+Actor Lexicon_ETDM_ShotgunGuy : ShotgunGuy
+{
+	SeeSound "ETDM/grunt/sight"
+}
+
+Actor Lexicon_ETDM_ChaingunGuy : ChaingunGuy
+{
+	SeeSound "ETDM/grunt/sight"
+}
+
+Actor Lexicon_ETDM_WolfensteinSS : WolfensteinSS
+{
+	SeeSound "ETDM/DSBOSDTH"
+}
+
+Actor Lexicon_ETDM_DoomImp : DoomImp
+{
+	States
+	{
+	Spawn:
+		LX61 AB 10 A_Look
+		Loop
+	See:
+		LX61 AABBCCDD 3 A_Chase
+		Loop
+	Melee:
+	Missile:
+		LX61 EF 8 A_FaceTarget
+		LX61 G 6 A_CustomComboAttack("Lexicon_ETDM_DoomImpBall", 32, 3 * random(1, 8), "imp/melee")
+		Goto See
+	Pain:
+		LX61 H 2
+		LX61 H 2 A_Pain
+		Goto See
+	Death:
+		LX61 I 8
+		LX61 J 8 A_Scream
+		LX61 K 6
+		LX61 L 6 A_NoBlocking
+		LX61 M -1
+		Stop
+	XDeath:
+		LX61 N 5
+		LX61 O 5 A_XScream
+		LX61 P 5
+		LX61 Q 5 A_NoBlocking
+		LX61 RST 5
+		LX61 U -1
+		Stop
+	Raise:
+		LX61 MLKJI 8
+		Goto See
+	}
+}
+
+Actor Lexicon_ETDM_DoomImpBall : DoomImpBall
+{
+	States
+	{
+	Spawn:
+		LX62 QR 4 BRIGHT
+		Loop
+	Death:
+		LX62 STU 6 BRIGHT
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_RocketLauncher : DoomWeapon
+{
+	Weapon.SelectionOrder 2500
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 2
+	Weapon.AmmoType "RocketAmmo"
+	Weapon.SlotNumber 5
+	+WEAPON.NOAUTOFIRE
+	+WEAPON.CHEATNOTWEAPON
+	Inventory.PickupMessage "$GOTLAUNCHER"
+	Tag "$TAG_ROCKETLAUNCHER"
+	States
+	{
+	Ready:
+		MISG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		MISG A 1 A_Lower
+		Loop
+	Select:
+		MISG A 1 A_Raise
+		Loop
+	Fire:
+		MISG B 8 A_GunFlash
+		MISG B 12 A_FireCustomMissile("Lexicon_ETDM_Rocket")
+		MISG B 0 A_ReFire
+		Goto Ready
+	Flash:
+		MISF A 3 Bright A_Light1
+		MISF B 4 Bright
+		MISF CD 4 Bright A_Light2
+		Goto LightDone
+	Spawn:
+		LAUN A -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_Rocket : Rocket
+{
+	SeeSound "ETDM/DSRLAUNC"
+	States
+	{
+	Spawn:
+		MISL A 1 Bright
+		Loop
+	}
+}
+
+Actor Lexicon_ETDM_Cyberdemon : Cyberdemon
+{
+	States
+	{
+	Missile:
+		CYBR E 6 A_FaceTarget
+		CYBR F 12 A_CustomMissile("Lexicon_ETDM_Rocket")
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_CustomMissile("Lexicon_ETDM_Rocket")
+		CYBR E 12 A_FaceTarget
+		CYBR F 12 A_CustomMissile("Lexicon_ETDM_Rocket")
+		Goto See
+	}
+}
+
+Actor Lexicon_ETDM_BossBrain : BossBrain
+{
+	DeathSound "ETDM/DSBOSDTH"
+	States
+	{
+	Death:
+		BBRN A 0 A_BrainScream
+		BBRN A 100 A_PlaySound("ETDM/DSBOSDTH", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		BBRN AA 10
+		BBRN A -1 A_BrainDie
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_HeadOnAStick : HeadOnAStick
+{
+	States
+	{
+	Spawn:
+		LX61 W -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_HeadsOnAStick : HeadsOnAStick
+{
+	States
+	{
+	Spawn:
+		LX61 V -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX61 X -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_ShortGreenColumn : ShortGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX61 Y -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LX61 Z -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_ShortRedColumn : ShortRedColumn
+{
+	States
+	{
+	Spawn:
+		LX61 "[" -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX61 "]" -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_TorchTree : TorchTree
+{
+	States
+	{
+	Spawn:
+		LX62 A -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_Stalagtite : Stalagtite
+{
+	States
+	{
+	Spawn:
+		LX62 B -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_BloodyTwitch : BloodyTwitch
+{
+	States
+	{
+	Spawn:
+		LX62 D 10 BRIGHT
+		LX62 E 15 BRIGHT
+		LX62 F 8 BRIGHT
+		LX62 E 6 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_ETDM_NonsolidTwitch : Lexicon_ETDM_BloodyTwitch { -SOLID }
+
+Actor Lexicon_ETDM_Meat2 : Meat2
+{
+	States
+	{
+	Spawn:
+		LX62 G -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_NonsolidMeat2 : Lexicon_ETDM_Meat2 { -SOLID }
+
+Actor Lexicon_ETDM_Meat5 : Meat5
+{
+	States
+	{
+	Spawn:
+		LX62 H -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_NonsolidMeat5 : Lexicon_ETDM_Meat5 { -SOLID }
+
+Actor Lexicon_ETDM_BigTree : BigTree
+{
+	States
+	{
+	Spawn:
+		LX62 C -1
+		Stop
+	}
+}
+
+Actor Lexicon_ETDM_TechLamp : TechLamp
+{
+	States
+	{
+	Spawn:
+		LX62 IJKL 4 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_ETDM_TechLamp2 : TechLamp2
+{
+	States
+	{
+	Spawn:
+		LX62 MNOP 4 BRIGHT
+		Loop
+	}
+}

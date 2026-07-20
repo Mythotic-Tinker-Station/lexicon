@@ -1,0 +1,386 @@
+Texture "JFBG0137", 128, 128
+{
+	Patch "JFBG0502", 0, 0
+	Patch "W111_2", 0, 0
+	Patch "W111_3", 64, 64
+	Patch "W111_2", 0, 64
+	Patch "W111_3", 64, 0
+}
+Texture "JFBG0145", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 64, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "JFBG0617", 0, 0
+}
+Texture "JFBG0146", 128, 128
+{
+	Patch "JFBG0641", 0, 0
+	Patch "JFBG0641", 0, 64
+}
+Texture "JFBG0150", 128, 128
+{
+	Patch "JFBG0483", 0, -64
+	Patch "JFBG0148", 0, 64
+	Patch "SW2_2", 24, 16
+	Patch "SW2_2", 80, 16
+}
+Texture "JFBG0151", 128, 128
+{
+	Patch "JFBG0148", 0, 64
+	Patch "JFBG0483", 0, -64
+}
+Texture "JFBG0152", 256, 128
+{
+	Patch "JFBG0148", 0, 0
+	Patch "JFBG0148", 128, 0
+	Patch "JFBG0618", 0, 0
+}
+Texture "JFBG0153", 256, 128
+{
+	Patch "JFBG0483", 0, 0
+	Patch "JFBG0483", 128, 0
+	Patch "JFBG0617", 0, 0
+}
+Texture "JFBG0165", 256, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "RW1_2", 128, 0
+	Patch "RW1_2", 192, 0
+	Patch "RW1_2", 64, 0
+	Patch "JFBG0618", 0, 0
+}
+Texture "JFBG0170", 128, 128
+{
+	Patch "JFBG0514", 0, 0
+	Patch "JFBG0515", 64, 0
+	Patch "JFBG0516", 0, 64
+	Patch "JFBG0517", 64, 64
+}
+Texture "JFBG0171", 64, 128
+{
+	Patch "JFBG0583", 0, 0
+	Patch "JFBG0583", 32, 0
+	Patch "JFBG0488", 0, 64
+	Patch "JFBG0489", 32, 64
+	Patch "JFBG0595", 7, 15
+	Patch "JFBG0595", 38, 15
+	Patch "JFBG0595", 7, 47
+	Patch "JFBG0595", 38, 47
+	Patch "JFBG0505", 16, 96
+}
+Texture "JFBG0175", 64, 128
+{
+	Patch "JFBG0509", 0, 0
+	Patch "JFBG0509", 32, 0
+	Patch "JFBG0523", 0, 64
+	Patch "JFBG0525", 0, 24
+	Patch "JFBG0525", 32, 48
+	Patch "JFBG0509", 0, 40
+	Patch "JFBG0509", 32, 24
+}
+Texture "JFBG0176", 64, 128
+{
+	Patch "JFBG0524", 0, 0
+	Patch "JFBG0521", 0, 64
+	Patch "JFBG0174", 0, 32
+	Patch "JFBG0490", 0, 2
+}
+Texture "JFBG0177", 16, 128
+{
+	Patch "JFBG0620", 0, 0
+	Patch "JFBG0620", 0, 24
+	Patch "JFBG0620", 0, 48
+	Patch "JFBG0620", 0, 72
+	Patch "JFBG0620", 0, 96
+	Patch "STEP07", 0, 120
+}
+Texture "JFBG0185", 32, 128
+{
+	Patch "JFBG0535", 0, 0
+	Patch "JFBG0535", 0, 64
+}
+Texture "JFBG0200", 64, 128
+{
+	Patch "RW33_1", 0, 0
+	Patch "JFBG0491", 0, 6
+}
+Texture "JFBG0215", 128, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "RW41_1", 64, 0
+	Patch "RW9_1", 0, 0
+	Patch "RW9_1", 64, 0
+}
+Texture "JFBG0220", 128, 128
+{
+	Patch "JFBG0221", 0, 0
+	Patch "JFBG0563", 0, 0
+}
+Texture "JFBG0225", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "JFBG0230", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "JFBG0231", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "JFBG0232", 256, 128
+{
+	Patch "JFBG0542", 0, 0
+	Patch "JFBG0358", 128, 0
+	Patch "JFBG0568", 128, 64
+	Patch "JFBG0561", 128, 96
+	Patch "JFBG0603", 160, 64
+	Patch "JFBG0604", 160, 96
+	Patch "JFBG0591", 216, 0
+	Patch "JFBG0589", 192, 24
+	Patch "JFBG0593", 216, 24
+	Patch "SW4S0", 192, 0
+	Patch "JFBG0605", 192, 48
+	Patch "JFBG0506", 192, 80
+	Patch "JFBG0506", 224, 48
+	Patch "JFBG0506", 240, 0
+}
+Texture "JFBG0234", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "JFBG0235", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "JFBG0236", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "JFBG0237", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "JFBG0238", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "JFBG0239", 64, 128
+{
+	Patch "WALL00_7", 32, 0
+	Patch "WALL00_6", 16, 0
+	Patch "SW1S1", 16, 20
+	Patch "WALL00_6", 0, -16
+	Patch "WALL00_7", 48, 0
+}
+Texture "JFBG0240", 256, 128
+{
+	Patch "JFBG0506", 224, 48
+	Patch "JFBG0506", 192, 80
+	Patch "JFBG0506", 240, 0
+	Patch "JFBG0543", 0, 0
+	Patch "JFBG0359", 128, 0
+	Patch "JFBG0592", 216, 0
+	Patch "JFBG0590", 192, 24
+	Patch "JFBG0594", 216, 24
+	Patch "JFBG0569", 128, 64
+	Patch "JFBG0562", 128, 96
+	Patch "JFBG0608", 160, 64
+	Patch "JFBG0609", 160, 96
+	Patch "JFBG0606", 192, 48
+	Patch "SW4S1", 192, 0
+}
+Texture "JFBG0242", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "JFBG0243", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "JFBG0244", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "JFBG0264", 128, 112
+{
+	Patch "JFBG0645", 4, 0
+	Patch "JFBG0645", 124, 0
+	Patch "JFBG0645", -116, 0
+}
+Texture "JFBG0265", 128, 112
+{
+	Patch "JFBG0646", 4, 0
+	Patch "JFBG0646", 124, 0
+	Patch "JFBG0646", -116, 0
+}
+Texture "JFBG0266", 128, 128
+{
+	Patch "JFBG0647", -5, 0
+	Patch "JFBG0647", 123, 0
+}
+Texture "JFBG0328", 16, 128
+{
+	Patch "JFBG0620", 0, 0
+	Patch "JFBG0620", 0, 24
+	Patch "JFBG0620", 0, 48
+	Patch "JFBG0620", 0, 72
+	Patch "JFBG0620", 0, 96
+	Patch "STEP07", 0, 120
+}
+Texture "JFBG0388", 64, 128
+{
+	Patch "JFBG0779", 0, 0
+	Patch "JFBG0780", 0, 64
+}
+Texture "JFBG0393", 64, 128
+{
+	Patch "JFBG0392", 0, 0
+	Patch "JFBG0761", 0, 0
+}
+Texture "JFBG0403", 64, 128
+{
+	Patch "JFBG0402", 0, 0
+	Patch "JFBG0767", 8, 64
+}
+Texture "JFBG0405", 16, 128
+{
+	Patch "JFBG0611", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "JFBG0408", 64, 128
+{
+	Patch "AG128_2", 0, 0
+	Patch "JFBG0783", 0, 64
+}
+Texture "JFBG0409", 64, 128
+{
+	Patch "AG128_2", 0, 0
+	Patch "JFBG0784", 0, 64
+}
+Texture "JFBG0413", 32, 128
+{
+	Patch "JFBG0785", 16, 0
+	Patch "JFBG0786", 24, 0
+	Patch "JFBG0785", 16, 8
+	Patch "JFBG0786", 24, 8
+	Patch "JFBG0785", 16, 16
+	Patch "JFBG0786", 24, 16
+	Patch "JFBG0785", 16, 24
+	Patch "JFBG0786", 24, 24
+	Patch "JFBG0785", 16, 32
+	Patch "JFBG0786", 24, 32
+	Patch "JFBG0785", 16, 40
+	Patch "JFBG0786", 24, 40
+	Patch "JFBG0785", 16, 48
+	Patch "JFBG0786", 24, 48
+	Patch "JFBG0785", 16, 56
+	Patch "JFBG0786", 24, 56
+	Patch "JFBG0785", 16, 64
+	Patch "JFBG0786", 24, 64
+	Patch "JFBG0785", 16, 72
+	Patch "JFBG0786", 24, 72
+	Patch "JFBG0785", 16, 80
+	Patch "JFBG0786", 24, 80
+	Patch "JFBG0785", 16, 88
+	Patch "JFBG0786", 24, 88
+	Patch "JFBG0785", 16, 96
+	Patch "JFBG0786", 24, 96
+	Patch "JFBG0785", 16, 104
+	Patch "JFBG0786", 24, 104
+	Patch "JFBG0785", 16, 112
+	Patch "JFBG0786", 24, 112
+	Patch "JFBG0785", 16, 120
+	Patch "JFBG0786", 24, 120
+	Patch "JFBG0785", 8, 64
+	Patch "JFBG0785", 8, 72
+	Patch "JFBG0785", 8, 80
+	Patch "JFBG0785", 8, 88
+	Patch "JFBG0785", 8, 96
+	Patch "JFBG0785", 8, 104
+	Patch "JFBG0785", 8, 112
+	Patch "JFBG0785", 8, 120
+	Patch "JFBG0787", 0, 0
+	Patch "JFBG0787", 0, 120
+	Patch "JFBG0787", 0, 112
+	Patch "JFBG0787", 0, 104
+	Patch "JFBG0787", 0, 96
+	Patch "JFBG0787", 0, 88
+	Patch "JFBG0787", 0, 80
+	Patch "JFBG0787", 0, 72
+	Patch "JFBG0787", 0, 64
+	Patch "JFBG0787", 0, 56
+	Patch "JFBG0787", 0, 48
+	Patch "JFBG0787", 0, 40
+	Patch "JFBG0787", 0, 32
+	Patch "JFBG0787", 0, 24
+	Patch "JFBG0787", 0, 16
+	Patch "JFBG0787", 0, 8
+	Patch "JFBG0785", 8, 56
+	Patch "JFBG0785", 8, 48
+	Patch "JFBG0785", 8, 40
+	Patch "JFBG0785", 8, 24
+	Patch "JFBG0785", 8, 32
+	Patch "JFBG0785", 8, 16
+	Patch "JFBG0785", 8, 8
+	Patch "JFBG0785", 8, 0
+}
+Texture "JFBG0420", 64, 128
+{
+	Patch "JFBG0797", 24, 0
+	Patch "JFBG0797", 24, 64
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 40, 0
+}

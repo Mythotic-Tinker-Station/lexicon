@@ -1,0 +1,1443 @@
+Texture "NEIS0066", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "NEIS0067", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "NEIS0068", 256, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "COMP04_5", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S0", 16, 72
+	Patch "COMP03_4", 64, 64
+	Patch "COMP03_4", 96, 64
+	Patch "COMP04_6", 64, 0
+	Patch "NEIS0514", 84, 78
+	Patch "NEIS0756", 128, 0
+	Patch "NEIS0756", 192, 0
+}
+Texture "NEIS0069", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S0", 20, 68
+	Patch "NEIS0610", 64, 0
+}
+Texture "NEIS0070", 128, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "WARNB0", 24, 73
+	Patch "WLA128_1", 64, 0
+	Patch "NEIS0514", 86, 72
+}
+Texture "NEIS0071", 256, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+	Patch "SW19_4", 128, 0
+	Patch "SW19_3", 192, 0
+	Patch "NEIS0514", 181, 80
+}
+Texture "NEIS0072", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "NEIS0073", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+Texture "NEIS0074", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "NEIS0075", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "NEIS0076", 256, 128
+{
+	Patch "COMP03_4", 0, 64
+	Patch "COMP04_5", 0, 0
+	Patch "COMP03_4", 32, 64
+	Patch "SW2S1", 16, 72
+	Patch "COMP03_4", 64, 64
+	Patch "COMP03_4", 96, 64
+	Patch "COMP04_6", 64, 0
+	Patch "NEIS0515", 84, 78
+	Patch "NEIS0757", 128, 0
+	Patch "NEIS0757", 192, 0
+}
+Texture "NEIS0077", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 0, 64
+	Patch "SW4S1", 20, 68
+	Patch "NEIS0611", 64, 0
+}
+Texture "NEIS0078", 128, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "WARNA0", 24, 73
+	Patch "WLA128_1", 64, 0
+	Patch "NEIS0515", 86, 72
+}
+Texture "NEIS0079", 256, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+	Patch "SW19_3", 192, 0
+	Patch "SW19_4", 128, 0
+	Patch "NEIS0515", 181, 80
+}
+Texture "NEIS0080", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "NEIS0081", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
+}
+Texture "NEIS0082", 128, 128
+{
+	Patch "NEIS0441", 0, 0
+	Patch "NEIS0441", 96, 0
+}
+Texture "NEIS0083", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "WALL62_1", 50, 0
+	Patch "WALL62_1", -113, 0
+	Patch "NEIS0447", 32, 32
+	Patch "NEIS0447", 32, 8
+	Patch "NEIS0446", 0, 32
+	Patch "NEIS0446", 0, 8
+}
+Texture "NEIS0084", 96, 128
+{
+	Patch "NEIS0448", 0, 0
+	Patch "NEIS0449", 48, 0
+	Patch "NEIS0449", 48, 19
+	Patch "NEIS0449", 48, 56
+	Patch "NEIS0448", 0, 26
+	Patch "NEIS0448", 0, 14
+	Patch "NEIS0448", 0, 56
+	Patch "NEIS0448", 0, 42
+}
+Texture "NEIS0085", 256, 72
+{
+	Patch "NEIS0451", 80, 0
+	Patch "NEIS0450", 0, 0
+	Patch "NEIS0450", 160, 0
+	Patch "WALL00_3", 240, 0
+}
+Texture "NEIS0086", 128, 128
+{
+	Patch "NEIS0457", 0, 56
+	Patch "NEIS0457", 72, 56
+	Patch "NEIS0457", 64, 0
+	Patch "NEIS0455", 0, 0
+	Patch "NEIS0454", 16, 0
+	Patch "NEIS0453", 56, 0
+	Patch "NEIS0452", 64, 0
+	Patch "NEIS0456", 32, 0
+}
+Texture "NEIS0088", 128, 72
+{
+	Patch "NEIS0463", 0, 0
+	Patch "NEIS0463", 80, 0
+	Patch "DOORTRAK", 120, 0
+}
+Texture "NEIS0090", 128, 72
+{
+	Patch "NEIS0472", 0, 0
+	Patch "NEIS0472", 80, 0
+	Patch "DOORTRAK", 120, 0
+}
+Texture "NEIS0091", 32, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 24, 0
+	Patch "NEIS0475", 0, 0
+}
+Texture "NEIS0092", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 40, 56
+	Patch "NEIS0476", 40, 0
+	Patch "NEIS0476", 0, 0
+}
+Texture "NEIS0093", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 40, 56
+	Patch "NEIS0476", 40, 0
+	Patch "NEIS0479", 0, 0
+}
+Texture "NEIS0094", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 24, 56
+	Patch "NEIS0476", 24, 0
+	Patch "NEIS0480", 0, 0
+}
+Texture "NEIS0095", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 24, 56
+	Patch "NEIS0476", 24, 0
+	Patch "NEIS0481", 0, 0
+}
+Texture "NEIS0096", 32, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 0, 0
+	Patch "NEIS0482", 0, 0
+}
+Texture "NEIS0097", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 24, 56
+	Patch "NEIS0476", 24, 0
+	Patch "NEIS0483", 0, 0
+}
+Texture "NEIS0098", 64, 128
+{
+	Patch "NEIS0476", 0, 56
+	Patch "NEIS0476", 24, 56
+	Patch "NEIS0476", 24, 0
+	Patch "NEIS0484", 0, 0
+}
+Texture "NEIS0099", 64, 128
+{
+	Patch "NEIS0485", 0, 0
+	Patch "NEIS0486", 32, 0
+	Patch "NEIS0487", 32, 72
+	Patch "NEIS0486", 0, 72
+}
+Texture "NEIS0101", 64, 128
+{
+	Patch "NEIS0488", 0, 64
+	Patch "NEIS0490", 0, 0
+}
+Texture "NEIS0102", 256, 128
+{
+	Patch "NEIS0492", 0, 0
+	Patch "NEIS0493", 64, 0
+	Patch "NEIS0494", 128, 0
+	Patch "NEIS0491", 192, 0
+	Patch "NEIS0494", 128, 64
+	Patch "NEIS0492", 192, 64
+	Patch "NEIS0492", 64, 64
+	Patch "NEIS0495", 0, 64
+}
+Texture "NEIS0103", 256, 128
+{
+	Patch "NEIS0496", 0, 0
+	Patch "NEIS0496", 152, 0
+}
+Texture "NEIS0104", 128, 128
+{
+	Patch "WALL21_5", 64, 70
+	Patch "WALL21_1", 0, 70
+	Patch "NEIS0497", 0, 0
+	Patch "NEIS0498", 64, 0
+}
+Texture "NEIS0106", 64, 128
+{
+	Patch "NEIS0500", 42, 0
+	Patch "NEIS0500", 42, 56
+	Patch "NEIS0500", 20, 0
+	Patch "NEIS0500", 20, 56
+	Patch "NEIS0500", -2, 0
+	Patch "NEIS0500", -2, 56
+}
+Texture "NEIS0109", 64, 128
+{
+	Patch "W33_7", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "NEIS0501", 8, 14
+	Patch "NEIS0502", 8, 76
+}
+Texture "NEIS0110", 128, 96
+{
+	Patch "NEIS0503", 0, 0
+	Patch "AG128_2", 96, 0
+}
+Texture "NEIS0111", 64, 128
+{
+	Patch "NEIS0504", 0, 0
+	Patch "NEIS0504", 0, 32
+	Patch "NEIS0504", 0, 64
+	Patch "NEIS0504", 0, 96
+}
+Texture "NEIS0114", 32, 16
+{
+	Patch "NEIS0507", 0, 0
+	Patch "NEIS0507", 0, 8
+}
+Texture "NEIS0116", 32, 16
+{
+	Patch "NEIS0508", 0, 0
+	Patch "NEIS0508", 0, 8
+}
+Texture "NEIS0119", 64, 128
+{
+	Patch "NEIS0509", 0, 0
+	Patch "NEIS0509", 0, 64
+}
+Texture "NEIS0120", 64, 128
+{
+	Patch "NEIS0510", 0, 0
+	Patch "NEIS0510", 0, 64
+}
+Texture "NEIS0121", 64, 128
+{
+	Patch "NEIS0511", 0, 0
+	Patch "NEIS0511", 32, 0
+	Patch "NEIS0510", 0, 64
+}
+Texture "NEIS0123", 64, 128
+{
+	Patch "NEIS0489", 0, 0
+	Patch "NEIS0489", 0, 64
+	Patch "NEIS0516", 0, 18
+	Patch "NEIS0516", 0, 80
+}
+Texture "NEIS0124", 64, 128
+{
+	Patch "NEIS0489", 0, 0
+	Patch "NEIS0489", 0, 64
+	Patch "NEIS0517", 0, 18
+	Patch "NEIS0517", 0, 80
+}
+Texture "NEIS0125", 64, 128
+{
+	Patch "NEIS0489", 0, 0
+	Patch "NEIS0489", 0, 64
+	Patch "NEIS0518", 0, 17
+	Patch "NEIS0518", 0, 42
+	Patch "NEIS0518", 0, 81
+	Patch "NEIS0518", 0, 104
+}
+Texture "NEIS0128", 256, 128
+{
+	Patch "NEIS0522", 0, 32
+	Patch "NEIS0522", 88, 32
+	Patch "NEIS0522", 176, 32
+	Patch "NEIS0521", 0, 0
+	Patch "NEIS0521", 176, 0
+}
+Texture "NEIS0129", 128, 128
+{
+	Patch "NEIS0522", 0, 0
+	Patch "NEIS0522", 88, 0
+	Patch "NEIS0522", 88, 32
+	Patch "NEIS0522", 0, 32
+}
+Texture "NEIS0130", 32, 128
+{
+	Patch "NEIS0523", 0, 0
+	Patch "NEIS0523", 0, 64
+}
+Texture "NEIS0131", 32, 128
+{
+	Patch "NEIS0524", 0, 0
+	Patch "NEIS0524", 0, 64
+}
+Texture "NEIS0132", 16, 128
+{
+	Patch "NEIS0525", 0, 0
+	Patch "NEIS0525", 0, 64
+}
+Texture "NEIS0133", 8, 128
+{
+	Patch "NEIS0526", 0, 0
+	Patch "NEIS0526", 0, 64
+}
+Texture "NEIS0134", 64, 128
+{
+	Patch "NEIS0527", 0, 0
+	Patch "NEIS0528", 32, 0
+	Patch "NEIS0532", 0, 64
+}
+Texture "NEIS0135", 64, 128
+{
+	Patch "NEIS0532", 0, 64
+	Patch "W31_1", 0, 0
+}
+Texture "NEIS0136", 128, 128
+{
+	Patch "NEIS0532", 64, 64
+	Patch "NEIS0529", 0, 64
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 64, 0
+}
+Texture "NEIS0137", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "NEIS0532", 0, 64
+	Patch "NEIS0531", 0, 64
+	Patch "NEIS0530", 56, 64
+}
+Texture "NEIS0138", 64, 128
+{
+	Patch "NEIS0533", 0, 64
+	Patch "W33_5", 0, 0
+}
+Texture "NEIS0139", 64, 72
+{
+	Patch "NEIS0535", 0, 0
+	Patch "W33_8", 0, 64
+}
+Texture "NEIS0140", 64, 128
+{
+	Patch "NEIS0536", 4, 64
+	Patch "W31_1", 0, 0
+	Patch "NEIS0532", -60, 64
+	Patch "NEIS0532", 60, 64
+}
+Texture "NEIS0141", 64, 128
+{
+	Patch "NEIS0537", 4, 64
+	Patch "NEIS0532", -60, 64
+	Patch "NEIS0532", 60, 64
+	Patch "W33_7", 0, 0
+}
+Texture "NEIS0142", 64, 128
+{
+	Patch "NEIS0538", 0, 64
+	Patch "W33_7", 0, 0
+}
+Texture "NEIS0143", 32, 128
+{
+	Patch "NEIS0539", 0, 0
+	Patch "NEIS0539", 24, 0
+	Patch "NEIS0539", 0, 64
+	Patch "NEIS0539", 24, 64
+}
+Texture "NEIS0144", 32, 128
+{
+	Patch "NEIS0540", 0, 0
+	Patch "NEIS0540", 0, 64
+}
+Texture "NEIS0145", 128, 128
+{
+	Patch "NEIS0541", 0, 64
+	Patch "W31_1", 0, 0
+	Patch "W33_7", 64, 0
+}
+Texture "NEIS0146", 64, 128
+{
+	Patch "NEIS0542", 0, 64
+	Patch "W33_7", 0, 0
+}
+Texture "NEIS0147", 64, 128
+{
+	Patch "NEIS0543", 0, 64
+	Patch "W33_7", 0, 0
+}
+Texture "NEIS0148", 64, 128
+{
+	Patch "NEIS0544", 0, 64
+	Patch "W33_7", 0, 0
+}
+Texture "NEIS0149", 64, 128
+{
+	Patch "NEIS0545", 0, 0
+	Patch "W33_7", 0, 64
+}
+Texture "NEIS0150", 16, 128
+{
+	Patch "NEIS0560", 0, 0
+	Patch "NEIS0560", 0, 40
+	Patch "NEIS0560", 0, 80
+	Patch "NEIS0556", 0, 120
+}
+Texture "NEIS0151", 64, 128
+{
+	Patch "NEIS0561", 11, 8
+	Patch "NEIS0552", 0, 0
+	Patch "NEIS0553", 40, 0
+	Patch "NEIS0554", 48, 0
+	Patch "NEIS0555", 0, 0
+	Patch "NEIS0558", 48, 8
+	Patch "NEIS0563", 0, 8
+	Patch "NEIS0563", 0, 48
+	Patch "NEIS0562", 48, 16
+	Patch "NEIS0562", 48, 56
+	Patch "NEIS0562", 48, 88
+	Patch "NEIS0563", 0, 88
+	Patch "NEIS0565", 8, 120
+	Patch "NEIS0566", 48, 120
+	Patch "NEIS0567", 0, 120
+	Patch "NEIS0561", 13, 48
+	Patch "NEIS0561", 13, 81
+}
+Texture "NEIS0153", 128, 128
+{
+	Patch "NEIS0576", 0, 16
+	Patch "WALL00_3", 112, 0
+	Patch "NEIS0576", 0, 14
+	Patch "NEIS0576", 0, 12
+	Patch "NEIS0576", 0, 10
+	Patch "NEIS0576", 0, 8
+	Patch "NEIS0576", 0, 6
+	Patch "NEIS0576", 0, 4
+	Patch "NEIS0576", 0, 2
+	Patch "NEIS0576", 0, 0
+}
+Texture "NEIS0155", 64, 128
+{
+	Patch "NEIS0582", 0, 56
+	Patch "NEIS0580", 32, 0
+	Patch "NEIS0581", 0, 0
+}
+Texture "NEIS0156", 64, 128
+{
+	Patch "NEIS0582", 0, 56
+	Patch "NEIS0582", 0, 0
+}
+Texture "NEIS0157", 64, 128
+{
+	Patch "NEIS0582", 0, 56
+	Patch "NEIS0584", 0, 0
+	Patch "NEIS0583", 32, 0
+}
+Texture "NEIS0158", 128, 128
+{
+	Patch "NEIS0587", 0, 32
+	Patch "NEIS0587", 96, 32
+	Patch "NEIS0588", 48, 32
+	Patch "NEIS0588", 48, 0
+	Patch "NEIS0587", 0, 0
+	Patch "NEIS0587", 96, 0
+}
+Texture "NEIS0159", 128, 128
+{
+	Patch "NEIS0589", 0, 64
+	Patch "W32_4", 0, 0
+	Patch "W32_4", 64, 0
+	Patch "NEIS0569", 0, 112
+	Patch "NEIS0569", 40, 112
+	Patch "NEIS0571", 80, 112
+	Patch "NEIS0572", 0, 112
+	Patch "NEIS0523", 96, 64
+	Patch "NEIS0572", 96, 112
+	Patch "NEIS0571", 112, 112
+}
+Texture "NEIS0160", 128, 128
+{
+	Patch "NEIS0590", 0, 16
+	Patch "NEIS0572", 0, 0
+	Patch "NEIS0571", 80, 0
+	Patch "NEIS0570", 16, 0
+	Patch "NEIS0569", 24, 0
+	Patch "NEIS0569", 40, 0
+	Patch "W32_4", 0, 64
+	Patch "W32_4", 64, 64
+	Patch "W32_1", 16, 64
+	Patch "NEIS0523", 96, 0
+	Patch "NEIS0571", 112, 0
+	Patch "NEIS0572", 96, 0
+}
+Texture "NEIS0162", 64, 16
+{
+	Patch "NEIS0603", 0, 0
+	Patch "NEIS0603", 48, 0
+	Patch "NEIS0603", 32, 0
+	Patch "NEIS0603", 16, 0
+}
+Texture "NEIS0163", 32, 16
+{
+	Patch "NEIS0604", -1, 0
+}
+Texture "NEIS0169", 256, 72
+{
+	Patch "NEIS0466", 0, 0
+	Patch "NEIS0466", 160, 0
+	Patch "NEIS0464", 40, 0
+	Patch "NEIS0465", 80, 0
+	Patch "WALL00_3", 240, 0
+}
+Texture "NEIS0170", 64, 128
+{
+	Patch "NEIS0489", 0, 0
+	Patch "NEIS0489", 0, 64
+}
+Texture "NEIS0171", 64, 128
+{
+	Patch "NEIS0579", 32, 0
+	Patch "NEIS0579", 32, 56
+	Patch "NEIS0578", 0, 0
+	Patch "NEIS0578", 0, 56
+}
+Texture "NEIS0172", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL62_1", 128, 0
+	Patch "WALL62_2", -46, 0
+	Patch "NEIS0447", 0, 32
+	Patch "NEIS0447", 0, 8
+	Patch "WALL62_2", 238, 0
+	Patch "NEIS0446", 224, 32
+	Patch "NEIS0446", 224, 8
+	Patch "W106_1", 0, 0
+}
+Texture "NEIS0173", 256, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "WALL62_1", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "NEIS0174", 256, 128
+{
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 191, 56
+	Patch "WALL02_1", 214, 56
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 192, 0
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_1", 215, 0
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_2", 128, 56
+	Patch "WALL02_2", 128, 0
+	Patch "W106_1", 0, 0
+}
+Texture "NEIS0175", 128, 80
+{
+	Patch "NEIS0612", 0, 0
+	Patch "DOORTRAK", 120, 0
+}
+Texture "NEIS0176", 256, 128
+{
+	Patch "NEIS0613", 128, 0
+	Patch "NEIS0613", 0, 0
+}
+Texture "NEIS0177", 256, 128
+{
+	Patch "NEIS0613", 128, -56
+	Patch "NEIS0613", 0, -56
+}
+Texture "NEIS0178", 16, 128
+{
+	Patch "NEIS0621", 0, 56
+	Patch "NEIS0621", 0, 0
+}
+Texture "NEIS0180", 32, 72
+{
+	Patch "NEIS0615", 0, 0
+	Patch "NEIS0615", 24, 0
+}
+Texture "NEIS0181", 32, 128
+{
+	Patch "NEIS0616", 0, 55
+	Patch "NEIS0616", 24, 55
+	Patch "NEIS0616", 0, 58
+	Patch "NEIS0616", 24, 58
+	Patch "NEIS0616", 28, 58
+	Patch "NEIS0616", 0, -16
+	Patch "NEIS0616", 24, -16
+	Patch "NEIS0616", 28, -16
+}
+Texture "NEIS0182", 32, 128
+{
+	Patch "NEIS0617", 0, 56
+	Patch "NEIS0617", 0, 0
+	Patch "W13_1", 24, 56
+	Patch "W13_1", 24, 0
+}
+Texture "NEIS0183", 32, 128
+{
+	Patch "NEIS0618", 0, 56
+	Patch "NEIS0618", 0, -16
+}
+Texture "NEIS0184", 8, 128
+{
+	Patch "NEIS0619", 0, 56
+	Patch "NEIS0619", 0, 0
+}
+Texture "NEIS0185", 8, 128
+{
+	Patch "NEIS0620", 0, 0
+	Patch "NEIS0620", 0, 56
+}
+Texture "NEIS0187", 32, 128
+{
+	Patch "NEIS0623", 0, 0
+	Patch "NEIS0623", 24, 0
+	Patch "NEIS0623", 29, 0
+}
+Texture "NEIS0190", 64, 128
+{
+	Patch "NEIS0561", 24, 80
+	Patch "NEIS0561", 0, 40
+	Patch "NEIS0561", 0, 80
+	Patch "NEIS0561", 0, 88
+	Patch "NEIS0561", 24, 0
+	Patch "NEIS0561", 24, 40
+	Patch "NEIS0561", 0, 0
+	Patch "NEIS0561", 24, 88
+}
+Texture "NEIS0191", 32, 128
+{
+	Patch "NEIS0561", 0, 88
+	Patch "NEIS0561", 0, 48
+	Patch "NEIS0476", 0, 0
+	Patch "NEIS0474", 0, 0
+}
+Texture "NEIS0193", 64, 72
+{
+	Patch "NEIS0466", -16, 0
+	Patch "NEIS0466", -40, 0
+}
+Texture "NEIS0194", 64, 72
+{
+	Patch "NEIS0466", -16, 0
+	Patch "NEIS0469", 0, 0
+}
+Texture "NEIS0197", 128, 72
+{
+	Patch "NEIS0467", 33, 0
+	Patch "NEIS0464", 56, 0
+	Patch "NEIS0464", 0, 0
+	Patch "SW11_1", 96, -56
+}
+Texture "NEIS0198", 128, 128
+{
+	Patch "NEIS0586", 0, 32
+	Patch "NEIS0586", 0, -80
+	Patch "NEIS0586", 0, 16
+	Patch "NEIS0585", 48, 32
+	Patch "NEIS0585", 48, -80
+	Patch "NEIS0585", 48, 16
+	Patch "NEIS0521", 96, 32
+	Patch "NEIS0521", 96, 0
+}
+Texture "NEIS0199", 128, 96
+{
+	Patch "NEIS0594", 0, 0
+	Patch "NEIS0593", 48, 0
+	Patch "DOORTRAK", 96, -32
+	Patch "DOORTRAK", 104, -24
+	Patch "DOORTRAK", 112, -16
+	Patch "DOORTRAK", 120, -8
+}
+Texture "NEIS0201", 128, 96
+{
+	Patch "NEIS0598", 0, 0
+	Patch "NEIS0597", 48, 0
+	Patch "DOORTRAK", 96, -32
+	Patch "DOORTRAK", 104, -24
+	Patch "DOORTRAK", 112, -16
+	Patch "DOORTRAK", 120, -8
+}
+Texture "NEIS0202", 128, 88
+{
+	Patch "NEIS0599", 40, 0
+	Patch "NEIS0600", 0, 0
+	Patch "DOORTRAK", 80, -40
+	Patch "DOORTRAK", 88, -32
+	Patch "DOORTRAK", 96, -24
+	Patch "DOORTRAK", 104, -16
+	Patch "DOORTRAK", 112, -8
+	Patch "DOORTRAK", 120, 0
+}
+Texture "NEIS0204", 64, 128
+{
+	Patch "NEIS0639", 0, 48
+	Patch "NEIS0639", 0, 0
+}
+Texture "NEIS0205", 64, 128
+{
+	Patch "WALL72_7", 0, 0
+	Patch "WALL69_9", 0, 64
+	Patch "W67_2", 32, 64
+	Patch "FLAMP", 6, 0
+	Patch "FLAMP", 36, 0
+}
+Texture "NEIS0206", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0644", 17, 0
+	Patch "NEIS0642", 32, 0
+	Patch "NEIS0643", -63, 22
+	Patch "NEIS0643", 56, 22
+	Patch "NEIS0642", 32, 56
+	Patch "NEIS0644", 16, 56
+	Patch "NEIS0643", 56, 78
+	Patch "NEIS0643", -64, 78
+}
+Texture "NEIS0207", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0643", 0, 22
+	Patch "NEIS0643", -16, 78
+}
+Texture "NEIS0208", 128, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0649", 0, 76
+	Patch "NEIS0650", 0, 0
+	Patch "WALL00_1", 64, -13
+	Patch "NEIS0670", 128, 22
+	Patch "NEIS0670", 112, 33
+	Patch "NEIS0670", 96, 44
+	Patch "NEIS0670", 80, 55
+	Patch "NEIS0668", 104, 11
+	Patch "NEIS0648", 106, -61
+	Patch "NEIS0651", 65, 76
+	Patch "NEIS0654", 91, 20
+	Patch "NEIS0654", 78, 31
+	Patch "NEIS0668", 65, 44
+	Patch "NEIS0648", 67, -28
+	Patch "NEIS0648", 80, -41
+	Patch "NEIS0648", 93, -52
+}
+Texture "NEIS0209", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0647", 3, 0
+	Patch "NEIS0647", 3, 56
+}
+Texture "NEIS0210", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0643", -16, 78
+	Patch "NEIS0643", 0, 22
+}
+Texture "NEIS0211", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0643", 0, 22
+	Patch "NEIS0643", -16, 78
+	Patch "NEIS0642", 32, 0
+	Patch "NEIS0644", 16, 0
+	Patch "NEIS0644", 16, 56
+	Patch "NEIS0642", 32, 56
+}
+Texture "NEIS0212", 128, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0670", -63, 33
+	Patch "NEIS0670", -48, 44
+	Patch "NEIS0670", -32, 55
+	Patch "NEIS0657", 0, 19
+	Patch "NEIS0657", 16, 30
+	Patch "NEIS0657", 32, 41
+	Patch "NEIS0657", 48, 52
+	Patch "NEIS0657", 0, 108
+	Patch "NEIS0657", 16, 97
+	Patch "NEIS0657", 32, 86
+	Patch "NEIS0657", 48, 75
+	Patch "NEIS0670", -32, 78
+	Patch "NEIS0670", -48, 89
+	Patch "WALL57_1", 64, 0
+	Patch "NEIS0656", 64, 108
+	Patch "NEIS0656", 80, 97
+	Patch "NEIS0656", 96, 86
+	Patch "NEIS0656", 112, 75
+	Patch "NEIS0656", 112, 52
+	Patch "NEIS0656", 96, 41
+	Patch "NEIS0656", 80, 30
+	Patch "NEIS0656", 64, 19
+	Patch "NEIS0670", 80, 22
+	Patch "NEIS0670", 96, 33
+	Patch "NEIS0670", 112, 44
+	Patch "NEIS0670", 112, 89
+	Patch "NEIS0670", 96, 100
+	Patch "NEIS0670", 80, 111
+	Patch "NEIS0670", -64, 100
+}
+Texture "NEIS0213", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0653", 0, 53
+	Patch "NEIS0670", 0, 33
+	Patch "NEIS0670", -16, 44
+	Patch "NEIS0670", -16, 89
+	Patch "NEIS0670", -10, 100
+	Patch "NEIS0652", 40, 53
+	Patch "NEIS0654", 40, 65
+	Patch "NEIS0670", -16, 22
+	Patch "NEIS0655", 0, 65
+	Patch "NEIS0670", 0, 111
+}
+Texture "NEIS0214", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0670", 0, 81
+	Patch "NEIS0670", -16, 41
+	Patch "NEIS0648", 28, 0
+	Patch "NEIS0661", 19, 71
+	Patch "NEIS0662", 19, 31
+}
+Texture "NEIS0215", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0670", -16, 41
+	Patch "NEIS0670", 0, 81
+	Patch "NEIS0648", 28, 0
+	Patch "NEIS0665", 15, 29
+	Patch "NEIS0665", 15, 69
+	Patch "NEIS0648", 28, 109
+}
+Texture "NEIS0216", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0670", -16, 41
+	Patch "NEIS0670", 0, 81
+}
+Texture "NEIS0217", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+	Patch "NEIS0670", -72, 41
+	Patch "NEIS0670", -72, 81
+	Patch "NEIS0657", 8, 78
+	Patch "NEIS0657", 8, 38
+	Patch "NEIS0670", 56, 81
+	Patch "NEIS0670", 56, 41
+	Patch "NEIS0656", 40, 78
+	Patch "NEIS0656", 40, 38
+}
+Texture "NEIS0218", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "NEIS0641", 1, 17
+}
+Texture "NEIS0219", 64, 128
+{
+	Patch "W33_7", 0, 64
+	Patch "NEIS0534", 0, 0
+	Patch "NEIS0534", 8, 0
+	Patch "NEIS0534", 4, 0
+	Patch "NEIS0629", 16, 20
+}
+Texture "NEIS0220", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0626", 16, 16
+}
+Texture "NEIS0221", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0634", 16, 16
+}
+Texture "NEIS0222", 64, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "NEIS0631", 16, 16
+}
+Texture "NEIS0229", 32, 128
+{
+	Patch "NEIS0679", -28, 0
+	Patch "NEIS0679", 4, 0
+}
+Texture "NEIS0230", 128, 128
+{
+	Patch "NEIS0228", -96, 0
+	Patch "NEIS0228", -96, 64
+	Patch "COMP03_1", 32, 0
+	Patch "COMP03_1", 32, 64
+	Patch "NEIS0228", 96, 0
+	Patch "NEIS0228", 96, 64
+}
+Texture "NEIS0231", 128, 128
+{
+	Patch "W13_1", 0, 56
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, -16
+	Patch "W13_1", 64, -16
+	Patch "NEIS0682", 5, 0
+	Patch "NEIS0682", 123, 0
+	Patch "NEIS0682", 126, 0
+	Patch "NEIS0682", -113, 0
+	Patch "NEIS0682", -115, 0
+}
+Texture "NEIS0233", 128, 72
+{
+	Patch "NEIS0684", 0, 0
+	Patch "NEIS0686", 48, 0
+	Patch "NEIS0685", 100, 0
+	Patch "NEIS0685", 96, 0
+	Patch "NEIS0687", 108, 0
+	Patch "NEIS0687", 104, 0
+	Patch "NEIS0687", 112, 0
+	Patch "NEIS0685", 116, 0
+	Patch "NEIS0685", 120, 0
+	Patch "NEIS0687", 124, 0
+}
+Texture "NEIS0234", 64, 128
+{
+	Patch "NEIS0689", 0, 0
+	Patch "NEIS0688", 0, 64
+}
+Texture "NEIS0239", 128, 128
+{
+	Patch "W28_6", 0, 0
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_7", 0, 64
+	Patch "SW2_4", 0, 79
+	Patch "SW2_4", 64, 15
+}
+Texture "NEIS0240", 128, 128
+{
+	Patch "WALL48_4", 0, 0
+	Patch "WALL48_3", 64, 0
+	Patch "SW2_4", 6, 80
+	Patch "SW2_4", 70, 8
+}
+Texture "NEIS0264", 256, 128
+{
+	Patch "NEIS0716", 0, 0
+	Patch "NEIS0717", 64, 0
+	Patch "NEIS0718", 128, 0
+	Patch "NEIS0719", 192, 0
+}
+Texture "NEIS0267", 64, 128
+{
+	Patch "NEIS0747", 0, 0
+	Patch "NEIS0747", 0, 64
+}
+Texture "NEIS0312", 128, 128
+{
+	Patch "NEIS0794", 0, 0
+	Patch "NEIS0795", 64, 0
+}
+Texture "NEIS0323", 256, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "NEIS0324", 64, 128
+{
+	Patch "NEIS0806", 0, 0
+	Patch "NEIS0806", 0, 64
+}
+Texture "NEIS0326", 64, 128
+{
+	Patch "NEIS0808", 0, 0
+	Patch "NEIS0808", 0, 64
+}
+Texture "NEIS0327", 64, 128
+{
+	Patch "NEIS0810", 0, 0
+	Patch "NEIS0810", 0, 64
+}
+Texture "NEIS0335", 512, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "WALL49_2", 64, 0
+	Patch "WALL49_3", 128, 0
+	Patch "WALL49_4", 192, 0
+	Patch "WALL49_1", 256, 0
+	Patch "WALL49_2", 320, 0
+	Patch "WALL49_3", 384, 0
+	Patch "WALL49_4", 448, 0
+	Patch "NEIS0732", 114, 0
+	Patch "NEIS0731", 305, -26
+	Patch "NEIS0725", 241, 21
+	Patch "NEIS0724", 433, 46
+	Patch "NEIS0724", 433, -82
+	Patch "NEIS0731", -4, 51
+	Patch "NEIS0731", -4, -77
+	Patch "NEIS0725", 241, -107
+}
+Texture "NEIS0336", 256, 128
+{
+	Patch "WALL48_1", 0, 0
+	Patch "WALL48_2", 64, 0
+	Patch "WALL48_3", 128, 0
+	Patch "WALL48_4", 192, 0
+	Patch "NEIS0730", 0, 1
+	Patch "NEIS0728", 64, 16
+	Patch "NEIS0727", 64, 79
+	Patch "NEIS0727", 64, -1
+	Patch "NEIS0726", 128, -64
+	Patch "NEIS0728", 192, 0
+	Patch "NEIS0728", 192, 64
+	Patch "NEIS0728", 192, 51
+	Patch "NEIS0727", 192, 26
+	Patch "NEIS0726", 128, 64
+	Patch "NEIS0727", 54, 127
+}
+Texture "NEIS0339", 64, 128
+{
+	Patch "NEIS0258", 0, 0
+	Patch "NEIS0258", 0, 32
+	Patch "NEIS0258", 0, 64
+	Patch "NEIS0258", 0, 96
+}
+Texture "NEIS0350", 128, 128
+{
+	Patch "NEIS0829", 0, 0
+	Patch "NEIS0830", 64, 0
+}
+Texture "NEIS0351", 128, 128
+{
+	Patch "WALL01_2", 80, 0
+	Patch "WALL01_3", 16, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_5", 0, 56
+	Patch "WALL01_6", 16, 56
+	Patch "WALL01_7", 32, 56
+	Patch "WALL01_A", 80, 56
+	Patch "WALL01_1", 96, 0
+	Patch "WALL01_2", 32, 0
+	Patch "WALL01_3", 64, 0
+	Patch "WALL01_4", 0, 0
+	Patch "WALL01_B", 64, 56
+	Patch "WALL01_7", 96, 56
+	Patch "WALL01_3", 112, 0
+	Patch "WALL01_6", 112, 56
+	Patch "WALL01_9", 48, 56
+}
+Texture "NEIS0360", 64, 128
+{
+	Patch "W15_6", 20, 56
+	Patch "W15_6", 20, -1
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 40, 0
+}
+Texture "NEIS0361", 256, 128
+{
+	Patch "NEIS0225", 0, 0
+	Patch "NEIS0225", 64, 0
+	Patch "NEIS0225", 128, 0
+	Patch "NEIS0225", 192, 0
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 232, 0
+}
+Texture "NEIS0366", 64, 128
+{
+	Patch "NEIS0837", 0, 0
+	Patch "NEIS0837", 0, 64
+}
+Texture "NEIS0367", 64, 128
+{
+	Patch "NEIS0838", 0, 0
+	Patch "NEIS0838", 0, 64
+}
+Texture "NEIS0377", 256, 128
+{
+	Patch "NEIS0375", 0, 0
+	Patch "NEIS0375", 128, 0
+	Patch "W107_1", 0, 0
+}
+Texture "NEIS0381", 256, 128
+{
+	Patch "WALL72_7", 0, 0
+	Patch "WALL69_9", 0, 64
+	Patch "W67_2", 40, 64
+	Patch "W67_1", 64, 0
+	Patch "WALL72_7", 64, 64
+	Patch "WALL70_9", 128, 64
+	Patch "WALL69_9", 128, 0
+	Patch "WALL72_7", 168, 0
+	Patch "W67_2", 224, 0
+	Patch "WALL72_7", 192, 64
+	Patch "W67_2", 168, 64
+	Patch "NEIS0724", 0, 7
+	Patch "NEIS0725", 128, 5
+	Patch "NEIS0731", 30, -52
+	Patch "NEIS0731", 30, 76
+	Patch "NEIS0732", 144, -18
+}
+Texture "NEIS0388", 32, 128
+{
+	Patch "NEIS0523", 0, 0
+	Patch "NEIS0443", 0, 16
+	Patch "NEIS0523", 0, 64
+}
+Texture "NEIS0390", 32, 128
+{
+	Patch "NEIS0524", 0, 0
+	Patch "NEIS0444", 0, 16
+	Patch "NEIS0524", 0, 64
+}
+Texture "NEIS0391", 128, 128
+{
+	Patch "MWALL4_2", 0, 0
+	Patch "NEIS0857", 40, 72
+}
+Texture "NEIS0392", 128, 128
+{
+	Patch "MWALL4_2", 0, 0
+	Patch "NEIS0858", 40, 72
+}
+Texture "NEIS0393", 128, 128
+{
+	Patch "MWALL4_2", 0, 0
+	Patch "NEIS0859", 40, 64
+}
+Texture "NEIS0394", 64, 128
+{
+	Patch "NEIS0871", 0, 0
+	Patch "NEIS0871", 0, 64
+}
+Texture "NEIS0395", 128, 128
+{
+	Patch "NEIS0861", 0, 0
+	Patch "NEIS0861", 0, 64
+	Patch "NEIS0861", 32, -32
+	Patch "NEIS0861", 32, 32
+	Patch "NEIS0861", 32, 96
+	Patch "NEIS0861", 96, 80
+	Patch "NEIS0861", 96, 32
+	Patch "NEIS0861", 96, -16
+	Patch "NEIS0861", 96, -32
+	Patch "NEIS0861", 64, -16
+	Patch "NEIS0861", 64, 64
+	Patch "NEIS0861", 64, 48
+}
+Texture "NEIS0396", 8, 128
+{
+	Patch "NEIS0863", 0, 0
+	Patch "NEIS0863", 0, 64
+}
+Texture "NEIS0397", 16, 128
+{
+	Patch "NEIS0862", 0, 0
+	Patch "WALL72_7", -36, 64
+}
+Texture "NEIS0398", 64, 128
+{
+	Patch "NEIS0864", 0, 0
+	Patch "NEIS0865", 32, 0
+	Patch "WALL72_7", 0, 64
+}
+Texture "NEIS0399", 128, 128
+{
+	Patch "WALL69_4", 0, 64
+	Patch "WALL69_4", 64, 64
+	Patch "NEIS0866", 28, 0
+	Patch "NEIS0868", 20, 0
+	Patch "NEIS0867", 100, 0
+	Patch "NEIS0860", -12, 0
+	Patch "WALL72_7", 108, 0
+}
+Texture "NEIS0400", 64, 128
+{
+	Patch "NEIS0869", 0, 0
+	Patch "W67_2", 32, 64
+	Patch "WALL69_9", 0, 64
+	Patch "NEIS0867", 56, 0
+	Patch "NEIS0868", 0, 0
+}
+Texture "NEIS0401", 64, 128
+{
+	Patch "NEIS0870", 0, 0
+	Patch "W67_1", 30, 64
+	Patch "WALL70_9", 0, 64
+}
+Texture "NEIS0402", 32, 128
+{
+	Patch "NEIS0872", 0, 0
+	Patch "NEIS0872", 0, 64
+}
+Texture "NEIS0403", 32, 128
+{
+	Patch "NEIS0873", 0, 0
+	Patch "NEIS0873", 0, 64
+}
+Texture "NEIS0420", 256, 128
+{
+	Patch "WALL48_4", 64, 0
+	Patch "WALL48_1", 128, 0
+	Patch "WALL48_2", 192, 0
+	Patch "NEIS0885", 64, 16
+	Patch "NEIS0885", 128, 16
+	Patch "NEIS0885", 192, 16
+	Patch "WALL30_2", 0, 0
+	Patch "NEIS0573", 64, 0
+	Patch "NEIS0573", 128, 0
+	Patch "NEIS0573", 192, 0
+}
+Texture "NEIS0421", 256, 128
+{
+	Patch "WALL48_4", 128, 0
+	Patch "WALL48_1", 192, 0
+	Patch "WALL48_3", 64, 0
+	Patch "NEIS0885", 64, 16
+	Patch "NEIS0885", 128, 16
+	Patch "NEIS0885", 192, 16
+	Patch "WALL30_4", 0, 0
+	Patch "NEIS0573", 64, 0
+	Patch "NEIS0573", 128, 0
+	Patch "NEIS0573", 192, 0
+}
+Texture "NEIS0422", 256, 128
+{
+	Patch "WALL48_4", 192, 0
+	Patch "WALL48_3", 128, 0
+	Patch "WALL48_2", 64, 0
+	Patch "NEIS0885", 64, 16
+	Patch "NEIS0885", 128, 16
+	Patch "NEIS0885", 192, 16
+	Patch "WALL30_3", 0, 0
+	Patch "NEIS0573", 64, 0
+	Patch "NEIS0573", 128, 0
+	Patch "NEIS0573", 192, 0
+}
+Texture "NEIS0423", 256, 128
+{
+	Patch "NEIS0374", 64, 16
+	Patch "NEIS0374", 128, 16
+	Patch "NEIS0374", 192, 16
+	Patch "WALL30_2", 0, 0
+	Patch "NEIS0573", 64, 0
+	Patch "NEIS0573", 128, 0
+	Patch "NEIS0573", 192, 0
+}
+Texture "NEIS0424", 256, 128
+{
+	Patch "NEIS0374", 64, 16
+	Patch "NEIS0374", 128, 16
+	Patch "NEIS0374", 192, 16
+	Patch "WALL30_4", 0, 0
+	Patch "NEIS0573", 64, 0
+	Patch "NEIS0573", 128, 0
+	Patch "NEIS0573", 192, 0
+}
+Texture "NEIS0426", 256, 128
+{
+	Patch "WALL48_4", 64, 0
+	Patch "WALL48_1", 128, 0
+	Patch "WALL48_2", 192, 0
+	Patch "WALL30_2", 0, 0
+	Patch "NEIS0886", 64, 0
+	Patch "NEIS0886", 128, 0
+	Patch "NEIS0886", 192, 0
+}
+Texture "NEIS0427", 256, 128
+{
+	Patch "WALL48_4", 128, 0
+	Patch "WALL48_1", 192, 0
+	Patch "WALL48_3", 64, 0
+	Patch "WALL30_4", 0, 0
+	Patch "NEIS0886", 64, 0
+	Patch "NEIS0886", 128, 0
+	Patch "NEIS0886", 192, 0
+}
+Texture "NEIS0428", 256, 128
+{
+	Patch "WALL48_4", 192, 0
+	Patch "WALL48_3", 128, 0
+	Patch "WALL48_2", 64, 0
+	Patch "WALL30_3", 0, 0
+	Patch "NEIS0886", 64, 0
+	Patch "NEIS0886", 128, 0
+	Patch "NEIS0886", 192, 0
+}
+Texture "NEIS0429", 256, 128
+{
+	Patch "WALL48_4", 64, 0
+	Patch "WALL48_1", 128, 0
+	Patch "WALL48_2", 192, 0
+	Patch "NEIS0885", 64, 0
+	Patch "NEIS0885", 128, 0
+	Patch "NEIS0885", 192, 0
+	Patch "WALL30_2", 0, 0
+	Patch "NEIS0573", 64, 64
+	Patch "NEIS0573", 128, 64
+	Patch "NEIS0573", 192, 64
+	Patch "NEIS0887", 0, 0
+}
+Texture "NEIS0432", 512, 128
+{
+	Patch "WALL58_1", 0, 0
+	Patch "NEIS0735", 124, 0
+	Patch "NEIS0722", 192, 0
+	Patch "NEIS0738", 328, 0
+	Patch "NEIS0741", 448, 0
+	Patch "NEIS0744", 384, 0
+	Patch "NEIS0265", 64, 0
+	Patch "NEIS0671", 64, 0
+}
+Texture "NEIS0433", 512, 128
+{
+	Patch "WALL58_2", 0, 0
+	Patch "NEIS0733", 124, 0
+	Patch "NEIS0721", 192, 0
+	Patch "NEIS0742", 448, 0
+	Patch "NEIS0739", 328, 0
+	Patch "NEIS0745", 384, 0
+	Patch "NEIS0265", 64, 0
+	Patch "NEIS0672", 64, 0
+}
+Texture "NEIS0434", 512, 128
+{
+	Patch "WALL58_3", 0, 0
+	Patch "NEIS0734", 124, 0
+	Patch "NEIS0723", 192, 0
+	Patch "NEIS0743", 448, 0
+	Patch "NEIS0740", 328, 0
+	Patch "NEIS0746", 384, 1
+	Patch "NEIS0265", 64, 0
+	Patch "NEIS0673", 64, 0
+}
+Texture "NEIS0439", 256, 128
+{
+	Patch "WALL48_2", 0, 0
+	Patch "SW2_7", 13, 67
+	Patch "MWALL1_1", 64, 0
+	Patch "SW2_1", 85, 76
+	Patch "WALL48_1", 128, 0
+	Patch "WALL48_2", 192, 0
+	Patch "SW2_3", 198, 8
+	Patch "SW2_3", 134, 80
+}
+Texture "NEIS0440", 256, 128
+{
+	Patch "WALL48_2", 0, 0
+	Patch "SW2_8", 13, 67
+	Patch "MWALL1_1", 64, 0
+	Patch "SW2_2", 85, 76
+	Patch "WALL48_1", 128, 0
+	Patch "WALL48_2", 192, 0
+	Patch "SW2_4", 198, 8
+	Patch "SW2_4", 134, 80
+}

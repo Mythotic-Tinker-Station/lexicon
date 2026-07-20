@@ -1,0 +1,59 @@
+Texture "UDMX0405", 128, 96
+{
+	Patch "W13_1", 0, 0
+	Patch "W13_1", 0, 24
+	Patch "UDMX0909", 17, 0
+	Patch "W13_1", 113, 0
+	Patch "W13_1", 113, 25
+}
+Texture "UDMX0406", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 64, 0
+	Patch "W13_1", 0, 56
+	Patch "UDMX0906", 0, 0
+}
+Texture "UDMX0410", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "UDMX0411", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "UDMX0413", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "UDMX0415", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "UDMX0416", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "UDMX0418", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "UDMX0420", 64, 128
+{
+	Patch "UDMX0958", 0, 0
+}
+Texture "UDMX0981", 64, 64
+{
+	Patch "UDMX1671", 0, 0
+	Patch "UDMX1635", 8, 0
+}
+Texture "UDMX0991", 128, 128
+{
+	Patch "UDMX0996", 0, 0
+	Patch "UDMX1639", 32, 48
+}

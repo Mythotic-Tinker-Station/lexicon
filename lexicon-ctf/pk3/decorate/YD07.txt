@@ -1,0 +1,57 @@
+Actor Lexicon_YD07_Pistol : DoomWeapon
+{
+	Weapon.SelectionOrder 1900
+	Weapon.AmmoUse 1
+	Weapon.AmmoGive 20
+	Weapon.AmmoType "Clip"
+	Weapon.SlotNumber 2
+	Obituary "$OB_MPPISTOL"
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	Inventory.Pickupmessage "$PICKUP_PISTOL_DROPPED"
+	Tag "$YD07_TAG_PISTOL"
+	Radius 20
+	Height 16
+	States
+	{
+	Ready:
+		LW00 A 1 A_WeaponReady
+		Loop
+	Deselect:
+		LW00 A 1 A_Lower
+		Loop
+	Select:
+		LW00 A 1 A_Raise
+		Loop
+	Fire:
+		LW00 A 4 
+		LW00 A 0 A_Light1
+		LW00 B 6 Bright A_FirePistol
+		LW00 C 0 Bright A_Light2
+		LW00 B 0 Bright A_CheckReload
+		LW00 C 5 Bright A_FirePistol
+		LW00 C 0 A_Refire
+		LW00 A 3 A_Light1
+		LW00 A 0 A_Light0
+		LW00 A 1 A_WeaponReady
+		goto Ready
+	Flash:
+		TNT1 A -1 
+		stop
+ 	Spawn:
+		PIST A -1
+		Stop
+	}
+}
+
+Actor Lexicon_YD07_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("YD07/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit
+		Wait
+	}
+}

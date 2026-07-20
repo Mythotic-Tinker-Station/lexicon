@@ -1,0 +1,12 @@
+/*
+	Lexicon Slaughtermap Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXSLGT"
+
+Script "Lexicon_SlaughterPack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","SLGT",2);
+}

@@ -1,0 +1,120 @@
+===========================================================================
+Update to               : Vile Flesh Demo (VILEDEM.WAD)
+Advanced engine needed  : Zdoom/Boom. Boom recommended (no special ZDoom
+                          features implemented)
+Primary purpose         : Single play
+===========================================================================
+Title                   : Vile Flesh
+Filename                : VILE.Wad
+Release date            : 24/05/04
+Author                  : Gwyn Williams
+Email Address           : gman@williamsg2.fsnet.co.uk
+Other Files By Author   : This is the first!
+Misc. Author Info       : I've been slogging away at this on and off since 2001.
+                          Bloody hell.
+                          I hope you all enjoy playing!
+
+Description             : Vile Flesh is a full 32 level replacement for
+                          Doom2. You'll find the fist few levels are
+                          perhaps more reminicent of the original Doom,
+                          and as you progress, the levels
+                          become larger, more complex and far more
+                          challenging (think Eternal Doom).
+                          I've done my best to implement difficulty 
+                          settings, but they don't make a big difference
+                          on later levels anyway. I hope you enjoy
+                          playing Vile Flesh!
+                          ==============================================
+
+                          It had to happen sooner or later...
+			  With the UAC in tatters and all off-world projects
+                          on hold, the only functioning UAC base is on
+                          Earth (though it's been kept well and truly
+                          hidden from prying public eyes). It was only a
+                          matter of time before something went wrong...
+                           Using the UAC's supposedly dismantled 
+                          interstellar gateway system, the demons of Hell
+                          have brought more than the hoards of the undead
+                          with them. This time they bring the very essence
+                          of Hell itself.
+                           And guess who's been called in to clean up the
+                          mess.
+                           Only a small portion of the original
+                          architecture remains, making maps and floor plans
+                          practically useless. But you're not fussed.
+                           You never were one for technicalities.
+                           Somewhere in the base is the open gateway, 
+                          pouring the legions of the damned through into
+                          our dimension. You must stop them before they 
+                          turn the whole of the earth into their moribund
+                          playground, before every last ounce of humanity
+                          is ripped from the globe.
+                           Lock and load, soldier...
+
+Additional Credits to   : id Software, of course. Also the authors of WadAuthor, Wintex and
+                          DeHacked. 
+			  And thanks to Cyb at Doomworld for editing tips!
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes 
+Graphics                : Yes (new titles, menu header, level names,
+                          intermission screen and new skies)
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No 
+Other files required    : vilefles.deh should be in the same .zip as the .wad file.
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01 - Map32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only (works fine, but possibly
+			  not the best experience in the world)
+Deathmatch 2-4 Player   : Player starts only (not extensively tested. I've
+                          tried to keep the starts as close together as
+                          possible, but some levels are just too big to
+                          be enjoyable DM arenas. Levels after map 25 don't 
+                          have DM starts at all. Note that maps 31 and 32 DO have
+                          DM starts)
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : More than 2 years all in all (!) 
+Editor(s) used          : Wad Author, WinTex and DeHackEd 3.1
+Known Bugs              : Some texture errors when using the original Doom2 
+                          engine. This is academic, though, because...
+May Not Run With...     : The original DOOM2 engine. Although some levels
+                          are fine, there are quite a few later ones that
+                          cause visplane overflows.
+                          Doomsday - Map 32 seems to cause Doomsday to crash every
+                          time. It's also not possible to complete Map 27.
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original 
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact.  I have received permission from the original authors of any
+modified or included content in this file to allow further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: http://mysite.freeserve.com/vileflesh/index.html
+FTP sites:
+
+

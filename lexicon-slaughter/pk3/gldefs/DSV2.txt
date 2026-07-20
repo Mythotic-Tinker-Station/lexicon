@@ -1,0 +1,97 @@
+flickerlight2 Lexicon_DSV2_FIREBARREL
+{
+    color 0.0 1.0 0.0
+    size 48
+    secondarySize 54
+    interval 0.1
+    offset 0 32 0
+}
+
+pointlight Lexicon_DSV2_CANDLE
+{
+    color 0.8 0.1 0.0
+    size 16
+    offset 0 16 0
+}
+
+object Lexicon_DSV2_Candlestick
+{
+    frame LY00 { light Lexicon_DSV2_CANDLE }
+}
+
+pointlight Lexicon_DSV2_CANDELABRA
+{
+    color 0.8 0.1 0.0
+    size 48
+    offset 0 52 0
+}
+
+object Lexicon_DSV2_Candelabra
+{
+    frame LY00 { light Lexicon_DSV2_CANDELABRA }
+}
+
+object Lexicon_DSV2_BurningBarrel
+{
+    frame LY00 { light Lexicon_DSV2_FIREBARREL }
+}
+
+object Lexicon_DSV2_TechLamp
+{
+    frame LY01 { light BIGLAMP }
+}
+
+object Lexicon_DSV2_TechLamp2
+{
+    frame LY01 { light SMALLLAMP }
+}
+
+object Lexicon_DSV2_Column
+{
+    frame LY00 { light LAMP }
+}
+
+object Lexicon_DSV2_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_DSV2_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_DSV2_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_DSV2_Megasphere
+{
+    frame LY01U0 { light MEGASPHERE1 }
+
+    frame LY01V0 { light MEGASPHERE2 }
+    frame LY01W0 { light MEGASPHERE3 }
+    frame LY01X0 { light MEGASPHERE4 }
+}
+
+object Lexicon_DSV2_Soulsphere
+{
+    frame LY01 { light SOULSPHERE }
+}
+
+object Lexicon_DSV2_InvulnerabilitySphere
+{
+    frame LY01 { light INVULN }
+}
+
+object Lexicon_DSV2_BlurSphere
+{
+    frame LY01 { light BLURSPHERE1 }
+
+    frame LY01U { light BLURSPHERE2 }
+    frame LY01V { light BLURSPHERE3 }
+    frame LY01W { light BLURSPHERE4 }
+    frame LY01X { light BLURSPHERE5 }
+}

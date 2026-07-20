@@ -1,0 +1,286 @@
+===========================================================================
+Advanced engine needed  : Boom compatible
+Primary purpose         : Capture the Flag
+===========================================================================
+Title                   : 32in24-12: IRON MAPPER
+Filename                : 32in24-12.wad
+Release date            : 8/25/2012
+Author                  : The 32in24 Team!
+Email Address           : shaikoten@gmail.com
+                          esselfortium@gmail.com
+                          eabaker@san.rr.com (compiler)
+
+Other Files By Author   : 32in24.wad (FFA), 32in24sp.wad, 32in24-3.wad
+                          (DUEL CORE EDITION), 32in24-4.wad (CTF),
+                          32in24-5.wad (FFA) 32in24-6.wad (FFA),
+                          32in24-7.wad (CTF), 32in24-d.wad (SP),
+                          32in24-8.wad (FFA), gw2.wad (with Hellbent),
+                          32in24-9.wad (Return of DUEL CORE)
+                          32in24-10.wad, (FFA) 32in24-11.wad (FFA)
+
+Description             : "In 1974 a crack commando unit was sent to
+                          prison again for another crime that they
+                          seriously didn't commit only this time they
+                          were sent to Japan to participate in a
+                          terrible cooking themed mapping game show for
+                          the ultimate prize: burgers designed to have
+                          the hell eaten out of them.
+                          
+                          Surviving purely on rations of Lunchables and
+                          Arizona Watermelon Punch the YEDS team has
+                          pooled together its resources to take Japan
+                          by storm with the craziest CTF maps known to
+                          man.
+                          
+                          
+                          The levels in this iteration of the series are:
+                          
+                          MAP01: This Aggression Will Not Stand, Man
+                                 by skillsaw
+                          MAP02: Splatterday Night Fever
+                                 by TheMionicDonut
+                          MAP03: Face to Face
+                                 by Solarn
+                          MAP04: Sauce Port
+                                 by Jimmy91
+                          MAP05: Water Purification Facility
+                                 by nub_hat
+                          MAP06: The Battle of Snake Canyon
+                                 by The Green Herring
+                          MAP07: Just Out of Reach
+                                 by XutaWoo
+                          MAP08: A Roboticized Lizard Comprised Entirely
+                                 of Moving Wooden Parts, Neurokinetic
+                                 Circuitry, and the Heart of a Moldy Bald
+                                 Eagle
+                                 by Mechadon (design)
+                                     and Shaikoten (items)
+                          MAP09: Lost Facility #28
+                                 by RottKing
+                          MAP10: Gray Mainstream Map
+                                 by Luca95
+                          MAP11: Scary Flaggers and Nice Caps
+                                 by AlexMax
+                          MAP12: Hamburglar Hill
+                                 by TheMionicDonut
+                          MAP13: Flag Island
+                                 by Dusk
+                          MAP14: Danny Tamberelli's Manboobs
+                                 by zap610
+                          MAP15: Mark It Zero
+                                 by skillsaw
+                          MAP16: Green Vaults
+                                 by Dusk
+                          MAP17: Close Friends!
+                                 by Pavera
+                          MAP18: Tong Dat Catte
+                                 by ClonedPickle
+                          MAP19: Some Tourist Attraction
+                                 by BloodyAcid
+                          MAP20: Eye of the Tiger
+                                 by IvanDobrovski
+                          MAP21: Meatwad Goes to the Super Bowl
+                                 by Wartorn
+                          MAP22: Water Defecation Facility
+                                 by ArmouredBlood (design)
+                                     and Tango (detail, item placement)
+                          MAP23: I've Got Two Words for You
+                                 and They're Not "Happy Birthday"
+                                 by 40oz
+                          MAP24: Generica
+                                 by Whoo
+                          MAP25: Cereal Crates
+                                 by Watermelon
+                          MAP26: Right Angle of Destiny
+                                 by Processing Control
+                          MAP27: Go to Hell, Do Not Collect $200
+                                 by The Green Herring
+                          MAP28: Mudman Wonderland
+                                 by Kassman
+                          MAP29: Seclatus
+                                 by esselfortium
+                          MAP30: Kingdom of Naughty Aeronautics
+                                 by Xaser
+                          MAP31: WTF CTF
+                                 by Xaser
+                          MAP32: Thanks Zero. I'm Okay.
+                                 by Forty-Two (design)
+                                  and Tango (detail)
+                          MAP33: Obvious Filler Map
+                                 by TheMionicDonut
+                          MAP34: Late in Britland
+                                 by Devon
+                          MAP35: Bridge to Nowhere
+                                 by Llewellyn
+                          MAP36: A Complete Disregard of
+                                 All That You Love
+                                 by ClonedPickle
+                          MAP37: The Tooters
+                                 by TimeOfDeath
+
+Music Used in This WAD  : Title: Gym Leader Battle Theme
+                                 from "Pokemon Red / Blue / Yellow" (GB);
+                                 arranged by Ash_Ketchum_of_Pallet
+                          Inter: "Fanfare"
+                                 from "Final Fantasy II" (SNES);
+                                 arranged by Robert Aaron Eason (Willow)
+                          MAP01: Death Scythe's Theme
+                                 from "Gundam Wing: Endless Duel" (SFC);
+                                 converted to MIDI by Sivak Drac
+                          MAP02: "Who Made Who"
+                                 by AC/DC
+                          MAP03: "Power Field"
+                                 from "Mega Man Zero 4" (GBA);
+                                 arranged by Jay Reichard
+                          MAP04: "Map of the Problematique"
+                                 by Muse
+                          MAP05: "Water Purification Facility"
+                                 by nub_hat
+                          MAP06: E1M2 Theme by Bobby Prince
+                                 from "Duke Nukem II" (PC);
+                                 converted to MIDI by Jay Reichard
+                          MAP07: "Adrenaline in the Blood"
+                                 by Jimmy91
+                          MAP08: "The Sinking Old Sanctuary"
+                                 from "Castlevania: Bloodlines" (Genesis);
+                                 arranged by Jorge D. Fuentes
+                          MAP09: "L24-D" from "Fury3" (PC);
+                                 arranged by Jay Reichard
+                          MAP10: "Fearless Challenger"
+                                 from "La-Mulana" (PC)
+                          MAP11: "Scary Monsters and Nice Sprites"
+                                 by Skrillex;
+                                 transcribed by Tilt
+                          MAP12: "Celebration Generation"
+                                 by Westbam;
+                                 converted to MIDI by Arne Mulder
+                          MAP13: "Splash Blue"
+                                 from "Mega Man 9" (Wii)
+                                 arranged by King_Boo
+                          MAP14: "Phantom Ensemble"
+                                 from "Perfect Cherry Blossom" (PC)
+                          MAP15: Wing's Theme
+                                 from "Gundam Wing: Endless Duel" (SFC);
+                                 converted to MIDI by Ashura Demon
+                          MAP16: "Tides of War"
+                                 by Jeremy Doyle
+                                 from "Requiem"
+                          MAP17: "Running from Evil" by Bobby Prince
+                                 from "Doom II: Hell on Earth" (PC)
+                          MAP18: "In a Mad Rush"
+                                 by The Green Herring
+                                 from "Claustrophobia 1024"
+                          MAP19: "Hellfire"
+                                 from "Soul Calibur II"
+                          MAP20: "Into Sandy's City" by Bobby Prince
+                                 from "Doom II: Hell on Earth" (PC)
+                          MAP21: "Sleeping Terror"
+                                 from "Lotus Land Story" (PC-98)
+                          MAP22: Wire Sponge's Theme
+                                 from "Mega Man X2" (SNES);
+                                 arranged by Teck
+                          MAP23: "Hella Good" by No Doubt
+                          MAP24: "Punish my Heaven" by Dark Tranquility
+                          MAP25: "DOOM" by Bobby Prince
+                                 from "Doom II: Hell on Earth" (PC)
+                          MAP26: "Grave Town, Live Version"
+                                 by Mark Klem
+                                 from "Gothic Deathmatches II"
+                          MAP27: "Walking on the Edge"
+                                 from "Castlevania" (NES);
+                                 arranged by Tsu Ryu
+                          MAP28: "La Samba" by Andy Narrell;
+                                 converted to MIDI by Bob Lasnek
+                          MAP29: "Bombshell"
+                                 by Jimmy91
+                          MAP30: "The Wings That Cross Time"
+                                 from "Chrono Trigger" (SNES);
+                                 arranged by Jarel Jones
+                          MAP31: "Freedom Fighters"
+                                 by Darkhaven
+                          MAP32: Opening Stage Theme
+                                 from "Mega Man X3" (SNES);
+                                 arranged by Dave Phaneuf
+                          MAP33: "Wall Tune"
+                                 from "Cool Spot";
+                                 arranged by Meezo
+                          MAP34: "Suspense" by Bobby Prince
+                                 from "Doom" (PC)
+                          MAP35: ???
+                          MAP36: "Where Iz It?" by Lee Jackson
+                                 from "Rise of the Triad" (PC)
+                          MAP37: "The Tooters"
+                                 by TimeOfDeath
+
+Additional Credits to   : esselfortium for getting the resource wad set up,
+                          and making some super sick textures, Shaikoten
+                          in his usual hosting and TITLE/INTERPIC duties,
+                          The Green Herring for tireless compilation and
+                          dealing with last minute changes, dew for being
+                          basically the gameplay director.
+
+===========================================================================
+* What is included *
+
+New levels              : 37
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : MAPINFO recommended
+Other files required    : lunchables.wad
+                          (available at your local supermarket)
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : MAP01-MAP37
+Single Player           : No (unless you're bored!)
+Cooperative 2-4 Player  : No
+Deathmatch 4-8 Player   : No
+Other game styles       : Capture the Goddamn Flag
+Difficulty Settings     : No
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : One day for layouts, two weeks for testing and
+                          refinement to perfection.
+Editor(s) used          : Pretty much all of them.
+Known Bugs              : None
+May Not Run With...     : Any port without Capture the Flag
+
+
+* Copyright / Permissions *
+
+Authors may NOT use the contents of this file as a base for modification or
+reuse.  Permissions have been obtained from original authors for any of
+their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text file, with no
+modifications.  You may distribute this file in any electronic format (BBS,
+Diskette, CD, etc) as long as you include this file intact.  I have
+received permission from the original authors of any modified or included
+content in this file to allow further distribution.
+
+This PWAD contains select texture(s) and flat(s) that can originally be found
+in GothicDM or Gothic2. Credit and thanks go out to the artist(s) of said
+flat(s) and texture(s) and also to the rest of the Gothic Crew (1997/98). The
+ORIGINAL GothicDM(2).ZIP can be found at CDROM.COM. Each said PKZIP archive
+contains thirty-two professional quality levels and music.
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothicdm.zip
+http://cdrom.com/pub/idgames/levels/doom2/deathmatch/megawads/gothic2.zip
+
+(Of course, CDROM.COM doesn't exist anymore, so replace everything before
+"gothic*.zip" with
+"ftp://ftp.fu-berlin.de/pc/games/idgames/levels/doom2/deathmatch/megawads/".
+We'd edit the disclaimer above, but the Gothic Crew insists we include it in
+its entirety and they didn't consider the possibility of CDROM.COM no longer
+existing.  Blame them, not us!)
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://www.gamers.org/pub/idgames/ and mirrors

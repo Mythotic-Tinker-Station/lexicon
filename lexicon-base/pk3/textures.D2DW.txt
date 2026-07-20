@@ -1,0 +1,18 @@
+WallTexture "D2DW0021", 64, 128
+{
+	Patch "D2DW0020", 0, 0
+	Patch "D2DW0020", 0, 64
+}
+
+WallTexture "D2DW0023", 64, 128
+{
+	Patch "RW7_2", 0, 0
+	Patch "D2DW0051", 16, 66
+}
+
+WallTexture "D2DW0024", 64, 128
+{
+	Patch "RW7_2", 0, 0
+	Patch "D2DW0052", 16, 66
+}
+

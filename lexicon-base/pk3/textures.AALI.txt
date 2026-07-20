@@ -1,0 +1,3096 @@
+WallTexture "AALI1288", 24, 72
+{
+	Patch "AALI7509", 0, 0
+	Patch "AALI7509", 12, -6
+}
+
+WallTexture "AALI1388", 64, 128
+{
+	Patch "AALI9310", 0, 0
+	Patch "AALI9310", 32, 64
+	Patch "AALI9310", -32, 64
+}
+
+WallTexture "AALI1389", 64, 128
+{
+	Patch "AALI9295", 0, 0
+	Patch "AALI9295", 0, 64
+}
+
+WallTexture "AALI1423", 128, 128
+{
+	Patch "AALI7644", 0, 0
+	Patch "AALI7647", 51, 0
+	Patch "AALI7647", 0, 0
+	Patch "AALI7647", 104, 0
+}
+
+WallTexture "AALI1424", 128, 112
+{
+	Patch "AALI7732", 4, 0
+	Patch "AALI7732", 124, 0
+	Patch "AALI7732", -116, 0
+}
+
+WallTexture "AALI1425", 128, 128
+{
+	Patch "AALI7720", -5, 0
+	Patch "AALI7720", 123, 0
+}
+
+WallTexture "AALI1500", 128, 128
+{
+	Patch "AALI7802", 0, 0
+	Patch "AALI7803", 64, 0
+}
+
+WallTexture "AALI1527", 128, 128
+{
+	Patch "AALI1562", 0, 0
+	Patch "AALI8054", 1, 60
+	Patch "AALI1562", 64, 0
+}
+
+WallTexture "AALI1550", 256, 128
+{
+	Patch "AALI1562", 0, 0
+	Patch "AALI1562", 64, 0
+	Patch "AALI1562", 128, 0
+	Patch "AALI1562", 192, 0
+	Patch "AALI7721", 0, 0
+}
+
+WallTexture "AALI1551", 128, 128
+{
+	Patch "AALI7527", 0, 56
+	Patch "AALI7527", 0, 0
+	Patch "AALI7528", 64, 56
+	Patch "AALI7526", 88, 56
+	Patch "AALI7528", 64, 0
+	Patch "AALI7526", 88, 0
+}
+
+WallTexture "AALI1552", 128, 128
+{
+	Patch "AALI7510", 0, 0
+	Patch "AALI7511", 16, 0
+	Patch "AALI7512", 32, 0
+	Patch "AALI7513", 48, 0
+	Patch "AALI7511", 64, 0
+	Patch "AALI7511", 112, -16
+	Patch "AALI7512", 96, -1
+	Patch "AALI7511", 80, 0
+}
+
+WallTexture "AALI1568", 64, 128
+{
+	Patch "AALI7530", 0, 0
+	Patch "AALI7530", 0, 72
+}
+
+WallTexture "AALI1569", 128, 128
+{
+	Patch "AALI7597", 0, 0
+	Patch "AALI8676", 0, 72
+	Patch "AALI8676", 64, 72
+	Patch "AALI9964", 96, 120
+	Patch "AALI9964", 96, 64
+	Patch "AALI9964", 64, 120
+	Patch "AALI9964", 64, 64
+	Patch "AALI9964", 32, 120
+	Patch "AALI9964", 32, 64
+	Patch "AALI9964", 0, 120
+	Patch "AALI9964", 0, 64
+}
+
+WallTexture "AALI1570", 128, 128
+{
+	Patch "AALI7597", 0, 0
+	Patch "AALI8677", 0, 72
+	Patch "AALI9972", 96, 64
+	Patch "AALI9972", 64, 64
+	Patch "AALI9972", 32, 120
+	Patch "AALI9972", 32, 64
+	Patch "AALI9972", 0, 120
+	Patch "AALI9972", 0, 64
+	Patch "AALI8677", 64, 72
+	Patch "AALI9972", 96, 120
+	Patch "AALI9972", 64, 120
+}
+
+WallTexture "AALI1571", 128, 128
+{
+	Patch "AALI7597", 0, 0
+	Patch "AALI7589", 0, 64
+	Patch "AALI7589", 32, 64
+	Patch "AALI7589", 64, 64
+	Patch "AALI7589", 96, 64
+	Patch "AALI7537", 0, 72
+	Patch "AALI7537", 64, 72
+	Patch "AALI7589", 0, 120
+	Patch "AALI7589", 32, 120
+	Patch "AALI7589", 64, 120
+	Patch "AALI7589", 96, 120
+}
+
+WallTexture "AALI1592", 256, 128
+{
+	Patch "AALI1590", 0, 0
+	Patch "AALI1590", 128, 0
+	Patch "AALI1590", 192, 0
+	Patch "AALI1590", 64, 0
+	Patch "AALI7721", 0, 0
+}
+
+WallTexture "AALI1593", 256, 128
+{
+	Patch "AALI1590", 0, 0
+	Patch "AALI1590", 128, 0
+	Patch "AALI1590", 192, 0
+	Patch "AALI1590", 64, 0
+	Patch "AALI7722", 0, 0
+}
+
+WallTexture "AALI1613", 256, 128
+{
+	Patch "AALI8008", 0, 0
+	Patch "AALI8009", 64, 0
+	Patch "AALI8011", 128, 0
+	Patch "AALI8010", 192, 0
+	Patch "AALI8013", 0, 64
+	Patch "AALI8015", 64, 64
+	Patch "AALI8014", 128, 64
+	Patch "AALI8012", 192, 64
+	Patch "AALI7590", 0, 56
+	Patch "AALI7590", 32, 56
+	Patch "AALI7590", 64, 56
+	Patch "AALI7590", 96, 56
+	Patch "AALI7590", 128, 56
+	Patch "AALI7590", 160, 56
+	Patch "AALI7590", 192, 56
+	Patch "AALI7590", 224, 56
+	Patch "AALI7590", 0, 120
+	Patch "AALI7590", 32, 120
+	Patch "AALI7590", 64, 120
+	Patch "AALI7590", 96, 120
+	Patch "AALI7590", 128, 120
+	Patch "AALI7590", 160, 120
+	Patch "AALI7590", 192, 120
+	Patch "AALI7590", 224, 120
+}
+
+WallTexture "AALI1618", 64, 128
+{
+	Patch "AALI6061", 0, 0
+	Patch "AALI7780", 0, 64
+}
+
+WallTexture "AALI1619", 64, 128
+{
+	Patch "AALI9741", 0, 0
+	Patch "AALI9741", 0, 64
+}
+
+WallTexture "AALI1628", 64, 128
+{
+	Patch "AALI9786", 0, 0
+	Patch "AALI9787", 0, 64
+}
+
+WallTexture "AALI1631", 64, 128
+{
+	Patch "AALI9788", 0, 0
+	Patch "AALI9785", 0, 64
+}
+
+WallTexture "AALI1632", 64, 16
+{
+	Patch "AALI0949", 0, 0
+	Patch "AALI9768", 0, 0
+}
+
+WallTexture "AALI1633", 64, 16
+{
+	Patch "AALI0949", 0, 0
+	Patch "AALI9769", 0, 0
+}
+
+WallTexture "AALI1634", 64, 16
+{
+	Patch "AALI0949", 0, 0
+	Patch "AALI9770", 0, 0
+}
+
+WallTexture "AALI1635", 64, 128
+{
+	Patch "AALI6097", 0, 0
+	Patch "AALI6098", 0, 64
+}
+
+WallTexture "AALI1644", 64, 128
+{
+	Patch "AALI9790", 0, 0
+	Patch "AALI9789", 0, 64
+}
+
+WallTexture "AALI1645", 64, 128
+{
+	Patch "AALI6073", 0, 0
+	Patch "AALI6074", 0, 64
+}
+
+WallTexture "AALI1650", 64, 128
+{
+	Patch "AALI6067", 0, 0
+	Patch "AALI6068", 0, 64
+}
+
+WallTexture "AALI1655", 64, 128
+{
+	Patch "AALI9791", 0, 0
+	Patch "AALI9792", 0, 64
+}
+
+WallTexture "AALI1656", 64, 128
+{
+	Patch "AALI8016", 0, 0
+	Patch "AALI8016", 0, 64
+}
+
+WallTexture "AALI1657", 64, 128
+{
+	Patch "AALI9733", 0, 0
+	Patch "AALI9733", 0, 64
+}
+
+WallTexture "AALI1658", 64, 128
+{
+	Patch "AALI9734", 0, 0
+	Patch "AALI9734", 0, 64
+}
+
+WallTexture "AALI1659", 64, 128
+{
+	Patch "AALI9735", 0, 0
+	Patch "AALI9735", 32, 64
+	Patch "AALI9735", -32, 64
+}
+
+WallTexture "AALI1660", 16, 128
+{
+	Patch "AALI9736", 0, 0
+	Patch "AALI9736", 0, 64
+}
+
+WallTexture "AALI1661", 64, 128
+{
+	Patch "AALI9737", 0, 0
+	Patch "AALI9737", 0, 112
+	Patch "AALI9737", 0, 96
+	Patch "AALI9737", 0, 80
+	Patch "AALI9737", 0, 64
+	Patch "AALI9737", 0, 48
+	Patch "AALI9737", 0, 32
+	Patch "AALI9737", 0, 16
+}
+
+WallTexture "AALI1662", 8, 128
+{
+	Patch "AALI9738", 0, 0
+	Patch "AALI9738", 0, 64
+}
+
+WallTexture "AALI1663", 64, 128
+{
+	Patch "AALI9732", 0, 0
+	Patch "AALI9732", 0, 8
+	Patch "AALI9732", 0, 16
+	Patch "AALI9732", 0, 24
+	Patch "AALI9732", 0, 120
+	Patch "AALI9732", 0, 112
+	Patch "AALI9732", 0, 104
+	Patch "AALI9732", 0, 88
+	Patch "AALI9732", 0, 96
+	Patch "AALI9732", 0, 80
+	Patch "AALI9732", 0, 72
+	Patch "AALI9732", 0, 64
+	Patch "AALI9732", 0, 56
+	Patch "AALI9732", 0, 48
+	Patch "AALI9732", 0, 40
+	Patch "AALI9732", 0, 32
+}
+
+WallTexture "AALI1664", 128, 128
+{
+	Patch "AALI7980", 0, 0
+	Patch "AALI7579", 0, 72
+	Patch "AALI7579", 64, 72
+}
+
+WallTexture "AALI1665", 128, 128
+{
+	Patch "AALI7981", 0, 0
+	Patch "AALI7579", 0, 72
+	Patch "AALI7579", 64, 72
+}
+
+WallTexture "AALI1666", 256, 128
+{
+	Patch "AALI8019", 32, 0
+	Patch "AALI8021", 96, 0
+	Patch "AALI8017", 160, 0
+	Patch "AALI8018", 0, 64
+	Patch "AALI8020", 64, 64
+	Patch "AALI7603", 128, 64
+	Patch "AALI8007", 192, 0
+	Patch "AALI7602", 192, 64
+	Patch "AALI8017", 0, 0
+}
+
+WallTexture "AALI1667", 256, 128
+{
+	Patch "AALI9743", 128, 64
+	Patch "AALI9753", 192, 0
+	Patch "AALI9754", 192, 64
+	Patch "AALI8019", 32, 0
+	Patch "AALI8021", 96, 0
+	Patch "AALI8017", 0, 0
+	Patch "AALI8017", 160, 0
+	Patch "AALI8018", 0, 64
+	Patch "AALI8020", 64, 64
+}
+
+WallTexture "AALI1668", 128, 128
+{
+	Patch "AALI9785", 64, 0
+	Patch "AALI9788", 64, 64
+	Patch "AALI9788", 0, 0
+	Patch "AALI9785", 0, 64
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+}
+
+WallTexture "AALI1669", 128, 128
+{
+	Patch "AALI9787", 64, 0
+	Patch "AALI9787", 0, 64
+	Patch "AALI9786", 0, 0
+	Patch "AALI9786", 64, 64
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+}
+
+WallTexture "AALI1670", 128, 128
+{
+	Patch "AALI9789", 64, 0
+	Patch "AALI9789", 0, 64
+	Patch "AALI9790", 0, 0
+	Patch "AALI9790", 64, 64
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+}
+
+WallTexture "AALI1671", 128, 128
+{
+	Patch "AALI9792", 64, 0
+	Patch "AALI9792", 0, 64
+	Patch "AALI9791", 0, 0
+	Patch "AALI9791", 64, 64
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+}
+
+WallTexture "AALI1672", 128, 128
+{
+	Patch "AALI9793", 64, 0
+	Patch "AALI9793", 0, 64
+	Patch "AALI9794", 0, 0
+	Patch "AALI9794", 64, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+}
+
+WallTexture "AALI1673", 128, 128
+{
+	Patch "AALI6061", 0, 0
+	Patch "AALI7780", 0, 64
+	Patch "AALI6061", 64, 64
+	Patch "AALI7780", 64, 0
+	Patch "AALI8044", 0, 0
+	Patch "AALI8044", 0, 64
+	Patch "AALI8045", 96, 64
+	Patch "AALI8045", 96, 0
+}
+
+WallTexture "AALI1678", 64, 128
+{
+	Patch "AALI6091", 0, 0
+	Patch "AALI6092", 0, 64
+}
+
+WallTexture "AALI1680", 64, 128
+{
+	Patch "AALI9742", 0, 0
+	Patch "AALI9742", 0, 64
+}
+
+WallTexture "AALI1681", 64, 128
+{
+	Patch "AALI8018", 0, 0
+	Patch "AALI8018", 0, 64
+}
+
+WallTexture "AALI1682", 64, 128
+{
+	Patch "AALI9794", 0, 0
+	Patch "AALI9793", 0, 64
+}
+
+WallTexture "AALI1687", 16, 128
+{
+	Patch "AALI1686", 0, 112
+	Patch "AALI1686", 0, 96
+	Patch "AALI1686", 0, 80
+	Patch "AALI1686", 0, 64
+	Patch "AALI1686", 0, 48
+	Patch "AALI1686", 0, 32
+	Patch "AALI1686", 0, 0
+	Patch "AALI1686", 0, 16
+}
+
+WallTexture "AALI1688", 32, 128
+{
+	Patch "AALI1683", 0, 0
+	Patch "AALI1683", 0, 96
+	Patch "AALI1683", 0, 64
+	Patch "AALI1683", 0, 32
+}
+
+WallTexture "AALI1690", 128, 128
+{
+	Patch "AALI9775", 0, 0
+	Patch "AALI9776", 64, 0
+	Patch "AALI9777", 0, 64
+	Patch "AALI9778", 64, 64
+}
+
+WallTexture "AALI1693", 64, 128
+{
+	Patch "AALI9313", 0, 0
+	Patch "AALI9313", 0, 64
+}
+
+WallTexture "AALI1694", 64, 128
+{
+	Patch "AALI7986", 0, 0
+	Patch "AALI7988", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1695", 64, 128
+{
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 32, 0
+	Patch "AALI7983", 0, 64
+	Patch "AALI7985", 32, 64
+}
+
+WallTexture "AALI1696", 64, 128
+{
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1697", 64, 128
+{
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1698", 64, 128
+{
+	Patch "AALI7986", 0, 0
+	Patch "AALI7988", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1699", 64, 128
+{
+	Patch "AALI9820", 0, 0
+	Patch "AALI9823", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1700", 64, 128
+{
+	Patch "AALI7986", 0, 0
+	Patch "AALI7988", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1701", 64, 128
+{
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1702", 64, 128
+{
+	Patch "AALI7991", 0, 0
+	Patch "AALI7991", 32, 0
+	Patch "AALI7983", 0, 64
+	Patch "AALI7985", 32, 64
+}
+
+WallTexture "AALI1703", 64, 128
+{
+	Patch "AALI9825", 0, 0
+	Patch "AALI9825", 32, 0
+	Patch "AALI7983", 0, 64
+	Patch "AALI7985", 32, 64
+}
+
+WallTexture "AALI1704", 64, 128
+{
+	Patch "AALI9825", 0, 0
+	Patch "AALI9825", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1705", 64, 128
+{
+	Patch "AALI9825", 0, 0
+	Patch "AALI9825", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1706", 64, 128
+{
+	Patch "AALI9821", 0, 0
+	Patch "AALI9821", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1707", 64, 128
+{
+	Patch "AALI9816", 0, 0
+	Patch "AALI9816", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1708", 64, 128
+{
+	Patch "AALI7991", 0, 0
+	Patch "AALI7991", 32, 0
+	Patch "AALI9820", 0, 64
+	Patch "AALI9823", 32, 64
+}
+
+WallTexture "AALI1709", 64, 128
+{
+	Patch "AALI9825", 0, 0
+	Patch "AALI9825", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1710", 64, 128
+{
+	Patch "AALI9821", 0, 0
+	Patch "AALI9821", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1711", 64, 128
+{
+	Patch "AALI9816", 0, 0
+	Patch "AALI9816", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1712", 64, 128
+{
+	Patch "AALI7991", 0, 0
+	Patch "AALI7991", 32, 0
+	Patch "AALI9815", 0, 64
+	Patch "AALI9818", 32, 64
+}
+
+WallTexture "AALI1713", 64, 128
+{
+	Patch "AALI9816", 0, 0
+	Patch "AALI9816", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1714", 64, 128
+{
+	Patch "AALI9816", 0, 0
+	Patch "AALI9816", 32, 0
+	Patch "AALI7983", 0, 64
+	Patch "AALI7985", 32, 64
+}
+
+WallTexture "AALI1715", 64, 128
+{
+	Patch "AALI9821", 0, 0
+	Patch "AALI9821", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1716", 64, 128
+{
+	Patch "AALI9821", 0, 0
+	Patch "AALI9821", 32, 0
+	Patch "AALI7983", 0, 64
+	Patch "AALI7985", 32, 64
+}
+
+WallTexture "AALI1717", 64, 128
+{
+	Patch "AALI7991", 0, 0
+	Patch "AALI7991", 32, 0
+	Patch "AALI7986", 0, 64
+	Patch "AALI7988", 32, 64
+}
+
+WallTexture "AALI1718", 64, 16
+{
+	Patch "AALI9814", 0, 0
+	Patch "AALI9814", 16, 0
+	Patch "AALI9814", 32, 0
+	Patch "AALI9814", 48, 0
+}
+
+WallTexture "AALI1719", 64, 16
+{
+	Patch "AALI9824", 0, 0
+	Patch "AALI9824", 16, 0
+	Patch "AALI9824", 32, 0
+	Patch "AALI9824", 48, 0
+}
+
+WallTexture "AALI1720", 64, 16
+{
+	Patch "AALI9819", 0, 0
+	Patch "AALI9819", 16, 0
+	Patch "AALI9819", 32, 0
+	Patch "AALI9819", 48, 0
+}
+
+WallTexture "AALI1721", 64, 16
+{
+	Patch "AALI7992", 0, 0
+	Patch "AALI7992", 16, 0
+	Patch "AALI7992", 32, 0
+	Patch "AALI7992", 48, 0
+}
+
+WallTexture "AALI1723", 64, 128
+{
+	Patch "AALI1722", 0, 0
+	Patch "AALI9828", 0, 0
+	Patch "AALI9828", 32, 0
+	Patch "AALI9828", 32, 32
+	Patch "AALI9828", 0, 32
+}
+
+WallTexture "AALI1724", 64, 16
+{
+	Patch "AALI9827", 0, 0
+	Patch "AALI9827", 16, 0
+	Patch "AALI9827", 32, 0
+	Patch "AALI9827", 48, 0
+}
+
+WallTexture "AALI1725", 128, 128
+{
+	Patch "AALI9820", 0, 64
+	Patch "AALI9822", 40, 64
+	Patch "AALI9822", 32, 64
+	Patch "AALI9822", 48, 64
+	Patch "AALI9822", 56, 64
+	Patch "AALI9823", 96, 64
+	Patch "AALI9822", 88, 64
+	Patch "AALI9822", 80, 64
+	Patch "AALI9822", 72, 64
+	Patch "AALI9822", 64, 64
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 96, 0
+	Patch "AALI7984", 48, 0
+	Patch "AALI7984", 40, 0
+	Patch "AALI7984", 32, 0
+	Patch "AALI7984", 72, 0
+	Patch "AALI7984", 64, 0
+	Patch "AALI7984", 56, 0
+	Patch "AALI7984", 80, 0
+	Patch "AALI7984", 88, 0
+}
+
+WallTexture "AALI1726", 128, 128
+{
+	Patch "AALI9815", 0, 64
+	Patch "AALI9817", 40, 64
+	Patch "AALI9817", 32, 64
+	Patch "AALI9817", 48, 64
+	Patch "AALI9817", 56, 64
+	Patch "AALI9818", 96, 64
+	Patch "AALI9817", 88, 64
+	Patch "AALI9817", 80, 64
+	Patch "AALI9817", 72, 64
+	Patch "AALI9817", 64, 64
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 96, 0
+	Patch "AALI7984", 48, 0
+	Patch "AALI7984", 40, 0
+	Patch "AALI7984", 32, 0
+	Patch "AALI7984", 72, 0
+	Patch "AALI7984", 64, 0
+	Patch "AALI7984", 56, 0
+	Patch "AALI7984", 80, 0
+	Patch "AALI7984", 88, 0
+}
+
+WallTexture "AALI1727", 128, 128
+{
+	Patch "AALI9815", 0, 64
+	Patch "AALI9817", 40, 64
+	Patch "AALI9817", 32, 64
+	Patch "AALI9817", 48, 64
+	Patch "AALI9817", 56, 64
+	Patch "AALI9818", 96, 64
+	Patch "AALI9817", 88, 64
+	Patch "AALI9817", 80, 64
+	Patch "AALI9817", 72, 64
+	Patch "AALI9817", 64, 64
+	Patch "AALI7986", 0, 0
+	Patch "AALI7988", 96, 0
+	Patch "AALI7987", 48, 0
+	Patch "AALI7987", 40, 0
+	Patch "AALI7987", 32, 0
+	Patch "AALI7987", 72, 0
+	Patch "AALI7987", 64, 0
+	Patch "AALI7987", 56, 0
+	Patch "AALI7987", 80, 0
+	Patch "AALI7987", 88, 0
+}
+
+WallTexture "AALI1728", 128, 128
+{
+	Patch "AALI9820", 0, 64
+	Patch "AALI9822", 40, 64
+	Patch "AALI9822", 32, 64
+	Patch "AALI9822", 48, 64
+	Patch "AALI9822", 56, 64
+	Patch "AALI9823", 96, 64
+	Patch "AALI9822", 88, 64
+	Patch "AALI9822", 80, 64
+	Patch "AALI9822", 72, 64
+	Patch "AALI9822", 64, 64
+	Patch "AALI7986", 0, 0
+	Patch "AALI7988", 96, 0
+	Patch "AALI7987", 48, 0
+	Patch "AALI7987", 40, 0
+	Patch "AALI7987", 32, 0
+	Patch "AALI7987", 72, 0
+	Patch "AALI7987", 64, 0
+	Patch "AALI7987", 56, 0
+	Patch "AALI7987", 80, 0
+	Patch "AALI7987", 88, 0
+}
+
+WallTexture "AALI1729", 128, 128
+{
+	Patch "AALI7986", 0, 64
+	Patch "AALI7987", 40, 64
+	Patch "AALI7987", 32, 64
+	Patch "AALI7987", 48, 64
+	Patch "AALI7987", 56, 64
+	Patch "AALI7988", 96, 64
+	Patch "AALI7987", 88, 64
+	Patch "AALI7987", 80, 64
+	Patch "AALI7987", 72, 64
+	Patch "AALI7987", 64, 64
+	Patch "AALI7983", 0, 0
+	Patch "AALI7985", 96, 0
+	Patch "AALI7984", 48, 0
+	Patch "AALI7984", 40, 0
+	Patch "AALI7984", 32, 0
+	Patch "AALI7984", 72, 0
+	Patch "AALI7984", 64, 0
+	Patch "AALI7984", 56, 0
+	Patch "AALI7984", 80, 0
+	Patch "AALI7984", 88, 0
+}
+
+WallTexture "AALI1774", 128, 256
+{
+	Patch "AALI1763", 0, 160
+	Patch "AALI1763", 0, -96
+}
+
+WallTexture "AALI1782", 8, 128
+{
+	Patch "AALI7550", 0, 112
+	Patch "AALI7550", 0, 0
+	Patch "AALI7550", 0, 96
+	Patch "AALI7550", 0, 80
+	Patch "AALI7550", 0, 16
+	Patch "AALI7550", 0, 32
+	Patch "AALI7550", 0, 48
+	Patch "AALI7550", 0, 64
+}
+
+WallTexture "AALI1783", 16, 128
+{
+	Patch "AALI7723", 0, 0
+	Patch "AALI7723", 0, 24
+	Patch "AALI7723", 0, 48
+	Patch "AALI7723", 0, 72
+	Patch "AALI7723", 0, 96
+	Patch "AALI7589", 0, 120
+}
+
+WallTexture "AALI1789", 8, 128
+{
+	Patch "AALI7551", 0, 0
+	Patch "AALI7551", 0, 16
+	Patch "AALI7551", 0, 32
+	Patch "AALI7551", 0, 48
+	Patch "AALI7551", 0, 64
+	Patch "AALI7551", 0, 80
+	Patch "AALI7551", 0, 96
+	Patch "AALI7551", 0, 112
+}
+
+WallTexture "AALI1790", 16, 128
+{
+	Patch "AALI7724", 0, 0
+	Patch "AALI7724", 0, 24
+	Patch "AALI7724", 0, 48
+	Patch "AALI7724", 0, 72
+	Patch "AALI7724", 0, 96
+	Patch "AALI7589", 0, 120
+}
+
+WallTexture "AALI1800", 8, 128
+{
+	Patch "AALI7552", 0, 112
+	Patch "AALI7552", 0, 80
+	Patch "AALI7552", 0, 64
+	Patch "AALI7552", 0, 0
+	Patch "AALI7552", 0, 16
+	Patch "AALI7552", 0, 48
+	Patch "AALI7552", 0, 32
+	Patch "AALI7552", 0, 96
+}
+
+WallTexture "AALI1801", 16, 128
+{
+	Patch "AALI7725", 0, 0
+	Patch "AALI7725", 0, 24
+	Patch "AALI7725", 0, 48
+	Patch "AALI7725", 0, 72
+	Patch "AALI7725", 0, 96
+	Patch "AALI7589", 0, 120
+}
+
+WallTexture "AALI2158", 256, 128
+{
+	Patch "AALI2157", 0, 0
+	Patch "AALI2157", 64, 0
+	Patch "AALI2157", 128, 0
+	Patch "AALI2157", 192, 0
+	Patch "AALI7721", 0, 0
+}
+
+WallTexture "AALI2159", 256, 128
+{
+	Patch "AALI2157", 0, 0
+	Patch "AALI2157", 64, 0
+	Patch "AALI2157", 128, 0
+	Patch "AALI2157", 192, 0
+	Patch "AALI7722", 0, 0
+}
+
+WallTexture "AALI2168", 128, 128
+{
+	Patch "AALI2197", 0, 0
+	Patch "AALI2197", 64, 0
+	Patch "AALI8622", 0, 0
+}
+
+WallTexture "AALI2178", 256, 256
+{
+	Patch "AALI8632", -48, 112
+	Patch "AALI8632", 144, 112
+	Patch "AALI8632", 0, 0
+	Patch "AALI2197", 192, 0
+	Patch "AALI2197", 192, 128
+}
+
+WallTexture "AALI2179", 256, 128
+{
+	Patch "AALI8633", 0, 0
+	Patch "AALI2197", 208, 0
+}
+
+WallTexture "AALI2180", 256, 128
+{
+	Patch "AALI8634", 0, 0
+	Patch "AALI0949", 192, 0
+}
+
+WallTexture "AALI2217", 128, 72
+{
+	Patch "AALI7613", 0, 0
+	Patch "AALI7611", 64, 0
+	Patch "AALI7612", 88, 0
+	Patch "AALI7577", 112, 0
+}
+
+WallTexture "AALI2218", 64, 16
+{
+	Patch "AALI7593", 0, 0
+	Patch "AALI7594", 32, 0
+	Patch "AALI7594", 40, 0
+	Patch "AALI7594", 48, 0
+	Patch "AALI7594", 56, 0
+}
+
+WallTexture "AALI2219", 64, 128
+{
+	Patch "AALI8022", 0, 64
+	Patch "AALI8022", 0, 0
+	Patch "AALI7593", 17, 22
+}
+
+WallTexture "AALI2320", 64, 128
+{
+	Patch "AALI2307", 0, 0
+	Patch "AALI9945", 0, 13
+	Patch "AALI9945", 0, 45
+	Patch "AALI9945", 0, 77
+	Patch "AALI9945", 0, 109
+}
+
+WallTexture "AALI2336", 8, 128
+{
+	Patch "AALI9936", 0, 0
+	Patch "AALI9936", 0, 64
+}
+
+WallTexture "AALI2349", 64, 128
+{
+	Patch "AALI9896", 0, 0
+	Patch "AALI9896", 0, 64
+}
+
+WallTexture "AALI2366", 64, 128
+{
+	Patch "AALI7544", 0, 64
+	Patch "AALI7544", 0, 0
+}
+
+WallTexture "AALI2367", 64, 72
+{
+	Patch "AALI7548", 0, -8
+	Patch "AALI7544", 0, 56
+	Patch "AALI7794", 20, 16
+}
+
+WallTexture "AALI2368", 64, 128
+{
+	Patch "AALI7547", 0, 0
+	Patch "AALI7547", 0, 64
+}
+
+WallTexture "AALI2369", 64, 128
+{
+	Patch "AALI7548", 0, 72
+	Patch "AALI7548", 0, 0
+	Patch "AALI7549", 0, 64
+}
+
+WallTexture "AALI2370", 256, 128
+{
+	Patch "AALI7546", 0, 0
+	Patch "AALI7545", 64, 0
+	Patch "AALI7546", 128, 0
+	Patch "AALI7549", 0, 120
+	Patch "AALI7549", 64, 120
+	Patch "AALI7549", 128, 120
+	Patch "AALI7546", 192, 0
+	Patch "AALI7549", 192, 120
+	Patch "AALI7546", 64, 56
+	Patch "AALI7545", 128, 56
+	Patch "AALI7546", 192, 56
+	Patch "AALI7546", 0, 56
+}
+
+WallTexture "AALI2371", 128, 128
+{
+	Patch "AALI2372", 0, 0
+	Patch "AALI2372", 64, 0
+	Patch "AALI7508", 83, 0
+}
+
+WallTexture "AALI2375", 64, 72
+{
+	Patch "AALI7727", 0, 0
+	Patch "AALI7728", 16, 0
+	Patch "AALI7729", 32, 0
+	Patch "AALI7730", 48, 0
+	Patch "AALI7795", 1, 19
+}
+
+WallTexture "AALI2376", 128, 128
+{
+	Patch "AALI2372", 16, 0
+	Patch "AALI7509", 80, 0
+	Patch "AALI7508", 0, 0
+	Patch "AALI2372", 96, 0
+}
+
+WallTexture "AALI2377", 256, 128
+{
+	Patch "AALI2372", 0, 0
+	Patch "AALI2372", 64, 0
+	Patch "AALI2372", 128, -16
+	Patch "AALI2372", 192, -16
+	Patch "AALI7721", 0, 0
+}
+
+WallTexture "AALI2381", 64, 128
+{
+	Patch "AALI8796", 0, 0
+	Patch "AALI8796", -32, 64
+	Patch "AALI8796", 32, 64
+}
+
+WallTexture "AALI2382", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI8798", 0, 0
+	Patch "AALI8798", -32, 64
+	Patch "AALI2373", 64, 24
+	Patch "AALI8798", 64, 0
+	Patch "AALI8798", 96, 64
+	Patch "AALI8798", 32, 64
+}
+
+WallTexture "AALI2383", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 24
+	Patch "AALI8798", 64, 64
+	Patch "AALI8798", 0, 64
+	Patch "AALI8797", 32, 0
+	Patch "AALI8798", 96, 0
+	Patch "AALI8798", -32, 0
+}
+
+WallTexture "AALI2384", 64, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI8799", 0, 0
+	Patch "AALI2386", 0, 64
+}
+
+WallTexture "AALI2394", 64, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI8810", 0, 0
+}
+
+WallTexture "AALI2395", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 8
+	Patch "AALI8811", 0, 0
+}
+
+WallTexture "AALI2396", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 56
+	Patch "AALI8812", 0, 0
+}
+
+WallTexture "AALI2397", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 56
+	Patch "AALI8813", 0, 0
+}
+
+WallTexture "AALI2398", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 16
+	Patch "AALI8814", 0, 0
+}
+
+WallTexture "AALI2399", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 16
+	Patch "AALI8815", 0, 0
+}
+
+WallTexture "AALI2400", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 8
+	Patch "AALI8816", 0, 0
+}
+
+WallTexture "AALI2401", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 0
+	Patch "AALI8817", 0, 0
+}
+
+WallTexture "AALI2402", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 0
+	Patch "AALI8818", 0, 0
+}
+
+WallTexture "AALI2407", 128, 128
+{
+	Patch "AALI2373", 8, 0
+	Patch "AALI2373", 56, 8
+	Patch "AALI8794", 0, 0
+}
+
+WallTexture "AALI2410", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI8798", 0, 0
+	Patch "AALI8798", -32, 64
+	Patch "AALI2374", 64, 24
+	Patch "AALI8798", 64, 0
+	Patch "AALI8798", 96, 64
+	Patch "AALI8798", 32, 64
+}
+
+WallTexture "AALI2411", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 24
+	Patch "AALI8798", 64, 64
+	Patch "AALI8798", 0, 64
+	Patch "AALI8797", 32, 0
+	Patch "AALI8798", 96, 0
+	Patch "AALI8798", -32, 0
+}
+
+WallTexture "AALI2412", 64, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI8799", 0, 0
+	Patch "AALI2386", 0, 64
+}
+
+WallTexture "AALI2413", 64, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI8810", 0, 0
+}
+
+WallTexture "AALI2414", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 8
+	Patch "AALI8811", 0, 0
+}
+
+WallTexture "AALI2415", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 56
+	Patch "AALI8812", 0, 0
+}
+
+WallTexture "AALI2416", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 56
+	Patch "AALI8813", 0, 0
+}
+
+WallTexture "AALI2417", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 16
+	Patch "AALI8814", 0, 0
+}
+
+WallTexture "AALI2418", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 16
+	Patch "AALI8815", 0, 0
+}
+
+WallTexture "AALI2419", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 8
+	Patch "AALI8816", 0, 0
+}
+
+WallTexture "AALI2420", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 0
+	Patch "AALI8817", 0, 0
+}
+
+WallTexture "AALI2421", 128, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 0
+	Patch "AALI8818", 0, 0
+}
+
+WallTexture "AALI2422", 128, 128
+{
+	Patch "AALI2374", 8, 0
+	Patch "AALI2374", 56, 8
+	Patch "AALI8794", 0, 0
+}
+
+WallTexture "AALI2423", 256, 128
+{
+	Patch "AALI2374", 0, 0
+	Patch "AALI2374", 64, 0
+	Patch "AALI2374", 128, 0
+	Patch "AALI2374", 192, 0
+	Patch "AALI8797", 64, 0
+	Patch "AALI8798", 128, 0
+	Patch "AALI8798", 192, 0
+	Patch "AALI8798", 0, 0
+	Patch "AALI8798", 64, 56
+	Patch "AALI8797", 128, 56
+	Patch "AALI8798", 192, 56
+	Patch "AALI8798", 0, 56
+	Patch "AALI7549", 0, 120
+	Patch "AALI7549", 64, 120
+	Patch "AALI7549", 128, 120
+	Patch "AALI7549", 192, 120
+}
+
+WallTexture "AALI2424", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 8
+	Patch "AALI8811", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2425", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 56
+	Patch "AALI8812", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2426", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 56
+	Patch "AALI8813", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2427", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 16
+	Patch "AALI8814", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2428", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 16
+	Patch "AALI8815", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2429", 128, 128
+{
+	Patch "AALI2373", 0, 0
+	Patch "AALI2373", 64, 8
+	Patch "AALI8816", 0, 0
+	Patch "AALI8822", 0, 56
+}
+
+WallTexture "AALI2439", 256, 128
+{
+	Patch "AALI7655", 0, 0
+	Patch "AALI7656", 64, 0
+	Patch "AALI7657", 128, 0
+	Patch "AALI7658", 192, 0
+}
+
+WallTexture "AALI2440", 256, 128
+{
+	Patch "AALI7676", 0, 0
+	Patch "AALI7677", 64, 0
+	Patch "AALI7678", 128, 0
+	Patch "AALI7679", 192, 0
+}
+
+WallTexture "AALI2442", 256, 128
+{
+	Patch "AALI7655", 0, 0
+	Patch "AALI7656", 64, 0
+	Patch "AALI7657", 128, 0
+	Patch "AALI7658", 192, 0
+	Patch "AALI7721", 0, 0
+}
+
+WallTexture "AALI2443", 256, 128
+{
+	Patch "AALI7655", 0, 0
+	Patch "AALI7656", 64, 0
+	Patch "AALI7657", 128, 0
+	Patch "AALI7658", 192, 0
+	Patch "AALI7722", 0, 0
+}
+
+WallTexture "AALI2632", 64, 128
+{
+	Patch "AALI7688", 0, 0
+	Patch "AALI7546", 0, 64
+}
+
+WallTexture "AALI2633", 64, 128
+{
+	Patch "AALI7692", 0, 0
+	Patch "AALI7547", 0, 64
+}
+
+WallTexture "AALI2634", 64, 128
+{
+	Patch "AALI7695", 0, 0
+	Patch "AALI7689", 0, 64
+	Patch "AALI7687", 32, 64
+}
+
+WallTexture "AALI2635", 64, 128
+{
+	Patch "AALI7694", 0, 0
+	Patch "AALI7693", 0, 64
+}
+
+WallTexture "AALI2636", 64, 128
+{
+	Patch "AALI7690", 0, 0
+	Patch "AALI7546", 0, 64
+}
+
+WallTexture "AALI2637", 64, 128
+{
+	Patch "AALI7686", 0, 0
+	Patch "AALI7687", 63, 64
+	Patch "AALI7691", 28, 64
+	Patch "AALI7687", -1, 64
+}
+
+WallTexture "AALI2730", 32, 128
+{
+	Patch "AALI7621", 0, 0
+	Patch "AALI7622", 8, 0
+	Patch "AALI7622", 16, 0
+	Patch "AALI7623", 24, 0
+	Patch "AALI7621", 0, 8
+	Patch "AALI7622", 8, 8
+	Patch "AALI7622", 16, 8
+	Patch "AALI7623", 24, 8
+	Patch "AALI7621", 0, 16
+	Patch "AALI7622", 8, 16
+	Patch "AALI7622", 16, 16
+	Patch "AALI7623", 24, 16
+	Patch "AALI7621", 0, 24
+	Patch "AALI7622", 8, 24
+	Patch "AALI7622", 16, 24
+	Patch "AALI7623", 24, 24
+	Patch "AALI7621", 0, 32
+	Patch "AALI7622", 8, 32
+	Patch "AALI7622", 16, 32
+	Patch "AALI7623", 24, 32
+	Patch "AALI7621", 0, 40
+	Patch "AALI7622", 8, 40
+	Patch "AALI7622", 16, 40
+	Patch "AALI7623", 24, 40
+	Patch "AALI7621", 0, 48
+	Patch "AALI7622", 8, 48
+	Patch "AALI7622", 16, 48
+	Patch "AALI7623", 24, 48
+	Patch "AALI7621", 0, 56
+	Patch "AALI7622", 8, 56
+	Patch "AALI7622", 16, 56
+	Patch "AALI7623", 24, 56
+	Patch "AALI7621", 0, 64
+	Patch "AALI7622", 8, 64
+	Patch "AALI7622", 16, 64
+	Patch "AALI7623", 24, 64
+	Patch "AALI7621", 0, 72
+	Patch "AALI7622", 8, 72
+	Patch "AALI7622", 16, 72
+	Patch "AALI7623", 24, 72
+	Patch "AALI7621", 0, 80
+	Patch "AALI7622", 8, 80
+	Patch "AALI7622", 16, 80
+	Patch "AALI7623", 24, 80
+	Patch "AALI7621", 0, 88
+	Patch "AALI7622", 8, 88
+	Patch "AALI7622", 16, 88
+	Patch "AALI7623", 24, 88
+	Patch "AALI7621", 0, 96
+	Patch "AALI7622", 8, 96
+	Patch "AALI7622", 16, 96
+	Patch "AALI7623", 24, 96
+	Patch "AALI7621", 0, 104
+	Patch "AALI7622", 8, 104
+	Patch "AALI7622", 16, 104
+	Patch "AALI7623", 24, 104
+	Patch "AALI7621", 0, 112
+	Patch "AALI7622", 8, 112
+	Patch "AALI7622", 16, 112
+	Patch "AALI7623", 24, 112
+	Patch "AALI7621", 0, 120
+	Patch "AALI7622", 8, 120
+	Patch "AALI7622", 16, 120
+	Patch "AALI7623", 24, 120
+}
+
+WallTexture "AALI2731", 16, 128
+{
+	Patch "AALI7621", 0, 0
+	Patch "AALI7623", 8, 0
+	Patch "AALI7621", 0, 8
+	Patch "AALI7623", 8, 8
+	Patch "AALI7621", 0, 16
+	Patch "AALI7623", 8, 16
+	Patch "AALI7621", 0, 24
+	Patch "AALI7623", 8, 24
+	Patch "AALI7621", 0, 32
+	Patch "AALI7623", 8, 32
+	Patch "AALI7621", 0, 40
+	Patch "AALI7623", 8, 40
+	Patch "AALI7621", 0, 48
+	Patch "AALI7623", 8, 48
+	Patch "AALI7621", 0, 56
+	Patch "AALI7623", 8, 56
+	Patch "AALI7621", 0, 64
+	Patch "AALI7623", 8, 64
+	Patch "AALI7621", 0, 72
+	Patch "AALI7623", 8, 72
+	Patch "AALI7621", 0, 80
+	Patch "AALI7623", 8, 80
+	Patch "AALI7621", 0, 88
+	Patch "AALI7623", 8, 88
+	Patch "AALI7621", 0, 96
+	Patch "AALI7623", 8, 96
+	Patch "AALI7621", 0, 104
+	Patch "AALI7623", 8, 104
+	Patch "AALI7621", 0, 112
+	Patch "AALI7623", 8, 112
+	Patch "AALI7621", 0, 120
+	Patch "AALI7623", 8, 120
+}
+
+WallTexture "AALI2733", 16, 128
+{
+	Patch "AALI7618", 0, 0
+	Patch "AALI7619", 8, 0
+	Patch "AALI7620", 8, 0
+	Patch "AALI7618", 0, 8
+	Patch "AALI7620", 8, 8
+	Patch "AALI7618", 0, 16
+	Patch "AALI7620", 8, 16
+	Patch "AALI7618", 0, 24
+	Patch "AALI7620", 8, 24
+	Patch "AALI7618", 0, 32
+	Patch "AALI7620", 8, 32
+	Patch "AALI7618", 0, 40
+	Patch "AALI7620", 8, 40
+	Patch "AALI7618", 0, 48
+	Patch "AALI7620", 8, 48
+	Patch "AALI7618", 0, 56
+	Patch "AALI7620", 8, 56
+	Patch "AALI7618", 0, 64
+	Patch "AALI7620", 8, 64
+	Patch "AALI7618", 0, 72
+	Patch "AALI7620", 8, 72
+	Patch "AALI7618", 0, 80
+	Patch "AALI7620", 8, 80
+	Patch "AALI7618", 0, 88
+	Patch "AALI7620", 8, 88
+	Patch "AALI7618", 0, 96
+	Patch "AALI7620", 8, 96
+	Patch "AALI7618", 0, 104
+	Patch "AALI7620", 8, 104
+	Patch "AALI7618", 0, 112
+	Patch "AALI7620", 8, 112
+	Patch "AALI7618", 0, 120
+	Patch "AALI7620", 8, 120
+}
+
+WallTexture "AALI2898", 64, 128
+{
+	Patch "AALI7531", 0, 0
+	Patch "AALI7531", 0, 64
+}
+
+WallTexture "AALI2986", 128, 128
+{
+	Patch "AALI7533", 0, 0
+	Patch "AALI7534", 16, 0
+	Patch "AALI7535", 32, 0
+	Patch "AALI7532", 48, 0
+	Patch "AALI7532", 64, 0
+	Patch "AALI7535", 96, 32
+	Patch "AALI7533", 80, 0
+	Patch "AALI7535", 112, 0
+	Patch "AALI7536", 96, 0
+	Patch "AALI2985", 0, 104
+	Patch "AALI2985", 64, 104
+	Patch "AALI7535", 112, 32
+	Patch "AALI7533", 0, 33
+	Patch "AALI7534", 16, 33
+	Patch "AALI7535", 32, 33
+	Patch "AALI7532", 48, 33
+	Patch "AALI7532", 64, 33
+	Patch "AALI7533", 80, 33
+}
+
+WallTexture "AALI2987", 128, 128
+{
+	Patch "AALI7533", 0, 0
+	Patch "AALI7534", 16, 0
+	Patch "AALI7535", 32, 0
+	Patch "AALI7532", 48, 0
+	Patch "AALI2985", 0, 104
+	Patch "AALI7533", 0, 33
+	Patch "AALI7534", 16, 33
+	Patch "AALI7535", 32, 33
+	Patch "AALI7532", 48, 33
+	Patch "AALI8054", 0, 69
+	Patch "AALI7532", 64, 0
+	Patch "AALI7533", 80, 0
+	Patch "AALI7534", 112, 0
+	Patch "AALI7536", 96, 0
+	Patch "AALI7532", 112, 72
+	Patch "AALI7533", 96, 72
+	Patch "AALI7534", 80, 72
+	Patch "AALI7535", 64, 64
+	Patch "AALI2985", 64, 105
+}
+
+WallTexture "AALI3022", 256, 128
+{
+	Patch "AALI7781", 0, 0
+	Patch "AALI7782", 128, 0
+}
+
+WallTexture "AALI3023", 256, 128
+{
+	Patch "AALI7597", 0, 0
+	Patch "AALI7598", 128, 0
+}
+
+WallTexture "AALI3024", 256, 128
+{
+	Patch "AALI7778", 0, 0
+	Patch "AALI7779", 128, 0
+}
+
+WallTexture "AALI3025", 256, 128
+{
+	Patch "AALI7776", 0, 0
+	Patch "AALI7777", 128, 0
+}
+
+WallTexture "AALI3063", 64, 128
+{
+	Patch "AALI9312", 0, 0
+	Patch "AALI9312", 0, 64
+}
+
+WallTexture "AALI3068", 64, 128
+{
+	Patch "AALI9257", 0, 0
+	Patch "AALI9257", 0, 64
+}
+
+WallTexture "AALI3069", 64, 128
+{
+	Patch "AALI9258", 0, 0
+	Patch "AALI9258", 0, 64
+}
+
+WallTexture "AALI3070", 64, 128
+{
+	Patch "AALI9259", 0, 0
+	Patch "AALI9259", 0, 64
+}
+
+WallTexture "AALI3095", 128, 256
+{
+	Patch "AALI3083", 0, 0
+	Patch "AALI3089", 0, 128
+}
+
+WallTexture "AALI3096", 128, 256
+{
+	Patch "AALI3084", 0, 0
+	Patch "AALI3090", 0, 128
+}
+
+WallTexture "AALI3097", 128, 256
+{
+	Patch "AALI3085", 0, 0
+	Patch "AALI3091", 0, 128
+}
+
+WallTexture "AALI3098", 128, 256
+{
+	Patch "AALI3086", 0, 0
+	Patch "AALI3092", 0, 128
+}
+
+WallTexture "AALI3099", 128, 256
+{
+	Patch "AALI3087", 0, 0
+	Patch "AALI3093", 0, 128
+}
+
+WallTexture "AALI3100", 128, 256
+{
+	Patch "AALI3082", 0, 0
+	Patch "AALI3088", 0, 128
+}
+
+WallTexture "AALI3101", 128, 256
+{
+	Patch "AALI3094", 0, 0
+	Patch "AALI3102", 0, 128
+}
+
+WallTexture "AALI3107", 128, 128
+{
+	Patch "AALI7538", 64, 56
+	Patch "AALI7538", 64, 0
+	Patch "AALI7538", 0, 56
+	Patch "AALI7775", 0, 0
+}
+
+WallTexture "AALI3131", 128, 128
+{
+	Patch "AALI7742", 64, 0
+	Patch "AALI7743", 0, 0
+}
+
+WallTexture "AALI3134", 64, 128
+{
+	Patch "AALI8073", 0, 0
+	Patch "AALI8074", 32, 0
+}
+
+WallTexture "AALI3135", 256, 128
+{
+	Patch "AALI7716", 0, 0
+	Patch "AALI7717", 128, 0
+}
+
+WallTexture "AALI3136", 128, 128
+{
+	Patch "AALI7739", 0, 0
+	Patch "AALI7741", 64, 0
+}
+
+WallTexture "AALI3137", 256, 128
+{
+	Patch "AALI7737", 0, 0
+	Patch "AALI7738", 128, 0
+}
+
+WallTexture "AALI3138", 256, 104
+{
+	Patch "AALI7703", 0, 0
+	Patch "AALI7704", 128, 0
+}
+
+WallTexture "AALI3139", 256, 128
+{
+	Patch "AALI7710", 0, 0
+	Patch "AALI7711", 128, 0
+}
+
+WallTexture "AALI3140", 256, 128
+{
+	Patch "AALI7712", 0, 0
+	Patch "AALI7713", 128, 0
+}
+
+WallTexture "AALI3141", 256, 128
+{
+	Patch "AALI7714", 0, 0
+	Patch "AALI7715", 128, 0
+}
+
+WallTexture "AALI3142", 256, 128
+{
+	Patch "AALI7718", 0, 0
+	Patch "AALI7719", 128, 0
+}
+
+WallTexture "AALI3143", 256, 128
+{
+	Patch "AALI8063", 0, 0
+	Patch "AALI8064", 128, 0
+}
+
+WallTexture "AALI3150", 256, 96
+{
+	Patch "AALI7744", 0, 0
+	Patch "AALI7745", 128, 0
+}
+
+WallTexture "AALI3151", 128, 128
+{
+	Patch "AALI8059", -12, 0
+	Patch "AALI8059", 116, 0
+}
+
+WallTexture "AALI3152", 128, 128
+{
+	Patch "AALI8060", -4, 0
+	Patch "AALI8060", 124, 0
+}
+
+WallTexture "AALI3154", 1024, 240
+{
+	Patch "AALI3178", 0, 0
+	Patch "AALI3161", 0, 0
+}
+
+WallTexture "AALI3155", 1024, 240
+{
+	Patch "AALI3178", 0, 0
+	Patch "AALI3170", 0, 0
+}
+
+WallTexture "AALI3180", 1024, 128
+{
+	Patch "AALI8090", 0, 0
+	Patch "AALI8091", 256, 0
+	Patch "AALI8092", 512, 0
+	Patch "AALI8093", 768, 0
+}
+
+WallTexture "AALI3183", 64, 128
+{
+	Patch "AALI3184", 0, 0
+	Patch "AALI7788", 21, 65
+}
+
+WallTexture "AALI3284", 256, 128
+{
+	Patch "AALI7975", 0, 0
+	Patch "AALI7976", 64, 0
+	Patch "AALI7977", 128, 0
+	Patch "AALI7978", 192, 0
+}
+
+WallTexture "AALI3285", 256, 128
+{
+	Patch "AALI9577", 0, 0
+	Patch "AALI9578", 64, 0
+	Patch "AALI9579", 128, 0
+	Patch "AALI9580", 192, 0
+}
+
+WallTexture "AALI3295", 64, 128
+{
+	Patch "AALI7563", 0, 0
+	Patch "AALI8038", 32, 0
+}
+
+WallTexture "AALI3296", 128, 128
+{
+	Patch "AALI7749", 0, 0
+	Patch "AALI7753", 32, 0
+	Patch "AALI7750", 64, 0
+	Patch "AALI7754", 96, 0
+}
+
+WallTexture "AALI3299", 64, 128
+{
+	Patch "AALI7564", 0, 0
+	Patch "AALI7565", 32, 0
+}
+
+WallTexture "AALI3306", 128, 128
+{
+	Patch "AALI7755", 0, 0
+	Patch "AALI7756", 32, 0
+	Patch "AALI7757", 64, 0
+	Patch "AALI7758", 96, 0
+}
+
+WallTexture "AALI3322", 64, 128
+{
+	Patch "AALI7561", 0, 0
+	Patch "AALI7562", 32, 0
+}
+
+WallTexture "AALI3323", 128, 128
+{
+	Patch "AALI7747", 0, 0
+	Patch "AALI7748", 64, 0
+	Patch "AALI7751", 96, 0
+	Patch "AALI7752", 32, 0
+}
+
+WallTexture "AALI3324", 256, 128
+{
+	Patch "AALI7561", 0, 0
+	Patch "AALI7561", 192, 0
+	Patch "AALI7561", 128, 0
+	Patch "AALI7561", 64, 0
+	Patch "AALI7562", 224, 0
+	Patch "AALI7562", 160, 0
+	Patch "AALI7562", 96, 0
+	Patch "AALI7562", 32, 0
+	Patch "AALI9389", 0, 56
+}
+
+WallTexture "AALI3353", 64, 128
+{
+	Patch "AALI7566", 0, 0
+	Patch "AALI7567", 32, 0
+}
+
+WallTexture "AALI3354", 128, 128
+{
+	Patch "AALI7572", 0, 0
+	Patch "AALI7573", 32, 0
+	Patch "AALI7574", 64, 0
+	Patch "AALI7576", 96, 0
+}
+
+WallTexture "AALI3363", 32, 16
+{
+	Patch "AALI7587", 0, 8
+	Patch "AALI7587", 0, 5
+	Patch "AALI7586", 0, 0
+}
+
+WallTexture "AALI3364", 32, 16
+{
+	Patch "AALI9967", 0, 0
+	Patch "AALI9968", 0, 8
+}
+
+WallTexture "AALI3365", 32, 16
+{
+	Patch "AALI9959", 0, 0
+	Patch "AALI9961", 0, 8
+}
+
+WallTexture "AALI3369", 32, 16
+{
+	Patch "AALI7587", 0, 0
+	Patch "AALI7587", 0, 8
+}
+
+WallTexture "AALI3370", 32, 16
+{
+	Patch "AALI9968", 0, 0
+	Patch "AALI9968", 0, 8
+}
+
+WallTexture "AALI3371", 32, 16
+{
+	Patch "AALI9961", 0, 0
+	Patch "AALI9961", 0, 8
+}
+
+WallTexture "AALI3372", 64, 16
+{
+	Patch "AALI9974", 0, 0
+	Patch "AALI9974", 0, 8
+}
+
+WallTexture "AALI3374", 32, 16
+{
+	Patch "AALI7591", 0, 0
+	Patch "AALI7590", 0, 8
+}
+
+WallTexture "AALI3375", 32, 16
+{
+	Patch "AALI9969", 0, 0
+	Patch "AALI9970", 0, 8
+}
+
+WallTexture "AALI3376", 32, 16
+{
+	Patch "AALI9962", 0, 0
+	Patch "AALI9963", 0, 8
+}
+
+WallTexture "AALI3377", 32, 16
+{
+	Patch "AALI7592", 0, 8
+	Patch "AALI7589", 0, 0
+}
+
+WallTexture "AALI3378", 32, 16
+{
+	Patch "AALI9972", 0, 0
+	Patch "AALI9971", 0, 8
+}
+
+WallTexture "AALI3379", 32, 16
+{
+	Patch "AALI9964", 0, 0
+	Patch "AALI9965", 0, 8
+}
+
+WallTexture "AALI3380", 32, 16
+{
+	Patch "AALI9957", 0, 0
+	Patch "AALI9957", 0, 8
+}
+
+WallTexture "AALI3381", 32, 16
+{
+	Patch "AALI9958", 0, 0
+	Patch "AALI9958", 0, 8
+}
+
+WallTexture "AALI3520", 256, 128
+{
+	Patch "AALI7514", 0, 0
+	Patch "AALI7515", 16, 0
+	Patch "AALI7516", 32, 0
+	Patch "AALI7517", 48, 0
+	Patch "AALI7518", 64, 0
+	Patch "AALI7519", 80, 0
+	Patch "AALI7520", 96, 0
+	Patch "AALI7521", 112, 0
+	Patch "AALI7522", 128, 0
+	Patch "AALI7523", 144, 0
+	Patch "AALI7524", 160, 0
+	Patch "AALI7525", 176, 0
+	Patch "AALI7516", 192, 0
+	Patch "AALI7514", 208, 0
+	Patch "AALI7519", 224, 0
+	Patch "AALI7523", 240, 0
+	Patch "AALI7514", 0, 72
+	Patch "AALI7515", 16, 72
+	Patch "AALI7516", 32, 72
+	Patch "AALI7517", 48, 72
+	Patch "AALI7518", 64, 72
+	Patch "AALI7519", 80, 72
+	Patch "AALI7520", 96, 72
+	Patch "AALI7521", 112, 72
+	Patch "AALI7522", 128, 72
+	Patch "AALI7523", 144, 72
+	Patch "AALI7524", 160, 72
+	Patch "AALI7525", 176, 72
+	Patch "AALI7516", 192, 72
+	Patch "AALI7514", 208, 72
+	Patch "AALI7519", 224, 72
+	Patch "AALI7523", 240, 72
+	Patch "AALI7549", 0, 64
+	Patch "AALI7549", 64, 64
+	Patch "AALI7549", 128, 64
+	Patch "AALI7549", 192, 64
+	Patch "AALI7549", 0, 120
+	Patch "AALI7549", 64, 120
+	Patch "AALI7549", 128, 120
+	Patch "AALI7549", 192, 120
+}
+
+WallTexture "AALI3521", 128, 128
+{
+	Patch "AALI8022", 0, 64
+	Patch "AALI8022", 64, 0
+	Patch "AALI8023", 0, 0
+	Patch "AALI8023", 64, 64
+}
+
+WallTexture "AALI3522", 128, 128
+{
+	Patch "AALI8025", 0, 0
+	Patch "AALI8024", 0, 64
+	Patch "AALI8025", 64, 64
+	Patch "AALI8024", 64, 0
+}
+
+WallTexture "AALI3577", 64, 128
+{
+	Patch "AALI7647", 20, 0
+	Patch "AALI7647", 0, 0
+	Patch "AALI7647", 40, 0
+}
+
+WallTexture "AALI3582", 64, 128
+{
+	Patch "AALI6061", 0, 0
+	Patch "AALI7780", 0, 64
+	Patch "AALI7792", 14, 66
+}
+
+WallTexture "AALI3583", 128, 128
+{
+	Patch "AALI1556", 0, 0
+	Patch "AALI7626", 48, 72
+}
+
+WallTexture "AALI3584", 64, 128
+{
+	Patch "AALI1417", 0, 0
+	Patch "AALI7626", 16, 72
+}
+
+WallTexture "AALI3585", 64, 128
+{
+	Patch "AALI7527", 0, 56
+	Patch "AALI7527", 0, 0
+	Patch "AALI7630", 16, 75
+}
+
+WallTexture "AALI3586", 64, 128
+{
+	Patch "AALI7527", 0, 56
+	Patch "AALI7527", 0, 0
+	Patch "AALI8006", 20, 79
+}
+
+WallTexture "AALI3587", 64, 128
+{
+	Patch "AALI1562", 0, 0
+	Patch "AALI8006", 20, 80
+}
+
+WallTexture "AALI3588", 128, 128
+{
+	Patch "AALI1556", 0, 0
+	Patch "AALI7631", 48, 72
+}
+
+WallTexture "AALI3589", 64, 128
+{
+	Patch "AALI1606", -42, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3590", 64, 72
+{
+	Patch "AALI7538", 0, 0
+	Patch "AALI7626", 15, 18
+}
+
+WallTexture "AALI3591", 64, 128
+{
+	Patch "AALI8016", 0, 64
+	Patch "AALI8019", 0, 0
+	Patch "AALI8016", 32, 64
+	Patch "AALI7628", 16, 72
+}
+
+WallTexture "AALI3592", 64, 128
+{
+	Patch "AALI7512", 32, 0
+	Patch "AALI7511", 16, 0
+	Patch "AALI7626", 16, 20
+	Patch "AALI7511", 0, -16
+	Patch "AALI7512", 48, 0
+}
+
+WallTexture "AALI3593", 32, 72
+{
+	Patch "AALI7546", 0, 0
+	Patch "AALI7628", 0, 16
+	Patch "AALI7549", 0, 64
+}
+
+WallTexture "AALI3594", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7649", 12, 62
+}
+
+WallTexture "AALI3596", 64, 128
+{
+	Patch "AALI7544", 0, 0
+	Patch "AALI7544", 0, 64
+	Patch "AALI7628", 16, 70
+}
+
+WallTexture "AALI3597", 64, 128
+{
+	Patch "AALI7544", 0, 64
+	Patch "AALI7544", 0, 0
+	Patch "AALI8006", 19, 79
+}
+
+WallTexture "AALI3598", 64, 128
+{
+	Patch "AALI7656", 0, 0
+	Patch "AALI7792", 13, 67
+}
+
+WallTexture "AALI3599", 64, 128
+{
+	Patch "AALI7975", 0, 0
+	Patch "AALI7792", 12, 66
+}
+
+WallTexture "AALI3600", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7648", 11, 62
+}
+
+WallTexture "AALI3601", 64, 128
+{
+	Patch "AALI2855", 0, 0
+	Patch "AALI7792", 13, 55
+}
+
+WallTexture "AALI3602", 256, 128
+{
+	Patch "YYYY0026", 0, 0
+	Patch "YYYY0028", 128, 0
+	Patch "YYYY0036", 128, 64
+	Patch "YYYY0038", 128, 96
+	Patch "YYYY0018", 160, 64
+	Patch "YYYY0020", 160, 96
+	Patch "YYYY0030", 216, 0
+	Patch "YYYY0032", 192, 24
+	Patch "YYYY0034", 216, 24
+	Patch "AALI8006", 192, 0
+	Patch "YYYY0024", 192, 48
+	Patch "AALI9054", 192, 80
+	Patch "AALI9054", 224, 48
+	Patch "AALI9054", 240, 0
+}
+
+WallTexture "AALI3603", 64, 128
+{
+	Patch "AALI2900", 0, 0
+	Patch "AALI7626", 16, 20
+}
+
+WallTexture "AALI3604", 64, 128
+{
+	Patch "AALI7531", 0, 0
+	Patch "AALI7531", 0, 64
+	Patch "AALI8006", 20, 68
+}
+
+WallTexture "AALI3605", 64, 128
+{
+	Patch "AALI2980", 0, 0
+	Patch "AALI8006", 20, 80
+}
+
+WallTexture "AALI3606", 64, 128
+{
+	Patch "AALI3011", 0, 0
+	Patch "AALI7792", 14, 64
+}
+
+WallTexture "AALI3607", 128, 128
+{
+	Patch "AALI7598", 0, 0
+	Patch "AALI7630", 48, 76
+}
+
+WallTexture "AALI3608", 64, 128
+{
+	Patch "AALI3047", 0, 0
+	Patch "AALI7792", 14, 66
+}
+
+WallTexture "AALI3609", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7646", 12, 62
+}
+
+WallTexture "AALI3611", 64, 128
+{
+	Patch "AALI7740", 0, 0
+	Patch "AALI7790", 0, 59
+}
+
+WallTexture "AALI3613", 64, 128
+{
+	Patch "AALI3184", 0, 0
+	Patch "AALI7617", 24, 73
+}
+
+WallTexture "AALI3614", 128, 128
+{
+	Patch "AALI3314", 0, 0
+	Patch "AALI7630", 48, 76
+}
+
+WallTexture "AALI3615", 64, 128
+{
+	Patch "AALI8022", 0, 64
+	Patch "AALI8022", 0, 0
+	Patch "AALI7626", 16, 78
+}
+
+WallTexture "AALI3616", 64, 128
+{
+	Patch "AALI8023", 0, 0
+	Patch "AALI8022", 0, 64
+	Patch "AALI7617", 24, 73
+}
+
+WallTexture "AALI3617", 64, 128
+{
+	Patch "AALI3525", 0, 0
+	Patch "AALI7628", 16, 72
+}
+
+WallTexture "AALI3618", 64, 128
+{
+	Patch "AALI7514", 0, 0
+	Patch "AALI7515", 16, 0
+	Patch "AALI7516", 32, 0
+	Patch "AALI7517", 48, 0
+	Patch "AALI7514", 0, 72
+	Patch "AALI7515", 16, 72
+	Patch "AALI7516", 32, 72
+	Patch "AALI7517", 48, 72
+	Patch "AALI7549", 0, 64
+	Patch "AALI7549", 0, 120
+	Patch "AALI7626", 16, 72
+}
+
+WallTexture "AALI3619", 64, 128
+{
+	Patch "AALI3288", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3620", 64, 128
+{
+	Patch "AALI3315", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3621", 64, 128
+{
+	Patch "AALI3325", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3622", 64, 128
+{
+	Patch "AALI3332", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3623", 64, 128
+{
+	Patch "AALI3339", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3624", 64, 128
+{
+	Patch "AALI3346", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3625", 64, 128
+{
+	Patch "AALI3356", 0, 0
+	Patch "AALI7631", 16, 72
+}
+
+WallTexture "AALI3626", 64, 128
+{
+	Patch "AALI7566", 0, 0
+	Patch "AALI7567", 32, 0
+	Patch "AALI7626", 16, 72
+}
+
+WallTexture "AALI3627", 64, 128
+{
+	Patch "AALI3727", 0, 0
+	Patch "AALI8006", 20, 79
+}
+
+WallTexture "AALI3628", 64, 128
+{
+	Patch "AALI2372", 0, -16
+	Patch "AALI7721", 0, 0
+	Patch "AALI8006", 20, 84
+}
+
+WallTexture "AALI3629", 64, 128
+{
+	Patch "AALI4018", 0, 0
+	Patch "AALI7594", 24, 48
+	Patch "AALI7594", 32, 64
+	Patch "AALI7594", 32, 48
+	Patch "AALI7594", 24, 64
+	Patch "AALI7723", 24, 52
+	Patch "AALI7594", 40, 48
+	Patch "AALI7594", 40, 64
+	Patch "AALI7594", 16, 48
+	Patch "AALI7594", 16, 64
+}
+
+WallTexture "AALI3630", 64, 128
+{
+	Patch "AALI7645", -64, 0
+	Patch "AALI7792", 14, 66
+}
+
+WallTexture "AALI3631", 64, 128
+{
+	Patch "AALI4035", 0, 0
+	Patch "AALI7792", 16, 66
+}
+
+WallTexture "AALI3632", 64, 128
+{
+	Patch "AALI6061", 0, 0
+	Patch "AALI7780", 0, 64
+	Patch "AALI7793", 14, 66
+}
+
+WallTexture "AALI3633", 128, 128
+{
+	Patch "AALI1556", 0, 0
+	Patch "AALI7627", 48, 72
+}
+
+WallTexture "AALI3634", 64, 128
+{
+	Patch "AALI1417", 0, 0
+	Patch "AALI7627", 16, 72
+}
+
+WallTexture "AALI3635", 64, 128
+{
+	Patch "AALI7589", 32, 72
+	Patch "AALI7589", 0, 72
+	Patch "AALI7527", 0, 56
+	Patch "AALI7527", 0, 0
+	Patch "AALI7631", 16, 75
+}
+
+WallTexture "AALI3636", 64, 128
+{
+	Patch "AALI7527", 0, 56
+	Patch "AALI7527", 0, 0
+	Patch "AALI8005", 20, 79
+}
+
+WallTexture "AALI3637", 64, 128
+{
+	Patch "AALI1562", 0, 0
+	Patch "AALI8005", 20, 80
+}
+
+WallTexture "AALI3638", 128, 128
+{
+	Patch "AALI1556", 0, 0
+	Patch "AALI7630", 48, 72
+}
+
+WallTexture "AALI3639", 64, 128
+{
+	Patch "AALI1606", -42, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3640", 64, 72
+{
+	Patch "AALI7538", 0, 0
+	Patch "AALI7627", 15, 18
+}
+
+WallTexture "AALI3641", 64, 128
+{
+	Patch "AALI8016", 0, 64
+	Patch "AALI8019", 0, 0
+	Patch "AALI8016", 32, 64
+	Patch "AALI7629", 16, 72
+}
+
+WallTexture "AALI3642", 64, 128
+{
+	Patch "AALI7513", 48, 0
+	Patch "AALI7512", 32, 0
+	Patch "AALI7511", 16, 0
+	Patch "AALI7510", 0, -1
+	Patch "AALI7627", 16, 20
+}
+
+WallTexture "AALI3643", 32, 72
+{
+	Patch "AALI7546", 0, 0
+	Patch "AALI7629", 0, 16
+	Patch "AALI7549", 0, 64
+}
+
+WallTexture "AALI3644", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7654", 12, 62
+}
+
+WallTexture "AALI3646", 64, 128
+{
+	Patch "AALI7544", 0, 0
+	Patch "AALI7544", 0, 64
+	Patch "AALI7629", 16, 70
+}
+
+WallTexture "AALI3647", 64, 128
+{
+	Patch "AALI7544", 0, 64
+	Patch "AALI7544", 0, 0
+	Patch "AALI8005", 19, 79
+}
+
+WallTexture "AALI3648", 64, 128
+{
+	Patch "AALI7656", 0, 0
+	Patch "AALI7793", 13, 67
+}
+
+WallTexture "AALI3649", 64, 128
+{
+	Patch "AALI7975", 0, 0
+	Patch "AALI7793", 12, 66
+}
+
+WallTexture "AALI3650", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7653", 11, 62
+}
+
+WallTexture "AALI3651", 64, 128
+{
+	Patch "AALI2855", 0, 0
+	Patch "AALI7793", 13, 55
+}
+
+WallTexture "AALI3652", 256, 128
+{
+	Patch "AALI9054", 224, 48
+	Patch "AALI9054", 192, 80
+	Patch "AALI9054", 240, 0
+	Patch "YYYY0027", 0, 0
+	Patch "YYYY0029", 128, 0
+	Patch "YYYY0031", 216, 0
+	Patch "YYYY0033", 192, 24
+	Patch "YYYY0035", 216, 24
+	Patch "YYYY0037", 128, 64
+	Patch "YYYY0039", 128, 96
+	Patch "YYYY0019", 160, 64
+	Patch "YYYY0021", 160, 96
+	Patch "YYYY0025", 192, 48
+	Patch "AALI8005", 192, 0
+}
+
+WallTexture "AALI3653", 64, 128
+{
+	Patch "AALI2900", 0, 0
+	Patch "AALI7627", 16, 20
+}
+
+WallTexture "AALI3654", 64, 128
+{
+	Patch "AALI7531", 0, 0
+	Patch "AALI7531", 0, 64
+	Patch "AALI8005", 20, 68
+}
+
+WallTexture "AALI3655", 64, 128
+{
+	Patch "AALI2980", 0, 0
+	Patch "AALI8005", 20, 80
+}
+
+WallTexture "AALI3656", 64, 128
+{
+	Patch "AALI3011", 0, 0
+	Patch "AALI7793", 14, 64
+}
+
+WallTexture "AALI3657", 128, 128
+{
+	Patch "AALI7598", 0, 0
+	Patch "AALI7631", 48, 76
+}
+
+WallTexture "AALI3658", 64, 128
+{
+	Patch "AALI3047", 0, 0
+	Patch "AALI7793", 14, 66
+}
+
+WallTexture "AALI3659", 64, 128
+{
+	Patch "AALI2908", 0, 0
+	Patch "AALI7652", 12, 62
+}
+
+WallTexture "AALI3661", 64, 128
+{
+	Patch "AALI7740", 0, 0
+	Patch "AALI7791", 0, 59
+}
+
+WallTexture "AALI3663", 64, 128
+{
+	Patch "AALI3184", 0, 0
+	Patch "AALI7616", 24, 73
+}
+
+WallTexture "AALI3664", 128, 128
+{
+	Patch "AALI3314", 0, 0
+	Patch "AALI7631", 48, 76
+}
+
+WallTexture "AALI3665", 64, 128
+{
+	Patch "AALI8022", 0, 64
+	Patch "AALI8022", 0, 0
+	Patch "AALI7627", 16, 78
+}
+
+WallTexture "AALI3666", 64, 128
+{
+	Patch "AALI8022", 0, 64
+	Patch "AALI7616", 24, 73
+	Patch "AALI8023", 0, 0
+}
+
+WallTexture "AALI3667", 64, 128
+{
+	Patch "AALI3525", 0, 0
+	Patch "AALI7629", 16, 72
+}
+
+WallTexture "AALI3668", 64, 128
+{
+	Patch "AALI7514", 0, 0
+	Patch "AALI7515", 16, 0
+	Patch "AALI7516", 32, 0
+	Patch "AALI7517", 48, 0
+	Patch "AALI7514", 0, 72
+	Patch "AALI7515", 16, 72
+	Patch "AALI7516", 32, 72
+	Patch "AALI7517", 48, 72
+	Patch "AALI7549", 0, 64
+	Patch "AALI7549", 0, 120
+	Patch "AALI7627", 16, 72
+}
+
+WallTexture "AALI3669", 64, 128
+{
+	Patch "AALI3288", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3670", 64, 128
+{
+	Patch "AALI3315", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3671", 64, 128
+{
+	Patch "AALI3325", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3672", 64, 128
+{
+	Patch "AALI3332", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3673", 64, 128
+{
+	Patch "AALI3339", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3674", 64, 128
+{
+	Patch "AALI3346", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3675", 64, 128
+{
+	Patch "AALI3356", 0, 0
+	Patch "AALI7630", 16, 72
+}
+
+WallTexture "AALI3676", 64, 128
+{
+	Patch "AALI7566", 0, 0
+	Patch "AALI7567", 32, 0
+	Patch "AALI7627", 16, 72
+}
+
+WallTexture "AALI3677", 64, 128
+{
+	Patch "AALI3727", 0, 0
+	Patch "AALI8005", 20, 79
+}
+
+WallTexture "AALI3678", 64, 128
+{
+	Patch "AALI2372", 0, -16
+	Patch "AALI7721", 0, 0
+	Patch "AALI8005", 20, 84
+}
+
+WallTexture "AALI3679", 64, 128
+{
+	Patch "AALI4018", 0, 0
+	Patch "AALI7594", 24, 48
+	Patch "AALI7594", 32, 64
+	Patch "AALI7594", 32, 48
+	Patch "AALI7594", 24, 64
+	Patch "AALI7594", 40, 48
+	Patch "AALI7594", 40, 64
+	Patch "AALI7594", 16, 48
+	Patch "AALI7594", 16, 64
+	Patch "AALI7724", 24, 52
+}
+
+WallTexture "AALI3680", 64, 128
+{
+	Patch "AALI7645", -64, 0
+	Patch "AALI7793", 14, 66
+}
+
+WallTexture "AALI3681", 64, 128
+{
+	Patch "AALI4035", 0, 0
+	Patch "AALI7793", 16, 66
+}
+
+WallTexture "AALI3697", 128, 128
+{
+	Patch "AALI7895", 0, 0
+	Patch "AALI7897", 64, 0
+}
+
+WallTexture "AALI3716", 64, 128
+{
+	Patch "AALI3730", 0, 0
+	Patch "AALI9461", 3, 3
+}
+
+WallTexture "AALI3717", 64, 128
+{
+	Patch "AALI3730", 0, 0
+	Patch "AALI9462", 3, 3
+}
+
+WallTexture "AALI3718", 64, 128
+{
+	Patch "AALI3730", 0, 0
+	Patch "AALI9463", 3, 3
+}
+
+WallTexture "AALI3719", 64, 128
+{
+	Patch "AALI3730", 0, 0
+	Patch "AALI9464", 3, 3
+}
+
+WallTexture "AALI3720", 64, 128
+{
+	Patch "AALI3730", 0, 0
+	Patch "AALI9465", 3, 3
+}
+
+WallTexture "AALI3721", 64, 128
+{
+	Patch "AALI3728", 0, 0
+	Patch "AALI9466", 5, 24
+}
+
+WallTexture "AALI3722", 64, 128
+{
+	Patch "AALI3728", 0, 0
+	Patch "AALI9467", 5, 24
+}
+
+WallTexture "AALI3723", 64, 128
+{
+	Patch "AALI3728", 0, 0
+	Patch "AALI9468", 5, 24
+}
+
+WallTexture "AALI3724", 64, 128
+{
+	Patch "AALI3728", 0, 0
+	Patch "AALI9469", 5, 24
+}
+
+WallTexture "AALI3725", 64, 128
+{
+	Patch "AALI3728", 0, 0
+	Patch "AALI9470", 5, 24
+}
+
+WallTexture "AALI3751", 64, 128
+{
+	Patch "AALI3735", 0, 0
+	Patch "AALI9461", 3, 3
+}
+
+WallTexture "AALI3752", 64, 128
+{
+	Patch "AALI3735", 0, 0
+	Patch "AALI9462", 3, 3
+}
+
+WallTexture "AALI3753", 64, 128
+{
+	Patch "AALI3735", 0, 0
+	Patch "AALI9463", 3, 3
+}
+
+WallTexture "AALI3754", 64, 128
+{
+	Patch "AALI3735", 0, 0
+	Patch "AALI9464", 3, 3
+}
+
+WallTexture "AALI3755", 64, 128
+{
+	Patch "AALI3735", 0, 0
+	Patch "AALI9465", 3, 3
+}
+
+WallTexture "AALI3756", 64, 128
+{
+	Patch "AALI3733", 0, 0
+	Patch "AALI9466", 5, 24
+}
+
+WallTexture "AALI3757", 64, 128
+{
+	Patch "AALI3733", 0, 0
+	Patch "AALI9467", 5, 24
+}
+
+WallTexture "AALI3758", 64, 128
+{
+	Patch "AALI3733", 0, 0
+	Patch "AALI9468", 5, 24
+}
+
+WallTexture "AALI3759", 64, 128
+{
+	Patch "AALI3733", 0, 0
+	Patch "AALI9469", 5, 24
+}
+
+WallTexture "AALI3760", 64, 128
+{
+	Patch "AALI3733", 0, 0
+	Patch "AALI9470", 5, 24
+}
+
+WallTexture "AALI3771", 128, 128
+{
+	Patch "AALI7539", 0, -27
+	Patch "AALI7539", 0, 16
+}
+
+WallTexture "AALI3773", 256, 128
+{
+	Patch "AALI7863", 0, 0
+	Patch "AALI7864", 128, 0
+	Patch "AALI7865", 64, 0
+	Patch "AALI7866", 192, 0
+}
+
+WallTexture "AALI3971", 512, 64
+{
+	Patch "AALI6358", 0, 0
+	Patch "AALI6358", 320, 0
+}
+
+WallTexture "AALI3972", 512, 64
+{
+	Patch "AALI6359", 0, 0
+	Patch "AALI6359", 320, 0
+}
+
+WallTexture "AALI4005", 256, 128
+{
+	Patch "AALI7644", 128, 0
+	Patch "AALI7645", 0, 0
+}
+
+WallTexture "AALI4008", 256, 128
+{
+	Patch "AALI7707", -4, 0
+	Patch "AALI7708", 60, 0
+	Patch "AALI7709", 124, 0
+	Patch "AALI7708", 188, 0
+	Patch "AALI7707", 252, 0
+}
+
+WallTexture "AALI4009", 64, 128
+{
+	Patch "AALI7708", -4, 0
+	Patch "AALI7788", 22, 18
+	Patch "AALI7787", 22, 76
+	Patch "AALI7708", 60, 0
+}
+
+WallTexture "AALI4010", 256, 128
+{
+	Patch "AALI7705", -4, 0
+	Patch "AALI7706", 124, 0
+	Patch "AALI7705", 252, 0
+}
+
+WallTexture "AALI4015", 64, 128
+{
+	Patch "AALI7644", 0, 0
+	Patch "AALI7789", 6, 63
+}
+
+WallTexture "AALI4125", 512, 64
+{
+	Patch "AALI6360", 0, 0
+	Patch "AALI6360", 320, 0
+}
+
+WallTexture "AALI4126", 512, 64
+{
+	Patch "AALI6361", 0, 0
+	Patch "AALI6361", 320, 0
+}
+
+WallTexture "AALI4197", 64, 128
+{
+	Patch "AALI4196", -1, 0
+	Patch "AALI4196", 63, 0
+}
+
+WallTexture "AALI4198", 64, 128
+{
+	Patch "AALI4196", -10, 0
+	Patch "AALI4196", 54, 0
+}
+
+WallTexture "AALI4199", 64, 128
+{
+	Patch "AALI4196", -21, 0
+	Patch "AALI4196", 43, 0
+}
+
+WallTexture "AALI4200", 64, 128
+{
+	Patch "AALI4196", 33, 0
+	Patch "AALI4196", -31, 0
+}
+
+WallTexture "AALI4201", 64, 128
+{
+	Patch "AALI4196", 22, 0
+	Patch "AALI4196", -42, 0
+}
+
+WallTexture "AALI4202", 64, 128
+{
+	Patch "AALI4196", 12, 0
+	Patch "AALI4196", -53, 0
+}
+
+WallTexture "AALI4204", 128, 128
+{
+	Patch "AALI4203", 107, 0
+	Patch "AALI4203", -21, 0
+}
+
+WallTexture "AALI4205", 128, 128
+{
+	Patch "AALI4203", -42, 0
+	Patch "AALI4203", 86, 0
+}
+
+WallTexture "AALI4206", 128, 128
+{
+	Patch "AALI4203", -64, 0
+	Patch "AALI4203", 64, 0
+}
+
+WallTexture "AALI4207", 128, 128
+{
+	Patch "AALI4203", -85, 0
+	Patch "AALI4203", 43, 0
+}
+
+WallTexture "AALI4208", 128, 128
+{
+	Patch "AALI4203", -106, 0
+	Patch "AALI4203", 22, 0
+}
+
+WallTexture "AALI4268", 128, 128
+{
+	Patch "AALI2209", -64, 0
+	Patch "AALI2209", 64, 0
+}
+
+WallTexture "AALI4269", 128, 256
+{
+	Patch "AALI2209", 0, 128
+	Patch "AALI2206", 0, 0
+	Patch "AALI2206", 64, 0
+}
+
+WallTexture "AALI4270", 128, 256
+{
+	Patch "AALI2209", 0, 128
+	Patch "AALI2209", -64, 0
+	Patch "AALI2209", 64, 0
+}
+
+WallTexture "AALI4279", 128, 256
+{
+	Patch "AALI4275", 0, 0
+	Patch "AALI1289", 64, 128
+	Patch "AALI1289", 0, 128
+}
+
+WallTexture "AALI4280", 128, 256
+{
+	Patch "AALI4276", 0, 0
+	Patch "AALI4276", 0, 64
+	Patch "AALI1289", 0, 128
+	Patch "AALI1289", 64, 128
+}
+
+WallTexture "AALI4281", 128, 256
+{
+	Patch "AALI4277", 0, 0
+	Patch "AALI4277", 0, 64
+	Patch "AALI1289", 0, 128
+	Patch "AALI1289", 64, 128
+}
+
+WallTexture "AALI4287", 128, 256
+{
+	Patch "AALI4283", 0, 0
+	Patch "AALI1289", 0, 128
+	Patch "AALI1289", 64, 128
+}
+
+WallTexture "AALI4288", 128, 256
+{
+	Patch "AALI4284", 0, 0
+	Patch "AALI4284", 0, 64
+	Patch "AALI1289", 0, 128
+	Patch "AALI1289", 64, 128
+}
+
+WallTexture "AALI4289", 128, 256
+{
+	Patch "AALI4285", 0, 0
+	Patch "AALI4285", 0, 64
+	Patch "AALI1289", 0, 128
+	Patch "AALI1289", 64, 128
+}
+
+WallTexture "AALI4370", 512, 64
+{
+	Patch "AALI6362", 0, 0
+	Patch "AALI6362", 320, 0
+}
+
+WallTexture "AALI4371", 512, 64
+{
+	Patch "AALI6363", 0, 0
+	Patch "AALI6363", 320, 0
+}
+
+WallTexture "AALI4396", 64, 128
+{
+	Patch "AALI7582", 19, 72
+	Patch "AALI7582", 19, 0
+	Patch "AALI7582", 0, 0
+	Patch "AALI7582", 0, 72
+	Patch "AALI7582", 40, 0
+	Patch "AALI7582", 40, 72
+}
+
+WallTexture "AALI5247", 1024, 64
+{
+	Patch "AALI5265", 0, 0
+	Patch "AALI5265", 320, 0
+	Patch "AALI5265", 640, 0
+	Patch "AALI5265", 960, 0
+}
+

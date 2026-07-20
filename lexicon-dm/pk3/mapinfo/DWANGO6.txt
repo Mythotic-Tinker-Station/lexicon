@@ -1,0 +1,309 @@
+// DWANGO6 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DW0601 "DWANGO6 Map 1"
+{
+	titlepatch = "CWILV00"
+	next = "DW0602"
+	secretnext = "DW0602"
+	sky1 = "DW060001"
+	music = "D_DW0601"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0602 "DWANGO6 Map 2"
+{
+	titlepatch = "CWILV01"
+	next = "DW0603"
+	secretnext = "DW0603"
+	sky1 = "DW060001"
+	music = "D_DW0602"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0603 "DWANGO6 Map 3"
+{
+	titlepatch = "CWILV02"
+	next = "DW0604"
+	secretnext = "DW0604"
+	sky1 = "DW060001"
+	music = "D_DW0603"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0604 "DWANGO6 Map 4"
+{
+	titlepatch = "CWILV03"
+	next = "DW0605"
+	secretnext = "DW0605"
+	sky1 = "DW060001"
+	music = "D_DW0604"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0605 "DWANGO6 Map 5"
+{
+	titlepatch = "CWILV04"
+	next = "DW0606"
+	secretnext = "DW0606"
+	sky1 = "DW060001"
+	music = "D_DW0605"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0606 "DWANGO6 Map 6"
+{
+	titlepatch = "CWILV05"
+	next = "DW0607"
+	secretnext = "DW0607"
+	sky1 = "DW060001"
+	music = "D_DW0606"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0607 "DWANGO6 Map 7"
+{
+	titlepatch = "CWILV06"
+	next = "DW0608"
+	secretnext = "DW0608"
+	sky1 = "DW060001"
+	music = "D_DW0607"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+	Map07Special
+}
+
+map DW0608 "DWANGO6 Map 8"
+{
+	titlepatch = "CWILV07"
+	next = "DW0609"
+	secretnext = "DW0609"
+	sky1 = "DW060001"
+	music = "D_DW0608"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0609 "DWANGO6 Map 9"
+{
+	titlepatch = "CWILV08"
+	next = "DW0610"
+	secretnext = "DW0610"
+	sky1 = "DW060001"
+	music = "D_DW0609"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0610 "DWANGO6 Map 10"
+{
+	titlepatch = "CWILV09"
+	next = "DW0611"
+	secretnext = "DW0611"
+	sky1 = "DW060001"
+	music = "D_DW0610"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0611 "DWANGO6 Map 11"
+{
+	titlepatch = "CWILV10"
+	next = "DW0612"
+	secretnext = "DW0612"
+	sky1 = "DW060001"
+	music = "D_DW0611"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0612 "DWANGO6 Map 12"
+{
+	titlepatch = "CWILV11"
+	next = "DW0613"
+	secretnext = "DW0613"
+	sky1 = "DW060002"
+	music = "D_DW0612"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0613 "DWANGO6 Map 13"
+{
+	titlepatch = "CWILV12"
+	next = "DW0614"
+	secretnext = "DW0614"
+	sky1 = "DW060002"
+	music = "D_DW0613"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0614 "DWANGO6 Map 14"
+{
+	titlepatch = "CWILV13"
+	next = "DW0615"
+	secretnext = "DW0615"
+	sky1 = "DW060002"
+	music = "D_DW0614"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0615 "DWANGO6 Map 15"
+{
+	titlepatch = "CWILV14"
+	next = "DW0616"
+	secretnext = "DW0616"
+	sky1 = "DW060002"
+	music = "D_DW0615"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0616 "DWANGO6 Map 16"
+{
+	titlepatch = "CWILV15"
+	next = "DW0617"
+	secretnext = "DW0617"
+	sky1 = "DW060002"
+	music = "D_DW0616"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0617 "DWANGO6 Map 17"
+{
+	titlepatch = "CWILV16"
+	next = "DW0618"
+	secretnext = "DW0618"
+	sky1 = "DW060002"
+	music = "D_DW0617"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0618 "DWANGO6 Map 18"
+{
+	titlepatch = "CWILV17"
+	next = "DW0619"
+	secretnext = "DW0619"
+	sky1 = "DW060002"
+	music = "D_DW0618"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0619 "DWANGO6 Map 19"
+{
+	titlepatch = "CWILV18"
+	next = "DW0620"
+	secretnext = "DW0620"
+	sky1 = "DW060002"
+	music = "D_DW0619"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0620 "DWANGO6 Map 20"
+{
+	titlepatch = "CWILV19"
+	next = "DW0621"
+	secretnext = "DW0621"
+	sky1 = "DW060002"
+	music = "D_DW0620"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0621 "DWANGO6 Map 21"
+{
+	titlepatch = "CWILV20"
+	next = "DW0622"
+	secretnext = "DW0622"
+	sky1 = "DW060003"
+	music = "D_DW0621"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0622 "DWANGO6 Map 22"
+{
+	titlepatch = "CWILV21"
+	next = "DW0623"
+	secretnext = "DW0623"
+	sky1 = "DW060003"
+	music = "D_DW0622"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0623 "DWANGO6 Map 23"
+{
+	titlepatch = "CWILV22"
+	next = "DW0624"
+	secretnext = "DW0624"
+	sky1 = "DW060003"
+	music = "D_DW0623"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0624 "DWANGO6 Map 24"
+{
+	titlepatch = "CWILV23"
+	next = "DW0632"
+	secretnext = "DW0632"
+	sky1 = "DW060003"
+	music = "D_DW0624"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}
+
+map DW0632 "DWANGO6 Map 32"
+{
+	titlepatch = "CWILV31"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DW060003"
+	music = "D_DW0632"
+	intermusic = "D_DW06IN"
+	ExitPic = "DW06INT"
+	EnterPic = "DW06INT"
+}

@@ -1,0 +1,538 @@
+===========================================================================
+Archive Maintainer      : replace akeldama in levels/doom2/megawads/
+Primary purpose         : Single + coop play
+===========================================================================
+Title                   : Akeldama
+Filename                : akeldama.wad
+Release date            : 07/31/20
+Author                  : Various
+Email Address           : [redacted]
+Misc. Author Info       : Team-based project.
+
+Description             : Get ready to blaze through 32 action-packed levels
+                          fit to play in any port of choice - echoes of past
+                          megawad affairs such as Memento Mori and Alien
+                          Vendetta helped to shape the inspiration for this
+                          project. Akeldama continues in the spirit of
+                          collecting a group of talented mappers and creating
+                          a brand new experience for regular doom2.exe.
+
+Additional Credits to   : Id Software
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : No
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Designed for
+Deathmatch 2-4 Player   : Player starts only
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 2 years
+Editor(s) used          : Various
+Known Bugs              : Savegame buffer overflow on some maps (see below).
+                          glboom graphic error on MAP16. Demos 2 & 3 desync
+                          in chocolate doom.
+Tested With             : chocolate
+                          doom/chocorenderlimits/prboom-plus/ZDoom/GZDoom
+
+Map information:
+----------------
+
+MAP01: The Generator
+Author: valkiriforce/waverider
+Build Time: A month
+------------
+Simple introduction stage started around the project's inception to test out the new shelter textures. I created the
+areas from the start leading to the circular staircase and waverider did everything past that. Took roughly a month I
+think due to figuring out when to collaborate with someone and I handed it over to waverider to see where he'd take the
+map.
+
+
+
+MAP02: Knights of Ilasac
+Author: Philnemba
+Build Time: A month on and off
+------------
+A Memento Mori inspired map with some Plutonia inspired aesthetics. Fun fact: The name "Ilasac" is Casali spelled
+backwards ;)
+
+
+
+MAP03: Renegades
+Author: ZaBigBoss/valkiriforce
+Build Time: unknown
+-----------
+A map repurposed from Back To Thunder Road, an excellent mapset by ZaBigBoss as he allows for the use of his work with
+permission and credit. All I did was edit the existing areas to fit a vanilla-friendly environment, and I included a
+new exit area as it originally ended at the exit door.
+
+
+
+MAP04: Chillwell
+Author: dt_
+Build Time: unknown
+------------
+A map by dt_, I've worked with him before as he contributed to the small TNT: Resistance project. Was glad to have him
+on board again.
+
+
+
+MAP05: Bunker Hill
+Author: DerFurer'sFace
+Build Time: 2 weeks + revisions
+------------
+By the time I looked at the Alkedama CP, I was playing Plutonia again after years. I was on map16/17 at the time
+and I remember really enjoying the concrete base aesthetics of map17 and the rocky setting of map16, along with the
+narrow corridors and almost bunker feeling. I used this inspiration to create a map centered around fast-paced
+plutonia like gameplay but to include a mountain bunker setting, with trenches and attackers from elevated angles
+or kill holes. I wanted the elevated combat to make the map feel not so 2 dimmensional, and so the trenches added
+more aesthetic without making it impossible to attack the player. I also designed the map in a circular design so
+that the map would not feel too linear, with the player having to move between a figure 8 around two central areas
+visited later, allowing for half non-linear, and half more structured/controlled player-monster interaction.
+
+
+MAP06: Insurrection
+Author: Gothic
+Build Time: unknown
+------------
+A map by Gothic - one of the few maps that felt almost perfect without the need to make any adjustments. The only
+change I made is a bit of difficulty adjustment including a co-op error. I also thank Gothic for the awesome status
+bar as he's the one who created it for this project.
+
+
+
+MAP07: Carnage Facility
+Author: Michael Jan Krizik (valkiriforce)
+Build Time: A few weeks
+------------
+I started this map in February as inspired from the non-linear techbase maps of the Möller brothers and
+by the setting of Boise, Idaho where my brother had moved to in recent years. I had seen photographs of
+a city with a snowy mountain backdrop, and I thought it seemed like a unique setting for a high-tech
+fortress to be set in the middle of a city with a similar background. I liked the idea of sprawling inter-
+connected staircases and a layout that looked clean, and I tried to insert some unexpected sequences in the
+map progression, which include the megasphere anti-trap, the exploding hall area and the transforming rocket
+launcher area. This was also around the time I started my Vinesauce contest map (Lost Dreams) but I had put it
+on hold to complete this map first. I'm very satisfied with the results - also it does make little use of the
+MAP07 tags, which includes a fail-safe secret for those playing the map monsterless, so it does not require
+killing the mancubus to exit the map.
+
+
+
+MAP08: Arctic Compound
+Author: Diego 'DJV' Villarroel/valkiriforce
+Build Time: A few weeks
+------------
+DJV's comment: I was aware that one of the maps for the first episode wasn't going to be accepted, right
+at the gates of the last week of the E1 "check-in". At the same time, I was experimenting on making a cool
+Akeldama E1 inspired map with Akeldama's textures, so I decided to  try and make a good layout for someone
+to edit and add more things on it. I took the advantage of having a new free slot to make yet another map
+(I made MAP24 before this one), or at least a nice layout. So I gave it to Valkiriforce for him to complete. 
+The result was a really fun map, where the main layout worked out really well. I really liked Valkiriforce edits
+and I really liked to see the map with well-placed monsters, since I consider myself not being a master at the
+"monster placement" department.
+valk: It was fun looking over an existing map and having creative freedom to rework areas, as it's not something I do
+very often. I really like the open nature of the map and it works really well for co-op players to run around in. Lots
+of edits and slightly restructured areas, including some traps and a towering chaingunner hideout near the red key
+switch.
+
+
+
+MAP09: Winter Stronghold
+Author: The Mysterious Moustachio
+Build Time: unknown
+------------
+A map by The Mysterious Moustachio - I was enjoying his Atonement episode for Doom 2 and wanted to ask him to be a
+part of this project, so I was glad he was able to contribute in some way. I'm also looking forward to his other work
+with Interception II and hopefully the rest of Atonement!
+
+
+
+MAP10: Hangar Facility
+Author: valkiriforce/The Mysterious Moustachio
+Build Time: A few weeks
+------------
+Tried to avoid using the "facility" title again but what can you do...I intended to work on half of the map and leave
+the rest open for another author, of which I asked Moustachio to contribute to. He worked on the areas past the yellow
+key bridge and leading to the red key. I later extended the map past the red door as it originally ended where the red
+key is found. Had to find a place to put that truck trailer buried in the snow!
+
+
+
+MAP11: The Glacier Base
+Author: Mattias Johansson (waverider)
+Build Time: A couple of months
+------------
+I wanted to make this large and highly detailed map consisting of a tech base in some snowy mountains where I wanted
+to mix tech base style with snowy caves as well as finishing out on top of a glacier. I hope I managed to create
+this style in a faithful way. The map is quite challenging I think with a quite high monster count. It's also quite
+non-linear with several available routes - hopefully it's not too difficult to navigate.
+
+
+
+MAP12: Urban Strike
+Author: complexDoomer/valkiriforce
+Build Time: Some weeks probably
+------------
+complexDoomer had this map to offer which originally was completely interior, but I reworked it to divide the tech
+areas by including a large outdoor section and set it in the middle of a city backdrop. The map in spirit is still
+complexDoomer's work though I worked to include some additional traps and secrets - one of them is a lift area behind
+the starting area and lots of extra details throughout the map.
+
+
+
+MAP13: Toxic Disgust
+Author: Juza
+Build Time: unknown
+------------
+Cool toxic brick/cave level from Juza, definitely gives me Alien Vendetta vibes. Hopefully all the coop-breaking
+sequences have been fixed!
+
+
+
+MAP14: Darkness Beneath
+Author: Chaingunner
+Build Time: unknown
+------------
+An excellent map from Chaingunner.
+
+
+
+MAP15: Breaching the Source
+Author: gaspe
+Build Time: 8 months, on and off, map slower gaspe
+------------
+This was mainly inspired by MAP20 of TNT and with the idea of merging it with the Plutonia aesthetics to create
+a twisted, evil techbase with a dark trip to venture into the depths of the base with its demonic machineries.
+In the end I didn't put more crushers as I planned but there's quite a lot of ground to cover on the liquids that
+are all damaging in this level. I must say that I'm happy with the result, in paticular with the secrets and the
+little optional areas. 
+
+
+
+MAP16: Aqueduct Fortress
+Author: valkiriforce
+Build Time: 2 weeks
+------------
+Inspired from the dark, hellish brick and stone themes from both Memento Mori megawads. Wanted to give it two possible
+routes for completing the map - blue key is a bit longer but safer, and the red key is quick but more dangerous. I kept
+returning to this map on and off and changing around details and areas a bit for the sake of texture variety.
+
+
+
+MAP17: Blood Covenant
+Author: antares031
+Build Time: Two months, on and off
+------------
+This is the third level that I designed with vanilla compatibility. Pretty simple level, with only a few tough
+moments. The name was from one of levels of Quake Champions. Thanks, and please enjoy the awesome soundtrack,
+composed by Eris Falling. :)
+
+
+
+MAP18: Mortar
+Author: wolfmcbeard/Khorus
+Build Time: unknown
+------------
+wolfmcbeard started this map and later handed it over to Khorus to finish it. Definitely reminds me of the classic
+techbase maps of older megawads like Memento Mori II.
+
+
+
+MAP19: Death March
+Author: Pegleg (and valkiriforce)
+Build Time: 3 months, working for an hour or two every few days (with the occasional day featuring a flurry of
+activity for several hours)
+------------
+Pegleg: I was inspired by the red sky for Episode 2, which led to creating a map with a lot of metallic textures and
+blood mixed with brick and rock/stone. One of the goals I had going into this design was to add interconnectedness,
+so that there would be a number of ways that you could make it through the map, with the ability to see things from
+different vantage points (often at different heights) that you might need later. I also wanted to have areas that
+were optional to visit; it would be beneficial to visit them, but not essential (and likely rather dangerous). The
+final result of all of this was a map that ended up being something akin to a meandering brick and stone fortress
+attached to rocky caverns and a canyon. The map was originally titled "Blood March," but there were already a number
+of map titles featuring blood, so the title was changed to "Death March." Valkiriforce added detailing that added some
+flair to some of the areas. He also moved around some of the health and ammunition, and revised the final arena to
+avoid it being simply a dash to the exit and ensure that the final encounter had some teeth, as I had meant for it
+to have.
+valk: I kept coming back to this one and changing or adding details here and there, or changing around textures and
+even created a new brick texture for this map. It was great breathing new life into some areas including the red key
+area and the switch bridge with added brick towers and rockies all around the place.
+
+
+
+MAP20: The Devil's Triangle
+Author: Juza/valkiriforce
+Build Time: months between the two of us
+------------
+Juza started this map and worked all the way past the train station to the open outdoor area with the cyberdemon. There
+were quite a few areas following this that were left incomplete, so I worked to finish the map and create some huge
+outdoor areas with an ocean backdrop. I was inspired from Plutonia 2's mapping style when making my portion of the map.
+
+
+
+MAP21: Disaster County
+Author: valkiriforce
+Build Time: Maybe a couple days
+------------
+A menacing introduction to the episode 3 theme with the burning landscape and dark sky - I imagined the player emerging
+from a dug-in area into a graveyard where enemies are released. This map also gives a couple of options for clearing the
+regular areas with only one key being required to exit, but what fun is that for us completionists? ;)
+
+
+
+MAP22: Dark sacrifices
+Author: Paul977
+Build Time: some hours
+------------
+This is a map inspired by the visual themes of Alien Vendetta maps 17 and 23. Some spots of this map can be tricky
+but overall this level is not too difficult if you stay in guard.
+
+
+
+MAP23: Chimera
+Author: valkiriforce
+Build Time: two weeks
+------------
+Originally someone else was working on a MAP23 entry, but they lost their work and dropped out, so I decided to fill in
+for them. Went for a large, open non-linear map that was originally going to have more techbase themes but the older
+version of this map was scrapped in favor of restarting it to get a better idea for what I wanted to make. Really like
+how this came out, and it's got most of the Doom 2 monsters and weaponry so you know it's fun.
+
+
+
+MAP24: Alexandria's Library
+Author: Diego 'DJV' Villarroel
+Build Time: A month (5 years)
+------------
+This is what actually happened to the mythical Library that randomly burned into ashes during early modern times.
+It was a work of hell, the forces of evil made this ancient place of knowledge burst into oblivion. Hell probably
+could not stand mortals having that much information in a single place.
+ 
+This was at first, a map for a mapping tournament on an old Spanish-Speaking forum back in 2014, I never finished it,
+and only made up to the central courtyard (the main starting room and hall, and the "maze" room aswell). I probably
+worked on it three days and then left it. It was a vanilla mapping tournament, but I wasn't aware back in the day
+about VSP Overflows and other engine limitations, things that started appearing when I was back on this, for Akeldama.
+I always thought this map suited MAP24 well, for some reason, I also think it makes me remember to those oldschool
+maps in MM1/MM2/Requiem. When I came back again with this map for the project, I worked on it for less than a month,
+and, to be honest, I didn't like the final result at all. Luckily I managed to like it a little bit more making many
+changes based on feedback over the course of the project.
+
+
+
+Map25: Opulence
+Author: Joe Pallai
+Build Time: Over a year with parts made in 2000 (seriously)
+------------
+So this map started off as the sections deleted from Plutonia2's "Aztecorum".   This would be sectors 0 - 1,
+10 - 15, 19 - 28, 30 - 32, 42, 46 - 49, 51, 57, 61, 66, 68, 186, 193, 207 and 235  (there may be a few more but I
+don't recognize them any more).   Stupidly I thought re-using parts of an old map would be a quick way to knock out
+a map for this project since I initially signed up for two maps--HA!   Eventually I realized my foolishness and
+concentrated only on this one map.   It went from trying to shoehorn in as much of the original Plutonia2 map into it;
+to eventually cutting half of what I had previously made and settling into a nice weird Brick/Hell influenced tech-base
+thing with an optional red key path. It's a map made for explorers and I hope you enjoy it.
+
+
+
+MAP26: Duskbound
+Author: Breezeep
+Build Time: don't ask
+------------
+After months of procrastination, IRL related stuff, and struggling to add to this map, it's finally done. Once
+again I apologize to Valk and the rest of the gang for the wait. I hope you enjoy this. 
+
+
+
+MAP27: Bitter Waters
+Author: valkiriforce
+Build Time: a month
+------------
+I had an idea for a map that was largely connected with a river crossing over the whole map, with each section
+containing different themes and unlocking the next area, taking you further down the river. It was actually inspired
+from another game a friend showed me at the time, I think it was one of the Kao The Kangaroo games where you sailed
+down a river and had to unlock the next area further down, so I borrowed that concept and turned it into something
+Doom-specific.
+
+
+
+MAP28: Climbing Blood Mountain
+Author: Khorus
+Build Time: unknown
+------------
+A 15-20 minute linear adventure map inspired by my favourite Alien Vendetta levels. The map is also a tribute to my
+Grandmother who passed away in February. She taught me to paint, cook and make things to help express myself from a
+very young age. She always had an amazing garden to explore and get lost in, so there are patches of greenery around
+the map with goodies and such to represent that.
+
+
+
+MAP29: Boglach
+Author: Paul Corfiatis
+Build Time: unknown
+------------
+A map by Paul Corfiatis - great penultimate map with a nice music track from the map author as well.
+
+
+
+MAP30: Mind of Enmity (or "The Devil's Capital")
+Author: valkiriforce
+Build Time: some weeks
+------------
+Had a good time trying to imagine how this map might play out - I checked around with other members of Doomworld asking
+what kind of last level they preferred in a megawad, and most people agreed they liked something that was more like a
+regular map, and in fact someone had made a similar thread where some have even said they tend to prefer MAP29s in
+megawads because they're huge and feel more like they would work better as an ending than another Icon of Sin fight.
+So I wanted to make something gigantic like a MAP29 slot that works with the intent of being a MAP30 encounter instead.
+I imagine the map is set in the heat of battle during wartime in the middle east, with a military bunker hideout with
+a hangar area containing a jet and another brick fortress holding a tank. You, as the player, have just entered the
+occupied city where the anti-christ is working his plan for world domination and genocide.
+
+
+
+MAP31: Make Believe
+Author: valkiriforce/DerFurer'sFace/Joe Pallai/gaspe
+Build Time: a few months between various authors
+------------
+gaspe: (red skull area) This area is like a continuation of MAP15 and I followed the same idea but my main
+inspiration here was MAP25 of Plutonia.
+valk: secret maps are fun! I couldn't get the image of starting on an old abandoned ship out of my head, so I had
+to find a way to work that into a map that would ultimately have lots of connecting areas via a teleporter hub. I
+think it works out really well for all the different themes on display.
+
+
+
+MAP32: Operation Pump and Dump
+Author: Doomkid & Valkiriforce
+Build Time: It's always build time
+------------
+Notes by Doomkid: Originally this map was way easier and somewhat less detailed. Valkiriforce gave it the Go2It
+treatment and it looks way cooler now and will slap your helpless ass, so stay on your toes. Keep moving - standing
+still is a death sentence! If you're having trouble, just remember: Step 1, pump. Step 2, dump. Step 3, revel in your
+success, gloat over the carcasses of many slain baddies.
+valk: I may have gone overboard with the monsters seeing as they exceed the vanilla sprite limit. I'm sorry, I broke
+my own rules...
+
+
+
+Credits
+------------
+I want to thank all of the playtesters involved, including the level design artists and musicians who were able to
+contribute to such a large project and those who tried but in the end didn't make it into the final product.
+
+Thanks to James Paddock for pointing me to LewkForce's MIDI work for use in this megawad.
+
+Thanks to The_SloVinator, ETTiNGRiNDER and Walter confetti for making the effort to contribute their maps, although
+they didn't make it into the final lineup.
+
+Thanks to galileo31dos01 who made the effort to create the original status bar graphic, which was later replaced.
+
+A special thanks to waverider for being the first contributor to this project in our collaborated MAP01, and checking
+in now and again to playtest and give feedback as well as being a close friend of mine. Really looking forward to his
+megawad project Curse of Blood, be sure to check it out!
+
+Thanks to all of the contributors and forum lurkers who showed their support throughout the development of this
+megawad. Even when I wasn't posting I checked the thread almost every day for over a year and I'm really excited to
+see so many people have enjoying playing this megawad even in its beta phase and to all future players who get to
+enjoy it in its final release.
+
+Levels:
+------------
+waverider (01, 11)	Paul977 (22)
+joepallai (25, 31)	gaspe (15, 31)
+Doomkid	(32)		antares031 (17)
+Philnemba (02)		DerFurher'sFace (05, 31)
+Juza (13, 20) 		The Mysterious Moustachio (09, 10)
+Chaingunner (14)	ZaBigBoss (03)
+dt_ (04)		Diego 'DJV' Villarroel (08, 24)
+wolfmcbeard (18)	Khorus (18, 28)
+complexDoomer (12)	Paul Corfiatis (29)
+Pegleg (19)		Gothic (06)
+Breezeep (26)		valkiriforce (01, 03, 07, 08, 10, 12, 16, 19, 20, 21, 23, 27, 30, 31, 32)
+
+Musicians:
+------------
+Stuart Rynn (27)		LewkForce (02, 03, 09, 16, 23, 25, 31, Text Screen)
+Paul Corfiatis (05, 11, 15, 29)	AD_79 (01, 04, 13, 20, 26, 28)
+Seybsnilksz (10, 32)		Doomkid (30, Intermission screen)
+Eris Falling (17, 19, 30)	Viscra Maelstrom (06, 07, 08, 12, 14, 18, 21, 22, 24, Title Screen)
+valkiriforce (30 - just a small edit!)
+
+Graphics:
+------------
+valkiriforce - INTERPIC, TITLEPIC, BOSSBACK & CREDIT graphics, sky textures, M_DOOM & ENDOOM graphics and new textures
+Gothic - Status bar
+Various Plutonia textures
+TNT textures
+Some CC4 textures
+A couple of 32IN24 textures
+
+Playtesters:
+------------
+valkiriforce		gaspe
+dt_			DerFurher'sFace
+waverider		galileo31dos01
+Juza			Diego 'DJV' Villarroel
+joepallai		obake
+xvertigox		NuMetalManiak
+Aquila Chrysaetos	Bob9001
+Count651		lirui1001
+EffinghamHuffnagel	Veinen
+BjarneC			P41R47
+Caleb13			Bryan T
+Firedust		Degree23
+Horus			damo2k
+Keyboard_Doomer and the TNS gang
+
+A note on bugs:
+---------------
+Savegame buffer overlow is likely to occur if you try to save it using DOSBox or any vanilla port which cannot save
+game files larger than 180KB, so it is recommended that you use Chocolate Doom (with 'Vanilla Savegame Limit' unchecked)
+or any ports that allow for larger save files. This error occurs specifically on the following maps: MAP06, MAP07,
+MAP10, MAP11, MAP14, MAP16, MAP17, MAP18, MAP19, MAP20, MAP23, MAP25, MAP26, MAP27, MAP30, MAP31 and MAP32.
+
+MAP16 can get a visual error in OpenGL due to an HOM trick.
+
+Project development history:
+----------------------------
+Thread link: https://www.doomworld.com/forum/topic/103867-akeldama-beta-6-released-040820/
+
+Akeldama began work on Nov. 15th, 2017 with new textures and direct contact with close friends. It was kept under
+private development throughout 2018 and made public in 2019 when there was enough to show for it to gage interest
+from Doomworld users. Hopefully this thread will serve well in showing how these kind of projects can be handled.
+
+If you wish to reach out, you can contact me through my Doomworld user page or Twitter account at valkiriforce.
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format.
+If you do so, you must give appropriate credit, provide a link to the
+license, and indicate if changes were made. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or your
+use. You may not use the material for commercial purposes. If you remix,
+transform, or build upon the material, you may not distribute the modified
+material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors

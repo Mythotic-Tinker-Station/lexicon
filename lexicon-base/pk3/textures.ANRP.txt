@@ -1,0 +1,65 @@
+Texture "ANRP0052", 1024, 128
+{
+	Patch "ANRP0203", 0, 0
+	Patch "ANRP0204", 256, 0
+	Patch "ANRP0205", 512, 0
+	Patch "ANRP0206", 768, 0
+}
+Texture "ANRP0053", 1024, 128
+{
+	Patch "ANRP0279", 0, 0
+	Patch "ANRP0280", 256, 0
+	Patch "ANRP0281", 512, 0
+	Patch "ANRP0282", 768, 0
+}
+Texture "ANRP0054", 1024, 128
+{
+	Patch "ANRP0283", 0, 0
+	Patch "ANRP0284", 256, 0
+	Patch "ANRP0285", 512, 0
+	Patch "ANRP0286", 768, 0
+}
+Texture "ANRP0055", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_7", 14, 66
+	Patch "ANRP0150", 64, 0
+}
+Texture "ANRP0056", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ANRP0061", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ANRP0062", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ANRP0063", 128, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SW2_8", 14, 66
+	Patch "ANRP0154", 64, 0
+}
+Texture "ANRP0064", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "ANRP0069", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "ANRP0070", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}

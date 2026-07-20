@@ -91,6 +91,7 @@ map SL29 "Fallen Atlantis"
 map SL30 "Shai'tans Luck"
 	{
 	next = "VR"
+	sucktime = 1337
 	sky1 = "RSKY3"
 	music = "d_sl30"
 	nocrouch

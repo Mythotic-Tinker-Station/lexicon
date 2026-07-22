@@ -27,6 +27,20 @@ generator Lexicon_AALI_RevenantTracerDumbfire	RevenantScorch
 generator Lexicon_AALI_RevenantTracerHoming	RevenantScorch
 generator Lexicon_AALI_ArachnotronPlasma	Lexicon_AALI_ArachnotronScorch
 
+// Doom Zero
+generator Lexicon_DMZO_Chainsaw	BulletChip
+generator Lexicon_DMZO_Pistol	BulletChip
+generator Lexicon_DMZO_Shotgun	BulletChip
+generator Lexicon_DMZO_SuperShotgun	BulletChip
+generator Lexicon_DMZO_Chaingun	BulletChip
+generator Lexicon_DMZO_PlasmaBall	PlasmaScorch
+generator Lexicon_DMZO_BFGBall	BFGLightning
+
+generator Lexicon_DMZO_ZombieMan	BulletChip
+generator Lexicon_DMZO_ShotgunGuy	BulletChip
+generator Lexicon_DMZO_ChaingunGuy	BulletChip
+generator Lexicon_DMZO_SpiderMastermind		BulletChip
+
 // Epic
 generator Lexicon_EPC1_ZombieMan	BulletChip
 generator Lexicon_EPC1_ShotgunGuy	BulletChip

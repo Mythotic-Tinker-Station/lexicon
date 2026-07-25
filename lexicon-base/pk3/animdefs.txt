@@ -1519,3 +1519,13 @@ switch VXRL0300 on pic VXRL0301 tics 0
 texture SWR20001 range SWR20004 tics 8
 switch SWR20005 on pic SWR20010 tics 0
 switch SWR20006 on pic SWR20011 tics 0
+
+// Doom Zero
+flat DMZO0004 range DMZO0007 tics 8
+flat DMZO0008 range DMZO0011 tics 8
+flat DMZO0012 range DMZO0015 tics 8
+switch DMZO0023 on pic DMZO0028 tics 0
+switch DMZO0024 on pic DMZO0029 tics 0
+switch DMZO0025 on pic DMZO0030 tics 0
+switch DMZO0026 on pic DMZO0031 tics 0
+switch DMZO0027 on pic DMZO0032 tics 0

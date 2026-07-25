@@ -1,0 +1,430 @@
+// NoReason's Speedmaps 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map NSP201 "Crossroads"
+{
+	titlepatch = "NSP2V00"
+	next = "NSP202"
+	secretnext = "NSP202"
+	sky1 = "NSP22245"
+	music = "D_NSP201"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP202 "Last Day At The Techbase" 
+{
+	titlepatch = "NSP2V01"
+	next = "NSP203"
+	secretnext = "NSP203"
+	sky1 = "NSP22245"
+	music = "D_NSP202"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP203 "Death's Court"
+{
+	titlepatch = "NSP2V02"
+	next = "NSP204"
+	secretnext = "NSP204"
+	sky1 = "NSP22233"
+	music = "D_NSP203"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP204 "Waste Management"
+{
+	titlepatch = "NSP2V03"
+	next = "NSP205"
+	secretnext = "NSP205"
+	sky1 = "NSP22221"
+	music = "D_NSP204"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP205 "Grim's Keep"
+{
+	titlepatch = "NSP2V04"
+	next = "NSP206"
+	secretnext = "NSP206"
+	sky1 = "NSP22233"
+	music = "D_NSP205"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP206 "Revival of the Fittest"
+{
+	titlepatch = "NSP2V05"
+	next = "NSP207"
+	secretnext = "NSP207"
+	sky1 = "NSP22238"
+	music = "D_NSP206"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP207 "Living Complex"
+{
+	titlepatch = "NSP2V06"
+	next = "NSP208"
+	secretnext = "NSP208"
+	sky1 = "NSP22238"
+	music = "D_NSP207"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	Map07Special
+}
+
+map NSP208 "High Rise"
+{
+	titlepatch = "NSP2V07"
+	next = "NSP209"
+	secretnext = "NSP209"
+	sky1 = "NSP22216"
+	music = "D_NSP208"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP209 "Flooded Tunnels"
+{
+	titlepatch = "NSP2V08"
+	next = "NSP210"
+	secretnext = "NSP210"
+	sky1 = "NSP22216"
+	music = "D_NSP209"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP210 "Just Kidding, Back to the Techbase"
+{
+	titlepatch = "NSP2V09"
+	next = "NSP211"
+	secretnext = "NSP211"
+	sky1 = "NSP22216"
+	music = "D_NSP210"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP211 "A Normal Doom Map"
+{
+	titlepatch = "NSP2V10"
+	next = "NSP212"
+	secretnext = "NSP212"
+	sky1 = "NSP22216"
+	music = "D_NSP211"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP212 "Factory Chambers"
+{
+	titlepatch = "NSP2V11"
+	next = "NSP213"
+	secretnext = "NSP213"
+	sky1 = "NSP22216"
+	music = "D_NSP212"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	//ResetInventory
+	//ResetHealth
+}
+
+map NSP213 "Escaping the City"
+{
+	titlepatch = "NSP2V12"
+	next = "NSP214"
+	secretnext = "NSP214"
+	sky1 = "NSP22216"
+	music = "D_NSP213"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP214 "Ascension"
+{
+	titlepatch = "NSP2V13"
+	next = "NSP215"
+	secretnext = "NSP215"
+	sky1 = "NSP22248"
+	music = "D_NSP214"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	//ResetInventory
+	//ResetHealth
+}
+
+map NSP215 "Gladiator"
+{
+	titlepatch = "NSP2V14"
+	next = "NSP216"
+	secretnext = "NSP231"
+	sky1 = "NSP22248"
+	music = "D_NSP215"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP216 "Temple in the Stars"
+{
+	titlepatch = "NSP2V15"
+	next = "NSP217"
+	secretnext = "NSP217"
+	sky1 = "NSP22238"
+	music = "D_NSP216"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP217 "The Last Stand"
+{
+	titlepatch = "NSP2V16"
+	next = "NSP218"
+	secretnext = "NSP218"
+	sky1 = "NSP22211"
+	music = "D_NSP217"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP218 "The Gorge"
+{
+	titlepatch = "NSP2V17"
+	next = "NSP219"
+	secretnext = "NSP219"
+	sky1 = "NSP22210"
+	music = "D_NSP218"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP219 "Breakout"
+{
+	titlepatch = "NSP2V18"
+	next = "NSP220"
+	secretnext = "NSP220"
+	sky1 = "NSP22210"
+	music = "D_NSP219"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP220 "Hell's Outpost"
+{
+	titlepatch = "NSP2V19"
+	next = "NSP221"
+	secretnext = "NSP221"
+	sky1 = "NSP22237"
+	music = "D_NSP220"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	//ResetInventory
+	//ResetHealth
+}
+
+map NSP221 "Chambers of Ruin"
+{
+	titlepatch = "NSP2V20"
+	next = "NSP222"
+	secretnext = "NSP222"
+	sky1 = "NSP22237"
+	music = "D_NSP221"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP222 "The Resistance Will Go On"
+{
+	titlepatch = "NSP2V21"
+	next = "NSP223"
+	secretnext = "NSP223"
+	sky1 = "NSP22222"
+	music = "D_NSP222"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	//ResetInventory
+	//ResetHealth
+}
+
+map NSP223 "Paradigm Shift"
+{
+	titlepatch = "NSP2V22"
+	next = "NSP224"
+	secretnext = "NSP224"
+	sky1 = "NSP22223"
+	music = "D_NSP223"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP224 "Rite of Passage" 
+{
+	titlepatch = "NSP2V23"
+	next = "NSP225"
+	secretnext = "NSP225"
+	sky1 = "NSP22254"
+	music = "D_NSP224"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP225 "Final Refuge"
+{
+	titlepatch = "NSP2V24"
+	next = "NSP226"
+	secretnext = "NSP226"
+	sky1 = "NSP22224"
+	music = "D_NSP225"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP226 "Crimson Death"
+{
+	titlepatch = "NSP2V25"
+	next = "NSP227"
+	secretnext = "NSP227"
+	sky1 = "NSP22235"
+	music = "D_NSP226"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP227 "Emerald Station"
+{
+	titlepatch = "NSP2V26"
+	next = "NSP228"
+	secretnext = "NSP228"
+	sky1 = "NSP22223"
+	music = "D_NSP227"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP228 "Cliffs of the Wasteland"
+{
+	titlepatch = "NSP2V27"
+	next = "NSP229"
+	secretnext = "NSP229"
+	sky1 = "NSP22211"
+	music = "D_NSP228"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP229 "Slaughter of the Damned"
+{
+	titlepatch = "NSP2V28"
+	next = "NSP230"
+	secretnext = "NSP230"
+	sky1 = "NSP22232"
+	music = "D_NSP229"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP230 "Shattered"
+{
+	titlepatch = "NSP2V29"
+	next = "NSP233"
+	secretnext = "NSP233"
+	sky1 = "NSP22239"
+	music = "D_NSP230"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	allowmonstertelefrags
+	allowjump
+	allowcrouch
+}
+
+map NSP231 "Platformer's Paradise"
+{
+	titlepatch = "NSP2V30"
+	next = "NSP216"
+	secretnext = "NSP232"
+	sky1 = "NSP22236"
+	music = "D_NSP231"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP232 "Cyber's Space" 
+{
+	titlepatch = "NSP2V31"
+	next = "NSP216"
+	secretnext = "NSP216"
+	sky1 = "NSP22236"
+	music = "D_NSP232"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+}
+
+map NSP233 "Color-Coded Chaos"
+{
+	next = "NSP234"
+	secretnext = "NSP234"
+	sky1 = "NSP22236"
+	music = "D_NSP233"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	allowjump
+	allowcrouch
+}
+
+map NSP234 "Grand Finale"
+{
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "NSP22227"
+	music = "D_NSP234"
+	intermusic = "D_NSP2IN"
+	ExitPic = "NSP2INT"
+	EnterPic = "NSP2INT"
+	allowjump
+	allowcrouch
+}

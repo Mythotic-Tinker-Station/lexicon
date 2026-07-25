@@ -726,7 +726,7 @@ ACTOR Lexicon_ROTR_Fist : Weapon
 	}
 }
 
-ACTOR Lexicon_ROTR_Pistol : DoomWeapon
+ACTOR Lexicon_ROTR_Pistol : Weapon
 {
 	Weapon.SelectionOrder 1900
 	Weapon.AmmoUse 1
@@ -804,7 +804,7 @@ ACTOR Lexicon_ROTR_Chainsaw : Weapon
 	}
 }
 
-ACTOR Lexicon_ROTR_Shotgun : DoomWeapon
+ACTOR Lexicon_ROTR_Shotgun : Weapon
 {
 	Weapon.SelectionOrder 1300
 	Weapon.AmmoUse 1
@@ -846,7 +846,7 @@ ACTOR Lexicon_ROTR_Shotgun : DoomWeapon
 	}
 }
 
-ACTOR Lexicon_ROTR_SuperShotgun : DoomWeapon
+ACTOR Lexicon_ROTR_SuperShotgun : Weapon
 {
 	Weapon.SelectionOrder 400
 	Weapon.AmmoUse 2
@@ -895,7 +895,7 @@ ACTOR Lexicon_ROTR_SuperShotgun : DoomWeapon
 	}
 }
 
-ACTOR Lexicon_ROTR_PlasmaRifle : DoomWeapon
+ACTOR Lexicon_ROTR_PlasmaRifle : Weapon
 {
 	Weapon.SelectionOrder 100
 	Weapon.AmmoUse 1

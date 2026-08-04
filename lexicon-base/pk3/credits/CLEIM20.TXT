@@ -1,0 +1,290 @@
+Introduction
+------------
+This is the text file for CLEIMOS 2, a full 32-wad replacement for 
+registered DOOM 2.  CLEIMOS 2 is available from your favorite DOOM mirror
+site, either in the "incoming", "newstuff", or alphabetized level
+directories.  Look for:
+
+	cleim20a.zip
+	cleim20b.zip
+
+These are sized to fit on 3.5" floppies.
+
+
+How to install CLEIMOS 2
+------------------------
+     1. You'll need 13mB of space on your hard disk to unzip and install     
+	CLEIMOS 2.
+
+     2. Unzip the two files cleim20a.zip and cleim20b.zip in the
+	same directory where you keep DOOM 2.  The following files
+	will be unpacked:
+
+		CLEIM20.TXT     This file
+		CLEIM20.000     The first half of the wad file
+		CLEIM20.001     The second half of the wad file
+		C2INSTAL.BAT    Main installation script
+		C2DEUINS.BAT    DeuSF modification script
+		C2RUN.BAT       Script for running CLEIMOS 2
+		C2LEVELS.GIF    Level names
+		C2CREDIT.GIF    Credits
+		DEUSF.EXE       For adding DOOM 2 sprites to cleim20.wad
+		C2CLEAN.BAT     For when you're finished with CLEIMOS 2
+				and ready to move on
+
+     3. Run the C2INSTAL.BAT script.  This will create the cleim20.wad
+	file and prepare it for running with DOOM 2.
+	
+	*** None of your existing DOOM 2 files will be changed ****
+
+     4. Our demos were prepared using DOOM 2 v1.666.  If you are running 
+	v1.7 or v1.9, our demos will cause the game to abort when DOOM 2 
+	attempts to play them.  You can either:
+
+		a. make your choices at the initial menu fast enough
+		   to avoid the demos.
+
+		b. download a copy of Paul Hermann's killdemo program
+		   from ftp.cdrom.com or any doom mirror site.  Look
+		   for killdemo.zip in the wad_tools directory.
+
+================================================================
+Title                   : Cleimos 2 (pronounced "clay-mos")
+				    (ok, ok, "clay-mos too")
+			  A complete 32-level replacement for DOOM 2.
+File Name               : cleim20.wad 
+Authors                 : Rand and Steven Phares (Steven just had his
+			  16th birthday this weekend!)
+Email Address           : phares@dg-rtp.dg.com (send Steven a birthday
+			  greeting!)
+Additional Credits to   : id Software, Inc.
+			  & the authors of:
+				WinDEU
+				wintex
+				idbsp
+				warm
+				rmb
+				DeuSF
+				the FAQ
+				the SPECS
+Special Thanks to       : Beta testers -
+				Loyal Bassett, Peter Brown,
+				Richard Clements, Beth Madry,
+				Peter Morgan, Karl Owen, Chris Sharpe
+			  WinDEU -
+				Renaud Paquay, for additional WinDEU
+				features (excellent customer service!)
+================================================================
+* THE LEVELS *
+
+ 1      Advent                  NOTE: Barrels act differently in CLEIMOS 2.
+ 2      Holding Pens                  Considering that they contain
+ 3      No Quarter                    radioactive material, they will harm
+ 4      Torment                       you if you get too close.  Blow them
+ 5      The Cleansing                 up, and the spot where they were 
+ 6      Enclave                       standing continues to be radioactive,
+ 7      Bastion                       and can still harm you.
+ 8      Hazard Base                     
+ 9      Cauldron                        
+10      Veil of Blood           NOTE: The automap names don't match the
+11      Annihilation                  CLEIMOS 2 level names, since we
+12      Trapped                       followed id's desire to not touch
+13      Ground-Zero                   their binaries.
+14      The Five                        
+15      Stairway to Hell        NOTE: Ignore all the intermission and
+16      Bulletproof                   end-level text.  We didn't change
+17      Sole Survivor                 it, for the same reason given in
+18      Scent of Death                the previous note.
+19      Rise & Fall
+20      Hip Deep                NOTE: We've kept the level sizes under
+21      Full Metal Island             230k to minimize save/load problems
+22      Rosewood                      under heavy fighting conditions.  If  
+23      Castle of the Ancients        you have a 4mB system, and you 
+24      The Ungathered                experience problems, let us know.
+25      Well of Fire                  
+26      Release Me
+27      Entr'acte (DM)                  
+28      Axis (DM)                       
+29      The Hive (DM)   
+30      Temple of Lost Souls (DM)
+31      Command + Control
+32      Tomb of the Forsaken            
+================================================================
+* THE STORY SO FAR... *
+
+[The original CLEIMOS story is available in cleim10.zip, released in
+ August '94 for DOOM.]
+
+     It's the year 2112.
+     "Nuts" Kelton had plowed his way through the holographic images of
+Cleimos Island.  He reached what appeared to be the main communications
+tower, and activated the console controls to set up a link back to Connors,
+who had sent him to the island to clean it up.
+     After a long silence as he adjusted the controls, the headphones 
+suddenly came to life with a crackling static.
+     He pushed the transmit button on the console.
+     "Comm Base, this is Kelton.  Over," he said.
+     The headphones continued to spit.
+     "Shit," he said.  This time he punched the button hard.  "Comm Base,
+this is Kelton.  Connors, get your ass on the line."
+     Nothing.
+     "Connors, the island's clean.  You can call off the hot bird.  You
+hear me?  YOU DON'T NEED TO NUKE THE PLACE!"
+     Still nothing.
+     Disgusted, Kelton threw off the headphones and they clattered across
+the console, smashing hard into the wall behind.
+     Suddenly, the lights flickered.  From somewhere, a pleasant voice
+began to speak softly...
+     "Program reset...
+     "System initialization engaged...
+     "Image construction engaged..."
+     Kelton instinctively picked up the weapons he had tossed aside when
+he had entered the room.  What the hell is this? he thought.
+     The voice continued...
+     "Insertion coordinates established...
+     "Intruder coordinates established...
+     "System initialization complete...
+     "Image construction complete...
+     "Gates engaged..."
+     The room suddenly filled with green light, and something huge roared
+to life before him...
+
+				###
+
+     Connors faced the team assembled in his office.  Outside,
+the skies had opened, and a torrential downpour was washing across the
+base.  In the distance, the ocean had turned gray, white swells
+rising and breaking against the docks on the north end of the island.
+     "We've had no word from Kelton," Connors said.  "So you'll be going in
+after him.  I told him we would nuke the island if we hadn't heard back from
+him in 24 hours."  He checked his watch.  "That deadline passed 30 minutes
+ago."  He looked back at the team.  "We can't afford to lose Kelton.
+There's too much research tied up in him.  You'll have to go to Cleimos
+Island, track him, and find him.  You've all been briefed on what you may
+find there."  He paused, scanning the faces before him.  "Any questions?"
+     The team leader spoke up.  "Sir, we'll do our best."
+     Connors looked the young man in the eye.  "And that, son, better
+include getting your asses back here in record time, *with* Kelton in tow.
+Now get out of here."
+     The team snapped to attention, saluted, and filed quickly from the
+room.
+     Connors turned and peered out the window.  Rain spattered across
+the glass.  He peered down at the dock, and at the transport that would
+take the men to Cleimos Island.  He thought of Kelton, and the years he
+had invested in the experiment.  He didn't want to lose it all now, but
+somewhere inside him, as he watched the transport rocking hard against the
+storm's fury, he felt a rising dread that he would never see Kelton again.
+     Outside, a shuttlebus arrived at the dock, and the small figures of
+the rescue team moved quickly up the walkway to the transport deck.
+     Connors leaned against the window, cold glass against his forehead.
+     "Good luck, men," he said.
+     As if in answer, the rain smashed hard and gray against the window...
+================================================================
+* PLAY INFORMATION *
+Maps                    : Maps 1-32
+Dependencies            : DOOM 2 v1.666 (registered)
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds/Music        : Sounds yes, music no
+New Graphics            : Yes
+Demos Replaced          : Yes
+================================================================
+* CONSTRUCTION *
+Base                    : 32 new levels from scratch
+Build Time              : Nine months
+Tools used              :   WinDEU - designing the levels
+			     idbsp - building nodes
+			      warm - building nodes
+			       rmb - building special reject tables
+			   dshrink - reducing sidedef info in wads
+			    wintex - assembling pwad
+			     DeuSF - inserting sprite info into wad
+Known Bugs              : None known.  You find 'em and let us know.
+================================================================
+* COPYRIGHT / PERMISSIONS *
+
+Users may NOT use these maps to build additional maps.  You wouldn't
+be able to anyway, since the maps have been compressed by removing
+redundant sidedefs (using dshrink).  They can be viewed using level
+editors, but changing them is next to impossible!
+
+If this addon is packaged with other addons for further distribution,
+all files must be included in their entirety.
+================================================================
+* WHERE TO GET THIS WAD *
+
+ftp.cdrom.com and all the DOOM mirror sites.
+================================================================
+* UNSOLICITED PRAISE FOR CLEIMOS (for DOOM) *
+
+	"I tried playing the beginning part of your episode cooperatively
+	 with one other player.  It was great!  I really liked the
+	 radioactive-berserker part!  So far I like it quite a bunch!
+	 It rocks.  I feel that you did an awesome job..."
+
+
+	"Myself and my friends agree, CLEIMOS is the most impressive
+	 DOOM wad ever written (that we have experienced), including
+	 DOOM.WAD.  Very very nice job.  My congratulations."
+
+
+	"I just tried your cleim10.wad file...
+	 Excellent!!!!! Nice job.  How long did it take you to do that?"
+
+
+	"I've finished working my way through your DOOM episode 'Cleimos'.
+	 Congratulations, guys!  You must be very proud of it.  It's the
+	 most attractive and coherent set of levels I've ever had the
+	 pleasure of battling through. I particularly like that way that
+	 where you end off one level is where you start on the next.  Very
+	 clever."
+
+
+	"Just e-mailing to tell you how cool your CLEIMOS DooM level was. 
+	 I also build my own levels, although mostly deathmatch levels.  I
+	 realise that it must of taken a HELL of a long time to complete all
+	 the  levels for CLEIMOS.  Although the average DooMer may not
+	 notice all the little touches that you put into your levels.  Let
+	 me say that your light sources were fantastic.  You had them
+	 right on all occasions..."
+
+
+	"I've just completed your cleimos wadfile and think it was very
+	 good.  I liked the way each episode finished at the beginning of
+	 the next episode.  Some interesting places to visit I think!  Well
+	 Done and THANX!"
+
+
+	"Thanks for one of the best wads I have ever played...
+	 You guys are just GREAT!  If you two decide to go it again please
+	 let me know, I can't wait."
+
+
+	"Just thought I would let you know that I am loving your wad.  The
+	 dead-ends threw me for a loop at first (didn't read the .txt), but
+	 I like the touch."
+
+
+	"I am very much looking forward to your new version of cleimos...
+	 cleim10.wad is my all time favorite for doom1."
+
+================================================================
+
+Well, that's it.  Hope you enjoy our hard work.  Let us know your
+reactions.  We didn't notice any other full replacements out there, so
+CLEIMOS 2 may be the first.  (Just barely, though, thanks to id deciding to
+publish the TNT project.  Hey!  40 people worked on TNT.  We only had
+the two of us...)
+
+It's been fun.
+
+						Steven Phares
+						Rand Phares
+						Raleigh, NC
+						November, 1995
+
+						phares@dg-rtp.dg.com
+
+

@@ -1,0 +1,518 @@
+===========================================================================
+Archive Maintainer      : -
+Update to               : -
+Advanced engine needed  : None; You can fire it up with any source port you want. It can run using the "vanilla" doom2.exe.
+Primary purpose         : Single play / Deathmatch
+===========================================================================
+Title                   : Scientist 2
+Filename                : sci2.wad
+Release date            : October 2005
+Author                  : Scientist
+Email Address           : doom2scientist@gmail.com
+Other Files By Author   : sci.wad (older version of sci2.wad which was released in October 2002)
+Misc. Author Info       : http://scientist.says.it
+
+Description             : Made for "vanilla" doom2.exe and includes:
+			  -20 single player maps (map01 upto 20 = all 11 maps from sci.wad + 9 new maps), 
+			  -10 bonus deathmatch maps (map21-30)
+			  -some new textures and sprites including some weapons and a renewed scientist sprite.
+
+Additional Credits to   : Ocean's Edge for 3 music tracks
+===========================================================================
+* What is included *
+
+New levels              : 30 (20 single player and 10 Deathmatch - the first 11 maps have been released earlier as sci.wad)
+Sounds                  : Some
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes (dehacked file is also internal)
+Demos                   : No
+Other                   : Yes;
+	The sci2.zip contains:
+
+	SCI2.wad:	This is the wad file - ready for use when using a source port (it has an internal dehacked file).
+	SCI2.txt:	this txt file
+
+	SCIvanil:	A folder containing the files you need for SCI2.wad to work under MSDOS;
+			SCIsetup.bat:	You'll need to run this when you want to run SCI2.wad with 
+					vanilla doom2 (= without source port)
+			SCI2.deh:	a dehacked file that will be installed when running SCImsdos.bat 
+			dehacked.exe:	also needed to install sci2.deh
+			deusf.exe:	needed to complete sci2.wad
+	SCI2_zdaemon_crossbow_fix.wad:	The crossbow doesn't work well in Zdaemon. this patch will fix it.
+	SCIcons:	A folder containing icons for Windows XP
+Other files required    : none
+
+
+* Play Information *
+
+Game                    : DOOM2
+Map #                   : Map01 upto MAP30
+Single Player           : Designed for (map 1-20)
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : Designed for (map 21-30)
+Other game styles       : -
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : Maps 1-11 somewhere between 1998 and 2002. Maps 12-32 somewhere between 2002 and 2005.
+Editor(s) used          : DEU2 v 1.00, idE v 1.0, DCK v 3.0, NWT v 1.3, Deusf/Deutex v 3.6, WhackEd2 v 0.60, 
+			  Doombuilder (recommended), XWE (recommended) and DeHackEd v3.1.
+			  (These programs can all be found on http://www.doomworld.com)
+Known Bugs              : The crossbow messes up in ZDaemon, which can be fixed. See Note 5 at the Note chapter (bottom).
+May Not Run With...     : Should work with everything.
+
+
+* Copyright / Permissions *
+
+Authors may use the contents of this file as a base for
+modification or reuse.
+
+You MAY distribute this file, provided you include this text file, with
+no modifications.  You may distribute this file in any electronic
+format (BBS, Diskette, CD, etc) as long as you include this file 
+intact. 
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.3dgamers.com/pub/idgames/ and mirrors
+Web sites: htpp://scientist.says.it
+FTP sites: -
+
+****************
+More information
+****************
+
+[1]	Details
+[2]	How to play SCIENTIST2
+[3]	Story
+[4]	Single Player Maps
+[5]	Bonus Deathmatch maps and icons
+[6]	Music
+[7]	Permissions
+[8]	Contact
+[9]	Notes
+
+
+**********
+1. Details
+**********
+Wad Description: SCIENTIST2 [sci2.wad] is a custom wad for the classic computer game Doom2.
+		 sci2.wad is the latest version of sci.wad which was released earlier (October 2002). 
+		 sci2.wad contians:
+
+	
+		The first 20 maps make up the single player based part. Beyond that I added
+		ten DM levels as a bonus. They are based on maps from the three episodes.
+
+
+New textures:		yes
+sprites replaced: 	some. The scientist sprite has been redone from scratch.
+Weapons replaced: 	Yes, five of them;
+			-Super Shotgun has been replaced with two shotguns	(based on the doom shotgun)
+			-Chaingun is replaced with a AK47			(based on photograph)
+			-Rocketlauncher is replaced with a crossbow		(from scratch)
+			-Plasmagun is replaced by a flamethrower		(from scratch, except the doom-hand)
+			-BFG is replaced by a flamegrenades			(from scratch, except the doom-hand)
+
+Differences between sci2.wad and sci.wad: 	sci2 contains 9 new single player based maps and 
+						10 new deathmatch maps and further includes new textures some 
+						new flats and sprites including four new weapon replacements (AK47,
+						crossbow, flamethrower and flamegrenades).						 
+						Also some textures have been redone.
+						The scientist sprite has been redone from scratch.
+						From the old maps (1-11) only map7 and 9 were (slightly) altered to 
+						fix some bugs.
+
+Thanks to: 	-id Software 
+		-the builders of the editing programs used
+		-Ocean's Edge for their great midis
+		-playtester: Thomas "revolution" van der Velden
+		-the rest of the Doom community.
+
+Additional credits:	-I ripped the sound I used for my AK47 (replaces Chaingun) from a wad called weap05.wad by Daniel.
+			The weap wads can be found in 99Weapup.Zip which can be found at 
+			the idgames archive (http://www.doomworld.com/idgames/).
+			-I ripped the sound for the crossbow (replacing the rocketlauncher) from strife.
+			-The sound of the flamethrower was taken from a wad named fireimp.wad.
+			-I modified scisetup.bat from the setup file from batmandoom
+
+
+******************************
+[2]	How to play SCIENTIST2
+******************************
+If you're using a source port you can start playing sci2 without reading this chapter.
+If you're using ZDoom for example you can simply drag and drop SCI2.wad on the ZDoom.exe and start playing.
+Bear in mind that SCI2.wad contains an internal dehacked file.
+
+As mentioned before it is possible to play the wad without a source port under MSDOS. Here's how:
+
+-unzip sci2.zip in your doom2 directory
+-copy the files from the scivanil folder to your main doom directory (where doom2.wad and doom2.exe) are.
+-run scisetup.bat
+-type "sci2 -file sci2.wad"
+
+Note that this will not harm your original files.
+
+
+*************
+[3]	Story
+*************
+I changed the story a bit. Here it goes:
+
+When early humans ate from the forbidden tree of knowledge of good and evil it brought pain and misery in the world, cursed
+the ground and man became evil. By gaining this knowledge god decided man should no longer be allowed to be able 
+to live forever. Thus turning the tree of life (immorality) into a forbidden tree.
+
+As science continues to improve it's understanding on life, origine, death and immortality it seems as if mankind
+again is at the point eating from a forbidden fruit.
+
+In our story a scientist is near the discovery of human immortality. He believes we don't need god to achieve immortality
+but can gain it through science.
+
+god is not pleased with this disobedience and as before he decides to turn mankind's home into a less comfortable place.
+As the scientist continues his work earth is hit by natural disasters and strange monsters are taking over.
+But the man of science is not impressed by all this and ignores all of god's warnings.
+
+It seems there is only one way to prevent the earth from becoming an even greater hell for humans;
+to kill the scientist.
+
+but be warned: he appears to be carring a portable teleporter enabling him to escape you.
+
+
+...
+
+
+Okay, It's a lame story. Please don't take it to seriously; I have no intention to offend anyone with this wad.
+
+
+**************************
+[4]	Single Player Maps
+**************************
+Scientist2 consists of 20 maps divided into three episodes.
+Also a number of deathmatch maps have been added as a bonus.
+
+Episode 1: Central City
+01  	the Scientist
+02  	Kapital
+03	Prosperity
+04	Refinery
+05	Reservoir
+06	Construction Yard
+
+Episode 2: Siberia
+07 	Siberia
+08	Frostbite
+09	Bio Lab
+10	Dark and Cold
+11	Pure as Snow
+
+Episode 3: Sacred City
+12	Crown of Thorns
+13	Cursed Ground
+14	Dogma
+15	Son of Man
+16	Zarathustra
+17	Second Horseman
+18	Zilzal
+19	Crown of Creation
+20	Mount of Congregation
+
+
+Some quotes to explain some of the map names:
+
+01  	the Scientist
+"The scientist does not study nature because it is useful; 
+he studies it because he delights in it, and he delights in it because it is beautiful."     
+-Henri Poincare quotes (French mathematician, physicist and philosopher of science, 1854-1912)
+
+02	Kapital
+"The theory of the Communists may be summed up in the single sentence: Abolition of private property." 
+-Karl Marx 
+
+07	Siberia
+"People who are truly convinced that they have advanced the frontier of science
+would not demand freedom for new ideas to coexist next to old, but to replace them."
+-V. I. Lenin, What Is to Be Done? (1902)
+
+09  	Bio Lab
+"The product of mental labor - science - always stands far below its value, 
+because the labor-time necessary to reproduce it has no relation at all to 
+the labor-time required for its original production."
+-Karl Marx 
+
+11	Pure As Snow
+"I want to walk in the snow And not leave a footprint
+I want to walk in the snow And not soil it’s purity."
+-Manic Street Preachers, 4ST 7LB 
+
+12.	Crown of Thorns
+"Then Jesus came out wearing the crown of thorns and the purple robe. 
+Pilate said to them, 'Here is the man!'" 
+-John 19:5
+
+13.	Cursed Ground
+"The ground is cursed because of you. 
+You will eat from it by means of painful labor all the days of your life. 
+It will produce thorns and thistles for you."
+-Genesis 3:17-18
+
+14.	Dogma
+"Religion is the sigh of the oppressed creature, the heart of a heartless world, 
+and the soul of soulless conditions. It is the opium of the people."
+-Karl Marx, Contribution to the Critique of Hegel's Philosophy of Right
+
+15.	Son of Man
+"Then I saw a great white throne and him who sat upon it; 
+from his presence earth and sky fled away, and no place was found for them. 
+And I saw the dead, great and small, standing before the throne" 
+- Rev 20:11-12
+
+16.	Zarathustra
+"Once blasphemy against God was the greatest blasphemy; 
+but God died, and those blasphemers died along with him. 
+Now to blaspheme against the earth is the greatest sin, 
+and to rank love for the Unknowable higher than the meaning of the earth!
+-Nietzsche, Thus spoke Zarathustra
+
+17	Second Horseman
+"When the Lamb opened the second seal, I heard the second living creature say, "Come!" 
+Then another horse came out, a fiery red one. 
+Its rider was given power to take peace from the earth and to make men slay each other.
+To him was given a large sword."
+-Rev 6:3-4
+
+18	Zilzal
+"When the earth is shaken with its (final) earthquake. 
+And when the earth throws out its burdens, 
+And man will say: "What is the matter with it?" 
+That Day it will declare its information (about all what happened over it of good or evil). 
+Because your Lord has inspired it. 
+That Day mankind will proceed in scattered groups that they may be shown their deeds.[] 
+So whosoever does good equal to the weight of an atom, shall see it. 
+And whosoever does evil equal to the weight of an atom, shall see it." 
+-Quran; 99. al-Zilzal: The Shaking
+
+20	Mount of Congregation
+"I will ascend into heaven, 
+I will exalt my throne above the stars of God; 
+I will sit also upon the mount of the congregation, in the sides of the north, 
+I will ascend above the heights of the clouds, 
+I will be like the Most High" 
+-Isa. 14:13-14 
+
+
+***************************************
+[5]	Bonus Deathmatch maps and icons
+***************************************
+[5.1]	DM Maps
+The first 20 maps make up the single player based part. Beyond that I added
+ten Deathmatch (multiplayer) levels as a bonus. They are based on maps from the three episodes.
+
+Map	name			based on
+ 21	Decadence		map 03	Prosperity
+ 22	Reconstruction		map 06	Construction Yard
+ 23	Perestrojka 		map 07	Siberia
+ 24	Blue   			map 07	Siberia
+ 25	Frost			map 08	FrostBite
+ 26	Byte			map 09	Frostbite
+ 27	Thorn			map 12	Crown of Thorns
+ 28	Green			map 18	Zilzal
+ 29	Scientific Heresy	map 19	Crown of Creation
+ 30	Eden			map 30	Mount of Congregation
+
+
+[5.2]	Icons
+In the zip file there's a directory with doom2 icons called "SCIcons".
+I've made them for Windows XP using NWT and irfanview.
+
+*************
+[6]	Music
+*************
+The original plan was that a friend of mine was going to make three midis and that Johnatone was going to make 
+the rest of the needed music. I've seem to have lost contact with Johnatone however so I just used midis from
+Dream Theater instead. These midis can be legally downloaded from their official website.
+
+My friend's band is called 'Ocean's Edge' and you can find their site at:
+http://www.oceansedge.nl
+
+Many thanks to Piet (that's his name).
+
+Credits for the music:
+original name | map  |replaced with 
+
+D_Runnin 	map01 Ocean's Edge  - In For A Ride
+D_stalks 	map02 Dream Theater - Jason Partridge - burning_my_soul
+D_Countd 	map03 Dream Theater - Jeroen Aga - erotomania
+D_betwee 	map04 Dream Theater - Johan Berglund - 6oclock
+D_doom 		map05 Dream Theater - Morfeus - Take The Time
+D_the_da 	map06 Dream Theater - Simon Novak - overture_1928
+D_shawn 	map07 Dream Theater - Unknown - the Ytsejam
+
+D_DDtblu 	map08 Dream Theater - Marco Sfogli - don't look past me
+D_in_cit 	map09 Dream Theater - Shane Woolcock and Tom Cox - Lifting Shadows
+D_dead 		map10 Dream Theater - Tom Cox - Surrounded
+D_STLKS2 	map11 Dream Theater - unknown - afterlife
+
+D_Theda2 	map12 Ocean's Edge  - Strange Days
+D_doom2 	map13 Dream Theater - Morfeus - Under a Glass Moon
+D_ddtbl2 	map14 Dream Theater - Morfeus - metropolis part 1
+d_runni2 	map15 Dream Theater - Troy Martin - crimson
+D_Dead2 	map16 Dream Theater - Antonio Godoy D and Lucas Yaksic Y - hell's
+D_STLKS3 	map17 Dream Theater - Toph Morris - Innocence Faded
+D_romero 	map18 Dream Theater - Simon Novak - strange_deja_vu
+D_shawn2 	map19 Dream Theater - Unknown - voices
+D_Messag 	map20 Dream Theater - Unknown - Lie
+
+D_Count2 	map21 Dream Theater - Shane Woolcock and Tom Cox - Lifting Shadows
+D_DDtbl3 	map22 Dream Theater - Johan Berglund - 6oclock
+D_ampie 	map23 Dream Theater - Unknown - Lie
+D_THEDA3 	map24 Dream Theater - Antonio Godoy D and Lucas Yaksic Y - hell's 
+D_Adrian 	map25 Dream Theater - Unknown - voices
+D_Messg2 	map26 Dream Theater - Morfeus - Take The Time
+D_Romer2 	map27 Dream Theater - Simon Novak - overture_1928
+D_tense 	map28 Dream Theater - Jason Partridge - burning_my_soul
+D_SHAWN3 	map29 Ocean's Edge  - Strange Days
+D_OPENIN 	map30 Ocean's Edge  - In For A Ride
+
+D_READ_M story music; Dream Theater - David Repulles - Wait for Sleep
+D_DM2TTL The intro music; Ocean's Edge - Price of Progress
+D_DM2INT In the intermap; Ocean's Edge - Price of Progress
+
+*******************
+[7]	Permissions
+*******************
+[7.1]	Wad
+You can freely play and distribute and sci2.wad as long as it's for non-commercial purposes. 
+If you wish to distribute it include this text file.
+
+[7.2]	Maps
+You can freely use, distribute and modify the maps and you may also use them as a base for your own maps 
+but only if you to give me credit for my work (=name me in the text file or something).
+
+[7.3]	Music
+Like I said the midis from Dream Theater can be downloaded from their offical site. If you want to use the Ocean's Edge
+midis ask the band first (contact: http://www.oceansedge.nl)
+
+[7.4]	textures, flats, sprites, weapons
+These are free to use and can be used, distributed and modified anyway you want as long as you give me credit
+for what I've done and use it for non-commerical products.
+
+[7.5]	Icons
+These are free for use and can be used, distributed and modified anyway you want; no need to credit me;
+Just pretend you made them yourself.
+
+Further,
+if you're using some of my stuff please let me know; I'd be pleased to know my stuff being used.
+
+
+***************
+[8]	Contact
+***************
+The web and e-mail address in the text released with sci.wad (in October 2002)
+are no longer valid. The new site is at:
+
+	http://scientist.says.it
+
+and my new e-mail is: 
+
+	doom2scientist@gmail.com
+
+Sorry to those who tried to mail me at the old address and never got a response.
+
+I also have an account at http://www.doomworld.com under the name Scientist.
+
+
+*************
+[9]	Notes
+*************
+NOTE 1:	SCI.wad SCIsetup.bat (or any of the other unzipped files) will not alter you original 
+	doom2.wad or doom2.exe; using scientist2 is perfectly safe.
+
+Note 2: As mentioned earlier The first two episodes (map 1-11) of sci2.wad have been released 
+	earlier (October 2002) in a wad called sci.wad. These episodes have remained virtually unaltered 
+	in sci2 making sci.wad a bit obsolete.
+	Demos and savegames made for sci.wad should work fine with sci2.wad (perhaps not for map07).
+
+Note 3: If you have some reviews or demos please let me know they're very much appreciated!
+
+Note 4: For some reason some people seem to think the wad has a anti-Soviet plot. No such plot was intended.
+
+Note 5: I tested the deathmatch maps with ZDaemon and I found a bug; The crossbow has some trouble firing.
+	Now, I have no doubt this has to do with the alterations I made with DeHackEd but the crossbow works fine with
+	ZDoom and vanilla Doom2 so I blame the problem on ZDaemon! I got it working right in ZDaemon at one point but then
+	when I tried it in ZDoom and vanilla Doom it didn't work right so I decided to go with the version you have now. 
+	If you want to have to crossbow working fine in ZDaemon you should run sci2.wad with SCI2_zdaemon_crossbow_fix.wad.	
+
+NOTE 6: As said Sci2.wad is made to be able to run with the vanilla doom2.exe. This means I designed the maps with the idea
+	that the player can't jump. So don't jump.
+
+NOTE 7: Please do not take the story to seriously; 
+	There is no quarrel between science and god 
+	(...since one of them does not exist).
+
+I Hope I've informed you enough and you'll enjoy playing the wad,
+
+                             ..JI1?+++11d+.
+                           ..?6?1+?????1?16.,
+                            #:.++zzyzyzz;!`jF
+                          J?=`.`!!+ZlI!!!` ?1J,
+                          dzAQp:++!!!!+;+umAyd:
+                          vzzd#|JdQQmddR,wMkzw:
+                           .kvzM#S0zOvUWMS1zr
+                           .#;.dkZ?????Odz zb. .                 |
+     .                 . .dzD:.db.. ....Mv +Dz1d. ..      .  `  .D
+     ?`.    .    .... `C11zOR:.dHMMMHMMHMO zRzz++?O5. .  `=  .`=`
+       !  .`?   .J1!+?;+zOwk#c.dWHHMMMMHWO d#XwOz;+?!+v+.. ..?`
+            J  ,b1+.;?;+OZUU#I.d0U! ???CdO.d#U0ZI;++++;??1zd;
+            `..J0zz+;`;1+zww#IJdI`     `dwJdBCIz++;?+?111lld%
+             .#wkwO+z+1zzzvwNkwZO&+J+J+&ZOkzVz+zz++++1zlOOOdnj.
+           .gdHyWWkzOOwZ!` ?MWRkwXrOOOwuwXNZ1z;`   RzwwwkXOXXM    ..
+     ..+    MpWWHHHkXOzXoagAUWHWkkXQqNWkXSUZzvzijJx1XXXXHXXWyWQ.&b.
+      `#wyosUyXWHM@HHXXwkZMXdXXWWWpXHNHfWXXuwIwOXNkdXWXWNHHHpppWHF.
+      `#XwOwWWWMMMMMHHkkkXHXdwdwXWkHqqMHkkwXkGwXWHWWHHkHMHWSZWWXWMMF
+      .#kdXpWHM@MMHkWWHMWWHHHHWHHHqHHHHmMHWHHHHWWWWHkXWHMWdSUOwuXXMF
+     MWWWWHHHMMM#=T"9mpbHWUSXwwXXWHMWgWHWZwkwXXXWHHMNXYYTWKkwOwvXWMF
+   ..WUWHHMMMH#7^   ."4#WXXWkWHWSZXdW#kXOZWWHWkXXXH#T^   `54kQXXWNMb..
+   J0rOjXUWqMK@`      `=dkWWMHHmkkWHWMWpkkdWHHHWWKC=       `?dkWHMHHM.
+   JVzOzXXWWM7!         JNMHMHHWU0UXW#0UVUWWHHqHH#.          JHMHNkXdo..
+   JO+OXuwWWM.          JMHHHWHkkXXQWNkkXXXXNHHHp#`          JMMH#0wrwwv
+   Jl+OKXyMC``          JHWWkHMHkkWkWWWkkkkWWWbWW#`          JqpfHXrItwr
+   Jl+OWWHM+          .mZXXyWUUU0CVUXk0OzvVXUWWWyUQp.        JHUWHZOOv!+
+   Jl?wXdF`           J#SdXWHWWkwIwXWNXwIwXXVWpWywdF`        JWyZSrtd!
+   Jl1wXdF            J#IwXXWWHkXXXXWM0ywXWWHWHWXwdb.       .JWVXzwZd!
+   JrOwddF           .,#Iww0uWWWHkkwwXXZXWHWHWXXuwwUMD    .JKcz+z0dr
+   JvXwjdD..        `NWXIOOrzXXyWHHyVVkWHpkWXuXZzwwXdL.  `#WRywwrs?^
+   J0XOjzJM:        .NXwOOzttrwXWMHHWWWHHWHWXX0IOOrwXWM` `#WHWSOwF
+   JuwwdXWM!         MkkZO+llOOwWMmM@@MNHWWXXXZzlwwwXfM` `TdNHWm7=
+   `?NkHM#7`         MHkwzzz1zzXWHH#7`!?MWXuwwrzzwXXXVM`   `=??"`
+     ?!!?^           MWXXwz=?zzXpMH#`   dbkXwZOOwwXWXWM`
+                    .N0zXXwOjrdXHHW#.   dqNWXIzwwuyXWNM.
+                    `NIjZuXuzXkWyWy#`   dkMHH0wuZVWWMP`
+                    .MXyZOZXkWWWW0u#`   dWHWNHkXWpWHM$
+                      J#kXZWNqHWkkX#.   dWHqHHHWWWH#M$
+                      ?MWXWHMMMMHHK#.    .MHNWV"UHMF
+                        JNMWwud0UMk#.    `MHNd|  MWF
+                        ?YMS27?uXMq#`    .MqHMr .MMF
+                          dk@  JHMk#..   .MqHMR,uMMF
+                          dp#,.JNWWHXF   .MkHM@MgqHF`
+                          dWHHqHqWWXXF   .MqHHHHH#7!
+                          `?MqqHqkWwdF   .MHHWWWW#.
+                           .MHKWWWy#!    .MWWyXXW#`
+                             j#0XCX#`    .MWySXWySQp.
+                             `#ZOzO#.    .MV8Mr `MWF`
+                          `.#V4OzzwXdF`  `M` dF   ?F`
+                         .dOVu27CQZZdD.
+                        Jf!1ddF  dI?1sdt
+                        J| .MMF  M. ,#dl		
+ ___   ___  __  ___   ___  ____  __  ___  ____
+/ __) / __)(  )/ o \ / _ \(_  _)(  )/ __)(_  _)
+\__ \( (__  )( ) __/ )/ \(  )(   )( \__ \  )(   
+(___/ \___)(__)\___)(_) (_)(__) (__)(___/ (__)
+
+***********
+End of File
+***********

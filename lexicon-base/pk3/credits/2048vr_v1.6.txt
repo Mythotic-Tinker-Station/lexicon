@@ -1,0 +1,489 @@
+===========================================================================
+Archive Maintainer      : This version does NOT contain the DeHackEd guns
+                          for the project. Also included in the .zip is
+			  2048EX_v1.4.wad, which contains 6 extra maps. 
+			  This an update version of 2048 Units of /vr/ -
+			  Clean Edition!
+Update to               : 2048 Units of /vr/ - Clean Edition
+Advanced engine needed  : Boom
+Primary purpose         : Single play
+===========================================================================
+Title                   : 2048 Units of /vr/ - Clean Edition
+Filename                : 2048vr_v1.6.zip
+Release date            : 10/21/20
+Author                  : Various
+Email Address           : [redacted]
+Other Files By Author   : 100 Minutes of /vr/, 200 Minutes of /vr/, & 300
+                          Minutes of /vr/
+Misc. Author Info       : /vr/ - Retro Games, Doom General
+
+Description             : This project contains 32 maps in the main wad, plus
+                          an additional 6 that didn't make the cut contained
+                          in the extra wad. Inspired by projects like MAYhem
+                          2048 and Congestion 1024, we sought to make a
+                          project with similar restrictions: make a
+                          boom-compatible map where the playable areas are
+                          within a 2048x2048 unit space and optionally use
+                          textures from gothictx.
+                          
+                          This version of the wad does not contain the
+			  DeHackEd guns. Feel free to experiment with mods
+			  of your choice.
+
+Additional Credits to   : Level Design: Spooky Cacodemon, aan, Sandsculker,
+                          Khodoque, EnragedEggplant, ViolentBeetle,
+                          Chopblock223, A2Rob, Repugnus, Mr. B, Sitri, Brxyz,
+                          punch you in the face man, manuk3r, Samuel
+                          Samuelson, Bartekmil, Washing Machine Enthusiasts,
+                          kakroucz, charcola, LunchLunch, Anonymous Sloth,
+                          Vaeros, & Anonymous                     
+===========================================================================
+* What is included *
+
+New levels              : 38; 32 in 2048vr_v1.6.wad, 6 in 2048EX_v1.4.wad
+Sounds                  : Yes
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : Yes
+Demos                   : Yes
+Other                   : Internal MAPINFO lump
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-32 ; 01-06
+Single Player           : Designed for
+Cooperative 2-4 Player  : No
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : ~2 months
+Editor(s) used          : Ultimate Doombuilder, Slade
+Known Bugs              : May still contain some texture misalignments. MAP04
+                          in the extra wad is basically unfinished, but still
+                          playable.
+May Not Run With        : Any port not compatible with Boom
+Tested With             : PrBoom+, GZDoom, Eternity
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-nc-nd/4.0/
+
+You are free to copy and redistribute the material in any medium or format.
+If you do so, you must give appropriate credit, provide a link to the
+license, and indicate if changes were made. You may do so in any reasonable
+manner, but not in any way that suggests the licensor endorses you or your
+use. You may not use the material for commercial purposes. If you remix,
+transform, or build upon the material, you may not distribute the modified
+material.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://boards.4channel.org/vr/catalog#s=doom%20thread
+
+
+** 2048 Units of /vr/ (v1.6) - Credits **
+                          
+Title Music: Title theme to Crucified Dreams by Vincent Fong
+Intermission Music: E1M9.mus from Heretic
+Text Crawl Music: "The Yawning World" by James Paddock
+                          
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                          
+MAP01: Gatehouse
+Author: Spooky Cacodemon
+Music: MIDI version of The Only Thing They Fear Is You from Doom Eternal
+Fixes: Added difficulty settings, aligned a few textures. 
+Removed imp outside of map, added missing texture.
+Difficulty: Easy
+~
+MAP02: You're a drunk loser, and not the cool kind
+Author: aan
+Music: MIDI rendition of "Every Day I Die" by Gary Numan
+Fixes: Fixed a fucky linedef.
+Difficulty: Easy
+~
+MAP03: Roundabout Cliffside
+Author: SandSculker
+Music: Blue Water, Blue Sky" - Guilty Gear XX.
+Arranged by Feathers https://www.vgmusic.com/music/console/sony/ps2/
+Fixes: Fixed a slime trail near the rocket launcher, moved a medikit 
+slightly that telports up when the floor moves in the red skull room.
+Moved a trigger so that it's not missable.
+Difficulty: Medium
+~
+MAP04: Lobachevsky Overdrive
+Author: Khodoque
+Music: "Press the Button" By Technology midi 
+by MIN www.midi.ru/song/112167/
+Fixes: Fixed an out of place brick texture that appears when the walls 
+lower in the red key room
+Difficulty: Easy
+~
+MAP05: Arrogance and Contempt
+Author: EnragedEggplant
+Music: "SA-X Appears" from Metroid Fusion
+Fixes: Changed the outside floor texture from the default base flat to 
+an ash texture, also fixed some unpegged doors, replaced some cumbersome 
+midtextures (now the map looks good in both hardware and 
+software renderers!)
+Also rebuilt a small section from scratch due to recurring collission issues, let's hope this is over with now.
+Difficulty: Easy
+~
+MAP06: An Appointment With Mr. Pain
+Author: ViolentBeetle
+Music: D_SHAWN from Doom II
+Fixes: Fixed a set of midbars that could be passed through.
+Difficulty: Medium
+~
+MAP07: Forsaken Stockades
+Author: ChopBlock223
+Music: Map 01 track from the Rockit25 set, composed by Mr.Chris
+Fixes: Removed a softlock that could be found at the beginning of the map
+Shaved away a lot of those stupid wallposts, fixed a huge slimetrail, 
+adjusted some textures.
+Difficulty: Hard
+~
+MAP08: Belial's Bachelor Pad
+Author: Repugnus
+Music: Midi rendition of "Hang Castle" from Sonic Heroes 
+by Stacy Anne Christiansen 
+https://www.vgmusic.com/music/console/nintendo/gamecube/Sonic_Heroes_Hang_Castle.mid
+Fixes: Moved stairs slightly in the evil eye hallway to make 
+sure nobody gets under the bars. Removed a few fucky linedefs 
+outside the map.
+Difficulty: Medium
+~
+MAP09: Precipice HQ (2048wipV2)
+Author: Mr. B
+Music: "Smoke and Mirrors" from the Rise of the Triad
+soundtrack (added by project lead)
+Fixes: Fixed some unpegged doortracks, added some support beams 
+to divide some windows that were difficult to adjust 
+without screwing up the midbars
+Difficulty: Medium
+~
+MAP10: Sewers
+Author: Sitri
+Music: "Water World" from the Duke Nukem 3D soundtrack 
+(added by project lead)
+Fixes: Fixed some STARTAN that was never retextured
+Difficulty: Medium
+~
+MAP11: Retirement Grease
+Author: Sitri
+Music: Prayers in the Machine.mid by Alfonzo 
+http://alfonzo.the-powerhouse.net/Bloody%20Rust%202/
+Fixes: Fixed teleport boxes for some imps so they could 
+enter the level and get killed.
+Difficulty: Medium
+~
+MAP12: Suspiral
+Author: punch you in the face man
+Music: "Suspense Reprise" from Eternal Doom
+Fixes: Made the teleport box near the end of the level more efficient.
+Difficulty: Medium
+~
+MAP13: Barge In
+Author: Khodoque
+Music: "Voyage, Voyage" by Desireless, cover by Sergei Minaev, 
+midified by Andrei Khodakov (www.midi.ru/song/149626/)
+Fixes: Raised up mountain slightly to avoid cutting off the skybox.
+Fixed teleporters so the trees loop. 
+Boxed in some linedefs outside the map so GzDoom would stop complaining.
+Difficulty: Medium
+~
+MAP14: Shipwreck Cavern
+Author: Samuel Samuelson
+Music: https://www.vgmusic.com/file/ab3406c54e2e0671b199d9df67c211b3.html#disqus_thread
+Fixes: /
+Difficulty: Medium
+Note: Thought this would be a good follow up to 
+"Barge In" because of the ship theme.
+~
+MAP15: Caliginous Cauldron
+Author: Washing Machine Enthusiasts
+Music: "Hell's Furnace" by Tristan Clark (aka Eris Falling) 
+from TNT: Revilution.
+Fixes: Shifted the imp window cubbies in the main 
+hall so wall textures could be aligned.
+Fixed a missable secret tag, fixed it so you can't get stuck 
+by Revenants at a trap.
+Difficulty: Hard
+~
+MAP16: Ghoul Grotto
+Author: Brxyz
+Music: Midi of Cavern Caprice from DKC3 sequenced by Lutarez
+Fixes: Cleaned away some extraneous linedefs outside the 
+map (I did this to a lot of levels)
+Difficulty: Medium
+~
+MAP17: 30 Days in the Cooler For Talking
+Author: A2Rob
+Music: "Escape Velocity" by James Paddock
+Fixes: /
+Difficulty: Medium
+Note: RSKY1 appears in this map because the author used a sky 
+transfer, NOT A BUG.
+~
+MAP18: Straight Walled Rooms
+Author: manuk3r
+Music: tc_the_beheading_of_king_charles_i (donated by Khodoque)
+Fixes: Removed a softlock by making a door repeatable.
+Shifted an ambush so it's not very easily missable, adjusted a 
+floor slightly.
+Fixed an incorrect linedef action probably applied when I did the previous fix.
+Difficulty: Medium
+~
+MAP19: Trifecta
+Author: kakroucz
+Music: Castlevania: Aria of Sorrow-Clock Tower
+(https://www.khinsider.com/midi/gba/castlevania-aria-of-sorrow)
+Fixes: Added difficulties. Fixed a few out of place textures on the exit 
+bars.
+Difficulty: Medium
+~
+MAP20: Baal's Coliseum
+Author: Bartekmil
+Music: MIDI rendition of "The Arena" theme from Aria of 
+sorrow credits: World of game mids
+(http://www.mirsoft.info/gmb/music_info.php?id_ele=MTM3NjI=)
+Fixes: Added a marker to the yellow key door.
+Difficulty: Hard
+~
+MAP21: Tiny Fragment
+Author: charcola
+Music: "Aliens, Say Your Prayers!" from Duke Nukem 3D
+Fixes: /
+Difficulty: Medium
+~
+MAP22: The Wretched Scythe Hole
+Author: aan
+Music: UN43.mid from the unused Doom music compilation
+Fixes: /
+Difficulty: Hard
+~
+MAP23: For They Defiled Our Waters
+Author: LunchLunch
+Music: Glitter Gulch Mine 
+Factory Remix (https://www.khinsider.com/midi/n64/banjo-tooie)
+Fixes: Made start door openable from the inside indefinitely.
+Can now also be opened from the outside once you get the yellow key.
+Difficulty: Hard
+~
+MAP24: Badass Billy's Party Palace (formerly Good Boy's Club)
+Author: Anonymous Sloth
+Music: Midi rendition of TMNT theme
+Fixes: Fixed some texture misalignments
+Difficulty: Hard
+~
+MAP25: Maniacal Menstruation
+Author: Anonymous
+Music: The Enchanted Cathedral from Hexen 2
+Fixes: /
+Difficulty: Hard
+~
+MAP26: The Dark Sanctuary
+Author: Vaeros
+Music: Heretic E1M3.mid
+Fixes: Fixed a teleporter which was inside out.
+Difficulty: Hard
+~
+MAP27: Welcome to the Peanut Gallery
+Author: LunchLunch
+Music: Fungi Forest Mine Cart 
+(https://www.khinsider.com/midi/n64/donkey-kong-64)
+Fixes: Fixed some fucky sectors and linedefs.
+Difficulty: Hard
+~
+MAP28: Bleak Cinders
+Author: ChopBlock223
+Music: Music is the E3M3 track from the Rockit25 set, composed by Mr.Chris
+(Famously heard in JPCP's Map 08).
+Fixes: Made it possible to trigger the "Secret is revealed" message in the 
+partial invisibility secret.
+Made it so you can't leap into the hole the Cyberdemon is hidden in
+by removing the hole and just having him teleport into place later instead.
+(Thus also removing some exploits some gameplay mods would net you).
+Redid the central pillars so the textures loop perfectly.
+Redid the switch setup in the twin Archie encounter,
+because it was so fucking everyone thought it was just misaligned,
+NO, it was just a really bad design decision.
+Difficulty: Hard
+~
+MAP29: Black Crest
+Author: Brxyz
+Music: Space Boss theme from the Adventures of Batman 
+and Robin sequenced by TheVideoGame (with some edits)
+Fixes: Removed some extraneous linedefs outside the level, boxed in some 
+functional linedefs. Tweaked difficulty slightly.
+Difficulty: Very Hard
+~
+MAP30: Tyrant's Starless Realms
+Author: Chopblock223 (5 map submissions, deserves a round of applause!)
+Music: Track 04 from the .wad "Ol' No Name", composed by James Paddock
+Fixes: Added some more ammo.
+Also tried to cut down somewhat on some detail you can't even see,
+because if you use a flashlight mod in GzDoom, the framerate, 
+while otherwise perfectly fine drops like a fucking rock. 
+Trimming didn't work, so just don't use a flashlight.
+Difficulty: Very Hard
+~
+MAP31: Minimalism
+Author: Washing Machine Enthusiasts
+Music: "Deep Into the Code" from Ultimate Doom
+Fixes: Fixed HOM, when the walls fell. Removed an untaggable secret.
+It's possible to get more than 100% credits for secrets due to how Donut and Change effects work, fixed.
+Difficulty: Hard (Very hard if going for secret exit)
+~
+MAP32: Club Boom
+Author: Washing Machine Enthusiasts
+Music: "Blue Monday" by New Order (MIDI conversion by anonymous)
+Fixes: Fixed conveyor so that it also works like it should in GzDoom
+Difficulty: Medium
+~
+
+***2048EX_v1.4.wad
+
+MAP01: Vehement Onslaught
+Author: ChopBlock223
+Music: From map 08 of Crucified Dreams, composed by Nick Baker.
+Fixes: / 
+Difficulty: Hard
+Note: Author's blessing to put in an EXTRA 
+slot (doesn't fit in a 2048x2048 space)
+Note from author: What a fucking waste of time this level was.
+~
+MAP02: The Dark Below
+Author: ChopBlock223
+Music: A .midi recreation of the Judas Priest song 
+Out In The Cold, unknown author.
+Fixes: Woke up Chaingunner in teleport box outside map.
+Difficulty: Hard
+Note: Also doesn't fit inside a 2048x2048 space
+~
+MAP03: Pointing You the Way Out
+Author: Anonymous
+Music: "Hate Machine" by James Paddock (Sigil: E5M1)
+Fixes: /
+Note: Kind of a clusterfuck, would be good in one of the 
+EXTRA slots as an interesting challenge map
+Difficulty: Hard
+~
+MAP04: Roundabout
+Author: Anonymous
+Music: /
+Fixes: Fixed a hom, but there's too much that needs to be done with map to make
+it worth the effort.
+I fixed some more HOMs, but I largely agree. No hate, but it's slightly halfbaked.
+Difficulty: Hard
+Note: While it has an exit, this map seems unfinished. 
+Another good candidate for an EXTRA slot.
+~
+MAP05: Inner Cloister
+Author: Anonymous
+Music: "The Gatehouse" from Heretic
+Fixes: Fixed some HOMs, 
+Difficulty: Hard
+~
+MAP06: Missy Elliot Rodgers
+Author: LunchLunch
+Music: Kastle Kaos (DKC3) https://www.khinsider.com/midi/snes/donkey-kong-country-3
+Fixes:Some teleporters weren't repeatable.
+Though this mapset has poor multiplayer support to begin with, it can't hurt.
+Difficulty: Hard
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1.6 Changelog:
+-Fixed a couple HOMs in Map18.
+-Fixed an issue in Map04 where an Imp and a Revenant were stuck inside of eachother on HMP.
+-Fixed an issue in Map29 where the yellow key would sometimes not teleport in.
+-Lowered the outer ceiling height in Map29 to prevent the Cacodemons from flying too high. 
+
+
+1.5 Changelog:
+-Redid the pillar/pit in Map05, redid that entire section of hallway even, let's hope that will be no more trouble.
+-Map24 didn't have its keys tagged for easy skills, fixed that.
+-Map13 was missing some linedef actions for crushers.
+-Map18 had an incorrect linedef action probably done accidentally by me last time.
+-Map18's music credits were also incorrect.
+-Fixed typographical error in Map11 textcrawl.
+-Fixed an error letting you get credits for one more secret than Map 31 actually has.
+
+1.4 Changelog:
+-Cleaned up MANY extraneous linedefs outside of maps (mostly lines people drew for themselves to
+help stay within the 2048 limit). 
+-Boxed in some functional linedefs outside of maps, because GzDoom complains if you don't.
+-Fixed some fucked up doubled linedefs here and there, some fucked up sectors.
+-Fixed the conveyor on MAP32 so that it also works properly on GzDoom.
+-Tweaked some teleport boxes here, some teleport boxes there.
+-Fixed a couple of missing textures and HOMs.
+-Fixed a couple of slimetrails.
+-Fixed one or two softlocks.
+-Reworked the DeHacked weapons set thoroughly, thanks a thousand to Hackfraud and Brxyz!
+DeHacked set now animates and sounds 90% like the smooth Decorate version.
+-Guns now integrated into the base version of 2048.
+-Fixed up the optional Decorate weapon set, also made a version compatible with Zandronum.
+-Recorded new demos for new versions.
+-Tweaked the big number 0, because it looked a bit much like an 8 at a glance.
+-Touched up RSKY1 a little bit to make it more seamless and natural looking.
+-Did way too many fixes to list all individually.
+
+
+1.3 Changelog:
+-MAP03 had a linedef in the flesh tunnel you could avoid which released some monsters, now it's
+been replaced with a line that the player has no choice but to cross
+-Fixed a faulty pillar in MAP05 which would get the Archvile stuck
+-Adjusted some details on the beds MAP07 which restricted the player's movement slightly, along 
+with some other minor tweaks
+-Made it possible for the trees to loop on the scrolling mountain in MAP13 so they don't ruin
+the illusion of movement by piling up at the end
+-Removed a secret tag in MAP15 which was easily missed due to a short step into the secret exit
+-Removed an secret tag in MAP31 which was impossible to trigger due to its location on a thin
+sector
+-MAP18 had a door near the opening which was tagged as S1- now it's repeatable. This map also
+had some shotgunners and imps that are easily missed due to a door shutting on the player, so the
+tag to trigger them was set to an earlier step
+-Adjusted some textures in MAP28 and altered the big reveal fight to make it more open for player
+maneuverability
+-Adjusted some textures/flats in MAP30 and added more ammo. Optimizations were also made to make
+this map run better in GZDoom
+~~Thanks to Chopblock223 for the updates!~~
+
+1.2 Changelog:
+-Softlock in MAP03 taken care of
+-MAP05 & MAP07 slightly edited to work in MBF compatibilty (for the DeHackEd Guns)
+-MAP21 Hell Knight encounter altered, scratched walls fixed
+-MAP11 Hell Knights now teleport in when plasma secret is triggered
+-Fixed an inescapable death pit in MAP24
+-Fixed a softlock in EX02
+-Stuck Pinkies in EX04 are now free
+-BFG added to both 2048 Guns wads
+~~Thanks to hackfraud and Chopblock223 for the edits and the guns!~~
+
+Other Credits:
+-Project lead: Repugnus
+-TITLEPIC & M_DOOM by punch you in the face man
+-BOSSBACK by Vaeros
+-ENDOOM and Credit Pic by Repugnus
+-Alternate IoS , INTERPIC, Sky 2 & 3 textures by ChopBlock223
+-Spawncube sprites from DN3D (edited by Chopblock223)
+-Sky1 by Predator (edit of Dbzone) (https://idsky.booru.org/index.php?page=post&s=view&id=31)
+-Hud by punch you in the face man (Background and ammo icons are from Eternal Doom. 
+Text is Stgotic font by Daniel Hernández. Numbers are Gargoyle Wing from Realm667 by Jimmy)
+-2048GUNS.wad by Chopblock223
+-2048Guns DeHackEd Edition by hackfraud
+
+Special thanks to all the anons who helped playtest and posted feedback, you all helped 
+immensely with the development of this project.

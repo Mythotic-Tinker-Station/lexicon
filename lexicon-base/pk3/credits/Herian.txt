@@ -1,0 +1,65 @@
+Title          :   HERIAN (revision 5, 04/06/1998)
+
+Filename       :   HERIAN.WAD
+
+Author         :   Ian Wilson
+
+Email Address  :   i.w@virgin.net
+
+Description    :   Herian has no story it is simply a 32 level TC made primarily for the single
+		   player.  The infuence for it came from my favourite games mentioned below.
+			 
+                   32 NEW levels, NEW textures, NEW sounds & NEW monsters
+
+                   All levels were made for single play.
+                   Deathmatch and co-operative play is possible, but not optimized.  Many
+	           of the levels are too large for deathmatch.
+
+Additional Credits
+     and thanks to: iD-software, Raven, Rogue & 3D Realms for:
+		    Doom, Doom 2, Quake, Heretic, Hexen, Strife, ROTT and Duke Nukem 3D.
+		    The authors of DM2CONV, Wintex, NWT, WARM, Windeu, DEUSF and Wad Author.
+		    Also to the DosDoom Team for DosDoom and to Team TNT for Boom.
+================================================================
+
+* Play Information *
+
+Game                    : DOOM II
+Episode and Level #     : MAP01-MAP32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes (not optimized)
+Deathmatch 2-4 Player   : Yes (not optimized)
+Difficulty Settings     : Yes
+New Sounds              : Yes (a few)
+New Graphics            : Yes and new sky added in this revision for compatibility with DosDoom
+			  at high resolution
+New Music               : No
+Demos Replaced          : All 3
+
+* Construction *
+
+Base                    : Mainly new levels from scratch with a few infuenced by
+			  Doom, Doom 2, Heretic, Hexen and Rise of the Triad.
+Editor(s) used          : DM2CONV, Wintex, NWT, WARM, Windeu and Wad Author.
+Known Bugs              : None.  Herian was developed for Windows 95 and
+			  should played at 640 by 400 or 640 by 480 but it's even better at
+			  800 x 600 using DosDoom it you have a powerful enough PC.
+			  A bug was reported on level 08 red door.  This has been corrected.
+			  Some general improvements have been carried out at revision 3
+			  including changes to lighting.  The general them for Herian has also
+			  been changed including a new End of Game Boss Monster.
+			  Finally a visplane error was found in Map04 using the original
+			  Doom2.exe therefore it is better not to be used with Herian.
+			  Legacy Doom (Doom3.exe) and Windoom are no better in this respect
+			  and it is better not to use them either with Herian.  Stick to
+		          Doom95, Boom or DosDoom.
+			  Revision 4 - introduced following a report of an anomaly in map 12
+			  when used with Boom.  Some small changes were made to a stair to 
+		          work correctly with Boom.  There was no problem with Doom95 or
+			  DosDoom.
+			  Revision 5 - introduced after it came to my notice (by a fellow
+			  Doom enthusiast) the map08 was too close to one of Doom2's original
+			  levels.  This map has been radical changed with some features such as
+			  switches and doors repositioned and visual enhancements made.
+
+ 

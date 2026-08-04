@@ -1,0 +1,362 @@
+// Herian Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HRN101 "Cage"
+{
+	titlepatch = "HRN1V00"
+	next = "HRN102"
+	secretnext = "HRN102"
+	sky1 = "HRN19587"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN102 "Airborne"
+{
+	titlepatch = "HRN1V01"
+	next = "HRN103"
+	secretnext = "HRN103"
+	sky1 = "HRN19587"
+	music = "$MUSIC_STALKS"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN103 "Garden"
+{
+	titlepatch = "HRN1V02"
+	next = "HRN104"
+	secretnext = "HRN104"
+	sky1 = "HRN19587"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN104 "Canyon"
+{
+	titlepatch = "HRN1V03"
+	next = "HRN105"
+	secretnext = "HRN105"
+	sky1 = "HRN19587"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN105 "Dungeon"
+{
+	titlepatch = "HRN1V04"
+	next = "HRN106"
+	secretnext = "HRN106"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DOOM"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN106 "Fortress"
+{
+	titlepatch = "HRN1V05"
+	next = "HRN107"
+	secretnext = "HRN107"
+	sky1 = "HRN19587"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN107 "Theatre"
+{
+	titlepatch = "HRN1V06"
+	next = "HRN108"
+	secretnext = "HRN108"
+	sky1 = "HRN19587"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+	Map07Special
+}
+
+map HRN108 "Doomtoo"
+{
+	titlepatch = "HRN1V07"
+	next = "HRN109"
+	secretnext = "HRN109"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN109 "Cityisle"
+{
+	titlepatch = "HRN1V08"
+	next = "HRN110"
+	secretnext = "HRN110"
+	sky1 = "HRN19587"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN110 "Switchroom"
+{
+	titlepatch = "HRN1V09"
+	next = "HRN111"
+	secretnext = "HRN111"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DEAD"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN111 "Castle"
+{
+	titlepatch = "HRN1V10"
+	next = "HRN112"
+	secretnext = "HRN112"
+	sky1 = "HRN19587"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN112 "Elevator"
+{
+	titlepatch = "HRN1V11"
+	next = "HRN113"
+	secretnext = "HRN113"
+	sky1 = "HRN19587"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN113 "Siameze"
+{
+	titlepatch = "HRN1V12"
+	next = "HRN114"
+	secretnext = "HRN114"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN114 "Tank"
+{
+	titlepatch = "HRN1V13"
+	next = "HRN115"
+	secretnext = "HRN115"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN115 "ROTT"
+{
+	titlepatch = "HRN1V14"
+	next = "HRN116"
+	secretnext = "HRN131"
+	sky1 = "HRN19587"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN116 "Hexed"
+{
+	titlepatch = "HRN1V15"
+	next = "HRN117"
+	secretnext = "HRN117"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN117 "Spider"
+{
+	titlepatch = "HRN1V16"
+	next = "HRN118"
+	secretnext = "HRN118"
+	sky1 = "HRN19587"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN118 "Orange"
+{
+	titlepatch = "HRN1V17"
+	next = "HRN119"
+	secretnext = "HRN119"
+	sky1 = "HRN19587"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN119 "Cascade"
+{
+	titlepatch = "HRN1V18"
+	next = "HRN120"
+	secretnext = "HRN120"
+	sky1 = "HRN19587"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN120 "Warehouse"
+{
+	titlepatch = "HRN1V19"
+	next = "HRN121"
+	secretnext = "HRN121"
+	sky1 = "HRN19587"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN121 "Office"
+{
+	titlepatch = "HRN1V20"
+	next = "HRN122"
+	secretnext = "HRN122"
+	sky1 = "HRN19587"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN122 "Vertigo"
+{
+	titlepatch = "HRN1V21"
+	next = "HRN123"
+	secretnext = "HRN123"
+	sky1 = "HRN19587"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN123 "Waterfall"
+{
+	titlepatch = "HRN1V22"
+	next = "HRN124"
+	secretnext = "HRN124"
+	sky1 = "HRN19587"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN124 "Cyberden"
+{
+	titlepatch = "HRN1V23"
+	next = "HRN125"
+	secretnext = "HRN125"
+	sky1 = "HRN19587"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN125 "Lastduel"
+{
+	titlepatch = "HRN1V24"
+	next = "HRN126"
+	secretnext = "HRN126"
+	sky1 = "HRN19587"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN126 "Contours"
+{
+	titlepatch = "HRN1V25"
+	next = "HRN127"
+	secretnext = "HRN127"
+	sky1 = "HRN19587"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN127 "Junkyard"
+{
+	titlepatch = "HRN1V26"
+	next = "HRN128"
+	secretnext = "HRN128"
+	sky1 = "HRN19587"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN128 "Disco"
+{
+	titlepatch = "HRN1V27"
+	next = "HRN129"
+	secretnext = "HRN129"
+	sky1 = "HRN19587"
+	music = "$MUSIC_TENSE"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN129 "Big"
+{
+	titlepatch = "HRN1V28"
+	next = "HRN130"
+	secretnext = "HRN130"
+	sky1 = "HRN19587"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN130 "Quarry"
+{
+	titlepatch = "HRN1V29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "HRN19587"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+	allowmonstertelefrags
+}
+
+map HRN131 "Vastland"
+{
+	titlepatch = "HRN1V30"
+	next = "HRN116"
+	secretnext = "HRN132"
+	sky1 = "HRN19587"
+	music = "$MUSIC_EVIL"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}
+
+map HRN132 "Trubble"
+{
+	titlepatch = "HRN1V31"
+	next = "HRN116"
+	secretnext = "HRN116"
+	sky1 = "HRN19587"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "HRN1INT"
+	EnterPic = "HRN1INT"
+}

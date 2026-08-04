@@ -1,0 +1,94 @@
+// Counterattack Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+	forcenoskystretch
+}
+
+map CNAT01 "Aggilus"
+{
+	titlepatch = "CNATV00"
+	next = "CNAT02"
+	secretnext = "CNAT02"
+	sky1 = "CNAT0008"
+	music = "D_CNAT01"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT02 "Phlogiston"
+{
+	titlepatch = "CNATV01"
+	next = "CNAT03"
+	secretnext = "CNAT03"
+	sky1 = "CNAT0009"
+	music = "D_CNAT02"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT03 "Aegritudo"
+{
+	titlepatch = "CNATV02"
+	next = "CNAT04"
+	secretnext = "CNAT04"
+	sky1 = "CNAT0010"
+	music = "D_CNAT03"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT04 "Maeror"
+{
+	titlepatch = "CNATV03"
+	next = "CNAT05"
+	secretnext = "CNAT05"
+	sky1 = "CNAT0021"
+	music = "D_CNAT04"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT05 "Dolor"
+{
+	titlepatch = "CNATV04"
+	next = "CNAT31"
+	secretnext = "CNAT31"
+	sky1 = "CNAT0033"
+	music = "D_CNAT05"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT31 "Desiderium"
+{
+	titlepatch = "CNATV30"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "CNAT31"
+	sky1 = "CNAT0022"
+	music = "D_CNAT31"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}
+
+map CNAT32 "Microland"
+{
+	titlepatch = "CNATV31"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "CNAT0023"
+	music = "D_CNAT32"
+	intermusic = "D_CNATIN"
+	ExitPic = "CNATINT"
+	EnterPic = "CNATINT"
+}

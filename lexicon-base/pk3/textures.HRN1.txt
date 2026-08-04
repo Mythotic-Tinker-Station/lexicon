@@ -1,0 +1,531 @@
+Texture "HRN10073", 256, 128
+{
+	Patch "HRN10090", 0, 0
+	Patch "HRN10090", 64, 0
+	Patch "HRN10090", 128, 0
+	Patch "HRN10090", 192, 0
+}
+Texture "HRN10076", 256, 128
+{
+	Patch "HRN10090", 0, 0
+	Patch "HRN10090", 64, 0
+	Patch "HRN10090", 128, 0
+	Patch "HRN10090", 192, 0
+	Patch "HRN10443", 0, 0
+}
+Texture "HRN10077", 256, 128
+{
+	Patch "HRN10090", 0, 0
+	Patch "HRN10090", 64, 0
+	Patch "HRN10090", 128, 0
+	Patch "HRN10090", 192, 0
+}
+Texture "HRN10078", 256, 128
+{
+	Patch "HRN10090", 0, 0
+	Patch "HRN10090", 64, 0
+	Patch "HRN10090", 128, 0
+	Patch "HRN10090", 192, 0
+}
+Texture "HRN10107", 64, 128
+{
+	Patch "HRN10469", 0, 0
+	Patch "HRN10469", 0, 64
+}
+Texture "HRN10110", 128, 128
+{
+	Patch "HRN10562", 0, 0
+	Patch "HRN10563", 64, 0
+}
+Texture "HRN10114", 256, 128
+{
+	Patch "COMP04_5", 192, 0
+	Patch "COMP04_8", 128, 0
+	Patch "HRN10583", 160, 64
+	Patch "COMP04_6", 64, 0
+	Patch "COMP04_7", 192, 64
+	Patch "HRN10583", 128, 64
+	Patch "COMP04_7", 64, 64
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_6", 0, 0
+}
+Texture "HRN10115", 128, 128
+{
+	Patch "HRN10582", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "HRN10581", 96, 0
+	Patch "HRN10582", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "HRN10581", 96, 64
+}
+Texture "HRN10116", 128, 128
+{
+	Patch "COMP04_5", 64, 0
+	Patch "COMP04_7", 64, 64
+	Patch "COMP04_7", 0, 64
+	Patch "COMP04_6", 0, 0
+}
+Texture "HRN10117", 256, 56
+{
+	Patch "HRN10573", 0, 0
+	Patch "HRN10574", 64, 0
+	Patch "HRN10575", 128, 0
+	Patch "HRN10579", 192, 0
+}
+Texture "HRN10132", 128, 128
+{
+	Patch "HRN10282", 0, 0
+	Patch "HRN10282", 64, 0
+	Patch "HRN10474", 32, 32
+}
+Texture "HRN10151", 128, 128
+{
+	Patch "HRN10562", 64, 0
+	Patch "HRN10563", 0, 0
+}
+Texture "HRN10156", 64, 128
+{
+	Patch "HRN10543", 0, 0
+	Patch "HRN10543", 0, 64
+}
+Texture "HRN10158", 64, 128
+{
+	Patch "HRN10241", 0, 0
+	Patch "SW1S0", 16, 64
+}
+Texture "HRN10160", 64, 128
+{
+	Patch "SPINE3_1", 0, 0
+	Patch "SW4S0", 20, 64
+}
+Texture "HRN10161", 64, 128
+{
+	Patch "HRN10467", 0, 0
+	Patch "HRN10467", 0, 64
+	Patch "SW3S1", 16, 64
+}
+Texture "HRN10163", 64, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 16, 0
+	Patch "HRN10532", 32, 0
+	Patch "HRN10532", 48, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 16, 32
+	Patch "HRN10532", 32, 32
+	Patch "HRN10532", 48, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 16, 64
+	Patch "HRN10532", 32, 64
+	Patch "HRN10532", 48, 64
+	Patch "HRN10532", 0, 96
+	Patch "HRN10532", 16, 96
+	Patch "HRN10532", 32, 96
+	Patch "HRN10532", 48, 96
+	Patch "HRN10451", 19, 53
+}
+Texture "HRN10164", 64, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 16, 0
+	Patch "HRN10532", 32, 0
+	Patch "HRN10532", 48, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 16, 32
+	Patch "HRN10532", 32, 32
+	Patch "HRN10532", 48, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 16, 64
+	Patch "HRN10532", 32, 64
+	Patch "HRN10532", 48, 64
+	Patch "HRN10532", 0, 96
+	Patch "HRN10532", 16, 96
+	Patch "HRN10532", 32, 96
+	Patch "HRN10532", 48, 96
+	Patch "HRN10491", 20, 52
+}
+Texture "HRN10168", 64, 128
+{
+	Patch "HRN10228", 0, 0
+	Patch "SW1S0", 16, 64
+}
+Texture "HRN10171", 64, 128
+{
+	Patch "HRN10274", 0, 0
+	Patch "SW1S0", 16, 64
+}
+Texture "HRN10172", 64, 128
+{
+	Patch "HRN10241", 0, 0
+	Patch "SW1S1", 16, 64
+}
+Texture "HRN10174", 64, 128
+{
+	Patch "SPINE3_1", 0, 0
+	Patch "SW4S1", 20, 64
+}
+Texture "HRN10175", 64, 128
+{
+	Patch "HRN10467", 0, 0
+	Patch "HRN10467", 0, 64
+	Patch "SW3S0", 16, 64
+}
+Texture "HRN10177", 64, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 16, 0
+	Patch "HRN10532", 32, 0
+	Patch "HRN10532", 48, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 16, 32
+	Patch "HRN10532", 32, 32
+	Patch "HRN10532", 48, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 16, 64
+	Patch "HRN10532", 32, 64
+	Patch "HRN10532", 48, 64
+	Patch "HRN10532", 0, 96
+	Patch "HRN10532", 16, 96
+	Patch "HRN10532", 32, 96
+	Patch "HRN10532", 48, 96
+	Patch "HRN10450", 19, 53
+}
+Texture "HRN10178", 64, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 16, 0
+	Patch "HRN10532", 32, 0
+	Patch "HRN10532", 48, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 16, 32
+	Patch "HRN10532", 32, 32
+	Patch "HRN10532", 48, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 16, 64
+	Patch "HRN10532", 32, 64
+	Patch "HRN10532", 48, 64
+	Patch "HRN10532", 0, 96
+	Patch "HRN10532", 16, 96
+	Patch "HRN10532", 32, 96
+	Patch "HRN10532", 48, 96
+	Patch "HRN10490", 20, 52
+}
+Texture "HRN10182", 64, 128
+{
+	Patch "HRN10228", 0, 0
+	Patch "SW1S1", 16, 64
+}
+Texture "HRN10185", 64, 128
+{
+	Patch "HRN10274", 0, 0
+	Patch "SW1S1", 16, 64
+}
+Texture "HRN10193", 64, 128
+{
+	Patch "HRN10474", 0, 0
+	Patch "HRN10474", 0, 64
+}
+Texture "HRN10194", 64, 128
+{
+	Patch "HRN10475", 0, 64
+	Patch "HRN10474", 0, 0
+}
+Texture "HRN10197", 128, 128
+{
+	Patch "HRN10196", 0, 0
+	Patch "HRN10474", 32, 32
+}
+Texture "HRN10198", 128, 128
+{
+	Patch "HRN10196", 0, 0
+	Patch "HRN10510", 37, 37
+}
+Texture "HRN10199", 128, 128
+{
+	Patch "HRN10196", 0, 0
+	Patch "HRN10515", 44, 23
+}
+Texture "HRN10201", 64, 128
+{
+	Patch "HRN10445", 0, 64
+	Patch "HRN10445", 0, 0
+}
+Texture "HRN10203", 64, 128
+{
+	Patch "HRN10446", 0, 64
+	Patch "HRN10447", 0, 0
+}
+Texture "HRN10205", 64, 128
+{
+	Patch "HRN10474", 0, 0
+	Patch "HRN10475", 0, 64
+	Patch "HRN10476", 20, 88
+	Patch "HRN10474", 0, 0
+	Patch "HRN10475", 0, 64
+	Patch "HRN10476", 20, 88
+}
+Texture "HRN10206", 64, 128
+{
+	Patch "HRN10467", 0, 0
+	Patch "HRN10470", 0, 64
+}
+Texture "HRN10207", 64, 128
+{
+	Patch "HRN10468", 0, 0
+	Patch "HRN10471", 0, 64
+	Patch "HRN10476", 20, 88
+}
+Texture "HRN10208", 64, 128
+{
+	Patch "HRN10472", 0, 64
+	Patch "HRN10472", 0, 0
+}
+Texture "HRN10209", 64, 128
+{
+	Patch "HRN10468", 0, 0
+	Patch "HRN10471", 0, 64
+}
+Texture "HRN10210", 64, 128
+{
+	Patch "HRN10468", 0, 0
+	Patch "HRN10468", 0, 64
+}
+Texture "HRN10211", 64, 128
+{
+	Patch "HRN10470", 0, 0
+	Patch "HRN10470", 0, 64
+}
+Texture "HRN10212", 64, 128
+{
+	Patch "HRN10469", 0, 0
+	Patch "HRN10469", 0, 64
+	Patch "HRN10514", 12, 23
+}
+Texture "HRN10213", 16, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 0, 96
+}
+Texture "HRN10224", 64, 128
+{
+	Patch "HRN10467", 0, 0
+	Patch "HRN10467", 0, 64
+}
+Texture "HRN10225", 64, 128
+{
+	Patch "HRN10248", 0, 0
+	Patch "HRN10515", 12, 23
+}
+Texture "HRN10226", 64, 128
+{
+	Patch "HRN10248", 0, 0
+	Patch "HRN10512", 12, 23
+}
+Texture "HRN10227", 64, 128
+{
+	Patch "HRN10248", 0, 0
+	Patch "HRN10510", 5, 37
+}
+Texture "HRN10229", 64, 128
+{
+	Patch "HRN10532", 0, 0
+	Patch "HRN10532", 16, 0
+	Patch "HRN10532", 32, 0
+	Patch "HRN10532", 48, 0
+	Patch "HRN10532", 0, 32
+	Patch "HRN10532", 16, 32
+	Patch "HRN10532", 32, 32
+	Patch "HRN10532", 48, 32
+	Patch "HRN10532", 0, 64
+	Patch "HRN10532", 16, 64
+	Patch "HRN10532", 32, 64
+	Patch "HRN10532", 48, 64
+	Patch "HRN10532", 0, 96
+	Patch "HRN10532", 16, 96
+	Patch "HRN10532", 32, 96
+	Patch "HRN10532", 48, 96
+}
+Texture "HRN10230", 128, 128
+{
+	Patch "HRN10477", 0, 0
+	Patch "HRN10478", 64, 0
+}
+Texture "HRN10257", 32, 32
+{
+	Patch "HRN10452", 0, 0
+}
+Texture "HRN10258", 32, 32
+{
+	Patch "HRN10454", 0, 0
+}
+Texture "HRN10259", 32, 32
+{
+	Patch "HRN10453", 0, 0
+}
+Texture "HRN10260", 32, 32
+{
+	Patch "HRN10455", 0, 0
+}
+Texture "HRN10261", 32, 32
+{
+	Patch "HRN10456", 0, 0
+}
+Texture "HRN10262", 64, 128
+{
+	Patch "HRN10492", 0, 0
+	Patch "HRN10492", 0, 64
+}
+Texture "HRN10264", 64, 128
+{
+	Patch "HRN10192", 0, 0
+	Patch "HRN10515", 11, 12
+}
+Texture "HRN10265", 64, 128
+{
+	Patch "HRN10192", 0, 0
+	Patch "HRN10514", 11, 12
+}
+Texture "HRN10266", 64, 128
+{
+	Patch "HRN10223", 0, 0
+	Patch "HRN10512", 11, 13
+}
+Texture "HRN10267", 64, 128
+{
+	Patch "HRN10223", 0, 0
+	Patch "HRN10516", 11, 13
+}
+Texture "HRN10269", 64, 128
+{
+	Patch "HRN10241", 0, 0
+	Patch "HRN10516", 11, 15
+}
+Texture "HRN10272", 64, 128
+{
+	Patch "HRN10501", 0, 0
+	Patch "HRN10501", 0, 64
+}
+Texture "HRN10283", 128, 128
+{
+	Patch "HRN10281", 0, 0
+	Patch "HRN10510", 37, 38
+}
+Texture "HRN10301", 64, 128
+{
+	Patch "HRN10125", 0, 0
+	Patch "DUCT1", 22, 80
+}
+Texture "HRN10306", 128, 128
+{
+	Patch "HRN10233", 0, 0
+	Patch "HRN10233", 64, 0
+}
+Texture "HRN10307", 128, 128
+{
+	Patch "HRN10219", 0, 0
+	Patch "HRN10219", 96, 0
+	Patch "HRN10219", 32, 0
+	Patch "HRN10219", 64, 0
+	Patch "HRN10510", 36, 36
+}
+Texture "HRN10323", 128, 128
+{
+	Patch "HRN10658", 0, 0
+	Patch "HRN10658", 0, 0
+}
+Texture "HRN10337", 128, 128
+{
+	Patch "HRN10561", 0, 0
+	Patch "HRN10561", 64, 0
+}
+Texture "HRN10343", 64, 128
+{
+	Patch "HRN10540", 0, 0
+	Patch "HRN10540", 0, 64
+}
+Texture "HRN10344", 128, 128
+{
+	Patch "HRN10654", 64, 70
+	Patch "HRN10656", 0, 70
+	Patch "HRN10654", 64, -2
+	Patch "HRN10656", 0, -2
+}
+Texture "HRN10346", 64, 128
+{
+	Patch "HRN10657", 0, 0
+	Patch "HRN10657", 0, 32
+	Patch "HRN10657", 0, 96
+	Patch "HRN10657", 0, 64
+}
+Texture "HRN10351", 128, 128
+{
+	Patch "HRN10223", 0, 0
+	Patch "HRN10223", 64, 0
+	Patch "HRN10474", 32, 32
+}
+Texture "HRN10352", 128, 128
+{
+	Patch "HRN10228", 0, 0
+	Patch "HRN10228", 64, 0
+	Patch "HRN10474", 32, 32
+}
+Texture "HRN10358", 256, 128
+{
+	Patch "HRN10595", 64, 0
+	Patch "HRN10598", 192, 0
+	Patch "HRN10228", 128, 0
+	Patch "HRN10357", 0, 0
+}
+Texture "HRN10359", 128, 128
+{
+	Patch "HRN10614", 0, 0
+	Patch "HRN10615", 64, 0
+}
+Texture "HRN10362", 256, 128
+{
+	Patch "HRN10228", 0, 0
+	Patch "HRN10228", 64, 0
+	Patch "HRN10228", 128, 0
+	Patch "HRN10228", 192, 0
+	Patch "HRN10382", 0, 0
+	Patch "HRN10382", 128, 0
+}
+Texture "HRN10365", 64, 128
+{
+	Patch "HRN10625", 0, 64
+	Patch "HRN10625", 0, 0
+}
+Texture "HRN10387", 64, 128
+{
+	Patch "HRN10489", 0, 0
+	Patch "HRN10489", 0, 64
+}
+Texture "HRN10401", 256, 128
+{
+	Patch "HRN10651", 0, 0
+	Patch "HRN10652", 128, 0
+}
+Texture "HRN10406", 128, 127
+{
+	Patch "HRN10700", 0, 0
+}
+Texture "HRN10416", 64, 128
+{
+	Patch "HRN10650", -4, 0
+}
+Texture "HRN10417", 128, 96
+{
+	Patch "HRN10128", 0, -16
+}
+Texture "HRN10432", 128, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2S0", 48, 60
+}
+Texture "HRN10438", 128, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2S1", 48, 60
+}

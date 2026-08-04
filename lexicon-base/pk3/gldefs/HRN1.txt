@@ -1,0 +1,74 @@
+object Lexicon_HRN1_WolfensteinSS
+{
+    frame LX76G { light ZOMBIEATK }
+}
+
+object Lexicon_HRN1_RedSkull
+{
+    frame LX70 { light REDKEY }
+}
+
+object Lexicon_HRN1_YellowSkull
+{
+    frame LX70 { light YELLOWKEY }
+}
+
+object Lexicon_HRN1_BlueSkull
+{
+    frame LX70 { light HEALTHPOTION }
+}
+
+flickerlight2 Lexicon_HRN1_SERPTORCH
+{
+    color 1.0 0.8 0.0
+    size 48
+    secondarySize 56
+    interval 0.1
+    offset 0 48 0
+}
+
+object Lexicon_HRN1_FloatingSkull
+{
+    frame LX74 { light Lexicon_HRN1_SERPTORCH }
+}
+
+object Lexicon_HRN1_EvilEye
+{
+    frame LX74 { light Lexicon_HRN1_SERPTORCH }
+}
+
+object Lexicon_HRN1_GreenTorch
+{
+    frame LX75 { light Lexicon_HRN1_SERPTORCH }
+}
+
+flickerlight2 Lexicon_HRN1_CAULFLAME
+{
+    color 1.0 1.0 1.0
+    size 24
+    secondarySize 26
+    interval 0.1
+}
+
+object Lexicon_HRN1_ShortGreenTorch
+{
+    frame LX75 { light Lexicon_HRN1_CAULFLAME }
+}
+
+flickerlight2 Lexicon_HRN1_CHANDELIER
+{
+    color 1.0 1.0 0.0
+    size 64
+    secondarySize 68
+    interval 0.1
+}
+
+object Lexicon_HRN1_BloodyTwitch
+{
+    frame LX74 { light Lexicon_HRN1_CHANDELIER }
+}
+
+object Lexicon_HRN1_NonsolidTwitch
+{
+    frame LX74 { light Lexicon_HRN1_CHANDELIER }
+}

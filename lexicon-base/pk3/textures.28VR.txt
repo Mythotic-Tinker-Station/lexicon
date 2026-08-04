@@ -1,0 +1,147 @@
+Texture "28VR0177", 64, 128
+{
+	Patch "28VR0534", 0, 0
+	Patch "28VR0534", 0, 64
+}
+Texture "28VR0178", 64, 128
+{
+	Patch "28VR0535", 0, 0
+	Patch "28VR0535", 0, 64
+}
+Texture "28VR0179", 64, 128
+{
+	Patch "28VR0536", 0, 0
+	Patch "28VR0536", 0, 64
+}
+Texture "28VR0180", 64, 128
+{
+	Patch "28VR0537", 0, 0
+	Patch "28VR0537", 0, 64
+}
+Texture "28VR0187", 32, 128
+{
+	Patch "28VR0290", 0, 0
+	Patch "28VR0290", 0, 32
+	Patch "28VR0287", 0, 64
+	Patch "28VR0290", 0, 96
+}
+Texture "28VR0195", 64, 128
+{
+	Patch "28VR0194", 0, 0
+	Patch "28VR0279", 0, 0
+	Patch "28VR0279", 1, 112
+}
+Texture "28VR0196", 64, 96
+{
+	Patch "28VR0194", 0, 0
+	Patch "28VR0279", 0, 80
+	Patch "28VR0279", 0, 0
+}
+Texture "28VR0197", 64, 64
+{
+	Patch "28VR0194", 0, 0
+	Patch "28VR0279", 0, 0
+	Patch "28VR0279", 0, 48
+}
+Texture "28VR0201", 64, 128
+{
+	Patch "28VR0557", 0, 0
+	Patch "28VR0557", 0, 64
+}
+Texture "28VR0211", 16, 128
+{
+	Patch "28VR0567", 0, 0
+	Patch "28VR0567", 0, 64
+}
+Texture "28VR0300", 128, 128
+{
+	Patch "28VR0653", 0, 0
+}
+Texture "28VR0304", 128, 128
+{
+	Patch "28VR0657", 0, 64
+}
+Texture "28VR0349", 32, 128
+{
+	Patch "28VR0210", 0, 0
+	Patch "28VR0210", 16, 0
+	Patch "28VR0277", 0, 0
+}
+Texture "28VR0350", 64, 128
+{
+	Patch "28VR0249", 0, 0
+	Patch "28VR0277", 0, 0
+	Patch "28VR0277", 32, 0
+	Patch "28VR0277", 0, 64
+	Patch "28VR0277", 32, 64
+}
+Texture "28VR0351", 64, 128
+{
+	Patch "28VR0249", 0, 0
+	Patch "28VR0277", 0, 0
+	Patch "28VR0277", 32, 0
+}
+Texture "28VR0369", 64, 128
+{
+	Patch "28VR0116", 0, 0
+	Patch "28VR0273", 0, 0
+	Patch "28VR0273", 32, 0
+	Patch "28VR0273", 0, 112
+	Patch "28VR0273", 32, 112
+}
+Texture "28VR0407", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "28VR0408", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "28VR0409", 256, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "SW4S0", 20, 80
+	Patch "28VR0192", 64, 0
+	Patch "28VR0192", 128, 0
+	Patch "28VR0192", 192, 0
+	Patch "28VR0756", 96, 76
+	Patch "28VR0757", 192, 76
+}
+Texture "28VR0410", 64, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S0", 0, 16
+	Patch "W33_8", 0, 64
+	Patch "28VR0756", 32, 0
+	Patch "28VR0757", 32, 32
+}
+Texture "28VR0415", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "28VR0416", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "28VR0417", 256, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "SW4S1", 20, 80
+	Patch "28VR0192", 64, 0
+	Patch "28VR0192", 128, 0
+	Patch "28VR0192", 192, 0
+	Patch "28VR0759", 96, 76
+	Patch "28VR0760", 192, 76
+}
+Texture "28VR0418", 64, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S1", 0, 16
+	Patch "W33_8", 0, 64
+	Patch "28VR0759", 32, 0
+	Patch "28VR0760", 32, 32
+}

@@ -1,0 +1,388 @@
+// Herian Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map HRN201 "A Familiar Place"
+{
+	titlepatch = "CWILV00"
+	next = "HRN202"
+	secretnext = "HRN202"
+	sky1 = "HRN28764"
+	music = "D_HRN201"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN202 "Search for Supplies"
+{
+	titlepatch = "CWILV01"
+	next = "HRN203"
+	secretnext = "HRN203"
+	sky1 = "HRN28764"
+	music = "D_HRN202"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN203 "Hunt for the Lost Castle"
+{
+	titlepatch = "CWILV02"
+	next = "HRN204"
+	secretnext = "HRN204"
+	sky1 = "HRN28765"
+	music = "D_HRN203"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN204 "Return to Town"
+{
+	titlepatch = "CWILV03"
+	next = "HRN205"
+	secretnext = "HRN205"
+	sky1 = "HRN28764"
+	music = "D_HRN204"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN205 "Lava Cave"
+{
+	titlepatch = "CWILV04"
+	next = "HRN206"
+	secretnext = "HRN206"
+	sky1 = "HRN28765"
+	music = "D_HRN205"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN206 "An Old Friend in Trouble"
+{
+	titlepatch = "CWILV05"
+	next = "HRN207"
+	secretnext = "HRN207"
+	sky1 = "HRN28764"
+	music = "D_HRN206"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN207 "Strange Place"
+{
+	titlepatch = "CWILV06"
+	next = "HRN208"
+	secretnext = "HRN208"
+	sky1 = "HRN28766"
+	music = "D_HRN207"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	outsidefog = "gray75"
+	nointermission
+}
+
+map HRN208 "He shouldn't be Here"
+{
+	titlepatch = "CWILV07"
+	next = "HRN209"
+	secretnext = "HRN209"
+	sky1 = "HRN28764"
+	music = "D_HRN208"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	cyberdemonspecial
+	specialaction_lowerfloor
+}
+
+map HRN209 "Escape to the Isles"
+{
+	titlepatch = "CWILV08"
+	next = "HRN210"
+	secretnext = "HRN210"
+	sky1 = "HRN28765"
+	music = "D_HRN209"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN210 "Things are getting worse"
+{
+	titlepatch = "CWILV09"
+	next = "HRN211"
+	secretnext = "HRN211"
+	sky1 = "HRN28764"
+	music = "D_HRN210"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN211 "Mixing Plant"
+{
+	titlepatch = "CWILV10"
+	next = "HRN212"
+	secretnext = "HRN212"
+	sky1 = "HRN28765"
+	music = "D_HRN211"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN212 "Nightmare in Main Street"
+{
+	titlepatch = "CWILV11"
+	next = "HRN213"
+	secretnext = "HRN213"
+	sky1 = "HRN28764"
+	music = "D_HRN212"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN213 "Cottage in the Hill"
+{
+	titlepatch = "CWILV12"
+	next = "HRN214"
+	secretnext = "HRN214"
+	sky1 = "HRN28765"
+	music = "D_HRN213"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN214 "Bon Accord Centre"
+{
+	titlepatch = "CWILV13"
+	next = "HRN215"
+	secretnext = "HRN215"
+	sky1 = "HRN28764"
+	music = "D_HRN214"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN215 "Trapped in an Asylum"
+{
+	titlepatch = "CWILV14"
+	next = "HRN216"
+	secretnext = "HRN216"
+	sky1 = "HRN28766"
+	music = "D_HRN215"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN216 "Lava Pit"
+{
+	titlepatch = "CWILV15"
+	next = "HRN217"
+	secretnext = "HRN231"
+	sky1 = "HRN28765"
+	music = "D_HRN216"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN217 "Arena"
+{
+	titlepatch = "CWILV16"
+	next = "HRN218"
+	secretnext = "HRN218"
+	sky1 = "HRN28765"
+	music = "D_HRN217"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN218 "Harbour Area"
+{
+	titlepatch = "CWILV17"
+	next = "HRN219"
+	secretnext = "HRN219"
+	sky1 = "HRN28765"
+	music = "D_HRN218"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN219 "Country Garden"
+{
+	titlepatch = "CWILV18"
+	next = "HRN220"
+	secretnext = "HRN220"
+	sky1 = "HRN28766"
+	music = "D_HRN219"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	outsidefog = "gray75"
+	nointermission
+}
+
+map HRN220 "Journey to Herian City"
+{
+	titlepatch = "CWILV19"
+	next = "HRN221"
+	secretnext = "HRN221"
+	sky1 = "HRN28764"
+	music = "D_HRN220"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN221 "Herian City"
+{
+	titlepatch = "CWILV20"
+	next = "HRN222"
+	secretnext = "HRN222"
+	sky1 = "HRN28764"
+	music = "D_HRN221"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN222 "A visit to the Water Mill"
+{
+	titlepatch = "CWILV21"
+	next = "HRN223"
+	secretnext = "HRN223"
+	sky1 = "HRN28765"
+	music = "D_HRN222"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN223 "Hot House"
+{
+	titlepatch = "CWILV22"
+	next = "HRN224"
+	secretnext = "HRN224"
+	sky1 = "HRN28766"
+	music = "D_HRN223"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	cyberdemonspecial
+	specialaction_lowerfloor
+}
+
+map HRN224 "Road Works"
+{
+	titlepatch = "CWILV23"
+	next = "HRN225"
+	secretnext = "HRN225"
+	sky1 = "HRN28764"
+	music = "D_HRN224"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN225 "Ship Shape"
+{
+	titlepatch = "CWILV24"
+	next = "HRN226"
+	secretnext = "HRN226"
+	sky1 = "HRN28764"
+	music = "D_HRN225"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN226 "Fantastic"
+{
+	titlepatch = "CWILV25"
+	next = "HRN227"
+	secretnext = "HRN227"
+	sky1 = "HRN28764"
+	music = "D_HRN226"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+}
+
+map HRN227 "Bridges"
+{
+	titlepatch = "CWILV26"
+	next = "HRN228"
+	secretnext = "HRN228"
+	sky1 = "HRN28766"
+	music = "D_HRN227"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN228 "Mysterious Tower"
+{
+	titlepatch = "CWILV27"
+	next = "HRN229"
+	secretnext = "HRN229"
+	sky1 = "HRN28766"
+	music = "D_HRN228"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	fade = "grey75"
+	nointermission
+}
+
+map HRN229 "Cavern"
+{
+	titlepatch = "CWILV28"
+	next = "HRN230"
+	secretnext = "HRN230"
+	sky1 = "HRN28764"
+	music = "D_HRN229"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	baronspecial
+	specialaction_lowerfloor
+}
+
+map HRN230 "Final Showdown"
+{
+	titlepatch = "CWILV29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "HRN28764"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	allowmonstertelefrags
+}
+
+map HRN231 "Return to Island City"
+{
+	titlepatch = "CWILV30"
+	next = "HRN217"
+	secretnext = "HRN232"
+	sky1 = "HRN28765"
+	music = "D_HRN231"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}
+
+map HRN232 "Secret Mission"
+{
+	titlepatch = "CWILV31"
+	next = "HRN217"
+	secretnext = "HRN217"
+	sky1 = "HRN28764"
+	music = "D_HRN232"
+	ExitPic = "HRN2INT"
+	EnterPic = "HRN2INT"
+	nointermission
+}

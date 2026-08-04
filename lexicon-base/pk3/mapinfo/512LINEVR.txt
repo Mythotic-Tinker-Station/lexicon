@@ -1,0 +1,397 @@
+// 512 Linedefs of /vr/ Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 52VR01 "Underblown Budget"
+{
+	titlepatch = "52VRV00"
+	next = "52VR02"
+	secretnext = "52VR02"
+	sky1 = "52VR0146"
+	music = "D_52VR01"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR02 "Deck 512"
+{
+	titlepatch = "52VRV01"
+	next = "52VR03"
+	secretnext = "52VR03"
+	sky1 = "52VR0146"
+	music = "D_52VR02"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR03 "BFG Multiplication"
+{
+	titlepatch = "52VRV02"
+	next = "52VR04"
+	secretnext = "52VR04"
+	sky1 = "52VR0146"
+	music = "D_52VR03"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR04 "iron512"
+{
+	titlepatch = "52VRV03"
+	next = "52VR05"
+	secretnext = "52VR05"
+	sky1 = "52VR0146"
+	music = "D_52VR04"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR05 "Mission Vambee"
+{
+	titlepatch = "52VRV04"
+	next = "52VR06"
+	secretnext = "52VR06"
+	sky1 = "52VR0146"
+	music = "D_52VR05"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR06 "511 lines of Horror"
+{
+	titlepatch = "52VRV05"
+	next = "52VR07"
+	secretnext = "52VR07"
+	sky1 = "52VR0146"
+	music = "D_52VR06"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR07 "Slivovitz Liver Massacre - Zandy version"
+{
+	titlepatch = "52VRV06"
+	next = "52VR08"
+	secretnext = "52VR08"
+	sky1 = "SKY1"
+	sky2 = "52VR0145"
+	music = "D_52VR07"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+	Map07Special
+}
+
+map 52VR08 "Tomes & Triggers"
+{
+	titlepatch = "52VRV07"
+	next = "52VR09"
+	secretnext = "52VR09"
+	sky1 = "52VR0146"
+	music = "D_52VR08"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR09 "Hit Play Half Cocked"
+{
+	titlepatch = "52VRV08"
+	next = "52VR10"
+	secretnext = "52VR10"
+	sky1 = "52VR0146"
+	music = "D_52VR09"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR10 "Hospice Relief"
+{
+	titlepatch = "52VRV09"
+	next = "52VR11"
+	secretnext = "52VR11"
+	sky1 = "52VR0146"
+	music = "D_52VR10"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR11 "Screen Dream"
+{
+	titlepatch = "52VRV10"
+	next = "52VR12"
+	secretnext = "52VR12"
+	sky1 = "52VR0146"
+	music = "D_52VR11"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR12 "Electrical System"
+{
+	titlepatch = "52VRV11"
+	next = "52VR13"
+	secretnext = "52VR13"
+	sky1 = "52VR0144"
+	music = "D_52VR12"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR13 "You're Not The Kind That Needs To Tell Me About The Birds And The Bees"
+{
+	titlepatch = "52VRV12"
+	next = "52VR14"
+	secretnext = "52VR14"
+	sky1 = "52VR0146"
+	music = "D_52VR13"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR14 "Public Castration Is A Good Idea"
+{
+	titlepatch = "52VRV13"
+	next = "52VR15"
+	secretnext = "52VR15"
+	sky1 = "52VR0146"
+	music = "D_52VR14"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+	SpecialAction = "SpiderMastermind", "Door_Open", 5, 16
+}
+
+map 52VR15 "Shirikodama Salad"
+{
+	titlepatch = "52VRV14"
+	next = "52VR16"
+	secretnext = "52VR31"
+	sky1 = "52VR0144"
+	music = "D_52VR15"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR16 "Helter Smelter"
+{
+	titlepatch = "52VRV15"
+	next = "52VR17"
+	secretnext = "52VR17"
+	sky1 = "52VR0144"
+	music = "D_52VR16"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR17 "Cordova Town"
+{
+	titlepatch = "52VRV16"
+	next = "52VR18"
+	secretnext = "52VR18"
+	sky1 = "52VR0146"
+	music = "D_52VR17"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR18 "Assyrian Drive"
+{
+	titlepatch = "52VRV17"
+	next = "52VR19"
+	secretnext = "52VR19"
+	sky1 = "52VR0144"
+	music = "D_52VR18"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR19 "Maybe You Dance"
+{
+	titlepatch = "52VRV18"
+	next = "52VR20"
+	secretnext = "52VR20"
+	sky1 = "52VR0144"
+	music = "D_52VR19"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR20 "Touchplate Trouble"
+{
+	titlepatch = "52VRV19"
+	next = "52VR21"
+	secretnext = "52VR21"
+	sky1 = "52VR0144"
+	music = "D_52VR20"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR21 "I Actually Like Nirvana"
+{
+	titlepatch = "52VRV20"
+	next = "52VR22"
+	secretnext = "52VR22"
+	//sky1 = "52VR0146"
+	music = "$MUSIC_COUNT2"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR22 "Shadow Puppets"
+{
+	titlepatch = "52VRV21"
+	next = "52VR23"
+	secretnext = "52VR23"
+	sky1 = "52VR0145"
+	music = "D_52VR22"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR23 "Egg Shell Sandwich"
+{
+	titlepatch = "52VRV22"
+	next = "52VR24"
+	secretnext = "52VR24"
+	sky1 = "52VR0145"
+	music = "D_52VR23"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR24 "Last night I bonded with your sister"
+{
+	titlepatch = "52VRV23"
+	next = "52VR25"
+	secretnext = "52VR25"
+	sky1 = "52VR0145"
+	music = "D_52VR24"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR25 "Cubic Conundrum"
+{
+	titlepatch = "52VRV24"
+	next = "52VR26"
+	secretnext = "52VR26"
+	sky1 = "52VR0145"
+	music = "D_52VR25"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR26 "512 Nights in Arabia"
+{
+	titlepatch = "52VRV25"
+	next = "52VR27"
+	secretnext = "52VR27"
+	sky1 = "52VR0145"
+	music = "D_52VR26"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR27 "Flynn Taggart Dies In Magma!"
+{
+	titlepatch = "52VRV26"
+	next = "52VR28"
+	secretnext = "52VR28"
+	sky1 = "52VR0146"
+	music = "D_52VR27"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR28 "Romero's Secret Pizza Party"
+{
+	titlepatch = "52VRV27"
+	next = "52VR29"
+	secretnext = "52VR29"
+	sky1 = "52VR0145"
+	music = "D_52VR28"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR29 "Forkheads.tk"
+{
+	titlepatch = "52VRV28"
+	next = "52VR30"
+	secretnext = "52VR30"
+	sky1 = "52VR0145"
+	music = "D_52VR29"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+	SpecialAction = "Cyberdemon", "Door_Open", 666, 16
+}
+
+map 52VR30 "In The Linedef Of Fire"
+{
+	titlepatch = "52VRV29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "52VR0145"
+	music = "D_52VR30"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+	//allowmonstertelefrags
+}
+
+map 52VR31 "Jackie Chan Doesn't Want Any Trouble"
+{
+	titlepatch = "52VRV30"
+	next = "52VR16"
+	secretnext = "52VR32"
+	sky1 = "52VR0146"
+	music = "D_52VR31"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}
+
+map 52VR32 "this is nice map"
+{
+	titlepatch = "52VRV31"
+	next = "52VR16"
+	secretnext = "52VR16"
+	sky1 = "52VR0146"
+	music = "D_52VR32"
+	intermusic = "D_52VRIN"
+	ExitPic = "52VRINT"
+	EnterPic = "52VRINT"
+}

@@ -1,0 +1,21 @@
+Actor Lexicon_28VR_BossEye : BossEye
+{
+	States
+	{
+	See:
+		SSWV A 181 A_PlaySound("28VR/DSBOSSIT", CHAN_VOICE, 1.0, 0, ATTN_NONE)
+		SSWV A 150 A_BrainSpit("Lexicon_28VR_SpawnShot")
+		Wait
+	}
+}
+
+Actor Lexicon_28VR_SpawnShot : SpawnShot
+{
+	States
+	{
+	Spawn:
+		LX76 W 3 BRIGHT A_SpawnSound
+		LX76 XYZ 3 BRIGHT A_SpawnFly
+		Loop
+	}
+}

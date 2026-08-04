@@ -1,0 +1,441 @@
+ACTOR Lexicon_HRN1_WolfensteinSS : WolfensteinSS
+{
+	SeeSound "HRN1/DSSSSIT"
+	DeathSound "HRN1/DSSSDTH"
+	Tag "$HRN1_TAG_WOLFSS"
+	Obituary "$HRN1_OB_WOLFSS"
+	States
+	{
+	Spawn:
+		LX76 AB 10 A_Look
+		Loop
+	See:
+		LX76 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LX76 E 10 A_FaceTarget
+		LX76 F 10 A_FaceTarget
+		LX76 G 4 BRIGHT A_CPosAttack
+		LX76 F 6 A_FaceTarget
+		LX76 G 4 BRIGHT A_CPosAttack
+		LX76 F 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		LX76 H 3
+		LX76 H 3 A_Pain
+		Goto See
+	Death:
+		LX76 I 5
+		LX76 J 5 A_Scream
+		LX76 K 5 A_NoBlocking
+		LX76 L 5
+		LX76 M -1
+		Stop
+	XDeath:
+		LX76 N 5 
+		LX76 O 5 A_XScream
+		LX76 P 5 A_NoBlocking
+		LX76 QRSTU 5
+		LX76 V -1
+		Stop
+	Raise:
+		LX76 M 5
+		LX76 LKJI 5
+		Goto See 
+	}
+}
+
+Actor Lexicon_HRN1_RedSkull : CustomInventory
+{
+	Inventory.PickupMessage "$HRN1_MSG_REDSKULL"
+	States
+	{
+	Spawn:
+		LX74 P 10
+		LX74 Q 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 3)
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_YellowSkull : CustomInventory
+{
+	Inventory.PickupMessage "$HRN1_MSG_YELWSKUL"
+	States
+	{
+	Spawn:
+		LX74 R 10
+		LX74 S 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 4)
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_BlueSkull : CustomInventory
+{
+	Inventory.PickupMessage "$HRN1_MSG_BLUESKUL"
+	States
+	{
+	Spawn:
+		LX74 N 10
+		LX74 O 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 5)
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_HealthBonus : HealthBonus
+{
+	States
+	{
+	Spawn:
+		LX72 SSTTTS 6
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_Stimpack : Stimpack
+{
+	States
+	{
+	Spawn:
+		LX72 P -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_Medikit : Medikit
+{
+	States
+	{
+	Spawn:
+		LX72 Q -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_Candlestick : Candlestick
+{
+	States
+	{
+	Spawn:
+		LX72 O -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_TechPillar : TechPillar
+{
+	States
+	{
+	Spawn:
+		LX72 R -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_RedTorch : RedTorch
+{
+	States
+	{
+	Spawn:
+		LX72 UVWX 4
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_DeadStick : DeadStick
+{
+	States
+	{
+	Spawn:
+		LX72 "[" -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_HeadsOnAStick : HeadsOnAStick
+{
+	States
+	{
+	Spawn:
+		LX72 "\" -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_HeadCandles : HeadCandles
+{
+	States
+	{
+	Spawn:
+		LX72 "]" 6
+		LX73 W 6
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_HeadOnAStick : HeadOnAStick
+{
+	States
+	{
+	Spawn:
+		LX73 X -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_LiveStick : LiveStick
+{
+	States
+	{
+	Spawn:
+		LX73 Y 6
+		LX73 Z 8
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_TallGreenColumn : TallGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX73 "[" -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_ShortGreenColumn : ShortGreenColumn
+{
+	States
+	{
+	Spawn:
+		LX73 "\" -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LX73 "]" -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_ShortRedColumn : ShortRedColumn
+{
+	States
+	{
+	Spawn:
+		LX74 A -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_HeartColumn : HeartColumn
+{
+	States
+	{
+	Spawn:
+		LX74 BC 14
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_FloatingSkull : FloatingSkull
+{
+	States
+	{
+	Spawn:
+		LX74 DEF 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX74 G -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_EvilEye : EvilEye
+{
+	States
+	{
+	Spawn:
+		LX74 HIJI 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_TorchTree : TorchTree
+{
+	States
+	{
+	Spawn:
+		LX74 K -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_Stalagtite : Stalagtite
+{
+	States
+	{
+	Spawn:
+		LX74 L -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_Stalagmite : Stalagmite
+{
+	States
+	{
+	Spawn:
+		LX74 M -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_BigTree : BigTree
+{
+	States
+	{
+	Spawn:
+		LX74 T -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN1_BloodyTwitch : BloodyTwitch
+{
+	States
+	{
+	Spawn:
+		LX74 U 10 BRIGHT
+		LX74 V 15 BRIGHT
+		LX74 W 8 BRIGHT
+		LX74 V 6 BRIGHT
+		Loop
+	}
+}
+
+Actor Lexicon_HRN1_NonsolidTwitch : Lexicon_HRN1_BloodyTwitch { -SOLID Radius 20 }
+
+ACTOR Lexicon_HRN1_Meat2 : Meat2
+{
+	States
+	{
+	Spawn:
+		LX74 X -1
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_NonsolidMeat2 : Lexicon_HRN1_Meat2 { -SOLID Radius 20 }
+
+ACTOR Lexicon_HRN1_Meat3 : Meat3
+{
+	States
+	{
+	Spawn:
+		LX74 Y -1
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_NonsolidMeat3 : Lexicon_HRN1_Meat3 { -SOLID Radius 20 }
+
+ACTOR Lexicon_HRN1_Meat4 : Meat4
+{
+	States
+	{
+	Spawn:
+		LX74 Z -1
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_NonsolidMeat4 : Lexicon_HRN1_Meat4 { -SOLID Radius 20 }
+
+ACTOR Lexicon_HRN1_Meat5 : Meat5
+{
+	States
+	{
+	Spawn:
+		LX75 A -1
+		Stop
+	}
+}
+
+Actor Lexicon_HRN1_NonsolidMeat5 : Lexicon_HRN1_Meat5 { -SOLID Radius 20 }
+
+ACTOR Lexicon_HRN1_GreenTorch : GreenTorch
+{
+	States
+	{
+	Spawn:
+		LX75 BCDE 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_BlueTorch : BlueTorch
+{
+	States
+	{
+	Spawn:
+		LX75 FGHI 4
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_ShortRedTorch : ShortRedTorch
+{
+	States
+	{
+	Spawn:
+		LX75 JKLL 4
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_ShortBlueTorch : ShortBlueTorch
+{
+	States
+	{
+	Spawn:
+		LX75 MNOP 4
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN1_ShortGreenTorch : ShortGreenTorch
+{
+	States
+	{
+	Spawn:
+		LX75 QRST 4 BRIGHT
+		Loop
+	}
+}
+
+// There are several enemies from Herian that did not get ported over to Lexicon,
+// mostly because they were basically Heretic/Hexen reskins and I don't think they
+// were crucial to the wad. Also, they took up a lot of sprite names that could've
+// gone to other mapsets. Sorry to anyone who cares about that sort of stuff.

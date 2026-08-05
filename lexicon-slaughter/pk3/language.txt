@@ -5,21 +5,22 @@ LEX_SLGT_GAMETYPE = "COOP";
 LEX_SLGT_1 = "CHLX";
 LEX_SLGT_2 = "CSH1";
 LEX_SLGT_3 = "CSH2";
-LEX_SLGT_4 = "DKTS";
-LEX_SLGT_5 = "DSV1";
-LEX_SLGT_6 = "DSV2";
-LEX_SLGT_7 = "DIBL";
-LEX_SLGT_8 = "HSTE";
-LEX_SLGT_9 = "MOC2";
-LEX_SLGT_10 = "NGM1";
-LEX_SLGT_11 = "NGM2";
-LEX_SLGT_12 = "NSP2";
-LEX_SLGT_13 = "PZST";
-LEX_SLGT_14 = "SHLK";
-LEX_SLGT_15 = "SF11";
-LEX_SLGT_16 = "SF12";
-LEX_SLGT_17 = "SF13";
-LEX_SLGT_18 = "SMAX";
+LEX_SLGT_4 = "CNAT";
+LEX_SLGT_5 = "DKTS";
+LEX_SLGT_6 = "DSV1";
+LEX_SLGT_7 = "DSV2";
+LEX_SLGT_8 = "DIBL";
+LEX_SLGT_9 = "HSTE";
+LEX_SLGT_10 = "MOC2";
+LEX_SLGT_11 = "NGM1";
+LEX_SLGT_12 = "NGM2";
+LEX_SLGT_13 = "NSP2";
+LEX_SLGT_14 = "PZST";
+LEX_SLGT_15 = "SHLK";
+LEX_SLGT_16 = "SF11";
+LEX_SLGT_17 = "SF12";
+LEX_SLGT_18 = "SF13";
+LEX_SLGT_19 = "SMAX";
 
 // Custom actors and metadata for Lexicon Slaughter mapsets
 // Chillax
@@ -55,6 +56,23 @@ CSH2_MAPSET_DATE = "2012";
 CSH2_MAPSET_MAPS = "7";
 CSH2_MAPSET_TITLE = "Combat Shock 2";
 CSH2_MAPSET_PACK = "SLGT";
+
+// Counterattack
+CNAT_ACTOR_1 = "Lexicon_CNAT_CommanderKeen";
+CNAT_ACTOR_2 = "Lexicon_CNAT_WolfensteinSS";
+CNAT_ACTOR_3 = "Lexicon_CNAT_BossBrain";
+CNAT_TAG_WOLFSS = "Bubble Ship Boss";
+CNAT_OB_WOLFSS = "%o was deleted by the Bubble Ship Boss.";
+CNAT_TAG_GATE = "Gate Master";
+CNAT_OB_GATEHIT = "%o was obliterated by a Gate Master.";
+CNAT_TAG_TURRET = "Skull Turret";
+CNAT_OB_TURRETHIT = "%o was melted by a Skull Turret.";
+CNAT_MAPSET_AUTHORS = "Mechadon";
+CNAT_MAPSET_CUSTOM = "Y";
+CNAT_MAPSET_DATE = "2017";
+CNAT_MAPSET_MAPS = "7";
+CNAT_MAPSET_TITLE = "Counterattack";
+CNAT_MAPSET_PACK = "BASE";
 
 // Dark Tartarus
 DKTS_ACTORST_1 = "StrengthRune";

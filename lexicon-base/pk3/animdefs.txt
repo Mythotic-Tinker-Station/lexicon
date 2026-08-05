@@ -51,6 +51,31 @@ switch 4MVR0697 on pic 4MVR0724 tics 0
 switch 4MVR0698 on pic 4MVR0725 tics 0
 switch 4MVR0813 on pic 4MVR0814 tics 0
 
+// 512 Linedefs of /vr/
+texture 52VR0043 range 52VR0046 tics 8
+texture 52VR0059 range 52VR0062 tics 8
+texture 52VR0185 range 52VR0188 tics 8
+flat 52VR0031 range 52VR0034 tics 8
+flat 52VR0035 range 52VR0038 tics 8
+flat 52VR0039 range 52VR0042 tics 8
+switch 52VR0047 on pic 52VR0053 tics 0
+switch 52VR0048 on pic 52VR0054 tics 0
+switch 52VR0049 on pic 52VR0055 tics 0
+
+// 2048 Units of /vr/ - Clean Edition
+texture 28VR0326 range 28VR0329 tics 8 allowdecals
+texture 28VR0389 range 28VR0392 tics 8
+texture 28VR0393 range 28VR0396 tics 8 allowdecals
+texture 28VR0397 range 28VR0400 tics 8
+texture 28VR0401 range 28VR0402 tics 8
+texture 28VR0403 range 28VR0405 tics 8
+flat 28VR0010 range 28VR0013 tics 8
+switch 28VR0406 on pic 28VR0414 tics 0
+switch 28VR0407 on pic 28VR0415 tics 0
+switch 28VR0408 on pic 28VR0416 tics 0
+switch 28VR0409 on pic 28VR0417 tics 0
+switch 28VR0410 on pic 28VR0418 tics 0
+
 // Alien Vendetta
 texture ALVD0746 range ALVD0749 tics 8
 texture ALVD0792 range ALVD0800 tics 8
@@ -451,6 +476,13 @@ switch C2431889 on pic C2431896 tics 0
 switch C2431890 on pic C2431897 tics 0
 switch C2431894 on pic C2431895 tics 0
 
+// Cleimos 2
+texture CLM20001 range CLM20004 tics 8 allowdecals
+texture CLM20005 range CLM20008 tics 8
+switch CLM20012 on pic CLM20018 tics 0
+switch CLM20013 on pic CLM20019 tics 0
+switch CLM20016 on pic CLM20022 tics 0
+
 // Community Chest 2
 texture CCH20494 range CCH20497 tics 8
 texture CCH20502 range CCH20505 tics 8
@@ -475,39 +507,79 @@ switch CCH30833 on pic CCH30877 tics 0
 switch CCH30835 on pic CCH30879 tics 0
 
 // Community Chest 4
-texture CCH40571 range CCH40574 tics 8
-texture CCH41146 range CCH41149 tics 5
-texture CCH41254 range CCH41257 tics 8
-texture CCH41258 range CCH41261 tics 8
-texture CCH41285 range CCH41288 tics 8
-texture CCH41302 range CCH41311 tics 2
-texture CCH41314 range CCH41323 tics 2
-texture CCH41436 range CCH41439 tics 8
-texture CCH41489 range CCH41494 tics 2
-texture CCH41544 range CCH41547 tics 2
-texture CCH41661 range CCH41664 tics 8
-texture CCH41667 range CCH41670 tics 4
-texture CCH41673 range CCH41675 tics 2
-texture CCH41755 range CCH41758 tics 8
-texture CCH41811 range CCH41814 tics 4
-flat CCH40298 range CCH40301 tics 8
-flat CCH40361 range CCH40364 tics 8
-flat CCH40387 range CCH40388 tics 8
-flat CCH40422 range CCH40425 tics 8
-flat CCH40426 range CCH40429 tics 8
-switch CCH40506 on pic CCH40514 tics 0
-switch CCH40507 on pic CCH40516 tics 0
-switch CCH40508 on pic CCH40518 tics 0
-switch CCH40509 on pic CCH40519 tics 0
-switch CCH40541 on pic CCH40546 tics 0
-switch CCH40542 on pic CCH40515 tics 0
-switch CCH40545 on pic CCH40549 tics 0
-switch CCH41262 on pic CCH41263 tics 0
-switch CCH41264 on pic CCH41265 tics 0
-switch CCH41479 on pic CCH41480 tics 0
-switch CCH41688 on pic CCH41689 tics 0
-switch CCH41854 on pic CCH41855 tics 0
-switch CCH41856 on pic CCH41857 tics 0
+texture CCH40572 range CCH40575 tics 8
+texture CCH41147 range CCH41150 tics 5
+texture CCH41255 range CCH41258 tics 8
+texture CCH41259 range CCH41262 tics 8
+texture CCH41286 range CCH41289 tics 8
+texture CCH41303 range CCH41312 tics 2
+texture CCH41315 range CCH41324 tics 2
+texture CCH41437 range CCH41440 tics 8
+texture CCH41490 range CCH41495 tics 2
+texture CCH41545 range CCH41548 tics 2
+texture CCH41662 range CCH41665 tics 8
+texture CCH41668 range CCH41671 tics 4
+texture CCH41674 range CCH41676 tics 2
+texture CCH41756 range CCH41759 tics 8
+texture CCH41812 range CCH41815 tics 4
+flat CCH40297 range CCH40300 tics 8
+flat CCH40360 range CCH40363 tics 8
+flat CCH40386 range CCH40387 tics 8
+flat CCH40421 range CCH40424 tics 8
+flat CCH40425 range CCH40428 tics 8
+switch CCH40505 on pic CCH40514 tics 0
+switch CCH40506 on pic CCH40515 tics 0
+switch CCH40507 on pic CCH40517 tics 0
+switch CCH40508 on pic CCH40519 tics 0
+switch CCH40509 on pic CCH40520 tics 0
+switch CCH40542 on pic CCH40547 tics 0
+switch CCH40543 on pic CCH40516 tics 0
+switch CCH40546 on pic CCH40550 tics 0
+switch CCH41263 on pic CCH41264 tics 0
+switch CCH41265 on pic CCH41266 tics 0
+switch CCH41480 on pic CCH41481 tics 0
+switch CCH41689 on pic CCH41690 tics 0
+switch CCH41855 on pic CCH41856 tics 0
+switch CCH41857 on pic CCH41858 tics 0
+
+// Community Trunk
+texture CTNK0838 range CTNK0841 tics 8
+texture CTNK1340 range CTNK1343 tics 8
+texture CTNK1394 range CTNK1399 tics 8 allowdecals
+switch CTNK0187 on pic CTNK0227 tics 0
+switch CTNK0189 on pic CTNK0229 tics 0
+switch CTNK0190 on pic CTNK0230 tics 0
+switch CTNK0191 on pic CTNK0231 tics 0
+switch CTNK0192 on pic CTNK0232 tics 0
+switch CTNK0193 on pic CTNK0233 tics 0
+switch CTNK0195 on pic CTNK0235 tics 0
+switch CTNK0196 on pic CTNK0236 tics 0
+switch CTNK0197 on pic CTNK0237 tics 0
+switch CTNK0198 on pic CTNK0238 tics 0
+switch CTNK0199 on pic CTNK0239 tics 0
+switch CTNK0200 on pic CTNK0240 tics 0
+switch CTNK0201 on pic CTNK0241 tics 0
+switch CTNK0202 on pic CTNK0242 tics 0
+switch CTNK0203 on pic CTNK0243 tics 0
+switch CTNK0204 on pic CTNK0244 tics 0
+switch CTNK0205 on pic CTNK0245 tics 0
+switch CTNK0206 on pic CTNK0246 tics 0
+switch CTNK0207 on pic CTNK0247 tics 0
+switch CTNK0209 on pic CTNK0249 tics 0
+switch CTNK0210 on pic CTNK0250 tics 0
+switch CTNK0211 on pic CTNK0251 tics 0
+switch CTNK0212 on pic CTNK0252 tics 0
+switch CTNK0213 on pic CTNK0253 tics 0
+switch CTNK0214 on pic CTNK0254 tics 0
+switch CTNK0215 on pic CTNK0255 tics 0
+switch CTNK0217 on pic CTNK0257 tics 0
+switch CTNK0219 on pic CTNK0259 tics 0
+switch CTNK0220 on pic CTNK0260 tics 0
+switch CTNK0221 on pic CTNK0261 tics 0
+switch CTNK0222 on pic CTNK0262 tics 0
+switch CTNK0224 on pic CTNK0264 tics 0
+switch CTNK0225 on pic CTNK0265 tics 0
+switch CTNK0226 on pic CTNK0266 tics 0
 
 // Congestion 1024
 switch C2410467 on pic C2410507 tics 0
@@ -860,6 +932,81 @@ switch HLTP0356 on pic HLTP0357 tics 0
 switch HLTP0358 on pic HLTP0359 tics 0
 switch HLTP0360 on pic HLTP0361 tics 0
 
+// Herian
+texture HRN10133 range HRN10149 tics 8 allowdecals
+texture HRN10326 range HRN10329 tics 8 allowdecals
+texture HRN10348 range HRN10350 tics 8
+texture HRN10353 range HRN10355 tics 8 allowdecals
+texture HRN10388 range HRN10390 tics 8 allowdecals
+flat HRN10032 range HRN10034 tics 8
+flat HRN10046 range HRN10049 tics 8
+flat HRN10055 range HRN10057 tics 8
+switch HRN10158 on pic HRN10172 tics 0
+switch HRN10160 on pic HRN10174 tics 0
+switch HRN10161 on pic HRN10175 tics 0
+switch HRN10163 on pic HRN10177 tics 0
+switch HRN10164 on pic HRN10178 tics 0
+switch HRN10168 on pic HRN10182 tics 0
+switch HRN10171 on pic HRN10185 tics 0
+switch HRN10432 on pic HRN10438 tics 0
+
+// Herian 2
+texture HRN20235 range HRN20242 tics 8
+texture HRN20261 range HRN20264 tics 8 allowdecals
+texture HRN20265 range HRN20268 tics 8 allowdecals
+texture HRN20362 range HRN20378 tics 8
+texture HRN20392 range HRN20394 tics 8
+texture HRN20395 range HRN20398 tics 8
+texture HRN20414 range HRN20416 tics 8 allowdecals
+texture HRN20494 range HRN20497 tics 8 allowdecals
+texture HRN20498 range HRN20501 tics 8
+texture HRN20546 range HRN20554 tics 8 allowdecals
+flat HRN20068 range HRN20070 tics 8
+flat HRN20082 range HRN20085 tics 8
+flat HRN20086 range HRN20089 tics 8
+flat HRN20100 range HRN20102 tics 8
+flat HRN20119 range HRN20122 tics 8
+flat HRN20131 range HRN20134 tics 8
+flat HRN20135 range HRN20138 tics 8
+flat HRN20139 range HRN20142 tics 8
+switch HRN20605 on pic HRN20645 tics 0
+switch HRN20606 on pic HRN20646 tics 0
+switch HRN20607 on pic HRN20647 tics 0
+switch HRN20608 on pic HRN20648 tics 0
+switch HRN20609 on pic HRN20649 tics 0
+switch HRN20610 on pic HRN20650 tics 0
+switch HRN20611 on pic HRN20651 tics 0
+switch HRN20612 on pic HRN20652 tics 0
+switch HRN20613 on pic HRN20653 tics 0
+switch HRN20614 on pic HRN20654 tics 0
+switch HRN20615 on pic HRN20655 tics 0
+switch HRN20616 on pic HRN20656 tics 0
+switch HRN20617 on pic HRN20657 tics 0
+switch HRN20619 on pic HRN20659 tics 0
+switch HRN20620 on pic HRN20660 tics 0
+switch HRN20621 on pic HRN20661 tics 0
+switch HRN20622 on pic HRN20662 tics 0
+switch HRN20623 on pic HRN20663 tics 0
+switch HRN20624 on pic HRN20664 tics 0
+switch HRN20625 on pic HRN20665 tics 0
+switch HRN20626 on pic HRN20666 tics 0
+switch HRN20627 on pic HRN20667 tics 0
+switch HRN20628 on pic HRN20668 tics 0
+switch HRN20629 on pic HRN20669 tics 0
+switch HRN20630 on pic HRN20670 tics 0
+switch HRN20631 on pic HRN20671 tics 0
+switch HRN20632 on pic HRN20672 tics 0
+switch HRN20634 on pic HRN20674 tics 0
+switch HRN20635 on pic HRN20675 tics 0
+switch HRN20636 on pic HRN20676 tics 0
+switch HRN20637 on pic HRN20677 tics 0
+switch HRN20638 on pic HRN20678 tics 0
+switch HRN20639 on pic HRN20679 tics 0
+switch HRN20640 on pic HRN20680 tics 0
+switch HRN20642 on pic HRN20682 tics 0
+switch HRN20643 on pic HRN20683 tics 0
+switch HRN20644 on pic HRN20684 tics 0
+
 // Icarus: Alien Vanguard
 texture ICAV0613 range ICAV0616 tics 8
 texture ICAV0617 range ICAV0622 tics 8 allowdecals
@@ -1123,6 +1270,26 @@ flat TVRV0002 range TVRV0005 tics 8
 flat TVRV0009 range TVRV0012 tics 8
 switch TVRV0048 on pic TVRV0049 tics 0
 
+// Scientist 2
+texture SCI20020 range SCI20023 tics 8
+texture SCI20058 range SCI20059 tics 8
+texture SCI20061 range SCI20062 tics 8
+texture SCI20063 range SCI20065 tics 8
+texture SCI20066 range SCI20068 tics 8
+texture SCI20071 range SCI20073 tics 8 allowdecals
+texture SCI20082 range SCI20084 tics 8 allowdecals
+switch SCI20103 on pic SCI20125 tics 0
+switch SCI20105 on pic SCI20127 tics 0
+switch SCI20107 on pic SCI20129 tics 0
+switch SCI20108 on pic SCI20130 tics 0
+switch SCI20109 on pic SCI20131 tics 0
+switch SCI20110 on pic SCI20132 tics 0
+switch SCI20112 on pic SCI20134 tics 0
+switch SCI20115 on pic SCI20137 tics 0
+switch SCI20118 on pic SCI20140 tics 0
+switch SCI20120 on pic SCI20142 tics 0
+switch SCI20123 on pic SCI20145 tics 0
+
 // Scythe
 flat SCY10005 range SCY10008 tics 8
 switch SCY10023 on pic SCY10025 tics 0
@@ -1339,6 +1506,12 @@ warp flat TMR20238
 warp flat TMR20255
 warp flat TMR20254
 warp flat TMR20256
+
+// The Trooper's Playground
+switch TTPG0020 on pic TTPG0026 tics 0
+switch TTPG0021 on pic TTPG0027 tics 0
+switch TTPG0022 on pic TTPG0028 tics 0
+switch TTPG0024 on pic TTPG0030 tics 0
 
 // UAC Ultra
 texture UACU0043 range UACU0046 tics 8

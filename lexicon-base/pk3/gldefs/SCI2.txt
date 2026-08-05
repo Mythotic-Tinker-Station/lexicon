@@ -1,0 +1,105 @@
+object Lexicon_SCI2_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_SCI2_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_SCI2_WolfensteinSS
+{
+    frame LX80G { light ZOMBIEATK }
+
+    frame LX80J { light DTFOG4 }
+    frame LX80K { light DTFOG3 }
+    frame LX80L { light DTFOG2 }
+
+    frame LX80M { light DTFOG1 }
+    frame LX80N { light DTFOG2 }
+    frame LX80O { light DTFOG2 }
+    frame LX80P { light DTFOG2 }
+    frame LX80Q { light DTFOG3 }
+    frame LX80R { light DTFOG4 }
+    frame LX80S { light DTFOG4 }
+    frame LX80T { light DTFOG3 }
+}
+
+object Lexicon_SCI2_Rocket
+{
+    frame MISLB { light ROCKET_X1 }
+    frame MISLC { light ROCKET_X2 }
+    frame MISLD { light ROCKET_X3 }
+}
+
+pointlight Lexicon_SCI2_FLMMISSILE
+{
+    color 1.0 0.7 0.0
+    size 56
+}
+
+pointlight Lexicon_SCI2_FLMMSL_X1
+{
+    color 1.0 0.7 0.0
+    size 52
+}
+
+pointlight Lexicon_SCI2_FLMMSL_X2
+{
+    color 0.8 0.56 0.0
+    size 46
+}
+
+pointlight Lexicon_SCI2_FLMMSL_X3
+{
+    color 0.6 0.42 0.0
+    size 38
+}
+
+pointlight Lexicon_SCI2_FLMMSL_X4
+{
+    color 0.4 0.28 0.0
+    size 24
+}
+
+pointlight Lexicon_SCI2_FLMMSL_X5
+{
+    color 0.2 0.14 0.0
+    size 16
+}
+
+object Lexicon_SCI2_PlasmaBall
+{
+    frame LX81L { light Lexicon_SCI2_FLMMISSILE }
+    frame LX81M { light Lexicon_SCI2_FLMMISSILE }
+
+    frame LX81O { light Lexicon_SCI2_FLMMSL_X1 }
+    frame LX81P { light Lexicon_SCI2_FLMMSL_X2 }
+    frame LX81Q { light Lexicon_SCI2_FLMMSL_X3 }
+    frame LX81R { light Lexicon_SCI2_FLMMSL_X4 }
+    frame LX81S { light Lexicon_SCI2_FLMMSL_X5 }
+}
+
+object Lexicon_SCI2_BFGBall
+{
+    frame LX81X { light ROCKET_X1 }
+    frame LX81Y { light ROCKET_X1 }
+    frame LX81Z { light ROCKET_X2 }
+    frame LX81[ { light ROCKET_X2 }
+    frame LX81\ { light ROCKET_X3 }
+    frame LX81] { light ROCKET_X3 }
+}
+
+object Lexicon_SCI2_EvilEye
+{
+    frame LX80X { light ARCHFIRE3 }
+    frame LX80Y { light ARCHFIRE4 }
+    frame LX80Z { light ARCHFIRE5 }
+}
+
+object Lexicon_SCI2_FloatingSkull
+{
+    frame LX79 { light BIGREDTORCH }
+}

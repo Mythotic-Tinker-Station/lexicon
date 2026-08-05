@@ -1,0 +1,266 @@
+===========================================================================
+Update to               : 512 Linedefs of /vr/
+Advanced engine needed  : UMAPINFO compatible port
+Primary purpose         : Single play
+===========================================================================
+Title                   : 512 Linedefs of /vr/
+Filename                : 512linesvr.wad
+Release date            : 07/03/2022
+Author                  : Various
+Email Address           : [redacted]
+Other Files By Author   : 400 Minutes of /vr/, HFFM, Ad Mortem
+Misc. Author Info       : /vr/ - Retro Games, Doom General
+
+Description             : 32 maps constructed using no more than 512 linedefs
+                          in each map. All maps are designed in Boom format
+                          (complevel 9) and use ultratex.wad for textures,
+                          also utilizing UMAPINFO to supply special actions.
+                          Also contains a separate WAD for ports that do not
+                          support widescreen HUDs. 
+
+Additional Credits to   : Level Design: Redead-ITA, EnragedEggplant,
+                          GuyWithTeaCup, Anonymous, Murm, ASO3000, desert
+                          yeti, Revae, Zipon, RancidSam,
+                          washingmachinewashingmachine, MacGuffin,
+                          ViolentBeetle, Hege Cactus, donk_konk, LunchLunch,
+                          Wolpertinger, Hand-peeled, Bartekmil, brxyz,
+                          NepNep, Jarmo, Yuji Sakai
+                          Testing/Streaming: stxvile, Tarnsman, Murm, various
+                          anons
+===========================================================================
+* What is included *
+
+New levels              : 32
+Sounds                  : No
+Music                   : Yes
+Graphics                : Yes
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Internal UMAPINFO/ZMAPINFO lump
+Other files required    : None
+
+
+* Play Information *
+
+Game                    : Doom 2
+Map #                   : 01-32
+Single Player           : Designed for
+Cooperative 2-4 Player  : Player starts only
+Deathmatch 2-4 Player   : No
+Other game styles       : None
+Difficulty Settings     : Yes
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : 5 weeks
+Editor(s) used          : Ultimate Doombuilder, Slade
+Known Bugs              : MAP07 will not function properly outside of
+                          complevel 9 or a ZDoom port, MAP22's MIDI may have
+                          issues looping, may still contain texture
+                          misalignments or other small errors
+May Not Run With        : Any non-UMAPINFO compatible port
+Tested With             : DSDA, Woof!, GZDoom
+
+
+* Copyright / Permissions *
+
+This work is licensed under the Creative Commons Attribution 4.0
+International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by/4.0/
+
+You are free to copy and redistribute the material in any medium or format;
+and remix, transform, and build upon the material for any purpose, even
+commercially. If you do so, you must give appropriate credit, provide a link
+to the license, and indicate if changes were made. You may do so in any
+reasonable manner, but not in any way that suggests the licensor endorses you
+or your use.
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://boards.4channel.org/vr/catalog#s=doom%20thread
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+MAP01: Underblown Budget
+Author: Redead-ITA
+Music: Tempter by Mark Klem (Added by project lead)
+Submission: 8
+~
+MAP02: Deck 512
+Author: EnragedEggplant
+Music: Go Down from UT99
+Submission: 9
+~
+MAP03: BFG Multiplication
+Author: GuyWithTeaCup
+Music: Ancient Ruins from Breath of Fire
+Submission: 29 (Post-deadline submission)
+~
+MAP04: iron512
+Author: Anonymous
+Music: Oww! by Lee Jackson (Added by project lead)
+Submission: 17
+~
+MAP05: Mission Vambee
+Author: Anonymous
+Music: Hidden Temple by Tsuyoshi Sekito
+Submission: 12
+~
+MAP06: 511 lines of Horror
+Author: Murm
+Music: Track 5 from Settlers II OST
+Submission: 10
+~
+MAP07: Slivovitz Liver Massacre
+Author: ASO3000
+Music: Girlfriend by Avril Lavigne
+Submission: 6
+Notes: Play in -complevel 9 or the map will break!
+~
+MAP08: Tomes & Triggers
+Author: desert yeti
+Music: Return of the Troubles by Jeremy Doyle
+Submission: 16
+~
+MAP09: Hit Play Half Cocked
+Author: Revae
+Music: Voltage by Dragonfly
+Submission: 18
+~
+MAP10: Hospice Relief
+Author: Anonymous
+Music: On Lockdown by Jimmy
+Submission: 7
+~
+MAP11: Screen Dream
+Author: Zipon
+Music: UNATCO Combat Theme from Deux Ex
+Submission: 19
+~
+MAP12: Electrical System
+Author: Anonymous
+Music: Heaven on Their Minds from JCS
+Submission: 14
+~
+MAP13: You're Not The Kind That Needs To Tell Me About The Birds And The Bees
+Author: RancidSam
+Music: Leave Me Alone by New Order
+Submission: 1
+~
+MAP14: Public Castration Is A Good Idea
+Author: washingmachinewashingmachine
+Music: Suicide Is Painless by Johnny Mandel
+Submission: 30 (Post-deadline submission)
+~
+MAP15: Shirikodama Salad
+Author: MacGuffin
+Music: Drilling By Night by Stuart Rynn
+Submission: 28
+~
+MAP16: Helter Smelter
+Author: ViolentBeetle
+Music: Between Levels (remix by Jay Reichard)
+Submission: 26
+~
+MAP17: Cordova Town
+Author: Anonymous
+Music: Cordova Town by Michiru Yamane
+Submission: 20
+~
+MAP18: Assyrian Drive
+Author: GuyWithTeaCup
+Music: Olaf Theme from Advance Wars (GBA)
+Submission: 25
+~
+MAP19: Maybe you dance
+Author: Hege Cactus
+Music: Borkesis from Hexen
+Submission: 11
+~
+MAP20: Touchplate Trouble
+Author: donk_konk
+Music: Sand Canyon 3 from Kirby's Dream Land 3
+Submission: 23
+~
+MAP21: I Actually Like Nirvana
+Author: LunchLunch
+Music: Countdown to Death by Bobby Prince
+Submission: 5
+~
+MAP22: Shadow Puppets
+Author: Wolpertinger
+Music: Ocean Base Act 1 from Sonic Advance 3
+Submission: 13
+~
+MAP23: Egg Shell Sandwich
+Author: Hand-peeled
+Music: Angry Science by Xaser Acheron
+Submission: 2
+~
+MAP24: Last night I bonded with your sister
+Author: Bartekmil
+Music: Track from Goldeneye 64
+Submission: 27
+~
+MAP25: Cubic Conundrum
+Author: ASO3000
+Music: Theme from X-Files
+Submission: 15
+~
+MAP26: 512 Nights in Arabia
+Author: brxyz
+Music: Ya Lail by Anoshka (http://www.iskandar.com/joseph/arabicmusiclist.html)
+Submission: 24
+~
+MAP27: Flynn Taggart Dies In Magma!
+Author: NepNep
+Music: Don't Stop Bleedin' by Lippeth
+Submission: 4
+~
+MAP28: Romero's Secret Pizza Party
+Author: Jarmo
+Music: Funiculi Funicula
+Submission: 21
+~
+MAP29: Forkheads.tk
+Author: RancidSam
+Music: The Dark One by Anamanaguchi
+Submission: 3
+~
+MAP30: In The Linedef Of Fire
+Author: GuyWithTeaCup
+Music: In the line of fire from Command And Conquer
+Submission: 31 (Post-deadline submission)
+~
+MAP31: Jackie Chan Doesn't Want Any Trouble
+Author: Anonymous
+Music: Soramimi Cakes from Azumanga Daioh
+Submission: 22
+~
+MAP32: this is nice map
+Author: Yuji Sakai
+Music: D_UPT34 from uptightdm.wad (Uncredited, tsk tsk...)
+Submission: 32
+~
+
+Project Lead/Compiler: MacGuffin
+Textures used: ultratex.wad
+Status Bar: Wolpertinger
+BOSSBACK: Anonymous
+INTERPIC: GuyWithTeaCup
+TITLEPIC: Anonymous (Art from Doom 2016)
+ENDOOM: Anonymous
+M_DOOM, title graphics: Anonymous
+Menu font: DBIGFONT PLAIN by Blue Shadow
+
+Additional music credits
+D_DM2TTL: Hangar from Ace Combat 2
+D_DM2INT: Quist from King's Field 2
+D_READ_M: Mercenaries for Hire from Chaos Engine
+D_EVIL: Siege of Madrigal from Myth
+
+Thank you to all of the anons who playtested and provided feedback, especially on map order.
+Nailing down a logical order was much harder than it was with 400 Minutes of /vr/.

@@ -1,0 +1,108 @@
+// The Trooper's Playground Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TTPG01 "Welcome"
+{
+	titlepatch = "TTPGV00"
+	next = "TTPG02"
+	secretnext = "TTPG02"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG02 "Intrusion"
+{
+	titlepatch = "TTPGV01"
+	next = "TTPG03"
+	secretnext = "TTPG03"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_STALKS"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG03 "Simply Dead..."
+{
+	titlepatch = "TTPGV02"
+	next = "TTPG04"
+	secretnext = "TTPG04"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG04 "Going Down"
+{
+	titlepatch = "TTPGV03"
+	next = "TTPG05"
+	secretnext = "TTPG05"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG05 "Underground Temple"
+{
+	titlepatch = "TTPGV04"
+	next = "TTPG06"
+	secretnext = "TTPG06"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_DOOM"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG06 "Deep Down Below"
+{
+	titlepatch = "TTPGV05"
+	next = "TTPG07"
+	secretnext = "TTPG07"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG07 "Three 'O Matic"
+{
+	titlepatch = "TTPGV06"
+	next = "TTPG08"
+	secretnext = "TTPG08"
+	sky1 = "TTPG0017"
+	music = "D_TTPG07"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+	Map07Special
+}
+
+map TTPG08 "Star Control"
+{
+	titlepatch = "TTPGV07"
+	next = "TTPG09"
+	secretnext = "TTPG09"
+	sky1 = "TTPG0017"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}
+
+map TTPG09 "Deliverence?"
+{
+	titlepatch = "TTPGV08"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "TTPG0017"
+	music = "D_TTPG09"
+	ExitPic = "TTPGINT"
+	EnterPic = "TTPGINT"
+}

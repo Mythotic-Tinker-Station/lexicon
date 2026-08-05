@@ -1,0 +1,55 @@
+ACTOR Lexicon_TTPG_WolfensteinSS
+{
+	Health 200
+	Radius 20
+	Height 56
+	Speed 10
+	ReactionTime 20
+	PainChance 65
+	Mass 150
+	Monster
+	+FLOORCLIP
+	SeeSound "grunt/sight"
+	PainSound "wolfss/pain"
+	DeathSound "grunt/death"
+	ActiveSound "wolfss/active"
+	AttackSound "wolfss/attack"
+	Tag "$TTPG_TAG_WOLFSS"
+	Obituary "$TTPG_OB_WOLFSS"
+	Dropitem "Clip"
+	States
+	{
+	Spawn:
+		LX84 A 2 A_Look
+		LX84 B 10 A_Look
+		Loop
+	See:
+		LX84 AABBCCDD 3 A_Chase
+		Loop
+	Missile:
+		LX84 EF 4 Bright A_SPosAttack
+		LX84 F 1 Bright A_SpidRefire
+		Goto Missile
+	Pain:
+		LX84 G 3
+		LX84 G 3 A_Pain
+		Goto See
+	Death:
+		LX84 H 20 A_Scream
+		LX84 I 10 A_Fall
+		LX84 JKL 10 
+		LX84 M -1
+		Stop
+	XDeath:
+		SSWV N 5 
+		SSWV O 5 A_XScream
+		SSWV P 5 A_NoBlocking
+		SSWV QRSTU 5
+		SSWV V -1
+		Stop
+	Raise:
+		LX84 M 5
+		LX84 LKJI 5
+		Goto See 
+	}
+}

@@ -1,0 +1,146 @@
+================================================================
+Title                   : The Talosian Incident - A Requiem For Doom
+Version                 : 1.2
+
+Files                   : TALOSL.WAD  - levels
+                          TALOSM.WAD  - music
+                          TALOSG.WAD  - sprites
+
+Authors                 : The Black Star Coven
+Email Address           : JohnBye@tripod.net
+Web Site                : http://www.geocities.com/TimesSquare/8666/
+
+Misc. Author Info       : The Black Star Coven is a group of some of the
+                        finest level designers in the world, founded by
+                        John Bye (aka Gestalt666)...
+
+Description             : A fond farewell to Doom from the Black Star
+                        Coven before we move on to working with Quake...
+                          20 new levels, new music, some new sprites...
+
+================================================================
+
+* Play Information *
+
+RUN TALOSIN.BAT TO INSTALL GRAPHICS BEFORE PLAYING!
+
+Map Number              : 01-18 + 31-32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes (not all levels)
+Difficulty Settings     : Yes
+New Sounds              : No
+New Graphics            : Yes
+New Sprites             : Yes
+New Music               : Yes
+Demos Replaced          : All three
+
+================================================================
+
+* Construction *
+
+Base                    : New levels from scratch
+
+Editor(s) used          : Various...
+			  Wintex used to assemble the whole thing
+			  BSP2.1 used to re-compile all 20 levels
+
+Known bugs              : None known...  Let us know if you find one.
+
+Time Taken              : Way too long!
+
+Other Files             : TALOS.BAT     -       runs game
+                          TALOSIN.BAT   -       installs game
+                          TALOSIAN.TXT  -       this text file
+                          TALSTORY.TXT  -       the book of the WAD...
+                          TALCREDS.TXT  -       who did which level...
+
+================================================================
+
+* Credits *
+
+Project Coordinator	-	John Bye
+
+Project Concept		-	Myscha
+				John Bye
+				Black Star Coven
+
+Levels			-	Ola Bjorling
+				John Bye
+				Dan Huff
+				Patrick Martin
+				Brian Owens
+				Malcolm Sailor
+
+Continuity		-	John Bye
+
+Music			-	John Bye
+				Tolwyn
+
+Sprites and Skies	-	Dan Huff
+
+Other Graphics		-	John Bye
+
+Demo LMPs		-	King God Space
+				Patrick Martin
+
+Beta Testers		-	John Braun
+				Dr See
+				Hardy
+				BC Hodson
+				Ing Thing
+				King God Space
+				MoDe
+				Wes Powell
+				Red Leader
+				Ben Thomas
+				Whillie
+
+================================================================
+
+* Version Notes *
+
+	0.x	Beta test versions
+        1.0     Our first public release
+        1.1     Bug fix release
+        1.2     Latest update
+
+New for v1.1
+
+ Recompiled TALOSL.WAD using BSP v2.1 -
+   Doing this corrected the bug in MAP15 which left the Mancubus
+stuck INSIDE its platform instead of standing on top of it.  This
+was not a design error - just a BSP error...
+   Recompiling the WAD also fixed all the texture bleed problems
+(notably in MAPs 04 and 15)...  Again, another old BSP problem...
+   As a side effect, it also made the WAD about 100k smaller than
+the previous version...
+
+ Credits corrected -
+   I'd mistakenly credited Malcolm Sailor with recording one of the
+demos used in the game.  In fact it was Patrick Martin...  Sorry
+about that Patrick :-)
+
+New for v1.2
+
+ Fixed some minor bugs in level 11
+
+ Added level title graphics for all 20 levels
+
+ Changed version number in end screen!
+
+================================================================
+
+* Copyright / Permissions *
+
+   The Talosian Incident is copyright The Black Star Coven (1997)
+
+   No part of this WAD may be used without the prior permission
+of both the individual who made that part, AND The Black Star Coven.
+
+   If you wish to distribute this WAD by any means, you MUST contact
+the Black Star Coven first.  You MAY NOT distribute this WAD
+commercially without EXPRESS PERMISSION from the Black Star Coven,
+or you will find yourself in court.  Be warned!
+
+======================TRANSMISSION=ENDS=========================

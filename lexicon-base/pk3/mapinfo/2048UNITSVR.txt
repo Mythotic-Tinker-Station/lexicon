@@ -1,0 +1,466 @@
+// 2048 Units of /vr/ - Clean Edition Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map 28VR01 "Gatehouse"
+{
+	titlepatch = "28VRV00"
+	next = "28VR02"
+	secretnext = "28VR02"
+	sky1 = "SKY1"
+	music = "D_28VR01"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR02 "You're A Drunk Loser, And Not The Cool Kind"
+{
+	titlepatch = "28VRV01"
+	next = "28VR03"
+	secretnext = "28VR03"
+	sky1 = "SKY1"
+	music = "D_28VR02"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR03 "Roundabout Cliffside"
+{
+	titlepatch = "28VRV02"
+	next = "28VR04"
+	secretnext = "28VR04"
+	sky1 = "SKY1"
+	music = "D_28VR03"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR04 "Lobachevsky Overdrive"
+{
+	titlepatch = "28VRV03"
+	next = "28VR05"
+	secretnext = "28VR05"
+	sky1 = "SKY1"
+	music = "D_28VR04"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR05 "Arrogance And Contempt"
+{
+	titlepatch = "28VRV04"
+	next = "28VR06"
+	secretnext = "28VR06"
+	sky1 = "SKY1"
+	music = "D_28VR05"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR06 "An Appointment With Mr. Pain"
+{
+	titlepatch = "28VRV05"
+	next = "28VR07"
+	secretnext = "28VR07"
+	sky1 = "SKY1"
+	music = "D_28VR06"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR07 "Forsaken Stockades"
+{
+	titlepatch = "28VRV06"
+	next = "28VR08"
+	secretnext = "28VR08"
+	sky1 = "SKY1"
+	music = "D_28VR07"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+	Map07Special
+}
+
+map 28VR08 "Belial's Bachelor Pad"
+{
+	titlepatch = "28VRV07"
+	next = "28VR09"
+	secretnext = "28VR09"
+	sky1 = "SKY1"
+	music = "D_28VR08"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR09 "Precipice HQ"
+{
+	titlepatch = "28VRV08"
+	next = "28VR10"
+	secretnext = "28VR10"
+	sky1 = "SKY1"
+	music = "D_28VR09"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR10 "Sewers"
+{
+	titlepatch = "28VRV09"
+	next = "28VR11"
+	secretnext = "28VR11"
+	sky1 = "SKY1"
+	music = "D_28VR10"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR11 "Retirement Grease"
+{
+	titlepatch = "28VRV10"
+	next = "28VR12"
+	secretnext = "28VR12"
+	sky1 = "SKY1"
+	music = "D_28VR11"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR12 "Suspiral"
+{
+	titlepatch = "28VRV11"
+	next = "28VR13"
+	secretnext = "28VR13"
+	sky1 = "SKY2"
+	music = "D_28VR12"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR13 "Barge In"
+{
+	titlepatch = "28VRV12"
+	next = "28VR14"
+	secretnext = "28VR14"
+	sky1 = "SKY2"
+	music = "D_28VR13"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR14 "Shipwreck Cavern"
+{
+	titlepatch = "28VRV13"
+	next = "28VR15"
+	secretnext = "28VR15"
+	sky1 = "SKY2"
+	music = "D_28VR14"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR15 "Caliginous Cauldron"
+{
+	titlepatch = "28VRV14"
+	next = "28VR16"
+	secretnext = "28VR31"
+	sky1 = "SKY2"
+	music = "D_28VR15"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR16 "Ghoul Grotto"
+{
+	titlepatch = "28VRV15"
+	next = "28VR17"
+	secretnext = "28VR17"
+	sky1 = "SKY2"
+	music = "D_28VR16"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR17 "30 Days In The Cooler For Talking"
+{
+	titlepatch = "28VRV16"
+	next = "28VR18"
+	secretnext = "28VR18"
+	sky1 = "SKY2"
+	music = "D_28VR17"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR18 "Straight Walled Rooms"
+{
+	titlepatch = "28VRV17"
+	next = "28VR19"
+	secretnext = "28VR19"
+	sky1 = "SKY2"
+	music = "D_28VR18"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR19 "Trifecta"
+{
+	titlepatch = "28VRV18"
+	next = "28VR20"
+	secretnext = "28VR20"
+	sky1 = "SKY2"
+	music = "D_28VR19"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR20 "Baal's Coliseum"
+{
+	titlepatch = "28VRV19"
+	next = "28VR21"
+	secretnext = "28VR21"
+	sky1 = "SKY2"
+	music = "D_28VR20"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR21 "Tiny Fragment"
+{
+	titlepatch = "28VRV20"
+	next = "28VR22"
+	secretnext = "28VR22"
+	sky1 = "SKY3"
+	music = "D_28VR21"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR22 "The Wretched Scythe Hole"
+{
+	titlepatch = "28VRV21"
+	next = "28VR23"
+	secretnext = "28VR23"
+	sky1 = "SKY3"
+	music = "D_28VR22"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR23 "For They Defiled Our Waters"
+{
+	titlepatch = "28VRV22"
+	next = "28VR24"
+	secretnext = "28VR24"
+	sky1 = "SKY3"
+	music = "D_28VR23"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR24 "Badass Billy's Party Palace"
+{
+	titlepatch = "28VRV23"
+	next = "28VR25"
+	secretnext = "28VR25"
+	sky1 = "SKY3"
+	music = "D_28VR24"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR25 "Maniacal Menstruation"
+{
+	titlepatch = "28VRV24"
+	next = "28VR26"
+	secretnext = "28VR26"
+	sky1 = "SKY3"
+	music = "D_28VR25"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR26 "The Dark Sanctuary"
+{
+	titlepatch = "28VRV25"
+	next = "28VR27"
+	secretnext = "28VR27"
+	sky1 = "SKY3"
+	music = "D_28VR26"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR27 "Welcome To The Peanut Gallery"
+{
+	titlepatch = "28VRV26"
+	next = "28VR28"
+	secretnext = "28VR28"
+	sky1 = "SKY3"
+	music = "D_28VR27"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR28 "Bleak Cinders"
+{
+	titlepatch = "28VRV27"
+	next = "28VR29"
+	secretnext = "28VR29"
+	sky1 = "SKY3"
+	music = "D_28VR28"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR29 "Black Crest"
+{
+	titlepatch = "28VRV28"
+	next = "28VR30"
+	secretnext = "28VR30"
+	sky1 = "SKY3"
+	music = "D_28VR29"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR30 "Tyrant's Starless Realms"
+{
+	titlepatch = "28VRV29"
+	next = "28VR33"
+	secretnext = "28VR33"
+	sky1 = "SKY3"
+	music = "D_28VR30"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+	//allowmonstertelefrags
+}
+
+map 28VR31 "Minimalism"
+{
+	titlepatch = "28VRV30"
+	next = "28VR16"
+	secretnext = "28VR32"
+	sky1 = "SKY3"
+	music = "D_28VR31"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR32 "Club Boom"
+{
+	titlepatch = "28VRV31"
+	next = "28VR16"
+	secretnext = "28VR16"
+	sky1 = "SKY3"
+	music = "D_28VR32"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR33 "Vehement Onslaught"
+{
+	titlepatch = "28VRV32"
+	next = "28VR34"
+	secretnext = "28VR34"
+	sky1 = "SKY1"
+	music = "D_28VR01"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR34 "The Dark Below"
+{
+	titlepatch = "28VRV33"
+	next = "28VR35"
+	secretnext = "28VR35"
+	sky1 = "SKY1"
+	music = "D_28VR02"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR35 "Pointing You the Way Out"
+{
+	titlepatch = "28VRV34"
+	next = "28VR36"
+	secretnext = "28VR36"
+	sky1 = "SKY1"
+	music = "D_28VR03"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR36 "Roundabout"
+{
+	titlepatch = "28VRV35"
+	next = "28VR37"
+	secretnext = "28VR37"
+	sky1 = "SKY1"
+	music = "$MUSIC_BETWEE"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR37 "Inner Cloister"
+{
+	titlepatch = "28VRV36"
+	next = "28VR38"
+	secretnext = "28VR38"
+	sky1 = "SKY1"
+	music = "D_28VR05"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}
+
+map 28VR38 "Missy Elliot Rodgers"
+{
+	titlepatch = "28VRV37"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "SKY1"
+	music = "D_28VR06"
+	intermusic = "D_28VRIN"
+	ExitPic = "28VRINT"
+	EnterPic = "28VRINT"
+}

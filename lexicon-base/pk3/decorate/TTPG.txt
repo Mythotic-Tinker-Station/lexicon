@@ -45,7 +45,7 @@ ACTOR Lexicon_TTPG_WolfensteinSS
 		SSWV O 5 A_XScream
 		SSWV P 5 A_NoBlocking
 		SSWV QRSTU 5
-		SSWV V -1 A_BossDeath
+		SSWV V -1
 		Stop
 	Raise:
 		LX84 M 5

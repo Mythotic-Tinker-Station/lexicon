@@ -279,6 +279,7 @@ ACTOR Lexicon_SCI2_BFG9000 : DoomWeapon
 	Weapon.SlotNumber 7
 	+WEAPON.NOAUTOFIRE
 	+WEAPON.NOLMS
+	+WEAPON.CHEATNOTWEAPON
 	Inventory.PickupMessage "$SCI2_MSG_BFG9000"
 	Tag "$SCI2_TAG_BFG9000"
 	States

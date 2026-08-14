@@ -1,0 +1,328 @@
+Texture "ISOL0004", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ISOL0005", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "ISOL0010", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+Texture "ISOL0011", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+Texture "ISOL0012", 256, 128
+{
+	Patch "ISOL0094", 0, 0
+	Patch "ISOL0095", 64, 0
+	Patch "ISOL0097", 128, 0
+	Patch "ISOL0096", 192, 0
+	Patch "ISOL0099", 0, 64
+	Patch "ISOL0101", 64, 64
+	Patch "ISOL0100", 128, 64
+	Patch "ISOL0098", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+Texture "ISOL0013", 128, 128
+{
+	Patch "ISOL0103", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "ISOL0102", 96, 0
+	Patch "ISOL0103", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "ISOL0102", 96, 64
+}
+Texture "ISOL0014", 128, 128
+{
+	Patch "ISOL0090", 26, 64
+	Patch "ISOL0089", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "ISOL0090", 28, 0
+	Patch "ISOL0093", 72, 64
+	Patch "ISOL0091", 72, 0
+	Patch "ISOL0092", 0, 0
+}
+Texture "ISOL0015", 256, 56
+{
+	Patch "ISOL0094", 0, 0
+	Patch "ISOL0095", 64, 0
+	Patch "ISOL0096", 128, 0
+	Patch "ISOL0100", 192, 0
+}
+Texture "ISOL0016", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "ISOL0088", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "ISOL0094", 0, 0
+	Patch "ISOL0088", 96, 4
+	Patch "ISOL0095", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+Texture "ISOL0017", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "ISOL0105", 5, 0
+	Patch "ISOL0105", 35, 0
+}
+Texture "ISOL0018", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "ISOL0020", 16, 128
+{
+	Patch "ISOL0077", 0, 0
+	Patch "ISOL0077", 0, 56
+}
+Texture "ISOL0022", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "ISOL0106", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "ISOL0107", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "ISOL0108", 132, 69
+	Patch "ISOL0109", 68, 7
+	Patch "ISOL0110", 4, 7
+	Patch "ISOL0111", 132, 7
+	Patch "AG128_1", 192, 0
+}
+Texture "ISOL0023", 128, 128
+{
+	Patch "ISOL0079", 0, 56
+	Patch "ISOL0080", 64, 56
+	Patch "ISOL0079", 0, 0
+	Patch "ISOL0080", 64, 0
+}
+Texture "ISOL0027", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+Texture "ISOL0031", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 8
+}
+Texture "ISOL0032", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
+}
+Texture "ISOL0033", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+Texture "ISOL0034", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+Texture "ISOL0035", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+Texture "ISOL0037", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+Texture "ISOL0038", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+Texture "ISOL0039", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+Texture "ISOL0041", 128, 128
+{
+	Patch "ISOL0137", 0, 0
+}
+Texture "ISOL0042", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "ISOL0043", 128, 128
+{
+	Patch "ISOL0137", -120, -8
+}
+Texture "ISOL0049", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "ISOL0050", 256, 72
+{
+	Patch "WALL03_4", 0, 0
+	Patch "ISOL0123", 128, 0
+	Patch "WALL03_4", 64, 0
+	Patch "WALL03_4", 192, 0
+}
+Texture "ISOL0051", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
+}
+Texture "ISOL0052", 128, 128
+{
+	Patch "ISOL0125", 64, 70
+	Patch "ISOL0127", 0, 70
+	Patch "ISOL0126", 0, -2
+	Patch "ISOL0125", 64, -2
+}
+Texture "ISOL0053", 64, 128
+{
+	Patch "ISOL0128", 0, 0
+	Patch "ISOL0128", 0, 32
+	Patch "ISOL0128", 0, 96
+	Patch "ISOL0128", 0, 64
+}
+Texture "ISOL0054", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "ISOL0136", 14, 74
+}
+Texture "ISOL0055", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "ISOL0115", 0, 0
+}
+Texture "ISOL0056", 64, 128
+{
+	Patch "WALL69_4", 0, 0
+	Patch "ISOL0114", 4, 0
+	Patch "W32_4", 0, 64
+}
+Texture "ISOL0057", 64, 128
+{
+	Patch "WALL62_1", -1, 0
+	Patch "ISOL0105", 4, 18
+	Patch "ISOL0105", 38, 18
+}
+Texture "ISOL0058", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "ISOL0105", 81, 34
+	Patch "ISOL0105", 19, 34
+}
+Texture "ISOL0059", 16, 128
+{
+	Patch "ISOL0124", -4, 56
+	Patch "ISOL0124", -4, 0
+}
+Texture "ISOL0060", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "ISOL0105", 7, 27
+	Patch "ISOL0105", 37, 27
+}
+Texture "ISOL0065", 64, 128
+{
+	Patch "ISOL0129", 0, 0
+	Patch "ISOL0130", 32, 0
+}
+Texture "ISOL0066", 256, 128
+{
+	Patch "ISOL0120", 0, 0
+	Patch "ISOL0121", 128, 0
+}
+Texture "ISOL0068", 128, 128
+{
+	Patch "ISOL0116", -12, 0
+	Patch "ISOL0116", 116, 0
+}
+Texture "ISOL0071", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "ISOL0135", 0, 79
+	Patch "ISOL0135", 64, 15
+}
+Texture "ISOL0072", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}

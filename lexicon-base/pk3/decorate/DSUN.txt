@@ -1,0 +1,48 @@
+Actor Lexicon_DSUN_WolfensteinSS : WolfensteinSS
+{
+	Health 2500
+	Speed 20
+	Radius 32
+	PainChance 1
+	Tag "$DSUN_TAG_WOLFSS"
+	Obituary "$DSUN_OB_WOLFSS"
+	States
+	{
+	Spawn:
+		SSWV EF 10 A_Look
+		Loop
+	See:
+		SSWV EEFFGGHH 3 A_Chase
+		Loop
+	Missile:
+		SSWV I 10 A_FaceTarget
+		SSWV J 10 A_BspiAttack
+		SSWV K 4 Bright A_BspiAttack
+		SSWV J 6 A_BspiAttack
+		SSWV K 4 Bright A_BspiAttack
+		SSWV J 1 A_CPosRefire
+		Goto Missile+1
+	Pain:
+		SSWV L 3
+		SSWV L 3 A_Pain
+		Goto See
+	Death:
+		SSWV M 5 A_Explode
+		SSWV N 5 A_Scream
+		SSWV OP 5 A_Explode
+		SSWV Q -1
+		Stop
+	XDeath:
+		SSWV R 5 A_Explode
+		SSWV S 5 A_XScream
+		SSWV T 5 A_Fall
+		SSWV UV 5 A_Explode
+		SSWV WXY 5 
+		SSWV Z -1
+		Stop
+	Raise:
+		SSWV M 5
+		SSWV LKJI 5
+		Goto See 
+	}
+}

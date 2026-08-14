@@ -517,6 +517,12 @@ Actor Lexicon_DMZO_PainElemental : PainElemental
 	ActiveSound ""
 	States
 	{
+	Missile:
+		PAIN D 5 A_FaceTarget
+		PAIN E 5 A_FaceTarget
+		PAIN F 4 BRIGHT A_FaceTarget
+		PAIN F 1 BRIGHT A_PainAttack("Lexicon_DMZO_LostSoul")
+		Goto See
 	Death:
 		PAIN H 8
 		PAIN I 8 A_Scream

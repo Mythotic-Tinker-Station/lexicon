@@ -1,0 +1,59 @@
+ACTOR Lexicon_ABYS_Fist : Weapon
+{
+	Weapon.SelectionOrder 3700
+	Weapon.Kickback 100
+	Obituary "$OB_MPFIST"
+	Tag "$TAG_FIST"
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 0
+	AttackSound "ABYS/DSPUNCH"
+	+WEAPON.WIMPY_WEAPON
+	+WEAPON.MELEEWEAPON
+	+WEAPON.ALLOW_WITH_RESPAWN_INVUL
+	+WEAPON.CHEATNOTWEAPON
+	States
+	{
+	Ready:
+		PUNG A 1 A_WeaponReady
+		Loop
+	Deselect:
+		PUNG A 1 A_Lower
+		Loop
+	Select:
+		PUNG A 1 A_Raise
+		Loop
+	Fire:
+		PUNG B 4
+        PUNG C 0 A_JumpIfInventory("PowerStrength", 1, "FireBerserk")
+		PUNG C 4 A_CustomPunch(random(1, 10)*2, 1, 0)
+		PUNG D 5
+		PUNG C 4
+		PUNG B 5 A_ReFire
+		Goto Ready
+	FireBerserk:
+		PUNG C 4 A_CustomPunch(random(1, 10)*20, 1, 0)
+		PUNG D 5
+		PUNG C 4
+		PUNG B 5 A_ReFire
+		Goto Ready
+	}
+}
+
+Actor Lexicon_ABYS_Berserk : CustomInventory
+{
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	Inventory.PickupMessage "$GOTBERSERK"
+	Inventory.PickupSound "misc/p_pkup"
+	States
+	{
+	Spawn:
+		PSTR A -1
+		Stop
+	Pickup:
+		TNT1 A 0 A_GiveInventory("PowerStrength")
+		TNT1 A 0 HealThing(100, 0)
+		TNT1 A 0 A_SelectWeapon("Lexicon_ABYS_Fist")
+		Stop
+	}
+}

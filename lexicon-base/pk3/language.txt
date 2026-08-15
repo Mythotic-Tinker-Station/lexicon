@@ -110,6 +110,10 @@ LEX_BASE_105 = "52VR";
 LEX_BASE_106 = "28VR";
 LEX_BASE_107 = "TTPG";
 LEX_BASE_108 = "CTNK";
+LEX_BASE_109 = "ABYS";
+LEX_BASE_110 = "ISRT";
+LEX_BASE_111 = "ISOL";
+LEX_BASE_112 = "DSUN";
 
 // Custom actors and metadata for Lexicon Base mapsets
 // 1994 Tune-up Community Project
@@ -594,7 +598,7 @@ EQNX_ACTOR_29 = "Lexicon_EQNX_Cacodemon";
 EQNX_ACTORALT_29 = "Cacodemon";
 EQNX_ACTOR_30 = "Lexicon_EQNX_SpiderMastermind";
 EQNX_ACTORALT_30 = "SpiderMastermind";
-EQNX_MAPSET_AUTHORS = "B.P.R.D";
+EQNX_MAPSET_AUTHORS = "B.P.R.D, coop fixes by BLOODWOLF";
 EQNX_MAPSET_CUSTOM = "Y";
 EQNX_MAPSET_DATE = "2001";
 EQNX_MAPSET_MAPS = "13";
@@ -2019,3 +2023,51 @@ CTNK_MAPSET_DATE = "2025";
 CTNK_MAPSET_MAPS = "32";
 CTNK_MAPSET_TITLE = "Community Trunk";
 CTNK_MAPSET_PACK = "BASE";
+
+// The Abyss
+ABYS_ACTOR_1 = "Lexicon_ABYS_Berserk";
+ABYS_ACTORALT_1 = "Berserk";
+ABYS_MAPSET_AUTHORS = "J.M.P van Waveren, Miklos de Rijk";
+ABYS_MAPSET_CUSTOM = "Y";
+ABYS_MAPSET_DATE = "1995";
+ABYS_MAPSET_MAPS = "24";
+ABYS_MAPSET_TITLE = "The Abyss";
+ABYS_MAPSET_PACK = "BASE";
+ABYS_WEAPON_1 = "Lexicon_ABYS_Fist";
+
+// Insertion
+ISRT_MAPSET_AUTHORS = "David Shaw, Stephen Watson, Thomas Evans, Adam Williamson";
+ISRT_MAPSET_CUSTOM = "N";
+ISRT_MAPSET_DATE = "1998";
+ISRT_MAPSET_MAPS = "11";
+ISRT_MAPSET_TITLE = "Insertion";
+ISRT_MAPSET_PACK = "BASE";
+
+// Isolation
+ISOL_ACTOR_1 = "Lexicon_ISOL_PainElemental";
+ISOL_ACTORALT_1 = "PainElemental";
+ISOL_ACTOR_2 = "Lexicon_ISOL_BossEye";
+ISOL_ACTORALT_2 = "BossEye";
+ISOL_ACTOR_3 = "Lexicon_ISOL_Cacodemon";
+ISOL_ACTORALT_3 = "Cacodemon";
+ISOL_ACTOR_4 = "Lexicon_ISOL_LostSoul";
+ISOL_ACTORALT_4 = "LostSoul";
+ISOL_MAPSET_AUTHORS = "Jimmy, various authors";
+ISOL_MAPSET_CUSTOM = "Y";
+ISOL_MAPSET_DATE = "2020";
+ISOL_MAPSET_MAPS = "65";
+ISOL_MAPSET_TITLE = "Isolation";
+ISOL_MAPFLAG_PISTOLSTART = "Y";
+ISOL_MAPSET_PACK = "BASE";
+
+// Destination Unknown
+DSUN_ACTOR_1 = "Lexicon_DSUN_WolfensteinSS";
+DSUN_TAG_WOLFSS = "Nazi Driver";
+DSUN_OB_WOLFSS = "%o met a nazi driver.";
+DSUN_MAPSET_AUTHORS = "Stuart Rynn";
+DSUN_MAPSET_CUSTOM = "Y";
+DSUN_MAPSET_DATE = "2007";
+DSUN_MAPSET_MAPS = "19";
+DSUN_MAPSET_TITLE = "Destination Unknown";
+DSUN_MAPFLAG_INFINITEAMMO = "Y";
+DSUN_MAPSET_PACK = "BASE";

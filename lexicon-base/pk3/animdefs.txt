@@ -590,6 +590,14 @@ texture CZBX0058 range CZBX0061 tics 8
 switch CZBX0036 on pic CZBX0041 tics 0
 switch CZBX0037 on pic CZBX0042 tics 0
 
+// Destination Unknown
+flat DSUN0065 range DSUN0068 tics 8
+texture DSUN0129 range DSUN0132 tics 5
+texture DSUN0155 range DSUN0158 tics 5
+warp flat RROCK98
+warp flat DSUN0012
+warp flat DSUN0026
+
 // Destiny Doom
 texture DESD0119 range DESD0122 tics 8
 texture DESD0335 range DESD0338 tics 8
@@ -760,20 +768,20 @@ switch EPC22930 on pic EPC22931 tics 0
 switch EPC22932 on pic EPC22933 tics 0
 
 // Equinox
-texture EQNX0047 range EQNX0051 tics 8
-texture EQNX0057 range EQNX0060 tics 8 allowdecals
-flat EQNX0013 range EQNX0016 tics 8
-flat EQNX0018 range EQNX0021 tics 8
-flat EQNX0025 range EQNX0027 tics 8
-flat EQNX0030 range EQNX0033 tics 8
+texture EQNX0045 range EQNX0049 tics 8
+texture EQNX0055 range EQNX0058 tics 8 allowdecals
+flat EQNX0001 range EQNX0003 tics 8
+flat EQNX0021 range EQNX0024 tics 8
+flat EQNX0029 range EQNX0032 tics 8
+flat EQNX0033 range EQNX0036 tics 8
+switch EQNX0143 on pic EQNX0177 tics 0
 switch EQNX0145 on pic EQNX0179 tics 0
-switch EQNX0147 on pic EQNX0181 tics 0
-switch EQNX0152 on pic EQNX0186 tics 0
+switch EQNX0150 on pic EQNX0184 tics 0
+switch EQNX0151 on pic EQNX0185 tics 0
 switch EQNX0153 on pic EQNX0187 tics 0
-switch EQNX0155 on pic EQNX0189 tics 0
-switch EQNX0161 on pic EQNX0195 tics 0
-switch EQNX0164 on pic EQNX0198 tics 0
-switch EQNX0168 on pic EQNX0202 tics 0
+switch EQNX0159 on pic EQNX0193 tics 0
+switch EQNX0162 on pic EQNX0196 tics 0
+switch EQNX0166 on pic EQNX0200 tics 0
 
 // Eternal Doom
 texture ETDM0245 range ETDM0248 tics 8
@@ -1012,6 +1020,19 @@ texture ICAV0613 range ICAV0616 tics 8
 texture ICAV0617 range ICAV0622 tics 8 allowdecals
 flat ICAV0007 range ICAV0010 tics 8
 switch ICAV0623 on pic ICAV0624 tics 0
+
+// Insertion
+switch ISRT0002 on pic ISRT0007 tics 0
+switch ISRT0003 on pic ISRT0008 tics 0
+
+// Isolation
+texture ISOL0024 range ISOL0026 tics 8 allowdecals
+texture ISOL0045 range ISOL0048 tics 8 allowdecals
+texture ISOL0073 range ISOL0076 tics 8
+switch ISOL0004 on pic ISOL0005 tics 0
+switch ISOL0033 on pic ISOL0037 tics 0
+switch ISOL0034 on pic ISOL0038 tics 0
+switch ISOL0035 on pic ISOL0039 tics 0
 
 // Japanese Community Project
 texture JPCP0510 range JPCP0512 tics 8 allowdecals
@@ -1506,6 +1527,11 @@ warp flat TMR20238
 warp flat TMR20255
 warp flat TMR20254
 warp flat TMR20256
+
+// The Abyss
+texture ABYS0020 range ABYS0022 tics 8 allowdecals
+switch ABYS0025 on pic ABYS0031 tics 0
+switch ABYS0027 on pic ABYS0033 tics 0
 
 // The Trooper's Playground
 switch TTPG0020 on pic TTPG0026 tics 0

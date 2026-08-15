@@ -118,6 +118,1243 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 		}
 	}
 
+	// Isolation
+	if (StrICmp(mapName,"ISOL01") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Get Down With The Sickness"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"DynamiteKaitorn"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Get Down With The Sickness"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"DynamiteKaitorn"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL02") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Martian Law"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gothic"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Martian Law"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gothic"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL03") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Feverish Nightmare"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Walter Confetti"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Feverish Nightmare"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Walter Confetti"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL04") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Disease Disaster"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Orka"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Disease Disaster"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Orka"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL05") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Fluid Control"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"joepallai"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Fluid Control"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"joepallai"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL06") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Squared Aqua"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Worm318"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Squared Aqua"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Worm318"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL07") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Eternal Agony"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Remmirath"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Eternal Agony"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Remmirath"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL08") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cabbage Cave"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Crunchynut44"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cabbage Cave"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Crunchynut44"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL09") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Repugnant Surprises"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gardevoir"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Repugnant Surprises"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gardevoir"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL10") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Demonic Phlegm Usurpation"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"boris"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Demonic Phlegm Usurpation"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"boris"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL11") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Pools of Unmaking"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Obsidian"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Pools of Unmaking"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Obsidian"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL12") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Wine Flu"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"rf'"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Wine Flu"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"rf'"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL13") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Washing Well"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Phobus"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Washing Well"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Phobus"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL14") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Back Shift at the Sludge Works"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"TheOrganGrinder"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Back Shift at the Sludge Works"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"TheOrganGrinder"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL15") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"A Message From the President"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Walter Confetti"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"A Message From the President"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Walter Confetti"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL16") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Bad Day for the Subway"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"RonnieJamesDiner"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Bad Day for the Subway"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"RonnieJamesDiner"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL17") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Depurify"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Dragonfly"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Depurify"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Dragonfly"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL18") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Nuclear Twilight"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Breezeep"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Nuclear Twilight"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Breezeep"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL19") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cracks of Nuke"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"ShadesMaster"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cracks of Nuke"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"ShadesMaster"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL20") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Virutech"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"leodoom85"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Virutech"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"leodoom85"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL21") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Death in the Wind"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Voltcom"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Death in the Wind"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Voltcom"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL22") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Exiled"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Guardsoul"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Exiled"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Guardsoul"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL23") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Feeling Run Down"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"an_mutt"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Feeling Run Down"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"an_mutt"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL24") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Trentenaire En Quarantaine"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Roofi"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Trentenaire En Quarantaine"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Roofi"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL25") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Alfonzo Allows Himself To Be Mugged Because He's Such a Nice Guy"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Tarnsman"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Alfonzo Allows Himself To Be Mugged Because He's Such a Nice Guy"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Tarnsman"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL26") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Mutagen Rapidem"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Simpletonium"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Mutagen Rapidem"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Simpletonium"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL27") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Le Petit Chaperon Rouge"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Roofi"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Le Petit Chaperon Rouge"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Roofi"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL28") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Underground Tower"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Shadow Hog"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Underground Tower"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Shadow Hog"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL29") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Lonely Deceased"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"AD_79"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Lonely Deceased"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"AD_79"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL30") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Stir Crazy"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Scotty"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Stir Crazy"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Scotty"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL31") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Unrelenting Fear"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"pcorf"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Unrelenting Fear"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"pcorf"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL32") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"AAAAA"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Big Ol' Billy"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"AAAAA"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Big Ol' Billy"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL33") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Close Encounter"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"A2Rob"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Close Encounter"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"A2Rob"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL34") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"So Much For Some Shells"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Redead-ITA"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"So Much For Some Shells"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Redead-ITA"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL35") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Dubious Cave"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Senor500"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Dubious Cave"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Senor500"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL36") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Hikikokomplex"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"zeldavxa"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Hikikokomplex"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"zeldavxa"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL37") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Faucet Failure"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"nue"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Faucet Failure"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"nue"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL38") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Inverse Quarantine"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Ambureon"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Inverse Quarantine"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Ambureon"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL39") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Staysafe"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"sugarwater"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Staysafe"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"sugarwater"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL40") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cavern Abomination"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"MFG38"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Cavern Abomination"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"MFG38"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL41") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"In the Flesh"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Mister_theMan"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"In the Flesh"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Mister_theMan"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL42") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Phlegmatic Passage"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Bimmy"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Phlegmatic Passage"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Bimmy"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL43") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Metallish Isolation"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"AconyX"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Metallish Isolation"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"AconyX"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL44") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Snot Drain"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"E.M."; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Snot Drain"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"E.M."; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL45") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Maw of the Beast"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"NeedHealth"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Maw of the Beast"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"NeedHealth"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL46") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"COVID Distribution Center"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Kudo"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"COVID Distribution Center"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Kudo"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL47") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Invasion Cancelled"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gothic"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Invasion Cancelled"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Gothic"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL48") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Viral Samples"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"universal-quantifier"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Viral Samples"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"universal-quantifier"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL49") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Up and Down and All Around"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Alper002"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Up and Down and All Around"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Alper002"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL50") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Big Torture Halls of Torture"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Cacodemon187"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"The Big Torture Halls of Torture"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Cacodemon187"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL51") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Waste Vat"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"CthulhuChan"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Waste Vat"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"CthulhuChan"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL52") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Essential Servicese"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"xaekin"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Essential Servicese"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"xaekin"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL53") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Underground Sickness"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"no_mic"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Underground Sickness"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"no_mic"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL54") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Should've Stayed Home"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Zylinderkatze"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Should've Stayed Home"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Zylinderkatze"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL55") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Remediation"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"wydoomer"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Remediation"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"wydoomer"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL56") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Phobos Snot Storage"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Hawns Braks"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Phobos Snot Storage"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Hawns Braks"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL57") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Facility Lockdown"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"MaishyN"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Facility Lockdown"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"MaishyN"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL58") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Subterranean Processing"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Sankhatayan"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Subterranean Processing"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Sankhatayan"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL59") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Scum Discharge"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"notTyrone"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Scum Discharge"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"notTyrone"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL60") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Everything's Gone Green"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"amok"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Everything's Gone Green"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"amok"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL61") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Argo"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Danlex"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Argo"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Danlex"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL62") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Social Distancing"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"TravyB"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Social Distancing"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"TravyB"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL63") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Plaguelord's Demesne"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"IvanDobrovski"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Plaguelord's Demesne"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"IvanDobrovski"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL64") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"So Much For A Bigger Weapon"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Redead-ITA"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"So Much For A Bigger Weapon"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Redead-ITA"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+	if (StrICmp(mapName,"ISOL65") == 0)
+	{
+		SetHudSize(640, 360, 0);
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Tidal Wave"; HUDMSG_TYPEON, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 9999.0, 0.04, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Cacowad"; HUDMSG_TYPEON, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 9999.0, 0.04, 0.5);
+
+		delay(140);
+
+		SetFont("BigFont");
+		HudMessage(n:PRINTNAME_LEVEL, s:": \cj", s:"Tidal Wave"; HUDMSG_FADEOUT, 998, 
+		CR_DARKGREEN, (((640 << 16) / 2) + 0.4), (((360 << 16) / 2) + 0.0) - 5.0, 0.0, 0.5);
+		SetFont("SmallFont");
+		HudMessage(s:"by: ", s:"Cacowad"; HUDMSG_FADEOUT, 997, CR_DARKGREEN, ((640 << 16) / 2 + 0.4),
+		((360 << 16) / 2 + 0.0) + 10.0, 0.0, 0.5);
+	}
+
 	// Jiffy Bag
 	if (StrICmp(mapName,"JFBG01") == 0)
 	{

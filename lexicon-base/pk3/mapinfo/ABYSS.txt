@@ -1,0 +1,275 @@
+// The Abyss Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ABYS01 "Pink Horde"
+{
+	titlepatch = "ABYSV00"
+	next = "ABYS02"
+	secretnext = "ABYS02"
+	sky1 = "SKY1"
+	music = "D_ABYS01"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS02 "The Catacombs"
+{
+	titlepatch = "ABYSV01"
+	next = "ABYS03"
+	secretnext = "ABYS03"
+	sky1 = "SKY1"
+	music = "D_ABYS02"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS03 "Avernus"
+{
+	titlepatch = "ABYSV02"
+	next = "ABYS04"
+	secretnext = "ABYS04"
+	sky1 = "SKY1"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS04 "The Nunnery"
+{
+	titlepatch = "ABYSV03"
+	next = "ABYS05"
+	secretnext = "ABYS05"
+	sky1 = "SKY1"
+	music = "D_ABYS04"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS05 "Imp Madness"
+{
+	titlepatch = "ABYSV04"
+	next = "ABYS06"
+	secretnext = "ABYS06"
+	sky1 = "SKY1"
+	music = "D_ABYS05"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS06 "Not Level"
+{
+	titlepatch = "ABYSV05"
+	next = "ABYS07"
+	secretnext = "ABYS07"
+	sky1 = "SKY1"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS07 "The Cube"
+{
+	titlepatch = "ABYSV06"
+	next = "ABYS08"
+	secretnext = "ABYS08"
+	sky1 = "SKY1"
+	music = "D_ABYS07"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+	Map07Special
+}
+
+map ABYS08 "The Theatre"
+{
+	titlepatch = "ABYSV07"
+	next = "ABYS09"
+	secretnext = "ABYS09"
+	sky1 = "SKY1"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS09 "Bloodstream"
+{
+	titlepatch = "ABYSV08"
+	next = "ABYS10"
+	secretnext = "ABYS10"
+	sky1 = "SKY1"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS10 "Hangar"
+{
+	titlepatch = "ABYSV09"
+	next = "ABYS11"
+	secretnext = "ABYS11"
+	sky1 = "SKY1"
+	music = "D_ABYS10"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS11 "Stone Henge"
+{
+	titlepatch = "ABYSV10"
+	next = "ABYS12"
+	secretnext = "ABYS12"
+	sky1 = "SKY1"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS12 "The Square"
+{
+	titlepatch = "ABYSV11"
+	next = "ABYS13"
+	secretnext = "ABYS13"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS13 "The Library"
+{
+	titlepatch = "ABYSV12"
+	next = "ABYS14"
+	secretnext = "ABYS14"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS14 "Arabesque"
+{
+	titlepatch = "ABYSV13"
+	next = "ABYS15"
+	secretnext = "ABYS15"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS15 "Satan's Cross"
+{
+	titlepatch = "ABYSV14"
+	next = "ABYS16"
+	secretnext = "ABYS31"
+	sky1 = "ABYS1001"
+	music = "D_ABYS15"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS16 "The Grand Tower"
+{
+	titlepatch = "ABYSV15"
+	next = "ABYS17"
+	secretnext = "ABYS17"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS17 "Light and Darkness"
+{
+	titlepatch = "ABYSV16"
+	next = "ABYS18"
+	secretnext = "ABYS18"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS18 "Short 'n Sweet"
+{
+	titlepatch = "ABYSV17"
+	next = "ABYS19"
+	secretnext = "ABYS19"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS19 "The Pits of Doom"
+{
+	titlepatch = "ABYSV18"
+	next = "ABYS20"
+	secretnext = "ABYS20"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS20 "The Cray"
+{
+	titlepatch = "ABYSV19"
+	next = "ABYS21"
+	secretnext = "ABYS21"
+	sky1 = "ABYS1001"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS21 "Heretic Factor"
+{
+	titlepatch = "ABYSV20"
+	next = "ABYS22"
+	secretnext = "ABYS22"
+	sky1 = "ABYS1002"
+	music = "D_ABYS21"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS22 "Basilica"
+{
+	titlepatch = "ABYSV21"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "ABYS1002"
+	music = "D_ABYS22"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS31 "The Temple"
+{
+	titlepatch = "ABYSV30"
+	next = "ABYS16"
+	secretnext = "ABYS32"
+	sky1 = "ABYS1002"
+	music = "D_ABYS31"
+	intermusic = "D_ABYSIN"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}
+
+map ABYS32 "Spider Bowl"
+{
+	titlepatch = "ABYSV31"
+	next = "ABYS16"
+	secretnext = "ABYS16"
+	sky1 = "ABYS1002"
+	music = "D_ABYS32"
+	intermusic = "D_ABYSIN"
+	ExitPic = "ABYSINT"
+	EnterPic = "ABYSINT"
+}

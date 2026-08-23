@@ -66,6 +66,14 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 			Delay(1);
 		}
 	}
+	if (StrICmp(mapName,"AALI10") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(118, SPAC_CROSS);
+			SetLineSpecial(118, 243);
+		}
+	}
 	if (StrICmp(mapName,"AALI16") == 0)
 	{
 		while (TRUE)
@@ -95,6 +103,14 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 				}
 			}
 			Delay(1);
+		}
+	}
+	if (StrICmp(mapName,"AALI18") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(46, SPAC_USE);
+			SetLineSpecial(46, 243);
 		}
 	}
 	if (StrICmp(mapName,"AALI30") == 0)
@@ -1709,6 +1725,100 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 		HUDMSG_FADEINOUT, -1001, CR_WHITE, -0.1, 0.85, 2.0, 2.0, 2.0);
 	}
 
+	// Scythe 2
+	if (StrICmp(mapName,"SCY205") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(5, SPAC_CROSS);
+			SetLineSpecial(5, 243);
+		}
+	}
+	if (StrICmp(mapName,"SCY210") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(20, SPAC_CROSS);
+			SetLineSpecial(20, 243);
+		}
+	}
+	if (StrICmp(mapName,"SCY215") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(44, SPAC_CROSS);
+			SetLineSpecial(44, 243);
+		}
+	}
+	if (StrICmp(mapName,"SCY220") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(16, SPAC_CROSS);
+			SetLineSpecial(16, 243);
+		}
+	}
+	if (StrICmp(mapName,"SCY225") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(100, SPAC_USE); // The level had to be slightly modified for this to work
+			SetLineSpecial(100, 243);
+		}
+	}
+
+	// Speed of Doom
+	if (StrICmp(mapName,"SPOD11") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(30, SPAC_CROSS);
+			SetLineSpecial(30, 243);
+		}
+	}
+	if (StrICmp(mapName,"SPOD20") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(35, SPAC_CROSS);
+			SetLineSpecial(35, 243);
+		}
+	}
+
+	// Sunlust
+	if (StrICmp(mapName,"SNLU10") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(97, SPAC_CROSS);
+			SetLineSpecial(97, 243);
+		}
+	}
+	if (StrICmp(mapName,"SNLU16") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(102, SPAC_CROSS);
+			SetLineSpecial(102, 243);
+		}
+	}
+	if (StrICmp(mapName,"SNLU20") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(153, SPAC_CROSS);
+			SetLineSpecial(153, 243);
+		}
+	}
+	if (StrICmp(mapName,"SNLU28") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(434, SPAC_CROSS);
+			SetLineSpecial(434, 243);
+		}
+	}
+
 	// Team Rocket: Blasting Off at the Speed of Mapping
 	if (StrICmp(mapName,"TMR101") == 0)
 	{
@@ -2799,5 +2909,41 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 		HudMessage(s:"NutZ"; HUDMSG_FADEOUT, 998, CR_YELLOW, 1.5, 0.465, 0.0, 0.5);
 		SetFont("SmallFont");
 		HudMessage(s:"Bridgeburner56"; HUDMSG_FADEOUT, 997, CR_YELLOW, 1.5, 0.535, 0.0, 0.5);
+	}
+
+	// UAC Ultra
+	if (StrICmp(mapName,"UACU06") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(13, SPAC_CROSS);
+			SetLineSpecial(13, 243);
+		}
+	}
+
+	// Vanguard
+	if (StrICmp(mapName,"VNGD05") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(3, SPAC_USE);
+			SetLineSpecial(3, 243);
+		}
+	}
+	if (StrICmp(mapName,"VNGD10") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(231, SPAC_USE);
+			SetLineSpecial(231, 243);
+		}
+	}
+	if (StrICmp(mapName,"VNGD12") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(67, SPAC_USE);
+			SetLineSpecial(67, 243);
+		}
 	}
 }

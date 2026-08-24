@@ -52,16 +52,30 @@ Script "Lexicon_Core_Open" OPEN
 	//Init these values to an empty string. Makes the data predictable
 	clearLexiconMapSetTypes();
 
+	//Randomize hub billboards
+	for (int i = 1; i <= 4; i++)
+	{
+		int j = Random(1, 9);
+		str hubBillboard;
+		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
+		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
+		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
+	}
+
 	//This is needed to let the actors do their processing
 	Delay(1);
 
 	if(!isVR())
 		terminate;	
-	
-	int i = Random(1, 56);
+
+	//Make floating blocks bob up and down
+	Floor_Waggle(49, 32, 32, 0, 0);
+	Ceiling_Waggle(49, 32, 32, 0, 0);
+
+	int k = Random(1, 56);
 	str musicString;
-	if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
-	else { musicString = strparam(s:"LXHBMS", d:i); }
+	if (k <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:k); }
+	else { musicString = strparam(s:"LXHBMS", d:k); }
 	if (!isMusicRandomizerLoaded()) { SetMusic(musicString,0); }
 	
 	//Generate all the map data on the server

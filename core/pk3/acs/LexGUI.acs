@@ -52,16 +52,6 @@ Script "Lexicon_Core_Open" OPEN
 	//Init these values to an empty string. Makes the data predictable
 	clearLexiconMapSetTypes();
 
-	//Randomize hub billboards
-	for (int i = 1; i <= 4; i++)
-	{
-		int j = Random(1, 9);
-		str hubBillboard;
-		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
-		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
-		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
-	}
-
 	//This is needed to let the actors do their processing
 	Delay(1);
 
@@ -71,6 +61,16 @@ Script "Lexicon_Core_Open" OPEN
 	//Make floating blocks bob up and down
 	Floor_Waggle(49, 32, 32, 0, 0);
 	Ceiling_Waggle(49, 32, 32, 0, 0);
+
+	//Randomize hub billboards
+	for (int i = 1; i <= 4; i++)
+	{
+		int j = Random(1, 9);
+		str hubBillboard;
+		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
+		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
+		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
+	}
 
 	int k = Random(1, 56);
 	str musicString;

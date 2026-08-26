@@ -1,0 +1,77 @@
+// 3d skybox stuff
+function int skyboxDist2(int x1, int y1, int z1, int x2, int y2, int z2)
+{
+	int len;
+	int y = y1 - y2;
+	int x = x1 - x2;
+	int z = z1 - z2;
+
+	int ang = vectorangle(x,y);
+	if(((ang+0.125)%0.5) > 0.25) len = fixeddiv(y, sin(ang));
+	else len = fixeddiv(x, cos(ang));
+
+	ang = vectorangle(len, z);
+	if(((ang+0.125)%0.5) > 0.25) len = fixeddiv(z, sin(ang));
+	else len = fixeddiv(len, cos(ang));
+
+	return len;
+}
+
+Script "LexiconSkybox" enter clientside
+{
+    if(playernumber() != ConsolePlayerNumber()) { Terminate; }
+
+    int cx1 = GetActorX(300);
+    int cy1 = GetActorY(300);
+    int cz1 = GetActorZ(300);
+    int cx2 = GetActorX(301);
+    int cy2 = GetActorY(301);
+    int cz2 = GetActorZ(301);
+
+    int px = GetActorX(0);
+    int py = GetActorY(0);
+    int pz = GetActorZ(0);
+
+    int dx = cx2 - px;
+    int dy = cy2 - py;
+    int dz = cz2 - pz;
+
+    int a = 0.0;
+
+    int sx = 0.0;
+    int sy = 0.0;
+    int sz = 0.0;
+
+    int d = 0.0;
+
+    if(isVR())
+    {
+		while(1)
+		{
+			cx1 = GetActorX(300);
+			cy1 = GetActorY(300);
+			cz1 = GetActorZ(300);
+			cx2 = GetActorX(301);
+			cy2 = GetActorY(301);
+			cz2 = GetActorZ(301);
+
+			px = GetActorX(0);
+			py = GetActorY(0);
+			pz = GetActorZ(0);
+
+			dx = px - cx2;
+			dy = py - cy2;
+			dz = pz - cz2;
+
+			a = VectorAngle(dx, dy);
+			d = skyboxDist2(px, py, 0.0, cx2, cy2, 0.0) / 16.0;
+
+			sx = cx1 + (cos(a)*d);
+			sy = cy1 + (sin(a)*d);
+			sz = cz1 + FixedDiv(dz, 16.0);
+
+			Warp(302, sx, sy, sz, 0.0, WARPF_MOVEPTR|WARPF_WARPINTERPOLATION|WARPF_ABSOLUTEPOSITION|WARPF_ABSOLUTEANGLE|WARPF_NOCHECKPOSITION);
+			delay(1);
+		}
+	}
+}

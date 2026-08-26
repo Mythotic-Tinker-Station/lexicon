@@ -57,11 +57,25 @@ Script "Lexicon_Core_Open" OPEN
 
 	if(!isVR())
 		terminate;	
-	
-	int i = Random(1, 56);
+
+	//Make floating blocks bob up and down
+	Floor_Waggle(49, 32, 32, 0, 0);
+	Ceiling_Waggle(49, 32, 32, 0, 0);
+
+	//Randomize hub billboards
+	for (int i = 1; i <= 4; i++)
+	{
+		int j = Random(1, 9);
+		str hubBillboard;
+		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
+		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
+		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
+	}
+
+	int k = Random(1, 56);
 	str musicString;
-	if (i <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:i); }
-	else { musicString = strparam(s:"LXHBMS", d:i); }
+	if (k <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:k); }
+	else { musicString = strparam(s:"LXHBMS", d:k); }
 	if (!isMusicRandomizerLoaded()) { SetMusic(musicString,0); }
 	
 	//Generate all the map data on the server
@@ -166,6 +180,16 @@ Script "Lexicon_InGame" (int arg1)
 	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
 	int mapsetWeapon1 = getDynLangEntry(mapsetAcronym, "WEAPON", "1");
 	int mapsetWeapon2 = getDynLangEntry(mapsetAcronym, "WEAPON", "2");
+	int mapsetWeapon3 = getDynLangEntry(mapsetAcronym, "WEAPON", "3");
+	int mapsetWeapon4 = getDynLangEntry(mapsetAcronym, "WEAPON", "4");
+	int mapsetWeapon5 = getDynLangEntry(mapsetAcronym, "WEAPON", "5");
+	int mapsetWeapon6 = getDynLangEntry(mapsetAcronym, "WEAPON", "6");
+	int mapsetWeapon7 = getDynLangEntry(mapsetAcronym, "WEAPON", "7");
+	int mapsetWeapon8 = getDynLangEntry(mapsetAcronym, "WEAPON", "8");
+	int mapsetWeapon9 = getDynLangEntry(mapsetAcronym, "WEAPON", "9");
+
+	str mapsetIwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
+
 	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
 	int mapsetPistolStart = getDynLangEntry(mapsetAcronym, "MAPFLAG", "PISTOLSTART");
 
@@ -188,7 +212,35 @@ Script "Lexicon_InGame" (int arg1)
 				GiveInventory("LexiconClipGive", 30);
 				GiveInventory("LexiconInventoryGiven", 1);
 				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { SetWeapon(mapsetWeapon2); }
-				else { SetWeapon("Pistol"); }		
+				else { SetWeapon("Pistol"); }
+				
+				if(GetCVar("lastmanstanding") || GetCVar("teamlms"))
+				{
+					GiveInventory("Clip", 9999);
+					GiveInventory("Shell", 9999);
+					GiveInventory("RocketAmmo", 9999);
+					GiveInventory("Cell", 9999);
+
+					if (mapsetWeapon3 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon3, 1); }
+					else { GiveInventory("Chainsaw", 1); }
+					if (mapsetWeapon4 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon4, 1); }
+					else { GiveInventory("Shotgun", 1); }
+					
+					if (!isDoom1wad(mapsetIwad))
+					{
+						if (mapsetWeapon5 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon5, 1); }
+						else { GiveInventory("SuperShotgun", 1); }
+					}
+					
+					if (mapsetWeapon6 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon6, 1); }
+					else { GiveInventory("Chaingun", 1); }
+					if (mapsetWeapon7 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon7, 1); }
+					else { GiveInventory("RocketLauncher", 1); }
+					if (mapsetWeapon8 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon8, 1); }
+					else { GiveInventory("PlasmaRifle", 1); }
+					if (mapsetWeapon2 != "_LANG_UNDEFINED_") { SetWeapon(mapsetWeapon8); }
+					else { SetWeapon("PlasmaRifle"); }
+				}
 			}
 		}
 	}

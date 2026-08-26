@@ -4,6 +4,8 @@ ACTOR Lexicon_SCI2_Fist : Weapon
 	Weapon.Kickback 100
 	Obituary "$OB_MPFIST"
 	Tag "$TAG_FIST"
+	Weapon.SlotNumber 1
+	Weapon.SlotPriority 0
 	+WEAPON.WIMPY_WEAPON
 	+WEAPON.MELEEWEAPON
 	+WEAPON.ALLOW_WITH_RESPAWN_INVUL

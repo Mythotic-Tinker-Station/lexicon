@@ -1,18 +1,18 @@
-Texture "NSP20361", 128, 128
-{
-	Patch "NSP21798", 0, 0
-	Patch "NSP21801", 51, 0
-	Patch "NSP21801", 0, 0
-	Patch "NSP21801", 104, 0
-}
 Texture "NSP20363", 128, 128
 {
-	Patch "NSP21874", -5, 0
-	Patch "NSP21874", 123, 0
+	Patch "NSP21800", 0, 0
+	Patch "NSP21803", 51, 0
+	Patch "NSP21803", 0, 0
+	Patch "NSP21803", 104, 0
 }
-Texture "NSP20395", 128, 128
+Texture "NSP20365", 128, 128
 {
-	Patch "NSP21753", 0, 0
+	Patch "NSP21876", -5, 0
+	Patch "NSP21876", 123, 0
+}
+Texture "NSP20397", 128, 128
+{
+	Patch "NSP21755", 0, 0
 	Patch "STEP07", 0, 64
 	Patch "STEP07", 32, 64
 	Patch "STEP07", 64, 64
@@ -24,106 +24,66 @@ Texture "NSP20395", 128, 128
 	Patch "STEP07", 64, 120
 	Patch "STEP07", 96, 120
 }
-Texture "NSP20407", 64, 128
+Texture "NSP20409", 64, 128
 {
-	Patch "NSP21755", 0, 0
-	Patch "NSP21927", 0, 64
+	Patch "NSP21757", 0, 0
+	Patch "NSP21929", 0, 64
 }
-Texture "NSP20408", 32, 128
+Texture "NSP20410", 32, 128
 {
-	Patch "NSP21756", 0, 0
-	Patch "NSP21756", 0, 64
+	Patch "NSP21758", 0, 0
+	Patch "NSP21758", 0, 64
 }
-Texture "NSP20409", 128, 128
+Texture "NSP20411", 128, 128
 {
-	Patch "NSP21742", 0, 0
-	Patch "NSP21738", 0, 72
-	Patch "NSP21738", 64, 72
+	Patch "NSP21744", 0, 0
+	Patch "NSP21740", 0, 72
+	Patch "NSP21740", 64, 72
 }
-Texture "NSP20410", 128, 128
+Texture "NSP20412", 128, 128
 {
-	Patch "NSP21743", 0, 0
-	Patch "NSP21738", 0, 72
-	Patch "NSP21738", 64, 72
+	Patch "NSP21745", 0, 0
+	Patch "NSP21740", 0, 72
+	Patch "NSP21740", 64, 72
 }
-Texture "NSP20412", 64, 128
+Texture "NSP20414", 64, 128
 {
-	Patch "NSP21762", 0, 0
-	Patch "NSP21762", 0, 64
-}
-Texture "NSP20415", 64, 128
-{
-	Patch "NSP21916", 0, 0
-	Patch "NSP21918", 32, 0
-	Patch "NSP21916", 0, 64
-	Patch "NSP21918", 32, 64
+	Patch "NSP21764", 0, 0
+	Patch "NSP21764", 0, 64
 }
 Texture "NSP20417", 64, 128
 {
-	Patch "NSP21921", 0, 0
-	Patch "NSP21921", 32, 0
+	Patch "NSP21918", 0, 0
+	Patch "NSP21920", 32, 0
+	Patch "NSP21918", 0, 64
+	Patch "NSP21920", 32, 64
+}
+Texture "NSP20419", 64, 128
+{
+	Patch "NSP21923", 0, 0
+	Patch "NSP21923", 32, 0
 	Patch "BCRATEL1", 0, 64
 	Patch "BCRATER1", 32, 64
 }
-Texture "NSP20418", 64, 16
+Texture "NSP20420", 64, 16
 {
-	Patch "NSP21919", 0, 0
-	Patch "NSP21919", 16, 0
-	Patch "NSP21919", 32, 0
-	Patch "NSP21919", 48, 0
-}
-Texture "NSP20426", 8, 128
-{
-	Patch "NSP21717", 0, 112
-	Patch "NSP21717", 0, 0
-	Patch "NSP21717", 0, 96
-	Patch "NSP21717", 0, 80
-	Patch "NSP21717", 0, 16
-	Patch "NSP21717", 0, 32
-	Patch "NSP21717", 0, 48
-	Patch "NSP21717", 0, 64
-}
-Texture "NSP20427", 16, 128
-{
-	Patch "NSP21877", 0, 0
-	Patch "NSP21877", 0, 24
-	Patch "NSP21877", 0, 48
-	Patch "NSP21877", 0, 72
-	Patch "NSP21877", 0, 96
-	Patch "STEP07", 0, 120
+	Patch "NSP21921", 0, 0
+	Patch "NSP21921", 16, 0
+	Patch "NSP21921", 32, 0
+	Patch "NSP21921", 48, 0
 }
 Texture "NSP20428", 8, 128
 {
-	Patch "NSP21718", 0, 0
-	Patch "NSP21718", 0, 16
-	Patch "NSP21718", 0, 32
-	Patch "NSP21718", 0, 48
-	Patch "NSP21718", 0, 64
-	Patch "NSP21718", 0, 80
-	Patch "NSP21718", 0, 96
-	Patch "NSP21718", 0, 112
+	Patch "NSP21719", 0, 112
+	Patch "NSP21719", 0, 0
+	Patch "NSP21719", 0, 96
+	Patch "NSP21719", 0, 80
+	Patch "NSP21719", 0, 16
+	Patch "NSP21719", 0, 32
+	Patch "NSP21719", 0, 48
+	Patch "NSP21719", 0, 64
 }
 Texture "NSP20429", 16, 128
-{
-	Patch "NSP21878", 0, 0
-	Patch "NSP21878", 0, 24
-	Patch "NSP21878", 0, 48
-	Patch "NSP21878", 0, 72
-	Patch "NSP21878", 0, 96
-	Patch "STEP07", 0, 120
-}
-Texture "NSP20432", 8, 128
-{
-	Patch "NSP21719", 0, 112
-	Patch "NSP21719", 0, 80
-	Patch "NSP21719", 0, 64
-	Patch "NSP21719", 0, 0
-	Patch "NSP21719", 0, 16
-	Patch "NSP21719", 0, 48
-	Patch "NSP21719", 0, 32
-	Patch "NSP21719", 0, 96
-}
-Texture "NSP20433", 16, 128
 {
 	Patch "NSP21879", 0, 0
 	Patch "NSP21879", 0, 24
@@ -132,491 +92,525 @@ Texture "NSP20433", 16, 128
 	Patch "NSP21879", 0, 96
 	Patch "STEP07", 0, 120
 }
-Texture "NSP20435", 64, 16
+Texture "NSP20430", 8, 128
 {
-	Patch "NSP21749", 0, 0
-	Patch "NSP21750", 32, 0
-	Patch "NSP21750", 40, 0
-	Patch "NSP21750", 48, 0
-	Patch "NSP21750", 56, 0
+	Patch "NSP21720", 0, 0
+	Patch "NSP21720", 0, 16
+	Patch "NSP21720", 0, 32
+	Patch "NSP21720", 0, 48
+	Patch "NSP21720", 0, 64
+	Patch "NSP21720", 0, 80
+	Patch "NSP21720", 0, 96
+	Patch "NSP21720", 0, 112
 }
-Texture "NSP20450", 64, 128
+Texture "NSP20431", 16, 128
 {
-	Patch "NSP21714", 0, 0
-	Patch "NSP21714", 0, 64
+	Patch "NSP21880", 0, 0
+	Patch "NSP21880", 0, 24
+	Patch "NSP21880", 0, 48
+	Patch "NSP21880", 0, 72
+	Patch "NSP21880", 0, 96
+	Patch "STEP07", 0, 120
 }
-Texture "NSP20452", 256, 128
+Texture "NSP20434", 8, 128
 {
-	Patch "NSP21713", 0, 0
-	Patch "NSP21712", 64, 0
-	Patch "NSP21713", 128, 0
-	Patch "NSP21716", 0, 120
-	Patch "NSP21716", 64, 120
-	Patch "NSP21716", 128, 120
-	Patch "NSP21713", 192, 0
-	Patch "NSP21716", 192, 120
-	Patch "NSP21713", 64, 56
-	Patch "NSP21712", 128, 56
-	Patch "NSP21713", 192, 56
-	Patch "NSP21713", 0, 56
+	Patch "NSP21721", 0, 112
+	Patch "NSP21721", 0, 80
+	Patch "NSP21721", 0, 64
+	Patch "NSP21721", 0, 0
+	Patch "NSP21721", 0, 16
+	Patch "NSP21721", 0, 48
+	Patch "NSP21721", 0, 32
+	Patch "NSP21721", 0, 96
 }
-Texture "NSP20454", 64, 72
+Texture "NSP20435", 16, 128
 {
 	Patch "NSP21881", 0, 0
-	Patch "NSP21882", 16, 0
-	Patch "NSP21883", 32, 0
-	Patch "NSP21884", 48, 0
-	Patch "NSP21941", 1, 19
+	Patch "NSP21881", 0, 24
+	Patch "NSP21881", 0, 48
+	Patch "NSP21881", 0, 72
+	Patch "NSP21881", 0, 96
+	Patch "STEP07", 0, 120
 }
-Texture "NSP20462", 256, 128
+Texture "NSP20437", 64, 16
 {
-	Patch "NSP21809", 0, 0
-	Patch "NSP21810", 64, 0
-	Patch "NSP21811", 128, 0
-	Patch "NSP21812", 192, 0
+	Patch "NSP21751", 0, 0
+	Patch "NSP21752", 32, 0
+	Patch "NSP21752", 40, 0
+	Patch "NSP21752", 48, 0
+	Patch "NSP21752", 56, 0
 }
-Texture "NSP20473", 32, 128
+Texture "NSP20452", 64, 128
 {
-	Patch "NSP21778", 0, 0
-	Patch "NSP21779", 8, 0
-	Patch "NSP21779", 16, 0
-	Patch "NSP21780", 24, 0
-	Patch "NSP21778", 0, 8
-	Patch "NSP21779", 8, 8
-	Patch "NSP21779", 16, 8
-	Patch "NSP21780", 24, 8
-	Patch "NSP21778", 0, 16
-	Patch "NSP21779", 8, 16
-	Patch "NSP21779", 16, 16
-	Patch "NSP21780", 24, 16
-	Patch "NSP21778", 0, 24
-	Patch "NSP21779", 8, 24
-	Patch "NSP21779", 16, 24
-	Patch "NSP21780", 24, 24
-	Patch "NSP21778", 0, 32
-	Patch "NSP21779", 8, 32
-	Patch "NSP21779", 16, 32
-	Patch "NSP21780", 24, 32
-	Patch "NSP21778", 0, 40
-	Patch "NSP21779", 8, 40
-	Patch "NSP21779", 16, 40
-	Patch "NSP21780", 24, 40
-	Patch "NSP21778", 0, 48
-	Patch "NSP21779", 8, 48
-	Patch "NSP21779", 16, 48
-	Patch "NSP21780", 24, 48
-	Patch "NSP21778", 0, 56
-	Patch "NSP21779", 8, 56
-	Patch "NSP21779", 16, 56
-	Patch "NSP21780", 24, 56
-	Patch "NSP21778", 0, 64
-	Patch "NSP21779", 8, 64
-	Patch "NSP21779", 16, 64
-	Patch "NSP21780", 24, 64
-	Patch "NSP21778", 0, 72
-	Patch "NSP21779", 8, 72
-	Patch "NSP21779", 16, 72
-	Patch "NSP21780", 24, 72
-	Patch "NSP21778", 0, 80
-	Patch "NSP21779", 8, 80
-	Patch "NSP21779", 16, 80
-	Patch "NSP21780", 24, 80
-	Patch "NSP21778", 0, 88
-	Patch "NSP21779", 8, 88
-	Patch "NSP21779", 16, 88
-	Patch "NSP21780", 24, 88
-	Patch "NSP21778", 0, 96
-	Patch "NSP21779", 8, 96
-	Patch "NSP21779", 16, 96
-	Patch "NSP21780", 24, 96
-	Patch "NSP21778", 0, 104
-	Patch "NSP21779", 8, 104
-	Patch "NSP21779", 16, 104
-	Patch "NSP21780", 24, 104
-	Patch "NSP21778", 0, 112
-	Patch "NSP21779", 8, 112
-	Patch "NSP21779", 16, 112
-	Patch "NSP21780", 24, 112
-	Patch "NSP21778", 0, 120
-	Patch "NSP21779", 8, 120
-	Patch "NSP21779", 16, 120
-	Patch "NSP21780", 24, 120
+	Patch "NSP21716", 0, 0
+	Patch "NSP21716", 0, 64
 }
-Texture "NSP20474", 16, 128
+Texture "NSP20454", 256, 128
 {
-	Patch "NSP21778", 0, 0
-	Patch "NSP21780", 8, 0
-	Patch "NSP21778", 0, 8
-	Patch "NSP21780", 8, 8
-	Patch "NSP21778", 0, 16
-	Patch "NSP21780", 8, 16
-	Patch "NSP21778", 0, 24
-	Patch "NSP21780", 8, 24
-	Patch "NSP21778", 0, 32
-	Patch "NSP21780", 8, 32
-	Patch "NSP21778", 0, 40
-	Patch "NSP21780", 8, 40
-	Patch "NSP21778", 0, 48
-	Patch "NSP21780", 8, 48
-	Patch "NSP21778", 0, 56
-	Patch "NSP21780", 8, 56
-	Patch "NSP21778", 0, 64
-	Patch "NSP21780", 8, 64
-	Patch "NSP21778", 0, 72
-	Patch "NSP21780", 8, 72
-	Patch "NSP21778", 0, 80
-	Patch "NSP21780", 8, 80
-	Patch "NSP21778", 0, 88
-	Patch "NSP21780", 8, 88
-	Patch "NSP21778", 0, 96
-	Patch "NSP21780", 8, 96
-	Patch "NSP21778", 0, 104
-	Patch "NSP21780", 8, 104
-	Patch "NSP21778", 0, 112
-	Patch "NSP21780", 8, 112
-	Patch "NSP21778", 0, 120
-	Patch "NSP21780", 8, 120
+	Patch "NSP21715", 0, 0
+	Patch "NSP21714", 64, 0
+	Patch "NSP21715", 128, 0
+	Patch "NSP21718", 0, 120
+	Patch "NSP21718", 64, 120
+	Patch "NSP21718", 128, 120
+	Patch "NSP21715", 192, 0
+	Patch "NSP21718", 192, 120
+	Patch "NSP21715", 64, 56
+	Patch "NSP21714", 128, 56
+	Patch "NSP21715", 192, 56
+	Patch "NSP21715", 0, 56
 }
-Texture "NSP20487", 64, 128
+Texture "NSP20456", 64, 72
 {
-	Patch "NSP21699", 0, 0
-	Patch "NSP21699", 0, 64
+	Patch "NSP21883", 0, 0
+	Patch "NSP21884", 16, 0
+	Patch "NSP21885", 32, 0
+	Patch "NSP21886", 48, 0
+	Patch "NSP21943", 1, 19
 }
-Texture "NSP20563", 256, 96
+Texture "NSP20464", 256, 128
 {
-	Patch "NSP21895", 0, 0
-	Patch "NSP21896", 128, 0
+	Patch "NSP21811", 0, 0
+	Patch "NSP21812", 64, 0
+	Patch "NSP21813", 128, 0
+	Patch "NSP21814", 192, 0
 }
-Texture "NSP20589", 64, 128
+Texture "NSP20475", 32, 128
 {
-	Patch "NSP21728", 0, 0
-	Patch "NSP21729", 32, 0
+	Patch "NSP21780", 0, 0
+	Patch "NSP21781", 8, 0
+	Patch "NSP21781", 16, 0
+	Patch "NSP21782", 24, 0
+	Patch "NSP21780", 0, 8
+	Patch "NSP21781", 8, 8
+	Patch "NSP21781", 16, 8
+	Patch "NSP21782", 24, 8
+	Patch "NSP21780", 0, 16
+	Patch "NSP21781", 8, 16
+	Patch "NSP21781", 16, 16
+	Patch "NSP21782", 24, 16
+	Patch "NSP21780", 0, 24
+	Patch "NSP21781", 8, 24
+	Patch "NSP21781", 16, 24
+	Patch "NSP21782", 24, 24
+	Patch "NSP21780", 0, 32
+	Patch "NSP21781", 8, 32
+	Patch "NSP21781", 16, 32
+	Patch "NSP21782", 24, 32
+	Patch "NSP21780", 0, 40
+	Patch "NSP21781", 8, 40
+	Patch "NSP21781", 16, 40
+	Patch "NSP21782", 24, 40
+	Patch "NSP21780", 0, 48
+	Patch "NSP21781", 8, 48
+	Patch "NSP21781", 16, 48
+	Patch "NSP21782", 24, 48
+	Patch "NSP21780", 0, 56
+	Patch "NSP21781", 8, 56
+	Patch "NSP21781", 16, 56
+	Patch "NSP21782", 24, 56
+	Patch "NSP21780", 0, 64
+	Patch "NSP21781", 8, 64
+	Patch "NSP21781", 16, 64
+	Patch "NSP21782", 24, 64
+	Patch "NSP21780", 0, 72
+	Patch "NSP21781", 8, 72
+	Patch "NSP21781", 16, 72
+	Patch "NSP21782", 24, 72
+	Patch "NSP21780", 0, 80
+	Patch "NSP21781", 8, 80
+	Patch "NSP21781", 16, 80
+	Patch "NSP21782", 24, 80
+	Patch "NSP21780", 0, 88
+	Patch "NSP21781", 8, 88
+	Patch "NSP21781", 16, 88
+	Patch "NSP21782", 24, 88
+	Patch "NSP21780", 0, 96
+	Patch "NSP21781", 8, 96
+	Patch "NSP21781", 16, 96
+	Patch "NSP21782", 24, 96
+	Patch "NSP21780", 0, 104
+	Patch "NSP21781", 8, 104
+	Patch "NSP21781", 16, 104
+	Patch "NSP21782", 24, 104
+	Patch "NSP21780", 0, 112
+	Patch "NSP21781", 8, 112
+	Patch "NSP21781", 16, 112
+	Patch "NSP21782", 24, 112
+	Patch "NSP21780", 0, 120
+	Patch "NSP21781", 8, 120
+	Patch "NSP21781", 16, 120
+	Patch "NSP21782", 24, 120
 }
-Texture "NSP20590", 128, 128
+Texture "NSP20476", 16, 128
 {
-	Patch "NSP21898", 0, 0
-	Patch "NSP21899", 64, 0
-	Patch "NSP21902", 96, 0
-	Patch "NSP21903", 32, 0
+	Patch "NSP21780", 0, 0
+	Patch "NSP21782", 8, 0
+	Patch "NSP21780", 0, 8
+	Patch "NSP21782", 8, 8
+	Patch "NSP21780", 0, 16
+	Patch "NSP21782", 8, 16
+	Patch "NSP21780", 0, 24
+	Patch "NSP21782", 8, 24
+	Patch "NSP21780", 0, 32
+	Patch "NSP21782", 8, 32
+	Patch "NSP21780", 0, 40
+	Patch "NSP21782", 8, 40
+	Patch "NSP21780", 0, 48
+	Patch "NSP21782", 8, 48
+	Patch "NSP21780", 0, 56
+	Patch "NSP21782", 8, 56
+	Patch "NSP21780", 0, 64
+	Patch "NSP21782", 8, 64
+	Patch "NSP21780", 0, 72
+	Patch "NSP21782", 8, 72
+	Patch "NSP21780", 0, 80
+	Patch "NSP21782", 8, 80
+	Patch "NSP21780", 0, 88
+	Patch "NSP21782", 8, 88
+	Patch "NSP21780", 0, 96
+	Patch "NSP21782", 8, 96
+	Patch "NSP21780", 0, 104
+	Patch "NSP21782", 8, 104
+	Patch "NSP21780", 0, 112
+	Patch "NSP21782", 8, 112
+	Patch "NSP21780", 0, 120
+	Patch "NSP21782", 8, 120
 }
-Texture "NSP20591", 128, 128
+Texture "NSP20489", 64, 128
 {
-	Patch "NSP21734", 0, 0
-	Patch "SW17_5", 32, 0
-	Patch "NSP21735", 64, 0
-	Patch "SW18_7", 96, 0
+	Patch "NSP21701", 0, 0
+	Patch "NSP21701", 0, 64
+}
+Texture "NSP20565", 256, 96
+{
+	Patch "NSP21897", 0, 0
+	Patch "NSP21898", 128, 0
+}
+Texture "NSP20591", 64, 128
+{
+	Patch "NSP21730", 0, 0
+	Patch "NSP21731", 32, 0
 }
 Texture "NSP20592", 128, 128
 {
-	Patch "NSP21730", 64, 0
-	Patch "NSP21731", 0, 0
+	Patch "NSP21900", 0, 0
+	Patch "NSP21901", 64, 0
+	Patch "NSP21904", 96, 0
+	Patch "NSP21905", 32, 0
 }
-Texture "NSP20593", 32, 16
+Texture "NSP20593", 128, 128
 {
-	Patch "NSP21745", 0, 8
-	Patch "NSP21745", 0, 5
-	Patch "NSP21744", 0, 0
+	Patch "NSP21736", 0, 0
+	Patch "SW17_5", 32, 0
+	Patch "NSP21737", 64, 0
+	Patch "SW18_7", 96, 0
 }
-Texture "NSP20595", 32, 16
+Texture "NSP20594", 128, 128
 {
-	Patch "NSP21746", 0, 0
-	Patch "NSP21746", 0, 8
+	Patch "NSP21732", 64, 0
+	Patch "NSP21733", 0, 0
 }
-Texture "NSP20596", 32, 16
+Texture "NSP20597", 32, 16
 {
 	Patch "NSP21748", 0, 0
-	Patch "NSP21747", 0, 8
+	Patch "NSP21748", 0, 8
 }
-Texture "NSP20599", 128, 128
+Texture "NSP20598", 32, 16
 {
-	Patch "NSP21710", 0, 64
-	Patch "NSP21710", 64, 0
-	Patch "NSP21707", 0, 0
-	Patch "NSP21707", 64, 64
+	Patch "NSP21750", 0, 0
+	Patch "NSP21749", 0, 8
 }
-Texture "NSP20609", 64, 128
+Texture "NSP20601", 128, 128
 {
-	Patch "NSP21741", 19, 72
-	Patch "NSP21741", 19, 0
-	Patch "NSP21741", 0, 0
-	Patch "NSP21741", 0, 72
-	Patch "NSP21741", 40, 0
-	Patch "NSP21741", 40, 72
-}
-Texture "NSP20610", 64, 128
-{
-	Patch "NSP21801", 20, 0
-	Patch "NSP21801", 0, 0
-	Patch "NSP21801", 40, 0
+	Patch "NSP21712", 0, 64
+	Patch "NSP21712", 64, 0
+	Patch "NSP21709", 0, 0
+	Patch "NSP21709", 64, 64
 }
 Texture "NSP20611", 64, 128
 {
-	Patch "NSP21755", 0, 0
-	Patch "NSP21927", 0, 64
-	Patch "NSP21938", 14, 66
+	Patch "NSP21743", 19, 72
+	Patch "NSP21743", 19, 0
+	Patch "NSP21743", 0, 0
+	Patch "NSP21743", 0, 72
+	Patch "NSP21743", 40, 0
+	Patch "NSP21743", 40, 72
+}
+Texture "NSP20612", 64, 128
+{
+	Patch "NSP21803", 20, 0
+	Patch "NSP21803", 0, 0
+	Patch "NSP21803", 40, 0
 }
 Texture "NSP20613", 64, 128
 {
-	Patch "NSP20355", 0, 0
-	Patch "NSP21783", 16, 72
+	Patch "NSP21757", 0, 0
+	Patch "NSP21929", 0, 64
+	Patch "NSP21940", 14, 66
 }
-Texture "NSP20616", 64, 128
+Texture "NSP20615", 64, 128
 {
-	Patch "NSP20393", 0, 0
-	Patch "NSP21789", 20, 80
-}
-Texture "NSP20617", 128, 128
-{
-	Patch "NSP20392", 0, 0
-	Patch "NSP21788", 48, 72
-}
-Texture "NSP20619", 64, 72
-{
-	Patch "NSP21705", 0, 0
-	Patch "NSP21783", 15, 18
-}
-Texture "NSP20620", 64, 128
-{
-	Patch "NSP21756", 0, 64
-	Patch "NSP21761", 0, 0
-	Patch "NSP21756", 32, 64
+	Patch "NSP20357", 0, 0
 	Patch "NSP21785", 16, 72
 }
-Texture "NSP20621", 64, 128
+Texture "NSP20618", 64, 128
 {
-	Patch "NSP21681", 32, 0
-	Patch "NSP21680", 16, 0
-	Patch "NSP21783", 16, 20
-	Patch "NSP21680", 0, -16
-	Patch "NSP21681", 48, 0
+	Patch "NSP20395", 0, 0
+	Patch "NSP21791", 20, 80
+}
+Texture "NSP20619", 128, 128
+{
+	Patch "NSP20394", 0, 0
+	Patch "NSP21790", 48, 72
+}
+Texture "NSP20621", 64, 72
+{
+	Patch "NSP21707", 0, 0
+	Patch "NSP21785", 15, 18
+}
+Texture "NSP20622", 64, 128
+{
+	Patch "NSP21758", 0, 64
+	Patch "NSP21763", 0, 0
+	Patch "NSP21758", 32, 64
+	Patch "NSP21787", 16, 72
 }
 Texture "NSP20623", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21803", 12, 62
-}
-Texture "NSP20624", 64, 128
-{
-	Patch "NSP21711", 0, 0
-	Patch "NSP21711", 0, 64
-	Patch "NSP21785", 16, 70
+	Patch "NSP21683", 32, 0
+	Patch "NSP21682", 16, 0
+	Patch "NSP21785", 16, 20
+	Patch "NSP21682", 0, -16
+	Patch "NSP21683", 48, 0
 }
 Texture "NSP20625", 64, 128
 {
-	Patch "NSP21711", 0, 64
-	Patch "NSP21711", 0, 0
-	Patch "NSP21789", 19, 79
+	Patch "NSP21807", 0, 0
+	Patch "NSP21805", 12, 62
 }
 Texture "NSP20626", 64, 128
 {
-	Patch "NSP21810", 0, 0
-	Patch "NSP21938", 13, 67
+	Patch "NSP21713", 0, 0
+	Patch "NSP21713", 0, 64
+	Patch "NSP21787", 16, 70
 }
 Texture "NSP20627", 64, 128
 {
-	Patch "NSP21813", 0, 0
-	Patch "NSP21938", 12, 66
+	Patch "NSP21713", 0, 64
+	Patch "NSP21713", 0, 0
+	Patch "NSP21791", 19, 79
 }
 Texture "NSP20628", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21802", 11, 62
+	Patch "NSP21812", 0, 0
+	Patch "NSP21940", 13, 67
 }
 Texture "NSP20629", 64, 128
 {
-	Patch "NSP20482", 0, 0
-	Patch "NSP21938", 13, 55
+	Patch "NSP21815", 0, 0
+	Patch "NSP21940", 12, 66
 }
 Texture "NSP20630", 64, 128
 {
-	Patch "NSP20488", 0, 0
-	Patch "NSP21783", 16, 20
+	Patch "NSP21807", 0, 0
+	Patch "NSP21804", 11, 62
 }
-Texture "NSP20633", 64, 128
+Texture "NSP20631", 64, 128
 {
-	Patch "NSP20513", 0, 0
-	Patch "NSP21938", 14, 64
+	Patch "NSP20484", 0, 0
+	Patch "NSP21940", 13, 55
 }
-Texture "NSP20636", 64, 128
+Texture "NSP20632", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21800", 12, 62
+	Patch "NSP20490", 0, 0
+	Patch "NSP21785", 16, 20
 }
-Texture "NSP20637", 64, 128
+Texture "NSP20635", 64, 128
+{
+	Patch "NSP20515", 0, 0
+	Patch "NSP21940", 14, 64
+}
+Texture "NSP20638", 64, 128
+{
+	Patch "NSP21807", 0, 0
+	Patch "NSP21802", 12, 62
+}
+Texture "NSP20639", 64, 128
 {
 	Patch "HELL6_3", 0, 0
-	Patch "NSP21936", 0, 59
+	Patch "NSP21938", 0, 59
 }
-Texture "NSP20642", 128, 128
+Texture "NSP20644", 128, 128
 {
-	Patch "NSP20392", 0, 0
-	Patch "NSP21783", 48, 72
+	Patch "NSP20394", 0, 0
+	Patch "NSP21785", 48, 72
 }
-Texture "NSP20648", 64, 128
+Texture "NSP20650", 64, 128
 {
-	Patch "NSP20717", 0, 0
-	Patch "NSP21750", 24, 48
-	Patch "NSP21750", 32, 64
-	Patch "NSP21750", 32, 48
-	Patch "NSP21750", 24, 64
-	Patch "NSP21877", 24, 52
-	Patch "NSP21750", 40, 48
-	Patch "NSP21750", 40, 64
-	Patch "NSP21750", 16, 48
-	Patch "NSP21750", 16, 64
-}
-Texture "NSP20649", 64, 128
-{
-	Patch "NSP21799", -64, 0
-	Patch "NSP21938", 14, 66
+	Patch "NSP20719", 0, 0
+	Patch "NSP21752", 24, 48
+	Patch "NSP21752", 32, 64
+	Patch "NSP21752", 32, 48
+	Patch "NSP21752", 24, 64
+	Patch "NSP21879", 24, 52
+	Patch "NSP21752", 40, 48
+	Patch "NSP21752", 40, 64
+	Patch "NSP21752", 16, 48
+	Patch "NSP21752", 16, 64
 }
 Texture "NSP20651", 64, 128
 {
-	Patch "NSP21755", 0, 0
-	Patch "NSP21927", 0, 64
-	Patch "NSP21939", 14, 66
+	Patch "NSP21801", -64, 0
+	Patch "NSP21940", 14, 66
 }
 Texture "NSP20653", 64, 128
 {
-	Patch "NSP20355", 0, 0
-	Patch "NSP21784", 16, 72
+	Patch "NSP21757", 0, 0
+	Patch "NSP21929", 0, 64
+	Patch "NSP21941", 14, 66
 }
-Texture "NSP20656", 64, 128
+Texture "NSP20655", 64, 128
 {
-	Patch "NSP20393", 0, 0
-	Patch "NSP21790", 20, 80
-}
-Texture "NSP20657", 128, 128
-{
-	Patch "NSP20392", 0, 0
-	Patch "NSP21787", 48, 72
-}
-Texture "NSP20659", 64, 72
-{
-	Patch "NSP21705", 0, 0
-	Patch "NSP21784", 15, 18
-}
-Texture "NSP20660", 64, 128
-{
-	Patch "NSP21756", 0, 64
-	Patch "NSP21761", 0, 0
-	Patch "NSP21756", 32, 64
+	Patch "NSP20357", 0, 0
 	Patch "NSP21786", 16, 72
 }
-Texture "NSP20661", 64, 128
+Texture "NSP20658", 64, 128
 {
-	Patch "NSP21682", 48, 0
-	Patch "NSP21681", 32, 0
-	Patch "NSP21680", 16, 0
-	Patch "NSP21679", 0, -1
-	Patch "NSP21784", 16, 20
+	Patch "NSP20395", 0, 0
+	Patch "NSP21792", 20, 80
+}
+Texture "NSP20659", 128, 128
+{
+	Patch "NSP20394", 0, 0
+	Patch "NSP21789", 48, 72
+}
+Texture "NSP20661", 64, 72
+{
+	Patch "NSP21707", 0, 0
+	Patch "NSP21786", 15, 18
+}
+Texture "NSP20662", 64, 128
+{
+	Patch "NSP21758", 0, 64
+	Patch "NSP21763", 0, 0
+	Patch "NSP21758", 32, 64
+	Patch "NSP21788", 16, 72
 }
 Texture "NSP20663", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21808", 12, 62
-}
-Texture "NSP20664", 64, 128
-{
-	Patch "NSP21711", 0, 0
-	Patch "NSP21711", 0, 64
-	Patch "NSP21786", 16, 70
+	Patch "NSP21684", 48, 0
+	Patch "NSP21683", 32, 0
+	Patch "NSP21682", 16, 0
+	Patch "NSP21681", 0, -1
+	Patch "NSP21786", 16, 20
 }
 Texture "NSP20665", 64, 128
 {
-	Patch "NSP21711", 0, 64
-	Patch "NSP21711", 0, 0
-	Patch "NSP21790", 19, 79
+	Patch "NSP21807", 0, 0
+	Patch "NSP21810", 12, 62
 }
 Texture "NSP20666", 64, 128
 {
-	Patch "NSP21810", 0, 0
-	Patch "NSP21939", 13, 67
+	Patch "NSP21713", 0, 0
+	Patch "NSP21713", 0, 64
+	Patch "NSP21788", 16, 70
 }
 Texture "NSP20667", 64, 128
 {
-	Patch "NSP21813", 0, 0
-	Patch "NSP21939", 12, 66
+	Patch "NSP21713", 0, 64
+	Patch "NSP21713", 0, 0
+	Patch "NSP21792", 19, 79
 }
 Texture "NSP20668", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21807", 11, 62
+	Patch "NSP21812", 0, 0
+	Patch "NSP21941", 13, 67
 }
 Texture "NSP20669", 64, 128
 {
-	Patch "NSP20482", 0, 0
-	Patch "NSP21939", 13, 55
+	Patch "NSP21815", 0, 0
+	Patch "NSP21941", 12, 66
 }
 Texture "NSP20670", 64, 128
 {
-	Patch "NSP20488", 0, 0
-	Patch "NSP21784", 16, 20
+	Patch "NSP21807", 0, 0
+	Patch "NSP21809", 11, 62
 }
-Texture "NSP20673", 64, 128
+Texture "NSP20671", 64, 128
 {
-	Patch "NSP20513", 0, 0
-	Patch "NSP21939", 14, 64
+	Patch "NSP20484", 0, 0
+	Patch "NSP21941", 13, 55
 }
-Texture "NSP20676", 64, 128
+Texture "NSP20672", 64, 128
 {
-	Patch "NSP21805", 0, 0
-	Patch "NSP21806", 12, 62
+	Patch "NSP20490", 0, 0
+	Patch "NSP21786", 16, 20
 }
-Texture "NSP20677", 64, 128
+Texture "NSP20675", 64, 128
+{
+	Patch "NSP20515", 0, 0
+	Patch "NSP21941", 14, 64
+}
+Texture "NSP20678", 64, 128
+{
+	Patch "NSP21807", 0, 0
+	Patch "NSP21808", 12, 62
+}
+Texture "NSP20679", 64, 128
 {
 	Patch "HELL6_3", 0, 0
-	Patch "NSP21937", 0, 59
+	Patch "NSP21939", 0, 59
 }
-Texture "NSP20682", 128, 128
+Texture "NSP20684", 128, 128
 {
-	Patch "NSP20392", 0, 0
-	Patch "NSP21784", 48, 72
+	Patch "NSP20394", 0, 0
+	Patch "NSP21786", 48, 72
 }
-Texture "NSP20688", 64, 128
+Texture "NSP20690", 64, 128
 {
-	Patch "NSP20717", 0, 0
-	Patch "NSP21750", 24, 48
-	Patch "NSP21750", 32, 64
-	Patch "NSP21750", 32, 48
-	Patch "NSP21750", 24, 64
-	Patch "NSP21750", 40, 48
-	Patch "NSP21750", 40, 64
-	Patch "NSP21750", 16, 48
-	Patch "NSP21750", 16, 64
-	Patch "NSP21878", 24, 52
+	Patch "NSP20719", 0, 0
+	Patch "NSP21752", 24, 48
+	Patch "NSP21752", 32, 64
+	Patch "NSP21752", 32, 48
+	Patch "NSP21752", 24, 64
+	Patch "NSP21752", 40, 48
+	Patch "NSP21752", 40, 64
+	Patch "NSP21752", 16, 48
+	Patch "NSP21752", 16, 64
+	Patch "NSP21880", 24, 52
 }
-Texture "NSP20689", 64, 128
+Texture "NSP20691", 64, 128
 {
-	Patch "NSP21799", -64, 0
-	Patch "NSP21939", 14, 66
+	Patch "NSP21801", -64, 0
+	Patch "NSP21941", 14, 66
 }
-Texture "NSP20703", 128, 128
+Texture "NSP20705", 128, 128
 {
-	Patch "NSP21706", 0, -27
-	Patch "NSP21706", 0, 16
+	Patch "NSP21708", 0, -27
+	Patch "NSP21708", 0, 16
 }
-Texture "NSP20706", 256, 128
+Texture "NSP20708", 256, 128
 {
-	Patch "NSP21798", 128, 0
-	Patch "NSP21799", 0, 0
-}
-Texture "NSP20709", 256, 128
-{
-	Patch "NSP21861", -4, 0
-	Patch "NSP21862", 60, 0
-	Patch "NSP21863", 124, 0
-	Patch "NSP21862", 188, 0
-	Patch "NSP21861", 252, 0
+	Patch "NSP21800", 128, 0
+	Patch "NSP21801", 0, 0
 }
 Texture "NSP20711", 256, 128
 {
-	Patch "NSP21859", -4, 0
-	Patch "NSP21860", 124, 0
-	Patch "NSP21859", 252, 0
+	Patch "NSP21863", -4, 0
+	Patch "NSP21864", 60, 0
+	Patch "NSP21865", 124, 0
+	Patch "NSP21864", 188, 0
+	Patch "NSP21863", 252, 0
 }
-Texture "NSP20716", 64, 128
+Texture "NSP20713", 256, 128
 {
-	Patch "NSP21798", 0, 0
-	Patch "NSP21935", 6, 63
+	Patch "NSP21861", -4, 0
+	Patch "NSP21862", 124, 0
+	Patch "NSP21861", 252, 0
+}
+Texture "NSP20718", 64, 128
+{
+	Patch "NSP21800", 0, 0
+	Patch "NSP21937", 6, 63
 }

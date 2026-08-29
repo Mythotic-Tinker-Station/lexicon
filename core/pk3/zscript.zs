@@ -1,5 +1,5 @@
 version "4.10"
-
+/*
 // zscript version of the VR 3d skybox
 Class Event_3DSky : EventHandler
 {
@@ -23,11 +23,11 @@ Class Skybox_3D_Controller : SkyViewpoint
 {
     // tag 300 = skybox center
     // tag 301 = play area center
-    // tag 302 = skybox 
-    Vector3 sky_spot;
-    Vector3 play_spot;
+    // tag 302 = skybox
+    Actor sky_spot;
+    Actor play_spot;
     Vector3 player_spot;
-    Vector3 delta;
+    double dist;
 
     Actor sky_box;
 
@@ -36,7 +36,7 @@ Class Skybox_3D_Controller : SkyViewpoint
         RenderStyle "None";
         +NOINTERACTION;
         +INVISIBLE;
-        +CLIENTSIDEONLY;
+       // +CLIENTSIDEONLY;
     }
 
     override void PostBeginPlay()
@@ -48,7 +48,7 @@ Class Skybox_3D_Controller : SkyViewpoint
         {
             if(obj)
             {
-                sky_spot = obj.pos;
+                sky_spot = obj;
                 break;
             }
         }
@@ -58,7 +58,7 @@ Class Skybox_3D_Controller : SkyViewpoint
         {
             if(obj)
             {
-                play_spot = obj.pos;
+                play_spot = obj;
                 break;
             }
         }
@@ -72,9 +72,9 @@ Class Skybox_3D_Controller : SkyViewpoint
                 break;
             }
         }
-        TextureID gzdoom_detector = TexMan.CheckForTexture("skymist1");
-        if(!gzdoom_detector.isValid()) 
-        { 
+        TextureID uzdoom_detector = TexMan.CheckForTexture("skymist1");
+        if(!uzdoom_detector.isValid())
+        {
             Destroy();
         }
     }
@@ -83,8 +83,13 @@ Class Skybox_3D_Controller : SkyViewpoint
     {
         if(!sky_box) { return; }
         if(!players[consoleplayer].mo) { return; }
-        player_spot = players[consoleplayer].mo.pos;
-        delta = player_spot - play_spot;
-        sky_box.SetOrigin(sky_spot - (delta.x, delta.y, -delta.z) / 16, true);
+        let player = players[consoleplayer].mo;
+        dist = player.Distance3D(play_spot) / 16;
+
+        int x = sky_spot.pos.x + (cos(AngleTo(sky_box) * dist));
+        int y = sky_spot.pos.y + (sin(AngleTo(sky_box) * dist));
+        int z = sky_spot.pos.z + dist;
+
+        //sky_box.SetOrigin((x, y, z), true);
     }
-}
+}*/

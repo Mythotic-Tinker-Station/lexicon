@@ -1,4 +1,5 @@
 // 3d skybox stuff
+
 function int skyboxDist2(int x1, int y1, int z1, int x2, int y2, int z2)
 {
 	int len;

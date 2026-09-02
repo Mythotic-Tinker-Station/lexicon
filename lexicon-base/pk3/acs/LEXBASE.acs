@@ -134,6 +134,24 @@ script "LexiconBaseExpansionPackMapScripts" ENTER
 		}
 	}
 
+	// Doom 404
+	if (StrICmp(mapName,"D40406") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(5, SPAC_CROSS);
+			SetLineSpecial(5, 243);
+		}
+	}
+	if (StrICmp(mapName,"D40420") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(1, SPAC_CROSS);
+			SetLineSpecial(1, 243);
+		}
+	}
+
 	// Isolation
 	if (StrICmp(mapName,"ISOL01") == 0)
 	{

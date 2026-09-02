@@ -65,7 +65,7 @@ Script "Lexicon_Core_Open" OPEN
 	//Randomize hub billboards
 	for (int i = 1; i <= 4; i++)
 	{
-		int j = Random(1, 9);
+		int j = Random(1, 16);
 		str hubBillboard;
 		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
 		else { hubBillboard = strparam(s:"LXHBAD", d:j); }

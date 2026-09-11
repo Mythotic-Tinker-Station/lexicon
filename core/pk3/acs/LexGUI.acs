@@ -65,7 +65,7 @@ Script "Lexicon_Core_Open" OPEN
 	//Randomize hub billboards
 	for (int i = 1; i <= 4; i++)
 	{
-		int j = Random(1, 18);
+		int j = Random(1, 20);
 		str hubBillboard;
 		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
 		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
@@ -413,12 +413,13 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("Beta Testers:", 100, 190.0);
-		displayLexiconCredits("Saad356", 101, 210.0);
-		displayLexiconCredits("Shadowlink223", 102, 230.0);
-		displayLexiconCredits("SyKoTiC", 103, 250.0);
-		displayLexiconCredits("tabijaky", 104, 270.0);
-		displayLexiconCredits("Zungling", 105, 290.0);
+		displayLexiconCredits("Beta Testers:", 100, 180.0);
+		displayLexiconCredits("Saad356", 101, 200.0);
+		displayLexiconCredits("scalewinged", 102, 220.0);
+		displayLexiconCredits("Shadowlink223", 103, 240.0);
+		displayLexiconCredits("SyKoTiC", 104, 260.0);
+		displayLexiconCredits("tabijaky", 105, 280.0);
+		displayLexiconCredits("Zungling", 106, 300.0);
 		creditTimer--;
 		Delay(1);
 	}

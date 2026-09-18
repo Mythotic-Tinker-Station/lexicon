@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 73
+#define COMPATNUMBER 74
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -13,6 +13,7 @@ str compatArray[COMPATNUMBER] = {
 						"1RTIDL1", // Combined Arms
 						"SPHHUD1", // Combined Arms Gaiden
 						"HARMBL", // Complex Doom
+						"DND_CUR1", // Death and Decay
 						"D4DFRONT", // Death Foretold
 						"NIVENPRT", // Deathstrider
 						"HUDSTMEL", // DemonSteele

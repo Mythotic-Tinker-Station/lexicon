@@ -193,6 +193,8 @@ Script "Lexicon_InGame" (int arg1)
 	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
 	int mapsetPistolStart = getDynLangEntry(mapsetAcronym, "MAPFLAG", "PISTOLSTART");
 
+	if(GetCVar("lexicon_pistol_start") || GetCVar("sv_pistolstart")) { mapsetPistolStart = "Y"; }
+
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 	
 	if ((!CheckInventory("LexiconInventoryGiven")) || (mapsetPistolStart == "Y" && arg1 == 0))

@@ -72,7 +72,7 @@ Script "Lexicon_Core_Open" OPEN
 		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
 	}
 
-	int k = Random(1, 56);
+	int k = Random(1, 70);
 	str musicString;
 	if (k <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:k); }
 	else { musicString = strparam(s:"LXHBMS", d:k); }
@@ -572,9 +572,19 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("VR Hub Music:", 100, 220.0);
-		displayLexiconCredits("Seablue", 101, 240.0);
-		displayLexiconCredits("Beldoroon", 102, 260.0);
+		displayLexiconCredits("VR Hub Music:", 100, 120.0);
+		displayLexiconCredits("Seablue", 101, 140.0);
+		displayLexiconCredits("Beldoroon", 102, 160.0);
+		displayLexiconCredits("SCY", 103, 180.0);
+		displayLexiconCredits("Firage", 104, 200.0);
+		displayLexiconCredits("Martin Iveson", 105, 220.0);
+		displayLexiconCredits("Error303", 106, 240.0);
+		displayLexiconCredits("noiseless", 107, 260.0);
+		displayLexiconCredits("Muzikweaver", 108, 280.0);
+		displayLexiconCredits("jazZHJB", 109, 300.0);
+		displayLexiconCredits("Purple Motion", 110, 320.0);
+		displayLexiconCredits("Llageran", 111, 340.0);
+		displayLexiconCredits("rez", 112, 360.0);
 		creditTimer--;
 		Delay(1);
 	}

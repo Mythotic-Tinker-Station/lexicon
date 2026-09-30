@@ -65,14 +65,14 @@ Script "Lexicon_Core_Open" OPEN
 	//Randomize hub billboards
 	for (int i = 1; i <= 4; i++)
 	{
-		int j = Random(1, 16);
+		int j = Random(1, 24);
 		str hubBillboard;
 		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
 		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
 		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
 	}
 
-	int k = Random(1, 56);
+	int k = Random(1, 70);
 	str musicString;
 	if (k <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:k); }
 	else { musicString = strparam(s:"LXHBMS", d:k); }
@@ -192,6 +192,8 @@ Script "Lexicon_InGame" (int arg1)
 
 	int mapsetInfiniteAmmo = getDynLangEntry(mapsetAcronym, "MAPFLAG", "INFINITEAMMO");
 	int mapsetPistolStart = getDynLangEntry(mapsetAcronym, "MAPFLAG", "PISTOLSTART");
+
+	if(GetCVar("lexicon_pistol_start") || GetCVar("sv_pistolstart")) { mapsetPistolStart = "Y"; }
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
 	
@@ -413,12 +415,13 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("Beta Testers:", 100, 190.0);
-		displayLexiconCredits("Saad356", 101, 210.0);
-		displayLexiconCredits("Shadowlink223", 102, 230.0);
-		displayLexiconCredits("SyKoTiC", 103, 250.0);
-		displayLexiconCredits("tabijaky", 104, 270.0);
-		displayLexiconCredits("Zungling", 105, 290.0);
+		displayLexiconCredits("Beta Testers:", 100, 180.0);
+		displayLexiconCredits("Saad356", 101, 200.0);
+		displayLexiconCredits("scalewinged", 102, 220.0);
+		displayLexiconCredits("Shadowlink223", 103, 240.0);
+		displayLexiconCredits("SyKoTiC", 104, 260.0);
+		displayLexiconCredits("tabijaky", 105, 280.0);
+		displayLexiconCredits("Zungling", 106, 300.0);
 		creditTimer--;
 		Delay(1);
 	}
@@ -569,9 +572,19 @@ Script "Lexicon_Credits" (void) CLIENTSIDE
 
 	while(creditTimer > 0 && !inGUI)
 	{
-		displayLexiconCredits("VR Hub Music:", 100, 220.0);
-		displayLexiconCredits("Seablue", 101, 240.0);
-		displayLexiconCredits("Beldoroon", 102, 260.0);
+		displayLexiconCredits("VR Hub Music:", 100, 120.0);
+		displayLexiconCredits("Seablue", 101, 140.0);
+		displayLexiconCredits("Beldoroon", 102, 160.0);
+		displayLexiconCredits("SCY", 103, 180.0);
+		displayLexiconCredits("Firage", 104, 200.0);
+		displayLexiconCredits("Martin Iveson", 105, 220.0);
+		displayLexiconCredits("Error303", 106, 240.0);
+		displayLexiconCredits("noiseless", 107, 260.0);
+		displayLexiconCredits("Muzikweaver", 108, 280.0);
+		displayLexiconCredits("jazZHJB", 109, 300.0);
+		displayLexiconCredits("Purple Motion", 110, 320.0);
+		displayLexiconCredits("Llageran", 111, 340.0);
+		displayLexiconCredits("rez", 112, 360.0);
 		creditTimer--;
 		Delay(1);
 	}

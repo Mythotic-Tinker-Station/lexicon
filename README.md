@@ -69,8 +69,9 @@ Lexicon has a few CVARS that can alter the experience a bit depending on what yo
 | CVAR | Accepted Values | Description |
 | --- | --- | --- |
 | `lexicon_enforcegamemode` | `true/false` | Enforces the gamemode that the game or server has set. Eg: If `survival` is set to `true` then it will lock the gamemode to survival. No one will be able to select a gamemode in the voting menu |
-| `lexicon_vanilla_mode` | `true/false` | Changes if actors (if a mapset included them) will be spawned or if the default Doom 2 actors will be spawned instead. If set to true, it will spawn vanilla Doom 2 actors. This setting is a compatiblity setting for various gameplay mods |
+| `lexicon_vanilla_mode` | `true/false` | Changes if actors (if a mapset included them) will be spawned or if the default Doom 2 actors will be spawned instead. If set to true, it will spawn vanilla Doom 2 actors. This setting is a compatiblity setting for various gameplay mods and allows players to keep their inventory between mapsets |
 | `lexicon_skip_death_exits` | `true/false` | Changes if certain maps can kill the player in order to reset their inventory or if they can keep their progress throughout the mapset. If set to true, death exits will be skipped, effectively turning them into normal exits |
+| `lexicon_pistol_start` | `true/false` | Changes if players will have their inventory reset after every map, mimicking the pistol start behavior. This setting will have no effect if `lexicon_vanilla_mode` or a compatible gameplay mod is loaded |
 | `lexicon_waittimer` | `int` eg: `180` | Controls how long players have to vote a Mapset, in seconds. Shorter numbers means less wait time for players |
 
 ### Online play and Hosting a server
@@ -175,6 +176,7 @@ Feel free to use the tracker on here. You can also join our discord at [The Myth
 - Penguin
 - Professor Renderer
 - Saad356
+- scalewinged
 - Shadowlink223
 - SyKoTiC
 - tabijaky

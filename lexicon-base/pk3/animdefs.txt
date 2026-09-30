@@ -1197,15 +1197,16 @@ switch MSWR0395 on pic MSWR0435 tics 0
 switch MSWR0425 on pic MSWR0465 tics 0
 
 // Memento Mori I
-texture MM100293 range MM100295 tics 8 allowdecals
-texture MM100493 range MM100496 tics 8
-switch MM100348 on pic MM100388 tics 0
-switch MM100349 on pic MM100389 tics 0
-switch MM100353 on pic MM100393 tics 0
-switch MM100375 on pic MM100415 tics 0
-switch MM100376 on pic MM100416 tics 0
-switch MM100377 on pic MM100417 tics 0
-switch MM100379 on pic MM100419 tics 0
+texture MM100063 range MM100065 tics 8 allowdecals
+texture MM100084 range MM100087 tics 8
+switch MM100066 on pic MM100074 tics 0
+switch MM100067 on pic MM100075 tics 0
+switch MM100068 on pic MM100076 tics 0
+switch MM100069 on pic MM100077 tics 0
+switch MM100070 on pic MM100078 tics 0
+switch MM100071 on pic MM100079 tics 0
+switch MM100072 on pic MM100080 tics 0
+switch MM100073 on pic MM100081 tics 0
 
 // Memento Mori II
 texture MM200149 range MM200152 tics 8 allowdecals

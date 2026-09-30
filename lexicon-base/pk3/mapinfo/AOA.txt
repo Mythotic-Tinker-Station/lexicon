@@ -131,6 +131,8 @@ map AOAH14 "Burning Depths"
 	secretnext = "AOAH15"
 	sky1 = "AOAH0101"
 	music = "$MUSIC_MESSAG"
+	cyberdemonspecial
+	specialaction_opendoor
 }
 
 map AOAH15 "Demonic Incursion"
@@ -186,4 +188,5 @@ map AOAH20 "Fallen Earth"
 	secretnext = "VR"
 	sky1 = "AOAH0102"
 	music = "D_AOAH20"
+	allowmonstertelefrags
 }

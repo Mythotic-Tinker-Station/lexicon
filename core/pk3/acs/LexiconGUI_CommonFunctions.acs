@@ -89,6 +89,8 @@ function str returnLanguageText (str text)
 //Check if Doom 1 map sets can be loaded
 function bool Doom1Enabled(void)
 {
+	if (CompendiumEnabled()) { return CheckFont("CRWDL6C"); }
+
 	//Alright, funny guy, I'll check for both since I'm getting inconsistent results between ports
 	return CheckFont("WIMAP0") && CheckFont("STARTAN1");
 }
@@ -108,6 +110,8 @@ function bool TNTEnabled(void)
 //Check if Plutonia map sets can be loaded
 function bool PlutoniaEnabled(void)
 {
+	if (CompendiumEnabled()) { return CheckFont("CRWDL6C"); }
+
 	return CheckFont("MOSROK2");
 }
 
@@ -154,6 +158,12 @@ function bool SkulltagEnabled(void)
 function bool isUsingWadSmoosh(void)
 {
 	return Doom1Enabled() && TNTEnabled() && PlutoniaEnabled();
+}
+
+//Check if Compendium is loaded
+function bool CompendiumEnabled(void)
+{
+	return CheckFont("STRNPIC") && CheckFont("CSTX3310");
 }
 
 function bool isDoom1wad(str text)

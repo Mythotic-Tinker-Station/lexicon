@@ -10,6 +10,7 @@ SLAUGHTER_PK3="lexicon-slaughter"
 ULTDOOM_PK3="lexicon-ultdoom"
 DM_PK3="lexicon-dm"
 CTF_PK3="lexicon-ctf"
+COMPENDIUM_PK3="lexicon-compendium-support"
 
 # project root (the directory this script lives in)
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -108,12 +109,13 @@ compile_pak() {
 }
 
 # per-pak wrappers
-compile_core()      { compile_pak "Core"          "core/pk3"              "core/pk3/acs/Lexicon.acs"              "core/pk3/acs/Lexicon.o"               "$CORE_PK3";     }
-compile_basepak()   { compile_pak "Base"           "lexicon-base/pk3"      "lexicon-base/pk3/acs/LEXBASE.acs"      "lexicon-base/pk3/acs/LEXBASE.o"        "$BASE_PK3";     }
-compile_slaughter() { compile_pak "Slaughter"      "lexicon-slaughter/pk3" "lexicon-slaughter/pk3/acs/LEXSLGT.acs" "lexicon-slaughter/pk3/acs/LEXSLGT.o"   "$SLAUGHTER_PK3"; }
-compile_ultdoom()   { compile_pak "Ultimate Doom"  "lexicon-ultdoom/pk3"   "lexicon-ultdoom/pk3/acs/LEXULT.acs"    "lexicon-ultdoom/pk3/acs/lexult.o"      "$ULTDOOM_PK3";  }
-compile_dm()        { compile_pak "Deathmatch"     "lexicon-dm/pk3"        "lexicon-dm/pk3/acs/LEXDTHM.acs"        "lexicon-dm/pk3/acs/LEXDTHM.o"          "$DM_PK3";       }
-compile_ctf()       { compile_pak "CTF"            "lexicon-ctf/pk3"       "lexicon-ctf/pk3/acs/LEXCTF.acs"        "lexicon-ctf/pk3/acs/LEXCTF.o"          "$CTF_PK3";      }
+compile_core()       { compile_pak "Core"           "core/pk3"               "core/pk3/acs/Lexicon.acs"              "core/pk3/acs/Lexicon.o"                "$CORE_PK3";       }
+compile_basepak()    { compile_pak "Base"           "lexicon-base/pk3"       "lexicon-base/pk3/acs/LEXBASE.acs"      "lexicon-base/pk3/acs/LEXBASE.o"        "$BASE_PK3";       }
+compile_slaughter()  { compile_pak "Slaughter"      "lexicon-slaughter/pk3"  "lexicon-slaughter/pk3/acs/LEXSLGT.acs" "lexicon-slaughter/pk3/acs/LEXSLGT.o"   "$SLAUGHTER_PK3";  }
+compile_ultdoom()    { compile_pak "Ultimate Doom"  "lexicon-ultdoom/pk3"    "lexicon-ultdoom/pk3/acs/LEXULT.acs"    "lexicon-ultdoom/pk3/acs/lexult.o"      "$ULTDOOM_PK3";    }
+compile_dm()         { compile_pak "Deathmatch"     "lexicon-dm/pk3"         "lexicon-dm/pk3/acs/LEXDTHM.acs"        "lexicon-dm/pk3/acs/LEXDTHM.o"          "$DM_PK3";         }
+compile_ctf()        { compile_pak "CTF"            "lexicon-ctf/pk3"        "lexicon-ctf/pk3/acs/LEXCTF.acs"        "lexicon-ctf/pk3/acs/LEXCTF.o"          "$CTF_PK3";        }
+compile_compendium() { compile_pak "Compendium"     "lexicon-compendium/pk3" "lexicon-ctf/pk3/acs/LEXCOMP.acs"       "lexicon-ctf/pk3/acs/LEXCOMP.o"         "$COMPENDIUM_PK3"; }
 
 compile_all() {
     compile_core
@@ -122,6 +124,7 @@ compile_all() {
     compile_ultdoom
     compile_dm
     compile_ctf
+	compile_compendium
 }
 
 usage() {
@@ -135,7 +138,8 @@ Options:
   --4, --ultimate      compile ultimate doom pak
   --5, --dm            compile deathmatch pak
   --6, --ctf           compile ctf pak
-  --7, --all           compile all packs in order
+  --7, --compendium    compile compendium support pak
+  --8, --all           compile all packs in order
   --h, --help          show this help
 
 Flags can be combined in any order; duplicates are ignored.
@@ -150,14 +154,15 @@ if [ $# -gt 0 ]; then
     declare -a tasks=()
     for arg in "$@"; do
         case "$arg" in
-            --h|--help)      usage; exit 0 ;;
-            --1|--core)      tasks+=(core) ;;
-            --2|--base)      tasks+=(base) ;;
-            --3|--slaughter) tasks+=(slaughter) ;;
-            --4|--ultimate)  tasks+=(ultdoom) ;;
-            --5|--dm)        tasks+=(dm) ;;
-            --6|--ctf)       tasks+=(ctf) ;;
-            --7|--all)       tasks=(core base slaughter ultdoom dm ctf); break ;;
+            --h|--help)       usage; exit 0 ;;
+            --1|--core)       tasks+=(core) ;;
+            --2|--base)       tasks+=(base) ;;
+            --3|--slaughter)  tasks+=(slaughter) ;;
+            --4|--ultimate)   tasks+=(ultdoom) ;;
+            --5|--dm)         tasks+=(dm) ;;
+            --6|--ctf)        tasks+=(ctf) ;;
+            --7|--compendium) tasks+=(compendium) ;;
+            --8|--all)        tasks=(core base slaughter ultdoom dm ctf compendium); break ;;
             *) echo "${RED}Unknown option: $arg${RESET}"; usage; exit 1 ;;
         esac
     done
@@ -175,12 +180,13 @@ if [ $# -gt 0 ]; then
 
     for t in "${tasks[@]}"; do
         case "$t" in
-            core)      compile_core ;;
-            base)      compile_basepak ;;
-            slaughter) compile_slaughter ;;
-            ultdoom)   compile_ultdoom ;;
-            dm)        compile_dm ;;
-            ctf)       compile_ctf ;;
+            core)       compile_core ;;
+            base)       compile_basepak ;;
+            slaughter)  compile_slaughter ;;
+            ultdoom)    compile_ultdoom ;;
+            dm)         compile_dm ;;
+            ctf)        compile_ctf ;;
+            compendium) compile_ctf ;;
         esac
     done
 
@@ -222,10 +228,11 @@ EOF
     echo -e "${CYAN}4)${RESET} Ultimate Doom"
     echo -e "${CYAN}5)${RESET} Deathmatch"
     echo -e "${CYAN}6)${RESET} CTF"
-    echo -e "${CYAN}7)${RESET} Everything (grab a beer, this takes a while)"
-    echo -e "${CYAN}8)${RESET} Exit"
+    echo -e "${CYAN}7)${RESET} Compendium"
+    echo -e "${CYAN}8)${RESET} Everything (grab a beer, this takes a while)"
+    echo -e "${CYAN}9)${RESET} Exit"
     echo ""
-    read -rp "Enter your choice (1-8): " choice
+    read -rp "Enter your choice (1-9): " choice
 
     last_summary=""
     case $choice in
@@ -235,8 +242,9 @@ EOF
         4) compile_ultdoom ;;
         5) compile_dm ;;
         6) compile_ctf ;;
-        7) echo "${CYAN}Compiling everything... sit back and relax.${RESET}"; compile_all ;;
-        8) echo "Goodbye!"; exit 0 ;;
-        *) echo "${RED}Invalid choice. Enter 1-8.${RESET}" ;;
+        7) compile_compendium ;;
+        8) echo "${CYAN}Compiling everything... sit back and relax.${RESET}"; compile_all ;;
+        9) echo "Goodbye!"; exit 0 ;;
+        *) echo "${RED}Invalid choice. Enter 1-9.${RESET}" ;;
     esac
 done

@@ -1,0 +1,12 @@
+/*
+	Lexicon Compendium Support Expansion Pack
+	Map Scripts
+*/
+
+#import "zcommon.bcs"
+#library "LEXCOMP"
+
+Script "Lexicon_CompendiumSupportPack_AddAcronym" OPEN
+{
+	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","COMP",2);
+}

@@ -75,6 +75,7 @@ function void addLexiconMapSets (void)
 				|| (isSigilwad(iwad) && SigilEnabled())
 				|| (isSigil2wad(iwad) && Sigil2Enabled())
 				|| (isLORwad(iwad) && LegacyofRustEnabled())
+				|| (isDoom2wad(iwad) && CompendiumEnabled()) 
 				)
 				{
 					MapSetPool[processedMapSets] = strParam(l:mapset);

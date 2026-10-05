@@ -6,9 +6,10 @@ echo 3. lexicon-slaughter
 echo 4. lexicon-ultdoom
 echo 5. lexicon-dm
 echo 6. lexicon-ctf
-echo 7. all
+echo 7. lexicon-compendium
+echo 8. all
 
-set /p firstChoice=Enter your choice (1-7): 
+set /p firstChoice=Enter your choice (1-8): 
 
 echo 1. Compile ACS
 echo 2. Pack
@@ -69,6 +70,14 @@ if %secondChoice%==1 (
 	)
 
 	if %firstChoice%==7 (
+		echo Step 1: ACS
+		compiler\bcc.exe -acc-stats -acc-err-file -x bcs lexicon-compendium\pk3\acs\LEXCOMP.acs lexicon-compendium\pk3\acs\LEXCOMP.o
+		if not exist lexicon-compendium\pk3\acs\acs.err goto 20
+		del lexicon-compendium\pk3\acs\acs.err
+		pause
+	)
+
+	if %firstChoice%==8 (
 		echo Step 1: ACS
 		compiler\bcc.exe -acc-stats -acc-err-file -x bcs core\pk3\acs\Lexicon.acs core\pk3\acs\Lexicon.o
 		if not exist core\pk3\acs\acs.err goto 20
@@ -174,6 +183,18 @@ if %secondChoice%==2 (
 	)
 
 	if %firstChoice%==7 (
+		echo Step 2: PACK
+		cd lexicon-compendium\pk3
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Compendium-Support-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+		
+		echo Step 3: REPLACE
+		cd ..\..
+		del Lexicon-Compendium-Support.pk3
+		ren Lexicon-Compendium-Support-New.pk3 Lexicon-Compendium-Support.pk3
+		pause
+	)
+
+	if %firstChoice%==8 (
 		echo Step 2: PACK
 		cd core\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Core-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
@@ -323,6 +344,23 @@ if %secondChoice%==3 (
 	)
 
 	if %firstChoice%==7 (
+		echo Step 1: ACS
+		compiler\bcc.exe -acc-stats -acc-err-file -x bcs lexicon-compendium\pk3\acs\LEXCOMP.acs lexicon-compendium\pk3\acs\LEXCOMP.o
+		if not exist lexicon-compendium\pk3\acs\acs.err goto 20
+		del lexicon-compendium\pk3\acs\acs.err
+
+		echo Step 2: PACK
+		cd lexicon-compendium\pk3
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Compendium-Support-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+
+		echo Step 3: REPLACE
+		cd ..\..
+		del Lexicon-Compendium-Support.pk3
+		ren Lexicon-Compendium-Support-New.pk3 Lexicon-Compendium-Support.pk3
+		pause
+	)
+
+	if %firstChoice%==8 (
 		echo This will take a minute!
 		echo Step 1: ACS
 		compiler\bcc.exe -acc-stats -acc-err-file -x bcs core\pk3\acs\Lexicon.acs core\pk3\acs\Lexicon.o
@@ -352,6 +390,10 @@ if %secondChoice%==3 (
 		if not exist lexicon-ctf\pk3\acs\acs.err goto 20
 		del lexicon-ctf\pk3\acs\acs.err
 
+		compiler\bcc.exe -acc-stats -acc-err-file -x bcs lexicon-compendium\pk3\acs\LEXCOMP.acs lexicon-compendium\pk3\acs\LEXCOMP.o
+		if not exist lexicon-compendium\pk3\acs\acs.err goto 20
+		del lexicon-compendium\pk3\acs\acs.err
+
 		echo Step 2: PACK
 		cd core\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
@@ -370,6 +412,9 @@ if %secondChoice%==3 (
 
 		cd ..\..\lexicon-ctf\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
+
+		cd lexicon-compendium\pk3
+		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Compendium-Support-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE
 		cd ..\..
@@ -390,6 +435,9 @@ if %secondChoice%==3 (
 
 		del Lexicon-CTF.pk3
 		ren Lexicon-CTF-New.pk3 Lexicon-CTF.pk3
+
+		del Lexicon-Compendium-Support.pk3
+		ren Lexicon-Compendium-Support-New.pk3 Lexicon-Compendium-Support.pk3
 		pause
 	)
 )

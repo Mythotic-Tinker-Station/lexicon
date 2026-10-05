@@ -413,7 +413,7 @@ if %secondChoice%==3 (
 		cd ..\..\lexicon-ctf\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-CTF-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
-		cd lexicon-compendium\pk3
+		cd ..\..\lexicon-compendium\pk3
 		..\..\compiler\7za a -r -ssw -mx9 -tzip  ..\..\Lexicon-Compendium-Support-New.pk3 *.kvx *.cmp *.x* *.txt *.o *.acs *.png *.jpg *.wad *.md2 *.md3 *.tga *.mp3 *.pal *.bmp *.map *.lmp *.raw *.mus *.mid *.ogg *.vgz *.wav *.mod *.it *.xm *.s3m *.psm *.pk3 *.gl
 
 		echo Step 3: REPLACE

@@ -55,6 +55,12 @@ Script "Lexicon_Core_Open" OPEN
 	//This is needed to let the actors do their processing
 	Delay(1);
 
+	// Used for Doom RPG compatibility
+	if(!stricmp(strparam(n:PRINTNAME_LEVEL), "OUTPOST"))
+	{
+		ACS_NamedExecuteAlways("AddUnknownMap", 0, "VR", "Inside the Lexicon", 0);
+	}
+
 	if(!isVR())
 		terminate;	
 
@@ -65,7 +71,7 @@ Script "Lexicon_Core_Open" OPEN
 	//Randomize hub billboards
 	for (int i = 1; i <= 4; i++)
 	{
-		int j = Random(1, 25);
+		int j = Random(1, 26);
 		str hubBillboard;
 		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
 		else { hubBillboard = strparam(s:"LXHBAD", d:j); }

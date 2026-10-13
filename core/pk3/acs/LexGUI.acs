@@ -55,12 +55,6 @@ Script "Lexicon_Core_Open" OPEN
 	//This is needed to let the actors do their processing
 	Delay(1);
 
-	// Used for Doom RPG compatibility
-	if(!stricmp(strparam(n:PRINTNAME_LEVEL), "OUTPOST"))
-	{
-		ACS_NamedExecuteAlways("AddUnknownMap", 0, "VR", "Inside the Lexicon", 0);
-	}
-
 	if(!isVR())
 		terminate;	
 

@@ -1,0 +1,489 @@
+clearepisodes
+
+episode VR
+{
+	name = "The Sentinel's Lexicon"
+	key = "1"
+}
+
+// All Hell is Breaking Loose!!!
+map ALH05 "Fiendish City"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_ALH5"
+	sky1 = "ALHSKY1"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_ALHI"
+	nocrouch
+	nojump
+	}
+
+// BioTech
+map BTK08 "The Unknown"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_DDTBLU"
+	sky1 = "BTKSKY1"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// BloodRust
+map BLR11 "Map11"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_BR11"
+	sky1 = "BRUSTSKY"
+	enterpic = "BRUSTINT"
+	exitpic = "BRUSTINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Caverns of Darkness
+map COD10 "Caverns of Darkness"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_CD10"
+	sky1 = "CODSKY2X"
+	enterpic = "CODINT"
+	exitpic = "CODINT"
+	intermusic = "MUS_CDIN"
+	Translator = "codxlat.txt"
+	additive_scrollers
+	evenlighting
+	nocrouch
+	nojump
+	}
+
+// City of Doom
+map CIT11 "Mission Control"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_CITB"
+	sky1 = "CITYODSK"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_CITI"
+	nocrouch
+	nojump
+	}
+
+// Cyberdreams
+map CDR30 "Resurrection"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_OPENIN"
+	sky1 = "CYBDRMSK"
+	enterpic = "CDRMINT"
+	exitpic = "CDRMINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Daedalus: Alien Defense
+map dae32 "Finale"
+{
+	music = "MM_03"
+	next = "VR"
+	sucktime = 1337
+	sky1 = "0XSKY102", 0.01
+	sky2 = "0XSKY102", 0.01
+	lightning
+	forcenoskystretch
+	cluster = 165
+	levelnum = 32
+	enterpic = "DAEDINT"
+	exitpic = "DAEDINT"
+	intermusic = "MM_01"
+	nocrouch
+}
+
+// Dark Covenant
+map DCV12 "Last Ship Out"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_DC12"
+	sky1 = "DCVSKY2"
+	enterpic = "DCVNTINT"
+	exitpic = "DCVNTINT"
+	intermusic = "MUS_DCIN"
+	nocrouch
+	nojump
+	}
+
+// Dissolution
+map DIS07 "And there was none"
+	{
+	next = "VR"
+	sucktime = 1337
+	sky1 = "SKY1"
+	enterpic = "DISTINT"
+	exitpic = "DISTINT"
+	intermusic = "MUS_DIST"
+	evenlighting
+	map07special
+	nocrouch
+	}
+
+// Doom Resurrection
+map RES05 "Headquarters"
+	{
+	next = "VR"
+	sucktime = 1337
+	sky1 = "DRESSKY"
+	enterpic = "DRESINT"
+	exitpic = "DRESINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	}
+
+// Dystopia 3: Re-Birth of Anarchy
+map DYSXTRA "Add-on Level"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_DYS1"
+	sky1 = "DYSTSKY"
+	enterpic = "DYSTINT"
+	exitpic = "DYSTINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Enjay ZDoom 2001
+map NJZ30 "The Icon's Brother"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_OPENIN"
+	sky1 = "NJZSKY5", 0.3
+	enterpic = "NJAYINT"
+	exitpic = "NJAYINT"
+	intermusic = "MUS_M1I2"
+	spidermastermindspecial
+	cyberdemonspecial
+	specialaction_lowerfloor
+	nocrouch
+	}
+
+// Enslavement
+map ENS11 "Slave Palace"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_ENSB"
+	sky1 = "ENSLAVES"
+	enterpic = "ENSLINT"
+	exitpic = "ENSLINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Hell Factory
+map HFA04 "The Nukage Area"
+{
+	sucktime = 1337
+	music = "MUS_HFA4"
+	sky1 = "HFACSKY2"
+	cluster = 71
+	levelnum = 74
+	nointermission
+	nocrouch
+}
+
+// Mancubus
+map MAN04 "Map04"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_MAN4"
+	sky1 = "MANCSKY1"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Mars Doom
+map MRS09 "Wrong Game?!"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_MRS9"
+	sky1 = "SCYSKY2"
+	enterpic = "MARSINT"
+	exitpic = "MARSINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Obituary
+map OBT16 "Conclusion"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_DEAD2"
+	sky1 = "SKY2"
+	enterpic = "OBTINT"
+	exitpic = "OBTINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Operation: Biowar
+map BIO18 "Die Heuschrecke"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_BW18"
+	sky1 = "BIOSKY2"
+	enterpic = "BIOWINT"
+	exitpic = "BIOWINT"
+	intermusic = "MUS_BWIN"
+	nocrouch
+	nojump
+	}
+
+// Osiris
+map OSI08 "The Last Pharaoh"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_OSI8"
+	sky1 = "OSIRSKY"
+	enterpic = "OSIRINT"
+	exitpic = "OSIRINT"
+	intermusic = "MUS_OSII"
+	nocrouch
+	nojump
+	}
+
+// Pleiades
+map PLE05 "Galaxia"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_PLE5"
+	sky1 = "PLESKY4"
+	enterpic = "PLEIINT"
+	exitpic = "PLEIINT"
+	intermusic = "MUS_PLEI"
+	nocrouch
+	}
+
+// Post
+map PST11 "Delicious Demon"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_POST"
+	sky1 = "PSTSKY1"
+	enterpic = "POSTINT"
+	exitpic = "POSTINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Project Slipgate
+map SLP11 "The Necro Elders"
+	{
+	next = "VR"
+	sucktime = 1337
+	sky1 = "SLPBLUE"
+	enterpic = "SLIPINT"
+	exitpic = "SLIPINT"
+	intermusic = "MUS_SLIP"
+	forcenoskystretch
+	evenlighting
+	nocrouch
+	}
+
+// Realm of Chaos
+map RLM30 "Apocalypse"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_OPENIN"
+	sky1 = "RLMSKY3"
+	enterpic = "RLMCINT"
+	exitpic = "RLMCINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// SlayeR
+map SLA11 "Bonus Map"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_SL11"
+	sky1 = "TNTSKY3"
+	enterpic = "SLAYINT"
+	exitpic = "SLAYINT"
+	intermusic = "MUS_SLIN"
+	nocrouch
+	nojump
+	}
+
+// STRAIN
+map STR30 "Boss"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_ST30"
+	sky1 = "STRSKY3"
+	enterpic = "STRNINT"
+	exitpic = "STRNINT"
+	intermusic = "MUS_STIN"
+	nocrouch
+	nojump
+	}
+
+// Suspended in Dusk
+map SID04 "Map04"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_SID4"
+	sky1 = "SIDSKY1"
+	enterpic = "SIDINT"
+	exitpic = "SIDINT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// The Brotherhood of Ruin
+map RUI07 "Map07"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_RUI7"
+	sky1 = "RUINSKY1"
+	enterpic = "RUININT"
+	exitpic = "RUININT"
+	intermusic = "MUS_RUII"
+	map07special
+	compat_shorttex = 1
+	nocrouch
+	nojump
+	}
+
+// The Darkening
+map DRK11 "Stone Tyrant"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_DR11"
+	sky1 = "DRKSKY1"
+	enterpic = "DRK1INT"
+	exitpic = "DRK1INT"
+	intermusic = "MUS_DRIN"
+	nocrouch
+	nojump
+	}
+
+// The Darkening Episode 2
+map DK212 "Toxicity"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_DK12"
+	sky1 = "DRK2SKY1"
+	enterpic = "DRK2INT"
+	exitpic = "DRK2INT"
+	intermusic = "MUS_DKIN"
+	nocrouch
+	nojump
+	}
+
+// The Enigma Episode
+map ENI09 "The Citadel"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_IN_CIT"
+	sky1 = "ENISKY2"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// The Final Gathering
+map GAT06 "Shrine of the Warriors"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_RUNNIN"
+	sky1 = "ABYSKY1"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// The Rebirth
+map REB30 "Hells Innards"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_RB30"
+	sky1 = "REBSKY3"
+	enterpic = "RBRINT"
+	exitpic = "RBRINT"
+	intermusic = "MUS_RBIN"
+	nocrouch
+	nojump
+	}
+
+// The Vilecore
+map VCO30 "Battle Hex!"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "D_OPENIN"
+	sky1 = "VILECSK3"
+	enterpic = "DOOM2INT"
+	exitpic = "DOOM2INT"
+	intermusic = "MUS_M1I2"
+	nocrouch
+	nojump
+	}
+
+// Twilight Zone II: Final Dreams
+map TW230 "Jon's Arena"
+	{
+	next = "VR"
+	sucktime = 1337
+	music = "MUS_TW30"
+	sky1 = "TW2SKY3"
+	enterpic = "TW2INT"
+	exitpic = "TW2INT"
+	intermusic = "MUS_TWIN"
+	nocrouch
+	nojump
+	}

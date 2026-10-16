@@ -5,6 +5,16 @@ Script "LexiconFireworks" Open
     {
         // get map sucktime as a marker of map completion
         SetCvar("Lexicon_Mapset_Completed", GetLevelInfo(LEVELINFO_SUCK_TIME));
+
+		// used for compatibility with certain gameplay mods
+		if(!stricmp(strparam(n:PRINTNAME_LEVEL), "OUTPOST")) // Doom RPG
+		{
+			if (CheckFont("RyanCord")) { ACS_NamedExecuteAlways("AddUnknownMap", 0, "VR", "Inside the Lexicon", 0); }
+		}
+		else if(!stricmp(strparam(n:PRINTNAME_LEVEL), "PANHUB")) // Dusted's Pandemonia Insurrection addon
+		{
+			if (CheckFont("PANTX131")) { ChangeLevel("VR", 0, CHANGELEVEL_NOINTERMISSION, -1); }
+		}
     }
     // we are on the VR map
     else
@@ -12,6 +22,9 @@ Script "LexiconFireworks" Open
         // a mapset has been completed
         if(GetCVar("Lexicon_Mapset_Completed") == 1337)
         {
+			// used for dusted's pandemonia insurrection addon
+			if (CheckFont("PANTX131")) { ChangeLevel("PANFINAL", 0, CHANGELEVEL_NOINTERMISSION, -1); }
+
             SpawnSpot("LexiconFirework_Spawner", 300);
         }
     }

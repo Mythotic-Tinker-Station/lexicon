@@ -28,10 +28,10 @@ Script "Lexicon_Official_AddAcronym" OPEN
 Script "Lexicon_Core_Enter" ENTER
 {
 	if(!isVR())
-		terminate;	
-	
+		terminate;
+
 	ACS_NamedExecuteWithResult("Lexicon_SyncClientData",PlayerNumber());
-			
+
 	While(ClassifyActor(0) > ACTOR_WORLD && !disableTerminal)
 	{
 		ACS_NamedExecuteWithResult("Lexicon_VoteTextDisplay",VoteTimeLimit,WAITTIMER);
@@ -56,19 +56,42 @@ Script "Lexicon_Core_Open" OPEN
 	Delay(1);
 
 	if(!isVR())
-		terminate;	
+		terminate;
 
 	//Make floating blocks bob up and down
 	Floor_Waggle(49, 32, 32, 0, 0);
 	Ceiling_Waggle(49, 32, 32, 0, 0);
 
-	//Randomize hub billboards
+	// Randomize hub billboards
+	int billboardCount = 5;
+	int addCount = 27;
+
+	int hubBillboardChoices[billboardCount];
 	for (int i = 1; i <= 4; i++)
 	{
-		int j = Random(1, 27);
+		int j;
+		bool alreadyUsed = true;
+		while(alreadyUsed)
+		{
+			j = Random(1, addCount);
+			alreadyUsed = false;
+
+			for (int n = 1; n < i; n++)
+			{
+				if (hubBillboardChoices[n] == j)
+				{
+					alreadyUsed = true;
+					break;
+				}
+			}
+		}
+
+		hubBillboardChoices[i] = j;
+
 		str hubBillboard;
 		if (j <= 9) { hubBillboard = strparam(s:"LXHBAD", s:"0", d:j); }
 		else { hubBillboard = strparam(s:"LXHBAD", d:j); }
+
 		SetLineTexture(i, SIDE_BACK, TEXTURE_BOTTOM, hubBillboard);
 	}
 
@@ -77,10 +100,10 @@ Script "Lexicon_Core_Open" OPEN
 	if (k <= 9) { musicString = strparam(s:"LXHBMS", s:"0", d:k); }
 	else { musicString = strparam(s:"LXHBMS", d:k); }
 	if (!isMusicRandomizerLoaded()) { SetMusic(musicString,0); }
-	
+
 	//Generate all the map data on the server
 	ACS_NamedExecuteWithResult("Lexicon_GenerateMaps_Server");
-	
+
 	//Then run the script to count votes
 	ACS_NamedExecuteWithResult("Lexicon_VoteTally");
 }
@@ -118,22 +141,22 @@ Script "Lexicon_GameTypeChanger" (void)
 	{
 		SetGameplaySetting("SV_NOEXIT",!isCoop);
 		SetGameplaySetting("SV_NOMONSTERS",!isCoop);
-		
+
 		if(!isCoop && GetCvar("TimeLimit") == 0)
 			SetGameplaySetting("TimeLimit",GetCvar("Lexicon_DefaultTimeLimit"));
-		
+
 		if(!isCoop && GetCvar("FragLimit") == 0)
 			SetGameplaySetting("Fraglimit",GetCvar("Lexicon_DefaultFragLimit"));
-		
+
 		if(isCTF && GetCvar("PointLimit") == 0)
 			SetGameplaySetting("PointLimit",GetCvar("Lexicon_DefaultPointLimit"));
-		
+
 		if(isDuel && GetCvar("DuelLimit") == 0)
 			SetGameplaySetting("DuelLimit",GetCvar("Lexicon_DefaultDuelLimit"));
-		
+
 		if(isLMS && GetCvar("WinLimit") == 0)
 			SetGameplaySetting("WinLimit",GetCvar("Lexicon_DefaultWinLimit"));
-		
+
 		if(stricmp(GetCurrentGameMode(),gameModeTypes[currentGameMode][0])!=0)
 			SetCurrentGameMode(gameModeTypes[currentGameMode][0]);
 	}
@@ -146,7 +169,7 @@ script "Lexicon_Doom1EpisodeHealthReset" ENTER
 	str mapsetAcronym = strleft(strparam(n:PRINTNAME_LEVEL), 4);
 	str mapSuffix = strright(strparam(n:PRINTNAME_LEVEL), 2);
 	str iwad = strParam(l:strparam(s:mapsetAcronym,s:"_MAPSET_IWAD"));
-	
+
 	// Set player health at the start of each episode for Doom 1 mapsets
 	if (isDoom1wad(iwad) && (!StrIcmp(mapSuffix, "M1")))
 	{
@@ -196,7 +219,7 @@ Script "Lexicon_InGame" (int arg1)
 	if(GetCVar("lexicon_pistol_start") || GetCVar("sv_pistolstart")) { mapsetPistolStart = "Y"; }
 
 	if (isMusicRandomizerLoaded()) { SetCVar("lexicon_no_music_changes", true); }
-	
+
 	if ((!CheckInventory("LexiconInventoryGiven")) || (mapsetPistolStart == "Y" && arg1 == 0))
 	{
 		if(GetCVar("lexicon_iwad") == 0)
@@ -207,15 +230,15 @@ Script "Lexicon_InGame" (int arg1)
 				SetActorProperty(0, APROP_HEALTH, 100);
 				if (mapsetWeapon1 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon1, 1); }
 				else { GiveInventory("Fist", 1); }
-				
+
 				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon2, 1); }
 				else { GiveInventory("Pistol", 1); }
-				
+
 				GiveInventory("LexiconClipGive", 30);
 				GiveInventory("LexiconInventoryGiven", 1);
 				if (mapsetWeapon2 != "_LANG_UNDEFINED_") { SetWeapon(mapsetWeapon2); }
 				else { SetWeapon("Pistol"); }
-				
+
 				if(GetCVar("lastmanstanding") || GetCVar("teamlms"))
 				{
 					GiveInventory("Clip", 9999);
@@ -227,13 +250,13 @@ Script "Lexicon_InGame" (int arg1)
 					else { GiveInventory("Chainsaw", 1); }
 					if (mapsetWeapon4 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon4, 1); }
 					else { GiveInventory("Shotgun", 1); }
-					
+
 					if (!isDoom1wad(mapsetIwad))
 					{
 						if (mapsetWeapon5 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon5, 1); }
 						else { GiveInventory("SuperShotgun", 1); }
 					}
-					
+
 					if (mapsetWeapon6 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon6, 1); }
 					else { GiveInventory("Chaingun", 1); }
 					if (mapsetWeapon7 != "_LANG_UNDEFINED_") { GiveInventory(mapsetWeapon7, 1); }

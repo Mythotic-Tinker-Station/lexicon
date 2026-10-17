@@ -10,3 +10,18 @@ Script "Lexicon_UltimatePack_AddAcronym" OPEN
 {
 	ACS_NamedExecuteWithResult("Lexicon_AddMapSet","ULTD",1);
 }
+
+script "LexiconBaseExpansionPackMapScripts" ENTER
+{
+	str mapName = StrParam(n:PRINTNAME_LEVEL);
+
+	// ConC.E.R.Ned
+	if (StrICmp(mapName,"CCRNE2M7") == 0)
+	{
+		if (ACS_NamedExecuteWithResult("LexiconAreDeathExitsDisabled") == 1)
+		{
+			SetLineActivation(59, SPAC_CROSS);
+			SetLineSpecial(59, 243);
+		}
+	}
+}

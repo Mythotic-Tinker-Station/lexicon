@@ -63,17 +63,15 @@ Script "Lexicon_Core_Open" OPEN
 	Ceiling_Waggle(49, 32, 32, 0, 0);
 
 	// Randomize hub billboards
-	int billboardCount = 5;
-	int addCount = 27;
-
-	int hubBillboardChoices[billboardCount];
+	int adCount = 27;
+	int hubBillboardChoices[5];
 	for (int i = 1; i <= 4; i++)
 	{
 		int j;
 		bool alreadyUsed = true;
 		while(alreadyUsed)
 		{
-			j = Random(1, addCount);
+			j = Random(1, adCount);
 			alreadyUsed = false;
 
 			for (int n = 1; n < i; n++)

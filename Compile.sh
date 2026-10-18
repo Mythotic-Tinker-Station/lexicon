@@ -10,7 +10,7 @@ SLAUGHTER_PK3="lexicon-slaughter"
 ULTDOOM_PK3="lexicon-ultdoom"
 DM_PK3="lexicon-dm"
 CTF_PK3="lexicon-ctf"
-COMPENDIUM_PK3="lexicon-compendium-support"
+COMPENDIUM_PK3="lexicon-compendium"
 
 # project root (the directory this script lives in)
 ROOT_DIR="$(cd "$(dirname "$0")" && pwd)"
@@ -115,7 +115,7 @@ compile_slaughter()  { compile_pak "Slaughter"      "lexicon-slaughter/pk3"  "le
 compile_ultdoom()    { compile_pak "Ultimate Doom"  "lexicon-ultdoom/pk3"    "lexicon-ultdoom/pk3/acs/LEXULT.acs"    "lexicon-ultdoom/pk3/acs/lexult.o"      "$ULTDOOM_PK3";    }
 compile_dm()         { compile_pak "Deathmatch"     "lexicon-dm/pk3"         "lexicon-dm/pk3/acs/LEXDTHM.acs"        "lexicon-dm/pk3/acs/LEXDTHM.o"          "$DM_PK3";         }
 compile_ctf()        { compile_pak "CTF"            "lexicon-ctf/pk3"        "lexicon-ctf/pk3/acs/LEXCTF.acs"        "lexicon-ctf/pk3/acs/LEXCTF.o"          "$CTF_PK3";        }
-compile_compendium() { compile_pak "Compendium"     "lexicon-compendium/pk3" "lexicon-ctf/pk3/acs/LEXCOMP.acs"       "lexicon-ctf/pk3/acs/LEXCOMP.o"         "$COMPENDIUM_PK3"; }
+compile_compendium() { compile_pak "Compendium"     "lexicon-compendium/pk3" "lexicon-compendium/pk3/acs/LEXCOMP.acs"       "lexicon-compendium/pk3/acs/LEXCOMP.o"         "$COMPENDIUM_PK3"; }
 
 compile_all() {
     compile_core
@@ -186,7 +186,7 @@ if [ $# -gt 0 ]; then
             ultdoom)    compile_ultdoom ;;
             dm)         compile_dm ;;
             ctf)        compile_ctf ;;
-            compendium) compile_ctf ;;
+            compendium) compile_compendium ;;
         esac
     done
 

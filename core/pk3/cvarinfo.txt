@@ -18,6 +18,9 @@ server int Lexicon_DefaultPointLimit = 5;
 server int Lexicon_DefaultDuelLimit = 3;
 server int Lexicon_DefaultWinLimit = 3;
 
+// Pandemonia Insurrection support cvar
+server noarchive int Lexicon_PandFinalMap = 0;
+
 /*
 // Unused for now
 user string lexicon_cursor_color 					= "Azure";

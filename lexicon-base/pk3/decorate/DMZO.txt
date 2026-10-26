@@ -346,10 +346,11 @@ Actor Lexicon_DMZO_BFG9000 : Weapon
 	Fire:
 		BFGG B 22 A_PlaySound("DMZO/DSBFG",CHAN_WEAPON)
 		BFGG B 8 Bright A_GunFlash
-		BFGG B 10 Bright A_FireCustomMissile("Lexicon_DMZO_BFGBall",0,false)
+		BFGG B 10 Bright A_FireCustomMissile("Lexicon_DMZO_BFGBall",0,true)
 		BFGG B 20 A_ReFire
 		Goto Ready
 	FireNoAutoAim:
+        BFGG B 0
 		BFGG B 10 A_SpawnItemEx("Lexicon_DMZO_BFGBall",0,0,32,25)
 		BFGG B 20 A_ReFire
 		Goto Ready

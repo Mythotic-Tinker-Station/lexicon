@@ -1,0 +1,141 @@
+// Insertion Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ISRT01 "Sabbatical"
+{
+	titlepatch = "ISRTV00"
+	next = "ISRT02"
+	secretnext = "ISRT02"
+	sky1 = "ISRT0001"
+	music = "D_ISRT01"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT02 "Abandoned Station"
+{
+	titlepatch = "ISRTV01"
+	next = "ISRT03"
+	secretnext = "ISRT03"
+	sky1 = "ISRT0001"
+	music = "D_ISRT02"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT03 "Cakewalk"
+{
+	titlepatch = "ISRTV02"
+	next = "ISRT04"
+	secretnext = "ISRT04"
+	sky1 = "ISRT0001"
+	music = "D_ISRT03"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT04 "Inner Sanctum"
+{
+	titlepatch = "ISRTV03"
+	next = "ISRT05"
+	secretnext = "ISRT05"
+	sky1 = "ISRT0001"
+	music = "D_ISRT04"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT05 "Barracks of Hell"
+{
+	titlepatch = "ISRTV04"
+	next = "ISRT06"
+	secretnext = "ISRT06"
+	sky1 = "ISRT0001"
+	music = "D_ISRT05"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT06 "The Enemy Within"
+{
+	titlepatch = "ISRTV05"
+	next = "ISRT07"
+	secretnext = "ISRT07"
+	sky1 = "ISRT0001"
+	music = "D_ISRT06"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT07 "Military Inferno"
+{
+	titlepatch = "ISRTV06"
+	next = "ISRT08"
+	secretnext = "ISRT08"
+	sky1 = "ISRT0001"
+	music = "D_ISRT07"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+	Map07Special
+}
+
+map ISRT08 "Toxic Waste Site"
+{
+	titlepatch = "ISRTV07"
+	next = "ISRT09"
+	secretnext = "ISRT09"
+	sky1 = "ISRT0001"
+	music = "D_ISRT08"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT09 "Running Scared"
+{
+	titlepatch = "ISRTV08"
+	next = "ISRT10"
+	secretnext = "ISRT10"
+	sky1 = "ISRT0001"
+	music = "D_ISRT09"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT10 "Hanford Disaster"
+{
+	titlepatch = "ISRTV09"
+	next = "ISRT11"
+	secretnext = "ISRT11"
+	sky1 = "ISRT0001"
+	music = "D_ISRT10"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}
+
+map ISRT11 "Focal Point"
+{
+	titlepatch = "ISRTV10"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "ISRT0001"
+	music = "D_ISRT11"
+	intermusic = "D_ISRTIN"
+	ExitPic = "ISRTINT"
+	EnterPic = "ISRTINT"
+}

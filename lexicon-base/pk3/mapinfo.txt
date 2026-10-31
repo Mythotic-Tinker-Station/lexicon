@@ -5,8 +5,11 @@ include "mapinfo/1994TU.txt" // 1994TU.wad
 include "mapinfo/200MINVR.txt" // 200minvr.wad
 include "mapinfo/300MINVR.txt" // 300minvr.wad
 include "mapinfo/400MINVR.txt" // 400minvr.wad
+include "mapinfo/512LINEVR.txt" // 512linesvr_u.wad
+include "mapinfo/2048UNITSVR.txt" // 2048vr_v1.6.wad
 include "mapinfo/25YOE.txt" // ph_25yoe.wad
 include "mapinfo/AA.txt" // aaliens_v1_2.wad
+include "mapinfo/ABYSS.txt" // ABYSS.WAD
 include "mapinfo/AKELDAMA.txt" // akeldama.wad
 include "mapinfo/AOA.txt" // AoA.wad
 include "mapinfo/AR.txt" // ar.wad
@@ -17,7 +20,9 @@ include "mapinfo/CCHEST1.txt" // cchest_map15coopfix.wad
 include "mapinfo/CCHEST2.txt" // cchest2_map05,22,32coopfix.wad
 include "mapinfo/CCHEST3.txt" // cchest3_map07,15,17,24,31coopfix.wad
 include "mapinfo/CCHEST4.txt" // cchest4_map25,26coopfix.wad
+include "mapinfo/CTRUNK.txt" // ctrunk.wad
 include "mapinfo/CHAINWORM.txt" // chnworm.wad
+include "mapinfo/CLEIM2.txt" // CLEIM20.WAD
 include "mapinfo/DRKENC.txt" // drkenctr.wad
 include "mapinfo/D2DARK.txt" // d2dw-v1.wad
 include "mapinfo/D2REDUX.txt" // D2REDUX.wad
@@ -25,17 +30,19 @@ include "mapinfo/D2RELOAD.txt" // D2RELOAD.wad
 include "mapinfo/D2TWID.txt" // d2twid_map08coopfix.wad
 include "mapinfo/DOOM404.txt" // doom404.wad
 include "mapinfo/DOOMCORE.txt"// dctrilogy.wad
+include "mapinfo/DOOMZERO.txt" // DoomZero.wad
 include "mapinfo/DBP01.txt" // DBP01.wad
 include "mapinfo/DBP02.txt" // DBP02.wad
 include "mapinfo/DBP03.txt" // DBP03.wad
 include "mapinfo/DBP04.txt" // DBP04.wad
 include "mapinfo/DBP05.txt" // DBP_05.wad
 include "mapinfo/DESTINY.txt" // destinydoom1.wad
+include "mapinfo/DUSE.txt" // du_se_.wad
 include "mapinfo/EARTH.txt" // EarthZD.WAD
 include "mapinfo/ENDGAME.txt" // Endgame.WAD
 include "mapinfo/EPIC.txt" // epic_map02,03,05coopfix.wad
 include "mapinfo/EPIC2.txt" // epic2_map06,11,12,13,14,16,17,20,27,28,29,31coopfix.wad
-include "mapinfo/EQUINOX.txt" // equinox.wad
+include "mapinfo/EQUINOX.txt" // equinox_map04,07,13coopfix.wad
 include "mapinfo/ESTRANGD.txt" // estrangd.wad
 include "mapinfo/EVILTECH.txt" // eviltech.WAD
 include "mapinfo/CZECHBOX.txt" // CzechBox.wad
@@ -51,10 +58,14 @@ include "mapinfo/HC092604.txt" // hc092604.wad
 include "mapinfo/HELLBND.txt" // hellbnd_map03fix.wad
 include "mapinfo/HLIL.txt" // helinhel.wad
 include "mapinfo/HELL2PAY.txt" // HELL2PAY.WAD
+include "mapinfo/HERIAN.txt" // Herian.wad
+include "mapinfo/HERIAN2.txt" // HERIAN2.WAD
 include "mapinfo/HR1.txt" // hr.wad
 include "mapinfo/HR2.txt" // hr2final.wad
 include "mapinfo/ICARUS.txt" // ICARUS.wad
+include "mapinfo/INSERT.txt" // insrtion.wad
 include "mapinfo/INTERCEP.txt" // intercep.wad
+include "mapinfo/ISOLATION.txt" // iso-strn1.wad + iso-strn2.wad
 include "mapinfo/JENESIS.txt" // jenesis.wad
 include "mapinfo/JIFFY.txt" // jiffybag.wad
 include "mapinfo/JPCP.txt" // jpcp_map11coopfix.wad
@@ -75,6 +86,7 @@ include "mapinfo/PERDITION.txt" // PG-RAW-X.WAD
 include "mapinfo/PGR.txt" // PG-RESURGE.wad
 include "mapinfo/ROTR.txt" // rottriangle.wad
 include "mapinfo/REQUIEM.txt" // REQUIEM.wad
+include "mapinfo/SCIENTIST.txt" // SCI2.wad
 include "mapinfo/SCYTHE1.txt"// SCYTHE.wad
 include "mapinfo/SCYTHE2.txt" // scythe2.wad
 include "mapinfo/SPEEDOFDOOM.txt"// sodfinal_map11,18,20coopfix.wad
@@ -84,6 +96,8 @@ include "mapinfo/SUNLUST.txt" // sunlust_map27coopfix.wad
 include "mapinfo/SWIDEATH.txt" // swideath.wad
 include "mapinfo/SWITCHEROOM2.txt" // swtchrm2.wad
 include "mapinfo/SWITCHEROOM2X.txt" // SRForgotten2.wad
+include "mapinfo/TALOSIAN.txt" // TALOSL.WAD
+include "mapinfo/TTP.txt" // TTP.WAD
 include "mapinfo/TEAMROCKET1.txt" // trocket.wad
 include "mapinfo/TEAMROCKET2.txt" // trocket2-b1.wad
 include "mapinfo/TVR.txt" // TVR!.WAD

@@ -1,0 +1,73 @@
+Texture "DMZO0023", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DMZO0024", 64, 128
+{
+	Patch "WALL97_2", -4, 0
+	Patch "WALL97_2", 60, 0
+	Patch "SW2_1", 22, 18
+	Patch "SW2_1", 22, 76
+}
+Texture "DMZO0025", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "DMZO0026", 32, 32
+{
+	Patch "SW2_1", 0, 3
+	Patch "SW2_1", 22, 13
+	Patch "SW2_1", 22, -13
+}
+Texture "DMZO0027", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "DMZO0041", 6, 64
+}
+Texture "DMZO0028", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DMZO0029", 64, 128
+{
+	Patch "WALL97_2", 60, 0
+	Patch "WALL97_2", -4, 0
+	Patch "SW2_2", 22, 18
+	Patch "SW2_2", 22, 76
+}
+Texture "DMZO0030", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "DMZO0031", 32, 32
+{
+	Patch "SW2_2", 0, 3
+	Patch "SW2_1", 22, -12
+	Patch "SW2_1", 22, 14
+}
+Texture "DMZO0032", 64, 128
+{
+	Patch "WALL47_2", 0, 0
+	Patch "SW2_4", 6, 64
+}
+Texture "DMZO0033", 128, 128
+{
+	Patch "RW25_1", 64, 82
+	Patch "RW25_3", 0, 82
+	Patch "W17_1", -29, 0
+	Patch "RIPW15", 0, 126
+}
+Texture "DMZO0034", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "DMZO0041", 6, 63
+}
+Texture "DMZO0040", 256, 128
+{
+	Patch "DMZO0042", 102, -8
+	Patch "DMZO0042", 0, 0
+}

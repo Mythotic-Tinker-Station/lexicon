@@ -1,0 +1,229 @@
+Texture "CLM20012", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "CLM20013", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "CLM20016", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW2_7", 16, 66
+	Patch "W107_1", -32, 0
+}
+Texture "CLM20018", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "CLM20019", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "CLM20022", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW2_8", 16, 66
+	Patch "W107_1", -32, 0
+}
+Texture "CLM20023", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+Texture "CLM20024", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WLITA0", 11, 21
+	Patch "WLITC0", 14, 21
+	Patch "WLITA0", 11, 29
+	Patch "WLITC0", 14, 29
+	Patch "WLITA0", 11, 37
+	Patch "WLITC0", 14, 37
+	Patch "WLITA0", 11, 45
+	Patch "WLITC0", 14, 45
+	Patch "WLITA0", 11, 53
+	Patch "WLITC0", 14, 53
+	Patch "WLITA0", 11, 61
+	Patch "WLITC0", 14, 61
+	Patch "WLITA0", 43, 21
+	Patch "WLITC0", 46, 21
+	Patch "WLITA0", 43, 29
+	Patch "WLITC0", 46, 29
+	Patch "WLITA0", 43, 37
+	Patch "WLITC0", 46, 37
+	Patch "WLITA0", 43, 45
+	Patch "WLITC0", 46, 45
+	Patch "WLITA0", 43, 53
+	Patch "WLITC0", 46, 53
+	Patch "WLITA0", 43, 61
+	Patch "WLITC0", 46, 61
+}
+Texture "CLM20025", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+Texture "CLM20027", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+Texture "CLM20028", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+Texture "CLM20042", 64, 128
+{
+	Patch "RW10_2", 0, 0
+	Patch "CLM20106", 18, 67
+}
+Texture "CLM20043", 64, 128
+{
+	Patch "RW10_2", 0, 0
+	Patch "CLM20107", 18, 67
+}
+Texture "CLM20044", 64, 128
+{
+	Patch "RW10_2", 0, 0
+	Patch "CLM20108", 18, 67
+}
+Texture "CLM20051", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "CLM20115", 14, 74
+	Patch "SW2_2", 22, 80
+}
+Texture "CLM20052", 16, 128
+{
+	Patch "CLM20116", 0, 0
+	Patch "CLM20116", 0, 8
+	Patch "CLM20116", 0, 16
+	Patch "CLM20116", 0, 24
+	Patch "CLM20116", 0, 32
+	Patch "CLM20116", 0, 40
+	Patch "CLM20116", 0, 48
+	Patch "CLM20116", 0, 56
+	Patch "CLM20116", 0, 64
+	Patch "CLM20116", 0, 72
+	Patch "CLM20116", 0, 80
+	Patch "CLM20116", 0, 88
+	Patch "CLM20116", 0, 96
+	Patch "CLM20116", 0, 104
+	Patch "CLM20116", 0, 112
+	Patch "CLM20116", 0, 120
+}
+Texture "CLM20056", 256, 128
+{
+	Patch "RW8_1", 0, 0
+	Patch "RW8_1", 64, 0
+	Patch "RW8_1", 128, 0
+	Patch "RW8_1", 192, 0
+	Patch "CLM20120", 0, 0
+}
+Texture "CLM20057", 256, 128
+{
+	Patch "RW8_1", 0, 0
+	Patch "RW8_1", 64, 0
+	Patch "RW8_1", 128, 0
+	Patch "RW8_1", 192, 0
+	Patch "CLM20121", 0, 0
+}
+Texture "CLM20058", 256, 128
+{
+	Patch "RW8_1", 0, 0
+	Patch "RW8_1", 64, 0
+	Patch "RW8_1", 128, 0
+	Patch "RW8_1", 192, 0
+	Patch "CLM20122", 0, 0
+}
+Texture "CLM20059", 256, 128
+{
+	Patch "RW8_1", 0, 0
+	Patch "RW8_1", 64, 0
+	Patch "RW8_1", 128, 0
+	Patch "RW8_1", 192, 0
+	Patch "CLM20123", 0, 0
+}
+Texture "CLM20061", 128, 128
+{
+	Patch "RW46_4", 0, 0
+	Patch "RW46_4", 64, 0
+	Patch "CLM20125", 0, 0
+}
+Texture "CLM20062", 128, 128
+{
+	Patch "RW46_4", 0, 0
+	Patch "RW46_4", 64, 0
+	Patch "CLM20125", 0, -64
+}
+Texture "CLM20063", 128, 128
+{
+	Patch "RW46_4", 0, 0
+	Patch "RW46_4", 64, 0
+	Patch "CLM20125", -128, -65
+}
+Texture "CLM20065", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20066", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20067", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20068", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20069", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20070", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20071", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}
+Texture "CLM20072", 64, 128
+{
+	Patch "RW33_1", 0, 0
+}

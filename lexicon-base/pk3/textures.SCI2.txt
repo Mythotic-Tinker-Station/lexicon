@@ -1,0 +1,315 @@
+Texture "SCI20026", 128, 112
+{
+	Patch "SCI20172", 4, 0
+	Patch "SCI20172", 124, 0
+	Patch "SCI20172", -116, 0
+}
+Texture "SCI20032", 128, 128
+{
+	Patch "SCI20040", 0, 0
+	Patch "PS20A0", 1, 60
+	Patch "SCI20040", 64, 0
+}
+Texture "SCI20038", 256, 128
+{
+	Patch "SCI20040", 0, 0
+	Patch "SCI20040", 64, 0
+	Patch "SCI20040", 128, 0
+	Patch "SCI20040", 192, 0
+	Patch "W106_1", 0, 0
+}
+Texture "SCI20039", 128, 128
+{
+	Patch "SCI20275", 0, 56
+	Patch "SCI20275", 0, 0
+	Patch "SCI20276", 64, 56
+	Patch "SCI20274", 88, 56
+	Patch "SCI20276", 64, 0
+	Patch "SCI20274", 88, 0
+}
+Texture "SCI20051", 64, 128
+{
+	Patch "SCI20175", 0, 0
+	Patch "SCI20177", 32, 0
+	Patch "SCI20175", 0, 64
+	Patch "SCI20177", 32, 64
+}
+Texture "SCI20052", 64, 128
+{
+	Patch "SCI20178", 0, 0
+	Patch "SCI20174", 32, 0
+	Patch "SCI20178", 0, 64
+	Patch "SCI20174", 32, 64
+}
+Texture "SCI20053", 64, 128
+{
+	Patch "SCI20178", 0, 0
+	Patch "SCI20174", 32, 0
+	Patch "SCI20175", 0, 64
+	Patch "SCI20177", 32, 64
+}
+Texture "SCI20054", 64, 128
+{
+	Patch "SCI20192", 0, 0
+	Patch "SCI20192", 32, 0
+	Patch "SCI20175", 0, 64
+	Patch "SCI20177", 32, 64
+}
+Texture "SCI20055", 128, 128
+{
+	Patch "SCI20175", 0, 64
+	Patch "SCI20176", 40, 64
+	Patch "SCI20176", 32, 64
+	Patch "SCI20176", 48, 64
+	Patch "SCI20176", 56, 64
+	Patch "SCI20177", 96, 64
+	Patch "SCI20176", 88, 64
+	Patch "SCI20176", 80, 64
+	Patch "SCI20176", 72, 64
+	Patch "SCI20176", 64, 64
+	Patch "SCI20178", 0, 0
+	Patch "SCI20174", 96, 0
+	Patch "SCI20179", 48, 0
+	Patch "SCI20179", 40, 0
+	Patch "SCI20179", 32, 0
+	Patch "SCI20179", 72, 0
+	Patch "SCI20179", 64, 0
+	Patch "SCI20179", 56, 0
+	Patch "SCI20179", 80, 0
+	Patch "SCI20179", 88, 0
+}
+Texture "SCI20056", 64, 16
+{
+	Patch "SCI20171", 0, 0
+	Patch "EXIT2", 32, 0
+	Patch "EXIT2", 40, 0
+	Patch "EXIT2", 48, 0
+	Patch "EXIT2", 56, 0
+}
+Texture "SCI20057", 64, 128
+{
+	Patch "SCI20183", 0, 64
+	Patch "SCI20183", 0, 0
+	Patch "SCI20171", 17, 22
+}
+Texture "SCI20069", 64, 128
+{
+	Patch "W33_7", 0, 72
+	Patch "W33_7", 0, 0
+	Patch "SCI20269", 0, 64
+}
+Texture "SCI20070", 256, 128
+{
+	Patch "W32_4", 0, 0
+	Patch "W32_1", 64, 0
+	Patch "W32_4", 128, 0
+	Patch "SCI20269", 0, 120
+	Patch "SCI20269", 64, 120
+	Patch "SCI20269", 128, 120
+	Patch "W32_4", 192, 0
+	Patch "SCI20269", 192, 120
+	Patch "W32_4", 64, 56
+	Patch "W32_1", 128, 56
+	Patch "W32_4", 192, 56
+	Patch "W32_4", 0, 56
+}
+Texture "SCI20087", 128, 128
+{
+	Patch "SCI20280", 64, 0
+	Patch "SCI20279", 0, 0
+}
+Texture "SCI20088", 128, 128
+{
+	Patch "SCI20190", 0, 0
+	Patch "SCI20191", 64, 0
+}
+Texture "SCI20100", 256, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_5", 64, 0
+	Patch "WALL01_6", 80, 0
+	Patch "WALL01_7", 96, 0
+	Patch "WALL01_8", 112, 0
+	Patch "WALL01_9", 128, 0
+	Patch "WALL01_A", 144, 0
+	Patch "WALL01_B", 160, 0
+	Patch "WALL01_C", 176, 0
+	Patch "WALL01_3", 192, 0
+	Patch "WALL01_1", 208, 0
+	Patch "WALL01_6", 224, 0
+	Patch "WALL01_A", 240, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "WALL01_5", 64, 72
+	Patch "WALL01_6", 80, 72
+	Patch "WALL01_7", 96, 72
+	Patch "WALL01_8", 112, 72
+	Patch "WALL01_9", 128, 72
+	Patch "WALL01_A", 144, 72
+	Patch "WALL01_B", 160, 72
+	Patch "WALL01_C", 176, 72
+	Patch "WALL01_3", 192, 72
+	Patch "WALL01_1", 208, 72
+	Patch "WALL01_6", 224, 72
+	Patch "WALL01_A", 240, 72
+	Patch "SCI20269", 0, 64
+	Patch "SCI20269", 64, 64
+	Patch "SCI20269", 128, 64
+	Patch "SCI20269", 192, 64
+	Patch "SCI20269", 0, 120
+	Patch "SCI20269", 64, 120
+	Patch "SCI20269", 128, 120
+	Patch "SCI20269", 192, 120
+}
+Texture "SCI20101", 128, 128
+{
+	Patch "SCI20183", 0, 64
+	Patch "SCI20183", 64, 0
+	Patch "SCI20180", 0, 0
+	Patch "SCI20180", 64, 64
+}
+Texture "SCI20102", 128, 128
+{
+	Patch "SCI20182", 0, 0
+	Patch "SCI20181", 0, 64
+	Patch "SCI20182", 64, 64
+	Patch "SCI20181", 64, 0
+}
+Texture "SCI20103", 64, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SCI20237", 14, 66
+}
+Texture "SCI20105", 64, 128
+{
+	Patch "SCI20025", 0, 0
+	Patch "SW1S0", 16, 72
+}
+Texture "SCI20107", 64, 128
+{
+	Patch "SCI20275", 0, 56
+	Patch "SCI20275", 0, 0
+	Patch "SW4S0", 20, 79
+}
+Texture "SCI20108", 64, 128
+{
+	Patch "SCI20040", 0, 0
+	Patch "SW4S0", 20, 80
+}
+Texture "SCI20109", 64, 128
+{
+	Patch "SCI20043", -42, 0
+	Patch "SW3S1", 16, 72
+}
+Texture "SCI20110", 32, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S0", 0, 16
+	Patch "SCI20269", 0, 64
+}
+Texture "SCI20112", 64, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "SCI20237", 12, 66
+}
+Texture "SCI20115", 64, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "SCI20237", 14, 64
+}
+Texture "SCI20120", 64, 128
+{
+	Patch "SCI20183", 0, 64
+	Patch "SCI20183", 0, 0
+	Patch "SW1S0", 16, 78
+}
+Texture "SCI20123", 64, 128
+{
+	Patch "WALL40_2", -64, 0
+	Patch "SCI20237", 14, 66
+}
+Texture "SCI20125", 64, 128
+{
+	Patch "COMP03_1", 0, 0
+	Patch "COMP03_2", 0, 64
+	Patch "SCI20238", 14, 66
+}
+Texture "SCI20127", 64, 128
+{
+	Patch "SCI20025", 0, 0
+	Patch "SW1S1", 16, 72
+}
+Texture "SCI20129", 64, 128
+{
+	Patch "SCI20275", 0, 56
+	Patch "SCI20275", 0, 0
+	Patch "SW4S1", 20, 79
+}
+Texture "SCI20130", 64, 128
+{
+	Patch "SCI20040", 0, 0
+	Patch "SW4S1", 20, 80
+}
+Texture "SCI20131", 64, 128
+{
+	Patch "SCI20043", -42, 0
+	Patch "SW3S0", 16, 72
+}
+Texture "SCI20132", 32, 72
+{
+	Patch "W32_4", 0, 0
+	Patch "SW2S1", 0, 16
+	Patch "SCI20269", 0, 64
+}
+Texture "SCI20133", 64, 128
+{
+	Patch "WALL48_2", 0, 0
+	Patch "SCI20238", 13, 67
+}
+Texture "SCI20134", 64, 128
+{
+	Patch "WALL49_1", 0, 0
+	Patch "SCI20238", 12, 66
+}
+Texture "SCI20137", 64, 128
+{
+	Patch "RW21_4", 0, 0
+	Patch "SCI20238", 14, 64
+}
+Texture "SCI20139", 64, 128
+{
+	Patch "HELL6_3", 0, 0
+	Patch "SCI20255", 0, 59
+}
+Texture "SCI20141", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "SCI20142", 64, 128
+{
+	Patch "SCI20183", 0, 64
+	Patch "SCI20183", 0, 0
+	Patch "SW1S1", 16, 78
+}
+Texture "SCI20143", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "SCI20144", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "SCI20145", 64, 128
+{
+	Patch "WALL40_2", -64, 0
+	Patch "SCI20238", 14, 66
+}

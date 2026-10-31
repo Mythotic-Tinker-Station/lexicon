@@ -20,6 +20,7 @@ This repo is split into multiple packages demarcated by its folders. These packa
 - Lexicon Ultimate Doom Pak (lexicon-ultdoom - Mapsets for the Ultimate Doom IWAD)
 - Lexicon DM Pak (lexicon-dm - Deathmatch Mapsets)
 - Lexicon CTF Pak - (lexicon-ctf - Capture the Flag Mapsets)
+- Lexicon Compendium Support Pak (lexicon-compendium-support - Compendium Mapsets)
 
 For a list of mapsets please view the credits folder of each pack.
 
@@ -29,13 +30,13 @@ You can [Download Latest Release](releases/latest) here. Lexicon runs on a Expan
 
 ### The All-in-One Experience (AIO) for Doom 2
 
-The ultimate package for your Single Player/Multiplayer Experience. Your load order will look like this (eg: if the version is v1.0):
+The ultimate package for your Single Player/Multiplayer Experience. Your load order will look like this (eg: if the version is v1.1):
 
-- lexicon-core-v1.0.pk3
-- lexicon-base-v1.0.pk3
-- lexicon-slaughter-v1.0.pk3
-- lexicon-dm-v1.0.pk3
-- lexicon-ctf-v1.0.pk3
+- lexicon-core-v1.1.pk3
+- lexicon-base-v1.1.pk3
+- lexicon-slaughter-v1.1.pk3
+- lexicon-dm-v1.1.pk3
+- lexicon-ctf-v1.1.pk3
 - (Your mods and extra files here)
 
 If you do not want competitive play, you can exclude the DM and CTF Paks from your load order. This load order however will provide many options to choose from in the case of Mapsets to play.
@@ -44,23 +45,50 @@ If you do not want competitive play, you can exclude the DM and CTF Paks from yo
 
 If you only want to play Ultimate Doom Mapsets, then use this load order:
 
-- lexicon-core-v1.0.pk3
-- lexicon-ultdoom-v1.0.pk3
+- lexicon-core-v1.1.pk3
+- lexicon-ultdoom-v1.1.pk3
 - (Your mods and extra files here)
 
 ### The Ultimate AIO Experience for WadFusion
 
 Lexicon also supports WadFusion, providing you are playing on UZDoom (or if needed, GZDoom). You will first need to create your WafFusion IWAD by using [WadFusion](https://github.com/Owlet7/wadfusion) then use this for your IWAD once created. The load order for lexicon will then look like this:
 
-- lexicon-core-v1.0.pk3
-- lexicon-base-v1.0.pk3
-- lexicon-slaughter-v1.0.pk3
-- lexicon-ultdoom-v1.0.pk3
-- lexicon-dm-v1.0.pk3 (Remove if you dont want competitive)
-- lexicon-ctf-v1.0.pk3 (Remove if you dont want competitive)
+- lexicon-core-v1.1.pk3
+- lexicon-base-v1.1.pk3
+- lexicon-slaughter-v1.1.pk3
+- lexicon-ultdoom-v1.1.pk3
+- lexicon-dm-v1.1.pk3 (Remove if you dont want competitive)
+- lexicon-ctf-v1.1.pk3 (Remove if you dont want competitive)
 - (Your mods and extra files here)
 
 This will offer the ultimate experience, also allowing you to play other IWADS at the same time!
+
+### Running Lexicon with Compendium
+
+For even more maps, Lexicon has experimental support for [Dynamo and Omegamax's Compendium compilation](https://mega.nz/file/I7piAKbA#7Egsu1EADnJyTsRfpC9GIRq_yfsXDuVAVpLZa4O7uts), which includes mapsets from the 90's to the mid-2000's. The load order when including Compendium should be like this:
+
+- lexicon-core-v1.1.pk3
+- lexicon-base-v1.1.pk3
+- lexicon-slaughter-v1.1.pk3
+- Compendium-v1a.pk3
+- Lexicon-Compendium-Support.pk3
+- lexicon-dm-v1.1.pk3 (Remove if you dont want competitive)
+- lexicon-ctf-v1.1.pk3 (Remove if you dont want competitive)
+- (Your mods and extra files here)
+
+If you want to play WadFusion on UZDoom (or GZDoom) and include everything, the load order will be:
+
+- lexicon-core-v1.1.pk3
+- lexicon-base-v1.1.pk3
+- lexicon-slaughter-v1.1.pk3
+- lexicon-ultdoom-v1.1.pk3
+- Compendium-v1a.pk3
+- Lexicon-Compendium-Support.pk3
+- lexicon-dm-v1.1.pk3 (Remove if you dont want competitive)
+- lexicon-ctf-v1.1.pk3 (Remove if you dont want competitive)
+- (Your mods and extra files here)
+
+Lexicon already has some mapsets that are also featured in Compendium, so repeats will not be featured when selecting Compendium mapsets within Lexicon. There may be certain issues that arise when running Compendium with Lexicon such as custom enemies not being replaced in vanilla mode, so keep in mind that 100% compatibility isn't guaranteed.
 
 ### CVARS for Lexicon
 
@@ -69,7 +97,9 @@ Lexicon has a few CVARS that can alter the experience a bit depending on what yo
 | CVAR | Accepted Values | Description |
 | --- | --- | --- |
 | `lexicon_enforcegamemode` | `true/false` | Enforces the gamemode that the game or server has set. Eg: If `survival` is set to `true` then it will lock the gamemode to survival. No one will be able to select a gamemode in the voting menu |
-| `lexicon_vanilla_mode` | `true/false` | Changes if actors (if a mapset included them) will be spawned or if the default Doom 2 actors will be spawned instead. If set to true, it will spawn vanilla Doom 2 actors. This setting is a compatiblity setting for various gameplay mods |
+| `lexicon_vanilla_mode` | `true/false` | Changes if actors (if a mapset included them) will be spawned or if the default Doom 2 actors will be spawned instead. If set to true, it will spawn vanilla Doom 2 actors. This setting is a compatiblity setting for various gameplay mods and allows players to keep their inventory between mapsets |
+| `lexicon_skip_death_exits` | `true/false` | Changes if certain maps can kill the player in order to reset their inventory or if they can keep their progress throughout the mapset. If set to true, death exits will be skipped, effectively turning them into normal exits |
+| `lexicon_pistol_start` | `true/false` | Changes if players will have their inventory reset after every map, mimicking the pistol start behavior. This setting will have no effect if `lexicon_vanilla_mode` or a compatible gameplay mod is loaded |
 | `lexicon_waittimer` | `int` eg: `180` | Controls how long players have to vote a Mapset, in seconds. Shorter numbers means less wait time for players |
 
 ### Online play and Hosting a server
@@ -174,6 +204,7 @@ Feel free to use the tracker on here. You can also join our discord at [The Myth
 - Penguin
 - Professor Renderer
 - Saad356
+- scalewinged
 - Shadowlink223
 - SyKoTiC
 - tabijaky

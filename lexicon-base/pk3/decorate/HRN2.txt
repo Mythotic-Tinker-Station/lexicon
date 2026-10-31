@@ -1,0 +1,273 @@
+Actor Lexicon_HRN2_RedCard : CustomInventory
+{
+	Inventory.PickupMessage "$HRN2_MSG_REDCARD"
+	States
+	{
+	Spawn:
+		LX77 E 10
+		LX77 F 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 0)
+		Stop
+	}
+}
+
+Actor Lexicon_HRN2_YellowCard : CustomInventory
+{
+	Inventory.PickupMessage "$HRN2_MSG_YELWCARD"
+	States
+	{
+	Spawn:
+		LX77 C 10
+		LX77 D 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 1)
+		Stop
+	}
+}
+
+Actor Lexicon_HRN2_BlueCard : CustomInventory
+{
+	Inventory.PickupMessage "$HRN2_MSG_BLUECARD"
+	States
+	{
+	Spawn:
+		LX77 A 10
+		LX77 B 10 bright
+		Loop
+	Pickup:
+		TNT1 A 0 ACS_NamedExecuteAlways("SharedKey_Pickup", 0, 2)
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_HealthBonus : HealthBonus
+{
+	States
+	{
+	Spawn:
+		LX77 GHIJIH 6
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_Candlestick : Candlestick
+{
+	States
+	{
+	Spawn:
+		LX72 Y -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_Candelabra : Candelabra
+{
+	States
+	{
+	Spawn:
+		LX72 Z -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_RedTorch : RedTorch
+{
+	States
+	{
+	Spawn:
+		LX77 KLMN 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_DeadStick : DeadStick
+{
+	States
+	{
+	Spawn:
+		LX77 O -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_HeadsOnAStick : HeadsOnAStick
+{
+	States
+	{
+	Spawn:
+		LX77 P -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_HeadCandles : HeadCandles
+{
+	States
+	{
+	Spawn:
+		LX77 Q -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_HeadOnAStick : HeadOnAStick
+{
+	States
+	{
+	Spawn:
+		LX77 R -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_LiveStick : LiveStick
+{
+	States
+	{
+	Spawn:
+		LX77 S 6
+		LX77 T 8
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_TallRedColumn : TallRedColumn
+{
+	States
+	{
+	Spawn:
+		LX77 U -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_HeartColumn : HeartColumn
+{
+	States
+	{
+	Spawn:
+		LX77 VW 14
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_FloatingSkull : FloatingSkull
+{
+	States
+	{
+	Spawn:
+		LX77 X -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_SkullColumn : SkullColumn
+{
+	States
+	{
+	Spawn:
+		LX77 Y -1
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_EvilEye : EvilEye
+{
+	States
+	{
+	Spawn:
+		LX78 LMNM 6 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_BlueTorch : BlueTorch
+{
+	States
+	{
+	Spawn:
+		LX78 ABCD 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_ShortRedTorch : ShortRedTorch
+{
+	States
+	{
+	Spawn:
+		LX74 DEFE 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_ShortBlueTorch : ShortBlueTorch
+{
+	States
+	{
+	Spawn:
+		LX78 EFGH 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_ShortGreenTorch : ShortGreenTorch
+{
+	States
+	{
+	Spawn:
+		LX74 HIJI 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_BurningBarrel : BurningBarrel
+{
+	States
+	{
+	Spawn:
+		LX77 "[" 4 BRIGHT
+		LX77 "\" 4 BRIGHT
+		LX77 "]" 4 BRIGHT
+		Loop
+	}
+}
+
+ACTOR Lexicon_HRN2_ColonGibs : ColonGibs
+{
+	States
+	{
+	Spawn:
+		LX78 I -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_SmallBloodPool : SmallBloodPool
+{
+	States
+	{
+	Spawn:
+		LX78 J -1 BRIGHT
+		Stop
+	}
+}
+
+ACTOR Lexicon_HRN2_BrainStem : BrainStem
+{
+	States
+	{
+	Spawn:
+		LX78 K -1
+		Stop
+	}
+}
+
+// Just like Herian, there's several enemies that weren't ported over for the
+// same reasons. However, the ambient sounds from the mapset aren't in Lexicon
+// due to the sheer work needed to implement and re-create them. Again, sorry
+// to those who want the mapset as originally intended. Maybe in the future,
+// the sounds can be added into Lexicon.

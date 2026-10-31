@@ -1,0 +1,113 @@
+object Lexicon_DMZO_PlasmaBall
+{
+    frame PLSSA { light PLASMABALL }
+    frame PLSSB { light PLASMABALL }
+
+    frame PLSEA { light PLASMA_X1 }
+    frame PLSEB { light PLASMA_X2 }
+    frame PLSEC { light PLASMA_X2 }
+    frame PLSED { light PLASMA_X3 }
+    frame PLSEE { light PLASMA_X4 }
+}
+
+object Lexicon_DMZO_BFGBall
+{
+    frame BFS1A { light BFGBALL }
+    frame BFS1B { light BFGBALL }
+
+    frame BFE1A { light BFGBALL_X1 }
+    frame BFE1B { light BFGBALL_X2 }
+    frame BFE1C { light BFGBALL_X3 }
+    frame BFE1D { light BFGBALL_X1 }
+    frame BFE1E { light BFGBALL_X4 }
+    frame BFE1F { light BFGBALL_X5 }
+}
+
+object Lexicon_DMZO_BFGExtra
+{
+    frame BFE2A { light BFGBALL    }
+    frame BFE2B { light BFGBALL_X1 }
+    frame BFE2C { light BFGBALL_X4 }
+    frame BFE2D { light BFGBALL_X5 }
+}
+
+object Lexicon_DMZO_ArachnotronPlasma
+{
+    frame APLSA { light ARACHPLAS }
+    frame APLSB { light ARACHPLAS }
+
+    frame APBXA { light ARACHPLAS_X1 }
+    frame APBXB { light ARACHPLAS_X2 }
+    frame APBXC { light ARACHPLAS_X2 }
+    frame APBXD { light ARACHPLAS_X3 }
+    frame APBXE { light ARACHPLAS_X4 }
+}
+
+object Lexicon_DMZO_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_DMZO_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_DMZO_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_DMZO_LostSoul
+{
+    frame SKULA { light LOSTSOUL    }
+    frame SKULB { light LOSTSOUL    }
+    frame SKULC { light LOSTSOUL    }
+    frame SKULD { light LOSTSOUL    }
+    frame SKULE { light LOSTSOUL    }
+    frame SKULF { light LOSTSOUL    }
+    frame SKULG { light LOSTSOUL    }
+
+    frame SKULH { light LOSTSOUL_X1 }
+    frame SKULI { light LOSTSOUL_X2 }
+    frame SKULJ { light LOSTSOUL_X3 }
+    frame SKULK { light LOSTSOUL_X4 }
+}
+
+pointlight Lexicon_DMZO_MEGASPHERE1
+{
+    color 0.7 0.51 0.51
+    size 40
+    offset 0 16 0
+}
+
+pointlight Lexicon_DMZO_MEGASPHERE2
+{
+    color 0.7 0.51 0.51
+    size 32
+    offset 0 16 0
+}
+
+pointlight Lexicon_DMZO_MEGASPHERE3
+{
+    color 0.7 0.51 0.51
+    size 24
+    offset 0 16 0
+}
+
+pointlight Lexicon_DMZO_MEGASPHERE4
+{
+    color 0.7 0.51 0.51
+    size 16
+    offset 0 16 0
+}
+
+object Lexicon_DMZO_MegaSphere
+{
+    frame LX70V0 { light Lexicon_DMZO_MEGASPHERE1 }
+
+    frame LX70W0 { light Lexicon_DMZO_MEGASPHERE2 }
+    frame LX70X0 { light Lexicon_DMZO_MEGASPHERE3 }
+    frame LX70Y0 { light Lexicon_DMZO_MEGASPHERE4 }
+}

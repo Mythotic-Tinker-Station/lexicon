@@ -1,0 +1,394 @@
+// Doom Zero Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map DMZO01 "High-Rise Roof"
+{
+	titlepatch = "DMZOV00"
+	next = "DMZO02"
+	secretnext = "DMZO02"
+	sky1 = "DMZO0020"
+	music = "D_DMZO01"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO02 "Toxic Tower"
+{
+	titlepatch = "DMZOV01"
+	next = "DMZO03"
+	secretnext = "DMZO03"
+	sky1 = "DMZO0020"
+	music = "D_DMZO02"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO03 "Marble Zone"
+{
+	titlepatch = "DMZOV02"
+	next = "DMZO04"
+	secretnext = "DMZO04"
+	sky1 = "DMZO0020"
+	music = "$MUSIC_COUNTD"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO04 "Triple Town"
+{
+	titlepatch = "DMZOV03"
+	next = "DMZO05"
+	secretnext = "DMZO05"
+	sky1 = "DMZO0020"
+	music = "D_DMZO04"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO05 "The Pits"
+{
+	titlepatch = "DMZOV04"
+	next = "DMZO06"
+	secretnext = "DMZO06"
+	sky1 = "DMZO0020"
+	music = "D_DMZO05"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO06 "Echo Halls"
+{
+	titlepatch = "DMZOV05"
+	next = "DMZO07"
+	secretnext = "DMZO07"
+	sky1 = "DMZO0020"
+	music = "D_DMZO06"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO07 "Claustrophobia"
+{
+	titlepatch = "DMZOV06"
+	next = "DMZO08"
+	secretnext = "DMZO08"
+	sky1 = "DMZO0020"
+	music = "D_DMZO07"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+	Map07Special
+}
+
+map DMZO08 "Module Base"
+{
+	titlepatch = "DMZOV07"
+	next = "DMZO09"
+	secretnext = "DMZO09"
+	sky1 = "DMZO0020"
+	music = "$MUSIC_DDTBLU"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO09 "Ancient Archives"
+{
+	titlepatch = "DMZOV08"
+	next = "DMZO10"
+	secretnext = "DMZO10"
+	sky1 = "DMZO0020"
+	music = "D_DMZO09"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO10 "Leap Gates"
+{
+	titlepatch = "DMZOV09"
+	next = "DMZO11"
+	secretnext = "DMZO11"
+	sky1 = "DMZO0020"
+	music = "$MUSIC_DEAD"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO11 "Too Close To Home"
+{
+	titlepatch = "DMZOV10"
+	next = "DMZO12"
+	secretnext = "DMZO12"
+	sky1 = "DMZO0020"
+	music = "D_DMZO11"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO12 "Underland"
+{
+	titlepatch = "DMZOV11"
+	next = "DMZO13"
+	secretnext = "DMZO13"
+	sky1 = "DMZO0021"
+	music = "D_DMZO12"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO13 "Tease"
+{
+	titlepatch = "DMZOV12"
+	next = "DMZO14"
+	secretnext = "DMZO14"
+	sky1 = "DMZO0021"
+	music = "D_DMZO13"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO14 "Crust"
+{
+	titlepatch = "DMZOV13"
+	next = "DMZO15"
+	secretnext = "DMZO15"
+	sky1 = "DMZO0021"
+	music = "D_DMZO14"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO15 "Peak Facility"
+{
+	titlepatch = "DMZOV14"
+	next = "DMZO16"
+	secretnext = "DMZO31"
+	sky1 = "DMZO0021"
+	music = "$MUSIC_RUNNI2"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO16 "Natural Supply"
+{
+	titlepatch = "DMZOV15"
+	next = "DMZO17"
+	secretnext = "DMZO17"
+	sky1 = "DMZO0021"
+	music = "D_DMZO16"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO17 "The Testing Labs"
+{
+	titlepatch = "DMZOV16"
+	next = "DMZO18"
+	secretnext = "DMZO18"
+	sky1 = "DMZO0021"
+	music = "D_DMZO17"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO18 "Atom Transporter"
+{
+	titlepatch = "DMZOV17"
+	next = "DMZO19"
+	secretnext = "DMZO19"
+	sky1 = "DMZO0021"
+	music = "D_DMZO18"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO19 "Quantum Processing"
+{
+	titlepatch = "DMZOV18"
+	next = "DMZO20"
+	secretnext = "DMZO20"
+	sky1 = "DMZO0021"
+	music = "D_DMZO19"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO20 "Familiar Face"
+{
+	titlepatch = "DMZOV19"
+	next = "DMZO21"
+	secretnext = "DMZO21"
+	sky1 = "DMZO0021"
+	music = "D_DMZO20"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO21 "Starbourn"
+{
+	titlepatch = "DMZOV20"
+	next = "DMZO22"
+	secretnext = "DMZO22"
+	sky1 = "DMZO0022"
+	music = "D_DMZO21"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO22 "The Cracks"
+{
+	titlepatch = "DMZOV21"
+	next = "DMZO23"
+	secretnext = "DMZO23"
+	sky1 = "DMZO0022"
+	music = "D_DMZO22"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO23 "Atmos Caves"
+{
+	titlepatch = "DMZOV22"
+	next = "DMZO24"
+	secretnext = "DMZO24"
+	sky1 = "DMZO0022"
+	music = "D_DMZO23"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO24 "Booster Hub"
+{
+	titlepatch = "DMZOV23"
+	next = "DMZO25"
+	secretnext = "DMZO25"
+	sky1 = "DMZO0022"
+	music = "D_DMZO24"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO25 "Abandoned Compound"
+{
+	titlepatch = "DMZOV24"
+	next = "DMZO26"
+	secretnext = "DMZO26"
+	sky1 = "DMZO0022"
+	music = "$MUSIC_ADRIAN"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO26 "Fortification"
+{
+	titlepatch = "DMZOV25"
+	next = "DMZO27"
+	secretnext = "DMZO27"
+	sky1 = "DMZO0022"
+	music = "$MUSIC_MESSG2"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO27 "The Junction"
+{
+	titlepatch = "DMZOV26"
+	next = "DMZO28"
+	secretnext = "DMZO28"
+	sky1 = "DMZO0022"
+	music = "$MUSIC_ROMER2"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO28 "Suspension"
+{
+	titlepatch = "DMZOV27"
+	next = "DMZO29"
+	secretnext = "DMZO29"
+	sky1 = "DMZO0022"
+	music = "D_DMZO28"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO29 "The Rematch"
+{
+	titlepatch = "DMZOV28"
+	next = "DMZO30"
+	secretnext = "DMZO30"
+	sky1 = "DMZO0022"
+	music = "D_DMZO29"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO30 "The Sarcophagus"
+{
+	titlepatch = "DMZOV29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DMZO0022"
+	music = "D_DMZO30"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+	allowmonstertelefrags
+}
+
+map DMZO31 "Meat"
+{
+	titlepatch = "DMZOV30"
+	next = "DMZO16"
+	secretnext = "DMZO32"
+	sky1 = "DMZO0022"
+	music = "$MUSIC_EVIL"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}
+
+map DMZO32 "Dark Roof"
+{
+	titlepatch = "DMZOV31"
+	next = "DMZO16"
+	secretnext = "DMZO16"
+	sky1 = "DMZO0022"
+	music = "D_DMZO32"
+	intermusic = "D_DMZOIN"
+	ExitPic = "DMZOINT"
+	EnterPic = "DMZOINT"
+}

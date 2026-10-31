@@ -1,0 +1,144 @@
+Actor Lexicon_CNAT_BossBrain
+{
+	Health 8000
+	Radius 50
+	Height 100
+	Mass 2000
+	Speed 20
+	PainChance 20
+	Monster
+	+BOSS
+	+DONTMORPH
+	+BOSSDEATH
+	+FLOAT
+	+NOGRAVITY
+	SeeSound "CNAT/DSBOSSIT"
+	PainSound "CNAT/DSBOSPN"
+	DeathSound "CNAT/DSBOSDTH"
+	ActiveSound "CNAT/DSBOSPIT"
+	Tag "$CNAT_TAG_GATE"
+	Obituary "$CNAT_OB_GATEHIT"
+	States
+	{
+	Spawn:
+		LZ09 E 10 A_Look
+		Loop
+	See:
+		LZ09 EEEE 2 A_Chase
+		Loop
+	Missile:
+		LZ09 FGH 4 A_FaceTarget
+		LZ09 I 4 Bright A_FatAttack3
+		LZ09 I 4 Bright A_FatAttack2
+		LZ09 I 4 Bright A_FatAttack1
+		LZ09 I 4 Bright A_SkelMissile
+		LZ09 I 4 Bright A_SkelMissile
+		Goto See
+	Pain:
+		LZ09 J 6 A_BrainPain
+		Goto See
+	Death:
+		LZ09 K 9 A_ScreamAndUnblock
+		LZ09 L 9 A_KeenDie
+		LZ09 MNOP 9
+		LZ09 Q -1
+		Stop
+	}
+}
+
+Actor Lexicon_CNAT_CommanderKeen
+{
+	Health 400
+	Radius 16
+	Height 72
+	Mass 10000000
+	Speed 0
+	PainChance 112
+	Monster
+	+FLOORCLIP
+	+DONTMORPH
+	SeeSound "brain/cube"
+	DeathSound "world/barrelx"
+	ActiveSound "brain/cube"
+	Tag "$CNAT_TAG_TURRET"
+	Obituary "$CNAT_OB_TURRETHIT"
+	States
+	{
+	Spawn:
+		LZ09 RSTU 4 A_Look
+		Loop
+	See:
+		LZ09 RSTU 4 A_Chase
+		Loop
+	Missile:
+		LZ09 R 6 A_FaceTarget
+		LZ09 VW 6 Bright A_BspiAttack
+		LZ09 W 1 Bright A_SpidRefire
+		Goto Missile+1
+	Pain:
+		LZ09 R 16 A_Pain
+		Goto See
+	Death:
+		LZ09 R 8 Bright A_Scream
+		LZ09 X 8 Bright A_Explode
+		LZ09 Y 6 Bright A_Fall
+		LZ09 Z 4 Bright
+		LZ09 "[" -1
+		Stop
+	}
+}
+
+Actor Lexicon_CNAT_WolfensteinSS
+{
+	Health 14000
+	Radius 64
+	Height 56
+	Mass 10000
+	Speed 18
+	PainChance 10
+	+BOSS
+	+DONTMORPH
+	+BOSSDEATH
+	+FLOAT
+	+NOGRAVITY
+	+QUICKTORETALIATE
+	Monster
+	SeeSound "CNAT/DSSSSIT"
+	PainSound "wolfss/pain"
+	DeathSound "world/barrelx"
+	ActiveSound "CNAT/DSSSDTH"
+	Tag "$CNAT_TAG_WOLFSS"
+	Obituary "$CNAT_OB_WOLFSS"
+	States
+	{
+	Spawn:
+		LZ10 ABCD 2 A_Look
+		Loop
+	See:
+		LZ10 ABCD 2 A_Chase
+		Loop
+	Missile:
+		LZ10 A 4 A_FaceTarget
+		LZ10 F 1 Bright A_FaceTarget
+		LZ10 F 1 Bright A_FatAttack1
+		LZ10 E 1 Bright A_BruisAttack
+		LZ10 F 1 Bright A_HeadAttack
+		LZ10 F 1 Bright A_FatAttack2
+		LZ10 E 1 Bright A_TroopAttack
+		LZ10 E 1 Bright A_BspiAttack
+		LZ10 F 1 Bright A_SkelMissile
+		LZ10 F 1 Bright A_FatAttack3
+		LZ10 E 1 Bright A_CyberAttack
+		LZ10 E 1 Bright A_SpidRefire
+		Goto Missile+1
+	Pain:
+		LZ10 A 10 A_Pain
+		Goto See
+	Death:
+		LZ10 G 8 Bright
+		LZ10 H 8 Bright A_ScreamAndUnblock
+		LZ10 I 8 Bright A_KeenDie
+		LZ10 JK 8 Bright
+		Stop
+	}
+}

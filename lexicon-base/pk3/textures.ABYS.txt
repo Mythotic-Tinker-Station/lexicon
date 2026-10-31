@@ -1,0 +1,38 @@
+Texture "ABYS0018", 128, 128
+{
+	Patch "WALL00_1", 0, 0
+	Patch "WALL00_1", 64, 0
+	Patch "ABYS0050", 83, 0
+}
+Texture "ABYS0025", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "ABYS0027", 256, 128
+{
+	Patch "RW30_3", 0, 0
+	Patch "ABYS0042", 64, 0
+	Patch "ABYS0037", 128, 0
+	Patch "RW7_2", 192, 0
+	Patch "SW2_7", 14, 72
+	Patch "SW2_7", 206, 72
+	Patch "SW4S0", 84, 72
+	Patch "SW4S0", 148, 72
+}
+Texture "ABYS0031", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "ABYS0033", 256, 128
+{
+	Patch "RW30_3", 0, 0
+	Patch "ABYS0042", 64, 0
+	Patch "ABYS0037", 128, 0
+	Patch "RW7_2", 192, 0
+	Patch "SW2_8", 14, 72
+	Patch "SW2_8", 206, 72
+	Patch "SW4S1", 84, 72
+	Patch "SW4S1", 148, 72
+}

@@ -1,0 +1,727 @@
+// Isolation Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map ISOL01 "Get Down With The Sickness - DynamiteKaitorn"
+{
+	titlepatch = "ISOLV00"
+	next = "ISOL02"
+	secretnext = "ISOL02"
+	sky1 = "ISOL0001"
+	music = "D_ISOL01"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL02 "Martian Law - Gothic"
+{
+	titlepatch = "ISOLV01"
+	next = "ISOL03"
+	secretnext = "ISOL03"
+	sky1 = "ISOL0001"
+	music = "D_ISOL02"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL03 "Feverish Nightmare - Walter Confetti"
+{
+	titlepatch = "ISOLV02"
+	next = "ISOL04"
+	secretnext = "ISOL04"
+	sky1 = "ISOL0001"
+	music = "D_ISOL03"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL04 "Disease Disaster - Orka"
+{
+	titlepatch = "ISOLV03"
+	next = "ISOL05"
+	secretnext = "ISOL05"
+	sky1 = "ISOL0001"
+	music = "D_ISOL04"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL05 "Fluid Control - joepallai"
+{
+	titlepatch = "ISOLV04"
+	next = "ISOL06"
+	secretnext = "ISOL06"
+	sky1 = "ISOL0001"
+	music = "D_ISOL05"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL06 "Squared Aqua - Worm318"
+{
+	titlepatch = "ISOLV05"
+	next = "ISOL07"
+	secretnext = "ISOL07"
+	sky1 = "ISOL0001"
+	music = "D_ISOL06"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL07 "Eternal Agony - Remmirath"
+{
+	titlepatch = "ISOLV06"
+	next = "ISOL08"
+	secretnext = "ISOL08"
+	sky1 = "ISOL0001"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+	Map07Special
+}
+
+map ISOL08 "Cabbage Cave - Crunchynut44"
+{
+	titlepatch = "ISOLV07"
+	next = "ISOL09"
+	secretnext = "ISOL09"
+	sky1 = "ISOL0001"
+	music = "D_ISOL08"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL09 "Repugnant Surprises - Gardevoir"
+{
+	titlepatch = "ISOLV08"
+	next = "ISOL10"
+	secretnext = "ISOL10"
+	sky1 = "ISOL0001"
+	music = "D_ISOL09"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL10 "Demonic Phlegm Usurpation - boris"
+{
+	titlepatch = "ISOLV09"
+	next = "ISOL11"
+	secretnext = "ISOL11"
+	sky1 = "ISOL0001"
+	music = "D_ISOL10"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL11 "Pools of Unmaking - Obsidian"
+{
+	titlepatch = "ISOLV10"
+	next = "ISOL12"
+	secretnext = "ISOL12"
+	sky1 = "ISOL0001"
+	music = "D_ISOL11"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL12 "Wine Flu - rf'"
+{
+	titlepatch = "ISOLV11"
+	next = "ISOL13"
+	secretnext = "ISOL13"
+	sky1 = "ISOL0002"
+	music = "D_ISOL12"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL13 "The Washing Well - Phobus"
+{
+	titlepatch = "ISOLV12"
+	next = "ISOL14"
+	secretnext = "ISOL14"
+	sky1 = "ISOL0002"
+	music = "D_ISOL13"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL14 "Back Shift at the Sludge Works - TheOrganGrinder"
+{
+	titlepatch = "ISOLV13"
+	next = "ISOL15"
+	secretnext = "ISOL15"
+	sky1 = "ISOL0002"
+	music = "D_ISOL14"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL15 "A Message From the President - Walter Confetti"
+{
+	titlepatch = "ISOLV14"
+	next = "ISOL16"
+	secretnext = "ISOL31"
+	sky1 = "ISOL0002"
+	music = "D_ISOL15"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL16 "Bad Day for the Subway - RonnieJamesDiner"
+{
+	titlepatch = "ISOLV15"
+	next = "ISOL17"
+	secretnext = "ISOL17"
+	sky1 = "ISOL0002"
+	music = "D_ISOL16"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL17 "Depurify - Dragonfly"
+{
+	titlepatch = "ISOLV16"
+	next = "ISOL18"
+	secretnext = "ISOL18"
+	sky1 = "ISOL0002"
+	music = "D_ISOL17"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL18 "Nuclear Twilight - Breezeep"
+{
+	titlepatch = "ISOLV17"
+	next = "ISOL19"
+	secretnext = "ISOL19"
+	sky1 = "ISOL0002"
+	music = "D_ISOL18"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL19 "Cracks of Nuke - ShadesMaster"
+{
+	titlepatch = "ISOLV18"
+	next = "ISOL20"
+	secretnext = "ISOL20"
+	sky1 = "ISOL0002"
+	music = "D_ISOL19"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL20 "Virutech - leodoom85"
+{
+	titlepatch = "ISOLV19"
+	next = "ISOL21"
+	secretnext = "ISOL21"
+	sky1 = "ISOL0002"
+	music = "D_ISOL20"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL21 "Death in the Wind - Voltcom"
+{
+	titlepatch = "ISOLV20"
+	next = "ISOL22"
+	secretnext = "ISOL22"
+	sky1 = "ISOL0003"
+	music = "D_ISOL21"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL22 "Exiled - Guardsoul"
+{
+	titlepatch = "ISOLV21"
+	next = "ISOL23"
+	secretnext = "ISOL23"
+	sky1 = "ISOL0003"
+	music = "D_ISOL22"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL23 "Feeling Run Down - an_mutt"
+{
+	titlepatch = "ISOLV22"
+	next = "ISOL24"
+	secretnext = "ISOL24"
+	sky1 = "ISOL0003"
+	music = "D_ISOL23"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL24 "Trentenaire En Quarantaine - Roofi"
+{
+	titlepatch = "ISOLV23"
+	next = "ISOL25"
+	secretnext = "ISOL25"
+	sky1 = "ISOL0003"
+	music = "D_ISOL24"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL25 "Alfonzo Allows Himself To Be Mugged Because He's Such a Nice Guy - Tarnsman"
+{
+	titlepatch = "ISOLV24"
+	next = "ISOL26"
+	secretnext = "ISOL26"
+	sky1 = "ISOL0003"
+	music = "D_ISOL25"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL26 "Mutagen Rapidem - Simpletonium"
+{
+	titlepatch = "ISOLV25"
+	next = "ISOL27"
+	secretnext = "ISOL27"
+	sky1 = "ISOL0003"
+	music = "D_ISOL26"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL27 "Le Petit Chaperon Rouge - Roofi"
+{
+	titlepatch = "ISOLV26"
+	next = "ISOL28"
+	secretnext = "ISOL28"
+	sky1 = "ISOL0003"
+	music = "D_ISOL27"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL28 "The Underground Tower - Shadow Hog"
+{
+	titlepatch = "ISOLV27"
+	next = "ISOL29"
+	secretnext = "ISOL29"
+	sky1 = "ISOL0003"
+	music = "D_ISOL28"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL29 "The Lonely Deceased - AD_79"
+{
+	titlepatch = "ISOLV28"
+	next = "ISOL30"
+	secretnext = "ISOL30"
+	sky1 = "ISOL0003"
+	music = "D_ISOL29"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL30 "Stir Crazy - Scotty"
+{
+	titlepatch = "ISOLV29"
+	next = "ISOL34"
+	secretnext = "ISOL34"
+	sky1 = "ISOL0003"
+	music = "D_ISOL30"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+	allowmonstertelefrags
+}
+
+map ISOL31 "Unrelenting Fear - pcorf"
+{
+	titlepatch = "ISOLV30"
+	next = "ISOL16"
+	secretnext = "ISOL32"
+	sky1 = "ISOL0003"
+	music = "D_ISOL31"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL32 "AAAAA - Big Ol' Billy"
+{
+	titlepatch = "ISOLV31"
+	next = "ISOL16"
+	secretnext = "ISOL16"
+	sky1 = "ISOL0003"
+	music = "D_ISOL32"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL33 "The Close Encounter - A2Rob"
+{
+	titlepatch = "ISOLV32"
+	next = "ISOL01"
+	secretnext = "ISOL01"
+	sky1 = "ISOL0001"
+	music = "D_ISOL33"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL34 "So Much For Some Shells - Redead-ITA"
+{
+	titlepatch = "ISOLV33"
+	next = "ISOL35"
+	secretnext = "ISOL35"
+	sky1 = "ISOL0001"
+	music = "D_ISOL34"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL35 "Dubious Cave - Senor500"
+{
+	titlepatch = "ISOLV34"
+	next = "ISOL36"
+	secretnext = "ISOL36"
+	sky1 = "ISOL0001"
+	music = "D_ISOL35"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL36 "Hikikokomplex - zeldavxa"
+{
+	titlepatch = "ISOLV35"
+	next = "ISOL37"
+	secretnext = "ISOL37"
+	sky1 = "ISOL0001"
+	music = "D_ISOL36"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL37 "Faucet Failure - nue"
+{
+	titlepatch = "ISOLV36"
+	next = "ISOL38"
+	secretnext = "ISOL38"
+	sky1 = "ISOL0001"
+	music = "D_ISOL37"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL38 "Inverse Quarantine - Ambureon"
+{
+	titlepatch = "ISOLV37"
+	next = "ISOL39"
+	secretnext = "ISOL39"
+	sky1 = "ISOL0001"
+	music = "D_ISOL38"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL39 "Staysafe - sugarwater"
+{
+	titlepatch = "ISOLV38"
+	next = "ISOL40"
+	secretnext = "ISOL40"
+	sky1 = "ISOL0001"
+	music = "D_ISOL39"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL40 "Cavern Abomination - MFG38"
+{
+	titlepatch = "ISOLV39"
+	next = "ISOL41"
+	secretnext = "ISOL41"
+	sky1 = "ISOL0001"
+	music = "D_ISOL40"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+	Map07Special
+}
+
+map ISOL41 "In the Flesh - Mister_theMan"
+{
+	titlepatch = "ISOLV40"
+	next = "ISOL42"
+	secretnext = "ISOL42"
+	sky1 = "ISOL0001"
+	music = "D_ISOL41"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL42 "Phlegmatic Passage - Bimmy"
+{
+	titlepatch = "ISOLV41"
+	next = "ISOL43"
+	secretnext = "ISOL43"
+	sky1 = "ISOL0001"
+	music = "D_ISOL42"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL43 "Metallish Isolation - AconyX"
+{
+	titlepatch = "ISOLV42"
+	next = "ISOL44"
+	secretnext = "ISOL44"
+	sky1 = "ISOL0001"
+	music = "D_ISOL43"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL44 "Snot Drain - E.M."
+{
+	titlepatch = "ISOLV43"
+	next = "ISOL45"
+	secretnext = "ISOL45"
+	sky1 = "ISOL0001"
+	music = "D_ISOL44"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL45 "Maw of the Beast - NeedHealth"
+{
+	titlepatch = "ISOLV44"
+	next = "ISOL46"
+	secretnext = "ISOL46"
+	sky1 = "ISOL0002"
+	music = "D_ISOL45"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL46 "COVID Distribution Center - Kudo"
+{
+	titlepatch = "ISOLV45"
+	next = "ISOL47"
+	secretnext = "ISOL47"
+	sky1 = "ISOL0002"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL47 "Invasion Cancelled - Gothic"
+{
+	titlepatch = "ISOLV46"
+	next = "ISOL48"
+	secretnext = "ISOL48"
+	sky1 = "ISOL0002"
+	music = "D_ISOL47"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL48 "Viral Samples - universal-quantifier"
+{
+	titlepatch = "ISOLV47"
+	next = "ISOL49"
+	secretnext = "ISOL64"
+	sky1 = "ISOL0002"
+	music = "D_ISOL48"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL49 "Up and Down and All Around - Alper002"
+{
+	titlepatch = "ISOLV48"
+	next = "ISOL50"
+	secretnext = "ISOL50"
+	sky1 = "ISOL0002"
+	music = "D_ISOL49"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL50 "The Big Torture Halls of Torture - Cacodemon187"
+{
+	titlepatch = "ISOLV49"
+	next = "ISOL51"
+	secretnext = "ISOL51"
+	sky1 = "ISOL0002"
+	music = "D_ISOL50"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL51 "Waste Vat - CthulhuChan"
+{
+	titlepatch = "ISOLV50"
+	next = "ISOL52"
+	secretnext = "ISOL52"
+	sky1 = "ISOL0002"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL52 "Essential Servicese - xaekin"
+{
+	titlepatch = "ISOLV51"
+	next = "ISOL53"
+	secretnext = "ISOL53"
+	sky1 = "ISOL0002"
+	music = "D_ISOL52"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL53 "Underground Sickness - no_mic"
+{
+	titlepatch = "ISOLV52"
+	next = "ISOL54"
+	secretnext = "ISOL54"
+	sky1 = "ISOL0002"
+	music = "D_ISOL53"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL54 "Should've Stayed Home - Zylinderkatze"
+{
+	titlepatch = "ISOLV53"
+	next = "ISOL55"
+	secretnext = "ISOL55"
+	sky1 = "ISOL0003"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL55 "Remediation - wydoomer"
+{
+	titlepatch = "ISOLV54"
+	next = "ISOL56"
+	secretnext = "ISOL56"
+	sky1 = "ISOL0003"
+	music = "D_ISOL55"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL56 "Phobos Snot Storage - Hawns Braks"
+{
+	titlepatch = "ISOLV55"
+	next = "ISOL57"
+	secretnext = "ISOL57"
+	sky1 = "ISOL0003"
+	music = "D_ISOL56"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL57 "Facility Lockdown - MaishyN"
+{
+	titlepatch = "ISOLV56"
+	next = "ISOL58"
+	secretnext = "ISOL58"
+	sky1 = "ISOL0003"
+	music = "D_ISOL57"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL58 "Subterranean Processing - Sankhatayan"
+{
+	titlepatch = "ISOLV57"
+	next = "ISOL59"
+	secretnext = "ISOL59"
+	sky1 = "ISOL0003"
+	music = "D_ISOL58"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL59 "Scum Discharge - notTyrone"
+{
+	titlepatch = "ISOLV58"
+	next = "ISOL60"
+	secretnext = "ISOL60"
+	sky1 = "ISOL0003"
+	music = "D_ISOL59"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL60 "Everything's Gone Green - amok"
+{
+	titlepatch = "ISOLV59"
+	next = "ISOL61"
+	secretnext = "ISOL61"
+	sky1 = "ISOL0003"
+	music = "D_ISOL60"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL61 "Argo - Danlex"
+{
+	titlepatch = "ISOLV60"
+	next = "ISOL62"
+	secretnext = "ISOL62"
+	sky1 = "ISOL0003"
+	music = "D_ISOL61"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL62 "Social Distancing - TravyB"
+{
+	titlepatch = "ISOLV61"
+	next = "ISOL63"
+	secretnext = "ISOL63"
+	sky1 = "ISOL0003"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL63 "Plaguelord's Demesne - IvanDobrovski"
+{
+	titlepatch = "ISOLV62"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "ISOL0003"
+	music = "D_ISOL63"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+	allowmonstertelefrags
+}
+
+map ISOL64 "So Much For A Bigger Weapon - Redead-ITA"
+{
+	titlepatch = "ISOLV63"
+	next = "ISOL49"
+	secretnext = "ISOL65"
+	sky1 = "ISOL0003"
+	music = "D_ISOL64"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}
+
+map ISOL65 "Tidal Wave - Cacowad"
+{
+	titlepatch = "ISOLV64"
+	next = "ISOL49"
+	secretnext = "ISOL49"
+	sky1 = "ISOL0003"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "ISOLINT"
+	EnterPic = "ISOLINT"
+}

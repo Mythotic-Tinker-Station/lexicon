@@ -1,0 +1,365 @@
+// Cleimos 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CLM201 "Advent"
+{
+	titlepatch = "CLM2V00"
+	next = "CLM202"
+	secretnext = "CLM202"
+	sky1 = "CLM20009"
+	music = "$MUSIC_RUNNIN"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM202 "Holding Pens"
+{
+	titlepatch = "CLM2V01"
+	next = "CLM203"
+	secretnext = "CLM203"
+	sky1 = "CLM20009"
+	music = "$MUSIC_STALKS"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM203 "No Quarter"
+{
+	titlepatch = "CLM2V02"
+	next = "CLM204"
+	secretnext = "CLM204"
+	sky1 = "CLM20009"
+	music = "$MUSIC_COUNTD"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM204 "Torment"
+{
+	titlepatch = "CLM2V03"
+	next = "CLM205"
+	secretnext = "CLM205"
+	sky1 = "CLM20009"
+	music = "$MUSIC_BETWEE"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM205 "The Cleansing"
+{
+	titlepatch = "CLM2V04"
+	next = "CLM206"
+	secretnext = "CLM206"
+	sky1 = "CLM20009"
+	music = "$MUSIC_DOOM"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM206 "Enclave"
+{
+	titlepatch = "CLM2V05"
+	next = "CLM207"
+	secretnext = "CLM207"
+	sky1 = "CLM20009"
+	music = "$MUSIC_THE_DA"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM207 "Bastion"
+{
+	titlepatch = "CLM2V06"
+	next = "CLM208"
+	secretnext = "CLM208"
+	sky1 = "CLM20009"
+	music = "$MUSIC_SHAWN"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+	Map07Special
+}
+
+map CLM208 "Hazard Base"
+{
+	titlepatch = "CLM2V07"
+	next = "CLM209"
+	secretnext = "CLM209"
+	sky1 = "CLM20009"
+	music = "$MUSIC_DDTBLU"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM209 "Cauldron"
+{
+	titlepatch = "CLM2V08"
+	next = "CLM210"
+	secretnext = "CLM210"
+	sky1 = "CLM20009"
+	music = "$MUSIC_IN_CIT"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM210 "Veil of Blood"
+{
+	titlepatch = "CLM2V09"
+	next = "CLM211"
+	secretnext = "CLM211"
+	sky1 = "CLM20009"
+	music = "$MUSIC_DEAD"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM211 "Annihilation"
+{
+	titlepatch = "CLM2V10"
+	next = "CLM212"
+	secretnext = "CLM212"
+	sky1 = "CLM20009"
+	music = "$MUSIC_STLKS2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM212 "Trapped"
+{
+	titlepatch = "CLM2V11"
+	next = "CLM213"
+	secretnext = "CLM213"
+	sky1 = "CLM20010"
+	music = "$MUSIC_THEDA2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM213 "Ground-Zero"
+{
+	titlepatch = "CLM2V12"
+	next = "CLM214"
+	secretnext = "CLM214"
+	sky1 = "CLM20010"
+	music = "$MUSIC_DOOM2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM214 "The Five"
+{
+	titlepatch = "CLM2V13"
+	next = "CLM215"
+	secretnext = "CLM215"
+	sky1 = "CLM20010"
+	music = "$MUSIC_DDTBL2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM215 "Stairway to Hell"
+{
+	titlepatch = "CLM2V14"
+	next = "CLM216"
+	secretnext = "CLM231"
+	sky1 = "CLM20010"
+	music = "$MUSIC_RUNNI2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM216 "Bulletproof"
+{
+	titlepatch = "CLM2V15"
+	next = "CLM217"
+	secretnext = "CLM217"
+	sky1 = "CLM20010"
+	music = "$MUSIC_DEAD2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM217 "Sole Survivor"
+{
+	titlepatch = "CLM2V16"
+	next = "CLM218"
+	secretnext = "CLM218"
+	sky1 = "CLM20010"
+	music = "$MUSIC_STLKS3"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM218 "Scent of Death"
+{
+	titlepatch = "CLM2V17"
+	next = "CLM219"
+	secretnext = "CLM219"
+	sky1 = "CLM20010"
+	music = "$MUSIC_ROMERO"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM219 "Rise & Fall"
+{
+	titlepatch = "CLM2V18"
+	next = "CLM220"
+	secretnext = "CLM220"
+	sky1 = "CLM20010"
+	music = "$MUSIC_SHAWN2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM220 "Hip Deep"
+{
+	titlepatch = "CLM2V19"
+	next = "CLM221"
+	secretnext = "CLM221"
+	sky1 = "CLM20010"
+	music = "$MUSIC_MESSAG"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM221 "Full Metal Island"
+{
+	titlepatch = "CLM2V20"
+	next = "CLM222"
+	secretnext = "CLM222"
+	sky1 = "CLM20011"
+	music = "$MUSIC_COUNT2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM222 "Rosewood"
+{
+	titlepatch = "CLM2V21"
+	next = "CLM223"
+	secretnext = "CLM223"
+	sky1 = "CLM20011"
+	music = "$MUSIC_DDTBL3"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM223 "Castle of the Ancients"
+{
+	titlepatch = "CLM2V22"
+	next = "CLM224"
+	secretnext = "CLM224"
+	sky1 = "CLM20011"
+	music = "$MUSIC_AMPIE"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM224 "The Ungathered"
+{
+	titlepatch = "CLM2V23"
+	next = "CLM225"
+	secretnext = "CLM225"
+	sky1 = "CLM20011"
+	music = "$MUSIC_THEDA3"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM225 "Well of Fire"
+{
+	titlepatch = "CLM2V24"
+	next = "CLM226"
+	secretnext = "CLM226"
+	sky1 = "CLM20011"
+	music = "$MUSIC_ADRIAN"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM226 "Release Me"
+{
+	titlepatch = "CLM2V25"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "CLM20011"
+	music = "$MUSIC_MESSG2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+/*
+map CLM227 "Entr'acte"
+{
+	titlepatch = "CLM2V26"
+	next = "CLM228"
+	secretnext = "CLM228"
+	sky1 = "CLM20011"
+	music = "$MUSIC_ROMER2"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM228 "Axis"
+{
+	titlepatch = "CLM2V27"
+	next = "CLM229"
+	secretnext = "CLM229"
+	sky1 = "CLM20011"
+	music = "$MUSIC_TENSE"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM229 "The Hive"
+{
+	titlepatch = "CLM2V28"
+	next = "CLM230"
+	secretnext = "CLM230"
+	sky1 = "CLM20011"
+	music = "$MUSIC_SHAWN3"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM230 "Temple of Lost Souls"
+{
+	titlepatch = "CLM2V29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "CLM20011"
+	music = "$MUSIC_OPENIN"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+	allowmonstertelefrags
+}
+*/
+
+map CLM231 "Command + Control"
+{
+	titlepatch = "CLM2V30"
+	next = "CLM216"
+	secretnext = "CLM232"
+	sky1 = "CLM20011"
+	music = "$MUSIC_EVIL"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}
+
+map CLM232 "Tomb of the Forsaken"
+{
+	titlepatch = "CLM2V31"
+	next = "CLM216"
+	secretnext = "CLM216"
+	sky1 = "CLM20011"
+	music = "$MUSIC_ULTIMA"
+	ExitPic = "CLM2INT"
+	EnterPic = "CLM2INT"
+}

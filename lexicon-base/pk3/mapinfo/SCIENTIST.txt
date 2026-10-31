@@ -1,0 +1,249 @@
+// Scientist 2 Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map SCI201 "The Scientist"
+{
+	titlepatch = "SCI2V00"
+	next = "SCI202"
+	secretnext = "SCI202"
+	sky1 = "SCI29001"
+	music = "D_SCI201"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI202 "Kapital"
+{
+	titlepatch = "SCI2V01"
+	next = "SCI203"
+	secretnext = "SCI203"
+	sky1 = "SCI29001"
+	music = "D_SCI202"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI203 "Prosperity"
+{
+	titlepatch = "SCI2V02"
+	next = "SCI204"
+	secretnext = "SCI204"
+	sky1 = "SCI29001"
+	music = "D_SCI203"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI204 "Refinery"
+{
+	titlepatch = "SCI2V03"
+	next = "SCI205"
+	secretnext = "SCI205"
+	sky1 = "SCI29001"
+	music = "D_SCI204"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI205 "Reservior"
+{
+	titlepatch = "SCI2V04"
+	next = "SCI206"
+	secretnext = "SCI206"
+	sky1 = "SCI29001"
+	music = "D_SCI205"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI206 "Construction Yard"
+{
+	titlepatch = "SCI2V05"
+	next = "SCI207"
+	secretnext = "SCI207"
+	sky1 = "SCI29001"
+	music = "D_SCI206"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI207 "Siberia"
+{
+	titlepatch = "SCI2V06"
+	next = "SCI208"
+	secretnext = "SCI208"
+	sky1 = "SCI29001"
+	music = "D_SCI207"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+	Map07Special
+}
+
+map SCI208 "Frostbite"
+{
+	titlepatch = "SCI2V07"
+	next = "SCI209"
+	secretnext = "SCI209"
+	sky1 = "SCI29001"
+	music = "D_SCI208"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI209 "Bio Lab"
+{
+	titlepatch = "SCI2V08"
+	next = "SCI210"
+	secretnext = "SCI210"
+	sky1 = "SCI29001"
+	music = "D_SCI209"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI210 "Dark and Cold"
+{
+	titlepatch = "SCI2V09"
+	next = "SCI211"
+	secretnext = "SCI211"
+	sky1 = "SCI29001"
+	music = "D_SCI210"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI211 "Pure as Snow"
+{
+	titlepatch = "SCI2V10"
+	next = "SCI212"
+	secretnext = "SCI212"
+	sky1 = "SCI29001"
+	music = "D_SCI211"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI212 "Crown of Thorns"
+{
+	titlepatch = "SCI2V11"
+	next = "SCI213"
+	secretnext = "SCI213"
+	sky1 = "SCI29002"
+	music = "D_SCI212"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI213 "Cursed Ground"
+{
+	titlepatch = "SCI2V12"
+	next = "SCI214"
+	secretnext = "SCI214"
+	sky1 = "SCI29002"
+	music = "D_SCI213"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI214 "Dogma"
+{
+	titlepatch = "SCI2V13"
+	next = "SCI215"
+	secretnext = "SCI215"
+	sky1 = "SCI29002"
+	music = "D_SCI214"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI215 "Son of Man"
+{
+	titlepatch = "SCI2V14"
+	next = "SCI216"
+	secretnext = "SCI216"
+	sky1 = "SCI29002"
+	music = "D_SCI215"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI216 "Zarathustra"
+{
+	titlepatch = "SCI2V15"
+	next = "SCI217"
+	secretnext = "SCI217"
+	sky1 = "SCI29002"
+	music = "D_SCI216"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI217 "Second Horseman"
+{
+	titlepatch = "SCI2V16"
+	next = "SCI218"
+	secretnext = "SCI218"
+	sky1 = "SCI29002"
+	music = "D_SCI217"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI218 "Zilzal"
+{
+	titlepatch = "SCI2V17"
+	next = "SCI219"
+	secretnext = "SCI219"
+	sky1 = "SCI29002"
+	music = "D_SCI218"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI219 "Crown of Creation"
+{
+	titlepatch = "SCI2V18"
+	next = "SCI220"
+	secretnext = "SCI220"
+	sky1 = "SCI29002"
+	music = "D_SCI219"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}
+
+map SCI220 "Mount of Congregation"
+{
+	titlepatch = "SCI2V19"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "SCI29002"
+	music = "D_SCI220"
+	intermusic = "D_SCI2IN"
+	ExitPic = "SCI2INT"
+	EnterPic = "SCI2INT"
+}

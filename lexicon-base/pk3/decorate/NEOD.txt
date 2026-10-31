@@ -1,3 +1,21 @@
+Actor Lexicon_NEOD_BossBrain : BossBrain
+{
+	States
+	{
+	Spawn:
+		LX55 A -1
+		Stop
+	Pain:
+		LX55 B 36 A_BrainPain
+		Goto Spawn
+	Death:
+		LX55 C 100 A_BrainScream
+		LX55 CC 10
+		LX55 C -1 A_BrainDie
+		Stop
+	}
+}
+
 Actor Lexicon_NEOD_VictoryBabe
 {
     Radius 12

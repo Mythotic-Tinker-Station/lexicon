@@ -1,0 +1,20 @@
+object Lexicon_CLM2_ZombieMan
+{
+    frame POSSF { light ZOMBIEATK }
+}
+
+object Lexicon_CLM2_ShotgunGuy
+{
+    frame SPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_CLM2_ChaingunGuy
+{
+    frame CPOSE { light ZOMBIEATK }
+    frame CPOSF { light ZOMBIEATK }
+}
+
+object Lexicon_CLM2_WolfensteinSS
+{
+    frame LX73G { light ZOMBIEATK }
+}

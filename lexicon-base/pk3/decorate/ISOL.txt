@@ -1,0 +1,112 @@
+Actor Lexicon_ISOL_PainElemental : PainElemental
+{
+	States
+	{
+	Spawn:
+		LX85 A 10 A_Look
+		Loop
+	See:
+		LX85 AABBCC 3 A_Chase
+		Loop
+	Missile:
+		LX85 D 5 A_FaceTarget
+		LX85 E 5 A_FaceTarget
+		LX85 F 4 BRIGHT A_FaceTarget
+		LX85 F 1 BRIGHT A_PainAttack("Lexicon_ISOL_LostSoul")
+		Goto See
+	Pain:
+		LX85 G 6
+		LX85 G 6 A_Pain
+		Goto See
+	Death:
+		LX85 H 8 BRIGHT
+		LX85 I 8 BRIGHT A_Scream
+		LX85 JK 8 BRIGHT
+		LX85 L 8 BRIGHT A_PainDie("Lexicon_ISOL_LostSoul")
+		LX85 M 8 BRIGHT
+		Stop
+	Raise:
+		LX85 MLKJIH 8
+		Goto See
+	}
+}
+
+Actor Lexicon_ISOL_Cacodemon : Cacodemon
+{
+	States
+	{
+	Spawn:
+		LX86 A 10 A_Look
+		Loop
+	See:
+		LX86 A 3 A_Chase
+		Loop
+	Missile:
+		LX86 B 5 A_FaceTarget
+		LX86 C 5 A_FaceTarget
+		LX86 D 5 BRIGHT A_HeadAttack
+		Goto See
+	Pain:
+		LX86 E 3
+		LX86 E 3 A_Pain
+		LX86 F 6
+		Goto See
+	Death:
+		LX86 G 8 A_NoBlocking
+		LX86 H 8 A_Scream
+		LX86 I 8
+		LX86 J 8
+		LX86 K 8
+		LX86 L -1 A_SetFloorClip
+		Stop
+	Raise:
+		LX86 L 8 A_UnSetFloorClip
+		LX86 KJIHG 8
+		Goto See
+	}
+}
+
+Actor Lexicon_ISOL_LostSoul : LostSoul
+{
+	States
+	{
+	Spawn:
+		LX85 NO 10 BRIGHT A_Look
+		Loop
+	See:
+		LX85 NO 6 BRIGHT A_Chase
+		Loop
+	Missile:
+		LX85 P 10 BRIGHT A_FaceTarget
+		LX85 Q 4 BRIGHT A_SkullAttack
+		LX85 PQ 4 BRIGHT
+		Goto Missile+2
+	Pain:
+		LX85 R 3 BRIGHT
+		LX85 R 3 BRIGHT A_Pain
+		Goto See
+	Death:
+		LX85 S 6 BRIGHT
+		LX85 T 6 BRIGHT A_Scream
+		LX85 U 6 BRIGHT
+		LX85 V 6 BRIGHT A_NoBlocking
+		LX85 W 6
+		LX85 X 6
+		Stop
+	}
+}
+
+Actor Lexicon_ISOL_BossEye : BossEye
+{
+	DropItem "DoomImp" 255 50
+	DropItem "Demon" 255 40
+	DropItem "LexiconActorSpawner3" 255 30
+	DropItem "Fatso" 255 30
+	DropItem "Spectre" 255 30
+	DropItem "HellKnight" 255 24
+	DropItem "Arachnotron" 255 20
+	DropItem "BaronOfHell" 255 10
+	DropItem "LexiconActorSpawner1" 255 10
+	DropItem "Revenant" 255 10
+	DropItem "Archvile" 255  2
+}

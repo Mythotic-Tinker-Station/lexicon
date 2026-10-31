@@ -1,5 +1,5 @@
 // Check if various gameplay mods are being used
-#define COMPATNUMBER 73
+#define COMPATNUMBER 74
 
 str compatArray[COMPATNUMBER] = {
 						"RHR2HEAR", // AEons of Death
@@ -13,6 +13,7 @@ str compatArray[COMPATNUMBER] = {
 						"1RTIDL1", // Combined Arms
 						"SPHHUD1", // Combined Arms Gaiden
 						"HARMBL", // Complex Doom
+						"DND_CUR1", // Death and Decay
 						"D4DFRONT", // Death Foretold
 						"NIVENPRT", // Deathstrider
 						"HUDSTMEL", // DemonSteele
@@ -87,11 +88,20 @@ function bool isGameModded (void)
 	return false;
 }
 
-// Needed for actors that check for compatibility
+// Needed for actors and scripts that check for compatibility
 script "LexiconIsGameModded" (void)
 {
 	int result = 0;
 	if(GetCVar("lexicon_vanilla_mode") || isGameModded()) { result = 1; }
+	SetResultValue(result);
+}
+
+script "LexiconAreDeathExitsDisabled" (void)
+{
+	int result = 0;
+	int isDoomRLLoaded = (CheckFont("PPDADMO1") || CheckFont("BBS_M1"));
+
+	if(GetCVar("lexicon_skip_death_exits") || (isDoomRLLoaded != 0)) { result = 1; }
 	SetResultValue(result);
 }
 

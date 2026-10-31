@@ -1,0 +1,241 @@
+Texture "MM100004", 128, 128
+{
+	Patch "RW10_3", 0, 0
+	Patch "RW10_3", 64, 0
+	Patch "MM100093", 0, -24
+	Patch "WALL42_3", 0, -24
+}
+Texture "MM100006", 256, 128
+{
+	Patch "MM100093", 0, 0
+	Patch "MM100094", 128, 0
+}
+Texture "MM100008", 256, 128
+{
+	Patch "MM100096", 0, 0
+	Patch "MM100097", 128, 0
+	Patch "WALL42_3", 0, 0
+}
+Texture "MM100010", 128, 128
+{
+	Patch "MM100040", 32, 0
+	Patch "MM100040", -96, 0
+	Patch "WALL42_3", 0, 0
+	Patch "WALL42_3", 104, 0
+}
+Texture "MM100016", 128, 128
+{
+	Patch "W31_1", 0, 0
+	Patch "W31_1", 0, 64
+	Patch "W31_1", 64, 0
+	Patch "W31_1", 64, 64
+	Patch "MM100102", 30, 46
+}
+Texture "MM100017", 256, 128
+{
+	Patch "MM100098", 0, 0
+	Patch "MM100099", 128, 0
+}
+Texture "MM100018", 64, 128
+{
+	Patch "WALL48_4", 0, 0
+	Patch "MM100108", 3, 23
+}
+Texture "MM100020", 64, 128
+{
+	Patch "WALL48_4", 0, 0
+	Patch "MM100116", 0, 0
+}
+Texture "MM100021", 8, 128
+{
+	Patch "MM100117", 0, 0
+	Patch "MM100117", 0, 16
+	Patch "MM100117", 0, 32
+	Patch "MM100117", 0, 48
+	Patch "MM100117", 0, 64
+	Patch "MM100117", 0, 80
+	Patch "MM100117", 0, 96
+	Patch "MM100117", 0, 112
+}
+Texture "MM100022", 64, 128
+{
+	Patch "RW38_2", 0, 0
+	Patch "MM100117", 0, 115
+	Patch "MM100117", 8, 115
+	Patch "MM100117", 16, 115
+	Patch "MM100117", 24, 115
+	Patch "MM100117", 32, 115
+	Patch "MM100117", 40, 115
+	Patch "MM100117", 48, 115
+	Patch "MM100117", 56, 115
+}
+Texture "MM100023", 32, 128
+{
+	Patch "MM100025", 0, 0
+	Patch "MM100117", 8, 4
+	Patch "MM100117", 15, 4
+	Patch "MM100117", 8, 16
+	Patch "MM100117", 15, 16
+	Patch "MM100117", 8, 28
+	Patch "MM100117", 15, 28
+	Patch "MM100117", 8, 40
+	Patch "MM100117", 15, 40
+	Patch "MM100117", 8, 52
+	Patch "MM100117", 15, 52
+	Patch "MM100117", 8, 64
+	Patch "MM100117", 15, 64
+	Patch "MM100117", 8, 76
+	Patch "MM100117", 15, 76
+	Patch "MM100117", 8, 88
+	Patch "MM100117", 15, 88
+	Patch "MM100117", 8, 100
+	Patch "MM100117", 15, 100
+	Patch "MM100117", 8, 112
+	Patch "MM100117", 15, 112
+	Patch "MM100025", 0, 125
+}
+Texture "MM100029", 128, 128
+{
+	Patch "WLA128_1", 0, 0
+	Patch "WLA128_1", 64, 0
+	Patch "MM100102", 30, 44
+}
+Texture "MM100031", 64, 128
+{
+	Patch "NUKEDGE", 0, 104
+	Patch "RW18_1", 0, -8
+}
+Texture "MM100033", 64, 128
+{
+	Patch "RW1_2", 0, 0
+	Patch "MM100112", 1, 1
+}
+Texture "MM100037", 128, 128
+{
+	Patch "MM100001", 0, 0
+	Patch "W106_1", 0, 0
+}
+Texture "MM100038", 128, 128
+{
+	Patch "MM100001", 0, 0
+	Patch "WALL47_1", 0, 113
+	Patch "WALL47_1", 64, 113
+	Patch "WALL47_1", 64, -111
+	Patch "WALL47_1", 0, -111
+	Patch "SW2_2", 21, 51
+	Patch "SW2_2", 85, 51
+}
+Texture "MM100039", 128, 128
+{
+	Patch "MM100041", 0, 0
+	Patch "MM100027", 0, 0
+}
+Texture "MM100053", 64, 128
+{
+	Patch "WALL42_3", 20, 0
+	Patch "WALL42_3", -1, 0
+	Patch "WALL42_3", 41, 0
+	Patch "PS20A0", 0, 20
+	Patch "PS18A0", 1, 75
+}
+Texture "MM100054", 64, 128
+{
+	Patch "WALL42_3", 20, 0
+	Patch "WALL42_3", -1, 0
+	Patch "WALL42_3", 41, 0
+	Patch "WARNB0", 23, 54
+}
+Texture "MM100066", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture "MM100067", 128, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "SW1S0", 16, 72
+	Patch "SW1S0", 80, 72
+}
+Texture "MM100068", 128, 128
+{
+	Patch "MM100001", 0, 0
+	Patch "SW3S1", 48, 65
+}
+Texture "MM100069", 128, 128
+{
+	Patch "WALL54_1", -42, 0
+	Patch "SW3S1", 16, 72
+	Patch "MM100056", 64, 0
+	Patch "SW3S1", 80, 72
+}
+Texture "MM100070", 128, 128
+{
+	Patch "MM100098", 0, 0
+	Patch "SW4S0", 52, 68
+}
+Texture "MM100071", 128, 128
+{
+	Patch "W28_8", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "SW1S0", 16, 78
+	Patch "RW1_3", 64, 0
+	Patch "SW1S0", 80, 78
+}
+Texture "MM100072", 128, 128
+{
+	Patch "MM100041", 0, 0
+	Patch "SW2_7", 46, 58
+}
+Texture "MM100073", 64, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "SW4S0", 20, 68
+}
+Texture "MM100074", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+Texture "MM100075", 128, 128
+{
+	Patch "RW23_4", 0, 0
+	Patch "RW23_3", 64, 0
+	Patch "SW1S1", 16, 72
+	Patch "SW1S1", 80, 72
+}
+Texture "MM100076", 128, 128
+{
+	Patch "MM100001", 0, 0
+	Patch "SW3S0", 48, 65
+}
+Texture "MM100077", 128, 128
+{
+	Patch "WALL54_1", -42, 0
+	Patch "SW3S0", 16, 72
+	Patch "MM100056", 64, 0
+	Patch "SW3S0", 80, 72
+}
+Texture "MM100078", 128, 128
+{
+	Patch "MM100098", 0, 0
+	Patch "SW4S1", 52, 68
+}
+Texture "MM100079", 128, 128
+{
+	Patch "W28_8", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "SW1S1", 16, 78
+	Patch "RW1_3", 64, 0
+	Patch "SW1S1", 80, 78
+}
+Texture "MM100080", 128, 128
+{
+	Patch "MM100041", 0, 0
+	Patch "SW2_8", 46, 58
+}
+Texture "MM100081", 64, 128
+{
+	Patch "RW41_1", 0, 0
+	Patch "SW4S1", 20, 68
+}

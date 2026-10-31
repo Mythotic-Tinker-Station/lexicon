@@ -1,0 +1,42 @@
+Actor Lexicon_TLSN_CommanderKeen : CommanderKeen
+{
+	PainSound "TLSN/DSKEENPN"
+	DeathSound "TLSN/DSKEENDT"
+	States
+	{
+	Spawn:
+		LX78 O -1
+		Loop
+	Death:
+		LX78 OP	6
+		LX78 Q 6 A_Scream
+		LX78 RSTUV 6
+		LX78 W 6 A_NoBlocking
+		LX78 X 6
+		LX78 Y 6 A_KeenDie
+		LX78 Z -1
+		Stop
+	Pain:
+		LX78 "[" 4
+		LX78 "[" 8 A_Pain
+		Goto Spawn
+	}
+}
+
+Actor Lexicon_TLSN_BossBrain : BossBrain
+{
+	States
+	{
+	Spawn:
+		LX78 "\" -1
+		Stop
+	Pain:
+		LX78 "]" 36 A_BrainPain
+		Goto Spawn
+	Death:
+		LX78 "\" 100 A_BrainScream
+		LX78 "\\" 10
+		LX78 "\" -1 A_BrainDie
+		Stop
+	}
+}

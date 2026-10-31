@@ -1,0 +1,136 @@
+Title          :   HERIAN2 (revision 0, 24/01/1999)
+
+Filename       :   HERIAN2.WAD
+
+Author         :   Ian Wilson
+
+Email Address  :   i.w@virgin.net
+
+Description    :   Herian2 is fully compatible with only ZDoom
+		   version 1.17 or later.
+
+		   Herian2 has a simple story line.  The setting,
+                   time-wise, is prior to the fearsome adventures
+                   that were seen in Doom and Doom2 the likes of
+                   which has never been see again. Many tales have
+                   been told since but, with few exceptions, most
+                   although.... perhaps interesting, do not have
+                   you quaking with fear like the originals.
+
+   	   	   Before the days of Doom many of the characters
+                   that we came to know in these tales and those
+                   of Heretic and Hexen were closely associated
+                   with each other.  Things were different then.
+                   During those days the family of Cyberdemons,
+                   for example, were closer to their original
+                   form before they were modified (not for the
+                   first time), due to necessity, for the
+                   injuries they endured.  The Imps too were a
+                   little different.
+
+		   Your player character is returning from war
+                   with a view to settling down to a quieter way
+                   of life.  Little did he know that what he had
+                   already experienced was only the 
+                   beginning.  In this tale he is about to
+                   encounter for the first time the Boss of all
+                   Bosses, the most fearsome creature ever created.
+
+		   Well, history did go onto show that he did
+                   defeat him only for him to rise again, although
+                   a little betrayal might just have helped in the
+                   end.... but how did he do it.......?
+			 
+
+                   32 NEW levels, NEW textures, NEW sounds & NEW
+                   monsters
+
+                   All levels were made for single play.
+                   Deathmatch and co-operative play is possible,
+                   but then forget about the story and just have
+                   some fun.  Many of the levels are too large for
+                   deathmatch.
+
+Credits to:        iD-software, Raven & Rogue for:
+		   Doom, Doom 2, Quake, Heretic, Hexen and Strife.
+		   The authors of Wintex, WARM, BSP, Windeu, DEUSF
+                   and Wad Author.
+		   Thanks to Randy Heit for ZDoom.  For me his work,
+                   especially, has given Doom a new lease of life.
+================================================================
+
+* Play Information *
+
+Game                    : DOOM II
+Episode and Level #     : MAP01-MAP32
+Single Player           : Yes
+Cooperative 2-4 Player  : Yes
+Deathmatch 2-4 Player   : Yes
+Difficulty Settings     : Yes
+New Sounds              : Yes
+New Graphics            : Yes (and no sky problems at high
+                               resolution.  No need to stretch)
+New Music               : Yes (as an option, but its not my work.
+                               See below)
+Demos Replaced          : Yes
+
+The music is one of two optional features of Herian2.  It is the
+NIN.WAD and it influence much of Herian2's level design,
+especially in the first half of the game.  At this time Herian2
+was not dedicated to ZDoom and consequently would not have included
+ambient sounds as it now does.  Some of you might consider that
+backing music will clash with the ambient sounds and that is why it
+became an option.  Here's a tip if you do use it.  Turn the music
+volume down fairly low in relation to the volume for sound effects
+and you will find that it doesn't clash with the ambient sounds.
+Change the music volume by means of your Windows 95/98 midi volume
+slider control. Do this by double-clicking on the "Loudspeaker"
+icon at the bottom-right of your PC desktop.
+
+I would like to credit the person(s) who produced the NIN.WAD but I
+don't know who it is.  If the person(s) reads this then thankyou.
+It is superb music.  It remains in its original form except for the
+addition of a mapinfo lump for compatibility with Herian2.  For
+identification I have renamed it H2-NIN.WAD and is contained in the
+file H2-NIN.ZIP.
+
+The second option is to cater for those (like me) who also like
+Heretic and Hexen as much as Doom.  These are changes to sprites
+(characters, weapons and artifacts) that are much more influenced
+by Heretic and Hexen.  The graphics option is H2-HRTC.WAD and is
+contained in a file called H2-HRTC.ZIP.
+
+* Construction *
+
+Base                    : New level design from scratch.
+                          Exceptions - one was influenced by, but
+                          not copied from, my favourite Doom2 level.
+                          Same with one secret level that was
+                          influenced by a Hexen level.  Another
+                          secret level is based on an original
+                          Herian level that was popular called (Isle
+                          City).  It has been enhanced with better
+                          textures, ZDoom features and some changes
+                          and improvements to gameplay.
+
+Editor(s) used          : Wintex, WARM, BSP, Windeu and Wad Author.
+
+Known Bugs              : None that I know of.  I have hopefully
+                          fixed them all since play-testing.
+
+Herian2 was developed for ZDoom only and should be played at 640 by
+400 screen resolution (best for avoiding elongated pixels that
+should really be square).  If your graphics card has the facility
+to set up monitor profiles (like the Matrox Mystique) then you can
+make adjustments to ensure that your preferred resolution shows
+square pixels at other resolutions such as 640 x 480 or 800 x 600.
+It's all to do with the ratio of width to height.  Originally Doom
+ran at 320 x 200 pixels but I'm afraid that's barely acceptable
+nowadays.  640 x 400, having the same ratio, is very acceptable.
+If you have a powerful enough PC (P2-300) and can set up the
+monitor profile for 800 x 600 then it's almost as nice as GLDoom is
+at 640 x 480.....Well, not quite.  If you are fortunate enough to
+have a P2-350 or above then you will likely be able to play
+acceptably at 1024 x 768 thanks to ZDoom.  I have done that and it
+is very nice.			 
+			   

@@ -1,0 +1,55 @@
+flickerlight Lexicon_ISOL_LOSTSOUL
+{
+    color 0.0 1.0 0.0
+    size 56
+    secondarysize 64
+    chance 0.1
+}
+
+flickerlight Lexicon_ISOL_LOSTSOUL_X1
+{
+    color 0.0 0.8 0.0
+    size 72
+    secondarySize 80
+    chance 0.25
+}
+
+flickerlight Lexicon_ISOL_LOSTSOUL_X2
+{
+    color 0.0 0.6 0.0
+    size 88
+    secondarySize 96
+    chance 0.25
+}
+
+flickerlight Lexicon_ISOL_LOSTSOUL_X3
+{
+    color 0.0 0.4 0.0
+    size 104
+    secondarySize 112
+    chance 0.25
+}
+
+flickerlight Lexicon_ISOL_LOSTSOUL_X4
+{
+    color 0.0 0.2 0.0
+    size 112
+    secondarySize 120
+    chance 0.25
+}
+
+object Lexicon_ISOL_LostSoul
+{
+    frame LX85N { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85O { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85P { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85Q { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85R { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85S { light Lexicon_ISOL_LOSTSOUL    }
+    frame LX85T { light Lexicon_ISOL_LOSTSOUL    }
+
+    frame LX85U { light Lexicon_ISOL_LOSTSOUL_X1 }
+    frame LX85V { light Lexicon_ISOL_LOSTSOUL_X2 }
+    frame LX85W { light Lexicon_ISOL_LOSTSOUL_X3 }
+    frame LX85X { light Lexicon_ISOL_LOSTSOUL_X4 }
+}

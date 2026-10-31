@@ -1,0 +1,249 @@
+// The Talosian Incident Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map TLSN01 "The Transport"
+{
+	titlepatch = "TLSNV00"
+	next = "TLSN02"
+	secretnext = "TLSN02"
+	sky1 = "TLSN0001"
+	music = "D_TLSN01"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN02 "Desolation"
+{
+	titlepatch = "TLSNV01"
+	next = "TLSN03"
+	secretnext = "TLSN03"
+	sky1 = "TLSN0001"
+	music = "D_TLSN02"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN03 "The Cliff Top Fort"
+{
+	titlepatch = "TLSNV02"
+	next = "TLSN04"
+	secretnext = "TLSN04"
+	sky1 = "TLSN0001"
+	music = "D_TLSN03"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN04 "The Chapel"
+{
+	titlepatch = "TLSNV03"
+	next = "TLSN05"
+	secretnext = "TLSN05"
+	sky1 = "TLSN0001"
+	music = "D_TLSN04"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN05 "The Fort - I"
+{
+	titlepatch = "TLSNV04"
+	next = "TLSN06"
+	secretnext = "TLSN06"
+	sky1 = "TLSN0001"
+	music = "D_TLSN05"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN06 "The Fort - II"
+{
+	titlepatch = "TLSNV05"
+	next = "TLSN07"
+	secretnext = "TLSN07"
+	sky1 = "TLSN0001"
+	music = "D_TLSN06"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN07 "The Church"
+{
+	titlepatch = "TLSNV06"
+	next = "TLSN08"
+	secretnext = "TLSN08"
+	sky1 = "TLSN0001"
+	music = "D_TLSN07"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+	Map07Special
+}
+
+map TLSN08 "Focus"
+{
+	titlepatch = "TLSNV07"
+	next = "TLSN09"
+	secretnext = "TLSN09"
+	sky1 = "TLSN0001"
+	music = "D_TLSN08"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN09 "The Palace"
+{
+	titlepatch = "TLSNV08"
+	next = "TLSN10"
+	secretnext = "TLSN10"
+	sky1 = "TLSN0001"
+	music = "D_TLSN09"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN10 "Hardware"
+{
+	titlepatch = "TLSNV09"
+	next = "TLSN11"
+	secretnext = "TLSN11"
+	sky1 = "TLSN0001"
+	music = "D_TLSN10"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN11 "Software"
+{
+	titlepatch = "TLSNV10"
+	next = "TLSN12"
+	secretnext = "TLSN12"
+	sky1 = "TLSN0001"
+	music = "D_TLSN11"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN12 "Vulcan"
+{
+	titlepatch = "TLSNV11"
+	next = "TLSN13"
+	secretnext = "TLSN13"
+	sky1 = "TLSN0002"
+	music = "D_TLSN12"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN13 "Get the Hell Out"
+{
+	titlepatch = "TLSNV12"
+	next = "TLSN14"
+	secretnext = "TLSN14"
+	sky1 = "TLSN0002"
+	music = "D_TLSN13"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN14 "Beneath"
+{
+	titlepatch = "TLSNV13"
+	next = "TLSN15"
+	secretnext = "TLSN15"
+	sky1 = "TLSN0002"
+	music = "$MUSIC_DDTBL2"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN15 "Solvent"
+{
+	titlepatch = "TLSNV14"
+	next = "TLSN16"
+	secretnext = "TLSN31"
+	sky1 = "TLSN0002"
+	music = "D_TLSN15"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN16 "The Canyons"
+{
+	titlepatch = "TLSNV15"
+	next = "TLSN17"
+	secretnext = "TLSN17"
+	sky1 = "TLSN0002"
+	music = "D_TLSN16"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN17 "The Great Outdoors"
+{
+	titlepatch = "TLSNV16"
+	next = "TLSN18"
+	secretnext = "TLSN18"
+	sky1 = "TLSN0002"
+	music = "D_TLSN17"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN18 "Hi Honey, I'm Home"
+{
+	titlepatch = "TLSNV17"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "TLSN0002"
+	music = "D_TLSN18"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN31 "Inferno Revisited"
+{
+	titlepatch = "TLSNV30"
+	next = "TLSN16"
+	secretnext = "TLSN32"
+	sky1 = "TLSN0003"
+	music = "D_TLSN31"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}
+
+map TLSN32 "Portals"
+{
+	titlepatch = "TLSNV31"
+	next = "TLSN16"
+	secretnext = "TLSN16"
+	sky1 = "TLSN0003"
+	music = "D_TLSN32"
+	intermusic = "D_TLSNIN"
+	ExitPic = "TLSNINT"
+	EnterPic = "TLSNINT"
+}

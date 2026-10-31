@@ -222,12 +222,89 @@ map ABSXE3M7 "Abyssal"
 map ABSXE3M8 "Crucible"
 {
 	titlepatch = "ABSXV23"
-	next = "VR"
-	sucktime = 1337
-	secretnext = "VR"
+	next = "ABSXE4M1"
+	secretnext = "ABSXE4M1"
 	sky1 = "DSKY3"
 	music = "$MUSIC_E3M8"
 	nosoundclipping
 	spidermastermindspecial
 	specialaction_exitlevel
+}
+
+map ABSXE4M1 "Flesh and Blood"
+{
+	titlepatch = "ABSXV24"
+	next = "ABSXE4M2"
+	secretnext = "ABSXE4M2"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M4"
+}
+
+map ABSXE4M2 "Vials of Wrath"
+{
+	titlepatch = "ABSXV25"
+	next = "ABSXE4M3"
+	secretnext = "ABSXE4M3"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M2"
+}
+
+map ABSXE4M3 "The Lord Dieth Not"
+{
+	titlepatch = "ABSXV26"
+	next = "ABSXE4M4"
+	secretnext = "ABSXE4M4"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E3M3"
+}
+
+map ABSXE4M4 "Den of Thieves"
+{
+	titlepatch = "ABSXV27"
+	next = "ABSXE4M5"
+	secretnext = "ABSXE4M5"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E1M5"
+}
+
+map ABSXE4M5 "The Glory Departed"
+{
+	titlepatch = "ABSXV28"
+	next = "ABSXE4M6"
+	secretnext = "ABSXE4M6"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M7"
+}
+
+map ABSXE4M6 "Outer Darkness"
+{
+	titlepatch = "ABSXV29"
+	next = "ABSXE4M7"
+	secretnext = "ABSXE4M7"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M4"
+	cyberdemonspecial
+	specialaction_opendoor
+}
+
+map ABSXE4M7 "The Second Death"
+{
+	titlepatch = "ABSXV30"
+	next = "ABSXE4M8"
+	secretnext = "ABSXE4M8"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M6"
+}
+
+map ABSXE4M8 "Sons of Perdition"
+{
+	titlepatch = "ABSXV31"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DSKY4"
+	music = "$MUSIC_E2M5"
+	nosoundclipping
+	spidermastermindspecial
+	specialaction_lowerfloor
 }

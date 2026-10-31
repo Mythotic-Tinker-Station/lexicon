@@ -1,0 +1,394 @@
+// Community Trunk Mapinfo
+
+defaultmap
+{
+	nojump
+	nocrouch
+}
+
+map CTNK01 "Overture"
+{
+	titlepatch = "CTNKV00"
+	next = "CTNK02"
+	secretnext = "CTNK02"
+	sky1 = "CTNK0183"
+	music = "D_CTNK01"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK02 "Temple of Zimmer"
+{
+	titlepatch = "CTNKV01"
+	next = "CTNK03"
+	secretnext = "CTNK03"
+	sky1 = "CTNK0183"
+	music = "D_CTNK02"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK03 "Shattering Mayhem"
+{
+	titlepatch = "CTNKV02"
+	next = "CTNK04"
+	secretnext = "CTNK04"
+	sky1 = "CTNK0183"
+	music = "D_CTNK03"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK04 "Provision Center"
+{
+	titlepatch = "CTNKV03"
+	next = "CTNK05"
+	secretnext = "CTNK05"
+	sky1 = "CTNK0183"
+	music = "D_CTNK04"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK05 "Lollygaggin'"
+{
+	titlepatch = "CTNKV04"
+	next = "CTNK06"
+	secretnext = "CTNK06"
+	sky1 = "CTNK0183"
+	music = "D_CTNK05"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK06 "Sub Astra"
+{
+	titlepatch = "CTNKV05"
+	next = "CTNK07"
+	secretnext = "CTNK07"
+	sky1 = "CTNK0183"
+	music = "D_CTNK06"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK07 "Ex Inferis"
+{
+	titlepatch = "CTNKV06"
+	next = "CTNK08"
+	secretnext = "CTNK08"
+	sky1 = "CTNK0183"
+	music = "D_CTNK07"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+	Map07Special
+}
+
+map CTNK08 "The Sunken City of Atlantis - Part 1"
+{
+	titlepatch = "CTNKV07"
+	next = "CTNK09"
+	secretnext = "CTNK09"
+	sky1 = "CTNK0183"
+	music = "D_CTNK08"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK09 "Imp Gambling Den"
+{
+	titlepatch = "CTNKV08"
+	next = "CTNK10"
+	secretnext = "CTNK10"
+	sky1 = "CTNK0183"
+	music = "D_CTNK09"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK10 "Becoming X"
+{
+	titlepatch = "CTNKV09"
+	next = "CTNK11"
+	secretnext = "CTNK11"
+	sky1 = "CTNK0183"
+	music = "D_CTNK10"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK11 "A Friend in Need"
+{
+	titlepatch = "CTNKV10"
+	next = "CTNK12"
+	secretnext = "CTNK12"
+	sky1 = "CTNK0183"
+	music = "D_CTNK11"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK12 "Thermal Computing"
+{
+	titlepatch = "CTNKV11"
+	next = "CTNK13"
+	secretnext = "CTNK13"
+	sky1 = "CTNK0184"
+	music = "D_CTNK12"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK13 "Abandoned"
+{
+	titlepatch = "CTNKV12"
+	next = "CTNK14"
+	secretnext = "CTNK14"
+	sky1 = "CTNK0184"
+	music = "D_CTNK13"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK14 "Excessive Impulse"
+{
+	titlepatch = "CTNKV13"
+	next = "CTNK15"
+	secretnext = "CTNK15"
+	sky1 = "CTNK0184"
+	music = "D_CTNK14"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK15 "Broken Bricks"
+{
+	titlepatch = "CTNKV14"
+	next = "CTNK16"
+	secretnext = "CTNK31"
+	sky1 = "CTNK0184"
+	music = "D_CTNK15"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK16 "Infection"
+{
+	titlepatch = "CTNKV15"
+	next = "CTNK17"
+	secretnext = "CTNK17"
+	sky1 = "CTNK0184"
+	music = "D_CTNK16"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK17 "Flange Control"
+{
+	titlepatch = "CTNKV16"
+	next = "CTNK18"
+	secretnext = "CTNK18"
+	sky1 = "CTNK0184"
+	music = "D_CTNK17"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK18 "The Black Castle"
+{
+	titlepatch = "CTNKV17"
+	next = "CTNK19"
+	secretnext = "CTNK19"
+	sky1 = "CTNK0184"
+	music = "D_CTNK18"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK19 "Nameless City"
+{
+	titlepatch = "CTNKV18"
+	next = "CTNK20"
+	secretnext = "CTNK20"
+	sky1 = "CTNK0184"
+	music = "D_CTNK19"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK20 "The Little Death"
+{
+	titlepatch = "CTNKV19"
+	next = "CTNK21"
+	secretnext = "CTNK21"
+	sky1 = "CTNK0184"
+	music = "D_CTNK20"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK21 "Sapphire Blue"
+{
+	titlepatch = "CTNKV20"
+	next = "CTNK22"
+	secretnext = "CTNK22"
+	sky1 = "CTNK0185"
+	music = "D_CTNK21"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK22 "The Addiction"
+{
+	titlepatch = "CTNKV21"
+	next = "CTNK23"
+	secretnext = "CTNK23"
+	sky1 = "CTNK0185"
+	music = "D_CTNK22"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK23 "Demise"
+{
+	titlepatch = "CTNKV22"
+	next = "CTNK24"
+	secretnext = "CTNK24"
+	sky1 = "CTNK0185"
+	music = "D_CTNK23"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK24 "Delivery of Evil"
+{
+	titlepatch = "CTNKV23"
+	next = "CTNK25"
+	secretnext = "CTNK25"
+	sky1 = "CTNK0185"
+	music = "D_CTNK24"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK25 "Dark Sateen Voyager"
+{
+	titlepatch = "CTNKV24"
+	next = "CTNK26"
+	secretnext = "CTNK26"
+	sky1 = "CTNK0185"
+	music = "D_CTNK25"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK26 "Soar"
+{
+	titlepatch = "CTNKV25"
+	next = "CTNK27"
+	secretnext = "CTNK27"
+	sky1 = "CTNK0185"
+	music = "D_CTNK26"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK27 "Crepsulum"
+{
+	titlepatch = "CTNKV26"
+	next = "CTNK28"
+	secretnext = "CTNK28"
+	sky1 = "CTNK0185"
+	music = "D_CTNK27"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK28 "A Place To Be Concerned About"
+{
+	titlepatch = "CTNKV27"
+	next = "CTNK29"
+	secretnext = "CTNK29"
+	sky1 = "CTNK0185"
+	music = "D_CTNK28"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK29 "The Sunken City of Atlantis - Part 2"
+{
+	titlepatch = "CTNKV28"
+	next = "CTNK30"
+	secretnext = "CTNK30"
+	sky1 = "CTNK0185"
+	music = "D_CTNK29"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK30 "Queen of Spades"
+{
+	titlepatch = "CTNKV29"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "CTNK0185"
+	music = "D_CTNK30"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+	allowmonstertelefrags
+}
+
+map CTNK31 "Hollow Bone RNA"
+{
+	titlepatch = "CTNKV30"
+	next = "CTNK16"
+	secretnext = "CTNK32"
+	sky1 = "CTNK0185"
+	music = "D_CTNK31"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}
+
+map CTNK32 "The Dark Red"
+{
+	titlepatch = "CTNKV31"
+	next = "CTNK16"
+	secretnext = "CTNK16"
+	sky1 = "CTNK0185"
+	music = "D_CTNK32"
+	intermusic = "D_CTNKIN"
+	ExitPic = "CTNKINT"
+	EnterPic = "CTNKINT"
+}

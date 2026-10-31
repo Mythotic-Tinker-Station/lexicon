@@ -1,0 +1,236 @@
+// Destination Unknown Mapinfo
+
+defaultmap
+{
+	nocrouch
+}
+
+map DSUN01 "The Race to Doom"
+{
+	titlepatch = "CWILV00"
+	next = "DSUN02"
+	secretnext = "DSUN02"
+	sky1 = "DSUN1006"
+	music = "D_DSUN01"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN02 "Space Station H9"
+{
+	titlepatch = "CWILV01"
+	next = "DSUN03"
+	secretnext = "DSUN03"
+	sky1 = "DSUN1006"
+	music = "D_DSUN02"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN03 "The Long Bridge"
+{
+	titlepatch = "CWILV02"
+	next = "DSUN04"
+	secretnext = "DSUN04"
+	sky1 = "DSUN1008"
+	music = "D_DSUN03"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN04 "Cliffhanger"
+{
+	titlepatch = "CWILV03"
+	next = "DSUN05"
+	secretnext = "DSUN05"
+	sky1 = "DSUN1002"
+	music = "D_DSUN04"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN05 "The Icy Hand of Death"
+{
+	titlepatch = "CWILV04"
+	next = "DSUN06"
+	secretnext = "DSUN06"
+	sky1 = "DSUN1001"
+	music = "D_DSUN05"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN06 "Red and Blue"
+{
+	titlepatch = "CWILV05"
+	next = "DSUN07"
+	secretnext = "DSUN07"
+	sky1 = "DSUN1005"
+	sky2 = "DSUN1004"
+	music = "D_DSUN06"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN07 "Ski Jump"
+{
+	titlepatch = "CWILV06"
+	next = "DSUN08"
+	secretnext = "DSUN08"
+	sky1 = "DSUN1001"
+	music = "D_DSUN07"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN08 "B/W/R/B"
+{
+	titlepatch = "CWILV07"
+	next = "DSUN09"
+	secretnext = "DSUN09"
+	sky1 = "DSUN1006"
+	music = "D_DSUN08"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN09 "Primary Colours"
+{
+	titlepatch = "CWILV08"
+	next = "DSUN10"
+	secretnext = "DSUN10"
+	sky1 = "DSUN1001"
+	music = "D_DSUN09"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN10 "Artificial Gravity"
+{
+	titlepatch = "CWILV09"
+	next = "DSUN11"
+	secretnext = "DSUN11"
+	sky1 = "DSUN1001"
+	music = "D_DSUN10"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN11 "Speed"
+{
+	titlepatch = "CWILV10"
+	next = "DSUN12"
+	secretnext = "DSUN12"
+	sky1 = "DSUN1001"
+	music = "D_DSUN11"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN12 "Crate Island"
+{
+	titlepatch = "CWILV11"
+	next = "DSUN13"
+	secretnext = "DSUN13"
+	sky1 = "DSUN1002"
+	music = "D_DSUN12"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN13 "Tower of Doom"
+{
+	titlepatch = "CWILV12"
+	next = "DSUN14"
+	secretnext = "DSUN14"
+	sky1 = "DSUN1008", 0.1
+	music = "D_DSUN13"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN14 "A Foggy Day"
+{
+	titlepatch = "CWILV13"
+	next = "DSUN15"
+	secretnext = "DSUN15"
+	sky1 = "DSUN1001", 0.01
+	music = "D_DSUN14"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN15 "Mario's Revenge"
+{
+	titlepatch = "CWILV14"
+	next = "DSUN16"
+	secretnext = "DSUN31"
+	sky1 = "DSUN0201"
+	music = "D_DSUN15"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN16 "Cliffs by Candlelight"
+{
+	titlepatch = "CWILV15"
+	next = "DSUN17"
+	secretnext = "DSUN17"
+	sky1 = "DSUN1007", 0.04
+	music = "D_DSUN16"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN17 "Skyscrapers"
+{
+	titlepatch = "CWILV16"
+	next = "DSUN18"
+	secretnext = "DSUN18"
+	sky1 = "DSUN1006"
+	music = "D_DSUN17"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN18 "Waterworld"
+{
+	titlepatch = "CWILV17"
+	next = "DSUN19"
+	secretnext = "DSUN19"
+	sky1 = "DSUN1001", 0.001
+	music = "D_DSUN18"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
+
+map DSUN19 "The Final Race"
+{
+	titlepatch = "CWILV18"
+	next = "VR"
+	sucktime = 1337
+	secretnext = "VR"
+	sky1 = "DSUN1001", 0.01
+	music = "D_DSUN19"
+	intermusic = "D_DSUNIN"
+	ExitPic = "DSUNINT"
+	EnterPic = "DSUNINT"
+}
